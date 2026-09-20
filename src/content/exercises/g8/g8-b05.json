@@ -1,0 +1,121 @@
+[
+  {
+    "id": "g8-b05-calc-001",
+    "lessonId": "g8-b05",
+    "skillIds": ["mass-conservation"],
+    "difficulty": 1,
+    "prompt": "Đốt cháy hoàn toàn 2,4 g kim loại magie ([[Mg]]) trong bình chứa khí oxi, thu được 4,0 g magie oxit ([[MgO]]). Tính khối lượng khí oxi đã tham gia phản ứng.",
+    "given": [
+      { "label": "Khối lượng Magie (m_Mg)", "value": "2.4", "unit": "g" },
+      { "label": "Khối lượng Magie oxit (m_MgO)", "value": "4.0", "unit": "g" }
+    ],
+    "find": { "label": "Khối lượng khí Oxi (m_O2)", "unit": "g" },
+    "answer": {
+      "kind": "number",
+      "value": 1.6,
+      "unit": "g",
+      "decimals": 1,
+      "tolerance": { "abs": 0.05 }
+    },
+    "hints": [
+      { "level": 1, "text": "Áp dụng định luật bảo toàn khối lượng cho phản ứng: Magie + Oxi -> Magie oxit." },
+      { "level": 2, "text": "m_Mg + m_O2 = m_MgO => m_O2 = m_MgO - m_Mg = 4,0 - 2,4." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích phản ứng", "body": "Chất tham gia: Mg và O2. Sản phẩm: MgO." },
+      { "kind": "knowledge", "title": "Định luật bảo toàn khối lượng", "body": "Tổng khối lượng các chất tham gia bằng tổng khối lượng các sản phẩm: m_Mg + m_O2 = m_MgO." },
+      { "kind": "compute", "title": "Tính toán", "body": "m_O2 = m_MgO - m_Mg = 4,0 - 2,4 = 1,6 g." },
+      { "kind": "answer", "title": "Kết luận", "body": "Khối lượng khí oxi đã phản ứng là **1,6 g**." }
+    ],
+    "finalSolution": "m_O2 = m_MgO - m_Mg = 4,0 - 2,4 = **1,6 g**.",
+    "commonMistakes": [
+      { "id": "added-instead-of-subtracted", "message": "Cộng hai khối lượng lại (2,4 + 4,0 = 6,4 g) thay vì trừ." }
+    ]
+  },
+  {
+    "id": "g8-b05-eq-002",
+    "lessonId": "g8-b05",
+    "skillIds": ["balance-equation"],
+    "difficulty": 2,
+    "prompt": "Điền các hệ số thích hợp để hoàn thành phương trình hóa học sau: [[P]] + [[O2]] -> [[P2O5]].",
+    "answer": {
+      "kind": "equation",
+      "mode": "fill-coefficients",
+      "reactants": ["P", "O2"],
+      "products": ["P2O5"],
+      "coefficients": [4, 5, 2]
+    },
+    "hints": [
+      { "level": 1, "text": "Số nguyên tử Oxi ở vế trái là 2, vế phải là 5. Bội chung nhỏ nhất của 2 và 5 là 10." },
+      { "level": 2, "text": "Hệ số của O2 là 10 / 2 = 5, hệ số của P2O5 là 10 / 5 = 2. Khi đó có 4 nguyên tử P => hệ số của P là 4." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Quan sát số nguyên tử", "body": "Vế trái: 1 P, 2 O. Vế phải: 2 P, 5 O." },
+      { "kind": "compute", "title": "Cân bằng nguyên tố O", "body": "BCNN(2, 5) = 10. Đặt hệ số 5 trước O2 và 2 trước P2O5." },
+      { "kind": "compute", "title": "Cân bằng nguyên tố P", "body": "Vế phải có 2 × 2 = 4 nguyên tử P => đặt hệ số 4 trước P ở vế trái." },
+      { "kind": "answer", "title": "Kết luận", "body": "Phương trình cân bằng: **4P + 5O2 -> 2P2O5**." }
+    ],
+    "finalSolution": "**4P + 5O2 -> 2P2O5**",
+    "commonMistakes": [
+      { "id": "unbalanced-p", "message": "Quên nhân đôi số nguyên tử P ở vế phải (chỉ điền hệ số 2 cho P thay vì 4)." }
+    ]
+  },
+  {
+    "id": "g8-b05-eq-003",
+    "lessonId": "g8-b05",
+    "skillIds": ["balance-equation"],
+    "difficulty": 2,
+    "prompt": "Cân bằng phương trình phản ứng giữa nhôm và dung dịch axit sunfuric: [[Al]] + [[H2SO4]] -> [[Al2(SO4)3]] + [[H2]].",
+    "answer": {
+      "kind": "equation",
+      "mode": "fill-coefficients",
+      "reactants": ["Al", "H2SO4"],
+      "products": ["Al2(SO4)3", "H2"],
+      "coefficients": [2, 3, 1, 3]
+    },
+    "hints": [
+      { "level": 1, "text": "Cân bằng nhóm (SO4) trước: vế phải có 3 nhóm (SO4) nên cần 3 phân tử H2SO4 ở vế trái." },
+      { "level": 2, "text": "3 H2SO4 sinh ra 3 H2. Vế phải có 2 Al nên vế trái cần 2 Al. Tỉ lệ: 2, 3, 1, 3." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Cân bằng theo nhóm nguyên tử", "body": "Xem nhóm (SO4) như một đơn vị thống nhất." },
+      { "kind": "compute", "title": "Cân bằng nhóm (SO4) và H", "body": "Vế phải có 3 nhóm (SO4) => đặt hệ số 3 trước H2SO4. Có 3 × 2 = 6 nguyên tử H => đặt hệ số 3 trước H2." },
+      { "kind": "compute", "title": "Cân bằng Al", "body": "Vế phải có 2 nguyên tử Al => đặt hệ số 2 trước Al ở vế trái." },
+      { "kind": "answer", "title": "Kết luận", "body": "Phương trình hoàn chỉnh: **2Al + 3H2SO4 -> Al2(SO4)3 + 3H2**." }
+    ],
+    "finalSolution": "**2Al + 3H2SO4 -> Al2(SO4)3 + 3H2**",
+    "commonMistakes": [
+      { "id": "missed-h2-coefficient", "message": "Quên đặt hệ số 3 cho khí H2 ở vế phải." }
+    ]
+  },
+  {
+    "id": "g8-b05-mcq-004",
+    "lessonId": "g8-b05",
+    "skillIds": ["mass-conservation"],
+    "difficulty": 1,
+    "prompt": "Trong một phản ứng hóa học, đại lượng nào sau đây KHÔNG thay đổi trước và sau phản ứng?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Tổng khối lượng các chất và số nguyên tử mỗi nguyên tố" },
+        { "id": "b", "label": "Số lượng phân tử của các chất" },
+        { "id": "c", "label": "Liên kết hóa học giữa các nguyên tử" },
+        { "id": "d", "label": "Tính chất hóa học của các chất" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Bản chất của phản ứng hóa học là sự thay đổi liên kết giữa các nguyên tử." },
+      { "level": 2, "text": "Số nguyên tử mỗi nguyên tố được bảo toàn, do đó tổng khối lượng không đổi." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đọc kĩ câu hỏi", "body": "Tìm đại lượng được bảo toàn tuyệt đối trong biến đổi hóa học." },
+      { "kind": "knowledge", "title": "Bản chất phản ứng hóa học", "body": "Chỉ có liên kết giữa các nguyên tử thay đổi khiến phân tử này biến đổi thành phân tử khác. Số nguyên tử của mỗi nguyên tố và tổng khối lượng được bảo toàn." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tổng khối lượng các chất và số nguyên tử mỗi nguyên tố luôn được giữ nguyên." }
+    ],
+    "finalSolution": "**Tổng khối lượng các chất và số nguyên tử mỗi nguyên tố** luôn được bảo toàn.",
+    "commonMistakes": [
+      { "id": "thought-molecules-conserved", "message": "Số phân tử có thể thay đổi (ví dụ: 2H2 + O2 -> 2H2O, từ 3 phân tử thành 2 phân tử)." }
+    ]
+  }
+]

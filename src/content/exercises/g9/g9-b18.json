@@ -1,0 +1,118 @@
+[
+  {
+    "id": "g9-b18-mcq-001",
+    "lessonId": "g9-b18",
+    "skillIds": ["metal-properties"],
+    "difficulty": 1,
+    "prompt": "Kim loại nào sau đây có khả năng dẫn điện và dẫn nhiệt tốt nhất trong tất cả các kim loại?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Bạc (Ag)" },
+        { "id": "b", "label": "Đồng (Cu)" },
+        { "id": "c", "label": "Vàng (Au)" },
+        { "id": "d", "label": "Nhôm (Al)" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Thứ tự dẫn điện giảm dần của các kim loại thông dụng: Ag > Cu > Au > Al > Fe." },
+      { "level": 2, "text": "Bạc (Ag) dẫn điện tốt nhất, tiếp theo là đồng (Cu) thường được dùng làm lõi dây điện vì giá thành hợp lý hơn." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đặc tính vật lý", "body": "Tìm kim loại dẫn điện và dẫn nhiệt tốt nhất." },
+      { "kind": "knowledge", "title": "Thứ tự dẫn điện", "body": "Ag > Cu > Au > Al > Fe." },
+      { "kind": "answer", "title": "Kết luận", "body": "**Bạc (Ag)** là kim loại dẫn điện và nhiệt tốt nhất." }
+    ],
+    "finalSolution": "**Bạc (Ag)** dẫn điện và dẫn nhiệt tốt nhất trong các kim loại.",
+    "commonMistakes": [
+      { "id": "picked-cu", "message": "Đồng (Cu) đứng thứ hai sau bạc; đồng được dùng phổ biến vì rẻ hơn bạc." }
+    ]
+  },
+  {
+    "id": "g9-b18-mcq-002",
+    "lessonId": "g9-b18",
+    "skillIds": ["activity-series"],
+    "difficulty": 2,
+    "prompt": "Nhúng một chiếc đinh sắt sạch vào ống nghiệm chứa dung dịch đồng(II) sunfat ([[CuSO4]]). Hiện tượng quan sát được là gì?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Có lớp kim loại màu đỏ bám trên đinh sắt, màu xanh lam của dung dịch nhạt dần" },
+        { "id": "b", "label": "Sủi bọt khí không màu mãnh liệt, đinh sắt tan hết" },
+        { "id": "c", "label": "Xuất hiện kết tủa trắng, không có chất bám vào đinh sắt" },
+        { "id": "d", "label": "Không có hiện tượng gì xảy ra" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Sắt đứng trước đồng trong dãy hoạt động hóa học nên sắt đẩy được đồng ra khỏi dung dịch muối." },
+      { "level": 2, "text": "PTHH: Fe + CuSO4 -> FeSO4 + Cu. Kim loại đồng sinh ra có màu đỏ gạch bám ngoài đinh sắt, ion Cu2+ màu xanh giảm dần." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phản ứng kim loại tác dụng với muối", "body": "Fe tác dụng với dung dịch CuSO4." },
+      { "kind": "knowledge", "title": "PTHH và hiện tượng", "body": "Fe + CuSO4 -> FeSO4 + Cu\nKim loại Cu sinh ra có màu đỏ bám ngoài đinh sắt. Dung dịch CuSO4 màu xanh lam chuyển dần sang màu xanh lục nhạt của FeSO4." },
+      { "kind": "answer", "title": "Kết luận", "body": "Lớp kim loại màu đỏ bám ngoài đinh sắt và màu xanh dung dịch nhạt dần." }
+    ],
+    "finalSolution": "PTHH: Fe + CuSO4 -> FeSO4 + Cu. Hiện tượng: có lớp **đồng màu đỏ** bám ngoài đinh sắt, màu xanh dung dịch nhạt dần.",
+    "commonMistakes": [
+      { "id": "thought-gas-produced", "message": "Phản ứng này không sinh ra chất khí, chỉ có kim loại đồng bám ngoài." }
+    ]
+  },
+  {
+    "id": "g9-b18-eq-003",
+    "lessonId": "g9-b18",
+    "skillIds": ["activity-series"],
+    "difficulty": 2,
+    "prompt": "Cân bằng phương trình hóa học khi cho đồng tác dụng với dung dịch bạc nitrat: [[Cu]] + [[AgNO3]] -> [[Cu(NO3)2]] + [[Ag]].",
+    "answer": {
+      "kind": "equation",
+      "mode": "fill-coefficients",
+      "reactants": ["Cu", "AgNO3"],
+      "products": ["Cu(NO3)2", "Ag"],
+      "coefficients": [1, 2, 1, 2]
+    },
+    "hints": [
+      { "level": 1, "text": "Trong muối Cu(NO3)2 có 2 nhóm (NO3), do đó vế trái cần 2 phân tử AgNO3." },
+      { "level": 2, "text": "2 AgNO3 tạo ra 2 Ag ở vế phải. Tỉ lệ: 1, 2, 1, 2." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Cân bằng nhóm (NO3)", "body": "Vế phải có 2 nhóm (NO3) => đặt hệ số 2 trước AgNO3." },
+      { "kind": "compute", "title": "Cân bằng kim loại Ag", "body": "Vế trái có 2 nguyên tử Ag => đặt hệ số 2 trước Ag ở vế phải." },
+      { "kind": "compute", "title": "Kiểm tra Cu", "body": "Mỗi vế đều có 1 nguyên tử Cu. Phương trình đã cân bằng." },
+      { "kind": "answer", "title": "Kết luận", "body": "Phương trình hoàn chỉnh: **Cu + 2AgNO3 -> Cu(NO3)2 + 2Ag**." }
+    ],
+    "finalSolution": "**Cu + 2AgNO3 -> Cu(NO3)2 + 2Ag**",
+    "commonMistakes": [
+      { "id": "forgot-ag-coefficient", "message": "Quên đặt hệ số 2 cho kim loại Ag được giải phóng ở vế phải." }
+    ]
+  },
+  {
+    "id": "g9-b18-tf-004",
+    "lessonId": "g9-b18",
+    "skillIds": ["activity-series"],
+    "difficulty": 1,
+    "prompt": "Dựa vào dãy hoạt động hóa học, hãy chọn ĐÚNG hoặc SAI cho mỗi nhận định sau:",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Kim loại kẽm (Zn) đẩy được sắt (Fe) ra khỏi dung dịch muối sắt(II).", "correct": true },
+        { "id": "s2", "text": "Kim loại đồng (Cu) đẩy được magie (Mg) ra khỏi dung dịch MgSO4.", "correct": false },
+        { "id": "s3", "text": "Các kim loại đứng trước hiđro (H) đều giải phóng được khí H2 khi tác dụng với HCl loãng.", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Quy tắc: Kim loại đứng trước đẩy kim loại đứng sau ra khỏi dung dịch muối." },
+      { "level": 2, "text": "Zn đứng trước Fe nên đẩy được Fe. Cu đứng sau Mg nên không thể đẩy được Mg." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Tra cứu dãy hoạt động", "body": "Dãy: K Na Ca Mg Al Zn Fe Pb (H) Cu Ag Au." },
+      { "kind": "knowledge", "title": "Đối chiếu từng câu", "body": "s1: Zn đứng trước Fe => Đúng. s2: Cu đứng sau Mg => Sai. s3: Kim loại trước H giải phóng H2 => Đúng." },
+      { "kind": "answer", "title": "Kết luận", "body": "s1: Đúng, s2: Sai, s3: Đúng." }
+    ],
+    "finalSolution": "s1: Đúng, s2: Sai (Cu yếu hơn Mg), s3: Đúng.",
+    "commonMistakes": [
+      { "id": "inverted-metal-reactivity", "message": "Kim loại mạnh hơn (đứng trước) mới đẩy được kim loại yếu hơn (đứng sau)." }
+    ]
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "id": "g8-b11-mcq-001",
+    "lessonId": "g8-b11",
+    "skillIds": ["salt-reactions"],
+    "difficulty": 1,
+    "prompt": "Khi nhỏ dung dịch muối Barium chloride ([[BaCl2]]) vào dung dịch Natri sunfat ([[Na2SO4]]), hiện tượng quan sát được là:",
+    "given": [{ "label": "Chất tham gia", "value": "BaCl2 + Na2SO4" }],
+    "find": { "label": "Hiện tượng thí nghiệm" },
+    "knowledge": ["reactions.salt-precipitate"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-1", "label": "Xuất hiện kết tủa trắng không tan trong acid" },
+        { "id": "opt-2", "label": "Sủi bọt khí không màu bay lên" },
+        { "id": "opt-3", "label": "Dung dịch chuyển sang màu xanh lam" },
+        { "id": "opt-4", "label": "Không có hiện tượng gì xảy ra" }
+      ],
+      "correctId": "opt-1"
+    },
+    "hints": [
+      { "level": 1, "text": "Phản ứng trao đổi tạo ra muối Barium sulfate (BaSO4)." },
+      { "level": 2, "text": "BaSO4 là chất kết tủa màu trắng đặc trưng, không tan trong nước và acid." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định loại phản ứng", "body": "Đây là phản ứng trao đổi giữa 2 muối trong dung dịch." },
+      { "kind": "equation", "title": "Viết phương trình hóa học", "body": "BaCl2 + Na2SO4 -> BaSO4 (kết tủa trắng) + 2NaCl." },
+      { "kind": "answer", "title": "Kết luận hiện tượng", "body": "Xuất hiện kết tủa trắng của BaSO4." }
+    ],
+    "commonMistakes": [
+      { "id": "cm-nacl-precipitate", "message": "Nghĩ NaCl kết tủa. Muối ăn NaCl tan rất tốt trong nước, kết tủa trắng là BaSO4." }
+    ],
+    "finalSolution": "Xuất hiện kết tủa trắng không tan trong acid"
+  },
+  {
+    "id": "g8-b11-formula-001",
+    "lessonId": "g8-b11",
+    "skillIds": ["salt-naming"],
+    "difficulty": 1,
+    "prompt": "Nhập công thức hóa học của muối Canxi cacbonat (thành phần chính của đá vôi, vỏ sò, phấn viết bảng):",
+    "knowledge": ["formulas.calcium-carbonate"],
+    "answer": {
+      "kind": "formula",
+      "accepted": ["CaCO3", "caco3"]
+    },
+    "hints": [
+      { "level": 1, "text": "Gồm cation Ca (hóa trị II) và gốc anion CO3 (hóa trị II)." },
+      { "level": 2, "text": "Vì cùng hóa trị II nên tỉ lệ là 1:1 => CaCO3." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định hóa trị", "body": "Canxi có hóa trị II, gốc cacbonat (CO3) có hóa trị II." },
+      { "kind": "knowledge", "title": "Áp dụng quy tắc hóa trị", "body": "Tỉ lệ hóa trị 1:1 nên chỉ số của mỗi thành phần là 1." },
+      { "kind": "answer", "title": "Lập công thức", "body": "Công thức là CaCO3." }
+    ],
+    "finalSolution": "CaCO3"
+  },
+  {
+    "id": "g8-b11-tf-001",
+    "lessonId": "g8-b11",
+    "skillIds": ["salt-solubility"],
+    "difficulty": 2,
+    "prompt": "Đánh giá tính Đúng hay Sai của các nhận định sau về độ tan của muối trong nước:",
+    "knowledge": ["salts.solubility-rules"],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Tất cả các muối của kim loại Natri (Na) và Kali (K) đều tan tốt trong nước.", "correct": true },
+        { "id": "s2", "text": "Tất cả các muối nitrat (gốc -NO3) đều tan trong nước.", "correct": true },
+        { "id": "s3", "text": "Bạc clorua (AgCl) là một muối tan tốt trong nước.", "correct": false },
+        { "id": "s4", "text": "Phản ứng trao đổi trong dung dịch chỉ xảy ra khi sản phẩm có chất kết tủa hoặc chất khí hoặc nước.", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Nhớ quy tắc vàng: muối Na, K và gốc NO3 luôn tan." },
+      { "level": 2, "text": "AgCl là chất kết tủa màu trắng đặc trưng khi thử ion Cl-." }
+    ],
+    "steps": [
+      { "kind": "knowledge", "title": "Quy tắc tính tan", "body": "Muối gốc Na, K và NO3 luôn tan tốt trong nước (s1, s2 đúng)." },
+      { "kind": "identify", "title": "Muối không tan", "body": "AgCl là muối kết tủa màu trắng không tan trong nước và axit (s3 sai)." },
+      { "kind": "answer", "title": "Điều kiện trao đổi", "body": "Điều kiện phản ứng trao đổi tạo kết tủa, khí hoặc chất điện li yếu (s4 đúng)." }
+    ],
+    "finalSolution": "s1: Đúng, s2: Đúng, s3: Sai, s4: Đúng"
+  }
+]

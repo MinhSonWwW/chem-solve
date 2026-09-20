@@ -1,0 +1,118 @@
+[
+  {
+    "id": "g8-b09-mcq-001",
+    "lessonId": "g8-b09",
+    "skillIds": ["base-properties"],
+    "difficulty": 1,
+    "prompt": "Dung dịch bazơ nào sau đây là bazơ kiềm (tan tốt trong nước ở nhiệt độ thường)?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Natri hiđroxit (NaOH)" },
+        { "id": "b", "label": "Đồng(II) hiđroxit (Cu(OH)2)" },
+        { "id": "c", "label": "Sắt(III) hiđroxit (Fe(OH)3)" },
+        { "id": "d", "label": "Nhôm hiđroxit (Al(OH)3)" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Các bazơ kiềm phổ biến bao gồm bazơ của kim loại kiềm như K, Na và Ba, Ca." },
+      { "level": 2, "text": "NaOH, KOH, Ba(OH)2, Ca(OH)2 tan trong nước; các bazơ còn lại như Cu(OH)2, Fe(OH)3 là chất kết tủa không tan." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân biệt bazơ tan và không tan", "body": "Cần tìm dung dịch kiềm trong 4 chất đã cho." },
+      { "kind": "knowledge", "title": "Tính tan của bazơ", "body": "Chỉ có NaOH, KOH, Ba(OH)2 và Ca(OH)2 là tan tốt trong nước tạo dung dịch kiềm." },
+      { "kind": "answer", "title": "Kết luận", "body": "**NaOH** là bazơ kiềm tan trong nước." }
+    ],
+    "finalSolution": "**NaOH (Natri hiđroxit)** là bazơ kiềm tan tốt trong nước.",
+    "commonMistakes": [
+      { "id": "picked-insoluble", "message": "Cu(OH)2 là chất kết tủa màu xanh lam không tan trong nước." }
+    ]
+  },
+  {
+    "id": "g8-b09-mcq-002",
+    "lessonId": "g8-b09",
+    "skillIds": ["ph-scale"],
+    "difficulty": 1,
+    "prompt": "Một mẫu nước ngầm có giá trị pH đo được là 8,5. Kết luận nào sau đây là chính xác về môi trường của mẫu nước này?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Mẫu nước có môi trường bazơ (kiềm)" },
+        { "id": "b", "label": "Mẫu nước có môi trường axit" },
+        { "id": "c", "label": "Mẫu nước có môi trường trung tính" },
+        { "id": "d", "label": "Không xác định được môi trường" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "So sánh giá trị pH của mẫu nước với mốc trung tính pH = 7." },
+      { "level": 2, "text": "pH < 7 là axit, pH = 7 là trung tính, pH > 7 là môi trường bazơ." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "So sánh pH", "body": "pH đo được = 8,5." },
+      { "kind": "knowledge", "title": "Thang đo pH", "body": "pH < 7: Axit; pH = 7: Trung tính; pH > 7: Bazơ." },
+      { "kind": "compute", "title": "Đối chiếu", "body": "Vì 8,5 > 7 nên dung dịch có tính bazơ." },
+      { "kind": "answer", "title": "Kết luận", "body": "Mẫu nước có **môi trường bazơ**." }
+    ],
+    "finalSolution": "Vì pH = 8,5 > 7 nên mẫu nước có **môi trường bazơ (kiềm)**.",
+    "commonMistakes": [
+      { "id": "inverted-ph-scale", "message": "Nhớ rằng pH > 7 là bazơ, không phải axit." }
+    ]
+  },
+  {
+    "id": "g8-b09-match-003",
+    "lessonId": "g8-b09",
+    "skillIds": ["base-properties"],
+    "difficulty": 1,
+    "prompt": "Ghép chất chỉ thị với màu sắc khi nhỏ vào dung dịch bazơ ([[NaOH]]):",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Giấy quỳ tím", "right": "Chuyển sang màu xanh" },
+        { "left": "Dung dịch phenolphtalein không màu", "right": "Chuyển sang màu hồng (đỏ cánh sen)" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Dung dịch kiềm làm quỳ tím hóa xanh và phenolphtalein hóa hồng." },
+      { "level": 2, "text": "Quỳ tím -> màu xanh; Phenolphtalein -> màu hồng." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Chỉ thị màu với bazơ", "body": "Dấu hiệu nhận biết dung dịch bazơ tan." },
+      { "kind": "knowledge", "title": "Màu chỉ thị", "body": "Quỳ tím gặp kiềm chuyển xanh, phenolphtalein không màu chuyển sang màu hồng." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đã ghép chính xác màu sắc của hai chất chỉ thị." }
+    ],
+    "finalSolution": "Quỳ tím ↔ Màu xanh; Phenolphtalein ↔ Màu hồng.",
+    "commonMistakes": [
+      { "id": "confused-indicators", "message": "Quỳ tím chuyển màu xanh, còn phenolphtalein chuyển sang màu hồng." }
+    ]
+  },
+  {
+    "id": "g8-b09-tf-004",
+    "lessonId": "g8-b09",
+    "skillIds": ["ph-scale"],
+    "difficulty": 1,
+    "prompt": "Chọn ĐÚNG hoặc SAI cho mỗi nhận định sau về thang pH:",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Nước tinh khiết ở 25 °C có độ pH bằng 7.", "correct": true },
+        { "id": "s2", "text": "Nước chanh có vị chua nên có độ pH lớn hơn 7.", "correct": false },
+        { "id": "s3", "text": "Dung dịch có độ pH càng nhỏ thì tính axit càng mạnh.", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Vị chua là đặc trưng của axit, do đó nước chanh phải có pH < 7." },
+      { "level": 2, "text": "pH càng nhỏ (về gần 0) tính axit càng mạnh; pH càng lớn (về gần 14) tính bazơ càng mạnh." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xét từng nhận định về pH", "body": "Liên hệ giữa pH, môi trường và độ mạnh của axit/bazơ." },
+      { "kind": "knowledge", "title": "Quy luật thang pH", "body": "s1: Đúng (nước cất trung tính pH = 7). s2: Sai (nước chanh chứa axit xitric có pH khoảng 2 – 3 < 7). s3: Đúng (pH càng thấp tính axit càng mạnh)." },
+      { "kind": "answer", "title": "Kết luận", "body": "s1: Đúng, s2: Sai, s3: Đúng." }
+    ],
+    "finalSolution": "s1: Đúng, s2: Sai (nước chanh có tính axit nên pH < 7), s3: Đúng.",
+    "commonMistakes": [
+      { "id": "thought-acid-has-high-ph", "message": "Nhầm lẫn chiều thang đo: Axit có pH < 7, pH càng nhỏ tính axit càng mạnh." }
+    ]
+  }
+]

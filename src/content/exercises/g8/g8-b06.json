@@ -1,0 +1,93 @@
+[
+  {
+    "id": "g8-b06-num-001",
+    "lessonId": "g8-b06",
+    "skillIds": ["stoichiometry-calc"],
+    "difficulty": 2,
+    "prompt": "Đốt cháy hoàn toàn 2,4 g kim loại Magie ([[Mg]]) trong khí oxi ([[O2]]) thu được Magie oxit ([[MgO]]) theo PTHH: 2[[Mg]] + [[O2]] -> 2[[MgO]]. Tính khối lượng [[MgO]] thu được. (Cho M(Mg) = 24 g/mol, M(O) = 16 g/mol).",
+    "given": [
+      { "label": "Khối lượng Mg (m_Mg)", "value": "2.4", "unit": "g" },
+      { "label": "M(Mg)", "value": "24", "unit": "g/mol" },
+      { "label": "M(MgO)", "value": "40", "unit": "g/mol" }
+    ],
+    "find": { "label": "Khối lượng MgO (m_MgO)", "unit": "g" },
+    "answer": {
+      "kind": "number",
+      "value": 4.0,
+      "unit": "g",
+      "decimals": 1,
+      "tolerance": { "abs": 0.1 }
+    },
+    "hints": [
+      { "level": 1, "text": "Bước 1: Tìm số mol Mg: n(Mg) = m / M = 2,4 / 24." },
+      { "level": 2, "text": "Bước 2: Theo PTHH, n(MgO) = n(Mg) = 0,1 mol. Bước 3: Tính m(MgO) = n × M = 0,1 × 40." }
+    ],
+    "steps": [
+      { "kind": "compute", "title": "Tính số mol Mg", "body": "n(Mg) = 2,4 / 24 = 0,1 mol." },
+      { "kind": "equation", "title": "Dựa vào PTHH tìm số mol MgO", "body": "Theo PTHH: 2 mol Mg tạo ra 2 mol MgO (tỉ lệ 1:1) => n(MgO) = n(Mg) = 0,1 mol." },
+      { "kind": "answer", "title": "Tính khối lượng MgO", "body": "M(MgO) = 24 + 16 = 40 g/mol => m(MgO) = 0,1 × 40 = 4,0 g." }
+    ],
+    "commonMistakes": [
+      { "id": "no-moles", "message": "Quên không đổi ra số mol mà nhân trực tiếp khối lượng." }
+    ],
+    "finalSolution": "4.0"
+  },
+  {
+    "id": "g8-b06-num-002",
+    "lessonId": "g8-b06",
+    "skillIds": ["gas-volume-calc", "stoichiometry-calc"],
+    "difficulty": 2,
+    "prompt": "Cho 6,5 g Kẽm ([[Zn]]) tác dụng hết với dung dịch axit [[HCl]] theo PTHH: [[Zn]] + 2[[HCl]] -> [[ZnCl2]] + [[H2]]. Tính thể tích khí [[H2]] thoát ra ở điều kiện chuẩn (25 °C, 1 bar). (Cho M(Zn) = 65 g/mol).",
+    "given": [
+      { "label": "Khối lượng Zn", "value": "6.5", "unit": "g" },
+      { "label": "M(Zn)", "value": "65", "unit": "g/mol" }
+    ],
+    "find": { "label": "Thể tích H2 ở ĐKC", "unit": "L" },
+    "answer": {
+      "kind": "number",
+      "value": 2.48,
+      "unit": "L",
+      "decimals": 2,
+      "tolerance": { "abs": 0.05 }
+    },
+    "hints": [
+      { "level": 1, "text": "Tính số mol Zn: n(Zn) = 6,5 / 65 = 0,1 mol." },
+      { "level": 2, "text": "Theo PTHH: n(H2) = n(Zn) = 0,1 mol. Ở ĐKC: V = n × 24,79 L." }
+    ],
+    "steps": [
+      { "kind": "compute", "title": "Tính số mol Zn", "body": "n(Zn) = 6,5 / 65 = 0,1 mol." },
+      { "kind": "equation", "title": "Tìm số mol khí H2", "body": "Theo tỉ lệ phương trình: n(H2) = n(Zn) = 0,1 mol." },
+      { "kind": "answer", "title": "Tính thể tích khí ở ĐKC", "body": "V(H2) = 0,1 × 24,79 = 2,479 L (làm tròn 2,48 L)." }
+    ],
+    "commonMistakes": [
+      { "id": "used-22.4", "message": "Nhầm chuẩn cũ 22,4 L thay vì chuẩn SGK mới 24,79 L/mol." }
+    ],
+    "finalSolution": "2.48"
+  },
+  {
+    "id": "g8-b06-ordering-001",
+    "lessonId": "g8-b06",
+    "skillIds": ["stoichiometry-steps"],
+    "difficulty": 1,
+    "prompt": "Sắp xếp theo thứ tự đúng các bước giải bài toán tính theo phương trình hóa học:",
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Bước 1: Viết và cân bằng phương trình hóa học (PTHH)",
+        "Bước 2: Đổi dữ kiện đề bài ra số mol (n = m/M hoặc n = V/24,79)",
+        "Bước 3: Dựa vào tỉ lệ hệ số trong PTHH tìm số mol chất cần tính",
+        "Bước 4: Tính khối lượng (m = n × M) hoặc thể tích khí (V = n × 24,79) theo yêu cầu"
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Phải có phương trình đã cân bằng đúng trước khi tính toán số mol." },
+      { "level": 2, "text": "Sau khi có số mol chất đã cho, dùng tỉ lệ phương trình để tìm số mol chất cần tính." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Bước mở đầu", "body": "Bắt buộc phải viết và cân bằng chính xác PTHH." },
+      { "kind": "compute", "title": "Chuyển đổi dữ liệu", "body": "Đổi khối lượng hoặc thể tích ra mol qua n = m/M hoặc n = V/24,79." },
+      { "kind": "answer", "title": "Hoàn tất tính toán", "body": "Đặt mol lên PTHH và tính toán ra đáp án yêu cầu." }
+    ],
+    "finalSolution": "Bước 1 -> Bước 2 -> Bước 3 -> Bước 4"
+  }
+]

@@ -1,0 +1,113 @@
+{
+  "mnemonic": "Khi Nào Cần May Áo Záp Sắt Phải Hỏi Cụ Bạc Vàng",
+  "metals": [
+    {
+      "order": 1,
+      "symbol": "K",
+      "nameVi": "Kali",
+      "level": "Rất mạnh",
+      "reactsWithWaterCold": true,
+      "reactsWithDiluteAcid": true,
+      "notes": "Phản ứng mãnh liệt với nước ở nhiệt độ thường tạo KOH + H2."
+    },
+    {
+      "order": 2,
+      "symbol": "Na",
+      "nameVi": "Natri",
+      "level": "Rất mạnh",
+      "reactsWithWaterCold": true,
+      "reactsWithDiluteAcid": true,
+      "notes": "Nóng chảy thành giọt tròn chạy trên mặt nước, tỏa nhiều nhiệt."
+    },
+    {
+      "order": 3,
+      "symbol": "Ca",
+      "nameVi": "Canxi",
+      "level": "Rất mạnh",
+      "reactsWithWaterCold": true,
+      "reactsWithDiluteAcid": true,
+      "notes": "Phản ứng với nước tạo dung dịch nước vôi Ca(OH)2 đục nhẹ."
+    },
+    {
+      "order": 4,
+      "symbol": "Mg",
+      "nameVi": "Magie",
+      "level": "Trung bình - mạnh",
+      "reactsWithWaterCold": false,
+      "reactsWithDiluteAcid": true,
+      "notes": "Phản ứng chậm với nước lạnh, nhanh với hơi nước nóng; sủi bọt khí H2 trong axit HCl/H2SO4 loãng."
+    },
+    {
+      "order": 5,
+      "symbol": "Al",
+      "nameVi": "Nhôm",
+      "level": "Trung bình - mạnh",
+      "reactsWithWaterCold": false,
+      "reactsWithDiluteAcid": true,
+      "notes": "Bền trong không khí và nước do có màng oxit Al2O3 bảo vệ."
+    },
+    {
+      "order": 6,
+      "symbol": "Zn",
+      "nameVi": "Kẽm",
+      "level": "Trung bình",
+      "reactsWithWaterCold": false,
+      "reactsWithDiluteAcid": true,
+      "notes": "Dùng phổ biến để điều chế khí hiđro trong phòng thí nghiệm (Zn + 2HCl -> ZnCl2 + H2)."
+    },
+    {
+      "order": 7,
+      "symbol": "Fe",
+      "nameVi": "Sắt",
+      "level": "Trung bình",
+      "reactsWithWaterCold": false,
+      "reactsWithDiluteAcid": true,
+      "notes": "Tác dụng với HCl/H2SO4 loãng tạo muối sắt(II); đẩy được Cu ra khỏi CuSO4."
+    },
+    {
+      "order": 8,
+      "symbol": "Pb",
+      "nameVi": "Chì",
+      "level": "Yếu - trung bình",
+      "reactsWithWaterCold": false,
+      "reactsWithDiluteAcid": true,
+      "notes": "Đứng ngay trước hiđro, phản ứng với axit tạo kết tủa PbCl2 hoặc PbSO4 bao bọc cản trở phản ứng tiếp."
+    },
+    {
+      "order": 9,
+      "symbol": "H",
+      "nameVi": "Hiđro (phi kim mốc)",
+      "level": "Mốc so sánh",
+      "reactsWithWaterCold": false,
+      "reactsWithDiluteAcid": false,
+      "notes": "Mốc phân chia: các kim loại đứng trước H đẩy được H ra khỏi dung dịch axit loãng."
+    },
+    {
+      "order": 10,
+      "symbol": "Cu",
+      "nameVi": "Đồng",
+      "level": "Yếu",
+      "reactsWithWaterCold": false,
+      "reactsWithDiluteAcid": false,
+      "notes": "Không tác dụng với HCl/H2SO4 loãng; đẩy được bạc ra khỏi dung dịch AgNO3."
+    },
+    {
+      "order": 11,
+      "symbol": "Ag",
+      "nameVi": "Bạc",
+      "level": "Yếu",
+      "reactsWithWaterCold": false,
+      "reactsWithDiluteAcid": false,
+      "notes": "Kim loại quý, không tan trong axit loãng thông thường."
+    },
+    {
+      "order": 12,
+      "symbol": "Au",
+      "nameVi": "Vàng",
+      "level": "Rất yếu",
+      "reactsWithWaterCold": false,
+      "reactsWithDiluteAcid": false,
+      "notes": "Rất trơ về mặt hóa học, không bị oxi hóa trong không khí kể cả ở nhiệt độ cao."
+    }
+  ]
+}

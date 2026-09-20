@@ -1,0 +1,81 @@
+[
+  {
+    "id": "g9-b26-formula-001",
+    "lessonId": "g9-b26",
+    "skillIds": ["organic-formulas"],
+    "difficulty": 1,
+    "prompt": "Nhập công thức phân tử của rượu etylic (Ethylic alcohol / Ethanol):",
+    "knowledge": ["formulas.ethanol"],
+    "answer": {
+      "kind": "formula",
+      "accepted": ["C2H5OH", "c2h5oh", "C2H6O", "c2h6o"]
+    },
+    "hints": [
+      { "level": 1, "text": "Phân tử gồm 2 nguyên tử Carbon, 6 nguyên tử Hydrogen và 1 nguyên tử Oxygen." },
+      { "level": 2, "text": "Có nhóm chức đặc trưng hiđroxyl (-OH) liên kết với gốc C2H5-." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định thành phần nguyên tố", "body": "Rượu etylic chứa các nguyên tố C, H, O." },
+      { "kind": "knowledge", "title": "Cấu tạo phân tử", "body": "Gồm gốc etyl C2H5- liên kết với nhóm hydroxyl -OH." },
+      { "kind": "answer", "title": "Công thức biểu diễn", "body": "Công thức là C2H5OH hoặc C2H6O." }
+    ],
+    "finalSolution": "C2H5OH"
+  },
+  {
+    "id": "g9-b26-mcq-001",
+    "lessonId": "g9-b26",
+    "skillIds": ["alcohol-reactions"],
+    "difficulty": 2,
+    "prompt": "Rượu etylic phản ứng được với kim loại Natri ([[Na]]) giải phóng khí hiđro [[H2]] là do trong phân tử có chứa nhóm nguyên tử nào?",
+    "given": [{ "label": "Phản ứng", "value": "2C2H5OH + 2Na -> 2C2H5ONa + H2" }],
+    "find": { "label": "Nhóm chức gây ra tính chất" },
+    "knowledge": ["organic.functional-groups"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-1", "label": "Nhóm hiđroxyl (-OH)" },
+        { "id": "opt-2", "label": "Nhóm cacboxyl (-COOH)" },
+        { "id": "opt-3", "label": "Nhóm etyl (-C2H5)" },
+        { "id": "opt-4", "label": "Nhóm metyl (-CH3)" }
+      ],
+      "correctId": "opt-1"
+    },
+    "hints": [
+      { "level": 1, "text": "Nguyên tử H liên kết với Oxygen trong nhóm -OH linh động hơn các nguyên tử H khác." },
+      { "level": 2, "text": "Nhóm -OH là nhóm định chức đặc trưng của các chất thuộc loại rượu (alcohol)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích cấu tạo C2H5OH", "body": "Phân tử C2H5OH có 1 nguyên tử H liên kết trực tiếp với nguyên tử O." },
+      { "kind": "knowledge", "title": "Độ linh động của H", "body": "Liên kết O-H phân cực mạnh nên nguyên tử H này linh động và bị kim loại kiềm Na thay thế." },
+      { "kind": "answer", "title": "Kết luận nhóm chức", "body": "Nhóm hiđroxyl (-OH) quyết định tính chất phản ứng với Na." }
+    ],
+    "finalSolution": "Nhóm hiđroxyl (-OH)"
+  },
+  {
+    "id": "g9-b26-tf-001",
+    "lessonId": "g9-b26",
+    "skillIds": ["alcohol-properties"],
+    "difficulty": 1,
+    "prompt": "Đánh giá tính Đúng hay Sai của các khẳng định sau về rượu etylic:",
+    "knowledge": ["alcohol.properties"],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Rượu etylic là chất lỏng không màu, nhẹ hơn nước và tan vô hạn trong nước.", "correct": true },
+        { "id": "s2", "text": "Độ rượu là số mililít rượu etylic nguyên chất có trong 100 ml hỗn hợp rượu với nước.", "correct": true },
+        { "id": "s3", "text": "Rượu etylic làm quỳ tím chuyển sang màu đỏ giống như axit.", "correct": false },
+        { "id": "s4", "text": "Khi đốt cháy hoàn toàn rượu etylic thu được khí CO2 và hơi nước.", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Rượu etylic có tính trung tính, không làm đổi màu quỳ tím." },
+      { "level": 2, "text": "Đốt cháy hợp chất hữu cơ CxHyOz luôn tạo CO2 và H2O." }
+    ],
+    "steps": [
+      { "kind": "knowledge", "title": "Tính chất vật lý", "body": "C2H5OH là chất lỏng không màu, tan vô hạn trong nước (s1, s2 đúng)." },
+      { "kind": "identify", "title": "Tính chất chỉ thị", "body": "C2H5OH là chất trung tính, không làm đổi màu quỳ tím (s3 sai)." },
+      { "kind": "equation", "title": "Phản ứng cháy", "body": "C2H5OH + 3O2 -> 2CO2 + 3H2O (s4 đúng)." }
+    ],
+    "finalSolution": "s1: Đúng, s2: Đúng, s3: Sai, s4: Đúng"
+  }
+]

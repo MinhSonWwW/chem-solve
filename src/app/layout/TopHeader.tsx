@@ -1,0 +1,41 @@
+import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { Search } from 'lucide-react';
+import { Heart, Streak, XPBadge } from '@/design-system';
+import { useUserStore } from '@/features/gamification/useUserStore';
+
+export const TopHeader: React.FC = () => {
+  const { xp, streak, hearts } = useUserStore();
+  const navigate = useNavigate();
+
+  return (
+    <header className="sticky top-0 z-30 w-full bg-slate-950/90 backdrop-blur-md border-b border-slate-800/80 px-4 py-2.5">
+      <div className="max-w-md mx-auto flex items-center justify-between">
+        {/* Brand */}
+        <Link to="/" className="flex items-center gap-2">
+          <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center font-black text-slate-950 text-sm shadow-[0_3px_0_0_#0891b2]">
+            CS
+          </div>
+          <span className="font-black tracking-wider text-base bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+            CHEM-SOLVE
+          </span>
+        </Link>
+
+        {/* Gamification Stats */}
+        <div className="flex items-center gap-2">
+          <Streak days={streak} />
+          <XPBadge amount={xp} />
+          <Heart count={hearts} max={5} />
+
+          <button
+            onClick={() => navigate('/search')}
+            aria-label="Tìm kiếm"
+            className="p-1.5 text-slate-400 hover:text-cyan-400 rounded-lg bg-slate-900 border border-slate-800 shadow-[0_2px_0_0_#1e293b] active:translate-y-[2px] active:shadow-none transition-all"
+          >
+            <Search className="w-4 h-4" />
+          </button>
+        </div>
+      </div>
+    </header>
+  );
+};

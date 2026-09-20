@@ -1,0 +1,82 @@
+[
+  {
+    "id": "g9-b27-formula-001",
+    "lessonId": "g9-b27",
+    "skillIds": ["organic-formulas"],
+    "difficulty": 1,
+    "prompt": "Nhập công thức cấu tạo thu gọn của axit axetic (Acetic acid / Giấm ăn):",
+    "knowledge": ["formulas.acetic-acid"],
+    "answer": {
+      "kind": "formula",
+      "accepted": ["CH3COOH", "ch3cooh", "C2H4O2", "c2h4o2"]
+    },
+    "hints": [
+      { "level": 1, "text": "Phân tử gồm gốc metyl (-CH3) liên kết với nhóm chức axit cacboxyl (-COOH)." },
+      { "level": 2, "text": "Giấm ăn thông thường là dung dịch axit axetic có nồng độ từ 2% - 5%." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Gốc hidrocacbon", "body": "Gốc hidrocacbon no hóa trị I gồm 1 nguyên tử C là nhóm metyl CH3-." },
+      { "kind": "knowledge", "title": "Nhóm chức axit", "body": "Nhóm chức mang tính axit của axit hữu cơ là nhóm cacboxyl -COOH." },
+      { "kind": "answer", "title": "Ghép thành công thức", "body": "Axit axetic có công thức cấu tạo thu gọn là CH3COOH." }
+    ],
+    "finalSolution": "CH3COOH"
+  },
+  {
+    "id": "g9-b27-mcq-001",
+    "lessonId": "g9-b27",
+    "skillIds": ["acid-reactions"],
+    "difficulty": 2,
+    "prompt": "Khi nhỏ dung dịch axit axetic ([[CH3COOH]]) lên mẩu đá vôi ([[CaCO3]]), hiện tượng quan sát được là:",
+    "given": [{ "label": "Thuốc thử", "value": "CH3COOH + CaCO3" }],
+    "find": { "label": "Hiện tượng thí nghiệm" },
+    "knowledge": ["reactions.acetic-acid-carbonate"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-1", "label": "Đá vôi tan dần, sủi bọt khí không màu CO2 bay lên" },
+        { "id": "opt-2", "label": "Xuất hiện kết tủa trắng không tan" },
+        { "id": "opt-3", "label": "Có mùi hắc của khí lưu huỳnh đioxit SO2" },
+        { "id": "opt-4", "label": "Không có hiện tượng gì xảy ra" }
+      ],
+      "correctId": "opt-1"
+    },
+    "hints": [
+      { "level": 1, "text": "Axit axetic là một axit hữu cơ, tác dụng được với muối cacbonat giải phóng khí CO2." },
+      { "level": 2, "text": "Phương trình: 2CH3COOH + CaCO3 -> (CH3COO)2Ca + CO2 + H2O." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Tính chất của acid", "body": "Axit axetic tuy là axit yếu nhưng mạnh hơn axit cacbonic (H2CO3)." },
+      { "kind": "equation", "title": "Viết PTHH", "body": "2CH3COOH + CaCO3 -> (CH3COO)2Ca + CO2 + H2O." },
+      { "kind": "answer", "title": "Kết luận hiện tượng", "body": "Đá vôi tan dần và sủi bọt khí CO2 thoát ra." }
+    ],
+    "finalSolution": "Đá vôi tan dần, sủi bọt khí không màu CO2 bay lên"
+  },
+  {
+    "id": "g9-b27-mcq-002",
+    "lessonId": "g9-b27",
+    "skillIds": ["esterification"],
+    "difficulty": 2,
+    "prompt": "Phản ứng giữa rượu etylic ([[C2H5OH]]) và axit axetic ([[CH3COOH]]) có mặt [[H2SO4]] đặc làm xúc tác đun nóng được gọi là phản ứng gì?",
+    "knowledge": ["reactions.esterification"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-1", "label": "Phản ứng este hóa (tạo ethyl acetate có mùi thơm hoa quả)" },
+        { "id": "opt-2", "label": "Phản ứng trùng hợp" },
+        { "id": "opt-3", "label": "Phản ứng thủy phân" },
+        { "id": "opt-4", "label": "Phản ứng trung hòa" }
+      ],
+      "correctId": "opt-1"
+    },
+    "hints": [
+      { "level": 1, "text": "CH3COOH + C2H5OH <-> CH3COOC2H5 + H2O. Chất tạo thành thuộc loại este." },
+      { "level": 2, "text": "Phản ứng giữa axit cacboxylic và ancol tạo este và nước gọi là phản ứng este hóa." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định loại chất tham gia", "body": "CH3COOH là axit hữu cơ và C2H5OH là rượu (ancol)." },
+      { "kind": "equation", "title": "Phương trình phản ứng", "body": "CH3COOH + C2H5OH <=> CH3COOC2H5 (este) + H2O." },
+      { "kind": "answer", "title": "Xác định tên phản ứng", "body": "Phản ứng tạo thành este giữa axit hữu cơ và rượu gọi là phản ứng este hóa." }
+    ],
+    "finalSolution": "Phản ứng este hóa (tạo ethyl acetate có mùi thơm hoa quả)"
+  }
+]

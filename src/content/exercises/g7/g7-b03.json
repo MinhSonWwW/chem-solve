@@ -1,0 +1,147 @@
+[
+  {
+    "id": "g7-b03-mcq-001",
+    "lessonId": "g7-b03",
+    "skillIds": ["element-symbols"],
+    "difficulty": 1,
+    "prompt": "Kí hiệu hóa học của nguyên tố Natri (Sodium) là gì?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-1", "label": "Na" },
+        { "id": "opt-2", "label": "N" },
+        { "id": "opt-3", "label": "K" },
+        { "id": "opt-4", "label": "Ne" }
+      ],
+      "correctId": "opt-1"
+    },
+    "hints": [
+      { "level": 1, "text": "Kí hiệu gồm 2 chữ cái, chữ cái đầu viết hoa, chữ cái thứ hai viết thường." },
+      { "level": 2, "text": "N là Nitơ (Nitrogen), K là Kali (Potassium), Ne là Neon." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đọc yêu cầu", "body": "Tìm kí hiệu hóa học của nguyên tố Sodium (Natri)." },
+      { "kind": "knowledge", "title": "Nguồn gốc tên gọi", "body": "Natri có tên IUPAC là Sodium, nguồn gốc Latin là Natrium nên kí hiệu là Na." },
+      { "kind": "answer", "title": "Kết luận", "body": "Kí hiệu hóa học của Sodium là Na." }
+    ],
+    "commonMistakes": [
+      { "id": "mistake-n", "message": "N là kí hiệu của Nitrogen (Nitơ), không phải Natri." },
+      { "id": "mistake-k", "message": "K là kí hiệu của Potassium (Kali)." }
+    ],
+    "finalSolution": "Na"
+  },
+  {
+    "id": "g7-b03-mcq-002",
+    "lessonId": "g7-b03",
+    "skillIds": ["element-symbols"],
+    "difficulty": 1,
+    "prompt": "Nguyên tố nào sau đây là nguyên tố phi kim và chiếm khoảng 21% thể tích không khí?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-1", "label": "Oxygen (Oxi)" },
+        { "id": "opt-2", "label": "Nitrogen (Nitơ)" },
+        { "id": "opt-3", "label": "Hydrogen (Hiđro)" },
+        { "id": "opt-4", "label": "Carbon (Cacbon)" }
+      ],
+      "correctId": "opt-1"
+    },
+    "hints": [
+      { "level": 1, "text": "Khí này duy trì sự sống và sự cháy của các chất." },
+      { "level": 2, "text": "Khí chiếm 78% là Nitrogen, khí chiếm 21% là Oxygen." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận diện", "body": "Xác định thành phần phần trăm thể tích các khí trong khí quyển." },
+      { "kind": "knowledge", "title": "Thành phần không khí", "body": "Không khí gồm ~78% Nitrogen, ~21% Oxygen, và ~1% các khí khác." },
+      { "kind": "answer", "title": "Kết luận", "body": "Nguyên tố cần tìm là Oxygen (O)." }
+    ],
+    "commonMistakes": [
+      { "id": "mistake-nitrogen", "message": "Nitrogen chiếm 78% thể tích không khí, Oxygen mới chiếm 21%." }
+    ],
+    "finalSolution": "Oxygen (Oxi)"
+  },
+  {
+    "id": "g7-b03-num-001",
+    "lessonId": "g7-b03",
+    "skillIds": ["atomic-mass-calc"],
+    "difficulty": 1,
+    "prompt": "Biết khối lượng nguyên tử Carbon là 12 amu, Oxygen là 16 amu. Hãy tính khối lượng phân tử khí Carbon dioxide ([[CO2]]) theo đơn vị amu.",
+    "given": [
+      { "label": "M(C)", "value": "12", "unit": "amu" },
+      { "label": "M(O)", "value": "16", "unit": "amu" }
+    ],
+    "find": { "label": "Khối lượng phân tử CO2", "unit": "amu" },
+    "answer": {
+      "kind": "number",
+      "value": 44,
+      "unit": "amu",
+      "decimals": 0,
+      "tolerance": { "abs": 0.1 }
+    },
+    "hints": [
+      { "level": 1, "text": "Phân tử CO2 gồm 1 nguyên tử Carbon và 2 nguyên tử Oxygen." },
+      { "level": 2, "text": "Công thức tính: M(CO2) = 1 × M(C) + 2 × M(O) = 12 + 2 × 16." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đếm số lượng nguyên tử", "body": "Phân tử CO2 có 1 nguyên tử C và 2 nguyên tử O." },
+      { "kind": "compute", "title": "Tính tổng khối lượng", "body": "M = 12 + 16 × 2 = 12 + 32 = 44 amu." },
+      { "kind": "answer", "title": "Kết luận", "body": "Khối lượng phân tử CO2 là 44 amu." }
+    ],
+    "commonMistakes": [
+      { "id": "mistake-no-multiply", "message": "Quên nhân 2 cho Oxygen (tính 12 + 16 = 28 là phân tử CO)." }
+    ],
+    "finalSolution": "44"
+  },
+  {
+    "id": "g7-b03-tf-001",
+    "lessonId": "g7-b03",
+    "skillIds": ["element-classification"],
+    "difficulty": 2,
+    "prompt": "Đánh giá tính đúng/sai của các nhận định về kim loại và phi kim sau đây:",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Hầu hết các kim loại đều dẫn điện và dẫn nhiệt tốt.", "correct": true },
+        { "id": "s2", "text": "Ở điều kiện thường, tất cả các kim loại đều ở thể rắn.", "correct": false },
+        { "id": "s3", "text": "Kí hiệu hóa học của nguyên tố Sắt (Iron) là Fe.", "correct": true },
+        { "id": "s4", "text": "Hydrogen là kim loại nhẹ nhất trong bảng tuần hoàn.", "correct": false }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Thủy ngân (Mercury - Hg) là kim loại ở thể lỏng ở nhiệt độ phòng." },
+      { "level": 2, "text": "Hydrogen (H) là một phi kim ở thể khí, không phải kim loại." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Kiểm tra tính chất kim loại", "body": "Kim loại nhìn chung có ánh kim, dẫn điện, dẫn nhiệt tốt." },
+      { "kind": "knowledge", "title": "Ngoại lệ thể chất", "body": "Thủy ngân (Hg) là kim loại ở thể lỏng ở nhiệt độ thường (s2 sai)." },
+      { "kind": "answer", "title": "Phân loại phi kim", "body": "Hydrogen là phi kim thể khí (s4 sai). s1 và s3 đúng." }
+    ],
+    "finalSolution": "s1: Đúng, s2: Sai, s3: Đúng, s4: Sai"
+  },
+  {
+    "id": "g7-b03-match-001",
+    "lessonId": "g7-b03",
+    "skillIds": ["element-symbols"],
+    "difficulty": 1,
+    "prompt": "Ghép tên gọi nguyên tố với kí hiệu hóa học tương ứng:",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Iron (Sắt)", "right": "Fe" },
+        { "left": "Copper (Đồng)", "right": "Cu" },
+        { "left": "Aluminium (Nhôm)", "right": "Al" },
+        { "left": "Calcium (Canxi)", "right": "Ca" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Iron bắt nguồn từ Ferrum (Fe), Copper từ Cuprum (Cu)." },
+      { "level": 2, "text": "Aluminium có kí hiệu Al, Calcium có kí hiệu Ca." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định nguyên tố", "body": "4 nguyên tố kim loại thông dụng: Fe, Cu, Al, Ca." },
+      { "kind": "knowledge", "title": "Nguồn gốc kí hiệu", "body": "Kí hiệu lấy theo chữ cái đầu tên Latin." },
+      { "kind": "answer", "title": "Kết luận", "body": "Iron -> Fe; Copper -> Cu; Aluminium -> Al; Calcium -> Ca." }
+    ],
+    "finalSolution": "Iron-Fe, Copper-Cu, Aluminium-Al, Calcium-Ca"
+  }
+]

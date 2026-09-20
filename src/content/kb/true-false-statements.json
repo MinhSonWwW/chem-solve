@@ -1,0 +1,142 @@
+[
+  {
+    "id": "tf-01",
+    "statement": "Dung dịch axit làm đổi màu giấy quỳ tím sang màu đỏ.",
+    "isTrue": true,
+    "explanation": "Axit giải phóng ion H+ trong dung dịch làm giấy quỳ tím hóa đỏ.",
+    "topic": "Acid"
+  },
+  {
+    "id": "tf-02",
+    "statement": "Dung dịch bazơ (kiềm) làm đổi màu giấy quỳ tím sang màu đỏ.",
+    "isTrue": false,
+    "explanation": "Dung dịch bazơ làm giấy quỳ tím chuyển sang màu xanh (hoặc phenolphtalein không màu thành hồng).",
+    "topic": "Base"
+  },
+  {
+    "id": "tf-03",
+    "statement": "Ở điều kiện chuẩn (25 °C, 1 bar), thể tích của 1 mol chất khí bất kì là 22,4 lít.",
+    "isTrue": false,
+    "explanation": "Theo chuẩn mới SGK KNTT (25 °C, 1 bar), thể tích 1 mol khí ở ĐKC là 24,79 L (22,4 L là ở 0 °C, 1 atm cũ).",
+    "topic": "Mol & Khí"
+  },
+  {
+    "id": "tf-04",
+    "statement": "Khối lượng mol phân tử của nước (H2O) là 18 g/mol.",
+    "isTrue": true,
+    "explanation": "M(H2O) = 1*2 + 16 = 18 g/mol.",
+    "topic": "Mol & Khí"
+  },
+  {
+    "id": "tf-05",
+    "statement": "Trong phản ứng hóa học, tổng khối lượng của các chất sản phẩm bằng tổng khối lượng của các chất tham gia.",
+    "isTrue": true,
+    "explanation": "Đó là định luật bảo toàn khối lượng (Lomonosov – Lavoisier).",
+    "topic": "Phản ứng hóa học"
+  },
+  {
+    "id": "tf-06",
+    "statement": "Kim loại đồng (Cu) tác dụng được với dung dịch axit HCl loãng giải phóng khí H2.",
+    "isTrue": false,
+    "explanation": "Đồng đứng sau hiđro trong dãy hoạt động hóa học nên không đẩy được H ra khỏi axit HCl/H2SO4 loãng.",
+    "topic": "Kim loại"
+  },
+  {
+    "id": "tf-07",
+    "statement": "Khí hiđro (H2) là chất khí nhẹ nhất trong tất cả các chất khí.",
+    "isTrue": true,
+    "explanation": "Khối lượng mol của H2 chỉ là 2 g/mol, nhẹ hơn rất nhiều so với không khí (29 g/mol).",
+    "topic": "Đơn chất"
+  },
+  {
+    "id": "tf-08",
+    "statement": "Dung dịch có độ pH < 7 là dung dịch có tính bazơ.",
+    "isTrue": false,
+    "explanation": "pH < 7 là môi trường axit, pH = 7 là trung tính, pH > 7 mới là môi trường bazơ.",
+    "topic": "Thang pH"
+  },
+  {
+    "id": "tf-09",
+    "statement": "Oxide là hợp chất gồm hai nguyên tố, trong đó có một nguyên tố là oxygen.",
+    "isTrue": true,
+    "explanation": "Đúng theo định nghĩa oxide trong chương trình KHTN lớp 8.",
+    "topic": "Oxide"
+  },
+  {
+    "id": "tf-10",
+    "statement": "Hạt nhân nguyên tử được tạo thành bởi các hạt electron mang điện tích âm.",
+    "isTrue": false,
+    "explanation": "Hạt nhân nguyên tử gồm proton (mang điện tích dương) và neutron (không mang điện); electron ở lớp vỏ ngoài.",
+    "topic": "Nguyên tử"
+  },
+  {
+    "id": "tf-11",
+    "statement": "Kim loại kẽm (Zn) tác dụng được với dung dịch H2SO4 loãng sinh ra khí hiđro.",
+    "isTrue": true,
+    "explanation": "PTHH: Zn + H2SO4 -> ZnSO4 + H2.",
+    "topic": "Kim loại"
+  },
+  {
+    "id": "tf-12",
+    "statement": "Nước cất tinh khiết (H2O) là một đơn chất hóa học.",
+    "isTrue": false,
+    "explanation": "Nước cất là hợp chất vì được tạo nên từ 2 nguyên tố hóa học là H và O.",
+    "topic": "Nguyên tử & Hợp chất"
+  },
+  {
+    "id": "tf-13",
+    "statement": "Giấm ăn thông thường có chứa axit axetic (CH3COOH) khoảng 2% – 5%.",
+    "isTrue": true,
+    "explanation": "Thành phần tạo nên vị chua đặc trưng của giấm ăn chính là axit axetic.",
+    "topic": "Hợp chất hữu cơ"
+  },
+  {
+    "id": "tf-14",
+    "statement": "Khí cacbonic (CO2) duy trì tốt sự cháy của que đóm đỏ.",
+    "isTrue": false,
+    "explanation": "CO2 không duy trì sự cháy, người ta thường dùng bình chữa cháy CO2 để dập tắt đám cháy.",
+    "topic": "Khí"
+  },
+  {
+    "id": "tf-15",
+    "statement": "1 mol chất chứa khoảng 6,022 × 10^23 nguyên tử hoặc phân tử của chất đó.",
+    "isTrue": true,
+    "explanation": "Đây chính là hằng số Avogadro (kí hiệu là N_A).",
+    "topic": "Mol"
+  },
+  {
+    "id": "tf-16",
+    "statement": "Kim loại natri (Na) có thể cắt bằng dao và phản ứng rất mãnh liệt với nước ở nhiệt độ phòng.",
+    "isTrue": true,
+    "explanation": "Natri là kim loại kiềm mềm, phản ứng sinh ra dung dịch kiềm NaOH và khí H2 nổ bốc cháy.",
+    "topic": "Kim loại"
+  },
+  {
+    "id": "tf-17",
+    "statement": "Muối ăn hàng ngày dùng trong nấu ăn có thành phần chính là natri clorua (NaCl).",
+    "isTrue": true,
+    "explanation": "Muối ăn có thành phần hóa học chính là hợp chất ion NaCl.",
+    "topic": "Muối"
+  },
+  {
+    "id": "tf-18",
+    "statement": "Không khí là một đơn chất tinh khiết gồm 100% khí oxi.",
+    "isTrue": false,
+    "explanation": "Không khí là một hỗn hợp gồm khoảng 78% N2, 21% O2 và 1% các khí khác.",
+    "topic": "Hỗn hợp"
+  },
+  {
+    "id": "tf-19",
+    "statement": "Kim cương và than chì (than chì bút chì) đều được tạo nên từ nguyên tố cacbon (C).",
+    "isTrue": true,
+    "explanation": "Chúng là các dạng thù hình khác nhau của cùng một nguyên tố cacbon.",
+    "topic": "Phi kim"
+  },
+  {
+    "id": "tf-20",
+    "statement": "Khi hòa tan axit sunfuric đặc (H2SO4) cần rót thật nhanh nước vào axit đặc.",
+    "isTrue": false,
+    "explanation": "Tuyệt đối không được đổ nước vào axit đặc vì sẽ gây sôi đột ngột và bắn axit gây bỏng nặng! Phải rót từ từ axit vào nước.",
+    "topic": "An toàn phòng thí nghiệm"
+  }
+]

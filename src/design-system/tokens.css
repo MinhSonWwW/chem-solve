@@ -1,0 +1,97 @@
+/* Chem-Solve Design Tokens (Tokens trích từ Sprite Sheets & Duolingo Game Feel) */
+
+:root {
+  /* Brand Chemistry Colors */
+  --color-primary: #06b6d4;
+  --color-primary-dark: #0891b2;
+  --color-primary-light: #67e8f9;
+
+  --color-success: #10b981;
+  --color-success-dark: #059669;
+  --color-success-light: #6ee7b7;
+
+  --color-danger: #ef4444;
+  --color-danger-dark: #dc2626;
+  --color-danger-light: #fca5a5;
+
+  --color-accent: #f59e0b;
+  --color-accent-dark: #d97706;
+  --color-accent-light: #fde68a;
+
+  --color-secondary: #8b5cf6;
+  --color-secondary-dark: #7c3aed;
+  --color-secondary-light: #c4b5fd;
+
+  --color-background: #0f172a;
+  --color-surface: #1e293b;
+  --color-surface-card: #182234;
+  --color-border: #334155;
+
+  /* 3D Chunky Shadow Sizes */
+  --shadow-chunky-sm: 0 3px 0 0;
+  --shadow-chunky-md: 0 4px 0 0;
+  --shadow-chunky-lg: 0 6px 0 0;
+
+  /* Border Radii */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --radius-full: 9999px;
+
+  /* Animation Timings */
+  --motion-fast: 150ms;
+  --motion-normal: 250ms;
+  --motion-bouncy: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* 3D Chunky Button Utility Classes */
+.btn-chunky-primary {
+  background-color: var(--color-primary);
+  box-shadow: 0 4px 0 0 var(--color-primary-dark);
+  color: #020617;
+}
+.btn-chunky-primary:active:not(:disabled) {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 0 transparent;
+}
+
+.btn-chunky-success {
+  background-color: var(--color-success);
+  box-shadow: 0 4px 0 0 var(--color-success-dark);
+  color: #020617;
+}
+.btn-chunky-success:active:not(:disabled) {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 0 transparent;
+}
+
+.btn-chunky-danger {
+  background-color: var(--color-danger);
+  box-shadow: 0 4px 0 0 var(--color-danger-dark);
+  color: #ffffff;
+}
+.btn-chunky-danger:active:not(:disabled) {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 0 transparent;
+}
+
+.btn-chunky-accent {
+  background-color: var(--color-accent);
+  box-shadow: 0 4px 0 0 var(--color-accent-dark);
+  color: #020617;
+}
+.btn-chunky-accent:active:not(:disabled) {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 0 transparent;
+}
+
+.btn-chunky-surface {
+  background-color: var(--color-surface);
+  box-shadow: 0 4px 0 0 var(--color-border);
+  color: #e2e8f0;
+}
+.btn-chunky-surface:active:not(:disabled) {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 0 transparent;
+}

@@ -1,0 +1,73 @@
+import { createBrowserRouter, Navigate } from 'react-router-dom';
+import { AppLayout } from './layout/AppLayout';
+import { HomePage } from './pages/HomePage';
+import { LearnPage } from './pages/LearnPage';
+import { PracticePage } from './pages/PracticePage';
+import { ExercisePage } from './pages/ExercisePage';
+import { GamesPage } from './pages/GamesPage';
+import { DailyPage } from './pages/DailyPage';
+import { ProgressPage } from './pages/ProgressPage';
+import { ProfilePage } from './pages/ProfilePage';
+import { SearchPage } from './pages/SearchPage';
+import { DesignSystemPage } from './pages/DesignSystemPage';
+
+export const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <AppLayout />,
+    children: [
+      {
+        index: true,
+        element: <HomePage />
+      },
+      {
+        path: 'learn',
+        element: <Navigate to="/learn/8" replace />
+      },
+      {
+        path: 'learn/:grade',
+        element: <LearnPage />
+      },
+      {
+        path: 'practice',
+        element: <PracticePage />
+      },
+      {
+        path: 'play/:lessonId/:nodeId',
+        element: <ExercisePage />
+      },
+      {
+        path: 'games',
+        element: <GamesPage />
+      },
+      {
+        path: 'games/:gameId',
+        element: <GamesPage />
+      },
+      {
+        path: 'daily',
+        element: <DailyPage />
+      },
+      {
+        path: 'progress',
+        element: <ProgressPage />
+      },
+      {
+        path: 'profile',
+        element: <ProfilePage />
+      },
+      {
+        path: 'search',
+        element: <SearchPage />
+      },
+      {
+        path: 'dev/design-system',
+        element: <DesignSystemPage />
+      },
+      {
+        path: '*',
+        element: <Navigate to="/" replace />
+      }
+    ]
+  }
+]);

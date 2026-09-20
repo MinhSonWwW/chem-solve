@@ -1,0 +1,118 @@
+[
+  {
+    "id": "g8-b08-mcq-001",
+    "lessonId": "g8-b08",
+    "skillIds": ["acid-properties"],
+    "difficulty": 1,
+    "prompt": "Dung dịch axit làm giấy quỳ tím chuyển sang màu gì?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Màu đỏ (hoặc hồng)" },
+        { "id": "b", "label": "Màu xanh lam" },
+        { "id": "c", "label": "Màu tím không đổi" },
+        { "id": "d", "label": "Mất màu hoàn toàn" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Axit và Bazơ làm quỳ tím đổi thành 2 màu đối lập: đỏ và xanh." },
+      { "level": 2, "text": "Axit làm quỳ tím hóa đỏ; bazơ (kiềm) làm quỳ tím hóa xanh." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận dạng", "body": "Tác dụng của dung dịch axit lên chất chỉ thị màu." },
+      { "kind": "knowledge", "title": "Chỉ thị màu", "body": "Quỳ tím là chất chỉ thị: gặp môi trường axit (pH < 7) chuyển sang màu đỏ." },
+      { "kind": "answer", "title": "Kết luận", "body": "Dung dịch axit làm quỳ tím hóa **đỏ**." }
+    ],
+    "finalSolution": "Dung dịch axit làm giấy quỳ tím chuyển sang **màu đỏ**.",
+    "commonMistakes": [
+      { "id": "confused-with-base", "message": "Màu xanh là của dung dịch bazơ (kiềm), axit làm hóa đỏ." }
+    ]
+  },
+  {
+    "id": "g8-b08-mcq-002",
+    "lessonId": "g8-b08",
+    "skillIds": ["acid-properties"],
+    "difficulty": 1,
+    "prompt": "Kim loại nào sau đây KHÔNG tác dụng được với dung dịch axit [[HCl]] loãng?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Đồng (Cu)" },
+        { "id": "b", "label": "Kẽm (Zn)" },
+        { "id": "c", "label": "Sắt (Fe)" },
+        { "id": "d", "label": "Nhôm (Al)" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Chỉ những kim loại đứng trước hiđro (H) trong dãy hoạt động hóa học mới tác dụng với HCl/H2SO4 loãng." },
+      { "level": 2, "text": "Trong dãy: ... Al, Zn, Fe, Pb, (H), Cu, Ag, Au... Đồng (Cu) đứng sau H nên không phản ứng." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đọc yêu cầu", "body": "Tìm kim loại không đẩy được H ra khỏi axit HCl." },
+      { "kind": "knowledge", "title": "Dãy hoạt động hóa học", "body": "Kim loại đứng sau H (Cu, Ag, Au) không tác dụng với dung dịch HCl/H2SO4 loãng." },
+      { "kind": "answer", "title": "Kết luận", "body": "**Đồng (Cu)** không tác dụng với axit HCl loãng." }
+    ],
+    "finalSolution": "**Đồng (Cu)** đứng sau H trong dãy hoạt động nên không tác dụng với dung dịch HCl loãng.",
+    "commonMistakes": [
+      { "id": "picked-fe", "message": "Sắt (Fe) đứng trước H nên phản ứng bình thường: Fe + 2HCl -> FeCl2 + H2." }
+    ]
+  },
+  {
+    "id": "g8-b08-eq-003",
+    "lessonId": "g8-b08",
+    "skillIds": ["acid-properties"],
+    "difficulty": 2,
+    "prompt": "Hoàn thành phương trình phản ứng trung hòa giữa axit sunfuric và natri hiđroxit: [[H2SO4]] + [[NaOH]] -> [[Na2SO4]] + [[H2O]].",
+    "answer": {
+      "kind": "equation",
+      "mode": "fill-coefficients",
+      "reactants": ["H2SO4", "NaOH"],
+      "products": ["Na2SO4", "H2O"],
+      "coefficients": [1, 2, 1, 2]
+    },
+    "hints": [
+      { "level": 1, "text": "Vế phải có muối Na2SO4 gồm 2 nguyên tử Na, do đó vế trái cần 2 phân tử NaOH." },
+      { "level": 2, "text": "H2SO4 + 2NaOH -> Na2SO4 + 2H2O. Tỉ lệ hệ số: 1, 2, 1, 2." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phản ứng trung hòa", "body": "Axit + Bazơ -> Muối + Nước." },
+      { "kind": "compute", "title": "Cân bằng Na và H", "body": "Vế phải có 2 Na => đặt hệ số 2 trước NaOH. Tổng số H vế trái: 2 (trong H2SO4) + 2 (trong 2NaOH) = 4 => đặt hệ số 2 trước H2O." },
+      { "kind": "compute", "title": "Kiểm tra O", "body": "Vế trái: 4 + 2 = 6 O; vế phải: 4 + 2 = 6 O. Đã cân bằng." },
+      { "kind": "answer", "title": "Kết luận", "body": "Phương trình hoàn chỉnh: **H2SO4 + 2NaOH -> Na2SO4 + 2H2O**." }
+    ],
+    "finalSolution": "**H2SO4 + 2NaOH -> Na2SO4 + 2H2O**",
+    "commonMistakes": [
+      { "id": "forgot-water-coefficient", "message": "Quên đặt hệ số 2 cho nước (H2O)." }
+    ]
+  },
+  {
+    "id": "g8-b08-tf-004",
+    "lessonId": "g8-b08",
+    "skillIds": ["acid-properties"],
+    "difficulty": 1,
+    "prompt": "Đánh giá tính ĐÚNG / SAI của các nhận định sau về an toàn khi sử dụng axit:",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Khi pha loãng H2SO4 đặc, tuyệt đối không được đổ nước vào axit.", "correct": true },
+        { "id": "s2", "text": "Nếu bị axit dính vào da, cần rửa ngay dưới vòi nước sạch nhiều lần.", "correct": true },
+        { "id": "s3", "text": "Axit clohiđric (HCl) là một axit hữu cơ có trong giấm ăn.", "correct": false }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Axit trong giấm ăn là axit axetic (CH3COOH), còn HCl là axit vô cơ mạnh." },
+      { "level": 2, "text": "Quy tắc an toàn pha axit: rót từ từ axit vào nước, không làm ngược lại." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xét từng nhận định an toàn", "body": "Kiểm tra quy tắc thí nghiệm an toàn với hóa chất ăn mòn." },
+      { "kind": "knowledge", "title": "Kiến thức an toàn", "body": "s1: Đúng (nước vào axit gây sôi cục bộ bắn axit). s2: Đúng (sơ cứu rửa trôi axit dưới vòi nước). s3: Sai (giấm ăn là CH3COOH, HCl là axit clohiđric trong dịch vị dạ dày)." },
+      { "kind": "answer", "title": "Kết luận", "body": "s1: Đúng, s2: Đúng, s3: Sai." }
+    ],
+    "finalSolution": "s1: Đúng, s2: Đúng, s3: Sai (giấm ăn chứa CH3COOH).",
+    "commonMistakes": [
+      { "id": "confused-acids", "message": "Nhầm HCl là axit trong giấm ăn (giấm ăn là axit axetic CH3COOH)." }
+    ]
+  }
+]

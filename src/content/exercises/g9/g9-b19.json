@@ -1,0 +1,91 @@
+[
+  {
+    "id": "g9-b19-mcq-001",
+    "lessonId": "g9-b19",
+    "skillIds": ["activity-series"],
+    "difficulty": 1,
+    "prompt": "Kim loại nào sau đây KHÔNG tác dụng được với dung dịch axit [[HCl]] loãng để giải phóng khí hiđro [[H2]]?",
+    "given": [{ "label": "Thuốc thử", "value": "Dung dịch HCl loãng" }],
+    "find": { "label": "Kim loại không phản ứng" },
+    "knowledge": ["activity-series.acid-reaction"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-1", "label": "Đồng (Cu)" },
+        { "id": "opt-2", "label": "Kẽm (Zn)" },
+        { "id": "opt-3", "label": "Sắt (Fe)" },
+        { "id": "opt-4", "label": "Nhôm (Al)" }
+      ],
+      "correctId": "opt-1"
+    },
+    "hints": [
+      { "level": 1, "text": "Chỉ những kim loại đứng TRƯỚC Hydro (H) trong dãy hoạt động hóa học mới đẩy được H ra khỏi dung dịch acid loãng." },
+      { "level": 2, "text": "Dãy hoạt động: K, Na, Ca, Mg, Al, Zn, Fe, Pb, (H), Cu, Ag, Au." }
+    ],
+    "steps": [
+      { "kind": "knowledge", "title": "Quy tắc dãy hoạt động", "body": "Kim loại đứng trước H đẩy được H ra khỏi dung dịch acid HCl loãng." },
+      { "kind": "identify", "title": "So sánh vị trí", "body": "Zn, Fe, Al đều đứng trước H trong dãy hoạt động nên tác dụng được với HCl." },
+      { "kind": "answer", "title": "Xác định kim loại", "body": "Đồng (Cu) đứng sau (H) nên không phản ứng với dung dịch HCl loãng." }
+    ],
+    "commonMistakes": [
+      { "id": "cm-metal-acid", "message": "Nghĩ kim loại nào cũng tan trong acid. Cu, Ag, Au đứng sau H nên không tan trong HCl loãng." }
+    ],
+    "finalSolution": "Đồng (Cu)"
+  },
+  {
+    "id": "g9-b19-mcq-002",
+    "lessonId": "g9-b19",
+    "skillIds": ["metal-displacement"],
+    "difficulty": 2,
+    "prompt": "Nhúng một chiếc đinh sắt sạch ([[Fe]]) vào dung dịch muối đồng sunfat ([[CuSO4]]). Hiện tượng quan sát được sau một thời gian là:",
+    "knowledge": ["reactions.metal-displaces-metal"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-1", "label": "Có lớp kim loại màu đỏ bám ngoài đinh sắt, màu xanh lam của dung dịch nhạt dần" },
+        { "id": "opt-2", "label": "Sủi bọt khí mạnh, đinh sắt tan biến hoàn toàn" },
+        { "id": "opt-3", "label": "Xuất hiện kết tủa trắng đục dưới đáy cốc" },
+        { "id": "opt-4", "label": "Không có hiện tượng gì xảy ra" }
+      ],
+      "correctId": "opt-1"
+    },
+    "hints": [
+      { "level": 1, "text": "Sắt đứng trước Đồng trong dãy hoạt động hóa học nên Fe đẩy được Cu ra khỏi dung dịch muối." },
+      { "level": 2, "text": "Phương trình: Fe + CuSO4 -> FeSO4 + Cu (kim loại đồng màu đỏ)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "So sánh hoạt tính", "body": "Fe đứng trước Cu trong dãy hoạt động hóa học nên có tính khử mạnh hơn Cu." },
+      { "kind": "equation", "title": "Viết PTHH", "body": "Fe + CuSO4 (xanh lam) -> FeSO4 (dung dịch xanh nhạt) + Cu (đỏ gạch)." },
+      { "kind": "answer", "title": "Mô tả hiện tượng", "body": "Lớp đồng đỏ bám ngoài đinh sắt và màu xanh lam của dung dịch CuSO4 nhạt dần." }
+    ],
+    "finalSolution": "Có lớp kim loại màu đỏ bám ngoài đinh sắt, màu xanh lam của dung dịch nhạt dần"
+  },
+  {
+    "id": "g9-b19-ordering-001",
+    "lessonId": "g9-b19",
+    "skillIds": ["activity-series"],
+    "difficulty": 1,
+    "prompt": "Sắp xếp các kim loại sau theo thứ tự mức độ hoạt động hóa học GIẢM DẦN (từ mạnh đến yếu):",
+    "knowledge": ["activity-series.order"],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Kali (K)",
+        "Magie (Mg)",
+        "Sắt (Fe)",
+        "Đồng (Cu)",
+        "Bạc (Ag)"
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Nhớ câu vần dân gian: Khi Nào Cần May Áo Záp Sắt Phải Hỏi Cụ Bạc Vàng." },
+      { "level": 2, "text": "Kali thuộc nhóm kiềm mạnh nhất, Bạc là kim loại quý kém hoạt động đứng gần cuối." }
+    ],
+    "steps": [
+      { "kind": "knowledge", "title": "Dãy hoạt động chuẩn", "body": "Thứ tự: K > Na > Ca > Mg > Al > Zn > Fe > Pb > (H) > Cu > Ag > Au." },
+      { "kind": "identify", "title": "Đối chiếu các kim loại", "body": "K (Khi) > Mg (May) > Fe (Sắt) > Cu (Cụ) > Ag (Bạc)." },
+      { "kind": "answer", "title": "Xếp thứ tự giảm dần", "body": "Kali (K) -> Magie (Mg) -> Sắt (Fe) -> Đồng (Cu) -> Bạc (Ag)." }
+    ],
+    "finalSolution": "K -> Mg -> Fe -> Cu -> Ag"
+  }
+]

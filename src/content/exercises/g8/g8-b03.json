@@ -1,0 +1,378 @@
+[
+  {
+    "id": "g8-b03-mcq-001",
+    "lessonId": "g8-b03",
+    "skillIds": ["mol-concept"],
+    "difficulty": 1,
+    "prompt": "Một mol chất bất kỳ chứa bao nhiêu hạt (nguyên tử hoặc phân tử)?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "6,022 × 10²³ hạt" },
+        { "id": "b", "label": "6,022 × 10²² hạt" },
+        { "id": "c", "label": "6,022 × 10²⁴ hạt" },
+        { "id": "d", "label": "3,011 × 10²³ hạt" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Con số này được gọi là số Avogadro — một hằng số rất quan trọng trong hóa học." },
+      { "level": 2, "text": "Số Avogadro N = 6,022 × 10²³. Đây là số hạt có trong đúng 1 mol chất bất kỳ." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận dạng", "body": "Câu hỏi về khái niệm mol — hỏi số hạt trong 1 mol." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "Mol là lượng chất chứa N = 6,022 × 10²³ hạt vi mô (nguyên tử, phân tử, ion)." },
+      { "kind": "answer", "title": "Đáp án", "body": "1 mol chứa **6,022 × 10²³** hạt." }
+    ],
+    "finalSolution": "Một mol chất bất kỳ chứa **6,022 × 10²³** hạt (số Avogadro).",
+    "commonMistakes": [
+      { "id": "wrong-exponent", "message": "Bạn nhầm bậc luỹ thừa. Số Avogadro là 10²³, không phải 10²² hay 10²⁴." }
+    ]
+  },
+  {
+    "id": "g8-b03-mcq-002",
+    "lessonId": "g8-b03",
+    "skillIds": ["gas-volume-concept"],
+    "difficulty": 1,
+    "prompt": "Ở điều kiện chuẩn (25 °C, 1 bar), thể tích của 1 mol khí bất kỳ xấp xỉ bằng bao nhiêu?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "22,4 L" },
+        { "id": "b", "label": "24,79 L" },
+        { "id": "c", "label": "11,2 L" },
+        { "id": "d", "label": "44,8 L" }
+      ],
+      "correctId": "b"
+    },
+    "hints": [
+      { "level": 1, "text": "Ở điều kiện chuẩn theo SGK Kết nối tri thức, nhiệt độ là 25 °C chứ không phải 0 °C." },
+      { "level": 2, "text": "Ở đkc (25 °C, 1 bar): 1 mol khí chiếm 24,79 L. Giá trị 22,4 L là ở 0 °C, 1 atm (điều kiện tiêu chuẩn cũ)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận dạng", "body": "Hỏi thể tích mol khí ở điều kiện chuẩn." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "Ở đkc (25 °C, 1 bar), 1 mol bất kỳ khí nào đều chiếm 24,79 L." },
+      { "kind": "answer", "title": "Đáp án", "body": "1 mol khí ở đkc chiếm **24,79 L**." },
+      { "kind": "pitfalls", "title": "Lỗi thường gặp", "body": "Nhầm với 22,4 L — giá trị này ở 0 °C, 1 atm (ĐKTC cũ), không phải đkc mới." }
+    ],
+    "finalSolution": "Ở đkc (25 °C, 1 bar), 1 mol khí chiếm **24,79 L**.",
+    "commonMistakes": [
+      { "id": "dktc-old", "message": "22,4 L là giá trị ở 0 °C, 1 atm (ĐKTC cũ). SGK Kết nối tri thức dùng đkc 25 °C, 1 bar → 24,79 L.", "trapAnswers": ["22.4", "22,4"] }
+    ]
+  },
+  {
+    "id": "g8-b03-mcq-003",
+    "lessonId": "g8-b03",
+    "skillIds": ["gas-density-compare"],
+    "difficulty": 2,
+    "prompt": "Khí nào dưới đây nặng hơn không khí?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "[[H2]] (M = 2 g/mol)" },
+        { "id": "b", "label": "[[CO2]] (M = 44 g/mol)" },
+        { "id": "c", "label": "[[CH4]] (M = 16 g/mol)" },
+        { "id": "d", "label": "[[NH3]] (M = 17 g/mol)" }
+      ],
+      "correctId": "b"
+    },
+    "hints": [
+      { "level": 1, "text": "Khí nặng hơn không khí khi khối lượng mol của nó lớn hơn khối lượng mol trung bình của không khí." },
+      { "level": 2, "text": "M(không khí) ≈ 29 g/mol. Khí nặng hơn khi M > 29." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận dạng", "body": "So sánh tỉ khối khí với không khí → tìm khí nặng hơn." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "d(A/kk) = M(A) / 29. Nếu d > 1 thì khí A nặng hơn không khí." },
+      { "kind": "compute", "title": "So sánh", "body": "[[H2]]: 2/29 < 1 ✗ · [[CO2]]: 44/29 ≈ 1,52 > 1 ✓ · [[CH4]]: 16/29 < 1 ✗ · [[NH3]]: 17/29 < 1 ✗" },
+      { "kind": "answer", "title": "Đáp án", "body": "**[[CO2]]** nặng hơn không khí (d ≈ 1,52)." }
+    ],
+    "finalSolution": "[[CO2]] có M = 44 > 29 nên nặng hơn không khí."
+  },
+  {
+    "id": "g8-b03-tf-001",
+    "lessonId": "g8-b03",
+    "skillIds": ["mol-properties"],
+    "difficulty": 1,
+    "prompt": "Xác định các nhận định sau đúng hay sai về khái niệm mol.",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Mol là đơn vị đo lường lượng chất.", "correct": true },
+        { "id": "s2", "text": "Khối lượng mol nguyên tử (tính bằng g/mol) có giá trị bằng nguyên tử khối.", "correct": true },
+        { "id": "s3", "text": "Một mol nguyên tử [[Fe]] và một mol phân tử [[H2O]] chứa số hạt khác nhau.", "correct": false },
+        { "id": "s4", "text": "Khối lượng mol của [[H2O]] bằng 16 g/mol.", "correct": false }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Nhớ: 1 mol bất kỳ loại hạt nào đều chứa cùng số hạt (số Avogadro)." },
+      { "level": 2, "text": "M([[H2O]]) = 2 × M(H) + M(O) = 2 × 1 + 16 = 18 g/mol, không phải 16." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận dạng", "body": "Kiểm tra hiểu biết về khái niệm mol, khối lượng mol." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "1 mol = 6,022 × 10²³ hạt. M(g/mol) = nguyên tử khối (amu). M([[H2O]]) = 18 g/mol." },
+      { "kind": "answer", "title": "Đáp án", "body": "S1: Đúng · S2: Đúng · S3: Sai (cùng 6,022 × 10²³ hạt) · S4: Sai (M = 18, không phải 16)." }
+    ],
+    "finalSolution": "S1 ✓ · S2 ✓ · S3 ✗ (1 mol luôn chứa cùng số hạt) · S4 ✗ (M([[H2O]]) = 18 g/mol)."
+  },
+  {
+    "id": "g8-b03-tf-002",
+    "lessonId": "g8-b03",
+    "skillIds": ["gas-density-concept"],
+    "difficulty": 2,
+    "prompt": "Đúng hay sai? Xác định các nhận định về tỉ khối chất khí.",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Tỉ khối của khí A so với khí B cho biết khí A nặng hay nhẹ hơn khí B bao nhiêu lần.", "correct": true },
+        { "id": "s2", "text": "Tỉ khối của [[O2]] so với [[H2]] bằng 16.", "correct": true },
+        { "id": "s3", "text": "Nếu d(A/kk) < 1 thì khí A nặng hơn không khí.", "correct": false }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Nhớ công thức: d(A/B) = M(A) / M(B). Khi d > 1, khí A nặng hơn B." },
+      { "level": 2, "text": "d([[O2]]/[[H2]]) = 32/2 = 16. Nếu d < 1 nghĩa là A nhẹ hơn, không phải nặng hơn." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận dạng", "body": "Kiểm tra hiểu biết về tỉ khối chất khí." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "d(A/B) = M(A)/M(B). d > 1: A nặng hơn B. d < 1: A nhẹ hơn B." },
+      { "kind": "answer", "title": "Đáp án", "body": "S1: Đúng · S2: Đúng (32/2 = 16) · S3: Sai (d < 1 → nhẹ hơn)." }
+    ],
+    "finalSolution": "S1 ✓ · S2 ✓ (d = 32/2 = 16) · S3 ✗ (d < 1 thì khí A **nhẹ hơn** không khí)."
+  },
+  {
+    "id": "g8-b03-calc-001",
+    "lessonId": "g8-b03",
+    "skillIds": ["gas-volume-from-mol"],
+    "difficulty": 1,
+    "prompt": "Tính thể tích của 0,2 mol khí [[H2]] ở điều kiện chuẩn (25 °C, 1 bar).",
+    "given": [{ "label": "Số mol [[H2]]", "value": "0,2", "unit": "mol" }],
+    "find": { "label": "Thể tích khí", "unit": "L" },
+    "knowledge": ["formula.gas-volume"],
+    "answer": { "kind": "number", "value": 4.958, "unit": "L", "decimals": 2 },
+    "hints": [
+      { "level": 1, "text": "Đề cho số mol, hỏi thể tích khí. Hai đại lượng này liên hệ với nhau thế nào?" },
+      { "level": 2, "text": "Ở điều kiện chuẩn, 1 mol khí bất kì chiếm 24,79 L: V = n × 24,79." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận dạng", "body": "Cho số mol khí, tìm thể tích → dạng chuyển đổi mol ↔ thể tích khí." },
+      { "kind": "given", "title": "Dữ kiện", "body": "n([[H2]]) = 0,2 mol; cần tìm V." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "V = n × 24,79 (L, điều kiện chuẩn)." },
+      { "kind": "compute", "title": "Tính toán", "body": "V = 0,2 × 24,79 = 4,958 ≈ 4,96 L." },
+      { "kind": "answer", "title": "Đáp án", "body": "Thể tích của 0,2 mol [[H2]] là **4,96 L**." },
+      { "kind": "pitfalls", "title": "Lỗi thường gặp", "body": "Dùng nhầm 22,4 L/mol (0 °C, 1 atm) cho bài ở điều kiện chuẩn 25 °C, 1 bar." }
+    ],
+    "finalSolution": "V = 0,2 × 24,79 ≈ **4,96 L**.",
+    "commonMistakes": [
+      { "id": "used-22.4", "message": "Bạn đã dùng 22,4 L/mol. Bài này ở điều kiện chuẩn (25 °C, 1 bar) nên dùng 24,79 L/mol.", "trapAnswers": ["4.48", "4,48"] }
+    ]
+  },
+  {
+    "id": "g8-b03-calc-002",
+    "lessonId": "g8-b03",
+    "skillIds": ["mol-from-mass"],
+    "difficulty": 1,
+    "prompt": "Tính số mol của 5,6 g sắt ([[Fe]]).",
+    "given": [{ "label": "Khối lượng [[Fe]]", "value": "5,6", "unit": "g" }],
+    "find": { "label": "Số mol", "unit": "mol" },
+    "knowledge": ["formula.mol-from-mass"],
+    "answer": { "kind": "number", "value": 0.1, "unit": "mol", "decimals": 2 },
+    "hints": [
+      { "level": 1, "text": "Có khối lượng chất, muốn tìm số mol. Bạn cần biết thêm đại lượng nào của sắt?" },
+      { "level": 2, "text": "n = m / M. Khối lượng mol [[Fe]] = 56 g/mol (tra bảng tuần hoàn)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận dạng", "body": "Cho khối lượng, tìm số mol → dạng chuyển đổi khối lượng ↔ mol." },
+      { "kind": "given", "title": "Dữ kiện", "body": "m([[Fe]]) = 5,6 g; M([[Fe]]) = 56 g/mol." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "n = m / M." },
+      { "kind": "compute", "title": "Tính toán", "body": "n = 5,6 / 56 = 0,1 mol." },
+      { "kind": "answer", "title": "Đáp án", "body": "Số mol sắt là **0,1 mol**." },
+      { "kind": "pitfalls", "title": "Lỗi thường gặp", "body": "Nhầm M([[Fe]]) = 55,85 (chính xác) với giá trị khác. SGK lấy M = 56 g/mol." }
+    ],
+    "finalSolution": "n = 5,6 / 56 = **0,1 mol**.",
+    "commonMistakes": [
+      { "id": "wrong-M", "message": "Kiểm tra lại khối lượng mol của [[Fe]] trong bảng tuần hoàn (M = 56 g/mol)." }
+    ]
+  },
+  {
+    "id": "g8-b03-calc-003",
+    "lessonId": "g8-b03",
+    "skillIds": ["gas-density"],
+    "difficulty": 2,
+    "prompt": "Tính tỉ khối của khí [[SO2]] so với khí [[H2]].",
+    "given": [
+      { "label": "Khí A", "value": "[[SO2]]" },
+      { "label": "Khí B", "value": "[[H2]]" }
+    ],
+    "find": { "label": "Tỉ khối d(A/B)" },
+    "knowledge": ["formula.relative-gas-density"],
+    "answer": { "kind": "number", "value": 32, "decimals": 0 },
+    "hints": [
+      { "level": 1, "text": "Tỉ khối cho biết khí này nặng hơn khí kia bao nhiêu lần. Cần tìm khối lượng mol trước." },
+      { "level": 2, "text": "d(A/B) = M(A) / M(B). M([[SO2]]) = 32 + 2×16 = 64. M([[H2]]) = 2." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận dạng", "body": "Tính tỉ khối giữa hai khí → dạng tỉ khối." },
+      { "kind": "given", "title": "Dữ kiện", "body": "Khí A = [[SO2]], khí B = [[H2]]." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "d(A/B) = M(A) / M(B)." },
+      { "kind": "compute", "title": "Tính toán", "body": "M([[SO2]]) = 32 + 2 × 16 = 64 g/mol. M([[H2]]) = 2 g/mol. d = 64 / 2 = 32." },
+      { "kind": "answer", "title": "Đáp án", "body": "Tỉ khối của [[SO2]] so với [[H2]] bằng **32**." },
+      { "kind": "pitfalls", "title": "Lỗi thường gặp", "body": "Tính sai M([[SO2]]): phải là S + 2×O = 32 + 32 = 64, không phải 48." }
+    ],
+    "finalSolution": "d([[SO2]]/[[H2]]) = 64 / 2 = **32**.",
+    "commonMistakes": [
+      { "id": "wrong-molar-mass", "message": "Kiểm tra lại M([[SO2]]). Nhớ rằng [[SO2]] có 1S (32) và 2O (2×16 = 32), tổng = 64.", "trapAnswers": ["24", "48"] }
+    ]
+  },
+  {
+    "id": "g8-b03-calc-004",
+    "lessonId": "g8-b03",
+    "skillIds": ["gas-density-air"],
+    "difficulty": 2,
+    "prompt": "Tính tỉ khối của khí [[CO2]] so với không khí.",
+    "given": [{ "label": "Khí", "value": "[[CO2]]" }],
+    "find": { "label": "Tỉ khối so với không khí" },
+    "knowledge": ["formula.relative-gas-density"],
+    "answer": { "kind": "number", "value": 1.517, "decimals": 2, "tolerance": { "abs": 0.01 } },
+    "hints": [
+      { "level": 1, "text": "Khi so sánh với không khí, khối lượng mol trung bình của không khí là bao nhiêu?" },
+      { "level": 2, "text": "d(A/kk) = M(A) / 29. M([[CO2]]) = 12 + 2×16 = 44 g/mol." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận dạng", "body": "Tỉ khối khí so với không khí → dạng tỉ khối." },
+      { "kind": "given", "title": "Dữ kiện", "body": "Khí A = [[CO2]], M(kk) ≈ 29 g/mol." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "d(A/kk) = M(A) / 29." },
+      { "kind": "compute", "title": "Tính toán", "body": "M([[CO2]]) = 12 + 2 × 16 = 44. d = 44 / 29 ≈ 1,52." },
+      { "kind": "answer", "title": "Đáp án", "body": "Tỉ khối của [[CO2]] so với không khí ≈ **1,52**." },
+      { "kind": "pitfalls", "title": "Lỗi thường gặp", "body": "Quên M(kk) ≈ 29 g/mol hoặc dùng nhầm M(kk) = 28,8." }
+    ],
+    "finalSolution": "d([[CO2]]/kk) = 44 / 29 ≈ **1,52**.",
+    "commonMistakes": [
+      { "id": "wrong-air-M", "message": "Khối lượng mol trung bình của không khí ≈ 29 g/mol. Bạn có đang dùng đúng giá trị này không?" }
+    ]
+  },
+  {
+    "id": "g8-b03-calc-005",
+    "lessonId": "g8-b03",
+    "skillIds": ["mass-from-mol"],
+    "difficulty": 1,
+    "prompt": "Tính khối lượng của 0,5 mol [[NaCl]].",
+    "given": [{ "label": "Số mol [[NaCl]]", "value": "0,5", "unit": "mol" }],
+    "find": { "label": "Khối lượng", "unit": "g" },
+    "knowledge": ["formula.mol-from-mass"],
+    "answer": { "kind": "number", "value": 29.25, "unit": "g", "decimals": 1, "tolerance": { "abs": 0.5 } },
+    "hints": [
+      { "level": 1, "text": "Bạn đã biết số mol, cần tìm khối lượng. Công thức nào liên hệ hai đại lượng này?" },
+      { "level": 2, "text": "m = n × M. M([[NaCl]]) = 23 + 35,5 = 58,5 g/mol." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận dạng", "body": "Cho số mol, tìm khối lượng → dạng chuyển đổi mol ↔ khối lượng." },
+      { "kind": "given", "title": "Dữ kiện", "body": "n([[NaCl]]) = 0,5 mol; M([[NaCl]]) = 23 + 35,5 = 58,5 g/mol." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "m = n × M." },
+      { "kind": "compute", "title": "Tính toán", "body": "m = 0,5 × 58,5 = 29,25 g." },
+      { "kind": "answer", "title": "Đáp án", "body": "Khối lượng của 0,5 mol [[NaCl]] là **29,25 g** (hoặc ≈ 29,3 g)." },
+      { "kind": "pitfalls", "title": "Lỗi thường gặp", "body": "Nhầm M(Cl) = 35 thay vì 35,5 → kết quả sai." }
+    ],
+    "finalSolution": "m = 0,5 × 58,5 = **29,25 g**.",
+    "commonMistakes": [
+      { "id": "wrong-Cl-mass", "message": "Nhớ rằng M(Cl) = 35,5 g/mol (không phải 35). M([[NaCl]]) = 23 + 35,5 = 58,5.", "trapAnswers": ["29", "29.0"] }
+    ]
+  },
+  {
+    "id": "g8-b03-formula-001",
+    "lessonId": "g8-b03",
+    "skillIds": ["gas-formula"],
+    "difficulty": 1,
+    "prompt": "Viết công thức hóa học của khí carbon dioxide (khí cacbonic).",
+    "answer": {
+      "kind": "formula",
+      "accepted": ["CO2"]
+    },
+    "hints": [
+      { "level": 1, "text": "Khí này gồm nguyên tố carbon (C) và oxygen (O). Phân tử có 1 nguyên tử C và 2 nguyên tử O." },
+      { "level": 2, "text": "Công thức: kí hiệu C trước, O sau với chỉ số 2. Viết liền không có dấu cách." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận dạng", "body": "Viết công thức hóa học từ tên gọi thông thường." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "Carbon dioxide = 1C + 2O → [[CO2]]." },
+      { "kind": "answer", "title": "Đáp án", "body": "Công thức: **[[CO2]]**." }
+    ],
+    "finalSolution": "Công thức hóa học của khí carbon dioxide là **[[CO2]]**."
+  },
+  {
+    "id": "g8-b03-formula-002",
+    "lessonId": "g8-b03",
+    "skillIds": ["molecular-mass"],
+    "difficulty": 2,
+    "prompt": "Viết công thức hóa học của calcium hydroxide (canxi hiđroxit).",
+    "answer": {
+      "kind": "formula",
+      "accepted": ["Ca(OH)2"]
+    },
+    "hints": [
+      { "level": 1, "text": "Hợp chất này gồm Ca và nhóm OH. Mỗi Ca kết hợp với mấy nhóm OH?" },
+      { "level": 2, "text": "Ca có hóa trị II, nhóm OH có hóa trị I → cần 2 nhóm OH. Dùng ngoặc tròn: Ca(OH)2." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận dạng", "body": "Viết công thức từ tên gọi: calcium hydroxide." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "Ca (II) + OH (I) → [[Ca(OH)2]]." },
+      { "kind": "answer", "title": "Đáp án", "body": "Công thức: **[[Ca(OH)2]]**." }
+    ],
+    "finalSolution": "Công thức hóa học: **[[Ca(OH)2]]**.",
+    "commonMistakes": [
+      { "id": "no-parens", "message": "Cần dùng ngoặc tròn cho nhóm OH khi có chỉ số: Ca(OH)2, không phải CaOH2.", "trapAnswers": ["CaOH2", "CaO2H2"] }
+    ]
+  },
+  {
+    "id": "g8-b03-match-001",
+    "lessonId": "g8-b03",
+    "skillIds": ["mol-conversions"],
+    "difficulty": 2,
+    "prompt": "Ghép mỗi đại lượng với công thức tính đúng.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Số mol (n)", "right": "m / M" },
+        { "left": "Khối lượng (m)", "right": "n × M" },
+        { "left": "Thể tích khí đkc (V)", "right": "n × 24,79" },
+        { "left": "Tỉ khối d(A/B)", "right": "M(A) / M(B)" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Hãy nhớ lại ba đại lượng liên quan đến mol: khối lượng, thể tích khí, và tỉ khối." },
+      { "level": 2, "text": "n = m/M · m = n×M · V = n × 24,79 · d = M(A)/M(B)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận dạng", "body": "Ghép công thức chuyển đổi các đại lượng liên quan đến mol." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "n = m/M · m = n×M · V(đkc) = n × 24,79 · d(A/B) = M(A)/M(B)." },
+      { "kind": "answer", "title": "Đáp án", "body": "n ↔ m/M · m ↔ n×M · V ↔ n×24,79 · d ↔ M(A)/M(B)." }
+    ],
+    "finalSolution": "n = m/M · m = n×M · V = n × 24,79 · d(A/B) = M(A)/M(B)."
+  },
+  {
+    "id": "g8-b03-order-001",
+    "lessonId": "g8-b03",
+    "skillIds": ["solve-steps"],
+    "difficulty": 2,
+    "prompt": "Sắp xếp các bước giải bài toán tính thể tích khí từ khối lượng theo thứ tự đúng.",
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Xác định dữ kiện: khối lượng m, chất",
+        "Tra bảng tuần hoàn → khối lượng mol M",
+        "Tính số mol: n = m / M",
+        "Áp dụng V = n × 24,79 (đkc)",
+        "Ghi đáp án kèm đơn vị (L)"
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Bước đầu tiên luôn là đọc và ghi lại dữ kiện bài cho." },
+      { "level": 2, "text": "Trình tự: đọc đề → tìm M → tính n → tính V → kết luận." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận dạng", "body": "Sắp xếp quy trình giải bài toán chuyển đổi khối lượng → thể tích khí." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "m → M → n = m/M → V = n × 24,79." },
+      { "kind": "answer", "title": "Đáp án", "body": "1. Dữ kiện → 2. Tra M → 3. Tính n → 4. Tính V → 5. Kết luận." }
+    ],
+    "finalSolution": "Thứ tự: Dữ kiện → Tra M → n = m/M → V = n × 24,79 → Kết luận (đơn vị L)."
+  }
+]

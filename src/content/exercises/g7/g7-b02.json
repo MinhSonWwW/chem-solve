@@ -1,0 +1,178 @@
+[
+  {
+    "id": "g7-b02-mcq-001",
+    "lessonId": "g7-b02",
+    "skillIds": ["atom-structure"],
+    "difficulty": 1,
+    "prompt": "Nguyên tử được cấu tạo từ những loại hạt cơ bản nào?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Proton, neutron và electron" },
+        { "id": "b", "label": "Chỉ gồm proton và neutron" },
+        { "id": "c", "label": "Chỉ gồm proton và electron" },
+        { "id": "d", "label": "Proton và hạt nhân" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Hạt nhân gồm 2 loại hạt và lớp vỏ chứa 1 loại hạt chuyển động xung quanh." },
+      { "level": 2, "text": "Hạt nhân chứa proton và neutron, lớp vỏ ngoài chứa các hạt electron." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận dạng", "body": "Câu hỏi về thành phần cấu tạo nguyên tử trong môn Khoa học tự nhiên 7." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "Nguyên tử gồm hạt nhân (chứa proton và neutron) và lớp vỏ (chứa electron)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Ba loại hạt cơ bản cấu tạo nên nguyên tử là **proton, neutron và electron**." }
+    ],
+    "finalSolution": "Nguyên tử cấu tạo từ 3 loại hạt: **proton**, **neutron** và **electron**.",
+    "commonMistakes": [
+      { "id": "forgot-electron", "message": "Bạn chỉ nhớ các hạt trong hạt nhân mà quên hạt electron ở lớp vỏ." }
+    ]
+  },
+  {
+    "id": "g7-b02-mcq-002",
+    "lessonId": "g7-b02",
+    "skillIds": ["atom-structure"],
+    "difficulty": 1,
+    "prompt": "Trong nguyên tử, hạt nào mang điện tích dương và hạt nào không mang điện?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Proton mang điện dương, neutron không mang điện" },
+        { "id": "b", "label": "Electron mang điện dương, proton không mang điện" },
+        { "id": "c", "label": "Proton mang điện âm, neutron mang điện dương" },
+        { "id": "d", "label": "Neutron mang điện dương, electron không mang điện" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Kí hiệu p mang điện tích +1, e mang điện tích -1." },
+      { "level": 2, "text": "Proton (p) mang điện tích dương (+1), neutron (n) trung hòa không mang điện." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đọc yêu cầu", "body": "Xác định dấu điện tích của proton và neutron." },
+      { "kind": "knowledge", "title": "Điện tích các hạt", "body": "Proton: +1, Electron: -1, Neutron: 0 (không mang điện)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Proton mang điện tích dương, neutron không mang điện." }
+    ],
+    "finalSolution": "Hạt **proton** mang điện tích dương (+1), hạt **neutron** không mang điện.",
+    "commonMistakes": [
+      { "id": "confused-p-and-e", "message": "Chú ý: Proton mang điện dương, electron mới là hạt mang điện âm." }
+    ]
+  },
+  {
+    "id": "g7-b02-calc-003",
+    "lessonId": "g7-b02",
+    "skillIds": ["atom-structure"],
+    "difficulty": 1,
+    "prompt": "Một nguyên tử cacbon có 6 hạt proton trong hạt nhân. Hỏi nguyên tử đó có bao nhiêu hạt electron ở lớp vỏ?",
+    "given": [{ "label": "Số proton (p)", "value": "6" }],
+    "find": { "label": "Số electron (e)" },
+    "answer": {
+      "kind": "number",
+      "value": 6,
+      "decimals": 0
+    },
+    "hints": [
+      { "level": 1, "text": "Nguyên tử luôn trung hòa về điện." },
+      { "level": 2, "text": "Vì nguyên tử trung hòa về điện nên: số proton (p) = số electron (e)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận dạng dữ kiện", "body": "Đề bài cho số proton p = 6, tìm số electron e." },
+      { "kind": "knowledge", "title": "Quy tắc trung hòa", "body": "Trong mọi nguyên tử, tổng điện tích dương ở hạt nhân bằng tổng điện tích âm ở lớp vỏ, do đó số p = số e." },
+      { "kind": "compute", "title": "Suy luận", "body": "Số electron e = số proton p = 6." },
+      { "kind": "answer", "title": "Kết luận", "body": "Nguyên tử cacbon có 6 hạt electron." }
+    ],
+    "finalSolution": "Do nguyên tử trung hòa về điện nên số e = số p = **6**.",
+    "commonMistakes": [
+      { "id": "doubled-number", "message": "Bạn không cần nhân đôi hay cộng thêm; số p luôn luôn bằng số e trong nguyên tử." }
+    ]
+  },
+  {
+    "id": "g7-b02-calc-004",
+    "lessonId": "g7-b02",
+    "skillIds": ["atomic-mass"],
+    "difficulty": 2,
+    "prompt": "Hạt nhân nguyên tử nhôm (Al) gồm 13 proton và 14 neutron. Coi khối lượng của mỗi hạt proton và neutron xấp xỉ bằng 1 amu (bỏ qua khối lượng electron). Tính khối lượng của nguyên tử nhôm theo đơn vị amu.",
+    "given": [
+      { "label": "Số hạt proton (p)", "value": "13" },
+      { "label": "Số hạt neutron (n)", "value": "14" }
+    ],
+    "find": { "label": "Khối lượng nguyên tử", "unit": "amu" },
+    "answer": {
+      "kind": "number",
+      "value": 27,
+      "unit": "amu",
+      "decimals": 0
+    },
+    "hints": [
+      { "level": 1, "text": "Khối lượng nguyên tử tập trung hầu như hoàn toàn ở hạt nhân." },
+      { "level": 2, "text": "Khối lượng nguyên tử (amu) xấp xỉ bằng tổng số hạt proton và neutron: m = p + n = 13 + 14." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích đề bài", "body": "Cho p = 13, n = 14. Mỗi hạt p và n có khối lượng xấp xỉ 1 amu." },
+      { "kind": "knowledge", "title": "Công thức khối lượng nguyên tử", "body": "Khối lượng electron rất nhỏ (bằng khoảng 1/1836 khối lượng proton) nên khối lượng nguyên tử xấp xỉ bằng khối lượng hạt nhân: m ≈ (số p + số n) amu." },
+      { "kind": "compute", "title": "Tính toán", "body": "m ≈ 13 + 14 = 27 amu." },
+      { "kind": "answer", "title": "Kết luận", "body": "Khối lượng nguyên tử nhôm xấp xỉ 27 amu." }
+    ],
+    "finalSolution": "Khối lượng nguyên tử Al ≈ 13 + 14 = **27 amu**.",
+    "commonMistakes": [
+      { "id": "subtracted-particles", "message": "Lấy 14 trừ 13 thay vì cộng tổng hai loại hạt trong hạt nhân." }
+    ]
+  },
+  {
+    "id": "g7-b02-tf-005",
+    "lessonId": "g7-b02",
+    "skillIds": ["atom-structure"],
+    "difficulty": 1,
+    "prompt": "Chọn ĐÚNG hoặc SAI cho mỗi nhận định sau về nguyên tử:",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Hạt nhân nguyên tử mang điện tích dương.", "correct": true },
+        { "id": "s2", "text": "Khối lượng nguyên tử tập trung chủ yếu ở lớp vỏ electron.", "correct": false },
+        { "id": "s3", "text": "Nguyên tử luôn trung hòa về điện.", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Hạt nhân chứa proton mang điện dương. Electron có khối lượng rất nhẹ so với hạt nhân." },
+      { "level": 2, "text": "Lớp vỏ electron có khối lượng rất nhỏ không đáng kể so với hạt nhân." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Kiểm tra từng câu", "body": "Xét từng phát biểu dựa trên mô hình cấu tạo nguyên tử." },
+      { "kind": "knowledge", "title": "Kiến thức đối chiếu", "body": "1. Hạt nhân chứa proton dương nên mang điện dương (ĐÚNG). 2. Khối lượng tập trung ở hạt nhân chứ không phải lớp vỏ (SAI). 3. Số p = số e nên nguyên tử trung hòa điện (ĐÚNG)." },
+      { "kind": "answer", "title": "Đáp án", "body": "s1: Đúng, s2: Sai, s3: Đúng." }
+    ],
+    "finalSolution": "s1: Đúng, s2: Sai (khối lượng tập trung ở hạt nhân), s3: Đúng.",
+    "commonMistakes": [
+      { "id": "thought-shell-is-heavy", "message": "Electron nhẹ hơn proton tới 1836 lần nên lớp vỏ chiếm khối lượng không đáng kể." }
+    ]
+  },
+  {
+    "id": "g7-b02-match-006",
+    "lessonId": "g7-b02",
+    "skillIds": ["atom-structure"],
+    "difficulty": 1,
+    "prompt": "Hãy ghép mỗi loại hạt với đặc điểm điện tích tương ứng:",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Hạt proton", "right": "Mang điện tích +1" },
+        { "left": "Hạt electron", "right": "Mang điện tích -1" },
+        { "left": "Hạt neutron", "right": "Không mang điện (0)" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Proton là hạt dương, electron là hạt âm." },
+      { "level": 2, "text": "Proton: +1, Electron: -1, Neutron: không mang điện." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Ghép cặp", "body": "Xác định điện tích tương ứng của từng hạt cơ bản." },
+      { "kind": "knowledge", "title": "Bảng điện tích", "body": "p: +1, e: -1, n: 0." },
+      { "kind": "answer", "title": "Kết luận", "body": "Proton ↔ +1, Electron ↔ -1, Neutron ↔ Không mang điện." }
+    ],
+    "finalSolution": "Proton ↔ +1; Electron ↔ -1; Neutron ↔ Không mang điện.",
+    "commonMistakes": [
+      { "id": "swapped-p-and-e", "message": "Nhầm lẫn dấu điện tích của proton và electron." }
+    ]
+  }
+]

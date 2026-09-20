@@ -1,0 +1,164 @@
+[
+  {
+    "id": "rx-combustion-h2",
+    "equation": "2H2 + O2 -> 2H2O",
+    "reactants": [{ "formula": "H2", "coef": 2 }, { "formula": "O2", "coef": 1 }],
+    "products": [{ "formula": "H2O", "coef": 2 }],
+    "condition": "t°",
+    "phenomenon": "Cháy với ngọn lửa màu xanh nhạt, tỏa nhiều nhiệt, có giọt nước đọng trên thành bình.",
+    "grade": 8
+  },
+  {
+    "id": "rx-metal-acid-fe-hcl",
+    "equation": "Fe + 2HCl -> FeCl2 + H2",
+    "reactants": [{ "formula": "Fe", "coef": 1 }, { "formula": "HCl", "coef": 2 }],
+    "products": [{ "formula": "FeCl2", "coef": 1 }, { "formula": "H2", "coef": 1 }],
+    "condition": "",
+    "phenomenon": "Sắt tan dần, có bọt khí không màu thoát ra [[up]], dung dịch chuyển sang màu trắng lục.",
+    "grade": 8
+  },
+  {
+    "id": "rx-metal-acid-zn-hcl",
+    "equation": "Zn + 2HCl -> ZnCl2 + H2",
+    "reactants": [{ "formula": "Zn", "coef": 1 }, { "formula": "HCl", "coef": 2 }],
+    "products": [{ "formula": "ZnCl2", "coef": 1 }, { "formula": "H2", "coef": 1 }],
+    "condition": "",
+    "phenomenon": "Kẽm tan dần, bọt khí [[up]] thoát ra mạnh.",
+    "grade": 8
+  },
+  {
+    "id": "rx-decomposition-caco3",
+    "equation": "CaCO3 -> CaO + CO2",
+    "reactants": [{ "formula": "CaCO3", "coef": 1 }],
+    "products": [{ "formula": "CaO", "coef": 1 }, { "formula": "CO2", "coef": 1 }],
+    "condition": "t° cao (khoảng 900 °C)",
+    "phenomenon": "Đá vôi bị phân hủy sinh ra vôi sống và khí cacbonic thoát ra [[up]].",
+    "grade": 8
+  },
+  {
+    "id": "rx-neutralization-naoh-hcl",
+    "equation": "NaOH + HCl -> NaCl + H2O",
+    "reactants": [{ "formula": "NaOH", "coef": 1 }, { "formula": "HCl", "coef": 1 }],
+    "products": [{ "formula": "NaCl", "coef": 1 }, { "formula": "H2O", "coef": 1 }],
+    "condition": "",
+    "phenomenon": "Phản ứng tỏa nhiệt, nếu có quỳ tím hoặc phenolphtalein màu sẽ chuyển về trung tính.",
+    "grade": 8
+  },
+  {
+    "id": "rx-precipitate-ba-so4",
+    "equation": "BaCl2 + Na2SO4 -> BaSO4 + 2NaCl",
+    "reactants": [{ "formula": "BaCl2", "coef": 1 }, { "formula": "Na2SO4", "coef": 1 }],
+    "products": [{ "formula": "BaSO4", "coef": 1 }, { "formula": "NaCl", "coef": 2 }],
+    "condition": "",
+    "phenomenon": "Xuất hiện kết tủa trắng không tan trong axit [[down]].",
+    "grade": 8
+  },
+  {
+    "id": "rx-precipitate-cu-oh2",
+    "equation": "CuSO4 + 2NaOH -> Cu(OH)2 + Na2SO4",
+    "reactants": [{ "formula": "CuSO4", "coef": 1 }, { "formula": "NaOH", "coef": 2 }],
+    "products": [{ "formula": "Cu(OH)2", "coef": 1 }, { "formula": "Na2SO4", "coef": 1 }],
+    "condition": "",
+    "phenomenon": "Xuất hiện kết tủa màu xanh lam [[down]].",
+    "grade": 8
+  },
+  {
+    "id": "rx-combustion-p",
+    "equation": "4P + 5O2 -> 2P2O5",
+    "reactants": [{ "formula": "P", "coef": 4 }, { "formula": "O2", "coef": 5 }],
+    "products": [{ "formula": "P2O5", "coef": 2 }],
+    "condition": "t°",
+    "phenomenon": "Photpho cháy mạnh với ngọn lửa sáng chói, tạo khói dày đặc màu trắng (điphotpho pentaoxit).",
+    "grade": 8
+  },
+  {
+    "id": "rx-combustion-al",
+    "equation": "4Al + 3O2 -> 2Al2O3",
+    "reactants": [{ "formula": "Al", "coef": 4 }, { "formula": "O2", "coef": 3 }],
+    "products": [{ "formula": "Al2O3", "coef": 2 }],
+    "condition": "t°",
+    "phenomenon": "Nhôm cháy chói lóa tạo chất rắn màu trắng nhôm oxit.",
+    "grade": 8
+  },
+  {
+    "id": "rx-combustion-fe",
+    "equation": "3Fe + 2O2 -> Fe3O4",
+    "reactants": [{ "formula": "Fe", "coef": 3 }, { "formula": "O2", "coef": 2 }],
+    "products": [{ "formula": "Fe3O4", "coef": 1 }],
+    "condition": "t°",
+    "phenomenon": "Sắt cháy sáng chói, không có ngọn lửa, không có khói, tạo ra các hạt nhỏ nóng chảy màu nâu đen là oxit sắt từ.",
+    "grade": 8
+  },
+  {
+    "id": "rx-combustion-ch4",
+    "equation": "CH4 + 2O2 -> CO2 + 2H2O",
+    "reactants": [{ "formula": "CH4", "coef": 1 }, { "formula": "O2", "coef": 2 }],
+    "products": [{ "formula": "CO2", "coef": 1 }, { "formula": "H2O", "coef": 2 }],
+    "condition": "t°",
+    "phenomenon": "Metan cháy tạo ngọn lửa màu xanh, tỏa nhiều nhiệt.",
+    "grade": 9
+  },
+  {
+    "id": "rx-metal-acid-al-hcl",
+    "equation": "2Al + 6HCl -> 2AlCl3 + 3H2",
+    "reactants": [{ "formula": "Al", "coef": 2 }, { "formula": "HCl", "coef": 6 }],
+    "products": [{ "formula": "AlCl3", "coef": 2 }, { "formula": "H2", "coef": 3 }],
+    "condition": "",
+    "phenomenon": "Nhôm tan dần trong dung dịch axit, sủi bọt khí không màu mãnh liệt [[up]].",
+    "grade": 8
+  },
+  {
+    "id": "rx-carbonate-acid",
+    "equation": "CaCO3 + 2HCl -> CaCl2 + CO2 + H2O",
+    "reactants": [{ "formula": "CaCO3", "coef": 1 }, { "formula": "HCl", "coef": 2 }],
+    "products": [{ "formula": "CaCl2", "coef": 1 }, { "formula": "CO2", "coef": 1 }, { "formula": "H2O", "coef": 1 }],
+    "condition": "",
+    "phenomenon": "Đá vôi tan dần, sủi bọt khí CO2 không màu thoát ra [[up]].",
+    "grade": 8
+  },
+  {
+    "id": "rx-metal-water-na",
+    "equation": "2Na + 2H2O -> 2NaOH + H2",
+    "reactants": [{ "formula": "Na", "coef": 2 }, { "formula": "H2O", "coef": 2 }],
+    "products": [{ "formula": "NaOH", "coef": 2 }, { "formula": "H2", "coef": 1 }],
+    "condition": "",
+    "phenomenon": "Mẩu natri nóng chảy thành giọt tròn chạy trên mặt nước và tan dần, có khí bay lên [[up]].",
+    "grade": 8
+  },
+  {
+    "id": "rx-metal-displacement-fe-cuso4",
+    "equation": "Fe + CuSO4 -> FeSO4 + Cu",
+    "reactants": [{ "formula": "Fe", "coef": 1 }, { "formula": "CuSO4", "coef": 1 }],
+    "products": [{ "formula": "FeSO4", "coef": 1 }, { "formula": "Cu", "coef": 1 }],
+    "condition": "",
+    "phenomenon": "Có kim loại đồng màu đỏ bám ngoài đinh sắt, màu xanh lam của dung dịch CuSO4 nhạt dần.",
+    "grade": 9
+  },
+  {
+    "id": "rx-reduction-cuo-h2",
+    "equation": "CuO + H2 -> Cu + H2O",
+    "reactants": [{ "formula": "CuO", "coef": 1 }, { "formula": "H2", "coef": 1 }],
+    "products": [{ "formula": "Cu", "coef": 1 }, { "formula": "H2O", "coef": 1 }],
+    "condition": "t°",
+    "phenomenon": "Chất rắn CuO màu đen chuyển dần sang màu đỏ đồng, có hơi nước đọng lại.",
+    "grade": 8
+  },
+  {
+    "id": "rx-reduction-fe2o3-co",
+    "equation": "Fe2O3 + 3CO -> 2Fe + 3CO2",
+    "reactants": [{ "formula": "Fe2O3", "coef": 1 }, { "formula": "CO", "coef": 3 }],
+    "products": [{ "formula": "Fe", "coef": 2 }, { "formula": "CO2", "coef": 3 }],
+    "condition": "t°",
+    "phenomenon": "Bột quặng Fe2O3 màu đỏ nâu chuyển sang màu xám đen của sắt.",
+    "grade": 9
+  },
+  {
+    "id": "rx-combustion-c2h5oh",
+    "equation": "C2H5OH + 3O2 -> 2CO2 + 3H2O",
+    "reactants": [{ "formula": "C2H5OH", "coef": 1 }, { "formula": "O2", "coef": 3 }],
+    "products": [{ "formula": "CO2", "coef": 2 }, { "formula": "H2O", "coef": 3 }],
+    "condition": "t°",
+    "phenomenon": "Rượu etylic cháy tạo ngọn lửa màu xanh mờ, tỏa nhiều nhiệt.",
+    "grade": 9
+  }
+]

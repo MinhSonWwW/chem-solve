@@ -1,0 +1,182 @@
+[
+  {
+    "id": "formula.mol-from-mass",
+    "title": "Công thức chuyển đổi số mol và khối lượng",
+    "formula": "n = m / M",
+    "variables": [
+      { "symbol": "n", "name": "Số mol chất", "unit": "mol" },
+      { "symbol": "m", "name": "Khối lượng chất", "unit": "g" },
+      { "symbol": "M", "name": "Khối lượng mol phân tử (hoặc nguyên tử)", "unit": "g/mol" }
+    ],
+    "derived": ["m = n * M", "M = m / n"],
+    "notes": "M tính từ bảng tuần hoàn các nguyên tố hóa học."
+  },
+  {
+    "id": "formula.gas-volume",
+    "title": "Thể tích chất khí ở điều kiện chuẩn (25 °C, 1 bar)",
+    "formula": "V = n * 24.79",
+    "variables": [
+      { "symbol": "V", "name": "Thể tích chất khí", "unit": "L" },
+      { "symbol": "n", "name": "Số mol chất khí", "unit": "mol" }
+    ],
+    "derived": ["n = V / 24.79"],
+    "notes": "Ở ĐKC (25 °C, 1 bar theo SGK Kết nối tri thức), 1 mol khí bất kỳ đều chiếm 24,79 L (tránh dùng nhầm 22,4 L của ĐKTC cũ)."
+  },
+  {
+    "id": "formula.mass-percentage",
+    "title": "Nồng độ phần trăm của dung dịch",
+    "formula": "C% = (m_ct / m_dd) * 100",
+    "variables": [
+      { "symbol": "C%", "name": "Nồng độ phần trăm", "unit": "%" },
+      { "symbol": "m_ct", "name": "Khối lượng chất tan", "unit": "g" },
+      { "symbol": "m_dd", "name": "Khối lượng dung dịch (m_dd = m_ct + m_dm)", "unit": "g" }
+    ],
+    "derived": [
+      "m_ct = (m_dd * C%) / 100",
+      "m_dd = (m_ct * 100) / C%"
+    ],
+    "notes": "m_dd = m_chất tan + m_dung môi (nước)."
+  },
+  {
+    "id": "formula.molar-concentration",
+    "title": "Nồng độ mol của dung dịch",
+    "formula": "CM = n / V",
+    "variables": [
+      { "symbol": "CM", "name": "Nồng độ mol", "unit": "mol/L hoặc M" },
+      { "symbol": "n", "name": "Số mol chất tan", "unit": "mol" },
+      { "symbol": "V", "name": "Thể tích dung dịch", "unit": "L" }
+    ],
+    "derived": ["n = CM * V", "V = n / CM"],
+    "notes": "Thể tích dung dịch V bắt buộc phải đổi ra đơn vị Lít (L)."
+  },
+  {
+    "id": "formula.relative-gas-density",
+    "title": "Tỉ khối của chất khí",
+    "formula": "d_A/B = M_A / M_B",
+    "variables": [
+      { "symbol": "d_A/B", "name": "Tỉ khối của khí A đối với khí B", "unit": "không đơn vị" },
+      { "symbol": "M_A", "name": "Khối lượng mol của khí A", "unit": "g/mol" },
+      { "symbol": "M_B", "name": "Khối lượng mol của khí B", "unit": "g/mol" }
+    ],
+    "derived": [
+      "d_A/kk = M_A / 29",
+      "M_A = d_A/B * M_B"
+    ],
+    "notes": "Khối lượng mol không khí xấp xỉ 29 g/mol."
+  },
+  {
+    "id": "rule.conservation-of-mass",
+    "title": "Định luật bảo toàn khối lượng",
+    "formula": "m_reactants = m_products",
+    "variables": [
+      { "symbol": "m_reactants", "name": "Tổng khối lượng các chất tham gia", "unit": "g" },
+      { "symbol": "m_products", "name": "Tổng khối lượng các chất sản phẩm", "unit": "g" }
+    ],
+    "notes": "Trong một phản ứng hóa học, tổng khối lượng của các chất sản phẩm bằng tổng khối lượng của các chất tham gia phản ứng."
+  },
+  {
+    "id": "oxide.acid-rain",
+    "title": "Hiện tượng mưa acid do oxide phi kim",
+    "formula": "SO2 + H2O -> H2SO3",
+    "variables": [],
+    "notes": "Khí SO2, NO2 từ khí thải công nghiệp phản ứng với nước mưa tạo ra các acid H2SO3, HNO3 gây chua hóa đất và ăn mòn công trình."
+  },
+  {
+    "id": "reactions.oxide-base-water",
+    "title": "Phản ứng tôi vôi và oxide base tan với nước",
+    "formula": "CaO + H2O -> Ca(OH)2",
+    "variables": [],
+    "notes": "Oxide kim loại kiềm/kiềm thổ tan trong nước tạo thành dung dịch bazơ tương ứng (vôi tôi Ca(OH)2 tỏa nhiều nhiệt)."
+  },
+  {
+    "id": "oxide.properties",
+    "title": "Phân loại và tính chất của Oxide",
+    "formula": "Oxide = Kim loại/Phi kim + Oxygen",
+    "variables": [],
+    "notes": "Oxide gồm 4 loại chính: oxide acid (oxit axit), oxide base (oxit bazơ), oxide lưỡng tính (Al2O3, ZnO), và oxide trung tính (CO, NO)."
+  },
+  {
+    "id": "reactions.salt-precipitate",
+    "title": "Phản ứng tạo kết tủa Barium sulfate",
+    "formula": "BaCl2 + Na2SO4 -> BaSO4 (kết tủa) + 2NaCl",
+    "variables": [],
+    "notes": "BaSO4 là kết tủa màu trắng đặc trưng, không tan trong nước và cả acid mạnh như HCl, HNO3."
+  },
+  {
+    "id": "formulas.calcium-carbonate",
+    "title": "Canxi cacbonat (Đá vôi)",
+    "formula": "CaCO3",
+    "variables": [],
+    "notes": "Thành phần chính của đá vôi, đá hoa, phấn viết bảng và vỏ sò biển. Nhiệt phân ở 900-1000°C tạo CaO và CO2."
+  },
+  {
+    "id": "salts.solubility-rules",
+    "title": "Quy tắc độ tan của muối trong nước",
+    "formula": "Na+, K+, NO3- luôn tan",
+    "variables": [],
+    "notes": "Tất cả muối Na, K, amoni và nitrat đều tan. Đa số muối sunfat tan (trừ BaSO4, PbSO4). Đa số clorua tan (trừ AgCl)."
+  },
+  {
+    "id": "activity-series.acid-reaction",
+    "title": "Phản ứng của kim loại với acid loãng",
+    "formula": "Kim loại (trước H) + Acid -> Muối + H2",
+    "variables": [],
+    "notes": "Chỉ các kim loại đứng trước Hydro trong dãy hoạt động hóa học mới tác dụng được với dung dịch HCl, H2SO4 loãng."
+  },
+  {
+    "id": "reactions.metal-displaces-metal",
+    "title": "Phản ứng đẩy kim loại trong dung dịch muối",
+    "formula": "Fe + CuSO4 -> FeSO4 + Cu",
+    "variables": [],
+    "notes": "Kim loại hoạt động mạnh hơn (trừ Na, K, Ca...) đẩy kim loại kém hoạt động hơn ra khỏi dung dịch muối của nó."
+  },
+  {
+    "id": "activity-series.order",
+    "title": "Dãy hoạt động hóa học của kim loại",
+    "formula": "K, Na, Ca, Mg, Al, Zn, Fe, Ni, Sn, Pb, (H), Cu, Hg, Ag, Pt, Au",
+    "variables": [],
+    "notes": "Mức độ hoạt động hóa học giảm dần từ trái sang phải: Khi Nào Cần May Áo Záp Sắt Phải Hỏi Cụ Bạc Vàng."
+  },
+  {
+    "id": "formulas.ethanol",
+    "title": "Rượu etylic (Ethanol)",
+    "formula": "C2H5OH (M = 46 g/mol)",
+    "variables": [],
+    "notes": "Chất lỏng không màu, nhẹ hơn nước, tan vô hạn trong nước. Độ rượu là số ml rượu nguyên chất trong 100 ml hỗn hợp rượu và nước."
+  },
+  {
+    "id": "organic.functional-groups",
+    "title": "Nhóm chức đặc trưng trong hợp chất hữu cơ",
+    "formula": "-OH (Hydroxyl), -COOH (Carboxyl)",
+    "variables": [],
+    "notes": "Nhóm -OH đặc trưng cho rượu (tác dụng Na giải phóng H2); nhóm -COOH đặc trưng cho axit cacboxylic (mang đầy đủ tính chất của acid)."
+  },
+  {
+    "id": "alcohol.properties",
+    "title": "Tính chất hóa học của rượu etylic",
+    "formula": "2C2H5OH + 2Na -> 2C2H5ONa + H2",
+    "variables": [],
+    "notes": "Rượu etylic phản ứng cháy tỏa nhiều nhiệt tạo CO2 và H2O; phản ứng với kim loại kiềm do có nguyên tử H linh động trong nhóm -OH."
+  },
+  {
+    "id": "formulas.acetic-acid",
+    "title": "Axit axetic (Axit etanoic)",
+    "formula": "CH3COOH (M = 60 g/mol)",
+    "variables": [],
+    "notes": "Chất lỏng không màu, vị chua đặc trưng của giấm ăn. Dung dịch giấm ăn thường có nồng độ 2% - 5%."
+  },
+  {
+    "id": "reactions.acetic-acid-carbonate",
+    "title": "Phản ứng của axit axetic với muối cacbonat",
+    "formula": "2CH3COOH + CaCO3 -> (CH3COO)2Ca + CO2 + H2O",
+    "variables": [],
+    "notes": "Axit axetic làm sủi bọt khí CO2 khi tác dụng với đá vôi (CaCO3) hoặc bột baking soda (NaHCO3)."
+  },
+  {
+    "id": "reactions.esterification",
+    "title": "Phản ứng este hóa tạo este có mùi thơm",
+    "formula": "CH3COOH + C2H5OH <=> CH3COOC2H5 + H2O",
+    "variables": [],
+    "notes": "Phản ứng este hóa giữa axit axetic và rượu etylic (xúc tác H2SO4 đặc, đun nóng) tạo ethyl acetate có mùi thơm hoa quả chín."
+  }
+]

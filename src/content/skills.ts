@@ -1,0 +1,252 @@
+export interface Skill {
+  id: string;
+  name: string;
+  grade: 7 | 8 | 9;
+  lessonId: string;
+  category: 'ly-thuyet' | 'tinh-toan' | 'phuong-trinh' | 'nhan-biet' | 'thi-nghiem';
+  description: string;
+}
+
+export const SKILLS: Skill[] = [
+  // LỚP 7
+  {
+    id: 'atom-structure',
+    name: 'Cấu tạo nguyên tử',
+    grade: 7,
+    lessonId: 'g7-b02',
+    category: 'ly-thuyet',
+    description: 'Xác định số hạt proton, neutron, electron trong nguyên tử và điện tích hạt nhân.',
+  },
+  {
+    id: 'atomic-mass',
+    name: 'Khối lượng nguyên tử (amu)',
+    grade: 7,
+    lessonId: 'g7-b02',
+    category: 'tinh-toan',
+    description: 'Tính khối lượng nguyên tử theo đơn vị amu dựa trên số hạt p và n.',
+  },
+  {
+    id: 'chemical-element',
+    name: 'Nguyên tố hóa học',
+    grade: 7,
+    lessonId: 'g7-b03',
+    category: 'ly-thuyet',
+    description: 'Kí hiệu hóa học, tên gọi theo IUPAC và số hiệu nguyên tử Z.',
+  },
+  {
+    id: 'periodic-table-structure',
+    name: 'Cấu tạo bảng tuần hoàn',
+    grade: 7,
+    lessonId: 'g7-b04',
+    category: 'ly-thuyet',
+    description: 'Ý nghĩa của ô nguyên tố, chu kì và nhóm (A, B) trong bảng tuần hoàn.',
+  },
+
+  // LỚP 8
+  {
+    id: 'chemical-change',
+    name: 'Dấu hiệu phản ứng hóa học',
+    grade: 8,
+    lessonId: 'g8-b02',
+    category: 'nhan-biet',
+    description: 'Nhận biết biến đổi hóa học qua sự đổi màu, kết tủa, tỏa nhiệt, sinh chất khí.',
+  },
+  {
+    id: 'mol-definition',
+    name: 'Khái niệm Mol & Số Avogadro',
+    grade: 8,
+    lessonId: 'g8-b03',
+    category: 'ly-thuyet',
+    description: 'Hiểu mol là lượng chất chứa 6,022 × 10^23 nguyên tử hoặc phân tử.',
+  },
+  {
+    id: 'mol-mass-calc',
+    name: 'Chuyển đổi Mol và Khối lượng',
+    grade: 8,
+    lessonId: 'g8-b03',
+    category: 'tinh-toan',
+    description: 'Áp dụng công thức m = n × M và n = m / M.',
+  },
+  {
+    id: 'gas-volume-calc',
+    name: 'Thể tích khí ở ĐKC (25 °C, 1 bar)',
+    grade: 8,
+    lessonId: 'g8-b03',
+    category: 'tinh-toan',
+    description: 'Tính thể tích chất khí V = n × 24,79 L và ngược lại.',
+  },
+  {
+    id: 'gas-density-calc',
+    name: 'Tỉ khối chất khí',
+    grade: 8,
+    lessonId: 'g8-b03',
+    category: 'tinh-toan',
+    description: 'Xác định chất khí nặng hay nhẹ hơn khí khác hoặc so với không khí (M = 29).',
+  },
+  {
+    id: 'mass-percentage-calc',
+    name: 'Nồng độ phần trăm C%',
+    grade: 8,
+    lessonId: 'g8-b04',
+    category: 'tinh-toan',
+    description: 'Tính C% = (m_ct / m_dd) × 100% và khối lượng chất tan, dung môi.',
+  },
+  {
+    id: 'molar-concentration-calc',
+    name: 'Nồng độ mol CM',
+    grade: 8,
+    lessonId: 'g8-b04',
+    category: 'tinh-toan',
+    description: 'Tính CM = n / V (lít) và pha chế dung dịch.',
+  },
+  {
+    id: 'mass-conservation',
+    name: 'Định luật bảo toàn khối lượng',
+    grade: 8,
+    lessonId: 'g8-b05',
+    category: 'tinh-toan',
+    description: 'Áp dụng tổng khối lượng chất tham gia bằng tổng khối lượng chất sản phẩm.',
+  },
+  {
+    id: 'balance-equation',
+    name: 'Lập và cân bằng PTHH',
+    grade: 8,
+    lessonId: 'g8-b05',
+    category: 'phuong-trinh',
+    description: 'Tìm hệ số nguyên tối giản cân bằng số nguyên tử mỗi nguyên tố hai vế.',
+  },
+  {
+    id: 'stoichiometry-calc',
+    name: 'Tính theo phương trình hóa học',
+    grade: 8,
+    lessonId: 'g8-b06',
+    category: 'tinh-toan',
+    description: 'Tính lượng chất sản phẩm hoặc tham gia dựa trên tỉ lệ mol của PTHH.',
+  },
+  {
+    id: 'reaction-rate',
+    name: 'Tốc độ phản ứng & Xúc tác',
+    grade: 8,
+    lessonId: 'g8-b07',
+    category: 'thi-nghiem',
+    description: 'Ảnh hưởng của nồng độ, nhiệt độ, diện tích tiếp xúc và chất xúc tác.',
+  },
+  {
+    id: 'acid-properties',
+    name: 'Tính chất hóa học của Acid',
+    grade: 8,
+    lessonId: 'g8-b08',
+    category: 'phuong-trinh',
+    description: 'Đổi màu chỉ thị, tác dụng với kim loại đứng trước H, oxide bazơ và base.',
+  },
+  {
+    id: 'base-properties',
+    name: 'Tính chất hóa học của Base',
+    grade: 8,
+    lessonId: 'g8-b09',
+    category: 'phuong-trinh',
+    description: 'Kiềm làm xanh quỳ tím, hồng phenolphtalein; tác dụng với acid, oxide axit.',
+  },
+  {
+    id: 'ph-scale',
+    name: 'Thang pH và Môi trường dung dịch',
+    grade: 8,
+    lessonId: 'g8-b09',
+    category: 'nhan-biet',
+    description: 'Nhận biết môi trường axit (pH < 7), trung tính (pH = 7), bazơ (pH > 7).',
+  },
+  {
+    id: 'oxide-classification',
+    name: 'Phân loại & Tính chất của Oxide',
+    grade: 8,
+    lessonId: 'g8-b10',
+    category: 'ly-thuyet',
+    description: 'Phân loại oxide axit, oxide bazơ, oxide lưỡng tính và oxide trung tính.',
+  },
+  {
+    id: 'salt-reactions',
+    name: 'Tính chất & Điều kiện phản ứng Muối',
+    grade: 8,
+    lessonId: 'g8-b11',
+    category: 'phuong-trinh',
+    description: 'Phản ứng trao đổi trong dung dịch sinh kết tủa, khí hoặc nước.',
+  },
+
+  // LỚP 9
+  {
+    id: 'metal-properties',
+    name: 'Tính chất chung của Kim loại',
+    grade: 9,
+    lessonId: 'g9-b18',
+    category: 'ly-thuyet',
+    description: 'Ánh kim, dẫn điện, dẫn nhiệt, tính dẻo và phản ứng với phi kim, axit, muối.',
+  },
+  {
+    id: 'activity-series',
+    name: 'Dãy hoạt động hóa học của Kim loại',
+    grade: 9,
+    lessonId: 'g9-b19',
+    category: 'phuong-trinh',
+    description: 'So sánh mức độ hoạt động và khả năng đẩy kim loại yếu hơn ra khỏi muối.',
+  },
+  {
+    id: 'organic-intro',
+    name: 'Khái niệm Hợp chất hữu cơ',
+    grade: 9,
+    lessonId: 'g9-b22',
+    category: 'ly-thuyet',
+    description: 'Phân biệt hợp chất hữu cơ và vô cơ; hydrocarbon và dẫn xuất.',
+  },
+  {
+    id: 'alkane-methane',
+    name: 'Alkane & Methane',
+    grade: 9,
+    lessonId: 'g9-b23',
+    category: 'phuong-trinh',
+    description: 'Công thức chung alkane, phản ứng cháy tỏa nhiệt và phản ứng thế halogen.',
+  },
+  {
+    id: 'alkene-ethylene',
+    name: 'Alkene & Ethylene',
+    grade: 9,
+    lessonId: 'g9-b24',
+    category: 'nhan-biet',
+    description: 'Liên kết đôi C=C, phản ứng cộng làm mất màu dung dịch brom (Br2).',
+  },
+  {
+    id: 'alcohol-properties',
+    name: 'Ethylic alcohol (Rượu etylic)',
+    grade: 9,
+    lessonId: 'g9-b26',
+    category: 'phuong-trinh',
+    description: 'Cấu tạo nhóm -OH, phản ứng với Na, phản ứng cháy và độ rượu.',
+  },
+  {
+    id: 'acetic-acid-properties',
+    name: 'Acetic acid (Axit axetic)',
+    grade: 9,
+    lessonId: 'g9-b27',
+    category: 'phuong-trinh',
+    description: 'Tính axit của nhóm -COOH và phản ứng este hóa với rượu etylic.',
+  },
+  {
+    id: 'carbohydrate-identification',
+    name: 'Nhận biết Carbohydrate',
+    grade: 9,
+    lessonId: 'g9-b29',
+    category: 'nhan-biet',
+    description: 'Phản ứng tráng bạc của glucose, phản ứng màu của hồ tinh bột với iodine.',
+  },
+];
+
+export function getSkillsByGrade(grade: 7 | 8 | 9): Skill[] {
+  return SKILLS.filter((s) => s.grade === grade);
+}
+
+export function getSkillsByLesson(lessonId: string): Skill[] {
+  return SKILLS.filter((s) => s.lessonId === lessonId);
+}
+
+export function getSkillById(id: string): Skill | undefined {
+  return SKILLS.find((s) => s.id === id);
+}

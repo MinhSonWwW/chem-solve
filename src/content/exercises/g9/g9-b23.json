@@ -1,0 +1,118 @@
+[
+  {
+    "id": "g9-b23-mcq-001",
+    "lessonId": "g9-b23",
+    "skillIds": ["alkane-methane"],
+    "difficulty": 1,
+    "prompt": "Khí metan ([[CH4]]) là thành phần chính của loại khí tự nhiên nào sau đây?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Khí thiên nhiên và khí sinh học (biogas)" },
+        { "id": "b", "label": "Khí than tổ ong (chứa nhiều CO)" },
+        { "id": "c", "label": "Khí gas máy lạnh (CFC)" },
+        { "id": "d", "label": "Khí cười (N2O)" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Metan sinh ra nhiều trong các hầm ủ rác thải hữu cơ hoặc mỏ khí tự nhiên." },
+      { "level": 2, "text": "Khí thiên nhiên chứa đến 85% – 95% metan; khí biogas ở hầm ủ chất thải gia súc cũng có thành phần chính là CH4." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nguồn gốc của metan", "body": "Ứng dụng và trạng thái tự nhiên của alkane đơn giản nhất." },
+      { "kind": "knowledge", "title": "Khí thiên nhiên & biogas", "body": "Thành phần chủ yếu của khí thiên nhiên, khí mỏ dầu và biogas chính là metan (CH4)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Metan là thành phần chính của **khí thiên nhiên và biogas**." }
+    ],
+    "finalSolution": "Khí metan ([[CH4]]) chiếm tới 90% trong **khí thiên nhiên và biogas**.",
+    "commonMistakes": [
+      { "id": "confused-with-co", "message": "Khí than là hỗn hợp chứa khí độc CO, không phải khí metan sạch." }
+    ]
+  },
+  {
+    "id": "g9-b23-eq-002",
+    "lessonId": "g9-b23",
+    "skillIds": ["alkane-methane"],
+    "difficulty": 1,
+    "prompt": "Cân bằng phương trình đốt cháy hoàn toàn khí metan trong khí oxi: [[CH4]] + [[O2]] -> [[CO2]] + [[H2O]].",
+    "answer": {
+      "kind": "equation",
+      "mode": "fill-coefficients",
+      "reactants": ["CH4", "O2"],
+      "products": ["CO2", "H2O"],
+      "coefficients": [1, 2, 1, 2]
+    },
+    "hints": [
+      { "level": 1, "text": "Phân tử CH4 có 4 nguyên tử H nên sinh ra 2 phân tử H2O." },
+      { "level": 2, "text": "Tổng số nguyên tử Oxi ở vế phải: 2 (trong CO2) + 2 (trong 2H2O) = 4 => cần 2 phân tử O2." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phản ứng cháy của Hydrocarbon", "body": "CH4 + O2 -> CO2 + H2O." },
+      { "kind": "compute", "title": "Cân bằng C và H", "body": "1 C ở CH4 tạo 1 CO2. 4 H ở CH4 tạo 2 H2O." },
+      { "kind": "compute", "title": "Cân bằng O", "body": "Vế phải có 2 + 2 = 4 nguyên tử O => đặt hệ số 2 trước O2 ở vế trái." },
+      { "kind": "answer", "title": "Kết luận", "body": "Phương trình cân bằng: **CH4 + 2O2 -> CO2 + 2H2O**." }
+    ],
+    "finalSolution": "**CH4 + 2O2 -> CO2 + 2H2O**",
+    "commonMistakes": [
+      { "id": "forgot-oxygen-coefficient", "message": "Quên đặt hệ số 2 cho khí O2 ở vế trái." }
+    ]
+  },
+  {
+    "id": "g9-b23-mcq-003",
+    "lessonId": "g9-b23",
+    "skillIds": ["alkane-methane"],
+    "difficulty": 2,
+    "prompt": "Khi cho khí metan tác dụng với khí clo ([[Cl2]]) theo tỉ lệ mol 1 : 1 dưới ánh sáng khuếch tán, phản ứng thuộc loại phản ứng nào?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Phản ứng thế" },
+        { "id": "b", "label": "Phản ứng cộng" },
+        { "id": "c", "label": "Phản ứng phân hủy" },
+        { "id": "d", "label": "Phản ứng trao đổi" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Một nguyên tử Clo thay thế vị trí của một nguyên tử Hiđro trong phân tử metan." },
+      { "level": 2, "text": "PTHH: CH4 + Cl2 -(ánh sáng)-> CH3Cl + HCl. Đây là phản ứng thế đặc trưng của liên kết đơn trong alkane." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định bản chất phản ứng", "body": "CH4 + Cl2 -> CH3Cl + HCl." },
+      { "kind": "knowledge", "title": "Định nghĩa phản ứng thế", "body": "Nguyên tử Cl đã thế chỗ của nguyên tử H trong phân tử CH4, sinh ra metyl clorua và hiđro clorua." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đây là **phản ứng thế**." }
+    ],
+    "finalSolution": "Phản ứng giữa metan và clo là **phản ứng thế** đặc trưng của ankan: CH4 + Cl2 -> CH3Cl + HCl.",
+    "commonMistakes": [
+      { "id": "confused-with-addition", "message": "Phản ứng cộng là của liên kết đôi/ba (như etilen C2H4), còn metan chỉ có liên kết đơn nên tham gia phản ứng thế." }
+    ]
+  },
+  {
+    "id": "g9-b23-tf-004",
+    "lessonId": "g9-b23",
+    "skillIds": ["alkane-methane"],
+    "difficulty": 1,
+    "prompt": "Chọn ĐÚNG hoặc SAI cho mỗi nhận định sau về tính chất của khí metan ([[CH4]]):",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Khí metan nhẹ hơn không khí (d_CH4/kk ≈ 16/29).", "correct": true },
+        { "id": "s2", "text": "Khí metan có màu vàng lục và mùi hắc nồng.", "correct": false },
+        { "id": "s3", "text": "Hỗn hợp gồm 1 thể tích CH4 và 2 thể tích O2 là hỗn hợp nổ rất mạnh.", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "M(CH4) = 16 < 29 nên nhẹ hơn không khí. Metan là khí không màu, không mùi." },
+      { "level": 2, "text": "Khí màu vàng lục có mùi hắc là khí clo (Cl2), không phải metan." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Tính chất vật lý & an toàn của metan", "body": "Kiểm tra màu sắc, tỉ khối và tính cháy nổ của CH4." },
+      { "kind": "knowledge", "title": "Đối chiếu kiến thức", "body": "s1: M = 16 < 29 => Đúng. s2: CH4 là chất khí không màu, không mùi, ít tan trong nước => Sai. s3: Tỉ lệ nổ mạnh nhất đúng theo tỉ lệ phản ứng 1 CH4 : 2 O2 => Đúng." },
+      { "kind": "answer", "title": "Kết luận", "body": "s1: Đúng, s2: Sai, s3: Đúng." }
+    ],
+    "finalSolution": "s1: Đúng, s2: Sai (metan không màu, không mùi), s3: Đúng (tỉ lệ thể tích nổ cực đại là 1 : 2).",
+    "commonMistakes": [
+      { "id": "confused-gas-color", "message": "Metan trong tự nhiên hoàn toàn không có mùi và không có màu." }
+    ]
+  }
+]
