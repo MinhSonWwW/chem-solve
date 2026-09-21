@@ -1,11 +1,27 @@
 import React, { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Play, Sparkles, Filter, BookOpen, Zap, Calculator, Scale, Beaker, Flame } from 'lucide-react';
+import {
+  Play,
+  Sparkles,
+  Filter,
+  BookOpen,
+  Zap,
+  Calculator,
+  Scale,
+  Beaker,
+  Flame,
+  Lock,
+  CheckCircle2,
+  ArrowRight,
+} from 'lucide-react';
 import { sound } from '@/lib/audio';
 import { getCurriculum, type Grade } from '@/content/curriculum';
+import { useUserStore } from '@/features/gamification/useUserStore';
 
 export const PracticePage: React.FC = () => {
   const navigate = useNavigate();
+  const { completedNodes } = useUserStore();
+
   const [activeTab, setActiveTab] = useState<'curriculum' | 'generators'>('curriculum');
   const [selectedGrade, setSelectedGrade] = useState<Grade>(8);
   const [selectedDiff, setSelectedDiff] = useState<'all' | '1' | '2' | '3'>('all');
@@ -13,6 +29,42 @@ export const PracticePage: React.FC = () => {
 
   const curriculum = useMemo(() => getCurriculum(selectedGrade), [selectedGrade]);
   const chapters = curriculum.chapters;
+
+  // Compute unlock and completion status for each lesson to keep Practice strictly in sync with Learn path
+  const lessonUnlockStatus = useMemo(() => {
+    const statusMap = new Map<
+      string,
+      { isUnlocked: boolean; isCompleted: boolean; requiredLessonTitle?: string }
+    >();
+
+    chapters.forEach((ch) => {
+      let isPreviousLessonCompleted = true;
+      let lastPlayableTitle = '';
+
+      ch.lessons.forEach((lesson) => {
+        const nodes = lesson.nodes;
+        const isAnyNodeCompleted = nodes.some((n) => !!completedNodes[`${lesson.id}:${n.id}`]);
+        const isAllNodesCompleted =
+          nodes.length > 0 && nodes.every((n) => !!completedNodes[`${lesson.id}:${n.id}`]);
+
+        // Unlocked if previous lesson is completed, or if user is currently at / completed this lesson
+        const isUnlocked = isPreviousLessonCompleted || isAnyNodeCompleted || isAllNodesCompleted;
+
+        statusMap.set(lesson.id, {
+          isUnlocked,
+          isCompleted: isAllNodesCompleted,
+          requiredLessonTitle: isUnlocked ? undefined : lastPlayableTitle,
+        });
+
+        if (lesson.ready) {
+          lastPlayableTitle = lesson.title;
+          isPreviousLessonCompleted = isAllNodesCompleted;
+        }
+      });
+    });
+
+    return statusMap;
+  }, [chapters, completedNodes]);
 
   const lessons = useMemo(() => {
     if (selectedChapterId === 'all') {
@@ -35,6 +87,8 @@ export const PracticePage: React.FC = () => {
       icon: Zap,
       color: 'from-amber-500/20 to-orange-500/20 text-amber-400 border-amber-500/30',
       badge: 'Vô hạn đề',
+      requiredLessonId: 'g8-b06',
+      requiredLessonName: 'Bài 6: Tính theo PTHH',
     },
     {
       id: 'gen-mol',
@@ -43,6 +97,8 @@ export const PracticePage: React.FC = () => {
       icon: Calculator,
       color: 'from-cyan-500/20 to-blue-500/20 text-cyan-400 border-cyan-500/30',
       badge: 'Cơ bản',
+      requiredLessonId: 'g8-b03',
+      requiredLessonName: 'Bài 3: Mol và tỉ khối chất khí',
     },
     {
       id: 'gen-gas',
@@ -51,6 +107,8 @@ export const PracticePage: React.FC = () => {
       icon: Flame,
       color: 'from-emerald-500/20 to-teal-500/20 text-emerald-400 border-emerald-500/30',
       badge: 'ĐKC 24,79L',
+      requiredLessonId: 'g8-b03',
+      requiredLessonName: 'Bài 3: Mol và tỉ khối chất khí',
     },
     {
       id: 'gen-solution',
@@ -59,6 +117,8 @@ export const PracticePage: React.FC = () => {
       icon: Beaker,
       color: 'from-purple-500/20 to-pink-500/20 text-purple-400 border-purple-500/30',
       badge: 'Dung dịch',
+      requiredLessonId: 'g8-b04',
+      requiredLessonName: 'Bài 4: Dung dịch và nồng độ',
     },
     {
       id: 'gen-stoich',
@@ -67,8 +127,32 @@ export const PracticePage: React.FC = () => {
       icon: Scale,
       color: 'from-rose-500/20 to-red-500/20 text-rose-400 border-rose-500/30',
       badge: 'Toán PTHH',
+      requiredLessonId: 'g8-b06',
+      requiredLessonName: 'Bài 6: Tính theo PTHH',
     },
   ];
+
+  // Helper to verify if a generator's topic has been unlocked on the Learn path
+  const isGeneratorUnlocked = (gen: typeof GENERATOR_TOPICS[number]) => {
+    if (!gen.requiredLessonId) return true;
+    const reqLesson = gen.requiredLessonId;
+    const gradeCurriculum = getCurriculum(8);
+    let isPrevDone = true;
+    for (const ch of gradeCurriculum.chapters) {
+      for (const l of ch.lessons) {
+        const isAnyDone = l.nodes.some((n) => !!completedNodes[`${l.id}:${n.id}`]);
+        const isAllDone = l.nodes.length > 0 && l.nodes.every((n) => !!completedNodes[`${l.id}:${n.id}`]);
+        const isUnlocked = isPrevDone || isAnyDone || isAllDone;
+        if (l.id === reqLesson) {
+          return isUnlocked;
+        }
+        if (l.ready) {
+          isPrevDone = isAllDone;
+        }
+      }
+    }
+    return false;
+  };
 
   return (
     <div className="space-y-5 pb-6">
@@ -78,12 +162,12 @@ export const PracticePage: React.FC = () => {
           <h1 className="text-xl font-black text-slate-100">Luyện tập tự do</h1>
         </div>
         <p className="text-xs text-slate-400 mt-1">
-          Luyện tập không giới hạn, không trừ tim và bảo toàn chuỗi học tập
+          Luyện các bài bạn đã mở khóa trên lộ trình học: không trừ tim, củng cố kiến thức và kiếm thêm XP
         </p>
       </div>
 
       {/* Main Mode Toggle: Curriculum vs Generators */}
-      <div className="flex bg-slate-900 border border-slate-800 p-1 rounded-2xl">
+      <div className="flex bg-slate-900 border border-slate-800 p-1 rounded-2xl shadow-sm">
         <button
           onClick={() => {
             sound.playClick();
@@ -208,52 +292,89 @@ export const PracticePage: React.FC = () => {
               Danh sách bài học & kỹ năng ({lessons.length} bài):
             </label>
             <div className="space-y-2.5">
-              {lessons.map((lesson) => (
-                <div
-                  key={lesson.id}
-                  className={`p-4 rounded-2xl border transition-all ${
-                    lesson.ready
-                      ? 'bg-slate-900 border-slate-800 hover:border-cyan-500/50 shadow-md cursor-pointer'
-                      : 'bg-slate-950/60 border-slate-900 opacity-60'
-                  }`}
-                  onClick={() => {
-                    if (lesson.ready && lesson.nodes[0]) {
-                      handleStartPractice(lesson.id, lesson.nodes[0].id);
-                    }
-                  }}
-                >
-                  <div className="flex items-center justify-between">
-                    <div className="space-y-1 pr-3">
-                      <div className="flex items-center gap-2">
-                        <span className="text-xs font-black text-slate-100">
-                          {lesson.title}
-                        </span>
-                        {lesson.ready ? (
-                          <span className="text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-lg flex items-center gap-1">
-                            <Sparkles className="w-3 h-3" /> Sẵn sàng
+              {lessons.map((lesson) => {
+                const status = lessonUnlockStatus.get(lesson.id) ?? {
+                  isUnlocked: false,
+                  isCompleted: false,
+                };
+                const isAvailable = lesson.ready && status.isUnlocked;
+
+                return (
+                  <div
+                    key={lesson.id}
+                    className={`p-4 rounded-2xl border transition-all ${
+                      !lesson.ready
+                        ? 'bg-slate-950/40 border-slate-900 opacity-50 cursor-not-allowed'
+                        : isAvailable
+                          ? 'bg-slate-900 border-slate-800 hover:border-cyan-500/50 shadow-md cursor-pointer hover:translate-y-[-1px]'
+                          : 'bg-slate-950/60 border-slate-900 opacity-75'
+                    }`}
+                    onClick={() => {
+                      if (isAvailable && lesson.nodes[0]) {
+                        handleStartPractice(lesson.id, lesson.nodes[0].id);
+                      } else if (!status.isUnlocked && lesson.ready) {
+                        sound.playClick();
+                        navigate(`/learn/${selectedGrade}`);
+                      }
+                    }}
+                  >
+                    <div className="flex items-center justify-between">
+                      <div className="space-y-1.5 pr-3 min-w-0">
+                        <div className="flex flex-wrap items-center gap-2">
+                          <span
+                            className={`text-xs font-black ${
+                              isAvailable ? 'text-slate-100' : 'text-slate-400'
+                            }`}
+                          >
+                            {lesson.title}
                           </span>
-                        ) : (
-                          <span className="text-[10px] font-bold bg-slate-800 text-slate-400 px-2 py-0.5 rounded-lg">
-                            Sắp có
-                          </span>
+                          {!lesson.ready ? (
+                            <span className="text-[10px] font-bold bg-slate-800 text-slate-400 px-2 py-0.5 rounded-lg">
+                              Sắp có
+                            </span>
+                          ) : status.isCompleted ? (
+                            <span className="text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-lg flex items-center gap-1">
+                              <CheckCircle2 className="w-3 h-3 text-emerald-400" /> Đã học · Luyện tập
+                            </span>
+                          ) : isAvailable ? (
+                            <span className="text-[10px] font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 px-2 py-0.5 rounded-lg flex items-center gap-1">
+                              <Sparkles className="w-3 h-3 text-cyan-400" /> Đang học · Luyện tập
+                            </span>
+                          ) : (
+                            <span className="text-[10px] font-bold bg-slate-800/90 text-slate-400 border border-slate-700/60 px-2 py-0.5 rounded-lg flex items-center gap-1">
+                              <Lock className="w-3 h-3 text-slate-400" /> Chưa mở khóa
+                            </span>
+                          )}
+                        </div>
+
+                        <p className="text-[11px] text-slate-400 leading-relaxed">
+                          {lesson.subtitle}
+                        </p>
+
+                        {!isAvailable && lesson.ready && status.requiredLessonTitle && (
+                          <div className="flex items-center gap-1.5 text-[10px] font-bold text-amber-400/90 pt-0.5">
+                            <span>🔒 Cần hoàn thành "{status.requiredLessonTitle}" trên lộ trình học</span>
+                            <span className="text-cyan-400 underline flex items-center">
+                              Đến học <ArrowRight className="w-3 h-3 ml-0.5 inline" />
+                            </span>
+                          </div>
                         )}
                       </div>
-                      <p className="text-[11px] text-slate-400 leading-relaxed">
-                        {lesson.subtitle}
-                      </p>
+
+                      {/* Right Action Icon */}
+                      {isAvailable ? (
+                        <div className="w-9 h-9 rounded-2xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-cyan-300 shrink-0 shadow-sm group-hover:scale-105 transition-transform">
+                          <Play className="w-4 h-4 fill-cyan-400" />
+                        </div>
+                      ) : (
+                        <div className="w-9 h-9 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-600 shrink-0">
+                          <Lock className="w-4 h-4" />
+                        </div>
+                      )}
                     </div>
-                    {lesson.ready ? (
-                      <div className="w-9 h-9 rounded-2xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-cyan-300 shrink-0">
-                        <Play className="w-4 h-4 fill-cyan-400" />
-                      </div>
-                    ) : (
-                      <div className="text-slate-600 text-xs font-bold shrink-0">
-                        <BookOpen className="w-4 h-4" />
-                      </div>
-                    )}
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>
@@ -263,42 +384,83 @@ export const PracticePage: React.FC = () => {
       {activeTab === 'generators' && (
         <div className="space-y-3">
           <div className="text-xs text-slate-400 leading-relaxed bg-amber-950/20 border border-amber-800/30 p-3 rounded-2xl">
-            ⚡ <span className="font-bold text-amber-300">Đề sinh tự động:</span> Mỗi lượt luyện tập sẽ tạo ra các thông số và chất hóa học mới hoàn toàn với 7 bước giải chuẩn mực.
+            ⚡ <span className="font-bold text-amber-300">Đề sinh tự động:</span> Mỗi lượt luyện tập sẽ tạo ra các thông số và chất hóa học mới hoàn toàn với 7 bước giải chuẩn mực theo các chủ đề bạn đã mở khóa.
           </div>
 
           <div className="space-y-2.5">
             {GENERATOR_TOPICS.map((gen) => {
               const Icon = gen.icon;
+              const isUnlocked = isGeneratorUnlocked(gen);
+
               return (
                 <div
                   key={gen.id}
                   onClick={() => {
-                    sound.playClick();
-                    navigate(`/play/${gen.id}/dyn`);
+                    if (isUnlocked) {
+                      sound.playClick();
+                      navigate(`/play/${gen.id}/dyn`);
+                    } else {
+                      sound.playClick();
+                      navigate('/learn/8');
+                    }
                   }}
-                  className="bg-slate-900 border border-slate-800 hover:border-amber-500/50 p-4 rounded-2xl cursor-pointer transition-all shadow-md flex items-center justify-between group"
+                  className={`border p-4 rounded-2xl transition-all shadow-md flex items-center justify-between group ${
+                    isUnlocked
+                      ? 'bg-slate-900 border-slate-800 hover:border-amber-500/50 cursor-pointer'
+                      : 'bg-slate-950/60 border-slate-900 opacity-70 cursor-pointer'
+                  }`}
                 >
                   <div className="flex items-center gap-3.5 min-w-0 pr-2">
-                    <div className={`w-11 h-11 rounded-2xl bg-gradient-to-br ${gen.color} border flex items-center justify-center shrink-0`}>
-                      <Icon className="w-5 h-5" />
+                    <div
+                      className={`w-11 h-11 rounded-2xl border flex items-center justify-center shrink-0 ${
+                        isUnlocked
+                          ? `bg-gradient-to-br ${gen.color}`
+                          : 'bg-slate-900 border-slate-800 text-slate-600'
+                      }`}
+                    >
+                      {isUnlocked ? <Icon className="w-5 h-5" /> : <Lock className="w-5 h-5 text-slate-500" />}
                     </div>
                     <div className="min-w-0">
-                      <div className="flex items-center gap-2 mb-0.5">
-                        <h2 className="text-xs font-black text-slate-100 truncate group-hover:text-amber-300 transition-colors">
+                      <div className="flex flex-wrap items-center gap-2 mb-0.5">
+                        <h2
+                          className={`text-xs font-black truncate transition-colors ${
+                            isUnlocked ? 'text-slate-100 group-hover:text-amber-300' : 'text-slate-400'
+                          }`}
+                        >
                           {gen.title}
                         </h2>
-                        <span className="text-[10px] font-bold bg-slate-800 text-amber-400 px-2 py-0.5 rounded-full border border-slate-700 shrink-0">
-                          {gen.badge}
-                        </span>
+                        {isUnlocked ? (
+                          <span className="text-[10px] font-bold bg-slate-800 text-amber-400 px-2 py-0.5 rounded-full border border-slate-700 shrink-0">
+                            {gen.badge}
+                          </span>
+                        ) : (
+                          <span className="text-[10px] font-bold bg-slate-800/90 text-slate-400 px-2 py-0.5 rounded-full border border-slate-700/60 flex items-center gap-1 shrink-0">
+                            <Lock className="w-2.5 h-2.5" /> Chưa mở khóa
+                          </span>
+                        )}
                       </div>
                       <p className="text-[11px] text-slate-400 leading-relaxed truncate">
                         {gen.desc}
                       </p>
+                      {!isUnlocked && gen.requiredLessonName && (
+                        <div className="flex items-center gap-1 text-[10px] font-bold text-amber-400/90 pt-0.5">
+                          <span>🔒 Mở khóa khi học đến {gen.requiredLessonName}</span>
+                          <span className="text-cyan-400 underline flex items-center ml-1">
+                            Đến học <ArrowRight className="w-3 h-3 ml-0.5 inline" />
+                          </span>
+                        </div>
+                      )}
                     </div>
                   </div>
 
-                  <div className="w-9 h-9 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 shrink-0 group-hover:scale-105 transition-transform">
-                    <Play className="w-4 h-4 fill-amber-400" />
+                  <div
+                    className={`w-9 h-9 rounded-2xl border flex items-center justify-center shrink-0 transition-transform ${
+                      isUnlocked
+                        ? 'bg-amber-500/10 border-amber-500/30 text-amber-400 group-hover:scale-105'
+                        : 'bg-slate-900 border-slate-800 text-slate-600'
+                    }`}
+                  >
+                    {isUnlocked ? <Play className="w-4 h-4 fill-amber-400" /> : <Lock className="w-4 h-4" />}
                   </div>
                 </div>
               );
