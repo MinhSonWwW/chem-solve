@@ -10,6 +10,14 @@ export interface Skill {
 export const SKILLS: Skill[] = [
   // LỚP 7
   {
+    id: 'science-method',
+    name: 'Phương pháp & kĩ năng KHTN',
+    grade: 7,
+    lessonId: 'g7-b01',
+    category: 'thi-nghiem',
+    description: 'Trình tự phương pháp khoa học, kĩ năng quan sát, sử dụng dụng cụ và quy tắc an toàn phòng thí nghiệm.',
+  },
+  {
     id: 'atom-structure',
     name: 'Cấu tạo nguyên tử',
     grade: 7,

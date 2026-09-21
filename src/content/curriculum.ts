@@ -47,7 +47,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             lessonNumber: 1,
             title: 'Phương pháp & kĩ năng học tập KHTN',
             subtitle: 'Kĩ năng quan sát, thu thập dữ liệu và làm thí nghiệm',
-            ready: false,
+            ready: true,
             nodes: [
               { id: 'g7-b01-n01', nodeIndex: 1, title: 'Kĩ năng quan sát thí nghiệm', description: '6 câu hỏi', type: 'lesson' },
             ],
@@ -78,7 +78,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             lessonNumber: 4,
             title: 'Sơ lược về bảng tuần hoàn',
             subtitle: 'Ô nguyên tố, chu kì và nhóm trong bảng tuần hoàn',
-            ready: false,
+            ready: true,
             nodes: [
               { id: 'g7-b04-n01', nodeIndex: 1, title: 'Cấu tạo bảng tuần hoàn', description: '6 câu hỏi', type: 'lesson' },
               { id: 'g7-b04-chest', nodeIndex: 2, title: 'Rương kiến thức Lớp 7', description: 'Phần thưởng', type: 'chest' },

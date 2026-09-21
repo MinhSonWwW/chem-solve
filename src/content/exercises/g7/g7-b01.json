@@ -1,0 +1,303 @@
+[
+  {
+    "id": "g7-b01-mcq-001",
+    "lessonId": "g7-b01",
+    "skillIds": ["science-method"],
+    "difficulty": 1,
+    "prompt": "Phương pháp khoa học bắt đầu từ bước nào trong các bước sau?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Quan sát và đặt câu hỏi" },
+        { "id": "b", "label": "Làm thí nghiệm" },
+        { "id": "c", "label": "Viết báo cáo" },
+        { "id": "d", "label": "Rút ra kết luận" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Trước khi nghiên cứu, nhà khoa học cần nhận ra vấn đề trước." },
+      { "level": 2, "text": "Bước 1 luôn là quan sát hiện tượng rồi đặt câu hỏi cần giải đáp." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận dạng", "body": "Câu hỏi về trình tự phương pháp khoa học." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "5 bước của phương pháp khoa học: (1) Quan sát, đặt câu hỏi → (2) Nêu giả thuyết → (3) Thiết kế thí nghiệm → (4) Thu thập dữ liệu → (5) Kết luận." },
+      { "kind": "answer", "title": "Kết luận", "body": "Bước đầu tiên là **quan sát và đặt câu hỏi**." }
+    ],
+    "finalSolution": "Quan sát và đặt câu hỏi là bước khởi đầu của phương pháp khoa học.",
+    "commonMistakes": [
+      { "id": "skip-observation", "message": "Nhiều bạn nhầm rằng bước đầu tiên là làm thí nghiệm, nhưng phải quan sát trước mới biết thí nghiệm gì." }
+    ]
+  },
+  {
+    "id": "g7-b01-sort-001",
+    "lessonId": "g7-b01",
+    "skillIds": ["science-method"],
+    "difficulty": 1,
+    "prompt": "Phân loại các hoạt động sau thành \"Kĩ năng quan sát\" hoặc \"Kĩ năng thí nghiệm\".",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "observe", "label": "Kĩ năng quan sát" },
+        { "id": "experiment", "label": "Kĩ năng thí nghiệm" }
+      ],
+      "items": [
+        { "id": "i1", "label": "Ghi lại màu sắc dung dịch", "bucketId": "observe" },
+        { "id": "i2", "label": "Đun nóng ống nghiệm trên ngọn lửa đèn cồn", "bucketId": "experiment" },
+        { "id": "i3", "label": "Nghe tiếng nổ lách tách khi phản ứng xảy ra", "bucketId": "observe" },
+        { "id": "i4", "label": "Nhỏ dung dịch acid vào cốc chứa kẽm", "bucketId": "experiment" },
+        { "id": "i5", "label": "So sánh mùi trước và sau phản ứng", "bucketId": "observe" },
+        { "id": "i6", "label": "Cân khối lượng mẫu chất bằng cân điện tử", "bucketId": "experiment" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Quan sát là dùng các giác quan (mắt, mũi, tai) để thu thập thông tin mà không can thiệp." },
+      { "level": 2, "text": "Thí nghiệm là chủ động thao tác: đun, nhỏ, cân, trộn hóa chất." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân biệt", "body": "Quan sát = thu thập thông tin bằng giác quan. Thí nghiệm = chủ động tác động lên mẫu vật." },
+      { "kind": "knowledge", "title": "Phân loại", "body": "Ghi màu, nghe tiếng, so sánh mùi → Quan sát. Đun, nhỏ acid, cân → Thí nghiệm." },
+      { "kind": "answer", "title": "Kết luận", "body": "Quan sát: ghi màu, nghe tiếng, so sánh mùi. Thí nghiệm: đun, nhỏ acid, cân." }
+    ],
+    "finalSolution": "Quan sát dùng giác quan; Thí nghiệm dùng thao tác chủ động can thiệp.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g7-b01-tf-001",
+    "lessonId": "g7-b01",
+    "skillIds": ["science-method"],
+    "difficulty": 1,
+    "prompt": "Xác định các phát biểu sau về phương pháp khoa học là Đúng hay Sai.",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Giả thuyết khoa học không cần kiểm chứng bằng thí nghiệm.", "correct": false },
+        { "id": "s2", "text": "Kết quả thí nghiệm cần được lặp lại nhiều lần để đảm bảo tính chính xác.", "correct": true },
+        { "id": "s3", "text": "Quan sát là bước đầu tiên của phương pháp khoa học.", "correct": true },
+        { "id": "s4", "text": "Chỉ cần làm thí nghiệm 1 lần là đủ để rút ra kết luận.", "correct": false }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Giả thuyết PHẢI được kiểm chứng bằng thí nghiệm thì mới trở thành kết luận khoa học." },
+      { "level": 2, "text": "Lặp lại thí nghiệm nhiều lần giúp loại bỏ sai số ngẫu nhiên." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích", "body": "Xét từng phát biểu dựa trên nguyên tắc phương pháp khoa học." },
+      { "kind": "knowledge", "title": "Nguyên tắc", "body": "Giả thuyết cần kiểm chứng. Thí nghiệm phải lặp lại. Quan sát là bước đầu." },
+      { "kind": "answer", "title": "Kết quả", "body": "S1: Sai, S2: Đúng, S3: Đúng, S4: Sai." }
+    ],
+    "finalSolution": "Giả thuyết phải kiểm chứng (S1 sai). Lặp lại TN nhiều lần (S2 đúng). Quan sát là bước 1 (S3 đúng). 1 lần chưa đủ (S4 sai).",
+    "commonMistakes": []
+  },
+  {
+    "id": "g7-b01-ordering-001",
+    "lessonId": "g7-b01",
+    "skillIds": ["science-method"],
+    "difficulty": 1,
+    "prompt": "Sắp xếp các bước của phương pháp khoa học theo thứ tự đúng từ đầu đến cuối.",
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Quan sát, đặt câu hỏi",
+        "Nêu giả thuyết",
+        "Thiết kế và tiến hành thí nghiệm",
+        "Thu thập và phân tích dữ liệu",
+        "Rút ra kết luận"
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Bạn phải biết vấn đề trước rồi mới đoán (giả thuyết), rồi mới kiểm tra (thí nghiệm)." },
+      { "level": 2, "text": "Trình tự: Quan sát → Giả thuyết → Thí nghiệm → Dữ liệu → Kết luận." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Yêu cầu", "body": "Sắp xếp 5 bước phương pháp khoa học theo đúng thứ tự." },
+      { "kind": "knowledge", "title": "Trình tự", "body": "1. Quan sát → 2. Giả thuyết → 3. Thí nghiệm → 4. Dữ liệu → 5. Kết luận." },
+      { "kind": "answer", "title": "Thứ tự đúng", "body": "Quan sát → Giả thuyết → Thí nghiệm → Dữ liệu → Kết luận." }
+    ],
+    "finalSolution": "Quan sát → Giả thuyết → Thí nghiệm → Dữ liệu → Kết luận.",
+    "commonMistakes": [
+      { "id": "skip-hypothesis", "message": "Nhiều bạn bỏ qua bước nêu giả thuyết rồi nhảy thẳng vào thí nghiệm." }
+    ]
+  },
+  {
+    "id": "g7-b01-mcq-002",
+    "lessonId": "g7-b01",
+    "skillIds": ["science-method"],
+    "difficulty": 1,
+    "prompt": "Khi làm thí nghiệm Hóa học, dụng cụ nào dùng để đo thể tích chất lỏng chính xác nhất?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Ống đong (cylinder đo)" },
+        { "id": "b", "label": "Cốc thủy tinh" },
+        { "id": "c", "label": "Bình tam giác (erlenmeyer)" },
+        { "id": "d", "label": "Đĩa thủy tinh" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Cốc và bình tam giác có vạch chia nhưng không chính xác bằng một dụng cụ chuyên dụng." },
+      { "level": 2, "text": "Ống đong (measuring cylinder) có vạch chia nhỏ nhất, dùng chuyên cho đo thể tích." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Yêu cầu", "body": "Tìm dụng cụ đo thể tích chính xác nhất." },
+      { "kind": "knowledge", "title": "So sánh", "body": "Ống đong có vạch chia chính xác nhất. Cốc và bình tam giác dùng phản ứng, vạch chia chỉ ước lượng." },
+      { "kind": "answer", "title": "Kết luận", "body": "Ống đong (measuring cylinder) là dụng cụ đo thể tích chính xác nhất." }
+    ],
+    "finalSolution": "Ống đong (cylinder đo) có vạch chia nhỏ, dùng chuyên đo thể tích chất lỏng chính xác.",
+    "commonMistakes": [
+      { "id": "confuse-beaker", "message": "Cốc thủy tinh dùng để trộn và phản ứng, vạch chia chỉ để ước lượng." }
+    ]
+  },
+  {
+    "id": "g7-b01-match-001",
+    "lessonId": "g7-b01",
+    "skillIds": ["science-method"],
+    "difficulty": 1,
+    "prompt": "Ghép tên dụng cụ thí nghiệm với công dụng chính của nó.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Ống nghiệm", "right": "Chứa hóa chất, đun lượng nhỏ" },
+        { "left": "Đèn cồn", "right": "Đun nóng, cung cấp nhiệt" },
+        { "left": "Kẹp gỗ", "right": "Giữ ống nghiệm khi đun" },
+        { "left": "Ống đong", "right": "Đo thể tích chất lỏng" },
+        { "left": "Cân điện tử", "right": "Đo khối lượng chất rắn" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Mỗi dụng cụ chỉ có một công dụng chính nhất." },
+      { "level": 2, "text": "Đèn cồn dùng để đun, kẹp gỗ dùng để giữ ống nghiệm, ống đong dùng để đo thể tích." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Ghép đôi", "body": "Nối từng dụng cụ với đúng công dụng." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "Ống nghiệm: chứa và đun. Đèn cồn: cấp nhiệt. Kẹp: giữ ống nghiệm. Ống đong: đo V. Cân: đo m." },
+      { "kind": "answer", "title": "Kết quả", "body": "Ghép đúng 5 cặp dụng cụ - công dụng." }
+    ],
+    "finalSolution": "Ống nghiệm ↔ Chứa hóa chất. Đèn cồn ↔ Đun nóng. Kẹp gỗ ↔ Giữ ống nghiệm. Ống đong ↔ Đo V. Cân ↔ Đo m.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g7-b01-mcq-003",
+    "lessonId": "g7-b01",
+    "skillIds": ["science-method"],
+    "difficulty": 2,
+    "prompt": "Khi quan sát thấy kẽm viên tan dần trong dung dịch HCl loãng và có bọt khí nổi lên, đây là hiện tượng gì?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Hiện tượng hóa học (phản ứng hóa học xảy ra)" },
+        { "id": "b", "label": "Hiện tượng vật lý (chỉ thay đổi hình dạng)" },
+        { "id": "c", "label": "Hiện tượng bay hơi" },
+        { "id": "d", "label": "Không có hiện tượng gì đặc biệt" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Kẽm tan và có khí thoát ra → có chất mới sinh ra." },
+      { "level": 2, "text": "Zn + 2HCl → ZnCl2 + H2↑. Có chất mới → hiện tượng hóa học." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Quan sát", "body": "Kẽm tan dần, có bọt khí nổi lên." },
+      { "kind": "knowledge", "title": "Phân biệt", "body": "Có chất mới sinh ra (khí H2, ZnCl2) → Biến đổi hóa học, khác biến đổi vật lý (chỉ thay đổi hình dạng, trạng thái)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đây là hiện tượng hóa học vì có chất mới sinh ra." }
+    ],
+    "finalSolution": "Hiện tượng hóa học vì có phản ứng tạo ra chất mới (khí H2 và muối ZnCl2).",
+    "commonMistakes": [
+      { "id": "physical-change", "message": "Đây không phải hiện tượng vật lý vì kẽm không chỉ đổi hình dạng mà đã chuyển thành chất khác." }
+    ]
+  },
+  {
+    "id": "g7-b01-mcq-004",
+    "lessonId": "g7-b01",
+    "skillIds": ["science-method"],
+    "difficulty": 1,
+    "prompt": "Khi sử dụng đèn cồn trong phòng thí nghiệm, hành động nào sau đây là ĐÚNG quy tắc an toàn?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Dùng nắp đậy để tắt ngọn lửa đèn cồn" },
+        { "id": "b", "label": "Dùng miệng thổi tắt ngọn lửa" },
+        { "id": "c", "label": "Rót thêm cồn khi đèn đang cháy" },
+        { "id": "d", "label": "Châm lửa đèn cồn này bằng đèn cồn khác đang cháy" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Thổi tắt đèn cồn rất nguy hiểm vì cồn dễ bắn ra ngoài." },
+      { "level": 2, "text": "Luôn dùng nắp đậy lại để cắt nguồn oxy, ngọn lửa sẽ tự tắt an toàn." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "An toàn PTN", "body": "Xác định cách tắt đèn cồn an toàn." },
+      { "kind": "knowledge", "title": "Quy tắc", "body": "Tắt đèn cồn bằng nắp đậy, không thổi, không nghiêng, không đổ thêm cồn khi cháy." },
+      { "kind": "answer", "title": "Kết luận", "body": "Dùng nắp đậy để tắt đèn cồn an toàn." }
+    ],
+    "finalSolution": "Dùng nắp đậy để tắt ngọn lửa đèn cồn. Không được thổi, rót thêm cồn khi đang cháy hay châm đèn sang đèn.",
+    "commonMistakes": [
+      { "id": "blow-flame", "message": "Thổi tắt đèn cồn rất nguy hiểm, cồn nóng có thể bắn ra ngoài gây bỏng." }
+    ]
+  },
+  {
+    "id": "g7-b01-sort-002",
+    "lessonId": "g7-b01",
+    "skillIds": ["science-method"],
+    "difficulty": 2,
+    "prompt": "Phân loại các quy tắc sau vào nhóm \"An toàn khi dùng hóa chất\" hoặc \"An toàn khi dùng dụng cụ thủy tinh\".",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "chemical", "label": "An toàn hóa chất" },
+        { "id": "glass", "label": "An toàn dụng cụ thủy tinh" }
+      ],
+      "items": [
+        { "id": "r1", "label": "Đeo găng tay khi tiếp xúc acid đặc", "bucketId": "chemical" },
+        { "id": "r2", "label": "Không đun ống nghiệm quá nóng đột ngột", "bucketId": "glass" },
+        { "id": "r3", "label": "Không nếm, ngửi trực tiếp hóa chất", "bucketId": "chemical" },
+        { "id": "r4", "label": "Đặt ống nghiệm trên giá khi không dùng", "bucketId": "glass" },
+        { "id": "r5", "label": "Đọc nhãn chai trước khi lấy hóa chất", "bucketId": "chemical" },
+        { "id": "r6", "label": "Kiểm tra vết nứt trước khi sử dụng", "bucketId": "glass" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Hóa chất: liên quan đến acid, nhãn chai, đeo găng. Thủy tinh: liên quan đến đun, đặt giá, kiểm tra nứt." },
+      { "level": 2, "text": "Quy tắc về đeo găng, đọc nhãn, không nếm → An toàn hóa chất. Quy tắc về đun, giá đỡ, vết nứt → An toàn thủy tinh." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại", "body": "Tách 6 quy tắc thành 2 nhóm: an toàn hóa chất vs an toàn dụng cụ thủy tinh." },
+      { "kind": "knowledge", "title": "Phân nhóm", "body": "Hóa chất: găng tay, đọc nhãn, không nếm. Thủy tinh: không đun nóng đột ngột, để trên giá, kiểm tra nứt." },
+      { "kind": "answer", "title": "Kết quả", "body": "Hóa chất: r1, r3, r5. Thủy tinh: r2, r4, r6." }
+    ],
+    "finalSolution": "An toàn hóa chất: đeo găng, không nếm, đọc nhãn. An toàn thủy tinh: không đun nóng đột ngột, để trên giá, kiểm tra nứt.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g7-b01-mcq-005",
+    "lessonId": "g7-b01",
+    "skillIds": ["science-method"],
+    "difficulty": 2,
+    "prompt": "Một nhóm học sinh muốn kiểm tra giả thuyết \"Nhiệt độ cao hơn làm đường tan nhanh hơn\". Cách tiến hành nào sau đây là phù hợp nhất?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Cho cùng lượng đường vào 2 cốc nước: 1 cốc lạnh, 1 cốc nóng. So sánh thời gian tan." },
+        { "id": "b", "label": "Cho lượng đường khác nhau vào 2 cốc nước có cùng nhiệt độ." },
+        { "id": "c", "label": "Cho đường vào 1 cốc nước nóng và quan sát." },
+        { "id": "d", "label": "Hỏi giáo viên xem giả thuyết có đúng không." }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Thí nghiệm đối chứng: chỉ thay đổi 1 yếu tố (nhiệt độ), giữ nguyên các yếu tố khác." },
+      { "level": 2, "text": "Cần 2 cốc: cùng lượng nước, cùng lượng đường, chỉ khác nhiệt độ → so sánh thời gian tan." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Yêu cầu", "body": "Thiết kế thí nghiệm kiểm chứng ảnh hưởng của nhiệt độ đến tốc độ hòa tan đường." },
+      { "kind": "knowledge", "title": "Nguyên tắc", "body": "Biến số thay đổi: nhiệt độ. Biến số kiểm soát: lượng đường, lượng nước, kích thước hạt đường." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đáp án A: Cùng lượng đường, cùng lượng nước, chỉ khác nhiệt độ → Đối chứng chuẩn." }
+    ],
+    "finalSolution": "Cùng lượng đường, cùng thể tích nước, chỉ khác nhiệt độ (1 lạnh, 1 nóng). So sánh thời gian tan.",
+    "commonMistakes": [
+      { "id": "no-control", "message": "Chỉ dùng 1 cốc hoặc thay đổi nhiều yếu tố cùng lúc thì không kết luận được yếu tố nào gây ảnh hưởng." }
+    ]
+  }
+]

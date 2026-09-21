@@ -1,0 +1,302 @@
+[
+  {
+    "id": "g7-b04-mcq-001",
+    "lessonId": "g7-b04",
+    "skillIds": ["periodic-table-structure"],
+    "difficulty": 1,
+    "prompt": "Mỗi ô nguyên tố trong bảng tuần hoàn cho biết những thông tin nào?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Số hiệu nguyên tử, kí hiệu hóa học, tên nguyên tố và khối lượng nguyên tử" },
+        { "id": "b", "label": "Chỉ có kí hiệu hóa học và tên nguyên tố" },
+        { "id": "c", "label": "Chỉ có số hiệu nguyên tử và khối lượng" },
+        { "id": "d", "label": "Tên nguyên tố, trạng thái và màu sắc" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Một ô nguyên tố chuẩn có 4 thông tin chính." },
+      { "level": 2, "text": "Ô nguyên tố gồm: số hiệu nguyên tử (Z), kí hiệu hóa học, tên nguyên tố, khối lượng nguyên tử trung bình." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đọc yêu cầu", "body": "Liệt kê thông tin có trong ô nguyên tố." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "Ô nguyên tố: Z (số hiệu = số proton), kí hiệu, tên, khối lượng nguyên tử trung bình." },
+      { "kind": "answer", "title": "Kết luận", "body": "Ô nguyên tố có 4 thông tin: Z, kí hiệu, tên và khối lượng nguyên tử." }
+    ],
+    "finalSolution": "Ô nguyên tố cho biết: số hiệu nguyên tử (Z), kí hiệu hóa học, tên nguyên tố và khối lượng nguyên tử trung bình.",
+    "commonMistakes": [
+      { "id": "missing-mass", "message": "Nhiều bạn quên rằng ô nguyên tố còn ghi khối lượng nguyên tử trung bình ở phía dưới." }
+    ]
+  },
+  {
+    "id": "g7-b04-mcq-002",
+    "lessonId": "g7-b04",
+    "skillIds": ["periodic-table-structure"],
+    "difficulty": 1,
+    "prompt": "Trong bảng tuần hoàn, các nguyên tố được sắp xếp theo chiều tăng dần của đại lượng nào?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Số hiệu nguyên tử (Z)" },
+        { "id": "b", "label": "Khối lượng nguyên tử" },
+        { "id": "c", "label": "Số neutron" },
+        { "id": "d", "label": "Số electron hóa trị" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Mendeleev ban đầu xếp theo khối lượng, nhưng bảng hiện đại xếp theo một đại lượng khác." },
+      { "level": 2, "text": "Bảng tuần hoàn hiện đại sắp xếp theo số hiệu nguyên tử Z (= số proton) tăng dần." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đọc yêu cầu", "body": "Tiêu chí sắp xếp nguyên tố trong bảng tuần hoàn hiện đại." },
+      { "kind": "knowledge", "title": "Quy tắc", "body": "Bảng tuần hoàn hiện đại: Z tăng dần từ trái sang phải, từ trên xuống dưới." },
+      { "kind": "answer", "title": "Kết luận", "body": "Các nguyên tố sắp xếp theo chiều tăng dần số hiệu nguyên tử Z." }
+    ],
+    "finalSolution": "Nguyên tố được sắp xếp theo chiều tăng dần số hiệu nguyên tử (Z = số proton trong hạt nhân).",
+    "commonMistakes": [
+      { "id": "mass-not-z", "message": "Bảng tuần hoàn hiện đại xếp theo Z (số proton), không phải theo khối lượng nguyên tử." }
+    ]
+  },
+  {
+    "id": "g7-b04-mcq-003",
+    "lessonId": "g7-b04",
+    "skillIds": ["periodic-table-structure"],
+    "difficulty": 1,
+    "prompt": "Chu kì trong bảng tuần hoàn là gì?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Dãy các nguyên tố xếp theo hàng ngang, có cùng số lớp electron" },
+        { "id": "b", "label": "Cột dọc gồm các nguyên tố có tính chất giống nhau" },
+        { "id": "c", "label": "Nhóm nguyên tố có cùng khối lượng" },
+        { "id": "d", "label": "Danh sách tất cả phi kim" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Chu kì nằm theo chiều ngang (hàng) của bảng tuần hoàn." },
+      { "level": 2, "text": "Nguyên tố trong cùng 1 chu kì có cùng số lớp electron. Ví dụ chu kì 2: Li, Be, B, C, N, O, F, Ne đều có 2 lớp." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Khái niệm", "body": "Định nghĩa chu kì trong bảng tuần hoàn." },
+      { "kind": "knowledge", "title": "Đặc điểm", "body": "Chu kì = hàng ngang. Nguyên tố cùng chu kì có cùng số lớp electron. Bảng có 7 chu kì." },
+      { "kind": "answer", "title": "Kết luận", "body": "Chu kì là dãy nguyên tố xếp theo hàng ngang, cùng số lớp electron." }
+    ],
+    "finalSolution": "Chu kì là hàng ngang trong bảng tuần hoàn. Các nguyên tố cùng chu kì có cùng số lớp electron.",
+    "commonMistakes": [
+      { "id": "confuse-group", "message": "Cột dọc là nhóm (group), không phải chu kì. Chu kì là hàng ngang." }
+    ]
+  },
+  {
+    "id": "g7-b04-match-001",
+    "lessonId": "g7-b04",
+    "skillIds": ["periodic-table-structure"],
+    "difficulty": 1,
+    "prompt": "Ghép thuật ngữ bảng tuần hoàn với định nghĩa đúng.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Chu kì", "right": "Hàng ngang, cùng số lớp electron" },
+        { "left": "Nhóm", "right": "Cột dọc, tính chất hóa học tương tự" },
+        { "left": "Số hiệu nguyên tử (Z)", "right": "Bằng số proton trong hạt nhân" },
+        { "left": "Kim loại", "right": "Nằm bên trái bảng tuần hoàn" },
+        { "left": "Phi kim", "right": "Nằm bên phải bảng tuần hoàn" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Hàng ngang = chu kì, cột dọc = nhóm." },
+      { "level": 2, "text": "Kim loại chiếm đa số bên trái (khoảng 80% nguyên tố). Phi kim nằm góc phải phía trên." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Ghép đôi", "body": "Nối 5 thuật ngữ với 5 định nghĩa." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "Chu kì: hàng, cùng lớp e. Nhóm: cột, tính chất tương tự. Z = số p. Kim loại: trái. Phi kim: phải." },
+      { "kind": "answer", "title": "Kết quả", "body": "Ghép đúng 5 cặp." }
+    ],
+    "finalSolution": "Chu kì ↔ Hàng ngang. Nhóm ↔ Cột dọc. Z ↔ Số proton. Kim loại ↔ Trái. Phi kim ↔ Phải.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g7-b04-tf-001",
+    "lessonId": "g7-b04",
+    "skillIds": ["periodic-table-structure"],
+    "difficulty": 1,
+    "prompt": "Xác định các phát biểu sau về bảng tuần hoàn là Đúng hay Sai.",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Bảng tuần hoàn hiện đại có 7 chu kì và 18 nhóm.", "correct": true },
+        { "id": "s2", "text": "Các nguyên tố trong cùng một nhóm có cùng số lớp electron.", "correct": false },
+        { "id": "s3", "text": "Kim loại chiếm phần lớn số nguyên tố trong bảng tuần hoàn.", "correct": true },
+        { "id": "s4", "text": "Số hiệu nguyên tử của nguyên tố Oxygen là 8, tức hạt nhân O có 8 proton.", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Nguyên tố cùng nhóm có cùng số electron hóa trị, không phải cùng số lớp electron." },
+      { "level": 2, "text": "Cùng số lớp electron là đặc điểm của chu kì (hàng ngang), không phải nhóm (cột dọc)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích", "body": "Xét từng phát biểu." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "7 chu kì, 18 nhóm (Đúng). Cùng nhóm = cùng số e hóa trị, không phải cùng lớp (Sai). Kim loại chiếm ~80% (Đúng). O có Z=8, tức 8 proton (Đúng)." },
+      { "kind": "answer", "title": "Kết quả", "body": "S1: Đúng, S2: Sai, S3: Đúng, S4: Đúng." }
+    ],
+    "finalSolution": "7 chu kì + 18 nhóm (Đúng). Cùng nhóm ≠ cùng số lớp (Sai). Kim loại chiếm đa số (Đúng). Z(O)=8 (Đúng).",
+    "commonMistakes": [
+      { "id": "group-vs-period", "message": "Cùng nhóm (cột dọc) có cùng số electron hóa trị, cùng chu kì (hàng ngang) mới có cùng số lớp electron." }
+    ]
+  },
+  {
+    "id": "g7-b04-sort-001",
+    "lessonId": "g7-b04",
+    "skillIds": ["periodic-table-structure"],
+    "difficulty": 2,
+    "prompt": "Phân loại các nguyên tố sau vào nhóm Kim loại hoặc Phi kim dựa trên vị trí trong bảng tuần hoàn.",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "metal", "label": "Kim loại" },
+        { "id": "nonmetal", "label": "Phi kim" }
+      ],
+      "items": [
+        { "id": "i1", "label": "Sodium (Na, Z = 11)", "bucketId": "metal" },
+        { "id": "i2", "label": "Chlorine (Cl, Z = 17)", "bucketId": "nonmetal" },
+        { "id": "i3", "label": "Iron (Fe, Z = 26)", "bucketId": "metal" },
+        { "id": "i4", "label": "Oxygen (O, Z = 8)", "bucketId": "nonmetal" },
+        { "id": "i5", "label": "Calcium (Ca, Z = 20)", "bucketId": "metal" },
+        { "id": "i6", "label": "Sulfur (S, Z = 16)", "bucketId": "nonmetal" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Kim loại thường nằm bên trái bảng tuần hoàn, phi kim nằm bên phải." },
+      { "level": 2, "text": "Na, Fe, Ca là kim loại phổ biến. Cl, O, S là phi kim thường gặp." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại", "body": "Dựa vào vị trí trong bảng tuần hoàn để xác định kim loại / phi kim." },
+      { "kind": "knowledge", "title": "Phân nhóm", "body": "Kim loại: Na (nhóm IA), Fe (nhóm VIIIB), Ca (nhóm IIA). Phi kim: Cl (nhóm VIIA), O (nhóm VIA), S (nhóm VIA)." },
+      { "kind": "answer", "title": "Kết quả", "body": "Kim loại: Na, Fe, Ca. Phi kim: Cl, O, S." }
+    ],
+    "finalSolution": "Kim loại: Na, Fe, Ca. Phi kim: Cl, O, S.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g7-b04-mcq-004",
+    "lessonId": "g7-b04",
+    "skillIds": ["periodic-table-structure"],
+    "difficulty": 2,
+    "prompt": "Nguyên tố Magnesium (Mg) có số hiệu nguyên tử Z = 12 và nằm ở chu kì 3, nhóm IIA. Điều này cho biết gì?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Mg có 12 proton, 3 lớp electron, 2 electron ở lớp ngoài cùng" },
+        { "id": "b", "label": "Mg có 12 neutron, 3 lớp electron" },
+        { "id": "c", "label": "Mg có 3 proton, 12 lớp electron" },
+        { "id": "d", "label": "Mg có 2 proton, 3 electron ở lớp ngoài cùng" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Z = số proton. Chu kì = số lớp electron. Nhóm (đối với nhóm A) ≈ số electron hóa trị." },
+      { "level": 2, "text": "Z = 12 → 12 proton. Chu kì 3 → 3 lớp e. Nhóm IIA → 2 electron lớp ngoài cùng." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Dữ kiện", "body": "Mg: Z = 12, chu kì 3, nhóm IIA." },
+      { "kind": "knowledge", "title": "Suy luận", "body": "Z = 12 → 12 proton = 12 electron. Chu kì 3 → 3 lớp e (2, 8, 2). Nhóm IIA → 2 e lớp ngoài cùng." },
+      { "kind": "answer", "title": "Kết luận", "body": "Mg có 12 proton, 3 lớp electron, 2 electron lớp ngoài cùng." }
+    ],
+    "finalSolution": "Z = 12 → 12 proton. Chu kì 3 → 3 lớp electron. Nhóm IIA → 2 electron lớp ngoài cùng.",
+    "commonMistakes": [
+      { "id": "z-is-neutron", "message": "Z là số proton, không phải số neutron. Số neutron cần biết thêm khối lượng nguyên tử." }
+    ]
+  },
+  {
+    "id": "g7-b04-ordering-001",
+    "lessonId": "g7-b04",
+    "skillIds": ["periodic-table-structure"],
+    "difficulty": 2,
+    "prompt": "Sắp xếp các nguyên tố sau theo thứ tự tăng dần số hiệu nguyên tử Z.",
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Hydrogen (H, Z = 1)",
+        "Carbon (C, Z = 6)",
+        "Nitrogen (N, Z = 7)",
+        "Sodium (Na, Z = 11)",
+        "Calcium (Ca, Z = 20)"
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Z = số proton. Hydrogen có Z nhỏ nhất (Z = 1)." },
+      { "level": 2, "text": "Thứ tự Z tăng dần: H(1) < C(6) < N(7) < Na(11) < Ca(20)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Yêu cầu", "body": "Sắp xếp 5 nguyên tố theo Z tăng dần." },
+      { "kind": "knowledge", "title": "Số liệu", "body": "H: Z=1, C: Z=6, N: Z=7, Na: Z=11, Ca: Z=20." },
+      { "kind": "answer", "title": "Thứ tự", "body": "H(1) → C(6) → N(7) → Na(11) → Ca(20)." }
+    ],
+    "finalSolution": "H(1) < C(6) < N(7) < Na(11) < Ca(20).",
+    "commonMistakes": [
+      { "id": "confuse-c-and-ca", "message": "C (Carbon, Z=6) và Ca (Calcium, Z=20) là 2 nguyên tố khác nhau, đừng nhầm lẫn." }
+    ]
+  },
+  {
+    "id": "g7-b04-mcq-005",
+    "lessonId": "g7-b04",
+    "skillIds": ["periodic-table-structure"],
+    "difficulty": 2,
+    "prompt": "Nguyên tố X nằm ở chu kì 2, nhóm VIIA trong bảng tuần hoàn. Nguyên tố X là:",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Fluorine (F, Z = 9)" },
+        { "id": "b", "label": "Chlorine (Cl, Z = 17)" },
+        { "id": "c", "label": "Oxygen (O, Z = 8)" },
+        { "id": "d", "label": "Nitrogen (N, Z = 7)" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Chu kì 2 → nguyên tố có 2 lớp electron (Z từ 3 đến 10)." },
+      { "level": 2, "text": "Nhóm VIIA → 7 electron hóa trị → các halogen. Ở chu kì 2, halogen duy nhất là Fluorine (F, Z = 9)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Dữ kiện", "body": "Chu kì 2, nhóm VIIA." },
+      { "kind": "knowledge", "title": "Xác định", "body": "Chu kì 2: Li, Be, B, C, N, O, F, Ne. Nhóm VIIA: F (Z=9), Cl (Z=17), Br, I. Giao nhau tại F." },
+      { "kind": "answer", "title": "Kết luận", "body": "Nguyên tố X là Fluorine (F), Z = 9." }
+    ],
+    "finalSolution": "Fluorine (F, Z = 9) nằm ở chu kì 2 nhóm VIIA. Chlorine thuộc chu kì 3.",
+    "commonMistakes": [
+      { "id": "cl-not-period-2", "message": "Chlorine (Cl, Z=17) nằm ở chu kì 3 chứ không phải chu kì 2." }
+    ]
+  },
+  {
+    "id": "g7-b04-mcq-006",
+    "lessonId": "g7-b04",
+    "skillIds": ["periodic-table-structure"],
+    "difficulty": 1,
+    "prompt": "Nhóm (cột dọc) trong bảng tuần hoàn gồm các nguyên tố có đặc điểm chung nào?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Có tính chất hóa học tương tự nhau" },
+        { "id": "b", "label": "Có cùng số lớp electron" },
+        { "id": "c", "label": "Có cùng khối lượng nguyên tử" },
+        { "id": "d", "label": "Đều là phi kim" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Cùng cột dọc = cùng nhóm. Nhóm gắn liền với tính chất hóa học tương tự." },
+      { "level": 2, "text": "Ví dụ nhóm IA: Li, Na, K đều là kim loại kiềm, phản ứng mạnh với nước." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Khái niệm", "body": "Đặc điểm chung của nguyên tố cùng nhóm." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "Cùng nhóm = cùng số electron hóa trị → tính chất hóa học tương tự. Khác biệt: khác số lớp, khác khối lượng." },
+      { "kind": "answer", "title": "Kết luận", "body": "Nguyên tố cùng nhóm có tính chất hóa học tương tự nhau." }
+    ],
+    "finalSolution": "Nguyên tố cùng nhóm có cùng số electron hóa trị nên có tính chất hóa học tương tự nhau.",
+    "commonMistakes": [
+      { "id": "same-layers", "message": "Cùng số lớp electron là đặc điểm của chu kì (hàng ngang), không phải nhóm (cột dọc)." }
+    ]
+  }
+]
