@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Play, ArrowRight } from 'lucide-react';
 import { useUserStore } from '@/features/gamification/useUserStore';
-import { Button, Card, Progress, Streak, XPBadge } from '@/design-system';
+import { Button, Card, Progress, Streak, XPBadge, Mascot } from '@/design-system';
 import { sound } from '@/lib/audio';
 
 export const HomePage: React.FC = () => {
@@ -24,32 +24,37 @@ export const HomePage: React.FC = () => {
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="bg-gradient-to-br from-cyan-950/60 via-slate-900 to-slate-900 border border-cyan-800/40 rounded-3xl p-5 shadow-xl"
+        className="bg-gradient-to-br from-cyan-950/60 via-slate-900 to-slate-900 border border-cyan-800/40 rounded-3xl p-5 shadow-xl relative overflow-hidden"
       >
-        <div className="space-y-3">
-          <span className="inline-block px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 font-black text-[10px] uppercase tracking-wider border border-cyan-500/30">
-            Tiếp tục học hôm nay
-          </span>
-          <h1 className="text-xl font-black text-slate-100 leading-snug">
-            Lớp 8 · Bài 3: <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">
-              Mol và tỉ khối chất khí
+        <div className="flex items-center justify-between gap-3">
+          <div className="space-y-3 flex-1 min-w-0">
+            <span className="inline-block px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 font-black text-[10px] uppercase tracking-wider border border-cyan-500/30">
+              Tiếp tục học hôm nay
             </span>
-          </h1>
-          <p className="text-xs text-slate-400">
-            {nextNodeTitle}
-          </p>
-          <Button
-            variant="primary"
-            size="md"
-            onClick={() => {
-              sound.playClick();
-              navigate(`/play/g8-b03/${nextNodeId}`);
-            }}
-          >
-            <Play className="w-4 h-4 fill-slate-950" />
-            Tiếp tục chặng
-          </Button>
+            <h1 className="text-xl font-black text-slate-100 leading-snug">
+              Lớp 8 · Bài 3: <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">
+                Mol và tỉ khối chất khí
+              </span>
+            </h1>
+            <p className="text-xs text-slate-400">
+              {nextNodeTitle}
+            </p>
+            <Button
+              variant="primary"
+              size="md"
+              onClick={() => {
+                sound.playClick();
+                navigate(`/play/g8-b03/${nextNodeId}`);
+              }}
+            >
+              <Play className="w-4 h-4 fill-slate-950" />
+              Tiếp tục chặng
+            </Button>
+          </div>
+          <div className="shrink-0 flex items-center justify-center">
+            <Mascot state="cheering" size="lg" />
+          </div>
         </div>
       </motion.div>
 

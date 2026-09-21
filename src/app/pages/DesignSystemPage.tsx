@@ -44,6 +44,7 @@ export const DesignSystemPage: React.FC = () => {
     'surprised',
     'sleeping',
     'cheering',
+    'out_of_hearts',
   ];
 
   return (

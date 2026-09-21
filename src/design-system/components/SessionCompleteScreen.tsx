@@ -84,7 +84,7 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
         transition={{ type: 'spring', stiffness: 300, damping: 15, delay: 0.2 }}
         className="relative z-10"
       >
-        <Mascot state="correct" size="xl" />
+        <Mascot state="celebrating" size="xl" />
       </motion.div>
 
       {/* Title */}

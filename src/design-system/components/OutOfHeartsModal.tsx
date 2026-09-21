@@ -45,7 +45,7 @@ export const OutOfHeartsModal: React.FC<OutOfHeartsModalProps> = ({
 
           {/* Header Icon / Mascot */}
           <div className="flex justify-center items-center gap-3 pt-1">
-            <Mascot state="wrong" size="lg" />
+            <Mascot state="out_of_hearts" size="lg" />
             <motion.div
               animate={{ scale: [1, 1.15, 1], rotate: [0, -4, 4, 0] }}
               transition={{ repeat: Infinity, duration: 2 }}

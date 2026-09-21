@@ -15,6 +15,7 @@ describe('Mascot 9 States Component', () => {
     'surprised',
     'sleeping',
     'cheering',
+    'out_of_hearts',
   ];
 
   allStates.forEach((st) => {

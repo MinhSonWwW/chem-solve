@@ -13,7 +13,8 @@ export type MascotState =
   | 'celebrating'
   | 'surprised'
   | 'sleeping'
-  | 'cheering';
+  | 'cheering'
+  | 'out_of_hearts';
 
 export interface MascotProps extends React.HTMLAttributes<HTMLDivElement> {
   state?: MascotState;
@@ -41,6 +42,8 @@ export const Mascot: React.FC<MascotProps> = ({
       ? '#10b981' // Emerald
       : state === 'wrong'
       ? '#ef4444' // Rose / Red
+      : state === 'out_of_hearts'
+      ? '#f43f5e' // Rose-500
       : state === 'thinking'
       ? '#8b5cf6' // Violet
       : state === 'celebrating'
@@ -78,6 +81,8 @@ export const Mascot: React.FC<MascotProps> = ({
         return { y: [0, -10, 0], scale: [1, 1.06, 1] };
       case 'wrong':
         return { x: [0, -6, 6, -4, 4, 0] };
+      case 'out_of_hearts':
+        return { y: [0, 4, 0], scale: [1, 0.96, 1] };
       case 'surprised':
         return { scale: [1, 1.12, 1], y: [0, -4, 0] };
       case 'sleeping':
@@ -98,6 +103,8 @@ export const Mascot: React.FC<MascotProps> = ({
     switch (state) {
       case 'wrong':
         return { duration: 0.4, ease: 'easeInOut' as const };
+      case 'out_of_hearts':
+        return { duration: 2.2, repeat: Infinity, ease: 'easeInOut' as const };
       case 'surprised':
         return { duration: 0.5, ease: 'easeOut' as const };
       case 'sleeping':
@@ -111,12 +118,29 @@ export const Mascot: React.FC<MascotProps> = ({
     }
   };
 
-  const rawSrc =
-    state === 'correct' || state === 'celebrating'
-      ? '/assets/mascot/atom-correct.png'
-      : state === 'wrong'
-      ? '/assets/mascot/atom-wrong.png'
-      : '/assets/mascot/atom-idle.png';
+  const rawSrc = (() => {
+    switch (state) {
+      case 'thinking':
+        return '/assets/mascot/atom-thinking.png';
+      case 'celebrating':
+        return '/assets/mascot/atom-celebrating.png';
+      case 'cheering':
+        return '/assets/mascot/atom-cheering.png';
+      case 'surprised':
+        return '/assets/mascot/atom-surprised.png';
+      case 'sleeping':
+      case 'out_of_hearts':
+        return '/assets/mascot/atom-out-of-hearts.png';
+      case 'correct':
+        return '/assets/mascot/atom-correct.png';
+      case 'wrong':
+        return '/assets/mascot/atom-wrong.png';
+      case 'idle':
+      case 'happy':
+      default:
+        return '/assets/mascot/atom-idle.png';
+    }
+  })();
   const mascotSrc = assetUrl(rawSrc);
 
   return (
