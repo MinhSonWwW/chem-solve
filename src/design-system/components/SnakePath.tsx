@@ -1,8 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Star, Play } from 'lucide-react';
+import { Check, Lock, Star, Gift, Play, Award } from 'lucide-react';
 import { sound } from '@/lib/audio';
-import { assetUrl } from '@/lib/utils';
 
 export interface PathNode {
   id: string;
@@ -143,6 +142,7 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
           const isCompleted = node.status === 'completed';
           const isActive = node.status === 'active';
           const isChest = node.type === 'chest';
+          const isCheckpoint = node.type === 'checkpoint';
           const isUnready = node.isReady === false;
           const showStartBadge = isActive && index === firstActiveIndex;
 
@@ -184,46 +184,31 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
                 <button
                   onClick={() => handleNodePress(node)}
                   aria-label={node.title}
-                  className={`w-[74px] h-[74px] rounded-full flex flex-col items-center justify-center font-black select-none transition-transform cursor-pointer relative hover:scale-105 active:scale-95 ${
-                    isActive
-                      ? 'drop-shadow-[0_0_16px_rgba(6,182,212,0.6)]'
-                      : isCompleted
-                      ? 'drop-shadow-[0_4px_10px_rgba(16,185,129,0.4)]'
-                      : 'drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]'
+                  className={`w-[70px] h-[70px] rounded-full flex flex-col items-center justify-center font-black select-none transition-all cursor-pointer relative ${
+                    isCompleted
+                      ? 'bg-emerald-500 text-slate-950 border-2 border-emerald-300 shadow-[0_8px_0_0_#047857] hover:bg-emerald-400 active:translate-y-1.5 active:shadow-[0_2px_0_0_#047857]'
+                      : isActive
+                      ? 'bg-gradient-to-tr from-cyan-500 to-cyan-300 text-slate-950 border-2 border-cyan-100 shadow-[0_8px_0_0_#0891b2] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#0891b2] ring-4 ring-cyan-500/30'
+                      : isChest
+                      ? 'bg-gradient-to-tr from-amber-600 to-amber-400 text-amber-950 border-2 border-amber-300 shadow-[0_8px_0_0_#78350f] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#78350f]'
+                      : 'bg-slate-800 text-slate-400 border-2 border-slate-700 shadow-[0_6px_0_0_#0f172a] hover:bg-slate-750 hover:border-slate-600 active:translate-y-1'
                   }`}
                 >
+                  {/* Top gloss highlight shine */}
+                  <div className="absolute top-1.5 left-3 right-3 h-3.5 bg-white/25 rounded-full pointer-events-none" />
+
                   {isChest ? (
-                    <img
-                      src={assetUrl('/assets/roadmap/trophy-gold.png')}
-                      alt="Phần thưởng"
-                      className="w-[68px] h-[68px] object-contain drop-shadow-md"
-                    />
+                    <Gift className={`w-8 h-8 ${isCompleted ? 'text-slate-950' : 'text-amber-100'}`} />
                   ) : isCompleted ? (
-                    <img
-                      src={assetUrl('/assets/roadmap/node-completed.png')}
-                      alt="Hoàn thành"
-                      className="w-[72px] h-[72px] object-contain"
-                    />
+                    <Check className="w-8 h-8 stroke-[3.5]" />
                   ) : isActive ? (
-                    <div className="relative flex items-center justify-center w-full h-full">
-                      <img
-                        src={assetUrl('/assets/roadmap/node-active.png')}
-                        alt="Đang học"
-                        className="w-[72px] h-[72px] object-contain"
-                      />
-                      {/* Central small play indicator */}
-                      <Play className="w-6 h-6 fill-white text-white absolute drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] ml-0.5" />
-                    </div>
+                    <Play className="w-7 h-7 fill-slate-950 ml-0.5" />
                   ) : isUnready ? (
-                    <div className="w-[68px] h-[68px] rounded-full bg-slate-800/90 border-2 border-slate-700 flex items-center justify-center shadow-inner">
-                      <span className="text-2xl select-none" title="Đang biên soạn">🛠️</span>
-                    </div>
+                    <span className="text-xl select-none" title="Đang biên soạn">🛠️</span>
+                  ) : isCheckpoint ? (
+                    <Award className="w-7 h-7" />
                   ) : (
-                    <img
-                      src={assetUrl('/assets/roadmap/node-locked.png')}
-                      alt="Chưa mở khóa"
-                      className="w-[70px] h-[70px] object-contain opacity-85 hover:opacity-100 transition-opacity"
-                    />
+                    <Lock className="w-6 h-6 text-slate-500" />
                   )}
                 </button>
               </div>
