@@ -10,7 +10,6 @@ import {
   Heart,
   Formula,
   FeedbackSheet,
-  HintLadder,
   SessionCompleteScreen,
   QuitModal,
   OutOfHeartsModal,
@@ -213,21 +212,6 @@ export const ExercisePage: React.FC = () => {
   const handleRetry = useCallback(() => {
     sound.playClick();
     dispatch({ type: 'DISMISS_FEEDBACK' });
-  }, [dispatch]);
-
-  const handleHintUse = useCallback(
-    (level: 1 | 2) => {
-      dispatch({ type: 'USE_HINT', payload: { level } });
-    },
-    [dispatch]
-  );
-
-  const handleRevealStep = useCallback(() => {
-    dispatch({ type: 'REVEAL_NEXT_STEP' });
-  }, [dispatch]);
-
-  const handleRevealSolution = useCallback(() => {
-    dispatch({ type: 'REVEAL_SOLUTION' });
   }, [dispatch]);
 
   const handleExit = useCallback(() => {
@@ -494,39 +478,25 @@ export const ExercisePage: React.FC = () => {
       {/* 4. Bottom Sticky Action Bar */}
       <div className="pt-2 border-t border-slate-800 safe-pb">
         {!isFeedbackVisible && (
-          <div className="flex items-center gap-2">
-            <HintLadder
-              hints={exercise.hints}
-              steps={exercise.steps}
-              finalSolution={exercise.finalSolution}
-              hintsUsed={currentQ.hintsUsed}
-              stepsRevealedCount={currentQ.stepsRevealedCount}
-              isCompleted={isCompleted}
-              onUseHint={handleHintUse}
-              onRevealStep={handleRevealStep}
-              onRevealSolution={handleRevealSolution}
-            />
-
-            <Button
-              variant="primary"
-              size="lg"
-              fullWidth
-              disabled={
-                exercise.answer.kind === 'equation' && exercise.answer.mode === 'fill-coefficients'
-                  ? false
-                  : currentQ.userInput == null || currentQ.userInput === ''
+          <Button
+            variant="primary"
+            size="lg"
+            fullWidth
+            disabled={
+              exercise.answer.kind === 'equation' && exercise.answer.mode === 'fill-coefficients'
+                ? false
+                : currentQ.userInput == null || currentQ.userInput === ''
+            }
+            onClick={() => {
+              if (exercise.answer.kind === 'equation' && exercise.answer.mode === 'fill-coefficients' && !currentQ.userInput) {
+                const defaultCoeffs = new Array(exercise.answer.reactants.length + exercise.answer.products.length).fill(1);
+                handleSetInput(defaultCoeffs);
               }
-              onClick={() => {
-                if (exercise.answer.kind === 'equation' && exercise.answer.mode === 'fill-coefficients' && !currentQ.userInput) {
-                  const defaultCoeffs = new Array(exercise.answer.reactants.length + exercise.answer.products.length).fill(1);
-                  handleSetInput(defaultCoeffs);
-                }
-                handleCheck();
-              }}
-            >
-              KIỂM TRA
-            </Button>
-          </div>
+              handleCheck();
+            }}
+          >
+            KIỂM TRA
+          </Button>
         )}
       </div>
 
@@ -559,20 +529,9 @@ export const ExercisePage: React.FC = () => {
           <FeedbackSheet
             status={feedbackStatus}
             reactionEffect={reactionEffect}
-            solutionText={
-              status === 'correct'
-                ? exercise.finalSolution
-                : status === 'revealed'
-                  ? `Đáp án đúng: ${exercise.finalSolution}`
-                  : undefined
-            }
-            explanation={
-              status === 'correct'
-                ? exercise.steps[exercise.steps.length - 1]?.body
-                : status === 'revealed'
-                  ? exercise.steps.map((s, i) => `${i + 1}. ${s.title}: ${s.body}`).join('\n')
-                  : undefined
-            }
+            solutionText={status === 'correct' ? exercise.finalSolution : undefined}
+            explanation={status === 'correct' ? exercise.steps[exercise.steps.length - 1]?.body : undefined}
+            hints={status === 'wrong' || status === 'revealed' ? exercise.hints : undefined}
             diagnosis={diagnosis}
             attemptsLeft={attemptsLeft > 0 ? attemptsLeft : undefined}
             onContinue={handleNext}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Check, AlertCircle, AlertTriangle, BookOpen } from 'lucide-react';
+import { Check, AlertCircle, AlertTriangle, Lightbulb } from 'lucide-react';
 import { Button } from './Button';
 import { Mascot } from './Mascot';
 import { ReactionVisualizer, type ReactionEffectType } from './ReactionVisualizer';
@@ -11,6 +11,7 @@ export interface FeedbackSheetProps {
   solutionText?: string;
   explanation?: string;
   diagnosis?: string;
+  hints?: Array<{ level: 1 | 2; text: string }>;
   attemptsLeft?: number;
   reactionEffect?: {
     type: ReactionEffectType;
@@ -26,6 +27,7 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
   solutionText,
   explanation,
   diagnosis,
+  hints,
   attemptsLeft,
   reactionEffect,
   onContinue,
@@ -57,8 +59,8 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
       bodyBg: 'bg-rose-950/50 border-rose-500/30 text-rose-100',
       title: 'CHƯA CHÍNH XÁC!',
       subtitle: attemptsLeft
-        ? `Còn ${attemptsLeft} lượt thử`
-        : 'Đừng nản lòng, xem lời giải nhé!',
+        ? `Còn ${attemptsLeft} lượt thử · Hãy đọc gợi ý bên dưới!`
+        : 'Đọc kỹ gợi ý bên dưới để chuẩn bị làm lại ở cuối bài nhé!',
       mascot: 'wrong' as const,
       btnVariant: 'danger' as const,
       btnLabel: attemptsLeft && attemptsLeft > 0 ? 'THỬ LẠI' : 'ĐÃ HIỂU',
@@ -79,18 +81,18 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
       pattern: 'geometric',
     },
     revealed: {
-      border: 'border-indigo-500/80',
-      bgGradient: 'bg-gradient-to-b from-slate-950/98 via-slate-900/98 to-indigo-950/90',
-      badgeBg: 'bg-indigo-500 text-white border-4 border-white shadow-[0_4px_12px_rgba(99,102,241,0.5)]',
-      icon: <BookOpen className="w-6 h-6 stroke-[3.5]" />,
-      titleColor: 'text-indigo-300',
-      bodyBg: 'bg-indigo-950/50 border-indigo-500/30 text-indigo-100',
-      title: 'LỜI GIẢI CHI TIẾT',
-      subtitle: 'Hãy đọc kỹ các bước để hiểu bản chất nhé!',
+      border: 'border-amber-500/80',
+      bgGradient: 'bg-gradient-to-b from-slate-950/98 via-slate-900/98 to-amber-950/90',
+      badgeBg: 'bg-amber-500 text-slate-950 border-4 border-white shadow-[0_4px_12px_rgba(245,158,11,0.5)]',
+      icon: <Lightbulb className="w-6 h-6 stroke-[3.5]" />,
+      titleColor: 'text-amber-300',
+      bodyBg: 'bg-amber-950/50 border-amber-500/30 text-amber-100',
+      title: 'GỢI Ý TƯ DUY',
+      subtitle: 'Đọc kỹ gợi ý để chuẩn bị thử sức lại ở cuối bài nhé!',
       mascot: 'thinking' as const,
-      btnVariant: 'secondary' as const,
+      btnVariant: 'warning' as const,
       btnLabel: 'TIẾP TỤC',
-      pattern: 'confetti',
+      pattern: 'geometric',
     },
   }[status];
 
@@ -185,7 +187,27 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
             />
           )}
 
-          {/* Solution Body / Explanation */}
+          {/* Hints display for wrong/revealed answers */}
+          {hints && hints.length > 0 && (
+            <div className="p-3.5 rounded-2xl text-xs leading-relaxed border bg-amber-950/40 border-amber-500/40 text-amber-100 shadow-inner space-y-2">
+              <div className="font-black text-xs text-amber-300 flex items-center gap-1.5 uppercase tracking-wider">
+                <Lightbulb className="w-4 h-4 text-amber-400 fill-amber-400/20 shrink-0" />
+                <span>Gợi ý hướng dẫn tư duy:</span>
+              </div>
+              <div className="space-y-1.5 pl-0.5">
+                {hints.map((h, i) => (
+                  <div key={i} className="flex items-start gap-2 text-slate-200">
+                    <span className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-amber-500/20 text-amber-300 text-[10px] font-bold shrink-0 mt-0.5 border border-amber-500/40">
+                      {h.level || i + 1}
+                    </span>
+                    <span className="font-medium text-slate-300">{h.text}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Solution Body / Explanation (Only shown if solutionText or explanation is provided) */}
           {(solutionText || explanation) && (
             <div
               className={`p-3.5 rounded-2xl text-xs leading-relaxed border shadow-inner ${config.bodyBg}`}
