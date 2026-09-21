@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Check, Lock, Star, Gift, Play } from 'lucide-react';
-import { Mascot } from './Mascot';
+import { Check, Lock, Star, Gift, Play, Award } from 'lucide-react';
 import { sound } from '@/lib/audio';
 
 export interface PathNode {
@@ -18,20 +17,17 @@ export interface SnakePathProps {
 }
 
 export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
-  const nodeSpacing = 118;
-  const startY = 60;
+  // Duolingo-style compact & rhythmic node spacing
+  const nodeSpacing = 94;
+  const startY = 48;
   const svgWidth = 360;
-  const totalHeight = startY + nodes.length * nodeSpacing + 20;
+  const totalHeight = startY + nodes.length * nodeSpacing + 28;
 
   // Calculate coordinates for each node using a smooth sine wave
   const nodeCoords = nodes.map((_, index) => {
-    // index 0: center (180)
-    // index 1: right (260)
-    // index 2: center (180)
-    // index 3: left (100)
-    // index 4: center (180)...
+    // Smooth alternating snake curve
     const wave = Math.sin((index * Math.PI) / 2);
-    const x = 180 + Math.round(wave * 75);
+    const x = 180 + Math.round(wave * 68);
     const y = startY + index * nodeSpacing;
     return { x, y };
   });
@@ -70,8 +66,8 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
   };
 
   return (
-    <div className="relative w-full max-w-[380px] mx-auto select-none py-2">
-      {/* SVG Connecting Paths */}
+    <div className="relative w-full max-w-[380px] mx-auto select-none py-1">
+      {/* SVG Connecting Track */}
       <svg
         className="absolute top-0 left-0 w-full h-full pointer-events-none"
         viewBox={`0 0 ${svgWidth} ${totalHeight}`}
@@ -87,11 +83,11 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
           </filter>
         </defs>
 
-        {/* 1. Base track shadow */}
+        {/* 1. Track 3D Drop Shadow */}
         <path
           d={fullPathD}
           fill="none"
-          stroke="#0f172a"
+          stroke="#090d16"
           strokeWidth="18"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -128,7 +124,7 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
           strokeWidth="2"
           strokeDasharray="6 8"
           strokeLinecap="round"
-          opacity="0.4"
+          opacity="0.5"
         />
       </svg>
 
@@ -143,6 +139,7 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
           const isActive = node.status === 'active';
           const isLocked = node.status === 'locked';
           const isChest = node.type === 'chest';
+          const isCheckpoint = node.type === 'checkpoint';
 
           // Position in percentage of 360 width
           const leftPercent = (coord.x / svgWidth) * 100;
@@ -156,76 +153,62 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
                 top: `${coord.y}px`,
               }}
             >
-              {/* Active Node Floating Tooltip / Speech Bubble */}
+              {/* Active Node Floating Tooltip Banner (Duolingo Style) */}
               {isActive && (
                 <motion.div
-                  initial={{ y: 8, opacity: 0, scale: 0.9 }}
-                  animate={{ y: 0, opacity: 1, scale: 1 }}
-                  transition={{ repeat: Infinity, repeatType: 'reverse', duration: 1.2, ease: 'easeInOut' }}
-                  className="absolute -top-12 z-20 flex flex-col items-center pointer-events-none"
+                  initial={{ y: 4 }}
+                  animate={{ y: -4 }}
+                  transition={{ repeat: Infinity, repeatType: 'reverse', duration: 0.9, ease: 'easeInOut' }}
+                  className="absolute -top-11 z-20 flex flex-col items-center pointer-events-none"
                 >
-                  <div className="bg-cyan-400 text-slate-950 font-black text-[11px] uppercase tracking-wider px-3 py-1 rounded-xl shadow-lg border border-cyan-300">
+                  <div className="bg-gradient-to-r from-cyan-400 to-cyan-300 text-slate-950 font-black text-[11px] uppercase tracking-wider px-3.5 py-1 rounded-xl shadow-[0_4px_12px_rgba(6,182,212,0.5)] border border-cyan-200">
                     BẮT ĐẦU
                   </div>
-                  {/* Downward triangle arrow */}
-                  <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] border-t-cyan-400" />
+                  {/* Downward pointer triangle */}
+                  <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] border-t-cyan-300 -mt-[1px]" />
                 </motion.div>
               )}
 
-              {/* Mascot cheering beside active node */}
-              {isActive && (
-                <div
-                  className={`absolute top-0 z-10 hidden sm:block ${
-                    coord.x > 180 ? '-left-24' : '-right-24'
-                  }`}
-                >
-                  <div className="flex flex-col items-center">
-                    <div className="bg-slate-900/90 border border-cyan-500/40 text-[10px] text-cyan-300 font-bold px-2 py-0.5 rounded-full mb-1 shadow whitespace-nowrap">
-                      Tiến lên! ⚗️
-                    </div>
-                    <Mascot state="happy" size="sm" />
-                  </div>
-                </div>
-              )}
-
-              {/* Node Button (72px chunky Duolingo round button) */}
+              {/* Node Button (70px chunky 3D round button) */}
               <div className="relative">
                 {/* Active pulsating beacon ring */}
                 {isActive && (
-                  <span className="absolute -inset-2.5 rounded-full bg-cyan-400/30 animate-ping pointer-events-none" />
+                  <span className="absolute -inset-2.5 rounded-full bg-cyan-400/35 animate-ping pointer-events-none" />
                 )}
 
                 <button
                   onClick={() => handleNodePress(node)}
                   disabled={isLocked}
                   aria-label={node.title}
-                  className={`w-[72px] h-[72px] rounded-full flex flex-col items-center justify-center font-black select-none transition-transform cursor-pointer relative ${
+                  className={`w-[70px] h-[70px] rounded-full flex flex-col items-center justify-center font-black select-none transition-all cursor-pointer relative ${
                     isCompleted
-                      ? 'bg-emerald-500 text-slate-950 border-2 border-emerald-300 shadow-[0_8px_0_0_#059669] hover:bg-emerald-400 active:translate-y-1.5 active:shadow-[0_2px_0_0_#059669]'
+                      ? 'bg-emerald-500 text-slate-950 border-2 border-emerald-300 shadow-[0_8px_0_0_#047857] hover:bg-emerald-400 active:translate-y-1.5 active:shadow-[0_2px_0_0_#047857]'
                       : isActive
-                      ? 'bg-cyan-400 text-slate-950 border-2 border-cyan-200 shadow-[0_8px_0_0_#0891b2] hover:bg-cyan-300 active:translate-y-1.5 active:shadow-[0_2px_0_0_#0891b2] ring-4 ring-cyan-500/30'
+                      ? 'bg-gradient-to-tr from-cyan-500 to-cyan-300 text-slate-950 border-2 border-cyan-100 shadow-[0_8px_0_0_#0891b2] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#0891b2] ring-4 ring-cyan-500/30'
                       : isChest
-                      ? 'bg-amber-600 text-amber-200 border-2 border-amber-500 shadow-[0_6px_0_0_#78350f] opacity-75'
+                      ? 'bg-gradient-to-tr from-amber-600 to-amber-400 text-amber-950 border-2 border-amber-300 shadow-[0_8px_0_0_#78350f] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#78350f]'
                       : 'bg-slate-800 text-slate-600 border-2 border-slate-700 shadow-[0_6px_0_0_#0f172a] cursor-not-allowed opacity-60'
                   }`}
                 >
                   {/* Top gloss highlight shine */}
-                  <div className="absolute top-1.5 left-3 right-3 h-3.5 bg-white/20 rounded-full pointer-events-none" />
+                  <div className="absolute top-1.5 left-3 right-3 h-3.5 bg-white/25 rounded-full pointer-events-none" />
 
                   {isChest ? (
-                    <Gift className={`w-8 h-8 ${isCompleted ? 'text-slate-950' : 'text-amber-400'}`} />
+                    <Gift className={`w-8 h-8 ${isCompleted ? 'text-slate-950' : 'text-amber-100'}`} />
                   ) : isCompleted ? (
                     <Check className="w-8 h-8 stroke-[3.5]" />
                   ) : isActive ? (
-                    <Play className="w-8 h-8 fill-slate-950 ml-0.5" />
+                    <Play className="w-7 h-7 fill-slate-950 ml-0.5" />
+                  ) : isCheckpoint ? (
+                    <Award className="w-7 h-7" />
                   ) : (
                     <Lock className="w-6 h-6" />
                   )}
                 </button>
               </div>
 
-              {/* Node Title & Star rating */}
-              <div className="mt-3 text-center w-[120px]">
+              {/* Node Title & Star Rating */}
+              <div className="mt-2.5 text-center w-[130px]">
                 <span
                   className={`text-[11px] font-black block leading-tight truncate ${
                     isActive
@@ -239,7 +222,7 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
                 </span>
 
                 {isCompleted && (
-                  <div className="flex justify-center gap-0.5 mt-1 text-amber-400 drop-shadow">
+                  <div className="flex justify-center gap-0.5 mt-0.5 text-amber-400 drop-shadow">
                     <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-500" />
                     <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-500" />
                     <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-500" />

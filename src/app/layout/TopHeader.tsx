@@ -9,7 +9,7 @@ export const TopHeader: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <header className="sticky top-0 z-30 w-full bg-slate-950/90 backdrop-blur-md border-b border-slate-800/80 px-4 py-2.5">
+    <header className="sticky top-0 z-30 w-full bg-slate-950/90 backdrop-blur-md border-b border-slate-800/80 px-4 py-2.5 lg:hidden">
       <div className="max-w-md mx-auto flex items-center justify-between">
         {/* Brand */}
         <Link to="/" className="flex items-center gap-2">

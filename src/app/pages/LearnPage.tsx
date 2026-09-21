@@ -122,29 +122,34 @@ export const LearnPage: React.FC = () => {
       {/* 2. Chapters & Snake Paths */}
       {chaptersWithNodes.map(({ chapter, pathNodes, nodeLessonMap }) => (
         <div key={chapter.id} className="space-y-4">
-          {/* Chapter Banner */}
-          <div className="bg-gradient-to-r from-cyan-950/80 via-slate-900 to-slate-900 border-2 border-cyan-800/40 p-4 rounded-3xl flex items-center justify-between shadow-xl">
-            <div className="space-y-0.5 max-w-[75%]">
-              <span className="text-[10px] font-black uppercase tracking-wider text-cyan-400">
+          {/* Chapter Banner (Duolingo Style) */}
+          <div className="bg-gradient-to-r from-cyan-950/90 via-slate-900 to-indigo-950/80 border-2 border-cyan-500/40 p-4 sm:p-5 rounded-3xl flex items-center justify-between shadow-2xl relative overflow-hidden">
+            {/* Background glowing ambient light */}
+            <div className="absolute -right-8 -top-8 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none" />
+
+            <div className="space-y-1 max-w-[65%] sm:max-w-[70%] relative z-10">
+              <span className="inline-block text-[10px] font-black uppercase tracking-wider text-cyan-300 bg-cyan-950/90 px-2 py-0.5 rounded-lg border border-cyan-800/70">
                 Chương {chapter.chapterNumber} · Lớp {currentGrade}
               </span>
-              <h1 className="text-base font-black text-slate-100 leading-snug">
+              <h1 className="text-sm sm:text-base font-black text-white leading-tight">
                 {chapter.title}
               </h1>
-              <p className="text-[11px] text-slate-400 truncate">
+              <p className="text-[11px] text-slate-300 line-clamp-1">
                 {chapter.description}
               </p>
             </div>
+
+            {/* Duolingo-style Guidebook Pill Button */}
             <button
               onClick={() => {
                 sound.playClick();
                 setSelectedChapterGuide(chapter);
               }}
-              className="flex flex-col items-center gap-1 p-2.5 bg-slate-800/90 hover:bg-slate-700/90 border border-cyan-500/30 rounded-2xl shadow-[0_3px_0_0_#0e7490] active:translate-y-1 active:shadow-none transition-all cursor-pointer text-cyan-300"
+              className="relative z-10 flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-400 hover:to-rose-400 text-white font-black text-[11px] sm:text-xs rounded-2xl shadow-[0_4px_0_0_#9f1239] active:translate-y-1 active:shadow-none transition-all cursor-pointer whitespace-nowrap border border-pink-400/40"
               title="Xem sổ tay kiến thức chương"
             >
-              <BookOpen className="w-5 h-5 text-cyan-400" />
-              <span className="text-[9px] font-extrabold uppercase tracking-tight">Sổ tay</span>
+              <BookOpen className="w-4 h-4 stroke-[2.5]" />
+              <span className="tracking-wide">HƯỚNG DẪN</span>
             </button>
           </div>
 

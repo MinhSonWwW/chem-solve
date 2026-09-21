@@ -12,7 +12,7 @@ const NAV_ITEMS = [
 
 export const BottomNav: React.FC = () => {
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-30 bg-slate-950/90 backdrop-blur-md border-t border-slate-800/80 safe-pb">
+    <nav className="fixed bottom-0 left-0 right-0 z-30 bg-slate-950/90 backdrop-blur-md border-t border-slate-800/80 safe-pb lg:hidden">
       <div className="max-w-md mx-auto flex items-center justify-around py-2 px-1">
         {NAV_ITEMS.map((item) => {
           const Icon = item.icon;

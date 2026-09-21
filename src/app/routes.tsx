@@ -18,6 +18,10 @@ export const router = createHashRouter([
     children: [
       {
         index: true,
+        element: <Navigate to="/learn/8" replace />
+      },
+      {
+        path: 'home',
         element: <HomePage />
       },
       {
