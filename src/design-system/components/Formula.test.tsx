@@ -22,4 +22,19 @@ describe('Formula component', () => {
     render(<Formula code="[[H2]]" />);
     expect(screen.getByText('H')).toBeInTheDocument();
   });
+
+  it('safely renders full Vietnamese text without dropping characters or diacritics', () => {
+    render(<Formula formula="Đun sôi nước bốc thành hơi nước" data-testid="vn-text" />);
+    const el = screen.getByTestId('vn-text');
+    expect(el.textContent).toBe('Đun sôi nước bốc thành hơi nước');
+  });
+
+  it('safely renders Vietnamese text with mixed chemical formula and numbers', () => {
+    const { container } = render(<Formula formula="Cho 100 ml dung dịch H2SO4 phản ứng với Fe" />);
+    const subs = container.querySelectorAll('sub');
+    expect(subs.length).toBe(2);
+    expect(subs[0].textContent).toBe('2');
+    expect(subs[1].textContent).toBe('4');
+    expect(container.textContent).toContain('Cho 100 ml dung dịch');
+  });
 });
