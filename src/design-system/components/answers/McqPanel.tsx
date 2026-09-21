@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { motion } from 'motion/react';
 import { Check, X } from 'lucide-react';
 import type { Verdict } from '@/engine/checkers/types';
@@ -30,6 +30,16 @@ export const McqPanel: React.FC<McqPanelProps> = ({
   disabled,
   verdict,
 }) => {
+  // Randomly shuffle options once per question so correct answer is not always first
+  const displayOptions = useMemo(() => {
+    const list = [...options];
+    for (let i = list.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [list[i], list[j]] = [list[j], list[i]];
+    }
+    return list;
+  }, [options]);
+
   const isChecked = !!verdict;
   const selectedSet = new Set(
     multi
@@ -57,11 +67,14 @@ export const McqPanel: React.FC<McqPanelProps> = ({
     }
   };
 
+  const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
+
   return (
     <div className="space-y-2.5">
-      {options.map((option, idx) => {
+      {displayOptions.map((option, idx) => {
         const isSelected = selectedSet.has(option.id);
         const correct = isCorrectOption(option.id);
+        const letter = LETTERS[idx] ?? `${idx + 1}`;
 
         let classes = '';
         let indicator: React.ReactNode = null;
@@ -87,7 +100,7 @@ export const McqPanel: React.FC<McqPanelProps> = ({
             classes = 'opacity-40 border-slate-800 bg-slate-950/50';
             indicator = (
               <div className="w-5 h-5 rounded-full border border-slate-700 text-[10px] text-slate-500 flex items-center justify-center font-bold">
-                {idx + 1}
+                {letter}
               </div>
             );
           }
@@ -104,8 +117,8 @@ export const McqPanel: React.FC<McqPanelProps> = ({
             classes =
               'bg-slate-900/90 border border-slate-800 shadow-[0_4px_0_0_#1e293b] hover:border-slate-700 active:translate-y-1 active:shadow-[0_1px_0_0_#1e293b]';
             indicator = (
-              <div className="w-5 h-5 rounded-full border border-slate-700 text-[10px] text-slate-500 flex items-center justify-center font-bold">
-                {idx + 1}
+              <div className="w-5 h-5 rounded-full border border-slate-700 text-[10px] text-slate-400 flex items-center justify-center font-bold">
+                {letter}
               </div>
             );
           }
