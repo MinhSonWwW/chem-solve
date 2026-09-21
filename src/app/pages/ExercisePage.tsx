@@ -709,7 +709,7 @@ const AnswerRenderer: React.FC<AnswerRendererProps> = ({
         <SortPanel
           buckets={answer.buckets}
           items={answer.items}
-          value={userInput as Record<string, string>}
+          value={(userInput as Record<string, string>) || {}}
           onChange={(v) => onInputChange(v)}
           disabled={disabled}
           verdict={verdict}
@@ -721,7 +721,7 @@ const AnswerRenderer: React.FC<AnswerRendererProps> = ({
         <FormulaBuilderPanel
           tiles={answer.tiles}
           accepted={answer.accepted}
-          value={userInput as string}
+          value={(userInput as string) || ''}
           onChange={(v) => onInputChange(v)}
           disabled={disabled}
           verdict={verdict}

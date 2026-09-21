@@ -40,11 +40,12 @@ export const MatchGrid: React.FC<MatchGridProps> = ({
     });
   }, [pairs]);
 
-  const pairedLeft = new Set(value.map((v) => v.left));
-  const pairedRight = new Set(value.map((v) => v.right));
+  const safeValue = value || [];
+  const pairedLeft = new Set(safeValue.map((v) => v.left));
+  const pairedRight = new Set(safeValue.map((v) => v.right));
 
-  const getPairForLeft = (left: string) => value.find((v) => v.left === left);
-  const getPairForRight = (right: string) => value.find((v) => v.right === right);
+  const getPairForLeft = (left: string) => safeValue.find((v) => v.left === left);
+  const getPairForRight = (right: string) => safeValue.find((v) => v.right === right);
 
   const isCorrectPair = (left: string, right: string) => {
     return pairs.some((p) => p.left === left && p.right === right);
@@ -54,7 +55,7 @@ export const MatchGrid: React.FC<MatchGridProps> = ({
     if (disabled) return;
     // If already paired, unpair it
     if (pairedLeft.has(left)) {
-      onChange(value.filter((v) => v.left !== left));
+      onChange(safeValue.filter((v) => v.left !== left));
       return;
     }
     setSelectedLeft(left);
@@ -63,7 +64,7 @@ export const MatchGrid: React.FC<MatchGridProps> = ({
   const handleRightTap = (right: string) => {
     if (disabled || !selectedLeft) return;
     // If already paired, unpair the right
-    const newValue = value.filter((v) => v.right !== right && v.left !== selectedLeft);
+    const newValue = safeValue.filter((v) => v.right !== right && v.left !== selectedLeft);
     newValue.push({ left: selectedLeft, right });
     onChange(newValue);
     setSelectedLeft(null);

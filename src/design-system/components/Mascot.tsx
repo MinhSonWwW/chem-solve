@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { cn } from '@/lib/utils';
+import { cn, assetUrl } from '@/lib/utils';
 import { useReducedMotion } from '@/design-system/motion/useReducedMotion';
 import { sound } from '@/lib/audio';
 
@@ -111,12 +111,13 @@ export const Mascot: React.FC<MascotProps> = ({
     }
   };
 
-  const mascotSrc =
+  const rawSrc =
     state === 'correct' || state === 'celebrating'
       ? '/assets/mascot/atom-correct.png'
       : state === 'wrong'
       ? '/assets/mascot/atom-wrong.png'
       : '/assets/mascot/atom-idle.png';
+  const mascotSrc = assetUrl(rawSrc);
 
   return (
     <div

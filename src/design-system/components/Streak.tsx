@@ -1,6 +1,6 @@
 import React from 'react';
 import { Flame } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { cn, assetUrl } from '@/lib/utils';
 
 export interface StreakProps extends React.HTMLAttributes<HTMLDivElement> {
   days: number;
@@ -16,7 +16,7 @@ export const Streak: React.FC<StreakProps> = ({ days, className, ...props }) => 
       {...props}
     >
       <img
-        src="/assets/icons/streak-flame.png"
+        src={assetUrl('/assets/icons/streak-flame.png')}
         alt="Streak"
         className="w-4 h-4 object-contain shrink-0"
         onError={(e) => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Heart as HeartIcon } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { cn, assetUrl } from '@/lib/utils';
 
 export interface HeartProps extends React.HTMLAttributes<HTMLDivElement> {
   count: number;
@@ -17,7 +17,7 @@ export const Heart: React.FC<HeartProps> = ({ count, max = 5, className, ...prop
       {...props}
     >
       <img
-        src="/assets/icons/heart-flask.png"
+        src={assetUrl('/assets/icons/heart-flask.png')}
         alt="Tim"
         className="w-4 h-4 object-contain animate-pulse shrink-0"
         onError={(e) => {

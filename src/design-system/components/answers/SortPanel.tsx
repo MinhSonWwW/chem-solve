@@ -16,11 +16,12 @@ export interface SortPanelProps {
 export const SortPanel: React.FC<SortPanelProps> = ({
   buckets,
   items,
-  value = {},
+  value,
   onChange,
   disabled = false,
   verdict: _verdict,
 }) => {
+  const safeValue = value ?? {};
   const [selectedItemId, setSelectedItemId] = useState<string | null>(null);
 
   const handleSelectItem = (id: string) => {
@@ -32,7 +33,7 @@ export const SortPanel: React.FC<SortPanelProps> = ({
   const handleAssignToBucket = (bucketId: string) => {
     if (disabled || !selectedItemId) return;
     sound.playClick();
-    const next = { ...value, [selectedItemId]: bucketId };
+    const next = { ...safeValue, [selectedItemId]: bucketId };
     onChange(next);
     setSelectedItemId(null);
   };
@@ -41,12 +42,12 @@ export const SortPanel: React.FC<SortPanelProps> = ({
     e.stopPropagation();
     if (disabled) return;
     sound.playClick();
-    const next = { ...value };
+    const next = { ...safeValue };
     delete next[itemId];
     onChange(next);
   };
 
-  const unassignedItems = items.filter((it) => !value[it.id]);
+  const unassignedItems = items.filter((it) => !safeValue[it.id]);
 
   return (
     <div className="w-full space-y-4">
@@ -93,7 +94,7 @@ export const SortPanel: React.FC<SortPanelProps> = ({
       {/* Buckets Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {buckets.map((bucket) => {
-          const bucketItems = items.filter((it) => value[it.id] === bucket.id);
+          const bucketItems = items.filter((it) => safeValue[it.id] === bucket.id);
           const isTarget = selectedItemId !== null;
 
           return (

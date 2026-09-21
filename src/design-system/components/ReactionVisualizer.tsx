@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
-import { cn } from '@/lib/utils';
+import { cn, assetUrl } from '@/lib/utils';
 import { useReducedMotion } from '@/design-system/motion/useReducedMotion';
 import { sound } from '@/lib/audio';
 
@@ -230,13 +230,13 @@ export const ReactionVisualizer: React.FC<ReactionVisualizerProps> = ({
 
   const vfxSticker =
     type === 'gas'
-      ? '/assets/vfx/vfx-gas.png'
+      ? assetUrl('/assets/vfx/vfx-gas.png')
       : type === 'precipitate'
-      ? '/assets/vfx/vfx-precipitate.png'
+      ? assetUrl('/assets/vfx/vfx-precipitate.png')
       : type === 'indicator'
       ? resolvedColor === '#ef4444' || resolvedColor === '#f43f5e'
-        ? '/assets/vfx/litmus-red.png'
-        : '/assets/vfx/litmus-blue.png'
+        ? assetUrl('/assets/vfx/litmus-red.png')
+        : assetUrl('/assets/vfx/litmus-blue.png')
       : null;
 
   return (

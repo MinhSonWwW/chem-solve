@@ -5,6 +5,7 @@ import { Button } from './Button';
 import { Mascot } from './Mascot';
 import { GAMIFICATION } from '@/config/gamification';
 import { sound } from '@/lib/audio';
+import { assetUrl } from '@/lib/utils';
 
 export interface SessionCompleteScreenProps {
   totalXp: number;
@@ -29,25 +30,25 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
 
   const stats = [
     {
-      icon: <img src="/assets/icons/xp-potion.png" alt="XP" className="w-5 h-5 object-contain" />,
+      icon: <img src={assetUrl('/assets/icons/xp-potion.png')} alt="XP" className="w-5 h-5 object-contain" />,
       label: 'Kinh nghiệm',
       value: `+${totalXp} XP`,
       highlight: 'text-amber-300',
     },
     {
-      icon: <img src="/assets/roadmap/trophy-gold.png" alt="Cúp" className="w-5 h-5 object-contain" />,
+      icon: <img src={assetUrl('/assets/roadmap/trophy-gold.png')} alt="Cúp" className="w-5 h-5 object-contain" />,
       label: 'Chính xác',
       value: `${accuracyPercent}%`,
       highlight: accuracyPercent >= 80 ? 'text-emerald-300' : 'text-amber-300',
     },
     {
-      icon: <img src="/assets/icons/heart-flask.png" alt="Tim" className="w-5 h-5 object-contain" />,
+      icon: <img src={assetUrl('/assets/icons/heart-flask.png')} alt="Tim" className="w-5 h-5 object-contain" />,
       label: 'Kết quả',
       value: `${correctCount}/${totalQuestions}`,
       highlight: 'text-slate-200',
     },
     {
-      icon: <img src="/assets/icons/streak-flame.png" alt="Streak" className="w-5 h-5 object-contain" />,
+      icon: <img src={assetUrl('/assets/icons/streak-flame.png')} alt="Streak" className="w-5 h-5 object-contain" />,
       label: 'Chuỗi ngày',
       value: `${streak} ngày`,
       highlight: 'text-cyan-300',
@@ -63,7 +64,7 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
       {/* Background Confetti Animation */}
       <div className="absolute inset-0 pointer-events-none flex items-center justify-center overflow-hidden">
         <video
-          src="/assets/animations/confetti.mp4"
+          src={assetUrl('/assets/animations/confetti.mp4')}
           autoPlay
           muted
           playsInline

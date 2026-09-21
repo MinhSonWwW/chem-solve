@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Star, Play } from 'lucide-react';
 import { sound } from '@/lib/audio';
+import { assetUrl } from '@/lib/utils';
 
 export interface PathNode {
   id: string;
@@ -193,20 +194,20 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
                 >
                   {isChest ? (
                     <img
-                      src="/assets/roadmap/trophy-gold.png"
+                      src={assetUrl('/assets/roadmap/trophy-gold.png')}
                       alt="Phần thưởng"
                       className="w-[68px] h-[68px] object-contain drop-shadow-md"
                     />
                   ) : isCompleted ? (
                     <img
-                      src="/assets/roadmap/node-completed.png"
+                      src={assetUrl('/assets/roadmap/node-completed.png')}
                       alt="Hoàn thành"
                       className="w-[72px] h-[72px] object-contain"
                     />
                   ) : isActive ? (
                     <div className="relative flex items-center justify-center w-full h-full">
                       <img
-                        src="/assets/roadmap/node-active.png"
+                        src={assetUrl('/assets/roadmap/node-active.png')}
                         alt="Đang học"
                         className="w-[72px] h-[72px] object-contain"
                       />
@@ -219,7 +220,7 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
                     </div>
                   ) : (
                     <img
-                      src="/assets/roadmap/node-locked.png"
+                      src={assetUrl('/assets/roadmap/node-locked.png')}
                       alt="Chưa mở khóa"
                       className="w-[70px] h-[70px] object-contain opacity-85 hover:opacity-100 transition-opacity"
                     />

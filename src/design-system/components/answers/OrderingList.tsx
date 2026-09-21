@@ -27,7 +27,8 @@ export const OrderingList: React.FC<OrderingListProps> = ({
   const isChecked = !!verdict;
 
   // Use value if populated, otherwise use items (initially shuffled)
-  const orderedItems = value.length > 0 ? value : _items;
+  const safeValue = value || [];
+  const orderedItems = safeValue.length > 0 ? safeValue : _items;
 
   const moveUp = (idx: number) => {
     if (disabled || idx <= 0) return;

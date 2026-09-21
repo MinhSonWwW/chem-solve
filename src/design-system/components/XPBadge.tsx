@@ -1,6 +1,6 @@
 import React from 'react';
 import { Sparkles } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { cn, assetUrl } from '@/lib/utils';
 
 export interface XPBadgeProps extends React.HTMLAttributes<HTMLDivElement> {
   amount: number;
@@ -16,7 +16,7 @@ export const XPBadge: React.FC<XPBadgeProps> = ({ amount, className, ...props })
       {...props}
     >
       <img
-        src="/assets/icons/xp-potion.png"
+        src={assetUrl('/assets/icons/xp-potion.png')}
         alt="XP"
         className="w-4 h-4 object-contain shrink-0"
         onError={(e) => {

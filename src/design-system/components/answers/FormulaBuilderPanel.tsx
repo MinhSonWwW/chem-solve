@@ -15,25 +15,27 @@ export interface FormulaBuilderPanelProps {
 
 export const FormulaBuilderPanel: React.FC<FormulaBuilderPanelProps> = ({
   tiles,
-  value = '',
+  value,
   onChange,
   disabled = false,
   verdict,
 }) => {
+  const safeValue = value || '';
+
   const handleAddTile = (tile: string) => {
     if (disabled) return;
     sound.playClick();
-    onChange(value + tile);
+    onChange(safeValue + tile);
   };
 
   const handleBackspace = () => {
-    if (disabled || !value) return;
+    if (disabled || !safeValue) return;
     sound.playClick();
-    onChange(value.slice(0, -1));
+    onChange(safeValue.slice(0, -1));
   };
 
   const handleClear = () => {
-    if (disabled || !value) return;
+    if (disabled || !safeValue) return;
     sound.playClick();
     onChange('');
   };
