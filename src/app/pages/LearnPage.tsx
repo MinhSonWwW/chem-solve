@@ -66,8 +66,10 @@ export const LearnPage: React.FC = () => {
             bestAccuracy: comp?.accuracy,
           });
 
-          // Next node is only unlocked if this one was completed
-          isPreviousNodeDone = isCompleted;
+          // Next node is only unlocked if this one was completed (do not let unready lessons block progression)
+          if (lesson.ready) {
+            isPreviousNodeDone = isCompleted;
+          }
         });
       });
 

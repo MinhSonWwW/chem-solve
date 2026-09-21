@@ -103,7 +103,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             lessonNumber: 2,
             title: 'Phản ứng hóa học',
             subtitle: 'Hiện tượng phản ứng và sự biến đổi chất',
-            ready: false,
+            ready: true,
             nodes: [
               { id: 'g8-b02-n01', nodeIndex: 1, title: 'Dấu hiệu có phản ứng xảy ra', description: '6 câu hỏi', type: 'lesson' },
             ],

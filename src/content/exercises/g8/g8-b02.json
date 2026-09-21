@@ -1,0 +1,194 @@
+[
+  {
+    "id": "g8-b02-mcq-001",
+    "lessonId": "g8-b02",
+    "skillIds": ["chemical-change"],
+    "difficulty": 1,
+    "prompt": "Hiện tượng nào sau đây là biến đổi hóa học?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Cồn để trong lọ mở nắp lâu ngày bị bay hơi bớt" },
+        { "id": "b", "label": "Đốt cháy que đóm tạo thành than đen và khí cacbonic" },
+        { "id": "c", "label": "Hòa tan đường vào cốc nước được dung dịch nước đường" },
+        { "id": "d", "label": "Nước đá tan chảy thành nước lỏng ở nhiệt độ phòng" }
+      ],
+      "correctId": "b"
+    },
+    "hints": [
+      { "level": 1, "text": "Biến đổi hóa học là quá trình có sự biến đổi từ chất này thành chất khác (tạo chất mới)." },
+      { "level": 2, "text": "Khi que đóm cháy, gỗ đã bị oxi hóa tạo thành than và khí mới, không còn giữ tính chất ban đầu." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích câu hỏi", "body": "Xác định hiện tượng nào có sự tạo thành chất mới." },
+      { "kind": "knowledge", "title": "Phân biệt biến đổi", "body": "Biến đổi vật lý: chất chỉ đổi thể hoặc hình dạng, không sinh chất mới. Biến đổi hóa học: chất biến đổi thành chất khác." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đốt cháy que đóm tạo thành than và khí mới là **biến đổi hóa học**." }
+    ],
+    "finalSolution": "**Đốt cháy que đóm** là biến đổi hóa học vì có sự tạo thành than và khí cacbonic mới.",
+    "commonMistakes": [
+      { "id": "confused-evaporation", "message": "Hiện tượng bay hơi hay hòa tan chỉ là biến đổi trạng thái vật lý, không tạo chất mới." }
+    ]
+  },
+  {
+    "id": "g8-b02-sort-002",
+    "lessonId": "g8-b02",
+    "skillIds": ["chemical-change"],
+    "difficulty": 1,
+    "prompt": "Hãy phân loại các hiện tượng sau vào nhóm Biến đổi vật lý hoặc Biến đổi hóa học.",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "vat-ly", "label": "Biến đổi vật lý" },
+        { "id": "hoa-hoc", "label": "Biến đổi hóa học" }
+      ],
+      "items": [
+        { "id": "i1", "label": "Bẻ cong hoặc bẻ đôi thanh sắt", "bucketId": "vat-ly" },
+        { "id": "i2", "label": "Đinh sắt để lâu trong không khí ẩm bị gỉ sét", "bucketId": "hoa-hoc" },
+        { "id": "i3", "label": "Đun sôi nước bốc thành hơi nước", "bucketId": "vat-ly" },
+        { "id": "i4", "label": "Thức ăn để lâu ngày bị ôi thiu", "bucketId": "hoa-hoc" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Nếu chỉ thay đổi hình dạng hay trạng thái thể mà chất vẫn giữ nguyên thì là biến đổi vật lý." },
+      { "level": 2, "text": "Gỉ sắt và thức ăn ôi thiu đều sinh ra những chất hoàn toàn mới." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xét từng hiện tượng", "body": "Kiểm tra xem hiện tượng có sinh ra chất mới hay không." },
+      { "kind": "knowledge", "title": "Quy tắc", "body": "Bẻ cong sắt, nước sôi bốc hơi: chỉ đổi hình dạng, thể trạng -> vật lý. Sắt gỉ, thức ăn ôi thiu: tạo chất mới -> hóa học." },
+      { "kind": "answer", "title": "Kết luận", "body": "Vật lý: bẻ cong sắt, nước bốc hơi. Hóa học: đinh sắt bị gỉ sét, thức ăn ôi thiu." }
+    ],
+    "finalSolution": "Biến đổi vật lý: **Bẻ cong thanh sắt, Nước bốc hơi**. Biến đổi hóa học: **Đinh sắt bị gỉ, Thức ăn ôi thiu**.",
+    "commonMistakes": [
+      { "id": "rust-is-physical", "message": "Gỉ sắt (chứa Fe2O3.nH2O) là chất mới màu nâu đỏ sinh ra do sắt tác dụng với oxi và hơi nước, đây là biến đổi hóa học." }
+    ]
+  },
+  {
+    "id": "g8-b02-mcq-003",
+    "lessonId": "g8-b02",
+    "skillIds": ["chemical-change"],
+    "difficulty": 1,
+    "prompt": "Dấu hiệu rõ ràng nhất để khẳng định một phản ứng hóa học đã xảy ra là gì?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Có sự tạo thành một hoặc nhiều chất mới" },
+        { "id": "b", "label": "Kích thước của vật thể bị thu nhỏ lại" },
+        { "id": "c", "label": "Chất rắn được nghiền nhỏ thành bột mịn" },
+        { "id": "d", "label": "Chất lỏng chuyển thể sang chất rắn" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Bản chất của phản ứng hóa học là sự biến đổi từ chất này thành chất khác." },
+      { "level": 2, "text": "Dù có kèm theo hiện tượng nhiệt, màu sắc, khí hay kết tủa thì cốt lõi nhất vẫn là có chất mới tạo thành." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích khái niệm", "body": "Phản ứng hóa học là quá trình biến đổi từ chất này thành chất khác." },
+      { "kind": "knowledge", "title": "Dấu hiệu bản chất", "body": "Các dấu hiệu như đổi màu, kết tủa, khí thoát ra hay tỏa nhiệt đều bắt nguồn từ sự hình thành chất mới có tính chất khác biệt." },
+      { "kind": "answer", "title": "Kết luận", "body": "Dấu hiệu chắc chắn nhất là **có sự tạo thành một hoặc nhiều chất mới**." }
+    ],
+    "finalSolution": "Dấu hiệu chắc chắn nhất của phản ứng hóa học là **có sự tạo thành chất mới**.",
+    "commonMistakes": [
+      { "id": "crushed-powder", "message": "Nghiền nhỏ chất thành bột chỉ là thay đổi kích thước hạt (biến đổi vật lý), không làm thay đổi bản chất của chất." }
+    ]
+  },
+  {
+    "id": "g8-b02-match-004",
+    "lessonId": "g8-b02",
+    "skillIds": ["chemical-change"],
+    "difficulty": 2,
+    "prompt": "Ghép nối từng thí nghiệm thực tế với dấu hiệu nhận biết phản ứng xảy ra tương ứng:",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Cho giấm ăn tác dụng với vỏ trứng", "right": "Sủi bọt khí (sinh khí CO2)" },
+        { "left": "Sục khí cacbonic vào nước vôi trong", "right": "Xuất hiện vẩn đục màu trắng (kết tủa)" },
+        { "left": "Đốt que diêm trong không khí", "right": "Tỏa nhiệt và phát sáng rực rỡ" },
+        { "left": "Cho đinh sắt vào dung dịch CuSO4", "right": "Đổi màu dung dịch và có lớp đồng bám ngoài" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Vỏ trứng chứa canxi cacbonat (CaCO3), khi gặp axit axetic trong giấm sẽ sủi bọt khí." },
+      { "level": 2, "text": "Khí CO2 phản ứng với Ca(OH)2 tạo CaCO3 kết tủa trắng làm đục nước vôi." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Quan sát hiện tượng", "body": "Mỗi phản ứng hóa học thường đi kèm các hiện tượng quan sát được: khí bay ra, kết tủa lắng xuống, đổi màu hoặc phát quang/nhiệt." },
+      { "kind": "knowledge", "title": "Bản chất từng phản ứng", "body": "Vỏ trứng + giấm tạo CO2 bay lên; CO2 + nước vôi trong tạo kết tủa trắng CaCO3; que diêm cháy tỏa nhiệt phát sáng; sắt đẩy đồng tạo Cu bám ngoài và làm nhạt màu dung dịch xanh." },
+      { "kind": "answer", "title": "Kết luận", "body": "Nối đúng các cặp thí nghiệm và hiện tượng đặc trưng." }
+    ],
+    "finalSolution": "Các cặp ghép chính xác thể hiện dấu hiệu nhận biết phản ứng: sủi bọt khí, vẩn đục kết tủa, phát quang/nhiệt và đổi màu dung dịch.",
+    "commonMistakes": [
+      { "id": "swapped-gas-and-precipitate", "message": "Chú ý phân biệt hiện tượng sủi bọt khí (chất khí thoát ra) với xuất hiện vẩn đục (chất kết tủa không tan)." }
+    ]
+  },
+  {
+    "id": "g8-b02-tf-005",
+    "lessonId": "g8-b02",
+    "skillIds": ["chemical-change"],
+    "difficulty": 2,
+    "prompt": "Đánh giá tính Đúng/Sai của các nhận định sau về phản ứng hóa học:",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "s1",
+          "text": "Phản ứng đốt cháy cồn hoặc khí gas giải phóng năng lượng nhiệt ra môi trường là phản ứng tỏa nhiệt.",
+          "correct": true
+        },
+        {
+          "id": "s2",
+          "text": "Trong một phản ứng hóa học, các nguyên tử bị biến đổi thành các nguyên tử của nguyên tố khác.",
+          "correct": false
+        },
+        {
+          "id": "s3",
+          "text": "Quá trình nung đá vôi cần được cung cấp nhiệt liên tục, nếu ngừng đun phản ứng sẽ dừng lại, đây là phản ứng thu nhiệt.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Trong phản ứng hóa học thông thường, chỉ có liên kết giữa các nguyên tử thay đổi; số lượng nguyên tử mỗi nguyên tố được bảo toàn." },
+      { "level": 2, "text": "Phản ứng tỏa nhiệt giải phóng nhiệt năng ra môi trường; phản ứng thu nhiệt hấp thụ năng lượng nhiệt từ môi trường." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xét từng nhận định", "body": "Kiểm tra bản chất nguyên tử trong phản ứng và khái niệm phản ứng tỏa nhiệt / thu nhiệt." },
+      { "kind": "knowledge", "title": "Bản chất phản ứng", "body": "Nguyên tử của nguyên tố này KHÔNG THỂ tự biến đổi thành nguyên tử của nguyên tố khác trong phản ứng hóa học thông thường. Chỉ có liên kết giữa chúng biến đổi." },
+      { "kind": "answer", "title": "Kết luận", "body": "Câu 1: Đúng (tỏa nhiệt). Câu 2: Sai (nguyên tử được bảo toàn). Câu 3: Đúng (thu nhiệt)." }
+    ],
+    "finalSolution": "Câu 1: **Đúng** · Câu 2: **Sai** (nguyên tử không tự biến đổi) · Câu 3: **Đúng** (phản ứng thu nhiệt).",
+    "commonMistakes": [
+      { "id": "atoms-change", "message": "Nhầm lẫn rằng nguyên tử biến thành nguyên tử khác. Thực tế chỉ có liên kết thay đổi để tạo phân tử mới." }
+    ]
+  },
+  {
+    "id": "g8-b02-mcq-006",
+    "lessonId": "g8-b02",
+    "skillIds": ["chemical-change"],
+    "difficulty": 1,
+    "prompt": "Cho phản ứng hóa học biểu diễn bằng chữ: Sắt + Khí oxi -> Oxit sắt từ. Các chất tham gia phản ứng là:",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Sắt và Khí oxi" },
+        { "id": "b", "label": "Chỉ có Sắt" },
+        { "id": "c", "label": "Oxit sắt từ" },
+        { "id": "d", "label": "Khí oxi và Oxit sắt từ" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Trong phương trình chữ: Chất tham gia -> Chất sản phẩm (sản phẩm)." },
+      { "level": 2, "text": "Các chất ở bên trái mũi tên là chất tham gia phản ứng; chất ở bên phải mũi tên là chất sản phẩm." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đọc phương trình chữ", "body": "Sắt + Khí oxi -> Oxit sắt từ." },
+      { "kind": "knowledge", "title": "Quy ước phương trình chữ", "body": "Vế trái mũi tên là chất phản ứng (chất tham gia), vế phải mũi tên là sản phẩm tạo thành." },
+      { "kind": "answer", "title": "Kết luận", "body": "Chất tham gia phản ứng gồm **Sắt và Khí oxi**." }
+    ],
+    "finalSolution": "Chất tham gia phản ứng là các chất ở bên trái mũi tên: **Sắt và Khí oxi**.",
+    "commonMistakes": [
+      { "id": "confused-reactants-products", "message": "Oxit sắt từ là chất mới sinh ra (sản phẩm), không phải chất tham gia." }
+    ]
+  }
+]
