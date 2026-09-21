@@ -213,5 +213,36 @@ describe('engine/sessionReducer', () => {
     expect(state.questions[1].isReview).toBe(true);
     expect(state.questions[1].status).toBe('unanswered');
   });
+
+  it('does not deduct hearts on wrong answer in practice mode', () => {
+    let state = createInitialSession(SAMPLE_EXERCISES, 2, true);
+    expect(state.hearts).toBe(2);
+    expect(state.isPractice).toBe(true);
+
+    state = sessionReducer(state, { type: 'SET_INPUT', payload: 'wrong' });
+    state = sessionReducer(state, { type: 'START_CHECK' });
+    state = sessionReducer(state, {
+      type: 'EVALUATE_RESULT',
+      payload: { status: 'incorrect', reason: 'Sai kết quả' },
+    });
+
+    // In practice mode, hearts must remain 2 (not deducted)
+    expect(state.hearts).toBe(2);
+  });
+
+  it('recovers 1 heart up to 5 on correct answer in practice mode', () => {
+    let state = createInitialSession(SAMPLE_EXERCISES, 1, true);
+    expect(state.hearts).toBe(1);
+
+    state = sessionReducer(state, { type: 'SET_INPUT', payload: '4.96 L' });
+    state = sessionReducer(state, { type: 'START_CHECK' });
+    state = sessionReducer(state, {
+      type: 'EVALUATE_RESULT',
+      payload: { status: 'correct' },
+    });
+
+    // In practice mode, correct answer recovers +1 heart
+    expect(state.hearts).toBe(2);
+  });
 });
 

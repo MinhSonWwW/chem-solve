@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback, useMemo } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Sparkles, Loader2, FlaskConical } from 'lucide-react';
+import { X, Sparkles, Loader2, FlaskConical, Heart as HeartIcon } from 'lucide-react';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import {
   Button,
@@ -29,7 +29,7 @@ import {
 } from '@/design-system';
 import { sound } from '@/lib/audio';
 import { loadExercises } from '@/content/contentLoader';
-import { loadSession } from '@/engine/progress';
+import { loadSession, clearSession } from '@/engine/progress';
 import { GAMIFICATION } from '@/config/gamification';
 import type { Exercise } from '@/content/schema/exercise';
 import type { Verdict } from '@/engine/checkers/types';
@@ -39,6 +39,9 @@ type LoadingState = 'loading' | 'ready' | 'error';
 export const ExercisePage: React.FC = () => {
   const navigate = useNavigate();
   const { lessonId = 'g8-b03', nodeId = 'n01' } = useParams();
+  const [searchParams] = useSearchParams();
+  const isPracticeMode = searchParams.get('mode') === 'practice';
+  const gradeNumber = lessonId.match(/^g(\d)-/)?.[1] ?? '8';
 
   const {
     hearts: _hearts,
@@ -55,6 +58,8 @@ export const ExercisePage: React.FC = () => {
   const [loadingState, setLoadingState] = useState<LoadingState>('loading');
   const [errorMsg, setErrorMsg] = useState('');
   const [showXpFly, setShowXpFly] = useState(false);
+  const [showHeartFly, setShowHeartFly] = useState(false);
+  const [recoveredHeartsCount, setRecoveredHeartsCount] = useState(0);
   const [showChemKeyboard, setShowChemKeyboard] = useState(false);
   const [showQuitModal, setShowQuitModal] = useState(false);
   const [showOutOfHeartsModal, setShowOutOfHeartsModal] = useState(false);
@@ -75,9 +80,20 @@ export const ExercisePage: React.FC = () => {
       try {
         setLoadingState('loading');
 
+        // If user has 0 hearts and is not in practice mode, they cannot start a lesson
+        const currentHearts = useUserStore.getState().hearts;
+        if (!isPracticeMode && currentHearts <= 0) {
+          setShowOutOfHeartsModal(true);
+          setLoadingState('ready');
+          return;
+        }
+
         // Try to resume saved session first
         const saved = await loadSession(lessonId, nodeId);
         if (saved && !saved.sessionState.isSessionComplete) {
+          if (isPracticeMode) {
+            saved.sessionState.isPractice = true;
+          }
           resumeSession(lessonId, nodeId, saved.sessionState);
           if (!cancelled) setLoadingState('ready');
           return;
@@ -96,7 +112,7 @@ export const ExercisePage: React.FC = () => {
           [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
         }
 
-        startSession(lessonId, nodeId, shuffled);
+        startSession(lessonId, nodeId, shuffled, undefined, isPracticeMode);
         if (!cancelled) setLoadingState('ready');
       } catch (err) {
         if (!cancelled) {
@@ -121,10 +137,11 @@ export const ExercisePage: React.FC = () => {
   const isCompleted = currentQ?.isCompleted ?? false;
 
   const isFeedbackVisible =
-    status === 'correct' ||
-    status === 'wrong' ||
-    status === 'partial' ||
-    status === 'revealed';
+    !showOutOfHeartsModal &&
+    (status === 'correct' ||
+      status === 'wrong' ||
+      status === 'partial' ||
+      status === 'revealed');
 
   const feedbackStatus = isFeedbackVisible
     ? (status as 'correct' | 'wrong' | 'partial' | 'revealed')
@@ -154,16 +171,25 @@ export const ExercisePage: React.FC = () => {
         setShowXpFly(true);
         setTimeout(() => setShowXpFly(false), 1200);
 
+        if (isPracticeMode) {
+          setShowHeartFly(true);
+          setRecoveredHeartsCount((prev) => prev + 1);
+          setTimeout(() => setShowHeartFly(false), 1500);
+        }
+
         if (updated.comboStreak >= 2) {
           setComboCount(updated.comboStreak);
           setShowComboBanner(true);
           setTimeout(() => setShowComboBanner(false), 2400);
         }
-      } else if (updated.hearts <= 0) {
-        setTimeout(() => setShowOutOfHeartsModal(true), 600);
+      } else if (!isPracticeMode && updated.hearts <= 0) {
+        // Failed session! Clear in-progress session so it doesn't linger
+        clearSession(lessonId, nodeId).catch(console.error);
+        sound.playWrong();
+        setShowOutOfHeartsModal(true);
       }
     }
-  }, [currentQ, submitAnswer]);
+  }, [currentQ, submitAnswer, isPracticeMode, lessonId, nodeId]);
 
   const handleNext = useCallback(async () => {
     sound.playClick();
@@ -269,7 +295,15 @@ export const ExercisePage: React.FC = () => {
           sessionState?.questions.filter((q) => q.status === 'correct').length ?? 0
         }
         streak={streak}
-        onContinue={() => navigate('/learn/8')}
+        isPractice={isPracticeMode}
+        recoveredHearts={recoveredHeartsCount}
+        onContinue={() => {
+          if (isPracticeMode) {
+            navigate('/practice');
+          } else {
+            navigate(`/learn/${gradeNumber}`);
+          }
+        }}
       />
     );
   }
@@ -337,6 +371,14 @@ export const ExercisePage: React.FC = () => {
           <Progress value={progressPercent} />
         </div>
 
+        {/* Practice Mode Badge */}
+        {isPracticeMode && (
+          <div className="hidden sm:inline-flex items-center gap-1.5 text-[11px] font-black uppercase text-amber-300 bg-amber-950/70 border border-amber-500/50 px-2.5 py-1 rounded-xl shadow-sm">
+            <HeartIcon className="w-3.5 h-3.5 fill-rose-500 text-rose-500" />
+            <span>Luyện tập · Hồi tim</span>
+          </div>
+        )}
+
         {/* Chem Reference Button */}
         <button
           onClick={() => {
@@ -366,6 +408,24 @@ export const ExercisePage: React.FC = () => {
             <div className="bg-gradient-to-r from-amber-400 to-yellow-500 text-slate-950 font-black px-4 py-2 rounded-2xl shadow-[0_8px_20px_rgba(245,158,11,0.5)] border-2 border-amber-200 flex items-center gap-1.5 text-base">
               <Sparkles className="w-5 h-5 fill-slate-950 text-slate-950" />
               <span>+{currentQ.earnedXp} KN!</span>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Floating Heart popup in Practice mode */}
+      <AnimatePresence>
+        {showHeartFly && (
+          <motion.div
+            initial={{ opacity: 0, y: 30, scale: 0.6 }}
+            animate={{ opacity: 1, y: -40, scale: 1.2 }}
+            exit={{ opacity: 0, scale: 0.8 }}
+            transition={{ duration: 0.6, type: 'spring', stiffness: 300 }}
+            className="absolute top-40 left-1/2 -translate-x-1/2 z-50 pointer-events-none"
+          >
+            <div className="bg-gradient-to-r from-rose-500 to-pink-600 text-white font-black px-4 py-2 rounded-2xl shadow-[0_8px_20px_rgba(244,63,94,0.5)] border-2 border-rose-300 flex items-center gap-1.5 text-base">
+              <HeartIcon className="w-5 h-5 fill-white text-white animate-pulse" />
+              <span>+1 Tim hồi phục!</span>
             </div>
           </motion.div>
         )}
@@ -533,16 +593,19 @@ export const ExercisePage: React.FC = () => {
       <QuitModal
         isOpen={showQuitModal}
         onKeepLearning={() => setShowQuitModal(false)}
-        onQuit={() => navigate('/learn/8')}
+        onQuit={() => navigate(isPracticeMode ? '/practice' : `/learn/${gradeNumber}`)}
       />
 
       <OutOfHeartsModal
         isOpen={showOutOfHeartsModal}
-        onRefillHearts={() => {
-          dispatch({ type: 'REFILL_HEARTS' });
+        onGoToPractice={() => {
           setShowOutOfHeartsModal(false);
+          navigate('/practice');
         }}
-        onQuit={() => navigate('/learn/8')}
+        onQuit={() => {
+          setShowOutOfHeartsModal(false);
+          navigate(`/learn/${gradeNumber}`);
+        }}
       />
 
       <QuickReferenceDrawer

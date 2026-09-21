@@ -31,6 +31,7 @@ export interface SessionState {
   comboStreak: number; // consecutive correct answers
   totalXpEarned: number;
   isSessionComplete: boolean;
+  isPractice?: boolean;
 }
 
 export type SessionAction =

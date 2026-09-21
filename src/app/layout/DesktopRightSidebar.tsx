@@ -20,7 +20,18 @@ export const DesktopRightSidebar: React.FC = () => {
       <div className="flex items-center justify-between p-2 rounded-2xl bg-slate-900/80 border border-slate-800 shadow-sm">
         <Streak days={streak} />
         <XPBadge amount={xp} />
-        <Heart count={hearts} max={5} />
+        <div
+          onClick={() => {
+            if (hearts < 5) {
+              sound.playClick();
+              navigate('/practice');
+            }
+          }}
+          className={hearts < 5 ? 'cursor-pointer hover:scale-105 active:scale-95 transition-transform' : ''}
+          title={hearts < 5 ? `Đang có ${hearts}/5 tim. Bấm để vào Luyện tập hồi tim!` : 'Đang đầy tim (5/5)!'}
+        >
+          <Heart count={hearts} max={5} />
+        </div>
 
         <button
           onClick={() => {

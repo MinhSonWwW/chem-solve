@@ -1,19 +1,19 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Heart, Sparkles } from 'lucide-react';
+import { Heart, AlertTriangle } from 'lucide-react';
 import { Button } from './Button';
 import { Mascot } from './Mascot';
 import { sound } from '@/lib/audio';
 
 export interface OutOfHeartsModalProps {
   isOpen: boolean;
-  onRefillHearts: () => void;
+  onGoToPractice: () => void;
   onQuit: () => void;
 }
 
 export const OutOfHeartsModal: React.FC<OutOfHeartsModalProps> = ({
   isOpen,
-  onRefillHearts,
+  onGoToPractice,
   onQuit,
 }) => {
   if (!isOpen) return null;
@@ -37,41 +37,47 @@ export const OutOfHeartsModal: React.FC<OutOfHeartsModalProps> = ({
           transition={{ type: 'spring', stiffness: 350, damping: 25 }}
           className="relative w-full max-w-sm rounded-3xl bg-slate-900 border-2 border-rose-500/40 p-6 shadow-[0_0_50px_rgba(244,63,94,0.2)] text-center space-y-4 z-10"
         >
+          {/* Failure Alert Badge */}
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-500/20 border border-rose-500/40 text-[11px] font-black uppercase tracking-wider text-rose-300">
+            <AlertTriangle className="w-3.5 h-3.5 text-rose-400" />
+            <span>Thất bại chặng này</span>
+          </div>
+
           {/* Header Icon / Mascot */}
-          <div className="flex justify-center items-center gap-3 pt-2">
+          <div className="flex justify-center items-center gap-3 pt-1">
             <Mascot state="wrong" size="lg" />
             <motion.div
-              animate={{ scale: [1, 1.2, 1] }}
-              transition={{ repeat: Infinity, duration: 1.5 }}
-              className="w-12 h-12 rounded-2xl bg-rose-500/20 border border-rose-500/50 flex items-center justify-center text-rose-400"
+              animate={{ scale: [1, 1.15, 1], rotate: [0, -4, 4, 0] }}
+              transition={{ repeat: Infinity, duration: 2 }}
+              className="w-12 h-12 rounded-2xl bg-rose-500/20 border border-rose-500/50 flex items-center justify-center text-rose-400 shadow-inner"
             >
-              <Heart className="w-7 h-7 fill-rose-500 stroke-rose-400" />
+              <Heart className="w-7 h-7 stroke-rose-400 opacity-60" />
             </motion.div>
           </div>
 
           <div className="space-y-1.5">
-            <h2 className="text-xl font-black text-rose-300 tracking-tight">
+            <h2 className="text-xl font-black text-white tracking-tight">
               Bạn đã hết tim rồi!
             </h2>
             <p className="text-xs text-slate-300 leading-relaxed font-medium">
-              Làm sai nhiều câu đã tiêu tốn hết số tim của bạn. Đừng nản chí! Hãy nạp đầy tim để tiếp tục thử thách nhé.
+              Bạn đã làm sai hết số tim và chưa hoàn thành chặng này. Để tiếp tục học, bạn cần sang mục <span className="text-amber-300 font-bold">Luyện tập</span> để giải bài tập — mỗi bài hoàn thành sẽ cộng lại <span className="text-rose-400 font-bold">+1 tim</span>!
             </p>
           </div>
 
           {/* Action Buttons */}
-          <div className="space-y-2 pt-2">
+          <div className="space-y-2.5 pt-2">
             <Button
               variant="primary"
               size="lg"
               fullWidth
-              className="flex items-center justify-center gap-2"
+              className="flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-black shadow-[0_4px_0_0_#b45309]"
               onClick={() => {
-                sound.playCorrect();
-                onRefillHearts();
+                sound.playClick();
+                onGoToPractice();
               }}
             >
-              <Sparkles className="w-5 h-5 fill-slate-950" />
-              <span>HỒI PHỤC TIM & HỌC TIẾP</span>
+              <Heart className="w-5 h-5 fill-rose-500 text-rose-500" />
+              <span>ĐẾN TRANG BÀI TẬP (+1 TIM)</span>
             </Button>
             <Button
               variant="ghost"
@@ -83,7 +89,7 @@ export const OutOfHeartsModal: React.FC<OutOfHeartsModalProps> = ({
                 onQuit();
               }}
             >
-              VỀ DANH SÁCH BÀI HỌC
+              VỀ BẢN ĐỒ HỌC
             </Button>
           </div>
         </motion.div>

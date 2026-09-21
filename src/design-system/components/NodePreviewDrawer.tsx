@@ -14,6 +14,8 @@ export interface NodePreviewDrawerProps {
   isCompleted: boolean;
   bestAccuracy?: number;
   prerequisiteTitle?: string;
+  hearts?: number;
+  onGoToPractice?: () => void;
   onClose: () => void;
   onStart: () => void;
 }
@@ -26,6 +28,8 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
   isCompleted,
   bestAccuracy,
   prerequisiteTitle,
+  hearts = 5,
+  onGoToPractice,
   onClose,
   onStart,
 }) => {
@@ -93,7 +97,31 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
 
               {/* Action */}
               <div className="pt-2">
-                {isUnlocked ? (
+                {hearts <= 0 ? (
+                  <div className="space-y-2.5">
+                    <div className="p-3.5 rounded-2xl bg-rose-950/60 border border-rose-500/50 flex flex-col items-center justify-center gap-1.5 text-xs text-rose-200">
+                      <div className="flex items-center gap-1.5 text-rose-400 font-bold">
+                        <span>⚠️ Bạn đã hết tim (0/5)</span>
+                      </div>
+                      <p className="text-[11px] text-slate-300 font-normal">
+                        Hãy giải bài tập trong mục <span className="text-amber-300 font-bold">Luyện tập</span> để hồi phục tim trước khi bắt đầu bài mới nhé!
+                      </p>
+                    </div>
+                    <Button
+                      variant="primary"
+                      size="lg"
+                      fullWidth
+                      className="flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-black shadow-[0_4px_0_0_#b45309]"
+                      onClick={() => {
+                        sound.playClick();
+                        if (onGoToPractice) onGoToPractice();
+                        else onClose();
+                      }}
+                    >
+                      <span>ĐẾN TRANG BÀI TẬP (+1 TIM)</span>
+                    </Button>
+                  </div>
+                ) : isUnlocked ? (
                   <Button
                     variant="primary"
                     size="lg"

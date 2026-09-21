@@ -1,7 +1,11 @@
 import type { Exercise } from '../../content/schema/exercise';
 import type { SessionState, SessionAction, QuestionState } from './types';
 
-export function createInitialSession(exercises: Exercise[], initialHearts: number = 5): SessionState {
+export function createInitialSession(
+  exercises: Exercise[],
+  initialHearts: number = 5,
+  isPractice: boolean = false
+): SessionState {
   return {
     questions: exercises.map((ex) => ({
       exercise: ex,
@@ -17,7 +21,8 @@ export function createInitialSession(exercises: Exercise[], initialHearts: numbe
     hearts: initialHearts,
     comboStreak: 0,
     totalXpEarned: 0,
-    isSessionComplete: exercises.length === 0
+    isSessionComplete: exercises.length === 0,
+    isPractice
   };
 }
 
@@ -99,6 +104,7 @@ export function sessionReducer(state: SessionState, action: SessionAction): Sess
         return {
           ...state,
           questions: newQuestions,
+          hearts: state.isPractice ? Math.min(5, state.hearts + 1) : state.hearts,
           comboStreak: state.comboStreak + 1,
           totalXpEarned: state.totalXpEarned + xp
         };
@@ -119,7 +125,7 @@ export function sessionReducer(state: SessionState, action: SessionAction): Sess
 
       // verdict.status === 'incorrect'
       const nextAttempt = currentQ.attemptsCount + 1;
-      const newHearts = Math.max(0, state.hearts - 1);
+      const newHearts = state.isPractice ? state.hearts : Math.max(0, state.hearts - 1);
       const isRevealed = nextAttempt >= 3;
 
       const updatedQ: QuestionState = {

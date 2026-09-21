@@ -9,7 +9,7 @@ import { useUserStore } from '@/features/gamification/useUserStore';
 export const LearnPage: React.FC = () => {
   const { grade = '8' } = useParams<{ grade: string }>();
   const navigate = useNavigate();
-  const { completedNodes } = useUserStore();
+  const { completedNodes, hearts } = useUserStore();
 
   const currentGrade = (parseInt(grade, 10) as Grade) || 8;
   const curriculum = useMemo(() => getCurriculum(currentGrade), [currentGrade]);
@@ -260,6 +260,11 @@ export const LearnPage: React.FC = () => {
         isCompleted={selectedNode?.isCompleted ?? false}
         bestAccuracy={selectedNode?.bestAccuracy}
         prerequisiteTitle={selectedNode?.prerequisiteTitle}
+        hearts={hearts}
+        onGoToPractice={() => {
+          setSelectedNode(null);
+          navigate('/practice');
+        }}
         onClose={() => setSelectedNode(null)}
         onStart={handleStartNode}
       />

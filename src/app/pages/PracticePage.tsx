@@ -32,7 +32,7 @@ interface LockModalInfo {
 
 export const PracticePage: React.FC = () => {
   const navigate = useNavigate();
-  const { completedNodes } = useUserStore();
+  const { completedNodes, hearts } = useUserStore();
 
   const [activeTab, setActiveTab] = useState<'curriculum' | 'generators'>('curriculum');
   const [selectedGrade, setSelectedGrade] = useState<Grade>(8);
@@ -89,7 +89,7 @@ export const PracticePage: React.FC = () => {
 
   const handleStartPractice = (lessonId: string, nodeId: string) => {
     sound.playClick();
-    navigate(`/play/${lessonId}/${nodeId}`);
+    navigate(`/play/${lessonId}/${nodeId}?mode=practice`);
   };
 
   const GENERATOR_TOPICS = [
@@ -178,6 +178,38 @@ export const PracticePage: React.FC = () => {
           Luyện các bài bạn đã mở khóa trên lộ trình học: không trừ tim, củng cố kiến thức và kiếm thêm XP
         </p>
       </div>
+
+      {/* Hearts Recovery Banner */}
+      {hearts < 5 && (
+        <div
+          className={`p-3.5 rounded-2xl border flex items-center justify-between gap-3 shadow-md ${
+            hearts === 0
+              ? 'bg-rose-950/60 border-rose-500/50 text-rose-200'
+              : 'bg-amber-950/40 border-amber-500/40 text-amber-200'
+          }`}
+        >
+          <div className="flex items-center gap-2.5">
+            <div
+              className={`w-9 h-9 rounded-xl flex items-center justify-center text-lg ${
+                hearts === 0 ? 'bg-rose-500/20 text-rose-400' : 'bg-amber-500/20 text-amber-400'
+              }`}
+            >
+              ❤️
+            </div>
+            <div>
+              <div className="text-xs font-black">
+                {hearts === 0 ? 'Bạn đã hết tim (0/5)!' : `Đang có ${hearts}/5 tim`}
+              </div>
+              <div className="text-[11px] opacity-90">
+                Giải đúng mỗi bài tập trong phần này sẽ nhận lại <span className="font-bold underline">+1 tim</span> để làm tiếp!
+              </div>
+            </div>
+          </div>
+          <div className="shrink-0 text-xs font-black px-2.5 py-1 rounded-xl bg-slate-900/80 border border-slate-700">
+            {hearts}/5 ❤️
+          </div>
+        </div>
+      )}
 
       {/* Main Mode Toggle: Curriculum vs Generators */}
       <div className="flex bg-slate-900 border border-slate-800 p-1 rounded-2xl shadow-sm">
@@ -436,7 +468,7 @@ export const PracticePage: React.FC = () => {
                   onClick={() => {
                     if (isUnlocked) {
                       sound.playClick();
-                      navigate(`/play/${gen.id}/dyn`);
+                      navigate(`/play/${gen.id}/dyn?mode=practice`);
                     } else {
                       sound.playClick();
                       setModalInfo({

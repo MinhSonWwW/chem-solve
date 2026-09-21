@@ -14,6 +14,8 @@ export interface SessionCompleteScreenProps {
   totalQuestions: number;
   correctCount: number;
   streak: number;
+  isPractice?: boolean;
+  recoveredHearts?: number;
   onContinue: () => void;
 }
 
@@ -24,6 +26,8 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
   totalQuestions,
   correctCount,
   streak,
+  isPractice,
+  recoveredHearts,
   onContinue,
 }) => {
   const accuracyPercent = Math.round(accuracy * 100);
@@ -91,10 +95,12 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
         className="mt-4 space-y-1 relative z-10"
       >
         <h1 className="text-2xl sm:text-3xl font-black bg-gradient-to-r from-amber-300 via-yellow-200 to-cyan-300 bg-clip-text text-transparent tracking-tight">
-          🎉 Hoàn thành chặng!
+          {isPractice ? '🎯 Hoàn thành luyện tập!' : '🎉 Hoàn thành chặng!'}
         </h1>
         <p className="text-xs sm:text-sm text-slate-300 font-bold">
-          {perfectRun
+          {isPractice
+            ? 'Bạn đã luyện tập thành công và hồi phục thêm tim để học tiếp!'
+            : perfectRun
             ? 'Xuất sắc tuyệt đối! Bạn không mất tim nào!'
             : 'Bạn đã hoàn thành rất tốt, tiếp tục phát huy nhé!'}
         </p>
@@ -111,7 +117,13 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
           <Sparkles className="w-4 h-4" />
           +{GAMIFICATION.session.completeBonus} XP hoàn thành
         </div>
-        {perfectRun && (
+        {isPractice && (recoveredHearts ?? 0) > 0 && (
+          <div className="px-3.5 py-1.5 rounded-2xl bg-rose-950/70 border border-rose-500/60 text-rose-300 text-xs font-black flex items-center gap-1.5 shadow-md">
+            <Heart className="w-4 h-4 fill-rose-500 text-rose-500 animate-pulse" />
+            +{recoveredHearts} Tim hồi phục
+          </div>
+        )}
+        {perfectRun && !isPractice && (
           <div className="px-3.5 py-1.5 rounded-2xl bg-emerald-950/60 border border-emerald-700/60 text-emerald-300 text-xs font-black flex items-center gap-1.5 shadow-md">
             <Heart className="w-4 h-4 fill-emerald-400 text-emerald-400" />
             +{GAMIFICATION.session.perfectBonus} XP hoàn hảo

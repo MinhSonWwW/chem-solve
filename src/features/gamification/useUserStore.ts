@@ -39,12 +39,19 @@ interface UserState {
   consecutiveCorrect: number;
 
   // ── Actions ──
-  startSession: (lessonId: string, nodeId: string, exercises: Exercise[], initialHearts?: number) => void;
+  startSession: (
+    lessonId: string,
+    nodeId: string,
+    exercises: Exercise[],
+    initialHearts?: number,
+    isPractice?: boolean
+  ) => void;
   resumeSession: (lessonId: string, nodeId: string, state: SessionState) => void;
   dispatch: (action: SessionAction) => void;
   submitAnswer: () => void;
   addXp: (amount: number) => void;
   decrementHearts: () => void;
+  addHearts: (amount?: number) => void;
   incrementStreak: () => void;
   toggleSound: () => void;
   setDailyGoal: (goal: number) => void;
@@ -72,9 +79,9 @@ export const useUserStore = create<UserState>((set, get) => ({
   lastVerdict: null,
   consecutiveCorrect: 0,
 
-  startSession: (lessonId, nodeId, exercises, initialHearts) => {
+  startSession: (lessonId, nodeId, exercises, initialHearts, isPractice = false) => {
     const hearts = initialHearts ?? get().hearts;
-    const session = createInitialSession(exercises, hearts);
+    const session = createInitialSession(exercises, hearts, isPractice);
     set({
       sessionState: session,
       sessionInfo: { lessonId, nodeId },
@@ -102,9 +109,13 @@ export const useUserStore = create<UserState>((set, get) => ({
     // Auto-persist on state change
     saveSession(sessionInfo.lessonId, sessionInfo.nodeId, next).catch(console.error);
 
-    // Sync hearts to store-level state
+    // Sync hearts to store-level state and persist
     if (next.hearts !== get().hearts) {
       set({ hearts: next.hearts });
+      loadUserProgress().then((p) => {
+        p.hearts = next.hearts;
+        saveUserProgress(p).catch(console.error);
+      });
     }
   },
 
@@ -167,7 +178,23 @@ export const useUserStore = create<UserState>((set, get) => ({
 
   addXp: (amount) => set((state) => ({ xp: state.xp + amount })),
   decrementHearts: () =>
-    set((state) => ({ hearts: Math.max(0, state.hearts - 1) })),
+    set((state) => {
+      const next = Math.max(0, state.hearts - 1);
+      loadUserProgress().then((p) => {
+        p.hearts = next;
+        saveUserProgress(p).catch(console.error);
+      });
+      return { hearts: next };
+    }),
+  addHearts: (amount = 1) =>
+    set((state) => {
+      const next = Math.min(GAMIFICATION.hearts.max, state.hearts + amount);
+      loadUserProgress().then((p) => {
+        p.hearts = next;
+        saveUserProgress(p).catch(console.error);
+      });
+      return { hearts: next };
+    }),
   incrementStreak: () => set((state) => ({ streak: state.streak + 1 })),
 
   toggleSound: () =>
