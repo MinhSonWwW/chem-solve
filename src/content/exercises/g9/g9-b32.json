@@ -1,0 +1,117 @@
+[
+  {
+    "id": "g9-b32-mcq-001",
+    "lessonId": "g9-b32",
+    "skillIds": ["polymer-applications"],
+    "difficulty": 1,
+    "prompt": "Polymer là những hợp chất có đặc điểm cấu tạo phân tử nào sau đây?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Khối lượng phân tử rất lớn do nhiều mắt xích cơ sở liên kết với nhau tạo nên" },
+        { "id": "b", "label": "Chỉ gồm tối đa 3 nguyên tử liên kết trong một phân tử" },
+        { "id": "c", "label": "Luôn chứa nguyên tố kim loại kiềm trong phân tử" },
+        { "id": "d", "label": "Là những chất luôn tan hoàn toàn trong nước tạo dung dịch trong suốt" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Từ \"poly\" có nghĩa là \"nhiều\", ví dụ polyethylene gồm hàng ngàn mắt xích (-CH2-CH2-)." },
+      { "level": 2, "text": "Công thức tổng quát thường viết dạng (-A-)n với n là hệ số trùng hợp rất lớn." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Khái niệm", "body": "Định nghĩa hợp chất polymer." },
+      { "kind": "knowledge", "title": "Cấu tạo", "body": "Polymer là những hợp chất có phân tử khối rất lớn, do nhiều đơn vị nhỏ (mắt xích) liên kết với nhau." },
+      { "kind": "answer", "title": "Kết luận", "body": "Phân tử khối rất lớn gồm nhiều mắt xích liên kết." }
+    ],
+    "finalSolution": "Polymer là những hợp chất có khối lượng phân tử rất lớn gồm nhiều mắt xích cơ sở tạo nên.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b32-sort-001",
+    "lessonId": "g9-b32",
+    "skillIds": ["polymer-applications"],
+    "difficulty": 1,
+    "prompt": "Phân loại các vật liệu polymer sau vào nhóm \"Polymer thiên nhiên\" hoặc \"Polymer tổng hợp (nhân tạo)\".",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "natural", "label": "Polymer thiên nhiên" },
+        { "id": "synthetic", "label": "Polymer tổng hợp" }
+      ],
+      "items": [
+        { "id": "p1", "label": "Tinh bột trong gạo, ngô", "bucketId": "natural" },
+        { "id": "p2", "label": "Nhựa PE (Polyethylene làm túi nilon)", "bucketId": "synthetic" },
+        { "id": "p3", "label": "Cellulose trong gỗ, bông nõn", "bucketId": "natural" },
+        { "id": "p4", "label": "Nhựa PVC (Polyvinyl chloride làm ống nước)", "bucketId": "synthetic" },
+        { "id": "p5", "label": "Tơ tằm tự nhiên", "bucketId": "natural" },
+        { "id": "p6", "label": "Cao su buna tổng hợp", "bucketId": "synthetic" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Tinh bột, cellulose, tơ tằm có sẵn trong tự nhiên -> Thiên nhiên." },
+      { "level": 2, "text": "PE, PVC, cao su buna do con người trùng hợp từ hóa chất -> Tổng hợp." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại", "body": "Tách 6 polymer thành tự nhiên và tổng hợp." },
+      { "kind": "knowledge", "title": "Nguồn gốc", "body": "Thiên nhiên: tinh bột, cellulose, tơ tằm. Tổng hợp: nhựa PE, nhựa PVC, cao su buna." },
+      { "kind": "answer", "title": "Kết quả", "body": "Thiên nhiên: p1, p3, p5. Tổng hợp: p2, p4, p6." }
+    ],
+    "finalSolution": "Thiên nhiên: tinh bột, cellulose, tơ tằm. Tổng hợp: PE, PVC, cao su buna.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b32-match-001",
+    "lessonId": "g9-b32",
+    "skillIds": ["polymer-applications"],
+    "difficulty": 2,
+    "prompt": "Ghép tên loại vật liệu polymer với ứng dụng phổ biến nhất trong đời sống.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Polyethylene (PE)", "right": "Sản xuất màng bọc thực phẩm, túi nilon" },
+        { "left": "Polyvinyl chloride (PVC)", "right": "Làm ống dẫn nước, vỏ bọc dây điện" },
+        { "left": "Cao su tự nhiên / nhân tạo", "right": "Sản xuất lốp xe máy, ô tô đàn hồi" },
+        { "left": "Tơ nylon-6,6", "right": "Dệt vải may mặc, bện dây dù, lưới đánh cá" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "PE làm màng bọc; PVC làm ống nước; cao su làm lốp xe; nylon làm vải sợi." },
+      { "level": 2, "text": "Mỗi vật liệu polymer gắn liền với một đặc tính: dẻo, đàn hồi, dai bền." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Ghép cặp", "body": "Nối 4 loại polymer với ứng dụng." },
+      { "kind": "knowledge", "title": "Ứng dụng", "body": "PE: túi nilon; PVC: ống nước; Cao su: lốp xe; Tơ nylon: may mặc, lưới cá." },
+      { "kind": "answer", "title": "Kết quả", "body": "Ghép đúng 4 cặp polymer - ứng dụng." }
+    ],
+    "finalSolution": "PE ↔ Màng bọc thực phẩm. PVC ↔ Ống nước. Cao su ↔ Lốp xe. Tơ nylon ↔ May mặc, lưới cá.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b32-tf-001",
+    "lessonId": "g9-b32",
+    "skillIds": ["polymer-applications"],
+    "difficulty": 1,
+    "prompt": "Xác định các vấn đề về môi trường liên quan đến rác thải nhựa (chất dẻo) là Đúng hay Sai.",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Rác thải nhựa (túi nilon, chai nhựa) rất khó bị phân hủy sinh học, có thể tồn tại hàng trăm năm trong đất và đại dương.", "correct": true },
+        { "id": "s2", "text": "Đốt rác thải nhựa tự do tại nhà tạo ra các khí cực độc như dioxin và furan gây hại nghiêm trọng cho sức khỏe.", "correct": true },
+        { "id": "s3", "text": "Tất cả các loại túi nilon trên thị trường đều tự phân hủy chỉ sau 24 giờ chôn lấp.", "correct": false },
+        { "id": "s4", "text": "Tái chế và hạn chế sử dụng đồ nhựa dùng một lần là giải pháp bảo vệ môi trường bền vững.", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Nhựa thông thường cần 400 - 1000 năm mới phân hủy hết trong tự nhiên." },
+      { "level": 2, "text": "Đốt nhựa sinh ra khí độc nguy hiểm cho hệ hô hấp." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích", "body": "Xét tác động môi trường của rác thải polymer." },
+      { "kind": "knowledge", "title": "Môi trường", "body": "S1: Đúng (tồn tại hàng trăm năm). S2: Đúng (đốt sinh khí độc). S3: Sai (nhựa không tự phân hủy sau 24h). S4: Đúng (tái chế)." },
+      { "kind": "answer", "title": "Kết quả", "body": "S1: Đúng, S2: Đúng, S3: Sai, S4: Đúng." }
+    ],
+    "finalSolution": "Nhựa không tự phân hủy sau 24h (S3 Sai). S1, S2, S4 đều đúng.",
+    "commonMistakes": []
+  }
+]

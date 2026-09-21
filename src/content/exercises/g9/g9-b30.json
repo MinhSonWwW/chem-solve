@@ -1,0 +1,117 @@
+[
+  {
+    "id": "g9-b30-mcq-001",
+    "lessonId": "g9-b30",
+    "skillIds": ["starch-cellulose"],
+    "difficulty": 1,
+    "prompt": "Thuốc thử đặc trưng dùng để nhận biết hồ tinh bột là chất nào sau đây?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Dung dịch Iodine (I2) – cho màu xanh tím đặc trưng" },
+        { "id": "b", "label": "Dung dịch Bromine (Br2)" },
+        { "id": "c", "label": "Dung dịch AgNO3 trong NH3" },
+        { "id": "d", "label": "Dung dịch phenolphtalein" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Iodine chui vào các rãnh xoắn của cấu trúc tinh bột tạo phức chất màu xanh tím." },
+      { "level": 2, "text": "Khi đun nóng màu xanh tím biến mất, để nguội lại xuất hiện trở lại." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Thuốc thử", "body": "Nhận biết tinh bột bằng chất thử hóa học." },
+      { "kind": "knowledge", "title": "Phản ứng màu", "body": "Tinh bột tác dụng với dung dịch iodine cho hợp chất màu xanh tím đặc trưng." },
+      { "kind": "answer", "title": "Kết luận", "body": "Dung dịch Iodine (I2)." }
+    ],
+    "finalSolution": "Dung dịch Iodine (I2) tác dụng với tinh bột tạo màu xanh tím đặc trưng.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b30-mcq-002",
+    "lessonId": "g9-b30",
+    "skillIds": ["starch-cellulose"],
+    "difficulty": 1,
+    "prompt": "Sản phẩm cuối cùng khi thủy phân hoàn toàn tinh bột hoặc cellulose có xúc tác acid là gì?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Glucose (C6H12O6)" },
+        { "id": "b", "label": "Saccharose (C12H22O11)" },
+        { "id": "c", "label": "Rượu etylic (C2H5OH)" },
+        { "id": "d", "label": "Axit axetic (CH3COOH)" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Cả tinh bột và cellulose đều được cấu tạo từ nhiều mắt xích glucose liên kết với nhau." },
+      { "level": 2, "text": "PTHH: (C6H10O5)n + n H2O --acid, to--> n C6H12O6." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Thủy phân", "body": "Xác định sản phẩm thủy phân tinh bột và xenlulozo." },
+      { "kind": "knowledge", "title": "Phương trình", "body": "(C6H10O5)n + nH2O -> nC6H12O6 (glucose)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Glucose (C6H12O6)." }
+    ],
+    "finalSolution": "Thủy phân hoàn toàn tinh bột hay cellulose đều thu được Glucose (C6H12O6).",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b30-sort-001",
+    "lessonId": "g9-b30",
+    "skillIds": ["starch-cellulose"],
+    "difficulty": 1,
+    "prompt": "Phân loại các nguồn tự nhiên sau theo thành phần chính là \"Tinh bột\" hay \"Cellulose\".",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "starch", "label": "Nguồn giàu Tinh bột" },
+        { "id": "cellulose", "label": "Nguồn giàu Cellulose" }
+      ],
+      "items": [
+        { "id": "t1", "label": "Hạt gạo, lúa mì, bắp ngô", "bucketId": "starch" },
+        { "id": "t2", "label": "Sợi bông nõn (gần 98%)", "bucketId": "cellulose" },
+        { "id": "t3", "label": "Củ khoai tây, củ sắn", "bucketId": "starch" },
+        { "id": "t4", "label": "Gỗ rừng, tre, nứa", "bucketId": "cellulose" },
+        { "id": "t5", "label": "Sợi đay, gai, vỏ thân thảo", "bucketId": "cellulose" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Gạo, ngô, khoai -> Tinh bột (lương thực chính)." },
+      { "level": 2, "text": "Bông, gỗ, tre nứa, sợi đay -> Cellulose (cấu tạo thành tế bào thực vật)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại", "body": "Tách 5 nguồn theo tinh bột và cellulose." },
+      { "kind": "knowledge", "title": "Phân bố", "body": "Tinh bột: gạo, khoai, ngô. Cellulose: bông, gỗ, tre nứa, sợi đay." },
+      { "kind": "answer", "title": "Kết quả", "body": "Tinh bột: t1, t3. Cellulose: t2, t4, t5." }
+    ],
+    "finalSolution": "Tinh bột: gạo, ngô, khoai. Cellulose: bông nõn, gỗ, tre, sợi đay.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b30-tf-001",
+    "lessonId": "g9-b30",
+    "skillIds": ["starch-cellulose"],
+    "difficulty": 2,
+    "prompt": "Xác định các phát biểu sau về Tinh bột và Cellulose là Đúng hay Sai.",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Tinh bột và cellulose đều có công thức chung (C6H10O5)n nhưng không phải là đồng phân của nhau vì giá trị n rất khác nhau.", "correct": true },
+        { "id": "s2", "text": "Cây xanh tổng hợp tinh bột nhờ quá trình quang hợp dưới ánh sáng mặt trời có chất diệp lục.", "correct": true },
+        { "id": "s3", "text": "Cả tinh bột và cellulose đều làm đổi màu dung dịch iodine sang màu xanh tím.", "correct": false },
+        { "id": "s4", "text": "Cellulose là nguyên liệu để sản xuất giấy viết và tơ nhân tạo (viscose).", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Chỉ có tinh bột mới tạo màu xanh tím với iodine, cellulose thì KHÔNG." },
+      { "level": 2, "text": "6n CO2 + 5n H2O --quang hợp--> (C6H10O5)n + 6n O2." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích", "body": "Xét tính chất của tinh bột và cellulose." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "S1: Đúng (n khác nhau). S2: Đúng (quang hợp). S3: Sai (chỉ tinh bột có màu xanh với I2). S4: Đúng (làm giấy)." },
+      { "kind": "answer", "title": "Kết quả", "body": "S1: Đúng, S2: Đúng, S3: Sai, S4: Đúng." }
+    ],
+    "finalSolution": "Cellulose không tác dụng với iodine tạo màu xanh tím (S3 Sai). S1, S2, S4 đều đúng.",
+    "commonMistakes": []
+  }
+]

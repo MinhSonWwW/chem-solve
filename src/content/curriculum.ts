@@ -259,7 +259,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             lessonNumber: 20,
             title: 'Tách kim loại & Hợp kim',
             subtitle: 'Luyện gang thép và phương pháp nhiệt luyện',
-            ready: false,
+            ready: true,
             nodes: [
               { id: 'g9-b20-n01', nodeIndex: 1, title: 'Phương pháp tách kim loại', description: '6 câu hỏi', type: 'lesson' },
             ],
@@ -269,7 +269,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             lessonNumber: 21,
             title: 'Khác nhau giữa phi kim và kim loại',
             subtitle: 'So sánh cấu tạo, tính chất và ứng dụng',
-            ready: false,
+            ready: true,
             nodes: [
               { id: 'g9-b21-n01', nodeIndex: 1, title: 'So sánh kim loại & phi kim', description: '6 câu hỏi', type: 'lesson' },
             ],
@@ -287,7 +287,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             lessonNumber: 22,
             title: 'Giới thiệu hợp chất hữu cơ',
             subtitle: 'Khái niệm, công thức cấu tạo phân tử',
-            ready: false,
+            ready: true,
             nodes: [
               { id: 'g9-b22-n01', nodeIndex: 1, title: 'Phân loại hợp chất hữu cơ', description: '6 câu hỏi', type: 'lesson' },
             ],
@@ -307,7 +307,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             lessonNumber: 24,
             title: 'Alkene (Ethylene)',
             subtitle: 'Liên kết đôi C=C và phản ứng trùng hợp',
-            ready: false,
+            ready: true,
             nodes: [
               { id: 'g9-b24-n01', nodeIndex: 1, title: 'Tính chất Ethylene', description: '6 câu hỏi', type: 'lesson' },
             ],
@@ -317,7 +317,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             lessonNumber: 25,
             title: 'Nguồn nhiên liệu',
             subtitle: 'Dầu mỏ, khí thiên nhiên và than mỏ',
-            ready: false,
+            ready: true,
             nodes: [
               { id: 'g9-b25-n01', nodeIndex: 1, title: 'Khai thác nhiên liệu', description: '6 câu hỏi', type: 'lesson' },
             ],
@@ -363,7 +363,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             lessonNumber: 28,
             title: 'Lipid (Chất béo)',
             subtitle: 'Thành phần và phản ứng xà phòng hóa',
-            ready: false,
+            ready: true,
             nodes: [
               { id: 'g9-b28-n01', nodeIndex: 1, title: 'Cấu tạo & Tính chất chất béo', description: '6 câu hỏi', type: 'lesson' },
             ],
@@ -373,7 +373,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             lessonNumber: 29,
             title: 'Glucose & Saccharose',
             subtitle: 'Đường đơn và đường đôi',
-            ready: false,
+            ready: true,
             nodes: [
               { id: 'g9-b29-n01', nodeIndex: 1, title: 'Nhận biết Glucose', description: '6 câu hỏi', type: 'lesson' },
             ],
@@ -383,7 +383,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             lessonNumber: 30,
             title: 'Tinh bột và Cellulose',
             subtitle: 'Quang hợp và phản ứng thủy phân',
-            ready: false,
+            ready: true,
             nodes: [
               { id: 'g9-b30-n01', nodeIndex: 1, title: 'Tính chất tinh bột', description: '6 câu hỏi', type: 'lesson' },
             ],
@@ -393,7 +393,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             lessonNumber: 31,
             title: 'Protein',
             subtitle: 'Thành phần amino acid và sự đông tụ',
-            ready: false,
+            ready: true,
             nodes: [
               { id: 'g9-b31-n01', nodeIndex: 1, title: 'Cấu trúc & vai trò protein', description: '6 câu hỏi', type: 'lesson' },
             ],
@@ -403,7 +403,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             lessonNumber: 32,
             title: 'Polymer',
             subtitle: 'Chất dẻo, tơ sợi và cao su',
-            ready: false,
+            ready: true,
             nodes: [
               { id: 'g9-b32-n01', nodeIndex: 1, title: 'Khái niệm & Ứng dụng polymer', description: '6 câu hỏi', type: 'lesson' },
             ],
@@ -421,7 +421,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             lessonNumber: 33,
             title: 'Hóa học vỏ Trái Đất',
             subtitle: 'Thành phần khoáng vật và kim loại',
-            ready: false,
+            ready: true,
             nodes: [
               { id: 'g9-b33-n01', nodeIndex: 1, title: 'Khoáng sản & Tài nguyên', description: '6 câu hỏi', type: 'lesson' },
             ],
@@ -431,7 +431,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             lessonNumber: 34,
             title: 'Khai thác đá vôi & Silicate',
             subtitle: 'Sản xuất vôi sống (CaO), xi măng, thủy tinh',
-            ready: false,
+            ready: true,
             nodes: [
               { id: 'g9-b34-n01', nodeIndex: 1, title: 'Nung vôi & Sản xuất xi măng', description: '6 câu hỏi', type: 'lesson' },
             ],
@@ -441,7 +441,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             lessonNumber: 35,
             title: 'Chu trình Carbon & Môi trường',
             subtitle: 'Nhiên liệu hóa thạch và hiệu ứng nhà kính',
-            ready: false,
+            ready: true,
             nodes: [
               { id: 'g9-b35-n01', nodeIndex: 1, title: 'Hiệu ứng nhà kính & bảo vệ môi trường', description: '6 câu hỏi', type: 'lesson' },
             ],

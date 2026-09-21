@@ -1,0 +1,89 @@
+[
+  {
+    "id": "g9-b33-mcq-001",
+    "lessonId": "g9-b33",
+    "skillIds": ["earth-crust-chemistry"],
+    "difficulty": 1,
+    "prompt": "Hai nguyên tố hóa học chiếm tỉ lệ phần trăm khối lượng lớn nhất trong vỏ Trái Đất là gì?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Oxygen (khoảng 46 - 49%) và Silicon (khoảng 27 - 28%)" },
+        { "id": "b", "label": "Sắt (Fe) và Đồng (Cu)" },
+        { "id": "c", "label": "Nitrogen và Hydrogen" },
+        { "id": "d", "label": "Vàng (Au) và Bạc (Ag)" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Đá và cát trong vỏ Trái Đất chủ yếu cấu tạo từ hợp chất silica (SiO2) và các khoáng vật silicate." },
+      { "level": 2, "text": "Oxygen là nguyên tố nhiều nhất (~49%), đứng thứ hai là Silicon (~27%)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Thành phần vỏ Trái Đất", "body": "Xác định 2 nguyên tố dồi dào nhất." },
+      { "kind": "knowledge", "title": "Số liệu", "body": "Oxygen: ~46,6% - 49,5%. Silicon: ~27,7%. Hai nguyên tố này cấu tạo nên các khoáng vật silicat chiếm phần lớn vỏ Trái Đất." },
+      { "kind": "answer", "title": "Kết luận", "body": "Oxygen (O) và Silicon (Si)." }
+    ],
+    "finalSolution": "Hai nguyên tố phong phú nhất trong vỏ Trái Đất là Oxygen (~49%) và Silicon (~28%).",
+    "commonMistakes": [
+      { "id": "confuse-atmosphere", "message": "Nitrogen chiếm 78% trong khí quyển, nhưng trong vỏ Trái Đất thì Oxygen và Silicon mới chiếm nhiều nhất." }
+    ]
+  },
+  {
+    "id": "g9-b33-mcq-002",
+    "lessonId": "g9-b33",
+    "skillIds": ["earth-crust-chemistry"],
+    "difficulty": 1,
+    "prompt": "Kim loại nào có hàm lượng phần trăm khối lượng dồi dào nhất trong vỏ Trái Đất?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Nhôm (Al, chiếm khoảng 8%)" },
+        { "id": "b", "label": "Sắt (Fe, chiếm khoảng 5%)" },
+        { "id": "c", "label": "Vàng (Au)" },
+        { "id": "d", "label": "Đồng (Cu)" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Thứ tự kim loại nhiều nhất: Al > Fe > Ca > Na > K > Mg." },
+      { "level": 2, "text": "Nhôm là kim loại phong phú nhất trong lớp vỏ Trái Đất (có nhiều trong quặng bauxite)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Kim loại dồi dào nhất", "body": "Xác định kim loại có hàm lượng lớn nhất trong vỏ Trái Đất." },
+      { "kind": "knowledge", "title": "Số liệu", "body": "Nhôm (Al) chiếm khoảng 8% khối lượng vỏ Trái Đất, vượt qua sắt (Fe, ~5%)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Nhôm (Al)." }
+    ],
+    "finalSolution": "Nhôm (Al) là kim loại dồi dào nhất trong vỏ Trái Đất (khoảng 8%).",
+    "commonMistakes": [
+      { "id": "thought-iron", "message": "Sắt (Fe) rất phổ biến nhưng đứng thứ hai sau nhôm trong vỏ Trái Đất." }
+    ]
+  },
+  {
+    "id": "g9-b33-tf-001",
+    "lessonId": "g9-b33",
+    "skillIds": ["earth-crust-chemistry"],
+    "difficulty": 1,
+    "prompt": "Xác định các phát biểu sau về khoáng sản và tài nguyên trong vỏ Trái Đất là Đúng hay Sai.",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Đa số kim loại trong vỏ Trái Đất tồn tại dưới dạng hợp chất (quặng), chỉ rất ít kim loại kém hoạt động như vàng, bạch kim tồn tại ở dạng tự do.", "correct": true },
+        { "id": "s2", "text": "Khai thác khoáng sản bừa bãi có thể gây xói mòn đất, ô nhiễm nguồn nước và suy thoái môi trường.", "correct": true },
+        { "id": "s3", "text": "Tài nguyên khoáng sản kim loại trong lòng đất có thể tự tái tạo lại chỉ sau vài tháng.", "correct": false },
+        { "id": "s4", "text": "Quặng bauxite là nguồn nguyên liệu chính dùng để sản xuất kim loại nhôm (Al).", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Khoáng sản là tài nguyên không thể tái tạo trong thời gian ngắn." },
+      { "level": 2, "text": "Al được sản xuất từ quặng bauxite (chứa Al2O3)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích", "body": "Xét tính chất tài nguyên khoáng sản." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "S1: Đúng (quặng kim loại). S2: Đúng (tác động môi trường). S3: Sai (không tái tạo ngắn hạn). S4: Đúng (bauxite sản xuất Al)." },
+      { "kind": "answer", "title": "Kết quả", "body": "S1: Đúng, S2: Đúng, S3: Sai, S4: Đúng." }
+    ],
+    "finalSolution": "Khoáng sản không tự tái tạo sau vài tháng (S3 Sai). S1, S2, S4 đều đúng.",
+    "commonMistakes": []
+  }
+]

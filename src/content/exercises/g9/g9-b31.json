@@ -1,0 +1,113 @@
+[
+  {
+    "id": "g9-b31-mcq-001",
+    "lessonId": "g9-b31",
+    "skillIds": ["protein-structure"],
+    "difficulty": 1,
+    "prompt": "Protein được cấu tạo từ các đơn vị cơ sở nào sau đây liên kết với nhau?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Các amino acid (liên kết với nhau bằng liên kết peptide)" },
+        { "id": "b", "label": "Các phân tử glucose" },
+        { "id": "c", "label": "Glycerol và các acid béo" },
+        { "id": "d", "label": "Các ion kim loại nặng" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Khi thủy phân protein hoàn toàn sẽ thu được hỗn hợp các amino acid." },
+      { "level": 2, "text": "Amino acid chứa nhóm amino (-NH2) và nhóm cacboxyl (-COOH)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Cấu tạo", "body": "Đơn vị cấu tạo nên phân tử protein." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "Protein là những polymer thiên nhiên được cấu tạo từ các amino acid liên kết với nhau bằng liên kết peptide (-CO-NH-)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Các amino acid." }
+    ],
+    "finalSolution": "Protein được cấu tạo từ các amino acid liên kết qua liên kết peptide.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b31-mcq-002",
+    "lessonId": "g9-b31",
+    "skillIds": ["protein-structure"],
+    "difficulty": 1,
+    "prompt": "Khi đun nóng lòng trắng trứng gà (chứa protein albumin), hiện tượng gì xảy ra?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Protein bị đông tụ thành khối chất rắn màu trắng đục" },
+        { "id": "b", "label": "Lòng trắng trứng bốc cháy thành ngọn lửa màu xanh" },
+        { "id": "c", "label": "Lòng trắng trứng hóa lỏng hoàn toàn như nước" },
+        { "id": "d", "label": "Không có hiện tượng gì, chất lỏng giữ nguyên trạng thái" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Protein rất nhạy cảm với nhiệt độ cao và axit/kiềm mạnh." },
+      { "level": 2, "text": "Hiện tượng biến tính làm protein kết tủa lại gọi là sự đông tụ." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Hiện tượng", "body": "Nhiệt độ tác động lên protein albumin." },
+      { "kind": "knowledge", "title": "Tính chất", "body": "Protein bị đông tụ khi đun nóng hoặc khi gặp acid, kiềm và một số muối." },
+      { "kind": "answer", "title": "Kết luận", "body": "Protein bị đông tụ thành khối chất rắn màu trắng đục." }
+    ],
+    "finalSolution": "Protein bị đông tụ (kết tủa) khi đun nóng.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b31-mcq-003",
+    "lessonId": "g9-b31",
+    "skillIds": ["protein-structure"],
+    "difficulty": 2,
+    "prompt": "Để phân biệt tơ tằm thật (làm từ protein) với sợi tơ nylon tổng hợp (hoặc sợi bông cellulose), cách đơn giản nhất trong thực tế là gì?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Đốt từng mẫu tơ: tơ tằm cháy có mùi khét như tóc cháy và tạo tro xốp bóp vụn được" },
+        { "id": "b", "label": "Nhúng vào nước xem sợi nào ướt nhanh hơn" },
+        { "id": "c", "label": "Dùng nam châm hút thử" },
+        { "id": "d", "label": "Nhỏ dung dịch muối ăn vào sợi" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Protein chứa nitơ và lưu huỳnh nên khi đốt có mùi đặc trưng như tóc/lông cháy." },
+      { "level": 2, "text": "Tơ nylon đốt vón thành cục nhựa cứng; sợi bông cellulose cháy có mùi khét như giấy." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Thực nghiệm", "body": "Phân biệt tơ protein tự nhiên với sợi nhân tạo." },
+      { "kind": "knowledge", "title": "Hiện tượng cháy", "body": "Tơ tằm (protein) đốt cháy có mùi khét giống tóc cháy, tro xốp dễ bóp vụn. Tơ tổng hợp cháy vón cục cứng." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đốt mẫu sợi và ngửi mùi (mùi khét tóc cháy)." }
+    ],
+    "finalSolution": "Đốt cháy mẫu sợi: protein cháy có mùi khét như tóc cháy, tro xốp; sợi nylon cháy vón cục dẻo quánh.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b31-tf-001",
+    "lessonId": "g9-b31",
+    "skillIds": ["protein-structure"],
+    "difficulty": 1,
+    "prompt": "Xác định các phát biểu sau về vai trò sinh học của Protein là Đúng hay Sai.",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Protein là nền tảng cấu tạo nên tế bào và cơ thể sinh vật.", "correct": true },
+        { "id": "s2", "text": "Các enzyme xúc tác cho các phản ứng sinh hóa trong cơ thể bản chất là protein.", "correct": true },
+        { "id": "s3", "text": "Protein hoàn toàn không bị phân hủy khi vào dạ dày người.", "correct": false },
+        { "id": "s4", "text": "Thịt, cá, trứng, sữa và các loại đậu là những nguồn thực phẩm giàu protein.", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Trong dạ dày có acid HCl và enzyme pepsin thủy phân protein thành amino acid." },
+      { "level": 2, "text": "Cơ thể hấp thụ các amino acid để tái tạo cơ bắp." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích", "body": "Xét vai trò sinh học và tiêu hóa protein." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "S1: Đúng. S2: Đúng (enzyme là protein). S3: Sai (dạ dày tiêu hóa protein). S4: Đúng (thực phẩm giàu đạm)." },
+      { "kind": "answer", "title": "Kết quả", "body": "S1: Đúng, S2: Đúng, S3: Sai, S4: Đúng." }
+    ],
+    "finalSolution": "Protein bị thủy phân trong dạ dày thành amino acid (S3 Sai). S1, S2, S4 đều đúng.",
+    "commonMistakes": []
+  }
+]

@@ -1,0 +1,118 @@
+[
+  {
+    "id": "g9-b25-mcq-001",
+    "lessonId": "g9-b25",
+    "skillIds": ["fuel-sources"],
+    "difficulty": 1,
+    "prompt": "Dầu mỏ là hỗn hợp tự nhiên của nhiều loại hợp chất nào sau đây?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Nhiều hydrocarbon khác nhau" },
+        { "id": "b", "label": "Chỉ duy nhất chất methane (CH4)" },
+        { "id": "c", "label": "Các este và chất béo" },
+        { "id": "d", "label": "Hợp chất vô cơ của lưu huỳnh và sắt" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Dầu mỏ là chất lỏng sánh, màu nâu đen, không tan trong nước." },
+      { "level": 2, "text": "Dầu mỏ là hỗn hợp phức tạp của hàng trăm hydrocarbon khác nhau." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Khái niệm", "body": "Thành phần của dầu mỏ." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "Dầu mỏ là một hỗn hợp tự nhiên của nhiều loại hydrocarbon." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hỗn hợp nhiều hydrocarbon." }
+    ],
+    "finalSolution": "Dầu mỏ là hỗn hợp tự nhiên gồm nhiều loại hydrocarbon khác nhau.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b25-sort-001",
+    "lessonId": "g9-b25",
+    "skillIds": ["fuel-sources"],
+    "difficulty": 1,
+    "prompt": "Phân loại các nguồn năng lượng sau vào nhóm \"Nhiên liệu hóa thạch\" hoặc \"Năng lượng tái tạo xanh\".",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "fossil", "label": "Nhiên liệu hóa thạch (Hạn chế / Ô nhiễm)" },
+        { "id": "renewable", "label": "Năng lượng tái tạo (Sạch / Xanh)" }
+      ],
+      "items": [
+        { "id": "f1", "label": "Than đá", "bucketId": "fossil" },
+        { "id": "f2", "label": "Năng lượng mặt trời", "bucketId": "renewable" },
+        { "id": "f3", "label": "Dầu mỏ", "bucketId": "fossil" },
+        { "id": "f4", "label": "Năng lượng gió", "bucketId": "renewable" },
+        { "id": "f5", "label": "Khí thiên nhiên", "bucketId": "fossil" },
+        { "id": "f6", "label": "Năng lượng thủy triều", "bucketId": "renewable" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Than đá, dầu mỏ, khí thiên nhiên hình thành từ xác sinh vật qua hàng triệu năm -> Hóa thạch." },
+      { "level": 2, "text": "Mặt trời, gió, thủy triều là nguồn vô tận, sạch -> Tái tạo." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại", "body": "Tách 6 nguồn năng lượng." },
+      { "kind": "knowledge", "title": "Phân nhóm", "body": "Hóa thạch: than, dầu, khí. Tái tạo: mặt trời, gió, thủy triều." },
+      { "kind": "answer", "title": "Kết quả", "body": "Hóa thạch: f1, f3, f5. Tái tạo: f2, f4, f6." }
+    ],
+    "finalSolution": "Hóa thạch: than đá, dầu mỏ, khí thiên nhiên. Tái tạo: mặt trời, gió, thủy triều.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b25-mcq-002",
+    "lessonId": "g9-b25",
+    "skillIds": ["fuel-sources"],
+    "difficulty": 1,
+    "prompt": "Khí thiên nhiên và khí mỏ dầu có thành phần chính là khí nào?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Methane (CH4, chiếm tới 75 - 95%)" },
+        { "id": "b", "label": "Oxygen (O2)" },
+        { "id": "c", "label": "Carbon dioxide (CO2)" },
+        { "id": "d", "label": "Hydrogen (H2)" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Đây là hydrocarbon đơn giản nhất có công thức phân tử CH4." },
+      { "level": 2, "text": "Khí methane là thành phần chủ yếu của khí thiên nhiên và khí đồng hành." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Thành phần khí", "body": "Xác định thành phần chính khí thiên nhiên." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "Methane (CH4) chiếm từ 75% đến 95% thể tích khí thiên nhiên." },
+      { "kind": "answer", "title": "Kết luận", "body": "Methane (CH4)." }
+    ],
+    "finalSolution": "Thành phần chính của khí thiên nhiên là Methane (CH4, khoảng 75 - 95%).",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b25-tf-001",
+    "lessonId": "g9-b25",
+    "skillIds": ["fuel-sources"],
+    "difficulty": 2,
+    "prompt": "Xác định các phát biểu sau về việc sử dụng nhiên liệu hiệu quả và bảo vệ môi trường là Đúng hay Sai.",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Cung cấp đủ không khí hoặc oxy giúp nhiên liệu cháy hoàn toàn, tỏa nhiều nhiệt hơn.", "correct": true },
+        { "id": "s2", "text": "Đốt nhiên liệu trong điều kiện thiếu oxy sẽ sinh ra khí độc carbon monoxide (CO) gây ngạt thở.", "correct": true },
+        { "id": "s3", "text": "Nhiên liệu hóa thạch là nguồn tài nguyên vô tận, có thể tái sinh trong thời gian ngắn.", "correct": false },
+        { "id": "s4", "text": "Tăng diện tích tiếp xúc của nhiên liệu với không khí giúp quá trình cháy diễn ra dễ dàng hơn.", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Nhiên liệu hóa thạch cần hàng triệu năm mới hình thành nên không thể tự tái tạo ngắn hạn." },
+      { "level": 2, "text": "Cháy không hoàn toàn sinh ra khí độc CO." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích", "body": "Xét các phát biểu về quá trình cháy nhiên liệu." },
+      { "kind": "knowledge", "title": "Quy tắc", "body": "S1: Đúng (đủ O2). S2: Đúng (thiếu O2 sinh CO). S3: Sai (hóa thạch hữu hạn). S4: Đúng (tăng tiếp xúc)." },
+      { "kind": "answer", "title": "Kết quả", "body": "S1: Đúng, S2: Đúng, S3: Sai, S4: Đúng." }
+    ],
+    "finalSolution": "Nhiên liệu hóa thạch là có hạn (S3 Sai). S1, S2, S4 đều đúng.",
+    "commonMistakes": []
+  }
+]

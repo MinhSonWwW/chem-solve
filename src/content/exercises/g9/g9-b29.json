@@ -1,0 +1,120 @@
+[
+  {
+    "id": "g9-b29-mcq-001",
+    "lessonId": "g9-b29",
+    "skillIds": ["carbohydrate-identification"],
+    "difficulty": 1,
+    "prompt": "Công thức phân tử của Glucose và Saccharose (đường mía) lần lượt là gì?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "C6H12O6 (Glucose) và C12H22O11 (Saccharose)" },
+        { "id": "b", "label": "C12H22O11 (Glucose) và C6H12O6 (Saccharose)" },
+        { "id": "c", "label": "(C6H10O5)n và C6H12O6" },
+        { "id": "d", "label": "CH3COOH và C2H5OH" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Glucose là đường đơn có 6 nguyên tử carbon." },
+      { "level": 2, "text": "Saccharose là đường đôi gồm 2 gốc đường liên kết lại, có 12 nguyên tử carbon." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Công thức", "body": "Xác định CTPT của glucose và saccharose." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "Glucose: C6H12O6. Saccharose: C12H22O11." },
+      { "kind": "answer", "title": "Kết luận", "body": "C6H12O6 và C12H22O11." }
+    ],
+    "finalSolution": "Glucose: C6H12O6. Saccharose: C12H22O11.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b29-mcq-002",
+    "lessonId": "g9-b29",
+    "skillIds": ["carbohydrate-identification"],
+    "difficulty": 2,
+    "prompt": "Để phân biệt dung dịch Glucose và dung dịch Saccharose, người ta dùng phản ứng nào sau đây?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Phản ứng tráng bạc với dung dịch AgNO3 trong NH3 đun nóng (chỉ Glucose có kết tủa bạc sáng bóng bám thành ống)" },
+        { "id": "b", "label": "Nhỏ dung dịch acid HCl" },
+        { "id": "c", "label": "Đun sôi để kiểm tra bay hơi" },
+        { "id": "d", "label": "Dùng quỳ tím thử độ pH" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Glucose có nhóm chức aldehyde (-CHO) nên có tính khử mạnh, tráng gương được." },
+      { "level": 2, "text": "Saccharose không có nhóm -CHO tự do nên không tham gia phản ứng tráng bạc trực tiếp." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận biết", "body": "Phân biệt glucose và saccharose." },
+      { "kind": "knowledge", "title": "Thuốc thử", "body": "Thuốc thử: dung dịch AgNO3 trong NH3. Glucose cho lớp bạc kim loại sáng bóng bám vào thành ống nghiệm (phản ứng tráng gương). Saccharose không có." },
+      { "kind": "answer", "title": "Kết luận", "body": "Phản ứng tráng bạc (AgNO3/NH3)." }
+    ],
+    "finalSolution": "Dùng AgNO3 trong NH3 đun nóng. Glucose tạo kết tủa bạc sáng bóng (tráng gương), Saccharose không phản ứng.",
+    "commonMistakes": [
+      { "id": "quỳ tím", "message": "Cả glucose và saccharose đều trung tính, không làm đổi màu quỳ tím." }
+    ]
+  },
+  {
+    "id": "g9-b29-sort-001",
+    "lessonId": "g9-b29",
+    "skillIds": ["carbohydrate-identification"],
+    "difficulty": 1,
+    "prompt": "Phân loại các nguồn gốc tự nhiên sau theo loại đường phong phú nhất có trong nó.",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "glucose", "label": "Nguồn giàu Glucose (Đường nho)" },
+        { "id": "saccharose", "label": "Nguồn giàu Saccharose (Đường mía)" }
+      ],
+      "items": [
+        { "id": "s1", "label": "Quả nho chín", "bucketId": "glucose" },
+        { "id": "s2", "label": "Cây mía đường", "bucketId": "saccharose" },
+        { "id": "s3", "label": "Mật ong (chiếm ~30%)", "bucketId": "glucose" },
+        { "id": "s4", "label": "Củ cải đường", "bucketId": "saccharose" },
+        { "id": "s5", "label": "Máu người (nồng độ khoảng 0,1%)", "bucketId": "glucose" },
+        { "id": "s6", "label": "Hoa thốt nốt", "bucketId": "saccharose" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Glucose có nhiều trong nho chín, mật ong, máu." },
+      { "level": 2, "text": "Saccharose có nhiều trong mía, củ cải đường, thốt nốt." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại", "body": "Tách 6 nguồn đường theo glucose và saccharose." },
+      { "kind": "knowledge", "title": "Phân bố", "body": "Glucose: quả nho chín, mật ong, máu người. Saccharose: mía, củ cải đường, thốt nốt." },
+      { "kind": "answer", "title": "Kết quả", "body": "Glucose: s1, s3, s5. Saccharose: s2, s4, s6." }
+    ],
+    "finalSolution": "Glucose: quả nho, mật ong, máu. Saccharose: mía, củ cải đường, thốt nốt.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b29-tf-001",
+    "lessonId": "g9-b29",
+    "skillIds": ["carbohydrate-identification"],
+    "difficulty": 2,
+    "prompt": "Xác định các phát biểu sau về Glucose và Saccharose là Đúng hay Sai.",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Khi đun nóng dung dịch Saccharose với acid làm xúc tác, saccharose bị thủy phân tạo thành glucose và fructose.", "correct": true },
+        { "id": "s2", "text": "Glucose được dùng làm dịch truyền y tế để tiếp sức cho người ốm mệt.", "correct": true },
+        { "id": "s3", "text": "Saccharose có thể tham gia phản ứng tráng bạc trực tiếp mà không cần thủy phân.", "correct": false },
+        { "id": "s4", "text": "Cả glucose và saccharose đều là chất rắn màu trắng, vị ngọt, dễ tan trong nước.", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Saccharose PHẢI qua thủy phân thành glucose/fructose rồi mới tráng bạc được." },
+      { "level": 2, "text": "C12H22O11 + H2O --acid, to--> C6H12O6 (glucose) + C6H12O6 (fructose)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích", "body": "Xét tính chất và ứng dụng của 2 loại đường." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "S1: Đúng (thủy phân ra glucose + fructose). S2: Đúng (dịch truyền). S3: Sai (không tráng bạc trực tiếp). S4: Đúng (chất rắn trắng, ngọt, tan tốt)." },
+      { "kind": "answer", "title": "Kết quả", "body": "S1: Đúng, S2: Đúng, S3: Sai, S4: Đúng." }
+    ],
+    "finalSolution": "Saccharose không tráng bạc trực tiếp (S3 Sai). S1, S2, S4 đều đúng.",
+    "commonMistakes": []
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "g9-b21-mcq-001",
+    "lessonId": "g9-b21",
+    "skillIds": ["metal-vs-nonmetal"],
+    "difficulty": 1,
+    "prompt": "Về tính chất vật lí, điểm khác biệt cơ bản nhất giữa đa số kim loại và phi kim là gì?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Kim loại dẫn điện, dẫn nhiệt tốt và có ánh kim; phi kim hầu như không dẫn điện" },
+        { "id": "b", "label": "Phi kim luôn ở thể lỏng, còn kim loại luôn ở thể rắn" },
+        { "id": "c", "label": "Kim loại giòn dễ vỡ, phi kim có tính dẻo cao" },
+        { "id": "d", "label": "Kim loại có nhiệt độ nóng chảy thấp hơn phi kim" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Kim loại có các electron tự do nên dẫn điện, dẫn nhiệt rất tốt và có ánh kim." },
+      { "level": 2, "text": "Phi kim (trừ than chì) không có electron tự do nên không dẫn điện." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "So sánh", "body": "So sánh tính chất vật lí kim loại và phi kim." },
+      { "kind": "knowledge", "title": "Đặc tính", "body": "Kim loại: dẻo, ánh kim, dẫn điện, dẫn nhiệt tốt. Phi kim: giòn, không ánh kim, dẫn điện/nhiệt kém." },
+      { "kind": "answer", "title": "Kết luận", "body": "Kim loại dẫn điện, dẫn nhiệt và có ánh kim." }
+    ],
+    "finalSolution": "Kim loại dẫn điện, dẫn nhiệt tốt và có ánh kim; phi kim hầu như không dẫn điện (trừ graphite).",
+    "commonMistakes": [
+      { "id": "confuse-graphite", "message": "Graphite (than chì) là ngoại lệ phi kim dẫn điện, nhưng nhìn chung phi kim không dẫn điện." }
+    ]
+  },
+  {
+    "id": "g9-b21-sort-001",
+    "lessonId": "g9-b21",
+    "skillIds": ["metal-vs-nonmetal"],
+    "difficulty": 1,
+    "prompt": "Phân loại các tính chất và đặc điểm sau vào nhóm \"Kim loại\" hoặc \"Phi kim\".",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "metal", "label": "Kim loại" },
+        { "id": "nonmetal", "label": "Phi kim" }
+      ],
+      "items": [
+        { "id": "p1", "label": "Có tính dẻo, dễ dát mỏng, kéo sợi", "bucketId": "metal" },
+        { "id": "p2", "label": "Thường tạo oxide acid khi tác dụng với oxy", "bucketId": "nonmetal" },
+        { "id": "p3", "label": "Có ánh kim đặc trưng", "bucketId": "metal" },
+        { "id": "p4", "label": "Tác dụng với dung dịch acid HCl giải phóng khí H2", "bucketId": "metal" },
+        { "id": "p5", "label": "Đa số ở thể khí hoặc chất rắn xốp, giòn", "bucketId": "nonmetal" },
+        { "id": "p6", "label": "Có độ âm điện lớn, dễ nhận electron", "bucketId": "nonmetal" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Dẻo, ánh kim, tác dụng acid tạo H2 -> Kim loại." },
+      { "level": 2, "text": "Tạo oxit axit, độ âm điện lớn, thể khí/giòn -> Phi kim." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân nhóm", "body": "Tách 6 đặc điểm thành kim loại và phi kim." },
+      { "kind": "knowledge", "title": "So sánh", "body": "Kim loại: p1, p3, p4. Phi kim: p2, p5, p6." },
+      { "kind": "answer", "title": "Kết quả", "body": "Kim loại: dẻo, ánh kim, sinh H2. Phi kim: oxit axit, giòn/khí, hút e." }
+    ],
+    "finalSolution": "Kim loại: tính dẻo, ánh kim, tạo H2 với acid. Phi kim: oxit acid, thể khí/giòn, nhận e.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b21-tf-001",
+    "lessonId": "g9-b21",
+    "skillIds": ["metal-vs-nonmetal"],
+    "difficulty": 1,
+    "prompt": "Xác định các phát biểu sau là Đúng hay Sai.",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Ở điều kiện thường, thủy ngân (Hg) là kim loại duy nhất ở thể lỏng.", "correct": true },
+        { "id": "s2", "text": "Tất cả các phi kim đều không thể dẫn điện trong mọi điều kiện.", "correct": false },
+        { "id": "s3", "text": "Oxit của kim loại đa số là oxit bazo hoặc oxit lưỡng tính.", "correct": true },
+        { "id": "s4", "text": "Kim loại chiếm số lượng ít hơn phi kim trong bảng tuần hoàn.", "correct": false }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Than chì (graphite) là phi kim nhưng dẫn điện tốt." },
+      { "level": 2, "text": "Kim loại chiếm khoảng hơn 80% tổng số nguyên tố (đa số)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích", "body": "Xét từng phát biểu." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "S1: Đúng (Hg thể lỏng). S2: Sai (than chì dẫn điện). S3: Đúng. S4: Sai (kim loại chiếm đa số)." },
+      { "kind": "answer", "title": "Kết quả", "body": "S1: Đúng, S2: Sai, S3: Đúng, S4: Sai." }
+    ],
+    "finalSolution": "S1: Đúng. S2: Sai (than chì dẫn điện). S3: Đúng. S4: Sai (kim loại chiếm >80%).",
+    "commonMistakes": [
+      { "id": "graphite-exception", "message": "Cần nhớ than chì là dạng thù hình của Carbon dẫn điện được." }
+    ]
+  },
+  {
+    "id": "g9-b21-match-001",
+    "lessonId": "g9-b21",
+    "skillIds": ["metal-vs-nonmetal"],
+    "difficulty": 2,
+    "prompt": "Ghép cặp từng nguyên tố với ứng dụng quan trọng tương ứng của nó.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Nhôm (Al)", "right": "Chế tạo vỏ máy bay, dây điện trên cao" },
+        { "left": "Đồng (Cu)", "right": "Lõi dây dẫn điện gia dụng" },
+        { "left": "Chlorine (Cl2)", "right": "Khử trùng nước sinh hoạt, tẩy trắng" },
+        { "left": "Carbon (than hoạt tính)", "right": "Hấp phụ khí độc, lọc nước" },
+        { "left": "Sắt (Fe)", "right": "Vật liệu xây dựng kết cấu khung nhà" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Al nhẹ làm máy bay; Cu dẫn điện tốt làm dây điện; Cl2 khử trùng; C lọc nước." },
+      { "level": 2, "text": "Ghép từng nguyên tố với ứng dụng quen thuộc trong đời sống." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Ghép nối", "body": "Tìm ứng dụng tương ứng cho 5 nguyên tố." },
+      { "kind": "knowledge", "title": "Ứng dụng", "body": "Al: vỏ máy bay; Cu: lõi dây điện; Cl2: khử trùng; Than hoạt tính: lọc nước; Fe: kết cấu xây dựng." },
+      { "kind": "answer", "title": "Kết quả", "body": "Ghép đúng 5 cặp nguyên tố - ứng dụng." }
+    ],
+    "finalSolution": "Al ↔ Vỏ máy bay. Cu ↔ Lõi dây điện. Cl2 ↔ Khử trùng nước. Carbon ↔ Hấp phụ lọc nước. Fe ↔ Xây dựng.",
+    "commonMistakes": []
+  }
+]

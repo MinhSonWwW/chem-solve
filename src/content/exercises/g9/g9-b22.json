@@ -1,0 +1,120 @@
+[
+  {
+    "id": "g9-b22-mcq-001",
+    "lessonId": "g9-b22",
+    "skillIds": ["organic-intro"],
+    "difficulty": 1,
+    "prompt": "Hợp chất hữu cơ là hợp chất của nguyên tố nào sau đây?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Carbon (trừ CO, CO2, H2CO3, muối cacbonat kim loại...)" },
+        { "id": "b", "label": "Bất kì hợp chất nào chứa nguyên tố oxy" },
+        { "id": "c", "label": "Chỉ gồm hợp chất của hydro và nitơ" },
+        { "id": "d", "label": "Tất cả các chất có trong cơ thể sống" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Hợp chất hữu cơ nhất thiết phải có nguyên tố carbon." },
+      { "level": 2, "text": "Một số oxit của carbon (CO, CO2) và muối cacbonat (CaCO3, Na2CO3) là hợp chất vô cơ." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Định nghĩa", "body": "Khái niệm hợp chất hữu cơ." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "Hợp chất hữu cơ là hợp chất của carbon (trừ CO, CO2, H2CO3, các muối cacbonat, xianua, cacbua...)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hợp chất của carbon trừ một số chất vô cơ đơn giản." }
+    ],
+    "finalSolution": "Hợp chất hữu cơ là hợp chất của carbon (trừ CO, CO2, axit cacbonic và các muối cacbonat...).",
+    "commonMistakes": [
+      { "id": "picked-co2", "message": "CO2, CaCO3 chứa C nhưng là hợp chất vô cơ." }
+    ]
+  },
+  {
+    "id": "g9-b22-sort-001",
+    "lessonId": "g9-b22",
+    "skillIds": ["organic-intro"],
+    "difficulty": 1,
+    "prompt": "Phân loại các chất sau thành \"Hợp chất hữu cơ\" hoặc \"Hợp chất vô cơ\".",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "organic", "label": "Hợp chất hữu cơ" },
+        { "id": "inorganic", "label": "Hợp chất vô cơ" }
+      ],
+      "items": [
+        { "id": "c1", "label": "CH4 (Methane)", "bucketId": "organic" },
+        { "id": "c2", "label": "CaCO3 (Đá vôi)", "bucketId": "inorganic" },
+        { "id": "c3", "label": "C2H5OH (Rượu etylic)", "bucketId": "organic" },
+        { "id": "c4", "label": "CO2 (Khí cacbonic)", "bucketId": "inorganic" },
+        { "id": "c5", "label": "CH3COOH (Axit axetic)", "bucketId": "organic" },
+        { "id": "c6", "label": "NaCl (Muối ăn)", "bucketId": "inorganic" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "CH4, C2H5OH, CH3COOH chứa C liên kết H/O -> Hợp chất hữu cơ." },
+      { "level": 2, "text": "CaCO3, CO2, NaCl là hợp chất vô cơ." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại", "body": "Tách 6 chất thành hữu cơ và vô cơ." },
+      { "kind": "knowledge", "title": "Phân loại", "body": "Hữu cơ: CH4, C2H5OH, CH3COOH. Vô cơ: CaCO3, CO2, NaCl." },
+      { "kind": "answer", "title": "Kết quả", "body": "Hữu cơ: CH4, C2H5OH, CH3COOH. Vô cơ: CaCO3, CO2, NaCl." }
+    ],
+    "finalSolution": "Hữu cơ: CH4, C2H5OH, CH3COOH. Vô cơ: CaCO3, CO2, NaCl.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b22-mcq-002",
+    "lessonId": "g9-b22",
+    "skillIds": ["organic-intro"],
+    "difficulty": 2,
+    "prompt": "Hợp chất hữu cơ được phân thành hai nhóm lớn nào sau đây?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Hydrocarbon và Dẫn xuất của hydrocarbon" },
+        { "id": "b", "label": "Chất rắn và Chất khí" },
+        { "id": "c", "label": "Axit hữu cơ và Bazo hữu cơ" },
+        { "id": "d", "label": "Chất tự nhiên và Chất tổng hợp" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Hydrocarbon chỉ gồm C và H; khi có thêm O, N, Cl... thì gọi là dẫn xuất." },
+      { "level": 2, "text": "Hai nhóm chính trong SGK: Hydrocarbon và Dẫn xuất của hydrocarbon." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại", "body": "Xác định 2 nhóm lớn của hợp chất hữu cơ." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "1. Hydrocarbon (chỉ chứa C, H). 2. Dẫn xuất hydrocarbon (ngoài C, H còn có O, N, Halogen...)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hydrocarbon và Dẫn xuất của hydrocarbon." }
+    ],
+    "finalSolution": "Hai nhóm lớn: Hydrocarbon (chỉ C và H) và Dẫn xuất của hydrocarbon (có thêm O, Cl, N...).",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b22-tf-001",
+    "lessonId": "g9-b22",
+    "skillIds": ["organic-intro"],
+    "difficulty": 1,
+    "prompt": "Xác định các phát biểu sau về hợp chất hữu cơ là Đúng hay Sai.",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Trong phân tử hợp chất hữu cơ, nguyên tử Carbon luôn có hóa trị IV.", "correct": true },
+        { "id": "s2", "text": "Các nguyên tử carbon có thể liên kết trực tiếp với nhau tạo thành mạch thẳng, mạch nhánh hoặc mạch vòng.", "correct": true },
+        { "id": "s3", "text": "Các hợp chất hữu cơ thường có nhiệt độ nóng chảy và nhiệt độ sôi cao hơn hợp chất ion vô cơ.", "correct": false },
+        { "id": "s4", "text": "Phần lớn hợp chất hữu cơ dễ cháy và ít tan trong nước.", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Hợp chất hữu cơ liên kết cộng hóa trị nên nhiệt độ sôi và nóng chảy thấp." },
+      { "level": 2, "text": "Carbon luôn có hóa trị IV trong các hợp chất hữu cơ." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích", "body": "Xét từng phát biểu về đặc điểm cấu tạo và tính chất chất hữu cơ." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "C hóa trị IV (Đúng); Mạch carbon đa dạng (Đúng); Nhiệt độ sôi thấp (S3 Sai); Dễ cháy, ít tan trong nước (Đúng)." },
+      { "kind": "answer", "title": "Kết quả", "body": "S1: Đúng, S2: Đúng, S3: Sai, S4: Đúng." }
+    ],
+    "finalSolution": "Nhiệt độ sôi hữu cơ thấp hơn vô cơ (S3 Sai). S1, S2, S4 đều đúng.",
+    "commonMistakes": []
+  }
+]

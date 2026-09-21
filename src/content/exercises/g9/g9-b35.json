@@ -1,0 +1,120 @@
+[
+  {
+    "id": "g9-b35-mcq-001",
+    "lessonId": "g9-b35",
+    "skillIds": ["carbon-cycle-environment"],
+    "difficulty": 1,
+    "prompt": "Khí nào sau đây là nguyên nhân chính gây nên hiệu ứng nhà kính làm Trái Đất nóng lên?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Carbon dioxide (CO2) và Methane (CH4)" },
+        { "id": "b", "label": "Oxygen (O2)" },
+        { "id": "c", "label": "Nitrogen (N2)" },
+        { "id": "d", "label": "Helium (He)" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Việc đốt than đá, dầu mỏ và khí đốt thải ra hàng tỉ tấn khí này mỗi năm." },
+      { "level": 2, "text": "CO2 và CH4 có khả năng giữ lại bức xạ nhiệt của Mặt Trời không cho thoát ra ngoài không gian." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Khí nhà kính", "body": "Xác định các khí chính gây hiệu ứng nhà kính." },
+      { "kind": "knowledge", "title": "Cơ chế", "body": "CO2 là khí nhà kính phổ biến nhất do con người thải ra. CH4 (methane) cũng có khả năng giữ nhiệt rất mạnh." },
+      { "kind": "answer", "title": "Kết luận", "body": "Carbon dioxide (CO2) và Methane (CH4)." }
+    ],
+    "finalSolution": "Khí CO2 và CH4 là thủ phạm hàng đầu gây hiệu ứng nhà kính và biến đổi khí hậu toàn cầu.",
+    "commonMistakes": [
+      { "id": "confuse-ozone", "message": "O3 bảo vệ tầng đối lưu khỏi tia cực tím; CO2 và CH4 mới là khí nhà kính chính gây nóng lên toàn cầu." }
+    ]
+  },
+  {
+    "id": "g9-b35-sort-001",
+    "lessonId": "g9-b35",
+    "skillIds": ["carbon-cycle-environment"],
+    "difficulty": 1,
+    "prompt": "Phân loại các quá trình sau trong chu trình Carbon vào nhóm \"Làm tăng khí CO2\" hoặc \"Làm giảm khí CO2 trong khí quyển\".",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "increase", "label": "Quá trình làm tăng CO2" },
+        { "id": "decrease", "label": "Quá trình làm giảm CO2" }
+      ],
+      "items": [
+        { "id": "c1", "label": "Đốt nhiên liệu hóa thạch (than, xăng, dầu)", "bucketId": "increase" },
+        { "id": "c2", "label": "Quang hợp của cây xanh và rừng", "bucketId": "decrease" },
+        { "id": "c3", "label": "Hô hấp của động vật và con người", "bucketId": "increase" },
+        { "id": "c4", "label": "Hòa tan CO2 vào nước biển tạo muối cacbonat", "bucketId": "decrease" },
+        { "id": "c5", "label": "Cháy rừng và đốt rơm rạ", "bucketId": "increase" },
+        { "id": "c6", "label": "Trồng rừng ngập mặn và phủ xanh đồi trọc", "bucketId": "decrease" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Đốt cháy, hô hấp, cháy rừng thải ra CO2 -> Làm tăng." },
+      { "level": 2, "text": "Quang hợp cây xanh, hòa tan biển, trồng rừng hấp thụ CO2 -> Làm giảm." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại", "body": "Tách 6 quá trình theo chiều hướng tác động nồng độ CO2." },
+      { "kind": "knowledge", "title": "Chu trình carbon", "body": "Tăng CO2: đốt nhiên liệu, hô hấp, cháy rừng. Giảm CO2: quang hợp, hòa tan vào đại dương, trồng rừng." },
+      { "kind": "answer", "title": "Kết quả", "body": "Tăng: c1, c3, c5. Giảm: c2, c4, c6." }
+    ],
+    "finalSolution": "Tăng CO2: đốt nhiên liệu, hô hấp, cháy rừng. Giảm CO2: quang hợp, hòa tan biển, trồng rừng.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b35-mcq-002",
+    "lessonId": "g9-b35",
+    "skillIds": ["carbon-cycle-environment"],
+    "difficulty": 1,
+    "prompt": "Hành động nào sau đây của mỗi học sinh góp phần thiết thực nhất giúp giảm phát thải carbon và bảo vệ môi trường?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Đi bộ hoặc xe đạp, tắt thiết bị điện khi không dùng và tích cực trồng cây xanh" },
+        { "id": "b", "label": "Lạm dụng túi nilon và đồ nhựa một lần rồi vứt bừa bãi" },
+        { "id": "c", "label": "Bật điều hòa ở nhiệt độ 16°C cả ngày lẫn đêm dù không có người" },
+        { "id": "d", "label": "Đốt các loại rác thải cao su và nhựa tại vườn nhà" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Tiết kiệm điện và sử dụng phương tiện xanh giúp giảm lượng than đá phải đốt ở các nhà máy nhiệt điện." },
+      { "level": 2, "text": "Trồng cây xanh giúp hấp thụ bớt khí CO2 qua quá trình quang hợp." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Hành động xanh", "body": "Chọn biện pháp giảm thiểu dấu chân carbon." },
+      { "kind": "knowledge", "title": "Giải pháp", "body": "Tiết kiệm năng lượng, đi xe đạp, trồng cây xanh là các hành động thiết thực của học sinh." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đi bộ/xe đạp, tiết kiệm điện, trồng cây." }
+    ],
+    "finalSolution": "Đi bộ, đi xe đạp, tiết kiệm điện và trồng cây xanh giúp giảm phát thải carbon hiệu quả.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b35-tf-001",
+    "lessonId": "g9-b35",
+    "skillIds": ["carbon-cycle-environment"],
+    "difficulty": 1,
+    "prompt": "Xác định các hậu quả của hiện tượng biến đổi khí hậu do hiệu ứng nhà kính là Đúng hay Sai.",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Băng ở hai cực và các đỉnh núi cao tan nhanh làm mực nước biển dâng cao, đe dọa các vùng ven biển.", "correct": true },
+        { "id": "s2", "text": "Các hiện tượng thời tiết cực đoan như bão lũ, hạn hán khốc liệt xảy ra thường xuyên hơn.", "correct": true },
+        { "id": "s3", "text": "Hiệu ứng nhà kính hoàn toàn không ảnh hưởng gì đến sản xuất nông nghiệp và an ninh lương thực.", "correct": false },
+        { "id": "s4", "text": "Axit hóa đại dương do nồng độ CO2 hòa tan tăng cao đe dọa trực tiếp các rạn san hô và sinh vật biển.", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Hạn hán, ngập mặn ảnh hưởng nặng nề đến năng suất cây trồng và an ninh lương thực." },
+      { "level": 2, "text": "Nước biển dâng, bão lũ, axit hóa đại dương là các hậu quả nhãn tiền." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích", "body": "Xét các hệ quả của nóng lên toàn cầu." },
+      { "kind": "knowledge", "title": "Hệ quả", "body": "S1: Đúng (băng tan). S2: Đúng (thời tiết cực đoan). S3: Sai (ảnh hưởng nặng tới nông nghiệp). S4: Đúng (axit hóa đại dương)." },
+      { "kind": "answer", "title": "Kết quả", "body": "S1: Đúng, S2: Đúng, S3: Sai, S4: Đúng." }
+    ],
+    "finalSolution": "Biến đổi khí hậu ảnh hưởng sâu sắc đến nông nghiệp và an ninh lương thực (S3 Sai). S1, S2, S4 đều đúng.",
+    "commonMistakes": []
+  }
+]

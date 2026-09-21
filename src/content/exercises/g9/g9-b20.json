@@ -1,0 +1,181 @@
+[
+  {
+    "id": "g9-b20-mcq-001",
+    "lessonId": "g9-b20",
+    "skillIds": ["metal-extraction"],
+    "difficulty": 1,
+    "prompt": "Phương pháp nhiệt luyện thường được dùng để điều chế các kim loại có mức độ hoạt động hóa học như thế nào?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Kim loại có độ hoạt động trung bình và yếu (sau Al như Zn, Fe, Cu)" },
+        { "id": "b", "label": "Kim loại hoạt động rất mạnh (K, Na, Ca, Mg, Al)" },
+        { "id": "c", "label": "Tất cả các kim loại trong bảng tuần hoàn" },
+        { "id": "d", "label": "Chỉ duy nhất kim loại sắt (Fe)" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Kim loại mạnh (K, Na, Mg, Al) cần dùng phương pháp điện phân nóng chảy." },
+      { "level": 2, "text": "Nhiệt luyện dùng chất khử như CO, H2, C để khử oxide kim loại từ Zn trở về sau." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đọc yêu cầu", "body": "Xác định phạm vi áp dụng của phương pháp nhiệt luyện." },
+      { "kind": "knowledge", "title": "Nguyên tắc", "body": "Kim loại mạnh (K, Na, Ca, Mg, Al): điện phân nóng chảy. Kim loại trung bình, yếu (sau Al): nhiệt luyện." },
+      { "kind": "answer", "title": "Kết luận", "body": "Nhiệt luyện áp dụng cho kim loại trung bình và yếu." }
+    ],
+    "finalSolution": "Phương pháp nhiệt luyện dùng chất khử (CO, C, H2) khử oxit của kim loại đứng sau Al (Zn, Fe, Cu, Pb...).",
+    "commonMistakes": [
+      { "id": "confuse-al", "message": "Nhôm (Al) và các kim loại mạnh hơn phải dùng điện phân nóng chảy, không thể dùng nhiệt luyện bằng CO." }
+    ]
+  },
+  {
+    "id": "g9-b20-mcq-002",
+    "lessonId": "g9-b20",
+    "skillIds": ["metal-extraction"],
+    "difficulty": 1,
+    "prompt": "Sự khác nhau cơ bản về thành phần giữa gang và thép là gì?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Hàm lượng carbon trong gang (2 - 5%) cao hơn trong thép (dưới 2%)" },
+        { "id": "b", "label": "Gang không chứa sắt, còn thép chứa sắt" },
+        { "id": "c", "label": "Hàm lượng carbon trong thép cao hơn trong gang" },
+        { "id": "d", "label": "Thép là đơn chất, còn gang là hợp chất" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Cả gang và thép đều là hợp kim của sắt với carbon và một số nguyên tố khác." },
+      { "level": 2, "text": "Gang chứa 2 - 5% carbon, giòn hơn; Thép chứa < 2% carbon, dẻo và đàn hồi hơn." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "So sánh", "body": "So sánh hàm lượng carbon trong gang và thép." },
+      { "kind": "knowledge", "title": "Định nghĩa", "body": "Gang: 2% đến 5% C. Thép: dưới 2% C (thường 0,01% đến 2%)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hàm lượng carbon trong gang cao hơn trong thép." }
+    ],
+    "finalSolution": "Gang chứa 2 - 5% C (giòn, đúc tốt), thép chứa < 2% C (dẻo, rèn và dát mỏng tốt).",
+    "commonMistakes": [
+      { "id": "reverse-c-content", "message": "Nhiều bạn nhớ nhầm hàm lượng C trong thép cao hơn gang." }
+    ]
+  },
+  {
+    "id": "g9-b20-sort-001",
+    "lessonId": "g9-b20",
+    "skillIds": ["metal-extraction"],
+    "difficulty": 2,
+    "prompt": "Phân loại các phương pháp điều chế tương ứng với các kim loại sau.",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "electrolysis", "label": "Điện phân nóng chảy (Kim loại mạnh)" },
+        { "id": "pyrometallurgy", "label": "Nhiệt luyện (Kim loại TB & yếu)" }
+      ],
+      "items": [
+        { "id": "m1", "label": "Nhôm (Al)", "bucketId": "electrolysis" },
+        { "id": "m2", "label": "Sắt (Fe)", "bucketId": "pyrometallurgy" },
+        { "id": "m3", "label": "Natri (Na)", "bucketId": "electrolysis" },
+        { "id": "m4", "label": "Đồng (Cu)", "bucketId": "pyrometallurgy" },
+        { "id": "m5", "label": "Magie (Mg)", "bucketId": "electrolysis" },
+        { "id": "m6", "label": "Kẽm (Zn)", "bucketId": "pyrometallurgy" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Kim loại trước Al và Al (Na, Mg, Al) dùng điện phân nóng chảy." },
+      { "level": 2, "text": "Kim loại sau Al (Fe, Cu, Zn) dùng nhiệt luyện với chất khử như CO, C." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại", "body": "Tách 6 kim loại theo 2 phương pháp điều chế." },
+      { "kind": "knowledge", "title": "Nguyên tắc", "body": "Al, Na, Mg: điện phân nóng chảy. Fe, Cu, Zn: nhiệt luyện." },
+      { "kind": "answer", "title": "Kết quả", "body": "Điện phân: Al, Na, Mg. Nhiệt luyện: Fe, Cu, Zn." }
+    ],
+    "finalSolution": "Điện phân nóng chảy: Na, Mg, Al. Nhiệt luyện: Zn, Fe, Cu.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b20-tf-001",
+    "lessonId": "g9-b20",
+    "skillIds": ["metal-extraction"],
+    "difficulty": 1,
+    "prompt": "Xác định các phát biểu sau về sản xuất gang và thép là Đúng hay Sai.",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Nguyên liệu chính sản xuất gang trong lò cao là quặng sắt, than cốc và đá vôi.", "correct": true },
+        { "id": "s2", "text": "Khí CO đóng vai trò là chất oxi hóa trong lò cao luyện gang.", "correct": false },
+        { "id": "s3", "text": "Quá trình luyện thép là làm giảm hàm lượng carbon và các tạp chất có trong gang.", "correct": true },
+        { "id": "s4", "text": "Hợp kim thường có độ cứng và độ bền cơ học cao hơn kim loại nguyên chất.", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "CO nhận oxy từ oxit sắt nên CO là chất khử, không phải chất oxi hóa." },
+      { "level": 2, "text": "Luyện thép là thổi oxy vào gang nóng chảy để đốt cháy bớt carbon." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích", "body": "Xét từng phát biểu." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "S1: Đúng (quặng, than cốc, đá vôi). S2: Sai (CO là chất khử). S3: Đúng (thép có ít C hơn gang). S4: Đúng (hợp kim bền cứng hơn)." },
+      { "kind": "answer", "title": "Kết quả", "body": "S1: Đúng, S2: Sai, S3: Đúng, S4: Đúng." }
+    ],
+    "finalSolution": "CO là chất khử (S2 sai). S1, S3, S4 đều đúng.",
+    "commonMistakes": [
+      { "id": "co-role", "message": "CO lấy oxi của Fe2O3: Fe2O3 + 3CO -> 2Fe + 3CO2. CO là chất khử." }
+    ]
+  },
+  {
+    "id": "g9-b20-mcq-003",
+    "lessonId": "g9-b20",
+    "skillIds": ["metal-extraction"],
+    "difficulty": 2,
+    "prompt": "Khí CO khử hoàn toàn sắt(III) oxide (Fe2O3) ở nhiệt độ cao theo phương trình nào sau đây?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Fe2O3 + 3CO -> 2Fe + 3CO2 (to)" },
+        { "id": "b", "label": "Fe2O3 + CO -> 2FeO + CO2" },
+        { "id": "c", "label": "Fe2O3 + 3C -> 2Fe + 3CO" },
+        { "id": "d", "label": "2Fe2O3 + 3CO -> 4Fe + 3CO2" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "1 phân tử Fe2O3 chứa 3 nguyên tử O, cần 3 phân tử CO để lấy hết O tạo 3 phân tử CO2." },
+      { "level": 2, "text": "Phương trình cân bằng: Fe2O3 + 3CO -> 2Fe + 3CO2." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Yêu cầu", "body": "Xác định phương trình khử Fe2O3 bằng CO." },
+      { "kind": "knowledge", "title": "Phương trình", "body": "Fe2O3 + 3CO --to--> 2Fe + 3CO2." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đáp án A: Fe2O3 + 3CO -> 2Fe + 3CO2." }
+    ],
+    "finalSolution": "Fe2O3 + 3CO --to--> 2Fe + 3CO2.",
+    "commonMistakes": [
+      { "id": "unbalanced-equation", "message": "Chú ý hệ số cân bằng tỉ lệ 1 Fe2O3 : 3 CO : 2 Fe : 3 CO2." }
+    ]
+  },
+  {
+    "id": "g9-b20-ordering-001",
+    "lessonId": "g9-b20",
+    "skillIds": ["metal-extraction"],
+    "difficulty": 2,
+    "prompt": "Sắp xếp thứ tự các giai đoạn chính của quá trình sản xuất gang trong lò cao từ dưới lên trên.",
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Đốt cháy than cốc: C + O2 -> CO2",
+        "Khí CO2 bị than khử thành CO: C + CO2 -> 2CO",
+        "Khí CO khử oxit sắt qua từng nấc tạo Fe",
+        "Tạo xỉ từ đá vôi CaCO3 để tách tạp chất"
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Đầu tiên than cốc cháy tạo nhiệt và CO2 ở đáy lò." },
+      { "level": 2, "text": "CO2 đi lên gặp than nóng tạo CO khử quặng, xỉ nhẹ nổi lên trên gang lỏng." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Trình tự", "body": "Sắp xếp các phản ứng trong lò cao." },
+      { "kind": "knowledge", "title": "Quá trình", "body": "C cháy -> tạo CO -> khử oxit sắt -> tạo xỉ bảo vệ gang lỏng." },
+      { "kind": "answer", "title": "Thứ tự", "body": "Đốt than -> tạo CO -> khử quặng -> tạo xỉ." }
+    ],
+    "finalSolution": "C + O2 -> CO2; C + CO2 -> 2CO; CO khử oxit sắt; CaCO3 tạo xỉ.",
+    "commonMistakes": []
+  }
+]

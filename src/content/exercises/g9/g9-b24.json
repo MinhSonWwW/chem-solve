@@ -1,0 +1,120 @@
+[
+  {
+    "id": "g9-b24-mcq-001",
+    "lessonId": "g9-b24",
+    "skillIds": ["alkene-ethylene"],
+    "difficulty": 1,
+    "prompt": "Đặc điểm cấu tạo phân tử nổi bật của Ethylene (C2H4) khác với Methane (CH4) là gì?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Chứa một liên kết đôi C=C (gồm 1 liên kết bền và 1 liên kết kém bền dễ đứt)" },
+        { "id": "b", "label": "Chỉ chứa toàn bộ liên kết đơn C-H bền vững" },
+        { "id": "c", "label": "Chứa liên kết ba C≡C" },
+        { "id": "d", "label": "Có vòng carbon khép kín" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Công thức cấu tạo của ethylene là CH2=CH2." },
+      { "level": 2, "text": "Liên kết đôi C=C có 1 liên kết pi kém bền, dễ bị bẻ gãy trong các phản ứng cộng." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Cấu tạo", "body": "Đặc điểm liên kết trong phân tử ethylene." },
+      { "kind": "knowledge", "title": "Cấu trúc", "body": "C2H4: CH2=CH2. Trong liên kết đôi có một liên kết kém bền, dễ đứt ra trong phản ứng hóa học." },
+      { "kind": "answer", "title": "Kết luận", "body": "Chứa một liên kết đôi C=C gồm 1 liên kết bền và 1 liên kết kém bền." }
+    ],
+    "finalSolution": "Phân tử ethylene có chứa một liên kết đôi C=C (CH2=CH2).",
+    "commonMistakes": [
+      { "id": "confuse-triple-bond", "message": "Liên kết ba C≡C là của axetilen (C2H2), không phải etilen." }
+    ]
+  },
+  {
+    "id": "g9-b24-mcq-002",
+    "lessonId": "g9-b24",
+    "skillIds": ["alkene-ethylene"],
+    "difficulty": 1,
+    "prompt": "Khi sục khí Ethylene vào dung dịch Bromine (nước brom màu da cam), hiện tượng quan sát được là gì?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Dung dịch Bromine bị mất màu (nhạt dần rồi không màu)" },
+        { "id": "b", "label": "Xuất hiện kết tủa trắng" },
+        { "id": "c", "label": "Dung dịch chuyển sang màu xanh lam" },
+        { "id": "d", "label": "Không có hiện tượng gì, dung dịch giữ nguyên màu" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Ethylene tham gia phản ứng cộng làm đứt liên kết đôi với phân tử Br2." },
+      { "level": 2, "text": "CH2=CH2 + Br2 -> CH2Br-CH2Br (chất lỏng không màu). Dung dịch brom bị mất màu." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Hiện tượng", "body": "Khí C2H4 tác dụng với dung dịch Br2." },
+      { "kind": "knowledge", "title": "PTHH", "body": "CH2=CH2 + Br2 -> Br-CH2-CH2-Br (1,2-đibrometan không màu)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Dung dịch brom bị mất màu. Đây là phản ứng đặc trưng dùng để nhận biết alkene." }
+    ],
+    "finalSolution": "Dung dịch Bromine bị mất màu do phản ứng cộng: C2H4 + Br2 -> C2H4Br2.",
+    "commonMistakes": [
+      { "id": "no-reaction-like-ch4", "message": "Khác với methane (CH4) không làm mất màu Br2, ethylene có liên kết đôi nên phản ứng ngay ở điều kiện thường." }
+    ]
+  },
+  {
+    "id": "g9-b24-tf-001",
+    "lessonId": "g9-b24",
+    "skillIds": ["alkene-ethylene"],
+    "difficulty": 2,
+    "prompt": "Xác định các phát biểu sau về Ethylene là Đúng hay Sai.",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Phản ứng đặc trưng của ethylene là phản ứng cộng.", "correct": true },
+        { "id": "s2", "text": "Khí ethylene được dùng trong nông nghiệp để kích thích quả mau chín.", "correct": true },
+        { "id": "s3", "text": "Methane và Ethylene đều làm mất màu dung dịch Bromine ở điều kiện thường.", "correct": false },
+        { "id": "s4", "text": "Nhiều phân tử ethylene có thể kết hợp với nhau tạo thành polyethylene (nhựa PE) qua phản ứng trùng hợp.", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Methane (CH4) chỉ có liên kết đơn nên KHÔNG phản ứng với dung dịch brom." },
+      { "level": 2, "text": "n CH2=CH2 --to, p, xt--> (-CH2-CH2-)n (nhựa PE)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích", "body": "Xét từng phát biểu về tính chất và ứng dụng của ethylene." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "S1: Đúng (phản ứng cộng). S2: Đúng (giúp trái cây chín). S3: Sai (CH4 không làm mất màu Br2). S4: Đúng (trùng hợp tạo PE)." },
+      { "kind": "answer", "title": "Kết quả", "body": "S1: Đúng, S2: Đúng, S3: Sai, S4: Đúng." }
+    ],
+    "finalSolution": "CH4 không làm mất màu nước Br2 (S3 Sai). S1, S2, S4 đều đúng.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b24-sort-001",
+    "lessonId": "g9-b24",
+    "skillIds": ["alkene-ethylene"],
+    "difficulty": 2,
+    "prompt": "Phân loại các phản ứng hóa học sau vào nhóm \"Methane (CH4)\" hoặc \"Ethylene (C2H4)\".",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "ch4", "label": "Đặc trưng của Methane (CH4)" },
+        { "id": "c2h4", "label": "Đặc trưng của Ethylene (C2H4)" }
+      ],
+      "items": [
+        { "id": "r1", "label": "Phản ứng thế với Chlorine khi có ánh sáng", "bucketId": "ch4" },
+        { "id": "r2", "label": "Phản ứng cộng với dung dịch Bromine làm mất màu da cam", "bucketId": "c2h4" },
+        { "id": "r3", "label": "Phản ứng trùng hợp tạo ra nhựa PE", "bucketId": "c2h4" },
+        { "id": "r4", "label": "Phản ứng cộng khí Hydrogen (H2) có xúc tác Ni nung nóng", "bucketId": "c2h4" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Liên kết đơn -> phản ứng thế (CH4). Liên kết đôi -> phản ứng cộng và trùng hợp (C2H4)." },
+      { "level": 2, "text": "Cộng Br2, cộng H2, trùng hợp PE đều là của C2H4." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại", "body": "Tách các phản ứng đặc trưng theo từng chất." },
+      { "kind": "knowledge", "title": "Tính chất", "body": "CH4: thế halogen. C2H4: cộng Br2, cộng H2, trùng hợp." },
+      { "kind": "answer", "title": "Kết quả", "body": "CH4: r1. C2H4: r2, r3, r4." }
+    ],
+    "finalSolution": "Methane: phản ứng thế với Cl2. Ethylene: cộng Br2, cộng H2, trùng hợp PE.",
+    "commonMistakes": []
+  }
+]

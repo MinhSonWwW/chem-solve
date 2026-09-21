@@ -1,0 +1,118 @@
+[
+  {
+    "id": "g9-b34-mcq-001",
+    "lessonId": "g9-b34",
+    "skillIds": ["limestone-silicate"],
+    "difficulty": 1,
+    "prompt": "Khi nung đá vôi (CaCO3) ở nhiệt độ khoảng 900 - 1000°C trong lò nung vôi, phản ứng xảy ra tạo thành các sản phẩm nào?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Vôi sống (CaO) và khí carbon dioxide (CO2)" },
+        { "id": "b", "label": "Vôi tôi Ca(OH)2 và khí oxy" },
+        { "id": "c", "label": "Kim loại canxi (Ca) và khí CO" },
+        { "id": "d", "label": "Canxi clorua (CaCl2) và nước" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Phản ứng nhiệt phân đá vôi: CaCO3 --to--> CaO + CO2." },
+      { "level": 2, "text": "CaO gọi là vôi sống, dùng trong xây dựng và khử chua đất nông nghiệp." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhiệt phân đá vôi", "body": "Xác định sản phẩm nung CaCO3." },
+      { "kind": "knowledge", "title": "PTHH", "body": "CaCO3 --to (900-1000°C)--> CaO (vôi sống) + CO2↑." },
+      { "kind": "answer", "title": "Kết luận", "body": "Vôi sống (CaO) và khí CO2." }
+    ],
+    "finalSolution": "CaCO3 --to--> CaO (vôi sống) + CO2↑.",
+    "commonMistakes": [
+      { "id": "confuse-slaked-lime", "message": "Ca(OH)2 là vôi tôi (được tạo ra khi cho vôi sống CaO tác dụng với nước: CaO + H2O -> Ca(OH)2)." }
+    ]
+  },
+  {
+    "id": "g9-b34-sort-001",
+    "lessonId": "g9-b34",
+    "skillIds": ["limestone-silicate"],
+    "difficulty": 1,
+    "prompt": "Phân loại các công đoạn sau tương ứng với ngành sản xuất \"Xi măng\" hay \"Thủy tinh\".",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "cement", "label": "Công nghiệp Xi măng" },
+        { "id": "glass", "label": "Công nghiệp Thủy tinh" }
+      ],
+      "items": [
+        { "id": "i1", "label": "Nung hỗn hợp đá vôi và đất sét tạo clinker", "bucketId": "cement" },
+        { "id": "i2", "label": "Nung chảy cát trắng (SiO2), đá vôi và soda (Na2CO3)", "bucketId": "glass" },
+        { "id": "i3", "label": "Nghiền mịn clinker cùng thạch cao", "bucketId": "cement" },
+        { "id": "i4", "label": "Tạo hình sản phẩm bằng phương pháp thổi, ép khi còn nóng dẻo", "bucketId": "glass" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Xi măng: đá vôi + đất sét -> clinker nghiền với thạch cao." },
+      { "level": 2, "text": "Thủy tinh: cát trắng + đá vôi + soda nóng chảy thổi chai lọ." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại", "body": "Tách 4 công đoạn theo ngành xi măng và thủy tinh." },
+      { "kind": "knowledge", "title": "Quy trình", "body": "Xi măng: nung đá vôi + đất sét tạo clinker, nghiền với thạch cao. Thủy tinh: nung cát SiO2 + Na2CO3, thổi chai lọ." },
+      { "kind": "answer", "title": "Kết quả", "body": "Xi măng: i1, i3. Thủy tinh: i2, i4." }
+    ],
+    "finalSolution": "Xi măng: tạo clinker từ đá vôi/đất sét, nghiền với thạch cao. Thủy tinh: nung cát trắng/soda, thổi tạo hình.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b34-mcq-002",
+    "lessonId": "g9-b34",
+    "skillIds": ["limestone-silicate"],
+    "difficulty": 2,
+    "prompt": "Hiện tượng tôi vôi: khi cho một cục vôi sống (CaO) vào nước, hiện tượng quan sát được là gì?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Vôi sống nhão ra, phản ứng tỏa rất nhiều nhiệt làm nước sôi sùng sục, tạo thành vôi tôi Ca(OH)2" },
+        { "id": "b", "label": "Cục vôi hoàn toàn không tan và nhiệt độ nước hạ xuống lạnh buốt" },
+        { "id": "c", "label": "Xuất hiện khí màu vàng lục có mùi hắc" },
+        { "id": "d", "label": "Dung dịch chuyển sang màu đỏ tím" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "CaO + H2O -> Ca(OH)2. Đây là phản ứng tỏa nhiệt cực kì mạnh." },
+      { "level": 2, "text": "Nước trong hố vôi có thể sôi trên 100°C gây bỏng nặng nếu không cẩn thận." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phản ứng tôi vôi", "body": "CaO tác dụng với nước." },
+      { "kind": "knowledge", "title": "Hiện tượng", "body": "CaO + H2O -> Ca(OH)2 + Q (tỏa nhiều nhiệt). Vôi nở ra, nước sôi, tạo thành vôi tôi." },
+      { "kind": "answer", "title": "Kết luận", "body": "Nhão ra, tỏa rất nhiều nhiệt làm nước sôi." }
+    ],
+    "finalSolution": "CaO + H2O -> Ca(OH)2 (phản ứng tỏa nhiều nhiệt làm nước sôi sùng sục).",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b34-tf-001",
+    "lessonId": "g9-b34",
+    "skillIds": ["limestone-silicate"],
+    "difficulty": 1,
+    "prompt": "Xác định các ứng dụng của hợp chất Silicate và đá vôi là Đúng hay Sai.",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Đá vôi được dùng làm vật liệu rải đường, sản xuất vôi, xi măng và đá ốp lát trang trí.", "correct": true },
+        { "id": "s2", "text": "Đồ gốm sứ (bát đĩa, gạch men) được sản xuất chủ yếu từ đất sét nung ở nhiệt độ cao.", "correct": true },
+        { "id": "s3", "text": "Thủy tinh thông thường bị hòa tan và ăn mòn nhanh chóng bởi nước mưa và acid thông thường.", "correct": false },
+        { "id": "s4", "text": "Khí CO2 thoát ra từ các lò nung vôi và nhà máy xi măng là một trong những nguyên nhân gây hiệu ứng nhà kính.", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Thủy tinh rất bền với nước và các acid (chỉ bị acid HF ăn mòn)." },
+      { "level": 2, "text": "Nung vôi tạo ra lượng lớn khí CO2." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích", "body": "Xét ứng dụng và tác động của ngành silicat, đá vôi." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "S1: Đúng (đá vôi). S2: Đúng (gốm sứ). S3: Sai (thủy tinh rất bền, không tan trong nước/acid thường). S4: Đúng (phát thải CO2)." },
+      { "kind": "answer", "title": "Kết quả", "body": "S1: Đúng, S2: Đúng, S3: Sai, S4: Đúng." }
+    ],
+    "finalSolution": "Thủy tinh bền với nước và đa số acid (S3 Sai). S1, S2, S4 đều đúng.",
+    "commonMistakes": []
+  }
+]

@@ -1,0 +1,120 @@
+[
+  {
+    "id": "g9-b28-mcq-001",
+    "lessonId": "g9-b28",
+    "skillIds": ["lipid-fats"],
+    "difficulty": 1,
+    "prompt": "Chất béo (lipid) là trieste của glycerol với chất nào sau đây?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Các acid béo (acid hữu cơ đơn chức có mạch carbon dài, không phân nhánh)" },
+        { "id": "b", "label": "Axit axetic (CH3COOH)" },
+        { "id": "c", "label": "Axit vô cơ như HCl hoặc H2SO4" },
+        { "id": "d", "label": "Các amino acid" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Chất béo có công thức chung là (RCOO)3C3H5." },
+      { "level": 2, "text": "RCOOH ở đây là các acid béo như axit stearic, axit panmitic, axit oleic." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Định nghĩa", "body": "Thành phần hóa học của chất béo." },
+      { "kind": "knowledge", "title": "Cấu tạo", "body": "Chất béo là hỗn hợp các trieste của glycerol với các acid béo, có công thức chung (RCOO)3C3H5." },
+      { "kind": "answer", "title": "Kết luận", "body": "Trieste của glycerol với các acid béo." }
+    ],
+    "finalSolution": "Chất béo là trieste của glycerol với các acid béo, công thức chung là (RCOO)3C3H5.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b28-mcq-002",
+    "lessonId": "g9-b28",
+    "skillIds": ["lipid-fats"],
+    "difficulty": 2,
+    "prompt": "Đun nóng chất béo với dung dịch NaOH thu được sản phẩm gồm những chất nào? (Phản ứng xà phòng hóa)",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Glycerol và muối của các acid béo (thành phần chính của xà phòng)" },
+        { "id": "b", "label": "Rượu etylic và natri axetat" },
+        { "id": "c", "label": "Khí CO2 và hơi nước" },
+        { "id": "d", "label": "Glycerol và acid béo tự do" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "PTHH: (RCOO)3C3H5 + 3NaOH --to--> C3H5(OH)3 + 3RCOONa." },
+      { "level": 2, "text": "RCOONa là muối của axit béo, dùng làm xà phòng tắm gội hàng ngày." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phản ứng xà phòng hóa", "body": "Chất béo thủy phân trong môi trường kiềm NaOH." },
+      { "kind": "knowledge", "title": "PTHH", "body": "(RCOO)3C3H5 + 3NaOH -> C3H5(OH)3 (glycerol) + 3RCOONa (xà phòng)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Thu được glycerol và muối của acid béo (xà phòng)." }
+    ],
+    "finalSolution": "(RCOO)3C3H5 + 3NaOH --to--> C3H5(OH)3 (glycerol) + 3RCOONa (muối xà phòng).",
+    "commonMistakes": [
+      { "id": "thought-acid-formed", "message": "Trong môi trường kiềm NaOH sẽ tạo muối RCOONa chứ không tạo acid tự do RCOOH." }
+    ]
+  },
+  {
+    "id": "g9-b28-sort-001",
+    "lessonId": "g9-b28",
+    "skillIds": ["lipid-fats"],
+    "difficulty": 1,
+    "prompt": "Phân loại các nguồn chất béo sau thành \"Chất béo động vật (Mỡ)\" hoặc \"Chất béo thực vật (Dầu)\".",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "animal", "label": "Chất béo động vật (Mỡ)" },
+        { "id": "plant", "label": "Chất béo thực vật (Dầu)" }
+      ],
+      "items": [
+        { "id": "b1", "label": "Mỡ lợn (thể rắn ở nhiệt độ thường)", "bucketId": "animal" },
+        { "id": "b2", "label": "Dầu mè / Dầu vừng (thể lỏng)", "bucketId": "plant" },
+        { "id": "b3", "label": "Mỡ bò", "bucketId": "animal" },
+        { "id": "b4", "label": "Dầu đậu nành (thể lỏng)", "bucketId": "plant" },
+        { "id": "b5", "label": "Bơ động vật", "bucketId": "animal" },
+        { "id": "b6", "label": "Dầu ô liu (thể lỏng)", "bucketId": "plant" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Mỡ lợn, bò, bơ -> Động vật (thường chứa nhiều acid béo no, thể rắn)." },
+      { "level": 2, "text": "Dầu mè, đậu nành, ô liu -> Thực vật (thường chứa acid béo không no, thể lỏng)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại", "body": "Tách 6 loại chất béo theo nguồn gốc." },
+      { "kind": "knowledge", "title": "Đặc tính", "body": "Động vật: mỡ lợn, mỡ bò, bơ. Thực vật: dầu mè, dầu đậu nành, dầu ô liu." },
+      { "kind": "answer", "title": "Kết quả", "body": "Động vật: b1, b3, b5. Thực vật: b2, b4, b6." }
+    ],
+    "finalSolution": "Mỡ động vật: lợn, bò, bơ. Dầu thực vật: mè, đậu nành, ô liu.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b28-tf-001",
+    "lessonId": "g9-b28",
+    "skillIds": ["lipid-fats"],
+    "difficulty": 1,
+    "prompt": "Xác định các tính chất vật lí sau của chất béo là Đúng hay Sai.",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Chất béo nhẹ hơn nước và không tan trong nước.", "correct": true },
+        { "id": "s2", "text": "Chất béo tan tốt trong các dung môi hữu cơ như benzen, xăng, ete.", "correct": true },
+        { "id": "s3", "text": "Để làm sạch vết dầu ăn trên quần áo dính phải, chỉ cần xả bằng nước lạnh thông thường.", "correct": false },
+        { "id": "s4", "text": "Xà phòng giúp tẩy rửa dầu mỡ vì có đầu ưa nước và đuôi kị nước hòa tan chất béo.", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Dầu ăn không tan trong nước nên nước lạnh không thể rửa sạch dầu mỡ." },
+      { "level": 2, "text": "Cần dùng xà phòng hoặc nước rửa chén để nhũ hóa dầu mỡ." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích", "body": "Xét tính tan và ứng dụng làm sạch của chất béo." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "Nhẹ hơn nước, không tan trong nước (Đúng); Tan trong xăng/benzen (Đúng); Nước lạnh không sạch (S3 Sai); Xà phòng nhũ hóa (Đúng)." },
+      { "kind": "answer", "title": "Kết quả", "body": "S1: Đúng, S2: Đúng, S3: Sai, S4: Đúng." }
+    ],
+    "finalSolution": "Chất béo không tan trong nước (S3 Sai). S1, S2, S4 đều đúng.",
+    "commonMistakes": []
+  }
+]
