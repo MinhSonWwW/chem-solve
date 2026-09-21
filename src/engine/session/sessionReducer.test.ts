@@ -230,7 +230,7 @@ describe('engine/sessionReducer', () => {
     expect(state.hearts).toBe(2);
   });
 
-  it('recovers 1 heart up to 5 on correct answer in practice mode', () => {
+  it('does not add hearts on individual correct answer in practice mode', () => {
     let state = createInitialSession(SAMPLE_EXERCISES, 1, true);
     expect(state.hearts).toBe(1);
 
@@ -241,8 +241,8 @@ describe('engine/sessionReducer', () => {
       payload: { status: 'correct' },
     });
 
-    // In practice mode, correct answer recovers +1 heart
-    expect(state.hearts).toBe(2);
+    // Hearts are preserved during session, not increased per question
+    expect(state.hearts).toBe(1);
   });
 });
 

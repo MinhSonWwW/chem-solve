@@ -267,8 +267,16 @@ export const useUserStore = create<UserState>((set, get) => ({
     try {
       const progress = await loadUserProgress();
       progress.xp = get().xp;
-      progress.hearts = get().hearts;
-      progress.heartsLastDecAt = heartsLost > 0 ? Date.now() : progress.heartsLastDecAt;
+
+      // When finishing a full practice session, award +1 heart!
+      if (sessionState.isPractice) {
+        const nextHearts = Math.min(GAMIFICATION.hearts.max, get().hearts + 1);
+        set({ hearts: nextHearts });
+        progress.hearts = nextHearts;
+      } else {
+        progress.hearts = get().hearts;
+        progress.heartsLastDecAt = heartsLost > 0 ? Date.now() : progress.heartsLastDecAt;
+      }
 
       const nodeKey = `${sessionInfo.lessonId}:${sessionInfo.nodeId}`;
       const existing = progress.completedNodes[nodeKey];

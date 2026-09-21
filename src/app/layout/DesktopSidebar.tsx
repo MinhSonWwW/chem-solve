@@ -22,7 +22,7 @@ interface NavItem {
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { to: '/learn/8', label: 'HỌC', icon: BookOpen, matchPrefix: '/learn' },
+  { to: '/learn', label: 'HỌC', icon: BookOpen, matchPrefix: '/learn' },
   { to: '/practice', label: 'LUYỆN TẬP', icon: FlaskConical, matchPrefix: '/practice' },
   { to: '/games', label: 'MINIGAMES', icon: Gamepad2, matchPrefix: '/games' },
   { to: '/daily', label: 'NHIỆM VỤ', icon: Zap, matchPrefix: '/daily' },
@@ -51,7 +51,7 @@ export const DesktopSidebar: React.FC = () => {
               CHEM-SOLVE
             </span>
             <span className="text-[10px] font-bold text-slate-400 tracking-wider uppercase">
-              Hóa học THCS 7–9
+              Hóa học THCS 6–9
             </span>
           </div>
         </NavLink>

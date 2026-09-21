@@ -104,7 +104,7 @@ export function sessionReducer(state: SessionState, action: SessionAction): Sess
         return {
           ...state,
           questions: newQuestions,
-          hearts: state.isPractice ? Math.min(5, state.hearts + 1) : state.hearts,
+          hearts: state.hearts,
           comboStreak: state.comboStreak + 1,
           totalXpEarned: state.totalXpEarned + xp
         };

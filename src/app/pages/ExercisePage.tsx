@@ -87,13 +87,17 @@ export const ExercisePage: React.FC = () => {
           return;
         }
 
-        // Try to resume saved session first
-        const saved = await loadSession(lessonId, nodeId);
-        if (saved && !saved.sessionState.isSessionComplete) {
-          if (isPracticeMode) {
-            saved.sessionState.isPractice = true;
-          }
-          resumeSession(lessonId, nodeId, saved.sessionState);
+        const sessionKey = isPracticeMode ? `${lessonId}:practice` : lessonId;
+
+        // Try to resume saved session first (strictly verify matching practice vs learn mode)
+        const saved = await loadSession(sessionKey, nodeId);
+        if (
+          saved &&
+          !saved.sessionState.isSessionComplete &&
+          Boolean(saved.sessionState.isPractice) === isPracticeMode
+        ) {
+          saved.sessionState.isPractice = isPracticeMode;
+          resumeSession(sessionKey, nodeId, saved.sessionState);
           if (!cancelled) setLoadingState('ready');
           return;
         }
@@ -111,7 +115,7 @@ export const ExercisePage: React.FC = () => {
           [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
         }
 
-        startSession(lessonId, nodeId, shuffled, undefined, isPracticeMode);
+        startSession(sessionKey, nodeId, shuffled, undefined, isPracticeMode);
         if (!cancelled) setLoadingState('ready');
       } catch (err) {
         if (!cancelled) {
@@ -163,18 +167,13 @@ export const ExercisePage: React.FC = () => {
     submitAnswer();
 
     // Check updated session state after submission
+    const sessionKey = isPracticeMode ? `${lessonId}:practice` : lessonId;
     const updated = useUserStore.getState().sessionState;
     if (updated) {
       const q = updated.questions[updated.currentIndex];
       if (q?.status === 'correct') {
         setShowXpFly(true);
         setTimeout(() => setShowXpFly(false), 1200);
-
-        if (isPracticeMode) {
-          setShowHeartFly(true);
-          setRecoveredHeartsCount((prev) => prev + 1);
-          setTimeout(() => setShowHeartFly(false), 1500);
-        }
 
         if (updated.comboStreak >= 2) {
           setComboCount(updated.comboStreak);
@@ -183,7 +182,7 @@ export const ExercisePage: React.FC = () => {
         }
       } else if (!isPracticeMode && updated.hearts <= 0) {
         // Failed session! Clear in-progress session so it doesn't linger
-        clearSession(lessonId, nodeId).catch(console.error);
+        clearSession(sessionKey, nodeId).catch(console.error);
         sound.playWrong();
         setShowOutOfHeartsModal(true);
       }
@@ -204,10 +203,16 @@ export const ExercisePage: React.FC = () => {
     if (isLast) {
       const result = await endSession();
       if (result) {
+        if (isPracticeMode) {
+          sound.playLevelUp();
+          setShowHeartFly(true);
+          setRecoveredHeartsCount(1);
+          setTimeout(() => setShowHeartFly(false), 2400);
+        }
         setSessionResult(result);
       }
     }
-  }, [sessionState, dispatch, endSession]);
+  }, [sessionState, dispatch, endSession, isPracticeMode]);
 
   const handleRetry = useCallback(() => {
     sound.playClick();
