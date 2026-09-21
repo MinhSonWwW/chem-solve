@@ -329,8 +329,8 @@ export const PracticePage: React.FC = () => {
                             {lesson.title}
                           </span>
                           {!lesson.ready ? (
-                            <span className="text-[10px] font-bold bg-slate-800 text-slate-400 px-2 py-0.5 rounded-lg">
-                              Sắp có
+                            <span className="text-[10px] font-bold bg-slate-800/90 text-slate-400 border border-slate-700/60 px-2 py-0.5 rounded-lg flex items-center gap-1">
+                              🛠️ Đang biên soạn
                             </span>
                           ) : status.isCompleted ? (
                             <span className="text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-lg flex items-center gap-1">
@@ -341,8 +341,8 @@ export const PracticePage: React.FC = () => {
                               <Sparkles className="w-3 h-3 text-cyan-400" /> Đang học · Luyện tập
                             </span>
                           ) : (
-                            <span className="text-[10px] font-bold bg-slate-800/90 text-slate-400 border border-slate-700/60 px-2 py-0.5 rounded-lg flex items-center gap-1">
-                              <Lock className="w-3 h-3 text-slate-400" /> Chưa mở khóa
+                            <span className="text-[10px] font-bold bg-slate-800/90 text-amber-400/90 border border-amber-500/30 px-2 py-0.5 rounded-lg flex items-center gap-1">
+                              <Lock className="w-3 h-3 text-amber-400" /> Chưa mở khóa
                             </span>
                           )}
                         </div>
