@@ -1,0 +1,177 @@
+[
+  {
+    "id": "g8-b12-sort-001",
+    "lessonId": "g8-b12",
+    "skillIds": ["fertilizer-classification"],
+    "difficulty": 1,
+    "prompt": "Hãy phân loại các loại phân bón hóa học sau vào nhóm phân đạm, phân lân hoặc phân kali tương ứng:",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "dam", "label": "Phân đạm (chứa N)" },
+        { "id": "lan", "label": "Phân lân (chứa P)" },
+        { "id": "kali", "label": "Phân kali (chứa K)" }
+      ],
+      "items": [
+        { "id": "i1", "label": "Urê [[(NH2)2CO]]", "bucketId": "dam" },
+        { "id": "i2", "label": "Supephotphat [[Ca(H2PO4)2]]", "bucketId": "lan" },
+        { "id": "i3", "label": "Kali clorua [[KCl]]", "bucketId": "kali" },
+        { "id": "i4", "label": "Amoni nitrat [[NH4NO3]]", "bucketId": "dam" },
+        { "id": "i5", "label": "Kali sunfat [[K2SO4]]", "bucketId": "kali" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Phân đạm cung cấp N (chứa gốc amoni hoặc nhóm NH2); phân lân cung cấp P (chứa gốc photphat); phân kali cung cấp K." },
+      { "level": 2, "text": "Nhìn vào ký hiệu hóa học của nguyên tố dinh dưỡng chính trong công thức: N (đạm), P (lân), K (kali)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định nguyên tố dinh dưỡng", "body": "Phân tích thành phần nguyên tố dinh dưỡng chính có trong công thức hóa học của từng loại phân bón." },
+      { "kind": "knowledge", "title": "Quy tắc phân loại", "body": "1. Urê (NH2)2CO & NH4NO3 chứa N -> Phân đạm. 2. Ca(H2PO4)2 chứa P -> Phân lân. 3. KCl & K2SO4 chứa K -> Phân kali." },
+      { "kind": "answer", "title": "Kết luận", "body": "Phân loại chính xác các loại phân theo nguyên tố dinh dưỡng thiết yếu." }
+    ],
+    "finalSolution": "Phân đạm: **Urê, NH4NO3** · Phân lân: **Ca(H2PO4)2** · Phân kali: **KCl, K2SO4**."
+  },
+  {
+    "id": "g8-b12-mcq-001",
+    "lessonId": "g8-b12",
+    "skillIds": ["fertilizer-classification"],
+    "difficulty": 1,
+    "prompt": "Loại phân bón nào có tác dụng kích thích quá trình sinh trưởng, giúp cây trồng đâm nhiều chồi, cành và phát triển nhanh bộ lá xanh tốt?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-1", "label": "Phân đạm (cung cấp Nitơ)" },
+        { "id": "opt-2", "label": "Phân lân (cung cấp Photpho)" },
+        { "id": "opt-3", "label": "Phân kali (cung cấp Kali)" },
+        { "id": "opt-4", "label": "Phân vi lượng (chứa Bo, Kẽm)" }
+      ],
+      "correctId": "opt-1"
+    },
+    "hints": [
+      { "level": 1, "text": "Nitơ là thành phần chính cấu tạo nên protein, tế bào và diệp lục trong lá cây." },
+      { "level": 2, "text": "Phân lân tốt cho củ rễ, phân kali cứng cây kháng rét, phân đạm giúp phát triển thân lá." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhu cầu dinh dưỡng của cây", "body": "Xem xét tác động sinh học của các nguyên tố N, P, K đối với từng bộ phận của thực vật." },
+      { "kind": "knowledge", "title": "Vai trò dinh dưỡng", "body": "Phân đạm thúc đẩy phát triển thân lá; phân lân kích thích đẻ nhánh, ra rễ và đậu hoa quả; phân kali giúp cây cứng cáp, chịu rét và hạn tốt." },
+      { "kind": "answer", "title": "Kết luận", "body": "Phân đạm là loại phân giúp cây đâm chồi và xanh tốt bộ lá." }
+    ],
+    "finalSolution": "Phương án đúng: **Phân đạm (cung cấp Nitơ)**."
+  },
+  {
+    "id": "g8-b12-num-001",
+    "lessonId": "g8-b12",
+    "skillIds": ["fertilizer-calc"],
+    "difficulty": 2,
+    "prompt": "Phân Urê có công thức hóa học là [[(NH2)2CO]]. Tính hàm lượng phần trăm theo khối lượng của nguyên tố Nitơ (%N) trong phân Urê nguyên chất. (Cho M(N) = 14, M(H) = 1, M(C) = 12, M(O) = 16 g/mol. Làm tròn kết quả đến 1 chữ số thập phân).",
+    "given": [
+      { "label": "Công thức Urê", "value": "(NH2)2CO", "unit": "" },
+      { "label": "M(N)", "value": "14", "unit": "g/mol" },
+      { "label": "M(H)", "value": "1", "unit": "g/mol" },
+      { "label": "M(C)", "value": "12", "unit": "g/mol" },
+      { "label": "M(O)", "value": "16", "unit": "g/mol" }
+    ],
+    "find": { "label": "Hàm lượng %N", "unit": "%" },
+    "answer": {
+      "kind": "number",
+      "value": 46.7,
+      "unit": "%",
+      "decimals": 1,
+      "tolerance": { "abs": 0.2 }
+    },
+    "hints": [
+      { "level": 1, "text": "Bước 1: Tính khối lượng mol phân tử Urê: M = (14 + 2) × 2 + 12 + 16 = 60 g/mol." },
+      { "level": 2, "text": "Bước 2: Trong 1 phân tử có 2 nguyên tử N (khối lượng 2 × 14 = 28). %N = (28 / 60) × 100%." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Công thức tính % nguyên tố", "body": "%N = (Số nguyên tử N × M(N) / M(hợp chất)) × 100%." },
+      { "kind": "compute", "title": "Tính khối lượng mol", "body": "M((NH2)2CO) = (14 + 2) × 2 + 12 + 16 = 60 g/mol." },
+      { "kind": "compute", "title": "Tính phần trăm N", "body": "%N = (2 × 14 / 60) × 100% = 2800 / 60 ≈ 46,67% ≈ 46,7%." }
+    ],
+    "finalSolution": "46.7"
+  },
+  {
+    "id": "g8-b12-formula-001",
+    "lessonId": "g8-b12",
+    "skillIds": ["fertilizer-classification"],
+    "difficulty": 1,
+    "prompt": "Nhập công thức hóa học của phân kali clorua (chứa nguyên tố kali hóa trị I và gốc clorua hóa trị I):",
+    "answer": {
+      "kind": "formula",
+      "accepted": ["KCl"]
+    },
+    "hints": [
+      { "level": 1, "text": "Kí hiệu hóa học của Kali là K, của Clo là Cl, tỉ lệ 1:1." },
+      { "level": 2, "text": "Viết hoa chữ K và chữ C, viết thường chữ l." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định hóa trị", "body": "Nguyên tố Kali có hóa trị I, gốc Clorua có hóa trị I." },
+      { "kind": "knowledge", "title": "Quy tắc hóa trị", "body": "Tỉ lệ số nguyên tử K : Cl = I / I = 1 : 1." },
+      { "kind": "answer", "title": "Kết luận CTHH", "body": "Công thức hóa học chuẩn của phân kali clorua là KCl." }
+    ],
+    "finalSolution": "KCl"
+  },
+  {
+    "id": "g8-b12-tf-001",
+    "lessonId": "g8-b12",
+    "skillIds": ["fertilizer-classification"],
+    "difficulty": 2,
+    "prompt": "Đánh giá tính Đúng/Sai của các nhận định sau về sử dụng phân bón hóa học trong nông nghiệp:",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "s1",
+          "text": "Bón càng nhiều phân đạm cho lúa càng tốt vì giúp cây tăng năng suất tối đa mà không gây hại.",
+          "correct": false
+        },
+        {
+          "id": "s2",
+          "text": "Bón phân hóa học dư thừa rửa trôi xuống sông hồ có thể gây hiện tượng phú dưỡng (tảo nở hoa).",
+          "correct": true
+        },
+        {
+          "id": "s3",
+          "text": "Phân bón NPK là phân hỗn hợp cung cấp đồng thời 3 nguyên tố dinh dưỡng chính cho cây trồng.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Bón thừa phân đạm làm cây yếu, dễ đổ ngã, sâu bệnh và làm chua đất, ô nhiễm nguồn nước ngầm." },
+      { "level": 2, "text": "Cần bón phân cân đối, đúng liều lượng, đúng thời điểm và đúng cách." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xét từng nhận định", "body": "Đánh giá theo các quy tắc sử dụng phân bón và tác động môi trường trong SGK." },
+      { "kind": "knowledge", "title": "Tác động môi trường", "body": "1. Bón thừa phân đạm gây hại nặng (SAI). 2. Dư thừa phân bón gây hiện tượng phú dưỡng (ĐÚNG). 3. NPK là phân hỗn hợp đa nguyên tố (ĐÚNG)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Câu 1: Sai. Câu 2: Đúng. Câu 3: Đúng." }
+    ],
+    "finalSolution": "Câu 1: **Sai** · Câu 2: **Đúng** · Câu 3: **Đúng**."
+  },
+  {
+    "id": "g8-b12-match-001",
+    "lessonId": "g8-b12",
+    "skillIds": ["fertilizer-classification"],
+    "difficulty": 1,
+    "prompt": "Hãy nối loại phân bón ở cột trái với nguyên tố dinh dưỡng cốt lõi cung cấp cho đất ở cột phải:",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Phân đạm", "right": "Cung cấp nguyên tố Nitơ (N)" },
+        { "left": "Phân lân", "right": "Cung cấp nguyên tố Photpho (P)" },
+        { "left": "Phân kali", "right": "Cung cấp nguyên tố Kali (K)" },
+        { "left": "Phân NPK", "right": "Cung cấp đồng thời cả 3 nguyên tố N, P, K" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Đạm tương ứng với N, Lân tương ứng với P, Kali tương ứng với K." },
+      { "level": 2, "text": "NPK chứa cả 3 chữ cái đại diện cho 3 nguyên tố thiết yếu." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định 4 loại phân", "body": "Phân đạm, phân lân, phân kali và phân hỗn hợp NPK." },
+      { "kind": "knowledge", "title": "Nguyên tố tương ứng", "body": "Đạm -> N; Lân -> P; Kali -> K; NPK -> Cả N, P, K." },
+      { "kind": "answer", "title": "Kết luận", "body": "Các cặp nối chính xác tương ứng giữa tên loại phân và nguyên tố dinh dưỡng thiết yếu." }
+    ],
+    "finalSolution": "Các cặp nối chính xác tương ứng giữa tên loại phân và nguyên tố dinh dưỡng thiết yếu."
+  }
+]

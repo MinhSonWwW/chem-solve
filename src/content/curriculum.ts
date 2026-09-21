@@ -157,7 +157,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             lessonNumber: 7,
             title: 'Tốc độ phản ứng và chất xúc tác',
             subtitle: 'Các yếu tố ảnh hưởng đến tốc độ phản ứng',
-            ready: false,
+            ready: true,
             nodes: [
               { id: 'g8-b07-n01', nodeIndex: 1, title: 'Yếu tố ảnh hưởng tốc độ', description: '6 câu hỏi', type: 'lesson' },
             ],
@@ -215,7 +215,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             lessonNumber: 12,
             title: 'Phân bón hóa học',
             subtitle: 'Phân đạm (N), lân (P), kali (K) và NPK',
-            ready: false,
+            ready: true,
             nodes: [
               { id: 'g8-b12-n01', nodeIndex: 1, title: 'Các loại phân bón phổ biến', description: '6 câu hỏi', type: 'lesson' },
             ],

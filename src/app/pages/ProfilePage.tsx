@@ -16,6 +16,7 @@ export const ProfilePage: React.FC = () => {
     dailyGoal,
     setDailyGoal,
     achievements,
+    completedNodes,
     exportData,
     importData,
   } = useUserStore();
@@ -25,6 +26,7 @@ export const ProfilePage: React.FC = () => {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const levelInfo = getLevelInfo(xp);
+  const totalCompletedCount = Object.keys(completedNodes || {}).filter((k) => completedNodes[k]).length;
 
   const handleExport = async () => {
     sound.playClick();
@@ -77,10 +79,14 @@ export const ProfilePage: React.FC = () => {
               Cấp {levelInfo.level} · Nhà Hóa Học Chem-Solve
             </div>
             <h1 className="text-lg font-black text-slate-100 truncate">Học viên xuất sắc</h1>
-            <div className="flex items-center gap-2 mt-1.5">
+            <div className="flex flex-wrap items-center gap-2 mt-1.5">
               <Streak days={streak} />
               <XPBadge amount={xp} />
               <Heart count={hearts} max={GAMIFICATION.hearts.max} />
+              <span className="inline-flex items-center gap-1 text-slate-300 font-black text-xs bg-slate-800/80 border border-slate-700/80 px-2.5 py-1 rounded-full shadow-[0_2px_0_0_#1e293b]">
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                <span>{totalCompletedCount} chặng đã qua</span>
+              </span>
             </div>
           </div>
         </div>
@@ -203,14 +209,22 @@ export const ProfilePage: React.FC = () => {
                 </div>
 
                 {/* Progress bar */}
-                <div className="space-y-1">
-                  <div className="flex justify-between text-[9px] text-slate-400 font-bold">
-                    <span>Tiến độ</span>
-                    <span>{currentProgress}/{ach.maxProgress}</span>
+                <div className="space-y-1 mt-1">
+                  <div className="flex justify-between text-[10px] font-bold">
+                    <span className="text-slate-400">Tiến độ</span>
+                    <span className={isUnlocked ? 'text-amber-400 font-black' : 'text-slate-400'}>
+                      {currentProgress}/{ach.maxProgress} ({percent}%)
+                    </span>
                   </div>
-                  <div className="w-full bg-slate-950 h-1.5 rounded-full overflow-hidden border border-slate-800">
+                  <div className="w-full bg-slate-950 h-2 rounded-full overflow-hidden border border-slate-800">
                     <div
-                      className={`h-full rounded-full transition-all ${isUnlocked ? 'bg-amber-400' : 'bg-slate-700'}`}
+                      className={`h-full rounded-full transition-all duration-500 ${
+                        isUnlocked
+                          ? 'bg-gradient-to-r from-amber-500 to-amber-300 shadow-[0_0_8px_rgba(245,158,11,0.6)]'
+                          : percent > 0
+                          ? 'bg-gradient-to-r from-cyan-600 to-cyan-400'
+                          : 'bg-slate-800'
+                      }`}
                       style={{ width: `${percent}%` }}
                     />
                   </div>

@@ -171,6 +171,22 @@ export const SKILLS: Skill[] = [
     category: 'phuong-trinh',
     description: 'Phản ứng trao đổi trong dung dịch sinh kết tủa, khí hoặc nước.',
   },
+  {
+    id: 'fertilizer-classification',
+    name: 'Phân loại Phân bón hóa học',
+    grade: 8,
+    lessonId: 'g8-b12',
+    category: 'ly-thuyet',
+    description: 'Phân biệt phân đạm (N), phân lân (P), phân kali (K) và phân hỗn hợp NPK.',
+  },
+  {
+    id: 'fertilizer-calc',
+    name: 'Hàm lượng dinh dưỡng phân bón',
+    grade: 8,
+    lessonId: 'g8-b12',
+    category: 'tinh-toan',
+    description: 'Tính toán phần trăm khối lượng nguyên tố dinh dưỡng trong phân bón.',
+  },
 
   // LỚP 9
   {

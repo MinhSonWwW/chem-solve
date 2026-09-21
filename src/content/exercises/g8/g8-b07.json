@@ -1,0 +1,181 @@
+[
+  {
+    "id": "g8-b07-mcq-001",
+    "lessonId": "g8-b07",
+    "skillIds": ["reaction-rate"],
+    "difficulty": 1,
+    "prompt": "Yếu tố nào sau đây KHÔNG làm tăng tốc độ phản ứng hóa học thông thường?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-1", "label": "Tăng nhiệt độ của môi trường phản ứng" },
+        { "id": "opt-2", "label": "Tăng nồng độ các chất tham gia phản ứng" },
+        { "id": "opt-3", "label": "Làm lạnh và giảm nhiệt độ của hệ phản ứng" },
+        { "id": "opt-4", "label": "Nghiền nhỏ chất rắn để tăng diện tích bề mặt tiếp xúc" }
+      ],
+      "correctId": "opt-3"
+    },
+    "hints": [
+      { "level": 1, "text": "Khi giảm nhiệt độ, các phân tử chuyển động chậm lại làm giảm tần số va chạm hiệu quả." },
+      { "level": 2, "text": "Bảo quản thực phẩm trong tủ lạnh chính là ứng dụng của việc hạ nhiệt độ để kìm hãm tốc độ phản ứng ôi thiu." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định các yếu tố ảnh hưởng", "body": "Tốc độ phản ứng tăng khi: tăng nồng độ, tăng nhiệt độ, tăng diện tích bề mặt chất rắn, có mặt chất xúc tác." },
+      { "kind": "knowledge", "title": "Cơ chế va chạm", "body": "Nhiệt độ giảm làm giảm động năng của các hạt, khiến số va chạm hiệu quả giữa các phân tử giảm đi." },
+      { "kind": "answer", "title": "Kết luận", "body": "Làm lạnh giảm nhiệt độ khiến các tiểu phân va chạm ít hơn, do đó làm giảm tốc độ phản ứng." }
+    ],
+    "finalSolution": "Phương án đúng: **Làm lạnh và giảm nhiệt độ của hệ phản ứng**.",
+    "commonMistakes": [
+      { "id": "confuse-cooling", "message": "Chú ý câu hỏi tìm yếu tố 'KHÔNG làm tăng' (tức là làm giảm) tốc độ." }
+    ]
+  },
+  {
+    "id": "g8-b07-sort-001",
+    "lessonId": "g8-b07",
+    "skillIds": ["reaction-rate"],
+    "difficulty": 2,
+    "prompt": "Hãy phân loại các biện pháp thực tế sau vào nhóm Làm tăng tốc độ phản ứng hoặc Làm giảm tốc độ (kìm hãm) phản ứng.",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "tang-toc", "label": "Làm tăng tốc độ phản ứng" },
+        { "id": "giam-toc", "label": "Làm giảm tốc độ / Kìm hãm" }
+      ],
+      "items": [
+        { "id": "i1", "label": "Đập nhỏ than củi trước khi cho vào bếp lò", "bucketId": "tang-toc" },
+        { "id": "i2", "label": "Cất giữ rau củ và thịt tươi trong ngăn mát tủ lạnh", "bucketId": "giam-toc" },
+        { "id": "i3", "label": "Thổi quạt gió liên tục vào bếp than đang nhóm", "bucketId": "tang-toc" },
+        { "id": "i4", "label": "Hút chân không túi thực phẩm để ngăn tiếp xúc với khí oxi", "bucketId": "giam-toc" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Đập nhỏ chất rắn làm tăng diện tích bề mặt; quạt gió cung cấp thêm lượng khí oxi (tăng nồng độ)." },
+      { "level": 2, "text": "Hạ nhiệt độ và giảm nồng độ oxi giúp kìm hãm quá trình phân hủy và ôi thiu của thức ăn." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Mục đích từng hành động", "body": "Xác định yếu tố tác động: diện tích bề mặt, nồng độ khí oxi, nhiệt độ môi trường." },
+      { "kind": "knowledge", "title": "Bản chất tác động", "body": "Đập nhỏ than (tăng diện tích bề mặt) & quạt gió (tăng nồng độ O2): Tăng tốc độ cháy. Tủ lạnh (hạ nhiệt độ) & hút chân không (giảm nồng độ O2): Giảm tốc độ phản ứng ôi thiu." },
+      { "kind": "answer", "title": "Kết luận", "body": "Phân loại chính xác 4 biện pháp vào 2 nhóm tương ứng." }
+    ],
+    "finalSolution": "Tăng tốc độ: **Đập nhỏ than, Thổi quạt gió**. Giảm tốc độ: **Để tủ lạnh, Hút chân không**."
+  },
+  {
+    "id": "g8-b07-tf-001",
+    "lessonId": "g8-b07",
+    "skillIds": ["reaction-rate"],
+    "difficulty": 2,
+    "prompt": "Đánh giá tính Đúng/Sai của các nhận định sau về chất xúc tác trong phản ứng hóa học:",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "s1",
+          "text": "Chất xúc tác làm tăng tốc độ phản ứng nhưng không bị tiêu hao sau khi phản ứng kết thúc.",
+          "correct": true
+        },
+        {
+          "id": "s2",
+          "text": "Cho thêm chất xúc tác sẽ giúp tăng khối lượng sản phẩm tối đa thu được.",
+          "correct": false
+        },
+        {
+          "id": "s3",
+          "text": "Men tiêu hóa tinh bột (amylase) trong nước bọt là một loại chất xúc tác sinh học (enzyme).",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Chất xúc tác chỉ rút ngắn thời gian đạt tới trạng thái cân bằng hoặc hoàn thành phản ứng, không sinh thêm chất mới." },
+      { "level": 2, "text": "Khối lượng sản phẩm phụ thuộc vào định luật bảo toàn khối lượng và lượng chất tham gia, không phụ thuộc vào chất xúc tác." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đặc tính chất xúc tác", "body": "Xét từng nhận định dựa trên định nghĩa và vai trò của chất xúc tác trong SGK." },
+      { "kind": "knowledge", "title": "Bản chất xúc tác", "body": "1. Xúc tác không bị mất đi hay biến đổi vĩnh viễn về khối lượng/bản chất sau phản ứng (ĐÚNG). 2. Xúc tác chỉ làm phản ứng xảy ra nhanh hơn, không làm tăng lượng sản phẩm tối đa (SAI). 3. Enzyme là chất xúc tác sinh học (ĐÚNG)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Nhận định 1: Đúng. Nhận định 2: Sai. Nhận định 3: Đúng." }
+    ],
+    "finalSolution": "Câu 1: **Đúng** · Câu 2: **Sai** · Câu 3: **Đúng**."
+  },
+  {
+    "id": "g8-b07-match-001",
+    "lessonId": "g8-b07",
+    "skillIds": ["reaction-rate"],
+    "difficulty": 2,
+    "prompt": "Hãy nối hiện tượng thực tế ở cột trái với yếu tố ảnh hưởng đến tốc độ phản ứng tương ứng ở cột phải:",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Dùng nồi áp suất ninh xương nhanh nhừ hơn", "right": "Ảnh hưởng của nhiệt độ và áp suất" },
+        { "left": "Chẻ nhỏ củi trước khi đưa vào bếp đun", "right": "Ảnh hưởng của diện tích tiếp xúc" },
+        { "left": "Thêm men rượu vào cơm nếp đã nguội", "right": "Ảnh hưởng của chất xúc tác sinh học" },
+        { "left": "Sục khí oxi nguyên chất vào ngọn lửa than", "right": "Ảnh hưởng của nồng độ chất phản ứng" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Nồi áp suất giữ hơi nước làm tăng áp suất và nâng nhiệt độ sôi của nước lên trên 100 °C." },
+      { "level": 2, "text": "Chẻ nhỏ làm hạt củi nhỏ hơn, tăng bề mặt tiếp xúc giữa gỗ và không khí." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích 4 hiện tượng", "body": "Xác định bản chất tác nhân trong từng ứng dụng thực tế." },
+      { "kind": "knowledge", "title": "Ánh xạ yếu tố", "body": "Nồi áp suất -> Nhiệt độ/áp suất; Chẻ nhỏ củi -> Diện tích tiếp xúc; Men rượu -> Chất xúc tác; Oxi nguyên chất -> Nồng độ." },
+      { "kind": "answer", "title": "Kết luận", "body": "Ghép nối chính xác từng cặp tương ứng." }
+    ],
+    "finalSolution": "Các cặp nối đúng tương ứng với 4 yếu tố: nhiệt độ, diện tích tiếp xúc, chất xúc tác và nồng độ."
+  },
+  {
+    "id": "g8-b07-ordering-001",
+    "lessonId": "g8-b07",
+    "skillIds": ["reaction-rate"],
+    "difficulty": 2,
+    "prompt": "Sắp xếp các bước tiến hành thí nghiệm so sánh tốc độ thoát khí [[H2]] khi cho kẽm hạt và kẽm bột tác dụng với axit [[HCl]]:",
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Chuẩn bị 2 ống nghiệm chứa cùng thể tích và nồng độ dung dịch axit HCl",
+        "Lấy 2 phần kẽm có khối lượng bằng nhau: 1 phần dạng hạt, 1 phần dạng bột mịn",
+        "Cho đồng thời kẽm hạt vào ống 1 và kẽm bột vào ống 2",
+        "Quan sát tốc độ bọt khí thoát ra ở 2 ống nghiệm và rút ra kết luận"
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Nguyên tắc thí nghiệm đối chứng: giữ cố định nồng độ axit và khối lượng kẽm, chỉ thay đổi kích thước hạt kẽm." },
+      { "level": 2, "text": "Phải cho đồng thời 2 mẫu kẽm vào dung dịch axit để quan sát chính xác sự khác biệt." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Mục tiêu thí nghiệm", "body": "So sánh tốc độ phản ứng khi thay đổi diện tích bề mặt tiếp xúc của chất rắn." },
+      { "kind": "knowledge", "title": "Nguyên tắc kiểm soát biến số", "body": "Cố định nồng độ, nhiệt độ, thể tích axit và khối lượng kẽm; biến đổi dạng hình học (hạt vs bột)." },
+      { "kind": "answer", "title": "Trình tự chuẩn", "body": "1. Chuẩn bị dung dịch axit -> 2. Cân lượng kẽm hạt và bột -> 3. Cho đồng thời vào 2 ống -> 4. Quan sát tốc độ sủi bọt khí." }
+    ],
+    "finalSolution": "Trình tự: Chuẩn bị axit -> Cân kẽm hạt và bột -> Thả đồng thời -> Quan sát so sánh."
+  },
+  {
+    "id": "g8-b07-num-001",
+    "lessonId": "g8-b07",
+    "skillIds": ["reaction-rate"],
+    "difficulty": 2,
+    "prompt": "Trong một thí nghiệm phân hủy [[H2O2]], lúc đầu nồng độ [[H2O2]] là 1,0 mol/L. Sau 40 giây có mặt chất xúc tác [[MnO2]], nồng độ [[H2O2]] còn lại là 0,2 mol/L. Tính độ giảm nồng độ của [[H2O2]] trong 40 giây đó (đơn vị: mol/L).",
+    "given": [
+      { "label": "Nồng độ ban đầu C1", "value": "1.0", "unit": "mol/L" },
+      { "label": "Nồng độ sau C2", "value": "0.2", "unit": "mol/L" },
+      { "label": "Thời gian t", "value": "40", "unit": "s" }
+    ],
+    "find": { "label": "Độ giảm nồng độ ΔC = C1 - C2", "unit": "mol/L" },
+    "answer": {
+      "kind": "number",
+      "value": 0.8,
+      "unit": "mol/L",
+      "decimals": 1,
+      "tolerance": { "abs": 0.05 }
+    },
+    "hints": [
+      { "level": 1, "text": "Độ giảm nồng độ ΔC bằng nồng độ ban đầu trừ nồng độ lúc sau: ΔC = C1 - C2." },
+      { "level": 2, "text": "Lấy 1,0 trừ 0,2 để tìm lượng nồng độ đã tham gia phản ứng." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định công thức", "body": "Độ giảm nồng độ trong khoảng thời gian khảo sát: ΔC = C(đầu) - C(sau)." },
+      { "kind": "compute", "title": "Tính độ giảm nồng độ", "body": "ΔC = 1,0 - 0,2 = 0,8 mol/L." },
+      { "kind": "answer", "title": "Kết luận", "body": "Nồng độ H2O2 giảm 0,8 mol/L sau 40 giây có mặt chất xúc tác MnO2." }
+    ],
+    "finalSolution": "0.8"
+  }
+]
