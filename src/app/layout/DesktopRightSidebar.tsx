@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Search, Zap, Shield, Gift, BookOpen, ArrowRight, Flame } from 'lucide-react';
+import { Search, Zap, Gift, BookOpen, ArrowRight, Flame } from 'lucide-react';
 import { Heart, Streak, XPBadge } from '@/design-system';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import { sound } from '@/lib/audio';
@@ -13,8 +13,6 @@ export const DesktopRightSidebar: React.FC = () => {
   const dailyXpTarget = 10;
   const currentDailyXp = Math.min(dailyXpTarget, xp > 0 ? (xp % 50) + 2 : 0);
   const dailyXpPercent = Math.min(100, Math.round((currentDailyXp / dailyXpTarget) * 100));
-
-  const weeklyXp = Math.max(15, xp > 0 ? (xp % 300) + 15 : 15);
 
   return (
     <aside className="hidden lg:flex flex-col gap-5 w-[340px] h-[100dvh] sticky top-0 border-l border-slate-800/80 bg-slate-950/80 px-5 py-6 select-none overflow-y-auto z-20">
@@ -104,38 +102,6 @@ export const DesktopRightSidebar: React.FC = () => {
         </div>
       </div>
 
-      {/* 3. Widget: Bảng xếp hạng / Giải đấu (Leagues) */}
-      <div className="p-4 rounded-3xl bg-slate-900/90 border-2 border-slate-800 shadow-md space-y-3">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Shield className="w-4 h-4 text-amber-500 fill-amber-500" />
-            <h3 className="text-xs font-black text-slate-200 tracking-wider uppercase">
-              Giải đấu Đồng
-            </h3>
-          </div>
-          <Link
-            to="/progress"
-            onClick={() => sound.playClick()}
-            className="text-[10px] font-black text-cyan-400 hover:text-cyan-300 uppercase tracking-tight"
-          >
-            Bảng vàng
-          </Link>
-        </div>
-
-        <div className="flex items-center gap-3.5 pt-1">
-          <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-amber-700 to-amber-500 flex items-center justify-center text-xl shadow-[0_4px_0_0_#78350f] border-2 border-amber-400/40">
-            🥉
-          </div>
-          <div className="flex-1 space-y-0.5">
-            <div className="text-xs font-black text-slate-100">
-              Bạn đang ở vị trí <span className="text-amber-400">#15</span>
-            </div>
-            <p className="text-[11px] text-slate-400 leading-tight">
-              Đạt <span className="font-bold text-cyan-300">{weeklyXp} XP</span> tuần này. Top 10 sẽ thăng hạng Bạc!
-            </p>
-          </div>
-        </div>
-      </div>
 
       {/* 4. Widget: Chuỗi đèn cồn Streak */}
       <div className="p-4 rounded-3xl bg-gradient-to-br from-slate-900 to-amber-950/20 border-2 border-amber-900/40 shadow-md flex items-center justify-between">
