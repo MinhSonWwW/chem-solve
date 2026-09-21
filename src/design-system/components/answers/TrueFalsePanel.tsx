@@ -26,6 +26,11 @@ export const TrueFalsePanel: React.FC<TrueFalsePanelProps> = ({
 }) => {
   const isChecked = !!verdict;
 
+  // Randomize presentation order so students must read each statement rather than guessing by position
+  const displayStatements = React.useMemo(() => {
+    return [...statements].sort(() => Math.random() - 0.5);
+  }, [statements]);
+
   const handleToggle = (id: string, answer: boolean) => {
     if (disabled) return;
     onChange({ ...value, [id]: answer });
@@ -33,7 +38,7 @@ export const TrueFalsePanel: React.FC<TrueFalsePanelProps> = ({
 
   return (
     <div className="space-y-3">
-      {statements.map((st) => {
+      {displayStatements.map((st) => {
         const userAnswer = value[st.id];
         const hasAnswered = userAnswer !== undefined;
         const isCorrectAnswer = isChecked && hasAnswered && userAnswer === st.correct;

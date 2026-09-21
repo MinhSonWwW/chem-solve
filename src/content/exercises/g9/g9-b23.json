@@ -96,21 +96,21 @@
     "answer": {
       "kind": "true-false",
       "statements": [
-        { "id": "s1", "text": "Khí metan nhẹ hơn không khí (d_CH4/kk ≈ 16/29).", "correct": true },
-        { "id": "s2", "text": "Khí metan có màu vàng lục và mùi hắc nồng.", "correct": false },
+        { "id": "s1", "text": "Khí metan có màu vàng lục và có mùi hắc đặc trưng.", "correct": false },
+        { "id": "s2", "text": "Khí metan nặng hơn không khí và tan rất tốt trong nước.", "correct": false },
         { "id": "s3", "text": "Hỗn hợp gồm 1 thể tích CH4 và 2 thể tích O2 là hỗn hợp nổ rất mạnh.", "correct": true }
       ]
     },
     "hints": [
-      { "level": 1, "text": "M(CH4) = 16 < 29 nên nhẹ hơn không khí. Metan là khí không màu, không mùi." },
-      { "level": 2, "text": "Khí màu vàng lục có mùi hắc là khí clo (Cl2), không phải metan." }
+      { "level": 1, "text": "Metan là chất khí không màu, không mùi, nhẹ hơn không khí và ít tan trong nước." },
+      { "level": 2, "text": "Phản ứng CH4 + 2O2 -> CO2 + 2H2O tỏa rất nhiều nhiệt, tỉ lệ 1:2 nổ mạnh nhất." }
     ],
     "steps": [
       { "kind": "identify", "title": "Tính chất vật lý & an toàn của metan", "body": "Kiểm tra màu sắc, tỉ khối và tính cháy nổ của CH4." },
-      { "kind": "knowledge", "title": "Đối chiếu kiến thức", "body": "s1: M = 16 < 29 => Đúng. s2: CH4 là chất khí không màu, không mùi, ít tan trong nước => Sai. s3: Tỉ lệ nổ mạnh nhất đúng theo tỉ lệ phản ứng 1 CH4 : 2 O2 => Đúng." },
-      { "kind": "answer", "title": "Kết luận", "body": "s1: Đúng, s2: Sai, s3: Đúng." }
+      { "kind": "knowledge", "title": "Đối chiếu kiến thức", "body": "1. CH4 không màu, không mùi: câu 1 SAI. 2. M = 16 < 29 (nhẹ hơn không khí) và ít tan: câu 2 SAI. 3. Tỉ lệ nổ 1:2: ĐÚNG." },
+      { "kind": "answer", "title": "Kết luận", "body": "s1: Sai, s2: Sai, s3: Đúng." }
     ],
-    "finalSolution": "s1: Đúng, s2: Sai (metan không màu, không mùi), s3: Đúng (tỉ lệ thể tích nổ cực đại là 1 : 2).",
+    "finalSolution": "s1: **Sai** (không màu, không mùi), s2: **Sai** (nhẹ hơn không khí, ít tan), s3: **Đúng**.",
     "commonMistakes": [
       { "id": "confused-gas-color", "message": "Metan trong tự nhiên hoàn toàn không có mùi và không có màu." }
     ]

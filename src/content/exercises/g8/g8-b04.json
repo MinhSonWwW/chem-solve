@@ -136,21 +136,21 @@
     "answer": {
       "kind": "true-false",
       "statements": [
-        { "id": "s1", "text": "Dung dịch là hỗn hợp đồng nhất giữa chất tan và dung môi.", "correct": true },
-        { "id": "s2", "text": "Nước chỉ có thể hòa tan chất rắn, không hòa tan được chất khí.", "correct": false },
-        { "id": "s3", "text": "Dung dịch chưa bão hòa là dung dịch vẫn có thể hòa tan thêm chất tan ở nhiệt độ xác định.", "correct": true }
+        { "id": "s1", "text": "Nước chỉ có thể hòa tan chất rắn, không thể hòa tan được chất khí.", "correct": false },
+        { "id": "s2", "text": "Dung dịch là hỗn hợp đồng nhất giữa chất tan và dung môi.", "correct": true },
+        { "id": "s3", "text": "Dung dịch đã bão hòa là dung dịch vẫn có thể hòa tan thêm chất tan ở nhiệt độ đó.", "correct": false }
       ]
     },
     "hints": [
-      { "level": 1, "text": "Nước có thể hòa tan được khí oxi, khí cacbonic (ví dụ trong nước ngọt có gas)." },
-      { "level": 2, "text": "Nước hòa tan được cả chất rắn, chất lỏng (rượu) và chất khí (CO2, O2)." }
+      { "level": 1, "text": "Nước có thể hòa tan được khí oxi, khí cacbonic. Dung dịch bão hòa không thể hòa tan thêm chất tan." },
+      { "level": 2, "text": "Dung dịch chưa bão hòa mới có thể hòa tan thêm chất tan." }
     ],
     "steps": [
-      { "kind": "identify", "title": "Xét từng nhận định", "body": "Kiểm tra định nghĩa dung dịch, khả năng hòa tan và trạng thái bão hòa." },
-      { "kind": "knowledge", "title": "Kiến thức đối chiếu", "body": "s1: Đúng định nghĩa. s2: Sai vì nước hòa tan được nhiều chất khí như O2, CO2, HCl. s3: Đúng định nghĩa dung dịch chưa bão hòa." },
-      { "kind": "answer", "title": "Kết luận", "body": "s1: Đúng, s2: Sai, s3: Đúng." }
+      { "kind": "identify", "title": "Xét từng nhận định", "body": "Kiểm tra định nghĩa dung dịch, khả năng hòa tan chất khí và dung dịch bão hòa." },
+      { "kind": "knowledge", "title": "Kiến thức đối chiếu", "body": "1. Nước hòa tan được chất khí (O2, CO2): câu 1 SAI. 2. Đúng định nghĩa dung dịch: ĐÚNG. 3. Dung dịch đã bão hòa không thể hòa tan thêm: câu 3 SAI." },
+      { "kind": "answer", "title": "Kết luận", "body": "s1: Sai, s2: Đúng, s3: Sai." }
     ],
-    "finalSolution": "s1: Đúng, s2: Sai (nước hòa tan được chất khí), s3: Đúng.",
+    "finalSolution": "s1: **Sai** (hòa tan được chất khí), s2: **Đúng**, s3: **Sai** (bão hòa thì không tan thêm).",
     "commonMistakes": [
       { "id": "forgot-gas-dissolves", "message": "Nước hòa tan được khí oxi giúp sinh vật dưới nước thở được." }
     ]

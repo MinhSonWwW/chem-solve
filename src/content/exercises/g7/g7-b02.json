@@ -128,21 +128,21 @@
     "answer": {
       "kind": "true-false",
       "statements": [
-        { "id": "s1", "text": "Hạt nhân nguyên tử mang điện tích dương.", "correct": true },
-        { "id": "s2", "text": "Khối lượng nguyên tử tập trung chủ yếu ở lớp vỏ electron.", "correct": false },
-        { "id": "s3", "text": "Nguyên tử luôn trung hòa về điện.", "correct": true }
+        { "id": "s1", "text": "Khối lượng nguyên tử tập trung chủ yếu ở lớp vỏ electron.", "correct": false },
+        { "id": "s2", "text": "Hạt nhân nguyên tử mang điện tích dương vì chứa các hạt proton.", "correct": true },
+        { "id": "s3", "text": "Trong một nguyên tử bất kỳ, số hạt electron luôn nhiều hơn số hạt proton.", "correct": false }
       ]
     },
     "hints": [
-      { "level": 1, "text": "Hạt nhân chứa proton mang điện dương. Electron có khối lượng rất nhẹ so với hạt nhân." },
-      { "level": 2, "text": "Lớp vỏ electron có khối lượng rất nhỏ không đáng kể so với hạt nhân." }
+      { "level": 1, "text": "Electron có khối lượng rất nhẹ so với hạt nhân. Nguyên tử trung hòa về điện nên số p = số e." },
+      { "level": 2, "text": "Khối lượng nguyên tử hầu như toàn bộ nằm ở hạt nhân." }
     ],
     "steps": [
       { "kind": "identify", "title": "Kiểm tra từng câu", "body": "Xét từng phát biểu dựa trên mô hình cấu tạo nguyên tử." },
-      { "kind": "knowledge", "title": "Kiến thức đối chiếu", "body": "1. Hạt nhân chứa proton dương nên mang điện dương (ĐÚNG). 2. Khối lượng tập trung ở hạt nhân chứ không phải lớp vỏ (SAI). 3. Số p = số e nên nguyên tử trung hòa điện (ĐÚNG)." },
-      { "kind": "answer", "title": "Đáp án", "body": "s1: Đúng, s2: Sai, s3: Đúng." }
+      { "kind": "knowledge", "title": "Kiến thức đối chiếu", "body": "1. Khối lượng tập trung ở hạt nhân chứ không phải lớp vỏ (SAI). 2. Hạt nhân chứa proton dương nên mang điện dương (ĐÚNG). 3. Số p = số e nên câu 3 SAI." },
+      { "kind": "answer", "title": "Đáp án", "body": "s1: Sai, s2: Đúng, s3: Sai." }
     ],
-    "finalSolution": "s1: Đúng, s2: Sai (khối lượng tập trung ở hạt nhân), s3: Đúng.",
+    "finalSolution": "s1: **Sai** (tập trung ở hạt nhân), s2: **Đúng**, s3: **Sai** (số p = số e).",
     "commonMistakes": [
       { "id": "thought-shell-is-heavy", "message": "Electron nhẹ hơn proton tới 1836 lần nên lớp vỏ chiếm khối lượng không đáng kể." }
     ]

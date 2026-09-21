@@ -96,21 +96,21 @@
     "answer": {
       "kind": "true-false",
       "statements": [
-        { "id": "s1", "text": "Nước tinh khiết ở 25 °C có độ pH bằng 7.", "correct": true },
-        { "id": "s2", "text": "Nước chanh có vị chua nên có độ pH lớn hơn 7.", "correct": false },
-        { "id": "s3", "text": "Dung dịch có độ pH càng nhỏ thì tính axit càng mạnh.", "correct": true }
+        { "id": "s1", "text": "Nước chanh có vị chua nên có độ pH lớn hơn 7.", "correct": false },
+        { "id": "s2", "text": "Dung dịch có tính bazơ (kiềm) làm quỳ tím hóa đỏ và có độ pH nhỏ hơn 7.", "correct": false },
+        { "id": "s3", "text": "Dung dịch có độ pH càng nhỏ (tiến dần về 0) thì tính axit càng mạnh.", "correct": true }
       ]
     },
     "hints": [
-      { "level": 1, "text": "Vị chua là đặc trưng của axit, do đó nước chanh phải có pH < 7." },
-      { "level": 2, "text": "pH càng nhỏ (về gần 0) tính axit càng mạnh; pH càng lớn (về gần 14) tính bazơ càng mạnh." }
+      { "level": 1, "text": "Axit có pH < 7, bazơ có pH > 7. pH càng nhỏ tính axit càng mạnh." },
+      { "level": 2, "text": "Dung dịch bazơ làm quỳ tím hóa xanh và có pH > 7." }
     ],
     "steps": [
       { "kind": "identify", "title": "Xét từng nhận định về pH", "body": "Liên hệ giữa pH, môi trường và độ mạnh của axit/bazơ." },
-      { "kind": "knowledge", "title": "Quy luật thang pH", "body": "s1: Đúng (nước cất trung tính pH = 7). s2: Sai (nước chanh chứa axit xitric có pH khoảng 2 – 3 < 7). s3: Đúng (pH càng thấp tính axit càng mạnh)." },
-      { "kind": "answer", "title": "Kết luận", "body": "s1: Đúng, s2: Sai, s3: Đúng." }
+      { "kind": "knowledge", "title": "Quy luật thang pH", "body": "1. Nước chanh có tính axit nên pH < 7: câu 1 SAI. 2. Bazơ làm quỳ tím hóa xanh và pH > 7: câu 2 SAI. 3. pH càng thấp tính axit càng mạnh: ĐÚNG." },
+      { "kind": "answer", "title": "Kết luận", "body": "s1: Sai, s2: Sai, s3: Đúng." }
     ],
-    "finalSolution": "s1: Đúng, s2: Sai (nước chanh có tính axit nên pH < 7), s3: Đúng.",
+    "finalSolution": "s1: **Sai** (nước chanh pH < 7), s2: **Sai** (bazơ có pH > 7 và làm quỳ hóa xanh), s3: **Đúng**.",
     "commonMistakes": [
       { "id": "thought-acid-has-high-ph", "message": "Nhầm lẫn chiều thang đo: Axit có pH < 7, pH càng nhỏ tính axit càng mạnh." }
     ]

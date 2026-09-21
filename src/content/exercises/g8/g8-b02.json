@@ -137,13 +137,13 @@
         },
         {
           "id": "s2",
-          "text": "Trong một phản ứng hóa học, các nguyên tử bị biến đổi thành các nguyên tử của nguyên tố khác.",
-          "correct": false
+          "text": "Quá trình nung đá vôi cần được cung cấp nhiệt liên tục, nếu ngừng đun phản ứng sẽ dừng lại, đây là phản ứng thu nhiệt.",
+          "correct": true
         },
         {
           "id": "s3",
-          "text": "Quá trình nung đá vôi cần được cung cấp nhiệt liên tục, nếu ngừng đun phản ứng sẽ dừng lại, đây là phản ứng thu nhiệt.",
-          "correct": true
+          "text": "Trong một phản ứng hóa học thông thường, các nguyên tử bị biến đổi thành các nguyên tử của nguyên tố khác.",
+          "correct": false
         }
       ]
     },
@@ -153,10 +153,10 @@
     ],
     "steps": [
       { "kind": "identify", "title": "Xét từng nhận định", "body": "Kiểm tra bản chất nguyên tử trong phản ứng và khái niệm phản ứng tỏa nhiệt / thu nhiệt." },
-      { "kind": "knowledge", "title": "Bản chất phản ứng", "body": "Nguyên tử của nguyên tố này KHÔNG THỂ tự biến đổi thành nguyên tử của nguyên tố khác trong phản ứng hóa học thông thường. Chỉ có liên kết giữa chúng biến đổi." },
-      { "kind": "answer", "title": "Kết luận", "body": "Câu 1: Đúng (tỏa nhiệt). Câu 2: Sai (nguyên tử được bảo toàn). Câu 3: Đúng (thu nhiệt)." }
+      { "kind": "knowledge", "title": "Bản chất phản ứng", "body": "1. Đốt cháy tỏa nhiệt ra môi trường: ĐÚNG. 2. Nung đá vôi cần nhiệt liên tục: ĐÚNG (thu nhiệt). 3. Nguyên tử không tự biến thành nguyên tố khác: SAI." },
+      { "kind": "answer", "title": "Kết luận", "body": "Câu 1: Đúng (tỏa nhiệt). Câu 2: Đúng (thu nhiệt). Câu 3: Sai (nguyên tử được bảo toàn)." }
     ],
-    "finalSolution": "Câu 1: **Đúng** · Câu 2: **Sai** (nguyên tử không tự biến đổi) · Câu 3: **Đúng** (phản ứng thu nhiệt).",
+    "finalSolution": "Câu 1: **Đúng** · Câu 2: **Đúng** (phản ứng thu nhiệt) · Câu 3: **Sai** (nguyên tử không tự biến đổi).",
     "commonMistakes": [
       { "id": "atoms-change", "message": "Nhầm lẫn rằng nguyên tử biến thành nguyên tử khác. Thực tế chỉ có liên kết thay đổi để tạo phân tử mới." }
     ]
