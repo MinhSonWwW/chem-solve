@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { motion, AnimatePresence } from 'motion/react';
 import {
   Play,
   Sparkles,
@@ -17,6 +18,17 @@ import {
 import { sound } from '@/lib/audio';
 import { getCurriculum, type Grade } from '@/content/curriculum';
 import { useUserStore } from '@/features/gamification/useUserStore';
+import { Mascot, Button } from '@/design-system';
+
+interface LockModalInfo {
+  isOpen: boolean;
+  title: string;
+  badge: string;
+  description: string;
+  requiredLessonName?: string;
+  targetGrade: number;
+  actionLabel?: string;
+}
 
 export const PracticePage: React.FC = () => {
   const navigate = useNavigate();
@@ -26,6 +38,7 @@ export const PracticePage: React.FC = () => {
   const [selectedGrade, setSelectedGrade] = useState<Grade>(8);
   const [selectedDiff, setSelectedDiff] = useState<'all' | '1' | '2' | '3'>('all');
   const [selectedChapterId, setSelectedChapterId] = useState<string>('all');
+  const [modalInfo, setModalInfo] = useState<LockModalInfo | null>(null);
 
   const curriculum = useMemo(() => getCurriculum(selectedGrade), [selectedGrade]);
   const chapters = curriculum.chapters;
@@ -304,17 +317,36 @@ export const PracticePage: React.FC = () => {
                     key={lesson.id}
                     className={`p-4 rounded-2xl border transition-all ${
                       !lesson.ready
-                        ? 'bg-slate-950/40 border-slate-900 opacity-50 cursor-not-allowed'
+                        ? 'bg-slate-950/50 border-slate-900 hover:border-slate-700/60 cursor-pointer'
                         : isAvailable
                           ? 'bg-slate-900 border-slate-800 hover:border-cyan-500/50 shadow-md cursor-pointer hover:translate-y-[-1px]'
-                          : 'bg-slate-950/60 border-slate-900 opacity-75'
+                          : 'bg-slate-950/60 border-slate-900 hover:border-amber-500/40 cursor-pointer'
                     }`}
                     onClick={() => {
                       if (isAvailable && lesson.nodes[0]) {
                         handleStartPractice(lesson.id, lesson.nodes[0].id);
-                      } else if (!status.isUnlocked && lesson.ready) {
+                      } else if (!lesson.ready) {
                         sound.playClick();
-                        navigate(`/learn/${selectedGrade}`);
+                        setModalInfo({
+                          isOpen: true,
+                          title: lesson.title,
+                          badge: '🛠️ Sắp có (Đang biên soạn)',
+                          description: `Nội dung của bài "${lesson.title}" đang được ban biên tập hoàn thiện theo SGK mới. Bạn hãy tập trung học và luyện tập các bài học đang có sẵn trên bản đồ trước nhé!`,
+                          requiredLessonName: status.requiredLessonTitle || 'các bài học trước đó',
+                          targetGrade: selectedGrade,
+                          actionLabel: 'XEM BẢN ĐỒ HỌC',
+                        });
+                      } else if (!status.isUnlocked) {
+                        sound.playClick();
+                        setModalInfo({
+                          isOpen: true,
+                          title: lesson.title,
+                          badge: '🔒 Chưa mở khóa',
+                          description: `Bạn chưa học đến bài "${lesson.title}". Cần hoàn thành "${status.requiredLessonTitle}" trên Bản đồ học trước để mở khóa luyện tập bài này nhé!`,
+                          requiredLessonName: status.requiredLessonTitle,
+                          targetGrade: selectedGrade,
+                          actionLabel: 'ĐẾN BẢN ĐỒ HỌC NGAY',
+                        });
                       }
                     }}
                   >
@@ -330,7 +362,7 @@ export const PracticePage: React.FC = () => {
                           </span>
                           {!lesson.ready ? (
                             <span className="text-[10px] font-bold bg-slate-800/90 text-slate-400 border border-slate-700/60 px-2 py-0.5 rounded-lg flex items-center gap-1">
-                              🛠️ Đang biên soạn
+                              🛠️ Sắp có
                             </span>
                           ) : status.isCompleted ? (
                             <span className="text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-lg flex items-center gap-1">
@@ -357,6 +389,12 @@ export const PracticePage: React.FC = () => {
                             <span className="text-cyan-400 underline flex items-center">
                               Đến học <ArrowRight className="w-3 h-3 ml-0.5 inline" />
                             </span>
+                          </div>
+                        )}
+
+                        {!lesson.ready && (
+                          <div className="flex items-center gap-1.5 text-[10px] font-bold text-slate-400 pt-0.5">
+                            <span>🛠️ Bấm để xem thông tin mở khóa & tiến độ biên soạn</span>
                           </div>
                         )}
                       </div>
@@ -401,13 +439,21 @@ export const PracticePage: React.FC = () => {
                       navigate(`/play/${gen.id}/dyn`);
                     } else {
                       sound.playClick();
-                      navigate('/learn/8');
+                      setModalInfo({
+                        isOpen: true,
+                        title: gen.title,
+                        badge: '🔒 Chưa mở khóa',
+                        description: `Dạng bài tập "${gen.title}" yêu cầu vận dụng kiến thức của ${gen.requiredLessonName}. Bạn cần học và hoàn thành bài này trên lộ trình trước nhé!`,
+                        requiredLessonName: gen.requiredLessonName,
+                        targetGrade: 8,
+                        actionLabel: 'ĐẾN HỌC BÀI NÀY',
+                      });
                     }
                   }}
-                  className={`border p-4 rounded-2xl transition-all shadow-md flex items-center justify-between group ${
+                  className={`border p-4 rounded-2xl transition-all shadow-md flex items-center justify-between group cursor-pointer ${
                     isUnlocked
-                      ? 'bg-slate-900 border-slate-800 hover:border-amber-500/50 cursor-pointer'
-                      : 'bg-slate-950/60 border-slate-900 opacity-70 cursor-pointer'
+                      ? 'bg-slate-900 border-slate-800 hover:border-amber-500/50'
+                      : 'bg-slate-950/60 border-slate-900 hover:border-amber-500/40 opacity-75'
                   }`}
                 >
                   <div className="flex items-center gap-3.5 min-w-0 pr-2">
@@ -468,6 +514,86 @@ export const PracticePage: React.FC = () => {
           </div>
         </div>
       )}
+
+      {/* Interactive Guidance Modal for Locked & Coming Soon Items */}
+      <AnimatePresence>
+        {modalInfo?.isOpen && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setModalInfo(null)}
+              className="absolute inset-0 bg-slate-950/80 backdrop-blur-sm"
+            />
+
+            <motion.div
+              initial={{ scale: 0.85, opacity: 0, y: 20 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.9, opacity: 0, y: 20 }}
+              transition={{ type: 'spring', stiffness: 350, damping: 25 }}
+              className="relative w-full max-w-sm rounded-3xl bg-slate-900 border-2 border-slate-700/80 p-6 shadow-2xl text-center space-y-4 z-10"
+            >
+              {/* Mascot / Icon */}
+              <div className="flex justify-center pt-1">
+                <Mascot state="thinking" size="lg" />
+              </div>
+
+              <div className="space-y-2">
+                <span className="inline-block text-[11px] font-black uppercase tracking-wider text-amber-400 bg-amber-950/60 px-3 py-1 rounded-xl border border-amber-800/60">
+                  {modalInfo.badge}
+                </span>
+                <h3 className="text-base sm:text-lg font-black text-slate-100">
+                  {modalInfo.title}
+                </h3>
+                <p className="text-xs text-slate-300 leading-relaxed font-medium">
+                  {modalInfo.description}
+                </p>
+
+                {modalInfo.requiredLessonName && (
+                  <div className="p-3 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-bold text-left space-y-0.5">
+                    <span className="text-[10px] uppercase text-amber-400/80 font-black block">
+                      Điều kiện mở khóa:
+                    </span>
+                    <span>👉 Cần học xong: <strong>{modalInfo.requiredLessonName}</strong></span>
+                  </div>
+                )}
+              </div>
+
+              {/* Action Buttons */}
+              <div className="space-y-2 pt-2">
+                <Button
+                  variant="primary"
+                  size="lg"
+                  fullWidth
+                  className="flex items-center justify-center gap-2"
+                  onClick={() => {
+                    sound.playClick();
+                    const target = modalInfo.targetGrade;
+                    setModalInfo(null);
+                    navigate(`/learn/${target}`);
+                  }}
+                >
+                  <span>{modalInfo.actionLabel || 'ĐẾN BẢN ĐỒ HỌC'}</span>
+                  <ArrowRight className="w-4 h-4 ml-1" />
+                </Button>
+
+                <Button
+                  variant="secondary"
+                  size="md"
+                  fullWidth
+                  onClick={() => {
+                    sound.playClick();
+                    setModalInfo(null);
+                  }}
+                >
+                  ĐÃ HIỂU
+                </Button>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
