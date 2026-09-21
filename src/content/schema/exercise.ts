@@ -39,7 +39,8 @@ export const NumberAnswerSchema = z.object({
   tolerance: z.object({
     abs: z.number().optional(),
     rel: z.number().optional()
-  }).optional()
+  }).optional(),
+  strictUnit: z.boolean().optional()
 });
 
 export const FormulaAnswerSchema = z.object({

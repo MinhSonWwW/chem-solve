@@ -9,6 +9,7 @@ export interface NumberAnswerConfig {
     abs?: number;
     rel?: number;
   };
+  strictUnit?: boolean;
 }
 
 /**
@@ -91,12 +92,16 @@ export const numericChecker: Checker<NumberAnswerConfig, string | number> = {
     // 4. Unit verification (if expected)
     if (answer.unit) {
       if (!inputUnit) {
-        // Missing unit -> partial (warning, does not deduct heart)
-        return {
-          status: 'partial',
-          reason: 'missing-unit',
-          message: `Kết quả số đúng, nhưng bạn quên ghi đơn vị (${answer.unit}).`
-        };
+        // If strictUnit is required, warn about missing unit
+        if (answer.strictUnit) {
+          return {
+            status: 'partial',
+            reason: 'missing-unit',
+            message: `Kết quả số đúng, nhưng bạn quên ghi đơn vị (${answer.unit}).`
+          };
+        }
+        // Otherwise, unit is already displayed alongside the input field in the UI, so numeric-only is correct!
+        return { status: 'correct' };
       } else if (inputUnit.toLowerCase() !== answer.unit.toLowerCase()) {
         return {
           status: 'incorrect',

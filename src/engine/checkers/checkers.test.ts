@@ -29,8 +29,14 @@ describe('engine/checkers', () => {
       expect(res.status).toBe('correct');
     });
 
-    it('warns partial for missing unit when expected', () => {
+    it('accepts correct number without unit when unit is displayed on UI', () => {
       const res = checkAnswer(numAnswer, '4,96', mistakes);
+      expect(res.status).toBe('correct');
+    });
+
+    it('warns partial for missing unit when strictUnit is enabled', () => {
+      const strictAnswer: Answer = { ...numAnswer, strictUnit: true };
+      const res = checkAnswer(strictAnswer, '4,96', mistakes);
       expect(res.status).toBe('partial');
       if (res.status === 'partial') {
         expect(res.reason).toBe('missing-unit');
