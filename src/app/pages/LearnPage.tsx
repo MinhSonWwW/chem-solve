@@ -21,55 +21,133 @@ export const LearnPage: React.FC = () => {
     isUnlocked: boolean;
     isCompleted: boolean;
     bestAccuracy?: number;
+    prerequisiteTitle?: string;
   } | null>(null);
 
   // Selected chapter for guidebook modal
   const [selectedChapterGuide, setSelectedChapterGuide] = useState<Chapter | null>(null);
-  const chaptersWithNodes = useMemo(() => {
-    return curriculum.chapters.map((ch) => {
-      let isPreviousNodeDone = true; // First node of chapter is unlocked
 
+  const chaptersWithNodes = useMemo(() => {
+    // 1. Flatten all nodes in the grade in exact curriculum order
+    const allNodesInGrade: {
+      chapter: Chapter;
+      lesson: Lesson;
+      node: NodeInfo;
+      key: string;
+    }[] = [];
+
+    curriculum.chapters.forEach((ch) => {
+      ch.lessons.forEach((lesson) => {
+        lesson.nodes.forEach((node) => {
+          allNodesInGrade.push({
+            chapter: ch,
+            lesson,
+            node,
+            key: `${lesson.id}:${node.id}`,
+          });
+        });
+      });
+    });
+
+    // 2. Determine node statuses sequentially across the entire grade
+    const completedKeys = new Set(
+      Object.keys(completedNodes).filter((k) => completedNodes[k])
+    );
+
+    let canUnlock = true;
+    let foundActive = false;
+    let lastCompletedReadyTitle: string | undefined = undefined;
+
+    const nodeStatusMap = new Map<
+      string,
+      {
+        status: PathNode['status'];
+        isUnlocked: boolean;
+        isCompleted: boolean;
+        stars?: number;
+        prerequisiteTitle?: string;
+      }
+    >();
+
+    for (let i = 0; i < allNodesInGrade.length; i++) {
+      const item = allNodesInGrade[i];
+      const isComp = completedKeys.has(item.key);
+      const isReady = item.lesson.ready;
+
+      if (isComp) {
+        const compData = completedNodes[item.key];
+        const stars = Math.min(3, Math.max(1, Math.round(compData.accuracy * 3)));
+        nodeStatusMap.set(item.key, {
+          status: 'completed',
+          isUnlocked: true,
+          isCompleted: true,
+          stars,
+        });
+        if (isReady) {
+          lastCompletedReadyTitle = item.node.title;
+        }
+      } else if (canUnlock && isReady && !foundActive) {
+        // Exactly one current active playable node for the student
+        nodeStatusMap.set(item.key, {
+          status: 'active',
+          isUnlocked: true,
+          isCompleted: false,
+        });
+        foundActive = true;
+        canUnlock = false; // All subsequent nodes are locked
+      } else {
+        // Locked node (unready draft or ahead of progress)
+        nodeStatusMap.set(item.key, {
+          status: 'locked',
+          isUnlocked: false,
+          isCompleted: false,
+          prerequisiteTitle: lastCompletedReadyTitle,
+        });
+      }
+    }
+
+    // 3. Assemble chapters with pathNodes
+    return curriculum.chapters.map((ch) => {
       const pathNodes: PathNode[] = [];
-      const nodeLessonMap = new Map<string, { lesson: Lesson; node: NodeInfo; isUnlocked: boolean; isCompleted: boolean; bestAccuracy?: number }>();
+      const nodeLessonMap = new Map<
+        string,
+        {
+          lesson: Lesson;
+          node: NodeInfo;
+          isUnlocked: boolean;
+          isCompleted: boolean;
+          bestAccuracy?: number;
+          prerequisiteTitle?: string;
+        }
+      >();
 
       ch.lessons.forEach((lesson) => {
         lesson.nodes.forEach((node) => {
           const key = `${lesson.id}:${node.id}`;
           const comp = completedNodes[key];
-          const isCompleted = !!comp;
-          const isUnlocked = isPreviousNodeDone || isCompleted;
-
-          // Determine status
-          let status: PathNode['status'] = 'locked';
-          let stars: number | undefined;
-
-          if (isCompleted) {
-            status = 'completed';
-            stars = Math.min(3, Math.max(1, Math.round(comp.accuracy * 3)));
-          } else if (isUnlocked) {
-            status = 'active';
-          }
+          const calculated = nodeStatusMap.get(key) ?? {
+            status: 'locked' as const,
+            isUnlocked: false,
+            isCompleted: false,
+          };
 
           pathNodes.push({
             id: node.id,
             title: node.title,
             type: node.type,
-            status,
-            stars,
+            status: calculated.status,
+            stars: calculated.stars,
+            isReady: lesson.ready,
           });
 
           nodeLessonMap.set(node.id, {
             lesson,
             node,
-            isUnlocked,
-            isCompleted,
+            isUnlocked: calculated.isUnlocked,
+            isCompleted: calculated.isCompleted,
             bestAccuracy: comp?.accuracy,
+            prerequisiteTitle: calculated.prerequisiteTitle,
           });
-
-          // Next node is only unlocked if this one was completed (do not let unready lessons block progression)
-          if (lesson.ready) {
-            isPreviousNodeDone = isCompleted;
-          }
         });
       });
 
@@ -83,7 +161,17 @@ export const LearnPage: React.FC = () => {
 
   const handleNodeClick = (
     pathNode: PathNode,
-    map: Map<string, { lesson: Lesson; node: NodeInfo; isUnlocked: boolean; isCompleted: boolean; bestAccuracy?: number }>
+    map: Map<
+      string,
+      {
+        lesson: Lesson;
+        node: NodeInfo;
+        isUnlocked: boolean;
+        isCompleted: boolean;
+        bestAccuracy?: number;
+        prerequisiteTitle?: string;
+      }
+    >
   ) => {
     sound.playClick();
     const info = map.get(pathNode.id);
@@ -171,6 +259,7 @@ export const LearnPage: React.FC = () => {
         isUnlocked={selectedNode?.isUnlocked ?? false}
         isCompleted={selectedNode?.isCompleted ?? false}
         bestAccuracy={selectedNode?.bestAccuracy}
+        prerequisiteTitle={selectedNode?.prerequisiteTitle}
         onClose={() => setSelectedNode(null)}
         onStart={handleStartNode}
       />

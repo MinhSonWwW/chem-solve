@@ -13,6 +13,7 @@ export interface NodePreviewDrawerProps {
   isUnlocked: boolean;
   isCompleted: boolean;
   bestAccuracy?: number;
+  prerequisiteTitle?: string;
   onClose: () => void;
   onStart: () => void;
 }
@@ -24,6 +25,7 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
   isUnlocked,
   isCompleted,
   bestAccuracy,
+  prerequisiteTitle,
   onClose,
   onStart,
 }) => {
@@ -106,9 +108,33 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
                     <span>{isCompleted ? 'ÔN TẬP LẠI' : 'BẮT ĐẦU CHẶNG'}</span>
                   </Button>
                 ) : (
-                  <div className="p-3 rounded-2xl bg-slate-800/80 border border-slate-700 flex items-center justify-center gap-2 text-xs text-slate-400 font-bold">
-                    <Lock className="w-4 h-4" />
-                    <span>Hoàn thành chặng trước để mở khóa</span>
+                  <div className="space-y-2.5">
+                    <div className="p-3.5 rounded-2xl bg-slate-800/80 border border-slate-700/80 flex flex-col items-center justify-center gap-1.5 text-xs text-slate-400 font-bold">
+                      <div className="flex items-center gap-1.5 text-amber-400 text-xs">
+                        <Lock className="w-4 h-4" />
+                        <span>Chưa mở khóa</span>
+                      </div>
+                      {prerequisiteTitle ? (
+                        <p className="text-[11px] text-slate-300 font-normal">
+                          Cần hoàn thành: <span className="font-bold text-cyan-300">{prerequisiteTitle}</span>
+                        </p>
+                      ) : (
+                        <p className="text-[11px] text-slate-400 font-normal">
+                          Hoàn thành các chặng trước để mở khóa bài này
+                        </p>
+                      )}
+                    </div>
+                    <Button
+                      variant="secondary"
+                      size="md"
+                      fullWidth
+                      onClick={() => {
+                        sound.playClick();
+                        onClose();
+                      }}
+                    >
+                      ĐÃ HIỂU
+                    </Button>
                   </div>
                 )}
               </div>

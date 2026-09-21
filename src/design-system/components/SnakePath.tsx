@@ -9,6 +9,7 @@ export interface PathNode {
   type: 'lesson' | 'checkpoint' | 'chest';
   status: 'completed' | 'active' | 'locked';
   stars?: number; // 0-3
+  isReady?: boolean;
 }
 
 export interface SnakePathProps {
@@ -37,12 +38,15 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
   let completedPathD = '';
 
   // Find index of the active or last completed node to color the path
-  let lastReachedIndex = 0;
+  let lastReachedIndex = -1;
   nodes.forEach((node, idx) => {
     if (node.status === 'completed' || node.status === 'active') {
       lastReachedIndex = idx;
     }
   });
+
+  // Only the first active node shows the floating "BẮT ĐẦU" badge
+  const firstActiveIndex = nodes.findIndex((n) => n.status === 'active');
 
   nodeCoords.forEach((coord, i) => {
     if (i === 0) {
@@ -137,9 +141,10 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
           const coord = nodeCoords[index];
           const isCompleted = node.status === 'completed';
           const isActive = node.status === 'active';
-          const isLocked = node.status === 'locked';
           const isChest = node.type === 'chest';
           const isCheckpoint = node.type === 'checkpoint';
+          const isUnready = node.isReady === false;
+          const showStartBadge = isActive && index === firstActiveIndex;
 
           // Position in percentage of 360 width
           const leftPercent = (coord.x / svgWidth) * 100;
@@ -153,8 +158,8 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
                 top: `${coord.y}px`,
               }}
             >
-              {/* Active Node Floating Tooltip Banner (Duolingo Style) */}
-              {isActive && (
+              {/* Active Node Floating Tooltip Banner (Duolingo Style - only for the current active node) */}
+              {showStartBadge && (
                 <motion.div
                   initial={{ y: 4 }}
                   animate={{ y: -4 }}
@@ -178,7 +183,6 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
 
                 <button
                   onClick={() => handleNodePress(node)}
-                  disabled={isLocked}
                   aria-label={node.title}
                   className={`w-[70px] h-[70px] rounded-full flex flex-col items-center justify-center font-black select-none transition-all cursor-pointer relative ${
                     isCompleted
@@ -187,7 +191,7 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
                       ? 'bg-gradient-to-tr from-cyan-500 to-cyan-300 text-slate-950 border-2 border-cyan-100 shadow-[0_8px_0_0_#0891b2] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#0891b2] ring-4 ring-cyan-500/30'
                       : isChest
                       ? 'bg-gradient-to-tr from-amber-600 to-amber-400 text-amber-950 border-2 border-amber-300 shadow-[0_8px_0_0_#78350f] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#78350f]'
-                      : 'bg-slate-800 text-slate-600 border-2 border-slate-700 shadow-[0_6px_0_0_#0f172a] cursor-not-allowed opacity-60'
+                      : 'bg-slate-800 text-slate-400 border-2 border-slate-700 shadow-[0_6px_0_0_#0f172a] hover:bg-slate-750 hover:border-slate-600 active:translate-y-1'
                   }`}
                 >
                   {/* Top gloss highlight shine */}
@@ -199,18 +203,20 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
                     <Check className="w-8 h-8 stroke-[3.5]" />
                   ) : isActive ? (
                     <Play className="w-7 h-7 fill-slate-950 ml-0.5" />
+                  ) : isUnready ? (
+                    <span className="text-xl select-none" title="Đang biên soạn">🛠️</span>
                   ) : isCheckpoint ? (
                     <Award className="w-7 h-7" />
                   ) : (
-                    <Lock className="w-6 h-6" />
+                    <Lock className="w-6 h-6 text-slate-500" />
                   )}
                 </button>
               </div>
 
               {/* Node Title & Star Rating */}
-              <div className="mt-2.5 text-center w-[130px]">
+              <div className="mt-2.5 text-center w-[130px] flex flex-col items-center">
                 <span
-                  className={`text-[11px] font-black block leading-tight truncate ${
+                  className={`text-[11px] font-black block leading-tight truncate w-full ${
                     isActive
                       ? 'text-cyan-300'
                       : isCompleted
@@ -220,6 +226,12 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
                 >
                   {node.title}
                 </span>
+
+                {isUnready && !isCompleted && (
+                  <span className="inline-block text-[9px] font-bold text-amber-400/80 bg-amber-950/60 px-1.5 py-0.5 rounded mt-0.5 border border-amber-900/50">
+                    Sắp có
+                  </span>
+                )}
 
                 {isCompleted && (
                   <div className="flex justify-center gap-0.5 mt-0.5 text-amber-400 drop-shadow">
