@@ -89,6 +89,7 @@ export function searchChemicalData(query: string): SearchResultsGrouped {
 
   // 4. Search Lessons
   const allCurriculum = [
+    ...(CURRICULUM[6]?.chapters || []).map((c) => ({ chapter: c, grade: 6 })),
     ...(CURRICULUM[7]?.chapters || []).map((c) => ({ chapter: c, grade: 7 })),
     ...(CURRICULUM[8]?.chapters || []).map((c) => ({ chapter: c, grade: 8 })),
     ...(CURRICULUM[9]?.chapters || []).map((c) => ({ chapter: c, grade: 9 })),

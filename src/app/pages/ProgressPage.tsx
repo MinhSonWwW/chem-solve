@@ -245,7 +245,7 @@ export const ProgressPage: React.FC = () => {
         </div>
 
         <div className="flex bg-slate-900 border border-slate-800 p-1.5 rounded-2xl shadow-lg">
-          {([7, 8, 9] as Grade[]).map((g) => {
+          {([6, 7, 8, 9] as Grade[]).map((g) => {
             const isSelected = selectedGrade === g;
             return (
               <button
@@ -254,15 +254,15 @@ export const ProgressPage: React.FC = () => {
                   sound.playClick();
                   setSelectedGrade(g);
                 }}
-                className={`flex-1 py-2.5 text-xs font-black rounded-xl transition-all cursor-pointer flex items-center justify-center gap-2 ${
+                className={`flex-1 py-2.5 text-xs font-black rounded-xl transition-all cursor-pointer flex items-center justify-center gap-1.5 sm:gap-2 ${
                   isSelected
                     ? 'bg-cyan-500 text-slate-950 shadow-[0_3px_0_0_#0891b2]'
                     : 'text-slate-400 hover:text-slate-200'
                 }`}
               >
-                <span>Hóa học Lớp {g}</span>
+                <span><span className="hidden sm:inline">Hóa học </span>Lớp {g}</span>
                 {isSelected && (
-                  <span className="w-2 h-2 rounded-full bg-slate-950 animate-pulse" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-slate-950 animate-pulse" />
                 )}
               </button>
             );
@@ -281,7 +281,9 @@ export const ProgressPage: React.FC = () => {
               Tiến độ hoàn thành Lớp {selectedGrade}
             </h2>
             <p className="text-xs text-slate-300 line-clamp-1">
-              {selectedGrade === 8
+              {selectedGrade === 6
+                ? 'Chất quanh ta: Sự đa dạng của chất, Các thể của chất, Oxygen và Không khí'
+                : selectedGrade === 8
                 ? 'Phản ứng hóa học, Mol, Dung dịch và Các hợp chất vô cơ'
                 : selectedGrade === 7
                 ? 'Nguyên tử, Bảng tuần hoàn và Phân tử chất'

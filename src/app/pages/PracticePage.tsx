@@ -218,7 +218,7 @@ export const PracticePage: React.FC = () => {
           <div className="space-y-1.5">
             <label className="text-xs font-bold text-slate-300">Khối lớp:</label>
             <div className="flex bg-slate-900 border border-slate-800 p-1 rounded-2xl">
-              {([7, 8, 9] as Grade[]).map((g) => (
+              {([6, 7, 8, 9] as Grade[]).map((g) => (
                 <button
                   key={g}
                   onClick={() => {

@@ -1,13 +1,79 @@
 export interface Skill {
   id: string;
   name: string;
-  grade: 7 | 8 | 9;
+  grade: 6 | 7 | 8 | 9;
   lessonId: string;
   category: 'ly-thuyet' | 'tinh-toan' | 'phuong-trinh' | 'nhan-biet' | 'thi-nghiem';
   description: string;
 }
 
 export const SKILLS: Skill[] = [
+  // LỚP 6
+  {
+    id: 'matter-diversity',
+    name: 'Vật thể và chất',
+    grade: 6,
+    lessonId: 'g6-b09',
+    category: 'ly-thuyet',
+    description: 'Phân biệt vật thể tự nhiên và nhân tạo, vật sống và không sống; một vật thể gồm nhiều chất và một chất tạo nên nhiều vật thể.',
+  },
+  {
+    id: 'physical-chemical-properties',
+    name: 'Tính chất vật lí & hóa học',
+    grade: 6,
+    lessonId: 'g6-b09',
+    category: 'ly-thuyet',
+    description: 'Nhận biết các tính chất vật lí (màu, mùi, vị, thể, tan, nóng chảy, sôi) và tính chất hóa học (cháy, gỉ sét).',
+  },
+  {
+    id: 'matter-changes',
+    name: 'Biến đổi vật lí & hóa học',
+    grade: 6,
+    lessonId: 'g6-b09',
+    category: 'nhan-biet',
+    description: 'Phân biệt hiện tượng biến đổi vật lí (không tạo chất mới) và biến đổi hóa học (tạo ra chất mới).',
+  },
+  {
+    id: 'states-of-matter',
+    name: 'Ba thể của chất & Mô hình hạt',
+    grade: 6,
+    lessonId: 'g6-b10',
+    category: 'ly-thuyet',
+    description: 'Đặc điểm hình dạng, thể tích và khả năng nén của thể rắn, lỏng, khí cùng mô hình chuyển động của hạt.',
+  },
+  {
+    id: 'state-changes',
+    name: 'Sự chuyển thể của chất',
+    grade: 6,
+    lessonId: 'g6-b10',
+    category: 'ly-thuyet',
+    description: 'Các quá trình nóng chảy, đông đặc, bay hơi, ngưng tụ và sự giữ nguyên nhiệt độ khi chuyển thể.',
+  },
+  {
+    id: 'boiling-and-graphs',
+    name: 'Sự sôi & Các yếu tố bay hơi',
+    grade: 6,
+    lessonId: 'g6-b10',
+    category: 'thi-nghiem',
+    description: 'Nhiệt độ sôi của chất lỏng, các yếu tố ảnh hưởng tốc độ bay hơi (nhiệt độ, gió, diện tích mặt thoáng) và đọc đồ thị.',
+  },
+  {
+    id: 'oxygen-role',
+    name: 'Tính chất & Vai trò của Oxygen',
+    grade: 6,
+    lessonId: 'g6-b11',
+    category: 'ly-thuyet',
+    description: 'Tính chất vật lí của khí oxygen, vai trò duy trì sự cháy và sự sống (hô hấp).',
+  },
+  {
+    id: 'air-and-environment',
+    name: 'Thành phần không khí & Môi trường',
+    grade: 6,
+    lessonId: 'g6-b11',
+    category: 'thi-nghiem',
+    description: 'Tỉ lệ thành phần các khí trong không khí (nitrogen 78%, oxygen 21%), thí nghiệm úp cốc đốt nến và biện pháp giảm ô nhiễm không khí.',
+  },
+
   // LỚP 7
   {
     id: 'science-method',
@@ -343,7 +409,7 @@ export const SKILLS: Skill[] = [
   },
 ];
 
-export function getSkillsByGrade(grade: 7 | 8 | 9): Skill[] {
+export function getSkillsByGrade(grade: 6 | 7 | 8 | 9): Skill[] {
   return SKILLS.filter((s) => s.grade === grade);
 }
 

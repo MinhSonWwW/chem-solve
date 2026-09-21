@@ -1,4 +1,4 @@
-export type Grade = 7 | 8 | 9;
+export type Grade = 6 | 7 | 8 | 9;
 
 export interface NodeInfo {
   id: string; // e.g. "g8-b03-n01"
@@ -32,6 +32,60 @@ export interface GradeCurriculum {
 }
 
 export const CURRICULUM: Record<Grade, GradeCurriculum> = {
+  6: {
+    grade: 6,
+    title: 'Hóa học lớp 6 (KHTN 6)',
+    chapters: [
+      {
+        id: 'g6-c02',
+        chapterNumber: 2,
+        title: 'Chất quanh ta',
+        description: 'Sự đa dạng của chất, các thể của chất và khí Oxygen - Không khí',
+        lessons: [
+          {
+            id: 'g6-b09',
+            lessonNumber: 9,
+            title: 'Sự đa dạng của chất',
+            subtitle: 'Vật thể, chất, tính chất vật lí và biến đổi hóa học',
+            ready: true,
+            nodes: [
+              { id: 'g6-b09-n01', nodeIndex: 1, title: 'Vật thể và chất', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g6-b09-n02', nodeIndex: 2, title: 'Tính chất vật lí & hóa học', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g6-b09-n03', nodeIndex: 3, title: 'Thực hành đun đường & muối', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g6-b09-boss', nodeIndex: 4, title: 'Thử thách Sự đa dạng của chất', description: 'Thử thách lớn', type: 'checkpoint' },
+            ],
+          },
+          {
+            id: 'g6-b10',
+            lessonNumber: 10,
+            title: 'Các thể của chất và sự chuyển thể',
+            subtitle: 'Rắn, lỏng, khí, mô hình hạt và các quá trình chuyển thể',
+            ready: true,
+            nodes: [
+              { id: 'g6-b10-n01', nodeIndex: 1, title: 'Ba thể của chất & Mô hình hạt', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g6-b10-n02', nodeIndex: 2, title: 'Sự chuyển thể của chất', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g6-b10-n03', nodeIndex: 3, title: 'Sự sôi & Các yếu tố bay hơi', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g6-b10-boss', nodeIndex: 4, title: 'Thử thách Bậc thầy chuyển thể', description: 'Thử thách lớn', type: 'checkpoint' },
+            ],
+          },
+          {
+            id: 'g6-b11',
+            lessonNumber: 11,
+            title: 'Oxygen. Không khí',
+            subtitle: 'Tính chất & vai trò của oxygen, thành phần không khí',
+            ready: true,
+            nodes: [
+              { id: 'g6-b11-n01', nodeIndex: 1, title: 'Tính chất & vai trò của Oxygen', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g6-b11-n02', nodeIndex: 2, title: 'Thành phần không khí & Thí nghiệm', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g6-b11-n03', nodeIndex: 3, title: 'Ô nhiễm không khí & Hành động xanh', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g6-b11-boss', nodeIndex: 4, title: 'Thử thách Người bảo vệ bầu trời', description: 'Thử thách lớn', type: 'checkpoint' },
+              { id: 'g6-b11-chest', nodeIndex: 5, title: 'Rương kho báu Chất quanh ta', description: 'Phần thưởng hoàn thành', type: 'chest' },
+            ],
+          },
+        ],
+      },
+    ],
+  },
   7: {
     grade: 7,
     title: 'Hóa học lớp 7 (KHTN)',

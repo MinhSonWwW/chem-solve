@@ -191,7 +191,7 @@ export const LearnPage: React.FC = () => {
     <div className="space-y-6">
       {/* 1. Grade Selector (3D chunky tabs) */}
       <div className="flex bg-slate-900 border border-slate-800 p-1.5 rounded-2xl shadow-md">
-        {([7, 8, 9] as Grade[]).map((g) => (
+        {([6, 7, 8, 9] as Grade[]).map((g) => (
           <button
             key={g}
             onClick={() => {

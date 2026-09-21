@@ -153,8 +153,8 @@ export const FindItemSchema = z.object({
 });
 
 export const ExerciseSchema = z.object({
-  id: z.string().regex(/^g[7-9]-b\d{2}-[a-z0-9-]+$/),
-  lessonId: z.string().regex(/^g[7-9]-b\d{2}$/),
+  id: z.string().regex(/^g[6-9]-b\d{2}-[a-z0-9-]+$/),
+  lessonId: z.string().regex(/^g[6-9]-b\d{2}$/),
   skillIds: z.array(z.string()).min(1),
   difficulty: DifficultySchema,
   prompt: z.string().min(3),

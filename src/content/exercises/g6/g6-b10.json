@@ -1,0 +1,262 @@
+[
+  {
+    "id": "g6-b10-match-001",
+    "lessonId": "g6-b10",
+    "skillIds": ["states-of-matter"],
+    "difficulty": 1,
+    "prompt": "Ghép thể của chất với đặc điểm về hình dạng và thể tích tương ứng.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Thể Rắn", "right": "Có hình dạng và thể tích xác định, rất khó bị nén" },
+        { "left": "Thể Lỏng", "right": "Có thể tích xác định nhưng hình dạng phụ thuộc vào phần bình chứa nó" },
+        { "left": "Thể Khí (Hơi)", "right": "Không có hình dạng và thể tích xác định, dễ bị nén và chiếm toàn bộ bình chứa" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Hòn đá (thể rắn) giữ nguyên hình dạng; nước (thể lỏng) rót vào đâu theo hình đó." },
+      { "level": 2, "text": "Chất khí lan tỏa khắp mọi hướng và rất dễ nén (như bơm xe đạp nén không khí)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đặc trưng 3 thể", "body": "Nối thể chất với đặc điểm hình dạng và thể tích." },
+      { "kind": "knowledge", "title": "Bảng đặc tính", "body": "Rắn: hình dạng & thể tích xác định. Lỏng: thể tích xác định, hình dạng theo bình chứa. Khí: hình dạng & thể tích không xác định, dễ nén." },
+      { "kind": "answer", "title": "Kết quả", "body": "Ghép đúng 3 cặp thể - đặc điểm." }
+    ],
+    "finalSolution": "Rắn: hình dạng & V xác định. Lỏng: V xác định, hình dạng theo bình chứa. Khí: không có hình dạng & V xác định, dễ nén.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g6-b10-mcq-001",
+    "lessonId": "g6-b10",
+    "skillIds": ["states-of-matter"],
+    "difficulty": 1,
+    "prompt": "Trong ba thể của chất, chất ở thể nào là DỄ BỊ NÉN NHẤT khi dùng lực tác dụng?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Thể khí" },
+        { "id": "b", "label": "Thể lỏng" },
+        { "id": "c", "label": "Thể rắn" },
+        { "id": "d", "label": "Cả ba thể đều nén dễ như nhau" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Hãy nghĩ đến việc bịt đầu ống tiêm chứa không khí và ấn pít-tông xuống." },
+      { "level": 2, "text": "Ở thể khí, các hạt ở rất xa nhau nên có thể nén ép các hạt lại gần nhau một cách dễ dàng." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Khả năng bị nén", "body": "So sánh mức độ nén của rắn, lỏng, khí." },
+      { "kind": "knowledge", "title": "Giải thích", "body": "Thể khí: khoảng cách giữa các hạt rất lớn -> dễ bị nén nhất. Thể lỏng và rắn: các hạt xếp sít nhau -> rất khó nén." },
+      { "kind": "answer", "title": "Kết luận", "body": "**Thể khí** là thể dễ bị nén nhất." }
+    ],
+    "finalSolution": "Chất ở thể khí dễ bị nén nhất do khoảng cách giữa các hạt cấu tạo rất lớn.",
+    "commonMistakes": [
+      { "id": "picked-liquid", "message": "Nước lỏng rất khó bị nén (hầu như không nén được trong điều kiện bình thường)." }
+    ]
+  },
+  {
+    "id": "g6-b10-mcq-002",
+    "lessonId": "g6-b10",
+    "skillIds": ["states-of-matter"],
+    "difficulty": 1,
+    "prompt": "Mô hình nào sau đây mô tả ĐÚNG cách sắp xếp và chuyển động của các hạt ở thể RẮN?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Các hạt xếp rất sát nhau, có trật tự chặt chẽ và chỉ dao động xung quanh vị trí cố định" },
+        { "id": "b", "label": "Các hạt ở xa nhau, chuyển động hoàn toàn tự do và hỗn loạn về mọi hướng" },
+        { "id": "c", "label": "Các hạt ở gần nhau nhưng không cố định, có thể trượt lên nhau" },
+        { "id": "d", "label": "Các hạt không hề có bất kì chuyển động nào kể cả dao động" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Ở thể rắn, lực hút giữa các hạt rất mạnh nên chúng giữ chặt vị trí của nhau." },
+      { "level": 2, "text": "Hạt thể rắn chỉ dao động quanh vị trí cân bằng cố định." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Mô hình hạt thể rắn", "body": "Xác định đặc điểm sắp xếp hạt chất rắn." },
+      { "kind": "knowledge", "title": "Mô hình hạt", "body": "Thể rắn: hạt xếp sát nhau, có trật tự, dao động tại chỗ. Thể lỏng: hạt gần nhau, trượt qua nhau. Thể khí: hạt xa nhau, chuyển động tự do." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hạt xếp sát nhau, có trật tự, dao động quanh vị trí cố định." }
+    ],
+    "finalSolution": "Hạt ở thể rắn xếp sát nhau, có trật tự và chỉ dao động tại chỗ quanh vị trí cố định.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g6-b10-match-002",
+    "lessonId": "g6-b10",
+    "skillIds": ["state-changes"],
+    "difficulty": 1,
+    "prompt": "Ghép tên của quá trình chuyển thể với sự thay đổi thể tương ứng.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Sự nóng chảy", "right": "Chuyển từ thể Rắn sang thể Lỏng" },
+        { "left": "Sự đông đặc", "right": "Chuyển từ thể Lỏng sang thể Rắn" },
+        { "left": "Sự bay hơi", "right": "Chuyển từ thể Lỏng sang thể Khí (Hơi)" },
+        { "left": "Sự ngưng tụ", "right": "Chuyển từ thể Khí (Hơi) sang thể Lỏng" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Nóng chảy: đá tan (rắn -> lỏng). Đông đặc: làm đá (lỏng -> rắn)." },
+      { "level": 2, "text": "Bay hơi: phơi quần áo (lỏng -> khí). Ngưng tụ: hơi nước đọng giọt (khí -> lỏng)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Các quá trình chuyển thể", "body": "Ghép đúng 4 quá trình chuyển thể cơ bản." },
+      { "kind": "knowledge", "title": "Định nghĩa", "body": "Nóng chảy: Rắn -> Lỏng. Đông đặc: Lỏng -> Rắn. Bay hơi: Lỏng -> Khí. Ngưng tụ: Khí -> Lỏng." },
+      { "kind": "answer", "title": "Kết quả", "body": "Ghép đúng 4 cặp quá trình - chuyển thể." }
+    ],
+    "finalSolution": "Nóng chảy: Rắn -> Lỏng. Đông đặc: Lỏng -> Rắn. Bay hơi: Lỏng -> Khí. Ngưng tụ: Khí -> Lỏng.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g6-b10-sort-001",
+    "lessonId": "g6-b10",
+    "skillIds": ["state-changes"],
+    "difficulty": 2,
+    "prompt": "Phân loại các hiện tượng đời sống sau vào đúng quá trình chuyển thể tương ứng.",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "melting", "label": "Sự nóng chảy" },
+        { "id": "freezing", "label": "Sự đông đặc" },
+        { "id": "evaporating", "label": "Sự bay hơi" },
+        { "id": "condensing", "label": "Sự ngưng tụ" }
+      ],
+      "items": [
+        { "id": "e1", "label": "Cục nước đá tan chảy ra thành nước trong cốc", "bucketId": "melting" },
+        { "id": "e2", "label": "Nước để trong ngăn đông tủ lạnh chuyển thành tảng đá", "bucketId": "freezing" },
+        { "id": "e3", "label": "Quần áo ướt phơi dưới trời nắng một lúc thì khô", "bucketId": "evaporating" },
+        { "id": "e4", "label": "Những giọt sương đọng trên lá cây vào buổi sáng sớm", "bucketId": "condensing" },
+        { "id": "e5", "label": "Cây nến bị chảy thành chất lỏng xung quanh ngọn lửa", "bucketId": "melting" },
+        { "id": "e6", "label": "Những giọt nước li ti đọng bên ngoài thành cốc nước đá lạnh", "bucketId": "condensing" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Đá tan, nến chảy -> Nóng chảy. Nước thành đá -> Đông đặc." },
+      { "level": 2, "text": "Quần áo khô -> Nước bay hơi. Giọt sương, giọt nước ngoài cốc lạnh -> Hơi nước ngưng tụ." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Hiện tượng đời sống", "body": "Xếp 6 hiện tượng vào 4 quá trình chuyển thể." },
+      { "kind": "knowledge", "title": "Bản chất", "body": "Nóng chảy: đá tan, nến chảy. Đông đặc: nước làm đá. Bay hơi: quần áo khô. Ngưng tụ: sương đọng, nước ngoài cốc lạnh." },
+      { "kind": "answer", "title": "Kết quả", "body": "Nóng chảy: e1, e5. Đông đặc: e2. Bay hơi: e3. Ngưng tụ: e4, e6." }
+    ],
+    "finalSolution": "Nóng chảy: đá tan, nến chảy. Đông đặc: nước thành đá. Bay hơi: phơi quần áo. Ngưng tụ: sương đọng, nước ngoài cốc đá.",
+    "commonMistakes": [
+      { "id": "water-leaks-cup", "message": "Nước đọng ngoài cốc lạnh là do hơi nước trong không khí gặp lạnh ngưng tụ lại, KHÔNG PHẢI nước trong cốc thấm qua thủy tinh." }
+    ]
+  },
+  {
+    "id": "g6-b10-mcq-003",
+    "lessonId": "g6-b10",
+    "skillIds": ["boiling-and-graphs"],
+    "difficulty": 1,
+    "prompt": "Ở điều kiện áp suất khí quyển tiêu chuẩn, nước nguyên chất sôi ở nhiệt độ bao nhiêu?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "100 °C" },
+        { "id": "b", "label": "0 °C" },
+        { "id": "c", "label": "50 °C" },
+        { "id": "d", "label": "150 °C" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "0 °C là nhiệt độ nóng chảy của nước đá." },
+      { "level": 2, "text": "Nước bắt đầu sôi sùng sục và xuất hiện bọt khí từ đáy ấm ở 100 °C." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhiệt độ sôi của nước", "body": "Xác định nhiệt độ sôi của nước tinh khiết." },
+      { "kind": "knowledge", "title": "Số liệu chuẩn", "body": "Nhiệt độ đông đặc/nóng chảy của nước = 0 °C. Nhiệt độ sôi của nước = 100 °C." },
+      { "kind": "answer", "title": "Kết luận", "body": "Nước sôi ở **100 °C**." }
+    ],
+    "finalSolution": "Nước tinh khiết sôi ở 100 °C ở điều kiện áp suất khí quyển tiêu chuẩn.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g6-b10-tf-001",
+    "lessonId": "g6-b10",
+    "skillIds": ["boiling-and-graphs"],
+    "difficulty": 2,
+    "prompt": "Xác định các phát biểu sau về sự sôi và chuyển thể là Đúng hay Sai.",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Trong suốt thời gian nước đang sôi, dù vẫn tiếp tục đun thì nhiệt độ của nước vẫn giữ nguyên không đổi (100 °C).", "correct": true },
+        { "id": "s2", "text": "Sự bay hơi chỉ xảy ra khi chất lỏng đã đạt đến nhiệt độ sôi.", "correct": false },
+        { "id": "s3", "text": "Sự sôi là quá trình bay hơi mạnh mẽ diễn ra ở cả trên bề mặt và trong lòng chất lỏng.", "correct": true },
+        { "id": "s4", "text": "Đoạn nằm ngang trên đồ thị nhiệt độ - thời gian biểu thị giai đoạn chất đang chuyển thể.", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Sự bay hơi xảy ra ở mọi nhiệt độ trên mặt thoáng, còn sự sôi chỉ xảy ra ở nhiệt độ xác định." },
+      { "level": 2, "text": "Trong suốt quá trình chuyển thể (nóng chảy, sôi), nhiệt độ của chất giữ nguyên." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích phát biểu", "body": "Kiểm tra kiến thức về sự sôi, sự bay hơi và đồ thị chuyển thể." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "S1: Đúng (nhiệt độ không đổi khi sôi). S2: Sai (bay hơi ở mọi nhiệt độ). S3: Đúng (sôi xảy ra cả bề mặt và lòng chất lỏng). S4: Đúng (đoạn nằm ngang = nhiệt độ không đổi)." },
+      { "kind": "answer", "title": "Kết quả", "body": "S1: Đúng, S2: Sai, S3: Đúng, S4: Đúng." }
+    ],
+    "finalSolution": "Bay hơi diễn ra ở mọi nhiệt độ (S2 Sai). S1, S3, S4 đều đúng.",
+    "commonMistakes": [
+      { "id": "evaporation-only-at-boiling", "message": "Nhiều bạn nhầm bay hơi chỉ xảy ra khi sôi. Thực tế nước ở ao hồ, quần áo phơi khô bay hơi ở nhiệt độ phòng bình thường." }
+    ]
+  },
+  {
+    "id": "g6-b10-multi-001",
+    "lessonId": "g6-b10",
+    "skillIds": ["boiling-and-graphs"],
+    "difficulty": 2,
+    "prompt": "Những yếu tố nào sau đây giúp quần áo phơi ngoài trời khô nhanh hơn?",
+    "answer": {
+      "kind": "mcq-multi",
+      "options": [
+        { "id": "a", "label": "Phơi ở nơi có nhiệt độ cao (trời nắng ấm)" },
+        { "id": "b", "label": "Phơi ở nơi thoáng gió" },
+        { "id": "c", "label": "Trải rộng quần áo ra để tăng diện tích mặt thoáng tiếp xúc" },
+        { "id": "d", "label": "Gấp quần áo thật chặt và xếp chồng lên nhau trong bóng râm" }
+      ],
+      "correctIds": ["a", "b", "c"]
+    },
+    "hints": [
+      { "level": 1, "text": "Tốc độ bay hơi phụ thuộc vào 3 yếu tố: nhiệt độ, gió và diện tích mặt thoáng." },
+      { "level": 2, "text": "Nhiệt độ càng cao, gió càng mạnh, diện tích tiếp xúc càng lớn thì nước bay hơi càng nhanh." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Các yếu tố ảnh hưởng sự bay hơi", "body": "Chọn các điều kiện làm tăng tốc độ bay hơi nước." },
+      { "kind": "knowledge", "title": "3 yếu tố", "body": "1. Nhiệt độ cao -> hạt chuyển động nhanh hơn. 2. Có gió -> cuốn hơi nước đi nhanh. 3. Diện tích mặt thoáng lớn -> nhiều hạt thoát ra hơn." },
+      { "kind": "answer", "title": "Kết luận", "body": "Các phương án đúng là a, b, c." }
+    ],
+    "finalSolution": "Nhiệt độ cao (a), có gió (b), trải rộng quần áo (c) giúp quần áo khô nhanh hơn.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g6-b10-ordering-001",
+    "lessonId": "g6-b10",
+    "skillIds": ["state-changes"],
+    "difficulty": 2,
+    "prompt": "Sắp xếp theo thứ tự các giai đoạn khi đun nóng một cốc nước đá từ −5 °C đến khi sôi ở 100 °C.",
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "1. Nước đá tăng nhiệt độ từ −5 °C lên 0 °C",
+        "2. Nước đá nóng chảy thành nước lỏng ở nhiệt độ không đổi 0 °C",
+        "3. Nước lỏng tăng nhiệt độ từ 0 °C lên 100 °C",
+        "4. Nước lỏng sôi mạnh mẽ và chuyển thành hơi nước ở 100 °C"
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Đá phải lên đến 0 °C mới bắt đầu nóng chảy." },
+      { "level": 2, "text": "Nóng chảy xong thành nước lỏng, sau đó nước lỏng mới tăng nhiệt độ đến 100 °C để sôi." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Trình tự đun nước đá", "body": "Sắp xếp quá trình đun nước đá qua các mốc nhiệt độ." },
+      { "kind": "knowledge", "title": "Diễn biến", "body": "-5°C lên 0°C -> Nóng chảy tại 0°C -> 0°C lên 100°C -> Sôi tại 100°C." },
+      { "kind": "answer", "title": "Kết quả", "body": "Thứ tự các giai đoạn từ 1 đến 4 như trên." }
+    ],
+    "finalSolution": "Tăng đến 0 °C -> Nóng chảy ở 0 °C -> Tăng đến 100 °C -> Sôi ở 100 °C.",
+    "commonMistakes": []
+  }
+]

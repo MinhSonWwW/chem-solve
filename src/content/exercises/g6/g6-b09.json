@@ -1,0 +1,355 @@
+[
+  {
+    "id": "g6-b09-mcq-001",
+    "lessonId": "g6-b09",
+    "skillIds": ["matter-diversity"],
+    "difficulty": 1,
+    "prompt": "Vật thể nào sau đây được xếp vào nhóm vật thể nhân tạo?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Chiếc bàn học bằng gỗ" },
+        { "id": "b", "label": "Cây phượng vĩ trong sân trường" },
+        { "id": "c", "label": "Dòng sông Hồng" },
+        { "id": "d", "label": "Đám mây trên bầu trời" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Vật thể nhân tạo là những vật do con người tạo ra để phục vụ cuộc sống." },
+      { "level": 2, "text": "Cây cối, dòng sông, đám mây có sẵn trong tự nhiên nên là vật thể tự nhiên." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đọc yêu cầu", "body": "Xác định vật thể nhân tạo trong các phương án." },
+      { "kind": "knowledge", "title": "Khái niệm", "body": "Vật thể tự nhiên: có sẵn trong tự nhiên (sông, núi, cây cối, mây). Vật thể nhân tạo: do con người tạo ra (bàn, ghế, nhà cửa, xe cộ)." },
+      { "kind": "answer", "title": "Kết luận", "body": "**Chiếc bàn học bằng gỗ** là vật thể nhân tạo." }
+    ],
+    "finalSolution": "Chiếc bàn học bằng gỗ do con người chế tạo nên là vật thể nhân tạo.",
+    "commonMistakes": [
+      { "id": "confuse-wood-table", "message": "Gỗ lấy từ tự nhiên nhưng khi đã đóng thành chiếc bàn thì chiếc bàn là vật thể nhân tạo." }
+    ]
+  },
+  {
+    "id": "g6-b09-mcq-002",
+    "lessonId": "g6-b09",
+    "skillIds": ["matter-diversity"],
+    "difficulty": 1,
+    "prompt": "Vật thể nào sau đây là vật sống (vật hữu sinh)?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Con cá vàng bơi trong bể" },
+        { "id": "b", "label": "Cây bút bi bằng nhựa" },
+        { "id": "c", "label": "Hòn đá cuội bên bờ suối" },
+        { "id": "d", "label": "Chiếc xe đạp mini" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Vật sống có các đặc trưng như trao đổi chất, lớn lên, sinh sản và cảm ứng." },
+      { "level": 2, "text": "Con cá vàng cần ăn, thở, lớn lên và bơi lội nên là vật sống." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Khái niệm vật sống", "body": "Tìm vật có dấu hiệu sinh học của sự sống." },
+      { "kind": "knowledge", "title": "Đặc điểm", "body": "Vật sống: sinh trưởng, phát triển, sinh sản (con cá, cái cây, con người). Vật không sống: không trao đổi chất, không lớn lên (bút, đá, xe đạp)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Con cá vàng là vật sống." }
+    ],
+    "finalSolution": "Con cá vàng có quá trình trao đổi chất, hô hấp và sinh sản nên là vật sống.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g6-b09-sort-001",
+    "lessonId": "g6-b09",
+    "skillIds": ["matter-diversity"],
+    "difficulty": 1,
+    "prompt": "Phân loại các vật thể sau vào nhóm \"Vật thể tự nhiên\" hoặc \"Vật thể nhân tạo\".",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "natural", "label": "Vật thể tự nhiên" },
+        { "id": "artificial", "label": "Vật thể nhân tạo" }
+      ],
+      "items": [
+        { "id": "o1", "label": "Ngọn núi Fansipan", "bucketId": "natural" },
+        { "id": "o2", "label": "Cái ghế nhựa", "bucketId": "artificial" },
+        { "id": "o3", "label": "Chú mèo mướp", "bucketId": "natural" },
+        { "id": "o4", "label": "Nồi nhôm nấu canh", "bucketId": "artificial" },
+        { "id": "o5", "label": "Biển Nha Trang", "bucketId": "natural" },
+        { "id": "o6", "label": "Chiếc điện thoại thông minh", "bucketId": "artificial" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Những gì tự nhiên sinh ra: núi, mèo, biển -> Tự nhiên." },
+      { "level": 2, "text": "Những đồ dùng con người sản xuất: ghế, nồi, điện thoại -> Nhân tạo." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại vật thể", "body": "Tách 6 vật thể thành 2 nhóm." },
+      { "kind": "knowledge", "title": "Tiêu chí", "body": "Có sẵn trong tự nhiên: núi, mèo, biển. Do bàn tay con người làm ra: ghế, nồi nhôm, điện thoại." },
+      { "kind": "answer", "title": "Kết quả", "body": "Tự nhiên: núi, mèo, biển. Nhân tạo: ghế, nồi, điện thoại." }
+    ],
+    "finalSolution": "Tự nhiên: ngọn núi, chú mèo, biển. Nhân tạo: cái ghế, nồi nhôm, điện thoại.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g6-b09-match-001",
+    "lessonId": "g6-b09",
+    "skillIds": ["matter-diversity"],
+    "difficulty": 1,
+    "prompt": "Ghép vật thể với chất chính cấu tạo nên vật thể đó.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Cốc uống nước thủy tinh", "right": "Thủy tinh" },
+        { "left": "Ấm đun nước bằng nhôm", "right": "Kim loại nhôm" },
+        { "left": "Lõi ruột dây dẫn điện", "right": "Kim loại đồng" },
+        { "left": "Chai nước suối dùng một lần", "right": "Chất dẻo (nhựa PET)" },
+        { "left": "Đinh đóng gỗ thông dụng", "right": "Kim loại sắt" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Chất là nguyên liệu cấu tạo nên vật thể." },
+      { "level": 2, "text": "Dây điện dùng đồng dẫn điện, ấm nước dùng nhôm dẫn nhiệt, chai nước dùng nhựa." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân biệt vật thể và chất", "body": "Ghép từng vật thể với chất tương ứng." },
+      { "kind": "knowledge", "title": "Vật liệu", "body": "Cốc thủy tinh -> thủy tinh; Ấm nhôm -> nhôm; Lõi dây điện -> đồng; Chai nhựa -> chất dẻo; Đinh sắt -> sắt." },
+      { "kind": "answer", "title": "Kết quả", "body": "Ghép đúng 5 cặp vật thể - chất." }
+    ],
+    "finalSolution": "Cốc -> Thủy tinh. Ấm -> Nhôm. Lõi dây điện -> Đồng. Chai nước -> Nhựa PET. Đinh -> Sắt.",
+    "commonMistakes": [
+      { "id": "confuse-object-substance", "message": "Cần phân biệt rõ: 'Cốc nước' là vật thể, còn 'nước' và 'thủy tinh' là chất." }
+    ]
+  },
+  {
+    "id": "g6-b09-tf-001",
+    "lessonId": "g6-b09",
+    "skillIds": ["matter-diversity"],
+    "difficulty": 1,
+    "prompt": "Xác định các phát biểu sau về Vật thể và Chất là Đúng hay Sai.",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Một vật thể có thể được tạo nên từ một hoặc nhiều chất khác nhau.", "correct": true },
+        { "id": "s2", "text": "Một chất chỉ có thể tạo nên duy nhất một vật thể trong thực tế.", "correct": false },
+        { "id": "s3", "text": "Cơ thể người chứa nhiều chất như nước, protein, chất béo, canxi...", "correct": true },
+        { "id": "s4", "text": "'Nước' là một chất, còn 'cốc nước' là một vật thể.", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Kim loại nhôm có thể làm ra nồi, chảo, khung cửa, vỏ máy bay... nên 1 chất tạo ra vô số vật thể." },
+      { "level": 2, "text": "Cây cối và cơ thể sinh vật được tạo thành từ rất nhiều chất kết hợp." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích câu hỏi", "body": "Kiểm tra 4 phát biểu về mối quan hệ giữa vật thể và chất." },
+      { "kind": "knowledge", "title": "Kiến thức", "body": "S1: Đúng (cây bút gồm nhựa, mực, kim loại). S2: Sai (1 chất làm được nhiều vật thể). S3: Đúng. S4: Đúng." },
+      { "kind": "answer", "title": "Kết quả", "body": "S1: Đúng, S2: Sai, S3: Đúng, S4: Đúng." }
+    ],
+    "finalSolution": "Một chất có thể tạo nên nhiều vật thể khác nhau (S2 Sai). S1, S3, S4 đều đúng.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g6-b09-sort-002",
+    "lessonId": "g6-b09",
+    "skillIds": ["physical-chemical-properties"],
+    "difficulty": 1,
+    "prompt": "Phân loại các đặc điểm sau vào nhóm \"Tính chất vật lí\" hoặc \"Tính chất hóa học\".",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "physical", "label": "Tính chất vật lí" },
+        { "id": "chemical", "label": "Tính chất hóa học" }
+      ],
+      "items": [
+        { "id": "p1", "label": "Đồng là kim loại có màu đỏ cam, dẫn điện tốt", "bucketId": "physical" },
+        { "id": "p2", "label": "Đinh sắt bị gỉ tạo lớp gỉ màu nâu đỏ trong không khí ẩm", "bucketId": "chemical" },
+        { "id": "p3", "label": "Đường kính trắng tan hoàn toàn trong nước", "bucketId": "physical" },
+        { "id": "p4", "label": "Khí gas cháy trong không khí tỏa nhiều nhiệt", "bucketId": "chemical" },
+        { "id": "p5", "label": "Nước sôi ở 100°C ở điều kiện thường", "bucketId": "physical" },
+        { "id": "p6", "label": "Rượu để lâu ngoài không khí bị lên men thành giấm chua", "bucketId": "chemical" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Tính chất vật lí đo được mà không làm biến đổi chất thành chất khác (màu, tan, sôi, dẫn điện)." },
+      { "level": 2, "text": "Tính chất hóa học thể hiện khả năng biến đổi thành chất mới (cháy, gỉ, lên men chua)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân biệt 2 loại tính chất", "body": "Xác định tính chất vật lí và hóa học." },
+      { "kind": "knowledge", "title": "Đặc trưng", "body": "Vật lí: màu đỏ, tan trong nước, sôi 100°C. Hóa học: gỉ sét, cháy tỏa nhiệt, lên men giấm." },
+      { "kind": "answer", "title": "Kết quả", "body": "Vật lí: p1, p3, p5. Hóa học: p2, p4, p6." }
+    ],
+    "finalSolution": "Tính chất vật lí: màu sắc, tính tan, nhiệt độ sôi. Tính chất hóa học: tính gỉ sét, tính cháy, khả năng lên men.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g6-b09-mcq-003",
+    "lessonId": "g6-b09",
+    "skillIds": ["matter-changes"],
+    "difficulty": 1,
+    "prompt": "Hiện tượng nào sau đây là một biến đổi hóa học?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Đốt cháy tờ giấy thành tro màu xám và khói" },
+        { "id": "b", "label": "Cắt tờ giấy trắng thành các mảnh vụn nhỏ" },
+        { "id": "c", "label": "Nước đá tan chảy thành nước lỏng khi để ở nhiệt độ phòng" },
+        { "id": "d", "label": "Hòa tan muối ăn vào nước thành nước muối trong suốt" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Biến đổi hóa học là quá trình có chất mới sinh ra." },
+      { "level": 2, "text": "Khi đốt giấy, giấy biến đổi thành tro, khí cacbonic và hơi nước (có chất mới)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Dấu hiệu chất mới", "body": "Tìm hiện tượng tạo ra chất mới." },
+      { "kind": "knowledge", "title": "Phân loại biến đổi", "body": "Cắt giấy, đá tan, hòa tan muối: chỉ thay đổi kích thước, thể trạng (biến đổi vật lí). Đốt giấy: tạo tro và khói (biến đổi hóa học)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đốt cháy tờ giấy là biến đổi hóa học." }
+    ],
+    "finalSolution": "Đốt cháy giấy tạo ra chất mới (tro, khói khí) nên là biến đổi hóa học.",
+    "commonMistakes": [
+      { "id": "dissolve-chemical", "message": "Hòa tan muối ăn vào nước không tạo chất mới (khi cô cạn nước muối vẫn thu lại được muối ăn), nên là biến đổi vật lí." }
+    ]
+  },
+  {
+    "id": "g6-b09-multi-001",
+    "lessonId": "g6-b09",
+    "skillIds": ["matter-changes"],
+    "difficulty": 2,
+    "prompt": "Chọn tất cả các hiện tượng là biến đổi vật lí trong các trường hợp dưới đây.",
+    "answer": {
+      "kind": "mcq-multi",
+      "options": [
+        { "id": "a", "label": "Tuyết trên đỉnh núi tan chảy vào mùa xuân" },
+        { "id": "b", "label": "Hòa tan đường hạt vào nước trà" },
+        { "id": "c", "label": "Thức ăn để quên nhiều ngày bị ôi thiu bốc mùi lạ" },
+        { "id": "d", "label": "Cây đinh sắt ngoài vườn bị gỉ sét màu nâu đen" },
+        { "id": "e", "label": "Uốn cong một sợi dây nhôm" }
+      ],
+      "correctIds": ["a", "b", "e"]
+    },
+    "hints": [
+      { "level": 1, "text": "Biến đổi vật lí không tạo ra chất mới (chỉ đổi trạng thái hoặc hình dạng)." },
+      { "level": 2, "text": "Tuyết tan (rắn -> lỏng), hòa tan đường, uốn cong dây nhôm là biến đổi vật lí. Thức ăn ôi thiu và đinh sắt gỉ là biến đổi hóa học." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận diện biến đổi vật lí", "body": "Tìm các hiện tượng không sinh chất mới." },
+      { "kind": "knowledge", "title": "Xét từng phương án", "body": "a: Tuyết tan (vật lí). b: Đường hòa tan (vật lí). c: Ôi thiu (hóa học). d: Sắt gỉ (hóa học). e: Uốn dây nhôm (vật lí)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Các phương án đúng: a, b, e." }
+    ],
+    "finalSolution": "Biến đổi vật lí: tuyết tan (a), đường tan (b), uốn cong dây nhôm (e).",
+    "commonMistakes": []
+  },
+  {
+    "id": "g6-b09-mcq-004",
+    "lessonId": "g6-b09",
+    "skillIds": ["matter-changes"],
+    "difficulty": 2,
+    "prompt": "Trong thí nghiệm đun nóng trên ngọn lửa đèn cồn, chất nào bị chảy lỏng, chuyển sang màu vàng nâu rồi cháy đen và có mùi khét?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Đường ăn (saccharose)" },
+        { "id": "b", "label": "Muối ăn (natri clorua)" },
+        { "id": "c", "label": "Cát trắng tinh khiết" },
+        { "id": "d", "label": "Nước cất" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Muối ăn có nhiệt độ nóng chảy rất cao (~801°C), đèn cồn không làm đổi màu muối." },
+      { "level": 2, "text": "Đường dễ bị phân hủy bởi nhiệt độ tạo thành than đen (cacbon) và hơi nước có mùi khét." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Thí nghiệm thực hành Bài 9", "body": "So sánh hiện tượng khi đun đường và muối ăn." },
+      { "kind": "knowledge", "title": "Hiện tượng", "body": "Đường khi đun: nóng chảy -> caramen màu nâu -> than đen có mùi khét (biến đổi hóa học). Muối ăn: không bị đen ở nhiệt độ đèn cồn." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đường ăn là chất bị cháy đen và có mùi khét." }
+    ],
+    "finalSolution": "Đường ăn bị nhiệt phân hủy thành than (màu đen) và có mùi khét đặc trưng.",
+    "commonMistakes": [
+      { "id": "confuse-salt-sugar", "message": "Muối ăn chịu nhiệt rất tốt, ngọn lửa đèn cồn không thể làm muối ăn bị đen." }
+    ]
+  },
+  {
+    "id": "g6-b09-ordering-001",
+    "lessonId": "g6-b09",
+    "skillIds": ["matter-changes"],
+    "difficulty": 2,
+    "prompt": "Sắp xếp theo thứ tự diễn biến hiện tượng khi đun nóng một lượng nhỏ đường trên thìa kim loại.",
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "1. Đường ở thể rắn dạng hạt màu trắng",
+        "2. Đường nóng chảy thành chất lỏng trong suốt",
+        "3. Chất lỏng chuyển dần sang màu vàng rồi nâu cánh gián",
+        "4. Chất lỏng sôi, bốc khói và chuyển thành khối xốp màu đen có mùi khét"
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Đầu tiên đường rắn chảy thành lỏng (biến đổi vật lí)." },
+      { "level": 2, "text": "Tiếp tục đun, đường bị đổi màu rồi cháy thành than đen (biến đổi hóa học)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Trình tự thí nghiệm đun đường", "body": "Sắp xếp quá trình biến đổi từ lúc bắt đầu đun đến kết thúc." },
+      { "kind": "knowledge", "title": "Diễn biến", "body": "Hạt trắng -> nóng chảy trong suốt -> ngả vàng nâu -> than xốp đen mùi khét." },
+      { "kind": "answer", "title": "Kết quả", "body": "Thứ tự từ 1 đến 4 như trên." }
+    ],
+    "finalSolution": "Đường rắn trắng -> nóng chảy -> chuyển vàng nâu -> hóa than đen có mùi khét.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g6-b09-mcq-005",
+    "lessonId": "g6-b09",
+    "skillIds": ["physical-chemical-properties"],
+    "difficulty": 1,
+    "prompt": "Quy tắc an toàn nào sau đây là ĐÚNG khi quan sát và tìm hiểu tính chất của chất trong phòng thực hành?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Tuyệt đối không tự ý nếm hoặc ngửi trực tiếp các hóa chất lạ" },
+        { "id": "b", "label": "Dùng tay không cầm trực tiếp tất cả các loại hóa chất" },
+        { "id": "c", "label": "Nếm thử một lượng nhỏ để nhận biết vị chua hay mặn của hóa chất" },
+        { "id": "d", "label": "Ghé sát mũi vào miệng lọ hóa chất hít thật sâu để ngửi mùi" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Nhiều hóa chất có tính ăn mòn da hoặc độc hại nguy hiểm nếu hít phải hay nếm thử." },
+      { "level": 2, "text": "Khi muốn ngửi mùi hóa chất, phải dùng tay phẩy nhẹ luồng khí trên miệng lọ về phía mũi." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "An toàn phòng thực hành", "body": "Xác định quy tắc đúng khi tiếp xúc với chất." },
+      { "kind": "knowledge", "title": "Quy định", "body": "Không nếm, không sờ tay trực tiếp, không ngửi trực tiếp hóa chất." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tuyệt đối không tự ý nếm hoặc ngửi trực tiếp hóa chất lạ." }
+    ],
+    "finalSolution": "Không tự ý nếm hoặc ngửi trực tiếp hóa chất lạ để đảm bảo an toàn tuyệt đối.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g6-b09-mcq-006",
+    "lessonId": "g6-b09",
+    "skillIds": ["matter-changes"],
+    "difficulty": 2,
+    "prompt": "Dấu hiệu nào sau đây thường CHỨNG TỎ có biến đổi hóa học xảy ra?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Xuất hiện chất mới kèm theo đổi màu, sủi bọt khí, tạo kết tủa hoặc tỏa nhiệt, phát sáng" },
+        { "id": "b", "label": "Vật chỉ bị biến dạng thay đổi kích thước mà giữ nguyên chất ban đầu" },
+        { "id": "c", "label": "Chất chỉ chuyển từ thể rắn sang thể lỏng khi đun nóng nhẹ" },
+        { "id": "d", "label": "Hạt chất rắn bị nghiền vụn thành bột mịn" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Bản chất biến đổi hóa học là tạo ra chất mới khác với chất ban đầu." },
+      { "level": 2, "text": "Dấu hiệu đi kèm thường là: đổi màu, sủi bọt khí, sinh kết tủa, mùi lạ, tỏa nhiệt/phát sáng." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Dấu hiệu phản ứng", "body": "Tìm dấu hiệu nhận biết biến đổi hóa học." },
+      { "kind": "knowledge", "title": "Dấu hiệu", "body": "Biến đổi hóa học: có chất mới (kèm đổi màu, sủi bọt khí, kết tủa, tỏa nhiệt/phát quang). Biến dạng, nghiền nhỏ, đổi thể: biến đổi vật lí." },
+      { "kind": "answer", "title": "Kết luận", "body": "Xuất hiện chất mới kèm theo đổi màu, sủi bọt khí, kết tủa hoặc tỏa nhiệt." }
+    ],
+    "finalSolution": "Dấu hiệu biến đổi hóa học: sinh ra chất mới kèm đổi màu, sinh bọt khí, kết tủa, tỏa nhiệt.",
+    "commonMistakes": []
+  }
+]

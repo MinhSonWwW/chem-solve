@@ -1,0 +1,231 @@
+[
+  {
+    "id": "g6-b11-mcq-001",
+    "lessonId": "g6-b11",
+    "skillIds": ["air-and-environment"],
+    "difficulty": 1,
+    "prompt": "Khí Oxygen (oxi) chiếm khoảng bao nhiêu phần trăm thể tích của không khí xung quanh chúng ta?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Khoảng 21 % (gần 1/5 thể tích)" },
+        { "id": "b", "label": "Khoảng 78 % (gần 4/5 thể tích)" },
+        { "id": "c", "label": "Khoảng 1 %" },
+        { "id": "d", "label": "Khoảng 50 %" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Khí chiếm nhiều nhất là Nitrogen (~78%), tiếp theo là Oxygen." },
+      { "level": 2, "text": "Oxygen chiếm khoảng 21% thể tích không khí (tương đương khoảng 1/5)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Thành phần không khí", "body": "Xác định tỉ lệ phần trăm thể tích của oxygen." },
+      { "kind": "knowledge", "title": "Tỉ lệ thể tích", "body": "Thành phần không khí: ~78% Nitrogen, ~21% Oxygen, ~1% các khí khác (CO2, hơi nước, khí hiếm)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Oxygen chiếm **khoảng 21 %** thể tích không khí." }
+    ],
+    "finalSolution": "Khí Oxygen chiếm khoảng 21% thể tích không khí (xấp xỉ 1/5 thể tích).",
+    "commonMistakes": [
+      { "id": "confuse-nitrogen-oxygen", "message": "Nitrogen chiếm nhiều nhất (~78%), đừng nhầm với tỉ lệ 21% của Oxygen." }
+    ]
+  },
+  {
+    "id": "g6-b11-mcq-002",
+    "lessonId": "g6-b11",
+    "skillIds": ["air-and-environment"],
+    "difficulty": 1,
+    "prompt": "Khí nào chiếm hàm lượng thể tích LỚN NHẤT trong thành phần của không khí?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Khí Nitrogen (chiếm khoảng 78 %)" },
+        { "id": "b", "label": "Khí Oxygen (chiếm khoảng 21 %)" },
+        { "id": "c", "label": "Khí Carbon dioxide (chiếm dưới 1 %)" },
+        { "id": "d", "label": "Khí Hydrogen" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Khí này chiếm tới gần 4/5 (khoảng 78%) thể tích bầu khí quyển Trái Đất." },
+      { "level": 2, "text": "Đó chính là khí Nitrogen (nitơ)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Khí dồi dào nhất", "body": "Tìm khí có tỉ lệ thể tích cao nhất trong không khí." },
+      { "kind": "knowledge", "title": "Thành phần", "body": "Nitrogen chiếm ~78%, là thành phần lớn nhất của không khí." },
+      { "kind": "answer", "title": "Kết luận", "body": "**Khí Nitrogen** chiếm khoảng 78 %." }
+    ],
+    "finalSolution": "Khí Nitrogen chiếm thể tích lớn nhất trong không khí (khoảng 78%).",
+    "commonMistakes": []
+  },
+  {
+    "id": "g6-b11-tf-001",
+    "lessonId": "g6-b11",
+    "skillIds": ["oxygen-role"],
+    "difficulty": 1,
+    "prompt": "Xác định các phát biểu sau về tính chất và vai trò của Oxygen là Đúng hay Sai.",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Oxygen là chất khí không màu, không mùi, không vị và ít tan trong nước.", "correct": true },
+        { "id": "s2", "text": "Khí oxygen là chất tự bốc cháy được trong không khí.", "correct": false },
+        { "id": "s3", "text": "Oxygen có vai trò đặc biệt quan trọng: duy trì sự cháy và duy trì sự sống (hô hấp).", "correct": true },
+        { "id": "s4", "text": "Khí oxygen nhẹ hơn không khí nên luôn bay bổng lên trên cao.", "correct": false }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Oxygen không tự cháy; nó giúp các chất khác cháy (duy trì sự cháy)." },
+      { "level": 2, "text": "Khối lượng mol của O2 là 32 g/mol, nặng hơn không khí (~29 g/mol) một chút." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích tính chất oxygen", "body": "Kiểm tra 4 nhận định về oxygen." },
+      { "kind": "knowledge", "title": "Đặc tính", "body": "S1: Đúng (không màu, mùi, ít tan). S2: Sai (oxygen không tự cháy). S3: Đúng (duy trì sự cháy & hô hấp). S4: Sai (oxygen nặng hơn không khí: 32 > 29)." },
+      { "kind": "answer", "title": "Kết quả", "body": "S1: Đúng, S2: Sai, S3: Đúng, S4: Sai." }
+    ],
+    "finalSolution": "Oxygen không tự cháy (S2 Sai) và nặng hơn không khí (S4 Sai). S1, S3 đều đúng.",
+    "commonMistakes": [
+      { "id": "oxygen-burns", "message": "Nhiều bạn nhầm oxygen 'cháy được'. Thực tế oxygen chỉ 'duy trì sự cháy' giúp các chất khác (than, củi, xăng...) cháy." }
+    ]
+  },
+  {
+    "id": "g6-b11-mcq-003",
+    "lessonId": "g6-b11",
+    "skillIds": ["oxygen-role"],
+    "difficulty": 2,
+    "prompt": "Khi úp một chiếc cốc thủy tinh lên một cây nến đang cháy cắm trên đĩa nước, hiện tượng gì sẽ xảy ra?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Ngọn nến cháy yếu dần rồi tắt, đồng thời nước dâng lên chiếm khoảng 1/5 thể tích bên trong cốc" },
+        { "id": "b", "label": "Nến bùng cháy mãnh liệt và làm vỡ cốc thủy tinh" },
+        { "id": "c", "label": "Nến cháy mãi không bao giờ tắt vì đã được che chắn khỏi gió" },
+        { "id": "d", "label": "Nước trong đĩa bị đẩy ra ngoài và cạn kiệt hoàn toàn" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Khi úp cốc, lượng oxygen bên trong cốc bị nến cháy tiêu thụ dần." },
+      { "level": 2, "text": "Khi hết oxygen (chiếm khoảng 1/5 không khí), nến tắt và nước bên ngoài dâng vào chiếm chỗ phần oxygen đã mất." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Thí nghiệm kinh điển", "body": "Xác định hiện tượng khi úp cốc lên nến đang cháy." },
+      { "kind": "knowledge", "title": "Giải thích", "body": "Nến cháy tiêu thụ oxygen trong cốc. Hết oxygen -> nến tắt. Áp suất trong cốc giảm -> nước dâng lên chiếm khoảng 1/5 thể tích cốc (bằng thể tích oxygen đã mất)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Nến tắt và nước dâng lên chiếm khoảng 1/5 thể tích cốc." }
+    ],
+    "finalSolution": "Nến tắt khi hết oxygen, nước dâng vào chiếm khoảng 1/5 thể tích bên trong cốc.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g6-b11-match-001",
+    "lessonId": "g6-b11",
+    "skillIds": ["oxygen-role"],
+    "difficulty": 1,
+    "prompt": "Ghép từng tình huống ứng dụng với vai trò tương ứng của khí Oxygen.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Bình khí thở của bệnh nhân viêm phổi trong bệnh viện", "right": "Duy trì sự sống (hỗ trợ hô hấp)" },
+        { "left": "Thổi luồng khí oxy vào lò luyện thép nung nóng", "right": "Duy trì sự cháy tỏa nhiệt cao" },
+        { "left": "Bình dưỡng khí cho thợ lặn khám phá đáy biển", "right": "Duy trì sự sống (hỗ trợ hô hấp)" },
+        { "left": "Đèn xì oxy - axetilen dùng để hàn cắt kim loại", "right": "Duy trì sự cháy tỏa nhiệt cao" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Thợ lặn, bệnh nhân cần oxy để thở -> Hô hấp (sự sống)." },
+      { "level": 2, "text": "Lò luyện thép, đèn hàn xì cần oxy để tạo ngọn lửa nhiệt độ cao -> Sự cháy." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Ứng dụng của oxygen", "body": "Phân biệt ứng dụng hô hấp và ứng dụng sự cháy." },
+      { "kind": "knowledge", "title": "Vai trò", "body": "Hô hấp: bình thở bệnh viện, bình dưỡng khí thợ lặn. Sự cháy: thổi oxy lò thép, đèn hàn xì cắt kim loại." },
+      { "kind": "answer", "title": "Kết quả", "body": "Ghép đúng 4 cặp tình huống - vai trò." }
+    ],
+    "finalSolution": "Bệnh nhân, thợ lặn ↔ Hỗ trợ hô hấp. Lò luyện thép, đèn hàn ↔ Duy trì sự cháy tỏa nhiệt.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g6-b11-sort-001",
+    "lessonId": "g6-b11",
+    "skillIds": ["air-and-environment"],
+    "difficulty": 1,
+    "prompt": "Phân loại các hành động sau vào nhóm \"Gây ô nhiễm không khí\" hoặc \"Bảo vệ bầu không khí trong lành\".",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "pollute", "label": "Hành động gây ô nhiễm không khí" },
+        { "id": "protect", "label": "Hành động bảo vệ không khí" }
+      ],
+      "items": [
+        { "id": "a1", "label": "Đốt rơm rạ trên cánh đồng sau mùa gặt", "bucketId": "pollute" },
+        { "id": "a2", "label": "Tích cực trồng và chăm sóc cây xanh xung quanh trường học", "bucketId": "protect" },
+        { "id": "a3", "label": "Xả khói bụi chưa qua xử lý từ ống khói nhà máy ra môi trường", "bucketId": "pollute" },
+        { "id": "a4", "label": "Sử dụng xe đạp hoặc đi bộ khi di chuyển quãng đường ngắn", "bucketId": "protect" },
+        { "id": "a5", "label": "Đốt rác thải nhựa và cao su tự do tại bãi đất trống", "bucketId": "pollute" },
+        { "id": "a6", "label": "Ưu tiên sử dụng phương tiện giao thông công cộng (xe buýt, tàu điện)", "bucketId": "protect" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Đốt rơm rạ, khói nhà máy, đốt nhựa xả ra nhiều khói bụi độc hại -> Gây ô nhiễm." },
+      { "level": 2, "text": "Trồng cây, đi xe đạp, đi xe buýt giúp giảm phát thải khói bụi -> Bảo vệ không khí." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Hành động môi trường", "body": "Tách 6 hành động thành 2 nhóm đối lập." },
+      { "kind": "knowledge", "title": "Tác động", "body": "Gây ô nhiễm: đốt rơm rạ, xả khói nhà máy, đốt rác nhựa. Bảo vệ: trồng cây xanh, đi xe đạp, dùng xe buýt." },
+      { "kind": "answer", "title": "Kết quả", "body": "Ô nhiễm: a1, a3, a5. Bảo vệ: a2, a4, a6." }
+    ],
+    "finalSolution": "Ô nhiễm: đốt rơm rạ, xả khói nhà máy, đốt rác nhựa. Bảo vệ: trồng cây, đi xe đạp, đi xe công cộng.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g6-b11-ordering-001",
+    "lessonId": "g6-b11",
+    "skillIds": ["air-and-environment"],
+    "difficulty": 1,
+    "prompt": "Sắp xếp các thành phần của không khí theo tỉ lệ phần trăm thể tích GIẢM DẦN.",
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "1. Khí Nitrogen (chiếm khoảng 78 % thể tích)",
+        "2. Khí Oxygen (chiếm khoảng 21 % thể tích)",
+        "3. Các khí khác gồm carbon dioxide, hơi nước, khí hiếm... (chiếm khoảng 1 % thể tích)"
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Nitrogen nhiều nhất (~78%), rồi đến Oxygen (~21%), cuối cùng là các khí khác (~1%)." },
+      { "level": 2, "text": "78% > 21% > 1%." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Thứ tự thành phần", "body": "Sắp xếp theo thứ tự giảm dần tỉ lệ thể tích." },
+      { "kind": "knowledge", "title": "Tỉ lệ thể tích", "body": "Nitrogen (~78%) > Oxygen (~21%) > Khí khác (~1%)." },
+      { "kind": "answer", "title": "Kết quả", "body": "1. Nitrogen -> 2. Oxygen -> 3. Các khí khác." }
+    ],
+    "finalSolution": "Nitrogen (~78%) > Oxygen (~21%) > Khí khác (~1%).",
+    "commonMistakes": []
+  },
+  {
+    "id": "g6-b11-mcq-004",
+    "lessonId": "g6-b11",
+    "skillIds": ["air-and-environment"],
+    "difficulty": 1,
+    "prompt": "Vì sao việc tích cực trồng nhiều cây xanh trong khu dân cư lại giúp bầu không khí trong lành hơn?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Cây xanh quang hợp hấp thụ khí CO2, cản bụi và giải phóng khí Oxygen sạch" },
+        { "id": "b", "label": "Cây xanh hút hết toàn bộ không khí xung quanh" },
+        { "id": "c", "label": "Cây xanh làm tăng khí độc hại để tiêu diệt vi khuẩn" },
+        { "id": "d", "label": "Cây xanh ngăn chặn hoàn toàn ánh sáng mặt trời" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Lá cây có quá trình quang hợp dưới ánh sáng mặt trời." },
+      { "level": 2, "text": "Quang hợp hấp thụ CO2 và nhả ra Oxygen, đồng thời bề mặt tán lá giữ lại các hạt bụi mịn." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Vai trò của cây xanh", "body": "Giải thích tác dụng lọc không khí của cây." },
+      { "kind": "knowledge", "title": "Sinh học & Hóa học", "body": "Cây xanh quang hợp lấy CO2 và tạo ra O2, tán lá giúp giữ bụi và điều hòa độ ẩm, nhiệt độ." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hấp thụ CO2, cản bụi và giải phóng Oxygen sạch." }
+    ],
+    "finalSolution": "Cây xanh quang hợp hấp thụ khí CO2, cản bụi và thải ra khí Oxygen giúp không khí trong lành.",
+    "commonMistakes": []
+  }
+]

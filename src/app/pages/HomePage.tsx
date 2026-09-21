@@ -110,7 +110,7 @@ export const HomePage: React.FC = () => {
           </div>
           <div>
             <h2 className="font-black text-sm text-slate-200">Lộ trình học</h2>
-            <p className="text-[11px] text-slate-400 mt-0.5">Lớp 7, 8, 9 ziczac</p>
+            <p className="text-[11px] text-slate-400 mt-0.5">Lớp 6, 7, 8, 9 ziczac</p>
           </div>
         </motion.div>
       </div>
