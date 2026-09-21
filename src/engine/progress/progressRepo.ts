@@ -56,8 +56,10 @@ export interface CompletedNodeData {
 
 export interface UserProgress {
   xp: number;
+  gems: number;
   hearts: number;
   heartsLastDecAt: number; // timestamp of last heart decrement
+  lastHeartResetDate?: string; // YYYY-MM-DD for daily full heart refill
   streak: number;
   streakDate: string; // YYYY-MM-DD of last streak bump
   dailyGoal: number; // 20, 40, 60 XP
@@ -69,8 +71,10 @@ const USER_PROGRESS_KEY = 'userProgress';
 
 const DEFAULT_PROGRESS: UserProgress = {
   xp: 0,
+  gems: 0,
   hearts: GAMIFICATION.hearts.max,
   heartsLastDecAt: 0,
+  lastHeartResetDate: new Date().toISOString().slice(0, 10),
   streak: 0,
   streakDate: '',
   dailyGoal: 20,
@@ -83,9 +87,19 @@ export async function loadUserProgress(): Promise<UserProgress> {
   if (!raw) return { ...DEFAULT_PROGRESS };
 
   // Ensure default values if old schema
+  raw.gems = raw.gems ?? 0;
   raw.dailyGoal = raw.dailyGoal ?? 20;
   raw.achievements = raw.achievements ?? {};
   raw.completedNodes = raw.completedNodes ?? {};
+
+  // Daily Full Heart Refill: automatically recovers full 5 hearts upon new calendar day
+  const today = new Date().toISOString().slice(0, 10);
+  if (raw.lastHeartResetDate !== today) {
+    raw.hearts = GAMIFICATION.hearts.max;
+    raw.heartsLastDecAt = 0;
+    raw.lastHeartResetDate = today;
+    await set(USER_PROGRESS_KEY, raw);
+  }
 
   // Heart recovery: auto-recover based on time elapsed since last decrement
   const now = Date.now();

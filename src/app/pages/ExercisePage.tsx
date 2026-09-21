@@ -8,6 +8,7 @@ import {
   Card,
   Progress,
   Heart,
+  GemBadge,
   Formula,
   FeedbackSheet,
   SessionCompleteScreen,
@@ -44,6 +45,8 @@ export const ExercisePage: React.FC = () => {
 
   const {
     hearts: _hearts,
+    gems,
+    buyHeartWithGems,
     sessionState,
     lastVerdict,
     startSession,
@@ -69,6 +72,7 @@ export const ExercisePage: React.FC = () => {
     totalXp: number;
     accuracy: number;
     perfectRun: boolean;
+    earnedGems?: number;
   } | null>(null);
 
   // ── Load exercises & resume ──
@@ -279,6 +283,7 @@ export const ExercisePage: React.FC = () => {
         totalXp={sessionResult.totalXp}
         accuracy={sessionResult.accuracy}
         perfectRun={sessionResult.perfectRun}
+        earnedGems={sessionResult.earnedGems}
         totalQuestions={sessionState?.questions.length ?? 0}
         correctCount={
           sessionState?.questions.filter((q) => q.status === 'correct').length ?? 0
@@ -381,7 +386,10 @@ export const ExercisePage: React.FC = () => {
           <span className="hidden sm:inline">Tra cứu</span>
         </button>
 
-        <Heart count={sessionState.hearts} max={GAMIFICATION.hearts.max} />
+        <div className="flex items-center gap-1.5">
+          <GemBadge amount={gems} />
+          <Heart count={sessionState.hearts} max={GAMIFICATION.hearts.max} />
+        </div>
       </div>
 
       {/* 2. Floating XP popup */}
@@ -562,6 +570,13 @@ export const ExercisePage: React.FC = () => {
 
       <OutOfHeartsModal
         isOpen={showOutOfHeartsModal}
+        gems={gems}
+        onBuyWithGems={() => {
+          const ok = buyHeartWithGems();
+          if (ok) {
+            setShowOutOfHeartsModal(false);
+          }
+        }}
         onGoToPractice={() => {
           setShowOutOfHeartsModal(false);
           navigate('/practice');

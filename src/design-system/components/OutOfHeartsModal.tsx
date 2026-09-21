@@ -5,18 +5,26 @@ import { Button } from './Button';
 import { Mascot } from './Mascot';
 import { sound } from '@/lib/audio';
 
+import { assetUrl, cn } from '@/lib/utils';
+
 export interface OutOfHeartsModalProps {
   isOpen: boolean;
+  gems?: number;
+  onBuyWithGems?: () => void;
   onGoToPractice: () => void;
   onQuit: () => void;
 }
 
 export const OutOfHeartsModal: React.FC<OutOfHeartsModalProps> = ({
   isOpen,
+  gems = 0,
+  onBuyWithGems,
   onGoToPractice,
   onQuit,
 }) => {
   if (!isOpen) return null;
+
+  const canAfford = gems >= 150;
 
   return (
     <AnimatePresence>
@@ -60,12 +68,39 @@ export const OutOfHeartsModal: React.FC<OutOfHeartsModalProps> = ({
               Bạn đã hết tim rồi!
             </h2>
             <p className="text-xs text-slate-300 leading-relaxed font-medium">
-              Bạn đã làm sai hết số tim và chưa hoàn thành chặng này. Để tiếp tục học, bạn cần sang mục <span className="text-amber-300 font-bold">Luyện tập</span> để giải bài tập — mỗi bài hoàn thành sẽ cộng lại <span className="text-rose-400 font-bold">+1 tim</span>!
+              Bạn có thể <span className="text-cyan-300 font-bold">đổi 150 đá quý</span> để hồi 1 tim tiếp tục học ngay, hoặc sang mục <span className="text-amber-300 font-bold">Luyện tập</span> để làm bài (+1 tim/bài).
             </p>
           </div>
 
           {/* Action Buttons */}
           <div className="space-y-2.5 pt-2">
+            {/* Option 1: Buy Heart with 150 Gems */}
+            {onBuyWithGems && (
+              <Button
+                variant="primary"
+                size="lg"
+                fullWidth
+                disabled={!canAfford}
+                className={cn(
+                  'flex items-center justify-center gap-2 font-black',
+                  canAfford
+                    ? 'bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-slate-950 shadow-[0_4px_0_0_#0891b2]'
+                    : 'opacity-50 cursor-not-allowed bg-slate-800 text-slate-400 border border-slate-700'
+                )}
+                onClick={() => {
+                  if (canAfford) {
+                    onBuyWithGems();
+                  }
+                }}
+              >
+                <img src={assetUrl('/assets/icons/gem-crystal.png')} alt="Gem" className="w-4 h-4 object-contain" />
+                <span>
+                  {canAfford ? 'ĐỔI 1 TIM (150 ĐÁ QUÝ)' : `ĐỔI 1 TIM (CÓ ${gems}/150 💎)`}
+                </span>
+              </Button>
+            )}
+
+            {/* Option 2: Go to practice */}
             <Button
               variant="primary"
               size="lg"
@@ -77,8 +112,9 @@ export const OutOfHeartsModal: React.FC<OutOfHeartsModalProps> = ({
               }}
             >
               <Heart className="w-5 h-5 fill-rose-500 text-rose-500" />
-              <span>ĐẾN TRANG BÀI TẬP (+1 TIM)</span>
+              <span>LUYỆN TẬP ĐỂ HỒI TIM (+1 TIM)</span>
             </Button>
+
             <Button
               variant="ghost"
               size="md"

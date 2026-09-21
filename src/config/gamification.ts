@@ -34,6 +34,18 @@ export const GAMIFICATION = {
     /** Hearts restored when completing a review exercise */
     reviewRestore: 1,
   },
+  gems: {
+    /** Cost in gems to buy 1 heart */
+    costPerHeart: 150,
+    /** Min and max reward per completed session */
+    minReward: 10,
+    maxReward: 60,
+    /** Calculate gems earned based on accuracy (0.0 to 1.0) */
+    calcReward: (accuracy: number): number => {
+      const clamped = Math.max(0, Math.min(1, accuracy));
+      return 10 + Math.round(clamped * 50);
+    },
+  },
   unlock: {
     /** Minimum accuracy (non-revealed) to unlock next node */
     minAccuracy: 0.7,

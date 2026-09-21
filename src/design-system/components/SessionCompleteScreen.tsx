@@ -16,6 +16,7 @@ export interface SessionCompleteScreenProps {
   streak: number;
   isPractice?: boolean;
   recoveredHearts?: number;
+  earnedGems?: number;
   onContinue: () => void;
 }
 
@@ -28,6 +29,7 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
   streak,
   isPractice,
   recoveredHearts,
+  earnedGems,
   onContinue,
 }) => {
   const accuracyPercent = Math.round(accuracy * 100);
@@ -40,22 +42,22 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
       highlight: 'text-amber-300',
     },
     {
+      icon: <img src={assetUrl('/assets/icons/gem-crystal.png')} alt="Gem" className="w-5 h-5 object-contain" />,
+      label: 'Đá quý nhận',
+      value: `+${earnedGems ?? 0} 💎`,
+      highlight: 'text-cyan-300',
+    },
+    {
       icon: <img src={assetUrl('/assets/roadmap/trophy-gold.png')} alt="Cúp" className="w-5 h-5 object-contain" />,
       label: 'Chính xác',
       value: `${accuracyPercent}%`,
-      highlight: accuracyPercent >= 80 ? 'text-emerald-300' : 'text-amber-300',
+      highlight: 'text-emerald-400',
     },
     {
-      icon: <img src={assetUrl('/assets/icons/heart-flask.png')} alt="Tim" className="w-5 h-5 object-contain" />,
-      label: 'Kết quả',
-      value: `${correctCount}/${totalQuestions}`,
-      highlight: 'text-slate-200',
-    },
-    {
-      icon: <img src={assetUrl('/assets/icons/streak-flame.png')} alt="Streak" className="w-5 h-5 object-contain" />,
+      icon: <img src={assetUrl('/assets/icons/streak-flame.png')} alt="Lửa" className="w-5 h-5 object-contain" />,
       label: 'Chuỗi ngày',
       value: `${streak} ngày`,
-      highlight: 'text-cyan-300',
+      highlight: 'text-orange-400',
     },
   ];
 
@@ -99,10 +101,10 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
         </h1>
         <p className="text-xs sm:text-sm text-slate-300 font-bold">
           {isPractice
-            ? 'Bạn đã luyện tập thành công và hồi phục thêm tim để học tiếp!'
+            ? `Bạn đã luyện tập thành công (${correctCount}/${totalQuestions} câu đúng) và nhận thêm tim để học tiếp!`
             : perfectRun
             ? 'Xuất sắc tuyệt đối! Bạn không mất tim nào!'
-            : 'Bạn đã hoàn thành rất tốt, tiếp tục phát huy nhé!'}
+            : `Bạn đã trả lời đúng ${correctCount}/${totalQuestions} câu, tiếp tục phát huy nhé!`}
         </p>
       </motion.div>
 
@@ -117,6 +119,12 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
           <Sparkles className="w-4 h-4" />
           +{GAMIFICATION.session.completeBonus} XP hoàn thành
         </div>
+        {earnedGems !== undefined && earnedGems > 0 && (
+          <div className="px-3.5 py-1.5 rounded-2xl bg-cyan-950/70 border border-cyan-500/60 text-cyan-200 text-xs font-black flex items-center gap-1.5 shadow-md">
+            <img src={assetUrl('/assets/icons/gem-crystal.png')} alt="Gem" className="w-4 h-4 object-contain drop-shadow" />
+            +{earnedGems} Đá quý
+          </div>
+        )}
         {isPractice && (recoveredHearts ?? 0) > 0 && (
           <div className="px-3.5 py-1.5 rounded-2xl bg-rose-950/70 border border-rose-500/60 text-rose-300 text-xs font-black flex items-center gap-1.5 shadow-md">
             <Heart className="w-4 h-4 fill-rose-500 text-rose-500 animate-pulse" />

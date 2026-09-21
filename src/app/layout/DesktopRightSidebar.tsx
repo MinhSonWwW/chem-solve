@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Search, Zap, Gift, BookOpen, ArrowRight, Flame } from 'lucide-react';
-import { Heart, Streak, XPBadge } from '@/design-system';
+import { Heart, Streak, XPBadge, GemBadge, HeartRefillModal } from '@/design-system';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import { sound } from '@/lib/audio';
 
 export const DesktopRightSidebar: React.FC = () => {
-  const { xp, streak, hearts } = useUserStore();
+  const { xp, streak, hearts, gems, buyHeartWithGems } = useUserStore();
+  const [showHeartModal, setShowHeartModal] = useState(false);
   const navigate = useNavigate();
 
   // Simulated daily quests based on user XP
@@ -15,36 +16,36 @@ export const DesktopRightSidebar: React.FC = () => {
   const dailyXpPercent = Math.min(100, Math.round((currentDailyXp / dailyXpTarget) * 100));
 
   return (
-    <aside className="hidden lg:flex flex-col gap-5 w-[340px] h-[100dvh] sticky top-0 border-l border-slate-800/80 bg-slate-950/80 px-5 py-6 select-none overflow-y-auto z-20">
-      {/* 1. Header Stats Bar */}
-      <div className="flex items-center justify-between p-2 rounded-2xl bg-slate-900/80 border border-slate-800 shadow-sm">
-        <Streak days={streak} />
-        <XPBadge amount={xp} />
-        <div
-          onClick={() => {
-            if (hearts < 5) {
+    <>
+      <aside className="hidden lg:flex flex-col gap-5 w-[340px] h-[100dvh] sticky top-0 border-l border-slate-800/80 bg-slate-950/80 px-5 py-6 select-none overflow-y-auto z-20">
+        {/* 1. Header Stats Bar */}
+        <div className="flex items-center justify-between p-2 rounded-2xl bg-slate-900/80 border border-slate-800 shadow-sm gap-1.5">
+          <Streak days={streak} />
+          <XPBadge amount={xp} />
+          <GemBadge amount={gems} />
+          <div
+            onClick={() => {
               sound.playClick();
-              navigate('/practice');
-            }
-          }}
-          className={hearts < 5 ? 'cursor-pointer hover:scale-105 active:scale-95 transition-transform' : ''}
-          title={hearts < 5 ? `Đang có ${hearts}/5 tim. Bấm để vào Luyện tập hồi tim!` : 'Đang đầy tim (5/5)!'}
-        >
-          <Heart count={hearts} max={5} />
-        </div>
+              setShowHeartModal(true);
+            }}
+            className="cursor-pointer hover:scale-105 active:scale-95 transition-transform"
+            title={`Đang có ${hearts}/5 tim. Bấm để đổi đá quý hoặc luyện tập!`}
+          >
+            <Heart count={hearts} max={5} />
+          </div>
 
-        <button
-          onClick={() => {
-            sound.playClick();
-            navigate('/search');
-          }}
-          aria-label="Tìm kiếm"
-          className="p-2 text-slate-400 hover:text-cyan-400 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700/60 shadow-[0_2px_0_0_#1e293b] active:translate-y-[2px] active:shadow-none transition-all cursor-pointer"
-          title="Tìm kiếm chất, phản ứng, bài học"
-        >
-          <Search className="w-4 h-4" />
-        </button>
-      </div>
+          <button
+            onClick={() => {
+              sound.playClick();
+              navigate('/search');
+            }}
+            aria-label="Tìm kiếm"
+            className="p-2 text-slate-400 hover:text-cyan-400 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700/60 shadow-[0_2px_0_0_#1e293b] active:translate-y-[2px] active:shadow-none transition-all cursor-pointer"
+            title="Tìm kiếm chất, phản ứng, bài học"
+          >
+            <Search className="w-4 h-4" />
+          </button>
+        </div>
 
       {/* 2. Widget: Nhiệm vụ hằng ngày (Daily Quests) */}
       <div className="p-4 rounded-3xl bg-slate-900/90 border-2 border-slate-800 shadow-md space-y-3.5">
@@ -152,6 +153,23 @@ export const DesktopRightSidebar: React.FC = () => {
           <ArrowRight className="w-3.5 h-3.5" />
         </button>
       </div>
-    </aside>
+      </aside>
+
+      {/* Heart Refill & Gem Exchange Modal */}
+      <HeartRefillModal
+        isOpen={showHeartModal}
+        hearts={hearts}
+        gems={gems}
+        costPerHeart={150}
+        onBuyWithGems={() => {
+          buyHeartWithGems();
+        }}
+        onGoToPractice={() => {
+          setShowHeartModal(false);
+          navigate('/practice');
+        }}
+        onClose={() => setShowHeartModal(false)}
+      />
+    </>
   );
 };

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Award, Volume2, VolumeX, Eye, Download, Upload, Target, CheckCircle2, AlertCircle } from 'lucide-react';
 import { useUserStore } from '@/features/gamification/useUserStore';
-import { Button, Card, Streak, XPBadge, Heart } from '@/design-system';
+import { Button, Card, Streak, XPBadge, Heart, GemBadge } from '@/design-system';
 import { ACHIEVEMENTS } from '@/config/achievements';
 import { getLevelInfo, GAMIFICATION } from '@/config/gamification';
 import { sound } from '@/lib/audio';
@@ -9,6 +9,7 @@ import { sound } from '@/lib/audio';
 export const ProfilePage: React.FC = () => {
   const {
     xp,
+    gems,
     streak,
     hearts,
     soundEnabled,
@@ -82,6 +83,7 @@ export const ProfilePage: React.FC = () => {
             <div className="flex flex-wrap items-center gap-2 mt-1.5">
               <Streak days={streak} />
               <XPBadge amount={xp} />
+              <GemBadge amount={gems} />
               <Heart count={hearts} max={GAMIFICATION.hearts.max} />
               <span className="inline-flex items-center gap-1 text-slate-300 font-black text-xs bg-slate-800/80 border border-slate-700/80 px-2.5 py-1 rounded-full shadow-[0_2px_0_0_#1e293b]">
                 <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />

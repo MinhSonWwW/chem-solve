@@ -25,6 +25,7 @@ interface SessionInfo {
 interface UserState {
   // ── User-level stats (persisted) ──
   xp: number;
+  gems: number;
   streak: number;
   hearts: number;
   soundEnabled: boolean;
@@ -50,6 +51,8 @@ interface UserState {
   dispatch: (action: SessionAction) => void;
   submitAnswer: () => void;
   addXp: (amount: number) => void;
+  addGems: (amount: number) => void;
+  buyHeartWithGems: () => boolean;
   decrementHearts: () => void;
   addHearts: (amount?: number) => void;
   incrementStreak: () => void;
@@ -62,11 +65,13 @@ interface UserState {
     totalXp: number;
     accuracy: number;
     perfectRun: boolean;
+    earnedGems: number;
   } | null>;
 }
 
 export const useUserStore = create<UserState>((set, get) => ({
   xp: 0,
+  gems: 0,
   streak: 0,
   hearts: GAMIFICATION.hearts.max,
   soundEnabled: true,
@@ -176,7 +181,43 @@ export const useUserStore = create<UserState>((set, get) => ({
     }
   },
 
-  addXp: (amount) => set((state) => ({ xp: state.xp + amount })),
+  addXp: (amount) =>
+    set((state) => {
+      const next = state.xp + amount;
+      loadUserProgress().then((p) => {
+        p.xp = next;
+        saveUserProgress(p).catch(console.error);
+      });
+      return { xp: next };
+    }),
+
+  addGems: (amount) =>
+    set((state) => {
+      const next = Math.max(0, state.gems + amount);
+      loadUserProgress().then((p) => {
+        p.gems = next;
+        saveUserProgress(p).catch(console.error);
+      });
+      return { gems: next };
+    }),
+
+  buyHeartWithGems: () => {
+    const { gems, hearts } = get();
+    if (gems < GAMIFICATION.gems.costPerHeart || hearts >= GAMIFICATION.hearts.max) {
+      return false;
+    }
+    const nextGems = gems - GAMIFICATION.gems.costPerHeart;
+    const nextHearts = hearts + 1;
+    set({ gems: nextGems, hearts: nextHearts });
+    sound.playLevelUp();
+    loadUserProgress().then((p) => {
+      p.gems = nextGems;
+      p.hearts = nextHearts;
+      saveUserProgress(p).catch(console.error);
+    });
+    return true;
+  },
+
   decrementHearts: () =>
     set((state) => {
       const next = Math.max(0, state.hearts - 1);
@@ -217,6 +258,7 @@ export const useUserStore = create<UserState>((set, get) => ({
       const progress: UserProgress = await loadUserProgress();
       set({
         xp: progress.xp,
+        gems: progress.gems ?? 0,
         hearts: progress.hearts,
         streak: progress.streak,
         dailyGoal: progress.dailyGoal ?? 20,
@@ -260,13 +302,18 @@ export const useUserStore = create<UserState>((set, get) => ({
 
     const totalXp = sessionState.totalXpEarned + sessionBonus;
 
-    // Update user XP
-    set((s) => ({ xp: s.xp + sessionBonus }));
+    // Gem reward: 10 to 60 gems depending on accuracy
+    const earnedGems = GAMIFICATION.gems.calcReward(accuracy);
+    const nextGems = (get().gems || 0) + earnedGems;
+
+    // Update user XP & Gems
+    set((s) => ({ xp: s.xp + sessionBonus, gems: nextGems }));
 
     // Save user progress
     try {
       const progress = await loadUserProgress();
       progress.xp = get().xp;
+      progress.gems = nextGems;
 
       // When finishing a full practice session, award +1 heart!
       if (sessionState.isPractice) {
@@ -335,6 +382,6 @@ export const useUserStore = create<UserState>((set, get) => ({
     // Clear session from store
     set({ sessionState: null, sessionInfo: null, lastVerdict: null });
 
-    return { totalXp, accuracy, perfectRun };
+    return { totalXp, accuracy, perfectRun, earnedGems };
   },
 }));
