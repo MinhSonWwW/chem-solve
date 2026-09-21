@@ -35,50 +35,62 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
 
   const config = {
     correct: {
-      bg: 'bg-slate-950/95 border-emerald-500/80 text-emerald-100',
-      icon: <Check className="w-6 h-6 stroke-[3]" />,
-      iconBg: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/40',
-      bodyBg: 'bg-emerald-950/40 border-emerald-800/40 text-emerald-200',
-      title: 'Tuyệt vời!',
+      border: 'border-emerald-500/80',
+      bgGradient: 'bg-gradient-to-b from-slate-950/98 via-slate-900/98 to-emerald-950/90',
+      badgeBg: 'bg-emerald-500 text-slate-950 border-4 border-white shadow-[0_4px_12px_rgba(16,185,129,0.5)]',
+      icon: <Check className="w-6 h-6 stroke-[4]" />,
+      titleColor: 'text-emerald-300',
+      bodyBg: 'bg-emerald-950/50 border-emerald-500/30 text-emerald-100',
+      title: 'CHÍNH XÁC!',
       subtitle: 'Bạn đã nắm chắc kiến thức này',
       mascot: 'correct' as const,
       btnVariant: 'success' as const,
       btnLabel: 'TIẾP TỤC',
+      pattern: 'confetti',
     },
     wrong: {
-      bg: 'bg-slate-950/95 border-rose-500/80 text-rose-100',
-      icon: <AlertCircle className="w-6 h-6 stroke-[3]" />,
-      iconBg: 'bg-rose-500/20 text-rose-400 border-rose-500/40',
-      bodyBg: 'bg-rose-950/40 border-rose-800/40 text-rose-200',
-      title: 'Chưa đúng rồi!',
+      border: 'border-rose-500/80',
+      bgGradient: 'bg-gradient-to-b from-slate-950/98 via-slate-900/98 to-rose-950/90',
+      badgeBg: 'bg-rose-500 text-white border-4 border-white shadow-[0_4px_12px_rgba(244,63,94,0.5)]',
+      icon: <AlertCircle className="w-6 h-6 stroke-[3.5]" />,
+      titleColor: 'text-rose-400',
+      bodyBg: 'bg-rose-950/50 border-rose-500/30 text-rose-100',
+      title: 'CHƯA CHÍNH XÁC!',
       subtitle: attemptsLeft
         ? `Còn ${attemptsLeft} lượt thử`
-        : undefined,
+        : 'Đừng nản lòng, xem lời giải nhé!',
       mascot: 'wrong' as const,
       btnVariant: 'danger' as const,
       btnLabel: attemptsLeft && attemptsLeft > 0 ? 'THỬ LẠI' : 'ĐÃ HIỂU',
+      pattern: 'geometric',
     },
     partial: {
-      bg: 'bg-slate-950/95 border-amber-500/80 text-amber-100',
-      icon: <AlertTriangle className="w-6 h-6 stroke-[3]" />,
-      iconBg: 'bg-amber-500/20 text-amber-400 border-amber-500/40',
-      bodyBg: 'bg-amber-950/40 border-amber-800/40 text-amber-200',
-      title: 'Gần đúng rồi!',
-      subtitle: 'Hãy sửa lại cho chính xác hơn',
+      border: 'border-amber-500/80',
+      bgGradient: 'bg-gradient-to-b from-slate-950/98 via-slate-900/98 to-amber-950/90',
+      badgeBg: 'bg-amber-500 text-slate-950 border-4 border-white shadow-[0_4px_12px_rgba(245,158,11,0.5)]',
+      icon: <AlertTriangle className="w-6 h-6 stroke-[3.5]" />,
+      titleColor: 'text-amber-300',
+      bodyBg: 'bg-amber-950/50 border-amber-500/30 text-amber-100',
+      title: 'GẦN ĐÚNG RỒI!',
+      subtitle: 'Hãy chỉnh sửa lại cho chính xác hơn',
       mascot: 'thinking' as const,
       btnVariant: 'warning' as const,
       btnLabel: 'SỬA LẠI',
+      pattern: 'geometric',
     },
     revealed: {
-      bg: 'bg-slate-950/95 border-indigo-500/80 text-indigo-100',
-      icon: <BookOpen className="w-6 h-6 stroke-[3]" />,
-      iconBg: 'bg-indigo-500/20 text-indigo-400 border-indigo-500/40',
-      bodyBg: 'bg-indigo-950/40 border-indigo-800/40 text-indigo-200',
-      title: 'Lời giải đầy đủ',
-      subtitle: 'Đừng lo, hãy đọc kỹ để hiểu nhé!',
+      border: 'border-indigo-500/80',
+      bgGradient: 'bg-gradient-to-b from-slate-950/98 via-slate-900/98 to-indigo-950/90',
+      badgeBg: 'bg-indigo-500 text-white border-4 border-white shadow-[0_4px_12px_rgba(99,102,241,0.5)]',
+      icon: <BookOpen className="w-6 h-6 stroke-[3.5]" />,
+      titleColor: 'text-indigo-300',
+      bodyBg: 'bg-indigo-950/50 border-indigo-500/30 text-indigo-100',
+      title: 'LỜI GIẢI CHI TIẾT',
+      subtitle: 'Hãy đọc kỹ các bước để hiểu bản chất nhé!',
       mascot: 'thinking' as const,
       btnVariant: 'secondary' as const,
       btnLabel: 'TIẾP TỤC',
+      pattern: 'confetti',
     },
   }[status];
 
@@ -97,31 +109,57 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
   return (
     <AnimatePresence>
       <motion.div
-        initial={{ y: 150, opacity: 0 }}
+        initial={{ y: 220, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        exit={{ y: 150, opacity: 0 }}
-        transition={{ type: 'spring', stiffness: 450, damping: 28 }}
-        className={`fixed bottom-0 left-0 right-0 z-40 p-4 border-t-2 safe-pb backdrop-blur-xl shadow-2xl ${config.bg}`}
+        exit={{ y: 220, opacity: 0 }}
+        transition={{ type: 'spring', stiffness: 420, damping: 28 }}
+        className={`fixed bottom-0 left-0 right-0 z-40 p-4 sm:p-5 border-t-4 safe-pb backdrop-blur-2xl shadow-[0_-12px_40px_rgba(0,0,0,0.8)] relative overflow-hidden ${config.border} ${config.bgGradient}`}
       >
-        <div className="max-w-md mx-auto space-y-3">
-          {/* Header & Mascot */}
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
+        {/* Background decorative confetti / geometry */}
+        <div className="absolute inset-0 pointer-events-none opacity-10 overflow-hidden">
+          {config.pattern === 'confetti' ? (
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10%" cy="20%" r="6" fill="#fff" />
+              <circle cx="85%" cy="30%" r="8" fill="#fff" />
+              <circle cx="45%" cy="15%" r="5" fill="#fff" />
+              <rect x="25%" y="40%" width="12" height="6" rx="2" fill="#fff" transform="rotate(25)" />
+              <rect x="70%" y="25%" width="14" height="6" rx="2" fill="#fff" transform="rotate(-30)" />
+            </svg>
+          ) : (
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="40,20 55,50 25,50" fill="#fff" />
+              <polygon points="80,60 95,90 65,90" fill="#fff" />
+              <circle cx="15%" cy="70%" r="6" fill="#fff" />
+              <circle cx="90%" cy="30%" r="5" fill="#fff" />
+            </svg>
+          )}
+        </div>
+
+        <div className="max-w-md mx-auto space-y-3.5 relative z-10">
+          {/* Header & Atom Mascot */}
+          <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center gap-3.5">
+              {/* 3D Round Badge */}
               <div
-                className={`w-10 h-10 rounded-2xl flex items-center justify-center font-black border ${config.iconBg}`}
+                className={`w-12 h-12 rounded-full flex items-center justify-center shrink-0 ${config.badgeBg}`}
               >
                 {config.icon}
               </div>
+
               <div>
-                <h3 className="text-base font-black tracking-tight">
+                <h3 className={`text-lg sm:text-xl font-black tracking-tight ${config.titleColor}`}>
                   {config.title}
                 </h3>
                 {config.subtitle && (
-                  <p className="text-xs font-bold opacity-80">{config.subtitle}</p>
+                  <p className="text-xs font-bold text-slate-300">{config.subtitle}</p>
                 )}
               </div>
             </div>
-            <Mascot state={config.mascot} size="sm" />
+
+            {/* Mascot Avatar */}
+            <div className="shrink-0 -mt-1">
+              <Mascot state={config.mascot} size="lg" />
+            </div>
           </div>
 
           {/* Diagnosis (from commonMistakes) */}
@@ -129,11 +167,11 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
             <div
               className={`p-3 rounded-2xl text-xs leading-relaxed border ${config.bodyBg}`}
             >
-              <div className="font-black mb-0.5 flex items-center gap-1.5">
+              <div className="font-black mb-0.5 flex items-center gap-1.5 text-amber-300">
                 <AlertTriangle className="w-3.5 h-3.5" />
                 Chẩn đoán lỗi
               </div>
-              <div className="opacity-90">{diagnosis}</div>
+              <div className="opacity-95">{diagnosis}</div>
             </div>
           )}
 
@@ -150,23 +188,24 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
           {/* Solution Body / Explanation */}
           {(solutionText || explanation) && (
             <div
-              className={`p-3 rounded-2xl text-xs leading-relaxed border ${config.bodyBg}`}
+              className={`p-3.5 rounded-2xl text-xs leading-relaxed border shadow-inner ${config.bodyBg}`}
             >
               {solutionText && (
-                <div className="font-bold mb-0.5">{solutionText}</div>
+                <div className="font-black text-sm mb-1 text-white">{solutionText}</div>
               )}
               {explanation && (
-                <div className="opacity-90 whitespace-pre-line mt-1">{explanation}</div>
+                <div className="opacity-95 whitespace-pre-line leading-relaxed font-medium">{explanation}</div>
               )}
             </div>
           )}
 
-          {/* Action Button */}
+          {/* Action Button (Chunky 3D) */}
           <Button
             variant={config.btnVariant}
             fullWidth
             size="lg"
             onClick={handleAction}
+            className="text-sm font-black py-3 shadow-[0_5px_0_0_rgba(0,0,0,0.3)] active:translate-y-1"
           >
             {config.btnLabel}
           </Button>

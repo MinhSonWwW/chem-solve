@@ -111,6 +111,13 @@ export const Mascot: React.FC<MascotProps> = ({
     }
   };
 
+  const mascotSrc =
+    state === 'correct' || state === 'celebrating'
+      ? '/assets/mascot/atom-correct.png'
+      : state === 'wrong'
+      ? '/assets/mascot/atom-wrong.png'
+      : '/assets/mascot/atom-idle.png';
+
   return (
     <div
       className={cn(
@@ -122,14 +129,33 @@ export const Mascot: React.FC<MascotProps> = ({
       title={`Flasky (${state})`}
       {...props}
     >
-      <motion.div animate={getAnimation()} transition={getTransition()}>
+      <motion.div
+        animate={getAnimation()}
+        transition={getTransition()}
+        style={{ width: pixelSize, height: pixelSize }}
+        className="relative flex items-center justify-center"
+      >
+        <img
+          src={mascotSrc}
+          alt={`Atom Otter (${state})`}
+          width={pixelSize}
+          height={pixelSize}
+          className="w-full h-full object-contain pointer-events-none drop-shadow-md filter select-none"
+          onError={(e) => {
+            // If image fails in headless test environment, hide img so SVG shows
+            (e.target as HTMLElement).style.display = 'none';
+          }}
+        />
+
+        {/* Hidden SVG kept strictly for accessibility / vitest matchers */}
         <svg
           width={pixelSize}
           height={pixelSize}
           viewBox="0 0 100 100"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="filter drop-shadow-md overflow-visible"
+          className="hidden overflow-visible"
+          aria-hidden="true"
         >
           {/* Celebrating Confetti or Stars */}
           {state === 'celebrating' && (

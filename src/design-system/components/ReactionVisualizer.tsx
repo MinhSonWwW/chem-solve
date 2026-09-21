@@ -228,15 +228,45 @@ export const ReactionVisualizer: React.FC<ReactionVisualizerProps> = ({
     );
   };
 
+  const vfxSticker =
+    type === 'gas'
+      ? '/assets/vfx/vfx-gas.png'
+      : type === 'precipitate'
+      ? '/assets/vfx/vfx-precipitate.png'
+      : type === 'indicator'
+      ? resolvedColor === '#ef4444' || resolvedColor === '#f43f5e'
+        ? '/assets/vfx/litmus-red.png'
+        : '/assets/vfx/litmus-blue.png'
+      : null;
+
   return (
     <div
       onClick={() => setAnimationKey((k) => k + 1)}
       title="Chạm để phát lại hiện tượng phản ứng"
       className={cn(
-        'flex flex-col items-center justify-center p-3 rounded-2xl bg-slate-950/40 border border-slate-800/80 cursor-pointer hover:border-cyan-500/30 transition-colors',
+        'flex flex-col items-center justify-center p-3 rounded-2xl bg-slate-950/40 border border-slate-800/80 cursor-pointer hover:border-cyan-500/30 transition-colors relative overflow-hidden',
         className
       )}
     >
+      {vfxSticker && (
+        <motion.div
+          key={`sticker-${animationKey}`}
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ type: 'spring', stiffness: 350, damping: 20 }}
+          className="mb-1"
+        >
+          <img
+            src={vfxSticker}
+            alt="Hiện tượng hóa học"
+            className="w-14 h-14 object-contain drop-shadow-md"
+            onError={(e) => {
+              (e.target as HTMLElement).style.display = 'none';
+            }}
+          />
+        </motion.div>
+      )}
+
       {type === 'gas' && renderGasEffect()}
       {type === 'precipitate' && renderPrecipitateEffect()}
       {type === 'indicator' && renderIndicatorEffect()}

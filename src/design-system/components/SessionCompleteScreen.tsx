@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Trophy, Flame, Heart, Star, Sparkles, ArrowRight } from 'lucide-react';
+import { Heart, Sparkles, ArrowRight } from 'lucide-react';
 import { Button } from './Button';
 import { Mascot } from './Mascot';
 import { GAMIFICATION } from '@/config/gamification';
@@ -29,28 +29,28 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
 
   const stats = [
     {
-      icon: <Star className="w-5 h-5 text-amber-400" />,
+      icon: <img src="/assets/icons/xp-potion.png" alt="XP" className="w-5 h-5 object-contain" />,
       label: 'Kinh nghiệm',
       value: `+${totalXp} XP`,
       highlight: 'text-amber-300',
     },
     {
-      icon: <Trophy className="w-5 h-5 text-cyan-400" />,
+      icon: <img src="/assets/roadmap/trophy-gold.png" alt="Cúp" className="w-5 h-5 object-contain" />,
       label: 'Chính xác',
       value: `${accuracyPercent}%`,
       highlight: accuracyPercent >= 80 ? 'text-emerald-300' : 'text-amber-300',
     },
     {
-      icon: <Heart className="w-5 h-5 text-rose-400" />,
+      icon: <img src="/assets/icons/heart-flask.png" alt="Tim" className="w-5 h-5 object-contain" />,
       label: 'Kết quả',
       value: `${correctCount}/${totalQuestions}`,
       highlight: 'text-slate-200',
     },
     {
-      icon: <Flame className="w-5 h-5 text-orange-400" />,
+      icon: <img src="/assets/icons/streak-flame.png" alt="Streak" className="w-5 h-5 object-contain" />,
       label: 'Chuỗi ngày',
       value: `${streak} ngày`,
-      highlight: 'text-orange-300',
+      highlight: 'text-cyan-300',
     },
   ];
 
@@ -58,15 +58,28 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="flex flex-col items-center justify-center min-h-[85dvh] text-center px-4"
+      className="flex flex-col items-center justify-center min-h-[85dvh] text-center px-4 relative overflow-hidden"
     >
-      {/* Celebration mascot */}
+      {/* Background Confetti Animation */}
+      <div className="absolute inset-0 pointer-events-none flex items-center justify-center overflow-hidden">
+        <video
+          src="/assets/animations/confetti.mp4"
+          autoPlay
+          muted
+          playsInline
+          loop
+          className="w-full h-full object-cover opacity-40 mix-blend-screen pointer-events-none"
+        />
+      </div>
+
+      {/* Celebration mascot with floating stars */}
       <motion.div
         initial={{ scale: 0, rotate: -20 }}
         animate={{ scale: 1, rotate: 0 }}
         transition={{ type: 'spring', stiffness: 300, damping: 15, delay: 0.2 }}
+        className="relative z-10"
       >
-        <Mascot state="correct" size="lg" />
+        <Mascot state="correct" size="xl" />
       </motion.div>
 
       {/* Title */}
@@ -74,15 +87,15 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
         initial={{ y: 30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.4 }}
-        className="mt-4 space-y-1"
+        className="mt-4 space-y-1 relative z-10"
       >
-        <h1 className="text-2xl font-black text-slate-100 tracking-tight">
+        <h1 className="text-2xl sm:text-3xl font-black bg-gradient-to-r from-amber-300 via-yellow-200 to-cyan-300 bg-clip-text text-transparent tracking-tight">
           🎉 Hoàn thành chặng!
         </h1>
-        <p className="text-sm text-slate-400 font-medium">
+        <p className="text-xs sm:text-sm text-slate-300 font-bold">
           {perfectRun
-            ? 'Xuất sắc! Bạn không mất tim nào!'
-            : 'Bạn đã hoàn thành tốt lắm, tiếp tục nhé!'}
+            ? 'Xuất sắc tuyệt đối! Bạn không mất tim nào!'
+            : 'Bạn đã hoàn thành rất tốt, tiếp tục phát huy nhé!'}
         </p>
       </motion.div>
 
@@ -91,26 +104,26 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.5 }}
-        className="flex gap-2 mt-4"
+        className="flex flex-wrap justify-center gap-2 mt-4 relative z-10"
       >
-        <div className="px-3 py-1.5 rounded-xl bg-cyan-950/40 border border-cyan-800/40 text-cyan-300 text-xs font-bold flex items-center gap-1.5">
-          <Sparkles className="w-3.5 h-3.5" />
+        <div className="px-3.5 py-1.5 rounded-2xl bg-cyan-950/60 border border-cyan-700/60 text-cyan-300 text-xs font-black flex items-center gap-1.5 shadow-md">
+          <Sparkles className="w-4 h-4" />
           +{GAMIFICATION.session.completeBonus} XP hoàn thành
         </div>
         {perfectRun && (
-          <div className="px-3 py-1.5 rounded-xl bg-emerald-950/40 border border-emerald-800/40 text-emerald-300 text-xs font-bold flex items-center gap-1.5">
-            <Heart className="w-3.5 h-3.5" />
+          <div className="px-3.5 py-1.5 rounded-2xl bg-emerald-950/60 border border-emerald-700/60 text-emerald-300 text-xs font-black flex items-center gap-1.5 shadow-md">
+            <Heart className="w-4 h-4 fill-emerald-400 text-emerald-400" />
             +{GAMIFICATION.session.perfectBonus} XP hoàn hảo
           </div>
         )}
       </motion.div>
 
-      {/* Stats cards */}
+      {/* Stats cards (3D chunky Duolingo style) */}
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.6 }}
-        className="grid grid-cols-2 gap-3 mt-6 w-full max-w-sm"
+        className="grid grid-cols-2 gap-3 mt-6 w-full max-w-sm relative z-10"
       >
         {stats.map((stat, i) => (
           <motion.div
@@ -118,9 +131,9 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.7 + i * 0.1 }}
-            className="p-3 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-1"
+            className="p-3.5 rounded-2xl bg-slate-900/90 border-2 border-slate-800 space-y-1.5 shadow-[0_4px_0_0_#1e293b]"
           >
-            <div className="flex items-center gap-1.5 text-xs text-slate-500 font-bold">
+            <div className="flex items-center gap-2 text-xs text-slate-400 font-bold">
               {stat.icon}
               {stat.label}
             </div>
