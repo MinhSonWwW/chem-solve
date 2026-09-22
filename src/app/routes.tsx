@@ -49,7 +49,7 @@ export const router = createHashRouter([
       },
       {
         path: 'games',
-        element: <Navigate to="/practice?tab=minigames" replace />
+        element: <Navigate to="/practice" replace />
       },
       {
         path: 'games/:gameId',

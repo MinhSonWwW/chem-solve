@@ -16,12 +16,12 @@ export const GamesPage: React.FC = () => {
   const navigate = useNavigate();
 
   const handleExitGame = () => {
-    navigate('/practice?tab=minigames');
+    navigate('/practice');
   };
 
   // If no gameId, redirect to the unified Practice & Minigames hub
   if (!gameId) {
-    return <Navigate to="/practice?tab=minigames" replace />;
+    return <Navigate to="/practice" replace />;
   }
 
   // Render active minigame if gameId matches
