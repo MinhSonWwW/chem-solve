@@ -50,5 +50,5 @@ export const GamesPage: React.FC = () => {
     return <ReviewGame onExit={handleExitGame} />;
   }
 
-  return <Navigate to="/practice?tab=minigames" replace />;
+  return <Navigate to="/practice" replace />;
 };

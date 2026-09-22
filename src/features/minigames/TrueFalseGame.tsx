@@ -15,7 +15,7 @@ interface Statement {
 }
 
 export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
-  const { addXp } = useUserStore();
+  const { addXp, addHearts } = useUserStore();
   const [timeLeft, setTimeLeft] = useState(50);
   const [score, setScore] = useState(0);
   const [combo, setCombo] = useState(0);
@@ -42,9 +42,10 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       const xp = Math.min(25, Math.max(5, Math.round(finalScore / 10)));
       setEarnedXp(xp);
       addXp(xp);
-      sound.playCorrect();
+      addHearts(1);
+      sound.playLevelUp();
     },
-    [addXp]
+    [addXp, addHearts]
   );
 
   // Timer countdown
