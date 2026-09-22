@@ -41,14 +41,15 @@ export const TrueFalsePanel: React.FC<TrueFalsePanelProps> = ({
       {displayStatements.map((st) => {
         const userAnswer = value[st.id];
         const hasAnswered = userAnswer !== undefined;
-        const isCorrectAnswer = isChecked && hasAnswered && userAnswer === st.correct;
-        const isWrongAnswer = isChecked && hasAnswered && userAnswer !== st.correct;
+        const isVerdictCorrect = verdict?.status === 'correct';
+        const isStatementCorrect = hasAnswered && userAnswer === st.correct;
+        const isStatementWrong = hasAnswered && userAnswer !== st.correct;
 
         let borderClass = 'border-slate-800';
         if (isChecked) {
-          borderClass = isCorrectAnswer
+          borderClass = isVerdictCorrect && isStatementCorrect
             ? 'border-emerald-500/60'
-            : isWrongAnswer
+            : isStatementWrong
               ? 'border-rose-500/60'
               : 'border-slate-800';
         }
@@ -67,11 +68,9 @@ export const TrueFalsePanel: React.FC<TrueFalsePanelProps> = ({
 
                 let btnClass = '';
                 if (isChecked && isSelected) {
-                  btnClass = isCorrectAnswer
+                  btnClass = isVerdictCorrect && isStatementCorrect
                     ? 'bg-emerald-500/20 border-emerald-500 text-emerald-300'
                     : 'bg-rose-500/20 border-rose-500 text-rose-300';
-                } else if (isChecked && !isSelected && val === st.correct) {
-                  btnClass = 'bg-emerald-500/10 border-emerald-500/40 text-emerald-400';
                 } else if (isSelected) {
                   btnClass = 'bg-cyan-950/50 border-cyan-400 text-cyan-200';
                 } else {

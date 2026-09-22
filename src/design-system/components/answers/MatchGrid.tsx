@@ -70,12 +70,17 @@ export const MatchGrid: React.FC<MatchGridProps> = ({
     setSelectedLeft(null);
   };
 
+  const isVerdictCorrect = verdict?.status === 'correct';
+
   const getLeftStyle = (left: string) => {
     if (isChecked) {
       const pair = getPairForLeft(left);
       if (pair) {
+        if (isVerdictCorrect && isCorrectPair(pair.left, pair.right)) {
+          return 'border-emerald-500 bg-emerald-950/40 text-emerald-200';
+        }
         return isCorrectPair(pair.left, pair.right)
-          ? 'border-emerald-500 bg-emerald-950/40 text-emerald-200'
+          ? 'border-cyan-600/40 bg-cyan-950/30 text-cyan-300'
           : 'border-rose-500 bg-rose-950/40 text-rose-200';
       }
       return 'border-slate-800 opacity-40';
@@ -91,8 +96,11 @@ export const MatchGrid: React.FC<MatchGridProps> = ({
     if (isChecked) {
       const pair = getPairForRight(right);
       if (pair) {
+        if (isVerdictCorrect && isCorrectPair(pair.left, pair.right)) {
+          return 'border-emerald-500 bg-emerald-950/40 text-emerald-200';
+        }
         return isCorrectPair(pair.left, pair.right)
-          ? 'border-emerald-500 bg-emerald-950/40 text-emerald-200'
+          ? 'border-cyan-600/40 bg-cyan-950/30 text-cyan-300'
           : 'border-rose-500 bg-rose-950/40 text-rose-200';
       }
       return 'border-slate-800 opacity-40';

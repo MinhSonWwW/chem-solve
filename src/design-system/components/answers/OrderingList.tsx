@@ -22,7 +22,7 @@ export const OrderingList: React.FC<OrderingListProps> = ({
   onChange,
   disabled,
   verdict,
-  correctOrder,
+  correctOrder: _correctOrder,
 }) => {
   const isChecked = !!verdict;
 
@@ -44,12 +44,11 @@ export const OrderingList: React.FC<OrderingListProps> = ({
     onChange(next);
   };
 
-  const getItemStyle = (item: string, idx: number) => {
+  const getItemStyle = () => {
     if (!isChecked) {
       return 'border-slate-700 bg-slate-900/90 text-slate-200';
     }
-    // Check if item is in correct position
-    if (correctOrder && correctOrder[idx] === item) {
+    if (verdict?.status === 'correct') {
       return 'border-emerald-500/60 bg-emerald-950/40 text-emerald-200';
     }
     return 'border-rose-500/60 bg-rose-950/40 text-rose-200';
@@ -61,7 +60,7 @@ export const OrderingList: React.FC<OrderingListProps> = ({
         <motion.div
           key={item}
           layout
-          className={`flex items-center gap-2 p-3 rounded-2xl border-2 transition-colors ${getItemStyle(item, idx)}`}
+          className={`flex items-center gap-2 p-3 rounded-2xl border-2 transition-colors ${getItemStyle()}`}
         >
           {/* Grip handle visual */}
           <GripVertical className="w-4 h-4 text-slate-600 shrink-0" />

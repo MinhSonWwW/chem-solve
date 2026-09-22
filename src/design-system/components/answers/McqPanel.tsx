@@ -78,9 +78,11 @@ export const McqPanel: React.FC<McqPanelProps> = ({
 
         let classes = '';
         let indicator: React.ReactNode = null;
+        const isVerdictCorrect = verdict?.status === 'correct';
 
         if (isChecked) {
-          if (correct) {
+          if (isVerdictCorrect && correct) {
+            // Only highlight correct option in green when the user's answer is correct!
             classes =
               'bg-emerald-950/60 border-2 border-emerald-500 shadow-[0_4px_0_0_#059669] text-emerald-200 ring-2 ring-emerald-500/20';
             indicator = (
@@ -89,6 +91,7 @@ export const McqPanel: React.FC<McqPanelProps> = ({
               </div>
             );
           } else if (isSelected && !correct) {
+            // When user selected an incorrect option, highlight it in red
             classes =
               'bg-rose-950/60 border-2 border-rose-500 shadow-[0_4px_0_0_#e11d48] text-rose-200 ring-2 ring-rose-500/20';
             indicator = (
@@ -96,7 +99,18 @@ export const McqPanel: React.FC<McqPanelProps> = ({
                 <X className="w-4 h-4 stroke-[3.5]" />
               </div>
             );
+          } else if (isSelected && correct && !isVerdictCorrect) {
+            // Selected partially correct in multi-choice, but overall wrong
+            classes =
+              'bg-amber-950/60 border-2 border-amber-500/80 shadow-[0_4px_0_0_#b45309] text-amber-200';
+            indicator = (
+              <div className="w-6 h-6 rounded-full bg-amber-500 text-slate-950 flex items-center justify-center font-black">
+                <Check className="w-4 h-4 stroke-[3]" />
+              </div>
+            );
           } else {
+            // Unselected options (including the correct answer when user is wrong)
+            // DO NOT highlight in green! Keep neutral and unrevealed.
             classes = 'opacity-40 border-slate-800 bg-slate-950/50';
             indicator = (
               <div className="w-5 h-5 rounded-full border border-slate-700 text-[10px] text-slate-500 flex items-center justify-center font-bold">
@@ -135,7 +149,7 @@ export const McqPanel: React.FC<McqPanelProps> = ({
               <span className="font-bold text-sm text-slate-100">
                 {option.label}
               </span>
-              {isChecked && correct && (
+              {isChecked && isVerdictCorrect && correct && (
                 <span className="text-[10px] font-black uppercase tracking-wider bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-md border border-emerald-500/40">
                   Chính xác
                 </span>
