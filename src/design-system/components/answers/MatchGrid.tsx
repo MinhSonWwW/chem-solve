@@ -77,19 +77,19 @@ export const MatchGrid: React.FC<MatchGridProps> = ({
       const pair = getPairForLeft(left);
       if (pair) {
         if (isVerdictCorrect && isCorrectPair(pair.left, pair.right)) {
-          return 'border-emerald-500 bg-emerald-950/40 text-emerald-200';
+          return 'border-2 border-[#58cc02] bg-[#58cc02]/20 text-emerald-200 shadow-[0_3px_0_0_#46a302]';
         }
         return isCorrectPair(pair.left, pair.right)
-          ? 'border-cyan-600/40 bg-cyan-950/30 text-cyan-300'
-          : 'border-rose-500 bg-rose-950/40 text-rose-200';
+          ? 'border-2 border-[#0ea5e9] bg-[#0ea5e9]/15 text-[#38bdf8] shadow-[0_3px_0_0_#0284c7]'
+          : 'border-2 border-[#ff4b4b] bg-[#ff4b4b]/20 text-rose-200 shadow-[0_3px_0_0_#ea2b2b]';
       }
-      return 'border-slate-800 opacity-40';
+      return 'border-2 border-[#20333d] bg-[#131f24]/50 opacity-40';
     }
     if (selectedLeft === left)
-      return 'border-cyan-400 bg-cyan-950/50 text-cyan-200 shadow-[0_4px_0_0_#0891b2]';
+      return 'border-2 border-[#0ea5e9] bg-[#0ea5e9]/25 text-[#38bdf8] shadow-[0_4px_0_0_#0284c7] scale-[1.02]';
     if (pairedLeft.has(left))
-      return 'border-cyan-600/40 bg-cyan-950/30 text-cyan-300';
-    return 'border-slate-700 bg-slate-900/90 text-slate-200 hover:border-slate-600';
+      return 'border-2 border-[#0ea5e9] bg-[#0ea5e9]/15 text-[#38bdf8] shadow-[0_3px_0_0_#0284c7]';
+    return 'border-2 border-[#2e4756] bg-[#18272f] text-slate-200 hover:border-[#38bdf8] shadow-[0_3px_0_0_#131f24] active:translate-y-[2px] active:shadow-none';
   };
 
   const getRightStyle = (right: string) => {
@@ -97,19 +97,19 @@ export const MatchGrid: React.FC<MatchGridProps> = ({
       const pair = getPairForRight(right);
       if (pair) {
         if (isVerdictCorrect && isCorrectPair(pair.left, pair.right)) {
-          return 'border-emerald-500 bg-emerald-950/40 text-emerald-200';
+          return 'border-2 border-[#58cc02] bg-[#58cc02]/20 text-emerald-200 shadow-[0_3px_0_0_#46a302]';
         }
         return isCorrectPair(pair.left, pair.right)
-          ? 'border-cyan-600/40 bg-cyan-950/30 text-cyan-300'
-          : 'border-rose-500 bg-rose-950/40 text-rose-200';
+          ? 'border-2 border-[#0ea5e9] bg-[#0ea5e9]/15 text-[#38bdf8] shadow-[0_3px_0_0_#0284c7]'
+          : 'border-2 border-[#ff4b4b] bg-[#ff4b4b]/20 text-rose-200 shadow-[0_3px_0_0_#ea2b2b]';
       }
-      return 'border-slate-800 opacity-40';
+      return 'border-2 border-[#20333d] bg-[#131f24]/50 opacity-40';
     }
     if (pairedRight.has(right))
-      return 'border-cyan-600/40 bg-cyan-950/30 text-cyan-300';
+      return 'border-2 border-[#0ea5e9] bg-[#0ea5e9]/15 text-[#38bdf8] shadow-[0_3px_0_0_#0284c7]';
     if (selectedLeft)
-      return 'border-slate-600 bg-slate-900/90 text-slate-200 hover:border-cyan-400 shadow-[0_4px_0_0_#1e293b]';
-    return 'border-slate-800 bg-slate-950/50 text-slate-400';
+      return 'border-2 border-[#2e4756] bg-[#18272f] text-slate-200 hover:border-[#0ea5e9] shadow-[0_3px_0_0_#131f24] animate-pulse';
+    return 'border-2 border-[#20333d] bg-[#131f24]/50 text-slate-400';
   };
 
   return (

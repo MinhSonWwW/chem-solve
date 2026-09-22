@@ -23,6 +23,7 @@ import {
   FlaskConical,
 } from 'lucide-react';
 import { sound } from '@/lib/audio';
+import { assetUrl } from '@/lib/utils';
 import { getCurriculum, type Grade } from '@/content/curriculum';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import { Mascot, Button } from '@/design-system';
@@ -328,15 +329,19 @@ export const PracticePage: React.FC = () => {
     <div className="space-y-6 pb-12 select-none max-w-3xl mx-auto">
       {/* Header Banner */}
       <div>
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-cyan-500 to-blue-600 border border-cyan-400/40 flex items-center justify-center text-slate-950 text-xl font-black shadow-[0_3px_0_0_#0891b2]">
-            ⚗️
+        <div className="flex items-center gap-3.5">
+          <div className="w-12 h-12 rounded-2xl bg-[#18272f] border-2 border-[#2e4756] flex items-center justify-center p-2 shadow-[0_4px_0_0_#131f24] shrink-0">
+            <img
+              src={assetUrl('/assets/icons/xp-potion.png')}
+              alt="Practice"
+              className="w-full h-full object-contain"
+            />
           </div>
           <div>
-            <h1 className="text-xl sm:text-2xl font-black text-slate-100 tracking-tight flex items-center gap-2">
+            <h1 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
               <span>Luyện Tập & Minigames</span>
             </h1>
-            <p className="text-xs text-slate-400 font-medium">
+            <p className="text-xs text-slate-300 font-medium leading-relaxed">
               Tích hợp luyện tập SGK & Minigames: học đến đâu mở khóa đến đấy, không trừ tim, kiếm thêm XP & phục hồi Tim
             </p>
           </div>
@@ -346,42 +351,43 @@ export const PracticePage: React.FC = () => {
       {/* Hearts Recovery Alert if user is low on hearts */}
       {hearts < 5 && (
         <div
-          className={`p-3.5 rounded-2xl border flex items-center justify-between gap-3 shadow-md ${
+          className={`p-3.5 rounded-3xl border-2 flex items-center justify-between gap-3 shadow-[0_4px_0_0_#131f24] ${
             hearts === 0
-              ? 'bg-rose-950/60 border-rose-500/50 text-rose-200'
-              : 'bg-amber-950/40 border-amber-500/40 text-amber-200'
+              ? 'bg-[#ff4b4b]/15 border-[#ff4b4b]/40 text-rose-200'
+              : 'bg-[#ff9600]/15 border-[#ff9600]/40 text-amber-200'
           }`}
         >
-          <div className="flex items-center gap-2.5">
-            <div
-              className={`w-9 h-9 rounded-xl flex items-center justify-center text-lg ${
-                hearts === 0 ? 'bg-rose-500/20 text-rose-400' : 'bg-amber-500/20 text-amber-400'
-              }`}
-            >
-              ❤️
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-2xl bg-[#18272f] border-2 border-[#2e4756] flex items-center justify-center p-1.5 shrink-0 shadow-inner">
+              <img
+                src={assetUrl('/assets/icons/heart-flask.png')}
+                alt="Heart"
+                className="w-full h-full object-contain animate-pulse"
+              />
             </div>
             <div>
-              <div className="text-xs font-black">
+              <div className="text-xs font-black text-white">
                 {hearts === 0 ? 'Bạn đã hết tim (0/5)!' : `Đang có ${hearts}/5 tim`}
               </div>
-              <div className="text-[11px] opacity-90 font-medium">
-                Hoàn thành 1 bài luyện tập hoặc chơi 1 minigame sẽ nhận ngay <span className="font-bold underline text-white">+1 tim</span>!
+              <div className="text-[11px] text-slate-300 font-medium">
+                Hoàn thành 1 bài luyện tập hoặc chơi 1 minigame sẽ nhận ngay <span className="font-bold text-[#58cc02]">+1 tim</span>!
               </div>
             </div>
           </div>
-          <div className="shrink-0 text-xs font-black px-2.5 py-1 rounded-xl bg-slate-900/80 border border-slate-700">
-            {hearts}/5 ❤️
+          <div className="shrink-0 text-xs font-black px-3 py-1.5 rounded-xl bg-[#18272f] border-2 border-[#2e4756] text-white flex items-center gap-1.5 shadow-sm">
+            <img src={assetUrl('/assets/icons/heart-flask.png')} alt="Heart" className="w-3.5 h-3.5 object-contain" />
+            <span>{hearts}/5</span>
           </div>
         </div>
       )}
 
       {/* Grade Selector (Lớp 6 | Lớp 7 | Lớp 8 | Lớp 9) */}
-      <div className="space-y-1.5 bg-slate-900/90 border border-slate-800 p-2.5 rounded-3xl shadow-sm">
+      <div className="space-y-1.5 bg-[#18272f] border-2 border-[#2e4756] p-2.5 rounded-3xl shadow-[0_4px_0_0_#131f24]">
         <div className="flex items-center justify-between px-1 mb-1">
           <label className="text-xs font-black text-slate-300 uppercase tracking-wider">
             Chọn khối lớp học tập:
           </label>
-          <span className="text-[11px] font-bold text-cyan-400">
+          <span className="text-[11px] font-bold text-[#0ea5e9]">
             {unlockedLessonsCount} bài đã mở khóa
           </span>
         </div>
@@ -394,10 +400,10 @@ export const PracticePage: React.FC = () => {
                 setSelectedGrade(g);
                 setSelectedChapterId('all');
               }}
-              className={`py-2.5 text-xs font-black rounded-2xl transition-all cursor-pointer border ${
+              className={`py-2.5 text-xs font-black rounded-2xl transition-all cursor-pointer border-2 ${
                 selectedGrade === g
-                  ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-slate-950 border-cyan-300 shadow-[0_4px_0_0_#0891b2] scale-[1.02]'
-                  : 'bg-slate-950/60 border-slate-800 text-slate-400 hover:text-slate-200 hover:bg-slate-800/40'
+                  ? 'bg-[#0ea5e9] text-white border-sky-200 shadow-[0_4px_0_0_#0284c7] scale-[1.02]'
+                  : 'bg-[#20333d] border-[#2e4756] text-slate-400 hover:text-white hover:bg-[#283e4a]'
               }`}
             >
               Lớp {g}
@@ -410,8 +416,8 @@ export const PracticePage: React.FC = () => {
       <div className="space-y-3">
         <div className="flex items-center justify-between px-1">
           <div className="flex items-center gap-2">
-            <Gamepad2 className="w-4 h-4 text-purple-400" />
-            <h2 className="text-sm font-black text-slate-200 uppercase tracking-wider">
+            <Gamepad2 className="w-4 h-4 text-[#ce82ff]" />
+            <h2 className="text-sm font-black text-white uppercase tracking-wider">
               Minigames Thực Hành Lớp {selectedGrade} ({gradeMinigames.length} trò chơi)
             </h2>
           </div>
@@ -446,18 +452,18 @@ export const PracticePage: React.FC = () => {
                     });
                   }
                 }}
-                className={`p-3.5 rounded-2xl border transition-all shadow-md flex items-center justify-between cursor-pointer group ${
+                className={`p-3.5 rounded-3xl border-2 transition-all flex items-center justify-between cursor-pointer group ${
                   isUnlocked
-                    ? `bg-slate-900 border-slate-800 ${game.borderAccent} hover:border-purple-500/50 hover:translate-y-[-1px]`
-                    : 'bg-slate-950/60 border-slate-900 opacity-75 hover:border-amber-500/40'
+                    ? `bg-[#18272f] border-[#2e4756] hover:border-[#ce82ff] shadow-[0_4px_0_0_#131f24] hover:translate-y-[-2px]`
+                    : 'bg-[#131f24]/80 border-[#20333d] opacity-75 hover:border-amber-500/40'
                 }`}
               >
                 <div className="flex items-center gap-3 min-w-0 pr-2">
                   <div
-                    className={`w-11 h-11 rounded-2xl border flex items-center justify-center shrink-0 shadow-inner group-hover:scale-105 transition-transform ${
+                    className={`w-11 h-11 rounded-2xl border-2 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform ${
                       isUnlocked
-                        ? `bg-gradient-to-br ${game.color} border-slate-700/60`
-                        : 'bg-slate-900 border-slate-800 text-slate-600'
+                        ? `bg-[#20333d] border-[#2e4756] text-[#ce82ff]`
+                        : 'bg-[#18272f] border-[#20333d] text-slate-600'
                     }`}
                   >
                     {isUnlocked ? <Icon className="w-5 h-5" /> : <Lock className="w-5 h-5 text-slate-500" />}
@@ -467,7 +473,7 @@ export const PracticePage: React.FC = () => {
                     <div className="flex items-center gap-1.5 mb-0.5">
                       <h3
                         className={`text-xs font-black truncate transition-colors ${
-                          isUnlocked ? 'text-slate-100 group-hover:text-cyan-300' : 'text-slate-400'
+                          isUnlocked ? 'text-white group-hover:text-[#38bdf8]' : 'text-slate-400'
                         }`}
                       >
                         {game.name}
@@ -540,10 +546,10 @@ export const PracticePage: React.FC = () => {
           <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-none">
             <button
               onClick={() => setSelectedChapterId('all')}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-colors cursor-pointer border ${
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer border-2 ${
                 selectedChapterId === 'all'
-                  ? 'bg-cyan-500/20 text-cyan-300 border-cyan-500/50'
-                  : 'bg-slate-900 text-slate-400 border-slate-800 hover:text-slate-200'
+                  ? 'bg-[#0ea5e9]/20 text-[#38bdf8] border-[#0ea5e9] shadow-[0_2px_0_0_#0284c7]'
+                  : 'bg-[#20333d] text-slate-300 border-[#2e4756] hover:text-white hover:bg-[#283e4a]'
               }`}
             >
               Tất cả chương ({chapters.length} chương)
@@ -552,10 +558,10 @@ export const PracticePage: React.FC = () => {
               <button
                 key={c.id}
                 onClick={() => setSelectedChapterId(c.id)}
-                className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-colors cursor-pointer border ${
+                className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer border-2 ${
                   selectedChapterId === c.id
-                    ? 'bg-cyan-500/20 text-cyan-300 border-cyan-500/50'
-                    : 'bg-slate-900 text-slate-400 border-slate-800 hover:text-slate-200'
+                    ? 'bg-[#0ea5e9]/20 text-[#38bdf8] border-[#0ea5e9] shadow-[0_2px_0_0_#0284c7]'
+                    : 'bg-[#20333d] text-slate-300 border-[#2e4756] hover:text-white hover:bg-[#283e4a]'
                 }`}
               >
                 Chương {c.chapterNumber}: {c.title}
@@ -578,10 +584,10 @@ export const PracticePage: React.FC = () => {
                 sound.playClick();
                 setSelectedDiff(d.id as 'all' | '1' | '2' | '3');
               }}
-              className={`py-1.5 rounded-xl text-[11px] font-bold border transition-all cursor-pointer ${
+              className={`py-1.5 rounded-xl text-[11px] font-bold border-2 transition-all cursor-pointer ${
                 selectedDiff === d.id
-                  ? 'bg-slate-800 text-cyan-300 border-cyan-500/60 shadow-sm'
-                  : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-slate-200'
+                  ? 'bg-[#0ea5e9]/20 text-[#38bdf8] border-[#0ea5e9] shadow-[0_2px_0_0_#0284c7]'
+                  : 'bg-[#20333d] border-[#2e4756] text-slate-400 hover:text-slate-200'
               }`}
             >
               {d.label}
@@ -604,12 +610,12 @@ export const PracticePage: React.FC = () => {
             return (
               <div
                 key={lesson.id}
-                className={`p-4 rounded-2xl border transition-all ${
+                className={`p-4 rounded-3xl border-2 transition-all ${
                   !lesson.ready
-                    ? 'bg-slate-950/50 border-slate-900 hover:border-slate-700/60 cursor-pointer'
+                    ? 'bg-[#131f24]/80 border-[#20333d] hover:border-[#2e4756] cursor-pointer opacity-75'
                     : isAvailable
-                      ? 'bg-slate-900 border-slate-800 hover:border-cyan-500/50 shadow-md cursor-pointer hover:translate-y-[-1px]'
-                      : 'bg-slate-950/60 border-slate-900 hover:border-amber-500/40 cursor-pointer opacity-75'
+                      ? 'bg-[#18272f] border-[#2e4756] hover:border-[#0ea5e9] shadow-[0_4px_0_0_#131f24] cursor-pointer hover:translate-y-[-2px]'
+                      : 'bg-[#131f24]/80 border-[#20333d] hover:border-amber-500/40 cursor-pointer opacity-75'
                 }`}
                 onClick={() => {
                   if (isAvailable && lesson.nodes[0]) {
@@ -644,25 +650,25 @@ export const PracticePage: React.FC = () => {
                     <div className="flex flex-wrap items-center gap-2">
                       <span
                         className={`text-xs font-black ${
-                          isAvailable ? 'text-slate-100' : 'text-slate-400'
+                          isAvailable ? 'text-white' : 'text-slate-400'
                         }`}
                       >
                         {lesson.title}
                       </span>
                       {!lesson.ready ? (
-                        <span className="text-[10px] font-bold bg-slate-800/90 text-slate-400 border border-slate-700/60 px-2 py-0.5 rounded-lg flex items-center gap-1">
+                        <span className="text-[10px] font-bold bg-[#20333d] text-slate-400 border border-[#2e4756] px-2 py-0.5 rounded-lg flex items-center gap-1">
                           🛠️ Sắp có
                         </span>
                       ) : status.isCompleted ? (
-                        <span className="text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-lg flex items-center gap-1">
-                          <CheckCircle2 className="w-3 h-3 text-emerald-400" /> Đã học · Luyện tập
+                        <span className="text-[10px] font-bold bg-[#58cc02]/15 text-emerald-300 border border-[#58cc02]/30 px-2 py-0.5 rounded-lg flex items-center gap-1">
+                          <CheckCircle2 className="w-3 h-3 text-[#58cc02]" /> Đã học · Luyện tập
                         </span>
                       ) : isAvailable ? (
-                        <span className="text-[10px] font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 px-2 py-0.5 rounded-lg flex items-center gap-1">
-                          <Sparkles className="w-3 h-3 text-cyan-400" /> Đang học · Luyện tập
+                        <span className="text-[10px] font-bold bg-[#0ea5e9]/15 text-[#38bdf8] border border-[#0ea5e9]/30 px-2 py-0.5 rounded-lg flex items-center gap-1">
+                          <Sparkles className="w-3 h-3 text-[#0ea5e9]" /> Đang học · Luyện tập
                         </span>
                       ) : (
-                        <span className="text-[10px] font-bold bg-slate-800/90 text-amber-400/90 border border-amber-500/30 px-2 py-0.5 rounded-lg flex items-center gap-1">
+                        <span className="text-[10px] font-bold bg-[#20333d] text-amber-400/90 border border-amber-500/30 px-2 py-0.5 rounded-lg flex items-center gap-1">
                           <Lock className="w-3 h-3 text-amber-400" /> Chưa mở khóa
                         </span>
                       )}
@@ -675,23 +681,23 @@ export const PracticePage: React.FC = () => {
                             sound.playClick();
                             navigate(`/practice/${relatedMinigame.id}`);
                           }}
-                          className="text-[10px] font-bold bg-purple-950/80 text-purple-300 border border-purple-500/40 px-2 py-0.5 rounded-lg hover:bg-purple-900 transition-colors flex items-center gap-1 cursor-pointer"
+                          className="text-[10px] font-bold bg-[#ce82ff]/15 text-[#ce82ff] border border-[#ce82ff]/40 px-2 py-0.5 rounded-lg hover:bg-[#ce82ff]/25 transition-colors flex items-center gap-1 cursor-pointer"
                           title={`Chơi minigame ${relatedMinigame.name}`}
                         >
-                          <Gamepad2 className="w-3 h-3 text-purple-400" />
+                          <Gamepad2 className="w-3 h-3 text-[#ce82ff]" />
                           <span>Game: {relatedMinigame.name}</span>
                         </span>
                       )}
                     </div>
 
-                    <p className="text-[11px] text-slate-400 leading-relaxed font-medium">
+                    <p className="text-[11px] text-slate-300 leading-relaxed font-medium">
                       {lesson.subtitle}
                     </p>
 
                     {!isAvailable && lesson.ready && status.requiredLessonTitle && (
                       <div className="flex items-center gap-1.5 text-[10px] font-bold text-amber-400/90 pt-0.5">
                         <span>🔒 Cần hoàn thành "{status.requiredLessonTitle}" trên lộ trình học</span>
-                        <span className="text-cyan-400 underline flex items-center ml-1">
+                        <span className="text-[#38bdf8] underline flex items-center ml-1">
                           Đến học <ArrowRight className="w-3 h-3 ml-0.5 inline" />
                         </span>
                       </div>
@@ -700,11 +706,11 @@ export const PracticePage: React.FC = () => {
 
                   {/* Right Action Icon */}
                   {isAvailable ? (
-                    <div className="w-9 h-9 rounded-2xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-cyan-300 shrink-0 shadow-sm group-hover:scale-105 transition-transform">
-                      <Play className="w-4 h-4 fill-cyan-400" />
+                    <div className="w-9 h-9 rounded-2xl bg-[#0ea5e9]/20 border-2 border-[#0ea5e9] flex items-center justify-center text-[#38bdf8] shrink-0 shadow-[0_2px_0_0_#0284c7] group-hover:scale-105 transition-transform">
+                      <Play className="w-4 h-4 fill-[#0ea5e9]" />
                     </div>
                   ) : (
-                    <div className="w-9 h-9 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-600 shrink-0">
+                    <div className="w-9 h-9 rounded-2xl bg-[#18272f] border-2 border-[#20333d] flex items-center justify-center text-slate-500 shrink-0">
                       <Lock className="w-4 h-4" />
                     </div>
                   )}
@@ -754,18 +760,18 @@ export const PracticePage: React.FC = () => {
                       });
                     }
                   }}
-                  className={`border p-4 rounded-2xl transition-all shadow-md flex items-center justify-between group cursor-pointer ${
+                  className={`border-2 p-4 rounded-3xl transition-all shadow-[0_4px_0_0_#131f24] flex items-center justify-between group cursor-pointer ${
                     isUnlocked
-                      ? 'bg-slate-900 border-slate-800 hover:border-amber-500/50'
-                      : 'bg-slate-950/60 border-slate-900 hover:border-amber-500/40 opacity-75'
+                      ? 'bg-[#18272f] border-[#2e4756] hover:border-[#ff9600] hover:translate-y-[-2px]'
+                      : 'bg-[#131f24]/80 border-[#20333d] hover:border-amber-500/40 opacity-75'
                   }`}
                 >
                   <div className="flex items-center gap-3.5 min-w-0 pr-2">
                     <div
-                      className={`w-11 h-11 rounded-2xl border flex items-center justify-center shrink-0 ${
+                      className={`w-11 h-11 rounded-2xl border-2 flex items-center justify-center shrink-0 ${
                         isUnlocked
-                          ? `bg-gradient-to-br ${gen.color}`
-                          : 'bg-slate-900 border-slate-800 text-slate-600'
+                          ? `bg-[#20333d] border-[#2e4756] text-[#ff9600]`
+                          : 'bg-[#18272f] border-[#20333d] text-slate-600'
                       }`}
                     >
                       {isUnlocked ? <Icon className="w-5 h-5" /> : <Lock className="w-5 h-5 text-slate-500" />}
@@ -774,28 +780,28 @@ export const PracticePage: React.FC = () => {
                       <div className="flex flex-wrap items-center gap-2 mb-0.5">
                         <h3
                           className={`text-xs font-black truncate transition-colors ${
-                            isUnlocked ? 'text-slate-100 group-hover:text-amber-300' : 'text-slate-400'
+                            isUnlocked ? 'text-white group-hover:text-amber-300' : 'text-slate-400'
                           }`}
                         >
                           {gen.title}
                         </h3>
                         {isUnlocked ? (
-                          <span className="text-[10px] font-bold bg-slate-800 text-amber-400 px-2 py-0.5 rounded-full border border-slate-700 shrink-0">
+                          <span className="text-[10px] font-bold bg-[#ff9600]/15 text-[#ff9600] px-2 py-0.5 rounded-full border border-[#ff9600]/30 shrink-0">
                             {gen.badge}
                           </span>
                         ) : (
-                          <span className="text-[10px] font-bold bg-slate-800/90 text-slate-400 px-2 py-0.5 rounded-full border border-slate-700/60 flex items-center gap-1 shrink-0">
+                          <span className="text-[10px] font-bold bg-[#20333d] text-slate-400 px-2 py-0.5 rounded-full border border-[#2e4756] flex items-center gap-1 shrink-0">
                             <Lock className="w-2.5 h-2.5" /> Chưa mở khóa
                           </span>
                         )}
                       </div>
-                      <p className="text-[11px] text-slate-400 leading-relaxed truncate font-medium">
+                      <p className="text-[11px] text-slate-300 leading-relaxed truncate font-medium">
                         {gen.desc}
                       </p>
                       {!isUnlocked && gen.requiredLessonName && (
                         <div className="flex items-center gap-1 text-[10px] font-bold text-amber-400/90 pt-0.5">
                           <span>🔒 Mở khóa khi học đến: {gen.requiredLessonName}</span>
-                          <span className="text-cyan-400 underline flex items-center ml-1">
+                          <span className="text-[#38bdf8] underline flex items-center ml-1">
                             Đến học <ArrowRight className="w-3 h-3 ml-0.5 inline" />
                           </span>
                         </div>
@@ -804,13 +810,13 @@ export const PracticePage: React.FC = () => {
                   </div>
 
                   <div
-                    className={`w-9 h-9 rounded-2xl border flex items-center justify-center shrink-0 transition-transform ${
+                    className={`w-9 h-9 rounded-2xl border-2 flex items-center justify-center shrink-0 transition-transform ${
                       isUnlocked
-                        ? 'bg-amber-500/10 border-amber-500/30 text-amber-400 group-hover:scale-105'
-                        : 'bg-slate-900 border-slate-800 text-slate-600'
+                        ? 'bg-[#ff9600]/20 border-[#ff9600] text-[#ff9600] shadow-[0_2px_0_0_#c26f00] group-hover:scale-105'
+                        : 'bg-[#18272f] border-[#20333d] text-slate-600'
                     }`}
                   >
-                    {isUnlocked ? <Play className="w-4 h-4 fill-amber-400" /> : <Lock className="w-4 h-4" />}
+                    {isUnlocked ? <Play className="w-4 h-4 fill-[#ff9600]" /> : <Lock className="w-4 h-4" />}
                   </div>
                 </div>
               );
@@ -828,7 +834,7 @@ export const PracticePage: React.FC = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setModalInfo(null)}
-              className="absolute inset-0 bg-slate-950/80 backdrop-blur-sm"
+              className="absolute inset-0 bg-[#0c1417]/80 backdrop-blur-sm"
             />
 
             <motion.div
@@ -836,18 +842,18 @@ export const PracticePage: React.FC = () => {
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.9, opacity: 0, y: 20 }}
               transition={{ type: 'spring', stiffness: 350, damping: 25 }}
-              className="relative w-full max-w-sm rounded-3xl bg-slate-900 border-2 border-slate-700/80 p-6 shadow-2xl text-center space-y-4 z-10"
+              className="relative w-full max-w-sm rounded-3xl bg-[#18272f] border-2 border-[#2e4756] p-6 shadow-[0_16px_40px_rgba(0,0,0,0.65)] text-center space-y-4 z-10"
             >
               {/* Mascot */}
               <div className="flex justify-center pt-1">
-                <Mascot state="thinking" size="lg" />
+                <Mascot state="thinking" size="xl" />
               </div>
 
               <div className="space-y-2">
                 <span className="inline-block text-[11px] font-black uppercase tracking-wider text-amber-400 bg-amber-950/60 px-3 py-1 rounded-xl border border-amber-800/60">
                   {modalInfo.badge}
                 </span>
-                <h3 className="text-base sm:text-lg font-black text-slate-100">
+                <h3 className="text-base sm:text-lg font-black text-white">
                   {modalInfo.title}
                 </h3>
                 <p className="text-xs text-slate-300 leading-relaxed font-medium">
@@ -855,7 +861,7 @@ export const PracticePage: React.FC = () => {
                 </p>
 
                 {modalInfo.requiredLessonName && (
-                  <div className="p-3 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-bold text-left space-y-0.5">
+                  <div className="p-3 rounded-2xl bg-amber-500/10 border-2 border-amber-500/30 text-amber-300 text-xs font-bold text-left space-y-0.5">
                     <span className="text-[10px] uppercase text-amber-400/80 font-black block">
                       Điều kiện mở khóa:
                     </span>

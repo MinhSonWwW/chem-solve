@@ -55,39 +55,40 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
           animate={{ y: 0 }}
           exit={{ y: '100%' }}
           transition={{ type: 'spring', damping: 28, stiffness: 350 }}
-          className="relative w-full max-w-sm bg-slate-900 border-t-2 sm:border-2 border-slate-700/80 rounded-t-3xl sm:rounded-3xl p-6 shadow-2xl z-10 space-y-4 text-center"
+          className="relative w-full max-w-sm bg-[#18272f] border-t-2 sm:border-2 border-[#2e4756] rounded-t-3xl sm:rounded-3xl p-6 shadow-[0_16px_40px_rgba(0,0,0,0.65)] z-10 space-y-4 text-center"
         >
           {/* Close button */}
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 p-1.5 text-slate-400 hover:text-slate-200 rounded-xl hover:bg-slate-800 transition-colors cursor-pointer"
+            className="absolute top-4 right-4 p-1.5 text-slate-400 hover:text-slate-200 rounded-xl hover:bg-[#20333d] transition-colors cursor-pointer"
           >
             <X className="w-5 h-5" />
           </button>
 
           {isReady ? (
             <>
-              {/* Icon / Mascot */}
+              {/* Mascot Avatar */}
               <div className="flex justify-center pt-2">
-                <div className="w-16 h-16 rounded-3xl bg-cyan-500/20 border-2 border-cyan-500/40 flex items-center justify-center text-3xl shadow-[0_4px_20px_rgba(6,182,212,0.3)]">
-                  ⚗️
-                </div>
+                <Mascot
+                  state={hearts <= 0 ? 'out_of_hearts' : isCompleted ? 'happy' : isUnlocked ? 'cheering' : 'thinking'}
+                  size="xl"
+                />
               </div>
 
               {/* Title & Info */}
               <div className="space-y-1">
-                <span className="text-[10px] font-black uppercase tracking-wider text-cyan-400">
+                <span className="text-[10px] font-black uppercase tracking-wider text-[#0ea5e9]">
                   {lesson?.title}
                 </span>
-                <h2 className="text-lg font-black text-slate-100">
+                <h2 className="text-lg font-black text-white">
                   {node.title}
                 </h2>
-                <p className="text-xs text-slate-400">{node.description}</p>
+                <p className="text-xs text-slate-300">{node.description}</p>
               </div>
 
               {/* Status info */}
               {isCompleted && (
-                <div className="p-2.5 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center gap-2 text-xs font-bold text-emerald-300">
+                <div className="p-2.5 rounded-2xl bg-[#58cc02]/15 border-2 border-[#58cc02]/40 flex items-center justify-center gap-2 text-xs font-bold text-emerald-300">
                   <Star className="w-4 h-4 fill-emerald-400 text-emerald-400" />
                   <span>
                     Đã hoàn thành · Chính xác: {Math.round((bestAccuracy ?? 1) * 100)}%
@@ -99,8 +100,8 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
               <div className="pt-2">
                 {hearts <= 0 ? (
                   <div className="space-y-2.5">
-                    <div className="p-3.5 rounded-2xl bg-rose-950/60 border border-rose-500/50 flex flex-col items-center justify-center gap-1.5 text-xs text-rose-200">
-                      <div className="flex items-center gap-1.5 text-rose-400 font-bold">
+                    <div className="p-3.5 rounded-2xl bg-[#ff4b4b]/15 border-2 border-[#ff4b4b]/40 flex flex-col items-center justify-center gap-1.5 text-xs text-rose-200">
+                      <div className="flex items-center gap-1.5 text-[#ff4b4b] font-bold">
                         <span>⚠️ Bạn đã hết tim (0/5)</span>
                       </div>
                       <p className="text-[11px] text-slate-300 font-normal">
@@ -111,7 +112,7 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
                       variant="primary"
                       size="lg"
                       fullWidth
-                      className="flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-black shadow-[0_4px_0_0_#b45309]"
+                      className="flex items-center justify-center gap-2 bg-[#ff9600] hover:bg-[#ffa726] text-white font-black shadow-[0_4px_0_0_#e07a00]"
                       onClick={() => {
                         sound.playClick();
                         if (onGoToPractice) onGoToPractice();
@@ -132,19 +133,19 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
                       onStart();
                     }}
                   >
-                    <Play className="w-5 h-5 fill-slate-950" />
+                    <Play className="w-5 h-5 fill-white" />
                     <span>{isCompleted ? 'ÔN TẬP LẠI' : 'BẮT ĐẦU CHẶNG'}</span>
                   </Button>
                 ) : (
                   <div className="space-y-2.5">
-                    <div className="p-3.5 rounded-2xl bg-slate-800/80 border border-slate-700/80 flex flex-col items-center justify-center gap-1.5 text-xs text-slate-400 font-bold">
+                    <div className="p-3.5 rounded-2xl bg-[#20333d] border-2 border-[#2e4756] flex flex-col items-center justify-center gap-1.5 text-xs text-slate-300 font-bold">
                       <div className="flex items-center gap-1.5 text-amber-400 text-xs">
                         <Lock className="w-4 h-4" />
                         <span>Chưa mở khóa</span>
                       </div>
                       {prerequisiteTitle ? (
                         <p className="text-[11px] text-slate-300 font-normal">
-                          Cần hoàn thành: <span className="font-bold text-cyan-300">{prerequisiteTitle}</span>
+                          Cần hoàn thành: <span className="font-bold text-[#38bdf8]">{prerequisiteTitle}</span>
                         </p>
                       ) : (
                         <p className="text-[11px] text-slate-400 font-normal">

@@ -46,12 +46,12 @@ export const OrderingList: React.FC<OrderingListProps> = ({
 
   const getItemStyle = () => {
     if (!isChecked) {
-      return 'border-slate-700 bg-slate-900/90 text-slate-200';
+      return 'border-2 border-[#2e4756] bg-[#18272f] text-slate-200 shadow-[0_3px_0_0_#131f24]';
     }
     if (verdict?.status === 'correct') {
-      return 'border-emerald-500/60 bg-emerald-950/40 text-emerald-200';
+      return 'border-2 border-[#58cc02] bg-[#58cc02]/20 text-emerald-200 shadow-[0_3px_0_0_#46a302]';
     }
-    return 'border-rose-500/60 bg-rose-950/40 text-rose-200';
+    return 'border-2 border-[#ff4b4b] bg-[#ff4b4b]/20 text-rose-200 shadow-[0_3px_0_0_#ea2b2b]';
   };
 
   return (
@@ -60,13 +60,13 @@ export const OrderingList: React.FC<OrderingListProps> = ({
         <motion.div
           key={item}
           layout
-          className={`flex items-center gap-2 p-3 rounded-2xl border-2 transition-colors ${getItemStyle()}`}
+          className={`flex items-center gap-2.5 p-3.5 rounded-2xl transition-all ${getItemStyle()}`}
         >
           {/* Grip handle visual */}
-          <GripVertical className="w-4 h-4 text-slate-600 shrink-0" />
+          <GripVertical className="w-4 h-4 text-slate-500 shrink-0" />
 
           {/* Step number */}
-          <div className="w-6 h-6 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-[10px] font-black text-slate-400 shrink-0">
+          <div className="w-6 h-6 rounded-full bg-[#20333d] border-2 border-[#2e4756] flex items-center justify-center text-[10px] font-black text-slate-300 shrink-0 shadow-inner">
             {idx + 1}
           </div>
 
@@ -75,22 +75,22 @@ export const OrderingList: React.FC<OrderingListProps> = ({
 
           {/* Move controls */}
           {!disabled && (
-            <div className="flex flex-col gap-0.5 shrink-0">
+            <div className="flex flex-col gap-1 shrink-0">
               <button
                 onClick={() => moveUp(idx)}
                 disabled={idx === 0}
-                className="p-0.5 rounded hover:bg-slate-800 disabled:opacity-20 transition-colors cursor-pointer"
+                className="p-1 rounded-md bg-[#20333d] hover:bg-[#283e4a] border border-[#2e4756] disabled:opacity-20 transition-colors cursor-pointer"
                 aria-label="Di chuyển lên"
               >
-                <ChevronUp className="w-4 h-4 text-slate-400" />
+                <ChevronUp className="w-3.5 h-3.5 text-slate-300" />
               </button>
               <button
                 onClick={() => moveDown(idx)}
                 disabled={idx === orderedItems.length - 1}
-                className="p-0.5 rounded hover:bg-slate-800 disabled:opacity-20 transition-colors cursor-pointer"
+                className="p-1 rounded-md bg-[#20333d] hover:bg-[#283e4a] border border-[#2e4756] disabled:opacity-20 transition-colors cursor-pointer"
                 aria-label="Di chuyển xuống"
               >
-                <ChevronDown className="w-4 h-4 text-slate-400" />
+                <ChevronDown className="w-3.5 h-3.5 text-slate-300" />
               </button>
             </div>
           )}

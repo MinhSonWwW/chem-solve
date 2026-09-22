@@ -14,15 +14,15 @@ export const Card = React.forwardRef<HTMLDivElement, CardProps>(
         className={cn(
           'rounded-3xl p-5 transition-all',
           variant === 'default' &&
-            'bg-slate-900 border border-slate-800 shadow-[0_4px_0_0_#1e293b]',
+            'bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24]',
           variant === 'erlenmeyer' &&
-            'bg-slate-900/90 border-2 border-slate-700 shadow-[0_6px_0_0_#0f172a] relative overflow-hidden',
+            'bg-[#18272f] border-2 border-[#2e4756] shadow-[0_6px_0_0_#131f24] relative overflow-hidden',
           variant === 'interactive' &&
-            'bg-slate-900 border-2 border-slate-800 shadow-[0_4px_0_0_#1e293b] hover:border-slate-700 cursor-pointer active:translate-y-1 active:shadow-none',
+            'bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] hover:border-[#0ea5e9] cursor-pointer active:translate-y-1 active:shadow-none',
           variant === 'outline' &&
-            'bg-slate-950/60 border border-slate-800',
+            'bg-[#131f24]/80 border-2 border-[#20333d]',
           selected &&
-            'border-cyan-400 bg-cyan-950/40 shadow-[0_4px_0_0_#0891b2] ring-1 ring-cyan-400/50',
+            'border-[#0ea5e9] bg-[#0ea5e9]/15 shadow-[0_4px_0_0_#0284c7] ring-1 ring-[#0ea5e9]/50',
           className
         )}
         {...props}

@@ -45,22 +45,22 @@ export const TrueFalsePanel: React.FC<TrueFalsePanelProps> = ({
         const isStatementCorrect = hasAnswered && userAnswer === st.correct;
         const isStatementWrong = hasAnswered && userAnswer !== st.correct;
 
-        let borderClass = 'border-slate-800';
+        let borderClass = 'border-[#2e4756]';
         if (isChecked) {
           borderClass = isVerdictCorrect && isStatementCorrect
-            ? 'border-emerald-500/60'
+            ? 'border-[#58cc02]'
             : isStatementWrong
-              ? 'border-rose-500/60'
-              : 'border-slate-800';
+              ? 'border-[#ff4b4b]'
+              : 'border-[#2e4756]';
         }
 
         return (
           <div
             key={st.id}
-            className={`p-3.5 rounded-2xl bg-slate-900/90 border ${borderClass} transition-colors`}
+            className={`p-4 rounded-3xl bg-[#18272f] border-2 ${borderClass} shadow-[0_4px_0_0_#131f24] transition-colors`}
           >
-            <p className="text-sm text-slate-200 mb-3 leading-relaxed">{st.text}</p>
-            <div className="flex gap-2">
+            <p className="text-sm text-slate-200 mb-3 leading-relaxed font-medium">{st.text}</p>
+            <div className="flex gap-2.5">
               {[true, false].map((val) => {
                 const isSelected = userAnswer === val;
                 const label = val ? 'Đúng' : 'Sai';
@@ -69,12 +69,12 @@ export const TrueFalsePanel: React.FC<TrueFalsePanelProps> = ({
                 let btnClass = '';
                 if (isChecked && isSelected) {
                   btnClass = isVerdictCorrect && isStatementCorrect
-                    ? 'bg-emerald-500/20 border-emerald-500 text-emerald-300'
-                    : 'bg-rose-500/20 border-rose-500 text-rose-300';
+                    ? 'bg-[#58cc02]/20 border-[#58cc02] text-emerald-300 shadow-[0_3px_0_0_#46a302]'
+                    : 'bg-[#ff4b4b]/20 border-[#ff4b4b] text-rose-300 shadow-[0_3px_0_0_#ea2b2b]';
                 } else if (isSelected) {
-                  btnClass = 'bg-cyan-950/50 border-cyan-400 text-cyan-200';
+                  btnClass = 'bg-[#0ea5e9]/20 border-[#0ea5e9] text-[#38bdf8] shadow-[0_3px_0_0_#0284c7]';
                 } else {
-                  btnClass = 'bg-slate-950/50 border-slate-700 text-slate-400 hover:border-slate-600';
+                  btnClass = 'bg-[#20333d] border-[#2e4756] text-slate-300 hover:border-[#38bdf8] shadow-[0_3px_0_0_#131f24] active:translate-y-[2px] active:shadow-none';
                 }
 
                 return (

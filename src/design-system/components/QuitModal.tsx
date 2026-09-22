@@ -35,18 +35,18 @@ export const QuitModal: React.FC<QuitModalProps> = ({
           animate={{ scale: 1, opacity: 1, y: 0 }}
           exit={{ scale: 0.9, opacity: 0, y: 20 }}
           transition={{ type: 'spring', stiffness: 350, damping: 25 }}
-          className="relative w-full max-w-sm rounded-3xl bg-slate-900 border-2 border-slate-700/80 p-6 shadow-2xl text-center space-y-4 z-10"
+          className="relative w-full max-w-sm rounded-3xl bg-[#18272f] border-2 border-[#2e4756] p-6 shadow-[0_16px_40px_rgba(0,0,0,0.65)] text-center space-y-4 z-10"
         >
           {/* Mascot Header */}
           <div className="flex justify-center pt-2">
-            <Mascot state="thinking" size="lg" />
+            <Mascot state="surprised" size="xl" />
           </div>
 
           <div className="space-y-1.5">
-            <h2 className="text-xl font-black text-slate-100 tracking-tight">
+            <h2 className="text-xl font-black text-white tracking-tight">
               Đừng bỏ cuộc lúc này!
             </h2>
-            <p className="text-sm text-slate-400 leading-relaxed font-medium">
+            <p className="text-sm text-slate-300 leading-relaxed font-medium">
               Bạn sắp chinh phục xong bài học rồi. Nếu thoát bây giờ, bạn sẽ bỏ lỡ phần thưởng kinh nghiệm đấy!
             </p>
           </div>
@@ -68,7 +68,7 @@ export const QuitModal: React.FC<QuitModalProps> = ({
               variant="ghost"
               size="md"
               fullWidth
-              className="text-rose-400 hover:text-rose-300 hover:bg-rose-500/10 font-bold"
+              className="text-[#ff4b4b] hover:text-rose-300 hover:bg-[#ff4b4b]/10 font-black tracking-wider"
               onClick={() => {
                 sound.playClick();
                 onQuit();

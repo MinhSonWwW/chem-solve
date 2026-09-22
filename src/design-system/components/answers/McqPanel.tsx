@@ -84,36 +84,36 @@ export const McqPanel: React.FC<McqPanelProps> = ({
           if (isVerdictCorrect && correct) {
             // Only highlight correct option in green when the user's answer is correct!
             classes =
-              'bg-emerald-950/60 border-2 border-emerald-500 shadow-[0_4px_0_0_#059669] text-emerald-200 ring-2 ring-emerald-500/20';
+              'bg-[#58cc02]/20 border-2 border-[#58cc02] shadow-[0_4px_0_0_#46a302] text-emerald-200';
             indicator = (
-              <div className="w-6 h-6 rounded-full bg-emerald-500 text-slate-950 flex items-center justify-center font-black">
+              <div className="w-6 h-6 rounded-full bg-[#58cc02] text-white flex items-center justify-center font-black shadow-sm">
                 <Check className="w-4 h-4 stroke-[3.5]" />
               </div>
             );
           } else if (isSelected && !correct) {
             // When user selected an incorrect option, highlight it in red
             classes =
-              'bg-rose-950/60 border-2 border-rose-500 shadow-[0_4px_0_0_#e11d48] text-rose-200 ring-2 ring-rose-500/20';
+              'bg-[#ff4b4b]/20 border-2 border-[#ff4b4b] shadow-[0_4px_0_0_#ea2b2b] text-rose-200';
             indicator = (
-              <div className="w-6 h-6 rounded-full bg-rose-500 text-slate-950 flex items-center justify-center font-black">
+              <div className="w-6 h-6 rounded-full bg-[#ff4b4b] text-white flex items-center justify-center font-black shadow-sm">
                 <X className="w-4 h-4 stroke-[3.5]" />
               </div>
             );
           } else if (isSelected && correct && !isVerdictCorrect) {
             // Selected partially correct in multi-choice, but overall wrong
             classes =
-              'bg-amber-950/60 border-2 border-amber-500/80 shadow-[0_4px_0_0_#b45309] text-amber-200';
+              'bg-[#ff9600]/20 border-2 border-[#ff9600] shadow-[0_4px_0_0_#e07a00] text-amber-200';
             indicator = (
-              <div className="w-6 h-6 rounded-full bg-amber-500 text-slate-950 flex items-center justify-center font-black">
+              <div className="w-6 h-6 rounded-full bg-[#ff9600] text-white flex items-center justify-center font-black shadow-sm">
                 <Check className="w-4 h-4 stroke-[3]" />
               </div>
             );
           } else {
             // Unselected options (including the correct answer when user is wrong)
             // DO NOT highlight in green! Keep neutral and unrevealed.
-            classes = 'opacity-40 border-slate-800 bg-slate-950/50';
+            classes = 'opacity-40 border-2 border-[#20333d] bg-[#131f24]/60 text-slate-400';
             indicator = (
-              <div className="w-5 h-5 rounded-full border border-slate-700 text-[10px] text-slate-500 flex items-center justify-center font-bold">
+              <div className="w-6 h-6 rounded-full border border-[#2e4756] text-[10px] text-slate-500 flex items-center justify-center font-bold">
                 {letter}
               </div>
             );
@@ -121,17 +121,17 @@ export const McqPanel: React.FC<McqPanelProps> = ({
         } else {
           if (isSelected) {
             classes =
-              'bg-cyan-950/50 border-2 border-cyan-400 shadow-[0_4px_0_0_#0891b2] text-cyan-200';
+              'bg-[#0ea5e9]/15 border-2 border-[#0ea5e9] shadow-[0_4px_0_0_#0284c7] text-[#38bdf8]';
             indicator = (
-              <div className="w-6 h-6 rounded-full bg-cyan-400 text-slate-950 flex items-center justify-center font-black">
+              <div className="w-6 h-6 rounded-full bg-[#0ea5e9] text-white flex items-center justify-center font-black shadow-sm">
                 <Check className="w-4 h-4 stroke-[3]" />
               </div>
             );
           } else {
             classes =
-              'bg-slate-900/90 border border-slate-800 shadow-[0_4px_0_0_#1e293b] hover:border-slate-700 active:translate-y-1 active:shadow-[0_1px_0_0_#1e293b]';
+              'bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] hover:border-[#38bdf8] active:translate-y-1 active:shadow-none text-slate-200';
             indicator = (
-              <div className="w-5 h-5 rounded-full border border-slate-700 text-[10px] text-slate-400 flex items-center justify-center font-bold">
+              <div className="w-6 h-6 rounded-full border-2 border-[#2e4756] text-[11px] text-slate-300 flex items-center justify-center font-black">
                 {letter}
               </div>
             );
