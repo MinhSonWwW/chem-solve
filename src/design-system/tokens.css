@@ -1,31 +1,36 @@
-/* Chem-Solve Design Tokens (Tokens trích từ Sprite Sheets & Duolingo Game Feel) */
+/* Chem-Solve Design Tokens (Playful Tactile Lab - Duolingo & Brilliant Game Feel) */
 
 :root {
   /* Brand Chemistry Colors */
-  --color-primary: #06b6d4;
-  --color-primary-dark: #0891b2;
-  --color-primary-light: #67e8f9;
+  --color-primary: #0ea5e9;
+  --color-primary-dark: #0284c7;
+  --color-primary-light: #38bdf8;
 
-  --color-success: #10b981;
-  --color-success-dark: #059669;
-  --color-success-light: #6ee7b7;
+  --color-success: #58cc02;
+  --color-success-dark: #46a302;
+  --color-success-light: #86efac;
 
-  --color-danger: #ef4444;
-  --color-danger-dark: #dc2626;
+  --color-danger: #ff4b4b;
+  --color-danger-dark: #ea2b2b;
   --color-danger-light: #fca5a5;
 
-  --color-accent: #f59e0b;
-  --color-accent-dark: #d97706;
+  --color-accent: #ff9600;
+  --color-accent-dark: #e07a00;
   --color-accent-light: #fde68a;
 
-  --color-secondary: #8b5cf6;
-  --color-secondary-dark: #7c3aed;
-  --color-secondary-light: #c4b5fd;
+  --color-secondary: #ce82ff;
+  --color-secondary-dark: #a545ee;
+  --color-secondary-light: #e9d5ff;
 
-  --color-background: #0f172a;
-  --color-surface: #1e293b;
-  --color-surface-card: #182234;
-  --color-border: #334155;
+  --color-gem: #00cd9c;
+  --color-gem-dark: #00a880;
+  --color-gem-light: #5eead4;
+
+  /* Surfaces & Backgrounds - Deep Obsidian Lab Ink */
+  --color-background: #131f24;
+  --color-surface: #18272f;
+  --color-surface-card: #20333d;
+  --color-border: #2e4756;
 
   /* 3D Chunky Shadow Sizes */
   --shadow-chunky-sm: 0 3px 0 0;
@@ -37,6 +42,7 @@
   --radius-md: 0.75rem;
   --radius-lg: 1rem;
   --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
   --radius-full: 9999px;
 
   /* Animation Timings */
@@ -49,7 +55,7 @@
 .btn-chunky-primary {
   background-color: var(--color-primary);
   box-shadow: 0 4px 0 0 var(--color-primary-dark);
-  color: #020617;
+  color: #ffffff;
 }
 .btn-chunky-primary:active:not(:disabled) {
   transform: translateY(4px);
@@ -59,7 +65,7 @@
 .btn-chunky-success {
   background-color: var(--color-success);
   box-shadow: 0 4px 0 0 var(--color-success-dark);
-  color: #020617;
+  color: #ffffff;
 }
 .btn-chunky-success:active:not(:disabled) {
   transform: translateY(4px);
@@ -79,17 +85,37 @@
 .btn-chunky-accent {
   background-color: var(--color-accent);
   box-shadow: 0 4px 0 0 var(--color-accent-dark);
-  color: #020617;
+  color: #ffffff;
 }
 .btn-chunky-accent:active:not(:disabled) {
   transform: translateY(4px);
   box-shadow: 0 0 0 0 transparent;
 }
 
+.btn-chunky-secondary {
+  background-color: var(--color-secondary);
+  box-shadow: 0 4px 0 0 var(--color-secondary-dark);
+  color: #ffffff;
+}
+.btn-chunky-secondary:active:not(:disabled) {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 0 transparent;
+}
+
+.btn-chunky-gem {
+  background-color: var(--color-gem);
+  box-shadow: 0 4px 0 0 var(--color-gem-dark);
+  color: #ffffff;
+}
+.btn-chunky-gem:active:not(:disabled) {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 0 transparent;
+}
+
 .btn-chunky-surface {
-  background-color: var(--color-surface);
+  background-color: var(--color-surface-card);
   box-shadow: 0 4px 0 0 var(--color-border);
-  color: #e2e8f0;
+  color: #f1f5f9;
 }
 .btn-chunky-surface:active:not(:disabled) {
   transform: translateY(4px);

@@ -190,7 +190,7 @@ export const LearnPage: React.FC = () => {
   return (
     <div className="space-y-6">
       {/* 1. Grade Selector (3D chunky tabs) */}
-      <div className="flex bg-slate-900 border border-slate-800 p-1.5 rounded-2xl shadow-md">
+      <div className="flex bg-[#18272f] border-2 border-[#2e4756] p-1.5 rounded-2xl shadow-[0_4px_0_0_#131f24]">
         {([6, 7, 8, 9] as Grade[]).map((g) => (
           <button
             key={g}
@@ -200,8 +200,8 @@ export const LearnPage: React.FC = () => {
             }}
             className={`flex-1 py-2 text-xs font-black rounded-xl transition-all cursor-pointer ${
               currentGrade === g
-                ? 'bg-cyan-500 text-slate-950 shadow-[0_3px_0_0_#0891b2]'
-                : 'text-slate-400 hover:text-slate-200'
+                ? 'bg-[#0ea5e9] text-white shadow-[0_3px_0_0_#0284c7]'
+                : 'text-slate-400 hover:text-white'
             }`}
           >
             Lớp {g}
@@ -213,12 +213,12 @@ export const LearnPage: React.FC = () => {
       {chaptersWithNodes.map(({ chapter, pathNodes, nodeLessonMap }) => (
         <div key={chapter.id} className="space-y-4">
           {/* Chapter Banner (Duolingo Style) */}
-          <div className="bg-gradient-to-r from-cyan-950/90 via-slate-900 to-indigo-950/80 border-2 border-cyan-500/40 p-4 sm:p-5 rounded-3xl flex items-center justify-between shadow-2xl relative overflow-hidden">
+          <div className="bg-[#18272f] border-2 border-[#2e4756] p-4 sm:p-5 rounded-3xl flex items-center justify-between shadow-[0_6px_0_0_#131f24] relative overflow-hidden">
             {/* Background glowing ambient light */}
-            <div className="absolute -right-8 -top-8 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none" />
+            <div className="absolute -right-8 -top-8 w-32 h-32 bg-[#0ea5e9]/10 rounded-full blur-2xl pointer-events-none" />
 
             <div className="space-y-1 max-w-[65%] sm:max-w-[70%] relative z-10">
-              <span className="inline-block text-[10px] font-black uppercase tracking-wider text-cyan-300 bg-cyan-950/90 px-2 py-0.5 rounded-lg border border-cyan-800/70">
+              <span className="inline-block text-[10px] font-black uppercase tracking-wider text-sky-300 bg-[#20333d] px-2 py-0.5 rounded-lg border border-[#2e4756]">
                 Chương {chapter.chapterNumber} · Lớp {currentGrade}
               </span>
               <h1 className="text-sm sm:text-base font-black text-white leading-tight">
@@ -235,7 +235,7 @@ export const LearnPage: React.FC = () => {
                 sound.playClick();
                 setSelectedChapterGuide(chapter);
               }}
-              className="relative z-10 flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-400 hover:to-rose-400 text-white font-black text-[11px] sm:text-xs rounded-2xl shadow-[0_4px_0_0_#9f1239] active:translate-y-1 active:shadow-none transition-all cursor-pointer whitespace-nowrap border border-pink-400/40"
+              className="relative z-10 flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 bg-[#ce82ff] hover:bg-[#d896ff] text-white font-black text-[11px] sm:text-xs rounded-2xl shadow-[0_4px_0_0_#a545ee] active:translate-y-1 active:shadow-none transition-all cursor-pointer whitespace-nowrap border-2 border-[#e9d5ff]/40"
               title="Xem sổ tay kiến thức chương"
             >
               <BookOpen className="w-4 h-4 stroke-[2.5]" />

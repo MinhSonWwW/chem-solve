@@ -10,7 +10,7 @@ export const Streak: React.FC<StreakProps> = ({ days, className, ...props }) => 
   return (
     <div
       className={cn(
-        'inline-flex items-center gap-1.5 text-cyan-300 font-black text-xs bg-cyan-950/50 border border-cyan-800/60 px-2.5 py-1 rounded-full shadow-[0_2px_0_0_#083344] select-none hover:scale-105 transition-transform',
+        'inline-flex items-center gap-1.5 text-amber-300 font-black text-xs bg-amber-950/40 border border-amber-500/40 px-2.5 py-1 rounded-full shadow-[0_2px_0_0_#78350f] select-none hover:scale-105 transition-transform',
         className
       )}
       {...props}
@@ -23,7 +23,7 @@ export const Streak: React.FC<StreakProps> = ({ days, className, ...props }) => 
           (e.target as HTMLElement).style.display = 'none';
         }}
       />
-      <Flame className="hidden w-3.5 h-3.5 fill-cyan-400 text-cyan-500" />
+      <Flame className="hidden w-3.5 h-3.5 fill-amber-400 text-amber-500" />
       <span>{days} ngày</span>
     </div>
   );

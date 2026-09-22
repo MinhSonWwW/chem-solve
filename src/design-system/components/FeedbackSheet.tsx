@@ -5,6 +5,7 @@ import { Button } from './Button';
 import { Mascot } from './Mascot';
 import { ReactionVisualizer, type ReactionEffectType } from './ReactionVisualizer';
 import { sound } from '@/lib/audio';
+import { assetUrl } from '@/lib/utils';
 
 export interface FeedbackSheetProps {
   status: 'idle' | 'correct' | 'wrong' | 'partial' | 'revealed';
@@ -37,26 +38,28 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
 
   const config = {
     correct: {
-      border: 'border-emerald-500/80',
-      bgGradient: 'bg-gradient-to-b from-slate-950/98 via-slate-900/98 to-emerald-950/90',
-      badgeBg: 'bg-emerald-500 text-slate-950 border-4 border-white shadow-[0_4px_12px_rgba(16,185,129,0.5)]',
+      border: 'border-[#58cc02]',
+      bgGradient: 'bg-gradient-to-b from-[#18272f]/98 to-[#16361a]/95',
+      badgeImg: assetUrl('/assets/ui/badge-check.png'),
+      badgeBg: 'bg-[#58cc02] text-white border-4 border-white shadow-[0_4px_12px_rgba(88,204,2,0.5)]',
       icon: <Check className="w-6 h-6 stroke-[4]" />,
-      titleColor: 'text-emerald-300',
-      bodyBg: 'bg-emerald-950/50 border-emerald-500/30 text-emerald-100',
+      titleColor: 'text-[#58cc02]',
+      bodyBg: 'bg-[#1b3a1d]/60 border-[#58cc02]/30 text-emerald-100',
       title: 'CHÍNH XÁC!',
-      subtitle: 'Bạn đã nắm chắc kiến thức này',
-      mascot: 'correct' as const,
+      subtitle: 'Bạn đã nắm chắc kiến thức này (+10 XP)',
+      mascot: 'celebrating' as const,
       btnVariant: 'success' as const,
       btnLabel: 'TIẾP TỤC',
       pattern: 'confetti',
     },
     wrong: {
-      border: 'border-rose-500/80',
-      bgGradient: 'bg-gradient-to-b from-slate-950/98 via-slate-900/98 to-rose-950/90',
-      badgeBg: 'bg-rose-500 text-white border-4 border-white shadow-[0_4px_12px_rgba(244,63,94,0.5)]',
+      border: 'border-[#ff4b4b]',
+      bgGradient: 'bg-gradient-to-b from-[#18272f]/98 to-[#3a1a1e]/95',
+      badgeImg: assetUrl('/assets/ui/badge-cross.png'),
+      badgeBg: 'bg-[#ff4b4b] text-white border-4 border-white shadow-[0_4px_12px_rgba(255,75,75,0.5)]',
       icon: <AlertCircle className="w-6 h-6 stroke-[3.5]" />,
-      titleColor: 'text-rose-400',
-      bodyBg: 'bg-rose-950/50 border-rose-500/30 text-rose-100',
+      titleColor: 'text-[#ff4b4b]',
+      bodyBg: 'bg-[#3d181b]/60 border-[#ff4b4b]/30 text-rose-100',
       title: 'CHƯA CHÍNH XÁC!',
       subtitle: attemptsLeft
         ? `Còn ${attemptsLeft} lượt thử · Hãy đọc gợi ý bên dưới!`
@@ -67,12 +70,13 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
       pattern: 'geometric',
     },
     partial: {
-      border: 'border-amber-500/80',
-      bgGradient: 'bg-gradient-to-b from-slate-950/98 via-slate-900/98 to-amber-950/90',
-      badgeBg: 'bg-amber-500 text-slate-950 border-4 border-white shadow-[0_4px_12px_rgba(245,158,11,0.5)]',
+      border: 'border-[#ff9600]',
+      bgGradient: 'bg-gradient-to-b from-[#18272f]/98 to-[#3a2915]/95',
+      badgeImg: undefined,
+      badgeBg: 'bg-[#ff9600] text-white border-4 border-white shadow-[0_4px_12px_rgba(255,150,0,0.5)]',
       icon: <AlertTriangle className="w-6 h-6 stroke-[3.5]" />,
-      titleColor: 'text-amber-300',
-      bodyBg: 'bg-amber-950/50 border-amber-500/30 text-amber-100',
+      titleColor: 'text-[#ff9600]',
+      bodyBg: 'bg-[#3d2a17]/60 border-[#ff9600]/30 text-amber-100',
       title: 'GẦN ĐÚNG RỒI!',
       subtitle: 'Hãy chỉnh sửa lại cho chính xác hơn',
       mascot: 'thinking' as const,
@@ -81,12 +85,13 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
       pattern: 'geometric',
     },
     revealed: {
-      border: 'border-amber-500/80',
-      bgGradient: 'bg-gradient-to-b from-slate-950/98 via-slate-900/98 to-amber-950/90',
-      badgeBg: 'bg-amber-500 text-slate-950 border-4 border-white shadow-[0_4px_12px_rgba(245,158,11,0.5)]',
+      border: 'border-[#ff9600]',
+      bgGradient: 'bg-gradient-to-b from-[#18272f]/98 to-[#3a2915]/95',
+      badgeImg: undefined,
+      badgeBg: 'bg-[#ff9600] text-white border-4 border-white shadow-[0_4px_12px_rgba(255,150,0,0.5)]',
       icon: <Lightbulb className="w-6 h-6 stroke-[3.5]" />,
-      titleColor: 'text-amber-300',
-      bodyBg: 'bg-amber-950/50 border-amber-500/30 text-amber-100',
+      titleColor: 'text-[#ff9600]',
+      bodyBg: 'bg-[#3d2a17]/60 border-[#ff9600]/30 text-amber-100',
       title: 'GỢI Ý TƯ DUY',
       subtitle: 'Đọc kỹ gợi ý để chuẩn bị thử sức lại ở cuối bài nhé!',
       mascot: 'thinking' as const,
@@ -142,11 +147,19 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
           <div className="flex items-center justify-between gap-3">
             <div className="flex items-center gap-3.5">
               {/* 3D Round Badge */}
-              <div
-                className={`w-12 h-12 rounded-full flex items-center justify-center shrink-0 ${config.badgeBg}`}
-              >
-                {config.icon}
-              </div>
+              {config.badgeImg ? (
+                <img
+                  src={config.badgeImg}
+                  alt={config.title}
+                  className="w-13 h-13 object-contain drop-shadow-[0_4px_10px_rgba(0,0,0,0.35)] shrink-0"
+                />
+              ) : (
+                <div
+                  className={`w-12 h-12 rounded-full flex items-center justify-center shrink-0 ${config.badgeBg}`}
+                >
+                  {config.icon}
+                </div>
+              )}
 
               <div>
                 <h3 className={`text-lg sm:text-xl font-black tracking-tight ${config.titleColor}`}>
