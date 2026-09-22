@@ -1,8 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Gift } from 'lucide-react';
+import { Check, Lock, Star, Gift, Play, Award } from 'lucide-react';
 import { sound } from '@/lib/audio';
-import { assetUrl } from '@/lib/utils';
 
 export interface PathNode {
   id: string;
@@ -165,64 +164,53 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
                   initial={{ y: 4 }}
                   animate={{ y: -4 }}
                   transition={{ repeat: Infinity, repeatType: 'reverse', duration: 0.9, ease: 'easeInOut' }}
-                  className="absolute -top-12 z-20 flex flex-col items-center pointer-events-none"
+                  className="absolute -top-11 z-20 flex flex-col items-center pointer-events-none"
                 >
-                  <div className="bg-[#0ea5e9] text-white font-black text-[11px] uppercase tracking-wider px-3.5 py-1 rounded-xl shadow-[0_4px_12px_rgba(14,165,233,0.55)] border border-sky-200">
+                  <div className="bg-gradient-to-r from-cyan-400 to-cyan-300 text-slate-950 font-black text-[11px] uppercase tracking-wider px-3.5 py-1 rounded-xl shadow-[0_4px_12px_rgba(6,182,212,0.5)] border border-cyan-200">
                     BẮT ĐẦU
                   </div>
                   {/* Downward pointer triangle */}
-                  <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] border-t-[#0ea5e9] -mt-[1px]" />
+                  <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] border-t-cyan-300 -mt-[1px]" />
                 </motion.div>
               )}
 
-              {/* Node Button (Genuine 3D Rendered Stepping Stones) */}
+              {/* Node Button (70px chunky 3D round button) */}
               <div className="relative">
                 {/* Active pulsating beacon ring */}
                 {isActive && (
-                  <span className="absolute -inset-2 rounded-full bg-sky-400/35 animate-ping pointer-events-none" />
+                  <span className="absolute -inset-2.5 rounded-full bg-cyan-400/35 animate-ping pointer-events-none" />
                 )}
 
-                <motion.button
-                  whileTap={{ scale: 0.92, y: 3 }}
-                  whileHover={{ scale: 1.05 }}
+                <button
                   onClick={() => handleNodePress(node)}
                   aria-label={node.title}
-                  className="w-[78px] h-[78px] flex items-center justify-center select-none cursor-pointer relative group focus:outline-none"
+                  className={`w-[70px] h-[70px] rounded-full flex flex-col items-center justify-center font-black select-none transition-all cursor-pointer relative ${
+                    isCompleted
+                      ? 'bg-emerald-500 text-slate-950 border-2 border-emerald-300 shadow-[0_8px_0_0_#047857] hover:bg-emerald-400 active:translate-y-1.5 active:shadow-[0_2px_0_0_#047857]'
+                      : isActive
+                      ? 'bg-gradient-to-tr from-cyan-500 to-cyan-300 text-slate-950 border-2 border-cyan-100 shadow-[0_8px_0_0_#0891b2] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#0891b2] ring-4 ring-cyan-500/30'
+                      : isChest
+                      ? 'bg-gradient-to-tr from-amber-600 to-amber-400 text-amber-950 border-2 border-amber-300 shadow-[0_8px_0_0_#78350f] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#78350f]'
+                      : 'bg-slate-800 text-slate-400 border-2 border-slate-700 shadow-[0_6px_0_0_#0f172a] hover:bg-slate-750 hover:border-slate-600 active:translate-y-1'
+                  }`}
                 >
+                  {/* Top gloss highlight shine */}
+                  <div className="absolute top-1.5 left-3 right-3 h-3.5 bg-white/25 rounded-full pointer-events-none" />
+
                   {isChest ? (
-                    <div className="w-[72px] h-[72px] rounded-3xl bg-gradient-to-tr from-amber-600 to-amber-400 border-2 border-amber-300 shadow-[0_6px_0_0_#78350f] flex items-center justify-center group-hover:brightness-110">
-                      <Gift className={`w-8 h-8 ${isCompleted ? 'text-slate-950' : 'text-amber-100'}`} />
-                    </div>
-                  ) : isCheckpoint ? (
-                    <img
-                      src={assetUrl('/assets/roadmap/trophy-gold.png')}
-                      alt="Trạm kiểm tra"
-                      className="w-[72px] h-[72px] object-contain drop-shadow-[0_8px_16px_rgba(255,150,0,0.45)] group-hover:scale-105 transition-transform"
-                    />
+                    <Gift className={`w-8 h-8 ${isCompleted ? 'text-slate-950' : 'text-amber-100'}`} />
                   ) : isCompleted ? (
-                    <img
-                      src={assetUrl('/assets/roadmap/node-completed.png')}
-                      alt="Hoàn thành"
-                      className="w-[76px] h-[76px] object-contain drop-shadow-[0_8px_16px_rgba(88,204,2,0.35)] group-hover:scale-105 transition-transform"
-                    />
+                    <Check className="w-8 h-8 stroke-[3.5]" />
                   ) : isActive ? (
-                    <img
-                      src={assetUrl('/assets/roadmap/node-active.png')}
-                      alt="Đang học"
-                      className="w-[78px] h-[78px] object-contain drop-shadow-[0_10px_20px_rgba(14,165,233,0.5)] group-hover:scale-105 transition-transform"
-                    />
+                    <Play className="w-7 h-7 fill-slate-950 ml-0.5" />
                   ) : isUnready ? (
-                    <div className="w-[68px] h-[68px] rounded-full bg-[#18272f] border-2 border-[#2e4756] shadow-[0_5px_0_0_#131f24] flex items-center justify-center text-xl">
-                      🛠️
-                    </div>
+                    <span className="text-xl select-none" title="Đang biên soạn">🛠️</span>
+                  ) : isCheckpoint ? (
+                    <Award className="w-7 h-7" />
                   ) : (
-                    <img
-                      src={assetUrl('/assets/roadmap/node-locked.png')}
-                      alt="Khóa"
-                      className="w-[72px] h-[72px] object-contain opacity-75 grayscale-[25%] drop-shadow-[0_4px_8px_rgba(0,0,0,0.4)] group-hover:opacity-90 transition-opacity"
-                    />
+                    <Lock className="w-6 h-6 text-slate-500" />
                   )}
-                </motion.button>
+                </button>
               </div>
 
               {/* Node Title & Star Rating */}
@@ -246,9 +234,11 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
                 )}
 
                 {isCompleted && (
-                  <span className="text-[10px] font-black text-emerald-400 mt-0.5">
-                    ✓ Hoàn thành
-                  </span>
+                  <div className="flex justify-center gap-0.5 mt-0.5 text-amber-400 drop-shadow">
+                    <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-500" />
+                    <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-500" />
+                    <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-500" />
+                  </div>
                 )}
               </div>
             </div>
