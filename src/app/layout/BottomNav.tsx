@@ -1,10 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { BookOpen, FlaskConical, Gamepad2, BarChart3, User } from 'lucide-react';
+import { BookOpen, FlaskConical, ShoppingBag, Gamepad2, BarChart3, User } from 'lucide-react';
 
 const NAV_ITEMS = [
   { to: '/learn/8', label: 'Học', icon: BookOpen },
   { to: '/practice', label: 'Luyện', icon: FlaskConical },
+  { to: '/shop', label: 'Shop', icon: ShoppingBag },
   { to: '/games', label: 'Game', icon: Gamepad2 },
   { to: '/progress', label: 'Tiến độ', icon: BarChart3 },
   { to: '/profile', label: 'Hồ sơ', icon: User },
@@ -21,7 +22,7 @@ export const BottomNav: React.FC = () => {
               key={item.to}
               to={item.to}
               className={({ isActive }) =>
-                `flex flex-col items-center gap-1 py-1 px-3 rounded-xl transition-all duration-200 ${
+                `flex flex-col items-center gap-1 py-1 px-1.5 rounded-xl transition-all duration-200 ${
                   isActive
                     ? 'text-cyan-400 font-bold scale-105'
                     : 'text-slate-400 hover:text-slate-200 font-medium'
@@ -29,7 +30,7 @@ export const BottomNav: React.FC = () => {
               }
             >
               <Icon className="w-5 h-5" />
-              <span className="text-[11px] tracking-tight">{item.label}</span>
+              <span className="text-[10px] font-semibold tracking-tight">{item.label}</span>
             </NavLink>
           );
         })}

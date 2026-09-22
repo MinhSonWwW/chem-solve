@@ -7,6 +7,7 @@ import {
   Zap,
   BarChart3,
   User,
+  ShoppingBag,
   Volume2,
   VolumeX,
   Code2,
@@ -24,6 +25,7 @@ interface NavItem {
 const NAV_ITEMS: NavItem[] = [
   { to: '/learn', label: 'HỌC', icon: BookOpen, matchPrefix: '/learn' },
   { to: '/practice', label: 'LUYỆN TẬP', icon: FlaskConical, matchPrefix: '/practice' },
+  { to: '/shop', label: 'CỬA HÀNG', icon: ShoppingBag, matchPrefix: '/shop' },
   { to: '/games', label: 'MINIGAMES', icon: Gamepad2, matchPrefix: '/games' },
   { to: '/daily', label: 'NHIỆM VỤ', icon: Zap, matchPrefix: '/daily' },
   { to: '/progress', label: 'TIẾN ĐỘ', icon: BarChart3, matchPrefix: '/progress' },

@@ -62,6 +62,8 @@ export interface UserProgress {
   lastHeartResetDate?: string; // YYYY-MM-DD for daily full heart refill
   streak: number;
   streakDate: string; // YYYY-MM-DD of last streak bump
+  streakFreeze?: number; // khiên bảo vệ chuỗi streak (max 2)
+  xpBoostUntil?: number; // timestamp hết hạn 2x XP boost
   dailyGoal: number; // 20, 40, 60 XP
   achievements: Record<string, number>; // achievementId -> progress
   completedNodes: Record<string, CompletedNodeData>;
@@ -77,6 +79,8 @@ const DEFAULT_PROGRESS: UserProgress = {
   lastHeartResetDate: new Date().toISOString().slice(0, 10),
   streak: 0,
   streakDate: '',
+  streakFreeze: 0,
+  xpBoostUntil: 0,
   dailyGoal: 20,
   achievements: {},
   completedNodes: {},
@@ -88,6 +92,8 @@ export async function loadUserProgress(): Promise<UserProgress> {
 
   // Ensure default values if old schema
   raw.gems = raw.gems ?? 0;
+  raw.streakFreeze = raw.streakFreeze ?? 0;
+  raw.xpBoostUntil = raw.xpBoostUntil ?? 0;
   raw.dailyGoal = raw.dailyGoal ?? 20;
   raw.achievements = raw.achievements ?? {};
   raw.completedNodes = raw.completedNodes ?? {};

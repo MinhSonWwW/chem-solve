@@ -10,6 +10,7 @@ import { DailyPage } from './pages/DailyPage';
 import { ProgressPage } from './pages/ProgressPage';
 import { ProfilePage } from './pages/ProfilePage';
 import { SearchPage } from './pages/SearchPage';
+import { ShopPage } from './pages/ShopPage';
 import { DesignSystemPage } from './pages/DesignSystemPage';
 
 export const router = createHashRouter([
@@ -65,6 +66,10 @@ export const router = createHashRouter([
       {
         path: 'search',
         element: <SearchPage />
+      },
+      {
+        path: 'shop',
+        element: <ShopPage />
       },
       {
         path: 'dev/design-system',

@@ -28,7 +28,16 @@ export const TopHeader: React.FC = () => {
           <div className="flex items-center gap-2">
             <Streak days={streak} />
             <XPBadge amount={xp} />
-            <GemBadge amount={gems} />
+            <div
+              onClick={() => {
+                sound.playClick();
+                navigate('/shop');
+              }}
+              className="cursor-pointer hover:scale-105 active:scale-95 transition-transform"
+              title="Cửa hàng Đá quý - Đổi lấy Tim & Vật phẩm!"
+            >
+              <GemBadge amount={gems} />
+            </div>
             <div
               onClick={() => {
                 sound.playClick();
@@ -63,6 +72,10 @@ export const TopHeader: React.FC = () => {
         onGoToPractice={() => {
           setShowHeartModal(false);
           navigate('/practice');
+        }}
+        onGoToShop={() => {
+          setShowHeartModal(false);
+          navigate('/shop');
         }}
         onClose={() => setShowHeartModal(false)}
       />

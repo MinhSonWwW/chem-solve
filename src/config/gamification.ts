@@ -37,6 +37,12 @@ export const GAMIFICATION = {
   gems: {
     /** Cost in gems to buy 1 heart */
     costPerHeart: 150,
+    /** Cost to refill all 5 hearts */
+    costFullHearts: 450,
+    /** Cost to buy 1 streak freeze (max 2) */
+    costStreakFreeze: 200,
+    /** Cost to buy 15-min 2x XP boost */
+    costXpBoost: 100,
     /** Min and max reward per completed session */
     minReward: 10,
     maxReward: 60,

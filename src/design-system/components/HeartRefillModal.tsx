@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Heart, X } from 'lucide-react';
+import { Heart, X, ShoppingBag } from 'lucide-react';
 import { Button } from './Button';
 import { Mascot } from './Mascot';
 import { assetUrl, cn } from '@/lib/utils';
@@ -14,6 +14,7 @@ export interface HeartRefillModalProps {
   costPerHeart?: number;
   onBuyWithGems: () => void;
   onGoToPractice: () => void;
+  onGoToShop?: () => void;
   onClose: () => void;
 }
 
@@ -25,6 +26,7 @@ export const HeartRefillModal: React.FC<HeartRefillModalProps> = ({
   costPerHeart = 150,
   onBuyWithGems,
   onGoToPractice,
+  onGoToShop,
   onClose,
 }) => {
   if (!isOpen) return null;
@@ -156,6 +158,20 @@ export const HeartRefillModal: React.FC<HeartRefillModalProps> = ({
                 <span>LUYỆN TẬP ĐỂ HỒI TIM (+1 TIM)</span>
               </Button>
             </div>
+          )}
+
+          {/* Option: Go to Shop */}
+          {onGoToShop && (
+            <button
+              onClick={() => {
+                sound.playClick();
+                onGoToShop();
+              }}
+              className="w-full flex items-center justify-center gap-1.5 py-2 px-3 rounded-2xl text-xs font-black text-cyan-400 hover:text-cyan-300 hover:bg-cyan-950/40 border border-cyan-800/50 transition-colors cursor-pointer"
+            >
+              <ShoppingBag className="w-3.5 h-3.5" />
+              <span>Ghé Cửa Hàng (Bơm đầy 5 tim, khiên băng) ➔</span>
+            </button>
           )}
 
           {/* Daily Reset Note */}

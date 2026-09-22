@@ -53,6 +53,11 @@ interface UserState {
   addXp: (amount: number) => void;
   addGems: (amount: number) => void;
   buyHeartWithGems: () => boolean;
+  buyFullHeartsWithGems: () => boolean;
+  buyStreakFreeze: () => boolean;
+  buyXpBoost: () => boolean;
+  streakFreeze: number;
+  xpBoostUntil: number;
   decrementHearts: () => void;
   addHearts: (amount?: number) => void;
   incrementStreak: () => void;
@@ -74,6 +79,8 @@ export const useUserStore = create<UserState>((set, get) => ({
   gems: 0,
   streak: 0,
   hearts: GAMIFICATION.hearts.max,
+  streakFreeze: 0,
+  xpBoostUntil: 0,
   soundEnabled: true,
   dailyGoal: 20,
   achievements: {},
@@ -218,6 +225,58 @@ export const useUserStore = create<UserState>((set, get) => ({
     return true;
   },
 
+  buyFullHeartsWithGems: () => {
+    const { gems, hearts } = get();
+    if (gems < GAMIFICATION.gems.costFullHearts || hearts >= GAMIFICATION.hearts.max) {
+      return false;
+    }
+    const nextGems = gems - GAMIFICATION.gems.costFullHearts;
+    const nextHearts = GAMIFICATION.hearts.max;
+    set({ gems: nextGems, hearts: nextHearts });
+    sound.playLevelUp();
+    loadUserProgress().then((p) => {
+      p.gems = nextGems;
+      p.hearts = nextHearts;
+      saveUserProgress(p).catch(console.error);
+    });
+    return true;
+  },
+
+  buyStreakFreeze: () => {
+    const { gems, streakFreeze } = get();
+    if (gems < GAMIFICATION.gems.costStreakFreeze || (streakFreeze ?? 0) >= 2) {
+      return false;
+    }
+    const nextGems = gems - GAMIFICATION.gems.costStreakFreeze;
+    const nextFreeze = (streakFreeze ?? 0) + 1;
+    set({ gems: nextGems, streakFreeze: nextFreeze });
+    sound.playLevelUp();
+    loadUserProgress().then((p) => {
+      p.gems = nextGems;
+      p.streakFreeze = nextFreeze;
+      saveUserProgress(p).catch(console.error);
+    });
+    return true;
+  },
+
+  buyXpBoost: () => {
+    const { gems, xpBoostUntil } = get();
+    if (gems < GAMIFICATION.gems.costXpBoost) {
+      return false;
+    }
+    const nextGems = gems - GAMIFICATION.gems.costXpBoost;
+    const baseTime = Math.max(Date.now(), xpBoostUntil ?? 0);
+    const nextBoost = baseTime + 15 * 60 * 1000;
+    set({ gems: nextGems, xpBoostUntil: nextBoost });
+    sound.playLevelUp();
+    loadUserProgress().then((p) => {
+      p.gems = nextGems;
+      p.xpBoostUntil = nextBoost;
+      saveUserProgress(p).catch(console.error);
+    });
+    return true;
+  },
+
   decrementHearts: () =>
     set((state) => {
       const next = Math.max(0, state.hearts - 1);
@@ -261,6 +320,8 @@ export const useUserStore = create<UserState>((set, get) => ({
         gems: progress.gems ?? 0,
         hearts: progress.hearts,
         streak: progress.streak,
+        streakFreeze: progress.streakFreeze ?? 0,
+        xpBoostUntil: progress.xpBoostUntil ?? 0,
         dailyGoal: progress.dailyGoal ?? 20,
         achievements: progress.achievements ?? {},
         completedNodes: progress.completedNodes ?? {},
