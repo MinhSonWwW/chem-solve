@@ -40,12 +40,16 @@ export const router = createHashRouter([
         element: <PracticePage />
       },
       {
+        path: 'practice/:gameId',
+        element: <GamesPage />
+      },
+      {
         path: 'play/:lessonId/:nodeId',
         element: <ExercisePage />
       },
       {
         path: 'games',
-        element: <GamesPage />
+        element: <Navigate to="/practice?tab=minigames" replace />
       },
       {
         path: 'games/:gameId',

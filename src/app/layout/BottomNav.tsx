@@ -1,12 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { BookOpen, FlaskConical, ShoppingBag, Gamepad2, BarChart3, User } from 'lucide-react';
+import { BookOpen, FlaskConical, ShoppingBag, BarChart3, User } from 'lucide-react';
 
 const NAV_ITEMS = [
   { to: '/learn/8', label: 'Học', icon: BookOpen },
-  { to: '/practice', label: 'Luyện', icon: FlaskConical },
+  { to: '/practice', label: 'Luyện tập', icon: FlaskConical },
   { to: '/shop', label: 'Shop', icon: ShoppingBag },
-  { to: '/games', label: 'Game', icon: Gamepad2 },
   { to: '/progress', label: 'Tiến độ', icon: BarChart3 },
   { to: '/profile', label: 'Hồ sơ', icon: User },
 ];

@@ -3,7 +3,6 @@ import { NavLink, useLocation } from 'react-router-dom';
 import {
   BookOpen,
   FlaskConical,
-  Gamepad2,
   Zap,
   BarChart3,
   User,
@@ -24,9 +23,8 @@ interface NavItem {
 
 const NAV_ITEMS: NavItem[] = [
   { to: '/learn', label: 'HỌC', icon: BookOpen, matchPrefix: '/learn' },
-  { to: '/practice', label: 'LUYỆN TẬP', icon: FlaskConical, matchPrefix: '/practice' },
+  { to: '/practice', label: 'LUYỆN TẬP & GAME', icon: FlaskConical, matchPrefix: '/practice' },
   { to: '/shop', label: 'CỬA HÀNG', icon: ShoppingBag, matchPrefix: '/shop' },
-  { to: '/games', label: 'MINIGAMES', icon: Gamepad2, matchPrefix: '/games' },
   { to: '/daily', label: 'NHIỆM VỤ', icon: Zap, matchPrefix: '/daily' },
   { to: '/progress', label: 'TIẾN ĐỘ', icon: BarChart3, matchPrefix: '/progress' },
   { to: '/profile', label: 'HỒ SƠ', icon: User, matchPrefix: '/profile' },
