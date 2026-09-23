@@ -355,7 +355,8 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                 {/* Mnemonic Banner */}
                 <div className="p-3 rounded-2xl bg-gradient-to-r from-cyan-950/60 to-blue-950/60 border border-cyan-700/50">
                   <div className="text-xs font-black text-cyan-300 mb-1 flex items-center gap-1.5">
-                    <span>⚡</span> Câu thần chú học thuộc lòng:
+                    <Zap className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                    <span>Câu thần chú học thuộc lòng:</span>
                   </div>
                   <p className="text-xs font-medium text-slate-200 leading-relaxed italic">
                     "<strong>Khi (K) nào (Na) cần (Ca) may (Mg) áo (Al) giáp (Zn) sắt (Fe) nhớ (Ni) sang (Sn) phố (Pb) hỏi (H) cửa (Cu) hàng (Hg) á (Ag) phi (Pt) âu (Au)</strong>"

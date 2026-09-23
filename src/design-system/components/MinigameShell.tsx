@@ -1,14 +1,15 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { X, Trophy, Flame, Sparkles, RotateCcw, ArrowLeft, Clock } from 'lucide-react';
+import { X, RotateCcw, ArrowLeft, Clock } from 'lucide-react';
 import { Button } from './Button';
 import { Mascot } from './Mascot';
+import { CurrencyIcon } from './CurrencyIcon';
 import { sound } from '@/lib/audio';
 
 export interface MinigameShellProps {
   title: string;
   description?: string;
-  icon?: string;
+  icon?: React.ReactNode;
   skillId?: string;
   timeLeft?: number; // In seconds
   totalTime?: number;
@@ -55,18 +56,18 @@ export const MinigameShell: React.FC<MinigameShellProps> = ({
           </button>
 
           <div className="flex items-center gap-2">
-            <span className="text-xl">{icon}</span>
+            {icon && <span className="text-xl">{icon}</span>}
             <div className="text-left">
               <h1 className="text-xs font-black text-slate-200 leading-tight truncate">
                 {title}
               </h1>
-              <p className="text-[10px] text-slate-500 truncate">{description}</p>
+              <p className="text-[10px] text-slate-400 truncate">{description}</p>
             </div>
           </div>
 
           {/* Score counter */}
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_2px_0_0_#131f24]">
-            <Trophy className="w-4 h-4 text-[#ffc800]" />
+            <CurrencyIcon type="trophy" size="xs" />
             <span className="text-xs font-black text-slate-100 font-mono">
               {score}
             </span>
@@ -101,8 +102,8 @@ export const MinigameShell: React.FC<MinigameShellProps> = ({
         {/* Combo Badge (if combo >= 2) */}
         {combo >= 2 && (
           <div className="flex justify-center">
-            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#ff9600]/15 border border-[#ff9600]/40 text-[#ff9600] text-[10px] font-black animate-pulse">
-              <Flame className="w-3.5 h-3.5 fill-[#ff9600] text-[#ff9600]" />
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#ff9600]/15 border border-[#ff9600]/40 text-[#ff9600] text-[11px] font-black animate-pulse shadow-[0_0_10px_rgba(255,150,0,0.2)]">
+              <CurrencyIcon type="streak" size="xs" />
               <span>Chuỗi x{combo}!</span>
             </div>
           </div>
@@ -139,7 +140,8 @@ export const MinigameShell: React.FC<MinigameShellProps> = ({
                 <span className="text-[10px] text-slate-400 font-bold uppercase">
                   Điểm số
                 </span>
-                <div className="text-2xl font-black text-[#ffc800] font-mono">
+                <div className="text-2xl font-black text-[#ffc800] font-mono flex items-center justify-center gap-1.5">
+                  <CurrencyIcon type="trophy" size="sm" />
                   {score}
                 </div>
               </div>
@@ -147,8 +149,8 @@ export const MinigameShell: React.FC<MinigameShellProps> = ({
                 <span className="text-[10px] text-slate-400 font-bold uppercase">
                   Kinh nghiệm
                 </span>
-                <div className="text-2xl font-black text-[#00cd9c] font-mono flex items-center justify-center gap-1">
-                  <Sparkles className="w-5 h-5 fill-[#00cd9c] text-[#00cd9c]" />
+                <div className="text-2xl font-black text-[#00cd9c] font-mono flex items-center justify-center gap-1.5">
+                  <CurrencyIcon type="xp" size="sm" />
                   +{earnedXp}
                 </div>
               </div>

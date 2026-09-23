@@ -139,7 +139,7 @@ export const HeartRefillModal: React.FC<HeartRefillModalProps> = ({
                 <span>
                   {canAfford
                     ? `ĐỔI 1 TIM (${costPerHeart} ĐÁ QUÝ)`
-                    : `CẦN ${costPerHeart} ĐÁ QUÝ (THIẾU ${costPerHeart - gems} 💎)`}
+                    : `CẦN ${costPerHeart} ĐÁ QUÝ (THIẾU ${costPerHeart - gems} ĐÁ QUÝ)`}
                 </span>
               </Button>
 
@@ -176,7 +176,7 @@ export const HeartRefillModal: React.FC<HeartRefillModalProps> = ({
 
           {/* Daily Reset Note */}
           <p className="text-[11px] text-slate-400 italic pt-1">
-            ⚡ Toàn bộ 5 tim sẽ tự động hồi đầy mỗi khi chuyển sang ngày mới!
+            Toàn bộ 5 tim sẽ tự động hồi đầy mỗi khi chuyển sang ngày mới!
           </p>
         </motion.div>
       </div>

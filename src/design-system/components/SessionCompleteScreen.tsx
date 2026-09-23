@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Heart, Sparkles, ArrowRight } from 'lucide-react';
+import { Sparkles, ArrowRight, Award } from 'lucide-react';
 import { Button } from './Button';
 import { Mascot } from './Mascot';
+import { CurrencyIcon } from './CurrencyIcon';
 import { GAMIFICATION } from '@/config/gamification';
 import { sound } from '@/lib/audio';
 import { assetUrl } from '@/lib/utils';
@@ -36,25 +37,25 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
 
   const stats = [
     {
-      icon: <img src={assetUrl('/assets/icons/xp-potion.png')} alt="XP" className="w-5 h-5 object-contain" />,
+      icon: <CurrencyIcon type="xp" size="sm" />,
       label: 'Kinh nghiệm',
       value: `+${totalXp} XP`,
       highlight: 'text-amber-300',
     },
     {
-      icon: <img src={assetUrl('/assets/icons/gem-crystal.png')} alt="Gem" className="w-5 h-5 object-contain" />,
-      label: 'Đá quý nhận',
-      value: `+${earnedGems ?? 0} 💎`,
+      icon: <CurrencyIcon type="gem" size="sm" />,
+      label: 'Đá quý thưởng',
+      value: `+${earnedGems ?? 0}`,
       highlight: 'text-cyan-300',
     },
     {
-      icon: <img src={assetUrl('/assets/roadmap/trophy-gold.png')} alt="Cúp" className="w-5 h-5 object-contain" />,
-      label: 'Chính xác',
+      icon: <CurrencyIcon type="trophy" size="sm" />,
+      label: 'Độ chính xác',
       value: `${accuracyPercent}%`,
       highlight: 'text-emerald-400',
     },
     {
-      icon: <img src={assetUrl('/assets/icons/streak-flame.png')} alt="Lửa" className="w-5 h-5 object-contain" />,
+      icon: <CurrencyIcon type="streak" size="sm" />,
       label: 'Chuỗi ngày',
       value: `${streak} ngày`,
       highlight: 'text-orange-400',
@@ -75,88 +76,115 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
           muted
           playsInline
           loop
-          className="w-full h-full object-cover opacity-40 mix-blend-screen pointer-events-none"
+          className="w-full h-full object-cover opacity-35 mix-blend-screen pointer-events-none"
         />
       </div>
 
-      {/* Celebration mascot with floating stars */}
+      {/* Victory Stage: Ambient Glow & 3D Trophy / Mascot Display */}
       <motion.div
-        initial={{ scale: 0, rotate: -20 }}
-        animate={{ scale: 1, rotate: 0 }}
-        transition={{ type: 'spring', stiffness: 300, damping: 15, delay: 0.2 }}
-        className="relative z-10"
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ type: 'spring', stiffness: 300, damping: 18, delay: 0.2 }}
+        className="relative z-10 flex items-center justify-center gap-3 my-2"
       >
-        <Mascot state="celebrating" size="xl" />
+        {/* Radial Gold Aura */}
+        <div className="absolute w-48 h-48 rounded-full bg-amber-500/15 blur-3xl pointer-events-none -z-10" />
+
+        <div className="relative">
+          <Mascot state="celebrating" size="xl" />
+        </div>
+
+        <motion.div
+          initial={{ y: 20, rotate: 10 }}
+          animate={{ y: 0, rotate: 0 }}
+          transition={{ type: 'spring', stiffness: 260, damping: 15, delay: 0.35 }}
+          className="relative -ml-4"
+        >
+          <img
+            src={assetUrl('/assets/roadmap/trophy-gold.png')}
+            alt="Victory Trophy"
+            className="w-20 h-20 object-contain filter drop-shadow-[0_8px_16px_rgba(245,158,11,0.5)] animate-bounce"
+            style={{ animationDuration: '2.5s' }}
+          />
+        </motion.div>
       </motion.div>
 
-      {/* Title */}
+      {/* Victory Title & Subtitle */}
       <motion.div
-        initial={{ y: 30, opacity: 0 }}
+        initial={{ y: 25, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.4 }}
-        className="mt-4 space-y-1 relative z-10"
+        transition={{ delay: 0.35 }}
+        className="space-y-1.5 relative z-10"
       >
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-300 text-[11px] font-black tracking-wider uppercase mb-1">
+          <Award className="w-3.5 h-3.5" />
+          <span>{isPractice ? 'Luyện tập xuất sắc' : 'Chinh phục chặng thành công'}</span>
+        </div>
+
         <h1 className="text-2xl sm:text-3xl font-black bg-gradient-to-r from-amber-300 via-yellow-200 to-cyan-300 bg-clip-text text-transparent tracking-tight">
-          {isPractice ? '🎯 Hoàn thành luyện tập!' : '🎉 Hoàn thành chặng!'}
+          {isPractice ? 'Hoàn thành phiên luyện tập!' : 'Xuất sắc vượt qua chặng!'}
         </h1>
-        <p className="text-xs sm:text-sm text-slate-300 font-bold">
+        <p className="text-xs sm:text-sm text-slate-300 font-medium max-w-md mx-auto">
           {isPractice
-            ? `Bạn đã luyện tập thành công (${correctCount}/${totalQuestions} câu đúng) và nhận thêm tim để học tiếp!`
+            ? `Bạn đã hoàn thành chính xác (${correctCount}/${totalQuestions} câu) và bổ sung thêm tim năng lượng!`
             : perfectRun
-            ? 'Xuất sắc tuyệt đối! Bạn không mất tim nào!'
-            : `Bạn đã trả lời đúng ${correctCount}/${totalQuestions} câu, tiếp tục phát huy nhé!`}
+            ? 'Tuyệt đỉnh! Bạn không phạm một lỗi sai nào trong suốt chặng học!'
+            : `Bạn đã trả lời đúng ${correctCount}/${totalQuestions} câu, tiếp tục giữ vững phong độ nhé!`}
         </p>
       </motion.div>
 
-      {/* Bonus badges */}
+      {/* Milestone Bonus Badges */}
       <motion.div
-        initial={{ y: 20, opacity: 0 }}
+        initial={{ y: 15, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.5 }}
-        className="flex flex-wrap justify-center gap-2 mt-4 relative z-10"
+        transition={{ delay: 0.45 }}
+        className="flex flex-wrap justify-center gap-2 mt-3 relative z-10"
       >
-        <div className="px-3.5 py-1.5 rounded-2xl bg-cyan-950/60 border border-cyan-700/60 text-cyan-300 text-xs font-black flex items-center gap-1.5 shadow-md">
-          <Sparkles className="w-4 h-4" />
-          +{GAMIFICATION.session.completeBonus} XP hoàn thành
+        <div className="px-3.5 py-1.5 rounded-2xl bg-[#18272f] border-2 border-cyan-500/40 text-cyan-300 text-xs font-black flex items-center gap-1.5 shadow-[0_2px_0_0_#131f24]">
+          <Sparkles className="w-4 h-4 text-cyan-400" />
+          <span>+{GAMIFICATION.session.completeBonus} XP hoàn thành</span>
         </div>
+
         {earnedGems !== undefined && earnedGems > 0 && (
-          <div className="px-3.5 py-1.5 rounded-2xl bg-cyan-950/70 border border-cyan-500/60 text-cyan-200 text-xs font-black flex items-center gap-1.5 shadow-md">
-            <img src={assetUrl('/assets/icons/gem-crystal.png')} alt="Gem" className="w-4 h-4 object-contain drop-shadow" />
-            +{earnedGems} Đá quý
+          <div className="px-3.5 py-1.5 rounded-2xl bg-[#18272f] border-2 border-cyan-400/50 text-cyan-200 text-xs font-black flex items-center gap-1.5 shadow-[0_2px_0_0_#131f24]">
+            <CurrencyIcon type="gem" size="xs" />
+            <span>+{earnedGems} Đá quý</span>
           </div>
         )}
+
         {isPractice && (recoveredHearts ?? 0) > 0 && (
-          <div className="px-3.5 py-1.5 rounded-2xl bg-rose-950/70 border border-rose-500/60 text-rose-300 text-xs font-black flex items-center gap-1.5 shadow-md">
-            <Heart className="w-4 h-4 fill-rose-500 text-rose-500 animate-pulse" />
-            +{recoveredHearts} Tim hồi phục
+          <div className="px-3.5 py-1.5 rounded-2xl bg-[#18272f] border-2 border-rose-500/40 text-rose-300 text-xs font-black flex items-center gap-1.5 shadow-[0_2px_0_0_#131f24]">
+            <CurrencyIcon type="heart" size="xs" animate />
+            <span>+{recoveredHearts} Tim hồi sinh</span>
           </div>
         )}
+
         {perfectRun && !isPractice && (
-          <div className="px-3.5 py-1.5 rounded-2xl bg-emerald-950/60 border border-emerald-700/60 text-emerald-300 text-xs font-black flex items-center gap-1.5 shadow-md">
-            <Heart className="w-4 h-4 fill-emerald-400 text-emerald-400" />
-            +{GAMIFICATION.session.perfectBonus} XP hoàn hảo
+          <div className="px-3.5 py-1.5 rounded-2xl bg-[#18272f] border-2 border-emerald-500/40 text-emerald-300 text-xs font-black flex items-center gap-1.5 shadow-[0_2px_0_0_#131f24]">
+            <CurrencyIcon type="heart" size="xs" />
+            <span>+{GAMIFICATION.session.perfectBonus} XP hoàn hảo</span>
           </div>
         )}
       </motion.div>
 
-      {/* Stats cards (3D chunky Duolingo style) */}
+      {/* 4 Metallic Merit Stat Cards */}
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.6 }}
-        className="grid grid-cols-2 gap-3 mt-6 w-full max-w-sm relative z-10"
+        transition={{ delay: 0.55 }}
+        className="grid grid-cols-2 gap-3 mt-5 w-full max-w-sm relative z-10"
       >
         {stats.map((stat, i) => (
           <motion.div
             key={stat.label}
-            initial={{ y: 20, opacity: 0 }}
+            initial={{ y: 15, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.7 + i * 0.1 }}
-            className="p-3.5 rounded-2xl bg-slate-900/90 border-2 border-slate-800 space-y-1.5 shadow-[0_4px_0_0_#1e293b]"
+            transition={{ delay: 0.65 + i * 0.08 }}
+            className="p-3.5 rounded-2xl bg-[#18272f] border-2 border-[#2e4756] hover:border-[#38bdf8]/50 space-y-1 shadow-[0_4px_0_0_#131f24] text-left transition-all"
           >
-            <div className="flex items-center gap-2 text-xs text-slate-400 font-bold">
+            <div className="flex items-center gap-1.5 text-xs text-slate-400 font-bold">
               {stat.icon}
-              {stat.label}
+              <span>{stat.label}</span>
             </div>
             <div className={`text-xl font-black ${stat.highlight}`}>
               {stat.value}
@@ -165,12 +193,12 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
         ))}
       </motion.div>
 
-      {/* Continue button */}
+      {/* Continue Button with 3D tactile push */}
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 1.1 }}
-        className="mt-8 w-full max-w-sm"
+        transition={{ delay: 0.95 }}
+        className="mt-7 w-full max-w-sm relative z-10"
       >
         <Button
           variant="success"
@@ -180,11 +208,13 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
             sound.playClick();
             onContinue();
           }}
+          className="shadow-[0_6px_0_0_#15803d] active:translate-y-1.5 active:shadow-[0_1px_0_0_#15803d] transition-all font-black text-base tracking-wider"
         >
-          TIẾP TỤC
+          TIẾP TỤC BÀI HỌC
           <ArrowRight className="w-5 h-5 ml-1" />
         </Button>
       </motion.div>
     </motion.div>
   );
 };
+

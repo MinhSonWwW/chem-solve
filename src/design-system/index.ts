@@ -25,4 +25,4 @@ export * from './components/answers';
 export * from './motion/presets';
 export * from './motion/useReducedMotion';
 export * from './components/ReactionVisualizer';
-
+export * from './components/CurrencyIcon';

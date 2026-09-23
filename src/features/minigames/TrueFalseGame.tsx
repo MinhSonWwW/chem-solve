@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Check, X, Info, BookOpen } from 'lucide-react';
+import { Check, X, Info, Sparkles, HelpCircle } from 'lucide-react';
 import { MinigameShell } from '@/design-system';
 import { sound } from '@/lib/audio';
 import { useUserStore } from '@/features/gamification/useUserStore';
@@ -89,19 +89,23 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       });
     }
 
-    setTimeout(() => {
-      setLastFeedback(null);
-      if (currentIndex + 1 >= roundStatements.length) {
-        finishGame(score + (isCorrect ? 20 + combo * 4 : 0));
-      } else {
-        setCurrentIndex((i) => i + 1);
-      }
-    }, isCorrect ? 900 : 1600);
+    setTimeout(
+      () => {
+        setLastFeedback(null);
+        if (currentIndex + 1 >= roundStatements.length) {
+          finishGame(score + (isCorrect ? 20 + combo * 4 : 0));
+        } else {
+          setCurrentIndex((i) => i + 1);
+        }
+      },
+      isCorrect ? 900 : 1600
+    );
   };
 
   return (
     <MinigameShell
-      title="Đúng hay Sai"
+      title="Đúng hay Sai — Kiểm định Hóa học"
+      description="Đánh giá tính chính xác của các nhận định hóa học"
       skillId="true-false"
       timeLeft={timeLeft}
       score={score}
@@ -121,32 +125,39 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       <div className="space-y-4">
         {/* Progress & topic header */}
         <div className="flex items-center justify-between text-xs px-1">
-          <span className="text-slate-400">
-            Câu {currentIndex + 1} / {roundStatements.length}
+          <span className="font-bold text-slate-400">
+            Câu <span className="text-cyan-400 font-black">{currentIndex + 1}</span> / {roundStatements.length}
           </span>
-          <span className="px-2.5 py-0.5 rounded-full bg-violet-950/70 border border-violet-700/60 text-violet-300 font-bold text-[11px]">
+          <span className="px-2.5 py-0.5 rounded-full bg-violet-950/80 border border-violet-700/60 text-violet-300 font-black text-[11px] flex items-center gap-1">
+            <Sparkles className="w-3 h-3 text-violet-400" />
             {currentItem?.topic}
           </span>
         </div>
 
         {/* Statement Display Card */}
-        <div className="min-h-[160px] flex items-center justify-center">
+        <div className="min-h-[170px] flex items-center justify-center">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentItem?.id || 'empty'}
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              className={`w-full p-5 rounded-3xl border-2 flex flex-col justify-between transition-colors min-h-[170px] ${
+              initial={{ scale: 0.9, opacity: 0, y: -10 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.9, opacity: 0, y: 10 }}
+              transition={{ type: 'spring', stiffness: 350, damping: 25 }}
+              className={`w-full p-5 rounded-3xl border-2 flex flex-col justify-between transition-all min-h-[180px] ${
                 lastFeedback
                   ? lastFeedback.correct
-                    ? 'border-[#00cd9c] bg-[#00cd9c]/15 shadow-[0_6px_0_0_#007a5d]'
-                    : 'border-[#ff4b4b] bg-[#ff4b4b]/15 shadow-[0_6px_0_0_#b32525]'
-                  : 'bg-[#18272f] border-[#2e4756] shadow-[0_6px_0_0_#131f24]'
+                    ? 'border-[#00cd9c] bg-gradient-to-b from-[#00cd9c]/20 to-[#122b24] shadow-[0_6px_0_0_#007a5d]'
+                    : 'border-[#ff4b4b] bg-gradient-to-b from-[#ff4b4b]/20 to-[#2b1414] shadow-[0_6px_0_0_#b32525]'
+                  : 'bg-gradient-to-b from-[#1c2c36] to-[#121c22] border-[#2e4756] shadow-[0_6px_0_0_#0c1419]'
               }`}
             >
-              <div className="flex items-start gap-2.5">
-                <BookOpen className="w-5 h-5 text-[#38bdf8] shrink-0 mt-0.5" />
+              <div>
+                <div className="flex items-center gap-2 mb-2 text-cyan-400">
+                  <HelpCircle className="w-4 h-4 shrink-0" />
+                  <span className="text-[10px] font-black uppercase tracking-widest">
+                    NHẬN ĐỊNH THÍ NGHIỆM
+                  </span>
+                </div>
                 <p className="text-base sm:text-lg font-bold text-slate-100 leading-snug">
                   {currentItem?.statement}
                 </p>
@@ -159,13 +170,13 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                   animate={{ opacity: 1, y: 0 }}
                   className={`mt-3 p-3 rounded-2xl border-2 text-xs leading-relaxed flex items-start gap-2 ${
                     lastFeedback.correct
-                      ? 'bg-[#00cd9c]/10 border-[#00cd9c]/40 text-[#00cd9c]'
-                      : 'bg-[#ff4b4b]/10 border-[#ff4b4b]/40 text-[#ff4b4b]'
+                      ? 'bg-[#00cd9c]/15 border-[#00cd9c]/40 text-[#00cd9c]'
+                      : 'bg-[#ff4b4b]/15 border-[#ff4b4b]/40 text-[#ff4b4b]'
                   }`}
                 >
                   <Info className="w-4 h-4 shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-bold">
+                    <span className="font-black">
                       {lastFeedback.correct ? 'Chính xác! ' : 'Chưa đúng! '}
                     </span>
                     {lastFeedback.explanation}
@@ -176,35 +187,36 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
           </AnimatePresence>
         </div>
 
-        {/* Binary Answer Buttons: ĐÚNG / SAI */}
-        <div className="grid grid-cols-2 gap-3 pt-2">
-          {/* Button ĐÚNG */}
+        {/* Binary Answer Buttons: Chunky 3D Arcade Controls */}
+        <div className="grid grid-cols-2 gap-3.5 pt-1">
+          {/* Button ĐÚNG - Chunky 3D Emerald Arcade Button */}
           <motion.button
-            whileTap={{ scale: 0.96 }}
+            whileTap={{ scale: 0.96, y: 4 }}
             disabled={!!lastFeedback}
             onClick={() => handleAnswer(true)}
-            className="py-5 px-4 rounded-2xl border-2 border-[#00cd9c] bg-[#00cd9c]/15 text-[#00cd9c] flex flex-col items-center justify-center gap-1.5 shadow-[0_5px_0_0_#007a5d] active:translate-y-1 active:shadow-none hover:bg-[#00cd9c]/25 transition-all font-black text-lg disabled:opacity-40 cursor-pointer"
+            className="py-4 px-4 rounded-3xl border-2 border-[#00cd9c] bg-gradient-to-b from-[#00cd9c]/30 to-[#00cd9c]/10 text-[#00cd9c] flex flex-col items-center justify-center gap-2 shadow-[0_6px_0_0_#007a5d] active:shadow-none hover:from-[#00cd9c]/40 hover:to-[#00cd9c]/15 transition-all font-black text-lg disabled:opacity-40 cursor-pointer group"
           >
-            <div className="w-9 h-9 rounded-full bg-[#00cd9c]/20 border border-[#00cd9c]/40 flex items-center justify-center">
-              <Check className="w-5 h-5 text-[#00cd9c] stroke-[3]" />
+            <div className="w-10 h-10 rounded-full bg-[#00cd9c]/25 border border-[#00cd9c]/60 flex items-center justify-center shadow-[0_2px_8px_rgba(0,205,156,0.3)] group-hover:scale-110 transition-transform">
+              <Check className="w-6 h-6 text-[#00cd9c] stroke-[3.5]" />
             </div>
-            ĐÚNG
+            <span className="tracking-wide">ĐÚNG</span>
           </motion.button>
 
-          {/* Button SAI */}
+          {/* Button SAI - Chunky 3D Ruby Arcade Button */}
           <motion.button
-            whileTap={{ scale: 0.96 }}
+            whileTap={{ scale: 0.96, y: 4 }}
             disabled={!!lastFeedback}
             onClick={() => handleAnswer(false)}
-            className="py-5 px-4 rounded-2xl border-2 border-[#ff4b4b] bg-[#ff4b4b]/15 text-[#ff4b4b] flex flex-col items-center justify-center gap-1.5 shadow-[0_5px_0_0_#b32525] active:translate-y-1 active:shadow-none hover:bg-[#ff4b4b]/25 transition-all font-black text-lg disabled:opacity-40 cursor-pointer"
+            className="py-4 px-4 rounded-3xl border-2 border-[#ff4b4b] bg-gradient-to-b from-[#ff4b4b]/30 to-[#ff4b4b]/10 text-[#ff4b4b] flex flex-col items-center justify-center gap-2 shadow-[0_6px_0_0_#b32525] active:shadow-none hover:from-[#ff4b4b]/40 hover:to-[#ff4b4b]/15 transition-all font-black text-lg disabled:opacity-40 cursor-pointer group"
           >
-            <div className="w-9 h-9 rounded-full bg-[#ff4b4b]/20 border border-[#ff4b4b]/40 flex items-center justify-center">
-              <X className="w-5 h-5 text-[#ff4b4b] stroke-[3]" />
+            <div className="w-10 h-10 rounded-full bg-[#ff4b4b]/25 border border-[#ff4b4b]/60 flex items-center justify-center shadow-[0_2px_8px_rgba(255,75,75,0.3)] group-hover:scale-110 transition-transform">
+              <X className="w-6 h-6 text-[#ff4b4b] stroke-[3.5]" />
             </div>
-            SAI
+            <span className="tracking-wide">SAI</span>
           </motion.button>
         </div>
       </div>
     </MinigameShell>
   );
 };
+

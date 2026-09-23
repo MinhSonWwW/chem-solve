@@ -4,7 +4,6 @@ import {
   Calendar,
   ArrowRight,
   CheckCircle2,
-  Trophy,
   Check,
   X,
   RotateCcw,
@@ -12,7 +11,7 @@ import {
   Flame,
 } from 'lucide-react';
 import { useUserStore } from '@/features/gamification/useUserStore';
-import { Button, Streak } from '@/design-system';
+import { Button, Streak, CurrencyIcon } from '@/design-system';
 import { sound } from '@/lib/audio';
 import trueFalseData from '@/content/kb/true-false-statements.json';
 
@@ -103,8 +102,15 @@ export const DailyPage: React.FC = () => {
           <Calendar className="w-5 h-5 text-[#ff9600]" />
           Thử thách hàng ngày
         </h1>
-        <p className="text-xs text-slate-400 mt-1">
-          Hoàn thành 5 câu mỗi ngày để nhận +30 XP và duy trì ngọn lửa streak
+        <p className="text-xs text-slate-400 mt-1 flex items-center gap-1.5 flex-wrap">
+          Hoàn thành 5 câu mỗi ngày để nhận
+          <span className="inline-flex items-center gap-1 font-bold text-cyan-300">
+            <CurrencyIcon type="xp" size="xs" /> +30 XP
+          </span>
+          và duy trì ngọn lửa chuỗi
+          <span className="inline-flex items-center gap-1 font-bold text-amber-400">
+            <CurrencyIcon type="streak" size="xs" /> Streak
+          </span>
         </p>
       </div>
 
@@ -125,17 +131,20 @@ export const DailyPage: React.FC = () => {
             <h2 className="text-base font-extrabold text-slate-100">
               Chủ đề hôm nay: Thử thách Hóa học tổng hợp
             </h2>
-            <p className="text-xs text-slate-400 mt-0.5">
-              Phần thưởng:{' '}
-              <span className="text-[#38bdf8] font-bold">+30 XP</span> & thắp sáng ngọn lửa Streak
-            </p>
+            <div className="flex items-center gap-1.5 text-xs text-slate-400 mt-1">
+              <span>Phần thưởng:</span>
+              <span className="text-[#38bdf8] font-bold flex items-center gap-1">
+                <CurrencyIcon type="xp" size="xs" /> +30 XP
+              </span>
+              <span>& thắp sáng ngọn lửa Streak</span>
+            </div>
           </div>
 
           {alreadyCompleted ? (
             <div className="p-3.5 rounded-2xl bg-[#00cd9c]/10 border-2 border-[#00cd9c]/40 flex items-center justify-between">
               <div className="flex items-center gap-2 text-[#00cd9c] font-bold text-xs">
                 <CheckCircle2 className="w-4 h-4" />
-                Bạn đã hoàn thành thử thách hôm nay! (+30 XP)
+                <span>Bạn đã hoàn thành thử thách hôm nay! (+30 XP)</span>
               </div>
               <Button variant="ghost" size="sm" onClick={startDaily}>
                 <RotateCcw className="w-3.5 h-3.5 mr-1" /> Làm lại
@@ -168,9 +177,9 @@ export const DailyPage: React.FC = () => {
           </div>
 
           {/* Progress bar */}
-          <div className="w-full bg-[#131f24] h-2 rounded-full overflow-hidden border border-[#2e4756]">
+          <div className="w-full bg-[#131f24] h-2.5 rounded-full overflow-hidden border border-[#2e4756]">
             <div
-              className="bg-[#0ea5e9] h-full transition-all duration-300"
+              className="bg-gradient-to-r from-cyan-500 to-blue-500 h-full transition-all duration-300 rounded-full"
               style={{ width: `${((currentQIndex + 1) / 5) * 100}%` }}
             />
           </div>
@@ -197,23 +206,23 @@ export const DailyPage: React.FC = () => {
             )}
           </div>
 
-          {/* Buttons: ĐÚNG / SAI */}
+          {/* Buttons: Chunky 3D ĐÚNG / SAI */}
           <div className="grid grid-cols-2 gap-3">
             <motion.button
-              whileTap={{ scale: 0.96 }}
+              whileTap={{ scale: 0.96, y: 3 }}
               disabled={selectedAns !== null}
               onClick={() => handleAnswer(true)}
-              className="py-3.5 rounded-2xl border-2 border-[#00cd9c] bg-[#00cd9c]/15 text-[#00cd9c] font-black flex items-center justify-center gap-1.5 shadow-[0_4px_0_0_#007a5d] active:translate-y-1 active:shadow-none hover:bg-[#00cd9c]/25 transition disabled:opacity-40 cursor-pointer"
+              className="py-3.5 rounded-2xl border-2 border-[#00cd9c] bg-gradient-to-b from-[#00cd9c]/25 to-[#00cd9c]/10 text-[#00cd9c] font-black flex items-center justify-center gap-2 shadow-[0_4px_0_0_#007a5d] active:shadow-none hover:bg-[#00cd9c]/30 transition disabled:opacity-40 cursor-pointer text-base"
             >
-              <Check className="w-4 h-4 stroke-[3]" /> ĐÚNG
+              <Check className="w-5 h-5 stroke-[3]" /> ĐÚNG
             </motion.button>
             <motion.button
-              whileTap={{ scale: 0.96 }}
+              whileTap={{ scale: 0.96, y: 3 }}
               disabled={selectedAns !== null}
               onClick={() => handleAnswer(false)}
-              className="py-3.5 rounded-2xl border-2 border-[#ff4b4b] bg-[#ff4b4b]/15 text-[#ff4b4b] font-black flex items-center justify-center gap-1.5 shadow-[0_4px_0_0_#b32525] active:translate-y-1 active:shadow-none hover:bg-[#ff4b4b]/25 transition disabled:opacity-40 cursor-pointer"
+              className="py-3.5 rounded-2xl border-2 border-[#ff4b4b] bg-gradient-to-b from-[#ff4b4b]/25 to-[#ff4b4b]/10 text-[#ff4b4b] font-black flex items-center justify-center gap-2 shadow-[0_4px_0_0_#b32525] active:shadow-none hover:bg-[#ff4b4b]/30 transition disabled:opacity-40 cursor-pointer text-base"
             >
-              <X className="w-4 h-4 stroke-[3]" /> SAI
+              <X className="w-5 h-5 stroke-[3]" /> SAI
             </motion.button>
           </div>
         </div>
@@ -224,15 +233,20 @@ export const DailyPage: React.FC = () => {
         <motion.div
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          className="p-5 rounded-3xl bg-[#18272f] border-2 border-[#ffc800] shadow-[0_4px_0_0_#b38b00] text-center space-y-3"
+          className="p-5 rounded-3xl bg-[#18272f] border-2 border-[#ffc800] shadow-[0_6px_0_0_#b38b00] text-center space-y-3"
         >
-          <Trophy className="w-10 h-10 text-[#ffc800] mx-auto animate-bounce" />
+          <div className="flex justify-center">
+            <CurrencyIcon type="trophy" size="lg" className="animate-bounce" />
+          </div>
           <h2 className="text-lg font-black text-slate-100">
             Hoàn thành Thử thách Hôm nay!
           </h2>
           <p className="text-xs text-slate-300">
             Bạn đạt <span className="text-[#38bdf8] font-black">{score}/5 câu đúng</span>. Nhận ngay{' '}
-            <span className="text-[#ffc800] font-black">+30 XP</span> và kéo dài chuỗi streak!
+            <span className="text-[#ffc800] font-black inline-flex items-center gap-1">
+              <CurrencyIcon type="xp" size="xs" /> +30 XP
+            </span>{' '}
+            và kéo dài chuỗi streak!
           </p>
         </motion.div>
       )}
@@ -268,3 +282,4 @@ export const DailyPage: React.FC = () => {
     </div>
   );
 };
+

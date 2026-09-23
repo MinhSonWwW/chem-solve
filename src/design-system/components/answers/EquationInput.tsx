@@ -134,17 +134,17 @@ export const EquationInput: React.FC<EquationInputProps> = ({
           {/* Reactants */}
           {reactants.map((reactant, i) => (
             <React.Fragment key={`r-${i}`}>
-              {i > 0 && <span className="text-xl font-bold text-slate-500">+</span>}
-              <div className="flex items-center gap-1.5 bg-slate-800/80 px-2 py-1.5 rounded-xl border border-slate-700/80 shadow-inner">
+              {i > 0 && <span className="text-xl font-black text-slate-500 select-none">+</span>}
+              <div className="flex items-center gap-2 bg-[#18272f] px-2.5 py-2 rounded-2xl border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24]">
                 {/* Stepper controls */}
-                <div className="flex items-center bg-slate-950 rounded-lg p-0.5 border border-slate-700">
+                <div className="flex items-center bg-[#131f24] rounded-xl p-1 border border-[#2e4756] gap-1 shadow-inner">
                   <button
                     type="button"
                     disabled={disabled || currentCoeffs[i] <= 1}
                     onClick={() => updateCoeff(i, -1)}
-                    className="w-7 h-7 flex items-center justify-center rounded-md bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer"
+                    className="w-7 h-7 flex items-center justify-center rounded-lg bg-[#20333d] hover:bg-[#283f4b] text-slate-200 border border-[#3b596a] shadow-[0_2px_0_0_#0f171e] active:shadow-none active:translate-y-[1px] disabled:opacity-30 disabled:cursor-not-allowed transition-all cursor-pointer"
                   >
-                    <Minus className="w-3.5 h-3.5" />
+                    <Minus className="w-3.5 h-3.5 stroke-[2.5]" />
                   </button>
                   <input
                     type="number"
@@ -153,34 +153,38 @@ export const EquationInput: React.FC<EquationInputProps> = ({
                     disabled={disabled}
                     value={currentCoeffs[i]}
                     onChange={(e) => setDirectCoeff(i, e.target.value)}
-                    className="w-8 text-center bg-transparent font-bold text-amber-400 text-base focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                    className="w-7 text-center bg-transparent font-black text-amber-400 text-base focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                   />
                   <button
                     type="button"
                     disabled={disabled || currentCoeffs[i] >= 20}
                     onClick={() => updateCoeff(i, 1)}
-                    className="w-7 h-7 flex items-center justify-center rounded-md bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer"
+                    className="w-7 h-7 flex items-center justify-center rounded-lg bg-[#20333d] hover:bg-[#283f4b] text-slate-200 border border-[#3b596a] shadow-[0_2px_0_0_#0f171e] active:shadow-none active:translate-y-[1px] disabled:opacity-30 disabled:cursor-not-allowed transition-all cursor-pointer"
                   >
-                    <Plus className="w-3.5 h-3.5" />
+                    <Plus className="w-3.5 h-3.5 stroke-[2.5]" />
                   </button>
                 </div>
-                <div className="text-lg font-bold px-1 text-cyan-300">
+                <div className="text-base sm:text-lg font-black px-1 text-cyan-300">
                   <Formula formula={reactant} />
                 </div>
               </div>
             </React.Fragment>
           ))}
 
-          {/* Arrow */}
+          {/* Reaction Arrow with condition badge */}
           <div className="flex flex-col items-center px-1 text-amber-400">
-            {condition && (
-              <span className="text-[10px] font-bold text-amber-300 tracking-tighter mb-0.5">
+            {condition ? (
+              <span className="text-[10px] font-black text-amber-300 tracking-tighter mb-0.5 px-1.5 py-0.5 rounded bg-amber-950/80 border border-amber-600/50 shadow-sm">
                 {condition}
               </span>
+            ) : (
+              <span className="text-[10px] font-black text-amber-400/70 tracking-tighter mb-0.5">
+                t°
+              </span>
             )}
-            <div className="flex items-center gap-0.5">
-              <span className="h-0.5 w-5 bg-amber-400"></span>
-              <ArrowRight className="w-5 h-5 -ml-1.5" />
+            <div className="flex items-center">
+              <span className="h-0.5 w-6 bg-gradient-to-r from-amber-400 to-amber-300 rounded"></span>
+              <ArrowRight className="w-5 h-5 -ml-1.5 text-amber-300" />
             </div>
           </div>
 
@@ -189,17 +193,17 @@ export const EquationInput: React.FC<EquationInputProps> = ({
             const idx = reactants.length + j;
             return (
               <React.Fragment key={`p-${j}`}>
-                {j > 0 && <span className="text-xl font-bold text-slate-500">+</span>}
-                <div className="flex items-center gap-1.5 bg-slate-800/80 px-2 py-1.5 rounded-xl border border-slate-700/80 shadow-inner">
+                {j > 0 && <span className="text-xl font-black text-slate-500 select-none">+</span>}
+                <div className="flex items-center gap-2 bg-[#18272f] px-2.5 py-2 rounded-2xl border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24]">
                   {/* Stepper controls */}
-                  <div className="flex items-center bg-slate-950 rounded-lg p-0.5 border border-slate-700">
+                  <div className="flex items-center bg-[#131f24] rounded-xl p-1 border border-[#2e4756] gap-1 shadow-inner">
                     <button
                       type="button"
                       disabled={disabled || currentCoeffs[idx] <= 1}
                       onClick={() => updateCoeff(idx, -1)}
-                      className="w-7 h-7 flex items-center justify-center rounded-md bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer"
+                      className="w-7 h-7 flex items-center justify-center rounded-lg bg-[#20333d] hover:bg-[#283f4b] text-slate-200 border border-[#3b596a] shadow-[0_2px_0_0_#0f171e] active:shadow-none active:translate-y-[1px] disabled:opacity-30 disabled:cursor-not-allowed transition-all cursor-pointer"
                     >
-                      <Minus className="w-3.5 h-3.5" />
+                      <Minus className="w-3.5 h-3.5 stroke-[2.5]" />
                     </button>
                     <input
                       type="number"
@@ -208,18 +212,18 @@ export const EquationInput: React.FC<EquationInputProps> = ({
                       disabled={disabled}
                       value={currentCoeffs[idx]}
                       onChange={(e) => setDirectCoeff(idx, e.target.value)}
-                      className="w-8 text-center bg-transparent font-bold text-amber-400 text-base focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                      className="w-7 text-center bg-transparent font-black text-amber-400 text-base focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                     />
                     <button
                       type="button"
                       disabled={disabled || currentCoeffs[idx] >= 20}
                       onClick={() => updateCoeff(idx, 1)}
-                      className="w-7 h-7 flex items-center justify-center rounded-md bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer"
+                      className="w-7 h-7 flex items-center justify-center rounded-lg bg-[#20333d] hover:bg-[#283f4b] text-slate-200 border border-[#3b596a] shadow-[0_2px_0_0_#0f171e] active:shadow-none active:translate-y-[1px] disabled:opacity-30 disabled:cursor-not-allowed transition-all cursor-pointer"
                     >
-                      <Plus className="w-3.5 h-3.5" />
+                      <Plus className="w-3.5 h-3.5 stroke-[2.5]" />
                     </button>
                   </div>
-                  <div className="text-lg font-bold px-1 text-emerald-300">
+                  <div className="text-base sm:text-lg font-black px-1 text-emerald-300">
                     <Formula formula={product} />
                   </div>
                 </div>
@@ -229,10 +233,12 @@ export const EquationInput: React.FC<EquationInputProps> = ({
         </div>
       </div>
 
-      {/* Real-time Atom Balance Indicator */}
+      {/* Real-time Atom Balance Indicator - Spectrometer Style */}
       {balanceInfo && elements.length > 0 && (
-        <div className="flex flex-wrap items-center justify-center gap-2 p-2.5 rounded-xl bg-slate-900/60 border border-slate-800 text-xs">
-          <span className="text-slate-400 font-semibold mr-1">Số nguyên tử hai vế:</span>
+        <div className="flex flex-wrap items-center justify-center gap-2 p-3 rounded-2xl bg-[#131f24] border-2 border-[#2e4756] text-xs shadow-inner">
+          <span className="text-slate-400 font-bold mr-1 uppercase text-[11px] tracking-wider">
+            Cân bằng nguyên tử:
+          </span>
           {elements.map((elem) => {
             const left = balanceInfo.leftAtoms[elem] || 0;
             const right = balanceInfo.rightAtoms[elem] || 0;
@@ -240,10 +246,10 @@ export const EquationInput: React.FC<EquationInputProps> = ({
             return (
               <span
                 key={elem}
-                className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-mono font-bold transition-all ${
+                className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-xl font-mono font-black transition-all ${
                   isMatch
-                    ? 'bg-emerald-950/60 text-emerald-300 border border-emerald-800/60'
-                    : 'bg-amber-950/60 text-amber-300 border border-amber-800/60'
+                    ? 'bg-emerald-950/70 text-emerald-300 border border-emerald-500/50 shadow-[0_0_10px_rgba(16,185,129,0.2)]'
+                    : 'bg-amber-950/70 text-amber-300 border border-amber-500/50 shadow-[0_0_10px_rgba(245,158,11,0.2)]'
                 }`}
               >
                 <span>{elem}:</span>
@@ -251,9 +257,9 @@ export const EquationInput: React.FC<EquationInputProps> = ({
                   {left} {isMatch ? '=' : '≠'} {right}
                 </span>
                 {isMatch ? (
-                  <Check className="w-3 h-3 text-emerald-400" />
+                  <Check className="w-3.5 h-3.5 text-emerald-400 stroke-[3]" />
                 ) : (
-                  <AlertCircle className="w-3 h-3 text-amber-400" />
+                  <AlertCircle className="w-3.5 h-3.5 text-amber-400 stroke-[2.5]" />
                 )}
               </span>
             );
