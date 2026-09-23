@@ -1,10 +1,51 @@
 import React, { useRef, useState } from 'react';
-import { Award, Volume2, VolumeX, Eye, Download, Upload, Target, CheckCircle2, AlertCircle } from 'lucide-react';
+import {
+  Award,
+  Volume2,
+  VolumeX,
+  Eye,
+  Download,
+  Upload,
+  Target,
+  CheckCircle2,
+  AlertCircle,
+  Rocket,
+  Gem,
+  Scale,
+  Flame,
+  Zap,
+  FlaskConical,
+  Crown,
+  Sliders,
+} from 'lucide-react';
 import { useUserStore } from '@/features/gamification/useUserStore';
-import { Button, Card, Streak, XPBadge, Heart, GemBadge } from '@/design-system';
+import { Button, Streak, XPBadge, Heart, GemBadge, Mascot, type MascotState } from '@/design-system';
 import { ACHIEVEMENTS } from '@/config/achievements';
 import { getLevelInfo, GAMIFICATION } from '@/config/gamification';
 import { sound } from '@/lib/audio';
+
+const ACHIEVEMENT_ICONS: Record<
+  string,
+  { icon: React.ElementType; color: string; bg: string; border: string }
+> = {
+  'first-lesson': { icon: Rocket, color: 'text-[#38bdf8]', bg: 'bg-[#0ea5e9]/15', border: 'border-[#0ea5e9]/30' },
+  'perfect-run': { icon: Gem, color: 'text-[#00cd9c]', bg: 'bg-[#00cd9c]/15', border: 'border-[#00cd9c]/30' },
+  'mol-warrior': { icon: Scale, color: 'text-[#ce82ff]', bg: 'bg-[#ce82ff]/15', border: 'border-[#ce82ff]/30' },
+  'combo-master': { icon: Flame, color: 'text-[#ff9600]', bg: 'bg-[#ff9600]/15', border: 'border-[#ff9600]/30' },
+  'streak-3': { icon: Zap, color: 'text-[#ff9600]', bg: 'bg-[#ff9600]/15', border: 'border-[#ff9600]/30' },
+  'equation-hunter': { icon: Target, color: 'text-[#ff4b4b]', bg: 'bg-[#ff4b4b]/15', border: 'border-[#ff4b4b]/30' },
+  'acid-base-expert': { icon: FlaskConical, color: 'text-[#38bdf8]', bg: 'bg-[#0ea5e9]/15', border: 'border-[#0ea5e9]/30' },
+  'level-5': { icon: Crown, color: 'text-[#ffc800]', bg: 'bg-[#ffc800]/15', border: 'border-[#ffc800]/30' },
+};
+
+const AVATAR_STATES: { state: MascotState; label: string }[] = [
+  { state: 'happy', label: 'Vui vẻ' },
+  { state: 'cheering', label: 'Cổ vũ' },
+  { state: 'celebrating', label: 'Ăn mừng' },
+  { state: 'thinking', label: 'Suy nghĩ' },
+  { state: 'surprised', label: 'Kinh ngạc' },
+  { state: 'idle', label: 'Tập trung' },
+];
 
 export const ProfilePage: React.FC = () => {
   const {
@@ -24,6 +65,7 @@ export const ProfilePage: React.FC = () => {
 
   const [reducedMotion, setReducedMotion] = useState(false);
   const [importStatus, setImportStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [avatarState, setAvatarState] = useState<MascotState>('happy');
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const levelInfo = getLevelInfo(xp);
@@ -64,19 +106,16 @@ export const ProfilePage: React.FC = () => {
     }
   };
 
-  const [avatar, setAvatar] = useState('🧪');
-  const AVATARS = ['🧪', '⚗️', '🔬', '🧬', '⚛️', '🔥'];
-
   return (
     <div className="space-y-5 pb-8">
       {/* 1. Profile Header */}
-      <Card className="bg-gradient-to-br from-cyan-950/50 via-slate-900 to-slate-900 border-cyan-800/40 space-y-3">
+      <div className="p-5 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] space-y-4">
         <div className="flex items-center gap-4">
-          <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-3xl shadow-[0_4px_0_0_#0891b2] shrink-0">
-            {avatar}
+          <div className="w-16 h-16 rounded-2xl bg-[#131f24] border-2 border-[#0ea5e9]/40 shadow-[0_4px_0_0_#0284c7] flex items-center justify-center overflow-hidden shrink-0 p-1">
+            <Mascot state={avatarState} size="sm" interactive={false} />
           </div>
           <div className="flex-1 min-w-0">
-            <div className="inline-block px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 font-extrabold text-[10px] uppercase tracking-wider mb-1 border border-cyan-500/30">
+            <div className="inline-block px-2.5 py-0.5 rounded-full bg-[#0ea5e9]/15 text-[#38bdf8] font-extrabold text-[10px] uppercase tracking-wider mb-1 border border-[#0ea5e9]/30">
               Cấp {levelInfo.level} · Nhà Hóa Học Chem-Solve
             </div>
             <h1 className="text-lg font-black text-slate-100 truncate">Học viên xuất sắc</h1>
@@ -85,66 +124,67 @@ export const ProfilePage: React.FC = () => {
               <XPBadge amount={xp} />
               <GemBadge amount={gems} />
               <Heart count={hearts} max={GAMIFICATION.hearts.max} />
-              <span className="inline-flex items-center gap-1 text-slate-300 font-black text-xs bg-slate-800/80 border border-slate-700/80 px-2.5 py-1 rounded-full shadow-[0_2px_0_0_#1e293b]">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+              <span className="inline-flex items-center gap-1.5 text-slate-300 font-black text-xs bg-[#131f24] border-2 border-[#2e4756] px-2.5 py-1 rounded-full shadow-[0_2px_0_0_#131f24]">
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#00cd9c]" />
                 <span>{totalCompletedCount} chặng đã qua</span>
               </span>
             </div>
           </div>
         </div>
 
-        {/* Quick Avatar Selector */}
-        <div className="pt-2 border-t border-slate-800/80 flex items-center justify-between">
-          <span className="text-[11px] font-bold text-slate-400">Chọn huy hiệu đại diện:</span>
-          <div className="flex gap-1.5">
-            {AVATARS.map((emoji) => (
+        {/* Mascot Avatar Mood Selector */}
+        <div className="pt-3 border-t border-[#2e4756] flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <span className="text-[11px] font-bold text-slate-400">Tâm trạng Mascot đại diện:</span>
+          <div className="flex gap-1.5 overflow-x-auto pb-0.5">
+            {AVATAR_STATES.map(({ state, label }) => (
               <button
-                key={emoji}
+                key={state}
                 onClick={() => {
                   sound.playClick();
-                  setAvatar(emoji);
+                  setAvatarState(state);
                 }}
-                className={`w-8 h-8 rounded-xl flex items-center justify-center text-base transition-all cursor-pointer border ${
-                  avatar === emoji
-                    ? 'bg-cyan-500/30 border-cyan-400 scale-110'
-                    : 'bg-slate-950/50 border-slate-800 hover:border-slate-700'
+                className={`px-2.5 py-1 rounded-xl flex items-center gap-1.5 text-xs font-bold transition-all cursor-pointer border-2 ${
+                  avatarState === state
+                    ? 'bg-[#0ea5e9]/20 border-[#38bdf8] text-[#38bdf8] shadow-[0_2px_0_0_#0284c7]'
+                    : 'bg-[#131f24] border-[#2e4756] text-slate-400 hover:text-slate-200'
                 }`}
+                title={label}
               >
-                {emoji}
+                <span>{label}</span>
               </button>
             ))}
           </div>
         </div>
-      </Card>
+      </div>
 
       {/* 2. Level Progress */}
-      <Card className="space-y-2">
+      <div className="p-4 rounded-2xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] space-y-2">
         <div className="flex justify-between text-xs font-bold">
           <span className="text-slate-300">
             Tiến độ lên Cấp {levelInfo.level + 1}
           </span>
-          <span className="text-cyan-400">
+          <span className="text-[#38bdf8]">
             {levelInfo.currentLevelXp}/{levelInfo.nextLevelXp} XP
           </span>
         </div>
-        <div className="w-full bg-slate-950 h-3.5 rounded-full overflow-hidden border border-slate-800">
+        <div className="w-full bg-[#131f24] h-3.5 rounded-full overflow-hidden border border-[#2e4756]">
           <div
-            className="bg-gradient-to-r from-cyan-500 to-blue-500 h-full rounded-full transition-all duration-700 relative"
+            className="bg-gradient-to-r from-[#0ea5e9] to-[#00cd9c] h-full rounded-full transition-all duration-700 relative"
             style={{ width: `${Math.max(5, levelInfo.progressPercent)}%` }}
           >
             <div className="absolute top-0 left-0 right-0 h-[2px] bg-white/40 rounded-full" />
           </div>
         </div>
-      </Card>
+      </div>
 
       {/* 3. Daily Goal Setting */}
-      <Card className="space-y-3">
+      <div className="p-4 rounded-2xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] space-y-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2 text-xs font-black text-slate-200">
-            <Target className="w-4 h-4 text-amber-400" />
+            <Target className="w-4 h-4 text-[#ff9600]" />
             <span>Mục tiêu học mỗi ngày</span>
           </div>
-          <span className="text-xs font-bold text-amber-400 font-mono">
+          <span className="text-xs font-bold text-[#ff9600] font-mono">
             {dailyGoal} XP / ngày
           </span>
         </div>
@@ -156,46 +196,61 @@ export const ProfilePage: React.FC = () => {
                 sound.playClick();
                 setDailyGoal(g);
               }}
-              className={`py-2 rounded-xl text-xs font-black border transition-all cursor-pointer ${
+              className={`py-2 rounded-xl text-xs font-black border-2 transition-all cursor-pointer ${
                 dailyGoal === g
-                  ? 'bg-amber-500/20 text-amber-300 border-amber-500/60 shadow-sm'
-                  : 'bg-slate-950/60 text-slate-400 border-slate-800 hover:text-slate-200'
+                  ? 'bg-[#ff9600]/20 text-[#ff9600] border-[#ff9600] shadow-[0_3px_0_0_#b36b00]'
+                  : 'bg-[#131f24] text-slate-400 border-[#2e4756] hover:text-slate-200'
               }`}
             >
               {g} XP
             </button>
           ))}
         </div>
-      </Card>
+      </div>
 
       {/* 4. Achievements Grid */}
       <div className="space-y-3">
         <div className="flex items-center justify-between px-1">
           <h2 className="text-xs font-extrabold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
-            <Award className="w-4 h-4 text-amber-400" />
+            <Award className="w-4 h-4 text-[#ffc800]" />
             Thành tựu Hóa học ({ACHIEVEMENTS.filter((a) => (achievements[a.id] ?? 0) >= a.maxProgress).length}/{ACHIEVEMENTS.length})
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 gap-2.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {ACHIEVEMENTS.map((ach) => {
             const currentProgress = achievements[ach.id] ?? 0;
             const isUnlocked = currentProgress >= ach.maxProgress;
             const percent = Math.min(100, Math.round((currentProgress / ach.maxProgress) * 100));
+            const achConfig = ACHIEVEMENT_ICONS[ach.id] || {
+              icon: Award,
+              color: 'text-[#ffc800]',
+              bg: 'bg-[#ffc800]/15',
+              border: 'border-[#ffc800]/30',
+            };
+            const AchIcon = achConfig.icon;
 
             return (
               <div
                 key={ach.id}
-                className={`p-3 rounded-2xl border flex flex-col justify-between gap-2 transition-all ${
+                className={`p-3.5 rounded-2xl border-2 flex flex-col justify-between gap-2.5 transition-all shadow-[0_3px_0_0_#131f24] ${
                   isUnlocked
-                    ? 'bg-slate-900 border-amber-500/50 shadow-[0_3px_0_0_#b45309]'
-                    : 'bg-slate-950/40 border-slate-900 opacity-60'
+                    ? 'bg-[#18272f] border-[#ffc800]/50'
+                    : 'bg-[#18272f]/60 border-[#2e4756] opacity-75'
                 }`}
               >
                 <div className="flex items-start justify-between">
-                  <span className="text-2xl">{ach.icon}</span>
+                  <div
+                    className={`w-10 h-10 rounded-xl flex items-center justify-center border-2 ${
+                      isUnlocked
+                        ? `${achConfig.bg} ${achConfig.border} ${achConfig.color}`
+                        : 'bg-[#131f24] border-[#2e4756] text-slate-500'
+                    }`}
+                  >
+                    <AchIcon className="w-5 h-5" />
+                  </div>
                   {isUnlocked && (
-                    <span className="text-[10px] font-black text-amber-300 bg-amber-500/20 border border-amber-500/40 px-1.5 py-0.2 rounded-md">
+                    <span className="text-[10px] font-black text-[#ffc800] bg-[#ffc800]/15 border border-[#ffc800]/30 px-2 py-0.5 rounded-md">
                       ✓ Đạt
                     </span>
                   )}
@@ -214,17 +269,17 @@ export const ProfilePage: React.FC = () => {
                 <div className="space-y-1 mt-1">
                   <div className="flex justify-between text-[10px] font-bold">
                     <span className="text-slate-400">Tiến độ</span>
-                    <span className={isUnlocked ? 'text-amber-400 font-black' : 'text-slate-400'}>
+                    <span className={isUnlocked ? 'text-[#ffc800] font-black' : 'text-slate-400'}>
                       {currentProgress}/{ach.maxProgress} ({percent}%)
                     </span>
                   </div>
-                  <div className="w-full bg-slate-950 h-2 rounded-full overflow-hidden border border-slate-800">
+                  <div className="w-full bg-[#131f24] h-2 rounded-full overflow-hidden border border-[#2e4756]">
                     <div
                       className={`h-full rounded-full transition-all duration-500 ${
                         isUnlocked
-                          ? 'bg-gradient-to-r from-amber-500 to-amber-300 shadow-[0_0_8px_rgba(245,158,11,0.6)]'
+                          ? 'bg-gradient-to-r from-[#ffc800] to-[#ff9600]'
                           : percent > 0
-                          ? 'bg-gradient-to-r from-cyan-600 to-cyan-400'
+                          ? 'bg-gradient-to-r from-[#0ea5e9] to-[#00cd9c]'
                           : 'bg-slate-800'
                       }`}
                       style={{ width: `${percent}%` }}
@@ -239,15 +294,16 @@ export const ProfilePage: React.FC = () => {
 
       {/* 5. Settings & Data Export / Import */}
       <div className="space-y-3">
-        <h2 className="text-xs font-extrabold uppercase tracking-wider text-slate-400 px-1">
-          Cài đặt & Sao lưu tiến độ
+        <h2 className="text-xs font-extrabold uppercase tracking-wider text-slate-400 px-1 flex items-center gap-1.5">
+          <Sliders className="w-4 h-4 text-cyan-400" />
+          Cài đặt & Dữ liệu
         </h2>
-        <div className="bg-slate-900 border border-slate-800 rounded-2xl divide-y divide-slate-800">
+        <div className="bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] rounded-2xl divide-y divide-[#2e4756]">
           {/* Sound toggle */}
           <div className="p-3.5 flex items-center justify-between">
             <div className="flex items-center gap-2.5">
               {soundEnabled ? (
-                <Volume2 className="w-4 h-4 text-cyan-400" />
+                <Volume2 className="w-4 h-4 text-[#38bdf8]" />
               ) : (
                 <VolumeX className="w-4 h-4 text-slate-500" />
               )}
@@ -260,12 +316,12 @@ export const ProfilePage: React.FC = () => {
                 sound.playClick();
                 toggleSound();
               }}
-              className={`w-12 h-6 rounded-full transition-colors relative cursor-pointer border ${
-                soundEnabled ? 'bg-cyan-500 border-cyan-400' : 'bg-slate-800 border-slate-700'
+              className={`w-12 h-6 rounded-full transition-colors relative cursor-pointer border-2 ${
+                soundEnabled ? 'bg-[#0ea5e9] border-[#38bdf8]' : 'bg-[#131f24] border-[#2e4756]'
               }`}
             >
               <div
-                className={`w-4 h-4 rounded-full bg-slate-950 absolute top-0.5 transition-all ${
+                className={`w-4 h-4 rounded-full bg-slate-100 absolute top-0.5 transition-all ${
                   soundEnabled ? 'right-0.5' : 'left-0.5'
                 }`}
               />
@@ -285,12 +341,12 @@ export const ProfilePage: React.FC = () => {
                 sound.playClick();
                 setReducedMotion(!reducedMotion);
               }}
-              className={`w-12 h-6 rounded-full transition-colors relative cursor-pointer border ${
-                reducedMotion ? 'bg-cyan-500 border-cyan-400' : 'bg-slate-800 border-slate-700'
+              className={`w-12 h-6 rounded-full transition-colors relative cursor-pointer border-2 ${
+                reducedMotion ? 'bg-[#0ea5e9] border-[#38bdf8]' : 'bg-[#131f24] border-[#2e4756]'
               }`}
             >
               <div
-                className={`w-4 h-4 rounded-full bg-slate-950 absolute top-0.5 transition-all ${
+                className={`w-4 h-4 rounded-full bg-slate-100 absolute top-0.5 transition-all ${
                   reducedMotion ? 'right-0.5' : 'left-0.5'
                 }`}
               />
@@ -307,7 +363,7 @@ export const ProfilePage: React.FC = () => {
                 onClick={handleExport}
                 className="flex items-center justify-center gap-1.5"
               >
-                <Download className="w-3.5 h-3.5 text-cyan-400" />
+                <Download className="w-3.5 h-3.5 text-[#38bdf8]" />
                 <span>Sao lưu dữ liệu</span>
               </Button>
 
@@ -318,7 +374,7 @@ export const ProfilePage: React.FC = () => {
                 onClick={() => fileInputRef.current?.click()}
                 className="flex items-center justify-center gap-1.5"
               >
-                <Upload className="w-3.5 h-3.5 text-cyan-400" />
+                <Upload className="w-3.5 h-3.5 text-[#38bdf8]" />
                 <span>Khôi phục dữ liệu</span>
               </Button>
 

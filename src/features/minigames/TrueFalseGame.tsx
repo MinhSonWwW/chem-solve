@@ -137,16 +137,16 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className={`w-full p-5 rounded-3xl bg-slate-900 border-2 flex flex-col justify-between shadow-2xl transition-colors min-h-[170px] ${
+              className={`w-full p-5 rounded-3xl border-2 flex flex-col justify-between transition-colors min-h-[170px] ${
                 lastFeedback
                   ? lastFeedback.correct
-                    ? 'border-emerald-500 bg-emerald-950/30'
-                    : 'border-rose-500 bg-rose-950/30'
-                  : 'border-slate-800'
+                    ? 'border-[#00cd9c] bg-[#00cd9c]/15 shadow-[0_6px_0_0_#007a5d]'
+                    : 'border-[#ff4b4b] bg-[#ff4b4b]/15 shadow-[0_6px_0_0_#b32525]'
+                  : 'bg-[#18272f] border-[#2e4756] shadow-[0_6px_0_0_#131f24]'
               }`}
             >
               <div className="flex items-start gap-2.5">
-                <BookOpen className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" />
+                <BookOpen className="w-5 h-5 text-[#38bdf8] shrink-0 mt-0.5" />
                 <p className="text-base sm:text-lg font-bold text-slate-100 leading-snug">
                   {currentItem?.statement}
                 </p>
@@ -157,10 +157,10 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                 <motion.div
                   initial={{ opacity: 0, y: 6 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className={`mt-3 p-3 rounded-2xl border text-xs leading-relaxed flex items-start gap-2 ${
+                  className={`mt-3 p-3 rounded-2xl border-2 text-xs leading-relaxed flex items-start gap-2 ${
                     lastFeedback.correct
-                      ? 'bg-emerald-950/70 border-emerald-700 text-emerald-200'
-                      : 'bg-rose-950/70 border-rose-700 text-rose-200'
+                      ? 'bg-[#00cd9c]/10 border-[#00cd9c]/40 text-[#00cd9c]'
+                      : 'bg-[#ff4b4b]/10 border-[#ff4b4b]/40 text-[#ff4b4b]'
                   }`}
                 >
                   <Info className="w-4 h-4 shrink-0 mt-0.5" />
@@ -183,10 +183,10 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
             whileTap={{ scale: 0.96 }}
             disabled={!!lastFeedback}
             onClick={() => handleAnswer(true)}
-            className="py-5 px-4 rounded-2xl border-2 border-emerald-500/60 bg-gradient-to-b from-emerald-900/40 to-slate-900 text-emerald-400 flex flex-col items-center justify-center gap-1.5 shadow-xl hover:border-emerald-400 transition-all font-black text-lg disabled:opacity-40"
+            className="py-5 px-4 rounded-2xl border-2 border-[#00cd9c] bg-[#00cd9c]/15 text-[#00cd9c] flex flex-col items-center justify-center gap-1.5 shadow-[0_5px_0_0_#007a5d] active:translate-y-1 active:shadow-none hover:bg-[#00cd9c]/25 transition-all font-black text-lg disabled:opacity-40 cursor-pointer"
           >
-            <div className="w-9 h-9 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center">
-              <Check className="w-5 h-5 text-emerald-300 stroke-[3]" />
+            <div className="w-9 h-9 rounded-full bg-[#00cd9c]/20 border border-[#00cd9c]/40 flex items-center justify-center">
+              <Check className="w-5 h-5 text-[#00cd9c] stroke-[3]" />
             </div>
             ĐÚNG
           </motion.button>
@@ -196,10 +196,10 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
             whileTap={{ scale: 0.96 }}
             disabled={!!lastFeedback}
             onClick={() => handleAnswer(false)}
-            className="py-5 px-4 rounded-2xl border-2 border-rose-500/60 bg-gradient-to-b from-rose-950/40 to-slate-900 text-rose-400 flex flex-col items-center justify-center gap-1.5 shadow-xl hover:border-rose-400 transition-all font-black text-lg disabled:opacity-40"
+            className="py-5 px-4 rounded-2xl border-2 border-[#ff4b4b] bg-[#ff4b4b]/15 text-[#ff4b4b] flex flex-col items-center justify-center gap-1.5 shadow-[0_5px_0_0_#b32525] active:translate-y-1 active:shadow-none hover:bg-[#ff4b4b]/25 transition-all font-black text-lg disabled:opacity-40 cursor-pointer"
           >
-            <div className="w-9 h-9 rounded-full bg-rose-500/20 border border-rose-500/40 flex items-center justify-center">
-              <X className="w-5 h-5 text-rose-300 stroke-[3]" />
+            <div className="w-9 h-9 rounded-full bg-[#ff4b4b]/20 border border-[#ff4b4b]/40 flex items-center justify-center">
+              <X className="w-5 h-5 text-[#ff4b4b] stroke-[3]" />
             </div>
             SAI
           </motion.button>

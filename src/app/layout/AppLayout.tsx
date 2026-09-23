@@ -12,7 +12,7 @@ export const AppLayout: React.FC = () => {
   // Distraction-free exercise mode
   if (isExerciseMode) {
     return (
-      <div className="min-h-[100dvh] bg-slate-950 text-slate-100 flex flex-col justify-between">
+      <div className="min-h-[100dvh] bg-[#131f24] text-slate-100 flex flex-col justify-between">
         <main className="flex-1 max-w-2xl w-full mx-auto px-4 py-4">
           <Outlet />
         </main>
@@ -22,7 +22,7 @@ export const AppLayout: React.FC = () => {
 
   // Standard 3-column Duolingo layout for desktop + responsive mobile layout
   return (
-    <div className="min-h-[100dvh] bg-slate-950 text-slate-100 flex flex-col">
+    <div className="min-h-[100dvh] bg-[#131f24] text-slate-100 flex flex-col">
       {/* Mobile Top Header */}
       <TopHeader />
 

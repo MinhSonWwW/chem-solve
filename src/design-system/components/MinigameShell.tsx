@@ -41,14 +41,14 @@ export const MinigameShell: React.FC<MinigameShellProps> = ({
   return (
     <div className="flex flex-col justify-between min-h-[90dvh] relative max-w-md mx-auto pb-28">
       {/* 1. Header Bar */}
-      <div className="space-y-3 pb-3 border-b border-slate-800">
+      <div className="space-y-3 pb-3 border-b border-[#2e4756]">
         <div className="flex items-center justify-between gap-3">
           <button
             onClick={() => {
               sound.playClick();
               onExit();
             }}
-            className="p-1.5 text-slate-400 hover:text-slate-100 rounded-xl hover:bg-slate-900 transition-colors cursor-pointer"
+            className="p-2 text-slate-400 hover:text-slate-100 rounded-xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_2px_0_0_#131f24] hover:bg-[#20333d] transition-colors cursor-pointer"
             aria-label="Thoát trò chơi"
           >
             <X className="w-5 h-5" />
@@ -65,8 +65,8 @@ export const MinigameShell: React.FC<MinigameShellProps> = ({
           </div>
 
           {/* Score counter */}
-          <div className="flex items-center gap-1.5 px-3 py-1 rounded-xl bg-slate-900 border border-slate-800">
-            <Trophy className="w-4 h-4 text-amber-400" />
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_2px_0_0_#131f24]">
+            <Trophy className="w-4 h-4 text-[#ffc800]" />
             <span className="text-xs font-black text-slate-100 font-mono">
               {score}
             </span>
@@ -77,20 +77,20 @@ export const MinigameShell: React.FC<MinigameShellProps> = ({
         {timeLeft != null && (
           <div className="space-y-1">
             <div className="flex justify-between items-center text-[10px] font-bold">
-              <span className={`flex items-center gap-1 ${isTimeCritical ? 'text-rose-400 animate-pulse' : 'text-slate-400'}`}>
+              <span className={`flex items-center gap-1 ${isTimeCritical ? 'text-[#ff4b4b] animate-pulse' : 'text-slate-400'}`}>
                 <Clock className="w-3 h-3" />
                 Thời gian còn lại:
               </span>
-              <span className={`font-mono text-xs ${isTimeCritical ? 'text-rose-400 font-black' : 'text-cyan-400'}`}>
+              <span className={`font-mono text-xs ${isTimeCritical ? 'text-[#ff4b4b] font-black' : 'text-[#38bdf8]'}`}>
                 {timeLeft}s
               </span>
             </div>
-            <div className="w-full bg-slate-950 h-2 rounded-full overflow-hidden border border-slate-800">
+            <div className="w-full bg-[#131f24] h-2 rounded-full overflow-hidden border border-[#2e4756]">
               <div
                 className={`h-full rounded-full transition-all duration-300 ${
                   isTimeCritical
-                    ? 'bg-rose-500 shadow-[0_0_10px_rgba(244,63,94,0.6)]'
-                    : 'bg-gradient-to-r from-cyan-500 to-emerald-400'
+                    ? 'bg-[#ff4b4b] shadow-[0_0_10px_rgba(255,75,75,0.6)]'
+                    : 'bg-gradient-to-r from-[#0ea5e9] to-[#00cd9c]'
                 }`}
                 style={{ width: `${timePercent}%` }}
               />
@@ -101,8 +101,8 @@ export const MinigameShell: React.FC<MinigameShellProps> = ({
         {/* Combo Badge (if combo >= 2) */}
         {combo >= 2 && (
           <div className="flex justify-center">
-            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-gradient-to-r from-amber-500/20 to-orange-500/20 border border-amber-500/40 text-amber-300 text-[10px] font-black animate-pulse">
-              <Flame className="w-3.5 h-3.5 fill-amber-400 text-amber-300" />
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#ff9600]/15 border border-[#ff9600]/40 text-[#ff9600] text-[10px] font-black animate-pulse">
+              <Flame className="w-3.5 h-3.5 fill-[#ff9600] text-[#ff9600]" />
               <span>Chuỗi x{combo}!</span>
             </div>
           </div>
@@ -118,14 +118,14 @@ export const MinigameShell: React.FC<MinigameShellProps> = ({
           <motion.div
             initial={{ scale: 0.85, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            className="p-6 rounded-3xl bg-slate-900 border-2 border-slate-700 text-center space-y-4 shadow-2xl"
+            className="p-6 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] text-center space-y-4 shadow-[0_6px_0_0_#131f24]"
           >
             <div className="flex justify-center pt-2">
               <Mascot state="celebrating" size="lg" />
             </div>
 
             <div className="space-y-1">
-              <span className="text-[10px] font-black uppercase tracking-wider text-emerald-400">
+              <span className="text-[10px] font-black uppercase tracking-wider text-[#00cd9c]">
                 Hoàn thành vòng chơi!
               </span>
               <h2 className="text-xl font-black text-slate-100">
@@ -135,20 +135,20 @@ export const MinigameShell: React.FC<MinigameShellProps> = ({
 
             {/* Score & XP Cards */}
             <div className="grid grid-cols-2 gap-3 py-2">
-              <div className="p-3 rounded-2xl bg-slate-950/80 border border-slate-800 space-y-1">
+              <div className="p-3 rounded-2xl bg-[#131f24] border-2 border-[#2e4756] space-y-1">
                 <span className="text-[10px] text-slate-400 font-bold uppercase">
                   Điểm số
                 </span>
-                <div className="text-2xl font-black text-amber-400 font-mono">
+                <div className="text-2xl font-black text-[#ffc800] font-mono">
                   {score}
                 </div>
               </div>
-              <div className="p-3 rounded-2xl bg-slate-950/80 border border-slate-800 space-y-1">
+              <div className="p-3 rounded-2xl bg-[#131f24] border-2 border-[#2e4756] space-y-1">
                 <span className="text-[10px] text-slate-400 font-bold uppercase">
                   Kinh nghiệm
                 </span>
-                <div className="text-2xl font-black text-emerald-400 font-mono flex items-center justify-center gap-1">
-                  <Sparkles className="w-5 h-5 fill-emerald-400 text-emerald-400" />
+                <div className="text-2xl font-black text-[#00cd9c] font-mono flex items-center justify-center gap-1">
+                  <Sparkles className="w-5 h-5 fill-[#00cd9c] text-[#00cd9c]" />
                   +{earnedXp}
                 </div>
               </div>
