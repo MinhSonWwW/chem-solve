@@ -190,5 +190,32 @@
     "commonMistakes": [
       { "id": "confused-reactants-products", "message": "Oxit sắt từ là chất mới sinh ra (sản phẩm), không phải chất tham gia." }
     ]
+  },
+  {
+    "id": "g8-b02-match-001",
+    "lessonId": "g8-b02",
+    "skillIds": ["chemical-change"],
+    "difficulty": 1,
+    "prompt": "Ghép đôi mỗi phản ứng hóa học với dấu hiệu nhận biết phản ứng tương ứng.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Cho mẩu đá vôi vào dung dịch acid HCl", "right": "Sinh ra bọt khí sủi mạnh (CO2)" },
+        { "left": "Nhỏ BaCl2 vào dung dịch Na2SO4", "right": "Xuất hiện chất kết tủa trắng (BaSO4)" },
+        { "left": "Đốt cháy que diêm trong không khí", "right": "Tỏa nhiều nhiệt và phát sáng" },
+        { "left": "Nhúng quỳ tím vào dung dịch giấm ăn", "right": "Đổi màu chất chỉ thị sang đỏ" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Dấu hiệu nhận biết phản ứng gồm: sinh khí, tạo kết tủa, tỏa nhiệt phát sáng, đổi màu." },
+      { "level": 2, "text": "Đá vôi gặp acid sinh khí CO2, BaCl2 gặp Na2SO4 tạo kết tủa BaSO4." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích hiện tượng", "body": "Xác định dấu hiệu đặc trưng của từng phản ứng." },
+      { "kind": "knowledge", "title": "Dấu hiệu phản ứng", "body": "1. CaCO3 + HCl -> sủi bọt CO2. 2. BaCl2 + Na2SO4 -> kết tủa BaSO4 trắng. 3. Cháy -> tỏa nhiệt, phát sáng. 4. Acid -> quỳ hóa đỏ." },
+      { "kind": "answer", "title": "Kết luận", "body": "Ghép đúng từng cặp phản ứng và dấu hiệu." }
+    ],
+    "finalSolution": "CaCO3 + HCl: **sủi bọt khí** · BaCl2 + Na2SO4: **kết tủa trắng** · Đốt que diêm: **tỏa nhiệt phát sáng** · Giấm ăn: **quỳ hóa đỏ**.",
+    "commonMistakes": []
   }
 ]

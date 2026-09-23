@@ -298,5 +298,39 @@
     "commonMistakes": [
       { "id": "same-layers", "message": "Cùng số lớp electron là đặc điểm của chu kì (hàng ngang), không phải nhóm (cột dọc)." }
     ]
+  },
+  {
+    "id": "g7-b04-sort-002",
+    "lessonId": "g7-b04",
+    "skillIds": ["periodic-table-structure"],
+    "difficulty": 1,
+    "prompt": "Phân loại các nguyên tố sau vào 3 nhóm chính trong bảng tuần hoàn: Kim loại, Phi kim hay Khí hiếm.",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "metal", "label": "Kim loại" },
+        { "id": "non-metal", "label": "Phi kim" },
+        { "id": "noble-gas", "label": "Khí hiếm" }
+      ],
+      "items": [
+        { "id": "na", "label": "Natri (Na)", "bucketId": "metal" },
+        { "id": "al", "label": "Nhôm (Al)", "bucketId": "metal" },
+        { "id": "c", "label": "Cacbon (C)", "bucketId": "non-metal" },
+        { "id": "cl", "label": "Clo (Cl)", "bucketId": "non-metal" },
+        { "id": "he", "label": "Heli (He)", "bucketId": "noble-gas" },
+        { "id": "ne", "label": "Neon (Ne)", "bucketId": "noble-gas" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Kim loại ở bên trái và giữa bảng; Phi kim ở phía trên bên phải; Khí hiếm ở cột VIIIA ngoài cùng bên phải." },
+      { "level": 2, "text": "He và Ne là các khí hiếm trơ về mặt hóa học." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Ba nhóm nguyên tố", "body": "Bảng tuần hoàn chia thành: kim loại, phi kim và khí hiếm." },
+      { "kind": "knowledge", "title": "Đối chiếu", "body": "Na, Al là kim loại · C, Cl là phi kim · He, Ne thuộc nhóm VIIIA là khí hiếm." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đã phân loại đúng 6 nguyên tố vào 3 nhóm." }
+    ],
+    "finalSolution": "Kim loại: **Na, Al** · Phi kim: **C, Cl** · Khí hiếm: **He, Ne**.",
+    "commonMistakes": []
   }
 ]

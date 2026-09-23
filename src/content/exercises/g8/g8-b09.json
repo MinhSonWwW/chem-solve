@@ -114,5 +114,66 @@
     "commonMistakes": [
       { "id": "thought-acid-has-high-ph", "message": "Nhầm lẫn chiều thang đo: Axit có pH < 7, pH càng nhỏ tính axit càng mạnh." }
     ]
+  },
+  {
+    "id": "g8-b09-sort-005",
+    "lessonId": "g8-b09",
+    "skillIds": ["base-properties"],
+    "difficulty": 1,
+    "prompt": "Phân loại các base sau thành hai nhóm: Base tan trong nước (Kiềm) hay Base không tan.",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "alkali", "label": "Base tan (Kiềm)" },
+        { "id": "insoluble", "label": "Base không tan" }
+      ],
+      "items": [
+        { "id": "naoh", "label": "NaOH (Sodium hydroxide)", "bucketId": "alkali" },
+        { "id": "koh", "label": "KOH (Potassium hydroxide)", "bucketId": "alkali" },
+        { "id": "baoh2", "label": "Ba(OH)2 (Barium hydroxide)", "bucketId": "alkali" },
+        { "id": "cuoh2", "label": "Cu(OH)2 (Copper(II) hydroxide)", "bucketId": "insoluble" },
+        { "id": "feoh3", "label": "Fe(OH)3 (Iron(III) hydroxide)", "bucketId": "insoluble" },
+        { "id": "aloh3", "label": "Al(OH)3 (Aluminium hydroxide)", "bucketId": "insoluble" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Nhớ các base kiềm thông dụng: Li, Na, K, Ca, Ba." },
+      { "level": 2, "text": "NaOH, KOH, Ba(OH)2 tan trong nước; Cu(OH)2, Fe(OH)3, Al(OH)3 là chất kết tủa." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại base theo tính tan", "body": "Dựa vào bảng tính tan của các hydroxide." },
+      { "kind": "knowledge", "title": "Quy tắc tính tan", "body": "Base của kim loại kiềm và kiềm thổ (K, Na, Ba, Ca) tan tốt trong nước. Hầu hết các hydroxide khác không tan." },
+      { "kind": "answer", "title": "Kết luận", "body": "Base tan: NaOH, KOH, Ba(OH)2. Base không tan: Cu(OH)2, Fe(OH)3, Al(OH)3." }
+    ],
+    "finalSolution": "Base tan: **NaOH, KOH, Ba(OH)2** · Base không tan: **Cu(OH)2, Fe(OH)3, Al(OH)3**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g8-b09-ordering-006",
+    "lessonId": "g8-b09",
+    "skillIds": ["ph-scale"],
+    "difficulty": 2,
+    "prompt": "Kéo thả sắp xếp các dung dịch sau theo chiều giá trị pH tăng dần (từ môi trường acid mạnh đến kiềm mạnh):",
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Dịch vị dạ dày (chứa HCl, pH ≈ 1 - 2)",
+        "Nước cốt chanh (chứa citric acid, pH ≈ 2 - 3)",
+        "Nước tinh khiết trung tính (pH = 7)",
+        "Nước xà phòng / nước rửa chén (pH ≈ 9 - 10)",
+        "Dung dịch kiềm NaOH đặc (pH ≈ 13 - 14)"
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "pH tăng dần: Acid mạnh < Acid yếu < Trung tính < Base yếu < Base mạnh." },
+      { "level": 2, "text": "Dạ dày (pH 1-2) < Chanh (pH 2-3) < Nước tinh khiết (pH 7) < Xà phòng (pH 9-10) < NaOH (pH 13-14)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Mốc thang đo pH", "body": "pH trải dài từ 0 đến 14, mốc 7 là trung tính." },
+      { "kind": "knowledge", "title": "Thứ tự pH", "body": "Acid có pH < 7 (càng nhỏ càng mạnh), nước trung tính pH = 7, kiềm có pH > 7 (càng lớn càng mạnh)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Xếp từ pH nhỏ nhất đến lớn nhất theo thứ tự chuẩn." }
+    ],
+    "finalSolution": "Dạ dày (pH 1-2) → Nước chanh (pH 2-3) → Nước trung tính (pH 7) → Xà phòng (pH 9-10) → Kiềm NaOH (pH 13-14).",
+    "commonMistakes": []
   }
 ]

@@ -294,5 +294,61 @@
     "commonMistakes": [
       { "id": "reverse-order", "message": "Lớp K là gần nhất, N là xa nhất. Đừng nhầm ngược thứ tự ABC thông thường." }
     ]
+  },
+  {
+    "id": "g7-b02-match-001",
+    "lessonId": "g7-b02",
+    "skillIds": ["atom-structure"],
+    "difficulty": 1,
+    "prompt": "Ghép đôi mỗi loại hạt cấu tạo nên nguyên tử với đặc tính điện tích tương ứng.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Hạt Proton (p)", "right": "Mang điện tích dương (+1)" },
+        { "left": "Hạt Electron (e)", "right": "Mang điện tích âm (-1)" },
+        { "left": "Hạt Neutron (n)", "right": "Không mang điện (trung hòa)" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Proton là hạt dương, electron là hạt âm, neutron là trung hòa." },
+      { "level": 2, "text": "Kí hiệu p mang +1, e mang -1, n có điện tích bằng 0." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích", "body": "Xác định điện tích quy ước của 3 loại hạt cơ bản." },
+      { "kind": "knowledge", "title": "Quy tắc", "body": "Proton mang điện +1; Electron mang điện -1; Neutron không mang điện." },
+      { "kind": "answer", "title": "Kết luận", "body": "Ghép: Proton ↔ +1, Electron ↔ -1, Neutron ↔ 0." }
+    ],
+    "finalSolution": "**Proton** mang điện tích +1; **Electron** mang điện tích -1; **Neutron** không mang điện.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g7-b02-sort-002",
+    "lessonId": "g7-b02",
+    "skillIds": ["atom-structure"],
+    "difficulty": 1,
+    "prompt": "Hãy phân loại các hạt sau vào vị trí cấu tạo nguyên tử tương ứng: Hạt nhân hay Lớp vỏ.",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "nucleus", "label": "Hạt nhân nguyên tử" },
+        { "id": "shell", "label": "Lớp vỏ nguyên tử" }
+      ],
+      "items": [
+        { "id": "i1", "label": "Hạt Proton mang điện dương", "bucketId": "nucleus" },
+        { "id": "i2", "label": "Hạt Neutron không mang điện", "bucketId": "nucleus" },
+        { "id": "i3", "label": "Hạt Electron chuyển động nhanh", "bucketId": "shell" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Hạt nhân ở tâm chứa 2 loại hạt nặng, vỏ chỉ chứa 1 loại hạt nhẹ." },
+      { "level": 2, "text": "Hạt nhân gồm proton và neutron, electron chuyển động ở lớp vỏ." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích cấu tạo", "body": "Nguyên tử gồm 2 phần: hạt nhân ở giữa và lớp vỏ bao quanh." },
+      { "kind": "knowledge", "title": "Vị trí hạt", "body": "Hạt nhân: proton và neutron. Lớp vỏ: electron." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hạt nhân: Proton, Neutron. Lớp vỏ: Electron." }
+    ],
+    "finalSolution": "Hạt nhân nguyên tử chứa **Proton** và **Neutron**; Lớp vỏ chứa các **Electron**.",
+    "commonMistakes": []
   }
 ]

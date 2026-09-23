@@ -56,27 +56,27 @@ const MINIGAMES: GameDef[] = [
   {
     id: 'match',
     name: 'Ghép đôi chất & loại',
-    desc: 'HCl ↔ Acid, NaOH ↔ Base, CO2 ↔ Oxide...',
+    desc: 'KHHH, Cấu tạo nguyên tử, Acid, Base, Oxide...',
     skill: 'Nhận diện chất & loại hợp chất',
-    grades: [8, 9],
+    grades: [7, 8, 9],
     icon: Layers,
     color: 'from-blue-500/20 to-cyan-500/20 text-cyan-400',
     borderAccent: 'hover:border-cyan-500/50',
-    requiredLessonId: 'g8-b08',
-    requiredLessonName: 'Bài 8: Acid',
-    requiredGrade: 8,
+    requiredLessonId: 'g7-b02',
+    requiredLessonName: 'Bài 2: Nguyên tử',
+    requiredGrade: 7,
   },
   {
     id: 'formula-builder',
     name: 'Ghép công thức (Formula Builder)',
-    desc: 'Cân bằng điện tích ∑q = 0 để tạo công thức ion',
+    desc: 'Ghép nguyên tử & ion tạo CTHH phân tử đúng',
     skill: 'Hóa trị, điện tích & công thức',
     grades: [7, 8],
     icon: Split,
     color: 'from-violet-500/20 to-purple-500/20 text-violet-400',
     borderAccent: 'hover:border-violet-500/50',
     requiredLessonId: 'g7-b03',
-    requiredLessonName: 'Bài 3: Hóa trị & CTHH',
+    requiredLessonName: 'Bài 3: Nguyên tố hóa học',
     requiredGrade: 7,
   },
   {
@@ -88,22 +88,22 @@ const MINIGAMES: GameDef[] = [
     icon: ArrowUpDown,
     color: 'from-amber-500/20 to-orange-500/20 text-amber-400',
     borderAccent: 'hover:border-amber-500/50',
-    requiredLessonId: 'g8-b02',
-    requiredLessonName: 'Bài 2: Phản ứng hóa học',
+    requiredLessonId: 'g8-b05',
+    requiredLessonName: 'Bài 5: ĐL Bảo toàn khối lượng & PTHH',
     requiredGrade: 8,
   },
   {
     id: 'sort',
     name: 'Phân loại hợp chất',
-    desc: 'Kéo/chọn chất vào 4 nhóm Axit, Bazơ, Oxide, Muối',
-    skill: 'Phân loại hóa học vô cơ',
-    grades: [8, 9],
+    desc: 'Kéo/chọn chất vào các nhóm chất vô cơ',
+    skill: 'Phân loại hạt, nguyên tố & hợp chất',
+    grades: [7, 8, 9],
     icon: Gamepad2,
     color: 'from-emerald-500/20 to-teal-500/20 text-emerald-400',
     borderAccent: 'hover:border-emerald-500/50',
-    requiredLessonId: 'g8-b08',
-    requiredLessonName: 'Bài 8: Acid và Bazơ',
-    requiredGrade: 8,
+    requiredLessonId: 'g7-b02',
+    requiredLessonName: 'Bài 2: Nguyên tử',
+    requiredGrade: 7,
   },
   {
     id: 'reaction-builder',
@@ -127,9 +127,9 @@ const MINIGAMES: GameDef[] = [
     icon: CheckSquare,
     color: 'from-rose-500/20 to-pink-500/20 text-rose-400',
     borderAccent: 'hover:border-rose-500/50',
-    requiredLessonId: 'g8-b01',
-    requiredLessonName: 'Bài 1: Mở đầu môn Hóa học',
-    requiredGrade: 8,
+    requiredLessonId: 'g7-b01',
+    requiredLessonName: 'Bài 1: Phương pháp KHTN',
+    requiredGrade: 7,
   },
   {
     id: 'speed',
@@ -140,9 +140,6 @@ const MINIGAMES: GameDef[] = [
     icon: Flame,
     color: 'from-yellow-500/20 to-red-500/20 text-yellow-400',
     borderAccent: 'hover:border-yellow-500/50',
-    requiredLessonId: 'g8-b01',
-    requiredLessonName: 'Bài 1: Mở đầu môn Hóa học',
-    requiredGrade: 8,
   },
   {
     id: 'review',
@@ -208,6 +205,73 @@ const GENERATOR_TOPICS = [
     requiredLessonName: 'Bài 6: Tính theo PTHH',
   },
 ];
+
+interface LessonMinigameBadge {
+  id: string;
+  label: string;
+  icon: React.ElementType;
+  route?: string;
+}
+
+const LESSON_MINIGAME_MAP: Record<string, LessonMinigameBadge[]> = {
+  'g7-b01': [
+    { id: 'ordering', label: 'Kéo thả thứ tự', icon: ArrowUpDown },
+    { id: 'sort', label: 'Phân loại thí nghiệm', icon: Gamepad2, route: '/practice/sort' },
+  ],
+  'g7-b02': [
+    { id: 'match', label: 'Ghép hạt nguyên tử', icon: Layers, route: '/practice/match' },
+    { id: 'sort', label: 'Phân loại hạt nhân & vỏ', icon: Gamepad2, route: '/practice/sort' },
+  ],
+  'g7-b03': [
+    { id: 'match', label: 'Ghép đôi KHHH', icon: Layers, route: '/practice/match' },
+    { id: 'formula-builder', label: 'Ghép công thức (H2O)', icon: Split, route: '/practice/formula-builder' },
+    { id: 'sort', label: 'Phân loại Kim loại / Phi kim', icon: Gamepad2, route: '/practice/sort' },
+  ],
+  'g7-b04': [
+    { id: 'sort', label: 'Phân loại nhóm nguyên tố', icon: Gamepad2, route: '/practice/sort' },
+    { id: 'match', label: 'Ghép ô & chu kì', icon: Layers, route: '/practice/match' },
+  ],
+  'g8-b02': [
+    { id: 'sort', label: 'Phân loại biến đổi chất', icon: Gamepad2, route: '/practice/sort' },
+    { id: 'match', label: 'Ghép hiện tượng phản ứng', icon: Layers, route: '/practice/match' },
+  ],
+  'g8-b03': [
+    { id: 'match', label: 'Ghép công thức Mol & Khí', icon: Layers, route: '/practice/match' },
+    { id: 'ordering', label: 'Sắp xếp quy trình tính', icon: ArrowUpDown },
+  ],
+  'g8-b05': [
+    { id: 'equation-balance', label: 'Cân bằng PTHH', icon: ArrowUpDown, route: '/practice/equation-balance' },
+    { id: 'match', label: 'Ghép tỉ lệ hệ số', icon: Layers, route: '/practice/match' },
+    { id: 'ordering', label: '4 bước lập PTHH', icon: ArrowUpDown },
+  ],
+  'g8-b06': [
+    { id: 'ordering', label: '4 bước giải toán hóa', icon: ArrowUpDown },
+    { id: 'reaction-builder', label: 'Ráp phản ứng & tỉ lệ', icon: FlaskConical, route: '/practice/reaction-builder' },
+  ],
+  'g8-b08': [
+    { id: 'sort', label: 'Phân loại Acid', icon: Gamepad2, route: '/practice/sort' },
+    { id: 'match', label: 'Ghép gốc Acid & hóa trị', icon: Layers, route: '/practice/match' },
+  ],
+  'g8-b09': [
+    { id: 'sort', label: 'Phân loại Base kiềm / không tan', icon: Gamepad2, route: '/practice/sort' },
+    { id: 'ordering', label: 'Kéo thả thang pH', icon: ArrowUpDown },
+    { id: 'match', label: 'Chỉ thị màu & pH', icon: Layers, route: '/practice/match' },
+  ],
+  'g8-b10': [
+    { id: 'sort', label: 'Phân loại Oxide acid & base', icon: Gamepad2, route: '/practice/sort' },
+    { id: 'formula-builder', label: 'Ghép oxide (Al2O3)', icon: Split, route: '/practice/formula-builder' },
+    { id: 'match', label: 'Ghép oxide với acid/base', icon: Layers, route: '/practice/match' },
+  ],
+  'g8-b11': [
+    { id: 'sort', label: 'Phân loại Muối tan & kết tủa', icon: Gamepad2, route: '/practice/sort' },
+    { id: 'match', label: 'Ghép màu kết tủa', icon: Layers, route: '/practice/match' },
+  ],
+  'g9-b19': [
+    { id: 'ordering', label: 'Kéo thả dãy hoạt động', icon: ArrowUpDown },
+    { id: 'sort', label: 'Phân loại kim loại / H', icon: Gamepad2, route: '/practice/sort' },
+    { id: 'match', label: 'Ghép phản ứng kim loại', icon: Layers, route: '/practice/match' },
+  ],
+};
 
 export const PracticePage: React.FC = () => {
   const navigate = useNavigate();
@@ -604,8 +668,8 @@ export const PracticePage: React.FC = () => {
             };
             const isAvailable = lesson.ready && status.isUnlocked;
 
-            // Check if this lesson has an associated minigame
-            const relatedMinigame = MINIGAMES.find((m) => m.requiredLessonId === lesson.id);
+            // Check if this lesson has associated minigames
+            const lessonBadges = LESSON_MINIGAME_MAP[lesson.id] || [];
 
             return (
               <div
@@ -673,20 +737,34 @@ export const PracticePage: React.FC = () => {
                         </span>
                       )}
 
-                      {/* Associated Minigame Tag */}
-                      {relatedMinigame && isAvailable && (
-                        <span
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            sound.playClick();
-                            navigate(`/practice/${relatedMinigame.id}`);
-                          }}
-                          className="text-[10px] font-bold bg-[#ce82ff]/15 text-[#ce82ff] border border-[#ce82ff]/40 px-2 py-0.5 rounded-lg hover:bg-[#ce82ff]/25 transition-colors flex items-center gap-1 cursor-pointer"
-                          title={`Chơi minigame ${relatedMinigame.name}`}
-                        >
-                          <Gamepad2 className="w-3 h-3 text-[#ce82ff]" />
-                          <span>Game: {relatedMinigame.name}</span>
-                        </span>
+                      {/* Associated Minigames */}
+                      {isAvailable && lessonBadges.length > 0 && (
+                        <div className="flex flex-wrap items-center gap-1.5">
+                          {lessonBadges.map((badge) => {
+                            const BadgeIcon = badge.icon;
+                            return (
+                              <span
+                                key={badge.id + badge.label}
+                                onClick={(e) => {
+                                  if (badge.route) {
+                                    e.stopPropagation();
+                                    sound.playClick();
+                                    navigate(badge.route);
+                                  }
+                                }}
+                                className={`text-[10px] font-bold px-2 py-0.5 rounded-lg border transition-all flex items-center gap-1 ${
+                                  badge.route
+                                    ? 'bg-[#ce82ff]/15 text-[#ce82ff] border-[#ce82ff]/40 hover:bg-[#ce82ff]/30 cursor-pointer shadow-sm active:scale-95'
+                                    : 'bg-[#20333d] text-slate-300 border-[#2e4756]'
+                                }`}
+                                title={badge.route ? `Chơi minigame: ${badge.label}` : badge.label}
+                              >
+                                <BadgeIcon className="w-3 h-3 text-[#ce82ff]" />
+                                <span>{badge.label}</span>
+                              </span>
+                            );
+                          })}
+                        </div>
                       )}
                     </div>
 

@@ -265,5 +265,92 @@
     "commonMistakes": [
       { "id": "confuse-z-and-mass", "message": "Z (số hiệu) và khối lượng nguyên tử khác nhau, nhưng thứ tự thường tương đồng." }
     ]
+  },
+  {
+    "id": "g7-b03-match-002",
+    "lessonId": "g7-b03",
+    "skillIds": ["element-symbols"],
+    "difficulty": 1,
+    "prompt": "Ghép đôi tên gọi quốc tế IUPAC của các nguyên tố với kí hiệu hóa học tương ứng.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Hydrogen", "right": "H" },
+        { "left": "Carbon", "right": "C" },
+        { "left": "Sodium (Natri)", "right": "Na" },
+        { "left": "Iron (Sắt)", "right": "Fe" },
+        { "left": "Calcium", "right": "Ca" },
+        { "left": "Oxygen", "right": "O" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Sodium có kí hiệu bắt nguồn từ Natrium (Na), Iron bắt nguồn từ Ferrum (Fe)." },
+      { "level": 2, "text": "Kí hiệu gồm 1 chữ cái in hoa hoặc 1 in hoa + 1 in thường." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận dạng nguyên tố", "body": "Đối chiếu tên gọi và kí hiệu quy ước quốc tế." },
+      { "kind": "knowledge", "title": "Kí hiệu hóa học", "body": "Hydrogen: H, Carbon: C, Sodium: Na, Iron: Fe, Calcium: Ca, Oxygen: O." },
+      { "kind": "answer", "title": "Kết luận", "body": "Ghép đúng từng cặp tên và kí hiệu." }
+    ],
+    "finalSolution": "Hydrogen ↔ H · Carbon ↔ C · Sodium ↔ Na · Iron ↔ Fe · Calcium ↔ Ca · Oxygen ↔ O.",
+    "commonMistakes": [
+      { "id": "confused-s-na", "message": "Sodium có kí hiệu Na (từ Natrium), còn S là Sulfur." }
+    ]
+  },
+  {
+    "id": "g7-b03-build-001",
+    "lessonId": "g7-b03",
+    "skillIds": ["element-symbols"],
+    "difficulty": 1,
+    "prompt": "Nhấn các mảnh ghép để tạo công thức hóa học của phân tử Nước (gồm 2 nguyên tử Hydrogen và 1 nguyên tử Oxygen).",
+    "answer": {
+      "kind": "formula-builder",
+      "tiles": ["H", "2", "O", "C", "3", "N"],
+      "accepted": ["H2O"]
+    },
+    "hints": [
+      { "level": 1, "text": "Phân tử nước có 2 nguyên tử H và 1 nguyên tử O." },
+      { "level": 2, "text": "Nhấn lần lượt: H → 2 → O để tạo công thức H2O." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Thành phần phân tử nước", "body": "Nước gồm 2 nguyên tử H liên kết với 1 nguyên tử O." },
+      { "kind": "knowledge", "title": "Cách viết CTHH", "body": "Chỉ số 2 đặt ngay sau kí hiệu H: H2O." },
+      { "kind": "answer", "title": "Kết luận", "body": "Công thức ghép đúng là **H2O**." }
+    ],
+    "finalSolution": "Công thức hóa học của nước là **H2O**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g7-b03-sort-002",
+    "lessonId": "g7-b03",
+    "skillIds": ["element-symbols"],
+    "difficulty": 1,
+    "prompt": "Phân loại các nguyên tố hóa học sau vào hai nhóm: Kim loại hay Phi kim.",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "metal", "label": "Kim loại" },
+        { "id": "non-metal", "label": "Phi kim" }
+      ],
+      "items": [
+        { "id": "fe", "label": "Iron (Sắt - Fe)", "bucketId": "metal" },
+        { "id": "cu", "label": "Copper (Đồng - Cu)", "bucketId": "metal" },
+        { "id": "al", "label": "Aluminium (Nhôm - Al)", "bucketId": "metal" },
+        { "id": "o", "label": "Oxygen (O)", "bucketId": "non-metal" },
+        { "id": "c", "label": "Carbon (C)", "bucketId": "non-metal" },
+        { "id": "s", "label": "Sulfur (Lưu huỳnh - S)", "bucketId": "non-metal" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Kim loại dẫn điện, dẫn nhiệt tốt, có ánh kim (như sắt, đồng, nhôm)." },
+      { "level": 2, "text": "Khí oxi, than chì (carbon), lưu huỳnh là các phi kim." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại nguyên tố", "body": "Dựa vào tính chất vật lí và vị trí bảng tuần hoàn." },
+      { "kind": "knowledge", "title": "Đặc tính", "body": "Fe, Cu, Al là kim loại. O, C, S là phi kim." },
+      { "kind": "answer", "title": "Kết luận", "body": "Kim loại: Fe, Cu, Al · Phi kim: O, C, S." }
+    ],
+    "finalSolution": "Kim loại: **Iron (Fe), Copper (Cu), Aluminium (Al)** · Phi kim: **Oxygen (O), Carbon (C), Sulfur (S)**.",
+    "commonMistakes": []
   }
 ]

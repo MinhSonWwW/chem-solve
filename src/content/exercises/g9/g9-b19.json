@@ -87,5 +87,65 @@
       { "kind": "answer", "title": "Xếp thứ tự giảm dần", "body": "Kali (K) -> Magie (Mg) -> Sắt (Fe) -> Đồng (Cu) -> Bạc (Ag)." }
     ],
     "finalSolution": "K -> Mg -> Fe -> Cu -> Ag"
+  },
+  {
+    "id": "g9-b19-match-002",
+    "lessonId": "g9-b19",
+    "skillIds": ["activity-series"],
+    "difficulty": 2,
+    "prompt": "Ghép đôi mỗi kim loại với khả năng phản ứng đặc trưng tương ứng trong dãy hoạt động hóa học.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Na (Sodium)", "right": "Tác dụng mãnh liệt với nước ở nhiệt độ thường sinh khí H2" },
+        { "left": "Fe (Iron)", "right": "Tác dụng với acid HCl loãng giải phóng khí H2" },
+        { "left": "Cu (Copper)", "right": "Không tan trong HCl loãng, đẩy được kim loại Ag ra khỏi AgNO3" },
+        { "left": "Au (Gold)", "right": "Kim loại quý trơ, không tác dụng với acid loãng và muối thông thường" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Kim loại kiềm như Na phản ứng với nước rất mạnh; Cu đứng sau H nhưng đứng trước Ag." },
+      { "level": 2, "text": "Vàng Au là kim loại kém hoạt động nhất ở cuối dãy." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Ý nghĩa dãy hoạt động", "body": "Mức độ hoạt động giảm dần từ trái sang phải." },
+      { "kind": "knowledge", "title": "Tính chất", "body": "Na: tác dụng nước · Fe: tác dụng acid giải phóng H2 · Cu: đứng sau H nhưng trước Ag nên đẩy Ag ra khỏi muối · Au: trơ." },
+      { "kind": "answer", "title": "Kết luận", "body": "Ghép đúng từng kim loại với tính chất." }
+    ],
+    "finalSolution": "Na: tác dụng nước · Fe: tác dụng HCl · Cu: đẩy Ag ra khỏi muối · Au: kim loại trơ.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b19-sort-003",
+    "lessonId": "g9-b19",
+    "skillIds": ["activity-series"],
+    "difficulty": 1,
+    "prompt": "Phân loại các kim loại sau thành hai nhóm: Đứng trước Hydro (tác dụng với acid HCl loãng) hay Đứng sau Hydro (không tác dụng).",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "before-h", "label": "Đứng trước H (Tác dụng với HCl loãng)" },
+        { "id": "after-h", "label": "Đứng sau H (Không tác dụng với HCl loãng)" }
+      ],
+      "items": [
+        { "id": "k", "label": "Kali (K)", "bucketId": "before-h" },
+        { "id": "mg", "label": "Magie (Mg)", "bucketId": "before-h" },
+        { "id": "zn", "label": "Kẽm (Zn)", "bucketId": "before-h" },
+        { "id": "fe", "label": "Sắt (Fe)", "bucketId": "before-h" },
+        { "id": "cu", "label": "Đồng (Cu)", "bucketId": "after-h" },
+        { "id": "ag", "label": "Bạc (Ag)", "bucketId": "after-h" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Kim loại đứng trước H: K, Na, Ca, Mg, Al, Zn, Fe, Pb. Đứng sau H: Cu, Ag, Au." },
+      { "level": 2, "text": "Chỉ các kim loại đứng trước H mới đẩy được H2 ra khỏi acid loãng." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Mốc Hydro (H)", "body": "Vị trí của nguyên tố Hydro trong dãy hoạt động là ranh giới tác dụng với acid loãng." },
+      { "kind": "knowledge", "title": "Phân loại", "body": "Trước H: K, Mg, Zn, Fe. Sau H: Cu, Ag." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đã phân loại 6 kim loại theo ranh giới H." }
+    ],
+    "finalSolution": "Trước H: **K, Mg, Zn, Fe** · Sau H: **Cu, Ag**.",
+    "commonMistakes": []
   }
 ]

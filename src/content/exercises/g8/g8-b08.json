@@ -114,5 +114,65 @@
     "commonMistakes": [
       { "id": "confused-acids", "message": "Nhầm HCl là axit trong giấm ăn (giấm ăn là axit axetic CH3COOH)." }
     ]
+  },
+  {
+    "id": "g8-b08-sort-005",
+    "lessonId": "g8-b08",
+    "skillIds": ["acid-properties"],
+    "difficulty": 1,
+    "prompt": "Phân loại các chất sau vào hai nhóm: Acid hay Hợp chất khác.",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "acid", "label": "Acid" },
+        { "id": "other", "label": "Hợp chất khác" }
+      ],
+      "items": [
+        { "id": "hcl", "label": "Hydrochloric acid (HCl)", "bucketId": "acid" },
+        { "id": "h2so4", "label": "Sulfuric acid (H2SO4)", "bucketId": "acid" },
+        { "id": "hno3", "label": "Nitric acid (HNO3)", "bucketId": "acid" },
+        { "id": "naoh", "label": "Sodium hydroxide (NaOH)", "bucketId": "other" },
+        { "id": "cao", "label": "Calcium oxide (CaO)", "bucketId": "other" },
+        { "id": "nacl", "label": "Sodium chloride (NaCl)", "bucketId": "other" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Phân tử acid luôn có nguyên tử H liên kết với gốc acid." },
+      { "level": 2, "text": "HCl, H2SO4, HNO3 là các acid; NaOH là base, CaO là oxide, NaCl là muối." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đặc điểm nhận biết", "body": "Acid có nguyên tử H đứng đầu CTHH vô cơ." },
+      { "kind": "knowledge", "title": "Phân loại", "body": "Acid: HCl, H2SO4, HNO3. Hợp chất khác: NaOH (base), CaO (oxide), NaCl (muối)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đã phân loại đúng 6 chất vào 2 nhóm." }
+    ],
+    "finalSolution": "Acid: **HCl, H2SO4, HNO3** · Hợp chất khác: **NaOH, CaO, NaCl**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g8-b08-match-006",
+    "lessonId": "g8-b08",
+    "skillIds": ["acid-properties"],
+    "difficulty": 2,
+    "prompt": "Ghép tên acid với tên và hóa trị của gốc acid tương ứng.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "HCl (Hydrochloric acid)", "right": "Gốc -Cl (chloride, hóa trị I)" },
+        { "left": "H2SO4 (Sulfuric acid)", "right": "Gốc =SO4 (sulfate, hóa trị II)" },
+        { "left": "HNO3 (Nitric acid)", "right": "Gốc -NO3 (nitrate, hóa trị I)" },
+        { "left": "H3PO4 (Phosphoric acid)", "right": "Gốc ≡PO4 (phosphate, hóa trị III)" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Hóa trị gốc acid bằng số nguyên tử H trong phân tử acid đó." },
+      { "level": 2, "text": "HCl có 1 H => hóa trị I. H2SO4 có 2 H => hóa trị II. H3PO4 có 3 H => hóa trị III." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Quy tắc hóa trị gốc acid", "body": "Hóa trị gốc acid = số nguyên tử Hydrogen thay thế." },
+      { "kind": "knowledge", "title": "Gốc acid", "body": "Cl (I), SO4 (II), NO3 (I), PO4 (III)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Ghép đúng từng acid với gốc acid và hóa trị." }
+    ],
+    "finalSolution": "HCl ↔ Gốc -Cl (I) · H2SO4 ↔ Gốc =SO4 (II) · HNO3 ↔ Gốc -NO3 (I) · H3PO4 ↔ Gốc ≡PO4 (III).",
+    "commonMistakes": []
   }
 ]

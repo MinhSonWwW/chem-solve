@@ -80,5 +80,65 @@
       { "kind": "answer", "title": "Điều kiện trao đổi", "body": "Điều kiện phản ứng trao đổi tạo kết tủa, khí hoặc chất điện li yếu (s4 đúng)." }
     ],
     "finalSolution": "s1: Đúng, s2: Đúng, s3: Sai, s4: Đúng"
+  },
+  {
+    "id": "g8-b11-sort-004",
+    "lessonId": "g8-b11",
+    "skillIds": ["salt-solubility"],
+    "difficulty": 1,
+    "prompt": "Phân loại các muối sau thành hai nhóm: Muối tan tốt trong nước hay Muối không tan (kết tủa).",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "soluble", "label": "Muối tan" },
+        { "id": "insoluble", "label": "Muối không tan (kết tủa)" }
+      ],
+      "items": [
+        { "id": "nacl", "label": "NaCl (Sodium chloride)", "bucketId": "soluble" },
+        { "id": "kno3", "label": "KNO3 (Potassium nitrate)", "bucketId": "soluble" },
+        { "id": "cacl2", "label": "CaCl2 (Calcium chloride)", "bucketId": "soluble" },
+        { "id": "baso4", "label": "BaSO4 (Barium sulfate)", "bucketId": "insoluble" },
+        { "id": "agcl", "label": "AgCl (Silver chloride)", "bucketId": "insoluble" },
+        { "id": "caco3", "label": "CaCO3 (Calcium carbonate)", "bucketId": "insoluble" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Hầu hết muối Na, K và gốc nitrat NO3 đều tan tốt." },
+      { "level": 2, "text": "BaSO4, AgCl, CaCO3 là những chất kết tủa không tan trong nước." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Bảng tính tan", "body": "Dựa vào quy tắc tính tan của các muối vô cơ." },
+      { "kind": "knowledge", "title": "Phân loại", "body": "Muối tan: NaCl, KNO3, CaCl2. Muối không tan: BaSO4, AgCl, CaCO3." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đã phân loại đúng 6 muối vào 2 nhóm." }
+    ],
+    "finalSolution": "Muối tan: **NaCl, KNO3, CaCl2** · Muối kết tủa: **BaSO4, AgCl, CaCO3**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g8-b11-match-005",
+    "lessonId": "g8-b11",
+    "skillIds": ["salt-reactions"],
+    "difficulty": 2,
+    "prompt": "Ghép đôi mỗi chất kết tủa sau với màu sắc đặc trưng của nó trong dung dịch.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "BaSO4 (Barium sulfate)", "right": "Kết tủa trắng (không tan trong acid mạnh)" },
+        { "left": "AgCl (Silver chloride)", "right": "Kết tủa trắng (hóa đen ngoài ánh sáng)" },
+        { "left": "Cu(OH)2 (Copper(II) hydroxide)", "right": "Kết tủa màu xanh lam" },
+        { "left": "Fe(OH)3 (Iron(III) hydroxide)", "right": "Kết tủa màu nâu đỏ" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Cu(II) thường có màu xanh lam, Fe(III) thường có màu nâu đỏ." },
+      { "level": 2, "text": "BaSO4 và AgCl đều là kết tủa trắng, nhưng AgCl nhạy cảm ánh sáng bị sẫm màu." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Màu sắc kết tủa", "body": "Nhận biết các chất kết tủa thông dụng qua màu sắc." },
+      { "kind": "knowledge", "title": "Đặc điểm màu", "body": "BaSO4: trắng · AgCl: trắng hóa đen ngoài ánh sáng · Cu(OH)2: xanh lam · Fe(OH)3: nâu đỏ." },
+      { "kind": "answer", "title": "Kết luận", "body": "Ghép đúng từng kết tủa với màu sắc." }
+    ],
+    "finalSolution": "BaSO4 ↔ Trắng · AgCl ↔ Trắng hóa đen · Cu(OH)2 ↔ Xanh lam · Fe(OH)3 ↔ Nâu đỏ.",
+    "commonMistakes": []
   }
 ]

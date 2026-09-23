@@ -86,5 +86,88 @@
       { "kind": "answer", "title": "Tính chất chỉ thị màu", "body": "Vôi tôi Ca(OH)2 có tính bazơ làm quỳ tím hóa xanh, không phải đỏ (s4 sai)." }
     ],
     "finalSolution": "s1: Đúng, s2: Sai, s3: Đúng, s4: Sai"
+  },
+  {
+    "id": "g8-b10-sort-004",
+    "lessonId": "g8-b10",
+    "skillIds": ["oxide-classification"],
+    "difficulty": 1,
+    "prompt": "Phân loại các oxide sau vào hai nhóm: Oxide acid hay Oxide base.",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "acid-oxide", "label": "Oxide acid (Oxit axit)" },
+        { "id": "base-oxide", "label": "Oxide base (Oxit bazơ)" }
+      ],
+      "items": [
+        { "id": "co2", "label": "CO2 (Carbon dioxide)", "bucketId": "acid-oxide" },
+        { "id": "so2", "label": "SO2 (Sulfur dioxide)", "bucketId": "acid-oxide" },
+        { "id": "p2o5", "label": "P2O5 (Diphosphorus pentoxide)", "bucketId": "acid-oxide" },
+        { "id": "cao", "label": "CaO (Calcium oxide)", "bucketId": "base-oxide" },
+        { "id": "na2o", "label": "Na2O (Sodium oxide)", "bucketId": "base-oxide" },
+        { "id": "fe2o3", "label": "Fe2O3 (Iron(III) oxide)", "bucketId": "base-oxide" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Oxide của phi kim thường là oxide acid; oxide của kim loại thường là oxide base." },
+      { "level": 2, "text": "CO2, SO2, P2O5 là oxide phi kim (acid); CaO, Na2O, Fe2O3 là oxide kim loại (base)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại theo nguyên tố kết hợp", "body": "Phi kim + Oxygen -> Oxide acid. Kim loại + Oxygen -> Oxide base." },
+      { "kind": "knowledge", "title": "Đối chiếu chất", "body": "Oxide acid: CO2, SO2, P2O5. Oxide base: CaO, Na2O, Fe2O3." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đã phân chia chính xác 6 oxide vào 2 nhóm." }
+    ],
+    "finalSolution": "Oxide acid: **CO2, SO2, P2O5** · Oxide base: **CaO, Na2O, Fe2O3**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g8-b10-build-005",
+    "lessonId": "g8-b10",
+    "skillIds": ["oxide-classification"],
+    "difficulty": 2,
+    "prompt": "Nhấn các mảnh ghép để tạo công thức hóa học của Nhôm oxide (Aluminium oxide) có hóa trị Al(III) và O(II).",
+    "answer": {
+      "kind": "formula-builder",
+      "tiles": ["Al", "O", "2", "3", "4", "Fe"],
+      "accepted": ["Al2O3"]
+    },
+    "hints": [
+      { "level": 1, "text": "Áp dụng quy tắc hóa trị: x × III = y × II => x/y = 2/3." },
+      { "level": 2, "text": "Nhấn theo thứ tự: Al → 2 → O → 3 để tạo Al2O3." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Quy tắc hóa trị", "body": "Al hóa trị III, O hóa trị II: CTHH dạng Al_x O_y với x/y = 2/3." },
+      { "kind": "compute", "title": "Xác định chỉ số", "body": "x = 2, y = 3 => CTHH là Al2O3." },
+      { "kind": "answer", "title": "Kết luận", "body": "Công thức đúng là **Al2O3**." }
+    ],
+    "finalSolution": "Công thức hóa học của nhôm oxide là **Al2O3**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g8-b10-match-006",
+    "lessonId": "g8-b10",
+    "skillIds": ["oxide-reactions"],
+    "difficulty": 2,
+    "prompt": "Ghép đôi mỗi oxide với acid hoặc base tương ứng của nó khi phản ứng với nước.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "CO2 (Carbon dioxide)", "right": "H2CO3 (Carbonic acid)" },
+        { "left": "SO3 (Sulfur trioxide)", "right": "H2SO4 (Sulfuric acid)" },
+        { "left": "CaO (Calcium oxide)", "right": "Ca(OH)2 (Calcium hydroxide)" },
+        { "left": "Na2O (Sodium oxide)", "right": "NaOH (Sodium hydroxide)" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Oxide acid + nước -> acid tương ứng; Oxide base + nước -> base tương ứng." },
+      { "level": 2, "text": "CO2 tạo H2CO3, SO3 tạo H2SO4, CaO tạo Ca(OH)2, Na2O tạo NaOH." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định sản phẩm với nước", "body": "Oxide acid tạo acid, oxide base tạo base kiềm tương ứng." },
+      { "kind": "knowledge", "title": "PTHH", "body": "CO2 + H2O -> H2CO3 · SO3 + H2O -> H2SO4 · CaO + H2O -> Ca(OH)2 · Na2O + H2O -> 2NaOH." },
+      { "kind": "answer", "title": "Kết luận", "body": "Ghép đúng từng cặp oxide và hợp chất tương ứng." }
+    ],
+    "finalSolution": "CO2 ↔ H2CO3 · SO3 ↔ H2SO4 · CaO ↔ Ca(OH)2 · Na2O ↔ NaOH.",
+    "commonMistakes": []
   }
 ]
