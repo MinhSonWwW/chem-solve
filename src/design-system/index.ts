@@ -7,6 +7,7 @@ export * from './components/XPBadge';
 export * from './components/GemBadge';
 export * from './components/Formula';
 export * from './components/FeedbackSheet';
+export * from './components/FeedbackBadge';
 export * from './components/Mascot';
 export * from './components/SnakePath';
 export * from './components/ChemKeyboard';
