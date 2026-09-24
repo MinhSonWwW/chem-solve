@@ -79,7 +79,44 @@ export async function loadExercises(lessonId: string): Promise<Exercise[]> {
   }
 }
 
-/** Clear the exercise cache (useful for testing) */
+import { TheoryContentSchema, type TheoryContent } from './schema/theory';
+export type { TheoryContent };
+
+const theoryCache = new Map<string, TheoryContent>();
+
+/**
+ * Load and validate micro-learning theory content for a given lesson.
+ */
+export async function loadTheory(lessonId: string): Promise<TheoryContent | null> {
+  if (theoryCache.has(lessonId)) {
+    return theoryCache.get(lessonId)!;
+  }
+
+  const match = lessonId.match(/^g(\d)-b\d{2}$/);
+  if (!match) return null;
+
+  const grade = match[1];
+
+  try {
+    const module = await import(`./theories/g${grade}/${lessonId}.json`);
+    const raw: unknown = module.default;
+
+    const result = TheoryContentSchema.safeParse(raw);
+    if (!result.success) {
+      console.error(`Theory in ${lessonId} failed validation:`, result.error.issues);
+      throw new Error(`Invalid theory in ${lessonId}: ${result.error.issues[0]?.message}`);
+    }
+
+    theoryCache.set(lessonId, result.data);
+    return result.data;
+  } catch (err) {
+    return null;
+  }
+}
+
+/** Clear the exercise and theory caches (useful for testing) */
 export function clearExerciseCache(): void {
   exerciseCache.clear();
+  theoryCache.clear();
 }
+

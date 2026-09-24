@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Check, Lock, Star, Gift, Play, Award } from 'lucide-react';
+import { Check, Lock, Star, Gift, Play, Award, BookOpen } from 'lucide-react';
 import { sound } from '@/lib/audio';
 
 export interface PathNode {
   id: string;
   title: string;
-  type: 'lesson' | 'checkpoint' | 'chest';
+  type: 'lesson' | 'theory' | 'checkpoint' | 'chest';
   status: 'completed' | 'active' | 'locked';
   stars?: number; // 0-3
   isReady?: boolean;
@@ -142,6 +142,7 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
           const isCompleted = node.status === 'completed';
           const isActive = node.status === 'active';
           const isChest = node.type === 'chest';
+          const isTheory = node.type === 'theory';
           const isCheckpoint = node.type === 'checkpoint';
           const isUnready = node.isReady === false;
           const showStartBadge = isActive && index === firstActiveIndex;
@@ -158,7 +159,7 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
                 top: `${coord.y}px`,
               }}
             >
-              {/* Active Node Floating Tooltip Banner (Duolingo Style - only for the current active node) */}
+              {/* Active Node Floating Tooltip Banner */}
               {showStartBadge && (
                 <motion.div
                   initial={{ y: 4 }}
@@ -166,11 +167,21 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
                   transition={{ repeat: Infinity, repeatType: 'reverse', duration: 0.9, ease: 'easeInOut' }}
                   className="absolute -top-11 z-20 flex flex-col items-center pointer-events-none"
                 >
-                  <div className="bg-gradient-to-r from-cyan-400 to-cyan-300 text-slate-950 font-black text-[11px] uppercase tracking-wider px-3.5 py-1 rounded-xl shadow-[0_4px_12px_rgba(6,182,212,0.5)] border border-cyan-200">
-                    BẮT ĐẦU
+                  <div
+                    className={`font-black text-[11px] uppercase tracking-wider px-3.5 py-1 rounded-xl shadow-lg border ${
+                      isTheory
+                        ? 'bg-gradient-to-r from-purple-400 to-fuchsia-300 text-slate-950 border-purple-200 shadow-[0_4px_12px_rgba(192,38,211,0.5)]'
+                        : 'bg-gradient-to-r from-cyan-400 to-cyan-300 text-slate-950 border-cyan-200 shadow-[0_4px_12px_rgba(6,182,212,0.5)]'
+                    }`}
+                  >
+                    {isTheory ? 'LÝ THUYẾT' : 'BẮT ĐẦU'}
                   </div>
                   {/* Downward pointer triangle */}
-                  <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] border-t-cyan-300 -mt-[1px]" />
+                  <div
+                    className={`w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] -mt-[1px] ${
+                      isTheory ? 'border-t-fuchsia-300' : 'border-t-cyan-300'
+                    }`}
+                  />
                 </motion.div>
               )}
 
@@ -178,7 +189,11 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
               <div className="relative">
                 {/* Active pulsating beacon ring */}
                 {isActive && (
-                  <span className="absolute -inset-2.5 rounded-full bg-cyan-400/35 animate-ping pointer-events-none" />
+                  <span
+                    className={`absolute -inset-2.5 rounded-full animate-ping pointer-events-none ${
+                      isTheory ? 'bg-purple-400/35' : 'bg-cyan-400/35'
+                    }`}
+                  />
                 )}
 
                 <button
@@ -188,7 +203,9 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
                     isCompleted
                       ? 'bg-emerald-500 text-slate-950 border-2 border-emerald-300 shadow-[0_8px_0_0_#047857] hover:bg-emerald-400 active:translate-y-1.5 active:shadow-[0_2px_0_0_#047857]'
                       : isActive
-                      ? 'bg-gradient-to-tr from-cyan-500 to-cyan-300 text-slate-950 border-2 border-cyan-100 shadow-[0_8px_0_0_#0891b2] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#0891b2] ring-4 ring-cyan-500/30'
+                      ? isTheory
+                        ? 'bg-gradient-to-tr from-purple-600 to-fuchsia-400 text-white border-2 border-purple-200 shadow-[0_8px_0_0_#7e22ce] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#7e22ce] ring-4 ring-purple-500/30'
+                        : 'bg-gradient-to-tr from-cyan-500 to-cyan-300 text-slate-950 border-2 border-cyan-100 shadow-[0_8px_0_0_#0891b2] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#0891b2] ring-4 ring-cyan-500/30'
                       : isChest
                       ? 'bg-gradient-to-tr from-amber-600 to-amber-400 text-amber-950 border-2 border-amber-300 shadow-[0_8px_0_0_#78350f] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#78350f]'
                       : 'bg-slate-800 text-slate-400 border-2 border-slate-700 shadow-[0_6px_0_0_#0f172a] hover:bg-slate-750 hover:border-slate-600 active:translate-y-1'
@@ -201,10 +218,14 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
                     <Gift className={`w-8 h-8 ${isCompleted ? 'text-slate-950' : 'text-amber-100'}`} />
                   ) : isCompleted ? (
                     <Check className="w-8 h-8 stroke-[3.5]" />
+                  ) : isActive && isTheory ? (
+                    <BookOpen className="w-7 h-7 text-white stroke-[2.5]" />
                   ) : isActive ? (
                     <Play className="w-7 h-7 fill-slate-950 ml-0.5" />
                   ) : isUnready ? (
                     <span className="text-xl select-none" title="Đang biên soạn">🛠️</span>
+                  ) : isTheory ? (
+                    <BookOpen className="w-6 h-6 text-slate-500" />
                   ) : isCheckpoint ? (
                     <Award className="w-7 h-7" />
                   ) : (

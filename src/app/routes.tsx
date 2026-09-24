@@ -5,6 +5,7 @@ import { HomePage } from './pages/HomePage';
 import { LearnPage } from './pages/LearnPage';
 import { PracticePage } from './pages/PracticePage';
 import { ExercisePage } from './pages/ExercisePage';
+import { TheoryPage } from './pages/TheoryPage';
 import { GamesPage } from './pages/GamesPage';
 import { DailyPage } from './pages/DailyPage';
 import { ProgressPage } from './pages/ProgressPage';
@@ -46,6 +47,10 @@ export const router = createHashRouter([
       {
         path: 'play/:lessonId/:nodeId',
         element: <ExercisePage />
+      },
+      {
+        path: 'theory/:lessonId/:nodeId',
+        element: <TheoryPage />
       },
       {
         path: 'games',

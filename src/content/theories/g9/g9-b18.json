@@ -1,0 +1,58 @@
+{
+  "lessonId": "g9-b18",
+  "nodeId": "g9-b18-theory",
+  "title": "Dãy hoạt động hóa học của kim loại",
+  "subtitle": "Quy tắc phản ứng và mẹo ghi nhớ cốt lõi",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Quy tắc vàng",
+      "badgeColor": "purple",
+      "title": "Dãy hoạt động hóa học & Mẹo ghi nhớ",
+      "content": "Mức độ hoạt động hóa học của các kim loại giảm dần từ trái sang phải theo thứ tự:",
+      "callout": "💡 Câu thần chú dễ nhớ:\nKhi Nào Cần May Áo Záp Sắt Nhớ Sang Phố Hỏi Cửa Hàng Á Phi Âu",
+      "bulletPoints": [
+        "Dãy chuẩn: [[K]] > [[Na]] > [[Ca]] > [[Mg]] > [[Al]] > [[Zn]] > [[Fe]] > [[Pb]] > [[(H)]] > [[Cu]] > [[Ag]] > [[Au]]",
+        "Kim loại đứng trước [[(H)]]: Phản ứng với acid loãng ([[HCl]], [[H2SO4]]) giải phóng khí [[H2]].",
+        "Kim loại đứng sau [[(H)]] ([[Cu]], [[Ag]], [[Au]]): KHÔNG phản ứng với acid loãng để giải phóng [[H2]]."
+      ]
+    },
+    {
+      "id": "c2",
+      "badge": "Phản ứng mẫu",
+      "badgeColor": "emerald",
+      "title": "Kim loại đẩy kim loại khỏi dung dịch muối",
+      "content": "Kim loại đứng trước (mạnh hơn) đẩy được kim loại đứng sau (yếu hơn) ra khỏi dung dịch muối của nó.",
+      "formulaExample": "Fe + CuSO4 -> FeSO4 + Cu",
+      "bulletPoints": [
+        "Thí nghiệm tiêu biểu: Cho đinh sắt [[Fe]] vào dung dịch [[CuSO4]], sắt đứng trước đồng nên đẩy đồng ra. Hiện tượng: có lớp đồng đỏ bám ngoài thanh sắt, màu xanh lam của dung dịch nhạt dần.",
+        "Ngược lại: Cho lá đồng [[Cu]] vào dung dịch muối sắt [[FeSO4]] thì KHÔNG có phản ứng xảy ra vì Cu yếu hơn Fe."
+      ],
+      "callout": "📌 Nguyên tắc cốt lõi: Kim loại mạnh hơn (đứng trước) mới đẩy được kim loại yếu hơn (đứng sau) ra khỏi muối."
+    },
+    {
+      "id": "c3",
+      "badge": "Bẫy thường gặp",
+      "badgeColor": "amber",
+      "title": "3 bẫy đề thi học sinh hay nhầm lẫn nhất",
+      "content": "Khi làm bài tập trắc nghiệm và Đúng/Sai, hãy cẩn thận với 3 điểm này:",
+      "bulletPoints": [
+        "Bẫy 1: [[Cu]], [[Ag]], [[Au]] đứng sau [[(H)]] nên không tạo khí [[H2]] với acid loãng.",
+        "Bẫy 2: Các kim loại tan mạnh trong nước như [[Na]], [[K]], [[Ca]] khi cho vào dung dịch muối sẽ phản ứng với NƯỚC trước tạo dung dịch kiềm + [[H2]], chứ không đẩy trực tiếp kim loại yếu hơn ra.",
+        "Bẫy 3: Kim loại sắt [[Fe]] khi tác dụng với [[HCl]] loãng chỉ tạo muối Iron(II) [[FeCl2]] chứ không tạo [[FeCl3]]."
+      ],
+      "callout": "⚠️ Ghi nhớ: [[Na]], [[K]] phản ứng mãnh liệt với nước ngay ở nhiệt độ thường!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Dựa vào dãy hoạt động hóa học, kim loại nào sau đây ĐẨY ĐƯỢC đồng (Cu) ra khỏi dung dịch CuSO4?",
+    "options": [
+      { "id": "opt-1", "text": "Chỉ có bạc (Ag)", "correct": false },
+      { "id": "opt-2", "text": "Cả kẽm (Zn) và sắt (Fe)", "correct": true },
+      { "id": "opt-3", "text": "Chỉ có đồng (Cu)", "correct": false },
+      { "id": "opt-4", "text": "Không có kim loại nào", "correct": false }
+    ],
+    "explanation": "Chính xác! Thứ tự trong dãy: Zn > Fe > (H) > Cu > Ag. Do Zn và Fe đứng trước Cu nên cả hai đều đẩy được Cu ra khỏi dung dịch muối CuSO4!"
+  }
+}

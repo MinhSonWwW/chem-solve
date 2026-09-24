@@ -66,6 +66,7 @@ interface UserState {
   restoreProgress: () => Promise<void>;
   exportData: () => Promise<string>;
   importData: (jsonStr: string) => Promise<boolean>;
+  completeTheoryNode: (lessonId: string, nodeId: string, earnedXp?: number) => Promise<void>;
   endSession: () => Promise<{
     totalXp: number;
     accuracy: number;
@@ -364,6 +365,39 @@ export const useUserStore = create<UserState>((set, get) => ({
       await get().restoreProgress();
     }
     return ok;
+  },
+
+  completeTheoryNode: async (lessonId: string, nodeId: string, earnedXp = 10) => {
+    const nodeKey = `${lessonId}:${nodeId}`;
+    const earnedGems = 10;
+
+    set((s) => ({
+      xp: s.xp + earnedXp,
+      gems: (s.gems || 0) + earnedGems,
+      completedNodes: {
+        ...s.completedNodes,
+        [nodeKey]: {
+          accuracy: 1,
+          bestXp: earnedXp,
+          completedAt: Date.now(),
+        },
+      },
+    }));
+
+    try {
+      const progress = await loadUserProgress();
+      progress.xp = get().xp;
+      progress.gems = get().gems;
+      progress.completedNodes[nodeKey] = {
+        accuracy: 1,
+        bestXp: earnedXp,
+        completedAt: Date.now(),
+      };
+      await saveUserProgress(progress);
+      get().incrementStreak();
+    } catch (err) {
+      console.error('Failed to save theory progress:', err);
+    }
   },
 
   endSession: async () => {

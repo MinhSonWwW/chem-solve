@@ -188,7 +188,11 @@ export const LearnPage: React.FC = () => {
     if (!selectedNode) return;
     const { lesson, node } = selectedNode;
     setSelectedNode(null);
-    navigate(`/play/${lesson.id}/${node.id}`);
+    if (node.type === 'theory') {
+      navigate(`/theory/${lesson.id}/${node.id}`);
+    } else {
+      navigate(`/play/${lesson.id}/${node.id}`);
+    }
   };
 
   return (

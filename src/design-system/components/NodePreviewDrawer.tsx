@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Play, Star, Lock } from 'lucide-react';
+import { X, Play, Star, Lock, BookOpen } from 'lucide-react';
 import { Button } from './Button';
 import { Mascot } from './Mascot';
 import { sound } from '@/lib/audio';
@@ -36,6 +36,7 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
   if (!isOpen || !node) return null;
 
   const isReady = lesson?.ready ?? false;
+  const isTheory = node.type === 'theory';
 
   return (
     <AnimatePresence>
@@ -70,15 +71,15 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
               {/* Mascot Avatar */}
               <div className="flex justify-center pt-2">
                 <Mascot
-                  state={hearts <= 0 ? 'out_of_hearts' : isCompleted ? 'happy' : isUnlocked ? 'cheering' : 'thinking'}
+                  state={hearts <= 0 && !isTheory ? 'out_of_hearts' : isCompleted ? 'happy' : isUnlocked ? 'cheering' : 'thinking'}
                   size="xl"
                 />
               </div>
 
               {/* Title & Info */}
               <div className="space-y-1">
-                <span className="text-[10px] font-black uppercase tracking-wider text-[#0ea5e9]">
-                  {lesson?.title}
+                <span className={`text-[10px] font-black uppercase tracking-wider ${isTheory ? 'text-fuchsia-400' : 'text-[#0ea5e9]'}`}>
+                  {isTheory ? '📖 LÝ THUYẾT TRỌNG TÂM' : lesson?.title}
                 </span>
                 <h2 className="text-lg font-black text-white">
                   {node.title}
@@ -91,14 +92,14 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
                 <div className="p-2.5 rounded-2xl bg-[#58cc02]/15 border-2 border-[#58cc02]/40 flex items-center justify-center gap-2 text-xs font-bold text-emerald-300">
                   <Star className="w-4 h-4 fill-emerald-400 text-emerald-400" />
                   <span>
-                    Đã hoàn thành · Chính xác: {Math.round((bestAccuracy ?? 1) * 100)}%
+                    {isTheory ? 'Đã hoàn thành phần lý thuyết' : `Đã hoàn thành · Chính xác: ${Math.round((bestAccuracy ?? 1) * 100)}%`}
                   </span>
                 </div>
               )}
 
               {/* Action */}
               <div className="pt-2">
-                {hearts <= 0 ? (
+                {hearts <= 0 && !isTheory ? (
                   <div className="space-y-2.5">
                     <div className="p-3.5 rounded-2xl bg-[#ff4b4b]/15 border-2 border-[#ff4b4b]/40 flex flex-col items-center justify-center gap-1.5 text-xs text-rose-200">
                       <div className="flex items-center gap-1.5 text-[#ff4b4b] font-bold">
@@ -127,14 +128,30 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
                     variant="primary"
                     size="lg"
                     fullWidth
-                    className="flex items-center justify-center gap-2"
+                    className={`flex items-center justify-center gap-2 ${
+                      isTheory
+                        ? 'bg-gradient-to-r from-purple-600 to-fuchsia-500 hover:from-purple-500 hover:to-fuchsia-400 text-white font-black shadow-[0_4px_0_0_#6b21a8]'
+                        : ''
+                    }`}
                     onClick={() => {
                       sound.playClick();
                       onStart();
                     }}
                   >
-                    <Play className="w-5 h-5 fill-white" />
-                    <span>{isCompleted ? 'ÔN TẬP LẠI' : 'BẮT ĐẦU CHẶNG'}</span>
+                    {isTheory ? (
+                      <BookOpen className="w-5 h-5 text-white stroke-[2.5]" />
+                    ) : (
+                      <Play className="w-5 h-5 fill-white" />
+                    )}
+                    <span>
+                      {isTheory
+                        ? isCompleted
+                          ? 'XEM LẠI LÝ THUYẾT'
+                          : 'HỌC LÝ THUYẾT (2 PHÚT)'
+                        : isCompleted
+                        ? 'ÔN TẬP LẠI'
+                        : 'BẮT ĐẦU CHẶNG'}
+                    </span>
                   </Button>
                 ) : (
                   <div className="space-y-2.5">

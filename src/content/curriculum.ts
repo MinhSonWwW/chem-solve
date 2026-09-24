@@ -5,7 +5,7 @@ export interface NodeInfo {
   nodeIndex: number;
   title: string;
   description: string;
-  type: 'lesson' | 'checkpoint' | 'chest';
+  type: 'lesson' | 'theory' | 'checkpoint' | 'chest';
 }
 
 export interface Lesson {
@@ -295,7 +295,8 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             subtitle: 'Tính dẫn điện, dẫn nhiệt và tính chất hóa học',
             ready: true,
             nodes: [
-              { id: 'g9-b18-n01', nodeIndex: 1, title: 'Tính chất vật lí & hóa học', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g9-b18-theory', nodeIndex: 1, title: 'Lý thuyết Dãy hoạt động kim loại', description: 'Quy tắc vàng & mẹo ghi nhớ', type: 'theory' },
+              { id: 'g9-b18-n01', nodeIndex: 2, title: 'Tính chất vật lí & hóa học', description: '6 câu hỏi', type: 'lesson' },
             ],
           },
           {
