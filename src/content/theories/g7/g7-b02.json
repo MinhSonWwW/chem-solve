@@ -1,0 +1,59 @@
+{
+  "lessonId": "g7-b02",
+  "nodeId": "g7-b02-theory",
+  "title": "Cấu tạo nguyên tử",
+  "subtitle": "Hạt nhân (proton, neutron), lớp vỏ electron và khối lượng nguyên tử",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Mô hình nguyên tử",
+      "badgeColor": "purple",
+      "title": "Cấu tạo 3 loại hạt cơ bản",
+      "content": "Nguyên tử là hạt vô cùng nhỏ bé cấu tạo nên các chất và trung hòa về điện:",
+      "bulletPoints": [
+        "Hạt nhân (ở tâm): Mang điện tích dương, gồm hạt Proton (kí hiệu p, mang điện tích +1) và hạt Neutron (kí hiệu n, không mang điện).",
+        "Lớp vỏ (bên ngoài): Gồm các hạt Electron (kí hiệu e, mang điện tích -1) chuyển động rất nhanh quanh hạt nhân.",
+        "Quy tắc trung hòa điện: Trong mỗi nguyên tử, tổng điện tích dương của proton bằng tổng điện tích âm của electron. Do đó: Số proton = Số electron (p = e)."
+      ],
+      "callout": "💡 Quy tắc vàng: Số proton = Số electron (nguyên tử luôn trung hòa về điện)!"
+    },
+    {
+      "id": "c2",
+      "badge": "Khối lượng nguyên tử",
+      "badgeColor": "emerald",
+      "title": "Đơn vị amu và sự phân bố khối lượng",
+      "content": "Khối lượng nguyên tử vô cùng nhỏ và tập trung hầu hết ở hạt nhân:",
+      "bulletPoints": [
+        "Đơn vị khối lượng nguyên tử: amu (atomic mass unit). 1 amu xấp xỉ khối lượng của 1 proton hoặc 1 neutron.",
+        "So sánh khối lượng: Khối lượng hạt electron vô cùng bé (chỉ khoảng 0,00055 amu, nhỏ hơn gần 1840 lần so với proton).",
+        "Quy ước tính toán: Bỏ qua khối lượng electron, khối lượng nguyên tử coi như xấp xỉ bằng tổng khối lượng của hạt nhân: Khối lượng nguyên tử ≈ Số p + Số n (amu)."
+      ],
+      "callout": "📌 Khối lượng nguyên tử tập trung gần như toàn bộ (hơn 99,9%) tại hạt nhân!"
+    },
+    {
+      "id": "c3",
+      "badge": "Lớp electron",
+      "badgeColor": "cyan",
+      "title": "Sự sắp xếp electron trên các lớp vỏ",
+      "content": "Các electron chuyển động quanh hạt nhân và sắp xếp theo từng lớp từ trong ra ngoài:",
+      "bulletPoints": [
+        "Lớp thứ 1 (gần hạt nhân nhất): Tối đa chứa được 2 electron.",
+        "Lớp thứ 2: Tối đa chứa được 8 electron.",
+        "Lớp thứ 3: Tối đa chứa được 8 electron (đối với 20 nguyên tố đầu tiên).",
+        "Quy tắc điền: Electron được phân bố lần lượt vào các lớp từ trong ra ngoài; electron lớp ngoài cùng quyết định tính chất hóa học của nguyên tố."
+      ],
+      "callout": "⚠️ Sức chứa tối đa: Lớp 1 có tối đa 2e, lớp 2 có tối đa 8e — điền đầy lớp trong mới điền tiếp lớp ngoài!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Một nguyên tử có 11 proton trong hạt nhân. Hỏi lớp vỏ của nguyên tử này có bao nhiêu hạt electron?",
+    "options": [
+      { "id": "opt-1", "text": "11 electron", "correct": true },
+      { "id": "opt-2", "text": "12 electron", "correct": false },
+      { "id": "opt-3", "text": "23 electron", "correct": false },
+      { "id": "opt-4", "text": "1 electron", "correct": false }
+    ],
+    "explanation": "Chính xác! Vì nguyên tử luôn trung hòa về điện nên số hạt proton (mang điện tích dương) luôn bằng số hạt electron (mang điện tích âm). Với 11 proton thì vỏ cũng có 11 electron."
+  }
+}

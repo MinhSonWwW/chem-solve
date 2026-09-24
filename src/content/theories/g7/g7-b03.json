@@ -1,0 +1,58 @@
+{
+  "lessonId": "g7-b03",
+  "nodeId": "g7-b03-theory",
+  "title": "Nguyên tố hóa học",
+  "subtitle": "Khái niệm, kí hiệu hóa học IUPAC và tên gọi quốc tế",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Định nghĩa",
+      "badgeColor": "purple",
+      "title": "Khái niệm Nguyên tố hóa học",
+      "content": "Nguyên tố hóa học là tập hợp những nguyên tử cùng loại, có cùng số proton trong hạt nhân:",
+      "bulletPoints": [
+        "Đặc trưng nguyên tố: Các nguyên tử thuộc cùng một nguyên tố hóa học luôn có cùng số proton. Số proton là con số căn cước đặc trưng duy nhất cho mỗi nguyên tố.",
+        "Ví dụ: Mọi nguyên tử có 1 proton đều là Hydrogen ([[H]]), có 6 proton đều là Carbon ([[C]]), có 8 proton đều là Oxygen ([[O]]).",
+        "Số lượng: Hiện nay các nhà khoa học đã tìm ra 118 nguyên tố hóa học, trong đó có 94 nguyên tố tồn tại sẵn trong tự nhiên."
+      ],
+      "callout": "💡 Số proton trong hạt nhân là số chứng minh thư xác định danh tính của một nguyên tố hóa học!"
+    },
+    {
+      "id": "c2",
+      "badge": "Kí hiệu hóa học",
+      "badgeColor": "emerald",
+      "title": "Quy ước viết kí hiệu hóa học IUPAC",
+      "content": "Mỗi nguyên tố được biểu diễn bằng một kí hiệu hóa học quốc tế thống nhất:",
+      "bulletPoints": [
+        "Quy tắc viết: Gồm 1 hoặc 2 chữ cái. Chữ cái đầu tiên BẮT BUỘC viết hoa, chữ cái thứ hai (nếu có) BẮT BUỘC viết thường.",
+        "Ví dụ 1 chữ cái: [[H]] (Hydrogen), [[C]] (Carbon), [[O]] (Oxygen), [[N]] (Nitrogen), [[P]] (Phosphorus), [[S]] (Sulfur), [[K]] (Potassium).",
+        "Ví dụ 2 chữ cái: [[He]] (Helium), [[Na]] (Sodium), [[Mg]] (Magnesium), [[Al]] (Aluminium), [[Ca]] (Calcium), [[Fe]] (Iron), [[Cu]] (Copper)."
+      ],
+      "callout": "📌 Chú ý quy tắc hoa - thường: Viết Co là nguyên tố Cobalt, nhưng viết CO là hợp chất khí độc Carbon monoxide!"
+    },
+    {
+      "id": "c3",
+      "badge": "Tên gọi IUPAC",
+      "badgeColor": "cyan",
+      "title": "Tên gọi quốc tế theo chuẩn SGK mới",
+      "content": "Làm quen với danh pháp tiếng Anh quốc tế của các nguyên tố quen thuộc:",
+      "bulletPoints": [
+        "Kim loại kiềm: Sodium ([[Na]] - tên cũ Natri), Potassium ([[K]] - tên cũ Kali).",
+        "Kim loại thông dụng: Iron ([[Fe]] - Sắt), Copper ([[Cu]] - Đồng), Aluminium ([[Al]] - Nhôm), Zinc ([[Zn]] - Kẽm), Silver ([[Ag]] - Bạc), Gold ([[Au]] - Vàng).",
+        "Phi kim phổ biến: Oxygen ([[O]] - Oxi), Hydrogen ([[H]] - Hiđro), Chlorine ([[Cl]] - Clo), Nitrogen ([[N]] - Nitơ), Carbon ([[C]] - Cacbon)."
+      ],
+      "callout": "⚠️ Cần nhớ cặp tên: Sodium (Na) và Potassium (K) là 2 kim loại hay bị nhầm lẫn kí hiệu nhất!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Kí hiệu hóa học nào sau đây là của nguyên tố Sodium (tên thường gọi là Natri)?",
+    "options": [
+      { "id": "opt-1", "text": "Na", "correct": true },
+      { "id": "opt-2", "text": "So", "correct": false },
+      { "id": "opt-3", "text": "N", "correct": false },
+      { "id": "opt-4", "text": "K", "correct": false }
+    ],
+    "explanation": "Chính xác! Sodium có nguồn gốc từ tiếng Latin Natrium nên có kí hiệu hóa học là Na. N là Nitrogen, còn K là Potassium."
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "lessonId": "g7-b01",
+  "nodeId": "g7-b01-theory",
+  "title": "Phương pháp & Kĩ năng học tập KHTN",
+  "subtitle": "Tiến trình nghiên cứu khoa học và các kĩ năng thực hành cốt lõi",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "5 bước khoa học",
+      "badgeColor": "purple",
+      "title": "Tiến trình nghiên cứu khoa học",
+      "content": "Nghiên cứu khoa học tự nhiên luôn tuân theo một tiến trình logic gồm 5 bước:",
+      "bulletPoints": [
+        "Bước 1 - Quan sát và đặt câu hỏi: Nhận biết hiện tượng tự nhiên và đặt ra câu hỏi cần tìm hiểu nguyên nhân.",
+        "Bước 2 - Đề xuất giả thuyết: Đưa ra phán đoán, câu trả lời sơ bộ dựa trên kiến thức và kinh nghiệm đã có.",
+        "Bước 3 - Lập kế hoạch kiểm tra: Thiết kế phương án thí nghiệm, chuẩn bị dụng cụ, hóa chất phù hợp.",
+        "Bước 4 - Thực hiện kế hoạch: Tiến hành thao tác thí nghiệm, thu thập và ghi chép số liệu trung thực.",
+        "Bước 5 - Kết luận và báo cáo: Xử lý số liệu, rút ra kết luận xem giả thuyết ban đầu là đúng hay sai."
+      ],
+      "callout": "💡 Ghi nhớ: Quan sát là điểm khởi đầu mở ra mọi phát minh và khám phá khoa học!"
+    },
+    {
+      "id": "c2",
+      "badge": "Kĩ năng thực hành",
+      "badgeColor": "emerald",
+      "title": "Các kĩ năng quan trọng trong phòng thí nghiệm",
+      "content": "Để học tốt và an toàn môn Khoa học tự nhiên:",
+      "bulletPoints": [
+        "Kĩ năng quan sát: Sử dụng giác quan kết hợp dụng cụ hỗ trợ (kính lúp, kính hiển vi) để ghi nhận màu sắc, trạng thái, bọt khí.",
+        "Kĩ năng phân loại: Nhóm các đối tượng, chất theo tiêu chí chung (thể rắn/lỏng/khí, tính tan, tính dẫn điện).",
+        "Kĩ năng liên kết & dự đoán: Tìm mối liên hệ nhân - quả giữa các hiện tượng và phán đoán diễn biến tiếp theo.",
+        "Kĩ năng đo đạc: Sử dụng đúng dụng cụ đo (cân điện tử, nhiệt kế, ống đong có vạch chia) và đọc số liệu ngang tầm mắt."
+      ],
+      "callout": "📌 Thao tác thí nghiệm cần chuẩn xác, cẩn thận và luôn tuân thủ hướng dẫn của giáo viên!"
+    },
+    {
+      "id": "c3",
+      "badge": "Quy tắc an toàn",
+      "badgeColor": "amber",
+      "title": "Những lưu ý an toàn tối quan trọng",
+      "content": "Những quy tắc không thể quên khi bước vào phòng thí nghiệm:",
+      "bulletPoints": [
+        "Tuyệt đối không nếm, không ngửi trực tiếp hóa chất (nếu cần ngửi, dùng bàn tay phẩy nhẹ luồng khí vào mũi).",
+        "Đun ống nghiệm: Hơ nóng đều dọc thân ống nghiệm trước khi tập trung nhiệt vào đáy; miệng ống nghiệm luôn hướng về phía không có người.",
+        "Xử lý hóa chất dính tay: Nếu bị dính acid hoặc kiềm, lập tức xả dưới vòi nước chảy liên tục nhiều phút rồi báo ngay cho giáo viên."
+      ],
+      "callout": "⚠️ An toàn là trên hết: Luôn đeo kính bảo hộ và găng tay khi làm việc với hóa chất nguy hiểm!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Bước đầu tiên trong tiến trình tìm hiểu khoa học tự nhiên là bước nào sau đây?",
+    "options": [
+      { "id": "opt-1", "text": "Quan sát và đặt câu hỏi nghiên cứu", "correct": true },
+      { "id": "opt-2", "text": "Tiến hành làm thí nghiệm ngay lập tức", "correct": false },
+      { "id": "opt-3", "text": "Viết báo cáo kết luận", "correct": false },
+      { "id": "opt-4", "text": "Đề xuất giả thuyết khi chưa quan sát", "correct": false }
+    ],
+    "explanation": "Chính xác! Bước khởi đầu của phương pháp nghiên cứu khoa học luôn là quan sát hiện tượng tự nhiên và đặt ra câu hỏi cần giải đáp."
+  }
+}

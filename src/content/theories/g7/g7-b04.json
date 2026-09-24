@@ -1,0 +1,59 @@
+{
+  "lessonId": "g7-b04",
+  "nodeId": "g7-b04-theory",
+  "title": "Sơ lược về Bảng tuần hoàn",
+  "subtitle": "Ô nguyên tố, chu kì, nhóm và các loại nguyên tố",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Ô nguyên tố",
+      "badgeColor": "purple",
+      "title": "Cấu tạo và ý nghĩa của Ô nguyên tố",
+      "content": "Mỗi nguyên tố chiếm một ô trong bảng tuần hoàn và cung cấp 4 thông tin cốt lõi:",
+      "bulletPoints": [
+        "1. Số hiệu nguyên tử (Z): Cho biết số proton trong hạt nhân, số electron ở vỏ nguyên tử (Z = p = e = Số thứ tự ô).",
+        "2. Kí hiệu hóa học: Đại diện cho nguyên tố (như [[H]], [[Na]], [[Fe]], [[Cu]]...).",
+        "3. Tên nguyên tố: Tên gọi theo danh pháp quốc tế IUPAC.",
+        "4. Khối lượng nguyên tử trung bình: Giá trị ghi ở phía dưới cùng ô nguyên tố (tính theo đơn vị amu)."
+      ],
+      "callout": "💡 Quy tắc 1-1: Số thứ tự ô = Số hiệu nguyên tử Z = Số proton = Số electron!"
+    },
+    {
+      "id": "c2",
+      "badge": "Chu kì & Nhóm",
+      "badgeColor": "emerald",
+      "title": "Quy luật Chu kì (hàng) và Nhóm (cột)",
+      "content": "Bảng tuần hoàn sắp xếp các nguyên tố theo hàng ngang và cột dọc có quy luật chặt chẽ:",
+      "bulletPoints": [
+        "Chu kì (hàng ngang): Dãy các nguyên tố có cùng SỐ LỚP ELECTRON trong nguyên tử. Bảng gồm 7 chu kì (chu kì 1, 2, 3 là chu kì nhỏ; chu kì 4, 5, 6, 7 là chu kì lớn). Số thứ tự chu kì = Số lớp electron.",
+        "Nhóm (cột dọc): Gồm các nguyên tố có tính chất hóa học tương tự nhau. Bảng gồm 18 cột, chia thành 8 nhóm A (IA đến VIIIA) và các nhóm B.",
+        "Quy tắc nhóm A: Số thứ tự nhóm A = Số electron ở lớp ngoài cùng của nguyên tử (riêng Helium có 2e nhưng xếp vào nhóm VIIIA vì lớp vỏ đã bão hòa bền vững)."
+      ],
+      "callout": "📌 Khẩu quyết: Số thứ tự chu kì = Số lớp electron; Số thứ tự nhóm A = Số electron lớp ngoài cùng!"
+    },
+    {
+      "id": "c3",
+      "badge": "Phân loại nguyên tố",
+      "badgeColor": "cyan",
+      "title": "Kim loại, Phi kim và Khí hiếm",
+      "content": "Vị trí trong bảng tuần hoàn thể hiện rõ bản chất hóa học của nguyên tố:",
+      "bulletPoints": [
+        "Kim loại: Chiếm hơn 80% số nguyên tố, nằm ở phía bên trái và ở giữa bảng tuần hoàn (nhóm IA, IIA, IIIA trừ Bo, và tất cả các nhóm B).",
+        "Phi kim: Nằm ở phía trên bên phải bảng tuần hoàn (phần lớn nhóm IVA, VA, VIA, VIIA) và nguyên tố Hydrogen ([[H]]).",
+        "Khí hiếm (Khí trơ): Nằm ở nhóm VIIIA (cột ngoài cùng bên phải), lớp electron ngoài cùng có 8e bền vững (riêng [[He]] có 2e), rất trơ và khó tham gia phản ứng hóa học."
+      ],
+      "callout": "⚠️ Khí hiếm nhóm VIIIA là những nguyên tử trơ, tồn tại độc lập dưới dạng đơn nguyên tử (He, Ne, Ar)!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Nguyên tử của nguyên tố X có 3 lớp electron và có 2 electron ở lớp ngoài cùng. Hỏi nguyên tố X thuộc chu kì mấy và nhóm mấy?",
+    "options": [
+      { "id": "opt-1", "text": "Chu kì 3, nhóm IIA", "correct": true },
+      { "id": "opt-2", "text": "Chu kì 2, nhóm IIIA", "correct": false },
+      { "id": "opt-3", "text": "Chu kì 3, nhóm VIIIA", "correct": false },
+      { "id": "opt-4", "text": "Chu kì 2, nhóm IIA", "correct": false }
+    ],
+    "explanation": "Chính xác! Số lớp electron = Số thứ tự chu kì (3 lớp electron -> Chu kì 3). Số electron lớp ngoài cùng = Số thứ tự nhóm A (2 electron lớp ngoài cùng -> Nhóm IIA). Nguyên tố X chính là Magnesium (Mg)!"
+  }
+}

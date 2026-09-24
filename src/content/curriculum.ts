@@ -103,7 +103,8 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             subtitle: 'Kĩ năng quan sát, thu thập dữ liệu và làm thí nghiệm',
             ready: true,
             nodes: [
-              { id: 'g7-b01-n01', nodeIndex: 1, title: 'Kĩ năng quan sát thí nghiệm', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g7-b01-theory', nodeIndex: 1, title: 'Lý thuyết: Kĩ năng học tập KHTN', description: '2 phút ghi nhớ', type: 'theory' },
+              { id: 'g7-b01-n01', nodeIndex: 2, title: 'Kĩ năng quan sát thí nghiệm', description: '6 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -113,8 +114,9 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             subtitle: 'Cấu tạo vỏ electron và hạt nhân proton, neutron',
             ready: true,
             nodes: [
-              { id: 'g7-b02-n01', nodeIndex: 1, title: 'Cấu tạo hạt nhân & electron', description: '6 câu hỏi', type: 'lesson' },
-              { id: 'g7-b02-n02', nodeIndex: 2, title: 'Khối lượng nguyên tử (amu)', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g7-b02-theory', nodeIndex: 1, title: 'Lý thuyết: Cấu tạo nguyên tử', description: '2 phút ghi nhớ', type: 'theory' },
+              { id: 'g7-b02-n01', nodeIndex: 2, title: 'Cấu tạo hạt nhân & electron', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g7-b02-n02', nodeIndex: 3, title: 'Khối lượng nguyên tử (amu)', description: '6 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -124,7 +126,8 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             subtitle: 'Kí hiệu hóa học và tên gọi quốc tế IUPAC',
             ready: true,
             nodes: [
-              { id: 'g7-b03-n01', nodeIndex: 1, title: 'Kí hiệu hóa học nguyên tố', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g7-b03-theory', nodeIndex: 1, title: 'Lý thuyết: Nguyên tố hóa học & Kí hiệu IUPAC', description: '2 phút ghi nhớ', type: 'theory' },
+              { id: 'g7-b03-n01', nodeIndex: 2, title: 'Kí hiệu hóa học nguyên tố', description: '6 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -134,8 +137,9 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             subtitle: 'Ô nguyên tố, chu kì và nhóm trong bảng tuần hoàn',
             ready: true,
             nodes: [
-              { id: 'g7-b04-n01', nodeIndex: 1, title: 'Cấu tạo bảng tuần hoàn', description: '6 câu hỏi', type: 'lesson' },
-              { id: 'g7-b04-chest', nodeIndex: 2, title: 'Rương kiến thức Lớp 7', description: 'Phần thưởng', type: 'chest' },
+              { id: 'g7-b04-theory', nodeIndex: 1, title: 'Lý thuyết: Bảng tuần hoàn các nguyên tố', description: '2 phút ghi nhớ', type: 'theory' },
+              { id: 'g7-b04-n01', nodeIndex: 2, title: 'Cấu tạo bảng tuần hoàn', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g7-b04-chest', nodeIndex: 3, title: 'Rương kiến thức Lớp 7', description: 'Phần thưởng', type: 'chest' },
             ],
           },
         ],
