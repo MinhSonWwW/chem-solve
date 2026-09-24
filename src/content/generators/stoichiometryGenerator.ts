@@ -19,7 +19,7 @@ export function generateMetalAcidStoichiometry(
     lessonId: 'g8-b06',
     skillIds: ['stoichiometry-calc'],
     difficulty: 2,
-    prompt: `Cho ${metalMass} g [[${metal}]] (${metalName}) phản ứng hoàn toàn với dung dịch axit [[HCl]] dư theo phương trình: [[${metal}]] + 2[[HCl]] -> [[${metal}Cl2]] + [[H2]]. Tính thể tích khí [[H2]] thoát ra ở điều kiện chuẩn (25 °C, 1 bar). Cho M(${metal}) = ${metalMolarMass} g/mol.`,
+    prompt: `Cho ${metalMass} g [[${metal}]] (${metalName}) phản ứng hoàn toàn với dung dịch acid [[HCl]] dư theo phương trình: [[${metal}]] + 2[[HCl]] -> [[${metal}Cl2]] + [[H2]]. Tính thể tích khí [[H2]] thoát ra ở điều kiện chuẩn (25 °C, 1 bar). Cho M(${metal}) = ${metalMolarMass} g/mol.`,
     given: [
       { label: `Khối lượng kim loại (m_${metal})`, value: `${metalMass}`, unit: 'g' },
       { label: `Khối lượng mol của ${metal}`, value: `${metalMolarMass}`, unit: 'g/mol' },

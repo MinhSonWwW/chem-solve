@@ -49,7 +49,7 @@ export const SearchPage: React.FC = () => {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Tìm theo naoh, axit, mol, pthh, bài học..."
+            placeholder="Tìm theo NaOH, acid, base, mol, PTHH, bài học..."
             className="w-full pl-10 pr-4 py-2.5 bg-[#18272f] border-2 border-[#2e4756] rounded-2xl text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-[#38bdf8] transition-colors shadow-[0_2px_0_0_#131f24] font-medium"
             autoFocus
           />
@@ -86,7 +86,7 @@ export const SearchPage: React.FC = () => {
               <FlaskConical className="w-10 h-10 text-slate-600 mx-auto" />
               <p className="text-sm font-bold text-slate-300">Không tìm thấy kết quả phù hợp</p>
               <p className="text-xs text-slate-500 max-w-xs mx-auto">
-                Thử tìm theo tên chất không dấu (vd: axit, bazo), công thức (vd: naoh, h2so4) hoặc dạng bài
+                Thử tìm theo công thức (vd: naoh, h2so4), tên chất (acid, base, oxide) hoặc tên bài học
               </p>
             </div>
           )}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Search, Atom, Scale, Calculator, Droplets, Zap } from 'lucide-react';
+import { Formula } from './Formula';
 
 export interface QuickReferenceDrawerProps {
   isOpen: boolean;
@@ -84,7 +85,7 @@ interface SolubilityEntry {
 }
 
 const SOLUBILITY_DATA: SolubilityEntry[] = [
-  { cation: 'H+', cationLabel: 'H⁺ (Axit)', OH: { val: 'T' }, Cl: { val: 'T' }, NO3: { val: 'T' }, SO4: { val: 'T' }, CO3: { val: 'B', color: 'Bay hơi CO2' }, PO4: { val: 'T' }, S: { val: 'B', color: 'Khí H2S' } },
+  { cation: 'H+', cationLabel: 'H⁺ (Acid)', OH: { val: 'T' }, Cl: { val: 'T' }, NO3: { val: 'T' }, SO4: { val: 'T' }, CO3: { val: 'B', color: 'Bay hơi CO2' }, PO4: { val: 'T' }, S: { val: 'B', color: 'Khí H2S' } },
   { cation: 'K+', cationLabel: 'K⁺', OH: { val: 'T' }, Cl: { val: 'T' }, NO3: { val: 'T' }, SO4: { val: 'T' }, CO3: { val: 'T' }, PO4: { val: 'T' }, S: { val: 'T' } },
   { cation: 'Na+', cationLabel: 'Na⁺', OH: { val: 'T' }, Cl: { val: 'T' }, NO3: { val: 'T' }, SO4: { val: 'T' }, CO3: { val: 'T' }, PO4: { val: 'T' }, S: { val: 'T' } },
   { cation: 'Ba2+', cationLabel: 'Ba²⁺', OH: { val: 'T' }, Cl: { val: 'T' }, NO3: { val: 'T' }, SO4: { val: 'K', color: '↓ Trắng' }, CO3: { val: 'K', color: '↓ Trắng' }, PO4: { val: 'K', color: '↓ Trắng' }, S: { val: 'T' } },
@@ -256,7 +257,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                       <div className="text-sm font-black text-amber-300 font-mono">
                         {el.m}
                       </div>
-                      <div className="text-[9px] text-slate-500 uppercase font-bold">amu (đvC)</div>
+                      <div className="text-[9px] text-slate-500 uppercase font-bold">amu</div>
                     </div>
                   </div>
                 ))}
@@ -288,13 +289,13 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                     <thead>
                       <tr className="bg-slate-900 border-b border-slate-800 font-black text-slate-300 text-[11px]">
                         <th className="p-2.5 text-left sticky left-0 bg-slate-900 z-10">Cation</th>
-                        <th className="p-2 border-l border-slate-800">OH⁻</th>
-                        <th className="p-2 border-l border-slate-800">Cl⁻</th>
-                        <th className="p-2 border-l border-slate-800">NO₃⁻</th>
-                        <th className="p-2 border-l border-slate-800">SO₄²⁻</th>
-                        <th className="p-2 border-l border-slate-800">CO₃²⁻</th>
-                        <th className="p-2 border-l border-slate-800">PO₄³⁻</th>
-                        <th className="p-2 border-l border-slate-800">S²⁻</th>
+                        <th className="p-2 border-l border-slate-800"><Formula formula="OH^-" /></th>
+                        <th className="p-2 border-l border-slate-800"><Formula formula="Cl^-" /></th>
+                        <th className="p-2 border-l border-slate-800"><Formula formula="NO3^-" /></th>
+                        <th className="p-2 border-l border-slate-800"><Formula formula="SO4^2-" /></th>
+                        <th className="p-2 border-l border-slate-800"><Formula formula="CO3^2-" /></th>
+                        <th className="p-2 border-l border-slate-800"><Formula formula="PO4^3-" /></th>
+                        <th className="p-2 border-l border-slate-800"><Formula formula="S^2-" /></th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-800/80 font-mono">
@@ -339,11 +340,11 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
 
                 <div className="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 leading-relaxed">
                   <div className="font-bold text-amber-300 mb-1">💡 Mẹo nhớ nhanh tính tan:</div>
-                  <ul className="list-disc list-inside space-y-0.5 text-[11px] text-slate-400">
-                    <li>Tất cả muối của <strong className="text-slate-200">Na, K, NH₄</strong> và muối <strong className="text-slate-200">Nitrat (NO₃)</strong> đều <strong>tan hoàn toàn</strong>.</li>
-                    <li>Muối <strong className="text-slate-200">Clorua (Cl)</strong>: chỉ có <strong>AgCl ↓ trắng</strong> không tan; PbCl₂ ít tan.</li>
-                    <li>Muối <strong className="text-slate-200">Sunfat (SO₄)</strong>: có <strong>BaSO₄ ↓ trắng</strong> không tan; CaSO₄, Ag₂SO₄ ít tan.</li>
-                    <li>Muối <strong className="text-slate-200">Cacbonat (CO₃)</strong> & <strong className="text-slate-200">Photphat (PO₄)</strong>: hầu hết không tan, trừ muối của Na, K.</li>
+                  <ul className="list-disc list-inside space-y-1 text-[11px] text-slate-400">
+                    <li>Tất cả muối của <strong className="text-slate-200">Na, K, <Formula formula="NH4^+" /></strong> và muối <strong className="text-slate-200">Nitrate (<Formula formula="NO3^-" />)</strong> đều <strong>tan hoàn toàn</strong>.</li>
+                    <li>Muối <strong className="text-slate-200">Chloride (<Formula formula="Cl^-" />)</strong>: chỉ có <strong><Formula formula="AgCl" /> ↓ trắng</strong> không tan; <Formula formula="PbCl2" /> ít tan.</li>
+                    <li>Muối <strong className="text-slate-200">Sulfate (<Formula formula="SO4^2-" />)</strong>: có <strong><Formula formula="BaSO4" /> ↓ trắng</strong> không tan; <Formula formula="CaSO4" />, <Formula formula="Ag2SO4" /> ít tan.</li>
+                    <li>Muối <strong className="text-slate-200">Carbonate (<Formula formula="CO3^2-" />)</strong> & <strong className="text-slate-200">Phosphate (<Formula formula="PO4^3-" />)</strong>: hầu hết không tan, trừ muối của Na, K.</li>
                   </ul>
                 </div>
               </div>
@@ -396,21 +397,21 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                   <div className="p-2.5 rounded-xl bg-slate-900/60 border border-slate-800 text-xs">
                     <span className="font-black text-rose-400">1. Tác dụng với nước ở t° thường:</span>
                     <p className="text-[11px] text-slate-300 mt-0.5">
-                      Chỉ có các kim loại mạnh: <strong>K, Na, Ca, Ba</strong> phản ứng mạnh với nước tạo dung dịch kiềm (base) và giải phóng khí H₂.
+                      Chỉ có các kim loại mạnh: <strong>K, Na, Ca, Ba</strong> phản ứng mạnh với nước tạo dung dịch kiềm (base) và giải phóng khí <Formula formula="H2" />.
                     </p>
                   </div>
 
                   <div className="p-2.5 rounded-xl bg-slate-900/60 border border-slate-800 text-xs">
-                    <span className="font-black text-amber-400">2. Tác dụng với dung dịch Acid (HCl, H₂SO₄ loãng):</span>
+                    <span className="font-black text-amber-400">2. Tác dụng với dung dịch Acid (HCl, <Formula formula="H2SO4" /> loãng):</span>
                     <p className="text-[11px] text-slate-300 mt-0.5">
-                      Kim loại đứng <strong>trước H</strong> (từ K đến Pb) phản ứng giải phóng khí H₂. Các kim loại đứng <strong>sau H (Cu, Ag, Pt, Au) không phản ứng</strong>.
+                      Kim loại đứng <strong>trước H</strong> (từ K đến Pb) phản ứng giải phóng khí <Formula formula="H2" />. Các kim loại đứng <strong>sau H (Cu, Ag, Pt, Au) không phản ứng</strong>.
                     </p>
                   </div>
 
                   <div className="p-2.5 rounded-xl bg-slate-900/60 border border-slate-800 text-xs">
                     <span className="font-black text-emerald-400">3. Kim loại đẩy nhau ra khỏi dung dịch muối:</span>
                     <p className="text-[11px] text-slate-300 mt-0.5">
-                      Kim loại đứng trước (từ Mg trở đi) <strong>đẩy kim loại đứng sau</strong> ra khỏi dung dịch muối của chúng. (Ví dụ: Fe + CuSO₄ → FeSO₄ + Cu ↓).
+                      Kim loại đứng trước (từ Mg trở đi) <strong>đẩy kim loại đứng sau</strong> ra khỏi dung dịch muối của chúng. (Ví dụ: Fe + <Formula formula="CuSO4" /> → <Formula formula="FeSO4" /> + Cu ↓).
                     </p>
                   </div>
                 </div>

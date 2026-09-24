@@ -295,7 +295,30 @@ export const useUserStore = create<UserState>((set, get) => ({
       });
       return { hearts: next };
     }),
-  incrementStreak: () => set((state) => ({ streak: state.streak + 1 })),
+  incrementStreak: () => {
+    const today = new Date().toISOString().slice(0, 10);
+    loadUserProgress().then((progress) => {
+      if (progress.streakDate === today) {
+        // Already incremented for today
+        return;
+      }
+      if (!progress.streakDate) {
+        progress.streak = 1;
+      } else {
+        const lastTime = new Date(progress.streakDate).getTime();
+        const todayTime = new Date(today).getTime();
+        const diffDays = Math.round((todayTime - lastTime) / (1000 * 60 * 60 * 24));
+        if (diffDays === 1) {
+          progress.streak += 1;
+        } else if (diffDays > 1) {
+          progress.streak = 1;
+        }
+      }
+      progress.streakDate = today;
+      set({ streak: progress.streak });
+      saveUserProgress(progress).catch(console.error);
+    });
+  },
 
   toggleSound: () =>
     set((state) => {

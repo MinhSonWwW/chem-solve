@@ -28,16 +28,16 @@ export async function loadExercises(lessonId: string): Promise<Exercise[]> {
       list.push(generateMassFromMolExercise(Math.floor(Math.random() * 4), rnd(0.2, 2.0), `dyn-${Date.now()}-2`));
     }
     if (lessonId === 'gen-gas' || lessonId === 'gen-infinite') {
-      list.push(generateGasVolumeExercise('CO2', 'khí cacbonic', rnd(0.5, 3.0), `dyn-${Date.now()}-3`));
-      list.push(generateGasDensityAirExercise('SO2', 'khí lưu huỳnh đioxit', 64, `dyn-${Date.now()}-4`));
+      list.push(generateGasVolumeExercise('CO2', 'carbon dioxide', rnd(0.5, 3.0), `dyn-${Date.now()}-3`));
+      list.push(generateGasDensityAirExercise('SO2', 'sulfur dioxide', 64, `dyn-${Date.now()}-4`));
     }
     if (lessonId === 'gen-solution' || lessonId === 'gen-infinite') {
-      list.push(generateMassPercentageExercise('NaCl', 'natri clorua', 15, 85, `dyn-${Date.now()}-5`));
-      list.push(generateMolarConcentrationExercise('CuSO4', 'đồng(II) sunfat', rnd(0.1, 0.8), 500, `dyn-${Date.now()}-6`));
+      list.push(generateMassPercentageExercise('NaCl', 'sodium chloride', 15, 85, `dyn-${Date.now()}-5`));
+      list.push(generateMolarConcentrationExercise('CuSO4', 'copper(II) sulfate', rnd(0.1, 0.8), 500, `dyn-${Date.now()}-6`));
     }
     if (lessonId === 'gen-stoich' || lessonId === 'gen-infinite') {
-      list.push(generateMetalAcidStoichiometry('Zn', 'kẽm', 65, 13, `dyn-${Date.now()}-7`));
-      list.push(generateMetalAcidStoichiometry('Fe', 'sắt', 56, 11.2, `dyn-${Date.now()}-8`));
+      list.push(generateMetalAcidStoichiometry('Zn', 'zinc (kẽm)', 65, 13, `dyn-${Date.now()}-7`));
+      list.push(generateMetalAcidStoichiometry('Fe', 'iron (sắt)', 56, 11.2, `dyn-${Date.now()}-8`));
     }
     return list.slice(0, 5);
   }

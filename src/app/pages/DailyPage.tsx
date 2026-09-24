@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import {
   Calendar,
@@ -22,6 +23,7 @@ function seededRandom(seed: number) {
 }
 
 export const DailyPage: React.FC = () => {
+  const navigate = useNavigate();
   const { streak, addXp, incrementStreak } = useUserStore();
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentQIndex, setCurrentQIndex] = useState(0);
@@ -248,6 +250,21 @@ export const DailyPage: React.FC = () => {
             </span>{' '}
             và kéo dài chuỗi streak!
           </p>
+          <div className="pt-2 max-w-xs mx-auto">
+            <Button
+              variant="primary"
+              size="md"
+              fullWidth
+              onClick={() => {
+                sound.playClick();
+                const activeGrade = typeof window !== 'undefined' ? localStorage.getItem('chem_active_grade') || '8' : '8';
+                navigate(`/learn/${activeGrade}`);
+              }}
+              className="font-black bg-gradient-to-r from-amber-500 to-yellow-400 text-slate-950 shadow-[0_4px_0_0_#b45309]"
+            >
+              TIẾP TỤC HỌC TẬP
+            </Button>
+          </div>
         </motion.div>
       )}
 

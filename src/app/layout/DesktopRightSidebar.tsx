@@ -185,7 +185,7 @@ export const DesktopRightSidebar: React.FC = () => {
         <button
           onClick={() => {
             sound.playClick();
-            navigate('/daily');
+            navigate('/practice/review');
           }}
           className="w-full py-2.5 px-3 rounded-2xl bg-[#0ea5e9] hover:bg-[#38bdf8] text-white font-black text-xs flex items-center justify-center gap-2 shadow-[0_4px_0_0_#0284c7] active:translate-y-1 active:shadow-none transition-all cursor-pointer"
         >

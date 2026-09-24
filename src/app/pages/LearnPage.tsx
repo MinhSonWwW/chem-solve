@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { BookOpen } from 'lucide-react';
 import { SnakePath, type PathNode, NodePreviewDrawer, ChapterGuideModal } from '@/design-system';
@@ -13,6 +13,10 @@ export const LearnPage: React.FC = () => {
 
   const currentGrade = (parseInt(grade, 10) as Grade) || 8;
   const curriculum = useMemo(() => getCurriculum(currentGrade), [currentGrade]);
+
+  useEffect(() => {
+    localStorage.setItem('chem_active_grade', String(currentGrade));
+  }, [currentGrade]);
 
   // Selected node for preview drawer
   const [selectedNode, setSelectedNode] = useState<{

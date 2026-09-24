@@ -2,7 +2,7 @@ import { Exercise } from '@/content/schema';
 
 export function generateGasVolumeExercise(
   gasFormula = 'CO2',
-  gasNameVi = 'khí cacbonic',
+  gasNameVi = 'carbon dioxide',
   molVal = 1.5,
   idSuffix = '001'
 ): Exercise {
@@ -68,7 +68,7 @@ export function generateGasVolumeExercise(
 
 export function generateMolFromGasVolumeExercise(
   gasFormula = 'O2',
-  gasNameVi = 'khí oxi',
+  gasNameVi = 'oxygen',
   volume = 4.958,
   idSuffix = '002'
 ): Exercise {

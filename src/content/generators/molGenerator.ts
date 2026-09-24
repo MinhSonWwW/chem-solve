@@ -7,16 +7,16 @@ export interface SubstanceMolParam {
 }
 
 const COMMON_SUBSTANCES: SubstanceMolParam[] = [
-  { formula: 'H2O', nameVi: 'Nước', molarMass: 18 },
-  { formula: 'CO2', nameVi: 'Khí cacbonic', molarMass: 44 },
-  { formula: 'NaOH', nameVi: 'Natri hiđroxit', molarMass: 40 },
-  { formula: 'CaCO3', nameVi: 'Canxi cacbonat', molarMass: 100 },
-  { formula: 'Fe', nameVi: 'Sắt', molarMass: 56 },
-  { formula: 'Cu', nameVi: 'Đồng', molarMass: 64 },
-  { formula: 'Al', nameVi: 'Nhôm', molarMass: 27 },
-  { formula: 'O2', nameVi: 'Khí oxi', molarMass: 32 },
-  { formula: 'H2SO4', nameVi: 'Axit sunfuric', molarMass: 98 },
-  { formula: 'NaCl', nameVi: 'Natri clorua', molarMass: 58.5 },
+  { formula: 'H2O', nameVi: 'Nước (Water)', molarMass: 18 },
+  { formula: 'CO2', nameVi: 'Carbon dioxide', molarMass: 44 },
+  { formula: 'NaOH', nameVi: 'Sodium hydroxide', molarMass: 40 },
+  { formula: 'CaCO3', nameVi: 'Calcium carbonate', molarMass: 100 },
+  { formula: 'Fe', nameVi: 'Iron (Sắt)', molarMass: 56 },
+  { formula: 'Cu', nameVi: 'Copper (Đồng)', molarMass: 64 },
+  { formula: 'Al', nameVi: 'Aluminium (Nhôm)', molarMass: 27 },
+  { formula: 'O2', nameVi: 'Oxygen', molarMass: 32 },
+  { formula: 'H2SO4', nameVi: 'Sulfuric acid', molarMass: 98 },
+  { formula: 'NaCl', nameVi: 'Sodium chloride', molarMass: 58.5 },
 ];
 
 /**

@@ -10,13 +10,18 @@ export const TopHeader: React.FC = () => {
   const { xp, streak, hearts, gems, buyHeartWithGems } = useUserStore();
   const [showHeartModal, setShowHeartModal] = useState(false);
   const navigate = useNavigate();
+  const activeGrade = typeof window !== 'undefined' ? localStorage.getItem('chem_active_grade') || '8' : '8';
 
   return (
     <>
       <header className="sticky top-0 z-30 w-full bg-[#131f24]/95 backdrop-blur-md border-b-2 border-[#2e4756] px-4 py-2.5 lg:hidden">
         <div className="max-w-md mx-auto flex items-center justify-between">
           {/* Brand with Atom Avatar */}
-          <Link to="/" className="flex items-center gap-2">
+          <Link
+            to={`/learn/${activeGrade}`}
+            onClick={() => sound.playClick()}
+            className="flex items-center gap-2 cursor-pointer"
+          >
             <div className="w-8 h-8 rounded-xl bg-[#0ea5e9] flex items-center justify-center font-black text-white text-sm shadow-[0_3px_0_0_#0284c7] overflow-hidden border border-sky-300/40">
               <img
                 src={assetUrl('/assets/mascot/atom-idle.png')}
