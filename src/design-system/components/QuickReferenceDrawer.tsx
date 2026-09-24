@@ -228,7 +228,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                   placeholder="Tìm tên hoặc kí hiệu (vd: Fe, O, Sắt, Sodium...)"
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
-                  className="w-full bg-slate-950/80 border border-slate-700/80 rounded-xl pl-9 pr-3 py-1.5 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500"
+                  className="w-full bg-slate-950/80 border border-slate-700/80 rounded-xl pl-9 pr-3 py-1.5 text-xs text-slate-100 placeholder:text-slate-500 outline-none focus:ring-1 focus:ring-cyan-500"
                 />
               </div>
             </div>
@@ -324,7 +324,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                                   {cell.val}
                                 </span>
                                 {cell.color && (
-                                  <div className="text-[9px] font-sans text-slate-400 scale-90 -mt-0.5 truncate max-w-[60px] mx-auto">
+                                  <div className="text-[9px] font-sans text-slate-400 scale-90 -mt-0.5 truncate max-w-15 mx-auto">
                                     {cell.color}
                                   </div>
                                 )}
@@ -353,7 +353,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
             {tab === 'reactivity' && (
               <div className="space-y-3">
                 {/* Mnemonic Banner */}
-                <div className="p-3 rounded-2xl bg-gradient-to-r from-cyan-950/60 to-blue-950/60 border border-cyan-700/50">
+                <div className="p-3 rounded-2xl bg-linear-to-r from-cyan-950/60 to-blue-950/60 border border-cyan-700/50">
                   <div className="text-xs font-black text-cyan-300 mb-1 flex items-center gap-1.5">
                     <Zap className="w-3.5 h-3.5 text-amber-400 shrink-0" />
                     <span>Câu thần chú học thuộc lòng:</span>
