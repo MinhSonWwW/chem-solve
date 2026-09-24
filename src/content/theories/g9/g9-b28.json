@@ -1,0 +1,60 @@
+{
+  "lessonId": "g9-b28",
+  "nodeId": "g9-b28-theory",
+  "title": "Chất béo (Lipid) & Phản ứng xà phòng hóa",
+  "subtitle": "Thành phần ester của glycerol, phản ứng thủy phân và sản xuất xà phòng",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm",
+      "badgeColor": "purple",
+      "title": "Chất béo là gì?",
+      "content": "Chất béo là hỗn hợp nhiều ester của glycerol với các acid béo, có công thức chung là [[(RCOO)3C3H5]]:",
+      "bulletPoints": [
+        "Thành phần: Gồm gốc glycerol [[C3H5(OH)3]] liên kết với 3 gốc acid béo [[R-COO-]].",
+        "Acid béo thường gặp: Palmitic acid ([[C15H31COOH]]), Stearic acid ([[C17H35COOH]]), Oleic acid ([[C17H33COOH]]).",
+        "Tính chất vật lí: Nhẹ hơn nước, không tan trong nước, tan tốt trong dung môi hữu cơ (như xăng, benzen, cồn).",
+        "Dầu thực vật (dầu mè, dầu lạc...): Chứa nhiều acid béo không no -> ở thể lỏng. Mỡ động vật (mỡ lợn, mỡ bò...): Chứa acid béo no -> ở thể rắn."
+      ],
+      "callout": "💡 Phân biệt: Mỡ động vật ở thể rắn (chứa gốc no), Dầu ăn ở thể lỏng (chứa gốc không no)!"
+    },
+    {
+      "id": "c2",
+      "badge": "Phản ứng xà phòng hóa",
+      "badgeColor": "emerald",
+      "title": "Phản ứng xà phòng hóa chất béo",
+      "content": "Khi đun chất béo với dung dịch kiềm ([[NaOH]] hoặc [[KOH]]):",
+      "formulaExample": "(RCOO)3C3H5 + 3NaOH -(t°)-> 3RCOONa + C3H5(OH)3",
+      "bulletPoints": [
+        "Sản phẩm tạo thành: Muối của các acid béo ([[RCOONa]]) và [[C3H5(OH)3]] (Glycerol).",
+        "Xà phòng: Muối sodium hoặc potassium của các acid béo chính là THÀNH PHẦN CHÍNH CỦA XÀ PHÒNG.",
+        "Phản ứng một chiều: Khác với thủy phân trong môi trường acid là phản ứng thuận nghịch, phản ứng thủy phân trong môi trường kiềm là phản ứng một chiều."
+      ],
+      "callout": "📌 Tên gọi: Phản ứng thủy phân chất béo trong dung dịch kiềm được gọi là PHẢN ỨNG XÀ PHÒNG HÓA."
+    },
+    {
+      "id": "c3",
+      "badge": "Dinh dưỡng & Đời sống",
+      "badgeColor": "amber",
+      "title": "Vai trò dinh dưỡng & Ứng dụng của chất béo",
+      "content": "Chất béo đóng vai trò thiết yếu đối với cơ thể sống:",
+      "bulletPoints": [
+        "Cung cấp năng lượng: 1 gam chất béo khi oxi hóa cung cấp khoảng 9,3 kcal (gấp đôi so với chất đường bột và protein).",
+        "Hòa tan vitamin: Là dung môi hòa tan và hấp thụ các vitamin tan trong dầu mỡ (Vitamin A, D, E, K).",
+        "Hiện tượng ôi mỡ: Dầu mỡ để lâu ngày trong không khí bị oxi hóa bởi oxygen tạo ra chất có mùi hôi khó chịu và độc hại."
+      ],
+      "callout": "⚠️ Bảo quản: Cần đậy kín dầu ăn, để nơi thoáng mát tránh ánh nắng trực tiếp để không bị ôi thiu!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi đun nóng chất béo với dung dịch NaOH (phản ứng xà phòng hóa), sản phẩm thu được bao gồm những chất nào?",
+    "options": [
+      { "id": "opt-1", "text": "Rượu etylic và acetic acid", "correct": false },
+      { "id": "opt-2", "text": "Glycerol và muối của các acid béo (xà phòng)", "correct": true },
+      { "id": "opt-3", "text": "Khí CO2 và nước", "correct": false },
+      { "id": "opt-4", "text": "Polyethylene và xà phòng", "correct": false }
+    ],
+    "explanation": "Chính xác! Thủy phân chất béo trong dung dịch kiềm (NaOH) luôn thu được Glycerol và muối sodium của acid béo (thành phần chính của xà phòng)."
+  }
+}

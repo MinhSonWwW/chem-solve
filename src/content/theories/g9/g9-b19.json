@@ -1,0 +1,58 @@
+{
+  "lessonId": "g9-b19",
+  "nodeId": "g9-b19-theory",
+  "title": "Ý nghĩa Dãy hoạt động hóa học",
+  "subtitle": "4 quy tắc suy luận phản ứng của kim loại trong đề thi",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Ý nghĩa dãy",
+      "badgeColor": "purple",
+      "title": "Trật tự mức độ hoạt động hóa học",
+      "content": "Dãy hoạt động hóa học sắp xếp các kim loại theo chiều giảm dần mức độ hoạt động:",
+      "bulletPoints": [
+        "Thứ tự: [[K]] > [[Na]] > [[Ca]] > [[Mg]] > [[Al]] > [[Zn]] > [[Fe]] > [[Pb]] > [[(H)]] > [[Cu]] > [[Ag]] > [[Au]]",
+        "Kim loại đứng đầu dãy ([[K]], [[Na]]) hoạt động hóa học mạnh nhất; kim loại đứng cuối dãy ([[Ag]], [[Au]]) hoạt động hóa học yếu nhất."
+      ],
+      "callout": "💡 Dãy hoạt động là kim chỉ nam để dự đoán mọi phản ứng của kim loại!"
+    },
+    {
+      "id": "c2",
+      "badge": "4 quy tắc vàng",
+      "badgeColor": "emerald",
+      "title": "4 quy tắc suy luận cốt lõi",
+      "content": "Căn cứ vào vị trí của kim loại trong dãy để xác định phản ứng:",
+      "bulletPoints": [
+        "1. Phản ứng với nước: Kim loại trước [[Mg]] ([[K]], [[Na]], [[Ca]]) phản ứng với nước ở nhiệt độ thường tạo kiềm + [[H2]].",
+        "2. Phản ứng với acid loãng: Kim loại trước [[(H)]] tác dụng với [[HCl]], [[H2SO4]] loãng giải phóng khí [[H2]].",
+        "3. Đẩy muối: Kim loại đứng trước (từ Mg trở đi) đẩy kim loại đứng sau ra khỏi dung dịch muối.",
+        "4. Khử oxide: Khí [[CO]] hoặc [[H2]] chỉ khử được oxide của kim loại đứng sau [[Al]] (như [[ZnO]], [[CuO]], [[Fe2O3]])."
+      ],
+      "callout": "📌 Mốc ranh giới quan trọng: [K, Na, Ca] (với nước) | [Al] (ranh giới khử oxide) | [(H)] (ranh giới acid loãng)!"
+    },
+    {
+      "id": "c3",
+      "badge": "Bẫy thường gặp",
+      "badgeColor": "amber",
+      "title": "Những sai lầm kinh điển cần tránh",
+      "content": "Khi làm bài tập chuỗi phản ứng kim loại:",
+      "bulletPoints": [
+        "Bẫy 1: Khí [[CO]] KHÔNG khử được [[Al2O3]] hay [[MgO]] (chỉ khử được oxide từ Zn trở về sau).",
+        "Bẫy 2: Cho Na vào dung dịch [[CuSO4]] sẽ thấy sủi bọt khí [[H2]] và có kết tủa xanh [[Cu(OH)2]], KHÔNG thu được kim loại Cu đỏ!",
+        "Bẫy 3: [[Fe]] phản ứng với [[HCl]] chỉ lên hóa trị II ([[FeCl2]]), nhưng tác dụng với [[Cl2]] dư thì lên hóa trị III ([[FeCl3]])."
+      ],
+      "callout": "⚠️ Cực kỳ lưu ý: Na tác dụng với nước trong dung dịch muối trước tiên!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khí Carbon monoxide (CO) ở nhiệt độ cao khử được oxide nào sau đây thành kim loại?",
+    "options": [
+      { "id": "opt-1", "text": "Al2O3 (Aluminium oxide)", "correct": false },
+      { "id": "opt-2", "text": "MgO (Magnesium oxide)", "correct": false },
+      { "id": "opt-3", "text": "CuO (Copper(II) oxide)", "correct": true },
+      { "id": "opt-4", "text": "Na2O (Sodium oxide)", "correct": false }
+    ],
+    "explanation": "Chính xác! CO và H2 chỉ khử được các oxide kim loại đứng sau Al trong dãy hoạt động (như CuO, Fe2O3, PbO). CuO + CO -(t°)-> Cu + CO2."
+  }
+}

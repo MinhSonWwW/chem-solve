@@ -1,0 +1,58 @@
+{
+  "lessonId": "g9-b30",
+  "nodeId": "g9-b30-theory",
+  "title": "Tinh bột & Cellulose (Polysaccharide)",
+  "subtitle": "Phản ứng quang hợp, phản ứng màu với Iodine và phản ứng thủy phân",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm",
+      "badgeColor": "purple",
+      "title": "Tinh bột & Cellulose có công thức chung (C6H10O5)n",
+      "content": "Cả tinh bột và cellulose đều là carbohydrate phức tạp (polysaccharide) có phân tử khối rất lớn:",
+      "bulletPoints": [
+        "Tinh bột: Có nhiều trong các loại hạt (gạo, ngô, lúa mì), củ (khoai, sắn). Không tan trong nước lạnh, tan trong nước nóng tạo hồ tinh bột.",
+        "Cellulose (Xenlulozơ): Thành phần chính tạo nên màng tế bào thực vật, có nhiều trong bông nõn (98%), gỗ (50%), tre nứa. Dạng sợi dài, dai, không tan trong nước ngay cả khi đun nóng.",
+        "Lưu ý: Mặc dù cùng có CTHH dạng [[(C6H10O5)n]], nhưng do hệ số n của cellulose lớn hơn rất nhiều so với tinh bột nên chúng KHÔNG PHẢI LÀ ĐỒNG PHÂN của nhau."
+      ],
+      "callout": "💡 Bẫy đề thi: Tinh bột và cellulose KHÔNG PHẢI đồng phân vì số mắt xích n khác nhau rất xa!"
+    },
+    {
+      "id": "c2",
+      "badge": "Nhận biết Tinh bột",
+      "badgeColor": "emerald",
+      "title": "Phản ứng màu đặc trưng giữa Tinh bột và Iodine (I2)",
+      "content": "Đây là phản ứng nhận biết cực kỳ nhạy và đẹp mắt:",
+      "bulletPoints": [
+        "Hiện tượng: Khi nhỏ một giọt dung dịch Iodine (I2 - cồn thuốc đỏ) vào hồ tinh bột (hoặc lát cắt củ khoai tây, mẩu bánh mì), lập tức xuất hiện MÀU XANH TÍM ĐẶC TRƯNG.",
+        "Khi đun nóng: Màu xanh tím biến mất. Khi để nguội: Màu xanh tím lại xuất hiện trở lại.",
+        "Cellulose KHÔNG có phản ứng màu này với Iodine."
+      ],
+      "callout": "📌 Mẹo nhớ: Cứ thấy Tinh bột gặp Iodine (I2) là ra MÀU XANH TÍM!"
+    },
+    {
+      "id": "c3",
+      "badge": "Thủy phân",
+      "badgeColor": "amber",
+      "title": "Phản ứng thủy phân & Quang hợp",
+      "content": "Hai quá trình trao đổi chất cơ bản trong tự nhiên:",
+      "formulaExample": "(C6H10O5)n + n H2O -(axit, t°)-> n C6H12O6 (glucose)",
+      "bulletPoints": [
+        "Phản ứng thủy phân: Khi đun nóng tinh bột hoặc cellulose với xúc tác acid (hoặc enzyme tiêu hóa amylase), chúng bị thủy phân hoàn toàn tạo thành [[C6H12O6]] (Glucose).",
+        "Quá trình quang hợp của cây xanh: Dưới tác dụng của ánh sáng mặt trời và chất diệp lục: [[6n CO2 + 5n H2O -(as, diệp lục)-> (C6H10O5)n + 6n O2]]."
+      ],
+      "callout": "⚠️ Đời sống: Nhai cơm kĩ thấy có vị ngọt vì enzyme trong nước bọt thủy phân tinh bột thành đường!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi nhỏ dung dịch Iodine (I2) vào một mẩu khoai tây tươi, hiện tượng quan sát được là gì?",
+    "options": [
+      { "id": "opt-1", "text": "Xuất hiện kết tủa trắng", "correct": false },
+      { "id": "opt-2", "text": "Xuất hiện màu xanh tím đặc trưng", "correct": true },
+      { "id": "opt-3", "text": "Có khí sủi bọt thoát ra", "correct": false },
+      { "id": "opt-4", "text": "Không có hiện tượng gì", "correct": false }
+    ],
+    "explanation": "Chính xác! Khoai tây chứa hàm lượng tinh bột cao, khi gặp Iodine sẽ tạo ra hợp chất hấp phụ có màu xanh tím đặc trưng."
+  }
+}

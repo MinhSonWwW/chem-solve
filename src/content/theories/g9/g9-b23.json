@@ -1,0 +1,58 @@
+{
+  "lessonId": "g9-b23",
+  "nodeId": "g9-b23-theory",
+  "title": "Methane (CH4) & Dãy đồng đẳng Alkane",
+  "subtitle": "Cấu tạo liên kết đơn, phản ứng cháy và phản ứng thế đặc trưng",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Cấu tạo phân tử",
+      "badgeColor": "purple",
+      "title": "Cấu tạo phân tử Methane (CH4)",
+      "content": "Methane là hydrocarbon đơn giản nhất, đại diện cho nhóm hydrocarbon no (Alkane):",
+      "bulletPoints": [
+        "Tính chất vật lí: Là chất khí không màu, không mùi, nhẹ hơn không khí (d = 16/29 < 1), rất ít tan trong nước.",
+        "Trạng thái tự nhiên: Là thành phần chính của khí thiên nhiên, khí mỏ dầu, khí biogas (khí sinh học tạo ra từ chất thải chăn nuôi), khí bùn ao.",
+        "Cấu tạo: Gồm 1 nguyên tử C liên kết với 4 nguyên tử H bằng 4 LIÊN KẾT ĐƠN bền vững (liên kết C-H)."
+      ],
+      "callout": "💡 Đặc trưng của Alkane: Chỉ chứa toàn liên kết đơn C-C và C-H trong phân tử!"
+    },
+    {
+      "id": "c2",
+      "badge": "Phản ứng cháy",
+      "badgeColor": "emerald",
+      "title": "Phản ứng cháy tỏa nhiều nhiệt",
+      "content": "Methane cháy trong không khí tạo ngọn lửa màu xanh mờ và tỏa lượng nhiệt rất lớn:",
+      "formulaExample": "CH4 + 2O2 -> CO2 + 2H2O",
+      "bulletPoints": [
+        "Sản phẩm cháy: Khí [[CO2]] và hơi nước [[H2O]].",
+        "Hỗn hợp nổ nguy hiểm: Hỗn hợp gồm 1 thể tích [[CH4]] và 2 thể tích [[O2]] là hỗn hợp nổ cực mạnh (nguyên nhân gây ra các vụ nổ hầm lò mỏ than)."
+      ],
+      "callout": "📌 Ứng dụng: Do tỏa nhiệt mạnh và sạch, Methane là nguồn nhiên liệu quan trọng trong đời sống và sản xuất."
+    },
+    {
+      "id": "c3",
+      "badge": "Phản ứng thế",
+      "badgeColor": "amber",
+      "title": "Phản ứng thế với Chlorine (Đặc trưng của liên kết đơn)",
+      "content": "Khi chiếu sáng (ánh sáng khuếch tán), Methane phản ứng với khí Chlorine:",
+      "formulaExample": "CH4 + Cl2 -(as)-> CH3Cl + HCl",
+      "bulletPoints": [
+        "Cơ chế: Một nguyên tử Hydrogen trong phân tử [[CH4]] bị thay thế bởi một nguyên tử Chlorine, tạo ra Methyl chloride ([[CH3Cl]]) và Hydrogen chloride ([[HCl]]).",
+        "Methane KHÔNG làm mất màu dung dịch Bromine ([[Br2]]) ở điều kiện thường (phân biệt với Ethylene)."
+      ],
+      "callout": "⚠️ Dấu hiệu nhận biết: Phân tử chỉ có liên kết đơn -> Phản ứng đặc trưng là PHẢN ỨNG THẾ!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Phản ứng hóa học ĐẶC TRƯNG của Methane (CH4) và các hydrocarbon no (alkane) là gì?",
+    "options": [
+      { "id": "opt-1", "text": "Phản ứng cộng", "correct": false },
+      { "id": "opt-2", "text": "Phản ứng thế", "correct": true },
+      { "id": "opt-3", "text": "Phản ứng trùng hợp", "correct": false },
+      { "id": "opt-4", "text": "Phản ứng làm mất màu dung dịch Bromine", "correct": false }
+    ],
+    "explanation": "Chính xác! Do chỉ chứa các liên kết đơn bền vững trong phân tử, phản ứng đặc trưng của Methane là phản ứng thế (khi có ánh sáng kích hoạt)."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "lessonId": "g9-b34",
+  "nodeId": "g9-b34-theory",
+  "title": "Khai thác đá vôi & Công nghiệp Silicate",
+  "subtitle": "Sản xuất vôi sống (CaO), xi măng và thủy tinh",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Nung vôi & Tôi vôi",
+      "badgeColor": "purple",
+      "title": "Chu trình từ đá vôi đến vôi tôi",
+      "content": "Quá trình chế biến đá vôi diễn ra qua hai phản ứng quan trọng:",
+      "bulletPoints": [
+        "1. Nung vôi: Nhiệt phân đá vôi [[CaCO3]] ở 900 - 1000°C: [[CaCO3]] -(t°)-> [[CaO]] (vôi sống) + [[CO2]]↑.",
+        "2. Tôi vôi: Cho vôi sống tác dụng với nước: [[CaO]] + [[H2O]] -> [[Ca(OH)2]] (vôi tôi / nước vôi trong), phản ứng tỏa nhiệt rất mạnh.",
+        "Ứng dụng: [[CaO]] và [[Ca(OH)2]] dùng trong xây dựng, khử chua đất nông nghiệp phèn chua, xử lý nước thải công nghiệp."
+      ],
+      "callout": "💡 Nhớ chuỗi: Đá vôi (CaCO3) --nung--> Vôi sống (CaO) --tác dụng nước--> Vôi tôi Ca(OH)2!"
+    },
+    {
+      "id": "c2",
+      "badge": "Xi măng & Thủy tinh",
+      "badgeColor": "emerald",
+      "title": "Quy trình sản xuất silicate công nghiệp",
+      "content": "Hai ngành công nghiệp vật liệu xây dựng cốt lõi từ khoáng sản:",
+      "bulletPoints": [
+        "Công nghiệp Xi măng: Nung hỗn hợp đá vôi [[CaCO3]] và đất sét (chứa nhiều [[SiO2]], [[Al2O3]]) ở nhiệt độ cao (~1450°C) tạo hạt clinker; sau đó nghiền clinker mịn với thạch cao [[CaSO4.2H2O]].",
+        "Công nghiệp Thủy tinh: Nung chảy hỗn hợp cát trắng ([[SiO2]]), đá vôi ([[CaCO3]]) và soda ([[Na2CO3]]) ở ~1400°C, thổi hoặc ép tạo hình chai lọ, kính xây dựng.",
+        "Thành phần chính thủy tinh thường: hỗn hợp sodium silicate và calcium silicate ([[Na2SiO3]], [[CaSiO3]], [[SiO2]])."
+      ],
+      "callout": "📌 Xi măng cần: Đá vôi + Đất sét + Thạch cao. Thủy tinh cần: Cát trắng + Đá vôi + Soda (Na2CO3)!"
+    },
+    {
+      "id": "c3",
+      "badge": "Bẫy thường gặp",
+      "badgeColor": "amber",
+      "title": "Những sai lầm hay mắc phải trong đề thi",
+      "content": "Các điểm dễ nhầm lẫn trong phần khai thác khoáng sản:",
+      "bulletPoints": [
+        "Bẫy 1: Nhầm tên chất: [[CaCO3]] là đá vôi (canxi cacbonat), [[CaO]] là vôi sống (canxi oxit), [[Ca(OH)2]] là vôi tôi (canxi hidroxit).",
+        "Bẫy 2: Thạch cao ([[CaSO4.2H2O]]) được thêm vào xi măng để ĐIỀU CHỈNH TỐC ĐỘ ĐÔNG KẾT của xi măng (không phải làm tăng nhiệt độ nung).",
+        "Bẫy 3: Khí [[CO2]] sinh ra từ các lò nung vôi và xi măng là một nguồn phát thải khí nhà kính lớn cần được xử lý."
+      ],
+      "callout": "⚠️ Cẩn thận: Nung vôi là phản ứng thu nhiệt liên tục; tôi vôi là phản ứng tỏa nhiệt mạnh!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi nung đá vôi (CaCO3) ở nhiệt độ 900 - 1000°C trong lò nung, sản phẩm chất rắn thu được là gì?",
+    "options": [
+      { "id": "opt-1", "text": "CaO (Vôi sống)", "correct": true },
+      { "id": "opt-2", "text": "Ca(OH)2 (Vôi tôi)", "correct": false },
+      { "id": "opt-3", "text": "CaSO4 (Thạch cao)", "correct": false },
+      { "id": "opt-4", "text": "Ca (Kim loại canxi)", "correct": false }
+    ],
+    "explanation": "Chính xác! Nung đá vôi: CaCO3 -(900-1000°C)-> CaO + CO2↑. Chất rắn thu được là vôi sống (CaO)."
+  }
+}

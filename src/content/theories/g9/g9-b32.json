@@ -1,0 +1,60 @@
+{
+  "lessonId": "g9-b32",
+  "nodeId": "g9-b32-theory",
+  "title": "Polymer: Chất dẻo, Tơ sợi & Cao su",
+  "subtitle": "Khái niệm phân tử polymer, mắt xích, phân loại và bảo vệ môi trường",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm",
+      "badgeColor": "purple",
+      "title": "Polymer là gì?",
+      "content": "Polymer là những hợp chất có phân tử khối rất lớn do nhiều mắt xích (monomer) liên kết với nhau tạo nên:",
+      "bulletPoints": [
+        "Công thức chung: [[(-M-)n]], trong đó M là mắt xích, n là hệ số trùng hợp (độ polymer hóa).",
+        "Phân loại theo nguồn gốc:",
+        "1. Polymer thiên nhiên: Có sẵn trong tự nhiên (như tinh bột, cellulose, protein, tơ tằm, cao su thiên nhiên).",
+        "2. Polymer tổng hợp: Do con người tổng hợp từ các chất đơn giản bằng phản ứng trùng hợp (như nhựa PE, nhựa PVC, tơ nilon-6, cao su buna).",
+        "3. Polymer bán tổng hợp (nhân tạo): Chế biến hóa học từ polymer thiên nhiên (như tơ visco, tơ axetat từ cellulose)."
+      ],
+      "callout": "💡 Phân biệt: Thiên nhiên (có sẵn), Tổng hợp (chế tạo 100%), Nhân tạo/Bán tổng hợp (chế biến từ thiên nhiên)!"
+    },
+    {
+      "id": "c2",
+      "badge": "3 ứng dụng lớn",
+      "badgeColor": "emerald",
+      "title": "Chất dẻo, Tơ sợi và Cao su",
+      "content": "3 nhóm vật liệu polymer quan trọng nhất trong đời sống:",
+      "bulletPoints": [
+        "1. Chất dẻo (Plastics): Vật liệu có tính dẻo (bị biến dạng khi chịu tác dụng của nhiệt/áp lực và giữ nguyên dạng đó khi thôi tác dụng). Ví dụ: Nhựa PE (túi nilon), nhựa PVC (ống dẫn nước).",
+        "2. Tơ sợi: Những vật liệu polymer hình sợi dài, mảnh, dai, mềm, dùng dệt vải may mặc (tơ tằm, tơ nilon, tơ visco).",
+        "3. Cao su: Vật liệu có tính đàn hồi (biến dạng khi có lực tác dụng và tự trở lại hình dạng ban đầu khi thôi tác dụng). Cao su lưu hóa bền hơn nhờ cầu nối lưu huỳnh (-S-S-)."
+      ],
+      "callout": "📌 Tính đàn hồi của cao su: Kéo dãn ra được và tự co lại trạng thái cũ khi thả tay!"
+    },
+    {
+      "id": "c3",
+      "badge": "Môi trường",
+      "badgeColor": "amber",
+      "title": "Ô nhiễm trắng & Rác thải nhựa",
+      "content": "Mặt trái của việc lạm dụng chất dẻo tổng hợp:",
+      "bulletPoints": [
+        "Ô nhiễm trắng: Rác thải túi nilon, đồ nhựa dùng một lần rất khó phân hủy trong tự nhiên (cần từ 100 đến 500 năm).",
+        "Tác hại: Làm thoái hóa đất, tắc nghẽn cống rãnh, phân rã thành vi nhựa gây độc hại cho sinh vật biển và sức khỏe con người.",
+        "Giải pháp: Thực hiện nguyên tắc 3R (Reduce - Giảm thiểu, Reuse - Tái sử dụng, Recycle - Tái chế), chuyển sang dùng bao bì sinh học tự phân hủy."
+      ],
+      "callout": "⚠️ Hành động xanh: Hạn chế tối đa sử dụng đồ nhựa dùng 1 lần để bảo vệ hành tinh xanh!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Vật liệu polymer nào sau đây thuộc loại POLYMER THIÊN NHIÊN?",
+    "options": [
+      { "id": "opt-1", "text": "Nhựa Polyethylene (nhựa PE)", "correct": false },
+      { "id": "opt-2", "text": "Cellulose trong bông nõn và gỗ", "correct": true },
+      { "id": "opt-3", "text": "Nhựa Polyvinyl chloride (nhựa PVC)", "correct": false },
+      { "id": "opt-4", "text": "Tơ nilon-6", "correct": false }
+    ],
+    "explanation": "Chính xác! Cellulose có sẵn trong cây xanh, bông, gỗ là polymer thiên nhiên. Các chất PE, PVC, nilon-6 là polymer do con người tổng hợp nhân tạo."
+  }
+}

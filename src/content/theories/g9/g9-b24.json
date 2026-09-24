@@ -1,0 +1,58 @@
+{
+  "lessonId": "g9-b24",
+  "nodeId": "g9-b24-theory",
+  "title": "Ethylene (C2H4) & Phản ứng của liên kết đôi",
+  "subtitle": "Liên kết đôi C=C kém bền, phản ứng cộng Bromine và trùng hợp tạo nhựa PE",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Cấu tạo liên kết đôi",
+      "badgeColor": "purple",
+      "title": "Cấu tạo phân tử Ethylene (CH2=CH2)",
+      "content": "Ethylene là hydrocarbon không no, đại diện tiêu biểu cho nhóm Alkene:",
+      "bulletPoints": [
+        "Tính chất vật lí: Khí không màu, không mùi, hơi nhẹ hơn không khí (d = 28/29), ít tan trong nước.",
+        "Cấu tạo đặc biệt: Giữa 2 nguyên tử C có một LIÊN KẾT ĐÔI ([[C=C]]).",
+        "Bản chất liên kết đôi: Gồm 1 liên kết đơn bền và 1 liên kết kém bền. Liên kết kém bền này rất DỄ BỊ BẺ GÃY trong các phản ứng hóa học."
+      ],
+      "callout": "💡 Điểm mấu chốt: Cứ có liên kết đôi C=C là có liên kết kém bền dễ bị bẻ gãy để tham gia phản ứng CỘNG!"
+    },
+    {
+      "id": "c2",
+      "badge": "Phản ứng cộng",
+      "badgeColor": "emerald",
+      "title": "Phản ứng cộng làm mất màu dung dịch Bromine",
+      "content": "Liên kết kém bền trong liên kết đôi bị đứt ra, mỗi nguyên tử C liên kết thêm với 1 nguyên tử Bromine:",
+      "formulaExample": "CH2=CH2 + Br2 -> CH2Br-CH2Br",
+      "bulletPoints": [
+        "Hiện tượng: Dẫn khí Ethylene vào dung dịch Bromine màu da cam, dung dịch bị MẤT MÀU hoàn toàn.",
+        "Sản phẩm: Dibromoethane ([[C2H4Br2]]) không màu.",
+        "Ý nghĩa thực tế: Đây là PHẢN ỨNG DÙNG ĐỂ NHẬN BIẾT Ethylene (và các hydrocarbon không no) với Methane."
+      ],
+      "callout": "📌 Mẹo thi nhận biết khí: Dùng dung dịch Bromine -> Mất màu da cam là Ethylene (C2H4), không hiện tượng là Methane (CH4)!"
+    },
+    {
+      "id": "c3",
+      "badge": "Trùng hợp & Ứng dụng",
+      "badgeColor": "cyan",
+      "title": "Phản ứng trùng hợp & Ứng dụng thúc quả chín",
+      "content": "Ethylene có 2 ứng dụng cực kỳ quan trọng trong công nghiệp và nông nghiệp:",
+      "bulletPoints": [
+        "Phản ứng trùng hợp: Ở nhiệt độ, áp suất và xúc tác thích hợp, hàng nghìn phân tử Ethylene liên kết lại với nhau tạo thành Polyethylene (nhựa PE dùng làm túi nilon, màng bọc, chai nhựa): [[n CH2=CH2 -> (-CH2-CH2-)n]].",
+        "Ứng dụng sinh học: Ethylene là hormone thực vật tự nhiên giúp kích thích trái cây mau chín."
+      ],
+      "callout": "⚠️ Nhớ tên nhựa: Trùng hợp Ethylene (PE) thu được Polyethylene - loại chất dẻo phổ biến nhất thế giới!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Thuốc thử nào sau đây dùng để PHÂN BIỆT khí Methane (CH4) và khí Ethylene (C2H4)?",
+    "options": [
+      { "id": "opt-1", "text": "Dung dịch nước vôi trong Ca(OH)2", "correct": false },
+      { "id": "opt-2", "text": "Dung dịch Bromine (nước Brom màu da cam)", "correct": true },
+      { "id": "opt-3", "text": "Dung dịch Acid HCl loãng", "correct": false },
+      { "id": "opt-4", "text": "Khí Oxygen (đốt cháy)", "correct": false }
+    ],
+    "explanation": "Chính xác! Ethylene có liên kết đôi C=C làm mất màu dung dịch Bromine màu da cam, trong khi Methane chỉ có liên kết đơn nên không làm mất màu dung dịch Bromine."
+  }
+}

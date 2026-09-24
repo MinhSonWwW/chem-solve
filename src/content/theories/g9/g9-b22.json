@@ -1,0 +1,60 @@
+{
+  "lessonId": "g9-b22",
+  "nodeId": "g9-b22-theory",
+  "title": "Hợp chất hữu cơ & Hóa học hữu cơ",
+  "subtitle": "Khái niệm, phân loại Hydrocarbon - Dẫn xuất và hóa trị Carbon",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm",
+      "badgeColor": "purple",
+      "title": "Hợp chất hữu cơ là gì?",
+      "content": "Hợp chất hữu cơ là hợp chất của Carbon (trừ một số chất vô cơ quen thuộc như [[CO]], [[CO2]], muối carbonate [[CO3^2-]], [[H2CO3]], carbide [[CaC2]]...).",
+      "bulletPoints": [
+        "Đặc điểm chung: Đa số ít tan trong nước, dễ cháy, nhiệt độ nóng chảy thấp, liên kết chủ yếu là liên kết cộng hóa trị.",
+        "Phân loại hợp chất hữu cơ:",
+        "1. Hydrocarbon: Phân tử CHỈ chứa 2 nguyên tố là Carbon (C) và Hydrogen (H) (ví dụ: [[CH4]], [[C2H4]], [[C2H2]], [[C6H6]]...).",
+        "2. Dẫn xuất của hydrocarbon: Ngoài C và H còn chứa nguyên tố khác như O, N, Cl... (ví dụ: [[C2H5OH]], [[CH3COOH]], [[CH3Cl]]...)."
+      ],
+      "callout": "💡 Dễ nhớ: Cứ chứa C là hữu cơ (trừ CO, CO2, muối carbonate và muối xyanua)!"
+    },
+    {
+      "id": "c2",
+      "badge": "Quy tắc hóa trị",
+      "badgeColor": "emerald",
+      "title": "Hóa trị & Liên kết trong phân tử hữu cơ",
+      "content": "Trong các hợp chất hữu cơ, các nguyên tố luôn tuân theo hóa trị cố định:",
+      "bulletPoints": [
+        "Carbon (C) luôn có hóa trị IV (mỗi nguyên tử C có 4 nét gạch liên kết xung quanh).",
+        "Hydrogen (H) có hóa trị I (1 nét gạch).",
+        "Oxygen (O) có hóa trị II (2 nét gạch).",
+        "Mạch Carbon: Các nguyên tử C có khả năng đặc biệt là liên kết trực tiếp với nhau tạo thành mạch thẳng, mạch nhánh hoặc mạch vòng."
+      ],
+      "callout": "📌 Đếm nét gạch: C xung quanh luôn có đúng 4 gạch liên kết, thiếu hay thừa là sai công thức cấu tạo!"
+    },
+    {
+      "id": "c3",
+      "badge": "Công thức cấu tạo",
+      "badgeColor": "cyan",
+      "title": "Công thức phân tử vs Công thức cấu tạo",
+      "content": "Một công thức phân tử có thể có nhiều cấu tạo phân tử khác nhau (hiện tượng đồng phân):",
+      "bulletPoints": [
+        "Công thức phân tử: Cho biết số lượng nguyên tử mỗi nguyên tố (như [[C2H6O]]).",
+        "Công thức cấu tạo: Biểu diễn trật tự liên kết giữa các nguyên tử trong phân tử.",
+        "Ví dụ: Cùng là [[C2H6O]], nếu cấu tạo là [[CH3-CH2-OH]] thì là Rượu etylic (chất lỏng), còn nếu là [[CH3-O-CH3]] thì là Dimethyl ether (chất khí)."
+      ],
+      "callout": "⚠️ Cùng công thức phân tử nhưng trật tự liên kết khác nhau sẽ tạo ra các chất hoàn toàn khác biệt!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Chất nào sau đây KHÔNG PHẢI là hợp chất hữu cơ?",
+    "options": [
+      { "id": "opt-1", "text": "Methane (CH4)", "correct": false },
+      { "id": "opt-2", "text": "Rượu etylic (C2H5OH)", "correct": false },
+      { "id": "opt-3", "text": "Khí Carbon dioxide (CO2)", "correct": true },
+      { "id": "opt-4", "text": "Đường Glucose (C6H12O6)", "correct": false }
+    ],
+    "explanation": "Chính xác! Mặc dù chứa nguyên tố Carbon nhưng CO2, CO, H2CO3 và các muối carbonate (như CaCO3, Na2CO3) được xếp vào nhóm các hợp chất vô cơ."
+  }
+}

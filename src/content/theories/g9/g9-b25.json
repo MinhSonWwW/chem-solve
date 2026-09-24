@@ -1,0 +1,61 @@
+{
+  "lessonId": "g9-b25",
+  "nodeId": "g9-b25-theory",
+  "title": "Nguồn nhiên liệu: Dầu mỏ, Khí thiên nhiên & Than mỏ",
+  "subtitle": "Chưng cất phân đoạn dầu mỏ và sử dụng nhiên liệu hiệu quả",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Dầu mỏ",
+      "badgeColor": "purple",
+      "title": "Dầu mỏ & Chưng cất phân đoạn",
+      "content": "Dầu mỏ là hỗn hợp phức tạp của hàng trăm loại hydrocarbon khác nhau:",
+      "bulletPoints": [
+        "Tính chất vật lí: Chất lỏng sánh, màu nâu đen, không tan trong nước và nhẹ hơn nước.",
+        "Chưng cất phân đoạn dầu mỏ: Dựa vào nhiệt độ sôi khác nhau của các chất để tách dầu mỏ thành các sản phẩm có ích:",
+        "Dưới 65°C: Khí hóa lỏng (LPG - gas đun nấu).",
+        "65 - 250°C: Xăng, dầu hỏa.",
+        "250 - 350°C: Dầu diesel (chạy xe tải, tàu thuyền), dầu mazut.",
+        "Cặn còn lại: Nhựa đường (rải đường giao thông)."
+      ],
+      "callout": "💡 Bản chất chưng cất phân đoạn là quá trình VẬT LÍ (tách theo nhiệt độ sôi), không làm biến đổi hóa học các chất!"
+    },
+    {
+      "id": "c2",
+      "badge": "Cracking",
+      "badgeColor": "emerald",
+      "title": "Phương pháp Cracking tăng sản lượng xăng",
+      "content": "Để đáp ứng nhu cầu khổng lồ về xăng xe, người ta áp dụng phương pháp Cracking:",
+      "formulaExample": "C16H34 -(cracking)-> C8H18 + C8H16",
+      "bulletPoints": [
+        "Khái niệm: Cracking là quá trình bẻ gãy các phân tử hydrocarbon mạch dài (dầu nặng ít giá trị) thành các phân tử hydrocarbon mạch ngắn hơn (xăng có giá trị cao).",
+        "Đây là quá trình BIẾN ĐỔI HÓA HỌC (khác với chưng cất phân đoạn là biến đổi vật lí)."
+      ],
+      "callout": "📌 Phân biệt đề thi: Chưng cất phân đoạn = Vật lí; Cracking (bẻ gãy mạch) = Hóa học!"
+    },
+    {
+      "id": "c3",
+      "badge": "Môi trường & Năng lượng",
+      "badgeColor": "amber",
+      "title": "Sử dụng nhiên liệu hiệu quả & Năng lượng tái tạo",
+      "content": "Sử dụng nhiên liệu hóa thạch không đúng cách gây ô nhiễm môi trường nghiêm trọng:",
+      "bulletPoints": [
+        "Tác hại: Đốt than mỏ, xăng dầu sinh ra khí [[CO2]] (gây hiệu ứng nhà kính, biến đổi khí hậu), khí độc [[CO]], [[SO2]], bụi mịn PM2.5.",
+        "Nguyên tắc sử dụng: Cung cấp đủ không khí (để cháy hoàn toàn, không tạo khói đen và CO), tăng diện tích tiếp xúc.",
+        "Xu hướng tương lai: Chuyển dịch sang năng lượng sạch, tái tạo (năng lượng mặt trời, gió, thủy điện, hydro xanh)."
+      ],
+      "callout": "⚠️ An toàn: Đốt than trong phòng kín sinh ra khí CO không màu không mùi, gây ngạt thở và tử vong cực kỳ nguy hiểm!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Quá trình nào sau đây dùng để bẻ gãy các phân tử hydrocarbon mạch dài thành hydrocarbon mạch ngắn nhằm tăng sản lượng xăng?",
+    "options": [
+      { "id": "opt-1", "text": "Chưng cất phân đoạn", "correct": false },
+      { "id": "opt-2", "text": "Phương pháp Cracking", "correct": true },
+      { "id": "opt-3", "text": "Phản ứng trùng hợp", "correct": false },
+      { "id": "opt-4", "text": "Lọc ly tâm", "correct": false }
+    ],
+    "explanation": "Chính xác! Cracking (tiếng Anh là bẻ gãy) là phương pháp dùng nhiệt độ và xúc tác để bẻ gãy các phân tử dầu nặng thành xăng và các hydrocarbon nhẹ hơn."
+  }
+}

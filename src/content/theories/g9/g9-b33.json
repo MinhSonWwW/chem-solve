@@ -1,0 +1,59 @@
+{
+  "lessonId": "g9-b33",
+  "nodeId": "g9-b33-theory",
+  "title": "Hóa học vỏ Trái Đất & Tài nguyên khoáng sản",
+  "subtitle": "Thành phần nguyên tố, quặng khoáng vật và khai thác bền vững",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Thành phần",
+      "badgeColor": "purple",
+      "title": "Thành phần nguyên tố trong vỏ Trái Đất",
+      "content": "Vỏ Trái Đất là lớp ngoài cùng của thạch quyển, cấu tạo từ các nguyên tố hóa học:",
+      "bulletPoints": [
+        "Nguyên tố phổ biến nhất: Oxygen ([[O]]) chiếm khoảng 46,6% khối lượng vỏ Trái Đất.",
+        "Nguyên tố phổ biến thứ hai: Silicon ([[Si]]) chiếm khoảng 27,7% (tạo nên cát, đất sét, đá).",
+        "Kim loại phổ biến nhất: Nhôm ([[Al]]) chiếm khoảng 8,1% (quặng bauxite).",
+        "Kim loại phổ biến thứ hai: Sắt ([[Fe]]) chiếm khoảng 5,0% (quặng hematite, magnetite)."
+      ],
+      "callout": "💡 Thứ tự 4 nguyên tố nhiều nhất: O > Si > Al > Fe! (Nhớ mẹo: O - Si - Nhôm - Sắt)!"
+    },
+    {
+      "id": "c2",
+      "badge": "Quặng & Khoáng sản",
+      "badgeColor": "emerald",
+      "title": "Các loại quặng kim loại quan trọng",
+      "content": "Kim loại trong vỏ Trái Đất chủ yếu tồn tại ở dạng hợp chất trong các mỏ quặng:",
+      "bulletPoints": [
+        "Quặng nhôm (Bauxite): Thành phần chính là [[Al2O3.2H2O]] (có nhiều ở Tây Nguyên nước ta).",
+        "Quặng sắt: Hematite đỏ ([[Fe2O3]]), Magnetite ([[Fe3O4]] có từ tính hút nam châm), Pyrite sắt ([[FeS2]] - vàng mắt mèo).",
+        "Quặng đồng: Chalcopyrite ([[CuFeS2]]), Malachite ([[CuCO3.Cu(OH)2]]).",
+        "Kim loại quý (vàng, bạch kim): Do hoạt động hóa học rất yếu nên tồn tại ở dạng đơn chất tự do (vàng cốm trong cát sa khoáng)."
+      ],
+      "callout": "📌 Vàng (Au) và Bạch kim (Pt) trơ về mặt hóa học nên tồn tại ở dạng đơn chất tự do trong tự nhiên!"
+    },
+    {
+      "id": "c3",
+      "badge": "Khai thác bền vững",
+      "badgeColor": "amber",
+      "title": "Bảo vệ tài nguyên khoáng sản",
+      "content": "Khoáng sản là tài nguyên không thể tái tạo:",
+      "bulletPoints": [
+        "Tác động môi trường: Khai thác khoáng sản bừa bãi gây xói mòn đất, ô nhiễm nguồn nước ngầm bởi kim loại nặng, sạt lở đồi núi.",
+        "Giải pháp: Khai thác tiết kiệm, áp dụng công nghệ luyện kim sạch, tăng cường thu gom và TÁI CHẾ kim loại (như tái chế lon nhôm, sắt vụn tiết kiệm 95% năng lượng so với sản xuất từ quặng mới)."
+      ],
+      "callout": "⚠️ Tiết kiệm tài nguyên: Tái chế kim loại phế liệu giúp giảm thiểu khai thác mỏ và bảo vệ môi trường sống!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Nguyên tố kim loại nào có hàm lượng PHỔ BIẾN NHẤT trong vỏ Trái Đất?",
+    "options": [
+      { "id": "opt-1", "text": "Kim loại sắt (Fe)", "correct": false },
+      { "id": "opt-2", "text": "Kim loại nhôm (Al)", "correct": true },
+      { "id": "opt-3", "text": "Kim loại đồng (Cu)", "correct": false },
+      { "id": "opt-4", "text": "Kim loại canxi (Ca)", "correct": false }
+    ],
+    "explanation": "Chính xác! Nhôm (Al) chiếm khoảng 8,1% khối lượng vỏ Trái Đất, là kim loại phổ biến nhất (nhiều hơn sắt Fe chiếm 5,0%)."
+  }
+}

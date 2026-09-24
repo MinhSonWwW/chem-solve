@@ -1,0 +1,61 @@
+{
+  "lessonId": "g9-b27",
+  "nodeId": "g9-b27-theory",
+  "title": "Acetic acid (Axit Axetic - CH3COOH)",
+  "subtitle": "Đặc trưng nhóm carboxyl -COOH, tính acid hữu cơ và ứng dụng làm giấm ăn",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Cấu tạo phân tử",
+      "badgeColor": "purple",
+      "title": "Cấu tạo & Nhóm Carboxyl (-COOH)",
+      "content": "Acetic acid có công thức phân tử là [[C2H4O2]], công thức cấu tạo là [[CH3-COOH]]:",
+      "bulletPoints": [
+        "Tính chất vật lí: Chất lỏng không màu, vị chua gắt, mùi nồng hắc, tan vô hạn trong nước. Khi nhiệt độ hạ xuống dưới 16,6°C, acid đóng băng thành các mảng tinh thể như băng (gọi là acid giấm băng).",
+        "Giấm ăn: Là dung dịch acetic acid có nồng độ từ 2% đến 5%.",
+        "Nhóm chức: Chứa nhóm [[-COOH]] (gồm nhóm C=O liên kết với nhóm -OH). Chính nhóm carboxyl [[-COOH]] làm cho phân tử mang TÍNH ACID."
+      ],
+      "callout": "💡 Dấu hiệu nhận biết: Hợp chất hữu cơ có đuôi -COOH là carboxylic acid, có tính acid!"
+    },
+    {
+      "id": "c2",
+      "badge": "Tính acid",
+      "badgeColor": "emerald",
+      "title": "Tính chất của một Acid hữu cơ",
+      "content": "Acetic acid là một acid yếu nhưng có đầy đủ 5 tính chất hóa học của một acid thông thường:",
+      "formulaExample": "2CH3COOH + Na2CO3 -> 2CH3COONa + CO2 + H2O",
+      "bulletPoints": [
+        "1. Làm đổi màu quỳ tím sang ĐỎ (nhạt).",
+        "2. Tác dụng với kim loại trước H: [[2CH3COOH + Zn -> (CH3COO)2Zn + H2]].",
+        "3. Tác dụng với base: [[CH3COOH + NaOH -> CH3COONa + H2O]].",
+        "4. Tác dụng với oxide base: [[2CH3COOH + CaO -> (CH3COO)2Ca + H2O]].",
+        "5. Tác dụng với muối carbonate: Giải phóng sủi bọt khí [[CO2]] (dùng giấm ăn để tẩy cặn ấm đun nước do cặn đá vôi CaCO3)."
+      ],
+      "callout": "📌 Đời sống: Đổ giấm ăn vào vỏ trứng hoặc cặn vôi (CaCO3) thấy sủi bọt khí CO2 ngay lập tức!"
+    },
+    {
+      "id": "c3",
+      "badge": "So sánh rượu & acid",
+      "badgeColor": "amber",
+      "title": "Phân biệt Rượu etylic và Acetic acid",
+      "content": "Cách nhanh nhất để nhận biết trong bài tập phân biệt hóa chất:",
+      "bulletPoints": [
+        "Dùng quỳ tím: Acetic acid làm quỳ tím hóa ĐỎ; Rượu etylic KHÔNG làm đổi màu quỳ tím.",
+        "Dùng muối carbonate ([[Na2CO3]] hoặc đá vôi): Acetic acid sủi bọt khí [[CO2]]; Rượu etylic không phản ứng.",
+        "Tác dụng với kim loại Na: CẢ HAI CHẤT đều sủi bọt khí [[H2]] (vì cùng chứa nguyên tử H linh động) -> Không dùng Na để phân biệt!"
+      ],
+      "callout": "⚠️ Cạm bẫy thi: Đừng chọn kim loại Na để phân biệt C2H5OH và CH3COOH vì cả hai đều phản ứng sinh khí H2!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Thuốc thử đơn giản nhất dùng để PHÂN BIỆT Rượu etylic (C2H5OH) và Acetic acid (CH3COOH) là gì?",
+    "options": [
+      { "id": "opt-1", "text": "Kim loại Sodium (Na)", "correct": false },
+      { "id": "opt-2", "text": "Quỳ tím", "correct": true },
+      { "id": "opt-3", "text": "Nước lọc", "correct": false },
+      { "id": "opt-4", "text": "Dung dịch Bromine", "correct": false }
+    ],
+    "explanation": "Chính xác! Acetic acid là acid nên làm quỳ tím hóa đỏ, còn Rượu etylic là hợp chất trung tính không làm đổi màu quỳ tím."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "lessonId": "g9-b35",
+  "nodeId": "g9-b35-theory",
+  "title": "Chu trình Carbon & Môi trường",
+  "subtitle": "Nhiên liệu hóa thạch, hiệu ứng nhà kính và giải pháp xanh",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Chu trình Carbon",
+      "badgeColor": "purple",
+      "title": "Sự luân chuyển Carbon trong tự nhiên",
+      "content": "Carbon luân chuyển liên tục giữa các quyển của Trái Đất:",
+      "bulletPoints": [
+        "Quá trình hấp thụ [[CO2]]: Cây xanh quang hợp chuyển hóa [[CO2]] và nước thành tinh bột và giải phóng [[O2]]; [[CO2]] hòa tan vào đại dương tạo trầm tích carbonate.",
+        "Quá trình phát thải [[CO2]]: Quá trình hô hấp của sinh vật, quá trình phân hủy xác động thực vật, núi lửa phun trào.",
+        "Tác động con người: Hoạt động đốt cháy nhiên liệu hóa thạch (than đá, dầu mỏ, khí đốt) làm lượng [[CO2]] thải vào khí quyển vượt xa khả năng tự cân bằng của Trái Đất."
+      ],
+      "callout": "💡 Quang hợp là con đường tự nhiên quan trọng nhất giúp giảm lượng CO2 trong bầu khí quyển!"
+    },
+    {
+      "id": "c2",
+      "badge": "Hiệu ứng nhà kính",
+      "badgeColor": "emerald",
+      "title": "Nguyên nhân và hậu quả biến đổi khí hậu",
+      "content": "Nóng lên toàn cầu do sự gia tăng khí nhà kính:",
+      "bulletPoints": [
+        "Khí nhà kính chính: Carbon dioxide ([[CO2]]) chiếm tỉ trọng lớn nhất từ đốt nhiên liệu; Methane ([[CH4]]) có khả năng giữ nhiệt mạnh gấp nhiều lần.",
+        "Cơ chế: Các khí này cho bức xạ Mặt Trời chiếu xuống Trái Đất nhưng giữ lại bức xạ nhiệt hồng ngoại phản xạ ngược lên, giống như lớp kính nhà kính giữ nhiệt.",
+        "Hậu quả: Nhiệt độ trung bình toàn cầu tăng, băng tan ở hai cực, mực nước biển dâng cao, thiên tai bão lũ và hạn hán ngày càng gay gắt."
+      ],
+      "callout": "📌 Bộ đôi khí nhà kính nguy hiểm nhất do hoạt động con người sinh ra: CO2 và CH4!"
+    },
+    {
+      "id": "c3",
+      "badge": "Hành động xanh",
+      "badgeColor": "amber",
+      "title": "Nhiên liệu hóa thạch & Giải pháp bền vững",
+      "content": "Giảm thiểu phát thải carbon để bảo vệ hành tinh:",
+      "bulletPoints": [
+        "Hạn chế nhiên liệu hóa thạch: Than mỏ, dầu mỏ và khí thiên nhiên là tài nguyên hữu hạn, không tái tạo và phát thải lượng lớn khí nhà kính khi cháy.",
+        "Năng lượng tái tạo: Chuyển dịch sang năng lượng mặt trời, điện gió, thủy điện và năng lượng hydro xanh ([[H2]]).",
+        "Biện pháp bảo vệ: Trồng và bảo vệ rừng ngập mặn/rừng nguyên sinh, phát triển công nghệ thu giữ và chôn lấp carbon (CCS), tăng cường sử dụng phương tiện giao thông công cộng và xe điện."
+      ],
+      "callout": "⚠️ Ghi nhớ: Trồng rừng và tiết kiệm năng lượng là 2 hành động thiết thực nhất của mỗi cá nhân!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Cặp khí nào sau đây là nguyên nhân hàng đầu gây nên hiệu ứng nhà kính làm Trái Đất nóng lên?",
+    "options": [
+      { "id": "opt-1", "text": "CO2 (Carbon dioxide) và CH4 (Methane)", "correct": true },
+      { "id": "opt-2", "text": "O2 (Oxygen) và N2 (Nitrogen)", "correct": false },
+      { "id": "opt-3", "text": "H2 (Hydrogen) và He (Helium)", "correct": false },
+      { "id": "opt-4", "text": "Ar (Argon) và Ne (Neon)", "correct": false }
+    ],
+    "explanation": "Chính xác! Khí CO2 (từ đốt nhiên liệu hóa thạch) và CH4 (từ chăn nuôi, khí rác) là hai khí nhà kính giữ nhiệt chủ yếu làm Trái Đất nóng lên và gây biến đổi khí hậu."
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "lessonId": "g9-b21",
+  "nodeId": "g9-b21-theory",
+  "title": "So sánh Phi kim & Kim loại",
+  "subtitle": "Khác biệt về tính chất vật lí, tính chất hóa học và ứng dụng",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Tính chất vật lí",
+      "badgeColor": "purple",
+      "title": "So sánh tính chất vật lí",
+      "content": "Kim loại và phi kim có sự tương phản sâu sắc về tính chất vật lí:",
+      "bulletPoints": [
+        "Kim loại: Hầu hết ở thể rắn (trừ Thủy ngân [[Hg]] là chất lỏng), có ánh kim, dẫn điện và dẫn nhiệt tốt, có tính dẻo (dễ rèn, kéo sợi, dát mỏng).",
+        "Phi kim: Tồn tại ở cả 3 thể (Rắn: [[C]], [[S]], [[P]]; Lỏng: [[Br2]]; Khí: [[O2]], [[N2]], [[Cl2]]...), không có ánh kim, dẫn điện và nhiệt kém (trừ than chì dẫn điện), giòn."
+      ],
+      "callout": "💡 Nhớ ngoại lệ: Kim loại duy nhất thể lỏng ở nhiệt độ thường là Thủy ngân (Hg); Phi kim duy nhất dẫn điện là Than chì (Graphite - Carbon)!"
+    },
+    {
+      "id": "c2",
+      "badge": "Tính chất hóa học",
+      "badgeColor": "emerald",
+      "title": "So sánh tính chất hóa học",
+      "content": "Sự khác biệt khi tham gia phản ứng:",
+      "bulletPoints": [
+        "1. Tác dụng với Oxygen: Kim loại thường tạo oxide BASE (như [[CaO]], [[Na2O]]); Phi kim thường tạo oxide ACID (như [[CO2]], [[SO2]], [[P2O5]]).",
+        "2. Tác dụng với Hydrogen: Kim loại hầu như không phản ứng; Phi kim phản ứng tạo hợp chất khí (như [[H2O]], [[HCl]], [[NH3]], [[CH4]]).",
+        "3. Tác dụng với Acid: Kim loại đứng trước H tan trong acid giải phóng [[H2]]; Phi kim thường không có phản ứng tương tự."
+      ],
+      "callout": "📌 Bản chất electron: Kim loại dễ nhường electron (tính khử); Phi kim dễ nhận electron (tính oxi hóa)!"
+    },
+    {
+      "id": "c3",
+      "badge": "Mẹo đề thi",
+      "badgeColor": "amber",
+      "title": "Các câu hỏi nhận biết hay gặp",
+      "content": "Nhận biết kim loại và phi kim trong bài thực hành:",
+      "bulletPoints": [
+        "Chỉ cần gõ búa: Kim loại dẹt ra (tính dẻo), phi kim vỡ vụn (tính giòn).",
+        "Thử mạch điện: Đèn sáng là kim loại (hoặc than chì), đèn tắt là phi kim khác.",
+        "Khí Chlorine [[Cl2]]: Khí màu vàng lục, mùi hắc độc, là phi kim hoạt động rất mạnh, tác dụng với kim loại tạo muối chloride."
+      ],
+      "callout": "⚠️ Chú ý: Chlorine (Cl2) có tính tẩy màu khi ở trong nước ẩm (tạo HClO có tính oxi hóa mạnh)!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Chất nào sau đây là phi kim nhưng có khả năng DẪN ĐIỆN tốt?",
+    "options": [
+      { "id": "opt-1", "text": "Kim cương (Diamond)", "correct": false },
+      { "id": "opt-2", "text": "Than chì (Graphite)", "correct": true },
+      { "id": "opt-3", "text": "Lưu huỳnh (Sulfur)", "correct": false },
+      { "id": "opt-4", "text": "Khí Oxygen (O2)", "correct": false }
+    ],
+    "explanation": "Chính xác! Than chì (dạng thù hình của Carbon) là một phi kim đặc biệt có khả năng dẫn điện tốt, thường được ứng dụng làm điện cực pin và ruột bút chì."
+  }
+}

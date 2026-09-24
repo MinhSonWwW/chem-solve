@@ -1,0 +1,58 @@
+{
+  "lessonId": "g9-b20",
+  "nodeId": "g9-b20-theory",
+  "title": "Tách kim loại & Hợp kim (Gang - Thép)",
+  "subtitle": "Phương pháp nhiệt luyện, điện phân và ứng dụng của hợp kim",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Phương pháp tách",
+      "badgeColor": "purple",
+      "title": "3 phương pháp tách kim loại trong công nghiệp",
+      "content": "Tùy theo mức độ hoạt động hóa học của kim loại mà người ta áp dụng phương pháp tách phù hợp:",
+      "bulletPoints": [
+        "1. Điện phân nóng chảy: Áp dụng cho kim loại hoạt động mạnh ([[K]], [[Na]], [[Ca]], [[Mg]], [[Al]]). Ví dụ: Sản xuất nhôm bằng điện phân nóng chảy [[Al2O3]] với xúc tác cryolite.",
+        "2. Phương pháp nhiệt luyện: Dùng chất khử ([[CO]], [[C]], [[H2]]) khử oxide kim loại trung bình/yếu ở nhiệt độ cao ([[Fe]], [[Zn]], [[Cu]]...). Phổ biến nhất trong luyện gang, thép.",
+        "3. Phương pháp thủy luyện: Dùng kim loại mạnh đẩy kim loại yếu hơn ra khỏi dung dịch muối (sản xuất Cu, Ag...)."
+      ],
+      "callout": "💡 Quy tắc chọn phương pháp: Kim loại từ Al trở về trước bắt buộc phải ĐIỆN PHÂN NÓNG CHẢY!"
+    },
+    {
+      "id": "c2",
+      "badge": "Luyện kim",
+      "badgeColor": "emerald",
+      "title": "Hợp kim của sắt: Gang và Thép",
+      "content": "Gang và thép đều là hợp kim của sắt (Fe) với carbon (C) cùng một số nguyên tố khác:",
+      "bulletPoints": [
+        "Gang: Hàm lượng Carbon từ 2% đến 5%. Gang giòn, cứng, chịu mài mòn tốt, dùng đúc bệ máy, ống dẫn nước.",
+        "Thép: Hàm lượng Carbon dưới 2% (0,01% - 2%). Thép dẻo, bền, chịu lực kéo nén cực tốt, dùng làm khung nhà, cầu cống, vỏ xe...",
+        "Nguyên tắc luyện thép từ gang: Oxi hóa bớt các tạp chất Carbon, Silicon, Manganese... trong gang nóng chảy bằng khí Oxygen."
+      ],
+      "callout": "📌 So sánh nhanh: Gang chứa NHIỀU Carbon hơn (2-5%) nên giòn; Thép chứa ÍT Carbon hơn (<2%) nên dẻo và bền hơn!"
+    },
+    {
+      "id": "c3",
+      "badge": "Chống ăn mòn",
+      "badgeColor": "amber",
+      "title": "Sự ăn mòn kim loại & Biện pháp bảo vệ",
+      "content": "Kim loại bị phá hủy do tác dụng hóa học của môi trường xung quanh (nước, không khí):",
+      "bulletPoints": [
+        "Nguyên nhân: Không khí ẩm chứa oxygen, hơi nước, khí acid ([[CO2]], [[SO2]]) làm kim loại bị gỉ.",
+        "Biện pháp bảo vệ bề mặt: Sơn, mạ, bôi dầu mỡ lên bề mặt kim loại để ngăn cách với môi trường.",
+        "Biện pháp chế tạo hợp kim chống gỉ: Thêm Crom, Niken vào thép để tạo ra thép không gỉ (Inox)."
+      ],
+      "callout": "⚠️ Đời sống: Tra dầu xích xe đạp, sơn cửa sắt là ứng dụng trực tiếp của phương pháp bảo vệ bề mặt!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Điểm khác biệt cốt lõi nhất giữa Gang và Thép là gì?",
+    "options": [
+      { "id": "opt-1", "text": "Gang là kim loại nguyên chất, thép là hợp kim", "correct": false },
+      { "id": "opt-2", "text": "Hàm lượng carbon trong gang (2 - 5%) cao hơn trong thép (< 2%)", "correct": true },
+      { "id": "opt-3", "text": "Thép cứng và giòn hơn gang rất nhiều", "correct": false },
+      { "id": "opt-4", "text": "Gang không chứa nguyên tố sắt", "correct": false }
+    ],
+    "explanation": "Chính xác! Cả gang và thép đều là hợp kim của Fe với C, nhưng gang có hàm lượng C từ 2-5% (giòn hơn), còn thép có hàm lượng C dưới 2% (dẻo và bền hơn)."
+  }
+}

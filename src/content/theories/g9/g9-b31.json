@@ -1,0 +1,58 @@
+{
+  "lessonId": "g9-b31",
+  "nodeId": "g9-b31-theory",
+  "title": "Protein (Chất đạm)",
+  "subtitle": "Thành phần amino acid, sự đông tụ nhiệt và phản ứng màu",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm",
+      "badgeColor": "purple",
+      "title": "Cấu tạo phân tử Protein",
+      "content": "Protein là nền tảng của sự sống, có trong thịt, cá, trứng, sữa, đậu đỗ, tóc, móng:",
+      "bulletPoints": [
+        "Thành phần nguyên tố: Chứa Carbon (C), Hydrogen (H), Oxygen (O), Nitrogen (N) và đôi khi có thêm Sulfur (S), Phosphorus (P)...",
+        "Bản chất: Là hợp chất cao phân tử được tạo nên từ hàng nghìn mắt xích các AMINO ACID liên kết với nhau bằng liên kết peptide (-CO-NH-).",
+        "Khối lượng phân tử: Vô cùng lớn, từ vài vạn đến hàng triệu đơn vị."
+      ],
+      "callout": "💡 Dễ nhớ: Điểm phân biệt Protein với chất béo và tinh bột là Protein BẮT BUỘC PHẢI CHỨA NGUYÊN TỐ NITROGEN (N)!"
+    },
+    {
+      "id": "c2",
+      "badge": "Tính chất đặc trưng",
+      "badgeColor": "emerald",
+      "title": "Sự đông tụ của Protein",
+      "content": "Protein có 2 tính chất vật lí và hóa học vô cùng quen thuộc:",
+      "bulletPoints": [
+        "1. Sự đông tụ: Khi bị đun nóng hoặc cho thêm acid/base/rượu vào, cấu trúc protein bị biến tính và vón cục đông tụ lại.",
+        "Hiện tượng đời sống: Luộc trứng (lòng trắng trứng từ trong suốt đông đặc lại thành màu trắng); Nấu canh cua (gạch cua nổi váng lên khi sôi); Vắt chanh vào sữa đậu nành làm sữa bị vón cục.",
+        "2. Phản ứng thủy phân: Khi đun với acid, base hoặc nhờ men tiêu hóa, protein bị thủy phân thành các amino acid đơn giản để cơ thể hấp thụ."
+      ],
+      "callout": "📌 Ứng dụng: Nấu riêu cua, làm đậu phụ, luộc trứng đều là ứng dụng của hiện tượng ĐÔNG TỤ PROTEIN do nhiệt và acid!"
+    },
+    {
+      "id": "c3",
+      "badge": "Nhận biết",
+      "badgeColor": "amber",
+      "title": "Nhận biết Protein bằng mùi cháy khét tóc",
+      "content": "Cách đơn giản nhất để phân biệt tơ tằm/len tự nhiên (protein) với sợi bông/sợi tổng hợp:",
+      "bulletPoints": [
+        "Đốt cháy sợi tơ tằm hoặc sợi lông cừu: Có MÙI KHÉT NHƯ MÙI TÓC CHÁY (hoặc sừng cháy) do thành phần chứa Nitrogen và Lưu huỳnh.",
+        "Đốt sợi bông ([[cellulose]]): Cháy nhanh, khói trắng, có mùi như giấy cháy, tàn tro màu xám mịn.",
+        "Đốt sợi nilon tổng hợp: Cháy vón cục cứng lại, mùi khét của nhựa."
+      ],
+      "callout": "⚠️ Mẹo thử vải: Đốt sợi chỉ -> Mùi khét như tóc cháy là tơ tằm/len (protein); Mùi như giấy cháy là sợi bông (cellulose)!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi đốt một mẫu sợi vải tự nhiên, thấy có mùi khét như mùi tóc cháy. Mẫu vải đó được dệt từ chất liệu gì?",
+    "options": [
+      { "id": "opt-1", "text": "Sợi bông (chứa cellulose)", "correct": false },
+      { "id": "opt-2", "text": "Tơ tằm tự nhiên (chứa protein)", "correct": true },
+      { "id": "opt-3", "text": "Sợi gai (chứa cellulose)", "correct": false },
+      { "id": "opt-4", "text": "Sợi nilon tổng hợp", "correct": false }
+    ],
+    "explanation": "Chính xác! Tơ tằm và len lông cừu được cấu tạo từ protein, khi cháy sẽ phân hủy sinh ra các hợp chất chứa N và S có mùi khét đặc trưng như mùi tóc cháy."
+  }
+}

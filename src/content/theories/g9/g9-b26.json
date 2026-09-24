@@ -1,0 +1,59 @@
+{
+  "lessonId": "g9-b26",
+  "nodeId": "g9-b26-theory",
+  "title": "Ethylic alcohol (Rượu Etylic - C2H5OH)",
+  "subtitle": "Đặc điểm nhóm -OH, độ rượu, tác dụng với Natri và phản ứng este hóa",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Cấu tạo & Độ rượu",
+      "badgeColor": "purple",
+      "title": "Cấu tạo phân tử & Khái niệm Độ rượu",
+      "content": "Rượu etylic (Ethanol) có công thức phân tử là [[C2H6O]], công thức cấu tạo là [[C2H5-OH]]:",
+      "bulletPoints": [
+        "Tính chất vật lí: Chất lỏng không màu, mùi thơm nhẹ, nhẹ hơn nước, sôi ở 78,3°C, tan vô hạn trong nước.",
+        "Nhóm chức: Chứa nhóm [[-OH]] (hydroxyl) liên kết với gốc ethyl [[C2H5-]]. Chính nhóm [[-OH]] này quyết định tính chất hóa học đặc trưng của rượu.",
+        "Độ rượu: Là số mL rượu etylic nguyên chất có trong 100 mL dung dịch rượu với nước (ví dụ rượu 45° nghĩa là trong 100 mL dung dịch có 45 mL rượu nguyên chất và 55 mL nước)."
+      ],
+      "callout": "💡 Công thức tính độ rượu: Độ rượu (Đr) = (V rượu nguyên chất / V dung dịch rượu) * 100!"
+    },
+    {
+      "id": "c2",
+      "badge": "Phản ứng thế Na",
+      "badgeColor": "emerald",
+      "title": "Tác dụng với kim loại Sodium (Na)",
+      "content": "Nguyên tử H trong nhóm [[-OH]] linh động, dễ bị thay thế bởi kim loại hoạt động mạnh:",
+      "formulaExample": "2C2H5OH + 2Na -> 2C2H5ONa + H2",
+      "bulletPoints": [
+        "Hiện tượng: Mẩu Natri tan dần và có bọt khí [[H2]] thoát ra.",
+        "Sản phẩm: Sodium ethoxide ([[C2H5ONa]]) và khí Hydrogen.",
+        "Lưu ý: Rượu etylic KHÔNG tác dụng với các kim loại như Fe, Cu hay các dung dịch kiềm như NaOH."
+      ],
+      "callout": "📌 So sánh: Hydrocarbon (như CH4, C2H4) KHÔNG phản ứng với Na; chỉ có chất có nhóm -OH mới phản ứng sinh khí H2!"
+    },
+    {
+      "id": "c3",
+      "badge": "Phản ứng este hóa",
+      "badgeColor": "cyan",
+      "title": "Phản ứng Este hóa tạo mùi thơm hoa quả",
+      "content": "Khi đun nóng rượu etylic với acetic acid có mặt sulfuric acid đặc làm xúc tác:",
+      "formulaExample": "C2H5OH + CH3COOH <-> CH3COOC2H5 + H2O",
+      "bulletPoints": [
+        "Sản phẩm: Ethyl acetate ([[CH3COOC2H5]]) là chất lỏng có mùi thơm dễ chịu đặc trưng của chuối/táo chín, nhẹ hơn nước và nổi lên trên.",
+        "Đặc điểm: Đây là phản ứng thuận nghịch (hai chiều), xúc tác [[H2SO4]] đặc có vai trò hút nước để cân bằng chuyển dịch sang tạo este."
+      ],
+      "callout": "⚠️ Đời sống: Cồn y tế 70° sát trùng tốt nhất vì nồng độ này thẩm thấu tối ưu qua màng tế bào vi khuẩn!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Trong 200 mL dung dịch rượu 45° có chứa bao nhiêu mL rượu etylic nguyên chất?",
+    "options": [
+      { "id": "opt-1", "text": "45 mL", "correct": false },
+      { "id": "opt-2", "text": "90 mL", "correct": true },
+      { "id": "opt-3", "text": "110 mL", "correct": false },
+      { "id": "opt-4", "text": "180 mL", "correct": false }
+    ],
+    "explanation": "Chính xác! Theo định nghĩa: 100 mL rượu 45° chứa 45 mL rượu nguyên chất. Do đó trong 200 mL sẽ chứa: (200 * 45) / 100 = 90 mL rượu nguyên chất."
+  }
+}

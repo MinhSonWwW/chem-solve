@@ -1,0 +1,59 @@
+{
+  "lessonId": "g9-b29",
+  "nodeId": "g9-b29-theory",
+  "title": "Glucose & Saccharose (Đường đơn - Đường đôi)",
+  "subtitle": "Phản ứng tráng gương của Glucose và phản ứng thủy phân Saccharose",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Glucose (C6H12O6)",
+      "badgeColor": "purple",
+      "title": "Glucose (Đường nho) & Phản ứng tráng bạc",
+      "content": "Glucose là chất đường đơn (monosaccharide) có nhiều trong quả nho chín, mật ong và trong máu người (nồng độ khoảng 0,1%):",
+      "bulletPoints": [
+        "Tính chất vật lí: Chất rắn kết tinh, không màu, vị ngọt, dễ tan trong nước.",
+        "Phản ứng tráng bạc (tráng gương): Khi đun nóng dung dịch Glucose với dung dịch bạc nitrat trong amoniac ([[AgNO3 / NH3]]), Ag kim loại sáng bóng bám vào thành ống nghiệm như chiếc gương.",
+        "Ý nghĩa phản ứng: Dùng để tráng ruột phích (phích nước), tráng gương soi và NHẬN BIẾT Glucose."
+      ],
+      "callout": "💡 Dấu hiệu nhận biết Glucose: Phản ứng tráng gương tạo lớp bạc kim loại sáng bóng (Ag)!"
+    },
+    {
+      "id": "c2",
+      "badge": "Saccharose (C12H22O11)",
+      "badgeColor": "emerald",
+      "title": "Saccharose (Đường mía) & Phản ứng thủy phân",
+      "content": "Saccharose là chất đường đôi (disaccharide) có nhiều trong cây mía, củ cải đường, hoa thốt nốt (đường ăn hàng ngày):",
+      "formulaExample": "C12H22O11 + H2O -(axit, t°)-> C6H12O6(glucose) + C6H12O6(fructose)",
+      "bulletPoints": [
+        "Saccharose KHÔNG có phản ứng tráng bạc trực tiếp.",
+        "Phản ứng thủy phân: Khi đun nóng với xúc tác acid (hoặc enzyme), 1 phân tử Saccharose bị thủy phân thành 1 phân tử Glucose và 1 phân tử Fructose.",
+        "Sau khi thủy phân, dung dịch thu được CÓ PHẢN ỨNG TRÁNG BẠC (do sinh ra Glucose)."
+      ],
+      "callout": "📌 Phân biệt: Glucose tráng gương trực tiếp; Saccharose không tráng gương (chỉ tráng gương sau khi thủy phân)!"
+    },
+    {
+      "id": "c3",
+      "badge": "Lên men rượu",
+      "badgeColor": "amber",
+      "title": "Phản ứng lên men rượu của Glucose",
+      "content": "Dưới tác dụng của men rượu ở nhiệt độ thích hợp (30 - 35°C):",
+      "formulaExample": "C6H12O6 -(men rượu)-> 2C2H5OH + 2CO2",
+      "bulletPoints": [
+        "Đây là phản ứng sản xuất rượu etylic truyền thống từ hoa quả chín hoặc bột đường.",
+        "Quá trình sinh ra bọt khí [[CO2]] làm hỗn hợp sủi bọt khi ủ men rượu."
+      ],
+      "callout": "⚠️ Đời sống: Người bị hạ đường huyết (mệt lả, chóng mặt) được truyền dung dịch Glucose 5% để hồi phục năng lượng nhanh nhất!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Thuốc thử nào sau đây dùng để nhận biết Glucose bằng hiện tượng tạo lớp bạc sáng bóng (phản ứng tráng gương)?",
+    "options": [
+      { "id": "opt-1", "text": "Dung dịch Acid HCl loãng", "correct": false },
+      { "id": "opt-2", "text": "Dung dịch AgNO3 trong NH3 đun nóng", "correct": true },
+      { "id": "opt-3", "text": "Dung dịch nước Bromine", "correct": false },
+      { "id": "opt-4", "text": "Dung dịch muối ăn NaCl", "correct": false }
+    ],
+    "explanation": "Chính xác! Glucose có phản ứng tráng bạc đặc trưng với dung dịch AgNO3 trong NH3 khi đun nóng, sinh ra kim loại Bạc (Ag) bám sáng bóng vào thành ống nghiệm."
+  }
+}
