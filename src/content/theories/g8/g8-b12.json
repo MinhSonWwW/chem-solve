@@ -1,0 +1,60 @@
+{
+  "lessonId": "g8-b12",
+  "nodeId": "g8-b12-theory",
+  "title": "Phân bón hóa học & Vai trò dinh dưỡng",
+  "subtitle": "Phân đạm (N), phân lân (P), phân kali (K), phân NPK và lưu ý sử dụng",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Dinh dưỡng cây trồng",
+      "badgeColor": "purple",
+      "title": "3 nguyên tố dinh dưỡng chính cho cây trồng (N - P - K)",
+      "content": "Cây trồng cần nhiều nguyên tố dinh dưỡng để sinh trưởng, trong đó 3 nguyên tố đa lượng quan trọng nhất là:",
+      "bulletPoints": [
+        "1. Nitrogen (Đạm - N): Kích thích cây phát triển thân, cành, đâm chồi, nảy lộc, xanh lá.",
+        "2. Phosphorus (Lân - P): Kích thích sự phát triển của bộ rễ, quá trình đẻ nhánh, ra hoa và đậu quả.",
+        "3. Potassium (Kali - K): Tăng cường sức chống rét, chịu hạn, chống sâu bệnh, giúp cây cứng cáp, tăng tích lũy đường/tinh bột cho củ và quả."
+      ],
+      "callout": "💡 Câu thần chú dễ nhớ: 'Đạm lá - Lân rễ/hoa - Kali quả/chống chịu'!"
+    },
+    {
+      "id": "c2",
+      "badge": "Các loại phân bón",
+      "badgeColor": "emerald",
+      "title": "Phân bón đơn & Phân bón hỗn hợp (NPK)",
+      "content": "Phân bón hóa học chứa các hợp chất dinh dưỡng dễ tan trong đất:",
+      "bulletPoints": [
+        "Phân đạm (chứa ion [[NO3-]] hoặc [[NH4+]]): Phổ biến nhất là phân Urê [[(NH2)2CO]] (chứa hàm lượng N cao nhất ~46%), phân đạm amoni [[NH4NO3]].",
+        "Phân lân (chứa ion [[PO4^3-]]): Phân Superphosphate đơn và kép (chứa [[Ca(H2PO4)2]]).",
+        "Phân kali (chứa ion [[K+]]): Phổ biến là phân muối [[KCl]] hoặc [[K2SO4]].",
+        "Phân hỗn hợp NPK: Chứa cả 3 nguyên tố N, P, K theo tỉ lệ thích hợp (ví dụ NPK 16-16-8)."
+      ],
+      "callout": "📌 Phân Urê (NH2)2CO là loại phân đạm được sử dụng phổ biến và rộng rãi nhất trong nông nghiệp nước ta."
+    },
+    {
+      "id": "c3",
+      "badge": "Sử dụng an toàn",
+      "badgeColor": "amber",
+      "title": "Nguyên tắc 4 đúng khi bón phân",
+      "content": "Bón phân không hợp lý sẽ gây lãng phí, chua đất và ô nhiễm nguồn nước ngầm:",
+      "bulletPoints": [
+        "Đúng lúc: Bón vào thời điểm cây cần (ví dụ bón lân khi mới trồng để bén rễ, bón kali khi nuôi quả).",
+        "Đúng loại: Chọn đúng phân phù hợp với từng giai đoạn và loại đất (đất chua không bón phân có tính acid).",
+        "Đúng liều lượng: Bón thừa phân đạm làm rau bị tồn dư nitrate gây độc, cây dễ bị lụi.",
+        "Đúng cách: Bón vùi vào đất hoặc hòa loãng tưới gốc, không bón sát gốc làm sót rễ."
+      ],
+      "callout": "⚠️ Bảo vệ môi trường: Bón phân cân đối, kết hợp phân hữu cơ để bảo vệ độ phì nhiêu của đất!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Nguyên tố dinh dưỡng nào trong phân bón có tác dụng kích thích cây đâm chồi, nảy lộc và phát triển thân, cành, lá?",
+    "options": [
+      { "id": "opt-1", "text": "Potassium (Kali - K)", "correct": false },
+      { "id": "opt-2", "text": "Nitrogen (Đạm - N)", "correct": true },
+      { "id": "opt-3", "text": "Phosphorus (Lân - P)", "correct": false },
+      { "id": "opt-4", "text": "Canxi (Ca)", "correct": false }
+    ],
+    "explanation": "Chính xác! Nguyên tố Nitrogen (N) trong phân đạm là thành phần chính cấu tạo nên protein của tế bào, giúp cây phát triển thân, cành, lá nhanh chóng."
+  }
+}

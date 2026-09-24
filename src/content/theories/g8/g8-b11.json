@@ -1,0 +1,59 @@
+{
+  "lessonId": "g8-b11",
+  "nodeId": "g8-b11-theory",
+  "title": "Muối & Điều kiện phản ứng trao đổi",
+  "subtitle": "Cấu tạo muối, tính chất hóa học và điều kiện xảy ra phản ứng trao đổi",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm Muối",
+      "badgeColor": "purple",
+      "title": "Muối là gì?",
+      "content": "Muối là hợp chất được tạo bởi nguyên tử kim loại (hoặc nhóm amoni NH4) liên kết với gốc acid.",
+      "bulletPoints": [
+        "Muối tan: Hầu hết muối chứa gốc nitrate ([[-NO3]]), sodium ([[Na+]]), potassium ([[K+]]) đều tan tốt trong nước.",
+        "Muối không tan (kết tủa quen thuộc): [[BaSO4]] (kết tủa trắng), [[AgCl]] (kết tủa trắng), [[CaCO3]] (đá vôi trắng), [[CuS]] (kết tủa đen)."
+      ],
+      "callout": "💡 Tên muối = Tên kim loại (kèm hóa trị nếu có nhiều hóa trị) + Tên gốc acid (ví dụ: Iron(III) chloride FeCl3)."
+    },
+    {
+      "id": "c2",
+      "badge": "Tính chất hóa học",
+      "badgeColor": "emerald",
+      "title": "4 tính chất hóa học của Muối",
+      "content": "Muối có thể tham gia nhiều phản ứng trao đổi thú vị trong dung dịch:",
+      "formulaExample": "BaCl2 + Na2SO4 -> BaSO4 + 2NaCl",
+      "bulletPoints": [
+        "1. Tác dụng với kim loại: Kim loại mạnh hơn đẩy kim loại yếu hơn ra khỏi muối ([[Fe + CuSO4 -> FeSO4 + Cu]])." ,
+        "2. Tác dụng với acid: Tạo muối mới và acid mới ([[CaCO3 + 2HCl -> CaCl2 + CO2 + H2O]])." ,
+        "3. Tác dụng với dung dịch base: Tạo muối mới và base mới ([[CuSO4 + 2NaOH -> Cu(OH)2 + Na2SO4]])." ,
+        "4. Tác dụng với muối khác: Hai dung dịch muối phản ứng tạo 2 muối mới, trong đó có chất kết tủa ([[BaCl2 + Na2SO4 -> BaSO4 + 2NaCl]])."
+      ],
+      "callout": "📌 Phản ứng trao đổi trong dung dịch không làm thay đổi số oxi hóa của các nguyên tố!"
+    },
+    {
+      "id": "c3",
+      "badge": "Điều kiện phản ứng",
+      "badgeColor": "amber",
+      "title": "Điều kiện để phản ứng trao đổi xảy ra",
+      "content": "Phản ứng trao đổi trong dung dịch giữa các chất CHỈ XẢY RA nếu sản phẩm tạo thành thỏa mãn ít nhất 1 trong 3 điều kiện:",
+      "bulletPoints": [
+        "Điều kiện 1: Có chất KẾT TỦA (chất không tan, lắng xuống như [[BaSO4]], [[AgCl]], [[CaCO3]]...).",
+        "Điều kiện 2: Có chất KHÍ bay lên (như sủi bọt khí [[CO2]], [[SO2]], [[H2S]]...).",
+        "Điều kiện 3: Có chất điện li yếu (phổ biến nhất là tạo thành NƯỚC [[H2O]])."
+      ],
+      "callout": "⚠️ Quy tắc vàng: Nếu sản phẩm không có kết tủa, không có khí, không có nước thì phản ứng KHÔNG XẢY RA!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi trộn dung dịch Barium chloride (BaCl2) với dung dịch Sodium sulfate (Na2SO4), hiện tượng quan sát được là gì?",
+    "options": [
+      { "id": "opt-1", "text": "Không có hiện tượng gì xảy ra", "correct": false },
+      { "id": "opt-2", "text": "Xuất hiện chất kết tủa màu trắng lắng xuống", "correct": true },
+      { "id": "opt-3", "text": "Có chất khí sủi bọt thoát ra mãnh liệt", "correct": false },
+      { "id": "opt-4", "text": "Dung dịch chuyển sang màu đỏ tím", "correct": false }
+    ],
+    "explanation": "Chính xác! Phản ứng tạo thành Barium sulfate (BaSO4) là chất kết tủa màu trắng: BaCl2 + Na2SO4 -> BaSO4(kết tủa trắng) + 2NaCl."
+  }
+}

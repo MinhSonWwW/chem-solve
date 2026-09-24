@@ -1,0 +1,59 @@
+{
+  "lessonId": "g8-b05",
+  "nodeId": "g8-b05-theory",
+  "title": "Định luật bảo toàn khối lượng & PTHH",
+  "subtitle": "Nguyên lý bảo toàn nguyên tử và các bước cân bằng phương trình",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Định luật bảo toàn",
+      "badgeColor": "purple",
+      "title": "Định luật bảo toàn khối lượng (Lomonosov - Lavoisier)",
+      "content": "Trong một phản ứng hóa học, tổng khối lượng của các chất sản phẩm bằng tổng khối lượng của các chất tham gia phản ứng.",
+      "bulletPoints": [
+        "Biểu thức: Giả sử A + B -> C + D thì [[m(A) + m(B) = m(C) + m(D)]].",
+        "Bản chất: Trong phản ứng, chỉ có liên kết giữa các nguyên tử thay đổi, số lượng nguyên tử mỗi nguyên tố được bảo toàn.",
+        "Ứng dụng: Nếu biết khối lượng của 3 chất trong 4 chất, ta dễ dàng tính được khối lượng của chất còn lại."
+      ],
+      "callout": "💡 Quy tắc 3 biết 1 tìm: Tổng khối lượng vế trái luôn bằng tổng khối lượng vế phải!"
+    },
+    {
+      "id": "c2",
+      "badge": "Cân bằng PTHH",
+      "badgeColor": "emerald",
+      "title": "3 bước cân bằng phương trình hóa học",
+      "content": "Phương trình hóa học biểu diễn ngắn gọn phản ứng bằng công thức hóa học:",
+      "formulaExample": "2H2 + O2 -> 2H2O",
+      "bulletPoints": [
+        "Bước 1: Viết sơ đồ phản ứng gồm CTHH của các chất tham gia và sản phẩm.",
+        "Bước 2: Cân bằng số nguyên tử của mỗi nguyên tố ở hai vế bằng cách thêm HỆ SỐ thích hợp đặt trước CTHH.",
+        "Bước 3: Viết phương trình hóa học hoàn chỉnh (hệ số tối giản)."
+      ],
+      "callout": "📌 Tuyệt đối KHÔNG thay đổi chỉ số chân trong CTHH (ví dụ viết 2H2O, không được sửa thành H2O2)!"
+    },
+    {
+      "id": "c3",
+      "badge": "Mẹo cân bằng",
+      "badgeColor": "amber",
+      "title": "Mẹo cân bằng nhanh không bị nhầm",
+      "content": "Để cân bằng phương trình nhanh và chính xác nhất:",
+      "bulletPoints": [
+        "Mẹo 1: Cân bằng kim loại trước -> phi kim -> hydrogen (H) -> oxygen (O) cuối cùng.",
+        "Mẹo 2: Nếu có nhóm nguyên tử (như [[SO4]], [[OH]], [[NO3]]) không bị phá vỡ sau phản ứng, hãy coi cả nhóm như 1 đơn vị để cân bằng.",
+        "Mẹo 3: Với chất có số lẻ/chẵn (như O2 và Fe2O3), hãy nhân chẵn bên lẻ lên trước."
+      ],
+      "callout": "⚠️ Kiểm tra lại: Đếm lại nguyên tử O ở hai vế sau cùng, nếu bằng nhau là bạn đã cân bằng đúng!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Đốt cháy hoàn toàn 12 g Carbon (C) trong khí Oxygen thu được 44 g khí CO2. Khối lượng khí Oxygen (O2) đã tham gia phản ứng là?",
+    "options": [
+      { "id": "opt-1", "text": "56 g", "correct": false },
+      { "id": "opt-2", "text": "32 g", "correct": true },
+      { "id": "opt-3", "text": "24 g", "correct": false },
+      { "id": "opt-4", "text": "16 g", "correct": false }
+    ],
+    "explanation": "Chính xác! Theo định luật bảo toàn khối lượng: m(C) + m(O2) = m(CO2) => 12 + m(O2) = 44 => m(O2) = 44 - 12 = 32 g."
+  }
+}

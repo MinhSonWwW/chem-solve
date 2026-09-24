@@ -1,0 +1,58 @@
+{
+  "lessonId": "g8-b02",
+  "nodeId": "g8-b02-theory",
+  "title": "Phản ứng hóa học & Sự biến đổi chất",
+  "subtitle": "Dấu hiệu nhận biết và phân biệt với biến đổi vật lí",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Quy tắc cốt lõi",
+      "badgeColor": "purple",
+      "title": "Biến đổi vật lí vs Biến đổi hóa học",
+      "content": "Sự biến đổi của chất xung quanh chúng ta được chia làm 2 loại rõ rệt:",
+      "bulletPoints": [
+        "Biến đổi vật lí: Chất biến đổi về hình dạng, trạng thái (rắn, lỏng, khí) nhưng KHÔNG tạo ra chất mới (ví dụ: nước đá tan, bẻ gãy đinh sắt, hòa tan đường vào nước).",
+        "Biến đổi hóa học: Có sự biến đổi từ chất này thành chất khác, TẠO RA CHẤT MỚI (ví dụ: củi cháy thành than, đinh sắt bị gỉ sét, đun đường cháy khét)."
+      ],
+      "callout": "💡 Dấu hiệu then chốt: Cứ có chất mới sinh ra là biến đổi hóa học!"
+    },
+    {
+      "id": "c2",
+      "badge": "Dấu hiệu nhận biết",
+      "badgeColor": "emerald",
+      "title": "4 dấu hiệu có phản ứng hóa học xảy ra",
+      "content": "Phản ứng hóa học là quá trình biến đổi chất đầu (chất phản ứng) thành chất mới (sản phẩm). Các dấu hiệu quan sát được:",
+      "bulletPoints": [
+        "1. Có sự thay đổi màu sắc của dung dịch hoặc chất rắn.",
+        "2. Xuất hiện chất kết tủa (chất rắn không tan lắng xuống).",
+        "3. Có chất khí thoát ra (sủi bọt khí).",
+        "4. Tỏa nhiệt hoặc phát sáng (như than cháy, vôi sống tôi với nước)."
+      ],
+      "callout": "📌 Trong phản ứng hóa học, liên kết giữa các nguyên tử bị thay đổi, còn số lượng nguyên tử mỗi nguyên tố vẫn giữ nguyên!"
+    },
+    {
+      "id": "c3",
+      "badge": "Bẫy thường gặp",
+      "badgeColor": "amber",
+      "title": "Những hiện tượng học sinh hay nhầm lẫn",
+      "content": "Đừng để các hiện tượng sau đánh lừa trong bài thi:",
+      "bulletPoints": [
+        "Bẫy 1: Nước sôi bốc hơi hoặc đun sáp nến chảy lỏng CHỈ là biến đổi vật lí (chỉ đổi thể, phân tử vẫn là nước/sáp).",
+        "Bẫy 2: Hòa tan muối ăn vào nước tạo nước muối là biến đổi vật lí (cô cạn nước lại thu được muối ăn ban đầu).",
+        "Bẫy 3: Đốt cháy sợi bấc của cây nến tạo khói và khí [[CO2]] là biến đổi hóa học."
+      ],
+      "callout": "⚠️ Cần phân biệt: Hòa tan cơ học là vật lí, nhưng hòa tan kèm sủi bọt/nóng lên là hóa học!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Hiện tượng nào sau đây là BIẾN ĐỔI HÓA HỌC?",
+    "options": [
+      { "id": "opt-1", "text": "Nước đá tan chảy thành nước lỏng", "correct": false },
+      { "id": "opt-2", "text": "Đinh sắt để ngoài không khí ẩm bị gỉ sét", "correct": true },
+      { "id": "opt-3", "text": "Hòa tan đường vào cốc nước", "correct": false },
+      { "id": "opt-4", "text": "Cắt mảnh nhôm thành từng sợi nhỏ", "correct": false }
+    ],
+    "explanation": "Chính xác! Đinh sắt bị gỉ đã biến đổi kim loại Fe thành oxide sắt (gỉ sắt nâu) - đây là chất mới nên là biến đổi hóa học."
+  }
+}

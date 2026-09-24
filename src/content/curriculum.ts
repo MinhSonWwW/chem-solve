@@ -159,7 +159,8 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             subtitle: 'Hiện tượng phản ứng và sự biến đổi chất',
             ready: true,
             nodes: [
-              { id: 'g8-b02-n01', nodeIndex: 1, title: 'Dấu hiệu có phản ứng xảy ra', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g8-b02-theory', nodeIndex: 1, title: 'Lý thuyết: Biến đổi chất & Dấu hiệu phản ứng', description: '2 phút ghi nhớ', type: 'theory' },
+              { id: 'g8-b02-n01', nodeIndex: 2, title: 'Dấu hiệu có phản ứng xảy ra', description: '6 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -169,9 +170,10 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             subtitle: 'Khối lượng mol, thể tích khí ở ĐKC và tỉ khối khí',
             ready: true, // Content available!
             nodes: [
-              { id: 'g8-b03-n01', nodeIndex: 1, title: 'Mol & Thể tích khí ở ĐKC (24,79 L)', description: '6 câu hỏi cơ bản', type: 'lesson' },
-              { id: 'g8-b03-n02', nodeIndex: 2, title: 'Tỉ khối của chất khí', description: '6 câu hỏi nâng cao', type: 'lesson' },
-              { id: 'g8-b03-chest', nodeIndex: 3, title: 'Rương kho báu Mol', description: 'Phần thưởng XP', type: 'chest' },
+              { id: 'g8-b03-theory', nodeIndex: 1, title: 'Lý thuyết: Mol & Tỉ khối khí', description: '2 phút ghi nhớ', type: 'theory' },
+              { id: 'g8-b03-n01', nodeIndex: 2, title: 'Mol & Thể tích khí ở ĐKC (24,79 L)', description: '6 câu hỏi cơ bản', type: 'lesson' },
+              { id: 'g8-b03-n02', nodeIndex: 3, title: 'Tỉ khối của chất khí', description: '6 câu hỏi nâng cao', type: 'lesson' },
+              { id: 'g8-b03-chest', nodeIndex: 4, title: 'Rương kho báu Mol', description: 'Phần thưởng XP', type: 'chest' },
             ],
           },
           {
@@ -181,8 +183,9 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             subtitle: 'Độ tan, nồng độ phần trăm C% và nồng độ mol CM',
             ready: true,
             nodes: [
-              { id: 'g8-b04-n01', nodeIndex: 1, title: 'Nồng độ phần trăm (C%)', description: '6 câu hỏi', type: 'lesson' },
-              { id: 'g8-b04-n02', nodeIndex: 2, title: 'Nồng độ mol (CM)', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g8-b04-theory', nodeIndex: 1, title: 'Lý thuyết: Dung dịch, C% và CM', description: '2 phút ghi nhớ', type: 'theory' },
+              { id: 'g8-b04-n01', nodeIndex: 2, title: 'Nồng độ phần trăm (C%)', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g8-b04-n02', nodeIndex: 3, title: 'Nồng độ mol (CM)', description: '6 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -192,8 +195,9 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             subtitle: 'Viết và cân bằng phương trình phản ứng hóa học',
             ready: true,
             nodes: [
-              { id: 'g8-b05-n01', nodeIndex: 1, title: 'Định luật bảo toàn khối lượng', description: '6 câu hỏi', type: 'lesson' },
-              { id: 'g8-b05-n02', nodeIndex: 2, title: 'Cân bằng PTHH', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g8-b05-theory', nodeIndex: 1, title: 'Lý thuyết: ĐL Bảo toàn khối lượng & Cân bằng PTHH', description: '2 phút ghi nhớ', type: 'theory' },
+              { id: 'g8-b05-n01', nodeIndex: 2, title: 'Định luật bảo toàn khối lượng', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g8-b05-n02', nodeIndex: 3, title: 'Cân bằng PTHH', description: '6 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -203,7 +207,8 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             subtitle: 'Tính lượng chất phản ứng và sản phẩm theo tỉ lệ mol',
             ready: true,
             nodes: [
-              { id: 'g8-b06-n01', nodeIndex: 1, title: 'Tính theo PTHH cơ bản', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g8-b06-theory', nodeIndex: 1, title: 'Lý thuyết: 4 bước tính theo PTHH', description: '2 phút ghi nhớ', type: 'theory' },
+              { id: 'g8-b06-n01', nodeIndex: 2, title: 'Tính theo PTHH cơ bản', description: '6 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -213,7 +218,8 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             subtitle: 'Các yếu tố ảnh hưởng đến tốc độ phản ứng',
             ready: true,
             nodes: [
-              { id: 'g8-b07-n01', nodeIndex: 1, title: 'Yếu tố ảnh hưởng tốc độ', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g8-b07-theory', nodeIndex: 1, title: 'Lý thuyết: Tốc độ phản ứng & Chất xúc tác', description: '2 phút ghi nhớ', type: 'theory' },
+              { id: 'g8-b07-n01', nodeIndex: 2, title: 'Yếu tố ảnh hưởng tốc độ', description: '6 câu hỏi', type: 'lesson' },
             ],
           },
         ],
@@ -231,7 +237,8 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             subtitle: 'Tính chất hóa học của Acid (HCl, H2SO4)',
             ready: true,
             nodes: [
-              { id: 'g8-b08-n01', nodeIndex: 1, title: 'Tính chất của Acid', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g8-b08-theory', nodeIndex: 1, title: 'Lý thuyết: Acid & Tính chất hóa học', description: '2 phút ghi nhớ', type: 'theory' },
+              { id: 'g8-b08-n01', nodeIndex: 2, title: 'Tính chất của Acid', description: '6 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -241,7 +248,8 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             subtitle: 'Base kiềm, base không tan và chỉ thị màu',
             ready: true,
             nodes: [
-              { id: 'g8-b09-n01', nodeIndex: 1, title: 'Tính chất Base & pH', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g8-b09-theory', nodeIndex: 1, title: 'Lý thuyết: Base & Thang pH', description: '2 phút ghi nhớ', type: 'theory' },
+              { id: 'g8-b09-n01', nodeIndex: 2, title: 'Tính chất Base & pH', description: '6 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -251,7 +259,8 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             subtitle: 'Oxide acid, oxide base và oxide lưỡng tính',
             ready: true,
             nodes: [
-              { id: 'g8-b10-n01', nodeIndex: 1, title: 'Phân loại & Tính chất Oxide', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g8-b10-theory', nodeIndex: 1, title: 'Lý thuyết: Phân loại & Tính chất Oxide', description: '2 phút ghi nhớ', type: 'theory' },
+              { id: 'g8-b10-n01', nodeIndex: 2, title: 'Phân loại & Tính chất Oxide', description: '6 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -261,7 +270,8 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             subtitle: 'Tính chất hóa học của muối và điều kiện kết tủa',
             ready: true,
             nodes: [
-              { id: 'g8-b11-n01', nodeIndex: 1, title: 'Tính chất của muối', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g8-b11-theory', nodeIndex: 1, title: 'Lý thuyết: Muối & Điều kiện kết tủa', description: '2 phút ghi nhớ', type: 'theory' },
+              { id: 'g8-b11-n01', nodeIndex: 2, title: 'Tính chất của muối', description: '6 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -271,7 +281,8 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             subtitle: 'Phân đạm (N), lân (P), kali (K) và NPK',
             ready: true,
             nodes: [
-              { id: 'g8-b12-n01', nodeIndex: 1, title: 'Các loại phân bón phổ biến', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g8-b12-theory', nodeIndex: 1, title: 'Lý thuyết: Phân đạm, lân, kali & NPK', description: '2 phút ghi nhớ', type: 'theory' },
+              { id: 'g8-b12-n01', nodeIndex: 2, title: 'Các loại phân bón phổ biến', description: '6 câu hỏi', type: 'lesson' },
             ],
           },
         ],

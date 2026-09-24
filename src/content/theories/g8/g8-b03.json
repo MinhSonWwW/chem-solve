@@ -1,0 +1,59 @@
+{
+  "lessonId": "g8-b03",
+  "nodeId": "g8-b03-theory",
+  "title": "Mol, Thể tích khí ở ĐKC & Tỉ khối",
+  "subtitle": "Các công thức tính toán nền tảng của Hóa học 8",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm Mol",
+      "badgeColor": "purple",
+      "title": "Mol & Khối lượng mol (M)",
+      "content": "Mol là lượng chất chứa [[6,022 * 10^23]] nguyên tử hoặc phân tử chất đó (số Avogadro, kí hiệu là N).",
+      "bulletPoints": [
+        "Khối lượng mol (M) là khối lượng tính bằng gam của 1 mol chất đó (g/mol). Trị số bằng đúng nguyên tử khối/phân tử khối.",
+        "Công thức chuyển đổi: [[m = n * M]] (trong đó m: khối lượng gam, n: số mol, M: khối lượng mol).",
+        "Ví dụ: 1 mol [[H2O]] có khối lượng là 18 g; 2 mol [[H2O]] có khối lượng m = 2 * 18 = 36 g."
+      ],
+      "callout": "💡 Nhớ nhanh công thức: n = m / M  (Số mol = Khối lượng / Khối lượng mol)"
+    },
+    {
+      "id": "c2",
+      "badge": "Thể tích khí ĐKC",
+      "badgeColor": "emerald",
+      "title": "Thể tích chất khí ở điều kiện chuẩn (ĐKC)",
+      "content": "Theo SGK mới (Kết nối tri thức), điều kiện chuẩn (ĐKC) là 25°C và 1 bar. Ở ĐKC, 1 mol của BẤT KỲ chất khí nào cũng chiếm thể tích là 24,79 lít.",
+      "bulletPoints": [
+        "Công thức tính thể tích khí ở ĐKC: [[V = n * 24,79]] (lít).",
+        "Công thức tính số mol từ thể tích: [[n = V / 24,79]] (mol).",
+        "Ví dụ: 0,2 mol khí [[O2]] ở ĐKC có thể tích là: V = 0,2 * 24,79 = 4,958 lít."
+      ],
+      "callout": "📌 Chú ý SGK mới: 1 mol khí ở ĐKC là 24,79 lít (không dùng con số 22,4 L cũ nữa nhé)!"
+    },
+    {
+      "id": "c3",
+      "badge": "Tỉ khối chất khí",
+      "badgeColor": "cyan",
+      "title": "Tỉ khối của chất khí",
+      "content": "Tỉ khối cho biết khí này nặng hay nhẹ hơn khí khác bao nhiêu lần:",
+      "bulletPoints": [
+        "Tỉ khối của khí A đối với khí B: [[d(A/B) = M(A) / M(B)]].",
+        "Tỉ khối của khí A đối với không khí (kk): [[d(A/kk) = M(A) / 29]] (khối lượng mol trung bình của không khí xấp xỉ 29 g/mol).",
+        "Nếu d > 1: Khí A nặng hơn, chìm xuống dưới (cần thu ngửa bình).",
+        "Nếu d < 1: Khí A nhẹ hơn, bay lên trên (cần thu úp bình, ví dụ khí [[H2]] có M = 2 < 29)."
+      ],
+      "callout": "⚠️ Nhớ số 29: Không khí gồm 80% N2 (28) và 20% O2 (32), M trung bình = 29 g/mol!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Ở điều kiện chuẩn (25°C, 1 bar), thể tích của 0,5 mol khí Oxygen (O2) là bao nhiêu lít?",
+    "options": [
+      { "id": "opt-1", "text": "11,2 lít", "correct": false },
+      { "id": "opt-2", "text": "12,395 lít", "correct": true },
+      { "id": "opt-3", "text": "24,79 lít", "correct": false },
+      { "id": "opt-4", "text": "49,58 lít", "correct": false }
+    ],
+    "explanation": "Chính xác! Áp dụng công thức V = n * 24,79 = 0,5 * 24,79 = 12,395 lít."
+  }
+}

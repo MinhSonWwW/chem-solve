@@ -1,0 +1,58 @@
+{
+  "lessonId": "g8-b07",
+  "nodeId": "g8-b07-theory",
+  "title": "Tốc độ phản ứng & Chất xúc tác",
+  "subtitle": "5 yếu tố làm tăng tốc độ phản ứng và ứng dụng đời sống",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm",
+      "badgeColor": "purple",
+      "title": "Tốc độ phản ứng là gì?",
+      "content": "Tốc độ phản ứng hóa học là đại lượng đặc trưng cho sự nhanh hay chậm của một phản ứng hóa học.",
+      "bulletPoints": [
+        "Phản ứng xảy ra nhanh: Vụ nổ thuốc súng, pháo hoa, đốt khí gas nấu ăn.",
+        "Phản ứng xảy ra chậm: Đinh sắt gỉ trong không khí, quá trình lên men giấm, than đá hình thành trong lòng đất."
+      ],
+      "callout": "💡 Trong sản xuất và đời sống, con người thường tìm cách tăng tốc phản ứng có lợi và kìm hãm phản ứng có hại (như chống gỉ sắt)."
+    },
+    {
+      "id": "c2",
+      "badge": "5 yếu tố ảnh hưởng",
+      "badgeColor": "emerald",
+      "title": "5 yếu tố làm tăng tốc độ phản ứng",
+      "content": "Muốn phản ứng xảy ra nhanh hơn, ta có thể tác động bằng 5 cách sau:",
+      "bulletPoints": [
+        "1. Nồng độ: Tăng nồng độ chất phản ứng làm tăng số lượng va chạm hiệu quả giữa các hạt.",
+        "2. Nhiệt độ: Đun nóng làm các hạt chuyển động nhanh hơn, va chạm mạnh hơn (nấu thức ăn nhanh chín khi đun sôi).",
+        "3. Áp suất: Tăng áp suất (với chất khí) ép các phân tử khí lại gần nhau hơn.",
+        "4. Diện tích tiếp xúc: Nghiền nhỏ chất rắn giúp tăng diện tích tiếp xúc (viên than đập nhỏ cháy nhanh hơn thanh than to).",
+        "5. Chất xúc tác: Thêm chất xúc tác phù hợp làm giảm năng lượng hoạt hóa."
+      ],
+      "callout": "📌 Ghi nhớ: Cứ TĂNG (nồng độ, nhiệt độ, diện tích tiếp xúc) là TĂNG tốc độ phản ứng!"
+    },
+    {
+      "id": "c3",
+      "badge": "Chất xúc tác",
+      "badgeColor": "amber",
+      "title": "Bản chất của Chất xúc tác",
+      "content": "Chất xúc tác là chất làm tăng tốc độ phản ứng nhưng KHÔNG bị tiêu hao hay biến đổi thành chất khác sau khi phản ứng kết thúc.",
+      "bulletPoints": [
+        "Ví dụ thí nghiệm: Bột Manganese dioxide [[MnO2]] làm khí Oxygen thoát ra nhanh và sục sôi từ dung dịch nước oxy già [[H2O2]]. Kết thúc phản ứng, [[MnO2]] vẫn còn nguyên vẹn khối lượng.",
+        "Enzyme sinh học: Men tiêu hóa trong cơ thể là chất xúc tác sinh học cực kỳ hiệu quả."
+      ],
+      "callout": "⚠️ Cảnh báo bẫy thi: Chất xúc tác tham gia vào quá trình nhưng không bao giờ bị tiêu hao mất đi!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Hành động nào sau đây giúp viên than tổ ong cháy NHANH và MÃNH LIỆT hơn?",
+    "options": [
+      { "id": "opt-1", "text": "Đậy kín nắp lò lại", "correct": false },
+      { "id": "opt-2", "text": "Dùng quạt thổi thêm không khí vào lò", "correct": true },
+      { "id": "opt-3", "text": "Ngâm than vào nước lạnh", "correct": false },
+      { "id": "opt-4", "text": "Dùng than nguyên khối cực to không có lỗ", "correct": false }
+    ],
+    "explanation": "Chính xác! Thổi không khí vào lò giúp tăng nồng độ khí Oxygen, làm phản ứng cháy diễn ra nhanh và mãnh liệt hơn."
+  }
+}

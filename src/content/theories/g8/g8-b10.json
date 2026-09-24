@@ -1,0 +1,59 @@
+{
+  "lessonId": "g8-b10",
+  "nodeId": "g8-b10-theory",
+  "title": "Oxide: Phân loại & Tính chất hóa học",
+  "subtitle": "Oxide acid, oxide base, phản ứng với nước và dung dịch tương ứng",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm Oxide",
+      "badgeColor": "purple",
+      "title": "Oxide là gì & Phân loại Oxide",
+      "content": "Oxide là hợp chất gồm 2 nguyên tố, trong đó có một nguyên tố là Oxygen (O). Oxide được chia làm 4 loại:",
+      "bulletPoints": [
+        "1. Oxide base: Thường là oxide của kim loại, tương ứng với một base (như [[Na2O]], [[CaO]], [[CuO]], [[Fe2O3]]...).",
+        "2. Oxide acid: Thường là oxide của phi kim, tương ứng với một acid (như [[CO2]], [[SO2]], [[SO3]], [[P2O5]]...).",
+        "3. Oxide lưỡng tính: Tác dụng được với cả acid và base (như [[Al2O3]], [[ZnO]]).",
+        "4. Oxide trung tính (không tạo muối): Không tác dụng với acid, base, nước (như [[CO]], [[NO]])."
+      ],
+      "callout": "💡 Quy tắc nhanh: Thấy Kim loại + O là oxide base; Phi kim + O thường là oxide acid!"
+    },
+    {
+      "id": "c2",
+      "badge": "Oxide Base",
+      "badgeColor": "emerald",
+      "title": "Tính chất hóa học của Oxide Base",
+      "content": "Oxide base thể hiện tính chất đặc trưng qua các phản ứng sau:",
+      "formulaExample": "CaO + H2O -> Ca(OH)2",
+      "bulletPoints": [
+        "Tác dụng với nước: Một số oxide base của kim loại kiềm/kiềm thổ ([[Na2O]], [[K2O]], [[CaO]], [[BaO]]) tác dụng với nước tạo dung dịch kiềm (hiện tượng tôi vôi sống [[CaO]]).",
+        "Tác dụng với acid: Hầu hết oxide base đều tác dụng với dung dịch acid tạo muối và nước (ví dụ: [[CuO + 2HCl -> CuCl2 + H2O]], bột đen CuO tan ra tạo dung dịch CuCl2 màu xanh lam)."
+      ],
+      "callout": "📌 Chú ý: Các oxide base không tan (như CuO, Fe2O3, MgO) KHÔNG tác dụng với nước ở nhiệt độ thường!"
+    },
+    {
+      "id": "c3",
+      "badge": "Oxide Acid",
+      "badgeColor": "cyan",
+      "title": "Tính chất hóa học của Oxide Acid",
+      "content": "Oxide acid có tính chất hóa học đối ứng với oxide base:",
+      "formulaExample": "CO2 + Ca(OH)2 -> CaCO3 + H2O",
+      "bulletPoints": [
+        "Tác dụng với nước: Nhiều oxide acid tác dụng với nước tạo dung dịch acid tương ứng ([[SO3 + H2O -> H2SO4]], [[P2O5 + 3H2O -> 2H3PO4]]).",
+        "Tác dụng với dung dịch base (kiềm): Tạo thành muối và nước. Thí nghiệm nhận biết khí [[CO2]]: Dẫn khí CO2 vào dung dịch nước vôi trong [[Ca(OH)2]], xuất hiện kết tủa trắng [[CaCO3]] làm đục nước vôi."
+      ],
+      "callout": "⚠️ Nhớ thí nghiệm kinh điển: Sục CO2 hoặc SO2 vào nước vôi trong Ca(OH)2 làm dung dịch bị vẩn đục trắng!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Chất nào sau đây thuộc loại OXIDE BASE?",
+    "options": [
+      { "id": "opt-1", "text": "Khí Carbon dioxide (CO2)", "correct": false },
+      { "id": "opt-2", "text": "Khí Sulfur dioxide (SO2)", "correct": false },
+      { "id": "opt-3", "text": "Canxi oxide - Vôi sống (CaO)", "correct": true },
+      { "id": "opt-4", "text": "Diphosphorus pentoxide (P2O5)", "correct": false }
+    ],
+    "explanation": "Chính xác! CaO (Calcium oxide) là hợp chất của kim loại Ca với oxygen nên là oxide base. Các chất CO2, SO2, P2O5 là oxide của phi kim nên thuộc loại oxide acid."
+  }
+}

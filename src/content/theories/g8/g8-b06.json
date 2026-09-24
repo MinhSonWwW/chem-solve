@@ -1,0 +1,61 @@
+{
+  "lessonId": "g8-b06",
+  "nodeId": "g8-b06-theory",
+  "title": "Tính theo phương trình hóa học",
+  "subtitle": "Quy trình 4 bước giải toán hóa học theo số mol",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Phương pháp chuẩn",
+      "badgeColor": "purple",
+      "title": "4 bước giải bài toán theo PTHH",
+      "content": "Đây là quy trình chuẩn mực giúp bạn giải mọi bài toán hóa học cấp 2:",
+      "bulletPoints": [
+        "Bước 1: Đổi các dữ kiện đề bài (khối lượng m, thể tích V) ra số mol (n).",
+        "Bước 2: Viết phương trình hóa học và CÂN BẰNG chính xác.",
+        "Bước 3: Dựa vào tỉ lệ hệ số trong PTHH để tìm số mol chất cần tìm.",
+        "Bước 4: Tính toán đại lượng mà đề bài yêu cầu (khối lượng m = n * M, thể tích V = n * 24,79...). "
+      ],
+      "callout": "💡 Khẩu quyết: Cứ thấy gam hay lít là quy đổi hết về MOL trước tiên!"
+    },
+    {
+      "id": "c2",
+      "badge": "Tỉ lệ mol",
+      "badgeColor": "emerald",
+      "title": "Cách đặt số mol vào phương trình",
+      "content": "Hệ số trong phương trình chính là tỉ lệ số mol giữa các chất:",
+      "formulaExample": "2H2 + O2 -> 2H2O",
+      "bulletPoints": [
+        "Theo PTHH: Cứ 2 mol [[H2]] phản ứng vừa đủ với 1 mol [[O2]] tạo thành 2 mol [[H2O]].",
+        "Theo đề bài: Nếu có 0,4 mol [[H2]], ta nhân chéo chia ngang:",
+        "Số mol [[O2]] cần = (0,4 * 1) / 2 = 0,2 mol.",
+        "Số mol [[H2O]] sinh ra = (0,4 * 2) / 2 = 0,4 mol."
+      ],
+      "callout": "📌 Quy tắc nhân chéo chia ngang: (Số mol đã biết * Hệ số chất cần tìm) / Hệ số chất đã biết."
+    },
+    {
+      "id": "c3",
+      "badge": "Bài toán lượng dư",
+      "badgeColor": "amber",
+      "title": "Dạng bài cho số liệu của cả 2 chất phản ứng",
+      "content": "Khi đề bài cho số mol của cả 2 chất tham gia, một chất sẽ phản ứng hết và chất kia có thể bị dư:",
+      "bulletPoints": [
+        "Lập tỉ số: So sánh (n_đề / hệ số_PTHH) của 2 chất tham gia.",
+        "Chất nào có tỉ số NHỎ HƠN thì chất đó HẾT (dùng chất này để tính toán sản phẩm).",
+        "Chất nào có tỉ số LỚN HƠN thì chất đó DƯ sau phản ứng."
+      ],
+      "callout": "⚠️ Cảnh báo: Tuyệt đối không tính sản phẩm theo chất dư, luôn tính theo chất hết!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Cho phương trình: Zn + 2HCl -> ZnCl2 + H2. Khi cho 0,2 mol Zn phản ứng hoàn toàn với dung dịch HCl, số mol khí H2 thu được là bao nhiêu?",
+    "options": [
+      { "id": "opt-1", "text": "0,4 mol", "correct": false },
+      { "id": "opt-2", "text": "0,2 mol", "correct": true },
+      { "id": "opt-3", "text": "0,1 mol", "correct": false },
+      { "id": "opt-4", "text": "0,05 mol", "correct": false }
+    ],
+    "explanation": "Chính xác! Theo tỉ lệ phương trình: n(H2) = n(Zn) = 0,2 mol (tỉ lệ 1 : 1)."
+  }
+}

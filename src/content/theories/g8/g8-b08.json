@@ -1,0 +1,58 @@
+{
+  "lessonId": "g8-b08",
+  "nodeId": "g8-b08-theory",
+  "title": "Acid & Tính chất hóa học",
+  "subtitle": "Khái niệm phân tử acid, tác dụng với kim loại, quỳ tím và quy tắc an toàn",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm Acid",
+      "badgeColor": "purple",
+      "title": "Acid là gì?",
+      "content": "Phân tử acid gồm có một hay nhiều nguyên tử hydrogen (H) liên kết với gốc acid. Khi tan trong nước, acid phân li ra ion [[H+]].",
+      "bulletPoints": [
+        "Các acid thông dụng: Hydrochloric acid ([[HCl]]), Sulfuric acid ([[H2SO4]]), Nitric acid ([[HNO3]]), Acetic acid ([[CH3COOH]]).",
+        "Tên gọi gốc acid: Gốc [[-Cl]] là chloride, gốc [[=SO4]] là sulfate, gốc [[-NO3]] là nitrate."
+      ],
+      "callout": "💡 Dễ nhận ra: Công thức của hầu hết các acid vô cơ đều bắt đầu bằng chữ cái H (như HCl, H2SO4, HNO3)."
+    },
+    {
+      "id": "c2",
+      "badge": "Tính chất hóa học",
+      "badgeColor": "emerald",
+      "title": "3 tính chất hóa học nổi bật của dung dịch Acid",
+      "content": "Dung dịch acid thể hiện tính chất đặc trưng qua các phản ứng sau:",
+      "formulaExample": "Zn + 2HCl -> ZnCl2 + H2",
+      "bulletPoints": [
+        "1. Làm đổi màu chất chỉ thị: Dung dịch acid làm quỳ tím chuyển sang màu ĐỎ.",
+        "2. Tác dụng với kim loại: Tác dụng với các kim loại đứng trước H trong dãy hoạt động (như [[Mg]], [[Al]], [[Zn]], [[Fe]]) giải phóng khí hydrogen [[H2]].",
+        "3. Tác dụng với base và oxide base: Tạo thành muối và nước (phản ứng trung hòa: [[HCl + NaOH -> NaCl + H2O]])."
+      ],
+      "callout": "📌 Lưu ý: Kim loại đứng sau H như [[Cu]], [[Ag]], [[Au]] KHÔNG tác dụng với dung dịch HCl và H2SO4 loãng!"
+    },
+    {
+      "id": "c3",
+      "badge": "An toàn phòng thí nghiệm",
+      "badgeColor": "amber",
+      "title": "Quy tắc an toàn sống còn khi pha loãng Acid",
+      "content": "Sulfuric acid đặc ([[H2SO4]]) hút nước cực kỳ mạnh và tỏa lượng nhiệt khổng lồ:",
+      "bulletPoints": [
+        "Quy tắc vàng: Rót từ từ acid đặc vào nước và khuấy đều bằng đũa thủy tinh.",
+        "Cấm kỵ: TUYỆT ĐỐI KHÔNG ĐƯỢC RÓT NƯỚC VÀO ACID ĐẶC! Nước sôi đột ngột sẽ bắn tung tóe các giọt acid nóng gây bỏng cực kỳ nguy hiểm.",
+        "Xử lý khi bị dính acid: Lập tức rửa vùng da dưới vòi nước chảy liên tục trong nhiều phút, sau đó rửa bằng dung dịch [[NaHCO3]] loãng."
+      ],
+      "callout": "⚠️ Khẩu quyết an toàn: 'Rót acid vào nước, cấm rót nước vào acid'!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Kim loại nào sau đây phản ứng được với dung dịch acid HCl loãng để giải phóng khí Hydrogen (H2)?",
+    "options": [
+      { "id": "opt-1", "text": "Kim loại đồng (Cu)", "correct": false },
+      { "id": "opt-2", "text": "Kim loại kẽm (Zn)", "correct": true },
+      { "id": "opt-3", "text": "Kim loại bạc (Ag)", "correct": false },
+      { "id": "opt-4", "text": "Kim loại vàng (Au)", "correct": false }
+    ],
+    "explanation": "Chính xác! Kẽm (Zn) đứng trước H trong dãy hoạt động nên tác dụng được với HCl loãng: Zn + 2HCl -> ZnCl2 + H2. Các kim loại Cu, Ag, Au đứng sau H nên không phản ứng."
+  }
+}

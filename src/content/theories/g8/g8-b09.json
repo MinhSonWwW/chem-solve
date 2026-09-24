@@ -1,0 +1,58 @@
+{
+  "lessonId": "g8-b09",
+  "nodeId": "g8-b09-theory",
+  "title": "Base, Dung dịch Kiềm & Thang pH",
+  "subtitle": "Phân loại base tan/không tan, phản ứng trung hòa và ý nghĩa chỉ số pH",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm Base",
+      "badgeColor": "purple",
+      "title": "Base & Phân loại Base",
+      "content": "Phân tử base gồm có một nguyên tử kim loại liên kết với một hay nhiều nhóm hydroxide (OH). Khi tan trong nước, base phân li ra ion [[OH-]].",
+      "bulletPoints": [
+        "1. Base tan trong nước (gọi là KIỀM): [[NaOH]], [[KOH]], [[Ca(OH)2]], [[Ba(OH)2]] (Mẹo nhớ: 'Khi Nào Bạn Cần').",
+        "2. Base không tan trong nước: Hầu hết các base của kim loại còn lại như [[Cu(OH)2]] (kết tủa xanh lam), [[Fe(OH)3]] (kết tủa nâu đỏ), [[Al(OH)3]] (kết tủa keo trắng)."
+      ],
+      "callout": "💡 Dấu hiệu nhận biết: Phân tử base luôn có đuôi nhóm -OH (hydroxide) đứng sau kim loại!"
+    },
+    {
+      "id": "c2",
+      "badge": "Tính chất hóa học",
+      "badgeColor": "emerald",
+      "title": "Tính chất hóa học của Base",
+      "content": "Base kiềm và base không tan có những tính chất hóa học đặc trưng:",
+      "formulaExample": "NaOH + HCl -> NaCl + H2O",
+      "bulletPoints": [
+        "1. Tác dụng với chất chỉ thị: Dung dịch kiềm làm quỳ tím chuyển sang màu XANH, làm dung dịch phenolphthalein không màu chuyển sang màu HỒNG.",
+        "2. Tác dụng với acid (Phản ứng trung hòa): Cả base tan và không tan đều tác dụng với acid tạo muối và nước (ví dụ: [[Cu(OH)2 + 2HCl -> CuCl2 + 2H2O]]).",
+        "3. Tác dụng với oxide acid: Dung dịch kiềm tác dụng với oxide acid tạo muối và nước ([[2NaOH + CO2 -> Na2CO3 + H2O]])."
+      ],
+      "callout": "📌 Base không tan KHÔNG làm đổi màu quỳ tím hay phenolphthalein (chỉ có dung dịch kiềm mới làm đổi màu)!"
+    },
+    {
+      "id": "c3",
+      "badge": "Thang đo pH",
+      "badgeColor": "cyan",
+      "title": "Ý nghĩa của Thang đo pH",
+      "content": "Thang pH (từ 1 đến 14) dùng để biểu thị độ acid hoặc độ kiềm của một dung dịch:",
+      "bulletPoints": [
+        "pH = 7: Môi trường trung tính (như nước tinh khiết).",
+        "pH < 7: Môi trường ACID (pH càng nhỏ thì tính acid càng mạnh, nước chanh pH ~ 2, acid dạ dày pH ~ 1.5 - 2.5).",
+        "pH > 7: Môi trường BASE (pH càng lớn thì tính base càng mạnh, xà phòng, nước vôi trong pH ~ 8 - 12)."
+      ],
+      "callout": "⚠️ Quy tắc pH: Nhỏ hơn 7 là Acid, Lớn hơn 7 là Kiềm/Base, Bằng 7 là Trung tính!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Dung dịch chất nào sau đây làm quỳ tím chuyển sang màu XANH?",
+    "options": [
+      { "id": "opt-1", "text": "Dung dịch Hydrochloric acid (HCl)", "correct": false },
+      { "id": "opt-2", "text": "Dung dịch Sodium hydroxide (NaOH)", "correct": true },
+      { "id": "opt-3", "text": "Nước cất tinh khiết (H2O)", "correct": false },
+      { "id": "opt-4", "text": "Dung dịch muối ăn (NaCl)", "correct": false }
+    ],
+    "explanation": "Chính xác! NaOH là dung dịch kiềm (base tan) nên làm quỳ tím chuyển sang màu xanh và phenolphthalein hóa hồng."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "lessonId": "g8-b04",
+  "nodeId": "g8-b04-theory",
+  "title": "Dung dịch, Nồng độ phần trăm C% & Nồng độ mol CM",
+  "subtitle": "Độ tan và 2 công thức tính nồng độ dung dịch cốt lõi",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm dung dịch",
+      "badgeColor": "purple",
+      "title": "Chất tan, Dung môi & Dung dịch",
+      "content": "Dung dịch là hỗn hợp đồng nhất giữa chất tan và dung môi:",
+      "bulletPoints": [
+        "Chất tan: Chất bị phân tán (như muối [[NaCl]], đường [[C12H22O11]]...).",
+        "Dung môi: Chất hòa tan chất tan (phổ biến nhất là nước [[H2O]]).",
+        "Khối lượng dung dịch: [[m(dd) = m(ct) + m(dm)]] (Khối lượng dung dịch = Khối lượng chất tan + Khối lượng nước)."
+      ],
+      "callout": "💡 Lưu ý quan trọng: m(dd) không chỉ là khối lượng nước, mà phải cộng thêm khối lượng chất tan!"
+    },
+    {
+      "id": "c2",
+      "badge": "Nồng độ phần trăm",
+      "badgeColor": "emerald",
+      "title": "Nồng độ phần trăm (C%)",
+      "content": "Nồng độ phần trăm (C%) cho biết số gam chất tan có trong 100 gam dung dịch.",
+      "bulletPoints": [
+        "Công thức: [[C% = (m(ct) / m(dd)) * 100%]]",
+        "Từ đó suy ra khối lượng chất tan: [[m(ct) = (m(dd) * C%) / 100%]]",
+        "Ví dụ: Hòa tan 20 g muối vào 80 g nước. Khối lượng dung dịch = 20 + 80 = 100 g. C% = (20 / 100) * 100% = 20%."
+      ],
+      "callout": "📌 Mẹo nhớ: Muốn tính C%, lấy chất tan chia toàn bộ dung dịch rồi nhân 100%."
+    },
+    {
+      "id": "c3",
+      "badge": "Nồng độ mol",
+      "badgeColor": "cyan",
+      "title": "Nồng độ mol (CM hoặc M)",
+      "content": "Nồng độ mol (CM) cho biết số mol chất tan có trong 1 lít dung dịch.",
+      "bulletPoints": [
+        "Công thức: [[CM = n / V]] (với n: số mol chất tan, V: thể tích dung dịch tính bằng LÍT).",
+        "Từ đó suy ra số mol: [[n = CM * V]]",
+        "Đổi đơn vị: Nếu đề cho mL, phải chia 1000 để đổi ra lít! (ví dụ 500 mL = 0,5 L)."
+      ],
+      "callout": "⚠️ Bẫy đề thi: Luôn kiểm tra đơn vị của thể tích V (phải là Lít, nếu là mL phải đổi ra Lít ngay)!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Hòa tan 10 g đường vào 90 g nước. Nồng độ phần trăm (C%) của dung dịch đường thu được là bao nhiêu?",
+    "options": [
+      { "id": "opt-1", "text": "11,1%", "correct": false },
+      { "id": "opt-2", "text": "10%", "correct": true },
+      { "id": "opt-3", "text": "9%", "correct": false },
+      { "id": "opt-4", "text": "90%", "correct": false }
+    ],
+    "explanation": "Chính xác! Khối lượng dung dịch = 10 + 90 = 100 g. Nồng độ C% = (10 / 100) * 100% = 10%."
+  }
+}
