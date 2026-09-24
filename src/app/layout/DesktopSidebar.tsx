@@ -34,13 +34,14 @@ const NAV_ITEMS: NavItem[] = [
 export const DesktopSidebar: React.FC = () => {
   const location = useLocation();
   const { soundEnabled, toggleSound } = useUserStore();
+  const activeGrade = typeof window !== 'undefined' ? localStorage.getItem('chem_active_grade') || '8' : '8';
 
   return (
     <aside className="hidden lg:flex flex-col justify-between w-64 h-[100dvh] sticky top-0 border-r-2 border-[#2e4756] bg-[#131f24]/95 px-4 py-6 select-none z-20">
       {/* 1. Header / Logo */}
       <div className="space-y-6">
         <NavLink
-          to="/learn/8"
+          to={`/learn/${activeGrade}`}
           onClick={() => sound.playClick()}
           className="flex items-center gap-3 px-2 group cursor-pointer"
         >

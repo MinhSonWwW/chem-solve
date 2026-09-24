@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useMemo } from 'react';
 import {
   Award,
   Volume2,
@@ -17,6 +17,10 @@ import {
   FlaskConical,
   Crown,
   Sliders,
+  Lock,
+  Check,
+  Sparkles,
+  Medal,
 } from 'lucide-react';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import { Button, Streak, XPBadge, Heart, GemBadge, Mascot, type MascotState } from '@/design-system';
@@ -24,18 +28,89 @@ import { ACHIEVEMENTS } from '@/config/achievements';
 import { getLevelInfo, GAMIFICATION } from '@/config/gamification';
 import { sound } from '@/lib/audio';
 
-const ACHIEVEMENT_ICONS: Record<
-  string,
-  { icon: React.ElementType; color: string; bg: string; border: string }
-> = {
-  'first-lesson': { icon: Rocket, color: 'text-[#38bdf8]', bg: 'bg-[#0ea5e9]/15', border: 'border-[#0ea5e9]/30' },
-  'perfect-run': { icon: Gem, color: 'text-[#00cd9c]', bg: 'bg-[#00cd9c]/15', border: 'border-[#00cd9c]/30' },
-  'mol-warrior': { icon: Scale, color: 'text-[#ce82ff]', bg: 'bg-[#ce82ff]/15', border: 'border-[#ce82ff]/30' },
-  'combo-master': { icon: Flame, color: 'text-[#ff9600]', bg: 'bg-[#ff9600]/15', border: 'border-[#ff9600]/30' },
-  'streak-3': { icon: Zap, color: 'text-[#ff9600]', bg: 'bg-[#ff9600]/15', border: 'border-[#ff9600]/30' },
-  'equation-hunter': { icon: Target, color: 'text-[#ff4b4b]', bg: 'bg-[#ff4b4b]/15', border: 'border-[#ff4b4b]/30' },
-  'acid-base-expert': { icon: FlaskConical, color: 'text-[#38bdf8]', bg: 'bg-[#0ea5e9]/15', border: 'border-[#0ea5e9]/30' },
-  'level-5': { icon: Crown, color: 'text-[#ffc800]', bg: 'bg-[#ffc800]/15', border: 'border-[#ffc800]/30' },
+interface AchievementMeta {
+  tier: 'bronze' | 'silver' | 'gold' | 'diamond' | 'emerald' | 'ruby' | 'amethyst' | 'mythic';
+  tierLabel: string;
+  icon: React.ElementType;
+  gradient: string;
+  border: string;
+  shadow: string;
+  textColor: string;
+}
+
+const ACHIEVEMENT_METAS: Record<string, AchievementMeta> = {
+  'first-lesson': {
+    tier: 'bronze',
+    tierLabel: 'Huy Chương Đồng',
+    icon: Rocket,
+    gradient: 'from-amber-500 via-amber-600 to-amber-700',
+    border: 'border-amber-300/80',
+    shadow: '#78350f',
+    textColor: 'text-amber-100',
+  },
+  'streak-3': {
+    tier: 'silver',
+    tierLabel: 'Huy Chương Bạc',
+    icon: Zap,
+    gradient: 'from-slate-100 via-slate-200 to-slate-400',
+    border: 'border-white',
+    shadow: '#475569',
+    textColor: 'text-slate-900',
+  },
+  'combo-master': {
+    tier: 'gold',
+    tierLabel: 'Huy Chương Vàng',
+    icon: Flame,
+    gradient: 'from-amber-300 via-yellow-400 to-amber-500',
+    border: 'border-yellow-100',
+    shadow: '#b45309',
+    textColor: 'text-amber-950',
+  },
+  'perfect-run': {
+    tier: 'diamond',
+    tierLabel: 'Kim Cương Hoàn Hảo',
+    icon: Gem,
+    gradient: 'from-cyan-200 via-sky-300 to-blue-500',
+    border: 'border-cyan-100',
+    shadow: '#0369a1',
+    textColor: 'text-sky-950',
+  },
+  'mol-warrior': {
+    tier: 'emerald',
+    tierLabel: 'Ngọc Lục Chiến Binh',
+    icon: Scale,
+    gradient: 'from-emerald-300 via-emerald-400 to-teal-600',
+    border: 'border-emerald-100',
+    shadow: '#065f46',
+    textColor: 'text-emerald-950',
+  },
+  'equation-hunter': {
+    tier: 'ruby',
+    tierLabel: 'Hồng Ngọc Cân Bằng',
+    icon: Target,
+    gradient: 'from-rose-300 via-rose-400 to-rose-600',
+    border: 'border-rose-100',
+    shadow: '#9f1239',
+    textColor: 'text-rose-950',
+  },
+  'acid-base-expert': {
+    tier: 'amethyst',
+    tierLabel: 'Thạch Anh Chuyên Gia',
+    icon: FlaskConical,
+    gradient: 'from-purple-300 via-fuchsia-400 to-purple-600',
+    border: 'border-purple-100',
+    shadow: '#6b21a8',
+    textColor: 'text-purple-950',
+  },
+  'level-5': {
+    tier: 'mythic',
+    tierLabel: 'Vương Miện Huyền Thoại',
+    icon: Crown,
+    gradient: 'from-yellow-200 via-amber-400 to-orange-500',
+    border: 'border-yellow-100',
+    shadow: '#9a3412',
+    textColor: 'text-yellow-950',
+  },
 };
 
 const AVATAR_STATES: { state: MascotState; label: string }[] = [
@@ -66,10 +141,23 @@ export const ProfilePage: React.FC = () => {
   const [reducedMotion, setReducedMotion] = useState(false);
   const [importStatus, setImportStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [avatarState, setAvatarState] = useState<MascotState>('happy');
+  const [achFilter, setAchFilter] = useState<'all' | 'unlocked' | 'locked'>('all');
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const levelInfo = getLevelInfo(xp);
   const totalCompletedCount = Object.keys(completedNodes || {}).filter((k) => completedNodes[k]).length;
+
+  const unlockedAchCount = ACHIEVEMENTS.filter((a) => (achievements[a.id] ?? 0) >= a.maxProgress).length;
+  const inProgressAchCount = ACHIEVEMENTS.length - unlockedAchCount;
+
+  const filteredAchievements = useMemo(() => {
+    return ACHIEVEMENTS.filter((a) => {
+      const isUnlocked = (achievements[a.id] ?? 0) >= a.maxProgress;
+      if (achFilter === 'unlocked') return isUnlocked;
+      if (achFilter === 'locked') return !isUnlocked;
+      return true;
+    });
+  }, [achievements, achFilter]);
 
   const handleExport = async () => {
     sound.playClick();
@@ -210,76 +298,170 @@ export const ProfilePage: React.FC = () => {
 
       {/* 4. Achievements Grid */}
       <div className="space-y-3">
-        <div className="flex items-center justify-between px-1">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 px-1">
           <h2 className="text-xs font-extrabold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
-            <Award className="w-4 h-4 text-[#ffc800]" />
-            Thành tựu Hóa học ({ACHIEVEMENTS.filter((a) => (achievements[a.id] ?? 0) >= a.maxProgress).length}/{ACHIEVEMENTS.length})
+            <Medal className="w-4 h-4 text-amber-400" />
+            Bảng Thành tựu Vinh danh ({unlockedAchCount}/{ACHIEVEMENTS.length})
           </h2>
+
+          {/* Filter tabs */}
+          <div className="flex items-center gap-1 bg-[#131f24] p-1 rounded-xl border border-[#2e4756] self-start sm:self-auto">
+            <button
+              onClick={() => {
+                sound.playClick();
+                setAchFilter('all');
+              }}
+              className={`px-2.5 py-0.5 rounded-lg text-[11px] font-bold transition-all cursor-pointer ${
+                achFilter === 'all'
+                  ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40 shadow-sm'
+                  : 'text-slate-400 hover:text-slate-200'
+              }`}
+            >
+              Tất cả ({ACHIEVEMENTS.length})
+            </button>
+            <button
+              onClick={() => {
+                sound.playClick();
+                setAchFilter('unlocked');
+              }}
+              className={`px-2.5 py-0.5 rounded-lg text-[11px] font-bold transition-all cursor-pointer ${
+                achFilter === 'unlocked'
+                  ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shadow-sm'
+                  : 'text-slate-400 hover:text-slate-200'
+              }`}
+            >
+              Đã mở ({unlockedAchCount})
+            </button>
+            <button
+              onClick={() => {
+                sound.playClick();
+                setAchFilter('locked');
+              }}
+              className={`px-2.5 py-0.5 rounded-lg text-[11px] font-bold transition-all cursor-pointer ${
+                achFilter === 'locked'
+                  ? 'bg-sky-500/20 text-sky-300 border border-sky-500/40 shadow-sm'
+                  : 'text-slate-400 hover:text-slate-200'
+              }`}
+            >
+              Chưa mở ({inProgressAchCount})
+            </button>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {ACHIEVEMENTS.map((ach) => {
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+          {filteredAchievements.map((ach) => {
             const currentProgress = achievements[ach.id] ?? 0;
             const isUnlocked = currentProgress >= ach.maxProgress;
             const percent = Math.min(100, Math.round((currentProgress / ach.maxProgress) * 100));
-            const achConfig = ACHIEVEMENT_ICONS[ach.id] || {
+            const meta = ACHIEVEMENT_METAS[ach.id] || {
+              tier: 'gold',
+              tierLabel: 'Huy Chương Vàng',
               icon: Award,
-              color: 'text-[#ffc800]',
-              bg: 'bg-[#ffc800]/15',
-              border: 'border-[#ffc800]/30',
+              gradient: 'from-amber-300 via-yellow-400 to-amber-500',
+              border: 'border-yellow-100',
+              shadow: '#b45309',
+              textColor: 'text-amber-950',
             };
-            const AchIcon = achConfig.icon;
+            const AchIcon = meta.icon;
 
             return (
               <div
                 key={ach.id}
-                className={`p-3.5 rounded-2xl border-2 flex flex-col justify-between gap-2.5 transition-all shadow-[0_3px_0_0_#131f24] ${
+                className={`p-4 rounded-3xl border-2 flex flex-col justify-between gap-3 transition-all relative overflow-hidden group select-none ${
                   isUnlocked
-                    ? 'bg-[#18272f] border-[#ffc800]/50'
-                    : 'bg-[#18272f]/60 border-[#2e4756] opacity-75'
+                    ? 'bg-[#182a35] border-amber-500/40 shadow-[0_4px_0_0_#0f1c24] hover:border-amber-400/80'
+                    : 'bg-[#142028]/85 border-[#253946] shadow-[0_4px_0_0_#0d151a]'
                 }`}
               >
-                <div className="flex items-start justify-between">
-                  <div
-                    className={`w-10 h-10 rounded-xl flex items-center justify-center border-2 ${
-                      isUnlocked
-                        ? `${achConfig.bg} ${achConfig.border} ${achConfig.color}`
-                        : 'bg-[#131f24] border-[#2e4756] text-slate-500'
-                    }`}
-                  >
-                    <AchIcon className="w-5 h-5" />
+                {/* Header row: Medallion + Status pill */}
+                <div className="flex items-start justify-between gap-3">
+                  <div className="flex items-center gap-3">
+                    {/* 3D Tactile Medallion Badge */}
+                    <button
+                      type="button"
+                      onClick={() => {
+                        if (isUnlocked) {
+                          sound.playLevelUp();
+                        } else {
+                          sound.playClick();
+                        }
+                      }}
+                      title={isUnlocked ? 'Nhấn để nghe âm thanh vinh danh!' : `${currentProgress}/${ach.maxProgress}`}
+                      className={`w-12 h-12 rounded-2xl flex items-center justify-center relative transition-transform group-hover:scale-105 active:scale-95 cursor-pointer border-2 shrink-0 ${
+                        isUnlocked
+                          ? `bg-gradient-to-b ${meta.gradient} ${meta.border} ${meta.textColor} shadow-[0_4px_0_0_${meta.shadow},inset_0_1.5px_0_rgba(255,255,255,0.7)]`
+                          : percent > 0
+                          ? 'bg-[#172731] border-[#385669] text-sky-400 shadow-[0_4px_0_0_#0e1920]'
+                          : 'bg-[#121b21] border-[#253946] text-slate-500 shadow-[0_4px_0_0_#0a1014]'
+                      }`}
+                    >
+                      <AchIcon className="w-6 h-6 stroke-[2.2]" />
+                      {isUnlocked ? (
+                        <div className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-[#182a35] flex items-center justify-center text-white shadow-sm">
+                          <Check className="w-2.5 h-2.5 stroke-[3]" />
+                        </div>
+                      ) : percent === 0 ? (
+                        <div className="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-slate-800 border border-slate-600 flex items-center justify-center text-slate-400">
+                          <Lock className="w-2.5 h-2.5" />
+                        </div>
+                      ) : null}
+                    </button>
+
+                    <div>
+                      <span
+                        className={`text-[10px] font-black uppercase tracking-wider block ${
+                          isUnlocked ? 'text-amber-400' : 'text-slate-400'
+                        }`}
+                      >
+                        {meta.tierLabel}
+                      </span>
+                      <h3
+                        className={`text-sm font-black leading-snug ${
+                          isUnlocked ? 'text-slate-100' : 'text-slate-300'
+                        }`}
+                      >
+                        {ach.title}
+                      </h3>
+                    </div>
                   </div>
-                  {isUnlocked && (
-                    <span className="text-[10px] font-black text-[#ffc800] bg-[#ffc800]/15 border border-[#ffc800]/30 px-2 py-0.5 rounded-md">
-                      ✓ Đạt
+
+                  {isUnlocked ? (
+                    <span className="inline-flex items-center gap-1 text-[10px] font-black text-amber-300 bg-amber-500/15 border border-amber-500/30 px-2.5 py-1 rounded-full shadow-sm shrink-0">
+                      <Sparkles className="w-3 h-3 text-amber-300" />
+                      <span>ĐÃ ĐẠT</span>
+                    </span>
+                  ) : (
+                    <span className="text-[10px] font-black text-slate-400 bg-slate-800/60 border border-slate-700/60 px-2.5 py-1 rounded-full shrink-0">
+                      {currentProgress}/{ach.maxProgress}
                     </span>
                   )}
                 </div>
 
-                <div>
-                  <div className={`text-xs font-black leading-snug ${isUnlocked ? 'text-slate-100' : 'text-slate-400'}`}>
-                    {ach.title}
-                  </div>
-                  <div className="text-[10px] text-slate-400 mt-0.5 leading-tight">
-                    {ach.description}
-                  </div>
-                </div>
+                <p className="text-xs text-slate-400 leading-relaxed font-medium">
+                  {ach.description}
+                </p>
 
-                {/* Progress bar */}
-                <div className="space-y-1 mt-1">
-                  <div className="flex justify-between text-[10px] font-bold">
-                    <span className="text-slate-400">Tiến độ</span>
-                    <span className={isUnlocked ? 'text-[#ffc800] font-black' : 'text-slate-400'}>
-                      {currentProgress}/{ach.maxProgress} ({percent}%)
+                {/* Tactile Progress bar */}
+                <div className="space-y-1.5 pt-1">
+                  <div className="flex justify-between text-[11px] font-bold">
+                    <span className="text-slate-400">
+                      {isUnlocked
+                        ? 'Hoàn thành tuyệt đối'
+                        : percent > 0
+                        ? `Đang tiến hành (${currentProgress}/${ach.maxProgress})`
+                        : 'Chưa bắt đầu'}
+                    </span>
+                    <span className={isUnlocked ? 'text-amber-400 font-black' : 'text-slate-400'}>
+                      {percent}%
                     </span>
                   </div>
-                  <div className="w-full bg-[#131f24] h-2 rounded-full overflow-hidden border border-[#2e4756]">
+                  <div className="w-full bg-[#0d161c] h-2.5 rounded-full overflow-hidden border border-[#233541] p-0.5">
                     <div
-                      className={`h-full rounded-full transition-all duration-500 ${
+                      className={`h-full rounded-full transition-all duration-500 shadow-[inset_0_1px_0_rgba(255,255,255,0.4)] ${
                         isUnlocked
-                          ? 'bg-gradient-to-r from-[#ffc800] to-[#ff9600]'
+                          ? 'bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500'
                           : percent > 0
-                          ? 'bg-gradient-to-r from-[#0ea5e9] to-[#00cd9c]'
+                          ? 'bg-gradient-to-r from-cyan-400 to-emerald-400'
                           : 'bg-slate-800'
                       }`}
                       style={{ width: `${percent}%` }}

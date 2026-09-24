@@ -1,19 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Search, Zap, Gift, BookOpen, ArrowRight, Flame } from 'lucide-react';
-import { Heart, Streak, XPBadge, GemBadge, HeartRefillModal } from '@/design-system';
+import { Search, BookOpen, ArrowRight } from 'lucide-react';
+import { Heart, Streak, XPBadge, GemBadge, HeartRefillModal, CurrencyIcon } from '@/design-system';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import { sound } from '@/lib/audio';
 
 export const DesktopRightSidebar: React.FC = () => {
-  const { xp, streak, hearts, gems, buyHeartWithGems } = useUserStore();
+  const { xp, streak, hearts, gems, completedNodes, dailyGoal, buyHeartWithGems } = useUserStore();
   const [showHeartModal, setShowHeartModal] = useState(false);
   const navigate = useNavigate();
 
-  // Simulated daily quests based on user XP
-  const dailyXpTarget = 10;
-  const currentDailyXp = Math.min(dailyXpTarget, xp > 0 ? (xp % 50) + 2 : 0);
-  const dailyXpPercent = Math.min(100, Math.round((currentDailyXp / dailyXpTarget) * 100));
+  const todayStr = useMemo(() => new Date().toISOString().slice(0, 10), []);
+  const todayDateString = useMemo(() => new Date().toDateString(), []);
+
+  // 1. Real check: Did user complete daily challenge today?
+  const dailyChallengeDone = useMemo(() => {
+    return !!localStorage.getItem(`chem_daily_${todayStr}`);
+  }, [todayStr]);
+
+  // 2. Real check: Did user complete any lesson node today?
+  const todayNodesCount = useMemo(() => {
+    return Object.values(completedNodes || {}).filter((n) => {
+      if (!n?.completedAt) return false;
+      return new Date(n.completedAt).toDateString() === todayDateString;
+    }).length;
+  }, [completedNodes, todayDateString]);
+
+  // 3. Real Daily Goal Progress
+  const dailyGoalTarget = dailyGoal || 20;
+  const currentDailyXp = Math.min(dailyGoalTarget, xp);
+  const dailyXpPercent = Math.min(100, Math.round((currentDailyXp / dailyGoalTarget) * 100));
 
   return (
     <>
@@ -56,91 +72,106 @@ export const DesktopRightSidebar: React.FC = () => {
           </button>
         </div>
 
-      {/* 2. Widget: Nhiệm vụ hằng ngày (Daily Quests) */}
-      <div className="p-4 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] space-y-3.5">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Zap className="w-4 h-4 text-amber-400 fill-amber-400" />
-            <h3 className="text-xs font-black text-white tracking-wider uppercase">
-              Nhiệm vụ hằng ngày
-            </h3>
-          </div>
-          <Link
-            to="/daily"
-            onClick={() => sound.playClick()}
-            className="text-[10px] font-black text-[#0ea5e9] hover:text-[#38bdf8] uppercase tracking-tight"
-          >
-            Xem tất cả
-          </Link>
-        </div>
-
-        {/* Quest Item 1 */}
-        <div className="space-y-1.5">
-          <div className="flex items-center justify-between text-xs">
-            <span className="font-bold text-slate-300 text-[11px]">Kiếm 10 XP</span>
-            <span className="text-[11px] font-mono text-slate-400 font-bold">
-              {currentDailyXp}/{dailyXpTarget}
-            </span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="flex-1 h-3 rounded-full bg-[#20333d] overflow-hidden border border-[#2e4756] p-0.5">
-              <div
-                className="h-full rounded-full bg-gradient-to-r from-amber-500 to-yellow-400 transition-all duration-500"
-                style={{ width: `${dailyXpPercent}%` }}
-              />
+        {/* 2. Widget: Nhiệm vụ hằng ngày (Real Daily Quests) */}
+        <div className="p-4 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] space-y-3.5">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <CurrencyIcon type="xp" size="xs" />
+              <h3 className="text-xs font-black text-white tracking-wider uppercase">
+                Nhiệm vụ hôm nay
+              </h3>
             </div>
-            <Gift
-              className={`w-5 h-5 transition-transform ${
-                dailyXpPercent >= 100
-                  ? 'text-amber-400 animate-bounce'
-                  : 'text-slate-600'
-              }`}
-            />
+            <Link
+              to="/daily"
+              onClick={() => sound.playClick()}
+              className="text-[10px] font-black text-[#0ea5e9] hover:text-[#38bdf8] uppercase tracking-tight"
+            >
+              Xem thử thách
+            </Link>
           </div>
-        </div>
 
-        {/* Quest Item 2 */}
-        <div className="space-y-1.5 pt-1">
-          <div className="flex items-center justify-between text-xs">
-            <span className="font-bold text-slate-300 text-[11px]">Hoàn thành 1 bài học</span>
-            <span className="text-[11px] font-mono text-slate-400 font-bold">
-              {xp >= 15 ? '1/1' : '0/1'}
-            </span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="flex-1 h-3 rounded-full bg-[#20333d] overflow-hidden border border-[#2e4756] p-0.5">
-              <div
-                className="h-full rounded-full bg-gradient-to-r from-cyan-500 to-blue-400 transition-all duration-500"
-                style={{ width: xp >= 15 ? '100%' : '0%' }}
-              />
+          {/* Quest Item 1: Daily Challenge */}
+          <div className="space-y-1.5">
+            <div className="flex items-center justify-between text-xs">
+              <span className="font-bold text-slate-300 text-[11px]">
+                5 câu Thử thách ngày
+              </span>
+              <span className={`text-[11px] font-mono font-bold ${dailyChallengeDone ? 'text-emerald-400' : 'text-slate-400'}`}>
+                {dailyChallengeDone ? '1/1 ✓' : '0/1'}
+              </span>
             </div>
-            <Gift
-              className={`w-5 h-5 transition-transform ${
-                xp >= 15 ? 'text-[#0ea5e9]' : 'text-slate-600'
-              }`}
-            />
+            <div className="flex items-center gap-2">
+              <div className="flex-1 h-2.5 rounded-full bg-[#20333d] overflow-hidden border border-[#2e4756] p-0.5">
+                <div
+                  className="h-full rounded-full bg-gradient-to-r from-emerald-500 to-teal-400 transition-all duration-500"
+                  style={{ width: dailyChallengeDone ? '100%' : '0%' }}
+                />
+              </div>
+              <CurrencyIcon type="trophy" size="xs" className={dailyChallengeDone ? 'animate-bounce' : 'opacity-40 grayscale'} />
+            </div>
           </div>
-        </div>
-      </div>
 
-      {/* 4. Widget: Chuỗi đèn cồn Streak */}
-      <div className="p-4 rounded-3xl bg-[#18272f] border-2 border-[#ff9600]/40 shadow-[0_4px_0_0_#131f24] flex items-center justify-between">
-        <div className="space-y-1">
-          <div className="flex items-center gap-1.5 text-xs font-black text-[#ff9600] uppercase tracking-wider">
-            <Flame className="w-4 h-4 fill-[#ff9600]" />
-            <span>Đèn cồn Streak</span>
+          {/* Quest Item 2: Lesson Completion Today */}
+          <div className="space-y-1.5 pt-1">
+            <div className="flex items-center justify-between text-xs">
+              <span className="font-bold text-slate-300 text-[11px]">
+                Hoàn thành 1 chặng bài học
+              </span>
+              <span className={`text-[11px] font-mono font-bold ${todayNodesCount >= 1 ? 'text-cyan-400' : 'text-slate-400'}`}>
+                {todayNodesCount >= 1 ? '1/1 ✓' : '0/1'}
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="flex-1 h-2.5 rounded-full bg-[#20333d] overflow-hidden border border-[#2e4756] p-0.5">
+                <div
+                  className="h-full rounded-full bg-gradient-to-r from-cyan-500 to-blue-400 transition-all duration-500"
+                  style={{ width: todayNodesCount >= 1 ? '100%' : '0%' }}
+                />
+              </div>
+              <CurrencyIcon type="gem" size="xs" className={todayNodesCount >= 1 ? 'animate-bounce' : 'opacity-40 grayscale'} />
+            </div>
           </div>
-          <p className="text-[11px] text-slate-300 font-medium leading-tight">
-            {streak > 0
-              ? `Bạn đang giữ chuỗi ${streak} ngày học liên tiếp!`
-              : 'Học 1 bài hôm nay để thắp sáng ngọn đèn cồn!'}
-          </p>
+
+          {/* Quest Item 3: Daily Goal XP */}
+          <div className="space-y-1.5 pt-1">
+            <div className="flex items-center justify-between text-xs">
+              <span className="font-bold text-slate-300 text-[11px]">
+                Đạt mục tiêu {dailyGoalTarget} XP ngày
+              </span>
+              <span className={`text-[11px] font-mono font-bold ${dailyXpPercent >= 100 ? 'text-amber-400' : 'text-slate-400'}`}>
+                {currentDailyXp}/{dailyGoalTarget} XP
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="flex-1 h-2.5 rounded-full bg-[#20333d] overflow-hidden border border-[#2e4756] p-0.5">
+                <div
+                  className="h-full rounded-full bg-gradient-to-r from-amber-500 to-yellow-400 transition-all duration-500"
+                  style={{ width: `${dailyXpPercent}%` }}
+                />
+              </div>
+              <CurrencyIcon type="xp" size="xs" className={dailyXpPercent >= 100 ? 'animate-bounce' : 'opacity-40 grayscale'} />
+            </div>
+          </div>
         </div>
-        <div className="flex items-center gap-1.5 text-2xl font-black text-[#ff9600] pl-2">
-          <span>{streak}</span>
-          <Flame className="w-6 h-6 fill-[#ff9600] text-[#ff9600] animate-pulse" />
+
+        {/* 3. Widget: Chuỗi đèn cồn Streak */}
+        <div className="p-4 rounded-3xl bg-[#18272f] border-2 border-[#ff9600]/40 shadow-[0_4px_0_0_#131f24] flex items-center justify-between">
+          <div className="space-y-1">
+            <div className="flex items-center gap-1.5 text-xs font-black text-[#ff9600] uppercase tracking-wider">
+              <CurrencyIcon type="streak" size="xs" />
+              <span>Chuỗi đèn cồn Streak</span>
+            </div>
+            <p className="text-[11px] text-slate-300 font-medium leading-tight">
+              {streak > 0
+                ? `Bạn đang giữ chuỗi ${streak} ngày học liên tiếp!`
+                : 'Học 1 bài hôm nay để thắp sáng ngọn đèn cồn!'}
+            </p>
+          </div>
+          <div className="flex items-center gap-1 text-2xl font-black text-[#ff9600] pl-2">
+            <span>{streak}</span>
+            <CurrencyIcon type="streak" size="sm" className="animate-pulse" />
+          </div>
         </div>
-      </div>
 
       {/* 5. Widget: Ôn tập nhanh (Spaced Repetition) */}
       <div className="p-4 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] space-y-2.5">

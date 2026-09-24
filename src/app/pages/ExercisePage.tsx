@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback, useMemo } from 'react';
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Sparkles, Loader2, FlaskConical, Heart as HeartIcon } from 'lucide-react';
+import { X, Sparkles, FlaskConical, Heart as HeartIcon } from 'lucide-react';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import {
   Button,
@@ -35,6 +35,94 @@ import type { Exercise } from '@/content/schema/exercise';
 import type { Verdict } from '@/engine/checkers/types';
 
 type LoadingState = 'loading' | 'ready' | 'error';
+
+const CHEMISTRY_TRIVIA = [
+  'Oxy chiếm 21% thể tích không khí và là nguyên tố phổ biến nhất trong vỏ Trái Đất.',
+  'Kim cương và than chì cùng cấu tạo từ nguyên tử Carbon, chỉ khác nhau ở cấu trúc mạng tinh thể.',
+  'Nước (H2O) có khối lượng riêng lớn nhất ở 4°C, giúp sinh vật thủy sinh không bị đông đá vào mùa đông.',
+  'Acid trong dạ dày (HCl) có nồng độ pH từ 1.5 - 3.5, đủ mạnh để hòa tan nhiều kim loại thông thường.',
+  'Khí Heli nhẹ hơn không khí khoảng 7 lần và hoàn toàn trơ, rất an toàn để bơm bóng thám không.',
+  'Muối ăn (NaCl) được tạo bởi kim loại hoạt động mạnh (Natri) và khí độc màu vàng lục (Clo).',
+];
+
+const ChemicalLoadingScreen: React.FC = () => {
+  const [triviaIndex, setTriviaIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTriviaIndex((prev) => (prev + 1) % CHEMISTRY_TRIVIA.length);
+    }, 2800);
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div className="flex flex-col items-center justify-center min-h-[82dvh] px-4 select-none">
+      <div className="max-w-sm w-full flex flex-col items-center text-center space-y-6">
+        {/* Animated laboratory flask with bubbling effect */}
+        <div className="relative w-24 h-24 flex items-center justify-center">
+          {/* Outer glowing aura */}
+          <div className="absolute inset-0 rounded-full bg-cyan-500/15 blur-xl animate-pulse" />
+
+          {/* Flask container */}
+          <div className="relative w-20 h-20 rounded-3xl bg-[#131f24] border-2 border-cyan-400/50 shadow-[0_6px_0_0_#0284c7] flex items-center justify-center overflow-hidden">
+            {/* Liquid level */}
+            <div className="absolute bottom-0 inset-x-0 h-11 bg-gradient-to-t from-cyan-500/40 to-teal-400/20 border-t border-cyan-400/50" />
+
+            {/* Rising bubbling particles */}
+            <motion.div
+              animate={{ y: [16, -18], opacity: [0, 1, 0], scale: [0.6, 1.2, 0.8] }}
+              transition={{ repeat: Infinity, duration: 1.4, ease: 'easeOut' }}
+              className="absolute w-2.5 h-2.5 rounded-full bg-cyan-300 shadow-sm"
+              style={{ left: '35%' }}
+            />
+            <motion.div
+              animate={{ y: [18, -20], opacity: [0, 1, 0], scale: [0.5, 1, 0.7] }}
+              transition={{ repeat: Infinity, duration: 1.8, delay: 0.4, ease: 'easeOut' }}
+              className="absolute w-2 h-2 rounded-full bg-teal-200 shadow-sm"
+              style={{ left: '55%' }}
+            />
+            <motion.div
+              animate={{ y: [14, -16], opacity: [0, 1, 0], scale: [0.4, 0.9, 0.5] }}
+              transition={{ repeat: Infinity, duration: 1.2, delay: 0.7, ease: 'easeOut' }}
+              className="absolute w-1.5 h-1.5 rounded-full bg-sky-200 shadow-sm"
+              style={{ left: '46%' }}
+            />
+
+            <FlaskConical className="w-10 h-10 text-cyan-400 drop-shadow-md z-10 animate-bounce duration-1000" />
+          </div>
+        </div>
+
+        {/* Loading text & progress bar */}
+        <div className="space-y-2 w-full max-w-xs">
+          <div className="flex items-center justify-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
+            <span className="text-sm font-black text-slate-200 tracking-wide">
+              Đang chuẩn bị phòng thí nghiệm…
+            </span>
+          </div>
+          <div className="w-full h-2 rounded-full bg-[#131f24] border border-[#2e4756] overflow-hidden p-0.5">
+            <motion.div
+              animate={{ x: ['-100%', '100%'] }}
+              transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }}
+              className="w-1/2 h-full rounded-full bg-gradient-to-r from-transparent via-cyan-400 to-transparent"
+            />
+          </div>
+        </div>
+
+        {/* Trivia Flashcard */}
+        <div className="w-full bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] rounded-2xl p-4 text-left relative overflow-hidden">
+          <div className="flex items-center gap-1.5 text-amber-400 text-[11px] font-black uppercase tracking-wider mb-1.5">
+            <Sparkles className="w-3.5 h-3.5" />
+            <span>Góc khám phá Hóa học</span>
+          </div>
+          <p className="text-xs text-slate-300 leading-relaxed min-h-[36px]">
+            {CHEMISTRY_TRIVIA[triviaIndex]}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export const ExercisePage: React.FC = () => {
   const navigate = useNavigate();
@@ -302,14 +390,9 @@ export const ExercisePage: React.FC = () => {
     );
   }
 
-  // ── Loading state ──
+  // ── Chemical Loading state ──
   if (loadingState === 'loading') {
-    return (
-      <div className="flex flex-col items-center justify-center min-h-[80dvh] gap-4">
-        <Loader2 className="w-8 h-8 text-cyan-400 animate-spin" />
-        <p className="text-sm text-slate-400 font-bold">Đang tải bài tập…</p>
-      </div>
-    );
+    return <ChemicalLoadingScreen />;
   }
 
   // ── Error state ──

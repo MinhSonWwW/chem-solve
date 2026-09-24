@@ -32,7 +32,7 @@ import { detectWeakTopics, type WeakTopicReport } from '@/engine/review/weakTopi
 import { Button } from '@/design-system';
 import { sound } from '@/lib/audio';
 import { getCurriculum, type Grade } from '@/content/curriculum';
-import { getSkillsByGrade, type Skill } from '@/content/skills';
+import { SKILLS, getSkillsByGrade, type Skill } from '@/content/skills';
 import type { CompletedNodeData } from '@/engine/progress/progressRepo';
 
 const CATEGORY_MAP: Record<
@@ -205,19 +205,32 @@ export const ProgressPage: React.FC = () => {
     });
   }, [selectedGrade, allGradeLessons, completedNodes]);
 
-  // Weak topic detection
+  // Genuine weak topic detection derived from user's actual completed node accuracy
   const weakTopics: WeakTopicReport[] = useMemo(() => {
-    const attempts = completedList.flatMap((node) => [
-      { skillId: 'mol-mass-calc', isCorrect: node.accuracy >= 0.7, timestamp: Date.now() },
-      { skillId: 'gas-volume-calc', isCorrect: node.accuracy >= 0.8, timestamp: Date.now() },
-      { skillId: 'balance-equation', isCorrect: node.accuracy < 0.6, timestamp: Date.now() },
-      { skillId: 'balance-equation', isCorrect: false, timestamp: Date.now() },
-      { skillId: 'balance-equation', isCorrect: true, timestamp: Date.now() },
-      { skillId: 'balance-equation', isCorrect: false, timestamp: Date.now() },
-      { skillId: 'balance-equation', isCorrect: false, timestamp: Date.now() },
-    ]);
+    const attempts = Object.entries(completedNodes).flatMap(([key, nodeData]) => {
+      const lessonId = key.split(':')[0];
+      const lessonSkills = SKILLS.filter((s) => s.lessonId === lessonId);
+      if (lessonSkills.length === 0) return [];
+
+      const totalPerSkill = 5;
+      const correctPerSkill = Math.round(nodeData.accuracy * totalPerSkill);
+      const wrongPerSkill = totalPerSkill - correctPerSkill;
+
+      return lessonSkills.flatMap((skill) => [
+        ...Array.from({ length: correctPerSkill }, () => ({
+          skillId: skill.id,
+          isCorrect: true,
+          timestamp: nodeData.completedAt,
+        })),
+        ...Array.from({ length: wrongPerSkill }, () => ({
+          skillId: skill.id,
+          isCorrect: false,
+          timestamp: nodeData.completedAt,
+        })),
+      ]);
+    });
     return detectWeakTopics(attempts, 5, 0.7);
-  }, [completedList]);
+  }, [completedNodes]);
 
   // Weak topics of the currently selected grade
   const gradeWeakTopics = useMemo(() => {
@@ -382,7 +395,7 @@ export const ProgressPage: React.FC = () => {
       </div>
 
       {/* 4. Weak Topics of Selected Grade */}
-      {gradeWeakTopics.length > 0 && (
+      {gradeWeakTopics.length > 0 ? (
         <div className="p-4 bg-[#241a10] border-2 border-[#e67e22]/40 rounded-3xl space-y-2.5 shadow-[0_4px_0_0_#131f24]">
           <div className="flex items-center gap-2 text-amber-400">
             <AlertTriangle className="w-4 h-4 shrink-0" />
@@ -418,7 +431,21 @@ export const ProgressPage: React.FC = () => {
             ))}
           </div>
         </div>
-      )}
+      ) : completedGradeCount > 0 ? (
+        <div className="p-4 bg-[#11241f] border-2 border-[#10b981]/30 rounded-3xl flex items-center gap-3 shadow-[0_4px_0_0_#131f24]">
+          <div className="w-10 h-10 rounded-2xl bg-emerald-500/15 border-2 border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+            <CheckCircle2 className="w-5 h-5" />
+          </div>
+          <div>
+            <h3 className="text-xs font-black uppercase tracking-wider text-emerald-400">
+              Nắm vững kiến thức Lớp {selectedGrade}
+            </h3>
+            <p className="text-xs text-slate-300 mt-0.5">
+              Hệ thống không phát hiện kỹ năng nào có độ chính xác dưới 70%. Bạn đang học rất chắc chắn!
+            </p>
+          </div>
+        </div>
+      ) : null}
 
       {/* 5. Mastered Skills of Selected Grade (Kỹ năng hóa học trọng tâm của từng lớp) */}
       <div className="space-y-3">
