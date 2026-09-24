@@ -581,7 +581,13 @@ export const ExercisePage: React.FC = () => {
             disabled={
               exercise.answer.kind === 'equation' && exercise.answer.mode === 'fill-coefficients'
                 ? false
-                : currentQ.userInput == null || currentQ.userInput === ''
+                : exercise.answer.kind === 'true-false'
+                  ? !currentQ.userInput ||
+                    typeof currentQ.userInput !== 'object' ||
+                    exercise.answer.statements.some(
+                      (st) => (currentQ.userInput as Record<string, boolean>)[st.id] === undefined
+                    )
+                  : currentQ.userInput == null || currentQ.userInput === ''
             }
             onClick={() => {
               if (exercise.answer.kind === 'equation' && exercise.answer.mode === 'fill-coefficients' && !currentQ.userInput) {
