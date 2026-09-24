@@ -221,14 +221,14 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
           {/* Search bar (for elements) */}
           {tab === 'elements' && (
             <div className="p-2.5 border-b border-slate-800/80 bg-slate-900/50">
-              <div className="relative">
+              <div className="relative text-slate-100">
                 <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" />
                 <input
                   type="text"
                   placeholder="Tìm tên hoặc kí hiệu (vd: Fe, O, Sắt, Sodium...)"
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
-                  className="w-full bg-slate-950/80 border border-slate-700/80 rounded-xl pl-9 pr-3 py-1.5 text-xs text-slate-100 placeholder:text-slate-500 outline-none focus:ring-1 focus:ring-cyan-500"
+                  className="w-full bg-slate-950/80 border border-slate-700/80 rounded-xl pl-9 pr-3 py-1.5 text-xs placeholder:text-slate-500 outline-none focus:ring-1 focus:ring-cyan-500"
                 />
               </div>
             </div>
