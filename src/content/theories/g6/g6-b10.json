@@ -1,0 +1,59 @@
+{
+  "lessonId": "g6-b10",
+  "nodeId": "g6-b10-theory",
+  "title": "Các thể của chất & Sự chuyển thể",
+  "subtitle": "Đặc trưng 3 thể (rắn, lỏng, khí), mô hình hạt và các quá trình chuyển thể",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "3 thể của chất",
+      "badgeColor": "purple",
+      "title": "Đặc điểm hình dạng và thể tích của 3 thể",
+      "content": "Chất xung quanh ta thường tồn tại ở 3 thể cơ bản với các đặc tính:",
+      "bulletPoints": [
+        "Thể Rắn: Có hình dạng và thể tích xác định, các hạt gắn kết chặt chẽ nên rất khó bị nén (ví dụ: viên gạch, hòn đá, thanh kim loại sắt).",
+        "Thể Lỏng: Có thể tích xác định nhưng KHÔNG CÓ hình dạng xác định (hình dạng phụ thuộc vào phần bình chứa), rất khó bị nén (ví dụ: nước, dầu ăn, cồn).",
+        "Thể Khí (Hơi): Không có hình dạng và thể tích xác định, luôn lan tỏa chiếm toàn bộ không gian bình chứa, RẤT DỄ BỊ NÉN (ví dụ: không khí, hơi nước, khí [[O2]])."
+      ],
+      "callout": "💡 Khắc cốt: Rắn (giữ hình & thể tích) | Lỏng (đổi hình, giữ thể tích) | Khí (đổi cả hai, cực kì dễ nén)!"
+    },
+    {
+      "id": "c2",
+      "badge": "Mô hình hạt",
+      "badgeColor": "emerald",
+      "title": "Khoảng cách và chuyển động của các hạt",
+      "content": "Tính chất của mỗi thể bắt nguồn từ cách sắp xếp các hạt cấu tạo:",
+      "bulletPoints": [
+        "Ở thể rắn: Các hạt xếp rất sát nhau, có trật tự chặt chẽ và chỉ dao động xung quanh vị trí cân bằng cố định.",
+        "Ở thể lỏng: Các hạt ở gần nhau nhưng trật tự lỏng lẻo hơn, có thể trượt lên nhau và chuyển động linh hoạt.",
+        "Ở thể khí: Các hạt ở RẤT XA NHAU, chuyển động hỗn loạn và tự do về mọi hướng với tốc độ lớn. Do khoảng cách trống giữa các hạt rất lớn nên chất khí có thể nén ép lại dễ dàng."
+      ],
+      "callout": "📌 Giải thích: Chất khí dễ nén nhất vì khoảng cách giữa các hạt khí là vô cùng lớn so với thể lỏng và rắn!"
+    },
+    {
+      "id": "c3",
+      "badge": "Sự chuyển thể",
+      "badgeColor": "cyan",
+      "title": "Các quá trình chuyển thể trong tự nhiên",
+      "content": "Dưới tác động của nhiệt độ, chất có thể chuyển đổi linh hoạt qua lại giữa 3 thể:",
+      "bulletPoints": [
+        "Sự nóng chảy: Chuyển từ thể Rắn sang thể Lỏng khi đun nóng (cục nước đá tan chảy, mẩu nến chảy).",
+        "Sự đông đặc: Chuyển từ thể Lỏng sang thể Rắn khi hạ nhiệt (nước đông thành đá trong tủ lạnh, đúc tượng đồng).",
+        "Sự bay hơi: Chuyển từ thể Lỏng sang thể Khí/Hơi (nước bốc hơi, phơi quần áo ướt). Sự sôi là sự bay hơi nhanh diễn ra cả trên bề mặt và trong lòng chất lỏng.",
+        "Sự ngưng tụ: Chuyển từ thể Khí/Hơi sang thể Lỏng khi gặp lạnh (giọt sương ban mai, những giọt nước li ti đọng ngoài thành cốc nước đá)."
+      ],
+      "callout": "⚠️ Bẫy kinh điển: Giọt nước đọng ngoài cốc đá là do hơi nước trong không khí gặp lạnh ngưng tụ, KHÔNG PHẢI nước trong cốc thấm ra ngoài!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Hiện tượng những giọt nước li ti đọng bên ngoài thành cốc nước đá lạnh là do quá trình chuyển thể nào sau đây?",
+    "options": [
+      { "id": "opt-1", "text": "Sự ngưng tụ của hơi nước có trong không khí khi gặp bề mặt lạnh", "correct": true },
+      { "id": "opt-2", "text": "Nước từ bên trong cốc đã thấm qua thủy tinh ra ngoài", "correct": false },
+      { "id": "opt-3", "text": "Sự nóng chảy của thành cốc thủy tinh", "correct": false },
+      { "id": "opt-4", "text": "Sự đông đặc của các hạt không khí", "correct": false }
+    ],
+    "explanation": "Chính xác! Trong không khí luôn có sẵn một lượng hơi nước vô hình. Khi chạm vào bề mặt thành cốc đá lạnh, hơi nước bị làm lạnh đột ngột và ngưng tụ thành các giọt nước lỏng đọng lại bên ngoài."
+  }
+}

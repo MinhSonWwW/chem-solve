@@ -1,0 +1,59 @@
+{
+  "lessonId": "g6-b11",
+  "nodeId": "g6-b11-theory",
+  "title": "Oxygen & Không khí quanh ta",
+  "subtitle": "Thành phần không khí, tính chất - vai trò của Oxygen và bảo vệ môi trường",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Thành phần không khí",
+      "badgeColor": "purple",
+      "title": "Không khí là một hỗn hợp gồm nhiều chất khí",
+      "content": "Bầu khí quyển bao bọc Trái Đất có thành phần phần trăm thể tích như sau:",
+      "bulletPoints": [
+        "Khí Nitrogen ([[N2]]): Chiếm khoảng 78% thể tích (gần 4/5 không khí), là thành phần dồi dào nhất trong khí quyển.",
+        "Khí Oxygen ([[O2]]): Chiếm khoảng 21% thể tích (gần 1/5 không khí), là chất khí duy trì sự sống và sự cháy.",
+        "Các khí khác: Chiếm khoảng 1% thể tích còn lại, gồm Carbon dioxide ([[CO2]]), hơi nước, khí hiếm (Argon) và các hạt bụi lơ lửng."
+      ],
+      "callout": "💡 Tỉ lệ vàng cần nhớ: 78% Nitrogen (4/5) + 21% Oxygen (1/5) + 1% các khí khác!"
+    },
+    {
+      "id": "c2",
+      "badge": "Tính chất & Vai trò",
+      "badgeColor": "emerald",
+      "title": "Đặc tính và vai trò sống còn của Oxygen",
+      "content": "Oxygen là dưỡng khí không thể thiếu đối với sự sống trên hành tinh:",
+      "bulletPoints": [
+        "Tính chất vật lí: Là chất khí không màu, không mùi, không vị, ít tan trong nước và nặng hơn không khí một chút (khối lượng mol 32 > 29).",
+        "Duy trì sự sống: Oxygen tham gia quá trình hô hấp của con người, động vật, thực vật. Ứng dụng: bình dưỡng khí thợ lặn, bình thở oxy y tế cấp cứu trong bệnh viện.",
+        "Duy trì sự cháy: Giúp các nhiên liệu (than, củi, xăng dầu, gas) bốc cháy tỏa nhiệt. Ứng dụng: đèn hàn xì oxy-axetilen cắt kim loại, lò luyện gang thép.",
+        "Lưu ý quan trọng: Oxygen KHÔNG TỰ BỐC CHÁY ĐƯỢC mà chỉ đóng vai trò duy trì sự cháy cho các chất khác."
+      ],
+      "callout": "📌 Ghi nhớ: Oxygen không tự cháy, nó duy trì sự sống (hô hấp) và duy trì sự cháy!"
+    },
+    {
+      "id": "c3",
+      "badge": "Thí nghiệm & Môi trường",
+      "badgeColor": "amber",
+      "title": "Thí nghiệm úp cốc & Bảo vệ bầu không khí",
+      "content": "Thực nghiệm chứng minh tỉ lệ oxy và ý thức bảo vệ môi trường:",
+      "bulletPoints": [
+        "Thí nghiệm úp cốc lên nến: Nến cháy tiêu thụ hết khí [[O2]] bên trong rồi tắt; mực nước trong đĩa dâng lên chiếm đúng khoảng 1/5 thể tích bên trong cốc (chứng minh [[O2]] chiếm khoảng 21% thể tích không khí).",
+        "Ô nhiễm không khí: Khói bụi công nghiệp, khí thải xe cộ, đốt rác thải sinh ra bụi mịn, khí độc ([[SO2]], [[NO2]], [[CO]]) gây bệnh đường hô hấp và ô nhiễm môi trường.",
+        "Hành động xanh: Tích cực trồng và chăm sóc cây xanh, sử dụng phương tiện giao thông công cộng, xe điện, không đốt rác bừa bãi."
+      ],
+      "callout": "⚠️ Hành động thiết thực: Trồng thêm một cây xanh là góp phần bảo vệ và lọc sạch lá phổi của Trái Đất!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khí Oxygen (oxi) chiếm khoảng bao nhiêu phần trăm thể tích của không khí xung quanh chúng ta?",
+    "options": [
+      { "id": "opt-1", "text": "Khoảng 21% (xấp xỉ 1/5 thể tích)", "correct": true },
+      { "id": "opt-2", "text": "Khoảng 78% (xấp xỉ 4/5 thể tích)", "correct": false },
+      { "id": "opt-3", "text": "Khoảng 50% (một nửa thể tích)", "correct": false },
+      { "id": "opt-4", "text": "Khoảng 1% thể tích", "correct": false }
+    ],
+    "explanation": "Chính xác! Trong không khí, khí Oxygen chiếm khoảng 21% thể tích (gần 1/5), trong khi khí Nitrogen chiếm nhiều nhất với khoảng 78% (gần 4/5), còn lại 1% là hơi nước, CO2 và các khí khác."
+  }
+}

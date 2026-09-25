@@ -1,0 +1,59 @@
+{
+  "lessonId": "g6-b09",
+  "nodeId": "g6-b09-theory",
+  "title": "Sự đa dạng của chất quanh ta",
+  "subtitle": "Phân biệt vật thể - chất, tính chất vật lí và biến đổi hóa học",
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Vật thể & Chất",
+      "badgeColor": "purple",
+      "title": "Vật thể được tạo nên từ chất",
+      "content": "Thế giới tự nhiên xung quanh chúng ta vô cùng đa dạng và phong phú:",
+      "bulletPoints": [
+        "Vật thể tự nhiên: Có sẵn trong tự nhiên (dòng sông, ngọn núi, cây cối, động vật, đám mây...).",
+        "Vật thể nhân tạo: Do bàn tay con người chế tạo ra từ các vật liệu để phục vụ cuộc sống (chiếc bàn gỗ, cốc thủy tinh, bút bi, xe đạp...).",
+        "Vật sống (hữu sinh): Có sự trao đổi chất, lớn lên và sinh sản (con người, động vật, thực vật).",
+        "Mối quan hệ giữa Vật thể và Chất: Mọi vật thể đều do một hoặc nhiều chất tạo nên. Một chất có thể tạo ra nhiều vật thể (ví dụ: nhôm làm nồi, khung cửa, vỏ máy bay)."
+      ],
+      "callout": "💡 Dễ nhớ: 'Cốc nước' là vật thể, còn 'thủy tinh' và 'nước' là chất tạo nên vật thể đó!"
+    },
+    {
+      "id": "c2",
+      "badge": "Tính chất của chất",
+      "badgeColor": "emerald",
+      "title": "Tính chất vật lí & Tính chất hóa học",
+      "content": "Mỗi chất có những đặc tính riêng biệt giúp ta nhận biết và sử dụng chúng:",
+      "bulletPoints": [
+        "Tính chất vật lí: Thể (rắn, lỏng, khí), màu sắc, mùi, vị, nhiệt độ nóng chảy, nhiệt độ sôi, tính tan trong nước, tính dẫn điện, dẫn nhiệt.",
+        "Tính chất hóa học: Khả năng biến đổi của một chất thành chất khác (ví dụ: tính dễ cháy của xăng dầu, tính gỉ sét của đinh sắt ngoài không khí ẩm, khả năng lên men chua của sữa chua).",
+        "Dấu hiệu phân biệt: Tính chất vật lí không làm sinh ra chất mới; tính chất hóa học gắn liền với sự biến đổi thành chất mới."
+      ],
+      "callout": "📌 Đường tan trong nước là tính chất vật lí; đường bị đun cháy đen khét là tính chất hóa học!"
+    },
+    {
+      "id": "c3",
+      "badge": "Biến đổi của chất",
+      "badgeColor": "amber",
+      "title": "Biến đổi vật lí vs Biến đổi hóa học",
+      "content": "Phân biệt 2 dạng biến đổi thường gặp trong đời sống:",
+      "bulletPoints": [
+        "Biến đổi vật lí: Chất chỉ thay đổi về hình dạng, kích thước hoặc thể trạng nhưng VẪN GIỮ NGUYÊN là chất ban đầu (nước đá tan chảy, xé rách tờ giấy, hòa tan muối ăn vào nước).",
+        "Biến đổi hóa học: Chất ban đầu bị biến đổi và TẠO RA CHẤT MỚI với tính chất khác biệt hoàn toàn (đốt cháy giấy thành tro và khói, sắt bị gỉ màu nâu, thức ăn để lâu bị ôi thiu bốc mùi).",
+        "Dấu hiệu nhận biết biến đổi hóa học: Có sự thay đổi màu sắc rõ rệt, sủi bọt khí, xuất hiện chất kết tủa hoặc tỏa nhiệt, phát sáng."
+      ],
+      "callout": "⚠️ Chìa khóa quyết định: Có tạo ra chất mới hay không? Có -> Hóa học | Không -> Vật lí!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Hiện tượng nào sau đây là một biến đổi hóa học?",
+    "options": [
+      { "id": "opt-1", "text": "Đốt cháy tờ giấy thành tàn tro màu đen và khói", "correct": true },
+      { "id": "opt-2", "text": "Cắt tờ giấy trắng thành nhiều mảnh nhỏ", "correct": false },
+      { "id": "opt-3", "text": "Cục nước đá tan chảy thành nước lỏng", "correct": false },
+      { "id": "opt-4", "text": "Hòa tan hạt đường vào cốc nước chanh", "correct": false }
+    ],
+    "explanation": "Chính xác! Đốt cháy giấy sinh ra các chất mới (tro than, khí cacbonic và khói hơi nước) nên là biến đổi hóa học. Cắt giấy, đá tan hay hòa tan đường chỉ là biến đổi vật lí vì không tạo ra chất mới."
+  }
+}
