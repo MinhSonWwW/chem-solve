@@ -107,6 +107,25 @@ export async function loadUserProgress(): Promise<UserProgress> {
     await set(USER_PROGRESS_KEY, raw);
   }
 
+  // Streak validation on new calendar day:
+  if (raw.streakDate && raw.streakDate !== today) {
+    const lastTime = new Date(raw.streakDate).getTime();
+    const todayTime = new Date(today).getTime();
+    const diffDays = Math.round((todayTime - lastTime) / (1000 * 60 * 60 * 24));
+    if (diffDays > 1) {
+      if (raw.streakFreeze && raw.streakFreeze > 0) {
+        // Streak freeze shields the user
+        raw.streakFreeze -= 1;
+        // Move streakDate to yesterday to keep the streak valid for today
+        const yesterday = new Date(todayTime - 86400000).toISOString().slice(0, 10);
+        raw.streakDate = yesterday;
+      } else {
+        raw.streak = 0;
+      }
+      await set(USER_PROGRESS_KEY, raw);
+    }
+  }
+
   // Heart recovery: auto-recover based on time elapsed since last decrement
   const now = Date.now();
   if (raw.hearts < GAMIFICATION.hearts.max && raw.heartsLastDecAt > 0) {

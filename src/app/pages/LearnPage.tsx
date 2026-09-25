@@ -5,11 +5,12 @@ import { SnakePath, type PathNode, NodePreviewDrawer, ChapterGuideModal } from '
 import { sound } from '@/lib/audio';
 import { getCurriculum, type Grade, type Lesson, type NodeInfo, type Chapter } from '@/content/curriculum';
 import { useUserStore } from '@/features/gamification/useUserStore';
+import { loadUserProgress, saveUserProgress } from '@/engine/progress';
 
 export const LearnPage: React.FC = () => {
   const { grade = '8' } = useParams<{ grade: string }>();
   const navigate = useNavigate();
-  const { completedNodes, hearts } = useUserStore();
+  const { completedNodes, hearts, addGems, addXp } = useUserStore();
 
   const currentGrade = (parseInt(grade, 10) as Grade) || 8;
   const curriculum = useMemo(() => getCurriculum(currentGrade), [currentGrade]);
@@ -184,6 +185,41 @@ export const LearnPage: React.FC = () => {
     }
   };
 
+  const handleOpenChest = async () => {
+    if (!selectedNode) return;
+    const { lesson, node } = selectedNode;
+    const nodeKey = `${lesson.id}:${node.id}`;
+
+    sound.playLevelUp();
+    addGems(30);
+    addXp(50);
+
+    const progress = await loadUserProgress();
+    progress.gems = (progress.gems || 0) + 30;
+    progress.xp = (progress.xp || 0) + 50;
+    progress.completedNodes[nodeKey] = {
+      accuracy: 1,
+      bestXp: 50,
+      completedAt: Date.now(),
+    };
+    await saveUserProgress(progress);
+
+    useUserStore.setState((s) => ({
+      gems: s.gems + 30,
+      xp: s.xp + 50,
+      completedNodes: {
+        ...s.completedNodes,
+        [nodeKey]: {
+          accuracy: 1,
+          bestXp: 50,
+          completedAt: Date.now(),
+        },
+      },
+    }));
+
+    setSelectedNode(null);
+  };
+
   const handleStartNode = () => {
     if (!selectedNode) return;
     const { lesson, node } = selectedNode;
@@ -275,6 +311,7 @@ export const LearnPage: React.FC = () => {
         }}
         onClose={() => setSelectedNode(null)}
         onStart={handleStartNode}
+        onOpenChest={handleOpenChest}
       />
 
       {/* 4. Chapter Guidebook Modal */}

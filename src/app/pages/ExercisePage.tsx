@@ -28,7 +28,7 @@ import {
   ChemKeyboard,
 } from '@/design-system';
 import { sound } from '@/lib/audio';
-import { loadExercises } from '@/content/contentLoader';
+import { loadExercisesForNode } from '@/content/contentLoader';
 import { loadSession, clearSession } from '@/engine/progress';
 import { GAMIFICATION } from '@/config/gamification';
 import type { Exercise } from '@/content/schema/exercise';
@@ -194,8 +194,8 @@ export const ExercisePage: React.FC = () => {
           return;
         }
 
-        // Load fresh exercises
-        const exercises = await loadExercises(lessonId);
+        // Load fresh targeted exercises for this specific milestone node
+        const exercises = await loadExercisesForNode(lessonId, nodeId);
         if (exercises.length === 0) {
           throw new Error('Không tìm thấy bài tập cho bài học này.');
         }

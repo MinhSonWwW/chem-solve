@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Play, Star, Lock, BookOpen } from 'lucide-react';
+import { X, Play, Star, Lock, BookOpen, Gift, Award } from 'lucide-react';
 import { Button } from './Button';
 import { Mascot } from './Mascot';
 import { sound } from '@/lib/audio';
@@ -18,6 +18,7 @@ export interface NodePreviewDrawerProps {
   onGoToPractice?: () => void;
   onClose: () => void;
   onStart: () => void;
+  onOpenChest?: () => void;
 }
 
 export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
@@ -32,11 +33,14 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
   onGoToPractice,
   onClose,
   onStart,
+  onOpenChest,
 }) => {
   if (!isOpen || !node) return null;
 
   const isReady = lesson?.ready ?? false;
   const isTheory = node.type === 'theory';
+  const isChest = node.type === 'chest';
+  const isCheckpoint = node.type === 'checkpoint';
 
   return (
     <AnimatePresence>
@@ -71,15 +75,39 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
               {/* Mascot Avatar */}
               <div className="flex justify-center pt-2">
                 <Mascot
-                  state={hearts <= 0 && !isTheory ? 'out_of_hearts' : isCompleted ? 'happy' : isUnlocked ? 'cheering' : 'thinking'}
+                  state={
+                    hearts <= 0 && !isTheory && !isChest
+                      ? 'out_of_hearts'
+                      : isCompleted
+                      ? 'happy'
+                      : isUnlocked
+                      ? 'cheering'
+                      : 'thinking'
+                  }
                   size="xl"
                 />
               </div>
 
               {/* Title & Info */}
               <div className="space-y-1">
-                <span className={`text-[10px] font-black uppercase tracking-wider ${isTheory ? 'text-fuchsia-400' : 'text-[#0ea5e9]'}`}>
-                  {isTheory ? '📖 LÝ THUYẾT TRỌNG TÂM' : lesson?.title}
+                <span
+                  className={`text-[10px] font-black uppercase tracking-wider ${
+                    isTheory
+                      ? 'text-fuchsia-400'
+                      : isChest
+                      ? 'text-amber-400'
+                      : isCheckpoint
+                      ? 'text-rose-400'
+                      : 'text-[#0ea5e9]'
+                  }`}
+                >
+                  {isTheory
+                    ? '📖 LÝ THUYẾT TRỌNG TÂM'
+                    : isChest
+                    ? '🎁 RƯƠNG KHO BÁU PHẦN THƯỞNG'
+                    : isCheckpoint
+                    ? '👑 THỬ THÁCH TRÙM CUỐI (BOSS)'
+                    : lesson?.title}
                 </span>
                 <h2 className="text-lg font-black text-white">
                   {node.title}
@@ -92,14 +120,18 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
                 <div className="p-2.5 rounded-2xl bg-[#58cc02]/15 border-2 border-[#58cc02]/40 flex items-center justify-center gap-2 text-xs font-bold text-emerald-300">
                   <Star className="w-4 h-4 fill-emerald-400 text-emerald-400" />
                   <span>
-                    {isTheory ? 'Đã hoàn thành phần lý thuyết' : `Đã hoàn thành · Chính xác: ${Math.round((bestAccuracy ?? 1) * 100)}%`}
+                    {isTheory
+                      ? 'Đã hoàn thành phần lý thuyết'
+                      : isChest
+                      ? 'Đã mở rương nhận thưởng (+30 💎 · +50 XP)'
+                      : `Đã hoàn thành · Chính xác: ${Math.round((bestAccuracy ?? 1) * 100)}%`}
                   </span>
                 </div>
               )}
 
               {/* Action */}
               <div className="pt-2">
-                {hearts <= 0 && !isTheory ? (
+                {hearts <= 0 && !isTheory && !isChest ? (
                   <div className="space-y-2.5">
                     <div className="p-3.5 rounded-2xl bg-[#ff4b4b]/15 border-2 border-[#ff4b4b]/40 flex flex-col items-center justify-center gap-1.5 text-xs text-rose-200">
                       <div className="flex items-center gap-1.5 text-[#ff4b4b] font-bold">
@@ -123,6 +155,31 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
                       <span>ĐẾN TRANG BÀI TẬP (+1 TIM)</span>
                     </Button>
                   </div>
+                ) : isChest && isUnlocked ? (
+                  <Button
+                    variant="primary"
+                    size="lg"
+                    fullWidth
+                    disabled={isCompleted}
+                    className={`flex items-center justify-center gap-2 ${
+                      isCompleted
+                        ? 'opacity-60 bg-slate-700 text-slate-400 border-none'
+                        : 'bg-gradient-to-r from-amber-400 to-amber-300 hover:from-amber-300 hover:to-amber-200 text-amber-950 font-black shadow-[0_4px_0_0_#b45309]'
+                    }`}
+                    onClick={() => {
+                      if (!isCompleted) {
+                        sound.playClick();
+                        if (onOpenChest) onOpenChest();
+                      }
+                    }}
+                  >
+                    <Gift
+                      className={`w-5 h-5 ${
+                        isCompleted ? 'text-slate-400' : 'text-amber-950 fill-amber-950'
+                      }`}
+                    />
+                    <span>{isCompleted ? 'ĐÃ NHẬN THƯỞNG' : 'MỞ RƯƠNG (+30 💎 · +50 XP)'}</span>
+                  </Button>
                 ) : isUnlocked ? (
                   <Button
                     variant="primary"
@@ -131,6 +188,8 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
                     className={`flex items-center justify-center gap-2 ${
                       isTheory
                         ? 'bg-gradient-to-r from-purple-600 to-fuchsia-500 hover:from-purple-500 hover:to-fuchsia-400 text-white font-black shadow-[0_4px_0_0_#6b21a8]'
+                        : isCheckpoint
+                        ? 'bg-gradient-to-r from-rose-600 to-amber-500 hover:from-rose-500 hover:to-amber-400 text-white font-black shadow-[0_4px_0_0_#9f1239]'
                         : ''
                     }`}
                     onClick={() => {
@@ -140,6 +199,8 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
                   >
                     {isTheory ? (
                       <BookOpen className="w-5 h-5 text-white stroke-[2.5]" />
+                    ) : isCheckpoint ? (
+                      <Award className="w-5 h-5 text-white" />
                     ) : (
                       <Play className="w-5 h-5 fill-white" />
                     )}
@@ -148,6 +209,10 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
                         ? isCompleted
                           ? 'XEM LẠI LÝ THUYẾT'
                           : 'HỌC LÝ THUYẾT (2 PHÚT)'
+                        : isCheckpoint
+                        ? isCompleted
+                          ? 'KHIÊU CHIẾN LẠI TRÙM'
+                          : 'KHIÊU CHIẾN TRÙM CUỐI'
                         : isCompleted
                         ? 'ÔN TẬP LẠI'
                         : 'BẮT ĐẦU CHẶNG'}
