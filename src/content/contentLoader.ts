@@ -111,6 +111,18 @@ export async function loadExercisesForNode(
     }
   }
 
+  if (lessonId === 'g8-b04') {
+    // 8 questions: n01 = Nồng độ C% (4 questions), n02 = Nồng độ CM (4 questions) - Zero overlap
+    if (nodeId.endsWith('n01')) return allExercises.slice(0, 4);
+    if (nodeId.endsWith('n02')) return allExercises.slice(4, 8);
+  }
+
+  if (lessonId === 'g8-b05') {
+    // 10 questions: n01 = ĐL Bảo toàn khối lượng (5 questions), n02 = Cân bằng PTHH (5 questions) - Zero overlap
+    if (nodeId.endsWith('n01')) return allExercises.slice(0, 5);
+    if (nodeId.endsWith('n02')) return allExercises.slice(5, 10);
+  }
+
   if (lessonId === 'g7-b02') {
     // 12 questions: n01 = atomic structure (p, n, e), n02 = atomic mass (amu)
     if (nodeId.endsWith('n01')) return allExercises.slice(0, 6);

@@ -200,14 +200,29 @@ export const ExercisePage: React.FC = () => {
           throw new Error('Không tìm thấy bài tập cho bài học này.');
         }
 
-        // Shuffle exercises for variety (Fisher-Yates)
-        const shuffled = [...exercises];
-        for (let i = shuffled.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-        }
+        // Pedagogical Scaffolding: Sort exercises from Easy to Hard (Difficulty 1 -> 2 -> 3).
+        // Shuffle within the same difficulty level so questions remain fresh on replay,
+        // but easier foundational questions always come before complex calculations.
+        const diff1 = exercises.filter((q) => (q.difficulty ?? 1) === 1);
+        const diff2 = exercises.filter((q) => (q.difficulty ?? 1) === 2);
+        const diff3 = exercises.filter((q) => (q.difficulty ?? 1) >= 3);
 
-        startSession(sessionKey, nodeId, shuffled, undefined, isPracticeMode);
+        const shuffleArray = <T,>(arr: T[]): T[] => {
+          const copy = [...arr];
+          for (let i = copy.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [copy[i], copy[j]] = [copy[j], copy[i]];
+          }
+          return copy;
+        };
+
+        const sortedExercises = [
+          ...shuffleArray(diff1),
+          ...shuffleArray(diff2),
+          ...shuffleArray(diff3),
+        ];
+
+        startSession(sessionKey, nodeId, sortedExercises, undefined, isPracticeMode);
         if (!cancelled) setLoadingState('ready');
       } catch (err) {
         if (!cancelled) {

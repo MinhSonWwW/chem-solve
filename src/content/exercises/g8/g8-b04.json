@@ -1,10 +1,41 @@
 [
   {
+    "id": "g8-b04-tf-001",
+    "lessonId": "g8-b04",
+    "skillIds": ["mass-percentage-calc"],
+    "difficulty": 1,
+    "prompt": "Chọn ĐÚNG hoặc SAI cho mỗi phát biểu về dung dịch và nồng độ phần trăm sau:",
+    "knowledge": ["formula.mass-percentage"],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Dung dịch là hỗn hợp đồng nhất giữa chất tan và dung môi.", "correct": true },
+        { "id": "s2", "text": "Dung môi thường gặp nhất trong đời sống và phòng thí nghiệm là nước cất.", "correct": true },
+        { "id": "s3", "text": "Dung dịch chưa bão hòa là dung dịch không thể hòa tan thêm chất tan ở nhiệt độ xác định.", "correct": false },
+        { "id": "s4", "text": "Nồng độ phần trăm (C%) cho biết số gam chất tan có trong 100 gam dung dịch.", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Dung dịch bão hòa là dung dịch KHÔNG THỂ hòa tan thêm chất tan ở nhiệt độ đó." },
+      { "level": 2, "text": "Dung dịch chưa bão hòa là dung dịch VẪN CÓ THỂ hòa tan thêm chất tan." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Khái niệm dung dịch", "body": "Dung dịch là hỗn hợp đồng nhất giữa chất tan và dung môi (s1 Đúng, s2 Đúng)." },
+      { "kind": "knowledge", "title": "Dung dịch bão hòa và chưa bão hòa", "body": "Dung dịch đã bão hòa không thể tan thêm chất tan. Do đó s3 Sai." },
+      { "kind": "answer", "title": "Định nghĩa nồng độ phần trăm C%", "body": "C% = (m_ct / m_dd) × 100%, tức là số gam chất tan trong 100 g dung dịch (s4 Đúng)." }
+    ],
+    "finalSolution": "s1: Đúng, s2: Đúng, s3: Sai (chưa bão hòa thì vẫn tan thêm được), s4: Đúng.",
+    "commonMistakes": [
+      { "id": "confuse-saturated", "message": "Nhầm định nghĩa giữa dung dịch bão hòa và chưa bão hòa." }
+    ]
+  },
+  {
     "id": "g8-b04-mcq-001",
     "lessonId": "g8-b04",
     "skillIds": ["mass-percentage-calc"],
     "difficulty": 1,
     "prompt": "Hòa tan 15 g đường vào 45 g nước cất. Khối lượng dung dịch nước đường thu được là bao nhiêu?",
+    "knowledge": ["formula.mass-percentage"],
     "answer": {
       "kind": "mcq-single",
       "options": [
@@ -31,7 +62,7 @@
     ]
   },
   {
-    "id": "g8-b04-calc-002",
+    "id": "g8-b04-calc-001",
     "lessonId": "g8-b04",
     "skillIds": ["mass-percentage-calc"],
     "difficulty": 2,
@@ -65,6 +96,99 @@
     ]
   },
   {
+    "id": "g8-b04-calc-002",
+    "lessonId": "g8-b04",
+    "skillIds": ["mass-percentage-calc"],
+    "difficulty": 2,
+    "prompt": "Cần lấy bao nhiêu gam đường ăn để pha chế được 250 g dung dịch nước đường có nồng độ 10%?",
+    "given": [
+      { "label": "Khối lượng dung dịch (m_dd)", "value": "250", "unit": "g" },
+      { "label": "Nồng độ phần trăm (C%)", "value": "10", "unit": "%" }
+    ],
+    "find": { "label": "Khối lượng đường cần lấy (m_ct)", "unit": "g" },
+    "knowledge": ["formula.mass-percentage"],
+    "answer": {
+      "kind": "number",
+      "value": 25,
+      "unit": "g",
+      "decimals": 1,
+      "tolerance": { "abs": 0.1 }
+    },
+    "hints": [
+      { "level": 1, "text": "Từ công thức C% = (m_ct / m_dd) × 100%, hãy biến đổi để tìm m_ct." },
+      { "level": 2, "text": "m_ct = (m_dd × C%) / 100 = (250 × 10) / 100 = 25 g." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định đại lượng", "body": "Đã biết m_dd = 250 g, C% = 10%. Cần tính m_ct (đường)." },
+      { "kind": "knowledge", "title": "Công thức rút ra", "body": "m_ct = (m_dd × C%) / 100." },
+      { "kind": "compute", "title": "Tính toán", "body": "m_ct = (250 × 10) / 100 = 25 (g)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Cần lấy đúng **25 g** đường ăn." }
+    ],
+    "finalSolution": "m_ct = (250 × 10) / 100 = **25 g**.",
+    "commonMistakes": [
+      { "id": "wrong-formula-inverse", "message": "Lấy 250 chia cho 10 thay vì nhân 10 chia 100." }
+    ]
+  },
+  {
+    "id": "g8-b04-match-001",
+    "lessonId": "g8-b04",
+    "skillIds": ["molar-concentration-calc"],
+    "difficulty": 1,
+    "prompt": "Ghép đôi mỗi đại lượng trong bài toán dung dịch với đơn vị đo tương ứng chuẩn quốc tế:",
+    "knowledge": ["formula.molar-concentration"],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Nồng độ mol (CM)", "right": "mol/L hoặc M" },
+        { "left": "Thể tích dung dịch (V)", "right": "lít (L) hoặc mililít (mL)" },
+        { "left": "Số mol chất tan (n)", "right": "mol" },
+        { "left": "Nồng độ phần trăm (C%)", "right": "đơn vị phần trăm (%)" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "CM có đơn vị là mol/L (viết tắt là M)." },
+      { "level": 2, "text": "Thể tích tính bằng Lít, số mol có đơn vị mol, nồng độ phần trăm có ký hiệu %." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích các đại lượng", "body": "Xem xét 4 đại lượng cơ bản của dung dịch: CM, V, n, C%." },
+      { "kind": "knowledge", "title": "Quy ước đơn vị đo", "body": "CM: mol/L (M); V: L (mL); n: mol; C%: %." },
+      { "kind": "answer", "title": "Kết luận ghép cặp", "body": "Ghép đúng từng đại lượng với đơn vị chuẩn tương ứng." }
+    ],
+    "finalSolution": "CM ↔ mol/L (M) · V ↔ L · n ↔ mol · C% ↔ %.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g8-b04-mcq-002",
+    "lessonId": "g8-b04",
+    "skillIds": ["molar-concentration-calc"],
+    "difficulty": 1,
+    "prompt": "Công thức nào sau đây dùng để tính nồng độ mol (CM) của dung dịch?",
+    "knowledge": ["formula.molar-concentration"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "CM = n / V (n tính bằng mol, V tính bằng Lít)" },
+        { "id": "b", "label": "CM = m / V (m tính bằng gam, V tính bằng mL)" },
+        { "id": "c", "label": "CM = (m_ct / m_dd) × 100%" },
+        { "id": "d", "label": "CM = n × 24,79" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Nồng độ mol biểu thị số mol chất tan trong 1 lít dung dịch." },
+      { "level": 2, "text": "Công thức chuẩn SGK: CM = n / V." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Định nghĩa nồng độ mol", "body": "Nồng độ mol cho biết số mol chất tan có trong 1 lít dung dịch." },
+      { "kind": "knowledge", "title": "Công thức toán học", "body": "C_M = n / V (đơn vị: mol/L hoặc M)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Công thức chính xác là **CM = n / V**." }
+    ],
+    "finalSolution": "**CM = n / V** (mol/L).",
+    "commonMistakes": [
+      { "id": "confuse-with-c-percent", "message": "Nhầm công thức nồng độ mol với nồng độ phần trăm C%." }
+    ]
+  },
+  {
     "id": "g8-b04-calc-003",
     "lessonId": "g8-b04",
     "skillIds": ["molar-concentration-calc"],
@@ -84,8 +208,8 @@
       "tolerance": { "abs": 0.05 }
     },
     "hints": [
-      { "level": 1, "text": "Nhớ đổi thể tích 250 mL sang đơn vị Lít trước khi tính toán." },
-      { "level": 2, "text": "V = 250 / 1000 = 0,25 L. Áp dụng CM = n / V = 0,5 / 0,25." }
+      { "level": 1, "text": "Nhớ đổi thể tích 250 mL sang đơn vị Lít trước khi tính toán: V = 250 / 1000 = 0,25 L." },
+      { "level": 2, "text": "Áp dụng CM = n / V = 0,5 / 0,25 = 2 M." }
     ],
     "steps": [
       { "kind": "given", "title": "Đổi đơn vị thể tích", "body": "V = 250 mL = 0,25 L." },
@@ -99,60 +223,37 @@
     ]
   },
   {
-    "id": "g8-b04-match-004",
+    "id": "g8-b04-calc-004",
     "lessonId": "g8-b04",
-    "skillIds": ["mass-percentage-calc", "molar-concentration-calc"],
-    "difficulty": 1,
-    "prompt": "Hãy ghép mỗi đại lượng với đơn vị đo tương ứng trong hóa học dung dịch:",
+    "skillIds": ["molar-concentration-calc"],
+    "difficulty": 2,
+    "prompt": "Cần bao nhiêu mol đồng(II) sunfat ([[CuSO4]]) để pha chế được 500 mL dung dịch [[CuSO4]] có nồng độ 0,4 M?",
+    "given": [
+      { "label": "Thể tích dung dịch (V)", "value": "500", "unit": "mL" },
+      { "label": "Nồng độ mol (CM)", "value": "0.4", "unit": "M" }
+    ],
+    "find": { "label": "Số mol CuSO4 cần lấy (n)", "unit": "mol" },
+    "knowledge": ["formula.molar-concentration"],
     "answer": {
-      "kind": "match",
-      "pairs": [
-        { "left": "Nồng độ phần trăm (C%)", "right": "Đơn vị %" },
-        { "left": "Nồng độ mol (CM)", "right": "mol/L hoặc M" },
-        { "left": "Khối lượng chất tan (m_ct)", "right": "gam (g)" },
-        { "left": "Thể tích dung dịch (V)", "right": "lít (L) hoặc mililít (mL)" }
-      ]
+      "kind": "number",
+      "value": 0.2,
+      "unit": "mol",
+      "decimals": 2,
+      "tolerance": { "abs": 0.02 }
     },
     "hints": [
-      { "level": 1, "text": "C% có đơn vị phần trăm, CM có đơn vị mol trên lít." },
-      { "level": 2, "text": "C% ↔ %, CM ↔ mol/L, m ↔ gam, V ↔ lít." }
+      { "level": 1, "text": "Đổi 500 mL = 0,5 L." },
+      { "level": 2, "text": "Từ công thức CM = n / V => n = CM × V = 0,4 × 0,5 = 0,2 mol." }
     ],
     "steps": [
-      { "kind": "identify", "title": "Đọc đại lượng", "body": "Đối chiếu đại lượng với đơn vị đo chuẩn quốc tế." },
-      { "kind": "knowledge", "title": "Đơn vị chuẩn", "body": "C%: %, CM: mol/L, m: g, V: L." },
-      { "kind": "answer", "title": "Kết luận", "body": "Đã ghép đúng 4 cặp đại lượng và đơn vị tương ứng." }
+      { "kind": "given", "title": "Đổi đơn vị", "body": "V = 500 mL = 0,5 L." },
+      { "kind": "knowledge", "title": "Biến đổi công thức CM", "body": "n = C_M × V." },
+      { "kind": "compute", "title": "Tính toán", "body": "n = 0,4 × 0,5 = 0,2 (mol)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Cần lấy đúng **0,2 mol** CuSO4." }
     ],
-    "finalSolution": "C% ↔ %; CM ↔ mol/L (M); m_ct ↔ g; V ↔ L.",
+    "finalSolution": "V = 0,5 L => n = 0,4 × 0,5 = **0,2 mol**.",
     "commonMistakes": [
-      { "id": "swapped-c-percent-and-cm", "message": "Nhầm lẫn giữa nồng độ phần trăm và nồng độ mol." }
-    ]
-  },
-  {
-    "id": "g8-b04-tf-005",
-    "lessonId": "g8-b04",
-    "skillIds": ["mass-percentage-calc"],
-    "difficulty": 1,
-    "prompt": "Chọn ĐÚNG hoặc SAI cho mỗi phát biểu về dung dịch sau:",
-    "answer": {
-      "kind": "true-false",
-      "statements": [
-        { "id": "s1", "text": "Nước chỉ có thể hòa tan chất rắn, không thể hòa tan được chất khí.", "correct": false },
-        { "id": "s2", "text": "Dung dịch là hỗn hợp đồng nhất giữa chất tan và dung môi.", "correct": true },
-        { "id": "s3", "text": "Dung dịch đã bão hòa là dung dịch vẫn có thể hòa tan thêm chất tan ở nhiệt độ đó.", "correct": false }
-      ]
-    },
-    "hints": [
-      { "level": 1, "text": "Nước có thể hòa tan được khí oxi, khí cacbonic. Dung dịch bão hòa không thể hòa tan thêm chất tan." },
-      { "level": 2, "text": "Dung dịch chưa bão hòa mới có thể hòa tan thêm chất tan." }
-    ],
-    "steps": [
-      { "kind": "identify", "title": "Xét từng nhận định", "body": "Kiểm tra định nghĩa dung dịch, khả năng hòa tan chất khí và dung dịch bão hòa." },
-      { "kind": "knowledge", "title": "Kiến thức đối chiếu", "body": "1. Nước hòa tan được chất khí (O2, CO2): câu 1 SAI. 2. Đúng định nghĩa dung dịch: ĐÚNG. 3. Dung dịch đã bão hòa không thể hòa tan thêm: câu 3 SAI." },
-      { "kind": "answer", "title": "Kết luận", "body": "s1: Sai, s2: Đúng, s3: Sai." }
-    ],
-    "finalSolution": "s1: **Sai** (hòa tan được chất khí), s2: **Đúng**, s3: **Sai** (bão hòa thì không tan thêm).",
-    "commonMistakes": [
-      { "id": "forgot-gas-dissolves", "message": "Nước hòa tan được khí oxi giúp sinh vật dưới nước thở được." }
+      { "id": "multiplied-by-500", "message": "Nhân trực tiếp với 500 mL ra 200 mol thay vì đổi sang 0,5 L." }
     ]
   }
 ]

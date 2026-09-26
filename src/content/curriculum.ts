@@ -191,8 +191,8 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g8-b04-theory', nodeIndex: 1, title: 'Lý thuyết: Dung dịch, C% và CM', description: '2 phút ghi nhớ', type: 'theory' },
-              { id: 'g8-b04-n01', nodeIndex: 2, title: 'Nồng độ phần trăm (C%)', description: '6 câu hỏi', type: 'lesson' },
-              { id: 'g8-b04-n02', nodeIndex: 3, title: 'Nồng độ mol (CM)', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g8-b04-n01', nodeIndex: 2, title: 'Nồng độ phần trăm (C%)', description: '4 câu hỏi', type: 'lesson' },
+              { id: 'g8-b04-n02', nodeIndex: 3, title: 'Nồng độ mol (CM)', description: '4 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -203,8 +203,8 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g8-b05-theory', nodeIndex: 1, title: 'Lý thuyết: ĐL Bảo toàn khối lượng & Cân bằng PTHH', description: '2 phút ghi nhớ', type: 'theory' },
-              { id: 'g8-b05-n01', nodeIndex: 2, title: 'Định luật bảo toàn khối lượng', description: '6 câu hỏi', type: 'lesson' },
-              { id: 'g8-b05-n02', nodeIndex: 3, title: 'Cân bằng PTHH', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g8-b05-n01', nodeIndex: 2, title: 'Định luật bảo toàn khối lượng', description: '5 câu hỏi', type: 'lesson' },
+              { id: 'g8-b05-n02', nodeIndex: 3, title: 'Cân bằng PTHH', description: '5 câu hỏi', type: 'lesson' },
             ],
           },
           {
