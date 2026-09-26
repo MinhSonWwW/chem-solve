@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import {
   BookOpen,
@@ -10,10 +10,13 @@ import {
   Volume2,
   VolumeX,
   Code2,
+  ChevronDown,
 } from 'lucide-react';
 import { sound } from '@/lib/audio';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import { assetUrl } from '@/lib/utils';
+import { SubjectSelectorModal } from '@/design-system';
+import { useActiveSubject, SUBJECTS } from '@/content/subjects';
 
 interface NavItem {
   to: string;
@@ -34,12 +37,15 @@ const NAV_ITEMS: NavItem[] = [
 export const DesktopSidebar: React.FC = () => {
   const location = useLocation();
   const { soundEnabled, toggleSound } = useUserStore();
+  const [showSubjectModal, setShowSubjectModal] = useState(false);
+  const { subject: activeSubject, setSubject: setActiveSubjectState } = useActiveSubject();
+  const currentSub = SUBJECTS.find((s) => s.id === activeSubject) || SUBJECTS[0];
   const activeGrade = typeof window !== 'undefined' ? localStorage.getItem('chem_active_grade') || '8' : '8';
 
   return (
     <aside className="hidden lg:flex flex-col justify-between w-64 h-[100dvh] sticky top-0 border-r-2 border-[#2e4756] bg-[#131f24]/95 px-4 py-6 select-none z-20">
       {/* 1. Header / Logo */}
-      <div className="space-y-6">
+      <div className="space-y-4">
         <NavLink
           to={`/learn/${activeGrade}`}
           onClick={() => sound.playClick()}
@@ -60,13 +66,44 @@ export const DesktopSidebar: React.FC = () => {
               CHEM<span className="text-[#0ea5e9]">-SOLVE</span>
             </span>
             <span className="text-[10px] font-bold text-slate-400 tracking-wider uppercase">
-              Hóa học THCS 6–9
+              Khoa học Tự nhiên THCS
             </span>
           </div>
         </NavLink>
 
+        {/* Subject Switcher Button */}
+        <button
+          onClick={() => {
+            sound.playClick();
+            setShowSubjectModal(true);
+          }}
+          className="w-full flex items-center justify-between p-2.5 rounded-2xl bg-[#18272f] border-2 border-[#2e4756] hover:border-sky-500/60 transition-all text-left shadow-[0_3px_0_0_#101a1f] cursor-pointer group"
+          title="Chọn môn học (Hóa học, Vật lý...)"
+        >
+          <div className="flex items-center gap-2.5 min-w-0">
+            <span className="text-xl shrink-0">{currentSub.icon}</span>
+            <div className="min-w-0">
+              <div className="flex items-center gap-1.5">
+                <span className="text-xs font-black text-white truncate">{currentSub.name}</span>
+                <span
+                  className="text-[9px] font-black uppercase px-1 py-0.2 rounded border"
+                  style={{
+                    backgroundColor: `${currentSub.accentColor}20`,
+                    color: currentSub.accentColor,
+                    borderColor: `${currentSub.accentColor}40`,
+                  }}
+                >
+                  {currentSub.badge}
+                </span>
+              </div>
+              <div className="text-[10px] text-slate-400 truncate">Nhấn để đổi môn</div>
+            </div>
+          </div>
+          <ChevronDown className="w-4 h-4 text-slate-400 group-hover:text-white transition-colors shrink-0" />
+        </button>
+
         {/* 2. Navigation List */}
-        <nav className="space-y-2">
+        <nav className="space-y-1.5">
           {NAV_ITEMS.map((item) => {
             const Icon = item.icon;
             const isActive = item.matchPrefix
@@ -132,6 +169,15 @@ export const DesktopSidebar: React.FC = () => {
           <span>Design System</span>
         </NavLink>
       </div>
+
+      {/* Subject Switcher Modal */}
+      <SubjectSelectorModal
+        isOpen={showSubjectModal}
+        currentSubject={activeSubject}
+        onSelectSubject={(id) => setActiveSubjectState(id)}
+        onClose={() => setShowSubjectModal(false)}
+      />
     </aside>
   );
 };
+

@@ -26,3 +26,4 @@ export * from './motion/presets';
 export * from './motion/useReducedMotion';
 export * from './components/ReactionVisualizer';
 export * from './components/CurrencyIcon';
+export * from './components/SubjectSelectorModal';

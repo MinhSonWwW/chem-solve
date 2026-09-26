@@ -619,25 +619,67 @@ export const ExercisePage: React.FC = () => {
 
       {/* 5. Feedback Sheet */}
       {(() => {
-        const fullText = `${exercise.prompt} ${exercise.finalSolution} ${exercise.steps.map((s) => s.body).join(' ')}`;
         let reactionEffect: { type: 'gas' | 'precipitate' | 'indicator'; color: string; label: string } | undefined;
-        if (status === 'correct' || status === 'revealed') {
-          if (fullText.includes('↑') || fullText.toLowerCase().includes('thoát khí') || fullText.toLowerCase().includes('sinh ra khí')) {
-            reactionEffect = { type: 'gas', color: '#38bdf8', label: '↑ Hiện tượng: Khí sủi bọt bay lên' };
-          } else if (fullText.includes('↓') || fullText.toLowerCase().includes('kết tủa')) {
-            const isBlue = fullText.toLowerCase().includes('cu(oh)2') || fullText.toLowerCase().includes('xanh lam');
-            const isBrown = fullText.toLowerCase().includes('fe(oh)3') || fullText.toLowerCase().includes('nâu đỏ');
+        
+        // Exclude questions where ReactionVisualizer does NOT make sense:
+        // - Matching questions (like testing 4 different signs simultaneously)
+        // - Ordering steps questions
+        // - Numerical math calculations (moles, concentrations, masses)
+        // - Formula building
+        const isMultiOrStepAnswer = ['match', 'ordering', 'sort', 'formula-builder', 'number'].includes(exercise.answer.kind);
+        const finalSolLower = (exercise.finalSolution || '').toLowerCase();
+        const promptLower = (exercise.prompt || '').toLowerCase();
+        
+        // Exclude general meta-discussion of signs (e.g., questions asking to list/distinguish signs)
+        const isGeneralPhenomenaQuestion = promptLower.includes('dấu hiệu') && (promptLower.includes('nối') || promptLower.includes('ghép') || isMultiOrStepAnswer);
+
+        if ((status === 'correct' || status === 'revealed') && !isMultiOrStepAnswer && !isGeneralPhenomenaQuestion) {
+          // Specific indicator reaction
+          if (finalSolLower.includes('quỳ tím') || promptLower.includes('nhúng giấy quỳ') || promptLower.includes('nhỏ quỳ tím')) {
+            const isRed = finalSolLower.includes('đỏ') || promptLower.includes('acid') || promptLower.includes('axit');
+            const isBlue = finalSolLower.includes('xanh') || promptLower.includes('base') || promptLower.includes('bazơ');
+            if (isRed || isBlue) {
+              reactionEffect = {
+                type: 'indicator',
+                color: isRed ? '#ef4444' : '#3b82f6',
+                label: isRed ? 'Hiện tượng: Quỳ tím hóa đỏ (Tính axit)' : 'Hiện tượng: Quỳ tím hóa xanh (Tính kiềm)',
+              };
+            }
+          }
+          // Specific precipitate reaction (must be affirmative specific precipitate, not "không kết tủa" or general listing)
+          else if (
+            (finalSolLower.includes('↓') || finalSolLower.includes('kết tủa') || promptLower.includes('kết tủa')) &&
+            !finalSolLower.includes('không có kết tủa') &&
+            !finalSolLower.includes('không tạo kết tủa') &&
+            !promptLower.includes('không tạo kết tủa')
+          ) {
+            const isBlue = finalSolLower.includes('cu(oh)2') || finalSolLower.includes('xanh lam') || finalSolLower.includes('màu xanh');
+            const isBrown = finalSolLower.includes('fe(oh)3') || finalSolLower.includes('nâu đỏ');
+            const isWhite = finalSolLower.includes('baso4') || finalSolLower.includes('caco3') || finalSolLower.includes('agcl') || finalSolLower.includes('trắng') || promptLower.includes('kết tủa trắng');
+            
+            // Only show if a specific color or formula precipitate is identified
+            if (isBlue || isBrown || isWhite || finalSolLower.includes('↓')) {
+              reactionEffect = {
+                type: 'precipitate',
+                color: isBlue ? '#38bdf8' : isBrown ? '#b45309' : '#ffffff',
+                label: isBlue
+                  ? '↓ Hiện tượng: Kết tủa xanh lam Cu(OH)2'
+                  : isBrown
+                  ? '↓ Hiện tượng: Kết tủa nâu đỏ Fe(OH)3'
+                  : '↓ Hiện tượng: Kết tủa trắng',
+              };
+            }
+          }
+          // Specific gas evolution reaction
+          else if (
+            (finalSolLower.includes('↑') || finalSolLower.includes('sủi bọt khí') || finalSolLower.includes('thoát khí')) &&
+            !finalSolLower.includes('không thoát khí') &&
+            !promptLower.includes('không sinh ra khí')
+          ) {
             reactionEffect = {
-              type: 'precipitate',
-              color: isBlue ? '#38bdf8' : isBrown ? '#b45309' : '#ffffff',
-              label: isBlue ? '↓ Hiện tượng: Kết tủa xanh lam Cu(OH)2' : isBrown ? '↓ Hiện tượng: Kết tủa nâu đỏ Fe(OH)3' : '↓ Hiện tượng: Kết tủa trắng',
-            };
-          } else if (fullText.toLowerCase().includes('quỳ tím') || fullText.toLowerCase().includes('chỉ thị')) {
-            const isRed = fullText.toLowerCase().includes('đỏ') || fullText.toLowerCase().includes('acid') || fullText.toLowerCase().includes('axit');
-            reactionEffect = {
-              type: 'indicator',
-              color: isRed ? '#ef4444' : '#3b82f6',
-              label: isRed ? 'Hiện tượng: Quỳ tím chuyển sang màu đỏ' : 'Hiện tượng: Quỳ tím chuyển sang màu xanh',
+              type: 'gas',
+              color: '#38bdf8',
+              label: '↑ Hiện tượng: Sủi bọt khí bay lên',
             };
           }
         }
