@@ -22,6 +22,33 @@
     "finalSolution": "CH3COOH"
   },
   {
+    "id": "g9-b27-tf-001",
+    "lessonId": "g9-b27",
+    "skillIds": ["acid-reactions"],
+    "difficulty": 1,
+    "prompt": "Đánh giá tính Đúng hay Sai của các khẳng định sau về tính chất hóa học của axit axetic ([[CH3COOH]]):",
+    "knowledge": ["formulas.acetic-acid"],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Dung dịch axit axetic làm quỳ tím chuyển sang màu đỏ.", "correct": true },
+        { "id": "s2", "text": "Axit axetic tác dụng được với kim loại kẽm ([[Zn]]) giải phóng khí hiđro [[H2]].", "correct": true },
+        { "id": "s3", "text": "Axit axetic tác dụng với dung dịch kiềm ([[NaOH]]) tạo thành muối và nước.", "correct": true },
+        { "id": "s4", "text": "Axit axetic là một axit vô cơ rất mạnh tương đương với axit sunfuric [[H2SO4]].", "correct": false }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Axit axetic có đầy đủ tính chất chung của một axit." },
+      { "level": 2, "text": "Axit axetic là axit hữu cơ yếu, không phải axit vô cơ mạnh." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Tính chất của axit", "body": "Axit axetic làm đổi màu quỳ tím đỏ, tác dụng kim loại Zn trước H, tác dụng bazơ NaOH (s1, s2, s3 Đúng)." },
+      { "kind": "knowledge", "title": "Độ mạnh của axit", "body": "CH3COOH là axit hữu cơ yếu, trong dung dịch chỉ điện li một phần (s4 Sai)." },
+      { "kind": "answer", "title": "Kết luận", "body": "s1: Đúng, s2: Đúng, s3: Đúng, s4: Sai." }
+    ],
+    "finalSolution": "s1: Đúng, s2: Đúng, s3: Đúng, s4: Sai (CH3COOH là axit hữu cơ yếu)."
+  },
+  {
     "id": "g9-b27-mcq-001",
     "lessonId": "g9-b27",
     "skillIds": ["acid-reactions"],
@@ -78,5 +105,33 @@
       { "kind": "answer", "title": "Xác định tên phản ứng", "body": "Phản ứng tạo thành este giữa axit hữu cơ và rượu gọi là phản ứng este hóa." }
     ],
     "finalSolution": "Phản ứng este hóa (tạo ethyl acetate có mùi thơm hoa quả)"
+  },
+  {
+    "id": "g9-b27-match-001",
+    "lessonId": "g9-b27",
+    "skillIds": ["acid-reactions", "esterification"],
+    "difficulty": 2,
+    "prompt": "Ghép đôi mỗi chất hoặc thuốc thử khi cho tác dụng với axit axetic ([[CH3COOH]]) với hiện tượng hoặc sản phẩm tương ứng:",
+    "knowledge": ["formulas.acetic-acid", "reactions.acetic-acid-carbonate", "reactions.esterification"],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Giấy quỳ tím", "right": "Đổi màu sang đỏ nhạt" },
+        { "left": "Kim loại kẽm (Zn)", "right": "Sủi bọt khí H2 không màu" },
+        { "left": "Đá vôi (CaCO3)", "right": "Sủi bọt khí CO2 không màu" },
+        { "left": "Rượu etylic (xúc tác H2SO4 đ)", "right": "Tạo este mùi thơm hoa quả chín" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "CH3COOH tác dụng Zn sinh H2, tác dụng CaCO3 sinh CO2, làm đỏ quỳ tím." },
+      { "level": 2, "text": "CH3COOH tác dụng C2H5OH tạo ethyl acetate mùi hoa quả." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định phản ứng tương ứng", "body": "Đối chiếu từng chất với tính chất hóa học của nhóm -COOH." },
+      { "kind": "knowledge", "title": "Hiện tượng tương ứng", "body": "1. Quỳ tím -> Đỏ. 2. Zn -> Khí H2. 3. CaCO3 -> Khí CO2. 4. C2H5OH -> Este mùi thơm." },
+      { "kind": "answer", "title": "Kết luận ghép nối", "body": "Ghép chính xác 4 cặp chất và hiện tượng." }
+    ],
+    "finalSolution": "Quỳ tím ↔ Đỏ nhạt · Zn ↔ Khí H2 · CaCO3 ↔ Khí CO2 · C2H5OH ↔ Este mùi thơm.",
+    "commonMistakes": []
   }
 ]

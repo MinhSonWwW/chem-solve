@@ -22,6 +22,33 @@
     "finalSolution": "C2H5OH"
   },
   {
+    "id": "g9-b26-tf-001",
+    "lessonId": "g9-b26",
+    "skillIds": ["alcohol-properties"],
+    "difficulty": 1,
+    "prompt": "Đánh giá tính Đúng hay Sai của các khẳng định sau về rượu etylic:",
+    "knowledge": ["alcohol.properties"],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "s1", "text": "Rượu etylic là chất lỏng không màu, nhẹ hơn nước và tan vô hạn trong nước.", "correct": true },
+        { "id": "s2", "text": "Độ rượu là số mililít rượu etylic nguyên chất có trong 100 ml hỗn hợp rượu với nước.", "correct": true },
+        { "id": "s3", "text": "Rượu etylic làm quỳ tím chuyển sang màu đỏ giống như axit.", "correct": false },
+        { "id": "s4", "text": "Khi đốt cháy hoàn toàn rượu etylic thu được khí CO2 và hơi nước.", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Rượu etylic có tính trung tính, không làm đổi màu quỳ tím." },
+      { "level": 2, "text": "Đốt cháy hợp chất hữu cơ CxHyOz luôn tạo CO2 và H2O." }
+    ],
+    "steps": [
+      { "kind": "knowledge", "title": "Tính chất vật lý", "body": "C2H5OH là chất lỏng không màu, tan vô hạn trong nước (s1, s2 đúng)." },
+      { "kind": "identify", "title": "Tính chất chỉ thị", "body": "C2H5OH là chất trung tính, không làm đổi màu quỳ tím (s3 sai)." },
+      { "kind": "equation", "title": "Phản ứng cháy", "body": "C2H5OH + 3O2 -> 2CO2 + 3H2O (s4 đúng)." }
+    ],
+    "finalSolution": "s1: Đúng, s2: Đúng, s3: Sai, s4: Đúng"
+  },
+  {
     "id": "g9-b26-mcq-001",
     "lessonId": "g9-b26",
     "skillIds": ["alcohol-reactions"],
@@ -52,30 +79,65 @@
     "finalSolution": "Nhóm hiđroxyl (-OH)"
   },
   {
-    "id": "g9-b26-tf-001",
+    "id": "g9-b26-calc-001",
     "lessonId": "g9-b26",
     "skillIds": ["alcohol-properties"],
-    "difficulty": 1,
-    "prompt": "Đánh giá tính Đúng hay Sai của các khẳng định sau về rượu etylic:",
-    "knowledge": ["alcohol.properties"],
+    "difficulty": 2,
+    "prompt": "Trong 500 mL rượu vang có độ rượu là 12°. Tính thể tích rượu etylic nguyên chất có trong chai rượu vang đó.",
+    "given": [
+      { "label": "Thể tích hỗn hợp (V_hh)", "value": "500", "unit": "mL" },
+      { "label": "Độ rượu", "value": "12", "unit": "°" }
+    ],
+    "find": { "label": "Thể tích rượu nguyên chất", "unit": "mL" },
+    "knowledge": ["formulas.ethanol", "alcohol.properties"],
     "answer": {
-      "kind": "true-false",
-      "statements": [
-        { "id": "s1", "text": "Rượu etylic là chất lỏng không màu, nhẹ hơn nước và tan vô hạn trong nước.", "correct": true },
-        { "id": "s2", "text": "Độ rượu là số mililít rượu etylic nguyên chất có trong 100 ml hỗn hợp rượu với nước.", "correct": true },
-        { "id": "s3", "text": "Rượu etylic làm quỳ tím chuyển sang màu đỏ giống như axit.", "correct": false },
-        { "id": "s4", "text": "Khi đốt cháy hoàn toàn rượu etylic thu được khí CO2 và hơi nước.", "correct": true }
-      ]
+      "kind": "number",
+      "value": 60,
+      "unit": "mL",
+      "decimals": 1,
+      "tolerance": { "abs": 0.5 }
     },
     "hints": [
-      { "level": 1, "text": "Rượu etylic có tính trung tính, không làm đổi màu quỳ tím." },
-      { "level": 2, "text": "Đốt cháy hợp chất hữu cơ CxHyOz luôn tạo CO2 và H2O." }
+      { "level": 1, "text": "Độ rượu là số mL rượu etylic nguyên chất có trong 100 mL hỗn hợp rượu với nước." },
+      { "level": 2, "text": "Áp dụng công thức: V_rượu = (V_hỗn hợp × Độ rượu) / 100 = (500 × 12) / 100." }
     ],
     "steps": [
-      { "kind": "knowledge", "title": "Tính chất vật lý", "body": "C2H5OH là chất lỏng không màu, tan vô hạn trong nước (s1, s2 đúng)." },
-      { "kind": "identify", "title": "Tính chất chỉ thị", "body": "C2H5OH là chất trung tính, không làm đổi màu quỳ tím (s3 sai)." },
-      { "kind": "equation", "title": "Phản ứng cháy", "body": "C2H5OH + 3O2 -> 2CO2 + 3H2O (s4 đúng)." }
+      { "kind": "identify", "title": "Khái niệm độ rượu", "body": "Độ rượu = (V_rượu nguyên chất / V_hỗn hợp) × 100." },
+      { "kind": "knowledge", "title": "Công thức rút ra", "body": "V_rượu = (V_hỗn hợp × Độ rượu) / 100." },
+      { "kind": "compute", "title": "Tính toán", "body": "V_rượu = (500 × 12) / 100 = 60 (mL)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Chai rượu vang chứa **60 mL** rượu etylic nguyên chất." }
     ],
-    "finalSolution": "s1: Đúng, s2: Đúng, s3: Sai, s4: Đúng"
+    "finalSolution": "V_rượu = (500 × 12) / 100 = **60 mL**.",
+    "commonMistakes": [
+      { "id": "confused-ratio", "message": "Chia nhầm 500 cho 12 thay vì nhân độ rượu chia 100." }
+    ]
+  },
+  {
+    "id": "g9-b26-eq-001",
+    "lessonId": "g9-b26",
+    "skillIds": ["alcohol-reactions"],
+    "difficulty": 2,
+    "prompt": "Điền các hệ số thích hợp để hoàn thành phương trình phản ứng đốt cháy rượu etylic: [[C2H5OH]] + [[O2]] -> [[CO2]] + [[H2O]].",
+    "knowledge": ["formulas.ethanol", "alcohol.properties"],
+    "answer": {
+      "kind": "equation",
+      "mode": "fill-coefficients",
+      "reactants": ["C2H5OH", "O2"],
+      "products": ["CO2", "H2O"],
+      "coefficients": [1, 3, 2, 3]
+    },
+    "hints": [
+      { "level": 1, "text": "Cân bằng Carbon trước (2 CO2), rồi cân bằng Hydrogen (6 H -> 3 H2O)." },
+      { "level": 2, "text": "Vế phải có 2 × 2 + 3 = 7 nguyên tử O. Vế trái có 1 O trong C2H5OH nên cần 6 O từ O2 (tức 3 O2). Tỉ lệ: 1, 3, 2, 3." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Cân bằng C và H", "body": "2 C ở vế trái => đặt 2 trước CO2. 5 + 1 = 6 H ở vế trái => đặt 3 trước H2O." },
+      { "kind": "compute", "title": "Cân bằng nguyên tố O", "body": "Tổng số nguyên tử O vế phải: 2 × 2 + 3 × 1 = 7. Trừ đi 1 O có sẵn trong C2H5OH còn 6 O => đặt hệ số 3 trước O2." },
+      { "kind": "answer", "title": "Kết luận", "body": "Phương trình cân bằng: **C2H5OH + 3O2 -> 2CO2 + 3H2O**." }
+    ],
+    "finalSolution": "**C2H5OH + 3O2 -> 2CO2 + 3H2O**",
+    "commonMistakes": [
+      { "id": "forgot-oxygen-in-alcohol", "message": "Quên mất 1 nguyên tử O nằm sẵn trong phân tử rượu C2H5OH dẫn đến cân bằng sai hệ số của O2." }
+    ]
   }
 ]

@@ -5,6 +5,7 @@
     "skillIds": ["earth-crust-chemistry"],
     "difficulty": 1,
     "prompt": "Hai nguyên tố hóa học chiếm tỉ lệ phần trăm khối lượng lớn nhất trong vỏ Trái Đất là gì?",
+    "knowledge": [],
     "answer": {
       "kind": "mcq-single",
       "options": [
@@ -35,6 +36,7 @@
     "skillIds": ["earth-crust-chemistry"],
     "difficulty": 1,
     "prompt": "Kim loại nào có hàm lượng phần trăm khối lượng dồi dào nhất trong vỏ Trái Đất?",
+    "knowledge": [],
     "answer": {
       "kind": "mcq-single",
       "options": [
@@ -65,6 +67,7 @@
     "skillIds": ["earth-crust-chemistry"],
     "difficulty": 1,
     "prompt": "Xác định các phát biểu sau về khoáng sản và tài nguyên trong vỏ Trái Đất là Đúng hay Sai.",
+    "knowledge": [],
     "answer": {
       "kind": "true-false",
       "statements": [
@@ -84,6 +87,63 @@
       { "kind": "answer", "title": "Kết quả", "body": "S1: Đúng, S2: Đúng, S3: Sai, S4: Đúng." }
     ],
     "finalSolution": "Khoáng sản không tự tái tạo sau vài tháng (S3 Sai). S1, S2, S4 đều đúng.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b33-mcq-003",
+    "lessonId": "g9-b33",
+    "skillIds": ["earth-crust-chemistry"],
+    "difficulty": 1,
+    "prompt": "Biện pháp nào sau đây là giải pháp quan trọng nhất giúp khai thác và sử dụng tài nguyên khoáng sản một cách hợp lý, tiết kiệm và bền vững?",
+    "knowledge": [],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "Đẩy mạnh thu gom, tái chế kim loại phế liệu và nghiên cứu vật liệu nhân tạo thay thế" },
+        { "id": "b", "label": "Khai thác tối đa mọi mỏ quặng với tốc độ nhanh nhất có thể" },
+        { "id": "c", "label": "Chôn toàn bộ rác thải kim loại xuống đất để tạo mỏ quặng mới" },
+        { "id": "d", "label": "Cấm hoàn toàn việc sử dụng các kim loại như sắt, nhôm và đồng" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Tái chế kim loại giúp tiết kiệm năng lượng và giảm thiểu tác động tàn phá môi trường do khai khoáng." },
+      { "level": 2, "text": "Kim loại tái chế (nhôm, sắt thép, đồng) có thể sử dụng lại nhiều lần mà không làm mất tính chất." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Thực trạng tài nguyên", "body": "Khoáng sản là tài nguyên có hạn, không thể tái tạo nhanh chóng." },
+      { "kind": "knowledge", "title": "Giải pháp bảo vệ tài nguyên", "body": "Tái chế phế liệu kim loại vừa tiết kiệm tài nguyên quặng vừa giảm lượng rác thải và năng lượng sản xuất." },
+      { "kind": "answer", "title": "Kết luận", "body": "Giải pháp đúng đắn là **thu gom, tái chế kim loại và tìm vật liệu thay thế**." }
+    ],
+    "finalSolution": "Đẩy mạnh thu gom, tái chế kim loại và nghiên cứu vật liệu nhân tạo thay thế.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g9-b33-match-001",
+    "lessonId": "g9-b33",
+    "skillIds": ["earth-crust-chemistry"],
+    "difficulty": 2,
+    "prompt": "Ghép đôi mỗi loại quặng hoặc khoáng vật trong vỏ Trái Đất với ứng dụng công nghiệp tương ứng:",
+    "knowledge": [],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Quặng bauxite (chứa Al2O3)", "right": "Nguyên liệu chính luyện nhôm (Al)" },
+        { "left": "Quặng hematite (chứa Fe2O3)", "right": "Nguyên liệu luyện gang và thép (Fe)" },
+        { "left": "Cát thạch anh (chứa SiO2)", "right": "Sản xuất thủy tinh và đồ gốm sứ" },
+        { "left": "Quặng apatite", "right": "Sản xuất phân bón lân cho nông nghiệp" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Bauxite -> Nhôm; Hematite -> Sắt; Cát thạch anh -> Thủy tinh; Apatite -> Phân lân." },
+      { "level": 2, "text": "Apatite chứa photpho nên dùng sản xuất phân lân (P)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận biết các loại quặng", "body": "Xem xét thành phần hóa học của từng loại quặng phổ biến tại Việt Nam." },
+      { "kind": "knowledge", "title": "Ứng dụng thực tế", "body": "Bauxite: luyện Al. Hematite: luyện Fe. Cát SiO2: làm thủy tinh. Apatite: làm phân bón." },
+      { "kind": "answer", "title": "Kết luận", "body": "Ghép đúng 4 cặp quặng và ứng dụng tương ứng." }
+    ],
+    "finalSolution": "Bauxite ↔ Luyện nhôm · Hematite ↔ Luyện gang thép · Cát thạch anh ↔ Sản xuất thủy tinh · Apatite ↔ Sản xuất phân lân.",
     "commonMistakes": []
   }
 ]

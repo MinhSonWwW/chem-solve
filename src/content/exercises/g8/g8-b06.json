@@ -1,75 +1,11 @@
 [
   {
-    "id": "g8-b06-num-001",
-    "lessonId": "g8-b06",
-    "skillIds": ["stoichiometry-calc"],
-    "difficulty": 2,
-    "prompt": "Đốt cháy hoàn toàn 2,4 g kim loại Magie ([[Mg]]) trong khí oxi ([[O2]]) thu được Magie oxit ([[MgO]]) theo PTHH: 2[[Mg]] + [[O2]] -> 2[[MgO]]. Tính khối lượng [[MgO]] thu được. (Cho M(Mg) = 24 g/mol, M(O) = 16 g/mol).",
-    "given": [
-      { "label": "Khối lượng Mg (m_Mg)", "value": "2.4", "unit": "g" },
-      { "label": "M(Mg)", "value": "24", "unit": "g/mol" },
-      { "label": "M(MgO)", "value": "40", "unit": "g/mol" }
-    ],
-    "find": { "label": "Khối lượng MgO (m_MgO)", "unit": "g" },
-    "answer": {
-      "kind": "number",
-      "value": 4.0,
-      "unit": "g",
-      "decimals": 1,
-      "tolerance": { "abs": 0.1 }
-    },
-    "hints": [
-      { "level": 1, "text": "Bước 1: Tìm số mol Mg: n(Mg) = m / M = 2,4 / 24." },
-      { "level": 2, "text": "Bước 2: Theo PTHH, n(MgO) = n(Mg) = 0,1 mol. Bước 3: Tính m(MgO) = n × M = 0,1 × 40." }
-    ],
-    "steps": [
-      { "kind": "compute", "title": "Tính số mol Mg", "body": "n(Mg) = 2,4 / 24 = 0,1 mol." },
-      { "kind": "equation", "title": "Dựa vào PTHH tìm số mol MgO", "body": "Theo PTHH: 2 mol Mg tạo ra 2 mol MgO (tỉ lệ 1:1) => n(MgO) = n(Mg) = 0,1 mol." },
-      { "kind": "answer", "title": "Tính khối lượng MgO", "body": "M(MgO) = 24 + 16 = 40 g/mol => m(MgO) = 0,1 × 40 = 4,0 g." }
-    ],
-    "commonMistakes": [
-      { "id": "no-moles", "message": "Quên không đổi ra số mol mà nhân trực tiếp khối lượng." }
-    ],
-    "finalSolution": "4.0"
-  },
-  {
-    "id": "g8-b06-num-002",
-    "lessonId": "g8-b06",
-    "skillIds": ["gas-volume-calc", "stoichiometry-calc"],
-    "difficulty": 2,
-    "prompt": "Cho 6,5 g Kẽm ([[Zn]]) tác dụng hết với dung dịch axit [[HCl]] theo PTHH: [[Zn]] + 2[[HCl]] -> [[ZnCl2]] + [[H2]]. Tính thể tích khí [[H2]] thoát ra ở điều kiện chuẩn (25 °C, 1 bar). (Cho M(Zn) = 65 g/mol).",
-    "given": [
-      { "label": "Khối lượng Zn", "value": "6.5", "unit": "g" },
-      { "label": "M(Zn)", "value": "65", "unit": "g/mol" }
-    ],
-    "find": { "label": "Thể tích H2 ở ĐKC", "unit": "L" },
-    "answer": {
-      "kind": "number",
-      "value": 2.48,
-      "unit": "L",
-      "decimals": 2,
-      "tolerance": { "abs": 0.05 }
-    },
-    "hints": [
-      { "level": 1, "text": "Tính số mol Zn: n(Zn) = 6,5 / 65 = 0,1 mol." },
-      { "level": 2, "text": "Theo PTHH: n(H2) = n(Zn) = 0,1 mol. Ở ĐKC: V = n × 24,79 L." }
-    ],
-    "steps": [
-      { "kind": "compute", "title": "Tính số mol Zn", "body": "n(Zn) = 6,5 / 65 = 0,1 mol." },
-      { "kind": "equation", "title": "Tìm số mol khí H2", "body": "Theo tỉ lệ phương trình: n(H2) = n(Zn) = 0,1 mol." },
-      { "kind": "answer", "title": "Tính thể tích khí ở ĐKC", "body": "V(H2) = 0,1 × 24,79 = 2,479 L (làm tròn 2,48 L)." }
-    ],
-    "commonMistakes": [
-      { "id": "used-22.4", "message": "Nhầm chuẩn cũ 22,4 L thay vì chuẩn SGK mới 24,79 L/mol." }
-    ],
-    "finalSolution": "2.48"
-  },
-  {
     "id": "g8-b06-ordering-001",
     "lessonId": "g8-b06",
     "skillIds": ["stoichiometry-steps"],
     "difficulty": 1,
     "prompt": "Sắp xếp theo thứ tự đúng các bước giải bài toán tính theo phương trình hóa học:",
+    "knowledge": [],
     "answer": {
       "kind": "ordering",
       "correctOrder": [
@@ -89,5 +25,138 @@
       { "kind": "answer", "title": "Hoàn tất tính toán", "body": "Đặt mol lên PTHH và tính toán ra đáp án yêu cầu." }
     ],
     "finalSolution": "Bước 1 -> Bước 2 -> Bước 3 -> Bước 4"
+  },
+  {
+    "id": "g8-b06-mcq-001",
+    "lessonId": "g8-b06",
+    "skillIds": ["stoichiometry-calc"],
+    "difficulty": 1,
+    "prompt": "Cho phương trình hóa học: [[N2]] + 3[[H2]] -> 2[[NH3]]. Tỉ lệ số mol giữa các chất [[N2]], [[H2]] và [[NH3]] lần lượt là:",
+    "knowledge": [],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "a", "label": "1 : 3 : 2" },
+        { "id": "b", "label": "1 : 1 : 2" },
+        { "id": "c", "label": "2 : 3 : 1" },
+        { "id": "d", "label": "1 : 2 : 3" }
+      ],
+      "correctId": "a"
+    },
+    "hints": [
+      { "level": 1, "text": "Tỉ lệ số mol giữa các chất trong phản ứng chính là tỉ lệ các hệ số nguyên đứng trước công thức hóa học của chúng." },
+      { "level": 2, "text": "Hệ số của N2 là 1, H2 là 3, NH3 là 2 => tỉ lệ 1 : 3 : 2." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đọc hệ số phương trình", "body": "Hệ số tương ứng của N2, H2, NH3 lần lượt là 1, 3, 2." },
+      { "kind": "knowledge", "title": "Ý nghĩa hệ số PTHH", "body": "Tỉ lệ hệ số trong PTHH bằng đúng tỉ lệ số phân tử hoặc số mol giữa các chất." },
+      { "kind": "answer", "title": "Kết luận tỉ lệ", "body": "Tỉ lệ số mol là **1 : 3 : 2**." }
+    ],
+    "finalSolution": "Tỉ lệ số mol giữa các chất là **1 : 3 : 2**.",
+    "commonMistakes": [
+      { "id": "missed-implicit-1", "message": "Quên rằng chất không ghi hệ số như N2 có hệ số ngầm định là 1." }
+    ]
+  },
+  {
+    "id": "g8-b06-num-001",
+    "lessonId": "g8-b06",
+    "skillIds": ["stoichiometry-calc"],
+    "difficulty": 2,
+    "prompt": "Đốt cháy hoàn toàn 2,4 g kim loại Magie ([[Mg]]) trong khí oxi ([[O2]]) thu được Magie oxit ([[MgO]]) theo PTHH: 2[[Mg]] + [[O2]] -> 2[[MgO]]. Tính khối lượng [[MgO]] thu được. (Cho M(Mg) = 24 g/mol, M(O) = 16 g/mol).",
+    "given": [
+      { "label": "Khối lượng Mg (m_Mg)", "value": "2.4", "unit": "g" },
+      { "label": "M(Mg)", "value": "24", "unit": "g/mol" },
+      { "label": "M(MgO)", "value": "40", "unit": "g/mol" }
+    ],
+    "find": { "label": "Khối lượng MgO (m_MgO)", "unit": "g" },
+    "knowledge": [],
+    "answer": {
+      "kind": "number",
+      "value": 4.0,
+      "unit": "g",
+      "decimals": 1,
+      "tolerance": { "abs": 0.1 }
+    },
+    "hints": [
+      { "level": 1, "text": "Bước 1: Tìm số mol Mg: n(Mg) = m / M = 2,4 / 24." },
+      { "level": 2, "text": "Bước 2: Theo PTHH, n(MgO) = n(Mg) = 0,1 mol. Bước 3: Tính m(MgO) = n × M = 0,1 × 40." }
+    ],
+    "steps": [
+      { "kind": "compute", "title": "Tính số mol Mg", "body": "n(Mg) = 2,4 / 24 = 0,1 mol." },
+      { "kind": "equation", "title": "Dựa vào PTHH tìm số mol MgO", "body": "Theo PTHH: 2 mol Mg tạo ra 2 mol MgO (tỉ lệ 1:1) => n(MgO) = n(Mg) = 0,1 mol." },
+      { "kind": "answer", "title": "Tính khối lượng MgO", "body": "M(MgO) = 24 + 16 = 40 g/mol => m(MgO) = 0,1 × 40 = 4,0 g." }
+    ],
+    "commonMistakes": [
+      { "id": "no-moles", "message": "Quên không đổi ra số mol mà nhân trực tiếp khối lượng." }
+    ],
+    "finalSolution": "m(MgO) = 0,1 × 40 = **4,0 g**."
+  },
+  {
+    "id": "g8-b06-num-002",
+    "lessonId": "g8-b06",
+    "skillIds": ["gas-volume-calc", "stoichiometry-calc"],
+    "difficulty": 2,
+    "prompt": "Cho 6,5 g Kẽm ([[Zn]]) tác dụng hết với dung dịch axit [[HCl]] theo PTHH: [[Zn]] + 2[[HCl]] -> [[ZnCl2]] + [[H2]]. Tính thể tích khí [[H2]] thoát ra ở điều kiện chuẩn (25 °C, 1 bar). (Cho M(Zn) = 65 g/mol).",
+    "given": [
+      { "label": "Khối lượng Zn", "value": "6.5", "unit": "g" },
+      { "label": "M(Zn)", "value": "65", "unit": "g/mol" }
+    ],
+    "find": { "label": "Thể tích H2 ở ĐKC", "unit": "L" },
+    "knowledge": ["formula.gas-volume"],
+    "answer": {
+      "kind": "number",
+      "value": 2.48,
+      "unit": "L",
+      "decimals": 2,
+      "tolerance": { "abs": 0.05 }
+    },
+    "hints": [
+      { "level": 1, "text": "Tính số mol Zn: n(Zn) = 6,5 / 65 = 0,1 mol." },
+      { "level": 2, "text": "Theo PTHH: n(H2) = n(Zn) = 0,1 mol. Ở ĐKC: V = n × 24,79 L." }
+    ],
+    "steps": [
+      { "kind": "compute", "title": "Tính số mol Zn", "body": "n(Zn) = 6,5 / 65 = 0,1 mol." },
+      { "kind": "equation", "title": "Tìm số mol khí H2", "body": "Theo tỉ lệ phương trình: n(H2) = n(Zn) = 0,1 mol." },
+      { "kind": "answer", "title": "Tính thể tích khí ở ĐKC", "body": "V(H2) = 0,1 × 24,79 = 2,479 L (làm tròn 2,48 L)." }
+    ],
+    "commonMistakes": [
+      { "id": "used-22.4", "message": "Nhầm chuẩn cũ 22,4 L thay vì chuẩn SGK mới 24,79 L/mol." }
+    ],
+    "finalSolution": "V(H2) = 0,1 × 24,79 = **2,48 L**."
+  },
+  {
+    "id": "g8-b06-calc-001",
+    "lessonId": "g8-b06",
+    "skillIds": ["stoichiometry-calc"],
+    "difficulty": 2,
+    "prompt": "Hòa tan hoàn toàn 2,4 g kim loại Magie ([[Mg]]) vào dung dịch [[HCl]] dư theo PTHH: [[Mg]] + 2[[HCl]] -> [[MgCl2]] + [[H2]]. Tính khối lượng muối [[MgCl2]] tạo thành. (Cho M(Mg) = 24 g/mol, M(Cl) = 35,5 g/mol).",
+    "given": [
+      { "label": "Khối lượng Mg", "value": "2.4", "unit": "g" },
+      { "label": "M(Mg)", "value": "24", "unit": "g/mol" },
+      { "label": "M(MgCl2)", "value": "95", "unit": "g/mol" }
+    ],
+    "find": { "label": "Khối lượng MgCl2", "unit": "g" },
+    "knowledge": [],
+    "answer": {
+      "kind": "number",
+      "value": 9.5,
+      "unit": "g",
+      "decimals": 1,
+      "tolerance": { "abs": 0.1 }
+    },
+    "hints": [
+      { "level": 1, "text": "Tính số mol Mg: n(Mg) = 2,4 / 24 = 0,1 mol." },
+      { "level": 2, "text": "Theo PTHH, n(MgCl2) = n(Mg) = 0,1 mol. Khối lượng m = n × M = 0,1 × 95." }
+    ],
+    "steps": [
+      { "kind": "compute", "title": "Bước 1: Tính số mol Mg", "body": "n(Mg) = 2,4 / 24 = 0,1 (mol)." },
+      { "kind": "equation", "title": "Bước 2: Tìm mol MgCl2 theo PTHH", "body": "Theo phương trình: n(MgCl2) = n(Mg) = 0,1 (mol)." },
+      { "kind": "compute", "title": "Bước 3: Tính khối lượng MgCl2", "body": "M(MgCl2) = 24 + 35,5 × 2 = 95 g/mol => m(MgCl2) = 0,1 × 95 = 9,5 (g)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Khối lượng muối MgCl2 thu được là **9,5 g**." }
+    ],
+    "finalSolution": "m(MgCl2) = 0,1 × 95 = **9,5 g**.",
+    "commonMistakes": [
+      { "id": "wrong-molar-mass", "message": "Tính sai phân tử khối của MgCl2 (quên nhân đôi Cl: 24 + 35,5 = 59,5 g/mol thay vì 95 g/mol)." }
+    ]
   }
 ]

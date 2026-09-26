@@ -50,9 +50,9 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g6-b09-theory', nodeIndex: 1, title: 'Lý thuyết: Sự đa dạng của chất', description: '2 phút ghi nhớ', type: 'theory' },
-              { id: 'g6-b09-n01', nodeIndex: 2, title: 'Vật thể và chất', description: '6 câu hỏi', type: 'lesson' },
-              { id: 'g6-b09-n02', nodeIndex: 3, title: 'Tính chất vật lí & hóa học', description: '6 câu hỏi', type: 'lesson' },
-              { id: 'g6-b09-n03', nodeIndex: 4, title: 'Thực hành đun đường & muối', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g6-b09-n01', nodeIndex: 2, title: 'Vật thể và chất', description: '4 câu hỏi', type: 'lesson' },
+              { id: 'g6-b09-n02', nodeIndex: 3, title: 'Tính chất vật lí & hóa học', description: '4 câu hỏi', type: 'lesson' },
+              { id: 'g6-b09-n03', nodeIndex: 4, title: 'Thực hành đun đường & muối', description: '4 câu hỏi', type: 'lesson' },
               { id: 'g6-b09-boss', nodeIndex: 5, title: 'Thử thách Sự đa dạng của chất', description: 'Thử thách lớn', type: 'checkpoint' },
             ],
           },
@@ -64,9 +64,9 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g6-b10-theory', nodeIndex: 1, title: 'Lý thuyết: Các thể của chất & Sự chuyển thể', description: '2 phút ghi nhớ', type: 'theory' },
-              { id: 'g6-b10-n01', nodeIndex: 2, title: 'Ba thể của chất & Mô hình hạt', description: '6 câu hỏi', type: 'lesson' },
-              { id: 'g6-b10-n02', nodeIndex: 3, title: 'Sự chuyển thể của chất', description: '6 câu hỏi', type: 'lesson' },
-              { id: 'g6-b10-n03', nodeIndex: 4, title: 'Sự sôi & Các yếu tố bay hơi', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g6-b10-n01', nodeIndex: 2, title: 'Ba thể của chất & Mô hình hạt', description: '3 câu hỏi', type: 'lesson' },
+              { id: 'g6-b10-n02', nodeIndex: 3, title: 'Sự chuyển thể của chất', description: '3 câu hỏi', type: 'lesson' },
+              { id: 'g6-b10-n03', nodeIndex: 4, title: 'Sự sôi & Các yếu tố bay hơi', description: '3 câu hỏi', type: 'lesson' },
               { id: 'g6-b10-boss', nodeIndex: 5, title: 'Thử thách Bậc thầy chuyển thể', description: 'Thử thách lớn', type: 'checkpoint' },
             ],
           },
@@ -78,9 +78,9 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g6-b11-theory', nodeIndex: 1, title: 'Lý thuyết: Oxygen & Không khí', description: '2 phút ghi nhớ', type: 'theory' },
-              { id: 'g6-b11-n01', nodeIndex: 2, title: 'Tính chất & vai trò của Oxygen', description: '6 câu hỏi', type: 'lesson' },
-              { id: 'g6-b11-n02', nodeIndex: 3, title: 'Thành phần không khí & Thí nghiệm', description: '6 câu hỏi', type: 'lesson' },
-              { id: 'g6-b11-n03', nodeIndex: 4, title: 'Ô nhiễm không khí & Hành động xanh', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g6-b11-n01', nodeIndex: 2, title: 'Tính chất & vai trò của Oxygen', description: '3 câu hỏi', type: 'lesson' },
+              { id: 'g6-b11-n02', nodeIndex: 3, title: 'Thành phần không khí & Thí nghiệm', description: '3 câu hỏi', type: 'lesson' },
+              { id: 'g6-b11-n03', nodeIndex: 4, title: 'Ô nhiễm không khí & Hành động xanh', description: '3 câu hỏi', type: 'lesson' },
               { id: 'g6-b11-boss', nodeIndex: 5, title: 'Thử thách Người bảo vệ bầu trời', description: 'Thử thách lớn', type: 'checkpoint' },
               { id: 'g6-b11-chest', nodeIndex: 6, title: 'Rương kho báu Chất quanh ta', description: 'Phần thưởng hoàn thành', type: 'chest' },
             ],
@@ -167,7 +167,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g8-b02-theory', nodeIndex: 1, title: 'Lý thuyết: Biến đổi chất & Dấu hiệu phản ứng', description: '2 phút ghi nhớ', type: 'theory' },
-              { id: 'g8-b02-n01', nodeIndex: 2, title: 'Dấu hiệu có phản ứng xảy ra', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g8-b02-n01', nodeIndex: 2, title: 'Dấu hiệu có phản ứng xảy ra', description: '7 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -178,8 +178,8 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true, // Content available!
             nodes: [
               { id: 'g8-b03-theory', nodeIndex: 1, title: 'Lý thuyết: Mol & Tỉ khối khí', description: '2 phút ghi nhớ', type: 'theory' },
-              { id: 'g8-b03-n01', nodeIndex: 2, title: 'Mol & Thể tích khí ở ĐKC (24,79 L)', description: '6 câu hỏi cơ bản', type: 'lesson' },
-              { id: 'g8-b03-n02', nodeIndex: 3, title: 'Tỉ khối của chất khí', description: '6 câu hỏi nâng cao', type: 'lesson' },
+              { id: 'g8-b03-n01', nodeIndex: 2, title: 'Mol & Thể tích khí ở ĐKC (24,79 L)', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g8-b03-n02', nodeIndex: 3, title: 'Tỉ khối của chất khí', description: '6 câu hỏi', type: 'lesson' },
               { id: 'g8-b03-chest', nodeIndex: 4, title: 'Rương kho báu Mol', description: 'Phần thưởng XP', type: 'chest' },
             ],
           },
@@ -215,7 +215,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g8-b06-theory', nodeIndex: 1, title: 'Lý thuyết: 4 bước tính theo PTHH', description: '2 phút ghi nhớ', type: 'theory' },
-              { id: 'g8-b06-n01', nodeIndex: 2, title: 'Tính theo PTHH cơ bản', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g8-b06-n01', nodeIndex: 2, title: 'Tính theo PTHH cơ bản', description: '5 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -278,7 +278,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g8-b11-theory', nodeIndex: 1, title: 'Lý thuyết: Muối & Điều kiện kết tủa', description: '2 phút ghi nhớ', type: 'theory' },
-              { id: 'g8-b11-n01', nodeIndex: 2, title: 'Tính chất của muối', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g8-b11-n01', nodeIndex: 2, title: 'Tính chất của muối', description: '5 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -314,7 +314,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g9-b18-theory', nodeIndex: 1, title: 'Lý thuyết Dãy hoạt động kim loại', description: 'Quy tắc vàng & mẹo ghi nhớ', type: 'theory' },
-              { id: 'g9-b18-n01', nodeIndex: 2, title: 'Tính chất vật lí & hóa học', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g9-b18-n01', nodeIndex: 2, title: 'Tính chất vật lí & hóa học', description: '4 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -325,7 +325,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g9-b19-theory', nodeIndex: 1, title: 'Lý thuyết Dãy hoạt động hóa học', description: '4 quy tắc vàng & mẹo nhớ', type: 'theory' },
-              { id: 'g9-b19-n01', nodeIndex: 2, title: 'Ý nghĩa dãy hoạt động', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g9-b19-n01', nodeIndex: 2, title: 'Ý nghĩa dãy hoạt động', description: '5 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -347,7 +347,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g9-b21-theory', nodeIndex: 1, title: 'Lý thuyết So sánh Kim loại & Phi kim', description: 'Đặc trưng cấu tạo & tính chất', type: 'theory' },
-              { id: 'g9-b21-n01', nodeIndex: 2, title: 'So sánh kim loại & phi kim', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g9-b21-n01', nodeIndex: 2, title: 'So sánh kim loại & phi kim', description: '4 câu hỏi', type: 'lesson' },
             ],
           },
         ],
@@ -366,7 +366,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g9-b22-theory', nodeIndex: 1, title: 'Lý thuyết Hợp chất hữu cơ', description: 'Khái niệm & liên kết hóa trị', type: 'theory' },
-              { id: 'g9-b22-n01', nodeIndex: 2, title: 'Phân loại hợp chất hữu cơ', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g9-b22-n01', nodeIndex: 2, title: 'Phân loại hợp chất hữu cơ', description: '4 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -377,7 +377,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g9-b23-theory', nodeIndex: 1, title: 'Lý thuyết Alkane & Methane', description: 'Cấu tạo phân tử & phản ứng thế', type: 'theory' },
-              { id: 'g9-b23-n01', nodeIndex: 2, title: 'Tính chất Methane', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g9-b23-n01', nodeIndex: 2, title: 'Tính chất Methane', description: '4 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -388,7 +388,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g9-b24-theory', nodeIndex: 1, title: 'Lý thuyết Alkene & Ethylene', description: 'Liên kết đôi & phản ứng cộng', type: 'theory' },
-              { id: 'g9-b24-n01', nodeIndex: 2, title: 'Tính chất Ethylene', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g9-b24-n01', nodeIndex: 2, title: 'Tính chất Ethylene', description: '4 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -399,7 +399,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g9-b25-theory', nodeIndex: 1, title: 'Lý thuyết Nguồn nhiên liệu', description: 'Dầu mỏ, khí đốt & năng lượng sạch', type: 'theory' },
-              { id: 'g9-b25-n01', nodeIndex: 2, title: 'Khai thác nhiên liệu', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g9-b25-n01', nodeIndex: 2, title: 'Khai thác nhiên liệu', description: '4 câu hỏi', type: 'lesson' },
             ],
           },
         ],
@@ -418,7 +418,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g9-b26-theory', nodeIndex: 1, title: 'Lý thuyết Ethylic alcohol', description: 'Cấu tạo nhóm -OH & độ rượu', type: 'theory' },
-              { id: 'g9-b26-n01', nodeIndex: 2, title: 'Tính chất Rượu etylic', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g9-b26-n01', nodeIndex: 2, title: 'Tính chất Rượu etylic', description: '5 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -429,7 +429,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g9-b27-theory', nodeIndex: 1, title: 'Lý thuyết Acetic acid', description: 'Nhóm -COOH & phản ứng ester hóa', type: 'theory' },
-              { id: 'g9-b27-n01', nodeIndex: 2, title: 'Tính chất Axit axetic', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g9-b27-n01', nodeIndex: 2, title: 'Tính chất Axit axetic', description: '5 câu hỏi', type: 'lesson' },
             ],
           },
         ],
@@ -448,7 +448,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g9-b28-theory', nodeIndex: 1, title: 'Lý thuyết Lipid & Chất béo', description: 'Ester của glycerol & xà phòng hóa', type: 'theory' },
-              { id: 'g9-b28-n01', nodeIndex: 2, title: 'Cấu tạo & Tính chất chất béo', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g9-b28-n01', nodeIndex: 2, title: 'Cấu tạo & Tính chất chất béo', description: '4 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -459,7 +459,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g9-b29-theory', nodeIndex: 1, title: 'Lý thuyết Glucose & Saccharose', description: 'Đường đơn, đường đôi & tráng bạc', type: 'theory' },
-              { id: 'g9-b29-n01', nodeIndex: 2, title: 'Nhận biết Glucose', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g9-b29-n01', nodeIndex: 2, title: 'Nhận biết Glucose', description: '4 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -470,7 +470,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g9-b30-theory', nodeIndex: 1, title: 'Lý thuyết Tinh bột & Cellulose', description: 'Polymer tự nhiên & nhận biết Iot', type: 'theory' },
-              { id: 'g9-b30-n01', nodeIndex: 2, title: 'Tính chất tinh bột', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g9-b30-n01', nodeIndex: 2, title: 'Tính chất tinh bột', description: '4 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -481,7 +481,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g9-b31-theory', nodeIndex: 1, title: 'Lý thuyết Protein', description: 'Liên kết peptide & sự đông tụ', type: 'theory' },
-              { id: 'g9-b31-n01', nodeIndex: 2, title: 'Cấu trúc & vai trò protein', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g9-b31-n01', nodeIndex: 2, title: 'Cấu trúc & vai trò protein', description: '4 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -492,7 +492,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g9-b32-theory', nodeIndex: 1, title: 'Lý thuyết Polymer', description: 'Chất dẻo, tơ sợi & cao su', type: 'theory' },
-              { id: 'g9-b32-n01', nodeIndex: 2, title: 'Khái niệm & Ứng dụng polymer', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g9-b32-n01', nodeIndex: 2, title: 'Khái niệm & Ứng dụng polymer', description: '4 câu hỏi', type: 'lesson' },
             ],
           },
         ],
@@ -511,7 +511,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g9-b33-theory', nodeIndex: 1, title: 'Lý thuyết Vỏ Trái Đất', description: 'Khoáng sản & hàm lượng nguyên tố', type: 'theory' },
-              { id: 'g9-b33-n01', nodeIndex: 2, title: 'Khoáng sản & Tài nguyên', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g9-b33-n01', nodeIndex: 2, title: 'Khoáng sản & Tài nguyên', description: '5 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -522,7 +522,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g9-b34-theory', nodeIndex: 1, title: 'Lý thuyết Khai thác đá vôi & Silicate', description: 'Nung vôi, tôi vôi, xi măng, thủy tinh', type: 'theory' },
-              { id: 'g9-b34-n01', nodeIndex: 2, title: 'Nung vôi & Sản xuất xi măng', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g9-b34-n01', nodeIndex: 2, title: 'Nung vôi & Sản xuất xi măng', description: '4 câu hỏi', type: 'lesson' },
             ],
           },
           {
@@ -533,7 +533,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             ready: true,
             nodes: [
               { id: 'g9-b35-theory', nodeIndex: 1, title: 'Lý thuyết Chu trình Carbon & Môi trường', description: 'Hiệu ứng nhà kính & giải pháp xanh', type: 'theory' },
-              { id: 'g9-b35-n01', nodeIndex: 2, title: 'Hiệu ứng nhà kính & bảo vệ môi trường', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g9-b35-n01', nodeIndex: 2, title: 'Hiệu ứng nhà kính & bảo vệ môi trường', description: '4 câu hỏi', type: 'lesson' },
             ],
           },
         ],
