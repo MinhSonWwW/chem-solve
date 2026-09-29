@@ -4,7 +4,9 @@ import { Check, X, Info, Sparkles, HelpCircle } from 'lucide-react';
 import { MinigameShell } from '@/design-system';
 import { sound } from '@/lib/audio';
 import { useUserStore } from '@/features/gamification/useUserStore';
+import { useActiveSubject } from '@/content/subjects';
 import statementsData from '@/content/kb/true-false-statements.json';
+import physicsStatementsData from '@/content/kb/physics/true-false-statements.json';
 
 interface Statement {
   id: string;
@@ -16,6 +18,9 @@ interface Statement {
 
 export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const { addXp, addHearts } = useUserStore();
+  const { subject: activeSubject } = useActiveSubject();
+  const isPhysics = activeSubject === 'physics';
+
   const [timeLeft, setTimeLeft] = useState(50);
   const [score, setScore] = useState(0);
   const [combo, setCombo] = useState(0);
@@ -29,10 +34,11 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     explanation: string;
   } | null>(null);
 
-  // Shuffle statements for this round
+  // Shuffle statements for this round according to active subject
   const roundStatements = useMemo(() => {
-    return [...(statementsData as Statement[])].sort(() => 0.5 - Math.random()).slice(0, 10);
-  }, []);
+    const pool = isPhysics ? physicsStatementsData : statementsData;
+    return [...(pool as Statement[])].sort(() => 0.5 - Math.random()).slice(0, 10);
+  }, [isPhysics]);
 
   const currentItem = roundStatements[currentIndex] || roundStatements[0];
 
@@ -104,8 +110,12 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
 
   return (
     <MinigameShell
-      title="Đúng hay Sai — Kiểm định Hóa học"
-      description="Đánh giá tính chính xác của các nhận định hóa học"
+      title={isPhysics ? 'Đúng hay Sai — Kiểm định Vật lý' : 'Đúng hay Sai — Kiểm định Hóa học'}
+      description={
+        isPhysics
+          ? 'Đánh giá tính chính xác của các nhận định và định luật Vật lý KHTN'
+          : 'Đánh giá tính chính xác của các nhận định hóa học'
+      }
       skillId="true-false"
       timeLeft={timeLeft}
       score={score}

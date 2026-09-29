@@ -1,0 +1,400 @@
+[
+  {
+    "id": "phy-g6-b04-mcq-001",
+    "lessonId": "phy-g6-b04",
+    "sgkBaiSo": 8,
+    "skillIds": [
+      "temperature-scale-celsius"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong thang nhiệt độ Celsius (thang đo phổ biến nhất tại Việt Nam), nhiệt độ của nước đá đang tan và nhiệt độ của hơi nước đang sôi ở điều kiện tiêu chuẩn lần lượt là:",
+    "knowledge": [
+      "unit.temperature.celsius"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "-10 °C và 100 °C"
+        },
+        {
+          "id": "opt-b",
+          "label": "0 °C và 100 °C"
+        },
+        {
+          "id": "opt-c",
+          "label": "0 °C và 50 °C"
+        },
+        {
+          "id": "opt-d",
+          "label": "32 °C và 212 °C"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thang Celsius lấy nhiệt độ đóng băng và nhiệt độ sôi của nước tinh khiết làm 2 mốc chuẩn."
+      },
+      {
+        "level": 2,
+        "text": "Nhiệt độ nước đá đang tan quy ước là 0 °C, nhiệt độ hơi nước đang sôi là 100 °C."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận dạng câu hỏi",
+        "body": "Câu hỏi kiểm tra mốc nhiệt độ chuẩn trong thang đo nhiệt độ Celsius."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 6 (Bài 8: Đo nhiệt độ), trong thang Celsius: nước đá đang tan ở 0 °C và hơi nước đang sôi ở 100 °C."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **0 °C và 100 °C**."
+      }
+    ],
+    "finalSolution": "Trong thang Celsius, nhiệt độ nước đá đang tan là **0 °C**, nhiệt độ hơi nước đang sôi là **100 °C**.",
+    "commonMistakes": [
+      {
+        "id": "confused-fahrenheit",
+        "message": "32 °F và 212 °F là các mốc trong thang Fahrenheit (dùng nhiều ở Mỹ), không phải thang Celsius."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b04-mcq-002",
+    "lessonId": "phy-g6-b04",
+    "sgkBaiSo": 8,
+    "skillIds": [
+      "temperature-thermometer-principle"
+    ],
+    "difficulty": 1,
+    "prompt": "Các loại nhiệt kế chất lỏng thông dụng (như nhiệt kế thủy ngân, nhiệt kế rượu) hoạt động dựa trên hiện tượng vật lý nào sau đây?",
+    "knowledge": [
+      "unit.temperature.celsius"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Sự bay hơi của chất lỏng khi gặp gió"
+        },
+        {
+          "id": "opt-b",
+          "label": "Sự đông đặc của chất lỏng khi nhiệt độ giảm"
+        },
+        {
+          "id": "opt-c",
+          "label": "Sự thay đổi màu sắc của chất lỏng theo thời gian"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hiện tượng dãn nở vì nhiệt của chất lỏng"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi nhiệt độ tăng lên, chất lỏng trong bầu sẽ nở ra và dâng cao lên trong ống mao dẫn."
+      },
+      {
+        "level": 2,
+        "text": "Chất lỏng nở ra khi nóng lên và co lại khi lạnh đi (hiện tượng dãn nở vì nhiệt)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích nguyên tắc hoạt động",
+        "body": "Tìm hiện tượng vật lý là nguyên lý hoạt động của nhiệt kế chất lỏng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hiện tượng dãn nở vì nhiệt",
+        "body": "Nhiệt kế chất lỏng hoạt động dựa trên sự dãn nở vì nhiệt của chất lỏng: nóng thì nở ra (cột chất lỏng dâng lên), lạnh thì co lại (cột chất lỏng hạ xuống)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nguyên tắc hoạt động dựa trên **Hiện tượng dãn nở vì nhiệt của chất lỏng**."
+      }
+    ],
+    "finalSolution": "Nhiệt kế chất lỏng hoạt động dựa trên **sự dãn nở vì nhiệt của chất lỏng**.",
+    "commonMistakes": [
+      {
+        "id": "chose-evaporation",
+        "message": "Nhiệt kế được hàn kín hoàn toàn nên chất lỏng bên trong không thể bay hơi ra ngoài."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b04-mcq-003",
+    "lessonId": "phy-g6-b04",
+    "sgkBaiSo": 8,
+    "skillIds": [
+      "temperature-medical-thermometer"
+    ],
+    "difficulty": 1,
+    "prompt": "Bảng chia độ trên một chiếc nhiệt kế y tế thủy ngân thông thường chỉ ghi từ khoảng 35 °C đến 42 °C. Vì sao nhiệt kế y tế lại có giới hạn đo trong khoảng này?",
+    "knowledge": [
+      "unit.temperature.celsius"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vì thủy ngân chỉ nở ra trong khoảng nhiệt độ từ 35 °C đến 42 °C"
+        },
+        {
+          "id": "opt-b",
+          "label": "Để làm cho nhiệt kế ngắn lại cho dễ bỏ túi áo"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì nhà sản xuất không thể chia nhỏ hơn 35 °C"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì nhiệt độ cơ thể người bình thường chỉ dao động xung quanh khoảng 35 °C đến 42 °C"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhiệt kế y tế chuyên dùng để đo thân nhiệt của con người."
+      },
+      {
+        "level": 2,
+        "text": "Thân nhiệt con người bình thường khoảng 36,5 °C - 37 °C, khi sốt cao cũng hiếm khi vượt quá 42 °C và khi hạ thân nhiệt cũng hiếm khi dưới 35 °C."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích mục đích sử dụng",
+        "body": "Nhiệt kế y tế được chế tạo chuyên biệt để theo dõi nhiệt độ cơ thể con người."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Thân nhiệt con người",
+        "body": "Nhiệt độ cơ thể người sống chỉ dao động trong khoảng từ 35 °C đến 42 °C. Khoảng đo này giúp chia độ chi tiết hơn (ĐCNN 0,1 °C) để đọc chính xác từng phần mười độ."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Lý do là **Vì nhiệt độ cơ thể người chỉ dao động trong khoảng từ 35 °C đến 42 °C**."
+      }
+    ],
+    "finalSolution": "Giới hạn đo 35 °C - 42 °C vì **thân nhiệt của con người chỉ dao động trong phạm vi này**.",
+    "commonMistakes": [
+      {
+        "id": "mercury-limits",
+        "message": "Thủy ngân tồn tại ở thể lỏng từ -39 °C đến 357 °C, nên giới hạn này hoàn toàn là do mục đích đo thân nhiệt người."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b04-mcq-004",
+    "lessonId": "phy-g6-b04",
+    "sgkBaiSo": 8,
+    "skillIds": [
+      "temperature-measurement-steps"
+    ],
+    "difficulty": 2,
+    "prompt": "Trước khi cặp nhiệt độ cho người bệnh bằng nhiệt kế y tế thủy ngân, thao tác nào sau đây là **bắt buộc phải thực hiện** để đảm bảo kết quả đo không bị sai?",
+    "knowledge": [
+      "unit.temperature.celsius"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hơ nhẹ nhiệt kế trên ngọn lửa đèn cồn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Thổi mạnh vào bầu nhiệt kế để làm nóng trước"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ngâm nhiệt kế vào nước sôi 100 °C để khử trùng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cầm chắc đầu nhiệt kế, vẩy mạnh cho cột thủy ngân tụt xuống dưới vạch 35 °C"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Do có chỗ thắt hẹp ở ống mao dẫn, sau lần đo trước cột thủy ngân vẫn giữ nguyên ở mức cao."
+      },
+      {
+        "level": 2,
+        "text": "Phải vẩy mạnh để lực quán tính kéo cột thủy ngân tụt trở lại vào bầu (dưới 35 °C)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định thao tác kỹ thuật",
+        "body": "Thao tác chuẩn bị nhiệt kế y tế thủy ngân trước khi đo thân nhiệt."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy trình đo nhiệt độ",
+        "body": "Nhiệt kế y tế có chỗ thắt ngăn thủy ngân tự tụt. Vì vậy trước khi đo lần mới, bắt buộc phải cầm chắc đầu trên của nhiệt kế và vẩy mạnh cho thủy ngân tụt xuống dưới 35 °C."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thao tác bắt buộc là **Cầm chắc đầu nhiệt kế, vẩy mạnh cho cột thủy ngân tụt xuống dưới vạch 35 °C**."
+      }
+    ],
+    "finalSolution": "Cần **vẩy mạnh cho cột thủy ngân tụt xuống dưới 35 °C** trước khi đo.",
+    "commonMistakes": [
+      {
+        "id": "used-boiling-water",
+        "message": "Tuyệt đối không nhúng nhiệt kế y tế vào nước sôi 100 °C vì nhiệt kế có GHĐ 42 °C sẽ bị nổ vỡ ngay lập tức!"
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b04-calc-005",
+    "lessonId": "phy-g6-b04",
+    "sgkBaiSo": 8,
+    "skillIds": [
+      "temperature-kelvin-convert"
+    ],
+    "difficulty": 2,
+    "prompt": "Nhiệt độ phòng học hôm nay được đo bằng nhiệt kế rượu là 27 °C. Theo công thức quy đổi thang nhiệt độ Kelvin trong hệ SI: T (K) = t (°C) + 273, nhiệt độ của phòng học này tương ứng với bao nhiêu Kelvin (K)?",
+    "knowledge": [
+      "unit.temperature.celsius"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 300,
+      "unit": "K",
+      "decimals": 0
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp dụng đúng công thức đề bài cho: T (K) = t (°C) + 273."
+      },
+      {
+        "level": 2,
+        "text": "Thay số: T = 27 + 273 = ?"
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định dữ kiện và công thức",
+        "body": "Cho $t = 27\\text{ }^\\circ\\text{C}$. Công thức chuyển đổi sang Kelvin: $T = t + 273$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "Thay $t = 27$ vào công thức: $T = 27 + 273 = 300\\text{ K}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nhiệt độ phòng học là **300 K**."
+      }
+    ],
+    "finalSolution": "$T = 27 + 273 =$ **300 K**.",
+    "commonMistakes": [
+      {
+        "id": "subtracted-instead-of-added",
+        "message": "Công thức chuyển sang Kelvin là phép cộng (+ 273), không phải phép trừ."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b04-mcq-006",
+    "lessonId": "phy-g6-b04",
+    "sgkBaiSo": 8,
+    "skillIds": [
+      "temperature-mercury-safety"
+    ],
+    "difficulty": 3,
+    "prompt": "Trong giờ thực hành, chẳng may một chiếc nhiệt kế thủy ngân bị rơi xuống sàn gạch và vỡ. Thao tác xử lý an toàn nào sau đây là **đúng đắn nhất**?",
+    "knowledge": [
+      "unit.temperature.celsius"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Dùng chổi đót quét mạnh để quét các mảnh vỡ ra ngoài sân"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bật máy hút bụi gia đình để hút sạch các giọt thủy ngân li ti"
+        },
+        {
+          "id": "opt-c",
+          "label": "Đổ nước nóng vào để thủy ngân bốc hơi nhanh hết"
+        },
+        {
+          "id": "opt-d",
+          "label": "Báo ngay giáo viên, mở toang cửa thông gió, rắc bột lưu huỳnh (nếu có) lên để gom thủy ngân lại"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thủy ngân là chất cực độc, có thể bốc hơi ở nhiệt độ phòng và gây nhiễm độc đường hô hấp."
+      },
+      {
+        "level": 2,
+        "text": "Cần mở cửa thông gió, không làm thủy ngân phân tán thành hạt bụi nhỏ, và rắc bột lưu huỳnh để phản ứng tạo chất rắn an toàn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích an toàn phòng thí nghiệm",
+        "body": "Thủy ngân là kim loại lỏng rất độc, bay hơi nguy hiểm cho phổi và hệ thần kinh."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Biện pháp xử lý chuẩn",
+        "body": "Khi nhiệt kế vỡ: (1) Báo ngay cho giáo viên/người lớn; (2) Mở cửa phòng thông gió; (3) Tuyệt đối không dùng máy hút bụi vì sẽ làm phát tán hơi thủy ngân vào không khí; (4) Rắc bột lưu huỳnh (S) để tạo muối HgS kết tủa rắn không bay hơi và thu gom cẩn thận."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hành động đúng là **Báo ngay giáo viên, mở toang cửa thông gió, rắc bột lưu huỳnh (nếu có) lên để gom thủy ngân lại**."
+      }
+    ],
+    "finalSolution": "Phải **báo giáo viên, mở cửa thông gió và rắc bột lưu huỳnh** để thu gom thủy ngân an toàn.",
+    "commonMistakes": [
+      {
+        "id": "used-vacuum",
+        "message": "Dùng máy hút bụi sẽ thổi hơi thủy ngân độc hại vào không khí, gây nguy cơ ngộ độc hô hấp cực kỳ nghiêm trọng!"
+      }
+    ]
+  }
+]

@@ -1,0 +1,64 @@
+{
+  "lessonId": "phy-g6-b20",
+  "nodeId": "phy-g6-b20-theory",
+  "title": "Lý thuyết: Ngân hà",
+  "subtitle": "Bài 55 SGK Khoa học tự nhiên 6 (Kết nối tri thức)",
+  "sgkBaiSo": 55,
+  "estimatedMinutes": 2,
+  "description": "Tìm hiểu về Dải Ngân hà (Milky Way), cấu trúc xoắn ốc khổng lồ, khái niệm năm ánh sáng và vị trí của Hệ Mặt Trời trong Ngân hà.",
+  "cards": [
+    {
+      "id": "card-1",
+      "title": "1. Ngân hà là gì? Cấu trúc của Ngân hà",
+      "badge": "Thiên hà của chúng ta",
+      "badgeColor": "purple",
+      "content": "Ngân hà (tên tiếng Anh là Milky Way) là thiên hà chứa Hệ Mặt Trời và Trái Đất thân yêu của chúng ta:",
+      "bulletPoints": [
+        "Quy mô vĩ đại: Ngân hà là một tập hợp khổng lồ gồm hàng trăm tỉ ngôi sao, hành tinh, cùng vô số tinh vân khí và bụi vũ trụ gắn kết với nhau bằng lực hấp dẫn.",
+        "Hình dạng xoắn ốc: Khi quan sát toàn cảnh từ bên ngoài, Ngân hà có dạng một chiếc đĩa xoắn ốc khổng lồ giống như chiếc chong chóng quay, với phần tâm phình to sáng rực và các cánh tay (nhánh) xoắn ốc cuộn tròn tỏa ra xung quanh.",
+        "Đường kính: Chiếc đĩa Ngân hà có kích thước khổng lồ với đường kính ước tính khoảng 100 000 năm ánh sáng.",
+        "Năm ánh sáng: Là đơn vị đo khoảng cách trong thiên văn học (không phải đơn vị đo thời gian), là quãng đường mà ánh sáng đi được trong chân không suốt 1 năm (khoảng 9 460 tỉ km)."
+      ],
+      "callout": "🌌 Năm ánh sáng = Đơn vị đo KHOẢNG CÁCH trong vũ trụ (≈ 9 460 tỉ km)!"
+    },
+    {
+      "id": "card-2",
+      "title": "2. Vị trí của Hệ Mặt Trời trong Ngân hà",
+      "badge": "Địa chỉ vũ trụ",
+      "badgeColor": "cyan",
+      "content": "Hệ Mặt Trời của chúng ta chiếm một vị trí khiêm tốn ở vùng ngoại vi của Ngân hà:",
+      "bulletPoints": [
+        "Vị trí: Hệ Mặt Trời không nằm ở trung tâm mà nằm ở rìa ngoài, trên một nhánh xoắn ốc có tên là nhánh Orion (nhánh Thợ Săn), cách tâm Ngân hà khoảng 26 000 năm ánh sáng.",
+        "Chuyển động: Toàn bộ Hệ Mặt Trời cùng chuyển động quay xung quanh tâm của Ngân hà với tốc độ khoảng 220 km/s.",
+        "Dải Ngân hà trên bầu trời đêm: Vào những đêm trời quang đãng, không trăng và xa ánh đèn thành phố, ta có thể nhìn thấy một dải sáng màu trắng bạc mờ ảo vắt ngang bầu trời đêm như một 'dòng sông bạc'. Dải sáng đó chính là hình ảnh của Ngân hà khi chúng ta quan sát từ bên trong lòng chiếc đĩa thiên hà."
+      ],
+      "callout": "🔭 Hệ Mặt Trời nằm ở vùng rìa một nhánh xoắn ốc, cách tâm Ngân hà khoảng 26 000 năm ánh sáng."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Hệ Mặt Trời của chúng ta nằm ở vị trí nào trong dải Ngân hà?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Ngay chính giữa tâm sáng rực của Ngân hà",
+        "correct": false
+      },
+      {
+        "id": "opt-b",
+        "text": "Nằm ở rìa một nhánh xoắn ốc của Ngân hà, cách tâm khoảng 26 000 năm ánh sáng",
+        "correct": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Nằm hoàn toàn ở bên ngoài, tách biệt với Ngân hà",
+        "correct": false
+      },
+      {
+        "id": "opt-d",
+        "text": "Nằm trên trục quay thẳng đứng của Ngân hà",
+        "correct": false
+      }
+    ],
+    "explanation": "Hệ Mặt Trời không nằm ở trung tâm mà nằm ở một nhánh xoắn ốc (nhánh Orion) ở vùng rìa ngoài của Ngân hà, cách tâm khoảng 26 000 năm ánh sáng."
+  }
+}

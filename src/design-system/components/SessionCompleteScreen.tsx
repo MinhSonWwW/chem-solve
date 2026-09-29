@@ -68,17 +68,6 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
       animate={{ opacity: 1 }}
       className="flex flex-col items-center justify-center min-h-[85dvh] text-center px-4 relative overflow-hidden"
     >
-      {/* Background Confetti Animation */}
-      <div className="absolute inset-0 pointer-events-none flex items-center justify-center overflow-hidden">
-        <video
-          src={assetUrl('/assets/animations/confetti.mp4')}
-          autoPlay
-          muted
-          playsInline
-          loop
-          className="w-full h-full object-cover opacity-35 mix-blend-screen pointer-events-none"
-        />
-      </div>
 
       {/* Victory Stage: Ambient Glow & 3D Trophy / Mascot Display */}
       <motion.div

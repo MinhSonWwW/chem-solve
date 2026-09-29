@@ -1,0 +1,82 @@
+{
+  "lessonId": "phy-g7-b09",
+  "nodeId": "phy-g7-b09-theory",
+  "title": "Lý thuyết: Sự phản xạ ánh sáng",
+  "subtitle": "Bài 16 SGK Khoa học tự nhiên 7 (Kết nối tri thức)",
+  "sgkBaiSo": 16,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm hình học",
+      "badgeColor": "cyan",
+      "title": "1. Hiện tượng phản xạ ánh sáng và các khái niệm",
+      "content": "Hiện tượng ánh sáng bị hắt trở lại môi trường cũ khi gặp một bề mặt nhẵn bóng được gọi là hiện tượng phản xạ ánh sáng:",
+      "bulletPoints": [
+        "Gương phẳng (G): Mặt phẳng nhẵn bóng phản xạ ánh sáng (như mặt gương soi, mặt nước phẳng lặng).",
+        "Tia tới (SI): Tia sáng chiếu thẳng tới mặt gương tại điểm tới I.",
+        "Điểm tới (I): Giao điểm của tia sáng tới với mặt gương.",
+        "Pháp tuyến (IN): Đường thẳng vuông góc với mặt gương tại điểm tới I (IN ⊥ G).",
+        "Tia phản xạ (IR): Tia sáng bị hắt trở lại từ điểm tới I.",
+        "Góc tới (i): Góc hợp bởi tia tới và pháp tuyến: i = góc(SIN).",
+        "Góc phản xạ (i'): Góc hợp bởi tia phản xạ và pháp tuyến: i' = góc(NIR).",
+        "Mặt phẳng tới: Mặt phẳng được tạo bởi tia tới SI và pháp tuyến IN."
+      ],
+      "callout": "Cảnh báo bẫy: Góc tới và góc phản xạ LUÔN LUÔN được so với pháp tuyến (đường vuông góc), KHÔNG PHẢI so với mặt gương!"
+    },
+    {
+      "id": "c2",
+      "badge": "Định luật vật lí",
+      "badgeColor": "amber",
+      "title": "2. Định luật phản xạ ánh sáng",
+      "content": "Hiện tượng phản xạ ánh sáng tuân theo định luật cơ bản của quang hình học gồm 2 nội dung:",
+      "bulletPoints": [
+        "1. Tia phản xạ nằm trong mặt phẳng tới.",
+        "2. Góc phản xạ bằng góc tới: i' = i.",
+        "Hệ quả 1: Nếu tia tới vuông góc với mặt gương (i = 0°) thì tia phản xạ cũng vuông góc và dội ngược lại (i' = 0°).",
+        "Hệ quả 2: Nếu biết góc giữa tia tới và mặt gương là α thì góc tới i = 90° - α.",
+        "Hệ quả 3: Góc tạo bởi tia tới và tia phản xạ là: góc(SIR) = i + i' = 2i."
+      ],
+      "callout": "Công thức tính nhanh: i' = i; góc hợp bởi tia tới và tia phản xạ = 2i."
+    },
+    {
+      "id": "c3",
+      "badge": "Phản xạ khuếch tán",
+      "badgeColor": "emerald",
+      "title": "3. Phản xạ gương và Phản xạ khuếch tán",
+      "content": "Tùy thuộc vào bề mặt phản xạ phẳng nhẵn hay gồ ghề, hiện tượng phản xạ diễn ra theo hai hình thức:",
+      "bulletPoints": [
+        "Phản xạ gương (phản xạ định hướng): Xảy ra trên bề mặt nhẵn bóng (mặt gương, mặt kính, mặt nước phẳng). Chùm tia tới song song cho chùm tia phản xạ song song. Ta quan sát được ảnh rõ nét của vật.",
+        "Phản xạ khuếch tán (tán xạ): Xảy ra trên bề mặt gồ ghề, nhám (trang sách, bức tường quét vôi, mặt đường nhựa, mặt nước gợn sóng). Ánh sáng bị phản xạ hắt theo nhiều hướng khác nhau.",
+        "Ý nghĩa thực tế: Nhờ có phản xạ khuếch tán mà ta có thể nhìn thấy các vật (như cuốn sách, cái bàn) từ nhiều hướng khác nhau trong phòng."
+      ],
+      "callout": "Ví dụ đời sống: Nhìn vào mặt hồ phẳng lặng ta thấy bóng mây trời in rõ như gương (phản xạ gương); khi có gió làm gợn sóng thì bóng mây bị nhòe tan biến (phản xạ khuếch tán)."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Chiếu một tia sáng tới mặt gương phẳng với góc tới i = 40°. Góc phản xạ i' có độ lớn bằng bao nhiêu?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "40°",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "50°",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "80°",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "20°",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo định luật phản xạ ánh sáng (SGK KHTN 7 Bài 16), góc phản xạ luôn bằng góc tới: i' = i = 40°."
+  }
+}

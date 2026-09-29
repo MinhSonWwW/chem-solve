@@ -1,0 +1,548 @@
+[
+  {
+    "id": "phy-g9-b01-mcq-001",
+    "lessonId": "phy-g9-b01",
+    "sgkBaiSo": 2,
+    "skillIds": [
+      "kinetic-energy-concept"
+    ],
+    "difficulty": 1,
+    "prompt": "Dạng năng lượng mà một vật có được do nó đang chuyển động được gọi là gì?",
+    "knowledge": [
+      "formula.kinetic.energy"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Thế năng đàn hồi"
+        },
+        {
+          "id": "opt-b",
+          "label": "Thế năng trọng trường"
+        },
+        {
+          "id": "opt-c",
+          "label": "Động năng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hóa năng"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ 'động' biểu thị sự chuyển động của vật thể."
+      },
+      {
+        "level": 2,
+        "text": "Theo định nghĩa SGK KHTN 9 Bài 2, năng lượng do vật chuyển động mà có gọi là động năng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định câu hỏi",
+        "body": "Đề bài yêu cầu gọi tên dạng năng lượng gắn liền với chuyển động của vật."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 2, năng lượng mà một vật có được do nó đang chuyển động gọi là động năng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Động năng**."
+      }
+    ],
+    "finalSolution": "Năng lượng mà vật có được do chuyển động là **động năng**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-kinetic-potential",
+        "message": "Bạn đã nhầm lẫn với thế năng (năng lượng do vị trí độ cao hoặc do biến dạng đàn hồi)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b01-mcq-002",
+    "lessonId": "phy-g9-b01",
+    "sgkBaiSo": 2,
+    "skillIds": [
+      "kinetic-energy-factors"
+    ],
+    "difficulty": 1,
+    "prompt": "Động năng của một vật phụ thuộc vào những yếu tố nào sau đây?",
+    "knowledge": [
+      "formula.kinetic.energy"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Thể tích và hình dạng bên ngoài của vật"
+        },
+        {
+          "id": "opt-b",
+          "label": "Khối lượng và độ cao của vật so với mặt đất"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khối lượng và tốc độ chuyển động của vật"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nhiệt độ và chất liệu làm nên vật"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hãy nhớ lại công thức tính động năng W_đ = (1/2).m.v²."
+      },
+      {
+        "level": 2,
+        "text": "Trong công thức có đại lượng m (khối lượng) và v (tốc độ)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định các yếu tố",
+        "body": "Đề bài hỏi các yếu tố quyết định độ lớn động năng của vật."
+      },
+      {
+        "kind": "equation",
+        "title": "Biểu thức động năng",
+        "body": "Công thức tính động năng là $W_đ = \\frac{1}{2}mv^2$, phụ thuộc trực tiếp vào khối lượng $m$ và tốc độ $v$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Động năng phụ thuộc vào **khối lượng và tốc độ chuyển động của vật**."
+      }
+    ],
+    "finalSolution": "Động năng phụ thuộc vào **khối lượng** ($m$) và **tốc độ** ($v$) của vật.",
+    "commonMistakes": [
+      {
+        "id": "confuse-with-height",
+        "message": "Độ cao so với mặt đất là yếu tố quyết định thế năng trọng trường, không phải động năng."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b01-mcq-003",
+    "lessonId": "phy-g9-b01",
+    "sgkBaiSo": 2,
+    "skillIds": [
+      "potential-energy-concept"
+    ],
+    "difficulty": 1,
+    "prompt": "Thế năng trọng trường của một vật phụ thuộc vào những yếu tố nào sau đây?",
+    "knowledge": [
+      "formula.potential.energy.gravity"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Trọng lượng của vật và độ cao của vật so với mốc thế năng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tốc độ chuyển động và hình dạng của vật"
+        },
+        {
+          "id": "opt-c",
+          "label": "Thể tích và nhiệt độ của vật"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vận tốc và gia tốc trọng trường"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Công thức tính thế năng trọng trường là W_t = P . h."
+      },
+      {
+        "level": 2,
+        "text": "Trong đó P là trọng lượng của vật, h là độ cao so với mốc chọn tính thế năng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định câu hỏi",
+        "body": "Tìm các yếu tố quyết định độ lớn thế năng trọng trường."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Thế năng trọng trường được xác định qua công thức $W_t = P \\cdot h = 10 \\cdot m \\cdot h$, phụ thuộc vào trọng lượng $P$ (hoặc khối lượng $m$) và độ cao $h$ so với mốc chọn thế năng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Trọng lượng của vật và độ cao của vật so với mốc thế năng**."
+      }
+    ],
+    "finalSolution": "Thế năng trọng trường phụ thuộc vào **trọng lượng** (hoặc khối lượng) và **độ cao** của vật so với mốc thế năng.",
+    "commonMistakes": [
+      {
+        "id": "forget-reference-point",
+        "message": "Cần lưu ý độ cao luôn phải so với mốc thế năng được chọn trước (thường là mặt đất)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b01-num-004",
+    "lessonId": "phy-g9-b01",
+    "sgkBaiSo": 2,
+    "skillIds": [
+      "potential-energy-calc-wt"
+    ],
+    "difficulty": 2,
+    "prompt": "Một kiện hàng có trọng lượng P = 250 N được đưa lên sàn gác lửng ở độ cao h = 3,6 m so với mặt sàn tầng trệt. Chọn mốc thế năng tại mặt sàn tầng trệt. Thế năng trọng trường của kiện hàng tại sàn gác lửng là bao nhiêu Jun (J)?",
+    "knowledge": [
+      "formula.potential.energy.gravity"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 900,
+      "unit": "J",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sử dụng công thức tính thế năng trọng trường W_t = P . h."
+      },
+      {
+        "level": 2,
+        "text": "Thay số: P = 250 N, h = 3,6 m để tính W_t."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$P = 250\\text{ N}$; $h = 3,6\\text{ m}$; mốc thế năng tại sàn tầng trệt."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức thế năng",
+        "body": "$W_t = P \\cdot h$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$W_t = 250 \\times 3,6 = 900\\text{ J}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thế năng trọng trường của kiện hàng là **900 J**."
+      }
+    ],
+    "finalSolution": "Thế năng trọng trường của kiện hàng: $W_t = P \\cdot h = 250 \\times 3,6 = 900\\text{ J}$.",
+    "commonMistakes": [
+      {
+        "id": "divide-instead-of-multiply",
+        "message": "Bạn đã chia P cho h thay vì nhân P với h: W_t = P * h = 900 J.",
+        "trapAnswers": [
+          "69.4",
+          "69"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b01-num-005",
+    "lessonId": "phy-g9-b01",
+    "sgkBaiSo": 2,
+    "skillIds": [
+      "kinetic-energy-calc-wd"
+    ],
+    "difficulty": 2,
+    "prompt": "Một quả bóng đá có khối lượng m = 0,4 kg đang bay trong không khí với tốc độ v = 15 m/s. Động năng của quả bóng đá này là bao nhiêu Jun (J)?",
+    "knowledge": [
+      "formula.kinetic.energy"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 45,
+      "unit": "J",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sử dụng công thức tính động năng W_đ = (1/2) . m . v²."
+      },
+      {
+        "level": 2,
+        "text": "Thay số: m = 0,4 kg, v = 15 m/s, tính v² = 225 rồi nhân với (1/2) và m."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$m = 0,4\\text{ kg}$; $v = 15\\text{ m/s}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức động năng",
+        "body": "$W_đ = \\frac{1}{2} m v^2$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$W_đ = \\frac{1}{2} \\times 0,4 \\times 15^2 = 0,2 \\times 225 = 45\\text{ J}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Động năng của quả bóng đá là **45 J**."
+      }
+    ],
+    "finalSolution": "Động năng của quả bóng: $W_đ = \\frac{1}{2} m v^2 = \\frac{1}{2} \\times 0,4 \\times 15^2 = 45\\text{ J}$.",
+    "commonMistakes": [
+      {
+        "id": "forget-square",
+        "message": "Bạn đã quên bình phương vận tốc: W_đ = 0.5 * m * v² = 45 J (không phải 0.5 * m * v = 3 J).",
+        "trapAnswers": [
+          "3",
+          "3 J",
+          "6"
+        ]
+      },
+      {
+        "id": "forget-half",
+        "message": "Bạn đã quên nhân với hệ số 1/2: W_đ = 0.5 * m * v² = 45 J.",
+        "trapAnswers": [
+          "90",
+          "90 J"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b01-num-006",
+    "lessonId": "phy-g9-b01",
+    "sgkBaiSo": 2,
+    "skillIds": [
+      "potential-energy-calc-mass"
+    ],
+    "difficulty": 2,
+    "prompt": "Một chậu hoa có khối lượng m = 2,5 kg được đặt trên lan can tầng 2 ở độ cao h = 6 m so với mặt đất. Lấy hệ số liên hệ trọng lượng P = 10 . m và chọn mốc thế năng tại mặt đất. Thế năng trọng trường của chậu hoa là bao nhiêu Jun (J)?",
+    "knowledge": [
+      "formula.potential.energy.gravity",
+      "mechanics.gravity_weight"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 150,
+      "unit": "J",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trước tiên tính trọng lượng P = 10 . m, sau đó tính W_t = P . h."
+      },
+      {
+        "level": 2,
+        "text": "P = 10 x 2,5 = 25 N; W_t = 25 x 6 = 150 J."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$m = 2,5\\text{ kg}$; $h = 6\\text{ m}$; $P = 10 \\cdot m$; mốc thế năng tại mặt đất."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức trọng lượng và thế năng",
+        "body": "$P = 10 \\cdot m$ và $W_t = P \\cdot h = 10 \\cdot m \\cdot h$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$P = 10 \\times 2,5 = 25\\text{ N}$. Suy ra $W_t = 25 \\times 6 = 150\\text{ J}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thế năng trọng trường của chậu hoa là **150 J**."
+      }
+    ],
+    "finalSolution": "Thế năng trọng trường của chậu hoa: $W_t = 10 \\cdot m \\cdot h = 10 \\times 2,5 \\times 6 = 150\\text{ J}$.",
+    "commonMistakes": [
+      {
+        "id": "forget-gravity-factor",
+        "message": "Bạn đã lấy trực tiếp khối lượng nhân độ cao mà quên nhân với 10 để tính trọng lượng: W_t = 10 * m * h = 150 J.",
+        "trapAnswers": [
+          "15",
+          "15 J"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b01-mcq-007",
+    "lessonId": "phy-g9-b01",
+    "sgkBaiSo": 2,
+    "skillIds": [
+      "kinetic-energy-velocity-relation"
+    ],
+    "difficulty": 3,
+    "prompt": "Khi tốc độ chuyển động của một vật tăng lên gấp 3 lần trong khi khối lượng của vật không thay đổi thì động năng của vật sẽ:",
+    "knowledge": [
+      "formula.kinetic.energy"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tăng lên gấp 6 lần"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tăng lên gấp 3 lần"
+        },
+        {
+          "id": "opt-c",
+          "label": "Không thay đổi"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tăng lên gấp 9 lần"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Động năng W_đ tỉ lệ thuận với bình phương tốc độ v²."
+      },
+      {
+        "level": 2,
+        "text": "Khi v tăng 3 lần thì v² tăng 3² = 9 lần."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích tỉ lệ",
+        "body": "Xem xét mối quan hệ giữa động năng $W_đ$ và tốc độ $v$ khi $m$ không đổi."
+      },
+      {
+        "kind": "equation",
+        "title": "Biểu thức toán học",
+        "body": "$W_đ = \\frac{1}{2}mv^2$. Khi $v' = 3v$ thì $W'_đ = \\frac{1}{2}m(3v)^2 = \\frac{1}{2}m \\cdot 9v^2 = 9 W_đ$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Động năng của vật **tăng lên gấp 9 lần**."
+      }
+    ],
+    "finalSolution": "Vì $W_đ$ tỉ lệ với $v^2$ nên khi tốc độ tăng 3 lần, động năng tăng $3^2 = 9$ lần.",
+    "commonMistakes": [
+      {
+        "id": "linear-mistake",
+        "message": "Bạn đã nhầm là động năng tỉ lệ bậc nhất với tốc độ. Động năng tỉ lệ với bình phương tốc độ v² nên tăng 3² = 9 lần."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b01-num-008",
+    "lessonId": "phy-g9-b01",
+    "sgkBaiSo": 2,
+    "skillIds": [
+      "kinetic-energy-calc-car-kj"
+    ],
+    "difficulty": 3,
+    "prompt": "Một ô tô có khối lượng m = 1 200 kg đang chạy trên đường thẳng với tốc độ đều v = 72 km/h. Động năng của ô tô là bao nhiêu kilôjun (kJ)?",
+    "knowledge": [
+      "formula.kinetic.energy"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 240,
+      "unit": "kJ",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bắt buộc đổi tốc độ từ km/h sang m/s: chia cho 3,6."
+      },
+      {
+        "level": 2,
+        "text": "v = 72 / 3,6 = 20 m/s. Tính W_đ = (1/2).m.v² theo Jun rồi chia 1 000 để đổi sang kJ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt và đổi đơn vị",
+        "body": "$m = 1\\,200\\text{ kg}$; $v = 72\\text{ km/h} = \\frac{72}{3,6} = 20\\text{ m/s}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức động năng",
+        "body": "$W_đ = \\frac{1}{2} m v^2$ (Jun)."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán và đổi sang kJ",
+        "body": "$W_đ = \\frac{1}{2} \\times 1\\,200 \\times 20^2 = 600 \\times 400 = 240\\,000\\text{ J} = 240\\text{ kJ}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Động năng của ô tô là **240 kJ**."
+      }
+    ],
+    "finalSolution": "Đổi $v = 72\\text{ km/h} = 20\\text{ m/s}$. Động năng: $W_đ = \\frac{1}{2} \\times 1\\,200 \\times 20^2 = 240\\,000\\text{ J} = 240\\text{ kJ}$.",
+    "commonMistakes": [
+      {
+        "id": "forget-convert-unit",
+        "message": "Bạn đã để nguyên đơn vị Jun mà không đổi sang kilôjun (kJ): 240 000 J = 240 kJ.",
+        "trapAnswers": [
+          "240000",
+          "240000 J"
+        ]
+      },
+      {
+        "id": "forget-convert-speed",
+        "message": "Bạn đã dùng trực tiếp 72 km/h thay vì đổi sang m/s (20 m/s).",
+        "trapAnswers": [
+          "3110400",
+          "3110.4"
+        ]
+      }
+    ]
+  }
+]

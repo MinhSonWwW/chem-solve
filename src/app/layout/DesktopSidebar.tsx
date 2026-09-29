@@ -27,7 +27,7 @@ interface NavItem {
 
 const NAV_ITEMS: NavItem[] = [
   { to: '/learn', label: 'HỌC', icon: BookOpen, matchPrefix: '/learn' },
-  { to: '/practice', label: 'LUYỆN TẬP & GAME', icon: FlaskConical, matchPrefix: '/practice' },
+  { to: '/practice', label: 'LUYỆN TẬP', icon: FlaskConical, matchPrefix: '/practice' },
   { to: '/shop', label: 'CỬA HÀNG', icon: ShoppingBag, matchPrefix: '/shop' },
   { to: '/daily', label: 'NHIỆM VỤ', icon: Zap, matchPrefix: '/daily' },
   { to: '/progress', label: 'TIẾN ĐỘ', icon: BarChart3, matchPrefix: '/progress' },
@@ -51,22 +51,40 @@ export const DesktopSidebar: React.FC = () => {
           onClick={() => sound.playClick()}
           className="flex items-center gap-3 px-2 group cursor-pointer"
         >
-          <div className="w-10 h-10 rounded-2xl bg-[#0ea5e9] flex items-center justify-center font-black text-white text-base shadow-[0_4px_0_0_#0284c7] overflow-hidden border border-sky-300/40 group-hover:scale-105 transition-transform">
-            <img
-              src={assetUrl('/assets/mascot/atom-idle.png')}
-              alt="Atom"
-              className="w-8 h-8 object-contain"
-              onError={(e) => {
-                (e.target as HTMLElement).style.display = 'none';
-              }}
-            />
+          <div
+            className={`w-10 h-10 rounded-2xl flex items-center justify-center font-black text-white text-base overflow-hidden border group-hover:scale-105 transition-transform ${
+              activeSubject === 'physics'
+                ? 'bg-[#eab308] border-amber-300/50 shadow-[0_4px_0_0_#ca8a04]'
+                : 'bg-[#0ea5e9] border-sky-300/40 shadow-[0_4px_0_0_#0284c7]'
+            }`}
+          >
+            {activeSubject === 'physics' ? (
+              <Zap className="w-6 h-6 text-slate-950 fill-slate-950" />
+            ) : (
+              <img
+                src={assetUrl('/assets/mascot/atom-idle.png')}
+                alt="Atom"
+                className="w-8 h-8 object-contain"
+                onError={(e) => {
+                  (e.target as HTMLElement).style.display = 'none';
+                }}
+              />
+            )}
           </div>
           <div>
             <span className="font-black text-xl tracking-wider text-white block leading-tight">
-              CHEM<span className="text-[#0ea5e9]">-SOLVE</span>
+              {activeSubject === 'physics' ? (
+                <>
+                  PHY<span className="text-[#eab308]">-SOLVE</span>
+                </>
+              ) : (
+                <>
+                  CHEM<span className="text-[#0ea5e9]">-SOLVE</span>
+                </>
+              )}
             </span>
             <span className="text-[10px] font-bold text-slate-400 tracking-wider uppercase">
-              Khoa học Tự nhiên THCS
+              {activeSubject === 'physics' ? 'Vật lý Lớp 6-9 KNTT' : 'Hóa học THCS'}
             </span>
           </div>
         </NavLink>
@@ -77,7 +95,9 @@ export const DesktopSidebar: React.FC = () => {
             sound.playClick();
             setShowSubjectModal(true);
           }}
-          className="w-full flex items-center justify-between p-2.5 rounded-2xl bg-[#18272f] border-2 border-[#2e4756] hover:border-sky-500/60 transition-all text-left shadow-[0_3px_0_0_#101a1f] cursor-pointer group"
+          className={`w-full flex items-center justify-between p-2.5 rounded-2xl bg-[#18272f] border-2 transition-all text-left shadow-[0_3px_0_0_#101a1f] cursor-pointer group ${
+            activeSubject === 'physics' ? 'border-amber-500/40 hover:border-amber-400' : 'border-[#2e4756] hover:border-sky-500/60'
+          }`}
           title="Chọn môn học (Hóa học, Vật lý...)"
         >
           <div className="flex items-center gap-2.5 min-w-0">
@@ -105,10 +125,17 @@ export const DesktopSidebar: React.FC = () => {
         {/* 2. Navigation List */}
         <nav className="space-y-1.5">
           {NAV_ITEMS.map((item) => {
-            const Icon = item.icon;
+            // For Physics, replace chemistry flask with lightning bolt icon
+            const Icon = (item.to === '/practice' && activeSubject === 'physics') ? Zap : item.icon;
             const isActive = item.matchPrefix
               ? location.pathname.startsWith(item.matchPrefix)
               : location.pathname === item.to;
+
+            const activeColorClass = activeSubject === 'physics'
+              ? 'bg-[#eab308]/15 border-[#eab308] text-amber-300 shadow-[0_4px_0_0_#ca8a04]'
+              : 'bg-[#0ea5e9]/15 border-[#0ea5e9] text-[#38bdf8] shadow-[0_4px_0_0_#0284c7]';
+
+            const activeIconColor = activeSubject === 'physics' ? 'text-[#eab308]' : 'text-[#0ea5e9]';
 
             return (
               <NavLink
@@ -117,13 +144,13 @@ export const DesktopSidebar: React.FC = () => {
                 onClick={() => sound.playClick()}
                 className={`flex items-center gap-3.5 px-4 py-3.5 rounded-2xl text-xs font-black tracking-wider transition-all duration-150 cursor-pointer border-2 ${
                   isActive
-                    ? 'bg-[#0ea5e9]/15 border-[#0ea5e9] text-[#38bdf8] shadow-[0_4px_0_0_#0284c7] translate-y-[-2px]'
+                    ? `${activeColorClass} translate-y-[-2px]`
                     : 'border-transparent text-slate-400 hover:text-white hover:bg-[#18272f]'
                 }`}
               >
                 <Icon
                   className={`w-6 h-6 transition-transform ${
-                    isActive ? 'text-[#0ea5e9] scale-110' : 'text-slate-400'
+                    isActive ? `${activeIconColor} scale-110` : 'text-slate-400'
                   }`}
                 />
                 <span>{item.label}</span>

@@ -1,0 +1,75 @@
+{
+  "lessonId": "phy-g7-b04",
+  "nodeId": "phy-g7-b04-theory",
+  "title": "Lý thuyết: Tốc độ và an toàn giao thông",
+  "subtitle": "Bài 11 SGK Khoa học tự nhiên 7 (Kết nối tri thức)",
+  "sgkBaiSo": 11,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Luật giao thông",
+      "badgeColor": "cyan",
+      "title": "1. Biển báo giới hạn tốc độ",
+      "content": "Để đảm bảo an toàn, trên các tuyến đường giao thông đều có quy định giới hạn tốc độ lưu thông rõ ràng thông qua hệ thống biển báo:",
+      "bulletPoints": [
+        "Biển báo hạn chế tốc độ tối đa (Biển P.127): Hình tròn, viền đỏ, nền trắng, chữ số màu đen ghi tốc độ tối đa cho phép (ví dụ số 50, 60, 80 có đơn vị ngầm định là km/h).",
+        "Biển báo tốc độ tối thiểu cho phép: Hình tròn nền xanh lam, số màu trắng (thường gặp trên các đường cao tốc).",
+        "Biển báo hạn chế tốc độ theo làn đường: Quy định tốc độ riêng cho từng làn xe (xe con, xe tải, xe máy...)."
+      ],
+      "callout": "Ghi nhớ: Người điều khiển phương tiện phải tuân thủ nghiêm ngặt biển báo tốc độ; chạy quá tốc độ quy định là nguyên nhân hàng đầu gây ra tai nạn thảm khốc."
+    },
+    {
+      "id": "c2",
+      "badge": "Quy tắc an toàn",
+      "badgeColor": "amber",
+      "title": "2. Khoảng cách an toàn giữa hai xe & Quy tắc 3 giây",
+      "content": "Khi điều khiển phương tiện tham gia giao thông, người lái xe phải giữ một khoảng cách an toàn với xe chạy liền trước:",
+      "bulletPoints": [
+        "Quy tắc 3 giây (3-second rule): Khoảng cách an toàn tối thiểu (tính bằng mét) bằng tốc độ xe chạy (tính bằng m/s) nhân với thời gian 3 giây: s_an_toàn = v (m/s) * 3 s.",
+        "Quy định của Bộ Giao thông vận tải trên đường khô ráo: Khi chạy với tốc độ 60 km/h: khoảng cách tối thiểu là 35 m; từ 60 - 80 km/h: khoảng cách tối thiểu là 55 m; từ 80 - 100 km/h: tối thiểu 70 m; từ 100 - 120 km/h: tối thiểu 100 m.",
+        "Thời tiết xấu (mưa gió, sương mù, đường trơn trượt): Người lái xe bắt buộc phải chủ động giảm tốc độ và tăng khoảng cách an toàn lớn hơn quy định thông thường."
+      ],
+      "callout": "Lý giải quy tắc 3 giây: 3 giây gồm khoảng 1 giây phản xạ của tài xế (nhận biết nguy hiểm và đạp phanh) và 2 giây để hệ thống phanh hãm dừng xe."
+    },
+    {
+      "id": "c3",
+      "badge": "Vật lí & Đời sống",
+      "badgeColor": "emerald",
+      "title": "3. Tốc độ, quãng đường dừng xe và hậu quả va chạm",
+      "content": "Quãng đường dừng xe từ lúc tài xế thấy chướng ngại vật đến khi xe dừng hẳn gồm 2 phần:",
+      "bulletPoints": [
+        "Quãng đường phản ứng: s_phản_xạ = v * t_phản_xạ (trong thời gian tài xế kịp đạp phanh, xe vẫn chạy tiếp với tốc độ ban đầu v).",
+        "Quãng đường phanh: Quãng đường xe trượt tiếp dưới tác dụng của lực ma sát hãm phanh trước khi dừng hẳn.",
+        "Tốc độ càng cao -> động năng của xe càng lớn -> quãng đường phanh càng dài, lực va chạm càng khủng khiếp, gây nguy hiểm đến tính mạng."
+      ],
+      "callout": "Thông điệp an toàn: 'Nhanh một giây, chậm cả đời' - Hãy luôn làm chủ tốc độ khi tham gia giao thông!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Biển báo giao thông hình tròn, viền đỏ, nền trắng, ở giữa ghi số '50' màu đen (biển P.127) có ý nghĩa gì?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Tốc độ tối đa cho phép các phương tiện lưu thông là 50 km/h",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Tốc độ tối thiểu các phương tiện bắt buộc phải đạt là 50 km/h",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Khoảng cách an toàn giữa hai xe phải lớn hơn 50 m",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Tuyến đường cấm các xe có trọng tải trên 50 tấn",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo quy chuẩn biển báo giao thông đường bộ và SGK KHTN 7 Bài 11, biển P.127 hình tròn viền đỏ nền trắng ghi số là biển báo tốc độ tối đa cho phép (đơn vị km/h)."
+  }
+}

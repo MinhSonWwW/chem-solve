@@ -27,3 +27,5 @@ export * from './motion/useReducedMotion';
 export * from './components/ReactionVisualizer';
 export * from './components/CurrencyIcon';
 export * from './components/SubjectSelectorModal';
+export * from './components/PhysicsKeyboard';
+export * from './components/PhysicsVisualizer';

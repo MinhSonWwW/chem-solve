@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback, useMemo } from 'react';
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Sparkles, FlaskConical, Heart as HeartIcon } from 'lucide-react';
+import { X, Sparkles, FlaskConical, Heart as HeartIcon, Zap } from 'lucide-react';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import {
   Button,
@@ -26,11 +26,16 @@ import {
   SortPanel,
   FormulaBuilderPanel,
   ChemKeyboard,
+  PhysicsKeyboard,
+  PhysicsVisualizer,
+  type PhysicsVisualizerMode,
+  type PhysicsEffectData,
 } from '@/design-system';
 import { sound } from '@/lib/audio';
 import { loadExercisesForNode } from '@/content/contentLoader';
 import { loadSession, clearSession } from '@/engine/progress';
 import { GAMIFICATION } from '@/config/gamification';
+import { setActiveSubject } from '@/content/subjects';
 import type { Exercise } from '@/content/schema/exercise';
 import type { Verdict } from '@/engine/checkers/types';
 
@@ -45,15 +50,25 @@ const CHEMISTRY_TRIVIA = [
   'Muối ăn (NaCl) được tạo bởi kim loại hoạt động mạnh (Natri) và khí độc màu vàng lục (Clo).',
 ];
 
-const ChemicalLoadingScreen: React.FC = () => {
+const PHYSICS_TRIVIA = [
+  'Ánh sáng truyền đi trong chân không với tốc độ xấp xỉ 300 000 km/s — đi hết 7,5 vòng Trái Đất trong 1 giây!',
+  'Thủy ngân là kim loại duy nhất ở thể lỏng ở nhiệt độ phòng và có khối lượng riêng rất lớn: 13 600 kg/m³.',
+  'Trọng lực ở Mặt Trăng chỉ bằng khoảng 1/6 so với Trái Đất, giúp các nhà du hành nhảy rất cao!',
+  'Nhiệt kế y tế có chỗ thắt hẹp gần bầu để giữ mức thủy ngân không tự tụt xuống sau khi lấy ra khỏi cơ thể.',
+  'Thang nhiệt độ Celsius lấy điểm đóng băng của nước tinh khiết là 0 °C và điểm sôi là 100 °C.',
+  'Nhiệt độ thấp nhất trên thang Kelvin là Độ không tuyệt đối (0 K hay -273,15 °C), nơi mọi chuyển động nhiệt ngừng lại.',
+];
+
+const ChemicalLoadingScreen: React.FC<{ isPhysics?: boolean }> = ({ isPhysics }) => {
   const [triviaIndex, setTriviaIndex] = useState(0);
+  const triviaList = isPhysics ? PHYSICS_TRIVIA : CHEMISTRY_TRIVIA;
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setTriviaIndex((prev) => (prev + 1) % CHEMISTRY_TRIVIA.length);
+      setTriviaIndex((prev) => (prev + 1) % triviaList.length);
     }, 2800);
     return () => clearInterval(timer);
-  }, []);
+  }, [triviaList.length]);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[82dvh] px-4 select-none">
@@ -97,7 +112,7 @@ const ChemicalLoadingScreen: React.FC = () => {
           <div className="flex items-center justify-center gap-2">
             <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
             <span className="text-sm font-black text-slate-200 tracking-wide">
-              Đang chuẩn bị phòng thí nghiệm…
+              {isPhysics ? 'Đang chuẩn bị dụng cụ thí nghiệm…' : 'Đang chuẩn bị phòng thí nghiệm…'}
             </span>
           </div>
           <div className="w-full h-2 rounded-full bg-[#131f24] border border-[#2e4756] overflow-hidden p-0.5">
@@ -113,10 +128,10 @@ const ChemicalLoadingScreen: React.FC = () => {
         <div className="w-full bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] rounded-2xl p-4 text-left relative overflow-hidden">
           <div className="flex items-center gap-1.5 text-amber-400 text-[11px] font-black uppercase tracking-wider mb-1.5">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Góc khám phá Hóa học</span>
+            <span>{isPhysics ? 'Góc khám phá Vật lý' : 'Góc khám phá Hóa học'}</span>
           </div>
           <p className="text-xs text-slate-300 leading-relaxed min-h-[36px]">
-            {CHEMISTRY_TRIVIA[triviaIndex]}
+            {triviaList[triviaIndex]}
           </p>
         </div>
       </div>
@@ -129,7 +144,8 @@ export const ExercisePage: React.FC = () => {
   const { lessonId = 'g8-b03', nodeId = 'n01' } = useParams();
   const [searchParams] = useSearchParams();
   const isPracticeMode = searchParams.get('mode') === 'practice';
-  const gradeNumber = lessonId.match(/^g(\d)-/)?.[1] ?? '8';
+  const isPhysics = lessonId.startsWith('phy-');
+  const gradeNumber = lessonId.match(/(?:phy-)?g(\d)/)?.[1] ?? '8';
 
   const {
     hearts: _hearts,
@@ -166,6 +182,7 @@ export const ExercisePage: React.FC = () => {
   // ── Load exercises & resume ──
   useEffect(() => {
     let cancelled = false;
+    setActiveSubject(isPhysics ? 'physics' : 'chem');
 
     async function init() {
       try {
@@ -260,6 +277,184 @@ export const ExercisePage: React.FC = () => {
   const attemptsLeft = currentQ
     ? GAMIFICATION.maxAttempts - currentQ.attemptsCount
     : 0;
+
+  // ── Physics Interactive Sandbox / Mini-game Mode ──
+  const physicsVisualMode = useMemo<PhysicsVisualizerMode | null>(() => {
+    if (!isPhysics || !exercise) return null;
+    if (exercise.visual?.mode) {
+      return exercise.visual.mode as PhysicsVisualizerMode;
+    }
+    const lid = exercise.lessonId;
+    const pLower = (exercise.prompt || '').toLowerCase();
+
+    // 1. Potential energy & Gravitational height (Grade 9 Unit 1: Cơ năng, thế năng, độ cao)
+    if (
+      pLower.includes('thế năng') ||
+      pLower.includes('mốc thế năng') ||
+      pLower.includes('rơi từ') ||
+      pLower.includes('rơi tự do') ||
+      pLower.includes('thả rơi') ||
+      pLower.includes('gác lửng') ||
+      pLower.includes('lan can') ||
+      (pLower.includes('độ cao') && !pLower.includes('thước')) ||
+      exercise.skillIds?.some((s) => s.includes('potential'))
+    ) {
+      return 'potential-height';
+    }
+
+    // 2. Kinetic energy & Speed (Grade 9 Unit 1: Động năng, tốc độ)
+    if (
+      pLower.includes('động năng') ||
+      pLower.includes('tốc độ') ||
+      pLower.includes('vận tốc') ||
+      pLower.includes('m/s') ||
+      pLower.includes('km/h') ||
+      pLower.includes('quả bóng') ||
+      exercise.skillIds?.some((s) => s.includes('kinetic'))
+    ) {
+      return 'kinetic-speed';
+    }
+
+    // 3. Optics & Converging lens (Grade 9 Unit 2: Thấu kính, quang học)
+    if (
+      pLower.includes('thấu kính') ||
+      pLower.includes('tiêu cự') ||
+      pLower.includes('quang tâm') ||
+      pLower.includes('ảnh thật') ||
+      pLower.includes('ảnh ảo') ||
+      exercise.skillIds?.some((s) => s.includes('lens') || s.includes('optics'))
+    ) {
+      return 'optics-lens';
+    }
+
+    // 4. Circuit diagram (Grade 9 Unit 3 / Grade 8 / Grade 7 electricity)
+    if (
+      pLower.includes('đoạn mạch') ||
+      pLower.includes('mạch điện') ||
+      pLower.includes('định luật ôm') ||
+      pLower.includes('ampe kế') ||
+      pLower.includes('vôn kế') ||
+      (pLower.includes('điện trở') && !pLower.includes('thước'))
+    ) {
+      return 'circuit-diagram';
+    }
+
+    // 5. Spring stretch & Dynamometer (Specific to springs, NOT general weight)
+    if (
+      lid === 'phy-g6-b07' ||
+      lid === 'phy-g6-b08' ||
+      lid === 'phy-g6-b09' ||
+      pLower.includes('lò xo') ||
+      pLower.includes('lực kế') ||
+      pLower.includes('độ dãn')
+    ) {
+      return 'spring-scale';
+    }
+
+    // 6. Length measurement
+    if (lid === 'phy-g6-b01' || pLower.includes('thước kẻ') || pLower.includes('đo chiều dài') || pLower.includes('đcnn')) {
+      return 'ruler-measurement';
+    }
+
+    // 7. Temperature measurement
+    if (lid === 'phy-g6-b04' || pLower.includes('nhiệt kế') || pLower.includes('thang celsius')) {
+      return 'thermometer';
+    }
+
+    // 8. Vector Force representation
+    if (lid === 'phy-g6-b06' || pLower.includes('biểu diễn lực') || pLower.includes('mũi tên lực') || pLower.includes('tỉ xích')) {
+      return 'vector-force';
+    }
+
+    // 9. Lever & Balance (Grade 8)
+    if (lid.includes('don-bay') || pLower.includes('đòn bẩy') || pLower.includes('điểm tựa')) {
+      return 'lever-balance';
+    }
+
+    // 10. Moon phases & Orbit
+    if (lid === 'phy-g6-b18' || pLower.includes('mặt trăng') || pLower.includes('tuần trăng') || pLower.includes('pha mặt trăng')) {
+      return 'moon-phases';
+    }
+
+    // 11. Solar System & Celestial Bodies
+    if (
+      lid === 'phy-g6-b19' ||
+      lid === 'phy-g6-b20' ||
+      lid === 'phy-g6-b17' ||
+      pLower.includes('hành tinh') ||
+      pLower.includes('hệ mặt trời') ||
+      pLower.includes('ngân hà')
+    ) {
+      return 'solar-system';
+    }
+
+    return null;
+  }, [isPhysics, exercise]);
+
+  const physicsParams = useMemo(() => {
+    if (!exercise?.prompt) return undefined;
+    const p = exercise.prompt;
+
+    // Mass: m = 0,4 kg or 2.5 kg or 250 g
+    let mass: number | undefined;
+    const massKgMatch = p.match(/(?:m\s*=\s*|khối lượng\s*(?:là\s*)?)(\d+(?:[.,]\d+)?)\s*kg/i);
+    if (massKgMatch) {
+      mass = parseFloat(massKgMatch[1].replace(',', '.'));
+    } else {
+      const massGMatch = p.match(/(?:m\s*=\s*|khối lượng\s*(?:là\s*)?)(\d+(?:[.,]\d+)?)\s*g\b/i);
+      if (massGMatch) {
+        mass = parseFloat(massGMatch[1].replace(',', '.')) / 1000;
+      }
+    }
+
+    // Height: h = 6 m or 3,6 m
+    let height: number | undefined;
+    const heightMatch = p.match(/(?:h\s*=\s*|độ cao\s*(?:là\s*)?)(\d+(?:[.,]\d+)?)\s*m\b/i);
+    if (heightMatch) {
+      height = parseFloat(heightMatch[1].replace(',', '.'));
+    }
+
+    // Velocity / Speed: v = 15 m/s
+    let velocity: number | undefined;
+    const velocityMatch = p.match(/(?:v\s*=\s*|tốc độ\s*(?:là\s*)?)(\d+(?:[.,]\d+)?)\s*m\/s/i);
+    if (velocityMatch) {
+      velocity = parseFloat(velocityMatch[1].replace(',', '.'));
+    }
+
+    // Force: P = 250 N or F = 30 N
+    let force: number | undefined;
+    const forceMatch = p.match(/(?:[PF]\s*=\s*|lực\s*(?:là\s*)?)(\d+(?:[.,]\d+)?)\s*N\b/i);
+    if (forceMatch) {
+      force = parseFloat(forceMatch[1].replace(',', '.'));
+      if (force && !mass) {
+        mass = +(force / 10).toFixed(1);
+      }
+    }
+
+    // Focal length / distance for optics: f = 12 cm, d = 24 cm
+    let focalLength: number | undefined;
+    const fMatch = p.match(/(?:f\s*=\s*|tiêu cự\s*(?:là\s*)?)(\d+(?:[.,]\d+)?)\s*cm\b/i);
+    if (fMatch) {
+      focalLength = parseFloat(fMatch[1].replace(',', '.'));
+    }
+
+    let distance: number | undefined;
+    const dMatch = p.match(/(?:d\s*=\s*|khoảng cách\s*(?:là\s*)?)(\d+(?:[.,]\d+)?)\s*cm\b/i);
+    if (dMatch) {
+      distance = parseFloat(dMatch[1].replace(',', '.'));
+    }
+
+    return { mass, height, velocity, force, focalLength, distance };
+  }, [exercise?.prompt]);
+
+  const initialVisualValue = useMemo(() => {
+    if (!exercise?.prompt) return undefined;
+    const matchNum = exercise.prompt.match(/(\d+(?:[.,]\d+)?)\s*(?:g|cm|°C|N)/i);
+    if (matchNum) {
+      return parseFloat(matchNum[1].replace(',', '.'));
+    }
+    return undefined;
+  }, [exercise?.prompt]);
 
   // ── Handlers ──
   const handleSetInput = useCallback(
@@ -363,14 +558,35 @@ export const ExercisePage: React.FC = () => {
         }
       }
 
-      // 1, 2, 3, 4 shortcuts for MCQ when not typing in text field
-      if (!isInput && !isFeedbackVisible && exercise?.answer.kind === 'mcq-single') {
-        const keyNum = parseInt(e.key, 10);
-        if (keyNum >= 1 && keyNum <= exercise.answer.options.length) {
-          const opt = exercise.answer.options[keyNum - 1];
-          if (opt) {
-            sound.playClick();
-            handleSetInput(opt.id);
+      // 1, 2, 3, 4 and A, B, C, D shortcuts for MCQ when not typing in text field
+      if (!isInput && !isFeedbackVisible && exercise?.answer) {
+        let optIndex = -1;
+        const keyUpper = e.key.toUpperCase();
+        if (['1', '2', '3', '4'].includes(e.key)) {
+          optIndex = parseInt(e.key, 10) - 1;
+        } else if (['A', 'B', 'C', 'D'].includes(keyUpper)) {
+          optIndex = keyUpper.charCodeAt(0) - 65; // A -> 0, B -> 1, C -> 2, D -> 3
+        }
+
+        if (exercise.answer.kind === 'mcq-single') {
+          if (optIndex >= 0 && optIndex < exercise.answer.options.length) {
+            const opt = exercise.answer.options[optIndex];
+            if (opt) {
+              sound.playClick();
+              handleSetInput(opt.id);
+            }
+          }
+        } else if (exercise.answer.kind === 'mcq-multi') {
+          if (optIndex >= 0 && optIndex < exercise.answer.options.length) {
+            const opt = exercise.answer.options[optIndex];
+            if (opt) {
+              sound.playClick();
+              const current = (currentQ?.userInput as string[] | null) ?? [];
+              const next = current.includes(opt.id)
+                ? current.filter((x) => x !== opt.id)
+                : [...current, opt.id];
+              handleSetInput(next);
+            }
           }
         }
       }
@@ -407,7 +623,7 @@ export const ExercisePage: React.FC = () => {
 
   // ── Chemical Loading state ──
   if (loadingState === 'loading') {
-    return <ChemicalLoadingScreen />;
+    return <ChemicalLoadingScreen isPhysics={isPhysics} />;
   }
 
   // ── Error state ──
@@ -460,7 +676,7 @@ export const ExercisePage: React.FC = () => {
         </button>
 
         <div className="flex-1">
-          <Progress value={progressPercent} />
+          <Progress value={progressPercent} color={isPhysics ? 'amber' : 'primary'} />
         </div>
 
         {/* Practice Mode Badge */}
@@ -471,17 +687,21 @@ export const ExercisePage: React.FC = () => {
           </div>
         )}
 
-        {/* Chem Reference Button */}
+        {/* Reference Button */}
         <button
           onClick={() => {
             sound.playClick();
             setShowReferenceDrawer(true);
           }}
-          className="p-1.5 px-2 rounded-xl bg-slate-900 border border-slate-700/80 text-cyan-400 hover:text-cyan-300 hover:bg-slate-800 text-xs font-bold flex items-center gap-1 transition-colors cursor-pointer"
-          title="Tra cứu nguyên tử khối & hóa trị"
+          className={`p-1.5 px-2 rounded-xl bg-slate-900 border text-xs font-bold flex items-center gap-1 transition-colors cursor-pointer ${
+            isPhysics
+              ? 'border-amber-500/50 text-amber-300 hover:text-amber-200 hover:bg-slate-800'
+              : 'border-slate-700/80 text-cyan-400 hover:text-cyan-300 hover:bg-slate-800'
+          }`}
+          title={isPhysics ? 'Tra cứu công thức & hằng số Vật lý' : 'Tra cứu nguyên tử khối & hóa trị'}
         >
-          <FlaskConical className="w-3.5 h-3.5" />
-          <span className="hidden sm:inline">Tra cứu</span>
+          {isPhysics ? <Zap className="w-3.5 h-3.5 text-amber-400 fill-amber-400" /> : <FlaskConical className="w-3.5 h-3.5 text-cyan-400" />}
+          <span className="hidden sm:inline">{isPhysics ? 'Công thức' : 'Tra cứu'}</span>
         </button>
 
         <div className="flex items-center gap-1.5">
@@ -536,9 +756,15 @@ export const ExercisePage: React.FC = () => {
       >
         {/* Question meta & Review badge */}
         <div className="flex items-center justify-between">
-          <div className="text-[11px] font-black text-cyan-400 uppercase tracking-wide">
-            {lessonId} · Câu {sessionState.currentIndex + 1}/
-            {sessionState.questions.length}
+          <div
+            className={`text-[11px] font-black uppercase tracking-wide ${
+              isPhysics ? 'text-amber-400 flex items-center gap-1' : 'text-cyan-400'
+            }`}
+          >
+            {isPhysics && <Zap className="w-3.5 h-3.5 fill-amber-400" />}
+            <span>
+              {lessonId} · Câu {sessionState.currentIndex + 1}/{sessionState.questions.length}
+            </span>
           </div>
           {currentQ.isReview && (
             <span className="text-[11px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 px-2.5 py-0.5 rounded-xl flex items-center gap-1">
@@ -548,25 +774,45 @@ export const ExercisePage: React.FC = () => {
         </div>
 
         {/* Prompt Card */}
-        <Card variant="erlenmeyer" className="space-y-3">
-          <h2 className="text-base font-bold text-slate-100 leading-relaxed">
+        <Card
+          variant={isPhysics ? 'default' : 'erlenmeyer'}
+          className={`space-y-3 relative overflow-hidden ${
+            isPhysics
+              ? 'border-2 border-amber-500/40 bg-[#18272f] shadow-[0_6px_0_0_#131f24]'
+              : ''
+          }`}
+        >
+          {isPhysics && (
+            <div className="absolute -right-6 -top-6 w-24 h-24 bg-amber-500/10 rounded-full blur-xl pointer-events-none" />
+          )}
+          <h2 className="text-base font-bold text-slate-100 leading-relaxed relative z-10">
             {renderPrompt(exercise.prompt)}
           </h2>
 
           {/* Dữ kiện / Cần tìm chips */}
           {(exercise.given || exercise.find) && (
-            <div className="flex flex-wrap gap-2 pt-1">
+            <div className="flex flex-wrap gap-2 pt-1 relative z-10">
               {exercise.given?.map((g, i) => (
                 <span
                   key={i}
-                  className="text-[11px] bg-slate-800/80 border border-slate-700/80 text-slate-300 px-2.5 py-1 rounded-xl"
+                  className={`text-[11px] px-2.5 py-1 rounded-xl border ${
+                    isPhysics
+                      ? 'bg-slate-800/90 border-slate-700 text-amber-200'
+                      : 'bg-slate-800/80 border-slate-700/80 text-slate-300'
+                  }`}
                 >
                   📌 {renderPrompt(g.label)}: {g.value}
                   {g.unit ? ` ${g.unit}` : ''}
                 </span>
               ))}
               {exercise.find && (
-                <span className="text-[11px] bg-cyan-950/50 border border-cyan-800/60 text-cyan-300 px-2.5 py-1 rounded-xl">
+                <span
+                  className={`text-[11px] px-2.5 py-1 rounded-xl border ${
+                    isPhysics
+                      ? 'bg-amber-950/60 border-amber-500/60 text-amber-300'
+                      : 'bg-cyan-950/50 border-cyan-800/60 text-cyan-300'
+                  }`}
+                >
                   🎯 Cần tìm: {exercise.find.label}
                   {exercise.find.unit ? ` (${exercise.find.unit})` : ''}
                 </span>
@@ -574,6 +820,22 @@ export const ExercisePage: React.FC = () => {
             </div>
           )}
         </Card>
+
+        {/* Physics Interactive Mini-game / Sandbox directly integrated into lesson */}
+        {physicsVisualMode && (
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+            className="pt-0.5"
+          >
+            <PhysicsVisualizer
+              mode={physicsVisualMode}
+              initialValue={initialVisualValue}
+              params={physicsParams}
+            />
+          </motion.div>
+        )}
 
         {/* Answer Area — dynamic by kind */}
         <AnswerRenderer
@@ -583,6 +845,7 @@ export const ExercisePage: React.FC = () => {
           disabled={status === 'checking' || isCompleted}
           verdict={isFeedbackVisible ? lastVerdict ?? undefined : undefined}
           onShowChemKeyboard={() => setShowChemKeyboard(true)}
+          isPhysics={isPhysics}
         />
       </motion.div>
 
@@ -593,6 +856,11 @@ export const ExercisePage: React.FC = () => {
             variant="primary"
             size="lg"
             fullWidth
+            className={
+              isPhysics
+                ? 'bg-[#eab308] hover:bg-[#facc15] text-slate-950 font-black shadow-[0_4px_0_0_#ca8a04]'
+                : ''
+            }
             disabled={
               exercise.answer.kind === 'equation' && exercise.answer.mode === 'fill-coefficients'
                 ? false
@@ -621,65 +889,102 @@ export const ExercisePage: React.FC = () => {
       {(() => {
         let reactionEffect: { type: 'gas' | 'precipitate' | 'indicator'; color: string; label: string } | undefined;
         
-        // Exclude questions where ReactionVisualizer does NOT make sense:
-        // - Matching questions (like testing 4 different signs simultaneously)
-        // - Ordering steps questions
-        // - Numerical math calculations (moles, concentrations, masses)
-        // - Formula building
+        // Exclude questions where ReactionVisualizer does NOT make sense or when studying Physics:
         const isMultiOrStepAnswer = ['match', 'ordering', 'sort', 'formula-builder', 'number'].includes(exercise.answer.kind);
         const finalSolLower = (exercise.finalSolution || '').toLowerCase();
         const promptLower = (exercise.prompt || '').toLowerCase();
         
-        // Exclude general meta-discussion of signs (e.g., questions asking to list/distinguish signs)
-        const isGeneralPhenomenaQuestion = promptLower.includes('dấu hiệu') && (promptLower.includes('nối') || promptLower.includes('ghép') || isMultiOrStepAnswer);
+        // Strictly exclude Physics from chemistry precipitate/gas visualizers
+        if (isPhysics) {
+          reactionEffect = undefined;
+        } else {
+          // Exclude general meta-discussion of signs (e.g., questions asking to list/distinguish signs)
+          const isGeneralPhenomenaQuestion = promptLower.includes('dấu hiệu') && (promptLower.includes('nối') || promptLower.includes('ghép') || isMultiOrStepAnswer);
 
-        if ((status === 'correct' || status === 'revealed') && !isMultiOrStepAnswer && !isGeneralPhenomenaQuestion) {
-          // Specific indicator reaction
-          if (finalSolLower.includes('quỳ tím') || promptLower.includes('nhúng giấy quỳ') || promptLower.includes('nhỏ quỳ tím')) {
-            const isRed = finalSolLower.includes('đỏ') || promptLower.includes('acid') || promptLower.includes('axit');
-            const isBlue = finalSolLower.includes('xanh') || promptLower.includes('base') || promptLower.includes('bazơ');
-            if (isRed || isBlue) {
+          if ((status === 'correct' || status === 'revealed') && !isMultiOrStepAnswer && !isGeneralPhenomenaQuestion) {
+            // Specific indicator reaction
+            if (finalSolLower.includes('quỳ tím') || promptLower.includes('nhúng giấy quỳ') || promptLower.includes('nhỏ quỳ tím')) {
+              const isRed = finalSolLower.includes('đỏ') || promptLower.includes('acid') || promptLower.includes('axit');
+              const isBlue = finalSolLower.includes('xanh') || promptLower.includes('base') || promptLower.includes('bazơ');
+              if (isRed || isBlue) {
+                reactionEffect = {
+                  type: 'indicator',
+                  color: isRed ? '#ef4444' : '#3b82f6',
+                  label: isRed ? 'Hiện tượng: Quỳ tím hóa đỏ (Tính axit)' : 'Hiện tượng: Quỳ tím hóa xanh (Tính kiềm)',
+                };
+              }
+            }
+            // Specific precipitate reaction (must be affirmative specific precipitate, not "không kết tủa" or general listing)
+            else if (
+              (finalSolLower.includes('↓') || finalSolLower.includes('kết tủa') || promptLower.includes('kết tủa')) &&
+              !finalSolLower.includes('không có kết tủa') &&
+              !finalSolLower.includes('không tạo kết tủa') &&
+              !promptLower.includes('không tạo kết tủa')
+            ) {
+              const isBlue = finalSolLower.includes('cu(oh)2') || finalSolLower.includes('xanh lam') || finalSolLower.includes('màu xanh');
+              const isBrown = finalSolLower.includes('fe(oh)3') || finalSolLower.includes('nâu đỏ');
+              const isWhite = finalSolLower.includes('baso4') || finalSolLower.includes('caco3') || finalSolLower.includes('agcl') || finalSolLower.includes('trắng') || promptLower.includes('kết tủa trắng');
+              
+              // Only show if a specific color or formula precipitate is identified
+              if (isBlue || isBrown || isWhite || finalSolLower.includes('↓')) {
+                reactionEffect = {
+                  type: 'precipitate',
+                  color: isBlue ? '#38bdf8' : isBrown ? '#b45309' : '#ffffff',
+                  label: isBlue
+                    ? '↓ Hiện tượng: Kết tủa xanh lam Cu(OH)2'
+                    : isBrown
+                    ? '↓ Hiện tượng: Kết tủa nâu đỏ Fe(OH)3'
+                    : '↓ Hiện tượng: Kết tủa trắng',
+                };
+              }
+            }
+            // Specific gas evolution reaction
+            else if (
+              (finalSolLower.includes('↑') || finalSolLower.includes('sủi bọt khí') || finalSolLower.includes('thoát khí')) &&
+              !finalSolLower.includes('không thoát khí') &&
+              !promptLower.includes('không sinh ra khí')
+            ) {
               reactionEffect = {
-                type: 'indicator',
-                color: isRed ? '#ef4444' : '#3b82f6',
-                label: isRed ? 'Hiện tượng: Quỳ tím hóa đỏ (Tính axit)' : 'Hiện tượng: Quỳ tím hóa xanh (Tính kiềm)',
+                type: 'gas',
+                color: '#38bdf8',
+                label: '↑ Hiện tượng: Sủi bọt khí bay lên',
               };
             }
           }
-          // Specific precipitate reaction (must be affirmative specific precipitate, not "không kết tủa" or general listing)
-          else if (
-            (finalSolLower.includes('↓') || finalSolLower.includes('kết tủa') || promptLower.includes('kết tủa')) &&
-            !finalSolLower.includes('không có kết tủa') &&
-            !finalSolLower.includes('không tạo kết tủa') &&
-            !promptLower.includes('không tạo kết tủa')
-          ) {
-            const isBlue = finalSolLower.includes('cu(oh)2') || finalSolLower.includes('xanh lam') || finalSolLower.includes('màu xanh');
-            const isBrown = finalSolLower.includes('fe(oh)3') || finalSolLower.includes('nâu đỏ');
-            const isWhite = finalSolLower.includes('baso4') || finalSolLower.includes('caco3') || finalSolLower.includes('agcl') || finalSolLower.includes('trắng') || promptLower.includes('kết tủa trắng');
-            
-            // Only show if a specific color or formula precipitate is identified
-            if (isBlue || isBrown || isWhite || finalSolLower.includes('↓')) {
-              reactionEffect = {
-                type: 'precipitate',
-                color: isBlue ? '#38bdf8' : isBrown ? '#b45309' : '#ffffff',
-                label: isBlue
-                  ? '↓ Hiện tượng: Kết tủa xanh lam Cu(OH)2'
-                  : isBrown
-                  ? '↓ Hiện tượng: Kết tủa nâu đỏ Fe(OH)3'
-                  : '↓ Hiện tượng: Kết tủa trắng',
-              };
-            }
-          }
-          // Specific gas evolution reaction
-          else if (
-            (finalSolLower.includes('↑') || finalSolLower.includes('sủi bọt khí') || finalSolLower.includes('thoát khí')) &&
-            !finalSolLower.includes('không thoát khí') &&
-            !promptLower.includes('không sinh ra khí')
-          ) {
-            reactionEffect = {
-              type: 'gas',
-              color: '#38bdf8',
-              label: '↑ Hiện tượng: Sủi bọt khí bay lên',
+        }
+
+        let physicsEffect: PhysicsEffectData | undefined;
+
+        if (isPhysics && (status === 'correct' || status === 'revealed')) {
+          if (physicsVisualMode === 'potential-height') {
+            physicsEffect = {
+              type: 'energy-surge',
+              label: '⚡ Bừng sáng thế năng & cơ năng bảo toàn!',
+              detail: 'Thế năng cực đại tại đỉnh chuyển hóa trọn vẹn thành động năng khi chạm đất (W = Wt + Wđ = hằng số).',
+            };
+          } else if (physicsVisualMode === 'kinetic-speed') {
+            physicsEffect = {
+              type: 'motion-burst',
+              label: '⚡ Bừng sáng động năng & tốc độ!',
+              detail: 'Động năng tỉ lệ thuận với khối lượng và bình phương tốc độ (Wđ = ½ · m · v²).',
+            };
+          } else if (physicsVisualMode === 'circuit-diagram') {
+            physicsEffect = {
+              type: 'electric-spark',
+              label: '⚡ Mạch điện thông suốt - Định luật Ôm nghiệm đúng!',
+              detail: 'Cường độ dòng điện tỉ lệ thuận với hiệu điện thế và tỉ lệ nghịch với điện trở (I = U / R).',
+            };
+          } else if (physicsVisualMode === 'optics-lens') {
+            physicsEffect = {
+              type: 'optics-beam',
+              label: '💡 Chùm sáng khúc xạ chuẩn xác!',
+              detail: 'Đường truyền các tia sáng đặc biệt qua thấu kính hội tụ xác định đúng vị trí và tính chất của ảnh.',
+            };
+          } else {
+            physicsEffect = {
+              type: 'energy-surge',
+              label: '⚡ Thực hành vật lý chuẩn xác!',
+              detail: 'Bạn đã áp dụng đúng quy luật và biểu thức định lượng.',
             };
           }
         }
@@ -688,6 +993,7 @@ export const ExercisePage: React.FC = () => {
           <FeedbackSheet
             status={feedbackStatus}
             reactionEffect={reactionEffect}
+            physicsEffect={physicsEffect}
             solutionText={status === 'correct' ? exercise.finalSolution : undefined}
             explanation={status === 'correct' ? exercise.steps[exercise.steps.length - 1]?.body : undefined}
             hints={status === 'wrong' || status === 'revealed' ? exercise.hints : undefined}
@@ -699,13 +1005,22 @@ export const ExercisePage: React.FC = () => {
         );
       })()}
 
-      {/* 6. ChemKeyboard */}
-      <ChemKeyboard
-        visible={showChemKb && !isFeedbackVisible}
-        onInsert={handleChemInsert}
-        onDelete={handleChemDelete}
-        onClose={() => setShowChemKeyboard(false)}
-      />
+      {/* 6. On-screen Keyboard */}
+      {isPhysics ? (
+        <PhysicsKeyboard
+          visible={showChemKb && !isFeedbackVisible}
+          onInsert={handleChemInsert}
+          onDelete={handleChemDelete}
+          onClose={() => setShowChemKeyboard(false)}
+        />
+      ) : (
+        <ChemKeyboard
+          visible={showChemKb && !isFeedbackVisible}
+          onInsert={handleChemInsert}
+          onDelete={handleChemDelete}
+          onClose={() => setShowChemKeyboard(false)}
+        />
+      )}
 
       {/* 7. Modals & Drawers */}
       <QuitModal
@@ -736,6 +1051,7 @@ export const ExercisePage: React.FC = () => {
       <QuickReferenceDrawer
         isOpen={showReferenceDrawer}
         onClose={() => setShowReferenceDrawer(false)}
+        subject={isPhysics ? 'physics' : 'chem'}
       />
 
       <ComboBanner combo={comboCount} visible={showComboBanner} />
@@ -763,6 +1079,7 @@ interface AnswerRendererProps {
   disabled: boolean;
   verdict?: Verdict;
   onShowChemKeyboard: () => void;
+  isPhysics?: boolean;
 }
 
 const AnswerRenderer: React.FC<AnswerRendererProps> = ({
@@ -772,6 +1089,7 @@ const AnswerRenderer: React.FC<AnswerRendererProps> = ({
   disabled,
   verdict,
   onShowChemKeyboard,
+  isPhysics = false,
 }) => {
   const answer = exercise.answer;
 
@@ -835,9 +1153,11 @@ const AnswerRenderer: React.FC<AnswerRendererProps> = ({
           {!disabled && (
             <button
               onClick={onShowChemKeyboard}
-              className="mt-2 text-[11px] text-cyan-400 font-bold hover:text-cyan-300 transition-colors cursor-pointer"
+              className={`mt-2 text-[11px] font-bold transition-colors cursor-pointer ${
+                isPhysics ? 'text-amber-400 hover:text-amber-300' : 'text-cyan-400 hover:text-cyan-300'
+              }`}
             >
-              ⌨️ Mở bàn phím hóa học
+              {isPhysics ? '⌨️ Mở bàn phím vật lý & công thức' : '⌨️ Mở bàn phím hóa học'}
             </button>
           )}
         </div>

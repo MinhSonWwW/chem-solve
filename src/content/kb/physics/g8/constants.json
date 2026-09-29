@@ -1,0 +1,218 @@
+[
+  {
+    "id": "density.iron",
+    "name": "Khối lượng riêng của sắt",
+    "symbol": "D_Fe",
+    "value": 7800,
+    "unit": "kg/m^3",
+    "description": "Bảng 13.1 SGK KHTN 8 (KNTT): Sắt có D = 7 800 kg/m³ = 7,8 g/cm³"
+  },
+  {
+    "id": "density.aluminum",
+    "name": "Khối lượng riêng của nhôm",
+    "symbol": "D_Al",
+    "value": 2700,
+    "unit": "kg/m^3",
+    "description": "Bảng 13.1 SGK KHTN 8 (KNTT): Nhôm có D = 2 700 kg/m³ = 2,7 g/cm³"
+  },
+  {
+    "id": "density.copper",
+    "name": "Khối lượng riêng của đồng",
+    "symbol": "D_Cu",
+    "value": 8900,
+    "unit": "kg/m^3",
+    "description": "Bảng 13.1 SGK KHTN 8 (KNTT): Đồng có D = 8 900 kg/m³ = 8,9 g/cm³"
+  },
+  {
+    "id": "density.lead",
+    "name": "Khối lượng riêng của chì",
+    "symbol": "D_Pb",
+    "value": 11300,
+    "unit": "kg/m^3",
+    "description": "Bảng 13.1 SGK KHTN 8 (KNTT): Chì có D = 11 300 kg/m³ = 11,3 g/cm³"
+  },
+  {
+    "id": "density.gold",
+    "name": "Khối lượng riêng của vàng",
+    "symbol": "D_Au",
+    "value": 19300,
+    "unit": "kg/m^3",
+    "description": "Bảng 13.1 SGK KHTN 8 (KNTT): Vàng có D = 19 300 kg/m³ = 19,3 g/cm³"
+  },
+  {
+    "id": "density.silver",
+    "name": "Khối lượng riêng của bạc",
+    "symbol": "D_Ag",
+    "value": 10500,
+    "unit": "kg/m^3",
+    "description": "Bảng 13.1 SGK KHTN 8 (KNTT): Bạc có D = 10 500 kg/m³ = 10,5 g/cm³"
+  },
+  {
+    "id": "density.water",
+    "name": "Khối lượng riêng của nước nguyên chất",
+    "symbol": "D_nuoc",
+    "value": 1000,
+    "unit": "kg/m^3",
+    "description": "Bảng 13.1 SGK KHTN 8 (KNTT): Nước nguyên chất có D = 1 000 kg/m³ = 1 g/cm³ (d = 10 000 N/m³)"
+  },
+  {
+    "id": "density.alcohol",
+    "name": "Khối lượng riêng của rượu / cồn",
+    "symbol": "D_ruou",
+    "value": 800,
+    "unit": "kg/m^3",
+    "description": "Bảng 13.1 SGK KHTN 8 (KNTT): Cồn có D = 800 kg/m³ = 0,8 g/cm³"
+  },
+  {
+    "id": "density.oil",
+    "name": "Khối lượng riêng của dầu ăn",
+    "symbol": "D_dau",
+    "value": 800,
+    "unit": "kg/m^3",
+    "description": "Bảng 13.1 SGK KHTN 8 (KNTT): Dầu ăn có D = 800 kg/m³ = 0,8 g/cm³"
+  },
+  {
+    "id": "density.mercury",
+    "name": "Khối lượng riêng của thủy ngân",
+    "symbol": "D_Hg",
+    "value": 13600,
+    "unit": "kg/m^3",
+    "description": "Bảng 13.1 SGK KHTN 8 (KNTT): Thủy ngân có D = 13 600 kg/m³ = 13,6 g/cm³"
+  },
+  {
+    "id": "density.air",
+    "name": "Khối lượng riêng của không khí (0°C)",
+    "symbol": "D_kk",
+    "value": 1.29,
+    "unit": "kg/m^3",
+    "description": "Bảng 13.1 SGK KHTN 8 (KNTT): Không khí ở 0°C có D = 1,29 kg/m³"
+  },
+  {
+    "id": "pressure.atmospheric.standard",
+    "name": "Áp suất khí quyển tiêu chuẩn ở mặt biển",
+    "symbol": "p_0",
+    "value": 101325,
+    "unit": "Pa",
+    "description": "SGK KHTN 8 Bài 16: Áp suất khí quyển khoảng 101 325 Pa ~ 10^5 Pa tương đương 760 mmHg"
+  },
+  {
+    "id": "formula.density",
+    "name": "Công thức tính khối lượng riêng",
+    "symbol": "D = m / V",
+    "value": 0,
+    "unit": "",
+    "description": "SGK KHTN 8 Bài 13: D = m / V (D tính bằng kg/m³, m tính bằng kg, V tính bằng m³)"
+  },
+  {
+    "id": "formula.pressure.solid",
+    "name": "Công thức tính áp suất bề mặt",
+    "symbol": "p = F / S",
+    "value": 0,
+    "unit": "",
+    "description": "SGK KHTN 8 Bài 15: p = F / S (p tính bằng Pa = N/m², F tính bằng N, S tính bằng m²)"
+  },
+  {
+    "id": "formula.pressure.liquid",
+    "name": "Công thức tính áp suất chất lỏng",
+    "symbol": "p = d . h",
+    "value": 0,
+    "unit": "",
+    "description": "SGK KHTN 8 Bài 16: p = d . h = 10 . D . h (d là trọng lượng riêng N/m³, h là độ sâu m)"
+  },
+  {
+    "id": "formula.archimedes",
+    "name": "Công thức tính lực đẩy Archimedes",
+    "symbol": "F_A = d . V",
+    "value": 0,
+    "unit": "",
+    "description": "SGK KHTN 8 Bài 17: F_A = d . V (d là trọng lượng riêng chất lỏng, V là thể tích phần vật chìm trong chất lỏng)"
+  },
+  {
+    "id": "formula.moment",
+    "name": "Công thức tính moment lực",
+    "symbol": "M = F . d",
+    "value": 0,
+    "unit": "",
+    "description": "SGK KHTN 8 Bài 18: M = F . d (M tính bằng N.m, F tính bằng N, d là cánh tay đòn tính bằng m)"
+  },
+  {
+    "id": "formula.lever.balance",
+    "name": "Quy tắc cân bằng của đòn bẩy",
+    "symbol": "F_1 . d_1 = F_2 . d_2",
+    "value": 0,
+    "unit": "",
+    "description": "SGK KHTN 8 Bài 19: Đòn bẩy thăng bằng khi F_1 . d_1 = F_2 . d_2"
+  },
+  {
+    "id": "unit.current",
+    "name": "Đơn vị cường độ dòng điện",
+    "symbol": "A",
+    "value": 1,
+    "unit": "A",
+    "description": "SGK KHTN 8 Bài 24: Cường độ dòng điện đo bằng ampe (A), 1 A = 1 000 mA. Ampe kế mắc nối tiếp."
+  },
+  {
+    "id": "unit.voltage",
+    "name": "Đơn vị hiệu điện thế",
+    "symbol": "V",
+    "value": 1,
+    "unit": "V",
+    "description": "SGK KHTN 8 Bài 24: Hiệu điện thế đo bằng vôn (V), 1 kV = 1 000 V, 1 V = 1 000 mV. Vôn kế mắc song song."
+  },
+  {
+    "id": "circuit.diagram",
+    "name": "Sơ đồ và chiều dòng điện trong mạch điện",
+    "symbol": "I_mach",
+    "value": 0,
+    "unit": "",
+    "description": "SGK KHTN 8 Bài 22: Sơ đồ mạch điện quy ước; chiều dòng điện chạy từ cực dương qua dây dẫn và các thiết bị đến cực âm của nguồn."
+  },
+  {
+    "id": "effect.electric.current",
+    "name": "Các tác dụng của dòng điện",
+    "symbol": "T_dien",
+    "value": 0,
+    "unit": "",
+    "description": "SGK KHTN 8 Bài 23: Dòng điện có 5 tác dụng chính: nhiệt, phát sáng (quang), từ, hóa học và sinh lí."
+  },
+  {
+    "id": "measurement.current.voltage",
+    "name": "Kĩ thuật đo I và U trong mạch điện",
+    "symbol": "Do_I_U",
+    "value": 0,
+    "unit": "",
+    "description": "SGK KHTN 8 Bài 25: Ampe kế mắc nối tiếp, vôn kế mắc song song; kiểm tra điểm 0 và chọn GHĐ phù hợp."
+  },
+  {
+    "id": "thermal.internal.energy",
+    "name": "Năng lượng nhiệt, nội năng và nhiệt lượng",
+    "symbol": "U_nhiet",
+    "value": 0,
+    "unit": "J",
+    "description": "SGK KHTN 8 Bài 26: Nội năng gồm động năng và thế năng phân tử; nhiệt lượng Q (J, kJ); hai cách làm thay đổi nội năng: thực hiện công và truyền nhiệt."
+  },
+  {
+    "id": "thermal.joulemeter.measurement",
+    "name": "Đo năng lượng nhiệt bằng joulemeter",
+    "symbol": "E_joulemeter",
+    "value": 0,
+    "unit": "J",
+    "description": "SGK KHTN 8 Bài 27: Đo năng lượng nhiệt cung cấp cho nước bằng oát kế/joulemeter và nhiệt kế; E = P . t."
+  },
+  {
+    "id": "thermal.heat.transfer",
+    "name": "Ba hình thức truyền nhiệt",
+    "symbol": "Truyen_nhiet",
+    "value": 0,
+    "unit": "",
+    "description": "SGK KHTN 8 Bài 28: Dẫn nhiệt (chất rắn), đối lưu (chất lỏng, chất khí), bức xạ nhiệt (truyền qua được chân không)."
+  },
+  {
+    "id": "thermal.expansion",
+    "name": "Sự nở vì nhiệt của các chất",
+    "symbol": "No_vi_nhiet",
+    "value": 0,
+    "unit": "",
+    "description": "SGK KHTN 8 Bài 29: Khí nở nhiều hơn lỏng, lỏng nở nhiều hơn rắn; ứng dụng khe hở ray tàu, băng kép nhiệt ngắt rơle."
+  }
+]

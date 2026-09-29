@@ -1,0 +1,523 @@
+[
+  {
+    "id": "phy-g9-b14-mcq-001",
+    "lessonId": "phy-g9-b14",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "ac-magnetic-effect"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi cho dòng điện xoay chiều chạy qua một cuộn dây có lõi sắt non, cuộn dây có khả năng hút các đinh sắt nhỏ. Hiện tượng này chứng tỏ dòng điện xoay chiều có tác dụng nào sau đây?",
+    "knowledge": [
+      "formula.transformer"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tác dụng quang học thuần túy"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tác dụng hóa học"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tác dụng từ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tác dụng sinh học đơn thuần"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hút đinh sắt là tính chất đặc trưng của từ trường do nam châm sinh ra."
+      },
+      {
+        "level": 2,
+        "text": "Cuộn dây có dòng điện hút sắt chứng tỏ dòng điện có tác dụng từ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định tác dụng của dòng điện",
+        "body": "Khảo sát hiện tượng cuộn dây hút đinh sắt khi có dòng xoay chiều."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 15: Dòng điện xoay chiều có tác dụng nhiệt, quang, từ và sinh lý. Hiện tượng cuộn dây có lõi sắt hút các mẩu sắt thép là biểu hiện của tác dụng từ."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Tác dụng từ**."
+      }
+    ],
+    "finalSolution": "Cuộn dây hút đinh sắt chứng tỏ dòng điện xoay chiều có **tác dụng từ**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-effects",
+        "message": "Tác dụng nhiệt làm nóng vật dẫn; tác dụng phát sáng là tác dụng quang; hút sắt là TÁC DỤNG TỪ."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b14-mcq-002",
+    "lessonId": "phy-g9-b14",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "transmission-loss-reduction-method"
+    ],
+    "difficulty": 1,
+    "prompt": "Để giảm thiểu công suất hao phí do tỏa nhiệt trên đường dây truyền tải điện năng đi xa, biện pháp tối ưu và tiết kiệm nhất trong thực tế là gì?",
+    "knowledge": [
+      "formula.power.transmission.loss"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Thay toàn bộ dây dẫn bằng dây kim loại có đường kính siêu nhỏ"
+        },
+        {
+          "id": "opt-b",
+          "label": "Giảm hiệu điện thế ở đầu đường dây truyền tải xuống mức thấp nhất"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tăng hiệu điện thế đặt vào hai đầu đường dây truyền tải trước khi phát điện đi xa"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tăng điện trở của dây dẫn lên thật lớn"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Công thức hao phí là P_hp = R . P² / U²."
+      },
+      {
+        "level": 2,
+        "text": "Vì P_hp tỉ lệ nghịch với U², tăng U lên cao sẽ làm hao phí giảm đi rất nhiều mà không tốn kém dây dẫn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu bài toán",
+        "body": "Tìm biện pháp tối ưu giảm hao phí truyền tải điện năng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Công thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 15: Công suất hao phí do tỏa nhiệt là $P_{hp} = R \\frac{P^2}{U^2}$. Vì $P_{hp}$ tỉ lệ nghịch với bình phương hiệu điện thế $U^2$, nên biện pháp tốt nhất và kinh tế nhất là tăng hiệu điện thế $U$ lên cao bằng máy biến thế trước khi truyền tải."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Tăng hiệu điện thế đặt vào hai đầu đường dây truyền tải**."
+      }
+    ],
+    "finalSolution": "Biện pháp tối ưu nhất là **tăng hiệu điện thế $U$** đặt vào hai đầu đường dây truyền tải.",
+    "commonMistakes": [
+      {
+        "id": "reduce-u-mistake",
+        "message": "Nếu giảm U thì hao phí sẽ tăng vọt vì P_hp tỉ lệ nghịch với U²."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b14-mcq-003",
+    "lessonId": "phy-g9-b14",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "transformer-ac-only"
+    ],
+    "difficulty": 1,
+    "prompt": "Máy biến thế chỉ có thể làm biến đổi hiệu điện thế của loại dòng điện nào sau đây?",
+    "knowledge": [
+      "formula.transformer"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chỉ dòng điện tĩnh điện phóng tia lửa"
+        },
+        {
+          "id": "opt-b",
+          "label": "Chỉ dòng điện xoay chiều (AC)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chỉ dòng điện một chiều không đổi từ pin (DC)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cả dòng điện một chiều không đổi và dòng điện xoay chiều như nhau"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Máy biến thế hoạt động dựa trên hiện tượng cảm ứng điện từ."
+      },
+      {
+        "level": 2,
+        "text": "Từ trường phải biến thiên thì cuộn thứ cấp mới xuất hiện dòng cảm ứng, nên chỉ có dòng điện xoay chiều mới làm được điều này."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Điều kiện hoạt động máy biến thế",
+        "body": "Xác định nguồn điện có thể sử dụng với máy biến thế."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Nguyên lý cảm ứng",
+        "body": "Theo SGK KHTN 9 Bài 15: Máy biến thế hoạt động dựa trên hiện tượng cảm ứng điện từ. Dòng điện xoay chiều ở cuộn sơ cấp tạo ra từ trường biến thiên trong lõi sắt, từ đó cảm ứng sinh ra hiệu điện thế xoay chiều ở cuộn thứ cấp. Nếu dùng dòng một chiều không đổi, từ trường không biến thiên nên $U_2 = 0$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Chỉ dòng điện xoay chiều (AC)**."
+      }
+    ],
+    "finalSolution": "Máy biến thế **chỉ hoạt động với dòng điện xoay chiều (AC)**.",
+    "commonMistakes": [
+      {
+        "id": "assume-dc-works",
+        "message": "Dòng điện một chiều từ pin không tạo ra từ trường biến thiên nên không thể dùng máy biến thế để tăng/hạ áp."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b14-num-004",
+    "lessonId": "phy-g9-b14",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "transformer-calc-step-up"
+    ],
+    "difficulty": 2,
+    "prompt": "Một máy biến thế có cuộn sơ cấp gồm N1 = 500 vòng và cuộn thứ cấp gồm N2 = 10 000 vòng. Đặt vào hai đầu cuộn sơ cấp hiệu điện thế xoay chiều U1 = 220 V. Hiệu điện thế xoay chiều U2 thu được ở hai đầu cuộn thứ cấp là bao nhiêu vôn (V)?",
+    "knowledge": [
+      "formula.transformer"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 4400,
+      "unit": "V",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp dụng công thức máy biến thế: U1 / U2 = N1 / N2."
+      },
+      {
+        "level": 2,
+        "text": "U2 = U1 x (N2 / N1) = 220 x (10 000 / 500) = 220 x 20 = 4 400 V."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$N_1 = 500\\text{ vòng}$; $N_2 = 10\\,000\\text{ vòng}$; $U_1 = 220\\text{ V}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức máy biến thế",
+        "body": "$\\frac{U_1}{U_2} = \\frac{N_1}{N_2} \\Rightarrow U_2 = U_1 \\times \\frac{N_2}{N_1}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$U_2 = 220 \\times \\frac{10\\,000}{500} = 220 \\times 20 = 4\\,400\\text{ V}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hiệu điện thế ở cuộn thứ cấp là **4 400 V**."
+      }
+    ],
+    "finalSolution": "Hiệu điện thế thứ cấp: $U_2 = 220 \\times \\frac{10\\,000}{500} = 4\\,400\\text{ V}$ (đây là máy tăng thế).",
+    "commonMistakes": [
+      {
+        "id": "divide-instead-of-multiply",
+        "message": "Vì N2 > N1 nên đây là máy tăng thế, U2 phải lớn hơn U1: U2 = 4 400 V (không phải 11 V).",
+        "trapAnswers": [
+          "11",
+          "11 V"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b14-num-005",
+    "lessonId": "phy-g9-b14",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "transformer-calc-step-down-turns"
+    ],
+    "difficulty": 2,
+    "prompt": "Một củ sạc điện thoại là một máy hạ thế có cuộn sơ cấp gồm N1 = 4 400 vòng cắm vào nguồn điện sinh hoạt U1 = 220 V. Để lấy ra ở cuộn thứ cấp một hiệu điện thế an toàn U2 = 5 V cấp cho cổng USB, số vòng dây N2 của cuộn thứ cấp phải là bao nhiêu vòng?",
+    "knowledge": [
+      "formula.transformer"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 100,
+      "unit": "vòng",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp dụng công thức máy biến thế: U1 / U2 = N1 / N2."
+      },
+      {
+        "level": 2,
+        "text": "N2 = N1 x (U2 / U1) = 4 400 x (5 / 220) = 100 vòng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$N_1 = 4\\,400\\text{ vòng}$; $U_1 = 220\\text{ V}$; $U_2 = 5\\text{ V}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính số vòng cuộn thứ cấp",
+        "body": "Từ $\\frac{U_1}{U_2} = \\frac{N_1}{N_2} \\Rightarrow N_2 = N_1 \\times \\frac{U_2}{U_1}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$N_2 = 4\\,400 \\times \\frac{5}{220} = 20 \\times 5 = 100\\text{ vòng}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Số vòng dây của cuộn thứ cấp là **100 vòng**."
+      }
+    ],
+    "finalSolution": "Số vòng cuộn thứ cấp: $N_2 = 4\\,400 \\times \\frac{5}{220} = 100\\text{ vòng}$.",
+    "commonMistakes": [
+      {
+        "id": "invert-ratio",
+        "message": "Máy hạ thế nên N2 phải nhỏ hơn N1 rất nhiều: N2 = 100 vòng.",
+        "trapAnswers": [
+          "193600"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b14-num-006",
+    "lessonId": "phy-g9-b14",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "transformer-calc-secondary-voltage"
+    ],
+    "difficulty": 2,
+    "prompt": "Một máy biến áp có cuộn sơ cấp gồm N1 = 1 000 vòng và cuộn thứ cấp gồm N2 = 2 000 vòng. Đặt vào hai đầu cuộn sơ cấp hiệu điện thế xoay chiều U1 = 110 V. Hiệu điện thế xoay chiều ở hai đầu cuộn thứ cấp là bao nhiêu vôn (V)?",
+    "knowledge": [
+      "formula.transformer"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 220,
+      "unit": "V",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Số vòng dây cuộn thứ cấp gấp đôi số vòng cuộn sơ cấp: N2 = 2 . N1."
+      },
+      {
+        "level": 2,
+        "text": "Hiệu điện thế thứ cấp cũng gấp đôi: U2 = 2 x U1 = 2 x 110 = 220 V."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$N_1 = 1\\,000\\text{ vòng}$; $N_2 = 2\\,000\\text{ vòng}$; $U_1 = 110\\text{ V}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Tỉ số máy biến thế",
+        "body": "$\\frac{U_1}{U_2} = \\frac{N_1}{N_2} \\Rightarrow U_2 = U_1 \\times \\frac{N_2}{N_1}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$U_2 = 110 \\times \\frac{2\\,000}{1\\,000} = 110 \\times 2 = 220\\text{ V}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hiệu điện thế ở cuộn thứ cấp là **220 V**."
+      }
+    ],
+    "finalSolution": "Hiệu điện thế thứ cấp: $U_2 = 110 \\times \\frac{2\\,000}{1\\,000} = 220\\text{ V}$.",
+    "commonMistakes": [
+      {
+        "id": "divide-by-two",
+        "message": "N2 gấp 2 lần N1 nên U2 phải gấp đôi U1 (220 V), không thể giảm còn 55 V.",
+        "trapAnswers": [
+          "55",
+          "55 V"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b14-num-007",
+    "lessonId": "phy-g9-b14",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "transmission-loss-voltage-ratio"
+    ],
+    "difficulty": 3,
+    "prompt": "Theo công thức tính công suất hao phí khi truyền tải điện P_hp = R . P² / U², muốn làm giảm công suất hao phí do tỏa nhiệt trên đường dây đi 100 lần thì cần phải tăng hiệu điện thế U giữa hai đầu đường dây truyền tải lên bao nhiêu lần?",
+    "knowledge": [
+      "formula.power.transmission.loss"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 10,
+      "unit": "lần",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Công suất hao phí P_hp tỉ lệ nghịch với bình phương hiệu điện thế U²."
+      },
+      {
+        "level": 2,
+        "text": "Khi U tăng n lần thì P_hp giảm n² lần. Do đó n² = 100 => n = 10 lần."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mối quan hệ tỉ lệ",
+        "body": "Khảo sát sự phụ thuộc giữa $P_{hp}$ và $U$."
+      },
+      {
+        "kind": "equation",
+        "title": "Quy luật bình phương",
+        "body": "Từ công thức $P_{hp} = R \\frac{P^2}{U^2}$, ta thấy khi hiệu điện thế tăng $n$ lần ($U' = n \\cdot U$) thì $P'_{hp} = \\frac{P_{hp}}{n^2}$. Để hao phí giảm 100 lần thì $n^2 = 100$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$n = \\sqrt{100} = 10\\text{ lần}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cần tăng hiệu điện thế lên **10 lần**."
+      }
+    ],
+    "finalSolution": "Vì $P_{hp}$ tỉ lệ nghịch với $U^2$ nên muốn giảm hao phí 100 lần cần **tăng hiệu điện thế lên $\\sqrt{100} = 10\\text{ lần}$**.",
+    "commonMistakes": [
+      {
+        "id": "forget-square-root",
+        "message": "Nhiều bạn nghĩ tăng 100 lần; do tỉ lệ nghịch với U² nên chỉ cần tăng U lên căn bậc hai của 100 là 10 lần.",
+        "trapAnswers": [
+          "100",
+          "100 lần"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b14-num-008",
+    "lessonId": "phy-g9-b14",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "transmission-loss-calc-watts"
+    ],
+    "difficulty": 3,
+    "prompt": "Đường dây tải điện từ một trạm biến áp có tổng điện trở R = 10 Ω, truyền tải công suất điện P = 100 000 W ở hiệu điện thế U = 10 000 V. Công suất hao phí do tỏa nhiệt trên đường dây tải điện này là bao nhiêu oát (W)?",
+    "knowledge": [
+      "formula.power.transmission.loss"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 1000,
+      "unit": "W",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp dụng công thức P_hp = R . (P / U)²."
+      },
+      {
+        "level": 2,
+        "text": "P / U = 100 000 / 10 000 = 10 A. P_hp = 10 x 10² = 10 x 100 = 1 000 W."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$R = 10\\,\\Omega$; $P = 100\\,000\\text{ W}$; $U = 10\\,000\\text{ V}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức công suất hao phí",
+        "body": "$P_{hp} = R \\cdot \\frac{P^2}{U^2} = R \\cdot \\left(\\frac{P}{U}\\right)^2$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$\\frac{P}{U} = \\frac{100\\,000}{10\\,000} = 10\\text{ A}$. Suy ra $P_{hp} = 10 \\times 10^2 = 10 \\times 100 = 1\\,000\\text{ W}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Công suất hao phí trên đường dây là **1 000 W** (1 kW)."
+      }
+    ],
+    "finalSolution": "Công suất hao phí: $P_{hp} = R \\cdot \\left(\\frac{P}{U}\\right)^2 = 10 \\times 10^2 = 1\\,000\\text{ W}$.",
+    "commonMistakes": [
+      {
+        "id": "forget-square-current",
+        "message": "Bạn đã quên bình phương tỉ số (P/U): P_hp = R * (P/U)² = 10 * 100 = 1 000 W (không phải 10 * 10 = 100 W).",
+        "trapAnswers": [
+          "100",
+          "100 W"
+        ]
+      }
+    ]
+  }
+]

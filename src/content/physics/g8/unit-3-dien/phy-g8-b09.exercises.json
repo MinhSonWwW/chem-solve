@@ -1,0 +1,557 @@
+[
+  {
+    "id": "phy-g8-b09-mcq-001",
+    "lessonId": "phy-g8-b09",
+    "sgkBaiSo": 21,
+    "skillIds": [
+      "electric-current-definition"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong vật lí học, 'dòng điện' được định nghĩa là:",
+    "knowledge": [
+      "unit.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Dòng các phân tử nước chảy trong đường ống"
+        },
+        {
+          "id": "opt-b",
+          "label": "Dòng các nguyên tử chuyển động hỗn loạn không theo hướng nào"
+        },
+        {
+          "id": "opt-c",
+          "label": "Dòng các điện tích đứng yên bất động"
+        },
+        {
+          "id": "opt-d",
+          "label": "Dòng các điện tích dịch chuyển có hướng"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Dòng điện bắt buộc phải có sự tham gia của các hạt mang điện tích."
+      },
+      {
+        "level": 2,
+        "text": "Các điện tích này phải chuyển động cùng theo một hướng xác định (dịch chuyển có hướng)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định định nghĩa",
+        "body": "Đề bài yêu cầu nêu định nghĩa khoa học của dòng điện."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 21), dòng điện là dòng các điện tích dịch chuyển có hướng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Dòng các điện tích dịch chuyển có hướng**."
+      }
+    ],
+    "finalSolution": "Dòng điện là **dòng các điện tích dịch chuyển có hướng**.",
+    "commonMistakes": [
+      {
+        "id": "random-movement-trap",
+        "message": "Nếu các điện tích chuyển động hỗn loạn nhiệt theo mọi hướng thì tổng hợp lại không sinh ra dòng điện; chỉ khi dịch chuyển CÓ HƯỚNG mới tạo thành dòng điện."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b09-mcq-002",
+    "lessonId": "phy-g8-b09",
+    "sgkBaiSo": 21,
+    "skillIds": [
+      "metal-current-electrons"
+    ],
+    "difficulty": 1,
+    "prompt": "Bản chất của dòng điện chạy trong các dây dẫn bằng kim loại (như dây đồng, dây nhôm) là:",
+    "knowledge": [
+      "unit.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Dòng các hạt nhân nguyên tử kim loại dịch chuyển"
+        },
+        {
+          "id": "opt-b",
+          "label": "Dòng các nguyên tử đồng và nhôm chuyển động tịnh tiến"
+        },
+        {
+          "id": "opt-c",
+          "label": "Dòng các photon ánh sáng chạy bên trong dây dẫn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Dòng các electron tự do dịch chuyển có hướng"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trong kim loại, loại hạt nào có thể dễ dàng tách khỏi nguyên tử và tự do chuyển động?"
+      },
+      {
+        "level": 2,
+        "text": "Đó chính là các hạt electron tự do mang điện tích âm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất vi mô",
+        "body": "Tìm loại hạt tải điện tạo nên dòng điện trong vật liệu kim loại."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8, trong kim loại có chứa nhiều electron tự do. Dòng điện trong kim loại là dòng các electron tự do dịch chuyển có hướng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Dòng các electron tự do dịch chuyển có hướng**."
+      }
+    ],
+    "finalSolution": "Dòng điện trong kim loại là **dòng các electron tự do dịch chuyển có hướng**.",
+    "commonMistakes": [
+      {
+        "id": "nucleus-movement-mistake",
+        "message": "Các hạt nhân kim loại cố định tạo thành mạng tinh thể, chỉ dao động tại chỗ chứ không chạy dọc theo dây dẫn."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b09-mcq-003",
+    "lessonId": "phy-g8-b09",
+    "sgkBaiSo": 21,
+    "skillIds": [
+      "electric-source-recognition"
+    ],
+    "difficulty": 1,
+    "prompt": "Thiết bị nào sau đây đóng vai trò là một 'nguồn điện' có khả năng cung cấp dòng điện để thắp sáng bóng đèn?",
+    "knowledge": [
+      "unit.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chiếc công tắc điện bằng nhựa"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bóng đèn sợi đốt"
+        },
+        {
+          "id": "opt-c",
+          "label": "Đoạn dây dẫn bằng đồng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Viên pin tiểu hoặc bình ắc quy"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nguồn điện là thiết bị tạo ra và duy trì dòng điện, chứa sẵn năng lượng điện."
+      },
+      {
+        "level": 2,
+        "text": "Pin và ắc quy là các nguồn điện hóa học thông dụng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân biệt thiết bị điện",
+        "body": "Xác định thiết bị là nguồn điện trong số các bộ phận của mạch điện."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Nguồn điện",
+        "body": "Pin và ắc quy là nguồn điện. Bóng đèn là thiết bị tiêu thụ điện. Công tắc là thiết bị đóng ngắt. Dây dẫn để truyền tải dòng điện."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nguồn điện là **Viên pin tiểu hoặc bình ắc quy**."
+      }
+    ],
+    "finalSolution": "**Viên pin tiểu hoặc bình ắc quy** đóng vai trò là nguồn điện cung cấp năng lượng cho mạch hoạt động.",
+    "commonMistakes": [
+      {
+        "id": "confuse-consumer-with-source",
+        "message": "Bóng đèn tiêu thụ điện năng để phát sáng, bóng đèn không phải là nguồn phát sinh điện."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b09-mcq-004",
+    "lessonId": "phy-g8-b09",
+    "sgkBaiSo": 21,
+    "skillIds": [
+      "electron-drift-direction"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi nối hai đầu dây kim loại với hai cực của một viên pin để tạo thành mạch kín, các electron tự do trong dây kim loại sẽ dịch chuyển theo chiều nào?",
+    "knowledge": [
+      "unit.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Đứng yên bất động không dịch chuyển"
+        },
+        {
+          "id": "opt-b",
+          "label": "Chuyển động từ giữa dây tỏa đều sang hai đầu cực"
+        },
+        {
+          "id": "opt-c",
+          "label": "Từ cực dương qua dây kim loại đến cực âm của viên pin"
+        },
+        {
+          "id": "opt-d",
+          "label": "Từ cực âm qua dây kim loại đến cực dương của viên pin"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hạt electron mang điện tích âm (-)."
+      },
+      {
+        "level": 2,
+        "text": "Hạt mang điện âm bị cực âm (-) của pin đẩy và bị cực dương (+) của pin hút."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích lực tác dụng lên electron",
+        "body": "Electron mang điện tích âm (-), cực âm của nguồn điện mang điện âm, cực dương mang điện dương."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tương tác tĩnh điện",
+        "body": "Cực âm đẩy electron âm, cực dương hút electron âm. Do đó các electron tự do dịch chuyển từ cực âm sang cực dương của nguồn điện."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Chiều chuyển dời là **Từ cực âm qua dây kim loại đến cực dương của viên pin**."
+      }
+    ],
+    "finalSolution": "Các electron tự do mang điện tích âm nên bị cực âm đẩy và cực dương hút, dịch chuyển **từ cực âm qua dây kim loại đến cực dương của pin**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-with-conventional-current",
+        "message": "Chiều quy ước của dòng điện là từ dương sang âm, nhưng chiều thực tế của hạt electron tự do trong kim loại lại đi ngược lại: từ cực âm sang cực dương."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b09-mcq-005",
+    "lessonId": "phy-g8-b09",
+    "sgkBaiSo": 21,
+    "skillIds": [
+      "battery-poles-identification"
+    ],
+    "difficulty": 2,
+    "prompt": "Quan sát một viên pin tròn hình trụ thông dụng (như pin tiểu AA hoặc pin đũa AAA 1,5V), hai cực dương và cực âm của pin được nhận biết như thế nào?",
+    "knowledge": [
+      "unit.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vỏ bọc xung quanh là cực dương, hai đầu là cực âm"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cả hai đầu đều là cực dương (+)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Đầu có núm nhô lên là cực âm (-), đáy phẳng là cực dương (+)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Đầu có núm kim loại nhô lên là cực dương (+), đáy phẳng ở đầu kia là cực âm (-)"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi lắp pin vào điều khiển tivi, đầu có núm nhô thường có kí hiệu dấu (+)."
+      },
+      {
+        "level": 2,
+        "text": "Đầu có núm nhô lên là cực dương (+), đáy phẳng ép vào lò xo là cực âm (-)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận biết cực của pin",
+        "body": "Quy ước cấu tạo cực dương và cực âm của pin khô hình trụ thông dụng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy ước chuẩn SGK",
+        "body": "Theo SGK KHTN 8, đầu có núm kim loại nhỏ nhô lên là cực dương (+), đáy phẳng bằng kim loại ở đầu đối diện là cực âm (-)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đầu có núm nhô là **cực dương (+)**, đáy phẳng là **cực âm (-)**."
+      }
+    ],
+    "finalSolution": "Quy chuẩn pin tiểu: **Đầu có núm nhô lên là cực dương (+)**, đáy phẳng ở đầu đối diện là **cực âm (-)**.",
+    "commonMistakes": [
+      {
+        "id": "inverted-battery-poles",
+        "message": "Nhiều bạn nhầm đáy phẳng là cực dương. Nhớ rằng đáy phẳng luôn tiếp xúc với lò xo của khay pin (cực âm)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b09-mcq-006",
+    "lessonId": "phy-g8-b09",
+    "sgkBaiSo": 21,
+    "skillIds": [
+      "power-source-role"
+    ],
+    "difficulty": 2,
+    "prompt": "Vai trò quan trọng nhất của nguồn điện (như pin, máy phát điện, ắc quy) trong một hệ thống mạch điện là gì?",
+    "knowledge": [
+      "unit.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Làm mát các bóng đèn để đèn không bị cháy"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tự động tắt nguồn khi trời mưa gió"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hút hết không khí trong dây dẫn điện"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cung cấp năng lượng điện và duy trì dòng điện liên tục cho các thiết bị hoạt động"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nếu không có nguồn điện thì mạch điện có hoạt động được không?"
+      },
+      {
+        "level": 2,
+        "text": "Nguồn điện tạo ra hiệu điện thế giúp duy trì dòng chuyển dời có hướng của các điện tích."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Chức năng của nguồn điện",
+        "body": "Xác định vai trò của nguồn điện trong việc duy trì mạch điện hoạt động."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Nguồn điện có khả năng cung cấp và duy trì dòng điện liên tục để các thiết bị điện (đèn, quạt, máy móc) hoạt động."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Vai trò là **Cung cấp năng lượng điện và duy trì dòng điện liên tục**."
+      }
+    ],
+    "finalSolution": "Nguồn điện có vai trò **cung cấp năng lượng điện và duy trì dòng điện liên tục** cho các thiết bị tiêu thụ điện.",
+    "commonMistakes": [
+      {
+        "id": "creates-charges-misconception",
+        "message": "Nguồn điện không tự tạo ra các hạt điện tích mới (các electron đã có sẵn trong kim loại), nguồn điện chỉ cung cấp năng lượng đẩy các electron dịch chuyển có hướng."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b09-tf-007",
+    "lessonId": "phy-g8-b09",
+    "sgkBaiSo": 21,
+    "skillIds": [
+      "current-and-source-tf"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai của các khẳng định sau về dòng điện và nguồn điện:",
+    "knowledge": [
+      "unit.current"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Các nguồn điện hóa học như pin và ắc quy hoạt động dựa trên sự biến đổi hóa năng thành điện năng.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Dòng điện trong dây dẫn bằng đồng là do các hạt ion dương của đồng dịch chuyển dọc theo chiều dài của dây.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Chiếc pin cúc áo nhỏ gọn trong đồng hồ đeo tay là một nguồn điện một chiều có hai cực dương và âm.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trong pin xảy ra phản ứng hóa học sinh ra điện tích."
+      },
+      {
+        "level": 2,
+        "text": "Trong kim loại chỉ có electron tự do chuyển động, ion dương đứng yên tại các nút mạng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 1",
+        "body": "Phản ứng hóa học trong pin tạo ra điện năng -> Đúng."
+      },
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 2",
+        "body": "Hạt tải điện trong đồng là electron tự do, không phải ion dương -> Mệnh đề 2 Sai."
+      },
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 3",
+        "body": "Pin cúc áo là nguồn điện một chiều có hai cực (+/-) -> Đúng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự: Đúng - Sai - Đúng."
+      }
+    ],
+    "finalSolution": "Mệnh đề 1: **Đúng**; Mệnh đề 2: **Sai**; Mệnh đề 3: **Đúng**.",
+    "commonMistakes": [
+      {
+        "id": "ion-flow-in-metal-mistake",
+        "message": "Ion chỉ dịch chuyển trong chất điện phân (dung dịch axit, bazo, muối), trong kim loại chỉ có electron tự do dịch chuyển."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b09-mcq-008",
+    "lessonId": "phy-g8-b09",
+    "sgkBaiSo": 21,
+    "skillIds": [
+      "graphite-vs-wood-conductivity"
+    ],
+    "difficulty": 3,
+    "prompt": "Một chiếc bút chì thông thường gồm có lõi ruột chì màu đen và phần vỏ bọc bằng gỗ bên ngoài. Vì sao ruột bút chì có thể dẫn điện thắp sáng bóng đèn, trong khi vỏ gỗ khô bên ngoài lại là vật liệu cách điện hoàn toàn?",
+    "knowledge": [
+      "unit.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vỏ gỗ bị quét sơn nên chặn hết tia laser điện"
+        },
+        {
+          "id": "opt-b",
+          "label": "Ruột bút chì mềm hơn vỏ gỗ nên điện dễ đi qua hơn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ruột bút chì làm từ than chì có nhiều electron tự do dịch chuyển được, còn vỏ gỗ không có hạt mang điện tự do"
+        },
+        {
+          "id": "opt-d",
+          "label": "Ruột bút chì được cắm sẵn một viên pin siêu nhỏ bên trong"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Điều kiện để một chất dẫn được điện là trong chất đó phải có sẵn các hạt mang điện tích tự do."
+      },
+      {
+        "level": 2,
+        "text": "Than chì (graphite) có các electron liên kết lỏng lẻo dễ dàng chuyển động tự do, còn gỗ khô là chất cách điện không có điện tích tự do."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Điều kiện dẫn điện",
+        "body": "Giải thích tính dẫn điện của than chì và tính cách điện của gỗ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cấu trúc vi mô",
+        "body": "Vật dẫn điện là vật có chứa các hạt mang điện tích tự do (như electron tự do). Than chì (ruột bút chì) có các electron tự do nên dẫn điện. Gỗ khô là chất cách điện vì các electron liên kết chặt chẽ với nguyên tử, không có hạt mang điện tự do dịch chuyển."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Ruột bút chì dẫn điện vì **có nhiều electron tự do**, vỏ gỗ **không có hạt mang điện tự do**."
+      }
+    ],
+    "finalSolution": "Ruột bút chì (than chì graphite) dẫn điện vì **có các electron tự do chuyển động được**, còn vỏ gỗ khô là chất cách điện vì **không có các hạt mang điện tự do**.",
+    "commonMistakes": [
+      {
+        "id": "hardness-determines-conduction",
+        "message": "Độ cứng hay mềm không quyết định tính dẫn điện; tính dẫn điện phụ thuộc vào sự tồn tại của các hạt mang điện tích tự do bên trong vật chất."
+      }
+    ]
+  }
+]

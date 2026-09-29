@@ -1,0 +1,73 @@
+{
+  "lessonId": "phy-g6-b09",
+  "nodeId": "phy-g6-b09-theory",
+  "title": "Lý thuyết: Lực ma sát",
+  "subtitle": "Bài 44 SGK Khoa học tự nhiên 6 (Kết nối tri thức)",
+  "sgkBaiSo": 44,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm cốt lõi",
+      "badgeColor": "cyan",
+      "title": "1. Khái niệm và phân loại lực ma sát",
+      "content": "Lực ma sát là lực tiếp xúc xuất hiện ở bề mặt tiếp xúc giữa hai vật, có tác dụng cản trở chuyển động của vật này so với vật kia.",
+      "bulletPoints": [
+        "Lực ma sát trượt: Xuất hiện khi một vật trượt trên bề mặt của vật khác (ví dụ: kéo khúc gỗ trượt trên sàn, má phanh ép vào vành bánh xe đạp).",
+        "Lực ma sát nghỉ: Xuất hiện khi một vật chịu tác dụng của lực nhưng vẫn đứng yên trên bề mặt vật khác (ví dụ: đẩy một chiếc tủ nặng nhưng tủ chưa chuyển động; lực ma sát nghỉ giữa bàn chân và mặt đất giúp con người bước đi mà không bị trượt ngã)."
+      ],
+      "callout": "Phương của lực ma sát luôn song song với bề mặt tiếp xúc, chiều ngược với chiều chuyển động hoặc xu hướng chuyển động của vật."
+    },
+    {
+      "id": "c2",
+      "badge": "Yếu tố ảnh hưởng",
+      "badgeColor": "amber",
+      "title": "2. Các yếu tố ảnh hưởng đến độ lớn lực ma sát",
+      "content": "Độ lớn của lực ma sát phụ thuộc vào hai yếu tố chính:",
+      "bulletPoints": [
+        "Tính chất bề mặt tiếp xúc: Bề mặt càng gồ ghề, thô ráp thì lực ma sát càng lớn; bề mặt càng nhẵn bóng thì lực ma sát càng nhỏ.",
+        "Lực ép lên bề mặt: Lực ép của vật lên bề mặt càng lớn thì lực ma sát càng lớn (vật càng nặng thì càng khó đẩy trượt).",
+        "Lưu ý: Độ lớn lực ma sát trượt không phụ thuộc vào diện tích tiếp xúc của vật."
+      ],
+      "callout": "Ví dụ: Kéo một bao xi măng trên đường cát thô ráp tốn nhiều sức hơn rất nhiều so với kéo trên sàn gạch hoa bóng loáng."
+    },
+    {
+      "id": "c3",
+      "badge": "Ứng dụng đời sống",
+      "badgeColor": "emerald",
+      "title": "3. Lực ma sát trong đời sống: Có lợi và có hại",
+      "content": "Trong cuộc sống hằng ngày, lực ma sát vừa có ích vừa có hại:",
+      "bulletPoints": [
+        "Lực ma sát có lợi: Giúp ta cầm nắm được đồ vật trên tay, giúp phấn bám vào bảng đen, giúp người đi bộ không bị trượt ngã, giúp xe dừng lại khi phanh $\\rightarrow$ Cách tăng ma sát: xẻ rãnh khía trên lốp xe và đế giày, rải cát lên đường trơn tuyết.",
+        "Lực ma sát có hại: Làm mòn đế giày, lốp xe, làm nóng máy, gây cản trở chuyển động và hao phí năng lượng $\\rightarrow$ Cách giảm ma sát: tra dầu mỡ bôi trơn vào xích xe và trục quay, lắp ổ bi (chuyển ma sát trượt thành ma sát lăn), làm nhẵn bóng các chi tiết máy."
+      ],
+      "callout": "Nếu hoàn toàn không có ma sát, chúng ta không thể đứng vững, không thể cầm bút viết và xe cộ không thể nào di chuyển được!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Biện pháp nào sau đây có tác dụng làm GIẢM lực ma sát có hại?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Tra dầu mỡ bôi trơn vào xích líp xe đạp và ổ trục quay",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Khía rãnh sâu trên bề mặt lốp xe máy và đế giày",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Rải cát lên đoạn đường bị trơn trượt do bùn lầy",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Bôi bột phấn magiê vào lòng bàn tay trước khi nâng tạ",
+        "correct": false
+      }
+    ],
+    "explanation": "Tra dầu nhớt bôi trơn giúp bề mặt kim loại trơn tru hơn, làm giảm đáng kể lực ma sát trượt gây mòn và nóng máy."
+  }
+}

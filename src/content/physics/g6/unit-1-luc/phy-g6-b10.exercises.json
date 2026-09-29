@@ -1,0 +1,416 @@
+[
+  {
+    "id": "phy-g6-b10-mcq-001",
+    "lessonId": "phy-g6-b10",
+    "sgkBaiSo": 45,
+    "skillIds": [
+      "water-drag-direction"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi một chiếc thuyền đang chuyển động tiến về phía trước trên mặt hồ, lực cản của nước tác dụng lên thân thuyền có hướng như thế nào?",
+    "knowledge": [
+      "force.water.drag"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cùng chiều với chiều chuyển động tiến lên của chiếc thuyền"
+        },
+        {
+          "id": "opt-b",
+          "label": "Phương thẳng đứng hướng từ dưới đáy hồ lên trên"
+        },
+        {
+          "id": "opt-c",
+          "label": "Phương thẳng đứng hướng từ trên xuống dưới đáy hồ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Ngược chiều với chiều chuyển động của chiếc thuyền"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đã là lực cản thì nó luôn có tác dụng chống lại chuyển động của vật."
+      },
+      {
+        "level": 2,
+        "text": "Thuyền tiến tới trước thì lực cản của nước tác dụng ngược chiều lại (hướng về phía sau)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định hướng của lực cản",
+        "body": "Đặc trưng chiều của lực cản chất lưu tác dụng lên vật chuyển động."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc vật lý",
+        "body": "Lực cản của nước luôn tác dụng ngược chiều với chiều chuyển động của vật trong nước, làm cản trở chuyển động."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Lực cản có chiều **Ngược chiều với chiều chuyển động của chiếc thuyền**."
+      }
+    ],
+    "finalSolution": "Lực cản của nước luôn **ngược chiều với chiều chuyển động** của vật.",
+    "commonMistakes": [
+      {
+        "id": "confused-buoyancy",
+        "message": "Hướng từ dưới đáy lên trên là lực đẩy Ác-si-mét, không phải lực cản chuyển động."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b10-mcq-002",
+    "lessonId": "phy-g6-b10",
+    "sgkBaiSo": 45,
+    "skillIds": [
+      "water-vs-air-drag"
+    ],
+    "difficulty": 1,
+    "prompt": "So sánh lực cản khi bạn cùng chạy một đoạn đường 20 mét ở trên bờ (trong không khí) và chạy ở trong bể bơi ngập tới ngực (trong nước):",
+    "knowledge": [
+      "force.water.drag"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Nước hoàn toàn không tác dụng lực cản lên cơ thể"
+        },
+        {
+          "id": "opt-b",
+          "label": "Lực cản của hai môi trường là hoàn toàn bằng nhau"
+        },
+        {
+          "id": "opt-c",
+          "label": "Lực cản của nước lớn hơn rất nhiều so với lực cản của không khí"
+        },
+        {
+          "id": "opt-d",
+          "label": "Lực cản của không khí lớn hơn nhiều so với lực cản của nước"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Chạy dưới nước ở bể bơi ta cảm thấy bước chân rất nặng nề và khó khăn."
+      },
+      {
+        "level": 2,
+        "text": "Nước có mật độ phân tử dày đặc hơn không khí hàng trăm lần, nên lực cản của nước lớn hơn rất nhiều."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "So sánh môi trường chất lưu",
+        "body": "Đối chiếu độ lớn lực cản giữa chất lỏng (nước) và chất khí (không khí)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Lực cản của nước tác dụng lên cùng một vật chuyển động lớn hơn rất nhiều so với lực cản của không khí."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nhận xét đúng là **Lực cản của nước lớn hơn rất nhiều so với lực cản của không khí**."
+      }
+    ],
+    "finalSolution": "Lực cản của nước **lớn hơn rất nhiều** so với lực cản của không khí.",
+    "commonMistakes": [
+      {
+        "id": "thought-air-has-more-drag",
+        "message": "Không khí nhẹ và thưa thớt hơn nước rất nhiều nên lực cản của không khí nhỏ hơn nhiều so với nước."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b10-mcq-003",
+    "lessonId": "phy-g6-b10",
+    "sgkBaiSo": 45,
+    "skillIds": [
+      "streamline-shape-drag"
+    ],
+    "difficulty": 2,
+    "prompt": "Hình dạng nào sau đây của vật giúp **giảm thiểu tối đa lực cản** của nước khi chuyển động?",
+    "knowledge": [
+      "force.water.drag"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hình dạng chiếc bát lõm mở rộng đón dòng nước"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hình dạng hộp chữ nhật gồ ghề nhiều góc cạnh"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hình dạng tấm phẳng vuông góc với hướng di chuyển"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hình dạng thuôn nhọn hai đầu (hình con thoi, hình giọt nước)"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hãy quan sát hình dáng cơ thể của các loài cá bơi nhanh như cá kiếm hay cá heo."
+      },
+      {
+        "level": 2,
+        "text": "Hình thuôn nhọn (khí động học / thủy động học) giúp nước rẽ êm sang hai bên, ít bị cản trở nhất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích ảnh hưởng của hình dạng",
+        "body": "Tìm hình dạng tối ưu để giảm lực cản của chất lưu."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc điểm hình con thoi",
+        "body": "Vật có hình dạng thuôn dài nhọn hai đầu (dáng con thoi) giúp dòng nước trượt êm dọc theo thân và không tạo xoáy nước cản trở phía sau."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hình dạng tối ưu là **Hình dạng thuôn nhọn hai đầu (hình con thoi, hình giọt nước)**."
+      }
+    ],
+    "finalSolution": "Hình dạng **thuôn dài hai đầu (hình con thoi)** chịu lực cản nhỏ nhất trong nước.",
+    "commonMistakes": [
+      {
+        "id": "chose-flat-plate",
+        "message": "Tấm phẳng có diện tích cản trực diện rất lớn, tạo lực cản khổng lồ (giống như dùng một tấm ván chắn ngang dòng nước)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b10-mcq-004",
+    "lessonId": "phy-g6-b10",
+    "sgkBaiSo": 45,
+    "skillIds": [
+      "fish-adaptation-water-drag"
+    ],
+    "difficulty": 2,
+    "prompt": "Hiện tượng cơ thể của hầu hết các loài cá sống ở sông, biển đều có dạng **hình thoi thuôn dài và phủ lớp vảy nhớt trơn trượt** là minh chứng sinh học cho điều gì?",
+    "knowledge": [
+      "force.water.drag"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Thích nghi giúp giảm tối đa lực cản của nước để bơi nhanh và linh hoạt hơn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Làm cho cá nặng hơn để chìm sâu xuống đáy biển"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tạo ra dòng điện nhỏ tự vệ trước kẻ thù"
+        },
+        {
+          "id": "opt-d",
+          "label": "Giúp thân cá hấp thụ nhiệt từ ánh nắng Mặt Trời tốt hơn"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hình thoi xé nước dễ dàng, còn lớp nhớt làm bề mặt nhẵn bóng giảm ma sát."
+      },
+      {
+        "level": 2,
+        "text": "Sự kết hợp này giúp giảm tối đa lực cản của môi trường nước khi cá bơi."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Liên hệ sinh học và vật lý",
+        "body": "Giải thích sự thích nghi về hình dạng và bề mặt da cá dưới góc nhìn lực cản của nước."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế giảm lực cản",
+        "body": "Thân hình thoi thuôn dài giúp rẽ nước mượt mà; lớp vảy trơn nhớt làm giảm ma sát giữa da cá và các lớp nước bao quanh."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Ý nghĩa là **Thích nghi giúp giảm tối đa lực cản của nước để bơi nhanh và linh hoạt hơn**."
+      }
+    ],
+    "finalSolution": "Hình dạng hình thoi và vảy nhớt giúp cá **giảm tối đa lực cản của nước** khi bơi.",
+    "commonMistakes": [
+      {
+        "id": "confused-adaptation-purpose",
+        "message": "Đặc điểm cơ thể cá chủ yếu để phục vụ việc di chuyển săn mồi trong môi trường nước đặc quánh."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b10-mcq-005",
+    "lessonId": "phy-g6-b10",
+    "sgkBaiSo": 45,
+    "skillIds": [
+      "submarine-engineering-drag"
+    ],
+    "difficulty": 2,
+    "prompt": "Các kỹ sư hàng hải thiết kế **mũi tàu ngầm và phần vỏ thân tàu** có dạng bo tròn thuôn dài mô phỏng cá voi thay vì làm dạng hình hộp vuông vức là nhằm mục đích gì?",
+    "knowledge": [
+      "force.water.drag"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Làm giảm lực cản của nước, giúp tàu ngầm lặn nhanh hơn và tiết kiệm nhiên liệu"
+        },
+        {
+          "id": "opt-b",
+          "label": "Để làm cho thân tàu ngầm nặng hơn và chìm nhanh hơn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chỉ để làm tăng tính thẩm mỹ và dễ sơn màu"
+        },
+        {
+          "id": "opt-d",
+          "label": "Để có thể gắn được nhiều bánh xe hơn khi lên bờ"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Dưới đáy biển sâu, áp suất và lực cản của nước lên thân tàu ngầm là cực kì lớn."
+      },
+      {
+        "level": 2,
+        "text": "Hình dáng thuôn nhọn bo tròn giúp giảm tối đa lực cản của nước khi tàu di chuyển."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Ứng dụng kỹ thuật mô phỏng sinh học",
+        "body": "Mục đích thiết kế khí động/thủy động học cho tàu ngầm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tác dụng giảm lực cản",
+        "body": "Dạng thuôn bo tròn hạn chế lực cản và các dòng xoáy nước cản trở, giúp tàu ngầm di chuyển nhanh, êm ái và tiết kiệm năng lượng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Mục đích là **Làm giảm lực cản của nước, giúp tàu ngầm lặn nhanh hơn và tiết kiệm nhiên liệu**."
+      }
+    ],
+    "finalSolution": "Thiết kế thuôn bo tròn giúp **giảm lực cản của nước**, tăng tốc độ và tiết kiệm nhiên liệu.",
+    "commonMistakes": [
+      {
+        "id": "thought-aesthetic-only",
+        "message": "Trong kỹ thuật chế tạo tàu ngầm, hình dáng thủy động học là yếu tố kỹ thuật sống còn, không đơn thuần là thẩm mỹ."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b10-mcq-006",
+    "lessonId": "phy-g6-b10",
+    "sgkBaiSo": 45,
+    "skillIds": [
+      "air-drag-experiment"
+    ],
+    "difficulty": 3,
+    "prompt": "Cầm hai tờ giấy A4 giống hệt nhau ở cùng một độ cao. Một tờ để nguyên phẳng phiu, tờ còn lại vo tròn chặt lại thành một viên bi giấy, rồi thả rơi đồng thời. Người ta quan sát thấy viên bi giấy rơi chạm đất trước tờ giấy phẳng rất nhiều. Hiện tượng này giải thích như thế nào là đúng?",
+    "knowledge": [
+      "force.water.drag"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Viên bi giấy bị không khí hút xuống mạnh hơn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Viên bi giấy có diện tích cản nhỏ hơn nên chịu lực cản của không khí nhỏ hơn tờ giấy phẳng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Trọng lực tác dụng lên tờ giấy phẳng bị biến mất khi thả rơi"
+        },
+        {
+          "id": "opt-d",
+          "label": "Viên bi giấy nặng hơn tờ giấy phẳng nên rơi nhanh hơn"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hai tờ giấy giống hệt nhau thì khối lượng và trọng lực tác dụng lên chúng có giống nhau không?"
+      },
+      {
+        "level": 2,
+        "text": "Khối lượng như nhau, nhưng tờ giấy phẳng có diện tích cản gió rất lớn nên chịu lực cản không khí lớn hơn nhiều."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích thí nghiệm rơi tự do trong không khí",
+        "body": "Hai vật có cùng khối lượng nhưng hình dạng và diện tích tiếp xúc với không khí khác nhau."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tác dụng của lực cản",
+        "body": "Tờ giấy phẳng có bề mặt đón gió rộng lớn, chịu lực cản không khí lớn nên chao đảo rơi chậm. Viên bi giấy gọn gàng có diện tích cản nhỏ, chịu lực cản không khí nhỏ nên rơi thẳng và nhanh hơn."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Giải thích đúng là **Viên bi giấy có diện tích cản nhỏ hơn nên chịu lực cản của không khí nhỏ hơn tờ giấy phẳng**."
+      }
+    ],
+    "finalSolution": "Viên bi giấy có **diện tích cản nhỏ hơn** nên **chịu lực cản không khí nhỏ hơn**, do đó rơi nhanh hơn.",
+    "commonMistakes": [
+      {
+        "id": "thought-crumbled-paper-heavier",
+        "message": "Sai lầm kinh điển: Nghĩ rằng vo tròn làm tờ giấy nặng hơn! Khối lượng hai tờ giấy là hoàn toàn bằng nhau."
+      }
+    ]
+  }
+]

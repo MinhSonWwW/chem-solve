@@ -1,0 +1,545 @@
+[
+  {
+    "id": "phy-g9-b07-mcq-001",
+    "lessonId": "phy-g9-b07",
+    "sgkBaiSo": 8,
+    "skillIds": [
+      "converging-lens-recognition"
+    ],
+    "difficulty": 1,
+    "prompt": "Về mặt hình dạng tiết diện bên ngoài, thấu kính hội tụ có đặc điểm nhận dạng nào sau đây?",
+    "knowledge": [
+      "optical.lens"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Phần rìa mỏng hơn phần giữa"
+        },
+        {
+          "id": "opt-b",
+          "label": "Phần rìa dày hơn phần giữa"
+        },
+        {
+          "id": "opt-c",
+          "label": "Độ dày đồng đều ở mọi vị trí"
+        },
+        {
+          "id": "opt-d",
+          "label": "Có dạng hình cầu rỗng chứa không khí"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thấu kính hội tụ còn được gọi là thấu kính rìa mỏng."
+      },
+      {
+        "level": 2,
+        "text": "Phần rìa bên ngoài mỏng hơn phần trung tâm ở giữa."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận biết hình dạng",
+        "body": "Đề bài yêu cầu chỉ ra đặc điểm hình học của thấu kính hội tụ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 8: Thấu kính hội tụ có phần rìa mỏng hơn phần giữa (thấu kính rìa mỏng). Khi chiếu chùm tia sáng song song với trục chính thì chùm tia ló hội tụ tại một điểm."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Phần rìa mỏng hơn phần giữa**."
+      }
+    ],
+    "finalSolution": "Thấu kính hội tụ có **phần rìa mỏng hơn phần giữa**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-with-diverging",
+        "message": "Phần rìa dày hơn phần giữa là đặc điểm của thấu kính phân kì."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b07-mcq-002",
+    "lessonId": "phy-g9-b07",
+    "sgkBaiSo": 8,
+    "skillIds": [
+      "optical-center-ray"
+    ],
+    "difficulty": 1,
+    "prompt": "Một tia sáng đi qua quang tâm O của một thấu kính hội tụ (hoặc thấu kính phân kì) sẽ có đường truyền tiếp theo như thế nào?",
+    "knowledge": [
+      "optical.lens"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tiếp tục truyền thẳng theo phương của tia tới mà không bị đổi hướng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bị bẻ gãy khúc đi qua tiêu điểm chính F'"
+        },
+        {
+          "id": "opt-c",
+          "label": "Bị lệch một góc vuông 90° so với trục chính"
+        },
+        {
+          "id": "opt-d",
+          "label": "Bị phản xạ ngược trở lại nguồn phát"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Quang tâm O là điểm chính giữa đặc biệt của thấu kính."
+      },
+      {
+        "level": 2,
+        "text": "Mọi tia sáng đi qua quang tâm O đều truyền thẳng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tia sáng đặc biệt",
+        "body": "Khảo sát tính chất quang học của tia sáng truyền qua quang tâm $O$."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc tia sáng qua quang tâm",
+        "body": "Theo định nghĩa quang tâm trong SGK KHTN 9 Bài 8: Quang tâm $O$ là điểm mà mọi tia sáng đi qua nó đều tiếp tục truyền thẳng theo phương ban đầu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Tiếp tục truyền thẳng theo phương của tia tới**."
+      }
+    ],
+    "finalSolution": "Mọi tia sáng đi qua quang tâm $O$ **đều tiếp tục truyền thẳng**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-parallel-ray",
+        "message": "Chỉ tia tới song song với trục chính mới cho tia ló đi qua tiêu điểm F'; tia qua O thì truyền thẳng."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b07-mcq-003",
+    "lessonId": "phy-g9-b07",
+    "sgkBaiSo": 8,
+    "skillIds": [
+      "diverging-lens-image-traits"
+    ],
+    "difficulty": 1,
+    "prompt": "Ảnh của một vật sáng đặt trước một thấu kính phân kì luôn có tính chất nào sau đây?",
+    "knowledge": [
+      "optical.lens"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Ảnh ảo, ngược chiều và lớn hơn vật"
+        },
+        {
+          "id": "opt-b",
+          "label": "Ảnh thật, ngược chiều và lớn hơn vật"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ảnh ảo, cùng chiều và nhỏ hơn vật, nằm trong khoảng tiêu cự"
+        },
+        {
+          "id": "opt-d",
+          "label": "Ảnh thật, cùng chiều và bằng vật"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thấu kính phân kì không bao giờ cho ảnh thật với vật thật."
+      },
+      {
+        "level": 2,
+        "text": "Ảnh qua thấu kính phân kì luôn là ảnh ảo, cùng chiều và bé hơn vật."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đặc điểm tạo ảnh của thấu kính phân kì",
+        "body": "Khảo sát ảnh của vật sáng qua thấu kính phân kì."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 8: Vật sáng đặt ở mọi vị trí trước thấu kính phân kì luôn cho ảnh ảo, cùng chiều với vật, nhỏ hơn vật và luôn nằm trong khoảng tiêu cự của thấu kính."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Ảnh ảo, cùng chiều và nhỏ hơn vật, nằm trong khoảng tiêu cự**."
+      }
+    ],
+    "finalSolution": "Thấu kính phân kì luôn cho **ảnh ảo, cùng chiều và nhỏ hơn vật**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-with-converging-virtual",
+        "message": "Thấu kính hội tụ khi cho ảnh ảo thì ảnh ảo đó LỚN HƠN vật; còn thấu kính phân kì cho ảnh ảo NHỎ HƠN vật."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b07-mcq-004",
+    "lessonId": "phy-g9-b07",
+    "sgkBaiSo": 8,
+    "skillIds": [
+      "converging-lens-real-image"
+    ],
+    "difficulty": 2,
+    "prompt": "Đặt một ngọn nến sáng ở vị trí ngoài khoảng tiêu cự trước một thấu kính hội tụ (d > f). Hứng ảnh trên một màn chắn đặt phía sau thấu kính. Ảnh thu được trên màn có tính chất gì?",
+    "knowledge": [
+      "optical.lens"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Ảnh ảo và cùng chiều với ngọn nến"
+        },
+        {
+          "id": "opt-b",
+          "label": "Ảnh thật và cùng chiều với ngọn nến"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ảnh thật và ngược chiều với ngọn nến"
+        },
+        {
+          "id": "opt-d",
+          "label": "Ảnh ảo và ngược chiều với ngọn nến"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ảnh hứng được trên màn chắn luôn là ảnh thật."
+      },
+      {
+        "level": 2,
+        "text": "Ảnh thật của vật qua thấu kính hội tụ luôn ngược chiều với vật."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Vị trí vật và màn chắn",
+        "body": "Vật đặt ở khoảng cách $d > f$ trước thấu kính hội tụ và hứng được trên màn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tính chất tạo ảnh",
+        "body": "Khi $d > f$, thấu kính hội tụ tạo ảnh thật hứng được trên màn chắn. Mọi ảnh thật tạo bởi thấu kính đều có chiều ngược với chiều của vật sáng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Ảnh thật và ngược chiều với ngọn nến**."
+      }
+    ],
+    "finalSolution": "Khi đặt vật ngoài tiêu cự ($d > f$), thấu kính hội tụ cho **ảnh thật, ngược chiều với vật**.",
+    "commonMistakes": [
+      {
+        "id": "think-real-is-erect",
+        "message": "Ảnh thật luôn ngược chiều với vật; ảnh ảo mới cùng chiều với vật."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b07-mcq-005",
+    "lessonId": "phy-g9-b07",
+    "sgkBaiSo": 8,
+    "skillIds": [
+      "converging-lens-virtual-image-pos"
+    ],
+    "difficulty": 2,
+    "prompt": "Muốn dùng một thấu kính hội tụ để quan sát một dòng chữ in nhỏ thấy ảnh ảo, cùng chiều và phóng đại lớn hơn dòng chữ thật, ta cần đặt thấu kính ở vị trí nào so với trang sách?",
+    "knowledge": [
+      "optical.lens"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Đặt dòng chữ ngay tại đúng vị trí tiêu điểm F (d = f)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Đặt dòng chữ nằm trong khoảng tiêu cự của thấu kính (khoảng cách d < f)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Đặt dòng chữ ở khoảng cách đúng bằng hai lần tiêu cự (d = 2f)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Đặt dòng chữ ở khoảng cách rất xa lớn hơn hai lần tiêu cự (d > 2f)"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đây chính là nguyên tắc hoạt động cơ bản của kính lúp dùng đọc sách."
+      },
+      {
+        "level": 2,
+        "text": "Để thấu kính hội tụ cho ảnh ảo cùng chiều và lớn hơn vật, vật phải nằm trong khoảng tiêu cự (d < f)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Yêu cầu bài toán",
+        "body": "Tìm điều kiện vị trí đặt vật để thấu kính hội tụ cho ảnh ảo, cùng chiều và lớn hơn vật."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 8: Khi vật đặt trong khoảng tiêu cự của thấu kính hội tụ ($d < f$), chùm tia ló phân kì có đường kéo dài cắt nhau tạo thành ảnh ảo, cùng chiều và lớn hơn vật."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Đặt dòng chữ nằm trong khoảng tiêu cự (d < f)**."
+      }
+    ],
+    "finalSolution": "Phải đặt vật **trong khoảng tiêu cự của thấu kính hội tụ ($d < f$)** để thu được ảnh ảo phóng đại lớn hơn vật.",
+    "commonMistakes": [
+      {
+        "id": "place-outside-focus",
+        "message": "Nếu đặt ngoài tiêu cự (d > f) thì ảnh thu được sẽ là ảnh thật ngược chiều, không thể dùng làm kính lúp phóng đại thuận mắt."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b07-num-006",
+    "lessonId": "phy-g9-b07",
+    "sgkBaiSo": 8,
+    "skillIds": [
+      "converging-lens-calc-d-2f"
+    ],
+    "difficulty": 2,
+    "prompt": "Một thấu kính hội tụ có tiêu cự f = 12 cm. Đặt một vật sáng AB vuông góc với trục chính ở khoảng cách d = 24 cm trước thấu kính (đúng bằng 2f). Khoảng cách d' từ ảnh thật đến thấu kính là bao nhiêu cm?",
+    "knowledge": [
+      "optical.lens"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 24,
+      "unit": "cm",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trường hợp đặc biệt: khi vật đặt tại vị trí d = 2f trước thấu kính hội tụ."
+      },
+      {
+        "level": 2,
+        "text": "Khi d = 2f thì khoảng cách từ ảnh thật đến thấu kính cũng bằng d' = 2f."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Thấu kính hội tụ: $f = 12\\text{ cm}$; khoảng cách vật $d = 24\\text{ cm} = 2f$."
+      },
+      {
+        "kind": "equation",
+        "title": "Tính chất vị trí đối xứng 2f",
+        "body": "Theo định lý quang hình và SGK KHTN 9: Khi $d = 2f$, ảnh thật thu được ngược chiều, bằng vật và cách thấu kính một đoạn $d' = 2f$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$d' = 2f = 2 \\times 12 = 24\\text{ cm}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khoảng cách từ ảnh thật đến thấu kính là **24 cm**."
+      }
+    ],
+    "finalSolution": "Khi $d = 2f$ thì khoảng cách từ ảnh đến thấu kính là $d' = 2f = 2 \\times 12 = 24\\text{ cm}$.",
+    "commonMistakes": [
+      {
+        "id": "divide-instead-of-equal",
+        "message": "Tại vị trí d = 2f thì d' = 2f = 24 cm, khoảng cách này đối xứng bằng đúng khoảng cách d.",
+        "trapAnswers": [
+          "12",
+          "12 cm",
+          "6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b07-num-007",
+    "lessonId": "phy-g9-b07",
+    "sgkBaiSo": 8,
+    "skillIds": [
+      "converging-lens-calc-formula"
+    ],
+    "difficulty": 3,
+    "prompt": "Một thấu kính hội tụ có tiêu cự f = 10 cm. Đặt một vật sáng AB vuông góc với trục chính ở khoảng cách d = 15 cm trước thấu kính. Áp dụng công thức thấu kính (1/f = 1/d + 1/d'), khoảng cách d' từ ảnh thật đến thấu kính là bao nhiêu cm?",
+    "knowledge": [
+      "optical.lens"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 30,
+      "unit": "cm",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Biến đổi công thức: 1/d' = 1/f - 1/d."
+      },
+      {
+        "level": 2,
+        "text": "1/d' = 1/10 - 1/15 = (3 - 2)/30 = 1/30 => d' = 30 cm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$f = 10\\text{ cm}$; $d = 15\\text{ cm}$ ($f < d < 2f$ nên cho ảnh thật)."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức thấu kính",
+        "body": "$\\frac{1}{f} = \\frac{1}{d} + \\frac{1}{d'} \\Rightarrow \\frac{1}{d'} = \\frac{1}{f} - \\frac{1}{d} = \\frac{d - f}{d \\cdot f} \\Rightarrow d' = \\frac{d \\cdot f}{d - f}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$d' = \\frac{15 \\times 10}{15 - 10} = \\frac{150}{5} = 30\\text{ cm}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khoảng cách từ ảnh thật đến thấu kính là **30 cm**."
+      }
+    ],
+    "finalSolution": "Khoảng cách từ ảnh đến thấu kính: $d' = \\frac{d \\cdot f}{d - f} = \\frac{15 \\times 10}{15 - 10} = 30\\text{ cm}$.",
+    "commonMistakes": [
+      {
+        "id": "fraction-subtraction-error",
+        "message": "Bạn đã quy đồng sai khi trừ hai phân số: 1/10 - 1/15 = 1/30 => d' = 30 cm.",
+        "trapAnswers": [
+          "5",
+          "5 cm",
+          "25",
+          "150"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b07-mcq-008",
+    "lessonId": "phy-g9-b07",
+    "sgkBaiSo": 8,
+    "skillIds": [
+      "converging-lens-image-height-symmetry"
+    ],
+    "difficulty": 3,
+    "prompt": "Một ngọn nến có chiều cao h = 3 cm được đặt vuông góc với trục chính của một thấu kính hội tụ ở khoảng cách d = 2f (với f là tiêu cự). Chiều cao h' của ảnh thật thu được trên màn chắn phía sau thấu kính là bao nhiêu?",
+    "knowledge": [
+      "optical.lens"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "h' = 6 cm (ảnh thật cao gấp đôi vật)"
+        },
+        {
+          "id": "opt-b",
+          "label": "h' = 3 cm (ảnh thật có độ cao bằng đúng vật)"
+        },
+        {
+          "id": "opt-c",
+          "label": "h' = 9 cm (ảnh thật cao gấp ba lần vật)"
+        },
+        {
+          "id": "opt-d",
+          "label": "h' = 1,5 cm (ảnh thật cao bằng một nửa vật)"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi vật đặt ở vị trí đặc biệt d = 2f, khoảng cách ảnh d' cũng bằng 2f."
+      },
+      {
+        "level": 2,
+        "text": "Tỉ số chiều cao ảnh trên vật h'/h = d'/d = 2f/2f = 1 => h' = h = 3 cm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đặc điểm vị trí d = 2f",
+        "body": "Vật đặt tại $d = 2f$ của thấu kính hội tụ."
+      },
+      {
+        "kind": "equation",
+        "title": "Hệ thức đồng dạng tam giác",
+        "body": "Từ sự đồng dạng của hai cặp tam giác quang học, ta có tỉ số độ phóng đại: $\\frac{h'}{h} = \\frac{d'}{d}$. Vì tại $d = 2f$ thì $d' = 2f$, suy ra $\\frac{h'}{h} = \\frac{2f}{2f} = 1 \\Rightarrow h' = h$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **h' = 3 cm (ảnh có độ cao bằng vật)**."
+      }
+    ],
+    "finalSolution": "Tại $d = 2f$, ảnh thật có kích thước **bằng vật ($h' = h = 3\\text{ cm}$)**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-magnification",
+        "message": "Chỉ khi vật đặt trong khoảng f < d < 2f thì ảnh mới lớn hơn vật; tại đúng d = 2f thì ảnh bằng vật."
+      }
+    ]
+  }
+]

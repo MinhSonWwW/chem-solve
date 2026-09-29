@@ -1,0 +1,402 @@
+[
+  {
+    "id": "phy-g6-b14-mcq-001",
+    "lessonId": "phy-g6-b14",
+    "sgkBaiSo": 49,
+    "skillIds": [
+      "waste-energy-lamp"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi thắp sáng một bóng đèn sợi đốt (đèn dây tóc) để đọc sách vào buổi tối, dạng năng lượng nào sau đây bị coi là **năng lượng hao phí**?",
+    "knowledge": [
+      "energy.waste"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hóa năng của dây tóc vonfam"
+        },
+        {
+          "id": "opt-b",
+          "label": "Điện năng chạy trong dây dẫn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Quang năng chiếu sáng trang sách"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nhiệt năng làm nóng bóng đèn và không khí xung quanh"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mục đích dùng đèn là để lấy ánh sáng (quang năng). Dạng năng lượng không mong muốn làm ta thấy nóng là gì?"
+      },
+      {
+        "level": 2,
+        "text": "Nhiệt năng tỏa ra làm nóng bóng đèn là phần hao phí không phục vụ việc đọc sách."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục đích sử dụng",
+        "body": "Bóng đèn đọc sách cần quang năng để mắt nhìn rõ chữ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân tích hao phí",
+        "body": "Nhiệt năng tỏa ra làm nóng bóng đèn sợi đốt là năng lượng hao phí lãng phí điện năng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng: **Nhiệt năng làm nóng bóng đèn và không khí xung quanh**."
+      }
+    ],
+    "finalSolution": "Nhiệt năng làm nóng bóng đèn sợi đốt là **năng lượng hao phí**.",
+    "commonMistakes": [
+      {
+        "id": "confused-useful",
+        "message": "Quang năng là năng lượng có ích dùng để thắp sáng, không phải hao phí."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b14-mcq-002",
+    "lessonId": "phy-g6-b14",
+    "sgkBaiSo": 49,
+    "skillIds": [
+      "waste-energy-forms"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong hầu hết các máy móc và thiết bị cơ khí hoạt động trong đời sống, năng lượng hao phí thường xuất hiện chủ yếu dưới dạng nào?",
+    "knowledge": [
+      "energy.waste"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Năng lượng hạt nhân"
+        },
+        {
+          "id": "opt-b",
+          "label": "Thế năng hấp dẫn và thế năng đàn hồi"
+        },
+        {
+          "id": "opt-c",
+          "label": "Quang năng và hóa năng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nhiệt năng và năng lượng âm thanh"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi máy móc hoạt động lâu, ta thường thấy máy bị nóng lên và phát ra tiếng ồn kêu to."
+      },
+      {
+        "level": 2,
+        "text": "Nhiệt độ nóng lên (nhiệt năng) và tiếng ồn (âm thanh) là hai dạng hao phí phổ biến nhất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hiện tượng thực tế",
+        "body": "Động cơ xe máy, quạt điện, máy giặt khi chạy đều nóng lên và phát ra tiếng động."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Dạng hao phí chủ yếu",
+        "body": "Năng lượng hao phí chủ yếu xuất hiện dưới dạng nhiệt năng (do ma sát) và âm thanh (do rung động cơ học)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Nhiệt năng và năng lượng âm thanh**."
+      }
+    ],
+    "finalSolution": "Năng lượng hao phí xuất hiện chủ yếu dưới dạng **nhiệt năng và âm thanh**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b14-mcq-003",
+    "lessonId": "phy-g6-b14",
+    "sgkBaiSo": 49,
+    "skillIds": [
+      "led-energy-efficiency"
+    ],
+    "difficulty": 2,
+    "prompt": "Tại sao các gia đình hiện nay đều chuyển sang sử dụng bóng đèn LED thay thế cho bóng đèn sợi đốt?",
+    "knowledge": [
+      "energy.waste"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vì đèn LED tỏa ra rất nhiều nhiệt sưởi ấm căn phòng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vì đèn LED phát ra tiếng kêu vui tai khi thắp sáng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì đèn LED tiêu thụ nhiều điện năng hơn đèn sợi đốt"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì đèn LED có hiệu suất cao, chuyển hóa phần lớn điện năng thành quang năng, rất ít hao phí nhiệt năng"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hãy so sánh nhiệt độ của bóng đèn sợi đốt và bóng đèn LED khi sờ vào sau 1 giờ bật sáng."
+      },
+      {
+        "level": 2,
+        "text": "Bóng đèn LED ít bị nóng vì nó chuyển hầu hết điện thành ánh sáng, giảm tối đa hao phí nhiệt."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Lợi ích của công nghệ LED",
+        "body": "Đèn sợi đốt làm hao phí tới 90% điện năng thành nhiệt. Đèn LED chỉ hao phí khoảng 10-20%."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hiệu suất năng lượng",
+        "body": "Đèn LED biến phần lớn điện năng thành quang năng có ích, giúp tiết kiệm tiền điện và bảo vệ môi trường."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Phương án đúng là **B**."
+      }
+    ],
+    "finalSolution": "Đèn LED có **hiệu suất phát quang cao và rất ít hao phí nhiệt năng** so với đèn sợi đốt.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b14-mcq-004",
+    "lessonId": "phy-g6-b14",
+    "sgkBaiSo": 49,
+    "skillIds": [
+      "lubrication-reduce-waste"
+    ],
+    "difficulty": 2,
+    "prompt": "Việc thường xuyên tra dầu mỡ bôi trơn vào xích líp và các ổ bi xe đạp đem lại lợi ích gì dưới góc độ năng lượng?",
+    "knowledge": [
+      "energy.waste"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tăng thêm trọng lượng cho xe giúp xe chạy nhanh hơn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Làm giảm lực ma sát, từ đó giảm năng lượng hao phí dưới dạng nhiệt, giúp người đạp nhẹ xe hơn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Làm tăng ma sát để xích bám chặt hơn vào líp xe"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tạo ra điện năng nạp vào bánh xe"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Dầu nhớt làm trơn bề mặt tiếp xúc kim loại, giảm lực ma sát cản trở."
+      },
+      {
+        "level": 2,
+        "text": "Giảm ma sát sẽ giảm sự nóng lên (hao phí nhiệt), công sức người đạp chuyển tối đa thành chuyển động của xe."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tác dụng của dầu bôi trơn",
+        "body": "Dầu nhớt giảm lực ma sát trượt và ma sát lăn giữa các mắt xích và bánh răng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Giảm hao phí",
+        "body": "Ma sát giảm đồng nghĩa với việc năng lượng hao phí thành nhiệt giảm đi, xe chuyển động bon hơn."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là phương án **B**."
+      }
+    ],
+    "finalSolution": "Tra dầu mỡ giúp **giảm ma sát, giảm hao phí nhiệt năng, đạp xe nhẹ nhàng hơn**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b14-sort-005",
+    "lessonId": "phy-g6-b14",
+    "sgkBaiSo": 49,
+    "skillIds": [
+      "classify-useful-waste-energy"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi bạn sử dụng một chiếc máy sấy tóc để sấy khô mái tóc ướt sau khi tắm, hãy phân loại các dạng năng lượng sinh ra vào hai nhóm thích hợp:",
+    "knowledge": [
+      "energy.waste"
+    ],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        {
+          "id": "useful",
+          "label": "Năng lượng có ích"
+        },
+        {
+          "id": "waste",
+          "label": "Năng lượng hao phí"
+        }
+      ],
+      "items": [
+        {
+          "id": "item-1",
+          "label": "Nhiệt năng làm bốc hơi nước ướt trên tóc",
+          "bucketId": "useful"
+        },
+        {
+          "id": "item-2",
+          "label": "Cơ năng tạo luồng gió thổi nước bay đi",
+          "bucketId": "useful"
+        },
+        {
+          "id": "item-3",
+          "label": "Tiếng ồn động cơ máy sấy kêu to",
+          "bucketId": "waste"
+        },
+        {
+          "id": "item-4",
+          "label": "Nhiệt năng làm nóng vỏ nhựa máy sấy",
+          "bucketId": "waste"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mục đích sấy tóc là cần nhiệt ấm và gió để làm khô tóc."
+      },
+      {
+        "level": 2,
+        "text": "Gió và nhiệt sấy tóc là có ích; tiếng ồn và vỏ máy nóng lên là hao phí."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xét mục đích máy sấy",
+        "body": "Thổi gió và tỏa nhiệt làm khô tóc là chức năng chính (có ích)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân loại",
+        "body": "Nhiệt sấy tóc + Cơ năng gió: Có ích. Tiếng ồn + Vỏ máy nóng: Hao phí."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Xếp 2 mục vào nhóm Có ích và 2 mục vào nhóm Hao phí."
+      }
+    ],
+    "finalSolution": "Có ích: **Nhiệt sấy tóc, Cơ năng gió**. Hao phí: **Tiếng ồn, Vỏ máy nóng**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b14-num-006",
+    "lessonId": "phy-g6-b14",
+    "sgkBaiSo": 49,
+    "skillIds": [
+      "percentage-waste-energy"
+    ],
+    "difficulty": 3,
+    "prompt": "Một xe máy tiêu thụ 200 kJ hóa năng từ xăng. Trong đó, động cơ xe sinh ra 60 kJ cơ năng có ích để đẩy xe chuyển động trên đường. Hãy tính tỉ lệ phần trăm (%) năng lượng hao phí (tỏa nhiệt và tiếng ồn) so với tổng năng lượng xăng tiêu thụ.",
+    "knowledge": [
+      "energy.waste"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 70,
+      "unit": "%",
+      "decimals": 0
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tìm năng lượng hao phí trước bằng cách lấy 200 kJ trừ đi 60 kJ."
+      },
+      {
+        "level": 2,
+        "text": "Lấy năng lượng hao phí chia cho 200 rồi nhân với 100%."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Năng lượng toàn phần $E = 200\\text{ kJ}$; Năng lượng có ích $E_{ich} = 60\\text{ kJ}$."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tính năng lượng hao phí",
+        "body": "$E_{hp} = E - E_{ich} = 200 - 60 = 140\\text{ kJ}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính tỉ lệ phần trăm",
+        "body": "Tỉ lệ hao phí = $\\frac{E_{hp}}{E} \\times 100\\% = \\frac{140}{200} \\times 100\\% = 70\\%$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tỉ lệ năng lượng hao phí là **70%**."
+      }
+    ],
+    "finalSolution": "Năng lượng hao phí: $200 - 60 = 140\\text{ kJ}$. Tỉ lệ hao phí: $\\frac{140}{200} \\times 100\\% = 70\\%$.",
+    "commonMistakes": [
+      {
+        "id": "calculated-useful-percentage",
+        "message": "Bạn đã tính phần trăm năng lượng có ích (30%) thay vì năng lượng hao phí (70%).",
+        "trapAnswers": [
+          "30",
+          "30%"
+        ]
+      }
+    ]
+  }
+]

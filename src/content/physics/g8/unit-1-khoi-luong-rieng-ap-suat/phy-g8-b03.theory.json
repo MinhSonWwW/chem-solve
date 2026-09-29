@@ -1,0 +1,79 @@
+{
+  "lessonId": "phy-g8-b03",
+  "nodeId": "phy-g8-b03-theory",
+  "title": "Lý thuyết: Áp suất trên một bề mặt",
+  "subtitle": "Bài 15 SGK Khoa học tự nhiên 8 (Kết nối tri thức)",
+  "sgkBaiSo": 15,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Áp lực & Áp suất",
+      "badgeColor": "cyan",
+      "title": "1. Khái niệm áp lực và áp suất",
+      "content": "Để đặc trưng cho tác dụng làm biến dạng (lún, vỡ, nén) của lực lên bề mặt, ta dùng các khái niệm áp lực và áp suất:",
+      "bulletPoints": [
+        "Áp lực: Là lực ép có phương vuông góc với mặt bị ép. Ví dụ: Trọng lượng của người đứng trên sàn nhà, lực nén của chiếc đinh vào bức tường.",
+        "Tác dụng của áp lực: Phụ thuộc vào hai yếu tố: độ lớn của áp lực ($F$) và diện tích mặt bị ép ($S$). Áp lực càng lớn và diện tích bị ép càng nhỏ thì tác dụng làm lún biến dạng càng mạnh.",
+        "Áp suất: Là độ lớn của áp lực tác dụng trên một đơn vị diện tích bị ép.",
+        "Công thức tính áp suất: $p = \\frac{F}{S}$",
+        "Trong đó: $p$ là áp suất; $F$ là áp lực vuông góc (N); $S$ là diện tích mặt bị ép (m²)."
+      ],
+      "callout": "Phân biệt lực và áp suất: Áp lực là lực (đo bằng N); áp suất là độ nén trên một mét vuông (đo bằng N/m² hay Pascal)."
+    },
+    {
+      "id": "c2",
+      "badge": "Đơn vị đo",
+      "badgeColor": "amber",
+      "title": "2. Đơn vị đo áp suất Pascal (Pa)",
+      "content": "Trong Hệ đo lường quốc tế (SI), đơn vị đo áp suất mang tên nhà bác học Blaise Pascal:",
+      "bulletPoints": [
+        "Đơn vị SI: Pascal (kí hiệu: Pa). Quy ước: $1\\text{ Pa} = 1\\text{ N/m}^2$.",
+        "Đơn vị bội số thông dụng: $1\\text{ kPa} = 1\\,000\\text{ Pa}$; $1\\text{ MPa} = 1\\,000\\,000\\text{ Pa}$.",
+        "Đơn vị trong kĩ thuật (áp suất khí quyển, áp suất lốp xe): Bar ($1\\text{ bar} = 100\\,000\\text{ Pa}$).",
+        "Lưu ý đổi đơn vị diện tích: $1\\text{ cm}^2 = 0,0001\\text{ m}^2 = 10^{-4}\\text{ m}^2$; $1\\text{ dm}^2 = 0,01\\text{ m}^2$."
+      ],
+      "callout": "Cảnh báo đổi đơn vị: Phải đổi diện tích S sang m² trước khi tính thì áp suất mới ra đúng đơn vị Pa (N/m²)."
+    },
+    {
+      "id": "c3",
+      "badge": "Ứng dụng đời sống",
+      "badgeColor": "emerald",
+      "title": "3. Biện pháp làm tăng và giảm áp suất",
+      "content": "Từ công thức $p = \\frac{F}{S}$, ta có thể chủ động điều chỉnh áp suất trong thực tế đời sống và kĩ thuật:",
+      "bulletPoints": [
+        "Cách làm tăng áp suất ($p \\uparrow$): Tăng áp lực $F$ hoặc giảm diện tích tiếp xúc $S$.",
+        "Ứng dụng tăng áp suất: Mài sắc lưỡi dao/kéo (giảm $S$), làm đầu đinh nhọn, kim khâu nhọn, răng cá mập nhọn sắc để dễ cắn xé thức ăn.",
+        "Cách làm giảm áp suất ($p \\downarrow$): Giảm áp lực $F$ hoặc tăng diện tích tiếp xúc $S$.",
+        "Ứng dụng giảm áp suất: Xe tăng, máy xúc dùng bánh xích lớn để phân tán áp lực không bị sa lầy; đặt tấm ván gỗ khi bước qua bùn lầy; xây móng nhà bè rộng để nhà không bị lún sụt."
+      ],
+      "callout": "Nguyên lí kĩ thuật: Bánh xích xe tăng rất nặng nhưng diện tích tiếp xúc mặt đất cực lớn, nên áp suất tác dụng lên mặt đất còn nhỏ hơn cả gót giày cao gót của người."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Để cắt gọt hoa quả một cách dễ dàng và tốn ít lực nhất, người ta thường mài sắc lưỡi dao. Việc làm này nhằm mục đích:",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Giảm diện tích tiếp xúc S để tăng áp suất p lên hoa quả",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Tăng diện tích tiếp xúc S để giảm áp suất p",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Tăng khối lượng của chiếc dao",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Làm cho lực tác dụng tự động biến mất",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 8 Bài 15: Mài sắc lưỡi dao làm giảm diện tích tiếp xúc S, từ p = F / S thì áp suất p tăng lên đáng kể giúp cắt vật thể dễ dàng."
+  }
+}

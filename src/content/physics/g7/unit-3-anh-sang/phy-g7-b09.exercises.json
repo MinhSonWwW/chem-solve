@@ -1,0 +1,482 @@
+[
+  {
+    "id": "phy-g7-b09-mcq-001",
+    "lessonId": "phy-g7-b09",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "reflection-angles-definition"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong hiện tượng phản xạ ánh sáng trên gương phẳng, 'góc tới' (kí hiệu i) được định nghĩa là:",
+    "knowledge": [
+      "light.reflection_law"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Góc hợp bởi tia tới và tia phản xạ"
+        },
+        {
+          "id": "opt-b",
+          "label": "Góc hợp bởi pháp tuyến và bề mặt gương phẳng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Góc hợp bởi tia tới và pháp tuyến tại điểm tới"
+        },
+        {
+          "id": "opt-d",
+          "label": "Góc hợp bởi tia tới và bề mặt gương phẳng"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hãy nhớ lại đường chuẩn vuông góc với mặt gương tại điểm tới gọi là gì."
+      },
+      {
+        "level": 2,
+        "text": "Đường vuông góc là pháp tuyến IN. Góc tới i là góc giữa tia tới SI và pháp tuyến IN."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Định nghĩa góc tới",
+        "body": "Xác định hai đường thẳng tạo nên góc tới trong hình học quang."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 7 (Bài 16), góc tới i là góc hợp bởi tia tới SI và đường pháp tuyến IN vuông góc với mặt gương tại điểm tới."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Định nghĩa đúng là: **Góc hợp bởi tia tới và pháp tuyến tại điểm tới**."
+      }
+    ],
+    "finalSolution": "Góc tới là góc hợp bởi **tia tới và pháp tuyến** tại điểm tới.",
+    "commonMistakes": [
+      {
+        "id": "confused-with-glancing-angle",
+        "message": "Nhiều bạn nhầm góc tới là góc hợp bởi tia tới và mặt gương. Chú ý: Góc tới luôn so với đường pháp tuyến vuông góc!"
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b09-mcq-002",
+    "lessonId": "phy-g7-b09",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "reflection-law-statement"
+    ],
+    "difficulty": 1,
+    "prompt": "Nội dung nào sau đây là một trong hai nội dung chính của Định luật phản xạ ánh sáng?",
+    "knowledge": [
+      "light.reflection_law"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tia phản xạ luôn nằm song song với mặt gương"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tia phản xạ vuông góc với mặt phẳng tới"
+        },
+        {
+          "id": "opt-c",
+          "label": "Góc phản xạ luôn bằng góc tới (i' = i)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Góc phản xạ luôn lớn gấp đôi góc tới (i' = 2i)"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Góc tới và góc phản xạ có độ lớn quan hệ như thế nào với nhau?"
+      },
+      {
+        "level": 2,
+        "text": "Định luật phản xạ ánh sáng khẳng định: Góc phản xạ bằng góc tới (i' = i)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nội dung định luật vật lí",
+        "body": "Phát biểu quy luật về góc trong định luật phản xạ ánh sáng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Định luật phản xạ ánh sáng nêu rõ: 1. Tia phản xạ nằm trong mặt phẳng tới; 2. Góc phản xạ bằng góc tới ($i' = i$)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Phát biểu đúng là **Góc phản xạ luôn bằng góc tới (i' = i)**."
+      }
+    ],
+    "finalSolution": "Theo định luật phản xạ ánh sáng: **Góc phản xạ bằng góc tới ($i' = i$)**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b09-num-003",
+    "lessonId": "phy-g7-b09",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "reflection-calculate-angle-simple"
+    ],
+    "difficulty": 2,
+    "prompt": "Chiếu một tia sáng tới mặt gương phẳng với góc tới i = 40°. Góc phản xạ i' có độ lớn bằng bao nhiêu độ?",
+    "knowledge": [
+      "light.reflection_law"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 40,
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp dụng định luật phản xạ ánh sáng: liên hệ giữa góc phản xạ i' và góc tới i."
+      },
+      {
+        "level": 2,
+        "text": "Ta luôn có i' = i = 40°."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Góc tới $i = 40^\\circ$."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Định luật phản xạ",
+        "body": "Theo định luật phản xạ ánh sáng, góc phản xạ $i'$ luôn bằng góc tới $i$ ($i' = i$)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Góc phản xạ $i' = 40^\\circ$."
+      }
+    ],
+    "finalSolution": "Góc phản xạ: $i' = i = 40^\\circ$.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b09-num-004",
+    "lessonId": "phy-g7-b09",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "reflection-calculate-angle-surface"
+    ],
+    "difficulty": 2,
+    "prompt": "Chiếu một tia sáng SI tới mặt gương phẳng sao cho tia tới hợp với bề mặt gương một góc 30°. Hãy tính góc phản xạ i' của tia sáng theo độ (°).",
+    "knowledge": [
+      "light.reflection_law"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 60,
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Pháp tuyến IN vuông góc với mặt gương (hợp với mặt gương góc 90°)."
+      },
+      {
+        "level": 2,
+        "text": "Góc tới i = 90° - 30° = 60°. Sau đó áp dụng i' = i."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân biệt góc tới và góc với mặt gương",
+        "body": "Góc giữa tia tới và mặt gương là $\\alpha = 30^\\circ$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính góc tới i",
+        "body": "Vì pháp tuyến vuông góc với mặt gương nên: $i = 90^\\circ - \\alpha = 90^\\circ - 30^\\circ = 60^\\circ$."
+      },
+      {
+        "kind": "answer",
+        "title": "Tính góc phản xạ",
+        "body": "Theo định luật phản xạ: $i' = i = 60^\\circ$."
+      }
+    ],
+    "finalSolution": "Góc tới $i = 90^\\circ - 30^\\circ = 60^\\circ$. Vậy góc phản xạ $i' = 60^\\circ$.",
+    "commonMistakes": [
+      {
+        "id": "used-surface-angle-directly",
+        "message": "Bạn đã lấy trực tiếp góc 30° làm góc tới. Lưu ý: 30° là góc hợp với mặt gương, góc tới phải so với pháp tuyến (90° - 30° = 60°).",
+        "trapAnswers": [
+          "30"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b09-num-005",
+    "lessonId": "phy-g7-b09",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "reflection-incident-reflected-angle"
+    ],
+    "difficulty": 2,
+    "prompt": "Chiếu một tia sáng tới gương phẳng, người ta đo được góc hợp bởi tia tới và tia phản xạ là 70°. Hỏi góc tới i trong trường hợp này bằng bao nhiêu độ?",
+    "knowledge": [
+      "light.reflection_law"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 35,
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Góc hợp bởi tia tới và tia phản xạ bằng góc tới cộng góc phản xạ: i + i'."
+      },
+      {
+        "level": 2,
+        "text": "Vì i' = i nên góc hợp bởi hai tia là: i + i = 2i = 70°. Suy ra i = 70 / 2."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Góc giữa tia tới và tia phản xạ $\\widehat{SIR} = 70^\\circ$."
+      },
+      {
+        "kind": "equation",
+        "title": "Biểu thức liên hệ",
+        "body": "Ta có $\\widehat{SIR} = i + i'$. Do $i' = i$ nên $\\widehat{SIR} = 2i$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính góc tới i",
+        "body": "$i = \\frac{\\widehat{SIR}}{2} = \\frac{70^\\circ}{2} = 35^\\circ$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Góc tới $i = 35^\\circ$."
+      }
+    ],
+    "finalSolution": "Ta có: $i + i' = 2i = 70^\\circ \\Rightarrow i = 35^\\circ$.",
+    "commonMistakes": [
+      {
+        "id": "forgot-to-divide-by-2",
+        "message": "70° là góc giữa cả 2 tia tới và phản xạ, góc tới i chỉ bằng một nửa (70 / 2 = 35°).",
+        "trapAnswers": [
+          "70"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b09-num-006",
+    "lessonId": "phy-g7-b09",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "reflection-perpendicular-incidence"
+    ],
+    "difficulty": 3,
+    "prompt": "Chiếu một tia sáng tới vuông góc với bề mặt gương phẳng. Góc phản xạ i' lúc này có giá trị bằng bao nhiêu độ?",
+    "knowledge": [
+      "light.reflection_law"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 0,
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi tia sáng chiếu vuông góc với mặt gương, tia tới trùng với đường pháp tuyến IN."
+      },
+      {
+        "level": 2,
+        "text": "Góc hợp bởi tia tới và pháp tuyến khi chúng trùng nhau là 0°. Do đó góc phản xạ cũng bằng 0°."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Trường hợp chiếu vuông góc",
+        "body": "Tia tới vuông góc với mặt gương nên tia tới $SI$ trùng với pháp tuyến $IN$."
+      },
+      {
+        "kind": "compute",
+        "title": "Xác định góc tới i",
+        "body": "Vì $SI$ trùng với $IN$ nên góc tới $i = 0^\\circ$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận góc phản xạ",
+        "body": "Theo định luật phản xạ: $i' = i = 0^\\circ$. Tia sáng bị phản xạ hắt ngược trở lại theo phương cũ."
+      }
+    ],
+    "finalSolution": "Khi chiếu vuông góc mặt gương, góc tới $i = 0^\\circ$ nên góc phản xạ **$i' = 0^\\circ$**.",
+    "commonMistakes": [
+      {
+        "id": "confused-90-degrees",
+        "message": "Nhiều bạn nhầm là 90°. Nhớ rằng góc tới so với pháp tuyến (chứ không phải mặt gương), khi tia tới trùng pháp tuyến thì góc tới là 0°.",
+        "trapAnswers": [
+          "90"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b09-tf-007",
+    "lessonId": "phy-g7-b09",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "reflection-specular-diffuse-tf"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai của các phát biểu sau về sự phản xạ ánh sáng:",
+    "knowledge": [
+      "light.reflection_law"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Tia phản xạ luôn luôn nằm trong mặt phẳng tới chứa tia tới và pháp tuyến.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Trên bề mặt nhám xù xì, ánh sáng không bao giờ bị phản xạ mà chỉ bị hấp thụ hoàn toàn.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Hiện tượng phản xạ khuếch tán cho phép ta nhìn thấy bề mặt cuốn sách từ nhiều vị trí khác nhau trong phòng.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bề mặt nhám xù xì vẫn phản xạ ánh sáng nhưng hắt theo nhiều hướng khác nhau gọi là phản xạ khuếch tán (tán xạ)."
+      },
+      {
+        "level": 2,
+        "text": "Mệnh đề 2 sai vì bề mặt nhám vẫn có phản xạ khuếch tán."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 3 nhận định",
+        "body": "Đánh giá các phát biểu về định luật phản xạ và hiện tượng phản xạ khuếch tán."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu kiến thức SGK",
+        "body": "- Mệnh đề 1: ĐÚNG. Đây là nội dung thứ nhất của định luật phản xạ ánh sáng.\\n- Mệnh đề 2: SAI. Bề mặt nhám vẫn phản xạ ánh sáng nhưng theo nhiều hướng khác nhau (phản xạ khuếch tán).\\n- Mệnh đề 3: ĐÚNG. Nhờ phản xạ khuếch tán mà ánh sáng hắt về mọi hướng giúp mắt nhìn thấy vật từ nhiều góc độ."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự đáp án là **Đúng - Sai - Đúng**."
+      }
+    ],
+    "finalSolution": "Mệnh đề 1: **Đúng**; Mệnh đề 2: **Sai**; Mệnh đề 3: **Đúng**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b09-mcq-008",
+    "lessonId": "phy-g7-b09",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "reflection-periscope-mirror-angle"
+    ],
+    "difficulty": 3,
+    "prompt": "Một tia sáng mặt trời chiếu thẳng đứng từ trên xuống dưới. Cần đặt một gương phẳng nghiêng một góc bao nhiêu độ so với phương thẳng đứng để thu được tia phản xạ nằm ngang?",
+    "knowledge": [
+      "light.reflection_law"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "30°"
+        },
+        {
+          "id": "opt-b",
+          "label": "60°"
+        },
+        {
+          "id": "opt-c",
+          "label": "90°"
+        },
+        {
+          "id": "opt-d",
+          "label": "45°"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tia tới thẳng đứng, tia phản xạ nằm ngang, góc hợp bởi tia tới và tia phản xạ là 90°."
+      },
+      {
+        "level": 2,
+        "text": "Pháp tuyến là tia phân giác của góc 90° -> góc tới i = 45°. Mặt gương vuông góc với pháp tuyến nên mặt gương hợp với phương thẳng đứng góc 45°."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Vẽ hình hình học quang",
+        "body": "Tia tới thẳng đứng ($SI$), tia phản xạ nằm ngang ($IR$). Góc hợp bởi 2 tia là $\\widehat{SIR} = 90^\\circ$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính góc tới và vị trí gương",
+        "body": "- Theo định luật phản xạ, pháp tuyến $IN$ là phân giác của $\\widehat{SIR}$ nên $i = i' = \\frac{90^\\circ}{2} = 45^\\circ$.\\n- Vì mặt gương vuông góc với pháp tuyến nên góc nghiêng của mặt gương so với phương thẳng đứng là $90^\\circ - 45^\\circ = 45^\\circ$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Gương phẳng cần đặt nghiêng một góc **45°**."
+      }
+    ],
+    "finalSolution": "Góc giữa tia tới và phản xạ là $90^\\circ$. Cần đặt gương nghiêng **$45^\\circ$**.",
+    "commonMistakes": []
+  }
+]

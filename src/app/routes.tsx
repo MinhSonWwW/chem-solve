@@ -6,7 +6,6 @@ import { LearnPage } from './pages/LearnPage';
 import { PracticePage } from './pages/PracticePage';
 import { ExercisePage } from './pages/ExercisePage';
 import { TheoryPage } from './pages/TheoryPage';
-import { GamesPage } from './pages/GamesPage';
 import { DailyPage } from './pages/DailyPage';
 import { ProgressPage } from './pages/ProgressPage';
 import { ProfilePage } from './pages/ProfilePage';
@@ -42,7 +41,7 @@ export const router = createHashRouter([
       },
       {
         path: 'practice/:gameId',
-        element: <GamesPage />
+        element: <Navigate to="/practice" replace />
       },
       {
         path: 'play/:lessonId/:nodeId',
@@ -58,7 +57,7 @@ export const router = createHashRouter([
       },
       {
         path: 'games/:gameId',
-        element: <GamesPage />
+        element: <Navigate to="/practice" replace />
       },
       {
         path: 'daily',

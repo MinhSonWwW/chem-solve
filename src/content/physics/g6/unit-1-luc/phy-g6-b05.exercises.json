@@ -1,0 +1,416 @@
+[
+  {
+    "id": "phy-g6-b05-mcq-001",
+    "lessonId": "phy-g6-b05",
+    "sgkBaiSo": 40,
+    "skillIds": [
+      "force-unit-si"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong Hệ đơn vị đo lường quốc tế (hệ SI), đơn vị chuẩn dùng để đo lực là gì?",
+    "knowledge": [
+      "force.unit.newton"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Kilôgam (kg)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Niutơn (N)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Jun (J)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Mét trên giây (m/s)"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đơn vị đo lực được đặt theo tên nhà bác học người Anh tìm ra định luật vạn vật hấp dẫn."
+      },
+      {
+        "level": 2,
+        "text": "Trong hệ SI, đơn vị đo lực là niutơn, kí hiệu là chữ N in hoa."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận dạng câu hỏi",
+        "body": "Câu hỏi kiểm tra kiến thức về đơn vị đo lực theo chuẩn quốc tế SI."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 6 (Bài 40: Lực là gì?), đơn vị đo lực trong hệ SI là niutơn (kí hiệu: N)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Niutơn (N)**."
+      }
+    ],
+    "finalSolution": "Đơn vị đo lực chuẩn trong hệ SI là **niutơn (kí hiệu: N)**.",
+    "commonMistakes": [
+      {
+        "id": "confused-kg",
+        "message": "Kilôgam (kg) là đơn vị đo khối lượng, không phải đơn vị đo lực."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b05-mcq-002",
+    "lessonId": "phy-g6-b05",
+    "sgkBaiSo": 40,
+    "skillIds": [
+      "force-measuring-tool"
+    ],
+    "difficulty": 1,
+    "prompt": "Dụng cụ nào sau đây được sử dụng để đo độ lớn của lực?",
+    "knowledge": [
+      "force.unit.newton"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Lực kế"
+        },
+        {
+          "id": "opt-b",
+          "label": "Thước cuộn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cân đồng hồ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nhiệt kế"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Dụng cụ này thường chứa một chiếc lò xo bên trong và có bảng chia độ theo đơn vị niutơn (N)."
+      },
+      {
+        "level": 2,
+        "text": "Dụng cụ dùng để đo lực được gọi là lực kế (ví dụ: lực kế lò xo)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận biết dụng cụ đo",
+        "body": "Tìm dụng cụ chuyên dùng để đo độ lớn của lực trong phòng thí nghiệm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Người ta dùng lực kế để đo lực. Lực kế thông dụng nhất là lực kế lò xo."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Dụng cụ đo lực là **Lực kế**."
+      }
+    ],
+    "finalSolution": "Dụng cụ dùng để đo lực là **lực kế**.",
+    "commonMistakes": [
+      {
+        "id": "confused-scale",
+        "message": "Cân đồng hồ dùng để đo khối lượng (kg, g), lực kế mới là dụng cụ đo lực (N)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b05-mcq-003",
+    "lessonId": "phy-g6-b05",
+    "sgkBaiSo": 40,
+    "skillIds": [
+      "force-effects-motion"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong các trường hợp sau đây, trường hợp nào lực tác dụng làm **biến đổi chuyển động** của vật?",
+    "knowledge": [
+      "force.unit.newton"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Ngồi lên một chiếc đệm mút làm đệm bị lún xuống"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bóp mạnh phanh xe đạp làm chiếc xe đang chạy chuyển động chậm dần rồi dừng hẳn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Dùng tay bóp bẹp một vỏ lon nước ngọt bằng nhôm"
+        },
+        {
+          "id": "opt-d",
+          "label": "Dùng búa gõ làm uốn cong một thanh sắt nguội"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Biến đổi chuyển động là làm vật chuyển động nhanh lên, chậm lại, dừng lại hoặc đổi hướng."
+      },
+      {
+        "level": 2,
+        "text": "Bóp phanh làm tốc độ xe giảm dần rồi dừng lại, đây là sự biến đổi chuyển động."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích tác dụng của lực",
+        "body": "Biến đổi chuyển động liên quan tới sự thay đổi tốc độ hoặc hướng đi của vật."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu các phương án",
+        "body": "Bóp lon nhôm, lún đệm mút, uốn cong thanh sắt là sự biến dạng (thay đổi hình dạng). Bóp phanh xe đạp làm xe chạy chậm lại và dừng hẳn là biến đổi chuyển động."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Trường hợp làm biến đổi chuyển động là **Bóp mạnh phanh xe đạp làm xe chạy chậm dần rồi dừng hẳn**."
+      }
+    ],
+    "finalSolution": "Lực ma sát từ má phanh làm **xe đạp chuyển động chậm dần rồi dừng lại** (biến đổi chuyển động).",
+    "commonMistakes": [
+      {
+        "id": "confused-deformation",
+        "message": "Bóp méo lon hay làm lún đệm là hiện tượng biến dạng, không phải biến đổi chuyển động."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b05-mcq-004",
+    "lessonId": "phy-g6-b05",
+    "sgkBaiSo": 40,
+    "skillIds": [
+      "force-effects-deformation"
+    ],
+    "difficulty": 2,
+    "prompt": "Hành động nào sau đây là minh chứng rõ nhất cho việc lực tác dụng **chỉ làm biến dạng vật** mà không làm thay đổi vị trí chuyển động của vật?",
+    "knowledge": [
+      "force.unit.newton"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Thả rơi một viên bi sắt từ trên cao xuống sàn nhà"
+        },
+        {
+          "id": "opt-b",
+          "label": "Dùng tay kéo dãn hai đầu của một sợi dây cao su đang cố định"
+        },
+        {
+          "id": "opt-c",
+          "label": "Gió thổi mạnh làm lá cây rụng và bay là là trong không trung"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cầu thủ chuyền quả bóng lăn trên mặt sân cỏ"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tìm hành động chỉ làm vật thay đổi hình dạng/kích thước mà vật không di chuyển đi chỗ khác."
+      },
+      {
+        "level": 2,
+        "text": "Kéo dãn dây cao su làm dây dài ra (biến dạng) mà sợi dây vẫn ở nguyên trên tay."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định hiện tượng biến dạng",
+        "body": "Biến dạng là sự thay đổi hình dạng hoặc kích thước của vật."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân tích các hành động",
+        "body": "Kéo sợi dây cao su làm nó dãn dài ra (biến dạng). Các phương án còn lại đều mô tả vật đang dịch chuyển vị trí (chuyển động)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hành động đúng là **Dùng tay kéo dãn hai đầu của một sợi dây cao su**."
+      }
+    ],
+    "finalSolution": "Kéo dãn dây cao su là ví dụ điển hình về **lực làm biến dạng vật**.",
+    "commonMistakes": [
+      {
+        "id": "confused-motion",
+        "message": "Lá cây bay, bi rơi, bóng lăn đều là hiện tượng chuyển động của vật."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b05-mcq-005",
+    "lessonId": "phy-g6-b05",
+    "sgkBaiSo": 40,
+    "skillIds": [
+      "force-contact-vs-noncontact"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong các lực sau đây, lực nào là **lực tiếp xúc**?",
+    "knowledge": [
+      "force.unit.newton"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Lực hút của Trái Đất tác dụng lên giọt nước mưa đang rơi"
+        },
+        {
+          "id": "opt-b",
+          "label": "Lực hấp dẫn giữa Mặt Trời và Trái Đất"
+        },
+        {
+          "id": "opt-c",
+          "label": "Lực đẩy của tay người khi đang đẩy chiếc xe đẩy hàng trong siêu thị"
+        },
+        {
+          "id": "opt-d",
+          "label": "Lực từ của nam châm hút một chiếc đinh sắt đặt trên mặt bàn"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Lực tiếp xúc đòi hỏi vật gây ra lực phải chạm trực tiếp vào vật chịu lực."
+      },
+      {
+        "level": 2,
+        "text": "Tay người phải chạm trực tiếp vào tay cầm của xe đẩy thì mới đẩy được xe."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân loại lực tiếp xúc",
+        "body": "Lực tiếp xúc xuất hiện khi có sự chạm/tiếp xúc giữa hai vật."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Xem xét từng lực",
+        "body": "Lực hút Trái Đất, lực từ của nam châm, lực hấp dẫn vũ trụ đều tác dụng xuyên qua khoảng cách (lực không tiếp xúc). Lực tay đẩy xe là lực tiếp xúc trực tiếp."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Lực tiếp xúc là **Lực đẩy của tay người khi đang đẩy chiếc xe đẩy hàng**."
+      }
+    ],
+    "finalSolution": "Lực đẩy của tay lên xe là **lực tiếp xúc** vì có sự tiếp xúc trực tiếp giữa bàn tay và xe.",
+    "commonMistakes": [
+      {
+        "id": "confused-magnet-contact",
+        "message": "Nam châm có thể hút đinh sắt từ xa mà không cần chạm trước, đó là lực không tiếp xúc."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b05-mcq-006",
+    "lessonId": "phy-g6-b05",
+    "sgkBaiSo": 40,
+    "skillIds": [
+      "force-combined-effects"
+    ],
+    "difficulty": 3,
+    "prompt": "Khi một thủ môn bay người bắt quả bóng và dùng hai tay chặn quả bóng lại, quả bóng bị móp nhẹ đồng thời dừng lại trong tay thủ môn. Lực tác dụng của tay thủ môn lên quả bóng đã gây ra kết quả gì?",
+    "knowledge": [
+      "force.unit.newton"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chỉ làm biến đổi chuyển động của quả bóng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Chỉ làm biến dạng quả bóng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Không làm thay đổi chuyển động lẫn hình dạng của quả bóng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vừa làm biến đổi chuyển động, vừa làm biến dạng quả bóng"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Để ý 2 hiện tượng xảy ra cùng lúc: quả bóng bị móp nhẹ và quả bóng dừng hẳn lại."
+      },
+      {
+        "level": 2,
+        "text": "Bị móp là biến dạng; dừng chuyển động là biến đổi chuyển động."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích tình huống thực tế",
+        "body": "Bóng đang bay thì dừng lại (vận tốc về 0) và hình dạng bóng bị móp nhẹ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tác dụng kết hợp của lực",
+        "body": "Lực có thể đồng thời gây ra cả hai tác dụng: biến đổi chuyển động (làm bóng dừng lại) và biến dạng (làm móp bóng)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Lực **Vừa làm biến đổi chuyển động, vừa làm biến dạng quả bóng**."
+      }
+    ],
+    "finalSolution": "Lực của tay thủ môn **vừa làm biến đổi chuyển động vừa làm biến dạng** quả bóng.",
+    "commonMistakes": [
+      {
+        "id": "chose-only-one-effect",
+        "message": "Chú ý đọc kỹ đề: quả bóng vừa dừng lại (biến đổi chuyển động) vừa bị móp (biến dạng)."
+      }
+    ]
+  }
+]

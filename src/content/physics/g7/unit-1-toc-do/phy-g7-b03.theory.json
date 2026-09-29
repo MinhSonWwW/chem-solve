@@ -1,0 +1,75 @@
+{
+  "lessonId": "phy-g7-b03",
+  "nodeId": "phy-g7-b03-theory",
+  "title": "Lý thuyết: Đồ thị quãng đường - thời gian",
+  "subtitle": "Bài 10 SGK Khoa học tự nhiên 7 (Kết nối tri thức)",
+  "sgkBaiSo": 10,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Cấu tạo đồ thị",
+      "badgeColor": "cyan",
+      "title": "1. Khái niệm & Trục tọa độ đồ thị s - t",
+      "content": "Đồ thị quãng đường – thời gian (gọi tắt là đồ thị s - t) mô tả trực quan mối liên hệ giữa quãng đường đi được và thời gian chuyển động của vật.",
+      "bulletPoints": [
+        "Trục thẳng đứng (trục tung) biểu diễn quãng đường đi được s (thường đo bằng mét - m hoặc kilômét - km).",
+        "Trục nằm ngang (trục hoành) biểu diễn thời gian chuyển động t (thường đo bằng giây - s, phút - min hoặc giờ - h).",
+        "Gốc tọa độ O tương ứng với vị trí xuất phát lúc thời gian t = 0 và quãng đường s = 0."
+      ],
+      "callout": "Quy tắc vẽ: Dựa vào bảng số liệu quãng đường - thời gian, xác định các điểm tọa độ (t; s) trên mặt phẳng rồi nối các điểm lại thành đường biểu diễn."
+    },
+    {
+      "id": "c2",
+      "badge": "Giải mã hình dạng",
+      "badgeColor": "amber",
+      "title": "2. Ý nghĩa các dạng đường trên đồ thị",
+      "content": "Nhìn vào hình dạng của đường biểu diễn trên đồ thị s - t, ta có thể nhận biết ngay tính chất chuyển động của vật:",
+      "bulletPoints": [
+        "Đường thẳng nghiêng lên: Vật chuyển động đều với tốc độ không đổi (quãng đường tỉ lệ thuận với thời gian).",
+        "Đường càng dốc đứng: Tốc độ chuyển động của vật càng lớn (trong cùng khoảng thời gian đi được quãng đường dài hơn).",
+        "Đoạn đường nằm ngang (song song với trục thời gian Ot): Quãng đường không tăng theo thời gian -> vật đang đứng yên (dừng lại, nghỉ, tốc độ v = 0)."
+      ],
+      "callout": "Mẹo đọc nhanh: Đoạn nghiêng lên = Đang chạy đều; Đoạn nằm ngang = Đang đứng yên."
+    },
+    {
+      "id": "c3",
+      "badge": "Khai thác số liệu",
+      "badgeColor": "emerald",
+      "title": "3. Cách khai thác số liệu từ đồ thị s - t",
+      "content": "Từ đồ thị quãng đường - thời gian, ta có thể giải quyết 3 bài toán chính:",
+      "bulletPoints": [
+        "Tìm quãng đường s: Từ giá trị thời gian t trên trục hoành, dóng thẳng đứng lên gặp đồ thị, rồi dóng ngang sang trục tung để đọc giá trị s.",
+        "Tìm thời gian t: Từ giá trị quãng đường s trên trục tung, dóng ngang sang gặp đồ thị, rồi dóng thẳng đứng xuống trục hoành để đọc t.",
+        "Tính tốc độ v: Chọn một khoảng thời gian Δt và quãng đường tương ứng Δs trên đoạn đồ thị đó, áp dụng v = Δs / Δt."
+      ],
+      "callout": "Ví dụ: Trên đoạn đồ thị từ t = 0 đến t = 2 h vật đi được s = 60 km, tốc độ của vật là v = 60 / 2 = 30 km/h."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Trên đồ thị quãng đường – thời gian, một đoạn đường nằm ngang song song với trục thời gian cho biết điều gì?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Vật đang đứng yên (tốc độ bằng 0)",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Vật chuyển động với tốc độ cực đại",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Vật đang quay đầu chuyển động lùi lại",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Vật chuyển động nhanh dần đều",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 7 Bài 10, đoạn đồ thị nằm ngang cho thấy thời gian vẫn trôi qua nhưng quãng đường không thay đổi, tức là vật đang đứng yên (v = 0)."
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "lessonId": "phy-g8-b04",
+  "nodeId": "phy-g8-b04-theory",
+  "title": "Lý thuyết: Áp suất chất lỏng. Áp suất khí quyển",
+  "subtitle": "Bài 16 SGK Khoa học tự nhiên 8 (Kết nối tri thức)",
+  "sgkBaiSo": 16,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Áp suất chất lỏng",
+      "badgeColor": "cyan",
+      "title": "1. Sự tồn tại và công thức áp suất chất lỏng",
+      "content": "Chất lỏng có trọng lượng và tính linh động nên gây ra áp suất đặc thù:",
+      "bulletPoints": [
+        "Đặc điểm: Chất lỏng gây áp suất theo MỌI PHƯƠNG lên đáy bình, thành bình và các vật ở trong lòng chất lỏng.",
+        "Công thức tính áp suất chất lỏng ở độ sâu $h$: $p = d \\times h$",
+        "Trong đó: $p$ là áp suất chất lỏng (Pa); $d$ là trọng lượng riêng của chất lỏng ($d = 10 \\times D$, đơn vị N/m³); $h$ là độ sâu tính từ mặt thoáng chất lỏng đến điểm đang xét (m).",
+        "Quy luật độ sâu: Càng xuống sâu ($h$ tăng) thì áp suất chất lỏng càng lớn; trong cùng một chất lỏng đứng yên, các điểm ở cùng độ sâu nằm ngang đều có áp suất bằng nhau."
+      ],
+      "callout": "Ứng dụng kĩ thuật đập nước: Chân đập chắn nước thủy điện luôn được xây dày hơn đỉnh đập vì nước ở đáy tác dụng áp suất rất lớn."
+    },
+    {
+      "id": "c2",
+      "badge": "Bình thông nhau",
+      "badgeColor": "amber",
+      "title": "2. Nguyên tắc bình thông nhau",
+      "content": "Bình thông nhau là bình có hai hoặc nhiều nhánh nối thông đáy với nhau:",
+      "bulletPoints": [
+        "Nguyên tắc cân bằng: Trong bình thông nhau chứa cùng một chất lỏng đứng yên, các mặt thoáng của chất lỏng ở các nhánh khác nhau luôn ở CÙNG MỘT ĐỘ CAO (cùng mức nằm ngang), bất kể hình dạng các nhánh to hay nhỏ, thẳng hay nghiêng.",
+        "Ứng dụng thực tế: Ống đo mực nước thợ xây (ống nivo), vòi ấm trà luôn cao ngang miệng ấm (để nước không tràn ra ngoài), hệ thống đường ống cấp nước sạch từ đài tháp nước đến từng hộ gia đình."
+      ],
+      "callout": "Ghi nhớ điều kiện: Nguyên tắc cùng độ cao chỉ đúng khi bình chứa CÙNG MỘT LOẠI chất lỏng và chất lỏng ĐỨNG YÊN."
+    },
+    {
+      "id": "c3",
+      "badge": "Áp suất khí quyển",
+      "badgeColor": "emerald",
+      "title": "3. Áp suất khí quyển và hiện tượng thực tế",
+      "content": "Trái Đất được bao bọc bởi lớp khí quyển dày hàng ngàn kilômét. Do không khí có trọng lượng nên:",
+      "bulletPoints": [
+        "Định nghĩa: Lớp không khí bao quanh Trái Đất gây ra áp suất lên Trái Đất và mọi vật trên Trái Đất theo mọi phương, gọi là áp suất khí quyển.",
+        "Độ lớn chuẩn: Ở mực nước biển, áp suất khí quyển khoảng $p_0 \\approx 10^5\\text{ Pa} = 100\\,000\\text{ Pa}$ (tương đương 760 mmHg hay 1 atm).",
+        "Sự thay đổi theo độ cao: Càng lên cao không khí càng loãng nên áp suất khí quyển CÀNG GIẢM (cứ lên cao 12 m thì áp suất giảm khoảng 1 mmHg).",
+        "Hiện tượng chứng minh: Miếng giác hút cao su ép vào kính dính chặt vì không khí bên ngoài ép vào; dùng ống hút để hút nước uống; thí nghiệm lật úp cốc nước đậy bìa giấy mà nước không rơi."
+      ],
+      "callout": "Giải thích giác hút cao su: Khi ấn mạnh giác hút vào mặt phẳng, không khí bên trong bị đẩy hết ra ngoài; áp suất khí quyển bên ngoài rất lớn ép chặt giác hút vào bề mặt."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Trong một bình thông nhau gồm hai nhánh có hình dạng và kích thước khác nhau chứa đầy cùng một loại nước đứng yên, mực nước ở hai nhánh sẽ như thế nào?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Mực nước ở hai nhánh luôn ở cùng một độ cao",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Nhánh có tiết diện nhỏ hơn sẽ có mực nước dâng cao hơn",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Nhánh có tiết diện lớn hơn sẽ có mực nước dâng cao hơn",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Nước sẽ liên tục chảy qua chảy lại giữa hai nhánh không dừng",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo nguyên tắc bình thông nhau (SGK KHTN 8 Bài 16): Trong bình thông nhau chứa cùng một chất lỏng đứng yên, các mặt thoáng ở các nhánh luôn ở cùng một độ cao."
+  }
+}

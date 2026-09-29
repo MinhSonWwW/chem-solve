@@ -1,0 +1,372 @@
+[
+  {
+    "id": "phy-g6-b08-mcq-001",
+    "lessonId": "phy-g6-b08",
+    "sgkBaiSo": 43,
+    "skillIds": [
+      "gravity-concept"
+    ],
+    "difficulty": 1,
+    "prompt": "Trọng lực tác dụng lên một vật đặt gần bề mặt Trái Đất là gì?",
+    "knowledge": [
+      "force.gravity.formula"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Lực đàn hồi của bề mặt nâng đỡ"
+        },
+        {
+          "id": "opt-b",
+          "label": "Lực đẩy của không khí lên vật"
+        },
+        {
+          "id": "opt-c",
+          "label": "Lực hút của Trái Đất tác dụng lên vật"
+        },
+        {
+          "id": "opt-d",
+          "label": "Lực ma sát giữa vật và mặt sàn"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đây là lực hút vô hình khiến mọi vật buông tay ra đều rơi xuống đất."
+      },
+      {
+        "level": 2,
+        "text": "Trọng lực chính là lực hút của Trái Đất tác dụng lên vật."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận biết khái niệm trọng lực",
+        "body": "Câu hỏi kiểm tra định nghĩa trọng lực trong SGK KHTN 6."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Định nghĩa SGK",
+        "body": "Trọng lực là lực hút của Trái Đất tác dụng lên vật thể."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Trọng lực là **Lực hút của Trái Đất tác dụng lên vật**."
+      }
+    ],
+    "finalSolution": "Trọng lực là **lực hút của Trái Đất** tác dụng lên vật thể.",
+    "commonMistakes": [
+      {
+        "id": "confused-buoyant-force",
+        "message": "Lực đẩy của không khí là lực đẩy Ác-si-mét, ngược chiều với trọng lực."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b08-mcq-002",
+    "lessonId": "phy-g6-b08",
+    "sgkBaiSo": 43,
+    "skillIds": [
+      "gravity-direction"
+    ],
+    "difficulty": 1,
+    "prompt": "Trọng lực tác dụng lên một vật có phương và chiều như thế nào?",
+    "knowledge": [
+      "force.gravity.formula"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Phương thẳng đứng, chiều từ dưới lên trên"
+        },
+        {
+          "id": "opt-b",
+          "label": "Phương xiên góc 45 độ, chiều tùy ý"
+        },
+        {
+          "id": "opt-c",
+          "label": "Phương nằm ngang, chiều từ trái sang phải"
+        },
+        {
+          "id": "opt-d",
+          "label": "Phương thẳng đứng, chiều từ trên xuống dưới (hướng về tâm Trái Đất)"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hãy quan sát giọt mưa hoặc quả táo rụng: chúng luôn rơi theo phương nào và rơi về hướng nào?"
+      },
+      {
+        "level": 2,
+        "text": "Trọng lực có phương thẳng đứng và chiều hướng từ trên xuống dưới về phía tâm Trái Đất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định hướng của trọng lực",
+        "body": "Đặc trưng phương và chiều của lực hút Trái Đất."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc vật lý",
+        "body": "Trọng lực luôn có phương thẳng đứng và chiều hướng từ trên xuống dưới."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Phương và chiều là **Phương thẳng đứng, chiều từ trên xuống dưới (hướng về tâm Trái Đất)**."
+      }
+    ],
+    "finalSolution": "Trọng lực có **phương thẳng đứng, chiều từ trên xuống dưới**.",
+    "commonMistakes": [
+      {
+        "id": "confused-upward",
+        "message": "Từ dưới lên trên là chiều của lực nâng hoặc lực đẩy, chiều của trọng lực luôn là từ trên xuống dưới."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b08-calc-003",
+    "lessonId": "phy-g6-b08",
+    "sgkBaiSo": 43,
+    "skillIds": [
+      "gravity-weight-calculation"
+    ],
+    "difficulty": 2,
+    "prompt": "Một thùng sơn có khối lượng là 4 kg. Trọng lượng của thùng sơn đó ở gần bề mặt Trái Đất là bao nhiêu niutơn (N)?",
+    "knowledge": [
+      "force.gravity.formula"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 40,
+      "unit": "N",
+      "decimals": 0
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp dụng công thức liên hệ giữa trọng lượng P và khối lượng m: P = 10 × m."
+      },
+      {
+        "level": 2,
+        "text": "Thay số: P = 10 × 4 = ?"
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tóm tắt dữ kiện",
+        "body": "Khối lượng $m = 4\\text{ kg}$. Công thức: $P = 10 \\times m$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính trọng lượng",
+        "body": "$P = 10 \\times 4 = 40\\text{ N}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Trọng lượng của thùng sơn là **40 N**."
+      }
+    ],
+    "finalSolution": "Trọng lượng thùng sơn là $P = 10 \\times 4 =$ **40 N**.",
+    "commonMistakes": [
+      {
+        "id": "divided-by-10",
+        "message": "Để tính trọng lượng P từ khối lượng m (kg), ta nhân với 10 (chứ không phải chia 10)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b08-calc-004",
+    "lessonId": "phy-g6-b08",
+    "sgkBaiSo": 43,
+    "skillIds": [
+      "gravity-unit-conversion-calc"
+    ],
+    "difficulty": 2,
+    "prompt": "Một túi đường có khối lượng ghi trên bao bì là 500 g. Trọng lượng của túi đường này là bao nhiêu niutơn (N)?",
+    "knowledge": [
+      "force.gravity.formula"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 5,
+      "unit": "N",
+      "decimals": 0
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đổi 500 g sang đơn vị kilôgam (kg) trước khi nhân với 10: 1 kg = 1 000 g."
+      },
+      {
+        "level": 2,
+        "text": "500 g = 0,5 kg. Sau đó tính P = 10 × 0,5 = ?"
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đổi đơn vị khối lượng",
+        "body": "Đổi $m = 500\\text{ g} = 0,5\\text{ kg}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính trọng lượng",
+        "body": "Áp dụng công thức: $P = 10 \\times m = 10 \\times 0,5 = 5\\text{ N}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Trọng lượng của túi đường là **5 N**."
+      }
+    ],
+    "finalSolution": "500 g = 0,5 kg $\\rightarrow P = 10 \\times 0,5 =$ **5 N**.",
+    "commonMistakes": [
+      {
+        "id": "forgot-convert-g-to-kg",
+        "message": "Bẫy thường gặp: Quên đổi 500 g sang kg mà lấy luôn 10 × 500 = 5 000 N (sai nghiêm trọng!).",
+        "trapAnswers": [
+          "5000",
+          "5000 N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b08-calc-005",
+    "lessonId": "phy-g6-b08",
+    "sgkBaiSo": 43,
+    "skillIds": [
+      "gravity-mass-from-weight"
+    ],
+    "difficulty": 2,
+    "prompt": "Dùng lực kế đo trọng lượng của một pho tượng đồng, lực kế chỉ giá trị 75 N. Khối lượng của pho tượng đồng đó là bao nhiêu kilôgam (kg)?",
+    "knowledge": [
+      "force.gravity.formula"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 7.5,
+      "unit": "kg",
+      "decimals": 1
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ công thức P = 10 × m, suy ra công thức tính khối lượng: m = P / 10."
+      },
+      {
+        "level": 2,
+        "text": "Lấy trọng lượng chia cho 10: m = 75 / 10 = ?"
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Biến đổi công thức",
+        "body": "Từ $P = 10 \\times m \\Rightarrow m = \\frac{P}{10}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính khối lượng",
+        "body": "Thay số: $m = \\frac{75}{10} = 7,5\\text{ kg}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khối lượng của pho tượng là **7,5 kg**."
+      }
+    ],
+    "finalSolution": "Khối lượng của pho tượng là $m = 75 : 10 =$ **7,5 kg**.",
+    "commonMistakes": [
+      {
+        "id": "multiplied-instead-of-divided",
+        "message": "Muốn tìm khối lượng từ trọng lượng, ta phải lấy P chia cho 10, không phải nhân với 10."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b08-mcq-006",
+    "lessonId": "phy-g6-b08",
+    "sgkBaiSo": 43,
+    "skillIds": [
+      "gravity-mass-vs-weight-moon"
+    ],
+    "difficulty": 3,
+    "prompt": "Một nhà du hành vũ trụ có khối lượng 60 kg trên Trái Đất. Khi đặt chân lên Mặt Trăng (nơi lực hấp dẫn chỉ bằng khoảng 1/6 so với Trái Đất), khối lượng và trọng lượng của nhà du hành này lần lượt là:",
+    "knowledge": [
+      "force.gravity.formula"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Khối lượng 60 kg; Trọng lượng 600 N"
+        },
+        {
+          "id": "opt-b",
+          "label": "Khối lượng 10 kg; Trọng lượng 100 N"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khối lượng 60 kg; Trọng lượng xấp xỉ 100 N"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khối lượng 0 kg; Trọng lượng 0 N"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khối lượng là lượng chất cấu tạo nên cơ thể, lượng chất này không bị mất đi khi di chuyển sang nơi khác."
+      },
+      {
+        "level": 2,
+        "text": "Khối lượng giữ nguyên 60 kg. Trọng lượng trên Trái Đất là 600 N, trên Mặt Trăng giảm 6 lần còn xấp xỉ 100 N."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân biệt khối lượng và trọng lượng",
+        "body": "Khối lượng không đổi theo vị trí; trọng lượng thay đổi theo lực hút của thiên thể."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "Khối lượng trên Mặt Trăng vẫn là $m = 60\\text{ kg}$. Trọng lượng trên Trái Đất $P_{\\text{TĐ}} = 10 \\times 60 = 600\\text{ N}$. Trọng lượng trên Mặt Trăng: $P_{\\text{MT}} = \\frac{600}{6} = 100\\text{ N}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Kết quả là **Khối lượng 60 kg; Trọng lượng xấp xỉ 100 N**."
+      }
+    ],
+    "finalSolution": "Khối lượng **không đổi (60 kg)**; trọng lượng giảm 6 lần còn **100 N**.",
+    "commonMistakes": [
+      {
+        "id": "reduced-mass",
+        "message": "Sai lầm phổ biến: Nghĩ rằng cả khối lượng cũng bị giảm đi 6 lần. Khối lượng luôn bảo toàn."
+      }
+    ]
+  }
+]

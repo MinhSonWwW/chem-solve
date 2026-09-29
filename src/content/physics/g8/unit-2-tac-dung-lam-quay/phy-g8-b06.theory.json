@@ -1,0 +1,77 @@
+{
+  "lessonId": "phy-g8-b06",
+  "nodeId": "phy-g8-b06-theory",
+  "title": "Lý thuyết: Tác dụng làm quay của lực. Moment lực",
+  "subtitle": "Bài 18 SGK Khoa học tự nhiên 8 (Kết nối tri thức)",
+  "sgkBaiSo": 18,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Trục quay & Lực làm quay",
+      "badgeColor": "cyan",
+      "title": "1. Tác dụng làm quay của lực quanh trục",
+      "content": "Trong đời sống, nhiều vật thể có thể quay quanh một trục hoặc một điểm cố định (trục quay):",
+      "bulletPoints": [
+        "Ví dụ trục quay: Cánh cửa quay quanh bản lề cố định; vô lăng ô tô quay quanh trục lái; cờ lê vặn ốc quanh tâm bulông; tay vặn vòi nước.",
+        "Điều kiện để lực làm quay vật: Lực tác dụng có giá KHÔNG CẮT và KHÔNG SONG SONG với trục quay.",
+        "Trường hợp lực KHÔNG làm quay vật: Khi giá của lực cắt trục quay (ví dụ kéo thẳng vào bản lề) hoặc giá của lực song song với trục quay (ví dụ đẩy cánh cửa hướng thẳng lên trời)."
+      ],
+      "callout": "Quy tắc then chốt: Lực chỉ làm quay vật khi giá của nó có một khoảng cách vuông góc nhất định đến trục quay."
+    },
+    {
+      "id": "c2",
+      "badge": "Moment lực",
+      "badgeColor": "amber",
+      "title": "2. Khái niệm và công thức tính Moment lực",
+      "content": "Tác dụng làm quay của một lực quanh trục phụ thuộc vào cả độ lớn của lực và khoảng cách từ trục quay đến giá của lực:",
+      "bulletPoints": [
+        "Định nghĩa: Moment lực (kí hiệu: $M$) là đại lượng đặc trưng cho tác dụng làm quay của lực quanh một trục hoặc một điểm cố định.",
+        "Cánh tay đòn ($d$): Là khoảng cách vuông góc từ trục quay đến giá của lực (đơn vị: mét, m).",
+        "Công thức tính moment lực: $M = F \\times d$",
+        "Trong đó: $M$ là moment lực (đơn vị: Niutơn mét, $\\text{N}\\cdot\\text{m}$); $F$ là độ lớn của lực tác dụng (N); $d$ là cánh tay đòn (m).",
+        "Đặc điểm: Độ lớn của lực $F$ càng lớn hoặc cánh tay đòn $d$ càng dài thì moment lực $M$ càng lớn, tác dụng làm quay càng mạnh."
+      ],
+      "callout": "Đơn vị chuẩn: Đơn vị của moment lực là N.m (Niutơn mét), không được nhầm lẫn với đơn vị công Joules (J)."
+    },
+    {
+      "id": "c3",
+      "badge": "Ứng dụng kĩ thuật",
+      "badgeColor": "emerald",
+      "title": "3. Ứng dụng của moment lực trong đời sống",
+      "content": "Hiểu rõ moment lực $M = F \\times d$ giúp con người tăng hiệu quả công việc mà tốn ít sức lực:",
+      "bulletPoints": [
+        "Vị trí tay nắm cửa: Tay nắm cửa luôn được bố trí ở mép ngoài xa bản lề nhất (tăng cánh tay đòn $d$), giúp ta mở cửa nhẹ nhàng với lực đẩy $F$ rất nhỏ.",
+        "Sử dụng cờ lê/mỏ lết: Khi tháo ốc bị gỉ sét quá chặt, người thợ cơ khí thường dùng cờ lê có cán dài (hoặc nối thêm một đoạn ống sắt vào cán cờ lê) để tăng cánh tay đòn $d$, làm tăng moment lực $M$ giúp vặn ốc dễ dàng.",
+        "Bánh lái tàu thuyền và vô lăng ô tô: Thiết kế dạng vành tròn có đường kính lớn để người lái tạo moment quay lớn khi tác dụng lực nhỏ ở mép ngoài."
+      ],
+      "callout": "Bài học thực tế: Muốn vặn ốc chặt mở dễ dàng, hãy chọn cờ lê có cán càng dài càng tốt."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Đại lượng nào đặc trưng cho tác dụng làm quay của một lực quanh trục cố định và được tính bằng công thức M = F x d?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Moment lực",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Áp lực",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Khối lượng riêng",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Trọng lượng",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 8 Bài 18: Moment lực (M = F x d) là đại lượng đặc trưng cho tác dụng làm quay của lực quanh một trục hoặc một điểm."
+  }
+}

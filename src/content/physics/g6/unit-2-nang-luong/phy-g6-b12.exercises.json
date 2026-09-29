@@ -1,0 +1,402 @@
+[
+  {
+    "id": "phy-g6-b12-mcq-001",
+    "lessonId": "phy-g6-b12",
+    "sgkBaiSo": 47,
+    "skillIds": [
+      "kinetic-energy-identification"
+    ],
+    "difficulty": 1,
+    "prompt": "Trường hợp nào sau đây vật đang sở hữu **động năng**?",
+    "knowledge": [
+      "energy.forms"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Một quả táo nằm yên trong tủ lạnh"
+        },
+        {
+          "id": "opt-b",
+          "label": "Một chiếc xe buýt đang chạy trên đường phố"
+        },
+        {
+          "id": "opt-c",
+          "label": "Một hòn đá nằm yên trên mặt đất"
+        },
+        {
+          "id": "opt-d",
+          "label": "Một lò xo đang để tự nhiên trên bàn"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Động năng là dạng năng lượng gắn liền với chuyển động của vật."
+      },
+      {
+        "level": 2,
+        "text": "Vật nào đang di chuyển thì vật đó có động năng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khái niệm động năng",
+        "body": "Động năng là năng lượng mà một vật có được do đang chuyển động."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân tích các phương án",
+        "body": "Hòn đá, lò xo và quả táo đều đứng yên nên không có động năng. Chiếc xe buýt đang chạy có vận tốc nên mang động năng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Một chiếc xe buýt đang chạy trên đường phố**."
+      }
+    ],
+    "finalSolution": "Chiếc xe buýt đang chạy trên đường sở hữu **động năng**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b12-mcq-002",
+    "lessonId": "phy-g6-b12",
+    "sgkBaiSo": 47,
+    "skillIds": [
+      "gravitational-potential-energy"
+    ],
+    "difficulty": 1,
+    "prompt": "Một quả dừa đang nằm yên trên ngọn cây dừa cao 10 m so với mặt đất. Quả dừa này đang lưu trữ dạng năng lượng nào?",
+    "knowledge": [
+      "energy.forms"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Thế năng hấp dẫn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Năng lượng âm thanh"
+        },
+        {
+          "id": "opt-c",
+          "label": "Động năng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Điện năng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Vật ở một độ cao nhất định so với mặt đất sẽ tích trữ dạng năng lượng gì?"
+      },
+      {
+        "level": 2,
+        "text": "Đó là thế năng hấp dẫn (thế năng trọng trường)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định trạng thái của vật",
+        "body": "Quả dừa đứng yên ở độ cao 10 m so với mặt đất."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Định nghĩa thế năng hấp dẫn",
+        "body": "Năng lượng của một vật có được do nó ở một độ cao so với mặt đất được gọi là thế năng hấp dẫn."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng: **Thế năng hấp dẫn**."
+      }
+    ],
+    "finalSolution": "Quả dừa ở trên cao lưu trữ **thế năng hấp dẫn**.",
+    "commonMistakes": [
+      {
+        "id": "confused-kinetic",
+        "message": "Quả dừa đang đứng yên trên cây nên không có động năng."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b12-mcq-003",
+    "lessonId": "phy-g6-b12",
+    "sgkBaiSo": 47,
+    "skillIds": [
+      "chemical-energy-recognition"
+    ],
+    "difficulty": 2,
+    "prompt": "Năng lượng được tích trữ trong thức ăn nuôi sống cơ thể, trong bình ắc quy xe máy và trong bình xăng xe ô tô thuộc dạng năng lượng nào sau đây?",
+    "knowledge": [
+      "energy.forms"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Thế năng đàn hồi"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nhiệt năng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hóa năng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Quang năng"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đây là năng lượng lưu trữ trong các liên kết hóa học của chất dinh dưỡng và nhiên liệu."
+      },
+      {
+        "level": 2,
+        "text": "Năng lượng giải phóng qua phản ứng hóa học hoặc tiêu hóa là hóa năng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận biết dạng năng lượng lưu trữ",
+        "body": "Thức ăn, xăng dầu, pin, ắc quy đều chứa năng lượng tiềm tàng trong các phân tử hóa chất."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Khái niệm Hóa năng",
+        "body": "Hóa năng là dạng năng lượng lưu trữ trong các liên kết hóa học của chất, sẽ chuyển hóa khi xảy ra biến đổi hóa học."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án chính xác là **Hóa năng**."
+      }
+    ],
+    "finalSolution": "Năng lượng lưu trữ trong thực phẩm, pin và xăng dầu là **hóa năng**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b12-mcq-004",
+    "lessonId": "phy-g6-b12",
+    "sgkBaiSo": 47,
+    "skillIds": [
+      "elastic-potential-energy"
+    ],
+    "difficulty": 2,
+    "prompt": "Một cung thủ đang giương cung, kéo căng sợi dây cung để chuẩn bị bắn mũi tên. Dây cung và cánh cung khi bị kéo căng đang mang dạng năng lượng nào?",
+    "knowledge": [
+      "energy.forms"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hóa năng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Thế năng đàn hồi"
+        },
+        {
+          "id": "opt-c",
+          "label": "Động năng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Điện năng"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Dây cung và cánh cung đang bị uốn cong, biến dạng đàn hồi."
+      },
+      {
+        "level": 2,
+        "text": "Năng lượng sinh ra do vật bị biến dạng đàn hồi gọi là thế năng đàn hồi."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích trạng thái",
+        "body": "Cánh cung và dây cung bị biến dạng đàn hồi khi kéo căng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Định nghĩa",
+        "body": "Năng lượng của một vật khi bị biến dạng đàn hồi (lò xo, dây cao su, cánh cung) được gọi là thế năng đàn hồi."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Thế năng đàn hồi**."
+      }
+    ],
+    "finalSolution": "Cánh cung và dây cung bị kéo căng mang **thế năng đàn hồi**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b12-match-005",
+    "lessonId": "phy-g6-b12",
+    "sgkBaiSo": 47,
+    "skillIds": [
+      "energy-forms-matching"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy ghép mỗi hiện tượng hoặc vật thể ở cột bên trái với dạng năng lượng tương ứng ở cột bên phải:",
+    "knowledge": [
+      "energy.forms"
+    ],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Dòng thác nước đang cuồn cuộn đổ xuống",
+          "right": "Động năng"
+        },
+        {
+          "left": "Khối đá nặng nằm trên đỉnh núi cao",
+          "right": "Thế năng hấp dẫn"
+        },
+        {
+          "left": "Ánh sáng chiếu rọi từ Mặt Trời",
+          "right": "Quang năng"
+        },
+        {
+          "left": "Nồi canh đang sôi ùng ục trên bếp",
+          "right": "Nhiệt năng"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hãy quan sát: dòng nước đang chuyển động, tảng đá ở trên cao, Mặt Trời phát sáng, nồi canh có nhiệt độ cao."
+      },
+      {
+        "level": 2,
+        "text": "Chuyển động gắn với động năng; độ cao gắn với thế năng hấp dẫn; ánh sáng gắn với quang năng; nhiệt độ gắn với nhiệt năng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích hiện tượng",
+        "body": "Xét từng vật thể: dòng nước chảy, khối đá trên cao, ánh sáng mặt trời, nồi canh sôi."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Liên hệ dạng năng lượng",
+        "body": "Chuyển động gắn với động năng; độ cao so với mặt đất gắn với thế năng hấp dẫn; ánh sáng gắn với quang năng; nhiệt độ cao gắn với nhiệt năng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận ghép cặp",
+        "body": "Ghép nối: Thác nước chảy ↔ Động năng · Khối đá trên cao ↔ Thế năng hấp dẫn · Ánh nắng ↔ Quang năng · Nồi nước sôi ↔ Nhiệt năng."
+      }
+    ],
+    "finalSolution": "Thác nước chảy ↔ Động năng · Khối đá trên cao ↔ Thế năng hấp dẫn · Ánh nắng ↔ Quang năng · Nồi nước sôi ↔ Nhiệt năng.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b12-multi-006",
+    "lessonId": "phy-g6-b12",
+    "sgkBaiSo": 47,
+    "skillIds": [
+      "mechanical-energy-composite"
+    ],
+    "difficulty": 3,
+    "prompt": "Trong những trường hợp nào sau đây, vật **đồng thời** vừa có động năng vừa có thế năng hấp dẫn? (Chọn tất cả các đáp án đúng)",
+    "knowledge": [
+      "energy.forms"
+    ],
+    "answer": {
+      "kind": "mcq-multi",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Một chiếc ô tô đang chạy trên đường bằng phẳng ở mặt đất"
+        },
+        {
+          "id": "opt-b",
+          "label": "Một quả dừa đứng yên trên ngọn cây"
+        },
+        {
+          "id": "opt-c",
+          "label": "Một chú chim đang bay lượn trên bầu trời cao"
+        },
+        {
+          "id": "opt-d",
+          "label": "Một chiếc máy bay phản lực đang bay trên không trung"
+        },
+        {
+          "id": "opt-e",
+          "label": "Một quả táo đang nằm yên bất động trên mặt đất"
+        }
+      ],
+      "correctIds": [
+        "opt-c",
+        "opt-d"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Vật phải vừa có vận tốc chuyển động (động năng) vừa ở một độ cao so với mặt đất (thế năng hấp dẫn)."
+      },
+      {
+        "level": 2,
+        "text": "Chim bay và máy bay bay trên trời đều đang chuyển động và ở trên cao."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Điều kiện",
+        "body": "Động năng: vật phải đang chuyển động ($v > 0$). Thế năng hấp dẫn: vật phải ở độ cao $h > 0$ so với mặt đất."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra từng vật",
+        "body": "Chú chim và máy bay: vừa chuyển động vừa ở trên cao -> có cả hai dạng năng lượng. Quả táo: đứng yên ở mặt đất (không có cả hai). Quả dừa: chỉ có thế năng hấp dẫn (đứng yên). Ô tô: chỉ có động năng (chạy ở mặt đất $h = 0$)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Chọn phương án: **Chú chim đang bay** và **Máy bay đang bay**."
+      }
+    ],
+    "finalSolution": "Chú chim bay trên trời và máy bay bay trên không trung vừa có **động năng** vừa có **thế năng hấp dẫn**.",
+    "commonMistakes": [
+      {
+        "id": "missed-motion",
+        "message": "Quả dừa trên cây chỉ có thế năng hấp dẫn vì nó đang đứng yên, không có động năng."
+      }
+    ]
+  }
+]

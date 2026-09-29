@@ -1,0 +1,534 @@
+[
+  {
+    "id": "phy-g9-b02-mcq-001",
+    "lessonId": "phy-g9-b02",
+    "sgkBaiSo": 3,
+    "skillIds": [
+      "mechanical-energy-concept"
+    ],
+    "difficulty": 1,
+    "prompt": "Cơ năng của một vật được xác định bằng công thức nào sau đây?",
+    "knowledge": [
+      "formula.mechanical.energy"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "W = W_đ + W_t (tổng động năng và thế năng)"
+        },
+        {
+          "id": "opt-b",
+          "label": "W = W_đ . W_t (tích của động năng và thế năng)"
+        },
+        {
+          "id": "opt-c",
+          "label": "W = W_đ / W_t (thương của động năng chia cho thế năng)"
+        },
+        {
+          "id": "opt-d",
+          "label": "W = W_đ - W_t (hiệu giữa động năng và thế năng)"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cơ năng là tổng toàn bộ năng lượng cơ học (chuyển động và vị trí) mà vật sở hữu."
+      },
+      {
+        "level": 2,
+        "text": "Theo SGK KHTN 9 Bài 3, cơ năng W = W_đ + W_t."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định khái niệm",
+        "body": "Đề bài yêu cầu chỉ ra biểu thức định nghĩa cơ năng của vật."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Khi một vật vừa có động năng vừa có thế năng, tổng của động năng và thế năng được gọi là cơ năng: $W = W_đ + W_t$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **W = W_đ + W_t**."
+      }
+    ],
+    "finalSolution": "Cơ năng của vật bằng tổng động năng và thế năng: **W = W_đ + W_t**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-operator",
+        "message": "Cơ năng là phép CỘNG (tổng) của động năng và thế năng, không phải phép nhân, chia hay trừ."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b02-mcq-002",
+    "lessonId": "phy-g9-b02",
+    "sgkBaiSo": 3,
+    "skillIds": [
+      "energy-transformation-fall"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong quá trình một hòn đá rơi tự do từ trên cao xuống đất (bỏ qua lực cản của không khí), sự biến đổi năng lượng diễn ra như thế nào?",
+    "knowledge": [
+      "formula.mechanical.energy"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cả động năng và thế năng đều giảm dần"
+        },
+        {
+          "id": "opt-b",
+          "label": "Thế năng giảm dần, động năng tăng dần (thế năng chuyển hóa thành động năng)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cả động năng và thế năng đều không thay đổi"
+        },
+        {
+          "id": "opt-d",
+          "label": "Động năng giảm dần, thế năng tăng dần (động năng chuyển hóa thành thế năng)"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi rơi, độ cao của vật tăng hay giảm? Tốc độ rơi tăng hay giảm?"
+      },
+      {
+        "level": 2,
+        "text": "Độ cao giảm làm thế năng giảm; tốc độ rơi tăng làm động năng tăng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích chuyển động",
+        "body": "Hòn đá rơi tự do: độ cao $h$ giảm dần về 0, tốc độ $v$ tăng dần."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Liên hệ năng lượng",
+        "body": "Vì $h$ giảm nên $W_t = P \\cdot h$ giảm. Vì $v$ tăng nên $W_đ = \\frac{1}{2}mv^2$ tăng. Thế năng đã chuyển hóa thành động năng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Thế năng giảm dần, động năng tăng dần**."
+      }
+    ],
+    "finalSolution": "Khi rơi tự do, **thế năng giảm dần** và **chuyển hóa thành động năng tăng dần**.",
+    "commonMistakes": [
+      {
+        "id": "invert-energy-types",
+        "message": "Chú ý vật rơi xuống thì tốc độ tăng dần nên động năng phải tăng, không thể giảm."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b02-mcq-003",
+    "lessonId": "phy-g9-b02",
+    "sgkBaiSo": 3,
+    "skillIds": [
+      "energy-highest-point"
+    ],
+    "difficulty": 1,
+    "prompt": "Một quả bóng được ném thẳng đứng từ mặt đất lên cao. Khi quả bóng lên đến vị trí cao nhất (ngay trước khi bắt đầu rơi xuống), năng lượng của quả bóng có đặc điểm gì?",
+    "knowledge": [
+      "formula.mechanical.energy"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cơ năng bị biến mất hoàn toàn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Động năng bằng 0, thế năng trọng trường đạt giá trị cực đại"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cả động năng và thế năng đều bằng 0"
+        },
+        {
+          "id": "opt-d",
+          "label": "Động năng cực đại, thế năng trọng trường bằng 0"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tại điểm cao nhất, vật dừng lại trong giây lát trước khi đổi chiều chuyển động."
+      },
+      {
+        "level": 2,
+        "text": "Khi v = 0 thì W_đ = 0. Khi h đạt cực đại thì W_t đạt cực đại."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Trạng thái tại điểm cao nhất",
+        "body": "Tại vị trí cao nhất, tốc độ tức thời của quả bóng $v = 0$ và độ cao $h = h_{\\max}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Xác định các dạng năng lượng",
+        "body": "Do $v = 0 \\Rightarrow W_đ = \\frac{1}{2}mv^2 = 0$. Do $h = h_{\\max} \\Rightarrow W_t = P \\cdot h_{\\max}$ đạt cực đại."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Động năng bằng 0, thế năng trọng trường đạt giá trị cực đại**."
+      }
+    ],
+    "finalSolution": "Tại điểm cao nhất: **động năng bằng 0**, **thế năng trọng trường cực đại** và bằng cơ năng của vật.",
+    "commonMistakes": [
+      {
+        "id": "think-energy-zero",
+        "message": "Năng lượng không tự nhiên biến mất; toàn bộ động năng ban đầu đã chuyển thành thế năng cực đại ở vị trí cao nhất."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b02-mcq-004",
+    "lessonId": "phy-g9-b02",
+    "sgkBaiSo": 3,
+    "skillIds": [
+      "pendulum-energy-transformation"
+    ],
+    "difficulty": 2,
+    "prompt": "Một con lắc đơn dao động điều hòa qua lại giữa hai vị trí biên A, B quanh vị trí cân bằng O (bỏ qua mọi ma sát). Phát biểu nào sau đây về năng lượng của con lắc tại vị trí cân bằng O là đúng?",
+    "knowledge": [
+      "formula.mechanical.energy"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Động năng đạt giá trị cực đại, thế năng đạt giá trị nhỏ nhất (bằng 0 nếu chọn mốc tại O)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Động năng và thế năng đều bằng 0"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cơ năng tại O lớn hơn cơ năng tại hai biên A và B"
+        },
+        {
+          "id": "opt-d",
+          "label": "Thế năng đạt giá trị cực đại, động năng bằng 0"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Vị trí cân bằng O là vị trí thấp nhất trên quỹ đạo dao động của con lắc."
+      },
+      {
+        "level": 2,
+        "text": "Tại vị trí thấp nhất O, tốc độ chuyển động của vật nặng là lớn nhất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích vị trí O",
+        "body": "Tại vị trí cân bằng O, con lắc ở độ cao thấp nhất ($h = 0$ nếu mốc tại O) và có vận tốc đạt giá trị lớn nhất $v = v_{\\max}$."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Biến đổi năng lượng",
+        "body": "Khi từ biên về O, thế năng chuyển thành động năng. Tại O, động năng cực đại $W_{đ\\max} = \\frac{1}{2}mv_{\\max}^2 = W$ và thế năng nhỏ nhất."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Động năng đạt giá trị cực đại, thế năng nhỏ nhất**."
+      }
+    ],
+    "finalSolution": "Tại vị trí cân bằng O, **động năng đạt cực đại**, **thế năng nhỏ nhất** (bằng 0).",
+    "commonMistakes": [
+      {
+        "id": "confuse-center-and-edge",
+        "message": "Tại biên A và B mới là nơi thế năng cực đại và động năng bằng 0; tại vị trí cân bằng O thì ngược lại."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b02-num-005",
+    "lessonId": "phy-g9-b02",
+    "sgkBaiSo": 3,
+    "skillIds": [
+      "mechanical-energy-calc-sum"
+    ],
+    "difficulty": 2,
+    "prompt": "Một thiết bị flycam đang bay khảo sát trên cao có động năng W_đ = 85 J và thế năng trọng trường so với mặt đất W_t = 215 J. Cơ năng của flycam tại thời điểm này là bao nhiêu Jun (J)?",
+    "knowledge": [
+      "formula.mechanical.energy"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 300,
+      "unit": "J",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cơ năng bằng tổng của động năng và thế năng: W = W_đ + W_t."
+      },
+      {
+        "level": 2,
+        "text": "Cộng hai giá trị: W = 85 + 215."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$W_đ = 85\\text{ J}$; $W_t = 215\\text{ J}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức cơ năng",
+        "body": "$W = W_đ + W_t$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$W = 85 + 215 = 300\\text{ J}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cơ năng của flycam là **300 J**."
+      }
+    ],
+    "finalSolution": "Cơ năng của flycam: $W = W_đ + W_t = 85 + 215 = 300\\text{ J}$.",
+    "commonMistakes": [
+      {
+        "id": "subtract-mistake",
+        "message": "Bạn đã trừ thế năng cho động năng thay vì cộng: W = W_đ + W_t = 300 J.",
+        "trapAnswers": [
+          "130",
+          "130 J"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b02-num-006",
+    "lessonId": "phy-g9-b02",
+    "sgkBaiSo": 3,
+    "skillIds": [
+      "mechanical-energy-calc-initial"
+    ],
+    "difficulty": 2,
+    "prompt": "Một quả dừa có khối lượng m = 1,2 kg ở trên cây cách mặt đất h = 8 m. Lấy hệ số trọng lượng P = 10 . m và chọn mốc thế năng tại mặt đất. Khi quả dừa bắt đầu rơi tự do (vận tốc đầu bằng 0), cơ năng của quả dừa là bao nhiêu Jun (J)?",
+    "knowledge": [
+      "formula.mechanical.energy",
+      "formula.potential.energy.gravity",
+      "mechanics.gravity_weight"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 96,
+      "unit": "J",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Vì quả dừa bắt đầu rơi (v = 0) nên động năng ban đầu W_đ = 0. Do đó cơ năng W = W_t."
+      },
+      {
+        "level": 2,
+        "text": "Tính W_t = 10 . m . h = 10 x 1,2 x 8."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$m = 1,2\\text{ kg}$; $h = 8\\text{ m}$; $v_0 = 0$; $P = 10 \\cdot m$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức cơ năng ban đầu",
+        "body": "Vì $v_0 = 0 \\Rightarrow W_đ = 0$. Khi đó cơ năng bằng thế năng ban đầu: $W = W_t = P \\cdot h = 10 \\cdot m \\cdot h$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$W = 10 \\times 1,2 \\times 8 = 12 \\times 8 = 96\\text{ J}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cơ năng của quả dừa là **96 J**."
+      }
+    ],
+    "finalSolution": "Cơ năng ban đầu: $W = W_t = 10 \\cdot m \\cdot h = 10 \\times 1,2 \\times 8 = 96\\text{ J}$.",
+    "commonMistakes": [
+      {
+        "id": "forget-gravity-factor",
+        "message": "Bạn đã quên nhân với 10 khi tính trọng lượng P: W = 10 * m * h = 96 J.",
+        "trapAnswers": [
+          "9.6",
+          "9.6 J"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b02-num-007",
+    "lessonId": "phy-g9-b02",
+    "sgkBaiSo": 3,
+    "skillIds": [
+      "mechanical-energy-conservation-calc"
+    ],
+    "difficulty": 3,
+    "prompt": "Một vật trượt không ma sát từ đỉnh máng nghiêng xuống chân dốc. Cơ năng của vật được bảo toàn và có giá trị W = 160 J so với mặt sàn. Khi trượt đến vị trí có thế năng trọng trường W_t = 45 J, động năng của vật tại vị trí này là bao nhiêu Jun (J)?",
+    "knowledge": [
+      "formula.mechanical.energy"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 115,
+      "unit": "J",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Theo định luật bảo toàn cơ năng: W = W_đ + W_t không đổi."
+      },
+      {
+        "level": 2,
+        "text": "Suy ra W_đ = W - W_t = 160 - 45."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Cơ năng bảo toàn $W = 160\\text{ J}$; tại vị trí khảo sát $W_t = 45\\text{ J}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Hệ thức bảo toàn cơ năng",
+        "body": "$W = W_đ + W_t \\Rightarrow W_đ = W - W_t$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$W_đ = 160 - 45 = 115\\text{ J}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Động năng của vật tại vị trí đó là **115 J**."
+      }
+    ],
+    "finalSolution": "Theo định luật bảo toàn cơ năng: $W_đ = W - W_t = 160 - 45 = 115\\text{ J}$.",
+    "commonMistakes": [
+      {
+        "id": "add-instead-of-subtract",
+        "message": "Bạn đã cộng hai giá trị thay vì lấy cơ năng trừ thế năng: W_đ = W - W_t = 115 J.",
+        "trapAnswers": [
+          "205",
+          "205 J"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b02-num-008",
+    "lessonId": "phy-g9-b02",
+    "sgkBaiSo": 3,
+    "skillIds": [
+      "mechanical-energy-calc-speed-impact"
+    ],
+    "difficulty": 3,
+    "prompt": "Thả rơi tự do một vật có khối lượng m = 0,2 kg từ độ cao h = 5 m xuống mặt đất (lấy hệ số liên hệ P = 10 . m, chọn mốc thế năng tại mặt đất, bỏ qua sức cản không khí). Áp dụng định luật bảo toàn cơ năng, tốc độ của vật ngay trước khi chạm đất là bao nhiêu m/s?",
+    "knowledge": [
+      "formula.mechanical.energy",
+      "formula.kinetic.energy",
+      "formula.potential.energy.gravity"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 10,
+      "unit": "m/s",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Toàn bộ thế năng ban đầu ở độ cao h chuyển hóa thành động năng ngay khi chạm đất: W_đ = W_t."
+      },
+      {
+        "level": 2,
+        "text": "Tính W_t = 10 . m . h = 10 J. Khi chạm đất (1/2) . m . v² = 10 => v² = 100 => v = 10 m/s."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$m = 0,2\\text{ kg}$; $h = 5\\text{ m}$; $P = 10 \\cdot m$; bỏ qua lực cản không khí."
+      },
+      {
+        "kind": "equation",
+        "title": "Bảo toàn cơ năng",
+        "body": "Tại vị trí thả ($v = 0$): $W_1 = W_t = 10 \\cdot m \\cdot h = 10 \\times 0,2 \\times 5 = 10\\text{ J}$. Tại mặt đất ($h = 0$): $W_2 = W_đ = \\frac{1}{2}mv^2$. Vì cơ năng bảo toàn nên $W_2 = W_1 \\Rightarrow \\frac{1}{2}mv^2 = 10$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán vận tốc",
+        "body": "$\\frac{1}{2} \\times 0,2 \\times v^2 = 10 \\Rightarrow 0,1 \\times v^2 = 10 \\Rightarrow v^2 = \\frac{10}{0,1} = 100 \\Rightarrow v = 10\\text{ m/s}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tốc độ của vật ngay trước khi chạm đất là **10 m/s**."
+      }
+    ],
+    "finalSolution": "Cơ năng bảo toàn: $\\frac{1}{2} m v^2 = 10 \\cdot m \\cdot h \\Rightarrow v = \\sqrt{2 \\times 10 \\times h} = \\sqrt{2 \\times 10 \\times 5} = 10\\text{ m/s}$.",
+    "commonMistakes": [
+      {
+        "id": "forget-square-root",
+        "message": "Bạn đã tính v² = 100 mà quên khai căn bậc hai để tìm v = 10 m/s.",
+        "trapAnswers": [
+          "100",
+          "100 m/s"
+        ]
+      }
+    ]
+  }
+]

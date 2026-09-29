@@ -1,0 +1,79 @@
+{
+  "lessonId": "phy-g8-b08",
+  "nodeId": "phy-g8-b08-theory",
+  "title": "Lý thuyết: Hiện tượng nhiễm điện do cọ xát",
+  "subtitle": "Bài 20 SGK Khoa học tự nhiên 8 (Kết nối tri thức)",
+  "sgkBaiSo": 20,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Nhiễm điện do cọ xát",
+      "badgeColor": "cyan",
+      "title": "1. Sự nhiễm điện do cọ xát và đặc điểm của vật nhiễm điện",
+      "content": "Nhiều vật sau khi bị cọ xát có khả năng hút các vật khác hoặc phóng tia lửa điện:",
+      "bulletPoints": [
+        "Hiện tượng: Có thể làm nhiễm điện nhiều vật bằng cách cọ xát (ví dụ: cọ xát thước nhựa vào mảnh vải khô, cọ xát thanh thủy tinh vào lụa, lược nhựa chải tóc khô).",
+        "Đặc điểm của vật nhiễm điện: Vật bị nhiễm điện (vật mang điện tích) có khả năng hút các vật nhỏ nhẹ khác (như mẩu giấy vụn, sợi bông, mẩu xốp, sợi tóc...) hoặc làm sáng bóng đèn của bút thử điện.",
+        "Hiện tượng thực tế: Tiếng nổ lách tách nhỏ và lóe sáng khi cởi áo len trong phòng tối vào mùa đông hanh khô; cánh quạt điện sau một thời gian quay bám đầy bụi ở mép cánh do ma sát với không khí làm cánh quạt bị nhiễm điện."
+      ],
+      "callout": "Giải thích cánh quạt bám bụi: Cánh quạt quay cọ xát với không khí bị nhiễm điện nên hút các hạt bụi lơ lửng trong phòng dính chặt vào mép cánh."
+    },
+    {
+      "id": "c2",
+      "badge": "Hai loại điện tích",
+      "badgeColor": "amber",
+      "title": "2. Hai loại điện tích và quy tắc tương tác",
+      "content": "Trong tự nhiên chỉ tồn tại hai loại điện tích và chúng tương tác với nhau:",
+      "bulletPoints": [
+        "Hai loại điện tích: Điện tích dương (kí hiệu: $+$) và Điện tích âm (kí hiệu: $-$).",
+        "Quy ước lịch sử: Thanh thủy tinh cọ xát vào lụa nhiễm điện dương ($+$); Thanh nhựa sẫm màu (hoặc thước nhựa) cọ xát vào vải len nhiễm điện âm ($-$).",
+        "Quy tắc tương tác giữa các điện tích:",
+        "+ Các điện tích CÙNG LOẠI (cùng dấu: $+$ với $+$ hoặc $-$ với $-$) thì ĐẨY NHAU.",
+        "+ Các điện tích KHÁC LOẠI (trái dấu: $+$ với $-$) thì HÚT NHAU."
+      ],
+      "callout": "Thần chú ghi nhớ: Cùng loại thì ĐẨY, khác loại thì HÚT (tương tự như hai cực của nam châm)."
+    },
+    {
+      "id": "c3",
+      "badge": "Mô hình electron",
+      "badgeColor": "emerald",
+      "title": "3. Sơ lược cấu tạo nguyên tử và bản chất nhiễm điện",
+      "content": "Bản chất của sự nhiễm điện do cọ xát được giải thích bằng sự dịch chuyển của hạt electron:",
+      "bulletPoints": [
+        "Cấu tạo nguyên tử: Gồm hạt nhân mang điện tích dương nằm ở tâm, các hạt electron mang điện tích âm chuyển động xung quanh tạo thành lớp vỏ.",
+        "Nguyên tử trung hòa về điện: Tổng điện tích dương của hạt nhân bằng tổng điện tích âm của các electron.",
+        "Bản chất nhiễm điện do cọ xát: Khi cọ xát, các electron có thể dịch chuyển từ vật này sang vật khác:",
+        "+ Vật NHẬN THÊM electron thì nhiễm điện ÂM (thừa electron).",
+        "+ Vật MẤT BỚT electron thì nhiễm điện DƯƠNG (thiếu electron)."
+      ],
+      "callout": "Lưu ý quan trọng: Chỉ có hạt electron dịch chuyển giữa các vật, hạt nhân mang điện dương không di chuyển."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi đưa hai vật cùng nhiễm điện âm (-) lại gần nhau, hiện tượng gì sẽ xảy ra giữa chúng?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Chúng đẩy nhau",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Chúng hút nhau dính chặt",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Chúng không có bất kì tương tác nào",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Một vật biến mất hoàn toàn",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo quy tắc tương tác điện tích (SGK KHTN 8 Bài 20): Các vật nhiễm điện cùng loại (cùng mang điện tích âm) thì đẩy nhau."
+  }
+}

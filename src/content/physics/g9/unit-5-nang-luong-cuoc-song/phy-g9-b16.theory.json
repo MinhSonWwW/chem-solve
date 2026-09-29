@@ -1,0 +1,79 @@
+{
+  "lessonId": "phy-g9-b16",
+  "nodeId": "phy-g9-b16-theory",
+  "title": "Lý thuyết: Một số dạng năng lượng tái tạo",
+  "subtitle": "Bài 17 SGK Khoa học tự nhiên 9 (Kết nối tri thức)",
+  "sgkBaiSo": 17,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm cốt lõi",
+      "badgeColor": "cyan",
+      "title": "1. Khái niệm năng lượng tái tạo",
+      "content": "Để thay thế dần các nguồn nhiên liệu hóa thạch hữu hạn và gây ô nhiễm:",
+      "bulletPoints": [
+        "Định nghĩa: Năng lượng tái tạo là nguồn năng lượng có sẵn trong tự nhiên, liên tục được phục hồi hoặc được coi là vô tận, không bị cạn kiệt trong quá trình khai thác và sử dụng của con người.",
+        "Các dạng tiêu biểu: Năng lượng mặt trời, năng lượng gió, năng lượng nước (thủy điện, thủy triều, sóng biển), năng lượng sinh khối (biomass) và năng lượng địa nhiệt.",
+        "Tính chất sinh thái: Thường được gọi là 'năng lượng sạch' hoặc 'năng lượng xanh' vì quá trình vận hành hầu như không phát thải khí nhà kính $CO_2$ và các chất gây ô nhiễm không khí."
+      ],
+      "callout": "Đặc trưng nổi bật: Năng lượng tái tạo dựa trên các chu trình tự nhiên của Trái Đất và bức xạ Mặt Trời, có thể khai thác lâu dài cho các thế hệ tương lai."
+    },
+    {
+      "id": "c2",
+      "badge": "Các công nghệ chính",
+      "badgeColor": "amber",
+      "title": "2. Một số dạng năng lượng tái tạo thông dụng và công nghệ khai thác",
+      "content": "Con người đã phát minh ra các thiết bị công nghệ hiện đại để chuyển đổi năng lượng tự nhiên thành điện năng:",
+      "bulletPoints": [
+        "Năng lượng mặt trời: Sử dụng pin quang điện (tấm pin mặt trời) để biến đổi trực tiếp quang năng thành điện năng; hoặc dùng các tấm hấp thụ nhiệt để đun nước nóng sinh hoạt.",
+        "Năng lượng gió: Các cánh quạt của tua-bin gió đón luồng gió, biến đổi động năng của gió thành cơ năng làm quay máy phát điện, sinh ra dòng điện xoay chiều.",
+        "Năng lượng nước (Thủy điện): Nước chứa trong các hồ trên cao có thế năng lớn. Khi xả nước chảy xuống dốc qua đường ống, thế năng chuyển thành động năng làm quay tua-bin máy phát điện.",
+        "Năng lượng sinh khối: Sử dụng gỗ, rơm rạ, bã mía, chất thải nông nghiệp hoặc khí sinh học (biogas) lên men từ phân gia súc để đun nấu hoặc phát điện.",
+        "Năng lượng địa nhiệt: Khai thác nhiệt lượng từ sâu trong lòng đất (hơi nước nóng tự nhiên) để làm quay tua-bin máy phát điện."
+      ],
+      "callout": "Tiềm năng Việt Nam: Với bờ biển dài hơn 3 260 km và số giờ nắng cao quanh năm, Việt Nam có tiềm năng khổng lồ về điện gió ngoài khơi và điện mặt trời."
+    },
+    {
+      "id": "c3",
+      "badge": "Xu thế tương lai",
+      "badgeColor": "emerald",
+      "title": "3. Ưu điểm, thách thức và xu thế chuyển dịch năng lượng xanh",
+      "content": "Chuyển dịch sang năng lượng tái tạo là xu thế tất yếu của thế giới:",
+      "bulletPoints": [
+        "Ưu điểm vượt trội: Nguồn cung vô tận, không lo cạn kiệt; giảm thiểu tối đa phát thải khí nhà kính $CO_2$, chống biến đổi khí hậu; nâng cao an ninh năng lượng quốc gia.",
+        "Thách thức kỹ thuật:",
+        "+ Tính gián đoạn (chập chờn): Phụ thuộc vào điều kiện thời tiết (không có nắng vào ban đêm, gió thay đổi thất thường theo mùa).",
+        "+ Chi phí đầu tư ban đầu còn cao và đòi hỏi công nghệ pin tích trữ năng lượng quy mô lớn (hệ thống lưu trữ điện BESS).",
+        "Cam kết Net Zero 2050: Việt Nam cùng nhiều quốc gia trên thế giới cam kết đạt mục tiêu phát thải ròng bằng 0 (Net Zero) vào năm 2050 bằng cách giảm dần điện than và thay thế bằng năng lượng tái tạo."
+      ],
+      "callout": "Định hướng tương lai: Tích hợp thông minh các nguồn năng lượng tái tạo kết hợp với lưới điện thông minh và hệ thống lưu trữ là chìa khóa phát triển bền vững."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Dạng năng lượng nào sau đây KHÔNG PHẢI là năng lượng tái tạo?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Nhiên liệu than đá và dầu mỏ",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Năng lượng gió qua tua-bin",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Năng lượng mặt trời qua pin quang điện",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Năng lượng dòng nước ở nhà máy thủy điện",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 9 Bài 17: Than đá và dầu mỏ là nhiên liệu hóa thạch không thể tái tạo, sẽ bị cạn kiệt trong tương lai."
+  }
+}

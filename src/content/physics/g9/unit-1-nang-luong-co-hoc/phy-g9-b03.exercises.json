@@ -1,0 +1,551 @@
+[
+  {
+    "id": "phy-g9-b03-mcq-001",
+    "lessonId": "phy-g9-b03",
+    "sgkBaiSo": 4,
+    "skillIds": [
+      "mechanical-work-condition"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong các trường hợp sau đây, trường hợp nào lực tác dụng có sinh công cơ học?",
+    "knowledge": [
+      "formula.mechanical.work"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Lực sĩ đang gồng mình giữ yên quả tạ 150 kg trên cao"
+        },
+        {
+          "id": "opt-b",
+          "label": "Người đẩy bức tường bê tông kiên cố nhưng tường không xê dịch"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ngựa đang kéo một cỗ xe dịch chuyển đều trên đường"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tảng đá lớn nằm yên trên sườn đồi"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Điều kiện có công cơ học: phải có lực tác dụng và làm vật dịch chuyển (s > 0)."
+      },
+      {
+        "level": 2,
+        "text": "Khi vật đứng yên không dịch chuyển thì s = 0 nên công A = F . s = 0."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định điều kiện sinh công",
+        "body": "Công cơ học chỉ xuất hiện khi thỏa mãn hai điều kiện: có lực tác dụng và vật dịch chuyển quãng đường $s$ không vuông góc với lực."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân tích các phương án",
+        "body": "Các trường hợp giữ tạ yên, tảng đá nằm yên, đẩy tường không xê dịch đều có $s = 0$ nên lực không sinh công. Chỉ có con ngựa kéo cỗ xe chuyển động trên đường là có lực kéo và có độ dịch chuyển $s > 0$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Ngựa đang kéo một cỗ xe dịch chuyển đều trên đường**."
+      }
+    ],
+    "finalSolution": "Trường hợp có sinh công cơ học: **Ngựa đang kéo một cỗ xe dịch chuyển đều trên đường**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-effort-with-work",
+        "message": "Trong đời sống 'mệt nhọc' được gọi là tốn công, nhưng trong vật lý nếu vật không dịch chuyển (s = 0) thì công cơ học bằng 0."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b03-mcq-002",
+    "lessonId": "phy-g9-b03",
+    "sgkBaiSo": 4,
+    "skillIds": [
+      "work-zero-perpendicular"
+    ],
+    "difficulty": 1,
+    "prompt": "Một học sinh mang chiếc cặp sách nặng trên vai đi bộ trên đường bằng phẳng nằm ngang với tốc độ không đổi. Trọng lực của Trái Đất tác dụng lên cặp sách có sinh công cơ học không? Vì sao?",
+    "knowledge": [
+      "formula.mechanical.work"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Không sinh công, vì trọng lực có phương thẳng đứng vuông góc với phương dịch chuyển nằm ngang"
+        },
+        {
+          "id": "opt-b",
+          "label": "Có sinh công rất lớn, vì cặp sách có trọng lượng đáng kể"
+        },
+        {
+          "id": "opt-c",
+          "label": "Không sinh công, vì trọng lượng của cặp sách bằng 0"
+        },
+        {
+          "id": "opt-d",
+          "label": "Có sinh công, vì học sinh đã dịch chuyển được một quãng đường dài"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hãy quan sát góc giữa phương của trọng lực (thẳng đứng) và phương chuyển động (nằm ngang)."
+      },
+      {
+        "level": 2,
+        "text": "Khi lực có phương vuông góc với phương chuyển động thì lực đó không sinh công cơ học."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định phương của lực và chuyển động",
+        "body": "Trọng lực $\\vec{P}$ có phương thẳng đứng, hướng xuống dưới. Hướng chuyển động của cặp sách là phương nằm ngang."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc lực vuông góc",
+        "body": "Khi phương của lực vuông góc với phương dịch chuyển của vật thì lực đó không thực hiện công cơ học ($A = 0$)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Không sinh công, vì trọng lực vuông góc với phương dịch chuyển**."
+      }
+    ],
+    "finalSolution": "Trọng lực **không sinh công** do phương của trọng lực thẳng đứng vuông góc với phương dịch chuyển nằm ngang.",
+    "commonMistakes": [
+      {
+        "id": "forget-perpendicular-rule",
+        "message": "Bạn đã quên quy tắc: Lực có phương vuông góc với phương dịch chuyển thì không sinh công cơ học."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b03-mcq-003",
+    "lessonId": "phy-g9-b03",
+    "sgkBaiSo": 4,
+    "skillIds": [
+      "power-unit-concept"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong hệ đơn vị quốc tế SI, đơn vị đo công suất là gì và mối liên hệ của nó với đơn vị đo công, thời gian như thế nào?",
+    "knowledge": [
+      "formula.power"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Oát (W), với 1 W = 1 J/s"
+        },
+        {
+          "id": "opt-b",
+          "label": "Jun (J), với 1 J = 1 N.m"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mã lực (HP), với 1 HP = 1 000 W"
+        },
+        {
+          "id": "opt-d",
+          "label": "Niutơn (N), với 1 N = 1 J.m"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Công thức công suất là P = A / t. Công đo bằng J, thời gian đo bằng s."
+      },
+      {
+        "level": 2,
+        "text": "Đơn vị công suất là Oát (Watt, kí hiệu W). 1 W = 1 J / 1 s."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định đơn vị",
+        "body": "Đề bài yêu cầu nêu tên đơn vị chuẩn của công suất trong hệ SI và liên hệ thứ nguyên."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 4: Đơn vị của công suất là Oát (kí hiệu là W). $1\\text{ W} = 1\\text{ J/s}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Oát (W), với 1 W = 1 J/s**."
+      }
+    ],
+    "finalSolution": "Đơn vị đo công suất trong hệ SI là **Oát (W)**, trong đó $1\\text{ W} = 1\\text{ J/s}$.",
+    "commonMistakes": [
+      {
+        "id": "confuse-power-and-work-unit",
+        "message": "Jun (J) là đơn vị đo công và năng lượng, còn công suất đo bằng Oát (W)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b03-num-004",
+    "lessonId": "phy-g9-b03",
+    "sgkBaiSo": 4,
+    "skillIds": [
+      "mechanical-work-calc-basic"
+    ],
+    "difficulty": 2,
+    "prompt": "Một người công nhân dùng lực kéo F = 180 N theo phương ngang để kéo một cỗ máy di chuyển quãng đường s = 15 m trên mặt sàn xưởng. Công cơ học mà người công nhân đã thực hiện là bao nhiêu Jun (J)?",
+    "knowledge": [
+      "formula.mechanical.work"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 2700,
+      "unit": "J",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp dụng công thức tính công cơ học A = F . s."
+      },
+      {
+        "level": 2,
+        "text": "Thay số: F = 180 N, s = 15 m để tính tích số A."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$F = 180\\text{ N}$; $s = 15\\text{ m}$; lực kéo cùng hướng chuyển động."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức công cơ học",
+        "body": "$A = F \\cdot s$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$A = 180 \\times 15 = 2\\,700\\text{ J}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Công mà người công nhân thực hiện là **2 700 J**."
+      }
+    ],
+    "finalSolution": "Công cơ học: $A = F \\cdot s = 180 \\times 15 = 2\\,700\\text{ J}$.",
+    "commonMistakes": [
+      {
+        "id": "divide-instead-of-multiply",
+        "message": "Bạn đã chia F cho s thay vì nhân F với s: A = F * s = 2 700 J.",
+        "trapAnswers": [
+          "12",
+          "12 J"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b03-num-005",
+    "lessonId": "phy-g9-b03",
+    "sgkBaiSo": 4,
+    "skillIds": [
+      "mechanical-work-calc-lifting-kj"
+    ],
+    "difficulty": 2,
+    "prompt": "Một cần cẩu nâng đều một khối vật liệu xây dựng có khối lượng m = 400 kg lên cao h = 6 m theo phương thẳng đứng. Lấy hệ số trọng lượng P = 10 . m. Công của lực nâng mà cần cẩu đã thực hiện là bao nhiêu kilôjun (kJ)?",
+    "knowledge": [
+      "formula.mechanical.work",
+      "mechanics.gravity_weight"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 24,
+      "unit": "kJ",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Lực nâng đều bằng trọng lượng của vật: F = P = 10 . m."
+      },
+      {
+        "level": 2,
+        "text": "Tính A = P . h theo Jun, sau đó chia cho 1 000 để đổi ra kilôjun (kJ)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$m = 400\\text{ kg}$; $h = 6\\text{ m}$; nâng đều nên lực nâng $F = P = 10 \\cdot m$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính công",
+        "body": "$A = F \\cdot h = 10 \\cdot m \\cdot h$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán và đổi sang kJ",
+        "body": "$A = 10 \\times 400 \\times 6 = 4\\,000 \\times 6 = 24\\,000\\text{ J} = 24\\text{ kJ}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Công của lực nâng là **24 kJ**."
+      }
+    ],
+    "finalSolution": "Công của lực nâng: $A = 10 \\cdot m \\cdot h = 10 \\times 400 \\times 6 = 24\\,000\\text{ J} = 24\\text{ kJ}$.",
+    "commonMistakes": [
+      {
+        "id": "forget-kj-conversion",
+        "message": "Bạn đã để nguyên đơn vị Jun mà không đổi sang kilôjun (kJ): 24 000 J = 24 kJ.",
+        "trapAnswers": [
+          "24000",
+          "24000 J"
+        ]
+      },
+      {
+        "id": "forget-gravity-factor",
+        "message": "Bạn đã quên nhân với 10 để tính trọng lượng: A = 10 * m * h = 24 kJ.",
+        "trapAnswers": [
+          "2.4",
+          "2.4 kJ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b03-num-006",
+    "lessonId": "phy-g9-b03",
+    "sgkBaiSo": 4,
+    "skillIds": [
+      "power-calc-basic"
+    ],
+    "difficulty": 2,
+    "prompt": "Một tời điện thực hiện được một công A = 75 000 J trong khoảng thời gian t = 25 s. Công suất hoạt động của tời điện này là bao nhiêu oát (W)?",
+    "knowledge": [
+      "formula.power"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 3000,
+      "unit": "W",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sử dụng công thức tính công suất P = A / t."
+      },
+      {
+        "level": 2,
+        "text": "Thay số: A = 75 000 J, t = 25 s để tính thương số P."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$A = 75\\,000\\text{ J}$; $t = 25\\text{ s}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức công suất",
+        "body": "$P = \\frac{A}{t}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$P = \\frac{75\\,000}{25} = 3\\,000\\text{ W}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Công suất của tời điện là **3 000 W** (hay 3 kW)."
+      }
+    ],
+    "finalSolution": "Công suất của tời điện: $P = \\frac{A}{t} = \\frac{75\\,000}{25} = 3\\,000\\text{ W}$.",
+    "commonMistakes": [
+      {
+        "id": "multiply-instead-of-divide",
+        "message": "Bạn đã nhân A với t thay vì chia A cho t: P = A / t = 3 000 W.",
+        "trapAnswers": [
+          "1875000"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b03-num-007",
+    "lessonId": "phy-g9-b03",
+    "sgkBaiSo": 4,
+    "skillIds": [
+      "power-calc-work-from-time"
+    ],
+    "difficulty": 3,
+    "prompt": "Một động cơ điện có công suất định mức P = 1 200 W hoạt động liên tục trong thời gian t = 5 phút. Công mà động cơ sinh ra trong khoảng thời gian này là bao nhiêu kilôjun (kJ)?",
+    "knowledge": [
+      "formula.power",
+      "formula.mechanical.work"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 360,
+      "unit": "kJ",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bắt buộc đổi thời gian từ phút sang giây: 1 phút = 60 s."
+      },
+      {
+        "level": 2,
+        "text": "t = 5 x 60 = 300 s. Công A = P . t = 1 200 x 300 (J), sau đó đổi ra kJ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt và đổi đơn vị",
+        "body": "$P = 1\\,200\\text{ W}$; $t = 5\\text{ phút} = 5 \\times 60 = 300\\text{ s}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính công",
+        "body": "Từ $P = \\frac{A}{t} \\Rightarrow A = P \\cdot t$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán và đổi sang kJ",
+        "body": "$A = 1\\,200 \\times 300 = 360\\,000\\text{ J} = 360\\text{ kJ}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Công mà động cơ sinh ra là **360 kJ**."
+      }
+    ],
+    "finalSolution": "Thời gian $t = 300\\text{ s}$. Công sinh ra: $A = P \\cdot t = 1\\,200 \\times 300 = 360\\,000\\text{ J} = 360\\text{ kJ}$.",
+    "commonMistakes": [
+      {
+        "id": "forget-convert-minute-to-second",
+        "message": "Bạn đã không đổi phút ra giây (để nguyên t = 5): A = 1 200 * 300 = 360 000 J = 360 kJ.",
+        "trapAnswers": [
+          "6",
+          "6 kJ",
+          "6000"
+        ]
+      },
+      {
+        "id": "forget-convert-j-to-kj",
+        "message": "Bạn đã tính ra 360 000 J nhưng quên đổi sang kilôjun (kJ): 360 000 J = 360 kJ.",
+        "trapAnswers": [
+          "360000",
+          "360000 J"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b03-num-008",
+    "lessonId": "phy-g9-b03",
+    "sgkBaiSo": 4,
+    "skillIds": [
+      "power-calc-force-speed"
+    ],
+    "difficulty": 3,
+    "prompt": "Một xe tải chuyển động thẳng đều trên đường ngang với tốc độ v = 54 km/h dưới tác dụng của lực kéo động cơ F = 4 000 N. Công suất của động cơ xe tải khi đó là bao nhiêu kilôoát (kW)?",
+    "knowledge": [
+      "formula.power",
+      "formula.mechanical.work"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 60,
+      "unit": "kW",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bắt buộc đổi tốc độ từ km/h sang m/s: chia cho 3,6."
+      },
+      {
+        "level": 2,
+        "text": "v = 54 / 3,6 = 15 m/s. Áp dụng P = F . v để tính công suất theo Oát (W), sau đó chia 1 000 để đổi ra kW."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt và đổi đơn vị",
+        "body": "$F = 4\\,000\\text{ N}$; $v = 54\\text{ km/h} = \\frac{54}{3,6} = 15\\text{ m/s}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức công suất theo tốc độ",
+        "body": "Trong chuyển động thẳng đều: $P = F \\cdot v$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán và đổi sang kW",
+        "body": "$P = 4\\,000 \\times 15 = 60\\,000\\text{ W} = 60\\text{ kW}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Công suất của động cơ xe tải là **60 kW**."
+      }
+    ],
+    "finalSolution": "Đổi $v = 15\\text{ m/s}$. Công suất động cơ: $P = F \\cdot v = 4\\,000 \\times 15 = 60\\,000\\text{ W} = 60\\text{ kW}$.",
+    "commonMistakes": [
+      {
+        "id": "forget-convert-speed",
+        "message": "Bạn đã không đổi km/h sang m/s mà lấy trực tiếp 4 000 * 54 = 216 kW (phải đổi 54 km/h = 15 m/s => P = 60 kW).",
+        "trapAnswers": [
+          "216",
+          "216 kW"
+        ]
+      },
+      {
+        "id": "forget-convert-watt-to-kw",
+        "message": "Bạn đã để nguyên đơn vị W mà không đổi sang kW: 60 000 W = 60 kW.",
+        "trapAnswers": [
+          "60000",
+          "60000 W"
+        ]
+      }
+    ]
+  }
+]

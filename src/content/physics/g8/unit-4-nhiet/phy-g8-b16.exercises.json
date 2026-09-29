@@ -1,0 +1,554 @@
+[
+  {
+    "id": "phy-g8-b16-mcq-001",
+    "lessonId": "phy-g8-b16",
+    "sgkBaiSo": 28,
+    "skillIds": [
+      "conduction-medium"
+    ],
+    "difficulty": 1,
+    "prompt": "Dẫn nhiệt là hình thức truyền nhiệt chủ yếu của chất nào sau đây?",
+    "knowledge": [
+      "thermal.heat.transfer"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Môi trường chân không tuyệt đối"
+        },
+        {
+          "id": "opt-b",
+          "label": "Chỉ xảy ra trong chất lỏng khi đang sôi"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chất rắn (đặc biệt là các kim loại)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chất khí loãng"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Kim loại dẫn nhiệt rất tốt khi tiếp xúc."
+      },
+      {
+        "level": 2,
+        "text": "Dẫn nhiệt là sự truyền nhiệt qua tiếp xúc trực tiếp giữa các phân tử, xảy ra chủ yếu ở chất rắn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định môi trường dẫn nhiệt",
+        "body": "Tìm môi trường xảy ra hiện tượng dẫn nhiệt chủ yếu."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 28), dẫn nhiệt là hình thức truyền nhiệt chủ yếu của chất rắn. Kim loại là chất dẫn nhiệt tốt nhất."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Chất rắn (đặc biệt là các kim loại)**."
+      }
+    ],
+    "finalSolution": "Dẫn nhiệt là hình thức truyền nhiệt chủ yếu của **chất rắn (đặc biệt là kim loại)**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-solid-liquid",
+        "message": "Chất lỏng và chất khí dẫn nhiệt rất kém; hình thức truyền nhiệt chủ yếu của chúng là đối lưu."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b16-mcq-002",
+    "lessonId": "phy-g8-b16",
+    "sgkBaiSo": 28,
+    "skillIds": [
+      "convection-medium"
+    ],
+    "difficulty": 1,
+    "prompt": "Đối lưu là hình thức truyền nhiệt chủ yếu xảy ra trong các môi trường nào sau đây?",
+    "knowledge": [
+      "thermal.heat.transfer"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Môi trường chân không ngoài vũ trụ"
+        },
+        {
+          "id": "opt-b",
+          "label": "Các khối băng vĩnh cửu"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chất lỏng và chất khí"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chất rắn và kim loại"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đối lưu cần các hạt vật chất dịch chuyển tạo thành dòng chất lỏng hoặc chất khí."
+      },
+      {
+        "level": 2,
+        "text": "Chỉ có chất lỏng và chất khí mới có thể di chuyển thành dòng đối lưu."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định môi trường đối lưu",
+        "body": "Tìm môi trường có thể hình thành các dòng vật chất đối lưu."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 28), đối lưu là sự truyền nhiệt bằng các dòng chất lỏng hoặc chất khí. Đây là hình thức truyền nhiệt chủ yếu của chất lỏng và chất khí."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Chất lỏng và chất khí**."
+      }
+    ],
+    "finalSolution": "Đối lưu là hình thức truyền nhiệt chủ yếu của **chất lỏng và chất khí**.",
+    "commonMistakes": [
+      {
+        "id": "assume-convection-in-vacuum",
+        "message": "Chân không không có phần tử vật chất nào nên hoàn toàn không thể có đối lưu hay dẫn nhiệt."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b16-mcq-003",
+    "lessonId": "phy-g8-b16",
+    "sgkBaiSo": 28,
+    "skillIds": [
+      "radiation-vacuum-transfer"
+    ],
+    "difficulty": 1,
+    "prompt": "Hình thức truyền nhiệt nào sau đây có thể truyền được qua môi trường chân không (nơi hoàn toàn không có các phân tử vật chất)?",
+    "knowledge": [
+      "thermal.heat.transfer"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cả dẫn nhiệt và đối lưu"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bức xạ nhiệt"
+        },
+        {
+          "id": "opt-c",
+          "label": "Đối lưu"
+        },
+        {
+          "id": "opt-d",
+          "label": "Dẫn nhiệt"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhiệt lượng từ Mặt Trời truyền tới Trái Đất qua vũ trụ bằng cách nào?"
+      },
+      {
+        "level": 2,
+        "text": "Tia nhiệt truyền thẳng qua chân không dưới dạng bức xạ nhiệt."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Truyền nhiệt trong chân không",
+        "body": "Xác định hình thức truyền nhiệt không cần môi trường vật chất trung gian."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 28), bức xạ nhiệt là sự truyền nhiệt bằng các tia nhiệt đi thẳng trong không gian và có thể truyền được cả trong môi trường chân không."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Bức xạ nhiệt**."
+      }
+    ],
+    "finalSolution": "Chỉ có **bức xạ nhiệt** mới truyền được qua môi trường chân không.",
+    "commonMistakes": [
+      {
+        "id": "think-conduction-crosses-vacuum",
+        "message": "Dẫn nhiệt bắt buộc phải có các phân tử tiếp xúc trực tiếp để va chạm truyền năng lượng."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b16-mcq-004",
+    "lessonId": "phy-g8-b16",
+    "sgkBaiSo": 28,
+    "skillIds": [
+      "air-conditioner-convection-position"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong các căn phòng sinh hoạt, máy điều hòa nhiệt độ làm mát thường được người thợ lắp đặt ở vị trí trên cao sát trần nhà. Giải thích khoa học nào sau đây là ĐÚNG?",
+    "knowledge": [
+      "thermal.heat.transfer"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chỉ để người đi lại trong phòng không va chạm vào máy điều hòa"
+        },
+        {
+          "id": "opt-b",
+          "label": "Không khí lạnh thổi ra có khối lượng riêng lớn hơn nên tự chìm xuống dưới, đẩy không khí nóng bay lên để tạo dòng đối lưu làm mát đều khắp phòng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì không khí lạnh nhẹ hơn không khí nóng nên phải đặt ở trên để ép nó xuống"
+        },
+        {
+          "id": "opt-d",
+          "label": "Để ngăn không cho bức xạ nhiệt từ bóng đèn chiếu vào máy điều hòa"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Không khí lạnh co lại, khối lượng riêng tăng (nặng hơn hay nhẹ hơn không khí nóng)?"
+      },
+      {
+        "level": 2,
+        "text": "Không khí lạnh nặng hơn sẽ tự động chìm xuống sàn nhà tạo chu trình đối lưu không khí trong phòng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Ứng dụng dòng đối lưu",
+        "body": "Giải thích quy luật lắp đặt máy làm lạnh không khí."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế đối lưu không khí",
+        "body": "Không khí lạnh do máy điều hòa thổi ra có nhiệt độ thấp, co lại nên khối lượng riêng lớn hơn (nặng hơn) không khí nóng, nó tự động chìm xuống sàn nhà và đẩy lớp khí nóng bốc lên cao qua máy lạnh để tiếp tục làm lạnh, tạo dòng đối lưu tuần hoàn."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Không khí lạnh thổi ra có khối lượng riêng lớn hơn nên tự chìm xuống dưới, đẩy không khí nóng bay lên để tạo dòng đối lưu làm mát đều khắp phòng**."
+      }
+    ],
+    "finalSolution": "Điều hòa lắp trên cao vì **không khí lạnh nặng hơn tự chìm xuống tạo dòng đối lưu làm mát toàn phòng**.",
+    "commonMistakes": [
+      {
+        "id": "assume-cold-air-is-lighter",
+        "message": "Không khí nóng mới nhẹ hơn bốc lên cao; không khí lạnh nặng hơn chìm xuống dưới."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b16-mcq-005",
+    "lessonId": "phy-g8-b16",
+    "sgkBaiSo": 28,
+    "skillIds": [
+      "radiation-color-absorption"
+    ],
+    "difficulty": 2,
+    "prompt": "Vào những ngày hè nắng nóng gay gắt, người ta khuyên nên mặc quần áo màu sáng (như màu trắng, vàng nhạt) thay vì màu sẫm tối (như màu đen, tím than). Lý do là vì:",
+    "knowledge": [
+      "thermal.heat.transfer"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vải màu trắng ngăn cản hoàn toàn không cho mồ hôi bay hơi"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vật có bề mặt sáng màu hấp thụ bức xạ nhiệt kém hơn và phản xạ bức xạ nhiệt tốt hơn, giúp cơ thể mát hơn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vải màu sáng dẫn nhiệt nhanh hơn từ cơ thể ra không khí"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vải màu đen làm phát sinh dòng đối lưu hút gió vào trong cơ thể"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bề mặt sẫm màu hay sáng màu hấp thụ tia bức xạ nhiệt từ Mặt Trời nhiều hơn?"
+      },
+      {
+        "level": 2,
+        "text": "Màu đen sẫm hấp thụ bức xạ nhiệt rất mạnh làm nóng người; màu sáng phản xạ nhiệt giúp mát hơn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đặc tính bức xạ nhiệt",
+        "body": "Mối quan hệ giữa màu sắc bề mặt và khả năng hấp thụ tia nhiệt."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 28), vật có bề mặt sáng màu, nhẵn bóng phản xạ bức xạ nhiệt tốt và hấp thụ bức xạ nhiệt kém. Ngược lại bề mặt sẫm màu thô ráp hấp thụ bức xạ nhiệt mạnh."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Vật có bề mặt sáng màu hấp thụ bức xạ nhiệt kém hơn và phản xạ bức xạ nhiệt tốt hơn, giúp cơ thể mát hơn**."
+      }
+    ],
+    "finalSolution": "Mặc màu sáng vì **hấp thụ bức xạ nhiệt kém hơn và phản xạ bức xạ nhiệt tốt hơn**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-conduction-with-radiation",
+        "message": "Ánh nắng Mặt Trời truyền nhiệt qua bức xạ nhiệt, không phải dẫn nhiệt."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b16-mcq-006",
+    "lessonId": "phy-g8-b16",
+    "sgkBaiSo": 28,
+    "skillIds": [
+      "thermos-vacuum-purpose"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong cấu tạo của ruột phích nước (bình thủy), giữa hai lớp thủy tinh được hút hết không khí để tạo ra môi trường chân không. Lớp chân không này có vai trò gì?",
+    "knowledge": [
+      "thermal.heat.transfer"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Ngăn chặn hoàn toàn sự truyền nhiệt bằng dẫn nhiệt và đối lưu ra ngoài"
+        },
+        {
+          "id": "opt-b",
+          "label": "Làm cho nước bên trong tự nóng thêm lên mà không cần đun"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ngăn chặn các tia bức xạ nhiệt xuyên qua"
+        },
+        {
+          "id": "opt-d",
+          "label": "Giúp ruột phích nhẹ hơn để dễ cầm nắm"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Dẫn nhiệt và đối lưu có thể xảy ra trong môi trường chân không không?"
+      },
+      {
+        "level": 2,
+        "text": "Chân không không có vật chất nên dẫn nhiệt và đối lưu hoàn toàn không thể xảy ra qua lớp chân không này."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cấu tạo bình phích",
+        "body": "Tác dụng của lớp chân không giữa hai thành thủy tinh."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Ứng dụng giữ nhiệt SGK",
+        "body": "Theo SGK KHTN 8 (Bài 28), dẫn nhiệt và đối lưu cần có môi trường vật chất. Vì vậy lớp chân không ngăn cản hoàn toàn sự mất nhiệt do dẫn nhiệt và đối lưu từ nước nóng ra môi trường ngoài."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Ngăn chặn hoàn toàn sự truyền nhiệt bằng dẫn nhiệt và đối lưu ra ngoài**."
+      }
+    ],
+    "finalSolution": "Lớp chân không có tác dụng **ngăn chặn hoàn toàn sự truyền nhiệt bằng dẫn nhiệt và đối lưu**.",
+    "commonMistakes": [
+      {
+        "id": "think-vacuum-stops-radiation",
+        "message": "Chân không không ngăn được bức xạ nhiệt (bức xạ nhiệt đi xuyên qua chân không); việc ngăn bức xạ nhiệt là nhờ lớp tráng bạc."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b16-mcq-007",
+    "lessonId": "phy-g8-b16",
+    "sgkBaiSo": 28,
+    "skillIds": [
+      "thermos-silver-coating"
+    ],
+    "difficulty": 2,
+    "prompt": "Thành bên trong của ruột phích nước tiếp giáp với lớp chân không luôn được tráng một lớp bạc mỏng sáng loáng như gương. Tác dụng chính của lớp tráng bạc này là:",
+    "knowledge": [
+      "thermal.heat.transfer"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tăng cường độ bền chống vỡ cơ học cho thủy tinh"
+        },
+        {
+          "id": "opt-b",
+          "label": "Khử khuẩn và làm ngọt nước uống"
+        },
+        {
+          "id": "opt-c",
+          "label": "Phản xạ các tia bức xạ nhiệt quay trở lại nước nóng bên trong"
+        },
+        {
+          "id": "opt-d",
+          "label": "Dẫn nhiệt nhanh ra bên ngoài vỏ phích"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bề mặt sáng bóng tráng bạc hoạt động như một tấm gương phản xạ ánh sáng và tia nhiệt."
+      },
+      {
+        "level": 2,
+        "text": "Nó phản xạ các tia bức xạ nhiệt quay trở lại ruột phích, ngăn nhiệt thoát ra bằng bức xạ nhiệt."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cơ chế lớp tráng bạc",
+        "body": "Xác định tác dụng của bề mặt kim loại sáng bóng trong phích nước."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức phích nước SGK",
+        "body": "Bức xạ nhiệt truyền được qua chân không. Để ngăn bức xạ nhiệt, người ta tráng bạc hai mặt thành thủy tinh để các tia nhiệt bị phản xạ trở lại vào trong nước, giữ nhiệt độ nước nóng rất lâu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Phản xạ các tia bức xạ nhiệt quay trở lại nước nóng bên trong**."
+      }
+    ],
+    "finalSolution": "Lớp tráng bạc có tác dụng **phản xạ các tia bức xạ nhiệt quay trở lại nước nóng bên trong**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-silver-coating-with-antiseptic",
+        "message": "Lớp bạc được tráng bên trong lớp chân không kín (không tiếp xúc với nước uống) nên tác dụng thuần túy là phản xạ bức xạ nhiệt."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b16-mcq-008",
+    "lessonId": "phy-g8-b16",
+    "sgkBaiSo": 28,
+    "skillIds": [
+      "multimode-heat-transfer"
+    ],
+    "difficulty": 3,
+    "prompt": "Khi đun một nồi canh bằng kim loại trên bếp gas: Nhiệt lượng truyền từ ngọn lửa qua đáy nồi kim loại chủ yếu bằng hình thức nào, và truyền từ phần nước dưới đáy nồi lên phần nước phía trên chủ yếu bằng hình thức nào?",
+    "knowledge": [
+      "thermal.heat.transfer"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cả hai quá trình đều truyền thuần túy bằng bức xạ nhiệt"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cả hai quá trình đều truyền thuần túy bằng dẫn nhiệt"
+        },
+        {
+          "id": "opt-c",
+          "label": "Truyền qua đáy nồi kim loại bằng dẫn nhiệt; truyền trong lòng nước canh bằng đối lưu"
+        },
+        {
+          "id": "opt-d",
+          "label": "Truyền qua đáy nồi bằng đối lưu; truyền trong lòng nước canh bằng dẫn nhiệt"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đáy nồi là chất rắn kim loại -> dẫn nhiệt. Nước canh là chất lỏng -> đối lưu."
+      },
+      {
+        "level": 2,
+        "text": "Kim loại dẫn nhiệt từ ngọn lửa qua đáy nồi; nước đáy nóng nở ra nhẹ hơn nổi lên tạo dòng đối lưu làm sôi cả nồi."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích hai giai đoạn truyền nhiệt",
+        "body": "Giai đoạn 1: qua chất rắn kim loại; Giai đoạn 2: trong chất lỏng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tổng hợp kiến thức SGK",
+        "body": "Đáy nồi là chất rắn, kim loại dẫn nhiệt tốt nên nhiệt truyền qua đáy nồi bằng hình thức DẪN NHIỆT. Canh là chất lỏng, nhiệt truyền từ đáy lên mặt bằng các dòng chất lỏng chuyển động, tức hình thức ĐỐI LƯU."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Truyền qua đáy nồi kim loại bằng dẫn nhiệt; truyền trong lòng nước canh bằng đối lưu**."
+      }
+    ],
+    "finalSolution": "Qua đáy nồi bằng **dẫn nhiệt**, trong lòng nước canh bằng **đối lưu**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-transfer-modes",
+        "message": "Chất rắn không thể chuyển động thành dòng đối lưu (chỉ dẫn nhiệt); chất lỏng dẫn nhiệt rất kém nên phải đối lưu mới sôi đều."
+      }
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+{
+  "lessonId": "phy-g9-b10",
+  "nodeId": "phy-g9-b10-theory",
+  "title": "Lý thuyết: Điện trở. Định luật Ohm",
+  "subtitle": "Bài 11 SGK Khoa học tự nhiên 9 (Kết nối tri thức)",
+  "sgkBaiSo": 11,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm cốt lõi",
+      "badgeColor": "cyan",
+      "title": "1. Khái niệm điện trở của dây dẫn",
+      "content": "Điện trở là đại lượng đặc trưng cho tính chất cản trở dòng điện của vật dẫn điện:",
+      "bulletPoints": [
+        "Định nghĩa: Đại lượng $R = \\frac{U}{I}$ đặc trưng cho mức độ cản trở dòng điện của dây dẫn được gọi là điện trở của dây dẫn.",
+        "Đơn vị đo: Trong hệ SI, đơn vị của điện trở là Ôm (kí hiệu: $\\Omega$).",
+        "Các bội số thường dùng: $1\\text{ k}\\Omega = 1\\,000\\,\\Omega$; $1\\text{ M}\\Omega = 1\\,000\\,000\\,\\Omega = 10^6\\,\\Omega$.",
+        "Ý nghĩa vật lý: Dây dẫn có điện trở càng lớn thì cản trở dòng điện càng nhiều, cường độ dòng điện chạy qua dây dẫn càng nhỏ (khi hiệu điện thế đặt vào không đổi)."
+      ],
+      "callout": "Đặc trưng vật liệu: Điện trở của một dây dẫn xác định phụ thuộc vào bản chất cấu tạo của dây, không thay đổi theo hiệu điện thế đặt vào hai đầu dây."
+    },
+    {
+      "id": "c2",
+      "badge": "Định luật cơ bản",
+      "badgeColor": "amber",
+      "title": "2. Định luật Ohm cho đoạn mạch",
+      "content": "Nhà vật lý học người Đức Georg Ohm đã tìm ra mối quan hệ định lượng giữa cường độ dòng điện, hiệu điện thế và điện trở:",
+      "bulletPoints": [
+        "Nội dung định luật: Cường độ dòng điện chạy qua một dây dẫn tỉ lệ thuận với hiệu điện thế đặt vào hai đầu dây và tỉ lệ nghịch với điện trở của dây.",
+        "Hệ thức toán học: $I = \\frac{U}{R}$",
+        "Trong đó: $U$ là hiệu điện thế giữa hai đầu dây dẫn (đơn vị: V); $R$ là điện trở của dây dẫn (đơn vị: $\\Omega$); $I$ là cường độ dòng điện chạy qua dây dẫn (đơn vị: A).",
+        "Các công thức suy ra: $U = I \\cdot R$ (tính hiệu điện thế) và $R = \\frac{U}{I}$ (tính điện trở).",
+        "Đồ thị biểu diễn: Đường biểu diễn sự phụ thuộc của cường độ dòng điện $I$ vào hiệu điện thế $U$ là một đường thẳng đi qua gốc tọa độ $(0, 0)$."
+      ],
+      "callout": "Quy tắc an toàn: Khi chạm vào nguồn điện có hiệu điện thế $U$ cao, vì cơ thể người có điện trở $R$ nhất định nên dòng điện $I = U / R$ chạy qua người sẽ rất lớn, gây nguy hiểm đến tính mạng!"
+    },
+    {
+      "id": "c3",
+      "badge": "Yếu tố ảnh hưởng",
+      "badgeColor": "emerald",
+      "title": "3. Sự phụ thuộc của điện trở vào kích thước và vật liệu",
+      "content": "Điện trở của một đoạn dây dẫn hình trụ đồng chất phụ thuộc vào 3 yếu tố hình học và vật liệu:",
+      "bulletPoints": [
+        "Chiều dài $l$ (m): Điện trở tỉ lệ thuận với chiều dài của dây dẫn. Dây càng dài thì điện trở càng lớn ($R \\sim l$).",
+        "Tiết diện $S$ (m²): Điện trở tỉ lệ nghịch với tiết diện của dây dẫn. Dây càng to (tiết diện lớn) thì điện trở càng nhỏ ($R \\sim \\frac{1}{S}$).",
+        "Vật liệu làm dây: Đặc trưng bởi điện trở suất $\\rho$ (đọc là rô, đơn vị: $\\Omega \\cdot \\text{m}$). Điện trở suất càng nhỏ thì vật liệu dẫn điện càng tốt.",
+        "Công thức tổng quát: $R = \\rho \\frac{l}{S}$",
+        "Điện trở suất một số kim loại quen thuộc: Đồng ($\\rho_{Cu} = 1,7 \\times 10^{-8}\\,\\Omega \\cdot \\text{m}$), Nhôm ($\\rho_{Al} = 2,8 \\times 10^{-8}\\,\\Omega \\cdot \\text{m}$)."
+      ],
+      "callout": "Ứng dụng chế tạo: Dây dẫn điện trong gia đình thường làm bằng đồng vì đồng có điện trở suất rất nhỏ, dẫn điện tốt và giảm hao phí tỏa nhiệt."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Theo định luật Ohm, cường độ dòng điện I chạy qua một dây dẫn có điện trở R khi đặt vào hiệu điện thế U được tính bằng công thức nào?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "I = U / R",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "I = U . R",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "I = R / U",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "I = U + R",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 9 Bài 11: Định luật Ohm phát biểu rằng I = U / R (cường độ dòng điện tỉ lệ thuận với U và tỉ lệ nghịch với R)."
+  }
+}

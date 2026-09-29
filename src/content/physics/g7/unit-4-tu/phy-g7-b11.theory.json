@@ -1,0 +1,76 @@
+{
+  "lessonId": "phy-g7-b11",
+  "nodeId": "phy-g7-b11-theory",
+  "title": "Lý thuyết: Nam châm",
+  "subtitle": "Bài 18 SGK Khoa học tự nhiên 7 (Kết nối tri thức)",
+  "sgkBaiSo": 18,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Từ tính & Cực từ",
+      "badgeColor": "cyan",
+      "title": "1. Từ tính và hai cực của nam châm",
+      "content": "Nam châm là vật có khả năng hút được các vật bằng sắt, thép. Mỗi nam châm luôn luôn có hai cực từ:",
+      "bulletPoints": [
+        "Định hướng tự do: Khi treo một thanh nam châm thẳng bằng sợi chỉ mềm để nó quay tự do, khi đứng yên thanh nam châm luôn định hướng theo trục Bắc - Nam địa lí.",
+        "Cực Bắc (North - kí hiệu: N): Đầu nam châm luôn chỉ về hướng Bắc địa lí, thường được sơn màu đỏ.",
+        "Cực Nam (South - kí hiệu: S): Đầu nam châm luôn chỉ về hướng Nam địa lí, thường được sơn màu xanh hoặc trắng.",
+        "Vị trí từ tính mạnh nhất: Lực hút từ tập trung mạnh nhất ở hai đầu cực; ở phần giữa thanh nam châm lực từ rất yếu."
+      ],
+      "callout": "Định luật bảo toàn cực: Dù có bẻ đôi hay cưa nhỏ thanh nam châm, mỗi mảnh vỡ vẫn luôn là một nam châm mới hoàn chỉnh có đủ cả 2 cực N và S (không thể tách rời đơn cực từ)."
+    },
+    {
+      "id": "c2",
+      "badge": "Quy tắc tương tác",
+      "badgeColor": "amber",
+      "title": "2. Tương tác giữa hai nam châm",
+      "content": "Khi đưa hai cực của hai thanh nam châm lại gần nhau, giữa chúng xuất hiện lực từ hút hoặc đẩy:",
+      "bulletPoints": [
+        "Hai cực cùng tên (cùng cực: N với N hoặc S với S) thì ĐẨY nhau.",
+        "Hai cực khác tên (khác cực: N với S hoặc S với N) thì HÚT nhau.",
+        "Lực tác dụng giữa hai nam châm là lực không tiếp xúc (lực từ xuất hiện ngay cả khi hai nam châm chưa chạm vào nhau)."
+      ],
+      "callout": "Ghi nhớ thần chú: Cùng tên thì ĐẨY, khác tên thì HÚT."
+    },
+    {
+      "id": "c3",
+      "badge": "Vật liệu từ",
+      "badgeColor": "emerald",
+      "title": "3. Vật liệu từ và vật liệu không có tính từ",
+      "content": "Không phải mọi kim loại đều bị nam châm hút. Dựa vào tương tác từ, vật chất chia thành 2 nhóm:",
+      "bulletPoints": [
+        "Vật liệu từ (bị nam châm hút): Sắt, thép, niken, coban, gađôlini... Các vật làm từ những chất này dễ dàng bị nam châm hút dính.",
+        "Vật liệu không từ (không bị nam châm hút): Nhôm, đồng, chì, vàng, bạc, gỗ, nhựa, cao su, thủy tinh...",
+        "Ứng dụng phân loại: Dùng nam châm để thu gom đinh ốc sắt lẫn trong cát hoặc tách kim loại vụn sắt thép trong nhà máy rác thải."
+      ],
+      "callout": "Lưu ý thực tế: Đồng tiền xu hiện nay thường làm bằng hợp kim đồng hoặc nhôm nên nam châm không hút được."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi đưa hai cực Bắc (N) của hai thanh nam châm lại gần nhau, hiện tượng gì sẽ xảy ra?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Chúng đẩy nhau",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Chúng hút dính chặt vào nhau",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Chúng không có bất kì tương tác nào",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Một thanh quay tròn liên tục không dừng",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo quy tắc tương tác giữa hai nam châm (SGK KHTN 7 Bài 18), hai cực cùng tên (N - N) luôn đẩy nhau."
+  }
+}

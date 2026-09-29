@@ -1,0 +1,77 @@
+{
+  "lessonId": "phy-g7-b13",
+  "nodeId": "phy-g7-b13-theory",
+  "title": "Lý thuyết: Nam châm điện",
+  "subtitle": "Bài 20 SGK Khoa học tự nhiên 7 (Kết nối tri thức)",
+  "sgkBaiSo": 20,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Cấu tạo & Hoạt động",
+      "badgeColor": "cyan",
+      "title": "1. Cấu tạo và hoạt động của nam châm điện",
+      "content": "Nam châm điện là loại nam châm hoạt động nhờ dòng điện chạy qua cuộn dây dẫn:",
+      "bulletPoints": [
+        "Cấu tạo cơ bản: Gồm một ống dây dẫn có dòng điện chạy qua, bên trong lòng ống dây có đặt một lõi sắt non (như chiếc đinh sắt lớn).",
+        "Hoạt động khi đóng mạch: Khi có dòng điện chạy qua cuộn dây, lõi sắt non bị nhiễm từ mạnh và trở thành nam châm, hút được các vật bằng sắt, thép.",
+        "Hoạt động khi ngắt mạch: Khi ngắt dòng điện, lõi sắt non lập tức mất hết từ tính và các vật bằng sắt bị rơi ra.",
+        "Vai trò của lõi sắt non: Lõi sắt non làm tăng đáng kể tác dụng từ của cuộn dây so với khi không có lõi."
+      ],
+      "callout": "Tại sao dùng sắt non mà không dùng thép? Sắt non nhiễm từ nhanh và mất từ tính ngay khi ngắt điện. Thép sau khi nhiễm từ sẽ giữ lại từ tính rất lâu (biến thành nam châm vĩnh cửu), không thể nhả vật ra khi ngắt điện."
+    },
+    {
+      "id": "c2",
+      "badge": "Điều khiển lực từ",
+      "badgeColor": "amber",
+      "title": "2. Các yếu tố ảnh hưởng đến lực từ của nam châm điện",
+      "content": "Lực hút của nam châm điện có thể dễ dàng điều khiển tăng hoặc giảm bằng hai cách:",
+      "bulletPoints": [
+        "1. Tăng cường độ dòng điện: Dòng điện chạy qua cuộn dây càng lớn (dùng nguồn điện điện áp cao hơn hoặc ghép nhiều pin hơn) thì lực từ của nam châm điện càng mạnh.",
+        "2. Tăng số vòng dây: Quấn càng nhiều vòng dây quanh lõi sắt non thì lực từ của nam châm điện càng mạnh.",
+        "Đảo cực từ: Có thể đổi cực Bắc thành cực Nam và ngược lại chỉ bằng cách đảo chiều dòng điện chạy qua cuộn dây."
+      ],
+      "callout": "Ưu điểm vượt trội: Khác với nam châm vĩnh cửu, nam châm điện có thể bật/tắt từ tính, điều chỉnh độ mạnh yếu và đổi cực tùy ý một cách nhanh chóng."
+    },
+    {
+      "id": "c3",
+      "badge": "Ứng dụng công nghệ",
+      "badgeColor": "emerald",
+      "title": "3. Ứng dụng của nam châm điện trong đời sống",
+      "content": "Nam châm điện là nền tảng của hàng loạt thiết bị hiện đại trong đời sống và công nghiệp:",
+      "bulletPoints": [
+        "Cần cẩu điện bốc dỡ phế liệu: Dùng nam châm điện cực lớn để hút hàng tấn sắt vụn, phế liệu đưa lên tàu rồi ngắt điện để thả sắt xuống kho bãi.",
+        "Rơle điện từ (Relay): Thiết bị đóng ngắt mạch điện tự động bảo vệ an toàn cho mạng điện gia đình và công nghiệp.",
+        "Chuông điện báo động: Khi bấm chuông, nam châm điện hút búa gõ vào chuông phát ra tiếng kêu.",
+        "Tàu đệm từ trường (Maglev): Sử dụng lực đẩy và lực hút của nam châm điện công suất lớn giúp tàu bay lơ lửng trên đường ray với tốc độ trên 500 km/h."
+      ],
+      "callout": "Kỹ năng chế tạo đơn giản: Chỉ cần 1 chiếc đinh sắt dài, 1 đoạn dây đồng bọc men cách điện và 1 cục pin tiểu 1,5V là bạn đã tự chế tạo được một chiếc nam châm điện hoạt động tốt!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi ngắt dòng điện chạy qua cuộn dây của một nam châm điện có lõi sắt non, hiện tượng gì sẽ xảy ra?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Lõi sắt non mất ngay từ tính và các vật sắt đang bị hút sẽ rơi xuống",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Lõi sắt non vẫn giữ nguyên từ tính vĩnh viễn",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Lực từ của lõi sắt non tăng lên gấp đôi",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Lõi sắt non phát nổ do mất điện đột ngột",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 7 Bài 20, đặc điểm của lõi sắt non là khử từ nhanh chóng: khi ngắt dòng điện, lõi sắt non lập tức mất hết từ tính."
+  }
+}

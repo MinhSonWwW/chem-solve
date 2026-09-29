@@ -1,0 +1,554 @@
+[
+  {
+    "id": "phy-g9-b06-mcq-001",
+    "lessonId": "phy-g9-b06",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "prism-geometry-structure"
+    ],
+    "difficulty": 1,
+    "prompt": "Về mặt hình học, lăng kính quang học là một khối chất trong suốt, đồng tính thường có dạng hình gì?",
+    "knowledge": [
+      "optical.prism"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hình chóp tứ giác đều"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hình lăng trụ tam giác"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hình trụ tròn xoay"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hình cầu hoàn chỉnh"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tiết diện thẳng của lăng kính là một hình tam giác."
+      },
+      {
+        "level": 2,
+        "text": "Khối trong suốt có đáy là hình tam giác được gọi là lăng trụ tam giác."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định cấu tạo",
+        "body": "Đề bài yêu cầu nhận biết hình dạng hình học của lăng kính."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 7: Lăng kính là một khối chất trong suốt, đồng tính (thủy tinh, nhựa trong...), thường có dạng hình lăng trụ tam giác."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Hình lăng trụ tam giác**."
+      }
+    ],
+    "finalSolution": "Lăng kính quang học thường có dạng **hình lăng trụ tam giác**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-prism-with-cone",
+        "message": "Lăng kính có các mặt bên phẳng hình chữ nhật và đáy hình tam giác, không phải hình chóp hay hình trụ."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b06-mcq-002",
+    "lessonId": "phy-g9-b06",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "prism-monochromatic-deviation"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi chiếu một tia sáng đơn sắc qua lăng kính đặt trong không khí, sau khi khúc xạ qua hai mặt bên của lăng kính, tia ló luôn bị lệch về phía nào?",
+    "knowledge": [
+      "optical.prism"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Truyền thẳng tiếp mà không bị lệch góc"
+        },
+        {
+          "id": "opt-b",
+          "label": "Lệch về phía đáy của lăng kính"
+        },
+        {
+          "id": "opt-c",
+          "label": "Phản xạ ngược trở lại vuông góc mặt tới"
+        },
+        {
+          "id": "opt-d",
+          "label": "Lệch về phía đỉnh của góc chiết quang"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tia sáng bị khúc xạ 2 lần tại 2 mặt bên của lăng kính."
+      },
+      {
+        "level": 2,
+        "text": "Quy tắc vàng: Tia ló ra khỏi lăng kính luôn bị bẻ cong lệch về phía đáy."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định chiều lệch",
+        "body": "Khảo sát đường truyền của tia sáng đơn sắc qua lăng kính."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy luật khúc xạ qua lăng kính",
+        "body": "Lần 1: từ không khí vào lăng kính, tia khúc xạ lệch lại gần pháp tuyến (về phía đáy). Lần 2: từ lăng kính ra không khí, tia ló lệch xa pháp tuyến (tiếp tục về phía đáy). Tổng hợp lại, tia ló luôn bị lệch về phía đáy của lăng kính."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Lệch về phía đáy của lăng kính**."
+      }
+    ],
+    "finalSolution": "Tia ló sau khi đi qua lăng kính **luôn bị lệch về phía đáy của lăng kính**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-base-and-apex",
+        "message": "Tia ló lệch về phía ĐÁY của lăng kính, không bao giờ lệch về phía đỉnh góc chiết quang."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b06-mcq-003",
+    "lessonId": "phy-g9-b06",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "prism-dispersion-concept"
+    ],
+    "difficulty": 1,
+    "prompt": "Hiện tượng một chùm ánh sáng trắng hẹp khi truyền qua lăng kính bị phân tách thành một dải màu biến đổi liên tục từ đỏ đến tím được gọi là:",
+    "knowledge": [
+      "optical.prism"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hiện tượng tán sắc ánh sáng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hiện tượng quang điện ngoài"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hiện tượng cảm ứng điện từ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hiện tượng phản xạ toàn phần"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ 'tán sắc' mang nghĩa là phân tán, tách rời các màu sắc cấu thành."
+      },
+      {
+        "level": 2,
+        "text": "Thí nghiệm của Newton dùng lăng kính tách ánh sáng trắng gọi là hiện tượng tán sắc ánh sáng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định hiện tượng",
+        "body": "Đề bài mô tả hiện tượng chùm ánh sáng trắng bị tách thành dải màu."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 7: Hiện tượng chùm ánh sáng trắng bị phân tách thành nhiều chùm ánh sáng đơn sắc có màu khác nhau khi truyền qua lăng kính được gọi là hiện tượng tán sắc ánh sáng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Hiện tượng tán sắc ánh sáng**."
+      }
+    ],
+    "finalSolution": "Hiện tượng ánh sáng trắng bị phân tách thành dải màu gọi là **hiện tượng tán sắc ánh sáng**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-with-total-reflection",
+        "message": "Phản xạ toàn phần giữ nguyên một màu ánh sáng; tách ánh sáng trắng thành nhiều màu là hiện tượng TÁN SẮC."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b06-mcq-004",
+    "lessonId": "phy-g9-b06",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "prism-color-deviation-order"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong dải màu tán sắc của ánh sáng trắng qua lăng kính (từ Đỏ đến Tím), ánh sáng màu nào bị lệch nhiều nhất và ánh sáng màu nào bị lệch ít nhất?",
+    "knowledge": [
+      "optical.prism"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tất cả các màu đều bị lệch một góc bằng nhau"
+        },
+        {
+          "id": "opt-b",
+          "label": "Ánh sáng tím bị lệch ít nhất, ánh sáng đỏ bị lệch nhiều nhất"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ánh sáng đỏ bị lệch ít nhất, ánh sáng tím bị lệch nhiều nhất"
+        },
+        {
+          "id": "opt-d",
+          "label": "Ánh sáng vàng bị lệch ít nhất, ánh sáng lục bị lệch nhiều nhất"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Màu đỏ nằm ở phần trên của dải quang phổ tán sắc (lệch ít nhất)."
+      },
+      {
+        "level": 2,
+        "text": "Màu tím nằm ở phần dưới sát đáy lăng kính nhất (bị bẻ cong lệch nhiều nhất)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "So sánh góc lệch các màu",
+        "body": "Xác định thứ tự độ lệch của các ánh sáng đơn sắc qua lăng kính."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Trong quang phổ tán sắc ánh sáng trắng qua lăng kính: Ánh sáng đỏ bị bẻ lệch ít nhất, ánh sáng tím bị bẻ lệch nhiều nhất (thứ tự góc lệch tăng dần: Đỏ - Da cam - Vàng - Lục - Lam - Chàm - Tím)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Ánh sáng đỏ bị lệch ít nhất, ánh sáng tím bị lệch nhiều nhất**."
+      }
+    ],
+    "finalSolution": "**Ánh sáng đỏ bị lệch ít nhất**, còn **ánh sáng tím bị lệch nhiều nhất** qua lăng kính.",
+    "commonMistakes": [
+      {
+        "id": "invert-red-and-violet",
+        "message": "Bẫy thường gặp: Nhớ ngược thành đỏ lệch nhiều nhất. Hãy nhớ màu đỏ ở đỉnh cầu vồng (lệch ít), màu tím ở đáy cầu vồng (lệch nhiều)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b06-mcq-005",
+    "lessonId": "phy-g9-b06",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "prism-monochromatic-behavior"
+    ],
+    "difficulty": 2,
+    "prompt": "Chiếu một chùm tia sáng hẹp màu đỏ (ánh sáng đơn sắc) qua một lăng kính thủy tinh. Chùm tia ló ra khỏi lăng kính sẽ có đặc điểm gì?",
+    "knowledge": [
+      "optical.prism"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Bị biến đổi sang màu tím"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bị tán sắc thành dải bảy màu cầu vồng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vẫn giữ nguyên màu đỏ, không bị tán sắc mà chỉ bị lệch về phía đáy lăng kính"
+        },
+        {
+          "id": "opt-d",
+          "label": "Bị chuyển thành màu trắng tinh khiết"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ánh sáng đơn sắc là ánh sáng chỉ có một màu xác định duy nhất."
+      },
+      {
+        "level": 2,
+        "text": "Khi đi qua lăng kính, ánh sáng đơn sắc không bị đổi màu, không bị tán sắc, chỉ bị bẻ lệch hướng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất ánh sáng đơn sắc",
+        "body": "Chùm sáng tới là ánh sáng đơn sắc màu đỏ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tính chất khi qua lăng kính",
+        "body": "Theo định nghĩa SGK KHTN 9 Bài 7: Ánh sáng đơn sắc không bị tán sắc khi truyền qua lăng kính. Chùm tia ló vẫn giữ nguyên màu đỏ và bị lệch về phía đáy của lăng kính."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Vẫn giữ nguyên màu đỏ, không bị tán sắc mà chỉ bị lệch về phía đáy**."
+      }
+    ],
+    "finalSolution": "Ánh sáng đơn sắc **không bị tán sắc**, tia ló **vẫn giữ nguyên màu đỏ** và lệch về phía đáy lăng kính.",
+    "commonMistakes": [
+      {
+        "id": "assume-prism-creates-colors",
+        "message": "Lăng kính không tự sinh ra màu sắc; nó chỉ phân tách các màu sẵn có trong ánh sáng trắng. Ánh sáng đơn sắc đỏ không thể tách thêm màu nào khác."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b06-mcq-006",
+    "lessonId": "phy-g9-b06",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "prism-rainbow-explanation"
+    ],
+    "difficulty": 2,
+    "prompt": "Hiện tượng cầu vồng rực rỡ xuất hiện trên bầu trời sau cơn mưa khi có ánh nắng Mặt Trời chiếu vào được giải thích chủ yếu bằng hiện tượng quang học nào?",
+    "knowledge": [
+      "optical.prism"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hiện tượng phản xạ toàn phần trên bề mặt mây đen"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hiện tượng tán sắc ánh sáng Mặt Trời qua vô số hạt nước mưa li ti đóng vai trò như các lăng kính tự nhiên"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hiện tượng sét đánh ion hóa chất khí trong tầng khí quyển"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hiện tượng không khí bị đốt nóng phát ra ánh sáng huỳnh quang"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sau mưa, trong không khí còn nhiều giọt nước nhỏ li ti hình cầu."
+      },
+      {
+        "level": 2,
+        "text": "Ánh sáng Mặt Trời (ánh sáng trắng) đi qua các giọt nước này bị khúc xạ và tán sắc thành các màu cầu vồng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hiện tượng tự nhiên",
+        "body": "Giải thích nguồn gốc vật lý của hiện tượng cầu vồng sau mưa."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 7: Sau cơn mưa, các giọt nước mưa li ti lơ lửng trong không khí đóng vai trò như những lăng kính tự nhiên. Ánh sáng Mặt Trời (ánh sáng trắng) khi chiếu qua các giọt nước bị khúc xạ, phản xạ và tán sắc thành dải màu cầu vồng từ đỏ đến tím."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Hiện tượng tán sắc ánh sáng Mặt Trời qua các hạt nước mưa li ti**."
+      }
+    ],
+    "finalSolution": "Cầu vồng hình thành do **sự tán sắc ánh sáng Mặt Trời qua các giọt nước mưa** đóng vai trò lăng kính tự nhiên.",
+    "commonMistakes": [
+      {
+        "id": "confuse-chemical-emission",
+        "message": "Cầu vồng là hiện tượng quang hình học thuần túy (khúc xạ và tán sắc), không phải phản ứng hóa học hay phát quang."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b06-mcq-007",
+    "lessonId": "phy-g9-b06",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "prism-white-light-nature"
+    ],
+    "difficulty": 3,
+    "prompt": "Từ kết quả thí nghiệm tán sắc ánh sáng của Newton, phát biểu nào sau đây phản ánh chính xác nhất bản chất của ánh sáng trắng?",
+    "knowledge": [
+      "optical.prism"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Ánh sáng trắng là một ánh sáng đơn sắc thuần khiết có màu trắng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Ánh sáng trắng là hỗn hợp của vô số ánh sáng đơn sắc có màu biến đổi liên tục từ đỏ đến tím"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ánh sáng trắng là do lăng kính thủy tinh tự nhuộm màu tạo nên"
+        },
+        {
+          "id": "opt-d",
+          "label": "Ánh sáng trắng chỉ gồm đúng ba màu cơ bản là đỏ, xanh lá cây và xanh lam"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ánh sáng trắng không phải là một màu đơn sắc độc lập."
+      },
+      {
+        "level": 2,
+        "text": "Ánh sáng trắng là sự pha trộn của vô số ánh sáng đơn sắc với dải màu cầu vồng liên tục."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất vật lý",
+        "body": "Đánh giá định nghĩa khoa học về ánh sáng trắng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kết luận khoa học của Newton",
+        "body": "Ánh sáng trắng (như ánh sáng Mặt Trời) không phải là một ánh sáng đơn sắc mà là sự pha trộn phức tạp của vô số ánh sáng đơn sắc có màu sắc biến đổi liên tục từ đỏ đến tím."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Ánh sáng trắng là hỗn hợp của vô số ánh sáng đơn sắc có màu biến đổi liên tục từ đỏ đến tím**."
+      }
+    ],
+    "finalSolution": "Ánh sáng trắng là **hỗn hợp của vô số ánh sáng đơn sắc** có dải màu biến đổi liên tục từ đỏ đến tím.",
+    "commonMistakes": [
+      {
+        "id": "think-white-is-single-color",
+        "message": "Nhiều người lầm tưởng màu trắng là một màu đơn sắc. Thực chất màu trắng là sự tổng hợp của toàn bộ các ánh sáng đơn sắc trong dải khả kiến."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b06-mcq-008",
+    "lessonId": "phy-g9-b06",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "prism-path-geometry-analysis"
+    ],
+    "difficulty": 3,
+    "prompt": "Đặt một lăng kính thủy tinh hình tam giác đều có mặt đáy nằm ngang trên mặt bàn. Chiếu một tia sáng từ không khí tới mặt bên thứ nhất theo phương nằm ngang (song song với đáy). Đường đi của tia ló ra khỏi mặt bên thứ hai sẽ có xu hướng:",
+    "knowledge": [
+      "optical.prism"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Bị bẻ chúc xiên xuống phía đáy nằm ngang của lăng kính"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bị phản xạ ngược trở lại theo phương nằm ngang"
+        },
+        {
+          "id": "opt-c",
+          "label": "Bị bẻ cong vểnh ngược lên phía đỉnh lăng kính"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tiếp tục truyền theo phương nằm ngang ban đầu"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mặt đáy của lăng kính đang nằm ngang ở phía dưới."
+      },
+      {
+        "level": 2,
+        "text": "Tia ló luôn bị lệch về phía đáy của lăng kính, tức là chúc xuống dưới."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hình dung không gian",
+        "body": "Đáy lăng kính ở dưới, đỉnh ở trên. Tia tới đi ngang vào mặt bên thứ nhất."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc độ lệch lăng kính",
+        "body": "Mọi tia sáng khi đi qua lăng kính (đặt trong không khí) đều bị khúc xạ bẻ lệch về phía đáy. Vì đáy lăng kính đặt nằm ngang ở phía dưới, nên tia ló sẽ bị bẻ chúc xuống dưới phía mặt đáy."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Bị bẻ chúc xiên xuống phía đáy nằm ngang của lăng kính**."
+      }
+    ],
+    "finalSolution": "Vì đáy nằm ngang ở dưới, tia ló luôn bị lệch về phía đáy nên **bị bẻ chúc xiên xuống phía đáy**.",
+    "commonMistakes": [
+      {
+        "id": "guess-upwards",
+        "message": "Tia ló không bao giờ lệch về phía đỉnh; đáy ở dưới thì tia sáng phải chúc xuống dưới."
+      }
+    ]
+  }
+]

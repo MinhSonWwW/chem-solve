@@ -542,20 +542,38 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
   },
 };
 
+import { PHYSICS_CURRICULUM } from './curriculum/physics';
+import { getActiveSubject, type SubjectId } from './subjects';
+
+export { PHYSICS_CURRICULUM };
+
 /** Helpers */
-export function getCurriculum(grade: Grade): GradeCurriculum {
+export function getCurriculum(grade: Grade, subject?: SubjectId): GradeCurriculum {
+  const currentSub = subject ?? getActiveSubject();
+  if (currentSub === 'physics') {
+    return PHYSICS_CURRICULUM[grade] ?? PHYSICS_CURRICULUM[8];
+  }
   return CURRICULUM[grade] ?? CURRICULUM[8];
 }
 
-export function getAllLessons(grade?: Grade): Lesson[] {
+export function getAllLessons(grade?: Grade, subject?: SubjectId): Lesson[] {
+  const currentSub = subject ?? getActiveSubject();
+  const targetCurriculum = currentSub === 'physics' ? PHYSICS_CURRICULUM : CURRICULUM;
+
   if (grade) {
-    return CURRICULUM[grade].chapters.flatMap((c) => c.lessons);
+    return targetCurriculum[grade]?.chapters.flatMap((c) => c.lessons) ?? [];
   }
-  return Object.values(CURRICULUM).flatMap((gc) =>
+  return Object.values(targetCurriculum).flatMap((gc) =>
     gc.chapters.flatMap((c) => c.lessons)
   );
 }
 
-export function findLesson(lessonId: string): Lesson | undefined {
+export function findLesson(lessonId: string, subject?: SubjectId): Lesson | undefined {
+  if (lessonId.startsWith('phy-') || subject === 'physics') {
+    const allPhysics = Object.values(PHYSICS_CURRICULUM).flatMap((gc) =>
+      gc.chapters.flatMap((c) => c.lessons)
+    );
+    return allPhysics.find((l) => l.id === lessonId);
+  }
   return getAllLessons().find((l) => l.id === lessonId);
 }

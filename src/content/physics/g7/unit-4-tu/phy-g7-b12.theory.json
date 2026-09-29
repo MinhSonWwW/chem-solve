@@ -1,0 +1,78 @@
+{
+  "lessonId": "phy-g7-b12",
+  "nodeId": "phy-g7-b12-theory",
+  "title": "Lý thuyết: Từ trường",
+  "subtitle": "Bài 19 SGK Khoa học tự nhiên 7 (Kết nối tri thức)",
+  "sgkBaiSo": 19,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm không gian từ",
+      "badgeColor": "cyan",
+      "title": "1. Khái niệm từ trường",
+      "content": "Không gian xung quanh nam châm hoặc xung quanh dòng điện có một môi trường vật chất đặc biệt gọi là từ trường:",
+      "bulletPoints": [
+        "Từ trường là không gian bao quanh nam châm (hoặc dây dẫn có dòng điện), có khả năng tác dụng lực từ lên kim nam châm đặt trong nó.",
+        "Dụng cụ nhận biết từ trường: Dùng kim nam châm thử (hoặc la bàn). Đưa kim nam châm đến vị trí nào mà kim bị lệch khỏi hướng Bắc - Nam tự do thì tại đó có từ trường.",
+        "Tính chất cơ bản của từ trường: Tác dụng lực từ lên nam châm khác hoặc vật liệu từ đặt trong không gian đó."
+      ],
+      "callout": "Khám phá Oersted: Năm 1820, nhà vật lí Đan Mạch Oersted phát hiện dòng điện chạy qua dây dẫn làm kim nam châm lệch đi, chứng minh dòng điện sinh ra từ trường."
+    },
+    {
+      "id": "c2",
+      "badge": "Từ phổ & Chiều đường sức",
+      "badgeColor": "amber",
+      "title": "2. Từ phổ và Đường sức từ",
+      "content": "Để hình dung hình dạng và hướng của từ trường trong không gian, người ta dùng thí nghiệm rắc mạt sắt:",
+      "bulletPoints": [
+        "Từ phổ: Hình ảnh các đường mạt sắt sắp xếp xung quanh nam châm gọi là từ phổ. Nơi nào mạt sắt xếp dày thì từ trường ở đó mạnh (hai cực), nơi nào mạt sắt xếp thưa thì từ trường yếu.",
+        "Đường sức từ: Các đường cong nối từ cực này sang cực kia của nam châm mà trên đó mạt sắt sắp xếp theo.",
+        "Quy ước chiều đường sức từ: Ở bên ngoài thanh nam châm, đường sức từ đi ra từ cực Bắc (N) và đi vào cực Nam (S).",
+        "Quy tắc ghi nhớ: 'Vào Nam - Ra Bắc' (In South, Out North)."
+      ],
+      "callout": "Định hướng kim nam châm: Kim nam châm thử đặt tại một điểm trên đường sức từ sẽ nằm dọc theo tiếp tuyến của đường sức từ tại điểm đó."
+    },
+    {
+      "id": "c3",
+      "badge": "Từ trường hành tinh",
+      "badgeColor": "emerald",
+      "title": "3. Từ trường Trái Đất và La bàn",
+      "content": "Trái Đất của chúng ta hoạt động giống như một quả cầu nam châm khổng lồ bảo vệ sự sống:",
+      "bulletPoints": [
+        "Từ trường Trái Đất: Bao bọc quanh Trái Đất, có tác dụng che chắn các hạt bức xạ mang năng lượng cao từ Mặt Trời (gió Mặt Trời) và tạo nên hiện tượng cực quang tuyệt đẹp ở hai địa cực.",
+        "Cực từ Trái Đất: Cực từ không trùng với cực địa lí:",
+        "- Gần cực Bắc địa lí là Cực Nam từ của Trái Đất (do đó nó hút cực Bắc N của kim la bàn chỉ về hướng Bắc).",
+        "- Gần cực Nam địa lí là Cực Bắc từ của Trái Đất (hút cực Nam S của kim la bàn chỉ về hướng Nam).",
+        "La bàn: Dụng cụ xác định phương hướng dựa trên từ trường Trái Đất. Kim la bàn luôn tự định hướng theo phương Bắc - Nam từ."
+      ],
+      "callout": "Lưu ý khi dùng la bàn: Tránh đặt la bàn gần các khối sắt lớn, máy biến thế hoặc nam châm khác vì từ trường của chúng sẽ làm kim la bàn chỉ sai lệch."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Quy ước chiều của đường sức từ ở bên ngoài một thanh nam châm là:",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Đi ra từ cực Bắc (N) và đi vào cực Nam (S)",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Đi ra từ cực Nam (S) và đi vào cực Bắc (N)",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Đi từ tâm thanh nam châm tỏa đều ra xung quanh",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Xoay tròn ngược chiều kim đồng hồ quanh nam châm",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo quy ước SGK KHTN 7 Bài 19, bên ngoài thanh nam châm, đường sức từ có chiều đi ra từ cực Bắc và đi vào cực Nam ('Vào Nam, Ra Bắc')."
+  }
+}

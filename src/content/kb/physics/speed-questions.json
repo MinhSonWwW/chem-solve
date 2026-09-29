@@ -1,0 +1,133 @@
+[
+  {
+    "id": "phy-sq-01",
+    "prompt": "Một xe máy đi được quãng đường 60 km trong thời gian 1,5 giờ. Tốc độ của xe là:",
+    "formula": "v = s / t",
+    "options": ["40 km/h", "30 km/h", "90 km/h", "45 km/h"],
+    "correctAnswer": "40 km/h"
+  },
+  {
+    "id": "phy-sq-02",
+    "prompt": "Đổi tốc độ 15 m/s sang đơn vị km/h:",
+    "options": ["54 km/h", "36 km/h", "45 km/h", "72 km/h"],
+    "correctAnswer": "54 km/h"
+  },
+  {
+    "id": "phy-sq-03",
+    "prompt": "Một vật có khối lượng m = 4 kg. Trọng lượng P của vật trên Trái Đất là:",
+    "formula": "P = 10 × m",
+    "options": ["40 N", "4 N", "400 N", "0,4 N"],
+    "correctAnswer": "40 N"
+  },
+  {
+    "id": "phy-sq-04",
+    "prompt": "Khối lượng riêng của một khối sắt có m = 39 kg và V = 0,005 m³ là:",
+    "formula": "D = m / V",
+    "options": ["7800 kg/m³", "195 kg/m³", "780 kg/m³", "3900 kg/m³"],
+    "correctAnswer": "7800 kg/m³"
+  },
+  {
+    "id": "phy-sq-05",
+    "prompt": "Lực F = 150 N tác dụng vuông góc lên mặt bị ép có diện tích S = 0,5 m². Áp suất p là:",
+    "formula": "p = F / S",
+    "options": ["300 Pa", "75 Pa", "150 Pa", "600 Pa"],
+    "correctAnswer": "300 Pa"
+  },
+  {
+    "id": "phy-sq-06",
+    "prompt": "Một thỏi nhôm có thể tích V = 0,002 m³ nhúng chìm hoàn toàn trong nước (d = 10000 N/m³). Lực đẩy Archimedes là:",
+    "formula": "F_A = d × V",
+    "options": ["20 N", "200 N", "2 N", "50 N"],
+    "correctAnswer": "20 N"
+  },
+  {
+    "id": "phy-sq-07",
+    "prompt": "Lực kéo F = 50 N làm vật dịch chuyển s = 4 m cùng hướng với lực. Công A thực hiện được là:",
+    "formula": "A = F × s",
+    "options": ["200 J", "12,5 J", "54 J", "100 J"],
+    "correctAnswer": "200 J"
+  },
+  {
+    "id": "phy-sq-08",
+    "prompt": "Trong thời gian 10 giây, một cần cẩu thực hiện công 5000 J. Công suất của cần cẩu là:",
+    "formula": "P = A / t",
+    "options": ["500 W", "50000 W", "50 W", "250 W"],
+    "correctAnswer": "500 W"
+  },
+  {
+    "id": "phy-sq-09",
+    "prompt": "Vật có trọng lượng P = 20 N ở độ cao h = 3 m so với mặt đất. Thế năng trọng trường của vật là:",
+    "formula": "W_t = P × h",
+    "options": ["60 J", "23 J", "6,67 J", "120 J"],
+    "correctAnswer": "60 J"
+  },
+  {
+    "id": "phy-sq-10",
+    "prompt": "Vật có khối lượng m = 2 kg đang chuyển động với tốc độ v = 3 m/s. Động năng của vật là:",
+    "formula": "W_đ = 1/2 × m × v²",
+    "options": ["9 J", "18 J", "6 J", "12 J"],
+    "correctAnswer": "9 J"
+  },
+  {
+    "id": "phy-sq-11",
+    "prompt": "Đoạn mạch có hiệu điện thế U = 12 V, điện trở R = 6 Ω. Cường độ dòng điện I qua mạch là:",
+    "formula": "I = U / R",
+    "options": ["2 A", "72 A", "0,5 A", "18 A"],
+    "correctAnswer": "2 A"
+  },
+  {
+    "id": "phy-sq-12",
+    "prompt": "Hai điện trở R1 = 15 Ω và R2 = 10 Ω mắc nối tiếp. Điện trở tương đương của đoạn mạch là:",
+    "formula": "R_tđ = R1 + R2",
+    "options": ["25 Ω", "6 Ω", "150 Ω", "5 Ω"],
+    "correctAnswer": "25 Ω"
+  },
+  {
+    "id": "phy-sq-13",
+    "prompt": "Đơn vị đo của cường độ dòng điện trong hệ SI là:",
+    "options": ["Ampe (A)", "Volt (V)", "Ohm (Ω)", "Watt (W)"],
+    "correctAnswer": "Ampe (A)"
+  },
+  {
+    "id": "phy-sq-14",
+    "prompt": "Đơn vị đo của công suất trong hệ SI là:",
+    "options": ["Watt (W)", "Joule (J)", "Pascal (Pa)", "Newton (N)"],
+    "correctAnswer": "Watt (W)"
+  },
+  {
+    "id": "phy-sq-15",
+    "prompt": "Góc tới của tia sáng tới gương phẳng là 35°. Góc phản xạ tương ứng là:",
+    "options": ["35°", "70°", "55°", "90°"],
+    "correctAnswer": "35°"
+  },
+  {
+    "id": "phy-sq-16",
+    "prompt": "Thiết bị nào sau đây dùng để đo cường độ dòng điện?",
+    "options": ["Ampe kế", "Vôn kế", "Nhiệt kế", "Lực kế"],
+    "correctAnswer": "Ampe kế"
+  },
+  {
+    "id": "phy-sq-17",
+    "prompt": "Thiết bị nào sau đây dùng để đo hiệu điện thế?",
+    "options": ["Vôn kế", "Ampe kế", "Oát kế", "Tốc kế"],
+    "correctAnswer": "Vôn kế"
+  },
+  {
+    "id": "phy-sq-18",
+    "prompt": "1 kilowatt (1 kW) tương đương với bao nhiêu Watt?",
+    "options": ["1000 W", "100 W", "10000 W", "10 W"],
+    "correctAnswer": "1000 W"
+  },
+  {
+    "id": "phy-sq-19",
+    "prompt": "Khối lượng riêng của nước nguyên chất xấp xỉ bằng:",
+    "options": ["1000 kg/m³", "100 kg/m³", "10000 kg/m³", "1 kg/m³"],
+    "correctAnswer": "1000 kg/m³"
+  },
+  {
+    "id": "phy-sq-20",
+    "prompt": "Đổi 2 giờ 30 phút ra đơn vị giờ:",
+    "options": ["2,5 h", "2,3 h", "150 h", "2,2 h"],
+    "correctAnswer": "2,5 h"
+  }
+]

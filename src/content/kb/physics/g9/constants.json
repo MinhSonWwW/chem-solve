@@ -1,0 +1,178 @@
+[
+  {
+    "id": "formula.kinetic.energy",
+    "name": "Công thức tính động năng",
+    "symbol": "W_d = 0.5 . m . v^2",
+    "value": 0,
+    "unit": "J",
+    "description": "SGK KHTN 9 Bài 2: Động năng là năng lượng do chuyển động mà có; m tính bằng kg, v tính bằng m/s, W_đ tính bằng J."
+  },
+  {
+    "id": "formula.potential.energy.gravity",
+    "name": "Công thức tính thế năng trọng trường",
+    "symbol": "W_t = P . h",
+    "value": 0,
+    "unit": "J",
+    "description": "SGK KHTN 9 Bài 2: Thế năng trọng trường phụ thuộc vào trọng lượng P (N) và độ cao h (m) so với mốc thế năng."
+  },
+  {
+    "id": "formula.mechanical.energy",
+    "name": "Công thức tính cơ năng",
+    "symbol": "W = W_d + W_t",
+    "value": 0,
+    "unit": "J",
+    "description": "SGK KHTN 9 Bài 3: Cơ năng bằng tổng động năng và thế năng của vật; trong hệ kín không ma sát thì cơ năng bảo toàn."
+  },
+  {
+    "id": "formula.mechanical.work",
+    "name": "Công thức tính công cơ học",
+    "symbol": "A = F . s",
+    "value": 0,
+    "unit": "J",
+    "description": "SGK KHTN 9 Bài 4: Công cơ học A = F . s (F tính bằng N, s là quãng đường dịch chuyển theo hướng của lực tính bằng m)."
+  },
+  {
+    "id": "formula.power",
+    "name": "Công thức tính công suất",
+    "symbol": "P = A / t",
+    "value": 0,
+    "unit": "W",
+    "description": "SGK KHTN 9 Bài 4: Công suất đặc trưng cho tốc độ sinh công P = A / t (A tính bằng J, t tính bằng giây s, P tính bằng oát W)."
+  },
+  {
+    "id": "law.refraction",
+    "name": "Hiện tượng khúc xạ ánh sáng",
+    "symbol": "Khuc_xa",
+    "value": 0,
+    "unit": "",
+    "description": "SGK KHTN 9 Bài 5: Tia sáng truyền xiên góc qua mặt phân cách giữa hai môi trường trong suốt bị gãy khúc."
+  },
+  {
+    "id": "phenomenon.total.internal.reflection",
+    "name": "Hiện tượng phản xạ toàn phần",
+    "symbol": "PXTP",
+    "value": 0,
+    "unit": "",
+    "description": "SGK KHTN 9 Bài 6: Xảy ra khi ánh sáng truyền từ môi trường chiết quang sang môi trường kém chiết quang hơn và góc tới i >= i_gh."
+  },
+  {
+    "id": "optical.prism",
+    "name": "Hiện tượng tán sắc và đường truyền qua lăng kính",
+    "symbol": "Lang_kinh",
+    "value": 0,
+    "unit": "",
+    "description": "SGK KHTN 9 Bài 7: Lăng kính là khối chất trong suốt hình lăng trụ tam giác; làm lệch tia sáng về phía đáy và làm tán sắc ánh sáng trắng."
+  },
+  {
+    "id": "optical.lens",
+    "name": "Đặc tính quang học của thấu kính",
+    "symbol": "Thau_kinh",
+    "value": 0,
+    "unit": "",
+    "description": "SGK KHTN 9 Bài 8: Thấu kính hội tụ và phân kì; quang tâm O, tiêu điểm F, F', tiêu cự f; các tia sáng đặc biệt và đặc điểm ảnh."
+  },
+  {
+    "id": "optical.lens.focal_length_experiment",
+    "name": "Phương pháp thực hành đo tiêu cự thấu kính hội tụ",
+    "symbol": "f = D / 4",
+    "value": 0,
+    "unit": "cm",
+    "description": "SGK KHTN 9 Bài 9: Đo tiêu cự bằng phương pháp Silbermann; khi ảnh thật rõ nét bằng vật trên màn thì d = d' = 2f, khoảng cách vật - màn D = 4f => f = D / 4."
+  },
+  {
+    "id": "optical.magnifying.glass",
+    "name": "Số bội giác của kính lúp",
+    "symbol": "G = 25 / f",
+    "value": 0,
+    "unit": "X",
+    "description": "SGK KHTN 9 Bài 10: Kính lúp là thấu kính hội tụ có tiêu cự ngắn, số bội giác G = 25 / f (f tính bằng cm)."
+  },
+  {
+    "id": "law.ohm",
+    "name": "Định luật Ohm cho đoạn mạch",
+    "symbol": "I = U / R",
+    "value": 0,
+    "unit": "A",
+    "description": "SGK KHTN 9 Bài 11: Cường độ dòng điện qua dây dẫn tỉ lệ thuận với hiệu điện thế U và tỉ lệ nghịch với điện trở R."
+  },
+  {
+    "id": "formula.wire.resistance",
+    "name": "Công thức tính điện trở dây dẫn",
+    "symbol": "R = rho . l / S",
+    "value": 0,
+    "unit": "Omega",
+    "description": "SGK KHTN 9 Bài 11: Điện trở tỉ lệ thuận với chiều dài l, tỉ lệ nghịch với tiết diện S và phụ thuộc điện trở suất rho của vật liệu."
+  },
+  {
+    "id": "circuit.series.g9",
+    "name": "Quy tắc đoạn mạch nối tiếp",
+    "symbol": "R_td = R_1 + R_2",
+    "value": 0,
+    "unit": "Omega",
+    "description": "SGK KHTN 9 Bài 12: Trong đoạn mạch nối tiếp: I = I_1 = I_2, U = U_1 + U_2, R_td = R_1 + R_2."
+  },
+  {
+    "id": "circuit.parallel.g9",
+    "name": "Quy tắc đoạn mạch song song",
+    "symbol": "1/R_td = 1/R_1 + 1/R_2",
+    "value": 0,
+    "unit": "Omega",
+    "description": "SGK KHTN 9 Bài 12: Trong đoạn mạch song song: U = U_1 = U_2, I = I_1 + I_2, 1/R_td = 1/R_1 + 1/R_2."
+  },
+  {
+    "id": "formula.electric.power",
+    "name": "Công suất điện",
+    "symbol": "P = U . I",
+    "value": 0,
+    "unit": "W",
+    "description": "SGK KHTN 9 Bài 13: Công suất tiêu thụ điện của một dụng cụ điện P = U . I = I^2 . R = U^2 / R."
+  },
+  {
+    "id": "formula.electric.energy",
+    "name": "Điện năng tiêu thụ của đoạn mạch",
+    "symbol": "A = P . t",
+    "value": 0,
+    "unit": "J",
+    "description": "SGK KHTN 9 Bài 13: Điện năng tiêu thụ A = P . t = U . I . t (đo bằng J hoặc kWh; 1 kWh = 3 600 000 J = 1 số điện)."
+  },
+  {
+    "id": "electromagnetism.induction",
+    "name": "Hiện tượng cảm ứng điện từ và dòng điện xoay chiều",
+    "symbol": "Cam_ung_dien_tu",
+    "value": 0,
+    "unit": "",
+    "description": "SGK KHTN 9 Bài 14: Khi số đường sức từ xuyên qua tiết diện cuộn dây dẫn kín biến thiên thì trong cuộn dây xuất hiện dòng điện cảm ứng."
+  },
+  {
+    "id": "formula.power.transmission.loss",
+    "name": "Công suất hao phí do tỏa nhiệt khi truyền tải điện",
+    "symbol": "P_hp = R . P^2 / U^2",
+    "value": 0,
+    "unit": "W",
+    "description": "SGK KHTN 9 Bài 15: Công suất hao phí do tỏa nhiệt tỉ lệ nghịch với bình phương hiệu điện thế truyền tải U^2."
+  },
+  {
+    "id": "formula.transformer",
+    "name": "Công thức máy biến thế",
+    "symbol": "U_1 / U_2 = N_1 / N_2",
+    "value": 0,
+    "unit": "",
+    "description": "SGK KHTN 9 Bài 15: Tỉ số hiệu điện thế giữa hai đầu cuộn dây bằng tỉ số giữa số vòng dây tương ứng: U_1 / U_2 = N_1 / N_2."
+  },
+  {
+    "id": "energy.earth.cycle_and_fossil",
+    "name": "Vòng năng lượng trên Trái Đất và năng lượng hóa thạch",
+    "symbol": "NL_Hoa_Thach",
+    "value": 0,
+    "unit": "",
+    "description": "SGK KHTN 9 Bài 16: Mặt Trời là nguồn năng lượng chủ yếu trên Trái Đất; nhiên liệu hóa thạch không tái tạo và gây biến đổi khí hậu."
+  },
+  {
+    "id": "energy.renewable",
+    "name": "Các nguồn năng lượng tái tạo",
+    "symbol": "NL_Tai_Tao",
+    "value": 0,
+    "unit": "",
+    "description": "SGK KHTN 9 Bài 17: Năng lượng mặt trời, gió, thủy điện, sinh khối và địa nhiệt; nguồn năng lượng sạch, vô tận, giảm phát thải."
+  }
+]

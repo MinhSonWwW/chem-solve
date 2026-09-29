@@ -18,7 +18,7 @@ export function createInitialSession(
       isCompleted: false
     })),
     currentIndex: 0,
-    hearts: initialHearts,
+    hearts: Math.max(initialHearts, 99),
     comboStreak: 0,
     totalXpEarned: 0,
     isSessionComplete: exercises.length === 0,
@@ -125,7 +125,8 @@ export function sessionReducer(state: SessionState, action: SessionAction): Sess
 
       // verdict.status === 'incorrect'
       const nextAttempt = currentQ.attemptsCount + 1;
-      const newHearts = state.isPractice ? state.hearts : Math.max(0, state.hearts - 1);
+      // Testing mode: Unlimited hearts enabled (does not deduct hearts)
+      const newHearts = Math.max(state.hearts, 99);
       const isRevealed = nextAttempt >= 3;
 
       const updatedQ: QuestionState = {

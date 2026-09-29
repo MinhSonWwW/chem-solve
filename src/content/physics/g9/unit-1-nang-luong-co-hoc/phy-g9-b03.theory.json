@@ -1,0 +1,78 @@
+{
+  "lessonId": "phy-g9-b03",
+  "nodeId": "phy-g9-b03-theory",
+  "title": "Lý thuyết: Công và công suất",
+  "subtitle": "Bài 4 SGK Khoa học tự nhiên 9 (Kết nối tri thức)",
+  "sgkBaiSo": 4,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm cốt lõi",
+      "badgeColor": "cyan",
+      "title": "1. Công cơ học và điều kiện sinh công",
+      "content": "Trong đời sống, từ 'công' được dùng nhiều nghĩa, nhưng trong vật lý chỉ có 'công cơ học':",
+      "bulletPoints": [
+        "Điều kiện có công cơ học: Chỉ khi có lực tác dụng vào vật và làm vật dịch chuyển một quãng đường theo phương không vuông góc với lực thì mới có công cơ học.",
+        "Công thức tính công: $A = F \\cdot s$ (khi lực $F$ cùng hướng với hướng dịch chuyển của vật).",
+        "Trong đó: $F$ là độ lớn của lực tác dụng (đơn vị: N); $s$ là quãng đường vật dịch chuyển theo hướng của lực (đơn vị: m); $A$ là công cơ học (đơn vị: Jun, kí hiệu J).",
+        "Trường hợp không sinh công ($A = 0$): Khi vật không dịch chuyển ($s = 0$), hoặc khi lực tác dụng có phương vuông góc với phương dịch chuyển của vật."
+      ],
+      "callout": "Bẫy thường gặp: Người lực sĩ cố gồng mình giữ tạ đứng yên trên cao không sinh công cơ học (vì $s = 0$). Vệ tinh bay quanh Trái Đất theo quỹ đạo tròn thì lực hấp dẫn vuông góc với hướng chuyển động nên cũng không sinh công."
+    },
+    {
+      "id": "c2",
+      "badge": "Tốc độ sinh công",
+      "badgeColor": "amber",
+      "title": "2. Khái niệm công suất và đơn vị đo",
+      "content": "Để so sánh máy móc hoặc người nào làm việc khỏe hơn, nhanh hơn, người ta dùng đại lượng công suất:",
+      "bulletPoints": [
+        "Định nghĩa: Công suất là đại lượng đặc trưng cho tốc độ thực hiện công, được xác định bằng công thực hiện được trong một đơn vị thời gian.",
+        "Công thức tính công suất: $P = \\frac{A}{t}$",
+        "Trong đó: $A$ là công thực hiện (đơn vị: J); $t$ là thời gian thực hiện công đó (đơn vị: giây, kí hiệu s); $P$ là công suất (đơn vị: Oát, kí hiệu W).",
+        "Đơn vị đo chuẩn và bội số: $1\\text{ W} = 1\\text{ J/s}$; $1\\text{ kW} = 1\\,000\\text{ W}$; $1\\text{ MW} = 1\\,000\\,000\\text{ W}$."
+      ],
+      "callout": "Ghi nhớ đơn vị: Phải đổi thời gian sang giây (s) trước khi tính công suất. $1\\text{ phút} = 60\\text{ s}$; $1\\text{ giờ} = 3\\,600\\text{ s}$."
+    },
+    {
+      "id": "c3",
+      "badge": "Ứng dụng & Mở rộng",
+      "badgeColor": "emerald",
+      "title": "3. Mối liên hệ công suất với tốc độ và ý nghĩa thực tế",
+      "content": "Trong các phương tiện giao thông và máy kéo chuyển động đều:",
+      "bulletPoints": [
+        "Liên hệ với vận tốc: Trong chuyển động thẳng đều với tốc độ $v$, ta có $s = v \\cdot t$. Do đó công suất có thể tính qua công thức: $P = \\frac{A}{t} = \\frac{F \\cdot s}{t} = F \\cdot v$",
+        "Trong đó: $F$ là lực kéo của động cơ (N); $v$ là tốc độ chuyển động đều (m/s).",
+        "Ý nghĩa số ghi trên máy móc: Số oát ghi trên nhãn động cơ cho biết công suất định mức của thiết bị (ví dụ máy bơm ghi 750 W nghĩa là trong mỗi giây máy có thể sinh ra công 750 J).",
+        "Hiệu suất: Trong thực tế, công toàn phần luôn lớn hơn công có ích do có ma sát và hao phí tỏa nhiệt."
+      ],
+      "callout": "Quy tắc sang số xe: Khi lên dốc cần lực kéo $F$ lớn, người lái xe phải về số thấp để giảm tốc độ $v$, giữ cho công suất $P = F \\cdot v$ không vượt quá giới hạn của động cơ."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Công suất của một máy nâng được tính bằng công thức nào sau đây?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "P = A / t",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "P = A . t",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "P = F . t",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "P = t / A",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 9 Bài 4: Công suất P bằng công thực hiện A chia cho thời gian thực hiện t (P = A / t)."
+  }
+}

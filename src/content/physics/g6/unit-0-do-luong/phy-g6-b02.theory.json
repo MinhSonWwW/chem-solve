@@ -1,0 +1,79 @@
+{
+  "lessonId": "phy-g6-b02",
+  "nodeId": "phy-g6-b02-theory",
+  "title": "Lý thuyết: Đo khối lượng",
+  "subtitle": "Bài 6 SGK Khoa học tự nhiên 6 (Kết nối tri thức)",
+  "sgkBaiSo": 6,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Kiến thức trọng tâm",
+      "badgeColor": "cyan",
+      "title": "1. Khối lượng và đơn vị đo khối lượng",
+      "content": "Mọi vật đều có khối lượng. Khối lượng của một vật chỉ lượng chất chứa trong vật đó.",
+      "bulletPoints": [
+        "Đơn vị đo khối lượng cơ bản trong hệ SI là kilôgam (kí hiệu: kg).",
+        "1 gam (g) = 0,001 kg (1 kg = 1 000 g)",
+        "1 miligam (mg) = 0,001 g = 0,000 001 kg",
+        "1 héctôgam (trong đời sống thường gọi là 1 lạng) = 100 g",
+        "1 yến = 10 kg; 1 tạ = 100 kg",
+        "1 tấn (kí hiệu: t) = 1 000 kg"
+      ],
+      "callout": "Ví dụ: Trên bao bột giặt ghi 5 kg, con số 5 kg chỉ lượng bột giặt chứa trong túi."
+    },
+    {
+      "id": "c2",
+      "badge": "Dụng cụ đo",
+      "badgeColor": "amber",
+      "title": "2. Dụng cụ đo khối lượng: Cân",
+      "content": "Để đo khối lượng người ta dùng các loại cân: cân đồng hồ, cân điện tử, cân y tế, cân đòn, cân Rô-béc-van.",
+      "bulletPoints": [
+        "Giới hạn đo (GHĐ) của cân: Khối lượng lớn nhất mà cân có thể đo được.",
+        "Độ chia nhỏ nhất (ĐCNN) của cân: Khối lượng giữa hai vạch chia liên tiếp trên cân."
+      ],
+      "callout": "Lưu ý: Luôn chọn cân có GHĐ lớn hơn khối lượng ước lượng của vật để tránh làm hỏng cân hoặc sai số."
+    },
+    {
+      "id": "c3",
+      "badge": "Kỹ năng thực hành",
+      "badgeColor": "emerald",
+      "title": "3. Quy trình 5 bước đo khối lượng bằng cân đồng hồ",
+      "content": "Để đo khối lượng chính xác bằng cân đồng hồ, cần thực hiện đúng 5 bước:",
+      "bulletPoints": [
+        "Bước 1: Ước lượng khối lượng vật để chọn cân có GHĐ và ĐCNN phù hợp.",
+        "Bước 2: Hiệu chỉnh cân: vặn ốc điều chỉnh để kim cân chỉ đúng vạch số 0.",
+        "Bước 3: Đặt vật cần đo lên chính giữa đĩa cân.",
+        "Bước 4: Đặt mắt nhìn vuông góc với vạch chia trên mặt cân tại đầu kim cân.",
+        "Bước 5: Đọc và ghi kết quả đo theo vạch chia gần nhất với đầu kim cân."
+      ],
+      "callout": "Lỗi thường gặp: Quên chỉnh kim về số 0 trước khi cân, hoặc đặt mắt nhìn lệch sẽ dẫn đến kết quả đọc sai lệch."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khối lượng của một vật cho ta biết điều gì?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Lượng chất chứa trong vật",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Thể tích không gian mà vật chiếm chỗ",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Độ nặng nhẹ thay đổi tùy vào vị trí đặt vật",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Chiều cao và chiều rộng của vật",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo định nghĩa SGK KHTN 6 (Bài 6), khối lượng của một vật chỉ lượng chất chứa trong vật đó."
+  }
+}

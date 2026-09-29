@@ -1,0 +1,75 @@
+{
+  "lessonId": "phy-g6-b06",
+  "nodeId": "phy-g6-b06-theory",
+  "title": "Lý thuyết: Biểu diễn lực",
+  "subtitle": "Bài 41 SGK Khoa học tự nhiên 6 (Kết nối tri thức)",
+  "sgkBaiSo": 41,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Kiến thức trọng tâm",
+      "badgeColor": "cyan",
+      "title": "1. Các yếu tố đặc trưng của một lực",
+      "content": "Một lực hoàn toàn được xác định khi biết đầy đủ các yếu tố sau:",
+      "bulletPoints": [
+        "Điểm đặt (gốc): Vị trí trên vật mà lực tác dụng trực tiếp vào.",
+        "Phương của lực: Đường thẳng mà lực tác dụng dọc theo (ví dụ: phương nằm ngang, phương thẳng đứng, phương xiên góc).",
+        "Chiều của lực: Hướng của lực trên phương đó (ví dụ: từ trái sang phải, từ trên xuống dưới, từ dưới lên trên).",
+        "Độ lớn của lực: Cho biết lực tác dụng mạnh hay yếu, đo bằng đơn vị niutơn (kí hiệu: N)."
+      ],
+      "callout": "Phương và chiều hợp lại tạo thành hướng tác dụng của lực."
+    },
+    {
+      "id": "c2",
+      "badge": "Quy tắc biểu diễn",
+      "badgeColor": "amber",
+      "title": "2. Biểu diễn lực bằng mũi tên",
+      "content": "Trong khoa học, mỗi lực được biểu diễn bằng một mũi tên có các quy ước chuẩn sau:",
+      "bulletPoints": [
+        "Gốc của mũi tên: Đặt tại điểm đặt của lực (trên vật chịu tác dụng).",
+        "Hướng của mũi tên: Cùng phương và cùng chiều với hướng của lực.",
+        "Độ dài của mũi tên: Biểu diễn độ lớn của lực theo một tỉ xích cho trước."
+      ],
+      "callout": "Ví dụ: Để biểu diễn lực kéo 15 N theo phương ngang sang phải với tỉ xích 1 cm ứng với 5 N, ta vẽ mũi tên có gốc trên vật, hướng sang phải, dài đúng 3 cm."
+    },
+    {
+      "id": "c3",
+      "badge": "Kí hiệu khoa học",
+      "badgeColor": "emerald",
+      "title": "3. Kí hiệu vectơ lực và độ lớn",
+      "content": "Cần phân biệt rõ hai cách viết kí hiệu trong vật lý:",
+      "bulletPoints": [
+        "Vectơ lực: Kí hiệu là F có dấu mũi tên trên đầu (hoặc viết đậm F), chỉ toàn bộ các yếu tố gốc, hướng và độ lớn.",
+        "Độ lớn của lực: Kí hiệu là chữ F hoa không có mũi tên (ví dụ: F = 20 N)."
+      ],
+      "callout": "Lỗi thường gặp: Quên chọn tỉ xích hoặc vẽ mũi tên không đúng độ dài tương ứng với tỉ xích đã chọn."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi biểu diễn một lực bằng mũi tên, chiều dài của đoạn mũi tên cho ta biết yếu tố nào của lực?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Độ lớn của lực theo một tỉ xích quy ước",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Điểm đặt của lực trên vật",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Phương nằm ngang hay thẳng đứng",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Khối lượng của vật chịu lực",
+        "correct": false
+      }
+    ],
+    "explanation": "Độ dài mũi tên biểu diễn độ lớn của lực theo tỉ xích đã chọn (ví dụ: mỗi cm ứng với 10 N)."
+  }
+}

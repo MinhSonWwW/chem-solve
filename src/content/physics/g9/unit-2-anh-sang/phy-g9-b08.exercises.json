@@ -1,0 +1,526 @@
+[
+  {
+    "id": "phy-g9-b08-mcq-001",
+    "lessonId": "phy-g9-b08",
+    "sgkBaiSo": 9,
+    "skillIds": [
+      "lens-focal-lab-objective"
+    ],
+    "difficulty": 1,
+    "prompt": "Mục đích chính của bài thực hành (Bài 9 SGK KHTN 9) là gì?",
+    "knowledge": [
+      "optical.lens.focal_length_experiment"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Khảo sát hiện tượng phản xạ toàn phần trên mặt gương cầu"
+        },
+        {
+          "id": "opt-b",
+          "label": "Chế tạo kính lúp từ các mảnh thủy tinh vỡ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Đo vận tốc truyền của tia sáng trong thủy tinh"
+        },
+        {
+          "id": "opt-d",
+          "label": "Xác định tiêu cự của thấu kính hội tụ bằng phương pháp thực nghiệm quang học"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tiêu đề của bài là 'Thực hành đo tiêu cự của thấu kính hội tụ'."
+      },
+      {
+        "level": 2,
+        "text": "Mục đích là xác định tiêu cự f của thấu kính hội tụ bằng cách đo khoảng cách vật và màn chắn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định mục tiêu bài học",
+        "body": "Đề bài yêu cầu nêu mục tiêu của bài thực hành số 9."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 9: Mục tiêu bài thực hành là đo được tiêu cự của thấu kính hội tụ bằng dụng cụ thực hành quang học."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Xác định tiêu cự của thấu kính hội tụ bằng phương pháp thực nghiệm quang học**."
+      }
+    ],
+    "finalSolution": "Mục đích bài thực hành là **xác định tiêu cự của thấu kính hội tụ** bằng dụng cụ thực nghiệm.",
+    "commonMistakes": [
+      {
+        "id": "confuse-objective",
+        "message": "Bài thực hành này đo tiêu cự f của thấu kính hội tụ, không phải đo tốc độ ánh sáng hay làm kính lúp."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b08-ord-002",
+    "lessonId": "phy-g9-b08",
+    "sgkBaiSo": 9,
+    "skillIds": [
+      "lens-focal-lab-steps-order"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp các thao tác sau theo đúng trình tự tiến hành thí nghiệm đo tiêu cự của thấu kính hội tụ:",
+    "knowledge": [
+      "optical.lens.focal_length_experiment"
+    ],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Lắp đặt nguồn sáng, vật sáng chữ F, thấu kính hội tụ và màn chắn thẳng hàng trên giá quang học",
+        "Bật nguồn sáng và điều chỉnh để tâm của vật, thấu kính và màn cùng nằm trên một đường thẳng",
+        "Dịch chuyển đồng thời vật và màn ra xa thấu kính những khoảng bằng nhau cho đến khi thu được ảnh rõ nét bằng vật",
+        "Đo khoảng cách d từ vật đến thấu kính và d' từ thấu kính đến màn chắn (kiểm tra d xấp xỉ d')",
+        "Tính tiêu cự của thấu kính theo công thức f = (d + d') / 4 và lặp lại phép đo để lấy giá trị trung bình"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bước đầu tiên luôn là lắp đặt các thiết bị quang học lên giá đo."
+      },
+      {
+        "level": 2,
+        "text": "Sau khi căn chỉnh thẳng hàng, dịch chuyển để tìm ảnh sắc nét bằng vật, ghi số đo d, d' rồi tính f = (d + d') / 4."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích quy trình",
+        "body": "Quy trình thực hành gồm 5 bước logic từ chuẩn bị, điều chỉnh, lấy ảnh, đo đạc đến tính toán kết quả."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Thứ tự chuẩn SGK",
+        "body": "1. Lắp đặt thiết bị trên giá -> 2. Bật đèn căn chỉnh đồng trục -> 3. Dịch chuyển tìm ảnh rõ nét bằng vật -> 4. Đo d và d' -> 5. Tính f = (d + d')/4 và lấy trung bình."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Trình tự chuẩn gồm 5 bước như đã liệt kê."
+      }
+    ],
+    "finalSolution": "Trình tự chuẩn: Lắp đặt thiết bị $\\rightarrow$ Căn chỉnh đồng trục $\\rightarrow$ Tìm ảnh rõ nét bằng vật $\\rightarrow$ Đọc số đo $d, d'$ $\\rightarrow$ Tính $f = \\frac{d + d'}{4}$.",
+    "commonMistakes": [
+      {
+        "id": "measure-before-sharpness",
+        "message": "Nếu chưa dịch chuyển để ảnh thật rõ nét và bằng kích thước vật thì số đo d và d' sẽ không thỏa mãn điều kiện đối xứng d = d' = 2f."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b08-mcq-003",
+    "lessonId": "phy-g9-b08",
+    "sgkBaiSo": 9,
+    "skillIds": [
+      "lens-focal-lab-apparatus"
+    ],
+    "difficulty": 1,
+    "prompt": "Bộ dụng cụ thực hành đo tiêu cự thấu kính hội tụ theo SGK KHTN 9 bao gồm những thiết bị chính nào?",
+    "knowledge": [
+      "optical.lens.focal_length_experiment"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Lăng kính tam giác, kính lúp, gương cầu lồi và ampe kế đo dòng điện"
+        },
+        {
+          "id": "opt-b",
+          "label": "Ống dây điện từ, nam châm chữ U, nhiệt kế và bình chia độ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Đòn bẩy, lực kế lò xo, quả nặng và đồng hồ bấm giây"
+        },
+        {
+          "id": "opt-d",
+          "label": "Giá quang học có thước đo, nguồn sáng, vật sáng chữ F, thấu kính hội tụ và màn chắn hứng ảnh"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cần có thước đo, đèn chiếu, vật sáng, thấu kính và màn chắn hứng ảnh."
+      },
+      {
+        "level": 2,
+        "text": "Tất cả các dụng cụ quang học này được gắn trượt trên thanh giá quang học."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định danh mục dụng cụ",
+        "body": "Tìm các dụng cụ cần thiết cho bài thực hành quang học số 9."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 9: Dụng cụ gồm giá quang học có thước đo milimet, nguồn sáng điện, vật sáng chữ F, thấu kính hội tụ cần đo, màn chắn ảnh và nguồn điện."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Giá quang học có thước đo, nguồn sáng, vật sáng chữ F, thấu kính hội tụ và màn chắn hứng ảnh**."
+      }
+    ],
+    "finalSolution": "Bộ dụng cụ gồm: **giá quang học có thước đo, nguồn sáng, vật sáng chữ F, thấu kính hội tụ và màn chắn hứng ảnh**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-other-units",
+        "message": "Tránh nhầm lẫn với dụng cụ thí nghiệm điện từ học hoặc cơ học."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b08-num-004",
+    "lessonId": "phy-g9-b08",
+    "sgkBaiSo": 9,
+    "skillIds": [
+      "lens-focal-lab-calc-d-screen"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong một buổi thực hành đo tiêu cự thấu kính hội tụ, khi thu được ảnh rõ nét trên màn có kích thước bằng đúng vật sáng, học sinh đo được khoảng cách từ vật đến màn chắn là D = 60 cm. Tiêu cự f của thấu kính này là bao nhiêu cm?",
+    "knowledge": [
+      "optical.lens.focal_length_experiment"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 15,
+      "unit": "cm",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi ảnh thật bằng vật thì khoảng cách giữa vật và màn là D = 4f."
+      },
+      {
+        "level": 2,
+        "text": "Tiêu cự f = D / 4 = 60 / 4."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Ảnh thật sắc nét bằng vật; khoảng cách vật - màn $D = 60\\text{ cm}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức xác định tiêu cự",
+        "body": "Khi ảnh thật bằng vật thì $d = d' = 2f$. Khoảng cách $D = d + d' = 4f \\Rightarrow f = \\frac{D}{4}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$f = \\frac{60}{4} = 15\\text{ cm}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tiêu cự của thấu kính là **15 cm**."
+      }
+    ],
+    "finalSolution": "Tiêu cự của thấu kính: $f = \\frac{D}{4} = \\frac{60}{4} = 15\\text{ cm}$.",
+    "commonMistakes": [
+      {
+        "id": "divide-by-two-mistake",
+        "message": "Bạn đã chia cho 2 thay vì chia cho 4: D = 4f nên f = D / 4 = 15 cm (không phải 30 cm).",
+        "trapAnswers": [
+          "30",
+          "30 cm"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b08-num-005",
+    "lessonId": "phy-g9-b08",
+    "sgkBaiSo": 9,
+    "skillIds": [
+      "lens-focal-lab-calc-d-and-dprime"
+    ],
+    "difficulty": 2,
+    "prompt": "Học sinh đo được khoảng cách từ vật sáng đến thấu kính là d = 20 cm và khoảng cách từ thấu kính đến màn chắn là d' = 20 cm khi ảnh thật hiện rõ nét và bằng kích thước của vật. Tiêu cự f của thấu kính là bao nhiêu cm?",
+    "knowledge": [
+      "optical.lens.focal_length_experiment"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 10,
+      "unit": "cm",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi ảnh rõ nét bằng vật thì d = d' = 2f."
+      },
+      {
+        "level": 2,
+        "text": "f = (d + d') / 4 = (20 + 20) / 4 hoặc f = d / 2 = 20 / 2 = 10 cm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$d = 20\\text{ cm}$; $d' = 20\\text{ cm}$; ảnh thật bằng vật."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính tiêu cự",
+        "body": "Theo phương pháp đối xứng: $d = 2f \\Rightarrow f = \\frac{d}{2} = \\frac{d + d'}{4}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$f = \\frac{20 + 20}{4} = \\frac{40}{4} = 10\\text{ cm}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tiêu cự của thấu kính là **10 cm**."
+      }
+    ],
+    "finalSolution": "Tiêu cự của thấu kính: $f = \\frac{d + d'}{4} = \\frac{20 + 20}{4} = 10\\text{ cm}$.",
+    "commonMistakes": [
+      {
+        "id": "confuse-d-with-f",
+        "message": "Khoảng cách từ vật đến thấu kính d = 20 cm chính là 2f, do đó tiêu cự f = 20 / 2 = 10 cm (không phải f = 20 cm).",
+        "trapAnswers": [
+          "20",
+          "20 cm"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b08-mcq-006",
+    "lessonId": "phy-g9-b08",
+    "sgkBaiSo": 9,
+    "skillIds": [
+      "lens-focal-lab-alignment-condition"
+    ],
+    "difficulty": 2,
+    "prompt": "Để thu được ảnh rõ nét nhất ở tâm của màn chắn trong thí nghiệm đo tiêu cự, thao tác căn chỉnh nào sau đây là bắt buộc?",
+    "knowledge": [
+      "optical.lens.focal_length_experiment"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vật sáng phải đặt lệch hẳn về phía rìa ngoài thấu kính"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tâm của nguồn sáng, vật sáng chữ F, quang tâm thấu kính và tâm màn chắn phải cùng nằm trên một đường thẳng song song với giá quang học"
+        },
+        {
+          "id": "opt-c",
+          "label": "Màn chắn phải đặt sát ngay cạnh nguồn sáng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Thấu kính phải đặt nghiêng một góc 45° so với trục chính"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hệ quang học cần có tính đồng trục (cùng nằm trên trục chính)."
+      },
+      {
+        "level": 2,
+        "text": "Tâm của đèn, vật, thấu kính và màn chắn phải thẳng hàng và cùng độ cao."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Kĩ thuật thực hành",
+        "body": "Xác định điều kiện căn chỉnh thiết bị trên giá quang học."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Nguyên tắc đồng trục",
+        "body": "Theo hướng dẫn thực hành SGK KHTN 9 Bài 9: Cần điều chỉnh độ cao để tâm của nguồn sáng, vật sáng, quang tâm của thấu kính và tâm màn chắn nằm trên cùng một đường thẳng (đồng trục) để ảnh không bị lệch ra ngoài hoặc bị méo mó."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Tâm các dụng cụ phải cùng nằm trên một đường thẳng song song với giá quang học**."
+      }
+    ],
+    "finalSolution": "Bắt buộc phải căn chỉnh **đồng trục: tâm nguồn sáng, vật sáng, quang tâm thấu kính và tâm màn chắn cùng nằm trên một đường thẳng**.",
+    "commonMistakes": [
+      {
+        "id": "ignore-coaxial-alignment",
+        "message": "Nếu không căn chỉnh đồng trục, ảnh thu được sẽ bị nhòe, lệch khỏi màn chắn hoặc không thể đo chính xác."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b08-num-007",
+    "lessonId": "phy-g9-b08",
+    "sgkBaiSo": 9,
+    "skillIds": [
+      "lens-focal-lab-average-calc"
+    ],
+    "difficulty": 3,
+    "prompt": "Một nhóm học sinh tiến hành đo khoảng cách D từ vật đến màn chắn khi ảnh rõ nét bằng vật trong 3 lần đo liên tiếp, kết quả thu được lần lượt là: D1 = 48 cm, D2 = 48,4 cm, D3 = 47,6 cm. Giá trị tiêu cự trung bình của thấu kính hội tụ này là bao nhiêu cm?",
+    "knowledge": [
+      "optical.lens.focal_length_experiment"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 12,
+      "unit": "cm",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tính khoảng cách trung bình D_tb = (D1 + D2 + D3) / 3."
+      },
+      {
+        "level": 2,
+        "text": "D_tb = (48 + 48,4 + 47,6) / 3 = 144 / 3 = 48 cm. Sau đó tính tiêu cự trung bình f_tb = D_tb / 4."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt số liệu 3 lần đo",
+        "body": "$D_1 = 48\\text{ cm}$; $D_2 = 48,4\\text{ cm}$; $D_3 = 47,6\\text{ cm}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức trung bình",
+        "body": "$\\bar{D} = \\frac{D_1 + D_2 + D_3}{3}$ và tiêu cự trung bình $\\bar{f} = \\frac{\\bar{D}}{4}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$\\bar{D} = \\frac{48 + 48,4 + 47,6}{3} = \\frac{144}{3} = 48\\text{ cm}$. Suy ra $\\bar{f} = \\frac{48}{4} = 12\\text{ cm}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tiêu cự trung bình của thấu kính là **12 cm**."
+      }
+    ],
+    "finalSolution": "Khoảng cách trung bình $\\bar{D} = 48\\text{ cm}$. Tiêu cự trung bình: $\\bar{f} = \\frac{\\bar{D}}{4} = \\frac{48}{4} = 12\\text{ cm}$.",
+    "commonMistakes": [
+      {
+        "id": "stop-at-d-average",
+        "message": "Bạn mới tính ra khoảng cách trung bình D_tb = 48 cm mà quên chia cho 4 để tìm tiêu cự f = 12 cm.",
+        "trapAnswers": [
+          "48",
+          "48 cm",
+          "24",
+          "24 cm"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b08-mcq-008",
+    "lessonId": "phy-g9-b08",
+    "sgkBaiSo": 9,
+    "skillIds": [
+      "lens-focal-lab-silbermann-rationale"
+    ],
+    "difficulty": 3,
+    "prompt": "Tại sao trong phương pháp thực hành này, người ta phải điều chỉnh sao cho 'ảnh thật có kích thước bằng vật' (h' = h) thay vì chọn một ảnh thật có kích thước bất kì?",
+    "knowledge": [
+      "optical.lens.focal_length_experiment"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vì mắt người chỉ có thể nhìn thấy ảnh khi ảnh bằng vật"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vì chỉ khi ảnh thật bằng vật thì quan hệ đối xứng d = d' = 2f mới được đảm bảo, giúp dễ dàng tính f = D / 4"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì thước đo trên giá quang học chỉ đo được vật thể có chiều cao bằng ảnh"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì ảnh thật bằng vật luôn có độ sáng lớn nhất trong mọi trường hợp"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi ảnh thật bằng vật thì độ phóng đại h'/h = 1."
+      },
+      {
+        "level": 2,
+        "text": "Từ d'/d = h'/h = 1 => d = d' = 2f. Đây là điều kiện tiên quyết để tính f = D / 4."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất toán học và thực nghiệm",
+        "body": "Giải thích cơ sở khoa học của điều kiện 'ảnh bằng vật'."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hệ thức quang hình",
+        "body": "Theo công thức phóng đại: $\\frac{h'}{h} = \\frac{d'}{d}$. Khi điều chỉnh được $h' = h$, ta chắc chắn có $d = d'$, kết hợp với $\\frac{1}{f} = \\frac{1}{d} + \\frac{1}{d'}$ suy ra $d = d' = 2f$. Nhờ đó chỉ cần đo tổng khoảng cách $D = 4f$ mà không cần định vị tiêu điểm bên trong thấu kính."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Vì chỉ khi ảnh thật bằng vật thì d = d' = 2f được đảm bảo chắc chắn, giúp tính f = D / 4**."
+      }
+    ],
+    "finalSolution": "Điều kiện ảnh thật bằng vật bảo đảm **tính đối xứng $d = d' = 2f$**, giúp xác định tiêu cự chính xác qua công thức $f = \\frac{D}{4}$.",
+    "commonMistakes": [
+      {
+        "id": "guess-brightness",
+        "message": "Độ sáng của ảnh không phải là lý do; lý do là để thiết lập hệ thức toán học d = d' = 2f."
+      }
+    ]
+  }
+]

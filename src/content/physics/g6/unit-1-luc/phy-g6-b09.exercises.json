@@ -1,0 +1,416 @@
+[
+  {
+    "id": "phy-g6-b09-mcq-001",
+    "lessonId": "phy-g6-b09",
+    "sgkBaiSo": 44,
+    "skillIds": [
+      "friction-concept"
+    ],
+    "difficulty": 1,
+    "prompt": "Lực ma sát xuất hiện ở vị trí nào và có tác dụng chủ yếu gì đối với chuyển động của vật?",
+    "knowledge": [
+      "force.friction.types"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Xuất hiện ở trên cao, hút các vật rơi về phía Trái Đất"
+        },
+        {
+          "id": "opt-b",
+          "label": "Xuất hiện ở bề mặt tiếp xúc giữa hai vật, cản trở chuyển động của vật"
+        },
+        {
+          "id": "opt-c",
+          "label": "Xuất hiện bên trong lòng vật thể, làm vật biến dạng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Xuất hiện ở hai đầu cực của nam châm, đẩy các kim loại"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ma sát luôn xảy ra khi hai bề mặt cọ xát hoặc trượt lên nhau."
+      },
+      {
+        "level": 2,
+        "text": "Lực ma sát xuất hiện ở bề mặt tiếp xúc và có xu hướng cản trở chuyển động."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận biết khái niệm ma sát",
+        "body": "Vị trí xuất hiện và tác dụng cơ bản của lực ma sát."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Định nghĩa SGK",
+        "body": "Lực ma sát là lực tiếp xúc xuất hiện ở bề mặt tiếp xúc giữa hai vật, có tác dụng cản trở chuyển động của vật này so với vật kia."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Lực ma sát xuất hiện **Ở bề mặt tiếp xúc giữa hai vật, cản trở chuyển động của vật**."
+      }
+    ],
+    "finalSolution": "Lực ma sát xuất hiện **ở bề mặt tiếp xúc giữa hai vật** và **cản trở chuyển động**.",
+    "commonMistakes": [
+      {
+        "id": "thought-internal-force",
+        "message": "Lực ma sát là lực tiếp xúc bề mặt ngoài giữa 2 vật, không phải lực trong lòng vật thể."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b09-mcq-002",
+    "lessonId": "phy-g6-b09",
+    "sgkBaiSo": 44,
+    "skillIds": [
+      "friction-sliding"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong các trường hợp sau đây, trường hợp nào xuất hiện **lực ma sát trượt**?",
+    "knowledge": [
+      "force.friction.types"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Kéo một tấm gỗ trượt trên mặt sàn nhà bê tông"
+        },
+        {
+          "id": "opt-b",
+          "label": "Một quả táo nằm yên trên đĩa đặt ở bàn ăn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Một chiếc tủ đứng yên vững chắc trên mặt sàn dù có người đang đẩy nhẹ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Viên bi đang lăn tròn đều trên sàn gạch hoa"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ma sát trượt xuất hiện khi có một bề mặt đang trượt trên một bề mặt khác."
+      },
+      {
+        "level": 2,
+        "text": "Kéo tấm gỗ trượt trên mặt sàn là trường hợp sinh ra lực ma sát trượt."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân biệt các loại ma sát",
+        "body": "Tìm trường hợp vật trượt trên bề mặt vật khác."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân tích phương án",
+        "body": "Tủ đứng yên dù bị đẩy là ma sát nghỉ; bi lăn là ma sát lăn; quả táo đứng yên không chịu lực đẩy. Kéo tấm gỗ trượt trên sàn xuất hiện lực ma sát trượt."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Trường hợp có ma sát trượt là **Kéo một tấm gỗ trượt trên mặt sàn nhà bê tông**."
+      }
+    ],
+    "finalSolution": "Kéo tấm gỗ trượt trên sàn sinh ra **lực ma sát trượt**.",
+    "commonMistakes": [
+      {
+        "id": "confused-rolling",
+        "message": "Viên bi lăn tròn sinh ra ma sát lăn, không phải ma sát trượt."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b09-mcq-003",
+    "lessonId": "phy-g6-b09",
+    "sgkBaiSo": 44,
+    "skillIds": [
+      "friction-static-walking"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi con người đi bộ trên mặt đất, nhờ có lực nào giữa đế giày và mặt đường mà bàn chân không bị trượt ngã về phía sau khi đạp chân bước tới?",
+    "knowledge": [
+      "force.friction.types"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Lực hút của Trái Đất"
+        },
+        {
+          "id": "opt-b",
+          "label": "Lực ma sát nghỉ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Lực đẩy của không khí"
+        },
+        {
+          "id": "opt-d",
+          "label": "Lực ma sát trượt"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi chân đạp xuống đất để đẩy người về phía trước, bàn chân phải giữ cố định không bị trượt."
+      },
+      {
+        "level": 2,
+        "text": "Lực ma sát nghỉ giữ cho chân không bị trượt khi tiếp xúc với mặt đất, đóng vai trò lực phát động giúp ta tiến lên."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích cơ chế bước đi",
+        "body": "Khi bước, chân tác dụng lực đẩy lùi về phía sau lên mặt đất. Mặt đất tác dụng lực ma sát nghỉ lên đế giày hướng về phía trước."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Vai trò ma sát nghỉ",
+        "body": "Chính lực ma sát nghỉ giữ cho chân bám chặt vào mặt đường và đẩy cơ thể tiến tới. Nếu đi trên băng trơn thiếu ma sát nghỉ, ta sẽ bị trượt ngã ngay."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Lực đó là **Lực ma sát nghỉ**."
+      }
+    ],
+    "finalSolution": "Nhờ có **lực ma sát nghỉ** giữa đế giày và mặt đường giúp con người đi lại vững vàng mà không bị trượt.",
+    "commonMistakes": [
+      {
+        "id": "chose-sliding-friction",
+        "message": "Nếu xảy ra ma sát trượt thì nghĩa là chân bạn đã bị trượt ngã trên mặt đất rồi."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b09-mcq-004",
+    "lessonId": "phy-g6-b09",
+    "sgkBaiSo": 44,
+    "skillIds": [
+      "friction-factors"
+    ],
+    "difficulty": 2,
+    "prompt": "Một bạn học sinh kéo một khối gỗ trượt trên 4 bề mặt khác nhau với cùng một lực ép. Trường hợp nào sau đây lực ma sát trượt cản trở chuyển động sẽ có **độ lớn lớn nhất**?",
+    "knowledge": [
+      "force.friction.types"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Trượt trên mặt đường bê tông thô ráp, gồ ghề"
+        },
+        {
+          "id": "opt-b",
+          "label": "Trượt trên mặt sàn gạch hoa phẳng mịn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Trượt trên mặt tấm gỗ đã được bào nhẵn bóng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Trượt trên mặt sàn kính thủy tinh nhẵn bóng có bôi dầu nhớt"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Độ lớn của lực ma sát phụ thuộc vào tính chất gồ ghề, nhám của bề mặt tiếp xúc."
+      },
+      {
+        "level": 2,
+        "text": "Bề mặt càng gồ ghề, thô ráp thì lực ma sát trượt sinh ra càng lớn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "So sánh bề mặt tiếp xúc",
+        "body": "Tìm bề mặt có độ thô ráp lớn nhất trong 4 phương án."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Yếu tố ảnh hưởng ma sát",
+        "body": "Độ lớn lực ma sát trượt tỉ lệ với độ gồ ghề của bề mặt. Đường bê tông thô ráp có ma sát lớn nhất, sàn kính bôi dầu có ma sát nhỏ nhất."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Lực ma sát lớn nhất khi **Trượt trên mặt đường bê tông thô ráp, gồ ghề**."
+      }
+    ],
+    "finalSolution": "Mặt đường **bê tông thô ráp, gồ ghề** tạo ra lực ma sát trượt lớn nhất.",
+    "commonMistakes": [
+      {
+        "id": "chose-lubricated-glass",
+        "message": "Kính nhẵn bôi dầu nhớt có lực ma sát nhỏ nhất, rất trơn trượt."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b09-mcq-005",
+    "lessonId": "phy-g6-b09",
+    "sgkBaiSo": 44,
+    "skillIds": [
+      "friction-advantage-applications"
+    ],
+    "difficulty": 2,
+    "prompt": "Tại sao trên bề mặt lốp xe đạp, xe máy, ô tô và mặt dưới đế giày thể thao người ta luôn đúc các **rãnh gai và đường khía sâu**?",
+    "knowledge": [
+      "force.friction.types"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chỉ nhằm mục đích trang trí cho chiếc xe trông đẹp hơn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Để làm giảm lực ma sát giúp xe chạy nhanh hơn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Để giảm bớt lượng cao su sản xuất nhằm tiết kiệm chi phí"
+        },
+        {
+          "id": "opt-d",
+          "label": "Để làm tăng lực ma sát giúp xe bám đường tốt hơn và tránh bị trơn trượt khi di chuyển"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hãy tưởng tượng khi đi một đôi giày đế mòn nhẵn trên sàn gạch ướt thì điều gì sẽ xảy ra."
+      },
+      {
+        "level": 2,
+        "text": "Rãnh khía làm bề mặt gồ ghề hơn, giúp tăng lực ma sát bám đường an toàn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Ý nghĩa kỹ thuật của rãnh khía",
+        "body": "Mục đích tạo gai và rãnh sâu trên lốp xe và đế giày."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Ứng dụng tăng ma sát có lợi",
+        "body": "Các rãnh khía tăng độ bám và tăng lực ma sát giữa lốp/đế giày với mặt đường, giúp xe phanh an toàn và người không bị trượt ngã khi trời mưa."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Mục đích là **Để làm tăng lực ma sát giúp xe bám đường tốt hơn và tránh bị trơn trượt**."
+      }
+    ],
+    "finalSolution": "Rãnh khía trên lốp xe nhằm **tăng lực ma sát** giúp xe bám đường an toàn.",
+    "commonMistakes": [
+      {
+        "id": "thought-decrease-friction",
+        "message": "Rãnh gai làm tăng độ gồ ghề nên làm TĂNG ma sát, không phải làm giảm ma sát."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b09-mcq-006",
+    "lessonId": "phy-g6-b09",
+    "sgkBaiSo": 44,
+    "skillIds": [
+      "friction-reduce-harmful"
+    ],
+    "difficulty": 3,
+    "prompt": "Người ta thường tra dầu nhớt định kì vào xích xe đạp và các ổ trục quay của quạt điện nhằm mục đích chính là gì?",
+    "knowledge": [
+      "force.friction.types"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tăng trọng lượng của các chi tiết máy"
+        },
+        {
+          "id": "opt-b",
+          "label": "Làm mát các bộ phận bằng cách tạo ra phản ứng bay hơi"
+        },
+        {
+          "id": "opt-c",
+          "label": "Làm giảm lực ma sát có hại, chống mòn xích líp và giúp các bộ phận quay trơn tru, nhẹ nhàng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Làm tăng ma sát để xích bám chặt vào đĩa xích hơn"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Xích xe đạp khô dầu sẽ kêu cót két, đạp rất nặng và nhanh bị mòn đứt."
+      },
+      {
+        "level": 2,
+        "text": "Dầu nhớt tạo một lớp màng bôi trơn giữa các mắt xích, làm giảm ma sát trượt có hại."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục đích của việc bôi trơn",
+        "body": "Tra dầu nhớt vào máy móc là biện pháp giảm ma sát có hại phổ biến nhất."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Biện pháp giảm ma sát",
+        "body": "Dầu nhớt giúp bề mặt kim loại tiếp xúc trơn tru, giảm đáng kể lực ma sát trượt cản trở chuyển động, chống mài mòn và tiết kiệm sức đạp."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Mục đích là **Làm giảm lực ma sát có hại, chống mòn xích líp và giúp các bộ phận quay trơn tru, nhẹ nhàng**."
+      }
+    ],
+    "finalSolution": "Tra dầu nhớt nhằm **giảm ma sát có hại**, hạn chế hao mòn và giúp máy chuyển động trơn tru.",
+    "commonMistakes": [
+      {
+        "id": "thought-increase-friction",
+        "message": "Tra dầu nhớt làm bề mặt trơn nhẵn nên làm GIẢM ma sát, không phải tăng ma sát."
+      }
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "lessonId": "phy-g6-b13",
+  "nodeId": "phy-g6-b13-theory",
+  "title": "Lý thuyết: Sự chuyển hóa năng lượng",
+  "subtitle": "Bài 48 SGK Khoa học tự nhiên 6 (Kết nối tri thức)",
+  "sgkBaiSo": 48,
+  "estimatedMinutes": 2,
+  "description": "Hiểu rõ sự biến đổi qua lại giữa các dạng năng lượng và định luật bảo toàn năng lượng trong tự nhiên.",
+  "cards": [
+    {
+      "id": "card-1",
+      "title": "1. Sự chuyển hóa giữa các dạng năng lượng",
+      "badge": "Chuyển hóa năng lượng",
+      "badgeColor": "emerald",
+      "content": "Năng lượng không bao giờ tồn tại cố định ở một dạng duy nhất mà có thể biến đổi liên tục từ dạng này sang dạng khác trong mọi hoạt động:",
+      "bulletPoints": [
+        "Đèn pin: Hóa năng (trong pin) → Điện năng → Quang năng (chiếu sáng) và Nhiệt năng (đèn ấm lên).",
+        "Quạt điện: Điện năng → Cơ năng (cánh quạt quay tạo gió mát) và Nhiệt năng (mô tơ nóng).",
+        "Bàn là, nồi cơm điện: Điện năng → Nhiệt năng.",
+        "Cơ thể người: Hóa năng (trong thức ăn) → Động năng (chạy nhảy, làm việc) và Nhiệt năng (giữ ấm thân nhiệt 37 °C).",
+        "Thả rơi quả bóng từ trên cao: Thế năng hấp dẫn (ở trên cao) → Động năng (rơi nhanh dần về phía mặt đất)."
+      ],
+      "callout": "🔄 Sơ đồ tư duy: Hóa năng / Điện năng → Cơ năng + Nhiệt năng + Quang năng."
+    },
+    {
+      "id": "card-2",
+      "title": "2. Định luật bảo toàn năng lượng",
+      "badge": "Định luật cơ bản vũ trụ",
+      "badgeColor": "amber",
+      "content": "Một trong những định luật vĩ đại và nền tảng nhất của vật lý học:",
+      "formulaExample": "Năng lượng ban đầu = Tổng các dạng năng lượng chuyển hóa",
+      "bulletPoints": [
+        "Nội dung định luật: Năng lượng không tự sinh ra và cũng không tự mất đi, nó chỉ chuyển hóa từ dạng này sang dạng khác hoặc truyền từ vật này sang vật khác.",
+        "Hệ quả: Tổng toàn bộ lượng năng lượng trước và sau bất kỳ quá trình biến đổi nào luôn luôn bằng nhau (không đổi).",
+        "Ý nghĩa thực tế: Không bao giờ có cỗ máy vĩnh cửu có thể tự hoạt động sinh công mà không cần nạp năng lượng (điện, xăng, gió, nước...) từ bên ngoài."
+      ],
+      "callout": "⚖️ Ghi nhớ: Năng lượng luôn được BẢO TOÀN — không tự nhiên sinh ra, không tự biến mất!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi thả rơi một quả bóng từ trên cao xuống mặt đất (bỏ qua sức cản không khí), sự chuyển hóa năng lượng nào chủ yếu diễn ra?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Động năng chuyển hóa thành thế năng hấp dẫn",
+        "correct": false
+      },
+      {
+        "id": "opt-b",
+        "text": "Thế năng hấp dẫn chuyển hóa thành động năng",
+        "correct": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Hóa năng chuyển hóa thành điện năng",
+        "correct": false
+      },
+      {
+        "id": "opt-d",
+        "text": "Điện năng chuyển hóa thành quang năng",
+        "correct": false
+      }
+    ],
+    "explanation": "Khi rơi xuống, độ cao của quả bóng giảm dần (thế năng hấp dẫn giảm) trong khi tốc độ rơi tăng nhanh dần (động năng tăng). Do đó thế năng hấp dẫn đã chuyển hóa thành động năng."
+  }
+}

@@ -1,0 +1,403 @@
+[
+  {
+    "id": "phy-g6-b18-mcq-001",
+    "lessonId": "phy-g6-b18",
+    "sgkBaiSo": 53,
+    "skillIds": [
+      "moon-light-reflection"
+    ],
+    "difficulty": 1,
+    "prompt": "Vì sao ban đêm chúng ta có thể nhìn thấy Mặt Trăng tỏa sáng dịu mát trên bầu trời?",
+    "knowledge": [
+      "astro.moon.phases"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Mặt Trăng là một ngôi sao tự phát ra ánh sáng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Mặt Trăng phản xạ ánh sáng từ Mặt Trời chiếu tới"
+        },
+        {
+          "id": "opt-c",
+          "label": "Bầu khí quyển của Mặt Trăng tự phát quang"
+        },
+        {
+          "id": "opt-d",
+          "label": "Mặt Trăng hấp thụ ánh sáng từ Trái Đất rồi phát lại"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mặt Trăng là vệ tinh đất đá nguội, không có phản ứng nhiệt hạch như Mặt Trời."
+      },
+      {
+        "level": 2,
+        "text": "Mặt Trăng chỉ phản chiếu lại ánh sáng của Mặt Trời chiếu vào bề mặt của nó."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất vật lý của Mặt Trăng",
+        "body": "Mặt Trăng là một khối đất đá rắn, nguội lạnh, không thể tự sinh ra ánh sáng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế nhìn thấy vật sáng",
+        "body": "Chúng ta nhìn thấy Mặt Trăng là nhờ ánh sáng từ Mặt Trời chiếu vào bề mặt Mặt Trăng rồi phản xạ truyền tới mắt người quan sát trên Trái Đất."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Mặt Trăng phản xạ ánh sáng từ Mặt Trời chiếu tới**."
+      }
+    ],
+    "finalSolution": "Mặt Trăng nhìn thấy được là nhờ **phản xạ ánh sáng từ Mặt Trời**.",
+    "commonMistakes": [
+      {
+        "id": "star-mistake",
+        "message": "Mặt Trăng không phải là một ngôi sao và không tự phát sáng!",
+        "trapAnswers": [
+          "opt-a"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b18-mcq-002",
+    "lessonId": "phy-g6-b18",
+    "sgkBaiSo": 53,
+    "skillIds": [
+      "moon-phases-recognition"
+    ],
+    "difficulty": 1,
+    "prompt": "Vào ngày mùng 1 âm lịch (ngày đầu tháng âm lịch), hình dạng nhìn thấy của Mặt Trăng từ Trái Đất như thế nào?",
+    "knowledge": [
+      "astro.moon.phases"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Trăng tròn vành vạnh"
+        },
+        {
+          "id": "opt-b",
+          "label": "Không nhìn thấy Mặt Trăng (Không Trăng / Trăng non)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Trăng bán nguyệt (nửa vầng trăng)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Trăng khuyết"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ngày đầu tháng âm lịch, nửa tối của Mặt Trăng quay trọn vẹn về phía Trái Đất."
+      },
+      {
+        "level": 2,
+        "text": "Ta gọi đó là hiện tượng 'Không Trăng' (Trăng non / Trăng tối)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Vị trí ngày mùng 1 âm lịch",
+        "body": "Mặt Trăng nằm giữa Mặt Trời và Trái Đất."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phần bề mặt chiếu sáng",
+        "body": "Nửa bán cầu được Mặt Trời chiếu sáng hướng về phía Mặt Trời, nửa tối hướng hoàn toàn về phía Trái Đất."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Từ Trái Đất người quan sát **không nhìn thấy Mặt Trăng (Không Trăng)**."
+      }
+    ],
+    "finalSolution": "Vào ngày mùng 1 âm lịch, hình dạng nhìn thấy là **Không Trăng**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b18-order-003",
+    "lessonId": "phy-g6-b18",
+    "sgkBaiSo": 53,
+    "skillIds": [
+      "moon-cycle-sequence"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp các hình dạng nhìn thấy của Mặt Trăng theo đúng trình tự thời gian diễn ra từ đầu tháng âm lịch đến giữa tháng (ngày Rằm):",
+    "knowledge": [
+      "astro.moon.phases"
+    ],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Không Trăng (mùng 1 âm lịch)",
+        "Trăng lưỡi liềm đầu tháng (khoảng mùng 3 - 4)",
+        "Trăng bán nguyệt đầu tháng (khoảng mùng 7 - 8)",
+        "Trăng khuyết đầu tháng (khoảng mùng 11 - 12)",
+        "Trăng tròn (Rằm 15 âm lịch)"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khởi đầu tháng là Không Trăng, sau đó đĩa sáng tăng dần: lưỡi liềm -> bán nguyệt -> khuyết -> tròn."
+      },
+      {
+        "level": 2,
+        "text": "Kết thúc nửa đầu tháng vào ngày Rằm với Trăng tròn vành vạnh."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Chu kỳ pha Mặt Trăng nửa đầu tháng",
+        "body": "Xét tiến trình từ ngày mùng 1 đến ngày Rằm 15 âm lịch."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy luật đĩa sáng tăng dần",
+        "body": "Diện tích đĩa sáng nhìn thấy tăng dần từ 0% đến 100%: 1. Không Trăng -> 2. Trăng lưỡi liềm -> 3. Trăng bán nguyệt đầu tháng -> 4. Trăng khuyết đầu tháng -> 5. Trăng tròn."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Sắp xếp theo thứ tự chuẩn từ mùng 1 tới ngày Rằm."
+      }
+    ],
+    "finalSolution": "Thứ tự chuẩn: **Không Trăng → Trăng lưỡi liềm đầu tháng → Trăng bán nguyệt đầu tháng → Trăng khuyết đầu tháng → Trăng tròn**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b18-tf-004",
+    "lessonId": "phy-g6-b18",
+    "sgkBaiSo": 53,
+    "skillIds": [
+      "moon-nature-true-false"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy đánh giá tính Đúng hoặc Sai cho mỗi nhận định dưới đây về Mặt Trăng:",
+    "knowledge": [
+      "astro.moon.phases"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "stmt-1",
+          "text": "Mặt Trăng là vệ tinh tự nhiên duy nhất của Trái Đất.",
+          "correct": true
+        },
+        {
+          "id": "stmt-2",
+          "text": "Khoảng thời gian để Mặt Trăng hoàn thành một chu kỳ tuần trăng là khoảng 1 tháng âm lịch (29,5 ngày).",
+          "correct": true
+        },
+        {
+          "id": "stmt-3",
+          "text": "Nguyên nhân thay đổi hình dạng Mặt Trăng là do Trái Đất che khuất Mặt Trăng vào mọi đêm trong tháng.",
+          "correct": false
+        },
+        {
+          "id": "stmt-4",
+          "text": "Tại bất kỳ thời điểm nào, Mặt Trời luôn luôn chiếu sáng một nửa bán cầu của Mặt Trăng.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trái Đất che khuất Mặt Trăng chỉ là hiện tượng Nguyệt thực (hiếm khi xảy ra), không phải nguyên nhân pha Mặt Trăng hàng ngày."
+      },
+      {
+        "level": 2,
+        "text": "Pha Mặt Trăng là do góc nhìn phần được chiếu sáng thay đổi khi Mặt Trăng quay quanh Trái Đất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xem xét từng nhận định",
+        "body": "Phân tích 4 nhận định về bản chất vệ tinh, chu kỳ tuần trăng, nguyên nhân pha trăng và sự chiếu sáng của Mặt Trời."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Bản chất khoa học",
+        "body": "Mặt Trăng là vệ tinh duy nhất của Trái Đất (nhận định 1 đúng). Chu kỳ tuần trăng là 29,5 ngày (nhận định 2 đúng). Nguyên nhân pha Mặt Trăng là do vị trí tương đối giữa Mặt Trời - Trái Đất - Mặt Trăng, không phải do Trái Đất che khuất (nhận định 3 sai). Mặt Trời luôn chiếu sáng 1 nửa hình cầu của Mặt Trăng (nhận định 4 đúng)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng/Sai",
+        "body": "Nhận định 1, 2, 4: Đúng · Nhận định 3: Sai."
+      }
+    ],
+    "finalSolution": "Câu 1: Đúng · Câu 2: Đúng · Câu 3: Sai · Câu 4: Đúng.",
+    "commonMistakes": [
+      {
+        "id": "eclipse-confusion",
+        "message": "Nhiều bạn nhầm lẫn giữa hiện tượng Nguyệt thực (Trái Đất che khuất Mặt Trăng) với các pha Mặt Trăng hàng ngày!"
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b18-match-005",
+    "lessonId": "phy-g6-b18",
+    "sgkBaiSo": 53,
+    "skillIds": [
+      "moon-dates-matching"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy ghép mỗi mốc thời gian âm lịch ở cột bên trái với hình dạng nhìn thấy tương ứng của Mặt Trăng ở cột bên phải:",
+    "knowledge": [
+      "astro.moon.phases"
+    ],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Ngày mùng 1 âm lịch",
+          "right": "Không Trăng (Trăng tối)"
+        },
+        {
+          "left": "Khoảng mùng 7 - 8 âm lịch",
+          "right": "Trăng bán nguyệt đầu tháng"
+        },
+        {
+          "left": "Ngày Rằm (15 âm lịch)",
+          "right": "Trăng tròn"
+        },
+        {
+          "left": "Khoảng ngày 22 - 23 âm lịch",
+          "right": "Trăng bán nguyệt cuối tháng"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mùng 1 là Không Trăng; Rằm 15 là Trăng tròn."
+      },
+      {
+        "level": 2,
+        "text": "Mùng 7 - 8 là nửa trăng đầu tháng; ngày 22 - 23 là nửa trăng cuối tháng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 mốc âm lịch",
+        "body": "Mùng 1 (bắt đầu chu kỳ), mùng 7-8 (1/4 chu kỳ), ngày 15 (1/2 chu kỳ), ngày 22-23 (3/4 chu kỳ)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Liên hệ hình dạng tuần trăng",
+        "body": "Mùng 1 -> Không Trăng; mùng 7-8 -> Bán nguyệt đầu tháng (Thượng huyền); ngày 15 -> Trăng tròn (Rằm); ngày 22-23 -> Bán nguyệt cuối tháng (Hạ huyền)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận ghép cặp",
+        "body": "Ghép nối thành công 4 cặp ngày âm lịch và pha Mặt Trăng tương ứng."
+      }
+    ],
+    "finalSolution": "Mùng 1 ↔ Không Trăng · Mùng 7-8 ↔ Trăng bán nguyệt đầu tháng · Rằm 15 ↔ Trăng tròn · Ngày 22-23 ↔ Trăng bán nguyệt cuối tháng.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b18-multi-006",
+    "lessonId": "phy-g6-b18",
+    "sgkBaiSo": 53,
+    "skillIds": [
+      "moon-characteristics-multi"
+    ],
+    "difficulty": 3,
+    "prompt": "Những phát biểu nào sau đây là **đúng** khi nói về Mặt Trăng? (Chọn tất cả các đáp án đúng)",
+    "knowledge": [
+      "astro.moon.phases"
+    ],
+    "answer": {
+      "kind": "mcq-multi",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Mặt Trăng là vệ tinh tự nhiên quay xung quanh Trái Đất"
+        },
+        {
+          "id": "opt-b",
+          "label": "Ánh trăng ta nhìn thấy là ánh sáng Mặt Trời phản chiếu từ bề mặt Mặt Trăng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hình dạng nhìn thấy của Mặt Trăng thay đổi theo chu kỳ gọi là tuần trăng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khi ở pha Không Trăng, nửa tối của Mặt Trăng hướng về phía Trái Đất"
+        },
+        {
+          "id": "opt-e",
+          "label": "Vào ngày Rằm, Mặt Trăng tự phát ra ánh sáng rực rỡ nhất trong tháng"
+        }
+      ],
+      "correctIds": [
+        "opt-a",
+        "opt-b",
+        "opt-c",
+        "opt-d"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mặt Trăng không bao giờ tự phát sáng, kể cả trong đêm Rằm."
+      },
+      {
+        "level": 2,
+        "text": "Đêm Rằm ta thấy trăng tròn vì toàn bộ nửa được Mặt Trời chiếu sáng hướng về phía chúng ta."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xét từng phương án",
+        "body": "Đánh giá 5 phát biểu về vị trí vệ tinh, phản xạ ánh sáng, tuần trăng, khả năng tự phát sáng đêm Rằm và pha Không Trăng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu kiến thức SGK",
+        "body": "Phát biểu a, b, c, e hoàn toàn chính xác theo Bài 53 SGK KNTT. Phát biểu d sai vì Mặt Trăng không tự phát sáng, nó chỉ nhận và phản chiếu ánh sáng Mặt Trời."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận đáp án đúng",
+        "body": "Chọn 4 phương án đúng: a, b, c, e."
+      }
+    ],
+    "finalSolution": "Các phát biểu đúng: **Mặt Trăng là vệ tinh của Trái Đất**, **Ánh trăng là ánh sáng Mặt Trời phản chiếu**, **Hình dạng thay đổi theo tuần trăng**, và **Pha Không Trăng có nửa tối hướng về Trái Đất**.",
+    "commonMistakes": [
+      {
+        "id": "moon-glows-itself",
+        "message": "Dù trăng Rằm rất sáng nhưng Mặt Trăng vẫn chỉ là vật phản chiếu ánh sáng, không tự phát sáng!"
+      }
+    ]
+  }
+]

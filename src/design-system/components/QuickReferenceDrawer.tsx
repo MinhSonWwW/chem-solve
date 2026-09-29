@@ -6,7 +6,78 @@ import { Formula } from './Formula';
 export interface QuickReferenceDrawerProps {
   isOpen: boolean;
   onClose: () => void;
+  subject?: 'chem' | 'physics';
 }
+
+interface PhysicsFormula {
+  category: string;
+  name: string;
+  eq: string;
+  note: string;
+}
+
+const PHYSICS_FORMULAS: PhysicsFormula[] = [
+  // ── Cơ học & Chuyển động (Lớp 6, 7, 8, 9) ──
+  { category: 'Cơ học', name: 'Tốc độ chuyển động', eq: 'v = s / t', note: 's: quãng đường (m hoặc km), t: thời gian (s hoặc h), v: tốc độ (m/s hoặc km/h). 1 m/s = 3,6 km/h' },
+  { category: 'Cơ học', name: 'Khối lượng riêng & Trọng lượng riêng', eq: 'D = m / V  ;  d = P / V = 10 × D', note: 'm: khối lượng (kg), V: thể tích (m³), D: kg/m³, d: N/m³' },
+  { category: 'Cơ học', name: 'Trọng lượng theo khối lượng', eq: 'P = 10 × m', note: 'm: khối lượng (kg), P: trọng lượng (N). 1 kg = 1000 g' },
+  { category: 'Cơ học', name: 'Độ dãn của lò xo', eq: 'Δl = l - l₀', note: 'l: chiều dài khi dãn, l₀: chiều dài tự nhiên. Độ dãn tỉ lệ thuận với khối lượng treo' },
+  { category: 'Cơ học', name: 'Công cơ học', eq: 'A = F × s', note: 'F: lực tác dụng cùng hướng chuyển động (N), s: quãng đường dịch chuyển (m), A: công cơ học (J). 1 kJ = 1000 J' },
+  { category: 'Cơ học', name: 'Công suất cơ học', eq: 'P = A / t = F × v', note: 'A: công (J), t: thời gian thực hiện công (s), P: công suất (W hoặc J/s). 1 kW = 1000 W' },
+  { category: 'Cơ học', name: 'Động năng', eq: 'Wđ = ½ × m × v²', note: 'm: khối lượng (kg), v: vận tốc (m/s), Wđ: động năng (J). Động năng phụ thuộc vào khối lượng và bình phương vận tốc' },
+  { category: 'Cơ học', name: 'Thế năng trọng trường', eq: 'Wt = P × h = 10 × m × h', note: 'm: khối lượng (kg), h: độ cao so với mốc thế năng (m), Wt: thế năng trọng trường (J)' },
+  { category: 'Cơ học', name: 'Cơ năng & Bảo toàn cơ năng', eq: 'W = Wđ + Wt = const', note: 'Trong quá trình chuyển động khi bỏ qua ma sát và lực cản, tổng động năng và thế năng luôn được bảo toàn' },
+  { category: 'Cơ học', name: 'Hiệu suất máy móc / Động cơ', eq: 'H = (A_ich / A_toan_phan) × 100%', note: 'A_ich: công có ích (J), A_toan_phan: công toàn phần tiêu hao (J). Luôn có H < 100%' },
+
+  // ── Áp suất & Lực đẩy chất lưu ──
+  { category: 'Chất lưu', name: 'Áp suất chất rắn', eq: 'p = F / S', note: 'F: áp lực vuông góc với mặt bị ép (N), S: diện tích bị ép (m²), p: áp suất (Pa = N/m²)' },
+  { category: 'Chất lưu', name: 'Áp suất chất lỏng', eq: 'p = d × h = 10 × D × h', note: 'd: trọng lượng riêng chất lỏng (N/m³), h: độ sâu tính từ mặt thoáng (m)' },
+  { category: 'Chất lưu', name: 'Lực đẩy Ác-si-mét', eq: 'F_A = d × V = 10 × D × V', note: 'd: trọng lượng riêng chất lỏng (N/m³), V: thể tích phần vật chìm trong chất lỏng (m³)' },
+
+  // ── Nhiệt học (Lớp 8, 9) ──
+  { category: 'Nhiệt học', name: 'Quy đổi nhiệt độ Celsius sang Kelvin', eq: 'T (K) = t (°C) + 273,15', note: '0 K là độ không tuyệt đối (-273,15 °C). 0 °C = 273,15 K; 100 °C = 373,15 K' },
+  { category: 'Nhiệt học', name: 'Nhiệt lượng thu vào / toả ra', eq: 'Q = m × c × Δt', note: 'm: khối lượng (kg), c: nhiệt dung riêng (J/kg.K), Δt = |t₂ - t₁|: độ biến thiên nhiệt độ (°C hoặc K)' },
+  { category: 'Nhiệt học', name: 'Phương trình cân bằng nhiệt', eq: 'Q_toa = Q_thu', note: 'Tổng nhiệt lượng các vật toả ra bằng tổng nhiệt lượng các vật thu vào' },
+  { category: 'Nhiệt học', name: 'Năng suất toả nhiệt nhiên liệu', eq: 'Q = q × m', note: 'q: năng suất toả nhiệt của nhiên liệu (J/kg), m: khối lượng nhiên liệu cháy hoàn toàn (kg)' },
+
+  // ── Điện học (Lớp 9) ──
+  { category: 'Điện học', name: 'Định luật Ohm (Đoạn mạch)', eq: 'I = U / R', note: 'U: hiệu điện thế (V), R: điện trở đoạn mạch (Ω), I: cường độ dòng điện (A)' },
+  { category: 'Điện học', name: 'Điện trở dây dẫn kim loại', eq: 'R = ρ × (l / S)', note: 'ρ: điện trở suất (Ω·m), l: chiều dài dây (m), S: tiết diện ngang (m²). Lưu ý 1 mm² = 10⁻⁶ m²' },
+  { category: 'Điện học', name: 'Đoạn mạch mắc nối tiếp', eq: 'I = I₁ = I₂ ; U = U₁ + U₂ ; R_tđ = R₁ + R₂', note: 'Hiệu điện thế phân phối tỉ lệ thuận với điện trở: U₁ / U₂ = R₁ / R₂' },
+  { category: 'Điện học', name: 'Đoạn mạch mắc song song', eq: 'U = U₁ = U₂ ; I = I₁ + I₂ ; 1/R_tđ = 1/R₁ + 1/R₂', note: 'Với 2 điện trở: R_tđ = (R₁ × R₂) / (R₁ + R₂). Cường độ tỉ lệ nghịch điện trở: I₁ / I₂ = R₂ / R₁' },
+  { category: 'Điện học', name: 'Công suất điện', eq: 'P = U × I = I² × R = U² / R', note: 'P: công suất tiêu thụ (W), U: hiệu điện thế (V), I: cường độ (A), R: điện trở (Ω)' },
+  { category: 'Điện học', name: 'Điện năng tiêu thụ (Định luật Jun - Len-xơ)', eq: 'A = Q = P × t = U × I × t = I² × R × t', note: 't: giây (s) → A tính theo Jun (J). 1 kWh = 1 số điện = 3 600 000 J = 3,6 MJ' },
+
+  // ── Điện từ & Quang học (Lớp 9) ──
+  { category: 'Điện từ', name: 'Tỉ số máy biến áp', eq: 'U₁ / U₂ = N₁ / N₂', note: 'U₁, N₁: HĐT và số vòng dây cuộn sơ cấp; U₂, N₂: HĐT và số vòng cuộn thứ cấp. N₂ > N₁: tăng áp' },
+  { category: 'Điện từ', name: 'Công suất hao phí do toả nhiệt', eq: 'P_hp = (R × P²) / U²', note: 'P: công suất cần truyền tải (W), U: HĐT đường dây (V), R: điện trở đường dây dẫn (Ω). Tăng U lên n lần → giảm P_hp n² lần' },
+  { category: 'Quang học', name: 'Định luật phản xạ ánh sáng', eq: 'i\' = i', note: 'Tia phản xạ nằm trong mặt phẳng tới. Góc phản xạ i\' bằng góc tới i' },
+  { category: 'Quang học', name: 'Công thức thấu kính (Ảnh thật)', eq: '1 / f = 1 / d + 1 / d\'', note: 'f: tiêu cự thấu kính (m), d: khoảng cách vật đến TK (m), d\': khoảng cách ảnh đến TK (m)' },
+  { category: 'Quang học', name: 'Tỉ lệ kích thước ảnh / vật', eq: 'A\'B\' / AB = d\' / d', note: 'A\'B\': chiều cao của ảnh, AB: chiều cao của vật, d\': khoảng cách ảnh, d: khoảng cách vật' },
+];
+
+const PHYSICS_UNITS = [
+  { qty: 'Chiều dài (l, s)', si: 'Mét (m)', conv: '1 km = 1000 m; 1 m = 100 cm = 1000 mm' },
+  { qty: 'Khối lượng (m)', si: 'Kilôgam (kg)', conv: '1 tấn = 1000 kg; 1 kg = 1000 g = 1 000 000 mg' },
+  { qty: 'Thời gian (t)', si: 'Giây (s)', conv: '1 giờ = 60 phút = 3600 giây; 1 phút = 60 giây' },
+  { qty: 'Lực (F, P)', si: 'Niutơn (N)', conv: 'Vật 100 g có trọng lượng ≈ 1 N; vật 1 kg có P = 10 N' },
+  { qty: 'Thể tích (V)', si: 'Mét khối (m³)', conv: '1 m³ = 1000 lít (L) = 1 000 000 cm³ (mL)' },
+  { qty: 'Nhiệt độ (T)', si: 'Kelvin (K), Celsius (°C)', conv: 'Thang Celsius (°C); Thang nhiệt động Kelvin (K)' },
+  { qty: 'Tốc độ (v)', si: 'Mét trên giây (m/s)', conv: '1 m/s = 3,6 km/h (VD: 54 km/h = 15 m/s)' },
+  { qty: 'Năng lượng (E, A)', si: 'Jun (J)', conv: '1 kJ = 1000 J; 1 cal ≈ 4,184 J ≈ 4,2 J; 1 kcal = 1000 cal' },
+  { qty: 'Công suất (P)', si: 'Oát (W)', conv: '1 kW = 1000 W; 1 MW = 1 000 000 W' },
+];
+
+const PHYSICS_CONSTANTS = [
+  { name: 'Gia tốc trọng trường Trái Đất', sym: 'g', val: '≈ 9,8 N/kg (làm tròn 10 N/kg)', note: 'Dùng để tính trọng lượng P = 10.m ở THCS' },
+  { name: 'Gia tốc trọng trường Mặt Trăng', sym: 'g_moon', val: '≈ 1/6 g_earth ≈ 1,63 N/kg', note: 'Trọng lượng trên Mặt Trăng chỉ bằng khoảng 1/6 trên Trái Đất' },
+  { name: 'Khối lượng riêng nước cất', sym: 'D_nước', val: '1000 kg/m³ = 1 g/cm³', note: '1 lít nước cất nặng đúng 1 kg' },
+  { name: 'Tốc độ ánh sáng trong chân không', sym: 'c', val: '≈ 300 000 km/s = 3 × 10⁸ m/s', note: 'Vận tốc lớn nhất trong vũ trụ' },
+  { name: 'Nhiệt độ sôi của nước (1 atm)', sym: 't_sôi', val: '100 °C = 373,15 K', note: 'Ở áp suất khí quyển tiêu chuẩn' },
+  { name: 'Nhiệt độ đóng băng của nước', sym: 't_đông', val: '0 °C = 273,15 K', note: 'Điểm chuẩn 0 của thang nhiệt độ Celsius' },
+  { name: 'Năm ánh sáng', sym: 'ly', val: '≈ 9 460 tỉ km', note: 'Quãng đường ánh sáng đi trong 1 năm chân không' },
+  { name: 'Khoảng cách Trái Đất - Mặt Trời', sym: '1 AU', val: '≈ 150 triệu km', note: 'Đơn vị thiên văn (AU), ánh sáng truyền mất ≈ 8 phút 20 giây' },
+];
 
 const ELEMENTS = [
   { sym: 'H', name: 'Hydrogen', vnName: 'Hiđro', m: 1, val: 'I' },
@@ -103,17 +174,29 @@ const SOLUBILITY_DATA: SolubilityEntry[] = [
 export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
   isOpen,
   onClose,
+  subject = 'chem',
 }) => {
-  const [tab, setTab] = useState<'elements' | 'solubility' | 'reactivity' | 'radicals' | 'formulas'>('elements');
+  const [chemTab, setChemTab] = useState<'elements' | 'solubility' | 'reactivity' | 'radicals' | 'formulas'>('elements');
+  const [phyTab, setPhyTab] = useState<'phy-formulas' | 'phy-units' | 'phy-constants'>('phy-formulas');
   const [search, setSearch] = useState('');
 
   if (!isOpen) return null;
+
+  const isPhy = subject === 'physics';
 
   const filteredElements = ELEMENTS.filter(
     (e) =>
       e.sym.toLowerCase().includes(search.toLowerCase()) ||
       e.name.toLowerCase().includes(search.toLowerCase()) ||
       e.vnName.toLowerCase().includes(search.toLowerCase())
+  );
+
+  const filteredPhyFormulas = PHYSICS_FORMULAS.filter(
+    (f) =>
+      f.name.toLowerCase().includes(search.toLowerCase()) ||
+      f.eq.toLowerCase().includes(search.toLowerCase()) ||
+      f.note.toLowerCase().includes(search.toLowerCase()) ||
+      f.category.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
@@ -139,16 +222,16 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
           {/* Header */}
           <div className="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-900/95">
             <div className="flex items-center gap-2.5">
-              <span className="text-2xl">🧪</span>
+              <span className="text-2xl">{isPhy ? '⚡' : '🧪'}</span>
               <div>
                 <h3 className="text-base font-black text-slate-100 flex items-center gap-2">
-                  Sổ tay tra cứu Hóa học
-                  <span className="text-[10px] font-bold bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded-full border border-cyan-500/30">
-                    THCS 7-9
+                  {isPhy ? 'Sổ tay tra cứu Vật lý' : 'Sổ tay tra cứu Hóa học'}
+                  <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${isPhy ? 'bg-amber-500/20 text-amber-300 border-amber-500/30' : 'bg-cyan-500/20 text-cyan-300 border-cyan-500/30'}`}>
+                    THCS 6-9
                   </span>
                 </h3>
                 <p className="text-[11px] text-slate-400 font-medium">
-                  Nguyên tử khối, Bảng tính tan, Dãy hoạt động và Công thức
+                  {isPhy ? 'Công thức Cơ - Nhiệt - Điện, Hệ đơn vị SI & Hằng số vật lý' : 'Nguyên tử khối, Bảng tính tan, Dãy hoạt động và Công thức'}
                 </p>
               </div>
             </div>
@@ -161,66 +244,104 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
           </div>
 
           {/* Navigation Tabs */}
-          <div className="flex border-b border-slate-800 bg-slate-950/60 p-1.5 gap-1 text-[11px] font-bold overflow-x-auto select-none no-scrollbar">
-            <button
-              onClick={() => setTab('elements')}
-              className={`py-2 px-3 rounded-xl flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer ${
-                tab === 'elements'
-                  ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40'
-                  : 'text-slate-400 hover:text-slate-200'
-              }`}
-            >
-              <Atom className="w-3.5 h-3.5" />
-              Nguyên tố (M)
-            </button>
-            <button
-              onClick={() => setTab('solubility')}
-              className={`py-2 px-3 rounded-xl flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer ${
-                tab === 'solubility'
-                  ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40'
-                  : 'text-slate-400 hover:text-slate-200'
-              }`}
-            >
-              <Droplets className="w-3.5 h-3.5" />
-              Bảng tính tan
-            </button>
-            <button
-              onClick={() => setTab('reactivity')}
-              className={`py-2 px-3 rounded-xl flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer ${
-                tab === 'reactivity'
-                  ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40'
-                  : 'text-slate-400 hover:text-slate-200'
-              }`}
-            >
-              <Zap className="w-3.5 h-3.5" />
-              Dãy hoạt động
-            </button>
-            <button
-              onClick={() => setTab('radicals')}
-              className={`py-2 px-3 rounded-xl flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer ${
-                tab === 'radicals'
-                  ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40'
-                  : 'text-slate-400 hover:text-slate-200'
-              }`}
-            >
-              <Scale className="w-3.5 h-3.5" />
-              Hóa trị gốc
-            </button>
-            <button
-              onClick={() => setTab('formulas')}
-              className={`py-2 px-3 rounded-xl flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer ${
-                tab === 'formulas'
-                  ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40'
-                  : 'text-slate-400 hover:text-slate-200'
-              }`}
-            >
-              <Calculator className="w-3.5 h-3.5" />
-              Công thức
-            </button>
-          </div>
+          {isPhy ? (
+            <div className="flex border-b border-slate-800 bg-slate-950/60 p-1.5 gap-1 text-[11px] font-bold select-none">
+              <button
+                onClick={() => setPhyTab('phy-formulas')}
+                className={`py-2 px-3 rounded-xl flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer ${
+                  phyTab === 'phy-formulas'
+                    ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40'
+                    : 'text-slate-400 hover:text-slate-200'
+                }`}
+              >
+                <Calculator className="w-3.5 h-3.5" />
+                Công thức
+              </button>
+              <button
+                onClick={() => setPhyTab('phy-units')}
+                className={`py-2 px-3 rounded-xl flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer ${
+                  phyTab === 'phy-units'
+                    ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40'
+                    : 'text-slate-400 hover:text-slate-200'
+                }`}
+              >
+                <Scale className="w-3.5 h-3.5" />
+                Đơn vị SI
+              </button>
+              <button
+                onClick={() => setPhyTab('phy-constants')}
+                className={`py-2 px-3 rounded-xl flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer ${
+                  phyTab === 'phy-constants'
+                    ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40'
+                    : 'text-slate-400 hover:text-slate-200'
+                }`}
+              >
+                <Zap className="w-3.5 h-3.5" />
+                Hằng số chuẩn
+              </button>
+            </div>
+          ) : (
+            <div className="flex border-b border-slate-800 bg-slate-950/60 p-1.5 gap-1 text-[11px] font-bold overflow-x-auto select-none no-scrollbar">
+              <button
+                onClick={() => setChemTab('elements')}
+                className={`py-2 px-3 rounded-xl flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer ${
+                  chemTab === 'elements'
+                    ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40'
+                    : 'text-slate-400 hover:text-slate-200'
+                }`}
+              >
+                <Atom className="w-3.5 h-3.5" />
+                Nguyên tố (M)
+              </button>
+              <button
+                onClick={() => setChemTab('solubility')}
+                className={`py-2 px-3 rounded-xl flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer ${
+                  chemTab === 'solubility'
+                    ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40'
+                    : 'text-slate-400 hover:text-slate-200'
+                }`}
+              >
+                <Droplets className="w-3.5 h-3.5" />
+                Bảng tính tan
+              </button>
+              <button
+                onClick={() => setChemTab('reactivity')}
+                className={`py-2 px-3 rounded-xl flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer ${
+                  chemTab === 'reactivity'
+                    ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40'
+                    : 'text-slate-400 hover:text-slate-200'
+                }`}
+              >
+                <Zap className="w-3.5 h-3.5" />
+                Dãy hoạt động
+              </button>
+              <button
+                onClick={() => setChemTab('radicals')}
+                className={`py-2 px-3 rounded-xl flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer ${
+                  chemTab === 'radicals'
+                    ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40'
+                    : 'text-slate-400 hover:text-slate-200'
+                }`}
+              >
+                <Scale className="w-3.5 h-3.5" />
+                Hóa trị gốc
+              </button>
+              <button
+                onClick={() => setChemTab('formulas')}
+                className={`py-2 px-3 rounded-xl flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer ${
+                  chemTab === 'formulas'
+                    ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40'
+                    : 'text-slate-400 hover:text-slate-200'
+                }`}
+              >
+                <Calculator className="w-3.5 h-3.5" />
+                Công thức
+              </button>
+            </div>
+          )}
 
-          {/* Search bar (for elements) */}
-          {tab === 'elements' && (
+          {/* Search bar (for chem elements) */}
+          {!isPhy && chemTab === 'elements' && (
             <div className="p-2.5 border-b border-slate-800/80 bg-slate-900/50">
               <div className="relative text-slate-100">
                 <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" />
@@ -235,10 +356,86 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
             </div>
           )}
 
+          {/* Search bar (for physics formulas) */}
+          {isPhy && phyTab === 'phy-formulas' && (
+            <div className="p-2.5 border-b border-slate-800/80 bg-slate-900/50">
+              <div className="relative text-slate-100">
+                <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-amber-500/70" />
+                <input
+                  type="text"
+                  placeholder="Tìm công thức (vd: công, động năng, ôm, điện trở, thấu kính...)"
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  className="w-full bg-slate-950/80 border border-slate-700/80 rounded-xl pl-9 pr-3 py-1.5 text-xs placeholder:text-slate-500 outline-none focus:ring-1 focus:ring-amber-500"
+                />
+              </div>
+            </div>
+          )}
+
           {/* Content Area */}
           <div className="p-3 overflow-y-auto flex-1 space-y-3">
+            {/* ── PHYSICS TABS ── */}
+            {isPhy && phyTab === 'phy-formulas' && (
+              <div className="space-y-2.5">
+                {filteredPhyFormulas.map((f, i) => (
+                  <div key={i} className="p-3 rounded-2xl bg-slate-950/60 border border-slate-800 space-y-1.5 hover:border-amber-500/40 transition-colors">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="text-xs font-bold text-slate-200">{f.name}</span>
+                      <span className="text-[10px] font-black uppercase px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/30 shrink-0">
+                        {f.category}
+                      </span>
+                    </div>
+                    <div className="text-sm font-black text-amber-300 font-mono tracking-wide">{f.eq}</div>
+                    <div className="text-[11px] text-slate-400 leading-relaxed">{f.note}</div>
+                  </div>
+                ))}
+                {filteredPhyFormulas.length === 0 && (
+                  <div className="text-center py-6 text-xs text-slate-500">
+                    Không tìm thấy công thức phù hợp với từ khóa "{search}"
+                  </div>
+                )}
+              </div>
+            )}
+
+            {isPhy && phyTab === 'phy-units' && (
+              <div className="space-y-2">
+                <div className="p-3 rounded-2xl bg-amber-950/20 border border-amber-500/30 text-xs text-amber-200 leading-relaxed font-medium">
+                  💡 <strong>Quy tắc giải toán Vật lý:</strong> Luôn đổi tất cả các đại lượng về đơn vị chuẩn trong hệ SI trước khi thế số vào công thức tính toán.
+                </div>
+                {PHYSICS_UNITS.map((u, i) => (
+                  <div key={i} className="p-3 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                    <div>
+                      <span className="text-xs font-bold text-slate-200">{u.qty}</span>
+                      <div className="text-[11px] text-amber-300 font-mono mt-0.5">{u.conv}</div>
+                    </div>
+                    <span className="text-xs font-mono font-black text-slate-300 bg-slate-800/80 px-2.5 py-1 rounded-xl shrink-0 self-start sm:self-auto border border-slate-700">
+                      SI: {u.si}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {isPhy && phyTab === 'phy-constants' && (
+              <div className="space-y-2.5">
+                {PHYSICS_CONSTANTS.map((c, i) => (
+                  <div key={i} className="p-3 rounded-2xl bg-slate-950/60 border border-slate-800 space-y-1">
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs font-bold text-slate-200">{c.name}</span>
+                      <span className="text-xs font-mono font-black text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded-lg border border-amber-500/30">
+                        {c.sym}
+                      </span>
+                    </div>
+                    <div className="text-sm font-black text-emerald-400 font-mono">{c.val}</div>
+                    <div className="text-[11px] text-slate-400">{c.note}</div>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* ── CHEMISTRY TABS ── */}
             {/* 1. Tab Nguyên tố */}
-            {tab === 'elements' && (
+            {!isPhy && chemTab === 'elements' && (
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                 {filteredElements.map((el) => (
                   <div
@@ -265,7 +462,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
             )}
 
             {/* 2. Tab Bảng tính tan */}
-            {tab === 'solubility' && (
+            {!isPhy && chemTab === 'solubility' && (
               <div className="space-y-3">
                 {/* Legend bar */}
                 <div className="flex flex-wrap gap-2 text-[11px] p-2.5 rounded-xl bg-slate-950/70 border border-slate-800">
@@ -351,7 +548,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
             )}
 
             {/* 3. Tab Dãy hoạt động hóa học */}
-            {tab === 'reactivity' && (
+            {!isPhy && chemTab === 'reactivity' && (
               <div className="space-y-3">
                 {/* Mnemonic Banner */}
                 <div className="p-3 rounded-2xl bg-linear-to-r from-cyan-950/60 to-blue-950/60 border border-cyan-700/50">
@@ -419,7 +616,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
             )}
 
             {/* 4. Tab Hóa trị gốc */}
-            {tab === 'radicals' && (
+            {!isPhy && chemTab === 'radicals' && (
               <div className="grid grid-cols-2 gap-2">
                 {RADICALS.map((rad) => (
                   <div
@@ -442,7 +639,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
             )}
 
             {/* 5. Tab Công thức */}
-            {tab === 'formulas' && (
+            {!isPhy && chemTab === 'formulas' && (
               <div className="space-y-2">
                 {FORMULAS.map((f, i) => (
                   <div

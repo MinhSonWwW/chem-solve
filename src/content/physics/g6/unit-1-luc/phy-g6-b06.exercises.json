@@ -1,0 +1,384 @@
+[
+  {
+    "id": "phy-g6-b06-mcq-001",
+    "lessonId": "phy-g6-b06",
+    "sgkBaiSo": 41,
+    "skillIds": [
+      "force-representation-arrow"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong vật lý, người ta biểu diễn một lực tác dụng lên vật bằng hình vẽ nào sau đây?",
+    "knowledge": [
+      "force.unit.newton"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Một mũi tên có gốc, hướng và độ dài xác định"
+        },
+        {
+          "id": "opt-b",
+          "label": "Một đường cong hình sin lượn sóng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Một đoạn thẳng không có hướng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Một hình tròn có bán kính bất kì"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Lực vừa có điểm đặt, vừa có hướng (phương, chiều) và độ lớn nên cần một hình vẽ có hướng."
+      },
+      {
+        "level": 2,
+        "text": "Người ta dùng một mũi tên có gốc tại điểm đặt và chiều chỉ hướng của lực để biểu diễn lực."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận biết quy ước",
+        "body": "Câu hỏi kiểm tra quy ước biểu diễn lực trong chương trình KHTN 6."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc SGK",
+        "body": "Lực là một đại lượng vectơ, được biểu diễn bằng một mũi tên."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Lực được biểu diễn bằng **Một mũi tên có gốc, hướng và độ dài xác định**."
+      }
+    ],
+    "finalSolution": "Người ta dùng **một mũi tên** để biểu diễn lực.",
+    "commonMistakes": [
+      {
+        "id": "chose-segment",
+        "message": "Đoạn thẳng không có mũi tên chỉ hướng thì không thể biểu diễn được chiều tác dụng của lực."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b06-mcq-002",
+    "lessonId": "phy-g6-b06",
+    "sgkBaiSo": 41,
+    "skillIds": [
+      "force-arrow-elements"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi biểu diễn lực bằng mũi tên, **gốc của mũi tên** được đặt tại vị trí nào?",
+    "knowledge": [
+      "force.unit.newton"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tại tâm của Trái Đất"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tại đầu nhọn chỉ hướng của mũi tên"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tại bất kì điểm nào nằm ngoài không gian"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tại điểm đặt của lực tác dụng lên vật"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Lực tác dụng vào chỗ nào trên vật thì gốc mũi tên phải bắt đầu từ chỗ đó."
+      },
+      {
+        "level": 2,
+        "text": "Gốc của mũi tên là điểm đặt của lực trên vật chịu tác dụng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định ý nghĩa của gốc mũi tên",
+        "body": "Gốc mũi tên đại diện cho vị trí đặt lực."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Gốc của mũi tên biểu diễn lực phải được đặt tại điểm mà lực tác dụng lên vật (điểm đặt của lực)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Gốc mũi tên được đặt **Tại điểm đặt của lực tác dụng lên vật**."
+      }
+    ],
+    "finalSolution": "Gốc của mũi tên là **điểm đặt của lực trên vật**.",
+    "commonMistakes": [
+      {
+        "id": "confused-tip-origin",
+        "message": "Đầu nhọn chỉ hướng tác dụng của lực, còn gốc mới là điểm đặt của lực trên vật."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b06-calc-003",
+    "lessonId": "phy-g6-b06",
+    "sgkBaiSo": 41,
+    "skillIds": [
+      "force-scale-calculation"
+    ],
+    "difficulty": 2,
+    "prompt": "Một lực kéo được biểu diễn bằng một mũi tên dài 4 cm. Biết rằng quy ước tỉ xích trên hình vẽ là 1 cm ứng với 5 N. Độ lớn của lực kéo đó là bao nhiêu niutơn (N)?",
+    "knowledge": [
+      "force.unit.newton"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 20,
+      "unit": "N",
+      "decimals": 0
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mỗi 1 cm chiều dài tương ứng với 5 N. Mũi tên dài 4 cm thì độ lớn là bao nhiêu?"
+      },
+      {
+        "level": 2,
+        "text": "Lấy chiều dài mũi tên (4 cm) nhân với giá trị mỗi cm (5 N): 4 × 5 = ?"
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tóm tắt dữ kiện",
+        "body": "Chiều dài mũi tên $l = 4\\text{ cm}$. Tỉ xích: $1\\text{ cm} = 5\\text{ N}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính độ lớn lực",
+        "body": "Độ lớn của lực: $F = 4 \\times 5 = 20\\text{ N}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Độ lớn của lực kéo là **20 N**."
+      }
+    ],
+    "finalSolution": "Độ lớn của lực kéo là $4 \\times 5 =$ **20 N**.",
+    "commonMistakes": [
+      {
+        "id": "divided-scale",
+        "message": "Phải nhân chiều dài với giá trị tỉ xích (4 × 5 = 20 N), không phải làm phép chia."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b06-mcq-004",
+    "lessonId": "phy-g6-b06",
+    "sgkBaiSo": 41,
+    "skillIds": [
+      "force-description"
+    ],
+    "difficulty": 2,
+    "prompt": "Một người đang đẩy một thùng hàng trượt trên mặt sàn nằm ngang sang bên phải với độ lớn lực đẩy là 40 N. Cách mô tả nào sau đây về lực đẩy này là **đúng và đầy đủ nhất**?",
+    "knowledge": [
+      "force.unit.newton"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Điểm đặt tại bàn chân người đẩy, phương nằm ngang, chiều từ phải sang trái, độ lớn 40 N"
+        },
+        {
+          "id": "opt-b",
+          "label": "Điểm đặt trên thùng hàng, phương nằm ngang, chiều từ trái sang phải, độ lớn 40 N"
+        },
+        {
+          "id": "opt-c",
+          "label": "Điểm đặt trên sàn nhà, phương thẳng đứng, chiều từ trên xuống dưới, độ lớn 40 N"
+        },
+        {
+          "id": "opt-d",
+          "label": "Điểm đặt trên thùng hàng, phương thẳng đứng, chiều từ dưới lên trên, độ lớn 40 N"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Xác định rõ 4 yếu tố: vật chịu lực là thùng hàng, phương đẩy là ngang, chiều đẩy sang phải, độ lớn 40 N."
+      },
+      {
+        "level": 2,
+        "text": "Điểm đặt phải ở trên vật chịu tác dụng (thùng hàng), phương nằm ngang, chiều từ trái sang phải."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 yếu tố của lực",
+        "body": "Gốc: trên thùng hàng; Phương: nằm ngang; Chiều: từ trái sang phải; Độ lớn: 40 N."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu phương án",
+        "body": "Phương án B nêu đầy đủ và chuẩn xác cả 4 yếu tố đặc trưng của lực đẩy này."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Mô tả đúng là **Điểm đặt trên thùng hàng, phương nằm ngang, chiều từ trái sang phải, độ lớn 40 N**."
+      }
+    ],
+    "finalSolution": "Lực đẩy có **điểm đặt trên thùng hàng, phương nằm ngang, chiều từ trái sang phải, độ lớn 40 N**.",
+    "commonMistakes": [
+      {
+        "id": "wrong-object-point",
+        "message": "Điểm đặt của lực đẩy thùng hàng phải nằm trên thùng hàng, không phải trên chân người đẩy."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b06-calc-005",
+    "lessonId": "phy-g6-b06",
+    "sgkBaiSo": 41,
+    "skillIds": [
+      "force-scale-drawing-length"
+    ],
+    "difficulty": 2,
+    "prompt": "Để biểu diễn một lực nâng có độ lớn 50 N theo phương thẳng đứng, chiều từ dưới lên trên với tỉ xích quy ước 1 cm ứng với 10 N, ta cần vẽ đoạn mũi tên có độ dài bằng bao nhiêu cm?",
+    "knowledge": [
+      "force.unit.newton"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 5,
+      "unit": "cm",
+      "decimals": 0
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mỗi 10 N được biểu diễn bằng 1 cm. Muốn biểu diễn 50 N thì cần bao nhiêu cm?"
+      },
+      {
+        "level": 2,
+        "text": "Lấy tổng độ lớn (50 N) chia cho giá trị mỗi cm tỉ xích (10 N): 50 / 10 = ?"
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu",
+        "body": "Độ lớn lực $F = 50\\text{ N}$. Tỉ xích: $1\\text{ cm} = 10\\text{ N}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính độ dài mũi tên",
+        "body": "Độ dài mũi tên: $l = \\frac{50}{10} = 5\\text{ cm}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đoạn mũi tên cần vẽ dài **5 cm**."
+      }
+    ],
+    "finalSolution": "Cần vẽ mũi tên có độ dài là $50 : 10 =$ **5 cm**.",
+    "commonMistakes": [
+      {
+        "id": "multiplied-by-10",
+        "message": "Tìm độ dài mũi tên cần chia độ lớn cho tỉ xích (50 / 10 = 5 cm), không nhân thành 500 cm."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b06-mcq-006",
+    "lessonId": "phy-g6-b06",
+    "sgkBaiSo": 41,
+    "skillIds": [
+      "force-compare-vectors"
+    ],
+    "difficulty": 3,
+    "prompt": "Hai bạn An và Bình cùng kéo một chiếc xe kéo. Bạn An kéo với lực $F_1 = 30\\text{ N}$ sang hướng đông, bạn Bình kéo với lực $F_2 = 30\\text{ N}$ sang hướng tây. Nhận xét nào sau đây về hai lực này là **chính xác nhất**?",
+    "knowledge": [
+      "force.unit.newton"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hai lực này có cùng phương nằm ngang, cùng độ lớn nhưng ngược chiều nhau"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hai lực này cùng chiều về hướng bắc"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hai lực này có phương vuông góc với nhau"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hai lực này giống hệt nhau vì có cùng độ lớn 30 N"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hướng đông và hướng tây nằm trên cùng một đường thẳng (cùng phương) nhưng hướng ngược nhau."
+      },
+      {
+        "level": 2,
+        "text": "Cả hai lực đều có độ lớn 30 N, cùng phương ngang (trục đông - tây) nhưng ngược chiều nhau."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích hai lực",
+        "body": "$F_1 = 30\\text{ N}$ (hướng đông), $F_2 = 30\\text{ N}$ (hướng tây)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "So sánh các yếu tố",
+        "body": "Hướng đông và tây nằm trên cùng phương nằm ngang, ngược chiều nhau. Cả hai đều có độ lớn 30 N."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hai lực này **có cùng phương nằm ngang, cùng độ lớn nhưng ngược chiều nhau**."
+      }
+    ],
+    "finalSolution": "Hai lực có **cùng phương nằm ngang, cùng độ lớn (30 N) nhưng ngược chiều nhau**.",
+    "commonMistakes": [
+      {
+        "id": "thought-identical",
+        "message": "Hai lực chỉ giống hệt nhau khi cùng điểm đặt, cùng phương, cùng chiều và cùng độ lớn. Ngược chiều nhau thì không thể là giống hệt nhau."
+      }
+    ]
+  }
+]

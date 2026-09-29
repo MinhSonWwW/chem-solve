@@ -1,0 +1,62 @@
+{
+  "lessonId": "phy-g6-b14",
+  "nodeId": "phy-g6-b14-theory",
+  "title": "Lý thuyết: Năng lượng hao phí",
+  "subtitle": "Bài 49 SGK Khoa học tự nhiên 6 (Kết nối tri thức)",
+  "sgkBaiSo": 49,
+  "estimatedMinutes": 2,
+  "description": "Phân biệt năng lượng có ích và năng lượng hao phí trong các thiết bị đời sống, nguyên nhân sinh ra hao phí và các giải pháp hạn chế.",
+  "cards": [
+    {
+      "id": "card-1",
+      "title": "1. Năng lượng có ích và Năng lượng hao phí",
+      "badge": "Khái niệm phân loại",
+      "badgeColor": "emerald",
+      "content": "Trong thực tế, khi sử dụng bất kỳ thiết bị hay máy móc nào, năng lượng cung cấp ban đầu luôn bị phân tách thành hai phần:",
+      "bulletPoints": [
+        "Năng lượng có ích: Phần năng lượng được chuyển hóa đúng theo mục đích sử dụng ban đầu của con người (ví dụ: quang năng của bóng đèn để thắp sáng; cơ năng của quạt để tạo gió; nhiệt năng của bếp từ để nấu chín thức ăn).",
+        "Năng lượng hao phí: Phần năng lượng bị chuyển hóa thành dạng năng lượng không theo ý muốn, không phục vụ mục đích chính và bị thất thoát ra môi trường xung quanh (ví dụ: nhiệt năng làm nóng bóng đèn sợi đốt; nhiệt năng làm nóng mô tơ quạt; tiếng ồn của máy giặt)."
+      ],
+      "callout": "📌 Công thức phân tách: Năng lượng toàn phần = Năng lượng có ích + Năng lượng hao phí."
+    },
+    {
+      "id": "card-2",
+      "title": "2. Nguồn gốc của năng lượng hao phí & Cách giảm thiểu",
+      "badge": "Ứng dụng thực tiễn",
+      "badgeColor": "amber",
+      "content": "Năng lượng hao phí thường xuất hiện dưới dạng nào và làm thế nào để hạn chế tối đa sự lãng phí này?",
+      "bulletPoints": [
+        "Các dạng hao phí phổ biến: Chủ yếu xuất hiện dưới dạng nhiệt năng (do ma sát cơ học giữa các bộ phận chuyển động hoặc do dây dẫn nóng lên) và năng lượng âm thanh (tiếng động cơ gầm rú, tiếng rung lắc).",
+        "Ví dụ ô tô, xe máy: Hóa năng trong xăng biến thành cơ năng đẩy xe chạy (có ích), nhưng một lượng lớn biến thành nhiệt làm nóng động cơ và tiếng ồn bô xe (hao phí).",
+        "Giải pháp giảm hao phí: Tra dầu mỡ bôi trơn để giảm lực ma sát; thay bóng đèn sợi đốt bằng bóng đèn LED tiết kiệm điện (đèn LED hầu như không tỏa nhiệt lãng phí); bảo trì máy móc thường xuyên."
+      ],
+      "callout": "💡 Mẹo hay: Sử dụng bóng đèn LED giúp giảm tới 80% năng lượng hao phí dưới dạng nhiệt so với bóng đèn dây tóc truyền thống!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi bật quạt điện để làm mát trong phòng, dạng năng lượng nào sau đây là năng lượng có ích?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Nhiệt năng làm nóng vỏ động cơ quạt",
+        "correct": false
+      },
+      {
+        "id": "opt-b",
+        "text": "Cơ năng làm quay cánh quạt tạo ra luồng gió mát",
+        "correct": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Tiếng ồn vù vù phát ra khi quạt quay",
+        "correct": false
+      },
+      {
+        "id": "opt-d",
+        "text": "Năng lượng ánh sáng phát ra từ đèn báo nhỏ",
+        "correct": false
+      }
+    ],
+    "explanation": "Mục đích sử dụng quạt là để cánh quạt quay tạo gió mát (cơ năng). Nhiệt năng làm nóng động cơ và tiếng ồn là các dạng năng lượng hao phí không mong muốn."
+  }
+}

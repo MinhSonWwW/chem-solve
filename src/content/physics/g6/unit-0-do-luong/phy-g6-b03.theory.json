@@ -1,0 +1,78 @@
+{
+  "lessonId": "phy-g6-b03",
+  "nodeId": "phy-g6-b03-theory",
+  "title": "Lý thuyết: Đo thời gian",
+  "subtitle": "Bài 7 SGK Khoa học tự nhiên 6 (Kết nối tri thức)",
+  "sgkBaiSo": 7,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Kiến thức trọng tâm",
+      "badgeColor": "cyan",
+      "title": "1. Đơn vị đo thời gian trong hệ SI",
+      "content": "Trong hệ đơn vị đo lường quốc tế (hệ SI), đơn vị đo thời gian cơ bản là giây (kí hiệu: s).",
+      "bulletPoints": [
+        "1 phút (min) = 60 giây (s)",
+        "1 giờ (h) = 60 phút = 3 600 giây",
+        "1 ngày = 24 giờ",
+        "1 tuần = 7 ngày; 1 năm thông thường = 365 ngày (năm nhuận = 366 ngày)",
+        "1 thế kỉ = 100 năm"
+      ],
+      "callout": "Ghi nhớ: Kí hiệu chuẩn của giây là chữ s viết thường, không viết tắt là sec hay gi."
+    },
+    {
+      "id": "c2",
+      "badge": "Dụng cụ đo",
+      "badgeColor": "amber",
+      "title": "2. Dụng cụ đo thời gian: Các loại đồng hồ",
+      "content": "Để đo thời gian, người ta dùng các loại đồng hồ: đồng hồ đeo tay, đồng hồ treo tường, đồng hồ quả lắc, đồng hồ điện tử, đồng hồ bấm giây.",
+      "bulletPoints": [
+        "Đồng hồ đeo tay/treo tường: Dùng để xem giờ hằng ngày trong sinh hoạt và học tập.",
+        "Đồng hồ bấm giây (cơ học hoặc điện tử): Dùng để đo những khoảng thời gian ngắn (ví dụ: thành tích chạy 100 m, thời gian rơi của vật trong thí nghiệm) với độ chính xác cao (ĐCNN thường là 0,1 s hoặc 0,01 s)."
+      ],
+      "callout": "Khi đo thời gian thi đấu thể thao hoặc thí nghiệm khoa học, đồng hồ bấm giây điện tử là lựa chọn tối ưu nhất."
+    },
+    {
+      "id": "c3",
+      "badge": "Kỹ năng thực hành",
+      "badgeColor": "emerald",
+      "title": "3. Quy trình 5 bước đo thời gian chuẩn",
+      "content": "Khi thực hiện phép đo thời gian bằng đồng hồ, cần tuân thủ 5 bước:",
+      "bulletPoints": [
+        "Bước 1: Ước lượng khoảng thời gian cần đo để chọn đồng hồ phù hợp.",
+        "Bước 2: Hiệu chỉnh đồng hồ về số 0 trước khi đo.",
+        "Bước 3: Nhấn nút bắt đầu đo đúng thời điểm vật bắt đầu chuyển động hoặc sự kiện bắt đầu.",
+        "Bước 4: Nhấn nút dừng đo đúng thời điểm vật về đích hoặc sự kiện kết thúc.",
+        "Bước 5: Đọc và ghi kết quả đo theo vạch chia gần nhất hoặc chữ số hiển thị."
+      ],
+      "callout": "Lỗi thường gặp: Bấm nút đo quá sớm hoặc quá trễ so với hiệu lệnh xuất phát/kết thúc do phản xạ chậm."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Để đo thời gian chạy 100 mét của một học sinh trong tiết Thể dục, loại đồng hồ nào sau đây là thích hợp nhất?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Đồng hồ bấm giây",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Đồng hồ quả lắc",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Đồng hồ cát",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Đồng hồ mặt trời",
+        "correct": false
+      }
+    ],
+    "explanation": "Đồng hồ bấm giây có độ chính xác cao và nút bấm bắt đầu/dừng tiện lợi, rất phù hợp để đo thành tích thể thao ngắn."
+  }
+}

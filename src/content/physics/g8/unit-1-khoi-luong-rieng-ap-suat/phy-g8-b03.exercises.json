@@ -1,0 +1,544 @@
+[
+  {
+    "id": "phy-g8-b03-mcq-001",
+    "lessonId": "phy-g8-b03",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "pressure-concept-force"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong cơ học, 'áp lực' được định nghĩa là:",
+    "knowledge": [
+      "formula.pressure.solid"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Lực ma sát cản trở chuyển động"
+        },
+        {
+          "id": "opt-b",
+          "label": "Lực ép có phương vuông góc với mặt bị ép"
+        },
+        {
+          "id": "opt-c",
+          "label": "Lực kéo vật thể ra xa bề mặt"
+        },
+        {
+          "id": "opt-d",
+          "label": "Lực ép có phương song song với mặt bị ép"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hãy nhớ lại hướng tác dụng của lực ép khi một vật nén lên mặt sàn nằm ngang."
+      },
+      {
+        "level": 2,
+        "text": "Áp lực bắt buộc phải có phương vuông góc với bề mặt tiếp xúc."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định khái niệm",
+        "body": "Đề bài yêu cầu định nghĩa đại lượng áp lực trong vật lí."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 15), áp lực là lực ép có phương vuông góc với mặt bị ép."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Lực ép có phương vuông góc với mặt bị ép**."
+      }
+    ],
+    "finalSolution": "Áp lực là **lực ép có phương vuông góc với mặt bị ép**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-tangential-force",
+        "message": "Lực song song với mặt tiếp xúc là lực ma sát hoặc lực trượt, không phải áp lực."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b03-mcq-002",
+    "lessonId": "phy-g8-b03",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "pressure-unit-pascal"
+    ],
+    "difficulty": 1,
+    "prompt": "Đơn vị đo áp suất trong Hệ đo lường quốc tế là Pascal (kí hiệu: Pa). Một Pascal tương đương với giá trị nào sau đây?",
+    "knowledge": [
+      "formula.pressure.solid"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "1 J/s"
+        },
+        {
+          "id": "opt-b",
+          "label": "1 N/m²"
+        },
+        {
+          "id": "opt-c",
+          "label": "1 kg/m³"
+        },
+        {
+          "id": "opt-d",
+          "label": "1 N/cm²"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ công thức p = F / S, lực F đo bằng N, diện tích S đo bằng m²."
+      },
+      {
+        "level": 2,
+        "text": "1 Pa = 1 N chia cho 1 m²."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích đơn vị",
+        "body": "Tìm đơn vị cơ bản cấu thành của 1 Pascal (Pa)."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức áp suất",
+        "body": "$p = \\frac{F}{S} \\Rightarrow [p] = \\frac{[F]}{[S]} = \\frac{\\text{N}}{\\text{m}^2}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "1 Pascal tương đương với **1 N/m²**."
+      }
+    ],
+    "finalSolution": "Một Pascal quy đổi bằng **$1\\text{ N/m}^2$** ($1\\text{ Pa} = 1\\text{ N/m}^2$).",
+    "commonMistakes": [
+      {
+        "id": "confuse-with-cm2",
+        "message": "1 N/cm² lớn hơn 1 Pa tới 10 000 lần (1 N/cm² = 10 000 Pa)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b03-mcq-003",
+    "lessonId": "phy-g8-b03",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "pressure-increase-methods"
+    ],
+    "difficulty": 1,
+    "prompt": "Dựa vào công thức p = F / S, để làm TĂNG áp suất tác dụng lên một mặt tiếp xúc, ta có thể áp dụng biện pháp nào sau đây?",
+    "knowledge": [
+      "formula.pressure.solid"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tăng áp lực F hoặc giảm diện tích tiếp xúc S"
+        },
+        {
+          "id": "opt-b",
+          "label": "Giữ nguyên áp lực F và tăng diện tích tiếp xúc S"
+        },
+        {
+          "id": "opt-c",
+          "label": "Đồng thời giảm cả F và tăng S lên gấp đôi"
+        },
+        {
+          "id": "opt-d",
+          "label": "Giảm áp lực F và tăng diện tích tiếp xúc S"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp suất tỉ lệ thuận với áp lực F và tỉ lệ nghịch với diện tích S."
+      },
+      {
+        "level": 2,
+        "text": "Muốn p tăng, ta cần tăng tử số F hoặc giảm mẫu số S."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích yêu cầu",
+        "body": "Đề bài yêu cầu tìm biện pháp làm tăng áp suất p tác dụng lên mặt bị ép."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức áp suất",
+        "body": "Từ công thức $p = \\frac{F}{S}$, áp suất $p$ tỉ lệ thuận với áp lực $F$ và tỉ lệ nghịch với diện tích bị ép $S$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Muốn tăng áp suất $p$, ta cần **Tăng áp lực F hoặc giảm diện tích tiếp xúc S**."
+      }
+    ],
+    "finalSolution": "Để tăng áp suất: **Tăng áp lực F hoặc giảm diện tích tiếp xúc S**.",
+    "commonMistakes": [
+      {
+        "id": "inverse-ratio-trap",
+        "message": "Diện tích S ở mẫu số nên muốn tăng p thì phải giảm S, chứ không phải tăng S."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b03-num-004",
+    "lessonId": "phy-g8-b03",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "pressure-calc-person"
+    ],
+    "difficulty": 2,
+    "prompt": "Một người có trọng lượng P = 600 N đứng thẳng bằng hai chân trên sàn nhà nằm ngang. Biết tổng diện tích tiếp xúc của cả hai bàn chân với mặt sàn là S = 0,03 m². Áp suất do người này tác dụng lên mặt sàn là bao nhiêu Pa?",
+    "knowledge": [
+      "formula.pressure.solid"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 20000,
+      "unit": "Pa",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp lực F do người nén vuông góc lên sàn chính bằng trọng lượng P của người: F = P = 600 N."
+      },
+      {
+        "level": 2,
+        "text": "Áp suất p = F / S = 600 / 0,03."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Áp lực $F = P = 600\\text{ N}$; Diện tích tiếp xúc $S = 0,03\\text{ m}^2$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức áp suất",
+        "body": "$p = \\frac{F}{S}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$p = \\frac{600}{0,03} = 20\\,000\\text{ Pa}$ (tức 20 kPa)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Áp suất tác dụng lên mặt sàn là **20 000 Pa**."
+      }
+    ],
+    "finalSolution": "Áp suất tác dụng lên sàn: $p = \\frac{F}{S} = \\frac{600}{0,03} = 20\\,000\\text{ Pa}$.",
+    "commonMistakes": [
+      {
+        "id": "decimal-division-error",
+        "message": "Bạn chia sai số thập phân: 600 / 0,03 = 20 000 Pa chứ không phải 2 000 hay 200 Pa.",
+        "trapAnswers": [
+          "2000",
+          "200"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b03-num-005",
+    "lessonId": "phy-g8-b03",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "pressure-calc-force"
+    ],
+    "difficulty": 2,
+    "prompt": "Một khối sắt đặt trên mặt bàn nằm ngang gây ra một áp suất p = 4 000 Pa lên mặt bàn. Biết diện tích mặt đáy tiếp xúc của khối sắt với mặt bàn là S = 0,05 m². Áp lực do khối sắt nén lên mặt bàn là bao nhiêu Niutơn (N)?",
+    "knowledge": [
+      "formula.pressure.solid"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 200,
+      "unit": "N",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ công thức p = F / S, hãy suy ra công thức tính áp lực F."
+      },
+      {
+        "level": 2,
+        "text": "Áp lực F = p x S = 4 000 x 0,05."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$p = 4\\,000\\text{ Pa}$; $S = 0,05\\text{ m}^2$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính áp lực",
+        "body": "Từ $p = \\frac{F}{S} \\Rightarrow F = p \\times S$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$F = 4\\,000 \\times 0,05 = 200\\text{ N}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Áp lực nén lên mặt bàn là **200 N**."
+      }
+    ],
+    "finalSolution": "Áp lực nén lên mặt bàn: $F = p \\times S = 4\\,000 \\times 0,05 = 200\\text{ N}$.",
+    "commonMistakes": [
+      {
+        "id": "divide-instead-of-multiply",
+        "message": "Bạn đã lấy p chia S (4 000 / 0,05 = 80 000). Công thức đúng là F = p * S.",
+        "trapAnswers": [
+          "80000",
+          "80000 N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b03-num-006",
+    "lessonId": "phy-g8-b03",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "pressure-calc-truck"
+    ],
+    "difficulty": 3,
+    "prompt": "Một chiếc xe ô tô có trọng lượng P = 40 000 N đỗ trên mặt đường phẳng nằm ngang. Xe có 4 bánh xe, diện tích tiếp xúc của mỗi bánh xe với mặt đường là S1 = 200 cm². Hãy tính áp suất do toàn bộ chiếc xe tác dụng lên mặt đường theo đơn vị kPa.",
+    "knowledge": [
+      "formula.pressure.solid"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 500,
+      "unit": "kPa",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Xe có 4 bánh nên tổng diện tích tiếp xúc là S = 4 x S1. Đổi cm² sang m² (1 cm² = 0,0001 m²)."
+      },
+      {
+        "level": 2,
+        "text": "S = 4 x 200 cm² = 800 cm² = 0,08 m². Tính p = P / S (Pa) rồi chia cho 1 000 để đổi sang kPa."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$P = 40\\,000\\text{ N}$; $S_1 = 200\\text{ cm}^2$; số bánh xe $n = 4$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính tổng diện tích tiếp xúc",
+        "body": "Tổng diện tích tiếp xúc của 4 bánh xe: $S = 4 \\times 200 = 800\\text{ cm}^2 = 0,08\\text{ m}^2$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính áp suất",
+        "body": "$p = \\frac{P}{S} = \\frac{40\\,000}{0,08} = 500\\,000\\text{ Pa} = 500\\text{ kPa}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Áp suất tác dụng lên mặt đường là **500 kPa**."
+      }
+    ],
+    "finalSolution": "Tổng diện tích tiếp xúc $S = 4 \\times 0,02\\text{ m}^2 = 0,08\\text{ m}^2$. Áp suất: $p = \\frac{40\\,000}{0,08} = 500\\,000\\text{ Pa} = 500\\text{ kPa}$.",
+    "commonMistakes": [
+      {
+        "id": "single-wheel-mistake",
+        "message": "Bạn chỉ tính diện tích của 1 bánh xe mà quên nhân với 4 bánh xe (xe có 4 bánh cùng tiếp xúc mặt đất).",
+        "trapAnswers": [
+          "2000",
+          "2000 kPa"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b03-tf-007",
+    "lessonId": "phy-g8-b03",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "pressure-practical-tf"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai của các khẳng định sau về áp suất trong đời sống và kĩ thuật:",
+    "knowledge": [
+      "formula.pressure.solid"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Lưỡi dao được mài thật sắc giúp cắt thái dễ dàng vì diện tích tiếp xúc nhỏ làm tăng áp suất tác dụng lên vật.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Xe tăng và máy xúc bánh xích chạy được trên nền đất mềm lầy lội vì xích có diện tích tiếp xúc rất lớn giúp giảm áp suất lên mặt đất.",
+          "correct": true
+        },
+        {
+          "id": "st-3",
+          "text": "Áp lực luôn là lực tác dụng theo phương song song với bề mặt tiếp xúc.",
+          "correct": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Xem xét công thức p = F / S trong các ứng dụng dao sắc và bánh xích."
+      },
+      {
+        "level": 2,
+        "text": "Phương của áp lực bắt buộc phải vuông góc với bề mặt bị ép."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 1",
+        "body": "Lưỡi sắc làm S nhỏ, với cùng lực F thì p tăng giúp cắt dễ -> Đúng."
+      },
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 2",
+        "body": "Bánh xích có S rất lớn, làm p giảm nên không bị lún sụt vào đất bùn -> Đúng."
+      },
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 3",
+        "body": "Áp lực bắt buộc phải vuông góc với mặt bị ép, không phải song song -> Mệnh đề 3 Sai."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự: Đúng - Đúng - Sai."
+      }
+    ],
+    "finalSolution": "Mệnh đề 1: **Đúng**; Mệnh đề 2: **Đúng**; Mệnh đề 3: **Sai**.",
+    "commonMistakes": [
+      {
+        "id": "parallel-pressure-confuse",
+        "message": "Nhiều bạn quên định nghĩa áp lực: bắt buộc phải có phương vuông góc với mặt bị ép."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b03-mcq-008",
+    "lessonId": "phy-g8-b03",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "pressure-brick-posture"
+    ],
+    "difficulty": 3,
+    "prompt": "Một viên gạch đặc hình hộp chữ nhật có kích thước ba chiều là: chiều dài a = 20 cm, chiều rộng b = 10 cm và chiều cao c = 5 cm. Đặt viên gạch lên bề mặt một tấm đệm mút mềm. Để viên gạch làm đệm mút lún sâu nhất, ta phải đặt viên gạch ở tư thế nào và vì sao?",
+    "knowledge": [
+      "formula.pressure.solid"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Đặt mặt có kích thước 10 cm x 5 cm tiếp xúc đệm mút, vì diện tích tiếp xúc nhỏ nhất nên áp suất lớn nhất"
+        },
+        {
+          "id": "opt-b",
+          "label": "Đặt mặt có kích thước 20 cm x 10 cm tiếp xúc đệm mút, vì diện tích tiếp xúc lớn nhất"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cả ba tư thế đều làm đệm mút lún sâu như nhau vì viên gạch có trọng lượng không đổi"
+        },
+        {
+          "id": "opt-d",
+          "label": "Đặt mặt có kích thước 20 cm x 5 cm tiếp xúc đệm mút, vì diện tích ở mức trung bình"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trọng lượng F = P của viên gạch là như nhau trong cả 3 tư thế."
+      },
+      {
+        "level": 2,
+        "text": "Tác dụng làm lún biến dạng phụ thuộc vào áp suất p = F / S. Diện tích S càng nhỏ thì p càng lớn, làm lún càng sâu."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Diện tích ba mặt của viên gạch",
+        "body": "Mặt 1: $20 \\times 10 = 200\\text{ cm}^2$; Mặt 2: $20 \\times 5 = 100\\text{ cm}^2$; Mặt 3: $10 \\times 5 = 50\\text{ cm}^2$."
+      },
+      {
+        "kind": "equation",
+        "title": "Mối quan hệ áp suất và độ lún",
+        "body": "Trọng lượng $F$ không đổi. Áp suất $p = \\frac{F}{S}$ đạt giá trị lớn nhất khi diện tích $S$ nhỏ nhất."
+      },
+      {
+        "kind": "compute",
+        "title": "So sánh",
+        "body": "$S_3 = 50\\text{ cm}^2$ là diện tích nhỏ nhất, tạo ra áp suất $p$ lớn nhất làm đệm mút lún sâu nhất."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đặt mặt kích thước **10 cm x 5 cm** tiếp xúc với đệm mút."
+      }
+    ],
+    "finalSolution": "Đặt mặt **$10\\text{ cm} \\times 5\\text{ cm}$** vì diện tích tiếp xúc nhỏ nhất ($S = 50\\text{ cm}^2$), sinh ra áp suất lớn nhất làm lún sâu nhất.",
+    "commonMistakes": [
+      {
+        "id": "confuse-weight-with-pressure",
+        "message": "Trọng lượng gạch không đổi nhưng áp suất phụ thuộc diện tích tiếp xúc S: S càng nhỏ thì lún càng sâu."
+      }
+    ]
+  }
+]

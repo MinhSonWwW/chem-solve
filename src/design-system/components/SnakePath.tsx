@@ -15,9 +15,11 @@ export interface PathNode {
 export interface SnakePathProps {
   nodes: PathNode[];
   onNodeClick: (node: PathNode) => void;
+  subject?: 'chem' | 'physics';
 }
 
-export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
+export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subject = 'chem' }) => {
+  const isPhysics = subject === 'physics';
   // Duolingo-style compact & rhythmic node spacing
   const nodeSpacing = 94;
   const startY = 48;
@@ -79,11 +81,26 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
       >
         <defs>
           <linearGradient id="completedGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#10b981" />
-            <stop offset="100%" stopColor="#06b6d4" />
+            {isPhysics ? (
+              <>
+                <stop offset="0%" stopColor="#f59e0b" />
+                <stop offset="100%" stopColor="#eab308" />
+              </>
+            ) : (
+              <>
+                <stop offset="0%" stopColor="#10b981" />
+                <stop offset="100%" stopColor="#06b6d4" />
+              </>
+            )}
           </linearGradient>
           <filter id="pathGlow" x="-20%" y="-20%" width="140%" height="140%">
-            <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor="#059669" floodOpacity="0.4" />
+            <feDropShadow
+              dx="0"
+              dy="2"
+              stdDeviation="3"
+              floodColor={isPhysics ? '#b45309' : '#059669'}
+              floodOpacity="0.45"
+            />
           </filter>
         </defs>
 
@@ -107,7 +124,7 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
           strokeLinejoin="round"
         />
 
-        {/* 3. Completed path trail with green-to-cyan gradient */}
+        {/* 3. Completed path trail with vibrant gradient */}
         {lastReachedIndex > 0 && (
           <path
             d={completedPathD}
@@ -170,7 +187,11 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
                   <div
                     className={`font-black text-[11px] uppercase tracking-wider px-3.5 py-1 rounded-xl shadow-lg border ${
                       isTheory
-                        ? 'bg-gradient-to-r from-purple-400 to-fuchsia-300 text-slate-950 border-purple-200 shadow-[0_4px_12px_rgba(192,38,211,0.5)]'
+                        ? isPhysics
+                          ? 'bg-gradient-to-r from-amber-400 to-yellow-300 text-slate-950 border-amber-200 shadow-[0_4px_12px_rgba(245,158,11,0.5)]'
+                          : 'bg-gradient-to-r from-purple-400 to-fuchsia-300 text-slate-950 border-purple-200 shadow-[0_4px_12px_rgba(192,38,211,0.5)]'
+                        : isPhysics
+                        ? 'bg-gradient-to-r from-amber-400 to-yellow-300 text-slate-950 border-amber-200 shadow-[0_4px_12px_rgba(245,158,11,0.5)]'
                         : 'bg-gradient-to-r from-cyan-400 to-cyan-300 text-slate-950 border-cyan-200 shadow-[0_4px_12px_rgba(6,182,212,0.5)]'
                     }`}
                   >
@@ -179,7 +200,13 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
                   {/* Downward pointer triangle */}
                   <div
                     className={`w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] -mt-[1px] ${
-                      isTheory ? 'border-t-fuchsia-300' : 'border-t-cyan-300'
+                      isTheory
+                        ? isPhysics
+                          ? 'border-t-yellow-300'
+                          : 'border-t-fuchsia-300'
+                        : isPhysics
+                        ? 'border-t-yellow-300'
+                        : 'border-t-cyan-300'
                     }`}
                   />
                 </motion.div>
@@ -191,7 +218,13 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
                 {isActive && (
                   <span
                     className={`absolute -inset-2.5 rounded-full animate-ping pointer-events-none ${
-                      isTheory ? 'bg-purple-400/35' : 'bg-cyan-400/35'
+                      isTheory
+                        ? isPhysics
+                          ? 'bg-amber-400/35'
+                          : 'bg-purple-400/35'
+                        : isPhysics
+                        ? 'bg-amber-400/35'
+                        : 'bg-cyan-400/35'
                     }`}
                   />
                 )}
@@ -204,7 +237,11 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
                       ? 'bg-emerald-500 text-slate-950 border-2 border-emerald-300 shadow-[0_8px_0_0_#047857] hover:bg-emerald-400 active:translate-y-1.5 active:shadow-[0_2px_0_0_#047857]'
                       : isActive
                       ? isTheory
-                        ? 'bg-gradient-to-tr from-purple-600 to-fuchsia-400 text-white border-2 border-purple-200 shadow-[0_8px_0_0_#7e22ce] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#7e22ce] ring-4 ring-purple-500/30'
+                        ? isPhysics
+                          ? 'bg-gradient-to-tr from-amber-500 to-yellow-300 text-slate-950 border-2 border-amber-100 shadow-[0_8px_0_0_#ca8a04] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#ca8a04] ring-4 ring-amber-500/30'
+                          : 'bg-gradient-to-tr from-purple-600 to-fuchsia-400 text-white border-2 border-purple-200 shadow-[0_8px_0_0_#7e22ce] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#7e22ce] ring-4 ring-purple-500/30'
+                        : isPhysics
+                        ? 'bg-gradient-to-tr from-amber-500 to-yellow-300 text-slate-950 border-2 border-amber-100 shadow-[0_8px_0_0_#ca8a04] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#ca8a04] ring-4 ring-amber-500/30'
                         : 'bg-gradient-to-tr from-cyan-500 to-cyan-300 text-slate-950 border-2 border-cyan-100 shadow-[0_8px_0_0_#0891b2] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#0891b2] ring-4 ring-cyan-500/30'
                       : isChest
                       ? 'bg-gradient-to-tr from-amber-600 to-amber-400 text-amber-950 border-2 border-amber-300 shadow-[0_8px_0_0_#78350f] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#78350f]'
@@ -219,7 +256,7 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
                   ) : isCompleted ? (
                     <Check className="w-8 h-8 stroke-[3.5]" />
                   ) : isActive && isTheory ? (
-                    <BookOpen className="w-7 h-7 text-white stroke-[2.5]" />
+                    <BookOpen className={`w-7 h-7 stroke-[2.5] ${isPhysics ? 'text-slate-950' : 'text-white'}`} />
                   ) : isActive ? (
                     <Play className="w-7 h-7 fill-slate-950 ml-0.5" />
                   ) : isUnready ? (
@@ -239,7 +276,9 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick }) => {
                 <span
                   className={`text-[11px] font-black block leading-tight truncate w-full ${
                     isActive
-                      ? 'text-cyan-300'
+                      ? isPhysics
+                        ? 'text-amber-300'
+                        : 'text-cyan-300'
                       : isCompleted
                       ? 'text-slate-200'
                       : 'text-slate-500'

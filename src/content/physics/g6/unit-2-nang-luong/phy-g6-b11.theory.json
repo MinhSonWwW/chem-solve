@@ -1,0 +1,76 @@
+{
+  "lessonId": "phy-g6-b11",
+  "nodeId": "phy-g6-b11-theory",
+  "title": "Lý thuyết: Năng lượng và sự truyền năng lượng",
+  "subtitle": "Bài 46 SGK Khoa học tự nhiên 6 (Kết nối tri thức)",
+  "sgkBaiSo": 46,
+  "estimatedMinutes": 2,
+  "description": "Nắm vững khái niệm năng lượng, các hình thức truyền năng lượng và đơn vị đo năng lượng chuẩn trong hệ SI.",
+  "cards": [
+    {
+      "id": "card-1",
+      "title": "1. Năng lượng là gì?",
+      "badge": "Khái niệm cốt lõi",
+      "badgeColor": "emerald",
+      "content": "Mọi hiện tượng, chuyển động và biến đổi trong tự nhiên cũng như mọi hoạt động sống của con người đều cần có năng lượng. Năng lượng là một đại lượng đặc trưng cho khả năng tác dụng lực và truyền nhiệt của vật.",
+      "bulletPoints": [
+        "Vật có năng lượng có thể tác dụng lực lên vật khác (ví dụ: gió có năng lượng đẩy cánh buồm, dòng nước chảy đẩy thuyền trôi).",
+        "Vật có năng lượng có thể truyền nhiệt làm nóng vật khác (ví dụ: ngọn lửa truyền nhiệt đun sôi ấm nước).",
+        "Năng lượng của vật càng lớn thì khả năng tác dụng lực hoặc truyền nhiệt của vật đó càng mạnh."
+      ],
+      "callout": "💡 Ghi nhớ: Khi một vật có khả năng tác dụng lực hoặc làm nóng vật khác, ta nói vật đó có năng lượng."
+    },
+    {
+      "id": "card-2",
+      "title": "2. Sự truyền năng lượng",
+      "badge": "Quy luật vật lý",
+      "badgeColor": "cyan",
+      "content": "Năng lượng không đứng yên mà có thể truyền từ vật này sang vật khác qua hai hình thức cơ bản:",
+      "bulletPoints": [
+        "Truyền năng lượng qua tác dụng lực: Người đẩy chiếc xe hàng làm xe chuyển động; gió tác dụng lực làm quay cánh quạt phong điện.",
+        "Truyền năng lượng qua truyền nhiệt: Ánh nắng Mặt Trời truyền nhiệt làm ấm mặt đất; que sắt nhúng vào nước sôi nhận nhiệt và nóng lên."
+      ],
+      "callout": "✨ Hai con đường truyền năng lượng chủ yếu giữa các vật: Tác dụng lực và Truyền nhiệt."
+    },
+    {
+      "id": "card-3",
+      "title": "3. Đơn vị đo năng lượng",
+      "badge": "Đơn vị chuẩn SI",
+      "badgeColor": "amber",
+      "content": "Trong Hệ đơn vị đo lường quốc tế (hệ SI), đơn vị đo năng lượng chuẩn là jun (kí hiệu là J), được đặt theo tên nhà vật lý người Anh James Prescott Joule.",
+      "formulaExample": "1 kJ = 1000 J ; 1 cal ≈ 4,2 J ; 1 kcal = 1000 cal",
+      "bulletPoints": [
+        "1 jun (J) là mức năng lượng cần thiết để nâng một vật có trọng lượng 1 N lên cao 1 m.",
+        "Bội số thông dụng của jun: 1 kilôjun (kJ) = 1 000 jun (J).",
+        "Trong dinh dưỡng và thực phẩm, người ta thường dùng đơn vị calo (cal) hoặc kilôcalo (kcal): 1 cal ≈ 4,2 J; 1 kcal = 1 000 cal ≈ 4 200 J."
+      ],
+      "callout": "⚠️ Chú ý: 1 kilôjun (kJ) bằng 1 000 jun (J). Hãy nhớ đổi đơn vị cẩn thận khi tính toán!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Trong Hệ đơn vị đo lường quốc tế (hệ SI), đơn vị chuẩn dùng để đo năng lượng là gì?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Niutơn (N)",
+        "correct": false
+      },
+      {
+        "id": "opt-b",
+        "text": "Jun (J)",
+        "correct": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Kilôgam (kg)",
+        "correct": false
+      },
+      {
+        "id": "opt-d",
+        "text": "Mét trên giây (m/s)",
+        "correct": false
+      }
+    ],
+    "explanation": "Trong hệ SI, đơn vị chuẩn để đo năng lượng và công là jun (kí hiệu: J). Niutơn (N) là đơn vị đo lực, kilôgam (kg) đo khối lượng."
+  }
+}

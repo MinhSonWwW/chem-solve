@@ -1,0 +1,78 @@
+{
+  "lessonId": "phy-g8-b10",
+  "nodeId": "phy-g8-b10-theory",
+  "title": "Lý thuyết: Mạch điện đơn giản",
+  "subtitle": "Bài 22 SGK Khoa học tự nhiên 8 (Kết nối tri thức)",
+  "sgkBaiSo": 22,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Kí hiệu sơ đồ",
+      "badgeColor": "cyan",
+      "title": "1. Các bộ phận của mạch điện và kí hiệu quy ước",
+      "content": "Một mạch điện cơ bản gồm nguồn điện, thiết bị tiêu thụ điện, dây dẫn và thiết bị đóng ngắt. Trong sơ đồ mạch điện, chúng được biểu diễn bằng các kí hiệu quy ước thống nhất:",
+      "bulletPoints": [
+        "Nguồn điện (1 pin hoặc 1 acquy): Gồm hai đoạn thẳng song song, đoạn dài mảnh hơn là cực dương (+), đoạn ngắn dày hơn là cực âm (-).",
+        "Nguồn hai pin mắc nối tiếp: Hai cặp vạch dài-ngắn nối tiếp nhau (+ - + -).",
+        "Bóng đèn: Hình tròn có hai gạch chéo chữ X ở bên trong.",
+        "Dây dẫn điện: Đường thẳng liền nét biểu diễn dây nối kim loại.",
+        "Công tắc (khóa K): Gồm hai chấm tròn nhỏ; công tắc đóng có đoạn thẳng nối liền hai chấm, công tắc mở có đoạn thẳng nhấc lên khỏi một chấm.",
+        "Dụng cụ đo: Vòng tròn có chữ A bên trong là Ampe kế; vòng tròn có chữ V bên trong là Vôn kế."
+      ],
+      "callout": "Ý nghĩa sơ đồ: Giúp các kĩ sư và thợ điện dễ dàng đọc hiểu, lắp đặt và sửa chữa mạng lưới điện một cách chính xác."
+    },
+    {
+      "id": "c2",
+      "badge": "Mạch kín & Mạch hở",
+      "badgeColor": "amber",
+      "title": "2. Mạch điện kín và mạch điện hở",
+      "content": "Điều kiện để có dòng điện chạy trong mạch tiêu thụ:",
+      "bulletPoints": [
+        "Mạch điện kín: Là mạch điện liền mạch, thông suốt từ cực dương của nguồn điện qua dây dẫn, công tắc đóng và các thiết bị điện tới cực âm của nguồn điện. Khi mạch kín, có dòng điện chạy qua và các thiết bị hoạt động (bóng đèn sáng, quạt quay).",
+        "Mạch điện hở: Khi công tắc mở, hoặc khi dây dẫn bị đứt, dây tóc bóng đèn bị cháy đứt, tiếp xúc điện bị lỏng... Mạch bị ngắt quãng, không có dòng điện chạy qua và các thiết bị không hoạt động.",
+        "Hiện tượng đoản mạch (ngắn mạch): Khi hai cực của nguồn điện bị nối trực tiếp với nhau bằng dây dẫn điện trở rất nhỏ (không qua bóng đèn hay tải tiêu thụ). Dòng điện tăng vọt cực lớn gây nóng chảy dây dẫn, cháy pin hoặc hỏa hoạn."
+      ],
+      "callout": "An toàn sử dụng: Cần trang bị cầu chì hoặc aptomat tự động ngắt mạch khi có sự cố đoản mạch xảy ra."
+    },
+    {
+      "id": "c3",
+      "badge": "Chiều dòng điện",
+      "badgeColor": "emerald",
+      "title": "3. Chiều dòng điện trong mạch điện",
+      "content": "Chiều dòng điện trong mạch điện được quy ước chặt chẽ trong vật lý quốc tế:",
+      "bulletPoints": [
+        "Quy ước chiều dòng điện: Chiều dòng điện là chiều từ CỰC DƯƠNG qua dây dẫn và các thiết bị điện tới CỰC ÂM của nguồn điện.",
+        "So sánh với chiều electron tự do: Trong dây dẫn kim loại, các electron tự do mang điện tích âm bị cực âm đẩy và cực dương hút, nên chúng chuyển động từ CỰC ÂM sang CỰC DƯƠNG.",
+        "Kết luận đối chiếu: Chiều dòng điện quy ước NGƯỢC CHIỀU với chiều dịch chuyển có hướng của các electron tự do trong dây dẫn kim loại."
+      ],
+      "callout": "Quy tắc nằm lòng: Chiều dòng điện đi ra từ cực Dương (+) và đi vào cực Âm (-) của nguồn điện."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Theo quy ước, chiều dòng điện trong mạch điện kín có chiều như thế nào?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Từ cực dương qua dây dẫn và các thiết bị điện tới cực âm của nguồn điện",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Từ cực âm qua dây dẫn và các thiết bị điện tới cực dương của nguồn điện",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Cùng chiều với chiều dịch chuyển của các electron tự do",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Chiều xoay tròn tùy ý không có quy luật cố định",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 8 Bài 22: Chiều dòng điện được quy ước là chiều từ cực dương qua dây dẫn và các thiết bị điện tới cực âm của nguồn điện."
+  }
+}

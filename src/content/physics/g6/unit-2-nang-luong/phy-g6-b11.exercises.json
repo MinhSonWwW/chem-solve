@@ -1,0 +1,405 @@
+[
+  {
+    "id": "phy-g6-b11-mcq-001",
+    "lessonId": "phy-g6-b11",
+    "sgkBaiSo": 46,
+    "skillIds": [
+      "energy-si-unit"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong Hệ đơn vị đo lường quốc tế (hệ SI), đơn vị chuẩn dùng để đo năng lượng là gì?",
+    "knowledge": [
+      "energy.unit.joule"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Niutơn (N)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Kilôgam (kg)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Oát (W)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Jun (J)"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đơn vị này được đặt theo tên nhà vật lý James Prescott Joule."
+      },
+      {
+        "level": 2,
+        "text": "Kí hiệu của đơn vị đo năng lượng là chữ J in hoa (Jun)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định câu hỏi",
+        "body": "Câu hỏi kiểm tra đơn vị đo năng lượng chuẩn theo hệ SI."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 6 (Bài 46), đơn vị đo năng lượng trong hệ SI là jun (kí hiệu: J)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Jun (J)**."
+      }
+    ],
+    "finalSolution": "Đơn vị đo năng lượng chuẩn trong hệ SI là **jun (J)**.",
+    "commonMistakes": [
+      {
+        "id": "confused-force-unit",
+        "message": "Niutơn (N) là đơn vị đo lực, không phải đơn vị đo năng lượng."
+      },
+      {
+        "id": "confused-mass-unit",
+        "message": "Kilôgam (kg) là đơn vị đo khối lượng."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b11-mcq-002",
+    "lessonId": "phy-g6-b11",
+    "sgkBaiSo": 46,
+    "skillIds": [
+      "energy-characteristic"
+    ],
+    "difficulty": 1,
+    "prompt": "Dấu hiệu nào sau đây chứng tỏ một vật đang mang năng lượng?",
+    "knowledge": [
+      "energy.unit.joule"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vật đứng yên hoàn toàn và không tác dụng bất kỳ lực nào"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vật có khối lượng rất nhẹ và thể tích nhỏ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vật có nhiệt độ bằng đúng nhiệt độ môi trường"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vật có khả năng tác dụng lực lên vật khác hoặc làm nóng vật khác"
+        },
+        {
+          "id": "opt-e",
+          "label": "Vật có màu sắc rực rỡ và phát quang"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Năng lượng đặc trưng cho khả năng làm việc gì của vật?"
+      },
+      {
+        "level": 2,
+        "text": "Một vật có năng lượng khi nó có khả năng tác dụng lực hoặc truyền nhiệt."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định vấn đề",
+        "body": "Dấu hiệu nhận biết sự tồn tại của năng lượng ở một vật thể."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Khái niệm năng lượng",
+        "body": "Năng lượng là đại lượng đặc trưng cho khả năng tác dụng lực hoặc truyền nhiệt của vật."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Chọn phương án: **Vật có khả năng tác dụng lực lên vật khác hoặc làm nóng vật khác**."
+      }
+    ],
+    "finalSolution": "Một vật mang năng lượng khi nó có **khả năng tác dụng lực hoặc làm nóng vật khác**.",
+    "commonMistakes": [
+      {
+        "id": "visual-misconception",
+        "message": "Màu sắc hay độ nhẹ của vật không phải là thước đo của năng lượng."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b11-mcq-003",
+    "lessonId": "phy-g6-b11",
+    "sgkBaiSo": 46,
+    "skillIds": [
+      "energy-transfer-heat"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi đun nước bằng ấm điện, năng lượng được truyền từ mâm nhiệt sang nước chủ yếu qua hình thức nào?",
+    "knowledge": [
+      "energy.unit.joule"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Truyền năng lượng qua ma sát trượt"
+        },
+        {
+          "id": "opt-b",
+          "label": "Truyền năng lượng qua truyền nhiệt"
+        },
+        {
+          "id": "opt-c",
+          "label": "Truyền năng lượng qua tác dụng lực nén"
+        },
+        {
+          "id": "opt-d",
+          "label": "Truyền năng lượng qua bức xạ âm thanh"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nước nóng dần lên khi nhận năng lượng từ mâm nhiệt."
+      },
+      {
+        "level": 2,
+        "text": "Đây là hình thức làm nóng một vật nhờ sự chênh lệch nhiệt độ — truyền nhiệt."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích hiện tượng",
+        "body": "Mâm nhiệt của ấm điện có nhiệt độ cao truyền năng lượng làm nước tăng nhiệt độ và sôi."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hình thức truyền",
+        "body": "Sự truyền năng lượng từ vật có nhiệt độ cao sang vật có nhiệt độ thấp hơn là hình thức truyền nhiệt."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Truyền năng lượng qua truyền nhiệt**."
+      }
+    ],
+    "finalSolution": "Năng lượng được truyền từ mâm nhiệt sang nước qua hình thức **truyền nhiệt**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b11-mcq-004",
+    "lessonId": "phy-g6-b11",
+    "sgkBaiSo": 46,
+    "skillIds": [
+      "energy-transfer-force"
+    ],
+    "difficulty": 2,
+    "prompt": "Gió bão thổi mạnh quật đổ một cây cổ thụ ven đường. Trong hiện tượng này, năng lượng của gió đã truyền sang cây qua hình thức nào?",
+    "knowledge": [
+      "energy.unit.joule"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tác dụng lực đẩy lên thân và cành cây"
+        },
+        {
+          "id": "opt-b",
+          "label": "Truyền nhiệt làm nóng thân cây"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hút hết nhiệt độ của thân cây"
+        },
+        {
+          "id": "opt-d",
+          "label": "Phát xạ ánh sáng chiếu vào cây"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cây bị đổ do chịu một lực cản và lực xô đẩy rất lớn từ dòng không khí chuyển động."
+      },
+      {
+        "level": 2,
+        "text": "Gió có động năng lớn, tác dụng lực đẩy mạnh lên tán cây làm cây bật gốc."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hiện tượng vật lý",
+        "body": "Gió bão chuyển động với tốc độ cao mang năng lượng lớn tác dụng lực ép và đẩy mạnh lên cây."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế truyền năng lượng",
+        "body": "Năng lượng gió truyền sang cây qua tác dụng lực làm biến dạng và gãy đổ cây."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng: **Tác dụng lực đẩy lên thân và cành cây**."
+      }
+    ],
+    "finalSolution": "Gió truyền năng lượng cho cây qua hình thức **tác dụng lực**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b11-num-005",
+    "lessonId": "phy-g6-b11",
+    "sgkBaiSo": 46,
+    "skillIds": [
+      "energy-unit-convert"
+    ],
+    "difficulty": 2,
+    "prompt": "Bao bì của một hộp sữa ghi giá trị dinh dưỡng cung cấp năng lượng là 2,5 kJ. Hãy đổi lượng năng lượng này sang đơn vị jun (J).",
+    "knowledge": [
+      "energy.unit.joule"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 2500,
+      "unit": "J",
+      "decimals": 0
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tiền tố 'kilo' (k) có nghĩa là gấp 1 000 lần đơn vị gốc."
+      },
+      {
+        "level": 2,
+        "text": "1 kJ = 1 000 J. Hãy nhân giá trị 2,5 với 1 000."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Dữ kiện đề bài",
+        "body": "Năng lượng: $E = 2,5\\text{ kJ}$."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc đổi đơn vị",
+        "body": "$1\\text{ kJ} = 1000\\text{ J}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Thực hiện phép tính",
+        "body": "$E = 2,5 \\times 1000 = 2500\\text{ J}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Giá trị cần tìm là **2500 J**."
+      }
+    ],
+    "finalSolution": "$2,5\\text{ kJ} = 2,5 \\times 1000 = 2500\\text{ J}$.",
+    "commonMistakes": [
+      {
+        "id": "divide-instead-of-multiply",
+        "message": "Bạn đã chia cho 1000 thay vì nhân 1000 (1 kJ = 1000 J).",
+        "trapAnswers": [
+          "0.0025",
+          "0,0025"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b11-tf-006",
+    "lessonId": "phy-g6-b11",
+    "sgkBaiSo": 46,
+    "skillIds": [
+      "energy-core-concepts"
+    ],
+    "difficulty": 3,
+    "prompt": "Hãy xác định tính Đúng hay Sai cho mỗi nhận định sau đây về năng lượng và sự truyền năng lượng:",
+    "knowledge": [
+      "energy.unit.joule"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "stmt-1",
+          "text": "Mọi vật xung quanh chúng ta đều có năng lượng dưới các dạng khác nhau.",
+          "correct": true
+        },
+        {
+          "id": "stmt-2",
+          "text": "Năng lượng chỉ có thể truyền từ vật này sang vật khác bằng cách đun nóng, không thể truyền qua tác dụng lực.",
+          "correct": false
+        },
+        {
+          "id": "stmt-3",
+          "text": "Đơn vị đo năng lượng chuẩn trong hệ đo lường quốc tế SI là jun (J).",
+          "correct": true
+        },
+        {
+          "id": "stmt-4",
+          "text": "1 kilôjun (kJ) tương đương với 100 jun (J).",
+          "correct": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hãy nhớ lại hai con đường truyền năng lượng và mối quan hệ giữa kJ với J."
+      },
+      {
+        "level": 2,
+        "text": "1 kJ = 1 000 J (không phải 100 J); năng lượng truyền được qua cả tác dụng lực và truyền nhiệt."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xét từng nhận định",
+        "body": "Đối chiếu từng câu với nội dung Bài 46 SGK KHTN 6."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức đối chiếu",
+        "body": "Năng lượng truyền qua lực và nhiệt; đơn vị SI là J; 1 kJ = 1000 J."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Câu 1: Đúng; Câu 2: Sai (truyền được qua tác dụng lực); Câu 3: Đúng (jun - J); Câu 4: Sai (1 kJ = 1000 J)."
+      }
+    ],
+    "finalSolution": "Câu 1: Đúng · Câu 2: Sai · Câu 3: Đúng · Câu 4: Sai.",
+    "commonMistakes": []
+  }
+]

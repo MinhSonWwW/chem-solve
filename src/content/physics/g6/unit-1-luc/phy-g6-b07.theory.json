@@ -1,0 +1,73 @@
+{
+  "lessonId": "phy-g6-b07",
+  "nodeId": "phy-g6-b07-theory",
+  "title": "Lý thuyết: Biến dạng của lò xo",
+  "subtitle": "Bài 42 SGK Khoa học tự nhiên 6 (Kết nối tri thức)",
+  "sgkBaiSo": 42,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Hiện tượng vật lý",
+      "badgeColor": "cyan",
+      "title": "1. Biến dạng đàn hồi của lò xo",
+      "content": "Khi dùng tay kéo dãn hoặc nén một chiếc lò xo, hình dạng của lò xo bị thay đổi. Khi buông tay ra (thôi tác dụng lực), lò xo tự động lấy lại hình dạng ban đầu. Hiện tượng này gọi là biến dạng đàn hồi.",
+      "bulletPoints": [
+        "Vật có tính chất đàn hồi: lò xo, dây cao su, quả bóng cao su, cung tên.",
+        "Giới hạn đàn hồi: Nếu kéo dãn lò xo quá mạnh vượt quá giới hạn đàn hồi, lò xo sẽ bị dãn vĩnh viễn và không thể co lại như cũ."
+      ],
+      "callout": "Chiều dài ban đầu của lò xo khi chưa bị dãn gọi là chiều dài tự nhiên (kí hiệu: l0)."
+    },
+    {
+      "id": "c2",
+      "badge": "Quy luật cốt lõi",
+      "badgeColor": "amber",
+      "title": "2. Độ dãn của lò xo treo thẳng đứng",
+      "content": "Khi treo một vật nặng vào đầu dưới của một chiếc lò xo treo thẳng đứng, lò xo sẽ dãn dài ra:",
+      "bulletPoints": [
+        "Công thức tính độ dãn: Δl = l - l0 (với l là chiều dài sau khi dãn, l0 là chiều dài tự nhiên).",
+        "Quy luật tỉ lệ thuận: Độ dãn của lò xo treo thẳng đứng tỉ lệ thuận với khối lượng của vật treo.",
+        "Quy tắc bội số: Treo vật có khối lượng tăng lên gấp 2 lần, 3 lần... thì độ dãn của lò xo cũng tăng lên tương ứng gấp 2 lần, 3 lần..."
+      ],
+      "callout": "Ví dụ: Lò xo dài 10 cm, treo 1 quả nặng 50 g thì dãn thành 12 cm (độ dãn Δl = 2 cm). Nếu treo 2 quả nặng 50 g (tổng 100 g), độ dãn sẽ là 4 cm (chiều dài lúc này là 14 cm)."
+    },
+    {
+      "id": "c3",
+      "badge": "Ứng dụng thực tế",
+      "badgeColor": "emerald",
+      "title": "3. Lực kế lò xo và cách sử dụng",
+      "content": "Dựa trên tính chất độ dãn tỉ lệ thuận với lực tác dụng, người ta chế tạo ra lực kế lò xo dùng để đo lực.",
+      "bulletPoints": [
+        "Cấu tạo chính: gồm một chiếc lò xo xoắn, kim chỉ thị gắn liền với đầu lò xo, và bảng chia độ (đơn vị: N).",
+        "Cách đo: Điều chỉnh kim chỉ thị về đúng vạch số 0, móc vật vào đầu đo của lực kế, giữ lực kế theo phương thẳng đứng rồi đọc kết quả."
+      ],
+      "callout": "Lưu ý: Không dùng lực kế để đo những lực lớn hơn giới hạn đo của nó để tránh làm hỏng lò xo."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Một lò xo có chiều dài tự nhiên là 10 cm. Khi treo một quả cân nặng 50 g, lò xo có chiều dài 12 cm. Hỏi độ dãn của lò xo trong trường hợp này là bao nhiêu?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "2 cm",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "12 cm",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "10 cm",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "22 cm",
+        "correct": false
+      }
+    ],
+    "explanation": "Độ dãn của lò xo bằng chiều dài khi treo vật trừ đi chiều dài tự nhiên: Δl = 12 cm - 10 cm = 2 cm."
+  }
+}

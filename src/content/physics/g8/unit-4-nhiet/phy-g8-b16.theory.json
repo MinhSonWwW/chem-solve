@@ -1,0 +1,83 @@
+{
+  "lessonId": "phy-g8-b16",
+  "nodeId": "phy-g8-b16-theory",
+  "title": "Lý thuyết: Sự truyền nhiệt",
+  "subtitle": "Bài 28 SGK Khoa học tự nhiên 8 (Kết nối tri thức)",
+  "sgkBaiSo": 28,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Dẫn nhiệt",
+      "badgeColor": "cyan",
+      "title": "1. Dẫn nhiệt — Hình thức truyền nhiệt của chất rắn",
+      "content": "Dẫn nhiệt là sự truyền nhiệt từ phần này sang phần khác của một vật thể hoặc giữa hai vật tiếp xúc trực tiếp:",
+      "bulletPoints": [
+        "Cơ chế: Các phân tử ở phần nóng dao động mạnh hơn, va chạm và truyền động năng nhiệt cho các phân tử lân cận mà không có sự dịch chuyển vị trí của các khối chất.",
+        "Khả năng dẫn nhiệt: Kim loại dẫn nhiệt tốt nhất (bạc, đồng, nhôm, sắt...). Chất lỏng và chất khí dẫn nhiệt rất kém; môi trường chân không hoàn toàn không dẫn nhiệt.",
+        "Ứng dụng đời sống:",
+        "+ Nồi, niêu, xoong, chảo làm bằng kim loại (nhôm, inox, gang) để hấp thụ và dẫn nhiệt nhanh giúp thức ăn mau chín.",
+        "+ Quai nồi bọc gỗ, nhựa chịu nhiệt, hoặc găng tay làm bằng vải bông xốp (chứa nhiều không khí) để cách nhiệt, tránh bị bỏng khi bưng bê."
+      ],
+      "callout": "Tại sao mùa đông mặc nhiều áo mỏng ấm hơn một áo dày? Giữa các lớp áo mỏng có các lớp không khí tĩnh — mà không khí là chất dẫn nhiệt rất kém, giúp giữ ấm thân nhiệt tối ưu."
+    },
+    {
+      "id": "c2",
+      "badge": "Đối lưu",
+      "badgeColor": "amber",
+      "title": "2. Đối lưu — Hình thức truyền nhiệt của chất lỏng và chất khí",
+      "content": "Đối lưu là sự truyền nhiệt bằng các dòng chất lỏng hoặc chất khí di chuyển:",
+      "bulletPoints": [
+        "Cơ chế tạo dòng đối lưu: Khi đun nóng ở phía dưới, lớp chất lỏng (hoặc khí) nở ra, thể tích tăng làm khối lượng riêng giảm (nhẹ đi) và nổi lên trên. Lớp chất lạnh ở phía trên có khối lượng riêng lớn hơn sẽ chìm xuống thay thế, tạo thành các dòng đối lưu tuần hoàn.",
+        "Đặc điểm: Là hình thức truyền nhiệt chủ yếu của chất lỏng và chất khí. Trong chất rắn và trong môi trường chân không không thể xảy ra hiện tượng đối lưu.",
+        "Ứng dụng thực tế:",
+        "+ Khi đun nước, luôn đặt nguồn nhiệt ở đáy ấm để tạo dòng đối lưu đun sôi toàn bộ nước.",
+        "+ Máy điều hòa nhiệt độ làm mát thường được lắp ở vị trí cao trên tường để không khí lạnh nặng hơn chìm xuống làm mát toàn phòng.",
+        "+ Lò sưởi ấm mùa đông thường đặt ở sát sàn nhà để không khí nóng nhẹ hơn bốc lên sưởi ấm."
+      ],
+      "callout": "Quy tắc vị trí: Làm nóng thì đặt ở dưới đáy — Làm lạnh thì đặt ở trên cao để tận dụng tối đa dòng đối lưu tự nhiên."
+    },
+    {
+      "id": "c3",
+      "badge": "Bức xạ nhiệt",
+      "badgeColor": "emerald",
+      "title": "3. Bức xạ nhiệt và ứng dụng giữ nhiệt của phích nước",
+      "content": "Bức xạ nhiệt là hình thức truyền nhiệt bằng các tia nhiệt truyền thẳng trong không gian:",
+      "bulletPoints": [
+        "Đặc điểm độc đáo: Bức xạ nhiệt có thể truyền qua môi trường chân không. Nhờ đó, nhiệt lượng khổng lồ từ Mặt Trời truyền qua khoảng chân không vũ trụ xuống sưởi ấm Trái Đất.",
+        "Tính chất hấp thụ: Vật có bề mặt sẫm màu (đen, xám thô ráp) hấp thụ và bức xạ nhiệt tốt hơn nhiều so với vật có bề mặt sáng màu, nhẵn bóng.",
+        "Cấu tạo hoàn hảo của phích nước (bình thủy giữ nhiệt):",
+        "+ Ruột phích làm bằng hai lớp thủy tinh, ở giữa được hút hết không khí tạo thành lớp chân không: Ngăn chặn hoàn toàn hiện tượng dẫn nhiệt và đối lưu.",
+        "+ Hai mặt thành thủy tinh trong lớp chân không được tráng một lớp bạc mỏng sáng bóng: Phản xạ các tia bức xạ nhiệt quay trở lại nước nóng.",
+        "+ Nắp phích làm bằng chất xốp hoặc nhựa cách nhiệt: Ngăn chặn sự đối lưu không khí nóng thoát ra ngoài."
+      ],
+      "callout": "Giải thích đời sống: Mùa hè nên mặc quần áo màu sáng (trắng, vàng nhạt) để ít hấp thụ bức xạ nhiệt từ Mặt Trời; bồn chứa xăng dầu sơn màu trắng bạc để giảm hấp thụ nhiệt chống cháy nổ."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Nhiệt lượng từ Mặt Trời truyền qua khoảng chân không vũ trụ xuống Trái Đất chủ yếu bằng hình thức truyền nhiệt nào sau đây?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Bức xạ nhiệt",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Dẫn nhiệt",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Đối lưu",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Nhiễm điện",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 8 Bài 28: Trong khoảng chân không giữa Mặt Trời và Trái Đất không có vật chất nên không thể dẫn nhiệt hay đối lưu; nhiệt chỉ có thể truyền bằng bức xạ nhiệt."
+  }
+}

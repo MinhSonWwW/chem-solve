@@ -1,0 +1,143 @@
+[
+  {
+    "id": "unit.length.si",
+    "name": "Đơn vị đo chiều dài trong hệ SI",
+    "symbol": "m",
+    "standard": "mét",
+    "description": "Đơn vị đo chiều dài hợp pháp của Việt Nam trong hệ đo lường quốc tế SI"
+  },
+  {
+    "id": "unit.mass.si",
+    "name": "Đơn vị đo khối lượng trong hệ SI",
+    "symbol": "kg",
+    "standard": "kilôgam",
+    "description": "Đơn vị đo khối lượng cơ bản trong hệ SI"
+  },
+  {
+    "id": "unit.time.si",
+    "name": "Đơn vị đo thời gian trong hệ SI",
+    "symbol": "s",
+    "standard": "giây",
+    "description": "Đơn vị đo thời gian chuẩn trong hệ SI"
+  },
+  {
+    "id": "unit.temperature.celsius",
+    "name": "Đơn vị đo nhiệt độ thông dụng tại Việt Nam",
+    "symbol": "°C",
+    "standard": "độ Celsius",
+    "description": "Thang đo nhiệt độ Celsius (nước đá tan ở 0 °C, nước sôi ở 100 °C)"
+  },
+  {
+    "id": "force.unit.newton",
+    "name": "Đơn vị đo lực trong hệ SI",
+    "symbol": "N",
+    "standard": "niutơn",
+    "description": "Đơn vị đo lực chuẩn trong hệ SI, đo bằng lực kế"
+  },
+  {
+    "id": "force.gravity.formula",
+    "name": "Công thức liên hệ trọng lượng và khối lượng",
+    "symbol": "P = 10.m",
+    "standard": "P = 10 x m",
+    "description": "Trọng lượng P (N) bằng 10 lần khối lượng m (kg) của vật gần mặt đất"
+  },
+  {
+    "id": "force.spring.stretch",
+    "name": "Quy luật biến dạng của lò xo",
+    "symbol": "Δl = l - l0",
+    "standard": "Độ dãn lò xo tỉ lệ với khối lượng",
+    "description": "Độ dãn của lò xo treo thẳng đứng tỉ lệ thuận với khối lượng vật treo"
+  },
+  {
+    "id": "force.friction.types",
+    "name": "Lực ma sát trong đời sống",
+    "symbol": "F_ms",
+    "standard": "ma sát trượt, ma sát nghỉ",
+    "description": "Lực cản trở chuyển động ở bề mặt tiếp xúc giữa hai vật"
+  },
+  {
+    "id": "force.water.drag",
+    "name": "Lực cản của nước và chất lưu",
+    "symbol": "F_can",
+    "standard": "lực cản chất lưu",
+    "description": "Nước tác dụng lực cản lên vật chuyển động trong nó, vật thuôn dài chịu lực cản nhỏ hơn"
+  },
+  {
+    "id": "energy.unit.joule",
+    "name": "Đơn vị đo năng lượng trong hệ SI",
+    "symbol": "J",
+    "standard": "jun (J), calo (cal)",
+    "description": "Đơn vị đo năng lượng chuẩn trong hệ SI là jun (J); 1 kJ = 1000 J; 1 cal ≈ 4,2 J"
+  },
+  {
+    "id": "energy.forms",
+    "name": "Các dạng năng lượng cơ bản",
+    "symbol": "E",
+    "standard": "động năng, thế năng, hóa năng, nhiệt năng, quang năng, điện năng",
+    "description": "Năng lượng tồn tại dưới nhiều dạng: động năng, thế năng hấp dẫn, thế năng đàn hồi, nhiệt năng, quang năng, điện năng, hóa năng"
+  },
+  {
+    "id": "energy.conservation",
+    "name": "Định luật bảo toàn năng lượng",
+    "symbol": "E_tong = const",
+    "standard": "bảo toàn năng lượng",
+    "description": "Năng lượng không tự nhiên sinh ra hay mất đi mà chỉ chuyển hóa từ dạng này sang dạng khác hoặc truyền từ vật này sang vật khác"
+  },
+  {
+    "id": "energy.waste",
+    "name": "Năng lượng có ích và năng lượng hao phí",
+    "symbol": "E_hp",
+    "standard": "năng lượng hao phí",
+    "description": "Trong quá trình truyền và chuyển hóa năng lượng, luôn xuất hiện năng lượng hao phí thường dưới dạng nhiệt năng hoặc âm thanh"
+  },
+  {
+    "id": "energy.renewable",
+    "name": "Năng lượng tái tạo và không tái tạo",
+    "symbol": "E_tai_tao",
+    "standard": "năng lượng tái tạo",
+    "description": "Năng lượng tái tạo (Mặt Trời, gió, nước, địa nhiệt) có sẵn vô tận và sạch; năng lượng không tái tạo (than đá, dầu mỏ, khí đốt) hữu hạn"
+  },
+  {
+    "id": "energy.saving",
+    "name": "Tiết kiệm năng lượng",
+    "symbol": "E_tiet_kiem",
+    "standard": "sử dụng năng lượng hiệu quả",
+    "description": "Sử dụng năng lượng tiết kiệm, tắt thiết bị khi không dùng, sử dụng thiết bị hiệu suất cao giúp bảo vệ môi trường"
+  },
+  {
+    "id": "astro.earth.rotation",
+    "name": "Chuyển động tự quay của Trái Đất",
+    "symbol": "T_td = 24h",
+    "standard": "tự quay quanh trục từ Tây sang Đông",
+    "description": "Trái Đất tự quay quanh trục theo chiều từ Tây sang Đông với chu kỳ 24 giờ, tạo nên hiện tượng ngày và đêm luân phiên"
+  },
+  {
+    "id": "astro.sun.motion",
+    "name": "Chuyển động nhìn thấy của Mặt Trời",
+    "symbol": "Sun_motion",
+    "standard": "mọc Đông lặn Tây",
+    "description": "Chuyển động nhìn thấy của Mặt Trời mọc ở hướng Đông và lặn ở hướng Tây là chuyển động biểu kiến do Trái Đất tự quay quanh trục"
+  },
+  {
+    "id": "astro.moon.phases",
+    "name": "Các hình dạng nhìn thấy của Mặt Trăng (Pha Mặt Trăng)",
+    "symbol": "Moon_phases",
+    "standard": "tuần Trăng",
+    "description": "Các hình dạng nhìn thấy khác nhau của phần Mặt Trăng được chiếu sáng nhìn từ Trái Đất trong chu kỳ khoảng 1 tháng (tuần Trăng)"
+  },
+  {
+    "id": "astro.solar_system.planets",
+    "name": "Hệ Mặt Trời và 8 hành tinh",
+    "symbol": "Solar_System",
+    "standard": "Mặt Trời và 8 hành tinh",
+    "description": "Hệ gồm Mặt Trời ở trung tâm và 8 hành tinh: Thủy tinh, Kim tinh, Trái Đất, Hỏa tinh, Mộc tinh, Thổ tinh, Thiên vương tinh, Hải vương tinh"
+  },
+  {
+    "id": "astro.milky_way.galaxy",
+    "name": "Dải Ngân hà (Milky Way)",
+    "symbol": "Milky_Way",
+    "standard": "thiên hà xoắn ốc",
+    "description": "Thiên hà xoắn ốc khổng lồ chứa hàng trăm tỉ ngôi sao, Hệ Mặt Trời nằm ở một nhánh xoắn ốc cách tâm khoảng 26.000 năm ánh sáng"
+  }
+]
+

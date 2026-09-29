@@ -1,0 +1,76 @@
+{
+  "lessonId": "phy-g7-b06",
+  "nodeId": "phy-g7-b06-theory",
+  "title": "Lý thuyết: Độ to và độ cao của âm",
+  "subtitle": "Bài 13 SGK Khoa học tự nhiên 7 (Kết nối tri thức)",
+  "sgkBaiSo": 13,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Tần số & Độ cao",
+      "badgeColor": "cyan",
+      "title": "1. Độ cao của âm và tần số dao động",
+      "content": "Âm thanh phát ra có thể cao (bổng) như giọng nữ cao hoặc thấp (trầm) như giọng nam trầm. Độ cao của âm phụ thuộc vào tần số dao động của nguồn âm:",
+      "bulletPoints": [
+        "Tần số là số dao động mà vật thực hiện được trong một giây. Kí hiệu là f, đơn vị là Héc (kí hiệu: Hz).",
+        "Công thức tính tần số: f = N / t (trong đó N là số dao động, t là thời gian tính bằng giây).",
+        "Mối quan hệ: Dao động càng nhanh -> tần số càng lớn -> âm phát ra càng cao (bổng). Ngược lại, dao động càng chậm -> tần số càng nhỏ -> âm phát ra càng thấp (trầm)."
+      ],
+      "callout": "Quy tắc vàng: Tần số quyết định độ cao của âm (Cao = Bổng, Thấp = Trầm)."
+    },
+    {
+      "id": "c2",
+      "badge": "Giới hạn nghe của tai",
+      "badgeColor": "amber",
+      "title": "2. Tai người nghe được âm có tần số bao nhiêu?",
+      "content": "Tai người bình thường không thể nghe được mọi tần số âm thanh mà chỉ nghe được trong một dải tần xác định:",
+      "bulletPoints": [
+        "Âm nghe được: Có tần số từ 20 Hz đến 20 000 Hz.",
+        "Hạ âm: Âm có tần số dưới 20 Hz. Con người không nghe được nhưng một số loài động vật như voi, chim bồ câu, cá voi có thể cảm nhận để giao tiếp hoặc dự báo động đất.",
+        "Siêu âm: Âm có tần số trên 20 000 Hz. Con người không nghe được nhưng loài dơi, cá heo phát ra siêu âm để định vị săn mồi; y tế ứng dụng trong máy siêu âm chẩn đoán bệnh."
+      ],
+      "callout": "Kiến thức thú vị: Dơi phát ra sóng siêu âm va vào chướng ngại vật rồi phản xạ lại tai dơi giúp dơi bay lượn bắt mồi chính xác trong đêm tối."
+    },
+    {
+      "id": "c3",
+      "badge": "Biên độ & Độ to",
+      "badgeColor": "emerald",
+      "title": "3. Độ to của âm và biên độ dao động",
+      "content": "Âm thanh phát ra có thể to (như tiếng sấm, tiếng loa) hoặc nhỏ (như tiếng muỗi vo ve, tiếng thì thầm). Độ to phụ thuộc vào biên độ dao động:",
+      "bulletPoints": [
+        "Biên độ dao động là độ lệch lớn nhất của vật dao động so với vị trí cân bằng của nó.",
+        "Mối quan hệ: Biên độ dao động càng lớn -> âm phát ra càng to. Biên độ dao động càng nhỏ -> âm phát ra càng nhỏ.",
+        "Đơn vị đo độ to của âm là đêxiben (kí hiệu: dB).",
+        "Thang độ to thông dụng: Tiếng nói thì thầm (~ 30 dB); nói chuyện bình thường (~ 50 - 60 dB); tiếng ồn đường phố đông xe (~ 70 - 80 dB); máy bay phản lực cất cánh ở cự li gần (~ 120 - 130 dB - đạt ngưỡng gây đau tai)."
+      ],
+      "callout": "Cảnh báo an toàn: Tiếng ồn vượt quá 85 dB kéo dài có thể gây tổn thương tế bào thính giác, dẫn đến suy giảm thính lực vĩnh viễn."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Độ cao (bổng/trầm) và độ to của âm thanh phát ra lần lượt phụ thuộc vào những đại lượng nào của nguồn âm?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Độ cao phụ thuộc vào tần số dao động; độ to phụ thuộc vào biên độ dao động",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Độ cao phụ thuộc vào biên độ dao động; độ to phụ thuộc vào tần số dao động",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Cả độ cao và độ to đều chỉ phụ thuộc vào tần số dao động",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Cả độ cao và độ to đều chỉ phụ thuộc vào khoảng cách truyền âm",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 7 Bài 13: Tần số dao động (Hz) quyết định độ cao của âm; Biên độ dao động quyết định độ to (dB) của âm."
+  }
+}

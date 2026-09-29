@@ -1,0 +1,78 @@
+{
+  "lessonId": "phy-g9-b01",
+  "nodeId": "phy-g9-b01-theory",
+  "title": "Lý thuyết: Động năng. Thế năng",
+  "subtitle": "Bài 2 SGK Khoa học tự nhiên 9 (Kết nối tri thức)",
+  "sgkBaiSo": 2,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm cốt lõi",
+      "badgeColor": "cyan",
+      "title": "1. Động năng và công thức tính",
+      "content": "Mọi vật đang chuyển động đều mang năng lượng. Dạng năng lượng mà một vật có được do nó đang chuyển động gọi là động năng:",
+      "bulletPoints": [
+        "Định nghĩa: Năng lượng do vật chuyển động mà có được gọi là động năng (kí hiệu: $W_đ$).",
+        "Công thức tính: $W_đ = \\frac{1}{2} m v^2$",
+        "Trong đó: $m$ là khối lượng của vật (đơn vị: kg); $v$ là tốc độ của vật (đơn vị: m/s); $W_đ$ là động năng của vật (đơn vị: Jun, kí hiệu J).",
+        "Yếu tố ảnh hưởng: Động năng tỉ lệ thuận với khối lượng $m$ và tỉ lệ thuận với bình phương tốc độ $v^2$ của vật. Vật có khối lượng càng lớn và chuyển động càng nhanh thì động năng càng lớn."
+      ],
+      "callout": "Quy tắc an toàn giao thông: Tốc độ tăng 2 lần thì động năng tăng gấp 4 lần ($2^2 = 4$). Xe chạy càng nhanh thì động năng càng lớn, quãng đường phanh càng dài và mức độ va chạm càng nguy hiểm!"
+    },
+    {
+      "id": "c2",
+      "badge": "Thế năng trọng trường",
+      "badgeColor": "amber",
+      "title": "2. Thế năng trọng trường và vai trò của mốc thế năng",
+      "content": "Một vật thể ở trên cao luôn có xu hướng rơi xuống do tác dụng của trọng lực và có khả năng sinh công:",
+      "bulletPoints": [
+        "Định nghĩa: Năng lượng của một vật có được khi nó ở một độ cao so với mặt đất (hoặc so với một vị trí khác được chọn làm mốc) gọi là thế năng trọng trường (kí hiệu: $W_t$).",
+        "Công thức tính: $W_t = P \\cdot h = 10 \\cdot m \\cdot h$",
+        "Trong đó: $P$ là trọng lượng của vật (đơn vị: N); $m$ là khối lượng của vật (kg); $h$ là độ cao của vật so với mốc thế năng (đơn vị: m); $W_t$ là thế năng trọng trường (đơn vị: J).",
+        "Mốc thế năng: Giá trị của thế năng phụ thuộc vào việc chọn mốc tính độ cao (thông thường chọn mặt đất làm mốc). Tại mốc thế năng thì $h = 0$ nên $W_t = 0$."
+      ],
+      "callout": "Đặc điểm quan trọng: Vật có trọng lượng càng lớn và ở càng cao so với mốc thì có thế năng trọng trường càng lớn."
+    },
+    {
+      "id": "c3",
+      "badge": "Thế năng đàn hồi & Mở rộng",
+      "badgeColor": "emerald",
+      "title": "3. Thế năng đàn hồi và ứng dụng thực tiễn",
+      "content": "Ngoài thế năng trọng trường, trong thực tế còn có thế năng đàn hồi xuất hiện khi các vật bị biến dạng đàn hồi:",
+      "bulletPoints": [
+        "Định nghĩa: Năng lượng của một vật bị biến dạng đàn hồi (như lò xo bị nén/dãn, dây cung giương căng, đệm lò xo...) được gọi là thế năng đàn hồi.",
+        "Quy luật: Độ biến dạng của vật đàn hồi càng lớn thì thế năng đàn hồi của vật càng lớn.",
+        "Ứng dụng: Cánh cung khi giương căng tích trữ thế năng đàn hồi để đẩy mũi tên bay xa; lò xo giảm xóc xe máy, ô tô hấp thụ chấn động.",
+        "Đơn vị đo chung: Cả động năng và thế năng đều có đơn vị đo chuẩn trong hệ SI là Jun (kí hiệu: J)."
+      ],
+      "callout": "Ghi nhớ đơn vị: $1\\text{ kJ} = 1\\,000\\text{ J}$; $1\\text{ MJ} = 1\\,000\\,000\\text{ J}$. Chú ý đổi đơn vị khối lượng sang kg và vận tốc sang m/s trước khi tính toán."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Động năng của một vật chuyển động được xác định bằng công thức nào sau đây?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "W_đ = (1/2) . m . v²",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "W_đ = m . v",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "W_đ = P . h",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "W_đ = (1/2) . m . v",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 9 Bài 2: Động năng của vật có khối lượng m chuyển động với tốc độ v được tính bằng biểu thức W_đ = (1/2).m.v²."
+  }
+}

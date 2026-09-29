@@ -1,0 +1,74 @@
+{
+  "lessonId": "phy-g6-b10",
+  "nodeId": "phy-g6-b10-theory",
+  "title": "Lý thuyết: Lực cản của nước",
+  "subtitle": "Bài 45 SGK Khoa học tự nhiên 6 (Kết nối tri thức)",
+  "sgkBaiSo": 45,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm cốt lõi",
+      "badgeColor": "cyan",
+      "title": "1. Lực cản của chất lưu (nước và không khí)",
+      "content": "Khi một vật chuyển động trong nước (hoặc trong không khí), nước (hoặc không khí) sẽ tác dụng lực cản lên vật, làm cản trở chuyển động của vật đó.",
+      "bulletPoints": [
+        "Chất lưu: Thuật ngữ chung chỉ chất lỏng và chất khí vì chúng đều có tính chất chảy được.",
+        "So sánh độ lớn: Lực cản của nước lớn hơn rất nhiều so với lực cản của không khí đối với cùng một vật chuyển động với cùng tốc độ (vì mật độ phân tử của nước lớn hơn không khí khoảng 800 lần).",
+        "Trải nghiệm thực tế: Khi bạn đi bộ dưới nước ở bể bơi, bạn cảm thấy bước chân rất nặng nề và khó khăn hơn nhiều so với đi bộ trên cạn."
+      ],
+      "callout": "Phương của lực cản luôn ngược với chiều chuyển động của vật trong chất lưu."
+    },
+    {
+      "id": "c2",
+      "badge": "Yếu tố quyết định",
+      "badgeColor": "amber",
+      "title": "2. Hình dạng của vật và lực cản",
+      "content": "Độ lớn của lực cản mà nước tác dụng lên vật phụ thuộc rất lớn vào hình dạng và diện tích bề mặt cản của vật:",
+      "bulletPoints": [
+        "Hình dạng thuôn dài (hình con thoi, hình giọt nước): Có phần đầu nhọn vuốt thon dần về phía sau, giúp dòng nước dễ dàng rẽ sang hai bên và trượt êm dọc thân vật $\\rightarrow$ Chịu lực cản nhỏ nhất.",
+        "Hình dạng dẹt phẳng, gồ ghề, tiết diện cản lớn: Khiến các dòng nước va đập trực diện và tạo các vùng xoáy nước hỗn loạn phía sau $\\rightarrow$ Chịu lực cản rất lớn."
+      ],
+      "callout": "Quy tắc vàng: Vật có hình dạng càng thuôn dài khí động học thì lực cản của nước và không khí tác dụng lên nó càng nhỏ."
+    },
+    {
+      "id": "c3",
+      "badge": "Ứng dụng khoa học",
+      "badgeColor": "emerald",
+      "title": "3. Thích nghi sinh học và ứng dụng kỹ thuật",
+      "content": "Quy luật về lực cản của nước được ứng dụng rộng rãi trong tự nhiên và công nghệ:",
+      "bulletPoints": [
+        "Trong tự nhiên: Các loài động vật bơi lặn giỏi dưới nước như cá chép, cá heo, cá mập, chim cánh cụt đều tiến hóa có cơ thể hình thoi thuôn dài để giảm tối đa lực cản của nước khi săn mồi.",
+        "Trong kỹ thuật: Mũi tàu ngầm, thân tàu thủy cao tốc, ca nô, và ván lướt sóng đều được chế tạo với đường nét vuốt thon cong mượt mà để lướt trên mặt nước nhanh và tiết kiệm nhiên liệu.",
+        "Trong thể thao: Các vận động viên bơi lội luôn giữ tư thế thân người duỗi thẳng tắp hình mũi tên (streamline) và đội mũ bơi trơn nhẵn để bơi nhanh nhất."
+      ],
+      "callout": "Tàu ngầm hiện đại có hình dáng mô phỏng thân của cá voi và cá heo để di chuyển êm ái và xé nước hiệu quả nhất."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Tại sao các loài cá sống dưới nước như cá heo, cá mập lại có thân hình thuôn nhọn hai đầu (hình con thoi)?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Để giảm tối đa lực cản của nước, giúp cá bơi nhanh và tốn ít năng lượng",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Để chứa được nhiều thức ăn hơn trong bụng",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Để dễ dàng ngụy trang dưới đáy cát",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Để tăng lực ma sát với nước giúp phanh lại nhanh hơn",
+        "correct": false
+      }
+    ],
+    "explanation": "Thân hình thuôn dài hình thoi giúp dòng nước dễ dàng lướt qua thân cá, giảm thiểu tối đa lực cản của nước."
+  }
+}

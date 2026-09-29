@@ -1,0 +1,81 @@
+{
+  "lessonId": "phy-g9-b07",
+  "nodeId": "phy-g9-b07-theory",
+  "title": "Lý thuyết: Thấu kính",
+  "subtitle": "Bài 8 SGK Khoa học tự nhiên 9 (Kết nối tri thức)",
+  "sgkBaiSo": 8,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Phân loại & Cấu tạo",
+      "badgeColor": "cyan",
+      "title": "1. Phân loại thấu kính và các yếu tố hình học",
+      "content": "Thấu kính là khối chất trong suốt (thủy tinh hoặc nhựa) giới hạn bởi hai mặt cong hoặc một mặt cong và một mặt phẳng:",
+      "bulletPoints": [
+        "Thấu kính hội tụ (rìa mỏng): Phần rìa mỏng hơn phần giữa. Chùm tia tới song song với trục chính cho chùm tia ló hội tụ tại một điểm.",
+        "Thấu kính phân kì (rìa dày): Phần rìa dày hơn phần giữa. Chùm tia tới song song với trục chính cho chùm tia ló loe rộng (phân kì).",
+        "Quang tâm $O$: Điểm chính giữa thấu kính, mọi tia sáng đi qua quang tâm đều truyền thẳng không đổi hướng.",
+        "Trục chính $\\Delta$: Đường thẳng đi qua quang tâm $O$ và vuông góc với mặt thấu kính.",
+        "Tiêu điểm $F$ và $F'$: Nằm đối xứng nhau qua quang tâm trên trục chính. Khoảng cách $OF = OF' = f$ gọi là tiêu cự của thấu kính."
+      ],
+      "callout": "Kí hiệu quy ước: Thấu kính hội tụ có mũi tên hướng ra ngoài; thấu kính phân kì có mũi tên hướng vào trong."
+    },
+    {
+      "id": "c2",
+      "badge": "Tia sáng đặc biệt",
+      "badgeColor": "amber",
+      "title": "2. Đường truyền của 3 tia sáng đặc biệt qua thấu kính hội tụ",
+      "content": "Để dựng ảnh của một vật qua thấu kính hội tụ, ta sử dụng đường truyền của 2 trong 3 tia sáng đặc biệt:",
+      "bulletPoints": [
+        "Tia 1 (Qua quang tâm): Tia tới đi qua quang tâm $O$ thì tia ló tiếp tục truyền thẳng theo phương của tia tới.",
+        "Tia 2 (Song song trục chính): Tia tới song song với trục chính thì tia ló đi qua tiêu điểm ảnh $F'$.",
+        "Tia 3 (Qua tiêu điểm vật): Tia tới đi qua tiêu điểm vật $F$ thì tia ló truyền song song với trục chính.",
+        "Giao điểm của các tia ló (hoặc đường kéo dài) chính là ảnh của điểm sáng tương ứng."
+      ],
+      "callout": "Mẹo vẽ hình nhanh: Chỉ cần vẽ tia 1 (qua O truyền thẳng) và tia 2 (song song trục chính rồi qua F') là xác định được vị trí ảnh!"
+    },
+    {
+      "id": "c3",
+      "badge": "Đặc điểm tạo ảnh",
+      "badgeColor": "emerald",
+      "title": "3. Đặc điểm ảnh của một vật tạo bởi thấu kính",
+      "content": "Tính chất của ảnh phụ thuộc vào loại thấu kính và khoảng cách từ vật đến thấu kính ($d$):",
+      "bulletPoints": [
+        "Thấu kính hội tụ:",
+        "+ Vật đặt rất xa thấu kính ($d > 2f$): Cho ảnh THẬT, NGƯỢC CHIỀU và NHỎ HƠN vật.",
+        "+ Vật đặt tại vị trí đặc biệt $d = 2f$: Cho ảnh THẬT, NGƯỢC CHIỀU và BẰNG VẬT ($d' = 2f$).",
+        "+ Vật đặt trong khoảng $f < d < 2f$: Cho ảnh THẬT, NGƯỢC CHIỀU và LỚN HƠN vật.",
+        "+ Vật đặt trong khoảng tiêu cự ($d < f$): Cho ảnh ẢO, CÙNG CHIỀU và LỚN HƠN vật (nguyên lý của kính lúp).",
+        "Thấu kính phân kì: Với mọi vị trí đặt vật trước thấu kính, luôn cho ảnh ẢO, CÙNG CHIỀU, NHỎ HƠN vật và luôn nằm trong khoảng tiêu cự của thấu kính."
+      ],
+      "callout": "Phân biệt ảnh thật và ảnh ảo: Ảnh thật ngược chiều với vật và hứng được trên màn chắn; ảnh ảo cùng chiều với vật và không hứng được trên màn (chỉ quan sát được bằng mắt)."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Tia sáng nào sau đây khi chiếu qua thấu kính hội tụ sẽ tiếp tục truyền thẳng mà không bị đổi hướng?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Tia sáng đi qua quang tâm O của thấu kính",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Tia sáng truyền song song với trục chính",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Tia sáng đi qua tiêu điểm vật F",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Tia sáng chiếu nghiêng bất kì vào rìa thấu kính",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 9 Bài 8: Mọi tia sáng đi qua quang tâm O của thấu kính đều tiếp tục truyền thẳng theo phương của tia tới."
+  }
+}

@@ -1,0 +1,499 @@
+[
+  {
+    "id": "phy-g7-b10-mcq-001",
+    "lessonId": "phy-g7-b10",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "plane-mirror-image-properties"
+    ],
+    "difficulty": 1,
+    "prompt": "Ảnh của một vật tạo bởi gương phẳng có tính chất nào sau đây?",
+    "knowledge": [
+      "light.plane_mirror_image"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Là ảnh ảo, có độ lớn nhỏ hơn vật nhiều lần"
+        },
+        {
+          "id": "opt-b",
+          "label": "Là ảnh ảo, không hứng được trên màn chắn, có độ lớn bằng vật"
+        },
+        {
+          "id": "opt-c",
+          "label": "Là ảnh thật, ngược chiều với vật và nhỏ hơn vật"
+        },
+        {
+          "id": "opt-d",
+          "label": "Là ảnh thật, hứng được trên màn chắn và lớn hơn vật"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi bạn soi gương phẳng, ảnh của bạn có hứng được trên một tấm bìa đặt phía sau gương không?"
+      },
+      {
+        "level": 2,
+        "text": "Ảnh qua gương phẳng là ảnh ảo (không hứng được trên màn) và có kích thước bằng đúng vật."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tính chất ảnh qua gương phẳng",
+        "body": "Xác định bản chất ảnh và kích thước của ảnh tạo bởi gương phẳng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 7 (Bài 17: Ảnh của vật qua gương phẳng), ảnh tạo bởi gương phẳng là ảnh ảo, không hứng được trên màn chắn và có độ lớn bằng vật."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khẳng định đúng là **Là ảnh ảo, không hứng được trên màn chắn, có độ lớn bằng vật**."
+      }
+    ],
+    "finalSolution": "Ảnh qua gương phẳng là **ảnh ảo, không hứng được trên màn, lớn bằng vật**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b10-mcq-002",
+    "lessonId": "phy-g7-b10",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "plane-mirror-distance-symmetry"
+    ],
+    "difficulty": 1,
+    "prompt": "Khoảng cách từ một điểm trên vật đến gương phẳng và khoảng cách từ ảnh của điểm đó đến gương phẳng có mối quan hệ như thế nào?",
+    "knowledge": [
+      "light.plane_mirror_image"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Khoảng cách từ ảnh đến gương luôn lớn gấp đôi khoảng cách từ vật đến gương"
+        },
+        {
+          "id": "opt-b",
+          "label": "Khoảng cách từ ảnh đến gương luôn bằng một nửa khoảng cách từ vật đến gương"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khoảng cách từ ảnh đến gương phụ thuộc vào góc chiếu của tia sáng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Bằng nhau (d' = d)"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ảnh và vật có tính chất đối xứng với nhau qua mặt phẳng gương."
+      },
+      {
+        "level": 2,
+        "text": "Tính chất đối xứng: d' = d (khoảng cách từ ảnh đến gương bằng khoảng cách từ vật đến gương)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mối quan hệ vị trí ảnh - vật",
+        "body": "Xác định quy luật về khoảng cách từ vật và ảnh tới gương phẳng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Khoảng cách từ một điểm của vật đến gương phẳng bằng khoảng cách từ ảnh của điểm đó đến gương phẳng ($d' = d$)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Mối quan hệ đúng là **Bằng nhau (d' = d)**."
+      }
+    ],
+    "finalSolution": "Khoảng cách từ ảnh đến gương **bằng khoảng cách từ vật đến gương** ($d' = d$).",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b10-num-003",
+    "lessonId": "phy-g7-b10",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "plane-mirror-calculate-distance"
+    ],
+    "difficulty": 2,
+    "prompt": "Một người đứng thẳng cách mặt gương phẳng một khoảng 1,5 m. Khoảng cách giữa người đó và ảnh của mình tạo bởi gương là bao nhiêu mét?",
+    "knowledge": [
+      "light.plane_mirror_image"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 3,
+      "unit": "m",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khoảng cách từ ảnh đến gương bằng khoảng cách từ người đến gương (1,5 m)."
+      },
+      {
+        "level": 2,
+        "text": "Khoảng cách từ người đến ảnh = khoảng cách từ người đến gương + khoảng cách từ gương đến ảnh = 1,5 + 1,5."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Khoảng cách từ người (vật) đến gương $d = 1,5\\text{ m}$."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tính chất đối xứng gương phẳng",
+        "body": "Khoảng cách từ ảnh đến gương là $d' = d = 1,5\\text{ m}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính khoảng cách người - ảnh",
+        "body": "Khoảng cách giữa người và ảnh là: $L = d + d' = 1,5 + 1,5 = 3\\text{ m}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khoảng cách giữa người đó và ảnh là **3 m**."
+      }
+    ],
+    "finalSolution": "Khoảng cách giữa người và ảnh: $L = d + d' = 1,5 + 1,5 = 3\\text{ m}$.",
+    "commonMistakes": [
+      {
+        "id": "confused-with-distance-to-mirror",
+        "message": "Bạn đã nhầm khoảng cách giữa người và ảnh với khoảng cách từ người đến gương (1,5 m). Khoảng cách đến ảnh phải gấp đôi (1,5 * 2 = 3 m).",
+        "trapAnswers": [
+          "1.5",
+          "1,5",
+          "1.5 m",
+          "1,5 m"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b10-num-004",
+    "lessonId": "phy-g7-b10",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "plane-mirror-calculate-size"
+    ],
+    "difficulty": 2,
+    "prompt": "Một cây nến có chiều cao h = 12 cm được đặt thẳng đứng trước một gương phẳng. Chiều cao của ảnh cây nến tạo bởi gương phẳng là bao nhiêu cm?",
+    "knowledge": [
+      "light.plane_mirror_image"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 12,
+      "unit": "cm",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Độ lớn của ảnh tạo bởi gương phẳng có quan hệ như thế nào với độ lớn của vật?"
+      },
+      {
+        "level": 2,
+        "text": "Độ lớn của ảnh luôn bằng đúng độ lớn của vật: h' = h."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Chiều cao của vật (cây nến) $h = 12\\text{ cm}$."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tính chất ảnh qua gương phẳng",
+        "body": "Theo tính chất ảnh tạo bởi gương phẳng, độ lớn của ảnh luôn bằng độ lớn của vật ($h' = h$)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Chiều cao của ảnh cây nến trong gương là **12 cm**."
+      }
+    ],
+    "finalSolution": "Chiều cao của ảnh bằng chiều cao của vật: **$h' = 12\\text{ cm}$**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b10-num-005",
+    "lessonId": "phy-g7-b10",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "plane-mirror-moving-object"
+    ],
+    "difficulty": 2,
+    "prompt": "Một bạn học sinh ban đầu đứng cách gương phẳng 2 m. Sau đó bạn tiến lại gần gương thêm một đoạn 0,5 m. Hỏi lúc này khoảng cách giữa bạn học sinh và ảnh của bạn trong gương là bao nhiêu mét?",
+    "knowledge": [
+      "light.plane_mirror_image"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 3,
+      "unit": "m",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tính khoảng cách mới từ bạn học sinh đến mặt gương: 2 m - 0,5 m."
+      },
+      {
+        "level": 2,
+        "text": "Khoảng cách mới đến gương là 1,5 m. Khoảng cách giữa người và ảnh là: 1,5 * 2 = 3 m."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Xác định khoảng cách mới",
+        "body": "Ban đầu cách 2 m, tiến lại gần 0,5 m -> Khoảng cách mới từ bạn đến gương là: $d_2 = 2 - 0,5 = 1,5\\text{ m}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Khoảng cách đến ảnh",
+        "body": "Khoảng cách từ ảnh mới đến gương là $d'_2 = 1,5\\text{ m}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "Khoảng cách giữa bạn học sinh và ảnh là: $L = d_2 + d'_2 = 1,5 + 1,5 = 3\\text{ m}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khoảng cách mới giữa bạn và ảnh là **3 m**."
+      }
+    ],
+    "finalSolution": "Khoảng cách mới đến gương: $1,5\\text{ m}$. Khoảng cách đến ảnh: $1,5 \\times 2 = 3\\text{ m}$.",
+    "commonMistakes": [
+      {
+        "id": "forgot-to-double-new-distance",
+        "message": "1,5 m chỉ là khoảng cách từ bạn đến gương. Khoảng cách đến ảnh phải là 1,5 * 2 = 3 m.",
+        "trapAnswers": [
+          "1.5",
+          "1,5",
+          "1.5 m",
+          "1,5 m"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b10-mcq-006",
+    "lessonId": "phy-g7-b10",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "plane-mirror-periscope"
+    ],
+    "difficulty": 2,
+    "prompt": "Kính tiềm vọng đơn giản dùng trong tàu ngầm hoặc các công sự chiến hào giúp quan sát cảnh quan trên mặt nước được chế tạo từ bộ phận chính là:",
+    "knowledge": [
+      "light.plane_mirror_image"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hai gương cầu lồi đặt đối diện nhau"
+        },
+        {
+          "id": "opt-b",
+          "label": "Một ống kim loại rỗng không có gương"
+        },
+        {
+          "id": "opt-c",
+          "label": "Một tấm kính phẳng trong suốt không phản xạ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hai gương phẳng đặt song song với nhau và nghiêng một góc 45° so với phương truyền sáng"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Kính tiềm vọng đổi hướng tia sáng 2 lần, mỗi lần 90 độ."
+      },
+      {
+        "level": 2,
+        "text": "Cấu tạo gồm 2 gương phẳng đặt song song và nghiêng 45 độ ở hai đầu ống kính."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cấu tạo kính tiềm vọng",
+        "body": "Xác định các bộ phận quang học chính tạo nên kính tiềm vọng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 7 Bài 17, kính tiềm vọng đơn giản gồm hai gương phẳng đặt song song với nhau và cùng nghiêng một góc 45° so với trục ống kính."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Bộ phận chính là **Hai gương phẳng đặt song song và nghiêng góc 45°**."
+      }
+    ],
+    "finalSolution": "Kính tiềm vọng cấu tạo từ **hai gương phẳng đặt song song nghiêng 45°**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b10-tf-007",
+    "lessonId": "phy-g7-b10",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "plane-mirror-properties-tf"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai của các khẳng định sau về ảnh tạo bởi gương phẳng:",
+    "knowledge": [
+      "light.plane_mirror_image"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Ảnh của một vật tạo bởi gương phẳng là ảnh ảo và luôn đối xứng với vật qua mặt phẳng gương.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Khi người tiến lại gần gương phẳng thì độ lớn của ảnh trong gương sẽ to dần lên vượt quá chiều cao thực của người.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Khi vẽ ảnh ảo tạo bởi gương phẳng trên giấy, quy ước bắt buộc là phải vẽ bằng đường nét đứt.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Độ lớn của ảnh luôn bằng độ lớn của vật, tiến lại gần mắt nhìn góc trông lớn hơn chứ kích thước thực tế của ảnh không đổi (mệnh đề 2 sai)."
+      },
+      {
+        "level": 2,
+        "text": "Ảnh ảo không có thật nên quy ước biểu diễn bằng nét đứt."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 3 nhận định",
+        "body": "Đánh giá các phát biểu về tính chất đối xứng, kích thước ảnh và quy ước vẽ ảnh ảo."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu kiến thức SGK",
+        "body": "- Mệnh đề 1: ĐÚNG. Ảnh ảo qua gương phẳng đối xứng với vật qua mặt gương.\\n- Mệnh đề 2: SAI. Độ lớn của ảnh luôn bằng đúng độ lớn của vật, không hề to lên hay nhỏ đi khi khoảng cách thay đổi.\\n- Mệnh đề 3: ĐÚNG. Ảnh ảo và đường kéo dài của tia sáng bắt buộc vẽ bằng nét đứt."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự đáp án là **Đúng - Sai - Đúng**."
+      }
+    ],
+    "finalSolution": "Mệnh đề 1: **Đúng**; Mệnh đề 2: **Sai**; Mệnh đề 3: **Đúng**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b10-mcq-008",
+    "lessonId": "phy-g7-b10",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "plane-mirror-ambulance-sign"
+    ],
+    "difficulty": 3,
+    "prompt": "Tại sao ở đầu các xe cấp cứu (xe cứu thương), dòng chữ 'AMBULANCE' thường được sơn ngược từ phải sang trái (dạng đối xứng gương)?",
+    "knowledge": [
+      "light.plane_mirror_image"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Để người đi bộ trên vỉa hè đọc được từ xa"
+        },
+        {
+          "id": "opt-b",
+          "label": "Do lỗi in ấn trong quá trình sản xuất xe cứu thương"
+        },
+        {
+          "id": "opt-c",
+          "label": "Để phân biệt xe cứu thương của bệnh viện công và bệnh viện tư"
+        },
+        {
+          "id": "opt-d",
+          "label": "Để người lái xe phía trước nhìn qua gương chiếu hậu sẽ thấy dòng chữ xuôi, dễ đọc và kịp thời nhường đường"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Gương phẳng có tính chất làm đảo ngược bên trái thành bên phải của ảnh."
+      },
+      {
+        "level": 2,
+        "text": "Khi chữ viết ngược phản chiếu qua gương chiếu hậu của xe phía trước, ảnh tạo ra sẽ đảo ngược lại thành chữ viết xuôi bình thường."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hiện tượng đối xứng qua gương",
+        "body": "Giải thích thiết kế chữ in ngược trên xe cứu thương."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Bản chất vật lí",
+        "body": "Ảnh tạo bởi gương phẳng đối xứng với vật qua gương, tức là có sự đổi chiều trái - phải. Khi chữ 'AMBULANCE' được in ngược ở đầu xe, người lái xe chạy phía trước nhìn vào gương chiếu hậu sẽ thấy ảnh của dòng chữ lộn ngược lại thành chữ xuôi bình thường, giúp nhận diện ngay xe ưu tiên để nhường đường."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Mục đích là **Để người lái xe phía trước nhìn qua gương chiếu hậu sẽ thấy chữ xuôi và nhường đường**."
+      }
+    ],
+    "finalSolution": "Sơn ngược để qua gương chiếu hậu, tài xế phía trước **thấy chữ xuôi thuận mắt** và nhường đường.",
+    "commonMistakes": []
+  }
+]

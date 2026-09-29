@@ -1,0 +1,519 @@
+[
+  {
+    "id": "phy-g7-b06-mcq-001",
+    "lessonId": "phy-g7-b06",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "sound-frequency-definition"
+    ],
+    "difficulty": 1,
+    "prompt": "Tần số dao động là gì và đơn vị đo tần số trong hệ SI là gì?",
+    "knowledge": [
+      "sound.frequency_pitch"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Quãng đường vật đi được trong 1 giây, đơn vị là mét trên giây (m/s)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Độ lệch lớn nhất của vật khỏi vị trí cân bằng, đơn vị là mét (m)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Thời gian để thực hiện 1 dao động, đơn vị là giây (s)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Số dao động thực hiện được trong 1 giây, đơn vị là Héc (Hz)"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tần số thể hiện mức độ thường xuyên, tức là số lần dao động trong một đơn vị thời gian."
+      },
+      {
+        "level": 2,
+        "text": "Số dao động trong 1 giây gọi là tần số, đơn vị đặt theo tên nhà vật lí Heinrich Hertz (kí hiệu: Hz)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Định nghĩa tần số",
+        "body": "Xác định khái niệm và đơn vị đo của tần số dao động."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 7 (Bài 13), số dao động vật thực hiện được trong một giây gọi là tần số dao động, đơn vị đo là Héc (kí hiệu: Hz)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Định nghĩa đúng là: **Số dao động thực hiện được trong 1 giây, đơn vị là Héc (Hz)**."
+      }
+    ],
+    "finalSolution": "Tần số là **số dao động trong 1 giây**, đơn vị là **Héc (Hz)**.",
+    "commonMistakes": [
+      {
+        "id": "confused-with-period",
+        "message": "Thời gian để vật thực hiện được 1 dao động gọi là chu kì (kí hiệu T, đơn vị s), không phải tần số."
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b06-mcq-002",
+    "lessonId": "phy-g7-b06",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "sound-pitch-frequency"
+    ],
+    "difficulty": 1,
+    "prompt": "Độ cao của âm thanh (âm phát ra bổng hay trầm) phụ thuộc trực tiếp vào yếu tố nào của nguồn âm?",
+    "knowledge": [
+      "sound.frequency_pitch"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Nhiệt độ của môi trường truyền âm"
+        },
+        {
+          "id": "opt-b",
+          "label": "Khoảng cách từ tai đến nguồn âm"
+        },
+        {
+          "id": "opt-c",
+          "label": "Biên độ dao động của nguồn âm"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tần số dao động của nguồn âm"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi gảy một sợi dây đàn mỏng rung rất nhanh và một sợi dây đàn to dày rung chậm, âm nào phát ra bổng hơn?"
+      },
+      {
+        "level": 2,
+        "text": "Rung càng nhanh -> tần số càng lớn -> âm càng bổng (cao)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mối quan hệ giữa độ cao và đặc tính dao động",
+        "body": "Tìm đại lượng quyết định độ cao của âm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 7 Bài 13, tần số dao động quyết định độ cao của âm: tần số càng lớn thì âm càng cao (bổng), tần số càng nhỏ thì âm càng thấp (trầm)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Độ cao của âm phụ thuộc vào **Tần số dao động của nguồn âm**."
+      }
+    ],
+    "finalSolution": "Độ cao của âm phụ thuộc vào **tần số dao động** của nguồn âm.",
+    "commonMistakes": [
+      {
+        "id": "confused-loudness-pitch",
+        "message": "Chú ý phân biệt: Tần số quyết định độ cao (bổng/trầm); Biên độ quyết định độ to (to/nhỏ)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b06-mcq-003",
+    "lessonId": "phy-g7-b06",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "sound-loudness-amplitude"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi bạn gõ mạnh vào mặt trống, tiếng trống phát ra to hơn khi gõ nhẹ. Nguyên nhân là do khi gõ mạnh:",
+    "knowledge": [
+      "sound.amplitude_loudness"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Mặt trống dao động chậm lại"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tần số dao động của mặt trống tăng lên gấp đôi"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vận tốc truyền âm trong không khí tăng lên"
+        },
+        {
+          "id": "opt-d",
+          "label": "Biên độ dao động của mặt trống lớn hơn"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Gõ mạnh làm mặt trống bị lệch nhiều hơn hay ít hơn so với vị trí ban đầu?"
+      },
+      {
+        "level": 2,
+        "text": "Độ lệch lớn nhất khỏi vị trí cân bằng chính là biên độ dao động. Biên độ càng lớn thì âm phát ra càng to."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích tác động cơ học",
+        "body": "Gõ mạnh truyền nhiều năng lượng làm tăng độ lệch dao động của mặt trống."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Biên độ dao động càng lớn thì âm phát ra càng to. Khi gõ mạnh, mặt trống dao động với biên độ lớn hơn nên âm nghe to hơn."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nguyên nhân là do **Biên độ dao động của mặt trống lớn hơn**."
+      }
+    ],
+    "finalSolution": "Gõ mạnh làm tăng **biên độ dao động** của mặt trống, khiến âm phát ra to hơn.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b06-num-004",
+    "lessonId": "phy-g7-b06",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "sound-compute-frequency"
+    ],
+    "difficulty": 2,
+    "prompt": "Một lá thép mỏng đàn hồi thực hiện được 100 dao động trong khoảng thời gian 5 giây. Hãy tính tần số dao động của lá thép theo đơn vị Hz.",
+    "knowledge": [
+      "sound.frequency_pitch"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 20,
+      "unit": "Hz",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tần số là số dao động trong 1 giây. Hãy lấy tổng số dao động chia cho thời gian."
+      },
+      {
+        "level": 2,
+        "text": "Công thức: f = N / t = 100 / 5."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Số dao động $N = 100$; Thời gian thực hiện $t = 5\\text{ s}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính tần số",
+        "body": "$f = \\frac{N}{t}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$f = \\frac{100}{5} = 20\\text{ Hz}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tần số dao động của lá thép là **20 Hz**."
+      }
+    ],
+    "finalSolution": "Tần số dao động: $f = \\frac{N}{t} = \\frac{100}{5} = 20\\text{ Hz}$.",
+    "commonMistakes": [
+      {
+        "id": "multiplied-instead-of-divide",
+        "message": "Bạn đã nhân số dao động với thời gian (100 * 5 = 500). Công thức đúng là f = N / t.",
+        "trapAnswers": [
+          "500",
+          "500 Hz"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b06-num-005",
+    "lessonId": "phy-g7-b06",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "sound-compute-vibrations"
+    ],
+    "difficulty": 2,
+    "prompt": "Một dây đàn ghita rung với tần số f = 440 Hz (tương ứng với nốt La chuẩn). Trong khoảng thời gian 0,5 giây, dây đàn này đã thực hiện được bao nhiêu dao động?",
+    "knowledge": [
+      "sound.frequency_pitch"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 220,
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tần số 440 Hz nghĩa là trong 1 giây dây đàn dao động 440 lần."
+      },
+      {
+        "level": 2,
+        "text": "Trong 0,5 giây, số dao động là: N = f * t = 440 * 0,5."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Tần số $f = 440\\text{ Hz}$; Thời gian $t = 0,5\\text{ s}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức suy luận",
+        "body": "Từ $f = \\frac{N}{t} \\Rightarrow N = f \\times t$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$N = 440 \\times 0,5 = 220$ dao động."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Số dao động dây đàn thực hiện được là **220**."
+      }
+    ],
+    "finalSolution": "Số dao động: $N = f \\times t = 440 \\times 0,5 = 220$ dao động.",
+    "commonMistakes": [
+      {
+        "id": "divided-frequency-by-time",
+        "message": "Bạn đã lấy tần số chia cho thời gian (440 / 0,5 = 880). Công thức đúng là N = f * t.",
+        "trapAnswers": [
+          "880"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b06-mcq-006",
+    "lessonId": "phy-g7-b06",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "sound-human-hearing-range"
+    ],
+    "difficulty": 2,
+    "prompt": "Khoảng tần số âm thanh mà tai của một người bình thường có thể cảm nhận và nghe thấy được là:",
+    "knowledge": [
+      "sound.frequency_pitch"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Từ 20 Hz đến 20 000 Hz"
+        },
+        {
+          "id": "opt-b",
+          "label": "Từ 100 Hz đến 1 000 Hz"
+        },
+        {
+          "id": "opt-c",
+          "label": "Trên 20 000 Hz (siêu âm)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Dưới 20 Hz (hạ âm)"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Dưới 20 Hz là hạ âm, trên 20 000 Hz là siêu âm, tai người chỉ nghe được dải âm ở giữa hai mốc này."
+      },
+      {
+        "level": 2,
+        "text": "Giới hạn thính giác người: 20 Hz đến 20 000 Hz."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Giới hạn thính giác",
+        "body": "Dải tần số âm thanh tai người nghe được."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 7 Bài 13, tai người bình thường nghe được âm có tần số trong khoảng từ 20 Hz đến 20 000 Hz."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Dải tần số nghe được là **Từ 20 Hz đến 20 000 Hz**."
+      }
+    ],
+    "finalSolution": "Tai người bình thường nghe được âm thanh từ **20 Hz đến 20 000 Hz**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b06-tf-007",
+    "lessonId": "phy-g7-b06",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "sound-loudness-pitch-tf"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai của các khẳng định sau về đặc tính của âm thanh:",
+    "knowledge": [
+      "sound.frequency_pitch",
+      "sound.amplitude_loudness"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Âm phát ra càng cao (bổng) khi nguồn âm dao động càng nhanh (tần số càng lớn).",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Đơn vị đo độ to của âm trong đời sống là Héc (Hz).",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Biên độ dao động càng lớn thì âm phát ra càng to.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Héc (Hz) là đơn vị đo tần số dao động, còn đơn vị đo độ to là đêxiben (dB)."
+      },
+      {
+        "level": 2,
+        "text": "Tần số quyết định độ cao; Biên độ quyết định độ to."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 3 khẳng định",
+        "body": "Đánh giá các phát biểu về tần số, biên độ, độ to và độ cao."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu kiến thức SGK",
+        "body": "- Mệnh đề 1: ĐÚNG. Dao động càng nhanh $\\rightarrow$ tần số càng lớn $\\rightarrow$ âm càng bổng (cao).\\n- Mệnh đề 2: SAI. Đơn vị đo độ to của âm là đêxiben (dB); Héc (Hz) là đơn vị đo tần số.\\n- Mệnh đề 3: ĐÚNG. Biên độ dao động tỉ lệ thuận với độ to của âm."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự đáp án là **Đúng - Sai - Đúng**."
+      }
+    ],
+    "finalSolution": "Mệnh đề 1: **Đúng**; Mệnh đề 2: **Sai**; Mệnh đề 3: **Đúng**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b06-mcq-008",
+    "lessonId": "phy-g7-b06",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "sound-guitar-string-tuning"
+    ],
+    "difficulty": 3,
+    "prompt": "Khi một người chơi đàn ghita vặn chốt đàn để làm căng sợi dây đàn hơn, rồi gảy vào dây đó thì âm phát ra sẽ thay đổi như thế nào so với trước khi vặn?",
+    "knowledge": [
+      "sound.frequency_pitch"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Âm phát ra cao (bổng) hơn vì dây căng hơn dao động nhanh hơn (tần số lớn hơn)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Âm chỉ to hơn chứ độ cao hoàn toàn không thay đổi"
+        },
+        {
+          "id": "opt-c",
+          "label": "Dây đàn không thể phát ra âm thanh được nữa"
+        },
+        {
+          "id": "opt-d",
+          "label": "Âm phát ra thấp (trầm) hơn vì dây căng hơn khó dao động"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi dây đàn căng hơn, nó sẽ bật rung nhanh hơn hay chậm hơn?"
+      },
+      {
+        "level": 2,
+        "text": "Dây căng hơn dao động nhanh hơn -> tần số f lớn hơn -> âm phát ra bổng (cao) hơn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Ứng dụng lên dây đàn",
+        "body": "Phân tích tác động của độ căng dây đàn đến âm thanh phát ra."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Bản chất vật lí",
+        "body": "Khi vặn cho dây đàn căng hơn, dây đàn sẽ dao động nhanh hơn, tức là tần số dao động tăng lên. Do tần số tăng nên âm phát ra sẽ cao (bổng) hơn."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Âm thanh phát ra sẽ **Cao (bổng) hơn**."
+      }
+    ],
+    "finalSolution": "Dây càng căng dao động càng nhanh, tần số càng lớn nên **âm phát ra cao (bổng) hơn**.",
+    "commonMistakes": []
+  }
+]

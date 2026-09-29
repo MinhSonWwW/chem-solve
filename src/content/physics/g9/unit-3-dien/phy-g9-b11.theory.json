@@ -1,0 +1,80 @@
+{
+  "lessonId": "phy-g9-b11",
+  "nodeId": "phy-g9-b11-theory",
+  "title": "Lý thuyết: Đoạn mạch nối tiếp, song song",
+  "subtitle": "Bài 12 SGK Khoa học tự nhiên 9 (Kết nối tri thức)",
+  "sgkBaiSo": 12,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Đoạn mạch nối tiếp",
+      "badgeColor": "cyan",
+      "title": "1. Đặc điểm của đoạn mạch mắc nối tiếp",
+      "content": "Đoạn mạch gồm hai điện trở $R_1$ và $R_2$ được mắc nối tiếp liên tiếp nhau:",
+      "bulletPoints": [
+        "Cường độ dòng điện: Có giá trị như nhau tại mọi điểm trong mạch: $I = I_1 = I_2$.",
+        "Hiệu điện thế: Bằng tổng hiệu điện thế giữa hai đầu mỗi điện trở thành phần: $U = U_1 + U_2$.",
+        "Điện trở tương đương: Bằng tổng các điện trở thành phần: $R_{tđ} = R_1 + R_2$.",
+        "Tính chất: Điện trở tương đương của đoạn mạch nối tiếp luôn lớn hơn từng điện trở thành phần ($R_{tđ} > R_1, R_{tđ} > R_2$).",
+        "Tỉ lệ hiệu điện thế: Hiệu điện thế giữa hai đầu mỗi điện trở tỉ lệ thuận với điện trở đó: $\\frac{U_1}{U_2} = \\frac{R_1}{R_2}$."
+      ],
+      "callout": "Nhược điểm mạch nối tiếp: Nếu một bộ phận trong mạch bị đứt hoặc hỏng thì toàn bộ mạch bị hở và tất cả các thiết bị khác đều ngừng hoạt động."
+    },
+    {
+      "id": "c2",
+      "badge": "Đoạn mạch song song",
+      "badgeColor": "amber",
+      "title": "2. Đặc điểm của đoạn mạch mắc song song",
+      "content": "Đoạn mạch gồm hai điện trở $R_1$ và $R_2$ có chung hai điểm nối đầu và cuối:",
+      "bulletPoints": [
+        "Hiệu điện thế: Bằng nhau giữa hai đầu các nhánh: $U = U_1 = U_2$.",
+        "Cường độ dòng điện: Dòng điện mạch chính bằng tổng cường độ dòng điện trong các nhánh rẽ: $I = I_1 + I_2$.",
+        "Điện trở tương đương: $\\frac{1}{R_{tđ}} = \\frac{1}{R_1} + \\frac{1}{R_2} \\Rightarrow R_{tđ} = \\frac{R_1 \\cdot R_2}{R_1 + R_2}$.",
+        "Trường hợp hai điện trở bằng nhau ($R_1 = R_2 = R$): $R_{tđ} = \\frac{R}{2}$.",
+        "Tính chất: Điện trở tương đương của đoạn mạch song song luôn nhỏ hơn mỗi điện trở thành phần ($R_{tđ} < R_1, R_{tđ} < R_2$).",
+        "Tỉ lệ dòng điện: Cường độ dòng điện qua mỗi nhánh tỉ lệ nghịch với điện trở nhánh đó: $\\frac{I_1}{I_2} = \\frac{R_2}{R_1}$."
+      ],
+      "callout": "Quy tắc so sánh: Mắc nối tiếp làm điện trở tương đương tăng lên; mắc song song làm điện trở tương đương giảm đi."
+    },
+    {
+      "id": "c3",
+      "badge": "Mạng điện gia đình",
+      "badgeColor": "emerald",
+      "title": "3. Ứng dụng mắc song song trong mạng điện gia đình",
+      "content": "Trong thực tế đời sống, sơ đồ mạch điện gia đình được thiết kế theo cấu trúc song song tiêu chuẩn:",
+      "bulletPoints": [
+        "Hiệu điện thế định mức chung: Mạng điện sinh hoạt Việt Nam có hiệu điện thế $U = 220\\text{ V}$. Các thiết bị điện (đèn, quạt, tivi, tủ lạnh, máy giặt...) đều được thiết kế hoạt động ở hiệu điện thế định mức $220\\text{ V}$.",
+        "Tại sao phải mắc song song: Khi mắc song song, mỗi thiết bị đều nhận đủ hiệu điện thế định mức $220\\text{ V}$ để hoạt động đúng công suất thiết kế.",
+        "Tính độc lập: Khi một thiết bị tắt công tắc hoặc bị hỏng, mạch điện của các thiết bị khác vẫn khép kín và tiếp tục hoạt động bình thường mà không bị ảnh hưởng."
+      ],
+      "callout": "Cầu chì & Aptomat: Luôn được mắc NỐI TIẾP với dây pha ở đầu nguồn để khi xảy ra quá tải hoặc ngắn mạch (chập điện), aptomat sẽ tự động ngắt toàn bộ dòng điện bảo vệ ngôi nhà."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Hai điện trở R1 = 10 Ω và R2 = 20 Ω được mắc nối tiếp với nhau. Điện trở tương đương của đoạn mạch này là bao nhiêu?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "R_tđ = 30 Ω",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "R_tđ = 10 Ω",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "R_tđ = 6,7 Ω",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "R_tđ = 200 Ω",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 9 Bài 12: Điện trở tương đương của đoạn mạch nối tiếp R_tđ = R1 + R2 = 10 + 20 = 30 Ω."
+  }
+}

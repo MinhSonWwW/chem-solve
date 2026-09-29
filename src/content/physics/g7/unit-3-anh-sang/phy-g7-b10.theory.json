@@ -1,0 +1,77 @@
+{
+  "lessonId": "phy-g7-b10",
+  "nodeId": "phy-g7-b10-theory",
+  "title": "Lý thuyết: Ảnh của vật qua gương phẳng",
+  "subtitle": "Bài 17 SGK Khoa học tự nhiên 7 (Kết nối tri thức)",
+  "sgkBaiSo": 17,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Tính chất cốt lõi",
+      "badgeColor": "cyan",
+      "title": "1. Tính chất của ảnh tạo bởi gương phẳng",
+      "content": "Gương phẳng là mặt phẳng, nhẵn bóng soi được hình ảnh. Ảnh của một vật quan sát được trong gương phẳng có 3 tính chất cơ bản:",
+      "bulletPoints": [
+        "1. Là ảnh ảo: Không hứng được trên màn chắn đặt phía sau gương.",
+        "2. Độ lớn của ảnh bằng độ lớn của vật: Vật cao bao nhiêu thì ảnh trong gương cao bấy nhiêu (chiều cao h' = h).",
+        "3. Khoảng cách từ một điểm của vật đến gương phẳng bằng khoảng cách từ ảnh của điểm đó đến gương phẳng: d' = d.",
+        "Hệ quả đối xứng: Ảnh và vật đối xứng nhau qua mặt gương phẳng."
+      ],
+      "callout": "Công thức khoảng cách: Nếu người đứng cách gương một khoảng d thì khoảng cách giữa người đó và ảnh của mình trong gương là: d_người-ảnh = d + d' = 2d."
+    },
+    {
+      "id": "c2",
+      "badge": "Phương pháp dựng hình",
+      "badgeColor": "amber",
+      "title": "2. Cách dựng ảnh qua gương phẳng",
+      "content": "Để xác định vị trí ảnh của một vật qua gương phẳng, ta có thể áp dụng 2 cách dựng hình chuẩn xác:",
+      "bulletPoints": [
+        "Cách 1 - Dựa vào định luật phản xạ: Từ điểm sáng S vẽ 2 tia tới bất kì SI1, SI2 tới mặt gương; vẽ 2 tia phản xạ tương ứng I1R1, I2R2. Giao điểm của các đường kéo dài phía sau gương chính là ảnh ảo S' (vẽ bằng nét đứt).",
+        "Cách 2 - Dựa vào tính chất đối xứng (nhanh và chính xác): Từ điểm sáng S hạ đường thẳng vuông góc với mặt gương tại H. Trên tia đối lấy điểm S' sao cho S'H = SH. Điểm S' chính là ảnh ảo cần dựng.",
+        "Dựng ảnh của vật AB: Lấy ảnh A' đối xứng với A qua gương, lấy ảnh B' đối xứng với B qua gương, rồi nối A'B' bằng nét đứt."
+      ],
+      "callout": "Quy ước vẽ hình: Vì ảnh qua gương phẳng là ảnh ảo nên luôn luôn biểu diễn đường kéo dài và ảnh bằng đường NÉT ĐỨT (không dùng nét liền)."
+    },
+    {
+      "id": "c3",
+      "badge": "Ứng dụng đời sống",
+      "badgeColor": "emerald",
+      "title": "3. Ứng dụng của gương phẳng trong thực tế",
+      "content": "Gương phẳng có rất nhiều ứng dụng hữu ích trong đời sống hàng ngày, y học và quân sự:",
+      "bulletPoints": [
+        "Soi ngắm, trang điểm: Gương soi phòng tắm, bàn phấn, phòng tập múa.",
+        "Mở rộng không gian: Gương phẳng lớn treo trong phòng khách nhỏ, thang máy tạo cảm giác không gian rộng rãi, thoáng đãng.",
+        "Kính tiềm vọng (Periscope): Thiết bị trên tàu ngầm hoặc chiến hào, gồm 2 gương phẳng đặt song song nghiêng 45° giúp quan sát các mục tiêu trên mặt nước.",
+        "Chữ trên xe cứu thương (AMBULANCE): Được in ngược từ phải sang trái để người lái xe phía trước nhìn qua gương chiếu hậu sẽ thấy dòng chữ xuôi thuận mắt, kịp thời nhường đường."
+      ],
+      "callout": "Văn hóa giao thông: Luôn nhường đường ngay lập tức khi nhìn thấy xe ưu tiên (cứu thương, cứu hỏa, công an) qua gương chiếu hậu."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Một bạn học sinh đứng cách gương phẳng một khoảng 2 m. Khoảng cách giữa bạn học sinh đó và ảnh của bạn trong gương là bao nhiêu?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "4 m",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "2 m",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "1 m",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "0,5 m",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo tính chất gương phẳng (SGK KHTN 7 Bài 17), khoảng cách từ ảnh đến gương bằng khoảng cách từ vật đến gương (2 m). Do đó khoảng cách từ bạn đến ảnh là 2 + 2 = 4 m."
+  }
+}

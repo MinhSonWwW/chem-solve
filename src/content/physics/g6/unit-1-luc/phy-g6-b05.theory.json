@@ -1,0 +1,74 @@
+{
+  "lessonId": "phy-g6-b05",
+  "nodeId": "phy-g6-b05-theory",
+  "title": "Lý thuyết: Lực là gì?",
+  "subtitle": "Bài 40 SGK Khoa học tự nhiên 6 (Kết nối tri thức)",
+  "sgkBaiSo": 40,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm cốt lõi",
+      "badgeColor": "cyan",
+      "title": "1. Lực và đơn vị đo lực",
+      "content": "Tác dụng đẩy, kéo của vật này lên vật khác được gọi là lực. Khi một vật đẩy hoặc kéo một vật khác, ta nói vật đó tác dụng lực lên vật kia.",
+      "bulletPoints": [
+        "Lực thường được kí hiệu bằng chữ cái in hoa F (từ chữ Force trong tiếng Anh).",
+        "Đơn vị đo lực trong Hệ đơn vị đo lường quốc tế (hệ SI) là niutơn (kí hiệu: N).",
+        "Dụng cụ dùng để đo lực trong phòng thí nghiệm và đời sống là lực kế."
+      ],
+      "callout": "Ví dụ: Người thợ đẩy chiếc xe cút kít (lực đẩy), đầu tàu kéo các toa tàu chuyển động (lực kéo)."
+    },
+    {
+      "id": "c2",
+      "badge": "Quy luật vật lý",
+      "badgeColor": "amber",
+      "title": "2. Tác dụng của lực lên vật",
+      "content": "Lực tác dụng lên một vật có thể gây ra hai kết quả chính: làm biến đổi chuyển động hoặc làm biến dạng vật (hoặc đồng thời cả hai).",
+      "bulletPoints": [
+        "Làm biến đổi chuyển động: làm vật đang đứng yên bắt đầu chuyển động; làm vật chuyển động nhanh lên hoặc chậm lại; làm vật dừng lại; hoặc làm vật đổi hướng chuyển động.",
+        "Làm biến dạng vật: làm thay đổi hình dạng hoặc kích thước của vật (ví dụ: bóp méo quả bóng cao su, kéo dãn lò xo, uốn cong thanh tre).",
+        "Đồng thời cả hai: Cầu thủ sút mạnh vào quả bóng làm quả bóng vừa bị móp (biến dạng) vừa bay vút đi (biến đổi chuyển động)."
+      ],
+      "callout": "Ghi nhớ: Bất cứ khi nào vận tốc của vật thay đổi (về độ lớn hoặc về hướng), chắc chắn đã có lực tác dụng lên vật."
+    },
+    {
+      "id": "c3",
+      "badge": "Phân loại lực",
+      "badgeColor": "emerald",
+      "title": "3. Lực tiếp xúc và lực không tiếp xúc",
+      "content": "Căn cứ vào sự tương tác giữa các vật, lực được phân thành hai loại:",
+      "bulletPoints": [
+        "Lực tiếp xúc: Xuất hiện khi vật gây ra lực có sự tiếp xúc trực tiếp hoặc gián tiếp với vật chịu tác dụng (ví dụ: chân sút bóng, tay nâng tạ, gió đẩy cánh buồm).",
+        "Lực không tiếp xúc: Xuất hiện khi vật gây ra lực không có sự tiếp xúc với vật chịu tác dụng (ví dụ: lực hút của nam châm lên đinh sắt từ xa, lực hút của Trái Đất làm quả táo rơi xuống)."
+      ],
+      "callout": "Phân biệt nhanh: Có chạm vào nhau thì là lực tiếp xúc; ở khoảng cách xa vẫn hút/đẩy được nhau là lực không tiếp xúc."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Hành động nào sau đây là ví dụ về lực không tiếp xúc?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Nam châm hút một chiếc kẹp giấy bằng sắt đặt cách nó một đoạn",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Người lực sĩ dùng tay nâng thanh tạ lên cao",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Vận động viên dùng vợt đánh vào quả cầu lông",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Gió thổi làm căng phồng cánh buồm của thuyền",
+        "correct": false
+      }
+    ],
+    "explanation": "Lực hút của nam châm tác dụng lên kẹp giấy ngay cả khi không chạm trực tiếp vào nhau, đây là lực không tiếp xúc."
+  }
+}

@@ -1,0 +1,539 @@
+[
+  {
+    "id": "phy-g8-b05-mcq-001",
+    "lessonId": "phy-g8-b05",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "archimedes-force-direction"
+    ],
+    "difficulty": 1,
+    "prompt": "Lực đẩy Archimedes tác dụng lên một vật được nhúng trong chất lỏng có phương và chiều như thế nào?",
+    "knowledge": [
+      "formula.archimedes"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Phương thẳng đứng, chiều hướng từ trên xuống dưới"
+        },
+        {
+          "id": "opt-b",
+          "label": "Phương thẳng đứng, chiều hướng từ dưới lên trên"
+        },
+        {
+          "id": "opt-c",
+          "label": "Phương bất kì tùy thuộc vào hình dạng của vật"
+        },
+        {
+          "id": "opt-d",
+          "label": "Phương nằm ngang, chiều hướng từ trái sang phải"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi ấn một quả bóng chìm vào nước rồi thả tay, quả bóng bật nổi lên trên theo phương nào?"
+      },
+      {
+        "level": 2,
+        "text": "Lực nâng này luôn có phương thẳng đứng và hướng từ dưới lên trên."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định đặc điểm vectơ lực",
+        "body": "Đề bài yêu cầu chỉ ra phương và chiều của lực đẩy Archimedes F_A."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 17), mọi vật nhúng trong chất lỏng đều chịu lực đẩy của chất lỏng hướng thẳng đứng từ dưới lên trên."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Lực đẩy Archimedes có **Phương thẳng đứng, chiều hướng từ dưới lên trên**."
+      }
+    ],
+    "finalSolution": "Lực đẩy Archimedes luôn có **phương thẳng đứng, chiều hướng từ dưới lên trên**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-with-gravity-direction",
+        "message": "Trọng lực hướng từ trên xuống dưới, còn lực đẩy Archimedes hướng ngược lại: từ dưới lên trên."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b05-mcq-002",
+    "lessonId": "phy-g8-b05",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "archimedes-formula"
+    ],
+    "difficulty": 1,
+    "prompt": "Công thức tính độ lớn của lực đẩy Archimedes tác dụng lên một vật nhúng trong chất lỏng là:",
+    "knowledge": [
+      "formula.archimedes"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "F_A = d x V"
+        },
+        {
+          "id": "opt-b",
+          "label": "F_A = d / V"
+        },
+        {
+          "id": "opt-c",
+          "label": "F_A = p x S"
+        },
+        {
+          "id": "opt-d",
+          "label": "F_A = V / d"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Lực đẩy Archimedes bằng trọng lượng của khối chất lỏng bị vật chiếm chỗ."
+      },
+      {
+        "level": 2,
+        "text": "Độ lớn F_A = d x V, trong đó d là trọng lượng riêng của chất lỏng, V là thể tích phần chìm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định công thức",
+        "body": "Đề bài yêu cầu nêu công thức độ lớn lực đẩy Archimedes."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức chuẩn",
+        "body": "$F_A = d \\times V$, với $d$ là trọng lượng riêng chất lỏng (N/m³), $V$ là thể tích phần vật chìm (m³)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Công thức đúng là **F_A = d x V**."
+      }
+    ],
+    "finalSolution": "Công thức tính lực đẩy Archimedes: **$F_A = d \\times V$**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-d-object-with-d-liquid",
+        "message": "d trong công thức F_A = d * V là trọng lượng riêng của CHẤT LỎNG, không phải của vật nhúng vào."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b05-mcq-003",
+    "lessonId": "phy-g8-b05",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "sinking-floating-conditions"
+    ],
+    "difficulty": 1,
+    "prompt": "Thả một vật đặc vào trong một cốc nước. Điều kiện để vật đó chìm hoàn toàn xuống đáy cốc là:",
+    "knowledge": [
+      "formula.archimedes"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Thể tích của vật lớn hơn thể tích của cốc nước"
+        },
+        {
+          "id": "opt-b",
+          "label": "Trọng lượng riêng của vật nhỏ hơn trọng lượng riêng của nước (d_vật < d_nước)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Trọng lượng riêng của vật lớn hơn trọng lượng riêng của nước (d_vật > d_nước)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Trọng lượng riêng của vật đúng bằng trọng lượng riêng của nước (d_vật = d_nước)"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi vật chìm xuống đáy, lực kéo xuống (trọng lực P) phải thắng lực đẩy lên (lực đẩy Archimedes F_A)."
+      },
+      {
+        "level": 2,
+        "text": "P > F_A tương đương với điều kiện d_vật > d_chất lỏng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích lực tác dụng",
+        "body": "Vật chìm xuống khi lực kéo xuống $P$ lớn hơn lực đẩy $F_A$ khi chìm hoàn toàn."
+      },
+      {
+        "kind": "equation",
+        "title": "Biến đổi điều kiện",
+        "body": "$P > F_A \\Leftrightarrow d_{\\text{vật}} \\times V > d_{\\text{nước}} \\times V \\Leftrightarrow d_{\\text{vật}} > d_{\\text{nước}}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Điều kiện vật chìm là **$d_{\\text{vật}} > d_{\\text{nước}}$**."
+      }
+    ],
+    "finalSolution": "Vật chìm xuống đáy khi **$d_{\\text{vật}} > d_{\\text{nước}}$** (hoặc $P > F_A$).",
+    "commonMistakes": [
+      {
+        "id": "confuse-float-condition",
+        "message": "d_vật < d_nước là điều kiện để vật nổi lên, d_vật = d_nước là điều kiện vật lơ lửng."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b05-num-004",
+    "lessonId": "phy-g8-b05",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "archimedes-calc-force"
+    ],
+    "difficulty": 2,
+    "prompt": "Một khối nhôm đặc có thể tích V = 0,002 m³ được nhúng chìm hoàn toàn trong một bể nước. Cho biết trọng lượng riêng của nước là d = 10 000 N/m³. Lực đẩy Archimedes do nước tác dụng lên khối nhôm là bao nhiêu Niutơn (N)?",
+    "knowledge": [
+      "density.water",
+      "formula.archimedes"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 20,
+      "unit": "N",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khối nhôm chìm hoàn toàn nên thể tích phần nước bị chiếm chỗ đúng bằng thể tích khối nhôm: V = 0,002 m³."
+      },
+      {
+        "level": 2,
+        "text": "Áp dụng công thức F_A = d x V = 10 000 x 0,002."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Thể tích phần chìm $V = 0,002\\text{ m}^3$; $d_{\\text{nước}} = 10\\,000\\text{ N/m}^3$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức lực đẩy Archimedes",
+        "body": "$F_A = d \\times V$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$F_A = 10\\,000 \\times 0,002 = 20\\text{ N}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Lực đẩy Archimedes tác dụng lên khối nhôm là **20 N**."
+      }
+    ],
+    "finalSolution": "Lực đẩy Archimedes: $F_A = d \\times V = 10\\,000 \\times 0,002 = 20\\text{ N}$.",
+    "commonMistakes": [
+      {
+        "id": "used-aluminum-density",
+        "message": "Nhiều bạn dùng trọng lượng riêng của nhôm d_Al để tính F_A. Lưu ý: F_A chỉ phụ thuộc vào trọng lượng riêng của CHẤT LỎNG (nước)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b05-num-005",
+    "lessonId": "phy-g8-b05",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "archimedes-calc-volume"
+    ],
+    "difficulty": 2,
+    "prompt": "Nhúng chìm hoàn toàn một vật kim loại vào trong một bình đựng dầu hỏa (trọng lượng riêng của dầu là d = 8 000 N/m³). Lực kế cho biết độ lớn lực đẩy Archimedes tác dụng lên vật là F_A = 16 N. Thể tích của vật kim loại này là bao nhiêu dm³?",
+    "knowledge": [
+      "formula.archimedes"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 2,
+      "unit": "dm³",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ công thức F_A = d x V, hãy suy ra thể tích V = F_A / d theo đơn vị m³."
+      },
+      {
+        "level": 2,
+        "text": "V = 16 / 8 000 = 0,002 m³. Đổi sang dm³: 1 m³ = 1 000 dm³."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$F_A = 16\\text{ N}$; $d = 8\\,000\\text{ N/m}^3$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính thể tích",
+        "body": "Từ $F_A = d \\times V \\Rightarrow V = \\frac{F_A}{d}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán và đổi đơn vị",
+        "body": "$V = \\frac{16}{8\\,000} = 0,002\\text{ m}^3 = 2\\text{ dm}^3$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thể tích của vật kim loại là **2 dm³**."
+      }
+    ],
+    "finalSolution": "Thể tích vật kim loại: $V = \\frac{F_A}{d} = \\frac{16}{8\\,000} = 0,002\\text{ m}^3 = 2\\text{ dm}^3$.",
+    "commonMistakes": [
+      {
+        "id": "forgot-unit-convert-dm3",
+        "message": "Đề bài yêu cầu đơn vị dm³, nếu để 0,002 là đơn vị m3 (0,002 m3 = 2 dm3).",
+        "trapAnswers": [
+          "0.002",
+          "0,002"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b05-num-006",
+    "lessonId": "phy-g8-b05",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "floating-submerged-volume"
+    ],
+    "difficulty": 3,
+    "prompt": "Một khối gỗ có thể tích toàn phần V = 0,05 m³ và khối lượng riêng D_gỗ = 600 kg/m³ được thả nổi tự do trên mặt nước nguyên chất (D_nước = 1 000 kg/m³). Khi khối gỗ đứng yên cân bằng trên mặt nước, thể tích phần khối gỗ chìm dưới nước là bao nhiêu m³?",
+    "knowledge": [
+      "density.water",
+      "formula.archimedes"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 0.03,
+      "unit": "m³",
+      "decimals": 2,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi vật nổi cân bằng trên mặt nước, lực đẩy Archimedes cân bằng với trọng lượng của vật: F_A = P."
+      },
+      {
+        "level": 2,
+        "text": "d_nước x V_chìm = d_gỗ x V => V_chìm = (D_gỗ / D_nước) x V = (600 / 1 000) x 0,05."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$V = 0,05\\text{ m}^3$; $D_{\\text{gỗ}} = 600\\text{ kg/m}^3$; $D_{\\text{nước}} = 1\\,000\\text{ kg/m}^3$."
+      },
+      {
+        "kind": "equation",
+        "title": "Điều kiện vật nổi cân bằng",
+        "body": "Khi nổi cân bằng: $F_A = P \\Leftrightarrow d_{\\text{nước}} \\times V_{\\text{chìm}} = d_{\\text{gỗ}} \\times V$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính thể tích phần chìm",
+        "body": "$V_{\\text{chìm}} = \\frac{D_{\\text{gỗ}}}{D_{\\text{nước}}} \\times V = \\frac{600}{1\\,000} \\times 0,05 = 0,6 \\times 0,05 = 0,03\\text{ m}^3$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thể tích phần khối gỗ chìm trong nước là **0,03 m³** (chiếm 60% thể tích khối gỗ)."
+      }
+    ],
+    "finalSolution": "Thể tích phần khối gỗ chìm trong nước: $V_{\\text{chìm}} = \\frac{D_{\\text{gỗ}}}{D_{\\text{nước}}} \\times V = \\frac{600}{1\\,000} \\times 0,05 = 0,03\\text{ m}^3$.",
+    "commonMistakes": [
+      {
+        "id": "confuse-submerged-with-emerged",
+        "message": "0,02 m3 là thể tích phần NỔI trên mặt nước. Đề bài hỏi thể tích phần CHÌM (0,03 m3).",
+        "trapAnswers": [
+          "0.02",
+          "0,02"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b05-tf-007",
+    "lessonId": "phy-g8-b05",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "archimedes-properties-tf"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai của các khẳng định sau về lực đẩy Archimedes:",
+    "knowledge": [
+      "formula.archimedes"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Lực đẩy Archimedes không chỉ xuất hiện trong chất lỏng mà còn tồn tại trong chất khí, giúp khinh khí cầu có thể bay lên cao.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Khi một vật đã chìm hoàn toàn trong lòng nước, nếu nhấn vật xuống càng sâu thì lực đẩy Archimedes tác dụng lên vật càng tăng mạnh lên.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Khi một chiếc thuyền nổi đứng yên thăng bằng trên mặt nước, độ lớn của lực đẩy Archimedes tác dụng lên thuyền đúng bằng trọng lượng của chiếc thuyền.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi vật đã chìm hoàn toàn, thể tích phần nước bị chiếm chỗ V không đổi khi xuống sâu hơn."
+      },
+      {
+        "level": 2,
+        "text": "Khi thuyền nổi cân bằng trên mặt nước, hai lực tác dụng lên thuyền là trọng lực P và lực đẩy Archimedes F_A phải cân bằng nhau."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 1",
+        "body": "Không khí cũng tác dụng lực đẩy Archimedes hướng lên giúp khinh khí cầu bay -> Đúng."
+      },
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 2",
+        "body": "Từ $F_A = d \\times V$, khi vật đã chìm hoàn toàn thì $V$ và $d$ không đổi theo độ sâu, nên $F_A$ không đổi -> Mệnh đề 2 Sai."
+      },
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 3",
+        "body": "Vật nổi cân bằng thì hợp lực bằng 0, nghĩa là $F_A = P$ -> Đúng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự: Đúng - Sai - Đúng."
+      }
+    ],
+    "finalSolution": "Mệnh đề 1: **Đúng**; Mệnh đề 2: **Sai**; Mệnh đề 3: **Đúng**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-pressure-with-archimedes",
+        "message": "Xuống sâu áp suất chất lỏng p = d * h tăng, nhưng lực đẩy Archimedes F_A = d * V không phụ thuộc vào độ sâu h khi vật đã chìm hoàn toàn."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b05-mcq-008",
+    "lessonId": "phy-g8-b05",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "steel-ship-floating-principle"
+    ],
+    "difficulty": 3,
+    "prompt": "Một con tàu chở hàng khổng lồ bằng thép nặng hàng chục nghìn tấn vẫn nổi an toàn trên mặt biển, trong khi một chiếc đinh sắt nhỏ nặng vài gam thả vào nước lại chìm ngay xuống đáy. Nguyên nhân vật lí của hiện tượng này là:",
+    "knowledge": [
+      "density.iron",
+      "density.water",
+      "formula.archimedes"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tàu được thiết kế rỗng bên trong nên thể tích chiếm chỗ V rất lớn, làm trọng lượng riêng trung bình của tàu nhỏ hơn nước biển"
+        },
+        {
+          "id": "opt-b",
+          "label": "Thép làm tàu là loại thép nhẹ hơn đinh sắt gấp nghìn lần"
+        },
+        {
+          "id": "opt-c",
+          "label": "Nước biển ở gần tàu tự động đặc lại để đỡ chiếc tàu"
+        },
+        {
+          "id": "opt-d",
+          "label": "Động cơ của tàu luôn chạy liên tục để đẩy tàu nổi"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Xem xét cấu tạo thân tàu: bên trong thân tàu có rất nhiều khoang rỗng chứa không khí."
+      },
+      {
+        "level": 2,
+        "text": "Khoang rỗng làm tăng thể tích chiếm chỗ V lên cực lớn, khiến trọng lượng riêng trung bình d = P / V của cả con tàu nhỏ hơn trọng lượng riêng của nước biển."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất vật lí của sự nổi",
+        "body": "Một vật nổi khi trọng lượng riêng trung bình $d_{\\text{tb}}$ của nó nhỏ hơn trọng lượng riêng của chất lỏng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "So sánh tàu và đinh sắt",
+        "body": "Chiếc đinh sắt là khối đặc nên $d_{\\text{đinh}} = 78\\,000\\text{ N/m}^3 > d_{\\text{nước}} = 10\\,000\\text{ N/m}^3$ nên chìm ngay. Con tàu được thiết kế rỗng bên trong, thể tích $V$ rất lớn làm $d_{\\text{tàu}} = \\frac{P_{\\text{tàu}}}{V_{\\text{tàu}}} < d_{\\text{nước}}$ nên tàu nổi."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Con tàu nổi vì **thân tàu rỗng nên thể tích chiếm chỗ rất lớn, làm trọng lượng riêng trung bình nhỏ hơn nước**."
+      }
+    ],
+    "finalSolution": "Con tàu nổi vì **được thiết kế rỗng bên trong**, giúp thể tích chiếm chỗ rất lớn làm cho trọng lượng riêng trung bình của toàn bộ con tàu nhỏ hơn trọng lượng riêng của nước biển.",
+    "commonMistakes": [
+      {
+        "id": "think-steel-floats",
+        "message": "Thép nguyên khối nặng gấp 7,8 lần nước nên luôn chìm, chỉ khi chế tạo dạng vỏ rỗng chứa không khí thì mới nổi được."
+      }
+    ]
+  }
+]

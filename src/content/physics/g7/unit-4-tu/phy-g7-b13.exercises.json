@@ -1,0 +1,499 @@
+[
+  {
+    "id": "phy-g7-b13-mcq-001",
+    "lessonId": "phy-g7-b13",
+    "sgkBaiSo": 20,
+    "skillIds": [
+      "electromagnet-structure"
+    ],
+    "difficulty": 1,
+    "prompt": "Cấu tạo cơ bản của một nam châm điện đơn giản gồm những bộ phận nào sau đây?",
+    "knowledge": [
+      "magnet.electromagnet"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Một ống dây dẫn có dòng điện chạy qua, bên trong có lõi sắt non"
+        },
+        {
+          "id": "opt-b",
+          "label": "Một thanh nhôm gắn vào cực âm của viên pin"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hai thỏi than gắn vào dây đồng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Một thanh thép vĩnh cửu bọc giấy bạc cách nhiệt"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nam châm điện cần có cuộn dây để dòng điện chạy qua và một lõi kim loại tăng cường từ tính."
+      },
+      {
+        "level": 2,
+        "text": "Cấu tạo chuẩn: Ống dây dẫn có dòng điện chạy qua quấn quanh lõi sắt non."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cấu tạo nam châm điện",
+        "body": "Xác định các bộ phận cấu thành nam châm điện theo SGK."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 7 (Bài 20: Chế tạo nam châm điện đơn giản), nam châm điện gồm một cuộn dây dẫn quấn quanh một lõi sắt non và được nối với nguồn điện."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cấu tạo đúng là **Một ống dây dẫn có dòng điện chạy qua, bên trong có lõi sắt non**."
+      }
+    ],
+    "finalSolution": "Nam châm điện gồm **ống dây dẫn có dòng điện và lõi sắt non**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b13-mcq-002",
+    "lessonId": "phy-g7-b13",
+    "sgkBaiSo": 20,
+    "skillIds": [
+      "electromagnet-switching"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi ngắt công tắc điện (không còn dòng điện chạy qua cuộn dây), lõi sắt non của nam châm điện sẽ như thế nào?",
+    "knowledge": [
+      "magnet.electromagnet"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Bị đảo ngược cực Bắc thành cực Nam"
+        },
+        {
+          "id": "opt-b",
+          "label": "Lực từ tăng mạnh hơn gấp 10 lần"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mất ngay từ tính và các mẩu sắt đang bị hút sẽ rơi xuống"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vẫn giữ nguyên từ tính vĩnh viễn và hút sắt tiếp"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ tính của nam châm điện sinh ra nhờ yếu tố nào?"
+      },
+      {
+        "level": 2,
+        "text": "Từ tính sinh ra nhờ dòng điện. Khi ngắt dòng điện thì từ tính của lõi sắt non biến mất ngay lập tức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hoạt động đóng ngắt mạch",
+        "body": "Khảo sát từ tính của nam châm điện khi ngắt nguồn điện."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Lõi sắt non có đặc tính khử từ rất nhanh. Khi ngắt dòng điện, lõi sắt non mất ngay từ tính và không còn hút được sắt nữa."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hiện tượng là **Mất ngay từ tính và các mẩu sắt rơi xuống**."
+      }
+    ],
+    "finalSolution": "Khi ngắt dòng điện, nam châm điện **mất ngay từ tính**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b13-ord-003",
+    "lessonId": "phy-g7-b13",
+    "sgkBaiSo": 20,
+    "skillIds": [
+      "electromagnet-making-steps"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp các thao tác sau theo đúng thứ tự quy trình thực hành tự chế tạo một nam châm điện đơn giản:",
+    "knowledge": [
+      "magnet.electromagnet"
+    ],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Chuẩn bị một đinh sắt dài, cuộn dây đồng có bọc cách điện và viên pin 1,5V",
+        "Quấn dây đồng nhiều vòng dọc theo thân chiếc đinh sắt, chừa lại hai đầu dây",
+        "Dùng giấy ráp cạo sạch lớp men cách điện ở hai đầu dây rồi nối với 2 cực của pin",
+        "Đưa đầu đinh lại gần các ghim sắt để kiểm tra lực hút từ của nam châm điện"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bước đầu tiên luôn là chuẩn bị dụng cụ (đinh, dây đồng, pin)."
+      },
+      {
+        "level": 2,
+        "text": "Thứ tự: Chuẩn bị vật liệu -> Quấn dây quanh đinh -> Cạo men và nối vào pin -> Đưa lại gần ghim sắt để thử nghiệm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quy trình chế tạo thực nghiệm",
+        "body": "Sắp xếp 4 bước tạo nam châm điện đơn giản trong phòng thực hành."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Các bước chuẩn xác",
+        "body": "1. Chuẩn bị một đinh sắt dài, cuộn dây đồng có bọc cách điện và viên pin 1,5V.\\n2. Quấn dây đồng nhiều vòng dọc theo thân chiếc đinh sắt, chừa hai đầu dây.\\n3. Dùng giấy ráp cạo sạch lớp men cách điện ở hai đầu dây rồi nối với 2 cực của pin.\\n4. Đưa đầu đinh lại gần các ghim sắt để kiểm tra lực hút từ."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự đúng: **Chuẩn bị vật liệu -> Quấn cuộn dây -> Nối điện vào pin -> Kiểm tra lực hút ghim sắt**."
+      }
+    ],
+    "finalSolution": "Quy trình chế tạo: 1. Chuẩn bị vật liệu -> 2. Quấn dây quanh đinh -> 3. Nối với pin -> 4. Thử hút ghim sắt.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b13-mcq-004",
+    "lessonId": "phy-g7-b13",
+    "sgkBaiSo": 20,
+    "skillIds": [
+      "electromagnet-increasing-strength"
+    ],
+    "difficulty": 2,
+    "prompt": "Để làm tăng lực từ của một nam châm điện giúp nó hút được nhiều đinh sắt hơn, ta có thể áp dụng biện pháp nào sau đây?",
+    "knowledge": [
+      "magnet.electromagnet"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Ngâm nam châm điện vào trong cốc nước đá lạnh"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tăng số vòng dây quấn và tăng cường độ dòng điện chạy qua cuộn dây"
+        },
+        {
+          "id": "opt-c",
+          "label": "Rút bỏ lõi sắt non ra khỏi lòng cuộn dây"
+        },
+        {
+          "id": "opt-d",
+          "label": "Giảm số vòng dây quấn và giảm số lượng pin trong mạch"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Lực từ của nam châm điện phụ thuộc vào cường độ dòng điện và số vòng dây."
+      },
+      {
+        "level": 2,
+        "text": "Dòng điện càng lớn hoặc số vòng dây quấn càng nhiều thì lực từ sinh ra càng mạnh."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Các yếu tố ảnh hưởng lực từ",
+        "body": "Xác định biện pháp làm tăng lực hút từ của nam châm điện."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Lực từ của nam châm điện tăng lên khi: 1. Tăng cường độ dòng điện chạy qua cuộn dây; 2. Tăng số vòng của cuộn dây quấn quanh lõi sắt non."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Biện pháp đúng là **Tăng số vòng dây quấn và tăng cường độ dòng điện**."
+      }
+    ],
+    "finalSolution": "Để tăng lực từ: **tăng số vòng dây quấn** và **tăng cường độ dòng điện**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b13-mcq-005",
+    "lessonId": "phy-g7-b13",
+    "sgkBaiSo": 20,
+    "skillIds": [
+      "electromagnet-soft-iron-vs-steel"
+    ],
+    "difficulty": 2,
+    "prompt": "Tại sao trong cấu tạo của nam châm điện, người ta thường dùng lõi bằng 'sắt non' mà không dùng lõi bằng 'thép'?",
+    "knowledge": [
+      "magnet.electromagnet"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vì sắt non rẻ hơn và không thể bị rỉ sét"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vì sắt non mất từ tính ngay khi ngắt điện, còn thép giữ lại từ tính biến thành nam châm vĩnh cửu"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì thép quá nặng làm cuộn dây bị đứt"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì thép dẫn điện kém hơn sắt non nhiều lần"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nam châm điện cần khả năng nhả vật ra ngay lập tức khi ngắt công tắc điện."
+      },
+      {
+        "level": 2,
+        "text": "Thép khi bị nhiễm từ sẽ giữ lại từ tính rất lâu (khó mất từ tính), do đó không nhả vật được."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "So sánh tính chất từ của sắt non và thép",
+        "body": "Giải thích nguyên nhân lựa chọn vật liệu làm lõi nam châm điện."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Sắt non nhiễm từ mạnh nhưng mất ngay từ tính khi ngắt dòng điện. Thép nhiễm từ chậm hơn nhưng giữ lại từ tính lâu dài (trở thành nam châm vĩnh cửu), làm mất đi tính cơ động bật/tắt của nam châm điện."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Lí do là **Sắt non mất từ tính ngay khi ngắt điện, còn thép giữ lại từ tính**."
+      }
+    ],
+    "finalSolution": "Dùng sắt non vì **sắt non mất ngay từ tính khi ngắt dòng điện**, giúp nhả vật tức thì.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b13-mcq-006",
+    "lessonId": "phy-g7-b13",
+    "sgkBaiSo": 20,
+    "skillIds": [
+      "electromagnet-industrial-application"
+    ],
+    "difficulty": 2,
+    "prompt": "Thiết bị nào sau đây trong công nghiệp hoạt động dựa trên ứng dụng bật/tắt từ tính của nam châm điện?",
+    "knowledge": [
+      "magnet.electromagnet"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cần cẩu điện bốc dỡ phế liệu sắt thép ở cảng biển"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tô vít có đầu nam châm hút ốc nhỏ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chiếc la bàn đi rừng định hướng Bắc Nam"
+        },
+        {
+          "id": "opt-d",
+          "label": "Miếng dán nam châm gắn ảnh trên cánh cửa tủ lạnh"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thiết bị nào cần hút vật lên khi bật điện và thả vật rơi xuống kho khi ngắt điện?"
+      },
+      {
+        "level": 2,
+        "text": "Cần cẩu điện hút hàng tấn sắt phế liệu khi có điện và nhả sắt xuống khi ngắt điện."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Ứng dụng thực tế của nam châm điện",
+        "body": "Nhận diện thiết bị sử dụng nam châm điện trong các phương án."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Cần cẩu điện dùng nam châm điện khổng lồ: khi có điện nó hút hàng tấn sắt thép di chuyển đến vị trí cần dỡ, rồi ngắt điện để thả sắt thép rơi xuống an toàn."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thiết bị đúng là **Cần cẩu điện bốc dỡ phế liệu sắt thép**."
+      }
+    ],
+    "finalSolution": "**Cần cẩu điện bốc dỡ phế liệu** hoạt động nhờ nam châm điện.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b13-tf-007",
+    "lessonId": "phy-g7-b13",
+    "sgkBaiSo": 20,
+    "skillIds": [
+      "electromagnet-properties-tf"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai của các khẳng định sau về nam châm điện:",
+    "knowledge": [
+      "magnet.electromagnet"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Có thể đảo cực từ (Bắc thành Nam, Nam thành Bắc) của nam châm điện bằng cách đổi chiều dòng điện chạy qua cuộn dây.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Lực từ của nam châm điện là cố định, hoàn toàn không thể điều chỉnh mạnh hay yếu được.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Lõi sắt non có tác dụng làm tăng đáng kể lực từ của cuộn dây có dòng điện so với khi không có lõi.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ta có thể tăng lực từ bằng cách tăng dòng điện hoặc số vòng dây (mệnh đề 2 sai)."
+      },
+      {
+        "level": 2,
+        "text": "Đổi chiều dòng điện sẽ làm đảo cực từ của ống dây."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 3 khẳng định",
+        "body": "Đánh giá các đặc tính linh hoạt của nam châm điện."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu kiến thức SGK",
+        "body": "- Mệnh đề 1: ĐÚNG. Chiều dòng điện quyết định cực từ, đổi chiều dòng điện sẽ đảo cực N thành S và ngược lại.\\n- Mệnh đề 2: SAI. Lực từ của nam châm điện điều chỉnh rất dễ dàng bằng cách thay đổi cường độ dòng điện hoặc số vòng dây.\\n- Mệnh đề 3: ĐÚNG. Lõi sắt non tập trung từ trường làm tăng lực từ lên gấp hàng nghìn lần."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự đáp án là **Đúng - Sai - Đúng**."
+      }
+    ],
+    "finalSolution": "Mệnh đề 1: **Đúng**; Mệnh đề 2: **Sai**; Mệnh đề 3: **Đúng**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b13-mcq-008",
+    "lessonId": "phy-g7-b13",
+    "sgkBaiSo": 20,
+    "skillIds": [
+      "electromagnet-advantages-comparison"
+    ],
+    "difficulty": 3,
+    "prompt": "So với nam châm vĩnh cửu, nam châm điện có những ưu điểm vượt trội nào sau đây khiến nó được ứng dụng rộng rãi trong kỹ thuật hiện đại?",
+    "knowledge": [
+      "magnet.electromagnet"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Không cần nguồn điện vẫn tự hoạt động liên tục mãi mãi"
+        },
+        {
+          "id": "opt-b",
+          "label": "Trọng lượng nhẹ hơn và không bao giờ bị nóng lên"
+        },
+        {
+          "id": "opt-c",
+          "label": "Có thể bật/tắt từ tính nhanh chóng, điều chỉnh được lực từ mạnh yếu và dễ dàng đảo cực từ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hút được mọi chất liệu như nhôm, đồng, gỗ, nhựa"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nam châm vĩnh cửu có lực từ cố định và luôn luôn hút, không thể tắt đi khi cần thả vật."
+      },
+      {
+        "level": 2,
+        "text": "Nam châm điện cực kì linh hoạt: bật/tắt bằng công tắc, tăng giảm lực hút bằng dòng điện, đổi cực bằng cách đảo chiều dây nối."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "So sánh ưu thế của nam châm điện",
+        "body": "Phân tích các ưu điểm công nghệ của nam châm điện so với nam châm vĩnh cửu."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Ưu điểm vượt trội của nam châm điện: 1. Có thể điều khiển bật/tắt từ tính bằng khóa điện; 2. Có thể chế tạo với lực từ cực mạnh bằng cách tăng dòng điện/số vòng dây; 3. Có thể đảo cực từ bằng cách đảo chiều dòng điện."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Ưu điểm vượt trội là **Bật/tắt nhanh chóng, điều chỉnh được lực từ và dễ dàng đảo cực từ**."
+      }
+    ],
+    "finalSolution": "Nam châm điện ưu việt vì **có thể bật/tắt, điều chỉnh độ mạnh yếu và đảo cực từ** theo ý muốn.",
+    "commonMistakes": []
+  }
+]

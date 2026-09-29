@@ -1,0 +1,79 @@
+{
+  "lessonId": "phy-g8-b14",
+  "nodeId": "phy-g8-b14-theory",
+  "title": "Lý thuyết: Năng lượng nhiệt và nội năng",
+  "subtitle": "Bài 26 SGK Khoa học tự nhiên 8 (Kết nối tri thức)",
+  "sgkBaiSo": 26,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Chuyển động nhiệt",
+      "badgeColor": "cyan",
+      "title": "1. Chuyển động nhiệt và năng lượng nhiệt (nhiệt năng)",
+      "content": "Vật chất xung quanh chúng ta được cấu tạo từ các hạt vô cùng nhỏ bé là nguyên tử và phân tử:",
+      "bulletPoints": [
+        "Chuyển động nhiệt: Các nguyên tử, phân tử cấu tạo nên vật luôn chuyển động hỗn loạn không ngừng về mọi hướng. Chuyển động này được gọi là chuyển động nhiệt.",
+        "Mối quan hệ với nhiệt độ: Nhiệt độ của vật càng cao thì các phân tử cấu tạo nên vật chuyển động hỗn loạn càng nhanh và ngược lại.",
+        "Năng lượng nhiệt (nhiệt năng): Năng lượng mà vật có được do chuyển động nhiệt của các phân tử cấu tạo nên nó gọi là năng lượng nhiệt (hay nhiệt năng).",
+        "Mọi vật đều có nhiệt năng: Vì các phân tử cấu tạo nên mọi vật ở bất kì nhiệt độ nào cũng đều luôn luôn chuyển động nhiệt hỗn loạn."
+      ],
+      "callout": "Ghi nhớ cơ bản: Nhiệt độ là số đo mức độ chuyển động nhanh hay chậm của các phân tử cấu tạo nên vật."
+    },
+    {
+      "id": "c2",
+      "badge": "Nội năng",
+      "badgeColor": "amber",
+      "title": "2. Khái niệm nội năng của vật",
+      "content": "Bên trong mỗi vật thể đều tồn tại một dạng năng lượng tiềm tàng gọi là nội năng:",
+      "bulletPoints": [
+        "Định nghĩa: Tổng động năng chuyển động nhiệt và thế năng tương tác của các phân tử cấu tạo nên vật được gọi là nội năng của vật.",
+        "Động năng phân tử: Do các phân tử chuyển động hỗn loạn không ngừng sinh ra (phụ thuộc vào nhiệt độ).",
+        "Thế năng phân tử: Do giữa các phân tử có lực hút và lực đẩy tương tác lẫn nhau, phụ thuộc vào khoảng cách giữa các phân tử (tức phụ thuộc vào thể tích của vật).",
+        "Sự phụ thuộc của nội năng: Nội năng của một vật phụ thuộc vào cả NHIỆT ĐỘ và THỂ TÍCH của vật.",
+        "Đơn vị đo nội năng: Là đơn vị năng lượng chuẩn trong hệ SI — jun (kí hiệu là J)."
+      ],
+      "callout": "Phân biệt với cơ năng: Cơ năng là năng lượng của toàn bộ vật thể so với mốc bên ngoài (vận tốc và độ cao), còn nội năng là năng lượng bên trong các vi hạt phân tử của vật."
+    },
+    {
+      "id": "c3",
+      "badge": "Thay đổi nội năng",
+      "badgeColor": "emerald",
+      "title": "3. Hai cách làm thay đổi nội năng và nhiệt lượng",
+      "content": "Nội năng của một vật thể không phải là một đại lượng bất biến mà có thể tăng lên hoặc giảm đi bằng hai cách:",
+      "bulletPoints": [
+        "Cách 1: Thực hiện công (có sự truyền lực và chuyển dời cơ học). Ví dụ: Dùng búa đập liên tiếp vào thanh sắt, cọ xát đồng xu trên mặt bàn gỗ, nén mạnh pit-tông trong ống chứa khí.",
+        "Cách 2: Truyền nhiệt (không có sự thực hiện công cơ học). Năng lượng nhiệt truyền tự phát từ vật có nhiệt độ cao hơn sang vật có nhiệt độ thấp hơn. Ví dụ: Nhúng thìa kim loại vào bát súp nóng, phơi quần áo ướt dưới ánh nắng mặt trời.",
+        "Khái niệm nhiệt lượng: Phần năng lượng nhiệt mà vật nhận được hay mất đi trong quá trình truyền nhiệt được gọi là nhiệt lượng (kí hiệu là Q).",
+        "Đơn vị nhiệt lượng: Đo bằng jun (J) hoặc kilôjun (kJ); quy đổi chuẩn: 1 kJ = 1 000 J."
+      ],
+      "callout": "Quy tắc truyền nhiệt: Nhiệt chỉ tự động truyền từ vật có nhiệt độ cao sang vật có nhiệt độ thấp hơn cho đến khi hai vật đạt trạng thái cân bằng nhiệt."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi dùng tay cọ xát một đồng xu kim loại nhiều lần trên mặt bàn gỗ, ta thấy đồng xu nóng lên. Trong hiện tượng này, nội năng của đồng xu đã thay đổi bằng cách nào?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Bằng cách thực hiện công cơ học",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Bằng cách truyền nhiệt từ mặt bàn sang",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Bằng phản ứng hóa học tự phát",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Nội năng của đồng xu hoàn toàn không thay đổi",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 8 Bài 26: Lực ma sát khi ta dùng lực cơ học cọ xát đồng xu đã sinh công làm tăng động năng của các phân tử kim loại, do đó nội năng thay đổi bằng cách thực hiện công."
+  }
+}

@@ -1,0 +1,522 @@
+[
+  {
+    "id": "phy-g7-b12-mcq-001",
+    "lessonId": "phy-g7-b12",
+    "sgkBaiSo": 19,
+    "skillIds": [
+      "magnetic-field-detection"
+    ],
+    "difficulty": 1,
+    "prompt": "Để phát hiện và kiểm tra xem tại một vị trí trong không gian có từ trường hay không, người ta thường dùng dụng cụ đơn giản nào sau đây?",
+    "knowledge": [
+      "magnet.magnetic_field"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Nhiệt kế thủy ngân"
+        },
+        {
+          "id": "opt-b",
+          "label": "Lực kế lò xo"
+        },
+        {
+          "id": "opt-c",
+          "label": "Kim nam châm thử (hoặc la bàn nhỏ)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Thước cuộn đo độ dài"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ trường có tính chất tác dụng lực từ lên vật nào?"
+      },
+      {
+        "level": 2,
+        "text": "Kim nam châm rất nhạy cảm với từ trường, khi đặt trong từ trường nó sẽ bị lực từ làm lệch khỏi phương ban đầu."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Dụng cụ nhận biết từ trường",
+        "body": "Xác định thiết bị phát hiện sự tồn tại của từ trường."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 7 (Bài 19: Từ trường), người ta dùng kim nam châm thử để nhận biết từ trường. Nơi nào có từ trường thì kim nam châm sẽ bị tác dụng lực từ làm lệch phương."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Dụng cụ chuẩn là **Kim nam châm thử (hoặc la bàn nhỏ)**."
+      }
+    ],
+    "finalSolution": "Dùng **kim nam châm thử** để nhận biết từ trường.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b12-mcq-002",
+    "lessonId": "phy-g7-b12",
+    "sgkBaiSo": 19,
+    "skillIds": [
+      "magnetic-field-lines-direction"
+    ],
+    "difficulty": 1,
+    "prompt": "Quy ước về chiều của các đường sức từ ở bên ngoài thanh nam châm là:",
+    "knowledge": [
+      "magnet.magnetic_field"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Đi ra từ cực Nam (S) và đi vào cực Bắc (N)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Không có quy ước về chiều của đường sức từ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Đi ra từ cực Bắc (N) và đi vào cực Nam (S)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Đi từ chính giữa thanh nam châm tỏa ra hai đầu"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hãy nhớ câu quy tắc bốn chữ rất nổi tiếng: 'Vào ... - Ra ...'."
+      },
+      {
+        "level": 2,
+        "text": "'Vào Nam - Ra Bắc' (đường sức từ đi ra từ cực Bắc N và đi vào cực Nam S)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quy ước chiều đường sức từ",
+        "body": "Xác định chiều mũi tên trên đường sức từ ngoài thanh nam châm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Quy ước: Ở bên ngoài thanh nam châm, đường sức từ là những đường cong có chiều đi ra từ cực Bắc và đi vào cực Nam ('Vào Nam - Ra Bắc')."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Quy ước đúng là **Đi ra từ cực Bắc (N) và đi vào cực Nam (S)**."
+      }
+    ],
+    "finalSolution": "Chiều đường sức từ ngoài nam châm: **Ra Bắc, Vào Nam**.",
+    "commonMistakes": [
+      {
+        "id": "reversed-direction",
+        "message": "Nhiều bạn nhầm thành 'Ra Nam, Vào Bắc'. Nhớ thần chú: 'Vào Nam - Ra Bắc'."
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b12-mcq-003",
+    "lessonId": "phy-g7-b12",
+    "sgkBaiSo": 19,
+    "skillIds": [
+      "magnetic-spectrum-concept"
+    ],
+    "difficulty": 1,
+    "prompt": "Hình ảnh các đường mạt sắt sắp xếp xung quanh một thanh nam châm khi ta gõ nhẹ vào tấm nhựa đặt trên nam châm được gọi là:",
+    "knowledge": [
+      "magnet.magnetic_field"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Từ phổ của nam châm"
+        },
+        {
+          "id": "opt-b",
+          "label": "Âm phổ của nam châm"
+        },
+        {
+          "id": "opt-c",
+          "label": "Quang phổ của nam châm"
+        },
+        {
+          "id": "opt-d",
+          "label": "Điện phổ của nam châm"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hiện tượng này liên quan đến từ tính của nam châm sắp xếp mạt sắt."
+      },
+      {
+        "level": 2,
+        "text": "Hình ảnh các đường mạt sắt thể hiện hình dạng từ trường được gọi là từ phổ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khái niệm hình ảnh mạt sắt",
+        "body": "Thuật ngữ khoa học gọi hình ảnh sắp xếp mạt sắt trong từ trường."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 7 Bài 19, hình ảnh các đường mạt sắt sắp xếp xung quanh nam châm được gọi là từ phổ. Từ phổ cho ta hình ảnh trực quan về từ trường."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thuật ngữ đúng là **Từ phổ của nam châm**."
+      }
+    ],
+    "finalSolution": "Hình ảnh các đường mạt sắt xung quanh nam châm gọi là **từ phổ**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b12-mcq-004",
+    "lessonId": "phy-g7-b12",
+    "sgkBaiSo": 19,
+    "skillIds": [
+      "magnetic-field-strength-distribution"
+    ],
+    "difficulty": 2,
+    "prompt": "Quan sát từ phổ của một thanh nam châm thẳng, ta thấy các đường mạt sắt tập trung dày đặc nhất ở hai đầu cực và thưa dần ở vùng giữa. Điều này chứng tỏ:",
+    "knowledge": [
+      "magnet.magnetic_field"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Từ trường mạnh nhất ở hai cực và yếu hơn ở vùng giữa thanh nam châm"
+        },
+        {
+          "id": "opt-b",
+          "label": "Mạt sắt chỉ thích dính vào hai đầu chứ từ trường ở mọi nơi là như nhau"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hai đầu thanh nam châm không có từ trường"
+        },
+        {
+          "id": "opt-d",
+          "label": "Từ trường ở vùng giữa thanh nam châm mạnh nhất"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mật độ các đường sức từ (độ mau/thưa) thể hiện độ mạnh yếu của từ trường."
+      },
+      {
+        "level": 2,
+        "text": "Nơi nào đường sức dày (hai cực) thì từ trường mạnh, nơi nào đường sức thưa thì từ trường yếu."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Ý nghĩa mật độ đường mạt sắt",
+        "body": "Liên hệ giữa độ mau thưa của mạt sắt và độ mạnh yếu của từ trường."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Độ mau (dày) hay thưa của các đường mạt sắt biểu thị độ mạnh yếu của từ trường: nơi nào đường mạt sắt dày thì từ trường mạnh (hai cực), nơi nào thưa thì từ trường yếu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Ý nghĩa là **Từ trường mạnh nhất ở hai cực và yếu hơn ở vùng giữa**."
+      }
+    ],
+    "finalSolution": "Đường mạt sắt càng dày thì từ trường càng mạnh, do đó **từ trường mạnh nhất ở hai cực**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b12-mcq-005",
+    "lessonId": "phy-g7-b12",
+    "sgkBaiSo": 19,
+    "skillIds": [
+      "earth-magnetic-field-compass"
+    ],
+    "difficulty": 2,
+    "prompt": "Tại sao cực Bắc (N, sơn đỏ) của kim la bàn luôn tự động chỉ về hướng Bắc địa lí của Trái Đất?",
+    "knowledge": [
+      "magnet.magnetic_field"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vì ở gần cực Bắc địa lí của Trái Đất có cực Nam từ của Trái Đất hút cực Bắc kim la bàn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vì Mặt Trời mọc ở hướng Bắc"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì không khí ở cực Bắc địa lí lạnh hơn nên hút kim la bàn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì ở cực Bắc địa lí có cực Bắc từ của Trái Đất đẩy kim la bàn"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hai cực khác tên thì hút nhau. Cực Bắc N của kim la bàn bị hút bởi cực nào của Trái Đất?"
+      },
+      {
+        "level": 2,
+        "text": "Cực Bắc N bị cực Nam từ của Trái Đất hút. Cực Nam từ của Trái Đất nằm ở gần cực Bắc địa lí."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất từ trường Trái Đất",
+        "body": "Giải thích vì sao cực Bắc của kim la bàn chỉ về hướng Bắc địa lí."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Trái Đất là một nam châm khổng lồ. Cực Nam từ của Trái Đất nằm ở gần cực Bắc địa lí. Do hai cực khác tên hút nhau nên cực Nam từ của Trái Đất hút cực Bắc (N) của kim la bàn chỉ về hướng Bắc."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nguyên nhân là **Gần cực Bắc địa lí có cực Nam từ của Trái Đất hút cực Bắc kim la bàn**."
+      }
+    ],
+    "finalSolution": "Gần cực Bắc địa lí có **cực Nam từ của Trái Đất**, hút cực Bắc (N) của kim la bàn.",
+    "commonMistakes": [
+      {
+        "id": "confused-earth-poles",
+        "message": "Nhiều bạn nhầm cực Bắc địa lí trùng với cực Bắc từ. Nhớ rằng cực Nam từ mới nằm gần cực Bắc địa lí để hút cực Bắc của la bàn."
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b12-mcq-006",
+    "lessonId": "phy-g7-b12",
+    "sgkBaiSo": 19,
+    "skillIds": [
+      "magnetic-needle-orientation"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi đặt một kim nam châm nhỏ thăng bằng trên một mũi nhọn trong vùng từ trường của một thanh nam châm, kim nam châm sẽ định hướng như thế nào khi đứng yên?",
+    "knowledge": [
+      "magnet.magnetic_field"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Luôn luôn chỉ thẳng đứng lên trời"
+        },
+        {
+          "id": "opt-b",
+          "label": "Định hướng dọc theo tiếp tuyến của đường sức từ tại điểm đó"
+        },
+        {
+          "id": "opt-c",
+          "label": "Quay tròn liên tục không bao giờ dừng lại"
+        },
+        {
+          "id": "opt-d",
+          "label": "Luôn luôn nằm vuông góc với đường sức từ tại điểm đó"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Kim nam châm đóng vai trò là một phần tử của đường sức từ."
+      },
+      {
+        "level": 2,
+        "text": "Trục của kim nam châm khi đứng yên sẽ trùng với tiếp tuyến của đường sức từ tại điểm đặt kim."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Định hướng của kim nam châm trong từ trường",
+        "body": "Quy luật vị trí của kim nam châm thử trên đường sức từ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Tại mỗi điểm trong từ trường, kim nam châm thử tự do sẽ tự định hướng theo một hướng xác định, trùng với tiếp tuyến của đường sức từ đi qua điểm đó."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Kim nam châm sẽ **Định hướng dọc theo tiếp tuyến của đường sức từ tại điểm đó**."
+      }
+    ],
+    "finalSolution": "Kim nam châm sẽ định hướng **dọc theo tiếp tuyến của đường sức từ** tại điểm đó.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b12-tf-007",
+    "lessonId": "phy-g7-b12",
+    "sgkBaiSo": 19,
+    "skillIds": [
+      "magnetic-field-tf"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai của các khẳng định sau về từ trường:",
+    "knowledge": [
+      "magnet.magnetic_field"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Xung quanh một dây dẫn có dòng điện chạy qua luôn tồn tại một từ trường.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Các đường sức từ của một thanh nam châm có thể cắt nhau tại bất kì điểm nào trong không gian.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Từ trường Trái Đất có vai trò bảo vệ sự sống trên Trái Đất khỏi các luồng bức xạ nguy hiểm từ vũ trụ.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Dòng điện sinh ra từ trường là thí nghiệm nổi tiếng của Oersted."
+      },
+      {
+        "level": 2,
+        "text": "Tại mỗi điểm trong không gian chỉ có một hướng từ trường xác định nên các đường sức từ không bao giờ cắt nhau (mệnh đề 2 sai)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 3 nhận định",
+        "body": "Đánh giá các phát biểu về từ trường dòng điện, tính chất đường sức từ và từ trường Trái Đất."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu kiến thức SGK",
+        "body": "- Mệnh đề 1: ĐÚNG. Dòng điện tạo ra từ trường xung quanh dây dẫn.\\n- Mệnh đề 2: SAI. Qua mỗi điểm trong từ trường chỉ vẽ được duy nhất 1 đường sức từ, các đường sức từ không bao giờ cắt nhau.\\n- Mệnh đề 3: ĐÚNG. Từ quyển Trái Đất bảo vệ khí quyển khỏi các hạt mang điện năng lượng cao từ Mặt Trời (gió Mặt Trời)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự đáp án là **Đúng - Sai - Đúng**."
+      }
+    ],
+    "finalSolution": "Mệnh đề 1: **Đúng**; Mệnh đề 2: **Sai**; Mệnh đề 3: **Đúng**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b12-mcq-008",
+    "lessonId": "phy-g7-b12",
+    "sgkBaiSo": 19,
+    "skillIds": [
+      "compass-interference-analysis"
+    ],
+    "difficulty": 3,
+    "prompt": "Khi đi dã ngoại trong rừng, một nhóm học sinh dùng la bàn để tìm đường. Khi nhóm đi qua gần một trạm biến áp điện cao thế lớn, kim la bàn bỗng nhiên chỉ sai lệch và quay lung tung. Hiện tượng này được giải thích là do:",
+    "knowledge": [
+      "magnet.magnetic_field"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Trạm biến áp làm kim la bàn bị nóng chảy"
+        },
+        {
+          "id": "opt-b",
+          "label": "Sấm sét chuẩn bị đánh vào la bàn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Dòng điện mạnh trong trạm biến áp sinh ra từ trường mạnh lấn át từ trường Trái Đất, làm lệch kim la bàn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Trạm biến áp hút hết không khí làm kim la bàn mất thăng bằng"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Xung quanh dòng điện xoay chiều cực mạnh có từ trường hay không?"
+      },
+      {
+        "level": 2,
+        "text": "Dòng điện lớn sinh ra từ trường rất mạnh, mạnh hơn nhiều so với từ trường Trái Đất nên làm nhiễu loạn kim la bàn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hiện tượng nhiễu từ la bàn",
+        "body": "Giải thích ảnh hưởng của dòng điện lớn trong trạm biến áp đến kim la bàn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Bản chất vật lí",
+        "body": "Dòng điện cường độ cao trong trạm biến áp sinh ra từ trường nhân tạo rất mạnh ở xung quanh. Từ trường này mạnh hơn từ trường Trái Đất, tác dụng lực từ hỗn loạn lên kim nam châm làm kim chỉ sai phương hướng địa lí."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nguyên nhân là **Dòng điện mạnh sinh ra từ trường mạnh lấn át từ trường Trái Đất**."
+      }
+    ],
+    "finalSolution": "Từ trường mạnh của dòng điện tại trạm biến áp **làm nhiễu và lệch kim la bàn**.",
+    "commonMistakes": []
+  }
+]

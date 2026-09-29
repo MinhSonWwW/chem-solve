@@ -1,0 +1,75 @@
+{
+  "lessonId": "phy-g9-b06",
+  "nodeId": "phy-g9-b06-theory",
+  "title": "Lý thuyết: Lăng kính",
+  "subtitle": "Bài 7 SGK Khoa học tự nhiên 9 (Kết nối tri thức)",
+  "sgkBaiSo": 7,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Cấu tạo & Đường truyền",
+      "badgeColor": "cyan",
+      "title": "1. Cấu tạo lăng kính và đường truyền ánh sáng đơn sắc",
+      "content": "Lăng kính là một dụng cụ quang học cơ bản được chế tạo từ vật liệu trong suốt:",
+      "bulletPoints": [
+        "Cấu tạo: Lăng kính là một khối chất trong suốt, đồng tính (thủy tinh, nhựa trong...), thường có dạng hình lăng trụ tam giác.",
+        "Các phần tử hình học: Tiết diện thẳng là hình tam giác gồm hai mặt bên và một mặt đáy; góc hợp bởi hai mặt bên gọi là góc chiết quang $A$.",
+        "Đường truyền của tia sáng đơn sắc: Khi chiếu một tia sáng đơn sắc vào một mặt bên của lăng kính, tia sáng bị khúc xạ hai lần (tại mặt bên thứ nhất và mặt bên thứ hai). Sau hai lần khúc xạ, tia ló luôn bị lệch về phía đáy của lăng kính so với tia tới ban đầu."
+      ],
+      "callout": "Quy tắc cốt lõi: Mọi tia sáng đơn sắc khi đi qua lăng kính (đặt trong không khí) đều bị bẻ lệch về phía đáy của lăng kính."
+    },
+    {
+      "id": "c2",
+      "badge": "Hiện tượng tán sắc",
+      "badgeColor": "amber",
+      "title": "2. Hiện tượng tán sắc ánh sáng trắng qua lăng kính",
+      "content": "Thí nghiệm lịch sử của nhà bác học Isaac Newton năm 1672 đã khám phá ra bản chất của ánh sáng trắng:",
+      "bulletPoints": [
+        "Hiện tượng tán sắc: Khi chiếu một chùm ánh sáng trắng hẹp (như ánh sáng Mặt Trời) qua lăng kính, chùm tia ló không còn là màu trắng mà bị phân tích thành một dải màu biến đổi liên tục từ Đỏ đến Tím.",
+        "Dải 7 màu chính: Đỏ $\\rightarrow$ Da cam $\\rightarrow$ Vàng $\\rightarrow$ Lục $\\rightarrow$ Lam $\\rightarrow$ Chàm $\\rightarrow$ Tím.",
+        "Quy luật lệch màu: Ánh sáng đỏ bị lệch ít nhất (nằm trên cùng dải màu); ánh sáng tím bị lệch nhiều nhất (nằm dưới cùng dải màu, lệch sát về phía đáy nhất)."
+      ],
+      "callout": "Đặc điểm ánh sáng đơn sắc: Ánh sáng đơn sắc là ánh sáng có một màu xác định và KHÔNG bị tán sắc khi truyền qua lăng kính, chỉ bị lệch về phía đáy."
+    },
+    {
+      "id": "c3",
+      "badge": "Hiện tượng tự nhiên",
+      "badgeColor": "emerald",
+      "title": "3. Bản chất ánh sáng trắng và hiện tượng cầu vồng",
+      "content": "Kết quả tán sắc giúp giải thích nhiều hiện tượng kỳ thú trong tự nhiên:",
+      "bulletPoints": [
+        "Bản chất ánh sáng trắng: Ánh sáng trắng (như ánh sáng Mặt Trời, ánh sáng đèn pha xe, đèn sợi đốt) không phải ánh sáng thuần khiết mà là hỗn hợp của vô số ánh sáng đơn sắc có màu biến đổi liên tục từ đỏ đến tím.",
+        "Cầu vồng sau mưa: Sau cơn mưa, bầu khí quyển còn đọng lại vô số hạt nước mưa li ti hình cầu. Khi ánh sáng Mặt Trời chiếu qua các hạt nước này, chúng đóng vai trò như những lăng kính tự nhiên làm khúc xạ, phản xạ và tán sắc ánh sáng tạo thành dải cầu vồng hình vòng cung tuyệt đẹp trên bầu trời.",
+        "Váng dầu mỡ, đĩa CD: Ánh sáng bảy sắc lấp lánh trên bong bóng xà phòng, váng dầu hay mặt đĩa CD cũng liên quan đến sự phân tách các thành phần màu của ánh sáng trắng."
+      ],
+      "callout": "Thứ tự màu cầu vồng: Luôn ghi nhớ dải màu theo thứ tự độ lệch tăng dần: Đỏ - Da cam - Vàng - Lục - Lam - Chàm - Tím."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi truyền qua lăng kính đặt trong không khí, tia sáng đơn sắc luôn bị bẻ lệch về phía nào so với tia tới ban đầu?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Lệch về phía đáy của lăng kính",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Lệch về phía đỉnh của góc chiết quang",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Tiếp tục truyền thẳng mà không bị lệch",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Bị phản xạ ngược trở lại nguồn phát",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 9 Bài 7: Sau khi khúc xạ qua hai mặt bên của lăng kính đặt trong không khí, tia ló luôn bị lệch về phía đáy của lăng kính."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "lessonId": "phy-g8-b15",
+  "nodeId": "phy-g8-b15-theory",
+  "title": "Lý thuyết: Thực hành đo năng lượng nhiệt bằng joulemeter",
+  "subtitle": "Bài 27 SGK Khoa học tự nhiên 8 (Kết nối tri thức)",
+  "sgkBaiSo": 27,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Mục đích & Dụng cụ",
+      "badgeColor": "cyan",
+      "title": "1. Mục đích và dụng cụ thí nghiệm",
+      "content": "Thí nghiệm giúp học sinh đo trực tiếp năng lượng nhiệt cung cấp cho một khối lượng nước:",
+      "bulletPoints": [
+        "Mục đích thực hành: Xác định năng lượng nhiệt mà dây nung điện cung cấp cho nước để làm nhiệt độ của nước tăng thêm một khoảng xác định.",
+        "Dụng cụ thí nghiệm bao gồm:",
+        "+ Bình nhiệt lượng kế (vỏ xốp cách nhiệt tốt, nắp đậy kín) có gắn dây nung điện trở và que khuấy.",
+        "+ Joulemeter (oát kế / joule kế điện tử): Thiết bị đo chính xác năng lượng điện tiêu thụ chuyển hóa thành nhiệt (đo bằng jun, J).",
+        "+ Nhiệt kế: Đo nhiệt độ ban đầu và nhiệt độ sau khi đun của nước.",
+        "+ Cân điện tử: Đo khối lượng nước m (kg hoặc g).",
+        "+ Nguồn điện một chiều hoặc xoay chiều phù hợp với thông số của dây nung."
+      ],
+      "callout": "Chức năng của Joulemeter: Tự động đo và hiển thị trực tiếp năng lượng nhiệt cung cấp (J) dựa trên công suất P và thời gian đun t: E = P . t."
+    },
+    {
+      "id": "c2",
+      "badge": "Quy trình thực hành",
+      "badgeColor": "amber",
+      "title": "2. Các bước tiến hành thí nghiệm chuẩn",
+      "content": "Quy trình thực nghiệm được tiến hành tuần tự theo các bước khoa học:",
+      "bulletPoints": [
+        "Bước 1: Cân một lượng nước xác định (ví dụ m = 150 g = 0,15 kg) rồi đổ nhẹ nhàng vào bình nhiệt lượng kế.",
+        "Bước 2: Đậy kín nắp bình, cắm nhiệt kế ngập trong nước (không để đầu nhiệt kế chạm trực tiếp vào dây nung), đọc nhiệt độ ban đầu t1 (°C).",
+        "Bước 3: Mắc dây nung vào joulemeter và nối vào nguồn điện.",
+        "Bước 4: Bật công tắc nguồn, đồng thời khởi động joulemeter để bắt đầu quá trình đo năng lượng.",
+        "Bước 5: Dùng que khuấy khuấy nhẹ và đều nước trong suốt quá trình đun. Khi nhiệt độ tăng thêm một khoảng xác định (ví dụ tăng 10 °C đến nhiệt độ t2), lập tức ngắt nguồn điện và đọc ngay số chỉ năng lượng E (J) trên joulemeter.",
+        "Bước 6: Ghi số liệu vào bảng báo cáo thực hành."
+      ],
+      "callout": "Kĩ thuật khuấy: Cần khuấy nhẹ nhàng liên tục để nhiệt lượng tỏa ra từ dây nung lan tỏa đồng đều khắp thể tích nước trong bình."
+    },
+    {
+      "id": "c3",
+      "badge": "Xử lý số liệu & Sai số",
+      "badgeColor": "emerald",
+      "title": "3. Xử lý số liệu đo và phân tích sai số",
+      "content": "Phân tích kết quả thí nghiệm và các nguyên nhân dẫn đến chênh lệch số liệu:",
+      "bulletPoints": [
+        "Độ tăng nhiệt độ: Δt = t2 - t1 (°C).",
+        "Quy luật nhận thấy: Năng lượng nhiệt E cần cung cấp tỉ lệ thuận với khối lượng nước m (khối lượng nước càng lớn thì cần năng lượng càng nhiều) và tỉ lệ thuận với độ tăng nhiệt độ Δt (nhiệt độ tăng càng nhiều thì năng lượng tiêu tốn càng lớn).",
+        "Nguyên nhân sai số thường gặp:",
+        "+ Một phần nhỏ nhiệt lượng bị thất thoát ra ngoài vỏ bình nhiệt lượng kế và không khí.",
+        "+ Một phần nhiệt lượng dùng để nung nóng chính dây nung, thành trong của bình và que khuấy.",
+        "+ Mắt đọc nhiệt kế và joulemeter chưa chuẩn hoặc chưa kịp thời khi ngắt điện."
+      ],
+      "callout": "Khắc phục sai số: Dùng bình nhiệt lượng kế cách nhiệt tốt, đậy kín nắp và thao tác ngắt điện - đọc số chỉ nhanh chóng, chuẩn xác."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Trong bài thực hành đo năng lượng nhiệt, thiết bị Joulemeter được sử dụng nhằm mục đích chính là gì?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Đo trực tiếp năng lượng nhiệt (tính bằng Jun) cung cấp cho nước qua dây nung",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Đo khối lượng nước có trong bình nhiệt lượng kế",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Đo thể tích khí thoát ra khi nước sôi",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Khuấy đều nước trong bình nhiệt lượng kế",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 8 Bài 27: Joulemeter (oát kế / joule kế) là thiết bị chuyên dụng dùng để đo năng lượng nhiệt cung cấp cho chất lỏng (đơn vị là J)."
+  }
+}

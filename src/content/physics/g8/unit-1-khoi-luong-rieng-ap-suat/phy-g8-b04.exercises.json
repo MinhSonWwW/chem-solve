@@ -1,0 +1,543 @@
+[
+  {
+    "id": "phy-g8-b04-mcq-001",
+    "lessonId": "phy-g8-b04",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "liquid-pressure-direction"
+    ],
+    "difficulty": 1,
+    "prompt": "Khác với áp suất do vật rắn gây ra chỉ theo phương vuông góc với mặt tiếp xúc, chất lỏng gây áp suất:",
+    "knowledge": [
+      "formula.pressure.liquid"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Theo mọi phương lên đáy bình, thành bình và các vật ở trong lòng nó"
+        },
+        {
+          "id": "opt-b",
+          "label": "Chỉ tác dụng sang hai bên thành bình"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chỉ duy nhất theo phương thẳng đứng hướng từ trên xuống đáy bình"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chỉ tác dụng theo phương hướng lên trên mặt thoáng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Chất lỏng có tính linh động, các phân tử chuyển động hỗn loạn không ngừng."
+      },
+      {
+        "level": 2,
+        "text": "Theo SGK KHTN 8, chất lỏng gây áp suất theo mọi phương."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định đặc điểm",
+        "body": "Đề bài yêu cầu nêu phương tác dụng của áp suất do chất lỏng gây ra."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 16), chất lỏng gây áp suất theo mọi phương lên đáy bình, thành bình và các vật ở trong lòng chất lỏng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Theo mọi phương lên đáy bình, thành bình và các vật ở trong lòng nó**."
+      }
+    ],
+    "finalSolution": "Chất lỏng gây áp suất **theo mọi phương lên đáy bình, thành bình và các vật ở trong lòng nó**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-with-solid-pressure",
+        "message": "Vật rắn chỉ gây áp suất lên mặt tiếp xúc phía dưới, còn chất lỏng ép lên cả đáy, thành bình và mọi vật nhúng trong nó."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b04-mcq-002",
+    "lessonId": "phy-g8-b04",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "liquid-pressure-formula"
+    ],
+    "difficulty": 1,
+    "prompt": "Áp suất do một khối chất lỏng đứng yên có trọng lượng riêng d gây ra tại một điểm ở độ sâu h được tính bằng công thức nào sau đây?",
+    "knowledge": [
+      "formula.pressure.liquid"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "p = d x h"
+        },
+        {
+          "id": "opt-b",
+          "label": "p = d / h"
+        },
+        {
+          "id": "opt-c",
+          "label": "p = h / d"
+        },
+        {
+          "id": "opt-d",
+          "label": "p = d + h"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Độ sâu h càng lớn thì áp suất p càng lớn."
+      },
+      {
+        "level": 2,
+        "text": "Công thức là tích giữa trọng lượng riêng d và độ sâu h: p = d x h."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định công thức",
+        "body": "Tìm công thức tính áp suất chất lỏng ở độ sâu h."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức chuẩn",
+        "body": "$p = d \\times h$, trong đó $d$ là trọng lượng riêng (N/m³), $h$ là độ sâu (m)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Công thức đúng là **p = d x h**."
+      }
+    ],
+    "finalSolution": "Công thức tính áp suất chất lỏng: **$p = d \\times h$**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-height-with-depth",
+        "message": "h là độ sâu tính từ mặt thoáng chất lỏng xuống điểm xét, không phải độ cao từ đáy bình lên."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b04-mcq-003",
+    "lessonId": "phy-g8-b04",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "communicating-vessels-concept"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong một bình thông nhau chứa cùng một chất lỏng đứng yên, mặt thoáng của chất lỏng ở các nhánh có đặc điểm nào sau đây?",
+    "knowledge": [
+      "formula.pressure.liquid"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Luôn luôn ở cùng một độ cao (cùng mức nằm ngang)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nhánh hẹp hơn có mực chất lỏng cao hơn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Nhánh rộng hơn có mực chất lỏng cao hơn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Mực chất lỏng thay đổi liên tục không dừng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhớ lại nguyên tắc bình thông nhau khi chất lỏng đã đứng yên."
+      },
+      {
+        "level": 2,
+        "text": "Mặt thoáng ở các nhánh luôn ở cùng một độ cao."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định nguyên tắc",
+        "body": "Quy luật mực chất lỏng trong bình thông nhau chứa cùng một chất lỏng đứng yên."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 16), trong bình thông nhau chứa cùng một chất lỏng đứng yên, các mặt thoáng ở các nhánh luôn ở cùng một độ cao."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Luôn luôn ở cùng một độ cao**."
+      }
+    ],
+    "finalSolution": "Trong bình thông nhau, các mặt thoáng của cùng một chất lỏng đứng yên **luôn ở cùng một độ cao**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-with-capillary",
+        "message": "Hiện tượng mao dẫn chỉ xảy ra với ống siêu hẹp cỡ milimét; với bình thông nhau thông thường, mực nước luôn bằng nhau."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b04-num-004",
+    "lessonId": "phy-g8-b04",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "liquid-pressure-calc-diver"
+    ],
+    "difficulty": 2,
+    "prompt": "Một người thợ lặn đang khảo sát ở độ sâu h = 15 m dưới mặt nước biển. Biết trọng lượng riêng của nước biển là d = 10 300 N/m³. Hãy tính áp suất do nước biển tác dụng lên người thợ lặn theo đơn vị kPa.",
+    "knowledge": [
+      "formula.pressure.liquid"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 154.5,
+      "unit": "kPa",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp dụng công thức tính áp suất chất lỏng: p = d x h."
+      },
+      {
+        "level": 2,
+        "text": "p = 10 300 x 15 = 154 500 Pa. Đổi sang kPa bằng cách chia cho 1 000."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Độ sâu $h = 15\\text{ m}$; Trọng lượng riêng $d = 10\\,300\\text{ N/m}^3$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức áp suất chất lỏng",
+        "body": "$p = d \\times h$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán và đổi đơn vị",
+        "body": "$p = 10\\,300 \\times 15 = 154\\,500\\text{ Pa} = 154,5\\text{ kPa}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Áp suất do nước biển gây ra là **154,5 kPa**."
+      }
+    ],
+    "finalSolution": "Áp suất tại độ sâu 15 m: $p = d \\times h = 10\\,300 \\times 15 = 154\\,500\\text{ Pa} = 154,5\\text{ kPa}$.",
+    "commonMistakes": [
+      {
+        "id": "forgot-to-convert-kpa",
+        "message": "Đề bài yêu cầu đơn vị kPa, bạn cần lấy giá trị Pa chia cho 1 000: 154 500 Pa = 154,5 kPa.",
+        "trapAnswers": [
+          "154500",
+          "154500 kPa"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b04-num-005",
+    "lessonId": "phy-g8-b04",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "liquid-pressure-calc-tank"
+    ],
+    "difficulty": 2,
+    "prompt": "Một thùng phuy hình trụ cao 1,2 m chứa đầy nước nguyên chất. Cho biết trọng lượng riêng của nước là d = 10 000 N/m³. Áp suất của nước tác dụng lên đáy thùng phuy là bao nhiêu Pa?",
+    "knowledge": [
+      "density.water",
+      "formula.pressure.liquid"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 12000,
+      "unit": "Pa",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thùng chứa đầy nước nên độ sâu của đáy thùng đúng bằng chiều cao cột nước h = 1,2 m."
+      },
+      {
+        "level": 2,
+        "text": "Áp dụng công thức p = d x h = 10 000 x 1,2."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Độ sâu đáy thùng $h = 1,2\\text{ m}$; $d = 10\\,000\\text{ N/m}^3$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức áp suất",
+        "body": "$p = d \\times h$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$p = 10\\,000 \\times 1,2 = 12\\,000\\text{ Pa}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Áp suất tác dụng lên đáy thùng là **12 000 Pa**."
+      }
+    ],
+    "finalSolution": "Áp suất tác dụng lên đáy thùng: $p = d \\times h = 10\\,000 \\times 1,2 = 12\\,000\\text{ Pa}$.",
+    "commonMistakes": [
+      {
+        "id": "confuse-d-with-D",
+        "message": "Trọng lượng riêng d = 10 000 N/m3 (d = 10 * D). Nếu lấy D = 1 000 nhân với h sẽ ra 1 200 (thiếu nhân 10)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b04-mcq-006",
+    "lessonId": "phy-g8-b04",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "liquid-pressure-dam-design"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong xây dựng các đập chắn nước thủy điện lớn, người ta luôn thiết kế phần chân đập có bề dày lớn hơn rất nhiều so với phần đỉnh đập. Thiết kế này dựa trên quy luật vật lí nào sau đây?",
+    "knowledge": [
+      "formula.pressure.liquid"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Càng xuống sâu áp suất chất lỏng càng tăng, đáy đập chịu áp lực nước lớn nhất"
+        },
+        {
+          "id": "opt-b",
+          "label": "Để tạo hình bậc thang cho cá nhảy qua"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chân đập tiếp xúc với đất nên xây dày để chống mối mọt"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nước ở trên mặt nóng hơn nước ở đáy nên đỉnh đập không cần dày"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Xem xét công thức p = d x h: độ sâu h ở chân đập lớn hơn nhiều so với đỉnh đập."
+      },
+      {
+        "level": 2,
+        "text": "Áp suất ở đáy đập rất lớn nên chân đập phải dày và vững chắc nhất để chịu lực."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Yêu cầu giải thích hiện tượng",
+        "body": "Giải thích vì sao chân đập thủy điện luôn dày hơn đỉnh đập."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy luật áp suất chất lỏng",
+        "body": "Theo công thức $p = d \\times h$, áp suất chất lỏng tỉ lệ thuận với độ sâu $h$. Tại đáy đập nước sâu nhất nên áp suất và áp lực nước nén lên thân đập là cực đại."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Chân đập phải dày nhất để chịu được áp suất nước khổng lồ ở đáy đập."
+      }
+    ],
+    "finalSolution": "Chân đập được xây dày hơn vì **càng xuống sâu áp suất chất lỏng càng tăng**, đáy đập chịu áp lực nước lớn nhất.",
+    "commonMistakes": [
+      {
+        "id": "think-pressure-is-equal",
+        "message": "Nhiều bạn tưởng áp suất ở mọi điểm trong hồ nước là như nhau, nhưng áp suất phụ thuộc trực tiếp vào độ sâu h."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b04-tf-007",
+    "lessonId": "phy-g8-b04",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "pressure-liquid-air-tf"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai của các khẳng định sau về áp suất chất lỏng và áp suất khí quyển:",
+    "knowledge": [
+      "formula.pressure.liquid",
+      "pressure.atmospheric.standard"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Áp suất khí quyển tác dụng lên các vật trên Trái Đất theo mọi phương.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Càng lên cao trên các đỉnh núi cao, áp suất khí quyển càng tăng lên rõ rệt.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Trong cùng một khối chất lỏng đứng yên, tất cả các điểm nằm trên cùng một mặt phẳng nằm ngang đều có áp suất bằng nhau.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Không khí có tính linh động giống chất lỏng nên tác dụng áp suất theo mọi phương."
+      },
+      {
+        "level": 2,
+        "text": "Càng lên cao không khí càng loãng nên áp suất khí quyển giảm chứ không tăng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 1",
+        "body": "Không khí tác dụng áp suất theo mọi phương lên các vật -> Đúng."
+      },
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 2",
+        "body": "Càng lên cao không khí càng loãng, lớp khí phía trên càng mỏng nên áp suất khí quyển giảm dần -> Mệnh đề 2 Sai."
+      },
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 3",
+        "body": "Các điểm cùng nằm trên mặt phẳng ngang có cùng độ sâu h nên có áp suất bằng nhau -> Đúng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự: Đúng - Sai - Đúng."
+      }
+    ],
+    "finalSolution": "Mệnh đề 1: **Đúng**; Mệnh đề 2: **Sai**; Mệnh đề 3: **Đúng**.",
+    "commonMistakes": [
+      {
+        "id": "altitude-pressure-confuse",
+        "message": "Lên cao áp suất khí quyển GIẢM, do đó ở vùng núi cao nước sôi ở nhiệt độ dưới 100°C và người dễ bị khó thở."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b04-mcq-008",
+    "lessonId": "phy-g8-b04",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "atmospheric-pressure-milkbox"
+    ],
+    "difficulty": 3,
+    "prompt": "Khi cắm ống hút vào một hộp sữa tươi bằng giấy rồi dùng miệng hút mạnh sữa và không khí ra ngoài, ta quan sát thấy vỏ hộp sữa bằng giấy bị bẹp dúm lại theo nhiều phía. Hiện tượng này được giải thích là do:",
+    "knowledge": [
+      "pressure.atmospheric.standard"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Áp suất không khí bên trong hộp giảm, áp suất khí quyển bên ngoài lớn hơn ép bẹp vỏ hộp"
+        },
+        {
+          "id": "opt-b",
+          "label": "Chất lượng vỏ hộp sữa bị hỏng làm giấy tự co lại"
+        },
+        {
+          "id": "opt-c",
+          "label": "Sữa bên trong hút hết thành hộp vào tâm"
+        },
+        {
+          "id": "opt-d",
+          "label": "Do lực kéo của trọng lực Trái Đất tăng lên đột ngột"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi hút bớt không khí trong hộp ra, lượng không khí bên trong hộp giảm đi đáng kể."
+      },
+      {
+        "level": 2,
+        "text": "Áp suất khí quyển bên ngoài hộp lúc này lớn hơn áp suất bên trong hộp, tác dụng lực ép lên vỏ hộp theo mọi phía."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tình huống thực tế",
+        "body": "Vỏ hộp sữa bị bẹp lại khi hút bớt không khí và sữa ra ngoài."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Nguyên nhân vật lí",
+        "body": "Khi hút bớt khí ra ngoài, áp suất bên trong hộp sữa giảm xuống rất thấp. Áp suất khí quyển ở bên ngoài ($p_0 \\approx 10^5\\text{ Pa}$) lớn hơn hẳn ép mạnh lên thành hộp theo mọi phương làm vỏ hộp bị móp méo."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hiện tượng do **áp suất khí quyển bên ngoài lớn hơn áp suất bên trong hộp ép bẹp vỏ hộp**."
+      }
+    ],
+    "finalSolution": "Do **áp suất khí quyển bên ngoài lớn hơn áp suất bên trong hộp** nên ép bẹp vỏ hộp theo nhiều phía.",
+    "commonMistakes": [
+      {
+        "id": "mouth-suction-force-mistake",
+        "message": "Miệng chỉ làm giảm áp suất bên trong hộp, lực trực tiếp làm bẹp hộp chính là áp suất khí quyển của môi trường xung quanh."
+      }
+    ]
+  }
+]

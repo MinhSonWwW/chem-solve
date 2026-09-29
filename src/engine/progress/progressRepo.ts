@@ -74,7 +74,7 @@ const USER_PROGRESS_KEY = 'userProgress';
 const DEFAULT_PROGRESS: UserProgress = {
   xp: 0,
   gems: 0,
-  hearts: GAMIFICATION.hearts.max,
+  hearts: 99,
   heartsLastDecAt: 0,
   lastHeartResetDate: new Date().toISOString().slice(0, 10),
   streak: 0,
@@ -97,6 +97,7 @@ export async function loadUserProgress(): Promise<UserProgress> {
   raw.dailyGoal = raw.dailyGoal ?? 20;
   raw.achievements = raw.achievements ?? {};
   raw.completedNodes = raw.completedNodes ?? {};
+  raw.hearts = 99; // Testing mode: unlimited hearts
 
   // Daily Full Heart Refill: automatically recovers full 5 hearts upon new calendar day
   const today = new Date().toISOString().slice(0, 10);

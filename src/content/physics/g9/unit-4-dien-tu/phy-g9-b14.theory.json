@@ -1,0 +1,83 @@
+{
+  "lessonId": "phy-g9-b14",
+  "nodeId": "phy-g9-b14-theory",
+  "title": "Lý thuyết: Tác dụng dòng xoay chiều & Máy biến thế",
+  "subtitle": "Bài 15 SGK Khoa học tự nhiên 9 (Kết nối tri thức)",
+  "sgkBaiSo": 15,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Các tác dụng chính",
+      "badgeColor": "cyan",
+      "title": "1. Các tác dụng của dòng điện xoay chiều",
+      "content": "Dòng điện xoay chiều có nhiều tác dụng tương tự như dòng điện một chiều nhưng có đặc trưng riêng:",
+      "bulletPoints": [
+        "Tác dụng nhiệt: Dòng điện xoay chiều chạy qua vật dẫn làm vật nóng lên (bàn là, nồi cơm điện, bình nóng lạnh, mỏ hàn).",
+        "Tác dụng quang: Dòng điện xoay chiều đốt nóng dây tóc bóng đèn phát sáng, làm phát quang chất bột trong đèn huỳnh quang và đèn LED.",
+        "Tác dụng từ: Dòng điện xoay chiều chạy qua cuộn dây hút đinh sắt, làm quay kim nam châm. Lưu ý quan trọng: Khi dòng điện đổi chiều thì lực từ tác dụng lên cực của nam châm cũng đổi chiều.",
+        "Tác dụng sinh lý: Dòng điện xoay chiều gây co giật cơ, có thể làm ngưng tim nếu chạm vào nguồn điện nguy hiểm (cần tuân thủ tuyệt đối an toàn điện)."
+      ],
+      "callout": "Ứng dụng tác dụng từ: Nam châm điện xoay chiều được dùng trong rơle điều khiển, loa điện động, chuông điện cửa."
+    },
+    {
+      "id": "c2",
+      "badge": "Truyền tải điện năng",
+      "badgeColor": "amber",
+      "title": "2. Truyền tải điện năng đi xa và giảm hao phí nhiệt",
+      "content": "Khi truyền tải điện năng từ nhà máy đến khu dân cư qua khoảng cách hàng trăm kilômét:",
+      "bulletPoints": [
+        "Nguyên nhân hao phí: Dây dẫn có điện trở $R$, dòng điện chạy qua sinh nhiệt làm tiêu hao một phần công suất điện năng ra môi trường.",
+        "Công thức công suất hao phí: $P_{hp} = R \\cdot I^2 = R \\frac{P^2}{U^2}$",
+        "Trong đó: $P$ là công suất cần truyền tải (W); $U$ là hiệu điện thế giữa hai đầu đường dây tải (V); $R$ là điện trở tổng cộng của đường dây tải ($\\Omega$); $P_{hp}$ là công suất hao phí do tỏa nhiệt (W).",
+        "Biện pháp tối ưu: Vì $P_{hp}$ tỉ lệ nghịch với bình phương hiệu điện thế $U^2$, nên cách tốt nhất và kinh tế nhất để giảm hao phí là tăng hiệu điện thế $U$ lên thật cao (đường dây 110 kV, 220 kV, 500 kV).",
+        "Quy luật bình phương: Tăng $U$ lên $n$ lần thì hao phí $P_{hp}$ giảm đi $n^2$ lần!"
+      ],
+      "callout": "Tại sao không giảm R: Giảm $R$ đòi hỏi tăng tiết diện dây $S$ (dây rất to và nặng) hoặc dùng kim loại quý (bạc, vàng), sẽ tốn kém tiền bạc làm cột điện khổng lồ và dây dẫn đắt đỏ."
+    },
+    {
+      "id": "c3",
+      "badge": "Máy biến thế",
+      "badgeColor": "emerald",
+      "title": "3. Cấu tạo và công thức của máy biến thế (máy biến áp)",
+      "content": "Để tăng hiệu điện thế khi truyền tải và hạ hiệu điện thế khi sử dụng, người ta dùng máy biến thế:",
+      "bulletPoints": [
+        "Cấu tạo: Gồm hai cuộn dây có số vòng khác nhau ($N_1$ và $N_2$) quấn cách điện trên cùng một lõi sắt/thép pha silic có từ tính tốt.",
+        "+ Cuộn sơ cấp: Nối với nguồn điện vào, có $N_1$ vòng, hiệu điện thế $U_1$.",
+        "+ Cuộn thứ cấp: Nối với tải tiêu thụ lấy điện ra, có $N_2$ vòng, hiệu điện thế $U_2$.",
+        "Công thức máy biến thế: $\\frac{U_1}{U_2} = \\frac{N_1}{N_2}$",
+        "Phân loại:",
+        "+ Máy tăng thế: $U_2 > U_1 \\Leftrightarrow N_2 > N_1$ (đặt tại nhà máy điện trước khi phát lên đường dây cao thế).",
+        "+ Máy hạ thế: $U_2 < U_1 \\Leftrightarrow N_2 < N_1$ (đặt tại trạm biến áp khu dân cư hạ xuống 220 V, hoặc trong củ sạc hạ xuống 5 V/12 V).",
+        "Điều kiện hoạt động: Máy biến thế CHỈ hoạt động với dòng điện xoay chiều AC, KHÔNG hoạt động với dòng điện một chiều DC không đổi (vì từ trường không đổi không sinh ra cảm ứng)."
+      ],
+      "callout": "Ghi nhớ quy tắc: Số vòng dây nhiều hơn thì hiệu điện thế lớn hơn; số vòng ít hơn thì hiệu điện thế nhỏ hơn."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Hệ thức nào sau đây diễn tả đúng mối quan hệ giữa hiệu điện thế và số vòng dây trong máy biến thế?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "U1 / U2 = N1 / N2",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "U1 / U2 = N2 / N1",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "U1 . U2 = N1 . N2",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "U1 + U2 = N1 + N2",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 9 Bài 15: Tỉ số hiệu điện thế giữa hai đầu cuộn dây tỉ lệ thuận với số vòng dây tương ứng: U1 / U2 = N1 / N2."
+  }
+}

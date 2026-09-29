@@ -1,0 +1,83 @@
+{
+  "lessonId": "phy-g9-b08",
+  "nodeId": "phy-g9-b08-theory",
+  "title": "Lý thuyết: Thực hành đo tiêu cự của thấu kính hội tụ",
+  "subtitle": "Bài 9 SGK Khoa học tự nhiên 9 (Kết nối tri thức)",
+  "sgkBaiSo": 9,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Mục đích & Dụng cụ",
+      "badgeColor": "cyan",
+      "title": "1. Mục đích và dụng cụ thí nghiệm",
+      "content": "Bài thực hành giúp học sinh rèn luyện kĩ năng bố trí thí nghiệm quang học và đo đạc chính xác:",
+      "bulletPoints": [
+        "Mục đích: Xác định tiêu cự của một thấu kính hội tụ bằng phương pháp thực nghiệm quang học.",
+        "Dụng cụ cần thiết (theo SGK KHTN 9):",
+        "+ Giá quang học có gắn thước đo vạch chia đến milimet.",
+        "+ Nguồn sáng điện (đèn chiếu compact hoặc LED có hộp che sáng).",
+        "+ Vật sáng: Tấm nhựa có khoét hình chữ F (hoặc bảng ô vuông có đèn chiếu sáng).",
+        "+ Thấu kính hội tụ cần xác định tiêu cự (gắn trên giá trượt).",
+        "+ Màn chắn hứng ảnh (màn trắng có gắn vạch đo).",
+        "+ Nguồn điện và dây dẫn phù hợp."
+      ],
+      "callout": "Yêu cầu căn chỉnh: Đèn, vật sáng, thấu kính và màn chắn phải được chỉnh thẳng hàng và có cùng độ cao so với mặt giá quang học."
+    },
+    {
+      "id": "c2",
+      "badge": "Cơ sở lý thuyết",
+      "badgeColor": "amber",
+      "title": "2. Nguyên lý phương pháp đo (Phương pháp đối xứng)",
+      "content": "Dựa trên tính chất hình học đặc biệt của thấu kính hội tụ khi vật ở vị trí cách thấu kính đúng 2 lần tiêu cự ($d = 2f$):",
+      "bulletPoints": [
+        "Đặc điểm đối xứng: Khi vật sáng đặt trước thấu kính hội tụ cách thấu kính một đoạn $d = 2f$, thấu kính sẽ cho một ảnh thật ngược chiều, có kích thước bằng đúng kích thước của vật sáng ($h' = h$) và cách thấu kính một đoạn $d' = 2f$.",
+        "Khoảng cách vật - màn: Tổng khoảng cách từ vật đến màn chắn lúc này là: $D = d + d' = 2f + 2f = 4f$",
+        "Công thức tính tiêu cự: $f = \\frac{d + d'}{4} = \\frac{D}{4}$",
+        "Ưu điểm của phương pháp: Không cần đo tiêu điểm trực tiếp bên trong kính, chỉ cần đo khoảng cách giữa vật và màn chắn khi ảnh sắc nét và bằng vật."
+      ],
+      "callout": "Dấu hiệu nhận biết: Quan sát trên màn thấy ảnh chữ F ngược chiều, sắc nét rõ viền và đo được chiều cao ảnh bằng đúng chiều cao chữ F trên vật mẫu."
+    },
+    {
+      "id": "c3",
+      "badge": "Quy trình đo",
+      "badgeColor": "emerald",
+      "title": "3. Quy trình thực hành và xử lý số liệu đo",
+      "content": "Các bước thao tác khoa học theo chuẩn SGK KHTN 9:",
+      "bulletPoints": [
+        "Bước 1: Bố trí các dụng cụ trên giá quang học theo thứ tự: Nguồn sáng $\\rightarrow$ Vật sáng $\\rightarrow$ Thấu kính hội tụ $\\rightarrow$ Màn hứng ảnh.",
+        "Bước 2: Bật nguồn sáng, điều chỉnh vật sáng và màn cùng vuông góc với trục chính của thấu kính.",
+        "Bước 3: Dịch chuyển đồng thời vật và màn ra xa thấu kính những khoảng bằng nhau cho đến khi thu được ảnh thật rõ nét trên màn có kích thước bằng vật ($d \\approx d'$).",
+        "Bước 4: Đọc và ghi lại khoảng cách $d$ từ vật đến thấu kính và khoảng cách $d'$ từ thấu kính đến màn (hoặc khoảng cách $D = d + d'$).",
+        "Bước 5: Lặp lại phép đo 3 lần, tính giá trị tiêu cự từng lần $f_i = \\frac{D_i}{4}$ rồi tính giá trị trung bình: $\\bar{f} = \\frac{f_1 + f_2 + f_3}{3}$."
+      ],
+      "callout": "Quy tắc an toàn: Không chạm tay trực tiếp lên bề mặt thấu kính quang học; tắt nguồn điện ngay sau khi hoàn thành buổi thực hành."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Trong thí nghiệm đo tiêu cự thấu kính hội tụ, khi thu được ảnh thật rõ nét trên màn có kích thước bằng vật thì khoảng cách giữa vật và màn chắn D liên hệ với tiêu cự f như thế nào?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "D = 4f (suy ra f = D / 4)",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "D = 2f (suy ra f = D / 2)",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "D = f (suy ra f = D)",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "D = f / 2 (suy ra f = 2D)",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 9 Bài 9: Khi ảnh thật rõ nét bằng vật thì d = d' = 2f. Do đó khoảng cách từ vật đến màn là D = d + d' = 4f, suy ra f = D / 4."
+  }
+}

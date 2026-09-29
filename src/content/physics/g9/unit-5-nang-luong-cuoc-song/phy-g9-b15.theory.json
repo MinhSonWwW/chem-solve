@@ -1,0 +1,75 @@
+{
+  "lessonId": "phy-g9-b15",
+  "nodeId": "phy-g9-b15-theory",
+  "title": "Lý thuyết: Vòng năng lượng trên Trái Đất & Năng lượng hóa thạch",
+  "subtitle": "Bài 16 SGK Khoa học tự nhiên 9 (Kết nối tri thức)",
+  "sgkBaiSo": 16,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm cốt lõi",
+      "badgeColor": "cyan",
+      "title": "1. Nguồn gốc năng lượng và vòng chuyển hóa trên Trái Đất",
+      "content": "Mặt Trời là nguồn gốc của hầu hết mọi dạng năng lượng trên hành tinh chúng ta:",
+      "bulletPoints": [
+        "Nguồn năng lượng chủ yếu: Bức xạ Mặt Trời cung cấp ánh sáng và nhiệt sưởi ấm bề mặt Trái Đất, duy trì sự sống của sinh vật và thúc đẩy các hiện tượng thời tiết khí hậu.",
+        "Vòng năng lượng trong sinh giới: Năng lượng ánh sáng Mặt Trời (quang năng) được cây xanh hấp thụ qua quang hợp chuyển thành hóa năng tích lũy trong chất hữu cơ. Động vật ăn thực vật tiếp nhận hóa năng này để sinh trưởng và vận động.",
+        "Vòng năng lượng trong khí quyển - thủy quyển: Mặt Trời làm bốc hơi nước biển tạo thành mây, mưa, duy trì dòng chảy sông ngòi (thủy năng); sưởi nóng không khí không đều tạo ra sự chênh lệch áp suất sinh ra gió (phong năng)."
+      ],
+      "callout": "Ghi nhớ then chốt: Năng lượng gió, mưa, sóng biển và nhiên liệu hóa thạch đều có nguồn gốc sâu xa từ năng lượng bức xạ của Mặt Trời."
+    },
+    {
+      "id": "c2",
+      "badge": "Nhiên liệu hóa thạch",
+      "badgeColor": "amber",
+      "title": "2. Nhiên liệu hóa thạch và đặc tính cạn kiệt",
+      "content": "Nhiên liệu hóa thạch là nguồn năng lượng đang được con người khai thác và sử dụng nhiều nhất:",
+      "bulletPoints": [
+        "Các loại chính: Than đá, dầu mỏ và khí thiên nhiên.",
+        "Nguồn gốc hình thành: Được hình thành từ xác thực vật (than đá) và sinh vật phù du cổ đại (dầu mỏ, khí đốt) bị chôn vùi dưới lớp trầm tích đáy biển, đầm lầy qua hàng trăm triệu năm dưới áp suất và nhiệt độ cao.",
+        "Đặc tính không tái tạo: Nhiên liệu hóa thạch là nguồn năng lượng không thể tái tạo vì thời gian hình thành cần đến hàng trăm triệu năm, trong khi tốc độ khai thác và tiêu thụ của con người chỉ tính bằng vài thế kỉ $\\rightarrow$ nguồn tài nguyên này đang cạn kiệt nhanh chóng."
+      ],
+      "callout": "Cảnh báo cạn kiệt: Với tốc độ khai thác hiện nay, trữ lượng dầu mỏ và khí đốt toàn cầu ước tính chỉ đủ dùng trong vài thập kỉ tới."
+    },
+    {
+      "id": "c3",
+      "badge": "Tác động môi trường",
+      "badgeColor": "emerald",
+      "title": "3. Tác động của năng lượng hóa thạch đến môi trường",
+      "content": "Việc phụ thuộc quá lớn vào nhiên liệu hóa thạch gây ra các cuộc khủng hoảng môi trường nghiêm trọng:",
+      "bulletPoints": [
+        "Hiệu ứng nhà kính & Biến đổi khí hậu: Đốt cháy than, dầu và khí thải ra lượng khổng lồ khí $CO_2$ vào khí quyển, làm tăng hiệu ứng nhà kính, Trái Đất nóng lên, băng tan ở hai cực, mực nước biển dâng cao và thời tiết cực đoan (bão lũ, hạn hán khốc liệt).",
+        "Ô nhiễm không khí & Mưa axit: Khí thải chứa các oxit độc hại như $SO_2, NO_x$ kết hợp với hơi nước trong khí quyển tạo thành mưa axit phá hủy rừng cây, hủy hoại sinh thái ao hồ và ăn mòn công trình xây dựng.",
+        "Bụi mịn PM2.5: Gây các bệnh hiểm nghèo về đường hô hấp và tim mạch cho con người sống tại các đô thị lớn."
+      ],
+      "callout": "Yêu cầu cấp bách: Giảm dần sự phụ thuộc vào than đá, dầu mỏ và tích cực chuyển dịch sang các nguồn năng lượng sạch là con đường sống còn của nhân loại."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Nguồn gốc chủ yếu của hầu hết các dạng năng lượng trên Trái Đất (như sinh khối, gió, thủy năng, hóa thạch) là từ đâu?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Năng lượng bức xạ phát ra từ Mặt Trời",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Nhiệt lượng tỏa ra từ lõi magma Trái Đất",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Lực hấp dẫn của Mặt Trăng gây ra thủy triều",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Năng lượng phản ứng phân hạch hạt nhân trong đất",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 9 Bài 16: Mặt Trời là nguồn cung cấp năng lượng chủ yếu cho sự sống và tạo nên các vòng năng lượng trên Trái Đất."
+  }
+}

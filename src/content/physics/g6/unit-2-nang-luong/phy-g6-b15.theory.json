@@ -1,0 +1,62 @@
+{
+  "lessonId": "phy-g6-b15",
+  "nodeId": "phy-g6-b15-theory",
+  "title": "Lý thuyết: Năng lượng tái tạo",
+  "subtitle": "Bài 50 SGK Khoa học tự nhiên 6 (Kết nối tri thức)",
+  "sgkBaiSo": 50,
+  "estimatedMinutes": 2,
+  "description": "Phân biệt nguồn năng lượng tái tạo và không tái tạo; nhận thức tầm quan trọng của năng lượng sạch trong tương lai của Trái Đất.",
+  "cards": [
+    {
+      "id": "card-1",
+      "title": "1. Năng lượng tái tạo và Không tái tạo",
+      "badge": "Phân loại nguồn năng lượng",
+      "badgeColor": "emerald",
+      "content": "Dựa vào khả năng phục hồi và bổ sung của tự nhiên, các nguồn năng lượng trên Trái Đất được chia làm hai nhóm chính:",
+      "bulletPoints": [
+        "Năng lượng tái tạo (Năng lượng sạch): Là nguồn năng lượng có sẵn trong tự nhiên, liên tục được tái tạo hoặc không bao giờ cạn kiệt theo thời gian. Ví dụ: Năng lượng Mặt Trời, năng lượng gió, năng lượng nước (thủy điện), năng lượng địa nhiệt (nhiệt dưới lòng đất), năng lượng sóng biển, năng lượng sinh khối.",
+        "Năng lượng không tái tạo: Là nguồn năng lượng mất hàng trăm triệu năm hình thành từ xác sinh vật cổ đại, có trữ lượng giới hạn và sẽ cạn kiệt dần khi bị khai thác. Ví dụ: Nhiên liệu hóa thạch (than đá, dầu mỏ, khí tự nhiên), quặng phóng xạ hạt nhân (uranium)."
+      ],
+      "callout": "🌿 Năng lượng tái tạo = Nguồn cung vô tận + Không lo cạn kiệt."
+    },
+    {
+      "id": "card-2",
+      "title": "2. Vì sao nhân loại cần phát triển năng lượng tái tạo?",
+      "badge": "Bảo vệ hành tinh xanh",
+      "badgeColor": "cyan",
+      "content": "Việc chuyển đổi từ nhiên liệu hóa thạch sang năng lượng tái tạo là xu thế tất yếu của toàn thế giới vì những lý do sống còn:",
+      "bulletPoints": [
+        "Chống biến đổi khí hậu: Đốt than và dầu mỏ phát thải lượng khổng lồ khí CO2, gây hiệu ứng nhà kính làm Trái Đất nóng lên và băng tan. Năng lượng tái tạo (gió, Mặt Trời) hoàn toàn không phát thải khí nhà kính trong quá trình vận hành.",
+        "Bảo vệ môi trường sống: Tránh ô nhiễm khói bụi mịn, không tạo ra mưa acid hủy hoại mùa màng và rừng cây.",
+        "Đảm bảo an ninh năng lượng: Trữ lượng than đá, dầu mỏ dự kiến chỉ đủ khai thác trong vài chục đến hơn một trăm năm nữa. Năng lượng tái tạo bảo đảm nguồn điện bền vững mãi mãi cho các thế hệ tương lai."
+      ],
+      "callout": "☀️ Mặt Trời chiếu xuống Trái Đất trong 1 giờ cung cấp năng lượng nhiều hơn toàn bộ nhân loại tiêu thụ trong 1 năm!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Nguồn năng lượng nào sau đây là nguồn năng lượng tái tạo?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Than đá khai thác từ mỏ hầm lò",
+        "correct": false
+      },
+      {
+        "id": "opt-b",
+        "text": "Năng lượng gió làm quay tua-bin phát điện",
+        "correct": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Dầu mỏ hút từ giàn khoan ngoài biển",
+        "correct": false
+      },
+      {
+        "id": "opt-d",
+        "text": "Khí tự nhiên (khí đốt hóa lỏng)",
+        "correct": false
+      }
+    ],
+    "explanation": "Gió là nguồn năng lượng tái tạo tự nhiên, sạch và vô tận. Than đá, dầu mỏ và khí tự nhiên là nhiên liệu hóa thạch không tái tạo."
+  }
+}

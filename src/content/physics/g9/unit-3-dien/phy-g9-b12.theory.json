@@ -1,0 +1,78 @@
+{
+  "lessonId": "phy-g9-b12",
+  "nodeId": "phy-g9-b12-theory",
+  "title": "Lý thuyết: Năng lượng dòng điện & Công suất điện",
+  "subtitle": "Bài 13 SGK Khoa học tự nhiên 9 (Kết nối tri thức)",
+  "sgkBaiSo": 13,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm cốt lõi",
+      "badgeColor": "cyan",
+      "title": "1. Công suất điện và công thức xác định",
+      "content": "Công suất điện đặc trưng cho tốc độ tiêu thụ điện năng của một dụng cụ điện hoặc đoạn mạch:",
+      "bulletPoints": [
+        "Định nghĩa: Công suất điện của một đoạn mạch bằng tích của hiệu điện thế giữa hai đầu đoạn mạch và cường độ dòng điện chạy qua nó.",
+        "Công thức tổng quát: $P = U \\cdot I$",
+        "Trong đó: $U$ là hiệu điện thế (V); $I$ là cường độ dòng điện (A); $P$ là công suất điện (đơn vị: Oát, kí hiệu W).",
+        "Đối với đoạn mạch chỉ có điện trở: $P = I^2 \\cdot R = \\frac{U^2}{R}$.",
+        "Ý nghĩa số ghi định mức: Trên các đồ dùng điện thường ghi hiệu điện thế định mức và công suất định mức (ví dụ: bóng đèn ghi $220\\text{ V} - 75\\text{ W}$ nghĩa là khi mắc vào nguồn điện $220\\text{ V}$ thì đèn hoạt động bình thường và tiêu thụ công suất $75\\text{ W}$)."
+      ],
+      "callout": "Đơn vị đo công suất: $1\\text{ kW} = 1\\,000\\text{ W}$; $1\\text{ MW} = 1\\,000\\,000\\text{ W}$."
+    },
+    {
+      "id": "c2",
+      "badge": "Điện năng tiêu thụ",
+      "badgeColor": "amber",
+      "title": "2. Năng lượng của dòng điện (Điện năng tiêu thụ)",
+      "content": "Dòng điện mang năng lượng gọi là điện năng. Lượng điện năng mà đoạn mạch tiêu thụ được tính bằng công của lực điện:",
+      "bulletPoints": [
+        "Công thức tính điện năng: $A = P \\cdot t = U \\cdot I \\cdot t$",
+        "Trong đó: $P$ là công suất điện (W); $t$ là thời gian dòng điện chạy qua (giây, s); $A$ là điện năng tiêu thụ (Jun, J).",
+        "Đơn vị Jun (J): $1\\text{ J} = 1\\text{ W} \\cdot 1\\text{ s} = 1\\text{ V} \\cdot 1\\text{ A} \\cdot 1\\text{ s}$.",
+        "Đơn vị thực tế Kilôoát giờ (kWh): $1\\text{ kWh} = 1\\,000\\text{ W} \\times 3\\,600\\text{ s} = 3\\,600\\,000\\text{ J} = 3,6 \\times 10^6\\text{ J}$."
+      ],
+      "callout": "Quy tắc đổi đơn vị: Muốn tính điện năng ra kWh thì công suất $P$ phải đổi ra kW và thời gian $t$ phải đổi ra giờ (h)."
+    },
+    {
+      "id": "c3",
+      "badge": "Ứng dụng & Tiết kiệm",
+      "badgeColor": "emerald",
+      "title": "3. Đo điện năng bằng công tơ điện và tiết kiệm điện",
+      "content": "Trong đời sống hằng ngày, điện năng sinh hoạt được quản lý và đo lường chặt chẽ:",
+      "bulletPoints": [
+        "Công tơ điện: Là dụng cụ đo lượng điện năng tiêu thụ của các hộ gia đình hoặc cơ quan.",
+        "Số đếm công tơ điện: Mỗi chữ số tăng thêm 1 đơn vị trên công tơ điện (gọi dân dã là '1 số điện') ứng với lượng điện năng tiêu thụ là $1\\text{ kWh} = 3,6 \\times 10^6\\text{ J}$.",
+        "Tiết kiệm điện năng: Sử dụng các thiết bị có hiệu suất năng lượng cao (như đèn LED thay thế đèn sợi đốt, điều hòa Inverter), tắt các thiết bị khi không có nhu cầu sử dụng, rút phích cắm khỏi ổ điện khi đi xa."
+      ],
+      "callout": "Lợi ích kép: Tiết kiệm điện vừa giảm chi phí hóa đơn tiền điện cho gia đình, vừa bảo vệ môi trường và giảm áp lực lên hệ thống lưới điện quốc gia."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Công suất điện tiêu thụ của một đoạn mạch được xác định bằng công thức nào sau đây?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "P = U . I",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "P = U / I",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "P = I / U",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "P = U + I",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 9 Bài 13: Công suất điện P bằng tích của hiệu điện thế U và cường độ dòng điện I (P = U . I)."
+  }
+}

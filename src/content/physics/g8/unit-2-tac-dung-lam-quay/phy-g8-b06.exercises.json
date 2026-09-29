@@ -1,0 +1,550 @@
+[
+  {
+    "id": "phy-g8-b06-mcq-001",
+    "lessonId": "phy-g8-b06",
+    "sgkBaiSo": 18,
+    "skillIds": [
+      "moment-concept"
+    ],
+    "difficulty": 1,
+    "prompt": "Moment lực là đại lượng vật lí đặc trưng cho:",
+    "knowledge": [
+      "formula.moment"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tác dụng làm quay của lực quanh một trục hoặc một điểm cố định"
+        },
+        {
+          "id": "opt-b",
+          "label": "Năng lượng nhiệt toả ra khi vật chuyển động"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vận tốc chuyển động tịnh tiến của vật"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tác dụng làm biến dạng nén ép của lực"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi dùng cờ lê vặn ốc hoặc đẩy cánh cửa quay quanh bản lề, lực tác dụng gây ra chuyển động quay."
+      },
+      {
+        "level": 2,
+        "text": "Moment lực đặc trưng cho tác dụng làm quay của lực."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định khái niệm",
+        "body": "Đề bài yêu cầu nêu ý nghĩa vật lí của đại lượng moment lực."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 18), moment lực là đại lượng đặc trưng cho tác dụng làm quay của lực quanh một trục hoặc một điểm."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Tác dụng làm quay của lực quanh một trục hoặc một điểm cố định**."
+      }
+    ],
+    "finalSolution": "Moment lực là đại lượng đặc trưng cho **tác dụng làm quay của lực** quanh một trục hoặc một điểm.",
+    "commonMistakes": [
+      {
+        "id": "confuse-with-pressure",
+        "message": "Tác dụng làm nén ép biến dạng là đặc trưng của áp suất, không phải của moment lực."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b06-mcq-002",
+    "lessonId": "phy-g8-b06",
+    "sgkBaiSo": 18,
+    "skillIds": [
+      "moment-unit-si"
+    ],
+    "difficulty": 1,
+    "prompt": "Đơn vị đo chuẩn của moment lực trong Hệ đo lường quốc tế (hệ SI) là:",
+    "knowledge": [
+      "formula.moment"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Pascal (Pa)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Niutơn mét (N.m)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Kilôgam mét (kg.m)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Niutơn trên mét (N/m)"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ công thức M = F x d, lực F đo bằng N, cánh tay đòn d đo bằng m."
+      },
+      {
+        "level": 2,
+        "text": "Đơn vị tích số là N.m (Niutơn nhân mét)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định đơn vị",
+        "body": "Tìm đơn vị đo của moment lực từ công thức $M = F \\times d$."
+      },
+      {
+        "kind": "equation",
+        "title": "Thứ nguyên đơn vị",
+        "body": "$[M] = [F] \\times [d] = \\text{N} \\times \\text{m} = \\text{N}\\cdot\\text{m}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đơn vị đo của moment lực là **Niutơn mét (N.m)**."
+      }
+    ],
+    "finalSolution": "Đơn vị đo của moment lực là **Niutơn mét (N.m)**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-with-division-unit",
+        "message": "N/m là đơn vị độ cứng của lò xo, đơn vị moment lực là phép nhân N.m."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b06-mcq-003",
+    "lessonId": "phy-g8-b06",
+    "sgkBaiSo": 18,
+    "skillIds": [
+      "moment-rotation-conditions"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong trường hợp nào sau đây, lực tác dụng lên một vật có trục quay cố định KHÔNG THỂ làm cho vật quay?",
+    "knowledge": [
+      "formula.moment"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Khi điểm đặt của lực nằm ở mép ngoài của vật"
+        },
+        {
+          "id": "opt-b",
+          "label": "Khi giá của lực đi qua (cắt) trục quay hoặc song song với trục quay"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khi độ lớn của lực rất lớn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khi lực có phương vuông góc với cánh tay đòn"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nếu kéo thẳng cánh cửa hướng vào bản lề (giá của lực đi qua trục quay) thì cửa có quay được không?"
+      },
+      {
+        "level": 2,
+        "text": "Lực cắt hoặc song song với trục quay sẽ có cánh tay đòn d = 0, nên M = 0 không làm quay vật."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Điều kiện làm quay",
+        "body": "Xác định các trường hợp lực không tạo ra moment quay quanh trục."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8, lực không làm quay vật khi giá của lực cắt trục quay (cánh tay đòn d = 0) hoặc song song với trục quay."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Lực không làm quay vật khi **giá của lực cắt trục quay hoặc song song với trục quay**."
+      }
+    ],
+    "finalSolution": "Lực không làm quay vật khi **giá của lực đi qua (cắt) trục quay hoặc song song với trục quay**.",
+    "commonMistakes": [
+      {
+        "id": "think-large-force-always-rotates",
+        "message": "Dù lực có lớn đến đâu nhưng nếu hướng thẳng vào trục quay (d = 0) thì vật vẫn không thể quay."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b06-num-004",
+    "lessonId": "phy-g8-b06",
+    "sgkBaiSo": 18,
+    "skillIds": [
+      "moment-calc-wrench"
+    ],
+    "difficulty": 2,
+    "prompt": "Một người thợ cơ khí dùng một chiếc cờ lê có chiều dài cán d = 25 cm để vặn ốc bu lông. Người đó tác dụng một lực vuông góc F = 40 N vào đầu cán cờ lê. Hãy tính moment của lực này theo đơn vị N.m.",
+    "knowledge": [
+      "formula.moment"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 10,
+      "unit": "N.m",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đổi cánh tay đòn d từ cm sang m: 25 cm = 0,25 m."
+      },
+      {
+        "level": 2,
+        "text": "Áp dụng công thức M = F x d = 40 x 0,25."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$F = 40\\text{ N}$; $d = 25\\text{ cm} = 0,25\\text{ m}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính moment lực",
+        "body": "$M = F \\times d$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$M = 40 \\times 0,25 = 10\\text{ N}\\cdot\\text{m}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Moment của lực tác dụng là **10 N.m**."
+      }
+    ],
+    "finalSolution": "Moment lực tác dụng: $M = F \\times d = 40 \\times 0,25 = 10\\text{ N}\\cdot\\text{m}$.",
+    "commonMistakes": [
+      {
+        "id": "forgot-to-convert-cm-to-m",
+        "message": "Bạn quên đổi 25 cm sang mét, lấy 40 * 25 = 1 000 (đây là đơn vị N.cm, không phải đơn vị chuẩn N.m).",
+        "trapAnswers": [
+          "1000",
+          "1000 N.m"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b06-num-005",
+    "lessonId": "phy-g8-b06",
+    "sgkBaiSo": 18,
+    "skillIds": [
+      "moment-calc-force"
+    ],
+    "difficulty": 2,
+    "prompt": "Một người đẩy một cánh cửa quay quanh bản lề bằng một lực tác dụng vuông góc vào cánh cửa tại vị trí cách bản lề d = 0,8 m. Biết moment của lực làm quay cánh cửa là M = 24 N.m. Độ lớn của lực đẩy người đó tác dụng là bao nhiêu Niutơn (N)?",
+    "knowledge": [
+      "formula.moment"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 30,
+      "unit": "N",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ công thức M = F x d, hãy suy ra công thức tính lực F."
+      },
+      {
+        "level": 2,
+        "text": "Độ lớn lực F = M / d = 24 / 0,8."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$M = 24\\text{ N}\\cdot\\text{m}$; cánh tay đòn $d = 0,8\\text{ m}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính lực",
+        "body": "Từ $M = F \\times d \\Rightarrow F = \\frac{M}{d}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$F = \\frac{24}{0,8} = 30\\text{ N}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Độ lớn lực đẩy tác dụng là **30 N**."
+      }
+    ],
+    "finalSolution": "Độ lớn lực đẩy tác dụng: $F = \\frac{M}{d} = \\frac{24}{0,8} = 30\\text{ N}$.",
+    "commonMistakes": [
+      {
+        "id": "multiplied-instead-of-divide",
+        "message": "Bạn đã lấy M nhân d (24 * 0,8 = 19,2). Công thức đúng là F = M / d = 30 N.",
+        "trapAnswers": [
+          "19.2",
+          "19,2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b06-mcq-006",
+    "lessonId": "phy-g8-b06",
+    "sgkBaiSo": 18,
+    "skillIds": [
+      "doorknob-position-design"
+    ],
+    "difficulty": 2,
+    "prompt": "Tại sao tay nắm cửa của hầu hết các cánh cửa mở quay luôn được thiết kế gắn ở mép ngoài cùng (vị trí xa trục bản lề nhất)?",
+    "knowledge": [
+      "formula.moment"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Để tăng cánh tay đòn d, giúp tạo ra moment lực M lớn hơn với lực đẩy F nhỏ hơn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Để cánh cửa nhẹ hơn khi đóng mở"
+        },
+        {
+          "id": "opt-c",
+          "label": "Để giảm cánh tay đòn d giúp cửa không bị quay quá nhanh"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chỉ nhằm mục đích trang trí cho cánh cửa đẹp mắt hơn"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trục quay của cánh cửa là trục bản lề."
+      },
+      {
+        "level": 2,
+        "text": "Đặt tay nắm ở mép xa bản lề làm khoảng cách d từ trục quay đến tay nắm lớn nhất, theo M = F x d thì chỉ cần lực F nhỏ vẫn mở được cửa."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục đích thiết kế",
+        "body": "Giải thích vị trí bố trí tay nắm cửa dựa trên tác dụng làm quay của lực."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Công thức moment lực",
+        "body": "Từ $M = F \\times d$, để đạt cùng một moment quay $M$ làm mở cửa, nếu cánh tay đòn $d$ càng lớn thì lực cần tác dụng $F$ càng nhỏ."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đặt tay nắm ở mép xa nhất để **tăng cánh tay đòn d, giảm lực cần tác dụng F**."
+      }
+    ],
+    "finalSolution": "Gắn ở mép ngoài để **tăng cánh tay đòn d**, giúp tạo moment quay $M$ đủ lớn để mở cửa với lực tác dụng $F$ nhỏ nhất.",
+    "commonMistakes": [
+      {
+        "id": "push-near-hinge",
+        "message": "Nếu thử đẩy cửa ở vị trí sát bản lề (d rất nhỏ), bạn sẽ thấy phải tốn lực F rất lớn mới mở được cửa."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b06-tf-007",
+    "lessonId": "phy-g8-b06",
+    "sgkBaiSo": 18,
+    "skillIds": [
+      "moment-principles-tf"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai của các khẳng định sau về moment lực:",
+    "knowledge": [
+      "formula.moment"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Cánh tay đòn của một lực là khoảng cách vuông góc tính từ trục quay đến giá của lực đó.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Khi độ lớn của lực F tăng gấp đôi và cánh tay đòn d giữ nguyên thì moment của lực sẽ tăng lên gấp đôi.",
+          "correct": true
+        },
+        {
+          "id": "st-3",
+          "text": "Tác dụng một lực đẩy hướng thẳng đứng lên trời song song với trục bản lề của cánh cửa sẽ làm cho cánh cửa quay rất nhanh.",
+          "correct": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Xem xét định nghĩa cánh tay đòn và công thức M = F x d."
+      },
+      {
+        "level": 2,
+        "text": "Lực có giá song song với trục quay thì không gây ra tác dụng làm quay."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 1",
+        "body": "Khoảng cách vuông góc từ trục quay đến giá của lực là cánh tay đòn -> Đúng."
+      },
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 2",
+        "body": "Vì $M = F \\times d$, khi $F$ tăng 2 lần và $d$ không đổi thì $M$ tăng 2 lần -> Đúng."
+      },
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 3",
+        "body": "Lực có phương song song với trục quay không tạo ra moment quay quanh trục -> Mệnh đề 3 Sai."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự: Đúng - Đúng - Sai."
+      }
+    ],
+    "finalSolution": "Mệnh đề 1: **Đúng**; Mệnh đề 2: **Đúng**; Mệnh đề 3: **Sai**.",
+    "commonMistakes": [
+      {
+        "id": "parallel-force-confuse",
+        "message": "Đẩy song song với bản lề chỉ làm nhấc cánh cửa lên chứ không làm cánh cửa quay quanh bản lề được."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b06-mcq-008",
+    "lessonId": "phy-g8-b06",
+    "sgkBaiSo": 18,
+    "skillIds": [
+      "wrench-extension-moment"
+    ],
+    "difficulty": 3,
+    "prompt": "Một người thợ cơ khí dùng một chiếc cờ lê có cán dài d1 = 20 cm tác dụng lực F = 60 N nhưng vẫn chưa tháo được một ốc bu lông bị gỉ sét. Người đó dùng một đoạn ống sắt lồng vào cán cờ lê để nối dài cánh tay đòn thành d2 = 50 cm. Nếu người đó vẫn tác dụng lực F = 60 N vào đầu ống nối dài thì moment của lực tác dụng lên ốc đã tăng thêm bao nhiêu N.m so với ban đầu?",
+    "knowledge": [
+      "formula.moment"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Không tăng vì lực tác dụng vẫn là 60 N"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tăng thêm 18 N.m"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tăng thêm 30 N.m"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tăng thêm 12 N.m"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tính moment ban đầu M1 = F x d1 và moment lúc sau M2 = F x d2 (nhớ đổi cm sang m)."
+      },
+      {
+        "level": 2,
+        "text": "M1 = 60 x 0,2 = 12 N.m; M2 = 60 x 0,5 = 30 N.m. Tính hiệu số delta M = M2 - M1."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$F = 60\\text{ N}$; $d_1 = 20\\text{ cm} = 0,2\\text{ m}$; $d_2 = 50\\text{ cm} = 0,5\\text{ m}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính hai moment lực",
+        "body": "$M_1 = 60 \\times 0,2 = 12\\text{ N}\\cdot\\text{m}$; $M_2 = 60 \\times 0,5 = 30\\text{ N}\\cdot\\text{m}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính độ tăng moment",
+        "body": "$\\Delta M = M_2 - M_1 = 30 - 12 = 18\\text{ N}\\cdot\\text{m}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Moment lực tác dụng lên ốc đã **tăng thêm 18 N.m**."
+      }
+    ],
+    "finalSolution": "Moment ban đầu $M_1 = 12\\text{ N}\\cdot\\text{m}$, moment sau khi nối dài $M_2 = 30\\text{ N}\\cdot\\text{m}$. Moment lực đã **tăng thêm 18 N.m**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-total-with-increase",
+        "message": "30 N.m là moment lúc sau M2, câu hỏi hỏi lượng TĂNG THÊM (delta M = 30 - 12 = 18 N.m)."
+      }
+    ]
+  }
+]

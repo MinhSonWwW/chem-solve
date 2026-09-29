@@ -1,0 +1,370 @@
+[
+  {
+    "id": "phy-g6-b13-mcq-001",
+    "lessonId": "phy-g6-b13",
+    "sgkBaiSo": 48,
+    "skillIds": [
+      "energy-conversion-fan"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi cắm phích điện và bật công tắc cho chiếc quạt điện quay vù vù, dạng năng lượng ban đầu nào đã chuyển hóa thành cơ năng làm quay cánh quạt?",
+    "knowledge": [
+      "energy.conservation"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Điện năng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nhiệt năng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Quang năng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hóa năng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Quạt hoạt động nhờ nguồn năng lượng lấy từ ổ cắm điện."
+      },
+      {
+        "level": 2,
+        "text": "Dòng điện cung cấp điện năng cho động cơ quạt."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nguồn năng lượng đầu vào",
+        "body": "Quạt điện lấy năng lượng từ mạng điện gia đình (dòng điện mang điện năng)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Chuyển hóa",
+        "body": "Động cơ điện biến đổi điện năng thành cơ năng làm quay cánh quạt."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Điện năng**."
+      }
+    ],
+    "finalSolution": "Quạt điện biến đổi **điện năng** thành cơ năng (động năng cánh quạt).",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b13-mcq-002",
+    "lessonId": "phy-g6-b13",
+    "sgkBaiSo": 48,
+    "skillIds": [
+      "energy-conversion-rubbing"
+    ],
+    "difficulty": 1,
+    "prompt": "Vào một ngày đông lạnh giá, bạn xoa mạnh hai lòng bàn tay vào nhau thật nhanh một lúc thì thấy hai bàn tay ấm hẳn lên. Sự chuyển hóa năng lượng nào đã diễn ra ở đây?",
+    "knowledge": [
+      "energy.conservation"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hóa năng chuyển hóa thành điện năng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Điện năng chuyển hóa thành quang năng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Nhiệt năng chuyển hóa thành thế năng hấp dẫn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cơ năng (động năng) chuyển hóa thành nhiệt năng"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bàn tay chuyển động cọ xát (cơ năng) làm nhiệt độ bàn tay tăng lên (nhiệt năng)."
+      },
+      {
+        "level": 2,
+        "text": "Công của lực ma sát làm tiêu hao cơ năng và sinh ra nhiệt năng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích hiện tượng",
+        "body": "Chuyển động chà xát giữa hai lòng bàn tay là cơ năng (động năng)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kết quả chuyển hóa",
+        "body": "Ma sát giữa hai lòng bàn tay chuyển hóa cơ năng thành nhiệt năng làm ấm tay."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Cơ năng (động năng) chuyển hóa thành nhiệt năng**."
+      }
+    ],
+    "finalSolution": "Khi xoa hai bàn tay vào nhau, **cơ năng chuyển hóa thành nhiệt năng**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b13-mcq-003",
+    "lessonId": "phy-g6-b13",
+    "sgkBaiSo": 48,
+    "skillIds": [
+      "law-conservation-energy"
+    ],
+    "difficulty": 2,
+    "prompt": "Phát biểu nào sau đây diễn đạt **chính xác nhất** nội dung của Định luật bảo toàn năng lượng?",
+    "knowledge": [
+      "energy.conservation"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Năng lượng có thể tự nhiên sinh ra từ hư vô khi gặp điều kiện nhiệt độ cao"
+        },
+        {
+          "id": "opt-b",
+          "label": "Năng lượng chỉ được bảo toàn trong các bài thí nghiệm, còn trong đời sống thực tế thì bị mất đi"
+        },
+        {
+          "id": "opt-c",
+          "label": "Năng lượng của một vật sẽ dần dần tự biến mất hoàn toàn sau một khoảng thời gian dài"
+        },
+        {
+          "id": "opt-d",
+          "label": "Năng lượng không tự sinh ra cũng không tự mất đi, chỉ chuyển hóa từ dạng này sang dạng khác hoặc truyền từ vật này sang vật khác"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Năng lượng không thể tự dưng sinh ra và cũng không thể biến mất thành số 0."
+      },
+      {
+        "level": 2,
+        "text": "Tổng năng lượng luôn không đổi qua các quá trình biến đổi và truyền năng lượng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Định luật bảo toàn năng lượng",
+        "body": "Là nguyên lý nền tảng của vật lý học về tính bất biến của tổng năng lượng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phát biểu SGK",
+        "body": "Năng lượng không tự nhiên sinh ra và cũng không tự nhiên mất đi; nó chỉ chuyển hóa từ dạng này sang dạng khác hoặc truyền từ vật này sang vật khác."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là phương án **B**."
+      }
+    ],
+    "finalSolution": "Định luật bảo toàn năng lượng: **Năng lượng không tự sinh ra và không tự mất đi, chỉ chuyển hóa từ dạng này sang dạng khác hoặc truyền từ vật này sang vật khác**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b13-mcq-004",
+    "lessonId": "phy-g6-b13",
+    "sgkBaiSo": 48,
+    "skillIds": [
+      "energy-conversion-photosynthesis"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong quá trình quang hợp của cây xanh, lá cây hấp thụ ánh sáng Mặt Trời để tổng hợp nên tinh bột và các chất hữu cơ. Quá trình này thể hiện sự chuyển hóa nào?",
+    "knowledge": [
+      "energy.conservation"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Nhiệt năng chuyển hóa thành cơ năng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Thế năng hấp dẫn chuyển hóa thành động năng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Điện năng chuyển hóa thành nhiệt năng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Quang năng chuyển hóa thành hóa năng"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nguồn vào là ánh sáng (quang năng), sản phẩm tạo ra là tinh bột (hợp chất hóa học tích trữ hóa năng)."
+      },
+      {
+        "level": 2,
+        "text": "Quang năng của ánh sáng Mặt Trời đã chuyển thành hóa năng trong sinh khối thực vật."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quá trình quang hợp",
+        "body": "Năng lượng ánh sáng Mặt Trời chiếu vào diệp lục của lá."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Chuyển hóa",
+        "body": "Lá cây chuyển hóa năng lượng ánh sáng (quang năng) thành năng lượng dự trữ trong các liên kết đường/tinh bột (hóa năng)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Quang năng chuyển hóa thành hóa năng**."
+      }
+    ],
+    "finalSolution": "Quá trình quang hợp chuyển hóa **quang năng thành hóa năng**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b13-order-005",
+    "lessonId": "phy-g6-b13",
+    "sgkBaiSo": 48,
+    "skillIds": [
+      "energy-conversion-chain"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp các dạng năng lượng theo đúng thứ tự chuỗi chuyển hóa khi bật một chiếc đèn pin bỏ túi sử dụng pin khô:",
+    "knowledge": [
+      "energy.conservation"
+    ],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Hóa năng lưu trữ trong viên pin",
+        "Điện năng của dòng điện chạy qua dây dẫn",
+        "Nhiệt năng làm nóng dây tóc bóng đèn",
+        "Quang năng phát ra từ bóng đèn chiếu sáng"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ban đầu năng lượng nằm trong chất hóa học của pin, sau đó sinh ra dòng điện, làm nóng dây tóc và phát sáng."
+      },
+      {
+        "level": 2,
+        "text": "Thứ tự: Hóa năng -> Điện năng -> Nhiệt năng làm nóng -> Quang năng phát sáng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích chuỗi chuyển hóa",
+        "body": "Xác định nguồn gốc năng lượng ban đầu là từ viên pin, truyền qua mạch điện và đến bóng đèn phát sáng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Trình tự biến đổi",
+        "body": "1. Hóa năng (chất trong pin) → 2. Điện năng (dòng điện chạy qua dây) → 3. Nhiệt năng (đốt nóng dây tóc) → 4. Quang năng (phát ra ánh sáng)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận thứ tự",
+        "body": "Sắp xếp đúng: Hóa năng trong viên pin → Điện năng của dòng điện chạy qua dây dẫn → Nhiệt năng làm nóng dây tóc bóng đèn → Quang năng phát ra từ bóng đèn chiếu sáng."
+      }
+    ],
+    "finalSolution": "Thứ tự chuẩn: **Hóa năng trong pin → Điện năng trong mạch → Nhiệt năng làm nóng → Quang năng chiếu sáng**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b13-num-006",
+    "lessonId": "phy-g6-b13",
+    "sgkBaiSo": 48,
+    "skillIds": [
+      "conservation-energy-calculation"
+    ],
+    "difficulty": 3,
+    "prompt": "Một bóng đèn dây tóc tiêu thụ 100 J điện năng từ mạng điện. Trong đó, có 15 J điện năng đã được chuyển hóa thành quang năng có ích để thắp sáng phòng. Theo định luật bảo toàn năng lượng, có bao nhiêu jun (J) năng lượng đã bị chuyển hóa thành nhiệt năng làm nóng bóng đèn?",
+    "knowledge": [
+      "energy.conservation"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 85,
+      "unit": "J",
+      "decimals": 0
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tổng năng lượng điện tiêu thụ bằng tổng của quang năng và nhiệt năng tỏa ra."
+      },
+      {
+        "level": 2,
+        "text": "Điện năng (100 J) = Quang năng (15 J) + Nhiệt năng. Hãy lấy 100 trừ đi 15."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Dữ kiện đề bài",
+        "body": "Điện năng toàn phần $E = 100\\text{ J}$, quang năng $E_q = 15\\text{ J}$."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Định luật bảo toàn năng lượng",
+        "body": "$E = E_q + E_{nhiet} \\Rightarrow E_{nhiet} = E - E_q$."
+      },
+      {
+        "kind": "compute",
+        "title": "Thực hiện phép trừ",
+        "body": "$E_{nhiet} = 100 - 15 = 85\\text{ J}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Lượng nhiệt năng sinh ra là **85 J**."
+      }
+    ],
+    "finalSolution": "$E_{nhiet} = 100\\text{ J} - 15\\text{ J} = 85\\text{ J}$.",
+    "commonMistakes": [
+      {
+        "id": "add-instead-of-sub",
+        "message": "Bạn đã lấy 100 cộng 15 thay vì lấy năng lượng toàn phần trừ đi quang năng.",
+        "trapAnswers": [
+          "115"
+        ]
+      }
+    ]
+  }
+]

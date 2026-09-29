@@ -1,0 +1,66 @@
+{
+  "lessonId": "phy-g6-b16",
+  "nodeId": "phy-g6-b16-theory",
+  "title": "Lý thuyết: Tiết kiệm năng lượng",
+  "subtitle": "Bài 51 SGK Khoa học tự nhiên 6 (Kết nối tri thức)",
+  "sgkBaiSo": 51,
+  "estimatedMinutes": 2,
+  "description": "Hiểu rõ sự cần thiết phải tiết kiệm năng lượng và xây dựng thói quen sử dụng năng lượng hiệu quả trong học tập, sinh hoạt hàng ngày.",
+  "cards": [
+    {
+      "id": "card-1",
+      "title": "1. Vì sao phải tiết kiệm năng lượng?",
+      "badge": "Ý thức cộng đồng",
+      "badgeColor": "emerald",
+      "content": "Năng lượng là huyết mạch cho sự phát triển của xã hội hiện đại, nhưng nguồn năng lượng hóa thạch đang đứng trước nguy cơ cạn kiệt nghiêm trọng:",
+      "bulletPoints": [
+        "Nguồn năng lượng truyền thống hữu hạn: Phần lớn điện năng hiện nay vẫn được sản xuất từ nhiệt điện đốt than, dầu mỏ và khí đốt — những nguồn tài nguyên mất hàng triệu năm hình thành và đang dần cạn kiệt.",
+        "Bảo vệ môi trường và khí hậu: Đốt nhiên liệu tạo ra khí CO2 gây hiệu ứng nhà kính và bụi mịn ô nhiễm không khí. Tiết kiệm năng lượng là hành động thiết thực nhất để giảm lượng khí thải này.",
+        "Tiết kiệm chi phí: Giảm hóa đơn tiền điện, tiền xăng cho gia đình và giảm gánh nặng chi phí xây dựng thêm nhà máy điện cho đất nước."
+      ],
+      "callout": "🌍 Thông điệp: Tiết kiệm năng lượng là tiết kiệm tiền cho gia đình và bảo vệ tương lai của Trái Đất!"
+    },
+    {
+      "id": "card-2",
+      "title": "2. Các biện pháp tiết kiệm năng lượng thiết thực",
+      "badge": "Hành động mỗi ngày",
+      "badgeColor": "amber",
+      "content": "Mỗi học sinh đều có thể đóng góp bảo vệ môi trường bằng những thói quen đơn giản hàng ngày:",
+      "bulletPoints": [
+        "Tắt thiết bị khi không sử dụng: Luôn tắt đèn, quạt, máy điều hòa khi ra khỏi phòng học hoặc phòng ngủ.",
+        "Tận dụng nguồn năng lượng tự nhiên: Mở rèm đón ánh sáng Mặt Trời vào ban ngày; mở cửa sổ đón gió trời thoáng mát thay vì bật điều hòa liên tục.",
+        "Sử dụng điều hòa khoa học: Cài đặt nhiệt độ phòng từ 26 °C trở lên kết hợp bật thêm quạt nhẹ; đóng kín cửa khi bật điều hòa.",
+        "Rút phích cắm thiết bị điện tử: Rút sạc điện thoại, máy tính khi đã đầy pin (tránh tiêu hao điện năng vô ích ở chế độ chờ standby).",
+        "Lựa chọn thiết bị hiệu suất cao: Mua sắm đồ điện gia dụng có dán Nhãn năng lượng 5 sao và sử dụng bóng đèn LED.",
+        "Giao thông xanh: Đi bộ, đi xe đạp hoặc sử dụng xe buýt, phương tiện công cộng khi di chuyển cự ly gần."
+      ],
+      "callout": "💡 Quy tắc vàng: 'Rời phòng nhớ tắt điện — Ra đường chọn xe xanh'!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Hành động nào sau đây là thói quen tốt giúp tiết kiệm năng lượng điện trong gia đình?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Bật điều hòa ở mức 16 °C rồi mở toang cửa sổ cho thoáng khí",
+        "correct": false
+      },
+      {
+        "id": "opt-b",
+        "text": "Tắt đèn và các thiết bị điện khi không có nhu cầu sử dụng hoặc khi rời khỏi phòng",
+        "correct": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Cắm sạc điện thoại liên tục 24/24 trong ổ cắm dù không cắm vào máy",
+        "correct": false
+      },
+      {
+        "id": "opt-d",
+        "text": "Bật tivi cả ngày để tạo tiếng động cho vui nhà vui cửa",
+        "correct": false
+      }
+    ],
+    "explanation": "Tắt các thiết bị điện khi không sử dụng là hành động căn bản và thiết thực nhất giúp giảm lãng phí điện năng."
+  }
+}

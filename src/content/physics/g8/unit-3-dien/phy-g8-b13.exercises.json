@@ -1,0 +1,520 @@
+[
+  {
+    "id": "phy-g8-b13-ord-001",
+    "lessonId": "phy-g8-b13",
+    "sgkBaiSo": 25,
+    "skillIds": [
+      "current-measurement-procedure"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp các thao tác sau theo đúng thứ tự quy trình thực hành đo cường độ dòng điện qua bóng đèn bằng ampe kế:",
+    "knowledge": [
+      "measurement.current.voltage"
+    ],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Ước lượng cường độ dòng điện cần đo và điều chỉnh kim ampe kế về đúng vạch số 0",
+        "Mắc ampe kế nối tiếp với bóng đèn (khóa K mở, chốt dương nối về cực dương của nguồn điện)",
+        "Đóng khóa K, quan sát đèn sáng và đợi kim ampe kế đứng yên ổn định",
+        "Đặt mắt nhìn vuông góc với bảng chia độ để đọc và ghi chép số chỉ cường độ dòng điện I",
+        "Ngắt khóa K và tháo các thiết bị cất gọn gàng vào hộp dụng cụ"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trước khi nối dây, bao giờ cũng phải kiểm tra và chỉnh kim đồng hồ về số 0."
+      },
+      {
+        "level": 2,
+        "text": "Khi ráp mạch khóa K luôn mở. Chỉ đóng khóa K sau khi kiểm tra xong mạch. Đọc xong thì ngắt khóa K rồi mới tháo dây."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định các bước chuẩn",
+        "body": "Quy trình thực nghiệm tuân thủ nguyên tắc an toàn và độ chính xác đo lường."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Trình tự thực hành SGK",
+        "body": "1. Chỉnh kim về vạch 0 -> 2. Mắc nối tiếp ampe kế (khóa K mở) -> 3. Đóng khóa K -> 4. Đọc số chỉ khi kim ổn định -> 5. Ngắt khóa K và thu dọn."
+      },
+      {
+        "kind": "answer",
+        "title": "Thứ tự chính xác",
+        "body": "Thứ tự sắp xếp đúng từ bước đầu tiên đến bước kết thúc như trên."
+      }
+    ],
+    "finalSolution": "Quy trình chuẩn: **Chỉnh kim về 0 → Mắc nối tiếp ampe kế (K mở) → Đóng K quan sát → Đọc số chỉ vuông góc → Ngắt K thu dọn**.",
+    "commonMistakes": [
+      {
+        "id": "close-switch-while-wiring",
+        "message": "Không bao giờ được đóng khóa K trong khi đang cắm dây nối các thiết bị."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b13-ord-002",
+    "lessonId": "phy-g8-b13",
+    "sgkBaiSo": 25,
+    "skillIds": [
+      "voltage-measurement-procedure"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp các thao tác sau theo đúng thứ tự quy trình thực hành đo hiệu điện thế giữa hai đầu bóng đèn bằng vôn kế:",
+    "knowledge": [
+      "measurement.current.voltage"
+    ],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Kiểm tra và vặn ốc điều chỉnh kim của vôn kế về đúng vạch số 0",
+        "Mắc vôn kế song song với hai đầu bóng đèn sao cho chốt (+) nối về phía cực dương của nguồn",
+        "Đóng khóa K của mạch điện và đợi kim vôn kế đứng yên",
+        "Đọc và ghi nhận giá trị hiệu điện thế U hiển thị trên mặt thang đo của vôn kế",
+        "Ngắt khóa K để bảo vệ thiết bị và nguồn pin"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Vôn kế phải được mắc song song với hai đầu bóng đèn."
+      },
+      {
+        "level": 2,
+        "text": "Thao tác đầu tiên là chỉnh điểm 0 cơ học, tiếp theo mắc song song, đóng K, đọc số chỉ và cuối cùng là ngắt K."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Trình tự đo hiệu điện thế",
+        "body": "Sắp xếp theo thứ tự chuẩn từ khâu chuẩn bị dụng cụ đến đo và kết thúc."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức thực hành",
+        "body": "1. Chỉnh kim về 0 -> 2. Mắc vôn kế song song hai đầu bóng đèn -> 3. Đóng khóa K -> 4. Đọc giá trị U -> 5. Ngắt khóa K."
+      },
+      {
+        "kind": "answer",
+        "title": "Thứ tự chính xác",
+        "body": "Thứ tự sắp xếp đúng như quy trình đã nêu."
+      }
+    ],
+    "finalSolution": "Quy trình đo U: **Chỉnh kim về 0 → Mắc song song vôn kế → Đóng K → Đọc giá trị U → Ngắt K**.",
+    "commonMistakes": [
+      {
+        "id": "connect-voltmeter-in-series",
+        "message": "Vôn kế có điện trở rất lớn nên bắt buộc phải mắc song song, nếu mắc nối tiếp thì mạch gần như bị hở đèn sẽ không sáng."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b13-mcq-003",
+    "lessonId": "phy-g8-b13",
+    "sgkBaiSo": 25,
+    "skillIds": [
+      "meter-range-selection"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong một bài thực hành, học sinh dự đoán cường độ dòng điện chạy qua bóng đèn pin khoảng 0,35 A. Trong phòng thí nghiệm có 4 chiếc ampe kế với các giới hạn đo (GHĐ) khác nhau. Chiếc ampe kế nào phù hợp nhất để cho kết quả đo chính xác?",
+    "knowledge": [
+      "measurement.current.voltage"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Ampe kế có GHĐ 0,2 A"
+        },
+        {
+          "id": "opt-b",
+          "label": "Ampe kế có GHĐ 100 mA"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ampe kế có GHĐ 0,6 A (hoặc 1 A)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Ampe kế có GHĐ 50 A"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "GHĐ phải lớn hơn giá trị cần đo (0,35 A) nhưng không được lớn quá mức."
+      },
+      {
+        "level": 2,
+        "text": "Nếu GHĐ < 0,35 A (như 0,2 A hay 100 mA = 0,1 A) thì kim kịch kim gây cháy hỏng. Nếu GHĐ = 50 A thì thang đo quá thô, kim hầu như không nhúc nhích gây sai số lớn. Chọn GHĐ 0,6 A là tối ưu nhất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tiêu chuẩn chọn thang đo",
+        "body": "Tìm ampe kế có GHĐ vừa đủ lớn hơn 0,35 A."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Nguyên tắc chọn GHĐ SGK",
+        "body": "Theo SGK KHTN 8 (Bài 25), chọn dụng cụ đo có GHĐ lớn hơn giá trị ước lượng cần đo một lượng vừa phải để kim chỉ thị nằm ở khoảng giữa đến 2/3 thang đo, giúp độ chia nhỏ nhất phát huy tối đa độ chính xác."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án thích hợp nhất là **Ampe kế có GHĐ 0,6 A (hoặc 1 A)**."
+      }
+    ],
+    "finalSolution": "Nên chọn **Ampe kế có GHĐ 0,6 A (hoặc 1 A)** vì lớn hơn 0,35 A và kim sẽ nằm ở vị trí đọc rõ ràng nhất.",
+    "commonMistakes": [
+      {
+        "id": "choose-too-small-range",
+        "message": "Nếu chọn GHĐ 0,2 A nhỏ hơn 0,35 A thì kim chỉ thị sẽ đập mạnh vào chốt chặn kịch kim gây cong kim và cháy cuộn dây ampe kế."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b13-mcq-004",
+    "lessonId": "phy-g8-b13",
+    "sgkBaiSo": 25,
+    "skillIds": [
+      "meter-troubleshooting"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi vừa đóng khóa K, kim của vôn kế bị lệch ngược về phía bên trái vạch số 0. Hiện tượng này báo hiệu điều gì và cần xử lý ra sao?",
+    "knowledge": [
+      "measurement.current.voltage"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Đã mắc ngược hai chốt (+) và (-) của vôn kế; cần ngắt khóa K ngay và đổi chỗ hai đầu dây cắm"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hiệu điện thế quá lớn làm hỏng vôn kế; cần thay viên pin khác có số vôn gấp đôi"
+        },
+        {
+          "id": "opt-c",
+          "label": "Bóng đèn đang phát sáng quá mạnh khiến vôn kế bị lóa"
+        },
+        {
+          "id": "opt-d",
+          "label": "Dây dẫn bị đứt ở bên trong; cần thay toàn bộ dây dẫn mới"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Kim quay ngược hướng bình thường chứng tỏ chiều dòng điện đi vào dụng cụ đo bị ngược."
+      },
+      {
+        "level": 2,
+        "text": "Chốt (+) và chốt (-) bị đấu nhầm. Phải ngắt điện ngay rồi đổi chéo hai dây cắm ở hai chốt."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích sự cố",
+        "body": "Kim lệch về bên trái vạch 0 (ngược chiều quay thuận)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Khắc phục sự cố SGK",
+        "body": "Dụng cụ đo điện một chiều chỉ quay theo chiều thuận khi dòng điện đi vào chốt (+) và ra ở chốt (-). Nếu kim quay ngược là do mắc ngược chốt. Cần ngắt khóa K ngay để tránh cong vênh kim rồi đổi chốt."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Đã mắc ngược hai chốt (+) và (-) của vôn kế; cần ngắt khóa K ngay và đổi chỗ hai đầu dây cắm**."
+      }
+    ],
+    "finalSolution": "Khắc phục: **Ngắt khóa K ngay và đổi chỗ hai đầu dây cắm ở hai chốt (+) và (-) của vôn kế**.",
+    "commonMistakes": [
+      {
+        "id": "delay-switching-off",
+        "message": "Nếu không ngắt khóa K kịp thời, lực cản ngược có thể làm cong kim hoặc đứt lò xo xoắn của cơ cấu chỉ thị."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b13-mcq-005",
+    "lessonId": "phy-g8-b13",
+    "sgkBaiSo": 25,
+    "skillIds": [
+      "open-circuit-diagnosis"
+    ],
+    "difficulty": 2,
+    "prompt": "Một nhóm học sinh lắp mạch điện gồm nguồn pin, công tắc, ampe kế mắc nối tiếp với bóng đèn. Sau khi đóng khóa K, bóng đèn không sáng và kim ampe kế vẫn chỉ số 0. Nguyên nhân nào sau đây có khả năng cao nhất?",
+    "knowledge": [
+      "measurement.current.voltage"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Mạch bị hở do tiếp xúc chỗ cắm dây bị lỏng hoặc dây tóc bóng đèn đã bị đứt"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hiệu điện thế của pin quá lớn làm kim ampe kế bị kẹt"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khóa K đóng quá chặt làm cản trở dòng electron"
+        },
+        {
+          "id": "opt-d",
+          "label": "Ampe kế có điện trở bằng 0 nên không cho dòng điện chạy qua"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi không có dòng điện (I = 0 và đèn tắt), mạch điện đang ở trạng thái nào?"
+      },
+      {
+        "level": 2,
+        "text": "Mạch bị ngắt quãng (mạch hở) tại một điểm tiếp xúc lỏng lẻo hoặc bóng đèn bị cháy đứt dây tóc."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Chẩn đoán mạch điện",
+        "body": "Đèn tắt và I = 0 chứng tỏ không có dòng điện chạy trong mạch."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hiện tượng mạch hở",
+        "body": "Nếu mạch bị đứt đoạn ở bất kì vị trí nào (dây đứt, chốt cắm lỏng lẻo không tiếp xúc điện, dây tóc đèn đứt...) thì mạch trở thành mạch hở, dòng điện không thể lưu thông."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nguyên nhân có khả năng cao nhất là **Mạch bị hở do tiếp xúc chỗ cắm dây bị lỏng hoặc dây tóc bóng đèn đã bị đứt**."
+      }
+    ],
+    "finalSolution": "Nguyên nhân: **Mạch bị hở do tiếp xúc cắm dây bị lỏng hoặc bóng đèn bị đứt dây tóc**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-with-short-circuit",
+        "message": "Nếu là đoản mạch thì ampe kế sẽ tăng vọt cực lớn chứ không chỉ số 0."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b13-mcq-006",
+    "lessonId": "phy-g8-b13",
+    "sgkBaiSo": 25,
+    "skillIds": [
+      "parallax-error-prevention"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi đọc số chỉ trên mặt chia độ của ampe kế hoặc vôn kế kim chỉ thị trong phòng thực hành, mắt của người quan sát phải đặt ở vị trí nào để tránh sai số?",
+    "knowledge": [
+      "measurement.current.voltage"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Mắt đặt nhìn vuông góc với mặt bảng chia độ tại vị trí kim chỉ thị"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nhìn nghiêng từ dưới lên trên qua mặt kính"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mắt nhìn chếch từ bên trái sang một góc 45 độ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Mắt nhìn chếch từ bên phải sang một góc 45 độ"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nếu nhìn nghiêng, bóng của kim sẽ in lệch trên vạch chia phía sau (sai số thị sai)."
+      },
+      {
+        "level": 2,
+        "text": "Phải nhìn thẳng trực diện vuông góc với mặt kính."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Kĩ thuật đọc số đo",
+        "body": "Xác định hướng đặt mắt đúng quy chuẩn thí nghiệm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Nguyên tắc thị sai",
+        "body": "Kim chỉ thị nằm cách mặt bảng số một khoảng nhỏ. Nếu nhìn nghiêng, góc nhìn sẽ làm kim lệch khỏi vạch tương ứng thực tế. Đặt mắt vuông góc đảm bảo hình ảnh kim trùng khít với vạch chia."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Mắt đặt nhìn vuông góc với mặt bảng chia độ tại vị trí kim chỉ thị**."
+      }
+    ],
+    "finalSolution": "Tư thế đọc chuẩn: **Mắt đặt nhìn vuông góc với mặt bảng chia độ**.",
+    "commonMistakes": [
+      {
+        "id": "tilt-head-viewing",
+        "message": "Nhìn chéo một bên là nguyên nhân chính dẫn đến sai số đọc dụng cụ cơ học trong thực hành."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b13-num-007",
+    "lessonId": "phy-g8-b13",
+    "sgkBaiSo": 25,
+    "skillIds": [
+      "average-measurement-calc"
+    ],
+    "difficulty": 2,
+    "prompt": "Để tăng độ chính xác trong bài thực hành, bạn Nam tiến hành đo hiệu điện thế giữa hai đầu bóng đèn 3 lần lặp lại và ghi chép được bảng số liệu ví dụ như sau: Lần 1: U1 = 5,9 V; Lần 2: U2 = 6,0 V; Lần 3: U3 = 6,1 V. Giá trị trung bình của hiệu điện thế hai đầu bóng đèn là bao nhiêu vôn (V)?",
+    "knowledge": [
+      "measurement.current.voltage"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 6,
+      "unit": "V",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Giá trị trung bình bằng tổng các giá trị đo chia cho số lần đo (n = 3)."
+      },
+      {
+        "level": 2,
+        "text": "U_tb = (U1 + U2 + U3) / 3 = (5,9 + 6,0 + 6,1) / 3."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt số liệu đo",
+        "body": "$U_1 = 5{,}9\\text{ V}$; $U_2 = 6{,}0\\text{ V}$; $U_3 = 6{,}1\\text{ V}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức giá trị trung bình",
+        "body": "$\\overline{U} = \\frac{U_1 + U_2 + U_3}{3}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$\\overline{U} = \\frac{5{,}9 + 6{,}0 + 6{,}1}{3} = \\frac{18{,}0}{3} = 6{,}0\\text{ V}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Giá trị hiệu điện thế trung bình là **6,0 V**."
+      }
+    ],
+    "finalSolution": "Giá trị trung bình: $\\overline{U} = \\frac{5{,}9 + 6{,}0 + 6{,}1}{3} = 6{,}0\\text{ V}$.",
+    "commonMistakes": [
+      {
+        "id": "wrong-summation",
+        "message": "5,9 + 6,0 + 6,1 = 18,0; chia 3 được đúng 6,0 V."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b13-mcq-008",
+    "lessonId": "phy-g8-b13",
+    "sgkBaiSo": 25,
+    "skillIds": [
+      "voltage-current-relationship"
+    ],
+    "difficulty": 3,
+    "prompt": "Từ kết quả thí nghiệm thực hành đo I và U của bóng đèn khi lần lượt thay nguồn 1 pin, 2 pin rồi 3 pin, học sinh rút ra nhận xét nào sau đây là hoàn toàn CHÍNH XÁC?",
+    "knowledge": [
+      "measurement.current.voltage"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hiệu điện thế tăng lên bao nhiêu lần thì cường độ dòng điện giảm đi bấy nhiêu lần"
+        },
+        {
+          "id": "opt-b",
+          "label": "Đèn chỉ sáng khi cường độ dòng điện bằng đúng 0 ampe"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khi hiệu điện thế giữa hai đầu bóng đèn càng lớn thì cường độ dòng điện qua đèn càng lớn và đèn sáng càng mạnh"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cường độ dòng điện qua đèn luôn không đổi dù hiệu điện thế nguồn thay đổi thế nào"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi tăng số viên pin từ 1 pin lên 2 pin (U tăng từ 1,5V lên 3V), bóng đèn sáng hơn hay mờ đi?"
+      },
+      {
+        "level": 2,
+        "text": "Hiệu điện thế U tăng thì đẩy dòng electron qua đèn mạnh hơn, tức cường độ I tăng và đèn phát sáng mạnh hơn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quy luật thực nghiệm",
+        "body": "Xác định mối liên hệ giữa hiệu điện thế đặt vào bóng đèn và cường độ dòng điện chạy qua đèn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kết luận thực hành SGK",
+        "body": "Theo SGK KHTN 8 (Bài 24 & 25), hiệu điện thế giữa hai đầu bóng đèn càng lớn thì cường độ dòng điện chạy qua bóng đèn càng lớn và đèn phát sáng càng mạnh."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Khi hiệu điện thế giữa hai đầu bóng đèn càng lớn thì cường độ dòng điện qua đèn càng lớn và đèn sáng càng mạnh**."
+      }
+    ],
+    "finalSolution": "Kết luận thực hành: **Hiệu điện thế giữa hai đầu đèn càng lớn thì cường độ dòng điện I càng lớn và đèn sáng càng mạnh**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-inverse-proportional",
+        "message": "Đối với một vật tiêu thụ cố định, U và I tỉ lệ thuận với nhau chứ không phải tỉ lệ nghịch."
+      }
+    ]
+  }
+]

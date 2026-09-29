@@ -1,0 +1,80 @@
+{
+  "lessonId": "phy-g7-b08",
+  "nodeId": "phy-g7-b08-theory",
+  "title": "Lý thuyết: Năng lượng ánh sáng & Tia sáng",
+  "subtitle": "Bài 15 SGK Khoa học tự nhiên 7 (Kết nối tri thức)",
+  "sgkBaiSo": 15,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Quang năng & Nguồn sáng",
+      "badgeColor": "cyan",
+      "title": "1. Năng lượng ánh sáng, nguồn sáng và vật sáng",
+      "content": "Ánh sáng là một dạng năng lượng được gọi là quang năng. Ánh sáng mang năng lượng và có thể chuyển hóa thành các dạng năng lượng khác:",
+      "bulletPoints": [
+        "Chuyển hóa năng lượng: Quang năng -> Nhiệt năng (làm nóng đồ vật, phơi sấy nông sản); Quang năng -> Điện năng (pin quang điện mặt trời); Quang năng -> Hóa năng (quá trình quang hợp của cây xanh).",
+        "Nguồn sáng: Là vật tự nó phát ra ánh sáng (ví dụ: Mặt Trời, ngọn nến đang cháy, bóng đèn điện đang bật, con đom đóm...).",
+        "Vật sáng: Gồm nguồn sáng và những vật hắt lại (phản chiếu) ánh sáng chiếu vào nó (ví dụ: Mặt Trăng, cuốn sách, mặt gương soi, bàn ghế...).",
+        "Điều kiện nhìn thấy một vật: Ta nhìn thấy một vật khi có ánh sáng từ vật đó truyền vào mắt ta."
+      ],
+      "callout": "Lưu ý quan trọng: Mặt Trăng KHÔNG PHẢI là nguồn sáng, Mặt Trăng chỉ là vật sáng vì nó phản chiếu lại ánh sáng từ Mặt Trời."
+    },
+    {
+      "id": "c2",
+      "badge": "Định luật & Mô hình",
+      "badgeColor": "amber",
+      "title": "2. Định luật truyền thẳng ánh sáng & Mô hình tia sáng",
+      "content": "Trong không gian, ánh sáng truyền đi theo một quy luật hình học xác định:",
+      "bulletPoints": [
+        "Định luật truyền thẳng của ánh sáng: Trong môi trường trong suốt và đồng tính, ánh sáng truyền đi theo đường thẳng.",
+        "Mô hình tia sáng: Biểu diễn đường truyền của ánh sáng bằng một đường thẳng có mũi tên chỉ chiều truyền của ánh sáng.",
+        "Chùm sáng: Tập hợp của nhiều tia sáng. Có 3 loại chùm sáng thường gặp:",
+        "1) Chùm sáng song song: Các tia sáng song song với nhau (chùm laser, ánh sáng Mặt Trời).",
+        "2) Chùm sáng hội tụ: Các tia sáng giao nhau tại một điểm.",
+        "3) Chùm sáng phân kì: Các tia sáng loe rộng ra từ một điểm phát (chùm sáng từ ngọn nến, bóng đèn nhỏ)."
+      ],
+      "callout": "Ví dụ: Người thợ mộc ngắm dọc theo mép gỗ thẳng hoặc người lính ngắm bắn súng dựa trên định luật truyền thẳng của ánh sáng."
+    },
+    {
+      "id": "c3",
+      "badge": "Hiện tượng bóng tối",
+      "badgeColor": "emerald",
+      "title": "3. Vùng tối, vùng nửa tối, Nhật thực và Nguyệt thực",
+      "content": "Khi đặt một vật cản sáng trên đường truyền của ánh sáng, phía sau vật sẽ xuất hiện bóng:",
+      "bulletPoints": [
+        "Vùng tối: Vùng ở phía sau vật cản hoàn toàn không nhận được ánh sáng từ nguồn sáng truyền tới.",
+        "Vùng nửa tối: Vùng ở phía sau vật cản chỉ nhận được một phần ánh sáng từ nguồn sáng truyền tới (xuất hiện khi nguồn sáng có kích thước lớn).",
+        "Nhật thực: Xảy ra vào ban ngày khi Mặt Trời, Mặt Trăng và Trái Đất thẳng hàng (Mặt Trăng ở giữa). Mặt Trăng che khuất một phần hoặc toàn bộ Mặt Trời.",
+        "Nguyệt thực: Xảy ra vào ban đêm khi Mặt Trời, Trái Đất và Mặt Trăng thẳng hàng (Trái Đất ở giữa). Trái Đất che khuất ánh sáng Mặt Trời chiếu tới Mặt Trăng."
+      ],
+      "callout": "Ứng dụng y học: Đèn mổ phẫu thuật trong bệnh viện gồm nhiều bóng đèn xếp tròn để triệt tiêu vùng tối rõ nét dưới tay bác sĩ, giúp phẫu thuật chính xác."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Hiện tượng Nhật thực xảy ra khi vị trí tương đối giữa Mặt Trời, Mặt Trăng và Trái Đất như thế nào?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Mặt Trăng nằm giữa Mặt Trời và Trái Đất",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Trái Đất nằm giữa Mặt Trời và Mặt Trăng",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Mặt Trời nằm giữa Mặt Trăng và Trái Đất",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Mặt Trăng đi vào vùng bóng tối của Trái Đất",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 7 Bài 15, Nhật thực xảy ra khi Mặt Trăng nằm giữa Mặt Trời và Trái Đất, bóng của Mặt Trăng đổ lên Trái Đất che khuất Mặt Trời."
+  }
+}

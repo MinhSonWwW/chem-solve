@@ -7,7 +7,6 @@ import {
   BookOpen,
   ArrowRight,
   Flame,
-  Gamepad2,
   Sparkles,
 } from 'lucide-react';
 import { Formula } from '@/design-system';
@@ -26,8 +25,7 @@ export const SearchPage: React.FC = () => {
     results.substances.length +
     results.reactions.length +
     results.skills.length +
-    results.lessons.length +
-    results.minigames.length;
+    results.lessons.length;
 
   return (
     <div className="space-y-4 pb-8">
@@ -174,32 +172,6 @@ export const SearchPage: React.FC = () => {
             </div>
           )}
 
-          {/* 4. Minigames */}
-          {results.minigames.length > 0 && (
-            <div className="space-y-2">
-              <h2 className="text-xs font-black text-[#00cd9c] flex items-center gap-1.5 px-1">
-                <Gamepad2 className="w-3.5 h-3.5" /> Minigame liên quan ({results.minigames.length})
-              </h2>
-              <div className="grid grid-cols-1 gap-2">
-                {results.minigames.map((g) => (
-                  <div
-                    key={g.id}
-                    onClick={() => {
-                      sound.playClick();
-                      navigate(`/games/${g.id}`);
-                    }}
-                    className="p-3 bg-[#18272f] border-2 border-[#2e4756] hover:border-[#00cd9c] shadow-[0_2px_0_0_#131f24] rounded-2xl flex items-center justify-between cursor-pointer transition"
-                  >
-                    <div>
-                      <h3 className="text-xs font-bold text-slate-100">{g.name}</h3>
-                      <p className="text-[11px] text-slate-400 mt-0.5">{g.desc}</p>
-                    </div>
-                    <ArrowRight className="w-4 h-4 text-[#00cd9c] shrink-0" />
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
         </div>
       ) : (
         /* Empty State / Discovery Guide */

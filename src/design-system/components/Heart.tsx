@@ -8,6 +8,8 @@ export interface HeartProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 export const Heart: React.FC<HeartProps> = ({ count, max = 5, className, ...props }) => {
+  const isInfinite = count >= 99 || count === Infinity;
+
   return (
     <div
       className={cn(
@@ -26,9 +28,8 @@ export const Heart: React.FC<HeartProps> = ({ count, max = 5, className, ...prop
         }}
       />
       <HeartIcon className="hidden w-3.5 h-3.5 fill-rose-500 text-rose-500" />
-      <span>
-        {count}
-        {max ? `/${max}` : ''}
+      <span className={isInfinite ? 'text-sm font-black text-rose-300' : ''}>
+        {isInfinite ? '∞' : `${count}${max ? `/${max}` : ''}`}
       </span>
     </div>
   );

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Search } from 'lucide-react';
+import { Search, Zap } from 'lucide-react';
 import { Heart, Streak, XPBadge, GemBadge, HeartRefillModal, SubjectSelectorModal } from '@/design-system';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import { sound } from '@/lib/audio';
@@ -27,18 +27,36 @@ export const TopHeader: React.FC = () => {
               onClick={() => sound.playClick()}
               className="flex items-center gap-1.5 cursor-pointer"
             >
-              <div className="w-8 h-8 rounded-xl bg-[#0ea5e9] flex items-center justify-center font-black text-white text-sm shadow-[0_3px_0_0_#0284c7] overflow-hidden border border-sky-300/40">
-                <img
-                  src={assetUrl('/assets/mascot/atom-idle.png')}
-                  alt="Atom"
-                  className="w-7 h-7 object-contain"
-                  onError={(e) => {
-                    (e.target as HTMLElement).style.display = 'none';
-                  }}
-                />
+              <div
+                className={`w-8 h-8 rounded-xl flex items-center justify-center font-black text-white text-sm overflow-hidden border ${
+                  activeSubject === 'physics'
+                    ? 'bg-[#eab308] border-amber-300/50 shadow-[0_3px_0_0_#ca8a04]'
+                    : 'bg-[#0ea5e9] border-sky-300/40 shadow-[0_3px_0_0_#0284c7]'
+                }`}
+              >
+                {activeSubject === 'physics' ? (
+                  <Zap className="w-5 h-5 text-slate-950 fill-slate-950" />
+                ) : (
+                  <img
+                    src={assetUrl('/assets/mascot/atom-idle.png')}
+                    alt="Atom"
+                    className="w-7 h-7 object-contain"
+                    onError={(e) => {
+                      (e.target as HTMLElement).style.display = 'none';
+                    }}
+                  />
+                )}
               </div>
               <span className="font-black tracking-wider text-sm sm:text-base text-white">
-                CHEM<span className="text-[#0ea5e9]">-SOLVE</span>
+                {activeSubject === 'physics' ? (
+                  <>
+                    PHY<span className="text-[#eab308]">-SOLVE</span>
+                  </>
+                ) : (
+                  <>
+                    CHEM<span className="text-[#0ea5e9]">-SOLVE</span>
+                  </>
+                )}
               </span>
             </Link>
 
@@ -48,11 +66,17 @@ export const TopHeader: React.FC = () => {
                 sound.playClick();
                 setShowSubjectModal(true);
               }}
-              className="flex items-center gap-1 px-2 py-1 rounded-xl bg-[#18272f] border border-[#2e4756] hover:border-sky-400 text-xs font-black text-slate-200 transition-colors shadow-sm cursor-pointer"
+              className={`flex items-center gap-1 px-2 py-1 rounded-xl bg-[#18272f] border text-xs font-black transition-colors shadow-sm cursor-pointer ${
+                activeSubject === 'physics'
+                  ? 'border-amber-500/40 hover:border-amber-400 text-amber-300'
+                  : 'border-[#2e4756] hover:border-sky-400 text-slate-200'
+              }`}
               title="Đổi môn học (Hóa học, Vật lý...)"
             >
               <span>{currentSub.icon}</span>
-              <span className="text-[11px] text-sky-400">{currentSub.shortName}</span>
+              <span className={`text-[11px] ${activeSubject === 'physics' ? 'text-amber-400' : 'text-sky-400'}`}>
+                {currentSub.shortName}
+              </span>
             </button>
           </div>
 

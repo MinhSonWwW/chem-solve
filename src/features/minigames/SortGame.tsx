@@ -4,7 +4,9 @@ import { ShieldAlert, Sparkles } from 'lucide-react';
 import { MinigameShell, Formula } from '@/design-system';
 import { sound } from '@/lib/audio';
 import { useUserStore } from '@/features/gamification/useUserStore';
+import { useActiveSubject } from '@/content/subjects';
 import substancesData from '@/content/kb/substances.json';
+import physicsSortItems from '@/content/kb/physics/sort-items.json';
 
 interface Substance {
   formula: string;
@@ -12,7 +14,15 @@ interface Substance {
   type: string;
 }
 
-export type CategoryKey = 'acid' | 'base' | 'oxide' | 'salt';
+export type CategoryKey =
+  | 'acid'
+  | 'base'
+  | 'oxide'
+  | 'salt'
+  | 'co-hoc'
+  | 'nhiet-hoc'
+  | 'dien-hoc'
+  | 'quang-hoc';
 
 interface CategoryConfig {
   key: CategoryKey;
@@ -85,6 +95,73 @@ const CATEGORIES: CategoryConfig[] = [
     label: 'Muối',
     subtitle: 'Salt',
     desc: 'Kim loại + gốc acid',
+    theme: {
+      text: 'text-emerald-400',
+      border: 'border-emerald-500/40 hover:border-emerald-400',
+      borderActive: 'border-emerald-400 ring-4 ring-emerald-500/30',
+      bg: 'from-emerald-950/50 via-[#11231f] to-[#12181f]',
+      glow: 'rgba(16,185,129,0.35)',
+      liquid: '#10b981',
+      accent: '#34d399',
+      shadow: '#022c22',
+    },
+  },
+];
+
+const PHYSICS_CATEGORIES: CategoryConfig[] = [
+  {
+    key: 'co-hoc',
+    label: 'Cơ học',
+    subtitle: 'Mechanics',
+    desc: 'Vận tốc, KLR, Áp suất, Lực...',
+    theme: {
+      text: 'text-amber-400',
+      border: 'border-amber-500/40 hover:border-amber-400',
+      borderActive: 'border-amber-400 ring-4 ring-amber-500/30',
+      bg: 'from-amber-950/50 via-[#211a14] to-[#12181f]',
+      glow: 'rgba(245,158,11,0.35)',
+      liquid: '#f59e0b',
+      accent: '#fbbf24',
+      shadow: '#451a03',
+    },
+  },
+  {
+    key: 'nhiet-hoc',
+    label: 'Nhiệt học',
+    subtitle: 'Thermal',
+    desc: 'Nhiệt lượng, Dẫn nhiệt, Đối lưu...',
+    theme: {
+      text: 'text-rose-400',
+      border: 'border-rose-500/40 hover:border-rose-400',
+      borderActive: 'border-rose-400 ring-4 ring-rose-500/30',
+      bg: 'from-rose-950/50 via-[#1a1318] to-[#12181f]',
+      glow: 'rgba(244,63,94,0.35)',
+      liquid: '#f43f5e',
+      accent: '#fb7185',
+      shadow: '#4c0519',
+    },
+  },
+  {
+    key: 'dien-hoc',
+    label: 'Điện học',
+    subtitle: 'Electricity',
+    desc: 'Định luật Ôm, Cường độ I, Mạch điện...',
+    theme: {
+      text: 'text-sky-400',
+      border: 'border-sky-500/40 hover:border-sky-400',
+      borderActive: 'border-sky-400 ring-4 ring-sky-500/30',
+      bg: 'from-sky-950/50 via-[#121c27] to-[#12181f]',
+      glow: 'rgba(14,165,233,0.35)',
+      liquid: '#0ea5e9',
+      accent: '#38bdf8',
+      shadow: '#082f49',
+    },
+  },
+  {
+    key: 'quang-hoc',
+    label: 'Quang học',
+    subtitle: 'Optics',
+    desc: 'Phản xạ, Khúc xạ, Thấu kính...',
     theme: {
       text: 'text-emerald-400',
       border: 'border-emerald-500/40 hover:border-emerald-400',
@@ -227,6 +304,9 @@ const FlaskGraphic: React.FC<{
 
 export const SortGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const { addXp } = useUserStore();
+  const { subject: activeSubject } = useActiveSubject();
+  const isPhysics = activeSubject === 'physics';
+
   const [timeLeft, setTimeLeft] = useState(50);
   const [score, setScore] = useState(0);
   const [combo, setCombo] = useState(0);
@@ -240,16 +320,23 @@ export const SortGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     expected: CategoryKey;
   } | null>(null);
 
-  // Pool of substances filtered to the 4 categories
+  const categories = isPhysics ? PHYSICS_CATEGORIES : CATEGORIES;
+
+  // Pool of substances / concepts filtered to the 4 categories
   const roundSubstances = useMemo(() => {
+    if (isPhysics) {
+      return [...physicsSortItems].sort(() => 0.5 - Math.random()).slice(0, 15);
+    }
     const valid = (substancesData as Substance[]).filter((s) =>
       Boolean(normalizeSubstanceCategory(s.type))
     );
     return [...valid].sort(() => 0.5 - Math.random()).slice(0, 15);
-  }, []);
+  }, [isPhysics]);
 
   const currentItem = roundSubstances[currentIndex] || roundSubstances[0];
-  const expectedCategory = normalizeSubstanceCategory(currentItem?.type || '') as CategoryKey;
+  const expectedCategory = (
+    isPhysics ? currentItem?.type : normalizeSubstanceCategory(currentItem?.type || '')
+  ) as CategoryKey;
 
   const finishGame = useCallback(
     (finalScore: number) => {
@@ -310,8 +397,12 @@ export const SortGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
 
   return (
     <MinigameShell
-      title="Phân loại hợp chất vô cơ"
-      description="Chuyển hóa chất vào đúng bình thí nghiệm"
+      title={isPhysics ? 'Phân loại hiện tượng & Kiến thức Vật lý' : 'Phân loại hợp chất vô cơ'}
+      description={
+        isPhysics
+          ? 'Xếp nhanh các khái niệm & công thức vào đúng 4 nhánh Vật lý THCS'
+          : 'Chuyển hóa chất vào đúng bình thí nghiệm'
+      }
       skillId="compound-sort"
       timeLeft={timeLeft}
       score={score}
@@ -332,7 +423,8 @@ export const SortGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
         {/* Progress header */}
         <div className="flex items-center justify-between text-xs px-1">
           <span className="font-bold text-slate-400">
-            Chất <span className="text-cyan-400 font-black">{currentIndex + 1}</span> / {roundSubstances.length}
+            {isPhysics ? 'Khái niệm' : 'Chất'}{' '}
+            <span className="text-cyan-400 font-black">{currentIndex + 1}</span> / {roundSubstances.length}
           </span>
           <span className="text-[11px] font-black uppercase tracking-wider text-slate-400 flex items-center gap-1">
             <Sparkles className="w-3.5 h-3.5 text-amber-400" />
@@ -358,11 +450,11 @@ export const SortGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
               }`}
             >
               <div className="text-[10px] font-black uppercase tracking-widest text-cyan-400 mb-1">
-                MẪU THỬ HÓA CHẤT
+                {isPhysics ? 'KHÁI NIỆM / CÔNG THỨC' : 'MẪU THỬ HÓA CHẤT'}
               </div>
 
-              <div className="text-3xl sm:text-4xl font-black text-slate-100 mb-1 tracking-wider drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
-                <Formula formula={currentItem?.formula || ''} />
+              <div className="text-2xl sm:text-3xl font-black text-slate-100 mb-1 tracking-wider drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] font-mono">
+                {isPhysics ? currentItem?.formula : <Formula formula={currentItem?.formula || ''} />}
               </div>
 
               <p className="text-sm text-slate-300 font-semibold">{currentItem?.nameVi}</p>
@@ -378,7 +470,7 @@ export const SortGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                   <span>
                     Chính xác là:{' '}
                     <strong className="underline text-white">
-                      {CATEGORIES.find((c) => c.key === lastFeedback.expected)?.label}
+                      {categories.find((c) => c.key === lastFeedback.expected)?.label}
                     </strong>
                   </span>
                 </motion.div>
@@ -389,7 +481,7 @@ export const SortGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
 
         {/* 4 Laboratory Erlenmeyer Flask Bins Grid */}
         <div className="grid grid-cols-2 gap-3 pt-1">
-          {CATEGORIES.map((cat) => {
+          {categories.map((cat) => {
             const isTargetOfWrong = Boolean(
               lastFeedback && !lastFeedback.correct && lastFeedback.expected === cat.key
             );

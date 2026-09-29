@@ -1,0 +1,51 @@
+[
+  {
+    "id": "g_earth",
+    "name": "Gia tốc trọng trường",
+    "symbol": "g",
+    "value": 9.8,
+    "approxValue": 10,
+    "unit": "m/s^2",
+    "description": "Gia tốc rơi tự do tại bề mặt Trái Đất (trong tính toán THCS thường lấy xấp xỉ 10 m/s^2)"
+  },
+  {
+    "id": "speed_of_light",
+    "name": "Vận tốc ánh sáng trong chân không",
+    "symbol": "c",
+    "value": 300000000,
+    "unit": "m/s",
+    "description": "Tốc độ truyền ánh sáng cực đại trong vũ trụ (~ 300 000 km/s)"
+  },
+  {
+    "id": "water_density",
+    "name": "Khối lượng riêng của nước nguyên chất",
+    "symbol": "D_water",
+    "value": 1000,
+    "unit": "kg/m^3",
+    "description": "1 m^3 nước nguyên chất ở 4°C có khối lượng 1000 kg (tương đương 1 g/cm^3 hoặc 1 kg/L)"
+  },
+  {
+    "id": "water_specific_weight",
+    "name": "Trọng lượng riêng của nước",
+    "symbol": "d_water",
+    "value": 10000,
+    "unit": "N/m^3",
+    "description": "Trọng lượng của 1 m^3 nước (d = 10 * D)"
+  },
+  {
+    "id": "water_specific_heat",
+    "name": "Nhiệt dung riêng của nước",
+    "symbol": "c_water",
+    "value": 4200,
+    "unit": "J/(kg.K)",
+    "description": "Nhiệt lượng cần thiết để làm 1 kg nước nóng lên thêm 1°C (hoặc 1 K)"
+  },
+  {
+    "id": "atmospheric_pressure",
+    "name": "Áp suất khí quyển tiêu chuẩn",
+    "symbol": "p_0",
+    "value": 101300,
+    "unit": "Pa",
+    "description": "Tương đương 760 mmHg hoặc 1 atm"
+  }
+]

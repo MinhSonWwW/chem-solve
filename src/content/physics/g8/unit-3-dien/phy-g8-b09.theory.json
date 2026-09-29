@@ -1,0 +1,82 @@
+{
+  "lessonId": "phy-g8-b09",
+  "nodeId": "phy-g8-b09-theory",
+  "title": "Lý thuyết: Dòng điện, nguồn điện",
+  "subtitle": "Bài 21 SGK Khoa học tự nhiên 8 (Kết nối tri thức)",
+  "sgkBaiSo": 21,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Bản chất dòng điện",
+      "badgeColor": "cyan",
+      "title": "1. Khái niệm dòng điện và dòng điện trong kim loại",
+      "content": "Dòng điện là một trong những dạng năng lượng thiết yếu nhất của nền văn minh hiện đại:",
+      "bulletPoints": [
+        "Định nghĩa: Dòng điện là dòng các điện tích dịch chuyển có hướng.",
+        "Dòng điện trong kim loại: Kim loại (đồng, nhôm, sắt, bạc...) dẫn điện rất tốt vì trong kim loại có chứa một lượng khổng lồ các hạt electron tự do.",
+        "Bản chất dòng điện trong kim loại: Là dòng các hạt electron tự do dịch chuyển có hướng.",
+        "Chiều dịch chuyển của electron tự do: Vì electron mang điện tích âm, chúng bị cực âm của nguồn điện đẩy và bị cực dương hút, do đó các electron tự do dịch chuyển từ CỰC ÂM sang CỰC DƯƠNG trong dây dẫn kim loại."
+      ],
+      "callout": "Ghi nhớ hạt tải điện: Trong dây kim loại, chỉ có hạt electron tự do chuyển động; các ion dương kim loại nằm yên tại nút mạng tinh thể."
+    },
+    {
+      "id": "c2",
+      "badge": "Nguồn điện",
+      "badgeColor": "amber",
+      "title": "2. Nguồn điện và hai cực của nguồn điện",
+      "content": "Để các thiết bị điện (đèn, quạt, tivi...) hoạt động liên tục, cần có nguồn điện:",
+      "bulletPoints": [
+        "Vai trò: Nguồn điện có khả năng cung cấp dòng điện liên tục để các dụng cụ điện hoạt động.",
+        "Hai cực của nguồn điện: Mỗi nguồn điện một chiều luôn có hai cực riêng biệt:",
+        "+ Cực dương (kí hiệu dấu $+$ hoặc sơn màu đỏ).",
+        "+ Cực âm (kí hiệu dấu $-$ hoặc sơn màu xanh/đen).",
+        "Quy ước trên viên pin tròn (AA, AAA): Đầu có núm nhô lên là cực dương ($+$); đáy phẳng kim loại ở đầu đối diện là cực âm ($-$).",
+        "Sự chuyển hóa năng lượng: Nguồn điện (pin, ắc quy) biến đổi hóa năng (phản ứng hóa học) thành điện năng."
+      ],
+      "callout": "Quy tắc an toàn: Không bao giờ nối trực tiếp một dây dẫn ngắn giữa hai cực của viên pin mà không qua bóng đèn/điện trở vì sẽ gây đoản mạch (chập cháy, hỏng pin)."
+    },
+    {
+      "id": "c3",
+      "badge": "Các loại nguồn điện",
+      "badgeColor": "emerald",
+      "title": "3. Các loại nguồn điện thông dụng",
+      "content": "Trong cuộc sống hằng ngày, ta bắt gặp nhiều loại nguồn điện đa dạng:",
+      "bulletPoints": [
+        "Pin tiểu (pin khô cylindrical AA, AAA 1,5V): Dùng cho điều khiển tivi, đồng hồ treo tường, đồ chơi trẻ em.",
+        "Pin vuông 9V: Dùng cho micro không dây, đồng hồ đo điện vạn năng.",
+        "Pin cúc áo (coin battery 3V): Dùng cho chìa khóa ô tô thông minh, máy tính bỏ túi, đồng hồ đeo tay.",
+        "Ắc quy (12V): Dùng để khởi động động cơ xe máy, ô tô, lưu trữ điện trong bộ lưu điện UPS.",
+        "Pin quang điện (pin mặt trời): Biến đổi trực tiếp quang năng của ánh sáng mặt trời thành điện năng sạch.",
+        "Máy phát điện: Biến đổi cơ năng (sức nước, sức gió, động cơ đốt trong) thành điện năng truyền tải trên lưới điện quốc gia."
+      ],
+      "callout": "Bảo vệ môi trường: Pin sau khi dùng hết chứa kim loại nặng độc hại (chì, thủy ngân, cadimi), không được vứt chung với rác sinh hoạt mà phải thu gom xử lý đúng cách."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Dòng điện trong các dây dẫn kim loại (như dây đồng, dây nhôm) là dòng chuyển dời có hướng của các hạt nào?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Các hạt electron tự do",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Các hạt proton mang điện dương",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Các hạt nguyên tử kim loại",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Các phân tử không khí",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 8 Bài 21: Dòng điện trong kim loại là dòng các electron tự do dịch chuyển có hướng."
+  }
+}

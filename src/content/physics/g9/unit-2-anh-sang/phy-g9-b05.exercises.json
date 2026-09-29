@@ -1,0 +1,554 @@
+[
+  {
+    "id": "phy-g9-b05-mcq-001",
+    "lessonId": "phy-g9-b05",
+    "sgkBaiSo": 6,
+    "skillIds": [
+      "tir-definition"
+    ],
+    "difficulty": 1,
+    "prompt": "Hiện tượng phản xạ toàn phần là hiện tượng quang học nào sau đây?",
+    "knowledge": [
+      "phenomenon.total.internal.reflection"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tia sáng truyền qua mặt phân cách và bị gãy khúc hoàn toàn 90°"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tia sáng bị tán sắc thành dải bảy sắc cầu vồng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tia sáng bị hấp thụ hoàn toàn và chuyển hóa thành quang năng mới"
+        },
+        {
+          "id": "opt-d",
+          "label": "Toàn bộ tia sáng tới bị phản xạ ngược trở lại môi trường trong suốt ban đầu tại mặt phân cách"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ 'toàn phần' nghĩa là 100% ánh sáng bị phản xạ lại, không còn tia khúc xạ."
+      },
+      {
+        "level": 2,
+        "text": "Theo SGK KHTN 9 Bài 6, phản xạ toàn phần là toàn bộ tia sáng tới bị phản xạ trở lại môi trường ban đầu."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định khái niệm",
+        "body": "Đề bài yêu cầu nêu định nghĩa hiện tượng phản xạ toàn phần."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 6: Phản xạ toàn phần là hiện tượng toàn bộ tia sáng tới bị phản xạ ngược trở lại môi trường trong suốt ban đầu tại mặt phân cách giữa hai môi trường trong suốt."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Toàn bộ tia sáng tới bị phản xạ ngược trở lại môi trường trong suốt ban đầu**."
+      }
+    ],
+    "finalSolution": "Phản xạ toàn phần là hiện tượng **toàn bộ tia sáng tới bị phản xạ ngược trở lại môi trường trong suốt ban đầu**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-partial-reflection",
+        "message": "Phản xạ thông thường chỉ phản xạ một phần ánh sáng (vẫn có tia khúc xạ đi vào môi trường thứ hai); phản xạ toàn phần thì không còn tia khúc xạ."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b05-mcq-002",
+    "lessonId": "phy-g9-b05",
+    "sgkBaiSo": 6,
+    "skillIds": [
+      "tir-medium-condition"
+    ],
+    "difficulty": 1,
+    "prompt": "Về mặt môi trường truyền sáng, hiện tượng phản xạ toàn phần chỉ có thể xảy ra khi ánh sáng truyền theo chiều nào sau đây?",
+    "knowledge": [
+      "phenomenon.total.internal.reflection"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Truyền từ không khí vào thủy tinh đặc"
+        },
+        {
+          "id": "opt-b",
+          "label": "Từ môi trường kém chiết quang sang môi trường chiết quang hơn (ví dụ từ không khí vào nước)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Truyền trong chân không thuần túy"
+        },
+        {
+          "id": "opt-d",
+          "label": "Từ môi trường chiết quang hơn sang môi trường kém chiết quang hơn (ví dụ từ nước ra không khí)"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Góc khúc xạ r phải lớn hơn góc tới i (r > i) thì mới có thể đạt tới 90° để triệt tiêu tia khúc xạ."
+      },
+      {
+        "level": 2,
+        "text": "Muốn r > i thì ánh sáng phải đi từ môi trường chiết quang hơn sang môi trường kém chiết quang hơn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định điều kiện môi trường",
+        "body": "Tìm chiều truyền ánh sáng bắt buộc để có thể xảy ra phản xạ toàn phần."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Điều kiện SGK",
+        "body": "Điều kiện thứ nhất của phản xạ toàn phần: Ánh sáng phải truyền từ môi trường có chiết suất lớn hơn sang môi trường có chiết suất nhỏ hơn (môi trường chiết quang hơn sang kém chiết quang hơn)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Từ môi trường chiết quang hơn sang môi trường kém chiết quang hơn**."
+      }
+    ],
+    "finalSolution": "Ánh sáng phải truyền từ **môi trường chiết quang hơn sang môi trường kém chiết quang hơn**.",
+    "commonMistakes": [
+      {
+        "id": "invert-medium-condition",
+        "message": "Nếu truyền từ không khí vào nước thì r luôn nhỏ hơn i (r < i), góc r không bao giờ đạt tới 90° nên không thể phản xạ toàn phần."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b05-mcq-003",
+    "lessonId": "phy-g9-b05",
+    "sgkBaiSo": 6,
+    "skillIds": [
+      "tir-angle-condition"
+    ],
+    "difficulty": 1,
+    "prompt": "Về mặt độ lớn góc tới i, điều kiện cần và đủ để xảy ra phản xạ toàn phần là gì (với i_gh là góc giới hạn phản xạ toàn phần)?",
+    "knowledge": [
+      "phenomenon.total.internal.reflection"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Góc tới i phải lớn hơn hoặc bằng góc giới hạn phản xạ toàn phần (i >= i_gh)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Góc tới i phải bằng đúng 0°"
+        },
+        {
+          "id": "opt-c",
+          "label": "Góc tới i phải nhỏ hơn 30°"
+        },
+        {
+          "id": "opt-d",
+          "label": "Góc tới i phải nhỏ hơn góc giới hạn (i < i_gh)"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi góc tới tăng đến giá trị giới hạn i_gh, tia khúc xạ đi là là mặt phân cách."
+      },
+      {
+        "level": 2,
+        "text": "Khi i >= i_gh thì tia khúc xạ hoàn toàn biến mất và xảy ra phản xạ toàn phần."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Điều kiện về góc tới",
+        "body": "Tìm mối liên hệ giữa góc tới $i$ và góc giới hạn $i_{gh}$ để có phản xạ toàn phần."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 6: Điều kiện về góc tới để xảy ra hiện tượng phản xạ toàn phần là $i \\ge i_{gh}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **i >= i_gh**."
+      }
+    ],
+    "finalSolution": "Điều kiện góc tới để xảy ra phản xạ toàn phần là **$i \\ge i_{gh}$**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-less-or-greater",
+        "message": "Khi i < i_gh thì vẫn có tia khúc xạ đi vào môi trường thứ hai, chỉ khi i >= i_gh mới phản xạ toàn phần."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b05-mcq-004",
+    "lessonId": "phy-g9-b05",
+    "sgkBaiSo": 6,
+    "skillIds": [
+      "tir-air-to-water-impossibility"
+    ],
+    "difficulty": 2,
+    "prompt": "Chiếu một tia sáng từ không khí vào trong một chậu nước với góc tới tăng dần từ 0° đến 89°. Hiện tượng phản xạ toàn phần có thể xảy ra tại mặt phân cách không? Vì sao?",
+    "knowledge": [
+      "phenomenon.total.internal.reflection"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Không thể xảy ra, vì ánh sáng truyền từ môi trường kém chiết quang (không khí) sang chiết quang hơn (nước)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Luôn luôn xảy ra với mọi góc tới i"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chỉ xảy ra khi nước trong chậu là nước muối đậm đặc"
+        },
+        {
+          "id": "opt-d",
+          "label": "Có thể xảy ra khi góc tới i vượt quá 45°"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Kiểm tra điều kiện môi trường: Không khí có chiết suất nhỏ hơn nước."
+      },
+      {
+        "level": 2,
+        "text": "Phản xạ toàn phần chỉ xảy ra khi truyền từ nơi chiết suất lớn sang nơi chiết suất nhỏ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Kiểm tra điều kiện",
+        "body": "Chiều truyền từ không khí vào nước."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân tích quy luật",
+        "body": "Khi ánh sáng truyền từ không khí vào nước, góc khúc xạ luôn nhỏ hơn góc tới ($r < i$). Do đó góc khúc xạ $r$ không thể đạt tới $90^\\circ$, không bao giờ làm mất tia khúc xạ. Chiều truyền này không thỏa mãn điều kiện cần của phản xạ toàn phần."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Không thể xảy ra, vì truyền từ môi trường kém chiết quang sang môi trường chiết quang hơn**."
+      }
+    ],
+    "finalSolution": "**Không thể xảy ra phản xạ toàn phần** khi truyền từ không khí vào nước vì vi phạm điều kiện môi trường.",
+    "commonMistakes": [
+      {
+        "id": "assume-large-angle-causes-tir",
+        "message": "Dù góc tới lớn tới 89° nhưng truyền từ không khí vào nước thì vẫn luôn có tia khúc xạ đi vào nước với r < 49°."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b05-mcq-005",
+    "lessonId": "phy-g9-b05",
+    "sgkBaiSo": 6,
+    "skillIds": [
+      "tir-fiber-optics-application"
+    ],
+    "difficulty": 2,
+    "prompt": "Cáp quang viễn thông được ứng dụng rộng rãi trong mạng Internet tốc độ cao hoạt động dựa trên hiện tượng vật lý nào sau đây?",
+    "knowledge": [
+      "phenomenon.total.internal.reflection"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hiện tượng cảm ứng điện từ giữa các dây dẫn kim loại"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hiện tượng phát quang của các chất hóa học phủ trên sợi"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hiện tượng phản xạ toàn phần của ánh sáng bên trong lõi sợi quang"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hiện tượng tán sắc ánh sáng trắng thành bảy màu"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tia sáng truyền trong lõi thủy tinh liên tục đập vào thành sợi và bật ngược trở lại mà không thoát ra ngoài."
+      },
+      {
+        "level": 2,
+        "text": "Đó chính là ứng dụng tiêu biểu nhất của hiện tượng phản xạ toàn phần."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định công nghệ",
+        "body": "Tìm nguyên lý vật lý của đường truyền cáp quang Internet."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 6: Sợi cáp quang gồm lõi thủy tinh trong suốt, tia sáng mang tín hiệu truyền vào lõi với góc tới lớn hơn góc giới hạn, phản xạ toàn phần liên tục bên trong lõi và đi xa mà không suy hao."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Hiện tượng phản xạ toàn phần của ánh sáng bên trong lõi sợi quang**."
+      }
+    ],
+    "finalSolution": "Cáp quang viễn thông hoạt động dựa trên **hiện tượng phản xạ toàn phần** của ánh sáng.",
+    "commonMistakes": [
+      {
+        "id": "confuse-copper-and-fiber",
+        "message": "Cáp đồng dẫn tín hiệu điện bằng dòng electron, còn cáp quang dẫn tín hiệu bằng sóng ánh sáng phản xạ toàn phần."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b05-mcq-006",
+    "lessonId": "phy-g9-b05",
+    "sgkBaiSo": 6,
+    "skillIds": [
+      "tir-critical-angle-behavior"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi chiếu tia sáng từ nước ra không khí với góc tới bằng đúng góc tới giới hạn (i = i_gh), đường đi của tia sáng sẽ như thế nào?",
+    "knowledge": [
+      "phenomenon.total.internal.reflection"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tia khúc xạ biến mất và không có tia nào xuất hiện"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tia sáng bị gãy khúc ngược trở lại nguồn phát theo phương cũ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tia khúc xạ đi là là sát mặt phân cách giữa hai môi trường (góc khúc xạ r = 90°)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tia khúc xạ truyền thẳng vuông góc với mặt nước"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Góc giới hạn i_gh là góc tới ứng với góc khúc xạ đạt giá trị lớn nhất."
+      },
+      {
+        "level": 2,
+        "text": "Giá trị cực đại của góc khúc xạ là r = 90° (tia khúc xạ sát mặt phân cách)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Trạng thái tới hạn",
+        "body": "Khảo sát tia sáng khi góc tới $i = i_{gh}$."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 6: Khi góc tới đạt giá trị giới hạn $i = i_{gh}$, góc khúc xạ đạt giá trị cực đại $r = 90^\\circ$. Khi đó tia khúc xạ đi là là sát mặt phân cách giữa hai môi trường."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Tia khúc xạ đi là là sát mặt phân cách (r = 90°)**."
+      }
+    ],
+    "finalSolution": "Khi $i = i_{gh}$, tia khúc xạ **đi là là sát mặt phân cách** giữa hai môi trường với góc khúc xạ $r = 90^\\circ$.",
+    "commonMistakes": [
+      {
+        "id": "think-disappears-at-limit",
+        "message": "Tại đúng i = i_gh thì tia khúc xạ đi sát mặt nước (r = 90°); khi i > i_gh thì tia khúc xạ mới biến mất hoàn toàn."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b05-mcq-007",
+    "lessonId": "phy-g9-b05",
+    "sgkBaiSo": 6,
+    "skillIds": [
+      "tir-glass-air-critical-calc"
+    ],
+    "difficulty": 3,
+    "prompt": "Biết góc giới hạn phản xạ toàn phần của cặp môi trường thủy tinh - không khí là i_gh = 42°. Chiếu một tia sáng từ trong khối thủy tinh ra ngoài không khí với góc tới i = 45°. Hiện tượng gì sẽ xảy ra?",
+    "knowledge": [
+      "phenomenon.total.internal.reflection"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Xảy ra hiện tượng phản xạ toàn phần, toàn bộ tia sáng bị phản xạ ngược trở lại trong khối thủy tinh"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tia sáng bị hấp thụ hoàn toàn và chuyển thành nhiệt năng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tia sáng truyền thẳng ra ngoài không khí mà không đổi hướng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tia sáng bị khúc xạ ra ngoài không khí với góc khúc xạ r = 40°"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "So sánh góc tới i = 45° với góc giới hạn i_gh = 42°."
+      },
+      {
+        "level": 2,
+        "text": "Vì i = 45° > i_gh = 42° và truyền từ thủy tinh ra không khí nên thỏa mãn đủ hai điều kiện phản xạ toàn phần."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Môi trường: từ thủy tinh ra không khí (chiết quang sang kém chiết quang). $i_{gh} = 42^\\circ$; góc tới $i = 45^\\circ$."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu điều kiện phản xạ toàn phần",
+        "body": "1. Chiều truyền: từ thủy tinh sang không khí $\\rightarrow$ thỏa mãn điều kiện môi trường. 2. Góc tới: $i = 45^\\circ > i_{gh} = 42^\\circ \\rightarrow$ thỏa mãn điều kiện góc tới."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Xảy ra hiện tượng phản xạ toàn phần**."
+      }
+    ],
+    "finalSolution": "Do truyền từ thủy tinh ra không khí và có $i = 45^\\circ > i_{gh} = 42^\\circ$ nên **xảy ra phản xạ toàn phần**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-angle-comparison",
+        "message": "Khi góc tới i lớn hơn i_gh thì không còn tia khúc xạ nữa mà toàn bộ tia sáng bị phản xạ toàn phần."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b05-mcq-008",
+    "lessonId": "phy-g9-b05",
+    "sgkBaiSo": 6,
+    "skillIds": [
+      "tir-endoscope-application"
+    ],
+    "difficulty": 3,
+    "prompt": "Trong y học hiện đại, các bác sĩ dùng thiết bị nội soi mềm để quan sát niêm mạc dạ dày hoặc đại tràng của bệnh nhân. Bộ phận chính của ống nội soi giúp dẫn truyền ánh sáng và hình ảnh hoạt động theo nguyên lý quang học nào?",
+    "knowledge": [
+      "phenomenon.total.internal.reflection"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Bó sợi quang dẫn ánh sáng nhờ hiện tượng phản xạ toàn phần liên tục dọc theo sợi"
+        },
+        {
+          "id": "opt-b",
+          "label": "Sóng siêu âm phản xạ từ bề mặt mô nội tạng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Gương phẳng phản xạ thông thường truyền dọc qua ống kim loại thẳng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hệ thống thấu kính khúc xạ liên tiếp gắn trên dây kim loại cứng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ống nội soi mềm có thể uốn lượn cong theo đường tiêu hóa của cơ thể."
+      },
+      {
+        "level": 2,
+        "text": "Dù sợi quang bị uốn cong, ánh sáng vẫn truyền qua được nhờ phản xạ toàn phần liên tục bên trong sợi."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích thiết bị y tế",
+        "body": "Ống nội soi mềm ứng dụng sợi quang học."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Nguyên lý hoạt động",
+        "body": "Ống nội soi gồm các bó sợi quang mềm trong suốt. Ánh sáng từ bên ngoài được chiếu vào sợi quang, phản xạ toàn phần liên tục dọc theo sợi để soi sáng bên trong nội tạng, đồng thời một bó sợi khác truyền hình ảnh ngược ra màn hình hiển thị."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Bó sợi quang dẫn ánh sáng nhờ hiện tượng phản xạ toàn phần liên tục dọc theo sợi**."
+      }
+    ],
+    "finalSolution": "Ống nội soi y tế hoạt động nhờ **bó sợi quang dẫn truyền ánh sáng bằng hiện tượng phản xạ toàn phần**.",
+    "commonMistakes": [
+      {
+        "id": "think-rigid-mirrors",
+        "message": "Gương phẳng không thể uốn cong theo đường tiêu hóa; chỉ có bó sợi quang mềm phản xạ toàn phần mới làm được điều này."
+      }
+    ]
+  }
+]

@@ -79,7 +79,7 @@ export const useUserStore = create<UserState>((set, get) => ({
   xp: 0,
   gems: 0,
   streak: 0,
-  hearts: GAMIFICATION.hearts.max,
+  hearts: 99,
   streakFreeze: 0,
   xpBoostUntil: 0,
   soundEnabled: true,
@@ -93,7 +93,7 @@ export const useUserStore = create<UserState>((set, get) => ({
   consecutiveCorrect: 0,
 
   startSession: (lessonId, nodeId, exercises, initialHearts, isPractice = false) => {
-    const hearts = initialHearts ?? get().hearts;
+    const hearts = initialHearts ?? 99;
     const session = createInitialSession(exercises, hearts, isPractice);
     set({
       sessionState: session,
@@ -279,22 +279,13 @@ export const useUserStore = create<UserState>((set, get) => ({
   },
 
   decrementHearts: () =>
-    set((state) => {
-      const next = Math.max(0, state.hearts - 1);
-      loadUserProgress().then((p) => {
-        p.hearts = next;
-        saveUserProgress(p).catch(console.error);
-      });
-      return { hearts: next };
+    set(() => {
+      // Testing mode: unlimited hearts
+      return { hearts: 99 };
     }),
-  addHearts: (amount = 1) =>
-    set((state) => {
-      const next = Math.min(GAMIFICATION.hearts.max, state.hearts + amount);
-      loadUserProgress().then((p) => {
-        p.hearts = next;
-        saveUserProgress(p).catch(console.error);
-      });
-      return { hearts: next };
+  addHearts: () =>
+    set(() => {
+      return { hearts: 99 };
     }),
   incrementStreak: () => {
     const today = new Date().toISOString().slice(0, 10);
@@ -342,7 +333,7 @@ export const useUserStore = create<UserState>((set, get) => ({
       set({
         xp: progress.xp,
         gems: progress.gems ?? 0,
-        hearts: progress.hearts,
+        hearts: 99,
         streak: progress.streak,
         streakFreeze: progress.streakFreeze ?? 0,
         xpBoostUntil: progress.xpBoostUntil ?? 0,

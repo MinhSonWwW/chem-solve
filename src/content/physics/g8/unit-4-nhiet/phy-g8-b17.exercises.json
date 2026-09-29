@@ -1,0 +1,554 @@
+[
+  {
+    "id": "phy-g8-b17-mcq-001",
+    "lessonId": "phy-g8-b17",
+    "sgkBaiSo": 29,
+    "skillIds": [
+      "thermal-expansion-comparison"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi tăng nhiệt độ lên cùng một mức như nhau, nhận định nào sau đây về độ nở vì nhiệt của các trạng thái vật chất là CHÍNH XÁC?",
+    "knowledge": [
+      "thermal.expansion"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chất lỏng nở vì nhiệt nhiều nhất trong cả ba trạng thái"
+        },
+        {
+          "id": "opt-b",
+          "label": "Chất khí nở vì nhiệt nhiều hơn chất lỏng, chất lỏng nở vì nhiệt nhiều hơn chất rắn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chất rắn nở vì nhiệt nhiều hơn chất lỏng, chất lỏng nở vì nhiệt nhiều hơn chất khí"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chất rắn và chất khí nở vì nhiệt bằng nhau và nhiều hơn chất lỏng"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khoảng cách giữa các phân tử khí rất xa nhau và liên kết rất lỏng lẻo."
+      },
+      {
+        "level": 2,
+        "text": "Khi nóng lên, chất khí nở mạnh nhất, sau đó đến chất lỏng, chất rắn nở ít nhất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "So sánh độ nở vì nhiệt",
+        "body": "Xác định thứ tự độ nở vì nhiệt giữa ba trạng thái: rắn, lỏng, khí."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 29), chất khí nở vì nhiệt nhiều hơn chất lỏng, chất lỏng nở vì nhiệt nhiều hơn chất rắn: Khí > Lỏng > Rắn."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Chất khí nở vì nhiệt nhiều hơn chất lỏng, chất lỏng nở vì nhiệt nhiều hơn chất rắn**."
+      }
+    ],
+    "finalSolution": "Thứ tự độ nở vì nhiệt: **Chất khí > Chất lỏng > Chất rắn**.",
+    "commonMistakes": [
+      {
+        "id": "reverse-expansion-order",
+        "message": "Nhiều bạn nghĩ chất rắn cứng cáp sẽ nở nhiều, thực tế lực liên kết giữa các phân tử rắn rất chặt nên nở ít nhất."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b17-mcq-002",
+    "lessonId": "phy-g8-b17",
+    "sgkBaiSo": 29,
+    "skillIds": [
+      "expansion-of-different-substances"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi so sánh độ nở vì nhiệt của các chất cụ thể khác nhau, phát biểu nào sau đây là ĐÚNG?",
+    "knowledge": [
+      "thermal.expansion"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Mọi chất lỏng khác nhau đều nở vì nhiệt giống hệt nhau"
+        },
+        {
+          "id": "opt-b",
+          "label": "Các chất khí khác nhau nở vì nhiệt giống nhau; các chất rắn và lỏng khác nhau nở vì nhiệt khác nhau"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mọi chất rắn khác nhau đều nở vì nhiệt giống hệt nhau"
+        },
+        {
+          "id": "opt-d",
+          "label": "Các chất khí khác nhau nở vì nhiệt hoàn toàn khác nhau"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tất cả các chất khí (không khí, oxy, hydro...) đều tuân theo cùng một định luật dãn nở khí lý tưởng."
+      },
+      {
+        "level": 2,
+        "text": "Chất khí khác nhau nở vì nhiệt giống nhau; còn kim loại (nhôm, đồng, sắt) hay chất lỏng (rượu, dầu, nước) nở khác nhau."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đặc tính nở nhiệt từng nhóm chất",
+        "body": "Phân biệt quy luật dãn nở của nhóm chất khí so với nhóm rắn và lỏng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 29): Các chất khí khác nhau nở vì nhiệt giống nhau. Các chất rắn khác nhau và các chất lỏng khác nhau thì nở vì nhiệt khác nhau."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Các chất khí khác nhau nở vì nhiệt giống nhau; các chất rắn và lỏng khác nhau nở vì nhiệt khác nhau**."
+      }
+    ],
+    "finalSolution": "Quy luật: **Các chất khí khác nhau nở giống nhau; các chất rắn và lỏng khác nhau nở khác nhau**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-gas-expansion-rule",
+        "message": "Không được nhầm: các chất khí khác nhau nở vì nhiệt giống nhau, đây là đặc tính riêng biệt của thể khí."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b17-mcq-003",
+    "lessonId": "phy-g8-b17",
+    "sgkBaiSo": 29,
+    "skillIds": [
+      "railway-gap-purpose"
+    ],
+    "difficulty": 2,
+    "prompt": "Tại sao ở chỗ nối giữa hai đầu thanh ray đường sắt luôn được kĩ sư chừa lại một khe hở nhỏ khoảng vài milimét?",
+    "knowledge": [
+      "thermal.expansion"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Để tạo ra tiếng kêu lách cách vui tai báo hiệu khi tàu hỏa chạy qua"
+        },
+        {
+          "id": "opt-b",
+          "label": "Để khi nhiệt độ thời tiết mùa hè tăng cao, thanh ray thép nở dài ra không bị chèn ép uốn cong gây trật bánh tàu"
+        },
+        {
+          "id": "opt-c",
+          "label": "Để tiết kiệm nguyên vật liệu thép khi đúc thanh ray"
+        },
+        {
+          "id": "opt-d",
+          "label": "Để nước mưa dễ dàng thoát xuống nền sỏi đá"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thanh ray bằng thép dài hàng chục mét sẽ nở dài ra khi trời nắng nóng."
+      },
+      {
+        "level": 2,
+        "text": "Nếu không có khe hở, hai thanh ray nở ra ép chặt vào nhau sinh lực khổng lồ làm cong vênh đường sắt."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Ý nghĩa khe hở ray tàu",
+        "body": "Giải thích tác dụng phòng tránh lực cản trở nở nhiệt."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Lực nở vì nhiệt SGK",
+        "body": "Khi nhiệt độ tăng, thanh ray thép nở dài ra. Nếu không chừa khe hở, sự dãn nở bị ngăn cản sẽ sinh lực cực lớn làm thanh ray bị uốn cong, gây tai nạn lật tàu nguy hiểm."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Để khi nhiệt độ thời tiết mùa hè tăng cao, thanh ray thép nở dài ra không bị chèn ép uốn cong gây trật bánh tàu**."
+      }
+    ],
+    "finalSolution": "Khe hở giúp **thanh ray tự do nở dài khi trời nắng nóng mà không bị cong vênh**.",
+    "commonMistakes": [
+      {
+        "id": "misinterpret-train-sound",
+        "message": "Tiếng kêu lách cách là hệ quả cơ học khi bánh xe lăn qua khe hở, hoàn toàn không phải mục đích thiết kế."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b17-mcq-004",
+    "lessonId": "phy-g8-b17",
+    "sgkBaiSo": 29,
+    "skillIds": [
+      "bridge-roller-support"
+    ],
+    "difficulty": 2,
+    "prompt": "Tại các cây cầu thép có chiều dài lớn, người ta thường cố định chắc chắn một đầu cầu, còn đầu cầu kia được đặt tựa lên các con lăn (gối lăn). Thiết kế này nhằm mục đích gì?",
+    "knowledge": [
+      "thermal.expansion"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Giúp nhịp cầu thép tự do co dãn chiều dài khi nhiệt độ thời tiết thay đổi mà không làm gãy mố cầu"
+        },
+        {
+          "id": "opt-b",
+          "label": "Giúp cây cầu có thể tự di chuyển vị trí khi có bão lũ lớn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Để giảm bớt tải trọng của xe cộ tác dụng lên mặt đất"
+        },
+        {
+          "id": "opt-d",
+          "label": "Làm cho xe cộ chạy qua cầu êm ái hơn"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cầu thép dài hàng trăm mét co lại vào mùa đông và nở dài ra vào mùa hè."
+      },
+      {
+        "level": 2,
+        "text": "Gối lăn cho phép nhịp cầu trượt nhẹ nhàng khi co dãn nhiệt, tránh sinh lực phá hủy trụ mố cầu."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Vai trò gối lăn mố cầu",
+        "body": "Xem xét ứng dụng giải phóng lực cản nở nhiệt trong công trình cầu đường."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Ứng dụng SGK",
+        "body": "Theo SGK KHTN 8 (Bài 29), khi nhiệt độ thời tiết thay đổi, chiều dài của nhịp cầu thép tăng hoặc giảm. Gối lăn cho phép đầu cầu dịch chuyển tự do, tránh gây ứng suất kéo/nén quá lớn làm nứt phá mố cầu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Giúp nhịp cầu thép tự do co dãn chiều dài khi nhiệt độ thời tiết thay đổi mà không làm gãy mố cầu**."
+      }
+    ],
+    "finalSolution": "Gối lăn giúp **nhịp cầu tự do co dãn theo nhiệt độ mà không làm hỏng mố cầu**.",
+    "commonMistakes": [
+      {
+        "id": "assume-movable-bridge",
+        "message": "Gối lăn chỉ dịch chuyển vài xentimét theo sự co dãn nhiệt, không phải cầu chuyển động như phà."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b17-mcq-005",
+    "lessonId": "phy-g8-b17",
+    "sgkBaiSo": 29,
+    "skillIds": [
+      "bimetallic-strip-bending"
+    ],
+    "difficulty": 2,
+    "prompt": "Một băng kép gồm hai thanh kim loại đồng và thép được tán chặt sát vào nhau dọc theo chiều dài. Biết rằng đồng nở vì nhiệt nhiều hơn thép. Khi bị hơ nóng, băng kép sẽ bị uốn cong về phía nào?",
+    "knowledge": [
+      "thermal.expansion"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tự động tách rời hai thanh ra khỏi nhau"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bị uốn cong về phía thanh đồng (thanh nở nhiều hơn)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Bị uốn cong về phía thanh thép (thanh nở ít hơn)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vẫn giữ thẳng tuyệt đối không cong"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thanh nào dài ra nhiều hơn sẽ nằm ở vòng ngoài của cung tròn uốn cong."
+      },
+      {
+        "level": 2,
+        "text": "Đồng nở dài hơn nên nằm ở vòng cung ngoài, đẩy băng kép cong về phía thanh thép ở vòng cung trong."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định hướng cong",
+        "body": "So sánh độ nở dài của hai lá kim loại khi nung nóng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Nguyên lý băng kép SGK",
+        "body": "Khi nung nóng, thanh đồng nở dài nhiều hơn thanh thép. Do bị gắn chặt vào nhau, thanh đồng dài hơn phải uốn vòng ra phía ngoài, khiến cả băng kép bị cong về phía thanh thép (thanh nở vì nhiệt ít hơn)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Bị uốn cong về phía thanh thép (thanh nở ít hơn)**."
+      }
+    ],
+    "finalSolution": "Khi nung nóng, băng kép **uốn cong về phía thanh thép (kim loại nở ít hơn)**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-bending-direction",
+        "message": "Kim loại nở nhiều hơn sẽ nằm ở phía ngoài (cung lớn hơn), nên băng kép uốn cong về phía kim loại nở ít hơn."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b17-mcq-006",
+    "lessonId": "phy-g8-b17",
+    "sgkBaiSo": 29,
+    "skillIds": [
+      "bimetallic-strip-application"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong các thiết bị gia dụng như bàn là điện, nồi cơm điện hay ấm đun nước siêu tốc, băng kép được sử dụng phổ biến với chức năng gì?",
+    "knowledge": [
+      "thermal.expansion"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Làm dây nung đốt nóng phát ra nhiệt lượng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Làm chuông cảnh báo phát ra âm thanh khi nước sôi"
+        },
+        {
+          "id": "opt-c",
+          "label": "Làm rơ-le nhiệt tự động đóng và ngắt mạch điện khi đạt nhiệt độ cài đặt"
+        },
+        {
+          "id": "opt-d",
+          "label": "Làm vỏ bọc cách điện chống giật"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi bàn là đạt nhiệt độ đủ nóng, đèn báo tắt và bàn là ngắt điện tự động."
+      },
+      {
+        "level": 2,
+        "text": "Băng kép cong lên làm hở tiếp điểm ngắt mạch điện (rơ-le nhiệt tự động)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Ứng dụng băng kép",
+        "body": "Tìm vai trò của băng kép trong thiết bị nhiệt gia dụng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 29), nhờ đặc tính tự động uốn cong khi nhiệt độ thay đổi, băng kép được dùng làm rơ-le nhiệt để tự động đóng ngắt mạch điện khi thiết bị đạt nhiệt độ yêu cầu, đảm bảo an toàn và tiết kiệm điện."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Làm rơ-le nhiệt tự động đóng và ngắt mạch điện khi đạt nhiệt độ cài đặt**."
+      }
+    ],
+    "finalSolution": "Băng kép làm **rơ-le nhiệt tự động đóng ngắt mạch điện** theo nhiệt độ.",
+    "commonMistakes": [
+      {
+        "id": "confuse-with-heating-element",
+        "message": "Dây nung bằng hợp kim nichrome có điện trở lớn phát nhiệt, còn băng kép chỉ đóng vai trò công tắc tự động ngắt điện."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b17-mcq-007",
+    "lessonId": "phy-g8-b17",
+    "sgkBaiSo": 29,
+    "skillIds": [
+      "liquid-vs-solid-expansion"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi đun một ấm nước đầy tràn tới tận miệng, khi nước bắt đầu nóng lên hiện tượng gì sẽ xảy ra?",
+    "knowledge": [
+      "thermal.expansion"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Ấm nước tự động co thắt lại ngay lập tức"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nước bị tràn ra ngoài miệng ấm vì nước nở vì nhiệt nhiều hơn vỏ kim loại của ấm"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mực nước rút xuống thấp vì vỏ kim loại của ấm nở nhiều hơn nước"
+        },
+        {
+          "id": "opt-d",
+          "label": "Mực nước không thay đổi vì ấm và nước nở vì nhiệt như nhau"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Chất lỏng (nước) nở vì nhiệt nhiều hơn hay ít hơn chất rắn (vỏ kim loại)?"
+      },
+      {
+        "level": 2,
+        "text": "Chất lỏng nở nhiều hơn chất rắn, thể tích nước tăng nhanh hơn thể tích ấm nên nước sẽ trào tràn ra ngoài."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "So sánh độ tăng thể tích",
+        "body": "So sánh độ nở nhiệt của chất lỏng và chất rắn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy luật nở nhiệt SGK",
+        "body": "Chất lỏng nở vì nhiệt nhiều hơn chất rắn. Khi đun nóng, cả ấm và nước đều nở ra nhưng thể tích nước tăng nhiều hơn thể tích ấm, dẫn đến nước bị tràn ra ngoài miệng ấm."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Nước bị tràn ra ngoài miệng ấm vì nước nở vì nhiệt nhiều hơn vỏ kim loại của ấm**."
+      }
+    ],
+    "finalSolution": "Nước bị tràn ra ngoài vì **chất lỏng nở vì nhiệt nhiều hơn chất rắn vỏ ấm**.",
+    "commonMistakes": [
+      {
+        "id": "think-only-liquid-expands",
+        "message": "Vỏ kim loại ấm cũng nở ra, nhưng thể tích nở của vỏ kim loại nhỏ hơn rất nhiều so với độ nở thể tích của nước."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b17-mcq-008",
+    "lessonId": "phy-g8-b17",
+    "sgkBaiSo": 29,
+    "skillIds": [
+      "anomalous-expansion-water"
+    ],
+    "difficulty": 3,
+    "prompt": "Nước có một hiện tượng nở vì nhiệt rất đặc biệt và kì lạ (hiện tượng nở dị thường). Ở nhiệt độ nào sau đây, nước có khối lượng riêng lớn nhất (thể tích nhỏ nhất)?",
+    "knowledge": [
+      "thermal.expansion"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Ở 4 °C"
+        },
+        {
+          "id": "opt-b",
+          "label": "Ở -4 °C"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ở 0 °C"
+        },
+        {
+          "id": "opt-d",
+          "label": "Ở 100 °C"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ 0 °C đến 4 °C, nước co lại khi nhiệt độ tăng."
+      },
+      {
+        "level": 2,
+        "text": "Tại mốc 4 °C, thể tích nước nhỏ nhất và khối lượng riêng đạt cực đại 1 000 kg/m³."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tính chất dị thường của nước",
+        "body": "Xác định mốc nhiệt độ nước có khối lượng riêng lớn nhất."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hiện tượng nở dị thường SGK",
+        "body": "Theo SGK KHTN 8 (Bài 29), từ 0 °C đến 4 °C khi nhiệt độ tăng thì nước lại co lại. Ở đúng 4 °C, nước có khối lượng riêng lớn nhất (D = 1 000 kg/m³). Từ trên 4 °C, nước mới nở ra bình thường."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Ở 4 °C**."
+      }
+    ],
+    "finalSolution": "Khối lượng riêng của nước đạt giá trị lớn nhất **ở 4 °C**.",
+    "commonMistakes": [
+      {
+        "id": "assume-0-degrees-highest-density",
+        "message": "Ở 0 °C nước đóng băng có D = 900 kg/m³ (nhẹ hơn nước lỏng nên băng đá nổi trên mặt nước)."
+      }
+    ]
+  }
+]

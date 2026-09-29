@@ -28,6 +28,7 @@ export const TheoryContentSchema = z.object({
   nodeId: z.string(),
   title: z.string(),
   subtitle: z.string(),
+  sgkBaiSo: z.number().int().positive().optional(),
   estimatedMinutes: z.number().default(2),
   cards: z.array(TheoryCardSchema).min(1),
   quickCheck: QuickCheckSchema.optional(),

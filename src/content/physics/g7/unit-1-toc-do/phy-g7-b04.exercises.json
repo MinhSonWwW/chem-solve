@@ -1,0 +1,520 @@
+[
+  {
+    "id": "phy-g7-b04-mcq-001",
+    "lessonId": "phy-g7-b04",
+    "sgkBaiSo": 11,
+    "skillIds": [
+      "traffic-sign-max-speed"
+    ],
+    "difficulty": 1,
+    "prompt": "Biển báo giao thông hình tròn, viền đỏ, nền trắng, ở giữa ghi số '60' màu đen (biển P.127) mang ý nghĩa gì?",
+    "knowledge": [
+      "speed.traffic_safety"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tốc độ tối đa cho phép các phương tiện lưu thông trên đoạn đường là 60 km/h"
+        },
+        {
+          "id": "opt-b",
+          "label": "Đoạn đường cấm các phương tiện có chiều dài trên 60 m"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khoảng cách an toàn tối thiểu giữa hai xe phải là 60 m"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tốc độ tối thiểu bắt buộc các phương tiện phải đạt là 60 km/h"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Biển tròn viền đỏ nền trắng thuộc nhóm biển báo cấm / hạn chế."
+      },
+      {
+        "level": 2,
+        "text": "Biển P.127 là biển hạn chế tốc độ tối đa cho phép các phương tiện cơ giới chạy trên đường."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận diện biển báo giao thông",
+        "body": "Biển báo hình tròn viền đỏ nền trắng có ghi số thuộc nhóm biển cấm/hạn chế."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 7 Bài 11, biển báo P.127 quy định tốc độ tối đa cho phép của các phương tiện lưu thông trên tuyến đường đó."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Ý nghĩa đúng là **Tốc độ tối đa cho phép các phương tiện lưu thông là 60 km/h**."
+      }
+    ],
+    "finalSolution": "Biển P.127 quy định **tốc độ tối đa cho phép là 60 km/h**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b04-mcq-002",
+    "lessonId": "phy-g7-b04",
+    "sgkBaiSo": 11,
+    "skillIds": [
+      "traffic-safe-distance-factor"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi lưu thông trên đường, khoảng cách an toàn tối thiểu giữa xe của bạn và xe chạy liền trước phụ thuộc chủ yếu vào yếu tố nào?",
+    "knowledge": [
+      "speed.traffic_safety"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tốc độ chuyển động của phương tiện"
+        },
+        {
+          "id": "opt-b",
+          "label": "Số người ngồi trên xe"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hãng sản xuất của chiếc xe"
+        },
+        {
+          "id": "opt-d",
+          "label": "Màu sắc của chiếc xe phía trước"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Xe chạy càng nhanh thì khi gặp sự cố đột ngột cần quãng đường phanh càng dài hay ngắn?"
+      },
+      {
+        "level": 2,
+        "text": "Tốc độ càng cao thì thời gian và quãng đường để dừng xe an toàn càng lớn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích yếu tố an toàn",
+        "body": "Xác định đại lượng quyết định khoảng cách an toàn giữa hai phương tiện."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Khoảng cách an toàn giữa hai xe phụ thuộc trực tiếp vào tốc độ lưu thông (tốc độ càng lớn thì khoảng cách an toàn phải càng lớn) và điều kiện mặt đường."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Yếu tố quyết định là **Tốc độ chuyển động của phương tiện**."
+      }
+    ],
+    "finalSolution": "Khoảng cách an toàn phụ thuộc trực tiếp vào **tốc độ của phương tiện**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b04-mcq-003",
+    "lessonId": "phy-g7-b04",
+    "sgkBaiSo": 11,
+    "skillIds": [
+      "traffic-distance-law"
+    ],
+    "difficulty": 1,
+    "prompt": "Theo quy định của Bộ GTVT ghi trong SGK KHTN 7, khi các phương tiện lưu thông với tốc độ v = 60 km/h trên điều kiện mặt đường khô ráo, khoảng cách an toàn tối thiểu giữa hai xe là bao nhiêu?",
+    "knowledge": [
+      "speed.traffic_safety"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "100 m"
+        },
+        {
+          "id": "opt-b",
+          "label": "35 m"
+        },
+        {
+          "id": "opt-c",
+          "label": "55 m"
+        },
+        {
+          "id": "opt-d",
+          "label": "70 m"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bảng quy định khoảng cách an toàn: v = 60 km/h (35 m); 60 < v <= 80 km/h (55 m); 80 < v <= 100 km/h (70 m)."
+      },
+      {
+        "level": 2,
+        "text": "Ở tốc độ 60 km/h, khoảng cách tối thiểu ghi trong bảng là 35 mét."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tra bảng quy định an toàn",
+        "body": "Bảng khoảng cách an toàn tối thiểu theo Thông tư Bộ GTVT (SGK trang 62)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy định SGK",
+        "body": "Khi xe chạy với tốc độ $v = 60\\text{ km/h}$, khoảng cách an toàn tối thiểu giữa hai xe trên đường khô ráo là 35 mét."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khoảng cách an toàn tối thiểu là **35 m**."
+      }
+    ],
+    "finalSolution": "Ở tốc độ 60 km/h, khoảng cách an toàn tối thiểu là **35 m**.",
+    "commonMistakes": [
+      {
+        "id": "confused-55m",
+        "message": "Khoảng cách 55 m áp dụng cho dải tốc độ từ 60 km/h đến 80 km/h; ở mốc 60 km/h là 35 m."
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b04-num-004",
+    "lessonId": "phy-g7-b04",
+    "sgkBaiSo": 11,
+    "skillIds": [
+      "traffic-3-seconds-rule"
+    ],
+    "difficulty": 2,
+    "prompt": "Một chiếc ô tô đang chạy trên đường cao tốc với tốc độ đều 72 km/h. Áp dụng quy tắc '3 giây' trong an toàn giao thông, khoảng cách an toàn tối thiểu mà tài xế cần giữ với xe phía trước là bao nhiêu mét?",
+    "knowledge": [
+      "speed.traffic_safety",
+      "speed.unit.conversion"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 60,
+      "unit": "m",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đầu tiên hãy đổi tốc độ từ km/h sang m/s: 72 / 3,6."
+      },
+      {
+        "level": 2,
+        "text": "72 km/h = 20 m/s. Áp dụng quy tắc 3 giây: khoảng cách an toàn s = v * 3 = 20 * 3."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Tốc độ $v = 72\\text{ km/h}$; Thời gian an toàn theo quy tắc $t = 3\\text{ s}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Đổi đơn vị tốc độ",
+        "body": "$v = \\frac{72}{3,6} = 20\\text{ m/s}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Áp dụng quy tắc 3 giây",
+        "body": "Khoảng cách an toàn tối thiểu là: $s = v \\times 3 = 20 \\times 3 = 60\\text{ m}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khoảng cách an toàn tối thiểu cần giữ là **60 m**."
+      }
+    ],
+    "finalSolution": "Đổi $72\\text{ km/h} = 20\\text{ m/s}$. Khoảng cách an toàn: $s = 20 \\times 3 = 60\\text{ m}$.",
+    "commonMistakes": [
+      {
+        "id": "forgot-speed-conversion",
+        "message": "Bạn đã quên đổi km/h ra m/s, lấy 72 nhân 3 ra 216 m. Chú ý: Thời gian tính bằng giây nên tốc độ phải đổi ra m/s.",
+        "trapAnswers": [
+          "216",
+          "216 m"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b04-num-005",
+    "lessonId": "phy-g7-b04",
+    "sgkBaiSo": 11,
+    "skillIds": [
+      "traffic-reaction-distance"
+    ],
+    "difficulty": 2,
+    "prompt": "Thời gian phản xạ của một tài xế (từ lúc phát hiện chướng ngại vật đến khi bắt đầu đạp phanh) trung bình là 0,8 s. Nếu xe ô tô đang chạy với tốc độ 54 km/h, trong thời gian phản xạ này xe đã đi thêm được quãng đường bao nhiêu mét?",
+    "knowledge": [
+      "speed.traffic_safety",
+      "speed.formula",
+      "speed.unit.conversion"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 12,
+      "unit": "m",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đổi tốc độ 54 km/h ra m/s: 54 / 3,6 = 15 m/s."
+      },
+      {
+        "level": 2,
+        "text": "Trong thời gian phản xạ t = 0,8 s xe vẫn chạy với vận tốc 15 m/s. Quãng đường s = v * t = 15 * 0,8."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Tốc độ xe $v = 54\\text{ km/h}$; Thời gian phản xạ $t = 0,8\\text{ s}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Đổi đơn vị tốc độ",
+        "body": "$v = \\frac{54}{3,6} = 15\\text{ m/s}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Tính quãng đường phản ứng",
+        "body": "Quãng đường xe chạy trong lúc tài xế phản xạ là: $s = v \\times t = 15 \\times 0,8 = 12\\text{ m}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Xe đã đi thêm quãng đường là **12 m** trước khi phanh có tác dụng."
+      }
+    ],
+    "finalSolution": "Đổi $54\\text{ km/h} = 15\\text{ m/s}$. Quãng đường: $s = 15 \\times 0,8 = 12\\text{ m}$.",
+    "commonMistakes": [
+      {
+        "id": "used-kmh-directly",
+        "message": "Bạn đã không đổi km/h ra m/s mà lấy 54 x 0,8 = 43,2 m. Chú ý t tính bằng giây nên v phải là m/s.",
+        "trapAnswers": [
+          "43.2",
+          "43,2",
+          "43.2 m",
+          "43,2 m"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b04-mcq-006",
+    "lessonId": "phy-g7-b04",
+    "sgkBaiSo": 11,
+    "skillIds": [
+      "traffic-bad-weather-driving"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi điều khiển phương tiện tham gia giao thông trong điều kiện thời tiết xấu (mưa gió, mặt đường trơn trượt, sương mù dày đặc), người lái xe bắt buộc phải tuân thủ nguyên tắc nào sau đây?",
+    "knowledge": [
+      "speed.traffic_safety"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chủ động giảm tốc độ và tăng khoảng cách an toàn với xe chạy liền trước"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tăng tốc độ để nhanh chóng thoát khỏi vùng thời tiết xấu"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tắt đèn chiếu sáng để tránh chói mắt các phương tiện khác"
+        },
+        {
+          "id": "opt-d",
+          "label": "Giữ nguyên tốc độ và bám sát đuôi xe phía trước để nhìn rõ đèn hậu"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi đường ướt, lực ma sát trượt giữa bánh xe và mặt đường giảm đi, khiến quãng đường phanh dài hơn."
+      },
+      {
+        "level": 2,
+        "text": "Để đảm bảo an toàn khi quãng đường phanh dài hơn và tầm nhìn hạn chế, tài xế phải giảm tốc độ và tăng khoảng cách an toàn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích điều kiện giao thông",
+        "body": "Mặt đường trơn trượt làm giảm lực ma sát, sương mù làm giảm tầm nhìn của tài xế."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 7 Bài 11, khi trời mưa hoặc đường trơn ướt, người lái xe phải chủ động giảm tốc độ chạy và tăng khoảng cách an toàn lớn hơn so với quy định khi trời khô ráo."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Quy tắc an toàn là **Chủ động giảm tốc độ và tăng khoảng cách an toàn với xe chạy liền trước**."
+      }
+    ],
+    "finalSolution": "Khi trời mưa, đường trơn phải **giảm tốc độ và tăng khoảng cách an toàn**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b04-tf-007",
+    "lessonId": "phy-g7-b04",
+    "sgkBaiSo": 11,
+    "skillIds": [
+      "traffic-safety-rules-tf"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai của các khẳng định sau về an toàn giao thông đường bộ:",
+    "knowledge": [
+      "speed.traffic_safety"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Khoảng cách dừng xe an toàn bao gồm quãng đường phản ứng của tài xế cộng với quãng đường phanh hãm của xe.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Xe ô tô chạy càng nhanh thì khi phanh gấp, quãng đường trượt phanh càng ngắn lại.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Người lái xe điều khiển phương tiện chạy quá tốc độ tối đa cho phép sẽ bị xử phạt vi phạm hành chính theo quy định của pháp luật.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi xe chạy nhanh, năng lượng chuyển động của xe rất lớn, cần quãng đường hãm phanh dài hơn."
+      },
+      {
+        "level": 2,
+        "text": "Mệnh đề 2 sai vì xe càng nhanh thì quãng đường phanh càng dài, nguy cơ va chạm càng cao."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 3 mệnh đề",
+        "body": "Đánh giá tính đúng/sai của 3 khẳng định về khoảng cách dừng xe và luật giao thông."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu kiến thức SGK",
+        "body": "- Mệnh đề 1: ĐÚNG. Khoảng cách dừng xe = Quãng đường phản ứng + Quãng đường phanh.\\n- Mệnh đề 2: SAI. Tốc độ càng lớn thì động năng càng lớn, quãng đường phanh càng dài ra chứ không thể ngắn lại.\\n- Mệnh đề 3: ĐÚNG. Chạy quá tốc độ quy định là hành vi vi phạm Luật Giao thông đường bộ và bị xử phạt nghiêm minh."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự đáp án là **Đúng - Sai - Đúng**."
+      }
+    ],
+    "finalSolution": "Mệnh đề 1: **Đúng**; Mệnh đề 2: **Sai**; Mệnh đề 3: **Đúng**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b04-mcq-008",
+    "lessonId": "phy-g7-b04",
+    "sgkBaiSo": 11,
+    "skillIds": [
+      "traffic-impact-severity"
+    ],
+    "difficulty": 3,
+    "prompt": "Từ góc độ vật lí học, vì sao khi tăng tốc độ chuyển động của xe lên gấp đôi thì nếu xảy ra va chạm, mức độ nguy hiểm và thiệt hại lại tăng lên gấp nhiều lần (thường gấp 4 lần)?",
+    "knowledge": [
+      "speed.traffic_safety"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vì người lái xe sẽ nhắm mắt lại khi chạy quá nhanh"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vì năng lượng chuyển động (động năng) của vật tỉ lệ với bình phương tốc độ (v^2)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì khối lượng của chiếc xe sẽ tăng lên gấp đôi khi chạy nhanh"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì trọng lực tác dụng lên xe biến mất khi xe chạy tốc độ cao"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi vật chuyển động, nó mang một dạng năng lượng gọi là động năng."
+      },
+      {
+        "level": 2,
+        "text": "Động năng được tính theo công thức Wđ = 1/2 * m * v^2, tức là tỉ lệ thuận với bình phương tốc độ v^2."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất vật lí của va chạm",
+        "body": "Giải thích mối liên hệ giữa tốc độ chuyển động và mức độ thiệt hại khi va chạm giao thông."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK & Mở rộng",
+        "body": "Năng lượng chuyển động (động năng) của xe tỉ lệ thuận với bình phương của tốc độ ($v^2$). Khi tốc độ tăng 2 lần, động năng tăng $2^2 = 4$ lần, dẫn đến lực va chạm và mức độ tàn phá tăng gấp 4 lần."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nguyên nhân vật lí là: **Năng lượng chuyển động (động năng) tỉ lệ với bình phương tốc độ (v^2)**."
+      }
+    ],
+    "finalSolution": "Động năng tỉ lệ với **bình phương tốc độ ($v^2$)**, nên khi tốc độ tăng gấp đôi thì mức độ tàn phá tăng gấp 4 lần.",
+    "commonMistakes": []
+  }
+]

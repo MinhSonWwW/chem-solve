@@ -1,0 +1,81 @@
+{
+  "lessonId": "phy-g8-b12",
+  "nodeId": "phy-g8-b12-theory",
+  "title": "Lý thuyết: Cường độ dòng điện và hiệu điện thế",
+  "subtitle": "Bài 24 SGK Khoa học tự nhiên 8 (Kết nối tri thức)",
+  "sgkBaiSo": 24,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Cường độ dòng điện I",
+      "badgeColor": "cyan",
+      "title": "1. Cường độ dòng điện và Ampe kế",
+      "content": "Cường độ dòng điện là đại lượng đặc trưng cho độ mạnh yếu của dòng điện:",
+      "bulletPoints": [
+        "Đặc trưng: Dòng điện càng mạnh thì cường độ dòng điện càng lớn. Khi cường độ dòng điện qua bóng đèn càng lớn thì đèn sáng càng mạnh.",
+        "Kí hiệu và đơn vị: Cường độ dòng điện được kí hiệu bằng chữ I. Đơn vị đo là ampe (kí hiệu là A). Ngoài ra còn dùng miliampe (kí hiệu là mA).",
+        "Quy đổi đơn vị: 1 A = 1 000 mA; 1 mA = 0,001 A = 10⁻³ A.",
+        "Dụng cụ đo: Ampe kế (hoặc miliampe kế). Kí hiệu trong sơ đồ là hình tròn có chữ A (hoặc mA).",
+        "Quy tắc mắc ampe kế: Mắc NỐI TIẾP với dụng cụ cần đo dòng điện. Chốt dương (+) của ampe kế phải được nối về phía cực dương của nguồn điện, chốt âm (-) nối về phía cực âm."
+      ],
+      "callout": "Cảnh báo an toàn: Tuyệt đối không mắc trực tiếp hai chốt của ampe kế vào hai cực của nguồn điện mà không có thiết bị tiêu thụ vì điện trở của ampe kế rất nhỏ, sẽ gây đoản mạch làm cháy ampe kế!"
+    },
+    {
+      "id": "c2",
+      "badge": "Hiệu điện thế U",
+      "badgeColor": "amber",
+      "title": "2. Hiệu điện thế và Vôn kế",
+      "content": "Nguồn điện tạo ra hiệu điện thế (còn gọi là điện áp) giữa hai cực của nó:",
+      "bulletPoints": [
+        "Bản chất: Khả năng sinh ra dòng điện của nguồn điện được đặc trưng bởi hiệu điện thế giữa hai cực của nó.",
+        "Kí hiệu và đơn vị: Hiệu điện thế được kí hiệu bằng chữ U. Đơn vị đo là vôn (kí hiệu là V). Các đơn vị phụ: milivôn (mV), kilôvôn (kV).",
+        "Quy đổi đơn vị: 1 kV = 1 000 V; 1 V = 1 000 mV = 10⁻³ kV.",
+        "Dụng cụ đo: Vôn kế (kí hiệu trong sơ đồ là hình tròn có chữ V).",
+        "Quy tắc mắc vôn kế: Mắc SONG SONG với hai đầu thiết bị hoặc đoạn mạch cần đo hiệu điện thế. Chốt dương (+) của vôn kế nối với điểm có điện thế cao hơn (về phía cực dương của nguồn)."
+      ],
+      "callout": "Đo hiệu điện thế của nguồn: Có thể nối trực tiếp hai chốt của vôn kế vào hai cực của nguồn điện (khi mạch hở) để đo hiệu điện thế định mức của nguồn mà không sợ hỏng vì điện trở của vôn kế rất lớn."
+    },
+    {
+      "id": "c3",
+      "badge": "Số vôn định mức & An toàn",
+      "badgeColor": "emerald",
+      "title": "3. Giá trị định mức và hiệu điện thế an toàn",
+      "content": "Các thông số điện trên các thiết bị tiêu thụ điện và an toàn:",
+      "bulletPoints": [
+        "Hiệu điện thế định mức: Trên mỗi bóng đèn hoặc đồ dùng điện thường có ghi số vôn (ví dụ 220V, 12V, 6V, 3V). Đó là hiệu điện thế định mức để dụng cụ hoạt động bình thường.",
+        "Nếu U đặt vào = U định mức: Thiết bị hoạt động bình thường, đèn sáng đúng công suất.",
+        "Nếu U đặt vào < U định mức: Thiết bị hoạt động yếu, đèn sáng mờ.",
+        "Nếu U đặt vào > U định mức: Thiết bị quá tải, dây tóc bóng đèn dễ bị cháy đứt, nguy cơ nổ linh kiện.",
+        "Hiệu điện thế an toàn: Hiệu điện thế an toàn cho con người dưới điều kiện bình thường là dưới 40V. Trong các thí nghiệm vật lý ở trường học, ta thường dùng nguồn pin 1,5V - 12V để đảm bảo an toàn tuyệt đối."
+      ],
+      "callout": "Ghi nhớ quy tắc: Ampe kế mắc NỐI TIẾP — Vôn kế mắc SONG SONG."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Để đo cường độ dòng điện chạy qua một bóng đèn và hiệu điện thế giữa hai đầu bóng đèn đó, ta cần mắc ampe kế và vôn kế như thế nào?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Ampe kế mắc nối tiếp với đèn, Vôn kế mắc song song với đèn",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Ampe kế mắc song song với đèn, Vôn kế mắc nối tiếp với đèn",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Cả ampe kế và vôn kế đều mắc nối tiếp với đèn",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Cả ampe kế và vôn kế đều mắc song song với đèn",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 8 Bài 24: Ampe kế phải mắc nối tiếp để dòng điện đi qua cuộn đo, còn Vôn kế phải mắc song song để đo độ chênh lệch điện thế giữa hai đầu thiết bị."
+  }
+}

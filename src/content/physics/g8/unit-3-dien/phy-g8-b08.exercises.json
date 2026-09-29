@@ -1,0 +1,557 @@
+[
+  {
+    "id": "phy-g8-b08-mcq-001",
+    "lessonId": "phy-g8-b08",
+    "sgkBaiSo": 20,
+    "skillIds": [
+      "electrification-property"
+    ],
+    "difficulty": 1,
+    "prompt": "Một vật sau khi bị cọ xát có thể bị nhiễm điện. Đặc điểm nổi bật nhất của một vật bị nhiễm điện là:",
+    "knowledge": [
+      "unit.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Có khả năng hút các vật nhỏ nhẹ khác hoặc làm sáng bóng đèn bút thử điện"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tự động đổi màu sắc sang màu đỏ rực"
+        },
+        {
+          "id": "opt-c",
+          "label": "Làm cho khối lượng của vật tăng lên gấp đôi"
+        },
+        {
+          "id": "opt-d",
+          "label": "Luôn luôn phát ra âm thanh nổ lớn liên tục"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sau khi cọ xát lược nhựa vào tóc khô, đưa lược lại gần mẩu giấy vụn thì thấy hiện tượng gì?"
+      },
+      {
+        "level": 2,
+        "text": "Vật nhiễm điện có khả năng hút các vật nhỏ nhẹ (mẩu giấy, sợi tóc, mẩu xốp...)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định đặc điểm",
+        "body": "Đề bài yêu cầu chỉ ra tính chất của vật mang điện tích (nhiễm điện)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 20), vật bị nhiễm điện có khả năng hút các vật nhỏ, nhẹ khác hoặc làm phát sáng bóng đèn của bút thử điện."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Có khả năng hút các vật nhỏ nhẹ khác hoặc làm sáng bóng đèn bút thử điện**."
+      }
+    ],
+    "finalSolution": "Vật bị nhiễm điện có khả năng **hút các vật nhỏ nhẹ khác hoặc làm sáng bóng đèn bút thử điện**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-with-magnetic-attraction",
+        "message": "Nam châm chỉ hút các vật liệu từ (sắt, thép...), còn vật nhiễm điện có thể hút hầu hết các vật nhỏ nhẹ (giấy vụn, tóc, xốp, nhựa...)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b08-mcq-002",
+    "lessonId": "phy-g8-b08",
+    "sgkBaiSo": 20,
+    "skillIds": [
+      "two-types-charges"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong tự nhiên chỉ tồn tại bao nhiêu loại điện tích và chúng mang tên gọi là gì?",
+    "knowledge": [
+      "unit.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chỉ duy nhất một loại là điện tích âm"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bốn loại: điện tích Bắc, Nam, Đông, Tây"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ba loại: điện tích dương, điện tích âm và điện tích trung hòa"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hai loại: điện tích dương (+) và điện tích âm (-)"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hạt nhân mang điện tích gì và electron mang điện tích gì?"
+      },
+      {
+        "level": 2,
+        "text": "Chỉ có hai loại điện tích là điện tích dương (+) và điện tích âm (-)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân loại điện tích",
+        "body": "Xác định số lượng và tên gọi của các loại điện tích trong tự nhiên."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 20), có hai loại điện tích: điện tích dương (kí hiệu là +) và điện tích âm (kí hiệu là -)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Hai loại: điện tích dương (+) và điện tích âm (-)**."
+      }
+    ],
+    "finalSolution": "Trong tự nhiên có **hai loại điện tích: điện tích dương (+) và điện tích âm (-)**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-neutral-with-charge",
+        "message": "Trung hòa về điện nghĩa là tổng điện tích bằng 0, không phải là một loại điện tích."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b08-mcq-003",
+    "lessonId": "phy-g8-b08",
+    "sgkBaiSo": 20,
+    "skillIds": [
+      "charge-interaction-rule"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi đưa hai vật mang điện tích KHÁC LOẠI (một vật mang điện tích dương + và một vật mang điện tích âm -) lại gần nhau, hiện tượng gì sẽ xảy ra?",
+    "knowledge": [
+      "unit.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chúng đẩy nhau ra xa"
+        },
+        {
+          "id": "opt-b",
+          "label": "Chúng không có bất kì tương tác nào"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hai vật phát nổ ngay lập tức"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chúng hút nhau"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Các điện tích cùng loại thì đẩy nhau."
+      },
+      {
+        "level": 2,
+        "text": "Các điện tích khác loại (trái dấu) thì hút nhau."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định quy tắc tương tác",
+        "body": "Tìm tương tác giữa hai điện tích khác loại (+ và -)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8, các điện tích cùng loại thì đẩy nhau, các điện tích khác loại thì hút nhau."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hai vật nhiễm điện khác loại **sẽ hút nhau**."
+      }
+    ],
+    "finalSolution": "Hai điện tích khác loại (trái dấu) **luôn hút nhau**.",
+    "commonMistakes": [
+      {
+        "id": "repel-unlike-charges",
+        "message": "Bạn nhớ nhầm: Cùng dấu thì đẩy nhau, trái dấu (khác loại) thì hút nhau."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b08-mcq-004",
+    "lessonId": "phy-g8-b08",
+    "sgkBaiSo": 20,
+    "skillIds": [
+      "electron-transfer-nature"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi cọ xát thanh thủy tinh vào một mảnh lụa, thanh thủy tinh bị nhiễm điện dương. Bản chất của hiện tượng này dưới góc độ cấu tạo nguyên tử là:",
+    "knowledge": [
+      "unit.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Các hạt nhân dương từ mảnh lụa đã dịch chuyển sang thanh thủy tinh"
+        },
+        {
+          "id": "opt-b",
+          "label": "Thanh thủy tinh tự sinh ra thêm các hạt nhân mới"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mảnh lụa đã truyền toàn bộ khối lượng sang thanh thủy tinh"
+        },
+        {
+          "id": "opt-d",
+          "label": "Các electron từ thanh thủy tinh đã dịch chuyển sang mảnh lụa"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trong nguyên tử, chỉ có các electron ở lớp vỏ mới có thể dễ dàng dịch chuyển từ vật này sang vật khác."
+      },
+      {
+        "level": 2,
+        "text": "Vật mất bớt electron sẽ bị thiếu điện tích âm, do đó nhiễm điện dương."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất vật lí",
+        "body": "Giải thích sự nhiễm điện dương của thanh thủy tinh dựa vào mô hình electron."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy luật dịch chuyển electron",
+        "body": "Khi cọ xát, một số electron ở lớp ngoài cùng của nguyên tử thủy tinh bị bứt ra và dịch chuyển sang mảnh lụa. Thanh thủy tinh mất bớt electron (thiếu electron) nên nhiễm điện dương."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hiện tượng là do **electron từ thanh thủy tinh dịch chuyển sang mảnh lụa**."
+      }
+    ],
+    "finalSolution": "Thanh thủy tinh nhiễm điện dương vì **các electron từ thanh thủy tinh đã dịch chuyển sang mảnh lụa** (thanh thủy tinh bị thiếu electron).",
+    "commonMistakes": [
+      {
+        "id": "proton-movement-trap",
+        "message": "Hạt nhân (chứa proton mang điện dương) liên kết rất bền chặt ở tâm nguyên tử, không thể dịch chuyển khi cọ xát thông thường."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b08-mcq-005",
+    "lessonId": "phy-g8-b08",
+    "sgkBaiSo": 20,
+    "skillIds": [
+      "fan-blade-dust-phenomenon"
+    ],
+    "difficulty": 2,
+    "prompt": "Cánh quạt điện trong gia đình sau một thời gian dài sử dụng thường bị bám một lớp bụi rất dày ở mép cánh quạt, mặc dù quạt quay rất nhanh tạo ra gió mạnh. Hiện tượng này được giải thích là do:",
+    "knowledge": [
+      "unit.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Bụi trong không khí bay vào làm mát động cơ quạt"
+        },
+        {
+          "id": "opt-b",
+          "label": "Gió mạnh làm hạt bụi tự dính keo vào cánh quạt"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cánh quạt bị rỉ sét hút các hạt bụi sắt"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cánh quạt khi quay cọ xát mạnh với không khí bị nhiễm điện, nên hút các hạt bụi lơ lửng bám chặt vào mép cánh"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cánh quạt cọ xát liên tục với không khí khi quay tròn."
+      },
+      {
+        "level": 2,
+        "text": "Sự cọ xát làm cánh quạt bị nhiễm điện, và vật nhiễm điện có khả năng hút các vật nhỏ nhẹ như hạt bụi."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hiện tượng thực tế",
+        "body": "Bụi bám nhiều ở mép cánh quạt dù quạt quay nhanh."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Nguyên nhân vật lí",
+        "body": "Khi cánh quạt quay, mép cánh quạt cọ xát nhiều nhất với không khí nên bị nhiễm điện do cọ xát. Vật nhiễm điện có khả năng hút các vật nhỏ nhẹ, do đó nó hút các hạt bụi trong không khí dính chặt vào mép cánh."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hiện tượng do **cánh quạt cọ xát với không khí bị nhiễm điện nên hút các hạt bụi**."
+      }
+    ],
+    "finalSolution": "Cánh quạt khi quay **cọ xát với không khí bị nhiễm điện**, nên có khả năng hút các hạt bụi lơ lửng bám chặt vào mép cánh.",
+    "commonMistakes": [
+      {
+        "id": "wind-pushes-dust-mistake",
+        "message": "Nếu chỉ do gió thổi thì bụi phải bị thổi bay đi, nhưng lực hút tĩnh điện giữ bụi dính chặt vào cánh quạt."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b08-mcq-006",
+    "lessonId": "phy-g8-b08",
+    "sgkBaiSo": 20,
+    "skillIds": [
+      "pith-ball-charge-detection"
+    ],
+    "difficulty": 2,
+    "prompt": "Treo hai quả cầu nhẹ A và B bằng hai sợi chỉ tơ mềm cách điện. Khi đưa một thanh nhựa nhiễm điện âm (-) lại gần quả cầu B, người ta quan sát thấy quả cầu B bị đẩy lệch ra xa thanh nhựa. Kết luận nào sau đây về trạng thái nhiễm điện của quả cầu B là đúng?",
+    "knowledge": [
+      "unit.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Quả cầu B là một thỏi nam châm"
+        },
+        {
+          "id": "opt-b",
+          "label": "Quả cầu B chắc chắn bị nhiễm điện dương (+)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Quả cầu B trung hòa không mang điện tích"
+        },
+        {
+          "id": "opt-d",
+          "label": "Quả cầu B chắc chắn bị nhiễm điện âm (-)"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thanh nhựa mang điện tích âm (-)."
+      },
+      {
+        "level": 2,
+        "text": "Quả cầu B bị ĐẨY ra xa. Chỉ có hai điện tích cùng loại mới đẩy nhau."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Dữ kiện thực nghiệm",
+        "body": "Thanh nhựa nhiễm điện âm (-) đẩy quả cầu B."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc tương tác",
+        "body": "Theo quy tắc tương tác điện: Chỉ các điện tích cùng loại mới đẩy nhau. Vì thanh nhựa mang điện âm (-) đẩy B nên B bắt buộc phải mang điện âm (-)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Quả cầu B **chắc chắn bị nhiễm điện âm (-)**."
+      }
+    ],
+    "finalSolution": "Vì thanh nhựa (-) đẩy quả cầu B, theo quy tắc hai điện tích cùng dấu đẩy nhau nên **quả cầu B chắc chắn mang điện tích âm (-)**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-attract-with-repel",
+        "message": "Nếu quả cầu B bị hút thì B có thể nhiễm điện dương (+) hoặc trung hòa về điện. Nhưng bị ĐẨY thì B chắc chắn cùng dấu (-)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b08-tf-007",
+    "lessonId": "phy-g8-b08",
+    "sgkBaiSo": 20,
+    "skillIds": [
+      "electrification-atomic-tf"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai của các khẳng định sau về sự nhiễm điện:",
+    "knowledge": [
+      "unit.current"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Một vật trung hòa về điện sau khi nhận thêm các electron từ vật khác thì sẽ bị nhiễm điện âm.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Trong nguyên tử, các hạt nhân mang điện âm quay xung quanh electron mang điện dương.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Vào mùa đông thời tiết khô hanh, khi cởi áo len dạ ta có thể nghe thấy tiếng nổ lách tách nhỏ do hiện tượng nhiễm điện do cọ xát.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Electron mang điện âm, nhận thêm electron thì thừa điện âm."
+      },
+      {
+        "level": 2,
+        "text": "Hạt nhân mang điện dương ở tâm, electron mang điện âm quay xung quanh."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 1",
+        "body": "Nhận thêm electron (thừa hạt âm) -> vật nhiễm điện âm -> Đúng."
+      },
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 2",
+        "body": "Hạt nhân mang điện dương ở tâm, electron mang điện âm ở vỏ -> Mệnh đề 2 đảo ngược là Sai."
+      },
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 3",
+        "body": "Cởi áo len cọ xát sinh ra điện tích phóng tia lửa điện vi mô gây tiếng lách tách -> Đúng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự: Đúng - Sai - Đúng."
+      }
+    ],
+    "finalSolution": "Mệnh đề 1: **Đúng**; Mệnh đề 2: **Sai**; Mệnh đề 3: **Đúng**.",
+    "commonMistakes": [
+      {
+        "id": "atomic-structure-invert",
+        "message": "Nhiều bạn nhầm lẫn dấu: Hạt nhân mang điện tích DƯƠNG, electron mang điện tích ÂM."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b08-mcq-008",
+    "lessonId": "phy-g8-b08",
+    "sgkBaiSo": 20,
+    "skillIds": [
+      "electrostatic-safety-grounding"
+    ],
+    "difficulty": 3,
+    "prompt": "Các xe bồn chuyên dụng chở xăng dầu khi chạy trên đường luôn có một sợi dây xích bằng kim loại nối từ thân bồn và thả lê kéo dài trên mặt đường. Sợi dây xích này có tác dụng an toàn quan trọng nào sau đây?",
+    "knowledge": [
+      "unit.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Làm phanh phụ giúp xe dừng lại nhanh hơn khi phanh gấp"
+        },
+        {
+          "id": "opt-b",
+          "label": "Truyền các điện tích sinh ra do xăng dầu cọ xát với thành bồn xuống đất, ngăn ngừa phóng tia lửa điện gây cháy nổ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Để giữ cho chiếc xe không bị lật khi đi vào khúc cua gấp"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tạo tiếng kêu cọ xát để cảnh báo các xe phía sau giữ khoảng cách"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Xăng dầu dao động cọ xát liên tục với thành kim loại của bồn chứa khi xe chạy."
+      },
+      {
+        "level": 2,
+        "text": "Sự cọ xát sinh ra tĩnh điện. Nếu tích tụ điện thế cao sẽ phóng tia lửa điện bén vào hơi xăng gây cháy nổ. Dây xích tiếp đất giải phóng điện tích."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tình huống kĩ thuật",
+        "body": "Nguy cơ cháy nổ do tĩnh điện trên xe chở nhiên liệu dễ cháy."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Nguyên lí tiếp đất",
+        "body": "Khi xe chạy, xăng dầu sánh cọ xát với thành thùng làm vỏ bồn nhiễm điện tích tụ lượng lớn điện tích. Dây xích sắt dẫn điện nối đất giúp truyền các điện tích này xuống lòng đất liên tục, triệt tiêu nguy cơ phóng tia lửa điện."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Dây xích có tác dụng **truyền điện tích xuống đất, ngăn ngừa tia lửa điện gây cháy nổ**."
+      }
+    ],
+    "finalSolution": "Dây xích kim loại giúp **dẫn truyền các điện tích tĩnh điện sinh ra do cọ xát xuống đất**, triệt tiêu nguy cơ phóng tia lửa điện gây cháy nổ xăng dầu.",
+    "commonMistakes": [
+      {
+        "id": "sound-warning-mistake",
+        "message": "Dây xích không phải để tạo tiếng kêu cảnh báo mà là biện pháp bảo hộ an toàn phòng chống cháy nổ tĩnh điện bắt buộc."
+      }
+    ]
+  }
+]

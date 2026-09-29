@@ -12,11 +12,13 @@ import {
   AlertTriangle,
   FlaskConical,
   Award,
+  Zap,
 } from 'lucide-react';
 import { loadTheory, type TheoryContent } from '@/content/contentLoader';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import { Formula, Mascot, Button } from '@/design-system';
 import { sound } from '@/lib/audio';
+import { setActiveSubject } from '@/content/subjects';
 
 // Helper to render text with [[Formula]] markers
 function renderFormulaText(text: string): React.ReactNode {
@@ -50,6 +52,11 @@ export const TheoryPage: React.FC = () => {
 
   useEffect(() => {
     let cancelled = false;
+    if (lessonId?.startsWith('phy-')) {
+      setActiveSubject('physics');
+    } else {
+      setActiveSubject('chem');
+    }
     async function fetchTheory() {
       if (!lessonId) return;
       try {
@@ -139,7 +146,8 @@ export const TheoryPage: React.FC = () => {
     }
   };
 
-  const gradeNumber = lessonId?.match(/^g(\d)/)?.[1] ?? '9';
+  const gradeNumber = lessonId?.match(/(?:phy-)?g(\d)/)?.[1] ?? '6';
+  const isPhysics = lessonId?.startsWith('phy-') ?? false;
 
   return (
     <div className="max-w-xl mx-auto min-h-[88dvh] flex flex-col justify-between py-2 sm:py-4 px-3 sm:px-4 select-none">
@@ -168,7 +176,11 @@ export const TheoryPage: React.FC = () => {
                   className="h-2 flex-1 rounded-full bg-[#20333d] overflow-hidden relative"
                 >
                   <motion.div
-                    className="h-full bg-gradient-to-r from-purple-500 to-fuchsia-400 rounded-full"
+                    className={`h-full rounded-full ${
+                      isPhysics
+                        ? 'bg-gradient-to-r from-amber-500 to-yellow-400'
+                        : 'bg-gradient-to-r from-purple-500 to-fuchsia-400'
+                    }`}
                     initial={false}
                     animate={{
                       width: isPassed ? '100%' : isCurrent ? '100%' : '0%',
@@ -180,8 +192,14 @@ export const TheoryPage: React.FC = () => {
             })}
           </div>
 
-          <div className="flex items-center gap-1 bg-purple-500/15 border border-purple-500/30 px-2.5 py-1 rounded-xl text-[11px] font-black text-purple-300">
-            <Sparkles className="w-3.5 h-3.5 text-purple-400" />
+          <div
+            className={`flex items-center gap-1 px-2.5 py-1 rounded-xl text-[11px] font-black border ${
+              isPhysics
+                ? 'bg-amber-500/15 border-amber-500/30 text-amber-300'
+                : 'bg-purple-500/15 border-purple-500/30 text-purple-300'
+            }`}
+          >
+            <Sparkles className={`w-3.5 h-3.5 ${isPhysics ? 'text-amber-400' : 'text-purple-400'}`} />
             <span>+10 XP</span>
           </div>
         </div>
@@ -230,7 +248,11 @@ export const TheoryPage: React.FC = () => {
                   variant="primary"
                   size="lg"
                   fullWidth
-                  className="bg-gradient-to-r from-purple-600 to-fuchsia-500 hover:from-purple-500 hover:to-fuchsia-400 text-white font-black shadow-[0_4px_0_0_#6b21a8]"
+                  className={
+                    isPhysics
+                      ? 'bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-400 hover:to-yellow-300 text-slate-950 font-black shadow-[0_4px_0_0_#ca8a04]'
+                      : 'bg-gradient-to-r from-purple-600 to-fuchsia-500 hover:from-purple-500 hover:to-fuchsia-400 text-white font-black shadow-[0_4px_0_0_#6b21a8]'
+                  }
                   onClick={() => {
                     sound.playClick();
                     navigate(`/learn/${gradeNumber}`);
@@ -250,9 +272,21 @@ export const TheoryPage: React.FC = () => {
               transition={{ duration: 0.25 }}
               className="space-y-4"
             >
-              <div className="bg-[#18272f] border-2 border-purple-500/50 p-5 rounded-3xl shadow-[0_6px_0_0_#6b21a8] space-y-4">
+              <div
+                className={`bg-[#18272f] border-2 p-5 rounded-3xl space-y-4 ${
+                  isPhysics
+                    ? 'border-amber-500/50 shadow-[0_6px_0_0_#ca8a04]'
+                    : 'border-purple-500/50 shadow-[0_6px_0_0_#6b21a8]'
+                }`}
+              >
                 <div className="flex items-center gap-2">
-                  <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-black bg-purple-500/20 text-purple-300 border border-purple-500/40">
+                  <span
+                    className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-black border ${
+                      isPhysics
+                        ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
+                        : 'bg-purple-500/20 text-purple-300 border-purple-500/40'
+                    }`}
+                  >
                     <Sparkles className="w-3.5 h-3.5" /> Kiểm tra nhanh
                   </span>
                   <span className="text-xs text-slate-400 font-medium">Không trừ tim</span>
@@ -265,8 +299,9 @@ export const TheoryPage: React.FC = () => {
                 <div className="space-y-2.5 pt-1">
                   {theory.quickCheck.options.map((opt) => {
                     const isSelected = selectedOption === opt.id;
-                    let optionStyle =
-                      'bg-[#20333d] border-[#2e4756] text-slate-200 hover:border-purple-400 shadow-[0_3px_0_0_#131f24]';
+                    let optionStyle = isPhysics
+                      ? 'bg-[#20333d] border-[#2e4756] text-slate-200 hover:border-amber-400 shadow-[0_3px_0_0_#131f24]'
+                      : 'bg-[#20333d] border-[#2e4756] text-slate-200 hover:border-purple-400 shadow-[0_3px_0_0_#131f24]';
 
                     if (isChecked) {
                       if (opt.correct) {
@@ -279,8 +314,9 @@ export const TheoryPage: React.FC = () => {
                         optionStyle = 'opacity-40 border-[#20333d] text-slate-500';
                       }
                     } else if (isSelected) {
-                      optionStyle =
-                        'bg-purple-500/20 border-purple-400 text-fuchsia-200 shadow-[0_3px_0_0_#7e22ce]';
+                      optionStyle = isPhysics
+                        ? 'bg-amber-500/20 border-amber-400 text-amber-200 shadow-[0_3px_0_0_#ca8a04]'
+                        : 'bg-purple-500/20 border-purple-400 text-fuchsia-200 shadow-[0_3px_0_0_#7e22ce]';
                     }
 
                     return (
@@ -309,7 +345,11 @@ export const TheoryPage: React.FC = () => {
                   <motion.div
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="p-3.5 rounded-2xl bg-purple-950/40 border border-purple-500/40 text-xs text-purple-200 leading-relaxed"
+                    className={`p-3.5 rounded-2xl border text-xs leading-relaxed ${
+                      isPhysics
+                        ? 'bg-amber-950/40 border-amber-500/40 text-amber-200'
+                        : 'bg-purple-950/40 border-purple-500/40 text-purple-200'
+                    }`}
                   >
                     💡 {theory.quickCheck.explanation}
                   </motion.div>
@@ -324,25 +364,35 @@ export const TheoryPage: React.FC = () => {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -30, opacity: 0 }}
               transition={{ duration: 0.25 }}
-              className="bg-[#18272f] border-2 border-[#2e4756] p-5 sm:p-6 rounded-3xl shadow-[0_6px_0_0_#131f24] space-y-4"
+              className={`bg-[#18272f] border-2 p-5 sm:p-6 rounded-3xl shadow-[0_6px_0_0_#131f24] space-y-4 ${
+                isPhysics ? 'border-amber-500/30' : 'border-[#2e4756]'
+              }`}
             >
               {/* Badge & Step indicator */}
               <div className="flex items-center justify-between">
                 <span
                   className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black border ${
                     currentCard.badgeColor === 'emerald'
-                      ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40'
+                      ? isPhysics
+                        ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
+                        : 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40'
                       : currentCard.badgeColor === 'amber'
                       ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
                       : currentCard.badgeColor === 'cyan'
-                      ? 'bg-cyan-500/20 text-cyan-300 border-cyan-500/40'
+                      ? isPhysics
+                        ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
+                        : 'bg-cyan-500/20 text-cyan-300 border-cyan-500/40'
+                      : isPhysics
+                      ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
                       : 'bg-purple-500/20 text-purple-300 border-purple-500/40'
                   }`}
                 >
                   {currentCard.badgeColor === 'amber' ? (
                     <AlertTriangle className="w-3.5 h-3.5" />
                   ) : currentCard.badgeColor === 'emerald' ? (
-                    <FlaskConical className="w-3.5 h-3.5" />
+                    isPhysics ? <Zap className="w-3.5 h-3.5" /> : <FlaskConical className="w-3.5 h-3.5" />
+                  ) : isPhysics ? (
+                    <Zap className="w-3.5 h-3.5" />
                   ) : (
                     <Lightbulb className="w-3.5 h-3.5" />
                   )}
@@ -366,10 +416,16 @@ export const TheoryPage: React.FC = () => {
 
               {/* Formula Example (if present) */}
               {currentCard.formulaExample && (
-                <div className="p-3.5 rounded-2xl bg-[#131f24] border-2 border-emerald-500/40 flex items-center justify-center text-center shadow-inner">
+                <div
+                  className={`p-3.5 rounded-2xl bg-[#131f24] border-2 flex items-center justify-center text-center shadow-inner ${
+                    isPhysics ? 'border-amber-500/40' : 'border-emerald-500/40'
+                  }`}
+                >
                   <Formula
                     code={currentCard.formulaExample}
-                    className="text-emerald-300 font-black text-base sm:text-lg tracking-wide"
+                    className={`font-black text-base sm:text-lg tracking-wide ${
+                      isPhysics ? 'text-amber-300' : 'text-emerald-300'
+                    }`}
                   />
                 </div>
               )}
@@ -379,7 +435,11 @@ export const TheoryPage: React.FC = () => {
                 <div className="space-y-2 pt-1">
                   {currentCard.bulletPoints.map((pt, i) => (
                     <div key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-300 leading-relaxed">
-                      <span className="w-2 h-2 rounded-full bg-purple-400 mt-1.5 shrink-0" />
+                      <span
+                        className={`w-2 h-2 rounded-full mt-1.5 shrink-0 ${
+                          isPhysics ? 'bg-amber-400' : 'bg-purple-400'
+                        }`}
+                      />
                       <span>{renderFormulaText(pt)}</span>
                     </div>
                   ))}
@@ -388,7 +448,13 @@ export const TheoryPage: React.FC = () => {
 
               {/* Highlight Callout Box */}
               {currentCard.callout && (
-                <div className="p-3.5 rounded-2xl bg-gradient-to-r from-purple-900/30 to-fuchsia-900/20 border border-purple-400/30 text-xs sm:text-sm font-bold text-fuchsia-200 whitespace-pre-line leading-relaxed shadow-sm">
+                <div
+                  className={`p-3.5 rounded-2xl border text-xs sm:text-sm font-bold whitespace-pre-line leading-relaxed shadow-sm ${
+                    isPhysics
+                      ? 'bg-gradient-to-r from-amber-950/40 to-yellow-950/30 border-amber-500/30 text-amber-200'
+                      : 'bg-gradient-to-r from-purple-900/30 to-fuchsia-900/20 border-purple-400/30 text-fuchsia-200'
+                  }`}
+                >
                   {renderFormulaText(currentCard.callout)}
                 </div>
               )}
@@ -419,7 +485,11 @@ export const TheoryPage: React.FC = () => {
                 fullWidth
                 disabled={!selectedOption}
                 onClick={handleCheckAnswer}
-                className="bg-purple-600 hover:bg-purple-500 text-white font-black shadow-[0_4px_0_0_#581c87]"
+                className={
+                  isPhysics
+                    ? 'bg-[#eab308] hover:bg-[#facc15] text-slate-950 font-black shadow-[0_4px_0_0_#ca8a04]'
+                    : 'bg-purple-600 hover:bg-purple-500 text-white font-black shadow-[0_4px_0_0_#581c87]'
+                }
               >
                 KIỂM TRA
               </Button>
@@ -429,7 +499,11 @@ export const TheoryPage: React.FC = () => {
                 size="lg"
                 fullWidth
                 onClick={handleFinish}
-                className="bg-gradient-to-r from-purple-600 to-fuchsia-500 text-white font-black shadow-[0_4px_0_0_#6b21a8]"
+                className={
+                  isPhysics
+                    ? 'bg-gradient-to-r from-amber-500 to-yellow-400 text-slate-950 font-black shadow-[0_4px_0_0_#ca8a04]'
+                    : 'bg-gradient-to-r from-purple-600 to-fuchsia-500 text-white font-black shadow-[0_4px_0_0_#6b21a8]'
+                }
               >
                 HOÀN THÀNH
               </Button>
@@ -440,7 +514,11 @@ export const TheoryPage: React.FC = () => {
               size="lg"
               fullWidth
               onClick={handleNext}
-              className="bg-gradient-to-r from-purple-600 to-fuchsia-500 hover:from-purple-500 hover:to-fuchsia-400 text-white font-black shadow-[0_4px_0_0_#6b21a8] flex items-center justify-center gap-2"
+              className={`font-black flex items-center justify-center gap-2 ${
+                isPhysics
+                  ? 'bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-400 hover:to-yellow-300 text-slate-950 shadow-[0_4px_0_0_#ca8a04]'
+                  : 'bg-gradient-to-r from-purple-600 to-fuchsia-500 hover:from-purple-500 hover:to-fuchsia-400 text-white shadow-[0_4px_0_0_#6b21a8]'
+              }`}
             >
               <span>{currentSlide === totalSlides - 1 ? 'HOÀN THÀNH' : 'TIẾP THEO'}</span>
               <ArrowRight className="w-4 h-4 stroke-[3]" />

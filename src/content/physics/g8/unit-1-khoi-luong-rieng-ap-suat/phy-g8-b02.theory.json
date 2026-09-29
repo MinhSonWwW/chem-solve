@@ -1,0 +1,78 @@
+{
+  "lessonId": "phy-g8-b02",
+  "nodeId": "phy-g8-b02-theory",
+  "title": "Lý thuyết: Thực hành xác định khối lượng riêng",
+  "subtitle": "Bài 14 SGK Khoa học tự nhiên 8 (Kết nối tri thức)",
+  "sgkBaiSo": 14,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Dụng cụ thí nghiệm",
+      "badgeColor": "cyan",
+      "title": "1. Dụng cụ đo khối lượng và thể tích",
+      "content": "Để xác định khối lượng riêng $D = \\frac{m}{V}$ của một chất, ta cần phối hợp dụng cụ đo khối lượng và dụng cụ đo thể tích:",
+      "bulletPoints": [
+        "Đo khối lượng ($m$): Sử dụng cân điện tử hoặc cân Robecvan (đơn vị hiển thị thường là g hoặc kg). Trước khi cân cần chỉnh cân về số 0 (Zero/Tare).",
+        "Đo thể tích ($V$) của vật rắn có hình dạng học (khối hộp chữ nhật, lập phương...): Dùng thước thẳng, thước cuộn hoặc thước kẹp đo các kích thước rồi tính toán theo công thức hình học.",
+        "Đo thể tích ($V$) của vật rắn có hình dạng bất kì không thấm nước (hòn sỏi, đinh ốc...): Dùng bình chia độ hoặc bình tràn chứa nước.",
+        "Đo thể tích ($V$) của chất lỏng: Rót trực tiếp vào bình chia độ hình trụ và đọc vạch thể tích ngang tầm mắt."
+      ],
+      "callout": "Nguyên tắc cốt lõi: Xác định chính xác hai đại lượng m (khối lượng) và V (thể tích) rồi áp dụng công thức D = m / V."
+    },
+    {
+      "id": "c2",
+      "badge": "Quy trình thực hành",
+      "badgeColor": "amber",
+      "title": "2. Các phương pháp thực hành đo",
+      "content": "Ba quy trình thực hành cơ bản được thực hiện trong phòng thí nghiệm trường học:",
+      "bulletPoints": [
+        "Vật rắn hình hộp chữ nhật: Đo chiều dài $a$, rộng $b$, cao $c$ $\\Rightarrow V = a \\times b \\times c$. Cân khối lượng $m$. Tính $D = \\frac{m}{V}$.",
+        "Vật rắn hình dạng bất kì (dùng bình chia độ): Đổ nước vào bình tới vạch $V_1$. Thả chìm vật vào bình, nước dâng lên $V_2$ $\\Rightarrow V = V_2 - V_1$. Cân khối lượng $m$. Tính $D = \\frac{m}{V}$.",
+        "Vật rắn không lọt bình chia độ (dùng bình tràn): Đổ nước ngập đến miệng vòi bình tràn. Thả chìm vật, hứng lượng nước tràn ra vào bình chứa rồi đo thể tích nước tràn bằng bình chia độ.",
+        "Xác định khối lượng riêng chất lỏng: Cân khối lượng cốc rỗng $m_1$. Rót chất lỏng có thể tích $V$ vào cốc, cân lại được $m_2$ $\\Rightarrow m_{\\text{lỏng}} = m_2 - m_1$. Tính $D = \\frac{m_2 - m_1}{V}$."
+      ],
+      "callout": "Kĩ năng quan sát: Khi đọc mực nước trong bình chia độ, phải đặt mắt nhìn ngang với phần đáy lõm (meniscus) của màng nước."
+    },
+    {
+      "id": "c3",
+      "badge": "Kĩ thuật & Sai số",
+      "badgeColor": "emerald",
+      "title": "3. Lưu ý an toàn và giảm thiểu sai số",
+      "content": "Để kết quả đo có độ tin cậy cao, cần kiểm soát các nguồn sai số thực nghiệm:",
+      "bulletPoints": [
+        "Sai số do bọt khí: Khi thả vật vào nước, cần lắc nhẹ hoặc gõ nhẹ để làm tan hết bọt khí bám vào bề mặt vật (bọt khí làm thể tích đo được lớn hơn thực tế, dẫn đến $D$ tính ra bị nhỏ hơn thực tế).",
+        "Sai số do dính nước: Khi cân khối lượng vật rắn, phải cân lúc vật còn KHÔ RÁO trước khi thả vào bình nước.",
+        "Quy tắc đo lặp: Thực hiện phép đo ít nhất 3 lần và lấy giá trị trung bình cộng để giảm sai số ngẫu nhiên.",
+        "Trừ bì cốc chứa: Luôn nhớ trừ khối lượng cốc rỗng khi cân chất lỏng."
+      ],
+      "callout": "Ghi nhớ thứ tự chuẩn: Cân khối lượng m trước khi đo thể tích V bằng nước để vật không bị ẩm ướt làm sai lệch khối lượng."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi dùng bình chia độ để đo thể tích một hòn sỏi chìm trong nước: Ban đầu nước ở vạch V1 = 60 mL, sau khi thả chìm sỏi nước dâng lên vạch V2 = 85 mL. Thể tích của hòn sỏi là bao nhiêu?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "25 mL (tức 25 cm³)",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "85 mL",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "145 mL",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "60 mL",
+        "correct": false
+      }
+    ],
+    "explanation": "Thể tích của vật rắn chìm trong chất lỏng bằng thể tích phần nước dâng lên: V = V2 - V1 = 85 - 60 = 25 mL = 25 cm³."
+  }
+}

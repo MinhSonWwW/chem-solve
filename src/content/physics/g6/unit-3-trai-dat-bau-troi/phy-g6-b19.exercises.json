@@ -1,0 +1,420 @@
+[
+  {
+    "id": "phy-g6-b19-mcq-001",
+    "lessonId": "phy-g6-b19",
+    "sgkBaiSo": 54,
+    "skillIds": [
+      "earth-order-solar-system"
+    ],
+    "difficulty": 1,
+    "prompt": "Theo thứ tự khoảng cách xa dần tính từ Mặt Trời, Trái Đất là hành tinh thứ mấy trong Hệ Mặt Trời?",
+    "knowledge": [
+      "astro.solar_system.planets"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hành tinh thứ 4"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hành tinh thứ 1"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hành tinh thứ 3"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hành tinh thứ 2"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thứ tự bắt đầu từ Thủy tinh -> Kim tinh -> ..."
+      },
+      {
+        "level": 2,
+        "text": "Trái Đất nằm ở vị trí thứ 3 ngay sau Kim tinh và trước Hỏa tinh."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Thứ tự các hành tinh từ Mặt Trời",
+        "body": "Liệt kê các hành tinh gần Mặt Trời nhất: 1. Thủy tinh, 2. Kim tinh, 3. Trái Đất, 4. Hỏa tinh."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Vị trí của Trái Đất",
+        "body": "Trái Đất nằm ở khoảng cách lý tưởng thứ 3 (khoảng 150 triệu km), trong vùng có nhiệt độ vừa phải để nước tồn tại ở thể lỏng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Trái Đất là **hành tinh thứ 3** tính từ Mặt Trời."
+      }
+    ],
+    "finalSolution": "Trái Đất là **hành tinh thứ 3** tính từ Mặt Trời.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b19-order-002",
+    "lessonId": "phy-g6-b19",
+    "sgkBaiSo": 54,
+    "skillIds": [
+      "planets-distance-order"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp 8 hành tinh trong Hệ Mặt Trời theo đúng thứ tự khoảng cách từ **gần Mặt Trời nhất** đến **xa Mặt Trời nhất**:",
+    "knowledge": [
+      "astro.solar_system.planets"
+    ],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Thủy tinh (Mercury)",
+        "Kim tinh (Venus)",
+        "Trái Đất (Earth)",
+        "Hỏa tinh (Mars)",
+        "Mộc tinh (Jupiter)",
+        "Thổ tinh (Saturn)",
+        "Thiên vương tinh (Uranus)",
+        "Hải vương tinh (Neptune)"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khẩu quyết ghi nhớ: Thủy - Kim - Trái - Hỏa - Mộc - Thổ - Thiên - Hải."
+      },
+      {
+        "level": 2,
+        "text": "Bắt đầu bằng Thủy tinh (gần nhất) và kết thúc bằng Hải vương tinh (xa nhất)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Danh sách 8 hành tinh",
+        "body": "8 hành tinh gồm: Trái Đất, Hải vương tinh, Hỏa tinh, Kim tinh, Mộc tinh, Thiên vương tinh, Thổ tinh, Thủy tinh."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Áp dụng quy tắc khoảng cách",
+        "body": "Thứ tự chuẩn từ tâm ra ngoài: Thủy tinh -> Kim tinh -> Trái Đất -> Hỏa tinh -> Mộc tinh -> Thổ tinh -> Thiên vương tinh -> Hải vương tinh."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận thứ tự",
+        "body": "Sắp xếp hoàn chỉnh 8 hành tinh từ gần đến xa Mặt Trời."
+      }
+    ],
+    "finalSolution": "Thứ tự chuẩn: **Thủy tinh → Kim tinh → Trái Đất → Hỏa tinh → Mộc tinh → Thổ tinh → Thiên vương tinh → Hải vương tinh**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b19-mcq-003",
+    "lessonId": "phy-g6-b19",
+    "sgkBaiSo": 54,
+    "skillIds": [
+      "hottest-planet-identification"
+    ],
+    "difficulty": 2,
+    "prompt": "Hành tinh nào có nhiệt độ bề mặt **nóng nhất** trong toàn bộ Hệ Mặt Trời?",
+    "knowledge": [
+      "astro.solar_system.planets"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hỏa tinh (Hành tinh Đỏ)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Mộc tinh (Sao Mộc)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Thủy tinh (gần Mặt Trời nhất)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Kim tinh (Sao Kim)"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Dù Thủy tinh gần Mặt Trời nhất nhưng nó không có bầu khí quyển giữ nhiệt."
+      },
+      {
+        "level": 2,
+        "text": "Kim tinh có bầu khí quyển CO2 siêu dày gây ra hiệu ứng nhà kính dữ dội, giữ nhiệt độ lên tới ~460 °C."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Yếu tố quyết định nhiệt độ hành tinh",
+        "body": "Không chỉ khoảng cách đến Mặt Trời mà bầu khí quyển đóng vai trò then chốt trong việc giữ nhiệt độ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân tích Kim tinh và Thủy tinh",
+        "body": "Thủy tinh không có khí quyển nên mặt đêm rất lạnh (-180 °C). Trong khi đó Kim tinh có khí quyển chứa hơn 96% CO2, tạo hiệu ứng nhà kính khủng khiếp làm nhiệt độ bề mặt luôn duy trì ở mức ~460 °C, nóng nhất Hệ Mặt Trời."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hành tinh nóng nhất là **Kim tinh (Sao Kim)**."
+      }
+    ],
+    "finalSolution": "**Kim tinh (Sao Kim)** là hành tinh nóng nhất trong Hệ Mặt Trời do hiệu ứng nhà kính cực mạnh.",
+    "commonMistakes": [
+      {
+        "id": "mercury-trap",
+        "message": "Nhiều bạn nghĩ Thủy tinh gần Mặt Trời nhất nên nóng nhất, nhưng Kim tinh mới là hành tinh nóng nhất do hiệu ứng nhà kính!",
+        "trapAnswers": [
+          "opt-a"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b19-sort-004",
+    "lessonId": "phy-g6-b19",
+    "sgkBaiSo": 54,
+    "skillIds": [
+      "classify-inner-outer-planets"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy phân loại 8 hành tinh vào hai nhóm: **Hành tinh vòng trong (đất đá)** và **Hành tinh vòng ngoài (khí và băng khổng lồ)**:",
+    "knowledge": [
+      "astro.solar_system.planets"
+    ],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        {
+          "id": "inner-planets",
+          "label": "Hành tinh vòng trong (đất đá)"
+        },
+        {
+          "id": "outer-planets",
+          "label": "Hành tinh vòng ngoài (khí & băng)"
+        }
+      ],
+      "items": [
+        {
+          "id": "item-1",
+          "label": "Thủy tinh",
+          "bucketId": "inner-planets"
+        },
+        {
+          "id": "item-2",
+          "label": "Kim tinh",
+          "bucketId": "inner-planets"
+        },
+        {
+          "id": "item-3",
+          "label": "Trái Đất",
+          "bucketId": "inner-planets"
+        },
+        {
+          "id": "item-4",
+          "label": "Hỏa tinh",
+          "bucketId": "inner-planets"
+        },
+        {
+          "id": "item-5",
+          "label": "Mộc tinh",
+          "bucketId": "outer-planets"
+        },
+        {
+          "id": "item-6",
+          "label": "Thổ tinh",
+          "bucketId": "outer-planets"
+        },
+        {
+          "id": "item-7",
+          "label": "Thiên vương tinh",
+          "bucketId": "outer-planets"
+        },
+        {
+          "id": "item-8",
+          "label": "Hải vương tinh",
+          "bucketId": "outer-planets"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "4 hành tinh gần Mặt Trời nhất (bên trong vành đai tiểu hành tinh) là các hành tinh đất đá."
+      },
+      {
+        "level": 2,
+        "text": "4 hành tinh xa hơn là các hành tinh khí và băng khổng lồ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân chia ranh giới",
+        "body": "Vành đai tiểu hành tinh nằm giữa Hỏa tinh và Mộc tinh chia 8 hành tinh thành hai nhóm rõ rệt."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Bản chất từng nhóm",
+        "body": "Hành tinh vòng trong: Thủy, Kim, Trái Đất, Hỏa (cấu tạo từ đá và kim loại, kích thước nhỏ). Hành tinh vòng ngoài: Mộc, Thổ (khí khổng lồ), Thiên vương, Hải vương (băng khổng lồ)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận phân loại",
+        "body": "Xếp 4 hành tinh vào nhóm vòng trong và 4 hành tinh vào nhóm vòng ngoài."
+      }
+    ],
+    "finalSolution": "Hành tinh vòng trong: **Thủy tinh, Kim tinh, Trái Đất, Hỏa tinh**. Hành tinh vòng ngoài: **Mộc tinh, Thổ tinh, Thiên vương tinh, Hải vương tinh**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b19-match-005",
+    "lessonId": "phy-g6-b19",
+    "sgkBaiSo": 54,
+    "skillIds": [
+      "planet-features-matching"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy ghép mỗi hành tinh ở cột bên trái với đúng đặc điểm nổi bật nhất của nó ở cột bên phải:",
+    "knowledge": [
+      "astro.solar_system.planets"
+    ],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Mộc tinh (Sao Mộc)",
+          "right": "Hành tinh lớn nhất và nặng nhất"
+        },
+        {
+          "left": "Thổ tinh (Sao Thổ)",
+          "right": "Hệ thống vành đai vành khuyên nổi bật nhất"
+        },
+        {
+          "left": "Hỏa tinh (Sao Hỏa)",
+          "right": "Hành tinh Đỏ do nhiều oxit sắt"
+        },
+        {
+          "left": "Trái Đất",
+          "right": "Hành tinh duy nhất có sự sống"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sao Mộc to nhất; Sao Thổ có vành khuyên; Sao Hỏa màu đỏ rỉ sét; Trái Đất có sinh vật sống."
+      },
+      {
+        "level": 2,
+        "text": "Đối chiếu từng đặc điểm nổi bật đã học trong Bài 54 SGK."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xét từng hành tinh",
+        "body": "Mộc tinh, Thổ tinh, Hỏa tinh, Trái Đất đều mang những đặc điểm nhận diện đặc trưng không thể nhầm lẫn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Liên hệ đặc tính SGK",
+        "body": "Mộc tinh -> lớn nhất; Thổ tinh -> vành đai ngoạn mục; Hỏa tinh -> Hành tinh Đỏ; Trái Đất -> hành tinh xanh của sự sống."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận ghép cặp",
+        "body": "Ghép nối thành công 4 cặp hành tinh và đặc điểm tương ứng."
+      }
+    ],
+    "finalSolution": "Mộc tinh ↔ Hành tinh lớn nhất và nặng nhất · Thổ tinh ↔ Hệ thống vành đai nổi bật nhất · Hỏa tinh ↔ Hành tinh Đỏ · Trái Đất ↔ Hành tinh duy nhất có sự sống.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b19-tf-006",
+    "lessonId": "phy-g6-b19",
+    "sgkBaiSo": 54,
+    "skillIds": [
+      "solar-system-true-false"
+    ],
+    "difficulty": 3,
+    "prompt": "Hãy xác định tính Đúng hoặc Sai cho mỗi nhận định dưới đây về Hệ Mặt Trời:",
+    "knowledge": [
+      "astro.solar_system.planets"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "stmt-1",
+          "text": "Mặt Trời chiếm phần lớn khối lượng của toàn bộ Hệ Mặt Trời và là ngôi sao duy nhất trong hệ.",
+          "correct": true
+        },
+        {
+          "id": "stmt-2",
+          "text": "Các hành tinh quay xung quanh Mặt Trời theo các quỹ đạo elip gần tròn và cùng một chiều.",
+          "correct": true
+        },
+        {
+          "id": "stmt-3",
+          "text": "Hải vương tinh là hành tinh ở gần Mặt Trời nhất trong số 8 hành tinh.",
+          "correct": false
+        },
+        {
+          "id": "stmt-4",
+          "text": "Ánh sáng và nhiệt từ Mặt Trời là nguồn năng lượng chủ yếu duy trì sự sống trên Trái Đất.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hải vương tinh là hành tinh thứ 8, nằm ở xa Mặt Trời nhất."
+      },
+      {
+        "level": 2,
+        "text": "Mặt Trời chiếm tới hơn 99,8% khối lượng của cả hệ và sưởi ấm toàn hệ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đánh giá 4 nhận định",
+        "body": "Kiểm tra từng nhận định về khối lượng Mặt Trời, hình dạng quỹ đạo, vị trí Hải vương tinh và vai trò của năng lượng Mặt Trời."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu kiến thức thiên văn",
+        "body": "Nhận định 1, 2, 4 đúng theo Bài 54 SGK KNTT. Nhận định 3 sai vì hành tinh gần Mặt Trời nhất là Thủy tinh, còn Hải vương tinh ở xa Mặt Trời nhất."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng/Sai",
+        "body": "Nhận định 1, 2, 4: Đúng · Nhận định 3: Sai."
+      }
+    ],
+    "finalSolution": "Câu 1: Đúng · Câu 2: Đúng · Câu 3: Sai · Câu 4: Đúng.",
+    "commonMistakes": []
+  }
+]

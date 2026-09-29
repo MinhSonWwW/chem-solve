@@ -1,0 +1,64 @@
+{
+  "lessonId": "phy-g6-b17",
+  "nodeId": "phy-g6-b17-theory",
+  "title": "Lý thuyết: Chuyển động nhìn thấy của Mặt Trời. Thiên thể",
+  "subtitle": "Bài 52 SGK Khoa học tự nhiên 6 (Kết nối tri thức)",
+  "sgkBaiSo": 52,
+  "estimatedMinutes": 2,
+  "description": "Giải thích chuyển động nhìn thấy của Mặt Trời, nguyên nhân hiện tượng ngày và đêm luân phiên và phân biệt các loại thiên thể trong vũ trụ.",
+  "cards": [
+    {
+      "id": "card-1",
+      "title": "1. Chuyển động nhìn thấy của Mặt Trời",
+      "badge": "Chuyển động biểu kiến",
+      "badgeColor": "amber",
+      "content": "Hằng ngày, chúng ta quan sát thấy Mặt Trời mọc ở hướng Đông vào buổi sáng, lên cao dần đến giữa trưa và lặn ở hướng Tây vào buổi chiều:",
+      "bulletPoints": [
+        "Bản chất hiện tượng: Mặt Trời không tự chuyển động quanh Trái Đất. Chuyển động nhìn thấy này là do Trái Đất tự quay quanh trục của nó theo chiều từ Tây sang Đông.",
+        "Ví dụ liên hệ đời sống: Tương tự như khi bạn ngồi trên một chiếc tàu hỏa đang chạy về phía trước, bạn nhìn qua cửa sổ và thấy cây cối ven đường dường như đang lùi nhanh về phía sau.",
+        "Quy ước chiều quay: Nhìn từ cực Bắc xuống, Trái Đất tự quay quanh trục ngược chiều kim đồng hồ."
+      ],
+      "callout": "☀️ Mặt Trời mọc đằng Đông, lặn đằng Tây là do Trái Đất tự quay từ Tây sang Đông!"
+    },
+    {
+      "id": "card-2",
+      "title": "2. Hiện tượng ngày - đêm và Phân biệt Thiên thể",
+      "badge": "Kiến thức thiên văn",
+      "badgeColor": "purple",
+      "content": "Trái Đất hình cầu và liên tục tự quay quanh trục tạo nên nhịp điệu ngày và đêm kỳ diệu cho sự sống:",
+      "bulletPoints": [
+        "Nguyên nhân ngày và đêm: Vì Trái Đất có hình cầu nên tại mỗi thời điểm chỉ có một nửa bề mặt hướng về phía Mặt Trời được chiếu sáng (ban ngày), nửa còn lại nằm trong bóng tối (ban đêm). Khi Trái Đất tự quay, mọi nơi trên bề mặt lần lượt bước ra ánh sáng rồi lại đi vào bóng tối.",
+        "Chu kỳ tự quay: Trái Đất quay trọn vẹn một vòng quanh trục hết 24 giờ (1 ngày đêm).",
+        "Sao (ngôi sao): Thiên thể tự phát sáng do phản ứng hạt nhân bên trong (ví dụ: Mặt Trời, các ngôi sao lấp lánh ban đêm).",
+        "Hành tinh và Vệ tinh: Thiên thể không tự phát sáng, chúng ta nhìn thấy được là nhờ chúng phản chiếu ánh sáng từ Mặt Trời (ví dụ: Trái Đất, Sao Kim, Mặt Trăng)."
+      ],
+      "callout": "🌍 Trái Đất hình cầu + Tự quay quanh trục = Ngày và đêm luân phiên liên tục."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Hằng ngày ta nhìn thấy Mặt Trời mọc ở hướng Đông và lặn ở hướng Tây thực chất là do nguyên nhân nào?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Mặt Trời chuyển động thực sự quay xung quanh Trái Đất từ Đông sang Tây",
+        "correct": false
+      },
+      {
+        "id": "opt-b",
+        "text": "Trái Đất tự quay quanh trục của nó theo chiều từ Tây sang Đông",
+        "correct": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Trái Đất đứng yên tuyệt đối ở trung tâm của vũ trụ",
+        "correct": false
+      },
+      {
+        "id": "opt-d",
+        "text": "Trục quay của Trái Đất bị nghiêng liên tục thay đổi",
+        "correct": false
+      }
+    ],
+    "explanation": "Chuyển động nhìn thấy của Mặt Trời là chuyển động biểu kiến sinh ra do Trái Đất tự quay quanh trục theo chiều từ Tây sang Đông."
+  }
+}

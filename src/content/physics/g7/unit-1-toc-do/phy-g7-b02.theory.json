@@ -1,0 +1,74 @@
+{
+  "lessonId": "phy-g7-b02",
+  "nodeId": "phy-g7-b02-theory",
+  "title": "Lý thuyết: Đo tốc độ",
+  "subtitle": "Bài 9 SGK Khoa học tự nhiên 7 (Kết nối tri thức)",
+  "sgkBaiSo": 9,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Nguyên tắc cơ bản",
+      "badgeColor": "cyan",
+      "title": "1. Nguyên tắc đo tốc độ",
+      "content": "Để xác định tốc độ chuyển động của một vật, theo công thức v = s / t, ta cần phải đo hai đại lượng:",
+      "bulletPoints": [
+        "Quãng đường s vật đi được (dùng thước đo độ dài: thước mét, thước dây, thước cuộn...).",
+        "Thời gian t để vật đi hết quãng đường đó (dùng dụng cụ đo thời gian: đồng hồ bấm giây, đồng hồ hiện số...).",
+        "Sau đó tính tốc độ bằng thương số giữa quãng đường và thời gian: v = s / t."
+      ],
+      "callout": "Mục tiêu bài học: Nắm vững hai phương pháp đo tốc độ trong phòng thực hành và nguyên lí của thiết bị bắn tốc độ."
+    },
+    {
+      "id": "c2",
+      "badge": "Phương pháp thực hành",
+      "badgeColor": "amber",
+      "title": "2. Hai phương pháp đo trong phòng thí nghiệm",
+      "content": "Tùy theo yêu cầu độ chính xác và điều kiện thiết bị, ta có thể dùng một trong hai phương pháp:",
+      "bulletPoints": [
+        "Cách 1 - Dùng đồng hồ bấm giây: Đo khoảng cách giữa vạch xuất phát và vạch đích bằng thước; bấm đồng hồ chạy khi vật xuất phát và dừng khi vật tới đích. Nhược điểm: có sai số do phản xạ bấm tay của người đo.",
+        "Cách 2 - Dùng cổng quang điện và đồng hồ đo thời gian hiện số: Khi vật đi qua cổng quang điện thứ nhất (A), tia hồng ngoại bị chắn và đồng hồ bắt đầu đếm tự động; khi vật qua cổng thứ hai (B), đồng hồ tự động dừng. Ưu điểm: độ chính xác cao, loại bỏ sai số do con người."
+      ],
+      "callout": "Lưu ý: Để giảm sai số ngẫu nhiên, ta nên thực hiện phép đo ít nhất 3 lần và lấy giá trị trung bình."
+    },
+    {
+      "id": "c3",
+      "badge": "Ứng dụng thực tế",
+      "badgeColor": "emerald",
+      "title": "3. Thiết bị bắn tốc độ trong giao thông",
+      "content": "Cảnh sát giao thông sử dụng thiết bị 'bắn tốc độ' để kiểm tra tốc độ của các phương tiện lưu thông trên đường.",
+      "bulletPoints": [
+        "Nguyên lí hoạt động: Máy phát chùm sóng vô tuyến (radar) hoặc chùm tia laser hướng tới xe đang chạy và thu nhận chùm sóng/tia phản xạ lại từ xe.",
+        "Bộ xử lý máy tính tích hợp tính ra tốc độ của xe dựa trên sự thay đổi tần số (hiệu ứng Doppler) hoặc thời gian phản xạ.",
+        "Nếu phương tiện vi phạm tốc độ tối đa cho phép, thiết bị tự động chụp ảnh phương tiện kèm biển số và ghi lại giá trị tốc độ tại thời điểm vi phạm."
+      ],
+      "callout": "Ý nghĩa: Thiết bị bắn tốc độ giúp giám sát, xử lý vi phạm chạy quá tốc độ nhằm bảo đảm trật tự an toàn giao thông."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi dùng cổng quang điện kết hợp đồng hồ đo hiện số để đo thời gian chuyển động, ưu điểm lớn nhất là gì?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Đo hoàn toàn tự động, loại bỏ sai số do phản xạ bấm tay của con người",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Không cần phải đo quãng đường",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Đo được tốc độ mà không cần dùng đến nguồn điện",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Có thể đo được các vật ở khoảng cách hàng nghìn mét",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 7 Bài 9, cổng quang điện kết nối với đồng hồ hiện số đóng ngắt mạch điện tự động khi vật chắn chùm sáng hồng ngoại, loại bỏ sai số phản xạ bấm tay của người đo."
+  }
+}

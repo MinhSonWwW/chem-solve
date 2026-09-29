@@ -1,0 +1,531 @@
+[
+  {
+    "id": "phy-g9-b10-mcq-001",
+    "lessonId": "phy-g9-b10",
+    "sgkBaiSo": 11,
+    "skillIds": [
+      "ohm-law-statement"
+    ],
+    "difficulty": 1,
+    "prompt": "Nội dung nào sau đây diễn đạt chính xác định luật Ohm đối với một đoạn dây dẫn?",
+    "knowledge": [
+      "law.ohm"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cường độ dòng điện không phụ thuộc vào hiệu điện thế đặt vào hai đầu dây dẫn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cường độ dòng điện tỉ lệ nghịch với hiệu điện thế và tỉ lệ thuận với điện trở của dây dẫn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cường độ dòng điện tỉ lệ thuận với cả hiệu điện thế và điện trở của dây dẫn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cường độ dòng điện tỉ lệ thuận với hiệu điện thế và tỉ lệ nghịch với điện trở của dây dẫn"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hãy nhớ lại công thức I = U / R."
+      },
+      {
+        "level": 2,
+        "text": "U ở tử số nghĩa là tỉ lệ thuận, R ở mẫu số nghĩa là tỉ lệ nghịch."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định định luật",
+        "body": "Đề bài yêu cầu nêu nội dung định luật Ohm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 11: Cường độ dòng điện chạy qua một dây dẫn tỉ lệ thuận với hiệu điện thế đặt vào hai đầu dây và tỉ lệ nghịch với điện trở của dây ($I = \\frac{U}{R}$)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Cường độ dòng điện tỉ lệ thuận với hiệu điện thế và tỉ lệ nghịch với điện trở**."
+      }
+    ],
+    "finalSolution": "Theo định luật Ohm: Cường độ dòng điện **tỉ lệ thuận với hiệu điện thế $U$** và **tỉ lệ nghịch với điện trở $R$** ($I = \\frac{U}{R}$).",
+    "commonMistakes": [
+      {
+        "id": "invert-proportionality",
+        "message": "Tránh nhầm lẫn: Dòng điện tỉ lệ THUẬN với U và tỉ lệ NGHỊCH với R."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b10-mcq-002",
+    "lessonId": "phy-g9-b10",
+    "sgkBaiSo": 11,
+    "skillIds": [
+      "resistance-unit-si"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong Hệ đo lường quốc tế (SI), đơn vị đo của điện trở là gì và kí hiệu như thế nào?",
+    "knowledge": [
+      "law.ohm"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vôn (kí hiệu: V)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Ôm (kí hiệu: Ω)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ampe (kí hiệu: A)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Oát (kí hiệu: W)"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đơn vị điện trở được đặt theo tên nhà bác học Georg Simon Ohm."
+      },
+      {
+        "level": 2,
+        "text": "Kí hiệu là chữ cái Hy Lạp omega: Ω."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định đơn vị",
+        "body": "Đề bài yêu cầu chỉ ra đơn vị đo điện trở."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 11: Đơn vị của điện trở là Ôm, kí hiệu là $\\Omega$ ($1\\,\\Omega = 1\\text{ V}/1\\text{ A}$)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Ôm (kí hiệu: Ω)**."
+      }
+    ],
+    "finalSolution": "Đơn vị đo điện trở là **Ôm (kí hiệu: $\\Omega$)**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-units",
+        "message": "Vôn (V) là đơn vị hiệu điện thế, Ampe (A) là đơn vị cường độ dòng điện, Oát (W) là đơn vị công suất."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b10-mcq-003",
+    "lessonId": "phy-g9-b10",
+    "sgkBaiSo": 11,
+    "skillIds": [
+      "wire-resistance-factors"
+    ],
+    "difficulty": 1,
+    "prompt": "Điện trở của một đoạn dây dẫn hình trụ đồng chất phụ thuộc vào những yếu tố nào sau đây?",
+    "knowledge": [
+      "formula.wire.resistance"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hiệu điện thế đặt vào và khối lượng của dây dẫn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Màu sắc lớp vỏ bọc và cường độ dòng điện chạy qua"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chiều dài, tiết diện và vật liệu làm dây dẫn (điện trở suất)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Thời gian dòng điện chạy qua dây dẫn"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hãy nhớ lại công thức tính điện trở dây dẫn: R = ρ . l / S."
+      },
+      {
+        "level": 2,
+        "text": "Trong đó l là chiều dài, S là tiết diện, ρ là điện trở suất của vật liệu."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định các yếu tố",
+        "body": "Khảo sát các đại lượng quyết định độ lớn điện trở của dây dẫn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Công thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 11: Điện trở của dây dẫn tỉ lệ thuận với chiều dài $l$, tỉ lệ nghịch với tiết diện $S$ và phụ thuộc vào vật liệu làm dây (qua điện trở suất $\\rho$): $R = \\rho \\frac{l}{S}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Chiều dài, tiết diện và vật liệu làm dây dẫn**."
+      }
+    ],
+    "finalSolution": "Điện trở của dây dẫn phụ thuộc vào **chiều dài ($l$), tiết diện ($S$) và vật liệu làm dây ($\\rho$)**.",
+    "commonMistakes": [
+      {
+        "id": "think-r-depends-on-u-i",
+        "message": "R = U / I là công thức tính giá trị, bản thân điện trở R là thuộc tính cấu tạo của dây dẫn, không thay đổi theo U và I."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b10-num-004",
+    "lessonId": "phy-g9-b10",
+    "sgkBaiSo": 11,
+    "skillIds": [
+      "ohm-law-calc-current"
+    ],
+    "difficulty": 2,
+    "prompt": "Đặt một hiệu điện thế U = 12 V vào hai đầu một điện trở R = 24 Ω. Cường độ dòng điện I chạy qua điện trở này là bao nhiêu ampe (A)?",
+    "knowledge": [
+      "law.ohm"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 0.5,
+      "unit": "A",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp dụng định luật Ohm: I = U / R."
+      },
+      {
+        "level": 2,
+        "text": "Thay số: U = 12 V, R = 24 Ω => I = 12 / 24 = 0,5 A."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$U = 12\\text{ V}$; $R = 24\\,\\Omega$."
+      },
+      {
+        "kind": "equation",
+        "title": "Hệ thức định luật Ohm",
+        "body": "$I = \\frac{U}{R}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$I = \\frac{12}{24} = 0,5\\text{ A}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cường độ dòng điện chạy qua điện trở là **0,5 A**."
+      }
+    ],
+    "finalSolution": "Cường độ dòng điện qua điện trở: $I = \\frac{U}{R} = \\frac{12}{24} = 0,5\\text{ A}$.",
+    "commonMistakes": [
+      {
+        "id": "invert-division",
+        "message": "Bạn đã lấy R chia cho U thay vì U chia cho R: I = U / R = 12 / 24 = 0,5 A (không phải 2 A).",
+        "trapAnswers": [
+          "2",
+          "2 A",
+          "288"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b10-num-005",
+    "lessonId": "phy-g9-b10",
+    "sgkBaiSo": 11,
+    "skillIds": [
+      "ohm-law-calc-voltage"
+    ],
+    "difficulty": 2,
+    "prompt": "Một bóng đèn xe đạp có điện trở R = 8 Ω khi sáng bình thường thì có dòng điện cường độ I = 1,5 A chạy qua. Hiệu điện thế U giữa hai đầu bóng đèn khi đó là bao nhiêu vôn (V)?",
+    "knowledge": [
+      "law.ohm"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 12,
+      "unit": "V",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ công thức định luật Ohm I = U / R suy ra U = I . R."
+      },
+      {
+        "level": 2,
+        "text": "Thay số: I = 1,5 A, R = 8 Ω => U = 1,5 x 8 = 12 V."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$R = 8\\,\\Omega$; $I = 1,5\\text{ A}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính hiệu điện thế",
+        "body": "Từ $I = \\frac{U}{R} \\Rightarrow U = I \\cdot R$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$U = 1,5 \\times 8 = 12\\text{ V}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hiệu điện thế giữa hai đầu bóng đèn là **12 V**."
+      }
+    ],
+    "finalSolution": "Hiệu điện thế giữa hai đầu đèn: $U = I \\cdot R = 1,5 \\times 8 = 12\\text{ V}$.",
+    "commonMistakes": [
+      {
+        "id": "divide-instead-of-multiply",
+        "message": "Bạn đã chia R cho I thay vì nhân: U = I * R = 12 V.",
+        "trapAnswers": [
+          "5.3",
+          "5.33"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b10-num-006",
+    "lessonId": "phy-g9-b10",
+    "sgkBaiSo": 11,
+    "skillIds": [
+      "ohm-law-calc-resistance"
+    ],
+    "difficulty": 2,
+    "prompt": "Mắc một dây mayso vào mạng điện sinh hoạt có hiệu điện thế U = 220 V thì đo được cường độ dòng điện chạy qua dây là I = 2 A. Điện trở R của dây mayso này là bao nhiêu ôm (Ω)?",
+    "knowledge": [
+      "law.ohm"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 110,
+      "unit": "Ω",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ công thức I = U / R suy ra R = U / I."
+      },
+      {
+        "level": 2,
+        "text": "Thay số: U = 220 V, I = 2 A => R = 220 / 2 = 110 Ω."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$U = 220\\text{ V}$; $I = 2\\text{ A}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính điện trở",
+        "body": "Từ $I = \\frac{U}{R} \\Rightarrow R = \\frac{U}{I}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$R = \\frac{220}{2} = 110\\,\\Omega$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Điện trở của dây mayso là **110 Ω**."
+      }
+    ],
+    "finalSolution": "Điện trở của dây: $R = \\frac{U}{I} = \\frac{220}{2} = 110\\,\\Omega$.",
+    "commonMistakes": [
+      {
+        "id": "multiply-u-and-i",
+        "message": "Bạn đã nhân U với I (đó là công thức tính công suất P): R = U / I = 110 Ω.",
+        "trapAnswers": [
+          "440",
+          "440 W"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b10-mcq-007",
+    "lessonId": "phy-g9-b10",
+    "sgkBaiSo": 11,
+    "skillIds": [
+      "ohm-law-ratio-analysis"
+    ],
+    "difficulty": 3,
+    "prompt": "Giữ nguyên hiệu điện thế U không đổi đặt vào hai đầu một đoạn mạch. Nếu thay điện trở cũ bằng một điện trở mới có giá trị lớn gấp 3 lần điện trở cũ thì cường độ dòng điện trong mạch sẽ thay đổi như thế nào?",
+    "knowledge": [
+      "law.ohm"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tăng lên 3 lần"
+        },
+        {
+          "id": "opt-b",
+          "label": "Giảm đi 3 lần"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tăng lên 9 lần"
+        },
+        {
+          "id": "opt-d",
+          "label": "Không thay đổi"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Theo định luật Ohm, cường độ dòng điện tỉ lệ nghịch với điện trở."
+      },
+      {
+        "level": 2,
+        "text": "Khi R tăng gấp bao nhiêu lần thì I sẽ giảm đi bấy nhiêu lần."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích tỉ lệ",
+        "body": "Khảo sát mối quan hệ giữa $I$ và $R$ khi $U$ không đổi."
+      },
+      {
+        "kind": "equation",
+        "title": "Hệ thức tỉ lệ nghịch",
+        "body": "Theo định luật Ohm: $I = \\frac{U}{R}$. Khi $R' = 3R$ thì $I' = \\frac{U}{3R} = \\frac{1}{3} I$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Giảm đi 3 lần**."
+      }
+    ],
+    "finalSolution": "Vì $I$ tỉ lệ nghịch với $R$, nên khi $R$ tăng 3 lần thì dòng điện **giảm đi 3 lần**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-direct-inverse",
+        "message": "Điện trở tăng thì dòng điện bị cản trở nhiều hơn nên phải GIẢM, không thể tăng."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b10-num-008",
+    "lessonId": "phy-g9-b10",
+    "sgkBaiSo": 11,
+    "skillIds": [
+      "wire-resistance-calc-length-ratio"
+    ],
+    "difficulty": 3,
+    "prompt": "Một cuộn dây dẫn bằng đồng có chiều dài l1 = 20 m có điện trở R1 = 5 Ω. Một cuộn dây dẫn khác cũng bằng đồng cùng loại, có cùng tiết diện nhưng chiều dài l2 = 60 m. Điện trở R2 của cuộn dây thứ hai là bao nhiêu ôm (Ω)?",
+    "knowledge": [
+      "formula.wire.resistance"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 15,
+      "unit": "Ω",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Vì hai dây cùng vật liệu và cùng tiết diện nên điện trở tỉ lệ thuận với chiều dài: R2 / R1 = l2 / l1."
+      },
+      {
+        "level": 2,
+        "text": "Chiều dài tăng gấp 3 lần (60 / 20 = 3) nên điện trở cũng tăng 3 lần: R2 = 5 x 3 = 15 Ω."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$l_1 = 20\\text{ m}$; $R_1 = 5\\,\\Omega$; $l_2 = 60\\text{ m}$; cùng vật liệu và tiết diện."
+      },
+      {
+        "kind": "equation",
+        "title": "Hệ thức tỉ lệ thuận",
+        "body": "Vì $R = \\rho \\frac{l}{S}$ nên khi $\\rho, S$ không đổi: $\\frac{R_2}{R_1} = \\frac{l_2}{l_1} \\Rightarrow R_2 = R_1 \\times \\frac{l_2}{l_1}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$R_2 = 5 \\times \\frac{60}{20} = 5 \\times 3 = 15\\,\\Omega$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Điện trở của cuộn dây thứ hai là **15 Ω**."
+      }
+    ],
+    "finalSolution": "Điện trở tỉ lệ thuận với chiều dài: $R_2 = 5 \\times \\frac{60}{20} = 15\\,\\Omega$.",
+    "commonMistakes": [
+      {
+        "id": "divide-mistake",
+        "message": "Dây dài hơn thì điện trở phải lớn hơn (R2 > R1), không thể nhỏ hơn 5 Ω.",
+        "trapAnswers": [
+          "1.67",
+          "1.7"
+        ]
+      }
+    ]
+  }
+]

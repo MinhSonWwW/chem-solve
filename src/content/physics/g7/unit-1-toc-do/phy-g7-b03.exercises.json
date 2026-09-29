@@ -1,0 +1,520 @@
+[
+  {
+    "id": "phy-g7-b03-mcq-001",
+    "lessonId": "phy-g7-b03",
+    "sgkBaiSo": 10,
+    "skillIds": [
+      "graph-axes-identification"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong đồ thị quãng đường – thời gian (đồ thị s - t), trục nằm ngang và trục thẳng đứng lần lượt biểu diễn đại lượng nào sau đây?",
+    "knowledge": [
+      "speed.graph.distance_time"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Trục nằm ngang biểu diễn lực (F); trục thẳng đứng biểu diễn quãng đường (s)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Trục nằm ngang biểu diễn quãng đường (s); trục thẳng đứng biểu diễn thời gian (t)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Trục nằm ngang biểu diễn tốc độ (v); trục thẳng đứng biểu diễn thời gian (t)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Trục nằm ngang biểu diễn thời gian (t); trục thẳng đứng biểu diễn quãng đường (s)"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trục hoành thường dành cho biến số thời gian t trôi đi liên tục từ trái sang phải."
+      },
+      {
+        "level": 2,
+        "text": "Theo quy ước SGK KHTN 7 Bài 10, trục hoành (nằm ngang) là trục thời gian Ot, trục tung (thẳng đứng) là trục quãng đường Os."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quy ước hệ trục tọa độ",
+        "body": "Xác định quy ước biểu diễn các đại lượng trên đồ thị s - t."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Đồ thị quãng đường – thời gian có trục nằm ngang biểu diễn thời gian (t) và trục thẳng đứng biểu diễn quãng đường đi được (s)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Trục nằm ngang: thời gian (t); trục thẳng đứng: quãng đường (s)**."
+      }
+    ],
+    "finalSolution": "Trục nằm ngang là **thời gian ($t$)**, trục thẳng đứng là **quãng đường ($s$)**.",
+    "commonMistakes": [
+      {
+        "id": "swapped-axes",
+        "message": "Chú ý: Không nhầm lẫn giữa trục hoành (thời gian) và trục tung (quãng đường)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b03-mcq-002",
+    "lessonId": "phy-g7-b03",
+    "sgkBaiSo": 10,
+    "skillIds": [
+      "graph-horizontal-segment"
+    ],
+    "difficulty": 1,
+    "prompt": "Một đoạn đường biểu diễn trên đồ thị quãng đường – thời gian có dạng nằm ngang song song với trục thời gian cho biết:",
+    "knowledge": [
+      "speed.graph.distance_time"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vật đang tăng tốc nhanh dần đều"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vật đang đứng yên (không chuyển động, tốc độ v = 0)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vật chuyển động quay ngược trở lại điểm xuất phát"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vật chuyển động với tốc độ không đổi và rất lớn"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đoạn nằm ngang có giá trị tọa độ s trên trục tung thay đổi hay giữ nguyên?"
+      },
+      {
+        "level": 2,
+        "text": "Giá trị s không đổi theo thời gian, chứng tỏ khoảng cách của vật không tăng thêm, tức là vật đứng yên."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Ý nghĩa hình học đồ thị",
+        "body": "Phân tích trạng thái chuyển động ứng với đoạn đồ thị song song trục thời gian."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Khi đường biểu diễn nằm ngang song song trục thời gian, quãng đường s không thay đổi theo thời gian, nghĩa là vật đang đứng yên (dừng lại, nghỉ)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đoạn nằm ngang chứng tỏ **Vật đang đứng yên (tốc độ v = 0)**."
+      }
+    ],
+    "finalSolution": "Đoạn đồ thị nằm ngang biểu thị **vật đang đứng yên** ($v = 0$).",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b03-mcq-003",
+    "lessonId": "phy-g7-b03",
+    "sgkBaiSo": 10,
+    "skillIds": [
+      "graph-slope-speed"
+    ],
+    "difficulty": 2,
+    "prompt": "Trên cùng một hệ trục tọa độ s - t, hai đường biểu diễn chuyển động của xe A và xe B đều là đường thẳng xuất phát từ gốc O. Biết rằng đường đồ thị của xe A dốc hơn đường đồ thị của xe B. Ta có thể kết luận:",
+    "knowledge": [
+      "speed.graph.distance_time",
+      "speed.formula"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hai xe chuyển động với cùng tốc độ"
+        },
+        {
+          "id": "opt-b",
+          "label": "Xe A chuyển động nhanh hơn xe B"
+        },
+        {
+          "id": "opt-c",
+          "label": "Xe A chuyển động chậm dần đều"
+        },
+        {
+          "id": "opt-d",
+          "label": "Xe B chuyển động nhanh hơn xe A"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Độ dốc của đường đồ thị thể hiện tốc độ chuyển động."
+      },
+      {
+        "level": 2,
+        "text": "Đường đồ thị càng dốc thì trong cùng khoảng thời gian xe đi được quãng đường càng lớn -> tốc độ càng lớn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "So sánh độ dốc đồ thị",
+        "body": "Liên hệ giữa độ nghiêng của đồ thị s - t và tốc độ chuyển động."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Trên đồ thị quãng đường – thời gian, đường biểu diễn càng dốc đứng thì vật chuyển động càng nhanh (tốc độ càng lớn)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đường A dốc hơn đường B chứng tỏ **Xe A chuyển động nhanh hơn xe B**."
+      }
+    ],
+    "finalSolution": "Đồ thị càng dốc thì tốc độ càng lớn. Do đó **xe A chuyển động nhanh hơn xe B**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b03-num-004",
+    "lessonId": "phy-g7-b03",
+    "sgkBaiSo": 10,
+    "skillIds": [
+      "graph-calculate-speed"
+    ],
+    "difficulty": 2,
+    "prompt": "Đồ thị quãng đường – thời gian của một người đi bộ là đường thẳng đi qua gốc tọa độ O và điểm M có tọa độ (t = 2 h, s = 10 km). Tính tốc độ chuyển động của người đi bộ theo đơn vị km/h.",
+    "knowledge": [
+      "speed.graph.distance_time",
+      "speed.formula"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 5,
+      "unit": "km/h",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đọc điểm M: sau thời gian t = 2 h, người này đi được quãng đường s = 10 km."
+      },
+      {
+        "level": 2,
+        "text": "Tốc độ v = s / t = 10 / 2."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Đọc số liệu từ đồ thị",
+        "body": "Thời gian chuyển động $t = 2\\text{ h}$; Quãng đường tương ứng $s = 10\\text{ km}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính",
+        "body": "Tốc độ: $v = \\frac{s}{t}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$v = \\frac{10}{2} = 5\\text{ km/h}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tốc độ của người đi bộ là **5 km/h**."
+      }
+    ],
+    "finalSolution": "Tốc độ người đi bộ: $v = \\frac{10}{2} = 5\\text{ km/h}$.",
+    "commonMistakes": [
+      {
+        "id": "swapped-values",
+        "message": "Bạn đã lấy thời gian chia cho quãng đường (2 / 10 = 0,2). Công thức đúng là v = s / t.",
+        "trapAnswers": [
+          "0.2",
+          "0,2",
+          "0.2 km/h",
+          "0,2 km/h"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b03-num-005",
+    "lessonId": "phy-g7-b03",
+    "sgkBaiSo": 10,
+    "skillIds": [
+      "graph-stopped-speed"
+    ],
+    "difficulty": 2,
+    "prompt": "Đồ thị chuyển động của một ô tô có dạng như sau: Trong 1 giờ đầu (từ 0 đến 1 h), ô tô đi từ 0 đến 45 km. Trong 1 giờ tiếp theo (từ t = 1 h đến t = 2 h), đường biểu diễn là đoạn thẳng nằm ngang ở mốc s = 45 km. Tốc độ của ô tô trong khoảng thời gian từ 1 h đến 2 h là bao nhiêu km/h?",
+    "knowledge": [
+      "speed.graph.distance_time"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 0,
+      "unit": "km/h",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trong khoảng thời gian từ 1 h đến 2 h, xe đi thêm được quãng đường là bao nhiêu?"
+      },
+      {
+        "level": 2,
+        "text": "Ở t = 1 h xe ở mốc 45 km, ở t = 2 h xe vẫn ở mốc 45 km -> quãng đường đi thêm Δs = 0 km."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định giai đoạn chuyển động",
+        "body": "Xem xét đoạn đồ thị từ $t = 1\\text{ h}$ đến $t = 2\\text{ h}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính quãng đường và tốc độ",
+        "body": "- Quãng đường đi thêm: $\\Delta s = 45 - 45 = 0\\text{ km}$.\\n- Thời gian: $\\Delta t = 2 - 1 = 1\\text{ h}$.\\n- Tốc độ: $v = \\frac{\\Delta s}{\\Delta t} = \\frac{0}{1} = 0\\text{ km/h}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tốc độ trong giai đoạn này là **0 km/h** (xe đang dừng lại nghỉ)."
+      }
+    ],
+    "finalSolution": "Vì đoạn đồ thị nằm ngang nên xe đứng yên, tốc độ **$v = 0\\text{ km/h}$**.",
+    "commonMistakes": [
+      {
+        "id": "confused-total-speed",
+        "message": "Đề bài hỏi tốc độ trong khoảng thời gian từ 1 h đến 2 h (lúc xe nghỉ), không phải tốc độ trung bình trong cả 2 giờ (45 / 2 = 22,5).",
+        "trapAnswers": [
+          "45",
+          "45 km/h",
+          "22.5",
+          "22,5",
+          "22.5 km/h",
+          "22,5 km/h"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b03-num-006",
+    "lessonId": "phy-g7-b03",
+    "sgkBaiSo": 10,
+    "skillIds": [
+      "graph-multistage-speed"
+    ],
+    "difficulty": 3,
+    "prompt": "Đồ thị s - t của một người đi xe máy gồm hai giai đoạn: Giai đoạn 1 từ t = 0 đến t = 2 h, người đó đi được 60 km. Giai đoạn 2 từ t = 2 h đến t = 4 h, người đó đi từ mốc 60 km đến mốc 140 km. Hãy tính tốc độ của xe máy trong giai đoạn 2 theo đơn vị km/h.",
+    "knowledge": [
+      "speed.graph.distance_time",
+      "speed.formula"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 40,
+      "unit": "km/h",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tính quãng đường đi được trong giai đoạn 2: lấy mốc 140 km trừ đi mốc 60 km."
+      },
+      {
+        "level": 2,
+        "text": "Thời gian giai đoạn 2: 4 h - 2 h = 2 h. Sau đó lấy quãng đường giai đoạn 2 chia cho thời gian giai đoạn 2."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Số liệu giai đoạn 2",
+        "body": "- Quãng đường đi được trong giai đoạn 2: $\\Delta s = 140 - 60 = 80\\text{ km}$.\\n- Thời gian thực hiện giai đoạn 2: $\\Delta t = 4 - 2 = 2\\text{ h}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tốc độ",
+        "body": "Tốc độ giai đoạn 2 là: $v_2 = \\frac{\\Delta s}{\\Delta t}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$v_2 = \\frac{80}{2} = 40\\text{ km/h}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tốc độ trong giai đoạn 2 là **40 km/h**."
+      }
+    ],
+    "finalSolution": "Quãng đường giai đoạn 2: $\\Delta s = 140 - 60 = 80\\text{ km}$. Tốc độ: $v_2 = \\frac{80}{2} = 40\\text{ km/h}$.",
+    "commonMistakes": [
+      {
+        "id": "divided-total-by-total",
+        "message": "Bạn đã lấy toàn bộ 140 chia cho 4 ra 35. Đề bài chỉ hỏi tốc độ trong giai đoạn 2 (quãng đường 80 km trong 2 h).",
+        "trapAnswers": [
+          "35",
+          "35 km/h",
+          "70",
+          "70 km/h"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b03-mcq-007",
+    "lessonId": "phy-g7-b03",
+    "sgkBaiSo": 10,
+    "skillIds": [
+      "graph-table-interpretation"
+    ],
+    "difficulty": 2,
+    "prompt": "Bảng ghi lại hành trình bạn Nam đi bộ từ nhà đến trường như sau: Lúc t = 0 min (s = 0 m); lúc t = 15 min (s = 900 m); lúc t = 25 min (s = 900 m); lúc t = 40 min (s = 1 800 m). Nhận xét nào sau đây về hành trình của Nam là đúng?",
+    "knowledge": [
+      "speed.graph.distance_time"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Từ phút 25 đến phút 40 Nam quay trở về nhà"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nam dừng lại nghỉ hoặc mua đồ trong 10 phút (từ phút 15 đến phút 25)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Trong 15 phút đầu Nam đi với tốc độ lớn hơn đoạn cuối"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nam đi liên tục không dừng lại trong suốt 40 phút"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Quan sát mốc quãng đường tại thời điểm 15 phút và 25 phút: cả hai thời điểm đều ở mốc 900 m."
+      },
+      {
+        "level": 2,
+        "text": "Quãng đường không đổi trong khoảng thời gian từ phút 15 đến phút 25 (kéo dài 10 phút), chứng tỏ Nam đang đứng yên."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đọc bảng số liệu",
+        "body": "Từ phút thứ 15 đến phút thứ 25, vị trí của Nam giữ nguyên ở mốc $s = 900\\text{ m}$."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân tích trạng thái",
+        "body": "Khoảng thời gian $\\Delta t = 25 - 15 = 10\\text{ phút}$ quãng đường không tăng thêm, nghĩa là Nam đứng yên (dừng lại)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nhận xét đúng là: **Nam dừng lại nghỉ hoặc mua đồ trong 10 phút (từ phút 15 đến phút 25)**."
+      }
+    ],
+    "finalSolution": "Tại phút 15 và 25 đều ở mốc 900 m, vậy Nam đã dừng lại trong **$25 - 15 = 10\\text{ phút}$**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b03-tf-008",
+    "lessonId": "phy-g7-b03",
+    "sgkBaiSo": 10,
+    "skillIds": [
+      "graph-properties-true-false"
+    ],
+    "difficulty": 3,
+    "prompt": "Xác định tính Đúng hay Sai của các phát biểu sau về đồ thị quãng đường – thời gian:",
+    "knowledge": [
+      "speed.graph.distance_time"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Đồ thị quãng đường – thời gian của một vật chuyển động đều là một đường thẳng đi qua gốc tọa độ O.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Trên đồ thị s - t, đường biểu diễn càng gần trục thời gian (càng ít dốc) thì tốc độ chuyển động càng lớn.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Từ đồ thị s - t, ta có thể xác định được vị trí của vật tại một thời điểm bất kì nằm trong khoảng thời gian khảo sát.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Chuyển động đều có quãng đường tỉ lệ thuận với thời gian (s = v * t), dạng đồ thị y = ax là đường thẳng qua gốc tọa độ."
+      },
+      {
+        "level": 2,
+        "text": "Đường càng dốc (nghiêng đứng về phía trục s) thì tốc độ càng lớn, đường càng lài (gần trục t) thì tốc độ càng nhỏ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 3 mệnh đề",
+        "body": "Đánh giá tính đúng/sai của 3 khẳng định về đặc điểm của đồ thị quãng đường - thời gian."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu kiến thức SGK",
+        "body": "- Mệnh đề 1: ĐÚNG. Với chuyển động đều $s = v \\times t$ ($v$ là hằng số), đồ thị $s - t$ là đoạn thẳng đi qua gốc tọa độ O.\\n- Mệnh đề 2: SAI. Đường càng ít dốc (càng lài về trục thời gian) thì tốc độ càng nhỏ; đường càng dốc đứng thì tốc độ mới càng lớn.\\n- Mệnh đề 3: ĐÚNG. Từ giá trị thời gian $t$ dóng lên đồ thị rồi dóng ngang sang trục tung cho ta vị trí quãng đường $s$ tương ứng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự đáp án là **Đúng - Sai - Đúng**."
+      }
+    ],
+    "finalSolution": "Mệnh đề 1: **Đúng**; Mệnh đề 2: **Sai**; Mệnh đề 3: **Đúng**.",
+    "commonMistakes": []
+  }
+]

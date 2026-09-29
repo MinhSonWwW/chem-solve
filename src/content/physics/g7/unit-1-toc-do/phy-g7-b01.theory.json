@@ -1,0 +1,76 @@
+{
+  "lessonId": "phy-g7-b01",
+  "nodeId": "phy-g7-b01-theory",
+  "title": "Lý thuyết: Tốc độ chuyển động",
+  "subtitle": "Bài 8 SGK Khoa học tự nhiên 7 (Kết nối tri thức)",
+  "sgkBaiSo": 8,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm cốt lõi",
+      "badgeColor": "cyan",
+      "title": "1. Khái niệm tốc độ",
+      "content": "Để biết một vật chuyển động nhanh hay chậm, người ta so sánh quãng đường vật đi được trong cùng một khoảng thời gian.",
+      "bulletPoints": [
+        "Tốc độ là đại lượng cho biết mức độ nhanh hay chậm của chuyển động.",
+        "Tốc độ chuyển động được xác định bằng quãng đường đi được trong một đơn vị thời gian.",
+        "Vật chuyển động càng nhanh khi đi được quãng đường càng dài trong cùng một khoảng thời gian (hoặc đi cùng quãng đường trong thời gian ngắn hơn)."
+      ],
+      "callout": "Ghi nhớ: Tốc độ càng lớn thì vật chuyển động càng nhanh; tốc độ càng nhỏ thì vật chuyển động càng chậm."
+    },
+    {
+      "id": "c2",
+      "badge": "Công thức vàng",
+      "badgeColor": "amber",
+      "title": "2. Công thức tính tốc độ",
+      "content": "Nếu gọi quãng đường đi được là s và thời gian đi hết quãng đường đó là t, thì tốc độ v được tính theo công thức:",
+      "bulletPoints": [
+        "v = s / t (trong đó v là tốc độ, s là quãng đường, t là thời gian)",
+        "Từ đó suy ra công thức tính quãng đường: s = v * t",
+        "Công thức tính thời gian chuyển động: t = s / v"
+      ],
+      "callout": "Lưu ý quan trọng: Khi áp dụng công thức, các đại lượng s và t phải tương ứng cùng một hệ đơn vị (ví dụ s tính theo m thì t tính theo s; s tính theo km thì t tính theo h)."
+    },
+    {
+      "id": "c3",
+      "badge": "Quy đổi đơn vị",
+      "badgeColor": "emerald",
+      "title": "3. Đơn vị đo tốc độ & Tốc kế",
+      "content": "Đơn vị đo tốc độ phụ thuộc vào đơn vị đo độ dài và đơn vị đo thời gian.",
+      "bulletPoints": [
+        "Đơn vị đo tốc độ trong hệ SI là mét trên giây (kí hiệu: m/s).",
+        "Đơn vị đo tốc độ thường dùng trong đời sống và giao thông là kilômét trên giờ (kí hiệu: km/h).",
+        "Cách đổi đơn vị: 1 m/s = 3,6 km/h; ngược lại 1 km/h = 1 / 3,6 m/s ≈ 0,28 m/s.",
+        "Tốc kế (đồng hồ đo tốc độ): Dụng cụ gắn trên ô tô, xe máy để đo trực tiếp tốc độ chuyển động của phương tiện."
+      ],
+      "callout": "Ví dụ thực tế: Người đi bộ có tốc độ khoảng 1,5 m/s (5,4 km/h); người đi xe đạp khoảng 4 m/s (14,4 km/h); xe máy đi trong thành phố khoảng 10 m/s (36 km/h)."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Đơn vị đo tốc độ hợp pháp trong Hệ đo lường quốc tế (hệ SI) là gì?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Mét trên giây (m/s)",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Kilômét trên giờ (km/h)",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Xentimét trên giây (cm/s)",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Kilômét trên giây (km/s)",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 7 (Bài 8: Tốc độ chuyển động), đơn vị đo tốc độ chuẩn trong hệ SI là mét trên giây (kí hiệu: m/s)."
+  }
+}

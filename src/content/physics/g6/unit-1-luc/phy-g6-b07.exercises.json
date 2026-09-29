@@ -1,0 +1,368 @@
+[
+  {
+    "id": "phy-g6-b07-mcq-001",
+    "lessonId": "phy-g6-b07",
+    "sgkBaiSo": 42,
+    "skillIds": [
+      "spring-elastic-deformation"
+    ],
+    "difficulty": 1,
+    "prompt": "Một chiếc lò xo sau khi bị kéo dãn hoặc nén, nếu thôi không tác dụng lực nữa mà nó **tự động trở về hình dạng và kích thước ban đầu**, thì biến dạng của lò xo đó được gọi là gì?",
+    "knowledge": [
+      "force.spring.stretch"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Biến dạng đàn hồi"
+        },
+        {
+          "id": "opt-b",
+          "label": "Biến dạng dẻo"
+        },
+        {
+          "id": "opt-c",
+          "label": "Biến dạng gãy nứt"
+        },
+        {
+          "id": "opt-d",
+          "label": "Biến dạng vĩnh viễn"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khả năng tự lấy lại hình dạng ban đầu của vật thể được gọi bằng từ chỉ tính đàn hồi."
+      },
+      {
+        "level": 2,
+        "text": "Hiện tượng này gọi là biến dạng đàn hồi, và chiếc lò xo là một vật có tính đàn hồi."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận biết khái niệm",
+        "body": "Câu hỏi kiểm tra định nghĩa về hiện tượng biến dạng đàn hồi trong SGK KHTN 6."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Biến dạng mà vật tự lấy lại hình dạng ban đầu khi thôi tác dụng lực gọi là biến dạng đàn hồi."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Biến dạng của lò xo gọi là **Biến dạng đàn hồi**."
+      }
+    ],
+    "finalSolution": "Hiện tượng lò xo tự lấy lại hình dạng ban đầu gọi là **biến dạng đàn hồi**.",
+    "commonMistakes": [
+      {
+        "id": "confused-plastic",
+        "message": "Biến dạng dẻo hoặc biến dạng vĩnh viễn là khi vật bị biến dạng luôn mà không thể tự co lại như cũ (ví dụ: đất nặn)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b07-mcq-002",
+    "lessonId": "phy-g6-b07",
+    "sgkBaiSo": 42,
+    "skillIds": [
+      "spring-proportional-rule"
+    ],
+    "difficulty": 1,
+    "prompt": "Độ dãn của một chiếc lò xo treo thẳng đứng có mối quan hệ như thế nào với khối lượng của các vật nặng được treo vào nó?",
+    "knowledge": [
+      "force.spring.stretch"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Không phụ thuộc vào khối lượng của vật treo"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tỉ lệ thuận với khối lượng của vật treo"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tỉ lệ với bình phương khối lượng của vật treo"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tỉ lệ nghịch với khối lượng của vật treo"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi ta tăng khối lượng vật treo lên 2 lần thì độ dãn của lò xo cũng tăng lên 2 lần."
+      },
+      {
+        "level": 2,
+        "text": "Độ dãn của lò xo treo thẳng đứng tỉ lệ thuận với khối lượng của vật treo."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích quy luật",
+        "body": "Tìm mối liên hệ định lượng giữa độ dãn lò xo và khối lượng vật treo."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy luật SGK KHTN 6",
+        "body": "Theo kết quả thí nghiệm trong SGK Bài 42: Độ dãn của lò xo treo thẳng đứng tỉ lệ thuận với khối lượng vật treo."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Mối quan hệ là **Tỉ lệ thuận với khối lượng của vật treo**."
+      }
+    ],
+    "finalSolution": "Độ dãn của lò xo **tỉ lệ thuận** với khối lượng vật treo.",
+    "commonMistakes": [
+      {
+        "id": "confused-inverse",
+        "message": "Tỉ lệ nghịch nghĩa là khối lượng càng tăng thì dãn càng ít, điều này hoàn toàn trái ngược với thực tế."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b07-calc-003",
+    "lessonId": "phy-g6-b07",
+    "sgkBaiSo": 42,
+    "skillIds": [
+      "spring-calculate-stretch"
+    ],
+    "difficulty": 2,
+    "prompt": "Một lò xo treo thẳng đứng có chiều dài tự nhiên ban đầu là 15 cm. Khi móc một quả nặng vào đầu dưới của lò xo, người ta đo được chiều dài của lò xo lúc này là 18,5 cm. Độ dãn của chiếc lò xo đó là bao nhiêu cm?",
+    "knowledge": [
+      "force.spring.stretch"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 3.5,
+      "unit": "cm",
+      "decimals": 1
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Độ dãn bằng chiều dài sau khi dãn trừ đi chiều dài ban đầu: Δl = l - l0."
+      },
+      {
+        "level": 2,
+        "text": "Lấy 18,5 cm trừ đi 15 cm: 18,5 - 15 = ?"
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tóm tắt dữ kiện",
+        "body": "Chiều dài tự nhiên $l_0 = 15\\text{ cm}$; chiều dài khi treo vật $l = 18,5\\text{ cm}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính độ dãn",
+        "body": "Độ dãn của lò xo: $\\Delta l = l - l_0 = 18,5 - 15 = 3,5\\text{ cm}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Độ dãn của lò xo là **3,5 cm**."
+      }
+    ],
+    "finalSolution": "Độ dãn của lò xo là $\\Delta l = 18,5 - 15 =$ **3,5 cm**.",
+    "commonMistakes": [
+      {
+        "id": "confused-length-with-stretch",
+        "message": "18,5 cm là toàn bộ chiều dài của lò xo sau khi dãn, độ dãn chỉ là phần dài thêm ra (3,5 cm)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b07-calc-004",
+    "lessonId": "phy-g6-b07",
+    "sgkBaiSo": 42,
+    "skillIds": [
+      "spring-proportional-calc"
+    ],
+    "difficulty": 2,
+    "prompt": "Treo một quả cân có khối lượng 100 g vào một chiếc lò xo thẳng đứng thì lò xo dãn ra thêm một đoạn là 1,5 cm. Nếu treo vào lò xo đó 3 quả cân như thế (tổng khối lượng 300 g) thì độ dãn của lò xo sẽ là bao nhiêu cm?",
+    "knowledge": [
+      "force.spring.stretch"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 4.5,
+      "unit": "cm",
+      "decimals": 1
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khối lượng tăng lên gấp 3 lần (từ 100 g lên 300 g), vậy độ dãn cũng tăng lên gấp mấy lần?"
+      },
+      {
+        "level": 2,
+        "text": "Vì độ dãn tỉ lệ thuận với khối lượng, ta lấy 1,5 cm nhân với 3: 1,5 × 3 = ?"
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích tỉ lệ",
+        "body": "Khối lượng ban đầu $m_1 = 100\\text{ g} \\rightarrow \\Delta l_1 = 1,5\\text{ cm}$. Khối lượng mới $m_2 = 300\\text{ g}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính độ dãn mới",
+        "body": "Ta thấy $m_2 = 3 \\times m_1$. Do độ dãn tỉ lệ thuận với khối lượng: $\\Delta l_2 = 3 \\times \\Delta l_1 = 3 \\times 1,5 = 4,5\\text{ cm}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Độ dãn mới của lò xo là **4,5 cm**."
+      }
+    ],
+    "finalSolution": "Độ dãn của lò xo là $1,5 \\times 3 =$ **4,5 cm**.",
+    "commonMistakes": [
+      {
+        "id": "added-instead-of-multiplied",
+        "message": "Nhớ áp dụng tính chất tỉ lệ thuận: khối lượng gấp 3 thì độ dãn gấp 3."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b07-calc-005",
+    "lessonId": "phy-g6-b07",
+    "sgkBaiSo": 42,
+    "skillIds": [
+      "spring-total-length"
+    ],
+    "difficulty": 2,
+    "prompt": "Một lò xo có chiều dài tự nhiên là 20 cm. Khi treo một vật nặng vào, lò xo bị dãn ra thêm một đoạn là 4 cm. Chiều dài tổng cộng của chiếc lò xo khi treo vật đó là bao nhiêu cm?",
+    "knowledge": [
+      "force.spring.stretch"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 24,
+      "unit": "cm",
+      "decimals": 0
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Chiều dài lúc sau bằng chiều dài ban đầu cộng thêm độ dãn: l = l0 + Δl."
+      },
+      {
+        "level": 2,
+        "text": "Lấy 20 cm cộng với 4 cm: 20 + 4 = ?"
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tóm tắt dữ kiện",
+        "body": "Chiều dài tự nhiên $l_0 = 20\\text{ cm}$; độ dãn $\\Delta l = 4\\text{ cm}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính chiều dài tổng cộng",
+        "body": "Chiều dài của lò xo khi treo vật: $l = l_0 + \\Delta l = 20 + 4 = 24\\text{ cm}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Chiều dài của lò xo là **24 cm**."
+      }
+    ],
+    "finalSolution": "Chiều dài tổng cộng của lò xo là $20 + 4 =$ **24 cm**.",
+    "commonMistakes": [
+      {
+        "id": "subtracted-instead-of-added",
+        "message": "Treo vật làm lò xo dãn dài ra nên phải làm phép cộng (20 + 4), không trừ thành 16 cm."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b07-mcq-006",
+    "lessonId": "phy-g6-b07",
+    "sgkBaiSo": 42,
+    "skillIds": [
+      "spring-dynamometer-usage"
+    ],
+    "difficulty": 3,
+    "prompt": "Trước khi sử dụng một chiếc lực kế lò xo để đo lực kéo trong phòng thực hành, thao tác chuẩn bị nào sau đây là **bắt buộc phải thực hiện** để đảm bảo phép đo chính xác?",
+    "knowledge": [
+      "force.spring.stretch"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Kéo lò xo dãn hết cỡ ra rồi thả mạnh tay"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hiệu chỉnh đưa kim chỉ thị về đúng vạch số 0 khi chưa treo vật"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ngâm lực kế vào nước nóng để lò xo dẻo hơn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Đặt lực kế nằm nghiêng góc 30 độ so với mặt sàn"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Giống như cân hay đồng hồ, kim chỉ thị phải chỉ đúng vạch số 0 trước khi bắt đầu đo."
+      },
+      {
+        "level": 2,
+        "text": "Thao tác đưa kim chỉ thị về vạch số 0 (hiệu chỉnh điểm 0) giúp loại bỏ sai số ban đầu."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Kỹ thuật sử dụng lực kế",
+        "body": "Thao tác chuẩn bị bắt buộc trước khi thực hiện phép đo với lực kế."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc sử dụng dụng cụ đo",
+        "body": "Trước khi đo, luôn phải kiểm tra và hiệu chỉnh kim chỉ thị của lực kế về đúng vạch số 0."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thao tác bắt buộc là **Hiệu chỉnh đưa kim chỉ thị về đúng vạch số 0 khi chưa treo vật**."
+      }
+    ],
+    "finalSolution": "Phải **hiệu chỉnh kim chỉ thị về đúng vạch số 0** trước khi đo để tránh sai số.",
+    "commonMistakes": [
+      {
+        "id": "stretched-over-limit",
+        "message": "Kéo dãn hết cỡ có thể làm lò xo vượt quá giới hạn đàn hồi và bị hỏng vĩnh viễn."
+      }
+    ]
+  }
+]

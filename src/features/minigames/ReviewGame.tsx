@@ -4,6 +4,7 @@ import { Check, X, Trophy, Layers } from 'lucide-react';
 import { MinigameShell, Button } from '@/design-system';
 import { sound } from '@/lib/audio';
 import { useUserStore } from '@/features/gamification/useUserStore';
+import { useActiveSubject } from '@/content/subjects';
 import {
   LeitnerCard,
   loadStoredLeitnerCards,
@@ -13,6 +14,7 @@ import {
   createLeitnerCard,
 } from '@/engine/review/leitner';
 import trueFalseData from '@/content/kb/true-false-statements.json';
+import physicsTrueFalseData from '@/content/kb/physics/true-false-statements.json';
 
 interface SessionItem {
   card: LeitnerCard;
@@ -21,6 +23,9 @@ interface SessionItem {
 
 export const ReviewGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const { addXp, addHearts } = useUserStore();
+  const { subject: activeSubject } = useActiveSubject();
+  const isPhysics = activeSubject === 'physics';
+
   const [sessionQueue, setSessionQueue] = useState<SessionItem[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -34,8 +39,10 @@ export const ReviewGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     let stored = loadStoredLeitnerCards();
     if (stored.length === 0) {
       // Seed default sample review cards from statements for new users
-      stored = trueFalseData.slice(0, 10).map((q, i) =>
-        createLeitnerCard(q.id, 'g8-b03', Date.now() - (i + 1) * 86400000)
+      const pool = isPhysics ? physicsTrueFalseData : trueFalseData;
+      const lessonPrefix = isPhysics ? 'phy-g8-b13' : 'g8-b03';
+      stored = pool.slice(0, 10).map((q, i) =>
+        createLeitnerCard(q.id, lessonPrefix, Date.now() - (i + 1) * 86400000)
       );
       saveStoredLeitnerCards(stored);
     }
@@ -46,11 +53,12 @@ export const ReviewGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       due = [...stored].sort((a, b) => a.lastReviewed - b.lastReviewed).slice(0, 5);
     }
 
+    const pool = isPhysics ? physicsTrueFalseData : trueFalseData;
     const queue: SessionItem[] = due.map((c) => {
-      const match = trueFalseData.find((q) => q.id === c.exerciseId);
+      const match = pool.find((q) => q.id === c.exerciseId);
       return {
         card: c,
-        question: match || trueFalseData[0],
+        question: match || pool[0],
       };
     });
 
@@ -60,7 +68,7 @@ export const ReviewGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     setCombo(0);
     setSelectedAns(null);
     setIsGameOver(false);
-  }, []);
+  }, [isPhysics]);
 
   useEffect(() => {
     initSession();
@@ -122,7 +130,12 @@ export const ReviewGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
 
   return (
     <MinigameShell
-      title="Review Game (Ôn tập Leitner)"
+      title={isPhysics ? 'Review Game — Ôn tập Leitner Vật lý' : 'Review Game (Ôn tập Leitner)'}
+      description={
+        isPhysics
+          ? 'Ôn luyện các nhận định và kiến thức Vật lý theo chu kỳ ngắt quãng'
+          : 'Ôn các câu hỏi từng làm sai theo chu kỳ lặp lại ngắt quãng'
+      }
       skillId="leitner-review"
       score={score}
       combo={combo}

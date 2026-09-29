@@ -1,0 +1,532 @@
+[
+  {
+    "id": "phy-g8-b02-mcq-001",
+    "lessonId": "phy-g8-b02",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "density-lab-tools"
+    ],
+    "difficulty": 1,
+    "prompt": "Để xác định khối lượng riêng của một vật rắn không thấm nước trong phòng thực hành, hai dụng cụ đo bắt buộc cần dùng là:",
+    "knowledge": [
+      "formula.density"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cân điện tử (hoặc cân Robecvan) và bình chia độ (hoặc thước đo)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Thước cuộn và ampe kế"
+        },
+        {
+          "id": "opt-c",
+          "label": "Nhiệt kế và lực kế"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tốc kế và đồng hồ bấm giây"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Công thức xác định khối lượng riêng là D = m / V."
+      },
+      {
+        "level": 2,
+        "text": "Cần một dụng cụ đo khối lượng m và một dụng cụ đo thể tích V."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định mục tiêu",
+        "body": "Tìm dụng cụ cần thiết để đo khối lượng m và thể tích V của vật rắn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Dụng cụ chuẩn",
+        "body": "Để đo khối lượng m ta dùng cân. Để đo thể tích V ta dùng bình chia độ (hoặc thước đo nếu vật có hình dạng học chuẩn)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hai dụng cụ bắt buộc là **cân điện tử và bình chia độ**."
+      }
+    ],
+    "finalSolution": "Hai dụng cụ cần thiết là **cân điện tử và bình chia độ (hoặc thước đo)**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-with-force-meter",
+        "message": "Lực kế đo trọng lượng P (N), tuy có thể suy ra m nhưng trong thực hành SGK bài 14 dùng cân để đo trực tiếp khối lượng m."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b02-ord-002",
+    "lessonId": "phy-g8-b02",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "density-lab-procedure"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp các thao tác sau theo đúng thứ tự quy trình thực hành xác định khối lượng riêng của một hòn sỏi bằng bình chia độ:",
+    "knowledge": [
+      "formula.density"
+    ],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Lau khô hòn sỏi và dùng cân điện tử để đo khối lượng m của nó",
+        "Đổ một lượng nước vừa đủ vào bình chia độ và đọc thể tích nước ban đầu V1",
+        "Buộc chỉ mảnh vào hòn sỏi, nhẹ nhàng thả chìm hoàn toàn vào bình và đọc thể tích V2",
+        "Tính thể tích hòn sỏi V = V2 - V1 và tính khối lượng riêng D = m / V"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nên cân sỏi khi còn khô ráo trước khi thả vào nước."
+      },
+      {
+        "level": 2,
+        "text": "Sau khi có khối lượng m, ta đo thể tích nước trước (V1) rồi đo thể tích sau khi thả sỏi (V2), cuối cùng tính D = m / V."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nguyên tắc thứ tự",
+        "body": "Phải cân sỏi trước khi thả vào nước để tránh nước dính vào làm tăng khối lượng sai lệch."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Các bước tiến hành",
+        "body": "1. Cân sỏi khô -> 2. Đọc V1 nước ban đầu -> 3. Thả chìm sỏi đọc V2 -> 4. Tính V = V2 - V1 và D = m/V."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Quy trình thực hiện gồm 4 bước tuần tự như trên."
+      }
+    ],
+    "finalSolution": "Quy trình chuẩn: Cân sỏi lúc khô -> Đọc V1 nước ban đầu -> Thả sỏi đọc V2 -> Tính V và D.",
+    "commonMistakes": [
+      {
+        "id": "weigh-after-soaking",
+        "message": "Nếu thả sỏi vào nước rồi mới vớt ra cân, nước đọng lại trên sỏi sẽ làm sai lệch khối lượng m."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b02-num-003",
+    "lessonId": "phy-g8-b02",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "density-lab-calc-rock"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong một buổi thực hành, học sinh đo khối lượng riêng của một hòn sỏi: Cân khối lượng sỏi được m = 54 g. Đổ nước vào bình chia độ tới vạch V1 = 60 mL, thả chìm hòn sỏi vào thì nước dâng lên vạch V2 = 80 mL. Khối lượng riêng của hòn sỏi này là bao nhiêu g/cm³?",
+    "knowledge": [
+      "formula.density"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 2.7,
+      "unit": "g/cm³",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tính thể tích hòn sỏi: V = V2 - V1 (lưu ý 1 mL = 1 cm³)."
+      },
+      {
+        "level": 2,
+        "text": "Khối lượng riêng D = m / V = 54 / (80 - 60)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt số liệu đo",
+        "body": "$m = 54\\text{ g}$; $V_1 = 60\\text{ mL}$; $V_2 = 80\\text{ mL}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính thể tích sỏi",
+        "body": "$V = V_2 - V_1 = 80 - 60 = 20\\text{ mL} = 20\\text{ cm}^3$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính khối lượng riêng",
+        "body": "$D = \\frac{m}{V} = \\frac{54}{20} = 2,7\\text{ g/cm}^3$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khối lượng riêng của hòn sỏi là **2,7 g/cm³** (tương đương 2 700 kg/m³)."
+      }
+    ],
+    "finalSolution": "Thể tích sỏi: $V = 80 - 60 = 20\\text{ cm}^3$. Khối lượng riêng: $D = \\frac{54}{20} = 2,7\\text{ g/cm}^3$.",
+    "commonMistakes": [
+      {
+        "id": "forgot-to-subtract-initial-volume",
+        "message": "Bạn đã lấy m chia cho V2 (54 / 80 = 0,675) thay vì chia cho phần thể tích dâng lên (V2 - V1 = 20 cm3).",
+        "trapAnswers": [
+          "0.675",
+          "0,675"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b02-num-004",
+    "lessonId": "phy-g8-b02",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "density-lab-calc-block"
+    ],
+    "difficulty": 2,
+    "prompt": "Một học sinh thực hành đo khối lượng riêng của một khối gỗ hình hộp chữ nhật: Dùng thước kẻ đo được các kích thước chiều dài a = 5 cm, chiều rộng b = 4 cm, chiều cao c = 3 cm. Cân khối gỗ trên cân điện tử thu được m = 48 g. Khối lượng riêng của khối gỗ này là bao nhiêu g/cm³?",
+    "knowledge": [
+      "formula.density"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 0.8,
+      "unit": "g/cm³",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tính thể tích khối hộp chữ nhật V = a x b x c."
+      },
+      {
+        "level": 2,
+        "text": "Tính D = m / V = 48 / 60."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt số liệu đo",
+        "body": "$a = 5\\text{ cm}$; $b = 4\\text{ cm}$; $c = 3\\text{ cm}$; $m = 48\\text{ g}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính thể tích khối gỗ",
+        "body": "$V = a \\times b \\times c = 5 \\times 4 \\times 3 = 60\\text{ cm}^3$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính khối lượng riêng",
+        "body": "$D = \\frac{m}{V} = \\frac{48}{60} = 0,8\\text{ g/cm}^3$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khối lượng riêng của khối gỗ là **0,8 g/cm³** (tương đương 800 kg/m³)."
+      }
+    ],
+    "finalSolution": "Thể tích khối gỗ: $V = 5 \\times 4 \\times 3 = 60\\text{ cm}^3$. Khối lượng riêng: $D = \\frac{48}{60} = 0,8\\text{ g/cm}^3$.",
+    "commonMistakes": [
+      {
+        "id": "inverted-division",
+        "message": "Bạn đã lấy V chia cho m (60 / 48 = 1,25). Công thức đúng là D = m / V = 48 / 60 = 0,8.",
+        "trapAnswers": [
+          "1.25",
+          "1,25"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b02-num-005",
+    "lessonId": "phy-g8-b02",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "density-lab-calc-liquid"
+    ],
+    "difficulty": 2,
+    "prompt": "Để xác định khối lượng riêng của dầu ăn: Cân cốc rỗng ban đầu được m1 = 45 g. Rót đúng V = 50 mL dầu ăn vào cốc rồi cân lại được m2 = 85 g. Khối lượng riêng của mẫu dầu ăn này là bao nhiêu g/cm³?",
+    "knowledge": [
+      "density.oil",
+      "formula.density"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 0.8,
+      "unit": "g/cm³",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khối lượng riêng của dầu ăn = khối lượng của dầu / thể tích dầu."
+      },
+      {
+        "level": 2,
+        "text": "Khối lượng dầu ăn là m = m2 - m1 = 85 - 45 = 40 g. Thể tích V = 50 mL = 50 cm³."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt số liệu đo",
+        "body": "$m_1 = 45\\text{ g}$ (cốc rỗng); $m_2 = 85\\text{ g}$ (cốc + dầu); $V = 50\\text{ mL} = 50\\text{ cm}^3$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính khối lượng dầu ăn",
+        "body": "$m = m_2 - m_1 = 85 - 45 = 40\\text{ g}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính khối lượng riêng",
+        "body": "$D = \\frac{m}{V} = \\frac{40}{50} = 0,8\\text{ g/cm}^3$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khối lượng riêng của dầu ăn là **0,8 g/cm³** (tương đương 800 kg/m³)."
+      }
+    ],
+    "finalSolution": "Khối lượng dầu ăn: $m = 85 - 45 = 40\\text{ g}$. Khối lượng riêng: $D = \\frac{40}{50} = 0,8\\text{ g/cm}^3$.",
+    "commonMistakes": [
+      {
+        "id": "forgot-to-subtract-tare",
+        "message": "Bạn quên trừ khối lượng cốc rỗng m1, lấy trực tiếp m2 / V (85 / 50 = 1,7). Phải trừ bì: m = m2 - m1 = 40 g.",
+        "trapAnswers": [
+          "1.7",
+          "1,7"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b02-mcq-006",
+    "lessonId": "phy-g8-b02",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "density-lab-overflow-can"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi cần đo thể tích của một vật rắn không thấm nước nhưng kích thước vật quá lớn, không thể bỏ lọt vào bình chia độ, người ta sử dụng thiết bị bổ trợ nào sau đây?",
+    "knowledge": [
+      "formula.density"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Nung chảy vật rắn thành chất lỏng để đo"
+        },
+        {
+          "id": "opt-b",
+          "label": "Chỉ dùng cân để ước lượng thể tích"
+        },
+        {
+          "id": "opt-c",
+          "label": "Bình tràn kết hợp bình chứa để thu và đo thể tích nước tràn ra"
+        },
+        {
+          "id": "opt-d",
+          "label": "Đập vỡ vật rắn thành từng mảnh nhỏ rồi đo từng mảnh"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi thả vật vào bình tràn chứa đầy nước, thể tích nước tràn ra chính bằng thể tích của vật."
+      },
+      {
+        "level": 2,
+        "text": "Dùng bình tràn kết hợp bình chứa rồi đo nước tràn bằng bình chia độ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tình huống thực nghiệm",
+        "body": "Vật rắn không lọt bình chia độ, cần phương pháp đo thể tích không phá hủy mẫu vật."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phương pháp bình tràn",
+        "body": "Theo SGK KHTN 8, khi vật không lọt bình chia độ, dùng bình tràn đổ đầy nước tới miệng vòi. Khi thả vật vào, nước tràn ra bình chứa đúng bằng thể tích vật."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thiết bị bổ trợ là **bình tràn kết hợp bình chứa**."
+      }
+    ],
+    "finalSolution": "Sử dụng **bình tràn kết hợp bình chứa** để thu và đo thể tích nước bị vật đẩy tràn ra ngoài.",
+    "commonMistakes": [
+      {
+        "id": "breaking-sample",
+        "message": "Không được đập vỡ vật thể vì có thể làm mất vụn mẫu hoặc làm thay đổi cấu trúc rỗng bên trong vật."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b02-tf-007",
+    "lessonId": "phy-g8-b02",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "density-lab-error-tf"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai của các khẳng định sau về thao tác thực hành đo khối lượng riêng:",
+    "knowledge": [
+      "formula.density"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Khi đọc thể tích chất lỏng trong bình chia độ, cần đặt mắt nhìn ngang tầm với phần đáy lõm của màng cong chất lỏng.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Để có kết quả đo chính xác nhất, chỉ cần tiến hành đo một lần duy nhất và ghi ngay kết quả vào báo cáo.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Trước khi đặt vật lên bàn cân điện tử, phải kiểm tra xem màn hình cân đã về đúng số 0 (Zero/Tare) chưa.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trong thực nghiệm, việc đo lặp lại nhiều lần (ít nhất 3 lần) giúp giảm sai số ngẫu nhiên."
+      },
+      {
+        "level": 2,
+        "text": "Hiệu chuẩn cân về 0 và quan sát mặt thoáng ngang tầm mắt là các thao tác bắt buộc."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 1",
+        "body": "Đặt mắt ngang đáy lõm mặt thoáng (meniscus) là chuẩn quy tắc đọc bình chia độ -> Đúng."
+      },
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 2",
+        "body": "Đo 1 lần dễ mắc sai số ngẫu nhiên, cần đo ít nhất 3 lần lấy trung bình -> Mệnh đề 2 Sai."
+      },
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 3",
+        "body": "Cần chỉnh cân về số 0 trước khi cân để tránh sai số hệ thống -> Mệnh đề 3 Đúng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự: Đúng - Sai - Đúng."
+      }
+    ],
+    "finalSolution": "Mệnh đề 1: **Đúng**; Mệnh đề 2: **Sai**; Mệnh đề 3: **Đúng**.",
+    "commonMistakes": [
+      {
+        "id": "single-measurement-trap",
+        "message": "Quy tắc thực nghiệm khoa học luôn yêu cầu đo lặp lại nhiều lần để loại bỏ sai số bất thường."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b02-mcq-008",
+    "lessonId": "phy-g8-b02",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "density-lab-error-analysis"
+    ],
+    "difficulty": 3,
+    "prompt": "Khi thực hành đo thể tích hòn sỏi bằng bình chia độ, một bạn học sinh sơ ý để một số bọt khí lớn bám chặt xung quanh hòn sỏi mà không làm tan bọt khí. Sai sót này sẽ dẫn đến kết quả tính khối lượng riêng D của hòn sỏi như thế nào so với giá trị thực tế?",
+    "knowledge": [
+      "formula.density"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Khối lượng riêng tính ra hoàn toàn không bị ảnh hưởng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Khối lượng riêng tính ra nhỏ hơn giá trị thực tế"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khối lượng riêng tính ra sẽ bằng 0"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khối lượng riêng tính ra lớn hơn giá trị thực tế"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bọt khí bám vào hòn sỏi chiếm thêm thể tích, làm thể tích đo được V_đo lớn hơn thể tích thực V_thực."
+      },
+      {
+        "level": 2,
+        "text": "Khi mẫu số V trong công thức D = m / V tăng lên, giá trị của phân số D sẽ giảm xuống."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích ảnh hưởng của bọt khí",
+        "body": "Bọt khí bám vào sỏi làm phần nước bị chiếm chỗ tăng lên $\\Rightarrow V_{\\text{đo}} > V_{\\text{thực}}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Ảnh hưởng đến công thức tính D",
+        "body": "Khối lượng $m$ đo trên cân không đổi. Khối lượng riêng tính toán: $D_{\\text{tính}} = \\frac{m}{V_{\\text{đo}}}$."
+      },
+      {
+        "kind": "compute",
+        "title": "So sánh",
+        "body": "Vì $V_{\\text{đo}} > V_{\\text{thực}}$ nên $D_{\\text{tính}} < D_{\\text{thực}}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Kết quả tính khối lượng riêng sẽ **nhỏ hơn giá trị thực tế**."
+      }
+    ],
+    "finalSolution": "Do bọt khí làm thể tích đo được $V$ tăng lên, nên khối lượng riêng tính theo $D = \\frac{m}{V}$ sẽ **nhỏ hơn giá trị thực tế**.",
+    "commonMistakes": [
+      {
+        "id": "thought-density-increases",
+        "message": "Nhiều bạn nghĩ thể tích tăng thì khối lượng riêng tăng, nhưng V nằm ở mẫu số nên V tăng sẽ làm D giảm."
+      }
+    ]
+  }
+]

@@ -1,0 +1,530 @@
+[
+  {
+    "id": "phy-g7-b01-mcq-001",
+    "lessonId": "phy-g7-b01",
+    "sgkBaiSo": 8,
+    "skillIds": [
+      "speed-concept"
+    ],
+    "difficulty": 1,
+    "prompt": "Tốc độ của một chuyển động cho ta biết điều gì sau đây?",
+    "knowledge": [
+      "speed.formula"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hình dạng quỹ đạo chuyển động"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hướng chuyển động của vật"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mức độ nhanh hay chậm của chuyển động"
+        },
+        {
+          "id": "opt-d",
+          "label": "Quãng đường vật có thể đi tối đa"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi hai xe cùng chạy, đại lượng nào giúp ta kết luận xe nào chạy nhanh hơn?"
+      },
+      {
+        "level": 2,
+        "text": "Tốc độ là đại lượng đặc trưng cho sự nhanh hay chậm của chuyển động."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận dạng khái niệm",
+        "body": "Câu hỏi yêu cầu xác định ý nghĩa vật lí của đại lượng tốc độ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 7 (Bài 8: Tốc độ chuyển động), tốc độ là đại lượng cho biết mức độ nhanh hay chậm của chuyển động."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Mức độ nhanh hay chậm của chuyển động**."
+      }
+    ],
+    "finalSolution": "Tốc độ cho biết **mức độ nhanh hay chậm** của chuyển động.",
+    "commonMistakes": [
+      {
+        "id": "confused-direction",
+        "message": "Tốc độ chỉ đặc trưng cho độ nhanh chậm, không cho biết hướng chuyển động (vận tốc vector mới kèm theo hướng)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b01-mcq-002",
+    "lessonId": "phy-g7-b01",
+    "sgkBaiSo": 8,
+    "skillIds": [
+      "speed-unit"
+    ],
+    "difficulty": 1,
+    "prompt": "Đơn vị đo tốc độ hợp pháp trong Hệ đo lường quốc tế (hệ SI) là:",
+    "knowledge": [
+      "speed.unit.si"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Mét trên giây (m/s)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Kilômét trên giờ (km/h)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mét trên phút (m/min)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Dặm trên giờ (mph)"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đơn vị chiều dài chuẩn trong SI là mét (m), đơn vị thời gian chuẩn là giây (s)."
+      },
+      {
+        "level": 2,
+        "text": "Đơn vị tốc độ chuẩn bằng đơn vị chiều dài chia cho đơn vị thời gian: mét trên giây (m/s)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định câu hỏi",
+        "body": "Đề bài hỏi đơn vị đo tốc độ chuẩn theo hệ SI."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Trong hệ SI, đơn vị đo chiều dài là mét (m), thời gian là giây (s), do đó đơn vị đo tốc độ là m/s."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đơn vị hợp pháp trong hệ SI là **Mét trên giây (m/s)**."
+      }
+    ],
+    "finalSolution": "Đơn vị tốc độ chuẩn trong hệ SI là **m/s (mét trên giây)**.",
+    "commonMistakes": [
+      {
+        "id": "confused-kmh",
+        "message": "km/h là đơn vị rất thông dụng trong đời sống và giao thông, nhưng đơn vị chuẩn trong hệ SI là m/s."
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b01-mcq-003",
+    "lessonId": "phy-g7-b01",
+    "sgkBaiSo": 8,
+    "skillIds": [
+      "speedometer-tool"
+    ],
+    "difficulty": 1,
+    "prompt": "Thiết bị đo tốc độ gắn trên các phương tiện như xe máy, ô tô để người lái xe biết tốc độ tức thời của xe gọi là:",
+    "knowledge": [
+      "speed.unit.si"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Lực kế"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nhiệt kế"
+        },
+        {
+          "id": "opt-c",
+          "label": "Áp kế"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tốc kế (đồng hồ đo tốc độ)"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Dụng cụ này có mặt đồng hồ chia vạch km/h trước tay lái xe máy hoặc trên bảng táp-lô ô tô."
+      },
+      {
+        "level": 2,
+        "text": "Thiết bị đo trực tiếp tốc độ chuyển động được gọi là tốc kế (speedometer)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định dụng cụ đo",
+        "body": "Dụng cụ đo tốc độ lắp trên phương tiện giao thông đường bộ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 7 Bài 8, tốc kế là thiết bị đo trực tiếp tốc độ chuyển động của xe."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thiết bị đó là **Tốc kế (đồng hồ đo tốc độ)**."
+      }
+    ],
+    "finalSolution": "Thiết bị gắn trên xe để đo tốc độ là **tốc kế**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b01-num-004",
+    "lessonId": "phy-g7-b01",
+    "sgkBaiSo": 8,
+    "skillIds": [
+      "speed-conversion"
+    ],
+    "difficulty": 2,
+    "prompt": "Một chiếc ô tô đang chuyển động với tốc độ 54 km/h. Hãy đổi giá trị tốc độ này sang đơn vị m/s.",
+    "knowledge": [
+      "speed.unit.conversion"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 15,
+      "unit": "m/s",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Quy tắc đổi đơn vị: 1 m/s = 3,6 km/h. Vậy muốn đổi từ km/h sang m/s ta lấy số đo chia cho 3,6."
+      },
+      {
+        "level": 2,
+        "text": "Thực hiện phép tính: 54 / 3,6."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tóm tắt đề bài",
+        "body": "Vận tốc $v = 54\\text{ km/h}$. Cần đổi sang đơn vị $\\text{m/s}$."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Công thức đổi đơn vị",
+        "body": "Ta có $1\\text{ km/h} = \\frac{1}{3,6}\\text{ m/s}$. Do đó: $v (\\text{m/s}) = \\frac{v (\\text{km/h})}{3,6}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Thực hiện tính toán",
+        "body": "$v = \\frac{54}{3,6} = 15\\text{ m/s}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp số là **15 m/s**."
+      }
+    ],
+    "finalSolution": "Ta có: $v = 54 : 3,6 = 15\\text{ m/s}$.",
+    "commonMistakes": [
+      {
+        "id": "multiplied-by-3.6",
+        "message": "Bạn đã nhân với 3,6 thay vì chia cho 3,6. Chú ý: Đổi từ km/h sang m/s phải chia cho 3,6.",
+        "trapAnswers": [
+          "194.4",
+          "194,4",
+          "194.4 m/s",
+          "194,4 m/s"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b01-num-005",
+    "lessonId": "phy-g7-b01",
+    "sgkBaiSo": 8,
+    "skillIds": [
+      "speed-compute-v"
+    ],
+    "difficulty": 2,
+    "prompt": "Một bạn học sinh đạp xe trên đoạn đường dài 3 600 m trong thời gian 15 phút. Tính tốc độ chuyển động của bạn học sinh theo đơn vị m/s.",
+    "knowledge": [
+      "speed.formula"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 4,
+      "unit": "m/s",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trước khi tính tốc độ theo m/s, hãy đổi thời gian từ phút sang giây (1 phút = 60 giây)."
+      },
+      {
+        "level": 2,
+        "text": "15 phút = 15 x 60 = 900 s. Sau đó áp dụng công thức v = s / t."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Quãng đường $s = 3\\,600\\text{ m}$; Thời gian $t = 15\\text{ phút}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Đổi đơn vị",
+        "body": "Đổi thời gian ra giây: $t = 15 \\times 60 = 900\\text{ s}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Áp dụng công thức",
+        "body": "Tốc độ đạp xe là: $v = \\frac{s}{t} = \\frac{3\\,600}{900} = 4\\text{ m/s}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tốc độ của bạn học sinh là **4 m/s**."
+      }
+    ],
+    "finalSolution": "Thời gian $t = 15 \\times 60 = 900\\text{ s}$. Tốc độ $v = \\frac{s}{t} = \\frac{3600}{900} = 4\\text{ m/s}$.",
+    "commonMistakes": [
+      {
+        "id": "forgot-to-convert-minutes",
+        "message": "Bạn đã quên đổi thời gian 15 phút ra giây, lấy 3600 chia cho 15 ra 240 m/min chứ không phải m/s.",
+        "trapAnswers": [
+          "240",
+          "240 m/s"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b01-num-006",
+    "lessonId": "phy-g7-b01",
+    "sgkBaiSo": 8,
+    "skillIds": [
+      "speed-compute-s"
+    ],
+    "difficulty": 2,
+    "prompt": "Một xe ô tô chuyển động đều trên đường quốc lộ với tốc độ 60 km/h trong thời gian 2,5 giờ. Tính quãng đường ô tô đi được theo đơn vị km.",
+    "knowledge": [
+      "speed.formula"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 150,
+      "unit": "km",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ công thức v = s / t, hãy suy ra công thức tính quãng đường s."
+      },
+      {
+        "level": 2,
+        "text": "Quãng đường s = v * t = 60 * 2,5."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Tốc độ $v = 60\\text{ km/h}$; Thời gian $t = 2,5\\text{ h}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính quãng đường",
+        "body": "Từ $v = \\frac{s}{t} \\Rightarrow s = v \\times t$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$s = 60 \\times 2,5 = 150\\text{ km}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Quãng đường ô tô đi được là **150 km**."
+      }
+    ],
+    "finalSolution": "Quãng đường $s = v \\times t = 60 \\times 2,5 = 150\\text{ km}$.",
+    "commonMistakes": [
+      {
+        "id": "divided-instead-of-multiply",
+        "message": "Bạn đã lấy v chia t thay vì nhân: s = v * t chứ không phải v / t.",
+        "trapAnswers": [
+          "24",
+          "24 km"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b01-num-007",
+    "lessonId": "phy-g7-b01",
+    "sgkBaiSo": 8,
+    "skillIds": [
+      "speed-compute-t"
+    ],
+    "difficulty": 3,
+    "prompt": "Một đoàn tàu hoả chuyển động đều trên quãng đường thẳng dài 180 km với tốc độ không đổi 72 km/h. Thời gian tàu chạy hết quãng đường này là bao nhiêu giờ?",
+    "knowledge": [
+      "speed.formula"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 2.5,
+      "unit": "h",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ công thức v = s / t, hãy suy ra công thức tính thời gian t."
+      },
+      {
+        "level": 2,
+        "text": "Thời gian t = s / v = 180 / 72."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Quãng đường $s = 180\\text{ km}$; Tốc độ $v = 72\\text{ km/h}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính thời gian",
+        "body": "Từ $v = \\frac{s}{t} \\Rightarrow t = \\frac{s}{v}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$t = \\frac{180}{72} = 2,5\\text{ h}$ (tức 2 giờ 30 phút)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thời gian tàu chạy là **2,5 giờ**."
+      }
+    ],
+    "finalSolution": "Thời gian tàu chạy: $t = \\frac{s}{v} = \\frac{180}{72} = 2,5\\text{ h}$.",
+    "commonMistakes": [
+      {
+        "id": "inverse-formula-trap",
+        "message": "Bạn đã lấy v chia cho s (72 / 180 = 0,4). Công thức đúng là t = s / v.",
+        "trapAnswers": [
+          "0.4",
+          "0,4",
+          "0.4 h",
+          "0,4 h"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b01-mcq-008",
+    "lessonId": "phy-g7-b01",
+    "sgkBaiSo": 8,
+    "skillIds": [
+      "speed-comparison"
+    ],
+    "difficulty": 3,
+    "prompt": "Cho biết tốc độ của ba chuyển động sau: (1) Xe ô tô chạy với tốc độ 36 km/h; (2) Xe máy chạy với tốc độ 12 m/s; (3) Một vận động viên chạy 100 m trong 10 s. Chuyển động nào nhanh nhất?",
+    "knowledge": [
+      "speed.formula",
+      "speed.unit.conversion"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Xe ô tô (36 km/h) nhanh nhất"
+        },
+        {
+          "id": "opt-b",
+          "label": "Xe máy (12 m/s) nhanh nhất"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vận động viên điền kinh nhanh nhất"
+        },
+        {
+          "id": "opt-d",
+          "label": "Ba chuyển động có tốc độ bằng nhau"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Để so sánh, hãy quy đổi tốc độ của cả 3 chuyển động về cùng một đơn vị m/s."
+      },
+      {
+        "level": 2,
+        "text": "Xe ô tô: 36 km/h = 36 / 3,6 = 10 m/s. Vận động viên: 100 m / 10 s = 10 m/s. Xe máy: 12 m/s."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quy đổi về cùng đơn vị",
+        "body": "Muốn so sánh các tốc độ, ta phải đổi về cùng một đơn vị m/s."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán từng chuyển động",
+        "body": "- Xe ô tô: $v_1 = \\frac{36}{3,6} = 10\\text{ m/s}$.\\n- Xe máy: $v_2 = 12\\text{ m/s}$.\\n- Vận động viên: $v_3 = \\frac{100}{10} = 10\\text{ m/s}$."
+      },
+      {
+        "kind": "answer",
+        "title": "So sánh và kết luận",
+        "body": "Ta thấy $v_2 = 12\\text{ m/s} > v_1 = v_3 = 10\\text{ m/s}$. Vậy **xe máy chuyển động nhanh nhất**."
+      }
+    ],
+    "finalSolution": "Quy đổi về m/s: $v_1 = 10\\text{ m/s}$, $v_2 = 12\\text{ m/s}$, $v_3 = 10\\text{ m/s}$. Do đó **xe máy (12 m/s) nhanh nhất**.",
+    "commonMistakes": [
+      {
+        "id": "compared-raw-numbers",
+        "message": "Không được so sánh trực tiếp số 36 và 12 vì chúng khác đơn vị đo (36 km/h = 10 m/s < 12 m/s)."
+      }
+    ]
+  }
+]

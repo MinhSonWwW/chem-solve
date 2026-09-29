@@ -1,0 +1,92 @@
+[
+  {
+    "id": "phy-m-01",
+    "formula": "v = s / t",
+    "nameVi": "Tốc độ (m/s, km/h)",
+    "type": "Cơ học"
+  },
+  {
+    "id": "phy-m-02",
+    "formula": "D = m / V",
+    "nameVi": "Khối lượng riêng (kg/m³)",
+    "type": "Cơ học"
+  },
+  {
+    "id": "phy-m-03",
+    "formula": "P = 10 × m",
+    "nameVi": "Trọng lượng (N)",
+    "type": "Cơ học"
+  },
+  {
+    "id": "phy-m-04",
+    "formula": "p = F / S",
+    "nameVi": "Áp suất chất rắn (Pa, N/m²)",
+    "type": "Cơ học"
+  },
+  {
+    "id": "phy-m-05",
+    "formula": "F_A = d × V",
+    "nameVi": "Lực đẩy Archimedes (N)",
+    "type": "Cơ học"
+  },
+  {
+    "id": "phy-m-06",
+    "formula": "A = F × s",
+    "nameVi": "Công cơ học (J)",
+    "type": "Năng lượng"
+  },
+  {
+    "id": "phy-m-07",
+    "formula": "P = A / t",
+    "nameVi": "Công suất cơ học (W)",
+    "type": "Năng lượng"
+  },
+  {
+    "id": "phy-m-08",
+    "formula": "W_t = P × h",
+    "nameVi": "Thế năng trọng trường (J)",
+    "type": "Năng lượng"
+  },
+  {
+    "id": "phy-m-09",
+    "formula": "W_đ = ½mv²",
+    "nameVi": "Động năng chuyển động (J)",
+    "type": "Năng lượng"
+  },
+  {
+    "id": "phy-m-10",
+    "formula": "I = U / R",
+    "nameVi": "Định luật Ôm (A)",
+    "type": "Điện học"
+  },
+  {
+    "id": "phy-m-11",
+    "formula": "R_tđ = R1 + R2",
+    "nameVi": "Điện trở nối tiếp (Ω)",
+    "type": "Điện học"
+  },
+  {
+    "id": "phy-m-12",
+    "formula": "P = U × I",
+    "nameVi": "Công suất điện (W)",
+    "type": "Điện học"
+  },
+  {
+    "id": "phy-m-13",
+    "formula": "i' = i",
+    "nameVi": "Định luật phản xạ ánh sáng",
+    "type": "Quang học"
+  },
+  {
+    "id": "phy-m-14",
+    "formula": "d = 10 × D",
+    "nameVi": "Trọng lượng riêng (N/m³)",
+    "type": "Cơ học"
+  },
+  {
+    "id": "phy-m-15",
+    "formula": "Q = m.c.Δt",
+    "nameVi": "Nhiệt lượng thu vào (J)",
+    "type": "Nhiệt học"
+  }
+]

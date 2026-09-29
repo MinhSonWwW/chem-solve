@@ -1,0 +1,417 @@
+[
+  {
+    "id": "phy-g6-b20-mcq-001",
+    "lessonId": "phy-g6-b20",
+    "sgkBaiSo": 55,
+    "skillIds": [
+      "milky-way-definition"
+    ],
+    "difficulty": 1,
+    "prompt": "Ngân hà (Milky Way) là gì?",
+    "knowledge": [
+      "astro.milky_way.galaxy"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Là một ngôi sao khổng lồ sáng nhất bầu trời đêm"
+        },
+        {
+          "id": "opt-b",
+          "label": "Là một hành tinh băng nằm ở rìa ngoài cùng của vũ trụ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Là một chùm sao chổi bay ngang qua bầu trời"
+        },
+        {
+          "id": "opt-d",
+          "label": "Là thiên hà chứa Hệ Mặt Trời và Trái Đất của chúng ta"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hệ Mặt Trời của chúng ta chỉ là một bộ phận nhỏ nằm bên trong Ngân hà."
+      },
+      {
+        "level": 2,
+        "text": "Ngân hà là một thiên hà khổng lồ chứa hàng trăm tỉ ngôi sao, trong đó có Mặt Trời."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khái niệm Ngân hà trong SGK",
+        "body": "SGK KNTT 6 định nghĩa: Ngân hà là một tập hợp khổng lồ gồm hàng trăm tỉ ngôi sao, hành tinh, khí và bụi."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Mối quan hệ với Hệ Mặt Trời",
+        "body": "Ngân hà chính là thiên hà mẹ chứa toàn bộ Hệ Mặt Trời và Trái Đất của chúng ta."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Là thiên hà chứa Hệ Mặt Trời và Trái Đất của chúng ta**."
+      }
+    ],
+    "finalSolution": "Ngân hà là **thiên hà chứa Hệ Mặt Trời và Trái Đất của chúng ta**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b20-mcq-002",
+    "lessonId": "phy-g6-b20",
+    "sgkBaiSo": 55,
+    "skillIds": [
+      "milky-way-shape"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi quan sát toàn cảnh từ bên ngoài, Ngân hà có hình dạng gì?",
+    "knowledge": [
+      "astro.milky_way.galaxy"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hình cầu đặc khổng lồ"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hình vuông phẳng dẹt"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hình trụ dài thẳng đứng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hình đĩa xoắn ốc với các nhánh xoắn tỏa ra từ tâm"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ngân hà trông giống như một chiếc chong chóng quay tròn với các cánh tay xoắn ốc."
+      },
+      {
+        "level": 2,
+        "text": "Hình dạng đặc trưng của Ngân hà là hình đĩa xoắn ốc (xoắn ốc khổng lồ)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hình thái học của thiên hà",
+        "body": "Trong vũ trụ có thiên hà elip, thiên hà xoắn ốc và thiên hà dị thường."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cấu trúc Ngân hà",
+        "body": "Ngân hà có cấu trúc hình đĩa dẹt xoắn ốc với phần tâm phình to và các nhánh xoắn ốc uốn lượn xung quanh tâm."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Ngân hà có **hình đĩa xoắn ốc với các nhánh xoắn tỏa ra từ tâm**."
+      }
+    ],
+    "finalSolution": "Ngân hà có **hình đĩa xoắn ốc với các nhánh xoắn**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b20-mcq-003",
+    "lessonId": "phy-g6-b20",
+    "sgkBaiSo": 55,
+    "skillIds": [
+      "light-year-concept"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong thiên văn học, **năm ánh sáng** là đơn vị dùng để đo đại lượng nào?",
+    "knowledge": [
+      "astro.milky_way.galaxy"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Khối lượng của các thiên hà"
+        },
+        {
+          "id": "opt-b",
+          "label": "Thời gian (tính bằng số năm)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Độ sáng của các ngôi sao"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khoảng cách (quãng đường)"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Dù có chữ 'năm' nhưng đây là quãng đường ánh sáng truyền đi trong 1 năm."
+      },
+      {
+        "level": 2,
+        "text": "Khoảng cách giữa các thiên thể trong vũ trụ quá lớn nên người ta dùng năm ánh sáng để đo khoảng cách."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Định nghĩa năm ánh sáng",
+        "body": "Năm ánh sáng là quãng đường mà một tia sáng truyền đi được trong chân không trong thời gian 1 năm Trái Đất."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Bản chất đơn vị",
+        "body": "Vì là quãng đường nên năm ánh sáng là đơn vị đo khoảng cách (chiều dài), xấp xỉ bằng $9,46 \\times 10^{12}\\text{ km}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Năm ánh sáng là đơn vị dùng để đo **khoảng cách (quãng đường)**."
+      }
+    ],
+    "finalSolution": "Năm ánh sáng là đơn vị dùng để đo **khoảng cách (quãng đường)** trong vũ trụ.",
+    "commonMistakes": [
+      {
+        "id": "time-mistake",
+        "message": "Nhiều người lầm tưởng 'năm ánh sáng' đo thời gian vì có chữ 'năm', nhưng thực chất nó đo khoảng cách (quãng đường)!",
+        "trapAnswers": [
+          "opt-a"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b20-tf-004",
+    "lessonId": "phy-g6-b20",
+    "sgkBaiSo": 55,
+    "skillIds": [
+      "milky-way-true-false"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy xác định tính Đúng hoặc Sai cho mỗi nhận định dưới đây về Dải Ngân hà:",
+    "knowledge": [
+      "astro.milky_way.galaxy"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "stmt-1",
+          "text": "Ngân hà là một tập hợp khổng lồ gồm hàng trăm tỉ ngôi sao cùng bụi và khí vũ trụ.",
+          "correct": true
+        },
+        {
+          "id": "stmt-2",
+          "text": "Hệ Mặt Trời nằm ngay tại vị trí trung tâm chính giữa của Ngân hà.",
+          "correct": false
+        },
+        {
+          "id": "stmt-3",
+          "text": "Nhìn từ Trái Đất vào đêm trời trong, Ngân hà hiện ra như một dải sáng màu trắng bạc vắt ngang bầu trời.",
+          "correct": true
+        },
+        {
+          "id": "stmt-4",
+          "text": "Hệ Mặt Trời nằm ở vùng rìa một nhánh xoắn ốc, cách tâm Ngân hà khoảng 26 000 năm ánh sáng.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hệ Mặt Trời không ở trung tâm mà ở vùng rìa một nhánh xoắn ốc của Ngân hà."
+      },
+      {
+        "level": 2,
+        "text": "Dải Ngân hà trên bầu trời trông như một dòng sông bạc lấp lánh sao."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xét từng nhận định",
+        "body": "Đánh giá 4 nhận định về quy mô Ngân hà, vị trí Hệ Mặt Trời ở tâm, hình ảnh quan sát từ Trái Đất và khoảng cách đến tâm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu SGK Bài 55",
+        "body": "Nhận định 1, 3, 4 hoàn toàn đúng với nội dung SGK KNTT 6. Nhận định 2 sai vì Hệ Mặt Trời nằm ở vùng rìa ngoài của một nhánh xoắn ốc (nhánh Orion), cách tâm khoảng 26.000 năm ánh sáng, không phải ở trung tâm."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng/Sai",
+        "body": "Nhận định 1: Đúng · Nhận định 2: Sai · Nhận định 3: Đúng · Nhận định 4: Đúng."
+      }
+    ],
+    "finalSolution": "Câu 1: Đúng · Câu 2: Sai · Câu 3: Đúng · Câu 4: Đúng.",
+    "commonMistakes": [
+      {
+        "id": "center-trap",
+        "message": "Hệ Mặt Trời không nằm ở trung tâm Ngân hà mà nằm ở vùng rìa của một nhánh xoắn ốc!"
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b20-match-005",
+    "lessonId": "phy-g6-b20",
+    "sgkBaiSo": 55,
+    "skillIds": [
+      "astronomy-terms-matching"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy ghép mỗi khái niệm thiên văn học ở cột bên trái với đúng định nghĩa ở cột bên phải:",
+    "knowledge": [
+      "astro.milky_way.galaxy",
+      "astro.solar_system.planets"
+    ],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Ngân hà (Milky Way)",
+          "right": "Thiên hà xoắn ốc chứa hàng trăm tỉ ngôi sao"
+        },
+        {
+          "left": "Hệ Mặt Trời",
+          "right": "Hệ gồm Mặt Trời và 8 hành tinh quay xung quanh"
+        },
+        {
+          "left": "Năm ánh sáng",
+          "right": "Đơn vị đo khoảng cách trong vũ trụ"
+        },
+        {
+          "left": "Mặt Trời",
+          "right": "Ngôi sao nằm ở trung tâm của Hệ Mặt Trời"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hệ Mặt Trời nằm bên trong Ngân hà; Mặt Trời là ngôi sao ở trung tâm hệ hành tinh."
+      },
+      {
+        "level": 2,
+        "text": "Năm ánh sáng là quãng đường ánh sáng đi trong 1 năm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xem xét 4 khái niệm",
+        "body": "Ngân hà, Hệ Mặt Trời, Năm ánh sáng, Mặt Trời là các khái niệm tổng kết kiến thức thiên văn lớp 6."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu bản chất",
+        "body": "Ngân hà: thiên hà xoắn ốc khổng lồ; Hệ Mặt Trời: hệ hành tinh của Mặt Trời; Năm ánh sáng: đơn vị khoảng cách vũ trụ; Mặt Trời: ngôi sao trung tâm."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận ghép cặp",
+        "body": "Ghép nối thành công 4 cặp khái niệm và định nghĩa."
+      }
+    ],
+    "finalSolution": "Ngân hà ↔ Thiên hà xoắn ốc chứa hàng trăm tỉ ngôi sao · Hệ Mặt Trời ↔ Hệ gồm Mặt Trời và 8 hành tinh · Năm ánh sáng ↔ Đơn vị đo khoảng cách vũ trụ · Mặt Trời ↔ Ngôi sao nằm ở trung tâm Hệ Mặt Trời.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b20-multi-006",
+    "lessonId": "phy-g6-b20",
+    "sgkBaiSo": 55,
+    "skillIds": [
+      "milky-way-universe-multi"
+    ],
+    "difficulty": 3,
+    "prompt": "Những nhận định nào sau đây là **chính xác** về vị trí của Trái Đất và Hệ Mặt Trời trong vũ trụ bao la? (Chọn tất cả các đáp án đúng)",
+    "knowledge": [
+      "astro.milky_way.galaxy",
+      "astro.solar_system.planets"
+    ],
+    "answer": {
+      "kind": "mcq-multi",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Trong toàn bộ vũ trụ bao la chỉ tồn tại duy nhất một thiên hà là Ngân hà"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hệ Mặt Trời của chúng ta là một thành phần nhỏ bé nằm trong dải Ngân hà"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ngân hà có kích thước đường kính khoảng 100 000 năm ánh sáng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hệ Mặt Trời nằm trên một nhánh xoắn ốc ở phần rìa ngoài của Ngân hà"
+        },
+        {
+          "id": "opt-e",
+          "label": "Trái Đất là một trong 8 hành tinh quay xung quanh ngôi sao Mặt Trời"
+        }
+      ],
+      "correctIds": [
+        "opt-b",
+        "opt-c",
+        "opt-d",
+        "opt-e"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trong vũ trụ có hàng trăm tỉ thiên hà khác ngoài Ngân hà của chúng ta."
+      },
+      {
+        "level": 2,
+        "text": "Trái Đất quay quanh Mặt Trời, Hệ Mặt Trời nằm ở rìa một nhánh xoắn của Ngân hà."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 5 nhận định",
+        "body": "Đánh giá vị trí Trái Đất trong hệ hành tinh, vị trí Hệ Mặt Trời trong Ngân hà, kích thước Ngân hà và số lượng thiên hà trong vũ trụ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu khoa học thiên văn",
+        "body": "Nhận định a, b, c, e hoàn toàn chính xác theo SGK. Nhận định d sai vì trong vũ trụ có hàng trăm tỉ thiên hà khác (như thiên hà Tiên Nữ Andromeda...)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Chọn 4 phương án đúng: a, b, c, e."
+      }
+    ],
+    "finalSolution": "Các nhận định chính xác: **Trái Đất quay quanh Mặt Trời**, **Hệ Mặt Trời nằm trong Ngân hà**, **Ngân hà rộng khoảng 100 000 năm ánh sáng**, và **Hệ Mặt Trời nằm trên nhánh xoắn ốc ở rìa Ngân hà**.",
+    "commonMistakes": [
+      {
+        "id": "only-one-galaxy",
+        "message": "Ngân hà chỉ là một trong số hàng trăm tỉ thiên hà trong vũ trụ quan sát được!"
+      }
+    ]
+  }
+]

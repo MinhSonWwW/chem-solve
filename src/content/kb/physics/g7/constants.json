@@ -1,0 +1,121 @@
+[
+  {
+    "id": "speed.formula",
+    "name": "Công thức tính tốc độ chuyển động",
+    "symbol": "v = s / t",
+    "standard": "v = s / t",
+    "description": "Tốc độ v bằng quãng đường đi được s chia cho khoảng thời gian t để đi hết quãng đường đó (SGK KNTT 7 Bài 8)"
+  },
+  {
+    "id": "speed.unit.si",
+    "name": "Đơn vị đo tốc độ",
+    "symbol": "m/s, km/h",
+    "standard": "mét trên giây (m/s), kilômét trên giờ (km/h)",
+    "description": "Trong hệ SI, đơn vị đo tốc độ là m/s; trong thực tế đời sống thường dùng km/h"
+  },
+  {
+    "id": "speed.unit.conversion",
+    "name": "Quy đổi đơn vị tốc độ",
+    "symbol": "1 m/s = 3,6 km/h",
+    "standard": "1 m/s = 3,6 km/h; 1 km/h = 1/3,6 m/s ≈ 0,28 m/s",
+    "description": "Để đổi từ m/s sang km/h ta nhân với 3,6; từ km/h sang m/s ta chia cho 3,6"
+  },
+  {
+    "id": "speed.measurement.tools",
+    "name": "Phương pháp và dụng cụ đo tốc độ",
+    "symbol": "Đo s và t",
+    "standard": "Đồng hồ bấm giây + thước; Cổng quang điện + đồng hồ đo hiện số",
+    "description": "Đo tốc độ bằng cách đo quãng đường s và thời gian t, hoặc dùng thiết bị 'bắn tốc độ' (SGK KNTT 7 Bài 9)"
+  },
+  {
+    "id": "speed.graph.distance_time",
+    "name": "Đồ thị quãng đường - thời gian (s - t)",
+    "symbol": "Đồ thị s - t",
+    "standard": "Đường nghiêng: chuyển động đều; Đường nằm ngang: vật đứng yên",
+    "description": "Đồ thị biểu diễn sự phụ thuộc của quãng đường vào thời gian; độ nghiêng (độ dốc) biểu thị tốc độ (SGK KNTT 7 Bài 10)"
+  },
+  {
+    "id": "speed.traffic_safety",
+    "name": "Tốc độ và an toàn giao thông",
+    "symbol": "Biển báo tốc độ & Khoảng cách an toàn",
+    "standard": "Quy tắc 3 giây, khoảng cách an toàn phanh xe",
+    "description": "Tốc độ càng cao thì quãng đường phanh dừng xe càng lớn; người tham gia giao thông cần giữ khoảng cách an toàn và tuân thủ biển báo tốc độ (SGK KNTT 7 Bài 11)"
+  },
+  {
+    "id": "sound.source_vibration",
+    "name": "Nguồn âm và sự dao động",
+    "symbol": "Dao động tạo ra âm",
+    "standard": "Các vật phát ra âm đều dao động",
+    "description": "Nguồn âm là vật phát ra âm thanh. Khi phát ra âm, bề mặt nguồn âm luôn dao động (SGK KNTT 7 Bài 12)"
+  },
+  {
+    "id": "sound.medium_propagation",
+    "name": "Sự truyền sóng âm",
+    "symbol": "Rắn > Lỏng > Khí",
+    "standard": "Sóng âm truyền trong rắn, lỏng, khí; không truyền trong chân không",
+    "description": "Tốc độ truyền âm trong chất rắn lớn hơn trong chất lỏng, trong chất lỏng lớn hơn trong chất khí (v_rắn > v_lỏng > v_khí)"
+  },
+  {
+    "id": "sound.frequency_pitch",
+    "name": "Tần số và độ cao của âm",
+    "symbol": "f (Hz)",
+    "standard": "Dao động càng nhanh, tần số càng lớn -> âm càng bổng (cao)",
+    "description": "Số dao động trong một giây là tần số dao động, đơn vị héc (Hz). Âm phát ra càng cao (bổng) khi tần số càng lớn (SGK KNTT 7 Bài 13)"
+  },
+  {
+    "id": "sound.amplitude_loudness",
+    "name": "Biên độ và độ to của âm",
+    "symbol": "Biên độ dao động & dB",
+    "standard": "Biên độ dao động càng lớn -> âm phát ra càng to",
+    "description": "Độ lệch lớn nhất của vật dao động so với vị trí cân bằng gọi là biên độ dao động. Đơn vị đo độ to là đêxiben (dB)"
+  },
+  {
+    "id": "sound.reflection_echo",
+    "name": "Phản xạ âm và chống ô nhiễm tiếng ồn",
+    "symbol": "Tiếng vang & Cách âm",
+    "standard": "Âm phản xạ nghe cách âm trực tiếp ít nhất 1/15 s tạo thành tiếng vang",
+    "description": "Vật cứng, nhẵn phản xạ âm tốt; vật mềm xốp phản xạ âm kém (hấp thụ âm tốt). Biện pháp giảm tiếng ồn: trồng cây, dùng rèm cách âm, tường sần (SGK KNTT 7 Bài 14)"
+  },
+  {
+    "id": "light.energy_source",
+    "name": "Năng lượng ánh sáng và tia sáng",
+    "symbol": "Tia sáng có mũi tên chỉ chiều",
+    "standard": "Ánh sáng là một dạng năng lượng; biểu diễn tia sáng bằng đường thẳng có mũi tên",
+    "description": "Nguồn sáng tự phát ra ánh sáng; vật sáng gồm nguồn sáng và vật hắt lại ánh sáng (SGK KNTT 7 Bài 15)"
+  },
+  {
+    "id": "light.reflection_law",
+    "name": "Định luật phản xạ ánh sáng",
+    "symbol": "i' = i",
+    "standard": "Tia phản xạ nằm trong mặt phẳng tới; góc phản xạ bằng góc tới (i' = i)",
+    "description": "Pháp tuyến vuông góc với mặt gương tại điểm tới. Góc tới i hợp bởi tia tới và pháp tuyến; góc phản xạ i' hợp bởi tia phản xạ và pháp tuyến (SGK KNTT 7 Bài 16)"
+  },
+  {
+    "id": "light.plane_mirror_image",
+    "name": "Tính chất ảnh qua gương phẳng",
+    "symbol": "Ảnh ảo d' = d",
+    "standard": "Ảnh ảo, không hứng được trên màn chắn, lớn bằng vật, d' = d",
+    "description": "Khoảng cách từ một điểm của vật đến gương phẳng bằng khoảng cách từ ảnh của điểm đó đến gương phẳng (SGK KNTT 7 Bài 17)"
+  },
+  {
+    "id": "magnet.poles_interaction",
+    "name": "Tác dụng từ của nam châm",
+    "symbol": "Cực N (Bắc) và Cực S (Nam)",
+    "standard": "Cùng tên thì đẩy nhau, khác tên thì hút nhau",
+    "description": "Mọi nam châm đều có hai từ cực: Bắc (North - N, thường sơn màu đỏ) và Nam (South - S, thường sơn màu xanh). Nam châm hút các vật liệu từ như sắt, thép, niken, coban (SGK KNTT 7 Bài 18)"
+  },
+  {
+    "id": "magnet.magnetic_field",
+    "name": "Từ trường và đường sức từ",
+    "symbol": "Đường sức từ: Ra Bắc, Vào Nam",
+    "standard": "Không gian xung quanh nam châm có từ trường; đường sức từ đi ra từ cực Bắc và đi vào cực Nam",
+    "description": "Kim la bàn luôn định hướng theo từ trường. Trái Đất là một nam châm khổng lồ có cực từ Nam ở gần cực Bắc địa lí (SGK KNTT 7 Bài 19)"
+  },
+  {
+    "id": "magnet.electromagnet",
+    "name": "Nam châm điện",
+    "symbol": "Cuộn dây có lõi sắt non",
+    "standard": "Có từ tính khi có dòng điện chạy qua, mất từ tính khi ngắt điện",
+    "description": "Cấu tạo gồm ống dây dẫn có dòng điện chạy qua quấn quanh lõi sắt non. Lực từ tăng khi tăng cường độ dòng điện hoặc tăng số vòng dây (SGK KNTT 7 Bài 20)"
+  }
+]

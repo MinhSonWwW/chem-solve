@@ -1,0 +1,522 @@
+[
+  {
+    "id": "phy-g8-b15-ord-001",
+    "lessonId": "phy-g8-b15",
+    "sgkBaiSo": 27,
+    "skillIds": [
+      "joulemeter-lab-procedure"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp các thao tác sau theo đúng thứ tự quy trình thực hành đo năng lượng nhiệt cung cấp cho nước bằng joulemeter:",
+    "knowledge": [
+      "thermal.joulemeter.measurement"
+    ],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Dùng cân điện tử đo khối lượng m của nước và rót vào bình nhiệt lượng kế",
+        "Cắm nhiệt kế ngập trong nước (không chạm vào dây nung) và đọc nhiệt độ ban đầu t1",
+        "Nối dây nung với joulemeter, bật nguồn điện và khởi động joulemeter",
+        "Khuấy nhẹ đều nước, theo dõi nhiệt kế đến khi nhiệt độ tăng đúng độ chênh lệch dự kiến t2",
+        "Ngắt nguồn điện và đọc ngay số chỉ năng lượng nhiệt E hiển thị trên joulemeter"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thao tác đầu tiên là xác định khối lượng nước và đo nhiệt độ ban đầu."
+      },
+      {
+        "level": 2,
+        "text": "Sau khi bật điện và joulemeter, phải khuấy đều nước rồi ngắt điện và đọc số chỉ năng lượng khi đạt nhiệt độ t2."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định thứ tự thí nghiệm",
+        "body": "Tuân thủ các bước thực hành đo lường nhiệt học an toàn và chính xác."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Các bước chuẩn SGK",
+        "body": "1. Đo khối lượng m -> 2. Đo nhiệt độ ban đầu t1 -> 3. Bật điện và kích hoạt joulemeter -> 4. Khuấy đều và theo dõi nhiệt độ t2 -> 5. Ngắt điện và đọc năng lượng E."
+      },
+      {
+        "kind": "answer",
+        "title": "Thứ tự chính xác",
+        "body": "Thứ tự sắp xếp chuẩn từ bước 1 đến bước 5 như trên."
+      }
+    ],
+    "finalSolution": "Quy trình chuẩn: **Cân nước → Đo t1 ban đầu → Bật nguồn & joulemeter → Khuấy đều theo dõi t2 → Ngắt điện & đọc E**.",
+    "commonMistakes": [
+      {
+        "id": "read-energy-before-switching-off",
+        "message": "Cần ngắt nguồn điện đồng thời đọc số chỉ để tránh dây nung tiếp tục truyền nhiệt làm sai lệch độ tăng nhiệt độ."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b15-mcq-002",
+    "lessonId": "phy-g8-b15",
+    "sgkBaiSo": 27,
+    "skillIds": [
+      "lab-tools-thermometer"
+    ],
+    "difficulty": 1,
+    "prompt": "Để xác định độ tăng nhiệt độ của nước trong thí nghiệm đo năng lượng nhiệt, dụng cụ bắt buộc phải dùng là:",
+    "knowledge": [
+      "thermal.joulemeter.measurement"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Ampe kế một chiều"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nhiệt kế có vạch chia độ rõ ràng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Lực kế lò xo"
+        },
+        {
+          "id": "opt-d",
+          "label": "Thước dây cuộn"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Dụng cụ chuyên dùng để đo nhiệt độ chất lỏng."
+      },
+      {
+        "level": 2,
+        "text": "Nhiệt kế thủy ngân hoặc nhiệt kế điện tử đo nhiệt độ ban đầu và nhiệt độ sau khi đun."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định dụng cụ đo nhiệt độ",
+        "body": "Tìm dụng cụ đo nhiệt độ của nước."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 27), nhiệt kế được dùng để xác định nhiệt độ ban đầu t1 và nhiệt độ sau khi đun t2 của nước."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Nhiệt kế có vạch chia độ rõ ràng**."
+      }
+    ],
+    "finalSolution": "Dụng cụ dùng để đo nhiệt độ là **nhiệt kế**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-joulemeter-with-thermometer",
+        "message": "Joulemeter đo năng lượng nhiệt (J), còn nhiệt kế mới là dụng cụ đo nhiệt độ (°C)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b15-mcq-003",
+    "lessonId": "phy-g8-b15",
+    "sgkBaiSo": 27,
+    "skillIds": [
+      "stirrer-purpose"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong suốt quá trình cấp điện đun nước ở bình nhiệt lượng kế, vì sao học sinh phải dùng que khuấy để khuấy nhẹ và đều nước liên tục?",
+    "knowledge": [
+      "thermal.joulemeter.measurement"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Để nhiệt lượng tỏa ra từ dây nung lan tỏa đồng đều khắp thể tích nước trong bình"
+        },
+        {
+          "id": "opt-b",
+          "label": "Để làm tăng khối lượng của nước trong bình"
+        },
+        {
+          "id": "opt-c",
+          "label": "Để làm cho dây nung điện trở không bị chảy đứt"
+        },
+        {
+          "id": "opt-d",
+          "label": "Để nước không bị bốc hơi nhanh ra ngoài không khí"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nước ở gần dây nung rất nóng, nước ở xa dây nung nguội hơn."
+      },
+      {
+        "level": 2,
+        "text": "Khuấy đều giúp nhiệt độ nước tại mọi vị trí trong bình đồng nhất, nhờ đó nhiệt kế đo đúng nhiệt độ trung bình của toàn bộ khối nước."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục đích thao tác khuấy",
+        "body": "Giải thích vai trò của việc khuấy đều chất lỏng khi cấp nhiệt."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kĩ thuật thực hành SGK",
+        "body": "Nước dẫn nhiệt kém, nếu không khuấy thì nhiệt độ cục bộ quanh dây nung sẽ cao hơn nhiều so với nhiệt độ tổng thể. Khuấy nhẹ đều giúp phân bố nhiệt đồng đều trong toàn bộ khối nước."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Để nhiệt lượng tỏa ra từ dây nung lan tỏa đồng đều khắp thể tích nước trong bình**."
+      }
+    ],
+    "finalSolution": "Khuấy đều để **nhiệt lượng tỏa ra từ dây nung lan tỏa đồng đều khắp thể tích nước**.",
+    "commonMistakes": [
+      {
+        "id": "vigorous-stirring-mistake",
+        "message": "Chỉ khuấy nhẹ nhàng đều tay, nếu khuấy quá mạnh sẽ làm văng nước ra ngoài hoặc tạo ma sát sinh thêm nhiệt phụ."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b15-mcq-004",
+    "lessonId": "phy-g8-b15",
+    "sgkBaiSo": 27,
+    "skillIds": [
+      "thermometer-placement-rule"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi cắm nhiệt kế vào bình nhiệt lượng kế chứa nước, thao tác nào sau đây là ĐÚNG quy chuẩn để tránh số đo sai lệch nghiêm trọng?",
+    "knowledge": [
+      "thermal.joulemeter.measurement"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Bầu nhiệt kế phải ngập hoàn toàn trong nước nhưng không chạm vào dây nung hay đáy bình"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cắm nhiệt kế chạm mạnh xuống đáy kim loại của bình"
+        },
+        {
+          "id": "opt-c",
+          "label": "Bầu nhiệt kế chỉ cần nằm lơ lửng trong không khí trên mặt nước"
+        },
+        {
+          "id": "opt-d",
+          "label": "Bầu nhiệt kế phải ép sát trực tiếp vào dây nung điện trở để bắt nhiệt nhanh"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mục tiêu là đo nhiệt độ của nước, không phải nhiệt độ bề mặt của dây nung kim loại."
+      },
+      {
+        "level": 2,
+        "text": "Nếu chạm vào dây nung, nhiệt kế sẽ đo nhiệt độ rất cao của dây nung thay vì nhiệt độ trung bình của khối nước."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quy tắc đặt cảm biến nhiệt",
+        "body": "Vị trí đặt bầu nhiệt kế trong môi trường chất lỏng cần đo."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc thực hành",
+        "body": "Theo SGK KHTN 8 (Bài 27), bầu nhiệt kế phải nhúng ngập trong khối chất lỏng cần đo nhưng không được chạm vào dây nung hoặc thành đáy bình để tránh sai số do truyền nhiệt trực tiếp từ kim loại nóng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Bầu nhiệt kế phải ngập hoàn toàn trong nước nhưng không chạm vào dây nung hay đáy bình**."
+      }
+    ],
+    "finalSolution": "Quy chuẩn: **Bầu nhiệt kế phải ngập hoàn toàn trong nước nhưng không chạm vào dây nung hay đáy bình**.",
+    "commonMistakes": [
+      {
+        "id": "touch-heater-filament",
+        "message": "Chạm trực tiếp vào dây nung sẽ làm nhiệt kế tăng vọt nhiệt độ ảo và có thể làm vỡ bầu thủy tinh nhiệt kế."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b15-num-005",
+    "lessonId": "phy-g8-b15",
+    "sgkBaiSo": 27,
+    "skillIds": [
+      "temperature-rise-calc"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong một bài thực hành, học sinh ghi nhận nhiệt độ ban đầu của nước là t1 = 24,5 °C. Sau khi đóng điện nung nóng một thời gian, nhiệt độ của nước tăng lên đến t2 = 36,5 °C. Độ tăng nhiệt độ Δt của nước trong thí nghiệm này là bao nhiêu độ C (°C)?",
+    "knowledge": [
+      "thermal.joulemeter.measurement"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 12,
+      "unit": "°C",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Độ tăng nhiệt độ bằng nhiệt độ lúc sau trừ đi nhiệt độ ban đầu: Δt = t2 - t1."
+      },
+      {
+        "level": 2,
+        "text": "Lấy 36,5 trừ đi 24,5."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt số liệu",
+        "body": "$t_1 = 24{,}5^\\circ\\text{C}$; $t_2 = 36{,}5^\\circ\\text{C}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức độ tăng nhiệt độ",
+        "body": "$\\Delta t = t_2 - t_1$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$\\Delta t = 36{,}5 - 24{,}5 = 12{,}0^\\circ\\text{C}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Độ tăng nhiệt độ của nước là **12,0 °C**."
+      }
+    ],
+    "finalSolution": "Độ tăng nhiệt độ: $\\Delta t = 36{,}5 - 24{,}5 = 12{,}0^\\circ\\text{C}$.",
+    "commonMistakes": [
+      {
+        "id": "subtraction-error",
+        "message": "36,5 - 24,5 = 12,0 °C chứ không phải 11 °C."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b15-num-006",
+    "lessonId": "phy-g8-b15",
+    "sgkBaiSo": 27,
+    "skillIds": [
+      "thermal-energy-mass-proportional"
+    ],
+    "difficulty": 2,
+    "prompt": "Học sinh đo năng lượng nhiệt cần cung cấp để đun nóng m1 = 100 g nước tăng thêm 10 °C thu được số chỉ joulemeter là E1 = 4 200 J. Nếu đun nóng m2 = 200 g nước (khối lượng gấp đôi) cũng tăng thêm 10 °C trong cùng điều kiện thực nghiệm, năng lượng nhiệt E2 cần cung cấp dự đoán là bao nhiêu jun (J)?",
+    "knowledge": [
+      "thermal.joulemeter.measurement"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 8400,
+      "unit": "J",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi độ tăng nhiệt độ không đổi, năng lượng nhiệt cần cung cấp tỉ lệ thuận với khối lượng của nước."
+      },
+      {
+        "level": 2,
+        "text": "Khối lượng nước gấp 2 lần (200 g so với 100 g) nên năng lượng cần cung cấp cũng gấp 2 lần: E2 = 2 x 4 200 J."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$m_1 = 100\\text{ g}$; $E_1 = 4\\,200\\text{ J}$; $m_2 = 200\\text{ g} = 2 \\times m_1$; $\\Delta t$ giữ nguyên."
+      },
+      {
+        "kind": "equation",
+        "title": "Quy luật tỉ lệ thuận",
+        "body": "$\\frac{E_2}{E_1} = \\frac{m_2}{m_1} \\Rightarrow E_2 = E_1 \\times \\frac{m_2}{m_1}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$E_2 = 4\\,200 \\times \\frac{200}{100} = 4\\,200 \\times 2 = 8\\,400\\text{ J}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Năng lượng nhiệt cần cung cấp là **8 400 J**."
+      }
+    ],
+    "finalSolution": "Năng lượng nhiệt cần cung cấp: $E_2 = 4\\,200 \\times 2 = 8\\,400\\text{ J}$.",
+    "commonMistakes": [
+      {
+        "id": "divide-instead-of-multiply",
+        "message": "Nước nhiều gấp đôi thì cần nhiều nhiệt lượng gấp đôi, không thể lấy 4 200 chia 2."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b15-mcq-007",
+    "lessonId": "phy-g8-b15",
+    "sgkBaiSo": 27,
+    "skillIds": [
+      "experimental-error-analysis"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong thực tế thí nghiệm, năng lượng điện đo được trên joulemeter thường hơi lớn hơn một chút so với nhiệt lượng lý thuyết mà nước hấp thụ. Nguyên nhân chủ yếu của sự chênh lệch này là:",
+    "knowledge": [
+      "thermal.joulemeter.measurement"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Dây nung hút năng lượng từ không khí bên ngoài truyền vào nước"
+        },
+        {
+          "id": "opt-b",
+          "label": "Joulemeter luôn chạy nhanh hơn thực tế 50%"
+        },
+        {
+          "id": "opt-c",
+          "label": "Một phần nhiệt lượng bị thất thoát ra ngoài vỏ bình và dùng để nung nóng que khuấy, thành trong của bình"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nước tự động phát sinh thêm năng lượng nhiệt mới trong bình"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bình nhiệt lượng kế và que khuấy cũng được làm nóng cùng với nước."
+      },
+      {
+        "level": 2,
+        "text": "Dù bình cách nhiệt tốt nhưng vẫn có một lượng nhỏ nhiệt lượng truyền ra ngoài môi trường và làm nóng các bộ phận của bình."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích nguyên nhân sai số",
+        "body": "Xem xét các tổn thất nhiệt trong quá trình thí nghiệm thực tế."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức thực hành SGK",
+        "body": "Theo SGK KHTN 8 (Bài 27), nhiệt lượng do dây nung tỏa ra không truyền hoàn toàn 100% vào nước mà một phần truyền cho que khuấy, vỏ trong của nhiệt lượng kế và một phần nhỏ thoát ra không khí xung quanh."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Một phần nhiệt lượng bị thất thoát ra ngoài vỏ bình và dùng để nung nóng que khuấy, thành trong của bình**."
+      }
+    ],
+    "finalSolution": "Sai số do **một phần nhiệt lượng thất thoát ra môi trường và nung nóng que khuấy, thành trong bình**.",
+    "commonMistakes": [
+      {
+        "id": "ignore-heat-loss",
+        "message": "Không có hệ nhiệt cô lập hoàn hảo 100% trong phòng thí nghiệm thông thường; luôn tồn tại sự thất thoát nhiệt nhất định."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b15-mcq-008",
+    "lessonId": "phy-g8-b15",
+    "sgkBaiSo": 27,
+    "skillIds": [
+      "lab-conclusion"
+    ],
+    "difficulty": 3,
+    "prompt": "Từ kết quả bài thực hành đo năng lượng nhiệt bằng joulemeter, học sinh rút ra kết luận tổng quát nào sau đây về năng lượng nhiệt cần cung cấp để đun nóng một khối lượng chất lỏng?",
+    "knowledge": [
+      "thermal.joulemeter.measurement"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Năng lượng nhiệt cần cung cấp tỉ lệ thuận với khối lượng của chất lỏng và độ tăng nhiệt độ của nó"
+        },
+        {
+          "id": "opt-b",
+          "label": "Năng lượng nhiệt cần cung cấp hoàn toàn không phụ thuộc vào độ tăng nhiệt độ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khối lượng chất lỏng càng lớn thì năng lượng nhiệt cần cung cấp càng ít đi"
+        },
+        {
+          "id": "opt-d",
+          "label": "Năng lượng nhiệt cần cung cấp tỉ lệ nghịch với khối lượng của chất lỏng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đun nhiều nước hơn thì tốn nhiều năng lượng hơn hay ít hơn? Đun nước nóng hơn thì tốn nhiều năng lượng hơn hay ít hơn?"
+      },
+      {
+        "level": 2,
+        "text": "Khối lượng m càng lớn và độ tăng nhiệt độ Δt càng lớn thì năng lượng nhiệt cần cung cấp E càng lớn (tỉ lệ thuận)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khái quát hóa quy luật",
+        "body": "Xác định mối tương quan giữa năng lượng nhiệt E, khối lượng m và độ tăng nhiệt độ Δt."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kết luận SGK",
+        "body": "Theo SGK KHTN 8 (Bài 27), năng lượng nhiệt cần cung cấp để làm nóng một vật tỉ lệ thuận với khối lượng m của vật và độ tăng nhiệt độ Δt của vật."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Năng lượng nhiệt cần cung cấp tỉ lệ thuận với khối lượng của chất lỏng và độ tăng nhiệt độ của nó**."
+      }
+    ],
+    "finalSolution": "Kết luận: **Năng lượng nhiệt cần cung cấp tỉ lệ thuận với khối lượng chất lỏng và độ tăng nhiệt độ của nó**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-proportionality",
+        "message": "Nhiều bạn nhầm lẫn giữa tỉ lệ thuận và tỉ lệ nghịch: càng nhiều nước và càng đun sôi kỹ thì càng tốn nhiều năng lượng điện."
+      }
+    ]
+  }
+]

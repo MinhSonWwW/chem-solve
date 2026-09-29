@@ -18,7 +18,7 @@ export const LearnPage: React.FC = () => {
 
 
   const currentGrade = (parseInt(grade, 10) as Grade) || 8;
-  const curriculum = useMemo(() => getCurriculum(currentGrade), [currentGrade]);
+  const curriculum = useMemo(() => getCurriculum(currentGrade, activeSubject), [currentGrade, activeSubject]);
 
   useEffect(() => {
     localStorage.setItem('chem_active_grade', String(currentGrade));
@@ -283,47 +283,73 @@ export const LearnPage: React.FC = () => {
         </button>
       </div>
 
-      {/* Physics Under Construction View */}
-      {activeSubject === 'physics' && (
-        <div className="bg-[#18272f] border-2 border-amber-500/40 p-6 sm:p-8 rounded-3xl shadow-[0_6px_0_0_#131f24] space-y-6 text-center">
-          <div className="w-20 h-20 rounded-3xl bg-amber-500/20 border-2 border-amber-500/40 flex items-center justify-center text-4xl mx-auto shadow-inner animate-pulse">
-            ⚡
-          </div>
-          <div className="space-y-2">
-            <span className="text-xs font-black uppercase text-amber-400 tracking-wider bg-amber-950/60 px-3 py-1 rounded-xl border border-amber-800/60 inline-block">
-              ĐANG XÂY DỰNG · SẮP RA MẮT
-            </span>
-            <h2 className="text-xl sm:text-2xl font-black text-white">Môn Vật lý THCS</h2>
-            <p className="text-xs sm:text-sm text-slate-300 max-w-lg mx-auto leading-relaxed">
-              Hệ thống bài tập, công thức tính toán và mô phỏng thí nghiệm tương tác (Cơ - Nhiệt - Điện - Quang) cho môn Vật lý (KHTN 6, 7, 8, 9) đang được chuẩn bị bám sát SGK Kết nối tri thức & Cánh diều!
-            </p>
-          </div>
-
-          {/* Topics Roadmap Preview */}
-          <div className="space-y-2 text-left max-w-md mx-auto pt-2">
-            <div className="text-[11px] font-black uppercase tracking-wider text-slate-400">
-              LỘ TRÌNH DỰ KIẾN:
-            </div>
-            {currentSub.topics.map((top, i) => (
-              <div key={i} className="p-3 rounded-xl bg-[#131f24] border border-[#2e4756] flex items-center gap-3">
-                <div className="w-7 h-7 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center text-xs font-black shrink-0 border border-amber-500/30">
-                  {i + 1}
-                </div>
-                <span className="text-xs font-bold text-slate-200">{top}</span>
-              </div>
+      {/* Physics Placeholder for grades without ready lessons yet (7, 8, 9) */}
+      {activeSubject === 'physics' && chaptersWithNodes.every((c) => c.pathNodes.length === 0) && (
+        <div className="space-y-6">
+          {/* Grade Selector for Physics */}
+          <div className="flex bg-[#18272f] border-2 border-amber-500/30 p-1.5 rounded-2xl shadow-[0_4px_0_0_#131f24]">
+            {([6, 7, 8, 9] as Grade[]).map((g) => (
+              <button
+                key={g}
+                onClick={() => {
+                  sound.playClick();
+                  navigate(`/learn/${g}`);
+                }}
+                className={`flex-1 py-2 text-xs font-black rounded-xl transition-all cursor-pointer ${
+                  currentGrade === g
+                    ? 'bg-[#eab308] text-slate-950 shadow-[0_3px_0_0_#ca8a04]'
+                    : 'text-slate-400 hover:text-white'
+                }`}
+              >
+                Lớp {g}
+              </button>
             ))}
           </div>
 
-          <div className="pt-2">
-            <button
-              onClick={() => {
-                sound.playClick();
-                setActiveSubjectState('chem');
-              }}
-              className="px-6 py-3 bg-[#0ea5e9] hover:bg-[#38bdf8] text-white font-black text-xs sm:text-sm rounded-2xl shadow-[0_4px_0_0_#0284c7] active:translate-y-1 active:shadow-none transition-all cursor-pointer"
-            >
-              🧪 Quay lại học Hóa học ngay
-            </button>
+          <div className="bg-[#18272f] border-2 border-amber-500/40 p-6 sm:p-8 rounded-3xl shadow-[0_6px_0_0_#131f24] space-y-6 text-center">
+            <div className="w-16 h-16 rounded-2xl bg-amber-500/20 border-2 border-amber-500/40 flex items-center justify-center text-3xl mx-auto shadow-inner">
+              ⚡
+            </div>
+            <div className="space-y-2">
+              <span className="text-xs font-black uppercase text-amber-400 tracking-wider bg-amber-950/60 px-3 py-1 rounded-xl border border-amber-800/60 inline-block">
+                HẠ TẦNG VẬT LÝ SẴN SÀNG · LỚP {currentGrade}
+              </span>
+              <h2 className="text-xl sm:text-2xl font-black text-white">{curriculum.title}</h2>
+              <p className="text-xs sm:text-sm text-slate-300 max-w-lg mx-auto leading-relaxed">
+                Khung chương trình, bộ hằng số, công thức và bàn phím Vật lý đã được thiết lập. Hệ thống sẵn sàng tạo chặng học ngay khi bạn cung cấp danh sách bài học!
+              </p>
+            </div>
+
+            {/* Chapters list */}
+            <div className="space-y-3 text-left max-w-lg mx-auto pt-2">
+              <div className="text-[11px] font-black uppercase tracking-wider text-amber-400 flex items-center justify-between">
+                <span>CÁC CHƯƠNG LỚP {currentGrade} ({curriculum.chapters.length} chương)</span>
+                <span className="text-[10px] text-slate-400 font-normal">Chờ danh sách bài</span>
+              </div>
+              {curriculum.chapters.map((ch) => (
+                <div key={ch.id} className="p-3.5 rounded-2xl bg-[#131f24] border border-[#2e4756] hover:border-amber-500/40 transition-colors">
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-xs font-black text-amber-300">{ch.title}</span>
+                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-amber-500/10 text-amber-400 border border-amber-500/20 shrink-0">
+                      Sẵn sàng nạp bài
+                    </span>
+                  </div>
+                  <p className="text-[11px] text-slate-400 mt-1 leading-relaxed">{ch.description}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
+              <button
+                onClick={() => {
+                  sound.playClick();
+                  navigate('/learn/6');
+                }}
+                className="w-full sm:w-auto px-6 py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs sm:text-sm rounded-2xl shadow-[0_4px_0_0_#b45309] active:translate-y-1 active:shadow-none transition-all cursor-pointer"
+              >
+                ⚡ Học Vật lý Lớp 6 (Unit 0 Đo lường)
+              </button>
+            </div>
           </div>
         </div>
       )}
@@ -372,8 +398,8 @@ export const LearnPage: React.FC = () => {
         </div>
       )}
 
-      {/* Normal Chemistry Curriculum View */}
-      {activeSubject === 'chem' && (
+      {/* Active Curriculum Snake Path View (Chemistry OR Physics with ready lessons) */}
+      {(activeSubject === 'chem' || (activeSubject === 'physics' && chaptersWithNodes.some((c) => c.pathNodes.length > 0))) && (
         <>
           {/* 1. Grade Selector (3D chunky tabs) */}
           <div className="flex bg-[#18272f] border-2 border-[#2e4756] p-1.5 rounded-2xl shadow-[0_4px_0_0_#131f24]">
@@ -386,7 +412,9 @@ export const LearnPage: React.FC = () => {
                 }}
                 className={`flex-1 py-2 text-xs font-black rounded-xl transition-all cursor-pointer ${
                   currentGrade === g
-                    ? 'bg-[#0ea5e9] text-white shadow-[0_3px_0_0_#0284c7]'
+                    ? activeSubject === 'physics'
+                      ? 'bg-[#eab308] text-slate-950 shadow-[0_3px_0_0_#ca8a04]'
+                      : 'bg-[#0ea5e9] text-white shadow-[0_3px_0_0_#0284c7]'
                     : 'text-slate-400 hover:text-white'
                 }`}
               >
@@ -401,11 +429,19 @@ export const LearnPage: React.FC = () => {
               {/* Chapter Banner (Duolingo Style) */}
               <div className="bg-[#18272f] border-2 border-[#2e4756] p-4 sm:p-5 rounded-3xl flex items-center justify-between shadow-[0_6px_0_0_#131f24] relative overflow-hidden">
                 {/* Background glowing ambient light */}
-                <div className="absolute -right-8 -top-8 w-32 h-32 bg-[#0ea5e9]/10 rounded-full blur-2xl pointer-events-none" />
+                <div
+                  className={`absolute -right-8 -top-8 w-32 h-32 ${
+                    activeSubject === 'physics' ? 'bg-amber-500/10' : 'bg-[#0ea5e9]/10'
+                  } rounded-full blur-2xl pointer-events-none`}
+                />
 
                 <div className="space-y-1 max-w-[65%] sm:max-w-[70%] relative z-10">
-                  <span className="inline-block text-[10px] font-black uppercase tracking-wider text-sky-300 bg-[#20333d] px-2 py-0.5 rounded-lg border border-[#2e4756]">
-                    Chương {chapter.chapterNumber} · Lớp {currentGrade}
+                  <span
+                    className={`inline-block text-[10px] font-black uppercase tracking-wider ${
+                      activeSubject === 'physics' ? 'text-amber-300' : 'text-sky-300'
+                    } bg-[#20333d] px-2 py-0.5 rounded-lg border border-[#2e4756]`}
+                  >
+                    {activeSubject === 'physics' ? `Unit ${chapter.chapterNumber}` : `Chương ${chapter.chapterNumber}`} · Lớp {currentGrade}
                   </span>
                   <h1 className="text-sm sm:text-base font-black text-white leading-tight">
                     {chapter.title}
@@ -421,7 +457,11 @@ export const LearnPage: React.FC = () => {
                     sound.playClick();
                     setSelectedChapterGuide(chapter);
                   }}
-                  className="relative z-10 flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 bg-[#ce82ff] hover:bg-[#d896ff] text-white font-black text-[11px] sm:text-xs rounded-2xl shadow-[0_4px_0_0_#a545ee] active:translate-y-1 active:shadow-none transition-all cursor-pointer whitespace-nowrap border-2 border-[#e9d5ff]/40"
+                  className={`relative z-10 flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 font-black text-[11px] sm:text-xs rounded-2xl active:translate-y-1 active:shadow-none transition-all cursor-pointer whitespace-nowrap border-2 ${
+                    activeSubject === 'physics'
+                      ? 'bg-[#f59e0b] hover:bg-[#fbbf24] text-slate-950 shadow-[0_4px_0_0_#b45309] border-amber-200/50'
+                      : 'bg-[#ce82ff] hover:bg-[#d896ff] text-white shadow-[0_4px_0_0_#a545ee] border-[#e9d5ff]/40'
+                  }`}
                   title="Xem sổ tay kiến thức chương"
                 >
                   <BookOpen className="w-4 h-4 stroke-[2.5]" />
@@ -433,6 +473,7 @@ export const LearnPage: React.FC = () => {
               <SnakePath
                 nodes={pathNodes}
                 onNodeClick={(node) => handleNodeClick(node, nodeLessonMap)}
+                subject={activeSubject as 'chem' | 'physics'}
               />
             </div>
           ))}

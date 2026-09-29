@@ -1,0 +1,554 @@
+[
+  {
+    "id": "phy-g9-b04-mcq-001",
+    "lessonId": "phy-g9-b04",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "refraction-definition"
+    ],
+    "difficulty": 1,
+    "prompt": "Hiện tượng khúc xạ ánh sáng là hiện tượng gì sau đây?",
+    "knowledge": [
+      "law.refraction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tia sáng bị gãy khúc tại mặt phân cách khi truyền xiên góc giữa hai môi trường trong suốt khác nhau"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tia sáng bị hấp thụ hoàn toàn và chuyển thành nhiệt năng tại bề mặt phân cách"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tia sáng bị hắt ngược trở lại môi trường cũ khi gặp một mặt gương phẳng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tia sáng truyền thẳng liên tục qua mọi chất liệu trong suốt"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khúc xạ là hiện tượng tia sáng bị đổi hướng (bị gãy khúc) khi đi sang môi trường khác."
+      },
+      {
+        "level": 2,
+        "text": "Theo SGK KHTN 9 Bài 5, hiện tượng khúc xạ ánh sáng là hiện tượng tia sáng bị gãy khúc tại mặt phân cách giữa hai môi trường trong suốt."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định khái niệm",
+        "body": "Đề bài yêu cầu nêu định nghĩa hiện tượng khúc xạ ánh sáng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 5: Hiện tượng tia sáng bị gãy khúc tại mặt phân cách giữa hai môi trường trong suốt khác nhau khi truyền xiên góc được gọi là hiện tượng khúc xạ ánh sáng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Tia sáng bị gãy khúc tại mặt phân cách khi truyền xiên góc giữa hai môi trường trong suốt khác nhau**."
+      }
+    ],
+    "finalSolution": "Khúc xạ ánh sáng là hiện tượng **tia sáng bị gãy khúc tại mặt phân cách** giữa hai môi trường trong suốt khi truyền xiên góc.",
+    "commonMistakes": [
+      {
+        "id": "confuse-with-reflection",
+        "message": "Tia sáng bị hắt ngược trở lại môi trường cũ là hiện tượng PHẢN XẠ ánh sáng, không phải khúc xạ."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b04-mcq-002",
+    "lessonId": "phy-g9-b04",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "refraction-air-to-water"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi một tia sáng truyền xiên góc từ không khí vào trong nước, góc khúc xạ r so với góc tới i có đặc điểm gì?",
+    "knowledge": [
+      "law.refraction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Góc khúc xạ luôn bằng 90°"
+        },
+        {
+          "id": "opt-b",
+          "label": "Góc khúc xạ nhỏ hơn góc tới (r < i)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Góc khúc xạ lớn hơn góc tới (r > i)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Góc khúc xạ luôn bằng góc tới (r = i)"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nước là môi trường chiết quang hơn không khí, tia sáng sẽ lệch lại gần pháp tuyến hơn."
+      },
+      {
+        "level": 2,
+        "text": "Khi lệch lại gần pháp tuyến thì góc khúc xạ r sẽ nhỏ hơn góc tới i."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định môi trường truyền",
+        "body": "Tia sáng truyền từ không khí vào nước (môi trường chiết quang hơn)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc khúc xạ",
+        "body": "Khi ánh sáng truyền từ không khí vào nước (hoặc thủy tinh), tia khúc xạ nằm gần pháp tuyến hơn tia tới, nghĩa là $r < i$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Góc khúc xạ nhỏ hơn góc tới (r < i)**."
+      }
+    ],
+    "finalSolution": "Khi truyền từ không khí vào nước: **góc khúc xạ nhỏ hơn góc tới ($r < i$)**.",
+    "commonMistakes": [
+      {
+        "id": "reverse-inequality",
+        "message": "Góc khúc xạ chỉ lớn hơn góc tới (r > i) khi ánh sáng truyền NGƯỢC LẠI từ nước ra không khí."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b04-mcq-003",
+    "lessonId": "phy-g9-b04",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "refraction-perpendicular-case"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi chiếu một tia sáng vuông góc với mặt phân cách giữa hai môi trường trong suốt (góc tới i = 0°), tia sáng sẽ:",
+    "knowledge": [
+      "law.refraction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Bị gãy khúc một góc vuông 90°"
+        },
+        {
+          "id": "opt-b",
+          "label": "Truyền thẳng tiếp vào môi trường thứ hai mà không bị gãy khúc (r = 0°)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Bị tán sắc thành các màu cầu vồng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Bị phản xạ ngược trở lại hoàn toàn"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi góc tới i = 0°, tia sáng trùng với pháp tuyến."
+      },
+      {
+        "level": 2,
+        "text": "Tia sáng chiếu vuông góc với mặt phân cách thì truyền thẳng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Góc tới đặc biệt",
+        "body": "Tia sáng chiếu vuông góc mặt phân cách nên góc hợp bởi tia tới và pháp tuyến $i = 0^\\circ$."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 5: Khi góc tới $i = 0^\\circ$, tia khúc xạ cũng trùng với pháp tuyến ($r = 0^\\circ$), nghĩa là tia sáng truyền thẳng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Truyền thẳng tiếp vào môi trường thứ hai mà không bị gãy khúc (r = 0°)**."
+      }
+    ],
+    "finalSolution": "Khi $i = 0^\\circ$ (chiếu vuông góc), **tia sáng truyền thẳng** không bị gãy khúc ($r = 0^\\circ$).",
+    "commonMistakes": [
+      {
+        "id": "confuse-angle-values",
+        "message": "Chiếu vuông góc với mặt phân cách có nghĩa là góc tới i = 0° (so với pháp tuyến), chứ không phải i = 90°."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b04-mcq-004",
+    "lessonId": "phy-g9-b04",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "refraction-water-to-air"
+    ],
+    "difficulty": 2,
+    "prompt": "Chiếu một tia sáng từ đáy một chậu nước xiên góc ra ngoài không khí. So sánh độ lớn giữa góc khúc xạ r và góc tới i:",
+    "knowledge": [
+      "law.refraction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Góc khúc xạ nhỏ hơn góc tới (r < i)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Góc khúc xạ lớn hơn góc tới (r > i)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Không xác định được mối quan hệ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Góc khúc xạ bằng góc tới (r = i)"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ánh sáng đi từ môi trường chiết quang sang môi trường kém chiết quang hơn."
+      },
+      {
+        "level": 2,
+        "text": "Tia khúc xạ bị bẻ cong xa pháp tuyến hơn nên r > i."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định chiều truyền",
+        "body": "Tia sáng truyền từ nước ra không khí."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc khúc xạ",
+        "body": "Khi ánh sáng truyền từ môi trường chiết quang hơn (nước) sang môi trường kém chiết quang hơn (không khí), tia khúc xạ bị lệch xa pháp tuyến hơn tia tới, do đó $r > i$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Góc khúc xạ lớn hơn góc tới (r > i)**."
+      }
+    ],
+    "finalSolution": "Khi truyền từ nước ra không khí: **góc khúc xạ lớn hơn góc tới ($r > i$)**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-direction",
+        "message": "Cần chú ý chiều truyền: từ không khí vào nước thì r < i, nhưng từ nước ra không khí thì r > i."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b04-mcq-005",
+    "lessonId": "phy-g9-b04",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "refraction-angle-definition"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong hiện tượng khúc xạ ánh sáng, góc tới i được định nghĩa là góc hợp bởi giữa:",
+    "knowledge": [
+      "law.refraction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tia khúc xạ và mặt phẳng phân cách"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tia tới và mặt phẳng phân cách giữa hai môi trường"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tia tới và đường pháp tuyến tại điểm tới"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tia tới và tia khúc xạ"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trong quang hình học, các góc tới, góc phản xạ, góc khúc xạ luôn so với đường pháp tuyến."
+      },
+      {
+        "level": 2,
+        "text": "Góc tới là góc giữa tia tới và pháp tuyến NN' tại điểm tới I."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định định nghĩa góc tới",
+        "body": "Đề bài yêu cầu nêu rõ quy ước xác định góc tới trong hiện tượng khúc xạ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy ước quang hình",
+        "body": "Theo quy ước SGK, góc tới $i$ là góc hợp bởi tia tới $SI$ và đường pháp tuyến $NN'$ tại điểm tới $I$ ($i = \\widehat{SIN}$)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Tia tới và đường pháp tuyến tại điểm tới**."
+      }
+    ],
+    "finalSolution": "Góc tới $i$ là góc hợp bởi **tia tới và đường pháp tuyến** tại điểm tới.",
+    "commonMistakes": [
+      {
+        "id": "confuse-surface-and-normal",
+        "message": "Bẫy thường gặp: Nhầm góc tới là góc giữa tia sáng và mặt phân cách (đó là góc hợp với bề mặt, góc tới là góc so với pháp tuyến)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b04-mcq-006",
+    "lessonId": "phy-g9-b04",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "refraction-daily-life-pool"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi nhìn từ trên bờ xuống đáy hồ bơi có nước trong veo, mắt ta thấy đáy hồ bơi dường như nông (cạn) hơn độ sâu thực tế. Hiện tượng quang học này xảy ra là do:",
+    "knowledge": [
+      "law.refraction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Đáy hồ bơi bị biến dạng hình học thực sự dưới áp suất nước"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nước trong hồ bơi hấp thụ một phần ánh sáng làm giảm khoảng cách"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tia sáng từ đáy hồ truyền ra không khí bị khúc xạ lệch xa pháp tuyến, mắt nhìn theo đường kéo dài thấy ảnh ảo dâng lên"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hiện tượng phản xạ toàn phần tại mặt nước giữ ánh sáng lại"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tia sáng từ đáy hồ truyền qua mặt nước ra không khí vào mắt người quan sát."
+      },
+      {
+        "level": 2,
+        "text": "Khi ra không khí, tia sáng bị khúc xạ lệch xa pháp tuyến, mắt cảm nhận ảnh ảo nằm cao hơn đáy thật."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất hiện tượng",
+        "body": "Giải thích vì sao đáy hồ bơi trông cạn hơn độ sâu thực tế khi nhìn từ không khí."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế tạo ảnh qua khúc xạ",
+        "body": "Tia sáng từ một điểm ở đáy hồ truyền lên mặt nước rồi khúc xạ ra không khí với góc $r > i$ (lệch xa pháp tuyến). Mắt người nhận chùm tia khúc xạ và nhìn theo phương truyền thẳng của tia ló, thấy ảnh ảo của đáy hồ nâng lên cao hơn thực tế."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Tia sáng từ đáy hồ truyền ra không khí bị khúc xạ lệch xa pháp tuyến, ảnh ảo dâng lên cao**."
+      }
+    ],
+    "finalSolution": "Do **khúc xạ ánh sáng khi truyền từ nước ra không khí**, mắt nhìn thấy ảnh ảo của đáy hồ dâng lên cao hơn đáy thật.",
+    "commonMistakes": [
+      {
+        "id": "think-reflection",
+        "message": "Hiện tượng này do khúc xạ ánh sáng (tia sáng truyền qua hai môi trường), không phải do phản xạ bề mặt."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b04-mcq-007",
+    "lessonId": "phy-g9-b04",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "refraction-angle-variation"
+    ],
+    "difficulty": 3,
+    "prompt": "Chiếu một tia sáng từ không khí vào một khối thủy tinh trong suốt. Nếu tăng góc tới i từ 30° lên 60° thì góc khúc xạ r sẽ thay đổi như thế nào?",
+    "knowledge": [
+      "law.refraction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Góc khúc xạ r tăng lên và vượt qua góc tới i (r > i)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Góc khúc xạ r cũng tăng theo nhưng giá trị của r vẫn luôn nhỏ hơn góc tới i"
+        },
+        {
+          "id": "opt-c",
+          "label": "Góc khúc xạ r giữ nguyên không thay đổi"
+        },
+        {
+          "id": "opt-d",
+          "label": "Góc khúc xạ r giảm đi tương ứng"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi góc tới i tăng thì góc khúc xạ r đồng biến (cũng tăng)."
+      },
+      {
+        "level": 2,
+        "text": "Vì ánh sáng truyền từ không khí vào thủy tinh nên r luôn nhỏ hơn i ở mọi góc tới."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích sự biến thiên",
+        "body": "Xem xét quy luật phụ thuộc của góc khúc xạ $r$ vào góc tới $i$ khi truyền từ không khí vào thủy tinh."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy luật khúc xạ",
+        "body": "Theo SGK KHTN 9 Bài 5: Khi tăng góc tới $i$, góc khúc xạ $r$ cũng tăng theo. Đồng thời vì ánh sáng truyền từ không khí vào thủy tinh (môi trường chiết quang hơn) nên ở mọi góc tới, ta luôn có $r < i$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Góc khúc xạ r cũng tăng theo nhưng giá trị của r vẫn luôn nhỏ hơn góc tới i**."
+      }
+    ],
+    "finalSolution": "Khi $i$ tăng thì **góc khúc xạ $r$ cũng tăng theo**, nhưng vì truyền vào thủy tinh nên **$r$ vẫn luôn nhỏ hơn $i$**.",
+    "commonMistakes": [
+      {
+        "id": "think-inverse",
+        "message": "Góc tới và góc khúc xạ biến thiên cùng chiều: góc tới tăng thì góc khúc xạ cũng tăng."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b04-mcq-008",
+    "lessonId": "phy-g9-b04",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "refraction-spearfishing-insight"
+    ],
+    "difficulty": 3,
+    "prompt": "Một ngư dân muốn dùng xiên nhọn để đâm trúng một con cá đang bơi dưới nước trong. Người đó cần phóng mũi xiên vào vị trí nào so với vị trí con cá mà mắt nhìn thấy?",
+    "knowledge": [
+      "law.refraction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Nhắm phóng xiên lên phía trên vị trí con cá mà mắt nhìn thấy"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nhắm phóng xiên xuống phía dưới vị trí con cá mà mắt nhìn thấy"
+        },
+        {
+          "id": "opt-c",
+          "label": "Nhắm sang ngang về phía bên trái 10 cm"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nhắm chính xác vào đúng vị trí con cá mà mắt nhìn thấy"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Vị trí mắt nhìn thấy chỉ là ảnh ảo của con cá tạo bởi hiện tượng khúc xạ ánh sáng."
+      },
+      {
+        "level": 2,
+        "text": "Ảnh ảo luôn nổi lên nông hơn con cá thật. Vậy con cá thật nằm ở sâu hơn (phía dưới) ảnh ảo."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích vị trí vật thật và ảnh",
+        "body": "Tia sáng từ con cá phát ra đi từ nước ra không khí bị khúc xạ với $r > i$, làm cho ảnh ảo của con cá nằm nông hơn con cá thật."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Ứng dụng thực tế",
+        "body": "Vì ảnh ảo mà mắt quan sát thấy ở vị trí cao hơn vị trí thực tế của con cá, nên con cá thật đang ở sâu hơn (bên dưới ảnh). Người phóng xiên phải nhắm xuống phía dưới vị trí nhìn thấy mới trúng con cá."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Nhắm phóng xiên xuống phía dưới vị trí con cá mà mắt nhìn thấy**."
+      }
+    ],
+    "finalSolution": "Do con cá thật ở sâu hơn ảnh ảo mà mắt nhìn thấy, người bắt cá phải **nhắm phóng xiên xuống phía dưới** ảnh ảo nhìn thấy.",
+    "commonMistakes": [
+      {
+        "id": "aim-directly",
+        "message": "Nếu nhắm thẳng vào vị trí nhìn thấy (ảnh ảo), mũi xiên sẽ bay qua phía trên con cá và bị hụt."
+      }
+    ]
+  }
+]

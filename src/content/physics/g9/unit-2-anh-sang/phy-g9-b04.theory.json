@@ -1,0 +1,81 @@
+{
+  "lessonId": "phy-g9-b04",
+  "nodeId": "phy-g9-b04-theory",
+  "title": "Lý thuyết: Khúc xạ ánh sáng",
+  "subtitle": "Bài 5 SGK Khoa học tự nhiên 9 (Kết nối tri thức)",
+  "sgkBaiSo": 5,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm cốt lõi",
+      "badgeColor": "cyan",
+      "title": "1. Hiện tượng khúc xạ ánh sáng và các yếu tố",
+      "content": "Khi ánh sáng truyền từ môi trường trong suốt này sang môi trường trong suốt khác:",
+      "bulletPoints": [
+        "Định nghĩa: Hiện tượng tia sáng bị gãy khúc tại mặt phân cách giữa hai môi trường trong suốt khác nhau được gọi là hiện tượng khúc xạ ánh sáng.",
+        "Các yếu tố hình học:",
+        "+ Điểm tới $I$: điểm mà tia sáng tới gặp mặt phân cách.",
+        "+ Tia tới $SI$, tia khúc xạ $IR$.",
+        "+ Pháp tuyến $NN'$: đường thẳng vuông góc với mặt phân cách tại điểm tới $I$.",
+        "+ Góc tới $i = \\widehat{SIN}$: góc hợp bởi tia tới và pháp tuyến.",
+        "+ Góc khúc xạ $r = \\widehat{N'IR}$: góc hợp bởi tia khúc xạ và pháp tuyến.",
+        "+ Mặt phẳng tới: mặt phẳng chứa tia tới $SI$ và pháp tuyến $NN'$."
+      ],
+      "callout": "Đặc điểm cơ bản: Tia khúc xạ luôn nằm trong mặt phẳng tới và ở phía bên kia pháp tuyến so với tia tới."
+    },
+    {
+      "id": "c2",
+      "badge": "Quy luật truyền sáng",
+      "badgeColor": "amber",
+      "title": "2. Mối quan hệ giữa góc tới và góc khúc xạ",
+      "content": "Sự so sánh giữa góc tới $i$ và góc khúc xạ $r$ phụ thuộc vào cặp môi trường truyền sáng:",
+      "bulletPoints": [
+        "Từ không khí vào nước (hoặc thủy tinh): Tia khúc xạ bị bẻ cong lại gần pháp tuyến hơn, góc khúc xạ nhỏ hơn góc tới ($r < i$).",
+        "Từ nước (hoặc thủy tinh) ra không khí: Tia khúc xạ bị bẻ cong ra xa pháp tuyến hơn, góc khúc xạ lớn hơn góc tới ($r > i$).",
+        "Sự biến thiên: Khi tăng (hoặc giảm) góc tới $i$ thì góc khúc xạ $r$ cũng tăng (hoặc giảm) theo.",
+        "Trường hợp truyền thẳng: Khi tia sáng truyền vuông góc với mặt phân cách ($i = 0^\\circ$) thì tia sáng truyền thẳng, không bị gãy khúc ($r = 0^\\circ$)."
+      ],
+      "callout": "Quy tắc vàng: Truyền vào môi trường chiết quang hơn thì r < i; truyền ra môi trường kém chiết quang hơn thì r > i."
+    },
+    {
+      "id": "c3",
+      "badge": "Hiện tượng đời sống",
+      "badgeColor": "emerald",
+      "title": "3. Các hiện tượng quang học do khúc xạ trong đời sống",
+      "content": "Hiện tượng khúc xạ ánh sáng tạo ra nhiều hiện tượng thị giác quen thuộc:",
+      "bulletPoints": [
+        "Ống hút/đũa bị gãy: Khi cắm nghiêng chiếc ống hút vào cốc nước, ta thấy ống hút như bị gãy tại mặt nước do tia sáng từ phần dưới nước bị khúc xạ khi ra ngoài không khí đến mắt ta.",
+        "Đáy bể bơi cạn hơn thực tế: Người đứng trên bờ nhìn xuống đáy hồ bơi luôn có cảm giác đáy hồ nông hơn độ sâu thực tế khoảng 1/4 độ sâu.",
+        "Vị trí con cá trong nước: Ảnh của con cá mà mắt nhìn thấy (ảnh ảo) nằm nông hơn vị trí thực tế của con cá. Do đó người bắt cá bằng xiên phải ngắm xiên xuống phía dưới vị trí nhìn thấy con cá."
+      ],
+      "callout": "Lưu ý an toàn: Không được ước lượng độ sâu nước bằng mắt thường trước khi bơi lội vì hiện tượng khúc xạ khiến nước luôn trông nông hơn thực tế!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi một tia sáng truyền xiên góc từ không khí vào nước, mối quan hệ giữa góc khúc xạ r và góc tới i là gì?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Góc khúc xạ nhỏ hơn góc tới (r < i)",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Góc khúc xạ lớn hơn góc tới (r > i)",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Góc khúc xạ luôn bằng góc tới (r = i)",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Góc khúc xạ luôn bằng 90°",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 9 Bài 5: Khi truyền từ không khí vào nước, tia khúc xạ lệch lại gần pháp tuyến hơn nên góc khúc xạ nhỏ hơn góc tới (r < i)."
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "lessonId": "phy-g6-b04",
+  "nodeId": "phy-g6-b04-theory",
+  "title": "Lý thuyết: Đo nhiệt độ",
+  "subtitle": "Bài 8 SGK Khoa học tự nhiên 6 (Kết nối tri thức)",
+  "sgkBaiSo": 8,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Kiến thức trọng tâm",
+      "badgeColor": "cyan",
+      "title": "1. Khái niệm nhiệt độ và thang nhiệt độ",
+      "content": "Nhiệt độ là số đo độ \"nóng\", \"lạnh\" của vật. Vật càng nóng thì nhiệt độ càng cao.",
+      "bulletPoints": [
+        "Thang Celsius (Xen-xi-út): Đơn vị là độ C (kí hiệu: °C), là thang nhiệt độ phổ biến nhất tại Việt Nam. Quy ước: nhiệt độ nước đá đang tan là 0 °C, nhiệt độ hơi nước đang sôi là 100 °C.",
+        "Thang Kelvin (hệ SI): Đơn vị là Kelvin (kí hiệu: K). Công thức chuyển đổi: T (K) = t (°C) + 273,15.",
+        "Thang Fahrenheit (Pha-ren-hai): Đơn vị là °F, quy ước nước đá tan ở 32 °F, nước sôi ở 212 °F."
+      ],
+      "callout": "Giác quan của con người (như sờ tay) chỉ cho cảm giác nóng lạnh tương đối, không thể đo chính xác nhiệt độ."
+    },
+    {
+      "id": "c2",
+      "badge": "Dụng cụ đo",
+      "badgeColor": "amber",
+      "title": "2. Dụng cụ đo nhiệt độ: Các loại nhiệt kế",
+      "content": "Dụng cụ dùng để đo nhiệt độ gọi là nhiệt kế. Phần lớn nhiệt kế thông dụng hoạt động dựa trên hiện tượng dãn nở vì nhiệt của chất lỏng.",
+      "bulletPoints": [
+        "Nhiệt kế rượu: Dùng để đo nhiệt độ không khí, thời tiết, phòng học (rượu nhuộm màu đỏ).",
+        "Nhiệt kế thủy ngân: Dùng trong phòng thí nghiệm (đo được nhiệt độ cao trên 100 °C).",
+        "Nhiệt kế y tế thủy ngân: Có ống mao dẫn bị thắt hẹp ở gần bầu để ngăn cột thủy ngân tự tụt xuống sau khi lấy ra khỏi cơ thể. Giới hạn đo từ 35 °C đến 42 °C.",
+        "Nhiệt kế điện tử, nhiệt kế hồng ngoại: Đo nhanh, an toàn và hiển thị số điện tử."
+      ],
+      "callout": "Cảnh báo an toàn: Thủy ngân rất độc! Nếu nhiệt kế thủy ngân bị vỡ, tuyệt đối không dùng máy hút bụi, rắc bột lưu huỳnh (nếu có) lên để gom và báo ngay cho người lớn."
+    },
+    {
+      "id": "c3",
+      "badge": "Kỹ năng thực hành",
+      "badgeColor": "emerald",
+      "title": "3. Các bước đo nhiệt độ cơ thể bằng nhiệt kế thủy ngân",
+      "content": "Quy trình đo nhiệt độ cơ thể bằng nhiệt kế y tế thủy ngân gồm 5 bước:",
+      "bulletPoints": [
+        "Bước 1: Ước lượng nhiệt độ cần đo để chọn nhiệt kế phù hợp.",
+        "Bước 2: Cầm chắc đầu nhiệt kế, vẩy mạnh cho cột thủy ngân tụt xuống dưới mức 35 °C.",
+        "Bước 3: Dùng bông tẩm cồn y tế sát trùng sạch bầu nhiệt kế.",
+        "Bước 4: Đặt bầu nhiệt kế vào nách và kẹp chặt tay trong khoảng 3 đến 5 phút.",
+        "Bước 5: Lấy nhiệt kế ra, giữ ngang tầm mắt, đọc và ghi kết quả theo mức thủy ngân dâng lên."
+      ],
+      "callout": "Lỗi thường gặp: Quên vẩy nhiệt kế trước khi đo làm kết quả đo bị cao hơn nhiệt độ thực tế của cơ thể."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Tại sao ở nhiệt kế y tế thủy ngân, ống quản ở gần bầu lại có một chỗ thắt hẹp?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Để ngăn không cho thủy ngân tự tụt xuống bầu khi đưa nhiệt kế ra khỏi cơ thể",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Để thủy ngân nở ra nhanh hơn khi tiếp xúc với cơ thể",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Để nhiệt kế trông đẹp và dễ cầm hơn",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Để giới hạn lượng thủy ngân trong bầu không vượt quá 42 °C",
+        "correct": false
+      }
+    ],
+    "explanation": "Chỗ thắt hẹp giữ cho cột thủy ngân không tự tụt xuống khi lấy ra khỏi nách, giúp người đo có đủ thời gian đọc kết quả chính xác."
+  }
+}

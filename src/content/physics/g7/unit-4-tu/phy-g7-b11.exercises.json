@@ -1,0 +1,527 @@
+[
+  {
+    "id": "phy-g7-b11-mcq-001",
+    "lessonId": "phy-g7-b11",
+    "sgkBaiSo": 18,
+    "skillIds": [
+      "magnet-poles-naming"
+    ],
+    "difficulty": 1,
+    "prompt": "Mỗi thanh nam châm vĩnh cửu luôn có hai cực từ xác định, kí hiệu và tên gọi quốc tế của hai cực này là:",
+    "knowledge": [
+      "magnet.poles_interaction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cực Bắc (kí hiệu N - North) và Cực Nam (kí hiệu S - South)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cực Lớn và Cực Nhỏ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cực Đông (kí hiệu E - East) và Cực Tây (kí hiệu W - West)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cực Dương (+) và Cực Âm (-)"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi treo tự do, hai đầu nam châm luôn chỉ về hai hướng địa lí chính của Trái Đất."
+      },
+      {
+        "level": 2,
+        "text": "Hai cực từ là cực Bắc (N) và cực Nam (S)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Kí hiệu các cực của nam châm",
+        "body": "Xác định tên gọi và kí hiệu quy ước của hai cực nam châm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 7 (Bài 18: Nam châm), mỗi nam châm có hai từ cực: cực Bắc (North - kí hiệu N) và cực Nam (South - kí hiệu S)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Cực Bắc (N) và Cực Nam (S)**."
+      }
+    ],
+    "finalSolution": "Hai cực từ của nam châm là **Cực Bắc (N) và Cực Nam (S)**.",
+    "commonMistakes": [
+      {
+        "id": "confused-with-electric-charges",
+        "message": "Cực dương (+) và cực âm (-) là của nguồn điện hoặc điện tích, không phải của nam châm."
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b11-mcq-002",
+    "lessonId": "phy-g7-b11",
+    "sgkBaiSo": 18,
+    "skillIds": [
+      "magnet-interaction-rule"
+    ],
+    "difficulty": 1,
+    "prompt": "Quy tắc tương tác giữa hai cực từ của hai thanh nam châm khi đặt lại gần nhau là:",
+    "knowledge": [
+      "magnet.poles_interaction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Các cực cùng tên thì đẩy nhau, các cực khác tên thì hút nhau"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hai nam châm luôn luôn đẩy nhau trong mọi trường hợp"
+        },
+        {
+          "id": "opt-c",
+          "label": "Các cực cùng tên thì hút nhau, các cực khác tên thì đẩy nhau"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hai nam châm luôn luôn hút nhau bất kể đưa cực nào lại gần"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hãy nhớ câu quy tắc: Cùng tên thì..., khác tên thì..."
+      },
+      {
+        "level": 2,
+        "text": "Cùng tên (N-N hoặc S-S) thì ĐẨY; khác tên (N-S) thì HÚT."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quy tắc tương tác từ",
+        "body": "Xác định lực tương tác hút/đẩy giữa các từ cực của nam châm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Khi đưa hai cực của hai nam châm lại gần nhau: các cực cùng tên (cùng cực) thì đẩy nhau; các cực khác tên (khác cực) thì hút nhau."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Quy tắc đúng là **Các cực cùng tên thì đẩy nhau, các cực khác tên thì hút nhau**."
+      }
+    ],
+    "finalSolution": "Quy tắc tương tác: **Cùng tên thì đẩy, khác tên thì hút**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b11-mcq-003",
+    "lessonId": "phy-g7-b11",
+    "sgkBaiSo": 18,
+    "skillIds": [
+      "magnet-materials-attraction"
+    ],
+    "difficulty": 1,
+    "prompt": "Nam châm vĩnh cửu có khả năng hút dính được các vật làm từ vật liệu nào sau đây?",
+    "knowledge": [
+      "magnet.poles_interaction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Đồng, nhôm, vàng, bạc"
+        },
+        {
+          "id": "opt-b",
+          "label": "Chì, thiếc nguyên chất, cao su"
+        },
+        {
+          "id": "opt-c",
+          "label": "Sắt, thép, niken, coban"
+        },
+        {
+          "id": "opt-d",
+          "label": "Gỗ khô, nhựa tổng hợp, thủy tinh"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Các vật liệu bị nam châm hút được gọi chung là vật liệu có tính từ (vật liệu từ)."
+      },
+      {
+        "level": 2,
+        "text": "Sắt và thép là những vật liệu từ điển hình nhất bị nam châm hút mạnh."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận diện vật liệu từ",
+        "body": "Xác định các kim loại bị nam châm hút."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 7 Bài 18, các vật liệu từ có thể bị nam châm hút là: sắt, thép, niken, coban, gađôlini... Đồng, nhôm, nhựa, gỗ không có tính từ."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nhóm vật liệu bị nam châm hút là **Sắt, thép, niken, coban**."
+      }
+    ],
+    "finalSolution": "Nam châm hút được **sắt, thép, niken, coban** (các vật liệu từ).",
+    "commonMistakes": [
+      {
+        "id": "thought-all-metals-attracted",
+        "message": "Nhiều bạn nghĩ nam châm hút được mọi kim loại. Thực tế đồng, nhôm, vàng, bạc không hề bị nam châm hút."
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b11-mcq-004",
+    "lessonId": "phy-g7-b11",
+    "sgkBaiSo": 18,
+    "skillIds": [
+      "magnet-pole-strength"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi rải một lớp đinh ghim sắt nhỏ lên một tờ giấy rồi đặt thanh nam châm thẳng lên trên, ta thấy đinh ghim bám dính nhiều nhất ở vị trí nào của thanh nam châm?",
+    "knowledge": [
+      "magnet.poles_interaction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chính giữa thân thanh nam châm"
+        },
+        {
+          "id": "opt-b",
+          "label": "Đinh ghim chỉ dính ở một cạnh bên"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hai đầu cực của thanh nam châm"
+        },
+        {
+          "id": "opt-d",
+          "label": "Phân bố đều như nhau trên toàn bộ bề mặt thanh nam châm"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Lực từ của nam châm tập trung mạnh nhất ở đâu?"
+      },
+      {
+        "level": 2,
+        "text": "Từ tính mạnh nhất ở hai cực (hai đầu thanh nam châm), ở giữa lực từ hầu như triệt tiêu."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Sự phân bố từ tính trên nam châm",
+        "body": "Xác định vị trí có lực từ hút sắt mạnh nhất của thanh nam châm thẳng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Từ tính của nam châm tập trung mạnh nhất ở hai đầu cực. Ở phần giữa thanh nam châm, từ tính rất yếu nên đinh ghim bám nhiều nhất ở hai đầu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đinh ghim bám nhiều nhất ở **Hai đầu cực của thanh nam châm**."
+      }
+    ],
+    "finalSolution": "Lực từ mạnh nhất ở **hai đầu cực** của thanh nam châm.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b11-mcq-005",
+    "lessonId": "phy-g7-b11",
+    "sgkBaiSo": 18,
+    "skillIds": [
+      "magnet-pole-repulsion-test"
+    ],
+    "difficulty": 2,
+    "prompt": "Một thanh nam châm A đang được treo lơ lửng bằng sợi chỉ mềm tự do. Nếu đưa cực Bắc (sơn đỏ, chữ N) của thanh nam châm B lại gần cực Bắc của thanh nam châm A thì hiện tượng gì sẽ xảy ra?",
+    "knowledge": [
+      "magnet.poles_interaction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cực Bắc của thanh A bị đẩy ra xa"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cực Bắc của thanh A bị hút lại dính chặt vào cực Bắc thanh B"
+        },
+        {
+          "id": "opt-c",
+          "label": "Thanh A không hề cử động hay phản ứng gì"
+        },
+        {
+          "id": "opt-d",
+          "label": "Sợi chỉ treo thanh A bị đứt ngay lập tức"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cực Bắc của thanh B và cực Bắc của thanh A là hai cực cùng tên hay khác tên?"
+      },
+      {
+        "level": 2,
+        "text": "Hai cực cùng tên N - N nên chúng sẽ đẩy nhau, làm thanh A xoay ra xa."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tương tác giữa 2 cực Bắc",
+        "body": "Hai cực cùng tên (cực Bắc N và cực Bắc N) đặt gần nhau."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc tương tác từ",
+        "body": "Các cực cùng tên của nam châm thì đẩy nhau. Khi đưa cực N lại gần cực N, lực từ đẩy sẽ làm thanh A dịch chuyển ra xa."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hiện tượng là **Cực Bắc của thanh A bị đẩy ra xa**."
+      }
+    ],
+    "finalSolution": "Hai cực cùng tên N - N nên **cực Bắc của thanh A bị đẩy ra xa**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b11-mcq-006",
+    "lessonId": "phy-g7-b11",
+    "sgkBaiSo": 18,
+    "skillIds": [
+      "magnet-separation-application"
+    ],
+    "difficulty": 2,
+    "prompt": "Một bạn học sinh vô tình làm rơi một chiếc đinh sắt và một chiếc thìa nhôm nhỏ vào trong một hộp đựng đầy mùn cưa. Dùng một thanh nam châm có thể giúp bạn lấy vật nào ra một cách nhanh chóng?",
+    "knowledge": [
+      "magnet.poles_interaction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chỉ lấy được chiếc đinh sắt vì sắt có tính từ, nhôm không bị nam châm hút"
+        },
+        {
+          "id": "opt-b",
+          "label": "Lấy được cả đinh sắt và thìa nhôm cùng lúc"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chỉ lấy được chiếc thìa nhôm vì nhôm nhẹ hơn sắt"
+        },
+        {
+          "id": "opt-d",
+          "label": "Không lấy được vật nào vì mùn cưa cản trở lực từ"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trong hai kim loại sắt và nhôm, kim loại nào bị nam châm hút?"
+      },
+      {
+        "level": 2,
+        "text": "Sắt bị nam châm hút dính, nhôm không có tính từ nên không bị hút."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Ứng dụng phân loại vật liệu",
+        "body": "Phân biệt khả năng tương tác từ giữa sắt và nhôm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Sắt là vật liệu từ bị nam châm hút mạnh; nhôm và mùn cưa không phải vật liệu từ nên không bị nam châm hút."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nam châm **Chỉ lấy được chiếc đinh sắt**."
+      }
+    ],
+    "finalSolution": "Nam châm **chỉ hút được đinh sắt**, chiếc thìa nhôm không có tính từ nên không bị hút.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b11-tf-007",
+    "lessonId": "phy-g7-b11",
+    "sgkBaiSo": 18,
+    "skillIds": [
+      "magnet-properties-tf"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai của các khẳng định sau về nam châm:",
+    "knowledge": [
+      "magnet.poles_interaction"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Lực tác dụng giữa hai nam châm là lực không tiếp xúc vì chúng có thể hút hoặc đẩy nhau từ khoảng cách xa.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Một thanh nam châm thẳng có thể chỉ có duy nhất một cực Bắc mà hoàn toàn không có cực Nam.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Kim nam châm thử tự do luôn tự động định hướng theo trục Bắc – Nam địa lí khi đứng yên.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mỗi nam châm luôn luôn có đủ hai cực Bắc và Nam, không bao giờ tồn tại nam châm một cực (mệnh đề 2 sai)."
+      },
+      {
+        "level": 2,
+        "text": "Lực từ là lực không tiếp xúc và kim nam châm tự định hướng Bắc - Nam."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 3 khẳng định",
+        "body": "Đánh giá các phát biểu về bản chất lực từ, tính chất hai cực và sự định hướng của kim nam châm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu kiến thức SGK",
+        "body": "- Mệnh đề 1: ĐÚNG. Lực từ xuất hiện khi chưa cần tiếp xúc trực tiếp nên là lực không tiếp xúc.\\n- Mệnh đề 2: SAI. Mọi nam châm luôn tồn tại đồng thời hai cực từ N và S, không thể tách riêng một cực.\\n- Mệnh đề 3: ĐÚNG. Dưới tác dụng của từ trường Trái Đất, kim nam châm tự do luôn chỉ hướng Bắc - Nam."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự đáp án là **Đúng - Sai - Đúng**."
+      }
+    ],
+    "finalSolution": "Mệnh đề 1: **Đúng**; Mệnh đề 2: **Sai**; Mệnh đề 3: **Đúng**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b11-mcq-008",
+    "lessonId": "phy-g7-b11",
+    "sgkBaiSo": 18,
+    "skillIds": [
+      "magnet-broken-halves"
+    ],
+    "difficulty": 3,
+    "prompt": "Nếu dùng cưa cắt đôi một thanh nam châm thẳng ở chính giữa thành hai nửa bằng nhau, thì mỗi nửa thanh nam châm đó sẽ có tính chất gì?",
+    "knowledge": [
+      "magnet.poles_interaction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cả hai nửa đều mất hoàn toàn từ tính và biến thành sắt thường"
+        },
+        {
+          "id": "opt-b",
+          "label": "Mỗi nửa trở thành một nam châm mới hoàn chỉnh có đủ cả cực Bắc và cực Nam"
+        },
+        {
+          "id": "opt-c",
+          "label": "Một nửa chỉ mang cực Bắc, nửa kia chỉ mang cực Nam"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hai nửa trở thành nam châm điện cần cắm điện mới hoạt động"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trong tự nhiên có bao giờ tách rời được một cực từ riêng lẻ hay không?"
+      },
+      {
+        "level": 2,
+        "text": "Cực từ luôn tồn tại thành từng cặp; tại vết cắt sẽ tự động hình thành các cực từ mới đối lập."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hiện tượng chia cắt nam châm",
+        "body": "Phân tích tính chất của các nửa nam châm sau khi bị cắt đôi."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Bản chất vật lí",
+        "body": "Trong tự nhiên không tồn tại đơn cực từ. Khi bẻ đôi một nam châm, tại mặt cắt sẽ tự động xuất hiện cực từ mới đối diện, tạo thành hai nam châm độc lập, mỗi nam châm đều có đủ cả cực Bắc (N) và cực Nam (S)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Kết quả là **Mỗi nửa trở thành một nam châm mới hoàn chỉnh có đủ cả hai cực Bắc và Nam**."
+      }
+    ],
+    "finalSolution": "Khi cắt đôi nam châm, **mỗi nửa trở thành một nam châm mới** có đầy đủ cả 2 cực Bắc và Nam.",
+    "commonMistakes": [
+      {
+        "id": "thought-poles-separated",
+        "message": "Nhiều bạn nghĩ cắt đôi sẽ tách riêng được cực N và cực S. Điều này là sai vì từ tính luôn tạo thành cặp lưỡng cực."
+      }
+    ]
+  }
+]

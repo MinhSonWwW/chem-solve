@@ -1,0 +1,384 @@
+[
+  {
+    "id": "phy-g6-b03-mcq-001",
+    "lessonId": "phy-g6-b03",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "time-unit-si"
+    ],
+    "difficulty": 1,
+    "prompt": "Đơn vị đo thời gian cơ bản trong hệ đơn vị đo lường quốc tế (hệ SI) là gì?",
+    "knowledge": [
+      "unit.time.si"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Giây (s)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Phút (min)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ngày"
+        },
+        {
+          "id": "opt-d",
+          "label": "Giờ (h)"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đây là đơn vị thời gian nhỏ nhất thường dùng trong các bài toán Vật lý cơ bản."
+      },
+      {
+        "level": 2,
+        "text": "Theo SGK KHTN 6 (Bài 7), giây (kí hiệu: s) là đơn vị đo thời gian cơ bản trong hệ SI."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận dạng câu hỏi",
+        "body": "Câu hỏi yêu cầu xác định đơn vị đo thời gian chuẩn theo hệ SI."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Trong hệ SI, đơn vị đo thời gian cơ bản là giây (kí hiệu: s)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Giây (s)**."
+      }
+    ],
+    "finalSolution": "Đơn vị đo thời gian chuẩn trong hệ SI là **giây (kí hiệu: s)**.",
+    "commonMistakes": [
+      {
+        "id": "chose-hour",
+        "message": "Nhiều bạn nghĩ giờ (h) là đơn vị cơ bản vì dùng nhiều hằng ngày, nhưng theo chuẩn SI thì giây (s) mới là đơn vị gốc."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b03-mcq-002",
+    "lessonId": "phy-g6-b03",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "time-tool-selection"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong một hội thi bơi lội cự ly 50 mét của trường, trọng tài cần sử dụng loại đồng hồ nào sau đây để đo thành tích thi đấu của các vận động viên một cách chính xác nhất?",
+    "knowledge": [
+      "unit.time.si"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Đồng hồ treo tường"
+        },
+        {
+          "id": "opt-b",
+          "label": "Đồng hồ cát"
+        },
+        {
+          "id": "opt-c",
+          "label": "Đồng hồ quả lắc"
+        },
+        {
+          "id": "opt-d",
+          "label": "Đồng hồ bấm giây"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thời gian thi bơi 50m diễn ra rất nhanh (chỉ vài chục giây), cần đồng hồ có thể bắt đầu và dừng đo tức thì."
+      },
+      {
+        "level": 2,
+        "text": "Đồng hồ bấm giây có nút bấm Start/Stop và đo chính xác đến phần trăm giây."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích tình huống",
+        "body": "Đo thời gian thi bơi lội cự ly ngắn đòi hỏi dụng cụ có khả năng kích hoạt và dừng chuẩn xác theo hiệu lệnh."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Lựa chọn dụng cụ đo",
+        "body": "Đồng hồ bấm giây điện tử hoặc cơ học được thiết kế chuyên biệt để đo các khoảng thời gian ngắn với ĐCNN lên tới 0,01 s."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Dụng cụ chính xác nhất là **Đồng hồ bấm giây**."
+      }
+    ],
+    "finalSolution": "Trọng tài sử dụng **đồng hồ bấm giây** để ghi nhận chính xác thành tích thi đấu thể thao.",
+    "commonMistakes": [
+      {
+        "id": "chose-wall-clock",
+        "message": "Đồng hồ treo tường chỉ có kim giây nhảy từng giây một, không thể bấm dừng chính xác khi vận động viên chạm đích."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b03-mcq-003",
+    "lessonId": "phy-g6-b03",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "time-measurement-steps"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi sử dụng đồng hồ bấm giây để đo thời gian rơi của một vật trong phòng thí nghiệm, bước đầu tiên cần thực hiện trước khi bấm giờ là gì?",
+    "knowledge": [
+      "unit.time.si"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hiệu chỉnh đưa kim hoặc chỉ số đồng hồ về vị trí số 0 (Reset)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Lắc nhẹ đồng hồ để kim chuyển động trơn tru"
+        },
+        {
+          "id": "opt-c",
+          "label": "Bấm nút cho đồng hồ chạy thử 1 phút"
+        },
+        {
+          "id": "opt-d",
+          "label": "Đặt mắt nhìn nghiêng góc 45 độ vào mặt số"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nếu đồng hồ chưa ở số 0 mà đang hiển thị một con số khác, kết quả đo sẽ bị sai lệch."
+      },
+      {
+        "level": 2,
+        "text": "Thao tác đưa đồng hồ về số 0 (Reset) là bước hiệu chỉnh bắt buộc trước mọi phép đo thời gian."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định bước chuẩn bị",
+        "body": "Thao tác chuẩn bị đồng hồ trước khi bắt đầu đo thời gian."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy trình đo thời gian",
+        "body": "Bước 2 trong quy trình đo thời gian yêu cầu: Hiệu chỉnh đồng hồ về số 0 trước khi đo."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thao tác bắt buộc là **Hiệu chỉnh đưa kim hoặc chỉ số đồng hồ về vị trí số 0 (Reset)**."
+      }
+    ],
+    "finalSolution": "Phải **hiệu chỉnh đồng hồ về số 0** trước khi bấm giờ để tránh sai số.",
+    "commonMistakes": [
+      {
+        "id": "forgot-reset",
+        "message": "Quên đưa về số 0 khiến thời gian đo bị cộng thêm lượng thời gian còn lưu từ lần bấm trước."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b03-calc-004",
+    "lessonId": "phy-g6-b03",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "time-unit-convert"
+    ],
+    "difficulty": 2,
+    "prompt": "Một trận thi đấu bóng đá kéo dài 1 giờ 45 phút (bao gồm cả thời gian nghỉ giữa hai hiệp). Thời gian đó khi đổi hoàn toàn ra đơn vị phút là bao nhiêu phút?",
+    "knowledge": [
+      "unit.time.si"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 105,
+      "unit": "phút",
+      "decimals": 0
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đổi 1 giờ ra phút: 1 giờ = 60 phút."
+      },
+      {
+        "level": 2,
+        "text": "Cộng thêm 45 phút: 60 + 45 = ?"
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định phép tính",
+        "body": "Đổi 1 giờ 45 phút sang phút."
+      },
+      {
+        "kind": "compute",
+        "title": "Thực hiện phép đổi",
+        "body": "Ta có $1\\text{ giờ} = 60\\text{ phút}$. Tổng thời gian: $60\\text{ phút} + 45\\text{ phút} = 105\\text{ phút}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thời gian trận đấu là **105 phút**."
+      }
+    ],
+    "finalSolution": "1 giờ 45 phút = $60 + 45 =$ **105 phút**.",
+    "commonMistakes": [
+      {
+        "id": "wrong-hour-base",
+        "message": "1 giờ có 60 phút, không phải 100 phút."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b03-calc-005",
+    "lessonId": "phy-g6-b03",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "time-unit-convert"
+    ],
+    "difficulty": 2,
+    "prompt": "Một tiết học ở trường THCS kéo dài 45 phút. Khoảng thời gian đó khi đổi ra đơn vị giây (s) là bao nhiêu giây?",
+    "knowledge": [
+      "unit.time.si"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 2700,
+      "unit": "s",
+      "decimals": 0
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhớ lại: 1 phút = 60 giây."
+      },
+      {
+        "level": 2,
+        "text": "Lấy 45 nhân với 60 để tìm số giây."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Yêu cầu bài toán",
+        "body": "Đổi 45 phút sang đơn vị giây (s)."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "Vì $1\\text{ phút} = 60\\text{ s}$, ta có: $45\\text{ phút} = 45 \\times 60 = 2\\,700\\text{ s}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thời gian một tiết học là **2 700 s**."
+      }
+    ],
+    "finalSolution": "45 phút = $45 \\times 60 =$ **2 700 s**.",
+    "commonMistakes": [
+      {
+        "id": "divided-by-60",
+        "message": "Từ phút đổi sang giây phải nhân với 60, không phải chia cho 60."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b03-mcq-006",
+    "lessonId": "phy-g6-b03",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "time-interval-calc"
+    ],
+    "difficulty": 3,
+    "prompt": "Bạn Lan bắt đầu chạy thể dục buổi sáng lúc 6 giờ 15 phút 00 giây và kết thúc buổi chạy lúc 6 giờ 38 phút 30 giây. Khoảng thời gian Lan chạy thể dục là:",
+    "knowledge": [
+      "unit.time.si"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "23 phút 30 giây (hoặc 1 410 giây)"
+        },
+        {
+          "id": "opt-b",
+          "label": "38 phút 30 giây (hoặc 2 310 giây)"
+        },
+        {
+          "id": "opt-c",
+          "label": "15 phút 30 giây (hoặc 930 giây)"
+        },
+        {
+          "id": "opt-d",
+          "label": "23 phút 00 giây (hoặc 1 380 giây)"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khoảng thời gian = Thời điểm kết thúc trừ Thời điểm bắt đầu."
+      },
+      {
+        "level": 2,
+        "text": "6h38min30s - 6h15min00s = (38 - 15) phút + 30 giây = 23 phút 30 giây."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân biệt thời điểm và khoảng thời gian",
+        "body": "Đề bài cho thời điểm bắt đầu và thời điểm kết thúc. Cần tìm khoảng thời gian trôi qua giữa hai thời điểm."
+      },
+      {
+        "kind": "compute",
+        "title": "Thực hiện phép trừ",
+        "body": "Khoảng thời gian chạy: $\\Delta t = (6\\text{h } 38\\text{min } 30\\text{s}) - (6\\text{h } 15\\text{min } 00\\text{s}) = 23\\text{ phút } 30\\text{ giây}$. Đổi ra giây: $23 \\times 60 + 30 = 1\\,380 + 30 = 1\\,410\\text{ s}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thời gian Lan chạy là **23 phút 30 giây (hoặc 1 410 giây)**."
+      }
+    ],
+    "finalSolution": "Khoảng thời gian chạy là **23 phút 30 giây (1 410 giây)**.",
+    "commonMistakes": [
+      {
+        "id": "confused-time-point",
+        "message": "Không nhầm lẫn thời điểm kết thúc (6h38min30s) với khoảng thời gian đã trôi qua."
+      }
+    ]
+  }
+]

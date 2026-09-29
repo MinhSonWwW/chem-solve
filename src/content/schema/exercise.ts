@@ -153,8 +153,9 @@ export const FindItemSchema = z.object({
 });
 
 export const ExerciseSchema = z.object({
-  id: z.string().regex(/^g[6-9]-b\d{2}-[a-z0-9-]+$/),
-  lessonId: z.string().regex(/^g[6-9]-b\d{2}$/),
+  id: z.string().regex(/^(phy-)?g[6-9]-b\d{2}-[a-z0-9-]+$/),
+  lessonId: z.string().regex(/^(phy-)?g[6-9]-b\d{2}$/),
+  sgkBaiSo: z.number().int().positive().optional(),
   skillIds: z.array(z.string()).min(1),
   difficulty: DifficultySchema,
   prompt: z.string().min(3),
@@ -168,7 +169,7 @@ export const ExerciseSchema = z.object({
   commonMistakes: z.array(CommonMistakeSchema).default([]),
   related: z.array(z.string()).optional(),
   minigameTags: z.array(z.string()).optional(),
-  visual: z.object({ sprite: z.string() }).optional(),
+  visual: z.object({ sprite: z.string().optional(), mode: z.string().optional() }).optional(),
   verify: z.object({
     fn: z.string(),
     args: z.record(z.union([z.string(), z.number()]))

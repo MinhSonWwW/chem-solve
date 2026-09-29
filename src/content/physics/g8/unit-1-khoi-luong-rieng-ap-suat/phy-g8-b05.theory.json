@@ -1,0 +1,76 @@
+{
+  "lessonId": "phy-g8-b05",
+  "nodeId": "phy-g8-b05-theory",
+  "title": "Lý thuyết: Lực đẩy Archimedes",
+  "subtitle": "Bài 17 SGK Khoa học tự nhiên 8 (Kết nối tri thức)",
+  "sgkBaiSo": 17,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Lực đẩy Archimedes",
+      "badgeColor": "cyan",
+      "title": "1. Khái niệm và công thức tính lực đẩy Archimedes",
+      "content": "Mọi vật khi nhúng vào trong chất lỏng (hoặc chất khí) đều chịu một lực nâng từ chất lỏng:",
+      "bulletPoints": [
+        "Định nghĩa: Một vật nhúng vào trong chất lỏng bị chất lỏng tác dụng một lực đẩy hướng thẳng đứng từ dưới lên trên, gọi là lực đẩy Archimedes (kí hiệu: $F_A$).",
+        "Độ lớn: Lực đẩy Archimedes có độ lớn bằng trọng lượng của phần chất lỏng bị vật chiếm chỗ.",
+        "Công thức tính: $F_A = d \\times V$",
+        "Trong đó: $F_A$ là lực đẩy Archimedes (N); $d$ là trọng lượng riêng của chất lỏng ($d = 10 \\times D$, đơn vị N/m³); $V$ là thể tích phần chất lỏng bị vật chiếm chỗ (đúng bằng thể tích phần vật chìm trong chất lỏng, đơn vị m³)."
+      ],
+      "callout": "Lưu ý then chốt về V: V trong công thức FA = d x V CHỈ LÀ thể tích của phần vật chìm trong chất lỏng, không nhất thiết là toàn bộ thể tích của vật."
+    },
+    {
+      "id": "c2",
+      "badge": "Chìm - Nổi - Lơ lửng",
+      "badgeColor": "amber",
+      "title": "2. Điều kiện vật chìm, vật nổi và lơ lửng",
+      "content": "Khi thả một vật vào trong lòng chất lỏng, vật chịu tác dụng của hai lực: Trọng lực $\\vec{P}$ (kéo xuống) và Lực đẩy Archimedes $\\vec{F}_A$ (đẩy lên):",
+      "bulletPoints": [
+        "Vật chìm xuống đáy: Khi trọng lượng lớn hơn lực đẩy ($P > F_A$) hoặc trọng lượng riêng của vật lớn hơn chất lỏng ($d_{\\text{vật}} > d_{\\text{lỏng}}$). Ví dụ: Đinh sắt thả vào nước.",
+        "Vật lơ lửng trong chất lỏng: Khi trọng lượng bằng lực đẩy ($P = F_A$) hoặc $d_{\\text{vật}} = d_{\\text{lỏng}}$. Ví dụ: Con cá bơi thăng bằng trong nước.",
+        "Vật nổi lên mặt thoáng: Khi trọng lượng nhỏ hơn lực đẩy khi chìm ($P < F_A$) hoặc $d_{\\text{vật}} < d_{\\text{lỏng}}$. Khi vật nổi lên và đứng yên cân bằng trên mặt thoáng thì $F_A' = P$ (với $F_A' = d_{\\text{lỏng}} \\times V_{\\text{chìm}}$)."
+      ],
+      "callout": "Quy tắc so sánh nhanh: Muốn biết vật chìm hay nổi, chỉ cần so sánh khối lượng riêng của vật (Dvật) với chất lỏng (Dlỏng)."
+    },
+    {
+      "id": "c3",
+      "badge": "Ứng dụng thực tế",
+      "badgeColor": "emerald",
+      "title": "3. Ứng dụng thực tế của lực đẩy Archimedes",
+      "content": "Lực đẩy Archimedes là nền tảng của nhiều thành tựu kĩ thuật giao thông thủy và hàng không:",
+      "bulletPoints": [
+        "Tàu thuyền nổi trên mặt nước: Dù làm bằng sắt thép rất nặng ($D = 7\\,800\\text{ kg/m}^3$), thân tàu được thiết kế rỗng chứa nhiều không khí nên thể tích chiếm chỗ $V$ cực lớn, khiến trọng lượng riêng trung bình của cả con tàu nhỏ hơn nước, giúp tàu nổi và chở được hàng hóa.",
+        "Tàu ngầm lặn và nổi: Thân tàu ngầm có các khoang dằn. Khi muốn lặn, tàu mở van cho nước biển tràn vào khoang làm trọng lượng $P$ tăng lên ($P > F_A$); khi muốn nổi, dùng khí nén đẩy nước ra khỏi khoang làm $P < F_A$ giúp tàu nổi lên.",
+        "Khí cầu và khinh khí cầu: Bơm khí nhẹ (heli hoặc hydro, không khí nóng) vào bóng khí để trọng lượng riêng nhỏ hơn không khí xung quanh, lực đẩy Archimedes của không khí nâng khí cầu bay lên."
+      ],
+      "callout": "Vạch dấu mớn nước: Trên vỏ tàu chở hàng có các vạch mớn nước Plimsoll quy định tải trọng tối đa an toàn để đảm bảo tàu không bị chìm quá sâu."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Lực đẩy Archimedes tác dụng lên một vật nhúng trong chất lỏng có phương và chiều như thế nào?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Phương thẳng đứng, chiều từ dưới lên trên",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Phương thẳng đứng, chiều từ trên xuống dưới",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Phương nằm ngang, chiều từ trái sang phải",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Phương xiên góc 45 độ",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo định nghĩa SGK KHTN 8 Bài 17: Lực đẩy Archimedes luôn có phương thẳng đứng và chiều hướng từ dưới lên trên (ngược chiều với trọng lực)."
+  }
+}

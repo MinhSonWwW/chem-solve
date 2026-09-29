@@ -1,0 +1,68 @@
+{
+  "lessonId": "phy-g6-b19",
+  "nodeId": "phy-g6-b19-theory",
+  "title": "Lý thuyết: Hệ Mặt Trời",
+  "subtitle": "Bài 54 SGK Khoa học tự nhiên 6 (Kết nối tri thức)",
+  "sgkBaiSo": 54,
+  "estimatedMinutes": 2,
+  "description": "Khám phá cấu trúc của Hệ Mặt Trời, vị trí và các đặc điểm nổi bật của 8 hành tinh theo thứ tự khoảng cách từ Mặt Trời.",
+  "cards": [
+    {
+      "id": "card-1",
+      "title": "1. Mặt Trời và Cấu trúc Hệ Mặt Trời",
+      "badge": "Trung tâm hệ hành tinh",
+      "badgeColor": "amber",
+      "content": "Hệ Mặt Trời là một hệ hành tinh gồm Mặt Trời nằm ở vị trí trung tâm và các thiên thể chuyển động xung quanh nó:",
+      "bulletPoints": [
+        "Mặt Trời: Là ngôi sao duy nhất ở trung tâm, chiếm tới 99,86% tổng khối lượng của cả Hệ Mặt Trời. Nhờ khối lượng khổng lồ, lực hấp dẫn của Mặt Trời giữ cho 8 hành tinh và các thiên thể khác chuyển động ổn định quanh nó theo quỹ đạo elip gần tròn.",
+        "Nguồn năng lượng: Mặt Trời liên tục phát ra bức xạ ánh sáng và nhiệt, sưởi ấm và duy trì sự sống trên Trái Đất.",
+        "Các thành phần khác: Ngoài 8 hành tinh, Hệ Mặt Trời còn chứa các hành tinh lùn (như Diêm vương tinh), vành đai tiểu hành tinh, sao chổi và vô số thiên thạch."
+      ],
+      "callout": "☀️ Mặt Trời là ngôi sao trung tâm cung cấp ánh sáng và nhiệt cho toàn bộ hệ hành tinh!"
+    },
+    {
+      "id": "card-2",
+      "title": "2. 8 Hành tinh theo thứ tự từ gần đến xa Mặt Trời",
+      "badge": "8 Hành tinh",
+      "badgeColor": "purple",
+      "content": "Theo thứ tự khoảng cách tính từ Mặt Trời ra xa dần, 8 hành tinh lần lượt gồm:",
+      "bulletPoints": [
+        "1. Thủy tinh (Mercury): Gần Mặt Trời nhất và nhỏ nhất trong 8 hành tinh, bề mặt chi chít vết lõm thiên thạch.",
+        "2. Kim tinh (Venus): Nóng nhất Hệ Mặt Trời (khoảng 460 °C) do hiệu ứng nhà kính dày đặc; là thiên thể sáng nhất bầu trời đêm sau Mặt Trăng (dân gian gọi là sao Hôm khi hiện buổi chiều, sao Mai khi hiện buổi sớm).",
+        "3. Trái Đất (Earth): Hành tinh thứ 3, hành tinh duy nhất được biết đến có nước lỏng và sự sống sinh sôi.",
+        "4. Hỏa tinh (Mars): Còn gọi là Hành tinh Đỏ do bề mặt chứa nhiều oxit sắt (rỉ sét); có núi lửa và hẻm vực khổng lồ.",
+        "5. Mộc tinh (Jupiter): Hành tinh lớn nhất và nặng nhất trong Hệ Mặt Trời (hành tinh khí khổng lồ, thể tích gấp hơn 1300 lần Trái Đất).",
+        "6. Thổ tinh (Saturn): Nổi tiếng với hệ thống vành đai vành khuyên rộng lớn, tuyệt đẹp cấu tạo từ hàng tỉ hạt băng và bụi đá.",
+        "7. Thiên vương tinh (Uranus): Hành tinh băng khổng lồ màu xanh lục lam, có trục quay nghiêng đặc biệt gần như nằm ngang.",
+        "8. Hải vương tinh (Neptune): Xa Mặt Trời nhất, hành tinh màu xanh lam đậm với những cơn gió bão mạnh nhất Hệ Mặt Trời."
+      ],
+      "callout": "🪐 Khẩu quyết ghi nhớ thứ tự: Thủy - Kim - Trái - Hỏa - Mộc - Thổ - Thiên - Hải!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Hành tinh nào có kích thước và khối lượng lớn nhất trong 8 hành tinh của Hệ Mặt Trời?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Trái Đất",
+        "correct": false
+      },
+      {
+        "id": "opt-b",
+        "text": "Mộc tinh (Sao Mộc)",
+        "correct": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Thổ tinh (Sao Thổ)",
+        "correct": false
+      },
+      {
+        "id": "opt-d",
+        "text": "Hải vương tinh (Sao Hải Vương)",
+        "correct": false
+      }
+    ],
+    "explanation": "Mộc tinh (Sao Mộc) là hành tinh lớn nhất trong Hệ Mặt Trời, có thể tích gấp hơn 1300 lần thể tích Trái Đất."
+  }
+}

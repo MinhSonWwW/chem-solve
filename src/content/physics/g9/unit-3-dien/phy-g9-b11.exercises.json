@@ -1,0 +1,526 @@
+[
+  {
+    "id": "phy-g9-b11-mcq-001",
+    "lessonId": "phy-g9-b11",
+    "sgkBaiSo": 12,
+    "skillIds": [
+      "circuit-series-current"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong đoạn mạch gồm hai điện trở R1 và R2 mắc nối tiếp, mối quan hệ giữa cường độ dòng điện I của toàn mạch và cường độ dòng điện qua mỗi điện trở I1, I2 là:",
+    "knowledge": [
+      "circuit.series.g9"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "I = I1 - I2"
+        },
+        {
+          "id": "opt-b",
+          "label": "I = I1 = I2 (cường độ dòng điện có giá trị như nhau tại mọi điểm)"
+        },
+        {
+          "id": "opt-c",
+          "label": "I = I1 + I2"
+        },
+        {
+          "id": "opt-d",
+          "label": "I = I1 . I2"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trong mạch nối tiếp, dòng điện chỉ có một con đường duy nhất để chạy qua."
+      },
+      {
+        "level": 2,
+        "text": "Lượng điện tích qua mọi tiết diện thẳng trong cùng thời gian là như nhau nên I = I1 = I2."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đặc điểm mạch nối tiếp",
+        "body": "Khảo sát cường độ dòng điện trong đoạn mạch mắc nối tiếp."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 12: Trong đoạn mạch mắc nối tiếp, cường độ dòng điện có giá trị như nhau tại mọi điểm: $I = I_1 = I_2$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **I = I1 = I2**."
+      }
+    ],
+    "finalSolution": "Trong mạch nối tiếp: **$I = I_1 = I_2$**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-with-parallel",
+        "message": "I = I1 + I2 là tính chất của đoạn mạch mắc SONG SONG, không phải nối tiếp."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b11-mcq-002",
+    "lessonId": "phy-g9-b11",
+    "sgkBaiSo": 12,
+    "skillIds": [
+      "circuit-parallel-voltage"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong đoạn mạch gồm hai điện trở R1 và R2 mắc song song với nhau vào nguồn có hiệu điện thế U, mối quan hệ giữa hiệu điện thế hai đầu mỗi nhánh U1, U2 và hiệu điện thế toàn mạch U là:",
+    "knowledge": [
+      "circuit.parallel.g9"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "U = U1 = U2 (hiệu điện thế bằng nhau giữa hai đầu các nhánh)"
+        },
+        {
+          "id": "opt-b",
+          "label": "U = U1 - U2"
+        },
+        {
+          "id": "opt-c",
+          "label": "U = U1 + U2"
+        },
+        {
+          "id": "opt-d",
+          "label": "U = U1 / U2"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hai nhánh song song có chung hai điểm đầu và cuối."
+      },
+      {
+        "level": 2,
+        "text": "Vì mắc chung vào hai điểm nối nên hiệu điện thế hai đầu mỗi nhánh bằng hiệu điện thế toàn mạch: U = U1 = U2."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đặc điểm mạch song song",
+        "body": "Khảo sát hiệu điện thế trong đoạn mạch mắc song song."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 12: Trong đoạn mạch mắc song song, hiệu điện thế giữa hai đầu mỗi đoạn mạch nhánh bằng hiệu điện thế giữa hai đầu đoạn mạch rẽ: $U = U_1 = U_2$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **U = U1 = U2**."
+      }
+    ],
+    "finalSolution": "Trong mạch song song: **$U = U_1 = U_2$**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-with-series",
+        "message": "U = U1 + U2 là đặc điểm của đoạn mạch mắc NỐI TIẾP; trong mạch song song thì U = U1 = U2."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b11-mcq-003",
+    "lessonId": "phy-g9-b11",
+    "sgkBaiSo": 12,
+    "skillIds": [
+      "circuit-household-parallel-reason"
+    ],
+    "difficulty": 1,
+    "prompt": "Tại sao các thiết bị điện trong gia đình (quạt, đèn, tivi, tủ lạnh...) luôn được mắc song song với nhau vào mạng điện sinh hoạt 220 V?",
+    "knowledge": [
+      "circuit.parallel.g9"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Để mỗi thiết bị đều nhận đủ hiệu điện thế định mức 220 V và có thể hoạt động độc lập khi thiết bị khác tắt"
+        },
+        {
+          "id": "opt-b",
+          "label": "Để khi một bóng đèn bị cháy thì tất cả các bóng đèn khác tự động tắt hết"
+        },
+        {
+          "id": "opt-c",
+          "label": "Để giảm tổng cường độ dòng điện chạy qua công tơ điện về 0"
+        },
+        {
+          "id": "opt-d",
+          "label": "Để tăng điện trở tương đương của toàn bộ ngôi nhà lên mức tối đa"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hãy nghĩ xem khi tắt đèn bàn học thì quạt trần có bị tắt theo không?"
+      },
+      {
+        "level": 2,
+        "text": "Mắc song song giúp các thiết bị hoạt động độc lập và cùng nhận đúng hiệu điện thế 220 V."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Ứng dụng đời sống",
+        "body": "Giải thích nguyên nhân mắc song song trong gia đình."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Ưu điểm của mạch song song",
+        "body": "Theo SGK KHTN 9 Bài 12: Mắc song song đảm bảo mỗi thiết bị điện đều chịu đúng hiệu điện thế định mức $U = 220\\text{ V}$ để phát huy hết công suất, đồng thời có thể bật/tắt độc lập mà không ảnh hưởng đến các thiết bị khác."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Để nhận đủ hiệu điện thế định mức 220 V và hoạt động độc lập**."
+      }
+    ],
+    "finalSolution": "Mắc song song giúp các thiết bị **cùng nhận hiệu điện thế định mức 220 V** và **hoạt động hoàn toàn độc lập**.",
+    "commonMistakes": [
+      {
+        "id": "think-series-is-used",
+        "message": "Nếu mắc nối tiếp, hiệu điện thế 220 V sẽ bị chia nhỏ khiến thiết bị không đủ điện áp hoạt động, và chỉ cần 1 thiết bị tắt là cả nhà mất điện."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b11-num-004",
+    "lessonId": "phy-g9-b11",
+    "sgkBaiSo": 12,
+    "skillIds": [
+      "circuit-series-calc-r-eq"
+    ],
+    "difficulty": 2,
+    "prompt": "Hai điện trở R1 = 15 Ω và R2 = 25 Ω được mắc nối tiếp với nhau. Điện trở tương đương R_tđ của đoạn mạch nối tiếp này là bao nhiêu ôm (Ω)?",
+    "knowledge": [
+      "circuit.series.g9"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 40,
+      "unit": "Ω",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp dụng công thức tính điện trở tương đương mạch nối tiếp: R_tđ = R1 + R2."
+      },
+      {
+        "level": 2,
+        "text": "Cộng hai giá trị: R_tđ = 15 + 25 = 40 Ω."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$R_1 = 15\\,\\Omega$; $R_2 = 25\\,\\Omega$; mắc nối tiếp."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức điện trở tương đương",
+        "body": "$R_{tđ} = R_1 + R_2$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$R_{tđ} = 15 + 25 = 40\\,\\Omega$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Điện trở tương đương của đoạn mạch là **40 Ω**."
+      }
+    ],
+    "finalSolution": "Điện trở tương đương: $R_{tđ} = R_1 + R_2 = 15 + 25 = 40\\,\\Omega$.",
+    "commonMistakes": [
+      {
+        "id": "use-parallel-formula",
+        "message": "Bạn đã áp dụng nhầm công thức mạch song song: Mạch nối tiếp là phép cộng R_tđ = R1 + R2 = 40 Ω.",
+        "trapAnswers": [
+          "9.375",
+          "9.4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b11-num-005",
+    "lessonId": "phy-g9-b11",
+    "sgkBaiSo": 12,
+    "skillIds": [
+      "circuit-parallel-calc-r-eq"
+    ],
+    "difficulty": 2,
+    "prompt": "Hai điện trở R1 = 20 Ω và R2 = 30 Ω được mắc song song với nhau. Điện trở tương đương R_tđ của đoạn mạch song song này là bao nhiêu ôm (Ω)?",
+    "knowledge": [
+      "circuit.parallel.g9"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 12,
+      "unit": "Ω",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp dụng công thức tính điện trở tương đương mạch song song: R_tđ = (R1 . R2) / (R1 + R2)."
+      },
+      {
+        "level": 2,
+        "text": "R_tđ = (20 x 30) / (20 + 30) = 600 / 50 = 12 Ω."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$R_1 = 20\\,\\Omega$; $R_2 = 30\\,\\Omega$; mắc song song."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức điện trở tương đương song song",
+        "body": "$R_{tđ} = \\frac{R_1 \\cdot R_2}{R_1 + R_2}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$R_{tđ} = \\frac{20 \\times 30}{20 + 30} = \\frac{600}{50} = 12\\,\\Omega$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Điện trở tương đương của đoạn mạch song song là **12 Ω**."
+      }
+    ],
+    "finalSolution": "Điện trở tương đương song song: $R_{tđ} = \\frac{20 \\times 30}{20 + 30} = 12\\,\\Omega$.",
+    "commonMistakes": [
+      {
+        "id": "add-instead-of-parallel",
+        "message": "Bạn đã cộng trực tiếp R1 + R2 = 50 Ω (đó là mạch nối tiếp). Mạch song song có R_tđ = 12 Ω (nhỏ hơn cả R1 và R2).",
+        "trapAnswers": [
+          "50",
+          "50 Ω"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b11-num-006",
+    "lessonId": "phy-g9-b11",
+    "sgkBaiSo": 12,
+    "skillIds": [
+      "circuit-parallel-identical-calc"
+    ],
+    "difficulty": 2,
+    "prompt": "Hai điện trở giống nhau hoàn toàn, cùng có giá trị điện trở R = 40 Ω, được mắc song song với nhau. Điện trở tương đương R_tđ của đoạn mạch này là bao nhiêu ôm (Ω)?",
+    "knowledge": [
+      "circuit.parallel.g9"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 20,
+      "unit": "Ω",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi hai điện trở bằng nhau mắc song song thì R_tđ = R / 2."
+      },
+      {
+        "level": 2,
+        "text": "R_tđ = 40 / 2 = 20 Ω."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$R_1 = R_2 = R = 40\\,\\Omega$; mắc song song."
+      },
+      {
+        "kind": "equation",
+        "title": "Trường hợp hai điện trở bằng nhau",
+        "body": "$R_{tđ} = \\frac{R}{2}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$R_{tđ} = \\frac{40}{2} = 20\\,\\Omega$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Điện trở tương đương của đoạn mạch là **20 Ω**."
+      }
+    ],
+    "finalSolution": "Hai điện trở bằng nhau mắc song song: $R_{tđ} = \\frac{R}{2} = \\frac{40}{2} = 20\\,\\Omega$.",
+    "commonMistakes": [
+      {
+        "id": "add-mistake",
+        "message": "Nhớ rằng mắc song song làm điện trở giảm đi một nửa: R_tđ = 40 / 2 = 20 Ω (không phải 80 Ω).",
+        "trapAnswers": [
+          "80",
+          "80 Ω"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b11-num-007",
+    "lessonId": "phy-g9-b11",
+    "sgkBaiSo": 12,
+    "skillIds": [
+      "circuit-series-current-calc"
+    ],
+    "difficulty": 3,
+    "prompt": "Một đoạn mạch nối tiếp gồm hai điện trở R1 = 10 Ω và R2 = 20 Ω được mắc vào nguồn điện có hiệu điện thế không đổi U = 12 V. Cường độ dòng điện I chạy trong mạch chính là bao nhiêu ampe (A)?",
+    "knowledge": [
+      "circuit.series.g9",
+      "law.ohm"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 0.4,
+      "unit": "A",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bước 1: Tính điện trở tương đương R_tđ = R1 + R2."
+      },
+      {
+        "level": 2,
+        "text": "R_tđ = 10 + 20 = 30 Ω. Bước 2: Tính dòng điện I = U / R_tđ = 12 / 30 = 0,4 A."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$R_1 = 10\\,\\Omega$; $R_2 = 20\\,\\Omega$; $U = 12\\text{ V}$; mắc nối tiếp."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức điện trở và định luật Ohm",
+        "body": "$R_{tđ} = R_1 + R_2$ và $I = \\frac{U}{R_{tđ}}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$R_{tđ} = 10 + 20 = 30\\,\\Omega$. Suy ra $I = \\frac{12}{30} = 0,4\\text{ A}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cường độ dòng điện trong mạch là **0,4 A**."
+      }
+    ],
+    "finalSolution": "Điện trở tương đương $R_{tđ} = 30\\,\\Omega$. Dòng điện: $I = \\frac{U}{R_{tđ}} = \\frac{12}{30} = 0,4\\text{ A}$.",
+    "commonMistakes": [
+      {
+        "id": "divide-single-resistance",
+        "message": "Bạn đã lấy U chia cho riêng R1 hoặc R2 thay vì chia cho điện trở tương đương của cả mạch (R_tđ = 30 Ω).",
+        "trapAnswers": [
+          "1.2",
+          "0.6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b11-num-008",
+    "lessonId": "phy-g9-b11",
+    "sgkBaiSo": 12,
+    "skillIds": [
+      "circuit-parallel-current-calc"
+    ],
+    "difficulty": 3,
+    "prompt": "Một đoạn mạch gồm hai điện trở R1 = 15 Ω và R2 = 10 Ω mắc song song với nhau vào nguồn điện có hiệu điện thế U = 30 V. Cường độ dòng điện I chạy trong mạch chính là bao nhiêu ampe (A)?",
+    "knowledge": [
+      "circuit.parallel.g9",
+      "law.ohm"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 5,
+      "unit": "A",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tính dòng điện qua từng nhánh: I1 = U / R1 và I2 = U / R2."
+      },
+      {
+        "level": 2,
+        "text": "I1 = 30 / 15 = 2 A; I2 = 30 / 10 = 3 A. Dòng mạch chính I = I1 + I2 = 2 + 3 = 5 A."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$R_1 = 15\\,\\Omega$; $R_2 = 10\\,\\Omega$; $U = 30\\text{ V}$; mắc song song."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức dòng điện mạch song song",
+        "body": "Cách 1: $I_1 = \\frac{U}{R_1}$, $I_2 = \\frac{U}{R_2}$, $I = I_1 + I_2$. Hoặc Cách 2: $R_{tđ} = \\frac{15 \\times 10}{15 + 10} = 6\\,\\Omega \\Rightarrow I = \\frac{U}{R_{tđ}} = \\frac{30}{6}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$I_1 = \\frac{30}{15} = 2\\text{ A}$; $I_2 = \\frac{30}{10} = 3\\text{ A}$. Suy ra $I = 2 + 3 = 5\\text{ A}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cường độ dòng điện trong mạch chính là **5 A**."
+      }
+    ],
+    "finalSolution": "Dòng điện trong mạch chính: $I = I_1 + I_2 = \\frac{30}{15} + \\frac{30}{10} = 2 + 3 = 5\\text{ A}$.",
+    "commonMistakes": [
+      {
+        "id": "subtract-branches",
+        "message": "Dòng mạch chính bằng TỔNG hai nhánh (I = I1 + I2 = 5 A), không phải trừ nhau.",
+        "trapAnswers": [
+          "1",
+          "1 A"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,420 @@
+[
+  {
+    "id": "phy-g6-b15-mcq-001",
+    "lessonId": "phy-g6-b15",
+    "sgkBaiSo": 50,
+    "skillIds": [
+      "renewable-energy-sun"
+    ],
+    "difficulty": 1,
+    "prompt": "Nguồn năng lượng nào sau đây được xếp vào nhóm **năng lượng tái tạo**?",
+    "knowledge": [
+      "energy.renewable"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Than đá"
+        },
+        {
+          "id": "opt-b",
+          "label": "Dầu mỏ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Năng lượng ánh sáng Mặt Trời"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khí đốt tự nhiên"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Năng lượng tái tạo là nguồn năng lượng sạch, tự nhiên và không bao giờ cạn kiệt."
+      },
+      {
+        "level": 2,
+        "text": "Mặt Trời chiếu sáng hàng triệu năm mà không bị cạn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khái niệm năng lượng tái tạo",
+        "body": "Năng lượng tái tạo là nguồn năng lượng liên tục được thiên nhiên bổ sung và không bị cạn kiệt."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu các nguồn",
+        "body": "Than đá, dầu mỏ và khí đốt là nhiên liệu hóa thạch không tái tạo. Mặt Trời là nguồn năng lượng tái tạo."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Năng lượng ánh sáng Mặt Trời**."
+      }
+    ],
+    "finalSolution": "Năng lượng ánh sáng Mặt Trời là **nguồn năng lượng tái tạo**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b15-mcq-002",
+    "lessonId": "phy-g6-b15",
+    "sgkBaiSo": 50,
+    "skillIds": [
+      "non-renewable-energy-coal"
+    ],
+    "difficulty": 1,
+    "prompt": "Nguồn năng lượng nào sau đây thuộc nhóm **năng lượng không tái tạo** (sẽ bị cạn kiệt dần theo thời gian khai thác)?",
+    "knowledge": [
+      "energy.renewable"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Năng lượng gió"
+        },
+        {
+          "id": "opt-b",
+          "label": "Than đá"
+        },
+        {
+          "id": "opt-c",
+          "label": "Năng lượng dòng nước (thủy điện)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Năng lượng địa nhiệt"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nguồn năng lượng này phải đào sâu dưới lòng đất, mất hàng triệu năm mới hình thành."
+      },
+      {
+        "level": 2,
+        "text": "Than đá là nhiên liệu hóa thạch, đốt hết là cạn kiệt."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đặc điểm năng lượng không tái tạo",
+        "body": "Trữ lượng hữu hạn, khai thác nhiều sẽ hết."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân loại",
+        "body": "Gió, nước, địa nhiệt là tài nguyên tái tạo vô tận. Than đá là nhiên liệu hóa thạch không tái tạo."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng: **Than đá**."
+      }
+    ],
+    "finalSolution": "Than đá là **năng lượng không tái tạo**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b15-mcq-003",
+    "lessonId": "phy-g6-b15",
+    "sgkBaiSo": 50,
+    "skillIds": [
+      "renewable-energy-advantages"
+    ],
+    "difficulty": 2,
+    "prompt": "Ưu điểm vượt trội lớn nhất của việc phát triển điện gió và điện Mặt Trời so với các nhà máy nhiệt điện đốt than truyền thống là gì?",
+    "knowledge": [
+      "energy.renewable"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Điện gió và điện Mặt Trời tạo ra nhiều khói bụi giúp giữ ấm bầu khí quyển"
+        },
+        {
+          "id": "opt-b",
+          "label": "Không phát thải khí nhà kính (CO2), không gây ô nhiễm không khí và không bao giờ cạn kiệt nguồn cung"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chi phí mua than đốt hàng ngày của điện gió rất rẻ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Có thể xây dựng được ở bất kỳ góc phòng kín nào trong nhà"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhiệt điện than xả rất nhiều khí thải CO2 và tro bụi gây ô nhiễm không khí."
+      },
+      {
+        "level": 2,
+        "text": "Năng lượng tái tạo sạch, xanh và không phát thải khí gây ô nhiễm môi trường."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Vấn đề môi trường",
+        "body": "Nhiệt điện than là nguồn phát thải khí nhà kính và bụi mịn lớn hàng đầu."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Lợi ích điện xanh",
+        "body": "Điện gió và điện Mặt Trời vận hành sạch hoàn toàn, không tạo khói bụi hay khí CO2, bảo vệ khí hậu Trái Đất."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án chính xác là phương án **B**."
+      }
+    ],
+    "finalSolution": "Năng lượng tái tạo **không phát thải khí nhà kính, không gây ô nhiễm và không cạn kiệt**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b15-sort-004",
+    "lessonId": "phy-g6-b15",
+    "sgkBaiSo": 50,
+    "skillIds": [
+      "classify-renewable-nonrenewable"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy phân loại 6 nguồn năng lượng dưới đây vào hai nhóm đúng bản chất:",
+    "knowledge": [
+      "energy.renewable"
+    ],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        {
+          "id": "renewable",
+          "label": "Năng lượng tái tạo"
+        },
+        {
+          "id": "non-renewable",
+          "label": "Năng lượng không tái tạo"
+        }
+      ],
+      "items": [
+        {
+          "id": "item-1",
+          "label": "Năng lượng gió",
+          "bucketId": "renewable"
+        },
+        {
+          "id": "item-2",
+          "label": "Năng lượng ánh sáng Mặt Trời",
+          "bucketId": "renewable"
+        },
+        {
+          "id": "item-3",
+          "label": "Năng lượng dòng nước chảy (thủy điện)",
+          "bucketId": "renewable"
+        },
+        {
+          "id": "item-4",
+          "label": "Than đá",
+          "bucketId": "non-renewable"
+        },
+        {
+          "id": "item-5",
+          "label": "Dầu mỏ (dầu thô)",
+          "bucketId": "non-renewable"
+        },
+        {
+          "id": "item-6",
+          "label": "Khí tự nhiên (khí mỏ dầu)",
+          "bucketId": "non-renewable"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Các tài nguyên tự nhiên vô tận (gió, nắng, nước) thuộc nhóm tái tạo."
+      },
+      {
+        "level": 2,
+        "text": "Các khoáng sản hóa thạch (than đá, dầu mỏ, khí đốt) thuộc nhóm không tái tạo."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định 6 nguồn năng lượng",
+        "body": "Các nguồn cần phân loại gồm: Năng lượng gió, Mặt Trời, Thủy điện, Than đá, Dầu mỏ, Khí tự nhiên."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Bản chất nguồn năng lượng",
+        "body": "Nguồn vô tận hoặc liên tục được tự nhiên bù đắp là năng lượng tái tạo (gió, nắng, nước). Nguồn có hạn từ khoáng sản hóa thạch là không tái tạo (than, dầu, khí)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận phân loại",
+        "body": "Xếp vào Năng lượng tái tạo: Gió, Mặt Trời, Nước chảy. Xếp vào Năng lượng không tái tạo: Than đá, Dầu mỏ, Khí tự nhiên."
+      }
+    ],
+    "finalSolution": "Tái tạo: **Gió, Mặt Trời, Thủy điện**. Không tái tạo: **Than đá, Dầu mỏ, Khí tự nhiên**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b15-multi-005",
+    "lessonId": "phy-g6-b15",
+    "sgkBaiSo": 50,
+    "skillIds": [
+      "renewable-energy-multi-select"
+    ],
+    "difficulty": 2,
+    "prompt": "Những nguồn năng lượng nào sau đây là nguồn **năng lượng tái tạo**? (Chọn tất cả các đáp án đúng)",
+    "knowledge": [
+      "energy.renewable"
+    ],
+    "answer": {
+      "kind": "mcq-multi",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Năng lượng địa nhiệt (nhiệt từ sâu trong lòng đất)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Dầu diesel đốt động cơ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Năng lượng gió"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nhiên liệu hạt nhân Uranium"
+        },
+        {
+          "id": "opt-e",
+          "label": "Năng lượng sóng biển và thủy triều"
+        }
+      ],
+      "correctIds": [
+        "opt-a",
+        "opt-c",
+        "opt-e"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhiệt trong lòng đất, sóng biển và gió đều là nguồn năng lượng thiên nhiên vô tận."
+      },
+      {
+        "level": 2,
+        "text": "Uranium và dầu diesel là nguồn tài nguyên khoáng sản có hạn, không thể tái tạo nhanh chóng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích từng phương án",
+        "body": "Xem xét 5 nguồn năng lượng: địa nhiệt, sóng biển/thủy triều, gió, Uranium hạt nhân, dầu diesel."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra tính tái tạo",
+        "body": "Địa nhiệt (nhiệt lòng đất), sóng biển và gió là nguồn tự nhiên vô tận, liên tục tái tạo. Uranium và dầu diesel có nguồn gốc khoáng sản hữu hạn, cạn kiệt theo thời gian."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận đáp án đúng",
+        "body": "Chọn 3 nguồn năng lượng tái tạo: Địa nhiệt, Sóng biển và thủy triều, và Năng lượng gió."
+      }
+    ],
+    "finalSolution": "**Địa nhiệt, Sóng biển/thủy triều và Gió** là các nguồn năng lượng tái tạo.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b15-tf-006",
+    "lessonId": "phy-g6-b15",
+    "sgkBaiSo": 50,
+    "skillIds": [
+      "renewable-energy-eval"
+    ],
+    "difficulty": 3,
+    "prompt": "Hãy đánh giá tính Đúng hoặc Sai cho mỗi nhận định dưới đây về việc sử dụng năng lượng trên thế giới:",
+    "knowledge": [
+      "energy.renewable"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "stmt-1",
+          "text": "Năng lượng Mặt Trời và năng lượng gió không bao giờ bị cạn kiệt.",
+          "correct": true
+        },
+        {
+          "id": "stmt-2",
+          "text": "Nhiên liệu hóa thạch (than đá, dầu mỏ) có thể tự phục hồi đầy đủ trong vòng 1-2 năm sau khi khai thác.",
+          "correct": false
+        },
+        {
+          "id": "stmt-3",
+          "text": "Đốt nhiên liệu hóa thạch giải phóng khí CO2 là một trong những nguyên nhân chính gây ra biến đổi khí hậu toàn cầu.",
+          "correct": true
+        },
+        {
+          "id": "stmt-4",
+          "text": "Việt Nam có bờ biển dài và nhiều nắng gió, rất thuận lợi để phát triển điện gió và điện Mặt Trời.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhiên liệu hóa thạch cần hàng trăm triệu năm để hình thành từ xác sinh vật, không thể tự phục hồi trong 1-2 năm."
+      },
+      {
+        "level": 2,
+        "text": "Đốt than xả nhiều CO2 gây hiệu ứng nhà kính; Việt Nam có tiềm năng năng lượng tái tạo rất lớn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đọc kĩ từng mệnh đề",
+        "body": "Xem xét 4 mệnh đề về nguồn gốc, chu trình và tác động môi trường của các nguồn năng lượng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu kiến thức khoa học",
+        "body": "Mệnh đề 1 đúng (nắng, gió vô tận). Mệnh đề 2 sai (nhiên liệu hóa thạch cần hàng trăm triệu năm hình thành, không thể phục hồi trong vài năm). Mệnh đề 3 đúng (khí CO2 gây hiệu ứng nhà kính). Mệnh đề 4 đúng (Việt Nam có bờ biển dài >3000 km và bức xạ mặt trời cao)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng/Sai",
+        "body": "Nhận định 1: Đúng · Nhận định 2: Sai · Nhận định 3: Đúng · Nhận định 4: Đúng."
+      }
+    ],
+    "finalSolution": "Câu 1: Đúng · Câu 2: Sai · Câu 3: Đúng · Câu 4: Đúng.",
+    "commonMistakes": []
+  }
+]

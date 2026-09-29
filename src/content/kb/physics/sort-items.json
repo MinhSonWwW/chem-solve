@@ -1,0 +1,26 @@
+[
+  { "formula": "v = s / t", "nameVi": "Vận tốc & Tốc độ", "type": "co-hoc" },
+  { "formula": "D = m / V", "nameVi": "Khối lượng riêng", "type": "co-hoc" },
+  { "formula": "p = F / S", "nameVi": "Áp suất chất rắn", "type": "co-hoc" },
+  { "formula": "F_A = d.V", "nameVi": "Lực đẩy Archimedes", "type": "co-hoc" },
+  { "formula": "F_ms", "nameVi": "Lực ma sát trượt", "type": "co-hoc" },
+  { "formula": "P = 10m", "nameVi": "Trọng lượng & Khối lượng", "type": "co-hoc" },
+
+  { "formula": "Q = m.c.Δt", "nameVi": "Nhiệt lượng tỏa ra/thu vào", "type": "nhiet-hoc" },
+  { "formula": "Dẫn nhiệt", "nameVi": "Sự truyền nhiệt qua thanh đồng", "type": "nhiet-hoc" },
+  { "formula": "Đối lưu", "nameVi": "Dòng đối lưu trong chất lỏng & khí", "type": "nhiet-hoc" },
+  { "formula": "Bức xạ nhiệt", "nameVi": "Ánh nắng Mặt Trời sưởi ấm", "type": "nhiet-hoc" },
+  { "formula": "Nở vì nhiệt", "nameVi": "Khe hở đường ray xe lửa", "type": "nhiet-hoc" },
+
+  { "formula": "I = U / R", "nameVi": "Định luật Ôm cho đoạn mạch", "type": "dien-hoc" },
+  { "formula": "R_tđ", "nameVi": "Mạch mắc nối tiếp & song song", "type": "dien-hoc" },
+  { "formula": "P = U.I", "nameVi": "Công suất dòng điện", "type": "dien-hoc" },
+  { "formula": "Từ trường", "nameVi": "Nam châm điện & Đường sức từ", "type": "dien-hoc" },
+  { "formula": "A = U.I.t", "nameVi": "Điện năng tiêu thụ (Công tơ điện)", "type": "dien-hoc" },
+
+  { "formula": "i' = i", "nameVi": "Định luật phản xạ ánh sáng", "type": "quang-hoc" },
+  { "formula": "Khúc xạ", "nameVi": "Tia sáng gãy khúc qua mặt nước", "type": "quang-hoc" },
+  { "formula": "TK hội tụ", "nameVi": "Thấu kính hội tụ (rìa mỏng)", "type": "quang-hoc" },
+  { "formula": "TK phân kì", "nameVi": "Thấu kính phân kì (rìa dày)", "type": "quang-hoc" },
+  { "formula": "Tán sắc", "nameVi": "Hiện tượng cầu vồng sau mưa", "type": "quang-hoc" }
+]

@@ -1,0 +1,554 @@
+[
+  {
+    "id": "phy-g9-b15-mcq-001",
+    "lessonId": "phy-g9-b15",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "earth-energy-sun-origin"
+    ],
+    "difficulty": 1,
+    "prompt": "Nguồn gốc năng lượng chủ yếu duy trì sự sống và chi phối các vòng tuần hoàn năng lượng trên Trái Đất là gì?",
+    "knowledge": [
+      "energy.earth.cycle_and_fossil"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Lực hút của Mặt Trăng tạo nên thủy triều"
+        },
+        {
+          "id": "opt-b",
+          "label": "Năng lượng bức xạ từ Mặt Trời"
+        },
+        {
+          "id": "opt-c",
+          "label": "Năng lượng hóa học từ quặng kim loại"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nhiệt lượng tỏa ra từ lòng đất sâu"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mặt Trời chiếu sáng và sưởi ấm toàn bộ bề mặt Trái Đất mỗi ngày."
+      },
+      {
+        "level": 2,
+        "text": "Theo SGK KHTN 9 Bài 16: Mặt Trời là nguồn năng lượng chủ yếu trên Trái Đất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định nguồn năng lượng",
+        "body": "Đề bài yêu cầu chỉ ra nguồn gốc chính của năng lượng trên Trái Đất."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 16: Bức xạ Mặt Trời là nguồn cung cấp năng lượng chủ yếu cho sự sống, thúc đẩy quang hợp của thực vật, vòng tuần hoàn của nước và tạo ra gió, sóng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Năng lượng bức xạ từ Mặt Trời**."
+      }
+    ],
+    "finalSolution": "Mặt Trời là **nguồn gốc năng lượng chủ yếu** trên Trái Đất.",
+    "commonMistakes": [
+      {
+        "id": "confuse-geothermal",
+        "message": "Nhiệt từ lòng đất (địa nhiệt) chỉ chiếm tỉ lệ nhỏ, bức xạ Mặt Trời mới là nguồn năng lượng chủ yếu."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b15-mcq-002",
+    "lessonId": "phy-g9-b15",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "fossil-fuels-types"
+    ],
+    "difficulty": 1,
+    "prompt": "Nhóm nhiên liệu nào sau đây bao gồm toàn bộ các loại nhiên liệu hóa thạch chính?",
+    "knowledge": [
+      "energy.earth.cycle_and_fossil"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Khí hiđro, uranium và pin hóa học"
+        },
+        {
+          "id": "opt-b",
+          "label": "Năng lượng gió, thủy điện và năng lượng mặt trời"
+        },
+        {
+          "id": "opt-c",
+          "label": "Than đá, dầu mỏ và khí thiên nhiên"
+        },
+        {
+          "id": "opt-d",
+          "label": "Gỗ củi, cồn sinh học và than bùn"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhiên liệu hóa thạch được khai thác từ các mỏ trầm tích sâu trong lòng đất."
+      },
+      {
+        "level": 2,
+        "text": "Ba loại nhiên liệu hóa thạch quan trọng nhất là than đá, dầu mỏ và khí đốt tự nhiên."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận biết nhiên liệu hóa thạch",
+        "body": "Xác định các dạng nhiên liệu hóa thạch chủ yếu."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 16: Nhiên liệu hóa thạch bao gồm than đá, dầu mỏ và khí thiên nhiên, hình thành từ xác sinh vật cổ đại bị chôn vùi hàng triệu năm."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Than đá, dầu mỏ và khí thiên nhiên**."
+      }
+    ],
+    "finalSolution": "Ba loại nhiên liệu hóa thạch chính là **than đá, dầu mỏ và khí thiên nhiên**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-wood-as-fossil",
+        "message": "Gỗ củi là nhiên liệu sinh khối (tái tạo ngắn hạn), không phải nhiên liệu hóa thạch."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b15-mcq-003",
+    "lessonId": "phy-g9-b15",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "fossil-fuels-non-renewable-reason"
+    ],
+    "difficulty": 1,
+    "prompt": "Tại sao than đá, dầu mỏ và khí thiên nhiên lại được xếp vào nhóm nguồn năng lượng không tái tạo?",
+    "knowledge": [
+      "energy.earth.cycle_and_fossil"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vì con người không thể vận chuyển chúng đi xa bằng tàu bè"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vì chúng chỉ tồn tại duy nhất ở một quốc gia trên thế giới"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì chúng cần hàng trăm triệu năm để hình thành, tốc độ tiêu thụ nhanh hơn tốc độ tái sinh rất nhiều"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì khi đốt cháy chúng không thể giải phóng ra nhiệt lượng"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thời gian tạo ra dầu mỏ, than đá kéo dài hàng trăm triệu năm qua các kỉ địa chất."
+      },
+      {
+        "level": 2,
+        "text": "Khi đã khai thác hết thì không thể tự phục hồi trong khoảng thời gian đời sống con người."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất không tái tạo",
+        "body": "Giải thích nguyên nhân vì sao nhiên liệu hóa thạch không tái tạo."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 16: Nhiên liệu hóa thạch mất hàng trăm triệu năm mới tích tụ được. Tốc độ khai thác của con người nhanh hơn tốc độ hình thành tự nhiên hàng triệu lần, dẫn tới việc chúng sẽ sớm cạn kiệt vĩnh viễn."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Cần hàng trăm triệu năm để hình thành, tốc độ tiêu thụ nhanh hơn tái sinh**."
+      }
+    ],
+    "finalSolution": "Nhiên liệu hóa thạch là **không tái tạo vì phải mất hàng trăm triệu năm mới hình thành** và sẽ cạn kiệt theo thời gian.",
+    "commonMistakes": [
+      {
+        "id": "think-unlimited",
+        "message": "Nhiên liệu hóa thạch có trữ lượng hữu hạn, không phải nguồn năng lượng vô tận."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b15-mcq-004",
+    "lessonId": "phy-g9-b15",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "fossil-fuels-greenhouse-gas"
+    ],
+    "difficulty": 2,
+    "prompt": "Khí thải nào phát sinh chủ yếu từ quá trình đốt cháy nhiên liệu hóa thạch (than, dầu, khí) là nguyên nhân hàng đầu gây ra hiệu ứng nhà kính và biến đổi khí hậu toàn cầu?",
+    "knowledge": [
+      "energy.earth.cycle_and_fossil"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Khí carbon dioxide (CO2)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Khí helium (He)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khí nitrogen (N2)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khí oxygen (O2)"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi đốt cháy các hợp chất chứa carbon, sản phẩm chính là khí cacbonic."
+      },
+      {
+        "level": 2,
+        "text": "Khí CO2 giữ nhiệt trong bầu khí quyển gây ra hiện tượng Trái Đất nóng lên."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khí nhà kính chính",
+        "body": "Xác định loại khí gây hiệu ứng nhà kính khi đốt nhiên liệu hóa thạch."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tác động môi trường",
+        "body": "Theo SGK KHTN 9 Bài 16: Đốt cháy than đá, xăng dầu thải ra lượng lớn khí carbon dioxide ($CO_2$). Khí này ngăn cản bức xạ nhiệt từ mặt đất thoát ra không gian, làm Trái Đất nóng lên và gây biến đổi khí hậu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Khí carbon dioxide (CO2)**."
+      }
+    ],
+    "finalSolution": "Khí thải chính gây hiệu ứng nhà kính là **khí carbon dioxide ($CO_2$)**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-o2-co2",
+        "message": "Khí O2 cần cho sự cháy và hô hấp, còn CO2 mới là sản phẩm khí nhà kính gây ấm lên toàn cầu."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b15-mcq-005",
+    "lessonId": "phy-g9-b15",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "photosynthesis-energy-conversion"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong vòng năng lượng sinh giới, quá trình quang hợp của cây xanh thực hiện sự chuyển hóa dạng năng lượng nào thành dạng năng lượng nào?",
+    "knowledge": [
+      "energy.earth.cycle_and_fossil"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Quang năng từ ánh sáng Mặt Trời chuyển hóa thành hóa năng trong chất hữu cơ"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hóa năng chuyển hóa thành năng lượng hạt nhân"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cơ năng của gió chuyển hóa thành thế năng trọng trường"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nhiệt năng chuyển hóa trực tiếp thành điện năng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cây xanh hấp thụ ánh sáng Mặt Trời (quang năng) qua chất diệp lục."
+      },
+      {
+        "level": 2,
+        "text": "Quang năng được tổng hợp thành năng lượng liên kết hóa học trong glucozơ và tinh bột (hóa năng)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Chuyển hóa năng lượng trong quang hợp",
+        "body": "Xác định hai dạng năng lượng tham gia trong quá trình quang hợp."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 16: Lá cây hấp thụ quang năng từ ánh sáng Mặt Trời, qua phản ứng quang hợp tổng hợp nước và $CO_2$ thành tinh bột và chất hữu cơ, chuyển hóa quang năng thành hóa năng tích trữ."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Quang năng chuyển hóa thành hóa năng**."
+      }
+    ],
+    "finalSolution": "Quang hợp chuyển hóa **quang năng thành hóa năng** tích lũy trong sinh khối thực vật.",
+    "commonMistakes": [
+      {
+        "id": "confuse-energy-forms",
+        "message": "Năng lượng lưu trữ trong các chất dinh dưỡng của cây xanh là hóa năng, không phải điện năng hay nhiệt năng."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b15-mcq-006",
+    "lessonId": "phy-g9-b15",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "acid-rain-cause-impact"
+    ],
+    "difficulty": 2,
+    "prompt": "Khí thải sulfur dioxide (SO2) và nitrogen oxides (NOx) phát sinh từ các nhà máy nhiệt điện đốt than khi kết hợp với nước trong mây sẽ gây ra thảm họa môi trường nào?",
+    "knowledge": [
+      "energy.earth.cycle_and_fossil"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Động đất và sóng thần ven biển"
+        },
+        {
+          "id": "opt-b",
+          "label": "Mưa axit làm hủy hoại rừng cây, axit hóa ao hồ và phá hủy công trình"
+        },
+        {
+          "id": "opt-c",
+          "label": "Làm thủng tầng ozone do khí trơ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hiện tượng thủy triều đỏ trên biển"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "SO2 và NOx tác dụng với nước mưa tạo thành dung dịch axit sunfuric và axit nitric loãng."
+      },
+      {
+        "level": 2,
+        "text": "Nước mưa có tính axit rơi xuống gọi là hiện tượng mưa axit."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hiện tượng mưa axit",
+        "body": "Tìm hậu quả môi trường của khí thải oxit lưu huỳnh và nitơ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tác động môi trường",
+        "body": "Theo SGK KHTN 9 Bài 16: Khí $SO_2$ và $NO_x$ từ khói đốt than kết hợp với hơi nước tạo thành mưa axit, làm suy thoái đất, chết rừng cây, tiêu diệt sinh vật thủy sinh và ăn mòn kim loại, tượng đài công trình."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Mưa axit làm hủy hoại rừng cây, ao hồ và công trình**."
+      }
+    ],
+    "finalSolution": "Khí thải $SO_2$ và $NO_x$ gây ra hiện tượng **mưa axit** phá hủy hệ sinh thái và công trình.",
+    "commonMistakes": [
+      {
+        "id": "confuse-natural-disasters",
+        "message": "Động đất, sóng thần là do vận động địa chất vỏ Trái Đất, không phải do ô nhiễm khí thải hóa thạch."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b15-mcq-007",
+    "lessonId": "phy-g9-b15",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "wind-wave-energy-sun-origin"
+    ],
+    "difficulty": 3,
+    "prompt": "Năng lượng gió và năng lượng sóng biển trên Trái Đất thực chất có nguồn gốc sâu xa bắt nguồn từ đâu?",
+    "knowledge": [
+      "energy.earth.cycle_and_fossil"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Từ trường của Trái Đất hút các hạt mang điện trong không khí"
+        },
+        {
+          "id": "opt-b",
+          "label": "Mặt Trời đốt nóng không đều giữa các vùng trên bề mặt Trái Đất tạo ra sự chênh lệch nhiệt độ và áp suất khí quyển"
+        },
+        {
+          "id": "opt-c",
+          "label": "Sự quay tự thân của Trái Đất tạo ra lực ma sát với chân không vũ trụ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Năng lượng tỏa ra từ các ngọn núi lửa hoạt động dưới đáy đại dương"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Gió hình thành do sự chuyển động của các khối không khí từ nơi áp suất cao sang nơi áp suất thấp."
+      },
+      {
+        "level": 2,
+        "text": "Sự chênh lệch áp suất đó là do ánh nắng Mặt Trời sưởi nóng bề mặt đất và biển không đồng đều."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nguồn gốc của gió và sóng",
+        "body": "Phân tích cơ chế nhiệt động học tạo ra gió và sóng biển."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Vòng năng lượng tự nhiên",
+        "body": "Bức xạ Mặt Trời chiếu xuống Trái Đất không đều (xích đạo nhận nhiều nhiệt hơn địa cực, đất liền hấp thụ nhiệt nhanh hơn biển). Sự chênh lệch nhiệt độ làm không khí giãn nở và dịch chuyển, sinh ra gió. Gió thổi trên mặt biển tạo nên sóng biển. Vậy nguồn gốc sâu xa là từ Mặt Trời."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Mặt Trời đốt nóng không đều tạo chênh lệch nhiệt độ và áp suất khí quyển**."
+      }
+    ],
+    "finalSolution": "Gió và sóng biển có nguồn gốc từ **năng lượng bức xạ Mặt Trời đốt nóng không đều bề mặt Trái Đất**.",
+    "commonMistakes": [
+      {
+        "id": "guess-volcano-or-rotation",
+        "message": "Sự quay của Trái Đất chỉ làm lệch hướng gió (hiệu ứng Coriolis), động lực chính tạo ra gió vẫn là nhiệt bức xạ Mặt Trời."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b15-mcq-008",
+    "lessonId": "phy-g9-b15",
+    "sgkBaiSo": 16,
+    "skillIds": [
+      "sustainable-development-action"
+    ],
+    "difficulty": 3,
+    "prompt": "Hành động nào sau đây của mỗi học sinh góp phần thiết thực và hiệu quả nhất vào việc giảm tiêu thụ năng lượng hóa thạch và bảo vệ môi trường khí hậu?",
+    "knowledge": [
+      "energy.earth.cycle_and_fossil"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Sử dụng xe máy cá nhân chạy xăng để đi những quãng đường cực ngắn 200 m"
+        },
+        {
+          "id": "opt-b",
+          "label": "Đốt rác thải nhựa ngoài trời để tạo nguồn nhiệt sưởi ấm"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ưu tiên đi xe đạp hoặc xe buýt điện, tắt đèn và thiết bị điện khi ra khỏi phòng học"
+        },
+        {
+          "id": "opt-d",
+          "label": "Bật điều hòa nhiệt độ phòng ở mức 16°C liên tục cả ngày đêm"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tiết kiệm điện và hạn chế phương tiện cá nhân chạy xăng dầu."
+      },
+      {
+        "level": 2,
+        "text": "Đi xe đạp, xe buýt công cộng và tắt thiết bị điện khi không dùng là hành động chuẩn xanh."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hành động thiết thực",
+        "body": "Đánh giá các thói quen tiêu dùng năng lượng trong đời sống hàng ngày."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Giải pháp bảo vệ môi trường",
+        "body": "Hầu hết điện sinh hoạt hiện nay vẫn được sản xuất từ nhiệt điện than/khí. Do đó việc tắt đèn, thiết bị điện khi không dùng và đi xe đạp, phương tiện công cộng giúp giảm trực tiếp lượng xăng dầu tiêu thụ và giảm khí thải nhà kính $CO_2$ ra khí quyển."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Ưu tiên đi xe đạp, xe buýt điện, tắt thiết bị điện khi rời phòng**."
+      }
+    ],
+    "finalSolution": "Thực hành **sống xanh: đi xe đạp/xe buýt điện và tắt thiết bị điện không cần thiết** giúp giảm tiêu thụ năng lượng hóa thạch.",
+    "commonMistakes": [
+      {
+        "id": "burn-trash-misconception",
+        "message": "Đốt rác nhựa ngoài trời sinh ra khí độc dioxin và CO2 cực kì nguy hiểm cho sức khỏe và môi trường."
+      }
+    ]
+  }
+]

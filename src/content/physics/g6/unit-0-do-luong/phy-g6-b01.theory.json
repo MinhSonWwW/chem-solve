@@ -1,0 +1,78 @@
+{
+  "lessonId": "phy-g6-b01",
+  "nodeId": "phy-g6-b01-theory",
+  "title": "Lý thuyết: Đo chiều dài",
+  "subtitle": "Bài 5 SGK Khoa học tự nhiên 6 (Kết nối tri thức)",
+  "sgkBaiSo": 5,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Kiến thức trọng tâm",
+      "badgeColor": "cyan",
+      "title": "1. Đơn vị đo chiều dài trong hệ SI",
+      "content": "Trong hệ đơn vị đo lường hợp pháp của nước ta (hệ SI), đơn vị đo chiều dài cơ bản là mét (kí hiệu: m).",
+      "bulletPoints": [
+        "1 kilômét (km) = 1 000 m",
+        "1 đêximét (dm) = 0,1 m (1 m = 10 dm)",
+        "1 xentimét (cm) = 0,01 m (1 m = 100 cm)",
+        "1 milimét (mm) = 0,001 m (1 m = 1 000 mm)",
+        "Một số đơn vị khác trong đời sống: inch (1 inch = 2,54 cm), foot (1 ft = 30,48 cm), năm ánh sáng (đo khoảng cách thiên văn)."
+      ],
+      "callout": "Ghi nhớ: Khi giải bài tập khoa học, luôn đổi các đơn vị về mét (m) trừ khi đề bài yêu cầu đơn vị khác."
+    },
+    {
+      "id": "c2",
+      "badge": "Quy tắc vàng",
+      "badgeColor": "amber",
+      "title": "2. Dụng cụ đo: GHĐ và ĐCNN",
+      "content": "Để đo chiều dài, người ta dùng các loại thước: thước thẳng, thước cuộn, thước dây, thước kẹp (đo đường kính nắp chai, ống trụ).",
+      "bulletPoints": [
+        "Giới hạn đo (GHĐ) của thước: Chiều dài lớn nhất ghi trên thước.",
+        "Độ chia nhỏ nhất (ĐCNN) của thước: Chiều dài giữa hai vạch chia liên tiếp trên thước."
+      ],
+      "callout": "Trước khi đo, luôn phải xác định GHĐ và ĐCNN của thước để chọn thước đo phù hợp và ghi kết quả đúng."
+    },
+    {
+      "id": "c3",
+      "badge": "Kỹ năng thực hành",
+      "badgeColor": "emerald",
+      "title": "3. Quy trình 5 bước đo chiều dài chuẩn xác",
+      "content": "Để thu được kết quả đo chính xác, cần thực hiện đúng 5 bước sau:",
+      "bulletPoints": [
+        "Bước 1: Ước lượng chiều dài cần đo để chọn thước có GHĐ và ĐCNN thích hợp.",
+        "Bước 2: Đặt thước dọc theo chiều dài vật, vạch số 0 của thước ngang bằng với một đầu của vật.",
+        "Bước 3: Đặt mắt nhìn theo hướng vuông góc với cạnh thước ở đầu kia của vật.",
+        "Bước 4: Đọc kết quả đo theo vạch chia gần nhất với đầu kia của vật.",
+        "Bước 5: Ghi kết quả đo kèm theo đơn vị đo theo ĐCNN của thước."
+      ],
+      "callout": "Lỗi thường gặp: Đặt mắt nhìn nghiêng hoặc không căn đầu vật trùng với vạch số 0 sẽ dẫn đến sai số lớn."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Độ chia nhỏ nhất (ĐCNN) của một chiếc thước đo là gì?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Khoảng cách giữa hai vạch chia liên tiếp ghi trên thước",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Số lớn nhất ghi trên thước",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Chiều dài của toàn bộ chiếc thước",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Khoảng cách giữa vạch số 0 và vạch số 1",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 6 Kết nối tri thức, Độ chia nhỏ nhất (ĐCNN) của thước là chiều dài giữa hai vạch chia liên tiếp trên thước."
+  }
+}

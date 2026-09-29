@@ -1,0 +1,66 @@
+{
+  "lessonId": "phy-g6-b18",
+  "nodeId": "phy-g6-b18-theory",
+  "title": "Lý thuyết: Mặt Trăng",
+  "subtitle": "Bài 53 SGK Khoa học tự nhiên 6 (Kết nối tri thức)",
+  "sgkBaiSo": 53,
+  "estimatedMinutes": 2,
+  "description": "Tìm hiểu bản chất của Mặt Trăng, nguyên nhân tạo nên các pha Mặt Trăng và cách nhận biết các hình dạng nhìn thấy của Mặt Trăng trong tuần trăng.",
+  "cards": [
+    {
+      "id": "card-1",
+      "title": "1. Mặt Trăng - Vệ tinh tự nhiên của Trái Đất",
+      "badge": "Vệ tinh tự nhiên",
+      "badgeColor": "cyan",
+      "content": "Mặt Trăng là thiên thể gần Trái Đất nhất trong vũ trụ (cách khoảng 384 000 km) và là vệ tinh tự nhiên duy nhất của Trái Đất:",
+      "bulletPoints": [
+        "Nguồn sáng: Mặt Trăng là một khối cầu đất đá nguội lạnh, hoàn toàn không tự phát ra ánh sáng. Ánh trăng dịu mát mà chúng ta nhìn thấy ban đêm thực chất là do bề mặt Mặt Trăng phản chiếu ánh sáng từ Mặt Trời chiếu tới.",
+        "Nửa sáng và nửa tối: Tương tự như Trái Đất, Mặt Trời luôn luôn chiếu sáng một nửa bán cầu của Mặt Trăng, nửa còn lại chìm trong bóng tối.",
+        "Chuyển động: Mặt Trăng vừa tự quay quanh trục của nó, vừa chuyển động quay quanh Trái Đất theo quỹ đạo hình elip gần tròn."
+      ],
+      "callout": "🌕 Ghi nhớ: Ánh trăng thực chất là ánh sáng Mặt Trời phản chiếu từ bề mặt Mặt Trăng!"
+    },
+    {
+      "id": "card-2",
+      "title": "2. Các hình dạng nhìn thấy của Mặt Trăng (Pha Mặt Trăng)",
+      "badge": "Tuần Trăng",
+      "badgeColor": "amber",
+      "content": "Trong một tháng âm lịch (khoảng 29,5 ngày), chúng ta thấy hình dạng Mặt Trăng liên tục thay đổi từ đêm này sang đêm khác:",
+      "bulletPoints": [
+        "Nguyên nhân: Khi Mặt Trăng chuyển động quanh Trái Đất, vị trí tương đối giữa Mặt Trời, Trái Đất và Mặt Trăng thay đổi. Do đó, phần bán cầu được chiếu sáng của Mặt Trăng hướng về Trái Đất mà ta quan sát được cũng thay đổi theo.",
+        "Không Trăng (Trăng non / Trăng tối): Rơi vào ngày đầu tháng âm lịch (mùng 1). Phần được chiếu sáng hướng về phía Mặt Trời, nửa tối hướng về Trái Đất nên ta không nhìn thấy Mặt Trăng.",
+        "Trăng lưỡi liềm đầu tháng: Xuất hiện vào khoảng mùng 3 - mùng 4 âm lịch với hình vành trăng cong mỏng.",
+        "Trăng bán nguyệt đầu tháng (Thượng huyền): Vào khoảng mùng 7 - mùng 8 âm lịch, ta nhìn thấy đúng một nửa đĩa tròn sáng.",
+        "Trăng tròn: Rơi vào ngày Rằm (ngày 15, 16 âm lịch). Toàn bộ nửa được chiếu sáng của Mặt Trăng hướng trọn vẹn về phía Trái Đất.",
+        "Trăng bán nguyệt cuối tháng (Hạ huyền): Vào khoảng ngày 22 - 23 âm lịch, đĩa sáng thu hẹp lại còn một nửa trước khi chuyển dần về không trăng."
+      ],
+      "callout": "📅 Chu kỳ: Không Trăng (mùng 1) → Trăng lưỡi liềm → Bán nguyệt (mùng 8) → Trăng tròn (Rằm 15) → Bán nguyệt cuối tháng."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Vào đêm ngày Rằm (ngày 15 âm lịch hàng tháng), người quan sát từ Trái Đất nhìn thấy hình dạng Mặt Trăng như thế nào?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Hoàn toàn không nhìn thấy Mặt Trăng (Không Trăng)",
+        "correct": false
+      },
+      {
+        "id": "opt-b",
+        "text": "Hình lưỡi liềm mỏng",
+        "correct": false
+      },
+      {
+        "id": "opt-c",
+        "text": "Trăng tròn vành vạnh",
+        "correct": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Trăng bán nguyệt (đúng một nửa đĩa tròn)",
+        "correct": false
+      }
+    ],
+    "explanation": "Vào ngày Rằm (15 âm lịch), toàn bộ nửa bề mặt Mặt Trăng được Mặt Trời chiếu sáng đều hướng về phía Trái Đất, tạo nên hình ảnh Trăng tròn."
+  }
+}

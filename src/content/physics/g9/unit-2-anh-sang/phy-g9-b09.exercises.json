@@ -1,0 +1,537 @@
+[
+  {
+    "id": "phy-g9-b09-mcq-001",
+    "lessonId": "phy-g9-b09",
+    "sgkBaiSo": 10,
+    "skillIds": [
+      "magnifying-glass-nature"
+    ],
+    "difficulty": 1,
+    "prompt": "Về mặt bản chất quang học, kính lúp là dụng cụ nào sau đây?",
+    "knowledge": [
+      "optical.magnifying.glass"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Một thấu kính phân kì có tiêu cự rất dài"
+        },
+        {
+          "id": "opt-b",
+          "label": "Một lăng kính tam giác làm tán sắc ánh sáng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Một gương phẳng phản xạ ánh sáng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Một thấu kính hội tụ có tiêu cự ngắn"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Kính lúp dùng để phóng to hình ảnh các vật nhỏ."
+      },
+      {
+        "level": 2,
+        "text": "Theo SGK KHTN 9 Bài 10: Kính lúp là một thấu kính hội tụ có tiêu cự ngắn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất quang học",
+        "body": "Đề bài yêu cầu chỉ ra bản chất cấu tạo của kính lúp."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 10: Kính lúp là một thấu kính hội tụ có tiêu cự ngắn (thường từ vài cm đến vài chục cm), dùng để quan sát các vật nhỏ."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Một thấu kính hội tụ có tiêu cự ngắn**."
+      }
+    ],
+    "finalSolution": "Kính lúp là **một thấu kính hội tụ có tiêu cự ngắn**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-diverging-lens",
+        "message": "Thấu kính phân kì luôn cho ảnh nhỏ hơn vật nên không thể dùng làm kính lúp để phóng đại."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b09-mcq-002",
+    "lessonId": "phy-g9-b09",
+    "sgkBaiSo": 10,
+    "skillIds": [
+      "magnifying-glass-image-properties"
+    ],
+    "difficulty": 1,
+    "prompt": "Ảnh của một vật quan sát được khi nhìn qua kính lúp có tính chất nào sau đây?",
+    "knowledge": [
+      "optical.magnifying.glass"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Ảnh thật, cùng chiều và bằng vật"
+        },
+        {
+          "id": "opt-b",
+          "label": "Ảnh thật, ngược chiều và nhỏ hơn vật"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ảnh ảo, ngược chiều và nhỏ hơn vật"
+        },
+        {
+          "id": "opt-d",
+          "label": "Ảnh ảo, cùng chiều và lớn hơn vật"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Kính lúp giúp ta đọc chữ dễ hơn, chữ to ra và không bị lộn ngược."
+      },
+      {
+        "level": 2,
+        "text": "Ảnh cùng chiều và lớn hơn vật, không hứng được trên màn nên là ảnh ảo."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định tính chất ảnh",
+        "body": "Khảo sát ảnh nhìn qua kính lúp khi đặt vật trong khoảng tiêu cự."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Khi quan sát qua kính lúp, vật đặt trong khoảng tiêu cự ($d < f$), thấu kính hội tụ tạo một ảnh ảo, cùng chiều và phóng đại lớn hơn vật giúp mắt nhìn rõ chi tiết nhỏ."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Ảnh ảo, cùng chiều và lớn hơn vật**."
+      }
+    ],
+    "finalSolution": "Ảnh quan sát qua kính lúp là **ảnh ảo, cùng chiều và lớn hơn vật**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-real-virtual",
+        "message": "Ảnh nhìn thấy bằng mắt ở cùng phía với vật mà không cần màn chắn là ảnh ảo (chứ không phải ảnh thật)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b09-mcq-003",
+    "lessonId": "phy-g9-b09",
+    "sgkBaiSo": 10,
+    "skillIds": [
+      "magnifying-glass-formula-concept"
+    ],
+    "difficulty": 1,
+    "prompt": "Hệ thức liên hệ giữa số bội giác G và tiêu cự f (tính bằng xentimét) của một kính lúp là:",
+    "knowledge": [
+      "optical.magnifying.glass"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "G = 25 . f"
+        },
+        {
+          "id": "opt-b",
+          "label": "G = f / 25"
+        },
+        {
+          "id": "opt-c",
+          "label": "G = 25 + f"
+        },
+        {
+          "id": "opt-d",
+          "label": "G = 25 / f"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Số 25 tượng trưng cho khoảng cực cận trung bình của mắt người bình thường (25 cm)."
+      },
+      {
+        "level": 2,
+        "text": "Tiêu cự f càng ngắn thì độ phóng đại G càng lớn, tỉ lệ nghịch G = 25 / f."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định công thức",
+        "body": "Đề bài yêu cầu chỉ ra biểu thức tính số bội giác $G$ theo tiêu cự $f$ (cm)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 10: Số bội giác của kính lúp liên hệ với tiêu cự $f$ (tính bằng cm) qua công thức $G = \\frac{25}{f}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **G = 25 / f**."
+      }
+    ],
+    "finalSolution": "Công thức số bội giác: **$G = \\frac{25}{f}$** (với $f$ tính bằng cm).",
+    "commonMistakes": [
+      {
+        "id": "invert-ratio",
+        "message": "Bạn đã đảo ngược công thức thành G = f / 25; công thức đúng là G = 25 / f."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b09-num-004",
+    "lessonId": "phy-g9-b09",
+    "sgkBaiSo": 10,
+    "skillIds": [
+      "magnifying-glass-calc-g"
+    ],
+    "difficulty": 2,
+    "prompt": "Một kính lúp dùng trong phòng thí nghiệm có tiêu cự f = 5 cm. Số bội giác G của kính lúp này là bao nhiêu (viết dưới dạng số nguyên không kèm chữ X)?",
+    "knowledge": [
+      "optical.magnifying.glass"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 5,
+      "unit": "",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sử dụng công thức G = 25 / f."
+      },
+      {
+        "level": 2,
+        "text": "Thay số: f = 5 cm => G = 25 / 5 = 5 (tức 5X)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Tiêu cự $f = 5\\text{ cm}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức số bội giác",
+        "body": "$G = \\frac{25}{f}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$G = \\frac{25}{5} = 5$ (kí hiệu $5\\times$)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Số bội giác của kính lúp là **5** (hay 5X)."
+      }
+    ],
+    "finalSolution": "Số bội giác của kính lúp: $G = \\frac{25}{f} = \\frac{25}{5} = 5\\times$.",
+    "commonMistakes": [
+      {
+        "id": "multiply-mistake",
+        "message": "Bạn đã lấy 25 nhân với 5 thay vì chia: G = 25 / f = 5X.",
+        "trapAnswers": [
+          "125",
+          "0.2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b09-num-005",
+    "lessonId": "phy-g9-b09",
+    "sgkBaiSo": 10,
+    "skillIds": [
+      "magnifying-glass-calc-f-from-g"
+    ],
+    "difficulty": 2,
+    "prompt": "Trên vành một chiếc kính lúp có ghi kí hiệu 2,5X (tương ứng với số bội giác G = 2,5). Tiêu cự f của chiếc kính lúp này là bao nhiêu cm?",
+    "knowledge": [
+      "optical.magnifying.glass"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 10,
+      "unit": "cm",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ công thức G = 25 / f suy ra f = 25 / G."
+      },
+      {
+        "level": 2,
+        "text": "Thay số: G = 2,5 => f = 25 / 2,5 = 10 cm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Số bội giác $G = 2,5$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính tiêu cự",
+        "body": "Từ $G = \\frac{25}{f} \\Rightarrow f = \\frac{25}{G}$ (cm)."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$f = \\frac{25}{2,5} = 10\\text{ cm}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tiêu cự của kính lúp là **10 cm**."
+      }
+    ],
+    "finalSolution": "Tiêu cự của kính lúp: $f = \\frac{25}{G} = \\frac{25}{2,5} = 10\\text{ cm}$.",
+    "commonMistakes": [
+      {
+        "id": "multiply-g-with-25",
+        "message": "Bạn đã nhân 25 với 2,5 thay vì chia: f = 25 / 2,5 = 10 cm.",
+        "trapAnswers": [
+          "62.5",
+          "0.1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b09-mcq-006",
+    "lessonId": "phy-g9-b09",
+    "sgkBaiSo": 10,
+    "skillIds": [
+      "magnifying-glass-distance-condition"
+    ],
+    "difficulty": 2,
+    "prompt": "Một học sinh dùng kính lúp có tiêu cự f = 8 cm để quan sát một con kiến nhỏ trên bàn. Khoảng cách d từ con kiến đến kính lúp phải thỏa mãn điều kiện nào sau đây để quan sát được ảnh rõ nét?",
+    "knowledge": [
+      "optical.magnifying.glass"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Khoảng cách d phải nhỏ hơn 8 cm (d < 8 cm, đặt trong khoảng tiêu cự)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Khoảng cách d phải đúng bằng 16 cm (d = 2f)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khoảng cách d phải lớn hơn 20 cm (d > 2f)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khoảng cách d phải bằng đúng 8 cm (d = f)"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Kính lúp chỉ hoạt động hiệu quả khi vật nằm trong khoảng tiêu cự."
+      },
+      {
+        "level": 2,
+        "text": "Vật phải đặt cách kính một đoạn d < f, tức là d < 8 cm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quy tắc sử dụng kính lúp",
+        "body": "Tìm điều kiện khoảng cách đặt vật trước kính lúp có $f = 8\\text{ cm}$."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 10: Khi dùng kính lúp, phải đặt vật nằm trong khoảng tiêu cự của kính ($d < f$). Do $f = 8\\text{ cm}$ nên khoảng cách đặt con kiến phải thỏa mãn $d < 8\\text{ cm}$ để thu được ảnh ảo phóng to cùng chiều."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Khoảng cách d phải nhỏ hơn 8 cm (d < 8 cm)**."
+      }
+    ],
+    "finalSolution": "Phải đặt vật **trong khoảng tiêu cự: $d < f = 8\\text{ cm}$**.",
+    "commonMistakes": [
+      {
+        "id": "place-outside-focal-length",
+        "message": "Nếu đặt con kiến cách kính lớn hơn 8 cm (d > f), kính sẽ cho ảnh thật lộn ngược và mờ nhòe trong mắt."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b09-num-007",
+    "lessonId": "phy-g9-b09",
+    "sgkBaiSo": 10,
+    "skillIds": [
+      "magnifying-glass-calc-watchmaker"
+    ],
+    "difficulty": 3,
+    "prompt": "Một người thợ sửa chữa đồng hồ cơ sử dụng một chiếc kính lúp chuyên dụng có số bội giác ghi trên kính là 10X (G = 10). Tiêu cự f của chiếc kính lúp này là bao nhiêu cm?",
+    "knowledge": [
+      "optical.magnifying.glass"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 2.5,
+      "unit": "cm",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp dụng công thức f = 25 / G."
+      },
+      {
+        "level": 2,
+        "text": "Thay số: G = 10 => f = 25 / 10 = 2,5 cm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Kính lúp thợ đồng hồ có $G = 10$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính tiêu cự",
+        "body": "$f = \\frac{25}{G}$ (cm)."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$f = \\frac{25}{10} = 2,5\\text{ cm}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tiêu cự của kính lúp là **2,5 cm**."
+      }
+    ],
+    "finalSolution": "Tiêu cự của kính lúp chuyên dụng: $f = \\frac{25}{G} = \\frac{25}{10} = 2,5\\text{ cm}$.",
+    "commonMistakes": [
+      {
+        "id": "divide-inverted",
+        "message": "Bạn đã lấy 10 chia cho 25 thay vì 25 chia cho 10: f = 25 / 10 = 2,5 cm (không phải 0,4 cm).",
+        "trapAnswers": [
+          "0.4",
+          "0.4 cm",
+          "250"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b09-mcq-008",
+    "lessonId": "phy-g9-b09",
+    "sgkBaiSo": 10,
+    "skillIds": [
+      "magnifying-glass-comparison"
+    ],
+    "difficulty": 3,
+    "prompt": "Có hai chiếc kính lúp: Kính lúp (1) có số bội giác 3X và Kính lúp (2) có số bội giác 5X. Nhận xét nào sau đây về tiêu cự và khả năng phóng đại của hai kính là chính xác?",
+    "knowledge": [
+      "optical.magnifying.glass"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hai kính có tiêu cự bằng nhau nhưng Kính (2) dày hơn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Kính (2) có tiêu cự dài hơn và cho khả năng phóng to ảnh kém hơn Kính (1)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Kính (2) có tiêu cự ngắn hơn và cho khả năng phóng to ảnh lớn hơn Kính (1)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Kính (1) có số bội giác nhỏ hơn nên cho ảnh sắc nét hơn Kính (2)"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tính tiêu cự từng kính: f1 = 25 / 3 = 8,33 cm; f2 = 25 / 5 = 5 cm."
+      },
+      {
+        "level": 2,
+        "text": "Kính nào có G lớn hơn thì phóng to hơn và có tiêu cự ngắn hơn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "So sánh hai kính lúp",
+        "body": "Kính (1) có $G_1 = 3\\times$; Kính (2) có $G_2 = 5\\times$."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Mối quan hệ định lượng",
+        "body": "Tiêu cự tỉ lệ nghịch với số bội giác: $f = \\frac{25}{G}$. Ta có $f_1 = \\frac{25}{3} \\approx 8,3\\text{ cm} > f_2 = \\frac{25}{5} = 5\\text{ cm}$. Kính (2) có số bội giác lớn hơn nên phóng to ảnh nhiều hơn, đồng thời tiêu cự ngắn hơn."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Kính (2) có tiêu cự ngắn hơn và cho khả năng phóng to ảnh lớn hơn Kính (1)**."
+      }
+    ],
+    "finalSolution": "Kính có số bội giác càng lớn thì **tiêu cự càng ngắn** và **khả năng phóng to càng lớn**.",
+    "commonMistakes": [
+      {
+        "id": "assume-larger-g-means-longer-f",
+        "message": "G và f tỉ lệ NGHỊCH với nhau: G càng lớn thì f càng nhỏ."
+      }
+    ]
+  }
+]

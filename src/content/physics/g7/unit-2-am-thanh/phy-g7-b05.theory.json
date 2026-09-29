@@ -1,0 +1,76 @@
+{
+  "lessonId": "phy-g7-b05",
+  "nodeId": "phy-g7-b05-theory",
+  "title": "Lý thuyết: Sóng âm",
+  "subtitle": "Bài 12 SGK Khoa học tự nhiên 7 (Kết nối tri thức)",
+  "sgkBaiSo": 12,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Nguồn gốc âm thanh",
+      "badgeColor": "cyan",
+      "title": "1. Dao động và nguồn âm",
+      "content": "Âm thanh (tiếng động) xuất hiện ở khắp mọi nơi xung quanh chúng ta và có chung một nguồn gốc vật lí:",
+      "bulletPoints": [
+        "Vật dao động là vật chuyển động qua lại quanh một vị trí cân bằng.",
+        "Nguồn âm là vật phát ra âm thanh.",
+        "Đặc điểm chung: Mọi vật khi phát ra âm thanh đều dao động.",
+        "Ví dụ: Dây đàn ghita rung khi gảy; mặt trống rung khi gõ; màng loa rung khi mở nhạc; thanh quản của con người rung lên khi nói."
+      ],
+      "callout": "Thí nghiệm đơn giản: Đặt nhẹ ngón tay lên cổ họng khi nói hoặc hát, bạn sẽ cảm nhận rõ ràng sự rung động (dao động) của dây thanh quản."
+    },
+    {
+      "id": "c2",
+      "badge": "Bản chất sóng âm",
+      "badgeColor": "amber",
+      "title": "2. Sự truyền sóng âm trong các môi trường",
+      "content": "Khi nguồn âm dao động, nó làm cho các hạt vật chất xung quanh dao động theo và lan truyền ra xa tạo thành sóng âm:",
+      "bulletPoints": [
+        "Sóng âm truyền được qua các môi trường vật chất: chất rắn, chất lỏng và chất khí.",
+        "Sóng âm KHÔNG truyền được trong chân không (vì chân không không có các phân tử/nguyên tử vật chất để truyền dao động).",
+        "Thí nghiệm chuông trong bình hút chân không: Khi hút dần không khí ra ngoài, tiếng chuông điện nhỏ dần rồi tắt hẳn."
+      ],
+      "callout": "Ứng dụng thiên văn: Trong không gian vũ trụ là môi trường chân không, các phi hành gia không thể nói chuyện trực tiếp mà phải sử dụng sóng vô tuyến (bộ đàm)."
+    },
+    {
+      "id": "c3",
+      "badge": "Tốc độ âm thanh",
+      "badgeColor": "emerald",
+      "title": "3. Tốc độ truyền sóng âm",
+      "content": "Sóng âm truyền nhanh hay chậm phụ thuộc vào mật độ phân tử và liên kết giữa các hạt trong môi trường:",
+      "bulletPoints": [
+        "Quy luật: Tốc độ truyền âm trong chất rắn lớn hơn trong chất lỏng, trong chất lỏng lớn hơn trong chất khí (v_rắn > v_lỏng > v_khí).",
+        "Tốc độ truyền âm ở 20 °C (SGK KNTT 7): Trong không khí khoảng 340 m/s; trong nước khoảng 1 500 m/s; trong thép khoảng 5 100 m/s.",
+        "Hiện tượng thực tế: Khi có sét đánh ở xa, ta thường nhìn thấy chớp sáng trước rồi một lúc sau mới nghe thấy tiếng sấm vì tốc độ ánh sáng (300 000 km/s) lớn hơn rất nhiều tốc độ âm thanh (340 m/s)."
+      ],
+      "callout": "Kinh nghiệm dân gian: Áp tai xuống đất có thể nghe thấy tiếng vó ngựa hoặc đoàn tàu từ xa trước khi nghe thấy trong không khí."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Sóng âm có thể truyền được qua các môi trường nào sau đây?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Chất rắn, chất lỏng và chất khí; không truyền được trong chân không",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Chỉ truyền được trong chất khí như không khí",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Truyền được trong mọi môi trường kể cả chân không",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Chỉ truyền được trong chất lỏng và chất rắn",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 7 Bài 12, sóng âm cần môi trường vật chất (hạt phân tử) để lan truyền dao động nên truyền được trong rắn, lỏng, khí và không truyền được trong chân không."
+  }
+}

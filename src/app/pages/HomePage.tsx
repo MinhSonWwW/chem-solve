@@ -1,23 +1,26 @@
 import React, { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { Play, ArrowRight, Map, FlaskConical, CheckCircle2, Sparkles, BookOpen } from 'lucide-react';
+import { Play, ArrowRight, Map, FlaskConical, CheckCircle2, Sparkles, BookOpen, Zap } from 'lucide-react';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import { Button, Card, Progress, Streak, XPBadge, Mascot, CurrencyIcon } from '@/design-system';
 import { sound } from '@/lib/audio';
 import { getCurriculum, type Grade } from '@/content/curriculum';
+import { useActiveSubject } from '@/content/subjects';
 
 export const HomePage: React.FC = () => {
   const navigate = useNavigate();
   const { xp, streak, dailyGoal, completedNodes } = useUserStore();
+  const { subject: activeSubject } = useActiveSubject();
+  const isPhysics = activeSubject === 'physics';
 
-  // Active grade selector (persisted in localStorage or default to 8)
+  // Active grade selector (persisted in localStorage or default based on subject)
   const [activeGrade, setActiveGrade] = useState<Grade>(() => {
     const saved = localStorage.getItem('chem_active_grade');
     if (saved && [6, 7, 8, 9].includes(Number(saved))) {
       return Number(saved) as Grade;
     }
-    return 8;
+    return isPhysics ? 9 : 8;
   });
 
   const handleSelectGrade = (g: Grade) => {
@@ -28,7 +31,7 @@ export const HomePage: React.FC = () => {
 
   // Dynamically find next playable node in the active grade
   const nextPlayable = useMemo(() => {
-    const curriculum = getCurriculum(activeGrade);
+    const curriculum = getCurriculum(activeGrade, activeSubject);
     const completedKeys = new Set(
       Object.keys(completedNodes).filter((k) => completedNodes[k])
     );
@@ -59,7 +62,7 @@ export const HomePage: React.FC = () => {
       node: curriculum.chapters[0]?.lessons[0]?.nodes[0],
       isCompletedAll: true,
     };
-  }, [activeGrade, completedNodes]);
+  }, [activeGrade, activeSubject, completedNodes]);
 
   const progressPercent = Math.min(100, Math.round((xp / dailyGoal) * 100));
 
@@ -68,7 +71,7 @@ export const HomePage: React.FC = () => {
       {/* Grade Selector Pills */}
       <div className="flex items-center justify-between gap-1.5 p-1.5 rounded-2xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24]">
         <span className="text-[10px] font-black uppercase text-slate-400 pl-2 tracking-wider flex items-center gap-1">
-          <BookOpen className="w-3.5 h-3.5 text-cyan-400" />
+          <BookOpen className={`w-3.5 h-3.5 ${isPhysics ? 'text-amber-400' : 'text-cyan-400'}`} />
           Khối lớp:
         </span>
         <div className="flex gap-1">
@@ -78,7 +81,9 @@ export const HomePage: React.FC = () => {
               onClick={() => handleSelectGrade(g)}
               className={`px-3 py-1.5 rounded-xl text-xs font-black transition-all cursor-pointer border ${
                 activeGrade === g
-                  ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-slate-950 border-cyan-300 shadow-[0_2px_0_0_#0891b2] font-black'
+                  ? isPhysics
+                    ? 'bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 border-amber-300 shadow-[0_2px_0_0_#ca8a04] font-black'
+                    : 'bg-gradient-to-r from-cyan-500 to-blue-500 text-slate-950 border-cyan-300 shadow-[0_2px_0_0_#0891b2] font-black'
                   : 'bg-[#131f24] border-[#2e4756] text-slate-400 hover:text-slate-200'
               }`}
             >
@@ -95,18 +100,22 @@ export const HomePage: React.FC = () => {
         className="bg-gradient-to-b from-[#1c2c36] to-[#121c22] border-2 border-[#2e4756] rounded-3xl p-5 shadow-[0_6px_0_0_#0c1419] relative overflow-hidden"
       >
         {/* Ambient radial glow */}
-        <div className="absolute -right-12 -top-12 w-48 h-48 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
+        <div className={`absolute -right-12 -top-12 w-48 h-48 rounded-full blur-3xl pointer-events-none ${isPhysics ? 'bg-amber-500/10' : 'bg-cyan-500/10'}`} />
 
         <div className="flex items-center justify-between gap-3 relative z-10">
           <div className="space-y-2.5 flex-1 min-w-0">
-            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-cyan-950/80 text-cyan-300 font-black text-[10px] uppercase tracking-wider border border-cyan-700/60 shadow-sm">
-              <Sparkles className="w-3 h-3 text-cyan-400" />
+            <div className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-black text-[10px] uppercase tracking-wider border shadow-sm ${
+              isPhysics
+                ? 'bg-amber-950/80 text-amber-300 border-amber-700/60'
+                : 'bg-cyan-950/80 text-cyan-300 border-cyan-700/60'
+            }`}>
+              {isPhysics ? <Zap className="w-3 h-3 text-amber-400" /> : <Sparkles className="w-3 h-3 text-cyan-400" />}
               {nextPlayable.isCompletedAll ? 'Đã hoàn thành xuất sắc' : 'Chặng tiếp theo của bạn'}
             </div>
 
             <h1 className="text-lg sm:text-xl font-black text-white leading-snug">
-              Lớp {nextPlayable.grade} · {nextPlayable.lesson?.title ?? 'Hóa học THCS'} <br />
-              <span className="text-cyan-400 text-base sm:text-lg">
+              Lớp {nextPlayable.grade} · {nextPlayable.lesson?.title ?? (isPhysics ? 'Vật lý THCS' : 'Hóa học THCS')} <br />
+              <span className={`text-base sm:text-lg ${isPhysics ? 'text-amber-400' : 'text-cyan-400'}`}>
                 {nextPlayable.node?.title ?? 'Khám phá bài học mới'}
               </span>
             </h1>
@@ -119,11 +128,19 @@ export const HomePage: React.FC = () => {
               <Button
                 variant="primary"
                 size="md"
-                className="flex items-center gap-2 font-black shadow-[0_4px_0_0_#007a5d] bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950"
+                className={`flex items-center gap-2 font-black text-slate-950 ${
+                  isPhysics
+                    ? 'shadow-[0_4px_0_0_#ca8a04] bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400'
+                    : 'shadow-[0_4px_0_0_#007a5d] bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400'
+                }`}
                 onClick={() => {
                   sound.playClick();
                   if (nextPlayable.lesson && nextPlayable.node) {
-                    navigate(`/play/${nextPlayable.lesson.id}/${nextPlayable.node.id}`);
+                    if (nextPlayable.node.type === 'theory') {
+                      navigate(`/theory/${nextPlayable.lesson.id}/${nextPlayable.node.id}`);
+                    } else {
+                      navigate(`/play/${nextPlayable.lesson.id}/${nextPlayable.node.id}`);
+                    }
                   } else {
                     navigate(`/learn/${activeGrade}`);
                   }
@@ -202,15 +219,27 @@ export const HomePage: React.FC = () => {
             sound.playClick();
             navigate(`/learn/${activeGrade}`);
           }}
-          className="bg-gradient-to-b from-[#182c38] to-[#121c24] border-2 border-cyan-500/40 hover:border-cyan-400 p-4 rounded-3xl cursor-pointer flex flex-col gap-3 shadow-[0_5px_0_0_#083344] transition-all group"
+          className={`border-2 p-4 rounded-3xl cursor-pointer flex flex-col gap-3 transition-all group ${
+            isPhysics
+              ? 'bg-gradient-to-b from-[#2d2208] to-[#1a1403] border-amber-500/40 hover:border-amber-400 shadow-[0_5px_0_0_#78350f]'
+              : 'bg-gradient-to-b from-[#182c38] to-[#121c24] border-cyan-500/40 hover:border-cyan-400 shadow-[0_5px_0_0_#083344]'
+          }`}
         >
-          <div className="w-10 h-10 rounded-2xl bg-cyan-500/20 border border-cyan-400/50 flex items-center justify-center text-cyan-300 shadow-[0_2px_8px_rgba(6,182,212,0.3)] group-hover:scale-110 transition-transform">
-            <Map className="w-5 h-5 text-cyan-400" />
+          <div className={`w-10 h-10 rounded-2xl border flex items-center justify-center group-hover:scale-110 transition-transform ${
+            isPhysics
+              ? 'bg-amber-500/20 border-amber-400/50 text-amber-300 shadow-[0_2px_8px_rgba(245,158,11,0.3)]'
+              : 'bg-cyan-500/20 border-cyan-400/50 text-cyan-300 shadow-[0_2px_8px_rgba(6,182,212,0.3)]'
+          }`}>
+            <Map className={`w-5 h-5 ${isPhysics ? 'text-amber-400' : 'text-cyan-400'}`} />
           </div>
           <div>
             <div className="flex items-center justify-between">
               <h2 className="font-black text-sm text-white">Lộ trình học</h2>
-              <span className="text-[10px] font-black px-1.5 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">
+              <span className={`text-[10px] font-black px-1.5 py-0.5 rounded border ${
+                isPhysics
+                  ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
+                  : 'bg-cyan-500/20 text-cyan-300 border-cyan-500/40'
+              }`}>
                 Lớp {activeGrade}
               </span>
             </div>
@@ -226,25 +255,41 @@ export const HomePage: React.FC = () => {
           sound.playClick();
           navigate('/practice');
         }}
-        className="flex items-center justify-between p-4 bg-gradient-to-r from-[#142921] to-[#121c22] border-2 border-emerald-500/40 hover:border-emerald-400 shadow-[0_5px_0_0_#064e3b] rounded-3xl cursor-pointer transition-all group"
+        className={`flex items-center justify-between p-4 border-2 rounded-3xl cursor-pointer transition-all group ${
+          isPhysics
+            ? 'bg-gradient-to-r from-[#291e07] to-[#181305] border-amber-500/40 hover:border-amber-400 shadow-[0_5px_0_0_#78350f]'
+            : 'bg-gradient-to-r from-[#142921] to-[#121c22] border-emerald-500/40 hover:border-emerald-400 shadow-[0_5px_0_0_#064e3b]'
+        }`}
       >
         <div className="flex items-center gap-3">
-          <div className="w-11 h-11 rounded-2xl bg-emerald-500/20 border border-emerald-400/50 flex items-center justify-center text-emerald-400 shadow-[0_2px_8px_rgba(16,185,129,0.3)] group-hover:scale-110 transition-transform">
-            <FlaskConical className="w-6 h-6" />
+          <div className={`w-11 h-11 rounded-2xl border flex items-center justify-center group-hover:scale-110 transition-transform ${
+            isPhysics
+              ? 'bg-amber-500/20 border-amber-400/50 text-amber-400 shadow-[0_2px_8px_rgba(245,158,11,0.3)]'
+              : 'bg-emerald-500/20 border-emerald-400/50 text-emerald-400 shadow-[0_2px_8px_rgba(16,185,129,0.3)]'
+          }`}>
+            {isPhysics ? <Zap className="w-6 h-6" /> : <FlaskConical className="w-6 h-6" />}
           </div>
           <div>
             <div className="text-sm font-black text-white flex items-center gap-1.5">
-              <span>Phòng Thí Nghiệm & Ôn Tập</span>
-              <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-emerald-950 border border-emerald-600/60 text-emerald-300">
-                5 Trò Chơi
+              <span>{isPhysics ? 'Phòng Luyện Tập Vật Lý' : 'Phòng Thí Nghiệm & Ôn Tập'}</span>
+              <span className={`text-[10px] font-black px-2 py-0.5 rounded-full border ${
+                isPhysics
+                  ? 'bg-amber-950 border-amber-600/60 text-amber-300'
+                  : 'bg-emerald-950 border-emerald-600/60 text-emerald-300'
+              }`}>
+                {isPhysics ? 'Công Thức & Bài Tập' : '5 Trò Chơi'}
               </span>
             </div>
             <div className="text-[11px] text-slate-300 mt-0.5">
-              Ghép đôi, cân bằng PTHH, phân loại hợp chất & ráp phản ứng
+              {isPhysics
+                ? 'Luyện giải toán Cơ - Nhiệt - Điện - Quang, thử thách tốc độ & ôn tập'
+                : 'Ghép đôi, cân bằng PTHH, phân loại hợp chất & ráp phản ứng'}
             </div>
           </div>
         </div>
-        <ArrowRight className="w-5 h-5 text-emerald-400 group-hover:translate-x-1 transition-transform shrink-0" />
+        <ArrowRight className={`w-5 h-5 group-hover:translate-x-1 transition-transform shrink-0 ${
+          isPhysics ? 'text-amber-400' : 'text-emerald-400'
+        }`} />
       </motion.div>
     </div>
   );

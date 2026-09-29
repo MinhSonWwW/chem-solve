@@ -1,0 +1,77 @@
+{
+  "lessonId": "phy-g8-b07",
+  "nodeId": "phy-g8-b07-theory",
+  "title": "Lý thuyết: Đòn bẩy và ứng dụng",
+  "subtitle": "Bài 19 SGK Khoa học tự nhiên 8 (Kết nối tri thức)",
+  "sgkBaiSo": 19,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Cấu tạo đòn bẩy",
+      "badgeColor": "cyan",
+      "title": "1. Các bộ phận và yếu tố của đòn bẩy",
+      "content": "Đòn bẩy là một trong những loại máy cơ đơn giản được sử dụng sớm nhất trong lịch sử nhân loại:",
+      "bulletPoints": [
+        "Định nghĩa: Đòn bẩy là một thanh cứng có thể quay quanh một điểm cố định gọi là điểm tựa.",
+        "Điểm tựa (kí hiệu: $O$): Điểm hoặc trục mà đòn bẩy quay quanh nó.",
+        "Điểm đặt của tải trọng ($O_1$): Vị trí vật cần nâng tác dụng lực $F_1$, khoảng cách từ $O$ đến giá của $F_1$ là cánh tay đòn $d_1$.",
+        "Điểm đặt của lực nâng ($O_2$): Vị trí tay người hoặc động cơ tác dụng lực $F_2$, khoảng cách từ $O$ đến giá của $F_2$ là cánh tay đòn $d_2$."
+      ],
+      "callout": "Quy ước kí hiệu: Điểm tựa luôn là O; O1 gắn với tải trọng vật; O2 gắn với lực tác dụng của người."
+    },
+    {
+      "id": "c2",
+      "badge": "Điều kiện cân bằng",
+      "badgeColor": "amber",
+      "title": "2. Điều kiện cân bằng và quy tắc lợi về lực",
+      "content": "Dựa trên quy tắc moment lực, đòn bẩy đạt trạng thái cân bằng thăng bằng khi:",
+      "bulletPoints": [
+        "Quy tắc cân bằng: $F_1 \\times d_1 = F_2 \\times d_2$",
+        "Tỉ số lực và cánh tay đòn: $\\frac{F_2}{F_1} = \\frac{d_1}{d_2}$",
+        "Quy tắc được lợi về lực: Muốn lực nâng $F_2$ nhỏ hơn trọng lượng vật $F_1$ ($F_2 < F_1$), ta bắt buộc phải có cánh tay đòn $d_2 > d_1$ (khoảng cách từ điểm tựa đến tay cầm phải lớn hơn khoảng cách từ điểm tựa đến vật).",
+        "Tỉ lệ vàng: Nếu $d_2$ dài gấp bao nhiêu lần $d_1$ thì lực tác dụng $F_2$ sẽ nhỏ hơn bấy nhiêu lần so với trọng lượng vật $F_1$."
+      ],
+      "callout": "Định luật bảo toàn công: Được lợi bao nhiêu lần về lực thì thiệt bấy nhiêu lần về đường đi (tay phải di chuyển một đoạn đường dài hơn)."
+    },
+    {
+      "id": "c3",
+      "badge": "Phân loại đòn bẩy",
+      "badgeColor": "emerald",
+      "title": "3. Ba loại đòn bẩy trong đời sống và kĩ thuật",
+      "content": "Tùy thuộc vào vị trí tương đối giữa điểm tựa $O$, lực cản $F_1$ và lực tác dụng $F_2$, đòn bẩy chia thành 3 loại:",
+      "bulletPoints": [
+        "Đòn bẩy loại 1: Điểm tựa $O$ nằm Ở GIỮA lực tác dụng và tải trọng. Ví dụ: Bập bênh, kéo cắt kim loại (cán dài lưỡi ngắn để lợi về lực), kìm bấm, xà beng nhổ đinh.",
+        "Đòn bẩy loại 2: Tải trọng nằm Ở GIỮA điểm tựa $O$ và lực tác dụng. Vì $d_2 > d_1$ nên luôn luôn ĐƯỢC LỢI VỀ LỰC. Ví dụ: Xe cút kít (bánh xe là $O$, thùng cát ở giữa, tay nâng ở đuôi), kẹp tách vỏ hạt dẻ, dụng cụ khui nắp chai.",
+        "Đòn bẩy loại 3: Lực tác dụng nằm Ở GIỮA điểm tựa $O$ và tải trọng. Vì $d_2 < d_1$ nên THIỆT VỀ LỰC nhưng ĐƯỢC LỢI VỀ ĐƯỜNG ĐI và tốc độ thao tác khéo léo. Ví dụ: Nhíp gắp y tế, đũa ăn cơm, cần câu cá, chổi quét nhà."
+      ],
+      "callout": "Ví dụ sinh học: Khớp khuỷu tay người là điểm tựa O, cơ bắp nhị đầu bám ở giữa, bàn tay nâng vật ở đầu -> Cánh tay người hoạt động như một đòn bẩy loại 3."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Để dùng đòn bẩy nâng một hòn đá nặng sao cho lực tác dụng của tay F2 nhỏ hơn trọng lượng F1 của hòn đá, ta cần bố trí đòn bẩy như thế nào?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Khoảng cách từ điểm tựa đến tay tác dụng d2 lớn hơn khoảng cách đến hòn đá d1 (d2 > d1)",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Khoảng cách d2 nhỏ hơn khoảng cách d1 (d2 < d1)",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Đặt điểm tựa trùng khít vào hòn đá",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Khoảng cách d1 và d2 phải bằng nhau",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo quy tắc đòn bẩy (SGK KHTN 8 Bài 19): Muốn được lợi về lực (F2 < F1) thì cánh tay đòn tác dụng lực phải dài hơn cánh tay đòn của tải trọng (d2 > d1)."
+  }
+}

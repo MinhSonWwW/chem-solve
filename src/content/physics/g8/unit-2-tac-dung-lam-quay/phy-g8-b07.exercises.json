@@ -1,0 +1,558 @@
+[
+  {
+    "id": "phy-g8-b07-mcq-001",
+    "lessonId": "phy-g8-b07",
+    "sgkBaiSo": 19,
+    "skillIds": [
+      "lever-components"
+    ],
+    "difficulty": 1,
+    "prompt": "Mỗi đòn bẩy khi hoạt động luôn được xác định bởi những yếu tố cơ bản nào sau đây?",
+    "knowledge": [
+      "formula.lever.balance"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chỉ duy nhất trọng lượng của chiếc đòn bẩy"
+        },
+        {
+          "id": "opt-b",
+          "label": "Điểm tựa O, điểm tác dụng lực của tải trọng O1 và điểm tác dụng lực nâng O2"
+        },
+        {
+          "id": "opt-c",
+          "label": "Màu sắc và chất liệu làm nên thanh đòn bẩy"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nhiệt độ của môi trường xung quanh điểm tựa"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đòn bẩy là một thanh cứng quay quanh một điểm cố định."
+      },
+      {
+        "level": 2,
+        "text": "Các yếu tố gồm: điểm tựa O và hai điểm đặt lực O1 (vật), O2 (người)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định cấu tạo đòn bẩy",
+        "body": "Đề bài yêu cầu chỉ ra các yếu tố cấu thành một đòn bẩy."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 19), đòn bẩy xác định bởi điểm tựa O, điểm đặt lực cản O1 và điểm đặt lực tác dụng O2."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Các yếu tố là **Điểm tựa O, điểm tác dụng lực của tải trọng O1 và điểm tác dụng lực nâng O2**."
+      }
+    ],
+    "finalSolution": "Đòn bẩy được xác định bởi **điểm tựa O**, điểm tác dụng của lực tải trọng $O_1$ và điểm tác dụng của lực nâng $O_2$.",
+    "commonMistakes": [
+      {
+        "id": "confuse-components",
+        "message": "Không được nhầm lẫn điểm tựa O với trọng tâm của đòn bẩy."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b07-mcq-002",
+    "lessonId": "phy-g8-b07",
+    "sgkBaiSo": 19,
+    "skillIds": [
+      "lever-force-advantage-rule"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi sử dụng đòn bẩy để nâng một vật nặng, muốn được LỢI VỀ LỰC (nghĩa là lực tác dụng F2 nhỏ hơn trọng lượng F1 của vật), cánh tay đòn cần thỏa mãn điều kiện nào?",
+    "knowledge": [
+      "formula.lever.balance"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Khoảng cách từ điểm tựa đến lực tác dụng nhỏ hơn khoảng cách đến vật (d2 < d1)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Khoảng cách d2 bắt buộc phải bằng khoảng cách d1 (d2 = d1)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khoảng cách từ điểm tựa đến lực tác dụng lớn hơn khoảng cách đến vật (d2 > d1)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Điểm tựa O phải đặt ở ngay chính giữa vật nặng"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ điều kiện cân bằng F1 x d1 = F2 x d2, suy ra F2 / F1 = d1 / d2."
+      },
+      {
+        "level": 2,
+        "text": "Muốn F2 < F1 thì tỉ số d1 / d2 < 1, nghĩa là d2 > d1."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích điều kiện lợi lực",
+        "body": "Yêu cầu $F_2 < F_1$ khi đòn bẩy cân bằng."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức cân bằng",
+        "body": "$F_1 \\times d_1 = F_2 \\times d_2 \\Rightarrow \\frac{F_2}{F_1} = \\frac{d_1}{d_2}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Suy ra điều kiện",
+        "body": "Để $F_2 < F_1$ thì phải có $\\frac{d_1}{d_2} < 1 \\Leftrightarrow d_2 > d_1$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cánh tay đòn của lực tác dụng phải lớn hơn của vật: **d2 > d1**."
+      }
+    ],
+    "finalSolution": "Muốn được lợi về lực ($F_2 < F_1$), ta bắt buộc phải có **$d_2 > d_1$**.",
+    "commonMistakes": [
+      {
+        "id": "inverse-arm-trap",
+        "message": "Nếu d2 < d1 thì F2 > F1, lúc này ta bị thiệt về lực (phải tác dụng lực lớn hơn trọng lượng vật)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b07-mcq-003",
+    "lessonId": "phy-g8-b07",
+    "sgkBaiSo": 19,
+    "skillIds": [
+      "lever-class-1-examples"
+    ],
+    "difficulty": 1,
+    "prompt": "Dụng cụ nào sau đây trong đời sống hoạt động như một 'đòn bẩy loại 1' (có điểm tựa O nằm ở giữa vật cản và lực tác dụng)?",
+    "knowledge": [
+      "formula.lever.balance"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chiếc nhíp gắp y tế"
+        },
+        {
+          "id": "opt-b",
+          "label": "Chiếc xe cút kít (xe rùa chở cát)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chiếc kéo cắt giấy hoặc chiếc kìm bấm"
+        },
+        {
+          "id": "opt-d",
+          "label": "Đôi đũa ăn cơm"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đòn bẩy loại 1 có trục quay (điểm tựa O) nằm ở giữa hai cánh đòn."
+      },
+      {
+        "level": 2,
+        "text": "Chiếc kéo có trục đinh tán ở giữa, lưỡi kéo ở một đầu và tay cầm ở đầu kia."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đặc điểm đòn bẩy loại 1",
+        "body": "Điểm tựa O nằm giữa điểm đặt lực cản O1 và lực tác dụng O2."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân tích các dụng cụ",
+        "body": "Kéo cắt giấy và kìm có trục đinh tán ở giữa làm điểm tựa O -> Đòn bẩy loại 1. Xe cút kít là loại 2. Nhíp và đũa là loại 3."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Ứng dụng đòn bẩy loại 1 là **Chiếc kéo cắt giấy hoặc chiếc kìm bấm**."
+      }
+    ],
+    "finalSolution": "**Chiếc kéo cắt giấy hoặc chiếc kìm bấm** là đòn bẩy loại 1 với trục đinh tán ở giữa đóng vai trò điểm tựa O.",
+    "commonMistakes": [
+      {
+        "id": "confuse-with-tweezers",
+        "message": "Chiếc nhíp có điểm tựa ở đuôi và lực ép ngón tay ở giữa nên là đòn bẩy loại 3."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b07-num-004",
+    "lessonId": "phy-g8-b07",
+    "sgkBaiSo": 19,
+    "skillIds": [
+      "lever-balance-calc"
+    ],
+    "difficulty": 2,
+    "prompt": "Một chiếc đòn bẩy nằm ngang đang ở trạng thái thăng bằng: Vật nặng ở bên trái tác dụng một lực F1 = 150 N tại vị trí cách điểm tựa O một khoảng d1 = 20 cm. Người tác dụng lực F2 ở bên phải tại vị trí cách điểm tựa O một khoảng d2 = 60 cm. Độ lớn của lực F2 cần tác dụng để đòn bẩy giữ thăng bằng là bao nhiêu Niutơn (N)?",
+    "knowledge": [
+      "formula.lever.balance"
+    ],
+    "visual": {
+      "mode": "lever-balance"
+    },
+    "answer": {
+      "kind": "number",
+      "value": 50,
+      "unit": "N",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp dụng điều kiện cân bằng của đòn bẩy: F1 x d1 = F2 x d2."
+      },
+      {
+        "level": 2,
+        "text": "F2 = (F1 x d1) / d2 = (150 x 20) / 60."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$F_1 = 150\\text{ N}$; $d_1 = 20\\text{ cm}$; $d_2 = 60\\text{ cm}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Điều kiện cân bằng đòn bẩy",
+        "body": "$F_1 \\times d_1 = F_2 \\times d_2 \\Rightarrow F_2 = \\frac{F_1 \\times d_1}{d_2}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$F_2 = \\frac{150 \\times 20}{60} = \\frac{3\\,000}{60} = 50\\text{ N}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Lực tác dụng cần thiết là **50 N** (được lợi 3 lần về lực vì d2 = 3 x d1)."
+      }
+    ],
+    "finalSolution": "Lực cần tác dụng để giữ thăng bằng: $F_2 = \\frac{F_1 \\times d_1}{d_2} = \\frac{150 \\times 20}{60} = 50\\text{ N}$.",
+    "commonMistakes": [
+      {
+        "id": "cross-multiplication-error",
+        "message": "Bạn đã nhân nhầm: F2 = (F1 * d2) / d1 thay vì (F1 * d1) / d2.",
+        "trapAnswers": [
+          "450",
+          "450 N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b07-num-005",
+    "lessonId": "phy-g8-b07",
+    "sgkBaiSo": 19,
+    "skillIds": [
+      "lever-rock-lifting-calc"
+    ],
+    "difficulty": 2,
+    "prompt": "Một thanh đòn bẩy nhẹ có chiều dài 1 m. Điểm tựa O được đặt cách đầu A (nơi đặt hòn đá nặng P = 800 N) một đoạn d1 = 20 cm = 0,2 m. Người nâng tác dụng lực F2 vuông góc vào đầu B còn lại của đòn bẩy. Lực F2 tối thiểu người đó cần tác dụng để bắt đầu bẩy được hòn đá lên là bao nhiêu Niutơn (N)?",
+    "knowledge": [
+      "formula.lever.balance"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 200,
+      "unit": "N",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tính cánh tay đòn d2: Chiều dài thanh đòn bẩy là 1 m = 100 cm, d1 = 20 cm => d2 = 100 - 20 = 80 cm = 0,8 m."
+      },
+      {
+        "level": 2,
+        "text": "F2 = (F1 x d1) / d2 = (800 x 0,2) / 0,8."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Chiều dài thanh $L = 1\\text{ m}$; $F_1 = P = 800\\text{ N}$; $d_1 = 0,2\\text{ m}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính cánh tay đòn d2",
+        "body": "$d_2 = L - d_1 = 1 - 0,2 = 0,8\\text{ m}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Áp dụng điều kiện cân bằng",
+        "body": "$F_2 = \\frac{F_1 \\times d_1}{d_2} = \\frac{800 \\times 0,2}{0,8} = 200\\text{ N}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Lực tối thiểu cần tác dụng là **200 N** (nhẹ hơn 4 lần so với trọng lượng hòn đá)."
+      }
+    ],
+    "finalSolution": "Cánh tay đòn $d_2 = 1 - 0,2 = 0,8\\text{ m}$. Lực tối thiểu cần tác dụng: $F_2 = \\frac{800 \\times 0,2}{0,8} = 200\\text{ N}$.",
+    "commonMistakes": [
+      {
+        "id": "used-total-length-as-d2",
+        "message": "Bạn đã lấy toàn bộ chiều dài thanh L = 1 m làm d2. Lưu ý d2 chỉ là khoảng cách từ điểm tựa O đến đầu B: d2 = 1 - 0,2 = 0,8 m.",
+        "trapAnswers": [
+          "160",
+          "160 N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b07-mcq-006",
+    "lessonId": "phy-g8-b07",
+    "sgkBaiSo": 19,
+    "skillIds": [
+      "wheelbarrow-class-2"
+    ],
+    "difficulty": 2,
+    "prompt": "Chiếc xe cút kít (xe rùa chở đất cát trong xây dựng) là một ứng dụng của đòn bẩy loại 2, trong đó trục bánh xe là điểm tựa O, thùng chở cát nằm ở giữa và tay người nâng ở hai càng xe phía sau. Thiết kế này mang lại ưu điểm gì?",
+    "knowledge": [
+      "formula.lever.balance"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Làm cho cát trong xe tự động biến mất trọng lượng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cánh tay đòn của tay nâng luôn dài hơn của thùng hàng (d2 > d1) nên luôn được lợi về lực"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chỉ để xe không bị lật ngửa ra sau"
+        },
+        {
+          "id": "opt-d",
+          "label": "Bị thiệt về lực để xe chạy nhanh hơn"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Vị trí thùng hàng nằm giữa trục bánh xe (O) và tay nâng."
+      },
+      {
+        "level": 2,
+        "text": "Do đó khoảng cách từ O đến tay nâng (d2) luôn lớn hơn khoảng cách từ O đến trọng tâm thùng hàng (d1), giúp giảm lực nâng F2."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích cấu tạo xe cút kít",
+        "body": "Điểm tựa O ở trục bánh xe trước; trọng lực thùng cát đặt ở giữa ($O_1$); tay người nâng ở cuối càng xe ($O_2$)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc điểm đòn bẩy loại 2",
+        "body": "Khoảng cách $OO_2 = d_2 > OO_1 = d_1$. Theo quy tắc đòn bẩy, $F_2 = F_1 \\times \\frac{d_1}{d_2} < F_1$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Xe cút kít **luôn cho ta lợi về lực** nhờ $d_2 > d_1$."
+      }
+    ],
+    "finalSolution": "Xe cút kít là đòn bẩy loại 2, có **cánh tay đòn $d_2 > d_1$ nên người nâng luôn được lợi về lực**, nâng được khối lượng cát sỏi nặng dễ dàng.",
+    "commonMistakes": [
+      {
+        "id": "confuse-wheelbarrow-lever-type",
+        "message": "Nhiều bạn nhầm xe cút kít là đòn bẩy loại 1. Vì vật nằm ở giữa điểm tựa và tay nâng nên xe cút kít là đòn bẩy loại 2."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b07-tf-007",
+    "lessonId": "phy-g8-b07",
+    "sgkBaiSo": 19,
+    "skillIds": [
+      "lever-types-tf"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai của các khẳng định sau về các loại đòn bẩy:",
+    "knowledge": [
+      "formula.lever.balance"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Đòn bẩy ở trạng thái thăng bằng khi tích số giữa lực và cánh tay đòn ở hai phía điểm tựa bằng nhau (F1 x d1 = F2 x d2).",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Dụng cụ nhíp gắp y tế hay đũa ăn cơm giúp người sử dụng được lợi rất nhiều lần về lực tác dụng.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Đòn bẩy loại 2 luôn cho ta lợi về lực vì điểm đặt tải trọng nằm ở giữa điểm tựa và lực tác dụng (d2 luôn lớn hơn d1).",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Xem xét quy tắc thăng bằng và đặc điểm của 3 loại đòn bẩy."
+      },
+      {
+        "level": 2,
+        "text": "Đũa và nhíp là đòn bẩy loại 3, bị thiệt về lực để đổi lấy sự khéo léo và đường đi."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 1",
+        "body": "Điều kiện cân bằng đòn bẩy là $F_1 \\times d_1 = F_2 \\times d_2$ -> Đúng."
+      },
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 2",
+        "body": "Nhíp và đũa là đòn bẩy loại 3 ($d_2 < d_1$), bị thiệt về lực ($F_2 > F_1$) để lợi về cử động khéo léo -> Mệnh đề 2 Sai."
+      },
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 3",
+        "body": "Đòn bẩy loại 2 có vật ở giữa nên $d_2 > d_1$, luôn lợi về lực -> Đúng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự: Đúng - Sai - Đúng."
+      }
+    ],
+    "finalSolution": "Mệnh đề 1: **Đúng**; Mệnh đề 2: **Sai**; Mệnh đề 3: **Đúng**.",
+    "commonMistakes": [
+      {
+        "id": "chopsticks-force-trap",
+        "message": "Cầm đũa hay nhíp ta phải bóp lực lớn hơn lực giữ mẩu thức ăn ở đầu đũa, bù lại đầu đũa di chuyển nhanh và linh hoạt."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b07-mcq-008",
+    "lessonId": "phy-g8-b07",
+    "sgkBaiSo": 19,
+    "skillIds": [
+      "crowbar-heavy-stone"
+    ],
+    "difficulty": 3,
+    "prompt": "Một người dùng một chiếc xà beng thẳng có chiều dài 1,2 m để bẩy một tảng đá nặng 1 200 N. Điểm tựa O trên mặt đất cách điểm tiếp xúc với tảng đá d1 = 0,2 m. Hỏi người đó cần tác dụng một lực F2 tối thiểu bằng bao nhiêu Niutơn vào đầu còn lại của xà beng để nhấc được tảng đá?",
+    "knowledge": [
+      "formula.lever.balance"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "600 N"
+        },
+        {
+          "id": "opt-b",
+          "label": "200 N"
+        },
+        {
+          "id": "opt-c",
+          "label": "240 N"
+        },
+        {
+          "id": "opt-d",
+          "label": "300 N"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tính cánh tay đòn của người d2: d2 = Chiều dài xà beng - d1 = 1,2 - 0,2 = 1,0 m."
+      },
+      {
+        "level": 2,
+        "text": "Áp dụng điều kiện cân bằng: F2 = (F1 x d1) / d2 = (1 200 x 0,2) / 1,0."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Trọng lượng đá $F_1 = 1\\,200\\text{ N}$; Chiều dài xà beng $L = 1,2\\text{ m}$; $d_1 = 0,2\\text{ m}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính cánh tay đòn d2",
+        "body": "$d_2 = L - d_1 = 1,2 - 0,2 = 1,0\\text{ m}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Tính lực bẩy tối thiểu F2",
+        "body": "$F_2 = \\frac{F_1 \\times d_1}{d_2} = \\frac{1\\,200 \\times 0,2}{1,0} = 240\\text{ N}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Lực tối thiểu cần tác dụng là **240 N** (lực nhẹ hơn 5 lần so với trọng lượng hòn đá)."
+      }
+    ],
+    "finalSolution": "Cánh tay đòn $d_2 = 1,2 - 0,2 = 1,0\\text{ m}$. Lực bẩy tối thiểu: $F_2 = \\frac{1\\,200 \\times 0,2}{1,0} = 240\\text{ N}$.",
+    "commonMistakes": [
+      {
+        "id": "divide-by-total-length-trap",
+        "message": "Nếu lấy 1 200 * 0,2 / 1,2 = 200 N là bạn đã nhầm d2 bằng chiều dài toàn bộ xà beng (d2 = 1,2 - 0,2 = 1,0 m)."
+      }
+    ]
+  }
+]

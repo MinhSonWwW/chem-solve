@@ -1,0 +1,75 @@
+{
+  "lessonId": "phy-g7-b07",
+  "nodeId": "phy-g7-b07-theory",
+  "title": "Lý thuyết: Phản xạ âm & Chống ô nhiễm tiếng ồn",
+  "subtitle": "Bài 14 SGK Khoa học tự nhiên 7 (Kết nối tri thức)",
+  "sgkBaiSo": 14,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Âm phản xạ & Tiếng vang",
+      "badgeColor": "cyan",
+      "title": "1. Sự phản xạ âm và tiếng vang",
+      "content": "Sóng âm khi lan truyền gặp mặt chắn của một vật cản thì bị dội ngược trở lại. Sóng âm dội lại đó gọi là âm phản xạ:",
+      "bulletPoints": [
+        "Âm dội lại khi gặp mặt chắn gọi là âm phản xạ.",
+        "Tiếng vang: Là âm phản xạ nghe được cách âm trực tiếp một khoảng thời gian ít nhất là 1/15 giây (xấp xỉ 0,067 s).",
+        "Nếu âm phản xạ đến tai sớm hơn 1/15 s, âm phản xạ sẽ hòa lẫn với âm trực tiếp làm âm nghe to hơn hoặc vang hơn chứ không phân biệt thành tiếng vang riêng biệt.",
+        "Khoảng cách tối thiểu để có tiếng vang trong không khí (v = 340 m/s): s_min = (v * t_min) / 2 = (340 * 1/15) / 2 ≈ 11,3 m."
+      ],
+      "callout": "Hiện tượng thực tế: Khi hét to trong hang động lớn hoặc trước vách núi cao, ta thường nghe thấy tiếng vang dội lại lặp lại tiếng hét của mình."
+    },
+    {
+      "id": "c2",
+      "badge": "Vật liệu cách âm",
+      "badgeColor": "amber",
+      "title": "2. Vật phản xạ âm tốt và vật phản xạ âm kém",
+      "content": "Khả năng phản xạ âm của một vật phụ thuộc vào độ cứng và bề mặt của vật đó:",
+      "bulletPoints": [
+        "Vật phản xạ âm tốt (hấp thụ âm kém): Là những vật cứng, có bề mặt nhẵn bóng. Ví dụ: Mặt gương, tường bê tông nhẵn, đá hoa cương, tấm kính, kim loại.",
+        "Vật phản xạ âm kém (hấp thụ âm tốt / cách âm tốt): Là những vật mềm, xốp, có bề mặt gồ ghề. Ví dụ: Rèm nhung dày, mút xốp gai, dạ, vải len bông, tường sần, tán cây xanh."
+      ],
+      "callout": "Ứng dụng kiến trúc: Trong rạp chiếu phim, phòng thu âm, người ta ốp tường bằng mút gai hoặc nhung dạ sần sùi để hấp thụ âm, triệt tiêu tiếng vang giúp âm thanh trong trẻo, không bị nhòe."
+    },
+    {
+      "id": "c3",
+      "badge": "Bảo vệ môi trường",
+      "badgeColor": "emerald",
+      "title": "3. Chống ô nhiễm tiếng ồn",
+      "content": "Tiếng ồn gây ô nhiễm là tiếng ồn to và kéo dài, gây ảnh hưởng xấu đến sức khỏe tinh thần, thính giác và sinh hoạt của con người:",
+      "bulletPoints": [
+        "Biện pháp 1 - Tác động vào nguồn âm (giảm độ to nguồn phát): Treo biển 'Cấm bóp còi' gần trường học, bệnh viện; lắp ống xả giảm thanh trên xe máy, ô tô.",
+        "Biện pháp 2 - Ngăn chặn đường truyền âm: Xây tường dày ngăn cách; đóng kín cửa sổ; lắp cửa kính cách âm 2 lớp.",
+        "Biện pháp 3 - Hướng âm phân tán đi đường khác: Trồng nhiều cây xanh dọc đường (tán lá làm phân tán sóng âm); làm trần nhà và tường gồ ghề."
+      ],
+      "callout": "Ý thức cộng đồng: Không bấm còi xe inh ỏi, không bật nhạc hoặc hát karaoke quá to về đêm là hành động văn minh bảo vệ không gian sống chung."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Vật liệu nào sau đây thuộc nhóm phản xạ âm kém (hấp thụ âm tốt), thường được dùng để cách âm trong phòng thu?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Tấm xốp mút gai mềm và rèm nhung dày",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Tấm gương kính phẳng và tường đá hoa cương",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Tấm kim loại nhẵn bóng",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Tường bê tông quét sơn láng mịn",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 7 Bài 14, các vật mềm, xốp, bề mặt gồ ghề (như rèm nhung, xốp mút) hấp thụ âm tốt và phản xạ âm kém nên được dùng làm vật liệu cách âm."
+  }
+}

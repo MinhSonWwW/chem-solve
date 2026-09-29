@@ -1,0 +1,400 @@
+[
+  {
+    "id": "phy-g6-b16-mcq-001",
+    "lessonId": "phy-g6-b16",
+    "sgkBaiSo": 51,
+    "skillIds": [
+      "energy-saving-habits"
+    ],
+    "difficulty": 1,
+    "prompt": "Hành động nào sau đây là hành vi gây **lãng phí năng lượng điện** nghiêm trọng trong gia đình?",
+    "knowledge": [
+      "energy.saving"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Bật tất cả các bóng đèn thắp sáng giữa ban ngày trong khi phòng có nhiều cửa sổ đón ánh nắng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Mở cửa sổ đón gió tự nhiên vào những buổi sáng mát mẻ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Sử dụng bình nước nóng năng lượng Mặt Trời"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tắt đèn phòng học khi đã học xong và đi ngủ"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hành vi sử dụng điện không cần thiết khi điều kiện tự nhiên đã đáp ứng đủ."
+      },
+      {
+        "level": 2,
+        "text": "Bật đèn giữa ban ngày khi trời nắng gắt là lãng phí điện năng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định hành vi lãng phí",
+        "body": "Hành động tiêu tốn điện năng mà không mang lại giá trị thiết thực là hành vi lãng phí."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân tích",
+        "body": "Bật đèn giữa trưa nắng trong khi phòng ngập tràn ánh sáng tự nhiên là gây lãng phí năng lượng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là phương án **B**."
+      }
+    ],
+    "finalSolution": "Bật đèn giữa ban ngày khi trời nắng là hành vi **lãng phí năng lượng**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b16-mcq-002",
+    "lessonId": "phy-g6-b16",
+    "sgkBaiSo": 51,
+    "skillIds": [
+      "air-conditioner-temp"
+    ],
+    "difficulty": 1,
+    "prompt": "Vào mùa hè nóng bức, các chuyên gia năng lượng khuyến nghị nên cài đặt nhiệt độ máy điều hòa không khí ở mức nào để vừa đủ mát, vừa tốt cho sức khỏe và tiết kiệm điện năng nhất?",
+    "knowledge": [
+      "energy.saving"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Từ 26 °C đến 28 °C (kết hợp quạt gió nhẹ)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Mức 20 °C và mở toang cửa sổ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Càng thấp càng tốt, mức 12 °C"
+        },
+        {
+          "id": "opt-d",
+          "label": "Từ 16 °C đến 18 °C"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhiệt độ điều hòa càng chênh lệch nhiều so với nhiệt độ ngoài trời thì máy nén càng tiêu tốn nhiều điện năng."
+      },
+      {
+        "level": 2,
+        "text": "Mức nhiệt độ hợp lý được khuyến nghị là từ 26 °C trở lên."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tiêu chuẩn tiết kiệm điện điều hòa",
+        "body": "Mỗi khi giảm 1 °C, máy điều hòa tiêu thụ thêm từ 7% đến 10% điện năng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Mức nhiệt độ tối ưu",
+        "body": "Cài đặt nhiệt độ từ 26 °C đến 28 °C giúp cơ thể không bị sốc nhiệt và tiết kiệm điện tối đa."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng: **Từ 26 °C đến 28 °C**."
+      }
+    ],
+    "finalSolution": "Nên cài đặt điều hòa ở mức **từ 26 °C đến 28 °C** kết hợp quạt nhẹ.",
+    "commonMistakes": [
+      {
+        "id": "too-cold",
+        "message": "Cài 16 °C khiến máy điều hòa chạy quá tải liên tục, tiêu tốn rất nhiều tiền điện và dễ gây viêm họng."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b16-mcq-003",
+    "lessonId": "phy-g6-b16",
+    "sgkBaiSo": 51,
+    "skillIds": [
+      "energy-efficiency-label"
+    ],
+    "difficulty": 2,
+    "prompt": "Hình ảnh Nhãn năng lượng ngôi sao (từ 1 sao đến 5 sao) thường được dán trên tủ lạnh, điều hòa, máy giặt có ý nghĩa gì?",
+    "knowledge": [
+      "energy.saving"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Đánh giá mức độ hiệu suất và khả năng tiết kiệm điện năng của thiết bị (càng nhiều sao càng tiết kiệm điện)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Số năm thiết bị có thể hoạt động mà không cần cắm điện"
+        },
+        {
+          "id": "opt-c",
+          "label": "Đánh giá độ dày của vỏ kim loại thiết bị"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chỉ số lượng người tối đa được phép sử dụng thiết bị"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhãn năng lượng do Bộ Công Thương cấp để người tiêu dùng nhận biết thiết bị tiết kiệm điện."
+      },
+      {
+        "level": 2,
+        "text": "Thiết bị đạt 5 sao là thiết bị có hiệu suất năng lượng cao nhất, tiết kiệm điện nhất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Ý nghĩa nhãn năng lượng",
+        "body": "Là căn cứ phân cấp hiệu suất sử dụng năng lượng của các thiết bị gia dụng trên thị trường."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc đọc",
+        "body": "Càng nhiều sao (tối đa 5 sao) thì thiết bị chuyển hóa năng lượng càng hiệu quả, lượng điện hao phí càng thấp."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là phương án **B**."
+      }
+    ],
+    "finalSolution": "Nhãn năng lượng đánh giá **hiệu suất và mức độ tiết kiệm điện (càng nhiều sao càng tiết kiệm điện)**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b16-multi-004",
+    "lessonId": "phy-g6-b16",
+    "sgkBaiSo": 51,
+    "skillIds": [
+      "energy-saving-actions"
+    ],
+    "difficulty": 2,
+    "prompt": "Những hành động nào sau đây thể hiện việc **sử dụng năng lượng tiết kiệm và hiệu quả** trong cuộc sống hàng ngày? (Chọn tất cả các đáp án đúng)",
+    "knowledge": [
+      "energy.saving"
+    ],
+    "answer": {
+      "kind": "mcq-multi",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Mở vòi nước chảy tự do trong suốt thời gian đánh răng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Rút phích cắm bình nóng lạnh hoặc cục sạc sau khi đã dùng xong"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mở cửa tủ lạnh thật lâu để đứng hóng gió mát"
+        },
+        {
+          "id": "opt-d",
+          "label": "Đi bộ hoặc đạp xe đạp đến trường khi nhà ở cự ly gần"
+        },
+        {
+          "id": "opt-e",
+          "label": "Tắt đèn và quạt khi bước ra khỏi phòng học"
+        }
+      ],
+      "correctIds": [
+        "opt-b",
+        "opt-d",
+        "opt-e"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hãy tìm những hành vi giúp giảm bớt lượng điện hoặc xăng tiêu thụ không cần thiết."
+      },
+      {
+        "level": 2,
+        "text": "Mở tủ lạnh lâu hay xả nước tràn lan là những hành vi gây lãng phí năng lượng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 5 hành vi",
+        "body": "Đánh giá từng hành động: tắt đèn quạt, rút phích cắm, đi xe đạp/đi bộ, mở tủ lạnh lâu, để nước chảy tự do."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tiêu chí tiết kiệm năng lượng",
+        "body": "Hành vi đúng: ngắt điện khi không dùng, cắt nguồn rò ở chế độ chờ, ưu tiên phương tiện không tiêu thụ nhiên liệu hóa thạch. Hành vi mở tủ lạnh hóng gió và xả tràn nước gây lãng phí năng lượng lớn."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận hành vi đúng",
+        "body": "Chọn 3 hành vi tiết kiệm: Tắt đèn và quạt, Rút phích cắm sạc, Đi bộ hoặc đạp xe đạp."
+      }
+    ],
+    "finalSolution": "**Tắt đèn quạt, rút sạc khi dùng xong và đi xe đạp** là các hành động tiết kiệm năng lượng thiết thực.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b16-tf-005",
+    "lessonId": "phy-g6-b16",
+    "sgkBaiSo": 51,
+    "skillIds": [
+      "energy-saving-principles"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy xác định tính Đúng hoặc Sai cho mỗi nhận định dưới đây về việc tiết kiệm năng lượng:",
+    "knowledge": [
+      "energy.saving"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "stmt-1",
+          "text": "Tiết kiệm năng lượng giúp bảo vệ các nguồn tài nguyên thiên nhiên của quốc gia.",
+          "correct": true
+        },
+        {
+          "id": "stmt-2",
+          "text": "Các thiết bị điện tử khi để ở chế độ chờ (standby) hoàn toàn không tiêu tốn một chút điện năng nào.",
+          "correct": false
+        },
+        {
+          "id": "stmt-3",
+          "text": "Sử dụng bóng đèn LED thay cho đèn sợi đốt giúp giảm bớt lượng điện năng hao phí.",
+          "correct": true
+        },
+        {
+          "id": "stmt-4",
+          "text": "Đi xe buýt hoặc tàu điện đô thị giúp giảm lượng khí thải carbon so với việc mỗi người tự đi một chiếc xe máy riêng.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thiết bị ở chế độ chờ vẫn có mạch điện tử ngầm tiêu thụ điện."
+      },
+      {
+        "level": 2,
+        "text": "Phương tiện giao thông công cộng chở được nhiều người cùng lúc, giảm phát thải trên đầu người."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đọc kĩ các nhận định",
+        "body": "Xem xét 4 nhận định về vai trò của tiết kiệm năng lượng, điện năng ở chế độ chờ, công nghệ LED và giao thông công cộng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu kiến thức thực tế",
+        "body": "Câu 1 đúng (bảo tồn tài nguyên). Câu 2 sai (thiết bị cắm điện ở chế độ standby vẫn tiêu thụ từ 1-5 W công suất ngầm). Câu 3 đúng (đèn LED chuyển hóa hầu hết điện thành ánh sáng, rất ít hao phí nhiệt). Câu 4 đúng (xe buýt/tàu điện giảm phát thải carbon tính trên mỗi hành khách)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng/Sai",
+        "body": "Nhận định 1: Đúng · Nhận định 2: Sai · Nhận định 3: Đúng · Nhận định 4: Đúng."
+      }
+    ],
+    "finalSolution": "Câu 1: Đúng · Câu 2: Sai · Câu 3: Đúng · Câu 4: Đúng.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b16-num-006",
+    "lessonId": "phy-g6-b16",
+    "sgkBaiSo": 51,
+    "skillIds": [
+      "energy-saving-calculation"
+    ],
+    "difficulty": 3,
+    "prompt": "Nhà bạn Nam thay thế 5 bóng đèn sợi đốt cũ (mỗi bóng tiêu thụ 60 W) bằng 5 bóng đèn LED tiết kiệm điện (mỗi bóng chỉ tiêu thụ 10 W). Hỏi khi bật đồng thời cả 5 bóng đèn thắp sáng, gia đình bạn Nam đã giảm được bao nhiêu oát (W) công suất điện tiêu thụ?",
+    "knowledge": [
+      "energy.saving"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 250,
+      "unit": "W",
+      "decimals": 0
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tính công suất tiết kiệm được của 1 bóng trước, sau đó nhân với 5 bóng."
+      },
+      {
+        "level": 2,
+        "text": "Mỗi bóng tiết kiệm: 60 W - 10 W = 50 W. Có tất cả 5 bóng đèn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Dữ kiện đề bài",
+        "body": "Số bóng đèn: $5$ bóng; Công suất đèn cũ: $60\\text{ W}$; Công suất đèn LED: $10\\text{ W}$."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cách 1: Tính trên từng bóng",
+        "body": "Mỗi bóng tiết kiệm được: $60 - 10 = 50\\text{ W}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tổng công suất tiết kiệm",
+        "body": "Tổng công suất giảm được: $50 \\times 5 = 250\\text{ W}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Công suất giảm được là **250 W**."
+      }
+    ],
+    "finalSolution": "Mỗi bóng giảm $60 - 10 = 50\\text{ W}$. Cả 5 bóng giảm: $50 \\times 5 = 250\\text{ W}$.",
+    "commonMistakes": [
+      {
+        "id": "only-one-lamp",
+        "message": "Bạn mới chỉ tính công suất tiết kiệm của 1 bóng đèn (50 W), đề bài yêu cầu cả 5 bóng đèn!",
+        "trapAnswers": [
+          "50",
+          "50 W"
+        ]
+      }
+    ]
+  }
+]

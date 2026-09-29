@@ -1,0 +1,512 @@
+[
+  {
+    "id": "phy-g7-b07-mcq-001",
+    "lessonId": "phy-g7-b07",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "sound-echo-condition"
+    ],
+    "difficulty": 1,
+    "prompt": "Ta có thể phân biệt và nghe rõ được 'tiếng vang' khi âm phản xạ dội lại từ mặt chắn đến tai:",
+    "knowledge": [
+      "sound.reflection_echo"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Có tần số lớn hơn 20 000 Hz"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cùng lúc chính xác với âm trực tiếp"
+        },
+        {
+          "id": "opt-c",
+          "label": "Nhanh hơn âm trực tiếp một khoảng thời gian 1 giây"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chậm hơn âm trực tiếp một khoảng thời gian ít nhất là 1/15 giây"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bộ não con người cần một khoảng thời gian tối thiểu để phân biệt được hai âm thanh tách rời nhau."
+      },
+      {
+        "level": 2,
+        "text": "Theo SGK KHTN 7 Bài 14, âm phản xạ phải đến sau âm trực tiếp ít nhất 1/15 giây thì mới tạo thành tiếng vang."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Điều kiện nghe tiếng vang",
+        "body": "Xác định khoảng thời gian tối thiểu giữa âm trực tiếp và âm phản xạ để tai nhận biết tiếng vang."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 7 (Bài 14), ta nghe được tiếng vang khi âm phản xạ đến tai chậm hơn âm trực tiếp một khoảng thời gian ít nhất là 1/15 giây."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Điều kiện đúng là **Chậm hơn âm trực tiếp ít nhất là 1/15 giây**."
+      }
+    ],
+    "finalSolution": "Ta nghe được tiếng vang khi âm phản xạ đến tai **chậm hơn âm trực tiếp ít nhất 1/15 giây**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b07-mcq-002",
+    "lessonId": "phy-g7-b07",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "sound-reflecting-materials"
+    ],
+    "difficulty": 1,
+    "prompt": "Nhóm vật liệu nào sau đây thuộc loại phản xạ âm tốt (hấp thụ âm kém)?",
+    "knowledge": [
+      "sound.reflection_echo"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Rèm nhung dày, đệm mút xốp, thảm len"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tấm cao su xốp, vách gỗ dán sần sùi, áo bông"
+        },
+        {
+          "id": "opt-c",
+          "label": "Đất xốp tơi, tán lá cây xanh, bông gòn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tấm gương phẳng, mặt đá hoa cương, tường bê tông nhẵn"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Vật phản xạ âm tốt thường có đặc tính cứng và bề mặt nhẵn bóng."
+      },
+      {
+        "level": 2,
+        "text": "Gương phẳng, đá hoa cương, bê tông nhẵn là những bề mặt cứng và nhẵn nên phản xạ âm rất tốt."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận biết vật phản xạ âm tốt",
+        "body": "Tìm nhóm vật liệu có độ cứng cao và bề mặt phẳng nhẵn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Vật phản xạ âm tốt là những vật cứng, có bề mặt nhẵn (như kính, gương, đá hoa cương, tường bê tông nhẵn, kim loại)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nhóm vật liệu phản xạ âm tốt là **Gương phẳng, đá hoa cương, tường bê tông nhẵn**."
+      }
+    ],
+    "finalSolution": "Các vật cứng và có bề mặt phẳng nhẵn (như **gương, đá hoa cương, bê tông**) phản xạ âm tốt.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b07-mcq-003",
+    "lessonId": "phy-g7-b07",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "sound-absorbing-materials"
+    ],
+    "difficulty": 1,
+    "prompt": "Để cách âm cho một phòng thu âm hoặc phòng karaoke, người ta thường ốp tường bằng vật liệu nào sau đây?",
+    "knowledge": [
+      "sound.reflection_echo"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Gạch men bóng và đá hoa cương cứng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tấm tôn inox phẳng sáng loáng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mút xốp gai hình kim tự tháp hoặc bọc rèm nhung dạ dày"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tấm gương kính tráng thủy tinh"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Muốn cách âm tốt và giảm tiếng vang, cần vật liệu hấp thụ âm (phản xạ âm kém)."
+      },
+      {
+        "level": 2,
+        "text": "Vật liệu mềm, xốp, có bề mặt gồ ghề (như mút xốp gai, rèm nhung) hấp thụ âm tốt nhất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Vật liệu cách âm phòng thu",
+        "body": "Xác định loại vật liệu hấp thụ âm tốt để giảm tiếng ồn và tiếng vang."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Những vật mềm, xốp, có bề mặt gồ ghề hấp thụ âm tốt (phản xạ âm kém) nên được sử dụng làm vật liệu tiêu âm, cách âm trong phòng thu và phòng hát."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Vật liệu thích hợp là **Mút xốp gai hoặc rèm nhung dạ dày**."
+      }
+    ],
+    "finalSolution": "Dùng **mút xốp gai hoặc rèm nhung** vì chúng mềm, xốp, hấp thụ âm tốt.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b07-num-004",
+    "lessonId": "phy-g7-b07",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "sound-echo-distance-cliff"
+    ],
+    "difficulty": 2,
+    "prompt": "Một người đứng trước một vách đá lớn hét to một tiếng, sau 1,2 giây người đó nghe thấy tiếng vang dội lại. Biết tốc độ truyền âm trong không khí là 340 m/s. Khoảng cách từ người đó đến vách đá là bao nhiêu mét?",
+    "knowledge": [
+      "sound.reflection_echo",
+      "speed.formula"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 204,
+      "unit": "m",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trong thời gian 1,2 giây, âm thanh đã đi cả lượt đi từ người đến vách đá và lượt về từ vách đá tới tai người."
+      },
+      {
+        "level": 2,
+        "text": "Quãng đường âm đi 2 lượt: 2s = v * t = 340 * 1,2 = 408 m. Vậy khoảng cách s = 408 / 2."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Thời gian nghe tiếng vang $t = 1,2\\text{ s}$; Tốc độ âm trong không khí $v = 340\\text{ m/s}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Lập luận đường đi của âm",
+        "body": "Âm thanh truyền từ người đến vách đá rồi dội ngược lại tai người, do đó âm đã đi quãng đường gấp đôi khoảng cách: $2s = v \\times t \\Rightarrow s = \\frac{v \\times t}{2}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$s = \\frac{340 \\times 1,2}{2} = \\frac{408}{2} = 204\\text{ m}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khoảng cách từ người đến vách đá là **204 m**."
+      }
+    ],
+    "finalSolution": "Khoảng cách đến vách đá: $s = \\frac{v \\times t}{2} = \\frac{340 \\times 1,2}{2} = 204\\text{ m}$.",
+    "commonMistakes": [
+      {
+        "id": "forgot-to-divide-by-2",
+        "message": "Bạn đã quên chia 2. Thời gian 1,2 s là cả đi lẫn về, khoảng cách s chỉ bằng một nửa tổng quãng đường âm đi.",
+        "trapAnswers": [
+          "408",
+          "408 m"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b07-num-005",
+    "lessonId": "phy-g7-b07",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "sound-sonar-depth-measurement"
+    ],
+    "difficulty": 2,
+    "prompt": "Một tàu nghiên cứu hải dương phát chùm sóng siêu âm thẳng đứng xuống đáy biển và thu nhận được tín hiệu siêu âm phản xạ trở lại sau 0,8 giây. Biết tốc độ truyền sóng siêu âm trong nước biển là 1 500 m/s. Độ sâu của đáy biển tại vị trí con tàu là bao nhiêu mét?",
+    "knowledge": [
+      "sound.reflection_echo",
+      "speed.formula"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 600,
+      "unit": "m",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sóng siêu âm đi từ tàu xuống đáy biển rồi dội ngược lên tàu (quãng đường đi 2 lần độ sâu h)."
+      },
+      {
+        "level": 2,
+        "text": "Tổng quãng đường 2h = v * t = 1 500 * 0,8 = 1 200 m. Độ sâu h = 1 200 / 2."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Thời gian nhận phản xạ $t = 0,8\\text{ s}$; Tốc độ siêu âm trong nước biển $v = 1\\,500\\text{ m/s}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính độ sâu",
+        "body": "Độ sâu đáy biển: $h = \\frac{v \\times t}{2}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$h = \\frac{1\\,500 \\times 0,8}{2} = \\frac{1\\,200}{2} = 600\\text{ m}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Độ sâu của đáy biển tại vị trí đó là **600 m**."
+      }
+    ],
+    "finalSolution": "Độ sâu đáy biển: $h = \\frac{1500 \\times 0,8}{2} = 600\\text{ m}$.",
+    "commonMistakes": [
+      {
+        "id": "forgot-sonar-division",
+        "message": "Bạn đã không chia 2, lấy 1500 x 0,8 = 1200 m (đây là tổng quãng đường cả đi và về của sóng).",
+        "trapAnswers": [
+          "1200",
+          "1200 m"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b07-mcq-006",
+    "lessonId": "phy-g7-b07",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "sound-noise-reduction-methods"
+    ],
+    "difficulty": 2,
+    "prompt": "Một ngôi nhà nằm sát trục đường quốc lộ có nhiều xe tải chạy qua gây ồn ào. Biện pháp nào sau đây thuộc nhóm 'ngăn chặn đường truyền âm' để giảm tiếng ồn cho ngôi nhà?",
+    "knowledge": [
+      "sound.reflection_echo"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Lắp đặt cửa kính cách âm 2 lớp và đóng kín cửa khi xe qua"
+        },
+        {
+          "id": "opt-b",
+          "label": "Yêu cầu các bác tài xế tắt máy dắt bộ qua trước cửa nhà"
+        },
+        {
+          "id": "opt-c",
+          "label": "Bật nhạc thật to trong nhà để át tiếng xe tải"
+        },
+        {
+          "id": "opt-d",
+          "label": "Sơn lại màu sắc của ngôi nhà cho tươi sáng hơn"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ngăn chặn đường truyền âm là đặt vật cản hấp thụ hoặc phản xạ âm trên đường âm truyền từ ngoài đường vào trong phòng."
+      },
+      {
+        "level": 2,
+        "text": "Cửa kính cách âm hai lớp có lớp chân không hoặc khí trơ ở giữa cản trở hiệu quả sóng âm truyền vào nhà."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân loại biện pháp chống ồn",
+        "body": "Xác định biện pháp thuộc nhóm ngăn chặn đường truyền của sóng âm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Để ngăn chặn đường truyền âm, ta sử dụng các vật liệu cách âm như tường dày, cửa kính cách âm hai lớp, rèm cửa dày..."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Biện pháp đúng là **Lắp đặt cửa kính cách âm 2 lớp và đóng kín cửa**."
+      }
+    ],
+    "finalSolution": "Lắp **cửa kính cách âm 2 lớp** là biện pháp ngăn chặn đường truyền âm hiệu quả.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b07-tf-007",
+    "lessonId": "phy-g7-b07",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "sound-reflection-noise-tf"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai của các khẳng định sau về phản xạ âm và ô nhiễm tiếng ồn:",
+    "knowledge": [
+      "sound.reflection_echo"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Trồng nhiều cây xanh ven đường giao thông giúp giảm tiếng ồn vì tán lá cây có tác dụng phân tán và hấp thụ sóng âm.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Mọi âm phản xạ dội lại từ tường đều được gọi là tiếng vang, bất kể thời gian dội lại nhanh hay chậm.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Tiếng ồn kéo dài trên 85 dB có thể gây hại cho hệ thần kinh và làm suy giảm thính lực của con người.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tiếng vang chỉ được công nhận khi âm phản xạ đến sau âm trực tiếp ít nhất 1/15 giây (mệnh đề 2 sai)."
+      },
+      {
+        "level": 2,
+        "text": "Cây xanh phân tán âm rất tốt và tiếng ồn lớn kéo dài gây hại cho sức khỏe."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 3 mệnh đề",
+        "body": "Đánh giá tính đúng/sai của các nhận định về tiếng vang và biện pháp chống ồn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu kiến thức SGK",
+        "body": "- Mệnh đề 1: ĐÚNG. Tán lá cây làm tán xạ và hấp thụ sóng âm, giúp giảm tiếng ồn ven đường.\\n- Mệnh đề 2: SAI. Chỉ khi âm phản xạ đến tai sau âm trực tiếp ít nhất 1/15 s mới tạo thành tiếng vang.\\n- Mệnh đề 3: ĐÚNG. Tiếng ồn to và kéo dài gây ô nhiễm tiếng ồn, suy giảm thính giác và căng thẳng thần kinh."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự đáp án là **Đúng - Sai - Đúng**."
+      }
+    ],
+    "finalSolution": "Mệnh đề 1: **Đúng**; Mệnh đề 2: **Sai**; Mệnh đề 3: **Đúng**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b07-mcq-008",
+    "lessonId": "phy-g7-b07",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "sound-hall-acoustics"
+    ],
+    "difficulty": 3,
+    "prompt": "Tại sao trong các nhà hát lớn, phòng hòa nhạc hay rạp chiếu phim, người ta thường thiết kế các bức tường có bề mặt gồ ghề (sần sùi) và treo các tấm rèm nhung dày?",
+    "knowledge": [
+      "sound.reflection_echo"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Để tăng cường phản xạ âm làm cho âm thanh vang to gấp nhiều lần"
+        },
+        {
+          "id": "opt-b",
+          "label": "Chỉ nhằm mục đích trang trí cho căn phòng trông đẹp mắt hơn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Để giảm bớt sự phản xạ âm, triệt tiêu tiếng vang giúp âm thanh nghe rõ ràng và trung thực"
+        },
+        {
+          "id": "opt-d",
+          "label": "Để ngăn không khí lưu thông làm giảm nhiệt độ phòng"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nếu âm phản xạ dội đi dội lại nhiều lần trong phòng kín, người nghe sẽ cảm thấy âm thanh bị nhòe, vang và chói tai."
+      },
+      {
+        "level": 2,
+        "text": "Tường sần và rèm nhung hấp thụ âm phản xạ, tránh hiện tượng giao thoa tiếng vang gây nhòe tiếng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Ứng dụng âm học kiến trúc",
+        "body": "Giải thích thiết kế tường sần và rèm nhung trong phòng hòa nhạc, rạp chiếu phim."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Bản chất vật lí",
+        "body": "Trong phòng kín lớn, âm phản xạ từ các bức tường phẳng nhẵn sẽ dội lại tai người nghe nhiều lần gây tiếng vang kéo dài làm nhòe âm thanh. Tường sần và rèm nhung giúp hấp thụ âm phản xạ, triệt tiêu tiếng vang không mong muốn giúp âm thanh rõ ràng, trung thực."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Mục đích là **Để giảm bớt sự phản xạ âm, triệt tiêu tiếng vang giúp âm thanh nghe rõ ràng**."
+      }
+    ],
+    "finalSolution": "Thiết kế tường sần và rèm nhung để **hấp thụ âm, giảm phản xạ âm và triệt tiêu tiếng vang**.",
+    "commonMistakes": []
+  }
+]

@@ -1,0 +1,405 @@
+[
+  {
+    "id": "phy-g6-b01-mcq-001",
+    "lessonId": "phy-g6-b01",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "length-unit-si"
+    ],
+    "difficulty": 1,
+    "prompt": "Đơn vị đo chiều dài chuẩn trong Hệ đơn vị đo lường quốc tế (hệ SI) là gì?",
+    "knowledge": [
+      "unit.length.si"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Milimét (mm)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Kilômét (km)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mét (m)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Xentimét (cm)"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hãy nhớ lại đơn vị gốc cơ bản dùng để quy đổi ra cm, dm, km."
+      },
+      {
+        "level": 2,
+        "text": "Trong hệ SI và hệ đo lường hợp pháp của Việt Nam, mét (kí hiệu: m) là đơn vị đo chiều dài cơ bản."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận dạng câu hỏi",
+        "body": "Câu hỏi kiểm tra kiến thức về đơn vị đo chiều dài chuẩn trong hệ đo lường quốc tế SI."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 6 (Bài 5: Đo chiều dài), đơn vị đo chiều dài trong hệ SI là mét (kí hiệu: m)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Mét (m)**."
+      }
+    ],
+    "finalSolution": "Đơn vị đo chiều dài chuẩn trong hệ SI là **mét (kí hiệu: m)**.",
+    "commonMistakes": [
+      {
+        "id": "confused-cm",
+        "message": "Nhiều bạn hay nhầm xentimét (cm) là đơn vị chuẩn vì thước kẻ học sinh thường chia theo cm, nhưng đơn vị chuẩn quốc tế là mét (m)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b01-mcq-002",
+    "lessonId": "phy-g6-b01",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "length-ghd-dcnn"
+    ],
+    "difficulty": 1,
+    "prompt": "Trên một chiếc thước thẳng có ghi số lớn nhất là 30 cm và khoảng cách giữa hai vạch chia liên tiếp là 1 mm. Giới hạn đo (GHĐ) và độ chia nhỏ nhất (ĐCNN) của chiếc thước này lần lượt là:",
+    "knowledge": [
+      "unit.length.si"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "GHĐ = 30 cm; ĐCNN = 1 mm"
+        },
+        {
+          "id": "opt-b",
+          "label": "GHĐ = 0 cm; ĐCNN = 1 mm"
+        },
+        {
+          "id": "opt-c",
+          "label": "GHĐ = 30 cm; ĐCNN = 1 cm"
+        },
+        {
+          "id": "opt-d",
+          "label": "GHĐ = 1 mm; ĐCNN = 30 cm"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "GHĐ là giá trị lớn nhất ghi trên thước, ĐCNN là khoảng cách giữa 2 vạch chia kề nhau."
+      },
+      {
+        "level": 2,
+        "text": "Số lớn nhất ghi trên thước là 30 cm (GHĐ). Khoảng cách giữa hai vạch chia liên tiếp là 1 mm (ĐCNN)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đọc dữ kiện đề bài",
+        "body": "Đề bài cho biết số lớn nhất ghi trên thước là 30 cm, khoảng cách giữa 2 vạch chia liên tiếp là 1 mm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Định nghĩa GHĐ và ĐCNN",
+        "body": "GHĐ là chiều dài lớn nhất ghi trên thước (30 cm). ĐCNN là chiều dài giữa hai vạch chia liên tiếp (1 mm)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Chiếc thước có **GHĐ = 30 cm** và **ĐCNN = 1 mm**."
+      }
+    ],
+    "finalSolution": "Giới hạn đo là **30 cm**, độ chia nhỏ nhất là **1 mm**.",
+    "commonMistakes": [
+      {
+        "id": "swapped-ghd-dcnn",
+        "message": "Chú ý không nhầm lẫn giữa GHĐ (chiều dài tối đa đo được) và ĐCNN (khoảng cách 2 vạch chia kề nhau)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b01-mcq-003",
+    "lessonId": "phy-g6-b01",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "length-tool-selection"
+    ],
+    "difficulty": 1,
+    "prompt": "Để đo chu vi của thân một cây cổ thụ trong sân trường, dụng cụ đo nào sau đây là thích hợp và thuận tiện nhất?",
+    "knowledge": [
+      "unit.length.si"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Thước kẹp kim loại"
+        },
+        {
+          "id": "opt-b",
+          "label": "Thước kẻ học sinh dài 20 cm"
+        },
+        {
+          "id": "opt-c",
+          "label": "Thước thẳng gỗ dài 1 m"
+        },
+        {
+          "id": "opt-d",
+          "label": "Thước dây (thước cuộn mềm)"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thân cây có dạng hình trụ tròn, cần dùng loại thước có thể uốn cong ôm sát bề mặt thân cây."
+      },
+      {
+        "level": 2,
+        "text": "Thước dây có tính mềm dẻo, dễ dàng uốn vòng quanh thân cây để đo chu vi chính xác."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích đối tượng đo",
+        "body": "Thân cây cổ thụ có kích thước lớn và bề mặt cong tròn hình trụ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Lựa chọn thước đo",
+        "body": "Các loại thước thẳng hay thước kẹp cứng không thể uốn quanh thân cây. Cần dùng thước dây mềm để ôm sát chu vi thân cây."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Dụng cụ thích hợp nhất là **Thước dây (thước cuộn mềm)**."
+      }
+    ],
+    "finalSolution": "Dùng **thước dây** vì thước có độ mềm dẻo, dễ uốn vòng quanh thân cây để đo chu vi.",
+    "commonMistakes": [
+      {
+        "id": "chose-rigid-ruler",
+        "message": "Thước thẳng bằng gỗ hay nhựa cứng không thể uốn cong theo bề mặt tròn của thân cây."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b01-mcq-004",
+    "lessonId": "phy-g6-b01",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "length-measurement-steps"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi dùng thước thẳng để đo chiều dài của chiếc bút chì, thao tác nào sau đây là **đúng kĩ thuật**?",
+    "knowledge": [
+      "unit.length.si"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Đặt đuôi bút chì tại mép ngoài cùng của thước mà không cần căn vạch số 0"
+        },
+        {
+          "id": "opt-b",
+          "label": "Đặt thước chéo so với chiều dài chiếc bút chì"
+        },
+        {
+          "id": "opt-c",
+          "label": "Đặt vạch số 0 của thước ngang bằng với một đầu của bút chì, đặt thước dọc theo bút"
+        },
+        {
+          "id": "opt-d",
+          "label": "Đặt mắt nhìn nghiêng sang bên trái hoặc bên phải đầu kia của bút chì"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Xem lại bước 2 và bước 3 trong quy trình đo chiều dài ở SGK KHTN 6."
+      },
+      {
+        "level": 2,
+        "text": "Thước phải đặt dọc theo vật, vạch số 0 trùng một đầu, và mắt phải nhìn vuông góc với cạnh thước."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định quy tắc đo",
+        "body": "Quy tắc đo chiều dài đòi hỏi đặt thước dọc theo vật và căn vạch số 0 chuẩn xác."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy trình SGK",
+        "body": "Bước 2 trong quy trình nêu rõ: Đặt thước dọc theo chiều dài vật, vạch số 0 của thước ngang bằng với một đầu của vật."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thao tác đúng là **Đặt vạch số 0 của thước ngang bằng với một đầu của bút chì, đặt thước dọc theo bút**."
+      }
+    ],
+    "finalSolution": "Thao tác đúng: **Đặt thước dọc theo chiều dài vật, vạch số 0 ngang bằng với một đầu của vật** và mắt nhìn vuông góc.",
+    "commonMistakes": [
+      {
+        "id": "used-edge-instead-of-zero",
+        "message": "Nhiều thước có mép ngoài cách vạch số 0 một khoảng trống, đặt mép thước trùng đầu vật sẽ làm kết quả đo bị sai."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b01-calc-005",
+    "lessonId": "phy-g6-b01",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "length-read-result"
+    ],
+    "difficulty": 2,
+    "prompt": "Một bạn học sinh dùng thước kẻ có ĐCNN là 0,1 cm để đo chiều dài một chiếc bút dạ. Đầu kia của bút dạ nằm gần nhất với vạch số 14,3 cm. Kết quả đo phải ghi theo đúng quy ước là bao nhiêu cm?",
+    "knowledge": [
+      "unit.length.si"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 14.3,
+      "unit": "cm",
+      "decimals": 1
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Kết quả đo được ghi theo vạch chia gần nhất và theo ĐCNN của thước (ở đây ĐCNN có 1 chữ số thập phân)."
+      },
+      {
+        "level": 2,
+        "text": "Đầu bút nằm gần vạch 14,3 cm nhất, do đó kết quả ghi là 14,3 cm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định ĐCNN và vị trí đọc",
+        "body": "Thước có ĐCNN là 0,1 cm (chia tới hàng phần mười xentimét). Vạch gần nhất là 14,3 cm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc ghi kết quả",
+        "body": "Đọc và ghi kết quả đo theo vạch chia gần nhất với đầu kia của vật, chữ số cuối cùng tương ứng với ĐCNN của thước."
+      },
+      {
+        "kind": "compute",
+        "title": "Ghi kết quả",
+        "body": "Đầu bút ở vạch 14,3 cm $\\rightarrow$ kết quả là 14,3 cm."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Kết quả đo là **14,3 cm**."
+      }
+    ],
+    "finalSolution": "Chiều dài đo được là **14,3 cm** (ghi đúng theo ĐCNN 0,1 cm của thước).",
+    "commonMistakes": [
+      {
+        "id": "wrote-14",
+        "message": "Không được làm tròn thành 14 cm vì thước có độ chia nhỏ nhất là 0,1 cm, phải ghi rõ 14,3 cm."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b01-mcq-006",
+    "lessonId": "phy-g6-b01",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "length-unit-convert"
+    ],
+    "difficulty": 3,
+    "prompt": "Một cây cầu dài 1,25 km. Chiều dài cây cầu này khi đổi ra đơn vị mét (m) và đêximét (dm) lần lượt là:",
+    "knowledge": [
+      "unit.length.si"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "1 250 m và 1 250 dm"
+        },
+        {
+          "id": "opt-b",
+          "label": "1 250 m và 12 500 dm"
+        },
+        {
+          "id": "opt-c",
+          "label": "125 m và 1 250 dm"
+        },
+        {
+          "id": "opt-d",
+          "label": "12 500 m và 125 000 dm"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhớ lại: 1 km = 1 000 m và 1 m = 10 dm."
+      },
+      {
+        "level": 2,
+        "text": "1,25 km = 1,25 × 1 000 = 1 250 m. Sau đó lấy 1 250 × 10 để ra số dm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu chuyển đổi",
+        "body": "Đổi 1,25 km sang mét (m) và sang đêximét (dm)."
+      },
+      {
+        "kind": "compute",
+        "title": "Thực hiện phép đổi",
+        "body": "Ta có: $1\\text{ km} = 1\\,000\\text{ m} \\Rightarrow 1,25\\text{ km} = 1,25 \\times 1\\,000 = 1\\,250\\text{ m}$. Tiếp tục đổi: $1\\text{ m} = 10\\text{ dm} \\Rightarrow 1\\,250\\text{ m} = 1\\,250 \\times 10 = 12\\,500\\text{ dm}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Kết quả lần lượt là **1 250 m** và **12 500 dm**."
+      }
+    ],
+    "finalSolution": "1,25 km = **1 250 m** = **12 500 dm**.",
+    "commonMistakes": [
+      {
+        "id": "multiplied-by-100",
+        "message": "Chú ý: 1 km = 1 000 m (nhân với 1 000 chứ không phải nhân 100)."
+      }
+    ]
+  }
+]

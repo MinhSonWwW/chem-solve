@@ -1,0 +1,85 @@
+{
+  "lessonId": "phy-g8-b13",
+  "nodeId": "phy-g8-b13-theory",
+  "title": "Lý thuyết: Kĩ năng thực hành đo cường độ dòng điện và hiệu điện thế",
+  "subtitle": "Bài 25 SGK Khoa học tự nhiên 8 (Kết nối tri thức)",
+  "sgkBaiSo": 25,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Chuẩn bị & An toàn",
+      "badgeColor": "cyan",
+      "title": "1. Dụng cụ thí nghiệm và nguyên tắc an toàn",
+      "content": "Để thực hành đo I và U thành công, việc chuẩn bị và tuân thủ an toàn là bước then chốt:",
+      "bulletPoints": [
+        "Dụng cụ cần chuẩn bị: Nguồn điện (hộp 2 đến 4 pin 1,5V), bóng đèn pin gắn trên đế, công tắc (khóa K), ampe kế một chiều (DC), vôn kế một chiều (DC) và các đoạn dây nối có giắc cắm.",
+        "Lựa chọn thang đo: Ước lượng giá trị cần đo để chọn thang đo có giới hạn đo (GHĐ) lớn hơn giá trị ước lượng và độ chia nhỏ nhất (ĐCNN) đủ nhỏ để giảm thiểu sai số.",
+        "Chỉnh điểm 0: Trước khi mắc vào mạch, bắt buộc phải quan sát kim chỉ thị; nếu kim lệch khỏi vạch số 0 thì dùng tuốc-nơ-vít xoay nhẹ núm điều chỉnh cơ học để đưa kim về đúng vạch số 0.",
+        "Quy tắc vàng an toàn: Khóa K LUÔN PHẢI MỞ (ngắt điện) trong toàn bộ quá trình cắm dây nối thiết bị. Chỉ được phép đóng khóa K sau khi đã kiểm tra toàn bộ mạch điện đúng sơ đồ."
+      ],
+      "callout": "Ghi nhớ trước khi cắm dây: Luôn mở công tắc K để tránh chập mạch hoặc phóng tia lửa điện bất ngờ."
+    },
+    {
+      "id": "c2",
+      "badge": "Quy trình đo I & U",
+      "badgeColor": "amber",
+      "title": "2. Các bước tiến hành thí nghiệm chuẩn",
+      "content": "Quy trình lắp ráp và tiến hành đo đạc gồm các bước chặt chẽ:",
+      "bulletPoints": [
+        "Bước 1: Chỉnh kim của ampe kế và vôn kế về đúng vạch số 0.",
+        "Bước 2: Lắp ráp mạch điện theo sơ đồ: Nối cực dương (+) nguồn pin qua khóa K mở, đến chốt (+) ampe kế, chốt (-) ampe kế nối vào một đầu bóng đèn, đầu kia bóng đèn nối về cực (-) nguồn pin (ampe kế mắc nối tiếp).",
+        "Bước 3: Mắc vôn kế song song với hai đầu bóng đèn: Chốt (+) vôn kế nối với đầu đèn nối về cực dương nguồn, chốt (-) vôn kế nối với đầu đèn nối về cực âm nguồn.",
+        "Bước 4: Kiểm tra lại toàn mạch, đóng khóa K. Quan sát độ sáng của bóng đèn.",
+        "Bước 5: Đợi kim chỉ thị đứng yên, đặt mắt nhìn vuông góc với mặt bảng chia độ để đọc và ghi chép số chỉ I (ampe) và U (vôn).",
+        "Bước 6: Ngắt khóa K, tháo dây và sắp xếp dụng cụ gọn gàng vào hộp thí nghiệm."
+      ],
+      "callout": "Tư thế đọc chỉ số: Mắt phải nhìn vuông góc với mặt kính của dụng cụ đo để tránh sai số thị giác (sai số thị sai)."
+    },
+    {
+      "id": "c3",
+      "badge": "Xử lý sự cố",
+      "badgeColor": "emerald",
+      "title": "3. Nhận diện và xử lý sự cố thường gặp trong thực hành",
+      "content": "Các hiện tượng bất thường khi đóng khóa K và cách khắc phục chuẩn khoa học:",
+      "bulletPoints": [
+        "Sự cố 1: Kim dụng cụ đo quay ngược về bên trái vạch số 0.",
+        "→ Nguyên nhân: Mắc ngược cực tính (chốt dương và chốt âm bị đảo ngược).",
+        "→ Cách xử lý: Ngắt khóa K ngay lập tức, đổi chỗ hai dây cắm ở hai chốt (+) và (-) của dụng cụ.",
+        "Sự cố 2: Kim quay kịch kim vượt quá giới hạn đo lớn nhất (GHĐ).",
+        "→ Nguyên nhân: Thang đo chọn quá nhỏ so với dòng điện/điện áp thực tế.",
+        "→ Cách xử lý: Ngắt khóa K ngay, chuyển sang cắm chốt có thang đo lớn hơn.",
+        "Sự cố 3: Đóng khóa K nhưng đèn không sáng, kim các dụng cụ đo vẫn ở vạch 0.",
+        "→ Nguyên nhân: Mạch bị hở (tiếp xúc cắm lỏng, dây đứt ngầm bên trong, hoặc bóng đèn bị đứt dây tóc).",
+        "→ Cách xử lý: Ngắt khóa K, kiểm tra siết chặt từng đầu cắm và thay thử bóng đèn khác."
+      ],
+      "callout": "Phản xạ nhanh: Khi thấy kim quay kịch kim hoặc kim lệch ngược, việc đầu tiên là ngắt ngay khóa K để bảo vệ khung dây của đồng hồ đo."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi vừa đóng khóa K, ta thấy kim của ampe kế bị lệch ngược về phía bên trái vạch số 0. Thao tác xử lý đúng và an toàn nhất là gì?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Ngắt ngay khóa K, sau đó hoán đổi vị trí hai đầu dây cắm ở hai chốt (+) và (-) của ampe kế",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Cứ để nguyên khóa K đóng và lấy tay gạt kim chỉ thị sang bên phải",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Tăng thêm số viên pin vào nguồn để đẩy kim quay thuận",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Lắc mạnh ampe kế cho kim nảy về vạch 0",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 8 Bài 25: Kim lệch ngược chứng tỏ đã mắc ngược chốt dương và âm. Cần ngắt khóa K ngay để tránh gãy kim cong trục, rồi đổi ngược hai dây cắm ở chốt (+) và (-)."
+  }
+}

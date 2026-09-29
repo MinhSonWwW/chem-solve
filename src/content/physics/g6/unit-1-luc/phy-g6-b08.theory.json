@@ -1,0 +1,73 @@
+{
+  "lessonId": "phy-g6-b08",
+  "nodeId": "phy-g6-b08-theory",
+  "title": "Lý thuyết: Trọng lực, lực hấp dẫn",
+  "subtitle": "Bài 43 SGK Khoa học tự nhiên 6 (Kết nối tri thức)",
+  "sgkBaiSo": 43,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm cốt lõi",
+      "badgeColor": "cyan",
+      "title": "1. Lực hấp dẫn và trọng lực",
+      "content": "Mọi vật có khối lượng trong vũ trụ đều hút nhau với một lực gọi là lực hấp dẫn. Lực hút của Trái Đất tác dụng lên mọi vật trên bề mặt hoặc xung quanh nó được gọi là trọng lực.",
+      "bulletPoints": [
+        "Trọng lực là lực không tiếp xúc tác dụng lên mọi vật thể gần bề mặt Trái Đất.",
+        "Trọng lực giữ cho bầu khí quyển bao quanh Trái Đất, nước sông suối chảy xuôi dòng và con người đứng vững trên mặt đất mà không bị bay lơ lửng vào vũ trụ."
+      ],
+      "callout": "Hiện tượng quả táo chín rụng từ trên cành rơi thẳng xuống đất là do tác dụng của trọng lực."
+    },
+    {
+      "id": "c2",
+      "badge": "Đặc trưng của trọng lực",
+      "badgeColor": "amber",
+      "title": "2. Phương và chiều của trọng lực",
+      "content": "Trọng lực tác dụng lên một vật có đặc điểm phương và chiều rất đặc biệt:",
+      "bulletPoints": [
+        "Phương của trọng lực: Có phương thẳng đứng (trùng với phương của dây dọi mà thợ xây thường dùng).",
+        "Chiều của trọng lực: Có chiều từ trên xuống dưới (hướng về phía tâm của Trái Đất)."
+      ],
+      "callout": "Ứng dụng: Người thợ xây dùng dây dọi để căn chỉnh cho bức tường được xây thẳng đứng hoàn hảo theo phương của trọng lực."
+    },
+    {
+      "id": "c3",
+      "badge": "Công thức tính toán",
+      "badgeColor": "emerald",
+      "title": "3. Trọng lượng và mối liên hệ với khối lượng",
+      "content": "Độ lớn của trọng lực tác dụng lên một vật được gọi là trọng lượng của vật đó (kí hiệu: P, đơn vị: N).",
+      "bulletPoints": [
+        "Công thức liên hệ: P = 10 × m (trong đó P là trọng lượng tính bằng N, m là khối lượng tính bằng kg).",
+        "Quy đổi nhanh: Vật nặng 1 kg có trọng lượng xấp xỉ 10 N; vật nặng 100 g (0,1 kg) có trọng lượng xấp xỉ 1 N.",
+        "Phân biệt khối lượng và trọng lượng: Khối lượng m chỉ lượng chất chứa trong vật (không đổi khi đưa lên vũ trụ hay Mặt Trăng); còn trọng lượng P thay đổi tùy theo lực hút của thiên thể (trọng lượng trên Mặt Trăng chỉ bằng 1/6 trên Trái Đất)."
+      ],
+      "callout": "Lưu ý quan trọng: Luôn đổi khối lượng ra đơn vị kilôgam (kg) trước khi nhân với 10 để tính trọng lượng P."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Một vật có khối lượng là 2,5 kg. Trọng lượng của vật đó ở gần mặt đất là bao nhiêu niutơn?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "25 N",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "2,5 N",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "250 N",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "0,25 N",
+        "correct": false
+      }
+    ],
+    "explanation": "Áp dụng công thức P = 10 × m, ta có: P = 10 × 2,5 = 25 N."
+  }
+}

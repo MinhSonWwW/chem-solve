@@ -1,10 +1,17 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { AlertTriangle, Lightbulb } from 'lucide-react';
+import { AlertTriangle, Lightbulb, Zap } from 'lucide-react';
 import { Mascot } from './Mascot';
 import { FeedbackBadge } from './FeedbackBadge';
 import { ReactionVisualizer, type ReactionEffectType } from './ReactionVisualizer';
 import { sound } from '@/lib/audio';
+
+export interface PhysicsEffectData {
+  type: 'energy-surge' | 'electric-spark' | 'optics-beam' | 'motion-burst';
+  color?: string;
+  label?: string;
+  detail?: string;
+}
 
 export interface FeedbackSheetProps {
   status: 'idle' | 'correct' | 'wrong' | 'partial' | 'revealed';
@@ -18,6 +25,7 @@ export interface FeedbackSheetProps {
     color?: string;
     label?: string;
   };
+  physicsEffect?: PhysicsEffectData;
   onContinue: () => void;
   onRetry?: () => void;
 }
@@ -46,21 +54,30 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
   hints,
   attemptsLeft,
   reactionEffect,
+  physicsEffect,
   onContinue,
   onRetry,
 }) => {
   if (status === 'idle') return null;
 
+  const isPhysicsSheet = Boolean(physicsEffect);
+
   const config = {
     correct: {
-      sheetBorder: 'border-t-2 border-[#00cd9c]',
-      topGlow: 'bg-gradient-to-r from-transparent via-[#00cd9c]/70 to-transparent shadow-[0_0_20px_rgba(0,205,156,0.6)]',
+      sheetBorder: isPhysicsSheet ? 'border-t-2 border-[#f59e0b]' : 'border-t-2 border-[#00cd9c]',
+      topGlow: isPhysicsSheet
+        ? 'bg-gradient-to-r from-transparent via-[#f59e0b]/80 to-transparent shadow-[0_0_25px_rgba(245,158,11,0.7)]'
+        : 'bg-gradient-to-r from-transparent via-[#00cd9c]/70 to-transparent shadow-[0_0_20px_rgba(0,205,156,0.6)]',
       badgeType: 'check' as const,
-      titleColor: 'text-[#00cd9c]',
+      titleColor: isPhysicsSheet ? 'text-[#f59e0b]' : 'text-[#00cd9c]',
       title: 'CHÍNH XÁC!',
-      subtitle: 'Bạn đã nắm chắc kiến thức này (+10 XP)',
+      subtitle: isPhysicsSheet
+        ? 'Bạn đã làm chủ định luật vật lý này (+10 XP)'
+        : 'Bạn đã nắm chắc kiến thức này (+10 XP)',
       mascot: 'celebrating' as const,
-      btnStyle: 'bg-[#00cd9c] hover:bg-[#00e6aa] text-[#131f24] border-b-4 border-[#009b76] shadow-[0_4px_16px_rgba(0,205,156,0.35)]',
+      btnStyle: isPhysicsSheet
+        ? 'bg-[#f59e0b] hover:bg-[#fbbf24] text-slate-950 border-b-4 border-[#b45309] shadow-[0_4px_16px_rgba(245,158,11,0.4)]'
+        : 'bg-[#00cd9c] hover:bg-[#00e6aa] text-[#131f24] border-b-4 border-[#009b76] shadow-[0_4px_16px_rgba(0,205,156,0.35)]',
       btnLabel: 'TIẾP TỤC',
     },
     wrong: {
@@ -168,6 +185,43 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
               label={reactionEffect.label}
               className="py-1"
             />
+          )}
+
+          {/* Physics Interactive Energy Surge Visualizer */}
+          {physicsEffect && (
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              className="p-3 rounded-2xl bg-gradient-to-r from-amber-500/15 via-yellow-500/10 to-amber-500/15 border-2 border-amber-500/40 shadow-[0_0_20px_rgba(245,158,11,0.25)] relative overflow-hidden"
+            >
+              {/* Animated energy sweep */}
+              <motion.div
+                animate={{ x: ['-100%', '200%'] }}
+                transition={{ duration: 1.8, repeat: Infinity, ease: 'linear' }}
+                className="absolute inset-y-0 w-24 bg-gradient-to-r from-transparent via-amber-400/20 to-transparent skew-x-12 pointer-events-none"
+              />
+
+              <div className="flex items-center gap-3 relative z-10">
+                <div className="w-9 h-9 rounded-xl bg-amber-500/25 border border-amber-400/50 flex items-center justify-center shrink-0 shadow-inner">
+                  <motion.div
+                    animate={{ rotate: [0, 15, -15, 0], scale: [1, 1.15, 1] }}
+                    transition={{ duration: 1.5, repeat: Infinity }}
+                  >
+                    <Zap className="w-5 h-5 text-amber-300 fill-amber-300/40" />
+                  </motion.div>
+                </div>
+                <div className="min-w-0">
+                  <div className="text-xs sm:text-sm font-black text-amber-300 tracking-tight flex items-center gap-1.5">
+                    <span>{physicsEffect.label || 'Bừng sáng năng lượng vật lý!'}</span>
+                  </div>
+                  {physicsEffect.detail && (
+                    <div className="text-[11px] sm:text-xs text-amber-200/90 font-medium mt-0.5 line-clamp-2">
+                      {physicsEffect.detail}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </motion.div>
           )}
 
           {/* Hints display for wrong/revealed answers */}

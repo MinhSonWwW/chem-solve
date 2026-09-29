@@ -1,0 +1,400 @@
+[
+  {
+    "id": "phy-g6-b02-mcq-001",
+    "lessonId": "phy-g6-b02",
+    "sgkBaiSo": 6,
+    "skillIds": [
+      "mass-unit-si"
+    ],
+    "difficulty": 1,
+    "prompt": "Đơn vị đo khối lượng cơ bản trong hệ đơn vị đo lường quốc tế (hệ SI) là gì?",
+    "knowledge": [
+      "unit.mass.si"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tấn (t)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Gam (g)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Kilôgam (kg)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Miligam (mg)"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đơn vị cơ bản này có tiền tố 'kilo' đứng trước đơn vị gam."
+      },
+      {
+        "level": 2,
+        "text": "Theo SGK KHTN 6 (Bài 6), kilôgam (kí hiệu: kg) là đơn vị đo khối lượng cơ bản trong hệ SI."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận dạng câu hỏi",
+        "body": "Câu hỏi yêu cầu xác định đơn vị đo khối lượng chuẩn theo hệ SI."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Trong hệ SI, đơn vị đo khối lượng cơ bản là kilôgam (kí hiệu: kg)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Kilôgam (kg)**."
+      }
+    ],
+    "finalSolution": "Đơn vị đo khối lượng chuẩn trong hệ SI là **kilôgam (kí hiệu: kg)**.",
+    "commonMistakes": [
+      {
+        "id": "chose-gram",
+        "message": "Nhiều người nghĩ đơn vị cơ bản là gam (g), nhưng trong hệ SI, kilôgam (kg) mới là đơn vị đo khối lượng cơ bản."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b02-mcq-002",
+    "lessonId": "phy-g6-b02",
+    "sgkBaiSo": 6,
+    "skillIds": [
+      "mass-concept"
+    ],
+    "difficulty": 1,
+    "prompt": "Trên vỏ một hộp sữa bột có ghi: \"Khối lượng tịnh: 900 g\". Con số 900 g này có ý nghĩa gì?",
+    "knowledge": [
+      "unit.mass.si"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Lượng sữa bột chứa bên trong hộp (không tính vỏ hộp)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Khối lượng của cả vỏ hộp và sữa bên trong"
+        },
+        {
+          "id": "opt-c",
+          "label": "Thể tích của hộp sữa"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khối lượng riêng của sữa bột"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ 'khối lượng tịnh' chỉ lượng chất thực sự chứa bên trong bao bì."
+      },
+      {
+        "level": 2,
+        "text": "Khối lượng tịnh là khối lượng của vật chất bên trong, không bao gồm khối lượng của bao bì hay vỏ hộp."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích thuật ngữ",
+        "body": "Đề bài hỏi ý nghĩa của cụm từ 'Khối lượng tịnh: 900 g' trên vỏ hộp."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Khái niệm khối lượng",
+        "body": "Khối lượng tịnh là khối lượng của riêng lượng chất chứa trong bao bì. Ở đây chính là lượng sữa bột bên trong hộp."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Con số 900 g chỉ **Lượng sữa bột chứa bên trong hộp (không tính vỏ hộp)**."
+      }
+    ],
+    "finalSolution": "Khối lượng tịnh 900 g chỉ **lượng sữa bột chứa bên trong hộp** (không tính khối lượng vỏ hộp).",
+    "commonMistakes": [
+      {
+        "id": "included-box-mass",
+        "message": "Khối lượng tịnh không bao gồm vỏ hộp; nếu tính cả vỏ hộp thì gọi là tổng khối lượng (khối lượng cả bì)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b02-mcq-003",
+    "lessonId": "phy-g6-b02",
+    "sgkBaiSo": 6,
+    "skillIds": [
+      "mass-tool-selection"
+    ],
+    "difficulty": 1,
+    "prompt": "Tại các cửa hàng vàng bạc, để đo khối lượng của một chiếc nhẫn vàng nhỏ, người thợ kim hoàn thường sử dụng loại cân nào sau đây để có độ chính xác cao nhất?",
+    "knowledge": [
+      "unit.mass.si"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cân đồng hồ loại 5 kg"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cân tạ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cân y tế đo sức khỏe"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cân điện tử có ĐCNN cỡ miligam (0,001 g)"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Chiếc nhẫn vàng có khối lượng rất nhỏ và giá trị cao, cần dụng cụ có độ chia nhỏ nhất thật nhỏ."
+      },
+      {
+        "level": 2,
+        "text": "Cân điện tử chuyên dụng có ĐCNN đến miligam (mg) giúp đo chính xác từng lượng nhỏ kim loại quý."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích đặc điểm vật cần đo",
+        "body": "Nhẫn vàng có khối lượng nhỏ (chỉ vài gam) và rất có giá trị, cần đo chính xác đến từng phần nghìn gam."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Chọn dụng cụ đo",
+        "body": "Cân đồng hồ loại 5 kg hay cân tạ có ĐCNN quá lớn (hàng chục gam hoặc kg), không thể đo được. Cần dùng cân điện tử có ĐCNN cỡ 0,001 g."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Dụng cụ phù hợp nhất là **Cân điện tử có ĐCNN cỡ miligam (0,001 g)**."
+      }
+    ],
+    "finalSolution": "Dùng **cân điện tử có ĐCNN cỡ miligam (0,001 g)** để đảm bảo độ chính xác cho vật có khối lượng nhỏ.",
+    "commonMistakes": [
+      {
+        "id": "chose-clock-scale",
+        "message": "Cân đồng hồ thông thường có ĐCNN từ 10 g đến 50 g, quá lớn so với khối lượng chiếc nhẫn vàng."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b02-mcq-004",
+    "lessonId": "phy-g6-b02",
+    "sgkBaiSo": 6,
+    "skillIds": [
+      "mass-measurement-steps"
+    ],
+    "difficulty": 2,
+    "prompt": "Trước khi đặt vật lên đĩa cân đồng hồ để tiến hành đo khối lượng, thao tác chuẩn bị nào sau đây là **bắt buộc phải thực hiện**?",
+    "knowledge": [
+      "unit.mass.si"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Đặt thêm một vật nhỏ làm mẫu lên đĩa cân"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hiệu chỉnh vặn ốc điều chỉnh để kim cân chỉ đúng vạch số 0"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ấn mạnh đĩa cân xuống rồi thả ra"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nghiêng cân sang một bên để kiểm tra độ nhạy"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Xem lại bước 2 trong quy trình đo khối lượng bằng cân đồng hồ."
+      },
+      {
+        "level": 2,
+        "text": "Nếu kim cân chưa chỉ đúng số 0 khi chưa đặt vật, kết quả đo sau đó sẽ bị sai lệch."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định thao tác kỹ thuật",
+        "body": "Thao tác chuẩn bị cân trước khi đặt vật lên đĩa cân."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy trình SGK",
+        "body": "Bước 2 trong quy trình nêu rõ: Hiệu chỉnh cân, vặn ốc điều chỉnh để kim cân chỉ đúng vạch số 0."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thao tác bắt buộc là **Hiệu chỉnh vặn ốc điều chỉnh để kim cân chỉ đúng vạch số 0**."
+      }
+    ],
+    "finalSolution": "Cần **vặn ốc điều chỉnh để kim cân chỉ đúng vạch số 0** trước khi đặt vật lên cân.",
+    "commonMistakes": [
+      {
+        "id": "skipped-zero-calibration",
+        "message": "Nếu không chỉnh kim về số 0, toàn bộ kết quả đo sẽ bị cộng thêm hoặc trừ bớt một lượng sai số ban đầu."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b02-calc-005",
+    "lessonId": "phy-g6-b02",
+    "sgkBaiSo": 6,
+    "skillIds": [
+      "mass-read-result"
+    ],
+    "difficulty": 2,
+    "prompt": "Một chiếc cân đồng hồ có ĐCNN là 20 g. Khi đặt một túi cam lên đĩa cân, kim cân chỉ qua vạch 1 kg thêm đúng 4 vạch chia nhỏ. Khối lượng của túi cam đó là bao nhiêu gam (g)?",
+    "knowledge": [
+      "unit.mass.si"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 1080,
+      "unit": "g",
+      "decimals": 0
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đổi 1 kg sang gam: 1 kg = 1 000 g. Mỗi vạch chia nhỏ tương ứng với 20 g."
+      },
+      {
+        "level": 2,
+        "text": "4 vạch chia nhỏ = 4 × 20 g = 80 g. Khối lượng tổng = 1 000 g + 80 g."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích dữ kiện",
+        "body": "Kim qua vạch 1 kg thêm 4 vạch chia. Mỗi vạch chia (ĐCNN) là 20 g."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "Đổi 1 kg = 1 000 g. Phần vượt thêm: $4 \\times 20\\text{ g} = 80\\text{ g}$. Tổng khối lượng: $1\\,000\\text{ g} + 80\\text{ g} = 1\\,080\\text{ g}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khối lượng của túi cam là **1 080 g** (hoặc 1,08 kg)."
+      }
+    ],
+    "finalSolution": "Khối lượng túi cam là $1\\,000\\text{ g} + (4 \\times 20\\text{ g}) =$ **1 080 g**.",
+    "commonMistakes": [
+      {
+        "id": "forgot-unit-convert-kg",
+        "message": "Nhớ đổi 1 kg = 1 000 g trước khi cộng với số gam của các vạch chia nhỏ."
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b02-mcq-006",
+    "lessonId": "phy-g6-b02",
+    "sgkBaiSo": 6,
+    "skillIds": [
+      "mass-unit-convert"
+    ],
+    "difficulty": 3,
+    "prompt": "Một chiếc xe tải chở 2,5 tấn xi măng. Khối lượng xi măng đó khi đổi ra đơn vị tạ và kilôgam (kg) lần lượt là:",
+    "knowledge": [
+      "unit.mass.si"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "2,5 tạ và 2 500 kg"
+        },
+        {
+          "id": "opt-b",
+          "label": "25 tạ và 2 500 kg"
+        },
+        {
+          "id": "opt-c",
+          "label": "250 tạ và 2 500 kg"
+        },
+        {
+          "id": "opt-d",
+          "label": "25 tạ và 25 000 kg"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhớ lại: 1 tấn = 10 tạ = 1 000 kg."
+      },
+      {
+        "level": 2,
+        "text": "2,5 tấn = 2,5 × 10 = 25 tạ; 2,5 tấn = 2,5 × 1 000 = 2 500 kg."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định quy tắc đổi đơn vị",
+        "body": "Đổi 2,5 tấn sang tạ và sang kg."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "Ta có: $1\\text{ tấn} = 10\\text{ tạ} \\Rightarrow 2,5\\text{ tấn} = 2,5 \\times 10 = 25\\text{ tạ}$. Mặt khác: $1\\text{ tấn} = 1\\,000\\text{ kg} \\Rightarrow 2,5\\text{ tấn} = 2,5 \\times 1\\,000 = 2\\,500\\text{ kg}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khối lượng lần lượt là **25 tạ** và **2 500 kg**."
+      }
+    ],
+    "finalSolution": "2,5 tấn = **25 tạ** = **2 500 kg**.",
+    "commonMistakes": [
+      {
+        "id": "confused-ta-tan",
+        "message": "Lưu ý 1 tấn = 10 tạ (chứ không phải 100 tạ), 1 tạ = 100 kg."
+      }
+    ]
+  }
+]

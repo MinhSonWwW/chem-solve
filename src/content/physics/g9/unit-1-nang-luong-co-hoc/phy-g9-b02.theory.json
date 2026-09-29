@@ -1,0 +1,77 @@
+{
+  "lessonId": "phy-g9-b02",
+  "nodeId": "phy-g9-b02-theory",
+  "title": "Lý thuyết: Cơ năng",
+  "subtitle": "Bài 3 SGK Khoa học tự nhiên 9 (Kết nối tri thức)",
+  "sgkBaiSo": 3,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm cốt lõi",
+      "badgeColor": "cyan",
+      "title": "1. Khái niệm cơ năng và biểu thức",
+      "content": "Một vật trong tự nhiên có thể đồng thời vừa chuyển động vừa ở một độ cao nhất định so với mốc thế năng:",
+      "bulletPoints": [
+        "Định nghĩa: Khi một vật vừa có động năng vừa có thế năng, tổng động năng và thế năng của vật được gọi là cơ năng (kí hiệu: $W$).",
+        "Công thức tính cơ năng: $W = W_đ + W_t$",
+        "Khai triển: $W = \\frac{1}{2} m v^2 + P \\cdot h = \\frac{1}{2} m v^2 + 10 \\cdot m \\cdot h$",
+        "Đơn vị đo: Tương tự như động năng và thế năng, cơ năng có đơn vị đo trong hệ SI là Jun (kí hiệu: J)."
+      ],
+      "callout": "Đặc điểm nhận biết: Một chiếc máy bay đang bay trên cao vừa có thế năng trọng trường (do độ cao $h$) vừa có động năng (do vận tốc bay $v$), tổng của hai dạng năng lượng này chính là cơ năng của máy bay."
+    },
+    {
+      "id": "c2",
+      "badge": "Chuyển hóa năng lượng",
+      "badgeColor": "amber",
+      "title": "2. Sự chuyển hóa qua lại giữa động năng và thế năng",
+      "content": "Trong quá trình chuyển động của vật, động năng và thế năng có thể liên tục biến đổi và chuyển hóa qua lại lẫn nhau:",
+      "bulletPoints": [
+        "Vật rơi tự do (từ trên cao xuống): Độ cao giảm dần nên thế năng giảm dần; tốc độ tăng dần nên động năng tăng dần $\\rightarrow$ Thế năng đã chuyển hóa thành động năng.",
+        "Vật ném thẳng đứng lên cao: Độ cao tăng dần nên thế năng tăng dần; tốc độ giảm dần nên động năng giảm dần $\\rightarrow$ Động năng đã chuyển hóa thành thế năng. Tại điểm cao nhất, tốc độ bằng 0 nên $W_đ = 0$ và thế năng đạt giá trị cực đại ($W_t = W_{t\\max}$).",
+        "Con lắc dao động: Khi con lắc chuyển động từ vị trí biên (cao nhất) về vị trí cân bằng (thấp nhất), thế năng chuyển hóa thành động năng. Tại vị trí cân bằng, động năng đạt cực đại. Khi con lắc từ vị trí cân bằng đi lên vị trí biên, động năng chuyển hóa thành thế năng."
+      ],
+      "callout": "Quy luật bù trừ: Động năng tăng lên bao nhiêu thì thế năng giảm đi bấy nhiêu và ngược lại (khi không có ma sát)."
+    },
+    {
+      "id": "c3",
+      "badge": "Định luật bảo toàn",
+      "badgeColor": "emerald",
+      "title": "3. Định luật bảo toàn cơ năng",
+      "content": "Trong điều kiện lý tưởng khi vật chỉ chuyển động dưới tác dụng của trọng lực:",
+      "bulletPoints": [
+        "Nội dung định luật: Khi một vật chuyển động chỉ chịu tác dụng của trọng lực (bỏ qua ma sát và lực cản không khí), cơ năng của vật được bảo toàn (không đổi theo thời gian):",
+        "Biểu thức bảo toàn: $W = W_đ + W_t = \\text{hằng số}$",
+        "Hệ quả: Tại vị trí thế năng cực đại thì động năng bằng 0: $W = W_{t\\max}$. Tại vị trí động năng cực đại thì thế năng cực tiểu: $W = W_{đ\\max}$.",
+        "Thực tế có ma sát: Nếu có lực cản không khí hoặc lực ma sát, cơ năng không bảo toàn mà một phần cơ năng sẽ chuyển hóa thành nhiệt năng làm nóng vật và môi trường xung quanh."
+      ],
+      "callout": "Ứng dụng thực tiễn: Tàu lượn siêu tốc được kéo lên đỉnh cao ban đầu để tích trữ thế năng cực đại, sau đó thả trôi tự do để thế năng chuyển thành động năng lao dốc với tốc độ lớn mà không cần động cơ đẩy."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi một quả táo rơi từ trên cành cây xuống đất (bỏ qua sức cản của không khí), sự chuyển hóa năng lượng nào sau đây diễn ra?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Thế năng chuyển hóa thành động năng, cơ năng được bảo toàn",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Động năng chuyển hóa thành thế năng, cơ năng tăng dần",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Cơ năng chuyển hóa hoàn toàn thành nhiệt năng ngay khi đang rơi",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Cả thế năng và động năng đều giảm dần",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 9 Bài 3: Khi rơi tự do, độ cao giảm nên thế năng giảm, vận tốc tăng nên động năng tăng (thế năng chuyển hóa thành động năng), và tổng cơ năng của quả táo không đổi."
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "lessonId": "phy-g9-b05",
+  "nodeId": "phy-g9-b05-theory",
+  "title": "Lý thuyết: Phản xạ toàn phần",
+  "subtitle": "Bài 6 SGK Khoa học tự nhiên 9 (Kết nối tri thức)",
+  "sgkBaiSo": 6,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm cốt lõi",
+      "badgeColor": "cyan",
+      "title": "1. Hiện tượng phản xạ toàn phần là gì?",
+      "content": "Trong một số điều kiện đặc biệt khi ánh sáng truyền từ môi trường đặc hơn sang môi trường loãng hơn:",
+      "bulletPoints": [
+        "Định nghĩa: Phản xạ toàn phần là hiện tượng toàn bộ tia sáng tới bị phản xạ ngược trở lại môi trường trong suốt ban đầu tại mặt phân cách giữa hai môi trường.",
+        "Đặc điểm phân biệt: Trong hiện tượng phản xạ toàn phần, không còn tia khúc xạ đi vào môi trường thứ hai, toàn bộ năng lượng ánh sáng được giữ lại trong môi trường ban đầu.",
+        "Trạng thái giới hạn: Khi góc tới tăng dần đến giá trị giới hạn $i = i_{gh}$, tia khúc xạ đi là là sát mặt phân cách ($r = 90^\\circ$). Khi $i > i_{gh}$, tia khúc xạ hoàn toàn biến mất, chỉ còn tia phản xạ rất sáng."
+      ],
+      "callout": "Độ sáng nổi bật: Tia phản xạ toàn phần có cường độ sáng gần như bằng 100% tia sáng tới, sáng hơn rất nhiều so với phản xạ một phần thông thường."
+    },
+    {
+      "id": "c2",
+      "badge": "Điều kiện cần & đủ",
+      "badgeColor": "amber",
+      "title": "2. Hai điều kiện bắt buộc để có phản xạ toàn phần",
+      "content": "Để xảy ra hiện tượng phản xạ toàn phần, bắt buộc phải thỏa mãn đồng thời hai điều kiện sau:",
+      "bulletPoints": [
+        "Điều kiện 1 (Về môi trường): Ánh sáng phải truyền từ môi trường có chiết suất lớn hơn (chiết quang hơn) sang môi trường có chiết suất nhỏ hơn (kém chiết quang hơn) — ví dụ: từ nước sang không khí, từ thủy tinh sang không khí.",
+        "Điều kiện 2 (Về góc tới): Góc tới $i$ phải lớn hơn hoặc bằng góc giới hạn phản xạ toàn phần ($i \\ge i_{gh}$).",
+        "Góc giới hạn tham khảo SGK: Với nước sang không khí thì $i_{gh} \\approx 48^\\circ 30'$; với thủy tinh sang không khí thì $i_{gh} \\approx 42^\\circ$; với kim cương sang không khí thì $i_{gh} \\approx 24^\\circ$."
+      ],
+      "callout": "Ghi nhớ then chốt: Chiếu ánh sáng từ KHÔNG KHÍ vào nước hoặc thủy tinh thì TUYỆT ĐỐI KHÔNG THỂ xảy ra phản xạ toàn phần vì vi phạm điều kiện môi trường!"
+    },
+    {
+      "id": "c3",
+      "badge": "Ứng dụng công nghệ",
+      "badgeColor": "emerald",
+      "title": "3. Ứng dụng đột phá của phản xạ toàn phần trong đời sống",
+      "content": "Hiện tượng phản xạ toàn phần là nền tảng của nhiều công nghệ hiện đại:",
+      "bulletPoints": [
+        "Cáp quang viễn thông (Internet tốc độ cao): Sợi quang gồm lõi thủy tinh trong suốt được bọc bởi lớp vỏ có chiết suất nhỏ hơn. Ánh sáng mang tín hiệu số phản xạ toàn phần liên tục bên trong lõi, truyền đi hàng nghìn kilômét mà hầu như không bị suy hao năng lượng.",
+        "Ống nội soi y tế: Bó sợi quang mềm dẻo luồn vào bên trong cơ thể người bệnh (dạ dày, ruột...) để truyền ánh sáng vào soi sáng và dẫn hình ảnh chi tiết ra màn hình mà không cần phẫu thuật mở.",
+        "Lăng kính phản xạ toàn phần: Dùng trong ống nhòm, kính tiềm vọng của tàu ngầm để đổi hướng tia sáng 90° hoặc 180° với độ sáng rõ nét hơn gương phẳng.",
+        "Kim cương lấp lánh: Do góc giới hạn của kim cương rất nhỏ ($i_{gh} \\approx 24^\\circ$), ánh sáng đi vào viên kim cương dễ bị phản xạ toàn phần nhiều lần qua các mặt cắt trước khi ló ra ngoài."
+      ],
+      "callout": "Tầm quan trọng: Mạng internet toàn cầu kết nối các châu lục thông qua hệ thống cáp quang biển ứng dụng nguyên lý phản xạ toàn phần."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Để xảy ra hiện tượng phản xạ toàn phần, tia sáng phải thỏa mãn đồng thời hai điều kiện nào sau đây?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Truyền từ môi trường chiết quang sang môi trường kém chiết quang hơn và góc tới i >= i_gh",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Truyền từ không khí vào nước và góc tới i = 90°",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Truyền từ môi trường kém chiết quang sang môi trường chiết quang hơn và góc tới i < i_gh",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Chiếu tia sáng vuông góc với mặt phân cách (i = 0°)",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 9 Bài 6: Điều kiện phản xạ toàn phần là ánh sáng truyền từ môi trường chiết quang sang môi trường kém chiết quang hơn và góc tới i >= i_gh."
+  }
+}

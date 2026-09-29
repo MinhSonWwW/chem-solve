@@ -1,0 +1,554 @@
+[
+  {
+    "id": "phy-g8-b11-mcq-001",
+    "lessonId": "phy-g8-b11",
+    "sgkBaiSo": 23,
+    "skillIds": [
+      "thermal-effect"
+    ],
+    "difficulty": 1,
+    "prompt": "Thiết bị nào sau đây trong gia đình hoạt động chủ yếu dựa trên TÁC DỤNG NHIỆT của dòng điện?",
+    "knowledge": [
+      "effect.electric.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chuông điện báo động"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bàn là điện và nồi cơm điện"
+        },
+        {
+          "id": "opt-c",
+          "label": "Quạt máy làm mát"
+        },
+        {
+          "id": "opt-d",
+          "label": "Đèn pin LED cầm tay"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thiết bị nào chuyển hóa phần lớn điện năng thành nhiệt lượng để làm nóng hoặc đun nấu?"
+      },
+      {
+        "level": 2,
+        "text": "Bàn là và nồi cơm điện dùng dây điện trở đốt nóng để là ủi quần áo và nấu chín thức ăn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định tác dụng nhiệt",
+        "body": "Tìm thiết bị sử dụng điện năng chủ yếu để biến thành nhiệt năng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 23), các dụng cụ như bàn là điện, nồi cơm điện, ấm đun nước điện biến đổi điện năng thành nhiệt năng dựa vào tác dụng nhiệt của dòng điện."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Bàn là điện và nồi cơm điện**."
+      }
+    ],
+    "finalSolution": "Thiết bị hoạt động dựa trên tác dụng nhiệt: **Bàn là điện và nồi cơm điện**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-fan-thermal",
+        "message": "Quạt điện hoạt động chủ yếu dựa vào tác dụng từ (động cơ điện quay); lượng nhiệt tỏa ra ở quạt là hao phí không mong muốn."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b11-mcq-002",
+    "lessonId": "phy-g8-b11",
+    "sgkBaiSo": 23,
+    "skillIds": [
+      "lighting-effect"
+    ],
+    "difficulty": 1,
+    "prompt": "Đèn điốt phát quang (đèn LED) phát sáng khi có dòng điện chạy qua là ứng dụng trực tiếp của tác dụng nào của dòng điện?",
+    "knowledge": [
+      "effect.electric.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tác dụng từ"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tác dụng phát sáng (tác dụng quang)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tác dụng hóa học"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tác dụng sinh lí"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đèn LED khi hoạt động phát ra ánh sáng mà không cần nung nóng dây tóc tới 2500 °C như đèn sợi đốt."
+      },
+      {
+        "level": 2,
+        "text": "Hiện tượng dòng điện làm phát ra ánh sáng thuộc tác dụng phát sáng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định tác dụng của đèn LED",
+        "body": "Phân loại tác dụng của dòng điện làm đèn LED phát quang."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 23), dòng điện có thể làm phát sáng bóng đèn LED, đèn huỳnh quang, đèn bút thử điện... dựa trên tác dụng phát sáng của dòng điện."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Tác dụng phát sáng (tác dụng quang)**."
+      }
+    ],
+    "finalSolution": "Đèn LED phát sáng dựa trên **tác dụng phát sáng (tác dụng quang)** của dòng điện.",
+    "commonMistakes": [
+      {
+        "id": "assume-led-burns-filament",
+        "message": "Đèn LED không có dây tóc, ánh sáng được tạo ra do chuyển đổi trực tiếp trong chip bán dẫn."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b11-mcq-003",
+    "lessonId": "phy-g8-b11",
+    "sgkBaiSo": 23,
+    "skillIds": [
+      "magnetic-effect"
+    ],
+    "difficulty": 2,
+    "prompt": "Đặt một kim nam châm tự do nằm thăng bằng theo hướng Bắc - Nam. Khi đưa một dây dẫn có dòng điện chạy qua lại gần và song song với kim nam châm, hiện tượng gì xảy ra?",
+    "knowledge": [
+      "effect.electric.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Kim nam châm bị nóng chảy ngay lập tức"
+        },
+        {
+          "id": "opt-b",
+          "label": "Kim nam châm tự động rơi rụng xuống đất"
+        },
+        {
+          "id": "opt-c",
+          "label": "Kim nam châm bị lệch góc khỏi vị trí ban đầu"
+        },
+        {
+          "id": "opt-d",
+          "label": "Không có hiện tượng gì xảy ra với kim nam châm"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đây chính là thí nghiệm lịch sử nổi tiếng của nhà vật lý Oersted."
+      },
+      {
+        "level": 2,
+        "text": "Dòng điện có từ trường xung quanh nên nó tác dụng lực từ làm kim nam châm quay lệch khỏi hướng Bắc - Nam."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hiện tượng tương tác từ",
+        "body": "Quan sát tác dụng của dây dẫn mang dòng điện lên kim nam châm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Thí nghiệm Oersted SGK",
+        "body": "Theo SGK KHTN 8 (Bài 23), khi có dòng điện chạy qua dây dẫn đặt song song với kim nam châm, kim nam châm sẽ bị lệch khỏi phương ban đầu. Hiện tượng này chứng tỏ dòng điện có tác dụng từ."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Kim nam châm bị lệch góc khỏi vị trí ban đầu**."
+      }
+    ],
+    "finalSolution": "Kim nam châm **bị lệch góc khỏi vị trí ban đầu** do tác dụng từ của dòng điện.",
+    "commonMistakes": [
+      {
+        "id": "confuse-electrostatic",
+        "message": "Kim nam châm bằng thép từ tính phản ứng với từ trường của dòng điện, không phải lực hút tĩnh điện thông thường."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b11-mcq-004",
+    "lessonId": "phy-g8-b11",
+    "sgkBaiSo": 23,
+    "skillIds": [
+      "electromagnet-application"
+    ],
+    "difficulty": 2,
+    "prompt": "Thiết bị nào dưới đây ứng dụng nam châm điện hoạt động dựa trên TÁC DỤNG TỪ của dòng điện?",
+    "knowledge": [
+      "effect.electric.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Bể mạ kim loại bằng dung dịch muối"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bình nóng lạnh đun nước tắm"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cần cẩu điện hút sắt thép phế liệu và chuông điện"
+        },
+        {
+          "id": "opt-d",
+          "label": "Bút thử điện phát sáng"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nam châm điện dùng lực hút từ để nâng vật nặng bằng sắt hoặc hút lá thép tạo tiếng gõ chuông."
+      },
+      {
+        "level": 2,
+        "text": "Cần cẩu dọn phế liệu sắt và chuông cửa điện dùng cuộn dây sinh từ tính khi có điện."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Ứng dụng tác dụng từ",
+        "body": "Tìm thiết bị sử dụng nam châm điện sinh lực cơ học."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 23), cần cẩu điện nâng phế liệu sắt, chuông điện, rơ le điện hoạt động dựa vào nam châm điện, tức là tác dụng từ của dòng điện."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Cần cẩu điện hút sắt thép phế liệu và chuông điện**."
+      }
+    ],
+    "finalSolution": "Ứng dụng tác dụng từ: **Cần cẩu điện hút sắt thép phế liệu và chuông điện**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-chemical-plating",
+        "message": "Bể mạ kim loại ứng dụng tác dụng hóa học, không phải tác dụng từ."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b11-mcq-005",
+    "lessonId": "phy-g8-b11",
+    "sgkBaiSo": 23,
+    "skillIds": [
+      "chemical-effect"
+    ],
+    "difficulty": 2,
+    "prompt": "Cho dòng điện chạy qua bình điện phân chứa dung dịch đồng sulfate (CuSO4). Sau một thời gian, ta thấy một lớp kim loại đồng màu đỏ bám trên thỏi than nối với cực âm. Hiện tượng này chứng minh tác dụng nào của dòng điện?",
+    "knowledge": [
+      "effect.electric.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tác dụng hóa học"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tác dụng phát sáng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tác dụng sinh lí"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tác dụng phản xạ ánh sáng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Dòng điện gây ra phản ứng điện phân dung dịch chất hóa học, tách kim loại tự do bám vào điện cực."
+      },
+      {
+        "level": 2,
+        "text": "Sự biến đổi hóa học này minh họa cho tác dụng hóa học của dòng điện (ứng dụng trong mạ điện)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định hiện tượng điện phân",
+        "body": "Dòng điện tách ion đồng trong dung dịch tạo thành lớp kim loại Cu bám ở cực âm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 23), dòng điện chạy qua dung dịch chất điện phân gây ra các phản ứng hóa học (như tách đồng bám vào thỏi than), đây là tác dụng hóa học của dòng điện."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Tác dụng hóa học**."
+      }
+    ],
+    "finalSolution": "Hiện tượng mạ đồng chứng minh **tác dụng hóa học** của dòng điện.",
+    "commonMistakes": [
+      {
+        "id": "think-it-is-thermal-coating",
+        "message": "Kim loại đồng bám vào do phản ứng oxi hóa - khử của dòng điện, không phải nung nóng chảy rồi dính vào."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b11-mcq-006",
+    "lessonId": "phy-g8-b11",
+    "sgkBaiSo": 23,
+    "skillIds": [
+      "physiological-effect"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong y học cấp cứu, thiết bị máy sốc tim được bác sĩ sử dụng để truyền các xung điện thích hợp qua lồng ngực người bệnh nhằm kích thích cơ tim co bóp đập lại. Thiết bị này ứng dụng tác dụng nào của dòng điện?",
+    "knowledge": [
+      "effect.electric.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tác dụng quang học"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tác dụng sinh lí"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tác dụng hóa học"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tác dụng từ thuần túy"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Dòng điện tác động lên cơ bắp, hệ thần kinh và tim của sinh vật sống."
+      },
+      {
+        "level": 2,
+        "text": "Tác động của dòng điện lên cơ thể sinh vật được gọi là tác dụng sinh lí."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tác động lên cơ thể sống",
+        "body": "Dòng điện tác động vào cơ tim làm tim co bóp nhịp nhàng trở lại."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 23), dòng điện khi đi qua cơ thể sinh vật có tác dụng kích thích co bóp cơ và truyền xung thần kinh. Đây là tác dụng sinh lí (ứng dụng trong máy sốc tim, châm cứu điện)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Tác dụng sinh lí**."
+      }
+    ],
+    "finalSolution": "Máy sốc tim ứng dụng **tác dụng sinh lí** của dòng điện.",
+    "commonMistakes": [
+      {
+        "id": "think-physiological-only-bad",
+        "message": "Tác dụng sinh lí tuy nguy hiểm nếu bị điện giật, nhưng với dòng điện có cường độ và thời gian kiểm soát khoa học thì có giá trị cứu trợ y học to lớn."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b11-mcq-007",
+    "lessonId": "phy-g8-b11",
+    "sgkBaiSo": 23,
+    "skillIds": [
+      "electrical-safety-rules"
+    ],
+    "difficulty": 2,
+    "prompt": "Vì sao khi sửa chữa các thiết bị điện trong gia đình, người thợ bắt buộc phải ngắt cầu dao (aptomat) tổng và đi dép cao su khô ráo?",
+    "knowledge": [
+      "effect.electric.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Để đồ dùng điện không bị đổi màu sơn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Để tránh dòng điện đi qua cơ thể gây nguy hiểm đến tính mạng do tác dụng sinh lí"
+        },
+        {
+          "id": "opt-c",
+          "label": "Để ngăn dòng điện hút người vào tường do tác dụng từ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Để tiết kiệm hóa đơn tiền điện trong lúc sửa chữa"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cơ thể người là vật dẫn điện. Khi chạm vào dây điện có hiệu điện thế 220V, dòng điện sẽ chạy qua người xuống đất."
+      },
+      {
+        "level": 2,
+        "text": "Dòng điện chạy qua cơ thể gây co giật cơ, ngạt thở, tê liệt tim (tác dụng sinh lí nguy hiểm)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "An toàn điện",
+        "body": "Giải thích nguyên nhân phải cắt nguồn điện và đi dép cách điện khi thao tác."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tác dụng sinh lí & an toàn",
+        "body": "Theo SGK KHTN 8 (Bài 23), dòng điện có tác dụng sinh lí mạnh mẽ, có thể gây ngừng thở, rung thất tim và tử vong nếu đi qua cơ thể người. Cắt cầu dao và đi dép khô giúp cách ly người khỏi nguồn điện."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Mục đích là **Để tránh dòng điện đi qua cơ thể gây nguy hiểm đến tính mạng do tác dụng sinh lí**."
+      }
+    ],
+    "finalSolution": "Quy tắc an toàn giúp **tránh dòng điện đi qua cơ thể gây nguy hiểm đến tính mạng do tác dụng sinh lí**.",
+    "commonMistakes": [
+      {
+        "id": "neglect-protective-gear",
+        "message": "Nước và cơ thể người dẫn điện tốt, tuyệt đối không chạm vào thiết bị điện khi tay ướt hoặc chân trần tiếp đất."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b11-mcq-008",
+    "lessonId": "phy-g8-b11",
+    "sgkBaiSo": 23,
+    "skillIds": [
+      "multieffect-classification"
+    ],
+    "difficulty": 3,
+    "prompt": "Khi một chiếc quạt điện máy đang quay vù vù làm mát căn phòng, ta sờ vào vỏ động cơ phía sau thấy ấm ấm. Nhận xét nào sau đây là ĐÚNG về tác dụng chính và tác dụng hao phí của dòng điện trong quạt?",
+    "knowledge": [
+      "effect.electric.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tác dụng chính có ích là tác dụng hóa học làm biến đổi không khí"
+        },
+        {
+          "id": "opt-b",
+          "label": "Quạt không hề sử dụng tác dụng nào của dòng điện mà chạy bằng cơ học"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tác dụng chính có ích là tác dụng nhiệt, tác dụng từ là hao phí"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tác dụng chính có ích là tác dụng từ (làm quay cánh quạt), tác dụng nhiệt là hao phí không mong muốn"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mục đích dùng quạt là để cánh quạt quay tạo gió mát. Động cơ điện quay nhờ tác dụng nào?"
+      },
+      {
+        "level": 2,
+        "text": "Động cơ điện quay nhờ lực từ (tác dụng từ). Việc động cơ bị nóng lên là do điện trở của dây đồng tỏa nhiệt (tác dụng nhiệt hao phí)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích công năng quạt điện",
+        "body": "Xác định mục đích hoạt động và hiện tượng tỏa nhiệt ở quạt máy."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức thực tế SGK",
+        "body": "Động cơ quạt biến đổi điện năng thành cơ năng dựa trên tác dụng từ của dòng điện (lực từ làm quay roto). Dòng điện chạy qua cuộn dây đồng có điện trở làm nóng động cơ, đó là tác dụng nhiệt hao phí."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Tác dụng chính có ích là tác dụng từ (làm quay cánh quạt), tác dụng nhiệt là hao phí không mong muốn**."
+      }
+    ],
+    "finalSolution": "Ở quạt điện: **Tác dụng từ là tác dụng có ích chính**, còn **tác dụng nhiệt là hao phí**.",
+    "commonMistakes": [
+      {
+        "id": "assume-heat-is-purpose",
+        "message": "Chỉ những thiết bị như bàn là, máy sấy, lò nướng mới coi tác dụng nhiệt là mục đích chính; quạt máy chỉ cần quay cơ học."
+      }
+    ]
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "lessonId": "phy-g6-b12",
+  "nodeId": "phy-g6-b12-theory",
+  "title": "Lý thuyết: Một số dạng năng lượng",
+  "subtitle": "Bài 47 SGK Khoa học tự nhiên 6 (Kết nối tri thức)",
+  "sgkBaiSo": 47,
+  "estimatedMinutes": 2,
+  "description": "Nhận biết và phân biệt các dạng năng lượng thông dụng trong đời sống: động năng, thế năng, hóa năng, nhiệt năng, quang năng và điện năng.",
+  "cards": [
+    {
+      "id": "card-1",
+      "title": "1. Động năng và Thế năng (Cơ năng)",
+      "badge": "Năng lượng cơ học",
+      "badgeColor": "emerald",
+      "content": "Cơ năng là dạng năng lượng quen thuộc nhất trong chuyển động cơ học, bao gồm động năng và hai dạng thế năng:",
+      "bulletPoints": [
+        "Động năng: Năng lượng mà vật có được do đang chuyển động. Vật có khối lượng càng lớn và chuyển động càng nhanh thì động năng càng lớn (ví dụ: máy bay đang bay, ô tô đang chạy, dòng nước chảy xiết).",
+        "Thế năng hấp dẫn: Năng lượng của vật lưu trữ do ở một độ cao nhất định so với mặt đất (ví dụ: quả bưởi trên cành cây, nước được tích trữ trên đập thủy điện cao).",
+        "Thế năng đàn hồi: Năng lượng của vật khi bị biến dạng đàn hồi (ví dụ: dây cung bị kéo căng, chiếc đệm lò xo bị nén xuống)."
+      ],
+      "callout": "🎯 Chú ý: Động năng gắn liền với CHUYỂN ĐỘNG, thế năng hấp dẫn gắn liền với ĐỘ CAO, thế năng đàn hồi gắn liền với BIẾN DẠNG LÒ XO."
+    },
+    {
+      "id": "card-2",
+      "title": "2. Hóa năng, Quang năng, Nhiệt năng & Điện năng",
+      "badge": "Các dạng năng lượng khác",
+      "badgeColor": "cyan",
+      "content": "Trong tự nhiên và đời sống hàng ngày, năng lượng còn tồn tại dưới nhiều dạng phong phú khác:",
+      "bulletPoints": [
+        "Hóa năng: Năng lượng lưu trữ trong các chất (thức ăn nuôi cơ thể sống, pin, ắc quy, xăng dầu, than đá, củi khô). Khi xảy ra phản ứng hóa học, hóa năng sẽ giải phóng thành nhiệt năng hoặc điện năng.",
+        "Quang năng: Năng lượng của ánh sáng phát ra từ Mặt Trời, ngọn đèn, ngọn nến giúp mắt người nhìn thấy vạn vật và giúp cây quang hợp.",
+        "Nhiệt năng: Năng lượng nhiệt của mọi vật do chuyển động hỗn loạn của các phân tử tạo nên. Vật có nhiệt độ càng cao thì nhiệt năng càng lớn.",
+        "Điện năng: Năng lượng của dòng điện, được truyền qua dây dẫn để vận hành tivi, tủ lạnh, quạt, máy tính.",
+        "Năng lượng âm thanh: Năng lượng do màng loa, dây đàn dao động phát ra và lan truyền trong không khí."
+      ],
+      "callout": "⚡ Ví dụ: Một viên pin lưu trữ HÓA NĂNG; khi lắp vào đèn pin, nó tạo ra dòng điện mang ĐIỆN NĂNG để phát ra QUANG NĂNG."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Năng lượng mà một vật có được do đang chuyển động được gọi là gì?",
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Thế năng hấp dẫn",
+        "correct": false
+      },
+      {
+        "id": "opt-b",
+        "text": "Động năng",
+        "correct": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Hóa năng",
+        "correct": false
+      },
+      {
+        "id": "opt-d",
+        "text": "Thế năng đàn hồi",
+        "correct": false
+      }
+    ],
+    "explanation": "Động năng là dạng năng lượng mà vật có được do chuyển động. Thế năng hấp dẫn là do ở trên cao, thế năng đàn hồi do bị biến dạng."
+  }
+}

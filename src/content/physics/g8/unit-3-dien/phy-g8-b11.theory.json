@@ -1,0 +1,78 @@
+{
+  "lessonId": "phy-g8-b11",
+  "nodeId": "phy-g8-b11-theory",
+  "title": "Lý thuyết: Tác dụng của dòng điện",
+  "subtitle": "Bài 23 SGK Khoa học tự nhiên 8 (Kết nối tri thức)",
+  "sgkBaiSo": 23,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Nhiệt & Phát sáng",
+      "badgeColor": "cyan",
+      "title": "1. Tác dụng nhiệt và tác dụng phát sáng",
+      "content": "Hai tác dụng phổ biến và dễ quan sát nhất của dòng điện trong đời sống gia đình:",
+      "bulletPoints": [
+        "Tác dụng nhiệt: Khi có dòng điện chạy qua, mọi vật dẫn thông thường đều bị nóng lên. Nếu dòng điện mạnh, vật dẫn có thể nóng đỏ hoặc nóng chảy.",
+        "Ứng dụng tác dụng nhiệt: Bàn là điện, ấm đun nước siêu tốc, nồi cơm điện, máy sấy tóc, lò sưởi điện, bếp hồng ngoại... và cầu chì (nóng chảy ngắt mạch khi quá tải).",
+        "Tác dụng phát sáng: Dòng điện có thể làm sáng các loại đèn khác nhau:",
+        "+ Đèn sợi đốt: Dòng điện nung nóng dây tóc vonfram tới nhiệt độ rất cao (khoảng 2 500 °C) để phát sáng (kết hợp cả tác dụng nhiệt và phát sáng).",
+        "+ Đèn LED, đèn huỳnh quang, đèn ống bút thử điện: Phát sáng khi chất bán dẫn hoặc chất khí phát quang mà không cần nung nóng tới nhiệt độ cao, giúp tiết kiệm điện năng vượt trội."
+      ],
+      "callout": "Xu hướng chiếu sáng: Đèn LED dần thay thế hoàn toàn đèn sợi đốt vì phần lớn điện năng biến thành quang năng, tỏa nhiệt rất ít."
+    },
+    {
+      "id": "c2",
+      "badge": "Tác dụng từ",
+      "badgeColor": "amber",
+      "title": "2. Tác dụng từ của dòng điện",
+      "content": "Dòng điện sinh ra từ trường xung quanh nó và có khả năng tương tác với nam châm:",
+      "bulletPoints": [
+        "Thí nghiệm Ơ-xtét (Oersted): Đặt một kim nam châm song song và gần với dây dẫn điện. Khi đóng mạch cho dòng điện chạy qua dây, kim nam châm bị lệch khỏi vị trí ban đầu. Ngắt điện, kim nam châm quay trở lại phương bắc - nam.",
+        "Nam châm điện: Cuộn dây dẫn có lõi sắt non khi có dòng điện chạy qua sẽ trở thành một nam châm điện có khả năng hút đinh sắt, mạt sắt. Khi ngắt dòng điện, tính từ của nam châm điện biến mất.",
+        "Ứng dụng tác dụng từ: Cần cẩu bốc dỡ sắt thép phế liệu ở cảng biển, chuông báo động điện, rơ le điện tử và động cơ điện (quạt máy, máy bơm nước, xe điện)."
+      ],
+      "callout": "Đặc tính ưu việt của nam châm điện: Có thể bật/tắt lực từ và điều chỉnh độ mạnh yếu của lực từ một cách dễ dàng bằng cách thay đổi dòng điện."
+    },
+    {
+      "id": "c3",
+      "badge": "Hóa học & Sinh lí",
+      "badgeColor": "emerald",
+      "title": "3. Tác dụng hóa học và tác dụng sinh lí",
+      "content": "Dòng điện tham gia vào các biến đổi chất và tương tác mạnh mẽ với sinh vật sống:",
+      "bulletPoints": [
+        "Tác dụng hóa học: Khi cho dòng điện chạy qua dung dịch chất điện phân (như dung dịch đồng sulfate CuSO4), dòng điện làm tách kim loại đồng (Cu) bám vào thỏi than nối với cực âm của nguồn điện.",
+        "Ứng dụng tác dụng hóa học: Công nghệ mạ điện (mạ vàng, mạ niken, mạ crôm bảo vệ kim loại chống gỉ và tăng tính thẩm mĩ), tinh luyện kim loại tinh khiết, nạp sạc lại cho bình acquy.",
+        "Tác dụng sinh lí: Dòng điện đi qua cơ thể người và động vật gây co giật các cơ, làm tim ngừng đập, ngạt thở và tê liệt hệ thần kinh (rất nguy hiểm, có thể gây tử vong).",
+        "Ứng dụng y học: Kích thích tim đập lại bằng máy sốc tim trong cấp cứu; kích thích thần kinh và giảm đau bằng phương pháp điện châm trị liệu."
+      ],
+      "callout": "An toàn điện: Tuyệt đối không chạm tay vào dây trần hoặc ổ điện sinh hoạt 220V vì tác dụng sinh lí có thể gây tử vong tức thì."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi cho dòng điện chạy qua một cuộn dây có lõi sắt non, cuộn dây có khả năng hút được các đinh sắt. Hiện tượng này chứng tỏ dòng điện có tác dụng gì?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Tác dụng từ",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Tác dụng sinh lí",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Tác dụng phát sáng",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Tác dụng bay hơi",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 8 Bài 23: Dòng điện chạy qua cuộn dây sinh ra từ trường hút các vật bằng sắt thép, thể hiện tác dụng từ của dòng điện."
+  }
+}

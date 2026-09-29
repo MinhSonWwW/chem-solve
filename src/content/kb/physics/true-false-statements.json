@@ -1,0 +1,177 @@
+[
+  {
+    "id": "phy-tf-01",
+    "statement": "Quãng đường đi được của vật chuyển động đều bằng tốc độ nhân với thời gian: s = v × t.",
+    "isTrue": true,
+    "explanation": "Từ công thức tính tốc độ v = s / t suy ra quãng đường s = v × t.",
+    "topic": "Cơ học & Tốc độ"
+  },
+  {
+    "id": "phy-tf-02",
+    "statement": "Tốc độ 1 m/s tương đương với 3,6 km/h.",
+    "isTrue": true,
+    "explanation": "1 m/s = (1/1000 km) / (1/3600 h) = 3600 / 1000 = 3,6 km/h.",
+    "topic": "Cơ học & Tốc độ"
+  },
+  {
+    "id": "phy-tf-03",
+    "statement": "Trọng lượng của một vật tỉ lệ nghịch với khối lượng của vật đó.",
+    "isTrue": false,
+    "explanation": "Trọng lượng tỉ lệ thuận với khối lượng theo công thức P = 10 × m (hoặc P = m × g).",
+    "topic": "Khối lượng & Trọng lực"
+  },
+  {
+    "id": "phy-tf-04",
+    "statement": "Khối lượng riêng của một chất được tính bằng thương số giữa khối lượng và thể tích của vật: D = m / V.",
+    "isTrue": true,
+    "explanation": "D = m / V, đơn vị chuẩn trong hệ SI là kg/m³.",
+    "topic": "Khối lượng riêng"
+  },
+  {
+    "id": "phy-tf-05",
+    "statement": "1 g/cm³ tương đương với 10 kg/m³.",
+    "isTrue": false,
+    "explanation": "1 g/cm³ = 1000 kg/m³. Ví dụ khối lượng riêng của nước là 1 g/cm³ = 1000 kg/m³.",
+    "topic": "Khối lượng riêng"
+  },
+  {
+    "id": "phy-tf-06",
+    "statement": "Áp suất là độ lớn của áp lực trên một đơn vị diện tích bị ép: p = F / S.",
+    "isTrue": true,
+    "explanation": "p = F / S, trong đó đơn vị là Pascal (Pa) hoặc N/m².",
+    "topic": "Áp suất"
+  },
+  {
+    "id": "phy-tf-07",
+    "statement": "Muốn tăng áp suất tác dụng lên mặt bị ép, ta có thể giảm áp lực hoặc tăng diện tích bị ép.",
+    "isTrue": false,
+    "explanation": "Muốn tăng áp suất (p = F / S), ta phải tăng áp lực F hoặc giảm diện tích tiếp xúc S (ví dụ mài nhọn đầu đinh, mài sắc dao).",
+    "topic": "Áp suất"
+  },
+  {
+    "id": "phy-tf-08",
+    "statement": "Lực đẩy Archimedes tác dụng lên vật nhúng trong chất lỏng có phương thẳng đứng, chiều từ dưới lên trên.",
+    "isTrue": true,
+    "explanation": "Lực đẩy Archimedes luôn hướng thẳng đứng từ dưới lên trên, độ lớn F_A = d × V.",
+    "topic": "Lực đẩy Archimedes"
+  },
+  {
+    "id": "phy-tf-09",
+    "statement": "Vật sẽ chìm xuống trong chất lỏng khi trọng lượng riêng của vật nhỏ hơn trọng lượng riêng của chất lỏng.",
+    "isTrue": false,
+    "explanation": "Khi d_vật < d_lỏng vật sẽ nổi lên; khi d_vật > d_lỏng vật mới chìm xuống.",
+    "topic": "Lực đẩy Archimedes"
+  },
+  {
+    "id": "phy-tf-10",
+    "statement": "Vật có khối lượng càng lớn và chuyển động với tốc độ càng cao thì động năng càng lớn.",
+    "isTrue": true,
+    "explanation": "Động năng được tính bởi W_đ = 1/2 × m × v², tỉ lệ thuận với khối lượng và bình phương tốc độ.",
+    "topic": "Cơ năng"
+  },
+  {
+    "id": "phy-tf-11",
+    "statement": "Vật ở càng cao so với mốc chọn làm gốc thì thế năng trọng trường càng lớn.",
+    "isTrue": true,
+    "explanation": "Thế năng trọng trường W_t = P × h = m × g × h, tăng theo độ cao h của vật.",
+    "topic": "Cơ năng"
+  },
+  {
+    "id": "phy-tf-12",
+    "statement": "Khi một vật rơi tự do từ trên cao xuống đất, thế năng của vật tăng dần và động năng giảm dần.",
+    "isTrue": false,
+    "explanation": "Khi rơi xuống, độ cao giảm nên thế năng giảm dần, tốc độ tăng nên động năng tăng dần (thế năng chuyển hóa thành động năng).",
+    "topic": "Cơ năng"
+  },
+  {
+    "id": "phy-tf-13",
+    "statement": "Công thức tính công cơ học khi lực kéo F cùng phương với hướng chuyển dời quãng đường s là: A = F × s.",
+    "isTrue": true,
+    "explanation": "A = F × s, đơn vị chuẩn trong hệ SI là Joule (J), 1 J = 1 N.m.",
+    "topic": "Công & Công suất"
+  },
+  {
+    "id": "phy-tf-14",
+    "statement": "Đơn vị đo công suất trong hệ SI là Joule (J).",
+    "isTrue": false,
+    "explanation": "Đơn vị đo công suất là Watt (W), 1 W = 1 J/s. Joule là đơn vị đo của công và năng lượng.",
+    "topic": "Công & Công suất"
+  },
+  {
+    "id": "phy-tf-15",
+    "statement": "Nhiệt năng của một vật là tổng động năng của các phân tử cấu tạo nên vật.",
+    "isTrue": true,
+    "explanation": "Nhiệt độ của vật càng cao thì các phân tử chuyển động càng nhanh, nhiệt năng của vật càng lớn.",
+    "topic": "Nhiệt học"
+  },
+  {
+    "id": "phy-tf-16",
+    "statement": "Kim loại là chất dẫn nhiệt kém hơn nhiều so với gỗ và không khí.",
+    "isTrue": false,
+    "explanation": "Kim loại dẫn nhiệt rất tốt; gỗ, len bông và chất khí dẫn nhiệt kém.",
+    "topic": "Nhiệt học"
+  },
+  {
+    "id": "phy-tf-17",
+    "statement": "Đối lưu là hình thức truyền nhiệt chủ yếu trong chất lỏng và chất khí.",
+    "isTrue": true,
+    "explanation": "Đối lưu là sự truyền nhiệt bằng các dòng chất lỏng hoặc chất khí di chuyển ngược chiều nhau.",
+    "topic": "Nhiệt học"
+  },
+  {
+    "id": "phy-tf-18",
+    "statement": "Tia sáng truyền trong môi trường trong suốt và đồng tính luôn luôn theo đường cong uốn lượn.",
+    "isTrue": false,
+    "explanation": "Định luật truyền thẳng ánh sáng: Trong môi trường trong suốt và đồng tính, ánh sáng truyền theo đường thẳng.",
+    "topic": "Quang học"
+  },
+  {
+    "id": "phy-tf-19",
+    "statement": "Trong hiện tượng phản xạ ánh sáng, góc phản xạ luôn luôn bằng góc tới (i' = i).",
+    "isTrue": true,
+    "explanation": "Theo định luật phản xạ ánh sáng: tia phản xạ nằm trong mặt phẳng tới và góc phản xạ bằng góc tới.",
+    "topic": "Quang học"
+  },
+  {
+    "id": "phy-tf-20",
+    "statement": "Thấu kính hội tụ có phần rìa dày hơn phần giữa.",
+    "isTrue": false,
+    "explanation": "Thấu kính hội tụ có phần rìa mỏng hơn phần giữa (ngược lại, thấu kính phân kì có rìa dày hơn giữa).",
+    "topic": "Quang học"
+  },
+  {
+    "id": "phy-tf-21",
+    "statement": "Tia sáng đi qua quang tâm O của thấu kính hội tụ thì truyền thẳng, không bị đổi hướng.",
+    "isTrue": true,
+    "explanation": "Mọi tia sáng đi qua quang tâm O của cả thấu kính hội tụ và phân kì đều truyền thẳng.",
+    "topic": "Quang học"
+  },
+  {
+    "id": "phy-tf-22",
+    "statement": "Ảnh tạo bởi gương phẳng là ảnh thật và có thể hứng được trên màn chắn.",
+    "isTrue": false,
+    "explanation": "Ảnh tạo bởi gương phẳng là ảnh ảo, không hứng được trên màn chắn và có độ lớn bằng vật.",
+    "topic": "Quang học"
+  },
+  {
+    "id": "phy-tf-23",
+    "statement": "Theo định luật Ôm, cường độ dòng điện tỉ lệ thuận với hiệu điện thế và tỉ lệ nghịch với điện trở: I = U / R.",
+    "isTrue": true,
+    "explanation": "I = U / R, trong đó I tính bằng Ampe (A), U tính bằng Volt (V), R tính bằng Ohm (Ω).",
+    "topic": "Điện học"
+  },
+  {
+    "id": "phy-tf-24",
+    "statement": "Trong đoạn mạch gồm hai điện trở mắc nối tiếp, điện trở tương đương bằng tổng các điện trở: R_tđ = R1 + R2.",
+    "isTrue": true,
+    "explanation": "Mạch nối tiếp: R_tđ = R1 + R2; I = I1 = I2; U = U1 + U2.",
+    "topic": "Điện học"
+  },
+  {
+    "id": "phy-tf-25",
+    "statement": "Cầu chì và aptomat được mắc nối tiếp với thiết bị điện để ngắt mạch khi dòng điện vượt quá mức an toàn.",
+    "isTrue": true,
+    "explanation": "Khi xảy ra đoản mạch hoặc quá tải, cầu chì chảy ra hoặc aptomat tự ngắt để bảo vệ mạch điện an toàn.",
+    "topic": "Điện học"
+  }
+]

@@ -1,0 +1,547 @@
+[
+  {
+    "id": "phy-g8-b01-mcq-001",
+    "lessonId": "phy-g8-b01",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "density-definition"
+    ],
+    "difficulty": 1,
+    "prompt": "Khối lượng riêng của một chất được xác định bằng đại lượng nào sau đây?",
+    "knowledge": [
+      "formula.density"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Thể tích của một đơn vị khối lượng chất đó"
+        },
+        {
+          "id": "opt-b",
+          "label": "Khối lượng của vật nhân với thể tích của vật"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khối lượng của một đơn vị thể tích chất đó"
+        },
+        {
+          "id": "opt-d",
+          "label": "Trọng lượng của toàn bộ vật thể đó"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hãy nhớ lại công thức D = m / V, khi V = 1 đơn vị thể tích thì D bằng gì?"
+      },
+      {
+        "level": 2,
+        "text": "Khối lượng riêng là khối lượng của một đơn vị thể tích (1 m³ hoặc 1 cm³) chất đó."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định khái niệm",
+        "body": "Đề bài yêu cầu định nghĩa đại lượng khối lượng riêng của một chất."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 13), khối lượng riêng của một chất là khối lượng của một đơn vị thể tích chất đó."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Khối lượng của một đơn vị thể tích chất đó**."
+      }
+    ],
+    "finalSolution": "Khối lượng riêng của một chất là **khối lượng của một đơn vị thể tích** chất đó.",
+    "commonMistakes": [
+      {
+        "id": "confuse-density-volume",
+        "message": "Bạn đã nhầm lẫn giữa khối lượng riêng (khối lượng / thể tích) và thể tích riêng (thể tích / khối lượng)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b01-mcq-002",
+    "lessonId": "phy-g8-b01",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "density-unit-si"
+    ],
+    "difficulty": 1,
+    "prompt": "Đơn vị đo khối lượng riêng chuẩn trong Hệ đo lường quốc tế (hệ SI) là:",
+    "knowledge": [
+      "formula.density"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Gam trên xentimét khối (g/cm³)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Kilôgam trên mét khối (kg/m³)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Kilôgam trên lít (kg/L)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Niutơn trên mét khối (N/m³)"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trong hệ SI, khối lượng đo bằng kg, thể tích đo bằng m³."
+      },
+      {
+        "level": 2,
+        "text": "Từ D = m / V, đơn vị SI tương ứng là kg/m³."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định đơn vị SI",
+        "body": "Đề bài yêu cầu chỉ ra đơn vị khối lượng riêng trong hệ đo lường quốc tế SI."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đơn vị SI của m và V",
+        "body": "Khối lượng đo bằng kg, thể tích đo bằng m³. Do đó đơn vị khối lượng riêng là kg/m³."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đơn vị đo khối lượng riêng trong hệ SI là **kg/m³**."
+      }
+    ],
+    "finalSolution": "Đơn vị chuẩn đo khối lượng riêng trong hệ SI là **kg/m³**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-g-cm3-as-si",
+        "message": "g/cm³ là đơn vị thường dùng trong phòng thí nghiệm hóa học/vật lý, nhưng đơn vị chuẩn quốc tế hệ SI là kg/m³."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b01-mcq-003",
+    "lessonId": "phy-g8-b01",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "density-unit-conversion"
+    ],
+    "difficulty": 1,
+    "prompt": "Mối quan hệ quy đổi chuẩn giữa hai đơn vị đo khối lượng riêng g/cm³ và kg/m³ là:",
+    "knowledge": [
+      "formula.density"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "1 g/cm³ = 1 000 kg/m³"
+        },
+        {
+          "id": "opt-b",
+          "label": "1 g/cm³ = 1 kg/m³"
+        },
+        {
+          "id": "opt-c",
+          "label": "1 g/cm³ = 0,001 kg/m³"
+        },
+        {
+          "id": "opt-d",
+          "label": "1 g/cm³ = 100 kg/m³"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "1 g = 0,001 kg và 1 cm³ = 0,000001 m³ = 10^(-6) m³."
+      },
+      {
+        "level": 2,
+        "text": "Lấy 0,001 chia cho 0,000001 ta được 1 000."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Yêu cầu quy đổi",
+        "body": "Tìm tỉ số quy đổi giữa 1 g/cm³ sang kg/m³."
+      },
+      {
+        "kind": "compute",
+        "title": "Quy đổi từng đơn vị",
+        "body": "$1\\text{ g} = 10^{-3}\\text{ kg}$; $1\\text{ cm}^3 = 10^{-6}\\text{ m}^3$ $\\Rightarrow 1\\text{ g/cm}^3 = \\frac{10^{-3}\\text{ kg}}{10^{-6}\\text{ m}^3} = 1\\,000\\text{ kg/m}^3$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hệ thức đúng là **1 g/cm³ = 1 000 kg/m³**."
+      }
+    ],
+    "finalSolution": "Hệ thức quy đổi chuẩn: **$1\\text{ g/cm}^3 = 1\\,000\\text{ kg/m}^3$**.",
+    "commonMistakes": [
+      {
+        "id": "divide-instead-of-multiply",
+        "message": "Nhiều bạn nghĩ g nhỏ hơn kg nên 1 g/cm³ = 0,001 kg/m³. Nhưng cm³ nhỏ hơn m³ tới 1 triệu lần, nên 1 g/cm³ = 1 000 kg/m³."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b01-num-004",
+    "lessonId": "phy-g8-b01",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "density-calc-mass"
+    ],
+    "difficulty": 2,
+    "prompt": "Một khối sắt đặc có thể tích V = 0,02 m³. Biết khối lượng riêng của sắt là D = 7 800 kg/m³. Khối lượng của khối sắt này là bao nhiêu kg?",
+    "knowledge": [
+      "density.iron",
+      "formula.density"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 156,
+      "unit": "kg",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ công thức D = m / V, hãy suy ra công thức tính khối lượng m."
+      },
+      {
+        "level": 2,
+        "text": "Khối lượng m = D x V = 7 800 x 0,02."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$V = 0,02\\text{ m}^3$; $D = 7\\,800\\text{ kg/m}^3$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính khối lượng",
+        "body": "Từ $D = \\frac{m}{V} \\Rightarrow m = D \\times V$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$m = 7\\,800 \\times 0,02 = 156\\text{ kg}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khối lượng của khối sắt là **156 kg**."
+      }
+    ],
+    "finalSolution": "Khối lượng của khối sắt: $m = D \\times V = 7\\,800 \\times 0,02 = 156\\text{ kg}$.",
+    "commonMistakes": [
+      {
+        "id": "divide-instead-of-multiply",
+        "message": "Bạn đã lấy D chia cho V thay vì nhân: m = D * V = 156 kg.",
+        "trapAnswers": [
+          "390000",
+          "390000 kg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b01-num-005",
+    "lessonId": "phy-g8-b01",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "density-calc-volume"
+    ],
+    "difficulty": 2,
+    "prompt": "Một thỏi nhôm có khối lượng m = 540 g. Biết khối lượng riêng của nhôm là D = 2,7 g/cm³. Thể tích của thỏi nhôm này là bao nhiêu cm³?",
+    "knowledge": [
+      "density.aluminum",
+      "formula.density"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 200,
+      "unit": "cm³",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ công thức D = m / V, hãy suy ra công thức tính thể tích V."
+      },
+      {
+        "level": 2,
+        "text": "Thể tích V = m / D = 540 / 2,7."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$m = 540\\text{ g}$; $D = 2,7\\text{ g/cm}^3$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính thể tích",
+        "body": "Từ $D = \\frac{m}{V} \\Rightarrow V = \\frac{m}{D}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$V = \\frac{540}{2,7} = 200\\text{ cm}^3$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thể tích của thỏi nhôm là **200 cm³**."
+      }
+    ],
+    "finalSolution": "Thể tích thỏi nhôm: $V = \\frac{m}{D} = \\frac{540}{2,7} = 200\\text{ cm}^3$.",
+    "commonMistakes": [
+      {
+        "id": "multiply-instead-of-divide",
+        "message": "Bạn đã lấy m nhân với D thay vì chia: V = m / D.",
+        "trapAnswers": [
+          "1458",
+          "1458 cm3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b01-num-006",
+    "lessonId": "phy-g8-b01",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "density-calc-water-mass"
+    ],
+    "difficulty": 2,
+    "prompt": "Một bể nước hình hộp chữ nhật có dung tích chứa được V = 2,5 m³ nước. Biết khối lượng riêng của nước nguyên chất là D = 1 000 kg/m³. Khối lượng của lượng nước chứa đầy trong bể là bao nhiêu kg?",
+    "knowledge": [
+      "density.water",
+      "formula.density"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 2500,
+      "unit": "kg",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp dụng công thức m = D x V."
+      },
+      {
+        "level": 2,
+        "text": "Khối lượng nước m = 1 000 x 2,5."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$V = 2,5\\text{ m}^3$; $D = 1\\,000\\text{ kg/m}^3$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính khối lượng",
+        "body": "$m = D \\times V$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$m = 1\\,000 \\times 2,5 = 2\\,500\\text{ kg}$ (tương đương 2,5 tấn)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khối lượng nước trong bể là **2 500 kg**."
+      }
+    ],
+    "finalSolution": "Khối lượng nước trong bể: $m = D \\times V = 1\\,000 \\times 2,5 = 2\\,500\\text{ kg}$.",
+    "commonMistakes": [
+      {
+        "id": "forgot-unit-scale",
+        "message": "Cần chú ý đơn vị kg: 2,5 m3 nước có khối lượng là 2 500 kg chứ không phải 250 kg hay 2,5 kg."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b01-tf-007",
+    "lessonId": "phy-g8-b01",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "density-properties-tf"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai của các khẳng định sau về khối lượng riêng:",
+    "knowledge": [
+      "density.water",
+      "density.oil",
+      "formula.density"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Khối lượng riêng là thuộc tính đặc trưng của chất, không thay đổi khi ta cưa nhỏ hoặc đẽo gọt vật thành hình dạng khác.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Hệ thức quy đổi đơn vị là 1 kg/m³ = 1 000 g/cm³.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Dầu ăn nổi trên mặt nước vì khối lượng riêng của dầu ăn (khoảng 800 kg/m³) nhỏ hơn khối lượng riêng của nước (1 000 kg/m³).",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khối lượng riêng phụ thuộc vào chất liệu cấu tạo, không phụ thuộc vào kích thước hay hình dạng vật thể."
+      },
+      {
+        "level": 2,
+        "text": "Nhớ lại quy tắc đổi: 1 g/cm³ mới bằng 1 000 kg/m³."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 1",
+        "body": "Cắt nhỏ thanh sắt thì tỉ số m/V của từng mẩu vẫn giữ nguyên bằng 7 800 kg/m³ -> Đúng."
+      },
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 2",
+        "body": "1 g/cm³ = 1 000 kg/m³, do đó 1 kg/m³ = 0,001 g/cm³ -> Mệnh đề 2 Sai."
+      },
+      {
+        "kind": "identify",
+        "title": "Phân tích mệnh đề 3",
+        "body": "Dầu ăn có D = 800 kg/m³ < D_nước = 1 000 kg/m³ nên dầu ăn nổi trên nước -> Đúng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự trả lời đúng: Đúng - Sai - Đúng."
+      }
+    ],
+    "finalSolution": "Mệnh đề 1: **Đúng**; Mệnh đề 2: **Sai**; Mệnh đề 3: **Đúng**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-unit-inverse",
+        "message": "Nhiều bạn nhớ nhầm hướng đổi đơn vị: 1 g/cm³ = 1 000 kg/m³, chứ không phải 1 kg/m³ = 1 000 g/cm³."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b01-mcq-008",
+    "lessonId": "phy-g8-b01",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "density-comparison"
+    ],
+    "difficulty": 3,
+    "prompt": "Một thỏi nhôm đặc và một thỏi sắt đặc có cùng thể tích V = 100 cm³. Biết khối lượng riêng của nhôm là D_Al = 2,7 g/cm³ và của sắt là D_Fe = 7,8 g/cm³. Nhận định nào sau đây về khối lượng của hai thỏi kim loại là chính xác?",
+    "knowledge": [
+      "density.iron",
+      "density.aluminum",
+      "formula.density"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Thỏi sắt nặng hơn thỏi nhôm một lượng là 510 g"
+        },
+        {
+          "id": "opt-b",
+          "label": "Thỏi nhôm nặng hơn thỏi sắt một lượng là 510 g"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hai thỏi có khối lượng hoàn toàn bằng nhau vì có cùng thể tích"
+        },
+        {
+          "id": "opt-d",
+          "label": "Thỏi sắt nặng gấp 10 lần thỏi nhôm"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tính khối lượng của từng thỏi bằng công thức m = D x V."
+      },
+      {
+        "level": 2,
+        "text": "m_Al = 2,7 x 100 = 270 g; m_Fe = 7,8 x 100 = 780 g. Lấy hiệu số giữa hai khối lượng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$V = 100\\text{ cm}^3$; $D_{\\text{Al}} = 2,7\\text{ g/cm}^3$; $D_{\\text{Fe}} = 7,8\\text{ g/cm}^3$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính khối lượng từng vật",
+        "body": "$m_{\\text{Al}} = 2,7 \\times 100 = 270\\text{ g}$; $m_{\\text{Fe}} = 7,8 \\times 100 = 780\\text{ g}$."
+      },
+      {
+        "kind": "compute",
+        "title": "So sánh chênh lệch",
+        "body": "$\\Delta m = m_{\\text{Fe}} - m_{\\text{Al}} = 780 - 270 = 510\\text{ g}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thỏi sắt nặng hơn thỏi nhôm **510 g**."
+      }
+    ],
+    "finalSolution": "Khối lượng nhôm là $270\\text{ g}$, sắt là $780\\text{ g}$. Thỏi sắt **nặng hơn thỏi nhôm 510 g**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-equal-volume-with-equal-mass",
+        "message": "Cùng thể tích nhưng hai chất khác nhau sẽ có khối lượng khác nhau vì khối lượng riêng của chúng khác nhau."
+      }
+    ]
+  }
+]

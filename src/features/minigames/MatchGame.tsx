@@ -4,7 +4,9 @@ import { Check, Sparkles, Layers } from 'lucide-react';
 import { MinigameShell, Formula } from '@/design-system';
 import { sound } from '@/lib/audio';
 import { useUserStore } from '@/features/gamification/useUserStore';
+import { useActiveSubject } from '@/content/subjects';
 import substancesData from '@/content/kb/substances.json';
+import physicsMatchPairs from '@/content/kb/physics/match-pairs.json';
 
 interface Substance {
   formula: string;
@@ -22,10 +24,18 @@ const TYPE_NAMES: Record<string, string> = {
   'non-metal': 'Phi kim',
   alkane: 'Alkane',
   alcohol: 'Alcohol',
+  'Cơ học': 'Cơ học',
+  'Năng lượng': 'Năng lượng',
+  'Điện học': 'Điện học',
+  'Quang học': 'Quang học',
+  'Nhiệt học': 'Nhiệt học',
 };
 
 export const MatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const { addXp } = useUserStore();
+  const { subject: activeSubject } = useActiveSubject();
+  const isPhysics = activeSubject === 'physics';
+
   const [timeLeft, setTimeLeft] = useState(50);
   const [score, setScore] = useState(0);
   const [combo, setCombo] = useState(0);
@@ -38,14 +48,19 @@ export const MatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const [matchedFormulas, setMatchedFormulas] = useState<Set<string>>(new Set());
   const [wrongFlash, setWrongFlash] = useState<{ left: string; right: string } | null>(null);
 
-  // Pick 5 distinct substances for each round
+  // Pick 5 distinct substances or formulas for each round
   const roundSubstances = useMemo(() => {
+    if (isPhysics) {
+      const valid = [...physicsMatchPairs];
+      const shuffled = valid.sort(() => 0.5 - Math.random());
+      return shuffled.slice(0, 5);
+    }
     const valid = (substancesData as Substance[]).filter(
       (s) => s.formula.length <= 8 && s.nameVi
     );
     const shuffled = [...valid].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, 5);
-  }, [roundNumber, isGameOver]);
+  }, [roundNumber, isGameOver, isPhysics]);
 
   const leftItems = useMemo(
     () => [...roundSubstances].sort(() => 0.5 - Math.random()),
@@ -159,8 +174,12 @@ export const MatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
 
   return (
     <MinigameShell
-      title="Ghép đôi hợp chất & Tên gọi"
-      description="Kết nối công thức hóa học với tên gọi chuẩn IUPAC"
+      title={isPhysics ? 'Ghép đôi Công thức & Đơn vị Vật lý' : 'Ghép đôi hợp chất & Tên gọi'}
+      description={
+        isPhysics
+          ? 'Kết nối công thức Vật lý với tên gọi đại lượng và đơn vị đo chuẩn'
+          : 'Kết nối công thức hóa học với tên gọi chuẩn IUPAC'
+      }
       skillId="match-substance"
       timeLeft={timeLeft}
       score={score}
@@ -175,7 +194,7 @@ export const MatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
         <div className="flex items-center justify-between text-xs font-bold text-slate-400 px-1">
           <span className="flex items-center gap-1.5 text-slate-300">
             <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
-            Ghép Công thức ↔ Tên / Phân loại
+            {isPhysics ? 'Ghép Công thức ↔ Đại lượng & Đơn vị' : 'Ghép Công thức ↔ Tên / Phân loại'}
           </span>
           <span className="px-2.5 py-0.5 rounded-full bg-cyan-950/80 border border-cyan-700/60 text-cyan-300 font-black text-[11px] flex items-center gap-1">
             <Layers className="w-3 h-3" />
@@ -184,10 +203,10 @@ export const MatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
         </div>
 
         <div className="grid grid-cols-2 gap-3">
-          {/* Left Column: Chemical Formulas */}
+          {/* Left Column: Formulas / Symbols */}
           <div className="space-y-2.5">
             <div className="text-[10px] font-black text-cyan-400 uppercase tracking-widest text-center py-1 bg-cyan-950/30 rounded-xl border border-cyan-900/40">
-              CÔNG THỨC HÓA HỌC
+              {isPhysics ? 'CÔNG THỨC / KÝ HIỆU' : 'CÔNG THỨC HÓA HỌC'}
             </div>
             {leftItems.map((sub) => {
               const isMatched = matchedFormulas.has(sub.formula);
@@ -210,7 +229,13 @@ export const MatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                       : 'bg-gradient-to-b from-[#1c2c36] to-[#121c22] border-[#2e4756] text-slate-100 hover:border-slate-500 shadow-[0_4px_0_0_#0c1419]'
                   }`}
                 >
-                  <Formula code={sub.formula} className="text-sm sm:text-base font-black tracking-wide" />
+                  {isPhysics ? (
+                    <span className="text-sm sm:text-base font-black tracking-wide font-mono text-cyan-200">
+                      {sub.formula}
+                    </span>
+                  ) : (
+                    <Formula code={sub.formula} className="text-sm sm:text-base font-black tracking-wide" />
+                  )}
                   {isMatched && (
                     <div className="w-5 h-5 rounded-full bg-emerald-500/20 border border-emerald-400/60 flex items-center justify-center shrink-0">
                       <Check className="w-3.5 h-3.5 text-emerald-400 stroke-[3]" />
@@ -224,7 +249,7 @@ export const MatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
           {/* Right Column: Names & Types */}
           <div className="space-y-2.5">
             <div className="text-[10px] font-black text-amber-400 uppercase tracking-widest text-center py-1 bg-amber-950/30 rounded-xl border border-amber-900/40">
-              TÊN GỌI / PHÂN LOẠI
+              {isPhysics ? 'ĐẠI LƯỢNG / ĐƠN VỊ' : 'TÊN GỌI / PHÂN LOẠI'}
             </div>
             {rightItems.map((sub) => {
               const isMatched = matchedFormulas.has(sub.formula);

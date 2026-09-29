@@ -1,0 +1,104 @@
+[
+  {
+    "id": "mechanics.speed",
+    "domain": "Cơ học",
+    "name": "Công thức tính tốc độ",
+    "formula": "v = s / t",
+    "variables": [
+      { "symbol": "v", "name": "Tốc độ", "unit": "m/s hoặc km/h" },
+      { "symbol": "s", "name": "Quãng đường", "unit": "m hoặc km" },
+      { "symbol": "t", "name": "Thời gian", "unit": "s hoặc h" }
+    ],
+    "notes": "1 m/s = 3.6 km/h"
+  },
+  {
+    "id": "mechanics.density",
+    "domain": "Cơ học",
+    "name": "Khối lượng riêng",
+    "formula": "D = m / V",
+    "variables": [
+      { "symbol": "D", "name": "Khối lượng riêng", "unit": "kg/m^3" },
+      { "symbol": "m", "name": "Khối lượng", "unit": "kg" },
+      { "symbol": "V", "name": "Thể tích", "unit": "m^3" }
+    ],
+    "notes": "1 g/cm^3 = 1000 kg/m^3"
+  },
+  {
+    "id": "mechanics.gravity_weight",
+    "domain": "Cơ học",
+    "name": "Liên hệ giữa trọng lượng và khối lượng",
+    "formula": "P = 10 * m",
+    "variables": [
+      { "symbol": "P", "name": "Trọng lượng", "unit": "N" },
+      { "symbol": "m", "name": "Khối lượng", "unit": "kg" }
+    ]
+  },
+  {
+    "id": "mechanics.pressure",
+    "domain": "Cơ học",
+    "name": "Áp suất chất rắn",
+    "formula": "p = F / S",
+    "variables": [
+      { "symbol": "p", "name": "Áp suất", "unit": "N/m^2 hoặc Pa" },
+      { "symbol": "F", "name": "Áp lực", "unit": "N" },
+      { "symbol": "S", "name": "Diện tích bị ép", "unit": "m^2" }
+    ]
+  },
+  {
+    "id": "mechanics.archimedes",
+    "domain": "Cơ học",
+    "name": "Lực đẩy Archimedes",
+    "formula": "F_A = d * V",
+    "variables": [
+      { "symbol": "F_A", "name": "Lực đẩy Archimedes", "unit": "N" },
+      { "symbol": "d", "name": "Trọng lượng riêng của chất lỏng", "unit": "N/m^3" },
+      { "symbol": "V", "name": "Thể tích phần chất lỏng bị vật chiếm chỗ", "unit": "m^3" }
+    ]
+  },
+  {
+    "id": "electricity.ohm_law",
+    "domain": "Điện học",
+    "name": "Định luật Ohm cho đoạn mạch",
+    "formula": "I = U / R",
+    "variables": [
+      { "symbol": "I", "name": "Cường độ dòng điện", "unit": "A" },
+      { "symbol": "U", "name": "Hiệu điện thế", "unit": "V" },
+      { "symbol": "R", "name": "Điện trở", "unit": "Ω" }
+    ]
+  },
+  {
+    "id": "electricity.power",
+    "domain": "Điện học",
+    "name": "Công suất điện",
+    "formula": "P = U * I",
+    "variables": [
+      { "symbol": "P", "name": "Công suất điện", "unit": "W" },
+      { "symbol": "U", "name": "Hiệu điện thế", "unit": "V" },
+      { "symbol": "I", "name": "Cường độ dòng điện", "unit": "A" }
+    ]
+  },
+  {
+    "id": "electricity.energy",
+    "domain": "Điện học",
+    "name": "Điện năng tiêu thụ (Công của dòng điện)",
+    "formula": "A = P * t = U * I * t",
+    "variables": [
+      { "symbol": "A", "name": "Điện năng tiêu thụ", "unit": "J hoặc kW.h" },
+      { "symbol": "P", "name": "Công suất", "unit": "W hoặc kW" },
+      { "symbol": "t", "name": "Thời gian", "unit": "s hoặc h" }
+    ],
+    "notes": "1 kW.h = 3 600 000 J = 3.6 MJ"
+  },
+  {
+    "id": "thermal.heat_transfer",
+    "domain": "Nhiệt học",
+    "name": "Nhiệt lượng thu vào / tỏa ra",
+    "formula": "Q = m * c * Δt",
+    "variables": [
+      { "symbol": "Q", "name": "Nhiệt lượng", "unit": "J" },
+      { "symbol": "m", "name": "Khối lượng", "unit": "kg" },
+      { "symbol": "c", "name": "Nhiệt dung riêng", "unit": "J/(kg.K)" },
+      { "symbol": "Δt", "name": "Độ tăng hoặc giảm nhiệt độ", "unit": "°C hoặc K" }
+    ]
+  }
+]

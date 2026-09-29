@@ -1,0 +1,79 @@
+{
+  "lessonId": "phy-g9-b13",
+  "nodeId": "phy-g9-b13-theory",
+  "title": "Lý thuyết: Cảm ứng điện từ & Dòng điện xoay chiều",
+  "subtitle": "Bài 14 SGK Khoa học tự nhiên 9 (Kết nối tri thức)",
+  "sgkBaiSo": 14,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm cốt lõi",
+      "badgeColor": "cyan",
+      "title": "1. Hiện tượng cảm ứng điện từ và điều kiện xuất hiện",
+      "content": "Năm 1831, nhà bác học Michael Faraday đã phát hiện ra hiện tượng dùng từ trường để tạo ra dòng điện:",
+      "bulletPoints": [
+        "Định nghĩa: Hiện tượng xuất hiện dòng điện trong cuộn dây dẫn kín khi số đường sức từ xuyên qua tiết diện của cuộn dây biến thiên gọi là hiện tượng cảm ứng điện từ.",
+        "Dòng điện cảm ứng: Dòng điện xuất hiện trong cuộn dây dẫn kín được gọi là dòng điện cảm ứng.",
+        "Điều kiện xuất hiện: Bắt buộc số đường sức từ xuyên qua tiết diện cuộn dây dẫn kín phải biến thiên (tăng lên hoặc giảm đi).",
+        "Các cách tạo dòng điện cảm ứng: Đưa nam châm lại gần hoặc ra xa cuộn dây; quay nam châm trước cuộn dây; đóng hoặc ngắt mạch điện của nam châm điện đặt gần cuộn dây."
+      ],
+      "callout": "Điều kiện cần và đủ: Nếu nam châm và cuộn dây đứng yên tương đối với nhau (số đường sức từ không đổi) thì KHÔNG xuất hiện dòng điện cảm ứng."
+    },
+    {
+      "id": "c2",
+      "badge": "Dòng điện xoay chiều",
+      "badgeColor": "amber",
+      "title": "2. Khái niệm dòng điện xoay chiều (AC)",
+      "content": "Khác với dòng điện một chiều (DC) từ pin và ắc quy chỉ chạy theo một chiều cố định:",
+      "bulletPoints": [
+        "Định nghĩa: Dòng điện có chiều luân phiên thay đổi liên tục theo thời gian được gọi là dòng điện xoay chiều (kí hiệu: AC hoặc dấu $\\sim$).",
+        "Cơ chế hình thành: Khi số đường sức từ xuyên qua tiết diện cuộn dây luân phiên tăng rồi giảm, dòng điện cảm ứng sinh ra trong cuộn dây cũng luân phiên đổi chiều.",
+        "Mạng điện gia đình: Dòng điện xoay chiều sử dụng trong gia đình ở Việt Nam có hiệu điện thế hiệu dụng $220\\text{ V}$ và tần số $50\\text{ Hz}$ (nghĩa là dòng điện đổi chiều 100 lần trong mỗi giây)."
+      ],
+      "callout": "Phân biệt kí hiệu: Dòng điện một chiều kí hiệu DC hoặc dấu '–'; dòng điện xoay chiều kí hiệu AC hoặc dấu '~'."
+    },
+    {
+      "id": "c3",
+      "badge": "Máy phát điện",
+      "badgeColor": "emerald",
+      "title": "3. Cấu tạo và nguyên tắc hoạt động của máy phát điện xoay chiều",
+      "content": "Máy phát điện xoay chiều biến đổi cơ năng thành điện năng dựa trên hiện tượng cảm ứng điện từ:",
+      "bulletPoints": [
+        "Hai bộ phận chính:",
+        "+ Nam châm (nam châm vĩnh cửu hoặc nam châm điện): Tạo ra từ trường.",
+        "+ Cuộn dây dẫn: Nơi xuất hiện dòng điện cảm ứng.",
+        "Phần quay và phần đứng yên: Bộ phận đứng yên gọi là stato; bộ phận quay gọi là rôto.",
+        "Nguyên tắc hoạt động: Khi rôto quay, số đường sức từ xuyên qua tiết diện cuộn dây biến thiên luân phiên, tạo ra dòng điện xoay chiều ở hai đầu cuộn dây.",
+        "Ứng dụng: Đi-na-mô xe đạp, máy phát điện gió, nhà máy thủy điện, nhiệt điện."
+      ],
+      "callout": "Quy mô lớn: Trong các nhà máy điện công nghiệp, rôto luôn là nam châm điện công suất lớn quay, còn stato là các cuộn dây phát điện đứng yên để tránh phóng tia lửa điện ở vành góp."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Dòng điện cảm ứng xuất hiện trong cuộn dây dẫn kín khi nào?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Khi số đường sức từ xuyên qua tiết diện cuộn dây biến thiên (tăng hoặc giảm)",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Khi đặt nam châm đứng yên hoàn toàn bên trong cuộn dây",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Khi cuộn dây đặt trong môi trường chân không không có từ trường",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Khi số đường sức từ xuyên qua cuộn dây luôn giữ ở giá trị cực đại không đổi",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 9 Bài 14: Dòng điện cảm ứng chỉ xuất hiện khi số đường sức từ xuyên qua tiết diện cuộn dây dẫn kín biến thiên."
+  }
+}

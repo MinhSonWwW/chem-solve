@@ -1,0 +1,501 @@
+[
+  {
+    "id": "phy-g7-b02-mcq-001",
+    "lessonId": "phy-g7-b02",
+    "sgkBaiSo": 9,
+    "skillIds": [
+      "speed-measuring-principles"
+    ],
+    "difficulty": 1,
+    "prompt": "Để đo tốc độ của một vật chuyển động bằng phương pháp thông thường, ta cần đo hai đại lượng nào sau đây?",
+    "knowledge": [
+      "speed.measurement.tools"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Quãng đường vật đi được và thể tích của vật"
+        },
+        {
+          "id": "opt-b",
+          "label": "Quãng đường vật đi được và thời gian vật đi quãng đường đó"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khối lượng của vật và lực tác dụng lên vật"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chiều dài của vật và nhiệt độ môi trường"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hãy nhớ lại công thức tính tốc độ: v = s / t."
+      },
+      {
+        "level": 2,
+        "text": "Trong công thức v = s / t, s là quãng đường và t là thời gian."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định đại lượng cần đo",
+        "body": "Từ định nghĩa tốc độ $v = \\frac{s}{t}$, muốn tính $v$ cần biết $s$ và $t$."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Để xác định tốc độ của vật, ta cần đo quãng đường vật đi được và thời gian đi hết quãng đường đó."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hai đại lượng cần đo là **Quãng đường vật đi được và thời gian vật đi quãng đường đó**."
+      }
+    ],
+    "finalSolution": "Cần đo **quãng đường** ($s$) và **thời gian** ($t$).",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b02-mcq-002",
+    "lessonId": "phy-g7-b02",
+    "sgkBaiSo": 9,
+    "skillIds": [
+      "speed-photogate-timer"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi đo thời gian chuyển động của xe đồ chơi trong phòng thực hành, việc sử dụng cổng quang điện kết nối với đồng hồ đo thời gian hiện số mang lại ưu điểm gì vượt trội?",
+    "knowledge": [
+      "speed.measurement.tools"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Độ chính xác cao, loại bỏ sai số do phản xạ bấm tay của con người"
+        },
+        {
+          "id": "opt-b",
+          "label": "Không cần dùng thước để đo quãng đường"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tự động đo được khối lượng của xe khi chạy"
+        },
+        {
+          "id": "opt-d",
+          "label": "Thiết bị không cần cấp điện vẫn hoạt động được"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đồng hồ bấm giây phụ thuộc vào phản xạ mắt nhìn - tay bấm của người đo, còn cổng quang điện đóng ngắt mạch thế nào?"
+      },
+      {
+        "level": 2,
+        "text": "Cổng quang điện hoạt động bằng cảm biến ánh sáng, tự động bật tắt đồng hồ ngay khi vật chắn chùm sáng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích ưu điểm thiết bị",
+        "body": "So sánh giữa đo thủ công (đồng hồ bấm giây) và đo tự động (cổng quang điện)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Cổng quang điện kết nối đồng hồ hiện số đóng ngắt mạch điện tự động trong tích tắc, giúp loại bỏ hoàn toàn sai số do phản xạ của người đo."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Ưu điểm lớn nhất là **Độ chính xác cao, loại bỏ sai số do phản xạ bấm tay của con người**."
+      }
+    ],
+    "finalSolution": "Cổng quang điện đo tự động giúp **loại bỏ sai số bấm tay** của con người và có độ chính xác cao.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b02-ord-003",
+    "lessonId": "phy-g7-b02",
+    "sgkBaiSo": 9,
+    "skillIds": [
+      "speed-measurement-steps"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp các thao tác sau theo đúng thứ tự quy trình đo tốc độ chạy của một bạn học sinh bằng đồng hồ bấm giây:",
+    "knowledge": [
+      "speed.measurement.tools"
+    ],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Dùng thước đo độ dài quãng đường s giữa vạch xuất phát và vạch đích",
+        "Đặt bạn học sinh ở vạch xuất phát và chuẩn bị sẵn đồng hồ bấm giây",
+        "Bấm đồng hồ chạy khi bạn xuất phát và dừng bấm khi bạn chạm vạch đích",
+        "Đọc thời gian t và áp dụng công thức v = s / t để tính tốc độ"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trước tiên phải có đường chạy và biết độ dài quãng đường, sau đó mới cho bạn học sinh xuất phát."
+      },
+      {
+        "level": 2,
+        "text": "Thứ tự: Đo khoảng cách đường chạy -> Chuẩn bị tại vạch xuất phát -> Bấm giờ khi chạy -> Tính tốc độ bằng công thức v = s / t."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quy trình thực nghiệm",
+        "body": "Sắp xếp 4 bước đo tốc độ bằng thước và đồng hồ bấm giây."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Các bước chuẩn xác",
+        "body": "1. Dùng thước đo quãng đường giữa vạch xuất phát và vạch đích.\\n2. Đặt bạn học sinh ở vạch xuất phát, chuẩn bị đồng hồ.\\n3. Bấm đồng hồ khi bạn xuất phát và dừng bấm khi chạm vạch đích.\\n4. Đọc thời gian và áp dụng công thức v = s / t để tính tốc độ."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự đúng là: Đo quãng đường -> Chuẩn bị xuất phát -> Bấm giờ chạy -> Tính tốc độ."
+      }
+    ],
+    "finalSolution": "Quy trình đo: 1. Đo quãng đường -> 2. Chuẩn bị xuất phát -> 3. Bấm giờ khi chạy -> 4. Tính toán kết quả.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b02-mcq-004",
+    "lessonId": "phy-g7-b02",
+    "sgkBaiSo": 9,
+    "skillIds": [
+      "speed-radar-gun"
+    ],
+    "difficulty": 2,
+    "prompt": "Thiết bị 'bắn tốc độ' được cảnh sát giao thông sử dụng để đo tốc độ phương tiện trên đường hoạt động dựa trên nguyên lí nào sau đây?",
+    "knowledge": [
+      "speed.measurement.tools"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Phát và thu chùm sóng vô tuyến (radar) hoặc laser phản xạ từ xe đang chạy"
+        },
+        {
+          "id": "opt-b",
+          "label": "Dùng dây cáp cảm ứng gắn trực tiếp vào bánh xe ô tô"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cân trọng lượng của xe khi chạy qua một tấm kim loại"
+        },
+        {
+          "id": "opt-d",
+          "label": "Đo độ ồn do động cơ xe phát ra khi tăng tốc"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Súng bắn tốc độ không cần chạm trực tiếp vào xe, vậy nó dùng tín hiệu gì truyền trong không gian?"
+      },
+      {
+        "level": 2,
+        "text": "Thiết bị phát sóng vô tuyến (hoặc tia laser) đến phương tiện và thu nhận tín hiệu phản xạ trở lại."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nguyên lí kỹ thuật",
+        "body": "Phương thức đo tốc độ từ xa của thiết bị súng bắn tốc độ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 7 Bài 9, thiết bị bắn tốc độ phát sóng vô tuyến hoặc laser về phía xe rồi thu chùm sóng phản xạ để máy tính phân tích và tính tốc độ xe."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nguyên lí đúng là **Phát và thu chùm sóng vô tuyến (radar) hoặc laser phản xạ từ xe**."
+      }
+    ],
+    "finalSolution": "Thiết bị bắn tốc độ hoạt động dựa trên **sóng vô tuyến hoặc tia laser phản xạ** từ xe.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b02-num-005",
+    "lessonId": "phy-g7-b02",
+    "sgkBaiSo": 9,
+    "skillIds": [
+      "speed-compute-experiment"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong thí nghiệm đo tốc độ xe lăn trên máng nghiêng, khoảng cách giữa hai cổng quang điện A và B là s = 0,5 m. Đồng hồ đo hiện số hiển thị thời gian xe đi từ cổng A đến cổng B là t = 0,25 s. Tốc độ chuyển động của xe lăn là bao nhiêu m/s?",
+    "knowledge": [
+      "speed.formula",
+      "speed.measurement.tools"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 2,
+      "unit": "m/s",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đề bài đã cho quãng đường s = 0,5 m và thời gian t = 0,25 s."
+      },
+      {
+        "level": 2,
+        "text": "Áp dụng công thức v = s / t: 0,5 chia 0,25."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Quãng đường $s = 0,5\\text{ m}$; Thời gian $t = 0,25\\text{ s}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính tốc độ",
+        "body": "$v = \\frac{s}{t}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$v = \\frac{0,5}{0,25} = 2\\text{ m/s}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tốc độ của xe lăn là **2 m/s**."
+      }
+    ],
+    "finalSolution": "Tốc độ của xe: $v = \\frac{s}{t} = \\frac{0,5}{0,25} = 2\\text{ m/s}$.",
+    "commonMistakes": [
+      {
+        "id": "wrong-decimal-division",
+        "message": "Chú ý phép chia số thập phân: 0,5 / 0,25 = 2 chứ không phải 0,2.",
+        "trapAnswers": [
+          "0.2",
+          "0,2",
+          "0.2 m/s",
+          "0,2 m/s"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b02-num-006",
+    "lessonId": "phy-g7-b02",
+    "sgkBaiSo": 9,
+    "skillIds": [
+      "speed-single-gate-measurement"
+    ],
+    "difficulty": 2,
+    "prompt": "Một xe đồ chơi có gắn tấm chắn sáng có bề rộng d = 2 cm. Khi xe chạy qua một cổng quang điện, đồng hồ hiện số ghi nhận thời gian chắn sáng là 0,04 s. Tốc độ của xe khi đi qua cổng quang điện đó là bao nhiêu m/s?",
+    "knowledge": [
+      "speed.formula",
+      "speed.measurement.tools"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 0.5,
+      "unit": "m/s",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Quãng đường xe đi trong lúc chắn sáng chính bằng bề rộng của tấm chắn sáng: d = 2 cm = 0,02 m."
+      },
+      {
+        "level": 2,
+        "text": "Tính tốc độ: v = d / t = 0,02 / 0,04."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Bề rộng tấm chắn $d = 2\\text{ cm} = 0,02\\text{ m}$; Thời gian chắn sáng $t = 0,04\\text{ s}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính",
+        "body": "Tốc độ qua cổng: $v = \\frac{d}{t}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$v = \\frac{0,02}{0,04} = 0,5\\text{ m/s}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tốc độ của xe qua cổng quang điện là **0,5 m/s**."
+      }
+    ],
+    "finalSolution": "Đổi $d = 2\\text{ cm} = 0,02\\text{ m}$. Tốc độ: $v = \\frac{0,02}{0,04} = 0,5\\text{ m/s}$.",
+    "commonMistakes": [
+      {
+        "id": "forgot-to-convert-cm",
+        "message": "Bạn đã quên đổi 2 cm sang mét, lấy 2 chia cho 0,04 ra 50 cm/s chứ không phải m/s.",
+        "trapAnswers": [
+          "50",
+          "50 m/s"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b02-tf-007",
+    "lessonId": "phy-g7-b02",
+    "sgkBaiSo": 9,
+    "skillIds": [
+      "speed-measuring-notes"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai của các khẳng định sau về phương pháp đo tốc độ:",
+    "knowledge": [
+      "speed.measurement.tools"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Để giảm sai số ngẫu nhiên khi đo tốc độ trong phòng thực hành, ta nên đo nhiều lần (ít nhất 3 lần) và tính giá trị trung bình.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Đồng hồ bấm giây đo tốc độ chính xác hơn cổng quang điện vì người đo có thể chủ động bấm theo ý muốn.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Tấm chắn sáng cắm trên xe trong thí nghiệm dùng cổng quang điện càng rộng thì thời gian chắn sáng đo được càng lớn.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Phản xạ bấm tay của con người luôn có độ trễ nhất định từ 0,1s đến 0,2s gây ra sai số."
+      },
+      {
+        "level": 2,
+        "text": "Thời gian t = d / v, nếu tốc độ v không đổi, bề rộng d càng lớn thì thời gian chắn sáng t càng lớn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích từng mệnh đề",
+        "body": "Đánh giá tính chính xác của 3 phát biểu về kỹ thuật thực hành đo tốc độ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "- Mệnh đề 1: ĐÚNG. Đo nhiều lần lấy trung bình là quy tắc chuẩn để giảm sai số ngẫu nhiên.\\n- Mệnh đề 2: SAI. Đồng hồ bấm giây phụ thuộc phản xạ con người nên kém chính xác hơn cổng quang điện.\\n- Mệnh đề 3: ĐÚNG. Theo $t = \\frac{d}{v}$, tấm chắn sáng càng rộng thì thời gian chắn chùm sáng càng dài."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự đúng: **Đúng - Sai - Đúng**."
+      }
+    ],
+    "finalSolution": "Mệnh đề 1: **Đúng**; Mệnh đề 2: **Sai**; Mệnh đề 3: **Đúng**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b02-mcq-008",
+    "lessonId": "phy-g7-b02",
+    "sgkBaiSo": 9,
+    "skillIds": [
+      "speed-error-analysis"
+    ],
+    "difficulty": 3,
+    "prompt": "Trong cuộc thi chạy cự li ngắn 100 m tại trường, nguyên nhân chủ yếu dẫn đến sai số trong việc bấm giờ thủ công của trọng tài là:",
+    "knowledge": [
+      "speed.measurement.tools"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Thời gian phản xạ thần kinh của trọng tài (độ trễ từ khi mắt nhìn thấy đến khi tay bấm nút)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Chiều dài đường chạy 100 m bị co dãn do nhiệt"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tiếng súng phát lệnh chạy bị méo tiếng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Đồng hồ bấm giây chạy nhanh chậm theo nhiệt độ thời tiết"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi nhìn thấy vận động viên xuất phát hoặc về đích, não bộ cần bao nhiêu thời gian để truyền tín hiệu đến ngón tay bấm nút?"
+      },
+      {
+        "level": 2,
+        "text": "Thời gian phản xạ thông thường của người khoảng 0,1 s đến 0,2 s, đây là nguyên nhân sai số lớn nhất khi bấm giờ thủ công."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích nguyên nhân sai số",
+        "body": "Tìm nguyên nhân chính gây sai số khi con người bấm giờ chuyển động nhanh."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Thời gian phản ứng (phản xạ) của con người khoảng 0,1 s - 0,2 s, nên việc bấm nút thủ công luôn có độ trễ nhất định so với thời điểm thực tế."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nguyên nhân chủ yếu là **Thời gian phản xạ thần kinh của trọng tài**."
+      }
+    ],
+    "finalSolution": "Sai số chính là do **thời gian phản xạ của người đo** (độ trễ thần kinh khi bấm nút).",
+    "commonMistakes": []
+  }
+]

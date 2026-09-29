@@ -1,0 +1,554 @@
+[
+  {
+    "id": "phy-g9-b16-mcq-001",
+    "lessonId": "phy-g9-b16",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "renewable-energy-definition"
+    ],
+    "difficulty": 1,
+    "prompt": "Nguồn năng lượng tái tạo được định nghĩa là nguồn năng lượng có đặc điểm nào sau đây?",
+    "knowledge": [
+      "energy.renewable"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chỉ tạo ra được từ các phản ứng phân hạch hạt nhân nhân tạo"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cần hàng trăm triệu năm chôn vùi trong lòng đất mới hình thành được"
+        },
+        {
+          "id": "opt-c",
+          "label": "Có sẵn trong tự nhiên, liên tục được phục hồi hoặc vô tận, không bị cạn kiệt khi khai thác"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chỉ sử dụng được một lần duy nhất và biến mất vĩnh viễn"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ 'tái tạo' nghĩa là tự phục hồi lại được sau khi sử dụng."
+      },
+      {
+        "level": 2,
+        "text": "Theo SGK KHTN 9 Bài 17: Năng lượng tái tạo là nguồn năng lượng liên tục được phục hồi hoặc vô tận trong tự nhiên."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khái niệm năng lượng tái tạo",
+        "body": "Đề bài yêu cầu chỉ ra định nghĩa nguồn năng lượng tái tạo."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 17: Năng lượng tái tạo là nguồn năng lượng có sẵn trong tự nhiên, liên tục được phục hồi hoặc vô tận, không bị cạn kiệt trong quá trình khai thác của con người (như gió, mặt trời, nước, địa nhiệt)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Có sẵn trong tự nhiên, liên tục được phục hồi hoặc vô tận**."
+      }
+    ],
+    "finalSolution": "Năng lượng tái tạo là nguồn năng lượng **liên tục được phục hồi hoặc vô tận, không bị cạn kiệt**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-non-renewable",
+        "message": "Nguồn năng lượng mất hàng trăm triệu năm để hình thành là năng lượng hóa thạch (không tái tạo)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b16-mcq-002",
+    "lessonId": "phy-g9-b16",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "renewable-energy-types-group"
+    ],
+    "difficulty": 1,
+    "prompt": "Nhóm nào sau đây bao gồm toàn bộ các nguồn năng lượng tái tạo?",
+    "knowledge": [
+      "energy.renewable"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Than đá, dầu mỏ, khí thiên nhiên và năng lượng mặt trời"
+        },
+        {
+          "id": "opt-b",
+          "label": "Xăng sinh học E5, than bùn, khí hóa lỏng LPG và dầu diesel"
+        },
+        {
+          "id": "opt-c",
+          "label": "Năng lượng mặt trời, năng lượng gió, thủy điện và năng lượng sinh khối"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nhiên liệu khí đốt, uranium, than củi và dầu hỏa"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Loại bỏ các phương án có chứa than đá, dầu mỏ hoặc khí đốt hóa thạch."
+      },
+      {
+        "level": 2,
+        "text": "Mặt trời, gió, nước chảy và sinh khối đều là các nguồn năng lượng tái tạo tự nhiên."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân loại nguồn năng lượng",
+        "body": "Chọn nhóm chỉ gồm các dạng năng lượng tái tạo."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 17: Các nguồn năng lượng tái tạo chủ yếu gồm năng lượng mặt trời, năng lượng gió, năng lượng nước (thủy điện, thủy triều), năng lượng sinh khối và năng lượng địa nhiệt."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Năng lượng mặt trời, năng lượng gió, thủy điện và sinh khối**."
+      }
+    ],
+    "finalSolution": "Nhóm gồm toàn bộ năng lượng tái tạo: **mặt trời, gió, thủy điện và sinh khối**.",
+    "commonMistakes": [
+      {
+        "id": "mix-with-fossil",
+        "message": "Phương án B có than đá, dầu mỏ là nhiên liệu hóa thạch không tái tạo."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b16-mcq-003",
+    "lessonId": "phy-g9-b16",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "solar-panel-energy-conversion"
+    ],
+    "difficulty": 1,
+    "prompt": "Tấm pin quang điện (pin mặt trời) lắp đặt trên mái nhà thực hiện sự chuyển hóa trực tiếp dạng năng lượng nào thành dạng năng lượng nào?",
+    "knowledge": [
+      "energy.renewable"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Nhiệt năng chuyển hóa thành cơ năng quay cánh quạt"
+        },
+        {
+          "id": "opt-b",
+          "label": "Quang năng từ ánh sáng Mặt Trời chuyển hóa thành điện năng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Điện năng chuyển hóa thành năng lượng hạt nhân"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hóa năng chuyển hóa thành thế năng trọng trường"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Pin quang điện hấp thụ ánh sáng mặt trời và phát ra dòng điện."
+      },
+      {
+        "level": 2,
+        "text": "Quá trình này biến đổi quang năng thành điện năng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Chuyển hóa năng lượng của pin mặt trời",
+        "body": "Xác định dạng năng lượng đầu vào và đầu ra của pin quang điện."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 17: Pin quang điện (solar cell) hoạt động dựa trên hiệu ứng quang điện trong chất bán dẫn, biến đổi trực tiếp quang năng của ánh sáng Mặt Trời thành điện năng cung cấp cho tải."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Quang năng chuyển hóa thành điện năng**."
+      }
+    ],
+    "finalSolution": "Tấm pin mặt trời biến đổi trực tiếp **quang năng thành điện năng**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-solar-water-heater",
+        "message": "Bình nước nóng mặt trời chuyển quang năng thành nhiệt năng, còn pin mặt trời chuyển quang năng thành ĐIỆN NĂNG."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b16-mcq-004",
+    "lessonId": "phy-g9-b16",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "wind-turbine-conversion"
+    ],
+    "difficulty": 2,
+    "prompt": "Tua-bin gió trong các cánh đồng điện gió chuyển hóa dạng năng lượng nào của luồng gió thành điện năng?",
+    "knowledge": [
+      "energy.renewable"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Động năng của luồng không khí chuyển động chuyển hóa thành điện năng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hóa năng của các phân tử khí chuyển hóa thành điện năng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Thế năng đàn hồi của cánh quạt chuyển hóa thành điện năng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nhiệt năng của gió chuyển hóa thành điện năng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Gió là luồng không khí đang chuyển động với tốc độ cao."
+      },
+      {
+        "level": 2,
+        "text": "Vật chuyển động mang động năng, cánh quạt biến đổi động năng thành điện năng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Dạng năng lượng của gió",
+        "body": "Xác định bản chất năng lượng của gió tác dụng vào cánh quạt."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế hoạt động",
+        "body": "Theo SGK KHTN 9 Bài 17: Gió là sự chuyển động của các khối không khí, do đó gió mang động năng. Khi thổi vào cánh quạt tua-bin, động năng của gió làm quay rôto máy phát điện và chuyển hóa thành điện năng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Động năng của luồng không khí chuyển hóa thành điện năng**."
+      }
+    ],
+    "finalSolution": "Tua-bin gió chuyển hóa **động năng của luồng gió thành điện năng**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-heat-wind",
+        "message": "Gió sinh công nhờ tốc độ chuyển động (động năng), không phải nhờ nhiệt độ nóng lạnh (nhiệt năng)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b16-mcq-005",
+    "lessonId": "phy-g9-b16",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "biomass-biogas-nature"
+    ],
+    "difficulty": 2,
+    "prompt": "Mô hình hầm khí sinh học (biogas) xử lý chất thải chăn nuôi ở các vùng nông thôn để tạo khí đốt sạch thuộc về dạng năng lượng tái tạo nào?",
+    "knowledge": [
+      "energy.renewable"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Năng lượng sinh khối (biomass)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Năng lượng sóng biển"
+        },
+        {
+          "id": "opt-c",
+          "label": "Năng lượng địa nhiệt"
+        },
+        {
+          "id": "opt-d",
+          "label": "Năng lượng hóa thạch"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khí sinh học được lên men từ chất thải hữu cơ và sinh vật sống."
+      },
+      {
+        "level": 2,
+        "text": "Năng lượng thu được từ sinh vật và chất thải hữu cơ gọi là năng lượng sinh khối."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định dạng năng lượng",
+        "body": "Khảo sát nguồn gốc năng lượng biogas."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 17: Năng lượng sinh khối (biomass) là năng lượng có nguồn gốc từ thực vật, chất thải nông nghiệp hoặc phân gia súc. Khí biogas (chủ yếu là $CH_4$) sinh ra từ quá trình phân hủy yếm khí chất thải hữu cơ là một ứng dụng tiêu biểu của năng lượng sinh khối."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Năng lượng sinh khối (biomass)**."
+      }
+    ],
+    "finalSolution": "Hầm khí biogas thuộc dạng **năng lượng sinh khối (biomass)**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-geothermal",
+        "message": "Năng lượng địa nhiệt là nhiệt từ đá nóng và dung nham sâu trong lòng đất, hoàn toàn khác với biogas lên men từ chất hữu cơ."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b16-mcq-006",
+    "lessonId": "phy-g9-b16",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "renewable-eco-advantages"
+    ],
+    "difficulty": 2,
+    "prompt": "Ưu điểm vượt trội lớn nhất của việc phát triển năng lượng gió và năng lượng mặt trời so với các nhà máy nhiệt điện đốt than là gì?",
+    "knowledge": [
+      "energy.renewable"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hầu như không phát thải khí nhà kính (CO2) và các khí độc hại, không làm cạn kiệt tài nguyên thiên nhiên"
+        },
+        {
+          "id": "opt-b",
+          "label": "Có thể xây dựng được ở bất kì tầng hầm kín nào trong nhà"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chi phí đầu tư ban đầu luôn rẻ hơn nhiệt điện than"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hoạt động hoàn toàn ổn định liên tục 24/24 giờ không phụ thuộc thời tiết"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Điện gió và điện mặt trời được gọi là năng lượng xanh vì không khói bụi."
+      },
+      {
+        "level": 2,
+        "text": "Chúng không thải CO2 gây hiệu ứng nhà kính và không cạn kiệt như than đá."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "So sánh ưu thế môi trường",
+        "body": "Đánh giá lợi ích sinh thái của năng lượng tái tạo so với năng lượng hóa thạch."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 17: Ưu điểm nổi bật nhất của năng lượng tái tạo là sạch, hầu như không phát thải $CO_2, SO_2$, không gây ô nhiễm không khí và biến đổi khí hậu, đồng thời nguồn cung là vô tận."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Hầu như không phát thải khí nhà kính và không cạn kiệt**."
+      }
+    ],
+    "finalSolution": "Ưu điểm cốt lõi là **sạch, hầu như không phát thải khí nhà kính $CO_2$ và nguồn cung vô tận**.",
+    "commonMistakes": [
+      {
+        "id": "assume-cheaper-investment",
+        "message": "Chi phí lắp đặt ban đầu của điện gió và pin mặt trời thực tế vẫn còn khá cao so với nhà máy truyền thống."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b16-mcq-007",
+    "lessonId": "phy-g9-b16",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "renewable-intermittency-challenge"
+    ],
+    "difficulty": 3,
+    "prompt": "Thách thức kỹ thuật lớn nhất khi tích hợp điện mặt trời và điện gió với quy mô lớn vào hệ thống lưới điện quốc gia là gì?",
+    "knowledge": [
+      "energy.renewable"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Dòng điện sinh ra từ pin mặt trời không thể dẫn được bằng dây đồng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tua-bin gió làm biến mất hoàn toàn gió trên toàn cầu"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tính gián đoạn và chập chờn do phụ thuộc hoàn toàn vào điều kiện thời tiết (ngày/đêm, mây mưa, mùa gió)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Các tấm pin mặt trời tiêu tốn quá nhiều oxy trong khí quyển"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ban đêm không có ánh sáng mặt trời, những ngày lặng gió cánh quạt không quay."
+      },
+      {
+        "level": 2,
+        "text": "Sự phụ thuộc thời tiết tạo ra tính gián đoạn, đòi hỏi hệ thống pin lưu trữ điện năng đắt tiền."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khảo sát thách thức",
+        "body": "Tìm nhược điểm kỹ thuật chính của năng lượng mặt trời và năng lượng gió."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Vấn đề tính gián đoạn",
+        "body": "Theo SGK KHTN 9 Bài 17: Năng lượng tái tạo phụ thuộc lớn vào thời tiết (mặt trời chỉ có vào ban ngày và giảm mạnh khi trời âm u; gió lúc mạnh lúc yếu). Sự gián đoạn này khiến công suất phát lên lưới thay đổi thất thường, đòi hỏi công nghệ lưu trữ pin tích năng quy mô lớn để ổn định tần số lưới điện."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Tính gián đoạn do phụ thuộc vào thời tiết**."
+      }
+    ],
+    "finalSolution": "Thách thức lớn nhất là **tính gián đoạn do phụ thuộc vào thời tiết và chu kì ngày đêm**.",
+    "commonMistakes": [
+      {
+        "id": "guess-chemical-absorption",
+        "message": "Pin mặt trời hoạt động quang học thuần túy, hoàn toàn không tiêu thụ oxy trong không khí."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b16-mcq-008",
+    "lessonId": "phy-g9-b16",
+    "sgkBaiSo": 17,
+    "skillIds": [
+      "net-zero-2050-commitment"
+    ],
+    "difficulty": 3,
+    "prompt": "Cam kết lịch sử 'Net Zero 2050' (đạt mức phát thải ròng bằng 0 vào năm 2050) mà Việt Nam cùng nhiều quốc gia tuyên bố tại Hội nghị Thượng đỉnh Khí hậu COP26 đòi hỏi hành động chiến lược cốt lõi nào trong ngành năng lượng?",
+    "knowledge": [
+      "energy.renewable"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Đẩy mạnh xây dựng thêm nhiều nhà máy nhiệt điện chạy bằng than đá nhập khẩu"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cấm hoàn toàn việc sử dụng điện trong toàn bộ các ngành công nghiệp sản xuất"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chuyển dịch mạnh mẽ sang phát triển năng lượng tái tạo (điện gió, điện mặt trời, sinh khối) và giảm dần điện than"
+        },
+        {
+          "id": "opt-d",
+          "label": "Thay thế toàn bộ các nguồn năng lượng bằng củi đốt truyền thống"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Net Zero nghĩa là lượng khí nhà kính CO2 thải ra cân bằng với lượng hấp thụ."
+      },
+      {
+        "level": 2,
+        "text": "Muốn giảm CO2, phải dừng phát triển điện than và thay thế bằng các nguồn năng lượng tái tạo xanh."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Chiến lược quốc gia Net Zero",
+        "body": "Liên hệ cam kết chống biến đổi khí hậu của Việt Nam với chuyển dịch năng lượng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Chiến lược năng lượng quốc gia",
+        "body": "Để đạt mục tiêu phát thải ròng bằng 0 vào năm 2050, Quy hoạch điện VIII và chiến lược tăng trưởng xanh của Việt Nam xác định giải pháp sống còn là chuyển dịch năng lượng: tăng tỉ trọng điện gió, điện mặt trời, năng lượng sinh khối và thủy điện tích năng, đồng thời giảm dần và tiến tới loại bỏ nhiệt điện than."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Chuyển dịch mạnh mẽ sang năng lượng tái tạo và giảm dần điện than**."
+      }
+    ],
+    "finalSolution": "Mục tiêu Net Zero đòi hỏi **chuyển dịch mạnh mẽ sang năng lượng tái tạo (gió, mặt trời, sinh khối) và giảm điện than**.",
+    "commonMistakes": [
+      {
+        "id": "think-stop-all-electricity",
+        "message": "Net Zero không phải là ngừng dùng điện, mà là sản xuất điện từ các nguồn sạch không phát thải khí nhà kính."
+      }
+    ]
+  }
+]

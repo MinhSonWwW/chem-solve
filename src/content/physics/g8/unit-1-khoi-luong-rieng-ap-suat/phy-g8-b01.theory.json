@@ -1,0 +1,81 @@
+{
+  "lessonId": "phy-g8-b01",
+  "nodeId": "phy-g8-b01-theory",
+  "title": "Lý thuyết: Khối lượng riêng",
+  "subtitle": "Bài 13 SGK Khoa học tự nhiên 8 (Kết nối tri thức)",
+  "sgkBaiSo": 13,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm cốt lõi",
+      "badgeColor": "cyan",
+      "title": "1. Khái niệm và công thức tính khối lượng riêng",
+      "content": "Để phân biệt độ 'nặng', 'nhẹ' giữa các chất khác nhau khi có cùng thể tích, người ta dùng đại lượng khối lượng riêng:",
+      "bulletPoints": [
+        "Định nghĩa: Khối lượng riêng của một chất là khối lượng của một đơn vị thể tích (1 m³ hoặc 1 cm³) chất đó.",
+        "Công thức tính: $D = \\frac{m}{V}$",
+        "Trong đó: $D$ là khối lượng riêng; $m$ là khối lượng của vật (kg hoặc g); $V$ là thể tích của vật (m³ hoặc cm³).",
+        "Công thức suy ra: $m = D \\times V$ (tính khối lượng) và $V = \\frac{m}{D}$ (tính thể tích)."
+      ],
+      "callout": "Đặc trưng vật chất: Khối lượng riêng là thuộc tính đặc trưng của từng chất ở một nhiệt độ xác định, không thay đổi theo hình dạng hay kích thước của vật thể."
+    },
+    {
+      "id": "c2",
+      "badge": "Đơn vị đo",
+      "badgeColor": "amber",
+      "title": "2. Đơn vị đo khối lượng riêng và quy tắc đổi đơn vị",
+      "content": "Trong thực tế và khoa học, hai đơn vị đo khối lượng riêng thường dùng nhất là kg/m³ và g/cm³ (hoặc g/mL):",
+      "bulletPoints": [
+        "Đơn vị hợp pháp trong hệ SI: Kilôgam trên mét khối (kí hiệu: kg/m³).",
+        "Đơn vị thường dùng trong phòng thí nghiệm: Gam trên xentimét khối (kí hiệu: g/cm³ hoặc g/mL).",
+        "Quy tắc đổi đơn vị chuẩn: $1\\text{ g/cm}^3 = 1\\text{ g/mL} = 1\\,000\\text{ kg/m}^3$.",
+        "Ngược lại: $1\\text{ kg/m}^3 = 0,001\\text{ g/cm}^3 = \\frac{1}{1\\,000}\\text{ g/cm}^3$."
+      ],
+      "callout": "Mẹo nhớ nhanh: Đổi từ g/cm³ sang kg/m³ thì NHÂN với 1 000; đổi từ kg/m³ sang g/cm³ thì CHIA cho 1 000."
+    },
+    {
+      "id": "c3",
+      "badge": "Bảng số liệu SGK",
+      "badgeColor": "emerald",
+      "title": "3. Khối lượng riêng của một số chất thông dụng (Bảng 13.1)",
+      "content": "Các giá trị khối lượng riêng ở nhiệt độ phòng cần ghi nhớ theo Bảng 13.1 SGK KHTN 8:",
+      "bulletPoints": [
+        "Sắt (Fe): $D = 7\\,800\\text{ kg/m}^3 = 7,8\\text{ g/cm}^3$.",
+        "Nhôm (Al): $D = 2\\,700\\text{ kg/m}^3 = 2,7\\text{ g/cm}^3$.",
+        "Đồng (Cu): $D = 8\\,900\\text{ kg/m}^3 = 8,9\\text{ g/cm}^3$.",
+        "Chì (Pb): $D = 11\\,300\\text{ kg/m}^3 = 11,3\\text{ g/cm}^3$.",
+        "Nước nguyên chất (ở 4°C): $D = 1\\,000\\text{ kg/m}^3 = 1\\text{ g/cm}^3$.",
+        "Dầu ăn, cồn: $D \\approx 800\\text{ kg/m}^3 = 0,8\\text{ g/cm}^3$ (nhẹ hơn nước nên nổi trên mặt nước).",
+        "Thủy ngân (Hg): $D = 13\\,600\\text{ kg/m}^3 = 13,6\\text{ g/cm}^3$ (kim loại lỏng rất nặng)."
+      ],
+      "callout": "Ý nghĩa so sánh: Dầu ăn nổi trên nước vì khối lượng riêng của dầu (800 kg/m³) nhỏ hơn của nước (1 000 kg/m³)."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khối lượng riêng của một chất được tính bằng công thức nào sau đây?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "D = m / V",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "D = m x V",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "D = V / m",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "D = m + V",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 8 Bài 13: Khối lượng riêng D bằng khối lượng m chia cho thể tích V tương ứng (D = m / V)."
+  }
+}

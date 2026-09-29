@@ -1,0 +1,514 @@
+[
+  {
+    "id": "phy-g7-b05-mcq-001",
+    "lessonId": "phy-g7-b05",
+    "sgkBaiSo": 12,
+    "skillIds": [
+      "sound-source-vibration"
+    ],
+    "difficulty": 1,
+    "prompt": "Đặc điểm chung của tất cả các vật khi phát ra âm thanh (nguồn âm) là:",
+    "knowledge": [
+      "sound.source_vibration"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vật phải được làm bằng chất liệu kim loại"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bề mặt của vật đều đang dao động (rung động)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vật phải đứng yên tuyệt đối không chuyển động"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vật phải có kích thước rất lớn"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi gảy dây đàn hoặc gõ mặt trống, bạn quan sát thấy dây đàn và mặt trống ở trạng thái nào?"
+      },
+      {
+        "level": 2,
+        "text": "Dây đàn rung, mặt trống rung, thanh quản rung... tức là chúng đều đang dao động."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất nguồn âm",
+        "body": "Xác định đặc điểm vật lí chung của mọi vật khi phát ra âm thanh."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 7 (Bài 12: Sóng âm), mọi vật khi phát ra âm thanh đều dao động quanh vị trí cân bằng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đặc điểm chung là **Bề mặt của vật đều đang dao động (rung động)**."
+      }
+    ],
+    "finalSolution": "Mọi vật khi phát ra âm thanh đều **dao động**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b05-mcq-002",
+    "lessonId": "phy-g7-b05",
+    "sgkBaiSo": 12,
+    "skillIds": [
+      "sound-medium-vacuum"
+    ],
+    "difficulty": 1,
+    "prompt": "Sóng âm KHÔNG THỂ lan truyền được trong môi trường nào sau đây?",
+    "knowledge": [
+      "sound.medium_propagation"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Nước biển (chất lỏng)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Chân không (khoảng không gian không có vật chất)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Không khí xung quanh chúng ta (chất khí)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Thanh thép (chất rắn)"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sóng âm truyền được là nhờ sự va chạm lan truyền dao động giữa các hạt phân tử vật chất."
+      },
+      {
+        "level": 2,
+        "text": "Trong môi trường chân không không có các hạt vật chất, do đó sóng âm không thể lan truyền."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Môi trường truyền sóng âm",
+        "body": "Xác định môi trường mà sóng âm không thể lan truyền qua."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Sóng âm truyền được qua chất rắn, chất lỏng, chất khí và không truyền được trong chân không."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Môi trường không truyền được âm là **Chân không**."
+      }
+    ],
+    "finalSolution": "Sóng âm **không truyền được trong chân không**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b05-mcq-003",
+    "lessonId": "phy-g7-b05",
+    "sgkBaiSo": 12,
+    "skillIds": [
+      "sound-speed-comparison"
+    ],
+    "difficulty": 1,
+    "prompt": "So sánh tốc độ truyền sóng âm trong ba trạng thái của vật chất: chất rắn, chất lỏng và chất khí. Mối quan hệ nào sau đây là đúng?",
+    "knowledge": [
+      "sound.medium_propagation"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "v_khí > v_lỏng > v_rắn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tốc độ truyền âm trong cả 3 môi trường bằng nhau"
+        },
+        {
+          "id": "opt-c",
+          "label": "v_rắn > v_lỏng > v_khí"
+        },
+        {
+          "id": "opt-d",
+          "label": "v_lỏng > v_rắn > v_khí"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Môi trường có các hạt liên kết càng chặt chẽ và gần nhau thì truyền dao động âm càng nhanh."
+      },
+      {
+        "level": 2,
+        "text": "Chất rắn có liên kết chặt chẽ nhất nên truyền âm nhanh nhất; chất khí có các phân tử cách xa nhau nhất nên truyền âm chậm nhất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "So sánh tốc độ truyền âm",
+        "body": "Thứ tự tốc độ truyền âm giữa rắn, lỏng, khí."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 7 Bài 12, tốc độ truyền âm trong chất rắn lớn hơn trong chất lỏng, trong chất lỏng lớn hơn trong chất khí ($v_{\\text{rắn}} > v_{\\text{lỏng}} > v_{\\text{khí}}$)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Mối quan hệ đúng là **v_rắn > v_lỏng > v_khí**."
+      }
+    ],
+    "finalSolution": "Tốc độ truyền âm: **$v_{\\text{rắn}} > v_{\\text{lỏng}} > v_{\\text{khí}}$**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b05-mcq-004",
+    "lessonId": "phy-g7-b05",
+    "sgkBaiSo": 12,
+    "skillIds": [
+      "sound-astronaut-communication"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi làm việc ngoài không gian vũ trụ bên ngoài tàu vũ trụ, hai phi hành gia không thể nói chuyện trực tiếp bằng miệng mà bắt buộc phải sử dụng bộ đàm vô tuyến. Lí do là vì:",
+    "knowledge": [
+      "sound.medium_propagation"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Mũ bảo hiểm phi hành gia hút hết mọi loại âm thanh"
+        },
+        {
+          "id": "opt-b",
+          "label": "Ngoài vũ trụ nhiệt độ quá lạnh làm đóng băng giọng nói"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ngoài không gian vũ trụ là môi trường chân không, không có không khí để truyền sóng âm"
+        },
+        {
+          "id": "opt-d",
+          "label": "Trọng lực ngoài vũ trụ bằng 0 nên dây thanh quản không rung được"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Không gian bên ngoài khí quyển Trái Đất có chứa không khí hay không?"
+      },
+      {
+        "level": 2,
+        "text": "Ngoài vũ trụ là môi trường chân không, mà sóng âm không truyền được trong chân không."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Giải thích hiện tượng thực tế",
+        "body": "Hiện tượng liên quan đến việc giao tiếp của phi hành gia ngoài vũ trụ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Bản chất vật lí",
+        "body": "Không gian vũ trụ là môi trường chân không. Sóng âm là sóng cơ học, cần môi trường vật chất để lan truyền nên không truyền được trong chân không. Sóng vô tuyến là sóng điện từ nên truyền tốt trong chân không."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Lí do đúng là: **Ngoài không gian vũ trụ là môi trường chân không, không thể truyền sóng âm**."
+      }
+    ],
+    "finalSolution": "Vì ngoài vũ trụ là **môi trường chân không**, sóng âm không truyền được nên phải dùng sóng vô tuyến (bộ đàm).",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b05-num-005",
+    "lessonId": "phy-g7-b05",
+    "sgkBaiSo": 12,
+    "skillIds": [
+      "sound-compute-time-air"
+    ],
+    "difficulty": 2,
+    "prompt": "Một bạn học sinh đứng cách một bức vách núi đá một khoảng 680 m và hét to một tiếng. Biết tốc độ truyền âm trong không khí là 340 m/s. Hỏi sau bao nhiêu giây thì âm thanh truyền từ bạn học sinh đến vách núi?",
+    "knowledge": [
+      "sound.medium_propagation",
+      "speed.formula"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 2,
+      "unit": "s",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đề bài hỏi thời gian âm truyền từ bạn đến vách núi (quãng đường đi một lượt s = 680 m)."
+      },
+      {
+        "level": 2,
+        "text": "Áp dụng công thức thời gian: t = s / v = 680 / 340."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Quãng đường truyền âm $s = 680\\text{ m}$; Tốc độ âm trong không khí $v = 340\\text{ m/s}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính thời gian",
+        "body": "$t = \\frac{s}{v}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$t = \\frac{680}{340} = 2\\text{ s}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thời gian âm truyền đến vách núi là **2 s**."
+      }
+    ],
+    "finalSolution": "Thời gian truyền âm: $t = \\frac{s}{v} = \\frac{680}{340} = 2\\text{ s}$.",
+    "commonMistakes": [
+      {
+        "id": "confused-echo-round-trip",
+        "message": "Đề bài chỉ hỏi thời gian âm truyền ĐẾN vách núi (1 lượt), không phải thời gian nghe tiếng vang (cả đi lẫn về).",
+        "trapAnswers": [
+          "4",
+          "4 s"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b05-num-006",
+    "lessonId": "phy-g7-b05",
+    "sgkBaiSo": 12,
+    "skillIds": [
+      "sound-compute-time-solid"
+    ],
+    "difficulty": 2,
+    "prompt": "Một người thợ đường sắt dùng búa gõ mạnh vào thanh ray bằng thép. Một người khác đứng cách đó 1 530 m áp tai vào đường ray. Biết tốc độ truyền âm trong thép là 5 100 m/s. Sau thời gian bao nhiêu giây người này nghe thấy tiếng gõ truyền qua thanh ray?",
+    "knowledge": [
+      "sound.medium_propagation",
+      "speed.formula"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 0.3,
+      "unit": "s",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Quãng đường âm truyền dọc theo thanh ray s = 1 530 m, tốc độ v = 5 100 m/s."
+      },
+      {
+        "level": 2,
+        "text": "Thời gian t = s / v = 1 530 / 5 100."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Quãng đường $s = 1\\,530\\text{ m}$; Tốc độ âm trong thép $v = 5\\,100\\text{ m/s}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức tính",
+        "body": "$t = \\frac{s}{v}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$t = \\frac{1\\,530}{5\\,100} = 0,3\\text{ s}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thời gian nghe thấy tiếng gõ qua thanh ray là **0,3 s**."
+      }
+    ],
+    "finalSolution": "Thời gian truyền âm qua thép: $t = \\frac{1530}{5100} = 0,3\\text{ s}$.",
+    "commonMistakes": [
+      {
+        "id": "inverse-division-trap",
+        "message": "Bạn đã lấy vận tốc chia cho quãng đường (5100 / 1530). Công thức đúng là t = s / v.",
+        "trapAnswers": [
+          "3.33",
+          "3,33",
+          "3.3",
+          "3,3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b05-tf-007",
+    "lessonId": "phy-g7-b05",
+    "sgkBaiSo": 12,
+    "skillIds": [
+      "sound-propagation-tf"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai của các khẳng định sau về sóng âm:",
+    "knowledge": [
+      "sound.medium_propagation"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Sóng âm truyền trong nước nhanh hơn truyền trong không khí.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Khi một vật đứng yên hoàn toàn không có dao động nào thì nó vẫn có thể tự phát ra âm thanh.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Sóng âm lan truyền được trong chất rắn nhờ sự truyền dao động giữa các nguyên tử, phân tử cấu tạo nên chất rắn.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tốc độ âm trong nước khoảng 1 500 m/s, trong không khí khoảng 340 m/s."
+      },
+      {
+        "level": 2,
+        "text": "Mọi vật phát ra âm đều bắt buộc phải dao động (mệnh đề 2 sai)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 3 mệnh đề",
+        "body": "Đánh giá tính đúng/sai của các nhận định về sự truyền âm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu kiến thức SGK",
+        "body": "- Mệnh đề 1: ĐÚNG. $v_{\\text{nước}} \\approx 1\\,500\\text{ m/s} > v_{\\text{không khí}} \\approx 340\\text{ m/s}$.\\n- Mệnh đề 2: SAI. Nguồn âm bắt buộc phải dao động, vật đứng yên tuyệt đối không thể phát ra âm thanh.\\n- Mệnh đề 3: ĐÚNG. Sóng âm là sự lan truyền dao động giữa các hạt vật chất liên kết trong môi trường."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự đúng: **Đúng - Sai - Đúng**."
+      }
+    ],
+    "finalSolution": "Mệnh đề 1: **Đúng**; Mệnh đề 2: **Sai**; Mệnh đề 3: **Đúng**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b05-mcq-008",
+    "lessonId": "phy-g7-b05",
+    "sgkBaiSo": 12,
+    "skillIds": [
+      "sound-bell-jar-experiment"
+    ],
+    "difficulty": 3,
+    "prompt": "Đặt một chiếc chuông điện đang kêu bên trong một bình thủy tinh kín. Khi dùng máy hút dần không khí trong bình ra ngoài, ta quan sát thấy hiện tượng gì?",
+    "knowledge": [
+      "sound.medium_propagation"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chuông điện ngừng rung và hỏng ngay lập tức"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tiếng chuông nhỏ dần, khi hút hết không khí thì hầu như không nghe thấy tiếng chuông nữa"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tiếng chuông vẫn giữ nguyên độ to không thay đổi"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tiếng chuông kêu ngày càng to hơn do không còn sức cản của không khí"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi không khí bị hút ra, số lượng hạt phân tử truyền âm trong bình tăng hay giảm?"
+      },
+      {
+        "level": 2,
+        "text": "Môi trường trong bình tiến dần đến chân không, mà chân không không truyền được âm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Thí nghiệm hút chân không bình chuông",
+        "body": "Mô tả hiện tượng và kết luận từ thí nghiệm SGK KHTN 7 trang 65."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Khi hút bớt không khí, môi trường truyền âm bị loãng dần làm âm truyền kém đi (tiếng nhỏ dần). Khi bình gần như là chân không, ta vẫn thấy dùi chuông gõ rung nhưng không còn nghe thấy tiếng chuông nữa."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hiện tượng xảy ra là **Tiếng chuông nhỏ dần, khi hút hết không khí thì hầu như không nghe thấy nữa**."
+      }
+    ],
+    "finalSolution": "Tiếng chuông **nhỏ dần rồi tắt hẳn** khi bình trở thành môi trường chân không.",
+    "commonMistakes": []
+  }
+]

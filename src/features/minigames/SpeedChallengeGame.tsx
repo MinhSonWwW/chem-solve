@@ -4,6 +4,8 @@ import { Zap } from 'lucide-react';
 import { MinigameShell, Formula } from '@/design-system';
 import { sound } from '@/lib/audio';
 import { useUserStore } from '@/features/gamification/useUserStore';
+import { useActiveSubject } from '@/content/subjects';
+import physicsSpeedQuestions from '@/content/kb/physics/speed-questions.json';
 
 interface SpeedQuestion {
   id: string;
@@ -116,6 +118,9 @@ const SPEED_QUESTIONS_POOL: SpeedQuestion[] = [
 
 export const SpeedChallengeGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const { addXp } = useUserStore();
+  const { subject: activeSubject } = useActiveSubject();
+  const isPhysics = activeSubject === 'physics';
+
   const [timeLeft, setTimeLeft] = useState(60);
   const [score, setScore] = useState(0);
   const [combo, setCombo] = useState(0);
@@ -125,10 +130,11 @@ export const SpeedChallengeGame: React.FC<{ onExit: () => void }> = ({ onExit })
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
 
-  // Shuffle questions
+  // Shuffle questions according to active subject
   const shuffledQuestions = useMemo(() => {
-    return [...SPEED_QUESTIONS_POOL].sort(() => 0.5 - Math.random());
-  }, []);
+    const pool = isPhysics ? (physicsSpeedQuestions as SpeedQuestion[]) : SPEED_QUESTIONS_POOL;
+    return [...pool].sort(() => 0.5 - Math.random());
+  }, [isPhysics]);
 
   const currentQ = shuffledQuestions[currentIndex % shuffledQuestions.length];
 
@@ -182,7 +188,12 @@ export const SpeedChallengeGame: React.FC<{ onExit: () => void }> = ({ onExit })
 
   return (
     <MinigameShell
-      title="Thử thách tốc độ (60s)"
+      title={isPhysics ? 'Thử thách tốc độ Vật lý (60s)' : 'Thử thách tốc độ (60s)'}
+      description={
+        isPhysics
+          ? 'Tính nhẩm siêu tốc và phản xạ câu hỏi Vật lý THCS trong 60 giây'
+          : 'Trả lời tối đa câu hỏi trắc nghiệm hóa học trong 60 giây'
+      }
       skillId="speed-challenge"
       timeLeft={timeLeft}
       score={score}

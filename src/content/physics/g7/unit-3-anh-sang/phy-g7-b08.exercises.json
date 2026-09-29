@@ -1,0 +1,522 @@
+[
+  {
+    "id": "phy-g7-b08-mcq-001",
+    "lessonId": "phy-g7-b08",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "light-sources-and-illuminated-objects"
+    ],
+    "difficulty": 1,
+    "prompt": "Vật nào sau đây là 'nguồn sáng' (vật tự phát ra ánh sáng)?",
+    "knowledge": [
+      "light.energy_source"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Mặt gương soi để ngoài trời nắng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Ngọn nến đang cháy sáng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mặt Trăng tròn vào đêm rằm"
+        },
+        {
+          "id": "opt-d",
+          "label": "Trang sách đặt dưới ánh đèn"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nguồn sáng là vật tự nó phát ra ánh sáng, không phải do hắt lại ánh sáng từ vật khác."
+      },
+      {
+        "level": 2,
+        "text": "Mặt Trăng, mặt gương, trang sách chỉ là vật sáng vì chúng hắt lại ánh sáng từ nguồn khác."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân biệt nguồn sáng và vật sáng",
+        "body": "Xác định vật có khả năng tự phát ra ánh sáng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 7 (Bài 15), nguồn sáng là vật tự nó phát ra ánh sáng (như ngọn nến đang cháy, Mặt Trời, bóng đèn sáng...). Mặt Trăng là vật sáng phản chiếu ánh sáng Mặt Trời."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nguồn sáng đúng là **Ngọn nến đang cháy sáng**."
+      }
+    ],
+    "finalSolution": "Ngọn nến đang cháy là **nguồn sáng** vì tự nó phát ra ánh sáng.",
+    "commonMistakes": [
+      {
+        "id": "confused-moon-as-source",
+        "message": "Nhiều bạn nhầm Mặt Trăng là nguồn sáng. Thực tế Mặt Trăng không tự phát sáng mà chỉ là vật sáng hắt lại ánh sáng từ Mặt Trời."
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b08-mcq-002",
+    "lessonId": "phy-g7-b08",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "light-rectilinear-propagation"
+    ],
+    "difficulty": 1,
+    "prompt": "Theo định luật truyền thẳng của ánh sáng, ánh sáng truyền đi theo đường thẳng trong môi trường nào?",
+    "knowledge": [
+      "light.energy_source"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chỉ truyền thẳng trong chất rắn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bất kì môi trường nào kể cả môi trường đục"
+        },
+        {
+          "id": "opt-c",
+          "label": "Trong suốt và đồng tính (đồng nhất)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Môi trường không đồng tính, có nhiều tạp chất"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Môi trường phải cho ánh sáng đi qua (trong suốt) và có tính chất vật lí giống nhau ở mọi điểm (đồng tính)."
+      },
+      {
+        "level": 2,
+        "text": "Định luật: Trong môi trường trong suốt và đồng tính, ánh sáng truyền theo đường thẳng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Định luật truyền thẳng của ánh sáng",
+        "body": "Điều kiện môi trường để ánh sáng truyền đi theo đường thẳng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Định luật truyền thẳng của ánh sáng nêu rõ: Trong môi trường trong suốt và đồng tính, ánh sáng truyền đi theo đường thẳng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Môi trường yêu cầu là **Trong suốt và đồng tính**."
+      }
+    ],
+    "finalSolution": "Ánh sáng truyền theo đường thẳng trong môi trường **trong suốt và đồng tính**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b08-mcq-003",
+    "lessonId": "phy-g7-b08",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "light-ray-representation"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong hình học quang học, người ta quy ước biểu diễn một 'tia sáng' bằng hình vẽ nào sau đây?",
+    "knowledge": [
+      "light.energy_source"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Một hình tròn nhỏ có tâm là nguồn sáng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Một đường cong lượn sóng không có mũi tên"
+        },
+        {
+          "id": "opt-c",
+          "label": "Một đoạn thẳng có mũi tên chỉ chiều truyền của ánh sáng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Một đường nét đứt khúc ziczac"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Vì ánh sáng truyền thẳng và có hướng truyền xác định nên biểu diễn bằng đường gì và có ký hiệu gì?"
+      },
+      {
+        "level": 2,
+        "text": "Biểu diễn bằng đường thẳng kèm mũi tên chỉ hướng truyền của tia sáng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quy ước biểu diễn tia sáng",
+        "body": "Quy ước vẽ tia sáng trong môn Khoa học tự nhiên."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Quy ước: Đường truyền của ánh sáng được biểu diễn bằng một đường thẳng có mũi tên chỉ chiều truyền của ánh sáng, gọi là tia sáng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Quy ước đúng là **Đoạn thẳng có mũi tên chỉ chiều truyền của ánh sáng**."
+      }
+    ],
+    "finalSolution": "Tia sáng được biểu diễn bằng **đường thẳng có mũi tên** chỉ chiều truyền.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b08-mcq-004",
+    "lessonId": "phy-g7-b08",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "light-beam-types"
+    ],
+    "difficulty": 2,
+    "prompt": "Chùm sáng phát ra từ một bút laser đồ chơi có đặc điểm các tia sáng không giao nhau mà luôn cách đều nhau. Đây là loại chùm sáng nào?",
+    "knowledge": [
+      "light.energy_source"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chùm sáng hội tụ"
+        },
+        {
+          "id": "opt-b",
+          "label": "Chùm sáng song song"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chùm sáng phân kì"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chùm sáng ziczac"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Các tia sáng luôn cách đều nhau và không bao giờ cắt nhau là các tia song song."
+      },
+      {
+        "level": 2,
+        "text": "Chùm sáng gồm các tia sáng song song với nhau được gọi là chùm sáng song song."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân loại chùm sáng",
+        "body": "Xác định loại chùm sáng có các tia sáng song song."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Có 3 loại chùm sáng: Chùm song song (các tia song song nhau); Chùm hội tụ (các tia cắt nhau tại một điểm); Chùm phân kì (các tia loe rộng ra)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Chùm tia laser là **Chùm sáng song song**."
+      }
+    ],
+    "finalSolution": "Chùm tia laser là **chùm sáng song song**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b08-mcq-005",
+    "lessonId": "phy-g7-b08",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "light-shadow-umbra-penumbra"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi đặt một quả bóng bàn (vật cản) ở giữa một ngọn nến lớn (nguồn sáng có kích thước rộng) và bức tường, trên màn chắn phía sau quả bóng sẽ xuất hiện:",
+    "knowledge": [
+      "light.energy_source"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chỉ duy nhất một vùng tối đen rõ nét, không có vùng nửa tối"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vùng tối ở chính giữa và vùng nửa tối mờ hơn bao quanh phía ngoài"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chỉ có vùng nửa tối, hoàn toàn không có vùng tối"
+        },
+        {
+          "id": "opt-d",
+          "label": "Một vệt sáng rực rỡ phía sau quả bóng"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Với nguồn sáng rộng, có vùng hoàn toàn không nhận được ánh sáng và vùng chỉ nhận được ánh sáng từ một phần của ngọn nến."
+      },
+      {
+        "level": 2,
+        "text": "Trên màn chắn sẽ xuất hiện vùng tối ở giữa và vùng nửa tối mờ hơn ở xung quanh."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hiện tượng tạo bóng với nguồn sáng rộng",
+        "body": "Phân tích vùng tối và nửa tối phía sau vật cản."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 7 Bài 15, khi nguồn sáng có kích thước lớn, phía sau vật cản sẽ hình thành vùng tối (hoàn toàn không nhận được ánh sáng) và vùng nửa tối bao quanh (chỉ nhận được một phần ánh sáng)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hình ảnh thu được là **Vùng tối ở chính giữa và vùng nửa tối mờ hơn bao quanh phía ngoài**."
+      }
+    ],
+    "finalSolution": "Xuất hiện **vùng tối ở giữa và vùng nửa tối bao quanh** bên ngoài.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b08-mcq-006",
+    "lessonId": "phy-g7-b08",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "light-solar-eclipse-geometry"
+    ],
+    "difficulty": 2,
+    "prompt": "Hiện tượng Nhật thực xảy ra vào ban ngày khi Mặt Trời, Mặt Trăng và Trái Đất cùng nằm trên một đường thẳng. Khi đó vị trí của Mặt Trăng là:",
+    "knowledge": [
+      "light.energy_source"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Nằm vuông góc với đường nối Mặt Trời và Trái Đất"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nằm ở tâm của Trái Đất"
+        },
+        {
+          "id": "opt-c",
+          "label": "Nằm ở phía sau Trái Đất đối diện với Mặt Trời"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nằm ở giữa Mặt Trời và Trái Đất"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhật thực là Mặt Trời bị che khuất, tức là có một thiên thể chắn giữa Mặt Trời và mắt người quan sát trên Trái Đất."
+      },
+      {
+        "level": 2,
+        "text": "Mặt Trăng nằm giữa Mặt Trời và Trái Đất, bóng của Mặt Trăng đổ lên Trái Đất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Vị trí thiên văn trong hiện tượng Nhật thực",
+        "body": "Xác định vị trí tương đối giữa Mặt Trời, Mặt Trăng và Trái Đất."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Nhật thực xảy ra khi Mặt Trăng đi vào khoảng giữa Mặt Trời và Trái Đất, che khuất ánh sáng từ Mặt Trời chiếu tới Trái Đất."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Mặt Trăng **Nằm ở giữa Mặt Trời và Trái Đất**."
+      }
+    ],
+    "finalSolution": "Trong hiện tượng Nhật thực, **Mặt Trăng nằm ở giữa** Mặt Trời và Trái Đất.",
+    "commonMistakes": [
+      {
+        "id": "confused-lunar-solar-eclipse",
+        "message": "Trái Đất nằm giữa Mặt Trời và Mặt Trăng là hiện tượng Nguyệt thực (vào ban đêm), không phải Nhật thực."
+      }
+    ]
+  },
+  {
+    "id": "phy-g7-b08-tf-007",
+    "lessonId": "phy-g7-b08",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "light-energy-propagation-tf"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai của các khẳng định sau về năng lượng ánh sáng và sự truyền ánh sáng:",
+    "knowledge": [
+      "light.energy_source"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Pin quang điện (pin mặt trời) là thiết bị biến đổi trực tiếp quang năng thành điện năng.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Ánh sáng có thể truyền theo đường cong uốn lượn trong một khối thủy tinh trong suốt và đồng tính.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Nguyệt thực xảy ra khi Trái Đất nằm giữa Mặt Trời và Mặt Trăng, che khuất ánh sáng chiếu tới Mặt Trăng.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Định luật truyền thẳng khẳng định trong môi trường trong suốt đồng tính ánh sáng chỉ truyền theo đường thẳng."
+      },
+      {
+        "level": 2,
+        "text": "Mệnh đề 2 sai vì ánh sáng không thể tự uốn cong trong môi trường đồng tính."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 3 mệnh đề",
+        "body": "Đánh giá các phát biểu về ứng dụng quang năng, định luật truyền thẳng và hiện tượng nguyệt thực."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu kiến thức SGK",
+        "body": "- Mệnh đề 1: ĐÚNG. Tấm pin mặt trời hấp thụ quang năng và sinh ra dòng điện.\\n- Mệnh đề 2: SAI. Theo định luật truyền thẳng, trong môi trường trong suốt và đồng tính ánh sáng bắt buộc phải truyền theo đường thẳng.\\n- Mệnh đề 3: ĐÚNG. Nguyệt thực xảy ra khi Trái Đất nằm ở giữa Mặt Trời và Mặt Trăng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự đáp án là **Đúng - Sai - Đúng**."
+      }
+    ],
+    "finalSolution": "Mệnh đề 1: **Đúng**; Mệnh đề 2: **Sai**; Mệnh đề 3: **Đúng**.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g7-b08-mcq-008",
+    "lessonId": "phy-g7-b08",
+    "sgkBaiSo": 15,
+    "skillIds": [
+      "light-surgical-lamp-application"
+    ],
+    "difficulty": 3,
+    "prompt": "Trong các phòng mổ bệnh viện, đèn phẫu thuật thường được thiết kế gồm rất nhiều bóng đèn nhỏ bố trí xung quanh một vòm tròn lớn (đèn không hắt bóng). Thiết kế này nhằm mục đích gì?",
+    "knowledge": [
+      "light.energy_source"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tiết kiệm điện năng so với việc dùng một bóng đèn duy nhất"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tạo ra chùm tia laser hội tụ để đốt các tế bào vi khuẩn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Làm cho căn phòng phẫu thuật nóng lên nhanh chóng để sưởi ấm bệnh nhân"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tạo ra một nguồn sáng rộng để triệt tiêu vùng bóng tối rõ nét dưới tay bác sĩ, giúp quan sát vết mổ rõ ràng"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nếu chỉ có 1 bóng đèn nhỏ, tay hoặc dụng cụ của bác sĩ sẽ tạo ra bóng đen đậm đặc che khuất vết mổ."
+      },
+      {
+        "level": 2,
+        "text": "Nhiều bóng đèn từ nhiều góc chiếu khác nhau sẽ chiếu sáng vùng bóng tối của nhau, chỉ còn vùng nửa tối mờ nhạt."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Ứng dụng quang học trong y học",
+        "body": "Giải thích nguyên lí hoạt động của đèn mổ không hắt bóng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Bản chất vật lí",
+        "body": "Khi dùng nguồn sáng rộng (nhiều bóng đèn xung quanh), nếu tay bác sĩ chắn ánh sáng từ một bóng đèn thì các bóng đèn khác vẫn chiếu tới vị trí đó. Kết quả là triệt tiêu hoàn toàn vùng bóng tối đậm đặc, chỉ còn vùng nửa tối rất mờ, giúp bác sĩ quan sát rõ ràng mọi chi tiết phẫu thuật."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Mục đích là **Tạo ra nguồn sáng rộng để triệt tiêu vùng bóng tối rõ nét dưới tay bác sĩ**."
+      }
+    ],
+    "finalSolution": "Đèn mổ tạo nguồn sáng rộng để **triệt tiêu vùng bóng tối rõ nét**, giúp bác sĩ phẫu thuật chính xác.",
+    "commonMistakes": []
+  }
+]

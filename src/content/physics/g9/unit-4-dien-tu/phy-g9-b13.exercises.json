@@ -1,0 +1,554 @@
+[
+  {
+    "id": "phy-g9-b13-mcq-001",
+    "lessonId": "phy-g9-b13",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "induction-condition"
+    ],
+    "difficulty": 1,
+    "prompt": "Điều kiện xuất hiện dòng điện cảm ứng trong một cuộn dây dẫn kín là gì?",
+    "knowledge": [
+      "electromagnetism.induction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cuộn dây phải được nung nóng lên nhiệt độ cao"
+        },
+        {
+          "id": "opt-b",
+          "label": "Số đường sức từ xuyên qua tiết diện của cuộn dây dẫn kín biến thiên (tăng hoặc giảm)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Đặt một thanh nam châm mạnh đứng yên hoàn toàn trong lòng cuộn dây"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nối hai đầu cuộn dây với một nguồn điện một chiều không đổi"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ khóa cốt lõi là 'biến thiên' (tăng lên hoặc giảm đi)."
+      },
+      {
+        "level": 2,
+        "text": "Theo SGK KHTN 9 Bài 14: Khi số đường sức từ xuyên qua tiết diện cuộn dây dẫn kín biến thiên thì xuất hiện dòng điện cảm ứng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định điều kiện cảm ứng",
+        "body": "Đề bài yêu cầu nêu điều kiện xuất hiện dòng điện cảm ứng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo định luật cảm ứng điện từ Faraday trong SGK KHTN 9 Bài 14: Dòng điện cảm ứng xuất hiện trong cuộn dây dẫn kín khi và chỉ khi số đường sức từ xuyên qua tiết diện cuộn dây đó biến thiên."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Số đường sức từ xuyên qua tiết diện cuộn dây dẫn kín biến thiên**."
+      }
+    ],
+    "finalSolution": "Điều kiện xuất hiện dòng điện cảm ứng: **số đường sức từ xuyên qua tiết diện cuộn dây dẫn kín biến thiên**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-stationary-magnet",
+        "message": "Dù nam châm rất mạnh nhưng nếu đứng yên thì số đường sức từ không đổi nên không có dòng điện cảm ứng."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b13-mcq-002",
+    "lessonId": "phy-g9-b13",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "ac-current-concept"
+    ],
+    "difficulty": 1,
+    "prompt": "Dòng điện xoay chiều là dòng điện có đặc điểm nào sau đây?",
+    "knowledge": [
+      "electromagnetism.induction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chỉ truyền được trong các chất lỏng cách điện"
+        },
+        {
+          "id": "opt-b",
+          "label": "Có chiều luân phiên thay đổi liên tục theo thời gian"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chỉ chạy theo một chiều cố định không bao giờ đổi hướng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Có cường độ luôn bằng 0 ở mọi thời điểm"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ 'xoay chiều' có nghĩa là chiều dòng điện đổi đi đổi lại luân phiên."
+      },
+      {
+        "level": 2,
+        "text": "Khác với dòng điện một chiều (DC), dòng điện xoay chiều (AC) luân phiên đổi chiều liên tục."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Định nghĩa dòng xoay chiều",
+        "body": "Xác định bản chất chuyển động của dòng điện xoay chiều."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 14: Dòng điện có chiều luân phiên thay đổi liên tục theo thời gian được gọi là dòng điện xoay chiều (kí hiệu AC hoặc dấu ~)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Có chiều luân phiên thay đổi liên tục theo thời gian**."
+      }
+    ],
+    "finalSolution": "Dòng điện xoay chiều có **chiều luân phiên thay đổi liên tục theo thời gian**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-dc-ac",
+        "message": "Dòng điện chỉ chạy theo một chiều cố định là dòng điện một chiều (DC) từ pin hoặc ắc quy."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b13-mcq-003",
+    "lessonId": "phy-g9-b13",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "generator-components"
+    ],
+    "difficulty": 1,
+    "prompt": "Hai bộ phận cơ bản không thể thiếu trong mọi máy phát điện xoay chiều là:",
+    "knowledge": [
+      "electromagnetism.induction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Thước đo milimet và quả nặng đòn bẩy"
+        },
+        {
+          "id": "opt-b",
+          "label": "Gương phẳng và thấu kính hội tụ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Nam châm tạo từ trường và cuộn dây dẫn tạo dòng cảm ứng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hai bản kim loại nhúng trong dung dịch axit"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cần một bộ phận tạo từ trường và một bộ phận để xuất hiện dòng cảm ứng."
+      },
+      {
+        "level": 2,
+        "text": "Đó là nam châm và cuộn dây dẫn kín."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cấu tạo máy phát điện",
+        "body": "Xác định 2 bộ phận chính của máy phát điện xoay chiều."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 14: Máy phát điện xoay chiều gồm 2 bộ phận chính: nam châm (tạo từ trường) và cuộn dây dẫn (nơi xuất hiện dòng điện cảm ứng)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Nam châm tạo từ trường và cuộn dây dẫn tạo dòng cảm ứng**."
+      }
+    ],
+    "finalSolution": "Hai bộ phận chính của máy phát điện xoay chiều: **nam châm và cuộn dây dẫn**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-chemical-battery",
+        "message": "Bản kim loại nhúng axit là cấu tạo của pin hóa học, không phải máy phát điện cảm ứng xoay chiều."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b13-mcq-004",
+    "lessonId": "phy-g9-b13",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "induction-generate-methods"
+    ],
+    "difficulty": 2,
+    "prompt": "Trường hợp nào sau đây KHÔNG làm xuất hiện dòng điện cảm ứng trong một cuộn dây dẫn kín?",
+    "knowledge": [
+      "electromagnetism.induction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cho thanh nam châm quay tròn trước tiết diện cuộn dây"
+        },
+        {
+          "id": "opt-b",
+          "label": "Đưa thanh nam châm lại gần một đầu cuộn dây dẫn kín"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cho thanh nam châm và cuộn dây cùng chuyển động tịnh tiến với cùng một vận tốc theo cùng một hướng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Kéo thanh nam châm ra xa cuộn dây dẫn kín"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi hai vật chuyển động cùng vận tốc thì khoảng cách giữa chúng không đổi."
+      },
+      {
+        "level": 2,
+        "text": "Khoảng cách không đổi nên số đường sức từ xuyên qua cuộn dây không biến thiên, không sinh ra dòng điện."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích điều kiện",
+        "body": "Tìm trường hợp số đường sức từ không biến thiên."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Chuyển động tương đối",
+        "body": "Khi nam châm và cuộn dây cùng chuyển động với cùng vận tốc thì vị trí tương đối giữa chúng không đổi $\\rightarrow$ số đường sức từ xuyên qua tiết diện cuộn dây không thay đổi $\\rightarrow$ không có dòng điện cảm ứng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Cho nam châm và cuộn dây cùng chuyển động tịnh tiến với cùng vận tốc**."
+      }
+    ],
+    "finalSolution": "Khi nam châm và cuộn dây đứng yên tương đối với nhau thì **số đường sức từ không biến thiên**, do đó **không có dòng điện cảm ứng**.",
+    "commonMistakes": [
+      {
+        "id": "assume-motion-always-induces",
+        "message": "Không phải cứ chuyển động là có dòng điện; phải là chuyển động tương đối làm thay đổi số đường sức từ xuyên qua cuộn dây."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b13-mcq-005",
+    "lessonId": "phy-g9-b13",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "induction-electromagnet-switch"
+    ],
+    "difficulty": 2,
+    "prompt": "Đặt một cuộn dây kín (1) nối với điện kế nhạy gần một ống dây điện từ (2). Hiện tượng gì xảy ra với kim điện kế trong khoảnh khắc đóng hoặc ngắt khóa K của mạch ống dây (2)?",
+    "knowledge": [
+      "electromagnetism.induction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Kim điện kế đứng yên chỉ số 0 vì không có thanh nam châm vĩnh cửu nào di chuyển"
+        },
+        {
+          "id": "opt-b",
+          "label": "Kim điện kế bị lệch đi, chứng tỏ xuất hiện dòng điện cảm ứng trong cuộn dây (1)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Kim điện kế quay tròn liên tục không ngừng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cuộn dây (1) bị cháy ngay lập tức do chập mạch"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi đóng khóa K, từ trường của ống dây tăng từ 0 lên giá trị lớn."
+      },
+      {
+        "level": 2,
+        "text": "Số đường sức từ biến thiên làm xuất hiện dòng điện cảm ứng trong cuộn dây bên cạnh."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hiện tượng đóng ngắt mạch",
+        "body": "Khảo sát từ trường biến thiên do dòng điện đóng/ngắt."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế biến thiên",
+        "body": "Trong khoảnh khắc đóng mạch, dòng điện qua ống dây (2) tăng nhanh $\\rightarrow$ từ trường tăng $\\rightarrow$ số đường sức từ xuyên qua cuộn (1) tăng lên. Ngược lại khi ngắt mạch, từ trường giảm về 0. Sự biến thiên này làm xuất hiện dòng điện cảm ứng làm kim điện kế bị lệch."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Kim điện kế bị lệch đi, chứng tỏ xuất hiện dòng điện cảm ứng**."
+      }
+    ],
+    "finalSolution": "Trong khoảnh khắc đóng/ngắt khóa K, từ trường biến thiên làm **xuất hiện dòng điện cảm ứng làm kim điện kế bị lệch**.",
+    "commonMistakes": [
+      {
+        "id": "think-only-permanent-magnet",
+        "message": "Nam châm điện biến thiên cũng tạo ra hiện tượng cảm ứng điện từ y hệt nam châm vĩnh cửu di chuyển."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b13-mcq-006",
+    "lessonId": "phy-g9-b13",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "dynamo-bicycle-concept"
+    ],
+    "difficulty": 2,
+    "prompt": "Đi-na-mô gắn ở bánh xe đạp để thắp sáng đèn xe hoạt động dựa trên nguyên tắc nào?",
+    "knowledge": [
+      "electromagnetism.induction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Bánh xe cọ xát với núm đi-na-mô sinh ra tĩnh điện dẫn thẳng vào bóng đèn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Khi núm đi-na-mô quay, nam châm bên trong quay trước cuộn dây tạo ra dòng điện cảm ứng xoay chiều"
+        },
+        {
+          "id": "opt-c",
+          "label": "Bên trong đi-na-mô chứa sẵn pin hóa học tự động phóng điện khi rung lắc"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nhiệt lượng sinh ra do ma sát được biến đổi trực tiếp thành điện năng"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đi-na-mô xe đạp là một máy phát điện xoay chiều thu nhỏ."
+      },
+      {
+        "level": 2,
+        "text": "Bên trong có nam châm quay trước một cuộn dây cố định quấn quanh lõi sắt non."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Thiết bị thực tế",
+        "body": "Giải thích nguyên lý đi-na-mô xe đạp."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 14: Đi-na-mô xe đạp gồm nam châm vĩnh cửu và cuộn dây dẫn. Khi xe chạy, vành bánh xe làm quay núm của đi-na-mô $\\rightarrow$ nam châm quay $\\rightarrow$ số đường sức từ qua cuộn dây biến thiên luân phiên sinh ra dòng điện xoay chiều thắp sáng bóng đèn."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Nam châm quay trước cuộn dây tạo dòng điện cảm ứng xoay chiều**."
+      }
+    ],
+    "finalSolution": "Đi-na-mô xe đạp hoạt động nhờ **nam châm quay trước cuộn dây tạo dòng điện xoay chiều**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-friction-electricity",
+        "message": "Ma sát bánh xe chỉ đóng vai trò truyền chuyển động quay cho nam châm, không phải nhiễm điện do cọ xát."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b13-mcq-007",
+    "lessonId": "phy-g9-b13",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "ac-frequency-reversals"
+    ],
+    "difficulty": 3,
+    "prompt": "Dòng điện xoay chiều trong lưới điện sinh hoạt Việt Nam có tần số f = 50 Hz. Trong khoảng thời gian 1 giây, dòng điện này đổi chiều bao nhiêu lần?",
+    "knowledge": [
+      "electromagnetism.induction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "25 lần"
+        },
+        {
+          "id": "opt-b",
+          "label": "100 lần (trong mỗi chu kì dòng điện đổi chiều 2 lần)"
+        },
+        {
+          "id": "opt-c",
+          "label": "50 lần"
+        },
+        {
+          "id": "opt-d",
+          "label": "200 lần"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tần số 50 Hz nghĩa là thực hiện 50 chu kì trong 1 giây."
+      },
+      {
+        "level": 2,
+        "text": "Trong mỗi chu kì hình sin, dòng điện đổi chiều 2 lần. Vậy trong 50 chu kì sẽ đổi chiều 50 x 2 = 100 lần."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích tần số",
+        "body": "Dòng điện xoay chiều $50\\text{ Hz}$."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Số lần đổi chiều",
+        "body": "Tần số $f = 50\\text{ Hz}$ nghĩa là trong 1 giây có 50 chu kì biến thiên. Trong một chu kì hoàn chỉnh, dòng điện tăng lên cực đại theo chiều dương, giảm về 0, đảo chiều sang âm rồi trở về 0 (đổi chiều đúng 2 lần). Do đó trong 1 giây dòng điện đổi chiều: $50 \\times 2 = 100\\text{ lần}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **100 lần**."
+      }
+    ],
+    "finalSolution": "Trong 1 giây, dòng điện $50\\text{ Hz}$ thực hiện 50 chu kì và đổi chiều $50 \\times 2 = \\mathbf{100\\text{ lần}}$.",
+    "commonMistakes": [
+      {
+        "id": "assume-frequency-equals-reversals",
+        "message": "Nhiều bạn chọn nhầm 50 lần. Tần số 50 Hz là số CHU KÌ, còn mỗi chu kì dòng điện đổi chiều 2 lần nên phải là 100 lần."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b13-mcq-008",
+    "lessonId": "phy-g9-b13",
+    "sgkBaiSo": 14,
+    "skillIds": [
+      "industrial-generator-stator-rotor"
+    ],
+    "difficulty": 3,
+    "prompt": "Tại sao trong các nhà máy điện công nghiệp quy mô lớn (như thủy điện Hòa Bình, Sơn La), người ta lại thiết kế rôto là nam châm điện quay, còn stato là các cuộn dây dẫn đứng yên?",
+    "knowledge": [
+      "electromagnetism.induction"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Để dẫn trực tiếp dòng điện công suất rất lớn ra ngoài mà không cần vành khuyên và chổi quét than, tránh sinh tia lửa điện nguy hiểm"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vì nam châm quay không cần tiêu tốn năng lượng quay"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì cuộn dây bằng đồng nặng hơn nam châm nên không thể quay được"
+        },
+        {
+          "id": "opt-d",
+          "label": "Để làm giảm hiệu điện thế phát ra xuống mức an toàn"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Dòng điện phát ra từ nhà máy có cường độ hàng nghìn ampe và điện áp hàng nghìn vôn."
+      },
+      {
+        "level": 2,
+        "text": "Nếu cuộn dây quay, phải lấy dòng điện lớn qua chổi quét tiếp xúc, gây mòn và phóng tia lửa điện dữ dội."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Kĩ thuật công nghiệp",
+        "body": "Giải thích thiết kế stato là cuộn dây đứng yên trong máy phát điện lớn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Lý do an toàn và độ bền",
+        "body": "Trong máy phát điện công nghiệp, dòng điện tạo ra rất lớn. Nếu cuộn dây quay thì việc lấy dòng điện ra ngoài phải qua vành trượt và chổi than, gây ma sát mòn nhanh và phóng hồ quang điện cực kì nguy hiểm. Để cuộn dây đứng yên (stato), dòng điện được nối trực tiếp ra lưới điện một cách chắc chắn và an toàn."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Để dẫn trực tiếp dòng điện lớn ra ngoài mà không cần chổi quét, tránh tia lửa điện**."
+      }
+    ],
+    "finalSolution": "Thiết kế cuộn dây đứng yên (stato) giúp **dẫn dòng điện lớn trực tiếp ra ngoài an toàn, không cần chổi quét tiếp xúc**.",
+    "commonMistakes": [
+      {
+        "id": "guess-weight-reason",
+        "message": "Lý do hoàn toàn là kĩ thuật dẫn điện an toàn, không phải vì cuộn dây nặng hơn nam châm."
+      }
+    ]
+  }
+]

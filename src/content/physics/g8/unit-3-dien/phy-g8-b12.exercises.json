@@ -1,0 +1,507 @@
+[
+  {
+    "id": "phy-g8-b12-num-001",
+    "lessonId": "phy-g8-b12",
+    "sgkBaiSo": 24,
+    "skillIds": [
+      "current-unit-conversion"
+    ],
+    "difficulty": 1,
+    "prompt": "Cường độ dòng điện chạy qua một quạt điện mini cầm tay là I = 0,45 A. Hãy đổi giá trị cường độ dòng điện này ra đơn vị miliampe (mA).",
+    "knowledge": [
+      "unit.current"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 450,
+      "unit": "mA",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "1 A bằng bao nhiêu mA?"
+      },
+      {
+        "level": 2,
+        "text": "1 A = 1 000 mA, lấy 0,45 nhân với 1 000."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$I = 0{,}45\\text{ A}$, cần đổi sang mA."
+      },
+      {
+        "kind": "equation",
+        "title": "Hệ thức quy đổi",
+        "body": "$1\\text{ A} = 1\\,000\\text{ mA} \\Rightarrow I\\text{ (mA)} = I\\text{ (A)} \\times 1\\,000$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$I = 0{,}45 \\times 1\\,000 = 450\\text{ mA}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cường độ dòng điện là **450 mA**."
+      }
+    ],
+    "finalSolution": "Quy đổi: $I = 0{,}45\\text{ A} = 0{,}45 \\times 1\\,000 = 450\\text{ mA}$.",
+    "commonMistakes": [
+      {
+        "id": "divide-instead-of-multiply",
+        "message": "Từ ampe (A) sang miliampe (mA) phải nhân với 1 000 chứ không phải chia."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b12-num-002",
+    "lessonId": "phy-g8-b12",
+    "sgkBaiSo": 24,
+    "skillIds": [
+      "voltage-unit-conversion"
+    ],
+    "difficulty": 1,
+    "prompt": "Hiệu điện thế giữa hai cực của một trạm biến áp trung thế là U = 2,5 kV (kilôvôn). Hãy đổi giá trị này ra đơn vị vôn (V).",
+    "knowledge": [
+      "unit.voltage"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 2500,
+      "unit": "V",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tiền tố kilo (k) tương ứng với 1 000 lần."
+      },
+      {
+        "level": 2,
+        "text": "1 kV = 1 000 V, lấy 2,5 nhân với 1 000."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$U = 2{,}5\\text{ kV}$, cần đổi sang V."
+      },
+      {
+        "kind": "equation",
+        "title": "Hệ thức quy đổi",
+        "body": "$1\\text{ kV} = 1\\,000\\text{ V} \\Rightarrow U\\text{ (V)} = U\\text{ (kV)} \\times 1\\,000$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$U = 2{,}5 \\times 1\\,000 = 2\\,500\\text{ V}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hiệu điện thế là **2 500 V**."
+      }
+    ],
+    "finalSolution": "Quy đổi: $U = 2{,}5\\text{ kV} = 2{,}5 \\times 1\\,000 = 2\\,500\\text{ V}$.",
+    "commonMistakes": [
+      {
+        "id": "wrong-prefix-kilo",
+        "message": "1 kV = 1 000 V chứ không phải 100 V hay 10 000 V."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b12-num-003",
+    "lessonId": "phy-g8-b12",
+    "sgkBaiSo": 24,
+    "skillIds": [
+      "current-unit-conversion"
+    ],
+    "difficulty": 1,
+    "prompt": "Một bóng đèn xe đạp có dòng điện định mức I = 350 mA chạy qua. Hãy đổi cường độ dòng điện này ra đơn vị ampe (A).",
+    "knowledge": [
+      "unit.current"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 0.35,
+      "unit": "A",
+      "decimals": 2,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "1 mA = 0,001 A = 1 / 1 000 A."
+      },
+      {
+        "level": 2,
+        "text": "Lấy 350 chia cho 1 000 để đổi sang ampe."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$I = 350\\text{ mA}$, cần đổi sang A."
+      },
+      {
+        "kind": "equation",
+        "title": "Hệ thức quy đổi",
+        "body": "$1\\text{ mA} = \\frac{1}{1\\,000}\\text{ A} = 10^{-3}\\text{ A}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$I = \\frac{350}{1\\,000} = 0{,}35\\text{ A}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cường độ dòng điện là **0,35 A**."
+      }
+    ],
+    "finalSolution": "Quy đổi: $I = 350\\text{ mA} = \\frac{350}{1\\,000} = 0{,}35\\text{ A}$.",
+    "commonMistakes": [
+      {
+        "id": "forgot-decimal-place",
+        "message": "350 chia 1 000 được 0,35 A chứ không phải 3,5 A."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b12-mcq-004",
+    "lessonId": "phy-g8-b12",
+    "sgkBaiSo": 24,
+    "skillIds": [
+      "ammeter-connection-rule"
+    ],
+    "difficulty": 2,
+    "prompt": "Để đo cường độ dòng điện chạy qua một bóng đèn, ampe kế phải được mắc vào mạch điện như thế nào?",
+    "knowledge": [
+      "unit.current"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Mắc nối tiếp với bóng đèn, chốt (+) của ampe kế nối về phía cực âm của nguồn điện"
+        },
+        {
+          "id": "opt-b",
+          "label": "Mắc nối tiếp với bóng đèn, chốt (+) của ampe kế nối về phía cực dương của nguồn điện"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mắc trực tiếp vào hai cực của nguồn điện mà không qua bóng đèn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Mắc song song với bóng đèn, chốt (+) của ampe kế nối về phía cực âm của nguồn điện"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ampe kế đo toàn bộ dòng điện qua đèn nên phải mắc nối tiếp."
+      },
+      {
+        "level": 2,
+        "text": "Chốt dương (+) của ampe kế phải đón dòng điện từ cực dương của nguồn đi vào."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quy tắc mắc ampe kế",
+        "body": "Xác định kiểu mắc và cách đấu các cực của ampe kế."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 24), ampe kế phải mắc NỐI TIẾP với dụng cụ cần đo sao cho dòng điện đi vào chốt dương (+) và đi ra từ chốt âm (-) của ampe kế."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Mắc nối tiếp với bóng đèn, chốt (+) của ampe kế nối về phía cực dương của nguồn điện**."
+      }
+    ],
+    "finalSolution": "Ampe kế phải **mắc nối tiếp với bóng đèn, chốt (+) nối về cực dương của nguồn điện**.",
+    "commonMistakes": [
+      {
+        "id": "connect-ammeter-parallel",
+        "message": "Tuyệt đối không mắc ampe kế song song với thiết bị hoặc nối tắt hai cực nguồn vì sẽ gây đoản mạch hỏng ampe kế."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b12-mcq-005",
+    "lessonId": "phy-g8-b12",
+    "sgkBaiSo": 24,
+    "skillIds": [
+      "voltmeter-connection-rule"
+    ],
+    "difficulty": 2,
+    "prompt": "Để đo hiệu điện thế giữa hai đầu một bóng đèn, vôn kế phải được mắc vào mạch điện theo cách nào?",
+    "knowledge": [
+      "unit.voltage"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Mắc nối tiếp vào giữa nguồn điện và công tắc"
+        },
+        {
+          "id": "opt-b",
+          "label": "Mắc song song với bóng đèn, chốt (+) của vôn kế nối với điểm về phía cực dương của nguồn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mắc bất kì vị trí nào không cần phân biệt cực dương và âm"
+        },
+        {
+          "id": "opt-d",
+          "label": "Mắc nối tiếp với bóng đèn, chốt (+) nối về phía cực âm của nguồn"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hiệu điện thế là độ chênh lệch điện thế giữa hai điểm, vậy dụng cụ đo phải kẹp vào hai đầu điểm đó (mắc song song)."
+      },
+      {
+        "level": 2,
+        "text": "Chốt (+) của vôn kế nối với điểm có điện thế cao hơn (về phía cực dương của nguồn)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quy tắc mắc vôn kế",
+        "body": "Xác định cách đấu nối vôn kế để đo hiệu điện thế."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 24), vôn kế phải được mắc SONG SONG với hai đầu thiết bị cần đo hiệu điện thế, chốt (+) nối về phía cực dương của nguồn."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Mắc song song với bóng đèn, chốt (+) của vôn kế nối với điểm về phía cực dương của nguồn**."
+      }
+    ],
+    "finalSolution": "Vôn kế phải **mắc song song với bóng đèn, chốt (+) nối về phía cực dương của nguồn**.",
+    "commonMistakes": [
+      {
+        "id": "reverse-polarity",
+        "message": "Nếu mắc ngược chốt (-) về phía cực dương thì kim vôn kế sẽ bị quay ngược về bên trái vạch 0."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b12-num-006",
+    "lessonId": "phy-g8-b12",
+    "sgkBaiSo": 24,
+    "skillIds": [
+      "meter-reading"
+    ],
+    "difficulty": 2,
+    "prompt": "Một ampe kế có giới hạn đo (GHĐ) là 3 A. Bảng chia độ từ vạch số 0 đến vạch 3 A được chia thành 30 khoảng chia nhỏ đều nhau. Khi mắc vào mạch, kim chỉ thị dừng lại ở khoảng chia thứ 18 tính từ vạch số 0. Cường độ dòng điện đang đo có giá trị bằng bao nhiêu ampe (A)?",
+    "knowledge": [
+      "unit.current"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 1.8,
+      "unit": "A",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tính độ chia nhỏ nhất (giá trị của 1 khoảng chia nhỏ): lấy 3 A chia cho 30 khoảng."
+      },
+      {
+        "level": 2,
+        "text": "Mỗi vạch chia nhỏ tương ứng với 0,1 A. Kim ở vạch thứ 18 thì lấy 18 x 0,1."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$\\text{GHĐ} = 3\\text{ A}$; số khoảng chia $N = 30$; kim chỉ vạch $n = 18$."
+      },
+      {
+        "kind": "equation",
+        "title": "Xác định ĐCNN và số chỉ",
+        "body": "Độ chia nhỏ nhất: $\\text{ĐCNN} = \\frac{3\\text{ A}}{30} = 0{,}1\\text{ A}$. Số chỉ: $I = n \\times \\text{ĐCNN}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$I = 18 \\times 0{,}1 = 1{,}8\\text{ A}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Số chỉ ampe kế là **1,8 A**."
+      }
+    ],
+    "finalSolution": "ĐCNN của ampe kế: $\\frac{3}{30} = 0{,}1\\text{ A}$. Cường độ dòng điện: $I = 18 \\times 0{,}1 = 1{,}8\\text{ A}$.",
+    "commonMistakes": [
+      {
+        "id": "wrong-dcnn",
+        "message": "Bạn quên tính ĐCNN (0,1 A/vạch) mà lấy thẳng 18 chia 3."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b12-mcq-007",
+    "lessonId": "phy-g8-b12",
+    "sgkBaiSo": 24,
+    "skillIds": [
+      "safe-voltage-limit"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong điều kiện bình thường đối với cơ thể con người, giới hạn hiệu điện thế an toàn là:",
+    "knowledge": [
+      "unit.voltage"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Không giới hạn, hiệu điện thế nào cũng an toàn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Dưới 220 V"
+        },
+        {
+          "id": "opt-c",
+          "label": "Dưới 500 V"
+        },
+        {
+          "id": "opt-d",
+          "label": "Dưới 40 V"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mạng điện gia đình 220V rất nguy hiểm chết người. Hiệu điện thế an toàn thấp hơn rất nhiều."
+      },
+      {
+        "level": 2,
+        "text": "Quy chuẩn an toàn điện học đường quy định hiệu điện thế an toàn là dưới 40V."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tiêu chuẩn an toàn điện",
+        "body": "Xác định ngưỡng hiệu điện thế an toàn cho người."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 24), hiệu điện thế an toàn đối với con người trong điều kiện thông thường là dưới 40 V. Nguồn điện lưới sinh hoạt 220 V có thể gây tử vong."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Dưới 40 V**."
+      }
+    ],
+    "finalSolution": "Giới hạn hiệu điện thế an toàn cho người là **dưới 40 V**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-with-grid-voltage",
+        "message": "220 V là điện lưới gia đình, gây giật nguy hiểm chết người, không phải ngưỡng an toàn."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b12-num-008",
+    "lessonId": "phy-g8-b12",
+    "sgkBaiSo": 24,
+    "skillIds": [
+      "battery-voltage-calc"
+    ],
+    "difficulty": 3,
+    "prompt": "Quan sát sơ đồ mạch điện tương tác bên dưới. Vôn kế đang mắc song song đo hiệu điện thế hai đầu bóng đèn chỉ U = 6,0 V. Nguồn điện sử dụng gồm 4 viên pin giống hệt nhau mắc nối tiếp tạo ra tổng hiệu điện thế 6,0 V này. Hiệu điện thế định mức của mỗi viên pin đơn là bao nhiêu vôn (V)?",
+    "knowledge": [
+      "unit.voltage"
+    ],
+    "visual": {
+      "mode": "circuit-diagram"
+    },
+    "answer": {
+      "kind": "number",
+      "value": 1.5,
+      "unit": "V",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi các viên pin giống nhau mắc nối tiếp, tổng hiệu điện thế bằng tổng hiệu điện thế của từng viên pin: U_tong = n x U_pin."
+      },
+      {
+        "level": 2,
+        "text": "Lấy tổng hiệu điện thế 6,0 V chia cho 4 viên pin."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "Tổng hiệu điện thế $U_{\\text{bộ}} = 6{,}0\\text{ V}$; số viên pin mắc nối tiếp $n = 4$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức nguồn nối tiếp",
+        "body": "$U_{\\text{bộ}} = n \\times U_{\\text{pin}} \\Rightarrow U_{\\text{pin}} = \\frac{U_{\\text{bộ}}}{n}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$U_{\\text{pin}} = \\frac{6{,}0}{4} = 1{,}5\\text{ V}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hiệu điện thế của mỗi viên pin là **1,5 V** (đây chính là thông số chuẩn của pin con thỏ/pin tiểu AA thông dụng)."
+      }
+    ],
+    "finalSolution": "Hiệu điện thế mỗi viên pin: $U = \\frac{6{,}0}{4} = 1{,}5\\text{ V}$.",
+    "commonMistakes": [
+      {
+        "id": "multiply-instead-of-divide",
+        "message": "Muốn tìm hiệu điện thế từng viên pin từ tổng hiệu điện thế bộ pin nối tiếp thì phải chia cho số lượng pin (n = 4)."
+      }
+    ]
+  }
+]

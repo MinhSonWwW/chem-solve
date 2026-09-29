@@ -1,0 +1,83 @@
+{
+  "lessonId": "phy-g8-b17",
+  "nodeId": "phy-g8-b17-theory",
+  "title": "Lý thuyết: Sự nở vì nhiệt",
+  "subtitle": "Bài 29 SGK Khoa học tự nhiên 8 (Kết nối tri thức)",
+  "sgkBaiSo": 29,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Quy luật nở nhiệt",
+      "badgeColor": "cyan",
+      "title": "1. Sự nở vì nhiệt của chất rắn, chất lỏng và chất khí",
+      "content": "Hiện tượng vật chất thay đổi kích thước và thể tích theo nhiệt độ:",
+      "bulletPoints": [
+        "Quy luật chung: Các chất rắn, lỏng, khí hầu hết đều nở ra khi nóng lên (thể tích tăng) và co lại khi lạnh đi (thể tích giảm).",
+        "So sánh độ nở vì nhiệt: Chất khí nở vì nhiệt nhiều nhất > Chất lỏng > Chất rắn nở vì nhiệt ít nhất.",
+        "Quy luật riêng biệt:",
+        "+ Các chất khí khác nhau nở vì nhiệt giống nhau (không khí, khí oxi, khí hiđrô... đều có độ giãn nở nhiệt như nhau).",
+        "+ Các chất lỏng khác nhau nở vì nhiệt khác nhau (cồn nở nhiều hơn dầu, dầu nở nhiều hơn nước).",
+        "+ Các chất rắn khác nhau nở vì nhiệt khác nhau (nhôm nở nhiều hơn đồng, đồng nở nhiều hơn sắt thép)."
+      ],
+      "callout": "Ghi nhớ xếp hạng: Khí > Lỏng > Rắn (Khí dãn nở mạnh nhất, Rắn dãn nở khiêm tốn nhất)."
+    },
+    {
+      "id": "c2",
+      "badge": "Lực nở vì nhiệt",
+      "badgeColor": "amber",
+      "title": "2. Lực xuất hiện khi sự co dãn bị ngăn trở và ứng dụng kĩ thuật",
+      "content": "Sự co dãn vì nhiệt khi bị ngăn cản có thể gây ra những lực rất lớn:",
+      "bulletPoints": [
+        "Tác hại phá hủy: Nếu một thanh kim loại hoặc khối bê tông bị cố định hai đầu mà nhiệt độ tăng lên, lực giãn nở nhiệt bị ngăn cản có thể làm uốn cong thanh ray thép, nứt nẻ mặt đường bê tông.",
+        "Biện pháp kĩ thuật trong đời sống:",
+        "+ Khe hở ở chỗ nối thanh ray xe lửa: Để lại một khe hở nhỏ giữa hai đầu thanh ray để khi trời nắng nóng thanh ray nở dài ra không bị chèn ép gây cong đường ray làm đổ tàu.",
+        "+ Gối lăn ở mố cầu kim loại: Một đầu cầu được đặt trên các con lăn để nhịp cầu tự do co dãn dài ra hoặc thu ngắn lại khi thời tiết thay đổi mà không phá hủy mố cầu.",
+        "+ Ống uốn cong: Trên các đường ống dẫn hơi nước nóng dài luôn có những đoạn uốn cong hình chữ U để ống tự co giãn đàn hồi."
+      ],
+      "callout": "Thực tế: Mặt đường bê tông xi măng luôn được cắt các rãnh chia ô cách nhau vài mét để chừa khe co dãn vì nhiệt, tránh nứt gãy vào mùa hè."
+    },
+    {
+      "id": "c3",
+      "badge": "Băng kép & Nước",
+      "badgeColor": "emerald",
+      "title": "3. Băng kép và sự nở vì nhiệt đặc biệt của nước",
+      "content": "Ứng dụng băng kép trong tự động hóa và hiện tượng đặc biệt của nước:",
+      "bulletPoints": [
+        "Cấu tạo băng kép: Gồm hai thanh kim loại có bản chất khác nhau (ví dụ một thanh bằng đồng và một thanh bằng thép) được tán chặt sát vào nhau dọc theo chiều dài.",
+        "Nguyên lý hoạt động của băng kép:",
+        "+ Khi bị đốt nóng: Đồng nở nhiều hơn thép nên băng kép bị uốn cong về phía thanh thép (kim loại nở ít hơn).",
+        "+ Khi làm lạnh: Đồng co lại nhiều hơn thép nên băng kép bị uốn cong về phía thanh đồng.",
+        "Ứng dụng băng kép: Làm thiết bị rơ-le nhiệt tự động đóng ngắt mạch điện trong bàn là điện, nồi cơm điện, ấm siêu tốc khi đạt nhiệt độ cài đặt.",
+        "Sự nở vì nhiệt dị thường của nước: Khi tăng nhiệt độ từ 0 °C đến 4 °C, nước co lại chứ không nở ra; ở đúng 4 °C nước có khối lượng riêng lớn nhất (1 000 kg/m³). Từ 4 °C trở lên nước mới nở ra bình thường. Nhờ đó mùa đông băng tuyết nổi trên mặt, đáy hồ luôn là nước 4 °C giúp sinh vật thủy sinh tồn tại qua mùa đông lạnh giá."
+      ],
+      "callout": "Nguyên tắc nhớ chiều cong của băng kép: Luôn uốn cong về phía kim loại nở vì nhiệt ít hơn khi nung nóng."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi tăng nhiệt độ như nhau, sự nở vì nhiệt của chất rắn, chất lỏng và chất khí được xếp theo thứ tự từ LỚN NHẤT đến NHỎ NHẤT là:",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "Chất khí > Chất lỏng > Chất rắn",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "Chất rắn > Chất lỏng > Chất khí",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "Chất lỏng > Chất khí > Chất rắn",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "Cả ba trạng thái đều nở vì nhiệt hoàn toàn bằng nhau",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 8 Bài 29: Chất khí nở vì nhiệt nhiều nhất, tiếp theo là chất lỏng, và chất rắn nở vì nhiệt ít nhất."
+  }
+}

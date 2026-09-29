@@ -1,0 +1,534 @@
+[
+  {
+    "id": "phy-g8-b14-mcq-001",
+    "lessonId": "phy-g8-b14",
+    "sgkBaiSo": 26,
+    "skillIds": [
+      "thermal-motion-concept"
+    ],
+    "difficulty": 1,
+    "prompt": "Hiện tượng các phân tử, nguyên tử cấu tạo nên vật luôn chuyển động hỗn loạn không ngừng về mọi phía được gọi là:",
+    "knowledge": [
+      "thermal.internal.energy"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chuyển động thẳng đều"
+        },
+        {
+          "id": "opt-b",
+          "label": "Chuyển động tròn đều"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chuyển động nhiệt"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chuyển động rơi tự do"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Chuyển động này gắn liền chặt chẽ với nhiệt độ của vật thể."
+      },
+      {
+        "level": 2,
+        "text": "Khi nhiệt độ càng cao, các phân tử chuyển động càng nhanh. Đó là chuyển động nhiệt."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khái niệm vi mô",
+        "body": "Xác định tên gọi chuyển động hỗn loạn của các phân tử, nguyên tử."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 26), các nguyên tử, phân tử cấu tạo nên vật luôn chuyển động hỗn loạn không ngừng. Chuyển động này được gọi là chuyển động nhiệt."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Chuyển động nhiệt**."
+      }
+    ],
+    "finalSolution": "Chuyển động hỗn loạn của các phân tử được gọi là **chuyển động nhiệt**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-with-macroscopic-motion",
+        "message": "Đừng nhầm chuyển động của cả vật thể (chuyển động cơ học) với chuyển động nhiệt hỗn loạn bên trong của các hạt vi mô."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b14-mcq-002",
+    "lessonId": "phy-g8-b14",
+    "sgkBaiSo": 26,
+    "skillIds": [
+      "internal-energy-definition"
+    ],
+    "difficulty": 1,
+    "prompt": "Nội năng của một vật thể được định nghĩa chính xác là:",
+    "knowledge": [
+      "thermal.internal.energy"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Năng lượng ánh sáng mà vật hấp thụ từ Mặt Trời"
+        },
+        {
+          "id": "opt-b",
+          "label": "Động năng của toàn bộ vật thể khi chuyển động trong không khí"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tổng động năng và thế năng của các phân tử cấu tạo nên vật"
+        },
+        {
+          "id": "opt-d",
+          "label": "Thế năng trọng trường của vật thể so với mặt đất"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nội năng là năng lượng bên trong vật cấu thành từ động năng và thế năng của các phân tử."
+      },
+      {
+        "level": 2,
+        "text": "Nội năng = Tổng động năng phân tử + Thế năng tương tác phân tử."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Định nghĩa nội năng",
+        "body": "Xác định bản chất các thành phần tạo nên nội năng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 26), tổng động năng chuyển động nhiệt và thế năng tương tác giữa các phân tử cấu tạo nên vật gọi là nội năng của vật."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Tổng động năng và thế năng của các phân tử cấu tạo nên vật**."
+      }
+    ],
+    "finalSolution": "Nội năng của vật là **tổng động năng và thế năng của các phân tử cấu tạo nên vật**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-with-mechanical-energy",
+        "message": "Cơ năng là năng lượng vĩ mô (vận tốc và độ cao của vật), còn nội năng là năng lượng vi mô của các phân tử cấu tạo nên vật."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b14-mcq-003",
+    "lessonId": "phy-g8-b14",
+    "sgkBaiSo": 26,
+    "skillIds": [
+      "factors-affecting-internal-energy"
+    ],
+    "difficulty": 2,
+    "prompt": "Nội năng của một vật thể phụ thuộc vào những yếu tố nào sau đây?",
+    "knowledge": [
+      "thermal.internal.energy"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Nhiệt độ và thể tích của vật"
+        },
+        {
+          "id": "opt-b",
+          "label": "Màu sắc bề mặt sơn bên ngoài của vật"
+        },
+        {
+          "id": "opt-c",
+          "label": "Độ cao của vật so với mực nước biển"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vận tốc di chuyển của vật trên đường"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Động năng phân tử phụ thuộc vào yếu tố nào? Thế năng phân tử phụ thuộc vào khoảng cách (thể tích) như thế nào?"
+      },
+      {
+        "level": 2,
+        "text": "Động năng phụ thuộc nhiệt độ, thế năng phụ thuộc khoảng cách giữa các phân tử (thể tích)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích các yếu tố",
+        "body": "Xét sự phụ thuộc của động năng và thế năng phân tử."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 8 (Bài 26), động năng phân tử phụ thuộc nhiệt độ, thế năng phân tử phụ thuộc thể tích. Do đó, nội năng của vật phụ thuộc vào nhiệt độ và thể tích của vật."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Nhiệt độ và thể tích của vật**."
+      }
+    ],
+    "finalSolution": "Nội năng phụ thuộc vào **nhiệt độ và thể tích của vật**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-altitude-kinetic",
+        "message": "Độ cao và vận tốc ảnh hưởng đến cơ năng (thế năng và động năng cơ học), không làm đổi nội năng trực tiếp."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b14-mcq-004",
+    "lessonId": "phy-g8-b14",
+    "sgkBaiSo": 26,
+    "skillIds": [
+      "internal-energy-work"
+    ],
+    "difficulty": 2,
+    "prompt": "Dùng búa đập liên tục nhiều lần vào một thanh sắt nhỏ đặt trên đe, sau một lúc sờ vào chỗ bị đập ta thấy thanh sắt nóng lên. Nội năng của thanh sắt đã biến đổi bằng hình thức nào?",
+    "knowledge": [
+      "thermal.internal.energy"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Thực hiện công cơ học"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nhiễm điện do cọ xát"
+        },
+        {
+          "id": "opt-c",
+          "label": "Truyền nhiệt tự phát"
+        },
+        {
+          "id": "opt-d",
+          "label": "Bức xạ điện từ"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Có lực cơ học của búa tác dụng và gây ra biến dạng của thanh sắt hay không?"
+      },
+      {
+        "level": 2,
+        "text": "Khi có lực tác dụng và sinh công cơ học làm vật nóng lên, đó là hình thức thực hiện công."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định cơ chế",
+        "body": "Búa tác dụng lực cơ học và chuyển dời gây biến dạng thanh sắt."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hai cách đổi nội năng",
+        "body": "Theo SGK KHTN 8 (Bài 26), tác dụng lực làm thanh sắt biến dạng và nóng lên là biến đổi nội năng bằng cách thực hiện công cơ học."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Thực hiện công cơ học**."
+      }
+    ],
+    "finalSolution": "Thanh sắt nóng lên do **thực hiện công cơ học**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-heat-transfer",
+        "message": "Truyền nhiệt xảy ra khi tiếp xúc với nguồn nhiệt nóng hơn mà không cần tác dụng lực cơ học."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b14-mcq-005",
+    "lessonId": "phy-g8-b14",
+    "sgkBaiSo": 26,
+    "skillIds": [
+      "internal-energy-heat-transfer"
+    ],
+    "difficulty": 2,
+    "prompt": "Thả một miếng đồng nguội vào một cốc nước đang sôi, sau một thời gian miếng đồng nóng lên còn nước trong cốc nguội bớt đi. Nội năng của miếng đồng đã tăng lên bằng cách nào?",
+    "knowledge": [
+      "thermal.internal.energy"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Thực hiện công"
+        },
+        {
+          "id": "opt-b",
+          "label": "Truyền nhiệt"
+        },
+        {
+          "id": "opt-c",
+          "label": "Nhiễm điện hưởng ứng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Phản ứng hóa học"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Không có lực cơ học nào tác dụng làm dịch chuyển miếng đồng."
+      },
+      {
+        "level": 2,
+        "text": "Nhiệt năng tự phát truyền từ vật có nhiệt độ cao (nước sôi) sang vật nhiệt độ thấp (miếng đồng), đó là truyền nhiệt."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định hiện tượng",
+        "body": "Nước sôi truyền năng lượng nhiệt cho miếng đồng nguội."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Khái niệm truyền nhiệt SGK",
+        "body": "Theo SGK KHTN 8 (Bài 26), quá trình truyền nhiệt năng từ vật có nhiệt độ cao sang vật có nhiệt độ thấp hơn mà không có sự sinh công cơ học được gọi là truyền nhiệt."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Truyền nhiệt**."
+      }
+    ],
+    "finalSolution": "Miếng đồng tăng nội năng nhờ hình thức **truyền nhiệt** từ nước nóng sang.",
+    "commonMistakes": [
+      {
+        "id": "think-it-does-work",
+        "message": "Không có công cơ học nào được thực hiện trong quá trình truyền nhiệt đơn thuần."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b14-num-006",
+    "lessonId": "phy-g8-b14",
+    "sgkBaiSo": 26,
+    "skillIds": [
+      "heat-unit-conversion"
+    ],
+    "difficulty": 1,
+    "prompt": "Một cốc nước nhận được nhiệt lượng Q = 4,2 kJ từ bếp đun. Hãy đổi giá trị nhiệt lượng này ra đơn vị jun (J).",
+    "knowledge": [
+      "thermal.internal.energy"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 4200,
+      "unit": "J",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tiền tố kilo (k) nghĩa là 1 000 lần."
+      },
+      {
+        "level": 2,
+        "text": "1 kJ = 1 000 J, lấy 4,2 nhân với 1 000."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$Q = 4{,}2\\text{ kJ}$, cần đổi sang J."
+      },
+      {
+        "kind": "equation",
+        "title": "Hệ thức quy đổi",
+        "body": "$1\\text{ kJ} = 1\\,000\\text{ J} \\Rightarrow Q\\text{ (J)} = Q\\text{ (kJ)} \\times 1\\,000$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$Q = 4{,}2 \\times 1\\,000 = 4\\,200\\text{ J}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nhiệt lượng là **4 200 J** (đây chính là nhiệt lượng cần để làm nóng 1 kg nước tăng thêm 1 °C)."
+      }
+    ],
+    "finalSolution": "Quy đổi: $Q = 4{,}2\\text{ kJ} = 4{,}2 \\times 1\\,000 = 4\\,200\\text{ J}$.",
+    "commonMistakes": [
+      {
+        "id": "divide-instead-of-multiply",
+        "message": "Từ kilôjun (kJ) sang jun (J) phải nhân 1 000 chứ không phải chia."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b14-num-007",
+    "lessonId": "phy-g8-b14",
+    "sgkBaiSo": 26,
+    "skillIds": [
+      "heat-unit-conversion"
+    ],
+    "difficulty": 1,
+    "prompt": "Một thỏi sắt nung nóng tỏa ra môi trường xung quanh một nhiệt lượng là Q = 18 500 J. Hãy đổi giá trị nhiệt lượng tỏa ra này sang đơn vị kilôjun (kJ).",
+    "knowledge": [
+      "thermal.internal.energy"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 18.5,
+      "unit": "kJ",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "1 J = 0,001 kJ = 1 / 1 000 kJ."
+      },
+      {
+        "level": 2,
+        "text": "Lấy 18 500 chia cho 1 000 để đổi sang kJ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$Q = 18\\,500\\text{ J}$, cần đổi sang kJ."
+      },
+      {
+        "kind": "equation",
+        "title": "Hệ thức quy đổi",
+        "body": "$1\\text{ J} = \\frac{1}{1\\,000}\\text{ kJ} = 10^{-3}\\text{ kJ}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$Q = \\frac{18\\,500}{1\\,000} = 18{,}5\\text{ kJ}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nhiệt lượng tỏa ra là **18,5 kJ**."
+      }
+    ],
+    "finalSolution": "Quy đổi: $Q = \\frac{18\\,500}{1\\,000} = 18{,}5\\text{ kJ}$.",
+    "commonMistakes": [
+      {
+        "id": "decimal-division-error",
+        "message": "18 500 chia 1 000 được 18,5 chứ không phải 1,85 hay 185."
+      }
+    ]
+  },
+  {
+    "id": "phy-g8-b14-mcq-008",
+    "lessonId": "phy-g8-b14",
+    "sgkBaiSo": 26,
+    "skillIds": [
+      "temperature-internal-energy-relationship"
+    ],
+    "difficulty": 3,
+    "prompt": "Xét một khối lượng khí xác định chứa trong một bình kín có thể tích không đổi. Khi nhiệt độ của khối khí tăng lên, nhận định nào sau đây là ĐÚNG?",
+    "knowledge": [
+      "thermal.internal.energy"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Nội năng của khối khí luôn không đổi vì thể tích bình không thay đổi"
+        },
+        {
+          "id": "opt-b",
+          "label": "Khối lượng của khí tăng lên gấp đôi nên nội năng tăng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Các phân tử khí chuyển động nhanh hơn, động năng phân tử tăng nên nội năng của khối khí tăng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Các phân tử khí chuyển động chậm lại nên nội năng của khối khí giảm"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhiệt độ đo tốc độ chuyển động nhiệt của phân tử."
+      },
+      {
+        "level": 2,
+        "text": "Nhiệt độ tăng -> phân tử chuyển động nhanh hơn -> động năng phân tử tăng -> tổng động năng (nội năng) tăng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích mối quan hệ",
+        "body": "Xem xét tác động của nhiệt độ tới động năng phân tử và nội năng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Mô hình động học phân tử",
+        "body": "Khi nhiệt độ tăng, các phân tử khí chuyển động hỗn loạn nhanh hơn, dẫn đến động năng phân tử tăng. Do đó tổng năng lượng bên trong (nội năng) của khối khí tăng lên."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Các phân tử khí chuyển động nhanh hơn, động năng phân tử tăng nên nội năng của khối khí tăng**."
+      }
+    ],
+    "finalSolution": "Khi nhiệt độ tăng, **các phân tử chuyển động nhanh hơn, động năng tăng nên nội năng của khối khí tăng**.",
+    "commonMistakes": [
+      {
+        "id": "assume-fixed-volume-means-fixed-energy",
+        "message": "Thể tích không đổi thì thế năng tương tác ít biến đổi, nhưng nhiệt độ tăng làm động năng tăng mạnh nên nội năng vẫn tăng."
+      }
+    ]
+  }
+]

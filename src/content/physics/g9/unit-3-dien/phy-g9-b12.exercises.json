@@ -1,0 +1,535 @@
+[
+  {
+    "id": "phy-g9-b12-mcq-001",
+    "lessonId": "phy-g9-b12",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "electric-power-formula"
+    ],
+    "difficulty": 1,
+    "prompt": "Công thức tổng quát để xác định công suất điện tiêu thụ của một đoạn mạch là:",
+    "knowledge": [
+      "formula.electric.power"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "P = U . I"
+        },
+        {
+          "id": "opt-b",
+          "label": "P = U + I"
+        },
+        {
+          "id": "opt-c",
+          "label": "P = I / U"
+        },
+        {
+          "id": "opt-d",
+          "label": "P = U / I"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Công suất điện bằng tích của hiệu điện thế và cường độ dòng điện."
+      },
+      {
+        "level": 2,
+        "text": "Theo SGK KHTN 9 Bài 13: P = U . I."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định công thức",
+        "body": "Đề bài yêu cầu chỉ ra biểu thức tính công suất điện."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 13: Công suất điện của một đoạn mạch bằng tích của hiệu điện thế giữa hai đầu đoạn mạch và cường độ dòng điện chạy qua nó: $P = U \\cdot I$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **P = U . I**."
+      }
+    ],
+    "finalSolution": "Công suất điện: **$P = U \\cdot I$**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-division",
+        "message": "P = U * I là phép nhân tích số giữa hiệu điện thế và dòng điện, không phải phép chia."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b12-mcq-002",
+    "lessonId": "phy-g9-b12",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "electric-meter-kwh-value"
+    ],
+    "difficulty": 1,
+    "prompt": "Mỗi số đếm tăng thêm trên công tơ điện gia đình (thường gọi là '1 số điện') tương ứng với lượng điện năng tiêu thụ là bao nhiêu?",
+    "knowledge": [
+      "formula.electric.energy"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "1 kJ = 1 000 J"
+        },
+        {
+          "id": "opt-b",
+          "label": "100 kWh"
+        },
+        {
+          "id": "opt-c",
+          "label": "1 kWh = 3 600 000 J (3,6 . 10⁶ J)"
+        },
+        {
+          "id": "opt-d",
+          "label": "1 Wh = 3 600 J"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "1 số điện = 1 kilôoát giờ (1 kWh)."
+      },
+      {
+        "level": 2,
+        "text": "1 kWh = 1 000 W x 3 600 s = 3 600 000 J."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khái niệm số điện",
+        "body": "Tìm giá trị năng lượng tương ứng với 1 số điện đếm trên công tơ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Theo SGK KHTN 9 Bài 13: Một số điện tương ứng với $1\\text{ kWh}$ điện năng tiêu thụ: $1\\text{ kWh} = 1\\,000\\text{ W} \\times 3\\,600\\text{ s} = 3\\,600\\,000\\text{ J}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **1 kWh = 3 600 000 J**."
+      }
+    ],
+    "finalSolution": "Một số điện bằng **$1\\text{ kWh} = 3\\,600\\,000\\text{ J}$**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-wh-and-kwh",
+        "message": "Số điện tính bằng kilôoát giờ (kWh), không phải oát giờ (Wh)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b12-mcq-003",
+    "lessonId": "phy-g9-b12",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "rating-label-meaning"
+    ],
+    "difficulty": 1,
+    "prompt": "Trên một bóng đèn sợi đốt có ghi nhãn '220 V - 100 W'. Các con số này cho biết điều gì?",
+    "knowledge": [
+      "formula.electric.power"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Đèn luôn tiêu thụ công suất 100 W ở bất kì hiệu điện thế nào"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hiệu điện thế tối đa đèn chịu được là 100 V và công suất là 220 W"
+        },
+        {
+          "id": "opt-c",
+          "label": "Trong mỗi giây đèn tiêu thụ 220 J điện năng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khi mắc vào hiệu điện thế 220 V, đèn sáng bình thường và tiêu thụ công suất điện đúng bằng 100 W"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "220 V là hiệu điện thế định mức, 100 W là công suất định mức của bóng đèn."
+      },
+      {
+        "level": 2,
+        "text": "Đèn chỉ đạt công suất định mức 100 W khi được cấp đúng hiệu điện thế định mức 220 V."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Ý nghĩa số ghi định mức",
+        "body": "Giải thích các thông số kỹ thuật ghi trên vỏ bóng đèn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy ước thông số định mức",
+        "body": "Theo SGK KHTN 9 Bài 13: $U_{đm} = 220\\text{ V}$ là hiệu điện thế định mức cần cấp cho đèn; $P_{đm} = 100\\text{ W}$ là công suất điện mà đèn tiêu thụ khi hoạt động ở đúng hiệu điện thế định mức."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là **Khi mắc vào hiệu điện thế 220 V, đèn sáng bình thường và tiêu thụ công suất 100 W**."
+      }
+    ],
+    "finalSolution": "Số ghi $220\\text{ V} - 100\\text{ W}$ cho biết **khi hoạt động ở $220\\text{ V}$, đèn sáng bình thường và tiêu thụ công suất $100\\text{ W}$**.",
+    "commonMistakes": [
+      {
+        "id": "assume-constant-power",
+        "message": "Nếu mắc đèn vào nguồn điện nhỏ hơn 220 V (ví dụ 110 V), công suất tiêu thụ thực tế sẽ nhỏ hơn 100 W rất nhiều."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b12-num-004",
+    "lessonId": "phy-g9-b12",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "electric-power-calc-basic"
+    ],
+    "difficulty": 2,
+    "prompt": "Một bóng đèn LED được nối vào mạng điện có hiệu điện thế U = 220 V. Dòng điện đo được chạy qua bóng đèn có cường độ I = 0,05 A. Công suất điện tiêu thụ của bóng đèn LED này là bao nhiêu oát (W)?",
+    "knowledge": [
+      "formula.electric.power"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 11,
+      "unit": "W",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp dụng công thức tính công suất điện P = U . I."
+      },
+      {
+        "level": 2,
+        "text": "Thay số: U = 220 V, I = 0,05 A => P = 220 x 0,05 = 11 W."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$U = 220\\text{ V}$; $I = 0,05\\text{ A}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức công suất điện",
+        "body": "$P = U \\cdot I$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$P = 220 \\times 0,05 = 11\\text{ W}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Công suất tiêu thụ của bóng đèn LED là **11 W**."
+      }
+    ],
+    "finalSolution": "Công suất tiêu thụ: $P = U \\cdot I = 220 \\times 0,05 = 11\\text{ W}$.",
+    "commonMistakes": [
+      {
+        "id": "decimal-multiplication-error",
+        "message": "Bạn đã nhân nhầm dấu thập phân: 220 * 0,05 = 11 W (không phải 110 W hay 1,1 W).",
+        "trapAnswers": [
+          "110",
+          "1.1"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b12-num-005",
+    "lessonId": "phy-g9-b12",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "electric-energy-calc-kwh"
+    ],
+    "difficulty": 2,
+    "prompt": "Một chiếc bàn là điện có công suất tiêu thụ P = 1 000 W được sử dụng liên tục trong thời gian t = 30 phút. Lượng điện năng mà chiếc bàn là đã tiêu thụ tính theo đơn vị kilôoát giờ (kWh) là bao nhiêu?",
+    "knowledge": [
+      "formula.electric.energy"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 0.5,
+      "unit": "kWh",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đổi công suất sang kW: P = 1 000 W = 1 kW. Đổi thời gian sang giờ: t = 30 phút = 0,5 h."
+      },
+      {
+        "level": 2,
+        "text": "Tính điện năng A = P . t = 1 kW x 0,5 h = 0,5 kWh."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt và đổi đơn vị",
+        "body": "$P = 1\\,000\\text{ W} = 1\\text{ kW}$; $t = 30\\text{ phút} = 0,5\\text{ giờ}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức điện năng",
+        "body": "$A = P \\cdot t$ (với $P$ tính bằng kW, $t$ tính bằng h thì $A$ tính bằng kWh)."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$A = 1 \\times 0,5 = 0,5\\text{ kWh}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Điện năng bàn là đã tiêu thụ là **0,5 kWh**."
+      }
+    ],
+    "finalSolution": "Điện năng tiêu thụ: $A = P \\cdot t = 1\\text{ kW} \\times 0,5\\text{ h} = 0,5\\text{ kWh}$.",
+    "commonMistakes": [
+      {
+        "id": "forget-hour-conversion",
+        "message": "Bạn đã để nguyên 30 phút nhân với 1 000: 30 phút = 0,5 h nên A = 1 kW * 0,5 h = 0,5 kWh.",
+        "trapAnswers": [
+          "30",
+          "30000",
+          "500"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b12-num-006",
+    "lessonId": "phy-g9-b12",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "rating-rated-current-calc"
+    ],
+    "difficulty": 2,
+    "prompt": "Một ấm đun nước siêu tốc có ghi thông số kĩ thuật là '220 V - 1 100 W'. Khi ấm hoạt động bình thường ở đúng hiệu điện thế định mức 220 V, cường độ dòng điện I chạy qua ấm là bao nhiêu ampe (A)?",
+    "knowledge": [
+      "formula.electric.power"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 5,
+      "unit": "A",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ công thức P = U . I suy ra I = P / U."
+      },
+      {
+        "level": 2,
+        "text": "Thay số: P = 1 100 W, U = 220 V => I = 1 100 / 220 = 5 A."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt đề bài",
+        "body": "$U = 220\\text{ V}$; $P = 1\\,100\\text{ W}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức cường độ dòng điện định mức",
+        "body": "Từ $P = U \\cdot I \\Rightarrow I = \\frac{P}{U}$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$I = \\frac{1\\,100}{220} = 5\\text{ A}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cường độ dòng điện định mức qua ấm là **5 A**."
+      }
+    ],
+    "finalSolution": "Cường độ dòng điện qua ấm: $I = \\frac{P}{U} = \\frac{1\\,100}{220} = 5\\text{ A}$.",
+    "commonMistakes": [
+      {
+        "id": "divide-inverted",
+        "message": "Bạn đã lấy U chia cho P thay vì P chia cho U: I = P / U = 1 100 / 220 = 5 A.",
+        "trapAnswers": [
+          "0.2",
+          "0.2 A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b12-num-007",
+    "lessonId": "phy-g9-b12",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "monthly-energy-calc-tv"
+    ],
+    "difficulty": 3,
+    "prompt": "Một chiếc tivi thông minh có công suất tiêu thụ P = 100 W, mỗi ngày được bật hoạt động trung bình t = 5 giờ. Trong một tháng (tính là 30 ngày), chiếc tivi này tiêu thụ hết bao nhiêu kilôoát giờ (kWh) điện năng (tương đương bao nhiêu số điện)?",
+    "knowledge": [
+      "formula.electric.energy"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 15,
+      "unit": "kWh",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đổi công suất P = 100 W = 0,1 kW. Tổng số giờ dùng trong 30 ngày là 5 x 30 = 150 giờ."
+      },
+      {
+        "level": 2,
+        "text": "Tính tổng điện năng A = P . t = 0,1 kW x 150 h = 15 kWh."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt và đổi đơn vị",
+        "body": "$P = 100\\text{ W} = 0,1\\text{ kW}$; thời gian 1 ngày: $5\\text{ h}$; số ngày: $30\\text{ ngày}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Tổng thời gian và điện năng",
+        "body": "Tổng thời gian hoạt động: $T = 5 \\times 30 = 150\\text{ h}$. Điện năng tiêu thụ: $A = P \\times T$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "$A = 0,1 \\times 150 = 15\\text{ kWh}$ (tương ứng 15 số điện)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Điện năng tivi tiêu thụ trong 1 tháng là **15 kWh**."
+      }
+    ],
+    "finalSolution": "Điện năng tiêu thụ trong 1 tháng: $A = 0,1\\text{ kW} \\times (5 \\times 30)\\text{ h} = 15\\text{ kWh}$.",
+    "commonMistakes": [
+      {
+        "id": "calculate-one-day-only",
+        "message": "Bạn chỉ tính điện năng trong 1 ngày (0,5 kWh) mà quên nhân với 30 ngày trong cả tháng (0,5 * 30 = 15 kWh).",
+        "trapAnswers": [
+          "0.5",
+          "0.5 kWh"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b12-num-008",
+    "lessonId": "phy-g9-b12",
+    "sgkBaiSo": 13,
+    "skillIds": [
+      "electric-heat-joule-calc"
+    ],
+    "difficulty": 3,
+    "prompt": "Một bếp điện có dây nung bằng mayso với điện trở R = 80 Ω, dòng điện chạy qua bếp có cường độ I = 2,5 A. Nhiệt lượng tỏa ra trên bếp điện trong thời gian t = 10 phút là bao nhiêu kilôjun (kJ)?",
+    "knowledge": [
+      "formula.electric.power",
+      "formula.electric.energy"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 300,
+      "unit": "kJ",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bắt buộc đổi thời gian sang giây: t = 10 phút = 600 s."
+      },
+      {
+        "level": 2,
+        "text": "Tính nhiệt lượng A = I² . R . t = (2,5)² x 80 x 600 = 300 000 J, sau đó đổi ra kJ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt và đổi đơn vị",
+        "body": "$R = 80\\,\\Omega$; $I = 2,5\\text{ A}$; $t = 10\\text{ phút} = 10 \\times 60 = 600\\text{ s}$."
+      },
+      {
+        "kind": "equation",
+        "title": "Công thức nhiệt lượng dòng điện",
+        "body": "$A = I^2 \\cdot R \\cdot t$."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán và đổi sang kJ",
+        "body": "$A = (2,5)^2 \\times 80 \\times 600 = 6,25 \\times 80 \\times 600 = 500 \\times 600 = 300\\,000\\text{ J} = 300\\text{ kJ}$."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nhiệt lượng tỏa ra trên bếp là **300 kJ**."
+      }
+    ],
+    "finalSolution": "Nhiệt lượng tỏa ra: $A = I^2 \\cdot R \\cdot t = (2,5)^2 \\times 80 \\times 600 = 300\\,000\\text{ J} = 300\\text{ kJ}$.",
+    "commonMistakes": [
+      {
+        "id": "forget-minute-to-second",
+        "message": "Bạn không đổi 10 phút sang 600 giây (để nguyên t = 10): A = 2,5² * 80 * 600 = 300 000 J = 300 kJ.",
+        "trapAnswers": [
+          "5",
+          "5 kJ",
+          "5000"
+        ]
+      },
+      {
+        "id": "forget-j-to-kj",
+        "message": "Bạn đã để nguyên đơn vị Jun mà không chia cho 1 000 để ra kilôjun: 300 000 J = 300 kJ.",
+        "trapAnswers": [
+          "300000",
+          "300000 J"
+        ]
+      }
+    ]
+  }
+]

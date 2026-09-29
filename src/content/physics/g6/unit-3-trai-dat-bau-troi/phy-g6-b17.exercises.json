@@ -1,0 +1,404 @@
+[
+  {
+    "id": "phy-g6-b17-mcq-001",
+    "lessonId": "phy-g6-b17",
+    "sgkBaiSo": 52,
+    "skillIds": [
+      "earth-rotation-direction"
+    ],
+    "difficulty": 1,
+    "prompt": "Trái Đất tự quay quanh trục của nó theo chiều nào?",
+    "knowledge": [
+      "astro.earth.rotation"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Từ Bắc xuống Nam"
+        },
+        {
+          "id": "opt-b",
+          "label": "Từ Nam lên Bắc"
+        },
+        {
+          "id": "opt-c",
+          "label": "Từ Đông sang Tây"
+        },
+        {
+          "id": "opt-d",
+          "label": "Từ Tây sang Đông"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Vì Trái Đất tự quay theo một chiều nên ta thấy Mặt Trời mọc ở hướng ngược lại."
+      },
+      {
+        "level": 2,
+        "text": "Mặt Trời mọc ở hướng Đông nên Trái Đất tự quay theo chiều từ Tây sang Đông."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định hiện tượng quan sát",
+        "body": "Mỗi ngày chúng ta đều quan sát thấy Mặt Trời mọc ở hướng Đông và lặn ở hướng Tây."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy luật chuyển động biểu kiến",
+        "body": "Chuyển động nhìn thấy của thiên thể ngược chiều với chuyển động thực của hệ quy chiếu quan sát (Trái Đất)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Trái Đất tự quay quanh trục theo chiều **từ Tây sang Đông**."
+      }
+    ],
+    "finalSolution": "Trái Đất tự quay quanh trục của nó theo chiều **từ Tây sang Đông**.",
+    "commonMistakes": [
+      {
+        "id": "confuse-sun-rise",
+        "message": "Bạn đang nhầm với chuyển động nhìn thấy của Mặt Trời (từ Đông sang Tây)!",
+        "trapAnswers": [
+          "opt-b"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b17-tf-002",
+    "lessonId": "phy-g6-b17",
+    "sgkBaiSo": 52,
+    "skillIds": [
+      "day-night-cycle-causes"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy xác định tính Đúng hoặc Sai cho mỗi nhận định dưới đây về hiện tượng ngày và đêm trên Trái Đất:",
+    "knowledge": [
+      "astro.earth.rotation"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "stmt-1",
+          "text": "Nguyên nhân sinh ra ngày và đêm là do Trái Đất hình cầu và tự quay quanh trục của nó.",
+          "correct": true
+        },
+        {
+          "id": "stmt-2",
+          "text": "Mặt Trời chuyển động thực sự quay xung quanh Trái Đất một vòng mỗi ngày.",
+          "correct": false
+        },
+        {
+          "id": "stmt-3",
+          "text": "Khoảng thời gian để Trái Đất quay trọn một vòng quanh trục là 24 giờ (1 ngày đêm).",
+          "correct": true
+        },
+        {
+          "id": "stmt-4",
+          "text": "Nếu Trái Đất ngừng tự quay quanh trục thì hiện tượng ngày và đêm luân phiên 24h vẫn diễn ra bình thường.",
+          "correct": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trái Đất quay quanh trục của nó, không phải Mặt Trời quay quanh Trái Đất."
+      },
+      {
+        "level": 2,
+        "text": "Nếu Trái Đất ngừng quay, một nửa sẽ là ngày vĩnh viễn và một nửa là đêm vĩnh viễn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Xem xét từng nhận định về nguyên nhân ngày đêm, chuyển động thực của Mặt Trời, chu kỳ tự quay và giả định Trái Đất dừng quay."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Bản chất khoa học",
+        "body": "Trái Đất hình cầu nên chỉ 1/2 được chiếu sáng, tự quay 24h tạo nên chu kỳ ngày đêm luân phiên liên tục (nhận định 1, 3 đúng). Mặt Trời đứng yên so với hệ Mặt Trời, không quay quanh Trái Đất (nhận định 2 sai). Nếu dừng quay, ngày đêm sẽ không còn luân phiên chu kỳ 24h (nhận định 4 sai)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng/Sai",
+        "body": "Nhận định 1: Đúng · Nhận định 2: Sai · Nhận định 3: Đúng · Nhận định 4: Sai."
+      }
+    ],
+    "finalSolution": "Câu 1: Đúng · Câu 2: Sai · Câu 3: Đúng · Câu 4: Sai.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b17-mcq-003",
+    "lessonId": "phy-g6-b17",
+    "sgkBaiSo": 52,
+    "skillIds": [
+      "classify-celestial-bodies"
+    ],
+    "difficulty": 2,
+    "prompt": "Thiên thể nào sau đây là một **ngôi sao** có khả năng tự phát ra ánh sáng?",
+    "knowledge": [
+      "astro.sun.motion"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Sao Kim (sao Hôm / sao Mai)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Trái Đất"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mặt Trăng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Mặt Trời"
+        }
+      ],
+      "correctId": "opt-d"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sao là thiên thể tự phát sáng nhờ các phản ứng nhiệt hạch từ tâm."
+      },
+      {
+        "level": 2,
+        "text": "Hành tinh và vệ tinh chỉ phản chiếu ánh sáng từ ngôi sao chiếu tới."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khái niệm ngôi sao",
+        "body": "Ngôi sao là thiên thể tự phát sáng. Hành tinh và vệ tinh không tự phát sáng mà chỉ phản chiếu ánh sáng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Bản chất các thiên thể",
+        "body": "Mặt Trời là ngôi sao khổng lồ tự phát ra ánh sáng và nhiệt. Trái Đất và Sao Kim là các hành tinh; Mặt Trăng là vệ tinh tự nhiên."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thiên thể tự phát sáng là **Mặt Trời**."
+      }
+    ],
+    "finalSolution": "**Mặt Trời** là một ngôi sao tự phát sáng.",
+    "commonMistakes": [
+      {
+        "id": "confuse-venus",
+        "message": "Sao Kim (sao Hôm) tuy rất sáng trên bầu trời đêm nhưng nó là một hành tinh phản chiếu ánh sáng Mặt Trời chứ không tự phát sáng!",
+        "trapAnswers": [
+          "opt-d"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phy-g6-b17-num-004",
+    "lessonId": "phy-g6-b17",
+    "sgkBaiSo": 52,
+    "skillIds": [
+      "earth-rotation-time-calc"
+    ],
+    "difficulty": 2,
+    "prompt": "Trái Đất tự quay một vòng quanh trục hết đúng 24 giờ. Hỏi để Trái Đất tự quay trọn vẹn đúng 3 vòng quanh trục của nó thì cần một khoảng thời gian là bao nhiêu giờ?",
+    "knowledge": [
+      "astro.earth.rotation"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 72,
+      "unit": "giờ",
+      "decimals": 0
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "1 vòng quay của Trái Đất tương ứng với 24 giờ."
+      },
+      {
+        "level": 2,
+        "text": "Lấy thời gian 1 vòng nhân với 3 vòng: 24 x 3."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt dữ kiện",
+        "body": "Thời gian 1 vòng tự quay: $T_1 = 24\\text{ giờ}$. Số vòng quay: $n = 3$ vòng."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "Tổng thời gian: $T = 24 \\times 3 = 72\\text{ giờ}$ (tương đương 3 ngày đêm)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thời gian để Trái Đất quay 3 vòng là **72 giờ**."
+      }
+    ],
+    "finalSolution": "Thời gian cần thiết: $24 \\times 3 = 72\\text{ giờ}$.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b17-match-005",
+    "lessonId": "phy-g6-b17",
+    "sgkBaiSo": 52,
+    "skillIds": [
+      "celestial-bodies-matching"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy ghép mỗi thiên thể ở cột bên trái với đúng bản chất thiên văn ở cột bên phải:",
+    "knowledge": [
+      "astro.sun.motion",
+      "astro.earth.rotation"
+    ],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Mặt Trời",
+          "right": "Ngôi sao tự phát sáng"
+        },
+        {
+          "left": "Trái Đất",
+          "right": "Hành tinh quay quanh Mặt Trời"
+        },
+        {
+          "left": "Mặt Trăng",
+          "right": "Vệ tinh tự nhiên của Trái Đất"
+        },
+        {
+          "left": "Sao Kim",
+          "right": "Hành tinh phản chiếu ánh sáng"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mặt Trời là nguồn phát sáng chính; Trái Đất là nơi chúng ta sống; Mặt Trăng quay quanh Trái Đất."
+      },
+      {
+        "level": 2,
+        "text": "Sao Kim dù được gọi dân gian là 'sao' nhưng bản chất là một hành tinh trong Hệ Mặt Trời."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích từng thiên thể",
+        "body": "Mặt Trời, Trái Đất, Mặt Trăng, Sao Kim là 4 thiên thể quen thuộc trong hệ thống thiên văn lớp 6."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu bản chất",
+        "body": "Mặt Trời: ngôi sao tự phát sáng; Trái Đất: hành tinh mang sự sống; Mặt Trăng: vệ tinh quay quanh Trái Đất; Sao Kim: hành tinh phản chiếu ánh nắng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận ghép cặp",
+        "body": "Ghép nối thành công 4 cặp thiên thể và đặc điểm tương ứng."
+      }
+    ],
+    "finalSolution": "Mặt Trời ↔ Ngôi sao tự phát sáng · Trái Đất ↔ Hành tinh quay quanh Mặt Trời · Mặt Trăng ↔ Vệ tinh tự nhiên của Trái Đất · Sao Kim ↔ Hành tinh phản chiếu ánh sáng.",
+    "commonMistakes": []
+  },
+  {
+    "id": "phy-g6-b17-multi-006",
+    "lessonId": "phy-g6-b17",
+    "sgkBaiSo": 52,
+    "skillIds": [
+      "earth-sky-phenomena-multi"
+    ],
+    "difficulty": 3,
+    "prompt": "Những phát biểu nào sau đây là **chính xác** về chuyển động của Trái Đất và bầu trời? (Chọn tất cả các đáp án đúng)",
+    "knowledge": [
+      "astro.earth.rotation",
+      "astro.sun.motion"
+    ],
+    "answer": {
+      "kind": "mcq-multi",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Trái Đất tự quay quanh trục theo chiều từ Tây sang Đông"
+        },
+        {
+          "id": "opt-b",
+          "label": "Mặt Trời là thiên thể trung tâm tự phát sáng của Hệ Mặt Trời"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hiện tượng ngày và đêm luân phiên xảy ra liên tục vì Trái Đất hình cầu và tự quay quanh trục"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chuyển động nhìn thấy của Mặt Trời từ Đông sang Tây là do Trái Đất tự quay"
+        },
+        {
+          "id": "opt-e",
+          "label": "Tất cả các hành tinh trong Hệ Mặt Trời đều có khả năng tự phát sáng như Mặt Trời"
+        }
+      ],
+      "correctIds": [
+        "opt-a",
+        "opt-b",
+        "opt-c",
+        "opt-d"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Các hành tinh không tự phát sáng mà chỉ phản chiếu ánh sáng từ Mặt Trời."
+      },
+      {
+        "level": 2,
+        "text": "Trái Đất quay từ Tây sang Đông, làm cho Mặt Trời mọc ở hướng Đông và lặn ở hướng Tây."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đánh giá từng phát biểu",
+        "body": "Kiểm tra 5 phát biểu về chiều quay Trái Đất, chuyển động nhìn thấy của Mặt Trời, nguyên nhân ngày đêm và khả năng phát sáng của hành tinh."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra khoa học",
+        "body": "Phát biểu a, b, c, e hoàn toàn đúng với nội dung SGK bài 52. Phát biểu d sai vì hành tinh không tự phát sáng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Chọn 4 phương án đúng: a, b, c, e."
+      }
+    ],
+    "finalSolution": "Các phát biểu đúng: **Trái Đất quay từ Tây sang Đông**, **Mặt Trời mọc Đông lặn Tây do Trái Đất tự quay**, **Ngày đêm luân phiên do Trái Đất hình cầu tự quay**, và **Mặt Trời là thiên thể trung tâm tự phát sáng**.",
+    "commonMistakes": [
+      {
+        "id": "planets-glow",
+        "message": "Các hành tinh không thể tự phát sáng như ngôi sao!"
+      }
+    ]
+  }
+]

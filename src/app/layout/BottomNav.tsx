@@ -1,15 +1,17 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { BookOpen, FlaskConical, ShoppingBag, BarChart3, User } from 'lucide-react';
+import { BookOpen, FlaskConical, ShoppingBag, BarChart3, User, Zap } from 'lucide-react';
 import { sound } from '@/lib/audio';
+import { useActiveSubject } from '@/content/subjects';
 
 export const BottomNav: React.FC = () => {
   const location = useLocation();
+  const { subject: activeSubject } = useActiveSubject();
   const activeGrade = typeof window !== 'undefined' ? localStorage.getItem('chem_active_grade') || '8' : '8';
 
   const navItems = [
     { to: `/learn/${activeGrade}`, label: 'Học', icon: BookOpen, isLearn: true },
-    { to: '/practice', label: 'Luyện tập', icon: FlaskConical },
+    { to: '/practice', label: 'Luyện tập', icon: activeSubject === 'physics' ? Zap : FlaskConical },
     { to: '/shop', label: 'Shop', icon: ShoppingBag },
     { to: '/progress', label: 'Tiến độ', icon: BarChart3 },
     { to: '/profile', label: 'Hồ sơ', icon: User },
@@ -24,6 +26,8 @@ export const BottomNav: React.FC = () => {
             ? location.pathname.startsWith('/learn')
             : location.pathname === item.to || location.pathname.startsWith(`${item.to}/`);
 
+          const activeColor = activeSubject === 'physics' ? 'text-[#eab308]' : 'text-[#0ea5e9]';
+
           return (
             <NavLink
               key={item.to}
@@ -31,7 +35,7 @@ export const BottomNav: React.FC = () => {
               onClick={() => sound.playClick()}
               className={`flex flex-col items-center gap-1 py-1 px-1.5 rounded-xl transition-all duration-200 cursor-pointer ${
                 isItemActive
-                  ? 'text-[#0ea5e9] font-black scale-105'
+                  ? `${activeColor} font-black scale-105`
                   : 'text-slate-400 hover:text-white font-bold'
               }`}
             >

@@ -1,0 +1,79 @@
+{
+  "lessonId": "phy-g9-b09",
+  "nodeId": "phy-g9-b09-theory",
+  "title": "Lý thuyết: Kính lúp",
+  "subtitle": "Bài 10 SGK Khoa học tự nhiên 9 (Kết nối tri thức)",
+  "sgkBaiSo": 10,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm & Cấu tạo",
+      "badgeColor": "cyan",
+      "title": "1. Kính lúp là gì? Cấu tạo của kính lúp",
+      "content": "Kính lúp là dụng cụ quang học bổ trợ cho mắt đơn giản và thông dụng nhất:",
+      "bulletPoints": [
+        "Định nghĩa: Kính lúp là một thấu kính hội tụ có tiêu cự ngắn (thường từ vài xentimét đến khoảng mười mấy xentimét), dùng để quan sát các vật thể nhỏ.",
+        "Cấu tạo: Thường gồm một thấu kính hội tụ rìa mỏng đặt trong một khung bảo vệ bằng nhựa hoặc kim loại có tay cầm tiện lợi, hoặc gắn trên gọng kính đeo mắt.",
+        "Đặc điểm ảnh quan sát được: Qua kính lúp, mắt nhìn thấy một ảnh ẢO, CÙNG CHIỀU và LỚN HƠN vật thật."
+      ],
+      "callout": "Nguyên lý tạo ảnh: Kính lúp hoạt động dựa trên trường hợp tạo ảnh ảo của thấu kính hội tụ khi vật nằm trong khoảng tiêu cự."
+    },
+    {
+      "id": "c2",
+      "badge": "Số bội giác",
+      "badgeColor": "amber",
+      "title": "2. Số bội giác của kính lúp và mối liên hệ với tiêu cự",
+      "content": "Mức độ phóng to của kính lúp được định lượng bằng đại lượng số bội giác:",
+      "bulletPoints": [
+        "Khái niệm: Số bội giác của kính lúp (kí hiệu là $G$) cho biết ảnh ảo mà mắt quan sát được qua kính lớn gấp bao nhiêu lần so với khi quan sát trực tiếp vật đó bằng mắt thường ở khoảng nhìn rõ ngắn nhất (25 cm).",
+        "Kí hiệu trên vành kính: Trên vành kính lúp thường có ghi các kí hiệu như $2\\times, 3\\times, 5\\times, 10\\times$...",
+        "Công thức liên hệ: $G = \\frac{25}{f}$ (trong đó $f$ là tiêu cự của kính lúp tính bằng xentimét - cm).",
+        "Công thức suy ra tiêu cự: $f = \\frac{25}{G}$ (cm). Kính lúp có số bội giác $G$ càng lớn thì tiêu cự $f$ càng ngắn."
+      ],
+      "callout": "Quy tắc đơn vị: Trong công thức $G = \\frac{25}{f}$, bắt buộc tiêu cự $f$ phải tính bằng đơn vị xentimét (cm)!"
+    },
+    {
+      "id": "c3",
+      "badge": "Cách dùng & Ứng dụng",
+      "badgeColor": "emerald",
+      "title": "3. Cách quan sát qua kính lúp và ứng dụng thực tế",
+      "content": "Để sử dụng kính lúp đạt hiệu quả tối ưu trong công việc và học tập:",
+      "bulletPoints": [
+        "Quy tắc đặt kính: Bắt buộc phải đặt vật quan sát trong khoảng tiêu cự của kính lúp (khoảng cách từ vật đến kính $d < f$) sao cho mắt nhìn thấy ảnh ảo cùng chiều, phóng đại rõ nét nhất.",
+        "Điều chỉnh độ nét: Dịch chuyển kính lúp lại gần hoặc ra xa vật một cách từ từ cho đến khi nhìn thấy ảnh rõ ràng, sắc nét không bị mờ nhòe.",
+        "Ứng dụng đa dạng trong đời sống:",
+        "+ Trong sinh học: Quan sát các bộ phận của côn trùng nhỏ (kiến, muỗi, phấn hoa, gân lá cây).",
+        "+ Trong kĩ thuật: Thợ sửa chữa đồng hồ, thợ kim hoàn kiểm tra vi mạch điện tử, kim cương, đá quý.",
+        "+ Trong đời sống: Người lớn tuổi dùng kính lúp để đọc báo, xem bản đồ hoặc soi tem, đồ cổ."
+      ],
+      "callout": "Lưu ý an toàn: Tuyệt đối không dùng kính lúp để nhìn trực tiếp vào Mặt Trời vì thấu kính hội tụ sẽ tập trung nhiệt lượng đốt cháy võng mạc gây mù mắt!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Một kính lúp có tiêu cự f = 5 cm thì số bội giác G của kính lúp này là bao nhiêu?",
+    "options": [
+      {
+        "id": "opt1",
+        "text": "G = 5X",
+        "correct": true
+      },
+      {
+        "id": "opt2",
+        "text": "G = 2X",
+        "correct": false
+      },
+      {
+        "id": "opt3",
+        "text": "G = 125X",
+        "correct": false
+      },
+      {
+        "id": "opt4",
+        "text": "G = 0,2X",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo SGK KHTN 9 Bài 10: Số bội giác G = 25 / f = 25 / 5 = 5X."
+  }
+}
