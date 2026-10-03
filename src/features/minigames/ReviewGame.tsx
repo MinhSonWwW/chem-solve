@@ -15,6 +15,7 @@ import {
 } from '@/engine/review/leitner';
 import trueFalseData from '@/content/kb/true-false-statements.json';
 import physicsTrueFalseData from '@/content/kb/physics/true-false-statements.json';
+import biologyTrueFalseData from '@/content/kb/biology/true-false-statements.json';
 
 interface SessionItem {
   card: LeitnerCard;
@@ -25,6 +26,7 @@ export const ReviewGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const { addXp, addHearts } = useUserStore();
   const { subject: activeSubject } = useActiveSubject();
   const isPhysics = activeSubject === 'physics';
+  const isBio = activeSubject === 'bio';
 
   const [sessionQueue, setSessionQueue] = useState<SessionItem[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -37,10 +39,11 @@ export const ReviewGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   // Initialize review session with a stable queue
   const initSession = useCallback(() => {
     let stored = loadStoredLeitnerCards();
+    const pool = isBio ? biologyTrueFalseData : isPhysics ? physicsTrueFalseData : trueFalseData;
+    const lessonPrefix = isBio ? 'bio-g6-b03' : isPhysics ? 'phy-g8-b13' : 'g8-b03';
+
     if (stored.length === 0) {
       // Seed default sample review cards from statements for new users
-      const pool = isPhysics ? physicsTrueFalseData : trueFalseData;
-      const lessonPrefix = isPhysics ? 'phy-g8-b13' : 'g8-b03';
       stored = pool.slice(0, 10).map((q, i) =>
         createLeitnerCard(q.id, lessonPrefix, Date.now() - (i + 1) * 86400000)
       );
@@ -53,7 +56,6 @@ export const ReviewGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       due = [...stored].sort((a, b) => a.lastReviewed - b.lastReviewed).slice(0, 5);
     }
 
-    const pool = isPhysics ? physicsTrueFalseData : trueFalseData;
     const queue: SessionItem[] = due.map((c) => {
       const match = pool.find((q) => q.id === c.exerciseId);
       return {
@@ -68,7 +70,7 @@ export const ReviewGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     setCombo(0);
     setSelectedAns(null);
     setIsGameOver(false);
-  }, [isPhysics]);
+  }, [isPhysics, isBio]);
 
   useEffect(() => {
     initSession();

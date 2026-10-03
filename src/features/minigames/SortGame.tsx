@@ -7,6 +7,7 @@ import { useUserStore } from '@/features/gamification/useUserStore';
 import { useActiveSubject } from '@/content/subjects';
 import substancesData from '@/content/kb/substances.json';
 import physicsSortItems from '@/content/kb/physics/sort-items.json';
+import biologySortItems from '@/content/kb/biology/sort-items.json';
 
 interface Substance {
   formula: string;
@@ -22,7 +23,11 @@ export type CategoryKey =
   | 'co-hoc'
   | 'nhiet-hoc'
   | 'dien-hoc'
-  | 'quang-hoc';
+  | 'quang-hoc'
+  | 'te-bao'
+  | 'co-the'
+  | 'di-truyen'
+  | 'sinh-thai';
 
 interface CategoryConfig {
   key: CategoryKey;
@@ -175,6 +180,73 @@ const PHYSICS_CATEGORIES: CategoryConfig[] = [
   },
 ];
 
+const BIOLOGY_CATEGORIES: CategoryConfig[] = [
+  {
+    key: 'te-bao',
+    label: 'Tế bào & Vi sinh',
+    subtitle: 'Cell Biology',
+    desc: 'Ti thể, Lục lạp, Màng, Ribosome...',
+    theme: {
+      text: 'text-emerald-400',
+      border: 'border-emerald-500/40 hover:border-emerald-400',
+      borderActive: 'border-emerald-400 ring-4 ring-emerald-500/30',
+      bg: 'from-emerald-950/50 via-[#11231f] to-[#12181f]',
+      glow: 'rgba(16,185,129,0.35)',
+      liquid: '#10b981',
+      accent: '#34d399',
+      shadow: '#022c22',
+    },
+  },
+  {
+    key: 'co-the',
+    label: 'Cơ thể người',
+    subtitle: 'Human Physiology',
+    desc: 'Dạ dày, Tim, Thận, Tuyến tụy...',
+    theme: {
+      text: 'text-rose-400',
+      border: 'border-rose-500/40 hover:border-rose-400',
+      borderActive: 'border-rose-400 ring-4 ring-rose-500/30',
+      bg: 'from-rose-950/50 via-[#1a1318] to-[#12181f]',
+      glow: 'rgba(244,63,94,0.35)',
+      liquid: '#f43f5e',
+      accent: '#fb7185',
+      shadow: '#4c0519',
+    },
+  },
+  {
+    key: 'di-truyen',
+    label: 'Di truyền học',
+    subtitle: 'Genetics',
+    desc: 'DNA, Đột biến, Hội chứng, Mendel...',
+    theme: {
+      text: 'text-sky-400',
+      border: 'border-sky-500/40 hover:border-sky-400',
+      borderActive: 'border-sky-400 ring-4 ring-sky-500/30',
+      bg: 'from-sky-950/50 via-[#121c27] to-[#12181f]',
+      glow: 'rgba(14,165,233,0.35)',
+      liquid: '#0ea5e9',
+      accent: '#38bdf8',
+      shadow: '#082f49',
+    },
+  },
+  {
+    key: 'sinh-thai',
+    label: 'Sinh thái & Tiến hóa',
+    subtitle: 'Ecology & Evolution',
+    desc: 'Chuỗi thức ăn, CLTN, Hóa thạch...',
+    theme: {
+      text: 'text-amber-400',
+      border: 'border-amber-500/40 hover:border-amber-400',
+      borderActive: 'border-amber-400 ring-4 ring-amber-500/30',
+      bg: 'from-amber-950/50 via-[#211a14] to-[#12181f]',
+      glow: 'rgba(245,158,11,0.35)',
+      liquid: '#f59e0b',
+      accent: '#fbbf24',
+      shadow: '#451a03',
+    },
+  },
+];
+
 export const normalizeSubstanceCategory = (rawType: string): CategoryKey | null => {
   if (rawType === 'acid') return 'acid';
   if (rawType === 'base') return 'base';
@@ -306,6 +378,7 @@ export const SortGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const { addXp } = useUserStore();
   const { subject: activeSubject } = useActiveSubject();
   const isPhysics = activeSubject === 'physics';
+  const isBio = activeSubject === 'bio';
 
   const [timeLeft, setTimeLeft] = useState(50);
   const [score, setScore] = useState(0);
@@ -320,10 +393,13 @@ export const SortGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     expected: CategoryKey;
   } | null>(null);
 
-  const categories = isPhysics ? PHYSICS_CATEGORIES : CATEGORIES;
+  const categories = isBio ? BIOLOGY_CATEGORIES : isPhysics ? PHYSICS_CATEGORIES : CATEGORIES;
 
   // Pool of substances / concepts filtered to the 4 categories
   const roundSubstances = useMemo(() => {
+    if (isBio) {
+      return [...biologySortItems].sort(() => 0.5 - Math.random()).slice(0, 15);
+    }
     if (isPhysics) {
       return [...physicsSortItems].sort(() => 0.5 - Math.random()).slice(0, 15);
     }
@@ -331,11 +407,11 @@ export const SortGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       Boolean(normalizeSubstanceCategory(s.type))
     );
     return [...valid].sort(() => 0.5 - Math.random()).slice(0, 15);
-  }, [isPhysics]);
+  }, [isPhysics, isBio]);
 
   const currentItem = roundSubstances[currentIndex] || roundSubstances[0];
   const expectedCategory = (
-    isPhysics ? currentItem?.type : normalizeSubstanceCategory(currentItem?.type || '')
+    isBio || isPhysics ? currentItem?.type : normalizeSubstanceCategory(currentItem?.type || '')
   ) as CategoryKey;
 
   const finishGame = useCallback(

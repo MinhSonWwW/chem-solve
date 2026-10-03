@@ -105,5 +105,75 @@ describe('Minigames Engine Tests', () => {
       }
     });
   });
+
+  describe('BloodTransfusionGame ABO logic', () => {
+    const COMPATIBILITY: Record<string, string[]> = {
+      O: ['O'],
+      A: ['O', 'A'],
+      B: ['O', 'B'],
+      AB: ['O', 'A', 'B', 'AB'],
+    };
+
+    it('validates universal donor (O) and universal recipient (AB)', () => {
+      // O can donate to everyone
+      ['O', 'A', 'B', 'AB'].forEach((patient) => {
+        expect(COMPATIBILITY[patient].includes('O')).toBe(true);
+      });
+
+      // AB can receive from everyone
+      expect(COMPATIBILITY['AB']).toEqual(['O', 'A', 'B', 'AB']);
+    });
+
+    it('rejects incompatible ABO blood transfusions', () => {
+      // Patient O cannot receive A, B, AB
+      expect(COMPATIBILITY['O'].includes('A')).toBe(false);
+      expect(COMPATIBILITY['O'].includes('B')).toBe(false);
+      expect(COMPATIBILITY['O'].includes('AB')).toBe(false);
+
+      // Patient A cannot receive B or AB
+      expect(COMPATIBILITY['A'].includes('B')).toBe(false);
+      expect(COMPATIBILITY['A'].includes('AB')).toBe(false);
+
+      // Patient B cannot receive A or AB
+      expect(COMPATIBILITY['B'].includes('A')).toBe(false);
+      expect(COMPATIBILITY['B'].includes('AB')).toBe(false);
+    });
+  });
+
+  describe('Biology minigames data integrity', () => {
+    it('validates biology match pairs', async () => {
+      const { default: bioMatchPairs } = await import('@/content/kb/biology/match-pairs.json');
+      expect(bioMatchPairs.length).toBeGreaterThanOrEqual(15);
+      for (const pair of bioMatchPairs) {
+        expect(pair.id).toBeDefined();
+        expect(pair.formula.length).toBeGreaterThan(0);
+        expect(pair.nameVi.length).toBeGreaterThan(0);
+        expect(['Tế bào', 'Cơ thể', 'Di truyền', 'Tiến hóa']).toContain(pair.type);
+      }
+    });
+
+    it('validates biology sort items and categories', async () => {
+      const { default: bioSortItems } = await import('@/content/kb/biology/sort-items.json');
+      expect(bioSortItems.length).toBeGreaterThanOrEqual(20);
+      const validTypes = ['te-bao', 'co-the', 'di-truyen', 'sinh-thai'];
+      for (const item of bioSortItems) {
+        expect(item.formula.length).toBeGreaterThan(0);
+        expect(item.nameVi.length).toBeGreaterThan(0);
+        expect(validTypes).toContain(item.type);
+      }
+    });
+
+    it('validates biology speed challenge questions', async () => {
+      const { default: bioSpeedQuestions } = await import('@/content/kb/biology/speed-questions.json');
+      expect(bioSpeedQuestions.length).toBe(15);
+      for (const q of bioSpeedQuestions) {
+        expect(q.id).toBeDefined();
+        expect(q.prompt.length).toBeGreaterThan(10);
+        expect(q.options.length).toBe(4);
+        expect(q.options).toContain(q.correctAnswer);
+      }
+    });
+  });
 });
+
 

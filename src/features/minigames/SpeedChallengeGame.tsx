@@ -6,6 +6,7 @@ import { sound } from '@/lib/audio';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import { useActiveSubject } from '@/content/subjects';
 import physicsSpeedQuestions from '@/content/kb/physics/speed-questions.json';
+import biologySpeedQuestions from '@/content/kb/biology/speed-questions.json';
 
 interface SpeedQuestion {
   id: string;
@@ -120,6 +121,7 @@ export const SpeedChallengeGame: React.FC<{ onExit: () => void }> = ({ onExit })
   const { addXp } = useUserStore();
   const { subject: activeSubject } = useActiveSubject();
   const isPhysics = activeSubject === 'physics';
+  const isBio = activeSubject === 'bio';
 
   const [timeLeft, setTimeLeft] = useState(60);
   const [score, setScore] = useState(0);
@@ -132,9 +134,13 @@ export const SpeedChallengeGame: React.FC<{ onExit: () => void }> = ({ onExit })
 
   // Shuffle questions according to active subject
   const shuffledQuestions = useMemo(() => {
-    const pool = isPhysics ? (physicsSpeedQuestions as SpeedQuestion[]) : SPEED_QUESTIONS_POOL;
+    const pool = isBio
+      ? (biologySpeedQuestions as SpeedQuestion[])
+      : isPhysics
+      ? (physicsSpeedQuestions as SpeedQuestion[])
+      : SPEED_QUESTIONS_POOL;
     return [...pool].sort(() => 0.5 - Math.random());
-  }, [isPhysics]);
+  }, [isPhysics, isBio]);
 
   const currentQ = shuffledQuestions[currentIndex % shuffledQuestions.length];
 

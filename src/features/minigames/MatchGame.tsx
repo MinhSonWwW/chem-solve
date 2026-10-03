@@ -7,6 +7,7 @@ import { useUserStore } from '@/features/gamification/useUserStore';
 import { useActiveSubject } from '@/content/subjects';
 import substancesData from '@/content/kb/substances.json';
 import physicsMatchPairs from '@/content/kb/physics/match-pairs.json';
+import biologyMatchPairs from '@/content/kb/biology/match-pairs.json';
 
 interface Substance {
   formula: string;
@@ -29,12 +30,17 @@ const TYPE_NAMES: Record<string, string> = {
   'Điện học': 'Điện học',
   'Quang học': 'Quang học',
   'Nhiệt học': 'Nhiệt học',
+  'Tế bào': 'Tế bào',
+  'Cơ thể': 'Cơ thể',
+  'Di truyền': 'Di truyền',
+  'Tiến hóa': 'Tiến hóa',
 };
 
 export const MatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const { addXp } = useUserStore();
   const { subject: activeSubject } = useActiveSubject();
   const isPhysics = activeSubject === 'physics';
+  const isBio = activeSubject === 'bio';
 
   const [timeLeft, setTimeLeft] = useState(50);
   const [score, setScore] = useState(0);
@@ -50,6 +56,11 @@ export const MatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
 
   // Pick 5 distinct substances or formulas for each round
   const roundSubstances = useMemo(() => {
+    if (isBio) {
+      const valid = [...biologyMatchPairs];
+      const shuffled = valid.sort(() => 0.5 - Math.random());
+      return shuffled.slice(0, 5);
+    }
     if (isPhysics) {
       const valid = [...physicsMatchPairs];
       const shuffled = valid.sort(() => 0.5 - Math.random());
@@ -60,7 +71,7 @@ export const MatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     );
     const shuffled = [...valid].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, 5);
-  }, [roundNumber, isGameOver, isPhysics]);
+  }, [roundNumber, isGameOver, isPhysics, isBio]);
 
   const leftItems = useMemo(
     () => [...roundSubstances].sort(() => 0.5 - Math.random()),

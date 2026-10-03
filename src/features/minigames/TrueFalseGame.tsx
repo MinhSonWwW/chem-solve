@@ -7,6 +7,7 @@ import { useUserStore } from '@/features/gamification/useUserStore';
 import { useActiveSubject } from '@/content/subjects';
 import statementsData from '@/content/kb/true-false-statements.json';
 import physicsStatementsData from '@/content/kb/physics/true-false-statements.json';
+import biologyStatementsData from '@/content/kb/biology/true-false-statements.json';
 
 interface Statement {
   id: string;
@@ -20,6 +21,7 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const { addXp, addHearts } = useUserStore();
   const { subject: activeSubject } = useActiveSubject();
   const isPhysics = activeSubject === 'physics';
+  const isBio = activeSubject === 'bio';
 
   const [timeLeft, setTimeLeft] = useState(50);
   const [score, setScore] = useState(0);
@@ -36,9 +38,9 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
 
   // Shuffle statements for this round according to active subject
   const roundStatements = useMemo(() => {
-    const pool = isPhysics ? physicsStatementsData : statementsData;
+    const pool = isBio ? biologyStatementsData : isPhysics ? physicsStatementsData : statementsData;
     return [...(pool as Statement[])].sort(() => 0.5 - Math.random()).slice(0, 10);
-  }, [isPhysics]);
+  }, [isPhysics, isBio]);
 
   const currentItem = roundStatements[currentIndex] || roundStatements[0];
 
@@ -110,10 +112,18 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
 
   return (
     <MinigameShell
-      title={isPhysics ? 'Đúng hay Sai — Kiểm định Vật lý' : 'Đúng hay Sai — Kiểm định Hóa học'}
+      title={
+        isPhysics
+          ? 'Đúng hay Sai — Kiểm định Vật lý'
+          : isBio
+          ? 'Đúng hay Sai — Kiểm định Sinh học'
+          : 'Đúng hay Sai — Kiểm định Hóa học'
+      }
       description={
         isPhysics
           ? 'Đánh giá tính chính xác của các nhận định và định luật Vật lý KHTN'
+          : isBio
+          ? 'Đánh giá tính chính xác của các nhận định Sinh học KHTN (Tế bào, Cơ thể, Sinh thái)'
           : 'Đánh giá tính chính xác của các nhận định hóa học'
       }
       skillId="true-false"

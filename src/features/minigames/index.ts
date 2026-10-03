@@ -6,4 +6,4 @@ export * from './TrueFalseGame';
 export * from './SpeedChallengeGame';
 export * from './ReviewGame';
 export * from './ReactionBuilderGame';
-
+export * from './BloodTransfusionGame';
