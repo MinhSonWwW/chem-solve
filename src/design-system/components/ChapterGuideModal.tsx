@@ -86,18 +86,21 @@ export const ChapterGuideModal: React.FC<ChapterGuideModalProps> = ({
                 Kiến thức & Công thức cần nhớ
               </div>
               <div className="space-y-1.5 text-slate-300 font-mono text-[11px]">
-                <div className="p-2 rounded-xl bg-slate-900 border border-slate-800">
-                  <span className="text-cyan-300 font-bold">1. Số mol:</span> n = m / M (mol = gam / g/mol)
-                </div>
-                <div className="p-2 rounded-xl bg-slate-900 border border-slate-800">
-                  <span className="text-cyan-300 font-bold">2. Thể tích khí ĐKC (25°C, 1 bar):</span> V = n × 24,79 L
-                </div>
-                <div className="p-2 rounded-xl bg-slate-900 border border-slate-800">
-                  <span className="text-cyan-300 font-bold">3. Tỉ khối khí A đối với khí B:</span> d(A/B) = M_A / M_B
-                </div>
-                <div className="p-2 rounded-xl bg-slate-900 border border-slate-800">
-                  <span className="text-cyan-300 font-bold">4. Tỉ khối so với không khí:</span> d(A/kk) = M_A / 29
-                </div>
+                {chapter.guidebook?.formulas && chapter.guidebook.formulas.length > 0 ? (
+                  chapter.guidebook.formulas.map((f, i) => (
+                    <div key={i} className="p-2 rounded-xl bg-slate-900 border border-slate-800">
+                      <span className="text-cyan-300 font-bold">{f.label} </span>
+                      <span>{f.text}</span>
+                    </div>
+                  ))
+                ) : (
+                  chapter.lessons.map((lesson) => (
+                    <div key={lesson.id} className="p-2 rounded-xl bg-slate-900 border border-slate-800">
+                      <span className="text-cyan-300 font-bold">Bài {lesson.lessonNumber}: {lesson.title}</span>
+                      <p className="text-slate-400 font-sans text-[11px] mt-0.5">{lesson.subtitle}</p>
+                    </div>
+                  ))
+                )}
               </div>
             </div>
 
@@ -105,12 +108,18 @@ export const ChapterGuideModal: React.FC<ChapterGuideModalProps> = ({
             <div className="p-3.5 rounded-2xl bg-rose-950/20 border border-rose-800/40 space-y-1.5 text-rose-200">
               <div className="font-black flex items-center gap-1.5 text-rose-300">
                 <AlertTriangle className="w-4 h-4 text-rose-400" />
-                Bẫy thường gặp khi giải bài
+                Lưu ý trọng tâm khi giải bài
               </div>
               <ul className="list-disc list-inside space-y-1 text-[11px] opacity-90 leading-relaxed font-medium">
-                <li>Nhầm lẫn giữa 22,4 L (điều kiện cũ) và 24,79 L (chuẩn mới theo SGK Kết nối tri thức).</li>
-                <li>Quên đổi đơn vị ml sang lít khi tính nồng độ mol (V_dd tính bằng L).</li>
-                <li>Khối lượng mol M của chất khí lưỡng nguyên tử như O2 = 32, H2 = 2, N2 = 28 (không phải nguyên tử khối đơn).</li>
+                {chapter.guidebook?.traps && chapter.guidebook.traps.length > 0 ? (
+                  chapter.guidebook.traps.map((trap, i) => <li key={i}>{trap}</li>)
+                ) : (
+                  <>
+                    <li>Đọc kĩ đề bài và xác định chính xác hiện tượng/đại lượng cần tìm.</li>
+                    <li>Kiểm tra và quy đổi đồng nhất các đơn vị đo trước khi tiến hành tính toán.</li>
+                    <li>Nắm vững bản chất kiến thức trước khi chọn phương án hoặc điền kết quả.</li>
+                  </>
+                )}
               </ul>
             </div>
           </div>

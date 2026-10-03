@@ -15,11 +15,12 @@ export interface PathNode {
 export interface SnakePathProps {
   nodes: PathNode[];
   onNodeClick: (node: PathNode) => void;
-  subject?: 'chem' | 'physics';
+  subject?: 'chem' | 'physics' | 'bio';
 }
 
 export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subject = 'chem' }) => {
   const isPhysics = subject === 'physics';
+  const isBio = subject === 'bio';
   // Duolingo-style compact & rhythmic node spacing
   const nodeSpacing = 94;
   const startY = 48;
@@ -85,6 +86,11 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
               <>
                 <stop offset="0%" stopColor="#f59e0b" />
                 <stop offset="100%" stopColor="#eab308" />
+              </>
+            ) : isBio ? (
+              <>
+                <stop offset="0%" stopColor="#34d399" />
+                <stop offset="100%" stopColor="#059669" />
               </>
             ) : (
               <>
@@ -189,9 +195,13 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
                       isTheory
                         ? isPhysics
                           ? 'bg-gradient-to-r from-amber-400 to-yellow-300 text-slate-950 border-amber-200 shadow-[0_4px_12px_rgba(245,158,11,0.5)]'
+                          : isBio
+                          ? 'bg-gradient-to-r from-emerald-400 to-teal-300 text-slate-950 border-emerald-200 shadow-[0_4px_12px_rgba(16,185,129,0.5)]'
                           : 'bg-gradient-to-r from-purple-400 to-fuchsia-300 text-slate-950 border-purple-200 shadow-[0_4px_12px_rgba(192,38,211,0.5)]'
                         : isPhysics
                         ? 'bg-gradient-to-r from-amber-400 to-yellow-300 text-slate-950 border-amber-200 shadow-[0_4px_12px_rgba(245,158,11,0.5)]'
+                        : isBio
+                        ? 'bg-gradient-to-r from-emerald-400 to-teal-300 text-slate-950 border-emerald-200 shadow-[0_4px_12px_rgba(16,185,129,0.5)]'
                         : 'bg-gradient-to-r from-cyan-400 to-cyan-300 text-slate-950 border-cyan-200 shadow-[0_4px_12px_rgba(6,182,212,0.5)]'
                     }`}
                   >
@@ -203,9 +213,13 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
                       isTheory
                         ? isPhysics
                           ? 'border-t-yellow-300'
+                          : isBio
+                          ? 'border-t-teal-300'
                           : 'border-t-fuchsia-300'
                         : isPhysics
                         ? 'border-t-yellow-300'
+                        : isBio
+                        ? 'border-t-teal-300'
                         : 'border-t-cyan-300'
                     }`}
                   />
@@ -221,9 +235,13 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
                       isTheory
                         ? isPhysics
                           ? 'bg-amber-400/35'
+                          : isBio
+                          ? 'bg-emerald-400/35'
                           : 'bg-purple-400/35'
                         : isPhysics
                         ? 'bg-amber-400/35'
+                        : isBio
+                        ? 'bg-emerald-400/35'
                         : 'bg-cyan-400/35'
                     }`}
                   />
@@ -239,9 +257,13 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
                       ? isTheory
                         ? isPhysics
                           ? 'bg-gradient-to-tr from-amber-500 to-yellow-300 text-slate-950 border-2 border-amber-100 shadow-[0_8px_0_0_#ca8a04] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#ca8a04] ring-4 ring-amber-500/30'
+                          : isBio
+                          ? 'bg-gradient-to-tr from-emerald-500 to-teal-300 text-slate-950 border-2 border-emerald-100 shadow-[0_8px_0_0_#047857] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#047857] ring-4 ring-emerald-500/30'
                           : 'bg-gradient-to-tr from-purple-600 to-fuchsia-400 text-white border-2 border-purple-200 shadow-[0_8px_0_0_#7e22ce] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#7e22ce] ring-4 ring-purple-500/30'
                         : isPhysics
                         ? 'bg-gradient-to-tr from-amber-500 to-yellow-300 text-slate-950 border-2 border-amber-100 shadow-[0_8px_0_0_#ca8a04] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#ca8a04] ring-4 ring-amber-500/30'
+                        : isBio
+                        ? 'bg-gradient-to-tr from-emerald-500 to-teal-300 text-slate-950 border-2 border-emerald-100 shadow-[0_8px_0_0_#047857] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#047857] ring-4 ring-emerald-500/30'
                         : 'bg-gradient-to-tr from-cyan-500 to-cyan-300 text-slate-950 border-2 border-cyan-100 shadow-[0_8px_0_0_#0891b2] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#0891b2] ring-4 ring-cyan-500/30'
                       : isChest
                       ? 'bg-gradient-to-tr from-amber-600 to-amber-400 text-amber-950 border-2 border-amber-300 shadow-[0_8px_0_0_#78350f] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_2px_0_0_#78350f]'
