@@ -3,6 +3,15 @@ import { motion, AnimatePresence } from 'motion/react';
 import { X, Check, Sparkles, Clock, Compass } from 'lucide-react';
 import { SUBJECTS, type SubjectId } from '@/content/subjects';
 import { sound } from '@/lib/audio';
+import { HandDrawnIcon } from './HandDrawnIcon';
+import type { HandDrawnIconName } from './HandDrawnIcon';
+
+/** Map môn học → icon vẽ tay */
+const SUBJECT_ICON: Record<string, HandDrawnIconName> = {
+  chem: 'flask',
+  physics: 'atom',
+  bio: 'dna',
+};
 
 export interface SubjectSelectorModalProps {
   isOpen: boolean;
@@ -78,25 +87,39 @@ export const SubjectSelectorModal: React.FC<SubjectSelectorModalProps> = ({
                     onSelectSubject(sub.id);
                     onClose();
                   }}
-                  className={`p-4 rounded-2xl border-2 transition-all cursor-pointer relative overflow-hidden ${
-                    isActive
-                      ? 'bg-sky-950/40 border-[#0ea5e9] shadow-[0_4px_0_0_#0284c7]'
+                  className={`p-4 rounded-2xl border-2 transition-all duration-150 cursor-pointer relative overflow-hidden
+                    active:translate-y-[2px]
+                    ${isActive
+                      ? 'shadow-[0_4px_0_0_var(--sub-shadow)]'
                       : sub.available
                       ? 'bg-[#131f24] border-[#2e4756] hover:border-slate-500 hover:bg-[#1a2d37]'
                       : 'bg-[#131f24]/80 border-dashed border-slate-700 hover:border-amber-500/50'
-                  }`}
+                    }`}
+                  style={isActive ? {
+                    background: `${sub.accentColor}15`,
+                    borderColor: sub.accentColor,
+                    // @ts-expect-error CSS custom property
+                    '--sub-shadow': sub.borderColor,
+                  } : {}}
                 >
                   <div className="flex items-start justify-between gap-3">
                     {/* Left: Icon & Info */}
                     <div className="flex items-start gap-3.5">
+                      {/* Icon vẽ tay — thay thế emoji */}
                       <div
-                        className="w-12 h-12 rounded-2xl flex items-center justify-center text-2xl shrink-0 border shadow-md"
+                        className="w-12 h-12 rounded-2xl flex items-center justify-center shrink-0 border-2
+                          shadow-[0_3px_0_0_var(--sub-icon-shadow)]"
                         style={{
-                          backgroundColor: `${sub.accentColor}20`,
-                          borderColor: `${sub.accentColor}50`,
+                          backgroundColor: `${sub.accentColor}18`,
+                          borderColor: `${sub.accentColor}60`,
+                          // @ts-expect-error CSS custom property
+                          '--sub-icon-shadow': sub.borderColor,
                         }}
                       >
-                        {sub.icon}
+                        <HandDrawnIcon
+                          name={SUBJECT_ICON[sub.id] ?? 'flask'}
+                          size={32}
+                        />
                       </div>
 
                       <div className="space-y-1">
@@ -166,8 +189,9 @@ export const SubjectSelectorModal: React.FC<SubjectSelectorModalProps> = ({
           </div>
 
           {/* Footer Notice */}
-          <div className="pt-2 text-center text-xs text-slate-400 font-medium">
-            💡 Chương trình bám sát SGK Kết nối tri thức THCS (Lớp 6, 7, 8, 9).
+          <div className="pt-2 text-center text-xs text-slate-400 font-medium flex items-center justify-center gap-1.5">
+            <span className="inline-block w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_6px_#38bdf8]" />
+            Bám sát SGK Kết nối tri thức THCS (Lớp 6, 7, 8, 9)
           </div>
         </motion.div>
       </div>

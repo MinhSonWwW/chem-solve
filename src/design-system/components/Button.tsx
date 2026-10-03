@@ -22,7 +22,7 @@ export const buttonVariants = cva(
         warning:
           'bg-[#ff9600] text-white shadow-[0_4px_0_0_#b45309] hover:bg-[#ffa726] active:translate-y-1 active:shadow-[0_0px_0_0_transparent]',
         secondary:
-          'bg-[#ce82ff] text-white shadow-[0_4px_0_0_#a545ee] hover:bg-[#d896ff] active:translate-y-1 active:shadow-[0_0px_0_0_transparent]',
+          'bg-[#20333d] text-slate-100 shadow-[0_4px_0_0_#131f24] border-2 border-[#2e4756] hover:bg-[#283e4a] hover:border-[#3d5a6c] active:translate-y-1 active:shadow-[0_0px_0_0_transparent]',
         gem:
           'bg-[#00cd9c] text-white shadow-[0_4px_0_0_#00a880] hover:bg-[#10dcab] active:translate-y-1 active:shadow-[0_0px_0_0_transparent]',
         ghost:

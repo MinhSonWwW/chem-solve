@@ -137,8 +137,8 @@ Linh vật bình tam giác **Flasky** không phải là ảnh tĩnh gắn cho c�
 ---
 
 ### 🚀 Milestone 5: Nâng Cấp Xúc Giác Cửa Hàng (ShopPage) & Đại Phẫu Lời Thoại (Human Copy)
-- [ ] **Mục tiêu:** Hoàn thiện trải nghiệm mua sắm vật phẩm đỉnh cao và rà soát viết lại toàn bộ ngôn từ trong ứng dụng.
-- [ ] **Công việc chi tiết:**
+- [x] **Mục tiêu:** Hoàn thiện trải nghiệm mua sắm vật phẩm đỉnh cao và rà soát viết lại toàn bộ ngôn từ trong ứng dụng.
+- [x] **Công việc chi tiết:**
   1. **Nâng cấp mỹ thuật ShopPage:**
      - Thẻ Rương kho báu: Thêm vệt sáng vàng quét qua (shimmer shine) trên thân rương.
      - Thẻ Khiên băng: Thêm hiệu ứng sương khói lạnh tuyết trắng bay nhẹ quanh icon.
@@ -149,7 +149,7 @@ Linh vật bình tam giác **Flasky** không phải là ảnh tĩnh gắn cho c�
      - Thêm các câu khích lệ hóm hỉnh khi giải được bài khó hoặc duy trì chuỗi streak dài ngày.
   3. **Tích hợp Spring Physics cho toàn bộ nút bấm trong app:**
      - Cấu hình chuẩn Framer Motion lò xo (`stiffness: 400, damping: 25`) cho mọi tương tác nhấn chuột.
-- [ ] **Nghiệm thu M5:** Ứng dụng toát lên vẻ ấm áp, vui tươi, tràn đầy sức sống của một sản phẩm giáo dục được đầu tư tâm huyết bởi đội ngũ con người.
+- [x] **Nghiệm thu M5:** Ứng dụng toát lên vẻ ấm áp, vui tươi, tràn đầy sức sống của một sản phẩm giáo dục được đầu tư tâm huyết bởi đội ngũ con người.
 
 ---
 
@@ -157,13 +157,13 @@ Linh vật bình tam giác **Flasky** không phải là ảnh tĩnh gắn cho c�
 
 Mỗi khi hoàn thành một màn hình, phải kiểm tra đối chiếu danh sách sau:
 
-- [ ] **Không còn Emoji hệ điều hành (0 Unicode Emojis in Headings):** Không có 🎮, 🌿, ⚡, ❤️ trong tiêu đề; tất cả dùng SVG icon vẽ tay hoặc badge vector đồng bộ.
-- [ ] **Không còn icon Lucide trong hộp vuông màu mè:** Các card chính đều có hình vẽ đồ họa vector riêng biệt mang ý nghĩa câu chuyện cụ thể.
-- [ ] **Không có nút bấm màu tím đục:** Mọi nút bấm đều có trạng thái rõ ràng (trạng thái đầy: Slate tối thanh lịch; trạng thái hoạt động: 3D chunky button có màu nhận diện chuẩn).
-- [ ] **Không có chữ bị đè (No Text Overlap):** Tất cả các nhãn ưu đãi, badge số lượng đều nằm ở layout flexbox độc lập, khoảng cách thoáng đãng.
-- [ ] **Hiệu ứng bấm nút lún khối 3D xúc giác:** Nút bấm có bóng đặc `4px`, khi active lún xuống `4px` triệt tiêu bóng.
-- [ ] **Văn phong ấm áp, ngắn gọn:** Lời thoại người dùng không dài dòng, không sáo rỗng, mang tinh thần khích lệ học tập vui vẻ.
-- [ ] **Chạy kiểm thử kỹ thuật:** `npx tsc -b --noEmit` đạt 0 lỗi, `npm test` 100% PASS.
+- [x] **Không còn Emoji hệ điều hành (0 Unicode Emojis in Headings):** Không có 🎮, 🌿, ⚡, ❤️ trong tiêu đề; tất cả dùng SVG icon vẽ tay hoặc badge vector đồng bộ.
+- [x] **Không còn icon Lucide trong hộp vuông màu mè:** Các card chính đều có hình vẽ đồ họa vector riêng biệt mang ý nghĩa câu chuyện cụ thể.
+- [x] **Không có nút bấm màu tím đục:** Mọi nút bấm đều có trạng thái rõ ràng (trạng thái đầy: Slate tối thanh lịch; trạng thái hoạt động: 3D chunky button có màu nhận diện chuẩn).
+- [x] **Không có chữ bị đè (No Text Overlap):** Tất cả các nhãn ưu đãi, badge số lượng đều nằm ở layout flexbox độc lập, khoảng cách thoáng đãng.
+- [x] **Hiệu ứng bấm nút lún khối 3D xúc giác:** Nút bấm có bóng đặc `4px`, khi active lún xuống `4px` triệt tiêu bóng.
+- [x] **Văn phong ấm áp, ngắn gọn:** Lời thoại người dùng không dài dòng, không sáo rỗng, mang tinh thần khích lệ học tập vui vẻ.
+- [x] **Chạy kiểm thử kỹ thuật:** `npx tsc -b --noEmit` đạt 0 lỗi, `npm test` 100% PASS.
 
 ---
 

@@ -15,6 +15,11 @@ export const spring = {
     type: 'spring',
     stiffness: 600,
     damping: 24
+  } as Transition,
+  tactile: {
+    type: 'spring',
+    stiffness: 400,
+    damping: 25
   } as Transition
 };
 

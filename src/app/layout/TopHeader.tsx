@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Search, Zap } from 'lucide-react';
-import { Heart, Streak, XPBadge, GemBadge, HeartRefillModal, SubjectSelectorModal } from '@/design-system';
+import { Search } from 'lucide-react';
+import { Heart, Streak, XPBadge, GemBadge, HeartRefillModal, SubjectSelectorModal, HandDrawnIcon } from '@/design-system';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import { sound } from '@/lib/audio';
-import { assetUrl } from '@/lib/utils';
 import { useActiveSubject, SUBJECTS } from '@/content/subjects';
+import type { HandDrawnIconName } from '@/design-system';
+
+/** Icon vẽ tay cho từng môn học — thay thế emoji/Lucide */
+const SUBJECT_ICON_MAP: Record<string, HandDrawnIconName> = {
+  chem: 'flask',
+  physics: 'atom',
+  bio: 'dna',
+};
 
 export const TopHeader: React.FC = () => {
   const { xp, streak, hearts, gems, buyHeartWithGems } = useUserStore();
@@ -16,117 +23,127 @@ export const TopHeader: React.FC = () => {
   const navigate = useNavigate();
   const activeGrade = typeof window !== 'undefined' ? localStorage.getItem('chem_active_grade') || '8' : '8';
 
+  const accentShadow =
+    activeSubject === 'physics'
+      ? 'shadow-[0_3px_0_0_#ca8a04]'
+      : activeSubject === 'bio'
+      ? 'shadow-[0_3px_0_0_#059669]'
+      : 'shadow-[0_3px_0_0_#0284c7]';
+
+  const accentBg =
+    activeSubject === 'physics'
+      ? 'bg-[#eab308] border-amber-300/50'
+      : activeSubject === 'bio'
+      ? 'bg-[#10b981] border-emerald-300/50'
+      : 'bg-[#0ea5e9] border-sky-300/40';
+
+  const accentBorder =
+    activeSubject === 'physics'
+      ? 'border-amber-500/40 hover:border-amber-400 text-amber-300'
+      : activeSubject === 'bio'
+      ? 'border-emerald-500/40 hover:border-emerald-400 text-emerald-300'
+      : 'border-[#2e4756] hover:border-sky-400 text-slate-200';
+
+  const accentText =
+    activeSubject === 'physics'
+      ? 'text-[#eab308]'
+      : activeSubject === 'bio'
+      ? 'text-[#10b981]'
+      : 'text-[#0ea5e9]';
+
+  const brandPrefix =
+    activeSubject === 'physics' ? 'PHY' : activeSubject === 'bio' ? 'BIO' : 'CHEM';
+
+  const iconName = SUBJECT_ICON_MAP[activeSubject] ?? 'flask';
+
   return (
     <>
-      <header className="sticky top-0 z-30 w-full bg-[#131f24]/95 backdrop-blur-md border-b-2 border-[#2e4756] px-4 py-2.5 lg:hidden">
+      <header className="sticky top-0 z-30 w-full bg-[#0f171c]/95 backdrop-blur-md border-b-2 border-[#2e4756] px-4 py-2 lg:hidden">
         <div className="max-w-md mx-auto flex items-center justify-between gap-2">
-          {/* Brand with Atom Avatar + Subject Chip */}
+
+          {/* ─── Brand + Subject Chip ─── */}
           <div className="flex items-center gap-1.5 sm:gap-2">
             <Link
               to={`/learn/${activeGrade}`}
               onClick={() => sound.playClick()}
-              className="flex items-center gap-1.5 cursor-pointer"
+              className="flex items-center gap-1.5 cursor-pointer group"
             >
+              {/* Avatar icon vẽ tay — 3D chunky */}
               <div
-                className={`w-8 h-8 rounded-xl flex items-center justify-center font-black text-white text-sm overflow-hidden border ${
-                  activeSubject === 'physics'
-                    ? 'bg-[#eab308] border-amber-300/50 shadow-[0_3px_0_0_#ca8a04]'
-                    : activeSubject === 'bio'
-                    ? 'bg-[#10b981] border-emerald-300/50 shadow-[0_3px_0_0_#059669]'
-                    : 'bg-[#0ea5e9] border-sky-300/40 shadow-[0_3px_0_0_#0284c7]'
-                }`}
+                className={`w-9 h-9 rounded-xl flex items-center justify-center overflow-hidden border-2
+                  ${accentBg} ${accentShadow}
+                  group-active:translate-y-[2px] group-active:shadow-none
+                  transition-all duration-100`}
               >
-                {activeSubject === 'physics' ? (
-                  <Zap className="w-5 h-5 text-slate-950 fill-slate-950" />
-                ) : activeSubject === 'bio' ? (
-                  <span className="text-base select-none">🌿</span>
-                ) : (
-                  <img
-                    src={assetUrl('/assets/mascot/atom-idle.png')}
-                    alt="Atom"
-                    className="w-7 h-7 object-contain"
-                    onError={(e) => {
-                      (e.target as HTMLElement).style.display = 'none';
-                    }}
-                  />
-                )}
+                <HandDrawnIcon name={iconName} size={28} />
               </div>
               <span className="font-black tracking-wider text-sm sm:text-base text-white">
-                {activeSubject === 'physics' ? (
-                  <>
-                    PHY<span className="text-[#eab308]">-SOLVE</span>
-                  </>
-                ) : activeSubject === 'bio' ? (
-                  <>
-                    BIO<span className="text-[#10b981]">-SOLVE</span>
-                  </>
-                ) : (
-                  <>
-                    CHEM<span className="text-[#0ea5e9]">-SOLVE</span>
-                  </>
-                )}
+                {brandPrefix}<span className={accentText}>-SOLVE</span>
               </span>
             </Link>
 
-            {/* Subject Switcher Chip */}
+            {/* Subject Switcher Chip — nút bấm chunky 3D */}
             <button
+              id="top-header-subject-switcher"
               onClick={() => {
                 sound.playClick();
                 setShowSubjectModal(true);
               }}
-              className={`flex items-center gap-1 px-2 py-1 rounded-xl bg-[#18272f] border text-xs font-black transition-colors shadow-sm cursor-pointer ${
-                activeSubject === 'physics'
-                  ? 'border-amber-500/40 hover:border-amber-400 text-amber-300'
-                  : activeSubject === 'bio'
-                  ? 'border-emerald-500/40 hover:border-emerald-400 text-emerald-300'
-                  : 'border-[#2e4756] hover:border-sky-400 text-slate-200'
-              }`}
-              title="Đổi môn học (Hóa học, Vật lý, Sinh học...)"
+              className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl
+                bg-[#18272f] border-2 text-xs font-black
+                shadow-[0_3px_0_0_#101a1f]
+                active:translate-y-[3px] active:shadow-none
+                transition-all duration-100 cursor-pointer
+                ${accentBorder}`}
+              title="Đổi môn học"
             >
-              <span>{currentSub.icon}</span>
-              <span
-                className={`text-[11px] ${
-                  activeSubject === 'physics'
-                    ? 'text-amber-400'
-                    : activeSubject === 'bio'
-                    ? 'text-emerald-400'
-                    : 'text-sky-400'
-                }`}
-              >
-                {currentSub.shortName}
-              </span>
+              {/* Icon vẽ tay nhỏ */}
+              <HandDrawnIcon name={iconName} size={16} />
+              <span className={`text-[11px] ${accentText}`}>{currentSub.shortName}</span>
             </button>
           </div>
 
-          {/* Gamification Stats */}
-          <div className="flex items-center gap-2">
+          {/* ─── Gamification Stats ─── */}
+          <div className="flex items-center gap-1.5 sm:gap-2">
             <Streak days={streak} />
             <XPBadge amount={xp} />
+
+            {/* Gems → nhấn vào đến Shop */}
             <div
+              id="top-header-gems"
               onClick={() => {
                 sound.playClick();
                 navigate('/shop');
               }}
-              className="cursor-pointer hover:scale-105 active:scale-95 transition-transform"
-              title="Cửa hàng Đá quý - Đổi lấy Tim & Vật phẩm!"
+              className="cursor-pointer active:scale-90 transition-transform duration-100"
+              title="Cửa hàng — đổi đá quý lấy vật phẩm!"
             >
               <GemBadge amount={gems} />
             </div>
+
+            {/* Hearts → nhấn vào mở modal */}
             <div
+              id="top-header-hearts"
               onClick={() => {
                 sound.playClick();
                 setShowHeartModal(true);
               }}
-              className="cursor-pointer hover:scale-105 active:scale-95 transition-transform"
-              title={`Đang có ${hearts}/5 tim. Bấm để đổi đá quý hoặc luyện tập!`}
+              className="cursor-pointer active:scale-90 transition-transform duration-100"
+              title={`${hearts}/5 tim — Bấm để hồi phục!`}
             >
               <Heart count={hearts} max={5} />
             </div>
 
+            {/* Search button chunky 3D */}
             <button
+              id="top-header-search"
               onClick={() => navigate('/search')}
-              aria-label="Tìm kiếm"
-              className="p-1.5 text-slate-400 hover:text-cyan-400 rounded-lg bg-slate-900 border border-slate-800 shadow-[0_2px_0_0_#1e293b] active:translate-y-[2px] active:shadow-none transition-all"
+              aria-label="Tìm kiếm bài học"
+              className="p-1.5 text-slate-400 hover:text-cyan-400 rounded-lg
+                bg-[#18272f] border-2 border-[#2e4756]
+                shadow-[0_2px_0_0_#101a1f]
+                active:translate-y-[2px] active:shadow-none
+                transition-all duration-100"
             >
               <Search className="w-4 h-4" />
             </button>
@@ -134,23 +151,15 @@ export const TopHeader: React.FC = () => {
         </div>
       </header>
 
-      {/* Heart Refill & Gem Exchange Modal */}
+      {/* Heart Refill Modal */}
       <HeartRefillModal
         isOpen={showHeartModal}
         hearts={hearts}
         gems={gems}
         costPerHeart={150}
-        onBuyWithGems={() => {
-          buyHeartWithGems();
-        }}
-        onGoToPractice={() => {
-          setShowHeartModal(false);
-          navigate('/practice');
-        }}
-        onGoToShop={() => {
-          setShowHeartModal(false);
-          navigate('/shop');
-        }}
+        onBuyWithGems={() => { buyHeartWithGems(); }}
+        onGoToPractice={() => { setShowHeartModal(false); navigate('/practice'); }}
+        onGoToShop={() => { setShowHeartModal(false); navigate('/shop'); }}
         onClose={() => setShowHeartModal(false)}
       />
 

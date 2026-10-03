@@ -1,11 +1,89 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Sparkles, Zap, Clock, CheckCircle2, Snowflake } from 'lucide-react';
+import { Clock, CheckCircle2 } from 'lucide-react';
 import { Mascot, CurrencyIcon } from '@/design-system';
+import { HandDrawnIcon } from '@/design-system/components/HandDrawnIcon';
+import { DoodleOrnament } from '@/design-system/components/DoodleOrnament';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import { GAMIFICATION } from '@/config/gamification';
 import { assetUrl, cn } from '@/lib/utils';
 import { sound } from '@/lib/audio';
+import { copyVi } from '@/copy/vi';
+
+/**
+ * Hiệu ứng bọt khí tim nổi lên từ đáy bình
+ */
+const HeartBubbles: React.FC = () => (
+  <div className="absolute inset-0 pointer-events-none overflow-hidden rounded-2xl">
+    <motion.span
+      className="absolute bottom-2 left-3 w-1.5 h-1.5 rounded-full bg-rose-400/80"
+      animate={{ y: [-2, -22], opacity: [0, 0.9, 0], scale: [0.6, 1, 0.4] }}
+      transition={{ duration: 1.8, repeat: Infinity, ease: 'easeOut', delay: 0.2 }}
+    />
+    <motion.span
+      className="absolute bottom-3 right-3.5 w-2 h-2 rounded-full bg-rose-300/80"
+      animate={{ y: [-2, -26], opacity: [0, 1, 0], scale: [0.5, 1.2, 0.5] }}
+      transition={{ duration: 2.2, repeat: Infinity, ease: 'easeOut', delay: 0.9 }}
+    />
+    <motion.span
+      className="absolute bottom-4 left-6 w-1 h-1 rounded-full bg-pink-300/90"
+      animate={{ y: [-2, -18], opacity: [0, 0.8, 0], scale: [0.7, 1.1, 0.6] }}
+      transition={{ duration: 1.5, repeat: Infinity, ease: 'easeOut', delay: 1.4 }}
+    />
+  </div>
+);
+
+/**
+ * Hiệu ứng sương khói tuyết lạnh và tia sáng băng giá bay nhẹ quanh khiên
+ */
+const FrostMist: React.FC = () => (
+  <div className="absolute inset-0 pointer-events-none overflow-hidden rounded-2xl">
+    <motion.div
+      className="absolute top-1.5 left-1.5"
+      animate={{ y: [-2, 3, -2], opacity: [0.35, 0.85, 0.35], rotate: [0, 15, 0] }}
+      transition={{ duration: 2.4, repeat: Infinity, ease: 'easeInOut' }}
+    >
+      <DoodleOrnament name="glint" size={12} color="#7dd3fc" />
+    </motion.div>
+    <motion.div
+      className="absolute top-2 right-1.5"
+      animate={{ y: [2, -3, 2], opacity: [0.4, 0.9, 0.4], rotate: [0, -20, 0] }}
+      transition={{ duration: 2.8, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
+    >
+      <DoodleOrnament name="sparkle-star" size={10} color="#38bdf8" />
+    </motion.div>
+    <motion.span
+      className="absolute bottom-2 right-3 w-1.5 h-1.5 rounded-full bg-sky-300/60 blur-[0.5px]"
+      animate={{ y: [0, -6, 0], opacity: [0.2, 0.7, 0.2] }}
+      transition={{ duration: 2.0, repeat: Infinity, ease: 'easeInOut', delay: 1.0 }}
+    />
+  </div>
+);
+
+/**
+ * Hiệu ứng tia năng lượng và bọt khí sôi sục quanh bình XP
+ */
+const PotionFizz: React.FC = () => (
+  <div className="absolute inset-0 pointer-events-none overflow-hidden rounded-2xl">
+    <motion.div
+      className="absolute top-1.5 right-1.5"
+      animate={{ scale: [0.7, 1.15, 0.7], opacity: [0.4, 0.95, 0.4] }}
+      transition={{ duration: 2.0, repeat: Infinity, ease: 'easeInOut' }}
+    >
+      <DoodleOrnament name="sparkle-star" size={12} color="#4ade80" />
+    </motion.div>
+    <motion.span
+      className="absolute bottom-2 left-3 w-1.5 h-1.5 rounded-full bg-emerald-400/80"
+      animate={{ y: [-2, -22], opacity: [0, 0.9, 0] }}
+      transition={{ duration: 1.6, repeat: Infinity, ease: 'easeOut', delay: 0.4 }}
+    />
+    <motion.span
+      className="absolute bottom-3 right-3 w-1 h-1 rounded-full bg-lime-300/80"
+      animate={{ y: [-2, -18], opacity: [0, 0.8, 0] }}
+      transition={{ duration: 1.9, repeat: Infinity, ease: 'easeOut', delay: 1.1 }}
+    />
+  </div>
+);
 
 export const ShopPage: React.FC = () => {
   const {
@@ -30,7 +108,7 @@ export const ShopPage: React.FC = () => {
   const [isOpeningChest, setIsOpeningChest] = useState(false);
   const [chestReward, setChestReward] = useState<string | null>(null);
 
-  // Remaining time for XP boost
+  // Thời gian còn lại của gói X2 XP
   const [boostRemainingSeconds, setBoostRemainingSeconds] = useState(0);
 
   useEffect(() => {
@@ -150,10 +228,10 @@ export const ShopPage: React.FC = () => {
       if (rand < 0.35) {
         const bonusGems = 150 + Math.floor(Math.random() * 150);
         addGems(bonusGems);
-        rewardText = `Kho báu tỏa sáng: Nhận +${bonusGems} Đá quý tinh thể!`;
+        rewardText = `Kho báu tỏa sáng rực rỡ: Nhận +${bonusGems} Đá quý tinh thể!`;
       } else if (rand < 0.7) {
         addHearts(2);
-        rewardText = 'Nạp năng lượng: Nhận +2 Bình Tim thí nghiệm!';
+        rewardText = 'Nạp năng lượng dồi dào: Nhận +2 Bình Tim thí nghiệm!';
       } else {
         addXp(60);
         rewardText = 'Đột phá kiến thức: Nhận +60 XP Kinh nghiệm phòng lab!';
@@ -185,7 +263,7 @@ export const ShopPage: React.FC = () => {
             {notification.iconType ? (
               <CurrencyIcon type={notification.iconType} size="sm" animate />
             ) : (
-              <Sparkles className="w-4 h-4 text-amber-400" />
+              <DoodleOrnament name="sparkle-star" size={16} color="#fbbf24" />
             )}
             <span>{notification.message}</span>
           </motion.div>
@@ -204,14 +282,15 @@ export const ShopPage: React.FC = () => {
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-5 relative z-10">
           <div className="space-y-1.5 flex-1">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-500/15 border border-cyan-500/30 text-[11px] font-black uppercase tracking-wider text-cyan-300">
-              <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
-              <span>Cửa Hàng Tiếp Tế Phòng Lab</span>
+              <DoodleOrnament name="sparkle-star" size={14} color="#38bdf8" />
+              <span>{copyVi.shop.hero.badge}</span>
             </div>
-            <h1 className="text-xl sm:text-2xl font-black text-white tracking-tight">
-              Kho Trang Bị & Tiếp Sức
+            <h1 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+              <span>{copyVi.shop.hero.title}</span>
+              <DoodleOrnament name="glint" size={18} color="#00cd9c" />
             </h1>
             <p className="text-xs text-slate-300 leading-relaxed font-medium max-w-md">
-              Dùng Đá quý thu thập từ các bài tập để nạp đầy bình Tim, kích hoạt khiên đóng băng và tăng tốc kinh nghiệm.
+              {copyVi.shop.hero.desc}
             </p>
           </div>
 
@@ -229,13 +308,13 @@ export const ShopPage: React.FC = () => {
             </div>
 
             <div className="flex items-center gap-3 text-xs font-bold text-slate-300">
-              <span className="flex items-center gap-1">
+              <span className="flex items-center gap-1.5">
                 <CurrencyIcon type="heart" size="xs" />
                 <span className="text-rose-400 font-black">{isFullHearts ? 'Đầy (5/5)' : `${hearts}/5`}</span>
               </span>
               <span className="text-slate-600">•</span>
-              <span className="flex items-center gap-1">
-                <Snowflake className="w-3.5 h-3.5 text-sky-400" />
+              <span className="flex items-center gap-1.5">
+                <HandDrawnIcon name="ice-shield" size={16} />
                 <span className="text-sky-400 font-black">{streakFreeze}/2 khiên</span>
               </span>
             </div>
@@ -247,7 +326,7 @@ export const ShopPage: React.FC = () => {
       <div className="space-y-3 pt-1">
         <div className="flex items-center justify-between px-1">
           <h2 className="text-sm font-black text-slate-200 uppercase tracking-wider flex items-center gap-2">
-            <CurrencyIcon type="heart" size="sm" />
+            <HandDrawnIcon name="heart-flask" size={22} />
             <span>Năng Lượng Thí Nghiệm ({isFullHearts ? 'Đầy 5/5' : `${hearts}/5`})</span>
           </h2>
           <span className="text-[11px] text-slate-400 font-medium">Tự động hồi đầy vào ngày mai</span>
@@ -255,26 +334,27 @@ export const ShopPage: React.FC = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
           {/* Card: Refill 1 Heart */}
-          <div className="p-4 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] hover:border-rose-500/50 shadow-[0_4px_0_0_#131f24] flex flex-col justify-between space-y-4 transition-all group">
+          <div className="p-4 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] hover:border-rose-500/50 shadow-[0_4px_0_0_#131f24] flex flex-col justify-between space-y-4 transition-all group relative overflow-hidden">
             <div className="flex items-start gap-3.5">
-              <div className="w-13 h-13 rounded-2xl bg-rose-500/10 border-2 border-rose-500/30 flex items-center justify-center shrink-0 shadow-inner group-hover:scale-105 transition-transform">
-                <CurrencyIcon type="heart" size="lg" animate={!isFullHearts} />
+              <div className="w-14 h-14 rounded-2xl bg-rose-500/10 border-2 border-rose-500/30 flex items-center justify-center shrink-0 shadow-inner group-hover:scale-105 transition-transform relative">
+                <HandDrawnIcon name="heart-flask" size={40} />
+                <HeartBubbles />
               </div>
               <div className="space-y-1 flex-1">
                 <h3 className="text-sm font-black text-white group-hover:text-rose-300 transition-colors">
-                  Hồi 1 Bình Tim
+                  {copyVi.shop.items.heartSingle.title}
                 </h3>
                 <p className="text-[11px] text-slate-300 leading-relaxed font-medium">
-                  Tiếp sức ngay 1 tim năng lượng để tiếp tục giải các bài tập đang dang dở.
+                  {copyVi.shop.items.heartSingle.desc}
                 </p>
               </div>
             </div>
 
             {/* Action Button */}
             {isFullHearts ? (
-              <div className="w-full py-3 px-4 rounded-2xl bg-[#1a2830] border-2 border-[#243641] text-slate-400 text-xs font-black flex items-center justify-center gap-2 select-none">
+              <div className="w-full py-3 px-4 rounded-2xl bg-[#1a2830] border-2 border-[#243641] text-slate-400 text-xs font-black flex items-center justify-center gap-2 select-none shadow-[0_2px_0_0_#131f24]">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>ĐÃ ĐẦY TIM (5/5)</span>
+                <span>{copyVi.shop.status.fullHearts}</span>
               </div>
             ) : gems >= 150 ? (
               <button
@@ -292,7 +372,7 @@ export const ShopPage: React.FC = () => {
                 <CurrencyIcon type="gem" size="xs" />
                 <span>150 ĐÁ QUÝ</span>
                 <span className="text-amber-400 text-[11px] font-bold">
-                  (Cần thêm {150 - gems} 💎)
+                  ({copyVi.shop.status.needMoreGems(150 - gems)})
                 </span>
               </button>
             )}
@@ -304,25 +384,28 @@ export const ShopPage: React.FC = () => {
               {/* Clean Value Badge (No overlap!) */}
               <div className="flex items-center justify-between">
                 <span className="px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 text-[10px] font-black uppercase border border-amber-500/40 inline-flex items-center gap-1 shadow-sm">
-                  <Sparkles className="w-3 h-3 text-amber-400" />
+                  <DoodleOrnament name="sparkle-star" size={12} color="#fbbf24" />
                   Tiết kiệm 300 Đá quý
                 </span>
-                <span className="text-[10px] font-bold text-amber-400/80 uppercase tracking-wider">
-                  Gói Siêu Hời
+                <span className="text-[10px] font-bold text-amber-400/90 uppercase tracking-wider">
+                  {copyVi.shop.items.heartFull.badge}
                 </span>
               </div>
 
               <div className="flex items-start gap-3.5">
-                <div className="w-13 h-13 rounded-2xl bg-amber-500/10 border-2 border-amber-500/40 flex items-center justify-center shrink-0 shadow-inner group-hover:scale-105 transition-transform relative">
-                  <CurrencyIcon type="heart" size="lg" />
-                  <Sparkles className="w-4 h-4 text-amber-400 absolute -top-1 -right-1" />
+                <div className="w-14 h-14 rounded-2xl bg-amber-500/10 border-2 border-amber-500/40 flex items-center justify-center shrink-0 shadow-inner group-hover:scale-105 transition-transform relative">
+                  <HandDrawnIcon name="heart-flask" size={40} />
+                  <HeartBubbles />
+                  <div className="absolute -top-1.5 -right-1.5">
+                    <DoodleOrnament name="glint" size={14} color="#f59e0b" />
+                  </div>
                 </div>
                 <div className="space-y-1 flex-1">
                   <h3 className="text-sm font-black text-amber-300 group-hover:text-amber-200 transition-colors">
-                    Bơm Trọn Vẹn 5/5 Tim
+                    {copyVi.shop.items.heartFull.title}
                   </h3>
                   <p className="text-[11px] text-slate-300 leading-relaxed font-medium">
-                    Hồi phục toàn bộ 5 bình năng lượng, cày bài tập thoải mái không giới hạn.
+                    {copyVi.shop.items.heartFull.desc}
                   </p>
                 </div>
               </div>
@@ -330,9 +413,9 @@ export const ShopPage: React.FC = () => {
 
             {/* Action Button */}
             {isFullHearts ? (
-              <div className="w-full py-3 px-4 rounded-2xl bg-[#1a2830] border-2 border-[#243641] text-slate-400 text-xs font-black flex items-center justify-center gap-2 select-none">
+              <div className="w-full py-3 px-4 rounded-2xl bg-[#1a2830] border-2 border-[#243641] text-slate-400 text-xs font-black flex items-center justify-center gap-2 select-none shadow-[0_2px_0_0_#131f24]">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>ĐÃ ĐẦY TIM (5/5)</span>
+                <span>{copyVi.shop.status.fullHearts}</span>
               </div>
             ) : gems >= 450 ? (
               <button
@@ -350,7 +433,7 @@ export const ShopPage: React.FC = () => {
                 <CurrencyIcon type="gem" size="xs" />
                 <span>450 ĐÁ QUÝ</span>
                 <span className="text-amber-400 text-[11px] font-bold">
-                  (Cần thêm {450 - gems} 💎)
+                  ({copyVi.shop.status.needMoreGems(450 - gems)})
                 </span>
               </button>
             )}
@@ -361,13 +444,13 @@ export const ShopPage: React.FC = () => {
       {/* ── 3. SECTION: TRANG BỊ HỖ TRỢ & TĂNG TỐC ── */}
       <div className="space-y-3 pt-1">
         <h2 className="text-sm font-black text-slate-200 uppercase tracking-wider flex items-center gap-2 px-1">
-          <Zap className="w-4 h-4 text-amber-400 fill-amber-400" />
+          <HandDrawnIcon name="flame" size={20} />
           <span>Trang Bị Hỗ Trợ & Nhân Đôi Kinh Nghiệm</span>
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
           {/* Card: Streak Freeze Shield */}
-          <div className="p-4 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] hover:border-sky-500/50 shadow-[0_4px_0_0_#131f24] flex flex-col justify-between space-y-4 transition-all group">
+          <div className="p-4 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] hover:border-sky-500/50 shadow-[0_4px_0_0_#131f24] flex flex-col justify-between space-y-4 transition-all group relative overflow-hidden">
             <div className="space-y-2">
               <div className="flex items-center justify-between">
                 <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-sky-500/15 text-sky-300 border border-sky-500/30">
@@ -379,15 +462,16 @@ export const ShopPage: React.FC = () => {
               </div>
 
               <div className="flex items-start gap-3.5">
-                <div className="w-13 h-13 rounded-2xl bg-sky-500/10 border-2 border-sky-500/30 flex items-center justify-center shrink-0 shadow-inner group-hover:scale-105 transition-transform">
-                  <Snowflake className="w-6 h-6 text-sky-400" />
+                <div className="w-14 h-14 rounded-2xl bg-sky-500/10 border-2 border-sky-500/30 flex items-center justify-center shrink-0 shadow-inner group-hover:scale-105 transition-transform relative">
+                  <HandDrawnIcon name="ice-shield" size={40} />
+                  <FrostMist />
                 </div>
                 <div className="space-y-1 flex-1">
                   <h3 className="text-sm font-black text-white group-hover:text-sky-300 transition-colors">
-                    Khiên Băng Chuỗi Ngày
+                    {copyVi.shop.items.streakFreeze.title}
                   </h3>
                   <p className="text-[11px] text-slate-300 leading-relaxed font-medium">
-                    Bảo vệ ngọn lửa Streak không bị tắt nếu bạn bận rộn không thể học 1 ngày.
+                    {copyVi.shop.items.streakFreeze.desc}
                   </p>
                 </div>
               </div>
@@ -395,9 +479,9 @@ export const ShopPage: React.FC = () => {
 
             {/* Action Button */}
             {isMaxStreakFreeze ? (
-              <div className="w-full py-3 px-4 rounded-2xl bg-[#1a2830] border-2 border-[#243641] text-slate-400 text-xs font-black flex items-center justify-center gap-2 select-none">
+              <div className="w-full py-3 px-4 rounded-2xl bg-[#1a2830] border-2 border-[#243641] text-slate-400 text-xs font-black flex items-center justify-center gap-2 select-none shadow-[0_2px_0_0_#131f24]">
                 <CheckCircle2 className="w-4 h-4 text-sky-400 shrink-0" />
-                <span>ĐÃ TRANG BỊ TỐI ĐA (2/2)</span>
+                <span>{copyVi.shop.status.maxShield}</span>
               </div>
             ) : gems >= 200 ? (
               <button
@@ -415,21 +499,22 @@ export const ShopPage: React.FC = () => {
                 <CurrencyIcon type="gem" size="xs" />
                 <span>200 ĐÁ QUÝ</span>
                 <span className="text-amber-400 text-[11px] font-bold">
-                  (Cần thêm {200 - gems} 💎)
+                  ({copyVi.shop.status.needMoreGems(200 - gems)})
                 </span>
               </button>
             )}
           </div>
 
           {/* Card: 2X XP Potion */}
-          <div className="p-4 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] hover:border-emerald-500/50 shadow-[0_4px_0_0_#131f24] flex flex-col justify-between space-y-4 transition-all group">
+          <div className="p-4 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] hover:border-emerald-500/50 shadow-[0_4px_0_0_#131f24] flex flex-col justify-between space-y-4 transition-all group relative overflow-hidden">
             <div className="space-y-2">
               <div className="flex items-center justify-between">
                 {boostRemainingSeconds > 0 ? (
                   <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 inline-flex items-center gap-1 font-mono">
                     <Clock className="w-3 h-3 text-emerald-400 animate-spin" />
-                    Đang kích hoạt: {Math.floor(boostRemainingSeconds / 60)}:
-                    {String(boostRemainingSeconds % 60).padStart(2, '0')}
+                    {copyVi.shop.status.activeBoost(
+                      `${Math.floor(boostRemainingSeconds / 60)}:${String(boostRemainingSeconds % 60).padStart(2, '0')}`
+                    )}
                   </span>
                 ) : (
                   <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
@@ -442,15 +527,16 @@ export const ShopPage: React.FC = () => {
               </div>
 
               <div className="flex items-start gap-3.5">
-                <div className="w-13 h-13 rounded-2xl bg-emerald-500/10 border-2 border-emerald-500/30 flex items-center justify-center shrink-0 shadow-inner group-hover:scale-105 transition-transform">
-                  <CurrencyIcon type="xp" size="lg" />
+                <div className="w-14 h-14 rounded-2xl bg-emerald-500/10 border-2 border-emerald-500/30 flex items-center justify-center shrink-0 shadow-inner group-hover:scale-105 transition-transform relative">
+                  <HandDrawnIcon name="xp-potion" size={40} />
+                  <PotionFizz />
                 </div>
                 <div className="space-y-1 flex-1">
                   <h3 className="text-sm font-black text-white group-hover:text-emerald-300 transition-colors">
-                    Bình Nhân Đôi XP (2X)
+                    {copyVi.shop.items.xpBoost.title}
                   </h3>
                   <p className="text-[11px] text-slate-300 leading-relaxed font-medium">
-                    Nhận gấp đôi điểm kinh nghiệm trong mọi bài học và mini-game suốt 15 phút.
+                    {copyVi.shop.items.xpBoost.desc}
                   </p>
                 </div>
               </div>
@@ -475,7 +561,7 @@ export const ShopPage: React.FC = () => {
                 <CurrencyIcon type="gem" size="xs" />
                 <span>100 ĐÁ QUÝ</span>
                 <span className="text-amber-400 text-[11px] font-bold">
-                  (Cần thêm {100 - gems} 💎)
+                  ({copyVi.shop.status.needMoreGems(100 - gems)})
                 </span>
               </button>
             )}
@@ -483,11 +569,18 @@ export const ShopPage: React.FC = () => {
         </div>
       </div>
 
-      {/* ── 4. SECTION: MYSTERY CHEST (ANIMATED GIFT VIDEO) ── */}
-      <div className="p-5 rounded-3xl bg-gradient-to-br from-[#18272f] via-[#1c2c36] to-[#241f17] border-2 border-amber-500/30 hover:border-amber-400/60 shadow-[0_4px_0_0_#131f24] space-y-4 relative overflow-hidden transition-all group">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      {/* ── 4. SECTION: MYSTERY CHEST (ANIMATED GIFT VIDEO + SHIMMER SHINE) ── */}
+      <div className="p-5 rounded-3xl bg-gradient-to-br from-[#18272f] via-[#1c2c36] to-[#241f17] border-2 border-amber-500/40 hover:border-amber-400/80 shadow-[0_4px_0_0_#131f24] space-y-4 relative overflow-hidden transition-all group">
+        {/* Vệt sáng vàng quét qua (Shimmer Shine Sweep) */}
+        <motion.div
+          className="absolute inset-0 pointer-events-none bg-gradient-to-r from-transparent via-amber-300/15 to-transparent -skew-x-12"
+          animate={{ x: ['-100%', '200%'] }}
+          transition={{ duration: 3.2, repeat: Infinity, ease: 'easeInOut', repeatDelay: 1.2 }}
+        />
+
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 relative z-10">
           <div className="flex items-center gap-4">
-            <div className="w-16 h-16 rounded-2xl bg-[#131f24] border-2 border-amber-500/40 flex items-center justify-center p-1 shrink-0 shadow-inner overflow-hidden group-hover:scale-105 transition-transform">
+            <div className="w-18 h-18 rounded-2xl bg-[#131f24] border-2 border-amber-400/60 shadow-[0_0_20px_rgba(245,158,11,0.2)] flex items-center justify-center p-1 shrink-0 overflow-hidden group-hover:scale-105 transition-transform relative">
               <video
                 src={assetUrl('/assets/animations/gift.mp4')}
                 autoPlay
@@ -496,18 +589,21 @@ export const ShopPage: React.FC = () => {
                 playsInline
                 className="w-full h-full object-contain pointer-events-none"
               />
+              <div className="absolute top-1 right-1 pointer-events-none">
+                <DoodleOrnament name="sparkle-star" size={12} color="#fbbf24" />
+              </div>
             </div>
             <div className="space-y-1">
               <div className="flex items-center gap-2">
                 <h3 className="text-base font-black text-amber-300">
-                  Rương Kho Báu Bí Mật Phòng Lab
+                  {copyVi.shop.items.chest.title}
                 </h3>
                 <span className="text-[10px] font-black uppercase px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40">
                   Kho Báu
                 </span>
               </div>
               <p className="text-xs text-slate-300 leading-relaxed font-medium">
-                Cơ hội nhận ngẫu nhiên tới <span className="text-[#00cd9c] font-black">+300 Đá quý</span>, bình hồi phục Tim hoặc gói XP khổng lồ!
+                {copyVi.shop.items.chest.desc}
               </p>
             </div>
           </div>
@@ -517,9 +613,9 @@ export const ShopPage: React.FC = () => {
           <motion.div
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            className="p-3.5 rounded-2xl bg-amber-500/15 border-2 border-amber-500/40 text-amber-200 text-xs font-black text-center flex items-center justify-center gap-2"
+            className="p-3.5 rounded-2xl bg-amber-500/15 border-2 border-amber-500/40 text-amber-200 text-xs font-black text-center flex items-center justify-center gap-2 relative z-10 shadow-inner"
           >
-            <Sparkles className="w-4 h-4 text-amber-400 shrink-0" />
+            <HandDrawnIcon name="treasure-chest" size={24} />
             <span>{chestReward}</span>
           </motion.div>
         )}
@@ -529,7 +625,7 @@ export const ShopPage: React.FC = () => {
           <button
             disabled={isOpeningChest}
             onClick={handleOpenMysteryChest}
-            className="w-full py-3.5 px-5 rounded-2xl bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 hover:brightness-110 text-slate-950 font-black text-xs sm:text-sm shadow-[0_4px_0_0_#ca8a04] active:translate-y-1 active:shadow-none transition-all flex items-center justify-center gap-2 cursor-pointer border-t border-amber-200/50"
+            className="w-full py-3.5 px-5 rounded-2xl bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-500 hover:brightness-110 text-slate-950 font-black text-xs sm:text-sm shadow-[0_4px_0_0_#ca8a04] active:translate-y-1 active:shadow-none transition-all flex items-center justify-center gap-2 cursor-pointer border-t border-amber-200/50 relative z-10"
           >
             <CurrencyIcon type="gem" size="xs" />
             <span>
@@ -539,12 +635,12 @@ export const ShopPage: React.FC = () => {
         ) : (
           <button
             disabled
-            className="w-full py-3.5 px-5 rounded-2xl bg-[#1a2830] border-2 border-[#2e4756] text-slate-400 text-xs font-black flex items-center justify-center gap-2 cursor-not-allowed opacity-80"
+            className="w-full py-3.5 px-5 rounded-2xl bg-[#1a2830] border-2 border-[#2e4756] text-slate-400 text-xs font-black flex items-center justify-center gap-2 cursor-not-allowed opacity-80 relative z-10"
           >
             <CurrencyIcon type="gem" size="xs" />
             <span>120 ĐÁ QUÝ</span>
             <span className="text-amber-400 text-[11px] font-bold">
-              (Cần thêm {120 - gems} 💎 để mở rương)
+              ({copyVi.shop.status.needMoreGems(120 - gems)} để mở rương)
             </span>
           </button>
         )}
