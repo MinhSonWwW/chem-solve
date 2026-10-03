@@ -61,8 +61,8 @@ Linh vật bình tam giác **Flasky** không phải là ảnh tĩnh gắn cho c�
 ## 3. Lộ Trình 5 Milestone Triển Khai Chi Tiết (M1 $\to$ M5)
 
 ### 🚀 Milestone 1: Khởi Tạo Thư Viện Đồ Họa Vẽ Tay (Hand-Crafted Asset Library)
-- [ ] **Mục tiêu:** Xây dựng bộ SVG icons độc quyền nét viền mực dày 2.5px và bộ doodle vẽ tay thay thế toàn bộ Lucide icons đại trà trong các vị trí trọng tâm.
-- [ ] **Công việc chi tiết:**
+- [x] **Mục tiêu:** Xây dựng bộ SVG icons độc quyền nét viền mực dày 2.5px và bộ doodle vẽ tay thay thế toàn bộ Lucide icons đại trà trong các vị trí trọng tâm.
+- [x] **Công việc chi tiết:**
   1. Tạo component `<HandDrawnIcon />` tại `src/design-system/components/HandDrawnIcon.tsx` chứa các vector đồ họa vẽ tay chuẩn studio:
      - `flask`: Bình Erlenmeyer viền mực có vạch chia và bọt khí.
      - `test-tube`: Ống nghiệm nghiêng có giọt dung dịch đang rơi.
@@ -81,13 +81,13 @@ Linh vật bình tam giác **Flasky** không phải là ảnh tĩnh gắn cho c�
      - Bụi sao và bọt khí phòng lab bay lơ lửng.
   3. Cập nhật `src/design-system/index.ts` xuất khẩu các component mới.
   4. Viết unit test xác thực render chuẩn SVG trong `src/design-system/components/HandDrawn.test.tsx`.
-- [ ] **Nghiệm thu M1:** 100% icons vẽ tay hiển thị sắc nét, viền mực đậm 2.5px, không phụ thuộc font/emoji hệ thống.
+- [x] **Nghiệm thu M1:** 100% icons vẽ tay hiển thị sắc nét, viền mực đậm 2.5px, không phụ thuộc font/emoji hệ thống.
 
 ---
 
 ### 🚀 Milestone 2: Tinh Chỉnh Thanh Điều Hướng & Banner Đầu Trang (Navigation & Hero Hub)
-- [ ] **Mục tiêu:** Xóa sạch emoji khỏi thanh tiêu đề, biến TopHeader, BottomNav và DesktopSidebar thành giao diện game studio sang trọng.
-- [ ] **Công việc chi tiết:**
+- [x] **Mục tiêu:** Xóa sạch emoji khỏi thanh tiêu đề, biến TopHeader, BottomNav và DesktopSidebar thành giao diện game studio sang trọng.
+- [x] **Công việc chi tiết:**
   1. **TopHeader (`src/app/layout/TopHeader.tsx`):**
      - Thay thế badge điểm Streak, Tim, Gems bằng component `<CurrencyIcon />` có hiệu ứng nảy (spring physics).
      - Bộ chọn khối lớp và môn học được thiết kế dạng nút bấm chunky 3D có độ nảy rõ ràng.
@@ -96,13 +96,13 @@ Linh vật bình tam giác **Flasky** không phải là ảnh tĩnh gắn cho c�
      - Tab đang chọn (`active`) có vệt sáng đáy màu sắc riêng của môn học (Xanh Cyan cho Hóa, Vàng Hổ Phách cho Lý, Xanh Lá cho Sinh).
   3. **Bộ chọn môn học (`SubjectSelector`):**
      - Thay thế các emoji `🧪`, `⚡`, `🌿` bằng biểu tượng vẽ tay độc quyền: Bình tam giác Hóa học, Tia sét nguyên tử Vật lý, Mầm cây xoắn DNA Sinh học.
-- [ ] **Nghiệm thu M2:** Giao diện điều hướng đồng nhất, không có emoji trôi nổi, bấm vào các tab có phản hồi xúc giác cơ học.
+- [x] **Nghiệm thu M2:** Giao diện điều hướng đồng nhất, không có emoji trôi nổi, bấm vào các tab có phản hồi xúc giác cơ học.
 
 ---
 
 ### 🚀 Milestone 3: Lột Xác Lộ Trình Học Ziczac (SnakePath & Learn Page)
-- [ ] **Mục tiêu:** Biến bản đồ học tập ziczac từ những chấm tròn đơn điệu thành một "chặng thám hiểm khoa học kỳ thú".
-- [ ] **Công việc chi tiết:**
+- [x] **Mục tiêu:** Biến bản đồ học tập ziczac từ những chấm tròn đơn điệu thành một "chặng thám hiểm khoa học kỳ thú".
+- [x] **Công việc chi tiết:**
   1. **Đường nối bài học (Stepping Path Connector):**
      - Thay đường kẻ đơn giản bằng đường nét đứt vẽ tay uốn lượn tự nhiên có độ dày `4px`.
      - Thêm các đốm bọt khí và tinh thể nhỏ rơi rải rác trên đường đi.
@@ -114,7 +114,7 @@ Linh vật bình tam giác **Flasky** không phải là ảnh tĩnh gắn cho c�
      - Thiết kế trạm rương mở nắp vàng óng ở cuối mỗi chương với animation bập bùng, có mũi tên vẽ tay chỉ vào *"Chinh phục để mở rương!"*.
   4. **Header chặng học (Unit Header Card):**
      - Thay khung card cứng nhắc bằng thẻ "Sổ tay phòng thí nghiệm" (Laboratory Notebook) với góc gấp nhẹ và nhãn dán dán chéo viền mực.
-- [ ] **Nghiệm thu M3:** Trang học tập nhìn như một tấm bản đồ phiêu lưu trong game hoạt hình, kích thích học sinh kéo xuống khám phá các nốt tiếp theo.
+- [x] **Nghiệm thu M3:** Trang học tập nhìn như một tấm bản đồ phiêu lưu trong game hoạt hình, kích thích học sinh kéo xuống khám phá các nốt tiếp theo.
 
 ---
 

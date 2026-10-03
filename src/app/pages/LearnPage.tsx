@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { BookOpen, ChevronRight, Compass } from 'lucide-react';
-import { SnakePath, type PathNode, NodePreviewDrawer, ChapterGuideModal, SubjectSelectorModal } from '@/design-system';
+import { Compass, ChevronRight } from 'lucide-react';
+import { SnakePath, type PathNode, NodePreviewDrawer, ChapterGuideModal, SubjectSelectorModal, HandDrawnIcon, DoodleOrnament } from '@/design-system';
 import { sound } from '@/lib/audio';
 import { getCurriculum, type Grade, type Lesson, type NodeInfo, type Chapter } from '@/content/curriculum';
 import { useUserStore } from '@/features/gamification/useUserStore';
@@ -307,8 +307,8 @@ export const LearnPage: React.FC = () => {
           </div>
 
           <div className="bg-[#18272f] border-2 border-amber-500/40 p-6 sm:p-8 rounded-3xl shadow-[0_6px_0_0_#131f24] space-y-6 text-center">
-            <div className="w-16 h-16 rounded-2xl bg-amber-500/20 border-2 border-amber-500/40 flex items-center justify-center text-3xl mx-auto shadow-inner">
-              ⚡
+            <div className="w-16 h-16 rounded-2xl bg-amber-500/20 border-2 border-amber-500/40 flex items-center justify-center mx-auto shadow-inner">
+              <HandDrawnIcon name="atom" size={36} />
             </div>
             <div className="space-y-2">
               <span className="text-xs font-black uppercase text-amber-400 tracking-wider bg-amber-950/60 px-3 py-1 rounded-xl border border-amber-800/60 inline-block">
@@ -345,9 +345,10 @@ export const LearnPage: React.FC = () => {
                   sound.playClick();
                   navigate('/learn/6');
                 }}
-                className="w-full sm:w-auto px-6 py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs sm:text-sm rounded-2xl shadow-[0_4px_0_0_#b45309] active:translate-y-1 active:shadow-none transition-all cursor-pointer"
+                className="w-full sm:w-auto px-6 py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs sm:text-sm rounded-2xl shadow-[0_4px_0_0_#b45309] active:translate-y-1 active:shadow-none transition-all cursor-pointer flex items-center justify-center gap-2"
               >
-                ⚡ Học Vật lý Lớp 6 (Unit 0 Đo lường)
+                <HandDrawnIcon name="atom" size={18} />
+                <span>Học Vật lý Lớp 6 (Unit 0 Đo lường)</span>
               </button>
             </div>
           </div>
@@ -383,60 +384,128 @@ export const LearnPage: React.FC = () => {
 
           {/* 2. Chapters & Snake Paths */}
           {chaptersWithNodes.map(({ chapter, pathNodes, nodeLessonMap }) => (
-            <div key={chapter.id} className="space-y-4">
-              {/* Chapter Banner (Duolingo Style) */}
-              <div className="bg-[#18272f] border-2 border-[#2e4756] p-4 sm:p-5 rounded-3xl flex items-center justify-between shadow-[0_6px_0_0_#131f24] relative overflow-hidden">
-                {/* Background glowing ambient light */}
+            <div key={chapter.id} className="space-y-3">
+              {/* ─── Chapter Banner — Sổ tay phòng thí nghiệm ─── */}
+              <div
+                className={`relative rounded-3xl overflow-hidden
+                  border-2 shadow-[0_6px_0_0_#0c1419]
+                  ${activeSubject === 'physics'
+                    ? 'bg-[#1c1e0d] border-amber-600/50'
+                    : activeSubject === 'bio'
+                    ? 'bg-[#0d1e17] border-emerald-600/50'
+                    : 'bg-[#0d1a24] border-[#2e4756]'
+                  }`}
+              >
+                {/* Góc gấp trang — notebook dog-ear */}
                 <div
-                  className={`absolute -right-8 -top-8 w-32 h-32 ${
-                    activeSubject === 'physics'
-                      ? 'bg-amber-500/10'
+                  className={`absolute top-0 right-0 w-0 h-0
+                    border-t-[32px] border-r-[32px] border-b-[32px] border-l-[32px]
+                    border-t-transparent border-r-transparent
+                    ${ activeSubject === 'physics'
+                      ? 'border-b-amber-700/60 border-l-amber-700/60'
                       : activeSubject === 'bio'
-                      ? 'bg-emerald-500/10'
-                      : 'bg-[#0ea5e9]/10'
-                  } rounded-full blur-2xl pointer-events-none`}
+                      ? 'border-b-emerald-700/60 border-l-emerald-700/60'
+                      : 'border-b-[#1e3a50] border-l-[#1e3a50]'
+                    } pointer-events-none`}
+                />
+                <div
+                  className={`absolute top-0 right-0 w-8 h-8 pointer-events-none
+                    ${ activeSubject === 'physics'
+                      ? 'bg-amber-700/30'
+                      : activeSubject === 'bio'
+                      ? 'bg-emerald-700/30'
+                      : 'bg-[#2e4756]/40'
+                    }`}
+                  style={{ clipPath: 'polygon(100% 0, 0 100%, 100% 100%)' }}
                 />
 
-                <div className="space-y-1 max-w-[65%] sm:max-w-[70%] relative z-10">
-                  <span
-                    className={`inline-block text-[10px] font-black uppercase tracking-wider ${
-                      activeSubject === 'physics'
-                        ? 'text-amber-300'
-                        : activeSubject === 'bio'
-                        ? 'text-emerald-300'
-                        : 'text-sky-300'
-                    } bg-[#20333d] px-2 py-0.5 rounded-lg border border-[#2e4756]`}
-                  >
-                    {activeSubject === 'physics' || activeSubject === 'bio'
-                      ? `Unit ${chapter.chapterNumber}`
-                      : `Chương ${chapter.chapterNumber}`} · Lớp {currentGrade}
-                  </span>
-                  <h1 className="text-sm sm:text-base font-black text-white leading-tight">
-                    {chapter.title}
-                  </h1>
-                  <p className="text-[11px] text-slate-300 line-clamp-1">
-                    {chapter.description}
-                  </p>
+                {/* Nhãn dán chương — sticker label dán chéo */}
+                <div
+                  className={`absolute -left-2 top-4 z-10
+                    px-3 py-0.5 text-[9px] font-black uppercase tracking-widest
+                    shadow-[2px_2px_0_rgba(0,0,0,0.4)]
+                    ${ activeSubject === 'physics'
+                      ? 'bg-amber-400 text-amber-950'
+                      : activeSubject === 'bio'
+                      ? 'bg-emerald-400 text-emerald-950'
+                      : 'bg-[#38bdf8] text-slate-950'
+                    }`}
+                  style={{ transform: 'rotate(-1.5deg)' }}
+                >
+                  {activeSubject === 'physics' || activeSubject === 'bio'
+                    ? `UNIT ${chapter.chapterNumber}`
+                    : `CHƯƠNG ${chapter.chapterNumber}`}
                 </div>
 
-                {/* Duolingo-style Guidebook Pill Button */}
-                <button
-                  onClick={() => {
-                    sound.playClick();
-                    setSelectedChapterGuide(chapter);
-                  }}
-                  className={`relative z-10 flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 font-black text-[11px] sm:text-xs rounded-2xl active:translate-y-1 active:shadow-none transition-all cursor-pointer whitespace-nowrap border-2 ${
-                    activeSubject === 'physics'
-                      ? 'bg-[#f59e0b] hover:bg-[#fbbf24] text-slate-950 shadow-[0_4px_0_0_#b45309] border-amber-200/50'
-                      : activeSubject === 'bio'
-                      ? 'bg-[#10b981] hover:bg-[#34d399] text-slate-950 shadow-[0_4px_0_0_#059669] border-emerald-200/50'
-                      : 'bg-[#ce82ff] hover:bg-[#d896ff] text-white shadow-[0_4px_0_0_#a545ee] border-[#e9d5ff]/40'
-                  }`}
-                  title="Xem sổ tay kiến thức chương"
-                >
-                  <BookOpen className="w-4 h-4 stroke-[2.5]" />
-                  <span className="tracking-wide">HƯỚNG DẪN</span>
-                </button>
+                {/* Nội dung chính */}
+                <div className="p-4 sm:p-5 pt-5 flex items-center justify-between gap-3">
+                  {/* Left: Icon vẽ tay môn + text */}
+                  <div className="flex items-start gap-3 min-w-0">
+                    {/* Icon vẽ tay lớn — đặc trưng môn học */}
+                    <div
+                      className={`shrink-0 w-12 h-12 rounded-2xl flex items-center justify-center
+                        border-2 shadow-[0_4px_0_0_var(--ch-icon-shadow)]
+                        ${ activeSubject === 'physics'
+                          ? 'bg-amber-900/50 border-amber-600/60'
+                          : activeSubject === 'bio'
+                          ? 'bg-emerald-900/50 border-emerald-600/60'
+                          : 'bg-[#0e2233] border-[#2e4756]'
+                        }`}
+                      style={{
+                        // @ts-expect-error CSS custom property
+                        '--ch-icon-shadow':
+                          activeSubject === 'physics' ? '#78350f'
+                          : activeSubject === 'bio' ? '#065f46'
+                          : '#0c1419',
+                      }}
+                    >
+                      <HandDrawnIcon
+                        name={activeSubject === 'physics' ? 'atom' : activeSubject === 'bio' ? 'dna' : 'flask'}
+                        size={30}
+                      />
+                    </div>
+
+                    <div className="space-y-0.5 min-w-0">
+                      <h2 className="text-sm sm:text-base font-black text-white leading-tight line-clamp-2">
+                        {chapter.title}
+                      </h2>
+                      <p className="text-[11px] text-slate-400 line-clamp-1">
+                        {chapter.description}
+                      </p>
+                      {/* Gạch chân lượn sóng vàng dưới tiêu đề */}
+                      <DoodleOrnament name="wavy-underline" color={
+                        activeSubject === 'physics' ? '#fbbf24'
+                        : activeSubject === 'bio' ? '#34d399'
+                        : '#38bdf8'
+                      } />
+                    </div>
+                  </div>
+
+                  {/* Right: Nút Hướng dẫn chunky 3D */}
+                  <button
+                    onClick={() => {
+                      sound.playClick();
+                      setSelectedChapterGuide(chapter);
+                    }}
+                    className={`shrink-0 flex flex-col items-center gap-1 px-3 py-2.5
+                      font-black text-[10px] rounded-2xl
+                      active:translate-y-[4px] active:shadow-none
+                      transition-all duration-100 cursor-pointer whitespace-nowrap border-2
+                      ${ activeSubject === 'physics'
+                        ? 'bg-[#f59e0b] text-slate-950 shadow-[0_4px_0_0_#b45309] border-amber-300/40'
+                        : activeSubject === 'bio'
+                        ? 'bg-[#10b981] text-slate-950 shadow-[0_4px_0_0_#059669] border-emerald-300/40'
+                        : 'bg-[#0ea5e9] text-slate-950 shadow-[0_4px_0_0_#0284c7] border-sky-300/40'
+                      }`}
+                    title="Xem sổ tay kiến thức chương"
+                  >
+                    <HandDrawnIcon
+                      name={activeSubject === 'physics' ? 'atom' : activeSubject === 'bio' ? 'microscope' : 'flask'}
+                      size={22}
+                    />
+                    <span className="tracking-wide">HƯỚNG DẪN</span>
+                  </button>
+                </div>
               </div>
 
               {/* Duolingo Snake Path */}
