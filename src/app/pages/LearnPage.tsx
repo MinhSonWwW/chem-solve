@@ -396,29 +396,6 @@ export const LearnPage: React.FC = () => {
                     : 'bg-[#0d1a24] border-[#2e4756]'
                   }`}
               >
-                {/* Góc gấp trang — notebook dog-ear */}
-                <div
-                  className={`absolute top-0 right-0 w-0 h-0
-                    border-t-[32px] border-r-[32px] border-b-[32px] border-l-[32px]
-                    border-t-transparent border-r-transparent
-                    ${ activeSubject === 'physics'
-                      ? 'border-b-amber-700/60 border-l-amber-700/60'
-                      : activeSubject === 'bio'
-                      ? 'border-b-emerald-700/60 border-l-emerald-700/60'
-                      : 'border-b-[#1e3a50] border-l-[#1e3a50]'
-                    } pointer-events-none`}
-                />
-                <div
-                  className={`absolute top-0 right-0 w-8 h-8 pointer-events-none
-                    ${ activeSubject === 'physics'
-                      ? 'bg-amber-700/30'
-                      : activeSubject === 'bio'
-                      ? 'bg-emerald-700/30'
-                      : 'bg-[#2e4756]/40'
-                    }`}
-                  style={{ clipPath: 'polygon(100% 0, 0 100%, 100% 100%)' }}
-                />
-
                 {/* Nhãn dán chương — sticker label dán chéo */}
                 <div
                   className={`absolute -left-2 top-4 z-10
@@ -487,7 +464,7 @@ export const LearnPage: React.FC = () => {
                       sound.playClick();
                       setSelectedChapterGuide(chapter);
                     }}
-                    className={`shrink-0 flex flex-col items-center gap-1 px-3 py-2.5
+                    className={`relative z-10 shrink-0 flex flex-col items-center gap-1 px-3 py-2.5
                       font-black text-[10px] rounded-2xl
                       active:translate-y-[4px] active:shadow-none
                       transition-all duration-100 cursor-pointer whitespace-nowrap border-2
