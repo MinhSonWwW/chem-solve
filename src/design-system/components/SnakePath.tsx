@@ -32,31 +32,46 @@ export interface SnakePathProps {
 /* ─── Design tokens per subject ─── */
 const ACCENT = {
   chem: {
-    grad1: '#38bdf8', grad2: '#0ea5e9',
-    shadow: '#0284c7', ring: 'bg-cyan-400/30',
+    grad1: '#38bdf8',
+    grad2: '#0ea5e9',
+    shadow: '#0284c7',
+    activeBg: 'bg-gradient-to-tr from-[#0ea5e9] to-[#38bdf8]',
+    activeShadow: 'shadow-[0_8px_0_0_#0284c7] active:shadow-[0_0px_0_0_#0284c7]',
+    ring: 'bg-cyan-400/30',
     badge: 'from-cyan-400 to-sky-300 text-slate-950 border-cyan-200',
     badgePointer: 'border-t-sky-300',
     trackColor: '#0ea5e9',
     glowColor: '#0284c7',
     bubbleColor: '#38bdf8',
+    iconColor: 'text-white',
   },
   physics: {
-    grad1: '#fde68a', grad2: '#eab308',
-    shadow: '#ca8a04', ring: 'bg-amber-400/30',
+    grad1: '#fde68a',
+    grad2: '#eab308',
+    shadow: '#ca8a04',
+    activeBg: 'bg-gradient-to-tr from-[#eab308] to-[#fde68a]',
+    activeShadow: 'shadow-[0_8px_0_0_#ca8a04] active:shadow-[0_0px_0_0_#ca8a04]',
+    ring: 'bg-amber-400/30',
     badge: 'from-amber-400 to-yellow-300 text-slate-950 border-amber-200',
     badgePointer: 'border-t-yellow-300',
     trackColor: '#eab308',
     glowColor: '#ca8a04',
     bubbleColor: '#fbbf24',
+    iconColor: 'text-slate-950',
   },
   bio: {
-    grad1: '#6ee7b7', grad2: '#10b981',
-    shadow: '#059669', ring: 'bg-emerald-400/30',
+    grad1: '#34d399',
+    grad2: '#059669',
+    shadow: '#047857',
+    activeBg: 'bg-gradient-to-tr from-[#059669] to-[#34d399]',
+    activeShadow: 'shadow-[0_8px_0_0_#047857] active:shadow-[0_0px_0_0_#047857]',
+    ring: 'bg-emerald-400/30',
     badge: 'from-emerald-400 to-teal-300 text-slate-950 border-emerald-200',
     badgePointer: 'border-t-teal-300',
     trackColor: '#10b981',
     glowColor: '#059669',
     bubbleColor: '#34d399',
+    iconColor: 'text-white',
   },
 };
 
@@ -368,6 +383,14 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
                 <button
                   onClick={() => handleNodePress(node)}
                   aria-label={node.title}
+                  style={
+                    isActive
+                      ? {
+                          background: `linear-gradient(135deg, ${ac.grad2}, ${ac.grad1})`,
+                          boxShadow: `0 8px 0 0 ${ac.shadow}`,
+                        }
+                      : undefined
+                  }
                   className={`relative flex flex-col items-center justify-center font-black select-none
                     transition-all duration-100 cursor-pointer rounded-full
                     ${isChest
@@ -385,11 +408,11 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
                           active:translate-y-[6px] active:shadow-[0_0px_0_0_#15803d]`
                       : isActive
                       ? `w-[74px] h-[74px]
-                          bg-gradient-to-tr from-[${ac.grad2}] to-[${ac.grad1}]
-                          text-slate-950 border-[3px] border-white/40
-                          shadow-[0_8px_0_0_${ac.shadow}]
+                          ${ac.activeBg}
+                          ${ac.activeShadow}
+                          border-[3px] border-white/40
                           hover:brightness-110
-                          active:translate-y-[8px] active:shadow-[0_0px_0_0_${ac.shadow}]
+                          active:translate-y-[8px]
                           ring-4 ring-white/20`
                       : isCheckpoint
                       ? `w-[64px] h-[64px]
@@ -416,9 +439,9 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
                   ) : isCompleted ? (
                     <Check className="w-8 h-8 stroke-[3.5]" />
                   ) : isActive && isTheory ? (
-                    <BookOpen className={`w-7 h-7 stroke-[2.5] ${isPhysics || isBio ? 'text-slate-950' : 'text-white'}`} />
+                    <BookOpen className={`w-7 h-7 stroke-[2.5] ${ac.iconColor}`} />
                   ) : isActive ? (
-                    <Play className="w-7 h-7 fill-slate-950 ml-0.5" />
+                    <Play className={`w-7 h-7 ${ac.iconColor === 'text-white' ? 'fill-white' : 'fill-slate-950'} ml-0.5`} />
                   ) : isUnready ? (
                     <HandDrawnIcon name="flask" size={22} className="opacity-40" />
                   ) : isTheory ? (
