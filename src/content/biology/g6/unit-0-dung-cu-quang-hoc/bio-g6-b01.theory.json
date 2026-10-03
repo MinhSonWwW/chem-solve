@@ -1,0 +1,87 @@
+{
+  "lessonId": "bio-g6-b01",
+  "nodeId": "bio-g6-b01-theory",
+  "title": "Lý thuyết: Sử dụng kính lúp",
+  "subtitle": "Bài 3 SGK KHTN 6 Kết nối tri thức: Cấu tạo, thao tác quan sát và bảo quản kính lúp",
+  "sgkBaiSo": 3,
+  "estimatedMinutes": 2,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Khái niệm",
+      "badgeColor": "emerald",
+      "title": "Kính lúp và độ phóng đại",
+      "content": "Kính lúp là dụng cụ quang học bổ trợ cho mắt giúp quan sát các vật thể nhỏ mà mắt thường khó nhìn rõ chi tiết.",
+      "bulletPoints": [
+        "Độ phóng đại thông thường: từ 3 lần (3x) đến 20 lần (20x).",
+        "Đối tượng quan sát phù hợp: Gân lá cây, cánh và râu côn trùng, dấu vân tay, chi tiết máy móc đồng hồ, các dòng chữ in rất nhỏ.",
+        "Kính lúp không dùng để quan sát tế bào hay vi khuẩn vì kích thước tế bào quá nhỏ, vượt quá khả năng phóng đại của kính lúp."
+      ],
+      "callout": "Kính lúp phóng to ảnh từ 3x đến 20x — thích hợp quan sát cấu trúc ngoài của mẫu vật nhỏ!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Cấu tạo",
+      "badgeColor": "amber",
+      "title": "3 bộ phận chính của kính lúp cầm tay",
+      "content": "Kính lúp cầm tay có cấu tạo gọn nhẹ với 3 bộ phận chức năng:",
+      "bulletPoints": [
+        "Mặt kính: Là thấu kính hội tụ (phần rìa mỏng hơn phần giữa), làm bằng thủy tinh hoặc nhựa trong suốt có tác dụng bẻ cong ánh sáng để tạo ảnh phóng to.",
+        "Khung kính: Viền bao quanh bảo vệ mép thấu kính tránh nứt vỡ khi va chạm.",
+        "Tay cầm: Cán cầm bằng nhựa hoặc kim loại giúp thao tác điều chỉnh khoảng cách dễ dàng và chính xác."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Kỹ thuật",
+      "badgeColor": "cyan",
+      "title": "Quy trình sử dụng kính lúp đúng cách",
+      "content": "Để thu được ảnh rõ ràng, sắc nét nhất, thực hiện tuần tự theo 2 bước thao tác:",
+      "bulletPoints": [
+        "Bước 1: Tay cầm cán kính lúp, đặt mặt kính ở vị trí gần sát vật mẫu cần quan sát (lá cây, côn trùng...).",
+        "Bước 2: Mắt hướng nhìn vào mặt kính, từ từ dịch chuyển kính lúp ra xa mẫu vật cho đến khi nhìn thấy chi tiết vật rõ ràng và phóng đại lớn nhất.",
+        "Mẹo nhỏ: Có thể giữ cố định kính lúp và dịch chuyển nhẹ nhàng vật mẫu nếu quan sát mẫu vật nhỏ trên tay."
+      ],
+      "callout": "Quy tắc vàng: Đặt kính sát vật → Từ từ đưa kính ra xa cho đến khi ảnh rõ nét nhất!"
+    },
+    {
+      "id": "card-4",
+      "badge": "Bảo quản",
+      "badgeColor": "purple",
+      "title": "Bảo quản kính lúp an toàn, bền lâu",
+      "content": "Mặt thấu kính rất dễ bị xước nếu không chăm sóc đúng cách:",
+      "bulletPoints": [
+        "Lau mặt kính nhẹ nhàng bằng khăn mềm sạch hoặc giấy lau thấu kính chuyên dụng.",
+        "Không dùng tay chạm trực tiếp lên bề mặt thấu kính để tránh bám mồ hôi và vân tay.",
+        "Tránh để mặt kính tiếp xúc hoặc cọ xát với các vật nhám ráp, sắc nhọn.",
+        "Cất kính vào hộp hoặc bao da bảo vệ, để nơi khô ráo, thoáng mát."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi sử dụng kính lúp cầm tay để quan sát gân của một chiếc lá, thao tác nào sau đây là chuẩn kỹ thuật?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Đặt kính sát bề mặt lá, mắt nhìn qua kính rồi từ từ dịch chuyển kính ra xa cho đến khi thấy rõ chi tiết",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Đặt kính thật xa mắt rồi liên tục lắc mạnh kính lúp sang hai bên",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Dùng ngón tay miết chặt lên mặt kính hội tụ để làm trong mặt kính trước khi xem",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Đưa kính lúp ra thật xa vật mẫu ngoài tầm nhìn để phóng đại vô cực",
+        "correct": false
+      }
+    ],
+    "explanation": "Quy tắc thao tác kính lúp: Đặt kính gần sát mẫu vật, nhìn qua kính rồi từ từ nâng kính ra xa cho đến khi ảnh hiển thị sắc nét nhất."
+  }
+}

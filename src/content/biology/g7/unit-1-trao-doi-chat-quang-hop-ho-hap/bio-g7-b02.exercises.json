@@ -1,0 +1,524 @@
+[
+  {
+    "id": "bio-g7-b02-q01",
+    "lessonId": "bio-g7-b02",
+    "sgkBaiSo": 22,
+    "skillIds": [
+      "bio-quang-hop-co-che"
+    ],
+    "difficulty": 1,
+    "prompt": "Bào quan nào bên trong tế bào lá cây trực tiếp thực hiện quá trình quang hợp?",
+    "knowledge": [
+      "kb-bio-g7-quang-hop-khai-niem"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Lục lạp"
+        },
+        {
+          "id": "opt-b",
+          "label": "Ty thể"
+        },
+        {
+          "id": "opt-c",
+          "label": "Không bào lớn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Màng nhân"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bào quan này chứa sắc tố màu xanh lục có tên là diệp lục (chlorophyll)."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 22 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định bào quan quang hợp",
+        "body": "Đề bài hỏi về bào quan thực hiện quang hợp ở thực vật."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức SGK",
+        "body": "Lục lạp chứa chất diệp lục có khả năng hấp thụ quang năng và thực hiện quang hợp."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Lục lạp là bào quan quang hợp."
+      }
+    ],
+    "finalSolution": "Lục lạp là bào quan chuyên trách quá trình quang hợp ở tế bào thực vật.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm lẫn với ty thể (bào quan thực hiện hô hấp tế bào)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g7-b02-q02",
+    "lessonId": "bio-g7-b02",
+    "sgkBaiSo": 22,
+    "skillIds": [
+      "bio-quang-hop-co-che"
+    ],
+    "difficulty": 1,
+    "prompt": "Nguyên liệu đầu vào cho quá trình quang hợp của cây xanh gồm những chất nào sau đây?",
+    "knowledge": [
+      "kb-bio-g7-quang-hop-khai-niem"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Nước và khí Carbon dioxide (CO2)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Glucose và khí Oxygen (O2)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khí Oxygen (O2) và tinh bột"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nước và chất diệp lục"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Rễ cây hút nước từ đất và lá cây lấy một loại khí từ không khí qua khí khổng."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 22 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định nguyên liệu quang hợp",
+        "body": "Theo phương trình chữ của quang hợp: Nước + Carbon dioxide → Glucose + Oxygen."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Quang hợp cần nước (từ rễ) và CO2 (từ khí quyển qua khí khổng)."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn phương án đúng",
+        "body": "Nước và Carbon dioxide là 2 nguyên liệu trực tiếp."
+      }
+    ],
+    "finalSolution": "Quang hợp cần nước (từ rễ) và CO2 (từ khí quyển qua khí khổng).",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b02-q03",
+    "lessonId": "bio-g7-b02",
+    "sgkBaiSo": 22,
+    "skillIds": [
+      "bio-quang-hop-co-che"
+    ],
+    "difficulty": 2,
+    "prompt": "Phương trình chữ nào sau đây mô tả ĐÚNG và ĐẦY ĐỦ nhất quá trình quang hợp ở thực vật?",
+    "knowledge": [
+      "kb-bio-g7-quang-hop-khai-niem"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Nước + Carbon dioxide —(Ánh sáng / Diệp lục)→ Glucose + Oxygen"
+        },
+        {
+          "id": "opt-b",
+          "label": "Glucose + Oxygen —(Ánh sáng)→ Carbon dioxide + Nước"
+        },
+        {
+          "id": "opt-c",
+          "label": "Nước + Oxygen —(Diệp lục)→ Glucose + Carbon dioxide"
+        },
+        {
+          "id": "opt-d",
+          "label": "Carbon dioxide + Tinh bột —(Nhiệt độ)→ Nước + Oxygen"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Điều kiện diễn ra phản ứng phải có ánh sáng và diệp lục."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 22 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu câu hỏi",
+        "body": "Phương trình chữ nào sau đây mô tả ĐÚNG và ĐẦY ĐỦ nhất quá trình quang hợp ở thực vật?"
+      },
+      {
+        "kind": "equation",
+        "title": "Phương trình chữ chuẩn SGK",
+        "body": "Nước + Carbon dioxide —(Ánh sáng / Diệp lục)→ Glucose + Oxygen."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Đáp án A thể hiện đúng nguyên liệu, điều kiện và sản phẩm."
+      }
+    ],
+    "finalSolution": "Phương trình quang hợp: Nước + Carbon dioxide —(Ánh sáng / Diệp lục)→ Glucose + Oxygen.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm chiều phương trình với hô hấp tế bào (phân giải glucose)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g7-b02-q04",
+    "lessonId": "bio-g7-b02",
+    "sgkBaiSo": 22,
+    "skillIds": [
+      "bio-quang-hop-co-che"
+    ],
+    "difficulty": 2,
+    "prompt": "Đặc điểm hình thái nào của phiến lá giúp lá cây thu nhận được nhiều ánh sáng mặt trời nhất?",
+    "knowledge": [
+      "kb-bio-g7-cau-tao-la-quang-hop"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Phiến lá có dạng bản dẹt, diện tích bề mặt lớn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Phiến lá rất dày và hình trụ tròn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Phiến lá biến thành gai nhọn để cản gió"
+        },
+        {
+          "id": "opt-d",
+          "label": "Phiến lá luôn cuộn tròn kín mít"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bề mặt càng rộng và phẳng dẹt thì diện tích hứng ánh sáng càng lớn."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 22 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đặc điểm phiến lá",
+        "body": "Dạng bản dẹt, rộng giúp tối đa hóa khả năng hấp thu quang năng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Phiến lá dẹt và rộng giúp lá cây đón nhận được tối đa ánh sáng mặt trời."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là phiến lá có dạng bản dẹt, diện tích bề mặt lớn."
+      }
+    ],
+    "finalSolution": "Phiến lá dẹt và rộng giúp lá cây đón nhận được tối đa ánh sáng mặt trời.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b02-q05",
+    "lessonId": "bio-g7-b02",
+    "sgkBaiSo": 22,
+    "skillIds": [
+      "bio-quang-hop-co-che"
+    ],
+    "difficulty": 2,
+    "prompt": "Bộ phận nào trên lá cây đảm nhận chức năng điều tiết sự trao đổi khí (CO2, O2) và thoát hơi nước?",
+    "knowledge": [
+      "kb-bio-g7-cau-tao-la-quang-hop"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Khí khổng ở lớp biểu bì"
+        },
+        {
+          "id": "opt-b",
+          "label": "Mạch gỗ ở cuống lá"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mô xốp ở giữa phiến lá"
+        },
+        {
+          "id": "opt-d",
+          "label": "Lớp sáp cutin ngoài cùng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bộ phận này cấu tạo từ 2 tế bào hạt đậu có khả năng đóng và mở."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 22 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định cơ quan trao đổi khí ở lá",
+        "body": "Khí khổng nằm ở lớp biểu bì, đóng vai trò cửa ngõ cho khí CO2 đi vào và O2 cùng hơi nước đi ra."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Khí khổng ở biểu bì lá giúp điều tiết trao đổi khí và thoát hơi nước."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khí khổng là cấu trúc thực hiện điều tiết khí và thoát hơi nước."
+      }
+    ],
+    "finalSolution": "Khí khổng ở biểu bì lá giúp điều tiết trao đổi khí và thoát hơi nước.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b02-q06",
+    "lessonId": "bio-g7-b02",
+    "sgkBaiSo": 22,
+    "skillIds": [
+      "bio-quang-hop-co-che"
+    ],
+    "difficulty": 2,
+    "prompt": "Vì sao lá cây thường có màu xanh lục?",
+    "knowledge": [
+      "kb-bio-g7-quang-hop-khai-niem"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chất diệp lục trong lục lạp hấp thụ các ánh sáng màu khác nhưng không hấp thụ và phản chiếu ánh sáng màu xanh lục đến mắt ta"
+        },
+        {
+          "id": "opt-b",
+          "label": "Do tế bào lá cây chứa nhiều nước và muối khoáng màu xanh"
+        },
+        {
+          "id": "opt-c",
+          "label": "Do khí carbon dioxide trong không khí có màu xanh lục bám vào bề mặt lá"
+        },
+        {
+          "id": "opt-d",
+          "label": "Do thành tế bào cellulose của lá cây tự phát ra ánh sáng màu xanh lục"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Chất diệp lục hấp thụ mạnh ánh sáng đỏ và xanh tím, nhưng phản chiếu ánh sáng xanh lục."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 22 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu câu hỏi",
+        "body": "Vì sao lá cây thường có màu xanh lục?"
+      },
+      {
+        "kind": "knowledge",
+        "title": "Bản chất quang phổ của diệp lục",
+        "body": "Diệp lục hấp thụ ánh sáng ở vùng đỏ và xanh tím để quang hợp, còn ánh sáng xanh lục không được hấp thụ mà phản xạ lại vào mắt người quan sát."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Đáp án A giải thích chính xác hiện tượng."
+      }
+    ],
+    "finalSolution": "Chất diệp lục phản chiếu ánh sáng màu xanh lục khiến lá cây có màu xanh đặc trưng.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b02-q07",
+    "lessonId": "bio-g7-b02",
+    "sgkBaiSo": 22,
+    "skillIds": [
+      "bio-quang-hop-co-che"
+    ],
+    "difficulty": 3,
+    "prompt": "Gân lá có vai trò gì quan trọng trong hoạt động quang hợp của lá cây?",
+    "knowledge": [
+      "kb-bio-g7-cau-tao-la-quang-hop"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chứa mạch gỗ đưa nước từ rễ lên và mạch rây chuyển chất hữu cơ sau quang hợp đến các bộ phận khác"
+        },
+        {
+          "id": "opt-b",
+          "label": "Chỉ có tác dụng làm khung đỡ cơ học giúp lá không bị rách, không tham gia vận chuyển"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hấp thụ trực tiếp khí carbon dioxide và giải phóng oxygen ra ngoài"
+        },
+        {
+          "id": "opt-d",
+          "label": "Phát ra nhiệt năng sưởi ấm tế bào lá trong những ngày rét đậm"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Gân lá chứa các bó mạch dẫn (mạch gỗ và mạch rây)."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 22 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Chức năng của gân lá",
+        "body": "Gân lá vừa nâng đỡ vừa là đường cao tốc vận chuyển: mạch gỗ đưa nước/khoáng đến lục lạp; mạch rây vận chuyển đường tạo ra đi khắp cây."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Gân lá chứa mạch gỗ (cấp nước) và mạch rây (dẫn sản phẩm quang hợp)."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn phương án",
+        "body": "Đáp án A mô tả đầy đủ chức năng vận chuyển hai dòng của gân lá."
+      }
+    ],
+    "finalSolution": "Gân lá chứa mạch gỗ (cấp nước) và mạch rây (dẫn sản phẩm quang hợp).",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b02-q08",
+    "lessonId": "bio-g7-b02",
+    "sgkBaiSo": 22,
+    "skillIds": [
+      "bio-quang-hop-co-che"
+    ],
+    "difficulty": 3,
+    "prompt": "Tại sao việc trồng nhiều cây xanh trong đô thị và khu dân cư lại được ví như xây dựng những 'lá phổi xanh' bảo vệ môi trường?",
+    "knowledge": [
+      "kb-bio-g7-y-nghia-quang-hop"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vì quang hợp hấp thụ khí CO2, tạo khí O2 và lọc bớt bụi bẩn, điều hòa độ ẩm khí hậu"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vì lá cây tỏa ra khí CO2 giúp giữ ấm cho thành phố vào ban đêm"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì cây xanh thải ra chất đạm tự nhiên bón trực tiếp cho đất đô thị"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì cây xanh hút hết toàn bộ ánh sáng mặt trời làm thành phố không bị nóng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cây xanh lấy khí nhà kính CO2 và cung cấp khí O2 trong lành cho con người hô hấp."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 22 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu câu hỏi",
+        "body": "Tại sao việc trồng nhiều cây xanh trong đô thị và khu dân cư lại được ví như xây dựng những 'lá phổi xanh' bảo vệ môi trường?"
+      },
+      {
+        "kind": "knowledge",
+        "title": "Vai trò sinh thái của quang hợp",
+        "body": "Quang hợp giúp cân bằng tỉ lệ O2 và CO2 trong khí quyển, tán lá cản bụi, thoát hơi nước làm mát không khí xung quanh."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cây xanh hoạt động như lá phổi tự nhiên điều hòa không khí."
+      }
+    ],
+    "finalSolution": "Cây xanh hấp thụ CO2 và nhả O2 thông qua quang hợp, làm sạch và điều hòa không khí.",
+    "commonMistakes": []
+  }
+]

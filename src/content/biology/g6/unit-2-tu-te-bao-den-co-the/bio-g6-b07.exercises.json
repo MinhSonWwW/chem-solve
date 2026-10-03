@@ -1,0 +1,386 @@
+[
+  {
+    "id": "bio-g6-b07-q01",
+    "lessonId": "bio-g6-b07",
+    "sgkBaiSo": 22,
+    "skillIds": [
+      "bio-co-the-sinh-vat"
+    ],
+    "difficulty": 1,
+    "prompt": "Ghép nối từng hiện tượng sinh học trong thực tế (cột bên trái) với đúng quá trình sống đặc trưng tương ứng (cột bên phải):",
+    "knowledge": [
+      "bio-qua-trinh-song-co-the"
+    ],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Lá cây trinh nữ (xấu hổ) khép cụp lại khi bị ngón tay chạm vào",
+          "right": "Cảm ứng"
+        },
+        {
+          "left": "Rễ cây hút nước và muối khoáng hòa tan từ trong đất",
+          "right": "Dinh dưỡng"
+        },
+        {
+          "left": "Cây con mọc từ hạt tăng dần chiều cao và số lượng cành lá",
+          "right": "Sinh trưởng và phát triển"
+        },
+        {
+          "left": "Cơ thể người toát mồ hôi và thải nước tiểu ra ngoài",
+          "right": "Bài tiết"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Phản ứng lại tác động từ môi trường bên ngoài được gọi là cảm ứng."
+      },
+      {
+        "level": 2,
+        "text": "Tăng kích thước và khối lượng là sinh trưởng; thải chất cặn bã ra ngoài là bài tiết."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu bài tập",
+        "body": "Nhận diện 4 quá trình sống cơ bản qua các ví dụ quen thuộc trong đời sống."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Bản chất từng quá trình sống",
+        "body": "Cụp lá = phản ứng kích thích (cảm ứng); Hút nước = lấy dưỡng chất (dinh dưỡng); Tăng chiều cao = lớn lên (sinh trưởng); Toát mồ hôi/tiểu = loại bỏ cặn bã (bài tiết)."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất ghép cặp",
+        "body": "Nối chính xác 4 hiện tượng với 4 dấu hiệu sống đặc trưng."
+      }
+    ],
+    "finalSolution": "Cụp lá khi chạm: Cảm ứng; Hút nước khoáng: Dinh dưỡng; Tăng chiều cao: Sinh trưởng; Thải mồ hôi/nước tiểu: Bài tiết.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm lẫn hiện tượng cảm ứng ở cây trinh nữ với hiện tượng sinh trưởng."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b07-q02",
+    "lessonId": "bio-g6-b07",
+    "sgkBaiSo": 22,
+    "skillIds": [
+      "bio-co-the-sinh-vat"
+    ],
+    "difficulty": 2,
+    "prompt": "Phân loại các sinh vật sau vào hai nhóm: 'Sinh vật đơn bào' và 'Sinh vật đa bào':",
+    "knowledge": [
+      "bio-sinh-vat-don-bao",
+      "bio-sinh-vat-da-bao"
+    ],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        {
+          "id": "b-unicellular",
+          "label": "Sinh vật đơn bào (1 tế bào)"
+        },
+        {
+          "id": "b-multicellular",
+          "label": "Sinh vật đa bào (Nhiều tế bào)"
+        }
+      ],
+      "items": [
+        {
+          "id": "it-1",
+          "label": "Trùng roi xanh",
+          "bucketId": "b-unicellular"
+        },
+        {
+          "id": "it-2",
+          "label": "Trùng giày (Paramecium)",
+          "bucketId": "b-unicellular"
+        },
+        {
+          "id": "it-3",
+          "label": "Vi khuẩn E. coli",
+          "bucketId": "b-unicellular"
+        },
+        {
+          "id": "it-4",
+          "label": "Tảo lục đơn bào",
+          "bucketId": "b-unicellular"
+        },
+        {
+          "id": "it-5",
+          "label": "Cây xoài",
+          "bucketId": "b-multicellular"
+        },
+        {
+          "id": "it-6",
+          "label": "Con cá chép",
+          "bucketId": "b-multicellular"
+        },
+        {
+          "id": "it-7",
+          "label": "Con người",
+          "bucketId": "b-multicellular"
+        },
+        {
+          "id": "it-8",
+          "label": "Nấm rơm",
+          "bucketId": "b-multicellular"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Các vi sinh vật bơi trong nước ao hồ hoặc vi khuẩn chỉ có 1 tế bào duy nhất."
+      },
+      {
+        "level": 2,
+        "text": "Cây cối, động vật lớn và nấm rơm cấu tạo từ hàng triệu tế bào."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân loại sinh vật",
+        "body": "Xếp 8 loài sinh vật vào 2 nhóm cấu tạo số lượng tế bào."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu từng đại diện",
+        "body": "Trùng roi, trùng giày, E. coli, tảo lục là đơn bào. Cây xoài, cá chép, con người, nấm rơm là đa bào."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất phân loại",
+        "body": "4 sinh vật đơn bào và 4 sinh vật đa bào được xếp chính xác."
+      }
+    ],
+    "finalSolution": "Sinh vật đơn bào: Trùng roi xanh, Trùng giày, Vi khuẩn E. coli, Tảo lục đơn bào. Sinh vật đa bào: Cây xoài, Con cá chép, Con người, Nấm rơm.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Nghĩ rằng nấm rơm là sinh vật đơn bào vì nấm thuộc nhóm nấm (thực tế nấm rơm là nấm thể quả đa bào phức tạp)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b07-q03",
+    "lessonId": "bio-g6-b07",
+    "sgkBaiSo": 22,
+    "skillIds": [
+      "bio-co-the-sinh-vat"
+    ],
+    "difficulty": 1,
+    "prompt": "Điểm giống nhau cơ bản và cốt lõi nhất giữa một sinh vật đơn bào và một sinh vật đa bào là gì?",
+    "knowledge": [
+      "bio-qua-trinh-song-co-the"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Đều là cơ thể sống hoàn chỉnh có khả năng thực hiện đầy đủ các quá trình sống cơ bản"
+        },
+        {
+          "id": "opt-b",
+          "label": "Đều có hệ tuần hoàn và hệ hô hấp chuyên biệt phức tạp"
+        },
+        {
+          "id": "opt-c",
+          "label": "Đều có kích thước cơ thể lớn nhìn thấy được bằng mắt thường"
+        },
+        {
+          "id": "opt-d",
+          "label": "Đều có số lượng tế bào bằng nhau"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Dù chỉ là 1 tế bào hay hàng tỷ tế bào, cả hai đều là 'cơ thể sống'."
+      },
+      {
+        "level": 2,
+        "text": "Cơ thể sống thì phải thực hiện được các quá trình trao đổi chất, hô hấp, lớn lên và sinh sản."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "So sánh bản chất sống",
+        "body": "Tìm đặc tính chung nhất giữa sinh vật đơn bào và đa bào."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Bản chất của một cơ thể sinh vật",
+        "body": "Đơn bào và đa bào đều là những cá thể độc lập có khả năng thực hiện toàn vẹn các chức năng sống: dinh dưỡng, hô hấp, bài tiết, cảm ứng, sinh trưởng và duy trì nòi giống."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn phương án đúng",
+        "body": "Lựa chọn chính xác là câu trả lời chuẩn xác nhất."
+      }
+    ],
+    "finalSolution": "Cả sinh vật đơn bào và đa bào đều là các cơ thể sống độc lập có đầy đủ các quá trình sống đặc trưng để tồn tại và phát triển trong tự nhiên.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nghĩ rằng sinh vật đơn bào chưa phải là một cơ thể sống hoàn chỉnh."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b07-q04",
+    "lessonId": "bio-g6-b07",
+    "sgkBaiSo": 22,
+    "skillIds": [
+      "bio-co-the-sinh-vat"
+    ],
+    "difficulty": 2,
+    "prompt": "Tại sao một tế bào hồng cầu trong máu của người KHÔNG được coi là một cơ thể sinh vật đơn bào độc lập?",
+    "knowledge": [
+      "bio-sinh-vat-don-bao",
+      "bio-sinh-vat-da-bao"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vì tế bào hồng cầu không chứa màng sinh chất"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vì tế bào hồng cầu có kích thước quá lớn so với vi khuẩn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì tế bào hồng cầu chỉ là một bộ phận chuyên hóa phụ thuộc, không thể tự thực hiện mọi chức năng sống độc lập ngoài cơ thể"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì tế bào hồng cầu có màu đỏ"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Một sinh vật đơn bào phải tự kiếm ăn, tự phân chia sinh sản độc lập ngoài tự nhiên."
+      },
+      {
+        "level": 2,
+        "text": "Hồng cầu là tế bào biệt hóa trong cơ thể đa bào, mất nhân ở người và không thể tự sinh sản."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích điều kiện của một cơ thể độc lập",
+        "body": "Giải thích vì sao tế bào của cơ thể đa bào không phải là sinh vật đơn bào."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tính toàn vẹn của cơ thể sinh vật",
+        "body": "Sinh vật đơn bào là một cơ thể độc lập tự thực hiện 6 quá trình sống. Tế bào hồng cầu chỉ là một tế bào chuyên trách vận chuyển O2 trong mô máu, phụ thuộc hoàn toàn vào cơ thể người và không thể tự sống hay sinh sản độc lập."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án đúng",
+        "body": "Đáp án A giải thích chuẩn xác bản chất sinh học."
+      }
+    ],
+    "finalSolution": "Tế bào hồng cầu chỉ là một tế bào chuyên hóa thuộc mô máu của cơ thể đa bào, phụ thuộc vào hệ cơ quan và không có khả năng tự tồn tại, sinh sản độc lập như sinh vật đơn bào.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Nghĩ rằng bất cứ tế bào nào đứng riêng lẻ cũng là một sinh vật đơn bào."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b07-q05",
+    "lessonId": "bio-g6-b07",
+    "sgkBaiSo": 22,
+    "skillIds": [
+      "bio-co-the-sinh-vat"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về cơ thể sinh vật:",
+    "knowledge": [
+      "bio-qua-trinh-song-co-the",
+      "bio-sinh-vat-don-bao",
+      "bio-sinh-vat-da-bao"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Sinh vật đơn bào tuy chỉ có 1 tế bào nhưng vẫn có khả năng cảm ứng và sinh sản.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Cơ thể sinh vật đa bào chỉ gồm các tế bào có cấu tạo và chức năng hoàn toàn giống hệt nhau.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Quá trình hô hấp giúp sinh vật hấp thụ oxygen để phân giải chất hữu cơ giải phóng năng lượng.",
+          "correct": true
+        },
+        {
+          "id": "st-4",
+          "text": "Vật không sống như hòn đá hay nước suối cũng có khả năng tự sinh sản tạo ra cá thể con.",
+          "correct": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trùng roi bơi về phía có ánh sáng là biểu hiện của tính cảm ứng ở sinh vật đơn bào."
+      },
+      {
+        "level": 2,
+        "text": "Ở cơ thể đa bào, tế bào phân hóa thành hàng trăm loại tế bào khác nhau: hồng cầu, cơ, xương, thần kinh..."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Đánh giá từng câu về đặc tính của cơ thể sống và cấu trúc tế bào."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra từng ý",
+        "body": "1. Đơn bào có cảm ứng/sinh sản: Đúng. 2. Đa bào tế bào giống hệt nhau: Sai (phân hóa đa dạng). 3. Hô hấp tạo năng lượng: Đúng. 4. Hòn đá tự sinh sản: Sai (vật không sống)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Ý 1: Đúng; Ý 2: Sai; Ý 3: Đúng; Ý 4: Sai."
+      }
+    ],
+    "finalSolution": "Phát biểu 1 và 3 đúng. Phát biểu 2 sai (tế bào trong cơ thể đa bào phân hóa chuyên trách). Phát biểu 4 sai (vật không sống không có khả năng sinh sản).",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng sinh vật đơn bào không có hệ thần kinh nên không thể có tính cảm ứng."
+      }
+    ]
+  }
+]

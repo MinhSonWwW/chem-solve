@@ -130,22 +130,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Ampe kế có GHĐ 0,2 A"
+          "label": "Ampe kế có GHĐ 0,6 A (hoặc 1 A)"
         },
         {
           "id": "opt-b",
-          "label": "Ampe kế có GHĐ 100 mA"
+          "label": "Ampe kế có GHĐ 0,2 A"
         },
         {
           "id": "opt-c",
-          "label": "Ampe kế có GHĐ 0,6 A (hoặc 1 A)"
+          "label": "Ampe kế có GHĐ 100 mA"
         },
         {
           "id": "opt-d",
           "label": "Ampe kế có GHĐ 50 A"
         }
       ],
-      "correctId": "opt-c"
+      "correctId": "opt-a"
     },
     "hints": [
       {
@@ -199,22 +199,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Đã mắc ngược hai chốt (+) và (-) của vôn kế; cần ngắt khóa K ngay và đổi chỗ hai đầu dây cắm"
-        },
-        {
-          "id": "opt-b",
           "label": "Hiệu điện thế quá lớn làm hỏng vôn kế; cần thay viên pin khác có số vôn gấp đôi"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Bóng đèn đang phát sáng quá mạnh khiến vôn kế bị lóa"
+        },
+        {
+          "id": "opt-c",
+          "label": "Đã mắc ngược hai chốt (+) và (-) của vôn kế; cần ngắt khóa K ngay và đổi chỗ hai đầu dây cắm"
         },
         {
           "id": "opt-d",
           "label": "Dây dẫn bị đứt ở bên trong; cần thay toàn bộ dây dẫn mới"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -268,11 +268,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Mạch bị hở do tiếp xúc chỗ cắm dây bị lỏng hoặc dây tóc bóng đèn đã bị đứt"
+          "label": "Hiệu điện thế của pin quá lớn làm kim ampe kế bị kẹt"
         },
         {
           "id": "opt-b",
-          "label": "Hiệu điện thế của pin quá lớn làm kim ampe kế bị kẹt"
+          "label": "Mạch bị hở do tiếp xúc chỗ cắm dây bị lỏng hoặc dây tóc bóng đèn đã bị đứt"
         },
         {
           "id": "opt-c",
@@ -283,7 +283,7 @@
           "label": "Ampe kế có điện trở bằng 0 nên không cho dòng điện chạy qua"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -337,22 +337,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Mắt đặt nhìn vuông góc với mặt bảng chia độ tại vị trí kim chỉ thị"
-        },
-        {
-          "id": "opt-b",
           "label": "Nhìn nghiêng từ dưới lên trên qua mặt kính"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Mắt nhìn chếch từ bên trái sang một góc 45 độ"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "Mắt nhìn chếch từ bên phải sang một góc 45 độ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Mắt đặt nhìn vuông góc với mặt bảng chia độ tại vị trí kim chỉ thị"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -465,22 +465,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Hiệu điện thế tăng lên bao nhiêu lần thì cường độ dòng điện giảm đi bấy nhiêu lần"
+          "label": "Khi hiệu điện thế giữa hai đầu bóng đèn càng lớn thì cường độ dòng điện qua đèn càng lớn và đèn sáng càng mạnh"
         },
         {
           "id": "opt-b",
-          "label": "Đèn chỉ sáng khi cường độ dòng điện bằng đúng 0 ampe"
+          "label": "Hiệu điện thế tăng lên bao nhiêu lần thì cường độ dòng điện giảm đi bấy nhiêu lần"
         },
         {
           "id": "opt-c",
-          "label": "Khi hiệu điện thế giữa hai đầu bóng đèn càng lớn thì cường độ dòng điện qua đèn càng lớn và đèn sáng càng mạnh"
+          "label": "Đèn chỉ sáng khi cường độ dòng điện bằng đúng 0 ampe"
         },
         {
           "id": "opt-d",
           "label": "Cường độ dòng điện qua đèn luôn không đổi dù hiệu điện thế nguồn thay đổi thế nào"
         }
       ],
-      "correctId": "opt-c"
+      "correctId": "opt-a"
     },
     "hints": [
       {

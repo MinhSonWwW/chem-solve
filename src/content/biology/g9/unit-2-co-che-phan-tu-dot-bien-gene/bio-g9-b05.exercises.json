@@ -1,0 +1,260 @@
+[
+  {
+    "id": "bio-g9-b05-q01",
+    "lessonId": "bio-g9-b05",
+    "sgkBaiSo": 40,
+    "skillIds": ["bio9-dich-ma-protein"],
+    "difficulty": 1,
+    "prompt": "Mã di truyền có bản chất là mã bộ ba. Điều này có nghĩa là gì?",
+    "knowledge": ["kb-bio-g9-ma-di-truyen-dac-diem"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Cứ 3 nucleotide kế tiếp nhau trên gen (hoặc trên mRNA) quy định 1 amino acid trong chuỗi polypeptide" },
+        { "id": "opt-b", "label": "Một nucleotide quy định 3 amino acid khác nhau trong tế bào" },
+        { "id": "opt-c", "label": "Một phân tử protein chỉ được cấu tạo từ đúng 3 loại amino acid" },
+        { "id": "opt-d", "label": "Quá trình dịch mã diễn ra lặp lại đúng 3 lần trên mỗi ribosome" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Chữ 'bộ ba' (triplet) chỉ số lượng các nucleotide đứng liền kề nhau để tạo thành một đơn vị mã hóa." },
+      { "level": 2, "text": "Có 4 loại nucleotide xếp thành các tổ hợp 3 nucleotide tạo ra 4^3 = 64 bộ ba khác nhau." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Khái niệm mã bộ ba", "body": "Vì có 20 loại amino acid nhưng chỉ có 4 loại nucleotide, nên cần ít nhất 3 nucleotide đứng liền kề (4^3 = 64) để mã hóa đủ cho 20 loại amino acid." },
+      { "kind": "knowledge", "title": "Định nghĩa mã di truyền", "body": "Mã bộ ba quy ước rằng cứ 3 nucleotide đứng liên tiếp trên mạch mã hóa quy định 1 amino acid trong chuỗi polypeptide." },
+      { "kind": "answer", "title": "Kết luận", "body": "Cứ 3 nucleotide kế tiếp nhau trên gen (hoặc trên mRNA) quy định 1 amino acid trong protein." }
+    ],
+    "finalSolution": "Mã bộ ba có nghĩa là cứ 3 nucleotide đứng liền kề nhau trên mRNA quy định vị trí của 1 amino acid trong chuỗi polypeptide.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Hiểu nhầm là 1 nucleotide quy định 3 amino acid hoặc gen chỉ có 3 nucleotide." }
+    ]
+  },
+  {
+    "id": "bio-g9-b05-q02",
+    "lessonId": "bio-g9-b05",
+    "sgkBaiSo": 40,
+    "skillIds": ["bio9-dich-ma-protein"],
+    "difficulty": 1,
+    "prompt": "Trong tổng số 64 bộ ba (codon) trên phân tử mRNA, có bao nhiêu bộ ba đóng vai trò là 'bộ ba kết thúc' dịch mã và chúng có mã hóa amino acid nào không?",
+    "knowledge": ["kb-bio-g9-codon-khoi-dau-ket-thuc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Có 3 bộ ba kết thúc (UAA, UAG, UGA) và chúng không mã hóa cho amino acid nào" },
+        { "id": "opt-b", "label": "Có 1 bộ ba kết thúc (AUG) và nó mã hóa cho amino acid Methionine" },
+        { "id": "opt-c", "label": "Có 4 bộ ba kết thúc và mỗi bộ ba mã hóa cho 1 amino acid đặc biệt" },
+        { "id": "opt-d", "label": "Có 3 bộ ba kết thúc và chúng mã hóa cho cả 20 loại amino acid" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Bộ ba kết thúc phát tín hiệu cho ribosome ngừng tổng hợp protein." },
+      { "level": 2, "text": "Ba bộ ba này gồm: UAA, UAG, UGA; vì không có tRNA tương ứng nên chúng không mang amino acid nào." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại 64 bộ ba trên mRNA", "body": "Trong 64 bộ ba codon, có 61 bộ ba mã hóa amino acid và 3 bộ ba làm tín hiệu dừng dịch mã." },
+      { "kind": "knowledge", "title": "Đặc điểm bộ ba kết thúc", "body": "Ba bộ ba kết thúc là UAA, UAG và UGA. Chúng đóng vai trò báo hiệu ribosome ngừng dịch mã và hoàn toàn không mã hóa cho bất kì amino acid nào." },
+      { "kind": "answer", "title": "Kết luận", "body": "Có 3 bộ ba kết thúc (UAA, UAG, UGA) và không mã hóa amino acid." }
+    ],
+    "finalSolution": "Trên phân tử mRNA có 3 bộ ba kết thúc (UAA, UAG, UGA) đóng vai trò là tín hiệu dừng dịch mã và không mã hóa amino acid.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn AUG là bộ ba kết thúc (AUG thực chất là bộ ba mở đầu mã hóa Methionine)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b05-q03",
+    "lessonId": "bio-g9-b05",
+    "sgkBaiSo": 40,
+    "skillIds": ["bio9-dich-ma-protein"],
+    "difficulty": 2,
+    "prompt": "Hiện tượng 'nhiều bộ ba khác nhau cùng mã hóa cho một loại amino acid' (ví dụ có 6 bộ ba khác nhau cùng mã hóa cho Leucine) thể hiện đặc tính nào của mã di truyền?",
+    "knowledge": ["kb-bio-g9-ma-di-truyen-dac-diem"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tính thoái hóa (tính dư thừa) của mã di truyền" },
+        { "id": "opt-b", "label": "Tính đặc hiệu của mã di truyền" },
+        { "id": "opt-c", "label": "Tính phổ biến của mã di truyền" },
+        { "id": "opt-d", "label": "Tính độc lập của mã di truyền" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Vì có tới 61 bộ ba mã hóa nhưng chỉ có 20 loại amino acid, nên số lượng bộ ba phong phú hơn số amino acid." },
+      { "level": 2, "text": "Hiện tượng 'nhiều mã hóa cho một' trong sinh học phân tử được gọi là tính thoái hóa." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xem xét các đặc điểm của mã di truyền", "body": "Mã di truyền có 3 đặc tính then chốt: tính phổ biến, tính đặc hiệu và tính thoái hóa." },
+      { "kind": "knowledge", "title": "Định nghĩa tính thoái hóa", "body": "Tính đặc hiệu là 1 bộ ba chỉ mã hóa 1 amino acid. Tính thoái hóa là nhiều bộ ba khác nhau cùng quy định 1 loại amino acid. Tính phổ biến là mọi loài dùng chung bộ mã." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hiện tượng trên chính là tính thoái hóa của mã di truyền." }
+    ],
+    "finalSolution": "Nhiều bộ ba khác nhau cùng mã hóa cho một loại amino acid là biểu hiện của tính thoái hóa (tính dư thừa) của mã di truyền.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm tính thoái hóa với tính đặc hiệu (tính đặc hiệu là 1 bộ ba chỉ mã hóa duy nhất 1 amino acid)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b05-q04",
+    "lessonId": "bio-g9-b05",
+    "sgkBaiSo": 40,
+    "skillIds": ["bio9-dich-ma-protein"],
+    "difficulty": 1,
+    "prompt": "Quá trình dịch mã tổng hợp protein diễn ra tại vị trí nào trong tế bào và đòi hỏi sự tham gia của các thành phần chủ yếu nào?",
+    "knowledge": ["kb-bio-g9-dich-ma-khai-niem-vi-tri"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Diễn ra tại tế bào chất trên bào quan ribosome, với sự tham gia của mRNA, tRNA mang amino acid và năng lượng ATP" },
+        { "id": "opt-b", "label": "Diễn ra trong nhân tế bào trên các nhiễm sắc thể, với sự tham gia của enzyme DNA polymerase" },
+        { "id": "opt-c", "label": "Diễn ra trên màng nhân tế bào, chỉ cần phân tử DNA mẹ và các nucleotide tự do" },
+        { "id": "opt-d", "label": "Diễn ra bên trong không bào thực vật, chỉ cần các amino acid tự do hòa tan" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Ribosome được ví như những 'nhà máy sinh tổng hợp protein' nằm rải rác trong tế bào chất." },
+      { "level": 2, "text": "Cần khuôn mẫu mRNA mang thông tin, tRNA đóng vai trò xe vận chuyển amino acid đến lắp ráp." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Vị trí của quá trình dịch mã", "body": "Sau khi mRNA được tổng hợp trong nhân, nó đi qua lỗ màng nhân ra tế bào chất để gặp ribosome tiến hành dịch mã." },
+      { "kind": "knowledge", "title": "Các thành phần cốt lõi", "body": "Quá trình dịch mã cần có: ribosome, mạch khuôn mRNA, các phức hệ tRNA mang amino acid, năng lượng ATP và các enzyme xúc tác gắn liên kết peptide." },
+      { "kind": "answer", "title": "Kết luận", "body": "Diễn ra tại tế bào chất trên bào quan ribosome, cần mRNA, tRNA và năng lượng ATP." }
+    ],
+    "finalSolution": "Quá trình dịch mã diễn ra ở tế bào chất trên bào quan ribosome, cần khuôn mẫu mRNA, các phân tử tRNA mang amino acid tự do và năng lượng ATP.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Tưởng rằng dịch mã diễn ra trong nhân tế bào cùng với tái bản và phiên mã." }
+    ]
+  },
+  {
+    "id": "bio-g9-b05-q05",
+    "lessonId": "bio-g9-b05",
+    "sgkBaiSo": 40,
+    "skillIds": ["bio9-dich-ma-protein"],
+    "difficulty": 2,
+    "prompt": "Một codon trên phân tử mRNA có trình tự là 5'-G-C-A-3'. Bộ ba đối mã (anticodon) tương ứng trên phân tử tRNA mang amino acid đến khớp với codon này có trình tự là gì?",
+    "knowledge": ["kb-bio-g9-dien-bien-dich-ma"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "3'-C-G-U-5'" },
+        { "id": "opt-b", "label": "3'-C-G-T-5'" },
+        { "id": "opt-c", "label": "5'-C-G-U-3'" },
+        { "id": "opt-d", "label": "3'-G-C-A-5'" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Anticodon trên tRNA khớp bổ sung với codon trên mRNA theo nguyên tắc: G liên kết với C, C liên kết với G, A liên kết với U." },
+      { "level": 2, "text": "Hai mạch đối song song nên nếu codon có chiều 5' → 3' thì anticodon phải có chiều 3' → 5'." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định nguyên tắc khớp mã", "body": "Khớp mã giữa codon (mRNA) và anticodon (tRNA) tuân thủ nguyên tắc bổ sung đối song song." },
+      { "kind": "compute", "title": "Áp dụng NTBS", "body": "Codon: 5'-G-C-A-3'. Đối mã bổ sung: G khớp C, C khớp G, A khớp U. Chiều đối song song tương ứng là 3'-C-G-U-5'." },
+      { "kind": "answer", "title": "Kết luận", "body": "Trình tự anticodon là 3'-C-G-U-5'." }
+    ],
+    "finalSolution": "Theo nguyên tắc bổ sung đối song song giữa codon và anticodon, bộ ba 5'-G-C-A-3' trên mRNA khớp với bộ ba đối mã 3'-C-G-U-5' trên tRNA.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Viết base T trên tRNA (tRNA là một loại RNA nên không chứa thymine, chỉ chứa uracil)." },
+      { "id": "cm-02", "message": "Quên chiều phân tử, viết 5'-C-G-U-3' thay vì 3'-C-G-U-5'." }
+    ]
+  },
+  {
+    "id": "bio-g9-b05-q06",
+    "lessonId": "bio-g9-b05",
+    "sgkBaiSo": 40,
+    "skillIds": ["bio9-dich-ma-protein"],
+    "difficulty": 2,
+    "prompt": "Một phân tử mRNA có vùng mã hóa gồm 300 ribonucleotide (tính từ codon mở đầu đến hết codon kết thúc). Chuỗi polypeptide hoàn chỉnh sau khi được cắt bỏ amino acid mở đầu có chứa bao nhiêu amino acid?",
+    "knowledge": ["kb-bio-g9-dien-bien-dich-ma"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "98 amino acid" },
+        { "id": "opt-b", "label": "99 amino acid" },
+        { "id": "opt-c", "label": "100 amino acid" },
+        { "id": "opt-d", "label": "300 amino acid" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Mỗi bộ ba codon gồm 3 nucleotide quy định 1 vị trí mã hóa: 300 / 3 = 100 codon." },
+      { "level": 2, "text": "Codon kết thúc không mã hóa amino acid (-1) và sau khi tổng hợp xong, amino acid mở đầu (Methionine) bị enzyme cắt bỏ (-1)." }
+    ],
+    "steps": [
+      { "kind": "compute", "title": "Tính tổng số bộ ba codon", "body": "Số bộ ba trên vùng mã hóa của mRNA = 300 / 3 = 100 bộ ba." },
+      { "kind": "compute", "title": "Tính số amino acid chuỗi polypeptide sơ cấp", "body": "Trong 100 bộ ba có 1 bộ ba kết thúc không mã hóa amino acid. Do đó chuỗi polypeptide sơ cấp có: 100 - 1 = 99 amino acid." },
+      { "kind": "answer", "title": "Tính số amino acid trong chuỗi hoàn chỉnh", "body": "Chuỗi polypeptide hoàn chỉnh sau khi enzyme cắt bỏ amino acid mở đầu (Met) còn lại: 99 - 1 = 98 amino acid." }
+    ],
+    "finalSolution": "Số codon là 300 / 3 = 100 bộ ba. Trừ 1 codon kết thúc còn 99 aa (chuỗi sơ cấp). Cắt tiếp amino acid mở đầu ta được: 99 - 1 = 98 amino acid trong chuỗi protein hoàn chỉnh.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Quên trừ amino acid mở đầu bị cắt bỏ, chọn 99 amino acid." },
+      { "id": "cm-02", "message": "Quên trừ codon kết thúc không mã hóa, chọn 100 amino acid." }
+    ]
+  },
+  {
+    "id": "bio-g9-b05-q07",
+    "lessonId": "bio-g9-b05",
+    "sgkBaiSo": 40,
+    "skillIds": ["bio9-dich-ma-protein"],
+    "difficulty": 1,
+    "prompt": "Sơ đồ nào sau đây phản ánh đúng cơ chế truyền đạt thông tin di truyền trung tâm (Central Dogma) từ gene đến tính trạng?",
+    "knowledge": ["kb-bio-g9-central-dogma-so-do"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Gene (DNA) → mRNA → Protein → Tính trạng" },
+        { "id": "opt-b", "label": "Gene (DNA) → Protein → mRNA → Tính trạng" },
+        { "id": "opt-c", "label": "Protein → Gene (DNA) → mRNA → Tính trạng" },
+        { "id": "opt-d", "label": "mRNA → Gene (DNA) → Protein → Tính trạng" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Thông tin từ trong nhân tế bào (gen) được phiên mã thành phân tử trung gian ra tế bào chất trước khi tạo protein." },
+      { "level": 2, "text": "Phân tử trung gian là mRNA, sau đó dịch mã tạo chuỗi protein quy định tính trạng." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Bản chất dòng thông tin di truyền", "body": "Thông tin di truyền được lưu trữ trong gen (DNA) trong nhân tế bào, không trực tiếp đi ra tế bào chất làm khuôn." },
+      { "kind": "knowledge", "title": "Các bước truyền đạt", "body": "Bước 1: Phiên mã từ Gene tạo mRNA mang bản sao thông tin. Bước 2: Dịch mã từ mRNA tạo chuỗi Protein. Bước 3: Protein thực hiện chức năng sinh học biểu hiện thành Tính trạng." },
+      { "kind": "answer", "title": "Kết luận", "body": "Sơ đồ chuẩn mực: Gene (DNA) → mRNA → Protein → Tính trạng." }
+    ],
+    "finalSolution": "Cơ chế truyền đạt thông tin di truyền trung tâm: Gene (DNA) → mRNA → Protein → Tính trạng.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Đảo vị trí protein và mRNA, cho rằng DNA tạo trực tiếp protein rồi mới sinh mRNA." }
+    ]
+  },
+  {
+    "id": "bio-g9-b05-q08",
+    "lessonId": "bio-g9-b05",
+    "sgkBaiSo": 40,
+    "skillIds": ["bio9-dich-ma-protein"],
+    "difficulty": 2,
+    "prompt": "Bệnh bạch tạng ở người (da trắng, tóc trắng, mắt hồng nhạt) do gen lặn đột biến quy định. Bằng cơ chế từ gene đến tính trạng, nguyên nhân sâu xa của bệnh này là gì?",
+    "knowledge": ["kb-bio-g9-central-dogma-so-do"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Gene bị đột biến làm phân tử protein enzyme tyrosinase mất chức năng, không tổng hợp được sắc tố melanin tạo màu da và tóc" },
+        { "id": "opt-b", "label": "Gene bị mất đoạn khiến cơ thể mất khả năng hấp thụ ánh sáng mặt trời qua da" },
+        { "id": "opt-c", "label": "Tế bào thiếu ribosome nên không thể dịch mã bất kì phân tử protein nào trong cơ thể" },
+        { "id": "opt-d", "label": "Các amino acid trong tế bào bị biến đổi hóa học làm trắng toàn bộ các mô cơ quan" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Màu đen của tóc và màu nâu của da người là do loại sắc tố melanin tạo thành." },
+      { "level": 2, "text": "Gene mã hóa enzyme xúc tác tổng hợp melanin bị đột biến dẫn tới mất enzyme này." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích tính trạng bệnh bạch tạng", "body": "Người bệnh bạch tạng thiếu hụt hoàn toàn sắc tố tạo màu (melanin) trên toàn bộ cơ thể." },
+      { "kind": "knowledge", "title": "Cơ chế phân tử của bệnh", "body": "Gen bình thường mã hóa enzyme tyrosinase xúc tác chuyển hóa tyrosine thành sắc tố melanin. Khi gen lặn bị đột biến, mRNA phiên mã bị lỗi dẫn đến protein enzyme mất chức năng sinh học, không tạo được melanin." },
+      { "kind": "answer", "title": "Kết luận", "body": "Gene đột biến làm mất chức năng của protein enzyme tổng hợp sắc tố melanin." }
+    ],
+    "finalSolution": "Gen bị đột biến dẫn đến tổng hợp protein enzyme tyrosinase mất hoạt tính, không thể tổng hợp được sắc tố melanin, biểu hiện thành tính trạng bạch tạng.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng bệnh do tác động thuần túy của môi trường hay thiếu hụt toàn bộ ribosome." }
+    ]
+  }
+]

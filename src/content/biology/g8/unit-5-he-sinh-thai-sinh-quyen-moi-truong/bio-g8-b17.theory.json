@@ -1,0 +1,72 @@
+{
+  "lessonId": "bio-g8-b17",
+  "nodeId": "bio-g8-b17-theory",
+  "title": "Lý thuyết: Trạng thái cân bằng tự nhiên trong hệ sinh thái",
+  "subtitle": "Bài 46 SGK KHTN 8 Kết nối tri thức: Khái niệm cân bằng tự nhiên, cơ chế tự điều chỉnh, nguyên nhân gây mất cân bằng và biện pháp bảo vệ",
+  "sgkBaiSo": 46,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Khái niệm",
+      "badgeColor": "emerald",
+      "title": "Cân bằng tự nhiên là gì?",
+      "content": "Cân bằng tự nhiên là trạng thái ổn định vốn có của hệ sinh thái:",
+      "bulletPoints": [
+        "Định nghĩa: Cân bằng tự nhiên là trạng thái ổn định của hệ sinh thái, trong đó số lượng cá thể của các quần thể sinh vật được duy trì ở mức độ phù hợp với khả năng cung cấp của nguồn sống (thức ăn, nơi ở...).",
+        "Biểu hiện: Thành phần loài trong quần xã được ổn định, số lượng cá thể mỗi loài dao động trong giới hạn nhất định, chu trình tuần hoàn vật chất và dòng năng lượng diễn ra nhịp nhàng.",
+        "Cân bằng động: Cân bằng tự nhiên không phải là một trạng thái đứng yên cố định mà là 'cân bằng động', các chỉ số số lượng luôn dao động lên xuống nhịp nhàng quanh một vị trí cân bằng ổn định."
+      ],
+      "callout": "Hệ sinh thái càng có độ đa dạng loài phong phú thì khả năng tự điều chỉnh duy trì cân bằng tự nhiên càng bền vững!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Cơ chế",
+      "badgeColor": "amber",
+      "title": "Cơ chế tự điều chỉnh của hệ sinh thái",
+      "content": "Hệ thống tự cân bằng thông qua mạng lưới quan hệ sinh thái:",
+      "bulletPoints": [
+        "Khống chế sinh học: Số lượng con mồi (ví dụ: chuột đồng) tăng lên kéo theo số lượng thú ăn thịt (cú mèo, rắn) tăng theo; kẻ săn mồi tăng sẽ săn bắt nhiều chuột làm số lượng chuột giảm xuống; thức ăn cạn làm số thú săn mồi giảm lại, đưa hệ sinh thái về trạng thái cân bằng.",
+        "Cơ chế điều hòa mật độ: Khi mật độ một quần thể tăng quá cao, nguồn sống khan hiếm dẫn tới cạnh tranh gay gắt làm giảm mức sinh sản và tăng mức tử vong, di cư để hạ mật độ về mức an toàn."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Nguyên nhân & Giải pháp",
+      "badgeColor": "cyan",
+      "title": "Mất cân bằng tự nhiên & Hành động bảo vệ",
+      "content": "Bảo vệ hệ sinh thái trước các nguy cơ phá vỡ cân bằng:",
+      "bulletPoints": [
+        "Nguyên nhân tự nhiên: Thiên tai dữ dội như động đất, núi lửa phun trào, bão lớn, hạn hán kéo dài và cháy rừng tự nhiên.",
+        "Nguyên nhân nhân tạo (chủ yếu): Nạn chặt phá rừng đầu nguồn bừa bãi, săn bắt tận diệt động vật hoang dã, xả chất thải gây ô nhiễm môi trường và du nhập các loài sinh vật ngoại lai xâm hại (ốc bươu vàng, rùa tai đỏ, cây mai dương).",
+        "Biện pháp bảo vệ: Tích cực bảo vệ và trồng thêm rừng, thành lập các khu bảo tồn thiên nhiên, sử dụng hợp lí tài nguyên thiên nhiên và kiểm soát chặt chẽ sinh vật ngoại lai."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Nhận định nào sau đây mô tả ĐÚNG NHẤT về bản chất của trạng thái cân bằng tự nhiên trong hệ sinh thái?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Là trạng thái cân bằng động, số lượng cá thể luôn dao động nhịp nhàng quanh một mức ổn định phù hợp với nguồn sống",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Là trạng thái tĩnh tuyệt đối, số lượng cá thể của các loài không bao giờ thay đổi dù chỉ một cá thể",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Là trạng thái chỉ có duy nhất một loài sinh vật sản xuất tồn tại mà không cần các loài sinh vật tiêu thụ",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Là trạng thái mà năng lượng truyền qua các bậc dinh dưỡng không hề bị tiêu hao hay thất thoát",
+        "correct": false
+      }
+    ],
+    "explanation": "Cân bằng tự nhiên là trạng thái cân bằng động (dynamic equilibrium): số lượng cá thể của các quần thể không cố định tuyệt đối mà liên tục dao động nhịp nhàng tăng giảm quanh một ngưỡng cân bằng nhờ cơ chế tự điều chỉnh sinh thái."
+  }
+}

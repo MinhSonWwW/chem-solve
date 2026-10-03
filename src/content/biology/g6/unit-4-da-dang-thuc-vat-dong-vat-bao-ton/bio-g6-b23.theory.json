@@ -1,0 +1,86 @@
+{
+  "lessonId": "bio-g6-b23",
+  "nodeId": "bio-g6-b23-theory",
+  "title": "Lý thuyết: Đa dạng sinh học",
+  "subtitle": "Bài 38 SGK KHTN 6 Kết nối tri thức: Giá trị của sự đa dạng loài, nguyên nhân suy giảm và các biện pháp bảo tồn cấp thiết",
+  "sgkBaiSo": 38,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Khái niệm",
+      "badgeColor": "emerald",
+      "title": "Đa dạng sinh học là gì?",
+      "content": "Đa dạng sinh học biểu thị sự phong phú của thế giới sống:",
+      "bulletPoints": [
+        "Khái niệm: Đa dạng sinh học là sự phong phú về số lượng loài, số lượng cá thể trong mỗi loài và sự đa dạng của các hệ sinh thái trên Trái Đất.",
+        "Việt Nam là cái nôi đa dạng: Thuộc top 16 quốc gia có tính đa dạng sinh học cao nhất thế giới với nhiều loài đặc hữu quý hiếm như Sao la (Kỳ lân châu Á), Voọc mũi hếch, Sâm Ngọc Linh.",
+        "Môi trường phong phú: Từ rừng mưa nhiệt đới rậm rạp, rừng ngập mặn ven biển đến các rạn san hô kỳ vĩ dưới đáy đại dương."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Vai trò to lớn",
+      "badgeColor": "amber",
+      "title": "Vai trò của đa dạng sinh học đối với sinh quyển và con người",
+      "content": "Giá trị sinh thái và kinh tế vô giá:",
+      "bulletPoints": [
+        "Duy trì cân bằng tự nhiên: Rừng cây quang hợp điều hòa khí hậu, chắn gió bão, giữ nước ngầm chống lũ quét và xói mòn đất.",
+        "Cung cấp tài nguyên sống: Cung cấp nguồn lương thực, thực phẩm dồi dào (lúa gạo, rau củ, gia súc, cá tôm); cung cấp gỗ, bông sợi; nguồn dược liệu quý điều chế thuốc chữa bệnh.",
+        "Giá trị tinh thần: Thúc đẩy du lịch sinh thái, mang lại cảnh quan tươi đẹp và không gian sống trong lành."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Nguyên nhân suy giảm",
+      "badgeColor": "purple",
+      "title": "Các nguy cơ đe dọa suy giảm đa dạng sinh học",
+      "content": "Nhiều loài sinh vật đang đứng trước bờ vực tuyệt chủng do các tác động tiêu cực:",
+      "bulletPoints": [
+        "Phá hủy sinh cảnh: Chặt phá và đốt rừng tự nhiên làm nương rẫy, san lấp đất rừng xây dựng đô thị làm mất nơi cư trú của muông thú.",
+        "Khai thác tận diệt: Săn bắt, bẫy trộm động vật hoang dã, đánh bắt cá bằng kích điện hoặc chất nổ.",
+        "Ô nhiễm môi trường: Rác thải nhựa, hóa chất độc hại và thuốc trừ sâu làm nhiễm độc nguồn nước và đất.",
+        "Loài ngoại lai xâm lấn: Sự tràn lan của ốc bươu vàng, rùa tai đỏ, cây mai dương chèn ép sinh vật bản địa."
+      ]
+    },
+    {
+      "id": "card-4",
+      "badge": "Biện pháp bảo tồn",
+      "badgeColor": "cyan",
+      "title": "Hành động bảo vệ đa dạng sinh học cấp thiết",
+      "content": "Mỗi cá nhân và xã hội cần chung tay hành động:",
+      "bulletPoints": [
+        "Thành lập khu bảo tồn & Vườn quốc gia: Bảo tồn nguyên vẹn môi trường sống tự nhiên (Vườn quốc gia Cúc Phương, Cát Tiên, Ba Bể...).",
+        "Ban hành Sách Đỏ: Ghi danh các loài sinh vật quý hiếm có nguy cơ tuyệt chủng để bảo vệ nghiêm ngặt bằng pháp luật.",
+        "Tăng cường thực thi pháp luật: Cấm săn bắt, buôn bán, tiêu thụ các sản phẩm từ động vật hoang dã (ngà voi, sừng tê giác, vảy tê tê).",
+        "Trồng rừng & tuyên truyền: Tích cực trồng cây gây rừng, giữ gìn vệ sinh môi trường, không xả rác bừa bãi."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Hành động nào sau đây của con người góp phần tích cực và thiết thực nhất vào việc bảo tồn đa dạng sinh học?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Tích cực trồng cây gây rừng và bảo vệ các vườn quốc gia, khu bảo tồn thiên nhiên",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Mua thịt thú rừng về ăn để ủng hộ người săn bắt",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Đốt phá rừng đầu nguồn làm nương rẫy",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Sử dụng kích điện để đánh bắt toàn bộ cá lớn cá bé dưới sông",
+        "correct": false
+      }
+    ],
+    "explanation": "Trồng cây gây rừng phục hồi sinh cảnh sống và bảo vệ nghiêm ngặt các khu bảo tồn thiên nhiên là giải pháp bền vững hàng đầu giúp bảo tồn đa dạng sinh học."
+  }
+}

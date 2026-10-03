@@ -1,0 +1,72 @@
+{
+  "lessonId": "bio-g6-b04",
+  "nodeId": "bio-g6-b04-theory",
+  "title": "Lý thuyết: Cấu tạo và chức năng các thành phần của tế bào",
+  "subtitle": "Bài 19 SGK KHTN 6 Kết nối tri thức: 3 thành phần cốt lõi, phân biệt nhân sơ – nhân thực và thực vật – động vật",
+  "sgkBaiSo": 19,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Cấu tạo cơ bản",
+      "badgeColor": "emerald",
+      "title": "3 thành phần cơ bản của mọi tế bào",
+      "content": "Bất kỳ tế bào nào trong sinh giới cũng đều được cấu tạo từ 3 thành phần chính:",
+      "bulletPoints": [
+        "1. Màng tế bào (màng sinh chất): Bao bọc bên ngoài, bảo vệ tế bào và kiểm soát sự vận chuyển các chất đi vào và đi ra khỏi tế bào.",
+        "2. Chất tế bào (bào tương): Vùng chất keo nằm giữa màng và nhân, chứa các bào quan; là nơi diễn ra hầu hết các hoạt động trao đổi chất của tế bào.",
+        "3. Nhân hoặc Vùng nhân: Chứa vật chất di truyền (DNA), đóng vai trò là 'bộ não' điều khiển mọi hoạt động sống của tế bào."
+      ],
+      "callout": "Ghi nhớ quy tắc kiềng 3 chân: Màng (bảo vệ & kiểm soát) — Chất tế bào (nơi sống) — Nhân (trung tâm điều khiển)!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Phân loại",
+      "badgeColor": "amber",
+      "title": "Tế bào nhân sơ vs Tế bào nhân thực",
+      "content": "Dựa vào sự có mặt của màng nhân bao bọc vật chất di truyền, tế bào được chia thành 2 nhóm lớn:",
+      "bulletPoints": [
+        "Tế bào nhân sơ (Đại diện: Vi khuẩn): Chưa có màng nhân bao bọc, vật chất di truyền nằm tự do trong chất tế bào gọi là Vùng nhân; cấu trúc đơn giản, không có các bào quan có màng.",
+        "Tế bào nhân thực (Đại diện: Động vật, Thực vật, Nấm, Nguyên sinh vật): Đã có màng nhân bao bọc vật chất di truyền tạo thành Nhân hoàn chỉnh; có hệ thống nội màng và các bào quan chuyên hóa."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "So sánh",
+      "badgeColor": "cyan",
+      "title": "Tế bào thực vật vs Tế bào động vật",
+      "content": "Cả hai đều là tế bào nhân thực, nhưng tế bào thực vật có 3 đặc điểm cấu tạo riêng biệt:",
+      "bulletPoints": [
+        "Thành tế bào (Cellulose): Bao ngoài màng tế bào thực vật, tạo bộ khung cứng cáp và giữ hình dạng cố định cho tế bào thực vật (tế bào động vật không có).",
+        "Lục lạp: Chứa chất diệp lục màu xanh giúp tế bào thực vật quang hợp chế tạo chất hữu cơ từ ánh sáng mặt trời (tế bào động vật không có).",
+        "Không bào lớn: Nằm ở trung tâm tế bào thực vật chứa nước, muối khoáng và chất dự trữ (tế bào động vật không có hoặc chỉ có không bào rất nhỏ)."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Bộ phận nào sau đây CHỈ CÓ ở tế bào thực vật mà KHÔNG CÓ ở tế bào động vật?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Lục lạp và Thành tế bào",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Màng tế bào và Nhân tế bào",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Chất tế bào",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Ti thể tạo năng lượng",
+        "correct": false
+      }
+    ],
+    "explanation": "Lục lạp (chứa diệp lục để quang hợp) và Thành tế bào (bằng cellulose tạo khung cứng) là 2 bào quan đặc trưng chỉ có ở tế bào thực vật, tế bào động vật không có."
+  }
+}

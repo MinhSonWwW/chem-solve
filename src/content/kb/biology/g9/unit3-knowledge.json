@@ -1,0 +1,170 @@
+[
+  {
+    "id": "kb-bio-g9-cau-truc-nhiem-sac-the",
+    "title": "Cấu trúc hóa học và siêu hiển vi của nhiễm sắc thể (NST)",
+    "summary": "Nhiễm sắc thể là cấu trúc mang vật chất di truyền nằm trong nhân tế bào, được cấu tạo từ DNA và protein loại histone.",
+    "keyTakeaways": [
+      "Thành phần hóa học chính: Phân tử DNA chuỗi xoắn kép liên kết chặt chẽ với các phân tử protein kiềm tính loại histone.",
+      "Đơn vị cấu trúc cơ bản (Nucleosome): Gồm một đoạn phân tử DNA dài khoảng 146 - 147 cặp nucleotide quấn quanh một khối cầu gồm 8 phân tử protein histone khoảng 1 3/4 vòng.",
+      "Các mức độ co xoắn: Sợi cơ bản (đường kính 10 - 11 nm) → Sợi nhiễm sắc (30 nm) → Vùng xếp cuộn (300 nm) → Chromatid (700 nm) → Nhiễm sắc thể kép ở kì giữa (1400 nm).",
+      "Ý nghĩa của sự co xoắn: Giúp thu nhỏ chiều dài hàng nghìn lần để xếp gọn trong nhân tế bào hiển vi và thuận lợi cho sự phân li, tổ hợp trong phân bào."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-hinh-thai-nst-ki-giua",
+    "title": "Hình thái và cấu trúc nhiễm sắc thể tại kì giữa",
+    "summary": "Tại kì giữa của quá trình phân bào, nhiễm sắc thể co xoắn cực đại và có hình thái rõ nét nhất dưới kính hiển vi quang học.",
+    "keyTakeaways": [
+      "Trạng thái kép: Mỗi NST kép gồm 2 nhiễm sắc tử chị em (chromatid) giống hệt nhau về trình tự gen, được đính với nhau tại tâm động.",
+      "Tâm động (eo sơ cấp): Là vị trí hẹp trên NST chứa trình tự nucleotide đặc biệt, đóng vai trò là điểm gắn kết của thoi phân bào giúp NST di chuyển về hai cực tế bào trong phân bào.",
+      "Hình dạng đặc trưng: Tùy vị trí tâm động, NST có thể có hình hạt, hình que, hình chữ V (tâm giữa) hoặc hình chữ J (tâm lệch).",
+      "Đầu mút (Telomere): Nằm ở hai đầu mút NST, bảo vệ NST không bị dính vào nhau và duy trì tính ổn định của vật chất di truyền."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-bo-nst-luong-boi-don-boi",
+    "title": "Phân biệt bộ nhiễm sắc thể lưỡng bội (2n) và đơn bội (n)",
+    "summary": "Bộ NST trong tế bào sinh vật tồn tại ở hai trạng thái cơ bản tùy thuộc vào loại tế bào.",
+    "keyTakeaways": [
+      "Bộ lưỡng bội (2n): Tồn tại trong các tế bào sinh dưỡng (soma) và tế bào sinh dục sơ khai, trong đó các NST tồn tại thành từng cặp tương đồng (1 chiếc nhận từ bố, 1 chiếc nhận từ mẹ).",
+      "Cặp NST tương đồng: Hai NST giống nhau về hình thái, kích thước và trình tự sắp xếp các locus gen.",
+      "Bộ đơn bội (n): Tồn tại trong các giao tử (tinh trùng, trứng), chỉ chứa một chiếc của mỗi cặp NST tương đồng (số lượng giảm đi một nửa so với tế bào sinh dưỡng)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-tinh-dac-trung-bo-nst",
+    "title": "Tính đặc trưng của bộ nhiễm sắc thể theo loài",
+    "summary": "Mỗi loài sinh vật có một bộ nhiễm sắc thể đặc trưng về số lượng, hình thái và cấu trúc xác định.",
+    "keyTakeaways": [
+      "Ví dụ điển hình: Người có 2n = 46 (n = 23); Ruồi giấm có 2n = 8 (n = 4); Đậu Hà Lan có 2n = 14 (n = 7); Tinh tinh có 2n = 48; Gà có 2n = 78.",
+      "Quy luật quan trọng: Số lượng nhiễm sắc thể không phản ánh mức độ tiến hóa hay sự phức tạp của loài (ví dụ gà có 2n = 78 nhiều hơn người 2n = 46).",
+      "Tính ổn định: Sự phối hợp giữa 3 quá trình nguyên phân, giảm phân và thụ tinh giúp duy trì ổn định bộ NST đặc trưng của loài qua các thế hệ tế bào và thế hệ cơ thể."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-chu-ki-te-bao-khai-quat",
+    "title": "Khái niệm chu kì tế bào và kì trung gian",
+    "summary": "Chu kì tế bào là khoảng thời gian từ khi một tế bào được sinh ra cho đến khi nó hoàn thành lần phân chia tiếp theo.",
+    "keyTakeaways": [
+      "Hai giai đoạn chính: Kì trung gian (chiếm 90% thời gian chu kì) và Quá trình phân bào (pha M).",
+      "Các pha của kì trung gian: Pha G1 (tế bào tổng hợp các chất, sinh trưởng mạnh), Pha S (nhân đôi DNA và nhân đôi nhiễm sắc thể từ dạng đơn thành dạng kép), Pha G2 (tổng hợp protein thoi phân bào và năng lượng).",
+      "Điểm kiểm soát chu kì tế bào: Đảm bảo tế bào chỉ phân chia khi DNA đã được nhân đôi chính xác và hoàn tất."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-nguyen-phan-dien-bien",
+    "title": "Diễn biến các kì của quá trình nguyên phân (Mitosis)",
+    "summary": "Nguyên phân diễn ra ở tế bào sinh dưỡng và tế bào sinh dục sơ khai, gồm 4 kì nối tiếp nhau.",
+    "keyTakeaways": [
+      "Kì đầu: Màng nhân và nhân con tiêu biến; thoi vô sắc xuất hiện; các NST kép bắt đầu co xoắn và đính với thoi phân bào tại tâm động.",
+      "Kì giữa: Các NST kép co xoắn cực đại và xếp thành MỘT HÀNG trên mặt phẳng xích đạo của thoi phân bào.",
+      "Kì sau: Tâm động chẻ đôi, hai nhiễm sắc tử chị em (chromatid) của mỗi NST kép tách rời nhau thành 2 NST đơn phân li đồng đều về hai cực của tế bào. (Lưu ý: tại kì sau số chromatid = 0).",
+      "Kì cuối: Màng nhân và nhân con tái lập; thoi phân bào biến mất; các NST đơn dãn xoắn; phân chia tế bào chất hình thành 2 tế bào con có bộ NST 2n giống hệt nhau và giống tế bào mẹ ban đầu."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-nguyen-phan-y-nghia",
+    "title": "Ý nghĩa sinh học và thực tiễn của nguyên phân",
+    "summary": "Nguyên phân là phương thức sinh sản của tế bào giúp cơ thể đa bào lớn lên và thay thế tế bào già cỗi.",
+    "keyTakeaways": [
+      "Ý nghĩa sinh học: Giúp cơ thể đa bào lớn lên từ một hợp tử; tái tạo các mô, cơ quan bị tổn thương; thay thế các tế bào già và chết.",
+      "Phương thức sinh sản vô tính: Ở sinh vật đơn bào và sinh vật sinh sản vô tính (nuôi cấy mô, giâm, chiết, ghép cành), nguyên phân là cơ sở truyền đạt ổn định bộ gen qua các thế hệ.",
+      "Công thức nguyên phân: 1 tế bào 2n qua k lần nguyên phân tạo 2^k tế bào con. Số NST môi trường cung cấp: 2n × (2^k - 1)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-giam-phan-dien-bien-1",
+    "title": "Diễn biến của Giảm phân I (Meiosis I)",
+    "summary": "Giảm phân I là lần phân bào giảm nhiễm then chốt diễn ra tại tế bào sinh dục chín.",
+    "keyTakeaways": [
+      "Kì đầu I: Xuất hiện hiện tượng tiếp hợp và trao đổi chéo giữa các chromatid khác nguồn gốc trong cặp NST tương đồng, tạo ra các tổ hợp gen mới.",
+      "Kì giữa I: Các cặp NST kép tương đồng tập trung và xếp thành HAI HÀNG song song trên mặt phẳng xích đạo.",
+      "Kì sau I: Các cặp NST kép tương đồng phân li độc lập và tổ hợp tự do về 2 cực tế bào (tâm động KHÔNG chẻ đôi, NST vẫn ở trạng thái kép).",
+      "Kì cuối I: Hình thành 2 tế bào con có số lượng NST kép giảm đi một nửa so với tế bào mẹ ban đầu (n NST kép)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-giam-phan-dien-bien-2",
+    "title": "Diễn biến của Giảm phân II (Meiosis II)",
+    "summary": "Giảm phân II diễn ra ngay sau kì trung gian ngắn (không có nhân đôi DNA), có cơ chế phân li tương tự như nguyên phân.",
+    "keyTakeaways": [
+      "Kì giữa II: Các NST kép (n kép) xếp thành một hàng trên mặt phẳng xích đạo.",
+      "Kì sau II: Tâm động chẻ đôi, các chromatid tách nhau thành các NST đơn phân li về 2 cực của tế bào.",
+      "Kì cuối II: Tạo ra 4 tế bào con có bộ NST đơn bội (n NST đơn).",
+      "Tạo giao tử ở động vật: 1 tế bào sinh tinh (2n) giảm phân tạo 4 tinh trùng (n); 1 tế bào sinh trứng (2n) giảm phân tạo 1 tế bào trứng (n) có kích thước lớn và 3 thể cực (tiêu biến)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-giam-phan-y-nghia-bien-di",
+    "title": "Ý nghĩa sinh học của giảm phân và biến dị tổ hợp",
+    "summary": "Giảm phân kết hợp thụ tinh là cơ chế cốt lõi tạo ra tính đa dạng di truyền phong phú ở sinh vật sinh sản hữu tính.",
+    "keyTakeaways": [
+      "Cơ chế tạo biến dị tổ hợp: Do sự tiếp hợp và trao đổi chéo ở kì đầu I kết hợp với sự phân li độc lập và tổ hợp tự do của các cặp NST tương đồng ở kì sau I.",
+      "Đa dạng sinh học: Biến dị tổ hợp cung cấp nguồn nguyên liệu thứ cấp vô tận cho tiến hóa và chọn giống.",
+      "Duy trì tính ổn định của loài: Giảm phân tạo giao tử đơn bội (n), qua thụ tinh kết hợp giao tử đực và cái tái lập bộ NST lưỡng bội (2n) đặc trưng cho loài qua các thế hệ."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-so-sanh-nguyen-phan-giam-phan",
+    "title": "Bảng so sánh đối chiếu Nguyên phân và Giảm phân",
+    "summary": "Những điểm khác biệt bản chất giữa nguyên phân và giảm phân cần phân biệt rõ ràng.",
+    "keyTakeaways": [
+      "Vị trí: Nguyên phân ở tế bào sinh dưỡng và tế bào sinh dục sơ khai; Giảm phân chỉ ở tế bào sinh dục chín.",
+      "Số lần phân bào: Nguyên phân 1 lần; Giảm phân gồm 2 lần phân bào liên tiếp nhưng DNA chỉ nhân đôi 1 lần ở kì trung gian I.",
+      "Kì giữa: Kì giữa nguyên phân NST xếp 1 hàng; Kì giữa I giảm phân NST tương đồng xếp 2 hàng song song.",
+      "Tâm động chẻ đôi: Nguyên phân chẻ tâm động ở kì sau; Giảm phân chỉ chẻ tâm động ở kì sau II (kì sau I không chẻ).",
+      "Kết quả: Nguyên phân từ 1 tế bào 2n tạo 2 tế bào con 2n giống mẹ; Giảm phân từ 1 tế bào 2n tạo 4 tế bào con n."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-phan-biet-nst-thuong-gioi-tinh",
+    "title": "Phân biệt nhiễm sắc thể thường và nhiễm sắc thể giới tính",
+    "summary": "Trong bộ NST lưỡng bội của cơ thể sinh vật phân tính luôn bao gồm NST thường và NST giới tính.",
+    "keyTakeaways": [
+      "Nhiễm sắc thể thường (Autosomes): Tồn tại thành nhiều cặp tương đồng giống nhau ở cả hai giới (đực và cái); mang các gen quy định các tính trạng sinh dưỡng thông thường của cơ thể.",
+      "Nhiễm sắc thể giới tính (Heterosomes): Thường chỉ có 1 cặp trong tế bào lưỡng bội, khác nhau giữa giới đực và giới cái; mang gen quy định giới tính và các gen quy định tính trạng thường liên kết với giới tính.",
+      "Cặp NST giới tính ở người: Gồm 22 cặp NST thường và 1 cặp NST giới tính (Nữ là 44A + XX, Nam là 44A + XY)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-cac-kieu-nst-gioi-tinh-sinh-gioi",
+    "title": "Các kiểu nhiễm sắc thể giới tính phổ biến ở sinh vật",
+    "summary": "Sự phân hóa cặp NST giới tính ở các nhóm động, thực vật trong tự nhiên.",
+    "keyTakeaways": [
+      "Kiểu XX (cái) - XY (đực): Phổ biến ở người, động vật có vú, ruồi giấm, cây gai, cây chua me.",
+      "Kiểu XX (đực) - XY (cái): Điển hình ở các loài chim, bò sát, ếch nhái, dâu tằm, một số loài bướm (lưu ý: ở chim con cái là XY, con đực là XX).",
+      "Kiểu XX (cái) - XO (đực): Châu chấu, rệp lúa, bọ xít (con đực chỉ mang 1 chiếc NST giới tính X)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-co-che-xac-dinh-gioi-tinh-nguoi",
+    "title": "Cơ chế tế bào học xác định giới tính ở người",
+    "summary": "Cơ chế thụ tinh giữa các loại giao tử tạo nên tỉ lệ giới tính xấp xỉ 1 nam : 1 nữ ở người.",
+    "keyTakeaways": [
+      "Người mẹ (44A + XX): Giảm phân chỉ tạo ra 1 loại trứng duy nhất mang NST X (22A + X) - gọi là giới đồng giao tử.",
+      "Người bố (44A + XY): Giảm phân tạo ra 2 loại tinh trùng với tỉ lệ ngang nhau: 50% tinh trùng mang X (22A + X) và 50% tinh trùng mang Y (22A + Y) - gọi là giới dị giao tử.",
+      "Quá trình thụ tinh ngẫu nhiên: Trứng (X) kết hợp tinh trùng (X) tạo hợp tử XX (con gái, tỉ lệ 50%); Trứng (X) kết hợp tinh trùng (Y) tạo hợp tử XY (con trai, tỉ lệ 50%).",
+      "Kết luận quan trọng: Việc sinh con trai hay con gái phụ thuộc vào loại tinh trùng của người bố thụ tinh cho trứng của mẹ!"
+    ]
+  },
+  {
+    "id": "kb-bio-g9-yeu-to-moi-truong-gioi-tinh",
+    "title": "Ảnh hưởng của các yếu tố môi trường đến sự phân hóa giới tính",
+    "summary": "Giới tính sinh vật vừa được quyết định bởi bộ gen vừa chịu sự điều khiển của các yếu tố môi trường trong và ngoài.",
+    "keyTakeaways": [
+      "Nhiệt độ môi trường: Ở rùa biển, trứng ấp ở nhiệt độ dưới 28°C nở thành con đực, trên 32°C nở thành con cái. Ở cá sấu thì ngược lại (nhiệt độ cao nở thành con đực).",
+      "Hormone sinh dục: Chiếu xạ hoặc tác động hormone testosterone làm cá rô phi cái biến thành cá rô phi đực đơn tính.",
+      "Ánh sáng và nồng độ chất dinh dưỡng: Cây thầu dầu trồng trong điều kiện thiếu ánh sáng sẽ hình thành nhiều hoa đực hơn hoa cái."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-y-nghia-thuc-tien-dieu-khien-gioi-tinh",
+    "title": "Ý nghĩa thực tiễn của việc điều khiển giới tính trong nông nghiệp",
+    "summary": "Ứng dụng các quy luật di truyền giới tính và ảnh hưởng môi trường để nâng cao hiệu quả kinh tế.",
+    "keyTakeaways": [
+      "Nuôi tằm: Tằm đực cho năng suất tơ cao hơn tằm cái 20%, người nuôi chủ động chọn trứng nở ra tằm đực để nuôi lấy tơ.",
+      "Chăn nuôi gia súc, gia cầm: Phân loại tinh trùng mang X hoặc Y để sinh bê cái lấy sữa hoặc sinh bê đực lấy thịt; điều khiển gà con nở ra gà mái đẻ trứng.",
+      "Nuôi trồng thủy sản: Tạo đàn cá rô phi toàn đực bằng cách cho cá bột ăn thức ăn trộn hormone sinh dục đực giúp cá lớn nhanh hơn, thịt chắc hơn."
+    ]
+  }
+]

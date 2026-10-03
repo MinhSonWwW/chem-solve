@@ -11,10 +11,16 @@ export interface NodeInfo {
 export interface Lesson {
   id: string; // e.g. "g8-b03" or "phy-g8-b01"
   lessonNumber: number;
+  sgkBaiSo?: number;
   title: string;
   subtitle: string;
   ready: boolean; // whether content JSON is available
   nodes: NodeInfo[];
+}
+
+export interface ChapterGuidebook {
+  formulas?: Array<{ label: string; text: string }>;
+  traps?: string[];
 }
 
 export interface Chapter {
@@ -23,6 +29,7 @@ export interface Chapter {
   title: string;
   description: string;
   lessons: Lesson[];
+  guidebook?: ChapterGuidebook;
 }
 
 export interface GradeCurriculum {

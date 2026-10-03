@@ -1,0 +1,72 @@
+{
+  "lessonId": "bio-g6-b11",
+  "nodeId": "bio-g6-b11-theory",
+  "title": "Lý thuyết: Khóa lưỡng phân",
+  "subtitle": "Bài 26 SGK KHTN 6 Kết nối tri thức: Nguyên tắc phân chia theo cặp đặc điểm đối lập và ứng dụng định danh loài",
+  "sgkBaiSo": 26,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Khái niệm",
+      "badgeColor": "emerald",
+      "title": "Khóa lưỡng phân là gì?",
+      "content": "Khóa lưỡng phân là một công cụ khoa học phổ biến dùng để nhận diện và định danh các loài sinh vật:",
+      "bulletPoints": [
+        "Định nghĩa: Là phương pháp phân loại dựa vào một cặp đặc điểm đối lập để phân chia các sinh vật thành hai nhóm nhỏ dần cho đến khi xác định được từng loài cụ thể.",
+        "Ý nghĩa: Giúp người nghiên cứu không bị nhầm lẫn giữa các loài có hình dạng gần giống nhau và nhanh chóng tra cứu tên loài."
+      ],
+      "callout": "Từ 'lưỡng phân' có nghĩa là luôn rẽ thành 2 nhánh (lưỡng = 2, phân = chia nhánh)!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Quy trình",
+      "badgeColor": "amber",
+      "title": "3 bước xây dựng khóa lưỡng phân",
+      "content": "Để lập một sơ đồ khóa lưỡng phân chuẩn, tiến hành tuần tự 3 bước:",
+      "bulletPoints": [
+        "Bước 1: Liệt kê các sinh vật cần phân loại và quan sát kỹ các đặc điểm hình thái đặc trưng của chúng.",
+        "Bước 2: Lựa chọn một cặp đặc điểm đối lập rõ rệt nhất (ví dụ: có cánh / không có cánh; có chân / không có chân) để chia tập hợp sinh vật ban đầu thành 2 nhóm riêng biệt.",
+        "Bước 3: Tiếp tục lựa chọn các cặp đặc điểm đối lập tiếp theo cho từng nhóm nhỏ, lặp lại liên tục cho đến khi mỗi nhánh cuối cùng chỉ còn lại một loài duy nhất."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Ví dụ thực tế",
+      "badgeColor": "cyan",
+      "title": "Ví dụ phân loại 4 loài động vật quen thuộc",
+      "content": "Ứng dụng khóa lưỡng phân phân biệt: Cá chép, Ếch đồng, Chim bồ câu và Thỏ:",
+      "bulletPoints": [
+        "Nhánh 1: Cơ thể có cánh (Chim bồ câu) vs Cơ thể không có cánh (Cá chép, Ếch, Thỏ).",
+        "Nhánh 2 (tách nhóm không cánh): Cơ thể có chân (Ếch, Thỏ) vs Cơ thể không có chân, có vây bơi (Cá chép).",
+        "Nhánh 3 (tách nhóm có chân): Da trần ẩm ướt (Ếch đồng) vs Da có lông mao bao phủ (Con thỏ)."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Nguyên tắc cốt lõi khi xây dựng khóa lưỡng phân là gì?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Dựa vào một cặp đặc điểm đối lập để phân chia sinh vật thành hai nhóm nhỏ dần",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Chia ngẫu nhiên sinh vật theo bảng chữ cái A, B, C",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Xếp các sinh vật có cùng màu sắc vào một nhóm",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Chỉ dựa vào cân nặng của sinh vật",
+        "correct": false
+      }
+    ],
+    "explanation": "Khóa lưỡng phân luôn vận hành theo nguyên tắc dùng một cặp đặc điểm đối lập (có/không, chân/vây...) để rẽ đôi tập hợp sinh vật cho đến từng loài."
+  }
+}

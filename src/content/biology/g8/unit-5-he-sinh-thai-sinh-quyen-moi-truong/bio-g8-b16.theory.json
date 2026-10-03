@@ -1,0 +1,76 @@
+{
+  "lessonId": "bio-g8-b16",
+  "nodeId": "bio-g8-b16-theory",
+  "title": "Lý thuyết: Sinh quyển & Các khu sinh học (Biomes)",
+  "subtitle": "Bài 45 SGK KHTN 8 Kết nối tri thức: Khái niệm sinh quyển, giới hạn phạm vi, các khu sinh học trên cạn và dưới nước",
+  "sgkBaiSo": 45,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Khái niệm",
+      "badgeColor": "emerald",
+      "title": "Sinh quyển & Phạm vi phân bố",
+      "content": "Sinh quyển là hệ sinh thái lớn nhất trên Trái Đất:",
+      "bulletPoints": [
+        "Khái niệm: Sinh quyển là toàn bộ sinh vật sống cùng với các nhân tố môi trường vô sinh trên Trái Đất, nơi mà sự sống tồn tại và phát triển.",
+        "Giới hạn khí quyển: Phân bố ở tầng đối lưu (khoảng 7 - 8 km trở xuống), nơi có đầy đủ oxy, hơi nước và nhiệt độ thích hợp cho sinh vật bay lượn và vi sinh vật phân tán.",
+        "Giới hạn thủy quyển: Chiếm toàn bộ các đại dương, biển, sông, hồ từ mặt nước đến những đáy vực sâu nhất (trên 10.000 m ở rãnh Mariana).",
+        "Giới hạn thạch quyển: Chủ yếu ở lớp đất mặt dày vài chục mét nơi có rễ cây bám và các loài động vật đào bới, vi sinh vật đất cư trú."
+      ],
+      "callout": "Sinh vật không phân bố đồng đều mà tập trung dày đặc nhất ở lớp bề mặt Trái Đất dày khoảng vài chục mét!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Trên cạn",
+      "badgeColor": "amber",
+      "title": "Các khu sinh học (Biomes) chủ yếu trên cạn",
+      "content": "Phân bố theo vĩ độ từ xích đạo về hai cực và theo độ cao núi:",
+      "bulletPoints": [
+        "1. Rừng mưa nhiệt đới: Vùng xích đạo nóng ẩm quanh năm, mưa nhiều, rừng rậm rạp phân nhiều tầng tán, độ đa dạng sinh học cao nhất Trái Đất.",
+        "2. Rừng rụng lá ôn đới: Vùng ôn đới có 4 mùa rõ rệt, cây rụng lá vào mùa thu - đông để hạn chế mất nước (sồi, dẻ).",
+        "3. Rừng lá kim phương Bắc (Taiga): Khí hậu mùa đông lạnh kéo dài, thực vật chủ yếu là thông, tùng, linh sam có lá hình kim bọc sáp chịu rét.",
+        "4. Thảo nguyên & Xavan: Khí hậu khô nóng, lượng mưa vừa phải, chiếm ưu thế bởi thực vật thân thảo và các loài động vật gặm cỏ móng guốc chạy nhanh.",
+        "5. Hoang mạc & Bán hoang mạc: Cực kì khô hạn, nóng gay gắt ban ngày, thực vật tiêu biểu là xương rồng rễ sâu mọng nước, lá biến thành gai.",
+        "6. Đài nguyên (Tundra): Vùng hàn đới lạnh giá quanh năm, đất đóng băng vĩnh cửu, thực vật chủ yếu là rêu, địa y và cây bụi lùn sát đất."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Dưới nước",
+      "badgeColor": "cyan",
+      "title": "Các khu sinh học dưới nước",
+      "content": "Phân chia theo độ mặn của môi trường nước:",
+      "bulletPoints": [
+        "Khu sinh học nước ngọt: Chia thành vùng nước đứng (ao, hồ, đầm) với thảm thực vật thủy sinh (sen, súng, bèo) và vùng nước chảy (sông, suối) nơi sinh vật thích nghi với dòng nước chảy xiết.",
+        "Khu sinh học nước mặn: Gồm vùng ven bờ (rừng ngập mặn chắn sóng, bãi bùn), vùng biển khơi (sinh vật trôi nổi, cá nổi) và rạn san hô (nơi có độ đa dạng loài phong phú nhất của đại dương, ví như 'rừng mưa của biển cả')."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khu sinh học trên cạn nào sau đây sở hữu độ đa dạng sinh học cao nhất và thảm thực vật phân tầng phức tạp nhất trên Trái Đất?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Rừng mưa nhiệt đới (vùng xích đạo nóng ẩm, mưa nhiều quanh năm)",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Rừng lá kim phương Bắc (Taiga hàn đới)",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Đài nguyên (Tundra lạnh giá đóng băng vĩnh cửu)",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Hoang mạc và bán hoang mạc khô hạn",
+        "correct": false
+      }
+    ],
+    "explanation": "Rừng mưa nhiệt đới nằm ở vùng nhiệt đới xích đạo có khí hậu nóng ẩm quanh năm, lượng mưa dồi dào tạo điều kiện tối ưu cho muôn loài phát triển rực rỡ với cấu trúc phân tầng tán rậm rạp và đa dạng bậc nhất."
+  }
+}

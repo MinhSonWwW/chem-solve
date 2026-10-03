@@ -1,0 +1,63 @@
+[
+  {
+    "id": "kb-bio-g9-chromosome-structure",
+    "title": "Cấu trúc hiển vi và siêu hiển vi của Nhiễm sắc thể (NST)",
+    "description": "Vật chất di truyền ở cấp độ tế bào của sinh vật nhân thực.",
+    "structure": {
+      "components": "Gồm 1 phân tử DNA chuỗi xoắn kép liên kết với các phân tử protein loại Histone.",
+      "metaphaseChromosome": "Ở kì giữa, NST co xoắn cực đại, quan sát rõ nhất dưới kính hiển vi; mỗi NST kép gồm 2 chromatid (nhiễm sắc tử chị em) dính nhau tại tâm động.",
+      "centromereFunction": "Tâm động (eo sơ cấp) là điểm đính của thoi vô sắc giúp NST di chuyển về 2 cực tế bào trong phân bào."
+    },
+    "karyotype": {
+      "definition": "Bộ NST đặc trưng của loài về số lượng, hình thái và cấu trúc.",
+      "diploid": "Bộ lưỡng bội (2n): Tế bào sinh dưỡng, các NST tồn tại thành từng cặp tương đồng (1 nguồn gốc từ bố, 1 từ mẹ).",
+      "haploid": "Bộ đơn bội (n): Tế bào giao tử (trứng, tinh trùng), chỉ chứa 1 chiếc của mỗi cặp.",
+      "examples": [
+        { "species": "Người (Homo sapiens)", "diploid": "2n = 46 (23 cặp)", "haploid": "n = 23" },
+        { "species": "Ruồi giấm (Drosophila melanogaster)", "diploid": "2n = 8 (4 cặp)", "haploid": "n = 4" },
+        { "species": "Đậu Hà Lan (Pisum sativum)", "diploid": "2n = 14 (7 cặp)", "haploid": "n = 7" },
+        { "species": "Tinh tinh (Pan troglodytes)", "diploid": "2n = 48 (24 cặp)", "haploid": "n = 24" }
+      ]
+    }
+  },
+  {
+    "id": "kb-bio-g9-mitosis-stages",
+    "title": "Diễn biến các kì của quá trình Nguyên phân (Mitosis)",
+    "description": "Hình thức phân chia của tế bào sinh dưỡng và tế bào sinh dục sơ khai.",
+    "stages": [
+      {
+        "stage": "Kì trung gian",
+        "events": "Tế bào tích lũy vật chất, DNA nhân đôi; mỗi NST đơn nhân đôi thành 1 NST kép gồm 2 chromatid dính nhau ở tâm động (2n kép)."
+      },
+      {
+        "stage": "Kì đầu",
+        "events": "NST kép bắt đầu co xoắn và cô đặc dần; màng nhân và nhân con tiêu biến; thoi phân bào xuất hiện nối từ 2 cực tế bào đến tâm động."
+      },
+      {
+        "stage": "Kì giữa",
+        "events": "NST kép co xoắn cực đại, có hình thái rõ nét nhất; xếp thành 1 hàng thẳng trên mặt phẳng xích đạo của thoi phân bào (2n kép, 4n chromatid)."
+      },
+      {
+        "stage": "Kì sau",
+        "events": "Tâm động chẻ đôi, 2 chromatid của mỗi NST kép tách rời nhau thành 2 NST đơn; thoi phân bào co rút kéo 2 nhóm NST đơn phân li về 2 cực tế bào (4n đơn, 0 chromatid)."
+      },
+      {
+        "stage": "Kì cuối",
+        "events": "NST dãn xoắn; màng nhân và nhân con tái lập; tế bào chất phân chia → Hình thành 2 tế bào con có bộ NST 2n giống hệt nhau và giống tế bào mẹ ban đầu."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g9-meiosis-stages",
+    "title": "Diễn biến các kì của quá trình Giảm phân (Meiosis)",
+    "description": "Xảy ra ở tế bào sinh dục chín, gồm 2 lần phân bào liên tiếp nhưng DNA chỉ nhân đôi 1 lần.",
+    "comparisonWithMitosis": [
+      "Kì đầu I: Có hiện tượng tiếp hợp và có thể trao đổi chéo giữa 2 chromatid khác nguồn gốc trong cặp tương đồng tạo biến dị tổ hợp.",
+      "Kì giữa I: Các cặp NST kép tương đồng xếp thành 2 hàng song song trên mặt phẳng xích đạo (ở nguyên phân chỉ xếp 1 hàng).",
+      "Kì sau I: Các cặp NST kép tương đồng phân li độc lập về 2 cực tế bào (không chẻ tâm động).",
+      "Kì cuối I: Tạo 2 tế bào con có bộ NST đơn bội kép (n kép).",
+      "Giảm phân II: Diễn biến tương tự nguyên phân, tách tâm động của n NST kép → Tạo 4 tế bào con đơn bội (n)."
+    ],
+    "biologicalRole": "Nguyên phân duy trì số lượng NST ổn định trong sinh trưởng tế bào; Giảm phân kết hợp Thụ tinh tạo ra vô số biến dị tổ hợp và duy trì bộ NST lưỡng bội của loài sinh sản hữu tính."
+  }
+]

@@ -1,0 +1,77 @@
+{
+  "lessonId": "bio-g9-b16",
+  "nodeId": "bio-g9-b16-theory",
+  "title": "Lý thuyết: Nguồn gốc sự sống & 5 đại địa chất",
+  "subtitle": "Bài 51 SGK KHTN 9 Kết nối tri thức: Ba giai đoạn phát sinh sự sống (hóa học, tiền sinh học, sinh học) và lịch sử sinh giới qua 5 đại địa chất",
+  "sgkBaiSo": 51,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Nguồn gốc sự sống",
+      "badgeColor": "emerald",
+      "title": "Ba giai đoạn phát sinh sự sống (Thuyết Oparin - Haldane)",
+      "content": "Con đường hình thành sự sống từ các hợp chất vô cơ nguyên thủy:",
+      "bulletPoints": [
+        "1. Tiến hóa hóa học: Từ các chất vô cơ trong khí quyển nguyên thủy (CH4, NH3, H2, hơi nước), dưới tác dụng của sấm sét, tia tử ngoại và núi lửa đã tổng hợp nên các chất hữu cơ đơn giản (amino acid, nucleotide) → trùng phân thành các đại phân tử sinh học (protein, nucleic acid). Thí nghiệm Miller - Urey (1953) đã chứng minh hoàn hảo bước này trong phòng thí nghiệm.",
+        "2. Tiến hóa tiền sinh học: Các đại phân tử tụ tập thành các giọt đông tụ (coacervate), xuất hiện lớp màng lipid kép bao bọc tạo nên các tế bào nguyên thủy (protocell) có khả năng trao đổi chất và tự nhân đôi sơ khai.",
+        "3. Tiến hóa sinh học: Từ tế bào nguyên thủy, dưới tác động của chọn lọc tự nhiên tiến hóa phân nhánh thành toàn bộ sinh giới nhân sơ, nhân thực đa dạng ngày nay."
+      ],
+      "callout": "Thí nghiệm Miller - Urey (1953) đã dùng sấm sét nhân tạo phóng qua hỗn hợp khí nguyên thủy và tạo ra các amino acid cấu tạo nên sự sống!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Khí quyển nguyên thủy",
+      "badgeColor": "amber",
+      "title": "Đặc điểm bầu khí quyển Trái Đất nguyên thủy",
+      "content": "Môi trường hóa học đặc biệt thuở sơ khai khoảng 4,5 tỉ năm trước:",
+      "bulletPoints": [
+        "Thành phần khí: Chủ yếu gồm metan (CH4), amoniac (NH3), hơi nước (H2O), hydro (H2) và carbon monoxit (CO) mang tính khử mạnh.",
+        "Cạm bẫy đặc biệt: Bầu khí quyển nguyên thủy hoàn toàn KHÔNG có khí oxy tự do (O2) và KHÔNG có tầng ozone (O3) bảo vệ.",
+        "Nguồn năng lượng tự nhiên: Năng lượng sấm sét dữ dội, nhiệt lượng núi lửa và tia bức xạ tử ngoại (tia UV) cực mạnh chiếu thẳng từ Mặt Trời xuống đại dương nguyên thủy.",
+        "Sự xuất hiện của Oxy: Khí O2 chỉ bắt đầu xuất hiện và tích tụ trong khí quyển sau khi các vi khuẩn lam cổ đại tiến hóa khả năng quang hợp giải phóng O2."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "5 đại địa chất",
+      "badgeColor": "cyan",
+      "title": "Lịch sử sinh giới qua 5 đại địa chất",
+      "content": "Dòng thời gian địa chất ghi nhận các mốc xuất hiện và thống trị của sinh giới:",
+      "bulletPoints": [
+        "1. Đại Thái cổ (Cổ nhất): Xuất hiện sự sống đầu tiên là các sinh vật nhân sơ cổ (vi khuẩn, vi khuẩn lam).",
+        "2. Đại Nguyên sinh: Xuất hiện sinh vật nhân thực đơn bào, các loài tảo và động vật không xương sống nguyên thủy ở biển.",
+        "3. Đại Cổ sinh: Thực vật di cư lên cạn, rừng quyết khổng lồ phát triển mạnh tạo các mỏ than đá; xuất hiện cá, lưỡng cư và bò sát cổ.",
+        "4. Đại Trung sinh: Thời đại cực thịnh của bò sát khổng lồ (khủng long); xuất hiện chim cổ, thú cổ và thực vật hạt trần.",
+        "5. Đại Tân sinh (Thời đại hiện nay): Kỉ Đệ Tam và kỉ Đệ Tứ — Thời đại phồn thịnh của thú, chim và thực vật hạt kín; Loài người xuất hiện ở kỉ Đệ Tứ (thế Canh tân)."
+      ],
+      "callout": "Mẹo ghi nhớ thứ tự 5 đại: Thái cổ → Nguyên sinh → Cổ sinh → Trung sinh → Tân sinh (Loài người chỉ mới xuất hiện ở đại Tân sinh gần đây)!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Bầu khí quyển của Trái Đất nguyên thủy (khi sự sống bắt đầu phát sinh) có đặc điểm nào sau đây khác biệt căn bản so với bầu khí quyển hiện nay?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Hoàn toàn chưa có khí oxy tự do (O2) và chưa có tầng ozone (O3)",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Chứa nồng độ khí oxy (O2) đậm đặc lên đến 80%",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Nhiệt độ khí quyển luôn ở mức âm 100°C đóng băng vĩnh cửu",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Có tầng ozone dày gấp 10 lần bảo vệ toàn bộ bề mặt Trái Đất",
+        "correct": false
+      }
+    ],
+    "explanation": "Bầu khí quyển nguyên thủy của Trái Đất chứa các khí khử CH4, NH3, H2O, H2 và hoàn toàn KHÔNG có khí O2 tự do cũng như tầng ozone O3. Khí O2 chỉ xuất hiện sau khi vi khuẩn lam quang hợp giải phóng ra."
+  }
+}

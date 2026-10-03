@@ -1,0 +1,76 @@
+{
+  "lessonId": "bio-g7-b04",
+  "nodeId": "bio-g7-b04-theory",
+  "title": "Lý thuyết: Thực hành chứng minh quang hợp ở cây xanh",
+  "subtitle": "Bài 24 SGK KHTN 7 Kết nối tri thức: Thí nghiệm chứng minh tạo thành tinh bột và giải phóng khí oxygen",
+  "sgkBaiSo": 24,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Thí nghiệm 1",
+      "badgeColor": "emerald",
+      "title": "Chứng minh sự tạo thành tinh bột trong quang hợp",
+      "content": "Thí nghiệm sử dụng băng giấy đen che một phần lá và thuốc thử dung dịch Iodine để nhận biết tinh bột:",
+      "bulletPoints": [
+        "Bước 1: Đặt chậu cây trong chỗ tối 2 ngày để tiêu thụ hết lượng tinh bột có sẵn trong lá.",
+        "Bước 2: Bịt kín một phần lá bằng băng giấy đen ở cả hai mặt, đem cây ra đặt ngoài nắng từ 4 đến 6 giờ.",
+        "Bước 3: Ngắt chiếc lá thí nghiệm, tháo bỏ băng giấy đen.",
+        "Bước 4: Đun cách thủy lá trong cồn 90° để tẩy sạch chất diệp lục (lá chuyển sang màu trắng ngà).",
+        "Bước 5: Rửa sạch lá trong nước ấm, trải lên đĩa petri và nhỏ dung dịch Iodine lên bề mặt lá."
+      ],
+      "callout": "Phần lá được chiếu sáng hóa màu XANH TÍM (có tinh bột), phần bị che đen không đổi màu!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Thí nghiệm 2",
+      "badgeColor": "amber",
+      "title": "Chứng minh quang hợp giải phóng khí Oxygen",
+      "content": "Thí nghiệm sử dụng cành rong đuôi chó trong nước và que đóm tàn đỏ để xác định khí sinh ra:",
+      "bulletPoints": [
+        "Bố trí: Đặt cành rong đuôi chó vào phễu úp ngược trong cốc nước, úp ống nghiệm chứa đầy nước lên cuống phễu. Đặt một cốc ngoài nắng và một cốc trong bóng tối.",
+        "Hiện tượng ở cốc ngoài nắng: Các bọt khí liên tục sủi lên từ vết cắt của cành rong và đẩy mực nước trong ống nghiệm tụt xuống.",
+        "Kiểm tra chất khí: Dùng ngón tay bịt miệng ống nghiệm thu khí, lật ngược lại và đưa que đóm còn tàn đỏ vào miệng ống nghiệm → Que đóm bùng cháy sáng mãnh liệt.",
+        "Kết luận: Chất khí thu được duy trì sự cháy, đó chính là khí Oxygen (O2) do cành rong quang hợp giải phóng ra."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Lưu ý an toàn",
+      "badgeColor": "cyan",
+      "title": "Lưu ý an toàn thí nghiệm trong phòng thực hành",
+      "content": "Cần tuyệt đối tuân thủ quy tắc an toàn khi sử dụng cồn và nhiệt lượng:",
+      "bulletPoints": [
+        "Cồn 90° rất dễ bắt cháy: BẮT BUỘC phải đun cách thủy lá trong cồn (đặt cốc cồn vào trong một nồi/nồi nước sôi), KHÔNG được đun trực tiếp cốc cồn trên ngọn lửa đèn cồn.",
+        "Thuốc thử Iodine: Nhỏ lượng vừa đủ, tránh làm rớt ra tay hay quần áo gây ố màu.",
+        "Quan sát bọt khí rong đuôi chó: Đặt cành rong tươi mới cắt vát gốc để bọt khí O2 thoát ra dễ dàng và liên tục."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Trong thí nghiệm chứng minh sự tạo thành tinh bột, vì sao phải đun cách thủy chiếc lá trong cồn 90° trước khi nhỏ dung dịch Iodine?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Để tẩy sạch chất diệp lục màu xanh của lá, giúp quan sát rõ màu xanh tím của tinh bột",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Để tiêu diệt toàn bộ vi khuẩn bám trên phiến lá",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Để chuyển hóa trực tiếp nước thành khí oxygen",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Để làm cho lá dính chặt vào đáy đĩa petri",
+        "correct": false
+      }
+    ],
+    "explanation": "Chất diệp lục có màu xanh lục đậm sẽ che lấp màu phản ứng. Cồn nóng hòa tan và tẩy sạch diệp lục, biến lá thành màu trắng ngà để khi nhỏ Iodine (màu vàng nâu) hóa xanh tím sẽ hiện lên cực kì tương phản và rõ nét."
+  }
+}

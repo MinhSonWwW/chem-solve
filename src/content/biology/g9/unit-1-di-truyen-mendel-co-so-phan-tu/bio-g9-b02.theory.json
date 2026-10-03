@@ -1,0 +1,60 @@
+{
+  "lessonId": "bio-g9-b02",
+  "nodeId": "bio-g9-b02-theory",
+  "title": "Lý thuyết: Các quy luật di truyền của Mendel",
+  "subtitle": "Bài 37 SGK KHTN 9 Kết nối tri thức: Quy luật phân li, phép lai phân tích, quy luật phân li độc lập và biến dị tổ hợp",
+  "sgkBaiSo": 37,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Định luật 1",
+      "badgeColor": "emerald",
+      "title": "Quy luật phân li (Lai một cặp tính trạng)",
+      "content": "Mendel cho lai cây đậu Hà Lan thuần chủng hoa đỏ với hoa trắng. F1 thu được 100% hoa đỏ. Cho F1 tự thụ phấn, F2 thu được tỉ lệ xấp xỉ 3 hoa đỏ : 1 hoa trắng.",
+      "bulletPoints": [
+        "Nội dung quy luật: Trong quá trình phát sinh giao tử, mỗi nhân tố di truyền trong cặp nhân tố di truyền phân li về một giao tử và giữ nguyên bản chất như ở cơ thể thuần chủng của P.",
+        "Sơ đồ lai quy ước: P: AA (đỏ) × aa (trắng) → G: A, a → F1: 100% Aa (hoa đỏ).",
+        "F1 tự thụ phấn: Aa × Aa → G: (1/2 A : 1/2 a) × (1/2 A : 1/2 a).",
+        "Kết quả F2: Tỉ lệ kiểu gen là 1 AA : 2 Aa : 1 aa (25% AA : 50% Aa : 25% aa); Tỉ lệ kiểu hình là 3 hoa đỏ : 1 hoa trắng (75% trội : 25% lặn)."
+      ],
+      "callout": "Hoa đỏ là tính trạng trội hoàn toàn át chế tính trạng lặn hoa trắng ở thế hệ con lai F1!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Kiểm tra kiểu gen",
+      "badgeColor": "amber",
+      "title": "Phép lai phân tích (Testcross)",
+      "content": "Một cá thể mang kiểu hình trội (hoa đỏ) có thể mang kiểu gen đồng hợp trội (AA) hoặc dị hợp (Aa). Làm thế nào để biết chính xác kiểu gen của nó?",
+      "bulletPoints": [
+        "Khái niệm: Phép lai phân tích là phép lai giữa cá thể mang tính trạng trội cần xác định kiểu gen với cá thể mang tính trạng lặn tương ứng (aa).",
+        "Trường hợp 1 (Đồng tính): Nếu kết quả đời con lai Fa đồng tính 100% hoa đỏ → Cá thể mang kiểu gen đồng hợp trội (P: AA × aa → Fa: 100% Aa - đỏ).",
+        "Trường hợp 2 (Phân tính): Nếu kết quả đời con lai Fa phân tính theo tỉ lệ 1 hoa đỏ : 1 hoa trắng → Cá thể mang kiểu gen dị hợp (P: Aa × aa → Fa: 1 Aa : 1 aa).",
+        "Ý nghĩa thực tiễn: Giúp nhà chọn giống kiểm tra độ thuần chủng của giống cây trồng, vật nuôi trước khi đưa vào sản xuất đại trà."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Định luật 2",
+      "badgeColor": "cyan",
+      "title": "Quy luật phân li độc lập & Biến dị tổ hợp",
+      "content": "Mendel lai hai giống đậu thuần chủng hạt vàng, vỏ trơn với hạt xanh, vỏ nhăn. F1 thu được 100% hạt vàng, vỏ trơn. Cho F1 tự thụ phấn, F2 phân li theo tỉ lệ 9 vàng, trơn : 3 vàng, nhăn : 3 xanh, trơn : 1 xanh, nhăn.",
+      "bulletPoints": [
+        "Nội dung quy luật: Các cặp nhân tố di truyền quy định các cặp tính trạng khác nhau phân li độc lập vào các giao tử trong quá trình phát sinh giao tử.",
+        "Cơ sở: F1 (AaBb) tạo ra 4 loại giao tử với tỉ lệ ngang nhau: 1/4 AB, 1/4 Ab, 1/4 aB, 1/4 ab. Khi thụ tinh kết hợp tạo 16 tổ hợp hợp tử.",
+        "Tỉ lệ phân li độc lập: Tỉ lệ kiểu hình chung bằng tích tỉ lệ của các cặp tính trạng hợp thành: (3 vàng : 1 xanh)(3 trơn : 1 nhăn) = 9 vàng, trơn : 3 vàng, nhăn : 3 xanh, trơn : 1 xanh, nhăn.",
+        "Biến dị tổ hợp: Xuất hiện 2 kiểu hình mới khác bố mẹ là hạt vàng - vỏ nhăn và hạt xanh - vỏ trơn. Đây là nguồn nguyên liệu quý giá cho chọn giống và tiến hóa."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi cho cây đậu hạt vàng, vỏ trơn dị hợp 2 cặp gen (AaBb) tự thụ phấn, tỉ lệ hạt có kiểu hình mang CẢ HAI TÍNH TRẠNG LẶN (xanh, nhăn - aabb) ở đời con F2 là bao nhiêu?",
+    "options": [
+      { "id": "opt-1", "text": "1/16 (khoảng 6,25%)", "correct": true },
+      { "id": "opt-2", "text": "3/16 (khoảng 18,75%)", "correct": false },
+      { "id": "opt-3", "text": "9/16 (khoảng 56,25%)", "correct": false },
+      { "id": "opt-4", "text": "1/4 (khoảng 25%)", "correct": false }
+    ],
+    "explanation": "Trong phép lai hai cặp tính trạng phân li độc lập (9:3:3:1), kiểu hình đồng hợp lặn về cả hai tính trạng (aabb) chiếm tỉ lệ 1/16 tổng số hợp tử."
+  }
+}

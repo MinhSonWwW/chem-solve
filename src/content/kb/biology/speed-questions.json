@@ -1,0 +1,92 @@
+[
+  {
+    "id": "bio-sq-01",
+    "prompt": "Bào quan nào được ví như 'nhà máy năng lượng' của tế bào?",
+    "options": ["Ti thể", "Lục lạp", "Ribosome", "Bộ máy Golgi"],
+    "correctAnswer": "Ti thể"
+  },
+  {
+    "id": "bio-sq-02",
+    "prompt": "Bộ nhiễm sắc thể lưỡng bội (2n) bình thường của loài người là:",
+    "options": ["46", "23", "48", "44"],
+    "correctAnswer": "46"
+  },
+  {
+    "id": "bio-sq-03",
+    "prompt": "Trong phân tử DNA, nucleotide loại A liên kết bổ sung với nucleotide loại nào?",
+    "options": ["T", "G", "C", "U"],
+    "correctAnswer": "T"
+  },
+  {
+    "id": "bio-sq-04",
+    "prompt": "Nhóm máu nào được gọi là 'nhóm máu chuyên cho' trong hệ ABO?",
+    "options": ["Nhóm O", "Nhóm A", "Nhóm B", "Nhóm AB"],
+    "correctAnswer": "Nhóm O"
+  },
+  {
+    "id": "bio-sq-05",
+    "prompt": "Người mắc hội chứng Đao có bao nhiêu nhiễm sắc thể trong tế bào sinh dưỡng?",
+    "options": ["47 (thể ba cặp 21)", "45 (thể một)", "46 (bình thường)", "69 (tam bội)"],
+    "correctAnswer": "47 (thể ba cặp 21)"
+  },
+  {
+    "id": "bio-sq-06",
+    "prompt": "Đơn phân cấu tạo nên phân tử protein là:",
+    "options": ["Amino acid", "Nucleotide", "Glucose", "Acid béo"],
+    "correctAnswer": "Amino acid"
+  },
+  {
+    "id": "bio-sq-07",
+    "prompt": "Cơ quan nào trong hệ tiêu hóa người đóng vai trò hấp thụ dinh dưỡng chủ yếu?",
+    "options": ["Ruột non", "Dạ dày", "Ruột già", "Thực quản"],
+    "correctAnswer": "Ruột non"
+  },
+  {
+    "id": "bio-sq-08",
+    "prompt": "Codon mở đầu trên phân tử mRNA (5'AUG3') mã hóa cho amino acid nào?",
+    "options": ["Methionine", "Alanine", "Valine", "Lysine"],
+    "correctAnswer": "Methionine"
+  },
+  {
+    "id": "bio-sq-09",
+    "prompt": "Hormone nào do tuyến tụy tiết ra có tác dụng làm hạ đường huyết?",
+    "options": ["Insulin", "Glucagon", "Adrenalin", "Thyroxine"],
+    "correctAnswer": "Insulin"
+  },
+  {
+    "id": "bio-sq-10",
+    "prompt": "Ở kì giữa của quá trình nguyên phân, các NST kép xếp như thế nào trên mặt phẳng xích đạo?",
+    "options": ["Thành 1 hàng", "Thành 2 hàng", "Phân tán ngẫu nhiên", "Đứng thành từng cụm"],
+    "correctAnswer": "Thành 1 hàng"
+  },
+  {
+    "id": "bio-sq-11",
+    "prompt": "Hiệu suất sinh thái trung bình chuyển năng lượng giữa các bậc dinh dưỡng liền kề là khoảng:",
+    "options": ["10%", "25%", "50%", "1%"],
+    "correctAnswer": "10%"
+  },
+  {
+    "id": "bio-sq-12",
+    "prompt": "Cánh dơi và tay người là ví dụ điển hình của loại cơ quan nào?",
+    "options": ["Cơ quan tương đồng", "Cơ quan tương tự", "Cơ quan thoái hóa", "Cơ quan nhân tạo"],
+    "correctAnswer": "Cơ quan tương đồng"
+  },
+  {
+    "id": "bio-sq-13",
+    "prompt": "Động vật đầu tiên được nhân bản vô tính thành công từ tế bào sinh dưỡng là:",
+    "options": ["Cừu Dolly", "Chó Snuppy", "Chuột Cumulina", "Bò Kaga"],
+    "correctAnswer": "Cừu Dolly"
+  },
+  {
+    "id": "bio-sq-14",
+    "prompt": "Cặp NST giới tính ở người phụ nữ bình thường là:",
+    "options": ["XX", "XY", "XO", "XXY"],
+    "correctAnswer": "XX"
+  },
+  {
+    "id": "bio-sq-15",
+    "prompt": "Loài người hiện đại (Homo sapiens) xuất hiện vào đại địa chất nào?",
+    "options": ["Đại Tân sinh", "Đại Trung sinh", "Đại Cổ sinh", "Đại Thái cổ"],
+    "correctAnswer": "Đại Tân sinh"
+  }
+]

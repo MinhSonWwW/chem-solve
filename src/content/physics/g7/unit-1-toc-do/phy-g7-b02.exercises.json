@@ -16,11 +16,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Quãng đường vật đi được và thể tích của vật"
+          "label": "Quãng đường vật đi được và thời gian vật đi quãng đường đó"
         },
         {
           "id": "opt-b",
-          "label": "Quãng đường vật đi được và thời gian vật đi quãng đường đó"
+          "label": "Quãng đường vật đi được và thể tích của vật"
         },
         {
           "id": "opt-c",
@@ -31,7 +31,7 @@
           "label": "Chiều dài của vật và nhiệt độ môi trường"
         }
       ],
-      "correctId": "opt-b"
+      "correctId": "opt-a"
     },
     "hints": [
       {
@@ -80,22 +80,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Độ chính xác cao, loại bỏ sai số do phản xạ bấm tay của con người"
-        },
-        {
-          "id": "opt-b",
           "label": "Không cần dùng thước để đo quãng đường"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Tự động đo được khối lượng của xe khi chạy"
+        },
+        {
+          "id": "opt-c",
+          "label": "Độ chính xác cao, loại bỏ sai số do phản xạ bấm tay của con người"
         },
         {
           "id": "opt-d",
           "label": "Thiết bị không cần cấp điện vẫn hoạt động được"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -195,11 +195,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Phát và thu chùm sóng vô tuyến (radar) hoặc laser phản xạ từ xe đang chạy"
+          "label": "Dùng dây cáp cảm ứng gắn trực tiếp vào bánh xe ô tô"
         },
         {
           "id": "opt-b",
-          "label": "Dùng dây cáp cảm ứng gắn trực tiếp vào bánh xe ô tô"
+          "label": "Phát và thu chùm sóng vô tuyến (radar) hoặc laser phản xạ từ xe đang chạy"
         },
         {
           "id": "opt-c",
@@ -210,7 +210,7 @@
           "label": "Đo độ ồn do động cơ xe phát ra khi tăng tốc"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -451,22 +451,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Thời gian phản xạ thần kinh của trọng tài (độ trễ từ khi mắt nhìn thấy đến khi tay bấm nút)"
-        },
-        {
-          "id": "opt-b",
           "label": "Chiều dài đường chạy 100 m bị co dãn do nhiệt"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Tiếng súng phát lệnh chạy bị méo tiếng"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "Đồng hồ bấm giây chạy nhanh chậm theo nhiệt độ thời tiết"
+        },
+        {
+          "id": "opt-d",
+          "label": "Thời gian phản xạ thần kinh của trọng tài (độ trễ từ khi mắt nhìn thấy đến khi tay bấm nút)"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {

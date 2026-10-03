@@ -10,6 +10,7 @@ import {
   generateMolarConcentrationExercise,
   generateMetalAcidStoichiometry,
   generatePhysicsDynamicExercises,
+  generateBiologyDynamicExercises,
 } from './generators';
 
 const exerciseCache = new Map<string, Exercise[]>();
@@ -22,6 +23,11 @@ export async function loadExercises(lessonId: string): Promise<Exercise[]> {
   // Support dynamic on-the-fly generated physics exercises
   if (lessonId.startsWith('phy-gen-')) {
     return generatePhysicsDynamicExercises(lessonId);
+  }
+
+  // Support dynamic on-the-fly generated biology exercises
+  if (lessonId.startsWith('bio-gen-')) {
+    return generateBiologyDynamicExercises(lessonId);
   }
 
   // Support dynamic on-the-fly generated chemistry exercises
@@ -59,6 +65,26 @@ export async function loadExercises(lessonId: string): Promise<Exercise[]> {
       throw new Error(`Physics exercises not found for lesson "${lessonId}"`);
     }
     const module = (await physicsModules[matchedPath]()) as { default: unknown[] };
+    const raw: unknown[] = module.default;
+    const exercises: Exercise[] = raw.map((item, i) => {
+      const result = ExerciseSchema.safeParse(item);
+      if (!result.success) {
+        console.error(`Exercise ${i} in ${lessonId} failed validation:`, result.error.issues);
+        throw new Error(`Invalid exercise at index ${i}: ${result.error.issues[0]?.message}`);
+      }
+      return result.data;
+    });
+    exerciseCache.set(lessonId, exercises);
+    return exercises;
+  }
+
+  if (lessonId.startsWith('bio-')) {
+    const bioModules = import.meta.glob('./biology/**/*.exercises.json');
+    const matchedPath = Object.keys(bioModules).find((p) => p.endsWith(`/${lessonId}.exercises.json`));
+    if (!matchedPath) {
+      throw new Error(`Biology exercises not found for lesson "${lessonId}"`);
+    }
+    const module = (await bioModules[matchedPath]()) as { default: unknown[] };
     const raw: unknown[] = module.default;
     const exercises: Exercise[] = raw.map((item, i) => {
       const result = ExerciseSchema.safeParse(item);
@@ -486,6 +512,25 @@ export async function loadTheory(lessonId: string): Promise<TheoryContent | null
     if (!matchedPath) return null;
     try {
       const module = (await physicsTheories[matchedPath]()) as { default: unknown };
+      const raw: unknown = module.default;
+      const result = TheoryContentSchema.safeParse(raw);
+      if (!result.success) {
+        console.error(`Theory in ${lessonId} failed validation:`, result.error.issues);
+        throw new Error(`Invalid theory in ${lessonId}: ${result.error.issues[0]?.message}`);
+      }
+      theoryCache.set(lessonId, result.data);
+      return result.data;
+    } catch {
+      return null;
+    }
+  }
+
+  if (lessonId.startsWith('bio-')) {
+    const bioTheories = import.meta.glob('./biology/**/*.theory.json');
+    const matchedPath = Object.keys(bioTheories).find((p) => p.endsWith(`/${lessonId}.theory.json`));
+    if (!matchedPath) return null;
+    try {
+      const module = (await bioTheories[matchedPath]()) as { default: unknown };
       const raw: unknown = module.default;
       const result = TheoryContentSchema.safeParse(raw);
       if (!result.success) {

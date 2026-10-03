@@ -1,0 +1,297 @@
+[
+  {
+    "id": "bio-g6-b24-q01",
+    "lessonId": "bio-g6-b24",
+    "sgkBaiSo": 39,
+    "skillIds": ["bio-khao-sat-ngoai-thien-nhien"],
+    "difficulty": 1,
+    "prompt": "Ghép nối từng dụng cụ khảo sát thực địa sinh vật ngoài thiên nhiên (cột bên trái) với đúng công dụng nghiên cứu của nó (cột bên phải):",
+    "knowledge": ["bio-khao-sat-ngoai-thien-nhien"],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Kính lúp cầm tay",
+          "right": "Soi rõ các chi tiết nhỏ của gân lá, lông tơ, chân râu sâu bọ"
+        },
+        {
+          "left": "Vợt bắt côn trùng màng lưới mịn",
+          "right": "Bắt nhẹ nhàng bướm, chuồn chuồn mà không làm rách nát cánh"
+        },
+        {
+          "left": "Hộp nhựa có lỗ thoáng khí",
+          "right": "Nhốt tạm thời động vật nhỏ để quan sát rồi thả lại tự nhiên"
+        },
+        {
+          "left": "Sổ ghi chép và bút chì",
+          "right": "Ghi nhận số lượng loài, nơi sống, độ ẩm và vẽ phác họa mẫu vật"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Kính lúp để phóng đại chi tiết nhỏ; vợt lưới để bắt côn trùng bay."
+      },
+      {
+        "level": 2,
+        "text": "Hộp có lỗ khí để giữ động vật sống thở tạm; sổ tay để ghi chép dữ liệu."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu bài tập",
+        "body": "Nối 4 dụng cụ thực địa với chức năng chuẩn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu thiết bị",
+        "body": "Kính lúp: phóng đại; Vợt lưới: bắt côn trùng; Hộp thoáng khí: chứa mẫu sống tạm; Sổ ghi chép: lưu trữ dữ liệu thực địa."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất ghép cặp",
+        "body": "Khớp đúng 4 cặp dụng cụ thực địa."
+      }
+    ],
+    "finalSolution": "Kính lúp: Soi rõ chi tiết nhỏ; Vợt lưới: Bắt côn trùng; Hộp thoáng khí: Nhốt tạm động vật nhỏ; Sổ ghi chép: Ghi chép dữ liệu và vẽ phác họa.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Dùng hộp kín mít không có lỗ thở làm động vật ngạt thở chết."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b24-q02",
+    "lessonId": "bio-g6-b24",
+    "sgkBaiSo": 39,
+    "skillIds": ["bio-khao-sat-ngoai-thien-nhien"],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp các bước thực hiện một buổi khảo sát sinh vật ngoài thiên nhiên theo đúng trình tự phương pháp khoa học:",
+    "knowledge": ["bio-khao-sat-ngoai-thien-nhien"],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "1. Chuẩn bị đầy đủ dụng cụ bảo hộ, kính lúp, vợt bắt mẫu và sổ tay ghi chép",
+        "2. Di chuyển theo tuyến khảo sát đã định, quan sát và ghi chép thông tin thảm thực vật",
+        "3. Bắt tạm thời một số côn trùng hoặc động vật nhỏ vào hộp thoáng khí để soi chi tiết",
+        "4. Thả ngay động vật về môi trường tự nhiên, thu dọn rác và tổng hợp báo cáo thu hoạch"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khâu chuẩn bị luôn đi đầu tiên trước khi xuất phát."
+      },
+      {
+        "level": 2,
+        "text": "Thả động vật về tự nhiên và viết báo cáo là khâu cuối cùng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quy trình khảo sát thực địa",
+        "body": "Xếp 4 bước theo đúng trình tự nghiên cứu sinh thái."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Trình tự chuẩn",
+        "body": "Chuẩn bị dụng cụ → Đi theo tuyến quan sát → Bắt mẫu tạm thời để soi → Thả mẫu và tổng hợp báo cáo."
+      },
+      {
+        "kind": "answer",
+        "title": "Thứ tự chính xác",
+        "body": "Từ bước 1 đến bước 4."
+      }
+    ],
+    "finalSolution": "Trình tự thực hiện: Chuẩn bị trang thiết bị → Di chuyển quan sát theo tuyến → Bắt mẫu sống tạm thời để soi kính → Thả mẫu về tự nhiên và báo cáo kết quả.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Quên không thả động vật về tự nhiên mà đem nhốt mang về nhà làm chết sinh vật."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b24-q03",
+    "lessonId": "bio-g6-b24",
+    "sgkBaiSo": 39,
+    "skillIds": ["bio-khao-sat-ngoai-thien-nhien"],
+    "difficulty": 1,
+    "prompt": "Phân loại các hành vi sau của học sinh trong chuyến dã ngoại khảo sát thiên nhiên vào hai nhóm:",
+    "knowledge": ["bio-khao-sat-ngoai-thien-nhien", "bio-da-dang-sinh-hoc"],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "b-civil", "label": "Hành vi văn minh, bảo vệ tự nhiên" },
+        { "id": "b-wrong", "label": "Hành vi sai trái, gây hại môi trường" }
+      ],
+      "items": [
+        { "id": "it-1", "label": "Đi theo lối mòn chỉ dẫn, không giẫm đạp lên thảm thực vật", "bucketId": "b-civil" },
+        { "id": "it-2", "label": "Dùng điện thoại chụp ảnh lại các loài hoa rừng và bướm lạ", "bucketId": "b-civil" },
+        { "id": "it-3", "label": "Thả nhẹ nhàng con bọ cánh cứng về lại cành cây sau khi soi kính lúp", "bucketId": "b-civil" },
+        { "id": "it-4", "label": "Bẻ trộm các nhánh lan rừng quý hiếm nhét vào ba lô mang về", "bucketId": "b-wrong" },
+        { "id": "it-5", "label": "Dùng gậy chọc phá các tổ chim non trên cành cây cao", "bucketId": "b-wrong" },
+        { "id": "it-6", "label": "Vứt bừa bãi vỏ chai nước và túi nilon lại trong rừng", "bucketId": "b-wrong" }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đi đúng lối, chụp ảnh và thả lại con vật là hành vi đúng chuẩn nhà sinh học."
+      },
+      {
+        "level": 2,
+        "text": "Bẻ cành, phá tổ chim và vứt rác nhựa là hành vi phá hoại môi trường."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 6 hành vi dã ngoại",
+        "body": "Đánh giá theo nguyên tắc bảo vệ tự nhiên."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu đạo đức sinh học",
+        "body": "Văn minh: Đi theo lối mòn, chụp ảnh, thả lại sinh vật. Sai trái: Bẻ lan rừng, phá tổ chim, xả rác bừa bãi."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất phân loại",
+        "body": "3 hành vi văn minh và 3 hành vi sai trái."
+      }
+    ],
+    "finalSolution": "Văn minh: Đi theo lối mòn, Chụp ảnh lưu niệm, Thả sinh vật về chỗ cũ. Sai trái: Bẻ trộm lan rừng, Chọc phá tổ chim, Xả rác nhựa trong rừng.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nghĩ rằng ngắt một bông hoa rừng mang về ngắm là hành vi vô hại."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b24-q04",
+    "lessonId": "bio-g6-b24",
+    "sgkBaiSo": 39,
+    "skillIds": ["bio-khao-sat-ngoai-thien-nhien"],
+    "difficulty": 1,
+    "prompt": "Khi đi khảo sát ở những vùng rừng ẩm ướt hoặc ven suối nhiều cây bụi, học sinh cần trang bị trang phục nào để đảm bảo an toàn tuyệt đối?",
+    "knowledge": ["bio-khao-sat-ngoai-thien-nhien"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Quần áo dài tay dày dặn, đội mũ nón và đi giày thể thao có tất cổ cao chống vắt cắn" },
+        { "id": "opt-b", "label": "Mặc quần soóc ngắn và đi dép lê xỏ ngón cho mát mẻ" },
+        { "id": "opt-c", "label": "Đi chân đất để cảm nhận độ ẩm của đất rừng chân thực nhất" },
+        { "id": "opt-d", "label": "Mặc áo mưa bọc kín từ đầu đến chân không hở một lỗ thở" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Rừng ẩm thường có nhiều vắt, muỗi, gai góc và côn trùng cắn."
+      },
+      {
+        "level": 2,
+        "text": "Quần áo dài tay và giày kín cổ là trang phục bảo hộ bắt buộc."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Trang phục an toàn thực địa",
+        "body": "Đề bài hỏi lựa chọn trang phục khi đi khảo sát rừng ẩm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc an toàn rừng",
+        "body": "Quần áo dài tay, giày thể thao và tất cổ cao giúp chống gai cào, chống muỗi vắt và giảm thiểu nguy cơ bị côn trùng, rắn rết tấn công."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn phương án đúng",
+        "body": "Lựa chọn chính xác là trang phục chuẩn bảo hộ."
+      }
+    ],
+    "finalSolution": "Cần mặc quần áo dài tay dày dặn, đội mũ và đi giày thể thao có tất cao cổ để tránh bị gai rừng cào xước và ngăn ngừa vắt, muỗi, côn trùng cắn.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Đi dép lê hoặc chân đất vào rừng dẫn đến nguy cơ bị gai cắm, vắt hút máu và trượt ngã."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b24-q05",
+    "lessonId": "bio-g6-b24",
+    "sgkBaiSo": 39,
+    "skillIds": ["bio-khao-sat-ngoai-thien-nhien"],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về kỹ năng tìm hiểu sinh vật ngoài thiên nhiên:",
+    "knowledge": ["bio-khao-sat-ngoai-thien-nhien"],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Khẩu hiệu văn minh khi đi thực địa là: 'Không lấy gì ngoài những bức ảnh, không để lại gì ngoài những dấu chân'.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Khi khảo sát thấy một đàn kiến hoặc đàn ong rừng, nên dùng que chọc phá tổ của chúng để xem chúng có bay ra không.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Ở những nơi có nhiều ánh sáng chiếu vào, mật độ các cây ưa sáng xanh tốt sẽ cao hơn so với dưới tán râm mát.",
+          "correct": true
+        },
+        {
+          "id": "st-4",
+          "text": "Học sinh được phép tự ý tách đoàn đi một mình vào sâu trong rừng rậm mà không cần xin phép giáo viên phụ trách.",
+          "correct": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Chọc phá tổ ong rừng sẽ bị ong đốt hàng loạt cực kỳ nguy hiểm đến tính mạng."
+      },
+      {
+        "level": 2,
+        "text": "Tự ý đi một mình trong rừng dễ bị lạc và gặp nguy hiểm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Đánh giá từng câu về an toàn thực địa và sinh thái học."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra chi tiết",
+        "body": "1. Khẩu hiệu văn minh: Đúng. 2. Chọc tổ ong: Sai (ong đốt nguy hiểm chết người). 3. Nơi sáng có nhiều cây ưa sáng: Đúng. 4. Tự ý tách đoàn một mình: Sai (nguy cơ đi lạc và tai nạn)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Ý 1: Đúng; Ý 2: Sai; Ý 3: Đúng; Ý 4: Sai."
+      }
+    ],
+    "finalSolution": "Phát biểu 1 và 3 đúng. Phát biểu 2 sai (tuyệt đối không chọc tổ ong vì nguy cơ bị đốt nguy hiểm). Phát biểu 4 sai (luôn phải đi theo nhóm dưới sự quản lý của thầy cô).",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng ong rừng hiền lành nên có thể chọc tổ để nghiên cứu."
+      }
+    ]
+  }
+]

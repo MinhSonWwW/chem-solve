@@ -1,0 +1,523 @@
+[
+  {
+    "id": "bio-g7-b01-q01",
+    "lessonId": "bio-g7-b01",
+    "sgkBaiSo": 21,
+    "skillIds": [
+      "bio-trao-doi-chat-nang-luong"
+    ],
+    "difficulty": 1,
+    "prompt": "Tập hợp các biến đổi hóa học diễn ra bên trong tế bào của sinh vật và sự trao đổi các chất giữa cơ thể với môi trường được gọi là gì?",
+    "knowledge": [
+      "kb-bio-g7-trao-doi-chat-khai-niem"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Trao đổi chất"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cảm ứng sinh học"
+        },
+        {
+          "id": "opt-c",
+          "label": "Sinh sản vô tính"
+        },
+        {
+          "id": "opt-d",
+          "label": "Biến thái hoàn toàn"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Quá trình này bao gồm việc lấy chất dinh dưỡng, nước, khí vào cơ thể và thải chất cặn bã ra ngoài."
+      },
+      {
+        "level": 2,
+        "text": "Thuật ngữ chính xác là 'Trao đổi chất'."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận biết khái niệm cốt lõi",
+        "body": "Đề bài nêu định nghĩa về quá trình biến đổi hóa học trong tế bào và trao đổi với môi trường ngoài."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Khái niệm theo SGK KHTN 7",
+        "body": "Trao đổi chất là tập hợp các phản ứng biến đổi hóa học trong tế bào và quá trình trao đổi chất giữa cơ thể với môi trường."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là Trao đổi chất."
+      }
+    ],
+    "finalSolution": "Trao đổi chất là quá trình cơ bản duy trì sự sống của mọi cơ thể sinh vật.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm lẫn giữa trao đổi chất với cảm ứng (khả năng phản ứng lại kích thích)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g7-b01-q02",
+    "lessonId": "bio-g7-b01",
+    "sgkBaiSo": 21,
+    "skillIds": [
+      "bio-trao-doi-chat-nang-luong"
+    ],
+    "difficulty": 1,
+    "prompt": "Dạng năng lượng được tích lũy chủ yếu trong các liên kết hóa học của hợp chất hữu cơ (như tinh bột, glucose, lipid) bên trong cơ thể sinh vật là gì?",
+    "knowledge": [
+      "kb-bio-g7-chuyen-hoa-nang-luong"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hóa năng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Quang năng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cơ năng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Điện năng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Năng lượng nằm trong các liên kết hóa học giữa các nguyên tử cấu tạo nên phân tử chất dinh dưỡng."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 21 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định dạng năng lượng",
+        "body": "Năng lượng lưu trữ trong liên kết hóa học phân tử hữu cơ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Khái niệm hóa năng",
+        "body": "Hóa năng là dạng năng lượng tiềm ẩn được lưu trữ trong liên kết giữa các nguyên tử, phân tử chất hữu cơ."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Đáp án chính xác là Hóa năng."
+      }
+    ],
+    "finalSolution": "Năng lượng trong thức ăn và mô cơ thể được dự trữ dưới dạng Hóa năng.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm với cơ năng (năng lượng sinh ra do chuyển động co cơ)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g7-b01-q03",
+    "lessonId": "bio-g7-b01",
+    "sgkBaiSo": 21,
+    "skillIds": [
+      "bio-trao-doi-chat-nang-luong"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong hoạt động quang hợp ở lá cây, dạng chuyển hóa năng lượng chủ yếu nào đã diễn ra?",
+    "knowledge": [
+      "kb-bio-g7-chuyen-hoa-nang-luong"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Quang năng chuyển hóa thành Hóa năng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hóa năng chuyển hóa thành Nhiệt năng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Nhiệt năng chuyển hóa thành Cơ năng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cơ năng chuyển hóa thành Quang năng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Lá cây hấp thụ năng lượng mặt trời (ánh sáng) để tạo ra tinh bột."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 21 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định chuyển hóa trong quang hợp",
+        "body": "Năng lượng ánh sáng mặt trời là quang năng; chất hữu cơ tạo ra chứa hóa năng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Quang năng chuyển hóa thành Hóa năng trong quá trình quang hợp."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Quang năng được diệp lục hấp thụ và chuyển thành hóa năng tích lũy trong chất hữu cơ."
+      }
+    ],
+    "finalSolution": "Quang năng chuyển hóa thành Hóa năng trong quá trình quang hợp.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b01-q04",
+    "lessonId": "bio-g7-b01",
+    "sgkBaiSo": 21,
+    "skillIds": [
+      "bio-trao-doi-chat-nang-luong"
+    ],
+    "difficulty": 2,
+    "prompt": "Nhận định nào sau đây là ĐÚNG khi nói về mối quan hệ giữa trao đổi chất và chuyển hóa năng lượng ở sinh vật?",
+    "knowledge": [
+      "kb-bio-g7-moi-quan-he-tdc-nl"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Trao đổi chất và chuyển hóa năng lượng luôn diễn ra đồng thời và gắn bó mật thiết với nhau"
+        },
+        {
+          "id": "opt-b",
+          "label": "Trao đổi chất chỉ diễn ra khi cơ thể ngừng chuyển hóa năng lượng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chuyển hóa năng lượng chỉ xảy ra ở động vật, không xảy ra ở thực vật"
+        },
+        {
+          "id": "opt-d",
+          "label": "Trao đổi chất là quá trình hoàn toàn độc lập, không liên quan đến năng lượng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mọi phản ứng tổng hợp hoặc phân giải chất đều đi kèm với sự tích lũy hoặc giải phóng năng lượng."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 21 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu câu hỏi",
+        "body": "Nhận định nào sau đây là ĐÚNG khi nói về mối quan hệ giữa trao đổi chất và chuyển hóa năng lượng ở sinh vật?"
+      },
+      {
+        "kind": "knowledge",
+        "title": "Mối quan hệ thống nhất",
+        "body": "Trao đổi chất cung cấp nguyên liệu cho chuyển hóa năng lượng; ngược lại chuyển hóa năng lượng cung cấp ATP cho các phản ứng trao đổi chất."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn khẳng định đúng",
+        "body": "Hai quá trình luôn diễn ra đồng thời, không thể tách rời."
+      }
+    ],
+    "finalSolution": "Trao đổi chất và chuyển hóa năng lượng là hai mặt của một quá trình thống nhất trong tế bào sống.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b01-q05",
+    "lessonId": "bio-g7-b01",
+    "sgkBaiSo": 21,
+    "skillIds": [
+      "bio-trao-doi-chat-nang-luong"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi vận động viên chạy cự li dài, cơ thể nóng lên, thở nhanh và toát nhiều mồ hôi. Hiện tượng này chứng minh điều gì về chuyển hóa năng lượng?",
+    "knowledge": [
+      "kb-bio-g7-chuyen-hoa-nang-luong"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Một phần hóa năng từ chất dinh dưỡng đã chuyển hóa thành cơ năng và giải phóng nhiều nhiệt năng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cơ thể vận động viên đã chuyển hóa nhiệt năng từ không khí thành quang năng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Quá trình trao đổi chất đã bị tạm dừng hoàn toàn để tiết kiệm năng lượng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Năng lượng trong cơ thể không thay đổi dạng trong suốt quá trình chạy"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cơ bắp co giãn cần cơ năng, đồng thời sinh ra lượng nhiệt lớn khiến thân nhiệt tăng cao."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 21 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích hiện tượng thực tế",
+        "body": "Cơ co để chạy (cơ năng), người nóng lên và toát mồ hôi tỏa nhiệt (nhiệt năng)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế phân giải",
+        "body": "Hóa năng trong glucose/glycogen phân giải tạo ra ATP giúp co cơ, phần năng lượng dư thừa tỏa ra dưới dạng nhiệt năng."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Hóa năng chuyển hóa thành cơ năng và giải phóng nhiệt năng."
+      }
+    ],
+    "finalSolution": "Khi vận động, hóa năng chuyển thành cơ năng và nhiệt năng, kích thích toát mồ hôi để hạ nhiệt cơ thể.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b01-q06",
+    "lessonId": "bio-g7-b01",
+    "sgkBaiSo": 21,
+    "skillIds": [
+      "bio-trao-doi-chat-nang-luong"
+    ],
+    "difficulty": 2,
+    "prompt": "Những chất nào sau đây là sản phẩm chất thải được cơ thể sinh vật đào thải ra môi trường ngoài trong quá trình trao đổi chất?",
+    "knowledge": [
+      "kb-bio-g7-trao-doi-chat-khai-niem"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Khí carbon dioxide (CO2), mồ hôi, nước tiểu"
+        },
+        {
+          "id": "opt-b",
+          "label": "Khí oxygen (O2) và chất béo dự trữ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Protein và tinh bột nguyên vẹn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khoáng chất cần thiết và vitamin"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Các chất cặn bã sinh ra sau quá trình hô hấp tế bào và lọc thải ở thận, da."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 21 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Chất đào thải ra môi trường",
+        "body": "Khí CO2 từ hô hấp, nước tiểu và mồ hôi từ bài tiết."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Sinh vật lấy dinh dưỡng, O2/CO2 và đào thải các chất cặn bã như CO2, mồ hôi, nước tiểu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "CO2, mồ hôi, nước tiểu là chất thải của quá trình trao đổi chất."
+      }
+    ],
+    "finalSolution": "Sinh vật lấy dinh dưỡng, O2/CO2 và đào thải các chất cặn bã như CO2, mồ hôi, nước tiểu.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b01-q07",
+    "lessonId": "bio-g7-b01",
+    "sgkBaiSo": 21,
+    "skillIds": [
+      "bio-trao-doi-chat-nang-luong"
+    ],
+    "difficulty": 3,
+    "prompt": "Hãy ghép mỗi hoạt động sống với dạng chuyển hóa năng lượng tương ứng:",
+    "knowledge": [
+      "kb-bio-g7-chuyen-hoa-nang-luong"
+    ],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Cây xanh quang hợp dưới ánh nắng",
+          "right": "Quang năng → Hóa năng"
+        },
+        {
+          "left": "Vận động viên nâng tạ",
+          "right": "Hóa năng → Cơ năng"
+        },
+        {
+          "left": "Duy trì thân nhiệt 37°C ở người",
+          "right": "Hóa năng → Nhiệt năng"
+        },
+        {
+          "left": "Đom đóm phát sáng ban đêm",
+          "right": "Hóa năng → Quang năng"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đom đóm dùng năng lượng ATP từ phản ứng sinh hóa để phát ra ánh sáng huỳnh quang."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 21 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích từng hiện tượng",
+        "body": "Quang hợp: ánh sáng mặt trời thành liên kết hữu cơ. Nâng tạ: phân giải thức ăn thành lực co cơ. Thân nhiệt: giải phóng nhiệt lượng. Đom đóm: chất phát quang biến hóa năng thành ánh sáng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Năng lượng trong cơ thể chuyển hóa linh hoạt giữa hóa năng, cơ năng, nhiệt năng và quang năng."
+      },
+      {
+        "kind": "answer",
+        "title": "Ghép đôi chính xác",
+        "body": "Ghép đúng 4 cặp tương ứng theo nguyên lí chuyển hóa năng lượng."
+      }
+    ],
+    "finalSolution": "Năng lượng trong cơ thể chuyển hóa linh hoạt giữa hóa năng, cơ năng, nhiệt năng và quang năng.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b01-q08",
+    "lessonId": "bio-g7-b01",
+    "sgkBaiSo": 21,
+    "skillIds": [
+      "bio-trao-doi-chat-nang-luong"
+    ],
+    "difficulty": 3,
+    "prompt": "Nếu một cơ thể sinh vật ngừng hoàn toàn quá trình trao đổi chất và chuyển hóa năng lượng thì điều gì chắc chắn sẽ xảy ra?",
+    "knowledge": [
+      "kb-bio-g7-vai-tro-trao-doi-chat"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Sinh vật sẽ mất dần năng lượng duy trì sự sống và dẫn tới cái chết"
+        },
+        {
+          "id": "opt-b",
+          "label": "Sinh vật chuyển sang trạng thái sinh sản vô tính để tự hồi sinh"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cơ thể sinh vật sẽ tiếp tục lớn lên nhờ năng lượng từ môi trường ngoài"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tế bào sẽ tự động nhân đôi liên tục mà không cần nguyên liệu"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trao đổi chất và chuyển hóa năng lượng là dấu hiệu đặc trưng sống còn của mọi sinh vật."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 21 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu câu hỏi",
+        "body": "Nếu một cơ thể sinh vật ngừng hoàn toàn quá trình trao đổi chất và chuyển hóa năng lượng thì điều gì chắc chắn sẽ xảy ra?"
+      },
+      {
+        "kind": "knowledge",
+        "title": "Ý nghĩa sống còn",
+        "body": "Tế bào cần liên tục năng lượng và vật chất để tự sửa chữa và duy trì cấu trúc. Ngừng trao đổi chất đồng nghĩa với cái chết sinh học."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Sinh vật mất năng lượng duy trì sự sống và tử vong."
+      }
+    ],
+    "finalSolution": "Trao đổi chất và chuyển hóa năng lượng là điều kiện tiên quyết để duy trì sự sống.",
+    "commonMistakes": []
+  }
+]

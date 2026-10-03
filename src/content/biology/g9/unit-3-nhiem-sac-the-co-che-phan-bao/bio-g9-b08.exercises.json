@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g9-b08-q01",
+    "lessonId": "bio-g9-b08",
+    "sgkBaiSo": 43,
+    "skillIds": ["bio9-nguyen-phan-giam-phan"],
+    "difficulty": 1,
+    "prompt": "Quá trình nguyên phân diễn ra ở loại tế bào nào và kết quả tạo ra bao nhiêu tế bào con từ một tế bào mẹ ban đầu?",
+    "knowledge": ["kb-bio-g9-nguyen-phan-dien-bien"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Diễn ra ở tế bào sinh dưỡng và tế bào sinh dục sơ khai; từ 1 tế bào mẹ (2n) tạo ra 2 tế bào con có bộ NST (2n) giống hệt nhau và giống mẹ" },
+        { "id": "opt-b", "label": "Diễn ra ở tế bào sinh dục chín; từ 1 tế bào mẹ tạo ra 4 tế bào con có bộ NST giảm đi một nửa (n)" },
+        { "id": "opt-c", "label": "Chỉ diễn ra ở tế bào hồng cầu; tạo ra vô số tế bào con không chứa nhân" },
+        { "id": "opt-d", "label": "Diễn ra ở mọi loại tế bào; từ 1 tế bào mẹ tạo ra 8 tế bào con mang bộ NST tam bội (3n)" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Nguyên phân là quá trình nhân đôi tế bào thông thường để cơ thể lớn lên." },
+      { "level": 2, "text": "Tế bào con mang bộ NST nguyên vẹn giống hệt tế bào mẹ ban đầu (2n)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đối tượng tế bào của nguyên phân", "body": "Nguyên phân diễn ra ở các tế bào sinh dưỡng (soma) và các tế bào sinh dục sơ khai trong cơ thể." },
+      { "kind": "knowledge", "title": "Kết quả phân bào", "body": "Từ 1 tế bào mẹ lưỡng bội (2n), trải qua 1 lần phân bào nguyên phân sẽ tạo ra 2 tế bào con mang bộ NST lưỡng bội (2n) hoàn toàn giống nhau và giống tế bào mẹ." },
+      { "kind": "answer", "title": "Kết luận", "body": "Ở tế bào sinh dưỡng/sinh dục sơ khai; tạo 2 tế bào con (2n) giống mẹ." }
+    ],
+    "finalSolution": "Quá trình nguyên phân diễn ra ở tế bào sinh dưỡng và sinh dục sơ khai; từ 1 tế bào mẹ (2n) tạo 2 tế bào con (2n) giống hệt nhau và giống mẹ.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm kết quả của nguyên phân (tạo 2 tế bào con 2n) với giảm phân (tạo 4 tế bào con n)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b08-q02",
+    "lessonId": "bio-g9-b08",
+    "sgkBaiSo": 43,
+    "skillIds": ["bio9-nguyen-phan-giam-phan"],
+    "difficulty": 1,
+    "prompt": "Tại kì giữa của quá trình nguyên phân, các nhiễm sắc thể kép có đặc điểm sắp xếp như thế nào trên thoi vô sắc?",
+    "knowledge": ["kb-bio-g9-nguyen-phan-dien-bien"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Co xoắn cực đại và tập trung xếp thành một hàng trên mặt phẳng xích đạo" },
+        { "id": "opt-b", "label": "Xếp thành hai hàng song song theo từng cặp tương đồng" },
+        { "id": "opt-c", "label": "Phân tán ngẫu nhiên về hai cực của tế bào" },
+        { "id": "opt-d", "label": "Dãn xoắn tối đa và bám dính vào màng nhân" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Ở kì giữa nguyên phân các NST đứng nối tiếp nhau thành 1 hàng duy nhất." },
+      { "level": 2, "text": "Mỗi NST kép đính với sợi tơ vô sắc từ cả hai cực tế bào tại tâm động." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Hiện tượng ở kì giữa nguyên phân", "body": "Tại kì giữa nguyên phân, NST đạt mức độ co xoắn ngắn nhất và rõ nét nhất." },
+      { "kind": "knowledge", "title": "Vị trí sắp xếp", "body": "Toàn bộ các NST kép di chuyển về mặt phẳng xích đạo của thoi phân bào và xếp ngay ngắn thành đúng một hàng duy nhất." },
+      { "kind": "answer", "title": "Kết luận", "body": "NST kép co xoắn cực đại và xếp thành một hàng trên mặt phẳng xích đạo." }
+    ],
+    "finalSolution": "Tại kì giữa nguyên phân, các NST kép co xoắn cực đại và xếp thành một hàng trên mặt phẳng xích đạo của thoi vô sắc.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm với kì giữa I của giảm phân (xếp thành hai hàng song song)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b08-q03",
+    "lessonId": "bio-g9-b08",
+    "sgkBaiSo": 43,
+    "skillIds": ["bio9-nguyen-phan-giam-phan"],
+    "difficulty": 2,
+    "prompt": "Sự kiện quan trọng nhất diễn ra tại kì sau của quá trình nguyên phân là gì?",
+    "knowledge": ["kb-bio-g9-nguyen-phan-dien-bien"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tâm động của mỗi NST kép chẻ đôi, hai chromatid tách nhau thành 2 NST đơn phân li về 2 cực tế bào" },
+        { "id": "opt-b", "label": "Các NST tự nhân đôi từ dạng đơn thành dạng kép" },
+        { "id": "opt-c", "label": "Màng nhân và nhân con tái lập bao bọc lấy các NST" },
+        { "id": "opt-d", "label": "Các NST tương đồng bắt cặp tiếp hợp và trao đổi chéo cho nhau" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Kì sau là kì phân li của vật chất di truyền về hai phía đối diện của tế bào." },
+      { "level": 2, "text": "Tâm động bị chẻ đôi giải phóng 2 chromatid chị em thành 2 NST đơn độc lập." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Diễn biến kì sau nguyên phân", "body": "Sợi tơ của thoi phân bào co rút ngắn lại kéo về hai cực tế bào." },
+      { "kind": "knowledge", "title": "Cơ chế chẻ tâm động", "body": "Tâm động của từng NST kép bị tách đôi, 2 nhiễm sắc tử chị em (chromatid) rời nhau ra trở thành 2 NST đơn và được kéo trượt dọc theo thoi phân bào về 2 cực đối diện." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tâm động chẻ đôi, hai chromatid tách thành 2 NST đơn phân li về 2 cực." }
+    ],
+    "finalSolution": "Tại kì sau nguyên phân, tâm động của mỗi NST kép chẻ đôi, tách rời 2 chromatid thành 2 NST đơn phân li đồng đều về hai cực tế bào.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng NST nhân đôi ở kì sau (NST chỉ nhân đôi ở kì trung gian)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b08-q04",
+    "lessonId": "bio-g9-b08",
+    "sgkBaiSo": 43,
+    "skillIds": ["bio9-nguyen-phan-giam-phan"],
+    "difficulty": 2,
+    "prompt": "Hiện tượng tiếp hợp và trao đổi chéo giữa các đoạn chromatid khác nguồn gốc trong cặp NST tương đồng diễn ra ở kì nào của giảm phân và có ý nghĩa gì?",
+    "knowledge": ["kb-bio-g9-giam-phan-dien-bien-1", "kb-bio-g9-giam-phan-y-nghia-bien-di"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Diễn ra ở kì đầu I của giảm phân; có ý nghĩa tạo ra các tổ hợp gen mới (biến dị tổ hợp phong phú)" },
+        { "id": "opt-b", "label": "Diễn ra ở kì giữa II của giảm phân; có ý nghĩa tăng gấp đôi lượng DNA tế bào" },
+        { "id": "opt-c", "label": "Diễn ra ở kì sau I của giảm phân; có ý nghĩa tiêu diệt các gen đột biến có hại" },
+        { "id": "opt-d", "label": "Diễn ra ở kì cuối II; có ý nghĩa tạo ra các tế bào con giống hệt mẹ" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Sự tiếp hợp chỉ xảy ra giữa hai NST tương đồng khi chúng tìm thấy nhau lúc mới bắt đầu giảm phân I." },
+      { "level": 2, "text": "Trao đổi chéo các đoạn chromatid tạo ra sự hoán vị gen, sinh ra vô số biến dị tổ hợp." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định thời điểm tiếp hợp", "body": "Hiện tượng các cặp NST kép tương đồng tiếp xúc kề sát nhau diễn ra ở kì đầu của lần giảm phân I (Kì đầu I)." },
+      { "kind": "knowledge", "title": "Ý nghĩa của trao đổi chéo", "body": "Khi tiếp hợp, các chromatid không chị em có thể đứt ra và trao đổi đoạn tương ứng cho nhau, dẫn tới sự tái tổ hợp các allele của bố và mẹ tạo nên các giao tử mang biến dị tổ hợp mới." },
+      { "kind": "answer", "title": "Kết luận", "body": "Diễn ra ở kì đầu I; tạo ra các tổ hợp gen mới (biến dị tổ hợp)." }
+    ],
+    "finalSolution": "Hiện tượng tiếp hợp và trao đổi chéo diễn ra ở kì đầu I của giảm phân, tạo ra các tổ hợp gen mới là nguồn biến dị tổ hợp phong phú cho sinh sản hữu tính.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn diễn ra ở kì đầu II của giảm phân hoặc kì đầu nguyên phân." }
+    ]
+  },
+  {
+    "id": "bio-g9-b08-q05",
+    "lessonId": "bio-g9-b08",
+    "sgkBaiSo": 43,
+    "skillIds": ["bio9-nguyen-phan-giam-phan"],
+    "difficulty": 2,
+    "prompt": "Tại sao ở kì sau I của giảm phân, mặc dù các nhiễm sắc thể phân li về hai cực tế bào nhưng số lượng nhiễm sắc thể chưa bị chẻ đôi tâm động?",
+    "knowledge": ["kb-bio-g9-giam-phan-dien-bien-1"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Vì ở kì sau I chỉ có sự phân li độc lập của các cặp NST kép tương đồng, tâm động không chẻ đôi nên các NST vẫn ở trạng thái kép" },
+        { "id": "opt-b", "label": "Vì tế bào đã loại bỏ toàn bộ thoi phân bào nên tâm động không chịu lực kéo" },
+        { "id": "opt-c", "label": "Vì các chromatid đã tan biến hoàn toàn thành các nucleotide tự do" },
+        { "id": "opt-d", "label": "Vì ở kì sau I các NST đã hợp nhất thành một khối chất nhiễm sắc khổng lồ" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Trong cặp tương đồng có 2 chiếc NST kép: 1 chiếc đi về cực này, 1 chiếc đi về cực kia." },
+      { "level": 2, "text": "Tâm động của mỗi chiếc NST kép vẫn giữ nguyên; chỉ sang kì sau II thì tâm động mới chẻ đôi." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Cơ chế phân li ở kì sau I", "body": "Ở kì giữa I, các cặp NST kép tương đồng xếp thành 2 hàng. Khi sang kì sau I, mỗi chiếc NST kép trong cặp tương đồng di chuyển về một cực của tế bào." },
+      { "kind": "knowledge", "title": "Trạng thái tâm động", "body": "Tâm động của các NST kép không bị chẻ đôi ở kì sau I. Do đó, tế bào con sinh ra sau giảm phân I chứa n NST kép (giảm một nửa số lượng NST so với mẹ 2n kép)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Ở kì sau I chỉ phân li cặp kép tương đồng, tâm động không chẻ đôi." }
+    ],
+    "finalSolution": "Ở kì sau I của giảm phân, các NST kép tương đồng phân li độc lập về hai cực mà không chẻ tâm động, do đó NST vẫn ở trạng thái kép (n kép).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Tưởng rằng kì sau I cũng chẻ đôi tâm động giống như kì sau nguyên phân." }
+    ]
+  },
+  {
+    "id": "bio-g9-b08-q06",
+    "lessonId": "bio-g9-b08",
+    "sgkBaiSo": 43,
+    "skillIds": ["bio9-nguyen-phan-giam-phan"],
+    "difficulty": 2,
+    "prompt": "Từ một tế bào sinh tinh có kiểu gen Aa giảm phân bình thường tạo ra 4 tinh trùng. Số loại giao tử thực tế được tạo ra từ tế bào sinh tinh này là bao nhiêu?",
+    "knowledge": ["kb-bio-g9-giam-phan-dien-bien-2"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "2 loại tinh trùng (gồm 2 tinh trùng mang gen A và 2 tinh trùng mang gen a)" },
+        { "id": "opt-b", "label": "4 loại tinh trùng khác nhau hoàn toàn" },
+        { "id": "opt-c", "label": "1 loại tinh trùng duy nhất mang kiểu gen Aa" },
+        { "id": "opt-d", "label": "3 loại tinh trùng với tỉ lệ 1 : 2 : 1" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Một tế bào sinh tinh (2n) giảm phân tạo ra đúng 4 tinh trùng (n)." },
+      { "level": 2, "text": "Tế bào Aa nhân đôi thành AAaa; giảm phân I phân li A-A về một cực, a-a về một cực; giảm phân II tách đôi tạo 2 tinh trùng A và 2 tinh trùng a." }
+    ],
+    "steps": [
+      { "kind": "compute", "title": "Sơ đồ giảm phân của 1 tế bào Aa", "body": "Nhân đôi kì trung gian: Tế bào trở thành AAaa (NST kép mang allele A và a)." },
+      { "kind": "compute", "title": "Giảm phân I và II", "body": "Kì sau I: NST kép AA đi về 1 cực, aa đi về 1 cực → Tạo 2 tế bào mang AA và aa. Giảm phân II: Tách tâm động tạo ra 2 tinh trùng mang allele A và 2 tinh trùng mang allele a." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tạo ra 2 loại giao tử (2 tinh trùng A : 2 tinh trùng a)." }
+    ],
+    "finalSolution": "Một tế bào sinh tinh Aa giảm phân tạo 4 tinh trùng nhưng chỉ thuộc 2 loại giao tử với tỉ lệ bằng nhau: 2 tinh trùng A và 2 tinh trùng a.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm số lượng tinh trùng (4 tinh trùng) với số loại tinh trùng (chỉ có 2 loại A và a)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b08-q07",
+    "lessonId": "bio-g9-b08",
+    "sgkBaiSo": 43,
+    "skillIds": ["bio9-nguyen-phan-giam-phan"],
+    "difficulty": 1,
+    "prompt": "Ở động vật, kết quả của quá trình giảm phân từ một tế bào sinh trứng (2n) là gì?",
+    "knowledge": ["kb-bio-g9-giam-phan-dien-bien-2"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tạo ra 1 tế bào trứng (n) có kích thước lớn và 3 thể cực (n) có kích thước nhỏ bị tiêu biến" },
+        { "id": "opt-b", "label": "Tạo ra 4 tế bào trứng (n) đều có khả năng thụ tinh như nhau" },
+        { "id": "opt-c", "label": "Tạo ra 2 tế bào trứng (2n) có khả năng sinh sản đơn tính" },
+        { "id": "opt-d", "label": "Tạo ra 1 trứng mang bộ NST 2n và 1 thể cực mang bộ NST n" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Khác với tế bào sinh tinh (tạo 4 tinh trùng đều hoạt động), tế bào sinh trứng phân chia tế bào chất không đồng đều." },
+      { "level": 2, "text": "Hầu hết chất dinh dưỡng tập trung vào 1 tế bào trứng duy nhất để nuôi hợp tử sau này." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đặc điểm tạo trứng ở động vật", "body": "Quá trình phân chia tế bào chất trong giảm phân tạo trứng diễn ra không đồng đều." },
+      { "kind": "knowledge", "title": "Sản phẩm tạo thành", "body": "Từ 1 tế bào sinh trứng tạo ra 1 tế bào trứng đơn bội (n) kích thước lớn giàu noãn hoàng và 3 thể cực (thể định hướng) kích thước nhỏ, sau đó 3 thể cực này sẽ tự thoái hóa tiêu biến." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tạo 1 tế bào trứng lớn và 3 thể cực nhỏ bị tiêu biến." }
+    ],
+    "finalSolution": "Một tế bào sinh trứng qua giảm phân tạo ra 1 tế bào trứng (n) lớn có khả năng thụ tinh và 3 thể cực (n) nhỏ sau đó tiêu biến.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Tưởng rằng 1 tế bào sinh trứng cũng tạo ra 4 quả trứng giống như tạo tinh trùng." }
+    ]
+  },
+  {
+    "id": "bio-g9-b08-q08",
+    "lessonId": "bio-g9-b08",
+    "sgkBaiSo": 43,
+    "skillIds": ["bio9-nguyen-phan-giam-phan"],
+    "difficulty": 2,
+    "prompt": "Sự phối hợp giữa ba quá trình nào sau đây đóng vai trò quyết định trong việc duy trì ổn định bộ nhiễm sắc thể đặc trưng của loài sinh sản hữu tính qua các thế hệ?",
+    "knowledge": ["kb-bio-g9-giam-phan-y-nghia-bien-di"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Nguyên phân, Giảm phân và Thụ tinh" },
+        { "id": "opt-b", "label": "Tái bản DNA, Phiên mã và Dịch mã" },
+        { "id": "opt-c", "label": "Đột biến gen, Chọn lọc tự nhiên và Di cư" },
+        { "id": "opt-d", "label": "Tiếp hợp, Đảo đoạn và Lặp đoạn" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Cần một quá trình giảm một nửa bộ NST (tạo giao tử n), một quá trình kết hợp lại (n + n = 2n) và một quá trình nhân bản tế bào." },
+      { "level": 2, "text": "Bộ ba cơ chế tế bào học kinh điển: Nguyên phân - Giảm phân - Thụ tinh." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Yêu cầu duy trì bộ NST lưỡng bội", "body": "Qua các thế hệ cơ thể, bộ NST 2n của loài không bị tăng gấp đôi hay giảm đi." },
+      { "kind": "knowledge", "title": "Vai trò của bộ ba cơ chế", "body": "Giảm phân tạo giao tử đơn bội (n). Thụ tinh kết hợp giao tử đực (n) và cái (n) khôi phục bộ lưỡng bội (2n) ở hợp tử. Nguyên phân giúp hợp tử phân chia, lớn lên và truyền đạt bộ NST 2n cho mọi tế bào con trong cơ thể mới." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đó là ba quá trình: Nguyên phân, Giảm phân và Thụ tinh." }
+    ],
+    "finalSolution": "Bộ ba quá trình Nguyên phân, Giảm phân và Thụ tinh phối hợp nhịp nhàng duy trì ổn định bộ nhiễm sắc thể 2n của loài sinh sản hữu tính qua các thế hệ.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm bộ ba tế bào học (Nguyên phân, Giảm phân, Thụ tinh) với bộ ba phân tử (Nhân đôi, Phiên mã, Dịch mã)." }
+    ]
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "lessonId": "bio-g8-b12",
+  "nodeId": "bio-g8-b12-theory",
+  "title": "Lý thuyết: Môi trường và các nhân tố sinh thái",
+  "subtitle": "Bài 41 SGK KHTN 8 Kết nối tri thức: 4 môi trường sống, nhân tố vô sinh và hữu sinh, giới hạn sinh thái và khoảng thuận lợi của sinh vật",
+  "sgkBaiSo": 41,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Môi trường sống",
+      "badgeColor": "emerald",
+      "title": "Môi trường sống & 4 môi trường chủ yếu",
+      "content": "Môi trường sống là phần không gian bao quanh sinh vật, gồm các yếu tố tác động trực tiếp hoặc gián tiếp đến sự tồn tại của sinh vật:",
+      "bulletPoints": [
+        "1. Môi trường cạn (trên mặt đất và không khí): Gồm đồng cỏ, đồi núi, rừng, bầu khí quyển (chim, thú, cây xanh).",
+        "2. Môi trường nước: Gồm nước ngọt (sông, hồ, suối), nước mặn (biển, đại dương) và nước lợ (cửa sông) (cá, tôm, san hô, rong biển).",
+        "3. Môi trường đất: Lòng đất xốp giàu mùn hữu cơ (giun đất, chuột chũi, dế trũi, ấu trùng ve sầu).",
+        "4. Môi trường sinh vật: Cơ thể của sinh vật khác (giun đũa ở ruột người, rận trên da chó, nấm kí sinh, cây tầm gửi bám cây gỗ)."
+      ],
+      "callout": "Cơ thể sinh vật cũng là một môi trường sống đặc thù nuôi dưỡng các loài sinh vật kí sinh hoặc cộng sinh!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Nhân tố sinh thái",
+      "badgeColor": "amber",
+      "title": "Phân loại nhân tố sinh thái",
+      "content": "Nhân tố sinh thái là những yếu tố của môi trường tác động lên đời sống sinh vật, chia thành 2 nhóm:",
+      "bulletPoints": [
+        "Nhân tố vô sinh: Yếu tố vật lí và hóa học như ánh sáng mặt trời, nhiệt độ, độ ẩm không khí, lượng mưa, thổ nhưỡng, độ mặn của nước.",
+        "Nhân tố hữu sinh: Gồm các mối quan hệ giữa sinh vật với sinh vật (thực vật, động vật, nấm, vi sinh vật).",
+        "Nhân tố con người: Là một nhân tố hữu sinh đặc biệt, có thể chủ động cải tạo môi trường (trồng rừng, bảo tồn) hoặc phá hủy môi trường trên quy mô toàn cầu (ô nhiễm, biến đổi khí hậu)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Giới hạn sinh thái",
+      "badgeColor": "cyan",
+      "title": "Giới hạn sinh thái (Ecological Tolerance)",
+      "content": "Giới hạn sinh thái là khoảng giá trị của một nhân tố sinh thái mà trong đó sinh vật có thể tồn tại và phát triển ổn định:",
+      "bulletPoints": [
+        "Cấu trúc giới hạn: Điểm giới hạn dưới < Khoảng chống chịu dưới < Khoảng thuận lợi (tối ưu nhất) < Khoảng chống chịu trên < Điểm giới hạn trên.",
+        "Vượt quá điểm giới hạn dưới hoặc trên sẽ rơi vào điểm gây chết (sinh vật bị tiêu diệt).",
+        "Ví dụ SGK: Cá rô phi ở Việt Nam có giới hạn sinh thái nhiệt độ từ 5,6°C đến 42°C; khoảng thuận lợi từ 20°C đến 35°C; dưới 5,6°C hoặc trên 42°C cá sẽ chết."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Cá rô phi nuôi ở Việt Nam có giới hạn chịu đựng nhiệt độ từ 5,6°C đến 42°C, sinh trưởng và phát triển mạnh nhất trong khoảng nhiệt độ từ 20°C đến 35°C. Khoảng nhiệt độ 20°C - 35°C được gọi là gì?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Khoảng thuận lợi (khoảng tối ưu) của cá rô phi",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Khoảng chống chịu nhiệt dưới",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Điểm giới hạn trên gây chết",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Khoảng chống chịu nhiệt trên",
+        "correct": false
+      }
+    ],
+    "explanation": "Khoảng giá trị của nhân tố sinh thái mà tại đó sinh vật thực hiện các chức năng sống tốt nhất, sinh trưởng nhanh và sinh sản tối ưu được gọi là khoảng thuận lợi (khoảng cực thuận)."
+  }
+}

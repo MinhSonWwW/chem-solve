@@ -80,22 +80,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Tốc độ chuyển động của phương tiện"
-        },
-        {
-          "id": "opt-b",
           "label": "Số người ngồi trên xe"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Hãng sản xuất của chiếc xe"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tốc độ chuyển động của phương tiện"
         },
         {
           "id": "opt-d",
           "label": "Màu sắc của chiếc xe phía trước"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -344,22 +344,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Chủ động giảm tốc độ và tăng khoảng cách an toàn với xe chạy liền trước"
-        },
-        {
-          "id": "opt-b",
           "label": "Tăng tốc độ để nhanh chóng thoát khỏi vùng thời tiết xấu"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Tắt đèn chiếu sáng để tránh chói mắt các phương tiện khác"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "Giữ nguyên tốc độ và bám sát đuôi xe phía trước để nhìn rõ đèn hậu"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chủ động giảm tốc độ và tăng khoảng cách an toàn với xe chạy liền trước"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -470,11 +470,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Vì người lái xe sẽ nhắm mắt lại khi chạy quá nhanh"
+          "label": "Vì năng lượng chuyển động (động năng) của vật tỉ lệ với bình phương tốc độ (v^2)"
         },
         {
           "id": "opt-b",
-          "label": "Vì năng lượng chuyển động (động năng) của vật tỉ lệ với bình phương tốc độ (v^2)"
+          "label": "Vì người lái xe sẽ nhắm mắt lại khi chạy quá nhanh"
         },
         {
           "id": "opt-c",
@@ -485,7 +485,7 @@
           "label": "Vì trọng lực tác dụng lên xe biến mất khi xe chạy tốc độ cao"
         }
       ],
-      "correctId": "opt-b"
+      "correctId": "opt-a"
     },
     "hints": [
       {

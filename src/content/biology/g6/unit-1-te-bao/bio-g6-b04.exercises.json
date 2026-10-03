@@ -1,0 +1,457 @@
+[
+  {
+    "id": "bio-g6-b04-q01",
+    "lessonId": "bio-g6-b04",
+    "sgkBaiSo": 19,
+    "skillIds": [
+      "bio-cau-tao-te-bao"
+    ],
+    "difficulty": 1,
+    "prompt": "Hãy ghép nối 3 thành phần cơ bản của tế bào (cột bên trái) với đúng chức năng sống của nó (cột bên phải):",
+    "knowledge": [
+      "bio-cau-tao-te-bao",
+      "bio-chuc-nang-thanh-phan-te-bao"
+    ],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Màng tế bào",
+          "right": "Bảo vệ và kiểm soát có chọn lọc các chất đi vào/ra khỏi tế bào"
+        },
+        {
+          "left": "Chất tế bào",
+          "right": "Chứa bào quan, nơi diễn ra hầu hết các hoạt động trao đổi chất"
+        },
+        {
+          "left": "Nhân tế bào (hoặc Vùng nhân)",
+          "right": "Chứa vật chất di truyền, điều khiển mọi hoạt động sống"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Màng tế bào nằm ở ngoài cùng đóng vai trò như 'cửa khẩu' kiểm soát ra vào."
+      },
+      {
+        "level": 2,
+        "text": "Nhân tế bào chứa DNA, là trung tâm chỉ huy mọi quá trình sinh hóa."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 3 thành phần cơ bản",
+        "body": "Màng tế bào, Chất tế bào, Nhân/Vùng nhân là 3 thành phần cốt lõi của mọi tế bào."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Chức năng từng bộ phận",
+        "body": "Màng bao bọc và kiểm soát vận chuyển chất; Chất tế bào là môi trường diễn ra phản ứng; Nhân chứa thông tin di truyền điều khiển tế bào."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất ghép nối",
+        "body": "Khớp chính xác từng thành phần với chức năng tương ứng."
+      }
+    ],
+    "finalSolution": "Màng tế bào: kiểm soát chất ra vào; Chất tế bào: nơi diễn ra trao đổi chất; Nhân tế bào: điều khiển mọi hoạt động sống.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm lẫn chức năng điều khiển của nhân với chức năng kiểm soát trao đổi chất của màng tế bào."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b04-q02",
+    "lessonId": "bio-g6-b04",
+    "sgkBaiSo": 19,
+    "skillIds": [
+      "bio-cau-tao-te-bao"
+    ],
+    "difficulty": 2,
+    "prompt": "Phân loại các sinh vật sau vào nhóm có 'Tế bào nhân sơ' hoặc 'Tế bào nhân thực':",
+    "knowledge": [
+      "bio-te-bao-nhan-so-nhan-thuc"
+    ],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        {
+          "id": "b-prokaryote",
+          "label": "Sinh vật nhân sơ (Chưa có màng nhân)"
+        },
+        {
+          "id": "b-eukaryote",
+          "label": "Sinh vật nhân thực (Có màng nhân)"
+        }
+      ],
+      "items": [
+        {
+          "id": "it-1",
+          "label": "Vi khuẩn E. coli trong đường ruột",
+          "bucketId": "b-prokaryote"
+        },
+        {
+          "id": "it-2",
+          "label": "Vi khuẩn lactic lên men sữa chua",
+          "bucketId": "b-prokaryote"
+        },
+        {
+          "id": "it-3",
+          "label": "Cây lúa nước",
+          "bucketId": "b-eukaryote"
+        },
+        {
+          "id": "it-4",
+          "label": "Nấm rơm",
+          "bucketId": "b-eukaryote"
+        },
+        {
+          "id": "it-5",
+          "label": "Con mèo con",
+          "bucketId": "b-eukaryote"
+        },
+        {
+          "id": "it-6",
+          "label": "Trùng roi xanh",
+          "bucketId": "b-eukaryote"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tất cả các loài vi khuẩn đều thuộc nhóm sinh vật nhân sơ."
+      },
+      {
+        "level": 2,
+        "text": "Thực vật, động vật, nấm và nguyên sinh vật đều có tế bào nhân thực hoàn chỉnh."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận diện nhóm sinh vật",
+        "body": "Xác định kiểu cấu tạo tế bào của 6 sinh vật trong đề bài."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc phân loại tế bào",
+        "body": "Vi khuẩn (E. coli, lactic) là sinh vật nhân sơ. Cây lúa (thực vật), con mèo (động vật), nấm rơm (nấm), trùng roi (nguyên sinh vật) đều là sinh vật nhân thực."
+      },
+      {
+        "kind": "answer",
+        "title": "Xếp vào đúng nhóm",
+        "body": "2 loài vi khuẩn vào nhóm nhân sơ; 4 sinh vật còn lại vào nhóm nhân thực."
+      }
+    ],
+    "finalSolution": "Sinh vật nhân sơ: Vi khuẩn E. coli, Vi khuẩn lactic. Sinh vật nhân thực: Cây lúa nước, Nấm rơm, Con mèo, Trùng roi xanh.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Nghĩ rằng nấm rơm hay trùng roi là vi khuẩn nhân sơ (thực tế nấm và trùng roi đều là nhân thực)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b04-q03",
+    "lessonId": "bio-g6-b04",
+    "sgkBaiSo": 19,
+    "skillIds": [
+      "bio-cau-tao-te-bao"
+    ],
+    "difficulty": 1,
+    "prompt": "Đặc điểm khác biệt cốt lõi nhất giúp phân biệt tế bào nhân sơ với tế bào nhân thực là gì?",
+    "knowledge": [
+      "bio-te-bao-nhan-so-nhan-thuc"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tế bào nhân thực đã có màng nhân bao bọc vật chất di truyền, còn nhân sơ chưa có màng nhân"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tế bào nhân sơ không có màng tế bào bên ngoài"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tế bào nhân thực hoàn toàn không chứa chất tế bào"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tế bào nhân sơ không có vật chất di truyền DNA"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "'Nhân sơ' tức là nhân sơ khai, vật chất di truyền nằm trần chưa có màng bọc."
+      },
+      {
+        "level": 2,
+        "text": "'Nhân thực' là đã có màng nhân ngăn cách chất nhân với chất tế bào."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích câu hỏi",
+        "body": "Tìm tiêu chí phân biệt bản chất giữa nhân sơ (prokaryote) và nhân thực (eukaryote)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cấu trúc màng nhân",
+        "body": "Cả hai đều có màng sinh chất và vật chất di truyền. Điểm khác biệt quyết định là tế bào nhân sơ chưa có màng nhân bao bọc, còn tế bào nhân thực đã có màng nhân hoàn chỉnh."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn phương án đúng",
+        "body": "Đáp án A là định nghĩa chính xác theo SGK."
+      }
+    ],
+    "finalSolution": "Tế bào nhân thực đã có màng nhân bao bọc vật chất di truyền tạo thành nhân hoàn chỉnh, trong khi tế bào nhân sơ chưa có màng nhân (chỉ có vùng nhân chứa DNA trần).",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nghĩ sai rằng tế bào nhân sơ không có màng sinh chất hoặc không có DNA."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b04-q04",
+    "lessonId": "bio-g6-b04",
+    "sgkBaiSo": 19,
+    "skillIds": [
+      "bio-cau-tao-te-bao"
+    ],
+    "difficulty": 2,
+    "prompt": "Phân loại các cấu trúc tế bào sau đây vào hai nhóm: 'Chỉ có ở tế bào thực vật' và 'Có ở cả tế bào thực vật và tế bào động vật':",
+    "knowledge": [
+      "bio-te-bao-thuc-vat-dong-vat"
+    ],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        {
+          "id": "b-plant-only",
+          "label": "Chỉ có ở tế bào thực vật"
+        },
+        {
+          "id": "b-both",
+          "label": "Có ở cả tế bào thực vật và động vật"
+        }
+      ],
+      "items": [
+        {
+          "id": "it-1",
+          "label": "Thành tế bào (Cellulose)",
+          "bucketId": "b-plant-only"
+        },
+        {
+          "id": "it-2",
+          "label": "Lục lạp chứa diệp lục quang hợp",
+          "bucketId": "b-plant-only"
+        },
+        {
+          "id": "it-3",
+          "label": "Màng tế bào (màng sinh chất)",
+          "bucketId": "b-both"
+        },
+        {
+          "id": "it-4",
+          "label": "Chất tế bào",
+          "bucketId": "b-both"
+        },
+        {
+          "id": "it-5",
+          "label": "Nhân tế bào hoàn chỉnh",
+          "bucketId": "b-both"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thực vật có màu xanh và thân cứng cáp nhờ những bào quan nào?"
+      },
+      {
+        "level": 2,
+        "text": "Màng tế bào, chất tế bào và nhân là 3 thành phần phổ quát có ở cả 2 loại tế bào."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "So sánh tế bào thực vật và động vật",
+        "body": "Xác định các cấu trúc độc quyền ở thực vật và các cấu trúc chung."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc trưng sinh lý thực vật",
+        "body": "Thực vật quang hợp được nhờ lục lạp và có hình dạng cố định nhờ thành tế bào cellulose. Cả 2 đều có màng sinh chất, chất tế bào và nhân tế bào."
+      },
+      {
+        "kind": "answer",
+        "title": "Phân loại chuẩn xác",
+        "body": "Thành tế bào và lục lạp vào nhóm chỉ có ở thực vật; 3 thành phần còn lại vào nhóm có ở cả hai."
+      }
+    ],
+    "finalSolution": "Chỉ có ở tế bào thực vật: Thành tế bào, Lục lạp. Có ở cả hai: Màng tế bào, Chất tế bào, Nhân tế bào.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Nghĩ rằng tế bào thực vật không có màng tế bào vì đã có thành tế bào bao bên ngoài."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b04-q05",
+    "lessonId": "bio-g6-b04",
+    "sgkBaiSo": 19,
+    "skillIds": [
+      "bio-cau-tao-te-bao"
+    ],
+    "difficulty": 1,
+    "prompt": "Bào quan lục lạp trong tế bào lá cây đảm nhiệm vai trò sinh học thiết yếu nào sau đây?",
+    "knowledge": [
+      "bio-te-bao-thuc-vat-dong-vat"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chứa chất độc để tiêu diệt các tế bào xung quanh"
+        },
+        {
+          "id": "opt-b",
+          "label": "Kiểm soát các chất đi vào và đi ra khỏi tế bào"
+        },
+        {
+          "id": "opt-c",
+          "label": "Thực hiện quá trình quang hợp tổng hợp chất hữu cơ nhờ chất diệp lục"
+        },
+        {
+          "id": "opt-d",
+          "label": "Điều khiển mọi quá trình phân chia của nhân tế bào"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Lục lạp chứa chất diệp lục có màu xanh lục bắt lấy ánh sáng mặt trời."
+      },
+      {
+        "level": 2,
+        "text": "Quá trình lá cây dùng năng lượng mặt trời chế tạo đường và giải phóng oxygen gọi là quang hợp."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định chức năng của lục lạp",
+        "body": "Đề bài hỏi về vai trò sinh học của lục lạp trong tế bào thực vật."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế quang hợp ở lục lạp",
+        "body": "Lục lạp chứa sắc tố diệp lục có khả năng hấp thụ năng lượng ánh sáng mặt trời để biến đổi CO2 và nước thành chất hữu cơ (glucose, tinh bột) và O2."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn phương án đúng",
+        "body": "Lựa chọn chính xác là vai trò chuẩn xác của lục lạp."
+      }
+    ],
+    "finalSolution": "Lục lạp chứa chất diệp lục đảm nhận chức năng quang hợp, biến đổi năng lượng ánh sáng mặt trời thành năng lượng hóa học trong các hợp chất hữu cơ.",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nhầm lẫn chức năng của lục lạp với chức năng kiểm soát trao đổi chất của màng sinh chất."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b04-q06",
+    "lessonId": "bio-g6-b04",
+    "sgkBaiSo": 19,
+    "skillIds": [
+      "bio-cau-tao-te-bao"
+    ],
+    "difficulty": 2,
+    "prompt": "Đánh giá tính Đúng hoặc Sai cho mỗi nhận định sau đây về cấu tạo tế bào:",
+    "knowledge": [
+      "bio-chuc-nang-thanh-phan-te-bao",
+      "bio-te-bao-thuc-vat-dong-vat"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Màng tế bào cho phép tất cả các chất tự do đi qua mà không có bất kỳ sự chọn lọc nào.",
+          "correct": false
+        },
+        {
+          "id": "st-2",
+          "text": "Nhân tế bào là nơi chứa thông tin di truyền và điều khiển mọi hoạt động sống của tế bào.",
+          "correct": true
+        },
+        {
+          "id": "st-3",
+          "text": "Tế bào động vật có thành tế bào bằng cellulose giúp cơ thể động vật luôn đứng thẳng cứng cáp.",
+          "correct": false
+        },
+        {
+          "id": "st-4",
+          "text": "Chất tế bào là nơi diễn ra hầu hết các phản ứng hóa học và hoạt động trao đổi chất của tế bào.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Màng tế bào là màng bán thấm có tính chọn lọc cao, chỉ cho các chất cần thiết ra vào."
+      },
+      {
+        "level": 2,
+        "text": "Động vật vận động linh hoạt được nhờ tế bào động vật không có thành tế bào cellulose cứng nhắc."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Đánh giá từng câu theo chức năng thành phần tế bào."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra chi tiết",
+        "body": "1. Màng cho tự do mọi chất: Sai (có chọn lọc). 2. Nhân điều khiển hoạt động sống: Đúng. 3. Tế bào động vật có thành cellulose: Sai (chỉ thực vật mới có). 4. Chất tế bào diễn ra trao đổi chất: Đúng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Ý 1: Sai; Ý 2: Đúng; Ý 3: Sai; Ý 4: Đúng."
+      }
+    ],
+    "finalSolution": "Phát biểu 2 và 4 đúng. Phát biểu 1 sai (màng tế bào kiểm soát có chọn lọc). Phát biểu 3 sai (tế bào động vật không có thành tế bào).",
+    "commonMistakes": [
+      {
+        "id": "cm-06",
+        "message": "Nghĩ rằng màng tế bào giống như bức tường kín hoặc lưới lọc thô không chọn lọc."
+      }
+    ]
+  }
+]

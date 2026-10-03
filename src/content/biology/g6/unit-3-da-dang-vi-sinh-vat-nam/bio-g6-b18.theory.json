@@ -1,0 +1,75 @@
+{
+  "lessonId": "bio-g6-b18",
+  "nodeId": "bio-g6-b18-theory",
+  "title": "Lý thuyết: Thực hành quan sát các loại nấm",
+  "subtitle": "Bài 33 SGK KHTN 6 Kết nối tri thức: Kỹ thuật soi sợi nấm mốc bánh mì và giải phẫu các bộ phận nấm rơm",
+  "sgkBaiSo": 33,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Mục tiêu",
+      "badgeColor": "emerald",
+      "title": "Mục tiêu bài thực hành quan sát nấm",
+      "content": "Kết hợp quan sát bằng mắt thường, kính lúp và kính hiển vi:",
+      "bulletPoints": [
+        "Nuôi cấy thành công mẫu nấm mốc trên bánh mì hoặc cơm nguội ẩm.",
+        "Làm tiêu bản hiển vi và quan sát được hệ sợi nấm cùng các túi bào tử sinh sản.",
+        "Giải phẫu và nhận diện đầy đủ 5 bộ phận của cây nấm rơm tươi (hoặc nấm sò, nấm hương).",
+        "Rèn luyện kỹ năng phân biệt nấm ăn an toàn với các loại nấm độc trong tự nhiên."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Soi nấm mốc",
+      "badgeColor": "amber",
+      "title": "Kỹ thuật quan sát sợi nấm mốc bánh mì",
+      "content": "Quy trình thực hiện với nấm mốc:",
+      "bulletPoints": [
+        "Chuẩn bị: Làm ẩm một lát bánh mì gối, để trong túi nilon kín ở nơi tối ấm trong 3 - 5 ngày sẽ xuất hiện lớp mốc trắng như nhung sau đó lốm đốm xám đen.",
+        "Làm tiêu bản: Dùng kim mũi mác nhẹ nhàng gạt lấy một lượng rất nhỏ sợi mốc đặt vào giọt nước cất trên lam kính, dùng kim dầm nhẹ để các sợi nấm tơi ra rồi đậy lamen.",
+        "Hình ảnh dưới kính: Thấy mạng lưới các sợi nấm trong suốt phân nhánh chằng chịt; ở đầu các sợi nấm vươn cao có các túi bào tử hình cầu chứa đầy các hạt bào tử li ti."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Giải phẫu nấm rơm",
+      "badgeColor": "cyan",
+      "title": "Giải phẫu các bộ phận của nấm thể quả (nấm rơm)",
+      "content": "Dùng dao mổ tách dọc thân cây nấm rơm tươi để quan sát 5 bộ phận:",
+      "bulletPoints": [
+        "Mũ nấm: Phần trên cùng xòe rộng như chiếc ô giúp che mưa nắng và bảo vệ bào tử.",
+        "Phiến nấm: Các phiến mỏng màu nâu hồng xếp nan hoa ở mặt dưới mũ nấm mang hàng triệu bào tử nấm.",
+        "Vòng cuống nấm: Dấu vết màng bao quanh thân nấm.",
+        "Cuống nấm: Phần trục hình trụ nâng đỡ mũ nấm và dẫn truyền chất hữu cơ.",
+        "Bao gốc nấm: Phần màng bao bọc phình to ở dưới đáy gốc nấm bám vào đống rơm mục."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Các phiến nấm mỏng xếp nan hoa ở mặt dưới của mũ nấm rơm có chức năng sinh học chủ yếu là gì?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Chứa và phát tán các bào tử giúp nấm sinh sản duy trì nòi giống",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Hấp thụ ánh sáng mặt trời để quang hợp",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Hút nước và muối khoáng từ đất lên",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Giúp nấm bò di chuyển từ chỗ này sang chỗ khác",
+        "correct": false
+      }
+    ],
+    "explanation": "Phiến nấm là cơ quan sinh sản của nấm thể quả, nơi sinh ra hàng triệu bào tử nấm. Khi chín, các bào tử rơi ra và theo gió bay đi nảy mầm thành sợi nấm mới."
+  }
+}

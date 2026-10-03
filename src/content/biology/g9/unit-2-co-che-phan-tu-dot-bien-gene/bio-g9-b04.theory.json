@@ -1,0 +1,78 @@
+{
+  "lessonId": "bio-g9-b04",
+  "nodeId": "bio-g9-b04-theory",
+  "title": "Lý thuyết: Tái bản DNA và phiên mã tạo RNA",
+  "subtitle": "Bài 39 SGK KHTN 9 Kết nối tri thức: Quá trình nhân đôi DNA theo nguyên tắc bổ sung và bán bảo tồn; cơ chế phiên mã tổng hợp mRNA",
+  "sgkBaiSo": 39,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Nhân đôi DNA",
+      "badgeColor": "emerald",
+      "title": "Quá trình tái bản (nhân đôi) DNA",
+      "content": "Quá trình tái bản DNA diễn ra trong nhân tế bào tại pha S kì trung gian, là cơ sở phân tử cho sự nhân đôi nhiễm sắc thể:",
+      "bulletPoints": [
+        "1. Tháo xoắn phân tử DNA: Dưới tác dụng của enzyme tháo xoắn, hai mạch đơn của phân tử DNA mẹ dần dần tách nhau ra, làm lộ hai mạch khuôn.",
+        "2. Tổng hợp mạch mới: Enzyme DNA polymerase trượt dọc trên mỗi mạch khuôn theo chiều 3' → 5' và liên kết các nucleotide tự do của môi trường với các nucleotide trên mạch khuôn theo nguyên tắc bổ sung (NTBS): A liên kết với T, G liên kết với C.",
+        "3. Hai nguyên tắc cốt lõi: Nguyên tắc bổ sung (A-T, G-C) và Nguyên tắc bán bảo tồn (trong mỗi phân tử DNA con có 1 mạch cũ của mẹ và 1 mạch mới tổng hợp).",
+        "Kết quả: Từ 1 phân tử DNA mẹ ban đầu qua 1 lần nhân đôi tạo ra 2 phân tử DNA con giống hệt nhau và giống hệt phân tử mẹ."
+      ],
+      "callout": "Nguyên tắc bán bảo tồn ('giữ lại một nửa') đảm bảo thông tin di truyền được truyền đạt trung thực, nguyên vẹn qua các thế hệ tế bào!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Ý nghĩa & Toán học",
+      "badgeColor": "amber",
+      "title": "Ý nghĩa sinh học và quy luật số lượng tái bản",
+      "content": "Ý nghĩa then chốt và các công thức định lượng qua các lần tái bản DNA:",
+      "bulletPoints": [
+        "Ý nghĩa: Giúp duy trì ổn định số lượng và cấu trúc bộ gen của loài qua các thế hệ tế bào trong nguyên phân và qua các thế hệ cơ thể trong sinh sản.",
+        "Số DNA con tạo thành sau k lần nhân đôi: N_DNA = 2^k phân tử.",
+        "Số phân tử DNA con chứa mạch cũ của mẹ: Luôn luôn bằng 2 phân tử (dù nhân đôi bao nhiêu lần đi nữa).",
+        "Số phân tử DNA con có cả hai mạch hoàn toàn mới: 2^k - 2 phân tử.",
+        "Tổng số nucleotide môi trường cần cung cấp sau k lần nhân đôi: N_mt = N × (2^k - 1)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Tổng hợp RNA",
+      "badgeColor": "cyan",
+      "title": "Quá trình phiên mã tạo RNA",
+      "content": "Phiên mã là quá trình truyền thông tin di truyền từ mạch khuôn DNA sang phân tử RNA diễn ra trong nhân tế bào:",
+      "bulletPoints": [
+        "Mạch khuôn: Chỉ có một mạch của gen có chiều 3' → 5' (mạch gốc) được dùng làm khuôn mẫu để tổng hợp RNA.",
+        "Enzyme xúc tác: Enzyme RNA polymerase bám vào vùng khởi đầu, tháo xoắn gen và trượt theo chiều 3' → 5' trên mạch gốc để tổng hợp chuỗi RNA theo chiều 5' → 3'.",
+        "Nguyên tắc bổ sung trong phiên mã: A trên mạch gốc liên kết với U của môi trường (A_gốc - U); T trên mạch gốc liên kết với A (T_gốc - A); G trên mạch gốc liên kết với C (G_gốc - C); C trên mạch gốc liên kết với G (C_gốc - G).",
+        "Sản phẩm tạo thành: Các loại phân tử RNA gồm mRNA (làm khuôn dịch mã), tRNA (vận chuyển amino acid) và rRNA (cấu tạo ribosome)."
+      ],
+      "callout": "Cạm bẫy cần nhớ: Trong phân tử RNA không chứa nucleotide loại T (Thymine), vị trí bổ sung với A của mạch khuôn DNA luôn là ribonucleotide loại U (Uracil)!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Một đoạn mạch gốc của gen có trình tự nucleotide là: 3'-T-A-C-G-G-A-5'. Trình tự các ribonucleotide trên phân tử mRNA được tổng hợp từ đoạn mạch gốc này là gì?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "5'-A-U-G-C-C-U-3'",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "5'-A-T-G-C-C-T-3'",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "5'-U-A-C-G-G-A-3'",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "3'-A-U-G-C-C-U-5'",
+        "correct": false
+      }
+    ],
+    "explanation": "Theo nguyên tắc bổ sung trong phiên mã: T liên kết với A, A liên kết với U, C liên kết với G, G liên kết với C. Chuỗi mRNA được tổng hợp theo chiều 5' → 3' tương ứng: 3'-T-A-C-G-G-A-5' → 5'-A-U-G-C-C-U-3'."
+  }
+}

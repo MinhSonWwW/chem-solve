@@ -1,0 +1,360 @@
+[
+  {
+    "id": "bio-g6-b08-q01",
+    "lessonId": "bio-g6-b08",
+    "sgkBaiSo": 23,
+    "skillIds": ["bio-to-chuc-da-bao"],
+    "difficulty": 1,
+    "prompt": "Hãy sắp xếp 5 cấp độ tổ chức của cơ thể đa bào theo thứ tự từ cấp độ nhỏ nhất đến cấp độ lớn nhất:",
+    "knowledge": ["bio-cap-do-to-chuc-song"],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Cấp độ 1: Tế bào",
+        "Cấp độ 2: Mô",
+        "Cấp độ 3: Cơ quan",
+        "Cấp độ 4: Hệ cơ quan",
+        "Cấp độ 5: Cơ thể"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bắt đầu từ viên gạch cơ sở nhỏ nhất là tế bào."
+      },
+      {
+        "level": 2,
+        "text": "Nhiều tế bào tạo thành mô; nhiều mô tạo thành cơ quan; nhiều cơ quan tạo thành hệ cơ quan."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu bài toán",
+        "body": "Xếp chuỗi 5 cấp bậc tổ chức sống của cơ thể đa bào."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hệ thống phân cấp sống theo SGK",
+        "body": "Tế bào (đơn vị cơ sở) → Mô (tập hợp tế bào cùng loại) → Cơ quan (tập hợp mô) → Hệ cơ quan (tập hợp cơ quan) → Cơ thể (cá thể hoàn chỉnh)."
+      },
+      {
+        "kind": "answer",
+        "title": "Thứ tự chính xác",
+        "body": "Tế bào → Mô → Cơ quan → Hệ cơ quan → Cơ thể."
+      }
+    ],
+    "finalSolution": "Thứ tự từ nhỏ đến lớn: Tế bào → Mô → Cơ quan → Hệ cơ quan → Cơ thể.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Đảo vị trí giữa Mô và Cơ quan (nghĩ rằng cơ quan nhỏ hơn mô)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b08-q02",
+    "lessonId": "bio-g6-b08",
+    "sgkBaiSo": 23,
+    "skillIds": ["bio-to-chuc-da-bao"],
+    "difficulty": 2,
+    "prompt": "Phân loại các cấu trúc sau đây của cơ thể người vào 4 cấp độ tổ chức sống tương ứng:",
+    "knowledge": ["bio-cap-do-to-chuc-song", "bio-mo-thuc-vat-dong-vat", "bio-co-quan-he-co-quan-dong-vat"],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "b-cell", "label": "Cấp độ Tế bào" },
+        { "id": "b-tissue", "label": "Cấp độ Mô" },
+        { "id": "b-organ", "label": "Cấp độ Cơ quan" },
+        { "id": "b-system", "label": "Cấp độ Hệ cơ quan" }
+      ],
+      "items": [
+        { "id": "it-1", "label": "Tế bào hồng cầu", "bucketId": "b-cell" },
+        { "id": "it-2", "label": "Tế bào thần kinh (nơron)", "bucketId": "b-cell" },
+        { "id": "it-3", "label": "Mô cơ tim", "bucketId": "b-tissue" },
+        { "id": "it-4", "label": "Mô biểu bì lót dạ dày", "bucketId": "b-tissue" },
+        { "id": "it-5", "label": "Quả tim", "bucketId": "b-organ" },
+        { "id": "it-6", "label": "Dạ dày", "bucketId": "b-organ" },
+        { "id": "it-7", "label": "Hệ tuần hoàn", "bucketId": "b-system" },
+        { "id": "it-8", "label": "Hệ tiêu hóa", "bucketId": "b-system" }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Các cấu trúc có tên chứa chữ 'tế bào' hoặc 'mô' đã báo hiệu cấp độ của chúng."
+      },
+      {
+        "level": 2,
+        "text": "Quả tim, dạ dày là các cơ quan độc lập; hệ tuần hoàn, hệ tiêu hóa là tập hợp nhiều cơ quan."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận diện 4 nhóm cấp bậc",
+        "body": "Xếp 8 thành phần giải phẫu người vào Tế bào, Mô, Cơ quan, Hệ cơ quan."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân loại từng hạng mục",
+        "body": "Hồng cầu, nơron: Tế bào. Mô cơ, mô biểu bì: Mô. Tim, dạ dày: Cơ quan. Hệ tuần hoàn, hệ tiêu hóa: Hệ cơ quan."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất phân nhóm",
+        "body": "Mỗi nhóm chứa đúng 2 thành phần tương ứng."
+      }
+    ],
+    "finalSolution": "Tế bào: Tế bào hồng cầu, Tế bào thần kinh. Mô: Mô cơ tim, Mô biểu bì. Cơ quan: Quả tim, Dạ dày. Hệ cơ quan: Hệ tuần hoàn, Hệ tiêu hóa.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Xếp quả tim vào hệ cơ quan thay vì cơ quan."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b08-q03",
+    "lessonId": "bio-g6-b08",
+    "sgkBaiSo": 23,
+    "skillIds": ["bio-to-chuc-da-bao"],
+    "difficulty": 1,
+    "prompt": "Ghép nối từng cơ quan của cây xanh có hoa (cột bên trái) với đúng chức năng sống chủ yếu của nó (cột bên phải):",
+    "knowledge": ["bio-co-quan-he-co-quan-thuc-vat"],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Rễ cây",
+          "right": "Hút nước và muối khoáng, giữ cây bám chặt vào đất"
+        },
+        {
+          "left": "Thân cây",
+          "right": "Nâng đỡ cành lá và vận chuyển các chất đi khắp cơ thể cây"
+        },
+        {
+          "left": "Lá cây",
+          "right": "Quang hợp chế tạo chất hữu cơ và thoát hơi nước"
+        },
+        {
+          "left": "Bông hoa",
+          "right": "Thụ phấn và thụ tinh để tạo quả và hạt"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Rễ nằm dưới đất hút nước; lá chứa diệp lục hứng ánh sáng quang hợp."
+      },
+      {
+        "level": 2,
+        "text": "Thân đóng vai trò 'đại lộ' vận chuyển chất; hoa thực hiện chức năng sinh sản."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 cơ quan thực vật",
+        "body": "Rễ, Thân, Lá (sinh dưỡng) và Hoa (sinh sản)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Chức năng sinh học từng cơ quan",
+        "body": "Rễ hút nước/khoáng; Thân nâng đỡ và dẫn truyền; Lá quang hợp và thoát hơi nước; Hoa sinh sản tạo hạt giống."
+      },
+      {
+        "kind": "answer",
+        "title": "Ghép cặp chuẩn xác",
+        "body": "Nối đúng 4 cơ quan với 4 chức năng sinh lý chuẩn SGK."
+      }
+    ],
+    "finalSolution": "Rễ: hút nước và khoáng; Thân: nâng đỡ và dẫn truyền chất; Lá: quang hợp và thoát hơi nước; Hoa: thụ phấn, thụ tinh tạo quả hạt.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nghĩ rằng thân cây mới là nơi quang hợp chính của cây xanh."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b08-q04",
+    "lessonId": "bio-g6-b08",
+    "sgkBaiSo": 23,
+    "skillIds": ["bio-to-chuc-da-bao"],
+    "difficulty": 2,
+    "prompt": "Phân loại các cơ quan sau của cây cà chua vào hai nhóm: 'Cơ quan sinh dưỡng' và 'Cơ quan sinh sản':",
+    "knowledge": ["bio-co-quan-he-co-quan-thuc-vat"],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "b-vegetative", "label": "Cơ quan sinh dưỡng (Nuôi dưỡng cây)" },
+        { "id": "b-reproductive", "label": "Cơ quan sinh sản (Duy trì nòi giống)" }
+      ],
+      "items": [
+        { "id": "it-1", "label": "Rễ cây cà chua", "bucketId": "b-vegetative" },
+        { "id": "it-2", "label": "Thân cây cà chua", "bucketId": "b-vegetative" },
+        { "id": "it-3", "label": "Lá cây cà chua", "bucketId": "b-vegetative" },
+        { "id": "it-4", "label": "Bông hoa cà chua vàng", "bucketId": "b-reproductive" },
+        { "id": "it-5", "label": "Quả cà chua chín đỏ", "bucketId": "b-reproductive" },
+        { "id": "it-6", "label": "Hạt cà chua", "bucketId": "b-reproductive" }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Các bộ phận giúp cây lớn lên, hút dinh dưỡng và quang hợp là cơ quan sinh dưỡng."
+      },
+      {
+        "level": 2,
+        "text": "Hoa, quả, hạt trực tiếp tham gia tạo ra thế hệ cây con mới nên là cơ quan sinh sản."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân biệt sinh dưỡng và sinh sản",
+        "body": "Xếp 6 bộ phận của cây cà chua vào 2 nhóm chức năng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Định nghĩa theo SGK",
+        "body": "Cơ quan sinh dưỡng ở thực vật có hoa gồm rễ, thân, lá. Cơ quan sinh sản gồm hoa, quả, hạt."
+      },
+      {
+        "kind": "answer",
+        "title": "Phân loại hoàn tất",
+        "body": "Rễ, thân, lá vào nhóm sinh dưỡng; Hoa, quả, hạt vào nhóm sinh sản."
+      }
+    ],
+    "finalSolution": "Cơ quan sinh dưỡng: Rễ cây, Thân cây, Lá cây. Cơ quan sinh sản: Bông hoa, Quả cà chua, Hạt cà chua.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Nghĩ quả cà chua là cơ quan sinh dưỡng vì con người dùng nó làm thức ăn dinh dưỡng."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b08-q05",
+    "lessonId": "bio-g6-b08",
+    "sgkBaiSo": 23,
+    "skillIds": ["bio-to-chuc-da-bao"],
+    "difficulty": 1,
+    "prompt": "Khái niệm 'Mô' trong cơ thể sinh vật đa bào được định nghĩa chính xác nhất là gì?",
+    "knowledge": ["bio-mo-thuc-vat-dong-vat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tập hợp các tế bào có hình dạng, cấu tạo giống nhau cùng phối hợp thực hiện một chức năng nhất định" },
+        { "id": "opt-b", "label": "Tập hợp các cơ quan khác nhau nằm cùng một vị trí" },
+        { "id": "opt-c", "label": "Một tế bào duy nhất có khả năng sinh sản nhanh chóng" },
+        { "id": "opt-d", "label": "Khối chất vô cơ bao bọc bên ngoài bảo vệ cơ thể" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mô là cấp độ trung gian giữa tế bào và cơ quan."
+      },
+      {
+        "level": 2,
+        "text": "Nhiều tế bào giống nhau cùng làm một nhiệm vụ sẽ hợp thành một mô."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định định nghĩa khoa học",
+        "body": "Đề bài yêu cầu nêu định nghĩa chuẩn của cấp độ 'Mô'."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Khái niệm mô theo SGK",
+        "body": "Mô là tập hợp của nhiều tế bào có hình dạng, cấu tạo giống nhau cùng đảm nhận một chức năng nhất định trong cơ thể đa bào."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án đúng",
+        "body": "Đáp án A là định nghĩa chuẩn xác theo SGK KHTN 6."
+      }
+    ],
+    "finalSolution": "Mô là tập hợp các tế bào có hình dạng, cấu tạo giống nhau cùng phối hợp thực hiện một chức năng nhất định trong cơ thể sinh vật đa bào.",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nhầm lẫn định nghĩa của mô với định nghĩa của cơ quan (cơ quan gồm nhiều loại mô khác nhau)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b08-q06",
+    "lessonId": "bio-g6-b08",
+    "sgkBaiSo": 23,
+    "skillIds": ["bio-to-chuc-da-bao"],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về tổ chức cơ thể đa bào:",
+    "knowledge": ["bio-cap-do-to-chuc-song", "bio-mo-thuc-vat-dong-vat", "bio-co-quan-he-co-quan-thuc-vat"],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Ở thực vật, mạch gỗ vận chuyển nước và muối khoáng từ rễ lên thân lá, còn mạch rây vận chuyển chất hữu cơ từ lá đi nuôi cơ thể.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Cơ quan dạ dày của người chỉ cấu tạo từ một loại mô cơ duy nhất mà không có mô biểu bì hay mô thần kinh.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Hệ chồi ở thực vật có hoa bao gồm các cơ quan nằm ở phía trên mặt đất như thân, cành, lá, hoa và quả.",
+          "correct": true
+        },
+        {
+          "id": "st-4",
+          "text": "Các hệ cơ quan trong cơ thể người hoạt động độc lập và hoàn toàn không có mối liên hệ phối hợp nào với nhau.",
+          "correct": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mỗi cơ quan là tập hợp của nhiều loại mô khác nhau để thực hiện chức năng phức tạp."
+      },
+      {
+        "level": 2,
+        "text": "Khi ta chạy nhanh, hệ vận động hoạt động mạnh kéo theo hệ hô hấp và tuần hoàn đập nhanh để cung cấp O2 — chứng tỏ các hệ cơ quan phối hợp thống nhất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Đánh giá từng câu về tổ chức cơ thể thực vật và người."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra chi tiết",
+        "body": "1. Mạch gỗ dẫn nước, mạch rây dẫn chất hữu cơ: Đúng. 2. Dạ dày chỉ có 1 loại mô: Sai (gồm mô cơ, biểu bì, liên kết, thần kinh). 3. Hệ chồi ở trên mặt đất: Đúng. 4. Các hệ cơ quan độc lập không liên quan: Sai (phối hợp thống nhất thành cơ thể)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Ý 1: Đúng; Ý 2: Sai; Ý 3: Đúng; Ý 4: Sai."
+      }
+    ],
+    "finalSolution": "Phát biểu 1 và 3 đúng. Phát biểu 2 sai (dạ dày cấu tạo từ nhiều loại mô). Phát biểu 4 sai (các hệ cơ quan luôn phối hợp nhịp nhàng thống nhất trong cơ thể sống).",
+    "commonMistakes": [
+      {
+        "id": "cm-06",
+        "message": "Nghĩ rằng mỗi cơ quan chỉ do một loại mô duy nhất cấu thành."
+      }
+    ]
+  }
+]

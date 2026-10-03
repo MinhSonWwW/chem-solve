@@ -1,0 +1,375 @@
+[
+  {
+    "id": "bio-g6-b05-q01",
+    "lessonId": "bio-g6-b05",
+    "sgkBaiSo": 20,
+    "skillIds": [
+      "bio-sinh-san-te-bao"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp các sự kiện sau theo đúng trình tự diễn ra trong quá trình lớn lên và phân chia của tế bào:",
+    "knowledge": [
+      "bio-su-lon-len-te-bao",
+      "bio-su-sinh-san-te-bao"
+    ],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Tế bào non hấp thụ chất dinh dưỡng để lớn lên thành tế bào trưởng thành",
+        "Nhân tế bào phân chia thành hai nhân mới tách biệt",
+        "Chất tế bào bắt đầu phân chia",
+        "Hình thành vách ngăn (hoặc eo thắt) chia đôi tạo thành 2 tế bào con"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tế bào phải lớn lên trước khi có thể bắt đầu phân chia."
+      },
+      {
+        "level": 2,
+        "text": "Trong quá trình phân chia, nhân luôn phân chia trước chất tế bào."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu sắp xếp",
+        "body": "Xác định thứ tự chuỗi sự kiện từ lớn lên đến phân chia tế bào."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Trình tự phân chia chuẩn SGK",
+        "body": "Lớn lên thành tế bào trưởng thành → Nhân phân chia trước → Chất tế bào phân chia → Hình thành vách ngăn/eo thắt tạo 2 tế bào con."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận thứ tự",
+        "body": "Thứ tự 4 bước liên tục và logic theo cơ chế sinh học."
+      }
+    ],
+    "finalSolution": "Trình tự chuẩn: Lớn lên thành tế bào trưởng thành → Nhân phân chia → Chất tế bào phân chia → Hình thành vách ngăn/eo thắt tạo 2 tế bào con.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng chất tế bào phân chia trước rồi nhân mới phân chia sau."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b05-q02",
+    "lessonId": "bio-g6-b05",
+    "sgkBaiSo": 20,
+    "skillIds": [
+      "bio-sinh-san-te-bao"
+    ],
+    "difficulty": 1,
+    "prompt": "Từ 1 tế bào ban đầu, sau 3 lần phân chia liên tiếp sẽ tạo ra bao nhiêu tế bào con (nhập số lượng tế bào)?",
+    "knowledge": [
+      "bio-cong-thuc-phan-chia-te-bao"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 8,
+      "unit": "tế bào"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp dụng công thức N = 2^n với n là số lần phân chia."
+      },
+      {
+        "level": 2,
+        "text": "Tính lũy thừa: 2 mũ 3 = 2 × 2 × 2."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Dữ kiện đề bài",
+        "body": "Số tế bào ban đầu a = 1; Số lần phân chia n = 3."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Công thức tính",
+        "body": "N = a × 2^n = 1 × 2^3."
+      },
+      {
+        "kind": "compute",
+        "title": "Thực hiện phép tính",
+        "body": "2^3 = 2 × 2 × 2 = 8 tế bào."
+      }
+    ],
+    "finalSolution": "Số tế bào con tạo thành sau 3 lần phân chia là: 2^3 = 8 tế bào.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Lấy 2 × 3 = 6 tế bào (nhầm giữa phép nhân và phép lũy thừa cơ số 2)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b05-q03",
+    "lessonId": "bio-g6-b05",
+    "sgkBaiSo": 20,
+    "skillIds": [
+      "bio-sinh-san-te-bao"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong phòng thí nghiệm, người ta nuôi cấy 5 tế bào vi khuẩn ban đầu. Biết rằng các tế bào đều thực hiện phân chia liên tiếp 3 lần. Tính tổng số tế bào vi khuẩn thu được sau quá trình trên:",
+    "knowledge": [
+      "bio-cong-thuc-phan-chia-te-bao"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 40,
+      "unit": "tế bào"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Công thức tổng quát khi có nhiều tế bào ban đầu: N = a × 2^n."
+      },
+      {
+        "level": 2,
+        "text": "Thay số: a = 5 tế bào ban đầu, n = 3 lần phân chia."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt dữ kiện",
+        "body": "Số tế bào ban đầu a = 5; Số lần phân chia n = 3."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Áp dụng công thức tổng quát",
+        "body": "N = a × 2^n."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính toán",
+        "body": "N = 5 × 2^3 = 5 × 8 = 40 tế bào."
+      }
+    ],
+    "finalSolution": "Tổng số tế bào vi khuẩn thu được là: 5 × 2^3 = 5 × 8 = 40 tế bào.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Quên nhân với số tế bào ban đầu a = 5, chỉ tính 2^3 = 8 tế bào."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b05-q04",
+    "lessonId": "bio-g6-b05",
+    "sgkBaiSo": 20,
+    "skillIds": [
+      "bio-sinh-san-te-bao"
+    ],
+    "difficulty": 1,
+    "prompt": "Hiện tượng nào sau đây trong thực tế chứng minh cho sự lớn lên và phân chia của các tế bào trong cơ thể người?",
+    "knowledge": [
+      "bio-y-nghia-phan-chia-te-bao"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vết trầy xước ngoài da sau vài ngày tự lành lại và tạo lớp da non mới"
+        },
+        {
+          "id": "opt-b",
+          "label": "Mắt chớp liên tục khi có bụi bay vào"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cơ thể run lên khi trời chuyển lạnh"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tim đập nhanh hơn khi chạy nhanh"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Lớn lên và phân chia tạo ra các tế bào mới để thay thế hoặc tăng khối lượng mô."
+      },
+      {
+        "level": 2,
+        "text": "Hiện tượng liền da non chính là nhờ các tế bào biểu bì phân chia tạo tế bào mới bù đắp vết thương."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Ý nghĩa sinh học của phân chia tế bào",
+        "body": "Tìm hiện tượng liên quan đến việc sinh sản tế bào mới thay thế tế bào cũ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân tích các đáp án",
+        "body": "Chớp mắt, run rẩy hay tim đập nhanh là phản xạ thần kinh / điều hòa thân nhiệt. Chỉ có vết thương liền da non là nhờ các tế bào phân chia tạo ra tế bào mới lấp đầy."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án đúng",
+        "body": "Lựa chọn chính xác là bằng chứng trực quan nhất cho sự phân chia tế bào."
+      }
+    ],
+    "finalSolution": "Vết trầy xước tự lành tạo da non là bằng chứng rõ ràng cho thấy các tế bào xung quanh vết thương tích cực lớn lên và phân chia để thay thế các tế bào bị tổn thương.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Nhầm các phản xạ thần kinh (run, chớp mắt) với quá trình phân chia tế bào."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b05-q05",
+    "lessonId": "bio-g6-b05",
+    "sgkBaiSo": 20,
+    "skillIds": [
+      "bio-sinh-san-te-bao"
+    ],
+    "difficulty": 2,
+    "prompt": "Điểm khác biệt trong việc hình thành tế bào con ở tế bào thực vật so với tế bào động vật là gì?",
+    "knowledge": [
+      "bio-su-sinh-san-te-bao"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tế bào thực vật phân chia nhân sau chất tế bào"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tế bào động vật luôn phân chia tạo 4 tế bào con"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tế bào thực vật hình thành vách ngăn từ giữa ra ngoài, còn tế bào động vật màng sinh chất thắt lại ở giữa"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tế bào thực vật không thể phân chia tế bào"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tế bào thực vật có thành tế bào cellulose cứng cáp bao ngoài nên không thể co thắt lại như tế bào động vật."
+      },
+      {
+        "level": 2,
+        "text": "Vì vậy tế bào thực vật phải tạo một vách ngăn mới chia đôi buồng tế bào."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "So sánh cơ chế phân chia tế bào chất",
+        "body": "Tìm sự khác biệt khi tách đôi tế bào chất ở thực vật và động vật."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Ảnh hưởng của thành tế bào",
+        "body": "Do có thành cellulose cứng không thể co thắt, tế bào thực vật hình thành vách ngăn tế bào ở giữa. Tế bào động vật chỉ có màng mềm mại nên màng sinh chất thắt eo lại ở giữa."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án đúng",
+        "body": "Đáp án A mô tả chính xác sự khác biệt."
+      }
+    ],
+    "finalSolution": "Ở tế bào thực vật, do có thành tế bào cellulose cứng cáp nên hình thành vách ngăn chia đôi; ở tế bào động vật màng sinh chất thắt lại ở giữa để tách thành 2 tế bào con.",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng tế bào thực vật cũng co thắt màng sinh chất giống hệt tế bào động vật."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b05-q06",
+    "lessonId": "bio-g6-b05",
+    "sgkBaiSo": 20,
+    "skillIds": [
+      "bio-sinh-san-te-bao"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về sự lớn lên và sinh sản của tế bào:",
+    "knowledge": [
+      "bio-su-lon-len-te-bao",
+      "bio-su-sinh-san-te-bao",
+      "bio-cong-thuc-phan-chia-te-bao"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Trong quá trình phân chia tế bào, chất tế bào luôn phân chia trước rồi nhân mới phân chia sau.",
+          "correct": false
+        },
+        {
+          "id": "st-2",
+          "text": "Sự lớn lên và phân chia của tế bào là cơ sở giúp cơ thể sinh vật tăng trưởng kích thước và khối lượng.",
+          "correct": true
+        },
+        {
+          "id": "st-3",
+          "text": "Từ 1 tế bào mẹ ban đầu, sau 5 lần phân chia liên tiếp sẽ tạo ra 32 tế bào con.",
+          "correct": true
+        },
+        {
+          "id": "st-4",
+          "text": "Tế bào non vừa mới sinh ra có thể lập tức phân chia ngay thành 2 tế bào con mà không cần lớn lên.",
+          "correct": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhân chứa vật chất di truyền DNA nên bắt buộc phải nhân đôi và phân chia trước để chia đều cho 2 tế bào con."
+      },
+      {
+        "level": 2,
+        "text": "2 lũy thừa 5: 2^5 = 32."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Đánh giá từng câu về quy luật sinh sản tế bào."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra từng ý",
+        "body": "1. Chất tế bào phân chia trước nhân: Sai (nhân phân chia trước). 2. Cơ sở tăng trưởng cơ thể: Đúng. 3. 2^5 = 32 tế bào con: Đúng. 4. Phân chia ngay không cần lớn: Sai (phải lớn lên mới phân chia)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Ý 1: Sai; Ý 2: Đúng; Ý 3: Đúng; Ý 4: Sai."
+      }
+    ],
+    "finalSolution": "Phát biểu 2 và 3 đúng. Phát biểu 1 sai (nhân phân chia trước). Phát biểu 4 sai (tế bào phải trải qua quá trình lớn lên đạt kích thước nhất định mới phân chia).",
+    "commonMistakes": [
+      {
+        "id": "cm-06",
+        "message": "Nghĩ rằng tế bào có thể phân chia liên tục vô hạn mà không cần thời gian hấp thụ dinh dưỡng để lớn lên."
+      }
+    ]
+  }
+]

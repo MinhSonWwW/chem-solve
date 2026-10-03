@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g9-b16-q01",
+    "lessonId": "bio-g9-b16",
+    "sgkBaiSo": 51,
+    "skillIds": ["bio9-nguon-goc-su-song"],
+    "difficulty": 1,
+    "prompt": "Theo học thuyết Oparin - Haldane, quá trình phát sinh sự sống trên Trái Đất đã trải qua ba giai đoạn liên tiếp nào?",
+    "knowledge": ["kb-bio-g9-ba-giai-doan-nguon-goc-su-song"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tiến hóa hóa học → Tiến hóa tiền sinh học → Tiến hóa sinh học" },
+        { "id": "opt-b", "label": "Tiến hóa sinh học → Tiến hóa hóa học → Tiến hóa xã hội" },
+        { "id": "opt-c", "label": "Tiến hóa tiền sinh học → Tiến hóa sinh học → Tiến hóa hóa học" },
+        { "id": "opt-d", "label": "Tiến hóa địa chất → Tiến hóa khí quyển → Tiến hóa vũ trụ" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Bắt đầu từ các chất hóa học vô cơ biến đổi thành chất hữu cơ đơn giản rồi đại phân tử." },
+      { "level": 2, "text": "Sau đó hình thành tế bào nguyên thủy (tiền sinh học), rồi từ tế bào nguyên thủy tiến hóa thành mọi loài (sinh học)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Các giai đoạn nguồn gốc sự sống", "body": "Sự sống không xuất hiện đột ngột mà trải qua một quá trình tiến hóa phân tử và tế bào lâu dài." },
+      { "kind": "knowledge", "title": "Trật tự ba giai đoạn", "body": "Giai đoạn 1: Tiến hóa hóa học (chất vô cơ → chất hữu cơ đơn giản → đại phân tử sinh học). Giai đoạn 2: Tiến hóa tiền sinh học (đại phân tử → giọt coacervate → tế bào nguyên thủy). Giai đoạn 3: Tiến hóa sinh học (tế bào nguyên thủy → sinh giới ngày nay dưới tác động của CLTN)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tiến hóa hóa học → Tiến hóa tiền sinh học → Tiến hóa sinh học." }
+    ],
+    "finalSolution": "Quá trình phát sinh sự sống trải qua 3 giai đoạn: Tiến hóa hóa học → Tiến hóa tiền sinh học → Tiến hóa sinh học.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Đảo lộn vị trí giữa tiến hóa tiền sinh học và tiến hóa hóa học." }
+    ]
+  },
+  {
+    "id": "bio-g9-b16-q02",
+    "lessonId": "bio-g9-b16",
+    "sgkBaiSo": 51,
+    "skillIds": ["bio9-nguon-goc-su-song"],
+    "difficulty": 1,
+    "prompt": "Khí quyển Trái Đất nguyên thủy thuở sơ khai có thành phần chủ yếu gồm những chất khí nào sau đây?",
+    "knowledge": ["kb-bio-g9-khi-quyen-nguyen-thuy"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "CH4 (metan), NH3 (amoniac), H2O (hơi nước), H2 (hydro) và hoàn toàn không có khí O2 tự do" },
+        { "id": "opt-b", "label": "N2 (nitơ), O2 (oxy), CO2 (cacbonic) và tầng ozone đậm đặc" },
+        { "id": "opt-c", "label": "Chỉ duy nhất có khí oxy (O2) nguyên chất" },
+        { "id": "opt-d", "label": "Hỗn hợp khí trơ heli và neon bão hòa" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Khí quyển Trái Đất thuở sơ khai mang tính khử mạnh, không có chất khí duy trì sự cháy." },
+      { "level": 2, "text": "Đặc điểm cốt lõi là hoàn toàn không có khí oxy tự do (O2)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Thành phần hóa học khí quyển nguyên thủy", "body": "Khi Trái Đất mới hình thành khoảng 4,5 tỉ năm trước, các chất khí thoát ra từ lòng đất." },
+      { "kind": "knowledge", "title": "Các khí đặc trưng", "body": "Khí quyển nguyên thủy chứa: CH4, NH3, hơi nước, H2, CO... Tính chất mang tính khử và hoàn toàn vắng bóng khí oxy tự do (O2) cũng như tầng ozone (O3)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Gồm CH4, NH3, hơi nước, H2 và không có O2 tự do." }
+    ],
+    "finalSolution": "Khí quyển Trái Đất nguyên thủy gồm CH4, NH3, H2O, H2 mang tính khử và hoàn toàn không có khí oxy tự do (O2).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng khí quyển nguyên thủy đã có sẵn khí oxy như ngày nay (cạm bẫy kinh điển)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b16-q03",
+    "lessonId": "bio-g9-b16",
+    "sgkBaiSo": 51,
+    "skillIds": ["bio9-nguon-goc-su-song"],
+    "difficulty": 2,
+    "prompt": "Thí nghiệm thực nghiệm kinh điển của Stanley Miller và Harold Urey (1953) đã chứng minh thành công điều gì?",
+    "knowledge": ["kb-bio-g9-ba-giai-doan-nguon-goc-su-song"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Các chất hữu cơ đơn giản (như các amino acid) hoàn toàn có thể được tổng hợp nhân tạo từ các chất vô cơ trong điều kiện mô phỏng khí quyển nguyên thủy nhờ năng lượng tia lửa điện" },
+        { "id": "opt-b", "label": "Tế bào vi khuẩn đầu tiên có thể tự nảy mầm từ bụi bẩn trong không khí" },
+        { "id": "opt-c", "label": "Khủng long tuyệt chủng do một thiên thạch khổng lồ va chạm Trái Đất" },
+        { "id": "opt-d", "label": "Phân tử DNA có thể tự sao chép mà không cần bất kì enzyme nào" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Miller và Urey đưa hỗn hợp khí CH4, NH3, H2, hơi nước vào bình kín và phóng tia lửa điện mô phỏng sấm sét." },
+      { "level": 2, "text": "Sau 1 tuần, họ thu được nhiều loại amino acid hữu cơ — viên gạch xây dựng nên protein của sự sống." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Thí nghiệm Miller - Urey", "body": "Thí nghiệm mô phỏng điều kiện Trái Đất nguyên thủy để kiểm chứng giả thuyết tiến hóa hóa học." },
+      { "kind": "knowledge", "title": "Kết quả thực nghiệm", "body": "Dưới tác động của tia lửa điện phóng liên tục qua hỗn hợp khí khử (CH4, NH3, H2, hơi nước), các phản ứng hóa học tự phát đã tạo ra nhiều hợp chất hữu cơ quan trọng, trong đó có các amino acid (glycine, alanine...). Thí nghiệm chứng minh sự sống có thể bắt đầu từ chất vô cơ." },
+      { "kind": "answer", "title": "Kết luận", "body": "Chứng minh chất vô cơ có thể tổng hợp thành chất hữu cơ (amino acid) nhờ năng lượng sấm sét." }
+    ],
+    "finalSolution": "Thí nghiệm Miller - Urey chứng minh chất hữu cơ đơn giản (amino acid) có thể hình thành tự nhiên từ các chất vô cơ trong điều kiện khí quyển nguyên thủy dưới tác động của phóng điện.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng thí nghiệm của Miller đã tạo ra được tế bào sống hoàn chỉnh (thực tế chỉ mới tạo ra amino acid)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b16-q04",
+    "lessonId": "bio-g9-b16",
+    "sgkBaiSo": 51,
+    "skillIds": ["bio9-nguon-goc-su-song"],
+    "difficulty": 2,
+    "prompt": "Sự xuất hiện của cấu trúc nào sau đây đánh dấu bước chuyển biến quyết định từ giai đoạn 'tiến hóa hóa học' sang 'tiến hóa tiền sinh học'?",
+    "knowledge": ["kb-bio-g9-ba-giai-doan-nguon-goc-su-song"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Sự hình thành các giọt đông tụ (coacervate) được bao bọc bởi lớp màng lipid kép sơ khai, ngăn cách môi trường nội bào với ngoại bào" },
+        { "id": "opt-b", "label": "Sự xuất hiện của loài động vật có xương sống đầu tiên" },
+        { "id": "opt-c", "label": "Sự tích tụ khí oxy dày đặc trên tầng bình lưu" },
+        { "id": "opt-d", "label": "Sự hình thành các lớp quặng sắt trầm tích ở đáy biển" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Để có sự sống, các đại phân tử phải tập hợp lại trong một cấu trúc riêng biệt ngăn cách với môi trường ngoài." },
+      { "level": 2, "text": "Đó là các giọt đông tụ coacervate mang lớp màng lipid bán thấm sơ khai." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Bản chất giai đoạn tiền sinh học", "body": "Giai đoạn tiền sinh học là bước tập hợp các đại phân tử hữu cơ thành các hệ thống vi mô sơ khai." },
+      { "kind": "knowledge", "title": "Vai trò của màng lipid và giọt coacervate", "body": "Các đại phân tử protein và lipid trong nước tụ lại thành giọt đông tụ (coacervate). Sự xuất hiện của màng lipid bao bọc giúp bảo vệ cấu trúc bên trong, kiểm soát trao đổi chất với môi trường ngoài, tạo thành tiền thân của tế bào sống (tế bào nguyên thủy)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Sự xuất hiện của giọt đông tụ coacervate có màng lipid kép bao bọc." }
+    ],
+    "finalSolution": "Sự hình thành các giọt coacervate có màng lipid bao bọc đánh dấu bước chuyển quyết định sang giai đoạn tiến hóa tiền sinh học.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng sự xuất hiện của phân tử nước tự do là dấu hiệu của tiền sinh học." }
+    ]
+  },
+  {
+    "id": "bio-g9-b16-q05",
+    "lessonId": "bio-g9-b16",
+    "sgkBaiSo": 51,
+    "skillIds": ["bio9-nguon-goc-su-song"],
+    "difficulty": 2,
+    "prompt": "Nguồn gốc của lượng khí oxy (O2) dồi dào trong bầu khí quyển Trái Đất ngày nay bắt nguồn từ sự kiện sinh học nào trong lịch sử?",
+    "knowledge": ["kb-bio-g9-khi-quyen-nguyen-thuy", "kb-bio-g9-lich-su-nam-dai-dia-chat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Do hoạt động quang hợp giải phóng khí O2 của các loài vi khuẩn lam cổ đại xuất hiện ở Đại Thái cổ" },
+        { "id": "opt-b", "label": "Do các vụ phun trào núi lửa liên tục thổi khí oxy từ tâm Trái Đất lên" },
+        { "id": "opt-c", "label": "Do các tảng băng từ sao chổi rơi xuống Trái Đất tan chảy giải phóng oxy" },
+        { "id": "opt-d", "label": "Do các trận mưa sấm sét phân hủy hoàn toàn nước biển" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Khí quyển nguyên thủy không có khí O2; chỉ có sinh vật quang hợp mới sinh ra O2." },
+      { "level": 2, "text": "Sinh vật quang hợp đầu tiên của hành tinh chúng ta là vi khuẩn lam (tảo lam cổ đại)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nguồn gốc của O2 khí quyển", "body": "Khí O2 tự do trên Trái Đất là sản phẩm của hoạt động trao đổi chất của sinh vật." },
+      { "kind": "knowledge", "title": "Vai trò của vi khuẩn lam", "body": "Ở Đại Thái cổ, vi khuẩn lam cổ đại xuất hiện mang sắc tố quang hợp hấp thụ ánh sáng mặt trời, sử dụng nước và giải phóng khí O2. Qua hàng trăm triệu năm, khí O2 tích tụ dần tạo nên bầu khí quyển hiếu khí và hình thành tầng ozone bảo vệ sinh vật lên cạn." },
+      { "kind": "answer", "title": "Kết luận", "body": "Do hoạt động quang hợp của vi khuẩn lam cổ đại ở Đại Thái cổ." }
+    ],
+    "finalSolution": "Khí oxy trong khí quyển Trái Đất ngày nay bắt nguồn từ hoạt động quang hợp của các loài vi khuẩn lam cổ đại từ Đại Thái cổ.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng khí O2 do núi lửa phun ra (núi lửa phun ra khí SO2, CO2, tro bụi chứ không có O2 tự do)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b16-q06",
+    "lessonId": "bio-g9-b16",
+    "sgkBaiSo": 51,
+    "skillIds": ["bio9-nguon-goc-su-song"],
+    "difficulty": 1,
+    "prompt": "Trình tự xuất hiện 5 đại địa chất trong lịch sử phát triển sinh giới từ cổ xưa nhất đến thời hiện đại là gì?",
+    "knowledge": ["kb-bio-g9-lich-su-nam-dai-dia-chat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Đại Thái cổ → Đại Nguyên sinh → Đại Cổ sinh → Đại Trung sinh → Đại Tân sinh" },
+        { "id": "opt-b", "label": "Đại Cổ sinh → Đại Trung sinh → Đại Tân sinh → Đại Thái cổ → Đại Nguyên sinh" },
+        { "id": "opt-c", "label": "Đại Nguyên sinh → Đại Thái cổ → Đại Trung sinh → Đại Cổ sinh → Đại Tân sinh" },
+        { "id": "opt-d", "label": "Đại Thái cổ → Đại Cổ sinh → Đại Nguyên sinh → Đại Tân sinh → Đại Trung sinh" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Bắt đầu bằng đại cổ xưa nhất là 'Thái cổ' (thái = rất xưa)." },
+      { "level": 2, "text": "Kết thúc bằng đại hiện nay là 'Tân sinh' (tân = mới)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định niên biểu 5 đại địa chất", "body": "Lịch sử Trái Đất được phân chia thành 5 đại lớn theo thứ tự thời gian." },
+      { "kind": "knowledge", "title": "Trật tự chuẩn mực", "body": "1. Đại Thái cổ (xuất hiện sự sống đầu tiên) → 2. Đại Nguyên sinh (sinh vật đơn bào, tảo) → 3. Đại Cổ sinh (cây lên cạn, cá, lưỡng cư) → 4. Đại Trung sinh (thời đại khủng long) → 5. Đại Tân sinh (thời đại chim, thú, loài người)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Thái cổ → Nguyên sinh → Cổ sinh → Trung sinh → Tân sinh." }
+    ],
+    "finalSolution": "Trật tự chuẩn của 5 đại địa chất: Đại Thái cổ → Đại Nguyên sinh → Đại Cổ sinh → Đại Trung sinh → Đại Tân sinh.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Đảo lộn vị trí giữa Đại Thái cổ và Đại Cổ sinh." }
+    ]
+  },
+  {
+    "id": "bio-g9-b16-q07",
+    "lessonId": "bio-g9-b16",
+    "sgkBaiSo": 51,
+    "skillIds": ["bio9-nguon-goc-su-song"],
+    "difficulty": 1,
+    "prompt": "Đại Trung sinh (gồm kỉ Tam điệp, kỉ Jura, kỉ Phấn trắng) được mệnh danh là thời đại cực thịnh của nhóm sinh vật nào?",
+    "knowledge": ["kb-bio-g9-lich-su-nam-dai-dia-chat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Bò sát khổng lồ (thời đại của loài Khủng long) và thực vật hạt trần" },
+        { "id": "opt-b", "label": "Loài người và thú ăn thịt kích thước lớn" },
+        { "id": "opt-c", "label": "Các loài cá không hàm và rừng quyết cổ đại" },
+        { "id": "opt-d", "label": "Vi khuẩn lam và vi khuẩn cổ đơn bào" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Kỉ Jura nổi tiếng qua phim ảnh là thời đại của loài bò sát khổng lồ." },
+      { "level": 2, "text": "Khủng long chiếm lĩnh toàn bộ cạn, biển và bầu trời ở đại Trung sinh." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đặc trưng sinh vật Đại Trung sinh", "body": "Đại Trung sinh cách đây khoảng 250 - 65 triệu năm." },
+      { "kind": "knowledge", "title": "Sinh vật thống trị", "body": "Đại Trung sinh là thời kì phồn thịnh cực độ của bò sát khổng lồ (khủng long, dực long, ngư long) và thực vật hạt trần (thông, tuế); cuối đại Trung sinh khủng long tuyệt diệt." },
+      { "kind": "answer", "title": "Kết luận", "body": "Bò sát khổng lồ (khủng long) và thực vật hạt trần." }
+    ],
+    "finalSolution": "Đại Trung sinh là thời đại cực thịnh của bò sát khổng lồ (khủng long) và thực vật hạt trần.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng loài người xuất hiện cùng thời với khủng long ở Đại Trung sinh." }
+    ]
+  },
+  {
+    "id": "bio-g9-b16-q08",
+    "lessonId": "bio-g9-b16",
+    "sgkBaiSo": 51,
+    "skillIds": ["bio9-nguon-goc-su-song"],
+    "difficulty": 2,
+    "prompt": "Loài người (Homo sapiens) xuất hiện vào thời kì nào trong lịch sử phát triển địa chất của Trái Đất?",
+    "knowledge": ["kb-bio-g9-lich-su-nam-dai-dia-chat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Đại Tân sinh, thuộc kỉ Đệ Tứ (thế Canh tân - kỉ thứ 4)" },
+        { "id": "opt-b", "label": "Đại Cổ sinh, thuộc kỉ Than đá" },
+        { "id": "opt-c", "label": "Đại Trung sinh, thuộc kỉ Jura" },
+        { "id": "opt-d", "label": "Đại Thái cổ, ngay sau khi vi khuẩn lam xuất hiện" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "So với lịch sử 4,5 tỉ năm của Trái Đất, loài người xuất hiện rất muộn ở đại gần đây nhất." },
+      { "level": 2, "text": "Đó là đại Tân sinh (đại mới), thuộc kỉ Đệ Tứ (Quaternary)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Niên đại xuất hiện của loài người", "body": "Loài người là sinh vật tiến hóa cao nhất và xuất hiện gần đây nhất trên Trái Đất." },
+      { "kind": "knowledge", "title": "Mốc địa chất chuẩn xác", "body": "Loài người xuất hiện ở Đại Tân sinh, chính xác là vào kỉ Đệ Tứ (khoảng 2 triệu năm trước ở thế Canh tân). Các đại trước đó (Thái cổ, Nguyên sinh, Cổ sinh, Trung sinh) hoàn toàn chưa có loài người." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đại Tân sinh, thuộc kỉ Đệ Tứ." }
+    ],
+    "finalSolution": "Loài người xuất hiện ở Đại Tân sinh, thuộc kỉ Đệ Tứ (thế Canh tân) trong lịch sử địa chất Trái Đất.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng loài người xuất hiện ở Đại Trung sinh cùng với thú cổ hoặc kỉ Than đá Đại Cổ sinh." }
+    ]
+  }
+]

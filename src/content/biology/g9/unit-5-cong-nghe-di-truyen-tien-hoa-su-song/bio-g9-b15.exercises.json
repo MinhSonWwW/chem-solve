@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g9-b15-q01",
+    "lessonId": "bio-g9-b15",
+    "sgkBaiSo": 50,
+    "skillIds": ["bio9-co-che-tien-hoa"],
+    "difficulty": 1,
+    "prompt": "Theo thuyết tiến hóa tổng hợp hiện đại, cấp độ tổ chức sống nào được xem là 'đơn vị tiến hóa cơ sở' của loài?",
+    "knowledge": ["kb-bio-g9-thuyet-tien-hoa-tong-hop"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Quần thể" },
+        { "id": "opt-b", "label": "Cá thể riêng lẻ" },
+        { "id": "opt-c", "label": "Hệ sinh thái" },
+        { "id": "opt-d", "label": "Toàn bộ sinh quyển" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Cá thể chỉ có một kiểu gen cố định suốt đời, không thể tự tiến hóa qua các thế hệ." },
+      { "level": 2, "text": "Chỉ có tập hợp các cá thể cùng loài giao phối với nhau (quần thể) mới có vốn gen biến đổi liên tục qua các thế hệ." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Khái niệm đơn vị tiến hóa cơ sở", "body": "Đơn vị tiến hóa phải là cấu trúc nhỏ nhất có khả năng biến đổi vốn gen qua các thế hệ và tồn tại lâu dài trong tự nhiên." },
+      { "kind": "knowledge", "title": "Tại sao lại là quần thể?", "body": "Cá thể có đời sống hữu hạn và kiểu gen cố định không thể phân chia tần số allele. Quần thể là đơn vị sinh sản, có cấu trúc di truyền (tần số allele và thành phần kiểu gen) biến đổi qua các thế hệ dưới tác động của các nhân tố tiến hóa." },
+      { "kind": "answer", "title": "Kết luận", "body": "Quần thể là đơn vị tiến hóa cơ sở." }
+    ],
+    "finalSolution": "Theo thuyết tiến hóa hiện đại, quần thể là đơn vị tiến hóa cơ sở vì quần thể là đơn vị sinh sản và có vốn gen biến đổi qua các thế hệ.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Chọn cá thể (quan niệm cổ điển của Darwin xem cá thể là đối tượng, nhưng tiến hóa hiện đại khẳng định quần thể là đơn vị cơ sở)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b15-q02",
+    "lessonId": "bio-g9-b15",
+    "sgkBaiSo": 50,
+    "skillIds": ["bio9-co-che-tien-hoa"],
+    "difficulty": 1,
+    "prompt": "Quá trình biến đổi tần số allele và thành phần kiểu gen của quần thể, dẫn đến sự hình thành loài mới được gọi là gì?",
+    "knowledge": ["kb-bio-g9-thuyet-tien-hoa-tong-hop"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tiến hóa nhỏ (Microevolution)" },
+        { "id": "opt-b", "label": "Tiến hóa lớn (Macroevolution)" },
+        { "id": "opt-c", "label": "Tiến hóa hóa học" },
+        { "id": "opt-d", "label": "Tiến hóa tiền sinh học" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Tiến hóa nhỏ diễn ra trong phạm vi quần thể và kết thúc khi hình thành loài mới." },
+      { "level": 2, "text": "Tiến hóa lớn diễn ra ở quy mô trên loài (hình thành chi, họ, bộ, lớp, ngành)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân biệt hai quy mô tiến hóa", "body": "Tiến hóa sinh học được phân chia thành tiến hóa nhỏ và tiến hóa lớn." },
+      { "kind": "knowledge", "title": "Định nghĩa tiến hóa nhỏ", "body": "Tiến hóa nhỏ là quá trình biến đổi cấu trúc di truyền của quần thể (tần số allele và kiểu gen) dưới tác động của các nhân tố tiến hóa, dẫn tới sự cách li sinh sản và hình thành loài mới." },
+      { "kind": "answer", "title": "Kết luận", "body": "Quá trình đó là Tiến hóa nhỏ." }
+    ],
+    "finalSolution": "Quá trình biến đổi vốn gen của quần thể dẫn đến hình thành loài mới là tiến hóa nhỏ (Microevolution).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm tiến hóa nhỏ với tiến hóa lớn (tiến hóa lớn hình thành các bậc phân loại trên loài)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b15-q03",
+    "lessonId": "bio-g9-b15",
+    "sgkBaiSo": 50,
+    "skillIds": ["bio9-co-che-tien-hoa"],
+    "difficulty": 1,
+    "prompt": "Trong các nhân tố tiến hóa cơ bản, nhân tố nào là nguồn duy nhất trực tiếp tạo ra các allele mới hoàn toàn cho vốn gen của quần thể?",
+    "knowledge": ["kb-bio-g9-nhan-to-dot-bien-tien-hoa"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Đột biến gen" },
+        { "id": "opt-b", "label": "Giao phối ngẫu nhiên" },
+        { "id": "opt-c", "label": "Chọn lọc tự nhiên" },
+        { "id": "opt-d", "label": "Cách li địa lí" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Giao phối chỉ xáo trộn các gen có sẵn; chọn lọc tự nhiên chỉ giữ lại hoặc loại bỏ gen." },
+      { "level": 2, "text": "Chỉ có sự biến đổi phân tử của gen (đột biến) mới biến gen A thành gen a mới." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nguồn gốc của các allele mới", "body": "Để có các dạng allele mới trong tự nhiên cần có sự biến đổi vật chất di truyền ở cấp độ phân tử." },
+      { "kind": "knowledge", "title": "Vai trò của đột biến", "body": "Đột biến gen làm biến đổi cấu trúc nucleotide, biến đổi allele ban đầu thành allele mới, qua đó cung cấp nguồn nguyên liệu sơ cấp dồi dào cho quá trình tiến hóa." },
+      { "kind": "answer", "title": "Kết luận", "body": "Nhân tố đó là Đột biến gen." }
+    ],
+    "finalSolution": "Đột biến gen là nhân tố tiến hóa duy nhất trực tiếp tạo ra các allele mới, cung cấp nguyên liệu sơ cấp cho chọn lọc tự nhiên.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Tưởng rằng chọn lọc tự nhiên hoặc giao phối tự tạo ra allele mới." }
+    ]
+  },
+  {
+    "id": "bio-g9-b15-q04",
+    "lessonId": "bio-g9-b15",
+    "sgkBaiSo": 50,
+    "skillIds": ["bio9-co-che-tien-hoa"],
+    "difficulty": 2,
+    "prompt": "Giao phối ngẫu nhiên đóng vai trò quan trọng như thế nào đối với quá trình tiến hóa của quần thể?",
+    "knowledge": ["kb-bio-g9-nhan-to-giao-phoi-tien-hoa"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Phát tán các đột biến và tổ hợp các allele thành vô số tổ hợp kiểu gen mới, tạo nguồn biến dị thứ cấp phong phú cho chọn lọc tự nhiên" },
+        { "id": "opt-b", "label": "Trực tiếp làm thay đổi tần số của các allele từ trạng thái có lợi thành có hại" },
+        { "id": "opt-c", "label": "Tiêu diệt toàn bộ các cá thể mang kiểu gen dị hợp tử trong quần thể" },
+        { "id": "opt-d", "label": "Làm cho bộ nhiễm sắc thể của toàn bộ cá thể bị đa bội hóa" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Giao phối ngẫu nhiên giống như việc xáo trộn một cỗ bài gồm nhiều quân bài khác nhau." },
+      { "level": 2, "text": "Tạo ra vô số kiểu gen biến dị tổ hợp (nguyên liệu thứ cấp) cho chọn lọc tự nhiên sàng lọc." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Tác động của giao phối ngẫu nhiên", "body": "Giao phối ngẫu nhiên giữa các cá thể trong quần thể." },
+      { "kind": "knowledge", "title": "Cơ chế tạo biến dị thứ cấp", "body": "Giao phối ngẫu nhiên không làm thay đổi tần số các allele nhưng làm phát tán các đột biến mới xuất hiện ra khắp quần thể, tổ hợp các allele lại với nhau tạo nên vô số kiểu gen mới (biến dị tổ hợp - nguyên liệu thứ cấp), duy trì sự đa dạng di truyền phong phú." },
+      { "kind": "answer", "title": "Kết luận", "body": "Phát tán đột biến, tạo biến dị tổ hợp (nguyên liệu thứ cấp) phong phú." }
+    ],
+    "finalSolution": "Giao phối ngẫu nhiên phát tán các đột biến và tạo ra vô số tổ hợp kiểu gen mới (nguyên liệu thứ cấp dồi dào) cho quá trình tiến hóa.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng giao phối ngẫu nhiên làm thay đổi tần số allele của quần thể (giao phối ngẫu nhiên duy trì ổn định tần số allele)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b15-q05",
+    "lessonId": "bio-g9-b15",
+    "sgkBaiSo": 50,
+    "skillIds": ["bio9-co-che-tien-hoa"],
+    "difficulty": 2,
+    "prompt": "Tại sao trong các nhân tố tiến hóa, chỉ có 'chọn lọc tự nhiên' mới được xem là nhân tố tiến hóa có hướng?",
+    "knowledge": ["kb-bio-g9-nhan-to-cltn-tien-hoa"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Vì chọn lọc tự nhiên đào thải các kiểu hình bất lợi và tích lũy các kiểu hình có lợi, làm thay đổi tần số allele của quần thể theo hướng xác định thích nghi với môi trường" },
+        { "id": "opt-b", "label": "Vì chọn lọc tự nhiên có trí tuệ biết trước loài nào cần phát triển trong tương lai" },
+        { "id": "opt-c", "label": "Vì chọn lọc tự nhiên chỉ hoạt động theo một chiều từ động vật lên thực vật" },
+        { "id": "opt-d", "label": "Vì chọn lọc tự nhiên luôn luôn biến đổi gen trội thành gen lặn" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Đột biến xuất hiện hoàn toàn ngẫu nhiên và vô hướng (có thể có lợi, có hại hoặc trung tính)." },
+      { "level": 2, "text": "Chỉ có chọn lọc tự nhiên sàng lọc theo tiêu chí 'thích nghi với môi trường', do đó xác định chiều hướng biến đổi của quần thể." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Tính định hướng của chọn lọc tự nhiên", "body": "Đột biến là vô hướng; chỉ chọn lọc tự nhiên mới quy định hướng đi của tiến hóa." },
+      { "kind": "knowledge", "title": "Bản chất tác động có hướng", "body": "Dưới áp lực của điều kiện môi trường sống cụ thể, chọn lọc tự nhiên phân hóa khả năng sống sót và sinh sản của các kiểu gen. Nó kiên trì đào thải các alen quy định kiểu hình bất lợi và nâng cao tần số của các alen có lợi, định hướng cho sự thích nghi của quần thể." },
+      { "kind": "answer", "title": "Kết luận", "body": "Sàng lọc kiểu hình có lợi, biến đổi tần số allele theo hướng thích nghi." }
+    ],
+    "finalSolution": "Chọn lọc tự nhiên là nhân tố có hướng vì nó đào thải kiểu gen bất lợi và tích lũy kiểu gen có lợi, quy định chiều hướng thích nghi của quần thể sinh vật.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng đột biến cũng là nhân tố có hướng (đột biến diễn ra hoàn toàn ngẫu nhiên và vô hướng)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b15-q06",
+    "lessonId": "bio-g9-b15",
+    "sgkBaiSo": 50,
+    "skillIds": ["bio9-co-che-tien-hoa"],
+    "difficulty": 2,
+    "prompt": "Quan niệm nào sau đây về vai trò của chọn lọc tự nhiên là một SAI LẦM nghiêm trọng cần tránh?",
+    "knowledge": ["kb-bio-g9-nhan-to-cltn-tien-hoa"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Chọn lọc tự nhiên trực tiếp tạo ra các biến dị di truyền thích nghi theo nhu cầu của môi trường" },
+        { "id": "opt-b", "label": "Chọn lọc tự nhiên đóng vai trò là một bộ lọc sàng lọc các kiểu hình có sẵn trong quần thể" },
+        { "id": "opt-c", "label": "Chọn lọc tự nhiên tác động trực tiếp lên kiểu hình và gián tiếp làm thay đổi tần số kiểu gen" },
+        { "id": "opt-d", "label": "Chọn lọc tự nhiên phân hóa khả năng sống sót và sinh sản của các cá thể" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Môi trường sống không chủ động 'nhào nặn' ra các gen thích nghi mới." },
+      { "level": 2, "text": "Đột biến và giao phối tạo biến dị ngẫu nhiên; chọn lọc tự nhiên chỉ đóng vai trò 'cái rây' sàng lọc." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phát hiện quan niệm sai lầm", "body": "Câu hỏi tìm nhận định sai về vai trò của chọn lọc tự nhiên." },
+      { "kind": "knowledge", "title": "Chống bẫy kinh điển", "body": "Chọn lọc tự nhiên KHÔNG trực tiếp tạo ra bất kì biến dị hay allele mới nào. Các biến dị xuất hiện ngẫu nhiên qua đột biến và giao phối độc lập với môi trường; chọn lọc tự nhiên chỉ sàng lọc, giữ lại những cá thể đã có sẵn biến dị phù hợp." },
+      { "kind": "answer", "title": "Kết luận", "body": "Cho rằng chọn lọc tự nhiên trực tiếp tạo ra các biến dị thích nghi là sai lầm." }
+    ],
+    "finalSolution": "Khẳng định 'chọn lọc tự nhiên trực tiếp tạo ra biến dị thích nghi' là sai lầm; chọn lọc tự nhiên chỉ đóng vai trò sàng lọc các biến dị sẵn có trong quần thể.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Hiểu nhầm môi trường tác động sinh ra trực tiếp biến dị thích nghi theo cơ chế của Lamark." }
+    ]
+  },
+  {
+    "id": "bio-g9-b15-q07",
+    "lessonId": "bio-g9-b15",
+    "sgkBaiSo": 50,
+    "skillIds": ["bio9-co-che-tien-hoa"],
+    "difficulty": 2,
+    "prompt": "Sự phối hợp giữa ba nhân tố nào sau đây là cơ chế cốt lõi hình thành nên các đặc điểm thích nghi của sinh vật?",
+    "knowledge": ["kb-bio-g9-co-che-hinh-thanh-loai"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Đột biến, Giao phối và Chọn lọc tự nhiên" },
+        { "id": "opt-b", "label": "Nguyên phân, Giảm phân và Thụ tinh" },
+        { "id": "opt-c", "label": "Tái bản, Phiên mã và Dịch mã" },
+        { "id": "opt-d", "label": "Thường biến, Lai xa và Đa bội hóa" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Cần một nhân tố tạo nguồn gen mới (đột biến), một nhân tố nhân rộng và tổ hợp (giao phối) và một nhân tố sàng lọc (CLTN)." },
+      { "level": 2, "text": "Bộ ba nhân tố tiến hóa kinh điển: Đột biến - Giao phối - Chọn lọc tự nhiên." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Cơ chế hình thành thích nghi", "body": "Các đặc điểm thích nghi (như màu lông ngụy trang, cấu tạo mỏ chim phù hợp thức ăn) hình thành qua nhiều thế hệ." },
+      { "kind": "knowledge", "title": "Sự phối hợp nhịp nhàng", "body": "Đột biến tạo ra các biến dị sơ cấp. Giao phối nhân rộng và tạo ra vô số tổ hợp kiểu gen mới (biến dị thứ cấp). Chọn lọc tự nhiên kiên trì sàng lọc, tích lũy các kiểu gen quy định kiểu hình thích nghi cao nhất với môi trường." },
+      { "kind": "answer", "title": "Kết luận", "body": "Bộ ba nhân tố: Đột biến, Giao phối và Chọn lọc tự nhiên." }
+    ],
+    "finalSolution": "Quá trình hình thành đặc điểm thích nghi là kết quả của sự phối hợp chặt chẽ giữa 3 nhân tố: Đột biến (tạo nguồn mới), Giao phối (tổ hợp phát tán) và Chọn lọc tự nhiên (định hướng sàng lọc).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm bộ ba nhân tố tiến hóa với bộ ba cơ chế tế bào học (Nguyên phân, Giảm phân, Thụ tinh)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b15-q08",
+    "lessonId": "bio-g9-b15",
+    "sgkBaiSo": 50,
+    "skillIds": ["bio9-co-che-tien-hoa"],
+    "difficulty": 2,
+    "prompt": "Dấu hiệu then chốt nào sau đây là tiêu chuẩn khách quan khẳng định một quần thể mới đã chính thức trở thành một loài mới độc lập?",
+    "knowledge": ["kb-bio-g9-co-che-hinh-thanh-loai"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Xuất hiện sự cách li sinh sản giữa quần thể mới và quần thể gốc ban đầu" },
+        { "id": "opt-b", "label": "Các cá thể của quần thể mới có kích thước cơ thể lớn gấp đôi quần thể cũ" },
+        { "id": "opt-c", "label": "Quần thể mới di cư đến một hòn đảo xa xôi ngoài đại dương" },
+        { "id": "opt-d", "label": "Tất cả các cá thể trong quần thể mới đều chuyển sang ăn thức ăn thực vật" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Dù khác nhau về hình thái hay nơi ở, nếu vẫn có thể giao phối sinh con hữu thụ thì vẫn cùng một loài." },
+      { "level": 2, "text": "Khi hai nhóm không thể giao phối với nhau hoặc giao phối sinh con bất thụ thì đã trở thành hai loài riêng biệt." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Tiêu chuẩn xác định loài mới", "body": "Loài sinh học được định nghĩa dựa trên ranh giới sinh sản." },
+      { "kind": "knowledge", "title": "Bản chất cách li sinh sản", "body": "Các cách li địa lí, tập tính chỉ là bước đệm. Chỉ khi sự sai khác di truyền tích lũy đến mức các cá thể của hai nhóm không còn khả năng giao phối với nhau hoặc giao phối sinh con bất thụ (cách li sinh sản), thì ranh giới vốn gen mới được bảo vệ độc lập, đánh dấu loài mới chính thức hình thành." },
+      { "kind": "answer", "title": "Kết luận", "body": "Xuất hiện cách li sinh sản giữa hai quần thể." }
+    ],
+    "finalSolution": "Cách li sinh sản là dấu hiệu then chốt và là tiêu chuẩn khách quan đánh dấu loài mới đã chính thức hình thành.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng chỉ cần có sự cách li địa lí (ở hai nơi khác nhau) là đã thành loài mới." }
+    ]
+  }
+]

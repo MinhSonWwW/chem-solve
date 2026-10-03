@@ -1,0 +1,67 @@
+[
+  {
+    "id": "kb-bio-g7-sinh-truong-phat-trien",
+    "title": "Phân biệt Sinh trưởng và Phát triển",
+    "table": {
+      "tieu_chi": ["Bản chất", "Biểu hiện cụ thể", "Ví dụ minh họa"],
+      "sinh_truong": [
+        "Biến đổi định lượng: Tăng kích thước và khối lượng của cơ thể.",
+        "Gia tăng về số lượng tế bào (nhờ nguyên phân) và kích thước tế bào.",
+        "Thân cây cao thêm 10 cm, lợn con từ 10 kg tăng lên 40 kg."
+      ],
+      "phat_trien": [
+        "Biến đổi định tính: Phân hóa tế bào, phát sinh cơ quan và chức năng mới.",
+        "Hình thành các mô, cơ quan chuyên hóa mới trong vòng đời.",
+        "Hạt đậu nảy mầm ra lá mầm, cây ra nụ trổ hoa, nòng nọc rụng đuôi mọc chân."
+      ]
+    }
+  },
+  {
+    "id": "kb-bio-g7-mo-phan-sinh",
+    "title": "Hệ thống Mô phân sinh ở thực vật",
+    "types": [
+      {
+        "name": "Mô phân sinh đỉnh (Apical meristem)",
+        "location": "Đỉnh chồi ngọn, chồi nách và chóp rễ.",
+        "function": "Phân chia giúp thân cây, cành lá và rễ dài ra theo chiều cao và cắm sâu vào đất."
+      },
+      {
+        "name": "Mô phân sinh bên (Lateral meristem)",
+        "location": "Nằm dọc theo chu vi của thân và rễ (ở cây hai lá mầm thân gỗ).",
+        "function": "Tầng sinh vỏ và tầng sinh trụ phân chia giúp thân cây to ra về đường kính bề ngang, tạo nên các vòng gỗ hàng năm."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g7-cac-kieu-bien-thai",
+    "title": "Các kiểu phát triển ở động vật",
+    "patterns": [
+      {
+        "pattern": "Biến thái hoàn toàn (Complete metamorphosis)",
+        "representatives": "Bướm, ruồi, muỗi, ong, bọ cánh cứng, ếch nhái",
+        "stages": "Trứng → Ấu trùng (sâu non/lăng quăng/nòng nọc) → Nhộng → Cá thể trưởng thành",
+        "feature": "Con non (ấu trùng) có hình thái, cấu tạo giải phẫu và tập tính sinh hoạt hoàn toàn khác biệt so với con trưởng thành."
+      },
+      {
+        "pattern": "Biến thái không hoàn toàn (Incomplete metamorphosis)",
+        "representatives": "Châu chấu, gián, dế mèn, cào cào, chuồn chuồn",
+        "stages": "Trứng → Ấu trùng → Cá thể trưởng thành",
+        "feature": "Không trải qua giai đoạn nhộng; con non gần giống con lớn nhưng chưa có cánh hoặc cánh chưa hoàn chỉnh, qua nhiều lần lột xác sẽ thành con trưởng thành."
+      },
+      {
+        "pattern": "Không qua biến thái (No metamorphosis)",
+        "representatives": "Động vật có vú (chó, mèo, người), lớp Chim (gà, bồ câu), Bò sát",
+        "stages": "Giai đoạn phôi trong trứng/tử cung → Con non sinh ra → Lớn lên thành con trưởng thành",
+        "feature": "Con non sinh ra có hình thái và cấu tạo tương tự như con trưởng thành."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g7-kiem-soat-dich-hai",
+    "title": "Ứng dụng hiểu biết vòng đời trong kiểm soát dịch hại",
+    "principles": [
+      "Diệt trừ bướm hại cây trồng ở giai đoạn sâu non (sâu ăn lá): Vì đây là giai đoạn cắn phá lá cây để tích lũy dinh dưỡng nhiều nhất.",
+      "Phòng trừ muỗi truyền bệnh sốt xuất huyết ở giai đoạn bọ gậy (lăng quăng): Thả cá bảy màu ăn bọ gậy, đậy kín chum vại, dọn dẹp nơi nước tù đọng để cắt đứt vòng đời trước khi muỗi trưởng thành biết bay."
+    ]
+  }
+]

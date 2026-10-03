@@ -1,0 +1,72 @@
+{
+  "lessonId": "bio-g7-b13",
+  "nodeId": "bio-g7-b13-theory",
+  "title": "Lý thuyết: Cảm ứng ở sinh vật và tập tính ở động vật",
+  "subtitle": "Bài 33 SGK KHTN 7 Kết nối tri thức: Khái niệm cảm ứng, các hình thức hướng động ở thực vật và phân loại tập tính động vật",
+  "sgkBaiSo": 33,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Cảm ứng thực vật",
+      "badgeColor": "cyan",
+      "title": "Khái niệm cảm ứng & Hướng động ở thực vật",
+      "content": "Cảm ứng là khả năng cơ thể sinh vật phản ứng lại các kích thích từ môi trường để thích nghi sinh tồn. Ở thực vật, cảm ứng biểu hiện qua:",
+      "bulletPoints": [
+        "Tính hướng sáng: Ngọn cây sinh trưởng uốn cong về phía có ánh sáng (hướng sáng dương) giúp tối ưu hóa diện tích hứng nắng để quang hợp. Rễ cây hướng sáng âm.",
+        "Tính hướng trọng lực (hướng đất): Rễ cây sinh trưởng đâm thẳng xuống lòng đất (hướng đất dương) để hút nước và neo giữ cây. Thân ngọn vươn ngược lên trên (hướng đất âm).",
+        "Tính hướng nước và hướng hóa: Rễ cây luôn vươn dài tìm đến nguồn nước và nơi có phân bón chất dinh dưỡng, đồng thời tránh xa hóa chất độc hại.",
+        "Tính hướng tiếp xúc: Tua cuốn của các loài cây thân leo (bầu, bí, mướp, nho) khi tiếp xúc giá thể giàn leo sẽ sinh trưởng uốn vòng bám chặt để leo lên cao nhận ánh sáng.",
+        "Cảm ứng ứng động: Phản ứng nhanh không theo hướng kích thích như lá cây trinh nữ cụp xuống khi chạm tay vào (do thay đổi áp suất trương nước ở thể gối)."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Tập tính động vật",
+      "badgeColor": "emerald",
+      "title": "Phân loại tập tính ở động vật",
+      "content": "Tập tính là chuỗi các phản ứng của động vật trả lời lại kích thích từ môi trường, được chia làm 2 loại cơ bản:",
+      "bulletPoints": [
+        "Tập tính bẩm sinh (Innate behavior): Sinh ra đã có, do hệ gen quy định, di truyền từ đời trước, mang tính đặc trưng cho loài và rất bền vững. Ví dụ: nhện giăng tơ tròn, chim sâu làm tổ, ong thợ xây tổ hình lục giác, thú non vừa sinh ra đã biết tìm vú mẹ để bú sữa.",
+        "Tập tính học được (Learned behavior): Được hình thành trong đời sống cá thể nhờ quá trình học tập, bắt chước và tích lũy kinh nghiệm; dễ dàng thay đổi linh hoạt theo hoàn cảnh sống và không di truyền. Ví dụ: khỉ biết dùng que gậy khều quả chuối, cá heo làm xiếc nhảy qua vòng, con người dừng xe lại khi nhìn thấy đèn giao thông chuyển sang màu đỏ."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Ý nghĩa sinh học",
+      "badgeColor": "amber",
+      "title": "Vai trò của cảm ứng và tập tính",
+      "content": "Cảm ứng và tập tính giúp đảm bảo sự sống còn và phát triển nòi giống của sinh vật:",
+      "bulletPoints": [
+        "Đối với thực vật: Giúp cây định hướng dinh dưỡng (tìm nước, khoáng), hấp thụ tối đa năng lượng ánh sáng mặt trời và tự vệ trước tác động cơ học.",
+        "Đối với động vật: Giúp tìm kiếm thức ăn hiệu quả, xây dựng và bảo vệ nơi ở, đánh dấu vùng lãnh thổ, ngụy trang trốn thoát kẻ thù săn mồi, thu hút bạn tình và chăm sóc bảo vệ con non."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Ví dụ nào sau đây là một TẬP TÍNH BẨM SINH ở động vật?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Nhện giăng mạng tơ tròn để bẫy mồi dù không được con nhện mẹ dạy dỗ",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Con vẹt học nói tiếng người sau nhiều tháng được chủ dạy lặp đi lặp lại",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Chó làm xiếc đi thăng bằng trên hai chân sau khi được huấn luyện",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Khỉ dùng hòn đá đập vỡ vỏ hạt dẻ cứng sau khi quan sát đồng loại làm",
+        "correct": false
+      }
+    ],
+    "explanation": "Nhện con ngay khi nở ra đã có bản năng tự động giăng tơ tròn chuẩn xác theo cấu trúc loài mà không cần học tập từ cá thể khác, đây là tập tính bẩm sinh do gen di truyền quy định."
+  }
+}

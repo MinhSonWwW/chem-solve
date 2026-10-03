@@ -1,0 +1,72 @@
+{
+  "lessonId": "bio-g7-b20",
+  "nodeId": "bio-g7-b20-theory",
+  "title": "Lý thuyết: Sinh sản hữu tính ở sinh vật",
+  "subtitle": "Bài 40 SGK KHTN 7 Kết nối tri thức: Thụ phấn, thụ tinh, tạo quả/hạt ở thực vật và thụ tinh ngoài vs thụ tinh trong ở động vật",
+  "sgkBaiSo": 40,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Khái niệm & Hoa",
+      "badgeColor": "cyan",
+      "title": "Sinh sản hữu tính & Cấu tạo hoa",
+      "content": "Sinh sản hữu tính là hình thức sinh sản có sự kết hợp giữa giao tử đực và giao tử cái qua thụ tinh tạo thành hợp tử:",
+      "bulletPoints": [
+        "Ưu thế tiến hóa: Con lai kết hợp vốn gen của cả bố và mẹ, xuất hiện nhiều biến dị tổ hợp giúp sinh vật thích nghi tốt hơn với môi trường sống thay đổi.",
+        "Cơ quan sinh sản của cây có hoa: Hoa là cơ quan sinh sản hữu tính gồm đài hoa, cánh hoa, nhị hoa và nhụy hoa.",
+        "Nhị hoa (cơ quan sinh dục đực): Gồm chỉ nhị và bao phấn. Bao phấn chứa vô số hạt phấn mang giao tử đực (tinh tử).",
+        "Nhụy hoa (cơ quan sinh dục cái): Gồm đầu nhụy (có chất nhầy dính giữ hạt phấn), vòi nhụy và bầu nhụy. Bầu nhụy chứa một hoặc nhiều noãn, bên trong noãn chứa tế bào trứng (giao tử cái)."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Thụ phấn & Thụ tinh",
+      "badgeColor": "emerald",
+      "title": "Quá trình Thụ phấn, Thụ tinh và Tạo quả hạt",
+      "content": "Ba giai đoạn liên tục trong sinh sản hữu tính ở thực vật có hoa:",
+      "bulletPoints": [
+        "Thụ phấn (Pollination): Là hiện tượng hạt phấn tiếp xúc với đầu nhụy. Có thể tự thụ phấn (hạt phấn rơi vào nhụy cùng hoa) hoặc thụ phấn chéo (nhờ gió hoặc côn trùng ong bướm mang hạt phấn sang hoa khác).",
+        "Thụ tinh (Fertilization): Hạt phấn hút ẩm trên đầu nhụy nảy mầm mọc ống phấn xuyên qua vòi nhụy đi vào noãn; tinh tử di chuyển theo ống phấn kết hợp với tế bào trứng tạo thành Hợp tử.",
+        "Sự biến đổi sau thụ tinh: Hợp tử phân chia phát triển thành Phôi; Noãn biến đổi thành Hạt chứa phôi; Bầu nhụy dày lên biến đổi thành Quả bao bọc bảo vệ hạt."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Động vật",
+      "badgeColor": "amber",
+      "title": "Sinh sản hữu tính ở động vật",
+      "content": "Giao tử đực (tinh trùng) và giao tử cái (trứng) thụ tinh tạo hợp tử theo hai hình thức:",
+      "bulletPoints": [
+        "Thụ tinh ngoài: Trứng và tinh trùng gặp nhau thụ tinh trong môi trường nước bên ngoài cơ thể mẹ. Đại diện: cá chép, ếch đồng. Do hiệu suất thụ tinh và tỷ lệ phôi sống sót thấp trước kẻ thù, động vật thụ tinh ngoài thường đẻ số lượng trứng rất lớn (hàng nghìn đến hàng vạn trứng).",
+        "Thụ tinh trong: Tinh trùng được phóng trực tiếp vào cơ quan sinh dục của con cái và quá trình thụ tinh diễn ra bên trong cơ thể mẹ. Đại diện: bò sát, chim, động vật có vú (chó, mèo, người). Tỉ lệ thụ tinh cao, phôi thai được bảo vệ an toàn hơn."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Sau khi quá trình thụ tinh ở hoa diễn ra thành công, noãn và bầu nhụy của hoa sẽ lần lượt biến đổi thành cấu trúc nào?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Noãn biến đổi thành Hạt, Bầu nhụy biến đổi thành Quả",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Noãn biến đổi thành Cánh hoa, Bầu nhụy biến đổi thành Hạt",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Noãn biến đổi thành Quả, Bầu nhụy biến đổi thành Lá mầm",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Cả noãn và bầu nhụy đều tiêu biến không để lại dấu vết",
+        "correct": false
+      }
+    ],
+    "explanation": "Sau thụ tinh: Noãn chứa hợp tử biến đổi thành Hạt chứa phôi, còn thành Bầu nhụy phát triển phình to biến đổi thành Quả bảo vệ và phát tán hạt."
+  }
+}

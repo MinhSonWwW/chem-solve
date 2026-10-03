@@ -1,0 +1,73 @@
+{
+  "lessonId": "bio-g8-b18",
+  "nodeId": "bio-g8-b18-theory",
+  "title": "Lý thuyết: Ô nhiễm môi trường & Biện pháp bảo vệ",
+  "subtitle": "Bài 47 SGK KHTN 8 Kết nối tri thức: Các dạng ô nhiễm môi trường, biến đổi khí hậu, kinh tế tuần hoàn 3R và phát triển bền vững",
+  "sgkBaiSo": 47,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Ô nhiễm",
+      "badgeColor": "emerald",
+      "title": "Các dạng ô nhiễm môi trường phổ biến",
+      "content": "Ô nhiễm môi trường xảy ra khi thành phần môi trường bị biến đổi vượt tiêu chuẩn an toàn:",
+      "bulletPoints": [
+        "1. Ô nhiễm không khí: Do khí thải công nghiệp, phương tiện giao thông (CO2, SO2, NOx, CO) và bụi mịn (PM2.5), gây mưa acid, phá hủy tầng ozon và các bệnh hô hấp nghiêm trọng.",
+        "2. Ô nhiễm nước: Do nước thải sinh hoạt, công nghiệp và dư lượng hóa chất nông nghiệp xả thẳng ra nguồn nước; gây hiện tượng phú dưỡng (tảo nở hoa hút cạn oxy) làm chết hàng loạt thủy hải sản.",
+        "3. Ô nhiễm đất: Do lạm dụng thuốc bảo vệ thực vật, phân bón hóa học và rác thải độc hại (pin cũ chứa kim loại nặng chì, thủy ngân) ngấm vào đất và chuỗi thức ăn.",
+        "4. Ô nhiễm rác thải nhựa: Nhựa mất hàng trăm năm mới phân hủy, vỡ thành các hạt vi nhựa (microplastics) gây độc cho sinh vật biển và con người qua đường tiêu hóa."
+      ],
+      "callout": "Kim loại nặng và vi nhựa có khả năng tích lũy sinh học tăng dần qua các bậc dinh dưỡng của chuỗi thức ăn!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Biến đổi khí hậu",
+      "badgeColor": "amber",
+      "title": "Biến đổi khí hậu & Hiệu ứng nhà kính",
+      "content": "Sự gia tăng khí nhà kính đe dọa sinh quyển toàn cầu:",
+      "bulletPoints": [
+        "Hiệu ứng nhà kính: Các khí nhà kính (chủ yếu là CO2 và CH4) tạo thành lớp màng giữ nhiệt bức xạ hồng ngoại của Trái Đất không thể thoát ra ngoài vũ trụ, làm nhiệt độ bề mặt Trái Đất tăng lên.",
+        "Hậu quả toàn cầu: Trái Đất nóng lên làm băng ở hai cực và các rặng núi cao tan nhanh, mực nước biển dâng cao đe dọa ngập lụt các vùng đồng bằng trũng thấp ven biển; gia tăng các hiện tượng thời tiết cực đoan (siêu bão, lũ lụt, hạn hán khốc liệt)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Hành động xanh",
+      "badgeColor": "cyan",
+      "title": "Bảo vệ môi trường & Phát triển bền vững",
+      "content": "Giải pháp toàn diện bảo vệ hành tinh xanh:",
+      "bulletPoints": [
+        "Mô hình 3R: Giảm thiểu (Reduce - hạn chế phát sinh rác), Tái sử dụng (Reuse - dùng lại đồ vật nhiều lần), Tái chế (Recycle - thu gom biến rác thành sản phẩm mới).",
+        "Năng lượng tái tạo: Thay thế dần nhiên liệu hóa thạch (than đá, dầu mỏ) bằng năng lượng sạch như năng lượng mặt trời, năng lượng gió, năng lượng sinh khối.",
+        "Bảo vệ lá phổi xanh: Tích cực trồng rừng, bảo vệ rừng phòng hộ và rừng đặc dụng; áp dụng nông nghiệp hữu cơ sinh thái không lạm dụng hóa chất độc hại."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khí thải nào sau đây phát sinh nhiều nhất từ việc đốt cháy nhiên liệu hóa thạch (than đá, xăng, dầu) và là thủ phạm chính gây ra hiện tượng hiệu ứng nhà kính?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Khí carbon dioxide (CO2)",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Khí oxy (O2)",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Khí nitơ (N2)",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Khí heli (He)",
+        "correct": false
+      }
+    ],
+    "explanation": "Đốt cháy nhiên liệu hóa thạch trong các nhà máy nhiệt điện, động cơ xe cộ xả thải khối lượng khổng lồ khí CO2 vào khí quyển, làm dày thêm lớp khí giữ nhiệt và gây ra hiện tượng hiệu ứng nhà kính, làm Trái Đất nóng lên toàn cầu."
+  }
+}

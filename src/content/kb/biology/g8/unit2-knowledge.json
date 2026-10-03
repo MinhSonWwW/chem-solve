@@ -1,0 +1,82 @@
+[
+  {
+    "id": "kb-bio-g8-cau-tao-he-ho-hap",
+    "title": "Cấu tạo hệ hô hấp ở người",
+    "description": "Hệ hô hấp gồm đường dẫn khí (mũi, họng, thanh quản, khí quản, phế quản) và hai lá phổi chứa hàng trăm triệu phế nang trao đổi khí."
+  },
+  {
+    "id": "kb-bio-g8-vai-tro-duong-dan-khi",
+    "title": "Vai trò của các cơ quan đường dẫn khí",
+    "description": "Mũi có lông mũi và niêm mạc tiết nhầy sưởi ấm, làm ẩm và làm sạch không khí; thanh quản có nắp thanh quản đậy kín khi nuốt; khí quản có 15-20 vòng sụn khuyết giữ ống luôn thông thoáng."
+  },
+  {
+    "id": "kb-bio-g8-phe-nang-trao-doi-khi",
+    "title": "Cấu tạo phế nang thích nghi trao đổi khí",
+    "description": "Phổi chứa khoảng 700 - 800 triệu phế nang, tạo diện tích bề mặt trao đổi khí lên tới 70 - 100 m² với thành mỏng và mạng mao mạch máu bao bọc phong phú."
+  },
+  {
+    "id": "kb-bio-g8-co-che-thong-khi-hit-tho",
+    "title": "Cơ chế thông khí ở phổi (Hít vào và Thở ra)",
+    "description": "Hít vào chủ động do cơ liên sườn ngoài co nâng lồng ngực và cơ hoành hạ xuống; thở ra thụ động khi các cơ dãn làm thể tích khoang ngực giảm ép khí ra ngoài."
+  },
+  {
+    "id": "kb-bio-g8-trao-doi-khi-khuech-tan",
+    "title": "Cơ chế trao đổi khí ở phổi và tế bào",
+    "description": "Tuân theo cơ chế khuếch tán từ nơi có phân áp cao sang nơi có phân áp thấp: tại phế nang máu nhận O2 và thải CO2; tại tế bào máu nhả O2 và nhận CO2."
+  },
+  {
+    "id": "kb-bio-g8-ve-sinh-ho-hap-thuoc-la",
+    "title": "Tác hại của khói thuốc lá và bảo vệ đường thở",
+    "description": "Khói thuốc lá chứa nicotine gây nghiện, khí CO cản trở hồng cầu chở oxy và hắc ín phá hủy lông rung gây ung thư phổi; sơ cứu ngạt bằng ép tim ngoài lồng ngực kết hợp hô hấp nhân tạo."
+  },
+  {
+    "id": "kb-bio-g8-khai-niem-bai-tiet",
+    "title": "Khái niệm và các cơ quan bài tiết",
+    "description": "Bài tiết là quá trình thải bỏ các chất cặn bã và chất độc sinh ra từ chuyển hóa tế bào; thận bài tiết nước tiểu (90% sản phẩm hòa tan), da tiết mồ hôi, phổi thải CO2."
+  },
+  {
+    "id": "kb-bio-g8-cau-tao-he-bai-tiet",
+    "title": "Cấu tạo hệ bài tiết nước tiểu",
+    "description": "Hệ bài tiết nước tiểu gồm 2 quả thận, 2 ống dẫn nước tiểu (niệu quản), bóng đái (bàng quang) và ống đái (niệu đạo)."
+  },
+  {
+    "id": "kb-bio-g8-cau-tao-nephron",
+    "title": "Cấu tạo đơn vị chức năng Nephron của thận",
+    "description": "Mỗi quả thận có khoảng 1 triệu Nephron, gồm cầu thận (búi mao mạch), nang cầu thận (nang Bowman) và hệ thống ống thận được bao quanh bởi mạng mao mạch."
+  },
+  {
+    "id": "kb-bio-g8-qua-trinh-tao-nuoc-tieu",
+    "title": "3 giai đoạn tạo nước tiểu tại Nephron",
+    "description": "Gồm: Lọc máu ở cầu thận tạo nước tiểu đầu (~170 lít/ngày); Tái hấp thụ nước và chất dinh dưỡng ở ống thận; Bài tiết tiếp các chất độc thừa tạo nước tiểu chính thức (~1,5 lít/ngày)."
+  },
+  {
+    "id": "kb-bio-g8-phan-biet-nuoc-tieu",
+    "title": "Phân biệt nước tiểu đầu và nước tiểu chính thức",
+    "description": "Nước tiểu đầu chứa nhiều chất dinh dưỡng (glucose, acid amin) và nồng độ chất cặn bã loãng; nước tiểu chính thức hầu như không còn chất dinh dưỡng, chứa ure đậm đặc."
+  },
+  {
+    "id": "kb-bio-g8-ve-sinh-he-bai-tiet",
+    "title": "Vệ sinh hệ bài tiết và phòng tránh sỏi thận",
+    "description": "Uống đủ 1,5 - 2 lít nước mỗi ngày, ăn giảm muối, không nhịn tiểu để ngăn ngừa muối canxi oxalat kết tủa tạo sỏi thận và giảm nguy cơ suy thận."
+  },
+  {
+    "id": "kb-bio-g8-moi-truong-trong",
+    "title": "Khái niệm và các thành phần của môi trường trong",
+    "description": "Môi trường trong cơ thể bao gồm máu, dịch mô (dịch kẽ bao quanh tế bào) và bạch huyết, tạo môi trường trao đổi chất trực tiếp cho tế bào."
+  },
+  {
+    "id": "kb-bio-g8-can-bang-noi-moi",
+    "title": "Cân bằng môi trường trong (Cân bằng nội môi)",
+    "description": "Sự duy trì ổn định các điều kiện lí - hóa của môi trường trong (nhiệt độ 37°C, pH máu 7,35 - 7,45, nồng độ glucose máu 0,1%) giúp tế bào hoạt động bình thường."
+  },
+  {
+    "id": "kb-bio-g8-dieu-hoa-duong-huyet-tuy",
+    "title": "Cơ chế điều hòa đường huyết của tuyến tụy",
+    "description": "Đường huyết tăng kích thích tế bào beta tiết Insulin chuyển glucose thành glycogen (hạ đường); đường huyết hạ kích thích tế bào alpha tiết Glucagon biến glycogen thành glucose (tăng đường)."
+  },
+  {
+    "id": "kb-bio-g8-vai-tro-gan-than-noi-moi",
+    "title": "Vai trò của gan và thận trong cân bằng nội môi",
+    "description": "Gan điều hòa nồng độ các chất hòa tan và khử độc; thận điều hòa áp suất thẩm thấu thông qua tái hấp thụ nước và điều hòa độ pH máu qua thải ion H+."
+  }
+]

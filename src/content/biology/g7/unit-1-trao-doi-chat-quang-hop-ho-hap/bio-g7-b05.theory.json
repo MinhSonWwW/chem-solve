@@ -1,0 +1,74 @@
+{
+  "lessonId": "bio-g7-b05",
+  "nodeId": "bio-g7-b05-theory",
+  "title": "Lý thuyết: Hô hấp tế bào",
+  "subtitle": "Bài 25 SGK KHTN 7 Kết nối tri thức: Khái niệm, phương trình chữ, vai trò ty thể và quan hệ với quang hợp",
+  "sgkBaiSo": 25,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Khái niệm",
+      "badgeColor": "emerald",
+      "title": "Hô hấp tế bào là gì?",
+      "content": "Hô hấp tế bào là quá trình tế bào phân giải các hợp chất hữu cơ (chủ yếu là glucose) thành carbon dioxide và nước, đồng thời giải phóng năng lượng cung cấp cho các hoạt động sống của sinh vật.",
+      "bulletPoints": [
+        "Chất tham gia (nguyên liệu): Glucose và khí Oxygen.",
+        "Sản phẩm tạo thành: Khí Carbon dioxide, Nước và Năng lượng (dưới dạng phân tử ATP và nhiệt năng tỏa ra).",
+        "Đặc điểm: Diễn ra liên tục suốt ngày đêm ở mọi tế bào sống của thực vật, động vật và con người."
+      ],
+      "formulaExample": "Glucose + Oxygen → Carbon dioxide + Nước + Năng lượng (ATP + Nhiệt)",
+      "callout": "ATP được ví là 'đồng tiền năng lượng' chi trả cho mọi hoạt động sống của tế bào!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Bào quan",
+      "badgeColor": "amber",
+      "title": "Ty thể – \"Nhà máy năng lượng\" của tế bào",
+      "content": "Ở sinh vật nhân thực, hô hấp tế bào diễn ra chủ yếu bên trong ty thể:",
+      "bulletPoints": [
+        "Ty thể có hình hạt hoặc hình bầu dục, bao bọc bởi 2 lớp màng (màng ngoài trơn nhẵn, màng trong gấp nếp hình răng lược làm tăng diện tích tiếp xúc).",
+        "Bên trong chất nền ty thể chứa hệ thống enzym hô hấp chuyên trách phân giải glucose và chuyển hóa năng lượng thành ATP.",
+        "Các tế bào hoạt động mạnh (như tế bào cơ tim, tế bào gan, cơ vân) chứa số lượng ty thể rất lớn."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Mối quan hệ",
+      "badgeColor": "cyan",
+      "title": "Quan hệ giữa Quang hợp và Hô hấp tế bào",
+      "content": "Quang hợp và Hô hấp là hai quá trình đối lập nhưng thống nhất mật thiết:",
+      "bulletPoints": [
+        "Tính chất đối lập: Quang hợp tổng hợp chất hữu cơ và tích lũy năng lượng; Hô hấp phân giải chất hữu cơ và giải phóng năng lượng.",
+        "Tính chất thống nhất: Sản phẩm của quang hợp (glucose, O2) là nguyên liệu cho hô hấp; ngược lại, sản phẩm của hô hấp (CO2, nước) là nguyên liệu cho quang hợp.",
+        "Nếu không có quang hợp thì không có nguồn thức ăn và O2 cho hô hấp; nếu không có hô hấp thì sinh vật không có năng lượng để sinh trưởng và tổng hợp chất."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Bào quan nào sau đây đóng vai trò là 'nhà máy năng lượng', nơi diễn ra quá trình hô hấp tế bào?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Ty thể",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Lục lạp",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Không bào lớn",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Màng tế bào",
+        "correct": false
+      }
+    ],
+    "explanation": "Ty thể là bào quan chuyên trách chuyển hóa năng lượng trong chất hữu cơ thành dạng năng lượng ATP thông qua hô hấp tế bào."
+  }
+}

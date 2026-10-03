@@ -1,0 +1,200 @@
+[
+  {
+    "id": "kb-bio-g9-di-truyen-bien-di",
+    "title": "Bản chất di truyền và biến dị",
+    "summary": "Di truyền là hiện tượng truyền đạt các tính trạng của bố mẹ, tổ tiên cho các thế hệ con cháu. Biến dị là hiện tượng con sinh ra khác bố mẹ và khác nhau về nhiều chi tiết.",
+    "keyTakeaways": [
+      "Di truyền và biến dị là hai hiện tượng song song, gắn liền với quá trình sinh sản.",
+      "Di truyền duy trì tính ổn định của loài, còn biến dị cung cấp nguyên liệu cho tiến hóa và chọn giống."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-cap-tinh-trang-tuong-phan",
+    "title": "Cặp tính trạng tương phản",
+    "summary": "Hai trạng thái biểu hiện trái ngược nhau của cùng một loại tính trạng.",
+    "keyTakeaways": [
+      "Ví dụ: Hạt vàng đối lập với hạt xanh (tính trạng màu sắc hạt); Thân cao đối lập với thân lùn (tính trạng chiều cao cây).",
+      "Không được ghép 2 tính trạng khác loại thành cặp tương phản (ví dụ hạt vàng và vỏ nhăn không phải là cặp tương phản)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-nhan-to-di-truyen-gene",
+    "title": "Nhân tố di truyền (Gene)",
+    "summary": "Khái niệm do Mendel đưa ra năm 1865 quy định tính trạng của sinh vật, tồn tại thành từng cặp trong tế bào sinh dưỡng và không hòa lẫn vào nhau.",
+    "keyTakeaways": [
+      "Mendel dùng chữ cái in hoa (A, B, D) để chỉ nhân tố di truyền trội và chữ cái in thường (a, b, d) để chỉ nhân tố di truyền lặn.",
+      "Trong di truyền học hiện đại, nhân tố di truyền chính là gene."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-kieu-gen-kieu-hinh",
+    "title": "Kiểu gen và kiểu hình",
+    "summary": "Kiểu gen là tổ hợp toàn bộ các gene trong tế bào cơ thể. Kiểu hình là tập hợp các tính trạng của cơ thể biểu hiện ra ngoài.",
+    "keyTakeaways": [
+      "Kiểu hình là kết quả của sự tương tác giữa kiểu gen và môi trường sống.",
+      "Trong thực tế khi nói về kiểu gen/kiểu hình thường chỉ xét một vài tính trạng đang nghiên cứu."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-dong-hop-di-hop",
+    "title": "Thể đồng hợp và thể dị hợp",
+    "summary": "Thể đồng hợp mang 2 allele giống nhau (AA hoặc aa); thể dị hợp mang 2 allele khác nhau (Aa).",
+    "keyTakeaways": [
+      "Thể đồng hợp khi tự thụ phấn hay giao phối gần qua nhiều thế hệ sẽ cho con cháu đồng nhất về kiểu hình (gọi là dòng thuần chủng).",
+      "Thể dị hợp khi sinh sản sẽ phân li tạo ra nhiều loại giao tử khác nhau."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-phuong-phap-lai-mendel",
+    "title": "Phương pháp nghiên cứu phân tích thế hệ lai của Mendel",
+    "summary": "Phương pháp khoa học độc đáo đưa Gregor Mendel trở thành người đặt nền móng cho di truyền học cổ điển.",
+    "keyTakeaways": [
+      "Bước 1: Tạo các dòng thuần chủng về từng cặp tính trạng tương phản bằng cách cho tự thụ phấn nghiêm ngặt nhiều thế hệ.",
+      "Bước 2: Lai các cặp bố mẹ thuần chủng khác nhau về một hoặc một số cặp tính trạng tương phản rồi theo dõi sự di truyền riêng rẽ từng cặp tính trạng ở F1, F2, F3.",
+      "Bước 3: Sử dụng toán học thống kê xác suất để phân tích số liệu thu được, từ đó rút ra các quy luật di truyền."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-dau-ha-lan-doi-tuong-nghien-cuu",
+    "title": "Đậu Hà Lan — Đối tượng nghiên cứu lí tưởng của Mendel",
+    "summary": "Các ưu điểm thực vật học của cây đậu Hà Lan (Pisum sativum) giúp Mendel thành công rực rỡ.",
+    "keyTakeaways": [
+      "Là cây tự thụ phấn nghiêm ngặt do cấu tạo hoa có cánh thìa bao bọc nhị và nhụy kín mít, giúp dễ dàng tạo và duy trì dòng thuần chủng.",
+      "Có nhiều cặp tính trạng tương phản rõ rệt, dễ quan sát bằng mắt thường (hạt vàng - xanh, trơn - nhăn, hoa đỏ - trắng, thân cao - lùn).",
+      "Thời gian sinh trưởng ngắn, khả năng sinh sản cao, cho số lượng hạt con lai lớn đủ độ tin cậy để xử lí thống kê."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-quy-luat-phan-li",
+    "title": "Quy luật phân li (Định luật 1 Mendel)",
+    "summary": "Trong quá trình phát sinh giao tử, mỗi nhân tố di truyền trong cặp nhân tố di truyền phân li về một giao tử và giữ nguyên bản chất như ở cơ thể thuần chủng của P.",
+    "keyTakeaways": [
+      "Sơ đồ lai: P: AA (hoa đỏ) × aa (hoa trắng) → F1: 100% Aa (hoa đỏ) → F1 × F1 → F2: 1 AA : 2 Aa : 1 aa (3 hoa đỏ : 1 hoa trắng).",
+      "Tỉ lệ phân li kiểu gen ở F2: 1 AA : 2 Aa : 1 aa (25% AA : 50% Aa : 25% aa).",
+      "Tỉ lệ phân li kiểu hình ở F2: 3 trội : 1 lặn (75% hoa đỏ : 25% hoa trắng)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-phep-lai-phan-tich",
+    "title": "Phép lai phân tích (Testcross)",
+    "summary": "Phép lai giữa cơ thể mang tính trạng trội cần xác định kiểu gen với cơ thể mang tính trạng lặn (aa).",
+    "keyTakeaways": [
+      "Mục đích: Xác định kiểu gen của cá thể mang kiểu hình trội là thể đồng hợp (AA) hay thể dị hợp (Aa).",
+      "Trường hợp 1: Nếu đời con lai đồng tính 100% tính trạng trội → Cá thể kiểm tra là đồng hợp trội (AA).",
+      "Trường hợp 2: Nếu đời con lai phân tính theo tỉ lệ 1 trội : 1 lặn → Cá thể kiểm tra là dị hợp (Aa)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-phan-li-doc-lap",
+    "title": "Quy luật phân li độc lập (Định luật 2 Mendel)",
+    "summary": "Các cặp nhân tố di truyền quy định các cặp tính trạng khác nhau phân li độc lập vào các giao tử trong quá trình phát sinh giao tử.",
+    "keyTakeaways": [
+      "Lai 2 cặp tính trạng thuần chủng tương phản: P: Hạt vàng, trơn (AABB) × Hạt xanh, nhăn (aabb) → F1: 100% AaBb (Vàng, trơn).",
+      "Cơ thể F1 (AaBb) giảm phân tạo 4 loại giao tử với tỉ lệ ngang nhau: 1/4 AB, 1/4 Ab, 1/4 aB, 1/4 ab.",
+      "Tỉ lệ kiểu hình F2: 9 Vàng, trơn (A-B-) : 3 Vàng, nhăn (A-bb) : 3 Xanh, trơn (aaB-) : 1 Xanh, nhăn (aabb) (Tổng số 16 tổ hợp hợp tử)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-bien-di-to-hop",
+    "title": "Biến dị tổ hợp",
+    "summary": "Sự tổ hợp lại các tính trạng sẵn có của bố mẹ (P) làm xuất hiện các kiểu hình mới khác P ở thế hệ con cháu.",
+    "keyTakeaways": [
+      "Nguyên nhân: Do sự phân li độc lập của các cặp allele trong giảm phân và sự kết hợp ngẫu nhiên của các giao tử trong thụ tinh.",
+      "Ví dụ ở F2 của Mendel xuất hiện 2 kiểu hình mới là hạt vàng - vỏ nhăn và hạt xanh - vỏ trơn.",
+      "Ý nghĩa: Cung cấp nguồn nguyên liệu phong phú cho tiến hóa sinh giới và công tác chọn giống mới."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-dna-cau-truc-hoa-hoc",
+    "title": "Cấu trúc hóa học của phân tử DNA",
+    "summary": "DNA là một đại phân tử hữu cơ cấu tạo theo nguyên tắc đa phân (polymer), đơn phân là các nucleotide.",
+    "keyTakeaways": [
+      "Gồm 4 loại nucleotide đơn phân: Adenine (A), Thymine (T), Guanine (G), Cytosine (C).",
+      "Mỗi nucleotide cấu tạo từ: Phân tử đường deoxyribose (C5H10O4), gốc acid phosphoric (H3PO4) và 1 trong 4 loại bazo nito.",
+      "DNA của các loài khác nhau phân biệt bởi số lượng, thành phần và trật tự sắp xếp của các nucleotide (tạo nên tính đa dạng và đặc thù của DNA)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-dna-cau-truc-khong-gian",
+    "title": "Mô hình cấu trúc không gian xoắn kép của DNA",
+    "summary": "Mô hình chuỗi xoắn kép do James Watson và Francis Crick công bố năm 1953.",
+    "keyTakeaways": [
+      "Gồm 2 chuỗi polynucleotide song song ngược chiều nhau, xoắn đều quanh một trục tưởng tượng theo chiều từ trái sang phải.",
+      "Đường kính vòng xoắn: 20 Å (2 nm); Chiều cao mỗi chu kì xoắn: 34 Å (3,4 nm) chứa đúng 10 cặp nucleotide.",
+      "Khoảng cách giữa hai cặp nucleotide liên tiếp trên cùng một mạch là 3,4 Å (0,34 nm)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-nguyen-tac-bo-sung-dna",
+    "title": "Nguyên tắc bổ sung (NTBS) trong phân tử DNA",
+    "summary": "Các bazo nito trên hai mạch đơn liên kết với nhau từng đôi một bằng các liên kết hydrogen yếu.",
+    "keyTakeaways": [
+      "Adenine (A) liên kết với Thymine (T) bằng 2 liên kết hydrogen (A = T).",
+      "Guanine (G) liên kết với Cytosine (C) bằng 3 liên kết hydrogen (G ≡ C).",
+      "Hệ quả: Trong phân tử DNA, A = T và G = C, do đó A + G = T + C = 50% tổng số nucleotide."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-chuc-nang-sinh-hoc-dna",
+    "title": "Chức năng sinh học của phân tử DNA",
+    "summary": "DNA có 2 chức năng sinh học cốt lõi: Lưu giữ và Truyền đạt thông tin di truyền.",
+    "keyTakeaways": [
+      "Lưu giữ thông tin di truyền: Thông tin về cấu trúc protein của cơ thể được mã hóa dưới dạng trình tự các nucleotide trên phân tử DNA.",
+      "Truyền đạt thông tin di truyền: Qua quá trình tái bản (nhân đôi) trong phân bào, thông tin di truyền được truyền đạt chính xác cho các tế bào con và thế hệ con cháu."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-rna-cau-truc-phan-loai",
+    "title": "Cấu trúc và các loại phân tử RNA",
+    "summary": "RNA là đại phân tử hữu cơ cấu tạo theo nguyên tắc đa phân từ 4 loại nucleotide: A, U, G, C.",
+    "keyTakeaways": [
+      "RNA có cấu trúc mạch đơn, phân tử đường là ribose (C5H10O5), chứa nucleotide Uracil (U) thay cho Thymine (T).",
+      "mRNA (RNA thông tin): Truyền đạt thông tin di truyền từ gene trong nhân ra bào quan ribosome để tổng hợp protein.",
+      "tRNA (RNA vận chuyển): Vận chuyển amino acid đặc hiệu đến ribosome trong quá trình dịch mã; có 1 đầu mang amino acid và 1 bộ ba đối mã (anticodon).",
+      "rRNA (RNA ribosome): Kết hợp với protein cấu tạo nên bào quan ribosome (nơi tổng hợp protein)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-khai-niem-gene",
+    "title": "Khái niệm Gene trong di truyền học hiện đại",
+    "summary": "Gene là một đoạn của phân tử DNA mang thông tin mã hóa cho một chuỗi polypeptide hoặc một phân tử RNA.",
+    "keyTakeaways": [
+      "Mỗi phân tử DNA chứa rất nhiều gene khác nhau được sắp xếp dọc theo chiều dài phân tử.",
+      "Trung bình một gene có khoảng 600 đến 1500 cặp nucleotide.",
+      "Gene cấu trúc mang thông tin quy định cấu trúc chuỗi polypeptide; gene điều hòa kiểm soát hoạt động của các gene khác."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-toan-dna-cong-thuc",
+    "title": "Hệ thống công thức toán học phân tử DNA",
+    "summary": "Các công thức cơ bản tính toán số lượng, chiều dài, khối lượng và liên kết của phân tử DNA.",
+    "keyTakeaways": [
+      "Tổng số nucleotide: N = 2A + 2G = 2T + 2C.",
+      "Chiều dài phân tử DNA: L = (N / 2) × 3,4 Å (1 nm = 10 Å, 1 µm = 10.000 Å).",
+      "Khối lượng phân tử DNA: M = N × 300 đvC (khối lượng trung bình 1 nucleotide là 300 đvC).",
+      "Số liên kết hydrogen: H = 2A + 3G.",
+      "Số chu kì xoắn: C = N / 20 = L / 34."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-toan-xac-suat-mendel",
+    "title": "Phương pháp tính xác suất trong quy luật phân li độc lập",
+    "summary": "Tách riêng từng cặp tính trạng rồi nhân xác suất độc lập lại với nhau.",
+    "keyTakeaways": [
+      "Xét phép lai: AaBb × AaBb = (Aa × Aa)(Bb × Bb).",
+      "Tỉ lệ kiểu gen: (1 AA : 2 Aa : 1 aa)(1 BB : 2 Bb : 1 bb) → Cho 3 × 3 = 9 loại kiểu gen.",
+      "Tỉ lệ kiểu hình: (3 trội : 1 lặn)(3 trội : 1 lặn) = 9 trội-trội : 3 trội-lặn : 3 lặn-trội : 1 lặn-lặn.",
+      "Số loại giao tử của cơ thể mang n cặp gene dị hợp: 2^n."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-so-sanh-dna-va-rna",
+    "title": "Bảng so sánh đối chiếu giữa phân tử DNA và RNA",
+    "summary": "Những điểm giống và khác nhau cốt lõi về cấu trúc và chức năng giữa DNA và RNA.",
+    "keyTakeaways": [
+      "Điểm giống: Đều là nucleic acid, cấu tạo theo nguyên tắc đa phân từ các nucleotide, có chứa các nguyên tố C, H, O, N, P, đều có 3 loại bazo A, G, C.",
+      "Khác nhau về cấu trúc: DNA mạch kép xoắn, đường deoxyribose, có thymine T; RNA mạch đơn, đường ribose, có uracil U.",
+      "Khác nhau về chức năng: DNA lưu giữ thông tin di truyền gốc trong nhân; RNA trực tiếp tham gia truyền đạt và tổng hợp chuỗi polypeptide."
+    ]
+  }
+]

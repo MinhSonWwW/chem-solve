@@ -1,0 +1,75 @@
+{
+  "lessonId": "bio-g7-b15",
+  "nodeId": "bio-g7-b15-theory",
+  "title": "Lý thuyết: Thực hành cảm ứng ở sinh vật",
+  "subtitle": "Bài 35 SGK KHTN 7 Kết nối tri thức: Thí nghiệm tính hướng sáng ở mầm đậu, tính hướng đất và quan sát cụp lá cây trinh nữ",
+  "sgkBaiSo": 35,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Thí nghiệm 1",
+      "badgeColor": "cyan",
+      "title": "Thí nghiệm chứng minh tính hướng sáng",
+      "content": "Chứng minh sự sinh trưởng định hướng của ngọn cây về phía nguồn sáng đơn hướng:",
+      "bulletPoints": [
+        "Chuẩn bị: Hai hộp bìa carton kín cùng kích thước và hai chậu cây đậu xanh mới nảy mầm (mỗi chậu 3 – 5 cây mầm mọc thẳng).",
+        "Tiến hành: Hộp A khoét một lỗ tròn đường kính khoảng 3 cm ở một bên thành hộp; Hộp B cắt bỏ nắp trên để hở hoàn toàn (hoặc chiếu sáng đều từ trên xuống). Đặt hai chậu đậu vào trong hai hộp, đậy kín, tưới ẩm và để nơi có ánh sáng 3 – 4 ngày.",
+        "Hiện tượng quan sát: Thân mầm cây đậu trong Hộp A uốn cong rõ rệt vươn mình ra phía lỗ tròn có ánh sáng lọt vào. Thân mầm cây đậu trong Hộp B sinh trưởng mọc thẳng đứng.",
+        "Kết luận: Thân và ngọn cây có tính hướng sáng dương, sinh trưởng hướng về phía nguồn kích thích ánh sáng."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Thí nghiệm 2",
+      "badgeColor": "emerald",
+      "title": "Thí nghiệm chứng minh tính hướng trọng lực",
+      "content": "Chứng minh phản ứng sinh trưởng ngược chiều nhau của rễ và thân đối với trọng lực Trái Đất:",
+      "bulletPoints": [
+        "Chuẩn bị: Một chậu cây con (đậu xanh hoặc ngô) đang sinh trưởng khỏe mạnh mọc thẳng đứng.",
+        "Tiến hành: Đặt chậu cây nằm ngang trên mặt bàn, giữ ẩm đất và đặt trong phòng tối (hoặc chiếu sáng đẳng hướng đều từ các phía để loại trừ tác động của hướng sáng).",
+        "Hiện tượng quan sát sau 2 – 3 ngày: Rễ cây sinh trưởng uốn cong một góc 90 độ đâm thẳng xuống dưới đất. Thân ngọn cây uốn cong một góc 90 độ vươn ngược lên phía trên.",
+        "Kết luận: Rễ cây có tính hướng trọng lực (hướng đất) dương; Thân cây có tính hướng trọng lực (hướng đất) âm."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Thí nghiệm 3",
+      "badgeColor": "amber",
+      "title": "Quan sát phản ứng ứng động ở cây trinh nữ",
+      "content": "Quan sát hiện tượng cảm ứng nhanh dưới kích thích cơ học tiếp xúc:",
+      "bulletPoints": [
+        "Tiến hành: Dùng đầu ngón tay hoặc que tăm chạm nhẹ vào một lá chét của cây trinh nữ (cây xấu hổ).",
+        "Hiện tượng quan sát: Cặp lá chét bị chạm khép lại ngay lập tức; sau đó phản ứng lan truyền nhanh sang các lá chét lân cận và làm cuống lá cụp xuống hoàn toàn chỉ sau 1 – 2 giây.",
+        "Hồi phục: Để yên chậu cây ở nơi yên tĩnh, sau khoảng 10 – 15 phút, nước thẩm thấu trở lại các tế bào thể gối làm lá từ từ mở ra trạng thái xòe ban đầu.",
+        "Ý nghĩa thích nghi: Giúp cây giảm diện tích tiếp xúc, tự vệ tránh bị động vật ăn cỏ gặm nhấm và hạn chế tổn thương khi gặp mưa to gió lớn."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi đặt chậu cây đậu xanh nằm ngang trên bàn trong buồng tối hoàn toàn 2 ngày, hiện tượng sinh trưởng nào sẽ được quan sát thấy?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Rễ uốn cong đâm thẳng xuống đất (hướng đất dương), ngọn thân uốn cong vươn thẳng lên trên (hướng đất âm)",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Cả rễ và ngọn thân đều tiếp tục mọc nằm ngang thẳng tắp như cũ",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Rễ uốn cong mọc ngược lên trời còn ngọn thân cắm sâu xuống đất",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Cây lập tức ngừng sinh trưởng và rụng toàn bộ lá sau 1 giờ",
+        "correct": false
+      }
+    ],
+    "explanation": "Dưới tác động của trọng lực Trái Đất, rễ có tính hướng đất dương nên uốn cong đâm xuống dưới, còn ngọn thân có tính hướng đất âm nên uốn cong vươn lên trên."
+  }
+}

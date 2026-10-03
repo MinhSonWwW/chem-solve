@@ -1,0 +1,554 @@
+[
+  {
+    "id": "bio-g8-b03-q01",
+    "lessonId": "bio-g8-b03",
+    "sgkBaiSo": 32,
+    "skillIds": [
+      "bio-dinh-duong-tieu-hoa"
+    ],
+    "difficulty": 1,
+    "prompt": "Những nhóm chất dinh dưỡng nào sau đây đóng vai trò cung cấp năng lượng chủ yếu cho các hoạt động sống của cơ thể?",
+    "knowledge": [
+      "kb-bio-g8-nhom-chat-dinh-duong"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Carbohydrate, Protein và Lipid"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nước, Muối khoáng và Vitamin"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chất xơ, Nước và Canxi"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vitamin A, Vitamin C và Vitamin D"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Các chất sinh năng lượng gồm tinh bột, đường, chất đạm và dầu mỡ béo."
+      },
+      {
+        "level": 2,
+        "text": "Tên khoa học của 3 nhóm chất này là Carbohydrate, Protein và Lipid."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân loại chất dinh dưỡng",
+        "body": "Chất dinh dưỡng gồm nhóm sinh năng lượng và nhóm không sinh năng lượng nhưng cần thiết cho cơ thể."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Ba đại phân tử sinh năng lượng",
+        "body": "Carbohydrate (tinh bột, đường), Protein (chất đạm) và Lipid (chất béo) khi bị oxy hóa trong tế bào giải phóng năng lượng ATP cung cấp cho mọi hoạt động sống."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Carbohydrate, Protein và Lipid là 3 nhóm chất cung cấp năng lượng cho cơ thể."
+      }
+    ],
+    "finalSolution": "Carbohydrate giải phóng khoảng 4 kcal/g, Protein khoảng 4 kcal/g, Lipid giải phóng nhiều nhất khoảng 9 kcal/g năng lượng.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng vitamin và nước cũng là nguồn cung cấp calo năng lượng cho cơ thể."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b03-q02",
+    "lessonId": "bio-g8-b03",
+    "sgkBaiSo": 32,
+    "skillIds": [
+      "bio-dinh-duong-tieu-hoa"
+    ],
+    "difficulty": 1,
+    "prompt": "Sắp xếp đúng trình tự các bộ phận của ống tiêu hóa theo đường đi của thức ăn là gì?",
+    "knowledge": [
+      "kb-bio-g8-ong-tieu-hoa"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Khoang miệng → Hầu → Thực quản → Dạ dày → Ruột non → Ruột già → Trực tràng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Khoang miệng → Thực quản → Hầu → Dạ dày → Ruột già → Ruột non → Trực tràng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khoang miệng → Dạ dày → Thực quản → Ruột non → Ruột già → Hậu môn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khoang miệng → Hầu → Dạ dày → Thực quản → Ruột già → Ruột non"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thức ăn sau khi nuốt qua hầu sẽ đi vào thực quản trước khi đổ xuống dạ dày."
+      },
+      {
+        "level": 2,
+        "text": "Từ dạ dày thức ăn xuống ruột non (hấp thụ), tiếp theo mới đến ruột già (tạo phân)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cấu trúc ống tiêu hóa",
+        "body": "Ống tiêu hóa là đường ống cơ bắp dẫn thức ăn từ trên xuống dưới."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đường đi liên tục của viên thức ăn",
+        "body": "Thức ăn bắt đầu ở Khoang miệng → nuốt qua Hầu → xuống Thực quản → vào Dạ dày nhào trộn → sang Ruột non tiêu hóa và hấp thụ → vào Ruột già tạo phân → Trực tràng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự chuẩn là: Khoang miệng → Hầu → Thực quản → Dạ dày → Ruột non → Ruột già → Trực tràng."
+      }
+    ],
+    "finalSolution": "Ống tiêu hóa người là một đường ống cơ bắp dài liên tục từ khoang miệng đến hậu môn.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Đảo vị trí giữa ruột non và ruột già."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b03-q04",
+    "lessonId": "bio-g8-b03",
+    "sgkBaiSo": 32,
+    "skillIds": [
+      "bio-dinh-duong-tieu-hoa"
+    ],
+    "difficulty": 2,
+    "prompt": "Tại khoang miệng, biến đổi hóa học diễn ra với chất dinh dưỡng nào?",
+    "knowledge": [
+      "kb-bio-g8-tieu-hoa-khoang-mieng"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Một phần tinh bột chín được enzym amylase biến đổi thành đường Mantôzơ"
+        },
+        {
+          "id": "opt-b",
+          "label": "Protein được biến đổi thành các amino acid tự do"
+        },
+        {
+          "id": "opt-c",
+          "label": "Lipid được phân giải thành glycerol và acid béo"
+        },
+        {
+          "id": "opt-d",
+          "label": "Mọi chất hữu cơ đều được phân giải triệt để thành chất đơn giản"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nước bọt chứa enzym amylase (ptyalin)."
+      },
+      {
+        "level": 2,
+        "text": "Nhai cơm kĩ thấy có vị ngọt thanh là do tinh bột chín biến thành đường mantôzơ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hoạt động tiêu hóa ở khoang miệng",
+        "body": "Khoang miệng chủ yếu thực hiện biến đổi cơ học nhờ răng cắn xé nghiền nhỏ và lưỡi đảo trộn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tác dụng của enzym amylase",
+        "body": "Tuyến nước bọt chỉ chứa enzym amylase (pH kiềm nhẹ) có tác dụng thủy phân một phần tinh bột chín thành đường đôi mantôzơ (maltose)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Một phần tinh bột chín được biến đổi thành đường mantôzơ nhờ amylase."
+      }
+    ],
+    "finalSolution": "Tại khoang miệng, biến đổi cơ học là chủ yếu; biến đổi hóa học chỉ xảy ra bước đầu với tinh bột chín nhờ enzym amylase.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng tinh bột sống cũng bị enzym nước bọt phân giải dễ dàng ở khoang miệng."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b03-q03",
+    "lessonId": "bio-g8-b03",
+    "sgkBaiSo": 32,
+    "skillIds": [
+      "bio-dinh-duong-tieu-hoa"
+    ],
+    "difficulty": 2,
+    "prompt": "Acid clohiđric (HCl) trong dịch vị dạ dày có vai trò sinh học quan trọng nào?",
+    "knowledge": [
+      "kb-bio-g8-tieu-hoa-da-day"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tạo môi trường acid để hoạt hóa pepsinogen thành enzym pepsin và tiêu diệt vi khuẩn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Trực tiếp phân cắt toàn bộ lipid thành các giọt mỡ nhỏ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Biến đổi tinh bột thành đường glucose hấp thụ vào máu"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tạo màng bảo vệ niêm mạc dạ dày không bị bào mòn"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Pepsin hoạt động tối ưu ở pH 1,5 - 2,0 rất acid."
+      },
+      {
+        "level": 2,
+        "text": "HCl chuyển tiền chất pepsinogen thành enzym hoạt động pepsin và sát trùng thức ăn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Thành phần dịch vị",
+        "body": "Dạ dày tiết dịch vị chứa nước, chất nhầy, acid clohiđric (HCl) và tiền enzym pepsinogen."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Chức năng của HCl",
+        "body": "HCl tạo môi trường acid mạnh (pH 1,5 - 2,0) để cắt đoạn peptide ức chế chuyển pepsinogen thành enzym pepsin hoạt động phân cắt đạm, đồng thời diệt khuẩn theo thức ăn vào."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "HCl tạo môi trường acid để hoạt hóa pepsinogen thành pepsin và tiêu diệt vi khuẩn."
+      }
+    ],
+    "finalSolution": "Acid HCl là thành phần quan trọng của dịch vị, vừa tạo môi trường cho pepsin vừa là rào cản bảo vệ diệt khuẩn tự nhiên.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng HCl là enzym tiêu hóa (HCl là acid vô cơ, không phải chất xúc tác enzym sinh học)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b03-q05",
+    "lessonId": "bio-g8-b03",
+    "sgkBaiSo": 32,
+    "skillIds": [
+      "bio-dinh-duong-tieu-hoa"
+    ],
+    "difficulty": 2,
+    "prompt": "Nhận định nào sau đây là ĐÚNG nhất về thành phần và vai trò của dịch mật?",
+    "knowledge": [
+      "kb-bio-g8-tieu-hoa-ruot-non"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Dịch mật không chứa enzym tiêu hóa; muối mật giúp nhũ tương hóa lipid"
+        },
+        {
+          "id": "opt-b",
+          "label": "Dịch mật chứa nồng độ cao enzym pepsin và trypsin để tiêu hóa đạm"
+        },
+        {
+          "id": "opt-c",
+          "label": "Dịch mật trực tiếp phân giải tinh bột thành đường đôi mantôzơ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Dịch mật do túi mật tự sản xuất và tiết thẳng vào dạ dày"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Gan là cơ quan tiết ra dịch mật, túi mật chỉ làm nhiệm vụ lưu trữ và cô đặc mật."
+      },
+      {
+        "level": 2,
+        "text": "Dịch mật không chứa bất kì enzym nào mà chứa muối mật giúp phân tán chất béo."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nguồn gốc dịch mật",
+        "body": "Dịch mật do các tế bào gan sản xuất, dự trữ ở túi mật và đổ vào tá tràng khi có thức ăn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Bản chất muối mật",
+        "body": "Dịch mật hoàn toàn không chứa enzym tiêu hóa. Thành phần quan trọng là muối mật làm nhiệm vụ nhũ tương hóa lipid thành những hạt nhỏ li ti, giúp enzym lipase tiếp xúc và phân giải dễ dàng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Dịch mật không chứa enzym tiêu hóa; muối mật giúp nhũ tương hóa lipid."
+      }
+    ],
+    "finalSolution": "Nhũ tương hóa lipid bởi muối mật là bước đệm cơ học cực kì thiết yếu để enzym lipase xúc tác tiêu hóa chất béo.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm tưởng dịch mật chứa enzym phân giải lipid hoặc dịch mật do túi mật tiết ra."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b03-q06",
+    "lessonId": "bio-g8-b03",
+    "sgkBaiSo": 32,
+    "skillIds": [
+      "bio-dinh-duong-tieu-hoa"
+    ],
+    "difficulty": 2,
+    "prompt": "Sản phẩm phân giải cuối cùng của chất đạm (protein) tại ruột non để có thể hấp thụ vào mao mạch máu là gì?",
+    "knowledge": [
+      "kb-bio-g8-tieu-hoa-ruot-non"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Các amino acid (axit amin)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Các phân tử glucose"
+        },
+        {
+          "id": "opt-c",
+          "label": "Glycerol và acid béo"
+        },
+        {
+          "id": "opt-d",
+          "label": "Các chuỗi polypeptide dài"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Protein cấu tạo từ các đơn phân hữu cơ chứa nhóm amin (-NH2) và nhóm cacboxyl (-COOH)."
+      },
+      {
+        "level": 2,
+        "text": "Các đơn phân đó là các amino acid."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tiêu hóa protein tại ruột non",
+        "body": "Các chuỗi peptide ngắn từ dạ dày xuống ruột non tiếp tục được enzym trypsin và peptidase phân giải."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Sản phẩm đơn phân cuối cùng",
+        "body": "Dưới tác dụng của các enzym protease tụy và ruột, liên kết peptide bị bẻ gãy hoàn toàn tạo thành các amino acid tự do có thể thẩm thấu qua tế bào lông ruột vào mao mạch máu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Sản phẩm cuối cùng của protein là các amino acid."
+      }
+    ],
+    "finalSolution": "Amino acid là dạng đơn phân hòa tan duy nhất mà ruột non có thể hấp thu vào hệ tuần hoàn máu để chuyển đến tế bào.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm sản phẩm của protein với glucose (glucose là sản phẩm của tinh bột/carbohydrate)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b03-q07",
+    "lessonId": "bio-g8-b03",
+    "sgkBaiSo": 32,
+    "skillIds": [
+      "bio-dinh-duong-tieu-hoa"
+    ],
+    "difficulty": 2,
+    "prompt": "Cấu trúc nào ở niêm mạc ruột non giúp tăng diện tích tiếp xúc và hấp thụ dưỡng chất lên hàng trăm mét vuông?",
+    "knowledge": [
+      "kb-bio-g8-hap-thu-ruot-non"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Các nếp gấp niêm mạc, lông ruột (nhung mao) và vi nhung mao dày đặc"
+        },
+        {
+          "id": "opt-b",
+          "label": "Các tuyến tiết chất nhầy ở thành ruột non"
+        },
+        {
+          "id": "opt-c",
+          "label": "Lớp cơ trơn dày dặn có khả năng co thắt liên tục"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cơ vòng môn vị điều tiết lượng thức ăn"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bề mặt trong của ruột non không nhẵn mà có hàng triệu gờ nhô hình ngón tay."
+      },
+      {
+        "level": 2,
+        "text": "Các cấu trúc hình ngón tay đó là nhung mao và trên mỗi tế bào lại có thêm vi nhung mao."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhiệm vụ hấp thụ của ruột non",
+        "body": "Ruột non phải hấp thụ triệt để lượng lớn dưỡng chất trong thời gian thức ăn di chuyển qua lòng ruột."
+      },
+      {
+        "kind": "knowledge",
+        "title": "3 cấp độ tăng diện tích bề mặt",
+        "body": "Bề mặt trong ruột non xếp nếp gấp; trên nếp gấp có hàng triệu lông ruột (nhung mao); trên mỗi tế bào lông ruột lại có hàng nghìn vi nhung mao giúp mở rộng diện tích hấp thụ lên tới 400 - 500 m²."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nếp gấp niêm mạc, lông ruột và vi nhung mao giúp tăng tối đa diện tích hấp thụ."
+      }
+    ],
+    "finalSolution": "Hệ thống nhung mao và vi nhung mao biến ruột non thành một bề mặt trao đổi chất khổng lồ, đảm bảo hấp thụ triệt để mọi chất dinh dưỡng.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng diện tích ruột non chỉ tương đương với diện tích một ống trụ trơn nhẵn thông thường."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b03-q08",
+    "lessonId": "bio-g8-b03",
+    "sgkBaiSo": 32,
+    "skillIds": [
+      "bio-dinh-duong-tieu-hoa"
+    ],
+    "difficulty": 3,
+    "prompt": "Thói quen ăn uống và sinh hoạt nào dưới đây là nguyên nhân trực tiếp làm tăng nguy cơ viêm loét dạ dày - tá tràng?",
+    "knowledge": [
+      "kb-bio-g8-ve-sinh-tieu-hoa"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Ăn uống thất thường bỏ bữa, ăn quá nhiều đồ cay nóng, căng thẳng stress kéo dài và nhiễm khuẩn HP"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nhai kĩ thức ăn trước khi nuốt và ăn đúng giờ giấc đều đặn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Uống đủ nước lọc và ăn bổ sung nhiều rau xanh tươi"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nghỉ ngơi thư giãn 30 phút sau mỗi bữa ăn chính"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Căng thẳng kích thích tăng tiết acid HCl, dạ dày rỗng không có thức ăn sẽ bị acid ăn mòn niêm mạc."
+      },
+      {
+        "level": 2,
+        "text": "Vi khuẩn Helicobacter pylori (HP) kết hợp với ăn cay nóng và stress là nguyên nhân gây viêm loét."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cơ chế bảo vệ niêm mạc dạ dày",
+        "body": "Dạ dày được bảo vệ bởi lớp màng chất nhầy chống lại acid HCl và enzym pepsin."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Các yếu tố phá hủy niêm mạc dạ dày",
+        "body": "Bỏ bữa, ăn cay nóng, stress thần kinh kích thích acid tiết tràn lan; kết hợp vi khuẩn Helicobacter pylori (HP) tấn công làm rách lớp nhầy bảo vệ dẫn đến viêm loét niêm mạc."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Bỏ bữa thất thường, ăn đồ cay nóng, stress và nhiễm khuẩn HP gây viêm loét dạ dày."
+      }
+    ],
+    "finalSolution": "Duy trì nếp sống lành mạnh, ăn đúng bữa, nhai kĩ và tránh căng thẳng kéo dài là cách tốt nhất bảo vệ niêm mạc dạ dày.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng đau dạ dày chỉ do thức ăn bẩn chứ không liên quan đến trạng thái tâm lí căng thẳng thần kinh."
+      }
+    ]
+  }
+]

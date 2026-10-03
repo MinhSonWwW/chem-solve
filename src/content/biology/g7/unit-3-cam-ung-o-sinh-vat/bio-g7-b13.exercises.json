@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g7-b13-q01",
+    "lessonId": "bio-g7-b13",
+    "sgkBaiSo": 33,
+    "skillIds": ["bio-cam-ung-tap-tinh"],
+    "difficulty": 1,
+    "prompt": "Khái niệm 'Cảm ứng ở sinh vật' được định nghĩa chính xác là gì?",
+    "knowledge": ["kb-bio-g7-khai-niem-cam-ung"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Khả năng cơ thể sinh vật tiếp nhận và phản ứng lại các kích thích từ môi trường để thích nghi sinh tồn" },
+        { "id": "opt-b", "label": "Quá trình lấy chất hữu cơ và oxy để giải phóng năng lượng ATP" },
+        { "id": "opt-c", "label": "Sự tăng lên về khối lượng và kích thước của cơ thể qua các giai đoạn" },
+        { "id": "opt-d", "label": "Quá trình tạo ra các cá thể mới để duy trì sự liên tục của loài" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Khi thời tiết lạnh, ta nổi da gà; khi trời nắng, ngọn cây vươn về phía ánh sáng." },
+      { "level": 2, "text": "Đây là phản ứng trả lời kích thích của môi trường để giúp cơ thể thích nghi tồn tại." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định khái niệm", "body": "Tìm định nghĩa khoa học chuẩn mực về cảm ứng ở sinh vật." },
+      { "kind": "knowledge", "title": "Định nghĩa cảm ứng", "body": "Cảm ứng là phản ứng của sinh vật trả lời các kích thích từ môi trường trong hoặc ngoài để thích nghi với điều kiện sống." },
+      { "kind": "answer", "title": "Kết luận", "body": "Khả năng cơ thể sinh vật tiếp nhận và phản ứng lại các kích thích từ môi trường để thích nghi sinh tồn." }
+    ],
+    "finalSolution": "Cảm ứng là khả năng tiếp nhận và phản ứng lại các kích thích từ môi trường giúp sinh vật thích nghi để sinh tồn.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn cảm ứng với trao đổi chất (hô hấp/quang hợp) hoặc sinh trưởng, sinh sản." }
+    ]
+  },
+  {
+    "id": "bio-g7-b13-q02",
+    "lessonId": "bio-g7-b13",
+    "sgkBaiSo": 33,
+    "skillIds": ["bio-cam-ung-tap-tinh"],
+    "difficulty": 1,
+    "prompt": "Hiện tượng ngọn cây trồng bên cửa sổ uốn cong vươn mình ra phía ngoài ánh sáng mặt trời là biểu hiện của hình thức cảm ứng nào?",
+    "knowledge": ["kb-bio-g7-huong-dong-thuc-vat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tính hướng sáng dương của ngọn cây" },
+        { "id": "opt-b", "label": "Tính hướng trọng lực dương của thân" },
+        { "id": "opt-c", "label": "Tính hướng hóa âm của lá" },
+        { "id": "opt-d", "label": "Hiện tượng ứng động tiếp xúc va chạm" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Ánh sáng là tác nhân kích thích định hướng từ một phía." },
+      { "level": 2, "text": "Ngọn cây sinh trưởng hướng về phía nguồn kích thích ánh sáng gọi là hướng sáng dương." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích tác nhân kích thích", "body": "Tác nhân kích thích ở đây là ánh sáng mặt trời chiếu không đều từ cửa sổ." },
+      { "kind": "knowledge", "title": "Tính hướng sáng", "body": "Thân ngọn cây có tính hướng sáng dương, sinh trưởng uốn cong về nguồn sáng để tối ưu hấp thu năng lượng quang hợp." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tính hướng sáng dương của ngọn cây." }
+    ],
+    "finalSolution": "Ngọn cây vươn về phía có ánh sáng là tính hướng sáng dương, giúp lá hứng nhiều ánh sáng để quang hợp.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn giữa hướng sáng dương (hướng về phía ánh sáng) và hướng sáng âm (tránh xa ánh sáng)." }
+    ]
+  },
+  {
+    "id": "bio-g7-b13-q03",
+    "lessonId": "bio-g7-b13",
+    "sgkBaiSo": 33,
+    "skillIds": ["bio-cam-ung-tap-tinh"],
+    "difficulty": 1,
+    "prompt": "Rễ cây sinh trưởng luôn có xu hướng đâm sâu thẳng đứng xuống lòng đất thể hiện đặc tính cảm ứng nào?",
+    "knowledge": ["kb-bio-g7-huong-dong-thuc-vat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tính hướng trọng lực (hướng đất) dương" },
+        { "id": "opt-b", "label": "Tính hướng trọng lực âm" },
+        { "id": "opt-c", "label": "Tính hướng sáng dương" },
+        { "id": "opt-d", "label": "Tính hướng tiếp xúc giá thể" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Trọng lực Trái Đất kéo mọi vật về tâm địa cầu theo phương thẳng đứng hướng xuống." },
+      { "level": 2, "text": "Rễ cây sinh trưởng theo chiều của trọng trường nên gọi là hướng trọng lực dương (hướng đất dương)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định hướng sinh trưởng của rễ", "body": "Rễ cây mọc thẳng xuống tâm đất theo phương của lực hấp dẫn." },
+      { "kind": "knowledge", "title": "Tính hướng trọng lực", "body": "Rễ cây có tính hướng trọng lực dương (hướng đất dương) để hút nước và giữ cây đứng vững." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tính hướng trọng lực (hướng đất) dương." }
+    ],
+    "finalSolution": "Rễ cây luôn đâm xuống lòng đất thể hiện tính hướng trọng lực dương (hướng đất dương).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm rễ hướng đất âm, trong khi thân ngọn mới là hướng đất âm (mọc ngược lên trên)." }
+    ]
+  },
+  {
+    "id": "bio-g7-b13-q04",
+    "lessonId": "bio-g7-b13",
+    "sgkBaiSo": 33,
+    "skillIds": ["bio-cam-ung-tap-tinh"],
+    "difficulty": 2,
+    "prompt": "Hiện tượng các tua cuốn ở cây mướp, cây bí hoặc thân cây hoa đậu biếc uốn vòng quanh cọc giàn tre để leo lên cao là ví dụ về:",
+    "knowledge": ["kb-bio-g7-huong-dong-thuc-vat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tính hướng tiếp xúc" },
+        { "id": "opt-b", "label": "Tính hướng hóa âm" },
+        { "id": "opt-c", "label": "Tính hướng nước âm" },
+        { "id": "opt-d", "label": "Tính hướng đất dương" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Khi tua cuốn va chạm vào giá thể cọc rào thì phía tiếp xúc giảm sinh trưởng còn phía đối diện sinh trưởng nhanh uốn cong bám chặt." },
+      { "level": 2, "text": "Phản ứng kích thích này phát sinh do sự va chạm tiếp xúc cơ học." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích tác nhân", "body": "Tác nhân kích thích là sự tiếp xúc vật lý giữa tua cuốn và bề mặt cọc giá thể." },
+      { "kind": "knowledge", "title": "Tính hướng tiếp xúc", "body": "Tua cuốn của cây leo có tính hướng tiếp xúc giúp cây bám leo lên cao để đón nhận ánh sáng." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tính hướng tiếp xúc." }
+    ],
+    "finalSolution": "Tua cuốn của cây họ bầu bí uốn quanh giá thể thể hiện tính hướng tiếp xúc, giúp cây bám leo lên cao.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn tính hướng tiếp xúc với tính hướng hóa." }
+    ]
+  },
+  {
+    "id": "bio-g7-b13-q05",
+    "lessonId": "bio-g7-b13",
+    "sgkBaiSo": 33,
+    "skillIds": ["bio-cam-ung-tap-tinh"],
+    "difficulty": 2,
+    "prompt": "Khi dùng ngón tay chạm nhẹ vào lá cây trinh nữ (cây xấu hổ), lá chét lập tức khép lại và cuống lá cụp xuống. Hiện tượng này xảy ra do cơ chế sinh học nào?",
+    "knowledge": ["kb-bio-g7-ung-dong-tiep-xuc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Sự thay đổi đột ngột áp suất trương nước ở các tế bào thể gối (khớp cuống lá)" },
+        { "id": "opt-b", "label": "Sự phân chia nguyên phân cực nhanh của tế bào biểu bì lá" },
+        { "id": "opt-c", "label": "Sự đông tụ toàn bộ protein trong lục lạp do nhiệt độ ngón tay" },
+        { "id": "opt-d", "label": "Khí CO2 từ ngón tay làm tê liệt hoàn toàn hệ mạch dẫn của cuống lá" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Ở gốc cuống lá và các lá chét có một cấu trúc đặc biệt gọi là thể gối chứa đầy nước." },
+      { "level": 2, "text": "Khi bị va chạm, nước từ nửa dưới thể gối thoát nhanh ra ngoài gian bào làm giảm sức trương nước khiến cuống lá xẹp cụp xuống." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định cơ chế phản ứng nhanh", "body": "Hiện tượng lá trinh nữ cụp lại chỉ sau vài giây thuộc dạng ứng động tiếp xúc không phụ thuộc sinh trưởng." },
+      { "kind": "knowledge", "title": "Cơ chế thể gối", "body": "Sự vận chuyển nước nhanh chóng làm thay đổi áp suất trương nước của các tế bào thể gối ở gốc cuống lá." },
+      { "kind": "answer", "title": "Kết luận", "body": "Sự thay đổi đột ngột áp suất trương nước ở các tế bào thể gối (khớp cuống lá)." }
+    ],
+    "finalSolution": "Lá cây trinh nữ cụp xuống nhanh chóng là do sự thay đổi sức trương nước ở các tế bào thể gối dưới tác động tiếp xúc.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng cây trinh nữ có cơ bắp co rút như động vật thay vì cơ chế trương nước thể gối." }
+    ]
+  },
+  {
+    "id": "bio-g7-b13-q06",
+    "lessonId": "bio-g7-b13",
+    "sgkBaiSo": 33,
+    "skillIds": ["bio-cam-ung-tap-tinh"],
+    "difficulty": 1,
+    "prompt": "Đặc điểm nào sau đây là đặc trưng của TẬP TÍNH BẨM SINH ở động vật?",
+    "knowledge": ["kb-bio-g7-phan-loai-tap-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Sinh ra đã có, do gen quy định, di truyền từ bố mẹ và mang tính đặc trưng cho loài" },
+        { "id": "opt-b", "label": "Chỉ được hình thành sau khi tham gia các khóa huấn luyện chuyên nghiệp" },
+        { "id": "opt-c", "label": "Dễ dàng thay đổi và biến mất hoàn toàn khi đổi môi trường sống" },
+        { "id": "opt-d", "label": "Không di truyền và chỉ mang tính cá thể riêng biệt" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Tập tính này có sẵn ngay từ khi sinh ra mà không cần học hỏi từ con vật khác." },
+      { "level": 2, "text": "Do gen di truyền quyết định và mang tính chất khuôn mẫu của cả loài sinh vật." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định bản chất tập tính bẩm sinh", "body": "Tìm đặc điểm phân loại cốt lõi của tập tính bẩm sinh." },
+      { "kind": "knowledge", "title": "Đặc trưng tập tính bẩm sinh", "body": "Tập tính bẩm sinh do gen quy định, sinh ra đã có, di truyền, rất bền vững và đặc trưng cho loài." },
+      { "kind": "answer", "title": "Kết luận", "body": "Sinh ra đã có, do gen quy định, di truyền từ bố mẹ và mang tính đặc trưng cho loài." }
+    ],
+    "finalSolution": "Tập tính bẩm sinh sinh ra đã có, do gen quy định, di truyền từ đời trước và đặc trưng cho loài.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn giữa đặc điểm của tập tính bẩm sinh với tập tính học được." }
+    ]
+  },
+  {
+    "id": "bio-g7-b13-q07",
+    "lessonId": "bio-g7-b13",
+    "sgkBaiSo": 33,
+    "skillIds": ["bio-cam-ung-tap-tinh"],
+    "difficulty": 1,
+    "prompt": "Hành vi nào sau đây là một ví dụ điển hình về TẬP TÍNH HỌC ĐƯỢC ở động vật và con người?",
+    "knowledge": ["kb-bio-g7-phan-loai-tap-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Người tham gia giao thông dừng xe lại khi nhìn thấy đèn tín hiệu chuyển đỏ" },
+        { "id": "opt-b", "label": "Nhện giăng mạng lưới tơ hình tròn trong góc vườn" },
+        { "id": "opt-c", "label": "Chim én di cư về phương nam ấm áp khi mùa đông đến" },
+        { "id": "opt-d", "label": "Bê con vừa lọt lòng mẹ đã đứng dậy và tìm vú mẹ để bú sữa" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Hành vi nào cần phải qua quá trình học hỏi, rèn luyện và nhận thức luật lệ mới có được?" },
+      { "level": 2, "text": "Việc chấp hành luật giao thông là tập tính hình thành qua giáo dục và kinh nghiệm xã hội." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại ví dụ", "body": "Tìm hành vi được hình thành nhờ quá trình học tập và trải nghiệm cá thể." },
+      { "kind": "knowledge", "title": "Tập tính học được", "body": "Dừng xe đèn đỏ là tập tính học được của con người; các hành vi giăng tơ, di cư, bú mẹ là tập tính bẩm sinh." },
+      { "kind": "answer", "title": "Kết luận", "body": "Người tham gia giao thông dừng xe lại khi nhìn thấy đèn tín hiệu chuyển đỏ." }
+    ],
+    "finalSolution": "Dừng xe khi gặp đèn đỏ là tập tính học được hình thành qua quá trình học tập và chấp hành luật lệ.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng chim di cư là do học từ con chim khác, trong khi đó là bản năng bẩm sinh di truyền." }
+    ]
+  },
+  {
+    "id": "bio-g7-b13-q08",
+    "lessonId": "bio-g7-b13",
+    "sgkBaiSo": 33,
+    "skillIds": ["bio-cam-ung-tap-tinh"],
+    "difficulty": 2,
+    "prompt": "So với động vật, hiện tượng cảm ứng ở thực vật có đặc điểm khác biệt cơ bản nào sau đây?",
+    "knowledge": ["kb-bio-g7-cam-ung-thuc-vat-vs-dong-vat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Diễn ra chậm chạp, khó nhận thấy bằng mắt thường trong thời gian ngắn và không có sự tham gia của hệ thần kinh" },
+        { "id": "opt-b", "label": "Diễn ra nhanh như chớp nhờ sự điều khiển của não bộ và tủy sống" },
+        { "id": "opt-c", "label": "Luôn luôn làm thực vật di chuyển toàn bộ cơ thể từ nơi này sang nơi khác" },
+        { "id": "opt-d", "label": "Chỉ xảy ra khi có con người tác động cơ học trực tiếp" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Thực vật có hệ thần kinh và cơ bắp co rút để vận động chạy trốn như động vật không?" },
+      { "level": 2, "text": "Cây uốn cong ngọn hoặc đâm rễ cần nhiều ngày để nhận thấy sự thay đổi sinh trưởng." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "So sánh đặc điểm cảm ứng", "body": "So sánh tốc độ và cơ chế cảm ứng giữa giới thực vật và giới động vật." },
+      { "kind": "knowledge", "title": "Cảm ứng ở thực vật vs động vật", "body": "Thực vật không có hệ thần kinh, cảm ứng biểu hiện qua sinh trưởng hoặc trương nước nên diễn ra chậm, khó nhận thấy ngay bằng mắt thường." },
+      { "kind": "answer", "title": "Kết luận", "body": "Diễn ra chậm chạp, khó nhận thấy bằng mắt thường trong thời gian ngắn và không có sự tham gia của hệ thần kinh." }
+    ],
+    "finalSolution": "Cảm ứng thực vật diễn ra chậm, khó nhận thấy trong thời gian ngắn và không có hệ thần kinh điều khiển.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng thực vật cũng có các nơ-ron thần kinh điều khiển vận động." }
+    ]
+  }
+]

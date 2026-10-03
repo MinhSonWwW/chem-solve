@@ -1,0 +1,75 @@
+{
+  "lessonId": "bio-g7-b18",
+  "nodeId": "bio-g7-b18-theory",
+  "title": "Lý thuyết: Thực hành quan sát, mô tả sự sinh trưởng và phát triển ở một số sinh vật",
+  "subtitle": "Bài 38 SGK KHTN 7 Kết nối tri thức: Đo chiều cao thân mầm đậu, vẽ đồ thị tăng trưởng và phân tích vòng đời bướm, ếch đồng",
+  "sgkBaiSo": 38,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Thí nghiệm 1",
+      "badgeColor": "cyan",
+      "title": "Theo dõi và dựng biểu đồ sinh trưởng cây đậu",
+      "content": "Quy trình thực nghiệm định lượng sự sinh trưởng của thực vật theo thời gian:",
+      "bulletPoints": [
+        "Chuẩn bị: Ngâm hạt đậu xanh trong nước ấm (35°C – 40°C) khoảng 4 – 6 giờ cho hạt no nước nứt nanh, sau đó gieo vào chậu đất mùn tơi xốp giữ ẩm.",
+        "Thu thập số liệu: Từ khi hạt nảy mầm nhú khỏi mặt đất, dùng thước kẻ milimet đo chiều cao thân (từ gốc sát mặt đất đến đỉnh sinh trưởng ngọn) vào cùng một khung giờ cố định mỗi ngày, liên tục trong 6 – 7 ngày.",
+        "Dựng đồ thị sinh trưởng: Trục ngang biểu diễn Thời gian theo dõi (ngày 1, ngày 2,...), trục dọc biểu diễn Chiều cao thân (cm).",
+        "Nhận xét: Trong điều kiện đủ ẩm và đủ sáng, chiều cao cây đậu tăng dần theo thời gian, ban đầu tăng chậm rồi tăng nhanh khi rễ và lá thật hình thành."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Thí nghiệm 2",
+      "badgeColor": "emerald",
+      "title": "Quan sát vòng đời biến thái hoàn toàn ở bướm",
+      "content": "Bốn giai đoạn phát triển nối tiếp nhau trong vòng đời của bướm cải:",
+      "bulletPoints": [
+        "Giai đoạn 1 – Trứng: Bướm cái đẻ từng cụm trứng nhỏ màu vàng nhạt bám chặt ở mặt dưới phiến lá cải để tránh nắng và kẻ thù.",
+        "Giai đoạn 2 – Sâu non: Trứng nở thành sâu non có miệng nhai khỏe, ăn lá cây liên tục để lớn nhanh, trải qua 4 – 5 lần lột xác tăng kích thước gấp hàng chục lần (giai đoạn phá hoại mùa màng).",
+        "Giai đoạn 3 – Nhộng: Sâu non đính mình vào cành cây, tiết tơ tạo kén nhộng bất động. Bên trong kén, các mô của sâu bị phân giải và tái tổ chức hoàn toàn thành các cơ quan của bướm.",
+        "Giai đoạn 4 – Bướm trưởng thành: Vỏ nhộng nứt ra, bướm chui ra làm khô cánh rồi bay lượn, hút mật hoa, thụ phấn cho cây và bắt đôi giao phối đẻ trứng."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Thí nghiệm 3",
+      "badgeColor": "amber",
+      "title": "Quan sát vòng đời biến thái ở ếch đồng",
+      "content": "Sự chuyển tiếp từ đời sống hoàn toàn dưới nước sang đời sống lưỡng cư trên cạn:",
+      "bulletPoints": [
+        "Trứng thụ tinh trong nước: Ếch đẻ trứng thành màng nhầy nổi trên mặt ao hồ, được thụ tinh ngoài.",
+        "Nòng nọc sống dưới nước: Nở ra từ trứng, có đuôi dài bơi lội linh hoạt, thở bằng mang ngoài rồi mang trong, ăn rong rêu và chất mùn hữu cơ.",
+        "Biến thái hình thái: Nòng nọc mọc hai chân sau trước, sau đó mọc tiếp hai chân trước. Đuôi ngắn dần do hiện tượng tự tiêu bào và rụng hẳn; mang tiêu biến nhường chỗ cho phổi và lớp da ẩm giàu mao mạch phát triển.",
+        "Ếch trưởng thành: Nhảy lên bờ sinh sống, hô hấp chủ yếu qua da (kết hợp với phổi), săn bắt côn trùng bằng chiếc lưỡi dài phóng nhanh."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Trong quá trình biến thái từ nòng nọc thành ếch con, thứ tự xuất hiện các chi (chân) của nòng nọc diễn ra như thế nào?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Mọc hai chân sau trước, sau đó mới mọc tiếp hai chân trước",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Mọc hai chân trước trước, sau đó mới mọc hai chân sau",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Cả 4 chân mọc ra cùng một lúc sau khi đuôi rụng hoàn toàn",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Nòng nọc không bao giờ mọc chân mà chỉ có vây cá",
+        "correct": false
+      }
+    ],
+    "explanation": "Trong quá trình phát triển biến thái của nòng nọc, mầm chi sau xuất hiện và phát triển thành hai chân sau trước, sau đó hai chân trước mới phá vỡ màng nắp mang nhô ra ngoài."
+  }
+}

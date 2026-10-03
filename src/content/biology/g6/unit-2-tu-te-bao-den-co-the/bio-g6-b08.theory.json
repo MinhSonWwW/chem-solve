@@ -1,0 +1,75 @@
+{
+  "lessonId": "bio-g6-b08",
+  "nodeId": "bio-g6-b08-theory",
+  "title": "Lý thuyết: Tổ chức cơ thể đa bào",
+  "subtitle": "Bài 23 SGK KHTN 6 Kết nối tri thức: 5 cấp độ tổ chức sống và cấu trúc mô, cơ quan ở thực vật và động vật",
+  "sgkBaiSo": 23,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "5 cấp độ",
+      "badgeColor": "emerald",
+      "title": "5 cấp độ tổ chức của cơ thể đa bào",
+      "content": "Cơ thể đa bào được tổ chức theo thứ bậc tôn ti chặt chẽ từ đơn vị nhỏ nhất đến toàn bộ cá thể:",
+      "bulletPoints": [
+        "1. Tế bào: Đơn vị cấu trúc và chức năng cơ sở (tế bào cơ, tế bào biểu bì).",
+        "2. Mô: Tập hợp gồm nhiều tế bào có hình dạng, cấu tạo giống nhau cùng thực hiện một chức năng nhất định (mô cơ, mô dẫn).",
+        "3. Cơ quan: Tập hợp của nhiều loại mô khác nhau cùng phối hợp thực hiện một chức năng lớn (dạ dày, quả tim, lá cây).",
+        "4. Hệ cơ quan: Tập hợp các cơ quan cùng phối hợp thực hiện một chức năng sinh lý hoàn chỉnh (hệ tiêu hóa, hệ chồi).",
+        "5. Cơ thể: Tập hợp tất cả các hệ cơ quan phối hợp thống nhất tạo nên một cá thể sinh vật hoàn chỉnh."
+      ],
+      "callout": "Ghi nhớ chuỗi 5 cấp độ: Tế bào → Mô → Cơ quan → Hệ cơ quan → Cơ thể!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Ở thực vật",
+      "badgeColor": "amber",
+      "title": "Cấu trúc cơ thể thực vật có hoa",
+      "content": "Cơ thể thực vật có hoa gồm các cấp độ tổ chức sau:",
+      "bulletPoints": [
+        "Các loại mô chính: Mô phân sinh (tế bào phân chia liên tục giúp cây vươn cao và rễ đâm sâu); Mô bì (bao phủ ngoài bảo vệ rễ, thân, lá); Mô dẫn (mạch gỗ dẫn nước và khoáng từ rễ lên, mạch rây dẫn đường hữu cơ từ lá đi khắp cây); Mô cơ bản.",
+        "Cơ quan sinh dưỡng: Rễ, Thân và Lá (đảm bảo chức năng nuôi dưỡng cây).",
+        "Cơ quan sinh sản: Hoa, Quả và Hạt (đảm bảo duy trì và phát tán nòi giống).",
+        "2 hệ cơ quan: Hệ chồi (các bộ phận trên mặt đất gồm thân, cành, lá, hoa, quả) và Hệ rễ (các rễ nằm dưới mặt đất)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Ở động vật",
+      "badgeColor": "cyan",
+      "title": "Cấu trúc cơ thể động vật và người",
+      "content": "Cơ thể động vật có sự phân hóa mô và hệ cơ quan phức tạp:",
+      "bulletPoints": [
+        "4 loại mô chính: Mô biểu bì (bao bọc bề mặt da và lót các khoang rỗng bên trong); Mô liên kết (nâng đỡ, gắn kết như mô xương, mô sụn, mô máu); Mô cơ (gồm cơ vân, cơ trơn, cơ tim giúp co giãn vận động); Mô thần kinh (nơron tiếp nhận và dẫn truyền xung thần kinh).",
+        "Các hệ cơ quan tiêu biểu: Hệ tuần hoàn (tim, mạch máu); Hệ hô hấp (phổi, khí quản); Hệ tiêu hóa (miệng, dạ dày, ruột, gan); Hệ bài tiết (thận, bóng đái); Hệ thần kinh (não, tủy sống); Hệ vận động (bộ xương, hệ cơ)."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Chuỗi các cấp độ tổ chức của cơ thể đa bào từ nhỏ đến lớn nào sau đây là hoàn toàn chính xác?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Tế bào → Mô → Cơ quan → Hệ cơ quan → Cơ thể",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Mô → Tế bào → Cơ quan → Hệ cơ quan → Cơ thể",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Tế bào → Cơ quan → Mô → Hệ cơ quan → Cơ thể",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Cơ thể → Hệ cơ quan → Cơ quan → Mô → Tế bào",
+        "correct": false
+      }
+    ],
+    "explanation": "Quy luật tổ chức sống của cơ thể đa bào bắt đầu từ viên gạch cơ sở Tế bào → tập hợp thành Mô → tập hợp thành Cơ quan → phối hợp thành Hệ cơ quan → hợp nhất thành Cơ thể hoàn chỉnh."
+  }
+}

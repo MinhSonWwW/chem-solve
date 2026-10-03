@@ -1,0 +1,76 @@
+{
+  "lessonId": "bio-g8-b04",
+  "nodeId": "bio-g8-b04-theory",
+  "title": "Lý thuyết: Máu và hệ tuần hoàn của cơ thể người",
+  "subtitle": "Bài 33 SGK KHTN 8 Kết nối tri thức: Thành phần máu, hệ nhóm máu ABO, 2 vòng tuần hoàn máu và biện pháp cầm máu",
+  "sgkBaiSo": 33,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Máu & Tế bào",
+      "badgeColor": "emerald",
+      "title": "Thành phần và chức năng của máu",
+      "content": "Máu gồm Huyết tương (chiếm ~55% thể tích) và Các tế bào máu (chiếm ~45% thể tích):",
+      "bulletPoints": [
+        "Huyết tương: Chứa 90% nước, hòa tan chất dinh dưỡng, hormone, chất khoáng, kháng thể và chất thải; duy trì máu ở thể lỏng và vận chuyển vật chất.",
+        "Hồng cầu: Hình đĩa lõm 2 mặt, không nhân, chứa sắc tố hemoglobin (Hb) có khả năng kết hợp lỏng lẻo với O2 và CO2 để vận chuyển khí.",
+        "Bạch cầu: Có nhân, tham gia vào 3 hàng rào miễn dịch bảo vệ cơ thể (thực bào, tiết kháng thể và phá hủy tế bào nhiễm bệnh).",
+        "Tiểu cầu: Mảnh tế bào chất không nhân, giải phóng enzym xúc tác quá trình đông máu bịt kín vết thương hở."
+      ],
+      "callout": "Hồng cầu người trưởng thành không có nhân giúp chứa được nhiều hemoglobin hơn và di chuyển mềm dẻo qua các mao mạch siêu nhỏ!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Nhóm máu ABO",
+      "badgeColor": "amber",
+      "title": "Hệ nhóm máu ABO & Nguyên tắc truyền máu",
+      "content": "Xác định bởi kháng nguyên (A, B) trên hồng cầu và kháng thể (α, β) trong huyết tương:",
+      "bulletPoints": [
+        "Nhóm O: Không có kháng nguyên A, B; có cả kháng thể α và β (nhóm máu chuyên cho).",
+        "Nhóm A: Có kháng nguyên A; có kháng thể β (chống B).",
+        "Nhóm B: Có kháng nguyên B; có kháng thể α (chống A).",
+        "Nhóm AB: Có cả kháng nguyên A và B; không có kháng thể α và β (nhóm máu chuyên nhận).",
+        "Nguyên tắc truyền máu sống còn: Không để kháng nguyên trên hồng cầu người cho bị ngưng kết bởi kháng thể trong huyết tương người nhận."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Vòng tuần hoàn",
+      "badgeColor": "cyan",
+      "title": "Hệ mạch & 2 vòng tuần hoàn máu",
+      "content": "Tim 4 ngăn hoạt động như một máy bơm đẩy máu lưu thông khép kín theo 2 vòng:",
+      "bulletPoints": [
+        "Vòng tuần hoàn lớn (nuôi cơ thể): Tâm thất trái (máu đỏ tươi) → Động mạch chủ → Mao mạch cơ quan (trao đổi O2/CO2 thành máu đỏ thẫm) → Tĩnh mạch chủ → Tâm nhĩ phải.",
+        "Vòng tuần hoàn nhỏ (trao đổi khí ở phổi): Tâm thất phải (máu đỏ thẫm) → Động mạch phổi → Mao mạch phổi (thải CO2, nhận O2 thành máu đỏ tươi) → Tĩnh mạch phổi → Tâm nhĩ trái.",
+        "Sơ cứu cầm máu động mạch: Máu phun thành tia đỏ tươi; cần buộc garô ở vị trí phía trên vết thương (hướng về phía tim) và nới lỏng mỗi 15 phút."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Trong vòng tuần hoàn nhỏ (vòng phổi), máu đỏ tươi giàu O2 từ phổi chảy về ngăn tim nào?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Tâm nhĩ trái",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Tâm thất trái",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Tâm nhĩ phải",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Tâm thất phải",
+        "correct": false
+      }
+    ],
+    "explanation": "Sau khi trao đổi khí tại mao mạch phổi, máu đỏ tươi giàu oxy theo 4 tĩnh mạch phổi đổ trực tiếp về tâm nhĩ trái của tim."
+  }
+}

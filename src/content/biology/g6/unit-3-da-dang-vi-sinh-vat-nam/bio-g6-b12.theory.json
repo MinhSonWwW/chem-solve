@@ -1,0 +1,87 @@
+{
+  "lessonId": "bio-g6-b12",
+  "nodeId": "bio-g6-b12-theory",
+  "title": "Lý thuyết: Vi khuẩn",
+  "subtitle": "Bài 27 SGK KHTN 6 Kết nối tri thức: Cấu tạo nhân sơ, hình dạng đa dạng, vai trò có ích và phòng bệnh do vi khuẩn",
+  "sgkBaiSo": 27,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Cấu tạo",
+      "badgeColor": "emerald",
+      "title": "Kích thước và cấu tạo tế bào vi khuẩn",
+      "content": "Vi khuẩn là những sinh vật đơn bào nhân sơ xuất hiện sớm nhất trên Trái Đất:",
+      "bulletPoints": [
+        "Kích thước siêu nhỏ: Chỉ từ 0,5 đến 5 micromet (bắt buộc nhìn dưới kính hiển vi quang học).",
+        "Cấu tạo nhân sơ: Gồm màng tế bào, chất tế bào và Vùng nhân (chứa một phân tử DNA vòng, chưa có màng nhân bao bọc).",
+        "Cấu trúc phụ: Bên ngoài có thành tế bào giúp giữ hình dạng, lớp vỏ nhầy bảo vệ, lông giúp bám dính và roi giúp bơi di chuyển."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Hình dạng",
+      "badgeColor": "amber",
+      "title": "Các hình dạng điển hình của vi khuẩn",
+      "content": "Vi khuẩn có 4 dạng hình học phổ biến:",
+      "bulletPoints": [
+        "Hình que (Trực khuẩn): Vi khuẩn E. coli trong ruột, vi khuẩn lao, vi khuẩn lactic.",
+        "Hình cầu (Cầu khuẩn): Đứng đơn lẻ, xếp đôi (song cầu) hoặc tụ thành đám (tụ cầu khuẩn).",
+        "Hình xoắn (Xoắn khuẩn): Thân xoắn như lò xo (xoắn khuẩn giang mai).",
+        "Hình phẩy (Phẩy khuẩn): Thân hơi cong uốn cong như dấu phẩy (phẩy khuẩn tả)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Vai trò có ích",
+      "badgeColor": "cyan",
+      "title": "Lợi ích to lớn của vi khuẩn",
+      "content": "Phần lớn vi khuẩn trong tự nhiên là vô hại hoặc có ích cho con người và hệ sinh thái:",
+      "bulletPoints": [
+        "Chế biến thực phẩm: Vi khuẩn lactic lên men đường tạo vị chua làm sữa chua, dưa chua, cà muối, nước mắm, giấm ăn.",
+        "Dọn dẹp môi trường: Phân giải rác thải hữu cơ, xác động thực vật chết thành chất mùn khoáng nuôi cây, làm sạch đất và nước.",
+        "Nông nghiệp: Vi khuẩn nốt sần rễ cây họ đậu cố định đạm từ không khí làm tăng độ phì nhiêu của đất.",
+        "Trong cơ thể người: Vi khuẩn đường ruột hỗ trợ tiêu hóa thức ăn và tổng hợp vitamin B, K."
+      ]
+    },
+    {
+      "id": "card-4",
+      "badge": "Tác hại & Phòng bệnh",
+      "badgeColor": "purple",
+      "title": "Tác hại và nguyên tắc sử dụng thuốc kháng sinh",
+      "content": "Một số vi khuẩn gây hại nghiêm trọng:",
+      "bulletPoints": [
+        "Làm hỏng thực phẩm: Làm thức ăn bị ôi thiu, thối rữa, sinh độc tố gây ngộ độc.",
+        "Gây bệnh nguy hiểm: Bệnh lao phổi, dịch tả, thương hàn, uốn ván, kiết lị.",
+        "Phòng bệnh: Thực hiện ăn chín, uống sôi; rửa tay bằng xà phòng trước khi ăn và sau khi đi vệ sinh; bảo quản thức ăn đậy kín trong tủ lạnh.",
+        "Sử dụng kháng sinh: Chỉ dùng thuốc kháng sinh để điều trị bệnh do vi khuẩn theo đúng chỉ định của bác sĩ; phải uống đủ liều, đúng ngày, không tự ý ngưng thuốc để tránh vi khuẩn kháng thuốc (nhờn thuốc)."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Phẩy khuẩn tả (loài vi khuẩn gây ra bệnh tiêu chảy mất nước cấp tính) có hình dạng đặc trưng nào sau đây?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Hình hơi cong uốn lượn giống dấu phẩy",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Hình cầu tròn vo đứng thành chùm",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Hình que thẳng tắp",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Hình xoắn ốc như lò xo",
+        "correct": false
+      }
+    ],
+    "explanation": "Phẩy khuẩn tả có thân hơi uốn cong như dấu phẩy nên được gọi là phẩy khuẩn (Vibrio cholerae)."
+  }
+}

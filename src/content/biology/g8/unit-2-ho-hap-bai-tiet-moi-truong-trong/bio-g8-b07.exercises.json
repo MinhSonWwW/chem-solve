@@ -1,0 +1,554 @@
+[
+  {
+    "id": "bio-g8-b07-q01",
+    "lessonId": "bio-g8-b07",
+    "sgkBaiSo": 36,
+    "skillIds": [
+      "bio-dieu-hoa-moi-truong-trong"
+    ],
+    "difficulty": 1,
+    "prompt": "Môi trường trong của cơ thể người bao gồm những thành phần nào sau đây?",
+    "knowledge": [
+      "kb-bio-g8-moi-truong-trong"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Máu, Dịch mô (dịch kẽ) và Bạch huyết"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nước bọt, Dịch vị dạ dày và Nước mắt"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mồ hôi, Nước tiểu và Dịch mật"
+        },
+        {
+          "id": "opt-d",
+          "label": "Dịch tụy, Dịch ruột và Không khí phế nang"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Môi trường trong bao bọc trực tiếp các tế bào, là môi trường trung gian trao đổi chất."
+      },
+      {
+        "level": 2,
+        "text": "Gồm dòng máu trong mạch, dịch kẽ bao quanh tế bào và dịch lưu thông trong mạch bạch huyết."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khái niệm môi trường trong",
+        "body": "Tế bào động vật đa bào sống và trao đổi chất trong môi trường chất lỏng nội tại của cơ thể."
+      },
+      {
+        "kind": "knowledge",
+        "title": "3 thành phần cấu thành môi trường trong",
+        "body": "Môi trường trong cơ thể bao gồm: máu (chảy trong mạch máu), dịch mô (chất dịch kẽ tắm ướt và tiếp xúc trực tiếp màng tế bào) và bạch huyết (chảy trong hệ mạch bạch huyết)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Máu, dịch mô và bạch huyết là 3 thành phần của môi trường trong."
+      }
+    ],
+    "finalSolution": "Môi trường trong đảm bảo điều kiện sống ổn định cho mọi tế bào trong cơ thể.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm môi trường trong với các dịch tiêu hóa hay chất bài tiết bên ngoài."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b07-q02",
+    "lessonId": "bio-g8-b07",
+    "sgkBaiSo": 36,
+    "skillIds": [
+      "bio-dieu-hoa-moi-truong-trong"
+    ],
+    "difficulty": 1,
+    "prompt": "Mối quan hệ hình thành và luân chuyển giữa máu, dịch mô và bạch huyết diễn ra như thế nào?",
+    "knowledge": [
+      "kb-bio-g8-moi-truong-trong"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Huyết tương thấm qua thành mao mạch máu tạo thành dịch mô; dịch mô thấm vào mao mạch bạch huyết tạo thành bạch huyết; bạch huyết lại đổ về tĩnh mạch máu"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bạch huyết thấm qua da tạo thành máu; máu chảy vào dạ dày tạo thành dịch mô"
+        },
+        {
+          "id": "opt-c",
+          "label": "Dịch mô tự sinh ra từ nhân tế bào rồi biến đổi trực tiếp thành các tế bào hồng cầu"
+        },
+        {
+          "id": "opt-d",
+          "label": "Máu, dịch mô và bạch huyết hoàn toàn độc lập, không hề có sự chuyển hóa qua lại"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nước và chất dinh dưỡng lọc từ mao mạch ra khoảng kẽ tế bào thành dịch mô."
+      },
+      {
+        "level": 2,
+        "text": "Dịch mô thừa được các mạch bạch huyết thu gom thành bạch huyết rồi đổ ngược về dòng máu tuần hoàn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Chu trình tuần hoàn dịch thể",
+        "body": "Các thành phần của môi trường trong liên tục chuyển hóa và lưu thông khép kín."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Sự luân chuyển chất lỏng nội môi",
+        "body": "Một phần huyết tương lọc qua vách mao mạch tạo thành dịch kẽ mô. Dịch mô trao đổi chất với tế bào rồi thẩm thấu vào mao mạch bạch huyết thành bạch huyết, sau đó theo ống bạch huyết đổ về tĩnh mạch dưới đòn hòa vào dòng máu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Máu lọc thành dịch mô, dịch mô thấm thành bạch huyết, bạch huyết đổ về tĩnh mạch máu."
+      }
+    ],
+    "finalSolution": "Mối quan hệ chuyển hóa liên tục giữa máu, dịch mô và bạch huyết tạo thành chu trình dịch thể thống nhất của cơ thể.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng mạch bạch huyết dẫn chất lỏng ra ngoài cơ thể giống như tuyến mồ hôi."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b07-q03",
+    "lessonId": "bio-g8-b07",
+    "sgkBaiSo": 36,
+    "skillIds": [
+      "bio-dieu-hoa-moi-truong-trong"
+    ],
+    "difficulty": 2,
+    "prompt": "Cân bằng môi trường trong (cân bằng nội môi - Homeostasis) có ý nghĩa sinh học cốt lõi nào đối với cơ thể sinh vật?",
+    "knowledge": [
+      "kb-bio-g8-can-bang-noi-moi"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Duy trì ổn định các điều kiện lí - hóa của môi trường trong giúp các tế bào và cơ quan hoạt động bình thường"
+        },
+        {
+          "id": "opt-b",
+          "label": "Giúp cơ thể không bao giờ cảm thấy đói và không cần uống nước"
+        },
+        {
+          "id": "opt-c",
+          "label": "Làm cho thân nhiệt cơ thể luôn thay đổi linh hoạt theo nhiệt độ của môi trường ngoài"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khiến tim ngừng đập khi ngủ để tiết kiệm năng lượng tiêu hao"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Các enzym và màng tế bào chỉ hoạt động tối ưu trong một khoảng nhiệt độ, pH và áp suất thẩm thấu rất hẹp."
+      },
+      {
+        "level": 2,
+        "text": "Nội môi ổn định là điều kiện tiên quyết cho sự sinh tồn và hoạt động sống bình thường của tế bào."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khái niệm cân bằng nội môi",
+        "body": "Nội môi là môi trường sống của các tế bào bên trong cơ thể đa bào."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Ý nghĩa sinh học sống còn",
+        "body": "Sự ổn định về nhiệt độ (~37°C), pH (7,35 - 7,45), áp suất thẩm thấu và thành phần hóa học giúp hệ thống enzym tế bào duy trì hoạt tính xúc tác tối ưu, ngăn chặn tổn thương hoặc chết tế bào."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Duy trì ổn định các điều kiện lí - hóa của môi trường trong giúp các tế bào và cơ quan hoạt động bình thường."
+      }
+    ],
+    "finalSolution": "Cân bằng nội môi là cơ chế tiến hóa bậc cao giúp cơ thể động vật duy trì sự sống độc lập trước những biến động khắc nghiệt của môi trường ngoài.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng cơ thể người là loài biến nhiệt có thân nhiệt thay đổi tự do theo thời tiết."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b07-q04",
+    "lessonId": "bio-g8-b07",
+    "sgkBaiSo": 36,
+    "skillIds": [
+      "bio-dieu-hoa-moi-truong-trong"
+    ],
+    "difficulty": 2,
+    "prompt": "Những chỉ số nào sau đây phản ánh trạng thái cân bằng nội môi bình thường ở một người khỏe mạnh?",
+    "knowledge": [
+      "kb-bio-g8-can-bang-noi-moi"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Thân nhiệt khoảng 37°C, pH máu khoảng 7,35 - 7,45 và nồng độ glucose máu lúc đói khoảng 0,1%"
+        },
+        {
+          "id": "opt-b",
+          "label": "Thân nhiệt khoảng 41°C, pH máu khoảng 2,0 và nồng độ glucose máu 5%"
+        },
+        {
+          "id": "opt-c",
+          "label": "Thân nhiệt khoảng 25°C, pH máu khoảng 9,5 và không có đường trong máu"
+        },
+        {
+          "id": "opt-d",
+          "label": "Thân nhiệt dao động tự do từ 10°C đến 50°C tùy theo thời tiết bốn mùa"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Người bình thường có thân nhiệt 37°C, máu có tính kiềm rất nhẹ và đường huyết khoảng 0,1%."
+      },
+      {
+        "level": 2,
+        "text": "Khoảng pH máu sinh lí rất hẹp là 7,35 - 7,45."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Các hằng số sinh lí người",
+        "body": "Cơ thể khỏe mạnh luôn điều chỉnh giữ các chỉ số nội môi quanh những giá trị chuẩn xác."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Chỉ số chuẩn của cơ thể",
+        "body": "Thân nhiệt người duy trì ổn định ở 37°C; độ pH của máu động mạch giữ rất chặt chẽ từ 7,35 đến 7,45; lượng đường glucose trong máu duy trì ổn định quanh 0,1% (4,4 - 6,1 mmol/L)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thân nhiệt ~37°C, pH máu ~7,35 - 7,45 và glucose máu ~0,1%."
+      }
+    ],
+    "finalSolution": "Bất kì sự lệch chuẩn đáng kể nào của các chỉ số này đều là biểu hiện cảnh báo bệnh lí cần can thiệp y tế.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm pH của máu với pH của dịch vị dạ dày (dịch vị dạ dày pH 1,5 - 2,0; máu pH 7,35 - 7,45)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b07-q05",
+    "lessonId": "bio-g8-b07",
+    "sgkBaiSo": 36,
+    "skillIds": [
+      "bio-dieu-hoa-moi-truong-trong"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi một người vừa ăn xong một bữa ăn nhiều cơm và bánh ngọt, nồng độ glucose trong máu tăng cao. Cơ chế nội tiết nào lập tức được kích hoạt để hạ đường huyết?",
+    "knowledge": [
+      "kb-bio-g8-dieu-hoa-duong-huyet-tuy"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tế bào beta (β) của đảo tụy tiết hormone Insulin kích thích tế bào tăng nhận glucose và gan tổng hợp glycogen dự trữ"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tế bào alpha (α) của đảo tụy tiết hormone Glucagon để phân giải toàn bộ glycogen trong gan"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tuyến trên thận tiết Adrenaline làm tim đập chậm lại"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tuyến giáp tiết Thyroxine làm ngừng hoàn toàn quá trình trao đổi chất"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đảo tụy có tế bào beta phụ trách tiết hormone hạ đường huyết duy nhất của cơ thể."
+      },
+      {
+        "level": 2,
+        "text": "Hormone đó là Insulin, giúp chuyển glucose tự do thành glycogen dự trữ trong gan và cơ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tình huống đường huyết tăng sau ăn",
+        "body": "Sau bữa ăn giàu tinh bột, ruột non hấp thu lượng lớn glucose làm nồng độ glucose trong máu tăng vọt trên 0,12%."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế tác động của Insulin",
+        "body": "Đường huyết cao kích thích tế bào beta đảo tụy tiết Insulin vào máu. Insulin mở kênh màng giúp tế bào tiêu thụ glucose, đồng thời thúc đẩy tế bào gan và cơ liên kết glucose thành phân tử glycogen dự trữ, đưa đường huyết về mức ổn định 0,1%."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tế bào beta đảo tụy tiết Insulin kích thích gan tổng hợp glycogen dự trữ để hạ đường huyết."
+      }
+    ],
+    "finalSolution": "Insulin là hormone duy nhất trong cơ thể có tác dụng làm hạ đường huyết, ngăn chặn hội chứng tăng đường huyết cấp tính.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm lẫn chức năng giữa Insulin (hạ đường) và Glucagon (tăng đường)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b07-q06",
+    "lessonId": "bio-g8-b07",
+    "sgkBaiSo": 36,
+    "skillIds": [
+      "bio-dieu-hoa-moi-truong-trong"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi cơ thể bị đói hoặc sau khi lao động nặng tiêu hao nhiều năng lượng, nồng độ glucose trong máu hạ thấp. Hormone nào sẽ được tiết ra để nâng đường huyết trở lại mức cân bằng?",
+    "knowledge": [
+      "kb-bio-g8-dieu-hoa-duong-huyet-tuy"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tế bào alpha (α) đảo tụy tiết hormone Glucagon kích thích gan phân giải glycogen thành glucose đưa vào máu"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tế bào beta (β) đảo tụy tiết hormone Insulin để ngăn cản gan giải phóng đường"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tuyến yên tiết hormone sinh trưởng GH để đốt cháy mỡ thành nước"
+        },
+        {
+          "id": "opt-d",
+          "label": "Thận bài tiết toàn bộ lượng nước tiểu còn lại trong bóng đái"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tế bào alpha ở đảo tụy tiết hormone đối kháng lại với insulin."
+      },
+      {
+        "level": 2,
+        "text": "Hormone Glucagon kích thích tế bào gan 'mở kho' phân giải glycogen dự trữ thành glucose."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tình huống đường huyết giảm khi đói",
+        "body": "Khi xa bữa ăn, tế bào tiêu thụ glucose khiến đường huyết giảm xuống dưới 0,08% gây hoa mắt chóng mặt."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế tác động của Glucagon",
+        "body": "Đường huyết thấp kích thích tế bào alpha đảo tụy tiết hormone Glucagon. Glucagon truyền tín hiệu đến gan kích hoạt enzym phân giải phân tử glycogen dự trữ thành các đơn phân glucose giải phóng vào máu, nâng đường huyết lên 0,1%."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tế bào alpha đảo tụy tiết Glucagon phân giải glycogen thành glucose nâng đường huyết."
+      }
+    ],
+    "finalSolution": "Cặp hormone đối kháng Insulin và Glucagon của đảo tụy tạo thành hệ thống điều hòa ngược âm tính giữ đường huyết luôn ổn định quanh 0,1%.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng insulin làm tăng đường huyết khi đói."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b07-q07",
+    "lessonId": "bio-g8-b07",
+    "sgkBaiSo": 36,
+    "skillIds": [
+      "bio-dieu-hoa-moi-truong-trong"
+    ],
+    "difficulty": 2,
+    "prompt": "Gan đóng vai trò chủ chốt trong việc duy trì cân bằng nội môi thông qua những hoạt động sinh học nào?",
+    "knowledge": [
+      "kb-bio-g8-vai-tro-gan-than-noi-moi"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Dự trữ và chuyển hóa glucose (dưới dạng glycogen), tổng hợp các protein huyết tương và chuyển hóa khử độc các hóa chất độc hại"
+        },
+        {
+          "id": "opt-b",
+          "label": "Trực tiếp hít thở không khí và bơm máu đi khắp hai vòng tuần hoàn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tạo ra các xung điện thần kinh để điều khiển cử động của cơ bắp"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chỉ làm nhiệm vụ duy nhất là sản xuất dịch mật không tham gia điều hòa máu"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Gan được ví như 'nhà máy hóa chất' trung tâm lớn nhất của cơ thể."
+      },
+      {
+        "level": 2,
+        "text": "Gan vừa là kho dự trữ glycogen, vừa lọc khử độc rượu bia thuốc men, vừa sản xuất protein máu."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Chức năng nội môi của gan",
+        "body": "Máu từ ống tiêu hóa theo tĩnh mạch cửa gan phải qua gan kiểm duyệt và xử lí trước khi vào hệ tuần hoàn chung."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Các hoạt động điều hòa của gan",
+        "body": "Gan điều hòa nồng độ đường huyết qua kho dự trữ glycogen; tổng hợp các protein quan trọng như albumin, fibrinogen giúp duy trì áp suất keo của máu; đồng thời biến đổi các độc chất (ammoniac, cồn, thuốc) thành chất không độc hoặc ít độc để thận đào thải."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Gan dự trữ glycogen, tổng hợp protein huyết tương và khử độc."
+      }
+    ],
+    "finalSolution": "Gan là trạm kiểm soát chuyển hóa sinh hóa tối cao, bảo vệ các cơ quan khỏi ngộ độc và duy trì thành phần hóa học ổn định của máu.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng gan chỉ có chức năng tiêu hóa tiết mật mà không tham gia cân bằng nội môi."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b07-q08",
+    "lessonId": "bio-g8-b07",
+    "sgkBaiSo": 36,
+    "skillIds": [
+      "bio-dieu-hoa-moi-truong-trong"
+    ],
+    "difficulty": 3,
+    "prompt": "Khi cơ thể bị mất nhiều mồ hôi do tập thể thao nặng hoặc uống ít nước, áp suất thẩm thấu của máu tăng cao. Thận sẽ phản ứng như thế nào để lập lại cân bằng nội môi?",
+    "knowledge": [
+      "kb-bio-g8-vai-tro-gan-than-noi-moi"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tăng cường tái hấp thụ nước ở các ống thận đưa trở lại máu, làm nước tiểu giảm thể tích và trở nên đặc hơn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Thải ra một lượng lớn nước tiểu loãng gấp đôi bình thường để rửa trôi muối"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ngừng hoàn toàn hoạt động của tim và phổi để giữ nước"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tiết toàn bộ dịch mật qua đường nước tiểu"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mất nước làm máu bị cô đặc, nồng độ muối khoáng tăng khiến áp suất thẩm thấu máu tăng."
+      },
+      {
+        "level": 2,
+        "text": "Tuyến yên tiết hormone chống bài niệu ADH kích thích ống thận tái hấp thụ tối đa nước trả về máu."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tình huống cơ thể thiếu nước",
+        "body": "Đổ mồ hôi nhiều làm thể tích nước trong huyết tương giảm, áp suất thẩm thấu máu tăng cao."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phản ứng điều hòa của thận",
+        "body": "Vùng dưới đồi kích thích tuyến yên tiết hormone ADH (chống bài niệu). Dưới tác dụng của ADH, các ống thận mở tối đa kênh dẫn nước để tái hấp thụ triệt để nước từ nước tiểu đầu đưa trở lại dòng máu, giữ nước cho cơ thể và khiến nước tiểu bài tiết ra có màu vàng đậm và thể tích ít."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thận tăng cường tái hấp thụ nước ở ống thận, làm nước tiểu đậm đặc và ít đi."
+      }
+    ],
+    "finalSolution": "Cơ chế tái hấp thụ nước chủ động của thận là chìa khóa duy trì ổn định thể tích máu và áp suất thẩm thấu khi cơ thể bị mất nước.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng khi thiếu nước thận sẽ bài tiết nhiều nước tiểu hơn bình thường."
+      }
+    ]
+  }
+]

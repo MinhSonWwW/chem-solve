@@ -1,0 +1,83 @@
+[
+  {
+    "id": "kb-bio-g8-abo-blood-groups",
+    "title": "Hệ nhóm máu ABO ở người",
+    "description": "Karl Landsteiner phát hiện năm 1901 dựa trên sự hiện diện của kháng nguyên (Antigen) trên màng hồng cầu và kháng thể (Antibody) trong huyết tương.",
+    "bloodGroups": [
+      {
+        "group": "O",
+        "antigensOnRBC": "Không có kháng nguyên A và B",
+        "antibodiesInPlasma": "Có cả hai kháng thể α (anti-A) và β (anti-B)",
+        "canDonateTo": ["O", "A", "B", "AB"],
+        "canReceiveFrom": ["O"],
+        "note": "Nhóm máu chuyên cho hồng cầu vì không mang kháng nguyên A, B nên không bị kháng thể người nhận ngưng kết."
+      },
+      {
+        "group": "A",
+        "antigensOnRBC": "Có kháng nguyên A",
+        "antibodiesInPlasma": "Có kháng thể β (anti-B)",
+        "canDonateTo": ["A", "AB"],
+        "canReceiveFrom": ["A", "O"],
+        "note": "Kháng nguyên A sẽ bị ngưng kết nếu gặp kháng thể α trong huyết tương người nhận."
+      },
+      {
+        "group": "B",
+        "antigensOnRBC": "Có kháng nguyên B",
+        "antibodiesInPlasma": "Có kháng thể α (anti-A)",
+        "canDonateTo": ["B", "AB"],
+        "canReceiveFrom": ["B", "O"],
+        "note": "Kháng nguyên B sẽ bị ngưng kết nếu gặp kháng thể β trong huyết tương người nhận."
+      },
+      {
+        "group": "AB",
+        "antigensOnRBC": "Có cả hai kháng nguyên A và B",
+        "antibodiesInPlasma": "Không có kháng thể α và β",
+        "canDonateTo": ["AB"],
+        "canReceiveFrom": ["O", "A", "B", "AB"],
+        "note": "Nhóm máu chuyên nhận vì huyết tương không có kháng thể ngưng kết hồng cầu người cho."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g8-transfusion-rules",
+    "title": "Nguyên tắc truyền máu an toàn",
+    "description": "Quy tắc bắt buộc trong y học nhằm tránh tai biến tan máu cấp do ngưng kết hồng cầu.",
+    "rules": [
+      {
+        "name": "Nguyên tắc hòa hợp kháng nguyên - kháng thể",
+        "content": "Tuyệt đối không để kháng nguyên trên hồng cầu người cho gặp kháng thể tương ứng trong huyết tương của người nhận (Kháng nguyên A ngưng kết với kháng thể α; Kháng nguyên B ngưng kết với kháng thể β)."
+      },
+      {
+        "name": "Ưu tiên truyền cùng nhóm máu",
+        "content": "Tốt nhất và an toàn nhất là truyền máu cùng nhóm (A cho A, B cho B, O cho O, AB cho AB). Trường hợp khẩn cấp không có máu cùng nhóm thì mới truyền khác nhóm với lượng nhỏ (dưới 250 ml) và tốc độ rất chậm."
+      },
+      {
+        "name": "Kiểm tra an toàn vi sinh vật gây bệnh",
+        "content": "Máu người cho phải được xét nghiệm sàng lọc kỹ lưỡng, đảm bảo không nhiễm các tác nhân truyền nhiễm nguy hiểm: HIV, virus viêm gan B (HBV), viêm gan C (HCV), giang mai, sốt rét."
+      },
+      {
+        "name": "Phản ứng chéo tại giường bệnh",
+        "content": "Trước khi truyền, luôn trộn thử giọt máu người cho với giọt máu người nhận trên phiến kính để quan sát trực tiếp, khẳng định không xảy ra hiện tượng ngưng kết hồng cầu."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g8-circulatory-system",
+    "title": "Hệ thống hai vòng tuần hoàn máu ở người",
+    "description": "Tim người 4 ngăn (2 tâm nhĩ, 2 tâm thất) bơm máu đi khắp cơ thể qua hệ thống động mạch, mao mạch và tĩnh mạch khép kín.",
+    "circuits": [
+      {
+        "name": "Vòng tuần hoàn lớn (Vòng tuần hoàn cơ thể)",
+        "pathway": "Tâm thất trái → Động mạch chủ → Mao mạch các cơ quan (trao đổi chất & khí O2/CO2) → Tĩnh mạch chủ (trên và dưới) → Tâm nhĩ phải",
+        "bloodTypeChange": "Máu đỏ tươi giàu O2 chuyển thành máu đỏ thẫm nghèo O2 (giàu CO2)",
+        "function": "Cung cấp khí O2 và chất dinh dưỡng nuôi dưỡng toàn bộ tế bào và cơ quan của cơ thể."
+      },
+      {
+        "name": "Vòng tuần hoàn nhỏ (Vòng tuần hoàn phổi)",
+        "pathway": "Tâm thất phải → Động mạch phổi → Mao mạch phổi (thải khí CO2, nhận khí O2) → Tĩnh mạch phổi → Tâm nhĩ trái",
+        "bloodTypeChange": "Máu đỏ thẫm nghèo O2 chuyển thành máu đỏ tươi giàu O2",
+        "function": "Trao đổi khí tại phế nang phổi, loại bỏ CO2 và nạp đầy O2 cho máu chuẩn bị cho vòng tuần hoàn lớn."
+      }
+    ]
+  }
+]

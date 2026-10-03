@@ -1,0 +1,72 @@
+{
+  "lessonId": "bio-g8-b11",
+  "nodeId": "bio-g8-b11-theory",
+  "title": "Lý thuyết: Sinh sản ở người",
+  "subtitle": "Bài 40 SGK KHTN 8 Kết nối tri thức: Cơ quan sinh sản, thụ tinh, thụ thai, các biện pháp tránh thai an toàn và phòng tránh bệnh STDs",
+  "sgkBaiSo": 40,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Cơ quan sinh sản",
+      "badgeColor": "emerald",
+      "title": "Cấu tạo cơ quan sinh sản nam và nữ",
+      "content": "Cơ quan sinh dục đảm nhiệm chức năng duy trì nòi giống:",
+      "bulletPoints": [
+        "Cơ quan sinh dục nam: Tinh hoàn (nằm trong bìu, sản xuất tinh trùng và tiết testosterone), Mào tinh, Ống dẫn tinh, Túi tinh, Tuyến tiền liệt, Tuyến hành và Dương vật. Tinh trùng có đầu chứa ADN, cổ và đuôi dài chuyển động bơi.",
+        "Cơ quan sinh dục nữ: Buồng trứng (sản xuất tế bào trứng và tiết estrogen, progesterone), Ống dẫn trứng (vòi Falop), Tử cung (nơi phôi thai làm tổ và nuôi dưỡng thai nhi) và Âm đạo."
+      ],
+      "callout": "Tinh hoàn nằm ngoài ổ bụng trong bìu giúp duy trì nhiệt độ thấp hơn thân nhiệt khoảng 2 - 3°C, là điều kiện tối ưu để sản sinh tinh trùng sống sót!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Thụ tinh & Kinh nguyệt",
+      "badgeColor": "amber",
+      "title": "Thụ tinh, Thụ thai & Chu kì kinh nguyệt",
+      "content": "Quá trình hình thành sự sống mới:",
+      "bulletPoints": [
+        "Thụ tinh: Sự kết hợp giữa 1 tinh trùng và 1 trứng tạo thành hợp tử; diễn ra ở 1/3 phía ngoài của ống dẫn trứng.",
+        "Thụ thai: Hợp tử phân chia thành phôi thai, di chuyển về tử cung và bám sâu làm tổ an toàn trong lớp niêm mạc tử cung xốp dày.",
+        "Hiện tượng kinh nguyệt: Chu kì khoảng 28 - 30 ngày; nếu trứng không được thụ tinh, thể vàng teo đi làm hormone giảm đột ngột, lớp niêm mạc tử cung dày bị bong tróc xuất huyết ra ngoài qua âm đạo."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Tránh thai & STDs",
+      "badgeColor": "cyan",
+      "title": "Tránh thai an toàn & Phòng bệnh STDs",
+      "content": "Bảo vệ sức khỏe sinh sản vị thành niên:",
+      "bulletPoints": [
+        "Nguyên tắc tránh thai: Ngăn không cho trứng chín và rụng; ngăn không cho tinh trùng gặp trứng; hoặc ngăn không cho hợp tử/phôi làm tổ ở tử cung.",
+        "Các biện pháp: Bao cao su (biện pháp duy nhất vừa tránh thai vừa phòng STDs), thuốc tránh thai hàng ngày, đặt vòng tránh thai (dụng cụ tử cung), cấy que tránh thai.",
+        "Bệnh lây qua đường tình dục (STDs): HIV/AIDS, giang mai, lậu, sùi mào gà... Phòng ngừa bằng quan hệ tình dục an toàn có bao cao su, sống chung thủy và khám sức khỏe sinh sản định kì."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Trong các biện pháp tránh thai dưới đây, biện pháp nào là duy nhất vừa có tác dụng ngăn ngừa mang thai ngoài ý muốn, vừa phòng chống hiệu quả các bệnh lây truyền qua đường tình dục (STDs)?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Sử dụng bao cao su đúng cách",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Uống thuốc tránh thai hàng ngày",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Đặt vòng tránh thai trong tử cung",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Tính ngày rụng trứng tự nhiên",
+        "correct": false
+      }
+    ],
+    "explanation": "Bao cao su tạo thành một màng chắn cơ học tuyệt đối ngăn cản dịch sinh dục tiếp xúc, do đó đây là biện pháp duy nhất có hiệu quả kép: vừa ngừa thụ tinh, vừa phòng chống các mầm bệnh truyền nhiễm nguy hiểm (HIV, giang mai, lậu)."
+  }
+}

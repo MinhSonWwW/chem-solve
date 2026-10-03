@@ -80,22 +80,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Từ 26 °C đến 28 °C (kết hợp quạt gió nhẹ)"
-        },
-        {
-          "id": "opt-b",
           "label": "Mức 20 °C và mở toang cửa sổ"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Càng thấp càng tốt, mức 12 °C"
+        },
+        {
+          "id": "opt-c",
+          "label": "Từ 26 °C đến 28 °C (kết hợp quạt gió nhẹ)"
         },
         {
           "id": "opt-d",
           "label": "Từ 16 °C đến 18 °C"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -149,11 +149,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Đánh giá mức độ hiệu suất và khả năng tiết kiệm điện năng của thiết bị (càng nhiều sao càng tiết kiệm điện)"
+          "label": "Số năm thiết bị có thể hoạt động mà không cần cắm điện"
         },
         {
           "id": "opt-b",
-          "label": "Số năm thiết bị có thể hoạt động mà không cần cắm điện"
+          "label": "Đánh giá mức độ hiệu suất và khả năng tiết kiệm điện năng của thiết bị (càng nhiều sao càng tiết kiệm điện)"
         },
         {
           "id": "opt-c",
@@ -164,7 +164,7 @@
           "label": "Chỉ số lượng người tối đa được phép sử dụng thiết bị"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {

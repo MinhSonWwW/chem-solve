@@ -1,0 +1,554 @@
+[
+  {
+    "id": "bio-g8-b18-q01",
+    "lessonId": "bio-g8-b18",
+    "sgkBaiSo": 47,
+    "skillIds": [
+      "bio-bao-ve-moi-truong"
+    ],
+    "difficulty": 1,
+    "prompt": "Khí thải nào sau đây phát sinh chủ yếu từ việc đốt cháy nhiên liệu hóa thạch (than đá, dầu mỏ, xăng) và là nguyên nhân chính gây ra hiệu ứng nhà kính làm nóng lên toàn cầu?",
+    "knowledge": [
+      "kb-bio-g8-bien-doi-khi-hau-hieu-ung-nha-kinh"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Khí carbon dioxide (CO2)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Khí oxy (O2)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khí nitơ phân tử (N2)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khí argon (Ar)"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khí này được giải phóng trong phản ứng cháy của các hợp chất hữu cơ và than cốc."
+      },
+      {
+        "level": 2,
+        "text": "Khí carbon dioxide (CO2) hấp thụ bức xạ hồng ngoại từ mặt đất phát ra, giữ nhiệt lại trong tầng đối lưu."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nguồn gốc khí nhà kính chính",
+        "body": "Hoạt động công nghiệp, giao thông vận tải và nhiệt điện tiêu thụ than, dầu, khí đốt giải phóng hàng tỉ tấn CO2 mỗi năm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế hiệu ứng nhà kính",
+        "body": "CO2 cùng với khí methane (CH4) là các khí nhà kính chính giữ lại năng lượng nhiệt bức xạ từ mặt đất, làm tăng nhiệt độ trung bình của khí quyển Trái Đất."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khí CO2 là nguyên nhân chủ yếu gây hiệu ứng nhà kính làm Trái Đất nóng lên."
+      }
+    ],
+    "finalSolution": "Khí carbon dioxide (CO2) thải ra từ đốt nhiên liệu hóa thạch là khí nhà kính chính gây nóng lên toàn cầu.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm khí oxy hoặc nitơ (các thành phần chính của không khí sạch) là nguyên nhân gây hiệu ứng nhà kính."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b18-q02",
+    "lessonId": "bio-g8-b18",
+    "sgkBaiSo": 47,
+    "skillIds": [
+      "bio-bao-ve-moi-truong"
+    ],
+    "difficulty": 1,
+    "prompt": "Hiện tượng phú dưỡng (tảo nở hoa) trong môi trường ao hồ tự nhiên thường bắt nguồn từ nguyên nhân trực tiếp nào?",
+    "knowledge": [
+      "kb-bio-g8-cac-dang-o-nhiem-moi-truong"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Nguồn nước bị dư thừa quá mức các chất dinh dưỡng khoáng (đặc biệt là nitơ và phospho) từ phân bón và nước thải"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nhiệt độ nước ao hồ bị đóng băng dưới không độ C trong nhiều tuần liền"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hàm lượng khí oxy hòa tan trong nước ao hồ đạt mức bão hòa cực đại"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tất cả các loài cá trong hồ ngừng ăn thức ăn hữu cơ"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "'Phú dưỡng' có nghĩa là thừa thãi chất dinh dưỡng khoáng (N và P) kích thích tảo sinh sôi quá mức."
+      },
+      {
+        "level": 2,
+        "text": "Nước thải sinh hoạt chứa bột giặt (gốc phosphat) và nước rửa trôi phân đạm hóa học từ đồng ruộng đổ dồn vào ao hồ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất hiện tượng phú dưỡng",
+        "body": "Hiện tượng phú dưỡng (eutrophication) xảy ra khi thủy vực tiếp nhận quá nhiều hợp chất chứa nitơ (N) và phospho (P)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hậu quả tảo nở hoa",
+        "body": "Nguồn dinh dưỡng khoáng dư thừa kích thích tảo và vi khuẩn lam phát triển bùng phát tạo thành váng xanh phủ kín mặt nước; khi tảo chết bị vi khuẩn phân hủy sẽ hút cạn oxy hòa tan khiến cá và các loài thủy sinh chết ngạt hàng loạt."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nguồn nước dư thừa nitơ và phospho từ phân bón, nước thải là nguyên nhân gây ra hiện tượng phú dưỡng."
+      }
+    ],
+    "finalSolution": "Phú dưỡng là do nước ao hồ bị ô nhiễm dư thừa chất dinh dưỡng nitơ và phospho, làm tảo nở hoa và cạn kiệt oxy.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Nghĩ rằng phú dưỡng là hiện tượng có lợi giúp nguồn nước giàu dinh dưỡng cho cá phát triển tốt hơn."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b18-q03",
+    "lessonId": "bio-g8-b18",
+    "sgkBaiSo": 47,
+    "skillIds": [
+      "bio-bao-ve-moi-truong"
+    ],
+    "difficulty": 2,
+    "prompt": "Tại sao các loại pin cũ đã qua sử dụng và rác thải điện tử không được vứt chung vào thùng rác thông thường hay chôn lấp bừa bãi ra đất?",
+    "knowledge": [
+      "kb-bio-g8-cac-dang-o-nhiem-moi-truong"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vì chúng giải phóng các kim loại nặng cực độc (chì, thủy ngân, cadmium) ngấm vào đất và mạch nước ngầm gây ung thư"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vì vỏ pin sẽ tự động biến thành phân bón hóa học làm chua đất"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì pin cũ sẽ phát ra tia phóng xạ hạt nhân ngay lập tức thiêu rụi cây cỏ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì chúng làm tăng độ ẩm của đất khiến giun đất sinh sôi quá nhiều"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Lõi pin chứa các nguyên tố kim loại nặng độc hại như Pb (chì), Hg (thủy ngân), Cd (cadmium)."
+      },
+      {
+        "level": 2,
+        "text": "Khi vỏ pin bị gỉ rỉ sét trong đất, các kim loại này hòa tan ngấm vào mạch nước ngầm gây ngộ độc mãn tính cho người sử dụng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Độc tính của pin phế thải",
+        "body": "Pin là chất thải nguy hại chứa nồng độ cao các kim loại nặng độc hại như chì, thủy ngân, kẽm, cadmium."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Nguy cơ ô nhiễm chuỗi thức ăn",
+        "body": "Khi vứt ra môi trường đất, kim loại nặng rò rỉ ngấm vào đất, rễ cây trồng hút lấy và tích lũy trong nông sản, hoặc ngấm vào nguồn nước ngầm ăn uống, gây tổn thương não, suy thận và ung thư cho người sử dụng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Pin cũ giải phóng kim loại nặng (chì, thủy ngân, cadmium) làm ô nhiễm đất và nước ngầm cực kì nguy hiểm."
+      }
+    ],
+    "finalSolution": "Pin phế thải chứa kim loại nặng cực độc (chì, thủy ngân, cadmium) có thể hủy hoại nguồn nước ngầm và đất đai lâu dài nếu không được thu gom xử lý riêng.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nghĩ rằng pin cũ nhỏ bé có thể chôn lấp chung với rác hữu cơ ngoài vườn mà không gây hại gì."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b18-q04",
+    "lessonId": "bio-g8-b18",
+    "sgkBaiSo": 47,
+    "skillIds": [
+      "bio-bao-ve-moi-truong"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong mô hình kinh tế tuần hoàn 3R (Reduce - Reuse - Recycle), chữ R thứ ba 'Recycle' có ý nghĩa chính xác là gì?",
+    "knowledge": [
+      "kb-bio-g8-bien-phap-bao-ve-moi-truong"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tái chế rác thải thành nguyên liệu đầu vào để sản xuất ra các sản phẩm mới có ích"
+        },
+        {
+          "id": "opt-b",
+          "label": "Giảm thiểu việc tiêu dùng các loại bao bì và hàng hóa không cần thiết"
+        },
+        {
+          "id": "opt-c",
+          "label": "Sử dụng lại chai lọ, túi xách nhiều lần mà không qua quá trình chế biến nhiệt"
+        },
+        {
+          "id": "opt-d",
+          "label": "Đốt cháy toàn bộ rác thải nhựa ở nhiệt độ cao ngoài trời để giảm thể tích"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Reduce: Giảm thiểu; Reuse: Tái sử dụng; Recycle: Tái chế."
+      },
+      {
+        "level": 2,
+        "text": "Tái chế là quy trình thu gom, nấu chảy hoặc xử lý phế liệu (giấy, nhôm, nhựa) để đúc thành sản phẩm mới."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Ý nghĩa mô hình 3R",
+        "body": "Mô hình 3R gồm: Giảm thiểu (Reduce), Tái sử dụng (Reuse) và Tái chế (Recycle)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Định nghĩa Recycle",
+        "body": "Recycle (Tái chế) là quá trình thu gom, phân loại và xử lý công nghiệp các vật liệu phế thải (nhựa, thủy tinh, giấy loại, kim loại) để biến chúng thành nguyên liệu mới sản xuất các sản phẩm hữu ích khác, giúp tiết kiệm tài nguyên thiên nhiên."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Recycle có nghĩa là tái chế rác thải thành nguyên liệu sản xuất sản phẩm mới."
+      }
+    ],
+    "finalSolution": "Chữ R thứ ba 'Recycle' trong mô hình 3R là tái chế rác thải thành nguyên liệu đầu vào sản xuất sản phẩm mới.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Nhầm lẫn giữa Reuse (tái sử dụng nguyên trạng đồ cũ) với Recycle (tái chế qua chế biến xử lý vật liệu)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b18-q05",
+    "lessonId": "bio-g8-b18",
+    "sgkBaiSo": 47,
+    "skillIds": [
+      "bio-bao-ve-moi-truong"
+    ],
+    "difficulty": 2,
+    "prompt": "Biện pháp nào sau đây là giải pháp chiến lược và lâu dài nhất để cắt giảm lượng phát thải khí nhà kính bảo vệ bầu khí quyển?",
+    "knowledge": [
+      "kb-bio-g8-bien-phap-bao-ve-moi-truong"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chuyển đổi mạnh mẽ sang sử dụng các nguồn năng lượng tái tạo (năng lượng mặt trời, năng lượng gió) thay thế nhiên liệu hóa thạch"
+        },
+        {
+          "id": "opt-b",
+          "label": "Xây dựng thêm nhiều nhà máy nhiệt điện chạy bằng than đá nhập khẩu"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tăng cường khai thác tối đa các mỏ dầu mỏ và khí đốt dưới đáy biển"
+        },
+        {
+          "id": "opt-d",
+          "label": "Sử dụng bếp than tổ ong để sưởi ấm trong phòng kín vào mùa đông"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhiên liệu hóa thạch là nguồn phát thải CO2 lớn nhất. Cần thay thế bằng các nguồn năng lượng sạch không phát thải."
+      },
+      {
+        "level": 2,
+        "text": "Năng lượng gió, ánh sáng mặt trời, thủy điện sạch và năng lượng sóng biển là các nguồn năng lượng tái tạo thân thiện môi trường."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nguyên nhân phát thải khí nhà kính",
+        "body": "Đốt nhiên liệu hóa thạch (than đá, dầu mỏ) đóng góp tới hơn 70% tổng lượng khí thải nhà kính toàn cầu."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Giải pháp chuyển đổi xanh",
+        "body": "Phát triển và ứng dụng năng lượng tái tạo (điện gió, quang điện mặt trời) không tiêu hao nhiên liệu cacbon và không phát thải khí nhà kính, là chìa khóa then chốt cho mục tiêu phát thải ròng bằng 0 (Net Zero)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Phát triển năng lượng tái tạo thay thế nhiên liệu hóa thạch là giải pháp chiến lược cắt giảm khí nhà kính."
+      }
+    ],
+    "finalSolution": "Chuyển dịch sang năng lượng tái tạo (gió, mặt trời) là biện pháp then chốt để cắt giảm triệt để phát thải khí nhà kính.",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng xây thêm nhiều nhà máy nhiệt điện than sẽ giúp bảo vệ môi trường."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b18-q06",
+    "lessonId": "bio-g8-b18",
+    "sgkBaiSo": 47,
+    "skillIds": [
+      "bio-bao-ve-moi-truong"
+    ],
+    "difficulty": 3,
+    "prompt": "Khái niệm 'Phát triển bền vững' (Sustainable Development) được hiểu một cách chuẩn xác theo nghĩa nào sau đây?",
+    "knowledge": [
+      "kb-bio-g8-bien-phap-bao-ve-moi-truong"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Sự phát triển đáp ứng nhu cầu của thế hệ hiện tại mà không làm tổn hại đến khả năng đáp ứng nhu cầu của các thế hệ mai sau"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tập trung khai thác cạn kiệt toàn bộ tài nguyên thiên nhiên ngay lập tức để làm giàu cấp tốc cho đất nước"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ngừng toàn bộ mọi hoạt động sản xuất công nghiệp và nông nghiệp để thiên nhiên tự phát triển hoang dã"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chỉ phát triển kinh tế vùng đô thị và bỏ mặc hoàn toàn môi trường sinh thái nông thôn"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Phát triển bền vững là sự dung hòa hài hòa giữa 3 trụ cột: Kinh tế, Xã hội và Môi trường sinh thái."
+      },
+      {
+        "level": 2,
+        "text": "Sử dụng tài nguyên thông minh để con cháu thế hệ tương lai vẫn còn tài nguyên và môi trường trong lành để sinh sống."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Định nghĩa phát triển bền vững",
+        "body": "Được Ủy ban Môi trường và Phát triển Thế giới (WCED) đưa ra trong báo cáo 'Tương lai chung của chúng ta'."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Bản chất mục tiêu",
+        "body": "Phát triển bền vững đảm bảo thỏa mãn nhu cầu đời sống hiện tại về kinh tế xã hội, đồng thời bảo vệ tài nguyên và giữ gìn hệ sinh thái để các thế hệ mai sau có đủ điều kiện phát triển tốt đẹp."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Phát triển bền vững đáp ứng nhu cầu hiện tại mà không làm hại đến khả năng của thế hệ tương lai."
+      }
+    ],
+    "finalSolution": "Phát triển bền vững là sự phát triển dung hòa kinh tế - môi trường, đáp ứng nhu cầu hôm nay mà không tổn hại đến tương lai con cháu.",
+    "commonMistakes": [
+      {
+        "id": "cm-06",
+        "message": "Nghĩ rằng phát triển bền vững đồng nghĩa với việc cấm hoàn toàn hoạt động kinh tế phát triển của con người."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b18-q07",
+    "lessonId": "bio-g8-b18",
+    "sgkBaiSo": 47,
+    "skillIds": [
+      "bio-bao-ve-moi-truong"
+    ],
+    "difficulty": 3,
+    "prompt": "Tác hại sinh thái đặc biệt nguy hiểm của rác thải nhựa đại dương khi bị phong hóa vỡ vụn thành các hạt vi nhựa (microplastics) là gì?",
+    "knowledge": [
+      "kb-bio-g8-cac-dang-o-nhiem-moi-truong"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Xâm nhập vào cơ thể cá, tôm, chim biển và tích tụ tăng dần qua chuỗi thức ăn rồi quay lại cơ thể con người gây độc"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tự động phân giải thành khí oxy làm sạch nước đại dương"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tạo ra một lớp màng bảo vệ giúp các rạn san hô không bị sóng biển đánh vỡ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Làm tăng độ ngọt của nước biển giúp các loài cá nước ngọt có thể sống được ở biển"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hạt vi nhựa có kích thước siêu nhỏ (dưới 5 mm), mắt thường khó nhận biết."
+      },
+      {
+        "level": 2,
+        "text": "Các sinh vật phù du và cá con ăn nhầm vi nhựa; qua chuỗi thức ăn con người ăn cá hải sản sẽ nhiễm độc vi nhựa và hóa chất độc bám trên đó."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Sự hình thành hạt vi nhựa",
+        "body": "Đồ nhựa vứt ra biển dưới tác động của sóng và tia cực tím mặt trời bị vỡ vụn dần thành hàng tỉ hạt vi nhựa có kích thước dưới 5 mm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hiện tượng khuếch đại sinh học",
+        "body": "Vi sinh vật, cá, thân mềm nuốt phải vi nhựa; do vi nhựa không tiêu hóa được nên tích lũy trong mô thịt sinh vật và tăng dần nồng độ qua các bậc dinh dưỡng của chuỗi thức ăn, cuối cùng đi vào cơ thể con người gây rối loạn nội tiết, viêm nhiễm và nguy cơ ung thư."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hạt vi nhựa tích tụ qua chuỗi thức ăn thủy sản gây độc cho sinh vật biển và sức khỏe con người."
+      }
+    ],
+    "finalSolution": "Vi nhựa đại dương đi vào cơ thể sinh vật biển, tích tụ tăng dần qua chuỗi thức ăn và gây độc hại nghiêm trọng cho con người khi ăn hải sản.",
+    "commonMistakes": [
+      {
+        "id": "cm-07",
+        "message": "Nghĩ rằng rác thải nhựa khi vỡ vụn li ti là đã tự tiêu biến và không còn độc hại cho sự sống nữa."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b18-q08",
+    "lessonId": "bio-g8-b18",
+    "sgkBaiSo": 47,
+    "skillIds": [
+      "bio-bao-ve-moi-truong"
+    ],
+    "difficulty": 3,
+    "prompt": "Hành động xanh nào sau đây là thói quen thiết thực nhất mà mỗi học sinh có thể thực hiện hàng ngày để giảm thiểu rác thải nhựa dùng một lần?",
+    "knowledge": [
+      "kb-bio-g8-bien-phap-bao-ve-moi-truong"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Mang theo bình đựng nước cá nhân, dùng hộp cơm và túi vải có thể tái sử dụng nhiều lần"
+        },
+        {
+          "id": "opt-b",
+          "label": "Mỗi ngày sử dụng nhiều cốc trà sữa và ống hút nhựa dùng 1 lần rồi vứt ra gốc cây"
+        },
+        {
+          "id": "opt-c",
+          "label": "Yêu cầu người bán hàng gói mỗi món đồ ăn vào 3 lớp túi nilon riêng biệt"
+        },
+        {
+          "id": "opt-d",
+          "label": "Đốt các bao bì túi bóng nilon ở góc sân trường vào giờ ra chơi"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nguyên tắc 'Reduce' và 'Reuse' trong 3R: từ chối đồ nhựa dùng một lần và ưu tiên các đồ vật bền dùng được nhiều lần."
+      },
+      {
+        "level": 2,
+        "text": "Bình nước cá nhân, hộp cơm thủy tinh/inox và túi vải giúp cắt giảm hàng trăm chiếc cốc và túi nilon mỗi năm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu giảm thiểu đồ nhựa dùng 1 lần",
+        "body": "Đồ nhựa một lần (cốc nhựa, ống hút, túi nilon) là nguồn phát thải rác khó phân hủy khổng lồ hàng ngày."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Lợi ích của thói quen sống xanh",
+        "body": "Sử dụng bình nước cá nhân, túi vải mang đi chợ và hộp cơm tự mang giúp loại bỏ triệt để rác thải nhựa phát sinh ngay tại nguồn, bảo vệ sức khỏe và góp phần gìn giữ môi trường học đường sạch đẹp."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Dùng bình nước cá nhân, hộp đựng cơm và túi vải tái sử dụng là hành động xanh thiết thực nhất của học sinh."
+      }
+    ],
+    "finalSolution": "Thói quen mang bình nước cá nhân, túi vải và hộp dùng nhiều lần giúp học sinh giảm thiểu rác thải nhựa hiệu quả ngay từ đời sống hàng ngày.",
+    "commonMistakes": [
+      {
+        "id": "cm-08",
+        "message": "Nghĩ rằng đốt rác túi nilon tại chỗ là cách tiêu hủy rác an toàn (đốt nilon sinh ra khí dioxin và furan cực độc gây ung thư)."
+      }
+    ]
+  }
+]

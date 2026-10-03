@@ -1,0 +1,86 @@
+{
+  "lessonId": "bio-g6-b05",
+  "nodeId": "bio-g6-b05-theory",
+  "title": "Lý thuyết: Sự lớn lên và sinh sản của tế bào",
+  "subtitle": "Bài 20 SGK KHTN 6 Kết nối tri thức: Cơ chế phân chia tế bào, công thức 2^n và ý nghĩa tăng trưởng sinh học",
+  "sgkBaiSo": 20,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Lớn lên",
+      "badgeColor": "emerald",
+      "title": "Sự lớn lên của tế bào",
+      "content": "Tế bào non mới sinh có kích thước nhỏ. Nhờ quá trình trao đổi chất (hấp thu dinh dưỡng và nước từ môi trường ngoài), tế bào tích lũy khối lượng và lớn dần lên.",
+      "bulletPoints": [
+        "Tế bào non: Kích thước nhỏ, nhân nằm ở vị trí trung tâm.",
+        "Tế bào trưởng thành: Đạt kích thước tối đa đặc trưng cho từng loại mô và sẵn sàng bước vào quá trình phân chia.",
+        "Sự lớn lên là tiền đề bắt buộc trước khi tế bào có thể sinh sản."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Cơ chế sinh sản",
+      "badgeColor": "amber",
+      "title": "Quá trình phân chia tạo tế bào con",
+      "content": "Khi đạt kích thước nhất định, tế bào trưởng thành tiến hành phân chia (sinh sản) theo trình tự 3 bước nghiêm ngặt:",
+      "bulletPoints": [
+        "Bước 1 (Phân chia nhân): Nhân tế bào phân chia trước thành 2 nhân mới ở hai cực.",
+        "Bước 2 (Phân chia chất tế bào): Chất tế bào bắt đầu phân tách.",
+        "Bước 3 (Hình thành vách ngăn): Ở tế bào thực vật hình thành vách ngăn từ giữa lan ra ngoài; ở tế bào động vật màng sinh chất thắt lại ở giữa chia đôi tế bào.",
+        "Kết quả: Từ 1 tế bào mẹ ban đầu phân chia tạo thành 2 tế bào con giống nhau."
+      ],
+      "callout": "Quy tắc vàng phân chia: Nhân phân chia trước → Chất tế bào phân chia sau → Tạo 2 tế bào con!"
+    },
+    {
+      "id": "card-3",
+      "badge": "Công thức tính",
+      "badgeColor": "cyan",
+      "title": "Công thức tính số tế bào con sau n lần phân chia",
+      "content": "Vì mỗi lần phân chia số lượng tế bào tăng gấp đôi, ta có công thức lũy thừa bậc n:",
+      "bulletPoints": [
+        "Từ 1 tế bào ban đầu sau n lần phân chia liên tiếp: N = 2^n (tế bào con).",
+        "Ví dụ: 1 lần phân chia → 2^1 = 2 tế bào; 2 lần → 2^2 = 4 tế bào; 3 lần → 2^3 = 8 tế bào; 4 lần → 2^4 = 16 tế bào.",
+        "Tổng quát: Nếu có a tế bào mẹ ban đầu cùng thực hiện n lần phân chia: N = a × 2^n."
+      ],
+      "formulaExample": "N = a × 2^n"
+    },
+    {
+      "id": "card-4",
+      "badge": "Ý nghĩa",
+      "badgeColor": "purple",
+      "title": "Ý nghĩa sống còn của lớn lên và phân chia tế bào",
+      "content": "Sự lớn lên và phân chia của tế bào đảm bảo 2 chức năng trọng yếu của cơ thể đa bào:",
+      "bulletPoints": [
+        "Tăng trưởng cơ thể: Giúp cơ thể sinh vật lớn lên về kích thước và khối lượng (từ hạt mầm thành cây cổ thụ, từ em bé sơ sinh nặng 3 kg thành người trưởng thành).",
+        "Tái tạo và thay thế: Làm lành các vết thương ngoài da; thay thế các tế bào già, chết hoặc bị tổn thương (tế bào da bong tróc hàng ngày, tế bào hồng cầu chu kỳ 120 ngày)."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Từ 1 tế bào ban đầu, sau 4 lần phân chia liên tiếp sẽ tạo ra tổng cộng bao nhiêu tế bào con?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "16 tế bào (lấy 2^4)",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "8 tế bào (lấy 4 × 2)",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "4 tế bào",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "32 tế bào",
+        "correct": false
+      }
+    ],
+    "explanation": "Áp dụng công thức N = 2^n với n = 4: Số tế bào con tạo thành là 2^4 = 2 × 2 × 2 × 2 = 16 tế bào."
+  }
+}

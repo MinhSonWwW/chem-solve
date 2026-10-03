@@ -1,0 +1,60 @@
+{
+  "lessonId": "bio-g9-b03",
+  "nodeId": "bio-g9-b03-theory",
+  "title": "Lý thuyết: Nucleic acid và gene",
+  "subtitle": "Bài 38 SGK KHTN 9 Kết nối tri thức: Cấu trúc hóa học và không gian của DNA, nguyên tắc bổ sung, các loại RNA và khái niệm gene",
+  "sgkBaiSo": 38,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Cấu trúc DNA",
+      "badgeColor": "emerald",
+      "title": "Cấu trúc hóa học & Mô hình xoắn kép của DNA",
+      "content": "DNA (Deoxyribonucleic acid) là đại phân tử hữu cơ cấu tạo theo nguyên tắc đa phân từ 4 loại đơn phân nucleotide: A (Adenine), T (Thymine), G (Guanine), C (Cytosine).",
+      "bulletPoints": [
+        "Mỗi nucleotide gồm 3 phần: Đường Deoxyribose (C5H10O4), Gốc phosphate (H3PO4) và một Bazo nito (A, T, G hoặc C).",
+        "Mô hình Watson - Crick (1953): DNA gồm 2 chuỗi polynucleotide xoắn kép đều quanh một trục tưởng tượng theo chiều từ trái sang phải.",
+        "Thông số kích thước chuẩn: Đường kính vòng xoắn là 20 Å (2 nm); Chiều cao 1 chu kì xoắn là 34 Å (3,4 nm) gồm 10 cặp nucleotide; Khoảng cách giữa 2 cặp nucleotide liền kề là 3,4 Å (0,34 nm).",
+        "Tính đa dạng và đặc thù: DNA của các loài khác biệt nhau bởi số lượng, thành phần và trật tự sắp xếp các nucleotide dọc theo chiều dài phân tử."
+      ],
+      "callout": "Chính trật tự sắp xếp không giới hạn của 4 loại nucleotide tạo nên tính đa dạng vô tận của sinh giới!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Nguyên tắc bổ sung",
+      "badgeColor": "amber",
+      "title": "Nguyên tắc bổ sung (NTBS) & Hệ quả",
+      "content": "Các nucleotide trên 2 mạch đơn của DNA liên kết với nhau theo từng đôi một qua các liên kết hydrogen yếu:",
+      "bulletPoints": [
+        "Quy tắc liên kết: Adenine (A) liên kết với Thymine (T) bằng 2 liên kết hydrogen (A = T); Guanine (G) liên kết với Cytosine (C) bằng 3 liên kết hydrogen (G ≡ C).",
+        "Hệ quả toán học của NTBS: Số lượng A luôn bằng T (A = T); Số lượng G luôn bằng C (G = C).",
+        "Tỉ lệ tổng: A + G = T + C = 50% tổng số nucleotide của phân tử (A + G) / (T + C) = 1.",
+        "Nếu biết trình tự nucleotide trên 1 mạch đơn, ta có thể suy ra chính xác 100% trình tự nucleotide trên mạch đơn bổ sung còn lại."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "RNA & Khái niệm Gene",
+      "badgeColor": "cyan",
+      "title": "Các loại RNA & Khái niệm Gene",
+      "content": "RNA (Ribonucleic acid) có cấu trúc mạch đơn, phân tử đường là ribose (C5H10O5), chứa nucleotide Uracil (U) thay cho Thymine (T).",
+      "bulletPoints": [
+        "1. mRNA (RNA thông tin): Mạch đơn thẳng, sao chép thông tin di truyền từ gene trong nhân ra bào quan ribosome để làm khuôn tổng hợp protein.",
+        "2. tRNA (RNA vận chuyển): Có cấu trúc cuộn gập tạo các thùy tròn; một đầu gắn amino acid đặc hiệu, đầu kia mang bộ ba đối mã (anticodon) khớp với codon trên mRNA tại ribosome.",
+        "3. rRNA (RNA ribosome): Kết hợp với protein cấu tạo nên bào quan ribosome (nơi diễn ra tổng hợp chuỗi polypeptide).",
+        "4. Khái niệm Gene: Một đoạn của phân tử DNA mang thông tin mã hóa cho một chuỗi polypeptide hoặc một phân tử RNA."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Một đoạn phân tử DNA có số lượng nucleotide loại Adenine là A = 600 và Guanine là G = 900. Tổng số liên kết hydrogen (H) của đoạn DNA này là bao nhiêu?",
+    "options": [
+      { "id": "opt-1", "text": "3900 liên kết", "correct": true },
+      { "id": "opt-2", "text": "3000 liên kết", "correct": false },
+      { "id": "opt-3", "text": "1500 liên kết", "correct": false },
+      { "id": "opt-4", "text": "4500 liên kết", "correct": false }
+    ],
+    "explanation": "Theo nguyên tắc bổ sung, A liên kết với T bằng 2 liên kết hydrogen và G liên kết với C bằng 3 liên kết hydrogen. Do đó tổng số liên kết hydrogen là: H = 2A + 3G = 2×600 + 3×900 = 1200 + 2700 = 3900."
+  }
+}

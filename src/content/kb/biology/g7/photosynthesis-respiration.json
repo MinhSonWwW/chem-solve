@@ -1,0 +1,38 @@
+[
+  {
+    "id": "kb-bio-g7-quang-hop-khai-niem",
+    "title": "Quang hợp ở thực vật",
+    "description": "Quá trình lá cây sử dụng năng lượng ánh sáng mặt trời đã được diệp lục hấp thụ để tổng hợp chất hữu cơ (glucose, tinh bột) và giải phóng khí oxygen từ nước và carbon dioxide.",
+    "equation": "Nước + Carbon dioxide —(Ánh sáng / Diệp lục)→ Glucose + Oxygen",
+    "organelle": "Lục lạp (chứa chất diệp lục)",
+    "significance": "Cung cấp chất hữu cơ và năng lượng cho sinh vật dị dưỡng, điều hòa khí hậu và cung cấp oxygen cho sự sống."
+  },
+  {
+    "id": "kb-bio-g7-ho-hap-te-bao-khai-niem",
+    "title": "Hô hấp tế bào",
+    "description": "Quá trình phân giải các chất hữu cơ (chủ yếu là glucose) diễn ra bên trong tế bào tạo thành carbon dioxide, nước và giải phóng năng lượng hoạt dụng ATP cung cấp cho mọi hoạt động sống.",
+    "equation": "Glucose + Oxygen → Carbon dioxide + Nước + Năng lượng (ATP + Nhiệt)",
+    "organelle": "Ty thể (\"nhà máy năng lượng\" của tế bào)",
+    "significance": "Cung cấp năng lượng ATP trực tiếp để tổng hợp chất mới, vận chuyển chất, sinh trưởng và cảm ứng."
+  },
+  {
+    "id": "kb-bio-g7-so-sanh-quang-hop-ho-hap",
+    "title": "Mối quan hệ giữa Quang hợp và Hô hấp tế bào",
+    "description": "Hai quá trình trái ngược nhau nhưng thống nhất và gắn bó khăng khít. Sản phẩm của quang hợp (glucose, O2) là nguyên liệu cho hô hấp; ngược lại sản phẩm của hô hấp (CO2, nước) là nguyên liệu cho quang hợp.",
+    "table": {
+      "tieu_chi": ["Bào quan thực hiện", "Năng lượng", "Khí hấp thụ", "Khí thải ra", "Thời gian"],
+      "quang_hop": ["Lục lạp", "Tích lũy (Quang năng → Hóa năng)", "Carbon dioxide (CO2)", "Oxygen (O2)", "Khi có ánh sáng"],
+      "ho_hap": ["Ty thể", "Giải phóng (Hóa năng → ATP + Nhiệt)", "Oxygen (O2)", "Carbon dioxide (CO2)", "Suốt ngày đêm"]
+    }
+  },
+  {
+    "id": "kb-bio-g7-bao-quan-nong-san",
+    "title": "Ứng dụng khống chế hô hấp trong bảo quản nông sản",
+    "description": "Hô hấp tiêu hao chất hữu cơ và sinh nhiệt ẩm làm hỏng nông sản. Do đó, cần hạ cường độ hô hấp xuống mức tối thiểu bằng các biện pháp: sấy khô (thóc, ngô), bảo quản mát/lạnh (rau, củ, quả), hoặc bảo quản trong túi hút chân không/bơm khí CO2.",
+    "methods": [
+      "Bảo quản khô: Giảm độ ẩm của hạt về dưới 13% để giảm thiểu phản ứng enzym.",
+      "Bảo quản lạnh: Hạ nhiệt độ kìm hãm hoạt tính enzym hô hấp, ngăn vi sinh vật gây thối rữa.",
+      "Bảo quản trong điều kiện nồng độ CO2 cao hoặc hút chân không: Nồng độ CO2 cao ức chế chuỗi hô hấp tế bào."
+    ]
+  }
+]

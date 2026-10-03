@@ -1,0 +1,74 @@
+{
+  "lessonId": "bio-g8-b14",
+  "nodeId": "bio-g8-b14-theory",
+  "title": "Lý thuyết: Quần xã sinh vật & Quan hệ sinh thái",
+  "subtitle": "Bài 43 SGK KHTN 8 Kết nối tri thức: Khái niệm quần xã, loài ưu thế, loài đặc trưng, quan hệ hỗ trợ - đối kháng và khống chế sinh học",
+  "sgkBaiSo": 43,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Khái niệm",
+      "badgeColor": "emerald",
+      "title": "Quần xã sinh vật & Các đặc trưng về loài",
+      "content": "Quần xã sinh vật là cấp độ tổ chức sống gồm nhiều loài cùng chung sống:",
+      "bulletPoints": [
+        "Khái niệm: Quần xã sinh vật là tập hợp nhiều quần thể sinh vật thuộc các loài khác nhau, cùng sinh sống trong một khoảng không gian và thời gian xác định, gắn bó với nhau như một thể thống nhất.",
+        "Độ đa dạng của quần xã: Thể hiện qua số lượng các loài và số lượng cá thể của mỗi loài trong quần xã. Quần xã nhiệt đới thường có độ đa dạng cao hơn quần xã ôn đới hay sa mạc.",
+        "Loài ưu thế: Loài đóng vai trò quan trọng trong quần xã do có số lượng cá thể đông, sinh khối lớn hoặc hoạt động mạnh (ví dụ: cây lúa trong quần xã ruộng lúa, cây thông trong rừng thông).",
+        "Loài đặc trưng: Loài chỉ có ở một quần xã nào đó hoặc có số lượng nhiều hơn hẳn các loài khác (ví dụ: cá cóc ở rừng Tam Đảo, cây tràm ở rừng ngập nước U Minh)."
+      ],
+      "callout": "Loài ưu thế chi phối cấu trúc và môi trường; loài đặc trưng đại diện tiêu biểu cho quần xã đó!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Quan hệ sinh thái",
+      "badgeColor": "amber",
+      "title": "Mối quan hệ giữa các loài trong quần xã",
+      "content": "Các loài trong quần xã tác động qua lại chặt chẽ theo hai nhóm quan hệ chính:",
+      "bulletPoints": [
+        "1. Quan hệ hỗ trợ (đem lại lợi ích hoặc không gây hại): Cộng sinh (hai loài gắn bó bắt buộc, cùng có lợi, ví dụ: địa y nấm + tảo, vi khuẩn Rhizobium trong nốt sần rễ cây đậu); Hội sinh (một bên có lợi, bên kia không lợi không hại, ví dụ: hoa phong lan bám cây gỗ, cá ép bám rùa biển); Hợp tác (hai loài cùng có lợi nhưng không bắt buộc, ví dụ: chim sáo bắt rận cho trâu rừng).",
+        "2. Quan hệ đối kháng (ít nhất một loài bị hại): Cạnh tranh (tranh giành nguồn sống ánh sáng, thức ăn, chỗ ở, ví dụ: lúa và cỏ dại); Kí sinh / Nửa kí sinh (sống bám và hút chất dinh dưỡng từ vật chủ, ví dụ: giun đũa ở ruột người, cây tơ hồng); Sinh vật ăn sinh vật khác (thực vật ăn thịt, thú săn mồi - con mồi, động vật ăn cỏ)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Khống chế sinh học",
+      "badgeColor": "cyan",
+      "title": "Hiện tượng khống chế sinh học & Cân bằng sinh thái",
+      "content": "Khống chế sinh học giữ cho quần xã luôn ở trạng thái cân bằng động:",
+      "bulletPoints": [
+        "Khái niệm: Khống chế sinh học là hiện tượng số lượng cá thể của một loài bị kìm hãm ở một mức độ nhất định bởi mối quan hệ với loài khác trong quần xã (thường qua quan hệ vật ăn thịt - con mồi hoặc vật kí sinh - vật chủ).",
+        "Cân bằng sinh học: Nhờ khống chế sinh học, số lượng cá thể của mỗi quần thể luôn dao động trong thế cân bằng ổn định phù hợp với nguồn sống của môi trường.",
+        "Ứng dụng nông nghiệp: Sử dụng thiên địch (loài thiên nhiên tiêu diệt sâu hại) để bảo vệ cây trồng thay cho thuốc trừ sâu hóa học độc hại (ví dụ: thả ong mắt đỏ để diệt sâu đục thân lúa, dùng bọ rùa để ăn rệp cây hại cam quýt)."
+      ],
+      "callout": "Sử dụng thiên địch trong nông nghiệp vừa bảo vệ mùa màng hiệu quả vừa giữ gìn môi trường sống trong lành!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Mối quan hệ giữa nấm và tảo đơn bào trong cấu trúc cơ thể địa y thuộc về hình thức tương tác nào?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Cộng sinh (hai bên bắt buộc gắn bó và cùng có lợi)",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Hội sinh (một bên có lợi, một bên không bị ảnh hưởng)",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Kí sinh (nấm hút hết chất dinh dưỡng làm chết tảo)",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Cạnh tranh sinh học (tranh giành ánh sáng và muối khoáng)",
+        "correct": false
+      }
+    ],
+    "explanation": "Trong địa y, nấm cung cấp nước và muối khoáng cho tảo quang hợp, ngược lại tảo tổng hợp chất hữu cơ nuôi nấm. Cả hai gắn bó chặt chẽ, tách rời thì không thể sống độc lập, đây là điển hình của quan hệ cộng sinh."
+  }
+}

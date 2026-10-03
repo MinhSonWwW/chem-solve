@@ -1,0 +1,554 @@
+[
+  {
+    "id": "bio-g8-b15-q01",
+    "lessonId": "bio-g8-b15",
+    "sgkBaiSo": 44,
+    "skillIds": [
+      "bio-he-sinh-thai"
+    ],
+    "difficulty": 1,
+    "prompt": "Một hệ sinh thái hoàn chỉnh trong tự nhiên bao gồm những thành phần cấu trúc cơ bản nào sau đây?",
+    "knowledge": [
+      "kb-bio-g8-khai-niem-he-sinh-thai"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Quần xã sinh vật và sinh cảnh (thành phần môi trường vô sinh)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Chỉ gồm tập hợp các loài động vật và thực vật sinh sống trong rừng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chỉ gồm các nhân tố vô sinh như đất, nước, không khí và ánh sáng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Quần thể các loài cây xanh cùng sống trong một khu bảo tồn"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hệ sinh thái là một hệ thống chức năng hoàn chỉnh kết hợp giữa thế giới sinh vật và môi trường vô sinh bao quanh chúng."
+      },
+      {
+        "level": 2,
+        "text": "Công thức tổng quát: Hệ sinh thái = Quần xã sinh vật + Sinh cảnh (môi trường vô sinh)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khái niệm hệ sinh thái",
+        "body": "Hệ sinh thái là cấp độ tổ chức sống hoàn chỉnh bao gồm sinh cảnh (vô sinh) và quần xã sinh vật (hữu sinh)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Mối tương tác hệ thống",
+        "body": "Các sinh vật trong quần xã tương tác mật thiết với nhau và trao đổi vật chất, năng lượng không ngừng với môi trường vô sinh xung quanh để duy trì sự sống."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hệ sinh thái bao gồm quần xã sinh vật và sinh cảnh (thành phần môi trường vô sinh)."
+      }
+    ],
+    "finalSolution": "Hệ sinh thái là hệ thống hoàn chỉnh gồm quần xã sinh vật và sinh cảnh vô sinh tương tác mật thiết.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm hệ sinh thái chỉ bao gồm các sinh vật sống mà quên mất thành phần sinh cảnh vô sinh (đất, nước, ánh sáng)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b15-q02",
+    "lessonId": "bio-g8-b15",
+    "sgkBaiSo": 44,
+    "skillIds": [
+      "bio-he-sinh-thai"
+    ],
+    "difficulty": 1,
+    "prompt": "Nhóm sinh vật nào sau đây đóng vai trò là sinh vật sản xuất trong hệ sinh thái?",
+    "knowledge": [
+      "kb-bio-g8-khai-niem-he-sinh-thai"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cây ngô, lúa nước, rong đuôi chó và các loài tảo lục quang hợp"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nấm rơm, nấm mốc và các vi khuẩn hoại sinh trong đất"
+        },
+        {
+          "id": "opt-c",
+          "label": "Châu chấu, thỏ rừng, bò sữa và hươu cao cổ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hổ, báo hoa mai, đại bàng và trăn gấm"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sinh vật sản xuất là các sinh vật tự dưỡng có khả năng quang hợp chế tạo chất hữu cơ từ năng lượng mặt trời."
+      },
+      {
+        "level": 2,
+        "text": "Cây xanh, rong, tảo có chất diệp lục hấp thu ánh sáng mặt trời là đại diện tiêu biểu của sinh vật sản xuất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Định nghĩa sinh vật sản xuất",
+        "body": "Sinh vật sản xuất là những sinh vật có khả năng tự dưỡng, tổng hợp chất hữu cơ từ các chất vô cơ thông qua quá trình quang hợp."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân loại các nhóm sinh vật",
+        "body": "Cây ngô, lúa, rong và tảo lục có diệp lục là sinh vật sản xuất. Động vật ăn cỏ là sinh vật tiêu thụ bậc 1; động vật ăn thịt là sinh vật tiêu thụ bậc cao; nấm và vi khuẩn là sinh vật phân giải."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cây trồng nông nghiệp, rong và tảo quang hợp là sinh vật sản xuất."
+      }
+    ],
+    "finalSolution": "Sinh vật sản xuất là các sinh vật tự dưỡng quang hợp (cây xanh, tảo) cung cấp chất hữu cơ khởi đầu cho hệ sinh thái.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Nhầm nấm là sinh vật sản xuất (nấm không có diệp lục nên là sinh vật phân giải hoại sinh)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b15-q03",
+    "lessonId": "bio-g8-b15",
+    "sgkBaiSo": 44,
+    "skillIds": [
+      "bio-he-sinh-thai"
+    ],
+    "difficulty": 2,
+    "prompt": "Vai trò sinh thái then chốt của sinh vật phân giải (vi khuẩn hoại sinh, nấm) trong hệ sinh thái là gì?",
+    "knowledge": [
+      "kb-bio-g8-khai-niem-he-sinh-thai"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Phân hủy xác sinh vật và chất hữu cơ thành muối khoáng vô cơ trả lại môi trường cho cây xanh hấp thụ"
+        },
+        {
+          "id": "opt-b",
+          "label": "Trực tiếp quang hợp tạo ra khí oxy và tinh bột cung cấp cho các loài động vật ăn cỏ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Săn bắt và tiêu thụ các loài động vật già yếu để giảm bớt số lượng cá thể trong quần xã"
+        },
+        {
+          "id": "opt-d",
+          "label": "Ngăn cản hoàn toàn sự thất thoát năng lượng ánh sáng mặt trời ra ngoài vũ trụ"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nếu không có sinh vật phân giải, xác của thực vật và động vật qua hàng triệu năm sẽ không bị mục nát và chất khoáng sẽ bị cạn kiệt."
+      },
+      {
+        "level": 2,
+        "text": "Sinh vật phân giải khép kín vòng tuần hoàn vật chất: biến chất hữu cơ phức tạp thành chất vô cơ đơn giản."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Chức năng của sinh vật phân giải",
+        "body": "Gồm vi khuẩn hoại sinh, nấm mốc sống dựa vào phân giải chất hữu cơ từ xác sinh vật chết hoặc phân thải."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Ý nghĩa khép kín chu trình",
+        "body": "Quá trình phân giải biến đổi protein, lipid, cacbohydrat thành nước, CO2 và các ion khoáng vô cơ (như nitrat, phosphat), giúp tái tạo nguồn dinh dưỡng vô cơ cho thực vật quang hợp."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Sinh vật phân giải phân hủy xác hữu cơ thành khoáng chất vô cơ trả lại môi trường, khép kín vòng tuần hoàn vật chất."
+      }
+    ],
+    "finalSolution": "Sinh vật phân giải có vai trò khép kín chu trình tuần hoàn vật chất bằng cách biến xác hữu cơ thành muối khoáng vô cơ cho cây xanh hấp thụ.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nghĩ rằng sinh vật phân giải có thể quang hợp tự tạo chất hữu cơ như cây xanh."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b15-q04",
+    "lessonId": "bio-g8-b15",
+    "sgkBaiSo": 44,
+    "skillIds": [
+      "bio-he-sinh-thai"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong chuỗi thức ăn: Cỏ lau → Cào cào → Ếch đồng → Rắn nước → Đại bàng, loài sinh vật nào là sinh vật tiêu thụ bậc 1?",
+    "knowledge": [
+      "kb-bio-g8-chuoi-luoi-thuc-an"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cào cào"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cỏ lau"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ếch đồng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Rắn nước"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cỏ lau là sinh vật sản xuất (mắt xích đầu tiên). Sinh vật tiêu thụ bậc 1 là loài động vật ăn trực tiếp sinh vật sản xuất."
+      },
+      {
+        "level": 2,
+        "text": "Cào cào ăn cỏ lau, do đó cào cào là sinh vật tiêu thụ bậc 1 (thuộc bậc dinh dưỡng cấp 2)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích chuỗi thức ăn",
+        "body": "Cỏ lau là sinh vật sản xuất tự dưỡng. Động vật ăn thực vật là sinh vật tiêu thụ bậc 1; động vật ăn thịt kế tiếp là sinh vật tiêu thụ bậc 2."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Xác định các bậc tiêu thụ",
+        "body": "Cào cào ăn cỏ lau $\\to$ SV tiêu thụ bậc 1. Ếch ăn cào cào $\\to$ SV tiêu thụ bậc 2. Rắn nước ăn ếch $\\to$ SV tiêu thụ bậc 3. Đại bàng $\\to$ SV tiêu thụ bậc 4."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cào cào là sinh vật tiêu thụ bậc 1 trong chuỗi thức ăn trên."
+      }
+    ],
+    "finalSolution": "Cào cào ăn cỏ trực tiếp nên là sinh vật tiêu thụ bậc 1 (bậc dinh dưỡng cấp 2) trong chuỗi thức ăn.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Nhầm lẫn giữa bậc dinh dưỡng (Cỏ là bậc dinh dưỡng 1) và bậc tiêu thụ (Cào cào là SV tiêu thụ bậc 1)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b15-q05",
+    "lessonId": "bio-g8-b15",
+    "sgkBaiSo": 44,
+    "skillIds": [
+      "bio-he-sinh-thai"
+    ],
+    "difficulty": 2,
+    "prompt": "Lưới thức ăn trong một quần xã sinh vật được hình thành dựa trên cơ sở nào sau đây?",
+    "knowledge": [
+      "kb-bio-g8-chuoi-luoi-thuc-an"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Nhiều chuỗi thức ăn có các mắt xích chung đan xen liên kết với nhau"
+        },
+        {
+          "id": "opt-b",
+          "label": "Một chuỗi thức ăn duy nhất kéo dài vô tận qua hàng chục bậc dinh dưỡng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mối quan hệ hỗ trợ cạnh tranh nơi ở giữa các loài thực vật trên cạn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Sự di cư định kì của các loài chim di cư giữa các bán cầu Trái Đất"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Một loài sinh vật trong tự nhiên thường không chỉ ăn một loài duy nhất và cũng là thức ăn của nhiều loài khác."
+      },
+      {
+        "level": 2,
+        "text": "Các mắt xích chung kết nối nhiều chuỗi thức ăn thành một mạng lưới thức ăn phong phú."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khái niệm mắt xích chung",
+        "body": "Trong tự nhiên, một loài sinh vật thường tham gia đồng thời vào nhiều chuỗi thức ăn khác nhau (vừa ăn loài này vừa ăn loài kia, vừa bị nhiều kẻ thù săn đón)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Bản chất của lưới thức ăn",
+        "body": "Tập hợp các chuỗi thức ăn có chung nhiều mắt xích dinh dưỡng tạo thành một mạng lưới thức ăn (food web) hoàn chỉnh trong quần xã."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Lưới thức ăn được hình thành từ nhiều chuỗi thức ăn có chung các mắt xích dinh dưỡng."
+      }
+    ],
+    "finalSolution": "Lưới thức ăn là tập hợp các chuỗi thức ăn đan xen nhờ có các mắt xích chung liên kết nhiều loài sinh vật.",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng lưới thức ăn là do con người giăng lưới nhân tạo để đánh bắt cá."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b15-q06",
+    "lessonId": "bio-g8-b15",
+    "sgkBaiSo": 44,
+    "skillIds": [
+      "bio-he-sinh-thai"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong một hệ sinh thái tự nhiên trên cạn, bậc dinh dưỡng nào tích lũy mức năng lượng sinh học cao nhất?",
+    "knowledge": [
+      "kb-bio-g8-bac-dinh-duong-thap-sinh-thai"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Bậc dinh dưỡng cấp 1 (Sinh vật sản xuất)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bậc dinh dưỡng cấp 2 (Sinh vật tiêu thụ bậc 1)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Bậc dinh dưỡng cấp 3 (Sinh vật tiêu thụ bậc 2)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Bậc dinh dưỡng cấp cao nhất (Thú săn mồi đỉnh chuỗi)"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Năng lượng đi vào hệ sinh thái bắt đầu từ quang hợp của sinh vật sản xuất tiếp nhận ánh sáng mặt trời."
+      },
+      {
+        "level": 2,
+        "text": "Qua mỗi mắt xích chuyển tiếp, khoảng 90% năng lượng bị mất đi do hô hấp tỏa nhiệt, vì vậy bậc đầu tiên luôn có năng lượng lớn nhất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Dòng năng lượng trong hệ sinh thái",
+        "body": "Năng lượng mặt trời đi vào hệ sinh thái nhờ quá trình quang hợp của sinh vật sản xuất (bậc dinh dưỡng cấp 1)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy luật suy giảm năng lượng",
+        "body": "Theo quy luật dòng năng lượng, năng lượng giảm dần rõ rệt qua mỗi bậc dinh dưỡng cao hơn do thất thoát nhiệt qua hô hấp tế bào và bài tiết. Do đó, bậc dinh dưỡng cấp 1 luôn chứa tổng năng lượng lớn nhất."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Bậc dinh dưỡng cấp 1 (sinh vật sản xuất) tích lũy mức năng lượng cao nhất trong hệ sinh thái."
+      }
+    ],
+    "finalSolution": "Sinh vật sản xuất (bậc dinh dưỡng cấp 1) trực tiếp chuyển hóa quang năng nên tích lũy tổng năng lượng cao nhất toàn hệ sinh thái.",
+    "commonMistakes": [
+      {
+        "id": "cm-06",
+        "message": "Nghĩ rằng động vật săn mồi đỉnh chuỗi to khỏe nên chứa tổng mức năng lượng nhiều nhất hệ sinh thái."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b15-q07",
+    "lessonId": "bio-g8-b15",
+    "sgkBaiSo": 44,
+    "skillIds": [
+      "bio-he-sinh-thai"
+    ],
+    "difficulty": 3,
+    "prompt": "Tại sao tháp năng lượng trong tất cả các hệ sinh thái luôn có dạng chuẩn tắc hình tam giác đáy rộng đỉnh nhọn mà không bao giờ bị đảo ngược?",
+    "knowledge": [
+      "kb-bio-g8-bac-dinh-duong-thap-sinh-thai"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vì năng lượng bị thất thoát phần lớn (~90%) qua hô hấp tỏa nhiệt và chất bài tiết khi truyền từ bậc thấp lên bậc cao"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vì số lượng cá thể của các loài thú ăn thịt luôn luôn lớn hơn số lượng cá thể thực vật xanh"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì sinh vật sản xuất không tiêu tốn bất kì năng lượng nào cho các hoạt động sống của chính mình"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì động vật ăn cỏ hấp thụ hoàn toàn 100% năng lượng chứa trong thức ăn thực vật"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nguyên lí nhiệt động học thứ hai: năng lượng sinh học không thể tái sinh hoàn toàn mà liên tục bị phân tán ra môi trường dưới dạng nhiệt."
+      },
+      {
+        "level": 2,
+        "text": "Hiệu suất sinh thái chỉ đạt khoảng 10%, nghĩa là mỗi bậc dinh dưỡng cao hơn chỉ nhận được 1/10 năng lượng của bậc trước đó."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đặc điểm tháp năng lượng",
+        "body": "Tháp năng lượng biểu diễn lượng năng lượng tích lũy trên một đơn vị diện tích trong một đơn vị thời gian ở từng bậc dinh dưỡng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy luật hiệu suất sinh thái",
+        "body": "Khoảng 90% năng lượng ở mỗi bậc bị tiêu hao qua hô hấp tỏa nhiệt, chất thải và các bộ phận không tiêu hóa được. Chỉ khoảng 10% năng lượng được truyền lên tích lũy ở bậc dinh dưỡng kế tiếp, khiến các bậc trên luôn nhỏ hơn bậc dưới."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Do năng lượng thất thoát phần lớn (~90%) qua mỗi bậc nên tháp năng lượng luôn có đáy rộng đỉnh nhọn và không thể đảo ngược."
+      }
+    ],
+    "finalSolution": "Tháp năng lượng luôn chuẩn tắc đáy rộng đỉnh nhọn do sự thất thoát nhiệt ~90% qua mỗi bậc dinh dưỡng khi truyền năng lượng.",
+    "commonMistakes": [
+      {
+        "id": "cm-07",
+        "message": "Nhầm lẫn với tháp số lượng (tháp số lượng có thể biến dạng ví dụ 1 cây đại thụ nuôi hàng ngàn rệp sáp)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b15-q08",
+    "lessonId": "bio-g8-b15",
+    "sgkBaiSo": 44,
+    "skillIds": [
+      "bio-he-sinh-thai"
+    ],
+    "difficulty": 3,
+    "prompt": "Xét lưới thức ăn đồng ruộng gồm: Lúa → Chuột đồng → Rắn hổ mang; Lúa → Cào cào → Ếch đồng → Rắn hổ mang. Nếu loài rắn bị săn bắt cạn kiệt thì hậu quả sinh thái nào sau đây sẽ xảy ra?",
+    "knowledge": [
+      "kb-bio-g8-chuoi-luoi-thuc-an"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Số lượng chuột đồng bùng phát mạnh mẽ, cắn phá nghiêm trọng làm giảm sút năng suất mùa màng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cây lúa nước sẽ phát triển xanh tốt hơn và tăng gấp đôi năng suất thu hoạch"
+        },
+        {
+          "id": "opt-c",
+          "label": "Số lượng châu chấu và cào cào sẽ lập tức tuyệt chủng hoàn toàn trên cánh đồng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tất cả các loài vi khuẩn phân giải trong đất ruộng sẽ ngừng hoạt động"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Rắn là loài thiên địch ăn thịt con mồi (chuột đồng, ếch nhái), giúp kìm hãm số lượng loài gặm nhấm."
+      },
+      {
+        "level": 2,
+        "text": "Mất đi thiên địch kiểm soát, quần thể chuột đồng sẽ mất cân bằng và tăng vọt số lượng tàn phá lúa."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Vai trò của rắn trong lưới thức ăn",
+        "body": "Rắn là sinh vật tiêu thụ bậc cao đóng vai trò kiểm soát số lượng quần thể chuột đồng và ếch đồng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân tích tác động dây chuyền",
+        "body": "Khi rắn bị săn bắt cạn kiệt, vật ăn thịt kiểm soát mất đi làm số lượng chuột đồng bùng phát mạnh do nguồn thức ăn (lúa) dồi dào, dẫn đến việc chuột cắn phá hàng loạt gây thiệt hại nghiêm trọng cho mùa màng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Săn bắt cạn kiệt rắn sẽ dẫn đến bùng phát dịch hại chuột đồng tàn phá nặng nề đồng ruộng."
+      }
+    ],
+    "finalSolution": "Mất đi thiên địch rắn kiểm soát, số lượng chuột đồng sẽ bùng phát dữ dội tàn phá mùa màng, làm mất cân bằng sinh thái đồng ruộng.",
+    "commonMistakes": [
+      {
+        "id": "cm-08",
+        "message": "Nghĩ rằng tiêu diệt rắn độc chỉ đem lại lợi ích an toàn cho con người mà không gây tác hại sinh thái tiêu cực nào."
+      }
+    ]
+  }
+]

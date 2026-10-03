@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g7-b15-q01",
+    "lessonId": "bio-g7-b15",
+    "sgkBaiSo": 35,
+    "skillIds": ["bio-thuc-hanh-cam-ung"],
+    "difficulty": 1,
+    "prompt": "Trong thí nghiệm chứng minh tính hướng sáng, tại sao người ta phải đậy kín hộp carton và chỉ khoét duy nhất một lỗ tròn nhỏ ở một bên thành hộp?",
+    "knowledge": ["kb-bio-g7-thuc-hanh-tinh-huong-sang", "kb-bio-g7-huong-dong-thuc-vat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tạo nguồn chiếu sáng đơn hướng từ một phía để quan sát rõ phản ứng uốn cong sinh trưởng của ngọn cây" },
+        { "id": "opt-b", "label": "Để ngăn không cho khí oxygen lọt vào bên trong hộp làm chết mầm cây" },
+        { "id": "opt-c", "label": "Để giữ nhiệt độ bên trong hộp luôn lạnh dưới 0 độ C" },
+        { "id": "opt-d", "label": "Để hạn chế tối đa sự thoát hơi nước của đất trồng" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Nếu ánh sáng chiếu đều từ bốn phía, ngọn cây sẽ mọc như thế nào?" },
+      { "level": 2, "text": "Cần nguồn sáng một phía (chiếu sáng đơn hướng) để tạo sự chênh lệch sinh trưởng giữa hai phía của thân cây." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích điều kiện thí nghiệm", "body": "Giải thích mục đích của việc chỉ khoét 1 lỗ sáng duy nhất trên hộp carton." },
+      { "kind": "knowledge", "title": "Bản chất tính hướng sáng", "body": "Chiếu sáng đơn hướng từ một phía làm hormone sinh trưởng phân bố không đều, kích thích phía tối sinh trưởng nhanh hơn uốn cong ngọn về phía sáng." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tạo nguồn chiếu sáng đơn hướng từ một phía để quan sát rõ phản ứng uốn cong sinh trưởng của ngọn cây." }
+    ],
+    "finalSolution": "Khoét 1 lỗ duy nhất tạo nguồn chiếu sáng đơn hướng giúp quan sát rõ phản ứng hướng sáng dương của ngọn cây.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng khoét lỗ chỉ để cây trao đổi không khí hô hấp." }
+    ]
+  },
+  {
+    "id": "bio-g7-b15-q02",
+    "lessonId": "bio-g7-b15",
+    "sgkBaiSo": 35,
+    "skillIds": ["bio-thuc-hanh-cam-ung"],
+    "difficulty": 1,
+    "prompt": "Sau 3 – 4 ngày làm thí nghiệm hướng sáng với chậu mầm đậu xanh trong hộp carton có một lỗ tròn bên sườn, hiện tượng thu được là gì?",
+    "knowledge": ["kb-bio-g7-thuc-hanh-tinh-huong-sang"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Thân mầm cây đậu uốn cong sinh trưởng vươn thẳng ra phía lỗ tròn có ánh sáng lọt vào" },
+        { "id": "opt-b", "label": "Thân mầm cây đậu uốn cong đâm ngược sâu xuống dưới đáy chậu" },
+        { "id": "opt-c", "label": "Cây đậu ngừng lớn hoàn toàn và rụng hết lá mầm" },
+        { "id": "opt-d", "label": "Thân mầm tự động xoắn ốc quanh gốc không đổi hướng" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Ngọn cây có đặc tính vươn về phía có nguồn ánh sáng (hướng sáng dương)." },
+      { "level": 2, "text": "Thân cây sẽ uốn cong hướng ra vị trí có ánh sáng lọt qua lỗ tròn." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định hiện tượng quan sát", "body": "Mô tả kết quả thực nghiệm sau 3-4 ngày đặt cây trong hộp chiếu sáng đơn hướng." },
+      { "kind": "knowledge", "title": "Kết quả thí nghiệm", "body": "Thân mầm đậu xanh uốn cong hướng về phía lỗ sáng để đón nhận ánh sáng mặt trời." },
+      { "kind": "answer", "title": "Kết luận", "body": "Thân mầm cây đậu uốn cong sinh trưởng vươn thẳng ra phía lỗ tròn có ánh sáng lọt vào." }
+    ],
+    "finalSolution": "Hiện tượng quan sát thấy: thân mầm cây đậu uốn cong vươn mình ra phía lỗ có ánh sáng chiếu vào.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng cây trong hộp tối sẽ chết khô ngay không kịp uốn cong." }
+    ]
+  },
+  {
+    "id": "bio-g7-b15-q03",
+    "lessonId": "bio-g7-b15",
+    "sgkBaiSo": 35,
+    "skillIds": ["bio-thuc-hanh-cam-ung"],
+    "difficulty": 2,
+    "prompt": "Tại sao trong thí nghiệm chứng minh tính hướng trọng lực (đặt chậu cây nằm ngang), người ta lại đặt chậu trong buồng tối hoặc chiếu sáng đều từ mọi hướng?",
+    "knowledge": ["kb-bio-g7-thuc-hanh-tinh-huong-trong-luc", "kb-bio-g7-huong-dong-thuc-vat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Để loại bỏ ảnh hưởng của ánh sáng, đảm bảo sự uốn cong chỉ do tác động duy nhất của trọng lực" },
+        { "id": "opt-b", "label": "Để ức chế hoàn toàn quá trình hô hấp tế bào của rễ cây" },
+        { "id": "opt-c", "label": "Để làm cho đất trong chậu không bị khô nước" },
+        { "id": "opt-d", "label": "Vì rễ cây chỉ sinh trưởng được khi nhiệt độ buồng tối hạ xuống 0 độ C" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Nếu có một nguồn sáng chiếu từ một bên, cây sẽ uốn cong theo ánh sáng hay theo trọng lực?" },
+      { "level": 2, "text": "Cần kiểm soát biến số ánh sáng để khẳng định kết quả là do trọng trường Trái Đất gây ra." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích biến số thực nghiệm", "body": "Giải thích việc kiểm soát ánh sáng trong thí nghiệm khảo sát tính hướng trọng lực." },
+      { "kind": "knowledge", "title": "Kiểm soát biến số ngoại lai", "body": "Ánh sáng một phía có thể gây nhiễu kết quả do tính hướng sáng; buồng tối giúp cô lập chỉ còn biến số trọng lực." },
+      { "kind": "answer", "title": "Kết luận", "body": "Để loại bỏ ảnh hưởng của ánh sáng, đảm bảo sự uốn cong chỉ do tác động duy nhất của trọng lực." }
+    ],
+    "finalSolution": "Đặt trong tối hoặc chiếu sáng đều để loại trừ biến số hướng sáng, đảm bảo sự sinh trưởng chỉ chịu tác động của trọng lực.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Quên mất rằng nếu có ánh sáng lệch bên, thân cây sẽ vừa hướng sáng vừa hướng trọng lực gây sai lệch kết quả." }
+    ]
+  },
+  {
+    "id": "bio-g7-b15-q04",
+    "lessonId": "bio-g7-b15",
+    "sgkBaiSo": 35,
+    "skillIds": ["bio-thuc-hanh-cam-ung"],
+    "difficulty": 1,
+    "prompt": "Khi đặt chậu cây con nằm ngang trong tối 2 ngày, đầu rễ uốn cong đâm xuống dưới đất, còn ngọn thân uốn cong vươn lên trên chứng minh:",
+    "knowledge": ["kb-bio-g7-thuc-hanh-tinh-huong-trong-luc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Rễ có tính hướng đất dương, thân ngọn có tính hướng đất âm" },
+        { "id": "opt-b", "label": "Cả rễ và thân đều có tính hướng đất dương" },
+        { "id": "opt-c", "label": "Cả rễ và thân đều có tính hướng đất âm" },
+        { "id": "opt-d", "label": "Rễ và thân không có khả năng cảm ứng với trọng lực" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Rễ đâm xuống cùng chiều trọng lực (dương), thân ngọn vươn ngược chiều trọng lực (âm)." },
+      { "level": 2, "text": "Hai bộ phận này phản ứng ngược chiều nhau với lực hút Trái Đất." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích kết luận khoa học", "body": "Xác định tính chất hướng động của rễ và thân ngọn đối với trọng lực." },
+      { "kind": "knowledge", "title": "Hướng trọng lực ở thực vật", "body": "Rễ cây hướng trọng lực dương (đâm xuống), thân cây hướng trọng lực âm (vươn lên trời)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Rễ có tính hướng đất dương, thân ngọn có tính hướng đất âm." }
+    ],
+    "finalSolution": "Rễ cây hướng đất dương (đâm sâu xuống đất), thân ngọn hướng đất âm (vươn thẳng lên trên).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm rễ hướng đất âm hoặc thân hướng đất dương." }
+    ]
+  },
+  {
+    "id": "bio-g7-b15-q05",
+    "lessonId": "bio-g7-b15",
+    "sgkBaiSo": 35,
+    "skillIds": ["bio-thuc-hanh-cam-ung"],
+    "difficulty": 1,
+    "prompt": "Trong thực hành quan sát cảm ứng ở cây trinh nữ, khi dùng tay chạm vào một lá chét, hiện tượng nào diễn ra đầu tiên?",
+    "knowledge": ["kb-bio-g7-thuc-hanh-ung-dong-chong-nong-am", "kb-bio-g7-ung-dong-tiep-xuc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Cặp lá chét bị chạm trực tiếp khép lại trước, sau đó lan truyền làm các lá chét lân cận khép theo và cuống cụp xuống" },
+        { "id": "opt-b", "label": "Toàn bộ cây rụng hết sạch lá ngay lập tức" },
+        { "id": "opt-c", "label": "Thân cây lập tức gãy ngang tại điểm chạm" },
+        { "id": "opt-d", "label": "Hoa của cây nở bung màu vàng rực" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Phản ứng bắt đầu ngay tại điểm tiếp xúc rồi mới lan truyền dọc theo cuống lá." },
+      { "level": 2, "text": "Lá chét bị chạm khép lại đầu tiên, sau đó cuống lá cụp xuống sau 1-2 giây." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Trình tự quan sát hiện tượng", "body": "Ghi nhận diễn biến thời gian của phản ứng ứng động khi chạm vào lá cây trinh nữ." },
+      { "kind": "knowledge", "title": "Cơ chế lan truyền cảm ứng", "body": "Kích thích cơ học làm giảm áp suất trương nước tại thể gối của lá chét bị chạm, sau đó lan truyền làm cụp cả cuống lá." },
+      { "kind": "answer", "title": "Kết luận", "body": "Cặp lá chét bị chạm trực tiếp khép lại trước, sau đó lan truyền làm các lá chét lân cận khép theo và cuống cụp xuống." }
+    ],
+    "finalSolution": "Cặp lá chét bị chạm khép lại trước tiên, sau đó phản ứng lan truyền nhanh làm cuống lá cụp hoàn toàn.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng toàn bộ cành cây trinh nữ bị gãy hoặc chết sau khi chạm." }
+    ]
+  },
+  {
+    "id": "bio-g7-b15-q06",
+    "lessonId": "bio-g7-b15",
+    "sgkBaiSo": 35,
+    "skillIds": ["bio-thuc-hanh-cam-ung"],
+    "difficulty": 2,
+    "prompt": "Sau khi cuống lá cây trinh nữ đã cụp xuống hoàn toàn do va chạm, nếu để chậu cây yên tĩnh không bị động chạm thì sau bao lâu lá sẽ từ từ mở rộng trở lại?",
+    "knowledge": ["kb-bio-g7-thuc-hanh-ung-dong-chong-nong-am"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Sau khoảng 10 – 15 phút khi nước thẩm thấu trở lại đầy các tế bào thể gối" },
+        { "id": "opt-b", "label": "Sau 1 tháng cây mới mọc lá mới thay thế" },
+        { "id": "opt-c", "label": "Sau đúng 1 giây lá sẽ bật mở lại ngay lập tức" },
+        { "id": "opt-d", "label": "Lá sẽ mãi mãi cụp vĩnh viễn không bao giờ mở lại" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Phản ứng cụp lá là thuận nghịch, lá sẽ hồi phục khi nước di chuyển ngược trở lại." },
+      { "level": 2, "text": "Quá trình thẩm thấu nước tái lập sức trương ở thể gối mất khoảng từ 10 đến 15 phút." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định thời gian hồi phục", "body": "Khảo sát tính thuận nghịch của phản ứng ứng động ở cây trinh nữ." },
+      { "kind": "knowledge", "title": "Cơ chế phục hồi thể gối", "body": "Sau khi ngừng kích thích, nước từ gian bào từ từ thẩm thấu trở lại tế bào thể gối trong khoảng 10-15 phút giúp lá xòe trở lại." },
+      { "kind": "answer", "title": "Kết luận", "body": "Sau khoảng 10 – 15 phút khi nước thẩm thấu trở lại đầy các tế bào thể gối." }
+    ],
+    "finalSolution": "Sau 10 – 15 phút để yên, nước thẩm thấu trở lại thể gối giúp lá cây trinh nữ xòe nở bình thường.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng lá cây cụp vĩnh viễn không thể hồi phục sau va chạm." }
+    ]
+  },
+  {
+    "id": "bio-g7-b15-q07",
+    "lessonId": "bio-g7-b15",
+    "sgkBaiSo": 35,
+    "skillIds": ["bio-thuc-hanh-cam-ung"],
+    "difficulty": 2,
+    "prompt": "Điểm khác biệt căn bản giữa phản ứng cụp lá ở cây trinh nữ với phản ứng uốn cong của ngọn cây đậu trong thí nghiệm hướng sáng là gì?",
+    "knowledge": ["kb-bio-g7-cam-ung-thuc-vat-vs-dong-vat", "kb-bio-g7-huong-dong-thuc-vat", "kb-bio-g7-ung-dong-tiep-xuc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Cụp lá là ứng động nhanh do thay đổi sức trương nước, còn uốn cong hướng sáng là hướng động chậm do phân chia và dãn dài tế bào sinh trưởng" },
+        { "id": "opt-b", "label": "Cụp lá diễn ra trong nhiều tuần, còn hướng sáng diễn ra trong 1 giây" },
+        { "id": "opt-c", "label": "Cụp lá có sự tham gia của hệ thần kinh còn hướng sáng thì không" },
+        { "id": "opt-d", "label": "Cả hai phản ứng đều giống hệt nhau về mọi mặt cơ chế" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Phản ứng cụp lá diễn ra trong vài giây, còn cây đậu uốn cong cần nhiều ngày." },
+      { "level": 2, "text": "Một bên do sự thay đổi thể tích nước trong tế bào, một bên do sự kéo dài tế bào không đều khi sinh trưởng." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "So sánh cơ chế sinh lý", "body": "Phân biệt bản chất giữa ứng động tiếp xúc và hướng động sinh trưởng." },
+      { "kind": "knowledge", "title": "Bản chất hướng động vs ứng động", "body": "Ứng động ở trinh nữ không do sinh trưởng (nhờ thay đổi sức trương nước thể gối nên rất nhanh); hướng động ở mầm đậu liên quan đến sinh trưởng phân chia dãn dài tế bào nên chậm." },
+      { "kind": "answer", "title": "Kết luận", "body": "Cụp lá là ứng động nhanh do thay đổi sức trương nước, còn uốn cong hướng sáng là hướng động chậm do phân chia và dãn dài tế bào sinh trưởng." }
+    ],
+    "finalSolution": "Cụp lá cây trinh nữ là ứng động nhanh do sức trương nước, còn tính hướng sáng là hướng động sinh trưởng chậm.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Đánh đồng mọi phản ứng của thực vật đều do sự phân chia tế bào sinh trưởng." }
+    ]
+  },
+  {
+    "id": "bio-g7-b15-q08",
+    "lessonId": "bio-g7-b15",
+    "sgkBaiSo": 35,
+    "skillIds": ["bio-thuc-hanh-cam-ung"],
+    "difficulty": 1,
+    "prompt": "Khi quan sát một số loài hoa trong tự nhiên như hoa mười giờ, hoa bồ công anh, ta thấy hoa nở vào ban ngày có nắng ấm và khép cánh lại khi trời tối. Đây là minh chứng cho hiện tượng cảm ứng nào?",
+    "knowledge": ["kb-bio-g7-thuc-hanh-ung-dong-chong-nong-am"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Hiện tượng ứng động nở hoa theo nhịp nhiệt độ và ánh sáng" },
+        { "id": "opt-b", "label": "Tính hướng đất dương của cánh hoa" },
+        { "id": "opt-c", "label": "Tập tính học được của thực vật" },
+        { "id": "opt-d", "label": "Hiện tượng thoát hơi nước qua khí khổng cánh hoa" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Ánh sáng mặt trời và nhiệt độ ấm áp kích thích cánh hoa mở rộng ra." },
+      { "level": 2, "text": "Hiện tượng này diễn ra không theo hướng của nguồn kích thích mà theo chu kì ngày đêm (ứng động)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận diện hiện tượng tự nhiên", "body": "Giải thích chu kỳ đóng mở cánh hoa theo nhịp ngày đêm ở hoa mười giờ, bồ công anh." },
+      { "kind": "knowledge", "title": "Ứng động nở hoa", "body": "Sự thay đổi nhiệt độ và ánh sáng làm thay đổi tốc độ sinh trưởng giữa mặt trên và mặt dưới cánh hoa, tạo nên hiện tượng ứng động nở hoa." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hiện tượng ứng động nở hoa theo nhịp nhiệt độ và ánh sáng." }
+    ],
+    "finalSolution": "Hiện tượng hoa nở khi nắng ấm và khép cánh khi trời tối là ứng động nở hoa theo nhiệt độ và ánh sáng.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm tưởng hoa có 'tập tính' như động vật." }
+    ]
+  }
+]

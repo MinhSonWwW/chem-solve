@@ -93,14 +93,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Đồng hồ quả lắc"
+          "label": "Đồng hồ bấm giây"
         },
         {
           "id": "opt-d",
-          "label": "Đồng hồ bấm giây"
+          "label": "Đồng hồ quả lắc"
         }
       ],
-      "correctId": "opt-d"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -154,11 +154,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Hiệu chỉnh đưa kim hoặc chỉ số đồng hồ về vị trí số 0 (Reset)"
+          "label": "Lắc nhẹ đồng hồ để kim chuyển động trơn tru"
         },
         {
           "id": "opt-b",
-          "label": "Lắc nhẹ đồng hồ để kim chuyển động trơn tru"
+          "label": "Hiệu chỉnh đưa kim hoặc chỉ số đồng hồ về vị trí số 0 (Reset)"
         },
         {
           "id": "opt-c",
@@ -169,7 +169,7 @@
           "label": "Đặt mắt nhìn nghiêng góc 45 độ vào mặt số"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -329,22 +329,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "23 phút 30 giây (hoặc 1 410 giây)"
-        },
-        {
-          "id": "opt-b",
           "label": "38 phút 30 giây (hoặc 2 310 giây)"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "15 phút 30 giây (hoặc 930 giây)"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "23 phút 00 giây (hoặc 1 380 giây)"
+        },
+        {
+          "id": "opt-d",
+          "label": "23 phút 30 giây (hoặc 1 410 giây)"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {

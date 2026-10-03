@@ -1,0 +1,90 @@
+[
+  {
+    "id": "kb-bio-g8-pituitary-gland",
+    "name": "Tuyến yên (Pituitary Gland)",
+    "location": "Nằm ở đáy não, gắn liền với vùng dưới đồi (kích thước chỉ bằng hạt đậu)",
+    "role": "Tuyến nội tiết giữ vai trò nhạc trưởng (chỉ huy) điều hòa hoạt động của nhiều tuyến nội tiết khác trong cơ thể.",
+    "hormones": [
+      {
+        "name": "GH (Hormone sinh trưởng - Growth Hormone)",
+        "target": "Hầu hết các mô trong cơ thể, đặc biệt là xương dài và cơ bắp",
+        "effect": "Kích thích phân chia tế bào, tăng trưởng chiều cao và khối lượng cơ thể.",
+        "disorders": "Thiếu GH lúc nhỏ gây bệnh người lùn cân đối; thừa GH lúc nhỏ gây bệnh người khổng lồ; thừa GH ở người trưởng thành gây to đầu chi (bàn tay, bàn chân, xương hàm dưới to dị thường)."
+      },
+      {
+        "name": "TSH, ACTH, FSH, LH",
+        "target": "Tuyến giáp, tuyến trên thận và tuyến sinh dục",
+        "effect": "Kích thích và điều hòa các tuyến nội tiết cấp dưới tiết hormone tương ứng."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g8-thyroid-gland",
+    "name": "Tuyến giáp (Thyroid Gland)",
+    "location": "Nằm ở phía trước cổ, áp vào mặt trước sụn giáp của thanh quản",
+    "role": "Điều hòa chuyển hóa cơ bản và sinh nhiệt của cơ thể.",
+    "hormones": [
+      {
+        "name": "Thyroxine (TH - chứa nguyên tố Iod)",
+        "target": "Tất cả các tế bào trong cơ thể",
+        "effect": "Kích thích quá trình trao đổi chất, tăng cường oxy hóa tế bào sinh nhiệt lượng, hỗ trợ phát triển hệ thần kinh và trí não ở trẻ nhỏ.",
+        "disorders": "Thiếu Iod dẫn đến bệnh bướu cổ do tuyến giáp phì đại, trẻ em chậm phát triển trí tuệ và còi cọc; ưu năng tuyến giáp (tiết quá nhiều thyroxine) gây bệnh Basedow với biểu hiện mắt lồi, tim đập nhanh, sút cân, bồn chồn mất ngủ."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g8-pancreas-endocrine",
+    "name": "Tuyến tụy (Phần nội tiết - Đảo tụy Langerhans)",
+    "location": "Nằm vắt ngang sau dạ dày, nối tiếp với khúc ruột tá tràng (tuyến pha vừa nội tiết vừa ngoại tiết)",
+    "role": "Duy trì ổn định nồng độ đường glucose trong máu quanh ngưỡng chuẩn 0,1% (khoảng 4,4 - 6,1 mmol/L).",
+    "hormones": [
+      {
+        "name": "Insulin (tiết bởi tế bào beta)",
+        "target": "Gan, mô cơ và mô mỡ",
+        "effect": "Thúc đẩy tế bào hấp thu glucose, kích thích gan và cơ chuyển hóa glucose tự do thành glycogen dự trữ → Hạ nồng độ đường huyết sau bữa ăn.",
+        "disorders": "Tế bào beta bị tổn thương hoặc giảm nhạy cảm thụ thể insulin dẫn đến bệnh đái tháo đường (tiểu đường): glucose trong máu tăng cao bài tiết ra ngoài theo nước tiểu."
+      },
+      {
+        "name": "Glucagon (tiết bởi tế bào alpha)",
+        "target": "Gan",
+        "effect": "Kích thích gan phân giải glycogen dự trữ thành glucose giải phóng vào máu → Nâng nồng độ đường huyết khi đói hoặc khi cơ thể lao động nặng."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g8-adrenal-gland",
+    "name": "Tuyến trên thận (Adrenal Gland)",
+    "location": "Gồm 2 tuyến chụp lên cực trên của 2 quả thận",
+    "role": "Tham gia điều hòa muối khoáng, chuyển hóa và đáp ứng stress.",
+    "hormones": [
+      {
+        "name": "Adrenaline và Noradrenaline (Tủy tuyến)",
+        "target": "Tim, mạch máu, cơ trơn khí phế quản",
+        "effect": "Tăng nhịp tim, co mạch ngoại vi nâng huyết áp, dãn phế quản, tăng đường huyết giúp cơ thể ứng phó tức thì với tình huống khẩn cấp nguy hiểm (phản ứng chống trả hoặc bỏ chạy)."
+      },
+      {
+        "name": "Aldosterone và Cortisol (Vỏ tuyến)",
+        "target": "Ống thận và các mô",
+        "effect": "Điều hòa hấp thu natri (Na+), bài xuất kali (K+) ở ống thận và điều hòa chuyển hóa glucose, kháng viêm."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g8-gonads-endocrine",
+    "name": "Tuyến sinh dục (Gonads)",
+    "location": "Tinh hoàn ở nam (trong bìu) và Buồng trứng ở nữ (trong khoang chậu)",
+    "role": "Vừa sản xuất giao tử (ngoại tiết), vừa tiết hormone sinh dục quyết định giới tính và sinh sản (nội tiết).",
+    "hormones": [
+      {
+        "name": "Testosterone (ở nam giới do tế bào kẽ tinh hoàn tiết)",
+        "target": "Cơ quan sinh dục nam và toàn bộ cơ thể",
+        "effect": "Kích thích hoàn thiện cơ quan sinh dục nam, sản sinh tinh trùng, phát triển các đặc tính sinh dục phụ thứ cấp: vỡ giọng trầm, mọc râu lông, khung xương thắt lưng hẹp vai rộng, cơ bắp phát triển."
+      },
+      {
+        "name": "Estrogen và Progesterone (ở nữ giới do nang trứng và thể vàng tiết)",
+        "target": "Cơ quan sinh sản nữ và toàn bộ cơ thể",
+        "effect": "Kích thích rụng trứng, điều hòa chu kì kinh nguyệt, làm dày niêm mạc tử cung đón hợp tử làm tổ, phát triển các đặc tính sinh dục phụ thứ cấp: ngực nở, mông hông nở rộng, giọng thanh, da mịn màng."
+      }
+    ]
+  }
+]

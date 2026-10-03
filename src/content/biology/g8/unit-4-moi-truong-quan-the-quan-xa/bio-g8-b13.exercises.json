@@ -1,0 +1,554 @@
+[
+  {
+    "id": "bio-g8-b13-q01",
+    "lessonId": "bio-g8-b13",
+    "sgkBaiSo": 42,
+    "skillIds": [
+      "bio-quan-the-sinh-vat"
+    ],
+    "difficulty": 1,
+    "prompt": "Ví dụ nào sau đây thể hiện ĐÚNG một quần thể sinh vật trong tự nhiên?",
+    "knowledge": [
+      "kb-bio-g8-khai-niem-quan-the"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Đàn chim sẻ cùng sinh sống trong một cánh đồng lúa ở ngoại thành Hà Nội"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tập hợp các loài cá mè, cá trắm và cá chép trong một chiếc ao nuôi"
+        },
+        {
+          "id": "opt-c",
+          "label": "Các cây bắp cải, cà chua và hành hoa trồng trên một luống đất"
+        },
+        {
+          "id": "opt-d",
+          "label": "Các con thú gồm sư tử, ngựa vằn và linh cẩu nhốt trong vườn bách thú"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Quần thể sinh vật bắt buộc phải gồm các cá thể CÙNG MỘT LOÀI."
+      },
+      {
+        "level": 2,
+        "text": "Đàn chim sẻ là tập hợp các cá thể cùng loài chim sẻ sống cùng nơi và cùng thời gian."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Điều kiện của một quần thể",
+        "body": "Phải thỏa mãn 3 yếu tố: cùng loài, cùng khoảng không gian và thời gian, có khả năng giao phối sinh sản tự do."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân tích các phương án",
+        "body": "Đàn chim sẻ trên đồng lúa là tập hợp cá thể cùng một loài (chim sẻ) sinh sống xác định và sinh sản được. Các ao cá hay luống rau gồm nhiều loài khác nhau nên thuộc cấp độ quần xã."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đàn chim sẻ trên cánh đồng lúa là một quần thể sinh vật."
+      }
+    ],
+    "finalSolution": "Quần thể sinh vật là cấp độ tổ chức sống cơ bản của cùng một loài trong sinh thái học.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm tập hợp nhiều loài cá trong ao là một quần thể cá (nhiều loài là quần xã cá)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b13-q02",
+    "lessonId": "bio-g8-b13",
+    "sgkBaiSo": 42,
+    "skillIds": [
+      "bio-quan-the-sinh-vat"
+    ],
+    "difficulty": 1,
+    "prompt": "Tỉ lệ giới tính (tỉ lệ đực : cái) của quần thể sinh vật ở giai đoạn sơ sinh thường xấp xỉ tỉ lệ nào và mang ý nghĩa gì?",
+    "knowledge": [
+      "kb-bio-g8-dac-trung-quan-the"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Xấp xỉ 1 : 1, phản ánh tiềm năng sinh sản và duy trì nòi giống của quần thể"
+        },
+        {
+          "id": "opt-b",
+          "label": "Luôn là 1 đực : 10 cái ở mọi loài động vật"
+        },
+        {
+          "id": "opt-c",
+          "label": "Luôn là 10 đực : 1 cái để tăng sức cạnh tranh"
+        },
+        {
+          "id": "opt-d",
+          "label": "Không có tỉ lệ nào cố định và không ảnh hưởng đến sinh sản"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cơ chế phân li đồng đều của nhiễm sắc thể giới tính X và Y trong giảm phân tạo tỉ lệ 50% đực : 50% cái."
+      },
+      {
+        "level": 2,
+        "text": "Tỉ lệ xấp xỉ 1:1 đảm bảo sự cân bằng giới tính cho quá trình giao phối."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cơ sở di truyền tỉ lệ giới tính",
+        "body": "Quá trình thụ tinh ngẫu nhiên giữa giao tử mang NST X và Y tạo tỉ lệ giới tính ban đầu."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Ý nghĩa sinh thái",
+        "body": "Ở đa số động vật phân tính, tỉ lệ đực : cái ở giai đoạn sơ sinh xấp xỉ 1 : 1. Tỉ lệ này phản ánh cấu trúc sinh sản và tiềm năng gia tăng số lượng của quần thể trong tự nhiên."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tỉ lệ giới tính xấp xỉ 1 : 1 phản ánh tiềm năng sinh sản của quần thể."
+      }
+    ],
+    "finalSolution": "Tỉ lệ giới tính có thể biến động theo tuổi thọ, mùa vụ và điều kiện sống nhưng luôn có xu hướng cân bằng để bảo tồn loài.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng tỉ lệ giới tính trong tự nhiên luôn lệch hoàn toàn về một phía."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b13-q03",
+    "lessonId": "bio-g8-b13",
+    "sgkBaiSo": 42,
+    "skillIds": [
+      "bio-quan-the-sinh-vat"
+    ],
+    "difficulty": 2,
+    "prompt": "Cấu trúc nhóm tuổi của quần thể sinh vật được chia thành 3 nhóm tuổi sinh thái gồm những nhóm nào?",
+    "knowledge": [
+      "kb-bio-g8-dac-trung-quan-the"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Nhóm tuổi trước sinh sản, Nhóm tuổi sinh sản và Nhóm tuổi sau sinh sản"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tuổi sơ sinh, Tuổi thiếu nhi và Tuổi học sinh"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tuổi mùa xuân, Tuổi mùa hạ và Tuổi mùa đông"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tuổi ấu trùng, Tuổi nhộng và Tuổi trưởng thành"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Phân chia theo khả năng tham gia vào hoạt động sinh sản tạo cá thể mới."
+      },
+      {
+        "level": 2,
+        "text": "Giai đoạn chưa sinh sản được (trước), đang sinh sản, và đã già hết khả năng sinh sản (sau)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân loại nhóm tuổi sinh thái",
+        "body": "Nhóm tuổi sinh thái được xác định dựa trên chu kì sinh sản của loài."
+      },
+      {
+        "kind": "knowledge",
+        "title": "3 nhóm tuổi chức năng",
+        "body": "1. Nhóm trước sinh sản (cá thể đang lớn, làm tăng khối lượng quần thể); 2. Nhóm sinh sản (tham gia giao phối tạo thế hệ con, quyết định mức sinh sản); 3. Nhóm sau sinh sản (cá thể già cỗi không còn khả năng sinh sản)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "3 nhóm tuổi gồm: trước sinh sản, sinh sản và sau sinh sản."
+      }
+    ],
+    "finalSolution": "Tỉ lệ giữa 3 nhóm tuổi này quyết định xu hướng tăng trưởng hay suy thoái của toàn bộ quần thể.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm nhóm tuổi sinh thái với các giai đoạn biến thái của côn trùng."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b13-q04",
+    "lessonId": "bio-g8-b13",
+    "sgkBaiSo": 42,
+    "skillIds": [
+      "bio-quan-the-sinh-vat"
+    ],
+    "difficulty": 2,
+    "prompt": "Một tháp tuổi của quần thể có phần đáy rất rộng (nhóm tuổi trước sinh sản chiếm tỉ lệ áp đảo) và đỉnh tháp nhọn hẹp thể hiện dạng tháp tuổi nào?",
+    "knowledge": [
+      "kb-bio-g8-dac-trung-quan-the"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tháp phát triển (quần thể đang có xu hướng tăng trưởng số lượng mạnh mẽ)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tháp suy thoái (quần thể có nguy cơ diệt vong)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tháp ổn định (số lượng cá thể không đổi)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tháp biến dạng ngẫu nhiên không có ý nghĩa dự báo"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đáy rộng chứng tỏ thế hệ cá thể non, con non mới sinh rất dồi dào."
+      },
+      {
+        "level": 2,
+        "text": "Số lượng cá thể chuẩn bị bước vào độ tuổi sinh sản rất lớn báo hiệu quần thể đang trên đà phát triển."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hình dạng tháp tuổi",
+        "body": "Tháp tuổi biểu diễn tỉ lệ các nhóm tuổi xếp chồng lên nhau từ dưới lên."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc trưng tháp phát triển",
+        "body": "Tháp phát triển có hình tam giác đáy rộng đỉnh nhọn. Nhóm trước sinh sản chiếm tỉ lệ cao vượt trội, nhóm sau sinh sản ít, chứng tỏ mức sinh sản cao, quần thể đang mở rộng và tăng trưởng nhanh."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tháp có đáy rộng biểu thị tháp phát triển (quần thể đang tăng trưởng mạnh)."
+      }
+    ],
+    "finalSolution": "Tháp phát triển là dấu hiệu của một quần thể trẻ, khỏe mạnh và có khả năng chống chịu cao trong sinh thái.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm tháp phát triển với tháp suy thoái (tháp suy thoái đáy hẹp, nhóm già chiếm đa số)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b13-q05",
+    "lessonId": "bio-g8-b13",
+    "sgkBaiSo": 42,
+    "skillIds": [
+      "bio-quan-the-sinh-vat"
+    ],
+    "difficulty": 2,
+    "prompt": "Người ta đếm được 2 400 cây thông ba lá sống trên một khu đồi có diện tích 2 hecta (ha). Mật độ cá thể của quần thể thông này là bao nhiêu?",
+    "knowledge": [
+      "kb-bio-g8-mat-do-quan-the"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "1 200 cây / ha"
+        },
+        {
+          "id": "opt-b",
+          "label": "4 800 cây / ha"
+        },
+        {
+          "id": "opt-c",
+          "label": "2 400 cây / ha"
+        },
+        {
+          "id": "opt-d",
+          "label": "600 cây / ha"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mật độ cá thể D = Tổng số cá thể N chia cho diện tích S."
+      },
+      {
+        "level": 2,
+        "text": "D = 2 400 cây : 2 ha = 1 200 cây/ha."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Công thức tính mật độ cá thể",
+        "body": "Mật độ cá thể D = N / S, trong đó N là số lượng cá thể, S là diện tích phân bố."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Thay số tính toán",
+        "body": "N = 2 400 cây thông; S = 2 ha. Mật độ D = 2 400 / 2 = 1 200 cây/ha."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Mật độ của quần thể thông là 1 200 cây/ha."
+      }
+    ],
+    "finalSolution": "Mật độ cá thể là chỉ số định lượng phản ánh mức độ tập trung cá thể trên một đơn vị diện tích cư trú.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Lấy tổng số cá thể nhân với diện tích thay vì làm phép chia."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b13-q06",
+    "lessonId": "bio-g8-b13",
+    "sgkBaiSo": 42,
+    "skillIds": [
+      "bio-quan-the-sinh-vat"
+    ],
+    "difficulty": 2,
+    "prompt": "Vì sao mật độ cá thể lại được xem là đặc trưng cơ bản và quan trọng nhất của quần thể sinh vật?",
+    "knowledge": [
+      "kb-bio-g8-mat-do-quan-the"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vì mật độ ảnh hưởng trực tiếp đến mức độ sử dụng nguồn sống, tần số gặp gỡ giao phối cũng như mức sinh sản và mức tử vong của quần thể"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vì mật độ là chỉ số duy nhất không bao giờ thay đổi dù môi trường biến động"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì mật độ quyết định màu sắc và hình dạng bên ngoài của từng cá thể"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì chỉ có những loài có mật độ cao mới có khả năng quang hợp"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mật độ quá dày sẽ dẫn đến cạnh tranh thức ăn khốc liệt; mật độ quá thưa sẽ khó tìm bạn tình giao phối."
+      },
+      {
+        "level": 2,
+        "text": "Mật độ chi phối toàn bộ các hoạt động sống và quyết định sự tồn tại lâu dài của quần thể."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tầm quan trọng của mật độ",
+        "body": "Mật độ cá thể là trung tâm điều hòa mối quan hệ giữa quần thể và môi trường."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tác động chi phối của mật độ",
+        "body": "Mật độ quyết định áp lực cạnh tranh thức ăn, nơi ở; quyết định tỉ lệ thụ tinh, sinh sản, di cư và tử vong. Khi mật độ biến động, toàn bộ cấu trúc tuổi và tỉ lệ giới tính đều phải điều chỉnh theo."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Mật độ ảnh hưởng trực tiếp đến sử dụng nguồn sống, mức sinh sản và tử vong của quần thể."
+      }
+    ],
+    "finalSolution": "Mật độ cá thể là chiếc phong vũ biểu sinh học phản ánh tình trạng cân bằng giữa quần thể và sức chứa của môi trường.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng mật độ cá thể là hằng số bất biến cố định suốt đời sống quần thể."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b13-q07",
+    "lessonId": "bio-g8-b13",
+    "sgkBaiSo": 42,
+    "skillIds": [
+      "bio-quan-the-sinh-vat"
+    ],
+    "difficulty": 2,
+    "prompt": "Hiện tượng nào sau đây là ví dụ điển hình của dạng biến động số lượng cá thể THEO CHU KÌ trong tự nhiên?",
+    "knowledge": [
+      "kb-bio-g8-bien-dong-so-luong-quan-the"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Số lượng ếch đồng và muỗi tăng vọt vào mùa mưa ẩm và sụt giảm mạnh vào mùa khô hạn hàng năm"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hàng triệu con chim bị chết do một trận sóng thần bất ngờ ập vào bờ biển"
+        },
+        {
+          "id": "opt-c",
+          "label": "Số lượng cá trong hồ bị suy giảm nghiêm trọng do một vụ tràn dầu hóa chất đột ngột"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cả cánh rừng bị cháy rụi do sét đánh làm chết hầu hết các loài thú"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Biến động theo chu kì lặp đi lặp lại nhịp nhàng theo mùa vụ trong năm hoặc chu kì nhiều năm."
+      },
+      {
+        "level": 2,
+        "text": "Mùa mưa đến muỗi và ếch sinh sản rộ, mùa khô lạnh giảm sút lặp lại đều đặn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân loại biến động số lượng",
+        "body": "Chia thành biến động theo chu kì (có quy luật thời gian) và biến động không theo chu kì (đột ngột do thiên tai)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân tích chu kì mùa vụ",
+        "body": "Mùa mưa khí hậu ấm ẩm, nguồn nước và côn trùng phong phú giúp quần thể ếch và muỗi sinh sản bùng nổ; mùa khô hanh thiếu nước số lượng giảm sút. Sự tăng giảm này lặp lại đều đặn hàng năm theo chu kì mùa."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Số lượng ếch và muỗi tăng vào mùa mưa, giảm vào mùa khô là biến động theo chu kì."
+      }
+    ],
+    "finalSolution": "Biến động theo chu kì là sự thích nghi nhịp nhàng của quần thể đối với sự thay đổi có tính tuần hoàn của môi trường.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm biến động đột ngột do cháy rừng, sóng thần thành biến động theo chu kì."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b13-q08",
+    "lessonId": "bio-g8-b13",
+    "sgkBaiSo": 42,
+    "skillIds": [
+      "bio-quan-the-sinh-vat"
+    ],
+    "difficulty": 3,
+    "prompt": "Khi số lượng cá thể trong quần thể tăng quá cao vượt sức chứa của môi trường (mật độ quá dày), cơ chế tự điều chỉnh nào giúp quần thể quay trở về mức cân bằng?",
+    "knowledge": [
+      "kb-bio-g8-bien-dong-so-luong-quan-the"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cạnh tranh cùng loài gay gắt làm tăng tỉ lệ tử vong, thúc đẩy di cư sang nơi khác và làm giảm tỉ lệ sinh sản"
+        },
+        {
+          "id": "opt-b",
+          "label": "Các cá thể tự động ngừng thở để nhường thức ăn cho thế hệ sau"
+        },
+        {
+          "id": "opt-c",
+          "label": "Quần thể sẽ tăng gấp đôi tốc độ sinh sản để bù đắp sự thiếu hụt lương thực"
+        },
+        {
+          "id": "opt-d",
+          "label": "Mọi cá thể đều chuyển sang sống kí sinh trên cơ thể nhau"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thức ăn và nơi ở khan hiếm làm bùng nổ sự cạnh tranh gay gắt giữa các cá thể cùng loài."
+      },
+      {
+        "level": 2,
+        "text": "Cá thể yếu bị đào thải chết (tăng tử vong), một số tách đàn bỏ đi (di cư), sức khỏe kém làm đẻ ít (giảm sinh)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cơ chế tự điều chỉnh của quần thể",
+        "body": "Quần thể có khả năng tự điều hòa số lượng quanh một giá trị cân bằng sinh thái."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phản ứng khi mật độ vượt ngưỡng",
+        "body": "Nguồn thức ăn, nơi làm tổ bị thiếu hụt gay gắt. Quan hệ cạnh tranh cùng loài tăng mạnh, dịch bệnh lây lan dễ dàng khiến tử vong tăng cao, con cái suy dinh dưỡng giảm đẻ trứng, một bộ phận cá thể di cư tìm vùng đất mới. Nhờ đó, mật độ cá thể hạ dần về mức cân bằng phù hợp khả năng cung cấp của môi trường."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cạnh tranh gay gắt làm tăng tử vong, thúc đẩy di cư và giảm sinh sản giúp lập lại cân bằng."
+      }
+    ],
+    "finalSolution": "Khả năng tự điều chỉnh mật độ là cơ chế sinh học kì diệu đảm bảo quần thể không bị tự hủy diệt vì quá tải nguồn sống.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng cạnh tranh cùng loài luôn có hại và đẩy quần thể đến bờ vực tuyệt chủng."
+      }
+    ]
+  }
+]

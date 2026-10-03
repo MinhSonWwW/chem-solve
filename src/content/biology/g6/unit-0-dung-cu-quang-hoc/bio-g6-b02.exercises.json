@@ -1,0 +1,416 @@
+[
+  {
+    "id": "bio-g6-b02-q01",
+    "lessonId": "bio-g6-b02",
+    "sgkBaiSo": 4,
+    "skillIds": [
+      "bio-kinh-hien-vi"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong cấu tạo của kính hiển vi quang học, bộ phận thị kính và vật kính thuộc hệ thống nào sau đây?",
+    "knowledge": [
+      "bio-cau-tao-kinh-hien-vi",
+      "bio-he-thong-phong-dai"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hệ thống phóng đại"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hệ thống giá đỡ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hệ thống chiếu sáng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hệ thống điều chỉnh"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thị kính và vật kính đều là các thấu kính có ghi độ bội giác (4x, 10x, 40x...) để làm to kích thước ảnh."
+      },
+      {
+        "level": 2,
+        "text": "Hệ thống có chức năng làm to ảnh của mẫu vật được gọi là hệ thống phóng đại."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích câu hỏi",
+        "body": "Đề bài yêu cầu xác định hệ thống chức năng chứa thị kính và vật kính."
+      },
+      {
+        "kind": "knowledge",
+        "title": "4 hệ thống của kính hiển vi quang học",
+        "body": "Kính gồm 4 hệ thống: Giá đỡ (thân, chân, bàn kính); Phóng đại (thị kính, vật kính); Chiếu sáng (đèn/gương, màn chắn); Điều chỉnh (ốc to, ốc nhỏ)."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án đúng",
+        "body": "Thị kính và vật kính là 2 bộ phận quang học đảm nhiệm chức năng phóng to ảnh, thuộc hệ thống phóng đại."
+      }
+    ],
+    "finalSolution": "Thị kính và vật kính là các thấu kính quang học có chức năng phóng đại hình ảnh của mẫu vật, thuộc Hệ thống phóng đại của kính hiển vi.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm thị kính và vật kính với hệ thống điều chỉnh (vốn là ốc to và ốc nhỏ)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b02-q02",
+    "lessonId": "bio-g6-b02",
+    "sgkBaiSo": 4,
+    "skillIds": [
+      "bio-kinh-hien-vi"
+    ],
+    "difficulty": 2,
+    "prompt": "Phân loại các bộ phận của kính hiển vi quang học vào 4 hệ thống chức năng tương ứng:",
+    "knowledge": [
+      "bio-cau-tao-kinh-hien-vi"
+    ],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        {
+          "id": "b-gia-do",
+          "label": "Hệ thống giá đỡ"
+        },
+        {
+          "id": "b-phong-dai",
+          "label": "Hệ thống phóng đại"
+        },
+        {
+          "id": "b-chieu-sang",
+          "label": "Hệ thống chiếu sáng"
+        },
+        {
+          "id": "b-dieu-chinh",
+          "label": "Hệ thống điều chỉnh"
+        }
+      ],
+      "items": [
+        {
+          "id": "it-1",
+          "label": "Chân kính và thân kính",
+          "bucketId": "b-gia-do"
+        },
+        {
+          "id": "it-2",
+          "label": "Bàn kính và kẹp giữ tiêu bản",
+          "bucketId": "b-gia-do"
+        },
+        {
+          "id": "it-3",
+          "label": "Thị kính và các vật kính",
+          "bucketId": "b-phong-dai"
+        },
+        {
+          "id": "it-4",
+          "label": "Đèn chiếu sáng và màn chắn sáng",
+          "bucketId": "b-chieu-sang"
+        },
+        {
+          "id": "it-5",
+          "label": "Ốc to (ốc sơ cấp) và ốc nhỏ (ốc vi cấp)",
+          "bucketId": "b-dieu-chinh"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Các bộ phận nâng đỡ mẫu vật và khung kính thuộc hệ thống giá đỡ."
+      },
+      {
+        "level": 2,
+        "text": "Ốc vặn nâng hạ bàn kính để lấy nét thuộc hệ thống điều chỉnh; đèn và gương cung cấp ánh sáng thuộc hệ thống chiếu sáng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận diện 4 nhóm chức năng",
+        "body": "Xếp các bộ phận vào Giá đỡ, Phóng đại, Chiếu sáng, Điều chỉnh."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Chức năng cụ thể từng bộ phận",
+        "body": "Chân, thân, bàn kính nâng đỡ thiết bị; Thị kính, vật kính phóng đại ảnh; Đèn, màn chắn chiếu sáng; Ốc to, ốc nhỏ điều chỉnh tiêu cự."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất phân nhóm",
+        "body": "Phân chia chính xác 5 hạng mục vào 4 hệ thống cấu tạo chuẩn SGK KNTT."
+      }
+    ],
+    "finalSolution": "Hệ thống giá đỡ: Chân kính, thân kính, bàn kính; Hệ thống phóng đại: Thị kính, vật kính; Hệ thống chiếu sáng: Đèn, màn chắn sáng; Hệ thống điều chỉnh: Ốc to, ốc nhỏ.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Xếp nhầm bàn kính vào hệ thống điều chỉnh thay vì hệ thống giá đỡ."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b02-q03",
+    "lessonId": "bio-g6-b02",
+    "sgkBaiSo": 4,
+    "skillIds": [
+      "bio-kinh-hien-vi"
+    ],
+    "difficulty": 1,
+    "prompt": "Một kính hiển vi quang học có thị kính ghi 16x và học sinh đang xoay mâm chọn vật kính 40x. Hãy tính độ phóng đại tổng cộng của hình ảnh quan sát được (đơn vị: lần):",
+    "knowledge": [
+      "bio-do-phong-dai-tong"
+    ],
+    "answer": {
+      "kind": "number",
+      "value": 640,
+      "unit": "lần"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Độ phóng đại của kính hiển vi bằng tích số giữa độ phóng đại thị kính và vật kính."
+      },
+      {
+        "level": 2,
+        "text": "Thực hiện phép nhân: 16 nhân với 40."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Tóm tắt dữ kiện đề bài",
+        "body": "Độ phóng đại thị kính = 16x; Độ phóng đại vật kính = 40x."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Áp dụng công thức tính độ phóng đại",
+        "body": "Độ phóng đại tổng = Độ phóng đại thị kính × Độ phóng đại vật kính."
+      },
+      {
+        "kind": "compute",
+        "title": "Thực hiện phép tính",
+        "body": "16 × 40 = 640 lần."
+      }
+    ],
+    "finalSolution": "Độ phóng đại tổng cộng của kính hiển vi là: 16 × 40 = 640 lần.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Lấy 16 + 40 = 56 lần (sai phép toán, phải làm phép nhân chứ không cộng)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b02-q04",
+    "lessonId": "bio-g6-b02",
+    "sgkBaiSo": 4,
+    "skillIds": [
+      "bio-kinh-hien-vi"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp các thao tác sau theo đúng trình tự chuẩn khi sử dụng kính hiển vi quang học để quan sát tiêu bản tế bào:",
+    "knowledge": [
+      "bio-quy-trinh-kinh-hien-vi"
+    ],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Bước 1: Bật đèn chiếu sáng và điều chỉnh màn chắn sáng để trường nhìn sáng đều",
+        "Bước 2: Đặt tiêu bản lên bàn kính, kẹp giữ chặt và đưa mẫu vật vào giữa lỗ sáng",
+        "Bước 3: Mắt nhìn ngang bàn kính, vặn ốc to đưa bàn kính lên gần vật kính",
+        "Bước 4: Mắt nhìn vào thị kính, vặn ốc to hạ bàn kính từ từ xuống để tìm ảnh, sau đó dùng ốc nhỏ lấy nét sắc nét"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Muốn nhìn thấy vật thì trước tiên phải có ánh sáng (bước lấy sáng đầu tiên)."
+      },
+      {
+        "level": 2,
+        "text": "Đặt tiêu bản lên bàn kính trước khi nâng bàn kính lấy nét."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu bài toán",
+        "body": "Xác định tuần tự 4 bước quan sát mẫu vật trên kính hiển vi quang học."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy trình chuẩn trong SGK KHTN 6",
+        "body": "1. Lấy sáng → 2. Đặt tiêu bản → 3. Nâng bàn kính lên gần vật kính (nhìn ngang) → 4. Hạ bàn kính bằng ốc to rồi tinh chỉnh bằng ốc nhỏ (nhìn vào thị kính)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận thứ tự thao tác",
+        "body": "Tuân thủ nghiêm ngặt thứ tự trên để tránh làm vỡ tiêu bản và lấy được ảnh rõ nét nhanh nhất."
+      }
+    ],
+    "finalSolution": "Trình tự chuẩn: Lấy sáng → Đặt tiêu bản → Nhìn ngang nâng bàn kính → Nhìn thị kính hạ bàn kính bằng ốc to rồi chỉnh nét bằng ốc nhỏ.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Vừa nhìn vào thị kính vừa vặn ốc to nâng bàn kính lên làm vật kính đâm vỡ lam kính tiêu bản."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b02-q05",
+    "lessonId": "bio-g6-b02",
+    "sgkBaiSo": 4,
+    "skillIds": [
+      "bio-kinh-hien-vi"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi dùng ốc to để nâng bàn kính lên gần sát vật kính, tại sao mắt của người quan sát PHẢI nhìn ngang thân kính từ phía ngoài?",
+    "knowledge": [
+      "bio-quy-trinh-kinh-hien-vi"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Để ánh sáng không chiếu thẳng vào làm tổn thương võng mạc mắt"
+        },
+        {
+          "id": "opt-b",
+          "label": "Để kiểm tra xem bóng đèn chiếu sáng có bị nhấp nháy không"
+        },
+        {
+          "id": "opt-c",
+          "label": "Để quan sát khoảng cách, tránh cho đầu vật kính chạm mạnh làm vỡ lam kính tiêu bản"
+        },
+        {
+          "id": "opt-d",
+          "label": "Để nhìn xem mâm xoay vật kính có bị lỏng ốc hay không"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Lam kính làm bằng thủy tinh rất mỏng manh, còn thấu kính vật kính đặt trong ống kim loại cứng."
+      },
+      {
+        "level": 2,
+        "text": "Nếu mắt nhìn vào thị kính khi đang nâng bàn kính lên, ta sẽ mất cảm giác về khoảng cách cơ học bên ngoài."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục đích thao tác an toàn",
+        "body": "Giải thích nguyên nhân tại sao phải nhìn ngang bên ngoài khi nâng bàn kính."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Nguy cơ va chạm cơ học trong phòng thí nghiệm",
+        "body": "Khoảng cách giữa vật kính và tiêu bản rất ngắn. Nếu nhìn thị kính rồi nâng bàn kính lên, vật kính có thể đè nát tiêu bản và xước thấu kính đắt tiền."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án đúng",
+        "body": "Nhìn ngang giúp kiểm soát khoảng cách an toàn, tránh va chạm làm vỡ tiêu bản và hỏng thấu kính."
+      }
+    ],
+    "finalSolution": "Mắt phải nhìn ngang từ bên ngoài để kiểm soát khoảng cách giữa vật kính và tiêu bản, ngăn ngừa nguy cơ vật kính đâm sầm làm vỡ lam kính thủy tinh.",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng thao tác nhìn ngang là để chỉnh nguồn sáng."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b02-q06",
+    "lessonId": "bio-g6-b02",
+    "sgkBaiSo": 4,
+    "skillIds": [
+      "bio-kinh-hien-vi"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai cho mỗi quy tắc bảo quản và sử dụng kính hiển vi quang học sau đây:",
+    "knowledge": [
+      "bio-bao-quan-kinh-hien-vi"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Khi di chuyển kính hiển vi, luôn bê bằng hai tay: một tay cầm thân kính, một tay đỡ dưới chân kính.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Có thể dùng vạt áo hoặc giấy vệ sinh thông thường để lau bụi trên thấu kính thị kính và vật kính.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Sau khi quan sát xong, cần hạ bàn kính xuống thấp nhất và xoay vật kính có độ phóng đại nhỏ nhất (4x) vào vị trí quan sát.",
+          "correct": true
+        },
+        {
+          "id": "st-4",
+          "text": "Sau khi sử dụng xong, nên đậy túi bọc chống bụi và cất kính ở nơi khô ráo, tránh nấm mốc làm mờ thấu kính.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sợi vải thô và giấy vệ sinh thông thường chứa các hạt bụi vụn xơ có thể làm xước lớp tráng phủ thấu kính."
+      },
+      {
+        "level": 2,
+        "text": "Vật kính nhỏ nhất (4x) có chiều dài ngắn nhất, giúp an toàn tối đa cho bàn kính khi cất giữ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Kiểm tra 4 quy tắc an toàn",
+        "body": "Đánh giá từng quy tắc theo hướng dẫn thực hành an toàn trong phòng thí nghiệm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đánh giá chi tiết từng ý",
+        "body": "1. Bê bằng hai tay: Đúng (tránh rơi tuột). 2. Lau bằng vạt áo: Sai (phải dùng giấy lau thấu kính chuyên dụng). 3. Hạ bàn kính và chuyển về vật kính 4x: Đúng. 4. Đậy túi chống bụi: Đúng."
+      },
+      {
+        "kind": "answer",
+        "title": "Tổng kết kết quả",
+        "body": "Phát biểu 1: Đúng; Phát biểu 2: Sai; Phát biểu 3: Đúng; Phát biểu 4: Đúng."
+      }
+    ],
+    "finalSolution": "Phát biểu 1, 3 và 4 đúng. Phát biểu 2 sai vì thấu kính quang học chỉ được lau bằng giấy lau chuyên dụng để bảo vệ lớp phủ quang học.",
+    "commonMistakes": [
+      {
+        "id": "cm-06",
+        "message": "Dùng giấy vệ sinh hoặc khăn tay thường lau thấu kính làm xước mặt kính."
+      }
+    ]
+  }
+]

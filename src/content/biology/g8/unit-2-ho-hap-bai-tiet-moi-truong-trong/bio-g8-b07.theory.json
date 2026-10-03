@@ -1,0 +1,72 @@
+{
+  "lessonId": "bio-g8-b07",
+  "nodeId": "bio-g8-b07-theory",
+  "title": "Lý thuyết: Điều hòa môi trường trong của cơ thể người",
+  "subtitle": "Bài 36 SGK KHTN 8 Kết nối tri thức: Khái niệm môi trường trong, cân bằng nội môi, cơ chế điều hòa đường huyết và vai trò gan, thận",
+  "sgkBaiSo": 36,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Môi trường trong",
+      "badgeColor": "emerald",
+      "title": "Thành phần của môi trường trong cơ thể",
+      "content": "Tế bào trong cơ thể người không tiếp xúc trực tiếp với môi trường ngoài mà tắm mình trong môi trường trong:",
+      "bulletPoints": [
+        "Môi trường trong gồm 3 thành phần chính: Máu (huyết tương), Dịch mô (dịch kẽ bao quanh tế bào) và Bạch huyết (lưu thông trong mạch bạch huyết).",
+        "Sự luân chuyển chất: Máu lọc qua mao mạch tạo thành dịch mô; dịch mô thấm vào mao mạch bạch huyết tạo thành bạch huyết; hệ bạch huyết lại đổ vào tĩnh mạch trở về dòng máu.",
+        "Mọi hoạt động trao đổi chất giữa tế bào với môi trường ngoài (lấy O2, dưỡng chất; thải CO2, chất cặn bã) đều phải trung gian thông qua môi trường trong."
+      ],
+      "callout": "Môi trường trong là 'đại dương thu nhỏ' nuôi dưỡng và bao bọc hàng nghìn tỉ tế bào của cơ thể!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Cân bằng nội môi",
+      "badgeColor": "amber",
+      "title": "Cân bằng nội môi (Homeostasis)",
+      "content": "Cân bằng môi trường trong là sự duy trì ổn định các điều kiện lí - hóa của môi trường trong cơ thể:",
+      "bulletPoints": [
+        "Các chỉ số nội môi chuẩn: Thân nhiệt ổn định quanh 37°C, pH máu từ 7,35 - 7,45, áp suất thẩm thấu ổn định, nồng độ đường glucose trong máu quanh ngưỡng 0,1% (khoảng 4,4 - 6,1 mmol/L).",
+        "Ý nghĩa sống còn: Đảm bảo điều kiện tối ưu để các enzym tế bào hoạt động bình thường. Nếu nội môi bị rối loạn kéo dài (ví dụ sốt cao >40°C, toan máu, đường huyết vọt cao) sẽ gây co giật, hôn mê và tử vong."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Cơ chế điều hòa",
+      "badgeColor": "cyan",
+      "title": "Cơ chế điều hòa đường huyết của tuyến tụy",
+      "content": "Đảo tụy của tuyến tụy giữ vai trò trung tâm kiểm soát đường huyết:",
+      "bulletPoints": [
+        "Khi nồng độ glucose trong máu tăng cao (sau bữa ăn): Tế bào beta (β) đảo tụy tiết hormone Insulin → kích thích gan và mô cơ chuyển hóa glucose tự do thành glycogen dự trữ → đưa nồng độ đường huyết hạ về mức chuẩn 0,1%.",
+        "Khi nồng độ glucose trong máu giảm thấp (khi xa bữa ăn hoặc vận động mệt): Tế bào alpha (α) đảo tụy tiết hormone Glucagon → kích thích gan phân giải glycogen dự trữ thành glucose đưa vào máu → nâng nồng độ đường huyết trở lại mức chuẩn 0,1%.",
+        "Vai trò của gan và thận: Gan điều hòa nồng độ protein, glucose và khử chất độc; Thận điều hòa lượng nước, áp suất thẩm thấu và cân bằng pH máu qua bài tiết ion."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi lượng đường glucose trong máu tăng cao sau bữa ăn nhiều tinh bột, cơ thể sẽ phản ứng bằng cách tiết hormone nào để đưa đường huyết về mức ổn định?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Tế bào beta đảo tụy tiết hormone Insulin để hạ đường huyết",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Tế bào alpha đảo tụy tiết hormone Glucagon để hạ đường huyết",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Tuyến giáp tiết hormone Thyroxine để phân giải đường",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Tuyến trên thận tiết Adrenaline để đốt cháy đường",
+        "correct": false
+      }
+    ],
+    "explanation": "Khi đường huyết tăng cao sau ăn, tế bào beta của đảo tụy sẽ lập tức tiết ra hormone Insulin, thúc đẩy các tế bào sử dụng glucose và kích thích gan tổng hợp glycogen dự trữ, giúp đường huyết nhanh chóng hạ về mức chuẩn 0,1%."
+  }
+}

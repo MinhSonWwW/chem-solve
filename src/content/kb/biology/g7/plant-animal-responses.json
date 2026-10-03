@@ -1,0 +1,55 @@
+[
+  {
+    "id": "kb-bio-g7-huong-dong-thuc-vat",
+    "title": "Các hình thức cảm ứng hướng động ở thực vật",
+    "forms": [
+      {
+        "name": "Hướng sáng (Phototropism)",
+        "feature": "Ngọn cây vươn cong về phía có nguồn ánh sáng (hướng sáng dương) giúp tối ưu hóa quang hợp. Rễ cây tránh ánh sáng (hướng sáng âm)."
+      },
+      {
+        "name": "Hướng trọng lực / Hướng đất (Geotropism)",
+        "feature": "Rễ cây đâm sâu thẳng xuống lòng đất (hướng đất dương) để hút nước và bám giữ. Thân cây vươn thẳng lên trên (hướng đất âm)."
+      },
+      {
+        "name": "Hướng nước & Hướng hóa (Hydrotropism & Chemotropism)",
+        "feature": "Rễ cây uốn cong sinh trưởng hướng về phía có nguồn nước và chất dinh dưỡng phân bón (hướng hóa dương), tránh xa hóa chất độc hại."
+      },
+      {
+        "name": "Hướng tiếp xúc (Thigmotropism)",
+        "feature": "Thân leo hoặc tua cuốn của cây bầu, bí, mướp, nho khi va chạm giàn sẽ sinh trưởng uốn vòng quanh giá thể để leo lên cao nhận ánh sáng."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g7-ung-dong-tiep-xuc",
+    "title": "Ứng động tiếp xúc ở cây trinh nữ (cây xấu hổ)",
+    "description": "Khi chạm tay vào lá cây trinh nữ, cuống lá cụp xuống và các lá chét khép lại nhanh chóng chỉ trong vài giây. Hiện tượng này do sự thay đổi đột ngột áp suất trương nước ở các tế bào thể gối (khớp cuống lá), giúp bảo vệ lá non khỏi sự tấn công của côn trùng hoặc gió bão mạnh."
+  },
+  {
+    "id": "kb-bio-g7-phan-loai-tap-tinh",
+    "title": "Phân loại tập tính ở động vật",
+    "categories": [
+      {
+        "category": "Tập tính bẩm sinh (Innate behavior)",
+        "definition": "Loại tập tính sinh ra đã có, do gen quy định, di truyền từ đời trước, mang tính đặc trưng cho loài và rất bền vững.",
+        "examples": "Nhện giăng tơ tròn, chim sâu làm tổ, ong xây tổ hình lục giác, thú non bú sữa mẹ ngay sau sinh."
+      },
+      {
+        "category": "Tập tính học được (Learned behavior)",
+        "definition": "Loại tập tính được hình thành trong quá trình sống nhờ học tập và tích lũy kinh nghiệm cá thể, có thể thay đổi linh hoạt và không di truyền.",
+        "examples": "Khỉ biết dùng que khều chuối, chó nghiệp vụ phân biệt mùi ma túy, con người nhìn đèn đỏ dừng xe lại."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g7-ung-dung-tap-tinh",
+    "title": "Ứng dụng cảm ứng và tập tính vào đời sống sản xuất",
+    "applications": [
+      "Làm giàn leo cho cây họ bầu bí, hồ tiêu giúp cây phân bố đều và quang hợp tốt.",
+      "Thắp đèn sợi đốt ban đêm kích thích cây thanh long và hoa cúc ra hoa trái vụ mang lại giá trị kinh tế cao.",
+      "Tập phản xạ có điều kiện trong chăn nuôi: Dùng tiếng kẻng/mõ gọi cá ngoi lên đớp mồi, huýt sáo gọi đàn gà về chuồng.",
+      "Sử dụng bẫy ánh sáng (đèn diệt côn trùng) bẫy bướm đêm hại lúa, làm bù nhìn đuổi chim cắn phá nương ngô."
+    ]
+  }
+]

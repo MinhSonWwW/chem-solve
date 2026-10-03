@@ -1,0 +1,62 @@
+[
+  {
+    "id": "kb-bio-g9-dna-structure",
+    "title": "Cấu trúc hóa học và không gian của phân tử DNA",
+    "description": "Phân tử mang thông tin di truyền theo mô hình Watson - Crick (1953).",
+    "chemicalStructure": {
+      "monomer": "Nucleotide",
+      "types": ["Adenine (A)", "Thymine (T)", "Guanine (G)", "Cytosine (C)"],
+      "composition": "Gồm 3 thành phần: Gốc đường Deoxyribose (C5H10O4), Nhóm phosphate (H3PO4), Bazo nito (A, T, G hoặc C)."
+    },
+    "spatialStructure": {
+      "form": "Hai mạch polynucleotide xoắn kép đều đặn quanh một trục tưởng tượng theo chiều từ trái sang phải (xoắn phải).",
+      "dimensions": {
+        "diameter": "20 Å (2 nm)",
+        "pitchLength": "34 Å (3,4 nm) gồm 10 cặp nucleotide",
+        "pairDistance": "3,4 Å (0,34 nm)"
+      },
+      "complementaryBasePairing": "Nguyên tắc bổ sung: A liên kết với T bằng 2 liên kết hydrogen (A = T); G liên kết với C bằng 3 liên kết hydrogen (G ≡ C)."
+    }
+  },
+  {
+    "id": "kb-bio-g9-central-dogma-mechanisms",
+    "title": "Cơ chế di truyền phân tử: Tái bản, Phiên mã và Dịch mã",
+    "description": "Sơ đồ dòng thông tin di truyền trung tâm: DNA → mRNA → Protein → Tính trạng.",
+    "processes": [
+      {
+        "name": "Tái bản (Nhân đôi) DNA",
+        "location": "Trong nhân tế bào, tại pha S kì trung gian của chu kì tế bào.",
+        "principles": [
+          "Nguyên tắc bổ sung: A liên kết với T, G liên kết với C.",
+          "Nguyên tắc bán bảo tồn (giữ lại một nửa): Mỗi phân tử DNA con tạo thành có 1 mạch cũ của DNA mẹ và 1 mạch mới tổng hợp."
+        ],
+        "keyEnzymes": "Enzyme tháo xoắn, enzyme DNA polymerase (xúc tác gắn nucleotide tự do theo NTBS)."
+      },
+      {
+        "name": "Phiên mã (Tổng hợp RNA)",
+        "location": "Trong nhân tế bào.",
+        "mechanism": "Enzyme RNA polymerase bám vào mạch gốc DNA (3' → 5') để kéo dài phân tử RNA (5' → 3') theo NTBS: A_gốc - U, T_gốc - A, G_gốc - C, C_gốc - G."
+      },
+      {
+        "name": "Dịch mã (Tổng hợp Protein)",
+        "location": "Trong tế bào chất, tại bào quan Ribosome.",
+        "mechanism": "Ribosome dịch chuyển từng codon (bộ ba) trên mRNA theo chiều 5' → 3'; phức hệ tRNA - amino acid mang anticodon khớp bổ sung với codon để gắn amino acid vào chuỗi polypeptide đang kéo dài."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g9-genetic-code-codons",
+    "title": "Bảng mã di truyền và đặc điểm các codon",
+    "description": "Trình tự nucleotide trên mRNA quy định trình tự amino acid trong protein.",
+    "features": [
+      "Mã bộ ba (Triplet code): Cứ 3 nucleotide kế tiếp nhau mã hóa 1 amino acid (tổng cộng 4^3 = 64 bộ ba).",
+      "Tính đặc hiệu: Mỗi bộ ba chỉ mã hóa cho duy nhất 1 loại amino acid.",
+      "Tính thoái hóa (dư thừa): Nhiều bộ ba khác nhau cùng mã hóa cho 1 loại amino acid (trừ AUG và UGG).",
+      "Tính phổ biến: Hầu hết mọi sinh vật từ vi khuẩn đến người đều dùng chung một bộ mã di truyền."
+    ],
+    "specialCodons": {
+      "startCodon": "5'AUG3' (Mã hóa amino acid Methionine ở sinh vật nhân thực, Formylmethionine ở nhân sơ; báo hiệu bắt đầu dịch mã).",
+      "stopCodons": ["5'UAA3'", "5'UAG3'", "5'UGA3' (Tín hiệu kết thúc dịch mã, không mã hóa amino acid nào)."]
+    }
+  }
+]

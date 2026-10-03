@@ -1,0 +1,73 @@
+{
+  "lessonId": "bio-g8-b15",
+  "nodeId": "bio-g8-b15-theory",
+  "title": "Lý thuyết: Hệ sinh thái, Chuỗi & Lưới thức ăn",
+  "subtitle": "Bài 44 SGK KHTN 8 Kết nối tri thức: Cấu trúc hệ sinh thái, sinh vật sản xuất - tiêu thụ - phân giải, chuỗi thức ăn, bậc dinh dưỡng và tháp sinh thái",
+  "sgkBaiSo": 44,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Cấu trúc",
+      "badgeColor": "emerald",
+      "title": "Hệ sinh thái & Các thành phần cấu tạo",
+      "content": "Hệ sinh thái là cấp độ tổ chức sống hoàn chỉnh bao gồm sinh vật và môi trường sống:",
+      "bulletPoints": [
+        "Định nghĩa: Hệ sinh thái gồm quần xã sinh vật và sinh cảnh (môi trường sống vô sinh). Các sinh vật trong quần xã tác động qua lại với nhau và tác động qua lại với sinh cảnh tạo thành một hệ thống chức năng hoàn chỉnh và ổn định.",
+        "1. Thành phần vô sinh (Sinh cảnh): Đất, đá, nước, không khí, nhiệt độ, ánh sáng, độ ẩm và các chất mùn hữu cơ.",
+        "2. Thành phần hữu sinh (Quần xã sinh vật): Phân chia theo vai trò dinh dưỡng gồm 3 nhóm chính: Sinh vật sản xuất (cây xanh, tảo quang hợp), Sinh vật tiêu thụ (động vật ăn thực vật, động vật ăn thịt) và Sinh vật phân giải (vi khuẩn hoại sinh, nấm phân giải xác hữu cơ thành chất vô cơ)."
+      ],
+      "callout": "Sinh vật phân giải khép kín chu trình vật chất bằng cách trả lại muối khoáng vô cơ cho đất để cây xanh tiếp tục hấp thụ!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Chuỗi & Lưới",
+      "badgeColor": "amber",
+      "title": "Chuỗi thức ăn & Lưới thức ăn",
+      "content": "Sự trao đổi vật chất và năng lượng diễn ra qua các mối quan hệ dinh dưỡng:",
+      "bulletPoints": [
+        "Chuỗi thức ăn: Một dãy gồm nhiều loài sinh vật có quan hệ dinh dưỡng với nhau, mỗi loài là một mắt xích (vừa tiêu thụ mắt xích phía trước, vừa làm thức ăn cho mắt xích phía sau).",
+        "Ví dụ chuỗi thức ăn: Cỏ (SV sản xuất) → Cào cào (SV tiêu thụ bậc 1) → Ếch đồng (SV tiêu thụ bậc 2) → Rắn (SV tiêu thụ bậc 3) → Vi sinh vật phân giải.",
+        "Lưới thức ăn: Tập hợp các chuỗi thức ăn có chung nhiều mắt xích dinh dưỡng trong quần xã. Quần xã càng có độ đa dạng loài cao thì lưới thức ăn càng phức tạp và hệ sinh thái càng có tính ổn định cao."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Bậc & Tháp",
+      "badgeColor": "cyan",
+      "title": "Bậc dinh dưỡng & Tháp sinh thái",
+      "content": "Sự hao hụt năng lượng quyết định cấu trúc tầng tháp của hệ sinh thái:",
+      "bulletPoints": [
+        "Bậc dinh dưỡng: Các mắt xích trong chuỗi thức ăn được xếp vào các bậc dinh dưỡng: Bậc 1 là sinh vật sản xuất, Bậc 2 là sinh vật tiêu thụ bậc 1, Bậc 3 là sinh vật tiêu thụ bậc 2...",
+        "Quy luật năng lượng: Năng lượng truyền lên bậc dinh dưỡng cao hơn chỉ đạt khoảng 10%, còn lại khoảng 90% bị tiêu hao qua hô hấp tỏa nhiệt, bài tiết chất thải và rơi rụng.",
+        "Tháp sinh thái: Mô hình hình học biểu diễn số lượng, sinh khối hoặc năng lượng qua các bậc dinh dưỡng. Tháp năng lượng luôn có dạng chuẩn tắc đáy rộng đỉnh hẹp (không bao giờ đảo ngược)."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Nhóm sinh vật nào sau đây đóng vai trò biến đổi xác thực vật, động vật chết và chất thải hữu cơ thành các chất vô cơ đơn giản trả lại môi trường?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Sinh vật phân giải (vi khuẩn hoại sinh, nấm)",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Sinh vật sản xuất (cây xanh, tảo lục)",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Sinh vật tiêu thụ bậc 1 (động vật ăn cỏ)",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Sinh vật tiêu thụ bậc cao nhất (thú ăn thịt)",
+        "correct": false
+      }
+    ],
+    "explanation": "Sinh vật phân giải gồm vi khuẩn hoại sinh và nấm có vai trò phân hủy các hợp chất hữu cơ từ xác sinh vật thành muối khoáng vô cơ đơn giản, giúp khép kín chu trình tuần hoàn vật chất trong hệ sinh thái."
+  }
+}

@@ -1,0 +1,338 @@
+[
+  {
+    "id": "bio-g6-b13-q01",
+    "lessonId": "bio-g6-b13",
+    "sgkBaiSo": 28,
+    "skillIds": [
+      "bio-thuc-hanh-sua-chua"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp các bước sau theo đúng trình tự chuẩn khi thực hành làm sữa chua tại nhà:",
+    "knowledge": [
+      "bio-thuc-hanh-sua-chua"
+    ],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Hòa tan sữa đặc có đường với nước ấm (khoảng 40°C - 50°C)",
+        "Cho hộp sữa chua cái vào hỗn hợp sữa ấm rồi khuấy đều nhẹ tay",
+        "Rót hỗn hợp sữa vào các hũ thủy tinh sạch và đậy kín nắp",
+        "Ủ ấm hũ sữa ở nhiệt độ 40°C - 45°C trong khoảng 6 đến 8 giờ",
+        "Bảo quản sữa chua đã đông tụ vào ngăn mát tủ lạnh"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bắt đầu bằng việc chuẩn bị hỗn hợp sữa ấm thích hợp cho vi khuẩn."
+      },
+      {
+        "level": 2,
+        "text": "Cho vào ngăn mát tủ lạnh là bước cuối cùng sau khi sữa đã đông tụ hoàn tất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu bài thực hành",
+        "body": "Xác định 5 bước quy trình làm sữa chua từ sữa đặc."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy trình theo SGK",
+        "body": "Pha sữa ấm → Hòa men cái → Rót hũ đậy nắp → Ủ ấm 6-8h → Cho vào tủ lạnh."
+      },
+      {
+        "kind": "answer",
+        "title": "Thứ tự chính xác",
+        "body": "Trình tự tuần tự từ khâu chuẩn bị đến hoàn thiện sản phẩm."
+      }
+    ],
+    "finalSolution": "Trình tự chuẩn: Hòa sữa ấm → Cho men cái khuấy đều → Rót hũ đậy nắp → Ủ ấm 6 - 8 giờ → Cất vào ngăn mát tủ lạnh.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Cho sữa chua cái vào nước sôi trước khi pha loãng với nước ấm."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b13-q02",
+    "lessonId": "bio-g6-b13",
+    "sgkBaiSo": 28,
+    "skillIds": [
+      "bio-thuc-hanh-sua-chua"
+    ],
+    "difficulty": 1,
+    "prompt": "Tại sao sau thời gian ủ ấm, hỗn hợp sữa lỏng ban đầu lại chuyển thành khối sữa chua đông tụ đặc sánh mịn?",
+    "knowledge": [
+      "bio-thuc-hanh-sua-chua"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Do vi khuẩn lactic lên men đường tạo ra acid lactic làm đông tụ protein của sữa"
+        },
+        {
+          "id": "opt-b",
+          "label": "Do toàn bộ nước trong sữa đã bay hơi hết khi ủ ấm"
+        },
+        {
+          "id": "opt-c",
+          "label": "Do đường trong sữa đặc tự biến đổi thành thạch rau câu"
+        },
+        {
+          "id": "opt-d",
+          "label": "Do sữa bị thối rữa và tạo thành bọt khí"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sự biến đổi hóa sinh là do vi khuẩn lên men đường thành acid lactic."
+      },
+      {
+        "level": 2,
+        "text": "Acid làm giảm độ pH môi trường khiến protein casein trong sữa kết tủa tạo thành khối sánh mịn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Giải thích hiện tượng hóa sinh",
+        "body": "Đề bài hỏi cơ chế làm đông tụ sữa chua."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế lên men lactic",
+        "body": "Vi khuẩn lactic biến đổi đường lactose thành acid lactic. Môi trường acid này làm các phân tử protein trong sữa đông tụ dẻo quánh và có vị chua thanh."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án đúng",
+        "body": "Lựa chọn chính xác giải thích chuẩn xác hiện tượng."
+      }
+    ],
+    "finalSolution": "Hỗn hợp sữa đông tụ là do vi khuẩn lactic lên men biến đổi đường thành acid lactic, làm đông tụ protein sữa tạo nên độ sánh mịn và vị chua thanh mát.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Nghĩ rằng sữa đặc đông lại là do nước bị bốc hơi hết."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b13-q03",
+    "lessonId": "bio-g6-b13",
+    "sgkBaiSo": 28,
+    "skillIds": [
+      "bio-thuc-hanh-sua-chua"
+    ],
+    "difficulty": 1,
+    "prompt": "Khoảng nhiệt độ ủ ấm thích hợp nhất để vi khuẩn lactic sinh trưởng và lên men sữa chua đạt chất lượng tốt là bao nhiêu?",
+    "knowledge": [
+      "bio-thuc-hanh-sua-chua"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Khoảng 0°C đến 5°C (trong ngăn đá tủ lạnh)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Khoảng 80°C đến 100°C (nước sôi sùng sục)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khoảng 40°C đến 45°C"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khoảng -10°C"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Vi khuẩn lactic phát triển tối ưu ở nhiệt độ ấm áp tương đương nhiệt độ ủ thùng xốp."
+      },
+      {
+        "level": 2,
+        "text": "Khoảng nhiệt độ từ 40°C đến 45°C là lý tưởng nhất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định nhiệt độ lên men tối ưu",
+        "body": "Tìm khoảng nhiệt độ ủ sữa chua theo chuẩn SGK."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Sinh lý vi khuẩn lactic",
+        "body": "Ở 40°C - 45°C, các enzym của vi khuẩn lactic hoạt động mạnh nhất giúp lên men nhanh và thơm ngon."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn phương án đúng",
+        "body": "Lựa chọn chính xác là nhiệt độ chuẩn xác."
+      }
+    ],
+    "finalSolution": "Nhiệt độ ủ sữa chua tối ưu là từ 40°C đến 45°C, giúp vi khuẩn lactic phát triển mạnh mẽ nhất.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nghĩ rằng ủ ở nhiệt độ càng sôi nóng 80-100°C thì vi khuẩn lên men càng nhanh."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b13-q04",
+    "lessonId": "bio-g6-b13",
+    "sgkBaiSo": 28,
+    "skillIds": [
+      "bio-thuc-hanh-sua-chua"
+    ],
+    "difficulty": 2,
+    "prompt": "Nếu một bạn học sinh vô tình đổ nước sôi 100°C trực tiếp vào hộp sữa chua cái rồi mới ủ thì kết quả mẻ sữa chua sẽ ra sao?",
+    "knowledge": [
+      "bio-thuc-hanh-sua-chua"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Sữa chua sẽ đông tụ nhanh hơn bình thường gấp 2 lần"
+        },
+        {
+          "id": "opt-b",
+          "label": "Sữa chua bị hỏng và không thể đông tụ được do vi khuẩn lactic đã bị chết ở nhiệt độ quá cao"
+        },
+        {
+          "id": "opt-c",
+          "label": "Sữa chua sẽ có vị ngọt đậm hơn và đông thành khối cứng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Không có hiện tượng gì khác biệt"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhiệt độ sôi 100°C làm biến tính protein và tiêu diệt các sinh vật sống."
+      },
+      {
+        "level": 2,
+        "text": "Khi men cái không còn vi khuẩn sống, phản ứng lên men acid lactic không thể diễn ra."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Dự đoán sự cố thực nghiệm",
+        "body": "Phân tích tác động của nước sôi 100°C lên vi khuẩn lactic men cái."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tác động nhiệt độ cao",
+        "body": "Nhiệt độ 100°C làm chết toàn bộ vi khuẩn lactic trong sữa chua cái. Không có vi khuẩn thì không sinh ra acid lactic, do đó sữa vẫn loãng và không đông tụ được."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án đúng",
+        "body": "Đáp án A là kết quả thực tế xảy ra."
+      }
+    ],
+    "finalSolution": "Đổ nước sôi 100°C trực tiếp làm chết toàn bộ vi khuẩn lactic giống, khiến sữa không thể lên men và không thể đông tụ thành sữa chua.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Nghĩ rằng nước sôi giúp diệt vi khuẩn lạ nên sữa chua sẽ càng ngon hơn."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b13-q05",
+    "lessonId": "bio-g6-b13",
+    "sgkBaiSo": 28,
+    "skillIds": [
+      "bio-thuc-hanh-sua-chua"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về thực hành làm sữa chua:",
+    "knowledge": [
+      "bio-thuc-hanh-sua-chua"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Sữa chua cái dùng làm men nên để hết lạnh ở nhiệt độ phòng trước khi đem hòa tan vào sữa ấm.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Để sữa chua lên men càng nhanh thì nên ủ trong ngăn đá tủ lạnh ở nhiệt độ dưới 0°C.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Dưới kính hiển vi quang học khi nhuộm xanh metylen, vi khuẩn lactic có dạng các chấm que ngắn màu xanh.",
+          "correct": true
+        },
+        {
+          "id": "st-4",
+          "text": "Sau khi sữa đã đông tụ, việc cất vào ngăn mát tủ lạnh giúp làm chậm quá trình lên men để sữa không bị quá chua.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhiệt độ dưới 0°C làm đóng băng và ức chế hoàn toàn hoạt động của vi khuẩn."
+      },
+      {
+        "level": 2,
+        "text": "Tủ mát giúp bảo quản độ chua vừa phải của sữa chua thành phẩm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Đánh giá từng câu về kỹ thuật làm và bảo quản sữa chua."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra chi tiết",
+        "body": "1. Men để hết lạnh: Đúng. 2. Ủ ngăn đá: Sai (ngăn đá ức chế lên men). 3. Vi khuẩn lactic que ngắn màu xanh: Đúng. 4. Tủ mát hãm chua: Đúng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Ý 1: Đúng; Ý 2: Sai; Ý 3: Đúng; Ý 4: Đúng."
+      }
+    ],
+    "finalSolution": "Phát biểu 1, 3 và 4 đúng. Phát biểu 2 sai (nhiệt độ ngăn đá ức chế hoàn toàn vi khuẩn, không thể lên men sữa chua).",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng để men sữa chua càng lạnh thì khi khuấy vào sữa ấm men càng hoạt động tốt."
+      }
+    ]
+  }
+]

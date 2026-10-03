@@ -1,0 +1,299 @@
+[
+  {
+    "id": "bio-g6-b22-q01",
+    "lessonId": "bio-g6-b22",
+    "sgkBaiSo": 37,
+    "skillIds": ["bio-thuc-hanh-dong-vat"],
+    "difficulty": 1,
+    "prompt": "Ghép nối từng loài động vật quan sát được ngoài thiên nhiên (cột bên trái) với đúng cơ quan di chuyển thích nghi của nó (cột bên phải):",
+    "knowledge": ["bio-thuc-hanh-dong-vat", "bio-gioi-dong-vat"],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Con giun đất",
+          "right": "Co dãn cơ thể kết hợp các vòng tơ nhỏ tì vào đất để trườn"
+        },
+        {
+          "left": "Con ốc sên",
+          "right": "Trườn bò chậm chạp bằng bàn chân cơ phẳng tiết chất nhầy"
+        },
+        {
+          "left": "Con chuồn chuồn",
+          "right": "Bay lượn linh hoạt nhờ hai đôi cánh màng mỏng ở ngực"
+        },
+        {
+          "left": "Con thạch sùng (thằn lằn)",
+          "right": "Bò nhanh trên vách tường thẳng đứng nhờ đệm ngón chân có giác bám"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Giun đất dùng cơ thể co dãn và vòng tơ; ốc sên dùng bàn chân cơ tiết chất nhầy."
+      },
+      {
+        "level": 2,
+        "text": "Chuồn chuồn dùng cánh bay; thạch sùng dùng chân có giác bám dính tường."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu bài tập",
+        "body": "Nối 4 động vật ngoài vườn với cơ quan di chuyển tương ứng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu tập tính vận động",
+        "body": "Giun: cơ thể co dãn + vòng tơ; Ốc sên: bàn chân cơ; Chuồn chuồn: cánh bay; Thạch sùng: chân có đệm giác bám."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất ghép cặp",
+        "body": "Khớp chính xác 4 cặp thích nghi vận động."
+      }
+    ],
+    "finalSolution": "Giun đất: Co dãn cơ thể và vòng tơ; Ốc sên: Bàn chân cơ tiết chất nhầy; Chuồn chuồn: Hai đôi cánh màng; Thạch sùng: Đệm chân có giác bám tường.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng giun đất di chuyển nhờ các chân bơi li ti dưới bụng."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b22-q02",
+    "lessonId": "bio-g6-b22",
+    "sgkBaiSo": 37,
+    "skillIds": ["bio-thuc-hanh-dong-vat", "bio-gioi-dong-vat"],
+    "difficulty": 2,
+    "prompt": "Phân loại các loài động vật quan sát được trong khuôn viên vườn trường vào hai nhóm lớn:",
+    "knowledge": ["bio-thuc-hanh-dong-vat", "bio-gioi-dong-vat"],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "b-inverts", "label": "Động vật không xương sống" },
+        { "id": "b-verts", "label": "Động vật có xương sống" }
+      ],
+      "items": [
+        { "id": "it-1", "label": "Con giun đất đào hang", "bucketId": "b-inverts" },
+        { "id": "it-2", "label": "Con ốc sên trên lá chuối", "bucketId": "b-inverts" },
+        { "id": "it-3", "label": "Con bướm cải bay lượn", "bucketId": "b-inverts" },
+        { "id": "it-4", "label": "Con nhện chăng tơ góc vườn", "bucketId": "b-inverts" },
+        { "id": "it-5", "label": "Con thạch sùng bám vách tường", "bucketId": "b-verts" },
+        { "id": "it-6", "label": "Con chim sẻ nhảy nhót", "bucketId": "b-verts" },
+        { "id": "it-7", "label": "Con ếch đồng ngồi bờ cỏ", "bucketId": "b-verts" },
+        { "id": "it-8", "label": "Con sóc nhảy trên cành cây", "bucketId": "b-verts" }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Giun, ốc, bướm, nhện thuộc nhóm không có xương sống."
+      },
+      {
+        "level": 2,
+        "text": "Thạch sùng, chim sẻ, ếch, sóc thuộc nhóm có xương sống."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân loại 8 loài động vật thực địa",
+        "body": "Xếp vào 2 nhóm có cột sống và không có cột sống."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra từng loài",
+        "body": "Không xương sống: Giun đất, Ốc sên, Bướm cải, Con nhện. Có xương sống: Thạch sùng (Bò sát), Chim sẻ (Chim), Ếch (Lưỡng cư), Sóc (Thú)."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất phân nhóm",
+        "body": "4 động vật không xương sống và 4 động vật có xương sống."
+      }
+    ],
+    "finalSolution": "Không xương sống: Giun đất, Ốc sên, Bướm cải, Nhện chăng tơ. Có xương sống: Thạch sùng, Chim sẻ, Ếch đồng, Con sóc.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Nghĩ con nhện có xương sống vì nó có nhiều chân cứng."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b22-q03",
+    "lessonId": "bio-g6-b22",
+    "sgkBaiSo": 37,
+    "skillIds": ["bio-thuc-hanh-dong-vat"],
+    "difficulty": 1,
+    "prompt": "Khi dùng tay vuốt nhẹ từ đuôi lên đầu ở mặt bụng của con giun đất, ta thấy có cảm giác ram ráp tay. Nguyên nhân là do cấu trúc nào sau đây?",
+    "knowledge": ["bio-thuc-hanh-dong-vat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Các vòng tơ nhỏ li ti ở mỗi đốt thân giúp giun tì bám vào đất khi di chuyển" },
+        { "id": "opt-b", "label": "Các hạt cát bám dính ngoài da giun" },
+        { "id": "opt-c", "label": "Các móng vuốt sắc nhọn của giun" },
+        { "id": "opt-d", "label": "Các lớp vảy sừng dày cứng như da rắn" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mỗi đốt thân giun đất đều có một vòng tơ nhỏ quanh mặt bụng."
+      },
+      {
+        "level": 2,
+        "text": "Các vòng tơ hướng ngược về phía sau giúp giun tì bám trườn lên."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Giải thích hiện tượng cảm giác tay",
+        "body": "Đề bài hỏi cấu trúc gây ram ráp ở bụng giun đất."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Giải phẫu giun đất",
+        "body": "Ở mỗi đốt thân giun đất có các hàng tơ kitin nhỏ li ti hướng về phía sau. Khi vuốt ngược chiều từ đuôi lên đầu, tay ta va chạm vào các đầu tơ này nên cảm thấy ram ráp."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án đúng",
+        "body": "Lựa chọn chính xác là cấu trúc chuẩn xác."
+      }
+    ],
+    "finalSolution": "Cảm giác ram ráp ở bụng giun đất là do các vòng tơ nhỏ ở mỗi đốt thân, chúng có vai trò tì bám vào đất giúp giun đẩy cơ thể tiến tới.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nghĩ rằng do mặt bụng giun dính bẩn bùn đất nên ram ráp."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b22-q04",
+    "lessonId": "bio-g6-b22",
+    "sgkBaiSo": 37,
+    "skillIds": ["bio-thuc-hanh-dong-vat"],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp các cột thông tin trong bảng nhật ký quan sát động vật thực địa theo đúng trình tự khoa học:",
+    "knowledge": ["bio-thuc-hanh-dong-vat"],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "1. Tên động vật quan sát (tên gọi thông thường)",
+        "2. Môi trường sống (trong đất ẩm, trên tán cây, mặt nước...)",
+        "3. Cơ quan di chuyển (bàn chân cơ, chân khớp, cánh, vây, vòng tơ...)",
+        "4. Nhóm phân loại chính (không xương sống hay có xương sống)"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cột đầu tiên luôn là tên gọi của sinh vật được quan sát."
+      },
+      {
+        "level": 2,
+        "text": "Cột cuối cùng là kết luận phân loại nhóm của sinh vật đó."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cấu trúc bảng nhật ký thực địa",
+        "body": "Xếp 4 cột thông tin quan sát theo mẫu chuẩn SGK."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Trình tự chuẩn",
+        "body": "Tên động vật → Nơi sống → Cơ quan di chuyển → Nhóm phân loại."
+      },
+      {
+        "kind": "answer",
+        "title": "Thứ tự chính xác",
+        "body": "Từ cột 1 đến cột 4."
+      }
+    ],
+    "finalSolution": "Trình tự bảng nhật ký: Tên loài → Môi trường sống → Cơ quan di chuyển → Nhóm phân loại chính.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Xếp kết luận nhóm phân loại lên đầu tiên trước khi quan sát đặc điểm nơi sống và vận động."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b22-q05",
+    "lessonId": "bio-g6-b22",
+    "sgkBaiSo": 37,
+    "skillIds": ["bio-thuc-hanh-dong-vat"],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về thực hành quan sát động vật ngoài thiên nhiên:",
+    "knowledge": ["bio-thuc-hanh-dong-vat"],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Khi đi quan sát thực địa, học sinh cần đi nhẹ nhàng, không gây tiếng ồn lớn để tránh làm các loài động vật hoảng sợ bỏ chạy.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Nếu bắt được các con sâu bướm lạ có lông gai sặc sỡ thì nên dùng tay trần bóp chặt chúng để quan sát thật kỹ.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Sau khi quan sát và chụp ảnh xong các động vật nhỏ (như giun đất, ốc sên), nên thả chúng trở lại đúng môi trường sống tự nhiên.",
+          "correct": true
+        },
+        {
+          "id": "st-4",
+          "text": "Con thạch sùng bám chắc vào mặt kính hoặc tường nhẵn là nhờ các đệm mút ngón chân có hàng triệu lông bám vi mô.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sâu róm có lông gai chứa độc tố gây ngứa và dị ứng da nguy hiểm, tuyệt đối không chạm tay trần."
+      },
+      {
+        "level": 2,
+        "text": "Tôn trọng tự nhiên và thả lại con vật sau khi nghiên cứu."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Đánh giá từng câu về an toàn và quy tắc quan sát thực địa."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra chi tiết",
+        "body": "1. Đi nhẹ không ồn: Đúng. 2. Bắt sâu róm bằng tay trần: Sai (nguy cơ nhiễm độc gai dị ứng da). 3. Thả lại tự nhiên: Đúng. 4. Thạch sùng đệm ngón bám kính: Đúng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Ý 1: Đúng; Ý 2: Sai; Ý 3: Đúng; Ý 4: Đúng."
+      }
+    ],
+    "finalSolution": "Phát biểu 1, 3 và 4 đúng. Phát biểu 2 sai (tuyệt đối không dùng tay trần chạm vào sâu bọ có lông gai vì có thể bị độc gây ngứa và bỏng rát da).",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng sâu róm có màu sặc sỡ thì không có nọc độc."
+      }
+    ]
+  }
+]

@@ -1,0 +1,529 @@
+[
+  {
+    "id": "bio-g7-b03-q01",
+    "lessonId": "bio-g7-b03",
+    "sgkBaiSo": 23,
+    "skillIds": [
+      "bio-yeu-to-quang-hop"
+    ],
+    "difficulty": 1,
+    "prompt": "Cây nào sau đây thuộc nhóm cây ƯA SÁNG, thường phát triển tốt ở những nơi có cường độ ánh sáng mạnh và quang đãng?",
+    "knowledge": [
+      "kb-bio-g7-yeu-to-anh-sang"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cây lúa nước, ngô, mía, phi lao"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cây lá lốt, phong lan, gừng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cây vạn niên thanh, cây dương xỉ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cây kim phát tài trồng trong phòng khách"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Các loại cây lương thực trồng trên cánh đồng rộng lớn thường cần ánh nắng trực tiếp cả ngày."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 23 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận biết nhóm cây ưa sáng",
+        "body": "Cây ưa sáng là cây có phiến lá dày, màu xanh nhạt hơn, sống nơi nhiều nắng (lúa, ngô, mía, phi lao)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Cây lúa, ngô, mía, phi lao là những đại diện điển hình của nhóm cây ưa sáng."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Cây lúa nước, ngô, mía là nhóm cây ưa sáng."
+      }
+    ],
+    "finalSolution": "Cây lúa, ngô, mía, phi lao là những đại diện điển hình của nhóm cây ưa sáng.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm với cây lá lốt, phong lan (nhóm cây ưa bóng dưới tán cây khác)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g7-b03-q02",
+    "lessonId": "bio-g7-b03",
+    "sgkBaiSo": 23,
+    "skillIds": [
+      "bio-yeu-to-quang-hop"
+    ],
+    "difficulty": 1,
+    "prompt": "Khoảng nhiệt độ nào sau đây là thuận lợi nhất cho quá trình quang hợp của đa số các loài thực vật nhiệt đới?",
+    "knowledge": [
+      "kb-bio-g7-yeu-to-nhiet-do"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Từ 25°C đến 35°C"
+        },
+        {
+          "id": "opt-b",
+          "label": "Từ 0°C đến 5°C"
+        },
+        {
+          "id": "opt-c",
+          "label": "Từ 50°C đến 60°C"
+        },
+        {
+          "id": "opt-d",
+          "label": "Dưới 10°C"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khoảng nhiệt độ ấm áp của mùa xuân và đầu hè ở vùng khí hậu nhiệt đới."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 23 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu câu hỏi",
+        "body": "Khoảng nhiệt độ nào sau đây là thuận lợi nhất cho quá trình quang hợp của đa số các loài thực vật nhiệt đới?"
+      },
+      {
+        "kind": "knowledge",
+        "title": "Nhiệt độ tối ưu của quang hợp",
+        "body": "Theo SGK KHTN 7, quang hợp diễn ra tốt nhất trong khoảng 25°C - 35°C."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "25°C đến 35°C là khoảng nhiệt độ tối ưu."
+      }
+    ],
+    "finalSolution": "Nhiệt độ thuận lợi cho quang hợp ở đa số cây là từ 25°C đến 35°C.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b03-q03",
+    "lessonId": "bio-g7-b03",
+    "sgkBaiSo": 23,
+    "skillIds": [
+      "bio-yeu-to-quang-hop"
+    ],
+    "difficulty": 2,
+    "prompt": "Nồng độ khí Carbon dioxide (CO2) trung bình trong không khí tự nhiên là bao nhiêu?",
+    "knowledge": [
+      "kb-bio-g7-yeu-to-co2"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Khoảng 0,03%"
+        },
+        {
+          "id": "opt-b",
+          "label": "Khoảng 21%"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khoảng 78%"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khoảng 5%"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "CO2 chỉ chiếm một phần rất nhỏ trong khí quyển (21% là Oxygen, 78% là Nitrogen)."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 23 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu câu hỏi",
+        "body": "Nồng độ khí Carbon dioxide (CO2) trung bình trong không khí tự nhiên là bao nhiêu?"
+      },
+      {
+        "kind": "knowledge",
+        "title": "Thành phần không khí",
+        "body": "Nồng độ CO2 tự nhiên khoảng 0,03% (hoặc ~0,04%)."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn phương án",
+        "body": "Đáp án đúng là 0,03%."
+      }
+    ],
+    "finalSolution": "Nồng độ khí CO2 tự nhiên trong không khí là khoảng 0,03%.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm nồng độ CO2 với nồng độ Oxygen (21%) hoặc Nitrogen (78%)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g7-b03-q04",
+    "lessonId": "bio-g7-b03",
+    "sgkBaiSo": 23,
+    "skillIds": [
+      "bio-yeu-to-quang-hop"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi cây bị hạn hán kéo dài và thiếu nước nghiêm trọng, tại sao tốc độ quang hợp lại giảm mạnh hoặc ngừng trệ?",
+    "knowledge": [
+      "kb-bio-g7-yeu-to-nuoc"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vì thiếu nước làm tế bào khí khổng mất sức trương và đóng lại, khiến CO2 không thể khuếch tán vào lá"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vì thiếu nước làm toàn bộ diệp lục trong lục lạp tự biến mất"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì ánh sáng mặt trời không thể xuyên qua lớp lá bị héo"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì cây chuyển sang hút khí oxygen để thay thế cho nước"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khí khổng đóng lại để chống mất nước, vô tình chặn luôn nguồn khí CO2 vào lá."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 23 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cơ chế khi thiếu nước",
+        "body": "Khi thiếu nước, tế bào hạt đậu của khí khổng xẹp lại đóng khe khí khổng. Khi đó CO2 không vào được lục lạp, phản ứng quang hợp không đủ nguyên liệu."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Thiếu nước làm khí khổng đóng, ngăn cản CO2 khuếch tán vào lá khiến quang hợp giảm mạnh."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Đáp án A giải thích chính xác cơ chế sinh lí."
+      }
+    ],
+    "finalSolution": "Thiếu nước làm khí khổng đóng, ngăn cản CO2 khuếch tán vào lá khiến quang hợp giảm mạnh.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b03-q05",
+    "lessonId": "bio-g7-b03",
+    "sgkBaiSo": 23,
+    "skillIds": [
+      "bio-yeu-to-quang-hop"
+    ],
+    "difficulty": 2,
+    "prompt": "Người ta thường thắp đèn sợi đốt ban đêm trong các vườn trồng thanh long ở miền Trung và miền Nam nhằm mục đích gì?",
+    "knowledge": [
+      "kb-bio-g7-ung-dung-quang-hop"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Kéo dài thời gian nhận ánh sáng, kích thích cây thanh long ra hoa trái vụ"
+        },
+        {
+          "id": "opt-b",
+          "label": "Để xua đuổi dơi và các loài chuột phá hoại cành cây"
+        },
+        {
+          "id": "opt-c",
+          "label": "Để làm ấm rễ cây thanh long trong mùa đông lạnh giá"
+        },
+        {
+          "id": "opt-d",
+          "label": "Để làm cho vỏ quả thanh long chuyển sang màu vàng thay vì màu đỏ"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thanh long là cây ngày dài, cần chiếu sáng nhiều giờ để phân hóa mầm hoa ra quả trái vụ."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 23 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Ứng dụng chiếu sáng nhân tạo",
+        "body": "Thắp đèn ban đêm cung cấp thêm quang năng và điều chỉnh chu kì quang kích thích ra hoa trái vụ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Thắp đèn vườn thanh long nhằm kích thích ra hoa trái vụ nhờ kéo dài thời gian chiếu sáng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Kích thích cây ra hoa trái vụ để tăng hiệu quả kinh tế."
+      }
+    ],
+    "finalSolution": "Thắp đèn vườn thanh long nhằm kích thích ra hoa trái vụ nhờ kéo dài thời gian chiếu sáng.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b03-q06",
+    "lessonId": "bio-g7-b03",
+    "sgkBaiSo": 23,
+    "skillIds": [
+      "bio-yeu-to-quang-hop"
+    ],
+    "difficulty": 3,
+    "prompt": "Tại sao trong trồng trọt, bà con nông dân KHÔNG NÊN gieo trồng cây với mật độ quá dày đặc?",
+    "knowledge": [
+      "kb-bio-g7-ung-dung-quang-hop"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vì lá cây ở các tầng dưới bị che khuất ánh sáng, giảm quang hợp, đồng thời thiếu dưỡng chất và dễ phát sinh sâu bệnh"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vì trồng dày làm nhiệt độ của đất tăng cao khiến rễ cây bị luộc chín"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì cây trồng quá gần nhau sẽ tự phóng điện tiêu diệt lẫn nhau"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì không khí bị cây hút hết toàn bộ khiến người nông dân không thở được"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cây cần đủ ánh sáng và không gian để tán lá vươn ra tiếp nhận quang năng."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 23 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu câu hỏi",
+        "body": "Tại sao trong trồng trọt, bà con nông dân KHÔNG NÊN gieo trồng cây với mật độ quá dày đặc?"
+      },
+      {
+        "kind": "knowledge",
+        "title": "Mật độ gieo trồng và quang hợp",
+        "body": "Trồng quá dày gây hiện tượng cớm nắng: lá tầng dưới nhận được ít ánh sáng, quang hợp yếu nhưng vẫn phải tiêu tốn chất hữu cơ cho hô hấp, làm giảm năng suất."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Đáp án A giải thích chuẩn xác nguyên nhân nông học."
+      }
+    ],
+    "finalSolution": "Gieo trồng quá dày khiến lá che khuất nhau, giảm quang hợp và cạnh tranh chất dinh dưỡng.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b03-q07",
+    "lessonId": "bio-g7-b03",
+    "sgkBaiSo": 23,
+    "skillIds": [
+      "bio-yeu-to-quang-hop"
+    ],
+    "difficulty": 3,
+    "prompt": "Khi tăng nồng độ khí CO2 trong nhà kính từ 0,03% lên khoảng 0,1% thì cường độ quang hợp của cây xanh thay đổi như thế nào?",
+    "knowledge": [
+      "kb-bio-g7-yeu-to-co2"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cường độ quang hợp sẽ tăng lên rõ rệt"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cường độ quang hợp giảm về 0 ngay lập tức"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cây bị ngộ độc và rụng hết toàn bộ lá"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cường độ quang hợp hoàn toàn không có bất kì sự thay đổi nào"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nồng độ CO2 0,1% vẫn nằm trong ngưỡng thuận lợi (dưới ngưỡng ngộ độc 0,2%)."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 23 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu câu hỏi",
+        "body": "Khi tăng nồng độ khí CO2 trong nhà kính từ 0,03% lên khoảng 0,1% thì cường độ quang hợp của cây xanh thay đổi như thế nào?"
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quan hệ giữa nồng độ CO2 và quang hợp",
+        "body": "Khi tăng nồng độ CO2 từ mức tự nhiên (0,03%) lên khoảng 0,1% (chưa vượt quá 0,2%), nguyên liệu dồi dào hơn giúp enzym xúc tác nhanh hơn, cường độ quang hợp tăng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cường độ quang hợp tăng lên rõ rệt."
+      }
+    ],
+    "finalSolution": "Tăng nồng độ CO2 trong giới hạn thích hợp (dưới 0,2%) làm tăng tốc độ quang hợp.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng tăng CO2 luôn gây hại cho cây trồng."
+      }
+    ]
+  },
+  {
+    "id": "bio-g7-b03-q08",
+    "lessonId": "bio-g7-b03",
+    "sgkBaiSo": 23,
+    "skillIds": [
+      "bio-yeu-to-quang-hop"
+    ],
+    "difficulty": 3,
+    "prompt": "Kĩ thuật 'trồng xen canh' cây ưa sáng ở tầng trên và cây ưa bóng ở tầng dưới nhằm mục đích sinh học nào sau đây?",
+    "knowledge": [
+      "kb-bio-g7-ung-dung-quang-hop"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tận dụng triệt để năng lượng ánh sáng mặt trời ở các tầng khác nhau và nâng cao hiệu quả sử dụng đất"
+        },
+        {
+          "id": "opt-b",
+          "label": "Để cây ưa bóng hút bớt lượng nước thừa chống ngập úng cho cây ưa sáng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Để cây ưa sáng che chở cho cây ưa bóng không bị sâu bọ tấn công"
+        },
+        {
+          "id": "opt-d",
+          "label": "Để hai loài cây lai giống tự nhiên với nhau tạo ra giống cây mới"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tầng trên nhận ánh sáng mạnh, tầng dưới nhận ánh sáng tán xạ vừa đủ cho cây ưa bóng."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 23 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất sinh học của xen canh",
+        "body": "Cây ưa sáng cần ánh sáng trực tiếp; cây ưa bóng chỉ cần ánh sáng yếu. Xếp tầng tối ưu hóa việc hấp thu quang năng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Trồng xen canh giúp khai thác hiệu quả ánh sáng ở các độ cao khác nhau."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án đúng",
+        "body": "Tận dụng triệt để năng lượng ánh sáng và diện tích đất."
+      }
+    ],
+    "finalSolution": "Trồng xen canh giúp khai thác hiệu quả ánh sáng ở các độ cao khác nhau.",
+    "commonMistakes": []
+  }
+]

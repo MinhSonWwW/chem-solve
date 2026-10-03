@@ -1,0 +1,518 @@
+[
+  {
+    "id": "bio-g7-b07-q01",
+    "lessonId": "bio-g7-b07",
+    "sgkBaiSo": 27,
+    "skillIds": [
+      "bio-thuc-hanh-ho-hap"
+    ],
+    "difficulty": 1,
+    "prompt": "Hóa chất nào được dùng để phát hiện khí Carbon dioxide (CO2) thải ra từ bình hạt nảy mầm hô hấp?",
+    "knowledge": [
+      "kb-bio-g7-thuc-hanh-co2"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Dung dịch nước vôi trong Ca(OH)2"
+        },
+        {
+          "id": "opt-b",
+          "label": "Dung dịch Iodine"
+        },
+        {
+          "id": "opt-c",
+          "label": "Dung dịch cồn 90°"
+        },
+        {
+          "id": "opt-d",
+          "label": "Dung dịch muối ăn NaCl"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Dung dịch trong suốt này khi gặp khí CO2 sẽ phản ứng tạo kết tủa trắng làm dung dịch bị vẩn đục."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 27 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hóa chất nhận biết khí CO2",
+        "body": "Nước vôi trong Ca(OH)2 là thuốc thử đặc trưng để phát hiện khí CO2."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Khí CO2 từ hô hấp làm đục nước vôi trong Ca(OH)2."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Dung dịch nước vôi trong Ca(OH)2."
+      }
+    ],
+    "finalSolution": "Khí CO2 từ hô hấp làm đục nước vôi trong Ca(OH)2.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm với dung dịch Iodine (thuốc thử nhận biết tinh bột)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g7-b07-q02",
+    "lessonId": "bio-g7-b07",
+    "sgkBaiSo": 27,
+    "skillIds": [
+      "bio-thuc-hanh-ho-hap"
+    ],
+    "difficulty": 1,
+    "prompt": "Tại sao trong thí nghiệm đo nhiệt độ hô hấp, người ta lại sử dụng thêm một bình chứa hạt đỗ ĐÃ LUỘC CHÍN?",
+    "knowledge": [
+      "kb-bio-g7-thuc-hanh-sinh-nhiet"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Làm thí nghiệm đối chứng (hạt luộc chín tế bào đã chết không còn hô hấp)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Để hạt luộc chín tỏa ra nhiều nhiệt lượng hơn hạt sống"
+        },
+        {
+          "id": "opt-c",
+          "label": "Để giữ cho bình thủy tinh không bị nứt vỡ khi thay đổi nhiệt độ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Để làm thức ăn dụ côn trùng bay vào hỗ trợ thí nghiệm"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nguyên tắc khoa học cần có mẫu đối chứng để so sánh sự khác biệt giữa vật sống và vật không sống."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 27 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu câu hỏi",
+        "body": "Tại sao trong thí nghiệm đo nhiệt độ hô hấp, người ta lại sử dụng thêm một bình chứa hạt đỗ ĐÃ LUỘC CHÍN?"
+      },
+      {
+        "kind": "knowledge",
+        "title": "Vai trò của mẫu đối chứng",
+        "body": "Bình hạt luộc chín không hô hấp, nhiệt độ giữ nguyên bằng nhiệt độ môi trường, chứng minh nhiệt kế ở bình hạt nảy mầm tăng lên là do hô hấp sống tạo ra chứ không phải do nhiệt độ phòng."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Làm thí nghiệm đối chứng."
+      }
+    ],
+    "finalSolution": "Hạt luộc chín dùng làm đối chứng vì tế bào đã chết, không còn hô hấp.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b07-q03",
+    "lessonId": "bio-g7-b07",
+    "sgkBaiSo": 27,
+    "skillIds": [
+      "bio-thuc-hanh-ho-hap"
+    ],
+    "difficulty": 2,
+    "prompt": "Hiện tượng nước vôi trong bị vẩn đục khi sục khí từ bình hạt nảy mầm xảy ra do phản ứng hóa học nào sau đây?",
+    "knowledge": [
+      "kb-bio-g7-thuc-hanh-co2"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "CO2 + Ca(OH)2 → CaCO3↓ (kết tủa trắng) + H2O"
+        },
+        {
+          "id": "opt-b",
+          "label": "O2 + Ca(OH)2 → CaO + H2O2"
+        },
+        {
+          "id": "opt-c",
+          "label": "N2 + Ca(OH)2 → Ca(NO3)2 + H2"
+        },
+        {
+          "id": "opt-d",
+          "label": "Glucose + Ca(OH)2 → Ca(OH)2 + C6H12O6"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khí CO2 tác dụng với calcium hydroxide tạo kết tủa calcium carbonate màu trắng đục."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 27 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu câu hỏi",
+        "body": "Hiện tượng nước vôi trong bị vẩn đục khi sục khí từ bình hạt nảy mầm xảy ra do phản ứng hóa học nào sau đây?"
+      },
+      {
+        "kind": "equation",
+        "title": "Phản ứng hóa học tạo kết tủa",
+        "body": "CO2 + Ca(OH)2 → CaCO3↓ + H2O. CaCO3 là chất không tan làm nước vôi vẩn đục."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn phương án",
+        "body": "Đáp án A là phương trình hóa học chuẩn."
+      }
+    ],
+    "finalSolution": "Khí CO2 phản ứng với nước vôi trong tạo kết tủa trắng CaCO3 làm vẩn đục dung dịch.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b07-q04",
+    "lessonId": "bio-g7-b07",
+    "sgkBaiSo": 27,
+    "skillIds": [
+      "bio-thuc-hanh-ho-hap"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi đưa que diêm đang cháy vào miệng bình chứa hạt đậu nảy mầm đậy kín 3 giờ, ngọn lửa que diêm bị dập tắt chứng minh điều gì?",
+    "knowledge": [
+      "kb-bio-g7-thuc-hanh-oxygen"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hạt đậu nảy mầm đã hô hấp và tiêu thụ hết khí Oxygen (O2) trong bình"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hạt đậu nảy mầm đã giải phóng ra khí Oxygen dập tắt ngọn lửa"
+        },
+        {
+          "id": "opt-c",
+          "label": "Nước bốc hơi từ hạt làm que diêm bị ướt ngay lập tức"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nhiệt độ trong bình quá lạnh làm ngọn lửa bị đóng băng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sự cháy cần khí O2. Mất nguồn O2 thì ngọn lửa không thể tiếp tục cháy."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 27 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hiện tượng ngọn lửa tắt",
+        "body": "Que diêm tắt vì thiếu khí O2 duy trì sự cháy, chứng tỏ hạt nảy mầm đã hút hết O2 trong bình cho hô hấp."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Ngọn lửa tắt chứng minh hô hấp tế bào ở hạt nảy mầm đã tiêu thụ khí Oxygen."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hạt nảy mầm đã tiêu thụ hết khí Oxygen."
+      }
+    ],
+    "finalSolution": "Ngọn lửa tắt chứng minh hô hấp tế bào ở hạt nảy mầm đã tiêu thụ khí Oxygen.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b07-q05",
+    "lessonId": "bio-g7-b07",
+    "sgkBaiSo": 27,
+    "skillIds": [
+      "bio-thuc-hanh-ho-hap"
+    ],
+    "difficulty": 2,
+    "prompt": "Tại sao trong các thí nghiệm thực hành về hô hấp tế bào ở thực vật, người ta thường chọn đối tượng là 'HẠT NẢY MẦM' mà không chọn hạt khô hay lá cây xanh?",
+    "knowledge": [
+      "kb-bio-g7-doi-tuong-thi-nghiem"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vì hạt nảy mầm hô hấp cực kì mạnh mẽ và không có diệp lục nên không bị quá trình quang hợp làm ảnh hưởng kết quả"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vì hạt nảy mầm có kích thước to nhất trong tất cả các bộ phận của cây"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì chỉ có hạt nảy mầm mới biết hút khí oxygen còn các bộ phận khác thì không"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì hạt nảy mầm không chứa nước nên dễ bảo quản trong phòng thí nghiệm"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Lá cây xanh có thể tiến hành quang hợp nếu có ánh sáng làm sai lệch lượng CO2 và O2."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 27 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu câu hỏi",
+        "body": "Tại sao trong các thí nghiệm thực hành về hô hấp tế bào ở thực vật, người ta thường chọn đối tượng là 'HẠT NẢY MẦM' mà không chọn hạt khô hay lá cây xanh?"
+      },
+      {
+        "kind": "knowledge",
+        "title": "Ưu điểm của hạt nảy mầm",
+        "body": "Hạt nảy mầm phân giải dinh dưỡng mãnh liệt để tạo mầm chồi nên hô hấp rất mạnh; không có lục lạp nên không quang hợp, giúp quan sát hiện tượng hô hấp thuần túy và rõ nét."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Đáp án A giải thích chuẩn xác lí do lựa chọn hạt nảy mầm."
+      }
+    ],
+    "finalSolution": "Hạt nảy mầm hô hấp mạnh và không quang hợp, là đối tượng lí tưởng cho thí nghiệm hô hấp.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b07-q06",
+    "lessonId": "bio-g7-b07",
+    "sgkBaiSo": 27,
+    "skillIds": [
+      "bio-thuc-hanh-ho-hap"
+    ],
+    "difficulty": 3,
+    "prompt": "Nếu đo nhiệt độ ở bình chứa hạt đậu nảy mầm và thấy nhiệt độ tăng thêm 3,5°C so với nhiệt độ ban đầu, điều này chứng minh kết luận nào?",
+    "knowledge": [
+      "kb-bio-g7-thuc-hanh-sinh-nhiet"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Quá trình hô hấp tế bào ở hạt nảy mầm đã giải phóng một phần năng lượng dưới dạng nhiệt năng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hạt đậu đã tự hút nhiệt từ thủy tinh để làm nóng bên trong"
+        },
+        {
+          "id": "opt-c",
+          "label": "Nhiệt độ phòng đã tăng lên đột ngột làm bình nóng theo"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hạt đậu nảy mầm đã chuyển hóa toàn bộ nước thành thể hơi nóng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sự chênh lệch nhiệt độ so với bình đối chứng chứng minh có sự tỏa nhiệt từ phản ứng hô hấp."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 27 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất sự tăng nhiệt độ",
+        "body": "Phân giải glucose trong hô hấp không chỉ tích lũy ATP mà còn giải phóng một phần năng lượng dưới dạng nhiệt năng tỏa ra xung quanh."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Hô hấp tế bào giải phóng nhiệt năng làm tăng nhiệt độ môi trường xung quanh."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hô hấp tế bào giải phóng năng lượng nhiệt."
+      }
+    ],
+    "finalSolution": "Hô hấp tế bào giải phóng nhiệt năng làm tăng nhiệt độ môi trường xung quanh.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b07-q07",
+    "lessonId": "bio-g7-b07",
+    "sgkBaiSo": 27,
+    "skillIds": [
+      "bio-thuc-hanh-ho-hap"
+    ],
+    "difficulty": 3,
+    "prompt": "Hãy ghép đúng tên thí nghiệm thực hành với hiện tượng quan sát được tương ứng:",
+    "knowledge": [
+      "kb-bio-g7-tong-hop-thuc-hanh-ho-hap"
+    ],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Thí nghiệm chứng minh hô hấp sinh nhiệt",
+          "right": "Cột thủy ngân trên nhiệt kế dâng cao"
+        },
+        {
+          "left": "Thí nghiệm chứng minh hô hấp thải CO2",
+          "right": "Dung dịch nước vôi trong bị vẩn đục trắng"
+        },
+        {
+          "left": "Thí nghiệm chứng minh hô hấp hút O2",
+          "right": "Ngọn lửa que diêm bị dập tắt"
+        },
+        {
+          "left": "Bình hạt luộc chín (đối chứng)",
+          "right": "Nhiệt độ không đổi, que diêm vẫn cháy"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhiệt kế đo nhiệt độ; Nước vôi trong đo CO2; Que diêm đo O2."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 27 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân loại hiện tượng",
+        "body": "Nhiệt: nhiệt kế dâng. CO2: nước vôi trong đục. Hút O2: que diêm tắt. Đối chứng: không có biến đổi."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Các hiện tượng quan sát được phản ánh đầy đủ đặc điểm của hô hấp tế bào: tỏa nhiệt, thải CO2, tiêu thụ O2."
+      },
+      {
+        "kind": "answer",
+        "title": "Ghép nối",
+        "body": "Ghép đúng 4 cặp hiện tượng và thí nghiệm."
+      }
+    ],
+    "finalSolution": "Các hiện tượng quan sát được phản ánh đầy đủ đặc điểm của hô hấp tế bào: tỏa nhiệt, thải CO2, tiêu thụ O2.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b07-q08",
+    "lessonId": "bio-g7-b07",
+    "sgkBaiSo": 27,
+    "skillIds": [
+      "bio-thuc-hanh-ho-hap"
+    ],
+    "difficulty": 3,
+    "prompt": "Từ chuỗi 3 thí nghiệm trên, học sinh có thể khẳng định phát biểu nào sau đây là ĐÚNG ĐẮN NHẤT về quá trình hô hấp tế bào ở thực vật?",
+    "knowledge": [
+      "kb-bio-g7-tong-hop-thuc-hanh-ho-hap"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hô hấp tế bào ở thực vật là quá trình tiêu thụ khí oxygen, thải ra khí carbon dioxide và giải phóng năng lượng nhiệt"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hô hấp ở thực vật chỉ tạo ra khí oxygen làm sạch không khí xung quanh"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hô hấp ở thực vật hấp thụ toàn bộ nhiệt năng của môi trường làm cho bình hạt bị đóng băng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Thực vật hoàn toàn không có quá trình hô hấp mà chỉ có động vật mới hô hấp"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tổng hợp kết quả: tiêu thụ O2 (que diêm tắt), sinh CO2 (nước vôi đục), sinh nhiệt (nhiệt kế tăng)."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 27 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu câu hỏi",
+        "body": "Từ chuỗi 3 thí nghiệm trên, học sinh có thể khẳng định phát biểu nào sau đây là ĐÚNG ĐẮN NHẤT về quá trình hô hấp tế bào ở thực vật?"
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tổng kết quy luật hô hấp tế bào",
+        "body": "Hô hấp tiêu thụ O2, thải CO2 và sinh nhiệt năng. Kết quả thí nghiệm khẳng định định luật chuyển hóa trong sinh học."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn khẳng định đúng",
+        "body": "Đáp án A tóm tắt chính xác toàn bộ bản chất khoa học của bài học."
+      }
+    ],
+    "finalSolution": "Hô hấp tế bào ở thực vật tiêu thụ O2, sinh ra CO2 và giải phóng năng lượng nhiệt.",
+    "commonMistakes": []
+  }
+]

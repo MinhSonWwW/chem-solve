@@ -1,0 +1,71 @@
+{
+  "lessonId": "bio-g8-b08",
+  "nodeId": "bio-g8-b08-theory",
+  "title": "Lý thuyết: Hệ thần kinh và các giác quan ở người",
+  "subtitle": "Bài 37 SGK KHTN 8 Kết nối tri thức: Cấu tạo nơron, não bộ và tủy sống, cơ chế điều tiết mắt, tật khúc xạ, cơ quan thính giác và vệ sinh giấc ngủ",
+  "sgkBaiSo": 37,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Hệ thần kinh",
+      "badgeColor": "emerald",
+      "title": "Cấu tạo hệ thần kinh & Cung phản xạ",
+      "content": "Hệ thần kinh điều khiển, điều hòa và phối hợp mọi hoạt động của cơ thể:",
+      "bulletPoints": [
+        "Đơn vị cấu tạo: Nơron (gồm thân chứa nhân, các sợi nhánh tiếp nhận tín hiệu và sợi trục có bao myelin dẫn truyền xung thần kinh).",
+        "Cung phản xạ gồm 5 khâu: Cơ quan thụ cảm → Nơron hướng tâm (cảm giác) → Trung ương thần kinh (não/tủy) → Nơron li tâm (vận động) → Cơ quan đáp ứng (cơ/tuyến).",
+        "Phân chia: Thần kinh trung ương (Não bộ và Tủy sống) và Thần kinh ngoại biên (Dây thần kinh và Hạch thần kinh)."
+      ],
+      "callout": "Đại não người phát triển vượt bậc nhất, có các vùng cảm giác và vận động ngôn ngữ (tiếng nói, chữ viết) mà động vật không có!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Mắt & Tai",
+      "badgeColor": "amber",
+      "title": "Cơ quan thị giác và Thính giác",
+      "content": "Giúp cơ thể cảm nhận thế giới xung quanh qua hình ảnh và âm thanh:",
+      "bulletPoints": [
+        "Mắt: Thể thủy tinh như thấu kính hội tụ điều tiết ảnh rơi đúng lên màng lưới (võng mạc). Cận thị (ảnh trước võng mạc do trục mắt dài/thể thủy tinh quá phồng) cần đeo kính phân kì; Viễn thị (ảnh sau võng mạc) cần đeo kính hội tụ.",
+        "Tai: Tai ngoài (vành tai hứng âm, màng nhĩ) → Tai giữa (chuỗi 3 xương tai: búa, đe, bàn đạp khuếch đại âm thanh) → Tai trong (ốc tai chứa tế bào thụ cảm thính giác và tiền đình giữ thăng bằng cơ thể)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Vệ sinh",
+      "badgeColor": "cyan",
+      "title": "Vệ sinh hệ thần kinh & Giấc ngủ",
+      "content": "Bảo vệ sức khỏe tinh thần và hệ thần kinh:",
+      "bulletPoints": [
+        "Vai trò của giấc ngủ: Giấc ngủ là quá trình ức chế bảo vệ tự nhiên giúp các tế bào vỏ não nghỉ ngơi và hồi phục năng lượng tiêu hao sau một ngày làm việc.",
+        "Quy tắc vệ sinh: Học sinh cần ngủ đủ 7 - 8 tiếng mỗi ngày, tạo thói quen ngủ đúng giờ, phòng ngủ thoáng mát yên tĩnh, không làm việc căng thẳng trước khi ngủ và tuyệt đối tránh xa các chất kích thích gây nghiện (rượu, bia, ma túy, cà phê đậm đặc)."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Để khắc phục tật cận thị ở mắt (ảnh của vật rơi ở phía trước màng lưới võng mạc), người cận thị cần phải đeo loại thấu kính nào?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Đeo thấu kính phân kì thích hợp",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Đeo thấu kính hội tụ dày",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Đeo kính phẳng 0 độ không có tác dụng quang học",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Chỉ cần đeo kính râm chống chói màu đen",
+        "correct": false
+      }
+    ],
+    "explanation": "Người cận thị có thể thủy tinh quá phồng hoặc trục cầu mắt quá dài khiến ảnh rơi trước màng lưới. Kính phân kì giúp làm phân kì chùm sáng tới, lùi ảnh về đúng điểm vàng trên võng mạc."
+  }
+}

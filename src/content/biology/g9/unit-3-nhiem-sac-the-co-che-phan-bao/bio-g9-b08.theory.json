@@ -1,0 +1,79 @@
+{
+  "lessonId": "bio-g9-b08",
+  "nodeId": "bio-g9-b08-theory",
+  "title": "Lý thuyết: Nguyên phân và giảm phân",
+  "subtitle": "Bài 43 SGK KHTN 9 Kết nối tri thức: Diễn biến NST qua các kì nguyên phân (tạo 2 tế bào con 2n) và giảm phân (tạo 4 giao tử n); ý nghĩa sinh học",
+  "sgkBaiSo": 43,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Nguyên phân",
+      "badgeColor": "emerald",
+      "title": "Quá trình nguyên phân (Mitosis)",
+      "content": "Nguyên phân là hình thức phân bào sinh dưỡng diễn ra ở tế bào sinh dưỡng và tế bào sinh dục sơ khai:",
+      "bulletPoints": [
+        "Kì đầu: Màng nhân và nhân con tiêu biến; thoi vô sắc xuất hiện; các NST kép bắt đầu co xoắn và đính với thoi phân bào tại tâm động.",
+        "Kì giữa: Các NST kép co xoắn cực đại và tập trung xếp thành MỘT HÀNG duy nhất trên mặt phẳng xích đạo của thoi phân bào.",
+        "Kì sau: Các tâm động chẻ đôi, 2 chromatid của mỗi NST kép tách rời nhau thành 2 NST đơn phân li đồng đều về hai cực của tế bào (tại kì sau số chromatid = 0).",
+        "Kì cuối: Màng nhân và nhân con tái lập; thoi phân bào biến mất; các NST đơn dãn xoắn dài; tế bào chất phân chia hình thành 2 tế bào con mang bộ NST 2n giống hệt nhau và giống tế bào mẹ.",
+        "Ý nghĩa: Giúp cơ thể lớn lên, tái sinh các mô tổn thương và là cơ sở của sinh sản vô tính."
+      ],
+      "callout": "Đặc điểm nhận diện kì giữa nguyên phân: Toàn bộ các NST kép xếp ngay ngắn thành đúng 1 hàng trên mặt phẳng xích đạo!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Giảm phân",
+      "badgeColor": "amber",
+      "title": "Quá trình giảm phân (Meiosis)",
+      "content": "Giảm phân là hình thức phân bào giảm nhiễm diễn ra ở tế bào sinh dục chín để tạo giao tử:",
+      "bulletPoints": [
+        "Đặc điểm chung: Gồm 2 lần phân bào liên tiếp (Giảm phân I và Giảm phân II), nhưng DNA và NST chỉ nhân đôi đúng 1 lần duy nhất tại kì trung gian trước Giảm phân I.",
+        "Giảm phân I (Phân chia giảm nhiễm):",
+        "• Kì đầu I: Có hiện tượng tiếp hợp và trao đổi chéo giữa các chromatid khác nguồn gốc trong cặp NST tương đồng (tạo biến dị tổ hợp mới).",
+        "• Kì giữa I: Các cặp NST kép tương đồng tập trung xếp thành HAI HÀNG song song trên mặt phẳng xích đạo.",
+        "• Kì sau I: Các cặp NST kép tương đồng phân li độc lập về hai cực (tâm động KHÔNG chẻ đôi, NST vẫn ở trạng thái kép) → Kì cuối I tạo 2 tế bào con mang n NST kép.",
+        "Giảm phân II (Tương tự nguyên phân): Kì giữa II xếp 1 hàng; kì sau II tâm động chẻ đôi tách chromatid thành NST đơn → Kì cuối II tạo 4 tế bào con mang bộ NST đơn bội (n)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Ý nghĩa sinh học",
+      "badgeColor": "cyan",
+      "title": "So sánh và ý nghĩa của Nguyên phân, Giảm phân & Thụ tinh",
+      "content": "Sự kết hợp hoàn hảo giữa 3 quá trình tế bào học tạo nên nhịp điệu sinh sản của sinh vật hữu tính:",
+      "bulletPoints": [
+        "Tạo giao tử ở động vật: 1 tế bào sinh tinh (2n) qua giảm phân cho 4 tinh trùng (n); 1 tế bào sinh trứng (2n) qua giảm phân cho 1 trứng (n) lớn và 3 thể cực (tiêu biến).",
+        "Tạo biến dị tổ hợp vô tận: Sự trao đổi chéo ở kì đầu I kết hợp sự phân li độc lập của các cặp tương đồng ở kì sau I và sự kết hợp ngẫu nhiên của giao tử trong thụ tinh tạo ra vô số tổ hợp gen mới.",
+        "Duy trì bộ NST đặc trưng: Giảm phân tạo giao tử n, qua Thụ tinh kết hợp (n + n = 2n) khôi phục lại bộ NST lưỡng bội của loài, rồi Nguyên phân giúp hợp tử phát triển thành cơ thể mới."
+      ],
+      "callout": "Bộ ba cơ chế Nguyên phân - Giảm phân - Thụ tinh là trụ cột duy trì ổn định bộ NST của loài qua các thế hệ cơ thể!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Đặc điểm nào sau đây là dấu hiệu phân biệt rõ nhất giữa 'Kì giữa của Nguyên phân' và 'Kì giữa I của Giảm phân'?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Ở Kì giữa nguyên phân các NST kép xếp thành 1 hàng, còn ở Kì giữa I giảm phân các cặp NST kép tương đồng xếp thành 2 hàng song song",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Ở Kì giữa nguyên phân không có thoi vô sắc, còn kì giữa I giảm phân có thoi vô sắc",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Ở Kì giữa nguyên phân NST ở dạng sợi đơn dãn xoắn, còn kì giữa I giảm phân ở dạng sợi kép",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Ở Kì giữa nguyên phân màng nhân đã hình thành hoàn chỉnh, còn kì giữa I giảm phân màng nhân biến mất",
+        "correct": false
+      }
+    ],
+    "explanation": "Tại mặt phẳng xích đạo: Kì giữa nguyên phân các NST kép xếp thành 1 hàng; trong khi ở Kì giữa I của giảm phân, các cặp NST kép tương đồng liên kết cặp đôi và xếp thành 2 hàng song song."
+  }
+}

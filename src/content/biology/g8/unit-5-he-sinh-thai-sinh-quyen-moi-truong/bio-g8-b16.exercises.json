@@ -1,0 +1,554 @@
+[
+  {
+    "id": "bio-g8-b16-q01",
+    "lessonId": "bio-g8-b16",
+    "sgkBaiSo": 45,
+    "skillIds": [
+      "bio-sinh-quyen"
+    ],
+    "difficulty": 1,
+    "prompt": "Phạm vi giới hạn không gian tồn tại của sinh quyển trên Trái Đất bao gồm những phần nào?",
+    "knowledge": [
+      "kb-bio-g8-khai-niem-sinh-quyen"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tầng đối lưu của khí quyển, toàn bộ thủy quyển và lớp đất mặt của thạch quyển"
+        },
+        {
+          "id": "opt-b",
+          "label": "Toàn bộ lõi Trái Đất và tầng bình lưu ngoài không gian vũ trụ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chỉ bao gồm các cánh rừng nhiệt đới nằm trên đất liền"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chỉ tính lớp nước mặt của các đại dương và sông hồ"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sinh quyển bao trùm tất cả những nơi có sự sống của sinh vật tồn tại: trong không khí, dưới nước và trên mặt đất."
+      },
+      {
+        "level": 2,
+        "text": "Bao gồm tầng thấp của khí quyển (đối lưu), toàn bộ các đại dương sông hồ (thủy quyển) và lớp đất mặt có sự sống (thạch quyển)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khái niệm sinh quyển",
+        "body": "Sinh quyển là quyển chứa toàn bộ sự sống trên Trái Đất, nơi sinh vật tương tác với các quyển khác của địa cầu."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Giới hạn các quyển",
+        "body": "Giới hạn sinh quyển gồm: tầng đối lưu khí quyển (nơi có không khí giàu oxy), toàn bộ thủy quyển từ mặt nước đến đáy vực thẳm và lớp thổ nhưỡng trên mặt thạch quyển nơi rễ cây và vi sinh vật hoạt động."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Sinh quyển bao gồm tầng đối lưu của khí quyển, toàn bộ thủy quyển và lớp đất mặt của thạch quyển."
+      }
+    ],
+    "finalSolution": "Sinh quyển bao gồm tầng đối lưu khí quyển, toàn bộ thủy quyển và lớp bề mặt thạch quyển nơi có sinh vật cư ngụ.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng sinh quyển mở rộng tới tận tâm Trái Đất hoặc toàn bộ vũ trụ bao la."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b16-q02",
+    "lessonId": "bio-g8-b16",
+    "sgkBaiSo": 45,
+    "skillIds": [
+      "bio-sinh-quyen"
+    ],
+    "difficulty": 1,
+    "prompt": "Khu sinh học nào trên cạn sở hữu độ đa dạng loài phong phú nhất và thảm thực vật có cấu trúc phân tầng phức tạp nhất thế giới?",
+    "knowledge": [
+      "kb-bio-g8-khu-sinh-hoc-tren-can"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Rừng mưa nhiệt đới"
+        },
+        {
+          "id": "opt-b",
+          "label": "Rừng lá kim phương Bắc (Taiga)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Đài nguyên hàn đới (Tundra)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hoang mạc và bán hoang mạc"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nơi có khí hậu nóng ẩm quanh năm, mưa dồi dào, cây cối xanh tươi bốn mùa (ví dụ rừng Amazon)."
+      },
+      {
+        "level": 2,
+        "text": "Rừng mưa nhiệt đới có cấu trúc phân 4 - 5 tầng tán từ cây vượt tán, cây gỗ lớn đến tầng cỏ mục sát đất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đặc trưng rừng nhiệt đới",
+        "body": "Rừng mưa nhiệt đới phân bố ở đới xích đạo và cận xích đạo với nền nhiệt độ cao và lượng mưa rất lớn quanh năm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "So sánh mức độ đa dạng",
+        "body": "Nhờ điều kiện tối ưu, rừng mưa nhiệt đới là nơi cư trú của hơn 50% tổng số loài sinh vật trên hành tinh, có thảm thực vật phân tầng rậm rạp nhất."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Rừng mưa nhiệt đới là khu sinh học có độ đa dạng loài cao nhất trên cạn."
+      }
+    ],
+    "finalSolution": "Rừng mưa nhiệt đới có khí hậu nóng ẩm quanh năm, thảm thực vật phân tầng rậm rạp và độ đa dạng sinh học cao nhất Trái Đất.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Nhầm rằng rừng lá kim Taiga có diện tích rộng lớn nên độ đa dạng loài phong phú nhất (Taiga có rất ít loài thực vật ưu thế)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b16-q03",
+    "lessonId": "bio-g8-b16",
+    "sgkBaiSo": 45,
+    "skillIds": [
+      "bio-sinh-quyen"
+    ],
+    "difficulty": 2,
+    "prompt": "Thảm thực vật ưu thế bao phủ khu sinh học rừng lá kim phương Bắc (Taiga) chủ yếu là các loài cây nào?",
+    "knowledge": [
+      "kb-bio-g8-khu-sinh-hoc-tren-can"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cây thông, tùng, vân sam, linh sam lá kim có tầng cutin dày chịu lạnh"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cây dẻ, phong, sồi có lá rộng bản rụng lá vào mùa đông"
+        },
+        {
+          "id": "opt-c",
+          "label": "Các loài cây họ Đậu, họ Dầu thường xanh rụng lá theo mùa khô"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cây xương rồng và các loài cỏ bụi mọc rải rác"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Taiga nằm ở vùng hàn đới và ôn đới lạnh, mùa đông kéo dài nhiều tháng với tuyết rơi phủ dày."
+      },
+      {
+        "level": 2,
+        "text": "Lá cây hình kim giúp hạn chế tối đa sự thoát hơi nước và ngăn chặn tuyết đọng làm gãy cành (cây thông, vân sam)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đặc điểm khí hậu rừng Taiga",
+        "body": "Rừng Taiga trải dài qua vùng bắc lục địa Á - Âu và Bắc Mỹ, nơi có mùa đông dài lạnh giá, nhiệt độ xuống dưới $0^\\circ\\text{C}$."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc điểm thích nghi thực vật",
+        "body": "Cây hạt trần lá kim (thông, tùng, linh sam) chiếm ưu thế tuyệt đối nhờ lá hẹp hình kim có lớp sáp cutin dày và nhựa thơm chống đóng băng dịch tế bào."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cây lá kim (thông, tùng, linh sam) là thảm thực vật ưu thế của rừng Taiga."
+      }
+    ],
+    "finalSolution": "Rừng Taiga có khí hậu ôn đới lạnh kéo dài, thích nghi tối ưu bởi các loài cây hạt trần lá kim như thông, linh sam.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nhầm lẫn giữa rừng Taiga (lá kim quanh năm) và rừng rụng lá ôn đới (cây sồi, dẻ rụng lá mùa thu đông)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b16-q04",
+    "lessonId": "bio-g8-b16",
+    "sgkBaiSo": 45,
+    "skillIds": [
+      "bio-sinh-quyen"
+    ],
+    "difficulty": 2,
+    "prompt": "Đặc điểm hình thái nào sau đây là sự thích nghi nổi bật của thực vật tại khu sinh học hoang mạc và bán hoang mạc?",
+    "knowledge": [
+      "kb-bio-g8-khu-sinh-hoc-tren-can"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Lá tiêu giảm hoặc biến thành gai, thân mọng nước và hệ rễ phát triển đâm rất sâu"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bản lá rất rộng, mỏng và có nhiều khí khổng để tăng cường thoát hơi nước"
+        },
+        {
+          "id": "opt-c",
+          "label": "Thân cây gỗ cao lớn vượt tán có bạnh vè khổng lồ để giữ cây đứng vững"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hệ rễ thở mọc nhô ngược lên mặt đất để hấp thu khí oxy trong bùn lầy"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hoang mạc có lượng mưa cực thấp, nhiệt độ ban ngày rất cao, nước là nguồn sống khan hiếm nhất."
+      },
+      {
+        "level": 2,
+        "text": "Cây xương rồng biến lá thành gai để giảm mất nước, thân chứa nhiều nước và rễ đâm sâu hàng chục mét hút nước ngầm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Áp lực chọn lọc sinh thái",
+        "body": "Khí hậu cực kì khô hạn và biên độ nhiệt độ ngày đêm khốc liệt là thách thức lớn nhất ở hoang mạc."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế thích nghi của thực vật",
+        "body": "Thực vật hoang mạc biến đổi lá thành gai hoặc phủ lớp sáp dày để triệt tiêu thoát hơi nước, thân phình to dự trữ nước và rễ đâm sâu lan rộng tìm mạch nước."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Lá biến thành gai, thân mọng nước và rễ đâm sâu là đặc điểm thích nghi đặc trưng của thực vật hoang mạc."
+      }
+    ],
+    "finalSolution": "Thực vật hoang mạc thích nghi với hạn hán khốc liệt bằng cách tiêu giảm lá thành gai, thân mọng nước và rễ phát triển sâu rộng.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Nhầm rễ thở của rừng ngập mặn ven biển với cấu trúc rễ của thực vật vùng sa mạc khô hạn."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b16-q05",
+    "lessonId": "bio-g8-b16",
+    "sgkBaiSo": 45,
+    "skillIds": [
+      "bio-sinh-quyen"
+    ],
+    "difficulty": 2,
+    "prompt": "Tại khu sinh học đài nguyên (Tundra) ở vùng hàn đới quanh năm băng giá, thảm thực vật chủ yếu bao gồm những loài nào?",
+    "knowledge": [
+      "kb-bio-g8-khu-sinh-hoc-tren-can"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Rêu, địa y và các loài cỏ, cây bụi thân gỗ lùn bám sát mặt đất"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cây phong ba, đước, vẹt và dừa nước cao lớn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Rừng cây sồi, dẻ và bạch dương rậm rạp nhiều tầng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cây cao su, cọ dầu và chuối rừng xanh tốt"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đài nguyên có tầng đất đóng băng vĩnh cửu (permafrost), mùa hè chỉ kéo dài vài tuần ngắn ngủi."
+      },
+      {
+        "level": 2,
+        "text": "Rễ cây gỗ lớn không thể đâm qua lớp băng ngầm dày, chỉ các loài rêu, địa y và bụi lùn mới có thể tồn tại được."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Môi trường đất đài nguyên",
+        "body": "Đài nguyên thuộc vùng cận cực Bắc có mùa đông dài khắc nghiệt, tầng đất dưới mặt đất đóng băng vĩnh cửu ngăn cản rễ cây phát triển sâu."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Thành phần loài thực vật",
+        "body": "Chỉ có rêu, địa y và các loài thực vật thân bò lùn (như liễu Bắc Cực cao vài centimet) mới có thể sinh trưởng vào mùa hè ngắn khi lớp đất mỏng phía trên tan băng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Rêu, địa y và cây bụi lùn là thảm thực vật đặc trưng của khu sinh học đài nguyên."
+      }
+    ],
+    "finalSolution": "Khu sinh học đài nguyên Tundra có đất đóng băng vĩnh cửu nên thảm thực vật chủ yếu là rêu, địa y và bụi lùn sát đất.",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng đài nguyên có nhiều cây gỗ cao lớn mọc trên băng tuyết."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b16-q06",
+    "lessonId": "bio-g8-b16",
+    "sgkBaiSo": 45,
+    "skillIds": [
+      "bio-sinh-quyen"
+    ],
+    "difficulty": 2,
+    "prompt": "Khu sinh học nước ngọt được chia thành hai nhóm sinh thái cơ bản nào sau đây?",
+    "knowledge": [
+      "kb-bio-g8-khu-sinh-hoc-duoi-nuoc"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vùng nước đứng (ao, hồ, đầm) và vùng nước chảy (sông, suối)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vùng nước ngầm sâu trong lòng đất và vùng tuyết tan đỉnh núi"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vùng nước mặn rạn san hô và vùng rừng ngập mặn ven biển"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vùng nước lợ cửa sông và vùng biển khơi đại dương"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Dựa vào đặc điểm động học của dòng nước: có dòng chảy liên tục hoặc mặt nước phẳng lặng tích tụ."
+      },
+      {
+        "level": 2,
+        "text": "Vùng nước đứng đại diện bởi ao hồ đầm; vùng nước chảy đại diện bởi sông suối mương rạch."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân loại thủy vực nước ngọt",
+        "body": "Môi trường nước ngọt có nồng độ muối thấp (dưới $0.5\\text{‰}$), chia thành hai nhóm thủy vực sinh thái chính."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc trưng hai nhóm",
+        "body": "Nhóm nước đứng (ao, hồ, đầm lầy) có hàm lượng oxy phân tầng và nhiều thực vật nổi; nhóm nước chảy (suối, sông) có dòng chảy liên tục, hàm lượng oxy hòa tan cao hơn và sinh vật có khả năng bám chắc hoặc bơi khỏe."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khu sinh học nước ngọt gồm vùng nước đứng (ao, hồ) và vùng nước chảy (sông, suối)."
+      }
+    ],
+    "finalSolution": "Khu sinh học nước ngọt phân chia thành vùng nước đứng (ao, hồ, đầm) và vùng nước chảy (sông, suối).",
+    "commonMistakes": [
+      {
+        "id": "cm-06",
+        "message": "Đưa rừng ngập mặn hay rạn san hô vào khu sinh học nước ngọt (đây là khu sinh học nước mặn)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b16-q07",
+    "lessonId": "bio-g8-b16",
+    "sgkBaiSo": 45,
+    "skillIds": [
+      "bio-sinh-quyen"
+    ],
+    "difficulty": 3,
+    "prompt": "Khu sinh học nào dưới biển được mệnh danh là 'rừng mưa nhiệt đới của đại dương' nhờ sở hữu độ đa dạng sinh học trù phú bậc nhất?",
+    "knowledge": [
+      "kb-bio-g8-khu-sinh-hoc-duoi-nuoc"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hệ sinh thái rạn san hô ở vùng biển nông nhiệt đới"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vùng biển khơi xa xôi cách bờ hàng nghìn hải lí"
+        },
+        {
+          "id": "opt-c",
+          "label": "Đáy vực thẳm đại dương tối tăm lạnh giá"
+        },
+        {
+          "id": "opt-d",
+          "label": "Bãi cát nông ven biển có sóng đập liên tục"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nơi có cấu trúc khung xương vôi của các tập đoàn san hô tạo nơi cư trú cho hàng nghìn loài cá và động vật thân mềm sặc sỡ."
+      },
+      {
+        "level": 2,
+        "text": "Rạn san hô nhiệt đới (như rạn san hô Nam Du, Nha Trang, Great Barrier) có năng suất sinh học và độ đa dạng số 1 biển cả."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Môi trường sống rạn san hô",
+        "body": "Rạn san hô hình thành ở vùng biển nhiệt đới nước nông trong vắt, ấm áp và giàu ánh sáng mặt trời."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Mức độ đa dạng sinh học",
+        "body": "Rạn san hô là nơi sinh sống, kiếm ăn và sinh sản của hơn 25% các loài sinh vật biển dù chỉ chiếm chưa đầy 1% diện tích đáy biển, do đó được so sánh tương đương với rừng mưa nhiệt đới trên cạn."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hệ sinh thái rạn san hô được mệnh danh là 'rừng mưa nhiệt đới của đại dương'."
+      }
+    ],
+    "finalSolution": "Rạn san hô ở vùng biển nông nhiệt đới có độ đa dạng loài cực kì phong phú, là 'rừng mưa nhiệt đới của đại dương'.",
+    "commonMistakes": [
+      {
+        "id": "cm-07",
+        "message": "Nghĩ rằng vùng biển khơi rộng lớn tích lũy mật độ loài cao hơn các rạn san hô ven bờ."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b16-q08",
+    "lessonId": "bio-g8-b16",
+    "sgkBaiSo": 45,
+    "skillIds": [
+      "bio-sinh-quyen"
+    ],
+    "difficulty": 3,
+    "prompt": "Quy luật phân bố chủ yếu của các khu sinh học trên cạn trên Trái Đất tuân theo những nhân tố tự nhiên nào?",
+    "knowledge": [
+      "kb-bio-g8-khu-sinh-hoc-tren-can"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Phân bố theo vĩ độ địa lí từ xích đạo về hai cực và theo độ cao sườn núi do biến đổi nhiệt ẩm"
+        },
+        {
+          "id": "opt-b",
+          "label": "Phân bố hoàn toàn ngẫu nhiên và biến động hỗn loạn theo từng tháng trong năm"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chỉ phụ thuộc duy nhất vào hoạt động trồng rừng nhân tạo của con người"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chỉ phụ thuộc vào độ nghiêng của trục từ trường Trái Đất"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ xích đạo lên cực bắc, nhiệt độ giảm dần từ đới nóng $\\to$ ôn đới $\\to$ hàn đới."
+      },
+      {
+        "level": 2,
+        "text": "Sự kết hợp giữa nhiệt độ và lượng mưa quyết định loại thảm thực vật hình thành theo đới vĩ độ và vành đai độ cao."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cơ sở phân bố địa lí sinh vật",
+        "body": "Các khu sinh học trên cạn hình thành dưới tác động tổng hợp của các nhân tố khí hậu vĩ mô."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy luật đới vĩ độ và độ cao",
+        "body": "Sự thay đổi nhiệt độ và lượng mưa theo vĩ độ (từ xích đạo về cực: rừng nhiệt đới $\\to$ thảo nguyên $\\to$ rừng ôn đới $\\to$ taiga $\\to$ đài nguyên) và theo độ cao núi tạo nên sự phân tầng và phân đới rõ nét của các khu sinh học."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Các khu sinh học trên cạn phân bố theo vĩ độ và độ cao do sự thay đổi của các yếu tố nhiệt độ và lượng mưa."
+      }
+    ],
+    "finalSolution": "Sự biến đổi nhiệt độ và lượng mưa theo đới vĩ độ (từ xích đạo về hai cực) và đai độ cao quyết định sự phân bố các khu sinh học trên Trái Đất.",
+    "commonMistakes": [
+      {
+        "id": "cm-08",
+        "message": "Nghĩ rằng sự phân bố khu sinh học là ngẫu nhiên không tuân theo quy luật khí hậu tự nhiên nào."
+      }
+    ]
+  }
+]

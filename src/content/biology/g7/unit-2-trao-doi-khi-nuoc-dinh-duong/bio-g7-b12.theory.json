@@ -1,0 +1,75 @@
+{
+  "lessonId": "bio-g7-b12",
+  "nodeId": "bio-g7-b12-theory",
+  "title": "Lý thuyết: Thực hành chứng minh thân vận chuyển nước và lá thoát hơi nước",
+  "subtitle": "Bài 32 SGK KHTN 7 Kết nối tri thức: Thí nghiệm cắm hoa/cần tây vào mực đỏ và bọc túi nilon chứng minh lá thoát hơi nước",
+  "sgkBaiSo": 32,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Thí nghiệm 1",
+      "badgeColor": "cyan",
+      "title": "Chứng minh thân vận chuyển nước (Mạch gỗ)",
+      "content": "Thí nghiệm chứng minh dòng nước và chất hòa tan được vận chuyển từ gốc lên lá qua mạch gỗ:",
+      "bulletPoints": [
+        "Chuẩn bị: Cành hoa hồng trắng (hoặc cành cần tây tươi có đủ lá), cốc thủy tinh chứa nước sạch pha mực đỏ đậm.",
+        "Tiến hành: Dùng dao lam cắt vát gốc cành ngập trong nước, sau đó cắm cành vào cốc nước pha mực đỏ, để nơi thoáng sáng từ 2 – 4 giờ.",
+        "Hiện tượng quan sát: Cánh hoa hồng từ màu trắng dần chuyển sang màu đỏ (hoặc các gân lá cần tây đỏ rực).",
+        "Quan sát lát cắt thân: Dùng dao lam cắt một lát mỏng ngang thân cành, quan sát dưới kính lúp thấy các chấm tròn đỏ rực phân bố ở phần gỗ (mạch gỗ), phần vỏ ngoài và ruột không nhuộm đỏ.",
+        "Kết luận: Nước và khoáng hòa tan được vận chuyển hướng lên ngọn qua các ống mạch gỗ trong thân cây."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Thí nghiệm 2",
+      "badgeColor": "emerald",
+      "title": "Chứng minh lá là cơ quan thoát hơi nước",
+      "content": "Thí nghiệm so sánh đối chứng chứng minh vai trò thoát hơi nước qua phiến lá:",
+      "bulletPoints": [
+        "Chuẩn bị: Hai chậu cây cùng loài hoặc hai cành cây tươi cùng kích thước. Cành A để nguyên lá xanh; Cành B dùng kéo cắt bỏ toàn bộ lá (chỉ còn thân cành).",
+        "Tiến hành: Dùng túi nilon trong suốt bao kín tán lá của Cành A và trùm kín Cành B, dùng dây buộc chặt sát gốc cành. Đặt cả hai cành dưới ánh sáng mặt trời 1 – 2 giờ.",
+        "Hiện tượng: Ở túi nilon của Cành A (có lá), thành trong của túi bị mờ đục và đọng nhiều giọt nước li ti ngưng tụ. Ở túi nilon của Cành B (không có lá), thành túi vẫn khô ráo, trong suốt.",
+        "Kết luận: Hơi nước thoát ra ngoài môi trường chủ yếu qua bề mặt các phiến lá (qua các lỗ khí khổng)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Lưu ý thao tác",
+      "badgeColor": "amber",
+      "title": "Kỹ thuật thực hành chuẩn khoa học",
+      "content": "Để thí nghiệm đạt độ chính xác cao và giải thích đúng bản chất:",
+      "bulletPoints": [
+        "Cắt cành trong nước: Khi chuẩn bị cành hoa/cần tây, cần nhúng gốc vào chậu nước rồi mới cắt vát gốc để bọt khí không lọt vào làm tắc các ống mao mạch gỗ.",
+        "Buộc kín miệng túi nilon vào cành: Tuyệt đối không trùm túi nilon bọc cả chậu đất, vì hơi ẩm bốc lên từ đất ướt sẽ làm sai lệch kết quả thí nghiệm của lá.",
+        "Ứng dụng đời sống: Thợ cắm hoa áp dụng nguyên lý vận chuyển của mạch gỗ để nhuộm hoa tươi nhiều màu (xanh, tím, vàng) từ hoa cúc hoặc hoa hồng trắng."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Trong thí nghiệm cắm cành hoa hồng trắng vào cốc nước pha mực đỏ, khi dùng dao lam cắt ngang thân cành quan sát dưới kính lúp, phần nào của thân bị nhuộm màu đỏ đậm?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Các bó mạch gỗ (xylem) nằm ở phần gỗ của thân",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Lớp vỏ cây ngoài cùng và lớp biểu bì",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Phần ruột xốp mềm ở chính giữa thân",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Toàn bộ thân cây bị nhuộm đỏ đồng đều như nhau",
+        "correct": false
+      }
+    ],
+    "explanation": "Nước pha mực đỏ theo các ống mao dẫn của mạch gỗ (xylem) di chuyển từ gốc lên ngọn nên chỉ có các bó mạch gỗ ở phần gỗ của thân bắt màu đỏ rõ rệt."
+  }
+}

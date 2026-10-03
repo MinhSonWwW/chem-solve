@@ -1,0 +1,76 @@
+{
+  "lessonId": "bio-g7-b09",
+  "nodeId": "bio-g7-b09-theory",
+  "title": "Lý thuyết: Vai trò của nước và chất dinh dưỡng đối với sinh vật",
+  "subtitle": "Bài 29 SGK KHTN 7 Kết nối tri thức: Thành phần nước (70-90%), vai trò dung môi, chuyển hóa và điều hòa nhiệt",
+  "sgkBaiSo": 29,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Vai trò của nước",
+      "badgeColor": "cyan",
+      "title": "Nước – Thành phần cốt lõi của sự sống",
+      "content": "Nước chiếm từ 70% đến 90% khối lượng cơ thể sinh vật (ở sứa biển nước chiếm tới 95% - 98%). Nước đảm nhận 4 vai trò sống còn:",
+      "bulletPoints": [
+        "Dung môi hòa tan: Hòa tan nhiều chất dinh dưỡng, khí hòa tan và ion khoáng tạo môi trường cho tế bào hấp thụ.",
+        "Môi trường phản ứng: Mọi phản ứng sinh hóa, trao đổi chất trong tế bào đều chỉ diễn ra trong môi trường nước.",
+        "Vận chuyển các chất: Là thành phần chính của dòng mạch dẫn ở thực vật và máu ở động vật, giúp vận chuyển oxy, thức ăn và chất thải.",
+        "Điều hòa thân nhiệt: Nhờ nhiệt dung cao, sự bay hơi nước qua mồ hôi (ở động vật) và thoát hơi nước (ở lá cây) giúp làm mát cơ thể hiệu quả."
+      ],
+      "callout": "Mất trên 10-20% lượng nước trong cơ thể có thể gây rối loạn trao đổi chất và tử vong!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Chất dinh dưỡng",
+      "badgeColor": "emerald",
+      "title": "Vai trò của các nhóm chất dinh dưỡng",
+      "content": "Các chất dinh dưỡng cung cấp năng lượng và nguyên liệu xây dựng cơ thể:",
+      "bulletPoints": [
+        "Carbohydrate (Đường, tinh bột): Cung cấp nguồn năng lượng chủ yếu cho mọi hoạt động sống.",
+        "Lipid (Chất béo): Dự trữ năng lượng đậm đặc, cấu tạo màng sinh học và lớp mỡ dưới da cách nhiệt giữ ấm cơ thể.",
+        "Protein (Chất đạm): Vật liệu xây dựng tế bào, cấu tạo cơ bắp, enzym sinh học, kháng thể miễn dịch và hoóc môn.",
+        "Vitamin và Chất khoáng: Điều hòa trao đổi chất (Calcium giúp chắc xương, Sắt tạo hồng cầu, Iodine cấu tạo hoóc môn tuyến giáp)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Nhu cầu",
+      "badgeColor": "amber",
+      "title": "Nhu cầu nước và dinh dưỡng ở sinh vật",
+      "content": "Nhu cầu nước và chất dinh dưỡng thay đổi tùy thuộc loài và điều kiện sống:",
+      "bulletPoints": [
+        "Theo loài: Cây ngập nước (sen, súng) cần nhiều nước hơn cây xương rồng sa mạc.",
+        "Theo lứa tuổi: Trẻ em đang lớn cần nhiều protein và canxi hơn người già.",
+        "Theo cân nặng: Người trưởng thành cần khoảng 40 mL nước/kg thể trọng mỗi ngày (trung bình 1,5 – 2,5 lít/ngày).",
+        "Khi lao động nặng hoặc thời tiết nắng gắt: Cần bổ sung nước và muối khoáng kịp thời để bù đắp lượng mồ hôi tiết ra."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Một học sinh nặng 45 kg thì nhu cầu nước uống tối thiểu mỗi ngày theo khuyến nghị khoa học (40 mL/kg thể trọng) là bao nhiêu lít?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "1,8 lít nước mỗi ngày",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "0,5 lít nước mỗi ngày",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "4,5 lít nước mỗi ngày",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "10 lít nước mỗi ngày",
+        "correct": false
+      }
+    ],
+    "explanation": "Lượng nước cần = 45 kg × 40 mL/kg = 1800 mL = 1,8 lít nước mỗi ngày (bao gồm nước uống trực tiếp và nước trong thức ăn canh, súp, trái cây)."
+  }
+}

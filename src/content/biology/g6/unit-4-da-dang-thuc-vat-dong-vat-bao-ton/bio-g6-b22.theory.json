@@ -1,0 +1,75 @@
+{
+  "lessonId": "bio-g6-b22",
+  "nodeId": "bio-g6-b22-theory",
+  "title": "Lý thuyết: Thực hành quan sát và nhận biết động vật ngoài thiên nhiên",
+  "subtitle": "Bài 37 SGK KHTN 6 Kết nối tri thức: Quan sát tập tính, cơ quan di chuyển và lập bảng nhật ký động vật",
+  "sgkBaiSo": 37,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Mục tiêu",
+      "badgeColor": "emerald",
+      "title": "Mục tiêu bài thực hành ngoài thiên nhiên",
+      "content": "Kỹ năng điều tra và nhận diện động vật sống trong hệ sinh thái địa phương:",
+      "bulletPoints": [
+        "Quan sát trực tiếp động vật tại các sinh cảnh khác nhau (vườn trường, thảm cỏ, ao hồ, tán cây, kẽ tường ẩm).",
+        "Ghi nhận chính xác cơ quan di chuyển (chân, cánh, vây, cơ thể co dãn), tập tính kiếm ăn và tự vệ.",
+        "Phân loại các loài quan sát được vào nhóm Động vật không xương sống hoặc Động vật có xương sống."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Quan sát đại diện",
+      "badgeColor": "amber",
+      "title": "Đặc điểm nhận diện một số đại diện quen thuộc",
+      "content": "Các loài động vật thường gặp trong khuôn viên trường học và công viên:",
+      "bulletPoints": [
+        "Con giun đất: Sống trong đất ẩm tơi xốp; di chuyển bằng cách co dãn các đốt thân kết hợp các vòng tơ nhỏ bụng (không xương sống).",
+        "Con ốc sên: Bò chậm chạp trên cành lá bằng bàn chân cơ phẳng tiết chất nhầy trơn láng; mang vỏ đá vôi (Thân mềm - không xương sống).",
+        "Chuồn chuồn, bướm: Bay lượn linh hoạt bằng 2 đôi cánh màng ngực; có 3 đôi chân phân đốt (Chân khớp - không xương sống).",
+        "Thạch sùng (thằn lằn nhà): Bò nhanh thoăn thoắt trên tường nhờ các đệm ngón chân có giác bám vi mô; săn bắt muỗi (Bò sát - có xương sống).",
+        "Chim sẻ, bồ câu: Bay bằng cánh lông vũ, nhảy nhót nhặt hạt thóc và bắt sâu bọ (Chim - có xương sống)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Nhật ký thực địa",
+      "badgeColor": "cyan",
+      "title": "Bảng ghi chép nhật ký quan sát chuẩn khoa học",
+      "content": "Cấu trúc một bảng ghi chép thực địa gồm 4 mục chính:",
+      "bulletPoints": [
+        "Cột 1: Tên động vật quan sát (tên phổ thông địa phương).",
+        "Cột 2: Môi trường sống (trong lòng đất, trên mặt đất, tán cây, trong nước).",
+        "Cột 3: Cơ quan di chuyển (bàn chân cơ, chân phân đốt, cánh bay, vây bơi, các vòng tơ).",
+        "Cột 4: Nhóm phân loại chính (Động vật không xương sống hay Động vật có xương sống)."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Cơ quan di chuyển chủ yếu của con ốc sên giúp nó bò trườn trên mặt đất và thân cây là gì?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Bàn chân cơ phẳng tiết chất nhầy bôi trơn",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Hai đôi cánh màng mỏng",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Vây bơi như cá",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Bốn chân có móng vuốt nhọn",
+        "correct": false
+      }
+    ],
+    "explanation": "Ốc sên thuộc ngành Thân mềm, di chuyển chậm chạp bằng một khối bàn chân cơ phẳng ở mặt bụng, liên tục tiết chất nhầy để làm giảm ma sát khi trườn bò."
+  }
+}

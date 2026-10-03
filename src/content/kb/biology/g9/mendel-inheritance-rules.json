@@ -1,0 +1,69 @@
+[
+  {
+    "id": "kb-bio-g9-mendel-terms",
+    "title": "Các thuật ngữ và kí hiệu di truyền cơ bản của Mendel",
+    "description": "Hệ thống thuật ngữ chuẩn mực do Gregor Mendel và di truyền học hiện đại xây dựng.",
+    "terms": [
+      {
+        "term": "Tính trạng (Character / Trait)",
+        "definition": "Những đặc điểm về hình thái, cấu tạo, sinh lí của một cơ thể sinh vật (ví dụ: màu hoa, hình dạng hạt, chiều cao thân)."
+      },
+      {
+        "term": "Cặp tính trạng tương phản",
+        "definition": "Hai trạng thái biểu hiện trái ngược nhau của cùng một loại tính trạng (ví dụ: hoa đỏ đối lập với hoa trắng, thân cao đối lập với thân lùn)."
+      },
+      {
+        "term": "Nhân tố di truyền (Gene)",
+        "definition": "Nhân tố quy định tính trạng của sinh vật, nằm trong nhân tế bào và tồn tại thành từng cặp allele trong tế bào sinh dưỡng."
+      },
+      {
+        "term": "Kiểu gen (Genotype)",
+        "definition": "Tổ hợp toàn bộ các gene trong tế bào của cơ thể sinh vật (ví dụ: AA, Aa, aa, AaBb)."
+      },
+      {
+        "term": "Kiểu hình (Phenotype)",
+        "definition": "Tập hợp toàn bộ các tính trạng của cơ thể sinh vật biểu hiện ra bên ngoài (ví dụ: hoa đỏ, hạt vàng, thân cao)."
+      },
+      {
+        "term": "Thể đồng hợp (Homozygote)",
+        "definition": "Cá thể mang hai allele giống hệt nhau của cùng một gene quy định tính trạng (đồng hợp trội AA hoặc đồng hợp lặn aa)."
+      },
+      {
+        "term": "Thể dị hợp (Heterozygote)",
+        "definition": "Cá thể mang hai allele khác nhau của cùng một gene quy định tính trạng (Aa, Bb)."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g9-law-of-segregation",
+    "title": "Quy luật phân li của Mendel (Lai một cặp tính trạng)",
+    "description": "Trong quá trình phát sinh giao tử, mỗi nhân tố di truyền trong cặp nhân tố di truyền phân li về một giao tử và giữ nguyên bản chất như ở cơ thể thuần chủng của P.",
+    "experiment": {
+      "parents": "P thuần chủng: Cây hoa đỏ (AA) × Cây hoa trắng (aa)",
+      "gametes": "G_P: Giao tử A × Giao tử a",
+      "f1": "F1: 100% Aa (Kiểu hình 100% Hoa đỏ)",
+      "f2_cross": "F1 tự thụ phấn: Aa × Aa",
+      "f2_genotype": "1 AA : 2 Aa : 1 aa (25% AA : 50% Aa : 25% aa)",
+      "f2_phenotype": "3 Hoa đỏ : 1 Hoa trắng (75% trội : 25% lặn)"
+    },
+    "testcross": {
+      "definition": "Phép lai phân tích là phép lai giữa cá thể mang tính trạng trội cần xác định kiểu gen với cá thể mang tính trạng lặn (aa).",
+      "case1": "Nếu con lai F_a đồng tính 100% trội → Cá thể ban đầu có kiểu gen đồng hợp trội (AA).",
+      "case2": "Nếu con lai F_a phân tính tỉ lệ 1 trội : 1 lặn → Cá thể ban đầu có kiểu gen dị hợp (Aa)."
+    }
+  },
+  {
+    "id": "kb-bio-g9-law-of-independent-assortment",
+    "title": "Quy luật phân li độc lập của Mendel (Lai hai cặp tính trạng)",
+    "description": "Các cặp nhân tố di truyền quy định các cặp tính trạng khác nhau phân li độc lập vào các giao tử trong quá trình phát sinh giao tử.",
+    "experiment": {
+      "parents": "P thuần chủng: Hạt vàng, vỏ trơn (AABB) × Hạt xanh, vỏ nhăn (aabb)",
+      "f1": "F1: 100% Hạt vàng, vỏ trơn (AaBb)",
+      "f2_ratio": "9 Vàng, trơn (A-B-) : 3 Vàng, nhăn (A-bb) : 3 Xanh, trơn (aaB-) : 1 Xanh, nhăn (aabb)",
+      "totalCombinations": 16,
+      "gameteTypesF1": 4,
+      "gametesF1": "1/4 AB, 1/4 Ab, 1/4 aB, 1/4 ab"
+    },
+    "significance": "Tạo ra nguồn biến dị tổ hợp phong phú, xuất hiện các kiểu hình mới khác P (hạt vàng nhăn và xanh trơn) có ý nghĩa lớn trong chọn giống và tiến hóa."
+  }
+]

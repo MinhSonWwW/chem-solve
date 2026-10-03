@@ -1,0 +1,74 @@
+{
+  "lessonId": "bio-g9-b14",
+  "nodeId": "bio-g9-b14-theory",
+  "title": "Lý thuyết: Tiến hóa & Các hình thức chọn lọc",
+  "subtitle": "Bài 49 SGK KHTN 9 Kết nối tri thức: Khái niệm tiến hóa, bằng chứng giải phẫu so sánh, hóa thạch, chọn lọc nhân tạo và chọn lọc tự nhiên",
+  "sgkBaiSo": 49,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Giải phẫu so sánh",
+      "badgeColor": "emerald",
+      "title": "Bằng chứng giải phẫu so sánh",
+      "content": "So sánh cấu tạo giải phẫu giữa các loài cung cấp bằng chứng rõ ràng về mối quan hệ họ hàng:",
+      "bulletPoints": [
+        "1. Cơ quan tương đồng: Bắt nguồn từ cùng một cơ quan ở loài tổ tiên, dù hiện tại thực hiện chức năng khác nhau (ví dụ: tay người cầm nắm, cánh dơi bay, vây cá voi bơi, chân trước ngựa chạy đều có chung kiểu sắp xếp xương chi). Phản ánh hướng tiến hóa phân li.",
+        "2. Cơ quan tương tự: Thực hiện chức năng giống nhau nhưng có nguồn gốc phát sinh phôi học hoàn toàn khác nhau (ví dụ: cánh dơi có khung xương chi trước và cánh bướm là nếp gấp màng cutin; gai hoàng liên biến đổi từ lá và gai hoa hồng do biểu bì thân phát triển). Phản ánh tiến hóa đồng quy.",
+        "3. Cơ quan thoái hóa: Di tích của cơ quan từng phát triển ở loài tổ tiên nhưng nay đã tiêu giảm chức năng (ví dụ ở người: ruột thừa là vết tích manh tràng động vật ăn cỏ; xương cùng là di tích của đuôi; răng khôn).",
+        "Mẹo phân biệt: Tương đồng = Cùng nguồn gốc, khác chức năng; Tương tự = Khác nguồn gốc, cùng chức năng."
+      ],
+      "callout": "Cơ quan thoái hóa thực chất là một trường hợp đặc biệt của cơ quan tương đồng đã bị tiêu giảm chức năng!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Bằng chứng hóa thạch",
+      "badgeColor": "amber",
+      "title": "Hóa thạch — Bằng chứng tiến hóa trực tiếp",
+      "content": "Di tích của sinh vật cổ đại để lại trong các tầng đất đá vỏ Trái Đất:",
+      "bulletPoints": [
+        "Các dạng hóa thạch: Xương hóa đá, vỏ sò trong đá vôi, dấu chân in trên trầm tích, côn trùng bọc nguyên vẹn trong hổ phách, xác voi ma mút trong băng tuyết vĩnh cửu.",
+        "Vai trò then chốt: Hóa thạch là bằng chứng trực tiếp và xác thực nhất cho biết sinh vật cổ đại đã từng sống ở thời kì nào, hình thái ra sao và môi trường cổ địa lí.",
+        "Hóa thạch dạng chuyển tiếp: Chim cổ (Archaeopteryx) có các đặc điểm trung gian giữa bò sát (đuôi dài có đốt, hàm có răng, móng vuốt ở cánh) và chim (có lông vũ) → chứng minh chim bắt nguồn từ tổ tiên bò sát cổ."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Chọn lọc tự nhiên & Nhân tạo",
+      "badgeColor": "cyan",
+      "title": "Chọn lọc nhân tạo và Chọn lọc tự nhiên",
+      "content": "Hai động lực cơ bản chi phối sự đa dạng sinh học và thích nghi của sinh giới:",
+      "bulletPoints": [
+        "Chọn lọc nhân tạo (Con người chủ động): Con người giữ lại các cá thể mang biến dị có lợi cho nhu cầu kinh tế, dinh dưỡng, thẩm mĩ và đào thải biến dị không mong muốn → Tạo ra hàng trăm giống vật nuôi (chó cảnh, bồ câu, bò sữa) và cây trồng (lúa, bắp cải, hoa hồng) từ dạng hoang dại.",
+        "Chọn lọc tự nhiên (Charles Darwin): Đấu tranh sinh tồn giữa các cá thể trong quần thể → Môi trường sống đào thải các cá thể mang biến dị bất lợi, bảo tồn và nhân lên các cá thể mang biến dị có lợi thích nghi → Quần thể ngày càng thích nghi với môi trường sống và phân li thành loài mới.",
+        "So sánh: Chọn lọc nhân tạo phục vụ lợi ích của con người; Chọn lọc tự nhiên bảo tồn những đặc điểm giúp sinh vật sống sót và sinh sản tốt nhất trong tự nhiên."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Cặp cơ quan nào sau đây là ví dụ điển hình của 'cơ quan tương đồng' phản ánh nguồn gốc chung từ một loài tổ tiên?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Tay người và cánh của loài dơi",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Cánh dơi và cánh của loài bướm",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Gai cây hoa hồng và gai cây xương rồng",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Mang của loài cá và phổi của loài chim",
+        "correct": false
+      }
+    ],
+    "explanation": "Tay người và cánh dơi là cơ quan tương đồng vì đều bắt nguồn từ chi trước của động vật có xương sống cổ xưa (có cùng kiểu sắp xếp các xương cánh, cẳng, cổ, bàn, ngón), dù hiện tại tay người dùng cầm nắm còn cánh dơi dùng để bay. Cánh dơi và cánh bướm là cơ quan tương tự."
+  }
+}

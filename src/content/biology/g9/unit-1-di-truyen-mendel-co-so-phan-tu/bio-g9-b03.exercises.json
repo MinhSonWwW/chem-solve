@@ -1,0 +1,250 @@
+[
+  {
+    "id": "bio-g9-b03-q01",
+    "lessonId": "bio-g9-b03",
+    "sgkBaiSo": 38,
+    "skillIds": ["bio9-nucleic-acid-gene"],
+    "difficulty": 1,
+    "prompt": "Bốn loại đơn phân nucleotide tham gia cấu tạo nên đại phân tử DNA là:",
+    "knowledge": ["kb-bio-g9-dna-cau-truc-hoa-hoc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Adenine (A), Thymine (T), Guanine (G), Cytosine (C)" },
+        { "id": "opt-b", "label": "Adenine (A), Uracil (U), Guanine (G), Cytosine (C)" },
+        { "id": "opt-c", "label": "Glucose, Amino acid, Fatty acid, Glycerol" },
+        { "id": "opt-d", "label": "Alanine, Valine, Leucine, Isoleucine" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "DNA có chứa Thymine (T), còn RNA mới chứa Uracil (U)." },
+      { "level": 2, "text": "Bốn chữ cái viết tắt quen thuộc là A, T, G, C." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Cấu trúc hóa học của DNA", "body": "DNA là đại phân tử cấu tạo theo nguyên tắc đa phân, đơn phân là các nucleotide." },
+      { "kind": "knowledge", "title": "Bốn loại nucleotide", "body": "Bốn loại đơn phân cấu tạo DNA gồm Adenine (A), Thymine (T), Guanine (G) và Cytosine (C)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Phương án A là đáp án chính xác." }
+    ],
+    "finalSolution": "Bốn loại nucleotide cấu tạo DNA là Adenine (A), Thymine (T), Guanine (G) và Cytosine (C).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm Uracil (U) của RNA sang DNA." }
+    ]
+  },
+  {
+    "id": "bio-g9-b03-q02",
+    "lessonId": "bio-g9-b03",
+    "sgkBaiSo": 38,
+    "skillIds": ["bio9-nucleic-acid-gene"],
+    "difficulty": 1,
+    "prompt": "Trong cấu trúc xoắn kép của phân tử DNA, các nucleotide giữa hai mạch đơn liên kết với nhau theo nguyên tắc bổ sung như thế nào?",
+    "knowledge": ["kb-bio-g9-nguyen-tac-bo-sung-dna"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "A liên kết với T bằng 2 liên kết hydrogen; G liên kết với C bằng 3 liên kết hydrogen" },
+        { "id": "opt-b", "label": "A liên kết với G bằng 2 liên kết hydrogen; T liên kết với C bằng 3 liên kết hydrogen" },
+        { "id": "opt-c", "label": "A liên kết với C bằng 3 liên kết hydrogen; G liên kết với T bằng 2 liên kết hydrogen" },
+        { "id": "opt-d", "label": "A liên kết với T bằng 3 liên kết hydrogen; G liên kết với C bằng 2 liên kết hydrogen" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Adenine luôn ghép đôi với Thymine; Guanine luôn ghép đôi với Cytosine." },
+      { "level": 2, "text": "Cặp A - T có 2 liên kết hydrogen, cặp G - C có 3 liên kết hydrogen (G ≡ C bền vững hơn A = T)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nguyên tắc bổ sung trong DNA", "body": "Bazo nito có kích thước lớn (purine: A, G) liên kết với bazo nito kích thước bé (pyrimidine: T, C) qua liên kết hydrogen." },
+      { "kind": "knowledge", "title": "Số lượng liên kết hydrogen", "body": "Quy tắc: A liên kết với T bằng 2 liên kết hydrogen (A = T); G liên kết với C bằng 3 liên kết hydrogen (G ≡ C)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Phương án A mô tả đúng nguyên tắc bổ sung." }
+    ],
+    "finalSolution": "Nguyên tắc bổ sung trong DNA: A liên kết với T bằng 2 liên kết hydrogen (A=T), G liên kết với C bằng 3 liên kết hydrogen (G≡C).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm số liên kết hydrogen: tưởng A-T có 3 liên kết và G-C có 2 liên kết." }
+    ]
+  },
+  {
+    "id": "bio-g9-b03-q03",
+    "lessonId": "bio-g9-b03",
+    "sgkBaiSo": 38,
+    "skillIds": ["bio9-nucleic-acid-gene"],
+    "difficulty": 2,
+    "prompt": "Một phân tử DNA có tổng số 3000 nucleotide, trong đó số nucleotide loại Adenine là A = 600. Tính số nucleotide loại Guanine (G) của phân tử DNA này.",
+    "knowledge": ["kb-bio-g9-toan-dna-cong-thuc"],
+    "answer": {
+      "kind": "number",
+      "value": 900
+    },
+    "hints": [
+      { "level": 1, "text": "Tổng số nucleotide: N = 2A + 2G = 3000." },
+      { "level": 2, "text": "Ta có A + G = N / 2 = 1500. Suy ra G = 1500 - A." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Công thức toán DNA", "body": "Tổng số nucleotide của DNA hai mạch: N = 2A + 2G." },
+      { "kind": "compute", "title": "Tính toán số lượng nu loại G", "body": "A + G = N / 2 = 3000 / 2 = 1500 nucleotide. Do đó G = 1500 - A = 1500 - 600 = 900 nucleotide." },
+      { "kind": "answer", "title": "Kết luận", "body": "Số nucleotide loại Guanine là 900." }
+    ],
+    "finalSolution": "Số nucleotide loại Guanine là G = N/2 - A = 1500 - 600 = 900 nucleotide.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Lấy 3000 trừ trực tiếp cho 600 mà quên chia đôi." }
+    ]
+  },
+  {
+    "id": "bio-g9-b03-q04",
+    "lessonId": "bio-g9-b03",
+    "sgkBaiSo": 38,
+    "skillIds": ["bio9-nucleic-acid-gene"],
+    "difficulty": 2,
+    "prompt": "Một đoạn mạch đơn của phân tử DNA có trình tự nucleotide là: - A - T - G - C - T - A - . Dựa vào nguyên tắc bổ sung, hãy viết trình tự nucleotide của đoạn mạch bổ sung tương ứng (viết hoa các chữ cái, cách nhau bằng dấu gạch ngang, ví dụ: - T - A - ... -):",
+    "knowledge": ["kb-bio-g9-nguyen-tac-bo-sung-dna"],
+    "answer": {
+      "kind": "text",
+      "accepted": [
+        "- T - A - C - G - A - T -",
+        "T - A - C - G - A - T",
+        "-T-A-C-G-A-T-",
+        "TACGAT",
+        "- T - A - C - G - A - T"
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Áp dụng NTBS: A liên kết với T, T liên kết với A, G liên kết với C, C liên kết với G." },
+      { "level": 2, "text": "Mạch khuôn: A → T, T → A, G → C, C → G, T → A, A → T." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Áp dụng nguyên tắc bổ sung", "body": "Đối chiếu từng nucleotide: A liên kết với T; T liên kết với A; G liên kết với C; C liên kết với G." },
+      { "kind": "compute", "title": "Lập trình tự bổ sung", "body": "Mạch khuôn:  - A - T - G - C - T - A -\nMạch bổ sung: - T - A - C - G - A - T -" },
+      { "kind": "answer", "title": "Kết luận", "body": "Trình tự mạch bổ sung là: - T - A - C - G - A - T -" }
+    ],
+    "finalSolution": "Mạch bổ sung tương ứng theo NTBS là: - T - A - C - G - A - T -.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Ghi nhầm nucleotide U vào phân tử DNA." }
+    ]
+  },
+  {
+    "id": "bio-g9-b03-q05",
+    "lessonId": "bio-g9-b03",
+    "sgkBaiSo": 38,
+    "skillIds": ["bio9-nucleic-acid-gene"],
+    "difficulty": 2,
+    "prompt": "Ghép nối từng loại nucleic acid ở cột trái với chức năng sinh học tương ứng ở cột phải:",
+    "knowledge": ["kb-bio-g9-rna-cau-truc-phan-loai", "kb-bio-g9-chuc-nang-sinh-hoc-dna"],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "mRNA (RNA thông tin)", "right": "Truyền đạt thông tin di truyền từ gene trong nhân ra ribosome" },
+        { "left": "tRNA (RNA vận chuyển)", "right": "Vận chuyển amino acid đặc hiệu đến ribosome để dịch mã" },
+        { "left": "rRNA (RNA ribosome)", "right": "Thành phần cấu tạo nên bào quan ribosome tổng hợp protein" },
+        { "left": "DNA (Deoxyribonucleic acid)", "right": "Lưu giữ và bảo quản thông tin di truyền của cơ thể" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "m = messenger (truyền tin); t = transfer (vận chuyển); r = ribosomal (cấu tạo ribosome)." },
+      { "level": 2, "text": "DNA là bản thiết kế gốc lưu trữ trong nhân tế bào." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại 4 đại phân tử nucleic acid", "body": "DNA lưu trữ thông tin; 3 loại RNA trực tiếp phục vụ quá trình sinh tổng hợp protein." },
+      { "kind": "knowledge", "title": "Chức năng từng loại", "body": "mRNA mang mã di truyền; tRNA vận chuyển amino acid; rRNA cấu tạo ribosome; DNA lưu giữ thông tin." },
+      { "kind": "answer", "title": "Kết luận", "body": "Nối đúng 4 loại phân tử với chức năng sinh học." }
+    ],
+    "finalSolution": "Khớp nối chuẩn: mRNA (truyền tin), tRNA (vận chuyển amino acid), rRNA (cấu tạo ribosome), DNA (lưu giữ thông tin).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn chức năng giữa mRNA và tRNA." }
+    ]
+  },
+  {
+    "id": "bio-g9-b03-q06",
+    "lessonId": "bio-g9-b03",
+    "sgkBaiSo": 38,
+    "skillIds": ["bio9-nucleic-acid-gene"],
+    "difficulty": 2,
+    "prompt": "Đánh giá tính Đúng hoặc Sai cho mỗi nhận định sau về cấu trúc của DNA và Gene:",
+    "knowledge": ["kb-bio-g9-dna-cau-truc-khong-gian", "kb-bio-g9-khai-niem-gene"],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "st-1", "text": "Trong phân tử DNA, tỉ lệ (A + G) / (T + C) luôn luôn bằng 1.", "correct": true },
+        { "id": "st-2", "text": "Mỗi chu kì xoắn của phân tử DNA dài 34 Å và chứa đúng 20 cặp nucleotide.", "correct": false },
+        { "id": "st-3", "text": "Gene là một đoạn của phân tử DNA mang thông tin mã hóa cho một chuỗi polypeptide hoặc một phân tử RNA.", "correct": true },
+        { "id": "st-4", "text": "Phân tử RNA có cấu trúc hai mạch xoắn kép tương tự như phân tử DNA.", "correct": false }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Mỗi chu kì xoắn dài 34 Å gồm 10 CẶP nucleotide (tương đương 20 nucleotide đơn lẻ, không phải 20 cặp)." },
+      { "level": 2, "text": "Phân tử RNA trong tự nhiên có cấu trúc mạch đơn." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Kiểm tra từng phát biểu", "body": "St-1: Do A = T và G = C nên A+G = T+C → Tỉ lệ bằng 1 (Đúng). St-2: Mỗi chu kì chứa 10 CẶP nucleotide (20 nucleotide đơn), câu ghi '20 cặp' là sai. St-3: Định nghĩa chuẩn của Gene (Đúng). St-4: RNA có cấu trúc mạch đơn (Sai)." },
+      { "kind": "knowledge", "title": "Phân tích cấu trúc phân tử", "body": "Mỗi chu kì xoắn có 10 cặp nucleotide; RNA có cấu trúc mạch đơn." },
+      { "kind": "answer", "title": "Kết luận", "body": "Thứ tự: Đúng - Sai - Đúng - Sai." }
+    ],
+    "finalSolution": "Câu 1, 3 Đúng; Câu 2 Sai vì chu kì xoắn chứa 10 cặp nu; Câu 4 Sai vì RNA có cấu trúc mạch đơn.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm số cặp nu (10 cặp) với tổng số nu (20 nu) trong 1 chu kì xoắn." }
+    ]
+  },
+  {
+    "id": "bio-g9-b03-q07",
+    "lessonId": "bio-g9-b03",
+    "sgkBaiSo": 38,
+    "skillIds": ["bio9-nucleic-acid-gene"],
+    "difficulty": 2,
+    "prompt": "Điểm khác biệt căn bản về thành phần bazo nito đơn phân giữa phân tử DNA và phân tử RNA là gì?",
+    "knowledge": ["kb-bio-g9-so-sanh-dna-va-rna"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "DNA có nucleotide loại Thymine (T), còn RNA có nucleotide loại Uracil (U)" },
+        { "id": "opt-b", "label": "DNA có nucleotide loại Uracil (U), còn RNA có nucleotide loại Thymine (T)" },
+        { "id": "opt-c", "label": "DNA chỉ gồm 2 loại nucleotide, còn RNA gồm 4 loại nucleotide" },
+        { "id": "opt-d", "label": "DNA có Adenine nhưng không có Guanine, còn RNA thì có đủ cả hai" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Ba loại nucleotide chung giữa DNA và RNA là A, G và C." },
+      { "level": 2, "text": "Nucleotide đặc trưng của DNA là T; nucleotide đặc trưng của RNA là U." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "So sánh thành phần hóa học", "body": "DNA gồm A, T, G, C. RNA gồm A, U, G, C." },
+      { "kind": "knowledge", "title": "Điểm sai khác", "body": "DNA dùng Thymine (T), RNA dùng Uracil (U). Cả hai đều có chung A, G, C." },
+      { "kind": "answer", "title": "Kết luận", "body": "Phương án A là nhận định chuẩn xác." }
+    ],
+    "finalSolution": "Điểm khác biệt căn bản: DNA chứa nucleotide loại Thymine (T), còn RNA chứa nucleotide loại Uracil (U).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Đảo ngược vị trí giữa T và U." }
+    ]
+  },
+  {
+    "id": "bio-g9-b03-q08",
+    "lessonId": "bio-g9-b03",
+    "sgkBaiSo": 38,
+    "skillIds": ["bio9-nucleic-acid-gene"],
+    "difficulty": 3,
+    "prompt": "Theo mô hình cấu trúc không gian của Watson - Crick, những thông số nào sau đây mô tả đúng về phân tử DNA? (Chọn các phương án đúng)",
+    "knowledge": ["kb-bio-g9-dna-cau-truc-khong-gian"],
+    "answer": {
+      "kind": "mcq-multi",
+      "options": [
+        { "id": "opt-1", "label": "Đường kính của vòng xoắn kép là 20 Å (2 nm)" },
+        { "id": "opt-2", "label": "Chiều cao của một chu kì xoắn hoàn chỉnh là 34 Å (3,4 nm)" },
+        { "id": "opt-3", "label": "Mỗi chu kì xoắn bao gồm đúng 10 cặp nucleotide" },
+        { "id": "opt-4", "label": "Khoảng cách giữa hai cặp nucleotide liên tiếp là 20 Å" }
+      ],
+      "correctIds": ["opt-1", "opt-2", "opt-3"]
+    },
+    "hints": [
+      { "level": 1, "text": "Mỗi chu kì xoắn cao 34 Å gồm 10 cặp nucleotide." },
+      { "level": 2, "text": "Khoảng cách giữa 2 cặp nu liền kề là 34 Å / 10 = 3,4 Å (không phải 20 Å; 20 Å là đường kính vòng xoắn)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Kiểm tra các thông số mô hình Watson - Crick", "body": "Đường kính 20 Å → Đúng (opt-1). Chu kì xoắn cao 34 Å → Đúng (opt-2). Chu kì có 10 cặp nu → Đúng (opt-3)." },
+      { "kind": "knowledge", "title": "Khoảng cách giữa 2 cặp nucleotide", "body": "Khoảng cách giữa 2 cặp nucleotide kế tiếp là 3,4 Å. Phương án 4 ghi 20 Å là sai." },
+      { "kind": "answer", "title": "Kết luận", "body": "Các phương án đúng là opt-1, opt-2 và opt-3." }
+    ],
+    "finalSolution": "Các thông số đúng của mô hình Watson - Crick là: Đường kính 20 Å, Chu kì xoắn cao 34 Å, Mỗi chu kì có 10 cặp nu.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm khoảng cách giữa 2 cặp nu (3,4 Å) với đường kính vòng xoắn (20 Å)." }
+    ]
+  }
+]

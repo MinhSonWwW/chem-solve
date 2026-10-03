@@ -1,0 +1,73 @@
+{
+  "lessonId": "bio-g8-b10",
+  "nodeId": "bio-g8-b10-theory",
+  "title": "Lý thuyết: Da và điều hòa thân nhiệt ở người",
+  "subtitle": "Bài 39 SGK KHTN 8 Kết nối tri thức: Cấu tạo 3 lớp của da, chức năng bảo vệ, cơ chế điều hòa thân nhiệt và sơ cứu bỏng",
+  "sgkBaiSo": 39,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Cấu tạo da",
+      "badgeColor": "emerald",
+      "title": "Cấu tạo 3 lớp của da",
+      "content": "Da là cơ quan bao bọc toàn bộ bề mặt ngoài của cơ thể, cấu tạo gồm 3 lớp:",
+      "bulletPoints": [
+        "1. Lớp biểu bì: Tầng sừng (các tế bào chết xếp ngói hóa sừng liên tục bong vảy) và Tầng tế bào sống (chứa hạt sắc tố Melanin quyết định màu da và ngăn chặn tác hại của tia cực tím UV).",
+        "2. Lớp bì: Mô liên kết sợi đàn hồi, chứa thụ quan cảm giác (nóng, lạnh, đau, xúc giác), tuyến nhờn, nang lông, cơ dựng lông, tuyến mồ hôi và mạng mao mạch máu phong phú.",
+        "3. Lớp mỡ dưới da: Lớp đệm mỡ cách nhiệt, giảm chấn động cơ học và dự trữ năng lượng."
+      ],
+      "callout": "Sắc tố Melanin do tầng tế bào sống tiết ra là chiếc 'ô chắn nắng sinh học' bảo vệ nhân tế bào khỏi đột biến do tia UV gây ung thư da!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Thân nhiệt",
+      "badgeColor": "amber",
+      "title": "Cơ chế điều hòa thân nhiệt ổn định 37°C",
+      "content": "Cơ thể phối hợp quá trình sinh nhiệt và tỏa nhiệt:",
+      "bulletPoints": [
+        "Khi trời nóng hoặc lao động nặng: Mao mạch dưới da dãn ra giúp máu lưu thông nhiều tỏa nhiệt qua da; tuyến mồ hôi tiết mồ hôi bốc hơi làm mát bề mặt da; nhịp thở nhanh hơn.",
+        "Khi trời lạnh: Mao mạch dưới da co lại để hạn chế mất nhiệt; cơ dựng lông co (hiện tượng nổi da gà); cơ bắp co giật phản xạ (run cơ) để tăng tốc độ sinh nhiệt sưởi ấm.",
+        "Trung tâm điều hòa thân nhiệt nằm ở Vùng dưới đồi của não bộ."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Bảo vệ & Sơ cứu",
+      "badgeColor": "cyan",
+      "title": "Vệ sinh da, phòng cảm nóng/lạnh & Sơ cứu bỏng",
+      "content": "Chăm sóc làn da khỏe mạnh và xử lí tai nạn bỏng đúng cách:",
+      "bulletPoints": [
+        "Vệ sinh da: Tắm rửa sạch sẽ bằng nước sạch để thông thoáng lỗ chân lông, không nặn mụn trứng cá bừa bãi gây nhiễm trùng máu.",
+        "Phòng cảm: Không đi đầu trần dưới trời nắng gắt, không tắm nước lạnh ngay khi cơ thể đang vã nhiều mồ hôi.",
+        "Sơ cứu bỏng da: Ngay lập tức ngâm rửa vùng da bị bỏng dưới vòi nước sạch mát (15 - 25°C) trong 15 - 20 phút để hạ nhiệt độ mô, tuyệt đối không bôi kem đánh răng, mỡ trăn hay nước mắm, che vết bỏng bằng gạc sạch rồi đến viện."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi gặp một người vừa bị bỏng nước sôi ở mu bàn tay, thao tác sơ cứu đầu tiên và quan trọng nhất cần thực hiện ngay là gì?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Ngâm rửa vùng bỏng dưới vòi nước sạch mát trong 15 - 20 phút để hạ nhiệt độ mô và giảm đau",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Bôi ngay một lớp kem đánh răng thật dày hoặc mỡ trăn lên vết bỏng",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Chọc vỡ ngay các bọng nước phồng rộp trên da để thoát dịch",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Xoa bóp dầu nóng thật mạnh vào vết bỏng để tan máu bầm",
+        "correct": false
+      }
+    ],
+    "explanation": "Ngâm nước sạch mát tức thì (15 - 20 phút) giúp hạ nhanh nhiệt độ vùng bỏng, ngăn tổn thương lan sâu vào lớp bì và giảm phù nề đau rát. Bôi kem đánh răng hay dầu mỡ lạ sẽ gây nhiễm trùng nặng."
+  }
+}

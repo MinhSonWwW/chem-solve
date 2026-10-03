@@ -1,0 +1,554 @@
+[
+  {
+    "id": "bio-g8-b06-q01",
+    "lessonId": "bio-g8-b06",
+    "sgkBaiSo": 35,
+    "skillIds": [
+      "bio-he-bai-tiet"
+    ],
+    "difficulty": 1,
+    "prompt": "Hệ cơ quan nào đảm nhiệm vai trò lọc và bài tiết tới 90% các sản phẩm cặn bã chuyển hóa hòa tan trong máu ra khỏi cơ thể?",
+    "knowledge": [
+      "kb-bio-g8-khai-niem-bai-tiet"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hệ bài tiết nước tiểu (đôi thận)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hệ hô hấp (hai lá phổi)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tuyến mồ hôi ở da"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tuyến nước bọt ở khoang miệng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Phổi bài tiết CO2, da tiết mồ hôi, còn các chất thải nitơ (ure, acid uric) được lọc qua nước tiểu."
+      },
+      {
+        "level": 2,
+        "text": "Hai quả thận trong hệ bài tiết nước tiểu đảm trách đại bộ phận nhiệm vụ lọc máu này."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Các cơ quan bài tiết",
+        "body": "Cơ thể có các cơ quan bài tiết: phổi (khí CO2), da (mồ hôi) và thận (nước tiểu)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Vai trò áp đảo của thận",
+        "body": "Thận bài tiết khoảng 90% các chất cặn bã chuyển hóa hòa tan trong máu như ure, axit uric, creatinin, thuốc thừa và muối khoáng dư thừa thông qua nước tiểu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hệ bài tiết nước tiểu (thận) là cơ quan bài tiết hòa tan chủ yếu nhất."
+      }
+    ],
+    "finalSolution": "Hai quả thận là cơ quan lọc máu và bài tiết chất thải chuyển hóa quan trọng nhất của cơ thể người.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng da là cơ quan bài tiết chất thải hòa tan chủ yếu thay vì thận."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b06-q02",
+    "lessonId": "bio-g8-b06",
+    "sgkBaiSo": 35,
+    "skillIds": [
+      "bio-he-bai-tiet"
+    ],
+    "difficulty": 1,
+    "prompt": "Hệ bài tiết nước tiểu ở người bao gồm những cơ quan nào theo đúng thứ tự dòng chảy của nước tiểu?",
+    "knowledge": [
+      "kb-bio-g8-cau-tao-he-bai-tiet"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hai quả thận → Hai ống dẫn nước tiểu (niệu quản) → Bóng đái (bàng quang) → Ống đái (niệu đạo)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hai quả thận → Bóng đái → Ống dẫn nước tiểu → Ống đái"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hai quả thận → Ống đái → Bóng đái → Ống dẫn nước tiểu"
+        },
+        {
+          "id": "opt-d",
+          "label": "Bóng đái → Hai quả thận → Ống dẫn nước tiểu → Hậu môn"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nước tiểu tạo ra ở thận, theo 2 ống dẫn xuống túi chứa nước tiểu tạm thời rồi mới thải ra ngoài."
+      },
+      {
+        "level": 2,
+        "text": "Thứ tự: Thận → Ống dẫn nước tiểu (niệu quản) → Bóng đái → Ống đái (niệu đạo)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cấu tạo giải phẫu hệ bài tiết nước tiểu",
+        "body": "Gồm cơ quan tạo nước tiểu và hệ thống đường dẫn nước tiểu ra ngoài."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đường đi của nước tiểu",
+        "body": "Nước tiểu chính thức tạo ra ở thận đổ vào bể thận, theo hai ống dẫn nước tiểu (niệu quản) xuống tích trữ ở bóng đái (bàng quang), khi đầy sẽ co bóp tống ra ngoài qua ống đái (niệu đạo)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự đúng: Hai quả thận → Hai ống dẫn nước tiểu → Bóng đái → Ống đái."
+      }
+    ],
+    "finalSolution": "Cấu trúc hệ bài tiết nước tiểu đảm bảo thu gom, dẫn truyền, tích trữ và bài xuất nước tiểu nhịp nhàng.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm lẫn giữa ống dẫn nước tiểu (niệu quản) và ống đái (niệu đạo)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b06-q03",
+    "lessonId": "bio-g8-b06",
+    "sgkBaiSo": 35,
+    "skillIds": [
+      "bio-he-bai-tiet"
+    ],
+    "difficulty": 2,
+    "prompt": "Mỗi đơn vị chức năng Nephron của thận bao gồm những cấu trúc giải phẫu nào?",
+    "knowledge": [
+      "kb-bio-g8-cau-tao-nephron"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cầu thận, nang cầu thận (nang Bowman) và hệ thống ống thận"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bể thận, niệu quản và cơ vòng bóng đái"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ống đái, tủy thận và mô cơ trơn bàng quang"
+        },
+        {
+          "id": "opt-d",
+          "label": "Động mạch thận và các nang bạch huyết"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mỗi Nephron có một búi mao mạch cuộn tròn, một bao bọc ngoài và ống dẫn dài gấp khúc."
+      },
+      {
+        "level": 2,
+        "text": "Đó là Cầu thận, nang cầu thận (nang Bowman) và Ống thận."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đơn vị chức năng của thận",
+        "body": "Thận thực hiện chức năng lọc máu thông qua hàng triệu đơn vị hiển vi gọi là Nephron."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Thành phần của một Nephron",
+        "body": "Một Nephron gồm: Cầu thận (búi mao mạch cuộn), Nang cầu thận (nang Bowman bao bọc quanh cầu thận) và Ống thận (gồm ống lượn gần, quai Henle, ống lượn xa)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cấu trúc Nephron gồm cầu thận, nang cầu thận và ống thận."
+      }
+    ],
+    "finalSolution": "Nephron là đơn vị vi phẫu tinh xảo chịu trách nhiệm hoàn tất cả 3 giai đoạn lọc, tái hấp thụ và bài tiết nước tiểu.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng bể thận là một bộ phận nằm bên trong cấu trúc của một Nephron."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b06-q04",
+    "lessonId": "bio-g8-b06",
+    "sgkBaiSo": 35,
+    "skillIds": [
+      "bio-he-bai-tiet"
+    ],
+    "difficulty": 2,
+    "prompt": "Giai đoạn lọc máu tạo thành nước tiểu đầu diễn ra tại vị trí nào và dựa trên điều kiện động lực nào?",
+    "knowledge": [
+      "kb-bio-g8-qua-trinh-tao-nuoc-tieu"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Diễn ra tại cầu thận nhờ áp lực lọc máu cao ép dịch qua màng lọc sang nang cầu thận"
+        },
+        {
+          "id": "opt-b",
+          "label": "Diễn ra tại ống thận nhờ lực hút chân không từ quai Henle"
+        },
+        {
+          "id": "opt-c",
+          "label": "Diễn ra tại bóng đái nhờ sự co bóp của thành cơ trơn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Diễn ra tại bể thận nhờ trọng lực hút dịch xuống"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Động mạch vào cầu thận có đường kính lớn hơn động mạch ra tạo áp suất máu cực cao."
+      },
+      {
+        "level": 2,
+        "text": "Áp lực máu cao ép nước và chất hòa tan từ mao mạch cầu thận qua vách lọc vào nang Bowman."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Vị trí của quá trình lọc máu",
+        "body": "Giai đoạn đầu tiên của quá trình tạo nước tiểu là lọc huyết tương từ dòng máu tuần hoàn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế lọc tại cầu thận",
+        "body": "Động mạch đến có khẩu kính lớn hơn động mạch đi, tạo nên áp suất lọc máu rất cao (khoảng 30-40 mmHg) tại búi mao mạch cầu thận, ép nước và các chất hòa tan nhỏ qua màng lọc vào nang Bowman tạo nước tiểu đầu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Lọc máu diễn ra tại cầu thận nhờ áp lực lọc máu cao ép dịch qua màng lọc."
+      }
+    ],
+    "finalSolution": "Áp lực thủy tĩnh của dòng máu trong cầu thận là động lực vật lí duy nhất thúc đẩy quá trình lọc nước tiểu đầu.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng quá trình lọc máu diễn ra tại ống thận hoặc bể thận."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b06-q05",
+    "lessonId": "bio-g8-b06",
+    "sgkBaiSo": 35,
+    "skillIds": [
+      "bio-he-bai-tiet"
+    ],
+    "difficulty": 2,
+    "prompt": "Điểm khác biệt quan trọng nhất về thành phần giữa nước tiểu đầu và nước tiểu chính thức là gì?",
+    "knowledge": [
+      "kb-bio-g8-phan-biet-nuoc-tieu"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Nước tiểu đầu còn chứa nhiều chất dinh dưỡng (glucose, amino acid) và ure loãng; nước tiểu chính thức không còn chất dinh dưỡng và chứa ure đậm đặc"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nước tiểu đầu chứa nhiều tế bào hồng cầu; nước tiểu chính thức chỉ có bạch cầu"
+        },
+        {
+          "id": "opt-c",
+          "label": "Nước tiểu đầu hoàn toàn không có nước; nước tiểu chính thức chứa 99% nước"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nước tiểu đầu có màu vàng đậm; nước tiểu chính thức hoàn toàn trong suốt không mùi"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nước tiểu đầu có thành phần tương tự như huyết tương (chỉ không có protein lớn và tế bào máu)."
+      },
+      {
+        "level": 2,
+        "text": "Sau khi qua ống thận, toàn bộ đường glucose và amino acid quý giá đã được tái hấp thụ hết về máu."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "So sánh hai loại nước tiểu",
+        "body": "Nước tiểu đầu vừa lọc xong ở cầu thận, nước tiểu chính thức là sản phẩm cuối cùng sau khi qua ống thận."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tác động của tái hấp thụ và bài tiết tiếp",
+        "body": "Ống thận hấp thụ lại 100% glucose, amino acid, các ion hữu ích và 99% nước; đồng thời bài tiết thêm ure và acid uric khiến nước tiểu chính thức trở nên đậm đặc và hoàn toàn sạch chất dinh dưỡng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nước tiểu đầu còn chứa chất dinh dưỡng và ure loãng; nước tiểu chính thức không còn chất dinh dưỡng và chứa ure đậm đặc."
+      }
+    ],
+    "finalSolution": "Sự hiện diện của chất dinh dưỡng (đặc biệt là glucose) trong nước tiểu chính thức là dấu hiệu bệnh lí bất thường.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng nước tiểu đầu chứa cả tế bào máu (màng lọc bình thường giữ lại toàn bộ tế bào máu)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b06-q06",
+    "lessonId": "bio-g8-b06",
+    "sgkBaiSo": 35,
+    "skillIds": [
+      "bio-he-bai-tiet"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi xét nghiệm nước tiểu của một bệnh nhân phát hiện có chứa hồng cầu và protein kích thước lớn, bác sĩ kết luận bộ phận nào của Nephron đã bị tổn thương nghiêm trọng?",
+    "knowledge": [
+      "kb-bio-g8-qua-trinh-tao-nuoc-tieu"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Màng lọc của cầu thận"
+        },
+        {
+          "id": "opt-b",
+          "label": "Quai Henle ở ống thận"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cơ thắt của ống đái"
+        },
+        {
+          "id": "opt-d",
+          "label": "Niêm mạc của ống dẫn nước tiểu"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bộ phận này có các lỗ màng lọc siêu nhỏ ngăn giữ các tế bào máu và phân tử protein lớn không cho lọt qua."
+      },
+      {
+        "level": 2,
+        "text": "Khi màng lọc cầu thận bị rách hoặc viêm, hồng cầu và protein sẽ tràn qua vào nang Bowman."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đặc tính của màng lọc cầu thận",
+        "body": "Màng lọc cầu thận bình thường chỉ có kích thước lỗ lọc cho phép các phân tử nhỏ dưới 30-40 kDa đi qua."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hiện tượng tổn thương màng lọc",
+        "body": "Tế bào máu (hồng cầu) và protein huyết tương lớn (albumin) không thể lọt qua màng lọc lành lặn. Nếu nước tiểu có protein và hồng cầu thì chắc chắn màng lọc cầu thận đã bị viêm rách hoặc thoái hóa tổn thương."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Màng lọc cầu thận đã bị tổn thương nghiêm trọng."
+      }
+    ],
+    "finalSolution": "Viêm cầu thận làm giãn lỗ màng lọc khiến protein và hồng cầu rò rỉ ra nước tiểu (tiểu đạm, tiểu máu).",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng do ống thận không chịu hấp thu hồng cầu (ống thận vốn không có thụ thể hấp thu tế bào máu)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b06-q07",
+    "lessonId": "bio-g8-b06",
+    "sgkBaiSo": 35,
+    "skillIds": [
+      "bio-he-bai-tiet"
+    ],
+    "difficulty": 2,
+    "prompt": "Thói quen nào dưới đây là nguyên nhân trực tiếp dẫn đến việc hình thành sỏi trong hệ bài tiết nước tiểu (sỏi thận, sỏi bàng quang)?",
+    "knowledge": [
+      "kb-bio-g8-ve-sinh-he-bai-tiet"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Uống quá ít nước, ăn quá nhiều muối mặn và thường xuyên nhịn tiểu kéo dài"
+        },
+        {
+          "id": "opt-b",
+          "label": "Uống đủ 2 lít nước lọc mỗi ngày và vận động thể thao điều độ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ăn nhiều rau xanh giàu chất xơ và đi tiểu ngay khi có nhu cầu"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hạn chế tối đa các loại nước ngọt có gas và rượu bia"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nước tiểu bị cô đặc do thiếu nước kết hợp với ứ đọng do nhịn tiểu làm các muối khoáng dễ kết tinh."
+      },
+      {
+        "level": 2,
+        "text": "Muối canxi oxalat, canxi photphat kết tinh quanh nhân lắng cặn tạo thành những viên sỏi rắn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cơ chế hình thành sỏi thận",
+        "body": "Sỏi thận hình thành do sự kết tinh và lắng đọng của các tinh thể muối khoáng trong đường niệu."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Các yếu tố thúc đẩy tạo sỏi",
+        "body": "Uống ít nước làm thể tích nước tiểu giảm, nồng độ muối khoáng quá bão hòa; ăn nhiều muối làm tăng canxi niệu; nhịn tiểu làm nước tiểu lưu cữu lắng cặn muối canxi oxalat kết tụ thành sỏi."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Uống ít nước, ăn nhiều muối và nhịn tiểu kéo dài gây sỏi thận."
+      }
+    ],
+    "finalSolution": "Uống đủ nước và không nhịn tiểu là hai biện pháp đơn giản và hiệu quả nhất ngăn ngừa sỏi hệ bài tiết.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng uống nhiều nước lọc sẽ gây sỏi thận (thực tế thiếu nước mới gây sỏi thận)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b06-q08",
+    "lessonId": "bio-g8-b06",
+    "sgkBaiSo": 35,
+    "skillIds": [
+      "bio-he-bai-tiet"
+    ],
+    "difficulty": 3,
+    "prompt": "Tại sao bệnh nhân mắc bệnh suy thận giai đoạn cuối bắt buộc phải chạy thận nhân tạo định kì nếu chưa thể ghép thận?",
+    "knowledge": [
+      "kb-bio-g8-ve-sinh-he-bai-tiet"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Để máy lọc máu thay thế thận loại bỏ ure, creatinin và các độc chất chuyển hóa tích tụ trong máu, ngăn ngừa ngộ độc tử vong"
+        },
+        {
+          "id": "opt-b",
+          "label": "Để bổ sung thêm thật nhiều hồng cầu và bạch cầu mới cho cơ thể"
+        },
+        {
+          "id": "opt-c",
+          "label": "Để kích thích thận tự tái sinh lại các Nephron đã bị xơ hóa"
+        },
+        {
+          "id": "opt-d",
+          "label": "Để trực tiếp bơm thức ăn dinh dưỡng vào dạ dày qua đường tĩnh mạch"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi hai quả thận suy yếu không lọc được máu, chất độc ứ đọng trong máu đầu độc mọi tế bào cơ thể."
+      },
+      {
+        "level": 2,
+        "text": "Máy chạy thận nhân tạo sử dụng màng bán thấm nhân tạo để lọc sạch chất cặn bã ra khỏi máu thay cho thận."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hậu quả của suy thận mạn",
+        "body": "Khi các Nephron bị phá hủy phần lớn, thận mất khả năng lọc máu và bài xuất chất độc."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Nguyên lí chạy thận nhân tạo",
+        "body": "Chất độc ure, creatinin, ion K+ và nước dư thừa ứ đọng trong máu sẽ gây hội chứng urê huyết cao dẫn đến phù nề và tử vong. Máy chạy thận nhân tạo dẫn máu ra ngoài qua quả lọc màng bán thấm để rửa sạch chất độc rồi truyền máu sạch trở lại cơ thể."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Chạy thận nhân tạo giúp máy lọc thay thế thận loại bỏ các chất độc chuyển hóa nguy hiểm tính mạng."
+      }
+    ],
+    "finalSolution": "Chạy thận nhân tạo là biện pháp điều trị thay thế sự sống tối quan trọng cho bệnh nhân suy thận mạn giai đoạn cuối.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Hiểu lầm rằng máy chạy thận có thể chữa khỏi dứt điểm và hồi phục hoàn toàn hai quả thận đã teo xơ."
+      }
+    ]
+  }
+]

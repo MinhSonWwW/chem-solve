@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g7-b12-q01",
+    "lessonId": "bio-g7-b12",
+    "sgkBaiSo": 32,
+    "skillIds": ["bio-thuc-hanh-van-chuyen-nuoc"],
+    "difficulty": 1,
+    "prompt": "Thí nghiệm cắm cành hoa hồng trắng hoặc cành cần tây vào cốc nước pha mực đỏ nhằm mục đích khoa học gì?",
+    "knowledge": ["kb-bio-g7-thuc-hanh-mach-go-muc-do", "kb-bio-g7-dong-mach-go-xylem"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Chứng minh nước và các chất hòa tan được vận chuyển từ gốc lên ngọn qua mạch gỗ của thân cây" },
+        { "id": "opt-b", "label": "Chứng minh hoa hô hấp hấp thụ khí oxygen và thải khí carbon dioxide" },
+        { "id": "opt-c", "label": "Chứng minh chất hữu cơ được vận chuyển từ lá xuống rễ qua mạch rây" },
+        { "id": "opt-d", "label": "Xác định nồng độ chlorophyll có trong cánh hoa và phiến lá" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Mực đỏ hòa tan trong nước và di chuyển theo con đường của nước trong thân cây." },
+      { "level": 2, "text": "Thí nghiệm này trực quan hóa con đường vận chuyển nước đi lên trong thân." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định mục tiêu bài thực hành", "body": "Tìm mục đích cốt lõi của thí nghiệm cắm hoa vào dung dịch màu." },
+      { "kind": "knowledge", "title": "Bản chất hiện tượng", "body": "Dung dịch mực đỏ di chuyển theo dòng mạch gỗ từ cuống thân lên cánh hoa, chứng minh sự vận chuyển nước của thân." },
+      { "kind": "answer", "title": "Kết luận", "body": "Chứng minh nước và các chất hòa tan được vận chuyển từ gốc lên ngọn qua mạch gỗ của thân cây." }
+    ],
+    "finalSolution": "Thí nghiệm cắm hoa trắng vào mực đỏ chứng minh nước và chất hòa tan được thân vận chuyển lên ngọn qua mạch gỗ.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm tưởng thí nghiệm này chứng minh sự vận chuyển chất hữu cơ của mạch rây." }
+    ]
+  },
+  {
+    "id": "bio-g7-b12-q02",
+    "lessonId": "bio-g7-b12",
+    "sgkBaiSo": 32,
+    "skillIds": ["bio-thuc-hanh-van-chuyen-nuoc"],
+    "difficulty": 1,
+    "prompt": "Khi tiến hành thí nghiệm cắm cành hoa vào nước mực đỏ, thao tác dùng dao lam cắt vát cuống cành ngập trong nước nhằm mục đích gì?",
+    "knowledge": ["kb-bio-g7-thuc-hanh-mach-go-muc-do"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tránh bọt không khí lọt vào làm tắc nghẽn các ống mao mạch gỗ và tăng diện tích tiếp xúc với dung dịch" },
+        { "id": "opt-b", "label": "Để vết cắt không bị nhiễm nấm mốc trong quá trình làm thí nghiệm" },
+        { "id": "opt-c", "label": "Kích thích cành hoa đâm chồi và ra rễ con nhanh hơn" },
+        { "id": "opt-d", "label": "Làm đông tụ ngay lập tức dòng mạch rây tiết nhựa" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Nếu cắt ngoài không khí, các bọt khí sẽ lập tức chui vào đầu ống mạch gỗ rỗng." },
+      { "level": 2, "text": "Khi ống mao dẫn bị tắc bởi bọt khí, cột nước sẽ bị đứt đoạn không thể hút lên được." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích thao tác kỹ thuật thực hành", "body": "Giải thích lý do phải cắt vát gốc cành trong môi trường nước." },
+      { "kind": "knowledge", "title": "Cơ chế mao dẫn của mạch gỗ", "body": "Cột nước di chuyển liên tục nhờ lực hút liên kết phân tử. Khí lọt vào sẽ làm gián đoạn dòng chảy mao dẫn trong ống xylem." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tránh bọt không khí lọt vào làm tắc nghẽn các ống mao mạch gỗ và tăng diện tích tiếp xúc với dung dịch." }
+    ],
+    "finalSolution": "Cắt vát cuống cành ngập trong nước ngăn bọt khí làm tắc mao mạch gỗ và tăng diện tích hút dung dịch mực.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Quên mất tầm quan trọng của việc ngăn bọt khí lọt vào mạch dẫn mao quản." }
+    ]
+  },
+  {
+    "id": "bio-g7-b12-q03",
+    "lessonId": "bio-g7-b12",
+    "sgkBaiSo": 32,
+    "skillIds": ["bio-thuc-hanh-van-chuyen-nuoc"],
+    "difficulty": 1,
+    "prompt": "Khi dùng dao lam cắt một lát mỏng ngang thân cành cần tây hoặc cành hoa sau khi cắm mực đỏ vài giờ, ta quan sát thấy phần nào của thân bị nhuộm màu đỏ rõ nhất?",
+    "knowledge": ["kb-bio-g7-thuc-hanh-mach-go-muc-do", "kb-bio-g7-dong-mach-go-xylem"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Các bó mạch gỗ phân bố ở phần gỗ của thân" },
+        { "id": "opt-b", "label": "Toàn bộ lớp vỏ ngoài và tầng biểu bì" },
+        { "id": "opt-c", "label": "Phần ruột xốp rỗng ở tâm chính giữa thân" },
+        { "id": "opt-d", "label": "Chỉ có các lông tơ ở ngoài vỏ bắt màu" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Cơ quan dẫn truyền nước đi lên là mạch gỗ hay mạch rây? Vị trí của mạch gỗ nằm ở đâu?" },
+      { "level": 2, "text": "Mạch gỗ nằm ở phần gỗ bên trong lớp tầng sinh trụ của thân cây." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định cấu trúc vi phẫu", "body": "Tìm cấu trúc bắt màu mực đỏ trên thiết diện lát cắt ngang thân." },
+      { "kind": "knowledge", "title": "Đường đi của nước trong thân", "body": "Nước và chất hòa tan chỉ đi qua hệ thống ống mạch gỗ (xylem), nên chỉ có phần bó mạch gỗ bị nhuộm màu đỏ." },
+      { "kind": "answer", "title": "Kết luận", "body": "Các bó mạch gỗ phân bố ở phần gỗ của thân." }
+    ],
+    "finalSolution": "Chỉ có các bó mạch gỗ ở phần gỗ của thân bị nhuộm đỏ vì nước chỉ đi qua các ống xylem này.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng toàn bộ thân cây bị nhuộm đỏ đều như nhau." }
+    ]
+  },
+  {
+    "id": "bio-g7-b12-q04",
+    "lessonId": "bio-g7-b12",
+    "sgkBaiSo": 32,
+    "skillIds": ["bio-thuc-hanh-van-chuyen-nuoc"],
+    "difficulty": 2,
+    "prompt": "Trong thí nghiệm chứng minh lá thoát hơi nước, cành B được ngắt bỏ toàn bộ lá và cũng bọc túi nilon giống như cành A đóng vai trò gì?",
+    "knowledge": ["kb-bio-g7-thuc-hanh-tui-nilon-thoat-nuoc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Làm mẫu đối chứng khoa học để chứng minh lượng hơi nước ngưng tụ ở cành A là do lá thoát ra chứ không phải do thân cành" },
+        { "id": "opt-b", "label": "Để làm cho thí nghiệm thêm đẹp mắt và cân xứng" },
+        { "id": "opt-c", "label": "Để thử nghiệm xem cành không có lá có tự mọc thêm lá mới trong túi nilon không" },
+        { "id": "opt-d", "label": "Để ngăn chặn cành B không tiêu tốn khí carbonic" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Tại sao nhà khoa học luôn cần một mẫu không có yếu tố tác động để so sánh?" },
+      { "level": 2, "text": "Mẫu đối chứng giúp loại trừ khả năng hơi nước thoát ra từ lớp vỏ của thân cành." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích phương pháp thực nghiệm", "body": "Xác định vai trò của mẫu đối chứng trong thí nghiệm sinh học." },
+      { "kind": "knowledge", "title": "Nguyên tắc thí nghiệm đối chứng", "body": "Mẫu đối chứng B giữ nguyên mọi điều kiện ngoại trừ phiến lá để so sánh khẳng định lá là cơ quan thoát hơi nước." },
+      { "kind": "answer", "title": "Kết luận", "body": "Làm mẫu đối chứng khoa học để chứng minh lượng hơi nước ngưng tụ ở cành A là do lá thoát ra chứ không phải do thân cành." }
+    ],
+    "finalSolution": "Cành B không có lá là mẫu đối chứng giúp chứng minh chính xác lá mới là cơ quan chủ yếu thoát hơi nước.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Không hiểu khái niệm 'đối chứng' trong thí nghiệm thực nghiệm khoa học." }
+    ]
+  },
+  {
+    "id": "bio-g7-b12-q05",
+    "lessonId": "bio-g7-b12",
+    "sgkBaiSo": 32,
+    "skillIds": ["bio-thuc-hanh-van-chuyen-nuoc"],
+    "difficulty": 1,
+    "prompt": "Hiện tượng các giọt nước li ti xuất hiện ở mặt trong túi nilon trùm chùm lá cành A sau 1 – 2 giờ ngoài sáng được giải thích như thế nào?",
+    "knowledge": ["kb-bio-g7-thuc-hanh-tui-nilon-thoat-nuoc", "kb-bio-g7-y-nghia-thoat-hoi-nuoc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Hơi nước thoát ra từ các lỗ khí khổng ở lá gặp bề mặt túi nilon mát hơn nên bị ngưng tụ thành các giọt nước lỏng" },
+        { "id": "opt-b", "label": "Do trời đổ mưa làm nước thấm qua màng túi nilon vào bên trong" },
+        { "id": "opt-c", "label": "Nhựa cây từ gân lá bị vỡ chảy tràn ra đọng thành hạt" },
+        { "id": "opt-d", "label": "Do khí oxy kết hợp với khí carbonic tạo thành nước lỏng ở nhiệt độ phòng" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Nước thoát ra từ lá ở thể khí (hơi nước) qua các lỗ khí khổng." },
+      { "level": 2, "text": "Quá trình chuyển từ thể hơi sang thể lỏng khi gặp bề mặt cản trở gọi là hiện tượng ngưng tụ vật lý." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích hiện tượng hóa lý sinh", "body": "Giải thích nguồn gốc và cơ chế xuất hiện giọt nước đọng trên thành túi nilon." },
+      { "kind": "knowledge", "title": "Hiện tượng ngưng tụ hơi nước", "body": "Lá thoát hơi nước qua khí khổng; gặp thành túi nilon cản trở và làm mát dẫn đến ngưng tụ thành giọt lỏng." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hơi nước thoát ra từ các lỗ khí khổng ở lá gặp bề mặt túi nilon mát hơn nên bị ngưng tụ thành các giọt nước lỏng." }
+    ],
+    "finalSolution": "Hơi nước thoát ra từ khí khổng của lá gặp bề mặt túi nilon bị ngưng tụ thành các giọt nước đọng.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng nước chảy trực tiếp dạng lỏng từ gân lá ra thành túi." }
+    ]
+  },
+  {
+    "id": "bio-g7-b12-q06",
+    "lessonId": "bio-g7-b12",
+    "sgkBaiSo": 32,
+    "skillIds": ["bio-thuc-hanh-van-chuyen-nuoc"],
+    "difficulty": 2,
+    "prompt": "Tại sao trong thí nghiệm chứng minh lá thoát hơi nước, người làm thí nghiệm KHÔNG ĐƯỢC trùm túi nilon bọc kín cả miệng chậu đất trồng cây?",
+    "knowledge": ["kb-bio-g7-thuc-hanh-tui-nilon-thoat-nuoc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Vì nước ẩm từ bề mặt đất bốc hơi lên sẽ đọng vào túi nilon làm sai lệch kết quả kết luận về vai trò của lá" },
+        { "id": "opt-b", "label": "Vì đất sẽ hút hết túi nilon vào bên trong chậu" },
+        { "id": "opt-c", "label": "Vì vi sinh vật trong đất sẽ ăn mòn làm thủng màng túi nilon" },
+        { "id": "opt-d", "label": "Vì rễ cây sẽ ngừng quang hợp ngay lập tức" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Đất ẩm trong chậu có thể bốc hơi nước khi gặp nắng không?" },
+      { "level": 2, "text": "Cần cô lập chỉ phần cành lá để đảm bảo tính chính xác duy nhất của nguồn phát sinh hơi nước." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận diện sai sót thực nghiệm", "body": "Phân tích biến số ngoại lai khi trùm túi nilon bọc cả miệng chậu đất ẩm." },
+      { "kind": "knowledge", "title": "Kiểm soát biến số thí nghiệm", "body": "Bề mặt đất ẩm có hiện tượng bay hơi nước tự nhiên, nếu không bọc ngăn cách riêng biệt sẽ làm sai lệch phép đo thoát hơi nước của lá." },
+      { "kind": "answer", "title": "Kết luận", "body": "Vì nước ẩm từ bề mặt đất bốc hơi lên sẽ đọng vào túi nilon làm sai lệch kết quả kết luận về vai trò của lá." }
+    ],
+    "finalSolution": "Không bọc cả miệng chậu đất vì hơi nước bốc lên từ mặt đất ẩm sẽ gây nhiễu, làm sai lệch kết luận về sự thoát hơi nước của lá.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Quên mất nguồn hơi nước bốc lên từ bề mặt đất ẩm trong chậu." }
+    ]
+  },
+  {
+    "id": "bio-g7-b12-q07",
+    "lessonId": "bio-g7-b12",
+    "sgkBaiSo": 32,
+    "skillIds": ["bio-thuc-hanh-van-chuyen-nuoc"],
+    "difficulty": 2,
+    "prompt": "Các nghệ nhân cắm hoa có thể tạo ra bông hoa cúc trắng với một nửa cánh màu đỏ và một nửa cánh màu xanh bằng cách nào dựa trên kiến thức về mạch gỗ?",
+    "knowledge": ["kb-bio-g7-thuc-hanh-mach-go-muc-do", "kb-bio-g7-dong-mach-go-xylem"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Chẻ đôi phần gốc cuống hoa rồi cắm một nửa gốc vào lọ mực đỏ, một nửa gốc vào lọ mực xanh" },
+        { "id": "opt-b", "label": "Dùng bút dạ vẽ trực tiếp lên từng cánh hoa" },
+        { "id": "opt-c", "label": "Phun sơn màu đỏ và xanh vào bầu nhụy khi hoa đang nở" },
+        { "id": "opt-d", "label": "Chiếu đèn laser đỏ và xanh vào hai bên bình hoa trong bóng tối" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Các bó mạch gỗ dẫn nước theo các nhánh dẫn lên các cánh hoa tương ứng." },
+      { "level": 2, "text": "Chẻ đôi gốc cành và nhúng vào hai lọ nước màu khác biệt." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Vận dụng kiến thức vào đời sống", "body": "Ứng dụng tính chất dẫn truyền dung dịch của các bó mạch gỗ để nhuộm màu cánh hoa." },
+      { "kind": "knowledge", "title": "Cơ chế phân nhánh mạch gỗ", "body": "Mạch gỗ dẫn nước theo các bó dọc lên ngọn. Khi chia đôi cuống vào 2 cốc màu, hai nhánh mạch gỗ sẽ hút hai màu riêng biệt lên cánh hoa." },
+      { "kind": "answer", "title": "Kết luận", "body": "Chẻ đôi phần gốc cuống hoa rồi cắm một nửa gốc vào lọ mực đỏ, một nửa gốc vào lọ mực xanh." }
+    ],
+    "finalSolution": "Chẻ đôi cuống hoa nhúng vào 2 lọ mực màu khác nhau, hai nhánh bó mạch gỗ sẽ hút riêng từng màu lên nuôi nửa bông hoa tương ứng.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng hoa được sơn màu nhân tạo bên ngoài thay vì cơ chế mao dẫn nội tại." }
+    ]
+  },
+  {
+    "id": "bio-g7-b12-q08",
+    "lessonId": "bio-g7-b12",
+    "sgkBaiSo": 32,
+    "skillIds": ["bio-thuc-hanh-van-chuyen-nuoc"],
+    "difficulty": 1,
+    "prompt": "Nếu đặt một chậu cây thí nghiệm thoát hơi nước (có bọc túi nilon) ở ngoài sân nắng gắt và một chậu cây giống hệt trong phòng điều hòa tối, kết quả quan sát thấy ở chậu ngoài nắng sẽ là:",
+    "knowledge": ["kb-bio-g7-thuc-hanh-tui-nilon-thoat-nuoc", "kb-bio-g7-y-nghia-thoat-hoi-nuoc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Túi nilon nhanh chóng đọng lượng nước nhiều hơn rõ rệt do nhiệt độ và ánh sáng làm khí khổng mở rộng và kích thích thoát hơi nước" },
+        { "id": "opt-b", "label": "Túi nilon hoàn toàn khô ráo vì ánh nắng mặt trời làm cháy rụi khí khổng" },
+        { "id": "opt-c", "label": "Lượng nước đọng ở hai chậu luôn bằng nhau tuyệt đối vì không phụ thuộc môi trường ngoài" },
+        { "id": "opt-d", "label": "Chậu ngoài sân không có nước đọng vì lá cây ngừng hoàn toàn mọi trao đổi chất" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Khi trời nắng nóng, lá cây thoát hơi nước nhiều hơn hay ít hơn so với khi ở nơi tối mát?" },
+      { "level": 2, "text": "Ánh sáng kích thích khí khổng mở ra và nhiệt độ cao gia tăng tốc độ bay hơi nước." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích tác động của môi trường", "body": "So sánh cường độ thoát hơi nước ở điều kiện ánh sáng nắng gắt với phòng tối lạnh." },
+      { "kind": "knowledge", "title": "Yếu tố ảnh hưởng đến thoát hơi nước", "body": "Ánh sáng và nhiệt độ cao làm khí khổng mở rộng và tăng cường thoát hơi nước, dẫn đến lượng nước ngưng tụ trong túi nilon tăng nhanh." },
+      { "kind": "answer", "title": "Kết luận", "body": "Túi nilon nhanh chóng đọng lượng nước nhiều hơn rõ rệt do nhiệt độ và ánh sáng làm khí khổng mở rộng và kích thích thoát hơi nước." }
+    ],
+    "finalSolution": "Ánh sáng và nhiệt độ cao kích thích khí khổng mở và tăng bốc hơi nước, làm lượng nước ngưng tụ trong túi ngoài nắng nhiều hơn rõ rệt.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng nhiệt độ cao làm nước bốc hơi biến mất luôn trong túi kín." }
+    ]
+  }
+]

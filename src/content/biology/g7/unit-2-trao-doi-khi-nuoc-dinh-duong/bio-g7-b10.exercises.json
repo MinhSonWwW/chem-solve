@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g7-b10-q01",
+    "lessonId": "bio-g7-b10",
+    "sgkBaiSo": 30,
+    "skillIds": ["bio-trao-doi-nuoc-thuc-vat"],
+    "difficulty": 1,
+    "prompt": "Ở các loài thực vật trên cạn, nước và muối khoáng hòa tan trong đất chủ yếu được cơ thể hấp thụ nhờ bộ phận nào?",
+    "knowledge": ["kb-bio-g7-long-hut-hap-thu-nuoc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Các tế bào lông hút ở miền hút của rễ" },
+        { "id": "opt-b", "label": "Khí khổng ở biểu bì hai mặt lá" },
+        { "id": "opt-c", "label": "Màng cutin bao bọc các cành non" },
+        { "id": "opt-d", "label": "Miền sinh trưởng ở đỉnh chóp rễ" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Bộ phận này nằm ở rễ cây, có dạng kéo dài giúp tăng diện tích tiếp xúc với các hạt đất." },
+      { "level": 2, "text": "Miền hút của rễ chứa hàng triệu tế bào lông hút với thành mỏng, không bào lớn hấp thu nước theo cơ chế thẩm thấu." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định câu hỏi", "body": "Câu hỏi yêu cầu xác định bộ phận chuyên trách hấp thụ nước và khoáng hòa tan của cây trên cạn." },
+      { "kind": "knowledge", "title": "Cấu tạo miền rễ thực vật", "body": "Miền hút của rễ mang vô số tế bào lông hút – biến dạng từ tế bào biểu bì, là cửa ngõ hấp thụ nước và muối khoáng chính của cây." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đáp án đúng là: Các tế bào lông hút ở miền hút của rễ." }
+    ],
+    "finalSolution": "Ở thực vật trên cạn, nước và ion khoáng được hấp thụ chủ yếu qua các tế bào lông hút ở miền hút của rễ.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm chóp rễ (bảo vệ) hoặc miền sinh trưởng (phân chia tế bào) với miền hút chứa lông hút." }
+    ]
+  },
+  {
+    "id": "bio-g7-b10-q02",
+    "lessonId": "bio-g7-b10",
+    "sgkBaiSo": 30,
+    "skillIds": ["bio-trao-doi-nuoc-thuc-vat"],
+    "difficulty": 1,
+    "prompt": "Nước từ dung dịch đất xâm nhập vào bên trong tế bào lông hút của rễ cây theo cơ chế nào sau đây?",
+    "knowledge": ["kb-bio-g7-long-hut-hap-thu-nuoc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Cơ chế thẩm thấu (từ nơi nồng độ chất tan thấp sang nơi có nồng độ chất tan cao)" },
+        { "id": "opt-b", "label": "Vận chuyển chủ động ngược chiều nồng độ tiêu tốn năng lượng ATP" },
+        { "id": "opt-c", "label": "Nhập bào nhờ màng sinh chất uốn cong nuốt dịch đất" },
+        { "id": "opt-d", "label": "Khuếch tán cưỡng bức nhờ áp suất dòng khí ngoài khí quyển" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Nước luôn di chuyển thụ động qua màng bán thấm từ nơi có thế nước cao sang nơi có thế nước thấp." },
+      { "level": 2, "text": "Quá trình dịch chuyển thụ động của phân tử dung môi (nước) qua màng tế bào gọi là thẩm thấu." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích bản chất dịch chuyển", "body": "Nước là dung môi lỏng tự do, di chuyển qua màng sinh chất bán thấm của tế bào lông hút." },
+      { "kind": "knowledge", "title": "Cơ chế thẩm thấu", "body": "Do không bào lông hút chứa dịch cô đặc hơn dung dịch đất, nước thẩm thấu tự phát từ đất vào dịch tế bào lông hút." },
+      { "kind": "answer", "title": "Kết luận", "body": "Cơ chế thẩm thấu (từ nơi có nồng độ chất tan thấp sang nơi có nồng độ chất tan cao)." }
+    ],
+    "finalSolution": "Nước xâm nhập vào lông hút theo cơ chế thẩm thấu do nồng độ chất tan trong tế bào lông hút cao hơn trong đất.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn cơ chế di chuyển của dung môi nước (thẩm thấu) với cơ chế vận chuyển chủ động tiêu tốn ATP của một số ion khoáng." }
+    ]
+  },
+  {
+    "id": "bio-g7-b10-q03",
+    "lessonId": "bio-g7-b10",
+    "sgkBaiSo": 30,
+    "skillIds": ["bio-trao-doi-nuoc-thuc-vat"],
+    "difficulty": 2,
+    "prompt": "Tại sao khi người nông dân bón lượng phân đạm hoặc muối khoáng quá đậm đặc sát gốc cây thì cây trồng lại bị héo úa và có thể chết?",
+    "knowledge": ["kb-bio-g7-long-hut-hap-thu-nuoc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Nồng độ chất tan trong đất quá cao khiến nước trong tế bào rễ thẩm thấu ngược ra ngoài đất" },
+        { "id": "opt-b", "label": "Phân bón đậm đặc làm rễ cây nhận quá nhiều dinh dưỡng gây ngộ độc đường" },
+        { "id": "opt-c", "label": "Các hạt phân bón bít kín toàn bộ khí khổng ở trên bề mặt phiến lá" },
+        { "id": "opt-d", "label": "Phân bón sinh nhiệt độ quá cao làm đông tụ tế bào chất của toàn bộ thân cây" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Hãy so sánh nồng độ chất tan trong đất sau khi rải lượng lớn phân bón với nồng độ chất tan trong tế bào rễ." },
+      { "level": 2, "text": "Khi môi trường ngoài đặc hơn bên trong tế bào, nước sẽ di chuyển ra ngoài làm tế bào mất nước." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định hiện tượng thực tiễn", "body": "Giải thích hiện tượng sinh lý khi bón thừa phân làm nồng độ dung dịch đất tăng vọt." },
+      { "kind": "knowledge", "title": "Nguyên lý thẩm thấu ngược", "body": "Khi đất quá đặc phân bón, nước từ rễ cây sẽ thẩm thấu ngược ra ngoài đất khiến tế bào rễ mất nước co nguyên sinh." },
+      { "kind": "answer", "title": "Kết luận", "body": "Nồng độ chất tan trong đất quá cao khiến nước trong rễ thẩm thấu ngược ra ngoài đất." }
+    ],
+    "finalSolution": "Khi bón phân quá đậm đặc, đất trở thành môi trường ưu trương rút nước ngược từ rễ ra ngoài làm cây bị héo.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng cây chết vì 'ngộ độc dinh dưỡng' thay vì bản chất vật lý thẩm thấu mất nước." }
+    ]
+  },
+  {
+    "id": "bio-g7-b10-q04",
+    "lessonId": "bio-g7-b10",
+    "sgkBaiSo": 30,
+    "skillIds": ["bio-trao-doi-nuoc-thuc-vat"],
+    "difficulty": 1,
+    "prompt": "Dòng mạch gỗ trong thân thực vật thực hiện chức năng vận chuyển chất nào và theo chiều nào?",
+    "knowledge": ["kb-bio-g7-dong-mach-go-xylem"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Vận chuyển nước và ion khoáng một chiều từ rễ lên thân và lá" },
+        { "id": "opt-b", "label": "Vận chuyển đường hữu cơ hai chiều giữa rễ và lá" },
+        { "id": "opt-c", "label": "Vận chuyển chất dinh dưỡng hữu cơ từ lá xuống các cơ quan dự trữ ở rễ" },
+        { "id": "opt-d", "label": "Vận chuyển khí oxygen từ không khí vào mọi tế bào rễ" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Nước và muối khoáng được rễ hút từ lòng đất lên ngọn cây." },
+      { "level": 2, "text": "Dòng mạch gỗ là dòng đi lên một chiều chở nước và muối khoáng hòa tan." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định loại mạch dẫn", "body": "Khảo sát dòng mạch gỗ (xylem) trong thân thực vật." },
+      { "kind": "knowledge", "title": "Đặc điểm dòng mạch gỗ", "body": "Mạch gỗ gồm các tế bào chết rỗng, vận chuyển nước và khoáng hòa tan theo hướng từ rễ lên thân và lá." },
+      { "kind": "answer", "title": "Kết luận", "body": "Vận chuyển nước và ion khoáng một chiều từ rễ lên thân và lá." }
+    ],
+    "finalSolution": "Mạch gỗ (xylem) chuyên trách vận chuyển nước và ion khoáng theo một chiều từ rễ lên thân và lá.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn chiều vận chuyển của mạch gỗ (từ dưới lên) với mạch rây (từ lá xuống các cơ quan tiêu thụ/dự trữ)." }
+    ]
+  },
+  {
+    "id": "bio-g7-b10-q05",
+    "lessonId": "bio-g7-b10",
+    "sgkBaiSo": 30,
+    "skillIds": ["bio-trao-doi-nuoc-thuc-vat"],
+    "difficulty": 2,
+    "prompt": "Dòng mạch gỗ có thể đưa nước từ gốc lên đến ngọn của những cây gỗ khổng lồ cao hàng chục mét nhờ sự phối hợp của 3 lực nào?",
+    "knowledge": ["kb-bio-g7-dong-mach-go-xylem", "kb-bio-g7-y-nghia-thoat-hoi-nuoc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Lực đẩy của rễ (áp suất rễ), lực kéo của thoát hơi nước ở lá, và lực liên kết giữa các phân tử nước" },
+        { "id": "opt-b", "label": "Lực hút chân không của khí quyển, lực trọng trường, và lực co bóp của cơ tim thực vật" },
+        { "id": "opt-c", "label": "Lực đẩy của gió, lực quang hợp của lục lạp, và lực ép của vỏ cây" },
+        { "id": "opt-d", "label": "Lực hút tĩnh điện của đất, lực hô hấp của ty thể, và phản ứng lên men của rễ" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Ở phía dưới có rễ đẩy lên, ở phía trên ngọn có lá kéo lên nhờ sự bay hơi nước." },
+      { "level": 2, "text": "Bản thân các phân tử nước liên kết chặt chẽ với nhau và bám vào thành mạch gỗ tạo cột nước liên tục." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích động lực sinh lý", "body": "Tìm tổ hợp 3 lực vận chuyển cột nước liên tục trong mạch gỗ thực vật." },
+      { "kind": "knowledge", "title": "Ba động lực của mạch gỗ", "body": "Động lực đẩy ở rễ (áp suất rễ) + Động lực kéo ở lá do thoát hơi nước + Lực liên kết mao dẫn của cột phân tử nước." },
+      { "kind": "answer", "title": "Kết luận", "body": "Lực đẩy của rễ, lực kéo của thoát hơi nước ở lá và lực liên kết giữa các phân tử nước." }
+    ],
+    "finalSolution": "Ba động lực kết hợp: lực đẩy ở rễ, lực kéo ở lá và lực liên kết giữa các phân tử nước đưa nước lên ngọn cây cao.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Quên mất vai trò liên kết giữa các phân tử nước giúp cột nước không bị đứt đoạn giữa chừng." }
+    ]
+  },
+  {
+    "id": "bio-g7-b10-q06",
+    "lessonId": "bio-g7-b10",
+    "sgkBaiSo": 30,
+    "skillIds": ["bio-trao-doi-nuoc-thuc-vat"],
+    "difficulty": 1,
+    "prompt": "Sản phẩm quang hợp chính (chất hữu cơ như sucrose) từ lá được vận chuyển đến các bộ phận sử dụng và tích lũy qua cấu trúc nào?",
+    "knowledge": ["kb-bio-g7-dong-mach-ray-phloem"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Dòng mạch rây (gồm các ống rây và tế bào kèm)" },
+        { "id": "opt-b", "label": "Dòng mạch gỗ (gồm quản bào và mạch ống)" },
+        { "id": "opt-c", "label": "Lớp biểu bì có phủ sáp cutin" },
+        { "id": "opt-d", "label": "Khoảng gian bào chứa đầy khí carbon dioxide" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Đây là hệ thống mạch dẫn gồm các tế bào sống, nằm ở phần vỏ trong của thân cây." },
+      { "level": 2, "text": "Mạch rây dẫn sản phẩm hữu cơ do lá quang hợp tạo ra đi nuôi toàn bộ cơ thể." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định chất cần vận chuyển", "body": "Đường hữu cơ (sucrose) tạo ra từ lá quang hợp được đưa đến chồi non, củ, quả dự trữ." },
+      { "kind": "knowledge", "title": "Chức năng dòng mạch rây", "body": "Mạch rây (phloem) là hệ thống mạch dẫn chất hữu cơ từ lá đến các bộ phận khác." },
+      { "kind": "answer", "title": "Kết luận", "body": "Dòng mạch rây (gồm các ống rây và tế bào kèm)." }
+    ],
+    "finalSolution": "Mạch rây (phloem) gồm các tế bào sống thực hiện vận chuyển chất hữu cơ từ lá đến nơi sử dụng hoặc dự trữ.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm tưởng mạch gỗ vận chuyển cả chất hữu cơ." }
+    ]
+  },
+  {
+    "id": "bio-g7-b10-q07",
+    "lessonId": "bio-g7-b10",
+    "sgkBaiSo": 30,
+    "skillIds": ["bio-trao-doi-nuoc-thuc-vat"],
+    "difficulty": 2,
+    "prompt": "Phát biểu nào sau đây KHÔNG PHẢI là ý nghĩa sinh học của quá trình thoát hơi nước ở lá cây?",
+    "knowledge": ["kb-bio-g7-y-nghia-thoat-hoi-nuoc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Làm mất hoàn toàn lượng nước rễ hút vào khiến cây bị kiệt sức chết khô" },
+        { "id": "opt-b", "label": "Tạo lực kéo đầu trên đưa dòng nước và muối khoáng từ rễ lên các bộ phận trên cao" },
+        { "id": "opt-c", "label": "Giúp hạ nhiệt độ bề mặt của lá, bảo vệ tế bào và lục lạp không bị bỏng nhiệt dưới nắng gắt" },
+        { "id": "opt-d", "label": "Tạo điều kiện cho khí khổng mở để khí CO2 khuếch tán vào cung cấp cho quang hợp" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Tìm phát biểu tiêu cực, mô tả sai vai trò sinh lý có lợi của hiện tượng thoát hơi nước." },
+      { "level": 2, "text": "Thoát hơi nước tạo lực kéo nước, làm mát lá và giúp khí khổng mở thu nhận khí CO2." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định câu hỏi tìm phát biểu sai", "body": "Tìm nhận định sai về vai trò sinh học của thoát hơi nước ở cây xanh." },
+      { "kind": "knowledge", "title": "Các vai trò của thoát hơi nước", "body": "Thoát hơi nước là động lực kéo, làm mát lá và mở đường cho CO2 vào lá quang hợp." },
+      { "kind": "answer", "title": "Kết luận", "body": "Phát biểu 'Làm mất hoàn toàn lượng nước khiến cây bị kiệt sức chết khô' là sai." }
+    ],
+    "finalSolution": "Thoát hơi nước là hiện tượng sinh lý tối quan trọng, không phải nguyên nhân khiến cây kiệt sức chết khô trong điều kiện bình thường.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng thoát hơi nước chỉ là sự lãng phí nước vô ích của cây." }
+    ]
+  },
+  {
+    "id": "bio-g7-b10-q08",
+    "lessonId": "bio-g7-b10",
+    "sgkBaiSo": 30,
+    "skillIds": ["bio-trao-doi-nuoc-thuc-vat"],
+    "difficulty": 2,
+    "prompt": "Khi bứng một cây con hoặc cây hoa từ ngoài vườn chuyển sang chậu mới trồng, người ta thường tỉa bớt lá hoặc che râm mát cho cây trong vài ngày đầu nhằm mục đích chủ yếu gì?",
+    "knowledge": ["kb-bio-g7-long-hut-hap-thu-nuoc", "kb-bio-g7-y-nghia-thoat-hoi-nuoc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Giảm bớt sự thoát hơi nước qua lá trong khi hệ rễ và lông hút chưa kịp phục hồi" },
+        { "id": "opt-b", "label": "Ngăn cản hoàn toàn quá trình hô hấp tế bào để cây không tiêu tốn năng lượng" },
+        { "id": "opt-c", "label": "Kích thích cây ra nhiều hoa và quả ngay trong tuần đầu tiên" },
+        { "id": "opt-d", "label": "Để côn trùng không thể tìm thấy cây và đẻ trứng lên phiến lá" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Khi bứng cây, bộ rễ bị đứt nhiều lông hút nên khả năng hút nước lúc này rất yếu." },
+      { "level": 2, "text": "Nếu lá vẫn thoát hơi nước mạnh mà rễ chưa hút kịp thì cây sẽ bị mất nước và héo úa." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích tác động khi bứng cây", "body": "Rễ cây bị đứt nhiều lông hút, khả năng hấp thụ nước suy giảm nghiêm trọng." },
+      { "kind": "knowledge", "title": "Nguyên lý cân bằng nước", "body": "Tỉa bớt cành lá giúp giảm lượng nước thoát ra ngoài, cân bằng với lượng nước rễ hút vào, giúp cây không bị héo." },
+      { "kind": "answer", "title": "Kết luận", "body": "Giảm bớt sự thoát hơi nước qua lá trong khi hệ rễ và lông hút chưa kịp phục hồi." }
+    ],
+    "finalSolution": "Tỉa bớt lá và che râm làm giảm thoát hơi nước qua khí khổng, giúp cây mới trồng không bị mất cân bằng nước khi rễ chưa hồi phục.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng tỉa lá để cây ra hoa sớm, không hiểu nguyên nhân sinh lý về cân bằng nước." }
+    ]
+  }
+]

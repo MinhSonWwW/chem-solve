@@ -1,0 +1,74 @@
+{
+  "lessonId": "bio-g7-b11",
+  "nodeId": "bio-g7-b11-theory",
+  "title": "Lý thuyết: Trao đổi nước và chất dinh dưỡng ở động vật",
+  "subtitle": "Bài 31 SGK KHTN 7 Kết nối tri thức: Con đường tiêu hóa, hệ tuần hoàn vận chuyển chất, bài tiết và cân bằng nước",
+  "sgkBaiSo": 31,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Tiêu hóa thức ăn",
+      "badgeColor": "cyan",
+      "title": "Con đường thu nhận và tiêu hóa thức ăn",
+      "content": "Ở người và động vật có ống tiêu hóa, thức ăn trải qua chuỗi biến đổi cơ học và hóa học liên tục:",
+      "bulletPoints": [
+        "Khoang miệng: Răng nghiền nhỏ thức ăn, lưỡi đảo trộn với nước bọt; enzym amylase biến đổi một phần tinh bột chín thành đường mantose.",
+        "Dạ dày: Cơ dạ dày co bóp cực mạnh nghiền nhuyễn thức ăn; dịch vị chứa acid HCl và enzym pepsin phân cắt một phần protein thành các chuỗi peptide ngắn hơn.",
+        "Ruột non: Nơi tiêu hóa triệt để nhất nhờ dịch tụy, dịch mật và dịch ruột; đồng thời là nơi hấp thụ phần lớn chất dinh dưỡng hòa tan vào máu và bạch huyết nhờ hàng triệu lông ruột và nếp gấp màng nhầy.",
+        "Ruột già và Hậu môn: Hấp thụ lại phần lớn lượng nước từ chất bã thức ăn, cô đặc chất cặn bã tạo thành phân và thải ra ngoài qua hậu môn."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Hệ tuần hoàn",
+      "badgeColor": "emerald",
+      "title": "Vận chuyển các chất trong cơ thể",
+      "content": "Hệ tuần hoàn đóng vai trò như mạng lưới giao thông huyết mạch kết nối toàn bộ các cơ quan:",
+      "bulletPoints": [
+        "Cấu tạo: Gồm tim (máy bơm co bóp đẩy máu tuần hoàn liên tục) và hệ thống mạch máu (động mạch dẫn máu đi, mao mạch trao đổi chất tại tế bào, tĩnh mạch gom máu về tim).",
+        "Vận chuyển dinh dưỡng và O2: Máu hấp thụ chất dinh dưỡng từ ruột non và nhận O2 từ phổi, rồi bơm đi khắp cơ thể phân phát cho từng tế bào sử dụng.",
+        "Thu gom chất thải và CO2: Máu thu nhận khí CO2 đưa về phổi để thở ra ngoài, và nhận các chất thải độc hại (urê, acid uric, muối thừa) đưa đến thận và da để đào thải."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Bài tiết & Cân bằng",
+      "badgeColor": "amber",
+      "title": "Thải chất thải và Cân bằng nước",
+      "content": "Để bảo vệ các tế bào hoạt động bình thường, cơ thể luôn duy trì cân bằng lượng nước và nồng độ chất tan ổn định:",
+      "bulletPoints": [
+        "Cơ quan bài tiết chính: Thận lọc sạch các chất thải từ máu để tạo thành nước tiểu bài tiết ra ngoài. Da bài tiết mồ hôi vừa thải bớt muối thừa vừa làm mát cơ thể.",
+        "Cân bằng nước: Lượng nước lấy vào (qua uống nước, thức ăn) phải xấp xỉ bằng lượng nước mất đi (qua nước tiểu, mồ hôi, hơi thở qua phổi và phân).",
+        "Phản xạ điều hòa: Khi cơ thể thiếu nước, trung khu thần kinh kích thích cảm giác khát để uống nước, đồng thời thận tăng cường tái hấp thu nước làm nước tiểu cô đặc hơn."
+      ],
+      "callout": "Mất nước cấp tính (như khi bị tiêu chảy cấp hoặc sốt cao kéo dài) cực kỳ nguy hiểm, cần bù nước và điện giải bằng dung dịch Oresol kịp thời!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Bộ phận nào trong ống tiêu hóa ở người chịu trách nhiệm tiêu hóa thức ăn triệt để nhất và hấp thụ phần lớn chất dinh dưỡng vào máu?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Ruột non",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Dạ dày",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Khoang miệng",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Ruột già",
+        "correct": false
+      }
+    ],
+    "explanation": "Ruột non là cơ quan tiêu hóa dài nhất (khoảng 6 mét ở người lớn) với hệ thống enzym đa dạng từ gan tụy và bề mặt hàng triệu lông ruột, giúp tiêu hóa triệt để và hấp thụ hầu hết chất dinh dưỡng vào máu."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "lessonId": "bio-g7-b03",
+  "nodeId": "bio-g7-b03-theory",
+  "title": "Lý thuyết: Một số yếu tố ảnh hưởng đến quang hợp",
+  "subtitle": "Bài 23 SGK KHTN 7 Kết nối tri thức: Ảnh hưởng của ánh sáng, nước, CO2, nhiệt độ và ứng dụng trồng trọt",
+  "sgkBaiSo": 23,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Ánh sáng & CO2",
+      "badgeColor": "amber",
+      "title": "Ảnh hưởng của Ánh sáng và Nồng độ CO2",
+      "content": "Ánh sáng và carbon dioxide là hai yếu tố then chốt quyết định tốc độ quang hợp của cây xanh:",
+      "bulletPoints": [
+        "Ánh sáng: Khi cường độ ánh sáng tăng thì cường độ quang hợp tăng dần cho tới khi đạt điểm bão hòa ánh sáng. Cây ưa sáng (ngô, lúa, phi lao) cần nhiều ánh sáng mạnh; cây ưa bóng (lá lốt, gừng, phong lan) sống tốt dưới tán cây khác.",
+        "Nồng độ CO2: Nồng độ CO2 trung bình trong khí quyển là 0,03%. Khi tăng nồng độ CO2 thì quang hợp tăng lên, nhưng nếu nồng độ CO2 quá cao (trên 0,2%) sẽ làm cây ngộ độc và giảm quang hợp."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Nước & Nhiệt độ",
+      "badgeColor": "cyan",
+      "title": "Ảnh hưởng của Nước và Nhiệt độ",
+      "content": "Hai yếu tố duy trì môi trường sống và hoạt tính enzym trong lục lạp:",
+      "bulletPoints": [
+        "Nước: Vừa là nguyên liệu trực tiếp tham gia phản ứng quang hợp, vừa duy trì độ trương nở của tế bào khí khổng để đón nhận CO2. Khi thiếu nước (đất khô hạn), khí khổng đóng lại làm quang hợp ngừng trệ.",
+        "Nhiệt độ: Đa số thực vật quang hợp thuận lợi nhất ở nhiệt độ từ 25°C đến 35°C. Nhiệt độ quá thấp (dưới 10°C) hoặc quá cao (trên 40°C) làm enzym quang hợp bị biến tính, quang hợp giảm mạnh hoặc ngừng hẳn."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Ứng dụng",
+      "badgeColor": "emerald",
+      "title": "Vận dụng vào thực tiễn trồng trọt",
+      "content": "Hiểu biết về các yếu tố ảnh hưởng giúp con người điều khiển môi trường để nâng cao năng suất cây trồng:",
+      "bulletPoints": [
+        "Trồng xen canh: Trồng xen cây ưa sáng ở tầng trên (ngô, chuối, cau) với cây ưa bóng ở tầng dưới (đậu tương, gừng, lá lốt) để tận dụng tối đa ánh sáng mặt trời.",
+        "Gieo trồng đúng mật độ: Đảm bảo khoảng cách giữa các cây hợp lí, không trồng quá dày khiến lá che khuất nhau.",
+        "Chiếu sáng nhân tạo: Thắp đèn trong nhà kính hoặc ngoài vườn (thắp đèn cho cây thanh long kích thích ra hoa trái vụ).",
+        "Tưới nước và bón phân hợp lí: Đảm bảo độ ẩm đất thích hợp cho rễ hút nước và khí khổng mở tối ưu."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Biện pháp nào sau đây thể hiện việc ứng dụng đặc điểm nhu cầu ánh sáng của cây trong kĩ thuật trồng trọt?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Trồng xen canh cây ngô (ưa sáng) với cây đậu tương (chịu bóng tốt)",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Tưới nước đẫm vào giữa trưa hè nắng gắt",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Gieo hạt thật dày đặc để cây tự chen nhau mọc",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Bịt kín toàn bộ nhà lưới không cho không khí lưu thông",
+        "correct": false
+      }
+    ],
+    "explanation": "Trồng xen canh cây ưa sáng (tầng trên) và cây ưa bóng (tầng dưới) giúp tối ưu hóa diện tích đất và tận dụng nguồn năng lượng ánh sáng tự nhiên hiệu quả nhất."
+  }
+}

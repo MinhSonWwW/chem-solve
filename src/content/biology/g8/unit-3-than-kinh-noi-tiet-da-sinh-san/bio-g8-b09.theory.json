@@ -1,0 +1,71 @@
+{
+  "lessonId": "bio-g8-b09",
+  "nodeId": "bio-g8-b09-theory",
+  "title": "Lý thuyết: Hệ nội tiết ở người",
+  "subtitle": "Bài 38 SGK KHTN 8 Kết nối tri thức: Phân biệt tuyến nội tiết và ngoại tiết, các tuyến hormone chính và cơ chế điều hòa thể dịch",
+  "sgkBaiSo": 38,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Khái niệm",
+      "badgeColor": "emerald",
+      "title": "Tuyến nội tiết & Đặc tính của Hormone",
+      "content": "Hệ nội tiết điều hòa cơ thể qua con đường hóa học (thể dịch):",
+      "bulletPoints": [
+        "Phân biệt với tuyến ngoại tiết: Tuyến ngoại tiết có ống dẫn đổ chất tiết ra ngoài (tuyến mồ hôi, tuyến nước bọt); Tuyến nội tiết không có ống dẫn, tiết hormone ngấm thẳng vào dòng máu đến tế bào đích.",
+        "3 đặc tính của hormone: 1. Tính đặc hiệu cao (mỗi hormone chỉ tác động lên tế bào đích nhất định); 2. Hoạt tính sinh học cực mạnh (lượng rất nhỏ nhưng hiệu quả lớn); 3. Không mang tính đặc trưng cho loài (hormone insulin từ bò, lợn có thể dùng trị bệnh cho người)."
+      ],
+      "callout": "Hệ thần kinh và hệ nội tiết liên kết chặt chẽ qua trục Vùng dưới đồi - Tuyến yên để điều phối toàn bộ cơ thể!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Tuyến chính",
+      "badgeColor": "amber",
+      "title": "Tuyến yên & Tuyến giáp",
+      "content": "Hai tuyến nội tiết giữ vai trò nền tảng:",
+      "bulletPoints": [
+        "Tuyến yên (nhạc trưởng): Nằm ở đáy não; tiết hormone sinh trưởng GH (tăng chiều cao, khối lượng cơ thể; rối loạn gây bệnh khổng lồ, lùn cân đối hoặc to đầu chi) và các hormone TSH, ACTH, FSH, LH kích thích tuyến dưới.",
+        "Tuyến giáp: Nằm trước cổ; tiết hormone Thyroxine (chứa nguyên tố Iod) kích thích trao đổi chất và sinh nhiệt. Thiếu Iod gây Bệnh bướu cổ (tuyến phì đại bù trừ) và trẻ em bị đần độn còi cọc; Tăng tiết quá mức gây Bệnh Basedow (mắt lồi, tim nhanh, gầy sút)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Tụy & Thượng thận",
+      "badgeColor": "cyan",
+      "title": "Tuyến tụy, Tuyến trên thận & Tuyến sinh dục",
+      "content": "Điều hòa chuyển hóa, thích ứng nguy hiểm và sinh sản:",
+      "bulletPoints": [
+        "Tuyến tụy (tuyến pha): Tiết Insulin (tế bào beta) làm hạ đường huyết và Glucagon (tế bào alpha) làm tăng đường huyết; thiếu insulin gây bệnh tiểu đường.",
+        "Tuyến trên thận: Vỏ tuyến tiết Aldosterone (điều hòa Na+, K+); Tủy tuyến tiết Adrenaline và Noradrenaline tăng nhịp tim, co mạch, tăng huyết áp đáp ứng stress khẩn cấp.",
+        "Tuyến sinh dục: Tinh hoàn tiết Testosterone phát triển cơ quan sinh dục nam và vỡ giọng, cơ bắp; Buồng trứng tiết Estrogen và Progesterone điều hòa kinh nguyệt và đặc tính nữ."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Bệnh bướu cổ do tuyến giáp phì đại to ở cổ chủ yếu bắt nguồn từ nguyên nhân thiếu hụt nguyên tố nào trong khẩu phần ăn uống hàng ngày?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Thiếu hụt nguyên tố Iod (I)",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Thiếu hụt nguyên tố Canxi (Ca)",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Thiếu hụt nguyên tố Sắt (Fe)",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Thiếu hụt nguyên tố Kẽm (Zn)",
+        "correct": false
+      }
+    ],
+    "explanation": "Nguyên tố Iod là thành phần cấu tạo bắt buộc của hormone Thyroxine. Khi thiếu Iod trong khẩu phần ăn, tuyến yên tăng tiết TSH kích thích tuyến giáp làm việc quá sức và phì đại mô tuyến tạo thành bướu cổ."
+  }
+}

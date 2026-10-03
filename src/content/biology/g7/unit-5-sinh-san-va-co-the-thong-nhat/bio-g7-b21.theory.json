@@ -1,0 +1,73 @@
+{
+  "lessonId": "bio-g7-b21",
+  "nodeId": "bio-g7-b21-theory",
+  "title": "Lý thuyết: Các yếu tố ảnh hưởng và điều hòa, điều khiển sinh sản ở sinh vật",
+  "subtitle": "Bài 41 SGK KHTN 7 Kết nối tri thức: Các nhân tố chi phối sinh sản, hormone điều hòa và các kĩ thuật điều khiển sinh sản cây trồng, vật nuôi",
+  "sgkBaiSo": 41,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Yếu tố môi trường",
+      "badgeColor": "cyan",
+      "title": "Các yếu tố môi trường ảnh hưởng đến sinh sản",
+      "content": "Quá trình sinh sản của sinh vật chịu ảnh hưởng trực tiếp từ các nhân tố ngoại cảnh:",
+      "bulletPoints": [
+        "Nhiệt độ: Nhiệt độ môi trường chi phối thời gian thành thục sinh dục và tỉ lệ đực/cái ở một số loài bò sát (ở rùa biển, ấp trứng ở nhiệt độ cát trên 30°C nở ra đa số con cái, dưới 28°C nở ra đa số con đực).",
+        "Ánh sáng: Cường độ và thời gian chiếu sáng ảnh hưởng đến sự phân hóa mầm hoa ở thực vật (thanh long, hoa cúc) và kích thích gia cầm (gà, vịt) đẻ trứng đều đặn.",
+        "Chất dinh dưỡng: Chế độ dinh dưỡng cân đối giúp sinh vật tích lũy đủ năng lượng để thành thục sinh dục, tăng số lượng và chất lượng hạt phấn, noãn, trứng và tinh trùng.",
+        "Nước và độ ẩm: Độ ẩm không khí cao giúp hạt phấn không bị khô chết; môi trường nước là điều kiện sống còn cho động vật thụ tinh ngoài."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Điều hòa hormone",
+      "badgeColor": "emerald",
+      "title": "Cơ chế điều hòa sinh sản bằng hormone",
+      "content": "Hệ nội tiết giữ vai trò chủ đạo điều hòa sự hình thành giao tử và chu kỳ sinh sản:",
+      "bulletPoints": [
+        "Cơ chế tự nhiên: Tuyến yên tiết ra các hormone hướng sinh dục kích thích buồng trứng và tinh hoàn sản sinh giao tử chín.",
+        "Ứng dụng kích thích cá sinh sản: Trong tự nhiên, cá mè, cá trắm chỉ đẻ trứng ở vùng nước chảy xiết đầu nguồn sông lớn. Trong ao hồ nuôi nước tĩnh, người ta tiêm dịch chiết tuyến yên hoặc hormone sinh dục kích thích cá đẻ trứng và thụ tinh nhân tạo đồng loạt.",
+        "Thụ tinh nhân tạo ở gia súc: Tiêm hormone điều khiển cho đàn bò cái rụng trứng cùng thời điểm, sau đó dẫn tinh trùng từ bò đực giống ngoại chất lượng cao vào thụ tinh tạo ra đàn con vượt trội."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Thực tiễn & Đời sống",
+      "badgeColor": "amber",
+      "title": "Các biện pháp điều khiển sinh sản ở sinh vật và con người",
+      "content": "Ứng dụng khoa học kỹ thuật chủ động điều khiển quá trình sinh sản phục vụ đời sống:",
+      "bulletPoints": [
+        "Thụ phấn nhân tạo cho cây trồng: Thu gom hạt phấn từ hoa đực rắc đều lên đầu nhụy hoa cái (ở ngô, thanh long, bí đỏ, dưa hấu) giúp tăng tỉ lệ đậu quả, bắp ngô hạt mẩy đều không bị khuyết hạt.",
+        "Điều khiển tỷ lệ đực/cái: Điều chỉnh nhiệt độ ấp trứng ở rùa, cá sấu; phân tách tinh trùng mang nhiễm sắc thể giới tính ở gia súc để chọn đực (lấy thịt) hoặc cái (lấy sữa/trứng).",
+        "Ở con người: Thực hiện sinh đẻ có kế hoạch (sử dụng bao cao su, thuốc tránh thai, đặt vòng); ứng dụng thụ tinh trong ống nghiệm (IVF) giúp các cặp vợ chồng hiếm muộn sinh con khỏe mạnh."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Tại các vùng trồng ngô (bắp), người nông dân thường rung cây vào buổi sáng hoặc dùng chổi lông quét hạt phấn từ bông cờ rải lên râu ngô nhằm mục đích gì?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Thực hiện thụ phấn nhân tạo giúp bắp ngô đậu nhiều hạt, hạt đóng kín đều bắp",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Để xua đuổi các loài ong mật không cho đến hút mật",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Làm cho rễ cây ngô cắm sâu hơn vào lòng đất",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Ngăn cản không cho hạt ngô nảy mầm sớm trên bắp",
+        "correct": false
+      }
+    ],
+    "explanation": "Bông cờ (hoa đực) ở ngọn cây ngô và râu ngô (đầu nhụy của hoa cái) ở nách lá thường thụ phấn nhờ gió. Thụ phấn bổ sung nhân tạo giúp đảm bảo mọi noãn đều nhận được hạt phấn, tránh hiện tượng bắp ngô bị kẽ hở khuyết hạt."
+  }
+}

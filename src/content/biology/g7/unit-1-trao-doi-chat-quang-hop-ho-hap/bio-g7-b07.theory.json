@@ -1,0 +1,73 @@
+{
+  "lessonId": "bio-g7-b07",
+  "nodeId": "bio-g7-b07-theory",
+  "title": "Lý thuyết: Thực hành hô hấp ở thực vật",
+  "subtitle": "Bài 27 SGK KHTN 7 Kết nối tri thức: Thí nghiệm chứng minh hô hấp tỏa nhiệt, hút khí oxygen và thải carbon dioxide",
+  "sgkBaiSo": 27,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Thí nghiệm 1",
+      "badgeColor": "amber",
+      "title": "Chứng minh hô hấp ở hạt nảy mầm tỏa nhiệt",
+      "content": "Sử dụng nhiệt kế đo sự thay đổi nhiệt độ trong bình hạt đang nảy mầm và bình hạt luộc chín (đối chứng):",
+      "bulletPoints": [
+        "Bố trí: Bình A chứa hạt đậu nảy mầm; Bình B chứa hạt đậu đã luộc chín để nguội (đối chứng). Cắm nhiệt kế vào giữa khối hạt ở mỗi bình, nút kín miệng bình.",
+        "Hiện tượng: Nhiệt kế ở Bình A tăng nhiệt độ rõ rệt (tăng từ 2°C đến 5°C so với nhiệt độ phòng); nhiệt kế ở Bình B không đổi.",
+        "Giải thích: Hạt nảy mầm hô hấp tế bào mạnh mẽ phân giải glucose, một phần năng lượng giải phóng dưới dạng nhiệt năng làm nóng bình."
+      ],
+      "callout": "Hô hấp tế bào luôn giải phóng nhiệt năng sưởi ấm và duy trì hoạt tính sinh học!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Thí nghiệm 2",
+      "badgeColor": "cyan",
+      "title": "Chứng minh hô hấp sinh ra khí Carbon dioxide (CO2)",
+      "content": "Sử dụng dung dịch nước vôi trong Ca(OH)2 để nhận biết khí CO2 sinh ra từ bình hạt nảy mầm:",
+      "bulletPoints": [
+        "Bố trí: Nối ống dẫn khí từ bình kín chứa hạt nảy mầm (đã đậy kín 2 - 4 giờ) sục vào ống nghiệm chứa nước vôi trong.",
+        "Hiện tượng: Nước vôi trong nhanh chóng bị vẩn đục màu trắng sữa.",
+        "Giải thích: Hô hấp tế bào thải ra khí CO2; khí CO2 phản ứng với Ca(OH)2 tạo thành kết tủa trắng calcium carbonate (CaCO3)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Thí nghiệm 3",
+      "badgeColor": "emerald",
+      "title": "Chứng minh hô hấp tiêu thụ khí Oxygen (O2)",
+      "content": "Sử dụng ngọn lửa que diêm / que đóm đang cháy để kiểm tra lượng khí O2 trong bình hạt:",
+      "bulletPoints": [
+        "Bố trí: Mở nút bình kín chứa hạt đậu nảy mầm sau vài giờ ủ kín, lập tức đưa que diêm đang cháy vào miệng bình.",
+        "Hiện tượng: Ngọn lửa que diêm bị dập tắt ngay lập tức.",
+        "Giải thích: Tế bào hạt nảy mầm đã tiêu thụ hết toàn bộ khí Oxygen trong bình kín cho quá trình hô hấp hiếu khí, môi trường cạn O2 không còn duy trì sự cháy."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi đưa que diêm đang cháy vào bình chứa hạt đậu nảy mầm đậy kín sau 3 giờ, hiện tượng gì xảy ra và nguyên nhân là gì?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Que diêm bị dập tắt ngay lập tức vì hạt nảy mầm đã hô hấp tiêu thụ hết khí Oxygen trong bình",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Que diêm bùng cháy sáng dữ dội vì hạt nảy mầm quang hợp giải phóng khí Oxygen",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Que diêm phát ra tiếng nổ vì có khí hydrogen thoát ra từ hạt",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Que diêm đổi sang màu xanh lục do diệp lục bám vào",
+        "correct": false
+      }
+    ],
+    "explanation": "Trong bình kín, hạt nảy mầm hô hấp mạnh đã hút hết khí O2 và thải ra nhiều khí CO2. Do thiếu O2 duy trì sự cháy, ngọn lửa que diêm bị dập tắt ngay lập tức."
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "lessonId": "bio-g6-b16",
+  "nodeId": "bio-g6-b16-theory",
+  "title": "Lý thuyết: Thực hành quan sát nguyên sinh vật",
+  "subtitle": "Bài 31 SGK KHTN 6 Kết nối tri thức: Kỹ thuật soi nước ao hồ, nhận diện trùng roi, trùng giày và tảo silic",
+  "sgkBaiSo": 31,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Mục tiêu",
+      "badgeColor": "emerald",
+      "title": "Mục tiêu bài thực hành nguyên sinh vật",
+      "content": "Rèn luyện kỹ năng quan sát hiển vi sinh vật sống động trong tự nhiên:",
+      "bulletPoints": [
+        "Thu thập mẫu nước ao hồ tự nhiên và làm tiêu bản giọt nước sống đúng kỹ thuật.",
+        "Sử dụng thành thạo kính hiển vi từ vật kính 10x đến 40x để tìm kiếm và theo dõi chuyển động của sinh vật.",
+        "Nhận diện chính xác hình thái đặc trưng của trùng roi xanh, trùng giày và tảo silic dưới kính."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Quy trình thực nghiệm",
+      "badgeColor": "amber",
+      "title": "Các bước làm tiêu bản giọt nước ao hồ",
+      "content": "Thực hiện theo 3 bước chuẩn trong phòng thí nghiệm:",
+      "bulletPoints": [
+        "Bước 1: Dùng ống hút nhỏ giọt lấy một giọt nước ở lớp váng xanh bề mặt nước ao hồ (nơi có nhiều ánh sáng và mật độ sinh vật dày đặc nhất).",
+        "Bước 2: Nhỏ giọt nước lên chính giữa lam kính sạch. Thêm vài sợi bông gòn thấm nước tơi xốp để tạo mạng lưới cản trở tốc độ bơi của trùng giày và trùng roi.",
+        "Bước 3: Đậy lamen nghiêng góc 45° từ từ để không bị bọt khí; dùng giấy thấm hút sạch nước thừa xung quanh mép lamen."
+      ],
+      "callout": "Kỹ thuật: Sợi bông gòn giúp kìm hãm tốc độ bơi, tránh để mẫu vật bơi vụt mất khỏi thị trường kính hiển vi!"
+    },
+    {
+      "id": "card-3",
+      "badge": "Nhận diện dưới kính",
+      "badgeColor": "cyan",
+      "title": "Nhận diện 3 nhóm sinh vật hiển vi điển hình",
+      "content": "Hình ảnh trực quan dưới vật kính 10x và 40x:",
+      "bulletPoints": [
+        "Trùng roi xanh: Thân hình thoi thuôn dài, màu xanh lục sáng do chứa hạt diệp lục, bơi xoáy tròn tiến về phía trước nhờ roi ở đầu.",
+        "Trùng giày: Thân hình chiếc đế giày, bơi lội nhanh thoăn thoắt tiến lùi và xoay tròn nhờ lớp lông bơi bao quanh thân.",
+        "Tảo silic: Hình que, hình bầu dục hoặc hình quạt sao; có vỏ bằng chất silic trong suốt như thủy tinh, thường trôi nổi nhẹ hoặc đứng yên thành cụm."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi quan sát một giọt nước ao hồ dưới kính hiển vi, bạn nhìn thấy một sinh vật hình thoi thon gọn màu xanh lục đang bơi xoáy tròn. Đó là sinh vật nào?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Trùng roi xanh",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Trùng giày",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Trùng biến hình",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Tảo silic",
+        "correct": false
+      }
+    ],
+    "explanation": "Trùng roi xanh có cơ thể hình thoi, chứa các hạt diệp lục màu xanh lục giúp quang hợp và bơi xoáy bằng một roi dài ở phần đầu cơ thể."
+  }
+}

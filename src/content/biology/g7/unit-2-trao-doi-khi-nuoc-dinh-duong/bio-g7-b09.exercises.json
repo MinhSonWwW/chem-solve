@@ -1,0 +1,391 @@
+[
+  {
+    "id": "bio-g7-b09-q01",
+    "lessonId": "bio-g7-b09",
+    "sgkBaiSo": 29,
+    "skillIds": ["bio-vai-tro-nuoc-dinh-duong"],
+    "difficulty": 1,
+    "prompt": "Nước chiếm khoảng bao nhiêu phần trăm khối lượng cơ thể của đa số các loài sinh vật?",
+    "knowledge": ["kb-bio-g7-vai-tro-cua-nuoc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Khoảng 70% đến 90%" },
+        { "id": "opt-b", "label": "Khoảng 10% đến 20%" },
+        { "id": "opt-c", "label": "Chỉ khoảng 5%" },
+        { "id": "opt-d", "label": "Đúng 100%" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nước là thành phần hóa học chiếm tỉ lệ lớn nhất trong mọi tế bào sống."
+      },
+      {
+        "level": 2,
+        "text": "Khoảng 70% - 90% khối lượng cơ thể."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tỉ lệ nước trong cơ thể sống",
+        "body": "Đề bài hỏi về phần trăm khối lượng nước trong sinh vật."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Số liệu chuẩn SGK KHTN 7",
+        "body": "Nước chiếm 70% - 90% khối lượng cơ thể sinh vật, ở một số loài thủy sinh như sứa biển có thể lên đến hơn 95%."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Đáp án đúng là Khoảng 70% đến 90%."
+      }
+    ],
+    "finalSolution": "Nước chiếm từ 70% đến 90% khối lượng cơ thể của đa số sinh vật.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b09-q02",
+    "lessonId": "bio-g7-b09",
+    "sgkBaiSo": 29,
+    "skillIds": ["bio-vai-tro-nuoc-dinh-duong"],
+    "difficulty": 1,
+    "prompt": "Nhóm chất dinh dưỡng nào sau đây đóng vai trò là nguồn cung cấp năng lượng chủ yếu cho các hoạt động sống hàng ngày của con người?",
+    "knowledge": ["kb-bio-g7-vai-tro-chat-dinh-duong"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Carbohydrate (tinh bột, đường)" },
+        { "id": "opt-b", "label": "Chất khoáng (Sắt, Kẽm)" },
+        { "id": "opt-c", "label": "Vitamin A và Vitamin D" },
+        { "id": "opt-d", "label": "Chất xơ không tiêu hóa" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Có nhiều trong cơm, bánh mì, khoai, ngô."
+      },
+      {
+        "level": 2,
+        "text": "Đó chính là nhóm Carbohydrate (chất bột đường)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nguồn cung cấp năng lượng chính",
+        "body": "Xác định nhóm chất dinh dưỡng cung cấp calo chủ yếu."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Vai trò của Carbohydrate",
+        "body": "Carbohydrate bị phân giải tạo glucose cung cấp năng lượng nhanh chóng cho tế bào."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Carbohydrate là nguồn năng lượng chủ yếu."
+      }
+    ],
+    "finalSolution": "Carbohydrate (tinh bột, đường) cung cấp năng lượng chính cho cơ thể.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b09-q03",
+    "lessonId": "bio-g7-b09",
+    "sgkBaiSo": 29,
+    "skillIds": ["bio-vai-tro-nuoc-dinh-duong"],
+    "difficulty": 2,
+    "prompt": "Một người nặng 60 kg thì theo công thức khoa học (40 mL/kg/ngày), lượng nước tối thiểu cần bổ sung mỗi ngày là bao nhiêu?",
+    "knowledge": ["kb-bio-g7-nhu-cau-nuoc-sinh-vat"],
+    "answer": {
+      "kind": "number",
+      "value": 2.4,
+      "unit": "lít",
+      "tolerance": { "abs": 0.1 }
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Lấy khối lượng (kg) nhân với 40 mL rồi đổi sang đơn vị lít (1 lít = 1000 mL)."
+      },
+      {
+        "level": 2,
+        "text": "60 × 40 = 2400 mL = 2,4 lít."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tính toán nhu cầu nước",
+        "body": "Khối lượng: m = 60 kg. Định mức: 40 mL/kg/ngày."
+      },
+      {
+        "kind": "compute",
+        "title": "Phép tính",
+        "body": "V = 60 × 40 = 2400 mL = 2,4 lít."
+      },
+      {
+        "kind": "answer",
+        "title": "Đáp số",
+        "body": "2,4 lít nước mỗi ngày."
+      }
+    ],
+    "finalSolution": "Nhu cầu nước hàng ngày = 60 × 40 = 2400 mL = 2,4 lít.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Quên đổi từ mL sang lít (để nguyên 2400)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g7-b09-q04",
+    "lessonId": "bio-g7-b09",
+    "sgkBaiSo": 29,
+    "skillIds": ["bio-vai-tro-nuoc-dinh-duong"],
+    "difficulty": 2,
+    "prompt": "Tại sao khi bị sốt cao hoặc tiêu chảy nặng, bệnh nhân cần phải được bù nước và dung dịch oresol ngay lập tức?",
+    "knowledge": ["kb-bio-g7-vai-tro-cua-nuoc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Để bù đắp lượng nước và các ion khoáng đã mất, tránh rối loạn tuần hoàn và trao đổi chất nguy hiểm tính mạng" },
+        { "id": "opt-b", "label": "Để làm cho dạ dày chứa đầy nước không còn cảm giác thèm ăn" },
+        { "id": "opt-c", "label": "Để làm tăng nồng độ đường trong máu lên gấp nhiều lần" },
+        { "id": "opt-d", "label": "Để tiêu diệt toàn bộ tế bào hồng cầu trong máu" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mất nước kèm theo mất các chất điện giải (muối khoáng Na+, K+, Cl-)."
+      },
+      {
+        "level": 2,
+        "text": "Bù nước và điện giải giúp phục hồi thể tích máu và duy trì tuần hoàn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tác hại của mất nước cấp tính",
+        "body": "Sốt và tiêu chảy gây mất nước nhanh chóng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Vai trò của oresol",
+        "body": "Oresol cung cấp nước và cân bằng tỉ lệ muối khoáng hòa tan, ngăn chặn trụy mạch do giảm thể tích máu."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Bù đắp nước và ion khoáng đã mất."
+      }
+    ],
+    "finalSolution": "Uống oresol giúp bù nhanh lượng nước và chất điện giải, bảo vệ tính mạng bệnh nhân.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b09-q05",
+    "lessonId": "bio-g7-b09",
+    "sgkBaiSo": 29,
+    "skillIds": ["bio-vai-tro-nuoc-dinh-duong"],
+    "difficulty": 2,
+    "prompt": "Chất khoáng nào sau đây là thành phần cấu tạo chủ yếu của xương và răng ở người và động vật có xương sống?",
+    "knowledge": ["kb-bio-g7-vai-tro-chat-dinh-duong"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Calcium (Canxi)" },
+        { "id": "opt-b", "label": "Sắt (Iron)" },
+        { "id": "opt-c", "label": "Iodine (I-ốt)" },
+        { "id": "opt-d", "label": "Natri (Sodium)" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thiếu chất khoáng này ở trẻ em sẽ dẫn đến bệnh còi xương, ở người già gây loãng xương."
+      },
+      {
+        "level": 2,
+        "text": "Đó chính là nguyên tố Calcium (Canxi)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khoáng chất cấu tạo xương",
+        "body": "Tìm nguyên tố khoáng cấu tạo mô xương và răng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Vai trò của Canxi",
+        "body": "Calcium cùng với Phosphorus tạo thành khoáng chất hydroxyapatite giúp xương và răng cứng chắc."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Calcium (Canxi) là đáp án đúng."
+      }
+    ],
+    "finalSolution": "Calcium là thành phần khoáng chất cốt lõi cấu tạo nên xương và răng.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm với sắt (Sắt tham gia tạo hemoglobin trong hồng cầu)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g7-b09-q06",
+    "lessonId": "bio-g7-b09",
+    "sgkBaiSo": 29,
+    "skillIds": ["bio-vai-tro-nuoc-dinh-duong"],
+    "difficulty": 3,
+    "prompt": "Hãy ghép mỗi nhóm chất dinh dưỡng với vai trò sinh học tương ứng trong cơ thể:",
+    "knowledge": ["kb-bio-g7-vai-tro-chat-dinh-duong"],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Carbohydrate (Đường, tinh bột)", "right": "Cung cấp nguồn năng lượng chính hàng ngày" },
+        { "left": "Protein (Chất đạm)", "right": "Xây dựng tế bào, cơ bắp và tạo enzym, kháng thể" },
+        { "left": "Lipid (Chất béo)", "right": "Dự trữ năng lượng và cách nhiệt giữ ấm cơ thể" },
+        { "left": "Vitamin và Khoáng chất", "right": "Điều hòa chuyển hóa và bảo vệ cơ thể khỏi bệnh tật" }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Chất đạm xây dựng mô cơ; Chất béo dự trữ năng lượng và giữ ấm; Bột đường cấp năng lượng trực tiếp."
+      },
+      {
+        "level": 2,
+        "text": "Ghép nối chính xác 4 nhóm chất dinh dưỡng đại lượng và vi lượng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân loại vai trò dinh dưỡng",
+        "body": "Đối chiếu 4 nhóm dinh dưỡng cơ bản."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Chức năng từng nhóm",
+        "body": "Carbohydrate (năng lượng nhanh), Protein (cấu trúc/xây dựng), Lipid (dự trữ/cách nhiệt), Vitamin/khoáng (điều hòa)."
+      },
+      {
+        "kind": "answer",
+        "title": "Ghép cặp",
+        "body": "Ghép đúng 4 cặp vai trò."
+      }
+    ],
+    "finalSolution": "Bốn nhóm dưỡng chất phối hợp nhịp nhàng để xây dựng và duy trì sức khỏe cơ thể.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b09-q07",
+    "lessonId": "bio-g7-b09",
+    "sgkBaiSo": 29,
+    "skillIds": ["bio-vai-tro-nuoc-dinh-duong"],
+    "difficulty": 3,
+    "prompt": "Tại sao khi trời nắng nóng nực hoặc khi tập thể dục cường độ cao, cơ thể người lại toát ra nhiều mồ hôi?",
+    "knowledge": ["kb-bio-g7-vai-tro-cua-nuoc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Sự bay hơi của nước trong mồ hôi qua da mang đi một lượng nhiệt lớn giúp làm mát và điều hòa thân nhiệt" },
+        { "id": "opt-b", "label": "Để tống khứ hết toàn bộ lượng máu dư thừa ra khỏi cơ thể" },
+        { "id": "opt-c", "label": "Để làm cho da khô hơn giúp hạn chế vi khuẩn bám dính" },
+        { "id": "opt-d", "label": "Để tạo ra một lớp màng bảo vệ ngăn ánh sáng mặt trời chiếu vào cơ bắp" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi 1 gam nước bay hơi khỏi bề mặt da, nó mang theo một lượng nhiệt lượng rất lớn từ cơ thể."
+      },
+      {
+        "level": 2,
+        "text": "Đó là cơ chế điều hòa thân nhiệt tự nhiên của con người."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Ý nghĩa sinh lí của toát mồ hôi",
+        "body": "Nhiệt độ cơ thể tăng khi trời nóng hoặc vận động mạnh."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Vai trò điều hòa nhiệt của nước",
+        "body": "Nước có nhiệt dung riêng cao và nhiệt hóa hơi lớn. Nước thoát ra tuyến mồ hôi bay hơi sẽ hấp thụ nhiệt từ mao mạch dưới da, giúp thân nhiệt duy trì ổn định ở 37°C."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Sự bay hơi của nước trong mồ hôi giúp làm mát cơ thể."
+      }
+    ],
+    "finalSolution": "Toát mồ hôi là cơ chế thải nhiệt làm mát nhờ sự bay hơi của nước trên da.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b09-q08",
+    "lessonId": "bio-g7-b09",
+    "sgkBaiSo": 29,
+    "skillIds": ["bio-vai-tro-nuoc-dinh-duong"],
+    "difficulty": 3,
+    "prompt": "Bệnh bướu cổ đơn thuần ở người thường liên quan trực tiếp đến việc thiếu hụt nguyên tố khoáng vi lượng nào trong khẩu phần ăn uống hàng ngày?",
+    "knowledge": ["kb-bio-g7-vai-tro-chat-dinh-duong"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Iodine (I-ốt)" },
+        { "id": "opt-b", "label": "Sắt (Iron)" },
+        { "id": "opt-c", "label": "Calcium (Canxi)" },
+        { "id": "opt-d", "label": "Kali (Potassium)" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nguyên tố này có nhiều trong muối biển và hải sản, là thành phần tạo hoóc môn thyroxine của tuyến giáp."
+      },
+      {
+        "level": 2,
+        "text": "Đó chính là Iodine (I-ốt)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nguyên nhân bệnh bướu cổ",
+        "body": "Bướu cổ do tuyến giáp phì đại khi thiếu khoáng chất."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Vai trò của Iodine",
+        "body": "Iodine là thành phần cấu tạo hoóc môn tuyến giáp. Thiếu Iodine làm tuyến giáp phải tăng kích thước để cố gắng hấp thụ thêm, dẫn tới bướu cổ."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Iodine (I-ốt) là câu trả lời đúng."
+      }
+    ],
+    "finalSolution": "Thiếu Iodine gây bệnh bướu cổ và suy giảm trí tuệ, do đó cần sử dụng muối I-ốt trong bữa ăn.",
+    "commonMistakes": []
+  }
+]

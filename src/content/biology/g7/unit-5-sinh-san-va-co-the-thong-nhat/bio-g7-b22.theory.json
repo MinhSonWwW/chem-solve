@@ -1,0 +1,75 @@
+{
+  "lessonId": "bio-g7-b22",
+  "nodeId": "bio-g7-b22-theory",
+  "title": "Lý thuyết: Cơ thể sinh vật là một thể thống nhất",
+  "subtitle": "Bài 42 SGK KHTN 7 Kết nối tri thức: Mối quan hệ mật thiết giữa các cơ quan, các quá trình sống và sự thích nghi toàn vẹn với môi trường",
+  "sgkBaiSo": 42,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Thống nhất ở thực vật",
+      "badgeColor": "cyan",
+      "title": "Mối quan hệ tương hỗ giữa Rễ – Thân – Lá",
+      "content": "Ở cây xanh, các cơ quan sinh dưỡng và cơ quan sinh sản phối hợp nhịp nhàng thành một khối hữu cơ duy nhất:",
+      "bulletPoints": [
+        "Rễ hút nước và khoáng hòa tan từ đất: Cung cấp nguyên liệu cho thân và lá. Nếu rễ bị ngập úng thiếu oxy thối rữa, cây không hút được nước và sẽ bị héo úa.",
+        "Thân vận chuyển hai chiều: Mạch gỗ dẫn nước, khoáng từ rễ lên lá; Mạch rây dẫn chất hữu cơ từ lá tỏa đi nuôi rễ, ngọn và củ quả.",
+        "Lá quang hợp và thoát hơi nước: Thoát hơi nước ở lá tạo lực kéo hút nước từ rễ lên; đồng thời lá quang hợp tạo đường hữu cơ cung cấp năng lượng nuôi sống toàn bộ tế bào rễ và thân.",
+        "Tính toàn vẹn: Tổn thương ở bất kỳ bộ phận nào (sâu ăn rễ, bóc khoanh vỏ thân, sâu cắn phá lá) đều ảnh hưởng đến toàn bộ sự sống còn của cây."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Thống nhất ở động vật",
+      "badgeColor": "emerald",
+      "title": "Sự phối hợp giữa các hệ cơ quan",
+      "content": "Các hệ cơ quan trong cơ thể động vật hoạt động ăn khớp nhịp nhàng dưới sự điều hòa của hệ thần kinh và nội tiết:",
+      "bulletPoints": [
+        "Hệ tiêu hóa: Biến đổi thức ăn thành chất dinh dưỡng hòa tan và hấp thụ vào máu.",
+        "Hệ hô hấp: Lấy khí oxygen từ không khí vào máu và thải khí carbon dioxide từ máu ra môi trường.",
+        "Hệ tuần hoàn: Là trung tâm kết nối, tim co bóp đẩy máu mang O2 và dưỡng chất đến từng tế bào; đồng thời nhận chất thải đưa đến thận và phổi.",
+        "Hệ bài tiết: Thận lọc máu loại bỏ chất cặn bã độc hại duy trì cân bằng nội môi ổn định.",
+        "Ví dụ khi vận động chạy nhanh: Cơ bắp cần nhiều năng lượng → Tim đập nhanh hơn, mạch giãn ra (tuần hoàn), phổi thở nhanh và sâu hơn (hô hấp), mồ hôi toát nhiều (bài tiết làm mát)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Thống nhất với môi trường",
+      "badgeColor": "amber",
+      "title": "Cơ thể thống nhất với môi trường sống",
+      "content": "Cơ thể sinh vật là một hệ thống mở, luôn trao đổi vật chất và năng lượng với thế giới xung quanh:",
+      "bulletPoints": [
+        "Trao đổi liên tục: Lấy các chất cần thiết từ môi trường (nước, thức ăn, oxy, ánh sáng) và thải các sản phẩm bài tiết ra môi trường.",
+        "Cơ chế tự điều hòa thích nghi: Khi trời nắng nóng, cơ thể toát mồ hôi (động vật) hoặc khí khổng khép bớt (thực vật) để bảo vệ cân bằng nước; khi trời lạnh, cơ thể run rẩy sinh nhiệt giữ ấm.",
+        "Môi trường biến đổi quá ngưỡng chịu đựng (ô nhiễm độc hại, hạn hán kéo dài) sẽ phá vỡ cân bằng nội môi và dẫn đến sinh vật tử vong."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi một học sinh tham gia chạy cự li 100 mét, tại sao nhịp tim và nhịp thở của bạn ấy lại đồng thời tăng lên nhanh chóng?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Để cung cấp kịp thời nhiều khí oxygen và chất dinh dưỡng cho các tế bào cơ bắp hoạt động mạnh",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Để làm cho cơ thể bị mất thăng bằng và ngã xuống",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Vì hệ tiêu hóa ngừng hoạt động và thải hết thức ăn ra ngoài",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Để ngăn cản không cho máu chảy qua phổi",
+        "correct": false
+      }
+    ],
+    "explanation": "Khi cơ bắp vận động mạnh, các tế bào cơ cần nhiều năng lượng ATP từ hô hấp tế bào. Hệ thần kinh lập tức điều hòa phối hợp: tim đập nhanh (tăng tuần hoàn) và phổi thở gấp (tăng trao đổi khí) để đáp ứng đủ O2 và dinh dưỡng cho cơ bắp."
+  }
+}

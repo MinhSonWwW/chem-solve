@@ -1,0 +1,32 @@
+[
+  {
+    "id": "kb-bio-g7-khai-niem-cam-ung",
+    "title": "Khái niệm cảm ứng ở sinh vật",
+    "description": "Cảm ứng là khả năng cơ thể sinh vật tiếp nhận và phản ứng lại các kích thích từ môi trường bên trong hoặc bên ngoài, giúp sinh vật thích nghi với điều kiện sống để tồn tại và phát triển."
+  },
+  {
+    "id": "kb-bio-g7-cam-ung-thuc-vat-vs-dong-vat",
+    "title": "So sánh cảm ứng ở thực vật và động vật",
+    "description": "Ở thực vật: Cảm ứng diễn ra chậm, khó nhận thấy bằng mắt thường trong thời gian ngắn, biểu hiện qua sự thay đổi tốc độ sinh trưởng hoặc sức trương nước của tế bào. Ở động vật: Cảm ứng diễn ra nhanh chóng, dễ nhận thấy, thông qua các phản xạ và tập tính do hệ thần kinh điều khiển."
+  },
+  {
+    "id": "kb-bio-g7-vai-tro-tap-tinh",
+    "title": "Vai trò của tập tính đối với động vật",
+    "description": "Tập tính đóng vai trò quan trọng đối với sự sinh tồn của động vật: giúp tìm kiếm thức ăn, bảo vệ nơi ở và vùng lãnh thổ, tự vệ chống kẻ thù, tìm bạn tình và duy trì nòi giống qua các thế hệ."
+  },
+  {
+    "id": "kb-bio-g7-thuc-hanh-tinh-huong-sang",
+    "title": "Thí nghiệm chứng minh tính hướng sáng ở thực vật",
+    "description": "Trồng hạt đậu xanh nảy mầm trong hộp bìa carton kín có đục một lỗ tròn ở một bên thành hộp: sau vài ngày, thân mầm cây đậu uốn cong vươn mình về phía lỗ tròn có ánh sáng lọt vào (hướng sáng dương)."
+  },
+  {
+    "id": "kb-bio-g7-thuc-hanh-tinh-huong-trong-luc",
+    "title": "Thí nghiệm chứng minh tính hướng trọng lực (hướng đất)",
+    "description": "Đặt một chậu cây con nằm ngang trong điều kiện tối hoặc chiếu sáng đều: sau vài ngày thấy ngọn cây uốn cong mọc ngược lên trời (hướng đất âm), còn rễ cây uốn cong đâm thẳng xuống dưới đất (hướng đất dương)."
+  },
+  {
+    "id": "kb-bio-g7-thuc-hanh-ung-dong-chong-nong-am",
+    "title": "Quan sát cảm ứng ứng động ở thực vật",
+    "description": "Quan sát cây trinh nữ khi bị va chạm: các lá chét khép lại và cuống lá cụp xuống sau vài giây; quan sát hoa bồ công anh, hoa mười giờ nở bung cánh khi có ánh sáng mặt trời ấm áp và khép cánh khi trời tối mát."
+  }
+]

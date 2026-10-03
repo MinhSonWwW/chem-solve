@@ -1,0 +1,77 @@
+{
+  "lessonId": "bio-g6-b21",
+  "nodeId": "bio-g6-b21-theory",
+  "title": "Lý thuyết: Động vật",
+  "subtitle": "Bài 36 SGK KHTN 6 Kết nối tri thức: Động vật không xương sống (95%) và 5 lớp động vật có xương sống",
+  "sgkBaiSo": 36,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Đặc điểm chung",
+      "badgeColor": "emerald",
+      "title": "Đặc điểm chung của giới Động vật",
+      "content": "Động vật là nhóm sinh vật đa bào nhân thực có tổ chức cơ thể cao cấp:",
+      "bulletPoints": [
+        "Dinh dưỡng dị dưỡng: Tiêu thụ thức ăn là các sinh vật khác (ăn thực vật hoặc ăn thịt). Tế bào động vật không có thành cellulose và không có lục lạp.",
+        "Khả năng vận động: Đa số động vật có các cơ quan vận động chuyên hóa giúp di chuyển linh hoạt (chân, vây, cánh).",
+        "Phản ứng nhanh nhạy: Có hệ thần kinh và giác quan giúp phản ứng mau lẹ trước các kích thích từ môi trường sống.",
+        "Phân chia 2 nhóm: Động vật không xương sống (chiếm 95% số loài) và Động vật có xương sống (chiếm 5% số loài)."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Không xương sống",
+      "badgeColor": "amber",
+      "title": "4 nhóm Động vật không xương sống chính",
+      "content": "Cơ thể không có cột sống nâng đỡ:",
+      "bulletPoints": [
+        "1. Ruột khoang: Cơ thể đối xứng tỏa tròn, có tế bào gai tự vệ (thủy tức, sứa biển, hải quỳ, san hô).",
+        "2. Các ngành Giun: Cơ thể thuôn dài đối xứng hai bên (giun đất, giun đũa, sán lá gan, con đỉa).",
+        "3. Thân mềm: Cơ thể mềm không phân đốt, thường có vỏ đá vôi che chở (ốc sên, ngao, sò, trai sông, mực, bạch tuộc).",
+        "4. Chân khớp (đông đúc nhất sinh giới): Có bộ xương ngoài bằng chitin cứng, các chân phân đốt có khớp động (côn trùng như ong bướm; giáp xác như tôm cua; hình nhện như nhện, bọ cạp)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Có xương sống",
+      "badgeColor": "cyan",
+      "title": "5 lớp Động vật có xương sống tiến hóa",
+      "content": "Cơ thể có cột sống bên trong nâng đỡ khung xương:",
+      "bulletPoints": [
+        "1. Lớp Cá: Sống dưới nước, bơi bằng vây, hô hấp bằng mang, đẻ trứng, động vật biến nhiệt (cá chép, cá rô).",
+        "2. Lớp Lưỡng cư: Sống ở cạn và nước; da trần ẩm ướt, hô hấp bằng da và phổi, biến nhiệt (ếch đồng, cóc nhà).",
+        "3. Lớp Bò sát: Sống trên cạn; da khô phủ vảy sừng chống mất nước, đẻ trứng vỏ dai, biến nhiệt (thằn lằn, rùa, rắn).",
+        "4. Lớp Chim: Mình phủ lông vũ, chi trước biến thành cánh, đẻ trứng vỏ đá vôi, động vật đẳng nhiệt (bồ câu, đại bàng).",
+        "5. Lớp Thú (tiến hóa nhất): Cơ thể có lông mao, đẻ con và nuôi con bằng sữa mẹ, động vật đẳng nhiệt (hổ, thỏ, cá voi, người)."
+      ],
+      "callout": "Ghi nhớ: Chim và Thú là động vật ĐẲNG NHIỆT (thân nhiệt ổn định không phụ thuộc thời tiết)!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Lớp động vật có xương sống nào sau đây có đặc điểm sinh sản tiến hóa nhất là đẻ con và nuôi con bằng sữa mẹ?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Lớp Thú (Động vật có vú)",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Lớp Chim",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Lớp Bò sát",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Lớp Lưỡng cư",
+        "correct": false
+      }
+    ],
+    "explanation": "Lớp Thú (động vật có vú) là lớp động vật có xương sống tiến hóa nhất, có đặc điểm thụ tinh trong, thai sinh (đẻ con) và có tuyến sữa nuôi con bằng sữa mẹ."
+  }
+}

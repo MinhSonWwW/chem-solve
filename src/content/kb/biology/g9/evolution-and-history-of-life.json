@@ -1,0 +1,93 @@
+[
+  {
+    "id": "kb-bio-g9-evolution-evidence",
+    "title": "Các bằng chứng tiến hóa của sinh giới",
+    "description": "Các chứng cứ khoa học chứng minh nguồn gốc chung và sự tiến hóa phân li của sinh vật.",
+    "evidences": [
+      {
+        "type": "Cơ quan tương đồng (Homologous structures)",
+        "definition": "Những cơ quan ở các loài khác nhau cùng bắt nguồn từ một cơ quan ở loài tổ tiên, dù hiện tại chức năng của chúng có thể hoàn toàn khác nhau.",
+        "examples": "Chi trước của thú và người: Cánh dơi (bay), vây ngực cá voi (bơi), chân trước mèo (chạy), tay người (cầm nắm) đều có cấu trúc xương giống nhau gồm xương cánh tay, xương cẳng tay, xương cổ tay, xương bàn tay và ngón tay.",
+        "significance": "Phản ánh con đường tiến hóa phân li từ một tổ tiên chung thích nghi với các môi trường sống khác nhau."
+      },
+      {
+        "type": "Cơ quan thoái hóa (Vestigial organs)",
+        "definition": "Những cơ quan xưa kia phát triển ở loài tổ tiên nhưng nay tiêu giảm chức năng hoặc không còn chức năng.",
+        "examples": "Ở người: Ruột thừa (vết tích ruột tịt của động vật ăn cỏ), xương cùng (di tích đuôi), nếp thịt nhỏ khóe mắt (di tích mi mắt thứ ba)."
+      },
+      {
+        "type": "Bằng chứng hóa thạch (Fossil evidence)",
+        "definition": "Di tích và dấu vết của sinh vật cổ đại để lại trong các tầng đất đá trầm tích của vỏ Trái Đất (xương hóa đá, dấu chân, xác ướp trong băng hổ phách).",
+        "significance": "Là bằng chứng trực tiếp và tin cậy nhất xác định tuổi địa chất và hình thái sinh vật thời tiền sử."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g9-natural-selection-modern-theory",
+    "title": "Thuyết chọn lọc tự nhiên và Thuyết tiến hóa tổng hợp hiện đại",
+    "description": "Cơ chế hình thành các đặc điểm thích nghi và sự tiến hóa của loài.",
+    "darwinianNaturalSelection": {
+      "drivingForce": "Đấu tranh sinh tồn giữa các cá thể trong loài hoặc khác loài để giành thức ăn, ánh sáng, bạn tình và tránh kẻ thù.",
+      "mechanism": "Môi trường sống liên tục sàng lọc: đào thải những cá thể mang biến dị cá thể bất lợi, giữ lại và nhân lên những cá thể mang biến dị có lợi thích nghi hơn.",
+      "result": "Tích lũy các biến dị có lợi qua nhiều thế hệ, tạo nên sinh vật có đặc điểm ngày càng thích nghi với môi trường sống."
+    },
+    "modernEvolutionarySynthesis": {
+      "elementaryFactors": [
+        {
+          "factor": "Đột biến (Mutation)",
+          "role": "Tạo ra các allele mới, cung cấp nguồn nguyên liệu sơ cấp dồi dào cho tiến hóa."
+        },
+        {
+          "factor": "Giao phối (Mating)",
+          "role": "Phát tán các đột biến, tạo ra vô số biến dị tổ hợp (nguồn nguyên liệu thứ cấp)."
+        },
+        {
+          "factor": "Chọn lọc tự nhiên (Natural selection)",
+          "role": "Nhân tố định hướng duy nhất của tiến hóa, quy định chiều hướng và nhịp điệu biến đổi tần số allele theo hướng thích nghi."
+        }
+      ],
+      "speciation": "Loài ban đầu → Phân li tính trạng do đột biến và giao phối → Cách li địa lí / tập tính / sinh thái → Tích lũy sai khác di truyền → Cách li sinh sản (loài mới hình thành)."
+    }
+  },
+  {
+    "id": "kb-bio-g9-geological-eras-timeline",
+    "title": "Nguồn gốc sự sống và 5 Đại địa chất trên Trái Đất",
+    "description": "Lịch sử phát triển của vỏ Trái Đất và sinh giới qua hàng tỉ năm.",
+    "stagesOfOrigin": [
+      {
+        "stage": "Tiến hóa hóa học",
+        "events": "Khí quyển nguyên thủy (CH4, NH3, H2O, H2) chịu tác động sấm sét, tia UV → Hợp chất hữu cơ đơn giản (amino acid, nucleotide) → Trùng phân thành đại phân tử sinh học (protein, nucleic acid)."
+      },
+      {
+        "stage": "Tiến hóa tiền sinh học",
+        "events": "Tập hợp các đại phân tử thành giọt đông tụ (coacervate), màng lipid kép bao bọc tạo nên các tế bào sơ khai (protocell) có trao đổi chất đơn giản."
+      },
+      {
+        "stage": "Tiến hóa sinh học",
+        "events": "Từ tế bào sơ khai dưới tác động của CLTN phát triển thành toàn bộ sinh giới phong phú ngày nay."
+      }
+    ],
+    "geologicalEras": [
+      {
+        "era": "Đại Thái cổ (Archean)",
+        "keyLife": "Xuất hiện sự sống đầu tiên: Sinh vật nhân sơ cổ (vi khuẩn, vi khuẩn lam kị khí)."
+      },
+      {
+        "era": "Đại Nguyên sinh (Proterozoic)",
+        "keyLife": "Tích lũy khí O2 trong khí quyển, xuất hiện sinh vật nhân thực, tảo biển, động vật không xương sống nguyên thủy."
+      },
+      {
+        "era": "Đại Cổ sinh (Paleozoic)",
+        "keyLife": "Thực vật có mạch di cư lên cạn, phát triển rực rỡ rừng quyết khổng lồ (tạo than đá); xuất hiện cá xương, lưỡng cư và bò sát cổ."
+      },
+      {
+        "era": "Đại Trung sinh (Mesozoic)",
+        "keyLife": "Thời đại cực thịnh của Bò sát khổng lồ (Khủng long); xuất hiện thực vật Hạt trần, chim cổ và thú cổ."
+      },
+      {
+        "era": "Đại Tân sinh (Cenozoic)",
+        "keyLife": "Thời đại phồn thịnh của thực vật Hạt kín, Chim và Thú; Kỉ Đệ Tứ (Quaternary) xuất hiện Loài người (Homo sapiens)."
+      }
+    ]
+  }
+]

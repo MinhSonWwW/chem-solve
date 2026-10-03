@@ -1,0 +1,72 @@
+{
+  "lessonId": "bio-g8-b13",
+  "nodeId": "bio-g8-b13-theory",
+  "title": "Lý thuyết: Quần thể sinh vật",
+  "subtitle": "Bài 42 SGK KHTN 8 Kết nối tri thức: Khái niệm quần thể, tỉ lệ giới tính, tháp tuổi, mật độ cá thể và biến động số lượng",
+  "sgkBaiSo": 42,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Khái niệm",
+      "badgeColor": "emerald",
+      "title": "Quần thể sinh vật là gì?",
+      "content": "Quần thể sinh vật là cấp độ tổ chức sống trên cấp độ cơ thể:",
+      "bulletPoints": [
+        "Định nghĩa chuẩn: Quần thể sinh vật là tập hợp các cá thể cùng một loài, cùng sinh sống trong một khoảng không gian xác định, vào một thời điểm nhất định, có khả năng giao phối tự do với nhau để sinh ra thế hệ con hữu thụ (có khả năng sinh sản).",
+        "Phân biệt với tập hợp ngẫu nhiên: Các con cá chép trong một hồ nước là một quần thể; còn tập hợp cá chép, cá trắm, cá rô trong hồ đó là tập hợp nhiều loài (thuộc quần xã), không phải là một quần thể."
+      ],
+      "callout": "Các cá thể trong quần thể gắn kết mật thiết qua quan hệ hỗ trợ (cùng đàn kiếm ăn, tự vệ) và quan hệ cạnh tranh (nguồn sống, bạn tình)!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Đặc trưng",
+      "badgeColor": "amber",
+      "title": "Các đặc trưng cơ bản của quần thể",
+      "content": "Quần thể có các đặc trưng sinh thái tập thể:",
+      "bulletPoints": [
+        "1. Tỉ lệ giới tính: Tỉ lệ giữa số cá thể đực và cá thể cái (thường xấp xỉ 1:1), phản ánh tiềm năng sinh sản của quần thể.",
+        "2. Cấu trúc nhóm tuổi: Gồm nhóm trước sinh sản (lớn lên), nhóm sinh sản (quyết định số lượng) và nhóm sau sinh sản. Thể hiện qua 3 dạng tháp tuổi: tháp phát triển (đáy rộng), tháp ổn định và tháp suy giảm (đáy hẹp).",
+        "3. Mật độ cá thể: Số lượng cá thể trên một đơn vị diện tích (D = N/S) hoặc thể tích (D = N/V). Mật độ là đặc trưng cơ bản và quan trọng nhất, chi phối mức độ khai thác nguồn sống và mức sinh sản, tử vong."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Biến động",
+      "badgeColor": "cyan",
+      "title": "Biến động số lượng cá thể & Cân bằng quần thể",
+      "content": "Số lượng cá thể không cố định mà biến động theo thời gian:",
+      "bulletPoints": [
+        "Biến động theo chu kì: Diễn ra nhịp nhàng theo mùa vụ (muỗi, ếch tăng mạnh vào mùa mưa ẩm) hoặc chu kì nhiều năm (chuột lemming, cáo Bắc Cực chu kì 3 - 4 năm).",
+        "Biến động không theo chu kì: Xảy ra đột ngột do thiên tai bất thường như bão lũ, hạn hán kéo dài, cháy rừng hoặc dịch bệnh truyền nhiễm.",
+        "Cơ chế tự điều chỉnh: Khi mật độ quá cao, cạnh tranh gay gắt làm tăng tử vong và di cư, giảm sinh sản; ngược lại khi mật độ thấp, nguồn sống dồi dào giúp tăng sinh sản đưa quần thể về mức cân bằng sinh thái."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Tập hợp sinh vật nào sau đây là một quần thể sinh vật thực sự trong tự nhiên?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Rừng cây thông ba lá mọc tự nhiên trên một ngọn đồi ở Đà Lạt",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Các con cá gồm cá rô, cá trê và cá chép cùng nuôi chung trong một ao",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Các con thú gồm voi, hổ và hươu trong một rạp xiếc lưu động",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Các loài rau củ được bày bán trên một sạp rau ngoài chợ",
+        "correct": false
+      }
+    ],
+    "explanation": "Rừng cây thông ba lá trên đồi gồm các cá thể cùng loài (thông ba lá), cùng sống trong một khu vực xác định vào cùng thời điểm và giao phấn tự nhiên với nhau, thỏa mãn đầy đủ định nghĩa quần thể."
+  }
+}

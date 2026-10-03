@@ -1,0 +1,333 @@
+[
+  {
+    "id": "bio-g6-b01-q01",
+    "lessonId": "bio-g6-b01",
+    "sgkBaiSo": 3,
+    "skillIds": [
+      "bio-kinh-lup"
+    ],
+    "difficulty": 1,
+    "prompt": "Kính lúp cầm tay là dụng cụ quang học thường có khả năng phóng đại ảnh của vật thể lên khoảng bao nhiêu lần?",
+    "knowledge": [
+      "bio-kinh-lup"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Từ 3 lần đến 20 lần (3x – 20x)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Từ 100 lần đến 1000 lần (100x – 1000x)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Từ 10 000 lần đến 50 000 lần"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chỉ phóng to đúng 2 lần duy nhất"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Kính lúp là dụng cụ đơn giản, chỉ gồm 1 thấu kính hội tụ nên độ phóng đại vừa phải."
+      },
+      {
+        "level": 2,
+        "text": "Độ phóng đại của kính lúp thông thường nằm trong khoảng từ 3x đến 20x."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định dụng cụ cần kiểm tra",
+        "body": "Đề bài hỏi về độ phóng đại của kính lúp cầm tay dùng trong quan sát khoa học tự nhiên."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Nhắc lại đặc tính quang học của kính lúp",
+        "body": "Kính lúp là một thấu kính hội tụ đơn giản, có khả năng phóng to kích thước ảnh của vật thể từ 3 đến 20 lần."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận phương án đúng",
+        "body": "Phương án chính xác là từ 3 lần đến 20 lần (3x – 20x). Độ phóng đại hàng trăm đến hàng nghìn lần thuộc về kính hiển vi quang học."
+      }
+    ],
+    "finalSolution": "Kính lúp cầm tay có độ phóng đại phổ biến từ 3 lần đến 20 lần (3x – 20x), phù hợp quan sát các chi tiết nhỏ của mẫu vật ngoài tự nhiên.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm lẫn giữa kính lúp (phóng to 3x - 20x) và kính hiển vi (phóng to 40x - 1000x)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b01-q02",
+    "lessonId": "bio-g6-b01",
+    "sgkBaiSo": 3,
+    "skillIds": [
+      "bio-kinh-lup"
+    ],
+    "difficulty": 1,
+    "prompt": "Hãy ghép nối từng bộ phận của kính lúp cầm tay (cột bên trái) với đúng chức năng của nó (cột bên phải):",
+    "knowledge": [
+      "bio-cau-tao-kinh-lup"
+    ],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Mặt kính (Thấu kính hội tụ)",
+          "right": "Khúc xạ ánh sáng để phóng to ảnh của vật thể"
+        },
+        {
+          "left": "Khung kính",
+          "right": "Bảo vệ viền kính tránh nứt vỡ khi va chạm"
+        },
+        {
+          "left": "Tay cầm",
+          "right": "Cầm nắm để điều chỉnh khoảng cách nhìn"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mặt kính làm bằng thủy tinh hoặc nhựa trong suốt, là bộ phận quang học chính tạo ra ảnh phóng to."
+      },
+      {
+        "level": 2,
+        "text": "Khung kính bao bọc ngoài rìa thấu kính, còn tay cầm nối với khung để người dùng cầm khi thao tác."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 3 bộ phận của kính lúp",
+        "body": "Cấu tạo kính lúp gồm: Mặt kính, Khung kính và Tay cầm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Vai trò của từng bộ phận",
+        "body": "Mặt kính là thấu kính hội tụ tạo ảnh phóng to; khung kính giữ và bảo vệ rìa kính; tay cầm giúp thao tác điều chỉnh vị trí dễ dàng."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn thành ghép nối",
+        "body": "Nối Mặt kính với khúc xạ ánh sáng tạo ảnh; Khung kính với bảo vệ viền; Tay cầm với cầm nắm điều chỉnh khoảng cách."
+      }
+    ],
+    "finalSolution": "Mặt kính là thấu kính hội tụ phóng to ảnh; Khung kính bảo vệ mép thấu kính; Tay cầm dùng để cầm nắm và điều chỉnh khoảng cách đến mẫu vật.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Nhầm lẫn chức năng bảo vệ của khung kính với tay cầm điều chỉnh vị trí."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b01-q03",
+    "lessonId": "bio-g6-b01",
+    "sgkBaiSo": 3,
+    "skillIds": [
+      "bio-kinh-lup"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong các mẫu vật sau, trường hợp nào có thể dùng kính lúp để quan sát rõ chi tiết?",
+    "knowledge": [
+      "bio-kinh-lup"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tế bào biểu bì vảy hành tây"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vi khuẩn tả trong giọt nước đọng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Gân của một chiếc lá cây và các rãnh vân tay"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cấu trúc nhân tế bào thực vật"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Kính lúp chỉ phóng to tối đa 20 lần, thích hợp cho các cấu trúc nhỏ nhưng mắt thường vẫn mờ mờ thấy được."
+      },
+      {
+        "level": 2,
+        "text": "Tế bào và vi khuẩn có kích thước micrômét (siêu vi), bắt buộc phải dùng kính hiển vi quang học."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định giới hạn quan sát của kính lúp",
+        "body": "Độ phóng đại của kính lúp từ 3x đến 20x, dùng để quan sát vật thể kích thước từ vài milimét đến centimet."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu kích thước các mẫu vật",
+        "body": "Gân lá và vân tay có thể nhìn rõ qua độ phóng đại vài lần. Tế bào và vi khuẩn kích thước micromet đòi hỏi độ phóng đại từ 100x đến 1000x."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án đúng",
+        "body": "Gân lá cây và dấu vân tay là mẫu vật quan sát hoàn hảo bằng kính lúp."
+      }
+    ],
+    "finalSolution": "Gân của chiếc lá cây và vân tay là những mẫu vật có kích thước milimet phù hợp để quan sát bằng kính lúp. Tế bào và vi khuẩn siêu nhỏ cần quan sát bằng kính hiển vi.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nghĩ rằng kính lúp có thể nhìn thấy được tế bào thực vật hoặc vi khuẩn."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b01-q04",
+    "lessonId": "bio-g6-b01",
+    "sgkBaiSo": 3,
+    "skillIds": [
+      "bio-kinh-lup"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp các thao tác sau theo đúng trình tự khi dùng kính lúp cầm tay quan sát gân một chiếc lá:",
+    "knowledge": [
+      "bio-su-dung-kinh-lup"
+    ],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Tay cầm vào cán kính lúp",
+        "Đặt mặt kính gần sát bề mặt chiếc lá",
+        "Mắt hướng nhìn thẳng vào mặt kính",
+        "Từ từ dịch chuyển kính lúp ra xa lá cho đến khi ảnh gân lá sắc nét nhất"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bắt đầu bằng việc cầm kính, đưa kính lại gần sát mẫu vật trước."
+      },
+      {
+        "level": 2,
+        "text": "Sau khi mắt nhìn vào kính, từ từ nâng kính ra xa để lấy nét."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu bài toán",
+        "body": "Sắp xếp quy trình thao tác quan sát mẫu vật bằng kính lúp cầm tay."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy trình thực tế trong SGK",
+        "body": "1. Cầm cán kính → 2. Đặt mặt kính gần sát vật mẫu → 3. Hướng mắt nhìn vào kính → 4. Từ từ di chuyển kính ra xa để lấy nét."
+      },
+      {
+        "kind": "answer",
+        "title": "Thứ tự chính xác",
+        "body": "Bắt đầu từ cầm cán kính đến đặt sát lá, nhìn vào kính và cuối cùng dịch kính ra xa để đạt độ phóng đại nét nhất."
+      }
+    ],
+    "finalSolution": "Trình tự chuẩn: Cầm cán kính → Đặt sát bề mặt lá → Nhìn mắt vào kính → Từ từ dịch chuyển kính ra xa cho đến khi nhìn thấy gân lá rõ nét nhất.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Đưa kính lúp ra thật xa rồi mới kéo lại gần hoặc lắc qua lại làm mắt bị mỏi."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b01-q05",
+    "lessonId": "bio-g6-b01",
+    "sgkBaiSo": 3,
+    "skillIds": [
+      "bio-kinh-lup"
+    ],
+    "difficulty": 2,
+    "prompt": "Đánh giá tính Đúng hoặc Sai cho mỗi phát biểu sau đây về việc sử dụng và bảo quản kính lúp:",
+    "knowledge": [
+      "bio-bao-quan-kinh-lup",
+      "bio-su-dung-kinh-lup"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Chỉ nên dùng khăn mềm sạch hoặc giấy chuyên dụng để lau chùi bề mặt thấu kính.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Dùng ngón tay chạm trực tiếp lên thấu kính để kiểm tra độ trơn láng của mặt kính.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Khi không sử dụng, nên cất kính lúp vào bao hoặc hộp đựng và để ở nơi khô ráo.",
+          "correct": true
+        },
+        {
+          "id": "st-4",
+          "text": "Càng đưa kính lúp ra xa vật mẫu hàng mét thì ảnh phóng đại càng to và càng rõ nét.",
+          "correct": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Dầu và mồ hôi từ ngón tay sẽ làm mờ kính và khó tẩy rửa."
+      },
+      {
+        "level": 2,
+        "text": "Nếu đưa kính ra ngoài tiêu cự của thấu kính, ảnh sẽ bị nhòe và lộn ngược."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Đánh giá từng nhận định dựa trên nguyên tắc sử dụng và bảo quản kính lúp."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra từng phát biểu",
+        "body": "1. Khăn mềm lau kính: Đúng. 2. Dùng tay sờ vào mặt kính: Sai (gây bẩn và xước). 3. Cất vào bao hộp khô ráo: Đúng. 4. Đưa ra xa hàng mét: Sai (ảnh bị nhòe mất nét)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Phát biểu 1: Đúng, Phát biểu 2: Sai, Phát biểu 3: Đúng, Phát biểu 4: Sai."
+      }
+    ],
+    "finalSolution": "Phát biểu 1 và 3 đúng. Phát biểu 2 sai (không chạm tay vào thấu kính). Phát biểu 4 sai (khoảng cách quan sát phải trong tiêu cự của kính lúp).",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng đưa kính càng xa thì ảnh càng phóng to vô hạn mà không biết thấu kính có khoảng tiêu cự giới hạn."
+      }
+    ]
+  }
+]

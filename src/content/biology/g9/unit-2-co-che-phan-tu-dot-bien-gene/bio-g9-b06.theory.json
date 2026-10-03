@@ -1,0 +1,77 @@
+{
+  "lessonId": "bio-g9-b06",
+  "nodeId": "bio-g9-b06-theory",
+  "title": "Lý thuyết: Đột biến gene",
+  "subtitle": "Bài 41 SGK KHTN 9 Kết nối tri thức: Khái niệm, 3 dạng đột biến điểm, nguyên nhân, hậu quả và ý nghĩa của đột biến gene",
+  "sgkBaiSo": 41,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Khái niệm cốt lõi",
+      "badgeColor": "purple",
+      "title": "Khái niệm và các dạng đột biến điểm",
+      "content": "Đột biến gene là những biến đổi trong cấu trúc của gene, liên quan đến một hoặc một số cặp nucleotide trong phân tử DNA:",
+      "bulletPoints": [
+        "Đột biến điểm: Là dạng đột biến gen chỉ liên quan đến đúng một cặp nucleotide trong DNA.",
+        "1. Thay thế một cặp nucleotide: Thay cặp nu này bằng cặp nu khác (ví dụ thay A-T bằng G-C). Tổng số nucleotide và chiều dài của gen không đổi; số liên kết hydrogen có thể tăng 1, giảm 1 hoặc không đổi.",
+        "2. Thêm một cặp nucleotide: Chèn thêm một cặp nucleotide vào chuỗi xoắn kép. Làm tăng chiều dài của gen thêm 3,4 Å và tăng tổng số nucleotide thêm 2.",
+        "3. Mất một cặp nucleotide: Mất đi một cặp nucleotide trong chuỗi xoắn kép. Làm giảm chiều dài của gen đi 3,4 Å và giảm tổng số nucleotide đi 2.",
+        "Thể đột biến: Những cá thể mang gene đột biến đã biểu hiện ra kiểu hình của cơ thể (ví dụ: người mang gen bạch tạng đồng hợp lặn aa biểu hiện tóc trắng, da trắng)."
+      ],
+      "callout": "Đột biến gen xảy ra ở cấp độ phân tử; khác hoàn toàn với đột biến nhiễm sắc thể xảy ra ở cấp độ tế bào!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Hậu quả sinh học",
+      "badgeColor": "amber",
+      "title": "Tác động của đột biến gene đến cấu trúc Protein",
+      "content": "Mức độ ảnh hưởng của các dạng đột biến điểm đến cấu trúc và chức năng của phân tử protein:",
+      "bulletPoints": [
+        "Đột biến thay thế một cặp nu: Chỉ làm thay đổi tối đa 1 amino acid trong chuỗi polypeptide, hoặc thậm chí không làm thay đổi amino acid nào (do tính thoái hóa của mã di truyền - gọi là đột biến câm/đồng nghĩa).",
+        "Đột biến thêm hoặc mất một cặp nu: Gây ra hiện tượng dịch khung đọc mã di truyền (frameshift mutation). Toàn bộ các bộ ba từ vị trí đột biến cho đến hết gen bị đọc sai, làm biến đổi toàn bộ trình tự amino acid phía sau, thường dẫn tới mất hoàn toàn chức năng của protein.",
+        "Bệnh thiếu máu hồng cầu hình liềm (HbS): Do đột biến thay thế một cặp nucleotide A-T thành T-A ở codon số 6 của chuỗi beta-globin (GAG thành GUG), làm thay thế amino acid glutamic acid bằng valine. Hồng cầu bị biến dạng thành hình lưỡi liềm, dễ vỡ gây tắc nghẽn mao mạch."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Nguyên nhân & Ý nghĩa",
+      "badgeColor": "emerald",
+      "title": "Nguyên nhân phát sinh và vai trò của đột biến gene",
+      "content": "Các nhân tố kích thích đột biến và giá trị của đột biến gen trong tự nhiên và nông nghiệp:",
+      "bulletPoints": [
+        "Nguyên nhân bên ngoài: Tác nhân vật lí (tia tử ngoại UV, tia X, tia phóng xạ, sốc nhiệt); tác nhân hóa học (chất độc màu da cam Dioxin, chất 5-bromouracil, khói thuốc lá); tác nhân sinh học (một số loại virus).",
+        "Nguyên nhân bên trong: Rối loạn các quá trình sinh lí, hóa sinh nội bào trong quá trình nhân đôi DNA (sai sót lắp ráp ngẫu nhiên của enzyme).",
+        "Ý nghĩa đối với tiến hóa: Tạo ra các allele mới, là nguồn nguyên liệu sơ cấp dồi dào cung cấp cho quá trình chọn lọc tự nhiên.",
+        "Ý nghĩa đối với chọn giống: Con người chủ động gây đột biến nhân tạo bằng tia phóng xạ hoặc hóa chất để tạo ra các giống cây trồng, vi sinh vật đột biến có lợi (như giống lúa chịu mặn, nấm men sản xuất kháng sinh năng suất cao)."
+      ],
+      "callout": "Đa số đột biến gen tự nhiên có hại hoặc trung tính, chỉ một số ít có lợi trong điều kiện sống nhất định; nhưng chúng là cội nguồn của mọi sự tiến hóa di truyền!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Dạng đột biến điểm nào sau đây gây ra hiện tượng 'dịch khung đọc mã di truyền', làm thay đổi toàn bộ trình tự amino acid từ vị trí đột biến về sau trong chuỗi polypeptide?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Đột biến thêm hoặc mất một cặp nucleotide",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Đột biến thay thế cặp A-T bằng cặp G-C",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Đột biến thay thế cặp G-C bằng cặp C-G",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Đột biến thay thế nucleotide ở bộ ba kết thúc",
+        "correct": false
+      }
+    ],
+    "explanation": "Đột biến thêm hoặc mất một cặp nucleotide làm xê dịch trật tự đọc các bộ ba kể từ điểm xảy ra đột biến đến cuối gen (hiện tượng dịch khung), khiến toàn bộ các amino acid từ vị trí đó bị thay đổi. Đột biến thay thế chỉ ảnh hưởng tối đa đến 1 amino acid tương ứng."
+  }
+}

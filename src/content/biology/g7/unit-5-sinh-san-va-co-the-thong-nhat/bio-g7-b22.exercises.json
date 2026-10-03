@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g7-b22-q01",
+    "lessonId": "bio-g7-b22",
+    "sgkBaiSo": 42,
+    "skillIds": ["bio-co-the-thong-nhat"],
+    "difficulty": 1,
+    "prompt": "Mối quan hệ tương hỗ giữa rễ, thân và lá trong cơ thể thực vật có hoa được thể hiện như thế nào?",
+    "knowledge": ["kb-bio-g7-co-the-thong-nhat", "kb-bio-g7-dong-mach-go-xylem", "kb-bio-g7-dong-mach-ray-phloem"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Rễ hút nước, khoáng đưa qua thân lên lá quang hợp; Lá tổng hợp chất hữu cơ vận chuyển qua thân nuôi rễ và toàn bộ cơ thể" },
+        { "id": "opt-b", "label": "Rễ và lá hoạt động hoàn toàn độc lập, không có sự liên hệ vật chất với nhau" },
+        { "id": "opt-c", "label": "Thân cây tự tạo ra thức ăn hữu cơ nuôi rễ và lá mà không cần quang hợp" },
+        { "id": "opt-d", "label": "Lá cây chỉ làm nhiệm vụ thoát nước làm rễ bị thiếu nước" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Rễ cung cấp nước và ion khoáng cho lá; lá tạo ra đường và tinh bột nuôi rễ." },
+      { "level": 2, "text": "Thân đóng vai trò là cầu nối vận chuyển hai chiều giữa rễ và lá qua mạch gỗ và mạch rây." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích mối liên hệ sinh lý", "body": "Khảo sát mối quan hệ thống nhất giữa các cơ quan sinh dưỡng ở thực vật." },
+      { "kind": "knowledge", "title": "Sự thống nhất chức năng ở thực vật", "body": "Rễ hút nước/khoáng chuyển lên lá; lá quang hợp tạo chất hữu cơ dẫn xuống nuôi rễ và các bộ phận khác." },
+      { "kind": "answer", "title": "Kết luận", "body": "Rễ hút nước, khoáng đưa qua thân lên lá quang hợp; Lá tổng hợp chất hữu cơ vận chuyển qua thân nuôi rễ và toàn bộ cơ thể." }
+    ],
+    "finalSolution": "Rễ, thân, lá thống nhất hữu cơ: rễ cấp nước khoáng cho lá quang hợp, lá cấp chất hữu cơ nuôi rễ và toàn cây.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng các bộ phận của cây hoạt động riêng rẽ không phụ thuộc vào nhau." }
+    ]
+  },
+  {
+    "id": "bio-g7-b22-q02",
+    "lessonId": "bio-g7-b22",
+    "sgkBaiSo": 42,
+    "skillIds": ["bio-co-the-thong-nhat"],
+    "difficulty": 2,
+    "prompt": "Tại sao khi một cây trồng bị ngập úng nước lâu ngày dẫn đến thối rễ thì sau một thời gian toàn bộ lá cây trên ngọn cũng bị vàng úa và héo rụng?",
+    "knowledge": ["kb-bio-g7-co-the-thong-nhat", "kb-bio-g7-dong-mach-go-xylem"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Vì rễ bị thối không hút được nước và khoáng đưa lên thân, khiến lá bị thiếu nước và khoáng chất nên bị héo úa" },
+        { "id": "opt-b", "label": "Vì lá cây quá thừa oxy từ đất ngập úng" },
+        { "id": "opt-c", "label": "Vì nước ngập úng hút hết ánh sáng mặt trời của lá" },
+        { "id": "opt-d", "label": "Vì lá cây bị biến thành cơ quan sinh sản ngầm dưới nước" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Rễ là nguồn cung cấp nước duy nhất cho toàn bộ thân và lá trên cao." },
+      { "level": 2, "text": "Khi rễ bị thối hỏng, dòng vận chuyển mạch gỗ bị ngưng trệ hoàn toàn." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Hiểu tính toàn vẹn của cơ thể", "body": "Giải thích tác động lan truyền khi một cơ quan trong cây bị tổn thương nặng nề." },
+      { "kind": "knowledge", "title": "Hệ quả của thối rễ", "body": "Ngập úng làm lông hút chết, rễ thối không hút được nước cung cấp cho lá; lá mất nước và dinh dưỡng dẫn đến héo úa và chết." },
+      { "kind": "answer", "title": "Kết luận", "body": "Vì rễ bị thối không hút được nước và khoáng đưa lên thân, khiến lá bị thiếu nước và khoáng chất nên bị héo úa." }
+    ],
+    "finalSolution": "Cây là một thể thống nhất, khi rễ bị thối không cung cấp được nước thì thân lá trên ngọn sẽ bị héo úa.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng cây ngập nước thì lá sẽ hút nước trực tiếp từ không khí để không bị héo." }
+    ]
+  },
+  {
+    "id": "bio-g7-b22-q03",
+    "lessonId": "bio-g7-b22",
+    "sgkBaiSo": 42,
+    "skillIds": ["bio-co-the-thong-nhat"],
+    "difficulty": 1,
+    "prompt": "Hệ cơ quan nào đóng vai trò TRUNG TÂM KẾT NỐI vận chuyển vật chất giữa các hệ tiêu hóa, hô hấp và bài tiết với mọi tế bào trong cơ thể người?",
+    "knowledge": ["kb-bio-g7-co-the-thong-nhat", "kb-bio-g7-tuan-hoan-van-chuyen"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Hệ tuần hoàn (tim và hệ thống mạch máu)" },
+        { "id": "opt-b", "label": "Hệ xương và hệ cơ" },
+        { "id": "opt-c", "label": "Hệ bài tiết nước tiểu" },
+        { "id": "opt-d", "label": "Hệ sinh dục" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Hệ cơ quan này chứa chất dịch màu đỏ lưu thông liên tục khắp cơ thể." },
+      { "level": 2, "text": "Máu trong hệ tuần hoàn vận chuyển oxy từ phổi, thức ăn từ ruột và mang chất thải đến thận." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định hệ cơ quan kết nối trung tâm", "body": "Tìm hệ cơ quan đảm nhận chức năng giao thông huyết mạch của cơ thể động vật." },
+      { "kind": "knowledge", "title": "Vai trò hệ tuần hoàn", "body": "Hệ tuần hoàn vận chuyển O2, CO2, dinh dưỡng, hormone và chất thải, kết nối tất cả các cơ quan và tế bào thành một thể thống nhất." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hệ tuần hoàn (tim và hệ thống mạch máu)." }
+    ],
+    "finalSolution": "Hệ tuần hoàn là mạng lưới trung tâm kết nối và vận chuyển vật chất giữa tất cả các hệ cơ quan.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm hệ tuần hoàn với hệ vận động (xương cơ)." }
+    ]
+  },
+  {
+    "id": "bio-g7-b22-q04",
+    "lessonId": "bio-g7-b22",
+    "sgkBaiSo": 42,
+    "skillIds": ["bio-co-the-thong-nhat"],
+    "difficulty": 2,
+    "prompt": "Khi bạn tham gia hoạt động chạy bền thể dục, các hệ cơ quan phối hợp nhịp nhàng với nhau như thế nào?",
+    "knowledge": ["kb-bio-g7-co-the-thong-nhat", "kb-bio-g7-tuan-hoan-van-chuyen"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Hệ cơ vận động co duỗi mạnh → Hệ hô hấp thở nhanh sâu lấy O2 → Hệ tuần hoàn đập nhanh bơm máu → Da bài tiết mồ hôi làm mát" },
+        { "id": "opt-b", "label": "Hệ hô hấp ngừng hoạt động hoàn toàn để tiết kiệm khí oxy" },
+        { "id": "opt-c", "label": "Tim đập chậm lại còn huyết áp tụt xuống bằng 0" },
+        { "id": "opt-d", "label": "Hệ bài tiết giữ lại toàn bộ nhiệt độ làm cơ thể nóng bốc cháy" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Khi chạy, bạn thấy thở gấp hơn, tim đập thình thịch và mồ hôi toát ra nhiều." },
+      { "level": 2, "text": "Đó là sự phối hợp phản xạ đồng thời giữa hệ vận động, hệ hô hấp, hệ tuần hoàn và hệ bài tiết dưới sự chỉ huy của thần kinh." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích hoạt động sinh lý đồng bộ", "body": "Mô tả chuỗi phối hợp giữa các hệ cơ quan khi cơ thể vận động với cường độ cao." },
+      { "kind": "knowledge", "title": "Sự thống nhất hoạt động sống", "body": "Cơ bắp vận động cần nhiều ATP → hô hấp và tuần hoàn tăng tốc cung cấp O2 và chuyển hóa → bài tiết toát mồ hôi để tỏa nhiệt điều hòa thân nhiệt." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hệ cơ vận động co duỗi mạnh → Hệ hô hấp thở nhanh sâu lấy O2 → Hệ tuần hoàn đập nhanh bơm máu → Da bài tiết mồ hôi làm mát." }
+    ],
+    "finalSolution": "Khi chạy bền, hệ cơ, hô hấp, tuần hoàn và bài tiết phối hợp đồng bộ để đáp ứng nhu cầu năng lượng và điều hòa thân nhiệt.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng chỉ có đôi chân (hệ cơ xương) hoạt động còn tim và phổi không liên quan." }
+    ]
+  },
+  {
+    "id": "bio-g7-b22-q05",
+    "lessonId": "bio-g7-b22",
+    "sgkBaiSo": 42,
+    "skillIds": ["bio-co-the-thong-nhat"],
+    "difficulty": 1,
+    "prompt": "Hệ thống nào trong cơ thể động vật chịu trách nhiệm điều khiển, phối hợp và giám sát hoạt động của tất cả các cơ quan, hệ cơ quan thành một khối thống nhất?",
+    "knowledge": ["kb-bio-g7-co-the-thong-nhat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Hệ thần kinh và hệ nội tiết" },
+        { "id": "opt-b", "label": "Hệ tiêu hóa và hệ bài tiết" },
+        { "id": "opt-c", "label": "Hệ hô hấp và hệ sinh dục" },
+        { "id": "opt-d", "label": "Chỉ duy nhất hệ bài tiết nước tiểu" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Não bộ, tủy sống và các tuyến nội tiết tiết hormone điều khiển các hoạt động cơ thể." },
+      { "level": 2, "text": "Hệ thần kinh và nội tiết là trung tâm chỉ huy tiếp nhận thông tin và điều hòa toàn bộ cơ thể." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định cơ quan chỉ huy điều phối", "body": "Tìm hệ cơ quan giữ vai trò chỉ huy, tích hợp và kiểm soát hoạt động của toàn cơ thể." },
+      { "kind": "knowledge", "title": "Vai trò của hệ thần kinh và nội tiết", "body": "Hệ thần kinh (qua xung thần kinh) và hệ nội tiết (qua các hormone) phối hợp điều hòa mọi quá trình sinh lý nội môi." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hệ thần kinh và hệ nội tiết." }
+    ],
+    "finalSolution": "Hệ thần kinh và hệ nội tiết giữ vai trò nhạc trưởng điều khiển và phối hợp hoạt động của toàn bộ cơ thể.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Quên mất vai trò của hệ nội tiết trong việc điều hòa sinh hóa dài hạn." }
+    ]
+  },
+  {
+    "id": "bio-g7-b22-q06",
+    "lessonId": "bio-g7-b22",
+    "sgkBaiSo": 42,
+    "skillIds": ["bio-co-the-thong-nhat"],
+    "difficulty": 2,
+    "prompt": "Luận điểm 'Cơ thể sinh vật là một hệ thống mở' có nghĩa chính xác là gì?",
+    "knowledge": ["kb-bio-g7-co-the-thong-nhat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Cơ thể luôn luôn trao đổi vật chất và năng lượng không ngừng với môi trường xung quanh để tồn tại và phát triển" },
+        { "id": "opt-b", "label": "Cơ thể hoàn toàn không có lớp da bảo vệ bên ngoài" },
+        { "id": "opt-c", "label": "Tất cả các tế bào trong cơ thể đều tiếp xúc trực tiếp với không khí" },
+        { "id": "opt-d", "label": "Cơ thể có thể tự tách rời thành từng mảnh riêng lẻ bất cứ lúc nào" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Sinh vật có thể tồn tại nếu bị cô lập hoàn toàn không lấy thức ăn, nước và oxy từ môi trường ngoài không?" },
+      { "level": 2, "text": "Hệ thống mở nghĩa là luôn có dòng vật chất và năng lượng đi vào và đi ra giữa cơ thể và môi trường." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Hiểu bản chất hệ thống sống", "body": "Giải thích khái niệm hệ thống mở trong khoa học sự sống." },
+      { "kind": "knowledge", "title": "Khái niệm hệ thống mở", "body": "Sinh vật là hệ thống mở vì liên tục thu nhận vật chất, năng lượng từ môi trường và thải các sản phẩm chuyển hóa ra môi trường." },
+      { "kind": "answer", "title": "Kết luận", "body": "Cơ thể luôn luôn trao đổi vật chất và năng lượng không ngừng với môi trường xung quanh để tồn tại và phát triển." }
+    ],
+    "finalSolution": "Sinh vật là hệ thống mở vì luôn thực hiện trao đổi vật chất và năng lượng với môi trường sống.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Hiểu theo nghĩa đen hình thái là cơ thể có vết thương hở." }
+    ]
+  },
+  {
+    "id": "bio-g7-b22-q07",
+    "lessonId": "bio-g7-b22",
+    "sgkBaiSo": 42,
+    "skillIds": ["bio-co-the-thong-nhat"],
+    "difficulty": 2,
+    "prompt": "Khi nhiệt độ môi trường ngoài trời tăng lên rất cao vào buổi trưa hè gay gắt, cơ thể người phản ứng điều hòa để bảo vệ tính toàn vẹn của sự sống như thế nào?",
+    "knowledge": ["kb-bio-g7-co-the-thong-nhat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Mao mạch dưới da dãn ra và các tuyến mồ hôi tăng cường tiết mồ hôi; sự bay hơi nước giúp làm mát và tỏa nhiệt cơ thể" },
+        { "id": "opt-b", "label": "Các mạch máu co thắt tối đa và ngừng toát mồ hôi để giữ nhiệt độ tăng cao" },
+        { "id": "opt-c", "label": "Hệ thần kinh làm đông cứng tế bào chất để không bị nóng" },
+        { "id": "opt-d", "label": "Cơ thể tự động ngừng hô hấp để giảm sinh nhiệt" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Mùa hè da thường đỏ lên (giãn mạch) và toát nhiều mồ hôi." },
+      { "level": 2, "text": "Nước mồ hôi bay hơi sẽ thu nhiệt lượng từ bề mặt cơ thể, giúp hạ nhiệt độ cơ thể về mức ổn định 37°C." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích phản xạ điều hòa thân nhiệt", "body": "Cơ chế duy trì cân bằng nội môi khi nhiệt độ môi trường tăng cao." },
+      { "kind": "knowledge", "title": "Cơ chế chống nóng ở người", "body": "Giãn mạch máu dưới da giúp tỏa nhiệt và tăng tiết mồ hôi; sự bay hơi nước của mồ hôi giúp làm mát bề mặt cơ thể." },
+      { "kind": "answer", "title": "Kết luận", "body": "Mao mạch dưới da dãn ra và các tuyến mồ hôi tăng cường tiết mồ hôi; sự bay hơi nước giúp làm mát và tỏa nhiệt cơ thể." }
+    ],
+    "finalSolution": "Giãn mao mạch và tiết mồ hôi giúp tỏa nhiệt, duy trì thân nhiệt ổn định 37°C trong mùa nắng nóng.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng cơ thể chống nóng bằng cách co mạch (co mạch là phản xạ chống lạnh mùa đông)." }
+    ]
+  },
+  {
+    "id": "bio-g7-b22-q08",
+    "lessonId": "bio-g7-b22",
+    "sgkBaiSo": 42,
+    "skillIds": ["bio-co-the-thong-nhat"],
+    "difficulty": 1,
+    "prompt": "Tổng kết lại toàn bộ chương trình Sinh học lớp 7, cấp độ tổ chức sống cơ bản nào là đơn vị cấu trúc và chức năng nền tảng cấu thành nên mọi mô, cơ quan và cơ thể sinh vật?",
+    "knowledge": ["kb-bio-g7-co-the-thong-nhat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tế bào (Cell)" },
+        { "id": "opt-b", "label": "Hệ cơ quan" },
+        { "id": "opt-c", "label": "Quần xã sinh vật" },
+        { "id": "opt-d", "label": "Các phân tử khoáng chất đơn giản" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Mọi hoạt động sống (trao đổi chất, cảm ứng, sinh trưởng, sinh sản) suy cho cùng đều diễn ra ở cấp độ này." },
+      { "level": 2, "text": "Tế bào là đơn vị cơ bản cấu tạo nên mọi sinh vật từ vi khuẩn, nấm, thực vật đến động vật và con người." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Khái quát học thuyết tế bào", "body": "Xác định đơn vị cơ bản cấu thành nên sự sống toàn vẹn." },
+      { "kind": "knowledge", "title": "Đơn vị cấu trúc và chức năng của sự sống", "body": "Tế bào là đơn vị cơ sở của sự sống; mọi sinh vật đa bào đều hình thành từ sự phối hợp thống nhất của hàng tỷ tế bào." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tế bào (Cell)." }
+    ],
+    "finalSolution": "Tế bào là đơn vị cấu trúc và chức năng cơ bản của mọi cơ thể sinh vật sống.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng cơ quan là đơn vị cơ bản nhỏ nhất của sự sống." }
+    ]
+  }
+]

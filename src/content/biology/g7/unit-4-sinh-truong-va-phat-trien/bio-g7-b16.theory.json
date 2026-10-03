@@ -1,0 +1,72 @@
+{
+  "lessonId": "bio-g7-b16",
+  "nodeId": "bio-g7-b16-theory",
+  "title": "Lý thuyết: Khái quát về sinh trưởng và phát triển ở sinh vật",
+  "subtitle": "Bài 36 SGK KHTN 7 Kết nối tri thức: Phân biệt sinh trưởng vs phát triển, các loại mô phân sinh và các kiểu biến thái ở động vật",
+  "sgkBaiSo": 36,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Khái niệm cốt lõi",
+      "badgeColor": "cyan",
+      "title": "Phân biệt Sinh trưởng và Phát triển",
+      "content": "Sinh trưởng và phát triển là hai quá trình liên quan mật thiết và xen kẽ nhau trong suốt vòng đời sinh vật:",
+      "bulletPoints": [
+        "Sinh trưởng (Growth): Là sự tăng lên về kích thước và khối lượng của cơ thể do sự gia tăng số lượng tế bào (qua nguyên phân) và sự lớn lên của từng tế bào. Ví dụ: Thân cây ngô cao thêm 20 cm, gà con từ 50 g tăng lên 1,5 kg.",
+        "Phát triển (Development): Là quá trình biến đổi chất lượng bao gồm sinh trưởng, sự phân hóa tế bào để phát sinh các cơ quan mới và hình thành chức năng mới trong vòng đời. Ví dụ: Hạt đậu nảy mầm ra lá mầm, cây cam đâm chồi trổ nụ nở hoa kết quả, nòng nọc rụng đuôi mọc 4 chân thành ếch.",
+        "Mối quan hệ: Sinh trưởng tích lũy vật chất tạo tiền đề cho phát triển; ngược lại, sự phân hóa cơ quan mới làm thay đổi tốc độ và chất lượng sinh trưởng."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Mô phân sinh thực vật",
+      "badgeColor": "emerald",
+      "title": "Mô phân sinh đỉnh và Mô phân sinh bên",
+      "content": "Mô phân sinh là nhóm tế bào thực vật chưa phân hóa, duy trì khả năng phân chia nguyên phân liên tục:",
+      "bulletPoints": [
+        "Mô phân sinh đỉnh: Phân bố ở chồi ngọn, chồi nách và chóp rễ. Sự phân chia ở đây giúp thân cây vươn cao, cành dài ra và rễ cắm sâu vào lòng đất (sinh trưởng sơ cấp).",
+        "Mô phân sinh bên: Phân bố thành các lớp hình trụ dọc thân và rễ (chủ yếu ở cây hai lá mầm thân gỗ). Gồm tầng sinh vỏ và tầng sinh trụ, giúp thân và rễ to ra về đường kính bề ngang (sinh trưởng thứ cấp), hình thành các vòng gỗ hàng năm.",
+        "Mô phân sinh lóng: Có ở gốc các gióng của cây Một lá mầm (như tre, mía, ngô, lúa) giúp cây vươn dài nhanh chóng."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Biến thái động vật",
+      "badgeColor": "amber",
+      "title": "Các kiểu phát triển ở động vật",
+      "content": "Dựa vào sự thay đổi hình thái qua các giai đoạn vòng đời, động vật chia làm 3 kiểu phát triển:",
+      "bulletPoints": [
+        "Phát triển qua biến thái hoàn toàn: Con non (ấu trùng) có hình thái, cấu tạo và sinh lý khác biệt hoàn toàn với con trưởng thành; trải qua giai đoạn nhộng (ở côn trùng) hoặc biến đổi hình thái lớn. Đại diện: bướm, ruồi, muỗi, ong, bọ cánh cứng, ếch nhái.",
+        "Phát triển qua biến thái không hoàn toàn: Con non có hình thái gần giống con lớn nhưng kích thước nhỏ hơn và cơ quan sinh sản, cánh chưa hoàn thiện; qua nhiều lần lột xác sẽ thành con trưởng thành mà không qua giai đoạn nhộng. Đại diện: châu chấu, gián, dế mèn, cào cào.",
+        "Phát triển không qua biến thái: Con non sinh ra đã có hình thái, cấu tạo giải phẫu tương tự như cá thể trưởng thành. Đại diện: động vật có vú (chó, mèo, người), chim, bò sát, cá."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Hiện tượng nào sau đây là biểu hiện của quá trình PHÁT TRIỂN (chứ không đơn thuần là sinh trưởng)?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Cây cà chua đâm chồi trổ nụ và nở ra những bông hoa vàng đầu tiên",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Con lợn tăng trọng lượng từ 15 kg lên 50 kg sau 2 tháng nuôi",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Thân cây bạch đàn cao thêm 1,5 mét sau mùa mưa",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Đường kính gốc cây xà cừ phình to thêm 5 cm",
+        "correct": false
+      }
+    ],
+    "explanation": "Cây trổ nụ nở hoa là sự phân hóa tế bào phát sinh cơ quan sinh sản mới (hoa) và chức năng sinh sản mới, đây là biểu hiện biến đổi định tính đặc trưng của quá trình phát triển."
+  }
+}

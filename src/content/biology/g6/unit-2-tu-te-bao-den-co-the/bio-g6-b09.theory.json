@@ -1,0 +1,83 @@
+{
+  "lessonId": "bio-g6-b09",
+  "nodeId": "bio-g6-b09-theory",
+  "title": "Lý thuyết: Thực hành quan sát và mô tả cơ thể đơn bào, cơ thể đa bào",
+  "subtitle": "Bài 24 SGK KHTN 6 Kết nối tri thức: Kỹ thuật soi trùng roi, trùng giày trong nước rơm và xác định cơ quan trên mô hình",
+  "sgkBaiSo": 24,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Mục tiêu",
+      "badgeColor": "emerald",
+      "title": "Mục tiêu bài thực hành cơ thể sống",
+      "content": "Kết hợp kỹ năng sử dụng kính hiển vi quang học và mô hình trực quan:",
+      "bulletPoints": [
+        "Biết cách tạo mẫu nước rơm và làm tiêu bản giọt nước quan sát sinh vật đơn bào bơi sống động.",
+        "Nhận biết được hình dạng trùng roi xanh và trùng giày dưới kính hiển vi.",
+        "Xác định được các cơ quan chính trên mô hình hoặc tranh ảnh cây xanh có hoa và cơ thể người."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Kỹ thuật thực hành",
+      "badgeColor": "amber",
+      "title": "Kỹ thuật quan sát sinh vật đơn bào trong nước rơm",
+      "content": "Các bước thao tác chuẩn phòng thí nghiệm:",
+      "bulletPoints": [
+        "Bước 1: Dùng ống hút nhỏ giọt lấy một giọt nước ở lớp váng bề mặt bình ngâm rơm rạ cỏ khô (nơi có nhiều oxygen nên trùng giày, trùng roi tập trung nhiều nhất).",
+        "Bước 2: Nhỏ giọt nước lên lam kính sạch. Thêm vài sợi bông gòn tơi xốp vào giọt nước trước khi đậy lamen; các sợi bông đan xen tạo thành mạng lưới cản trở tốc độ bơi rất nhanh của trùng giày, giúp dễ dàng theo dõi.",
+        "Bước 3: Đậy lamen nghiêng 45°, thấm nước tràn rồi đưa lên bàn kính hiển vi quan sát từ vật kính 10x đến 40x."
+      ],
+      "callout": "Mẹo phòng thí nghiệm: Đặt vài sợi bông gòn để kìm hãm tốc độ bơi của trùng giày!"
+    },
+    {
+      "id": "card-3",
+      "badge": "Nhận diện đơn bào",
+      "badgeColor": "cyan",
+      "title": "Đặc điểm hình thái trùng roi và trùng giày",
+      "content": "Phân biệt 2 sinh vật đơn bào phổ biến nhất trong nước rơm ngâm:",
+      "bulletPoints": [
+        "Trùng giày (Paramecium): Cơ thể hình giống đế giày bơi lội thoăn thoắt nhờ hàng nghìn lông bơi ngắn bao quanh mép cơ thể; có rãnh miệng dẫn thức ăn và không bào co bóp hình hoa thị.",
+        "Trùng roi xanh (Euglena): Cơ thể hình thoi thuôn dài, đầu có một roi bơi dài chuyển động xoáy nước; chứa nhiều hạt diệp lục màu xanh giúp quang hợp và một điểm mắt màu đỏ tươi cảm nhận ánh sáng."
+      ]
+    },
+    {
+      "id": "card-4",
+      "badge": "Mô hình đa bào",
+      "badgeColor": "purple",
+      "title": "Xác định cơ quan trên mô hình cơ thể đa bào",
+      "content": "Nhận biết vị trí giải phẫu cơ quan ở thực vật và cơ thể người:",
+      "bulletPoints": [
+        "Cơ thể cây xanh: Rễ (dưới đất hút nước), Thân (trục nâng đỡ mang cành lá), Lá (tán lá xanh quang hợp), Hoa, Quả và Hạt.",
+        "Cơ thể người: Tim (lệch trái khoang ngực), 2 lá phổi (hai bên lồng ngực), Dạ dày (khoang bụng trên bên trái), Gan (khoang bụng trên bên phải), Ruột non và ruột già (khoang bụng dưới)."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi làm tiêu bản giọt nước ngâm rơm để quan sát trùng giày, tại sao cần cho thêm vài sợi bông gòn vào giọt nước trước khi đậy lamen?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Để các sợi bông đan lưới cản trở tốc độ bơi nhanh của trùng giày giúp dễ quan sát",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Để nhuộm màu trùng giày thành màu trắng tinh",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Để cung cấp thức ăn cho trùng giày sinh sản",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Để hút cạn kiệt toàn bộ nước trên lam kính",
+        "correct": false
+      }
+    ],
+    "explanation": "Trùng giày bơi rất nhanh nhờ hệ thống lông bơi bao quanh cơ thể. Các sợi bông gòn tạo ra các chướng ngại vật cản bớt tốc độ bơi của chúng, giúp người quan sát không bị mất dấu mẫu vật."
+  }
+}

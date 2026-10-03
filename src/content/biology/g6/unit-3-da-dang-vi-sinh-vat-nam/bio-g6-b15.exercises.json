@@ -1,0 +1,297 @@
+[
+  {
+    "id": "bio-g6-b15-q01",
+    "lessonId": "bio-g6-b15",
+    "sgkBaiSo": 30,
+    "skillIds": ["bio-nguyen-sinh-vat"],
+    "difficulty": 1,
+    "prompt": "Ghép nối từng loài nguyên sinh vật (cột bên trái) với đúng đặc điểm sinh học hoặc bệnh tật tương ứng của nó (cột bên phải):",
+    "knowledge": ["bio-nguyen-sinh-vat"],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Trùng roi xanh",
+          "right": "Có hạt diệp lục giúp quang hợp và điểm mắt đỏ cảm nhận ánh sáng"
+        },
+        {
+          "left": "Trùng biến hình",
+          "right": "Hình dạng luôn thay đổi, di chuyển và bắt mồi bằng chân giả"
+        },
+        {
+          "left": "Trùng sốt rét",
+          "right": "Ký sinh trong tế bào hồng cầu người gây sốt rét run từng cơn"
+        },
+        {
+          "left": "Trùng kiết lị",
+          "right": "Ký sinh ở thành ruột già gây đau bụng, mót rặn, đi ngoài phân lẫn máu"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trùng roi quang hợp được nhờ hạt diệp lục; trùng biến hình dùng chân giả."
+      },
+      {
+        "level": 2,
+        "text": "Trùng sốt rét ký sinh trong hồng cầu máu; trùng kiết lị gây tổn thương ruột già."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu bài tập",
+        "body": "Nối 4 đại diện nguyên sinh vật với đặc điểm hoặc tác hại sinh học."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu từng đại diện",
+        "body": "Trùng roi: diệp lục + điểm mắt; Trùng biến hình: chân giả; Trùng sốt rét: ký sinh hồng cầu; Trùng kiết lị: ký sinh ruột già."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất ghép cặp",
+        "body": "Khớp chính xác 4 cặp sinh vật."
+      }
+    ],
+    "finalSolution": "Trùng roi xanh: Có diệp lục và điểm mắt đỏ; Trùng biến hình: Di chuyển bằng chân giả; Trùng sốt rét: Ký sinh trong hồng cầu gây sốt rét; Trùng kiết lị: Ký sinh ở thành ruột già gây kiết lị.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm cơ quan ký sinh của trùng sốt rét (hồng cầu) với trùng kiết lị (thành ruột già)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b15-q02",
+    "lessonId": "bio-g6-b15",
+    "sgkBaiSo": 30,
+    "skillIds": ["bio-nguyen-sinh-vat"],
+    "difficulty": 2,
+    "prompt": "Phân loại các vai trò sau đây của nguyên sinh vật vào hai nhóm: 'Vai trò có ích' và 'Tác hại':",
+    "knowledge": ["bio-nguyen-sinh-vat"],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "b-useful", "label": "Vai trò có ích trong tự nhiên và đời sống" },
+        { "id": "b-harmful", "label": "Tác hại gây bệnh cho con người" }
+      ],
+      "items": [
+        { "id": "it-1", "label": "Là nguồn thức ăn tự nhiên quan trọng cho cá, tôm thủy sinh", "bucketId": "b-useful" },
+        { "id": "it-2", "label": "Tảo nguyên sinh quang hợp cung cấp khí oxygen cho nước ao hồ", "bucketId": "b-useful" },
+        { "id": "it-3", "label": "Chiết xuất chất agar từ tảo để làm thạch rau câu thơm ngon", "bucketId": "b-useful" },
+        { "id": "it-4", "label": "Gây bệnh sốt rét làm phá hủy hồng cầu dẫn tới thiếu máu nặng", "bucketId": "b-harmful" },
+        { "id": "it-5", "label": "Gây bệnh kiết lị làm viêm loét niêm mạc ruột già", "bucketId": "b-harmful" }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Làm thức ăn cho thủy sản và cung cấp O2 là các vai trò có ích."
+      },
+      {
+        "level": 2,
+        "text": "Sốt rét và kiết lị là 2 bệnh nguy hiểm do nguyên sinh vật ký sinh gây ra."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 5 vai trò của nguyên sinh vật",
+        "body": "Đánh giá mặt lợi và mặt hại của nhóm sinh vật này."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân loại theo SGK",
+        "body": "Thức ăn thủy sinh, tạo O2 quang hợp, làm thạch agar là có ích. Bệnh sốt rét và kiết lị là tác hại."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất phân loại",
+        "body": "3 vai trò có ích và 2 tác hại được xếp đúng chỗ."
+      }
+    ],
+    "finalSolution": "Có ích: Thức ăn cho cá tôm, Tảo quang hợp tạo oxygen, Chiết xuất thạch rau câu. Tác hại: Gây bệnh sốt rét, Gây bệnh kiết lị.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Nghĩ rằng nguyên sinh vật hoàn toàn không có ích gì mà chỉ toàn gây bệnh."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b15-q03",
+    "lessonId": "bio-g6-b15",
+    "sgkBaiSo": 30,
+    "skillIds": ["bio-nguyen-sinh-vat"],
+    "difficulty": 1,
+    "prompt": "Loài muỗi nào sau đây đóng vai trò là vật trung gian truyền trùng sốt rét (Plasmodium) từ người bệnh sang người khỏe mạnh?",
+    "knowledge": ["bio-nguyen-sinh-vat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Muỗi cái Anopheles" },
+        { "id": "opt-b", "label": "Muỗi vằn Aedes" },
+        { "id": "opt-c", "label": "Muỗi Culex (muỗi nhà)" },
+        { "id": "opt-d", "label": "Bọ gậy lăng quăng" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Muỗi vằn truyền virus sốt xuất huyết, còn muỗi Anopheles truyền trùng sốt rét."
+      },
+      {
+        "level": 2,
+        "text": "Chỉ có muỗi cái mới hút máu người để nuôi trứng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định véc-tơ truyền bệnh sốt rét",
+        "body": "Tìm loài muỗi truyền trùng sốt rét."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Vật chủ trung gian",
+        "body": "Trùng sốt rét truyền qua muỗi cái Anopheles (khi đậu đuôi chổng ngược lên). Muỗi vằn Aedes truyền sốt xuất huyết."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn phương án đúng",
+        "body": "Muỗi cái Anopheles là đáp án chính xác."
+      }
+    ],
+    "finalSolution": "Muỗi cái Anopheles là vật trung gian truyền trùng sốt rét từ người bệnh sang người khỏe mạnh qua vết đốt.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nhầm muỗi cái Anopheles (sốt rét) với muỗi vằn Aedes (sốt xuất huyết)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b15-q04",
+    "lessonId": "bio-g6-b15",
+    "sgkBaiSo": 30,
+    "skillIds": ["bio-nguyen-sinh-vat"],
+    "difficulty": 2,
+    "prompt": "Những biện pháp nào sau đây giúp phòng tránh hiệu quả bệnh sốt rét và bệnh kiết lị (chọn các phương án đúng)?",
+    "knowledge": ["bio-nguyen-sinh-vat"],
+    "answer": {
+      "kind": "mcq-multi",
+      "options": [
+        { "id": "opt-a", "label": "Ngủ trong màn (mùng) và diệt muỗi, bọ gậy quanh nơi ở" },
+        { "id": "opt-b", "label": "Thực hiện ăn chín, uống nước đun sôi để nguội, rửa sạch rau sống" },
+        { "id": "opt-c", "label": "Rửa tay sạch bằng xà phòng trước khi ăn và sau khi đi vệ sinh" },
+        { "id": "opt-d", "label": "Uống nước lã trực tiếp ở ao hồ tù đọng" }
+      ],
+      "correctIds": ["opt-a", "opt-b", "opt-c"]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Phòng muỗi đốt giúp ngừa sốt rét; ăn uống hợp vệ sinh giúp ngừa kiết lị."
+      },
+      {
+        "level": 2,
+        "text": "Nước ao hồ tù đọng chứa nhiều bào nang kiết lị nguy hiểm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Biện pháp phòng bệnh ký sinh trùng",
+        "body": "Đánh giá các hành vi phòng bệnh sốt rét và kiết lị."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra từng biện pháp",
+        "body": "Ngủ màn diệt muỗi (ngừa sốt rét - đúng); Ăn chín uống sôi (ngừa kiết lị - đúng); Rửa tay xà phòng (ngừa kiết lị - đúng). Uống nước lã ao hồ là hành vi nguy cơ cao gây bệnh."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn các đáp án đúng",
+        "body": "Chọn A, B và C."
+      }
+    ],
+    "finalSolution": "Để phòng bệnh: Ngủ màn và diệt muỗi phòng sốt rét; Ăn chín uống sôi và rửa tay sạch bằng xà phòng phòng bệnh kiết lị.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Nghĩ rằng chỉ cần ngủ màn là có thể phòng được cả bệnh kiết lị (kiết lị lây qua đường tiêu hóa chứ không do muỗi đốt)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b15-q05",
+    "lessonId": "bio-g6-b15",
+    "sgkBaiSo": 30,
+    "skillIds": ["bio-nguyen-sinh-vat"],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về giới Nguyên sinh vật:",
+    "knowledge": ["bio-nguyen-sinh-vat"],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Nguyên sinh vật là những sinh vật nhân thực, đa số có cơ thể đơn bào kích thước hiển vi.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Trùng roi xanh hoàn toàn không có khả năng quang hợp mà chỉ biết đi săn mồi trong bóng tối.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Trùng sốt rét phá hủy các tế bào hồng cầu trong máu người gây ra triệu chứng sốt rét từng cơn.",
+          "correct": true
+        },
+        {
+          "id": "st-4",
+          "text": "Tảo nguyên sinh quang hợp giải phóng khí oxygen hòa tan giúp động vật thủy sinh hô hấp.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trùng roi xanh có chứa hạt diệp lục nên khi có ánh sáng mặt trời nó quang hợp tự dưỡng như thực vật."
+      },
+      {
+        "level": 2,
+        "text": "Trùng sốt rét chui vào trong tế bào hồng cầu nhân lên rồi làm vỡ hồng cầu."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Đánh giá từng câu về đặc tính của nguyên sinh vật."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra chi tiết",
+        "body": "1. Nhân thực, đa số đơn bào: Đúng. 2. Trùng roi không quang hợp: Sai (có hạt diệp lục quang hợp). 3. Trùng sốt rét phá hồng cầu: Đúng. 4. Tảo quang hợp tạo O2: Đúng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Ý 1: Đúng; Ý 2: Sai; Ý 3: Đúng; Ý 4: Đúng."
+      }
+    ],
+    "finalSolution": "Phát biểu 1, 3 và 4 đúng. Phát biểu 2 sai (trùng roi xanh có hạt diệp lục nên tự dưỡng quang hợp khi có ánh sáng).",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng sinh vật biết bơi lội như trùng roi thì không thể quang hợp."
+      }
+    ]
+  }
+]

@@ -1,0 +1,85 @@
+{
+  "lessonId": "bio-g6-b06",
+  "nodeId": "bio-g6-b06-theory",
+  "title": "Lý thuyết: Thực hành quan sát và phân biệt một số loại tế bào",
+  "subtitle": "Bài 21 SGK KHTN 6 Kết nối tri thức: Quy trình làm tiêu bản tạm thời tế bào vảy hành và tế bào thịt quả cà chua chín",
+  "sgkBaiSo": 21,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Mục tiêu",
+      "badgeColor": "emerald",
+      "title": "Mục tiêu của bài thực hành tế bào",
+      "content": "Rèn luyện kỹ năng thực nghiệm sinh học cơ bản trong phòng thí nghiệm:",
+      "bulletPoints": [
+        "Thành thạo kỹ thuật làm tiêu bản hiển vi tạm thời bằng lam kính và lamen.",
+        "Biết cách nhuộm màu tế bào bằng dung dịch xanh metylen hoặc iot loãng để nhìn rõ nhân.",
+        "Quan sát, nhận diện và vẽ mô tả cấu trúc hình dạng của tế bào biểu bì vảy hành và tế bào thịt quả cà chua chín dưới kính hiển vi."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Tiêu bản vảy hành",
+      "badgeColor": "amber",
+      "title": "Quy trình làm tiêu bản biểu bì vảy hành tây",
+      "content": "Tiến hành tuần tự theo 4 bước thực nghiệm chuẩn:",
+      "bulletPoints": [
+        "Bước 1: Nhỏ một giọt nước cất (hoặc giọt thuốc nhuộm xanh metylen/iot) vào chính giữa lam kính sạch.",
+        "Bước 2: Dùng kim mũi mác khẽ rạch và dùng kẹp bóc một lớp màng biểu bì thật mỏng ở mặt trong vảy hành tây.",
+        "Bước 3: Đặt lớp biểu bì trải phẳng hoàn toàn vào giọt nước trên lam kính, không để màng bị gấp nếp.",
+        "Bước 4: Đặt một mép lamen tiếp xúc giọt nước nghiêng góc khoảng 45 độ, từ từ hạ nhẹ lamen xuống để đuổi hết không khí ra ngoài, tránh tạo bọt khí. Dùng giấy thấm hút sạch nước thừa xung quanh mép lamen."
+      ],
+      "callout": "Kỹ thuật vàng: Hạ lamen nghiêng 45° từ từ để tiêu bản không bị dính bọt khí tròn đen!"
+    },
+    {
+      "id": "card-3",
+      "badge": "Tiêu bản cà chua",
+      "badgeColor": "cyan",
+      "title": "Quy trình làm tiêu bản thịt quả cà chua chín",
+      "content": "Các bước thao tác tương tự:",
+      "bulletPoints": [
+        "Bước 1: Cắt đôi quả cà chua chín, dùng mũi kim mác lấy một lượng rất nhỏ thịt quả cà chua (kích thước chỉ bằng đầu que tăm).",
+        "Bước 2: Cho vào giọt nước cất trên lam kính, dùng kim dầm nhẹ và dàn đều để các tế bào tách rời thành lớp mỏng.",
+        "Bước 3: Đậy lamen cẩn thận nghiêng 45° rồi đặt lên bàn kính hiển vi quan sát."
+      ]
+    },
+    {
+      "id": "card-4",
+      "badge": "So sánh đối chiếu",
+      "badgeColor": "purple",
+      "title": "Đặc điểm hình thái 2 loại tế bào dưới kính hiển vi",
+      "content": "Đối chiếu sự khác biệt rõ nét giữa hai mẫu tế bào thực vật:",
+      "bulletPoints": [
+        "Tế bào biểu bì vảy hành: Có hình đa giác hoặc hình chữ nhật kéo dài, các tế bào xếp khít chặt chẽ bên cạnh nhau như tường gạch xây; nhìn thấy rõ thành tế bào cứng cáp và nhân tế bào bắt màu thuốc nhuộm.",
+        "Tế bào thịt quả cà chua: Có hình cầu hoặc hình bầu dục, các tế bào đứng rời rạc nhau; bên trong chất tế bào chứa đầy các hạt sắc tố màu đỏ (chứa lycopene) tạo nên màu sắc đặc trưng của quả cà chua."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi đậy lamen (lá kính mỏng) lên giọt nước chứa mẫu vật trên lam kính, tại sao phải đặt lamen nghiêng góc 45 độ rồi mới từ từ hạ xuống?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Để tránh tạo ra các bọt khí làm che khuất mẫu vật khi quan sát",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Để làm nát vụn các tế bào giúp kính dễ phóng đại",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Để dung dịch nước bay hơi thật nhanh",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Để lamen không bị dính vào lam kính",
+        "correct": false
+      }
+    ],
+    "explanation": "Hạ lamen nghiêng 45 độ từ từ giúp đuổi không khí ra ngoài, tránh hiện tượng các bong bóng bọt khí tròn có viền đen dày xuất hiện chèn ép che mất tế bào."
+  }
+}

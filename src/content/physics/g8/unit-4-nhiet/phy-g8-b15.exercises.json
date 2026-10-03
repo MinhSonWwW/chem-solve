@@ -73,11 +73,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Ampe kế một chiều"
+          "label": "Nhiệt kế có vạch chia độ rõ ràng"
         },
         {
           "id": "opt-b",
-          "label": "Nhiệt kế có vạch chia độ rõ ràng"
+          "label": "Ampe kế một chiều"
         },
         {
           "id": "opt-c",
@@ -88,7 +88,7 @@
           "label": "Thước dây cuộn"
         }
       ],
-      "correctId": "opt-b"
+      "correctId": "opt-a"
     },
     "hints": [
       {
@@ -142,22 +142,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Để nhiệt lượng tỏa ra từ dây nung lan tỏa đồng đều khắp thể tích nước trong bình"
-        },
-        {
-          "id": "opt-b",
           "label": "Để làm tăng khối lượng của nước trong bình"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Để làm cho dây nung điện trở không bị chảy đứt"
+        },
+        {
+          "id": "opt-c",
+          "label": "Để nhiệt lượng tỏa ra từ dây nung lan tỏa đồng đều khắp thể tích nước trong bình"
         },
         {
           "id": "opt-d",
           "label": "Để nước không bị bốc hơi nhanh ra ngoài không khí"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -211,11 +211,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Bầu nhiệt kế phải ngập hoàn toàn trong nước nhưng không chạm vào dây nung hay đáy bình"
+          "label": "Cắm nhiệt kế chạm mạnh xuống đáy kim loại của bình"
         },
         {
           "id": "opt-b",
-          "label": "Cắm nhiệt kế chạm mạnh xuống đáy kim loại của bình"
+          "label": "Bầu nhiệt kế phải ngập hoàn toàn trong nước nhưng không chạm vào dây nung hay đáy bình"
         },
         {
           "id": "opt-c",
@@ -226,7 +226,7 @@
           "label": "Bầu nhiệt kế phải ép sát trực tiếp vào dây nung điện trở để bắt nhiệt nhanh"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -406,14 +406,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Một phần nhiệt lượng bị thất thoát ra ngoài vỏ bình và dùng để nung nóng que khuấy, thành trong của bình"
+          "label": "Nước tự động phát sinh thêm năng lượng nhiệt mới trong bình"
         },
         {
           "id": "opt-d",
-          "label": "Nước tự động phát sinh thêm năng lượng nhiệt mới trong bình"
+          "label": "Một phần nhiệt lượng bị thất thoát ra ngoài vỏ bình và dùng để nung nóng que khuấy, thành trong của bình"
         }
       ],
-      "correctId": "opt-c"
+      "correctId": "opt-d"
     },
     "hints": [
       {

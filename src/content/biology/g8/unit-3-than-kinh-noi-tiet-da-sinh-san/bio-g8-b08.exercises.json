@@ -1,0 +1,554 @@
+[
+  {
+    "id": "bio-g8-b08-q01",
+    "lessonId": "bio-g8-b08",
+    "sgkBaiSo": 37,
+    "skillIds": [
+      "bio-he-than-kinh-giac-quan"
+    ],
+    "difficulty": 1,
+    "prompt": "Một cung phản xạ hoàn chỉnh ở người bao gồm 5 thành phần theo đúng trình tự dẫn truyền nào?",
+    "knowledge": [
+      "kb-bio-g8-cau-tao-noron-phan-xa"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cơ quan thụ cảm → Nơron hướng tâm → Trung ương thần kinh → Nơron li tâm → Cơ quan đáp ứng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cơ quan đáp ứng → Nơron li tâm → Trung ương thần kinh → Nơron hướng tâm → Cơ quan thụ cảm"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cơ quan thụ cảm → Nơron li tâm → Não bộ → Nơron hướng tâm → Cơ bắp"
+        },
+        {
+          "id": "opt-d",
+          "label": "Trung ương thần kinh → Nơron hướng tâm → Cơ quan thụ cảm → Nơron li tâm → Cơ quan đáp ứng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Xung thần kinh đi từ nơi nhận kích thích (thụ cảm) về não/tủy rồi mới truyền lệnh đến cơ bắp đáp ứng."
+      },
+      {
+        "level": 2,
+        "text": "Nơron hướng tâm dẫn về trung ương; nơron li tâm dẫn lệnh từ trung ương đi ra cơ quan đáp ứng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khái niệm cung phản xạ",
+        "body": "Cung phản xạ là con đường mà xung thần kinh truyền từ cơ quan thụ cảm đến cơ quan đáp ứng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "5 thành phần kế tiếp nhau",
+        "body": "1. Cơ quan thụ cảm (da, mắt...) tiếp nhận kích thích → 2. Nơron hướng tâm (cảm giác) dẫn truyền xung về → 3. Trung ương thần kinh (não/tủy) phân tích xử lí → 4. Nơron li tâm (vận động) dẫn lệnh → 5. Cơ quan đáp ứng (cơ co hoặc tuyến tiết)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự chuẩn là: Thụ cảm → Nơron hướng tâm → Trung ương thần kinh → Nơron li tâm → Cơ quan đáp ứng."
+      }
+    ],
+    "finalSolution": "Cung phản xạ 5 thành phần là cơ sở vật chất của mọi hoạt động phản xạ điều khiển cơ thể.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Đảo ngược vị trí giữa nơron hướng tâm (cảm giác) và nơron li tâm (vận động)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b08-q02",
+    "lessonId": "bio-g8-b08",
+    "sgkBaiSo": 37,
+    "skillIds": [
+      "bio-he-than-kinh-giac-quan"
+    ],
+    "difficulty": 1,
+    "prompt": "Xét về mặt cấu tạo giải phẫu, bộ phận thần kinh trung ương của người bao gồm những cấu trúc nào?",
+    "knowledge": [
+      "kb-bio-g8-phan-chia-he-than-kinh"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Não bộ (nằm trong hộp sọ) và Tủy sống (nằm trong ống xương sống)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Các dây thần kinh tủy và các hạch thần kinh giao cảm"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mắt, tai và các cơ quan xúc giác ở da"
+        },
+        {
+          "id": "opt-d",
+          "label": "Dây thần kinh não và các thụ thể áp lực"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bộ phận trung ương được bao bọc và bảo vệ vững chắc bởi hộp xương sọ và cột sống."
+      },
+      {
+        "level": 2,
+        "text": "Gồm hai khối thần kinh lớn nhất là Não bộ và Tủy sống."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân chia cấu tạo hệ thần kinh",
+        "body": "Hệ thần kinh chia làm bộ phận trung ương và bộ phận ngoại biên."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cấu tạo bộ phận trung ương",
+        "body": "Bộ phận thần kinh trung ương gồm Não bộ (đại não, gian não, tiểu não, trụ não nằm trong hộp sọ) và Tủy sống (nằm trong ống xương sống). Dây thần kinh và hạch thần kinh thuộc bộ phận ngoại biên."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thần kinh trung ương gồm Não bộ và Tủy sống."
+      }
+    ],
+    "finalSolution": "Não bộ và tủy sống là trung tâm tiếp nhận, tích hợp và điều phối các tín hiệu thần kinh của toàn cơ thể.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm dây thần kinh não vào bộ phận trung ương (dây thần kinh thuộc bộ phận ngoại biên)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b08-q03",
+    "lessonId": "bio-g8-b08",
+    "sgkBaiSo": 37,
+    "skillIds": [
+      "bio-he-than-kinh-giac-quan"
+    ],
+    "difficulty": 2,
+    "prompt": "Cấu tạo của một nơron (tế bào thần kinh) điển hình bao gồm các phần nào?",
+    "knowledge": [
+      "kb-bio-g8-cau-tao-noron-phan-xa"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Thân chứa nhân, các sợi nhánh ngắn và một sợi trục dài thường có bao myelin cách điện"
+        },
+        {
+          "id": "opt-b",
+          "label": "Một màng cứng bọc ngoài không có sợi dẫn truyền"
+        },
+        {
+          "id": "opt-c",
+          "label": "Nhiều sợi trục dài nhưng không có thân và không có nhân"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chỉ gồm các đĩa sụn khớp nối tiếp nhau"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nơron có các tua ngắn tỏa ra quanh thân và một đuôi dài dẫn truyền tín hiệu đi xa."
+      },
+      {
+        "level": 2,
+        "text": "Thân chứa nhân, các tua ngắn là sợi nhánh, đuôi dài là sợi trục có bao myelin bọc ngoài."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cấu trúc vi thể của nơron",
+        "body": "Nơron là tế bào biệt hóa cao độ để phát và dẫn truyền xung điện sinh học."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Các thành phần nơron",
+        "body": "Thân chứa nhân và bào quan; các sợi nhánh phân nhánh li ti tiếp nhận xung thần kinh; một sợi trục dài dẫn truyền xung đi xa, bao bọc bởi các bao myelin có eo Ranvier giúp xung truyền nhảy cóc cực nhanh."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nơron gồm thân chứa nhân, sợi nhánh và một sợi trục dài có bao myelin."
+      }
+    ],
+    "finalSolution": "Cấu trúc sợi phân nhánh độc đáo của nơron giúp tạo mạng lưới hàng tỉ synapse liên kết thông tin trong não bộ.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng sợi nhánh dẫn xung ra khỏi thân nơron (sợi nhánh dẫn xung về thân, sợi trục mới dẫn xung ra)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b08-q04",
+    "lessonId": "bio-g8-b08",
+    "sgkBaiSo": 37,
+    "skillIds": [
+      "bio-he-than-kinh-giac-quan"
+    ],
+    "difficulty": 2,
+    "prompt": "Bộ phận nào của cầu mắt có khả năng biến đổi độ cong (phồng lên hoặc xẹp xuống) như một thấu kính hội tụ sinh học để điều tiết ảnh rơi đúng trên màng lưới?",
+    "knowledge": [
+      "kb-bio-g8-cau-tao-mat-khuc-xa"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Thể thủy tinh (thể tinh thể)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Màng giác (giác mạc)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Lòng đen và lỗ đồng tử"
+        },
+        {
+          "id": "opt-d",
+          "label": "Dịch thủy dịch"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khối trong suốt hình bầu dục hai mặt lồi nằm ngay sau lỗ đồng tử."
+      },
+      {
+        "level": 2,
+        "text": "Được gắn với cơ thể mi, khi cơ co dãn làm thay đổi tiêu cự của thể thủy tinh."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cơ chế quang học của mắt",
+        "body": "Để nhìn rõ vật ở các cự li xa gần khác nhau, mắt phải điều tiết tiêu cự."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Chức năng thể thủy tinh",
+        "body": "Thể thủy tinh là một thấu kính hội tụ trong suốt và đàn hồi. Nhờ sự co dãn của dây chằng và cơ thể mi, thể thủy tinh có thể phồng lên (khi nhìn gần) hoặc dẹt bớt xuống (khi nhìn xa) để ảnh rơi chính xác tại điểm vàng trên võng mạc."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thể thủy tinh là bộ phận thay đổi độ cong để điều tiết ảnh."
+      }
+    ],
+    "finalSolution": "Khả năng co dãn đàn hồi của thể thủy tinh là cơ chế điều tiết thị giác giúp con người quan sát rõ ràng ở mọi khoảng cách.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm chức năng điều tiết tiêu cự của thể thủy tinh với chức năng điều tiết lượng ánh sáng của đồng tử."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b08-q05",
+    "lessonId": "bio-g8-b08",
+    "sgkBaiSo": 37,
+    "skillIds": [
+      "bio-he-than-kinh-giac-quan"
+    ],
+    "difficulty": 2,
+    "prompt": "Người bị tật cận thị có đặc điểm quang học như thế nào và cần phải đeo loại thấu kính gì để khắc phục?",
+    "knowledge": [
+      "kb-bio-g8-cau-tao-mat-khuc-xa"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Ảnh rơi ở phía trước màng lưới; cần đeo thấu kính phân kì thích hợp"
+        },
+        {
+          "id": "opt-b",
+          "label": "Ảnh rơi ở phía sau màng lưới; cần đeo thấu kính hội tụ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ảnh rơi đúng trên màng lưới; chỉ cần đeo kính râm chống lóa"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cầu mắt không nhận được ánh sáng; cần phẫu thuật ghép màng giác"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cận thị chỉ nhìn rõ vật ở gần, nhìn xa mờ do ảnh hội tụ quá sớm trước võng mạc."
+      },
+      {
+        "level": 2,
+        "text": "Cần một thấu kính phân kì để làm chùm sáng hơi loe ra trước khi vào mắt, lùi ảnh về màng lưới."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất tật cận thị",
+        "body": "Do trục mắt quá dài hoặc thể thủy tinh quá phồng khiến mắt hội tụ ánh sáng mạnh hơn bình thường."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Vị trí ảnh và kính sửa tật",
+        "body": "Chùm sáng từ vật ở xa hội tụ rơi ở phía trước màng lưới nên nhìn xa bị nhòe. Đeo kính phân kì (mép dày, giữa mỏng) giúp phân kì chùm sáng tới, đẩy tiêu điểm ảnh lùi lại rơi đúng màng lưới võng mạc."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Ảnh rơi trước màng lưới; cần đeo thấu kính phân kì."
+      }
+    ],
+    "finalSolution": "Đeo thấu kính phân kì phù hợp là giải pháp quang học chuẩn giúp học sinh cận thị nhìn xa rõ nét như mắt bình thường.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm tật cận thị (đeo kính phân kì) với tật viễn thị ở người lớn tuổi (đeo kính hội tụ)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b08-q06",
+    "lessonId": "bio-g8-b08",
+    "sgkBaiSo": 37,
+    "skillIds": [
+      "bio-he-than-kinh-giac-quan"
+    ],
+    "difficulty": 2,
+    "prompt": "Chuỗi ba xương tai (xương búa, xương đe, xương bàn đạp) ở tai giữa có vai trò cơ học gì đối với sự nghe?",
+    "knowledge": [
+      "kb-bio-g8-cau-tao-tai-thinh-giac"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Truyền và khuếch đại dao động sóng âm từ màng nhĩ vào màng cửa bầu ở tai trong"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tiết chất dịch nhầy để bôi trơn vành tai ngoài"
+        },
+        {
+          "id": "opt-c",
+          "label": "Trực tiếp phát ra âm thanh phản hồi lại tiếng ồn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Ngăn cản không cho bất kì sóng âm nào lọt vào não bộ"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ba xương nhỏ này liên kết như hệ thống đòn bẩy cơ học nối giữa màng nhĩ và tai trong."
+      },
+      {
+        "level": 2,
+        "text": "Hệ đòn bẩy này giúp khuếch đại áp lực dao động sóng âm lên tới hơn 20 lần."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cấu tạo tai giữa",
+        "body": "Tai giữa là khoang hòm nhĩ chứa chuỗi xương tai búa - đe - bàn đạp."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế khuếch đại đòn bẩy",
+        "body": "Sóng âm làm rung màng nhĩ. Chuỗi 3 xương tai hoạt động như một hệ thống đòn bẩy cơ học tinh xảo, truyền dao động và khuếch đại áp lực sóng âm gấp hơn 20 lần tác động vào màng cửa bầu dục của ốc tai trong."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Chuỗi xương tai truyền và khuếch đại dao động sóng âm từ màng nhĩ vào tai trong."
+      }
+    ],
+    "finalSolution": "Chuỗi xương tai đảm bảo sự chuyển tiếp hiệu quả dao động từ môi trường không khí của tai giữa vào môi trường dịch lỏng của tai trong.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng chuỗi xương tai là nơi trực tiếp thụ cảm và phân tích âm thanh (ốc tai mới là nơi thụ cảm)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b08-q07",
+    "lessonId": "bio-g8-b08",
+    "sgkBaiSo": 37,
+    "skillIds": [
+      "bio-he-than-kinh-giac-quan"
+    ],
+    "difficulty": 2,
+    "prompt": "Cấu trúc nào nằm ở tai trong có chức năng tiếp nhận các kích thích về vị trí và chuyển động của cơ thể trong không gian để giữ thăng bằng?",
+    "knowledge": [
+      "kb-bio-g8-cau-tao-tai-thinh-giac"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cơ quan tiền đình và ba ống bán khuyên"
+        },
+        {
+          "id": "opt-b",
+          "label": "Ốc tai xương và ốc tai màng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Màng nhĩ và vành tai"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vòi nhĩ thông họng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tai không chỉ để nghe mà còn là cơ quan giữ thăng bằng cơ thể."
+      },
+      {
+        "level": 2,
+        "text": "Cấu trúc gồm túi tiền đình và 3 ống bán khuyên định hướng theo 3 mặt phẳng không gian."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hai chức năng của tai trong",
+        "body": "Tai trong vừa có cơ quan thính giác (ốc tai) vừa có cơ quan thụ cảm thăng bằng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cấu trúc giữ thăng bằng",
+        "body": "Bộ máy tiền đình gồm xoang nang, cầu nang và 3 ống bán khuyên xếp vuông góc theo 3 chiều không gian. Chuyển động của dòng nội dịch và sỏi tai kích thích tế bào lông thụ cảm báo về tiểu não để điều chỉnh thăng bằng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cơ quan tiền đình và ba ống bán khuyên đảm nhiệm giữ thăng bằng."
+      }
+    ],
+    "finalSolution": "Rối loạn dòng dịch trong ống bán khuyên tiền đình là nguyên nhân gây ra hiện tượng say tàu xe và chóng mặt mất thăng bằng.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng ốc tai giữ thăng bằng (ốc tai phụ trách thụ cảm âm thanh, tiền đình mới giữ thăng bằng)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b08-q08",
+    "lessonId": "bio-g8-b08",
+    "sgkBaiSo": 37,
+    "skillIds": [
+      "bio-he-than-kinh-giac-quan"
+    ],
+    "difficulty": 3,
+    "prompt": "Bản chất sinh lí của giấc ngủ đối với hệ thần kinh là gì và việc thiếu ngủ kinh niên gây ra hậu quả nguy hại nào?",
+    "knowledge": [
+      "kb-bio-g8-ve-sinh-than-kinh-giac-ngu"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Giấc ngủ là quá trình ức chế bảo vệ tự nhiên giúp tế bào vỏ não phục hồi; thiếu ngủ kéo dài gây suy giảm trí nhớ, kiệt quệ thần kinh và rối loạn miễn dịch"
+        },
+        {
+          "id": "opt-b",
+          "label": "Giấc ngủ là trạng thái hôn mê nhân tạo không đem lại lợi ích sinh học nào"
+        },
+        {
+          "id": "opt-c",
+          "label": "Giấc ngủ giúp tăng tiêu hao năng lượng tối đa để giảm cân nhanh chóng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Thiếu ngủ hoàn toàn không ảnh hưởng đến khả năng tư duy và phản xạ của con người"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi ngủ, các vùng hưng phấn trên vỏ não lan tỏa quá trình ức chế để nghỉ ngơi dọn dẹp độc tố."
+      },
+      {
+        "level": 2,
+        "text": "Mất ngủ kéo dài làm cạn kiệt chất dẫn truyền thần kinh, suy nhược tinh thần và giảm sút trí nhớ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất sinh học của giấc ngủ",
+        "body": "Giấc ngủ là một nhu cầu sinh lí tự nhiên có tính chu kì của động vật bậc cao và con người."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế ức chế bảo vệ của vỏ não",
+        "body": "Khi ngủ, quá trình ức chế lan tỏa khắp vỏ não và các cấu trúc dưới vỏ, giúp tế bào nơron sửa chữa tổn thương, thải độc chất chuyển hóa và tái nạp năng lượng ATP. Thiếu ngủ mãn tính dẫn đến suy nhược thần kinh, mất tập trung và suy giảm miễn dịch nghiêm trọng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Giấc ngủ là ức chế bảo vệ giúp vỏ não phục hồi; thiếu ngủ làm suy giảm trí nhớ và kiệt quệ thần kinh."
+      }
+    ],
+    "finalSolution": "Duy trì giấc ngủ chất lượng 7 - 8 tiếng mỗi đêm là chìa khóa vàng bảo vệ sức khỏe não bộ và kéo dài tuổi thọ.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Xem nhẹ giấc ngủ và cho rằng có thể bù đắp thiếu ngủ bằng cách uống nhiều nước tăng lực, cà phê."
+      }
+    ]
+  }
+]

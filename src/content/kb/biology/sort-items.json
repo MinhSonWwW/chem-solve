@@ -1,0 +1,29 @@
+[
+  { "formula": "Ti thể", "nameVi": "Bào quan hô hấp tế bào tạo ATP", "type": "te-bao" },
+  { "formula": "Lục lạp", "nameVi": "Bào quan quang hợp ở tế bào thực vật", "type": "te-bao" },
+  { "formula": "Nhân tế bào", "nameVi": "Chứa vật chất di truyền DNA", "type": "te-bao" },
+  { "formula": "Ribosome", "nameVi": "Bào quan dịch mã tổng hợp protein", "type": "te-bao" },
+  { "formula": "Màng sinh chất", "nameVi": "Lớp màng photpholipid kiểm soát ra vào", "type": "te-bao" },
+  { "formula": "Vi khuẩn E. coli", "nameVi": "Sinh vật nhân sơ đơn bào", "type": "te-bao" },
+
+  { "formula": "Dạ dày & Pepsin", "nameVi": "Co bóp tiêu hóa và phân giải protein", "type": "co-the" },
+  { "formula": "Phế nang phổi", "nameVi": "Nơi trao đổi khí O2 và CO2", "type": "co-the" },
+  { "formula": "Nephron cầu thận", "nameVi": "Đơn vị chức năng lọc máu tạo nước tiểu", "type": "co-the" },
+  { "formula": "Tuyến tụy & Insulin", "nameVi": "Hạ đường huyết cân bằng nội môi", "type": "co-the" },
+  { "formula": "Hồng cầu & ABO", "nameVi": "Tế bào máu vận chuyển O2 và kháng nguyên", "type": "co-the" },
+  { "formula": "Cung phản xạ", "nameVi": "Cảm thụ - Trung ương - Cơ quan phản ứng", "type": "co-the" },
+
+  { "formula": "DNA xoắn kép", "nameVi": "Chuỗi nucleotide liên kết theo NTBS", "type": "di-truyen" },
+  { "formula": "Hội chứng Đao", "nameVi": "Thể ba cặp NST số 21 (2n + 1 = 47)", "type": "di-truyen" },
+  { "formula": "Codon AUG", "nameVi": "Bộ ba mở đầu mã hóa methionine", "type": "di-truyen" },
+  { "formula": "Đột biến điểm", "nameVi": "Biến đổi thay thế/thêm/mất một cặp nu", "type": "di-truyen" },
+  { "formula": "Phép lai Mendel", "nameVi": "Quy luật phân li và phân li độc lập", "type": "di-truyen" },
+  { "formula": "Cừu Dolly", "nameVi": "Nhân bản vô tính bằng chuyển nhân sinh dưỡng", "type": "di-truyen" },
+
+  { "formula": "Chuỗi thức ăn", "nameVi": "Cỏ → Sâu → Chim ăn sâu → Vi sinh vật", "type": "sinh-thai" },
+  { "formula": "Tháp năng lượng", "nameVi": "Hiệu suất sinh thái 10% qua bậc dinh dưỡng", "type": "sinh-thai" },
+  { "formula": "Chọn lọc tự nhiên", "nameVi": "Đào thải biến dị có hại, bảo tồn có lợi", "type": "sinh-thai" },
+  { "formula": "Cơ quan tương đồng", "nameVi": "Tay người và cánh dơi cùng nguồn gốc", "type": "sinh-thai" },
+  { "formula": "Hóa thạch cổ sinh", "nameVi": "Bằng chứng trực tiếp lịch sử tiến hóa", "type": "sinh-thai" },
+  { "formula": "Mật độ quần thể", "nameVi": "Số lượng cá thể trên đơn vị diện tích (N/S)", "type": "sinh-thai" }
+]

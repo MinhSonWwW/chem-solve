@@ -1,0 +1,554 @@
+[
+  {
+    "id": "bio-g8-b14-q01",
+    "lessonId": "bio-g8-b14",
+    "sgkBaiSo": 43,
+    "skillIds": [
+      "bio-quan-xa-sinh-vat"
+    ],
+    "difficulty": 1,
+    "prompt": "Tập hợp sinh vật nào sau đây là một quần xã sinh vật trong tự nhiên?",
+    "knowledge": [
+      "kb-bio-g8-khai-niem-quan-xa"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tập hợp các loài cá mè, cá chép, cua, ốc, rong đuôi chó và phù du sống trong một hồ nước tự nhiên"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tập hợp các con hươu sao đang sinh sống trong khu bảo tồn thiên nhiên Cát Tiên"
+        },
+        {
+          "id": "opt-c",
+          "label": "Các con gà chọi, vịt bầu và chim bồ câu được nhốt chung trong một lồng ở chợ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Các cây thông ba lá cùng sinh trưởng trên một ngọn đồi ở cao nguyên Lâm Viên"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Quần xã sinh vật là tập hợp nhiều quần thể thuộc các loài khác nhau cùng chung sống trong một sinh cảnh tự nhiên."
+      },
+      {
+        "level": 2,
+        "text": "Các phương án chỉ gồm một loài duy nhất (hươu sao, thông ba lá) là cấp độ quần thể; nhốt chung ở chợ chỉ là tập hợp nhân tạo tạm thời."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Định nghĩa quần xã sinh vật",
+        "body": "Quần xã là tập hợp các quần thể sinh vật thuộc nhiều loài khác nhau, cùng sống trong một khoảng không gian và thời gian xác định, có mối quan hệ gắn bó hữu cơ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân tích các tập hợp",
+        "body": "Tập hợp cá mè, cá chép, cua, ốc, rong và phù du trong hồ gồm nhiều loài khác nhau cùng tương tác sinh thái trong sinh cảnh hồ nước, thỏa mãn khái niệm quần xã. Hươu sao hay rừng thông chỉ gồm một loài nên là quần thể sinh vật."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tập hợp các loài cá, cua, ốc, rong và phù du trong hồ tự nhiên là một quần xã sinh vật."
+      }
+    ],
+    "finalSolution": "Quần xã sinh vật là tập hợp nhiều quần thể thuộc các loài khác nhau cùng chung sống trong một sinh cảnh tự nhiên.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm lẫn giữa quần thể (chỉ gồm 1 loài) và quần xã (gồm nhiều loài khác nhau cùng chung sống)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b14-q02",
+    "lessonId": "bio-g8-b14",
+    "sgkBaiSo": 43,
+    "skillIds": [
+      "bio-quan-xa-sinh-vat"
+    ],
+    "difficulty": 1,
+    "prompt": "Loài sinh vật nào chỉ có ở một quần xã xác định hoặc có số lượng cá thể nhiều hơn hẳn các loài khác được gọi là gì?",
+    "knowledge": [
+      "kb-bio-g8-loai-uu-the-dac-trung"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Loài đặc trưng của quần xã"
+        },
+        {
+          "id": "opt-b",
+          "label": "Loài ưu thế của quần xã"
+        },
+        {
+          "id": "opt-c",
+          "label": "Loài ngẫu nhiên của quần xã"
+        },
+        {
+          "id": "opt-d",
+          "label": "Loài sinh vật chủ của quần xã"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Chú ý từ khóa: 'chỉ có ở một quần xã xác định' - ví dụ cá cóc Tam Đảo."
+      },
+      {
+        "level": 2,
+        "text": "Loài ưu thế thì có sinh khối lớn và số lượng nhiều chi phối quần xã; còn loài biểu trưng riêng biệt là loài đặc trưng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đặc trưng về loài của quần xã",
+        "body": "Mỗi quần xã có cấu trúc thành phần loài riêng biệt, phân thành loài ưu thế và loài đặc trưng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Khái niệm loài đặc trưng",
+        "body": "Theo SGK KHTN 8, loài đặc trưng là loài chỉ có ở một quần xã nào đó hoặc có số lượng cá thể nhiều hơn hẳn các loài khác trong quần xã (ví dụ: cá cóc ở Tam Đảo, cây tràm ở U Minh)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Loài chỉ có ở một quần xã xác định hoặc có số lượng vượt trội là loài đặc trưng."
+      }
+    ],
+    "finalSolution": "Loài đặc trưng là loài chỉ có ở một quần xã xác định hoặc có số lượng cá thể vượt trội hẳn so với các loài khác.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Nhầm lẫn giữa loài đặc trưng (tiêu biểu độc đáo) với loài ưu thế (sinh khối lớn, số lượng đông chi phối môi trường)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b14-q03",
+    "lessonId": "bio-g8-b14",
+    "sgkBaiSo": 43,
+    "skillIds": [
+      "bio-quan-xa-sinh-vat"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong một quần xã ruộng lúa nước, loài sinh vật nào đóng vai trò là loài ưu thế?",
+    "knowledge": [
+      "kb-bio-g8-loai-uu-the-dac-trung"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cây lúa nước (Oryza sativa)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cây cỏ lồng vực mọc xen kẽ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cua đồng sống dưới bùn lúa"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cào cào ăn lá lúa"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Loài ưu thế có số lượng cá thể lớn nhất, sinh khối áp đảo và quyết định môi trường sống của quần xã."
+      },
+      {
+        "level": 2,
+        "text": "Trên ruộng lúa, cây lúa được chăm sóc chiếm mật độ dày đặc và tạo nguồn sống chủ đạo cho hệ sinh thái ruộng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khái niệm loài ưu thế",
+        "body": "Loài ưu thế là loài đóng vai trò quan trọng trong quần xã do có số lượng lớn, sinh khối lớn hoặc hoạt động mạnh."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Xác định vai trò của cây lúa",
+        "body": "Trên ruộng lúa, cây lúa có sinh khối và mật độ vượt trội, quyết định chế độ che phủ ánh sáng, cung cấp thức ăn và chi phối hệ sinh thái của cả ruộng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cây lúa nước là loài ưu thế trong quần xã ruộng lúa."
+      }
+    ],
+    "finalSolution": "Cây lúa nước là loài ưu thế trên ruộng lúa nhờ số lượng và sinh khối áp đảo, chi phối toàn bộ môi trường sinh thái ruộng.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nghĩ rằng loài ưu thế phải là loài động vật săn mồi hung dữ hoặc loài hiếm nhất."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b14-q04",
+    "lessonId": "bio-g8-b14",
+    "sgkBaiSo": 43,
+    "skillIds": [
+      "bio-quan-xa-sinh-vat"
+    ],
+    "difficulty": 2,
+    "prompt": "Mối quan hệ giữa vi khuẩn cố định đạm Rhizobium sinh sống trong các nốt sần rễ cây họ Đậu thuộc loại quan hệ sinh thái nào?",
+    "knowledge": [
+      "kb-bio-g8-quan-he-ho-tro-quan-xa"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cộng sinh (hai bên bắt buộc gắn bó chặt chẽ và cùng có lợi)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hội sinh (vi khuẩn có lợi còn cây họ Đậu không bị ảnh hưởng)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Kí sinh (vi khuẩn hút chất hữu cơ làm hại rễ cây đậu)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cạnh tranh sinh học (tranh giành chất dinh dưỡng trong đất)"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Vi khuẩn cố định đạm từ khí trời chuyển thành hợp chất nitơ nuôi cây, ngược lại cây đậu cung cấp đường và nơi ở cho vi khuẩn."
+      },
+      {
+        "level": 2,
+        "text": "Cả hai loài đều hưởng lợi ích dinh dưỡng thiết yếu và gắn bó trực tiếp với nhau."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất mối liên hệ dinh dưỡng",
+        "body": "Vi khuẩn nốt sần hấp thụ nitơ phân tử từ không khí biến đổi thành dạng đạm hòa tan cho cây họ Đậu hấp thu; ngược lại rễ cây họ Đậu cung cấp chất hữu cơ và nơi trú ẩn cho vi khuẩn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc phân loại tương tác",
+        "body": "Mối tương tác mà cả hai loài đều có lợi và có sự gắn kết sinh học chặt chẽ là quan hệ cộng sinh."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Quan hệ giữa vi khuẩn nốt sần và cây họ Đậu là quan hệ cộng sinh."
+      }
+    ],
+    "finalSolution": "Quan hệ giữa vi khuẩn nốt sần Rhizobium và cây họ Đậu là quan hệ cộng sinh mật thiết cùng có lợi.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Nhầm vi khuẩn nốt sần là vi khuẩn gây bệnh kí sinh làm hại rễ cây đậu."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b14-q05",
+    "lessonId": "bio-g8-b14",
+    "sgkBaiSo": 43,
+    "skillIds": [
+      "bio-quan-xa-sinh-vat"
+    ],
+    "difficulty": 2,
+    "prompt": "Cây phong lan sống bám trên thân cây gỗ lớn trong rừng nhiệt đới để hứng ánh sáng mặt trời là ví dụ điển hình của mối quan hệ nào?",
+    "knowledge": [
+      "kb-bio-g8-quan-he-ho-tro-quan-xa"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hội sinh (phong lan có lợi, cây gỗ không có lợi cũng không bị hại)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cộng sinh (hai bên cùng bắt buộc có lợi như nhau)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Kí sinh (phong lan cắm rễ vào mạch gỗ hút hết nhựa sống)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hợp tác ngẫu nhiên (hai loài không cần tiếp xúc vật lý)"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Rễ cây phong lan có chất diệp lục và lớp velamen hấp thụ hơi nước từ không khí, không đâm vào hút nhựa cây thân gỗ."
+      },
+      {
+        "level": 2,
+        "text": "Phong lan được nơi bám lấy ánh sáng (có lợi), cây gỗ không được lợi gì và cũng không hề bị tổn hại."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đặc điểm sinh thái cây phong lan",
+        "body": "Phong lan chỉ bám vào vỏ cây gỗ để leo lên cao đón ánh sáng quang hợp, rễ phong lan không đâm xuyên vào bó mạch để hút nhựa luyện như thực vật kí sinh."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Định nghĩa quan hệ hội sinh",
+        "body": "Hội sinh là mối quan hệ giữa hai loài sinh vật, trong đó một bên có lợi còn bên kia không có lợi và cũng không bị tổn hại gì."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Phong lan bám cây gỗ lớn là mối quan hệ hội sinh."
+      }
+    ],
+    "finalSolution": "Phong lan sống bám cây gỗ là quan hệ hội sinh, phong lan lấy ánh sáng còn cây gỗ không bị ảnh hưởng hay tổn hại.",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nhầm phong lan là loài thực vật kí sinh hút nhựa như cây tầm gửi hay dây tơ hồng."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b14-q06",
+    "lessonId": "bio-g8-b14",
+    "sgkBaiSo": 43,
+    "skillIds": [
+      "bio-quan-xa-sinh-vat"
+    ],
+    "difficulty": 2,
+    "prompt": "Cây tơ hồng không có rễ thật dưới đất và không có diệp lục, phát triển các giác mút đâm vào mạch rây của cây bụi để lấy chất dinh dưỡng. Đây là mối quan hệ gì?",
+    "knowledge": [
+      "kb-bio-g8-quan-he-doi-khang-quan-xa"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Kí sinh (cây tơ hồng có lợi, cây chủ bị tổn hại nghiêm trọng)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hội sinh (cây tơ hồng chỉ bám nhờ mà không hại cây chủ)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cạnh tranh dinh dưỡng trực tiếp trong đất"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cộng sinh trao đổi chất hữu cơ qua lại"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cây tơ hồng sống bám hoàn toàn và hút cạn kiệt chất hữu cơ của cây chủ, khiến cây chủ còi cọc thậm chí khô héo."
+      },
+      {
+        "level": 2,
+        "text": "Một bên hưởng lợi bằng cách lấy chất dinh dưỡng trực tiếp từ cơ thể vật chủ làm hại vật chủ là quan hệ kí sinh."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quan sát phương thức sống",
+        "body": "Cây tơ hồng dùng giác mút hút chất hữu cơ từ mạch rây của vật chủ để sinh tồn, làm cho cây chủ còi cọc và có thể bị chết."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Định nghĩa quan hệ kí sinh",
+        "body": "Kí sinh là mối quan hệ đối kháng trong đó một loài (vật kí sinh) sống nhờ trên cơ thể loài khác (vật chủ), lấy chất dinh dưỡng và nơi ở từ vật chủ, gây hại cho vật chủ."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cây tơ hồng bám và hút chất dinh dưỡng từ cây bụi là mối quan hệ kí sinh."
+      }
+    ],
+    "finalSolution": "Cây tơ hồng cắm giác mút hút chất dinh dưỡng từ mạch dẫn của cây chủ là quan hệ kí sinh gây hại trực tiếp cho vật chủ.",
+    "commonMistakes": [
+      {
+        "id": "cm-06",
+        "message": "Nhầm cây tơ hồng là thực vật tự dưỡng hoặc hội sinh bình thường như rêu, phong lan."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b14-q07",
+    "lessonId": "bio-g8-b14",
+    "sgkBaiSo": 43,
+    "skillIds": [
+      "bio-quan-xa-sinh-vat"
+    ],
+    "difficulty": 3,
+    "prompt": "Hiện tượng khống chế sinh học trong quần xã sinh vật mang lại ý nghĩa sinh thái then chốt nào sau đây?",
+    "knowledge": [
+      "kb-bio-g8-khong-che-sinh-hoc"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Kìm hãm số lượng cá thể của các loài ở mức nhất định, đảm bảo trạng thái cân bằng sinh học"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tiêu diệt hoàn toàn các loài sâu hại và động vật ăn thịt trong tự nhiên"
+        },
+        {
+          "id": "opt-c",
+          "label": "Làm cho số lượng cá thể của tất cả các loài luôn tăng trưởng theo hàm số mũ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Biến đổi cấu trúc quần xã từ đa dạng thành chỉ còn duy nhất một loài ưu thế tồn tại"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khống chế sinh học không nhằm tiêu diệt sạch một loài, mà kìm hãm số lượng loài đó không bùng phát quá mức."
+      },
+      {
+        "level": 2,
+        "text": "Hiện tượng này giúp duy trì trạng thái cân bằng sinh học trong quần xã tự nhiên."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khái niệm khống chế sinh học",
+        "body": "Khống chế sinh học là hiện tượng số lượng cá thể của một loài bị kìm hãm ở một mức độ nhất định bởi mối quan hệ với loài khác trong quần xã."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế duy trì cân bằng sinh học",
+        "body": "Nhờ các mối quan hệ hỗ trợ và đối kháng (vật ăn thịt - con mồi, vật kí sinh - vật chủ), mật độ cá thể các loài không tăng quá cao cũng không suy giảm tới mức tuyệt chủng, giữ cho quần xã ở thế cân bằng ổn định."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khống chế sinh học kìm hãm số lượng cá thể các loài ở mức nhất định, duy trì trạng thái cân bằng sinh học."
+      }
+    ],
+    "finalSolution": "Khống chế sinh học kìm hãm số lượng cá thể các loài ở mức nhất định, duy trì trạng thái cân bằng sinh học trong quần xã.",
+    "commonMistakes": [
+      {
+        "id": "cm-07",
+        "message": "Nghĩ rằng khống chế sinh học sẽ tiêu diệt hoàn toàn một loài đến mức tuyệt chủng."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b14-q08",
+    "lessonId": "bio-g8-b14",
+    "sgkBaiSo": 43,
+    "skillIds": [
+      "bio-quan-xa-sinh-vat"
+    ],
+    "difficulty": 3,
+    "prompt": "Hành động nào sau đây là ứng dụng thực tiễn của hiện tượng khống chế sinh học trong sản xuất nông nghiệp?",
+    "knowledge": [
+      "kb-bio-g8-khong-che-sinh-hoc"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Thả ong mắt đỏ đẻ trứng kí sinh tiêu diệt sâu đục thân hại lúa"
+        },
+        {
+          "id": "opt-b",
+          "label": "Phun thuốc trừ sâu hóa học nồng độ cao trên diện rộng định kì hàng tuần"
+        },
+        {
+          "id": "opt-c",
+          "label": "Sử dụng xung điện để đánh bắt cá tạp trong đầm nuôi tôm giống"
+        },
+        {
+          "id": "opt-d",
+          "label": "Bón thật nhiều phân đạm vô cơ để kích thích cây trồng phát triển nhanh"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ứng dụng khống chế sinh học là sử dụng sinh vật thiên địch tự nhiên để tiêu diệt hoặc khống chế dịch hại."
+      },
+      {
+        "level": 2,
+        "text": "Ong mắt đỏ, bọ rùa hay mèo bắt chuột là các thiên địch hữu ích được con người sử dụng thay thế hóa chất độc hại."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu ứng dụng khống chế sinh học",
+        "body": "Khống chế sinh học ứng dụng mối quan hệ giữa các sinh vật (vật ăn thịt, kí sinh) làm thiên địch để tiêu diệt các sinh vật gây hại cho cây trồng và vật nuôi."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân tích các giải pháp",
+        "body": "Thả ong mắt đỏ là biện pháp sinh học lợi dụng tập tính của ong mắt đỏ đẻ trứng vào ổ trứng sâu đục thân, ấu trùng ong nở ra ăn hết chất dinh dưỡng của sâu hại. Đây là ứng dụng an toàn sinh học không làm ô nhiễm môi trường."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thả ong mắt đỏ kí sinh tiêu diệt sâu đục thân hại lúa là ứng dụng tiêu biểu của khống chế sinh học."
+      }
+    ],
+    "finalSolution": "Thả ong mắt đỏ kí sinh trứng sâu đục thân là ứng dụng dùng thiên địch trong khống chế sinh học, bảo vệ mùa màng an toàn bền vững.",
+    "commonMistakes": [
+      {
+        "id": "cm-08",
+        "message": "Nhầm việc phun hóa chất diệt cỏ/sâu diện rộng là giải pháp sinh học an toàn."
+      }
+    ]
+  }
+]

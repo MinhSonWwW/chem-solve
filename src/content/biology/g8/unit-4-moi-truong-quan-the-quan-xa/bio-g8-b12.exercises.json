@@ -1,0 +1,554 @@
+[
+  {
+    "id": "bio-g8-b12-q01",
+    "lessonId": "bio-g8-b12",
+    "sgkBaiSo": 41,
+    "skillIds": [
+      "bio-moi-truong-sinh-thai"
+    ],
+    "difficulty": 1,
+    "prompt": "Giun đũa kí sinh trong ruột non của người và bọ chét sống trên da chó thuộc về loại môi trường sống nào?",
+    "knowledge": [
+      "kb-bio-g8-bon-moi-truong-song"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Môi trường sinh vật (cơ thể vật chủ)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Môi trường đất ngầm"
+        },
+        {
+          "id": "opt-c",
+          "label": "Môi trường nước ngọt"
+        },
+        {
+          "id": "opt-d",
+          "label": "Môi trường cạn trên mặt đất"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Chúng không sống trong đất hay ngoài không khí mà lấy trực tiếp cơ thể sống của sinh vật khác làm nơi ở và lấy dinh dưỡng."
+      },
+      {
+        "level": 2,
+        "text": "Môi trường này được gọi là môi trường sinh vật."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định nơi cư trú của loài kí sinh",
+        "body": "Giun đũa và bọ chét sống bám trong hoặc trên cơ thể vật chủ sống."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc trưng môi trường sinh vật",
+        "body": "Cơ thể động vật, thực vật hay con người là nơi ở, nguồn cung cấp thức ăn cho các loài sinh vật kí sinh hoặc cộng sinh, cấu thành nên môi trường sinh vật."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Giun đũa và bọ chét thuộc môi trường sinh vật."
+      }
+    ],
+    "finalSolution": "Môi trường sinh vật là một trong 4 môi trường sống chủ yếu, đặc trưng cho các sinh vật kí sinh và cộng sinh.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng bọ chét thuộc môi trường cạn vì chó sống trên cạn."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b12-q02",
+    "lessonId": "bio-g8-b12",
+    "sgkBaiSo": 41,
+    "skillIds": [
+      "bio-moi-truong-sinh-thai"
+    ],
+    "difficulty": 1,
+    "prompt": "Nhóm các nhân tố nào dưới đây đều hoàn toàn thuộc nhóm nhân tố sinh thái vô sinh?",
+    "knowledge": [
+      "kb-bio-g8-nhan-to-sinh-thai"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Ánh sáng, nhiệt độ, độ ẩm không khí, lượng mưa và đất đá"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cây gỗ lim, nấm mốc và vi khuẩn hoại sinh"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chim sâu, ánh sáng mặt trời và chuột đồng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Độ mặn của nước, giun đất và khí oxygen"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhân tố vô sinh là các yếu tố vật lí và hóa học của môi trường không có sự sống."
+      },
+      {
+        "level": 2,
+        "text": "Gồm ánh sáng, khí hậu, nhiệt độ, nước, đất đá khoáng chất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân loại nhân tố sinh thái",
+        "body": "Chia thành nhân tố vô sinh (phi sinh học) và nhân tố hữu sinh (sinh vật và con người)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Các yếu tố vô sinh",
+        "body": "Ánh sáng, nhiệt độ, độ ẩm, lượng mưa, gió, khí O2, CO2 và chất khoáng thổ nhưỡng hoàn toàn là các yếu tố vật lí - hóa học không sống của môi trường."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Ánh sáng, nhiệt độ, độ ẩm, lượng mưa và đất đá là nhân tố vô sinh."
+      }
+    ],
+    "finalSolution": "Nhân tố vô sinh cấu thành nên sinh cảnh (môi trường sống vật lí) của mọi quần xã sinh vật.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Xếp nhầm vi khuẩn hay nấm vào nhóm nhân tố vô sinh."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b12-q03",
+    "lessonId": "bio-g8-b12",
+    "sgkBaiSo": 41,
+    "skillIds": [
+      "bio-moi-truong-sinh-thai"
+    ],
+    "difficulty": 2,
+    "prompt": "Vì sao con người được tách riêng thành một nhóm nhân tố sinh thái hữu sinh đặc biệt trong sinh thái học?",
+    "knowledge": [
+      "kb-bio-g8-nhan-to-sinh-thai"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vì con người có trí tuệ, có lao động sản xuất và có khả năng chủ động cải tạo hoặc phá hủy môi trường trên quy mô toàn cầu"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vì con người không cần trao đổi chất với môi trường tự nhiên"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì con người không chịu sự chi phối của bất kì nhân tố vô sinh nào"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì con người chỉ sinh sống được ở môi trường nhân tạo trong nhà"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khác với các loài động vật khác chỉ thích nghi thụ động, con người có tư duy khoa học và công nghệ."
+      },
+      {
+        "level": 2,
+        "text": "Con người tác động có ý thức làm biến đổi sâu sắc thiên nhiên trên quy mô toàn Trái Đất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Vị trí của con người trong sinh thái học",
+        "body": "Con người về mặt sinh học thuộc nhóm nhân tố hữu sinh nhưng có tác động vượt bậc."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Khả năng tác động có ý thức",
+        "body": "Con người có tư duy, ngôn ngữ và công cụ lao động. Hoạt động của con người có thể biến sa mạc thành rừng, thuần hóa giống loài; nhưng cũng có thể gây tuyệt chủng loài và biến đổi khí hậu trên diện rộng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Con người có trí tuệ, lao động có ý thức và tác động quy mô toàn cầu nên được xếp là nhân tố đặc biệt."
+      }
+    ],
+    "finalSolution": "Nhân tố con người mang trách nhiệm to lớn trong việc bảo tồn sự cân bằng sinh thái của hành tinh.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng con người không thuộc nhóm nhân tố hữu sinh."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b12-q04",
+    "lessonId": "bio-g8-b12",
+    "sgkBaiSo": 41,
+    "skillIds": [
+      "bio-moi-truong-sinh-thai"
+    ],
+    "difficulty": 2,
+    "prompt": "Giới hạn sinh thái của một loài sinh vật được định nghĩa như thế nào?",
+    "knowledge": [
+      "kb-bio-g8-gioi-han-sinh-thai"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Khoảng giá trị xác định của một nhân tố sinh thái mà trong đó sinh vật có thể tồn tại và phát triển ổn định theo thời gian"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vận tốc di chuyển tối đa của sinh vật khi bị kẻ săn mồi rượt đuổi"
+        },
+        {
+          "id": "opt-c",
+          "label": "Số lượng cá thể tối đa mà một cánh rừng có thể chứa đựng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tuổi thọ trung bình cao nhất của các cá thể trong loài"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đây là giới hạn chịu đựng về một yếu tố môi trường (như nhiệt độ, độ ẩm, độ mặn)."
+      },
+      {
+        "level": 2,
+        "text": "Khoảng giá trị nằm giữa điểm giới hạn dưới và điểm giới hạn trên."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khái niệm giới hạn sinh thái",
+        "body": "Sinh vật chỉ sống được trong một khoảng giới hạn nhất định của từng nhân tố môi trường."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Định nghĩa chuẩn",
+        "body": "Giới hạn sinh thái là khoảng giá trị của một nhân tố sinh thái mà ở đó sinh vật có thể tồn tại và phát triển ổn định; vượt ra ngoài giới hạn này sinh vật sẽ chết."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Giới hạn sinh thái là khoảng giá trị của nhân tố sinh thái giúp sinh vật tồn tại và phát triển."
+      }
+    ],
+    "finalSolution": "Mỗi loài sinh vật đều có giới hạn sinh thái đặc trưng cho từng nhân tố môi trường (nhiệt độ, độ ẩm, pH...).",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm giới hạn sinh thái với sức chứa tối đa của quần thể."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b12-q05",
+    "lessonId": "bio-g8-b12",
+    "sgkBaiSo": 41,
+    "skillIds": [
+      "bio-moi-truong-sinh-thai"
+    ],
+    "difficulty": 2,
+    "prompt": "Cá rô phi ở nước ta có giới hạn chịu nhiệt từ 5,6°C đến 42°C, khoảng thuận lợi từ 20°C đến 35°C. Điều gì sẽ xảy ra nếu nhiệt độ nước trong ao nuôi hạ xuống 4°C trong đợt rét đậm?",
+    "knowledge": [
+      "kb-bio-g8-gioi-han-sinh-thai"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Nhiệt độ 4°C vượt quá điểm giới hạn dưới (5,6°C) nên cá rô phi sẽ bị chết cóng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cá rô phi sẽ phát triển mạnh hơn do nước lạnh kích thích bơi lội"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cá rô phi sẽ tự biến đổi thành loài cá rộng nhiệt chịu lạnh"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cá rô phi vẫn sinh trưởng bình thường không bị ảnh hưởng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Điểm 5,6°C là điểm giới hạn dưới (điểm gây chết dưới) của cá rô phi."
+      },
+      {
+        "level": 2,
+        "text": "4°C < 5,6°C nằm ngoài giới hạn sinh thái nên cá không thể sống sót."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đối chiếu thông số sinh thái",
+        "body": "Cá rô phi có điểm giới hạn dưới là 5,6°C. Nhiệt độ môi trường thực tế là 4°C."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hậu quả khi vượt giới hạn chịu đựng",
+        "body": "Khi nhiệt độ môi trường hạ xuống thấp hơn điểm giới hạn dưới (4°C < 5,6°C), các phản ứng sinh hóa của cá bị ngừng trệ hoàn toàn dẫn đến tử vong hàng loạt."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Vượt quá điểm giới hạn dưới (5,6°C) nên cá rô phi sẽ bị chết cóng."
+      }
+    ],
+    "finalSolution": "Trong thực tế nông nghiệp, nông dân miền Bắc phải che chắn phủ bạt hoặc dồn nước sâu để chống rét cho cá rô phi vào mùa đông.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng 4°C chỉ làm cá chậm lớn chứ không làm chết cá."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b12-q06",
+    "lessonId": "bio-g8-b12",
+    "sgkBaiSo": 41,
+    "skillIds": [
+      "bio-moi-truong-sinh-thai"
+    ],
+    "difficulty": 2,
+    "prompt": "So với các loài sinh vật có giới hạn sinh thái hẹp (hẹp nhiệt, hẹp muối), các loài sinh vật có giới hạn sinh thái rộng có ưu thế sinh thái nào?",
+    "knowledge": [
+      "kb-bio-g8-gioi-han-sinh-thai"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Có vùng phân bố địa lí rộng lớn hơn và khả năng thích nghi cao hơn trước các biến động môi trường"
+        },
+        {
+          "id": "opt-b",
+          "label": "Luôn có kích thước cơ thể khổng lồ hơn mọi loài khác"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chỉ sinh sống được ở một hang động biệt lập duy nhất"
+        },
+        {
+          "id": "opt-d",
+          "label": "Không cần ánh sáng mặt trời để tổng hợp chất hữu cơ"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Loài chịu đựng được biên độ nhiệt độ hoặc độ mặn dao động lớn sẽ di chuyển và định cư được ở nhiều nơi."
+      },
+      {
+        "level": 2,
+        "text": "Giới hạn sinh thái rộng mang lại vùng phân bố rộng khắp."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quy luật về độ rộng giới hạn sinh thái",
+        "body": "Khả năng chống chịu của sinh vật quyết định không gian sống của chúng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Mối liên hệ giữa giới hạn và vùng phân bố",
+        "body": "Loài rộng sinh thái (như chim bồ câu, cỏ dại) chịu đựng được dải biến đổi nhiệt độ, độ ẩm rộng nên phân bố ở hầu khắp các lục địa; trong khi loài hẹp nhiệt (như san hô, cá tuyết) chỉ sống ở vùng biển đặc thù."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Có vùng phân bố địa lí rộng lớn và khả năng thích nghi cao hơn."
+      }
+    ],
+    "finalSolution": "Giới hạn sinh thái rộng là đặc tính tiến hóa quan trọng giúp loài bành trướng sinh quyển thành công.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng loài hẹp nhiệt có vùng phân bố rộng hơn loài rộng nhiệt."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b12-q07",
+    "lessonId": "bio-g8-b12",
+    "sgkBaiSo": 41,
+    "skillIds": [
+      "bio-moi-truong-sinh-thai"
+    ],
+    "difficulty": 2,
+    "prompt": "Cây mọc ở nơi quang đãng nhiều ánh sáng (cây ưa sáng) thường có đặc điểm hình thái lá thích nghi như thế nào so với cây mọc dưới bóng râm (cây ưa bóng)?",
+    "knowledge": [
+      "kb-bio-g8-nhan-to-sinh-thai"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Phiến lá nhỏ, dày, màu xanh nhạt, có lớp cutin dày bóng để giảm thoát hơi nước"
+        },
+        {
+          "id": "opt-b",
+          "label": "Phiến lá bản to, mỏng, màu xanh thẫm và không có lớp sáp cutin"
+        },
+        {
+          "id": "opt-c",
+          "label": "Lá tiêu biến hoàn toàn thành các gai nhọn để quang hợp"
+        },
+        {
+          "id": "opt-d",
+          "label": "Lá cây ưa sáng hoàn toàn không chứa hạt diệp lục"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nơi nhiều nắng gắt cần lá dày, phiến hẹp nghiêng đón ánh sáng và tránh mất nước."
+      },
+      {
+        "level": 2,
+        "text": "Lá cây ưa bóng bản to mỏng xanh đậm để bắt ánh sáng tán xạ yếu dưới tán rừng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Sự thích nghi hình thái thực vật theo ánh sáng",
+        "body": "Ánh sáng là nhân tố sinh thái chi phối trực tiếp cấu tạo và màu sắc lá cây."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc điểm cây ưa sáng và cây ưa bóng",
+        "body": "Cây ưa sáng mọc ngoài trảng trống có phiến lá nhỏ, mô giậu phát triển dày, màu xanh sáng, tầng cutin dày phản chiếu bớt ánh sáng gắt; cây ưa bóng có lá to mỏng, màu xanh thẫm giàu diệp lục để hấp thụ tối đa ánh sáng yếu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cây ưa sáng có phiến lá nhỏ, dày, màu xanh nhạt và tầng cutin bóng."
+      }
+    ],
+    "finalSolution": "Hình thái phiến lá phản ánh rõ rệt sự thích nghi tinh tế của thực vật đối với chế độ chiếu sáng của môi trường.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng cây ưa sáng lá phải to hơn cây ưa bóng để hứng nhiều nắng."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b12-q08",
+    "lessonId": "bio-g8-b12",
+    "sgkBaiSo": 41,
+    "skillIds": [
+      "bio-moi-truong-sinh-thai"
+    ],
+    "difficulty": 3,
+    "prompt": "Hiểu biết về giới hạn sinh thái của cây trồng có ý nghĩa thực tiễn quan trọng nào trong sản xuất nông nghiệp?",
+    "knowledge": [
+      "kb-bio-g8-gioi-han-sinh-thai"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Bố trí thời vụ gieo trồng hợp lí, thuần hóa giống cây và áp dụng các biện pháp tưới tiêu, che chắn chống rét hoặc chống nóng hiệu quả"
+        },
+        {
+          "id": "opt-b",
+          "label": "Có thể gieo trồng bất kì loại cây nào ở mọi thời điểm trong năm mà không cần chăm sóc"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tăng tối đa lượng thuốc trừ sâu hóa học để mở rộng giới hạn chịu đựng của cây"
+        },
+        {
+          "id": "opt-d",
+          "label": "Bỏ hẳn việc bón phân vì cây tự điều hòa trong mọi điều kiện"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mỗi giống cây trồng phù hợp với một mùa vụ xác định tương ứng khoảng thuận lợi nhiệt độ và ánh sáng."
+      },
+      {
+        "level": 2,
+        "text": "Nông dân thâm canh trồng cây đúng vụ và làm nhà lưới che chắn để tối ưu năng suất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Ứng dụng sinh thái học trong nông nghiệp",
+        "body": "Nắm vững giới hạn sinh thái giúp nhà nông tạo môi trường tối ưu cho cây trồng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Biện pháp thâm canh vụ mùa",
+        "body": "Hiểu rõ khoảng thuận lợi nhiệt độ, độ ẩm giúp bố trí lịch gieo trồng đúng vụ (vụ đông, vụ xuân hè), du nhập giống mới phù hợp thổ nhưỡng và áp dụng nhà kính, nhà lưới điều tiết tiểu khí hậu cho năng suất cao nhất."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Bố trí thời vụ hợp lí, chọn giống phù hợp và áp dụng che chắn, tưới tiêu tối ưu."
+      }
+    ],
+    "finalSolution": "Tôn trọng quy luật giới hạn sinh thái là nền tảng của nông nghiệp công nghệ cao và phát triển bền vững.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng dùng phân bón và thuốc kích thích có thể phá vỡ hoàn toàn giới hạn nhiệt độ của cây trồng."
+      }
+    ]
+  }
+]

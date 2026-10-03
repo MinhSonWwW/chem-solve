@@ -1,0 +1,298 @@
+[
+  {
+    "id": "bio-g6-b17-q01",
+    "lessonId": "bio-g6-b17",
+    "sgkBaiSo": 32,
+    "skillIds": ["bio-gioi-nam"],
+    "difficulty": 1,
+    "prompt": "Ghép nối từng đại diện của giới Nấm (cột bên trái) với đúng đặc điểm hình thái và ứng dụng thực tiễn của nó (cột bên phải):",
+    "knowledge": ["bio-gioi-nam"],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Nấm men",
+          "right": "Cơ thể đơn bào mọc chồi, dùng lên men làm nở bột bánh mì và ủ rượu"
+        },
+        {
+          "left": "Nấm mốc xanh (Penicillium)",
+          "right": "Cơ thể dạng sợi mang chuỗi bào tử, dùng sản xuất thuốc kháng sinh penicillin"
+        },
+        {
+          "left": "Nấm rơm",
+          "right": "Nấm thể quả lớn có mũ và cuống nấm rõ rệt, dùng làm thực phẩm giàu dinh dưỡng"
+        },
+        {
+          "left": "Nấm linh chi",
+          "right": "Nấm thể quả hóa gỗ bền chắc, dùng làm dược liệu quý bồi bổ sức khỏe"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nấm men là nấm đơn bào làm nở bánh mì."
+      },
+      {
+        "level": 2,
+        "text": "Kháng sinh penicillin được chiết xuất từ nấm mốc xanh Penicillium."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu bài tập",
+        "body": "Nối 4 loài nấm tiêu biểu với đặc điểm và ứng dụng đời sống."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu từng đại diện",
+        "body": "Nấm men: đơn bào làm bánh mì; Nấm mốc xanh: sản xuất penicillin; Nấm rơm: thực phẩm; Nấm linh chi: dược liệu quý."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất ghép cặp",
+        "body": "Khớp đúng 4 cặp nấm."
+      }
+    ],
+    "finalSolution": "Nấm men: Đơn bào làm nở bánh mì; Nấm mốc xanh: Sản xuất penicillin; Nấm rơm: Nấm ăn giàu đạm; Nấm linh chi: Dược liệu quý hóa gỗ.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm nấm men (đơn bào) với nấm rơm (đa bào thể quả lớn)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b17-q02",
+    "lessonId": "bio-g6-b17",
+    "sgkBaiSo": 32,
+    "skillIds": ["bio-gioi-nam"],
+    "difficulty": 2,
+    "prompt": "Phân loại các hiện tượng sau đây vào hai nhóm: 'Lợi ích của nấm' và 'Tác hại của nấm':",
+    "knowledge": ["bio-gioi-nam"],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "b-benefit", "label": "Lợi ích của nấm đối với con người" },
+        { "id": "b-harm", "label": "Tác hại của nấm đối với đời sống" }
+      ],
+      "items": [
+        { "id": "it-1", "label": "Dùng làm thực phẩm thơm ngon và giàu chất đạm (nấm rơm, nấm hương)", "bucketId": "b-benefit" },
+        { "id": "it-2", "label": "Sản xuất thuốc kháng sinh penicillin cứu sống nhiều bệnh nhân", "bucketId": "b-benefit" },
+        { "id": "it-3", "label": "Lên men bột nở bánh mì và ủ rượu bia từ nấm men", "bucketId": "b-benefit" },
+        { "id": "it-4", "label": "Gây bệnh nấm da hắc lào, lang ben, ngứa ngáy ở người", "bucketId": "b-harm" },
+        { "id": "it-5", "label": "Làm mốc thiu hạt lạc, ngô sinh độc tố aflatoxin gây ung thư gan", "bucketId": "b-harm" },
+        { "id": "it-6", "label": "Nấm độc rừng gây ngộ độc nôn mửa và tử vong khi ăn nhầm", "bucketId": "b-harm" }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Làm thực phẩm, dược liệu, lên men là các lợi ích to lớn."
+      },
+      {
+        "level": 2,
+        "text": "Bệnh ngoài da hắc lào, nấm mốc độc aflatoxin, ngộ độc nấm là các tác hại nguy hiểm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 6 hoạt động",
+        "body": "Đánh giá mặt lợi và mặt hại của giới Nấm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu kiến thức SGK",
+        "body": "Lợi ích: Thực phẩm, kháng sinh, men bánh mì. Tác hại: Nấm da (hắc lào, lang ben), độc tố aflatoxin lạc mốc, ngộ độc nấm rừng."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất phân loại",
+        "body": "3 lợi ích và 3 tác hại được xếp chính xác."
+      }
+    ],
+    "finalSolution": "Lợi ích: Làm thực phẩm nấm ăn, Sản xuất kháng sinh penicillin, Lên men làm nở bánh mì. Tác hại: Bệnh hắc lào lang ben, Độc tố aflatoxin lạc mốc, Ngộ độc nấm độc rừng.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Nghĩ rằng lạc mốc chỉ cần rửa sạch phơi khô là hết độc tố (thực tế độc tố aflatoxin không bị phân hủy bởi nhiệt độ nấu thông thường)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b17-q03",
+    "lessonId": "bio-g6-b17",
+    "sgkBaiSo": 32,
+    "skillIds": ["bio-gioi-nam"],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp các bộ phận cấu tạo của một cây nấm thể quả (như nấm rơm) theo thứ tự từ trên đỉnh cao nhất xuống dưới gốc:",
+    "knowledge": ["bio-gioi-nam"],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "1. Mũ nấm (ở đỉnh trên cùng che chắn)",
+        "2. Phiến nấm (ở mặt dưới mũ nấm chứa các bào tử)",
+        "3. Vòng cuống nấm (màng mỏng bao quanh thân nấm)",
+        "4. Cuống nấm (thân nấm nâng đỡ mũ nấm)",
+        "5. Bao gốc nấm (phần phình to ở dưới đáy gốc nấm)"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mũ nấm ở đỉnh trên cùng xòe rộng như chiếc ô."
+      },
+      {
+        "level": 2,
+        "text": "Bao gốc nấm nằm ở phần đáy dưới cùng cắm vào giá thể."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Giải phẫu nấm thể quả",
+        "body": "Xếp 5 bộ phận từ đỉnh nấm xuống gốc nấm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cấu trúc theo SGK",
+        "body": "Mũ nấm → Phiến nấm (dưới mũ) → Vòng cuống → Cuống nấm → Bao gốc nấm."
+      },
+      {
+        "kind": "answer",
+        "title": "Thứ tự chính xác",
+        "body": "Mũ nấm (1) đến Bao gốc nấm (5)."
+      }
+    ],
+    "finalSolution": "Thứ tự từ đỉnh xuống gốc: Mũ nấm → Phiến nấm → Vòng cuống nấm → Cuống nấm → Bao gốc nấm.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Đảo vị trí giữa bao gốc nấm lên trên đỉnh mũ nấm."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b17-q04",
+    "lessonId": "bio-g6-b17",
+    "sgkBaiSo": 32,
+    "skillIds": ["bio-gioi-nam"],
+    "difficulty": 1,
+    "prompt": "Khi quan sát một cây nấm hoang dại trong rừng, dấu hiệu nào sau đây là dấu hiệu cảnh báo cây nấm đó CỰC KỲ ĐỘC không được hái ăn?",
+    "knowledge": ["bio-gioi-nam"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Màu sắc sặc sỡ hoặc trắng toát, có đầy đủ cả vòng cuống và bao gốc phình to hình chén" },
+        { "id": "opt-b", "label": "Mọc trên đống rơm rạ mục ẩm ướt ở vườn nhà" },
+        { "id": "opt-c", "label": "Có mùi thơm ngọt ngào của nấm hương" },
+        { "id": "opt-d", "label": "Được bày bán có nhãn mác trong siêu thị" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nấm độc tán trắng hoặc nấm độc đỏ thường có vòng cuống và bao gốc rất đặc trưng."
+      },
+      {
+        "level": 2,
+        "text": "Sự hiện diện đồng thời của vòng cuống và bao gốc là dấu hiệu nguy hiểm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận diện nấm độc",
+        "body": "Tìm đặc điểm cảnh báo nguy hiểm của nấm hoang dại."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc điểm nhận dạng theo SGK",
+        "body": "Nấm cực độc (như nấm tán trắng, nấm độc đỏ) thường có màu sắc bắt mắt hoặc trắng toát, trên cuống có vòng cuống và dưới gốc có bao gốc phình to hình chén."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn phương án đúng",
+        "body": "Lựa chọn chính xác là dấu hiệu cảnh báo chuẩn xác."
+      }
+    ],
+    "finalSolution": "Cây nấm có màu sắc sặc sỡ hoặc trắng toát, có đủ cả vòng cuống và bao gốc phình to là dấu hiệu điển hình của các loài nấm cực độc chết người.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Nghĩ rằng nấm màu trắng tinh khiết thì chắc chắn không có độc."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b17-q05",
+    "lessonId": "bio-g6-b17",
+    "sgkBaiSo": 32,
+    "skillIds": ["bio-gioi-nam"],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về giới Nấm:",
+    "knowledge": ["bio-gioi-nam"],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Nấm là những sinh vật dị dưỡng, hoàn toàn không có chất diệp lục nên không thể quang hợp.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Nấm men là sinh vật đơn bào sinh sản vô tính bằng cách mọc chồi.",
+          "correct": true
+        },
+        {
+          "id": "st-3",
+          "text": "Hạt lạc hay ngô bị mốc có thể rửa sạch bằng nước sôi rồi ăn bình thường mà không sợ độc tố.",
+          "correct": false
+        },
+        {
+          "id": "st-4",
+          "text": "Bệnh hắc lào và lang ben ở người là do virus gây ra chứ không liên quan đến nấm.",
+          "correct": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Độc tố aflatoxin trong lạc mốc không bị phân hủy bởi nhiệt độ sôi thông thường và gây ung thư gan."
+      },
+      {
+        "level": 2,
+        "text": "Hắc lào, lang ben là các bệnh do nấm sợi ký sinh ngoài da gây ra."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Đánh giá từng câu về sinh lý, sinh sản và tác hại của nấm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra chi tiết",
+        "body": "1. Dị dưỡng không diệp lục: Đúng. 2. Nấm men mọc chồi: Đúng. 3. Rửa lạc mốc ăn được: Sai (aflatoxin cực độc không phân hủy bởi nước sôi). 4. Hắc lào do virus: Sai (do nấm da)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Ý 1: Đúng; Ý 2: Đúng; Ý 3: Sai; Ý 4: Sai."
+      }
+    ],
+    "finalSolution": "Phát biểu 1 và 2 đúng. Phát biểu 3 sai (lạc mốc chứa aflatoxin cực độc tuyệt đối không được ăn). Phát biểu 4 sai (hắc lào, lang ben do nấm da gây ra).",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng luộc chín hạt lạc mốc sẽ làm mất hoàn toàn độc tố nấm mốc."
+      }
+    ]
+  }
+]

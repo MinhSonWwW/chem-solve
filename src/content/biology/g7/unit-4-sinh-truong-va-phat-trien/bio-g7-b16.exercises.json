@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g7-b16-q01",
+    "lessonId": "bio-g7-b16",
+    "sgkBaiSo": 36,
+    "skillIds": ["bio-sinh-truong-phat-trien"],
+    "difficulty": 1,
+    "prompt": "Khái niệm 'Sinh trưởng ở sinh vật' được định nghĩa chuẩn xác là:",
+    "knowledge": ["kb-bio-g7-sinh-truong-phat-trien"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Sự tăng lên về kích thước và khối lượng của cơ thể do tăng số lượng và kích thước tế bào" },
+        { "id": "opt-b", "label": "Quá trình phân hóa tế bào phát sinh các cơ quan sinh sản mới" },
+        { "id": "opt-c", "label": "Khả năng phản ứng lại kích thích từ môi trường ngoài để thích nghi" },
+        { "id": "opt-d", "label": "Sự chuyển hóa năng lượng ánh sáng thành năng lượng hóa học ATP" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Sinh trưởng là sự biến đổi về mặt định lượng đo đếm được (chiều dài, khối lượng)." },
+      { "level": 2, "text": "Gắn liền với sự gia tăng số lượng tế bào qua nguyên phân và sự phình to của tế bào." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định khái niệm", "body": "Tìm định nghĩa sinh học chính xác về sinh trưởng." },
+      { "kind": "knowledge", "title": "Định nghĩa sinh trưởng", "body": "Sinh trưởng là sự tăng kích thước và khối lượng cơ thể nhờ tế bào phân chia và lớn lên." },
+      { "kind": "answer", "title": "Kết luận", "body": "Sự tăng lên về kích thước và khối lượng của cơ thể do tăng số lượng và kích thước tế bào." }
+    ],
+    "finalSolution": "Sinh trưởng là sự gia tăng kích thước và khối lượng của cơ thể do tăng số lượng và kích thước tế bào.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn giữa sinh trưởng (tăng kích thước, cân nặng) với phát triển (phân hóa cơ quan mới)." }
+    ]
+  },
+  {
+    "id": "bio-g7-b16-q02",
+    "lessonId": "bio-g7-b16",
+    "sgkBaiSo": 36,
+    "skillIds": ["bio-sinh-truong-phat-trien"],
+    "difficulty": 1,
+    "prompt": "Hiện tượng nào sau đây là minh chứng rõ nhất cho quá trình PHÁT TRIỂN ở thực vật?",
+    "knowledge": ["kb-bio-g7-sinh-truong-phat-trien"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Hạt đậu nảy mầm ra lá mầm và cây trổ nụ nở hoa kết quả" },
+        { "id": "opt-b", "label": "Thân cây mía cao thêm 50 cm sau một tháng mưa nhiều" },
+        { "id": "opt-c", "label": "Củ khoai tây tăng khối lượng từ 50 g lên 120 g" },
+        { "id": "opt-d", "label": "Rễ cây bưởi dài thêm 15 cm đâm sâu vào đất" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Phát triển bao gồm sự xuất hiện của các cơ quan mới hoặc chức năng mới trong đời cá thể." },
+      { "level": 2, "text": "Sự hình thành hoa, quả và hạt là giai đoạn biến đổi chất lượng phát triển sinh sản." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân biệt sinh trưởng vs phát triển", "body": "Tìm hiện tượng có sự phân hóa mô và cơ quan mới." },
+      { "kind": "knowledge", "title": "Bản chất phát triển", "body": "Nảy mầm và trổ hoa là quá trình phát triển (phân hóa phát sinh cơ quan mới), các trường hợp còn lại chỉ là tăng kích thước (sinh trưởng)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hạt đậu nảy mầm ra lá mầm và cây trổ nụ nở hoa kết quả." }
+    ],
+    "finalSolution": "Cây nảy mầm và trổ hoa là quá trình phát triển vì có sự hình thành cơ quan và chức năng sinh học mới.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng cây cứ lớn lên về chiều dài là đã bao hàm cả phát triển hoa quả." }
+    ]
+  },
+  {
+    "id": "bio-g7-b16-q03",
+    "lessonId": "bio-g7-b16",
+    "sgkBaiSo": 36,
+    "skillIds": ["bio-sinh-truong-phat-trien"],
+    "difficulty": 1,
+    "prompt": "Mô phân sinh đỉnh ở thực vật phân bố ở những vị trí nào và có chức năng gì?",
+    "knowledge": ["kb-bio-g7-mo-phan-sinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Nằm ở đỉnh chồi ngọn, chồi nách và chóp rễ, giúp thân, cành và rễ dài ra theo chiều cao" },
+        { "id": "opt-b", "label": "Nằm ở phần vỏ thân, giúp cây to ra về đường kính bề ngang" },
+        { "id": "opt-c", "label": "Nằm ở phiến lá, giúp lá hấp thụ khí carbon dioxide" },
+        { "id": "opt-d", "label": "Nằm ở cánh hoa, giúp tạo hương thơm quyến rũ côn trùng" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Mô phân sinh 'đỉnh' nằm ở các đỉnh ngọn và đầu mút của cây." },
+      { "level": 2, "text": "Các tế bào ở đỉnh phân chia giúp cây vươn cao lên trời và rễ đâm sâu xuống đất." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định vị trí và vai trò", "body": "Khảo sát đặc điểm giải phẫu của mô phân sinh đỉnh ở thực vật." },
+      { "kind": "knowledge", "title": "Mô phân sinh đỉnh", "body": "Mô phân sinh đỉnh nằm ở chồi ngọn, chồi nách, chóp rễ; phân chia làm tăng chiều dài của thân và rễ cây." },
+      { "kind": "answer", "title": "Kết luận", "body": "Nằm ở đỉnh chồi ngọn, chồi nách và chóp rễ, giúp thân, cành và rễ dài ra theo chiều cao." }
+    ],
+    "finalSolution": "Mô phân sinh đỉnh ở chồi ngọn và chóp rễ giúp thân và rễ dài ra theo chiều dài sinh trưởng sơ cấp.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm chức năng của mô phân sinh đỉnh (làm cây dài ra) với mô phân sinh bên (làm thân to ra)." }
+    ]
+  },
+  {
+    "id": "bio-g7-b16-q04",
+    "lessonId": "bio-g7-b16",
+    "sgkBaiSo": 36,
+    "skillIds": ["bio-sinh-truong-phat-trien"],
+    "difficulty": 2,
+    "prompt": "Ở các cây thân gỗ hai lá mầm (như cây xà cừ, cây phượng vĩ), thân cây to ra về đường kính bề ngang hàng năm là nhờ hoạt động của mô nào?",
+    "knowledge": ["kb-bio-g7-mo-phan-sinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Mô phân sinh bên (tầng sinh vỏ và tầng sinh trụ)" },
+        { "id": "opt-b", "label": "Mô phân sinh đỉnh ở chóp rễ" },
+        { "id": "opt-c", "label": "Mô phân sinh lóng ở gốc thân" },
+        { "id": "opt-d", "label": "Hệ thống khí khổng trên bề mặt vỏ cây" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Mô này phân bố thành hình trụ dọc theo chu vi của thân cây thân gỗ." },
+      { "level": 2, "text": "Sự phân chia của tầng sinh vỏ và tầng sinh mạch tạo nên các vòng gỗ đồng tâm hàng năm." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định loại mô sinh trưởng thứ cấp", "body": "Tìm mô chịu trách nhiệm cho sự phát triển kích thước bề ngang của thân gỗ." },
+      { "kind": "knowledge", "title": "Mô phân sinh bên", "body": "Mô phân sinh bên (gồm tầng sinh vỏ và tầng sinh trụ) phân chia giúp thân to ra bề ngang, tạo vòng gỗ hàng năm." },
+      { "kind": "answer", "title": "Kết luận", "body": "Mô phân sinh bên (tầng sinh vỏ và tầng sinh trụ)." }
+    ],
+    "finalSolution": "Thân cây gỗ to ra về bề ngang nhờ hoạt động phân chia của mô phân sinh bên (tầng sinh vỏ và tầng sinh trụ).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng cây một lá mầm như tre, lúa cũng có mô phân sinh bên tạo vòng gỗ." }
+    ]
+  },
+  {
+    "id": "bio-g7-b16-q05",
+    "lessonId": "bio-g7-b16",
+    "sgkBaiSo": 36,
+    "skillIds": ["bio-sinh-truong-phat-trien"],
+    "difficulty": 1,
+    "prompt": "Đặc điểm nào sau đây là của kiểu phát triển QUA BIẾN THÁI HOÀN TOÀN ở động vật?",
+    "knowledge": ["kb-bio-g7-cac-kieu-bien-thai"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Ấu trùng có hình thái, cấu tạo và tập tính hoàn toàn khác biệt với con trưởng thành, trải qua giai đoạn nhộng" },
+        { "id": "opt-b", "label": "Con non sinh ra có hình thái giống hệt con lớn và không thay đổi gì" },
+        { "id": "opt-c", "label": "Con non chỉ cần lột xác 1 lần duy nhất rồi thành con trưởng thành ngay" },
+        { "id": "opt-d", "label": "Không trải qua giai đoạn phôi thai trong trứng" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Hãy nghĩ đến vòng đời từ sâu róm bò cắn lá chuyển thành bướm có cánh bay lượn." },
+      { "level": 2, "text": "Ấu trùng và con trưởng thành khác biệt hoàn toàn về cấu tạo và phải qua giai đoạn trung gian là nhộng." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận diện biến thái hoàn toàn", "body": "Tìm đặc điểm phân loại của kiểu phát triển qua biến thái hoàn toàn." },
+      { "kind": "knowledge", "title": "Biến thái hoàn toàn", "body": "Ấu trùng khác biệt hoàn toàn với con trưởng thành về hình thái, giải phẫu, thức ăn và trải qua giai đoạn nhộng biến đổi." },
+      { "kind": "answer", "title": "Kết luận", "body": "Ấu trùng có hình thái, cấu tạo và tập tính hoàn toàn khác biệt với con trưởng thành, trải qua giai đoạn nhộng." }
+    ],
+    "finalSolution": "Biến thái hoàn toàn có ấu trùng khác biệt hoàn toàn con trưởng thành và phải qua giai đoạn nhộng (ở côn trùng).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn giữa biến thái hoàn toàn (có giai đoạn nhộng) với biến thái không hoàn toàn (không có nhộng)." }
+    ]
+  },
+  {
+    "id": "bio-g7-b16-q06",
+    "lessonId": "bio-g7-b16",
+    "sgkBaiSo": 36,
+    "skillIds": ["bio-sinh-truong-phat-trien"],
+    "difficulty": 2,
+    "prompt": "Nhóm sinh vật nào sau đây đều có kiểu phát triển qua BIẾN THÁI HOÀN TOÀN?",
+    "knowledge": ["kb-bio-g7-cac-kieu-bien-thai"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Bướm cải, ruồi nhà, muỗi vằn, ong mật, ếch đồng" },
+        { "id": "opt-b", "label": "Châu chấu, gián nhà, dế mèn, cào cào" },
+        { "id": "opt-c", "label": "Chó, mèo, lợn, gà bồ câu" },
+        { "id": "opt-d", "label": "Cá chép, thằn lằn, rùa biển" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Tìm nhóm loài mà con non (sâu non, dòi, bọ gậy, nòng nọc) khác xa con lớn." },
+      { "level": 2, "text": "Châu chấu và gián là biến thái không hoàn toàn; gà, chó là không qua biến thái." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại các loài động vật", "body": "Lọc danh sách các loài có kiểu phát triển biến thái hoàn toàn." },
+      { "kind": "knowledge", "title": "Các đại diện biến thái hoàn toàn", "body": "Bướm, ruồi, muỗi, ong, bọ cánh cứng (sâu non → nhộng → trưởng thành) và ếch nhái (nòng nọc → ếch)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Bướm cải, ruồi nhà, muỗi vằn, ong mật, ếch đồng." }
+    ],
+    "finalSolution": "Bướm cải, ruồi, muỗi, ong và ếch đồng đều phát triển qua biến thái hoàn toàn.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Xếp châu chấu hoặc gián vào biến thái hoàn toàn (thực tế chúng là biến thái không hoàn toàn vì không có nhộng)." }
+    ]
+  },
+  {
+    "id": "bio-g7-b16-q07",
+    "lessonId": "bio-g7-b16",
+    "sgkBaiSo": 36,
+    "skillIds": ["bio-sinh-truong-phat-trien"],
+    "difficulty": 1,
+    "prompt": "Vòng đời của châu chấu gồm các giai đoạn nào và thuộc kiểu phát triển nào?",
+    "knowledge": ["kb-bio-g7-cac-kieu-bien-thai"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Trứng → Ấu trùng (châu chấu non qua nhiều lần lột xác) → Châu chấu trưởng thành (Biến thái không hoàn toàn)" },
+        { "id": "opt-b", "label": "Trứng → Sâu non → Nhộng bất động → Châu chấu trưởng thành (Biến thái hoàn toàn)" },
+        { "id": "opt-c", "label": "Phôi thai trong bụng mẹ → Châu chấu con lớn lên (Không qua biến thái)" },
+        { "id": "opt-d", "label": "Trứng → Nòng nọc → Châu chấu trưởng thành" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Châu chấu non sinh ra đã có dạng gần giống châu chấu lớn, chỉ thiếu cánh." },
+      { "level": 2, "text": "Châu chấu không trải qua giai đoạn nhộng, nó lột xác nhiều lần để thành con trưởng thành." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định vòng đời châu chấu", "body": "Khảo sát chu trình phát triển của châu chấu." },
+      { "kind": "knowledge", "title": "Vòng đời biến thái không hoàn toàn", "body": "Châu chấu gồm 3 giai đoạn: Trứng → Ấu trùng (lột xác) → Con trưởng thành, không có giai đoạn nhộng." },
+      { "kind": "answer", "title": "Kết luận", "body": "Trứng → Ấu trùng (châu chấu non qua nhiều lần lột xác) → Châu chấu trưởng thành (Biến thái không hoàn toàn)." }
+    ],
+    "finalSolution": "Châu chấu phát triển qua biến thái không hoàn toàn: Trứng → Ấu trùng → Con trưởng thành.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng châu chấu cũng hóa nhộng như loài bướm." }
+    ]
+  },
+  {
+    "id": "bio-g7-b16-q08",
+    "lessonId": "bio-g7-b16",
+    "sgkBaiSo": 36,
+    "skillIds": ["bio-sinh-truong-phat-trien"],
+    "difficulty": 2,
+    "prompt": "Nhóm động vật nào sau đây có kiểu phát triển KHÔNG QUA BIẾN THÁI (con non sinh ra có cấu tạo giải phẫu và hình thái tương tự con trưởng thành)?",
+    "knowledge": ["kb-bio-g7-cac-kieu-bien-thai"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Chó, mèo, người, bò sát, chim bồ câu" },
+        { "id": "opt-b", "label": "Muỗi vằn, bướm tằm, ruồi giấm" },
+        { "id": "opt-c", "label": "Ếch đồng, cóc nhà, giông cát" },
+        { "id": "opt-d", "label": "Dế mèn, chuồn chuồn, bọ ngựa" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Con non sinh ra đã có đầy đủ mắt, mũi, chân tay giống con trưởng thành chỉ nhỏ hơn về kích thước." },
+      { "level": 2, "text": "Động vật có vú, lớp chim và lớp bò sát phát triển không qua biến thái." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận diện phát triển không qua biến thái", "body": "Tìm nhóm sinh vật có con non không thay đổi đột ngột về hình thái trong quá trình lớn lên." },
+      { "kind": "knowledge", "title": "Không qua biến thái", "body": "Động vật có vú, chim, bò sát phát triển không qua biến thái, con non sinh ra có hình thái giống cá thể trưởng thành." },
+      { "kind": "answer", "title": "Kết luận", "body": "Chó, mèo, người, bò sát, chim bồ câu." }
+    ],
+    "finalSolution": "Chó, mèo, người, chim, bò sát phát triển không qua biến thái, con non tương tự con trưởng thành.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng việc con non lớn lên tăng cân cũng là 'biến thái'." }
+    ]
+  }
+]

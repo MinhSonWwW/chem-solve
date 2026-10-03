@@ -1,0 +1,57 @@
+[
+  {
+    "id": "kb-bio-g8-khai-niem-he-sinh-thai",
+    "title": "Khái niệm và cấu trúc thành phần của hệ sinh thái",
+    "description": "Hệ sinh thái bao gồm quần xã sinh vật và sinh cảnh (thành phần vô sinh); sinh vật tương tác mật thiết với nhau và với môi trường tạo thành một hệ thống sinh học hoàn chỉnh."
+  },
+  {
+    "id": "kb-bio-g8-chuoi-luoi-thuc-an",
+    "title": "Chuỗi thức ăn và lưới thức ăn trong hệ sinh thái",
+    "description": "Chuỗi thức ăn gồm nhiều loài sinh vật có quan hệ dinh dưỡng, mỗi loài là một mắt xích; lưới thức ăn là tập hợp các chuỗi thức ăn có chung nhiều mắt xích dinh dưỡng."
+  },
+  {
+    "id": "kb-bio-g8-bac-dinh-duong-thap-sinh-thai",
+    "title": "Bậc dinh dưỡng và các dạng tháp sinh thái",
+    "description": "Bậc dinh dưỡng thể hiện vị trí trong chuỗi thức ăn (bậc 1 là sinh vật sản xuất); tháp năng lượng luôn chuẩn tắc đáy rộng đỉnh nhọn do quy luật hao hụt ~90% năng lượng qua mỗi bậc."
+  },
+  {
+    "id": "kb-bio-g8-khai-niem-sinh-quyen",
+    "title": "Khái niệm và phạm vi giới hạn của sinh quyển",
+    "description": "Sinh quyển là toàn bộ sinh vật sống cùng các nhân tố môi trường trên Trái Đất, bao gồm tầng thấp khí quyển (tầng đối lưu), toàn bộ thủy quyển và phần trên thạch quyển."
+  },
+  {
+    "id": "kb-bio-g8-khu-sinh-hoc-tren-can",
+    "title": "Các khu sinh học (Biomes) chủ yếu trên cạn",
+    "description": "Phân bố theo vĩ độ và độ cao: rừng mưa nhiệt đới, rừng rụng lá ôn đới, rừng lá kim phương Bắc (taiga), thảo nguyên (savanna/đồng cỏ), hoang mạc và đài nguyên (tundra)."
+  },
+  {
+    "id": "kb-bio-g8-khu-sinh-hoc-duoi-nuoc",
+    "title": "Các khu sinh học dưới nước",
+    "description": "Gồm khu sinh học nước ngọt (vùng nước đứng như ao, hồ, đầm; vùng nước chảy như sông, suối) và khu sinh học nước mặn (vùng ven bờ, rạn san hô, vùng biển khơi)."
+  },
+  {
+    "id": "kb-bio-g8-trang-thai-can-bang-tu-nhien",
+    "title": "Trạng thái cân bằng tự nhiên trong hệ sinh thái",
+    "description": "Là trạng thái ổn định động mà số lượng cá thể mỗi quần thể, thành phần loài và các chu trình vật chất được duy trì thích hợp với nguồn sống và điều kiện môi trường."
+  },
+  {
+    "id": "kb-bio-g8-nguyen-nhan-mat-can-bang",
+    "title": "Nguyên nhân gây mất cân bằng tự nhiên",
+    "description": "Do thiên tai đột ngột (lũ lụt, hạn hán, núi lửa) và chủ yếu do hoạt động tiêu cực của con người: tàn phá rừng, săn bắt quá mức, xả thải ô nhiễm và du nhập sinh vật ngoại lai xâm hại."
+  },
+  {
+    "id": "kb-bio-g8-cac-dang-o-nhiem-moi-truong",
+    "title": "Các dạng ô nhiễm môi trường phổ biến",
+    "description": "Ô nhiễm môi trường không khí (bụi mịn, khí SO2, CO, NOx), ô nhiễm môi trường nước (nước thải sinh hoạt, công nghiệp, rác thải nhựa), ô nhiễm đất (hóa chất trừ sâu, kim loại nặng)."
+  },
+  {
+    "id": "kb-bio-g8-bien-doi-khi-hau-hieu-ung-nha-kinh",
+    "title": "Biến đổi khí hậu và hiện tượng hiệu ứng nhà kính",
+    "description": "Nồng độ khí CO2, CH4 tăng cao giữ lại nhiệt bức xạ của Trái Đất gây nóng lên toàn cầu, băng tan ở hai cực, nước biển dâng và các hiện tượng thời tiết cực đoan."
+  },
+  {
+    "id": "kb-bio-g8-bien-phap-bao-ve-moi-truong",
+    "title": "Biện pháp bảo vệ môi trường và phát triển bền vững",
+    "description": "Bảo vệ và trồng rừng, sử dụng năng lượng tái tạo (gió, mặt trời), áp dụng mô hình 3R (Reduce - Reuse - Recycle), xử lý nước thải rác thải và phát triển nông nghiệp sinh thái an toàn."
+  }
+]

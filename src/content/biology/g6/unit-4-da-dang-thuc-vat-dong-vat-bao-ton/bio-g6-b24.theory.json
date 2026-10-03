@@ -1,0 +1,74 @@
+{
+  "lessonId": "bio-g6-b24",
+  "nodeId": "bio-g6-b24-theory",
+  "title": "Lý thuyết: Tìm hiểu sinh vật ngoài thiên nhiên",
+  "subtitle": "Bài 39 SGK KHTN 6 Kết nối tri thức: Kỹ năng khảo sát thực địa, sử dụng dụng cụ nghiên cứu và nguyên tắc bảo vệ tự nhiên",
+  "sgkBaiSo": 39,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Mục tiêu",
+      "badgeColor": "emerald",
+      "title": "Mục tiêu bài khảo sát sinh vật ngoài thiên nhiên",
+      "content": "Trải nghiệm nghiên cứu sinh thái học thực tế:",
+      "bulletPoints": [
+        "Khảo sát sự phân bố của các nhóm thực vật và động vật trong các môi trường khác nhau (rừng cây, thảm cỏ, ven hồ nước).",
+        "Sử dụng thành thạo các dụng cụ điều tra thực địa: Kính lúp, kẹp gắp, vợt bắt côn trùng, hộp quan sát có lỗ khí, thước đo, sổ tay ghi chép.",
+        "Hình thành ý thức bảo vệ môi trường, tôn trọng sự sống tự nhiên và đảm bảo an toàn cá nhân."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Quy trình thực địa",
+      "badgeColor": "amber",
+      "title": "4 bước khảo sát thực địa chuẩn phương pháp",
+      "content": "Trình tự triển khai một buổi nghiên cứu thực địa:",
+      "bulletPoints": [
+        "Bước 1: Chuẩn bị trang thiết bị: Mũ nón, giày bata, găng tay, sổ tay, bút chì, kính lúp, máy ảnh, vợt bắt côn trùng.",
+        "Bước 2: Di chuyển theo tuyến và quan sát: Ghi nhận sự thay đổi thảm thực vật từ nơi nhiều ánh sáng sang nơi râm mát.",
+        "Bước 3: Thu thập dữ liệu: Chụp ảnh nhận diện, dùng kính lúp soi chi tiết gân lá, lông tơ hoặc bắt tạm côn trùng vào hộp có lỗ khí để soi.",
+        "Bước 4: Thả sinh vật và báo cáo: Thả ngay động vật về môi trường cũ, thu dọn rác và viết báo cáo thu hoạch."
+      ],
+      "callout": "Khẩu hiệu thực địa: 'Không lấy gì ngoài những bức ảnh, không để lại gì ngoài những dấu chân!'"
+    },
+    {
+      "id": "card-3",
+      "badge": "Đạo đức & An toàn",
+      "badgeColor": "purple",
+      "title": "Nguyên tắc ứng xử và bảo đảm an toàn thực địa",
+      "content": "Bảo vệ bản thân và bảo vệ hệ sinh thái tự nhiên:",
+      "bulletPoints": [
+        "Bảo vệ sinh quyển: Tuyệt đối không bẻ cành ngắt hoa, không rung lắc cây, không phá tổ chim non, không săn bắt động vật mang về nuôi.",
+        "Giữ gìn vệ sinh: Thu gom toàn bộ rác thải sinh hoạt (vỏ chai, túi nilon) mang về nơi quy định, không để lại rác trong rừng.",
+        "An toàn cá nhân: Tránh xa các bụi rậm rậm rạp nơi có thể có rắn độc, rết cắn; tuyệt đối không ăn thử lá cây lạ hoặc nấm rừng; luôn đi theo nhóm dưới sự hướng dẫn của giáo viên."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi phát hiện một cây nấm sặc sỡ hoặc chùm quả rừng lạ mắt trong chuyến khảo sát thiên nhiên, hành động an toàn và khoa học nhất của học sinh là gì?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Dùng máy ảnh chụp lại, ghi nhận vị trí và báo cho thầy cô, tuyệt đối không hái ăn thử",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Hái ăn thử ngay để biết có vị ngọt hay đắng",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Dẫm nát cây nấm để tránh người khác nhìn thấy",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Bẻ cành mang về lớp chia cho các bạn cùng nếm",
+        "correct": false
+      }
+    ],
+    "explanation": "Nấm rừng và quả lạ có thể chứa độc tố chết người. Học sinh chỉ chụp ảnh quan sát, ghi chép khoa học và tuyệt đối không dùng tay trần ngắt hay ăn thử."
+  }
+}

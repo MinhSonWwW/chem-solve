@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g9-b14-q01",
+    "lessonId": "bio-g9-b14",
+    "sgkBaiSo": 49,
+    "skillIds": ["bio9-tien-hoa-chon-loc"],
+    "difficulty": 1,
+    "prompt": "Khái niệm tiến hóa sinh học được hiểu đúng đắn nhất là gì?",
+    "knowledge": ["kb-bio-g9-khai-niem-tien-hoa"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Quá trình biến đổi liên tục của sinh giới từ đơn giản đến phức tạp, từ ít thích nghi đến thích nghi hoàn hảo hơn với môi trường sống" },
+        { "id": "opt-b", "label": "Sự biến đổi kiểu hình của một cá thể sinh vật trong suốt vòng đời của nó" },
+        { "id": "opt-c", "label": "Hiện tượng thoái hóa giống do tự thụ phấn bắt buộc qua nhiều thế hệ" },
+        { "id": "opt-d", "label": "Quá trình các loài sinh vật tiêu diệt lẫn nhau để tranh giành thức ăn" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Tiến hóa là sự phát triển có tính lịch sử của toàn bộ sinh giới qua hàng triệu năm." },
+      { "level": 2, "text": "Chiều hướng tiến hóa chung là cơ thể ngày càng hoàn thiện và ngày càng thích nghi với môi trường." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Khái niệm tiến hóa", "body": "Tiến hóa không phải là sự lớn lên của một cá thể mà là sự biến đổi của hệ thống sống qua các thời kì địa chất." },
+      { "kind": "knowledge", "title": "Bản chất tiến hóa sinh học", "body": "Tiến hóa là quá trình biến đổi lịch sử của sinh giới từ cấu tạo đơn giản đến phức tạp, tổ chức cơ thể phân hóa cao hơn và sinh vật ngày càng thích nghi hoàn thiện với điều kiện sống thay đổi." },
+      { "kind": "answer", "title": "Kết luận", "body": "Biến đổi từ đơn giản đến phức tạp, ngày càng thích nghi hoàn hảo hơn." }
+    ],
+    "finalSolution": "Tiến hóa sinh học là quá trình biến đổi của sinh giới từ đơn giản đến phức tạp, từ ít thích nghi đến thích nghi hoàn hảo hơn với môi trường sống.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm tiến hóa (quá trình lịch sử quần thể) với sự phát triển cá thể trong một đời sinh vật." }
+    ]
+  },
+  {
+    "id": "bio-g9-b14-q02",
+    "lessonId": "bio-g9-b14",
+    "sgkBaiSo": 49,
+    "skillIds": ["bio9-tien-hoa-chon-loc"],
+    "difficulty": 1,
+    "prompt": "Cơ quan tương đồng là những cơ quan có đặc điểm phát sinh và chức năng như thế nào?",
+    "knowledge": ["kb-bio-g9-co-quan-tuong-dong"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Bắt nguồn từ cùng một cơ quan ở loài tổ tiên chung, dù hiện tại có thể thực hiện những chức năng khác nhau" },
+        { "id": "opt-b", "label": "Có nguồn gốc phát sinh hoàn toàn khác nhau nhưng thực hiện cùng một chức năng" },
+        { "id": "opt-c", "label": "Đã ngừng hoạt động hoàn toàn và bị tiêu biến không để lại dấu tích nào" },
+        { "id": "opt-d", "label": "Chỉ xuất hiện ở các loài sinh vật đơn bào cổ xưa" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "'Tương đồng' có nghĩa là cùng một nguồn gốc phát sinh từ loài tổ tiên." },
+      { "level": 2, "text": "Ví dụ: Cánh dơi (để bay), vây cá voi (để bơi) và tay người (để cầm nắm) đều có cùng kiểu sắp xếp các xương chi trước." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Định nghĩa cơ quan tương đồng", "body": "Từ 'tương đồng' trong giải phẫu so sánh chỉ sự đồng nhất về nguồn gốc phôi sinh." },
+      { "kind": "knowledge", "title": "Phân tích đặc tính", "body": "Cơ quan tương đồng bắt nguồn từ cùng một cơ quan ở loài tổ tiên chung, do thích nghi với các môi trường sống khác nhau nên biến đổi thực hiện những chức năng khác nhau (tiến hóa phân li)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Bắt nguồn từ cùng 1 cơ quan tổ tiên, dù chức năng có thể khác nhau." }
+    ],
+    "finalSolution": "Cơ quan tương đồng bắt nguồn từ cùng một cơ quan ở loài tổ tiên chung, mặc dù hiện tại có thể thực hiện những chức năng khác nhau.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm cơ quan tương đồng với cơ quan tương tự (cơ quan tương tự có chức năng giống nhau nhưng khác nguồn gốc)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b14-q03",
+    "lessonId": "bio-g9-b14",
+    "sgkBaiSo": 49,
+    "skillIds": ["bio9-tien-hoa-chon-loc"],
+    "difficulty": 2,
+    "prompt": "Cặp cơ quan nào sau đây là ví dụ điển hình về 'cơ quan tương tự' phản ánh hướng tiến hóa đồng quy?",
+    "knowledge": ["kb-bio-g9-co-quan-tuong-tu"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Cánh của loài dơi và cánh của loài côn trùng (chuồn chuồn)" },
+        { "id": "opt-b", "label": "Tay của con người và chân trước của loài mèo" },
+        { "id": "opt-c", "label": "Cánh dơi và vây ngực của loài cá voi" },
+        { "id": "opt-d", "label": "Tuyến nọc độc của rắn và tuyến nước bọt của người" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Cơ quan tương tự cùng làm một chức năng (ví dụ cùng để bay) nhưng cấu tạo nguồn gốc khác hẳn nhau." },
+      { "level": 2, "text": "Cánh dơi có khung xương chi trước của động vật có vú, còn cánh chuồn chuồn là nếp màng cutin không có xương." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Khái niệm cơ quan tương tự", "body": "Cơ quan tương tự có nguồn gốc phôi học khác nhau nhưng thực hiện cùng một chức năng do sống trong cùng môi trường." },
+      { "kind": "knowledge", "title": "Kiểm tra từng cặp", "body": "Cánh dơi (chi trước có xương) và cánh chuồn chuồn (nếp biểu bì không xương) cùng dùng để bay nhưng khác hẳn nguồn gốc phát sinh → Cơ quan tương tự. Các cặp còn lại đều là cơ quan tương đồng." },
+      { "kind": "answer", "title": "Kết luận", "body": "Cánh dơi và cánh côn trùng là cơ quan tương tự." }
+    ],
+    "finalSolution": "Cánh dơi và cánh côn trùng là cơ quan tương tự vì có cùng chức năng bay nhưng nguồn gốc cấu tạo hoàn toàn khác nhau.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm cánh dơi và cánh chim là cơ quan tương tự (cánh dơi và cánh chim đều là chi trước biến đổi nên là cơ quan tương đồng)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b14-q04",
+    "lessonId": "bio-g9-b14",
+    "sgkBaiSo": 49,
+    "skillIds": ["bio9-tien-hoa-chon-loc"],
+    "difficulty": 1,
+    "prompt": "Ruột thừa và đoạn xương cùng ở cơ thể người là những bằng chứng tiến hóa thuộc loại nào sau đây?",
+    "knowledge": ["kb-bio-g9-co-quan-thoai-hoa"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Cơ quan thoái hóa" },
+        { "id": "opt-b", "label": "Cơ quan tương tự" },
+        { "id": "opt-c", "label": "Bằng chứng hóa thạch trực tiếp" },
+        { "id": "opt-d", "label": "Bằng chứng sinh học phân tử" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Đây là những cơ quan xưa kia rất phát triển ở tổ tiên nhưng nay đã tiêu giảm chức năng trong cơ thể người." },
+      { "level": 2, "text": "Từ 'thoái hóa' thể hiện sự suy giảm về kích thước và chức năng." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xem xét ruột thừa và xương cùng", "body": "Ruột thừa là vết tích của manh tràng tiêu hóa thực vật; xương cùng là vết tích của các đốt sống đuôi." },
+      { "kind": "knowledge", "title": "Định nghĩa cơ quan thoái hóa", "body": "Cơ quan thoái hóa là di tích của các cơ quan từng phát triển mạnh ở loài tổ tiên nhưng nay không còn thực hiện chức năng ban đầu và bị tiêu giảm." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đó là các cơ quan thoái hóa." }
+    ],
+    "finalSolution": "Ruột thừa và xương cùng ở cơ thể người là các cơ quan thoái hóa chứng minh nguồn gốc tổ tiên động vật của con người.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng ruột thừa là một cơ quan mới tiến hóa thêm ở người hiện đại." }
+    ]
+  },
+  {
+    "id": "bio-g9-b14-q05",
+    "lessonId": "bio-g9-b14",
+    "sgkBaiSo": 49,
+    "skillIds": ["bio9-tien-hoa-chon-loc"],
+    "difficulty": 2,
+    "prompt": "Tại sao hóa thạch lại được xem là 'bằng chứng trực tiếp quan trọng và xác thực nhất' để nghiên cứu lịch sử tiến hóa của sinh giới?",
+    "knowledge": ["kb-bio-g9-bang-chung-hoa-thach"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Vì hóa thạch là di tích thực tế của sinh vật cổ xưa còn lưu giữ lại trong các lớp địa tầng, cho biết chính xác hình thái, thời điểm xuất hiện và môi trường sống của sinh vật trong quá khứ" },
+        { "id": "opt-b", "label": "Vì hóa thạch có thể tự sinh sôi phát triển thành loài sinh vật mới trong phòng thí nghiệm" },
+        { "id": "opt-c", "label": "Vì chỉ có hóa thạch mới chứa phân tử DNA nguyên vẹn không bị biến đổi" },
+        { "id": "opt-d", "label": "Vì hóa thạch chứng minh tất cả các loài sinh vật xuất hiện đồng thời cùng một lúc" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Các bằng chứng như giải phẫu so sánh, phôi sinh học là bằng chứng gián tiếp suy luận." },
+      { "level": 2, "text": "Hóa thạch là hiện vật thật sự của sinh vật cổ đại còn tồn tại đến ngày nay." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại bằng chứng tiến hóa", "body": "Bằng chứng gián tiếp (giải phẫu so sánh, tế bào học, sinh học phân tử) và Bằng chứng trực tiếp (hóa thạch)." },
+      { "kind": "knowledge", "title": "Giá trị của hóa thạch", "body": "Hóa thạch cung cấp di tích cụ thể (xương đá, vỏ sò, dấu vết) trong các tầng địa chất xác định. Phương pháp đồng vị phóng xạ cho phép xác định chính xác niên đại sinh vật từng tồn tại, minh chứng rõ ràng con đường phát sinh và phát triển của sinh giới." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hóa thạch là di tích thực tế trong địa tầng, cho biết chính xác thời điểm và hình thái sinh vật cổ đại." }
+    ],
+    "finalSolution": "Hóa thạch là bằng chứng tiến hóa trực tiếp xác thực nhất vì là di tích thực tế của sinh vật cổ đại lưu lại trong các lớp đất đá, chứng minh lịch sử phát triển của sinh giới.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Xem giải phẫu so sánh hay tế bào học là bằng chứng trực tiếp (chúng chỉ là bằng chứng gián tiếp)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b14-q06",
+    "lessonId": "bio-g9-b14",
+    "sgkBaiSo": 49,
+    "skillIds": ["bio9-tien-hoa-chon-loc"],
+    "difficulty": 1,
+    "prompt": "Động lực thúc đẩy và mục đích của quá trình chọn lọc nhân tạo là gì?",
+    "knowledge": ["kb-bio-g9-chon-loc-nhan-tao"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Do con người chủ động tiến hành nhằm đáp ứng nhu cầu kinh tế, dinh dưỡng và thị hiếu thẩm mĩ của con người" },
+        { "id": "opt-b", "label": "Do sự khắc nghiệt của khí hậu tự nhiên nhằm giúp sinh vật tự bảo vệ nòi giống" },
+        { "id": "opt-c", "label": "Do sự đào thải ngẫu nhiên của các đợt phun trào núi lửa và sóng thần" },
+        { "id": "opt-d", "label": "Nhằm mục đích làm cho tất cả các loài sinh vật biến mất khỏi Trái Đất" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Chữ 'nhân tạo' thể hiện bàn tay và ý chí của con người đóng vai trò chủ động." },
+      { "level": 2, "text": "Mục đích là tạo ra các giống vật nuôi, cây trồng phục vụ đời sống con người." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Khái niệm chọn lọc nhân tạo", "body": "Chọn lọc nhân tạo là quá trình con người sàng lọc giống vật nuôi, cây trồng." },
+      { "kind": "knowledge", "title": "Động lực và mục tiêu", "body": "Động lực là nhu cầu của con người; con người giữ lại những cá thể mang biến dị có lợi cho mình (cho nhiều thịt, trứng, sữa, hoa đẹp) và đào thải những biến dị không mong muốn, tạo ra hàng trăm giống thuần dưỡng từ tổ tiên hoang dại." },
+      { "kind": "answer", "title": "Kết luận", "body": "Do con người chủ động tiến hành nhằm phục vụ nhu cầu của con người." }
+    ],
+    "finalSolution": "Chọn lọc nhân tạo do con người chủ động thực hiện nhằm giữ lại các biến dị có lợi đáp ứng nhu cầu kinh tế, dinh dưỡng và thẩm mĩ của con người.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm động lực của chọn lọc nhân tạo với chọn lọc tự nhiên (chọn lọc tự nhiên do môi trường sống đào thải)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b14-q07",
+    "lessonId": "bio-g9-b14",
+    "sgkBaiSo": 49,
+    "skillIds": ["bio9-tien-hoa-chon-loc"],
+    "difficulty": 2,
+    "prompt": "Theo Charles Darwin, cơ chế cốt lõi của quá trình chọn lọc tự nhiên diễn ra như thế nào?",
+    "knowledge": ["kb-bio-g9-chon-loc-tu-nhien-darwin"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Đấu tranh sinh tồn trong tự nhiên đào thải các cá thể mang biến dị bất lợi, đồng thời bảo tồn và nhân lên các cá thể mang biến dị có lợi thích nghi với môi trường sống" },
+        { "id": "opt-b", "label": "Sinh vật chủ động thay đổi bộ gen của mình để thích nghi với điều kiện sống mới" },
+        { "id": "opt-c", "label": "Môi trường sống tự động truyền các tính trạng tốt vào trong nhân tế bào của sinh vật" },
+        { "id": "opt-d", "label": "Tất cả các cá thể trong loài đều cùng nhau tiến hóa với tốc độ hoàn toàn giống nhau" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Darwin khẳng định sự đấu tranh sinh tồn là động lực thúc đẩy chọn lọc tự nhiên." },
+      { "level": 2, "text": "Cá thể nào mang biến dị thích nghi hơn sẽ sống sót và sinh sản nhiều con cháu hơn." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Học thuyết của Darwin", "body": "Darwin giải thích sự hình thành các đặc điểm thích nghi qua chọn lọc tự nhiên." },
+      { "kind": "knowledge", "title": "Cơ chế phân hóa sống sót", "body": "Trong đấu tranh sinh tồn, những cá thể mang biến dị cá thể bất lợi sẽ bị đào thải hoặc sinh sản kém; những cá thể mang biến dị có lợi thích nghi tốt hơn với môi trường sẽ sống sót, sinh sản và truyền biến dị đó lại cho đời sau." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đào thải biến dị bất lợi, bảo tồn và nhân lên biến dị có lợi thích nghi." }
+    ],
+    "finalSolution": "Cơ chế chọn lọc tự nhiên theo Darwin là sự đào thải những biến dị bất lợi và tích lũy những biến dị có lợi, giúp sinh vật ngày càng thích nghi với môi trường.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Cho rằng sinh vật có ý thức tự biến đổi để thích nghi (quan điểm sai lầm của Lamark)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b14-q08",
+    "lessonId": "bio-g9-b14",
+    "sgkBaiSo": 49,
+    "skillIds": ["bio9-tien-hoa-chon-loc"],
+    "difficulty": 2,
+    "prompt": "Điểm khác biệt căn bản về kết quả giữa chọn lọc tự nhiên và chọn lọc nhân tạo là gì?",
+    "knowledge": ["kb-bio-g9-chon-loc-nhan-tao", "kb-bio-g9-chon-loc-tu-nhien-darwin"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Chọn lọc tự nhiên tạo ra các loài sinh vật ngày càng thích nghi với môi trường sống tự nhiên; còn chọn lọc nhân tạo tạo ra các giống vật nuôi cây trồng phục vụ lợi ích của con người (đôi khi bất lợi cho bản thân sinh vật trong tự nhiên)" },
+        { "id": "opt-b", "label": "Chọn lọc tự nhiên diễn ra trong thời gian ngắn, còn chọn lọc nhân tạo cần hàng triệu năm" },
+        { "id": "opt-c", "label": "Chọn lọc tự nhiên chỉ xảy ra ở động vật, còn chọn lọc nhân tạo chỉ xảy ra ở thực vật" },
+        { "id": "opt-d", "label": "Cả hai hình thức chọn lọc đều đào thải những cá thể có năng suất cao" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Tiêu chí chọn lọc của tự nhiên là 'sống sót trong tự nhiên', tiêu chí của con người là 'có lợi cho con người'." },
+      { "level": 2, "text": "Ví dụ: Gà công nghiệp đẻ nhiều trứng hoặc bắp cải to có lợi cho người nhưng nếu thả vào rừng tự nhiên sẽ nhanh chóng bị diệt vong." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "So sánh tiêu chí chọn lọc", "body": "Chọn lọc tự nhiên do môi trường quyết định; chọn lọc nhân tạo do con người quyết định." },
+      { "kind": "knowledge", "title": "Phân tích kết quả", "body": "Chọn lọc tự nhiên tạo ra những đặc điểm giúp sinh vật sống sót tốt nhất trong môi trường hoang dã. Chọn lọc nhân tạo tạo ra những tính trạng có lợi cho con người (nhiều thịt, nhiều sữa, quả không hạt), dù tính trạng đó có thể làm sinh vật mất khả năng tự vệ hoặc không thể tự sinh sản trong hoang dã." },
+      { "kind": "answer", "title": "Kết luận", "body": "CLTN tạo sinh vật thích nghi với môi trường; CL nhân tạo tạo giống phục vụ lợi ích của con người." }
+    ],
+    "finalSolution": "Chọn lọc tự nhiên tạo ra các loài thích nghi với tự nhiên, còn chọn lọc nhân tạo tạo ra các giống vật nuôi cây trồng đáp ứng nhu cầu của con người.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng giống vật nuôi nhân tạo cũng thích nghi tốt nhất trong môi trường hoang dã." }
+    ]
+  }
+]

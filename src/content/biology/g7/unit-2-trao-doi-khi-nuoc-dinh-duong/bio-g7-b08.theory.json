@@ -1,0 +1,74 @@
+{
+  "lessonId": "bio-g7-b08",
+  "nodeId": "bio-g7-b08-theory",
+  "title": "Lý thuyết: Trao đổi khí ở sinh vật",
+  "subtitle": "Bài 28 SGK KHTN 7 Kết nối tri thức: Cơ chế khuếch tán khí, khí khổng ở thực vật và 4 cơ quan hô hấp ở động vật",
+  "sgkBaiSo": 28,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Cơ chế",
+      "badgeColor": "emerald",
+      "title": "Bản chất của quá trình trao đổi khí",
+      "content": "Trao đổi khí là quá trình sinh vật lấy khí O2 hoặc CO2 từ môi trường vào cơ thể và thải khí CO2 hoặc O2 từ cơ thể ra môi trường.",
+      "bulletPoints": [
+        "Cơ chế khuếch tán: Các phân tử chất khí luôn tự động khuếch tán từ nơi có nồng độ cao (phân áp cao) đến nơi có nồng độ thấp (phân áp thấp).",
+        "Trong quang hợp: CO2 từ không khí khuếch tán vào lá, O2 từ lá khuếch tán ra ngoài.",
+        "Trong hô hấp: O2 từ môi trường khuếch tán vào tế bào, CO2 từ tế bào khuếch tán ra ngoài."
+      ],
+      "callout": "Sự khuếch tán diễn ra tự nhiên theo độ chênh lệch nồng độ chất khí!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Thực vật",
+      "badgeColor": "amber",
+      "title": "Trao đổi khí qua khí khổng ở lá cây",
+      "content": "Ở thực vật, trao đổi khí với môi trường diễn ra chủ yếu qua các khí khổng ở lớp biểu bì của lá:",
+      "bulletPoints": [
+        "Cấu tạo: Mỗi khí khổng gồm 2 tế bào hình hạt đậu áp sát nhau, có thành trong dày sát khe khí và thành ngoài mỏng co giãn tốt.",
+        "Khi tế bào hạt đậu no nước: Thành ngoài mỏng căng phồng kéo theo thành trong uốn cong → Khe khí khổng mở rộng → Hơi nước thoát ra, CO2 khuếch tán vào.",
+        "Khi tế bào hạt đậu mất nước: Thành ngoài xẹp lại, thành trong duỗi thẳng → Khe khí khổng khép nhỏ lại (không đóng kín hoàn toàn) để hạn chế mất nước."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Động vật",
+      "badgeColor": "cyan",
+      "title": "4 hình thức trao đổi khí chuyên hóa ở động vật",
+      "content": "Tùy thuộc môi trường sống và bậc tiến hóa, động vật trao đổi khí qua các cơ quan chuyên hóa:",
+      "bulletPoints": [
+        "Qua bề mặt cơ thể (qua da): Giun đất, đỉa, ếch nhái (khi ở dưới nước). Da luôn ẩm ướt và có mạng lưới mao mạch dày đặc dưới da.",
+        "Qua hệ thống ống khí: Côn trùng (châu chấu, ong, bướm). Không khí đi qua các lỗ thở ở thành bụng vào mạng lưới ống khí phân nhánh tiếp xúc trực tiếp từng tế bào.",
+        "Qua mang: Cá, tôm, cua, trai sông. Các lá mang mỏng giàu mao mạch hấp thụ O2 hòa tan trong dòng nước chảy liên tục qua mang.",
+        "Qua phổi: Bò sát, Chim, Thú và Con người. Bề mặt phế nang của phổi cực kì rộng lớn, thông khí nhờ cử động hô hấp co dãn lồng ngực."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Nhóm động vật nào sau đây thực hiện quá trình trao đổi khí với môi trường thông qua hệ thống ống khí phân nhánh?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Côn trùng (châu chấu, ong, bướm)",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Cá chép, cá mè, cá quả",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Giun đất và đỉa",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Chim bồ câu và đại bàng",
+        "correct": false
+      }
+    ],
+    "explanation": "Côn trùng có hệ thống ống khí chằng chịt dẫn không khí từ các lỗ thở dọc hai bên thành bụng trực tiếp đến các mô và tế bào mà không cần máu vận chuyển khí."
+  }
+}

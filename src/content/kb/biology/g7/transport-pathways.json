@@ -1,0 +1,54 @@
+[
+  {
+    "id": "kb-bio-g7-mach-go-xylem",
+    "title": "Dòng Mạch gỗ (Xylem)",
+    "description": "Vận chuyển nước và các ion khoáng hòa tan được rễ hấp thụ từ đất qua lông hút, đưa lên thân và đến các tế bào thịt lá.",
+    "direction": "Một chiều: từ dưới lên trên (Rễ → Thân → Lá)",
+    "drivingForces": [
+      "Áp suất rễ (lực đẩy từ phía dưới do hoạt động hút nước tích cực).",
+      "Lực liên kết giữa các phân tử nước với nhau và với thành mạch gỗ tạo thành cột nước liên tục.",
+      "Lực hút do thoát hơi nước ở lá (động lực đầu trên mạnh nhất kéo dòng nước đi lên)."
+    ]
+  },
+  {
+    "id": "kb-bio-g7-mach-ray-phloem",
+    "title": "Dòng Mạch rây (Phloem)",
+    "description": "Vận chuyển các hợp chất hữu cơ (chủ yếu là sucrose) được tổng hợp từ quá trình quang hợp ở lá đến các cơ quan sử dụng (chồi non, rễ) hoặc cơ quan dự trữ (củ, quả, hạt).",
+    "direction": "Đa chiều: từ nguồn tổng hợp (lá) đến các cơ quan tiêu thụ và dự trữ"
+  },
+  {
+    "id": "kb-bio-g7-khi-khong-co-che",
+    "title": "Cơ chế đóng mở khí khổng",
+    "description": "Khí khổng nằm chủ yếu ở biểu bì mặt dưới của lá, cấu tạo bởi 2 tế bào hạt đậu có thành trong dày và thành ngoài mỏng.",
+    "mechanism": [
+      "Khi tế bào hạt đậu no nước: Thành mỏng cong phồng đẩy thành dày cong theo → Khe khí khổng mở rộng → Hơi nước thoát ra mạnh, CO2 khuếch tán vào.",
+      "Khi tế bào hạt đậu thiếu nước: Thành mỏng xẹp lại, thành dày duỗi thẳng → Khe khí khổng khép nhỏ lại → Hạn chế mất nước (không đóng kín hoàn toàn)."
+    ]
+  },
+  {
+    "id": "kb-bio-g7-trao-doi-khi-dong-vat",
+    "title": "4 hình thức trao đổi khí chuyên hóa ở động vật",
+    "types": [
+      {
+        "type": "Qua bề mặt cơ thể (qua da)",
+        "representatives": "Giun đất, đỉa, ếch nhái (khi ở dưới nước)",
+        "characteristic": "Da mỏng, luôn ẩm ướt và có mạng lưới mao mạch phong phú dưới da."
+      },
+      {
+        "type": "Qua hệ thống ống khí",
+        "representatives": "Côn trùng (châu chấu, ong, bướm, dế)",
+        "characteristic": "Hệ thống ống phân nhánh chằng chịt dẫn không khí trực tiếp đến từng tế bào qua các lỗ thở ở thành bụng."
+      },
+      {
+        "type": "Qua mang",
+        "representatives": "Cá, tôm, cua, trai, sò",
+        "characteristic": "Các lá mang mỏng chứa nhiều mao mạch máu, dòng nước chảy liên tục qua mang đem O2 hòa tan vào máu."
+      },
+      {
+        "type": "Qua phổi",
+        "representatives": "Bò sát, Chim, Thú, Con người",
+        "characteristic": "Phổi có bề mặt phế nang rộng lớn, thông khí nhờ sự co dãn của các cơ hô hấp (cơ liên sườn, cơ hoành)."
+      }
+    ]
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "id": "kb-bio-g8-cap-do-to-chuc",
+    "title": "Các cấp độ tổ chức của cơ thể người",
+    "description": "Cơ thể người được tổ chức theo thứ bậc từ thấp đến cao: Tế bào → Mô → Cơ quan → Hệ cơ quan → Cơ thể."
+  },
+  {
+    "id": "kb-bio-g8-khoang-co-the",
+    "title": "Khoang cơ thể và cơ hoành",
+    "description": "Cơ hoành ngăn cách khoang thân thành khoang ngực (chứa tim, phổi) và khoang bụng (chứa dạ dày, ruột, gan, tụy, thận...)."
+  },
+  {
+    "id": "kb-bio-g8-bon-loai-mo",
+    "title": "4 loại mô cơ bản trong cơ thể người",
+    "description": "Gồm mô biểu bì (tế bào xếp xít bảo vệ, tiết chất), mô liên kết (tế bào rải rác trong chất nền như sụn, xương, máu), mô cơ (cơ vân, cơ trơn, cơ tim) và mô thần kinh (nơron và tế bào đệm)."
+  },
+  {
+    "id": "kb-bio-g8-su-phoi-hop-he-co-quan",
+    "title": "Sự phối hợp hoạt động của các hệ cơ quan",
+    "description": "Các hệ cơ quan hoạt động nhịp nhàng, thống nhất dưới sự điều hòa của cơ chế thần kinh và cơ chế thể dịch (hormone)."
+  },
+  {
+    "id": "kb-bio-g8-bo-xuong-nguoi",
+    "title": "Cấu tạo bộ xương người và cột sống",
+    "description": "Bộ xương gồm xương đầu, xương thân và xương chi. Cột sống gồm nhiều đốt sống khớp nhau với 4 chỗ cong chữ S giúp phân tán trọng lực khi đứng thẳng."
+  },
+  {
+    "id": "kb-bio-g8-thanh-phan-xuong",
+    "title": "Thành phần hóa học và tính chất của xương",
+    "description": "Xương gồm chất hữu cơ (chất cốt giao - ossein) tạo tính mềm dẻo, đàn hồi và chất vô cơ (muối canxi, photpho) tạo tính rắn chắc."
+  },
+  {
+    "id": "kb-bio-g8-phat-trien-xuong",
+    "title": "Sự phát triển dài ra và to ra của xương",
+    "description": "Xương dài ra nhờ sự phân chia của lớp sụn tăng trưởng ở hai đầu xương; xương to ra bề ngang nhờ sự phân chia của các tế bào màng xương."
+  },
+  {
+    "id": "kb-bio-g8-cac-loai-khop",
+    "title": "Ba loại khớp xương ở người",
+    "description": "Gồm khớp bất động (khớp sọ), khớp bán động (khớp các đốt sống) và khớp động (khớp vai, khớp gối có bao hoạt dịch chứa dịch bôi trơn)."
+  },
+  {
+    "id": "kb-bio-g8-co-che-co-co",
+    "title": "Cơ chế co cơ và hiện tượng mỏi cơ",
+    "description": "Tơ cơ mảnh actin trượt sâu vào khoảng giữa tơ cơ dày myosin nhờ năng lượng ATP làm cơ phình to và ngắn lại. Khi thiếu oxy, tích tụ acid lactic gây mỏi cơ."
+  },
+  {
+    "id": "kb-bio-g8-ve-sinh-he-van-dong",
+    "title": "Vệ sinh hệ vận động và phòng tật cong vẹo cột sống",
+    "description": "Ngồi học đúng tư thế, mang vác cân đối hai vai, tắm nắng sớm bổ sung vitamin D giúp phòng ngừa dị tật cong vẹo cột sống và loãng xương."
+  },
+  {
+    "id": "kb-bio-g8-so-cuu-gay-xuong",
+    "title": "Kĩ thuật sơ cứu khi gãy xương",
+    "description": "Bất động nạn nhân, dùng nẹp lót gạc êm cố định qua cả hai khớp trên và dưới ổ gãy, tuyệt đối không tự ý nắn chỉnh xương gãy rồi chuyển ngay tới viện."
+  },
+  {
+    "id": "kb-bio-g8-nhom-chat-dinh-duong",
+    "title": "Các nhóm chất dinh dưỡng và khẩu phần ăn",
+    "description": "Nhóm sinh năng lượng gồm Carbohydrate, Protein và Lipid. Nhóm không sinh năng lượng nhưng sống còn gồm Nước, Muối khoáng, Vitamin và Chất xơ."
+  },
+  {
+    "id": "kb-bio-g8-ong-tieu-hoa",
+    "title": "Cấu tạo ống tiêu hóa ở người",
+    "description": "Thức ăn di chuyển liên tục: Khoang miệng → Hầu → Thực quản → Dạ dày → Ruột non → Ruột già → Trực tràng → Hậu môn."
+  },
+  {
+    "id": "kb-bio-g8-tieu-hoa-khoang-mieng",
+    "title": "Tiêu hóa ở khoang miệng",
+    "description": "Biến đổi cơ học nhờ răng cắn xé nghiền nhỏ và lưỡi đảo trộn; enzym amylase nước bọt biến đổi một phần tinh bột chín thành đường mantôzơ."
+  },
+  {
+    "id": "kb-bio-g8-tieu-hoa-da-day",
+    "title": "Tiêu hóa ở dạ dày",
+    "description": "Biến đổi cơ học là chủ yếu nhờ ba lớp cơ co bóp nhào trộn; enzym pepsin trong môi trường acid HCl biến đổi protein thành chuỗi peptide ngắn."
+  },
+  {
+    "id": "kb-bio-g8-tieu-hoa-ruot-non",
+    "title": "Tiêu hóa hóa học tại ruột non",
+    "description": "Dịch tụy, dịch mật và dịch ruột phân giải triệt để: tinh bột thành Glucose, protein thành Amino acid, lipid thành Glycerol và Acid béo."
+  },
+  {
+    "id": "kb-bio-g8-hap-thu-ruot-non",
+    "title": "Sự hấp thụ chất dinh dưỡng ở ruột non",
+    "description": "Hệ thống nếp gấp niêm mạc, lông ruột (nhung mao) và vi nhung mao làm tăng diện tích tiếp xúc lên 400 - 500 m², hấp thụ theo đường máu và bạch huyết."
+  },
+  {
+    "id": "kb-bio-g8-ve-sinh-tieu-hoa",
+    "title": "Vệ sinh hệ tiêu hóa và bệnh đường ruột",
+    "description": "Ăn chín uống sôi, nhai kĩ, ăn đúng bữa tránh stress và vi khuẩn Helicobacter pylori (HP) gây viêm loét dạ dày - tá tràng."
+  },
+  {
+    "id": "kb-bio-g8-thanh-phan-mau",
+    "title": "Thành phần và tỉ lệ của máu",
+    "description": "Máu gồm huyết tương (chiếm ~55% thể tích, chứa 90% nước hòa tan chất dinh dưỡng) và các tế bào máu (chiếm ~45% thể tích: hồng cầu, bạch cầu, tiểu cầu)."
+  },
+  {
+    "id": "kb-bio-g8-hong-cau",
+    "title": "Cấu tạo và chức năng của tế bào hồng cầu",
+    "description": "Hồng cầu hình đĩa lõm hai mặt, không nhân khi trưởng thành, chứa huyết sắc tố hemoglobin vận chuyển khí O2 và CO2."
+  },
+  {
+    "id": "kb-bio-g8-tieu-cau-dong-mau",
+    "title": "Tiểu cầu và cơ chế đông máu",
+    "description": "Tiểu cầu vỡ giải phóng enzym biến fibrinogen trong huyết tương thành mạng lưới sợi fibrin giăng bắt tế bào máu tạo cục máu đông cầm máu."
+  },
+  {
+    "id": "kb-bio-g8-nhom-mau-abo",
+    "title": "Hệ nhóm máu ABO",
+    "description": "Phân chia dựa trên kháng nguyên (A, B) trên hồng cầu và kháng thể (α, β) trong huyết tương: O (chuyên cho), A, B, AB (chuyên nhận)."
+  },
+  {
+    "id": "kb-bio-g8-nguyen-tac-truyen-mau",
+    "title": "Nguyên tắc truyền máu an toàn",
+    "description": "Không để kháng nguyên trên hồng cầu người cho bị ngưng kết bởi kháng thể trong huyết tương người nhận; ưu tiên truyền cùng nhóm máu và kiểm tra mầm bệnh."
+  },
+  {
+    "id": "kb-bio-g8-vong-tuan-hoan-lon",
+    "title": "Vòng tuần hoàn lớn (nuôi dưỡng cơ thể)",
+    "description": "Tâm thất trái (máu đỏ tươi giàu O2) → Động mạch chủ → Mao mạch các cơ quan (trao đổi chất thành máu đỏ thẫm) → Tĩnh mạch chủ → Tâm nhĩ phải."
+  },
+  {
+    "id": "kb-bio-g8-vong-tuan-hoan-nho",
+    "title": "Vòng tuần hoàn nhỏ (trao đổi khí ở phổi)",
+    "description": "Tâm thất phải (máu đỏ thẫm) → Động mạch phổi → Mao mạch phổi (thải CO2, nhận O2 thành máu đỏ tươi) → Tĩnh mạch phổi → Tâm nhĩ trái."
+  },
+  {
+    "id": "kb-bio-g8-so-cuu-cam-mau",
+    "title": "Kĩ thuật sơ cứu cầm máu",
+    "description": "Chảy máu mao mạch/tĩnh mạch dùng băng gạc đè chặt ép miệng vết thương; chảy máu động mạch (phun tia) cần đặt băng garô phía trên vết thương về phía tim và nới lỏng mỗi 15 phút."
+  }
+]

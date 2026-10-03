@@ -1,0 +1,71 @@
+{
+  "lessonId": "bio-g7-b17",
+  "nodeId": "bio-g7-b17-theory",
+  "title": "Lý thuyết: Ứng dụng sinh trưởng và phát triển ở sinh vật vào thực tiễn",
+  "subtitle": "Bài 37 SGK KHTN 7 Kết nối tri thức: Kĩ thuật bấm ngọn, tỉa cành, điều khiển sinh trưởng vật nuôi và tiêu diệt sâu hại theo vòng đời",
+  "sgkBaiSo": 37,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Trồng trọt",
+      "badgeColor": "cyan",
+      "title": "Vận dụng điều hòa sinh trưởng cây trồng",
+      "content": "Con người chủ động can thiệp vào các mô phân sinh và điều kiện môi trường để tăng năng suất cây trồng:",
+      "bulletPoints": [
+        "Biện pháp bấm ngọn: Ngắt bỏ chồi ngọn (nơi có mô phân sinh đỉnh) làm mất ưu thế ngọn, kích thích các chồi nách đâm nhiều cành ngang mang nhiều hoa và quả. Áp dụng cho các loại cây lấy ngọn, lá hoặc quả: mướp, bầu, bí, chè, bông, ớt, cà chua.",
+        "Biện pháp tỉa cành: Cắt bỏ các cành ở tầng thấp (cành la), cành sâu bệnh, cành còi cọc giúp cây tập trung dinh dưỡng nuôi thân chính phát triển chiều cao. Áp dụng cho các loài cây lấy gỗ: xoan, keo, bạch đàn, thông.",
+        "Điều khiển nhiệt độ và ánh sáng: Thắp đèn đêm kéo dài thời gian chiếu sáng giữ hoa cúc ở pha sinh dưỡng để nở hoa to đúng dịp Tết; giữ ấm che chắn nilon cho mạ non khi trời rét đậm."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Chăn nuôi",
+      "badgeColor": "emerald",
+      "title": "Tối ưu hóa sinh trưởng ở vật nuôi",
+      "content": "Nâng cao năng suất thịt, trứng, sữa nhờ kiểm soát các yếu tố ảnh hưởng đến sinh trưởng:",
+      "bulletPoints": [
+        "Dinh dưỡng theo giai đoạn: Cung cấp thức ăn giàu đạm (protein) và khoáng chất ở giai đoạn con non đang lớn nhanh tạo khung xương cơ bắp; tăng cường tinh bột ở giai đoạn vỗ béo xuất chuồng; bổ sung canxi cho gà vịt ở giai đoạn đẻ trứng.",
+        "Chiếu sáng chuồng nuôi: Tăng thời gian chiếu sáng nhân tạo (khoảng 14 – 16 giờ/ngày) kích thích tuyến yên tiết hormone thúc đẩy gà chuyên trứng đẻ trứng đều đặn ngay cả trong mùa đông.",
+        "Vệ sinh chuồng trại: Giữ chuồng trại thoáng mát mùa hè, ấm áp mùa đông, tiêm vaccine phòng dịch bệnh định kì giúp vật nuôi khỏe mạnh, lớn nhanh."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Phòng trừ dịch hại",
+      "badgeColor": "amber",
+      "title": "Kiểm soát sâu hại và muỗi truyền bệnh",
+      "content": "Dựa vào đặc điểm của từng giai đoạn trong vòng đời để tiêu diệt triệt để sinh vật có hại:",
+      "bulletPoints": [
+        "Tiêu diệt sâu bướm hại cây trồng: Phải tập trung bắt và diệt ở giai đoạn Sâu non (sâu ăn lá) vì đây là giai đoạn sâu phàm ăn nhất, cắn phá thủng lá làm giảm quang hợp và hỏng nông sản. Khi đã hóa nhộng hoặc bướm trưởng thành thì không còn cắn phá lá.",
+        "Diệt trừ muỗi truyền bệnh sốt xuất huyết: Biện pháp hiệu quả nhất là diệt Bọ gậy (Lăng quăng) bằng cách: thả cá bảy màu vào bể nước, đậy kín lu vại, thay nước bình cắm hoa thường xuyên, lật úp các đồ phế thải chứa nước đọng. Điều này cắt đứt vòng đời trước khi bọ gậy biến thành muỗi bay đi truyền bệnh."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Tại sao biện pháp diệt lăng quăng (bọ gậy) lại được coi là cách phòng chống bệnh sốt xuất huyết hiệu quả và bền vững nhất?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Vì lăng quăng sống tập trung trong nước, chưa biết bay nên dễ tiêu diệt triệt để, cắt đứt vòng đời tạo muỗi mới",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Vì lăng quăng là giai đoạn duy nhất trực tiếp đốt người và truyền virus",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Vì thuốc xịt muỗi hoàn toàn không có tác dụng với muỗi trưởng thành",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Vì lăng quăng có thể bay lơ lửng trong không khí lây bệnh qua đường thở",
+        "correct": false
+      }
+    ],
+    "explanation": "Lăng quăng sống tập trung thụ động trong các vật chứa nước đọng và chưa thể bay nên rất dễ loại bỏ (bằng thả cá hoặc đổ bỏ nước đọng), giúp chặn đứng nguồn sinh sản của muỗi trưởng thành."
+  }
+}

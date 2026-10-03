@@ -1,0 +1,87 @@
+{
+  "lessonId": "bio-g6-b13",
+  "nodeId": "bio-g6-b13-theory",
+  "title": "Lý thuyết: Thực hành làm sữa chua và quan sát vi khuẩn",
+  "subtitle": "Bài 28 SGK KHTN 6 Kết nối tri thức: Cơ chế lên men vi khuẩn lactic, quy trình ủ ấm và quan sát dưới kính hiển vi",
+  "sgkBaiSo": 28,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Nguyên lý",
+      "badgeColor": "emerald",
+      "title": "Cơ chế sinh học của quá trình lên men sữa chua",
+      "content": "Sữa chua được hình thành nhờ phản ứng lên men của vi khuẩn lactic:",
+      "bulletPoints": [
+        "Tác nhân: Vi khuẩn lactic (Lactobacillus) có sẵn trong men cái.",
+        "Cơ chế: Vi khuẩn lactic tiêu thụ đường lactose trong sữa, chuyển hóa thành acid lactic.",
+        "Hiện tượng: Acid lactic làm môi trường có vị chua thanh dịu và làm giảm pH, khiến các phân tử protein trong sữa (casein) đông tụ lại thành khối sữa sánh mịn dẻo quánh."
+      ],
+      "callout": "Đường lactose + Vi khuẩn lactic → Acid lactic (làm đông tụ protein tạo sữa chua)!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Quy trình thực hiện",
+      "badgeColor": "amber",
+      "title": "5 bước làm sữa chua chuẩn khoa học",
+      "content": "Các bước thực hành làm sữa chua tại nhà hoặc phòng thí nghiệm:",
+      "bulletPoints": [
+        "Bước 1: Pha sữa: Hòa tan 1 hộp sữa đặc có đường với 1 lon nước sôi và 2 lon nước đun sôi để nguội (nhiệt độ hỗn hợp đạt khoảng 40°C - 50°C).",
+        "Bước 2: Trộn men: Cho 1 hộp sữa chua cái để ở nhiệt độ phòng vào hỗn hợp sữa ấm, khuấy nhẹ tay một chiều cho men tan đều.",
+        "Bước 3: Rót vào hũ thủy tinh sạch đã tiệt trùng, đậy kín nắp.",
+        "Bước 4: Ủ ấm ở nhiệt độ 40°C - 45°C trong khoảng 6 đến 8 giờ (dùng thùng xốp ủ nước ấm, nồi cơm điện hoặc máy làm sữa chua).",
+        "Bước 5: Sau 6 - 8 giờ, sữa chua đông đặc sánh mịn thì chuyển vào ngăn mát tủ lạnh để bảo quản và hãm bớt tốc độ lên men."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Lưu ý nhiệt độ",
+      "badgeColor": "purple",
+      "title": "Vai trò quyết định của nhiệt độ ủ ấm",
+      "content": "Vi khuẩn lactic rất nhạy cảm với nhiệt độ môi trường:",
+      "bulletPoints": [
+        "Nhiệt độ tối ưu (40°C - 45°C): Vi khuẩn lactic phát triển và lên men mạnh mẽ nhất.",
+        "Nhiệt độ quá nóng (> 60°C hoặc nước sôi 100°C): Vi khuẩn lactic bị tiêu diệt hoàn toàn, mẻ sữa chua bị hỏng không thể đông tụ.",
+        "Nhiệt độ quá lạnh (< 20°C): Vi khuẩn bị ức chế không thể lên men, sữa loãng và không có vị chua."
+      ]
+    },
+    {
+      "id": "card-4",
+      "badge": "Quan sát hiển vi",
+      "badgeColor": "purple",
+      "title": "Kỹ thuật quan sát vi khuẩn lactic dưới kính hiển vi",
+      "content": "Cách làm tiêu bản soi vi khuẩn sữa chua:",
+      "bulletPoints": [
+        "Lấy một lượng nhỏ sữa chua pha loãng với giọt nước cất trên lam kính.",
+        "Nhuộm màu bằng một giọt dung dịch xanh metylen, đậy lamen.",
+        "Quan sát dưới vật kính 40x thấy các chấm que nhỏ màu xanh (trực khuẩn lactic)."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi làm sữa chua, tại sao tuyệt đối KHÔNG được đổ nước sôi 100°C trực tiếp vào hộp sữa chua cái (men giống)?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Vì nước sôi 100°C sẽ làm chết toàn bộ vi khuẩn lactic khiến sữa không thể lên men",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Vì nước sôi làm sữa chua bị ngọt quá mức",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Vì nước sôi làm bốc hơi hết các chất béo",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Vì nước sôi làm sữa chua biến thành màu đen",
+        "correct": false
+      }
+    ],
+    "explanation": "Nước sôi 100°C sẽ làm biến tính protein và giết chết toàn bộ các vi khuẩn lactic sống trong men cái, khiến quá trình lên men không thể diễn ra."
+  }
+}

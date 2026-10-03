@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g7-b11-q01",
+    "lessonId": "bio-g7-b11",
+    "sgkBaiSo": 31,
+    "skillIds": ["bio-trao-doi-nuoc-dong-vat"],
+    "difficulty": 1,
+    "prompt": "Trình tự đúng của các cơ quan trong ống tiêu hóa của người từ đầu đến cuối là gì?",
+    "knowledge": ["kb-bio-g7-tieu-hoa-dong-vat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Miệng → Thực quản → Dạ dày → Ruột non → Ruột già → Hậu môn" },
+        { "id": "opt-b", "label": "Miệng → Dạ dày → Thực quản → Ruột già → Ruột non → Hậu môn" },
+        { "id": "opt-c", "label": "Miệng → Thực quản → Ruột non → Dạ dày → Ruột già → Hậu môn" },
+        { "id": "opt-d", "label": "Miệng → Khí quản → Dạ dày → Gan → Thận → Hậu môn" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Sau khi thức ăn được nhai ở miệng, nó trôi qua cổ họng xuống thực quản rồi mới vào dạ dày." },
+      { "level": 2, "text": "Thức ăn từ dạ dày chuyển tiếp vào ruột non trước, sau đó bã thức ăn mới qua ruột già để thải ra hậu môn." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định câu hỏi", "body": "Xác định trình tự giải phẫu các đoạn của ống tiêu hóa ở cơ thể người." },
+      { "kind": "knowledge", "title": "Cấu tạo ống tiêu hóa", "body": "Thức ăn bắt đầu từ khoang miệng, đi qua thực quản đến dạ dày, tiếp theo là ruột non, ruột già và kết thúc ở hậu môn." },
+      { "kind": "answer", "title": "Kết luận", "body": "Miệng → Thực quản → Dạ dày → Ruột non → Ruột già → Hậu môn." }
+    ],
+    "finalSolution": "Ống tiêu hóa người có thứ tự: Miệng → Thực quản → Dạ dày → Ruột non → Ruột già → Hậu môn.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn giữa ruột non và ruột già hoặc nhầm thực quản với khí quản (thuộc hệ hô hấp)." }
+    ]
+  },
+  {
+    "id": "bio-g7-b11-q02",
+    "lessonId": "bio-g7-b11",
+    "sgkBaiSo": 31,
+    "skillIds": ["bio-trao-doi-nuoc-dong-vat"],
+    "difficulty": 1,
+    "prompt": "Đặc điểm cấu tạo nào của ruột non giúp cơ quan này hấp thụ triệt để và hiệu quả phần lớn chất dinh dưỡng từ thức ăn?",
+    "knowledge": ["kb-bio-g7-tieu-hoa-dong-vat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Chiều dài lớn, niêm mạc có nhiều nếp gấp và hàng triệu lông ruột chứa mạng lưới mao mạch máu dày đặc" },
+        { "id": "opt-b", "label": "Có lớp cơ dày khỏe liên tục co bóp nghiền nát thức ăn như chiếc cối xay" },
+        { "id": "opt-c", "label": "Chứa lượng acid clohiđric (HCl) đậm đặc giúp khử trùng toàn bộ vi sinh vật" },
+        { "id": "opt-d", "label": "Chỉ làm nhiệm vụ hút lại nước và tạo thành khuôn phân rắn chắc" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Hãy nghĩ đến yếu tố làm tăng tối đa diện tích bề mặt tiếp xúc giữa dưỡng chất hòa tan và mạch máu." },
+      { "level": 2, "text": "Các cấu trúc vi mô dạng lông nhung (lông ruột) trên bề mặt niêm mạc ruột non đảm nhiệm chức năng này." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích đặc điểm thích nghi", "body": "Tìm cấu tạo giải phẫu vi mô của ruột non thích nghi với chức năng hấp thụ chất dinh dưỡng." },
+      { "kind": "knowledge", "title": "Cấu tạo ruột non", "body": "Ruột non có các nếp gấp, lông ruột làm tăng diện tích bề mặt tiếp xúc lên gấp hàng nghìn lần cùng mạng mao mạch máu phong phú." },
+      { "kind": "answer", "title": "Kết luận", "body": "Chiều dài lớn, niêm mạc có nhiều nếp gấp và hàng triệu lông ruột chứa mạng lưới mao mạch máu dày đặc." }
+    ],
+    "finalSolution": "Ruột non hấp thụ dinh dưỡng tối ưu nhờ chiều dài lớn, niêm mạc gấp nếp và hệ thống lông ruột chứa mạng mao mạch dày đặc.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm chức năng co bóp nghiền nát cơ học của dạ dày với chức năng hấp thụ của ruột non." }
+    ]
+  },
+  {
+    "id": "bio-g7-b11-q03",
+    "lessonId": "bio-g7-b11",
+    "sgkBaiSo": 31,
+    "skillIds": ["bio-trao-doi-nuoc-dong-vat"],
+    "difficulty": 1,
+    "prompt": "Hệ tuần hoàn đóng vai trò gì trong quá trình trao đổi chất và dinh dưỡng ở động vật có xương sống?",
+    "knowledge": ["kb-bio-g7-tuan-hoan-van-chuyen"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Vận chuyển khí O2 và chất dinh dưỡng đến từng tế bào, đồng thời thu nhận CO2 và chất thải đến cơ quan bài tiết" },
+        { "id": "opt-b", "label": "Trực tiếp phân cắt thức ăn tinh bột và protein thành các phân tử đơn giản" },
+        { "id": "opt-c", "label": "Tiết ra dịch mật và dịch tụy để tiêu hóa chất béo trong ruột non" },
+        { "id": "opt-d", "label": "Điều khiển hoạt động cảm xúc và phản xạ có điều kiện của cơ thể" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Máu chảy trong mạch đóng vai trò như các chuyến xe chuyên chở dưỡng chất và chất thải trong cơ thể." },
+      { "level": 2, "text": "Hệ tuần hoàn kết nối hệ tiêu hóa, hệ hô hấp và hệ bài tiết với từng tế bào sống." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định vai trò của hệ cơ quan", "body": "Khảo sát chức năng sinh học của hệ tuần hoàn trong mối liên hệ với các hệ cơ quan khác." },
+      { "kind": "knowledge", "title": "Chức năng vận chuyển của máu", "body": "Máu mang O2 và dưỡng chất đến mô tế bào; đưa CO2 và sản phẩm chuyển hóa đến cơ quan thải (phổi, thận, da)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Vận chuyển khí O2 và chất dinh dưỡng đến từng tế bào, đồng thời thu nhận CO2 và chất thải đến cơ quan bài tiết." }
+    ],
+    "finalSolution": "Hệ tuần hoàn thực hiện vận chuyển khí O2, chất dinh dưỡng đến tế bào và thu nhận chất thải chuyển đến cơ quan bài tiết.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng hệ tuần hoàn tham gia trực tiếp vào việc tiết enzym phân hủy thức ăn." }
+    ]
+  },
+  {
+    "id": "bio-g7-b11-q04",
+    "lessonId": "bio-g7-b11",
+    "sgkBaiSo": 31,
+    "skillIds": ["bio-trao-doi-nuoc-dong-vat"],
+    "difficulty": 1,
+    "prompt": "Cơ quan nào trong cơ thể người đảm nhận vai trò chủ yếu lọc các chất thải hòa tan trong máu (như urê, acid uric, muối thừa) để tạo thành nước tiểu?",
+    "knowledge": ["kb-bio-g7-bai-tiet-can-bang-nuoc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Hai quả thận" },
+        { "id": "opt-b", "label": "Lá lách" },
+        { "id": "opt-c", "label": "Tuyến nước bọt" },
+        { "id": "opt-d", "label": "Bóng đái (bàng quang)" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Cơ quan này hình hạt đậu, nằm ở vùng thắt lưng hai bên cột sống." },
+      { "level": 2, "text": "Phân biệt cơ quan lọc máu tạo nước tiểu (thận) với nơi tạm chứa nước tiểu trước khi tiểu tiện (bàng quang)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân biệt cơ quan bài tiết", "body": "Xác định cơ quan có chức năng lọc máu tạo nước tiểu trong hệ bài tiết." },
+      { "kind": "knowledge", "title": "Cấu tạo và chức năng của thận", "body": "Thận lọc máu liên tục để bài tiết chất độc hại và giữ cân bằng nước qua nước tiểu; bàng quang chỉ đóng vai trò chứa đựng." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hai quả thận." }
+    ],
+    "finalSolution": "Hai quả thận là cơ quan bài tiết chủ yếu lọc sạch máu và tạo thành nước tiểu.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn giữa thận (nơi lọc máu tạo nước tiểu) với bóng đái/bàng quang (nơi lưu trữ tạm thời)." }
+    ]
+  },
+  {
+    "id": "bio-g7-b11-q05",
+    "lessonId": "bio-g7-b11",
+    "sgkBaiSo": 31,
+    "skillIds": ["bio-trao-doi-nuoc-dong-vat"],
+    "difficulty": 1,
+    "prompt": "Hằng ngày, cơ thể một người trưởng thành khỏe mạnh bị mất nước chủ yếu qua những con đường nào?",
+    "knowledge": ["kb-bio-g7-bai-tiet-can-bang-nuoc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Qua nước tiểu, qua mồ hôi từ da, qua hơi thở từ phổi và qua phân" },
+        { "id": "opt-b", "label": "Chỉ qua tuyến nước bọt khi nói chuyện" },
+        { "id": "opt-c", "label": "Chỉ qua mồ hôi khi chơi thể thao" },
+        { "id": "opt-d", "label": "Nước trong cơ thể là hằng định và không bao giờ bị mất đi" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Ngay cả khi bạn ngủ không vận động, bạn vẫn mất nước qua hơi thở và sự bài tiết qua da, thận." },
+      { "level": 2, "text": "Có 4 con đường mất nước: hệ bài tiết nước tiểu, da, hệ hô hấp và hệ tiêu hóa." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định sự đào thải nước", "body": "Tổng hợp các con đường mà cơ thể bài xuất nước ra ngoài môi trường hàng ngày." },
+      { "kind": "knowledge", "title": "Các đường thoát nước", "body": "Bao gồm: bài tiết nước tiểu qua thận, toát mồ hôi qua da, hơi nước bay theo khí thở qua phổi, và nước thải cùng phân qua ruột." },
+      { "kind": "answer", "title": "Kết luận", "body": "Qua nước tiểu, qua mồ hôi từ da, qua hơi thở từ phổi và qua phân." }
+    ],
+    "finalSolution": "Nước rời cơ thể qua 4 con đường chính: nước tiểu, mồ hôi, hơi thở qua phổi và phân.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Quên mất rằng khi thở ra, phổi cũng thải ra một lượng hơi nước đáng kể." }
+    ]
+  },
+  {
+    "id": "bio-g7-b11-q06",
+    "lessonId": "bio-g7-b11",
+    "sgkBaiSo": 31,
+    "skillIds": ["bio-trao-doi-nuoc-dong-vat"],
+    "difficulty": 2,
+    "prompt": "Khi một người bị tiêu chảy cấp hoặc sốt cao mất nước nhiều, bác sĩ luôn chỉ định uống dung dịch Oresol pha đúng tỉ lệ nước nhằm mục đích quan trọng nhất là gì?",
+    "knowledge": ["kb-bio-g7-bai-tiet-can-bang-nuoc", "kb-bio-g7-nhu-cau-nuoc-sinh-vat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Kịp thời bù đắp lượng nước và các ion khoáng điện giải đã bị mất để duy trì cân bằng nội môi" },
+        { "id": "opt-b", "label": "Cung cấp chất béo đậm đặc để tăng cân nhanh chóng" },
+        { "id": "opt-c", "label": "Làm đông cứng thức ăn trong ruột già để ngăn chặn việc đi ngoài ngay lập tức" },
+        { "id": "opt-d", "label": "Tăng cường nồng độ acid dịch vị dạ dày để tiêu diệt virut" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Tiêu chảy làm mất cả nước lẫn các khoáng chất muối điện giải quan trọng trong máu." },
+      { "level": 2, "text": "Oresol là gói bột chứa muối khoáng và glucose dùng để pha dung dịch bù nước và chất điện giải." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Hiểu tình huống lâm sàng", "body": "Giải thích mục đích khoa học của việc bù dung dịch Oresol trong trường hợp mất nước cấp." },
+      { "kind": "knowledge", "title": "Tác dụng của Oresol", "body": "Oresol bù nước và các ion điện giải thiết yếu (Na+, K+) bị thất thoát, giữ cho áp suất thẩm thấu và thể tích máu ổn định." },
+      { "kind": "answer", "title": "Kết luận", "body": "Kịp thời bù đắp lượng nước và các ion khoáng điện giải đã bị mất để duy trì cân bằng nội môi." }
+    ],
+    "finalSolution": "Uống dung dịch Oresol kịp thời bù nước và các ion điện giải bị mất do tiêu chảy cấp, duy trì ổn định áp suất máu.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Pha Oresol quá đặc hoặc quá loãng sai hướng dẫn, gây nguy hiểm cho tính mạng." }
+    ]
+  },
+  {
+    "id": "bio-g7-b11-q07",
+    "lessonId": "bio-g7-b11",
+    "sgkBaiSo": 31,
+    "skillIds": ["bio-trao-doi-nuoc-dong-vat"],
+    "difficulty": 2,
+    "prompt": "Khi bạn đi bộ đường dài dưới trời nắng mà không uống đủ nước, cơ thể sẽ có phản ứng điều hòa sinh lý nào sau đây?",
+    "knowledge": ["kb-bio-g7-bai-tiet-can-bang-nuoc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Xuất hiện cảm giác khát, thận tăng tái hấp thu nước làm lượng nước tiểu giảm và màu sắc vàng sẫm" },
+        { "id": "opt-b", "label": "Thận lập tức tăng bài tiết nước tiểu liên tục với màu trong suốt" },
+        { "id": "opt-c", "label": "Ruột non ngừng hấp thụ thức ăn và đảo chiều nôn ra ngoài" },
+        { "id": "opt-d", "label": "Tuyến mồ hôi tiết ra dịch màu xanh để hạ nhiệt độ" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Khi cơ thể thiếu nước thì cần giữ lại nước hay thải bớt nước ra ngoài?" },
+      { "level": 2, "text": "Thận sẽ tiết kiệm nước bằng cách giảm lượng nước tiểu bài xuất và cô đặc nó." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định cơ chế tự điều hòa", "body": "Phân tích phản ứng sinh lý của cơ thể người khi bị mất nước và thiếu nguồn nước bổ sung." },
+      { "kind": "knowledge", "title": "Cơ chế bảo tồn nước của thận", "body": "Khi thiếu nước, cơ thể kích hoạt cảm giác khát để tìm nước uống; thận giảm lượng nước tiểu và tăng cô đặc để giảm thất thoát nước." },
+      { "kind": "answer", "title": "Kết luận", "body": "Xuất hiện cảm giác khát, thận tăng tái hấp thu nước làm lượng nước tiểu giảm và màu sắc vàng sẫm." }
+    ],
+    "finalSolution": "Khi thiếu nước, cơ thể phát tín hiệu khát và thận tăng cường tái hấp thu nước làm nước tiểu ít và sẫm màu hơn.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng uống ít nước thì thận lại lọc nhiều nước hơn." }
+    ]
+  },
+  {
+    "id": "bio-g7-b11-q08",
+    "lessonId": "bio-g7-b11",
+    "sgkBaiSo": 31,
+    "skillIds": ["bio-trao-doi-nuoc-dong-vat"],
+    "difficulty": 2,
+    "prompt": "Hành vi ăn uống nào sau đây KHÔNG ĐÚNG theo nguyên tắc dinh dưỡng khoa học và bảo vệ hệ tiêu hóa?",
+    "knowledge": ["kb-bio-g7-nhu-cau-nuoc-sinh-vat", "kb-bio-g7-tieu-hoa-dong-vat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Ăn thật mặn, thường xuyên ăn đồ nướng cháy khét và nhịn uống nước để đỡ đi tiểu" },
+        { "id": "opt-b", "label": "Ăn chậm, nhai kĩ trước khi nuốt để giảm bớt gánh nặng cho dạ dày" },
+        { "id": "opt-c", "label": "Bổ sung đầy đủ rau xanh và hoa quả tươi để cung cấp vitamin, khoáng chất và chất xơ" },
+        { "id": "opt-d", "label": "Uống đủ nước rải đều trong ngày, không đợi đến khi quá khát mới uống" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Tìm hành vi gây tổn hại trực tiếp cho thận và hệ tiêu hóa." },
+      { "level": 2, "text": "Thói quen ăn mặn và nhịn uống nước là nguyên nhân hàng đầu gây sỏi thận và suy thận." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích hành vi dinh dưỡng", "body": "Tìm thói quen ăn uống không lành mạnh, gây hại cho sức khỏe." },
+      { "kind": "knowledge", "title": "Vệ sinh ăn uống khoa học", "body": "Ăn cân đối các nhóm chất, ăn nhạt, tránh thức ăn cháy khét, uống đủ nước hàng ngày bảo vệ tim mạch, thận và tiêu hóa." },
+      { "kind": "answer", "title": "Kết luận", "body": "Ăn thật mặn, thường xuyên ăn đồ nướng cháy khét và nhịn uống nước để đỡ đi tiểu." }
+    ],
+    "finalSolution": "Ăn quá mặn, ăn đồ cháy khét và nhịn uống nước là những thói quen gây hại nặng nề cho hệ tiêu hóa và thận.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhiều người có thói quen nhịn uống nước để đỡ buồn tiểu, gây hại rất lớn cho thận." }
+    ]
+  }
+]

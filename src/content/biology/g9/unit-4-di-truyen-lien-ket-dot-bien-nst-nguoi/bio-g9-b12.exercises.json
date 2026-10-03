@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g9-b12-q01",
+    "lessonId": "bio-g9-b12",
+    "sgkBaiSo": 47,
+    "skillIds": ["bio9-di-truyen-nguoi"],
+    "difficulty": 1,
+    "prompt": "Mục đích chủ yếu của phương pháp nghiên cứu phả hệ trong di truyền học người là gì?",
+    "knowledge": ["kb-bio-g9-phuong-phap-pha-he-nguoi"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Theo dõi sự di truyền của một tính trạng qua các thế hệ dòng họ để xác định tính trạng do gen trội hay lặn, nằm trên NST thường hay giới tính" },
+        { "id": "opt-b", "label": "Chủ động gây đột biến bằng hóa chất để tạo ra các thế hệ con cháu mang kiểu gen mong muốn" },
+        { "id": "opt-c", "label": "Ép buộc các thành viên trong gia đình tự thụ phấn qua nhiều thế hệ để tạo dòng thuần chủng" },
+        { "id": "opt-d", "label": "Đo đạc chỉ số thông minh của tất cả các thế hệ trong cùng một dòng họ" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Ở người không thể tiến hành lai cưỡng bức hay gây đột biến nhân tạo vì lí do đạo đức xã hội." },
+      { "level": 2, "text": "Nhà khoa học dựa vào lịch sử sinh sản và gia phả của gia đình để phân tích quy luật di truyền." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đặc thù nghiên cứu di truyền người", "body": "Không thể lai giống thực nghiệm hay gây đột biến ở người." },
+      { "kind": "knowledge", "title": "Mục đích phương pháp phả hệ", "body": "Phương pháp nghiên cứu phả hệ thu thập thông tin về sự xuất hiện của tính trạng qua nhiều thế hệ gia đình để xác định: gen quy định là trội hay lặn, nằm trên NST thường hay giới tính, dự đoán khả năng xuất hiện ở các thế hệ sau." },
+      { "kind": "answer", "title": "Kết luận", "body": "Xác định gen trội/lặn, nằm trên NST thường hay giới tính và dự đoán nguy cơ di truyền." }
+    ],
+    "finalSolution": "Phương pháp phả hệ dùng để theo dõi sự di truyền của tính trạng qua các thế hệ gia đình, nhằm xác định tính trạng do gen trội hay lặn, nằm trên NST thường hay NST giới tính.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng có thể áp dụng các phương pháp lai nhân tạo hay gây đột biến trên người." }
+    ]
+  },
+  {
+    "id": "bio-g9-b12-q02",
+    "lessonId": "bio-g9-b12",
+    "sgkBaiSo": 47,
+    "skillIds": ["bio9-di-truyen-nguoi"],
+    "difficulty": 1,
+    "prompt": "Hai trẻ đồng sinh cùng trứng có đặc điểm nào sau đây về mặt di truyền học?",
+    "knowledge": ["kb-bio-g9-tre-dong-sinh-nghien-cuu"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Được sinh ra từ cùng một hợp tử ban đầu nên có kiểu gen giống hệt nhau 100% và luôn luôn cùng giới tính" },
+        { "id": "opt-b", "label": "Được sinh ra từ 2 trứng khác nhau nên có kiểu gen khác nhau và có thể khác giới tính" },
+        { "id": "opt-c", "label": "Chỉ giống nhau về ngoại hình nhưng kiểu gen bên trong hoàn toàn khác nhau" },
+        { "id": "opt-d", "label": "Một đứa mang bộ NST lưỡng bội (2n), một đứa mang bộ NST đơn bội (n)" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "'Cùng trứng' nghĩa là chỉ có duy nhất 1 tế bào trứng được thụ tinh bởi 1 tinh trùng." },
+      { "level": 2, "text": "Hợp tử sau đó tách đôi tạo 2 phôi, nên mang nguyên vẹn cùng 1 bộ gen và bắt buộc cùng giới tính." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Khái niệm đồng sinh cùng trứng", "body": "Đồng sinh cùng trứng xuất phát từ 1 trứng thụ tinh với 1 tinh trùng tạo nên 1 hợp tử duy nhất." },
+      { "kind": "knowledge", "title": "Đặc điểm di truyền", "body": "Vì cùng bắt nguồn từ 1 hợp tử qua nguyên phân, hai phôi có bộ gen nhân giống hệt nhau 100%. Do đó, hai trẻ đồng sinh cùng trứng luôn luôn có cùng giới tính (cùng là nam hoặc cùng là nữ) và có cùng nhóm máu." },
+      { "kind": "answer", "title": "Kết luận", "body": "Có kiểu gen giống hệt nhau 100% và luôn cùng giới tính." }
+    ],
+    "finalSolution": "Hai trẻ đồng sinh cùng trứng sinh ra từ cùng một hợp tử nên có kiểu gen giống hệt nhau 100% và luôn cùng giới tính.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn với trẻ đồng sinh khác trứng (sinh đôi 1 trai 1 gái là đồng sinh khác trứng)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b12-q03",
+    "lessonId": "bio-g9-b12",
+    "sgkBaiSo": 47,
+    "skillIds": ["bio9-di-truyen-nguoi"],
+    "difficulty": 1,
+    "prompt": "Tính trạng nào sau đây ở người phụ thuộc hoàn toàn vào kiểu gen di truyền, hầu như không bị biến đổi bởi điều kiện môi trường sống?",
+    "knowledge": ["kb-bio-g9-tre-dong-sinh-nghien-cuu"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Hệ nhóm máu ABO và màu mắt" },
+        { "id": "opt-b", "label": "Khối lượng cơ thể (cân nặng)" },
+        { "id": "opt-c", "label": "Màu da khi tắm nắng ngoài biển" },
+        { "id": "opt-d", "label": "Khả năng nói lưu loát ngoại ngữ" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Có những tính trạng dù sống ở bất kì hoàn cảnh nào, ăn uống ra sao cũng không bao giờ thay đổi." },
+      { "level": 2, "text": "Nhóm máu (A, B, AB, O) do các alen quy định bất biến suốt cuộc đời." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại tính trạng theo mức độ ảnh hưởng của môi trường", "body": "Có tính trạng có mức phản ứng hẹp (phụ thuộc chặt chẽ vào kiểu gen) và tính trạng có mức phản ứng rộng (dễ biến đổi theo môi trường)." },
+      { "kind": "knowledge", "title": "So sánh các tính trạng", "body": "Cân nặng, độ sạm của da, ngôn ngữ phụ thuộc rất nhiều vào dinh dưỡng và rèn luyện. Ngược lại, hệ nhóm máu ABO, màu mắt, dạng tóc (thẳng/xoăn tự nhiên) phụ thuộc hoàn toàn vào kiểu gen di truyền." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hệ nhóm máu ABO và màu mắt." }
+    ],
+    "finalSolution": "Hệ nhóm máu ABO và màu mắt là những tính trạng di truyền do kiểu gen quyết định hoàn toàn, hầu như không chịu ảnh hưởng từ môi trường sống.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Chọn cân nặng hay màu da (đây là những tính trạng rất dễ thay đổi theo chế độ ăn uống và môi trường)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b12-q04",
+    "lessonId": "bio-g9-b12",
+    "sgkBaiSo": 47,
+    "skillIds": ["bio9-di-truyen-nguoi"],
+    "difficulty": 2,
+    "prompt": "Tại sao các bác sĩ khuyến cáo phụ nữ không nên sinh con khi tuổi đời đã trên 35 tuổi?",
+    "knowledge": ["kb-bio-g9-hoi-chung-dao-co-che"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Vì ở người mẹ trên 35 tuổi, tế bào sinh trứng bị lão hóa làm tăng nguy cơ rối loạn phân li cặp NST số 21 trong giảm phân, làm tăng tỉ lệ sinh con mắc Hội chứng Đao" },
+        { "id": "opt-b", "label": "Vì người mẹ trên 35 tuổi không còn khả năng thụ tinh tạo hợp tử" },
+        { "id": "opt-c", "label": "Vì trứng của phụ nữ lớn tuổi bị mất hoàn toàn phân tử DNA" },
+        { "id": "opt-d", "label": "Vì người mẹ trên 35 tuổi chỉ có thể sinh con mang giới tính nữ" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Hội chứng Đao xuất phát từ thể ba ở cặp nhiễm sắc thể số 21 (2n + 1 = 47 chiếc)." },
+      { "level": 2, "text": "Tuổi mẹ càng cao thì thoi phân bào trong quá trình giảm phân tạo trứng càng dễ bị lỗi không phân li." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Yếu tố tuổi mẹ và bệnh di truyền", "body": "Thống kê y học cho thấy nguy cơ sinh con mắc hội chứng Đao tỉ lệ thuận với tuổi của người mẹ." },
+      { "kind": "knowledge", "title": "Cơ chế sinh học", "body": "Các tế bào sinh trứng của người nữ đã tồn tại từ khi còn là phôi thai. Khi tuổi mẹ trên 35, các tế bào này chịu tác động tích lũy lâu ngày của môi trường, quá trình giảm phân dễ bị rối loạn khiến cặp NST 21 không phân li, tạo trứng mang 2 chiếc NST 21 dẫn đến con mắc hội chứng Đao (47 chiếc)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tăng nguy cơ rối loạn phân li cặp NST 21 gây hội chứng Đao." }
+    ],
+    "finalSolution": "Phụ nữ trên 35 tuổi sinh con có nguy cơ cao sinh con mắc hội chứng Đao do tế bào sinh trứng lão hóa gây rối loạn không phân li cặp NST số 21 trong giảm phân.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng tuổi bố là yếu tố quyết định hàng đầu đối với hội chứng Đao (tuổi mẹ ảnh hưởng lớn hơn nhiều)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b12-q05",
+    "lessonId": "bio-g9-b12",
+    "sgkBaiSo": 47,
+    "skillIds": ["bio9-di-truyen-nguoi"],
+    "difficulty": 2,
+    "prompt": "Một bệnh nhân nam giới có kiểu hình: thân hình cao lêu nghêu, chân tay dài, tuyến vú phát triển nở nang, tinh hoàn teo nhỏ và không có khả năng sinh con. Xét nghiệm tế bào học cho thấy bộ nhiễm sắc thể là 47, XXY. Bệnh nhân này mắc hội chứng di truyền nào?",
+    "knowledge": ["kb-bio-g9-hoi-chung-turner-klinefelter"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Hội chứng Klinefelter" },
+        { "id": "opt-b", "label": "Hội chứng Turner" },
+        { "id": "opt-c", "label": "Hội chứng Đao" },
+        { "id": "opt-d", "label": "Hội chứng tiếng mèo kêu" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Bệnh nhân là nam giới nhưng mang thêm 1 chiếc NST X (thể 47, XXY)." },
+      { "level": 2, "text": "Hội chứng mang tên nhà bác học Harry Klinefelter (hội chứng Claiphentơ)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích triệu chứng và bộ NST", "body": "Bệnh nhân nam có biểu hiện nữ hóa tuyến vú, vô sinh, mang bộ NST giới tính 47, XXY." },
+      { "kind": "knowledge", "title": "Xác định hội chứng", "body": "Hội chứng Turner là 45, XO ở nữ. Hội chứng Đao là 3 chiếc NST 21. Bệnh nhân nam mang bộ NST 47, XXY chính là người mắc Hội chứng Klinefelter." },
+      { "kind": "answer", "title": "Kết luận", "body": "Bệnh nhân mắc Hội chứng Klinefelter." }
+    ],
+    "finalSolution": "Bệnh nhân nam có bộ NST 47, XXY mang biểu hiện nữ hóa và vô sinh mắc Hội chứng Klinefelter.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm hội chứng Klinefelter (nam XXY) với hội chứng Turner (nữ XO)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b12-q06",
+    "lessonId": "bio-g9-b12",
+    "sgkBaiSo": 47,
+    "skillIds": ["bio9-di-truyen-nguoi"],
+    "difficulty": 2,
+    "prompt": "Bệnh mù màu đỏ - lục ở người do gen lặn (m) nằm trên vùng không tương đồng của nhiễm sắc thể giới tính X quy định, không có alen trên Y. Một cặp vợ chồng đều có khả năng nhìn màu bình thường nhưng sinh ra một người con trai bị bệnh mù màu. Kiểu gen của người mẹ là gì?",
+    "knowledge": ["kb-bio-g9-benh-lien-ket-gioi-tinh-x"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "X^M X^m (mẹ bình thường nhưng mang gen lặn gây bệnh)" },
+        { "id": "opt-b", "label": "X^M X^M (mẹ đồng hợp trội bình thường)" },
+        { "id": "opt-c", "label": "X^m X^m (mẹ bị mù màu)" },
+        { "id": "opt-d", "label": "X^m Y (mẹ mang kiểu gen của nam giới)" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Con trai bị mù màu có kiểu gen là X^m Y." },
+      { "level": 2, "text": "Chiếc NST Y con trai nhận từ bố; do đó chiếc NST X^m bắt buộc phải nhận từ mẹ." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định kiểu gen của con trai bị bệnh", "body": "Con trai bị mù màu mang kiểu gen X^m Y (nhận NST Y từ bố và NST X^m từ mẹ)." },
+      { "kind": "compute", "title": "Biện luận kiểu gen của mẹ", "body": "Mẹ có kiểu hình nhìn màu bình thường nên bắt buộc phải có ít nhất 1 alen trội X^M. Đồng thời mẹ truyền alen X^m cho con trai. Do đó kiểu gen của người mẹ phải là dị hợp tử X^M X^m." },
+      { "kind": "answer", "title": "Kết luận", "body": "Kiểu gen của người mẹ là X^M X^m." }
+    ],
+    "finalSolution": "Người con trai bị mù màu (X^m Y) nhận NST Y từ bố và NST X^m từ mẹ; mẹ có thị lực bình thường nên kiểu gen của mẹ là X^M X^m (người mang gen).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng con trai nhận gen mù màu từ người bố (bố chỉ truyền NST Y cho con trai)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b12-q07",
+    "lessonId": "bio-g9-b12",
+    "sgkBaiSo": 47,
+    "skillIds": ["bio9-di-truyen-nguoi"],
+    "difficulty": 2,
+    "prompt": "Dưới góc độ di truyền học, tại sao Luật Hôn nhân và Gia đình Việt Nam nghiêm cấm việc kết hôn giữa những người có cùng dòng máu trực hệ và có họ hàng trong phạm vi 3 đời?",
+    "knowledge": ["kb-bio-g9-tac-hai-hon-nhan-can-huyet"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Vì hôn nhân cận huyết làm tăng tỉ lệ kiểu gen đồng hợp lặn, khiến các gen lặn đột biến có hại tiềm ẩn có cơ hội gặp nhau và biểu hiện thành các bệnh tật di truyền nguy hiểm ở con cháu" },
+        { "id": "opt-b", "label": "Vì hôn nhân cận huyết luôn làm mất đi phân nửa số lượng nhiễm sắc thể của thế hệ sau" },
+        { "id": "opt-c", "label": "Vì những người có họ hàng khi kết hôn thì chỉ có thể sinh ra toàn con trai" },
+        { "id": "opt-d", "label": "Vì hôn nhân cận huyết làm tăng nguy cơ lây truyền virus cảm cúm giữa hai người" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Mỗi người bình thường đều mang một số gen lặn đột biến có hại nhưng ở trạng thái dị hợp (Aa) nên chưa biểu hiện." },
+      { "level": 2, "text": "Khi hai người có cùng huyết thống gần kết hôn, khả năng hai người cùng mang gen lặn đó gặp nhau (Aa × Aa → aa) tăng vọt." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Bản chất di truyền của hôn nhân cận huyết", "body": "Những người có quan hệ họ hàng gần mang nhiều gen giống nhau do thừa hưởng từ tổ tiên chung." },
+      { "kind": "knowledge", "title": "Tác hại của kiểu gen đồng hợp lặn", "body": "Hôn nhân cận huyết làm tăng xác suất kết hợp giữa các giao tử mang gen lặn có hại, đưa các gen này về trạng thái đồng hợp lặn (aa), dẫn tới trẻ sinh ra bị quái thai, dị tật bẩm sinh, thiểu năng trí tuệ và chết non." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tăng tỉ lệ đồng hợp tử lặn làm biểu hiện các bệnh tật di truyền nguy hiểm." }
+    ],
+    "finalSolution": "Hôn nhân cận huyết làm tăng tỉ lệ kiểu gen đồng hợp lặn (aa), khiến các gen lặn đột biến có hại biểu hiện thành các bệnh tật hiểm nghèo ở đời con.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng hôn nhân cận huyết trực tiếp tạo ra các gen đột biến mới (nó chỉ làm tăng cơ hội biểu hiện của các gen lặn sẵn có)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b12-q08",
+    "lessonId": "bio-g9-b12",
+    "sgkBaiSo": 47,
+    "skillIds": ["bio9-di-truyen-nguoi"],
+    "difficulty": 2,
+    "prompt": "Xét nghiệm sàng lọc trước sinh không xâm lấn NIPT (phân tích DNA tự do của thai nhi trong máu mẹ) mang lại ý nghĩa then chốt nào trong y học hiện đại?",
+    "knowledge": ["kb-bio-g9-di-truyen-y-hoc-tu-van"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Giúp phát hiện sớm từ tuần thai thứ 9 - 10 các hội chứng dị tật do lệch bội NST như Đao, Turner, Edwards với độ chính xác cao và an toàn cho thai nhi" },
+        { "id": "opt-b", "label": "Giúp thay thế toàn bộ các gen bị hỏng của thai nhi bằng các gen nhân tạo trong bụng mẹ" },
+        { "id": "opt-c", "label": "Giúp điều khiển cho thai nhi chuyển đổi từ giới tính nam sang giới tính nữ theo ý muốn" },
+        { "id": "opt-d", "label": "Giúp loại bỏ hoàn toàn nhu cầu dinh dưỡng của thai nhi trong suốt thai kì" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Phương pháp này lấy mẫu máu từ tĩnh mạch tay của người mẹ nên không gây nguy cơ sảy thai như chọc ối." },
+      { "level": 2, "text": "Phát hiện sớm các bất thường về số lượng nhiễm sắc thể ở thai nhi ngay từ giai đoạn đầu." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Bản chất kĩ thuật NIPT", "body": "NIPT (Non-Invasive Prenatal Testing) phân tích các đoạn DNA thai nhi tự do lưu hành trong máu người mẹ." },
+      { "kind": "knowledge", "title": "Ý nghĩa y học", "body": "Phương pháp này phát hiện sớm các bất thường số lượng NST (như thể ba NST 21 gây hội chứng Đao, thể một XO gây hội chứng Turner) với độ chính xác trên 99%, tuyệt đối an toàn và không gây tổn thương hay rủi ro sảy thai." },
+      { "kind": "answer", "title": "Kết luận", "body": "Phát hiện sớm các dị tật lệch bội NST như Đao, Turner với độ chính xác cao và an toàn." }
+    ],
+    "finalSolution": "Xét nghiệm NIPT giúp phát hiện sớm các hội chứng lệch bội nhiễm sắc thể (Đao, Turner, Edwards) ngay từ tuần thứ 9 - 10 với độ chính xác cao và tuyệt đối an toàn.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng xét nghiệm sàng lọc có thể can thiệp chữa khỏi hoặc thay thế gen cho thai nhi." }
+    ]
+  }
+]

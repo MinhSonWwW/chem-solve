@@ -1,0 +1,81 @@
+[
+  {
+    "id": "kb-bio-g8-ecosystem-structure",
+    "title": "Cấu trúc thành phần của Hệ sinh thái",
+    "description": "Hệ sinh thái bao gồm quần xã sinh vật và sinh cảnh (môi trường vô sinh), tạo thành một hệ thống chức năng hoàn chỉnh và tương đối ổn định.",
+    "components": {
+      "biotope": {
+        "name": "Thành phần vô sinh (Sinh cảnh)",
+        "elements": ["Ánh sáng mặt trời", "Nhiệt độ khí hậu", "Nước và độ ẩm", "Không khí (khí O2, CO2, N2)", "Đất, đá, muối khoáng và xác mùn hữu cơ"]
+      },
+      "biocoenosis": {
+        "name": "Thành phần hữu sinh (Quần xã sinh vật)",
+        "groups": [
+          {
+            "role": "Sinh vật sản xuất (Producers)",
+            "representatives": "Thực vật có hoa, rêu, dương xỉ, vi khuẩn lam, tảo đơn bào",
+            "function": "Sinh vật tự dưỡng: sử dụng năng lượng ánh sáng mặt trời để quang hợp, tổng hợp chất hữu cơ từ nước và CO2, là nguồn cung cấp vật chất và năng lượng ban đầu cho toàn bộ hệ sinh thái."
+          },
+          {
+            "role": "Sinh vật tiêu thụ (Consumers)",
+            "representatives": "Động vật ăn thực vật, động vật ăn thịt, động vật ăn tạp",
+            "function": "Sinh vật dị dưỡng: sử dụng chất hữu cơ do sinh vật sản xuất hoặc sinh vật khác tạo ra. Chia thành SV tiêu thụ bậc 1 (động vật ăn thực vật), bậc 2 (động vật ăn thịt ăn SV tiêu thụ bậc 1), bậc 3..."
+          },
+          {
+            "role": "Sinh vật phân giải (Decomposers)",
+            "representatives": "Vi khuẩn hoại sinh, nấm mốc, nấm rơm, một số động vật không xương sống (giun đất, bọ phân)",
+            "function": "Phân giải xác sinh vật, lá rụng, chất thải hữu cơ thành các chất vô cơ đơn giản trả lại cho đất và nước để cây xanh tiếp tục hấp thụ khép kín chu trình tuần hoàn vật chất."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "kb-bio-g8-food-chain-and-web",
+    "title": "Chuỗi thức ăn và Lưới thức ăn",
+    "description": "Các mắt xích dinh dưỡng kết nối sinh vật thông qua hoạt động săn bắt và tiêu thụ.",
+    "foodChain": {
+      "definition": "Một dãy gồm nhiều loài sinh vật có quan hệ dinh dưỡng với nhau, trong đó mỗi loài là một mắt xích, vừa là sinh vật tiêu thụ mắt xích phía trước, vừa là thức ăn của mắt xích phía sau.",
+      "types": [
+        {
+          "name": "Chuỗi thức ăn mở đầu bằng sinh vật sản xuất (phổ biến nhất)",
+          "example": "Cây lúa → Cào cào (SV tiêu thụ bậc 1) → Ếch đồng (SV tiêu thụ bậc 2) → Rắn hổ mang (SV tiêu thụ bậc 3) → Đại bàng (SV tiêu thụ bậc 4) → Vi sinh vật phân giải"
+        },
+        {
+          "name": "Chuỗi thức ăn mở đầu bằng sinh vật phân giải / mùn bã hữu cơ",
+          "example": "Mùn bã thực vật mục nát → Giun đất → Gà rừng → Cáo → Vi khuẩn phân giải"
+        }
+      ]
+    },
+    "foodWeb": {
+      "definition": "Tập hợp các chuỗi thức ăn có chung nhiều mắt xích trong quần xã. Quần xã càng đa dạng về thành phần loài thì lưới thức ăn càng phức tạp và hệ sinh thái càng có tính ổn định cao."
+    }
+  },
+  {
+    "id": "kb-bio-g8-trophic-levels-energy-flow",
+    "title": "Bậc dinh dưỡng và Quy luật tháp năng lượng 10%",
+    "description": "Nguyên lý truyền năng lượng và cấu trúc tháp sinh thái trong chuỗi dinh dưỡng.",
+    "trophicLevels": [
+      { "level": "Bậc dinh dưỡng cấp 1", "occupant": "Sinh vật sản xuất (Cây cỏ, tảo)" },
+      { "level": "Bậc dinh dưỡng cấp 2", "occupant": "Sinh vật tiêu thụ bậc 1 (Động vật ăn cỏ, cào cào, thỏ)" },
+      { "level": "Bậc dinh dưỡng cấp 3", "occupant": "Sinh vật tiêu thụ bậc 2 (Động vật ăn thịt cấp 1: ếch, chim sâu, cáo)" },
+      { "level": "Bậc dinh dưỡng cấp 4", "occupant": "Sinh vật tiêu thụ bậc 3 (Động vật ăn thịt đỉnh chuỗi: rắn, chim ưng, hổ)" }
+    ],
+    "tenPercentLaw": {
+      "name": "Quy luật hiệu suất sinh thái 10% (Định luật Lindeman)",
+      "content": "Năng lượng truyền từ bậc dinh dưỡng thấp lên bậc dinh dưỡng kế tiếp chỉ đạt trung bình khoảng 10%.",
+      "energyLoss": "Khoảng 90% tổng năng lượng bị thất thoát qua mỗi bậc do: tỏa nhiệt qua hô hấp tế bào (chiếm ~70%), chất thải bài tiết và các phần không được tiêu hóa như lông, xương, vỏ, móng (chiếm ~10%), xác chết rơi rụng sang sinh vật phân giải (chiếm ~10%).",
+      "consequence": "Do sự hao hụt năng lượng khổng lồ qua mỗi mắt xích, chuỗi thức ăn trong tự nhiên thường chỉ có tối đa từ 4 đến 6 bậc dinh dưỡng."
+    },
+    "pyramids": [
+      {
+        "type": "Tháp năng lượng (Energy Pyramid)",
+        "characteristic": "Luôn luôn có dạng chuẩn tắc hình tam giác đáy rộng đỉnh nhọn, phản ánh số năng lượng tích lũy thực tế giảm dần đều qua các bậc dinh dưỡng, không bao giờ bị đảo ngược."
+      },
+      {
+        "type": "Tháp số lượng và Tháp sinh khối",
+        "characteristic": "Thể hiện tổng số lượng cá thể hoặc tổng sinh khối (khối lượng chất sống khô) ở mỗi bậc dinh dưỡng; đôi khi có thể bị biến dạng đảo ngược trong một số hệ sinh thái đặc thù (như cây cổ thụ nuôi hàng nghìn rệp cây)."
+      }
+    ]
+  }
+]

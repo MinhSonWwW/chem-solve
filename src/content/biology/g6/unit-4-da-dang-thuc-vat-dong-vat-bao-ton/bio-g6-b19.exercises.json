@@ -1,0 +1,299 @@
+[
+  {
+    "id": "bio-g6-b19-q01",
+    "lessonId": "bio-g6-b19",
+    "sgkBaiSo": 34,
+    "skillIds": ["bio-thuc-vat-4-nganh"],
+    "difficulty": 1,
+    "prompt": "Hãy sắp xếp 4 ngành thực vật chính theo đúng trình tự tiến hóa từ bậc thấp (xuất hiện sớm) đến bậc cao nhất:",
+    "knowledge": ["bio-thuc-vat-4-nganh"],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "1. Ngành Rêu (chưa có mạch dẫn, rễ giả, sinh sản bằng bào tử)",
+        "2. Ngành Dương xỉ (đã có mạch dẫn, lá non cuộn, sinh sản bằng bào tử)",
+        "3. Ngành Hạt trần (có nón, hạt nằm lộ trên lá noãn hở)",
+        "4. Ngành Hạt kín (tiến hóa nhất, có hoa và quả bảo vệ hạt)"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bắt đầu bằng nhóm rêu đơn sơ chưa có mạch dẫn."
+      },
+      {
+        "level": 2,
+        "text": "Kết thúc bằng ngành hạt kín có hoa quả tiến hóa hoàn thiện nhất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu bài tập",
+        "body": "Xếp 4 ngành thực vật theo cây phả hệ tiến hóa."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Sơ đồ tiến hóa chuẩn",
+        "body": "Rêu → Dương xỉ → Hạt trần → Hạt kín."
+      },
+      {
+        "kind": "answer",
+        "title": "Thứ tự chính xác",
+        "body": "Rêu (1) đến Hạt kín (4)."
+      }
+    ],
+    "finalSolution": "Trật tự tiến hóa: Ngành Rêu → Ngành Dương xỉ → Ngành Hạt trần → Ngành Hạt kín.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Xếp Hạt trần trước Dương xỉ (Dương xỉ có mạch xuất hiện trước thực vật có hạt)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b19-q02",
+    "lessonId": "bio-g6-b19",
+    "sgkBaiSo": 34,
+    "skillIds": ["bio-thuc-vat-4-nganh"],
+    "difficulty": 2,
+    "prompt": "Phân loại các loài thực vật sau vào đúng 4 ngành thực vật tương ứng:",
+    "knowledge": ["bio-thuc-vat-4-nganh"],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "b-bryo", "label": "Ngành Rêu" },
+        { "id": "b-pteri", "label": "Ngành Dương xỉ" },
+        { "id": "b-gymno", "label": "Ngành Hạt trần" },
+        { "id": "b-angio", "label": "Ngành Hạt kín" }
+      ],
+      "items": [
+        { "id": "it-1", "label": "Cây rêu tường", "bucketId": "b-bryo" },
+        { "id": "it-2", "label": "Cây dương xỉ", "bucketId": "b-pteri" },
+        { "id": "it-3", "label": "Cây thông hai lá", "bucketId": "b-gymno" },
+        { "id": "it-4", "label": "Cây vạn tuế", "bucketId": "b-gymno" },
+        { "id": "it-5", "label": "Cây hoa sen", "bucketId": "b-angio" },
+        { "id": "it-6", "label": "Cây bàng", "bucketId": "b-angio" }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Rêu tường thuộc Rêu; Thông và Vạn tuế thuộc Hạt trần."
+      },
+      {
+        "level": 2,
+        "text": "Hoa sen và bàng nở hoa kết trái thuộc Hạt kín."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân loại 6 loài cây",
+        "body": "Xếp vào 4 ngành thực vật tương ứng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc trưng từng loài",
+        "body": "Rêu tường: Rêu; Dương xỉ: Dương xỉ; Thông, Vạn tuế: Hạt trần (có nón); Sen, Bàng: Hạt kín (có hoa quả)."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất phân nhóm",
+        "body": "Khớp chính xác các loài cây vào 4 ngành."
+      }
+    ],
+    "finalSolution": "Ngành Rêu: Cây rêu tường; Ngành Dương xỉ: Cây dương xỉ; Ngành Hạt trần: Cây thông hai lá, Cây vạn tuế; Ngành Hạt kín: Cây hoa sen, Cây bàng.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Nghĩ cây vạn tuế là cây hạt kín vì thấy nó có lá xòe đẹp."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b19-q03",
+    "lessonId": "bio-g6-b19",
+    "sgkBaiSo": 34,
+    "skillIds": ["bio-thuc-vat-4-nganh"],
+    "difficulty": 1,
+    "prompt": "Ghép nối từng ngành thực vật (cột bên trái) với đúng đặc điểm cơ quan sinh dưỡng và sinh sản tiêu biểu nhất của nó (cột bên phải):",
+    "knowledge": ["bio-thuc-vat-4-nganh"],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Ngành Rêu",
+          "right": "Chưa có mạch dẫn, rễ giả, sinh sản bằng bào tử trong túi bào tử ở ngọn"
+        },
+        {
+          "left": "Ngành Dương xỉ",
+          "right": "Đã có mạch dẫn, lá non cuộn tròn ở đầu, sinh sản bằng bào tử ở mặt dưới lá"
+        },
+        {
+          "left": "Ngành Hạt trần",
+          "right": "Có mạch dẫn, sinh sản bằng hạt nằm lộ trên các lá noãn hở của nón"
+        },
+        {
+          "left": "Ngành Hạt kín",
+          "right": "Có hoa và quả, hạt được giấu kín và bảo vệ an toàn bên trong quả"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Rêu chưa có mạch dẫn thực sự; dương xỉ có lá non cuộn tròn."
+      },
+      {
+        "level": 2,
+        "text": "Hạt trần có nón; hạt kín có hoa và quả."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu bài tập",
+        "body": "Nối 4 ngành thực vật với các tiêu chí hình thái giải phẫu cốt lõi."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu 4 ngành",
+        "body": "Rêu: chưa mạch + rễ giả; Dương xỉ: có mạch + lá non cuộn; Hạt trần: hạt lộ trên nón; Hạt kín: hoa và quả."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất ghép cặp",
+        "body": "Khớp đúng 4 cặp đặc trưng."
+      }
+    ],
+    "finalSolution": "Rêu: Chưa có mạch, rễ giả, bào tử; Dương xỉ: Có mạch, lá non cuộn, bào tử; Hạt trần: Hạt lộ trên nón hở; Hạt kín: Có hoa và quả bảo vệ hạt kín.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nghĩ cây thông hạt trần cũng có hoa và quả thông (thông chỉ có nón chứ chưa có hoa và quả thật sự)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b19-q04",
+    "lessonId": "bio-g6-b19",
+    "sgkBaiSo": 34,
+    "skillIds": ["bio-thuc-vat-4-nganh"],
+    "difficulty": 1,
+    "prompt": "Đặc điểm hình thái đặc trưng nào sau đây giúp chúng ta dễ dàng nhận biết một cây thuộc nhóm Dương xỉ ngoài thiên nhiên?",
+    "knowledge": ["bio-thuc-vat-4-nganh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Lá non có đầu cuộn tròn lại giống như chiếc đầu gậy" },
+        { "id": "opt-b", "label": "Lá có hình chiếc kim nhọn hoắt tiết ra nhựa thơm" },
+        { "id": "opt-c", "label": "Cây luôn nở những bông hoa màu đỏ rực rỡ" },
+        { "id": "opt-d", "label": "Cây chỉ sống trôi nổi tự do trên mặt biển sâu" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hãy quan sát những chồi non mới nhú của cây dương xỉ."
+      },
+      {
+        "level": 2,
+        "text": "Lá non cuộn tròn hình xoắn ốc là dấu hiệu nhận diện độc nhất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Dấu hiệu nhận biết dương xỉ",
+        "body": "Tìm đặc điểm hình thái đặc trưng của lá non dương xỉ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hình thái dương xỉ",
+        "body": "Lá non của dương xỉ luôn cuộn tròn ở đầu hình đầu gậy (rau dớn, dương xỉ). Khi lớn lên, lá mới xòe thẳng ra."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án đúng",
+        "body": "Lựa chọn chính xác là dấu hiệu đặc trưng chuẩn xác."
+      }
+    ],
+    "finalSolution": "Đặc điểm nhận biết điển hình của dương xỉ là lá non luôn cuộn tròn ở đầu hình đầu gậy.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Nhầm lá kim của cây thông với lá của dương xỉ."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b19-q05",
+    "lessonId": "bio-g6-b19",
+    "sgkBaiSo": 34,
+    "skillIds": ["bio-thuc-vat-4-nganh"],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về giới Thực vật:",
+    "knowledge": ["bio-thuc-vat-4-nganh"],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Rêu chỉ có thể sống ở những nơi ẩm ướt vì rêu chưa có mạch dẫn thực sự và thụ tinh phụ thuộc vào nước.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Hạt của cây thông được bao bọc và giấu kín hoàn toàn bên trong quả thịt thơm ngon.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Thực vật hạt kín là nhóm thực vật chiếm ưu thế tuyệt đối về số lượng loài trong sinh giới ngày nay.",
+          "correct": true
+        },
+        {
+          "id": "st-4",
+          "text": "Dương xỉ sinh sản bằng hạt giống được tạo thành từ các bông hoa ở ngọn cây.",
+          "correct": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cây thông là thực vật Hạt trần nên hạt nằm lộ trên lá noãn hở, không có quả."
+      },
+      {
+        "level": 2,
+        "text": "Dương xỉ sinh sản bằng bào tử chứ chưa có hạt hay hoa."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Đánh giá từng câu về đặc tính sinh học của các ngành thực vật."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra chi tiết",
+        "body": "1. Rêu sống nơi ẩm do chưa có mạch: Đúng. 2. Hạt thông nằm trong quả thịt: Sai (hạt trần nằm lộ trên lá noãn hở). 3. Hạt kín chiếm ưu thế: Đúng. 4. Dương xỉ sinh sản bằng hạt: Sai (sinh sản bằng bào tử)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Ý 1: Đúng; Ý 2: Sai; Ý 3: Đúng; Ý 4: Sai."
+      }
+    ],
+    "finalSolution": "Phát biểu 1 và 3 đúng. Phát biểu 2 sai (hạt thông nằm trần trên nón hở, không có quả). Phát biểu 4 sai (dương xỉ sinh sản bằng bào tử nằm ở mặt dưới lá già).",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng 'quả thông' là quả thật sự (thực chất đó là nón cái chứa các hạt trần)."
+      }
+    ]
+  }
+]

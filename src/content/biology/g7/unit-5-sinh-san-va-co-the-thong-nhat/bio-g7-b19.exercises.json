@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g7-b19-q01",
+    "lessonId": "bio-g7-b19",
+    "sgkBaiSo": 39,
+    "skillIds": ["bio-sinh-san-vo-tinh"],
+    "difficulty": 1,
+    "prompt": "Đặc điểm bản chất cốt lõi của hình thức SINH SẢN VÔ TÍNH ở sinh vật là gì?",
+    "knowledge": ["kb-bio-g7-sinh-san-vo-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Chỉ do một cá thể mẹ sinh ra, không có sự kết hợp giữa giao tử đực và giao tử cái, con sinh ra giống hệt mẹ" },
+        { "id": "opt-b", "label": "Bắt buộc phải có sự thụ phấn giữa nhị và nhụy của hai cây khác nhau" },
+        { "id": "opt-c", "label": "Luôn tạo ra thế hệ con lai mang nguồn gen đa dạng thích nghi cao" },
+        { "id": "opt-d", "label": "Phải có sự kết hợp giữa tế bào trứng và tinh trùng qua thụ tinh" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Sinh sản vô tính không có sự tham gia của tế bào sinh dục đực và cái." },
+      { "level": 2, "text": "Cơ thể con được tạo thành nhờ quá trình nguyên phân từ một phần cơ thể mẹ." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định bản chất sinh học", "body": "Tìm đặc điểm phân loại cốt lõi của sinh sản vô tính." },
+      { "kind": "knowledge", "title": "Khái niệm sinh sản vô tính", "body": "Sinh sản vô tính là hình thức tạo ra cá thể mới từ 1 cơ thể mẹ, không có sự dung hợp giao tử đực - cái, con mang gen giống hệt mẹ." },
+      { "kind": "answer", "title": "Kết luận", "body": "Chỉ do một cá thể mẹ sinh ra, không có sự kết hợp giữa giao tử đực và giao tử cái, con sinh ra giống hệt mẹ." }
+    ],
+    "finalSolution": "Sinh sản vô tính chỉ cần một cá thể mẹ, không có thụ tinh, con sinh ra đồng nhất giống hệt mẹ.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn rằng sinh sản vô tính cũng có sự tham gia của tinh trùng và trứng." }
+    ]
+  },
+  {
+    "id": "bio-g7-b19-q02",
+    "lessonId": "bio-g7-b19",
+    "sgkBaiSo": 39,
+    "skillIds": ["bio-sinh-san-vo-tinh"],
+    "difficulty": 1,
+    "prompt": "Cây khoai tây và cây gừng trong tự nhiên thực hiện sinh sản sinh dưỡng lần lượt bằng các cơ quan nào?",
+    "knowledge": ["kb-bio-g7-sinh-san-vo-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Khoai tây sinh sản bằng thân củ, gừng sinh sản bằng thân rễ" },
+        { "id": "opt-b", "label": "Khoai tây sinh sản bằng rễ củ, gừng sinh sản bằng lá" },
+        { "id": "opt-c", "label": "Khoai tây sinh sản bằng hạt, gừng sinh sản bằng cành" },
+        { "id": "opt-d", "label": "Cả hai đều sinh sản bằng thân bò trên mặt đất" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Củ khoai tây có các mắt lõm mọc chồi (là một dạng thân phình to tích lũy tinh bột)." },
+      { "level": 2, "text": "Củ gừng mọc ngầm dưới đất có các đốt và vảy (thân rễ biến dạng)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại cơ quan sinh dưỡng", "body": "Xác định cơ quan sinh sản tự nhiên của củ khoai tây và củ gừng." },
+      { "kind": "knowledge", "title": "Cơ quan sinh sản sinh dưỡng", "body": "Khoai tây sinh sản bằng thân củ (mầm mọc từ mắt củ); gừng, nghệ sinh sản bằng thân rễ ngầm." },
+      { "kind": "answer", "title": "Kết luận", "body": "Khoai tây sinh sản bằng thân củ, gừng sinh sản bằng thân rễ." }
+    ],
+    "finalSolution": "Khoai tây sinh sản sinh dưỡng bằng thân củ, gừng sinh sản bằng thân rễ.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm củ khoai tây là 'rễ củ' (khoai lang mới là rễ củ, khoai tây là thân củ)." }
+    ]
+  },
+  {
+    "id": "bio-g7-b19-q03",
+    "lessonId": "bio-g7-b19",
+    "sgkBaiSo": 39,
+    "skillIds": ["bio-sinh-san-vo-tinh"],
+    "difficulty": 1,
+    "prompt": "Cây rau má và cây dâu tây sinh sản sinh dưỡng tự nhiên rất nhanh chóng lan rộng trên mặt đất nhờ cơ quan nào?",
+    "knowledge": ["kb-bio-g7-sinh-san-vo-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Thân bò (các mấu đốt trên thân mọc rễ và chồi mới tạo cây con)" },
+        { "id": "opt-b", "label": "Thân củ nằm sâu dưới đất" },
+        { "id": "opt-c", "label": "Mép răng cưa của phiến lá già" },
+        { "id": "opt-d", "label": "Bào tử phát tán nhờ gió" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Thân của chúng bò sát mặt đất, vươn dài đến đâu bén rễ mọc cây mới đến đó." },
+      { "level": 2, "text": "Hình thức sinh sản này gọi là sinh sản bằng thân bò." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận diện cơ quan sinh dưỡng", "body": "Khảo sát cơ quan sinh sản của cây rau má, dâu tây." },
+      { "kind": "knowledge", "title": "Sinh sản bằng thân bò", "body": "Thân bò mọc dài lan trên mặt đất, tại mỗi mấu mắt đâm rễ phụ và chồi lá tạo thành cá thể con độc lập." },
+      { "kind": "answer", "title": "Kết luận", "body": "Thân bò (các mấu đốt trên thân mọc rễ và chồi mới tạo cây con)." }
+    ],
+    "finalSolution": "Rau má và dâu tây sinh sản sinh dưỡng nhanh chóng nhờ thân bò bén rễ tại các mấu đốt.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm thân bò với thân rễ ngầm dưới đất." }
+    ]
+  },
+  {
+    "id": "bio-g7-b19-q04",
+    "lessonId": "bio-g7-b19",
+    "sgkBaiSo": 39,
+    "skillIds": ["bio-sinh-san-vo-tinh"],
+    "difficulty": 2,
+    "prompt": "Phương pháp nhân giống vô tính nào sau đây thực hiện bằng cách bóc một khoanh vỏ trên cành cây đang sống, đắp bầu đất ẩm cho ra rễ rồi mới cắt rời đem trồng?",
+    "knowledge": ["kb-bio-g7-sinh-san-vo-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Phương pháp Chiết cành" },
+        { "id": "opt-b", "label": "Phương pháp Giâm cành" },
+        { "id": "opt-c", "label": "Phương pháp Ghép mắt" },
+        { "id": "opt-d", "label": "Phương pháp Nuôi cấy mô" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Cành cây vẫn được cây mẹ nuôi dưỡng trong lúc đang kích thích ra rễ trong bầu đất." },
+      { "level": 2, "text": "Bóc khoanh vỏ và bọc bầu đất là thao tác đặc trưng của kỹ thuật chiết cành cây ăn quả." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận diện phương pháp nhân giống", "body": "Phân biệt các kỹ thuật nhân giống sinh dưỡng nhân tạo trong nông nghiệp." },
+      { "kind": "knowledge", "title": "Kỹ thuật chiết cành", "body": "Chiết cành: bóc khoanh vỏ (cắt mạch rây), đắp bầu đất mùn ẩm cho rễ mọc rồi mới cắt cành đem trồng." },
+      { "kind": "answer", "title": "Kết luận", "body": "Phương pháp Chiết cành." }
+    ],
+    "finalSolution": "Chiết cành là phương pháp bóc khoanh vỏ đắp bầu đất cho cành ra rễ trước khi cắt rời khỏi cây mẹ.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn giữa chiết cành (đắp bầu đất khi cành còn trên cây) với giâm cành (cắt cành cắm xuống đất trước)." }
+    ]
+  },
+  {
+    "id": "bio-g7-b19-q05",
+    "lessonId": "bio-g7-b19",
+    "sgkBaiSo": 39,
+    "skillIds": ["bio-sinh-san-vo-tinh"],
+    "difficulty": 2,
+    "prompt": "Ưu điểm vượt trội lớn nhất của phương pháp NUÔI CẤY MÔ TẾ BÀO thực vật trong ống nghiệm vô trùng là gì?",
+    "knowledge": ["kb-bio-g7-sinh-san-vo-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Nhân nhanh hàng loạt hàng triệu cây giống sạch bệnh, đồng đều di truyền trong thời gian ngắn và không phụ thuộc thời tiết" },
+        { "id": "opt-b", "label": "Tạo ra các giống cây trồng khổng lồ có kích thước to gấp 100 lần" },
+        { "id": "opt-c", "label": "Không cần sử dụng nước và chất khoáng cây vẫn lớn được" },
+        { "id": "opt-d", "label": "Làm cho cây không bao giờ bị chết già" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Phương pháp này được tiến hành trong phòng thí nghiệm vô trùng với môi trường dinh dưỡng nhân tạo." },
+      { "level": 2, "text": "Từ một mẩu mô nhỏ có thể tạo ra số lượng cây con cực kỳ khổng lồ và hoàn toàn sạch virus, nấm bệnh." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích giá trị công nghệ sinh học", "body": "Xác định ưu thế nổi bật của kỹ thuật nuôi cấy mô tế bào thực vật (vi nhân giống)." },
+      { "kind": "knowledge", "title": "Lợi ích nuôi cấy mô", "body": "Nhân nhanh số lượng lớn cây giống đồng nhất, sạch bệnh, tiết kiệm diện tích và chủ động sản xuất giống quanh năm." },
+      { "kind": "answer", "title": "Kết luận", "body": "Nhân nhanh hàng loạt hàng triệu cây giống sạch bệnh, đồng đều di truyền trong thời gian ngắn và không phụ thuộc thời tiết." }
+    ],
+    "finalSolution": "Nuôi cấy mô tế bào giúp nhân nhanh số lượng khổng lồ cây con sạch bệnh, đồng nhất về di truyền.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng nuôi cấy mô làm đột biến kích thước cây to gấp 100 lần." }
+    ]
+  },
+  {
+    "id": "bio-g7-b19-q06",
+    "lessonId": "bio-g7-b19",
+    "sgkBaiSo": 39,
+    "skillIds": ["bio-sinh-san-vo-tinh"],
+    "difficulty": 1,
+    "prompt": "Hình thức sinh sản vô tính nào sau đây được tìm thấy ở loài THỦY TỨC nước ngọt?",
+    "knowledge": ["kb-bio-g7-sinh-san-vo-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Sinh sản bằng hình thức Nảy chồi" },
+        { "id": "opt-b", "label": "Sinh sản bằng cách đẻ trứng thụ tinh ngoài" },
+        { "id": "opt-c", "label": "Sinh sản bằng củ ngầm" },
+        { "id": "opt-d", "label": "Sinh sản bằng cách giâm cành" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Trên thành cơ thể mẹ mọc ra một khối tế bào non nhú lên như một mầm non." },
+      { "level": 2, "text": "Chồi này lớn dần, hình thành miệng và tua miệng rồi tách ra thành thủy tức độc lập." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định hình thức sinh sản ở thủy tức", "body": "Khảo sát sinh sản vô tính ở động vật ruột khoang." },
+      { "kind": "knowledge", "title": "Sinh sản nảy chồi ở thủy tức", "body": "Thủy tức thường sinh sản vô tính bằng hình thức nảy chồi khi điều kiện thức ăn dồi dào." },
+      { "kind": "answer", "title": "Kết luận", "body": "Sinh sản bằng hình thức Nảy chồi." }
+    ],
+    "finalSolution": "Thủy tức nước ngọt sinh sản vô tính đặc trưng bằng hình thức nảy chồi.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm nảy chồi của thủy tức với sự phân đôi của trùng giày." }
+    ]
+  },
+  {
+    "id": "bio-g7-b19-q07",
+    "lessonId": "bio-g7-b19",
+    "sgkBaiSo": 39,
+    "skillIds": ["bio-sinh-san-vo-tinh"],
+    "difficulty": 2,
+    "prompt": "Khi một con sao biển bị kẻ thù cắn đứt mất một cánh tay, từ mảnh cánh tay đứt đó có thể phát triển tái sinh thành một con sao biển hoàn chỉnh mới. Đây là hình thức sinh sản:",
+    "knowledge": ["kb-bio-g7-sinh-san-vo-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Sinh sản vô tính bằng hình thức Tái sinh bộ phận" },
+        { "id": "opt-b", "label": "Sinh sản hữu tính thụ tinh trong" },
+        { "id": "opt-c", "label": "Sinh sản bằng bào tử kín" },
+        { "id": "opt-d", "label": "Phát triển qua biến thái hoàn toàn" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Từ một mảnh cắt cơ thể có thể mọc lại thành một cơ thể mới trọn vẹn." },
+      { "level": 2, "text": "Hình thức này gọi là tái sinh cơ thể, là một dạng sinh sản vô tính ở động vật bậc thấp." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận diện hình thức sinh sản", "body": "Phân tích cơ chế tạo cơ thể mới từ một phần cơ thể mẹ ở sao biển, giun dẹp." },
+      { "kind": "knowledge", "title": "Hình thức tái sinh", "body": "Khả năng tái sinh từ các mảnh vụn cơ thể thành cá thể mới là một dạng sinh sản vô tính phổ biến ở động vật không xương sống." },
+      { "kind": "answer", "title": "Kết luận", "body": "Sinh sản vô tính bằng hình thức Tái sinh bộ phận." }
+    ],
+    "finalSolution": "Sao biển mọc cơ thể mới từ một cánh tay bị đứt là sinh sản vô tính bằng hình thức tái sinh.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Chỉ nghĩ tái sinh là làm lành vết thương chứ không biết đó là một con đường sinh sản tạo cá thể mới." }
+    ]
+  },
+  {
+    "id": "bio-g7-b19-q08",
+    "lessonId": "bio-g7-b19",
+    "sgkBaiSo": 39,
+    "skillIds": ["bio-sinh-san-vo-tinh", "bio-sinh-san-huu-tinh-vs-vo-tinh"],
+    "difficulty": 2,
+    "prompt": "Nhược điểm sinh học lớn nhất của các quần thể sinh vật sinh sản hoàn toàn bằng con đường vô tính là gì?",
+    "knowledge": ["kb-bio-g7-sinh-san-huu-tinh-vs-vo-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Đàn con đồng nhất về di truyền nên khi môi trường sống thay đổi bất lợi hoặc có dịch bệnh mới thì dễ bị tiêu diệt hàng loạt" },
+        { "id": "opt-b", "label": "Tốc độ sinh sản quá chậm chạp không kịp duy trì nòi giống" },
+        { "id": "opt-c", "label": "Cần quá nhiều năng lượng để tìm kiếm bạn tình giao phối" },
+        { "id": "opt-d", "label": "Cá thể con sinh ra luôn luôn bị đột biến gen gây chết" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Do con giống hệt mẹ nên tất cả các cá thể đều có cùng một điểm yếu giống nhau." },
+      { "level": 2, "text": "Thiếu biến dị tổ hợp khiến cả quần thể dễ bị xóa sổ nếu gặp dịch bệnh hoặc thời tiết khắc nghiệt." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích hạn chế tiến hóa", "body": "Đánh giá nhược điểm thích nghi sinh thái của hình thức sinh sản vô tính." },
+      { "kind": "knowledge", "title": "Hạn chế di truyền của sinh sản vô tính", "body": "Thiếu tính đa dạng di truyền, các cá thể đều có tính mẫn cảm giống nhau nên dễ bị chết hàng loạt khi điều kiện sống thay đổi." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đàn con đồng nhất về di truyền nên khi môi trường sống thay đổi bất lợi hoặc có dịch bệnh mới thì dễ bị tiêu diệt hàng loạt." }
+    ],
+    "finalSolution": "Nhược điểm của sinh sản vô tính là nghèo nàn biến dị di truyền, dễ bị tiêu diệt hàng loạt khi môi trường biến đổi bất lợi.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng sinh sản vô tính tốn năng lượng tìm bạn tình (đây là nhược điểm của sinh sản hữu tính)." }
+    ]
+  }
+]

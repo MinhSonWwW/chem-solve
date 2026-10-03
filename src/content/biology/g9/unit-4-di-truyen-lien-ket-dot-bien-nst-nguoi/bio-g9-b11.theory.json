@@ -1,0 +1,77 @@
+{
+  "lessonId": "bio-g9-b11",
+  "nodeId": "bio-g9-b11-theory",
+  "title": "Lý thuyết: Đột biến nhiễm sắc thể",
+  "subtitle": "Bài 46 SGK KHTN 9 Kết nối tri thức: Đột biến cấu trúc (mất, lặp, đảo, chuyển đoạn) và đột biến số lượng NST (lệch bội và đa bội)",
+  "sgkBaiSo": 46,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Cấu trúc NST",
+      "badgeColor": "purple",
+      "title": "Các dạng đột biến cấu trúc nhiễm sắc thể",
+      "content": "Đột biến cấu trúc NST là những biến đổi trong cấu trúc của NST làm sắp xếp lại các khối gen lớn:",
+      "bulletPoints": [
+        "1. Mất đoạn: Một đoạn NST bị đứt ra và tiêu biến, làm giảm chiều dài NST và số lượng gen. Hậu quả thường gây chết hoặc giảm sức sống (ví dụ: mất đoạn đầu cánh ngắn NST số 5 gây Hội chứng tiếng mèo kêu Cri-du-chat; mất đoạn nhỏ NST 21 gây bệnh ung thư máu ác tính).",
+        "2. Lặp đoạn: Một đoạn NST được lặp lại một hay nhiều lần, làm tăng số lượng bản sao của gen (ví dụ: lặp đoạn trên NST X của ruồi giấm làm mắt lồi thành mắt dẹt; lặp đoạn ở lúa mạch tăng hoạt tính enzyme amylase).",
+        "3. Đảo đoạn: Một đoạn NST đứt ra rồi quay 180° và gắn lại vị trí cũ, làm thay đổi trật tự phân bố các gen.",
+        "4. Chuyển đoạn: Sự trao đổi đoạn giữa các NST không tương đồng (chuyển đoạn tương hỗ hoặc không tương hỗ, ví dụ chuyển đoạn giữa NST 9 và 22 tạo NST Philadelphia gây ung thư bạch cầu)."
+      ],
+      "callout": "Đột biến gen là lỗi ở một vài nucleotide; còn đột biến cấu trúc NST là biến đổi mất/lặp cả một đoạn lớn chứa hàng trăm gen!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Lệch bội (Dị bội)",
+      "badgeColor": "amber",
+      "title": "Đột biến số lượng NST: Thể lệch bội",
+      "content": "Lệch bội là biến đổi số lượng xảy ra ở một hoặc một số cặp nhiễm sắc thể tương đồng xác định:",
+      "bulletPoints": [
+        "Cơ chế phát sinh: Do một cặp NST tương đồng không phân li trong quá trình giảm phân, tạo ra giao tử thừa một NST (n + 1) hoặc thiếu một NST (n - 1). Khi thụ tinh với giao tử bình thường (n) sẽ tạo ra các hợp tử lệch bội.",
+        "Thể một (2n - 1): Mất đi 1 chiếc ở một cặp NST (ví dụ ở người: Hội chứng Turner 45, XO ở nữ giới).",
+        "Thể ba (2n + 1): Thêm 1 chiếc ở một cặp NST (ví dụ ở người: Hội chứng Đao có 3 chiếc NST số 21; Hội chứng Klinefelter 47, XXY ở nam giới; Thể ba ở cà độc dược 2n + 1 = 25).",
+        "Thể không (2n - 2) và Thể bốn (2n + 2): Mất hẳn cả cặp hoặc có 4 chiếc ở một cặp."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Đa bội (Polyploidy)",
+      "badgeColor": "cyan",
+      "title": "Đột biến số lượng NST: Thể đa bội và ứng dụng",
+      "content": "Hiện tượng toàn bộ bộ nhiễm sắc thể trong tế bào tăng theo bội số nguyên của n (lớn hơn 2n):",
+      "bulletPoints": [
+        "Phân loại: Đa bội lẻ (tam bội 3n, ngũ bội 5n...) và Đa bội chẵn (tứ bội 4n, lục bội 6n...).",
+        "Đặc điểm sinh học: Tế bào đa bội có hàm lượng DNA tăng gấp bội nên kích thước tế bào lớn, cơ quan sinh dưỡng (thân, lá, củ, quả, hạt) to bản, sinh trưởng khỏe, chống chịu sâu bệnh và điều kiện khắc nghiệt tốt.",
+        "Đa bội lẻ (3n) không hạt: Quá trình giảm phân ở thể tam bội bị rối loạn nghiêm trọng không tạo được giao tử bình thường (bất thụ) → Con người ứng dụng tạo các giống cây ăn quả không hạt có giá trị thương mại cao như dưa hấu tam bội 3n không hạt, chuối nhà 3n, nho 3n.",
+        "Tứ bội (4n): Giống dâu tằm tứ bội có lá to dày để nuôi tằm tơ năng suất cao."
+      ],
+      "callout": "Cạm bẫy cần tránh: Phân biệt rõ Thể ba (2n + 1 = 47 chiếc như hội chứng Đao) với Thể tam bội (3n = 69 chiếc ở người)!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Một người mắc Hội chứng Đao có bộ nhiễm sắc thể gồm 47 chiếc (trong đó có 3 chiếc nhiễm sắc thể số 21). Người này thuộc dạng đột biến nào sau đây?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Đột biến lệch bội dạng thể ba (2n + 1)",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Đột biến đa bội dạng thể tam bội (3n)",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Đột biến cấu trúc NST dạng lặp đoạn",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Đột biến lệch bội dạng thể một (2n - 1)",
+        "correct": false
+      }
+    ],
+    "explanation": "Hội chứng Đao là đột biến lệch bội dạng thể ba (2n + 1 = 47 chiếc), do chỉ có riêng cặp NST số 21 thừa 1 chiếc. Thể tam bội (3n) là khi toàn bộ 23 cặp NST đều có 3 chiếc (3n = 69 chiếc)."
+  }
+}

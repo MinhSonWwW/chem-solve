@@ -1,0 +1,554 @@
+[
+  {
+    "id": "bio-g8-b17-q01",
+    "lessonId": "bio-g8-b17",
+    "sgkBaiSo": 46,
+    "skillIds": [
+      "bio-can-bang-tu-nhien"
+    ],
+    "difficulty": 1,
+    "prompt": "Trạng thái cân bằng tự nhiên của hệ sinh thái được thể hiện qua dấu hiệu cơ bản nào sau đây?",
+    "knowledge": [
+      "kb-bio-g8-trang-thai-can-bang-tu-nhien"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Số lượng cá thể của các quần thể sinh vật duy trì ở mức độ phù hợp với khả năng cung cấp của nguồn sống"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tất cả các loài thú ăn thịt đều hoàn toàn biến mất khỏi quần xã rừng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Số lượng cá thể của một loài sâu hại tăng trưởng đột biến gấp hàng trăm lần sau một đêm"
+        },
+        {
+          "id": "opt-d",
+          "label": "Các chu trình tuần hoàn vật chất trong đất và nước ngừng hoạt động hoàn toàn"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cân bằng sinh thái phản ánh sự tương thích hài hòa giữa số lượng sinh vật với thức ăn và chỗ ở do môi trường cung cấp."
+      },
+      {
+        "level": 2,
+        "text": "Các quần thể sinh vật duy trì mật độ ổn định tương ứng với sức chứa của sinh cảnh."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Biểu hiện cân bằng tự nhiên",
+        "body": "Cân bằng tự nhiên là trạng thái ổn định vốn có của hệ sinh thái qua hàng triệu năm tiến hóa."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Các yếu tố cấu thành",
+        "body": "Ở trạng thái này, thành phần loài ổn định, số lượng cá thể mỗi loài được duy trì tương thích với sức chứa của môi trường thông qua các mối quan hệ hỗ trợ và đối kháng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Số lượng cá thể các quần thể duy trì phù hợp với khả năng cung cấp của nguồn sống là biểu hiện của cân bằng tự nhiên."
+      }
+    ],
+    "finalSolution": "Cân bằng tự nhiên thể hiện ở việc số lượng cá thể của các quần thể được duy trì ở mức phù hợp với sức chứa của nguồn sống môi trường.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng cân bằng tự nhiên là khi một loài phát triển áp đảo đè bẹp tất cả các loài khác."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b17-q02",
+    "lessonId": "bio-g8-b17",
+    "sgkBaiSo": 46,
+    "skillIds": [
+      "bio-can-bang-tu-nhien"
+    ],
+    "difficulty": 1,
+    "prompt": "Bản chất của trạng thái cân bằng tự nhiên trong hệ sinh thái là gì?",
+    "knowledge": [
+      "kb-bio-g8-trang-thai-can-bang-tu-nhien"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Là trạng thái cân bằng động, các chỉ số số lượng liên tục dao động nhịp nhàng quanh một ngưỡng ổn định"
+        },
+        {
+          "id": "opt-b",
+          "label": "Là trạng thái tĩnh tuyệt đối, số lượng cá thể các loài hoàn toàn bất biến theo thời gian"
+        },
+        {
+          "id": "opt-c",
+          "label": "Là trạng thái biến động hỗn loạn không có quy luật điều chỉnh nào"
+        },
+        {
+          "id": "opt-d",
+          "label": "Là trạng thái chỉ có sự chuyển hóa năng lượng một chiều mà không có sự tuần hoàn vật chất"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Số lượng cá thể động thực vật trong tự nhiên luôn sinh ra và chết đi theo mùa và năm."
+      },
+      {
+        "level": 2,
+        "text": "Cân bằng sinh thái không phải là bất biến cố định mà là cân bằng động (dynamic equilibrium)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất cân bằng sinh thái",
+        "body": "Trong tự nhiên, các điều kiện vô sinh và hữu sinh luôn biến đổi nhẹ theo mùa vụ và năm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Khái niệm cân bằng động",
+        "body": "Nhờ cơ chế tự điều chỉnh, số lượng cá thể tăng lên khi điều kiện thuận lợi và giảm xuống khi khan hiếm nguồn sống, tạo nên sự dao động nhịp nhàng quanh vị trí cân bằng, được gọi là cân bằng động."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cân bằng tự nhiên là trạng thái cân bằng động."
+      }
+    ],
+    "finalSolution": "Cân bằng tự nhiên có bản chất là cân bằng động, các cá thể sinh vật luôn dao động nhịp nhàng quanh vị trí ổn định.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Nhầm lẫn giữa cân bằng động (dao động quanh mức cân bằng) với trạng thái tĩnh bất biến (số lượng cố định không đổi)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b17-q03",
+    "lessonId": "bio-g8-b17",
+    "sgkBaiSo": 46,
+    "skillIds": [
+      "bio-can-bang-tu-nhien"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi mật độ cá thể của một quần thể sinh vật tăng lên quá cao vượt quá sức chứa của môi trường, cơ chế tự điều chỉnh nào sẽ diễn ra?",
+    "knowledge": [
+      "kb-bio-g8-trang-thai-can-bang-tu-nhien"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cạnh tranh cùng loài gay gắt làm tăng tỉ lệ tử vong và di cư, đồng thời giảm tỉ lệ sinh sản"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tất cả các cá thể trong quần thể sẽ tăng gấp đôi khả năng sinh sản để mở rộng bầy đàn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Môi trường sống sẽ tự động nhân đôi diện tích và lượng thức ăn sẵn có"
+        },
+        {
+          "id": "opt-d",
+          "label": "Các cá thể sẽ ngừng hoàn toàn quá trình hô hấp tế bào để tiết kiệm năng lượng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nguồn sống (thức ăn, chỗ ở) có hạn; khi mật độ quá cao các cá thể phải tranh giành nhau khốc liệt."
+      },
+      {
+        "level": 2,
+        "text": "Cạnh tranh tăng cao kéo theo bệnh tật, suy dinh dưỡng $\\to$ tử vong tăng, sinh sản giảm $\\to$ mật độ hạ về mức cân bằng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tác động khi mật độ vượt ngưỡng",
+        "body": "Khi số lượng cá thể quá đông, nguồn thức ăn và nơi ở trở nên khan hiếm nghiêm trọng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế tự điều hòa mật độ",
+        "body": "Cạnh tranh cùng loài trở nên gay gắt, nhiều cá thể yếu chết đi (tăng tử vong), một số di cư đi nơi khác, tỉ lệ thụ thai giảm sút (giảm sinh sản), từ đó đưa mật độ cá thể giảm dần về mức phù hợp với nguồn sống."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cạnh tranh gay gắt làm tăng tử vong, di cư và giảm sinh sản giúp điều chỉnh mật độ quần thể."
+      }
+    ],
+    "finalSolution": "Khi mật độ quá cao, cạnh tranh gay gắt làm tăng tử vong và giảm sinh sản đưa quần thể trở về trạng thái cân bằng với môi trường.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nghĩ rằng số lượng cá thể càng đông thì mức sinh sản sẽ càng tăng lên không ngừng."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b17-q04",
+    "lessonId": "bio-g8-b17",
+    "sgkBaiSo": 46,
+    "skillIds": [
+      "bio-can-bang-tu-nhien"
+    ],
+    "difficulty": 2,
+    "prompt": "Ví dụ nào sau đây thể hiện rõ nét mối quan hệ khống chế sinh học giúp điều hòa cân bằng giữa con mồi và kẻ săn mồi trong tự nhiên?",
+    "knowledge": [
+      "kb-bio-g8-trang-thai-can-bang-tu-nhien"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Số lượng thỏ tăng kéo theo số lượng cáo tăng; cáo săn bắt nhiều thỏ làm số thỏ giảm, kéo theo số cáo giảm lại"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cá voi xanh di cư hàng nghìn cây số tránh mùa đông lạnh giá ở hai cực"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cây tràm tiết chất thơm xua đuổi các loài thú ăn cỏ đến gần"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hai con hươu đực húc nhau quyết liệt tranh giành bạn tình vào mùa sinh sản"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mối quan hệ qua lại giữa hai quần thể: quần thể con mồi (thỏ) làm thức ăn cho quần thể ăn thịt (cáo)."
+      },
+      {
+        "level": 2,
+        "text": "Sự biến động số lượng của loài này kéo theo sự biến đổi ngược lại của loài kia theo vòng điều hòa."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tương tác vật ăn thịt - con mồi",
+        "body": "Con mồi là nguồn cung cấp thức ăn cho vật săn mồi, số lượng cá thể của hai bên liên hệ mật thiết."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Vòng điều hòa sinh thái",
+        "body": "Thỏ nhiều $\\to$ Cáo có nhiều thức ăn nên sinh sản tốt $\\to$ Số lượng cáo tăng làm săn bắt nhiều thỏ $\\to$ Thỏ giảm khiến cáo thiếu thức ăn và giảm theo $\\to$ Thỏ lại có cơ hội phục hồi, tạo nên chu kì dao động cân bằng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Mối quan hệ biến động tuần hoàn giữa thỏ và cáo là minh chứng điển hình của khống chế sinh học duy trì cân bằng tự nhiên."
+      }
+    ],
+    "finalSolution": "Tương tác thỏ và cáo theo cơ chế khống chế sinh học điều hòa số lượng hai quần thể dao động quanh vị trí cân bằng.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Nhầm cuộc đấu tranh nội bộ bạn tình cùng loài với tương tác khống chế sinh học giữa hai loài khác nhau."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b17-q05",
+    "lessonId": "bio-g8-b17",
+    "sgkBaiSo": 46,
+    "skillIds": [
+      "bio-can-bang-tu-nhien"
+    ],
+    "difficulty": 2,
+    "prompt": "Hoạt động nào sau đây của con người là nguyên nhân trực tiếp tàn phá thảm thực vật tự nhiên, dẫn tới xói mòn đất đai và lũ quét nghiêm trọng?",
+    "knowledge": [
+      "kb-bio-g8-nguyen-nhan-mat-can-bang"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chặt phá rừng tự nhiên và rừng phòng hộ đầu nguồn bừa bãi"
+        },
+        {
+          "id": "opt-b",
+          "label": "Trồng thêm cây hoa và cây bóng mát trong khuôn viên trường học"
+        },
+        {
+          "id": "opt-c",
+          "label": "Áp dụng phương pháp tưới nhỏ giọt tiết kiệm nước trong nông nghiệp"
+        },
+        {
+          "id": "opt-d",
+          "label": "Thu gom và tái chế chai nhựa và lon nhôm sinh hoạt"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Rễ cây rừng đan xen giữ đất, tán rừng cản bớt sức rơi của hạt mưa và giữ nước ngầm."
+      },
+      {
+        "level": 2,
+        "text": "Phá rừng đầu nguồn làm đồi trọc, khi mưa lớn nước chảy tràn xiết gây lũ ống, lũ quét và xói mòn rửa trôi đất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Vai trò của rừng đầu nguồn",
+        "body": "Tán rừng phòng hộ chặn nước mưa, rễ cây bám sâu giữ lớp đất mùn không bị nước cuốn trôi."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hậu quả của nạn phá rừng",
+        "body": "Chặt phá rừng làm mất lớp phủ thực vật bảo vệ; khi có mưa bão lớn, dòng nước chảy tràn với tốc độ dữ dội cuốn trôi đất màu, gây sạt lở núi đồi và lũ quét thảm khốc cho vùng hạ du."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Chặt phá rừng bừa bãi là nguyên nhân hàng đầu gây xói mòn đất và lũ quét."
+      }
+    ],
+    "finalSolution": "Phá rừng tự nhiên bừa bãi làm mất thảm thực vật giữ nước và đất, gây xói mòn, sạt lở và lũ quét nguy hiểm.",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng việc thu gom rác hay tưới nước tiết kiệm gây hại cho môi trường."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b17-q06",
+    "lessonId": "bio-g8-b17",
+    "sgkBaiSo": 46,
+    "skillIds": [
+      "bio-can-bang-tu-nhien"
+    ],
+    "difficulty": 2,
+    "prompt": "Hậu quả sinh thái khôn lường nào có thể xảy ra khi con người du nhập các loài sinh vật ngoại lai xâm hại (như ốc bươu vàng, rùa tai đỏ, cây mai dương) vào môi trường tự nhiên?",
+    "knowledge": [
+      "kb-bio-g8-nguyen-nhan-mat-can-bang"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chúng phát triển bùng phát do thiếu thiên địch, cạnh tranh nguồn sống và đe dọa tiêu diệt các loài bản địa"
+        },
+        {
+          "id": "opt-b",
+          "label": "Làm tăng độ phì nhiêu của đất và giúp các loài cá bản địa lớn nhanh gấp đôi"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tự động tiêu diệt sạch tất cả các loài cỏ dại và sâu bọ mà không gây hại mùa màng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Ngăn chặn hiện tượng nước biển dâng và làm dịu đi biến đổi khí hậu"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sinh vật ngoại lai xâm hại thường có khả năng thích nghi cao, sinh sản cực nhanh và không có loài thiên địch tự nhiên ở môi trường mới."
+      },
+      {
+        "level": 2,
+        "text": "Ốc bươu vàng ăn cụt mạ non lúa nước, rùa tai đỏ ăn tạp cạnh tranh thức ăn với các loài rùa nước ngọt bản địa của Việt Nam."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất sinh vật ngoại lai xâm hại",
+        "body": "Là những loài sinh vật ngoại lai có nguồn gốc từ vùng khác du nhập vào, có khả năng phát tán mạnh và thích ứng cao."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tác động phá vỡ cân bằng tự nhiên",
+        "body": "Tại môi trường mới, chúng không có thiên địch tự nhiên kìm hãm nên sinh sôi chóng mặt, tranh giành cạn kiệt thức ăn và nơi ở, truyền mầm bệnh lạ và đẩy nhiều loài bản địa đến nguy cơ tuyệt chủng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Sinh vật ngoại lai xâm hại bùng phát số lượng, cạnh tranh tiêu diệt loài bản địa và phá vỡ cân bằng sinh thái."
+      }
+    ],
+    "finalSolution": "Sinh vật ngoại lai xâm hại thiếu thiên địch kìm hãm nên bùng phát mạnh, cạnh tranh nguồn sống và tàn phá các loài bản địa.",
+    "commonMistakes": [
+      {
+        "id": "cm-06",
+        "message": "Nghĩ rằng du nhập bất kì sinh vật mới nào từ nước ngoài về cũng làm phong phú thêm hệ sinh thái mà không có rủi ro."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b17-q07",
+    "lessonId": "bio-g8-b17",
+    "sgkBaiSo": 46,
+    "skillIds": [
+      "bio-can-bang-tu-nhien"
+    ],
+    "difficulty": 3,
+    "prompt": "Hành vi sử dụng xung kích điện và hóa chất độc hại để đánh bắt thủy sản gây ra tác hại nghiêm trọng nào đối với hệ sinh thái sông hồ?",
+    "knowledge": [
+      "kb-bio-g8-nguyen-nhan-mat-can-bang"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tận diệt toàn bộ các loài cá con, ấu trùng, trứng và phá hủy chuỗi thức ăn thủy sinh"
+        },
+        {
+          "id": "opt-b",
+          "label": "Kích thích các loài cá sinh sản nhanh hơn để bù đắp số lượng đã mất"
+        },
+        {
+          "id": "opt-c",
+          "label": "Làm nước sông hồ trở nên trong sạch hơn nhờ tiêu diệt các loài phù du"
+        },
+        {
+          "id": "opt-d",
+          "label": "Giúp bảo tồn đa dạng di truyền cho các thế hệ cá mai sau"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Dòng điện xung kích không phân biệt cá lớn hay cá bé, nó giết chết tất cả các sinh vật trong bán kính tác dụng."
+      },
+      {
+        "level": 2,
+        "text": "Ấu trùng, cá giống và vi sinh vật thủy sinh chết hàng loạt khiến nguồn lợi thủy sản bị suy kiệt và không thể tái tạo."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phương thức đánh bắt tận diệt",
+        "body": "Đánh bắt bằng kích điện hoặc chất độc là phương thức khai thác hủy diệt bị pháp luật nghiêm cấm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hậu quả sinh thái",
+        "body": "Điện thế cao làm chết ngay lập tức hoặc làm tổn thương thần kinh, dị tật cột sống của mọi sinh vật nước trong vùng lân cận từ cá giống, tôm con đến vi sinh vật đáy, cắt đứt chuỗi thức ăn và hủy hoại khả năng phục hồi tự nhiên của nguồn nước."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đánh bắt bằng xung điện tận diệt trứng, ấu trùng và cá nhỏ, phá vỡ hoàn toàn chuỗi thức ăn thủy sinh."
+      }
+    ],
+    "finalSolution": "Khai thác bằng xung điện và chất độc hủy diệt toàn bộ thế hệ cá non và chuỗi thức ăn, làm cạn kiệt nguồn lợi thủy sản.",
+    "commonMistakes": [
+      {
+        "id": "cm-07",
+        "message": "Nghĩ rằng kích điện chỉ làm cá lớn bị giật ngất tạm thời mà không ảnh hưởng tới trứng và ấu trùng dưới bùn."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b17-q08",
+    "lessonId": "bio-g8-b17",
+    "sgkBaiSo": 46,
+    "skillIds": [
+      "bio-can-bang-tu-nhien"
+    ],
+    "difficulty": 3,
+    "prompt": "Hành động nào sau đây của học sinh và cộng đồng góp phần thiết thực và trực tiếp nhất vào việc bảo vệ, duy trì cân bằng tự nhiên?",
+    "knowledge": [
+      "kb-bio-g8-bien-phap-bao-ve-moi-truong"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tích cực trồng và chăm sóc cây xanh, nói không với việc tiêu thụ và mua bán động vật hoang dã"
+        },
+        {
+          "id": "opt-b",
+          "label": "Mua các loài rùa tai đỏ về thả tự do vào các hồ nước ngọt tự nhiên"
+        },
+        {
+          "id": "opt-c",
+          "label": "Đốt thực bì cỏ dại trên các đồi thông vào mùa khô hanh"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tăng cường săn bắt chim sâu để bảo vệ quả chín trên cây"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bảo vệ cân bằng tự nhiên cần gắn liền với việc mở rộng diện tích cây xanh và bảo tồn các loài động vật hoang dã."
+      },
+      {
+        "level": 2,
+        "text": "Không tiêu thụ thú rừng và trồng thêm cây xanh là hành động thiết thực của mỗi cá nhân."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Trách nhiệm của công dân và học sinh",
+        "body": "Mỗi cá nhân đều có thể đóng góp cụ thể vào việc gìn giữ trạng thái cân bằng tự nhiên của địa phương."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Ý nghĩa các hành động xanh",
+        "body": "Trồng cây xanh giúp tăng độ che phủ, hấp thụ khí CO2, tạo môi trường sống cho sinh vật; từ chối tiêu thụ sản phẩm động vật hoang dã giúp triệt tiêu nhu cầu săn bắt trộm, bảo tồn đa dạng sinh học."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Trồng và chăm sóc cây xanh, kiên quyết từ chối tiêu thụ động vật hoang dã là hành động thiết thực nhất."
+      }
+    ],
+    "finalSolution": "Trồng cây gây rừng và nói không với tiêu thụ sản phẩm động vật hoang dã giúp bảo vệ và duy trì cân bằng tự nhiên bền vững.",
+    "commonMistakes": [
+      {
+        "id": "cm-08",
+        "message": "Nghĩ rằng thả các loài sinh vật ngoại lai vào tự nhiên (phóng sinh) là hành động bảo vệ môi trường có ích."
+      }
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+{
+  "lessonId": "bio-g9-b12",
+  "nodeId": "bio-g9-b12-theory",
+  "title": "Lý thuyết: Di truyền học với con người",
+  "subtitle": "Bài 47 SGK KHTN 9 Kết nối tri thức: Phương pháp nghiên cứu phả hệ, các bệnh tật di truyền phổ biến, tư vấn di truyền và tác hại của hôn nhân cận huyết",
+  "sgkBaiSo": 47,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Phương pháp nghiên cứu",
+      "badgeColor": "emerald",
+      "title": "Các phương pháp nghiên cứu di truyền người",
+      "content": "Do con người sinh sản muộn, số con ít và lí do đạo đức xã hội, các nhà khoa học sử dụng các phương pháp đặc thù:",
+      "bulletPoints": [
+        "1. Phương pháp nghiên cứu phả hệ: Theo dõi sự di truyền của một tính trạng hoặc bệnh tật qua nhiều thế hệ trong một gia đình dòng họ. Giúp xác định tính trạng do gen trội hay gen lặn quy định, nằm trên NST thường hay NST giới tính.",
+        "2. Phương pháp nghiên cứu trẻ đồng sinh:",
+        "• Đồng sinh cùng trứng: 1 trứng thụ tinh 1 tinh trùng rồi tách phôi → Có kiểu gen giống hệt nhau 100%, luôn cùng giới tính.",
+        "• Đồng sinh khác trứng: 2 trứng thụ tinh với 2 tinh trùng khác nhau → Có kiểu gen khác nhau như anh chị em ruột, có thể cùng hoặc khác giới tính.",
+        "• Ý nghĩa: Giúp xác định mức độ phụ thuộc của tính trạng vào kiểu gen hay môi trường sống (nhóm máu, màu mắt phụ thuộc hoàn toàn vào kiểu gen; cân nặng, trí nhớ chịu ảnh hưởng lớn từ môi trường)."
+      ],
+      "callout": "Nghiên cứu trẻ đồng sinh cùng trứng nuôi ở hai môi trường khác nhau là phương pháp vàng xác định vai trò của môi trường đối với kiểu hình!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Bệnh tật di truyền",
+      "badgeColor": "purple",
+      "title": "Các bệnh và hội chứng di truyền nguy hiểm ở người",
+      "content": "Phân loại các bệnh tật di truyền theo nguồn gốc biến đổi vật chất di truyền:",
+      "bulletPoints": [
+        "Bệnh do đột biến số lượng NST:",
+        "• Hội chứng Đao (47 chiếc, thể ba cặp 21): Cổ ngắn, mắt xếch, lưỡi dày, chậm phát triển trí tuệ. Tần số mắc bệnh tăng vọt theo độ tuổi người mẹ (phụ nữ sinh con trên 35 tuổi).",
+        "• Hội chứng Turner (45, XO): Nữ lùn, cổ màng cánh bướm, dạ con hẹp, vô sinh.",
+        "• Hội chứng Klinefelter (47, XXY): Nam cao lêu nghêu, tuyến vú nở nang, tinh hoàn nhỏ, vô sinh.",
+        "Bệnh do đột biến gene:",
+        "• Gen lặn trên NST thường: Bệnh tan máu bẩm sinh Thalassemia (thiếu máu mạn tính, ứ sắt); Bệnh bạch tạng (thiếu melanin).",
+        "• Gen lặn trên NST giới tính X: Bệnh mù màu đỏ - lục và bệnh máu khó đông (Hemophilia). Nam giới mắc bệnh nhiều hơn nữ giới vì nam chỉ cần nhận 1 alen lặn (X^a Y) là đã biểu hiện bệnh."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Y học & Đạo đức",
+      "badgeColor": "cyan",
+      "title": "Di truyền y học tư vấn và tác hại hôn nhân cận huyết",
+      "content": "Ứng dụng di truyền học vào y tế và đời sống xã hội nhằm nâng cao chất lượng dân số:",
+      "bulletPoints": [
+        "Di truyền y học tư vấn: Xét nghiệm di truyền tiền hôn nhân và sàng lọc trước sinh (siêu âm, NIPT, chọc ối) để phát hiện sớm các dị tật bẩm sinh, tư vấn phương án sinh sản an toàn cho các cặp vợ chồng có nguy cơ.",
+        "Cơ sở di truyền cấm hôn nhân cận huyết: Kết hôn trong phạm vi 3 đời làm tăng mạnh tỉ lệ kiểu gen đồng hợp lặn (aa), khiến các gen lặn đột biến có hại tiềm ẩn có cơ hội gặp nhau và biểu hiện ra kiểu hình gây quái thai, dị tật bẩm sinh và tử vong sơ sinh.",
+        "Bảo vệ vốn gen loài người: Đấu tranh chống chiến tranh vũ khí hóa học, phóng xạ nguyên tử; kiểm soát ô nhiễm môi trường và lối sống lành mạnh."
+      ],
+      "callout": "Hôn nhân cận huyết là nguyên nhân hàng đầu khiến các gen lặn đột biến gây bệnh hiểm nghèo biểu hiện ra kiểu hình ở con cháu!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Tại sao bệnh mù màu và bệnh máu khó đông do gen lặn nằm trên nhiễm sắc thể giới tính X ở người lại xuất hiện ở nam giới với tỉ lệ cao hơn nữ giới rất nhiều?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Vì nam giới (XY) chỉ cần nhận duy nhất một alen lặn từ mẹ là đã biểu hiện bệnh, trong khi nữ giới (XX) phải nhận đồng thời cả hai alen lặn từ cả bố và mẹ mới bị bệnh",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Vì nhiễm sắc thể Y chứa các chất độc làm kích thích gen lặn hoạt động mạnh hơn",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Vì nữ giới hoàn toàn không bao giờ mang bất kì gen lặn nào trên nhiễm sắc thể X",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Vì cơ thể nam giới có nhiệt độ tế bào cao hơn cơ thể nữ giới làm tăng đột biến gen",
+        "correct": false
+      }
+    ],
+    "explanation": "Do cặp NST giới tính ở nam là XY (không tương đồng), NST Y không mang alen tương ứng. Do đó, nam giới chỉ cần nhận 1 alen lặn X^a từ mẹ (X^a Y) là đã biểu hiện bệnh. Còn ở nữ (XX), phải ở trạng thái đồng hợp lặn X^a X^a mới mắc bệnh; nếu mang dị hợp X^A X^a thì vẫn là người bình thường."
+  }
+}

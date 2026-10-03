@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g7-b18-q01",
+    "lessonId": "bio-g7-b18",
+    "sgkBaiSo": 38,
+    "skillIds": ["bio-thuc-hanh-sinh-truong-phat-trien"],
+    "difficulty": 1,
+    "prompt": "Khi tiến hành đo chiều cao thân cây đậu xanh trong thí nghiệm theo dõi sinh trưởng, cách đo chuẩn xác theo quy định thực hành là gì?",
+    "knowledge": ["kb-bio-g7-thuc-hanh-do-chieu-cao-do-thi"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Dùng thước đo thẳng từ vị trí gốc thân sát mặt đất lên đến đỉnh sinh trưởng của chồi ngọn vào cùng một thời điểm cố định mỗi ngày" },
+        { "id": "opt-b", "label": "Đo từ đầu chóp rễ lên đến mép ngoài cùng của lá mầm" },
+        { "id": "opt-c", "label": "Đo ngẫu nhiên vào bất kỳ lúc nào rảnh rỗi trong tuần" },
+        { "id": "opt-d", "label": "Chỉ đo chiều dài của chiếc lá thật to nhất" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Chiều cao thân tính từ mặt đất đến điểm cao nhất của ngọn cây." },
+      { "level": 2, "text": "Cần đo vào cùng một giờ mỗi ngày (ví dụ 8h sáng) để số liệu sinh trưởng qua các ngày có tính so sánh chuẩn xác." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định thao tác đo lường", "body": "Quy chuẩn đo chiều cao thực vật trong bài thực hành." },
+      { "kind": "knowledge", "title": "Kỹ thuật đo chiều cao thân", "body": "Đặt vạch 0 của thước tại mặt đất nơi gốc thân mọc lên, kéo dọc thân đến đỉnh sinh trưởng ngọn và ghi chép định kỳ hàng ngày." },
+      { "kind": "answer", "title": "Kết luận", "body": "Dùng thước đo thẳng từ vị trí gốc thân sát mặt đất lên đến đỉnh sinh trưởng của chồi ngọn vào cùng một thời điểm cố định mỗi ngày." }
+    ],
+    "finalSolution": "Đo từ gốc thân sát mặt đất đến chồi ngọn vào khung giờ cố định mỗi ngày để thu thập số liệu tăng trưởng chuẩn xác.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Đo vào các khung giờ lộn xộn trong ngày làm sai lệch tốc độ sinh trưởng hàng ngày." }
+    ]
+  },
+  {
+    "id": "bio-g7-b18-q02",
+    "lessonId": "bio-g7-b18",
+    "sgkBaiSo": 38,
+    "skillIds": ["bio-thuc-hanh-sinh-truong-phat-trien"],
+    "difficulty": 1,
+    "prompt": "Khi vẽ đồ thị biểu diễn sự sinh trưởng chiều cao của cây đậu xanh theo thời gian, quy ước thiết lập hai trục tọa độ là gì?",
+    "knowledge": ["kb-bio-g7-thuc-hanh-do-chieu-cao-do-thi"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Trục hoành (nằm ngang) là Thời gian theo dõi (ngày), Trục tung (thẳng đứng) là Chiều cao thân cây (cm)" },
+        { "id": "opt-b", "label": "Trục hoành là Chiều cao thân cây (cm), Trục tung là Số lượng lá cây" },
+        { "id": "opt-c", "label": "Trục hoành là Lượng nước tưới (mL), Trục tung là Khối lượng đất (g)" },
+        { "id": "opt-d", "label": "Trục hoành là Nhiệt độ (°C), Trục tung là Độ ẩm không khí (%)" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Biến số độc lập (thời gian trôi qua) luôn nằm ở trục nằm ngang." },
+      { "level": 2, "text": "Biến số phụ thuộc đo đếm được (chiều cao thân) được biểu diễn trên trục thẳng đứng." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Thiết lập đồ thị khoa học", "body": "Quy ước chuẩn biểu diễn dữ liệu tăng trưởng sinh học trên hệ trục tọa độ vuông góc." },
+      { "kind": "knowledge", "title": "Trục tọa độ đồ thị sinh trưởng", "body": "Trục hoành Ox biểu diễn thời gian (ngày), trục tung Oy biểu diễn kích thước tăng trưởng (chiều cao cm)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Trục hoành (nằm ngang) là Thời gian theo dõi (ngày), Trục tung (thẳng đứng) là Chiều cao thân cây (cm)." }
+    ],
+    "finalSolution": "Đồ thị sinh trưởng có trục hoành là Thời gian (ngày) và trục tung là Chiều cao thân (cm).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Đảo ngược vị trí giữa trục thời gian và trục kích thước." }
+    ]
+  },
+  {
+    "id": "bio-g7-b18-q03",
+    "lessonId": "bio-g7-b18",
+    "sgkBaiSo": 38,
+    "skillIds": ["bio-thuc-hanh-sinh-truong-phat-trien"],
+    "difficulty": 1,
+    "prompt": "Trình tự đúng của 4 giai đoạn trong vòng đời biến thái hoàn toàn ở loài bướm là:",
+    "knowledge": ["kb-bio-g7-thuc-hanh-vong-doi-ech-buom", "kb-bio-g7-cac-kieu-bien-thai"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Trứng → Sâu non (ấu trùng) → Nhộng → Bướm trưởng thành" },
+        { "id": "opt-b", "label": "Trứng → Nhộng → Sâu non → Bướm trưởng thành" },
+        { "id": "opt-c", "label": "Bướm trưởng thành → Nhộng → Sâu non → Trứng" },
+        { "id": "opt-d", "label": "Trứng → Ấu trùng có cánh → Bướm trưởng thành" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Trứng nở ra sâu non trước, sâu non tích lũy dinh dưỡng rồi mới kết kén hóa nhộng." },
+      { "level": 2, "text": "Từ nhộng bất động biến đổi hoàn thiện thành bướm trưởng thành có cánh." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định vòng đời của bướm", "body": "Xác định chuỗi trình tự các giai đoạn sinh trưởng phát triển ở bướm." },
+      { "kind": "knowledge", "title": "Vòng đời biến thái hoàn toàn", "body": "Bắt đầu từ Trứng → Sâu non ăn lá → Nhộng đóng kén → Bướm trưởng thành." },
+      { "kind": "answer", "title": "Kết luận", "body": "Trứng → Sâu non (ấu trùng) → Nhộng → Bướm trưởng thành." }
+    ],
+    "finalSolution": "Vòng đời của bướm trải qua 4 giai đoạn tuần tự: Trứng → Sâu non → Nhộng → Bướm trưởng thành.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Đảo nhộng lên trước sâu non." }
+    ]
+  },
+  {
+    "id": "bio-g7-b18-q04",
+    "lessonId": "bio-g7-b18",
+    "sgkBaiSo": 38,
+    "skillIds": ["bio-thuc-hanh-sinh-truong-phat-trien"],
+    "difficulty": 2,
+    "prompt": "Giai đoạn nào trong vòng đời của bướm có đặc điểm hoàn toàn bất động, không ăn uống nhưng diễn ra sự tái tổ chức mô và cơ quan mạnh mẽ nhất?",
+    "knowledge": ["kb-bio-g7-thuc-hanh-vong-doi-ech-buom", "kb-bio-g7-cac-kieu-bien-thai"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Giai đoạn Nhộng" },
+        { "id": "opt-b", "label": "Giai đoạn Sâu non" },
+        { "id": "opt-c", "label": "Giai đoạn Trứng" },
+        { "id": "opt-d", "label": "Giai đoạn Bướm trưởng thành" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Giai đoạn sâu non nhả tơ cuốn kén nằm im bên trong." },
+      { "level": 2, "text": "Bên trong kén nhộng, các cơ quan của sâu tiêu biến và biến đổi thành cánh, râu và vòi hút của bướm." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận diện pha phát triển", "body": "Tìm giai đoạn bất động có sự biến đổi cơ thể toàn diện ở côn trùng." },
+      { "kind": "knowledge", "title": "Đặc điểm giai đoạn nhộng", "body": "Nhộng bất động bên ngoài nhưng bên trong diễn ra sự phân giải mô sâu non và hình thành cơ quan con trưởng thành." },
+      { "kind": "answer", "title": "Kết luận", "body": "Giai đoạn Nhộng." }
+    ],
+    "finalSolution": "Giai đoạn Nhộng là giai đoạn bất động nhưng diễn ra sự biến đổi tái tổ chức mô và cơ quan triệt để nhất.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng nhộng là giai đoạn đã chết vì không cử động." }
+    ]
+  },
+  {
+    "id": "bio-g7-b18-q05",
+    "lessonId": "bio-g7-b18",
+    "sgkBaiSo": 38,
+    "skillIds": ["bio-thuc-hanh-sinh-truong-phat-trien"],
+    "difficulty": 1,
+    "prompt": "Nòng nọc (con non của ếch) sống trong môi trường nước có đặc điểm hô hấp và cơ quan vận động nào thích nghi?",
+    "knowledge": ["kb-bio-g7-thuc-hanh-vong-doi-ech-buom"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Hô hấp bằng mang và bơi lội nhờ đuôi dài dẹp bên" },
+        { "id": "opt-b", "label": "Hô hấp bằng phổi và nhảy bằng 4 chân dài" },
+        { "id": "opt-c", "label": "Hô hấp bằng hệ thống ống khí và bay bằng cánh màng" },
+        { "id": "opt-d", "label": "Không cần hô hấp vì sống kỵ khí trong bùn" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Nòng nọc mới nở bơi dưới nước như một con cá nhỏ." },
+      { "level": 2, "text": "Nó dùng mang để lấy oxy hòa tan trong nước và dùng vây đuôi để quẫy bơi." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích đặc điểm nòng nọc", "body": "Cấu tạo thích nghi với môi trường sống hoàn toàn dưới nước của nòng nọc." },
+      { "kind": "knowledge", "title": "Giải phẫu nòng nọc", "body": "Nòng nọc có đuôi bơi khỏe và mang trao đổi khí với nước; chưa có chân và chưa có phổi hoạt động." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hô hấp bằng mang và bơi lội nhờ đuôi dài dẹp bên." }
+    ],
+    "finalSolution": "Nòng nọc thở bằng mang và bơi bằng đuôi, hoàn toàn thích nghi với đời sống thủy sinh.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng nòng nọc mới nở đã thở bằng phổi như ếch trưởng thành." }
+    ]
+  },
+  {
+    "id": "bio-g7-b18-q06",
+    "lessonId": "bio-g7-b18",
+    "sgkBaiSo": 38,
+    "skillIds": ["bio-thuc-hanh-sinh-truong-phat-trien"],
+    "difficulty": 2,
+    "prompt": "Trong quá trình biến thái thành ếch trưởng thành, những thay đổi giải phẫu sống còn nào giúp ếch có thể rời nước lên cạn sinh sống?",
+    "knowledge": ["kb-bio-g7-thuc-hanh-vong-doi-ech-buom"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Đuôi và mang tiêu biến; xuất hiện 4 chân để nhảy và phổi cùng da ẩm phát triển để hô hấp trên cạn" },
+        { "id": "opt-b", "label": "Đuôi dài thêm gấp đôi và vây cá mọc dày hơn" },
+        { "id": "opt-c", "label": "Cơ thể bao bọc bởi lớp vảy sừng khô cứng chống thoát nước" },
+        { "id": "opt-d", "label": "Cánh mọc ra từ lưng để ếch bay lên cành cây" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Khi lên cạn, ếch không thể thở bằng mang và không cần đuôi bơi nữa." },
+      { "level": 2, "text": "Ếch phát triển phổi, da ẩm mao mạch để thở không khí và 4 chân để nhảy trên mặt đất." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định biến đổi thích nghi", "body": "Các cơ quan mới hình thành và cơ quan cũ tiêu biến khi ếch chuyển từ nước lên cạn." },
+      { "kind": "knowledge", "title": "Biến thái ở ếch", "body": "Mang và đuôi tiêu biến; chân sau và chân trước phát triển; phổi và da thích nghi hô hấp khí quyển." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đuôi và mang tiêu biến; xuất hiện 4 chân để nhảy và phổi cùng da ẩm phát triển để hô hấp trên cạn." }
+    ],
+    "finalSolution": "Quá trình biến thái giúp ếch tiêu biến đuôi và mang, mọc 4 chân và phát triển phổi để chuyển sang đời sống trên cạn.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng đuôi của nòng nọc bị đứt rụng ra ngoài thay vì hiện tượng tế bào tự tiêu biến (tự thực) tái hấp thu dinh dưỡng." }
+    ]
+  },
+  {
+    "id": "bio-g7-b18-q07",
+    "lessonId": "bio-g7-b18",
+    "sgkBaiSo": 38,
+    "skillIds": ["bio-thuc-hanh-sinh-truong-phat-trien"],
+    "difficulty": 2,
+    "prompt": "Khi quan sát biểu đồ sinh trưởng của cây đậu xanh trồng trong điều kiện đủ ẩm và đủ ánh sáng, đường biểu diễn chiều cao thân theo thời gian có dạng:",
+    "knowledge": ["kb-bio-g7-thuc-hanh-do-chieu-cao-do-thi", "kb-bio-g7-sinh-truong-phat-trien"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Đường cong đi lên liên tục theo thời gian (ban đầu tăng chậm, sau đó tăng nhanh)" },
+        { "id": "opt-b", "label": "Đường nằm ngang phẳng lì không đổi" },
+        { "id": "opt-c", "label": "Đường dốc thẳng đứng đi xuống biểu thị cây lùn đi" },
+        { "id": "opt-d", "label": "Đường lượn sóng hình sin lên xuống đều đặn mỗi 10 phút" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Khi cây được cung cấp đầy đủ nước, khoáng và ánh sáng, nó sẽ ngày một cao hơn." },
+      { "level": 2, "text": "Chiều cao thân tăng dần theo ngày tạo thành đồ thị dốc lên biểu thị sự tích lũy sinh khối." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đọc dạng đồ thị sinh trưởng", "body": "Xác định xu hướng biến thiên của chiều cao thực vật theo thời gian." },
+      { "kind": "knowledge", "title": "Quy luật sinh trưởng thực vật", "body": "Cây đậu sinh trưởng tích lũy kích thước liên tục, đồ thị chiều cao là đường cong tăng trưởng đi lên." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đường cong đi lên liên tục theo thời gian (ban đầu tăng chậm, sau đó tăng nhanh)." }
+    ],
+    "finalSolution": "Đồ thị sinh trưởng chiều cao của cây đậu là đường cong dốc lên liên tục theo thời gian.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng cây tăng trưởng đều đặn tuyến tính tuyệt đối ngay từ ngày đầu tiên." }
+    ]
+  },
+  {
+    "id": "bio-g7-b18-q08",
+    "lessonId": "bio-g7-b18",
+    "sgkBaiSo": 38,
+    "skillIds": ["bio-thuc-hanh-sinh-truong-phat-trien"],
+    "difficulty": 1,
+    "prompt": "Ý nghĩa khoa học của việc mô tả và phân tích vòng đời của sinh vật (như sâu bướm, muỗi, ếch nhái) là gì?",
+    "knowledge": ["kb-bio-g7-thuc-hanh-vong-doi-ech-buom", "kb-bio-g7-cac-kieu-bien-thai"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Hiểu rõ quy luật phát triển để chủ động bảo vệ các loài có ích và tìm biện pháp tiêu diệt triệt để sinh vật có hại tại pha dễ tổn thương nhất" },
+        { "id": "opt-b", "label": "Để có thể biến đổi các loài sâu bướm thành động vật có vú" },
+        { "id": "opt-c", "label": "Để ngăn cản hoàn toàn mọi sinh vật không được phép sinh trưởng" },
+        { "id": "opt-d", "label": "Chỉ phục vụ mục đích vẽ tranh minh họa mà không có ứng dụng thực tiễn" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Hiểu vòng đời giúp chúng ta can thiệp đúng lúc, đúng chỗ vào tự nhiên." },
+      { "level": 2, "text": "Bảo vệ tằm ăn lá dâu nhả tơ, tiêu diệt bọ gậy phòng sốt xuất huyết, bảo vệ ếch diệt sâu bọ hại lúa." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đánh giá ý nghĩa thực tiễn", "body": "Tổng kết giá trị ứng dụng của việc nghiên cứu vòng đời sinh vật." },
+      { "kind": "knowledge", "title": "Ý nghĩa nghiên cứu vòng đời", "body": "Nắm vững vòng đời giúp tối ưu nuôi dưỡng loài có ích và chọn mắt xích yếu nhất để phòng trừ loài gây hại." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hiểu rõ quy luật phát triển để chủ động bảo vệ các loài có ích và tìm biện pháp tiêu diệt triệt để sinh vật có hại tại pha dễ tổn thương nhất." }
+    ],
+    "finalSolution": "Hiểu vòng đời sinh vật giúp con người chủ động nhân giống loài có lợi và tiêu diệt triệt để loài gây hại.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng nghiên cứu vòng đời chỉ mang tính lý thuyết suông." }
+    ]
+  }
+]

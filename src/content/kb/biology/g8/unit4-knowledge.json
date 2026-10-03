@@ -1,0 +1,62 @@
+[
+  {
+    "id": "kb-bio-g8-bon-moi-truong-song",
+    "title": "4 môi trường sống chủ yếu của sinh vật",
+    "description": "Bao gồm: Môi trường cạn (trên mặt đất, không khí), Môi trường nước (nước ngọt, nước mặn, nước lợ), Môi trường đất (trong lòng đất) và Môi trường sinh vật (cơ thể vật chủ)."
+  },
+  {
+    "id": "kb-bio-g8-nhan-to-sinh-thai",
+    "title": "Phân loại nhân tố sinh thái vô sinh và hữu sinh",
+    "description": "Nhân tố vô sinh gồm ánh sáng, nhiệt độ, độ ẩm, không khí, thổ nhưỡng; nhân tố hữu sinh gồm thế giới sinh vật và nhân tố con người có tác động ý thức to lớn."
+  },
+  {
+    "id": "kb-bio-g8-gioi-han-sinh-thai",
+    "title": "Khái niệm và cấu trúc giới hạn sinh thái",
+    "description": "Là khoảng giá trị của một nhân tố sinh thái mà sinh vật tồn tại phát triển được; gồm điểm giới hạn dưới/trên (điểm chết), khoảng chống chịu và khoảng thuận lợi tối ưu."
+  },
+  {
+    "id": "kb-bio-g8-khai-niem-quan-the",
+    "title": "Khái niệm quần thể sinh vật",
+    "description": "Tập hợp các cá thể cùng loài, cùng sinh sống trong một khoảng không gian và thời gian xác định, có khả năng giao phối sinh ra con hữu thụ."
+  },
+  {
+    "id": "kb-bio-g8-dac-trung-quan-the",
+    "title": "Các đặc trưng cơ bản của quần thể sinh vật",
+    "description": "Bao gồm tỉ lệ giới tính (thường ~1:1), cấu trúc 3 nhóm tuổi (trước sinh sản, sinh sản, sau sinh sản) và mật độ cá thể (số lượng cá thể trên đơn vị diện tích hoặc thể tích)."
+  },
+  {
+    "id": "kb-bio-g8-mat-do-quan-the",
+    "title": "Ý nghĩa sinh thái của mật độ cá thể quần thể",
+    "description": "Mật độ là đặc trưng quan trọng nhất quyết định mức độ cạnh tranh nguồn sống, mức sinh sản và tử vong của quần thể."
+  },
+  {
+    "id": "kb-bio-g8-bien-dong-so-luong-quan-the",
+    "title": "Biến động số lượng cá thể trong quần thể",
+    "description": "Gồm biến động theo chu kì (theo mùa hè/đông hoặc chu kì nhiều năm) và biến động không theo chu kì (do thiên tai lũ lụt, cháy rừng, dịch bệnh đột ngột)."
+  },
+  {
+    "id": "kb-bio-g8-khai-niem-quan-xa",
+    "title": "Khái niệm và đặc trưng của quần xã sinh vật",
+    "description": "Tập hợp các quần thể thuộc nhiều loài khác nhau cùng sống trong sinh cảnh nhất định; đặc trưng bởi độ đa dạng thành phần loài, loài ưu thế và loài đặc trưng."
+  },
+  {
+    "id": "kb-bio-g8-loai-uu-the-dac-trung",
+    "title": "Phân biệt loài ưu thế và loài đặc trưng",
+    "description": "Loài ưu thế có số lượng lớn, sinh khối lớn chi phối hoạt động quần xã (cây lúa trên ruộng); loài đặc trưng chỉ có ở một quần xã hoặc số lượng vượt trội (cá cóc Tam Đảo)."
+  },
+  {
+    "id": "kb-bio-g8-quan-he-ho-tro-quan-xa",
+    "title": "Các mối quan hệ hỗ trợ trong quần xã",
+    "description": "Cộng sinh (hai bên bắt buộc cùng có lợi: địa y, nốt sần rễ đậu), Hội sinh (một bên lợi, một bên vô hại: phong lan bám cây gỗ) và Hợp tác (cùng lợi không bắt buộc)."
+  },
+  {
+    "id": "kb-bio-g8-quan-he-doi-khang-quan-xa",
+    "title": "Các mối quan hệ đối kháng trong quần xã",
+    "description": "Cạnh tranh (tranh giành nguồn sống), Kí sinh / Nửa kí sinh (hút chất dinh dưỡng vật chủ: giun đũa, cây tơ hồng) và Sinh vật ăn sinh vật khác (thú ăn thịt - con mồi)."
+  },
+  {
+    "id": "kb-bio-g8-khong-che-sinh-hoc",
+    "title": "Khống chế sinh học và cân bằng sinh học",
+    "description": "Hiện tượng số lượng cá thể một loài bị kìm hãm bởi loài khác trong quần xã; ứng dụng dùng thiên địch (ong mắt đỏ, bọ rùa) trừ sâu bệnh hại cây trồng an toàn."
+  }
+]

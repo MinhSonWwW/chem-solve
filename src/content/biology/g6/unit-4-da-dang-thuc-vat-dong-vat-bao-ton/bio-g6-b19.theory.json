@@ -1,0 +1,75 @@
+{
+  "lessonId": "bio-g6-b19",
+  "nodeId": "bio-g6-b19-theory",
+  "title": "Lý thuyết: Thực vật",
+  "subtitle": "Bài 34 SGK KHTN 6 Kết nối tri thức: 4 ngành thực vật tiến hóa: Rêu, Dương xỉ, Hạt trần và Hạt kín",
+  "sgkBaiSo": 34,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Đặc điểm chung",
+      "badgeColor": "emerald",
+      "title": "Đặc điểm chung của giới Thực vật",
+      "content": "Thực vật là những sinh vật nhân thực đa bào giữ vai trò sinh thái chủ chốt trên Trái Đất:",
+      "bulletPoints": [
+        "Cấu tạo tế bào: Tế bào có thành cellulose bền vững và bào quan lục lạp chứa chất diệp lục.",
+        "Dinh dưỡng tự dưỡng: Có khả năng quang hợp hấp thụ năng lượng ánh sáng mặt trời, sử dụng nước và khí carbon dioxide để tổng hợp chất hữu cơ và giải phóng khí oxygen.",
+        "Vai trò sinh quyển: Cung cấp thức ăn và oxy cho mọi sinh vật, điều hòa khí hậu, giữ nước chống lũ lụt và xói mòn đất."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Sơ đồ tiến hóa",
+      "badgeColor": "amber",
+      "title": "4 ngành thực vật theo trật tự tiến hóa",
+      "content": "Thế giới thực vật tiến hóa từ thấp lên cao thích nghi hoàn hảo với đời sống trên cạn:",
+      "bulletPoints": [
+        "1. Ngành Rêu (chưa có mạch): Cây nhỏ bé, chưa có rễ thật (chỉ có rễ giả bám), chưa có mạch dẫn; sinh sản bằng bào tử nằm trong túi bào tử ở ngọn; chỉ sống ở nơi ẩm ướt.",
+        "2. Ngành Dương xỉ (có mạch, bào tử): Đã có rễ, thân, lá thật và mạch dẫn dẫn truyền nước; lá non cuộn tròn ở đầu; sinh sản bằng bào tử ở mặt dưới lá già.",
+        "3. Ngành Hạt trần (hạt lộ): Thân gỗ lớn, mạch dẫn phát triển; sinh sản bằng hạt nằm lộ trên các lá noãn hở của nón (chưa có hoa và quả thật sự; ví dụ: cây thông, trắc bách diệp, vạn tuế).",
+        "4. Ngành Hạt kín (tiến hóa nhất): Cơ quan sinh dưỡng rất đa dạng; có cơ quan sinh sản là hoa và quả, hạt được giấu kín bên trong quả bảo vệ phôi an toàn tuyệt đối (ví dụ: lúa, sen, cam, hoa hồng)."
+      ],
+      "callout": "Chuỗi tiến hóa: Rêu (chưa mạch) → Dương xỉ (có mạch, bào tử) → Hạt trần (hạt hở) → Hạt kín (hoa, quả, hạt kín)!"
+    },
+    {
+      "id": "card-3",
+      "badge": "So sánh sinh sản",
+      "badgeColor": "cyan",
+      "title": "Cơ quan sinh sản của 4 ngành thực vật",
+      "content": "Sự nâng cấp cơ quan sinh sản phản ánh đỉnh cao tiến hóa:",
+      "bulletPoints": [
+        "Rêu: Túi bào tử mọc trên ngọn cây mang nắp mở phát tán bào tử.",
+        "Dương xỉ: Các ổ túi bào tử xếp thành hàng màu nâu ở mặt dưới lá già.",
+        "Hạt trần: Cơ quan sinh sản là Nón (nón đực mang hạt phấn, nón cái mang lá noãn hở chứa noãn). Hạt trần chưa có bầu nhụy nên không có quả.",
+        "Hạt kín: Hoa thụ phấn tạo quả bao bọc lấy hạt, giúp hạt được nuôi dưỡng và phát tán phong phú (nhờ gió, động vật, con người)."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Ngành thực vật nào sau đây là ngành tiến hóa nhất, có cơ quan sinh sản gồm đầy đủ cả hoa và quả bảo vệ hạt bên trong?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Ngành Hạt kín",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Ngành Hạt trần",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Ngành Dương xỉ",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Ngành Rêu",
+        "correct": false
+      }
+    ],
+    "explanation": "Ngành Hạt kín là nhóm thực vật tiến hóa hoàn thiện nhất trong sinh giới, có cơ quan sinh sản là hoa và quả, hạt được bao bọc an toàn trong quả thịt hoặc quả khô."
+  }
+}

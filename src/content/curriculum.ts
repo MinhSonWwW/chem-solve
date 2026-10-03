@@ -17,12 +17,18 @@ export interface Lesson {
   nodes: NodeInfo[];
 }
 
+export interface ChapterGuidebook {
+  formulas?: Array<{ label: string; text: string }>;
+  traps?: string[];
+}
+
 export interface Chapter {
   id: string; // e.g. "g8-c01"
   chapterNumber: number;
   title: string;
   description: string;
   lessons: Lesson[];
+  guidebook?: ChapterGuidebook;
 }
 
 export interface GradeCurriculum {
@@ -543,9 +549,10 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
 };
 
 import { PHYSICS_CURRICULUM } from './curriculum/physics';
+import { BIOLOGY_CURRICULUM } from './curriculum/biology';
 import { getActiveSubject, type SubjectId } from './subjects';
 
-export { PHYSICS_CURRICULUM };
+export { PHYSICS_CURRICULUM, BIOLOGY_CURRICULUM };
 
 /** Helpers */
 export function getCurriculum(grade: Grade, subject?: SubjectId): GradeCurriculum {
@@ -553,12 +560,20 @@ export function getCurriculum(grade: Grade, subject?: SubjectId): GradeCurriculu
   if (currentSub === 'physics') {
     return PHYSICS_CURRICULUM[grade] ?? PHYSICS_CURRICULUM[8];
   }
+  if (currentSub === 'bio') {
+    return BIOLOGY_CURRICULUM[grade] ?? BIOLOGY_CURRICULUM[6];
+  }
   return CURRICULUM[grade] ?? CURRICULUM[8];
 }
 
 export function getAllLessons(grade?: Grade, subject?: SubjectId): Lesson[] {
   const currentSub = subject ?? getActiveSubject();
-  const targetCurriculum = currentSub === 'physics' ? PHYSICS_CURRICULUM : CURRICULUM;
+  const targetCurriculum =
+    currentSub === 'physics'
+      ? PHYSICS_CURRICULUM
+      : currentSub === 'bio'
+      ? BIOLOGY_CURRICULUM
+      : CURRICULUM;
 
   if (grade) {
     return targetCurriculum[grade]?.chapters.flatMap((c) => c.lessons) ?? [];
@@ -575,5 +590,12 @@ export function findLesson(lessonId: string, subject?: SubjectId): Lesson | unde
     );
     return allPhysics.find((l) => l.id === lessonId);
   }
+  if (lessonId.startsWith('bio-') || subject === 'bio') {
+    const allBiology = Object.values(BIOLOGY_CURRICULUM).flatMap((gc) =>
+      gc.chapters.flatMap((c) => c.lessons)
+    );
+    return allBiology.find((l) => l.id === lessonId);
+  }
   return getAllLessons().find((l) => l.id === lessonId);
 }
+

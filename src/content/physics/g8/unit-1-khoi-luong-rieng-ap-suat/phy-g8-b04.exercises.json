@@ -85,22 +85,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "p = d x h"
-        },
-        {
-          "id": "opt-b",
           "label": "p = d / h"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "p = h / d"
+        },
+        {
+          "id": "opt-c",
+          "label": "p = d x h"
         },
         {
           "id": "opt-d",
           "label": "p = d + h"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -154,11 +154,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Luôn luôn ở cùng một độ cao (cùng mức nằm ngang)"
+          "label": "Nhánh hẹp hơn có mực chất lỏng cao hơn"
         },
         {
           "id": "opt-b",
-          "label": "Nhánh hẹp hơn có mực chất lỏng cao hơn"
+          "label": "Luôn luôn ở cùng một độ cao (cùng mức nằm ngang)"
         },
         {
           "id": "opt-c",
@@ -169,7 +169,7 @@
           "label": "Mực chất lỏng thay đổi liên tục không dừng"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -346,22 +346,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Càng xuống sâu áp suất chất lỏng càng tăng, đáy đập chịu áp lực nước lớn nhất"
-        },
-        {
-          "id": "opt-b",
           "label": "Để tạo hình bậc thang cho cá nhảy qua"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Chân đập tiếp xúc với đất nên xây dày để chống mối mọt"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "Nước ở trên mặt nóng hơn nước ở đáy nên đỉnh đập không cần dày"
+        },
+        {
+          "id": "opt-d",
+          "label": "Càng xuống sâu áp suất chất lỏng càng tăng, đáy đập chịu áp lực nước lớn nhất"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {

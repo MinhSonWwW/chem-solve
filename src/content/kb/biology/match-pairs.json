@@ -1,0 +1,122 @@
+[
+  {
+    "id": "bio-m-01",
+    "formula": "Ti thể",
+    "nameVi": "Nhà máy năng lượng tạo ATP",
+    "type": "Tế bào"
+  },
+  {
+    "id": "bio-m-02",
+    "formula": "Lục lạp",
+    "nameVi": "Bào quan chứa diệp lục quang hợp",
+    "type": "Tế bào"
+  },
+  {
+    "id": "bio-m-03",
+    "formula": "Nhân tế bào",
+    "nameVi": "Trung tâm điều khiển mang DNA",
+    "type": "Tế bào"
+  },
+  {
+    "id": "bio-m-04",
+    "formula": "Ribosome",
+    "nameVi": "Bào quan tổng hợp protein",
+    "type": "Tế bào"
+  },
+  {
+    "id": "bio-m-05",
+    "formula": "Hồng cầu",
+    "nameVi": "Vận chuyển khí O2 nhờ Hemoglobin",
+    "type": "Cơ thể"
+  },
+  {
+    "id": "bio-m-06",
+    "formula": "Bạch cầu",
+    "nameVi": "Thực bào và tiết kháng thể bảo vệ",
+    "type": "Cơ thể"
+  },
+  {
+    "id": "bio-m-07",
+    "formula": "Ruột non",
+    "nameVi": "Hấp thụ hầu hết chất dinh dưỡng",
+    "type": "Cơ thể"
+  },
+  {
+    "id": "bio-m-08",
+    "formula": "Insulin",
+    "nameVi": "Hạ đường huyết (Tuyến tụy)",
+    "type": "Cơ thể"
+  },
+  {
+    "id": "bio-m-09",
+    "formula": "Nhóm máu O",
+    "nameVi": "Hồng cầu không có kháng nguyên A, B",
+    "type": "Cơ thể"
+  },
+  {
+    "id": "bio-m-10",
+    "formula": "Nhóm máu AB",
+    "nameVi": "Huyết tương không có kháng thể α, β",
+    "type": "Cơ thể"
+  },
+  {
+    "id": "bio-m-11",
+    "formula": "Gregor Mendel",
+    "nameVi": "Phương pháp phân tích thế hệ lai",
+    "type": "Di truyền"
+  },
+  {
+    "id": "bio-m-12",
+    "formula": "Nguyên tắc A-T, G-C",
+    "nameVi": "Bổ sung giữa 2 mạch đơn DNA",
+    "type": "Di truyền"
+  },
+  {
+    "id": "bio-m-13",
+    "formula": "Mã mở đầu AUG",
+    "nameVi": "Mã hóa amino acid Methionine",
+    "type": "Di truyền"
+  },
+  {
+    "id": "bio-m-14",
+    "formula": "Kì giữa nguyên phân",
+    "nameVi": "NST kép xếp 1 hàng mặt phẳng xích đạo",
+    "type": "Di truyền"
+  },
+  {
+    "id": "bio-m-15",
+    "formula": "Hội chứng Đao",
+    "nameVi": "Thể ba cặp NST số 21 (2n + 1 = 47)",
+    "type": "Di truyền"
+  },
+  {
+    "id": "bio-m-16",
+    "formula": "Cừu Dolly",
+    "nameVi": "Nhân bản vô tính từ tế bào tuyến vú",
+    "type": "Di truyền"
+  },
+  {
+    "id": "bio-m-17",
+    "formula": "Cơ quan tương đồng",
+    "nameVi": "Cùng nguồn gốc, khác chức năng",
+    "type": "Tiến hóa"
+  },
+  {
+    "id": "bio-m-18",
+    "formula": "Chọn lọc tự nhiên",
+    "nameVi": "Đào thải biến dị có hại, giữ có lợi",
+    "type": "Tiến hóa"
+  },
+  {
+    "id": "bio-m-19",
+    "formula": "Hóa thạch",
+    "nameVi": "Di tích sinh vật cổ đại trong đất đá",
+    "type": "Tiến hóa"
+  },
+  {
+    "id": "bio-m-20",
+    "formula": "Kỉ Đệ Tứ (Tân sinh)",
+    "nameVi": "Thời điểm loài người chính thức xuất hiện",
+    "type": "Tiến hóa"
+  }
+]

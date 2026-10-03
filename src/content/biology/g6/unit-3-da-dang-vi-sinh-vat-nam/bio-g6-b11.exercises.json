@@ -1,0 +1,331 @@
+[
+  {
+    "id": "bio-g6-b11-q01",
+    "lessonId": "bio-g6-b11",
+    "sgkBaiSo": 26,
+    "skillIds": [
+      "bio-khoa-luong-phan"
+    ],
+    "difficulty": 1,
+    "prompt": "Khóa lưỡng phân là phương pháp phân loại sinh vật dựa trên nguyên tắc nào sau đây?",
+    "knowledge": [
+      "bio-khoa-luong-phan"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Dựa vào một cặp đặc điểm đối lập để chia sinh vật thành hai nhóm cho đến khi xác định được từng loài"
+        },
+        {
+          "id": "opt-b",
+          "label": "Dựa vào kích thước cơ thể từ to đến nhỏ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Dựa vào màu sắc bên ngoài của cơ thể sinh vật"
+        },
+        {
+          "id": "opt-d",
+          "label": "Dựa vào số lượng cá thể đếm được trong tự nhiên"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "'Lưỡng phân' nghĩa là chia đôi (rẽ thành 2 nhánh ở mỗi bước)."
+      },
+      {
+        "level": 2,
+        "text": "Sự rẽ nhánh dựa trên cặp tính trạng đối lập (ví dụ: có cánh vs không cánh)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định bản chất của khóa lưỡng phân",
+        "body": "Đề bài hỏi về nguyên tắc khoa học cốt lõi của phương pháp này."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Định nghĩa theo SGK KHTN 6",
+        "body": "Khóa lưỡng phân dựa trên việc chia đôi liên tục nhờ các cặp đặc điểm đối lập cho đến khi mỗi nhánh chỉ còn lại một loài."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn phương án đúng",
+        "body": "Đáp án A là định nghĩa chuẩn xác."
+      }
+    ],
+    "finalSolution": "Khóa lưỡng phân là phương pháp phân loại dựa vào một cặp đặc điểm đối lập để chia sinh vật thành hai nhóm nhỏ dần cho đến từng loài cụ thể.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng khóa lưỡng phân chia thành nhiều nhánh cùng lúc thay vì luôn rẽ đôi (lưỡng phân)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b11-q02",
+    "lessonId": "bio-g6-b11",
+    "sgkBaiSo": 26,
+    "skillIds": [
+      "bio-khoa-luong-phan"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp 3 bước tuần tự khi tiến hành xây dựng một khóa lưỡng phân để phân loại các sinh vật:",
+    "knowledge": [
+      "bio-khoa-luong-phan"
+    ],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Bước 1: Liệt kê các sinh vật và quan sát kỹ các đặc điểm hình thái đặc trưng của chúng",
+        "Bước 2: Lựa chọn cặp đặc điểm đối lập rõ rệt nhất để chia tập hợp ban đầu thành 2 nhóm",
+        "Bước 3: Tiếp tục chọn các cặp đặc điểm đối lập tiếp theo cho từng nhánh cho đến khi chỉ còn một loài"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Phải có danh sách các loài và đặc điểm của chúng trước khi bắt đầu chia nhóm."
+      },
+      {
+        "level": 2,
+        "text": "Lặp lại việc chọn cặp đối lập cho đến tận cùng (mỗi nhánh còn 1 loài)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quy trình xây dựng khóa lưỡng phân",
+        "body": "Sắp xếp 3 bước thao tác chuẩn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Các bước theo SGK",
+        "body": "Quan sát đặc điểm → Chọn cặp đối lập đầu tiên chia 2 nhóm → Lặp lại chia nhỏ dần đến từng loài."
+      },
+      {
+        "kind": "answer",
+        "title": "Thứ tự chính xác",
+        "body": "Bước 1 đến Bước 3 theo trình tự hợp lý."
+      }
+    ],
+    "finalSolution": "Quy trình chuẩn: Liệt kê đặc điểm → Chọn cặp đối lập chia 2 nhóm → Lặp lại phân nhánh cho đến khi chỉ còn một loài trong mỗi nhánh.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Chọn cặp đặc điểm phân nhánh trước khi quan sát và liệt kê đặc điểm của các loài."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b11-q03",
+    "lessonId": "bio-g6-b11",
+    "sgkBaiSo": 26,
+    "skillIds": [
+      "bio-khoa-luong-phan"
+    ],
+    "difficulty": 1,
+    "prompt": "Ghép nối các cặp sinh vật (cột bên trái) với đúng cặp đặc điểm đối lập thích hợp nhất để phân biệt chúng trong khóa lưỡng phân (cột bên phải):",
+    "knowledge": [
+      "bio-khoa-luong-phan"
+    ],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Con cá chép và Con thỏ",
+          "right": "Cơ thể có vây bơi dưới nước vs Cơ thể có 4 chân chạy trên cạn"
+        },
+        {
+          "left": "Con chim bồ câu và Con ếch đồng",
+          "right": "Cơ thể có cánh và lông vũ vs Cơ thể không có cánh, da trần ẩm ướt"
+        },
+        {
+          "left": "Cây hoa sen và Cây rêu tường",
+          "right": "Cơ thể có hoa và quả vs Cơ thể chưa có hoa, sinh sản bằng bào tử"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cá và thỏ khác biệt rõ nhất ở vây bơi vs 4 chân."
+      },
+      {
+        "level": 2,
+        "text": "Hoa sen là thực vật có hoa hạt kín, còn rêu chưa có hoa."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích các cặp sinh vật",
+        "body": "Tìm đặc điểm đối lập hình thái rõ nét nhất."
+      },
+      {
+        "kind": "knowledge",
+        "title": "So sánh hình thái",
+        "body": "Cá/thỏ: vây vs 4 chân; Chim/ếch: cánh lông vũ vs da trần không cánh; Sen/rêu: có hoa vs chưa có hoa."
+      },
+      {
+        "kind": "answer",
+        "title": "Ghép cặp chuẩn xác",
+        "body": "Khớp đúng 3 cặp sinh vật với 3 tiêu chí phân loại."
+      }
+    ],
+    "finalSolution": "Cá chép/Thỏ: Vây bơi vs 4 chân; Chim bồ câu/Ếch: Cánh lông vũ vs Da trần không cánh; Hoa sen/Rêu tường: Có hoa quả vs Chưa có hoa.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Chọn tiêu chí về màu sắc (ví dụ trắng/đen) thay vì các đặc điểm hình thái giải phẫu cố định."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b11-q04",
+    "lessonId": "bio-g6-b11",
+    "sgkBaiSo": 26,
+    "skillIds": [
+      "bio-khoa-luong-phan"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi tra cứu một sinh vật có các đặc điểm: 'Có xương sống → Có 4 chân → Da trần ẩm ướt → Không có đuôi ở giai đoạn trưởng thành', theo khóa lưỡng phân đó là sinh vật nào?",
+    "knowledge": [
+      "bio-khoa-luong-phan"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Con thằn lằn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Con cá chép"
+        },
+        {
+          "id": "opt-c",
+          "label": "Con ếch đồng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Con chim sẻ"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Da trần ẩm ướt là đặc điểm tiêu biểu của lớp Lưỡng cư."
+      },
+      {
+        "level": 2,
+        "text": "Ếch trưởng thành rụng đuôi của nòng nọc và hô hấp qua da ẩm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Dò theo các nhánh của khóa",
+        "body": "Đi qua từng đặc điểm: Có xương sống → Có 4 chân → Da trần ẩm → Mất đuôi."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu 4 phương án",
+        "body": "Cá chép: có vây (loại); Chim sẻ: có lông vũ, 2 chân (loại); Thằn lằn: da khô có vảy sừng, có đuôi (loại); Ếch đồng: da trần ẩm, 4 chân, không đuôi (chính xác)."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án đúng",
+        "body": "Con ếch đồng là đáp án chính xác."
+      }
+    ],
+    "finalSolution": "Lần theo các nhánh của khóa lưỡng phân: sinh vật có 4 chân, da trần ẩm ướt và không đuôi chính là con ếch đồng.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Nhầm thằn lằn với ếch đồng (thằn lằn có da khô vảy sừng và có đuôi dài)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b11-q05",
+    "lessonId": "bio-g6-b11",
+    "sgkBaiSo": 26,
+    "skillIds": [
+      "bio-khoa-luong-phan"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về phương pháp khóa lưỡng phân:",
+    "knowledge": [
+      "bio-khoa-luong-phan"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Khóa lưỡng phân chỉ có thể áp dụng cho động vật mà không thể dùng để phân loại thực vật.",
+          "correct": false
+        },
+        {
+          "id": "st-2",
+          "text": "Ở mỗi bước trong khóa lưỡng phân, người ta luôn dựa vào một cặp đặc điểm đối lập để chia thành 2 nhánh.",
+          "correct": true
+        },
+        {
+          "id": "st-3",
+          "text": "Nên chọn các đặc điểm hình thái ổn định, rõ ràng và dễ nhận biết để làm tiêu chí phân nhánh.",
+          "correct": true
+        },
+        {
+          "id": "st-4",
+          "text": "Mỗi nhánh tận cùng của một khóa lưỡng phân hoàn chỉnh phải chứa ít nhất 10 loài sinh vật khác nhau.",
+          "correct": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khóa lưỡng phân dùng cho cả thực vật, nấm, vi khuẩn lẫn động vật."
+      },
+      {
+        "level": 2,
+        "text": "Nhánh tận cùng chỉ dừng lại khi đã xác định được duy nhất 1 loài."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Đánh giá từng câu về nguyên tắc và ứng dụng của khóa lưỡng phân."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra chi tiết",
+        "body": "1. Chỉ dùng cho động vật: Sai (dùng cho mọi sinh vật). 2. Luôn dựa vào cặp đối lập: Đúng. 3. Chọn đặc điểm ổn định, rõ: Đúng. 4. Nhánh cuối chứa 10 loài: Sai (chỉ chứa 1 loài duy nhất)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Ý 1: Sai; Ý 2: Đúng; Ý 3: Đúng; Ý 4: Sai."
+      }
+    ],
+    "finalSolution": "Phát biểu 2 và 3 đúng. Phát biểu 1 sai (khóa lưỡng phân áp dụng rộng rãi cho thực vật, nấm, động vật). Phát biểu 4 sai (ở nhánh tận cùng chỉ còn lại 1 loài duy nhất).",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng khóa lưỡng phân chỉ dùng trong phòng thí nghiệm cho động vật."
+      }
+    ]
+  }
+]

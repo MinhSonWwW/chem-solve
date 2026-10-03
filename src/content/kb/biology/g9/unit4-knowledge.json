@@ -1,0 +1,182 @@
+[
+  {
+    "id": "kb-bio-g9-thi-nghiem-morgan-ruoi-giam",
+    "title": "Thí nghiệm di truyền liên kết của Morgan trên ruồi giấm",
+    "summary": "Thí nghiệm lịch sử của Thomas Hunt Morgan phát hiện ra hiện tượng các gen cùng nằm trên một nhiễm sắc thể di truyền cùng nhau.",
+    "keyTakeaways": [
+      "Đối tượng nghiên cứu: Ruồi giấm (Drosophila melanogaster) có vòng đời ngắn (10 - 14 ngày), đẻ nhiều, dễ nuôi, số NST ít (2n = 8) và có nhiều biến dị dễ quan sát.",
+      "Thí nghiệm: Lai P thuần chủng Thân xám, cánh dài × Thân đen, cánh cụt → F1 thu được 100% Thân xám, cánh dài. Cho ruồi đực F1 lai phân tích với ruồi cái thân đen, cánh cụt.",
+      "Kết quả phép lai phân tích: Fa thu được tỉ lệ 1 Thân xám, cánh dài : 1 Thân đen, cánh cụt (thay vì 1:1:1:1 như quy luật phân li độc lập của Mendel).",
+      "Kết luận: Gen quy định màu sắc thân và gen quy định độ dài cánh cùng nằm trên một nhiễm sắc thể và cùng phân li về một giao tử trong quá trình giảm phân."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-khai-niem-di-truyen-lien-ket",
+    "title": "Khái niệm và cơ chế của di truyền liên kết",
+    "summary": "Hiện tượng một nhóm tính trạng luôn được di truyền cùng nhau qua các thế hệ do các gen nằm trên cùng một NST.",
+    "keyTakeaways": [
+      "Khái niệm: Di truyền liên kết là hiện tượng các gen quy định các tính trạng khác nhau cùng nằm trên một phân tử DNA của nhiễm sắc thể và cùng phân li về một giao tử trong quá trình giảm phân.",
+      "Kí hiệu kiểu gen: Dùng dấu gạch phân số để biểu thị các gen nằm trên cùng 1 chiếc NST, ví dụ: BV/bv (F1 ruồi giấm thân xám, cánh dài dị hợp 2 cặp gen liên kết hoàn toàn).",
+      "Giao tử tạo ra: Cơ thể đực BV/bv chỉ tạo ra 2 loại giao tử với tỉ lệ ngang nhau: 1/2 BV và 1/2 bv."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-nhom-gen-lien-ket",
+    "title": "Khái niệm nhóm gen liên kết",
+    "summary": "Tập hợp các gen cùng nằm trên một nhiễm sắc thể tạo thành một nhóm gen liên kết.",
+    "keyTakeaways": [
+      "Quy luật số lượng: Số nhóm gen liên kết của một loài bằng số lượng nhiễm sắc thể trong bộ đơn bội (n) của loài đó.",
+      "Ví dụ minh họa: Ruồi giấm có 2n = 8 (n = 4) nên có 4 nhóm gen liên kết; Đậu Hà Lan có 2n = 14 (n = 7) nên có 7 nhóm gen liên kết; Con người có 2n = 46 (n = 23) nên có 23 nhóm gen liên kết ở nữ và 24 nhóm ở nam (do X và Y khác nhau).",
+      "Ý nghĩa: Giải thích tại sao số lượng tính trạng của loài vô cùng nhiều trong khi số lượng NST lại có hạn."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-y-nghia-di-truyen-lien-ket",
+    "title": "Ý nghĩa thực tiễn của di truyền liên kết trong chọn giống",
+    "summary": "Di truyền liên kết giúp duy trì các tổ hợp gen quý luôn đi cùng nhau qua các thế hệ.",
+    "keyTakeaways": [
+      "Duy trì tính trạng tốt: Trong chọn giống, người ta có thể chọn những cá thể mang các gen tốt cùng nằm trên một NST (ví dụ gen năng suất cao liên kết với gen kháng bệnh) để chúng luôn di truyền cùng nhau.",
+      "Hạn chế biến dị tổ hợp: Giúp ổn định đặc tính giống cây trồng, vật nuôi thuần chủng, tránh sự phân li tạo ra các biến dị tổ hợp bất lợi.",
+      "So sánh với phân li độc lập: Phân li độc lập làm tăng biến dị tổ hợp, còn liên kết gen hạn chế biến dị tổ hợp để giữ vững phẩm chất giống."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-dot-bien-cau-truc-nst-mat-doan",
+    "title": "Đột biến cấu trúc NST: Dạng mất đoạn",
+    "summary": "Hiện tượng một đoạn nhiễm sắc thể bị đứt ra và biến mất, làm giảm số lượng gen trên NST.",
+    "keyTakeaways": [
+      "Bản chất: Nhiễm sắc thể bị mất đi một đoạn (ở đầu mút hoặc giữa cánh), làm giảm kích thước NST và mất các gen nằm trên đoạn đó.",
+      "Hậu quả: Thường gây chết hoặc giảm sức sống nghiêm trọng do mất cân bằng hệ gen.",
+      "Ví dụ thực tế: Ở người, mất một đoạn ngắn ở đầu cánh ngắn nhiễm sắc thể số 5 gây ra 'Hội chứng tiếng mèo kêu' (Cri-du-chat: trẻ khóc the thé như mèo kêu, chậm phát triển trí tuệ nặng, dị tật tim); mất đoạn nhỏ trên NST số 21 gây bệnh ung thư máu ác tính."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-dot-bien-cau-truc-nst-lap-doan",
+    "title": "Đột biến cấu trúc NST: Dạng lặp đoạn",
+    "summary": "Hiện tượng một đoạn nhiễm sắc thể được lặp lại một hoặc nhiều lần, làm tăng số lượng bản sao của gen.",
+    "keyTakeaways": [
+      "Bản chất: Một đoạn NST được nhân đôi và gắn xen vào chính NST đó hoặc chromatid tương đồng.",
+      "Hậu quả: Làm tăng hoặc giảm cường độ biểu hiện của tính trạng.",
+      "Ví dụ thực tế: Ở ruồi giấm, đột biến lặp đoạn 16A trên nhiễm sắc thể giới tính X làm mắt lồi bình thường biến đổi thành mắt dẹt; Ở lúa mạch, lặp đoạn làm tăng hoạt tính enzyme amylase rất có lợi cho công nghiệp sản xuất bia."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-dot-bien-cau-truc-nst-dao-chuyen",
+    "title": "Đột biến cấu trúc NST: Dạng đảo đoạn và chuyển đoạn",
+    "summary": "Các dạng đột biến làm thay đổi trật tự sắp xếp hoặc vị trí của các gen giữa các NST.",
+    "keyTakeaways": [
+      "Đảo đoạn: Một đoạn NST đứt ra rồi quay 180° và gắn lại vị trí cũ. Không làm thay đổi số lượng gen nhưng làm thay đổi trật tự phân bố gen, có thể làm thay đổi mức độ hoạt động của gen (góp phần tạo nên sự đa dạng giữa các nòi trong loài).",
+      "Chuyển đoạn: Sự trao đổi đoạn giữa các NST không tương đồng (chuyển đoạn tương hỗ hoặc chuyển đoạn không tương hỗ).",
+      "Ví dụ chuyển đoạn: Chuyển đoạn giữa NST số 9 và 22 ở người tạo NST Philadelphia gây bệnh ung thư bạch cầu tủy xương ác tính (leukemia)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-dot-bien-lech-boi",
+    "title": "Đột biến số lượng NST: Thể lệch bội (dị bội)",
+    "summary": "Biến đổi số lượng nhiễm sắc thể xảy ra ở một hoặc một số cặp nhiễm sắc thể tương đồng xác định.",
+    "keyTakeaways": [
+      "Cơ chế phát sinh: Do sự không phân li của một cặp NST tương đồng trong quá trình giảm phân tạo giao tử thừa (n + 1) hoặc thiếu (n - 1), khi thụ tinh với giao tử bình thường (n) tạo ra hợp tử lệch bội.",
+      "Thể một (2n - 1): Mất đi 1 chiếc ở một cặp NST (ví dụ: Hội chứng Turner ở nữ 45, XO).",
+      "Thể ba (2n + 1): Thêm 1 chiếc ở một cặp NST (ví dụ: Hội chứng Đao ở người có 3 chiếc NST số 21; hội chứng Klinefelter 47, XXY; thể ba ở cây cà độc dược 2n + 1 = 25).",
+      "Thể không (2n - 2) và Thể bốn (2n + 2): Mất hẳn cả cặp tương đồng hoặc có 4 chiếc ở một cặp."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-dot-bien-da-boi",
+    "title": "Đột biến số lượng NST: Thể đa bội (Polyploidy)",
+    "summary": "Hiện tượng toàn bộ bộ nhiễm sắc thể của tế bào tăng theo bội số nguyên của n (lớn hơn 2n).",
+    "keyTakeaways": [
+      "Phân loại: Đa bội lẻ (tam bội 3n, ngũ bội 5n) và Đa bội chẵn (tứ bội 4n, lục bội 6n).",
+      "Đặc điểm hình thái: Do hàm lượng DNA tăng gấp bội nên tế bào đa bội có kích thước lớn, cơ quan sinh dưỡng (thân, lá, củ, quả, hạt) to bản, sinh trưởng khỏe, khả năng chống chịu sâu bệnh và thời tiết bất lợi tốt.",
+      "Đa bội lẻ (3n): Không có khả năng sinh sản hữu tính vì quá trình giảm phân bị rối loạn tạo giao tử bất thụ → Ứng dụng tạo giống cây trồng ăn quả không hạt (như dưa hấu tam bội 3n không hạt, chuối nhà 3n, nho 3n không hạt).",
+      "Đa bội chẵn (4n): Giống dâu tằm tứ bội có lá to dày để nuôi tằm, nho tứ bội quả to ngọt."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-phuong-phap-pha-he-nguoi",
+    "title": "Phương pháp nghiên cứu phả hệ ở người",
+    "summary": "Phương pháp theo dõi sự di truyền của một tính trạng hoặc bệnh tật qua nhiều thế hệ trong một gia đình dòng họ.",
+    "keyTakeaways": [
+      "Đặc thù di truyền người: Người sinh sản muộn, số con ít, không thể áp dụng phương pháp lai hoặc gây đột biến như ở thực vật và động vật vì lí do đạo đức xã hội.",
+      "Cách tiến hành: Lập sơ đồ phả hệ ghi nhận sự xuất hiện của tính trạng qua các thế hệ (quy ước hình vuông là nam, hình tròn là nữ; màu đen là mắc bệnh, màu trắng là bình thường).",
+      "Mục đích: Xác định tính trạng/bệnh đó là do gen trội hay gen lặn quy định; nằm trên NST thường hay NST giới tính; dự đoán nguy cơ mắc bệnh cho con cháu."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-tre-dong-sinh-nghien-cuu",
+    "title": "Phương pháp nghiên cứu trẻ đồng sinh",
+    "summary": "So sánh sự giống và khác nhau giữa các cặp sinh đôi cùng trứng và khác trứng để xác định vai trò của kiểu gen và môi trường.",
+    "keyTakeaways": [
+      "Đồng sinh cùng trứng: Một trứng được thụ tinh bởi một tinh trùng tạo một hợp tử, sau đó hợp tử tách thành 2 phôi riêng biệt → Hai đứa trẻ có kiểu gen giống hệt nhau 100%, luôn cùng giới tính.",
+      "Đồng sinh khác trứng: Hai trứng rụng cùng lúc được thụ tinh bởi hai tinh trùng khác nhau → Hai đứa trẻ có kiểu gen khác nhau như anh chị em ruột bình thường, có thể cùng hoặc khác giới tính.",
+      "Ý nghĩa: Nếu tính trạng ở trẻ cùng trứng giống nhau dù nuôi dưỡng ở hai môi trường khác nhau → tính trạng do kiểu gen quyết định là chính (nhóm máu, màu mắt). Nếu khác nhau → chịu ảnh hưởng lớn từ môi trường (cân nặng, tính cách, chỉ số thể lực)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-hoi-chung-dao-co-che",
+    "title": "Hội chứng Đao (Down syndrome): Cơ chế và biểu hiện",
+    "summary": "Bệnh di truyền do đột biến số lượng NST phổ biến nhất ở người, gây ra bởi thể ba ở cặp nhiễm sắc thể số 21.",
+    "keyTakeaways": [
+      "Bản chất di truyền: Tế bào sinh dưỡng có 3 chiếc nhiễm sắc thể số 21 (thể ba: 2n + 1 = 47 chiếc).",
+      "Đặc điểm kiểu hình: Cổ ngắn, gáy phẳng, mắt xếch, khoảng cách giữa 2 mắt xa nhau, mũi tẹt, lưỡi dày thường thè ra, bàn tay ngắn có nếp gấp đơn sâu, chậm phát triển trí tuệ và thường kèm theo dị tật tim bẩm sinh.",
+      "Nguyên nhân then chốt: Do rối loạn giảm phân ở mẹ (cặp NST 21 không phân li tạo trứng mang 2 chiếc NST 21). Nguy cơ sinh con mắc hội chứng Đao tăng vọt theo độ tuổi của người mẹ, đặc biệt là phụ nữ mang thai trên 35 tuổi."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-hoi-chung-turner-klinefelter",
+    "title": "Hội chứng Turner (XO) và Hội chứng Klinefelter (XXY)",
+    "summary": "Các hội chứng di truyền do rối loạn số lượng nhiễm sắc thể giới tính ở người.",
+    "keyTakeaways": [
+      "Hội chứng Turner (45, XO): Thể một ở cặp NST giới tính; người bệnh là nữ, vóc dáng thấp lùn, cổ có nếp màng cánh bướm, tuyến vú không phát triển, dạ con hẹp, không có kinh nguyệt, vô sinh và thường chậm phát triển trí tuệ nhẹ.",
+      "Hội chứng Klinefelter (47, XXY): Thể ba ở cặp NST giới tính; người bệnh là nam giới nhưng mang thêm một chiếc NST X (thể 47, XXY). Kiểu hình: thân hình cao lêu nghêu, tay chân dài, tuyến vú phát triển nở nang như nữ, tinh hoàn teo nhỏ, không có tinh trùng, vô sinh."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-benh-di-truyen-phan-tu-nguoi",
+    "title": "Các bệnh di truyền phân tử thường gặp ở người",
+    "summary": "Những bệnh tật do đột biến gene đơn lẻ gây rối loạn tổng hợp các protein và enzyme quan trọng.",
+    "keyTakeaways": [
+      "Bệnh tan máu bẩm sinh (Thalassemia): Đột biến gen lặn trên NST thường quy định chuỗi globin của hemoglobin, làm hồng cầu dễ vỡ gây thiếu máu mạn tính, ứ đọng sắt phủ tạng.",
+      "Bệnh bạch tạng: Đột biến gen lặn trên NST thường làm mất enzyme tyrosinase tổng hợp sắc tố melanin (da trắng hồng, tóc trắng, mắt hồng nhạy cảm ánh sáng).",
+      "Bệnh Phenylketon niệu (PKU): Đột biến gen lặn làm thiếu enzyme chuyển hóa phenylalanine thành tyrosine, làm phenylalanine ứ đọng đầu độc tế bào não gây thiểu năng trí tuệ (có thể phòng ngừa bằng chế độ ăn kiêng ngay sau sinh)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-benh-lien-ket-gioi-tinh-x",
+    "title": "Bệnh di truyền liên kết với giới tính X ở người",
+    "summary": "Cơ chế di truyền của các bệnh do gen lặn nằm trên vùng không tương đồng của nhiễm sắc thể giới tính X.",
+    "keyTakeaways": [
+      "Các bệnh điển hình: Bệnh mù màu (không phân biệt được màu đỏ - xanh lục) và Bệnh máu khó đông (Hemophilia - máu không đông khi bị thương tích).",
+      "Đặc điểm di truyền chéo: Mẹ truyền gen lặn trên X cho con trai, bố truyền gen trên X cho con gái.",
+      "Đặc điểm biểu hiện: Nam giới mắc bệnh nhiều hơn nữ giới rất nhiều. Lí do: Nam giới (XY) chỉ cần nhận duy nhất một alen lặn từ mẹ (X^a Y) là đã biểu hiện bệnh; trong khi nữ giới (XX) phải nhận đồng thời cả 2 alen lặn từ cả bố và mẹ (X^a X^a) mới bị bệnh (nếu X^A X^a thì chỉ là người lành mang gen)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-di-truyen-y-hoc-tu-van",
+    "title": "Di truyền y học tư vấn và chẩn đoán trước sinh",
+    "summary": "Lĩnh vực y học ứng dụng các kiến thức di truyền học để bảo vệ sức khỏe gia đình và cộng đồng.",
+    "keyTakeaways": [
+      "Tư vấn di truyền: Bác sĩ phân tích phả hệ gia đình, xét nghiệm sàng lọc trước hôn nhân để chẩn đoán khả năng sinh con mắc bệnh tật di truyền, đưa ra lời khuyên khoa học.",
+      "Chẩn đoán trước sinh: Kĩ thuật siêu âm hình thái, xét nghiệm sàng lọc NIPT từ máu mẹ, chọc dò dịch ối, sinh thiết gai nhau để phát hiện sớm các dị tật như hội chứng Đao, Turner trước khi trẻ chào đời."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-tac-hai-hon-nhan-can-huyet",
+    "title": "Tác hại của hôn nhân cận huyết và ô nhiễm môi trường",
+    "summary": "Cơ sở khoa học của Luật Hôn nhân và Gia đình cấm kết hôn trong phạm vi 3 đời.",
+    "keyTakeaways": [
+      "Cơ sở di truyền: Hôn nhân cận huyết (kết hôn giữa những người có cùng dòng máu trực hệ hoặc trong phạm vi 3 đời) làm tăng đột biến tỉ lệ đồng hợp lặn (aa), khiến các gen lặn đột biến có hại tiềm ẩn có cơ hội gặp nhau và biểu hiện ra kiểu hình gây chết non, quái thai, dị tật bẩm sinh.",
+      "Ô nhiễm môi trường: Khói bụi hóa chất công nghiệp, thuốc trừ sâu dioxin, các chất thải phóng xạ làm tăng tần số đột biến gen và đột biến NST ở tế bào sinh dục của người."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-bao-ve-von-gen-loai-nguoi",
+    "title": "Bảo vệ vốn gen của loài người và liệu pháp gen",
+    "summary": "Các giải pháp chiến lược nhằm giảm thiểu gánh nặng di truyền và nâng cao chất lượng dân số.",
+    "keyTakeaways": [
+      "Bảo vệ môi trường sống: Hạn chế tối đa sử dụng và xả thải các hóa chất độc hại, chất phóng xạ ra không khí và nguồn nước.",
+      "Sống lành mạnh: Tránh xa các chất gây nghiện, rượu bia, thuốc lá trong độ tuổi sinh sản.",
+      "Liệu pháp gen (Gene therapy): Hướng nghiên cứu y sinh học hiện đại sử dụng công nghệ gen để thay thế hoặc sửa chữa các gen bị đột biến lỗi bằng gen lành, mở ra hi vọng chữa trị triệt để các bệnh di truyền nan y."
+    ]
+  }
+]

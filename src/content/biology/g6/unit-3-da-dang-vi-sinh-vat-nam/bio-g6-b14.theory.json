@@ -1,0 +1,85 @@
+{
+  "lessonId": "bio-g6-b14",
+  "nodeId": "bio-g6-b14-theory",
+  "title": "Lý thuyết: Virus",
+  "subtitle": "Bài 29 SGK KHTN 6 Kết nối tri thức: Kích thước siêu vi, chưa có cấu tạo tế bào, bệnh truyền nhiễm và vai trò của vaccine",
+  "sgkBaiSo": 29,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Cấu tạo siêu vi",
+      "badgeColor": "emerald",
+      "title": "Đặc điểm kích thước và cấu tạo của virus",
+      "content": "Virus là những thực thể sinh học đặc biệt đứng ở ranh giới giữa vật sống và vật không sống:",
+      "bulletPoints": [
+        "Kích thước siêu hiển vi: Cực kỳ nhỏ bé, chỉ từ 20 đến 300 nanomet (1 nm = 1/1.000.000 mm), nhỏ hơn vi khuẩn hàng chục đến hàng trăm lần; chỉ quan sát được dưới kính hiển vi điện tử.",
+        "Chưa có cấu tạo tế bào: Virus không phải là tế bào mà chỉ là các hạt siêu vi (virion).",
+        "Cấu tạo đơn giản gồm 2 thành phần chính: Lõi chứa vật chất di truyền (chỉ chứa DNA hoặc RNA) và Vỏ protein (capsid) bao bọc bảo vệ lõi. Một số virus có thêm lớp vỏ ngoài lipid có các gai glycoprotein bám dính (như virus cúm, SARS-CoV-2)."
+      ],
+      "callout": "Ghi nhớ: Virus CHƯA CÓ cấu tạo tế bào, chỉ gồm Lõi DNA/RNA + Vỏ protein!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Đời sống ký sinh",
+      "badgeColor": "amber",
+      "title": "Ký sinh nội bào bắt buộc",
+      "content": "Đặc điểm sinh học độc nhất của virus:",
+      "bulletPoints": [
+        "Ký sinh nội bào bắt buộc: Khi ở ngoài tế bào chủ, virus không có quá trình trao đổi chất, không tự phân chia (ở trạng thái tinh thể vô sinh).",
+        "Nhân lên trong tế bào chủ: Khi xâm nhập vào tế bào sống (người, động vật, thực vật hoặc vi khuẩn), virus sử dụng bộ máy và chất dinh dưỡng của tế bào chủ để nhân bản hàng loạt virus mới rồi phá vỡ tế bào chủ chui ra ngoài.",
+        "Hình dạng: Dạng khối đa diện (virus bại liệt, adenovirus), dạng hình xoắn (virus khảm thuốc lá, virus dại), dạng hỗn hợp (thực khuẩn thể phage có đầu đa diện và đuôi chân gai)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Bệnh truyền nhiễm",
+      "badgeColor": "purple",
+      "title": "Các bệnh truyền nhiễm nguy hiểm do virus",
+      "content": "Virus gây ra nhiều đại dịch lớn trong lịch sử nhân loại:",
+      "bulletPoints": [
+        "Ở người: Cúm mùa, sởi, quai bị, thủy đậu, sốt xuất huyết (muỗi vằn truyền virus Dengue), bệnh dại, viêm gan B, COVID-19, hội chứng AIDS do virus HIV.",
+        "Ở động vật: Cúm gia cầm H5N1, dịch tả lợn châu Phi, lở mồm long móng.",
+        "Ở thực vật: Bệnh khảm lá thuốc lá, khảm lá cà chua làm quăn lá, cây còi cọc mất mùa."
+      ]
+    },
+    {
+      "id": "card-4",
+      "badge": "Phòng bệnh & Vaccine",
+      "badgeColor": "cyan",
+      "title": "Nguyên tắc phòng bệnh và vai trò cốt lõi của vaccine",
+      "content": "Cách phòng chống bệnh virus khoa học và hiệu quả:",
+      "bulletPoints": [
+        "Thuốc kháng sinh VÔ HIỆU: Thuốc kháng sinh chỉ tiêu diệt vi khuẩn, hoàn toàn KHÔNG có tác dụng đối với virus do virus không có cấu tạo tế bào.",
+        "Tiêm vaccine (vắc-xin): Là biện pháp phòng bệnh chủ động và hiệu quả nhất. Tiêm vaccine kích thích hệ miễn dịch cơ thể tạo ra kháng thể đặc hiệu sẵn sàng tiêu diệt virus khi bị xâm nhập.",
+        "Vệ sinh phòng dịch: Rửa tay thường xuyên bằng xà phòng hoặc cồn sát khuẩn, đeo khẩu trang nơi đông người, diệt bọ gậy lăng quăng phòng sốt xuất huyết."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Tại sao thuốc kháng sinh hoàn toàn KHÔNG có tác dụng điều trị các bệnh cảm cúm thông thường do virus gây ra?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Vì thuốc kháng sinh chỉ tiêu diệt vi khuẩn, không có tác dụng với virus do virus chưa có cấu tạo tế bào",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Vì virus có kích thước quá lớn kháng sinh không bao phủ được",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Vì virus có khả năng quang hợp chế tạo chất kháng sinh",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Vì thuốc kháng sinh làm virus sinh sản nhanh hơn gấp 10 lần",
+        "correct": false
+      }
+    ],
+    "explanation": "Thuốc kháng sinh tác động vào thành tế bào hoặc quá trình sinh tổng hợp của tế bào vi khuẩn. Do virus chưa có cấu tạo tế bào và ký sinh bên trong tế bào vật chủ nên kháng sinh hoàn toàn vô tác dụng."
+  }
+}

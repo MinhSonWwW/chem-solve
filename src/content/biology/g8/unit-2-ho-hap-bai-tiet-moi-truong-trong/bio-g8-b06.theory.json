@@ -1,0 +1,74 @@
+{
+  "lessonId": "bio-g8-b06",
+  "nodeId": "bio-g8-b06-theory",
+  "title": "Lý thuyết: Hệ bài tiết ở người",
+  "subtitle": "Bài 35 SGK KHTN 8 Kết nối tri thức: Cấu tạo thận, đơn vị Nephron, 3 giai đoạn tạo nước tiểu và phòng tránh sỏi thận, suy thận",
+  "sgkBaiSo": 35,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Cấu tạo",
+      "badgeColor": "emerald",
+      "title": "Cấu tạo hệ bài tiết nước tiểu & Nephron",
+      "content": "Thận bài tiết tới 90% sản phẩm bài tiết hòa tan trong máu (ure, acid uric, muối thừa):",
+      "bulletPoints": [
+        "Hệ cơ quan gồm: 2 quả thận (hình hạt đậu ở hai bên cột sống thắt lưng), 2 ống dẫn nước tiểu (niệu quản), bóng đái (bàng quang chứa nước tiểu) và ống đái (niệu đạo thải ra ngoài).",
+        "Đơn vị chức năng Nephron: Mỗi quả thận chứa khoảng 1 triệu Nephron. Mỗi Nephron gồm Cầu thận (búi mao mạch cuộn), Nang cầu thận (nang Bowman bao bọc) và Ống thận dài gấp khúc có mao mạch bao quanh.",
+        "Màng lọc cầu thận có tính thấm chọn lọc: cho nước và phân tử nhỏ đi qua, giữ lại tế bào máu và protein kích thước lớn."
+      ],
+      "callout": "Mỗi ngày, khoảng 1 400 lít máu chảy qua hai quả thận để được lọc sạch liên tục!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Cơ chế",
+      "badgeColor": "amber",
+      "title": "3 giai đoạn tạo thành nước tiểu",
+      "content": "Quá trình tạo nước tiểu diễn ra liên tục tại các đơn vị Nephron:",
+      "bulletPoints": [
+        "1. Lọc máu (tại Cầu thận): Áp lực máu cao ép nước và các chất hòa tan qua màng lọc vào nang Bowman tạo Nước tiểu đầu (khoảng 170 - 180 lít/ngày).",
+        "2. Tái hấp thụ (tại Ống thận): Ống thận thu hồi lại 99% lượng nước, toàn bộ chất dinh dưỡng (glucose, amino acid) và ion cần thiết đưa trả về máu.",
+        "3. Bài tiết tiếp (tại Ống thận): Ống thận chủ động bài tiết các chất cặn bã thừa (ure, acid uric, creatinin, thuốc, ion H+) vào lòng ống tạo Nước tiểu chính thức (chỉ khoảng 1,5 lít/ngày đổ về bể thận).",
+        "Khác biệt cốt lõi: Nước tiểu đầu còn chứa nhiều đường glucose và dưỡng chất; nước tiểu chính thức đậm đặc và hoàn toàn không còn chất dinh dưỡng."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Vệ sinh & Bệnh lí",
+      "badgeColor": "cyan",
+      "title": "Vệ sinh hệ bài tiết & Bệnh sỏi thận, suy thận",
+      "content": "Bảo vệ chức năng lọc của hai quả thận:",
+      "bulletPoints": [
+        "Nguyên nhân sỏi thận: Uống ít nước, ăn quá mặn (nhiều muối), ăn nhiều thực phẩm giàu oxalat hoặc thói quen nhịn tiểu kéo dài khiến muối khoáng (canxi oxalat, acid uric) kết tinh thành sỏi gây tắc niệu quản và viêm nhiễm.",
+        "Bệnh suy thận: Cầu thận và ống thận bị tổn thương xơ hóa không lọc được chất độc ra khỏi máu, bệnh nhân phải chạy thận nhân tạo (lọc máu ngoài cơ thể) hoặc ghép thận để duy trì sự sống.",
+        "Biện pháp phòng ngừa: Uống đủ 1,5 - 2 lít nước mỗi ngày, ăn nhạt giảm tải cho thận, không nhịn tiểu và giữ vệ sinh sạch sẽ."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Giai đoạn nào trong quá trình tạo nước tiểu có nhiệm vụ thu hồi lại 99% lượng nước và toàn bộ các chất dinh dưỡng đưa trở lại hệ tuần hoàn máu?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Quá trình tái hấp thụ diễn ra tại ống thận",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Quá trình lọc máu diễn ra tại cầu thận",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Quá trình bài tiết tiếp diễn ra tại nang cầu thận",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Quá trình tích trữ nước tiểu tại bàng quang",
+        "correct": false
+      }
+    ],
+    "explanation": "Tại ống thận, các tế bào biểu mô ống thận thực hiện quá trình tái hấp thụ cực kì mạnh mẽ, thu hồi lại tới 99% nước, 100% glucose, amino acid đưa trở lại mao mạch máu bao quanh ống."
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "lessonId": "bio-g9-b05",
+  "nodeId": "bio-g9-b05-theory",
+  "title": "Lý thuyết: Dịch mã & Mối quan hệ từ gene đến tính trạng",
+  "subtitle": "Bài 40 SGK KHTN 9 Kết nối tri thức: Mã di truyền, quá trình dịch mã tổng hợp protein và sơ đồ Central Dogma: Gene → mRNA → Protein → Tính trạng",
+  "sgkBaiSo": 40,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Mã di truyền",
+      "badgeColor": "emerald",
+      "title": "Bản chất và đặc điểm của mã di truyền",
+      "content": "Mã di truyền là mật mã bằng ngôn ngữ nucleotide quy định ngôn ngữ amino acid của protein:",
+      "bulletPoints": [
+        "Mã bộ ba (Codon): Cứ 3 nucleotide đứng liền kề trên mạch gốc của gen (triplet) hay trên phân tử mRNA (codon) mã hóa cho 1 amino acid trong chuỗi polypeptide. Có tất cả 4^3 = 64 bộ ba codon.",
+        "Bộ ba mở đầu: 5'AUG3' nằm ở đầu phân tử mRNA, quy định amino acid Methionine (Met) và báo hiệu bắt đầu dịch mã.",
+        "3 bộ ba kết thúc: 5'UAA3', 5'UAG3', 5'UGA3' - không mã hóa cho amino acid nào, đóng vai trò phát tín hiệu dừng dịch mã.",
+        "4 đặc tính cốt lõi: Tính liên tục (đọc từ một điểm xác định từng bộ ba không gối lên nhau); Tính phổ biến (toàn bộ sinh giới dùng chung một bộ mã); Tính đặc hiệu (mỗi bộ ba chỉ mã hóa 1 amino acid); Tính thoái hóa (nhiều bộ ba khác nhau cùng mã hóa cho 1 amino acid, ví dụ 6 bộ ba cùng mã hóa Leucine)."
+      ],
+      "callout": "Trong 64 bộ ba, chỉ có 61 bộ ba mã hóa cho 20 loại amino acid khác nhau; 3 bộ ba còn lại làm tín hiệu kết thúc dịch mã!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Dịch mã protein",
+      "badgeColor": "amber",
+      "title": "Quá trình dịch mã tại Ribosome",
+      "content": "Dịch mã là quá trình tổng hợp chuỗi polypeptide diễn ra tại tế bào chất trên các ribosome:",
+      "bulletPoints": [
+        "Địa điểm và thành phần: Diễn ra trong tế bào chất, cần có phân tử mRNA làm khuôn, các phức hệ tRNA mang amino acid tự do, năng lượng ATP và các ribosome.",
+        "Giai đoạn mở đầu: Tiểu đơn vị bé của ribosome tiếp xúc đầu 5' của mRNA, tiến đến codon mở đầu 5'AUG3'. Phức hệ tRNA-Met mang anticodon 3'UAC5' khớp bổ sung vào AUG. Tiểu đơn vị lớn của ribosome gắn vào tạo ribosome hoàn chỉnh.",
+        "Giai đoạn kéo dài: Các phức hệ tRNA - amino acid tiếp theo lần lượt tiến vào khớp anticodon với codon trên mRNA theo NTBS. Enzyme xúc tác hình thành liên kết peptide nối các amino acid kế tiếp nhau. Ribosome dịch chuyển từng bước 1 codon (3 nucleotide) theo chiều 5' → 3'.",
+        "Giai đoạn kết thúc: Khi ribosome tiếp xúc với một trong ba codon kết thúc (UAA, UAG, UGA), quá trình dịch mã dừng lại. Ribosome tách rời khỏi mRNA, chuỗi polypeptide được giải phóng và enzyme cắt bỏ amino acid mở đầu (Met) để tạo protein hoàn chỉnh."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Central Dogma",
+      "badgeColor": "cyan",
+      "title": "Mối quan hệ từ Gene đến Tính trạng (Central Dogma)",
+      "content": "Sơ đồ cơ chế truyền đạt thông tin di truyền trung tâm giải thích bản chất phân tử của tính trạng sinh vật:",
+      "bulletPoints": [
+        "Sơ đồ dòng thông tin: Gene (đoạn DNA) → (Phiên mã trong nhân) → mRNA → (Dịch mã ở tế bào chất) → Protein (chuỗi polypeptide) → Biểu hiện thành Tính trạng.",
+        "Bản chất mối quan hệ: Trình tự các nucleotide trên mạch khuôn của gen quy định trình tự các ribonucleotide trên mRNA. Trình tự các codon trên mRNA quy định trình tự sắp xếp các amino acid trong chuỗi polypeptide. Trình tự amino acid quyết định cấu trúc không gian và chức năng sinh học của protein, từ đó biểu hiện thành tính trạng cơ thể.",
+        "Ví dụ minh họa: Gen quy định tổng hợp enzyme melanin quy định màu tóc đen ở người; gen đột biến mất chức năng tạo enzyme melanin dẫn đến bệnh bạch tạng (tóc trắng, da trắng hồng)."
+      ],
+      "callout": "Gene không trực tiếp tạo ra tính trạng, mà thông qua protein trung gian thực hiện các chức năng cấu trúc và xúc tác để biểu hiện thành tính trạng!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Bộ ba nào sau đây trên phân tử mRNA đóng vai trò là 'bộ ba mở đầu', báo hiệu bắt đầu quá trình dịch mã và mã hóa cho amino acid Methionine?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "5'AUG3'",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "5'UAA3'",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "5'UAG3'",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "5'UGA3'",
+        "correct": false
+      }
+    ],
+    "explanation": "5'AUG3' là bộ ba mở đầu duy nhất trên mRNA, mã hóa cho amino acid Methionine ở sinh vật nhân thực. Ba bộ ba UAA, UAG, UGA là các bộ ba kết thúc dịch mã, không mã hóa amino acid nào."
+  }
+}

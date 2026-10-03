@@ -1,0 +1,101 @@
+{
+  "lessonId": "bio-g6-b02",
+  "nodeId": "bio-g6-b02-theory",
+  "title": "Lý thuyết: Sử dụng kính hiển vi quang học",
+  "subtitle": "Bài 4 SGK KHTN 6 Kết nối tri thức: Cấu tạo 4 hệ thống, công thức phóng đại và quy trình 3 bước quan sát",
+  "sgkBaiSo": 4,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Khái niệm",
+      "badgeColor": "emerald",
+      "title": "Kính hiển vi quang học và vai trò",
+      "content": "Kính hiển vi quang học là thiết bị quang học phức hợp sử dụng ánh sáng nhìn thấy để phóng đại hình ảnh của các vật thể siêu nhỏ.",
+      "bulletPoints": [
+        "Độ phóng đại: Từ 40 lần đến 1000 lần (hoặc lên đến 1500 lần).",
+        "Đối tượng quan sát: Các cấu trúc có kích thước micromet (μm) như tế bào biểu bì vảy hành, tế bào máu, trùng roi, vi khuẩn, nấm men.",
+        "Mắt thường và kính lúp không thể nhìn thấy được tế bào do kích thước tế bào quá nhỏ, bắt buộc phải dùng kính hiển vi quang học."
+      ],
+      "callout": "Kính hiển vi quang học phóng to từ 40x đến 1000x — chìa khóa mở cánh cửa thế giới tế bào vi mô!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Cấu tạo",
+      "badgeColor": "amber",
+      "title": "4 hệ thống chính của kính hiển vi quang học",
+      "content": "Kính hiển vi quang học tiêu chuẩn gồm 4 hệ thống bộ phận phối hợp chặt chẽ:",
+      "bulletPoints": [
+        "1. Hệ thống giá đỡ: Gồm chân kính (đế vững chắc), thân kính (tay cầm khi bê), bàn kính (bàn để mẫu vật có kẹp giữ tiêu bản) và mâm xoay gắn các vật kính.",
+        "2. Hệ thống phóng đại: Gồm Thị kính (ống kính ở đầu trên để đặt mắt nhìn vào, độ phóng đại 10x, 16x) và Vật kính (các ống kính gắn ở mâm xoay hướng sát tiêu bản, có độ phóng đại 4x, 10x, 40x, 100x).",
+        "3. Hệ thống chiếu sáng: Gồm nguồn sáng (đèn điện hoặc gương phản chiếu ánh sáng tự nhiên) và màn chắn sáng (cửa điều chỉnh lượng ánh sáng qua lỗ sáng).",
+        "4. Hệ thống điều chỉnh: Gồm Ốc to (ốc sơ cấp - xoay để di chuyển bàn kính lên xuống nhanh khi tìm ảnh) và Ốc nhỏ (ốc vi cấp - xoay để điều chỉnh bàn kính di chuyển rất nhỏ giúp lấy nét sắc nét chi tiết)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Công thức",
+      "badgeColor": "cyan",
+      "title": "Cách tính độ phóng đại của kính hiển vi",
+      "content": "Độ phóng đại tổng cộng của hình ảnh quan sát được qua kính hiển vi bằng tích số giữa độ phóng đại của thị kính và vật kính đang sử dụng:",
+      "bulletPoints": [
+        "Công thức: Độ phóng đại tổng = Độ phóng đại thị kính × Độ phóng đại vật kính.",
+        "Ví dụ 1: Thị kính 10x, vật kính 10x → Độ phóng đại = 10 × 10 = 100 lần.",
+        "Ví dụ 2: Thị kính 10x, vật kính 40x → Độ phóng đại = 10 × 40 = 400 lần.",
+        "Ví dụ 3: Thị kính 16x, vật kính 100x (soi dầu) → Độ phóng đại = 16 × 100 = 1600 lần."
+      ],
+      "formulaExample": "Độ phóng đại tổng = Thị kính (x) × Vật kính (x)"
+    },
+    {
+      "id": "card-4",
+      "badge": "Thao tác chuẩn",
+      "badgeColor": "purple",
+      "title": "Quy trình 3 bước sử dụng kính hiển vi quang học",
+      "content": "Để quan sát tiêu bản an toàn và rõ nét, tiến hành đúng 3 bước theo SGK:",
+      "bulletPoints": [
+        "Bước 1 (Lấy sáng): Cắm điện bật đèn (hoặc xoay gương hứng ánh sáng), điều chỉnh màn chắn sáng để trường nhìn tròn đều và sáng rõ.",
+        "Bước 2 (Đặt tiêu bản): Đặt lam kính chứa mẫu vật lên bàn kính, dùng kẹp giữ chặt, chỉnh mẫu vật vào chính giữa lỗ sáng.",
+        "Bước 3 (Lấy nét và quan sát): Mắt nhìn ngang bàn kính từ bên ngoài, vặn ốc to nâng bàn kính lên gần vật kính (cẩn thận không để chạm vỡ lam kính). Sau đó nhìn mắt vào thị kính, từ từ vặn ốc to hạ bàn kính xuống đến khi nhìn thấy ảnh mẫu vật lờ mờ; tiếp tục vặn ốc nhỏ (ốc vi cấp) chậm rãi để ảnh hiện lên rõ ràng, sắc nét nhất."
+      ],
+      "callout": "Lưu ý an toàn: Khi nâng bàn kính lên bằng ốc to, mắt PHẢI nhìn ngang thân kính để tránh vật kính đâm vỡ lam kính tiêu bản!"
+    },
+    {
+      "id": "card-5",
+      "badge": "Bảo quản",
+      "badgeColor": "emerald",
+      "title": "Quy tắc an toàn và bảo quản kính hiển vi",
+      "content": "Kính hiển vi là thiết bị quang học chính xác đắt tiền, cần tuân thủ nghiêm ngặt:",
+      "bulletPoints": [
+        "Khi di chuyển: Luôn bê bằng 2 tay — một tay nắm chắc thân kính, một tay đỡ chắc phía dưới chân kính.",
+        "Vệ sinh thấu kính: Chỉ dùng giấy lau kính chuyên dụng, tuyệt đối không dùng vải thường, cồn lạ hay ngón tay để lau mặt thấu kính.",
+        "Sau khi sử dụng: Hạ bàn kính xuống thấp nhất, xoay mâm đưa vật kính nhỏ nhất (4x) vào trục quang học, tắt đèn ngắt điện và trùm túi bọc chống bụi."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Một bạn học sinh sử dụng kính hiển vi quang học có thị kính ghi 10x và đang chọn vật kính 40x. Hình ảnh tế bào mà bạn quan sát được đã được phóng đại bao nhiêu lần?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "50 lần (lấy 10 + 40)",
+        "correct": false
+      },
+      {
+        "id": "opt-2",
+        "text": "400 lần (lấy 10 × 40)",
+        "correct": true
+      },
+      {
+        "id": "opt-3",
+        "text": "4 lần (lấy 40 ÷ 10)",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "4000 lần",
+        "correct": false
+      }
+    ],
+    "explanation": "Độ phóng đại tổng cộng của kính hiển vi = Độ phóng đại thị kính × Độ phóng đại vật kính = 10 × 40 = 400 lần."
+  }
+}

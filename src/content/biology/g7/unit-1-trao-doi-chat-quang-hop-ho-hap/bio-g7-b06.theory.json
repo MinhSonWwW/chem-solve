@@ -1,0 +1,75 @@
+{
+  "lessonId": "bio-g7-b06",
+  "nodeId": "bio-g7-b06-theory",
+  "title": "Lý thuyết: Một số yếu tố ảnh hưởng đến hô hấp tế bào",
+  "subtitle": "Bài 26 SGK KHTN 7 Kết nối tri thức: Nhiệt độ, hàm lượng nước, nồng độ O2, CO2 và phương pháp bảo quản nông sản",
+  "sgkBaiSo": 26,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Yếu tố môi trường",
+      "badgeColor": "amber",
+      "title": "Các yếu tố ảnh hưởng đến hô hấp tế bào",
+      "content": "Cường độ hô hấp tế bào chịu sự chi phối chặt chẽ của 4 yếu tố môi trường chủ yếu:",
+      "bulletPoints": [
+        "Nhiệt độ: Nhiệt độ tối ưu thường từ 30°C đến 35°C. Nhiệt độ thấp kìm hãm hoạt tính enzym hô hấp; nhiệt độ quá cao (trên 40°C - 45°C) làm enzym bị biến tính, hô hấp tế bào bị phá hủy.",
+        "Hàm lượng nước: Nước là dung môi và môi trường diễn ra các phản ứng phân giải. Nước càng nhiều thì hô hấp càng mạnh; hạt khô hô hấp yếu, hạt nảy mầm hô hấp rất mạnh.",
+        "Nồng độ Oxygen (O2): O2 là nguyên liệu tham gia trực tiếp. Nồng độ O2 giảm dưới 5% làm hô hấp hiếu khí suy giảm mạnh, tế bào chuyển sang lên men gây tích tụ chất độc.",
+        "Nồng độ Carbon dioxide (CO2): CO2 là sản phẩm của hô hấp. Nồng độ CO2 trong không khí tăng cao (trên 3% - 5%) sẽ gây ức chế hô hấp tế bào."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Mục đích",
+      "badgeColor": "cyan",
+      "title": "Mục đích của việc bảo quản nông sản",
+      "content": "Bảo quản nông sản (hạt, củ, quả, rau) sau thu hoạch nhằm mục đích:",
+      "bulletPoints": [
+        "Kìm hãm cường độ hô hấp tế bào xuống mức tối thiểu để hạn chế tiêu hao chất hữu cơ dự trữ.",
+        "Hạn chế sự sinh nhiệt và bốc hơi nước làm hạt bị ẩm mốc, thối rữa và giảm khối lượng.",
+        "Duy trì tối đa chất lượng dinh dưỡng, hương vị và giữ được khả năng nảy mầm của hạt giống."
+      ],
+      "callout": "Hô hấp quá mạnh sau thu hoạch sẽ 'đốt cháy' chất dinh dưỡng và làm thối hỏng nông sản!"
+    },
+    {
+      "id": "card-3",
+      "badge": "Phương pháp",
+      "badgeColor": "emerald",
+      "title": "4 phương pháp bảo quản nông sản thông dụng",
+      "content": "Con người điều chỉnh các yếu tố môi trường để ức chế hô hấp bảo quản nông sản hiệu quả:",
+      "bulletPoints": [
+        "Bảo quản khô: Phơi nắng hoặc sấy khô lúa, ngô, đỗ (giảm hàm lượng nước về dưới 13%) giúp hạt bảo quản được nhiều năm.",
+        "Bảo quản lạnh: Bảo quản rau, củ, quả tươi trong kho mát hoặc ngăn mát tủ lạnh (1°C - 5°C) để hạ thấp hoạt tính enzym hô hấp.",
+        "Bảo quản trong điều kiện nồng độ CO2 cao: Bơm khí CO2 vào kho kín hoặc phòng chứa để ức chế quá trình hô hấp của trái cây xuất khẩu.",
+        "Bảo quản hút chân không: Rút hết không khí trong bao bì chứa thực phẩm, làm giảm nồng độ O2 ngăn chặn hô hấp và vi sinh vật gây hại."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Vì sao sau khi thu hoạch lúa, ngô, đỗ, người nông dân thường phải phơi thật khô trước khi cho vào bồ, chum để cất giữ lâu dài?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Để giảm hàm lượng nước trong hạt, kìm hãm hô hấp tế bào xuống mức tối thiểu và chống nấm mốc",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Để làm cho hạt lúa nhẹ hơn, dễ dàng vận chuyển đi bán",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Để vỏ trấu tự nứt ra cho hạt gạo trắng lộ ra ngoài",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Để biến đổi toàn bộ tinh bột trong hạt thành đường ngọt",
+        "correct": false
+      }
+    ],
+    "explanation": "Khi hạt được phơi khô (độ ẩm dưới 13%), lượng nước tự do rất thấp làm hô hấp tế bào giảm xuống mức cực tiểu. Nhờ đó, hạt không bị nảy mầm sớm, không bị thối rữa và ngăn ngừa nấm mốc phát triển."
+  }
+}

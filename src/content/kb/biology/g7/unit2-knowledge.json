@@ -1,0 +1,77 @@
+[
+  {
+    "id": "kb-bio-g7-khai-niem-trao-doi-khi",
+    "title": "Khái niệm trao đổi khí ở sinh vật",
+    "description": "Quá trình sinh vật lấy khí O2 hoặc CO2 từ môi trường vào cơ thể và thải khí CO2 hoặc O2 ra môi trường theo cơ chế khuếch tán từ nơi có nồng độ cao sang nơi có nồng độ thấp."
+  },
+  {
+    "id": "kb-bio-g7-khi-khong-thuc-vat",
+    "title": "Trao đổi khí qua khí khổng ở thực vật",
+    "description": "Khí khổng ở biểu bì lá là cửa ngõ trao đổi khí và thoát hơi nước. Tế bào hạt đậu no nước làm khe khí mở rộng; khi mất nước tế bào xẹp lại làm khe khí khép nhỏ lại."
+  },
+  {
+    "id": "kb-bio-g7-trao-doi-khi-dong-vat-4-kieu",
+    "title": "4 cơ quan trao đổi khí ở động vật",
+    "description": "Qua bề mặt cơ thể (giun đất, ếch nhái); Qua hệ thống ống khí (côn trùng); Qua mang (cá, tôm, trai); Qua phổi (bò sát, chim, thú, người)."
+  },
+  {
+    "id": "kb-bio-g7-vai-tro-cua-nuoc",
+    "title": "Vai trò của nước đối với cơ thể sống",
+    "description": "Nước chiếm 70% - 90% khối lượng cơ thể; là dung môi hòa tan, môi trường phản ứng sinh hóa, vận chuyển các chất và tham gia điều hòa thân nhiệt."
+  },
+  {
+    "id": "kb-bio-g7-vai-tro-chat-dinh-duong",
+    "title": "Vai trò của các chất dinh dưỡng",
+    "description": "Cung cấp năng lượng (carbohydrate, lipid, protein), cung cấp vật liệu cấu trúc xây dựng tế bào, điều hòa trao đổi chất (vitamin và khoáng chất)."
+  },
+  {
+    "id": "kb-bio-g7-nhu-cau-nuoc-sinh-vat",
+    "title": "Nhu cầu nước và dinh dưỡng ở sinh vật",
+    "description": "Thay đổi theo từng loài, lứa tuổi, giai đoạn sinh trưởng và điều kiện môi trường. Người trưởng thành cần khoảng 40 mL nước/kg cân nặng mỗi ngày."
+  },
+  {
+    "id": "kb-bio-g7-long-hut-hap-thu-nuoc",
+    "title": "Sự hấp thụ nước và khoáng ở rễ",
+    "description": "Các tế bào lông hút ở miền hút của rễ cây hấp thụ nước từ đất theo cơ chế thẩm thấu và hấp thụ ion khoáng theo cơ chế thụ động hoặc chủ động."
+  },
+  {
+    "id": "kb-bio-g7-dong-mach-go-xylem",
+    "title": "Dòng mạch gỗ (Xylem)",
+    "description": "Vận chuyển nước và ion khoáng một chiều từ rễ lên thân và lá nhờ áp suất rễ, lực hút thoát hơi nước ở lá và lực liên kết giữa các phân tử nước."
+  },
+  {
+    "id": "kb-bio-g7-dong-mach-ray-phloem",
+    "title": "Dòng mạch rây (Phloem)",
+    "description": "Vận chuyển các chất hữu cơ (chủ yếu là đường sucrose) từ lá quang hợp đến các bộ phận sử dụng (chồi non, rễ) hoặc cơ quan dự trữ (củ, quả, hạt)."
+  },
+  {
+    "id": "kb-bio-g7-y-nghia-thoat-hoi-nuoc",
+    "title": "Ý nghĩa của quá trình thoát hơi nước qua lá",
+    "description": "Tạo lực kéo đầu trên đưa nước và khoáng từ rễ lên cao, làm mát bề mặt lá chống bỏng nhiệt và mở đường cho khí CO2 khuếch tán vào lá quang hợp."
+  },
+  {
+    "id": "kb-bio-g7-tieu-hoa-dong-vat",
+    "title": "Con đường tiêu hóa thức ăn ở động vật",
+    "description": "Thu nhận thức ăn → Tiêu hóa cơ học (nhai, nghiền) và hóa học (enzym biến đổi thức ăn thành chất dinh dưỡng đơn giản) → Hấp thụ qua ruột non vào máu → Thải chất cặn bã qua phân."
+  },
+  {
+    "id": "kb-bio-g7-tuan-hoan-van-chuyen",
+    "title": "Hệ tuần hoàn vận chuyển chất trong cơ thể",
+    "description": "Tim co bóp đẩy máu qua mạch mang O2 và chất dinh dưỡng đến từng tế bào, đồng thời nhận chất thải và CO2 đưa đến phổi, thận và da để bài tiết."
+  },
+  {
+    "id": "kb-bio-g7-bai-tiet-can-bang-nuoc",
+    "title": "Bài tiết và cân bằng nước trong cơ thể",
+    "description": "Thận lọc máu bài tiết nước tiểu, da bài tiết mồ hôi, phổi thải hơi nước giúp duy trì cân bằng lượng nước và nồng độ muối khoáng ổn định trong cơ thể."
+  },
+  {
+    "id": "kb-bio-g7-thuc-hanh-mach-go-muc-do",
+    "title": "Thí nghiệm chứng minh thân vận chuyển nước",
+    "description": "Cành hoa hồng trắng hoặc cần tây cắm vào nước pha mực đỏ: sau vài giờ cánh hoa hóa đỏ và các bó mạch gỗ trong thân bắt màu đỏ rõ rệt."
+  },
+  {
+    "id": "kb-bio-g7-thuc-hanh-tui-nilon-thoat-nuoc",
+    "title": "Thí nghiệm chứng minh lá thoát hơi nước",
+    "description": "Trùm túi nilon trong suốt vào chùm lá cây đặt ngoài nắng: sau vài giờ thấy thành túi nilon mờ đi và đọng nhiều giọt nước ngưng tụ li ti."
+  }
+]

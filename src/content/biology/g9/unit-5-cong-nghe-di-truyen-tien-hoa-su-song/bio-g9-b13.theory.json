@@ -1,0 +1,76 @@
+{
+  "lessonId": "bio-g9-b13",
+  "nodeId": "bio-g9-b13-theory",
+  "title": "Lý thuyết: Công nghệ tế bào & Công nghệ gene",
+  "subtitle": "Bài 48 SGK KHTN 9 Kết nối tri thức: Kĩ thuật nuôi cấy mô tế bào thực vật, nhân bản vô tính động vật và quy trình chuyển gene tạo sinh vật GMO",
+  "sgkBaiSo": 48,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Công nghệ tế bào",
+      "badgeColor": "emerald",
+      "title": "Công nghệ tế bào thực vật và động vật",
+      "content": "Ứng dụng nuôi cấy tế bào và mô trong ống nghiệm để nhân giống và tạo giống mới:",
+      "bulletPoints": [
+        "Nuôi cấy mô tế bào thực vật: Dựa trên tính toàn năng của tế bào, nuôi cấy các tế bào/mô phân sinh trong môi trường nhân tạo giàu dinh dưỡng và hormone sinh trưởng để nhân nhanh hàng loạt cây giống sạch bệnh, đồng nhất về kiểu gen (phong lan, sâm Ngọc Linh, khoai tây, chuối).",
+        "Nhân bản vô tính ở động vật (Cừu Dolly - 1996): Chuyển nhân tế bào tuyến vú của cừu mặt trắng vào tế bào trứng đã hút nhân của cừu mặt đen, kích thích phát triển thành phôi rồi cấy vào tử cung cừu mẹ mang thai hộ.",
+        "Cơ sở di truyền then chốt: Cừu Dolly mang 100% kiểu gen nhân của con cừu cho nhân (cừu cho trứng và cừu mang thai không truyền vật chất di truyền nhân cho Dolly).",
+        "Cấy truyền phôi ở gia súc: Tách các phôi bò giống cao sản cấy vào nhiều bò mẹ mang thai hộ để tạo ra hàng chục con giống quý trong một năm."
+      ],
+      "callout": "Cừu Dolly mang kiểu gen nhân của con cừu cho tế bào tuyến vú; tế bào chất của trứng và tử cung cừu mang thai chỉ đóng vai trò dinh dưỡng và môi trường ươm mầm!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Quy trình chuyển gen",
+      "badgeColor": "amber",
+      "title": "Quy trình kĩ thuật chuyển gen (Công nghệ gene)",
+      "content": "Kĩ thuật thao tác trên phân tử DNA để đưa một đoạn gen mong muốn vào tế bào nhận:",
+      "bulletPoints": [
+        "Bước 1: Tách chiết thể truyền (plasmid của vi khuẩn hoặc virus) và tách phân tử DNA chứa gen cần chuyển từ tế bào cho.",
+        "Bước 2: Tạo DNA tái tổ hợp bằng cách dùng cùng một loại enzyme cắt giới hạn (restrictase) để cắt mở vòng thể truyền và cắt lấy gen đích (tạo đầu dính so le), sau đó dùng enzyme nối (DNA ligase) để hàn gắn gen đích vào thể truyền.",
+        "Bước 3: Đưa DNA tái tổ hợp vào tế bào nhận (thường dùng vi khuẩn E. coli, nấm men hoặc tế bào thực vật).",
+        "Bước 4: Phân lập và nuôi cấy dòng tế bào nhận chứa DNA tái tổ hợp để sản xuất protein mong muốn."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Sinh vật GMO",
+      "badgeColor": "cyan",
+      "title": "Thành tựu sinh vật biến đổi gen (GMO)",
+      "content": "Các thành tựu đột phá của công nghệ gen phục vụ y tế, nông nghiệp và đời sống:",
+      "bulletPoints": [
+        "Trong y dược: Chuyển gen mã hóa insulin người vào vi khuẩn E. coli để sản xuất insulin sinh học trị bệnh tiểu đường với giá thành rẻ; sản xuất hormone tăng trưởng GH, vaccine viêm gan B tái tổ hợp.",
+        "Trong nông nghiệp - Cây trồng: Giống lúa gạo vàng (Golden Rice) mang gen tổng hợp beta-carotene (tiền chất vitamin A) chống bệnh mù lòa; Cây ngô và cây bông chuyển gen Bt kháng sâu đục thân giúp giảm phun hóa chất bảo vệ thực vật.",
+        "Trong chăn nuôi: Chuyển gen hormone sinh trưởng giúp cá hồi lớn nhanh quanh năm; dê chuyển gen tiết protein tơ nhện trong sữa phục vụ công nghiệp vật liệu y sinh."
+      ],
+      "callout": "Sinh vật chuyển gen (GMO) là những sinh vật mà hệ gen của chúng đã được con người chủ động can thiệp biến đổi bằng kĩ thuật di truyền!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Trong quy trình tạo DNA tái tổ hợp của công nghệ gen, hai loại enzyme nào đóng vai trò lần lượt là 'kéo cắt' và 'keo dán' phân tử DNA?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Enzyme cắt giới hạn (restrictase) và enzyme nối (DNA ligase)",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Enzyme amylase và enzyme pepsin",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Enzyme DNA polymerase và enzyme RNA polymerase",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Enzyme tháo xoắn helicase và enzyme catalase",
+        "correct": false
+      }
+    ],
+    "explanation": "Trong kĩ thuật di truyền: Enzyme cắt giới hạn (restrictase) dùng để cắt mở thể truyền và cắt lấy gen đích tạo các đầu so le; Enzyme nối (DNA ligase) đóng vai trò hàn gắn các liên kết phosphodiester tạo thành phân tử DNA tái tổ hợp hoàn chỉnh."
+  }
+}

@@ -2,148 +2,341 @@
   {
     "id": "g8-b08-mcq-001",
     "lessonId": "g8-b08",
-    "skillIds": ["acid-properties"],
+    "skillIds": [
+      "acid-properties"
+    ],
     "difficulty": 1,
     "prompt": "Dung dịch axit làm giấy quỳ tím chuyển sang màu gì?",
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "a", "label": "Màu đỏ (hoặc hồng)" },
-        { "id": "b", "label": "Màu xanh lam" },
-        { "id": "c", "label": "Màu tím không đổi" },
-        { "id": "d", "label": "Mất màu hoàn toàn" }
+        {
+          "id": "a",
+          "label": "Màu đỏ (hoặc hồng)"
+        },
+        {
+          "id": "b",
+          "label": "Màu xanh lam"
+        },
+        {
+          "id": "c",
+          "label": "Màu tím không đổi"
+        },
+        {
+          "id": "d",
+          "label": "Mất màu hoàn toàn"
+        }
       ],
       "correctId": "a"
     },
     "hints": [
-      { "level": 1, "text": "Axit và Bazơ làm quỳ tím đổi thành 2 màu đối lập: đỏ và xanh." },
-      { "level": 2, "text": "Axit làm quỳ tím hóa đỏ; bazơ (kiềm) làm quỳ tím hóa xanh." }
+      {
+        "level": 1,
+        "text": "Axit và Bazơ làm quỳ tím đổi thành 2 màu đối lập: đỏ và xanh."
+      },
+      {
+        "level": 2,
+        "text": "Axit làm quỳ tím hóa đỏ; bazơ (kiềm) làm quỳ tím hóa xanh."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Nhận dạng", "body": "Tác dụng của dung dịch axit lên chất chỉ thị màu." },
-      { "kind": "knowledge", "title": "Chỉ thị màu", "body": "Quỳ tím là chất chỉ thị: gặp môi trường axit (pH < 7) chuyển sang màu đỏ." },
-      { "kind": "answer", "title": "Kết luận", "body": "Dung dịch axit làm quỳ tím hóa **đỏ**." }
+      {
+        "kind": "identify",
+        "title": "Nhận dạng",
+        "body": "Tác dụng của dung dịch axit lên chất chỉ thị màu."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Chỉ thị màu",
+        "body": "Quỳ tím là chất chỉ thị: gặp môi trường axit (pH < 7) chuyển sang màu đỏ."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Dung dịch axit làm quỳ tím hóa **đỏ**."
+      }
     ],
     "finalSolution": "Dung dịch axit làm giấy quỳ tím chuyển sang **màu đỏ**.",
     "commonMistakes": [
-      { "id": "confused-with-base", "message": "Màu xanh là của dung dịch bazơ (kiềm), axit làm hóa đỏ." }
+      {
+        "id": "confused-with-base",
+        "message": "Màu xanh là của dung dịch bazơ (kiềm), axit làm hóa đỏ."
+      }
     ]
   },
   {
     "id": "g8-b08-mcq-002",
     "lessonId": "g8-b08",
-    "skillIds": ["acid-properties"],
+    "skillIds": [
+      "acid-properties"
+    ],
     "difficulty": 1,
     "prompt": "Kim loại nào sau đây KHÔNG tác dụng được với dung dịch axit [[HCl]] loãng?",
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "a", "label": "Đồng (Cu)" },
-        { "id": "b", "label": "Kẽm (Zn)" },
-        { "id": "c", "label": "Sắt (Fe)" },
-        { "id": "d", "label": "Nhôm (Al)" }
+        {
+          "id": "a",
+          "label": "Kẽm (Zn)"
+        },
+        {
+          "id": "b",
+          "label": "Sắt (Fe)"
+        },
+        {
+          "id": "c",
+          "label": "Đồng (Cu)"
+        },
+        {
+          "id": "d",
+          "label": "Nhôm (Al)"
+        }
       ],
-      "correctId": "a"
+      "correctId": "c"
     },
     "hints": [
-      { "level": 1, "text": "Chỉ những kim loại đứng trước hiđro (H) trong dãy hoạt động hóa học mới tác dụng với HCl/H2SO4 loãng." },
-      { "level": 2, "text": "Trong dãy: ... Al, Zn, Fe, Pb, (H), Cu, Ag, Au... Đồng (Cu) đứng sau H nên không phản ứng." }
+      {
+        "level": 1,
+        "text": "Chỉ những kim loại đứng trước hiđro (H) trong dãy hoạt động hóa học mới tác dụng với HCl/H2SO4 loãng."
+      },
+      {
+        "level": 2,
+        "text": "Trong dãy: ... Al, Zn, Fe, Pb, (H), Cu, Ag, Au... Đồng (Cu) đứng sau H nên không phản ứng."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Đọc yêu cầu", "body": "Tìm kim loại không đẩy được H ra khỏi axit HCl." },
-      { "kind": "knowledge", "title": "Dãy hoạt động hóa học", "body": "Kim loại đứng sau H (Cu, Ag, Au) không tác dụng với dung dịch HCl/H2SO4 loãng." },
-      { "kind": "answer", "title": "Kết luận", "body": "**Đồng (Cu)** không tác dụng với axit HCl loãng." }
+      {
+        "kind": "identify",
+        "title": "Đọc yêu cầu",
+        "body": "Tìm kim loại không đẩy được H ra khỏi axit HCl."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Dãy hoạt động hóa học",
+        "body": "Kim loại đứng sau H (Cu, Ag, Au) không tác dụng với dung dịch HCl/H2SO4 loãng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "**Đồng (Cu)** không tác dụng với axit HCl loãng."
+      }
     ],
     "finalSolution": "**Đồng (Cu)** đứng sau H trong dãy hoạt động nên không tác dụng với dung dịch HCl loãng.",
     "commonMistakes": [
-      { "id": "picked-fe", "message": "Sắt (Fe) đứng trước H nên phản ứng bình thường: Fe + 2HCl -> FeCl2 + H2." }
+      {
+        "id": "picked-fe",
+        "message": "Sắt (Fe) đứng trước H nên phản ứng bình thường: Fe + 2HCl -> FeCl2 + H2."
+      }
     ]
   },
   {
     "id": "g8-b08-eq-003",
     "lessonId": "g8-b08",
-    "skillIds": ["acid-properties"],
+    "skillIds": [
+      "acid-properties"
+    ],
     "difficulty": 2,
     "prompt": "Hoàn thành phương trình phản ứng trung hòa giữa axit sunfuric và natri hiđroxit: [[H2SO4]] + [[NaOH]] -> [[Na2SO4]] + [[H2O]].",
     "answer": {
       "kind": "equation",
       "mode": "fill-coefficients",
-      "reactants": ["H2SO4", "NaOH"],
-      "products": ["Na2SO4", "H2O"],
-      "coefficients": [1, 2, 1, 2]
+      "reactants": [
+        "H2SO4",
+        "NaOH"
+      ],
+      "products": [
+        "Na2SO4",
+        "H2O"
+      ],
+      "coefficients": [
+        1,
+        2,
+        1,
+        2
+      ]
     },
     "hints": [
-      { "level": 1, "text": "Vế phải có muối Na2SO4 gồm 2 nguyên tử Na, do đó vế trái cần 2 phân tử NaOH." },
-      { "level": 2, "text": "H2SO4 + 2NaOH -> Na2SO4 + 2H2O. Tỉ lệ hệ số: 1, 2, 1, 2." }
+      {
+        "level": 1,
+        "text": "Vế phải có muối Na2SO4 gồm 2 nguyên tử Na, do đó vế trái cần 2 phân tử NaOH."
+      },
+      {
+        "level": 2,
+        "text": "H2SO4 + 2NaOH -> Na2SO4 + 2H2O. Tỉ lệ hệ số: 1, 2, 1, 2."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Phản ứng trung hòa", "body": "Axit + Bazơ -> Muối + Nước." },
-      { "kind": "compute", "title": "Cân bằng Na và H", "body": "Vế phải có 2 Na => đặt hệ số 2 trước NaOH. Tổng số H vế trái: 2 (trong H2SO4) + 2 (trong 2NaOH) = 4 => đặt hệ số 2 trước H2O." },
-      { "kind": "compute", "title": "Kiểm tra O", "body": "Vế trái: 4 + 2 = 6 O; vế phải: 4 + 2 = 6 O. Đã cân bằng." },
-      { "kind": "answer", "title": "Kết luận", "body": "Phương trình hoàn chỉnh: **H2SO4 + 2NaOH -> Na2SO4 + 2H2O**." }
+      {
+        "kind": "identify",
+        "title": "Phản ứng trung hòa",
+        "body": "Axit + Bazơ -> Muối + Nước."
+      },
+      {
+        "kind": "compute",
+        "title": "Cân bằng Na và H",
+        "body": "Vế phải có 2 Na => đặt hệ số 2 trước NaOH. Tổng số H vế trái: 2 (trong H2SO4) + 2 (trong 2NaOH) = 4 => đặt hệ số 2 trước H2O."
+      },
+      {
+        "kind": "compute",
+        "title": "Kiểm tra O",
+        "body": "Vế trái: 4 + 2 = 6 O; vế phải: 4 + 2 = 6 O. Đã cân bằng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Phương trình hoàn chỉnh: **H2SO4 + 2NaOH -> Na2SO4 + 2H2O**."
+      }
     ],
     "finalSolution": "**H2SO4 + 2NaOH -> Na2SO4 + 2H2O**",
     "commonMistakes": [
-      { "id": "forgot-water-coefficient", "message": "Quên đặt hệ số 2 cho nước (H2O)." }
+      {
+        "id": "forgot-water-coefficient",
+        "message": "Quên đặt hệ số 2 cho nước (H2O)."
+      }
     ]
   },
   {
     "id": "g8-b08-tf-004",
     "lessonId": "g8-b08",
-    "skillIds": ["acid-properties"],
+    "skillIds": [
+      "acid-properties"
+    ],
     "difficulty": 1,
     "prompt": "Đánh giá tính ĐÚNG / SAI của các nhận định sau về an toàn khi sử dụng axit:",
     "answer": {
       "kind": "true-false",
       "statements": [
-        { "id": "s1", "text": "Khi pha loãng H2SO4 đặc, tuyệt đối không được đổ nước vào axit.", "correct": true },
-        { "id": "s2", "text": "Nếu bị axit dính vào da, cần rửa ngay dưới vòi nước sạch nhiều lần.", "correct": true },
-        { "id": "s3", "text": "Axit clohiđric (HCl) là một axit hữu cơ có trong giấm ăn.", "correct": false }
+        {
+          "id": "s1",
+          "text": "Khi pha loãng H2SO4 đặc, tuyệt đối không được đổ nước vào axit.",
+          "correct": true
+        },
+        {
+          "id": "s2",
+          "text": "Nếu bị axit dính vào da, cần rửa ngay dưới vòi nước sạch nhiều lần.",
+          "correct": true
+        },
+        {
+          "id": "s3",
+          "text": "Axit clohiđric (HCl) là một axit hữu cơ có trong giấm ăn.",
+          "correct": false
+        }
       ]
     },
     "hints": [
-      { "level": 1, "text": "Axit trong giấm ăn là axit axetic (CH3COOH), còn HCl là axit vô cơ mạnh." },
-      { "level": 2, "text": "Quy tắc an toàn pha axit: rót từ từ axit vào nước, không làm ngược lại." }
+      {
+        "level": 1,
+        "text": "Axit trong giấm ăn là axit axetic (CH3COOH), còn HCl là axit vô cơ mạnh."
+      },
+      {
+        "level": 2,
+        "text": "Quy tắc an toàn pha axit: rót từ từ axit vào nước, không làm ngược lại."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Xét từng nhận định an toàn", "body": "Kiểm tra quy tắc thí nghiệm an toàn với hóa chất ăn mòn." },
-      { "kind": "knowledge", "title": "Kiến thức an toàn", "body": "s1: Đúng (nước vào axit gây sôi cục bộ bắn axit). s2: Đúng (sơ cứu rửa trôi axit dưới vòi nước). s3: Sai (giấm ăn là CH3COOH, HCl là axit clohiđric trong dịch vị dạ dày)." },
-      { "kind": "answer", "title": "Kết luận", "body": "s1: Đúng, s2: Đúng, s3: Sai." }
+      {
+        "kind": "identify",
+        "title": "Xét từng nhận định an toàn",
+        "body": "Kiểm tra quy tắc thí nghiệm an toàn với hóa chất ăn mòn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức an toàn",
+        "body": "s1: Đúng (nước vào axit gây sôi cục bộ bắn axit). s2: Đúng (sơ cứu rửa trôi axit dưới vòi nước). s3: Sai (giấm ăn là CH3COOH, HCl là axit clohiđric trong dịch vị dạ dày)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "s1: Đúng, s2: Đúng, s3: Sai."
+      }
     ],
     "finalSolution": "s1: Đúng, s2: Đúng, s3: Sai (giấm ăn chứa CH3COOH).",
     "commonMistakes": [
-      { "id": "confused-acids", "message": "Nhầm HCl là axit trong giấm ăn (giấm ăn là axit axetic CH3COOH)." }
+      {
+        "id": "confused-acids",
+        "message": "Nhầm HCl là axit trong giấm ăn (giấm ăn là axit axetic CH3COOH)."
+      }
     ]
   },
   {
     "id": "g8-b08-sort-005",
     "lessonId": "g8-b08",
-    "skillIds": ["acid-properties"],
+    "skillIds": [
+      "acid-properties"
+    ],
     "difficulty": 1,
     "prompt": "Phân loại các chất sau vào hai nhóm: Acid hay Hợp chất khác.",
     "answer": {
       "kind": "sort",
       "buckets": [
-        { "id": "acid", "label": "Acid" },
-        { "id": "other", "label": "Hợp chất khác" }
+        {
+          "id": "acid",
+          "label": "Acid"
+        },
+        {
+          "id": "other",
+          "label": "Hợp chất khác"
+        }
       ],
       "items": [
-        { "id": "hcl", "label": "Hydrochloric acid (HCl)", "bucketId": "acid" },
-        { "id": "h2so4", "label": "Sulfuric acid (H2SO4)", "bucketId": "acid" },
-        { "id": "hno3", "label": "Nitric acid (HNO3)", "bucketId": "acid" },
-        { "id": "naoh", "label": "Sodium hydroxide (NaOH)", "bucketId": "other" },
-        { "id": "cao", "label": "Calcium oxide (CaO)", "bucketId": "other" },
-        { "id": "nacl", "label": "Sodium chloride (NaCl)", "bucketId": "other" }
+        {
+          "id": "hcl",
+          "label": "Hydrochloric acid (HCl)",
+          "bucketId": "acid"
+        },
+        {
+          "id": "h2so4",
+          "label": "Sulfuric acid (H2SO4)",
+          "bucketId": "acid"
+        },
+        {
+          "id": "hno3",
+          "label": "Nitric acid (HNO3)",
+          "bucketId": "acid"
+        },
+        {
+          "id": "naoh",
+          "label": "Sodium hydroxide (NaOH)",
+          "bucketId": "other"
+        },
+        {
+          "id": "cao",
+          "label": "Calcium oxide (CaO)",
+          "bucketId": "other"
+        },
+        {
+          "id": "nacl",
+          "label": "Sodium chloride (NaCl)",
+          "bucketId": "other"
+        }
       ]
     },
     "hints": [
-      { "level": 1, "text": "Phân tử acid luôn có nguyên tử H liên kết với gốc acid." },
-      { "level": 2, "text": "HCl, H2SO4, HNO3 là các acid; NaOH là base, CaO là oxide, NaCl là muối." }
+      {
+        "level": 1,
+        "text": "Phân tử acid luôn có nguyên tử H liên kết với gốc acid."
+      },
+      {
+        "level": 2,
+        "text": "HCl, H2SO4, HNO3 là các acid; NaOH là base, CaO là oxide, NaCl là muối."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Đặc điểm nhận biết", "body": "Acid có nguyên tử H đứng đầu CTHH vô cơ." },
-      { "kind": "knowledge", "title": "Phân loại", "body": "Acid: HCl, H2SO4, HNO3. Hợp chất khác: NaOH (base), CaO (oxide), NaCl (muối)." },
-      { "kind": "answer", "title": "Kết luận", "body": "Đã phân loại đúng 6 chất vào 2 nhóm." }
+      {
+        "kind": "identify",
+        "title": "Đặc điểm nhận biết",
+        "body": "Acid có nguyên tử H đứng đầu CTHH vô cơ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân loại",
+        "body": "Acid: HCl, H2SO4, HNO3. Hợp chất khác: NaOH (base), CaO (oxide), NaCl (muối)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đã phân loại đúng 6 chất vào 2 nhóm."
+      }
     ],
     "finalSolution": "Acid: **HCl, H2SO4, HNO3** · Hợp chất khác: **NaOH, CaO, NaCl**.",
     "commonMistakes": []
@@ -151,26 +344,58 @@
   {
     "id": "g8-b08-match-006",
     "lessonId": "g8-b08",
-    "skillIds": ["acid-properties"],
+    "skillIds": [
+      "acid-properties"
+    ],
     "difficulty": 2,
     "prompt": "Ghép tên acid với tên và hóa trị của gốc acid tương ứng.",
     "answer": {
       "kind": "match",
       "pairs": [
-        { "left": "HCl (Hydrochloric acid)", "right": "Gốc -Cl (chloride, hóa trị I)" },
-        { "left": "H2SO4 (Sulfuric acid)", "right": "Gốc =SO4 (sulfate, hóa trị II)" },
-        { "left": "HNO3 (Nitric acid)", "right": "Gốc -NO3 (nitrate, hóa trị I)" },
-        { "left": "H3PO4 (Phosphoric acid)", "right": "Gốc ≡PO4 (phosphate, hóa trị III)" }
+        {
+          "left": "HCl (Hydrochloric acid)",
+          "right": "Gốc -Cl (chloride, hóa trị I)"
+        },
+        {
+          "left": "H2SO4 (Sulfuric acid)",
+          "right": "Gốc =SO4 (sulfate, hóa trị II)"
+        },
+        {
+          "left": "HNO3 (Nitric acid)",
+          "right": "Gốc -NO3 (nitrate, hóa trị I)"
+        },
+        {
+          "left": "H3PO4 (Phosphoric acid)",
+          "right": "Gốc ≡PO4 (phosphate, hóa trị III)"
+        }
       ]
     },
     "hints": [
-      { "level": 1, "text": "Hóa trị gốc acid bằng số nguyên tử H trong phân tử acid đó." },
-      { "level": 2, "text": "HCl có 1 H => hóa trị I. H2SO4 có 2 H => hóa trị II. H3PO4 có 3 H => hóa trị III." }
+      {
+        "level": 1,
+        "text": "Hóa trị gốc acid bằng số nguyên tử H trong phân tử acid đó."
+      },
+      {
+        "level": 2,
+        "text": "HCl có 1 H => hóa trị I. H2SO4 có 2 H => hóa trị II. H3PO4 có 3 H => hóa trị III."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Quy tắc hóa trị gốc acid", "body": "Hóa trị gốc acid = số nguyên tử Hydrogen thay thế." },
-      { "kind": "knowledge", "title": "Gốc acid", "body": "Cl (I), SO4 (II), NO3 (I), PO4 (III)." },
-      { "kind": "answer", "title": "Kết luận", "body": "Ghép đúng từng acid với gốc acid và hóa trị." }
+      {
+        "kind": "identify",
+        "title": "Quy tắc hóa trị gốc acid",
+        "body": "Hóa trị gốc acid = số nguyên tử Hydrogen thay thế."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Gốc acid",
+        "body": "Cl (I), SO4 (II), NO3 (I), PO4 (III)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Ghép đúng từng acid với gốc acid và hóa trị."
+      }
     ],
     "finalSolution": "HCl ↔ Gốc -Cl (I) · H2SO4 ↔ Gốc =SO4 (II) · HNO3 ↔ Gốc -NO3 (I) · H3PO4 ↔ Gốc ≡PO4 (III).",
     "commonMistakes": []

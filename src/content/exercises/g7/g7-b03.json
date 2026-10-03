@@ -2,177 +2,404 @@
   {
     "id": "g7-b03-mcq-001",
     "lessonId": "g7-b03",
-    "skillIds": ["element-symbols"],
+    "skillIds": [
+      "element-symbols"
+    ],
     "difficulty": 1,
     "prompt": "Kí hiệu hóa học của nguyên tố Natri (Sodium) là gì?",
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-1", "label": "Na" },
-        { "id": "opt-2", "label": "N" },
-        { "id": "opt-3", "label": "K" },
-        { "id": "opt-4", "label": "Ne" }
+        {
+          "id": "opt-1",
+          "label": "Na"
+        },
+        {
+          "id": "opt-2",
+          "label": "N"
+        },
+        {
+          "id": "opt-3",
+          "label": "K"
+        },
+        {
+          "id": "opt-4",
+          "label": "Ne"
+        }
       ],
       "correctId": "opt-1"
     },
     "hints": [
-      { "level": 1, "text": "Kí hiệu gồm 2 chữ cái, chữ cái đầu viết hoa, chữ cái thứ hai viết thường." },
-      { "level": 2, "text": "N là Nitơ (Nitrogen), K là Kali (Potassium), Ne là Neon." }
+      {
+        "level": 1,
+        "text": "Kí hiệu gồm 2 chữ cái, chữ cái đầu viết hoa, chữ cái thứ hai viết thường."
+      },
+      {
+        "level": 2,
+        "text": "N là Nitơ (Nitrogen), K là Kali (Potassium), Ne là Neon."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Đọc yêu cầu", "body": "Tìm kí hiệu hóa học của nguyên tố Sodium (Natri)." },
-      { "kind": "knowledge", "title": "Nguồn gốc tên gọi", "body": "Natri có tên IUPAC là Sodium, nguồn gốc Latin là Natrium nên kí hiệu là Na." },
-      { "kind": "answer", "title": "Kết luận", "body": "Kí hiệu hóa học của Sodium là Na." }
+      {
+        "kind": "identify",
+        "title": "Đọc yêu cầu",
+        "body": "Tìm kí hiệu hóa học của nguyên tố Sodium (Natri)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Nguồn gốc tên gọi",
+        "body": "Natri có tên IUPAC là Sodium, nguồn gốc Latin là Natrium nên kí hiệu là Na."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Kí hiệu hóa học của Sodium là Na."
+      }
     ],
     "commonMistakes": [
-      { "id": "mistake-n", "message": "N là kí hiệu của Nitrogen (Nitơ), không phải Natri." },
-      { "id": "mistake-k", "message": "K là kí hiệu của Potassium (Kali)." }
+      {
+        "id": "mistake-n",
+        "message": "N là kí hiệu của Nitrogen (Nitơ), không phải Natri."
+      },
+      {
+        "id": "mistake-k",
+        "message": "K là kí hiệu của Potassium (Kali)."
+      }
     ],
     "finalSolution": "Na"
   },
   {
     "id": "g7-b03-mcq-002",
     "lessonId": "g7-b03",
-    "skillIds": ["element-symbols"],
+    "skillIds": [
+      "element-symbols"
+    ],
     "difficulty": 1,
     "prompt": "Nguyên tố nào sau đây là nguyên tố phi kim và chiếm khoảng 21% thể tích không khí?",
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-1", "label": "Oxygen (Oxi)" },
-        { "id": "opt-2", "label": "Nitrogen (Nitơ)" },
-        { "id": "opt-3", "label": "Hydrogen (Hiđro)" },
-        { "id": "opt-4", "label": "Carbon (Cacbon)" }
+        {
+          "id": "opt-1",
+          "label": "Nitrogen (Nitơ)"
+        },
+        {
+          "id": "opt-2",
+          "label": "Hydrogen (Hiđro)"
+        },
+        {
+          "id": "opt-3",
+          "label": "Oxygen (Oxi)"
+        },
+        {
+          "id": "opt-4",
+          "label": "Carbon (Cacbon)"
+        }
       ],
-      "correctId": "opt-1"
+      "correctId": "opt-3"
     },
     "hints": [
-      { "level": 1, "text": "Khí này duy trì sự sống và sự cháy của các chất." },
-      { "level": 2, "text": "Khí chiếm 78% là Nitrogen, khí chiếm 21% là Oxygen." }
+      {
+        "level": 1,
+        "text": "Khí này duy trì sự sống và sự cháy của các chất."
+      },
+      {
+        "level": 2,
+        "text": "Khí chiếm 78% là Nitrogen, khí chiếm 21% là Oxygen."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Nhận diện", "body": "Xác định thành phần phần trăm thể tích các khí trong khí quyển." },
-      { "kind": "knowledge", "title": "Thành phần không khí", "body": "Không khí gồm ~78% Nitrogen, ~21% Oxygen, và ~1% các khí khác." },
-      { "kind": "answer", "title": "Kết luận", "body": "Nguyên tố cần tìm là Oxygen (O)." }
+      {
+        "kind": "identify",
+        "title": "Nhận diện",
+        "body": "Xác định thành phần phần trăm thể tích các khí trong khí quyển."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Thành phần không khí",
+        "body": "Không khí gồm ~78% Nitrogen, ~21% Oxygen, và ~1% các khí khác."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nguyên tố cần tìm là Oxygen (O)."
+      }
     ],
     "commonMistakes": [
-      { "id": "mistake-nitrogen", "message": "Nitrogen chiếm 78% thể tích không khí, Oxygen mới chiếm 21%." }
+      {
+        "id": "mistake-nitrogen",
+        "message": "Nitrogen chiếm 78% thể tích không khí, Oxygen mới chiếm 21%."
+      }
     ],
     "finalSolution": "Oxygen (Oxi)"
   },
   {
     "id": "g7-b03-num-001",
     "lessonId": "g7-b03",
-    "skillIds": ["atomic-mass-calc"],
+    "skillIds": [
+      "atomic-mass-calc"
+    ],
     "difficulty": 1,
     "prompt": "Biết khối lượng nguyên tử Carbon là 12 amu, Oxygen là 16 amu. Hãy tính khối lượng phân tử khí Carbon dioxide ([[CO2]]) theo đơn vị amu.",
     "given": [
-      { "label": "M(C)", "value": "12", "unit": "amu" },
-      { "label": "M(O)", "value": "16", "unit": "amu" }
+      {
+        "label": "M(C)",
+        "value": "12",
+        "unit": "amu"
+      },
+      {
+        "label": "M(O)",
+        "value": "16",
+        "unit": "amu"
+      }
     ],
-    "find": { "label": "Khối lượng phân tử CO2", "unit": "amu" },
+    "find": {
+      "label": "Khối lượng phân tử CO2",
+      "unit": "amu"
+    },
     "answer": {
       "kind": "number",
       "value": 44,
       "unit": "amu",
       "decimals": 0,
-      "tolerance": { "abs": 0.1 }
+      "tolerance": {
+        "abs": 0.1
+      }
     },
     "hints": [
-      { "level": 1, "text": "Phân tử CO2 gồm 1 nguyên tử Carbon và 2 nguyên tử Oxygen." },
-      { "level": 2, "text": "Công thức tính: M(CO2) = 1 × M(C) + 2 × M(O) = 12 + 2 × 16." }
+      {
+        "level": 1,
+        "text": "Phân tử CO2 gồm 1 nguyên tử Carbon và 2 nguyên tử Oxygen."
+      },
+      {
+        "level": 2,
+        "text": "Công thức tính: M(CO2) = 1 × M(C) + 2 × M(O) = 12 + 2 × 16."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Đếm số lượng nguyên tử", "body": "Phân tử CO2 có 1 nguyên tử C và 2 nguyên tử O." },
-      { "kind": "compute", "title": "Tính tổng khối lượng", "body": "M = 12 + 16 × 2 = 12 + 32 = 44 amu." },
-      { "kind": "answer", "title": "Kết luận", "body": "Khối lượng phân tử CO2 là 44 amu." }
+      {
+        "kind": "identify",
+        "title": "Đếm số lượng nguyên tử",
+        "body": "Phân tử CO2 có 1 nguyên tử C và 2 nguyên tử O."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính tổng khối lượng",
+        "body": "M = 12 + 16 × 2 = 12 + 32 = 44 amu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khối lượng phân tử CO2 là 44 amu."
+      }
     ],
     "commonMistakes": [
-      { "id": "mistake-no-multiply", "message": "Quên nhân 2 cho Oxygen (tính 12 + 16 = 28 là phân tử CO)." }
+      {
+        "id": "mistake-no-multiply",
+        "message": "Quên nhân 2 cho Oxygen (tính 12 + 16 = 28 là phân tử CO)."
+      }
     ],
     "finalSolution": "44"
   },
   {
     "id": "g7-b03-tf-001",
     "lessonId": "g7-b03",
-    "skillIds": ["element-classification"],
+    "skillIds": [
+      "element-classification"
+    ],
     "difficulty": 2,
     "prompt": "Đánh giá tính đúng/sai của các nhận định về kim loại và phi kim sau đây:",
     "answer": {
       "kind": "true-false",
       "statements": [
-        { "id": "s1", "text": "Hầu hết các kim loại đều dẫn điện và dẫn nhiệt tốt.", "correct": true },
-        { "id": "s2", "text": "Ở điều kiện thường, tất cả các kim loại đều ở thể rắn.", "correct": false },
-        { "id": "s3", "text": "Kí hiệu hóa học của nguyên tố Sắt (Iron) là Fe.", "correct": true },
-        { "id": "s4", "text": "Hydrogen là kim loại nhẹ nhất trong bảng tuần hoàn.", "correct": false }
+        {
+          "id": "s1",
+          "text": "Hầu hết các kim loại đều dẫn điện và dẫn nhiệt tốt.",
+          "correct": true
+        },
+        {
+          "id": "s2",
+          "text": "Ở điều kiện thường, tất cả các kim loại đều ở thể rắn.",
+          "correct": false
+        },
+        {
+          "id": "s3",
+          "text": "Kí hiệu hóa học của nguyên tố Sắt (Iron) là Fe.",
+          "correct": true
+        },
+        {
+          "id": "s4",
+          "text": "Hydrogen là kim loại nhẹ nhất trong bảng tuần hoàn.",
+          "correct": false
+        }
       ]
     },
     "hints": [
-      { "level": 1, "text": "Thủy ngân (Mercury - Hg) là kim loại ở thể lỏng ở nhiệt độ phòng." },
-      { "level": 2, "text": "Hydrogen (H) là một phi kim ở thể khí, không phải kim loại." }
+      {
+        "level": 1,
+        "text": "Thủy ngân (Mercury - Hg) là kim loại ở thể lỏng ở nhiệt độ phòng."
+      },
+      {
+        "level": 2,
+        "text": "Hydrogen (H) là một phi kim ở thể khí, không phải kim loại."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Kiểm tra tính chất kim loại", "body": "Kim loại nhìn chung có ánh kim, dẫn điện, dẫn nhiệt tốt." },
-      { "kind": "knowledge", "title": "Ngoại lệ thể chất", "body": "Thủy ngân (Hg) là kim loại ở thể lỏng ở nhiệt độ thường (s2 sai)." },
-      { "kind": "answer", "title": "Phân loại phi kim", "body": "Hydrogen là phi kim thể khí (s4 sai). s1 và s3 đúng." }
+      {
+        "kind": "identify",
+        "title": "Kiểm tra tính chất kim loại",
+        "body": "Kim loại nhìn chung có ánh kim, dẫn điện, dẫn nhiệt tốt."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Ngoại lệ thể chất",
+        "body": "Thủy ngân (Hg) là kim loại ở thể lỏng ở nhiệt độ thường (s2 sai)."
+      },
+      {
+        "kind": "answer",
+        "title": "Phân loại phi kim",
+        "body": "Hydrogen là phi kim thể khí (s4 sai). s1 và s3 đúng."
+      }
     ],
     "finalSolution": "s1: Đúng, s2: Sai, s3: Đúng, s4: Sai"
   },
   {
     "id": "g7-b03-match-001",
     "lessonId": "g7-b03",
-    "skillIds": ["element-symbols"],
+    "skillIds": [
+      "element-symbols"
+    ],
     "difficulty": 1,
     "prompt": "Ghép tên gọi nguyên tố với kí hiệu hóa học tương ứng:",
     "answer": {
       "kind": "match",
       "pairs": [
-        { "left": "Iron (Sắt)", "right": "Fe" },
-        { "left": "Copper (Đồng)", "right": "Cu" },
-        { "left": "Aluminium (Nhôm)", "right": "Al" },
-        { "left": "Calcium (Canxi)", "right": "Ca" }
+        {
+          "left": "Iron (Sắt)",
+          "right": "Fe"
+        },
+        {
+          "left": "Copper (Đồng)",
+          "right": "Cu"
+        },
+        {
+          "left": "Aluminium (Nhôm)",
+          "right": "Al"
+        },
+        {
+          "left": "Calcium (Canxi)",
+          "right": "Ca"
+        }
       ]
     },
     "hints": [
-      { "level": 1, "text": "Iron bắt nguồn từ Ferrum (Fe), Copper từ Cuprum (Cu)." },
-      { "level": 2, "text": "Aluminium có kí hiệu Al, Calcium có kí hiệu Ca." }
+      {
+        "level": 1,
+        "text": "Iron bắt nguồn từ Ferrum (Fe), Copper từ Cuprum (Cu)."
+      },
+      {
+        "level": 2,
+        "text": "Aluminium có kí hiệu Al, Calcium có kí hiệu Ca."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Xác định nguyên tố", "body": "4 nguyên tố kim loại thông dụng: Fe, Cu, Al, Ca." },
-      { "kind": "knowledge", "title": "Nguồn gốc kí hiệu", "body": "Kí hiệu lấy theo chữ cái đầu tên Latin." },
-      { "kind": "answer", "title": "Kết luận", "body": "Iron -> Fe; Copper -> Cu; Aluminium -> Al; Calcium -> Ca." }
+      {
+        "kind": "identify",
+        "title": "Xác định nguyên tố",
+        "body": "4 nguyên tố kim loại thông dụng: Fe, Cu, Al, Ca."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Nguồn gốc kí hiệu",
+        "body": "Kí hiệu lấy theo chữ cái đầu tên Latin."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Iron -> Fe; Copper -> Cu; Aluminium -> Al; Calcium -> Ca."
+      }
     ],
     "finalSolution": "Iron-Fe, Copper-Cu, Aluminium-Al, Calcium-Ca"
   },
   {
     "id": "g7-b03-sort-001",
     "lessonId": "g7-b03",
-    "skillIds": ["chemical-element"],
+    "skillIds": [
+      "chemical-element"
+    ],
     "difficulty": 1,
     "prompt": "Phân loại các nguyên tố sau vào nhóm Kim loại hoặc Phi kim.",
     "answer": {
       "kind": "sort",
       "buckets": [
-        { "id": "metal", "label": "Kim loại" },
-        { "id": "nonmetal", "label": "Phi kim" }
+        {
+          "id": "metal",
+          "label": "Kim loại"
+        },
+        {
+          "id": "nonmetal",
+          "label": "Phi kim"
+        }
       ],
       "items": [
-        { "id": "fe", "label": "Fe (Sắt)", "bucketId": "metal" },
-        { "id": "o", "label": "O (Oxygen)", "bucketId": "nonmetal" },
-        { "id": "al", "label": "Al (Nhôm)", "bucketId": "metal" },
-        { "id": "s", "label": "S (Lưu huỳnh)", "bucketId": "nonmetal" },
-        { "id": "cu", "label": "Cu (Đồng)", "bucketId": "metal" },
-        { "id": "cl", "label": "Cl (Chlorine)", "bucketId": "nonmetal" }
+        {
+          "id": "fe",
+          "label": "Fe (Sắt)",
+          "bucketId": "metal"
+        },
+        {
+          "id": "o",
+          "label": "O (Oxygen)",
+          "bucketId": "nonmetal"
+        },
+        {
+          "id": "al",
+          "label": "Al (Nhôm)",
+          "bucketId": "metal"
+        },
+        {
+          "id": "s",
+          "label": "S (Lưu huỳnh)",
+          "bucketId": "nonmetal"
+        },
+        {
+          "id": "cu",
+          "label": "Cu (Đồng)",
+          "bucketId": "metal"
+        },
+        {
+          "id": "cl",
+          "label": "Cl (Chlorine)",
+          "bucketId": "nonmetal"
+        }
       ]
     },
     "hints": [
-      { "level": 1, "text": "Kim loại: Fe, Al, Cu. Phi kim: O, S, Cl." },
-      { "level": 2, "text": "Kim loại thường dẫn điện, dẻo, có ánh kim. Phi kim thường không dẫn điện (trừ graphite)." }
+      {
+        "level": 1,
+        "text": "Kim loại: Fe, Al, Cu. Phi kim: O, S, Cl."
+      },
+      {
+        "level": 2,
+        "text": "Kim loại thường dẫn điện, dẻo, có ánh kim. Phi kim thường không dẫn điện (trừ graphite)."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Phân loại", "body": "Tách 6 nguyên tố thành kim loại và phi kim." },
-      { "kind": "knowledge", "title": "Kiến thức", "body": "Fe (sắt), Al (nhôm), Cu (đồng) là kim loại. O, S, Cl là phi kim." },
-      { "kind": "answer", "title": "Kết quả", "body": "Kim loại: Fe, Al, Cu. Phi kim: O, S, Cl." }
+      {
+        "kind": "identify",
+        "title": "Phân loại",
+        "body": "Tách 6 nguyên tố thành kim loại và phi kim."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức",
+        "body": "Fe (sắt), Al (nhôm), Cu (đồng) là kim loại. O, S, Cl là phi kim."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết quả",
+        "body": "Kim loại: Fe, Al, Cu. Phi kim: O, S, Cl."
+      }
     ],
     "finalSolution": "Kim loại: Fe, Al, Cu. Phi kim: O, S, Cl.",
     "commonMistakes": []
@@ -180,66 +407,142 @@
   {
     "id": "g7-b03-tf-002",
     "lessonId": "g7-b03",
-    "skillIds": ["chemical-element"],
+    "skillIds": [
+      "chemical-element"
+    ],
     "difficulty": 1,
     "prompt": "Xác định các phát biểu về kí hiệu hóa học là Đúng hay Sai.",
     "answer": {
       "kind": "true-false",
       "statements": [
-        { "id": "s1", "text": "Kí hiệu hóa học gồm 1 hoặc 2 chữ cái, chữ cái đầu viết hoa.", "correct": true },
-        { "id": "s2", "text": "Kí hiệu của Potassium (Kali) là Po.", "correct": false },
-        { "id": "s3", "text": "Mỗi nguyên tố hóa học có một kí hiệu riêng, không trùng lặp.", "correct": true },
-        { "id": "s4", "text": "N là kí hiệu của nguyên tố Natri (Sodium).", "correct": false }
+        {
+          "id": "s1",
+          "text": "Kí hiệu hóa học gồm 1 hoặc 2 chữ cái, chữ cái đầu viết hoa.",
+          "correct": true
+        },
+        {
+          "id": "s2",
+          "text": "Kí hiệu của Potassium (Kali) là Po.",
+          "correct": false
+        },
+        {
+          "id": "s3",
+          "text": "Mỗi nguyên tố hóa học có một kí hiệu riêng, không trùng lặp.",
+          "correct": true
+        },
+        {
+          "id": "s4",
+          "text": "N là kí hiệu của nguyên tố Natri (Sodium).",
+          "correct": false
+        }
       ]
     },
     "hints": [
-      { "level": 1, "text": "Kali (Potassium) có kí hiệu K (từ Kalium), Po là Polonium." },
-      { "level": 2, "text": "N là Nitrogen (Nitơ). Natri có kí hiệu Na (từ Natrium)." }
+      {
+        "level": 1,
+        "text": "Kali (Potassium) có kí hiệu K (từ Kalium), Po là Polonium."
+      },
+      {
+        "level": 2,
+        "text": "N là Nitrogen (Nitơ). Natri có kí hiệu Na (từ Natrium)."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Phân tích", "body": "Xét từng phát biểu dựa trên quy tắc đặt kí hiệu." },
-      { "kind": "knowledge", "title": "Kiến thức", "body": "S1: Đúng. K = Potassium, Po = Polonium (S2 Sai). S3: Đúng. N = Nitrogen (S4 Sai)." },
-      { "kind": "answer", "title": "Kết quả", "body": "S1: Đúng, S2: Sai, S3: Đúng, S4: Sai." }
+      {
+        "kind": "identify",
+        "title": "Phân tích",
+        "body": "Xét từng phát biểu dựa trên quy tắc đặt kí hiệu."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức",
+        "body": "S1: Đúng. K = Potassium, Po = Polonium (S2 Sai). S3: Đúng. N = Nitrogen (S4 Sai)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết quả",
+        "body": "S1: Đúng, S2: Sai, S3: Đúng, S4: Sai."
+      }
     ],
     "finalSolution": "S1: Đúng (1-2 chữ cái). S2: Sai (Kali = K). S3: Đúng. S4: Sai (N = Nitrogen).",
     "commonMistakes": [
-      { "id": "k-vs-po", "message": "Kali (Potassium) có kí hiệu K từ tên Latin Kalium, không phải Po." }
+      {
+        "id": "k-vs-po",
+        "message": "Kali (Potassium) có kí hiệu K từ tên Latin Kalium, không phải Po."
+      }
     ]
   },
   {
     "id": "g7-b03-mcq-006",
     "lessonId": "g7-b03",
-    "skillIds": ["chemical-element"],
+    "skillIds": [
+      "chemical-element"
+    ],
     "difficulty": 2,
     "prompt": "Nguyên tố X có số hiệu nguyên tử Z = 20, thuộc nhóm IIA trong bảng tuần hoàn. X là nguyên tố nào?",
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "a", "label": "Calcium (Ca)" },
-        { "id": "b", "label": "Carbon (C)" },
-        { "id": "c", "label": "Chlorine (Cl)" },
-        { "id": "d", "label": "Chromium (Cr)" }
+        {
+          "id": "a",
+          "label": "Carbon (C)"
+        },
+        {
+          "id": "b",
+          "label": "Calcium (Ca)"
+        },
+        {
+          "id": "c",
+          "label": "Chlorine (Cl)"
+        },
+        {
+          "id": "d",
+          "label": "Chromium (Cr)"
+        }
       ],
-      "correctId": "a"
+      "correctId": "b"
     },
     "hints": [
-      { "level": 1, "text": "Z = 20 tức có 20 proton. Nhóm IIA là nhóm kim loại kiềm thổ." },
-      { "level": 2, "text": "Carbon có Z = 6, Chlorine có Z = 17, Chromium có Z = 24. Chỉ Ca có Z = 20." }
+      {
+        "level": 1,
+        "text": "Z = 20 tức có 20 proton. Nhóm IIA là nhóm kim loại kiềm thổ."
+      },
+      {
+        "level": 2,
+        "text": "Carbon có Z = 6, Chlorine có Z = 17, Chromium có Z = 24. Chỉ Ca có Z = 20."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Dữ kiện", "body": "Z = 20, nhóm IIA." },
-      { "kind": "knowledge", "title": "Tra bảng", "body": "Z = 20 → Calcium (Ca). Ca thuộc nhóm IIA (kim loại kiềm thổ)." },
-      { "kind": "answer", "title": "Kết luận", "body": "Nguyên tố X là Calcium (Ca)." }
+      {
+        "kind": "identify",
+        "title": "Dữ kiện",
+        "body": "Z = 20, nhóm IIA."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tra bảng",
+        "body": "Z = 20 → Calcium (Ca). Ca thuộc nhóm IIA (kim loại kiềm thổ)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nguyên tố X là Calcium (Ca)."
+      }
     ],
     "finalSolution": "Calcium (Ca) có Z = 20, thuộc nhóm IIA.",
     "commonMistakes": [
-      { "id": "confuse-c-ca", "message": "C (Carbon, Z=6) và Ca (Calcium, Z=20) là 2 nguyên tố khác nhau." }
+      {
+        "id": "confuse-c-ca",
+        "message": "C (Carbon, Z=6) và Ca (Calcium, Z=20) là 2 nguyên tố khác nhau."
+      }
     ]
   },
   {
     "id": "g7-b03-ordering-001",
     "lessonId": "g7-b03",
-    "skillIds": ["chemical-element"],
+    "skillIds": [
+      "chemical-element"
+    ],
     "difficulty": 2,
     "prompt": "Sắp xếp các nguyên tố sau theo thứ tự khối lượng nguyên tử tăng dần.",
     "answer": {
@@ -253,69 +556,160 @@
       ]
     },
     "hints": [
-      { "level": 1, "text": "H là nguyên tố nhẹ nhất, Fe là nguyên tố nặng nhất trong danh sách." },
-      { "level": 2, "text": "H(1) < C(12) < O(16) < Cl(35,5) < Fe(56)." }
+      {
+        "level": 1,
+        "text": "H là nguyên tố nhẹ nhất, Fe là nguyên tố nặng nhất trong danh sách."
+      },
+      {
+        "level": 2,
+        "text": "H(1) < C(12) < O(16) < Cl(35,5) < Fe(56)."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Yêu cầu", "body": "Sắp xếp 5 nguyên tố theo khối lượng nguyên tử tăng dần." },
-      { "kind": "knowledge", "title": "Khối lượng", "body": "H ≈ 1, C ≈ 12, O ≈ 16, Cl ≈ 35,5, Fe ≈ 56 amu." },
-      { "kind": "answer", "title": "Thứ tự", "body": "H → C → O → Cl → Fe." }
+      {
+        "kind": "identify",
+        "title": "Yêu cầu",
+        "body": "Sắp xếp 5 nguyên tố theo khối lượng nguyên tử tăng dần."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Khối lượng",
+        "body": "H ≈ 1, C ≈ 12, O ≈ 16, Cl ≈ 35,5, Fe ≈ 56 amu."
+      },
+      {
+        "kind": "answer",
+        "title": "Thứ tự",
+        "body": "H → C → O → Cl → Fe."
+      }
     ],
     "finalSolution": "H(1) < C(12) < O(16) < Cl(35,5) < Fe(56).",
     "commonMistakes": [
-      { "id": "confuse-z-and-mass", "message": "Z (số hiệu) và khối lượng nguyên tử khác nhau, nhưng thứ tự thường tương đồng." }
+      {
+        "id": "confuse-z-and-mass",
+        "message": "Z (số hiệu) và khối lượng nguyên tử khác nhau, nhưng thứ tự thường tương đồng."
+      }
     ]
   },
   {
     "id": "g7-b03-match-002",
     "lessonId": "g7-b03",
-    "skillIds": ["element-symbols"],
+    "skillIds": [
+      "element-symbols"
+    ],
     "difficulty": 1,
     "prompt": "Ghép đôi tên gọi quốc tế IUPAC của các nguyên tố với kí hiệu hóa học tương ứng.",
     "answer": {
       "kind": "match",
       "pairs": [
-        { "left": "Hydrogen", "right": "H" },
-        { "left": "Carbon", "right": "C" },
-        { "left": "Sodium (Natri)", "right": "Na" },
-        { "left": "Iron (Sắt)", "right": "Fe" },
-        { "left": "Calcium", "right": "Ca" },
-        { "left": "Oxygen", "right": "O" }
+        {
+          "left": "Hydrogen",
+          "right": "H"
+        },
+        {
+          "left": "Carbon",
+          "right": "C"
+        },
+        {
+          "left": "Sodium (Natri)",
+          "right": "Na"
+        },
+        {
+          "left": "Iron (Sắt)",
+          "right": "Fe"
+        },
+        {
+          "left": "Calcium",
+          "right": "Ca"
+        },
+        {
+          "left": "Oxygen",
+          "right": "O"
+        }
       ]
     },
     "hints": [
-      { "level": 1, "text": "Sodium có kí hiệu bắt nguồn từ Natrium (Na), Iron bắt nguồn từ Ferrum (Fe)." },
-      { "level": 2, "text": "Kí hiệu gồm 1 chữ cái in hoa hoặc 1 in hoa + 1 in thường." }
+      {
+        "level": 1,
+        "text": "Sodium có kí hiệu bắt nguồn từ Natrium (Na), Iron bắt nguồn từ Ferrum (Fe)."
+      },
+      {
+        "level": 2,
+        "text": "Kí hiệu gồm 1 chữ cái in hoa hoặc 1 in hoa + 1 in thường."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Nhận dạng nguyên tố", "body": "Đối chiếu tên gọi và kí hiệu quy ước quốc tế." },
-      { "kind": "knowledge", "title": "Kí hiệu hóa học", "body": "Hydrogen: H, Carbon: C, Sodium: Na, Iron: Fe, Calcium: Ca, Oxygen: O." },
-      { "kind": "answer", "title": "Kết luận", "body": "Ghép đúng từng cặp tên và kí hiệu." }
+      {
+        "kind": "identify",
+        "title": "Nhận dạng nguyên tố",
+        "body": "Đối chiếu tên gọi và kí hiệu quy ước quốc tế."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kí hiệu hóa học",
+        "body": "Hydrogen: H, Carbon: C, Sodium: Na, Iron: Fe, Calcium: Ca, Oxygen: O."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Ghép đúng từng cặp tên và kí hiệu."
+      }
     ],
     "finalSolution": "Hydrogen ↔ H · Carbon ↔ C · Sodium ↔ Na · Iron ↔ Fe · Calcium ↔ Ca · Oxygen ↔ O.",
     "commonMistakes": [
-      { "id": "confused-s-na", "message": "Sodium có kí hiệu Na (từ Natrium), còn S là Sulfur." }
+      {
+        "id": "confused-s-na",
+        "message": "Sodium có kí hiệu Na (từ Natrium), còn S là Sulfur."
+      }
     ]
   },
   {
     "id": "g7-b03-build-001",
     "lessonId": "g7-b03",
-    "skillIds": ["element-symbols"],
+    "skillIds": [
+      "element-symbols"
+    ],
     "difficulty": 1,
     "prompt": "Nhấn các mảnh ghép để tạo công thức hóa học của phân tử Nước (gồm 2 nguyên tử Hydrogen và 1 nguyên tử Oxygen).",
     "answer": {
       "kind": "formula-builder",
-      "tiles": ["H", "2", "O", "C", "3", "N"],
-      "accepted": ["H2O"]
+      "tiles": [
+        "H",
+        "2",
+        "O",
+        "C",
+        "3",
+        "N"
+      ],
+      "accepted": [
+        "H2O"
+      ]
     },
     "hints": [
-      { "level": 1, "text": "Phân tử nước có 2 nguyên tử H và 1 nguyên tử O." },
-      { "level": 2, "text": "Nhấn lần lượt: H → 2 → O để tạo công thức H2O." }
+      {
+        "level": 1,
+        "text": "Phân tử nước có 2 nguyên tử H và 1 nguyên tử O."
+      },
+      {
+        "level": 2,
+        "text": "Nhấn lần lượt: H → 2 → O để tạo công thức H2O."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Thành phần phân tử nước", "body": "Nước gồm 2 nguyên tử H liên kết với 1 nguyên tử O." },
-      { "kind": "knowledge", "title": "Cách viết CTHH", "body": "Chỉ số 2 đặt ngay sau kí hiệu H: H2O." },
-      { "kind": "answer", "title": "Kết luận", "body": "Công thức ghép đúng là **H2O**." }
+      {
+        "kind": "identify",
+        "title": "Thành phần phân tử nước",
+        "body": "Nước gồm 2 nguyên tử H liên kết với 1 nguyên tử O."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cách viết CTHH",
+        "body": "Chỉ số 2 đặt ngay sau kí hiệu H: H2O."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Công thức ghép đúng là **H2O**."
+      }
     ],
     "finalSolution": "Công thức hóa học của nước là **H2O**.",
     "commonMistakes": []
@@ -323,32 +717,82 @@
   {
     "id": "g7-b03-sort-002",
     "lessonId": "g7-b03",
-    "skillIds": ["element-symbols"],
+    "skillIds": [
+      "element-symbols"
+    ],
     "difficulty": 1,
     "prompt": "Phân loại các nguyên tố hóa học sau vào hai nhóm: Kim loại hay Phi kim.",
     "answer": {
       "kind": "sort",
       "buckets": [
-        { "id": "metal", "label": "Kim loại" },
-        { "id": "non-metal", "label": "Phi kim" }
+        {
+          "id": "metal",
+          "label": "Kim loại"
+        },
+        {
+          "id": "non-metal",
+          "label": "Phi kim"
+        }
       ],
       "items": [
-        { "id": "fe", "label": "Iron (Sắt - Fe)", "bucketId": "metal" },
-        { "id": "cu", "label": "Copper (Đồng - Cu)", "bucketId": "metal" },
-        { "id": "al", "label": "Aluminium (Nhôm - Al)", "bucketId": "metal" },
-        { "id": "o", "label": "Oxygen (O)", "bucketId": "non-metal" },
-        { "id": "c", "label": "Carbon (C)", "bucketId": "non-metal" },
-        { "id": "s", "label": "Sulfur (Lưu huỳnh - S)", "bucketId": "non-metal" }
+        {
+          "id": "fe",
+          "label": "Iron (Sắt - Fe)",
+          "bucketId": "metal"
+        },
+        {
+          "id": "cu",
+          "label": "Copper (Đồng - Cu)",
+          "bucketId": "metal"
+        },
+        {
+          "id": "al",
+          "label": "Aluminium (Nhôm - Al)",
+          "bucketId": "metal"
+        },
+        {
+          "id": "o",
+          "label": "Oxygen (O)",
+          "bucketId": "non-metal"
+        },
+        {
+          "id": "c",
+          "label": "Carbon (C)",
+          "bucketId": "non-metal"
+        },
+        {
+          "id": "s",
+          "label": "Sulfur (Lưu huỳnh - S)",
+          "bucketId": "non-metal"
+        }
       ]
     },
     "hints": [
-      { "level": 1, "text": "Kim loại dẫn điện, dẫn nhiệt tốt, có ánh kim (như sắt, đồng, nhôm)." },
-      { "level": 2, "text": "Khí oxi, than chì (carbon), lưu huỳnh là các phi kim." }
+      {
+        "level": 1,
+        "text": "Kim loại dẫn điện, dẫn nhiệt tốt, có ánh kim (như sắt, đồng, nhôm)."
+      },
+      {
+        "level": 2,
+        "text": "Khí oxi, than chì (carbon), lưu huỳnh là các phi kim."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Phân loại nguyên tố", "body": "Dựa vào tính chất vật lí và vị trí bảng tuần hoàn." },
-      { "kind": "knowledge", "title": "Đặc tính", "body": "Fe, Cu, Al là kim loại. O, C, S là phi kim." },
-      { "kind": "answer", "title": "Kết luận", "body": "Kim loại: Fe, Cu, Al · Phi kim: O, C, S." }
+      {
+        "kind": "identify",
+        "title": "Phân loại nguyên tố",
+        "body": "Dựa vào tính chất vật lí và vị trí bảng tuần hoàn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc tính",
+        "body": "Fe, Cu, Al là kim loại. O, C, S là phi kim."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Kim loại: Fe, Cu, Al · Phi kim: O, C, S."
+      }
     ],
     "finalSolution": "Kim loại: **Iron (Fe), Copper (Cu), Aluminium (Al)** · Phi kim: **Oxygen (O), Carbon (C), Sulfur (S)**.",
     "commonMistakes": []

@@ -1,0 +1,60 @@
+[
+  {
+    "id": "kb-bio-g8-oral-digestion",
+    "organ": "Khoang miệng",
+    "pH": "6.6 - 7.2 (trung tính đến kiềm nhẹ)",
+    "mechanicalDigestion": "Tiết nước bọt làm mềm thức ăn, dùng răng cắn xé và nghiền nhỏ, lưỡi đảo trộn và ép thức ăn thành viên nuốt.",
+    "chemicalDigestion": [
+      {
+        "enzyme": "Amylase nước bọt (ptyalin)",
+        "source": "Tuyến nước bọt (tuyến mang tai, tuyến dưới hàm, tuyến dưới lưỡi)",
+        "substrate": "Tinh bột chín (đã nấu chín)",
+        "product": "Đường đôi Mantôzơ (maltose)",
+        "note": "Chỉ một phần tinh bột chín kịp biến đổi hóa học do thời gian lưu giữ thức ăn ở khoang miệng rất ngắn (khoảng 15-30 giây)."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g8-gastric-digestion",
+    "organ": "Dạ dày",
+    "pH": "1.5 - 2.0 (môi trường acid mạnh do acid clohiđric HCl)",
+    "mechanicalDigestion": "Sự co bóp nhịp nhàng, mạnh mẽ của ba lớp cơ dạ dày (cơ dọc, cơ vòng, cơ chéo) nhào trộn thức ăn ngấm đều dịch vị thành khối nhuyễn (vị trấp).",
+    "chemicalDigestion": [
+      {
+        "enzyme": "Pepsin",
+        "source": "Tuyến vị (tiết pepsinogen được HCl hoạt hóa thành pepsin hoạt động)",
+        "substrate": "Protein chuỗi dài",
+        "product": "Các chuỗi peptide ngắn (3-10 amino acid)",
+        "note": "Ở dạ dày chỉ có tiêu hóa hóa học protein; lipid và tinh bột hầu như không bị biến đổi hóa học tại đây."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g8-small-intestine-digestion",
+    "organ": "Ruột non (Tá tràng và hỗng tràng - hồi tràng)",
+    "pH": "7.8 - 8.4 (môi trường kiềm nhẹ thuận lợi cho mọi enzym tụy và ruột)",
+    "mechanicalDigestion": "Nhu động ruột co bóp nhào trộn thức ăn với dịch tụy, dịch mật và dịch ruột; đẩy vị trấp di chuyển từ từ dọc lòng ruột.",
+    "roleOfBile": "Dịch mật (do gan tiết, trữ ở túi mật) không chứa enzym tiêu hóa nhưng chứa muối mật giúp nhũ tương hóa lipid thành các giọt siêu nhỏ, tăng diện tích tiếp xúc với lipase lên hàng nghìn lần.",
+    "chemicalDigestion": [
+      {
+        "enzyme": "Amylase tụy, Maltase, Sucrase, Lactase",
+        "source": "Dịch tụy và tuyến ruột",
+        "substrate": "Tinh bột và các đường đôi (maltose, sucrose, lactose)",
+        "product": "Các đường đơn: Glucose, Fructose, Galactose"
+      },
+      {
+        "enzyme": "Trypsin, Chymotrypsin, Peptidase",
+        "source": "Dịch tụy và tuyến ruột",
+        "substrate": "Protein và các chuỗi peptide",
+        "product": "Các amino acid (axit amin)"
+      },
+      {
+        "enzyme": "Lipase tụy và Lipase ruột",
+        "source": "Dịch tụy và tuyến ruột",
+        "substrate": "Lipid (chất béo đã được nhũ tương hóa bởi muối mật)",
+        "product": "Glycerol (glixerol) và Acid béo (axit béo)"
+      }
+    ],
+    "absorption": "Hấp thụ triệt để qua lớp nhung mao và vi nhung mao ruột non vào mao mạch máu (glucose, amino acid, nước, vitamin tan trong nước) và mao mạch bạch huyết (acid béo, glycerol, vitamin tan trong dầu A, D, E, K)."
+  }
+]

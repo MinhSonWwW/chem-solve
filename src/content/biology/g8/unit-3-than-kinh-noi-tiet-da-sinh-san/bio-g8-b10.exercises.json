@@ -1,0 +1,554 @@
+[
+  {
+    "id": "bio-g8-b10-q01",
+    "lessonId": "bio-g8-b10",
+    "sgkBaiSo": 39,
+    "skillIds": [
+      "bio-da-dieu-hoa-than-nhiet"
+    ],
+    "difficulty": 1,
+    "prompt": "Cấu tạo của da người gồm có ba lớp chính theo thứ tự từ ngoài vào trong là gì?",
+    "knowledge": [
+      "kb-bio-g8-cau-tao-chuc-nang-da"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Lớp biểu bì → Lớp bì → Lớp mỡ dưới da"
+        },
+        {
+          "id": "opt-b",
+          "label": "Lớp bì → Lớp biểu bì → Lớp mỡ dưới da"
+        },
+        {
+          "id": "opt-c",
+          "label": "Lớp mỡ dưới da → Lớp bì → Lớp biểu bì"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tầng sừng → Lớp mỡ dưới da → Lớp bì"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Lớp ngoài cùng tiếp xúc với không khí là lớp biểu bì, lớp trong cùng đóng vai trò đệm mỡ."
+      },
+      {
+        "level": 2,
+        "text": "Thứ tự đúng: Biểu bì → Bì → Mỡ dưới da."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cấu trúc phân lớp của da",
+        "body": "Da là lớp vỏ bọc bảo vệ bên ngoài cơ thể phân tầng rõ rệt."
+      },
+      {
+        "kind": "knowledge",
+        "title": "3 lớp cấu tạo từ nông đến sâu",
+        "body": "Lớp ngoài cùng là Lớp biểu bì (gồm tầng sừng và tầng tế bào sống); ở giữa là Lớp bì (dày nhất chứa mạch máu và thụ quan); trong cùng là Lớp mỡ dưới da đệm cách nhiệt."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thứ tự từ ngoài vào trong là: Lớp biểu bì → Lớp bì → Lớp mỡ dưới da."
+      }
+    ],
+    "finalSolution": "Cấu tạo 3 lớp giúp da vừa có tính bảo vệ cơ học, vừa có khả năng cảm giác và cách nhiệt tối ưu.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Đảo vị trí giữa lớp bì và lớp biểu bì."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b10-q02",
+    "lessonId": "bio-g8-b10",
+    "sgkBaiSo": 39,
+    "skillIds": [
+      "bio-da-dieu-hoa-than-nhiet"
+    ],
+    "difficulty": 1,
+    "prompt": "Các hạt sắc tố Melanin nằm trong tầng tế bào sống của lớp biểu bì có vai trò bảo vệ quan trọng nào đối với cơ thể?",
+    "knowledge": [
+      "kb-bio-g8-cau-tao-chuc-nang-da"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hấp thụ và ngăn chặn tác hại của tia cực tím (tia UV) trong ánh nắng mặt trời, bảo vệ ADN tế bào da không bị tổn thương"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tiết chất nhầy bôi trơn bề mặt da ngăn cản nước bốc hơi hoàn toàn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Trực tiếp tiêu hóa các vi khuẩn gây bệnh bám trên bề mặt da"
+        },
+        {
+          "id": "opt-d",
+          "label": "Làm cho lông dựng đứng lên để giữ ấm cơ thể"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Melanin là sắc tố quyết định màu da sẫm hay sáng."
+      },
+      {
+        "level": 2,
+        "text": "Khi ra nắng, da sạm đen lại do melanin tăng sinh để chặn tia tử ngoại UV độc hại."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất của sắc tố Melanin",
+        "body": "Melanin được sản xuất bởi các tế bào hắc tố melanocyte ở đáy tầng biểu bì."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tấm chắn tia cực tím",
+        "body": "Melanin có cấu trúc hấp thụ và tán xạ tia cực tím (UV-A và UV-B) của ánh nắng mặt trời, tạo thành chiếc ô chắn bảo vệ nhân và vật chất di truyền ADN của tế bào biểu bì, ngăn ngừa đột biến ung thư da."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Melanin ngăn chặn tác hại của tia cực tím UV, bảo vệ tế bào da."
+      }
+    ],
+    "finalSolution": "Melanin là cơ chế thích nghi phòng vệ tự nhiên của cơ thể con người trước bức xạ mặt trời.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng sắc tố melanin là chất độc hại chỉ gây đen da mà không có tác dụng bảo vệ."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b10-q03",
+    "lessonId": "bio-g8-b10",
+    "sgkBaiSo": 39,
+    "skillIds": [
+      "bio-da-dieu-hoa-than-nhiet"
+    ],
+    "difficulty": 2,
+    "prompt": "Những cấu trúc nào dưới đây được tìm thấy phân bố tập trung bên trong lớp bì của da?",
+    "knowledge": [
+      "kb-bio-g8-cau-tao-chuc-nang-da"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Thụ quan cảm giác, tuyến mồ hôi, tuyến nhờn, nang lông, cơ dựng lông và mạng mao mạch máu"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tầng tế bào sừng bong vảy và các hạt sắc tố melanin"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chỉ có các tế bào mỡ đệm cách nhiệt dày dặn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Các mô xương cứng và sụn khớp cử động"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Lớp bì là tầng dày nhất và giàu cấu trúc chức năng nhất của da."
+      },
+      {
+        "level": 2,
+        "text": "Nơi đây chứa các thụ quan xúc giác, tuyến bài tiết mồ hôi, chất nhờn và mạch máu điều hòa nhiệt."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cấu tạo lớp bì",
+        "body": "Lớp bì là mô liên kết dày đặc nâng đỡ lớp biểu bì bên trên."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Các cấu trúc trong lớp bì",
+        "body": "Lớp bì chứa các đầu mút thụ quan (nhận biết nóng, lạnh, đau, áp lực), tuyến nhờn bôi trơn lông tóc, tuyến mồ hôi bài tiết và tỏa nhiệt, cơ dựng lông gắn nang lông và mạng lưới mao mạch máu dày đặc."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Lớp bì chứa thụ quan, tuyến mồ hôi, tuyến nhờn, nang lông, cơ dựng lông và mao mạch."
+      }
+    ],
+    "finalSolution": "Sự hiện diện phong phú của thụ quan và mạch máu trong lớp bì biến da thành cơ quan xúc giác và điều nhiệt nhạy bén.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm lẫn tầng sừng nằm trong lớp bì (tầng sừng thuộc lớp biểu bì)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b10-q04",
+    "lessonId": "bio-g8-b10",
+    "sgkBaiSo": 39,
+    "skillIds": [
+      "bio-da-dieu-hoa-than-nhiet"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi nhiệt độ môi trường xung quanh tăng cao hoặc khi cơ thể lao động nặng, da phản ứng như thế nào để tăng cường tỏa nhiệt?",
+    "knowledge": [
+      "kb-bio-g8-co-che-dieu-hoa-than-nhiet"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Mao mạch dưới da dãn ra giúp máu lưu thông nhiều để bức xạ nhiệt, đồng thời tuyến mồ hôi tăng tiết mồ hôi để bốc hơi làm mát"
+        },
+        {
+          "id": "opt-b",
+          "label": "Mao mạch dưới da co thắt lại và tuyến mồ hôi ngừng tiết hoàn toàn để tích nước"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cơ dựng lông co lại làm nổi da gà để ngăn không khí nóng xâm nhập"
+        },
+        {
+          "id": "opt-d",
+          "label": "Các cơ bắp co giật liên tục (run cơ) để đốt cháy nhiệt thừa"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mặt đỏ hồng lên do máu dồn ra da tỏa nhiệt và mồ hôi toát ra ướt áo."
+      },
+      {
+        "level": 2,
+        "text": "Dãn mao mạch tăng bức xạ nhiệt, mồ hôi bốc hơi lấy đi nhiệt lượng cơ thể."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhu cầu tỏa nhiệt khi nóng",
+        "body": "Thân nhiệt có xu hướng tăng cao, cơ thể phải kích hoạt các cơ chế tăng tỏa nhiệt ra môi trường."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phản ứng của mao mạch và tuyến mồ hôi",
+        "body": "Các mao mạch dưới da dãn nở giúp lượng máu lớn đổ về bề mặt da tỏa nhiệt đối lưu vào không khí. Tuyến mồ hôi tăng cường bài tiết, nước mồ hôi bốc hơi thu nhiệt lượng mạnh mẽ làm mát tức thì bề mặt cơ thể."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Mao mạch dãn giúp máu tỏa nhiệt và tuyến mồ hôi tiết mồ hôi bốc hơi làm mát."
+      }
+    ],
+    "finalSolution": "Dãn mạch và toát mồ hôi là hai cơ chế tỏa nhiệt chủ chốt bảo vệ cơ thể khỏi nguy cơ quá nhiệt khi trời nóng.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng trời nóng cơ mao mạch co lại để tránh nhiệt ngoài xâm nhập."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b10-q05",
+    "lessonId": "bio-g8-b10",
+    "sgkBaiSo": 39,
+    "skillIds": [
+      "bio-da-dieu-hoa-than-nhiet"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi gặp thời tiết lạnh giá, cơ thể người xuất hiện hiện tượng 'nổi da gà' và 'run cơ'. Ý nghĩa sinh học của các hiện tượng này là gì?",
+    "knowledge": [
+      "kb-bio-g8-co-che-dieu-hoa-than-nhiet"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Co cơ dựng lông (nổi da gà) làm giảm thoát nhiệt; run cơ là các cơn co bắp cơ phản xạ giúp tăng tốc độ sinh nhiệt sưởi ấm"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nổi da gà để phát tín hiệu báo động cho người xung quanh; run cơ để làm mềm khớp"
+        },
+        {
+          "id": "opt-c",
+          "label": "Để làm tăng tối đa quá trình thoát mồ hôi qua lỗ chân lông"
+        },
+        {
+          "id": "opt-d",
+          "label": "Là hiện tượng co giật bệnh lí nguy hiểm không mang ý nghĩa điều hòa thân nhiệt"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi lạnh, cơ thể phải vừa hạn chế mất nhiệt vừa đẩy mạnh sinh thêm nhiệt sưởi ấm."
+      },
+      {
+        "level": 2,
+        "text": "Cơ dựng lông co khép chân lông giữ lớp không khí đệm ấm; cơ co bóp (run) tiêu thụ ATP sinh nhiều nhiệt."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phản xạ chống rét của cơ thể",
+        "body": "Khi nhiệt độ môi trường hạ thấp, thụ cảm lạnh ở da kích hoạt phản xạ tự động của hệ thần kinh."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế nổi da gà và run cơ",
+        "body": "Cơ dựng lông co rút kéo nang lông nhô lên (nổi da gà) làm se khít lỗ chân lông hạn chế tỏa nhiệt. Cơ bắp co giật không theo ý muốn (run cơ) tiêu hao glycogen giải phóng lượng lớn nhiệt năng sưởi ấm dòng máu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nổi da gà giảm thoát nhiệt, run cơ co bắp tăng sinh nhiệt sưởi ấm cơ thể."
+      }
+    ],
+    "finalSolution": "Phản xạ co cơ dựng lông và run cơ là cơ chế thích ứng chống lạnh quan trọng duy trì thân nhiệt hằng định 37°C.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng run cơ làm cơ thể bị mất nhiệt nhiều hơn."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b10-q06",
+    "lessonId": "bio-g8-b10",
+    "sgkBaiSo": 39,
+    "skillIds": [
+      "bio-da-dieu-hoa-than-nhiet"
+    ],
+    "difficulty": 2,
+    "prompt": "Trung khu thần kinh chịu trách nhiệm điều khiển và điều hòa thân nhiệt của toàn bộ cơ thể nằm ở bộ phận nào?",
+    "knowledge": [
+      "kb-bio-g8-co-che-dieu-hoa-than-nhiet"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vùng dưới đồi (nằm ở não trung gian)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tủy sống thắt lưng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vỏ đại não thùy chẩm"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tiểu não"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bộ phận này hoạt động như một chiếc 'rơ-le nhiệt' sinh học tự động của não bộ."
+      },
+      {
+        "level": 2,
+        "text": "Nằm ở đáy của não trung gian, gọi là Vùng dưới đồi (Hypothalamus)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Trung tâm điều nhiệt của cơ thể",
+        "body": "Nhiệt độ cơ thể được điều khiển tự động bởi một trung khu thần kinh cao cấp."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Vai trò của vùng dưới đồi",
+        "body": "Vùng dưới đồi (Hypothalamus) chứa các nơron cảm nhận nhiệt độ của dòng máu chảy qua và nhận tín hiệu từ da. Từ đó, nó phát lệnh điều khiển mạch máu dãn hay co, tiết mồ hôi hoặc run cơ để giữ vững thân nhiệt 37°C."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Vùng dưới đồi (thuộc não trung gian) là trung tâm điều hòa thân nhiệt."
+      }
+    ],
+    "finalSolution": "Vùng dưới đồi là 'bộ điều nhiệt' sinh học tối cao duy trì sự cân bằng tinh tế giữa sinh nhiệt và tỏa nhiệt.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm trung khu điều nhiệt nằm ở tủy sống hoặc tiểu não."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b10-q07",
+    "lessonId": "bio-g8-b10",
+    "sgkBaiSo": 39,
+    "skillIds": [
+      "bio-da-dieu-hoa-than-nhiet"
+    ],
+    "difficulty": 2,
+    "prompt": "Say nắng (cảm nóng) là tình trạng nguy hiểm thường gặp khi hoạt động ngoài trời. Biện pháp phòng tránh nào sau đây là chuẩn khoa học?",
+    "knowledge": [
+      "kb-bio-g8-phong-cam-so-cuu-bong"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Đội mũ nón rộng vành, mặc trang phục thoáng mát thấm mồ hôi và uống bổ sung nước có pha ít muối khoáng định kì"
+        },
+        {
+          "id": "opt-b",
+          "label": "Uống thật nhiều nước đá lạnh có gas và không đội mũ để đầu tóc đón gió"
+        },
+        {
+          "id": "opt-c",
+          "label": "Nhịn uống nước hoàn toàn để tránh đổ mồ hôi làm bẩn quần áo"
+        },
+        {
+          "id": "opt-d",
+          "label": "Lao động liên tục giữa trời trưa nắng 12h mà không cần nghỉ ngơi"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ánh nắng chiếu trực tiếp vào gáy kích thích trung khu điều nhiệt gây rối loạn."
+      },
+      {
+        "level": 2,
+        "text": "Cần che chắn vùng đầu gáy, bổ sung nước và điện giải mất qua mồ hôi."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất của say nắng",
+        "body": "Say nắng xảy ra khi tia bức xạ mặt trời chiếu thẳng vào vùng đầu gáy làm tổn thương trung khu điều nhiệt não bộ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Biện pháp phòng ngừa say nắng",
+        "body": "Đội mũ nón rộng vành che chắn đỉnh đầu và gáy, mặc quần áo sáng màu thoáng khí, tránh lao động nặng vào khung giờ nắng gắt nhất (11h - 14h) và bổ sung nước bù điện giải thường xuyên."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đội mũ nón, mặc đồ thoáng mát và uống bổ sung nước muối loãng."
+      }
+    ],
+    "finalSolution": "Bảo vệ vùng đầu cổ và bù đủ nước điện giải là nguyên tắc cốt lõi giúp ngăn ngừa say nắng, say nóng ngày hè.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng uống nhiều nước đá lạnh buốt là cách phòng say nắng tốt nhất (nước đá lạnh đột ngột dễ gây sốc nhiệt họng)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b10-q08",
+    "lessonId": "bio-g8-b10",
+    "sgkBaiSo": 39,
+    "skillIds": [
+      "bio-da-dieu-hoa-than-nhiet"
+    ],
+    "difficulty": 3,
+    "prompt": "Khi một người không may bị bỏng do nước sôi dội vào cẳng chân, thao tác sơ cứu nào sau đây là SAI LẦM nghiêm trọng có thể gây nhiễm trùng hoại tử da?",
+    "knowledge": [
+      "kb-bio-g8-phong-cam-so-cuu-bong"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Bôi nước mắm, kem đánh răng, mỡ trăn hoặc đắp thuốc lá lạ không rõ nguồn gốc lên vết bỏng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Ngâm vết bỏng dưới vòi nước sạch mát trong 15 - 20 phút"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cởi bỏ nhẹ nhàng quần áo vùng bị bỏng trước khi vết thương phù nề"
+        },
+        {
+          "id": "opt-d",
+          "label": "Dùng gạc y tế vô trùng che phủ nhẹ nhàng vết bỏng rồi đưa nạn nhân đến viện"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Da bị bỏng mất lớp biểu bì bảo vệ, trở thành cửa ngõ hở cho vi khuẩn xâm nhập."
+      },
+      {
+        "level": 2,
+        "text": "Các mẹo dân gian truyền miệng như bôi mắm, kem đánh răng, mỡ trăn chứa đầy vi khuẩn và gây nhiễm trùng nặng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nguy cơ nhiễm trùng vết bỏng",
+        "body": "Bề mặt da bị tổn thương nhiệt rất nhạy cảm và mất hoàn toàn hàng rào kháng khuẩn tự nhiên."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tác hại của việc bôi chất lạ",
+        "body": "Kem đánh răng có tính kiềm gây kích ứng; nước mắm, mỡ trăn và thuốc lá cây chứa nhiều vi khuẩn kị khí dễ gây nhiễm trùng huyết, viêm mô tế bào hoại tử sâu và để lại sẹo co kéo nguy hiểm."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Bôi nước mắm, kem đánh răng, mỡ trăn hay thuốc lá lạ là sai lầm nghiêm trọng."
+      }
+    ],
+    "finalSolution": "Tuyệt đối không đắp bất kì chất lạ nào lên vết bỏng; chỉ ngâm nước sạch mát và băng gạc vô trùng rồi chuyển đến cơ sở y tế.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Tin vào các mẹo dân gian truyền miệng bôi nước mắm hay kem đánh răng để 'hút nhiệt' vết bỏng."
+      }
+    ]
+  }
+]

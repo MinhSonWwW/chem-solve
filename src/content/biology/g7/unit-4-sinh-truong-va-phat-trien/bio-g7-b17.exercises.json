@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g7-b17-q01",
+    "lessonId": "bio-g7-b17",
+    "sgkBaiSo": 37,
+    "skillIds": ["bio-ung-dung-sinh-truong-phat-trien"],
+    "difficulty": 1,
+    "prompt": "Mục đích sinh học của biện pháp bấm ngọn (ngắt bỏ chồi ngọn) ở các loài cây như mướp, bầu, bí, chè, cà chua là gì?",
+    "knowledge": ["kb-bio-g7-ung-dung-bam-ngon-tia-canh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Loại bỏ mô phân sinh đỉnh ngọn, kích thích chồi nách phát triển đâm nhiều cành ngang cho nhiều hoa quả hoặc búp non" },
+        { "id": "opt-b", "label": "Để cây mọc cao thật nhanh vượt lên đón gió" },
+        { "id": "opt-c", "label": "Làm cho rễ cây ngừng hút nước và chuyển sang hút dầu khoáng" },
+        { "id": "opt-d", "label": "Ngăn chặn không cho cây quang hợp để tiết kiệm năng lượng" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Chồi ngọn tiết ra hormone ức chế các chồi nách bên dưới." },
+      { "level": 2, "text": "Khi bấm chồi ngọn, các chồi nách sẽ được giải phóng và phát triển đâm nhiều nhánh con." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích tác động kỹ thuật", "body": "Giải thích mục đích của thao tác bấm ngọn cây nông nghiệp." },
+      { "kind": "knowledge", "title": "Cơ chế bấm ngọn", "body": "Bấm chồi ngọn loại bỏ ưu thế ngọn, giúp các chồi nách đâm nhiều cành nhánh bên, từ đó mang lại nhiều hoa, quả hoặc búp lá." },
+      { "kind": "answer", "title": "Kết luận", "body": "Loại bỏ mô phân sinh đỉnh ngọn, kích thích chồi nách phát triển đâm nhiều cành ngang cho nhiều hoa quả hoặc búp non." }
+    ],
+    "finalSolution": "Bấm ngọn kích thích chồi nách phân nhánh, làm tăng số lượng cành mang hoa quả hoặc ngọn non.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng bấm ngọn làm cây phát triển cao hơn." }
+    ]
+  },
+  {
+    "id": "bio-g7-b17-q02",
+    "lessonId": "bio-g7-b17",
+    "sgkBaiSo": 37,
+    "skillIds": ["bio-ung-dung-sinh-truong-phat-trien"],
+    "difficulty": 1,
+    "prompt": "Đối với các loài cây trồng lấy gỗ (như cây xoan, cây keo, cây bạch đàn), người ta thường áp dụng biện pháp nào để thân cây thẳng và cao?",
+    "knowledge": ["kb-bio-g7-ung-dung-bam-ngon-tia-canh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Thường xuyên tỉa bỏ cành la ở tầng thấp và cành sâu bệnh để tập trung dinh dưỡng nuôi thân chính vươn cao" },
+        { "id": "opt-b", "label": "Bấm ngọn liên tục từ khi cây còn là cây con" },
+        { "id": "opt-c", "label": "Nhổ rễ cọc chỉ để lại rễ chùm nông trên mặt đất" },
+        { "id": "opt-d", "label": "Che tối hoàn toàn cả khu rừng để cây không nhận ánh sáng" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Cây lấy gỗ cần thân chính dài, thẳng, to và ít mắt gỗ phân nhánh bên." },
+      { "level": 2, "text": "Cần tỉa bỏ các cành ở tầng thấp (cành la) để dinh dưỡng dồn vào mô phân sinh đỉnh thân chính." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định mục tiêu lâm nghiệp", "body": "Kỹ thuật chăm sóc cây lấy gỗ cho thân thẳng và dài." },
+      { "kind": "knowledge", "title": "Kỹ thuật tỉa cành", "body": "Tỉa cành nhánh thấp giúp bảo tồn ưu thế ngọn, dồn chất dinh dưỡng cho thân cây vươn cao đạt khối lượng gỗ lớn." },
+      { "kind": "answer", "title": "Kết luận", "body": "Thường xuyên tỉa bỏ cành la ở tầng thấp và cành sâu bệnh để tập trung dinh dưỡng nuôi thân chính vươn cao." }
+    ],
+    "finalSolution": "Tỉa cành la giúp cây lấy gỗ tập trung dinh dưỡng nuôi thân chính phát triển chiều cao vượt trội.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn giữa mục đích của bấm ngọn (lấy quả) và tỉa cành (lấy gỗ)." }
+    ]
+  },
+  {
+    "id": "bio-g7-b17-q03",
+    "lessonId": "bio-g7-b17",
+    "sgkBaiSo": 37,
+    "skillIds": ["bio-ung-dung-sinh-truong-phat-trien"],
+    "difficulty": 2,
+    "prompt": "Tại sao trong vòng đời của bướm hại cây trồng, người nông dân lại cần tập trung phòng trừ và tiêu diệt ở giai đoạn SÂU NON (sâu ăn lá)?",
+    "knowledge": ["kb-bio-g7-kiem-soat-dich-hai", "kb-bio-g7-cac-kieu-bien-thai"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Vì sâu non là giai đoạn phàm ăn nhất, có cơ quan miệng kiểu nhai cắn phá thủng lá phá hoại mùa màng nặng nề" },
+        { "id": "opt-b", "label": "Vì bướm trưởng thành cắn đứt cả thân cây gỗ to lớn" },
+        { "id": "opt-c", "label": "Vì giai đoạn nhộng có thể bay lượn truyền bệnh khắp nơi" },
+        { "id": "opt-d", "label": "Vì sâu non không thể bị tiêu diệt bởi bất kỳ biện pháp nào khác" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Bướm trưởng thành ăn gì (hút mật hoa) và sâu non ăn gì (lá cây)?" },
+      { "level": 2, "text": "Sâu non cần tích lũy lượng lớn dinh dưỡng để chuẩn bị cho giai đoạn hóa nhộng nên ăn liên tục." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích tác hại sinh thái", "body": "So sánh mức độ phá hoại mùa màng giữa các giai đoạn trong vòng đời của bướm." },
+      { "kind": "knowledge", "title": "Giai đoạn sâu non phá hoại", "body": "Sâu non là giai đoạn dinh dưỡng phàm ăn cắn phá lá cây trồng, bướm trưởng thành chỉ hút mật hoa và nhộng bất động." },
+      { "kind": "answer", "title": "Kết luận", "body": "Vì sâu non là giai đoạn phàm ăn nhất, có cơ quan miệng kiểu nhai cắn phá thủng lá phá hoại mùa màng nặng nề." }
+    ],
+    "finalSolution": "Diệt sâu bướm ở pha sâu non vì đây là giai đoạn cắn phá lá cây trồng phá hoại năng suất trực tiếp.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng con bướm trưởng thành cắn phá lá cây (thực tế bướm chỉ hút mật hoa)." }
+    ]
+  },
+  {
+    "id": "bio-g7-b17-q04",
+    "lessonId": "bio-g7-b17",
+    "sgkBaiSo": 37,
+    "skillIds": ["bio-ung-dung-sinh-truong-phat-trien"],
+    "difficulty": 1,
+    "prompt": "Để phòng chống bệnh sốt xuất huyết hiệu quả và bền vững tại khu dân cư, biện pháp nào sau đây là quan trọng hàng đầu?",
+    "knowledge": ["kb-bio-g7-kiem-soat-dich-hai"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Thường xuyên dọn dẹp các vật chứa nước đọng, đậy kín nắp lu vại, thả cá bảy màu diệt bọ gậy (lăng quăng)" },
+        { "id": "opt-b", "label": "Đóng kín toàn bộ cửa sổ suốt cả ngày đêm không thông gió" },
+        { "id": "opt-c", "label": "Phun hóa chất trừ sâu vào trong các bể nước ăn sinh hoạt" },
+        { "id": "opt-d", "label": "Trồng thật nhiều cây cối um tùm quanh phòng ngủ" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Không có bọ gậy thì sẽ không có muỗi trưởng thành truyền bệnh." },
+      { "level": 2, "text": "Loại bỏ nơi sinh sản đẻ trứng của muỗi là các dụng cụ chứa nước tù đọng." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định giải pháp y tế cộng đồng", "body": "Tìm biện pháp phòng chống sốt xuất huyết triệt để dựa vào vòng đời muỗi vằn." },
+      { "kind": "knowledge", "title": "Diệt lăng quăng cắt đứt vòng đời", "body": "Diệt lăng quăng bằng cách triệt tiêu môi trường nước đọng và thả cá ăn ấu trùng giúp cắt đứt chu kỳ phát triển của muỗi." },
+      { "kind": "answer", "title": "Kết luận", "body": "Thường xuyên dọn dẹp các vật chứa nước đọng, đậy kín nắp lu vại, thả cá bảy màu diệt bọ gậy (lăng quăng)." }
+    ],
+    "finalSolution": "Dọn dẹp phế thải đọng nước và thả cá diệt lăng quăng là giải pháp cốt lõi phòng ngừa sốt xuất huyết.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Chỉ chú trọng xịt muỗi trưởng thành mà bỏ quên nguồn lăng quăng trong các vũng nước đọng." }
+    ]
+  },
+  {
+    "id": "bio-g7-b17-q05",
+    "lessonId": "bio-g7-b17",
+    "sgkBaiSo": 37,
+    "skillIds": ["bio-ung-dung-sinh-truong-phat-trien"],
+    "difficulty": 2,
+    "prompt": "Trong chăn nuôi gà đẻ trứng công nghiệp, người nuôi thường thắp thêm bóng đèn chiếu sáng khoảng 14 – 16 giờ mỗi ngày nhằm mục đích gì?",
+    "knowledge": ["kb-bio-g7-nhan-to-anh-huong-sinh-truong"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Kích thích tuyến yên tiết hormone thúc đẩy buồng trứng phát triển và kích thích gà đẻ trứng đều đặn" },
+        { "id": "opt-b", "label": "Để gà không bao giờ buồn ngủ và vận động đốt cháy hết mỡ" },
+        { "id": "opt-c", "label": "Làm cho vỏ trứng gà có màu sắc sặc sỡ như cầu vồng" },
+        { "id": "opt-d", "label": "Thay thế hoàn toàn thức ăn đạm và canxi cho đàn gà" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Ánh sáng tác động qua mắt gà đến hệ thần kinh và tuyến nội tiết." },
+      { "level": 2, "text": "Hormone sinh dục thúc đẩy quá trình rụng trứng và đẻ trứng ở gia cầm." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Hiểu ứng dụng chiếu sáng trong chăn nuôi", "body": "Giải thích tác dụng sinh lý của việc chiếu sáng kéo dài đối với gà đẻ." },
+      { "kind": "knowledge", "title": "Tác động quang kỳ lên tuyến yên", "body": "Thời gian chiếu sáng 14-16 giờ kích thích tuyến yên sản sinh hormone hướng sinh dục, tăng tỷ lệ đẻ trứng." },
+      { "kind": "answer", "title": "Kết luận", "body": "Kích thích tuyến yên tiết hormone thúc đẩy buồng trứng phát triển và kích thích gà đẻ trứng đều đặn." }
+    ],
+    "finalSolution": "Chiếu sáng bổ sung kích thích tuyến yên tiết hormone thúc đẩy gà đẻ trứng năng suất cao.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng bật đèn chỉ để gà nhìn thấy đường ăn cám ban đêm." }
+    ]
+  },
+  {
+    "id": "bio-g7-b17-q06",
+    "lessonId": "bio-g7-b17",
+    "sgkBaiSo": 37,
+    "skillIds": ["bio-ung-dung-sinh-truong-phat-trien"],
+    "difficulty": 1,
+    "prompt": "Giai đoạn nào trong sự sinh trưởng của lợn thịt cần bổ sung nhiều chất đạm (protein) và khoáng chất nhất để phát triển khung xương và cơ bắp?",
+    "knowledge": ["kb-bio-g7-nhan-to-anh-huong-sinh-truong"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Giai đoạn lợn con sau cai sữa đang lớn nhanh (lợn choai)" },
+        { "id": "opt-b", "label": "Giai đoạn vỗ béo cận kề ngày xuất chuồng" },
+        { "id": "opt-c", "label": "Chỉ trong 2 ngày trước khi giết mổ" },
+        { "id": "opt-d", "label": "Lợn không bao giờ cần chất đạm trong suốt vòng đời" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Cơ bắp và xương phát triển mạnh nhất ở giai đoạn con non đang lớn nhanh." },
+      { "level": 2, "text": "Cần nhiều protein và calcium để xây dựng tế bào mới và mô cơ xương." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích nhu cầu dinh dưỡng theo lứa tuổi", "body": "Xác định giai đoạn sinh trưởng cần nhiều protein ở gia súc lấy thịt." },
+      { "kind": "knowledge", "title": "Dinh dưỡng ở giai đoạn con non", "body": "Giai đoạn lợn con/choai có tốc độ phân chia tế bào nhanh, cần nhiều protein để xây dựng cơ bắp và khoáng chất phát triển xương." },
+      { "kind": "answer", "title": "Kết luận", "body": "Giai đoạn lợn con sau cai sữa đang lớn nhanh (lợn choai)." }
+    ],
+    "finalSolution": "Giai đoạn lợn con đang lớn nhanh cần khẩu phần giàu đạm và khoáng chất để phát triển thể chất tối ưu.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm với giai đoạn xuất chuồng (giai đoạn này cần nhiều tinh bột để vỗ béo tích mỡ)." }
+    ]
+  },
+  {
+    "id": "bio-g7-b17-q07",
+    "lessonId": "bio-g7-b17",
+    "sgkBaiSo": 37,
+    "skillIds": ["bio-ung-dung-sinh-truong-phat-trien"],
+    "difficulty": 2,
+    "prompt": "Khi gieo mạ vào mùa đông gặp những đợt rét đậm, rét hại (nhiệt độ dưới 15°C), người nông dân thường che phủ vòm nilon trong suốt lên luống mạ nhằm mục đích gì?",
+    "knowledge": ["kb-bio-g7-nhan-to-anh-huong-sinh-truong"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Giữ ấm nhiệt độ và cản gió rét giúp cây mạ non duy trì hoạt động trao đổi chất, không bị cóng chết" },
+        { "id": "opt-b", "label": "Ngăn cản hoàn toàn ánh sáng mặt trời không cho cây mạ quang hợp" },
+        { "id": "opt-c", "label": "Kích thích mạ non ra hoa kết hạt ngay trên ruộng mạ" },
+        { "id": "opt-d", "label": "Để ngăn chặn không khí lọt vào ruộng mạ" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Nilon trong suốt tạo hiệu ứng nhà kính giúp giữ ấm nhiệt độ bên trong luống mạ." },
+      { "level": 2, "text": "Nhiệt độ ấm bảo vệ enzym chuyển hóa giúp cây non sinh trưởng bình thường trong mùa rét." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Giải thích kỹ thuật che phủ mạ", "body": "Ứng dụng điều hòa yếu tố nhiệt độ môi trường đối với cây trồng mùa lạnh." },
+      { "kind": "knowledge", "title": "Ảnh hưởng nhiệt độ lên sinh trưởng", "body": "Rét đậm làm đông đặc tế bào và ức chế enzyme. Che phủ nilon giữ nhiệt ấm giúp mạ non sinh trưởng khỏe mạnh." },
+      { "kind": "answer", "title": "Kết luận", "body": "Giữ ấm nhiệt độ và cản gió rét giúp cây mạ non duy trì hoạt động trao đổi chất, không bị cóng chết." }
+    ],
+    "finalSolution": "Che phủ nilon giúp giữ ấm nhiệt độ và chắn gió rét, bảo vệ mạ non không bị chết rét vào mùa đông.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng che nilon là để ngăn sâu bọ thay vì mục đích chủ yếu là chống rét." }
+    ]
+  },
+  {
+    "id": "bio-g7-b17-q08",
+    "lessonId": "bio-g7-b17",
+    "sgkBaiSo": 37,
+    "skillIds": ["bio-ung-dung-sinh-truong-phat-trien"],
+    "difficulty": 2,
+    "prompt": "Nhận định nào sau đây là KHÔNG ĐÚNG về việc vận dụng sinh trưởng và phát triển vào thực tiễn đời sống?",
+    "knowledge": ["kb-bio-g7-ung-dung-bam-ngon-tia-canh", "kb-bio-g7-kiem-soat-dich-hai"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Nên bấm ngọn đối với tất cả các loài cây lấy gỗ lâu năm để cây đâm nhiều cành ngang xum xuê" },
+        { "id": "opt-b", "label": "Bấm ngọn cây mướp, bầu, bí khi cây đạt chiều dài nhất định để kích thích đâm nhánh mang hoa quả" },
+        { "id": "opt-c", "label": "Tiêu diệt bọ gậy trong nước là biện pháp ngăn chặn sự phát triển của muỗi vằn" },
+        { "id": "opt-d", "label": "Cung cấp đủ vitamin D và canxi trong bữa ăn giúp trẻ em phát triển tốt chiều cao và hệ xương" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Tìm nhận định sai về kỹ thuật trồng cây lấy gỗ." },
+      { "level": 2, "text": "Cây lấy gỗ cần thân cao thẳng vút; nếu bấm ngọn cây sẽ bị lùn và phân nhánh ngang nhiều cành gỗ cong queo mất giá trị." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định câu hỏi tìm phát biểu sai", "body": "Tìm nhận định sai lầm trong việc áp dụng kỹ thuật nông học." },
+      { "kind": "knowledge", "title": "Nguyên tắc tỉa cành bấm ngọn", "body": "Cây lấy gỗ phải tỉa cành chứ không được bấm ngọn. Bấm ngọn sẽ làm cây mất ngọn chính, thân cây ngắn và nhiều nhánh cong không dùng làm gỗ được." },
+      { "kind": "answer", "title": "Kết luận", "body": "Nên bấm ngọn đối với tất cả các loài cây lấy gỗ lâu năm để cây đâm nhiều cành ngang xum xuê." }
+    ],
+    "finalSolution": "Phát biểu 'bấm ngọn cho cây lấy gỗ' là hoàn toàn sai vì sẽ làm thân gỗ bị lùn và cong queo.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Tưởng rằng cây nào bấm ngọn cũng tốt mà không phân biệt mục đích sử dụng (lấy quả vs lấy gỗ)." }
+    ]
+  }
+]

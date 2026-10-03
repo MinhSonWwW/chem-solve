@@ -1,0 +1,74 @@
+{
+  "lessonId": "bio-g6-b20",
+  "nodeId": "bio-g6-b20-theory",
+  "title": "Lý thuyết: Thực hành quan sát và phân biệt các nhóm thực vật",
+  "subtitle": "Bài 35 SGK KHTN 6 Kết nối tri thức: Kỹ năng nhận diện tiêu bản rêu, dương xỉ, hạt trần và hạt kín qua kính lúp",
+  "sgkBaiSo": 35,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Mục tiêu",
+      "badgeColor": "emerald",
+      "title": "Mục tiêu bài thực hành phân biệt thực vật",
+      "content": "Rèn luyện kỹ năng quan sát mẫu vật sống và mẫu tiêu bản:",
+      "bulletPoints": [
+        "Quan sát trực tiếp mẫu cây tươi của 4 ngành: Rêu tường, Dương xỉ, Cành thông (Hạt trần) và Cây có hoa (Hạt kín).",
+        "Sử dụng kính lúp cầm tay để phân tích chi tiết cơ quan sinh dưỡng và cơ quan sinh sản.",
+        "Xây dựng thành thạo sơ đồ khóa lưỡng phân để phân biệt 4 nhóm thực vật tiêu biểu."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Nhận diện mẫu vật",
+      "badgeColor": "amber",
+      "title": "Dấu hiệu nhận biết 4 nhóm cây trên bàn thực hành",
+      "content": "Các chi tiết giải phẫu nhận diện bằng mắt và kính lúp:",
+      "bulletPoints": [
+        "Cây rêu tường: Thân nhỏ không phân nhánh, lá nhỏ mỏng; dưới gốc là chùm rễ giả; trên ngọn cây có cuống mang túi bào tử hình bầu có nắp mở.",
+        "Cây dương xỉ: Thân ngầm, lá xẻ lông chim; lá non cuộn tròn ở đầu; lật mặt dưới lá già thấy các đốm tròn màu nâu chứa ổ túi bào tử.",
+        "Cành thông (Hạt trần): Lá kim cứng mọc 2 lá trong một bẹ; cơ quan sinh sản là nón thông (nón cái hóa gỗ mang các lá noãn hở chứa hạt có cánh).",
+        "Cây hạt kín (Cây cam, đậu, bưởi): Thân gỗ hoặc thân thảo; có hoa đài tràng rõ nét; quả chứa hạt kín bên trong thịt quả."
+      ],
+      "callout": "Mẹo soi kính lúp: Lật mặt dưới lá già của dương xỉ để tìm ổ bào tử; gạt nhẹ vảy nón thông để tìm hạt có cánh!"
+    },
+    {
+      "id": "card-3",
+      "badge": "Khóa lưỡng phân",
+      "badgeColor": "cyan",
+      "title": "Sơ đồ khóa lưỡng phân phân biệt 4 nhóm thực vật",
+      "content": "Trình tự phân loại 3 bước khoa học:",
+      "bulletPoints": [
+        "Bước 1: Cơ thể chưa có mạch dẫn → Cây rêu tường vs Cơ thể đã có mạch dẫn (Dương xỉ, Thông, Cây có hoa).",
+        "Bước 2 (tách nhóm có mạch): Sinh sản bằng bào tử → Cây dương xỉ vs Sinh sản bằng hạt (Thông, Cây có hoa).",
+        "Bước 3 (tách nhóm có hạt): Hạt nằm lộ trên nón hở → Cây thông (Hạt trần) vs Hạt nằm kín trong quả → Cây có hoa (Hạt kín)."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi quan sát một mẫu thực vật nhỏ ở chân tường ẩm ướt bằng kính lúp, thấy thân mang lá nhỏ li ti, dưới gốc chỉ có chùm rễ giả và trên ngọn có túi bào tử hình bầu có nắp đậy, đó là cây gì?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Cây rêu tường",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Cây dương xỉ",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Cây thông",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Cây hoa hồng",
+        "correct": false
+      }
+    ],
+    "explanation": "Cây rêu tường có kích thước nhỏ bé, chưa có mạch dẫn, rễ là rễ giả và sinh sản bằng bào tử nằm trong túi bào tử có nắp đậy ở ngọn cây."
+  }
+}

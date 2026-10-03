@@ -1,0 +1,87 @@
+[
+  {
+    "id": "kb-bio-g9-gene-mutations",
+    "title": "Đột biến gene (Biến dị ở cấp độ phân tử)",
+    "description": "Những biến đổi trong cấu trúc của gene, liên quan đến một hoặc một số cặp nucleotide.",
+    "types": [
+      {
+        "name": "Đột biến thay thế một cặp nucleotide",
+        "mechanism": "Một cặp nucleotide này bị thay thế bằng một cặp nucleotide khác (ví dụ: A - T thay bằng G - C).",
+        "consequence": "Chỉ làm thay đổi codon tại vị trí đột biến; có thể làm thay đổi 1 amino acid hoặc không đổi (đột biến câm do tính thoái hóa mã di truyền)."
+      },
+      {
+        "name": "Đột biến thêm một cặp nucleotide",
+        "mechanism": "Chèn thêm 1 cặp nucleotide vào cấu trúc gene.",
+        "consequence": "Gây hiện tượng dịch khung đọc mã di truyền từ vị trí đột biến về sau, làm thay đổi toàn bộ trình tự amino acid và thường làm mất chức năng của protein."
+      },
+      {
+        "name": "Đột biến mất một cặp nucleotide",
+        "mechanism": "Mất đi 1 cặp nucleotide khỏi cấu trúc gene.",
+        "consequence": "Gây dịch khung đọc mã di truyền, làm biến đổi toàn bộ chuỗi polypeptide từ vị trí đột biến."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g9-chromosome-aberrations",
+    "title": "Đột biến Nhiễm sắc thể (Đột biến cấu trúc và Đột biến số lượng)",
+    "description": "Biến đổi ở cấp độ tế bào liên quan đến hình thái hoặc số lượng của NST.",
+    "structuralAberrations": [
+      {
+        "type": "Mất đoạn (Deletion)",
+        "description": "Một đoạn NST bị đứt và mất đi (ví dụ: Mất đoạn đầu nhánh ngắn NST số 5 gây hội chứng tiếng mèo kêu - Cri-du-chat; mất đoạn nhỏ NST 21 gây bệnh ung thư máu trắng)."
+      },
+      {
+        "type": "Lặp đoạn (Duplication)",
+        "description": "Một đoạn NST được lặp lại một hoặc nhiều lần, làm tăng liều lượng gene (ví dụ: Lặp đoạn trên NST X của ruồi giấm làm mắt lồi thành mắt dẹt)."
+      },
+      {
+        "type": "Đảo đoạn (Inversion)",
+        "description": "Một đoạn NST bị đứt, quay 180° rồi gắn lại vào vị trí cũ, làm thay đổi trật tự phân bố của các gene."
+      },
+      {
+        "type": "Chuyển đoạn (Translocation)",
+        "description": "Sự trao đổi đoạn NST giữa các NST không tương đồng hoặc trong cùng một NST."
+      }
+    ],
+    "numericalAberrations": [
+      {
+        "type": "Lệch bội (Dị bội - Aneuploidy)",
+        "description": "Biến đổi số lượng ở một hoặc một số cặp NST tương đồng.",
+        "examples": "Thể một (2n - 1), Thể ba (2n + 1: Hội chứng Đao thừa 1 NST ở cặp 21 có 47 chiếc; Hội chứng Klinefelter 47, XXY)."
+      },
+      {
+        "type": "Đa bội (Polyploidy)",
+        "description": "Toàn bộ bộ NST tăng lên theo bội số nguyên của n (lớn hơn 2n).",
+        "examples": "Tam bội (3n: dưa hấu, chuối nhà không hạt, sinh trưởng khỏe); Tứ bội (4n: nho, dâu tây quả to)."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g9-human-genetic-disorders",
+    "title": "Các bệnh và tật di truyền phổ biến ở người",
+    "description": "Nghiên cứu di truyền y học nhằm chẩn đoán, điều trị và tư vấn tiền hôn nhân.",
+    "disorders": [
+      {
+        "name": "Hội chứng Đao (Down Syndrome)",
+        "cause": "Đột biến số lượng NST: Thể ba ở cặp NST số 21 (2n + 1 = 47 chiếc).",
+        "symptoms": "Bé lùn, cổ ngắn, má phệ, mắt một mí xếch, khoảng cách giữa 2 mắt xa nhau, lưỡi dày hay thè ra, suy giảm trí tuệ, thường kèm dị tật tim bẩm sinh.",
+        "riskFactor": "Tỉ lệ mắc tăng nhanh theo độ tuổi sinh con của người mẹ (đặc biệt khi mẹ trên 35 tuổi)."
+      },
+      {
+        "name": "Hội chứng Turner",
+        "cause": "Đột biến số lượng NST giới tính: Thể một XO (45, XO) ở nữ giới.",
+        "symptoms": "Nữ lùn, cổ ngắn có nếp gấp da hình cánh bướm, tuyến vú không phát triển, dạ con hẹp, mất kinh nguyệt và vô sinh."
+      },
+      {
+        "name": "Hội chứng Klinefelter",
+        "cause": "Đột biến số lượng NST giới tính: Thể ba XXY (47, XXY) ở nam giới.",
+        "symptoms": "Nam cao, tay chân dài, tuyến vú phát triển nở to, tinh hoàn nhỏ và không có khả năng sinh tinh (vô sinh)."
+      },
+      {
+        "name": "Bệnh máu khó đông & Mù màu",
+        "cause": "Đột biến gene lặn nằm trên vùng không tương đồng của NST giới tính X (X^h, X^m).",
+        "feature": "Nam giới dễ mắc bệnh hơn nữ giới do nam chỉ cần 1 alen lặn (X^aY) là đã biểu hiện bệnh, trong khi nữ cần cả 2 alen lặn (X^aX^a)."
+      }
+    ]
+  }
+]

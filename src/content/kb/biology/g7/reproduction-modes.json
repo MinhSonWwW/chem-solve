@@ -1,0 +1,72 @@
+[
+  {
+    "id": "kb-bio-g7-sinh-san-vo-tinh",
+    "title": "Sinh sản vô tính ở sinh vật",
+    "definition": "Hình thức sinh sản chỉ cần một cá thể mẹ, không có sự kết hợp giữa giao tử đực và giao tử cái; các cá thể con sinh ra mang vật chất di truyền giống hệt nhau và giống cá thể mẹ ban đầu.",
+    "naturalForms": [
+      { "organ": "Thân củ", "species": "Cây khoai tây (mầm mọc từ các mắt lõm trên thân củ)" },
+      { "organ": "Thân rễ", "species": "Cây gừng, nghệ, dong ta, cỏ tranh (mầm mọc từ thân ngầm dưới đất)" },
+      { "organ": "Thân bò", "species": "Cây rau má, dâu tây (thân mọc bò lan trên mặt đất, bén rễ ở các đốt)" },
+      { "organ": "Lá", "species": "Cây lá bỏng / thuốc bỏng (chồi mầm mọc từ các khía răng cưa mép lá)" }
+    ],
+    "artificialMethods": [
+      {
+        "name": "Giâm cành",
+        "description": "Cắt một đoạn cành bánh tẻ cắm xuống đất ẩm cho ra rễ và chồi mới thành cây độc lập (mía, sắn, dâm bụt, hoa hồng)."
+      },
+      {
+        "name": "Chiết cành",
+        "description": "Bóc một khoanh vỏ trên cành đang sống ở cây mẹ, bọc một bầu đất mùn ẩm; khi rễ mọc ra xuyên qua bầu đất thì cắt cành đem trồng (cam, chanh, bưởi, nhãn)."
+      },
+      {
+        "name": "Ghép cành / Ghép mắt",
+        "description": "Đem cành ghép hoặc mắt ghép gắn chặt vào gốc ghép của cây cùng họ sao cho các tầng sinh mô áp khít nhau để nuôi dưỡng mắt ghép phát triển."
+      },
+      {
+        "name": "Nuôi cấy mô tế bào",
+        "description": "Tách một mẫu mô tế bào thực vật nuôi cấy trong ống nghiệm vô trùng với môi trường dinh dưỡng và hoóc môn nhân tạo để nhân nhanh hàng triệu cây giống sạch bệnh."
+      }
+    ],
+    "animalForms": "Phân đôi (trùng roi, trùng giày), Nảy chồi (thủy tức), Tái sinh (sao biển, giun dẹp)."
+  },
+  {
+    "id": "kb-bio-g7-sinh-san-huu-tinh-hoa",
+    "title": "Sinh sản hữu tính ở thực vật có hoa",
+    "structure": {
+      "co_quan_sinh_san": "Hoa (gồm đài hoa, cánh hoa, nhị hoa và nhụy hoa).",
+      "nhi_hoa": "Cơ quan sinh dục đực, gồm chỉ nhị và bao phấn chứa vô số hạt phấn (mang tinh tử).",
+      "nhuy_hoa": "Cơ quan sinh dục cái, gồm đầu nhụy, vòi nhụy và bầu nhụy chứa noãn (mang trứng)."
+    },
+    "processes": [
+      "Thụ phấn (Pollination): Quá trình hạt phấn tiếp xúc với đầu nhụy (nhờ gió, ong bướm hoặc tự thụ phấn).",
+      "Thụ tinh (Fertilization): Hạt phấn nảy mầm mọc ống phấn chui vào noãn; tinh tử kết hợp với tế bào trứng tạo thành hợp tử.",
+      "Tạo hạt và quả: Hợp tử phát triển thành phôi; noãn biến đổi thành Hạt; bầu nhụy phình to biến đổi thành Quả bảo vệ hạt."
+    ]
+  },
+  {
+    "id": "kb-bio-g7-sinh-san-dong-vat",
+    "title": "Sinh sản hữu tính ở động vật",
+    "comparisons": [
+      {
+        "tieu_chi": "Thụ tinh ngoài",
+        "dac_diem": "Trứng và tinh trùng gặp nhau thụ tinh trong môi trường nước bên ngoài cơ thể mẹ.",
+        "dai_dien": "Cá chép, ếch đồng, nhái bén."
+      },
+      {
+        "tieu_chi": "Thụ tinh trong",
+        "dac_diem": "Tinh trùng được phóng trực tiếp vào cơ quan sinh dục con cái và thụ tinh bên trong cơ thể mẹ, tỉ lệ thụ tinh cao hơn.",
+        "dai_dien": "Bò sát (thằn lằn, rắn), Chim (bồ câu), Động vật có vú (chó, mèo, người)."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g7-co-the-thong-nhat",
+    "title": "Cơ thể sinh vật là một thể thống nhất",
+    "corePrinciples": [
+      "Thống nhất cấu trúc và chức năng: Tế bào là đơn vị cơ bản cấu tạo nên mô, cơ quan, hệ cơ quan và cơ thể toàn vẹn.",
+      "Phối hợp nhịp nhàng ở thực vật: Rễ hút nước khoáng đưa lên thân → Thân chuyển nước cho lá quang hợp → Lá gửi chất hữu cơ nuôi rễ và chồi.",
+      "Phối hợp nhịp nhàng ở động vật: Hệ tiêu hóa cung cấp dưỡng chất, hệ hô hấp cung cấp O2 → Hệ tuần hoàn vận chuyển đi nuôi toàn bộ cơ thể → Hệ bài tiết lọc bỏ chất cặn bã.",
+      "Tính toàn vẹn thích nghi: Cơ thể điều hòa môi trường nội môi bảo vệ tế bào và phản ứng linh hoạt với mọi thay đổi của môi trường ngoại cảnh."
+    ]
+  }
+]

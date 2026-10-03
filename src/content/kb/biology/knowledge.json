@@ -1,0 +1,247 @@
+[
+  {
+    "id": "bio-kinh-lup",
+    "title": "Kính lúp cầm tay",
+    "description": "Dụng cụ quang học đơn giản phóng đại ảnh của vật thể nhỏ từ 3 đến 20 lần."
+  },
+  {
+    "id": "bio-cau-tao-kinh-lup",
+    "title": "Cấu tạo kính lúp",
+    "description": "Gồm 3 bộ phận chính: Mặt kính (thấu kính hội tụ), Khung kính bảo vệ và Tay cầm (hoặc giá đỡ)."
+  },
+  {
+    "id": "bio-su-dung-kinh-lup",
+    "title": "Kỹ thuật sử dụng kính lúp",
+    "description": "Đặt mặt kính gần sát vật mẫu, nhìn mắt vào kính rồi từ từ dịch chuyển kính ra xa cho đến khi thấy rõ chi tiết lớn nhất."
+  },
+  {
+    "id": "bio-bao-quan-kinh-lup",
+    "title": "Bảo quản kính lúp",
+    "description": "Lau mặt kính nhẹ nhàng bằng khăn mềm sạch, không để bề mặt kính cọ xát vật cứng nhọn, cất giữ nơi khô ráo."
+  },
+  {
+    "id": "bio-kinh-hien-vi",
+    "title": "Kính hiển vi quang học",
+    "description": "Dụng cụ quang học phức hợp phóng to ảnh của vật thể từ 40 đến 1000 lần (hoặc hơn), dùng quan sát tế bào và vi sinh vật."
+  },
+  {
+    "id": "bio-cau-tao-kinh-hien-vi",
+    "title": "Cấu tạo kính hiển vi",
+    "description": "Gồm 4 hệ thống chính: Hệ thống giá đỡ, Hệ thống phóng đại, Hệ thống chiếu sáng và Hệ thống điều chỉnh."
+  },
+  {
+    "id": "bio-he-thong-phong-dai",
+    "title": "Hệ thống phóng đại",
+    "description": "Gồm Thị kính (gắn ở đầu ống ngắm, thường có độ phóng đại 10x, 16x) và Vật kính (gắn ở mâm xoay, thường có 4x, 10x, 40x, 100x)."
+  },
+  {
+    "id": "bio-do-phong-dai-tong",
+    "title": "Công thức độ phóng đại kính hiển vi",
+    "description": "Độ phóng đại tổng cộng của kính hiển vi = Độ phóng đại thị kính × Độ phóng đại vật kính."
+  },
+  {
+    "id": "bio-he-thong-dieu-chinh",
+    "title": "Hệ thống điều chỉnh ốc to & ốc nhỏ",
+    "description": "Ốc to (ốc sơ cấp) nâng hạ bàn kính nhanh để tìm ảnh; Ốc nhỏ (ốc vi cấp) di chuyển rất chậm để lấy nét sắc nét chi tiết."
+  },
+  {
+    "id": "bio-quy-trinh-kinh-hien-vi",
+    "title": "Quy trình 3 bước sử dụng kính hiển vi",
+    "description": "Bước 1: Lấy sáng (chỉnh gương/đèn và màn chắn sáng); Bước 2: Đặt tiêu bản lên bàn kính; Bước 3: Lấy nét (dùng ốc to tìm ảnh rồi ốc nhỏ tinh chỉnh)."
+  },
+  {
+    "id": "bio-bao-quan-kinh-hien-vi",
+    "title": "Bảo quản kính hiển vi",
+    "description": "Bê kính bằng 2 tay (một tay nắm thân kính, một tay đỡ chân kính), lau thấu kính bằng giấy lau chuyên dụng, đậy bao chống bụi sau khi dùng."
+  },
+  {
+    "id": "bio-te-bao-don-vi-song",
+    "title": "Tế bào – Đơn vị cơ bản của sự sống",
+    "description": "Mọi cơ thể sinh vật sống (thực vật, động vật, con người, vi sinh vật) đều được cấu tạo từ một hay nhiều tế bào."
+  },
+  {
+    "id": "bio-kich-thuoc-hinh-dang-te-bao",
+    "title": "Kích thước & Hình dạng tế bào",
+    "description": "Hầu hết tế bào có kích thước hiển vi (1-100 μm). Một số tế bào khổng lồ nhìn thấy bằng mắt thường: tép bưởi, trứng chim, trứng cá, sợi gai. Hình dạng rất đa dạng: hình đĩa, hình sợi, hình sao, hình cầu, hình chữ nhật."
+  },
+  {
+    "id": "bio-cau-tao-te-bao",
+    "title": "3 thành phần cấu tạo cơ bản của tế bào",
+    "description": "Mọi tế bào đều gồm 3 thành phần chính: Màng tế bào (màng sinh chất), Chất tế bào (bào tương chứa bào quan) và Nhân (hoặc Vùng nhân chứa vật chất di truyền)."
+  },
+  {
+    "id": "bio-chuc-nang-thanh-phan-te-bao",
+    "title": "Chức năng các thành phần tế bào",
+    "description": "Màng tế bào: Bảo vệ và kiểm soát các chất ra vào tế bào; Chất tế bào: Nơi diễn ra các hoạt động sống; Nhân/Vùng nhân: Chứa DNA điều khiển mọi hoạt động sống của tế bào."
+  },
+  {
+    "id": "bio-te-bao-nhan-so-nhan-thuc",
+    "title": "Tế bào nhân sơ vs Tế bào nhân thực",
+    "description": "Tế bào nhân sơ (vi khuẩn): Chưa có màng nhân bao bọc vùng nhân, cấu tạo đơn giản; Tế bào nhân thực (thực vật, động vật, nấm): Đã có màng nhân bao bọc nhân hoàn chỉnh và nhiều bào quan có màng."
+  },
+  {
+    "id": "bio-te-bao-thuc-vat-dong-vat",
+    "title": "Tế bào thực vật vs Tế bào động vật",
+    "description": "Tế bào thực vật có thêm Thành tế bào (xenlulozo) tạo hình dạng cố định, Lục lạp (chứa diệp lục để quang hợp) và Không bào lớn trung tâm; Tế bào động vật không có thành tế bào và không có lục lạp."
+  },
+  {
+    "id": "bio-su-lon-len-te-bao",
+    "title": "Sự lớn lên của tế bào",
+    "description": "Tế bào non hấp thụ nước và chất dinh dưỡng để tăng kích thước và khối lượng cho đến khi đạt kích thước của tế bào trưởng thành."
+  },
+  {
+    "id": "bio-su-sinh-san-te-bao",
+    "title": "Sự sinh sản (phân chia) của tế bào",
+    "description": "Từ một tế bào mẹ, nhân phân chia trước thành 2 nhân, sau đó chất tế bào phân chia, hình thành vách ngăn để tạo ra 2 tế bào con."
+  },
+  {
+    "id": "bio-cong-thuc-phan-chia-te-bao",
+    "title": "Công thức số tế bào con sau phân chia",
+    "description": "Từ 1 tế bào ban đầu sau n lần phân chia tạo ra N = 2^n tế bào con. Với a tế bào ban đầu thì số tế bào con tạo thành là N = a × 2^n."
+  },
+  {
+    "id": "bio-y-nghia-phan-chia-te-bao",
+    "title": "Ý nghĩa của sự lớn lên và phân chia tế bào",
+    "description": "Giúp cơ thể sinh vật tăng trưởng về kích thước (lớn lên), đồng thời tái tạo, làm lành vết thương và thay thế các tế bào già, chết hoặc bị tổn thương."
+  },
+  {
+    "id": "bio-thuc-hanh-te-bao-hanh-ca-chua",
+    "title": "Quan sát tế bào biểu bì vảy hành & thịt quả cà chua",
+    "description": "Tế bào biểu bì vảy hành xếp khít nhau có hình đa giác/chữ nhật với thành tế bào rõ rệt; tế bào thịt quả cà chua rời rạc hình cầu/bầu dục chứa nhiều hạt sắc tố đỏ lycopene."
+  },
+  {
+    "id": "bio-qua-trinh-song-co-the",
+    "title": "Các quá trình sống đặc trưng của cơ thể sinh vật",
+    "description": "Mọi cơ thể sinh vật sống đều thực hiện các quá trình sống cơ bản: Cảm ứng, Dinh dưỡng, Hô hấp, Bài tiết, Sinh trưởng và Sinh sản."
+  },
+  {
+    "id": "bio-sinh-vat-don-bao",
+    "title": "Sinh vật đơn bào",
+    "description": "Cơ thể chỉ gồm một tế bào duy nhất nhưng thực hiện toàn bộ các chức năng sống (ví dụ: vi khuẩn E. coli, trùng roi xanh, trùng giày, trùng biến hình, tảo lục đơn bào)."
+  },
+  {
+    "id": "bio-sinh-vat-da-bao",
+    "title": "Sinh vật đa bào",
+    "description": "Cơ thể cấu tạo từ nhiều tế bào có sự phân hóa về hình dạng, cấu tạo và phối hợp thực hiện các chức năng sống (ví dụ: cây bàng, con mèo, con người)."
+  },
+  {
+    "id": "bio-cap-do-to-chuc-song",
+    "title": "Các cấp độ tổ chức cơ thể đa bào",
+    "description": "Chuỗi cấp độ tổ chức từ nhỏ đến lớn: Tế bào → Mô → Cơ quan → Hệ cơ quan → Cơ thể."
+  },
+  {
+    "id": "bio-mo-thuc-vat-dong-vat",
+    "title": "Các loại mô ở thực vật và động vật",
+    "description": "Mô là tập hợp tế bào có hình dạng và chức năng giống nhau. Thực vật: mô phân sinh, mô bì, mô dẫn (mạch gỗ, mạch rây), mô cơ bản; Động vật: mô biểu bì, mô cơ, mô thần kinh, mô liên kết."
+  },
+  {
+    "id": "bio-co-quan-he-co-quan-thuc-vat",
+    "title": "Cơ quan và hệ cơ quan ở thực vật",
+    "description": "Cơ quan sinh dưỡng (rễ, thân, lá) và cơ quan sinh sản (hoa, quả, hạt); phối hợp thành 2 hệ cơ quan chính: Hệ chồi (trên mặt đất) và Hệ rễ (dưới mặt đất)."
+  },
+  {
+    "id": "bio-co-quan-he-co-quan-dong-vat",
+    "title": "Cơ quan và hệ cơ quan ở động vật",
+    "description": "Các cơ quan (tim, phổi, dạ dày, não, thận...) liên kết thành các hệ cơ quan chuyên trách: Hệ tuần hoàn, hệ hô hấp, hệ tiêu hóa, hệ bài tiết, hệ thần kinh, hệ vận động."
+  },
+  {
+    "id": "bio-thuc-hanh-don-bao-da-bao",
+    "title": "Thực hành quan sát cơ thể đơn bào & đa bào",
+    "description": "Quan sát trùng roi, trùng giày trong nước ngâm rơm rạ (dùng sợi bông cản tốc độ bơi); quan sát mô hình các cơ quan của cây xanh có hoa và cơ thể người."
+  },
+  {
+    "id": "bio-phan-loai-bac",
+    "title": "7 bậc phân loại sinh vật",
+    "description": "Thứ bậc từ nhỏ đến lớn: Loài → Chi (giống) → Họ → Bộ → Lớp → Ngành → Giới. Loài là bậc phân loại cơ bản nhất."
+  },
+  {
+    "id": "bio-he-thong-5-gioi",
+    "title": "Hệ thống 5 giới sinh vật (Whittaker)",
+    "description": "Gồm 5 giới: Giới Khởi sinh (Monera - vi khuẩn), Giới Nguyên sinh (Protista), Giới Nấm (Fungi), Giới Thực vật (Plantae) và Giới Động vật (Animalia)."
+  },
+  {
+    "id": "bio-ten-khoa-hoc",
+    "title": "Quy tắc gọi tên khoa học của loài",
+    "description": "Tên khoa học của loài gồm 2 từ in nghiêng: Tên Chi (viết hoa chữ cái đầu) + Tên Loài (viết thường toàn bộ). Ví dụ: Homo sapiens (con người)."
+  },
+  {
+    "id": "bio-khoa-luong-phan",
+    "title": "Khóa lưỡng phân",
+    "description": "Phương pháp phân loại sinh vật bằng cách dựa vào một cặp đặc điểm đối lập để phân chia dần thành hai nhóm cho đến khi xác định được từng loài."
+  },
+  {
+    "id": "bio-vi-khuan",
+    "title": "Vi khuẩn (Bacteria)",
+    "description": "Sinh vật nhân sơ đơn bào siêu nhỏ (0,5-5 μm), hình dạng phong phú (que, cầu, xoắn, phẩy). Lợi ích: Lên men sữa chua, muối dưa, phân giải xác hữu cơ; Tác hại: Gây bệnh tả, lao, thương hàn, làm hỏng thức ăn."
+  },
+  {
+    "id": "bio-thuc-hanh-sua-chua",
+    "title": "Thực hành làm sữa chua & lên men vi khuẩn",
+    "description": "Vi khuẩn lactic lên men đường lactose thành acid lactic ở nhiệt độ ủ ấm 40-50°C trong 6-8 giờ làm sữa đông tụ sánh mịn."
+  },
+  {
+    "id": "bio-virus",
+    "title": "Virus",
+    "description": "Thực thể siêu vi (20-300 nm), chưa có cấu tạo tế bào, gồm vỏ protein bọc lõi acid nucleic (DNA hoặc RNA), ký sinh nội bào bắt buộc. Kháng sinh KHÔNG tiêu diệt được virus; phòng ngừa bằng tiêm vaccine."
+  },
+  {
+    "id": "bio-nguyen-sinh-vat",
+    "title": "Nguyên sinh vật (Protista)",
+    "description": "Sinh vật nhân thực, đa số đơn bào. Đại diện: Trùng roi, trùng giày, trùng biến hình, tảo lục đơn bào. Trùng sốt rét truyền qua muỗi Anopheles gây sốt rét; trùng kiết lị gây lị amip."
+  },
+  {
+    "id": "bio-thuc-hanh-nguyen-sinh-vat",
+    "title": "Thực hành quan sát nguyên sinh vật",
+    "description": "Làm tiêu bản giọt nước ao hồ hoặc nước cỏ rơm ngâm, quan sát hình dạng và chuyển động của trùng roi, trùng giày, tảo silic dưới kính hiển vi."
+  },
+  {
+    "id": "bio-gioi-nam",
+    "title": "Giới Nấm (Fungi)",
+    "description": "Sinh vật nhân thực, dị dưỡng, thành tế bào chitin. Phân loại: Nấm men (đơn bào), nấm mốc (sợi), nấm lớn thể quả (nấm rơm, nấm linh chi). Nấm độc nhận diện qua vòng cuống, bao gốc và màu sặc sỡ."
+  },
+  {
+    "id": "bio-thuc-hanh-nam",
+    "title": "Thực hành quan sát các loại nấm",
+    "description": "Quan sát hệ sợi nấm mốc trên bánh mì và cấu tạo 5 bộ phận nấm rơm (mũ nấm, phiến nấm mang bào tử, cuống nấm, vòng cuống, bao gốc nấm)."
+  },
+  {
+    "id": "bio-thuc-vat-4-nganh",
+    "title": "4 ngành thực vật chính",
+    "description": "Tiến hóa từ thấp đến cao: Ngành Rêu (chưa có mạch, rễ giả, bào tử), Ngành Dương xỉ (có mạch dẫn, lá non cuộn, bào tử), Ngành Hạt trần (nón mang hạt hở), Ngành Hạt kín (có hoa và quả bảo vệ hạt)."
+  },
+  {
+    "id": "bio-thuc-hanh-thuc-vat",
+    "title": "Thực hành phân biệt các nhóm thực vật",
+    "description": "Quan sát đặc điểm rễ giả và túi bào tử ở rêu; ổ bào tử và lá non cuộn ở dương xỉ; nón thông hạt trần và cấu tạo hoa quả hạt kín."
+  },
+  {
+    "id": "bio-gioi-dong-vat",
+    "title": "Giới Động vật (Animalia)",
+    "description": "Sinh vật nhân thực, đa bào, dị dưỡng, đa số di chuyển linh hoạt và có phản ứng nhanh với kích thích. Gồm 2 nhóm lớn: Động vật không xương sống (95%) và Động vật có xương sống (5%)."
+  },
+  {
+    "id": "bio-dong-vat-khong-xuong-song",
+    "title": "Động vật không xương sống",
+    "description": "Chiếm 95% số loài động vật, cơ thể không có cột sống. Gồm 4 nhóm chính: Ruột khoang (đối xứng tỏa tròn), các ngành Giun, Thân mềm (vỏ đá vôi), Chân khớp (chân phân đốt, vỏ kitin)."
+  },
+  {
+    "id": "bio-dong-vat-co-xuong-song",
+    "title": "5 lớp động vật có xương sống",
+    "description": "Gồm 5 lớp: Lớp Cá (vây bơi, mang thở), Lớp Lưỡng cư (da trần ẩm ướt, hô hấp da và phổi), Lớp Bò sát (da khô vảy sừng), Lớp Chim (lông vũ, cánh, đẳng nhiệt), Lớp Thú (lông mao, đẻ con và nuôi con bằng sữa, đẳng nhiệt)."
+  },
+  {
+    "id": "bio-thuc-hanh-dong-vat",
+    "title": "Thực hành quan sát động vật ngoài thiên nhiên",
+    "description": "Quan sát tập tính di chuyển, cơ quan vận động và môi trường sống của các loài động vật không xương sống và có xương sống."
+  },
+  {
+    "id": "bio-da-dang-sinh-hoc",
+    "title": "Đa dạng sinh học và bảo tồn",
+    "description": "Phong phú về loài, nguồn gen và hệ sinh thái. Vai trò duy trì cân bằng tự nhiên và cung cấp tài nguyên sống. Bảo vệ đa dạng sinh học qua thành lập vườn quốc gia, bảo vệ rừng và Sách Đỏ."
+  },
+  {
+    "id": "bio-khao-sat-ngoai-thien-nhien",
+    "title": "Khảo sát sinh vật ngoài thiên nhiên",
+    "description": "Kỹ năng khảo sát thực địa sinh thái học: Sử dụng kính lúp, sổ ghi chép, máy ảnh; nguyên tắc bảo vệ cảnh quan thiên nhiên và tôn trọng môi trường sống của sinh vật."
+  }
+]

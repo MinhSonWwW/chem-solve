@@ -1,0 +1,507 @@
+[
+  {
+    "id": "bio-g7-b04-q01",
+    "lessonId": "bio-g7-b04",
+    "sgkBaiSo": 24,
+    "skillIds": [
+      "bio-thuc-hanh-quang-hop"
+    ],
+    "difficulty": 1,
+    "prompt": "Thuốc thử hóa học nào được sử dụng để nhận biết sự có mặt của tinh bột trong thí nghiệm chứng minh quang hợp?",
+    "knowledge": [
+      "kb-bio-g7-thuc-hanh-tinh-bot"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Dung dịch Iodine"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nước vôi trong Ca(OH)2"
+        },
+        {
+          "id": "opt-c",
+          "label": "Dung dịch muối ăn NaCl"
+        },
+        {
+          "id": "opt-d",
+          "label": "Dung dịch acid HCl"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Dung dịch này có màu vàng nâu, khi gặp tinh bột sẽ chuyển sang màu xanh tím đặc trưng."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 24 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận biết thuốc thử tinh bột",
+        "body": "Thuốc thử đặc trưng nhận biết tinh bột là dung dịch Iodine."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Dung dịch Iodine tác dụng với tinh bột tạo hợp chất màu xanh tím."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Dung dịch Iodine."
+      }
+    ],
+    "finalSolution": "Dung dịch Iodine tác dụng với tinh bột tạo hợp chất màu xanh tím.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm với nước vôi trong (thuốc thử nhận biết khí CO2)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g7-b04-q02",
+    "lessonId": "bio-g7-b04",
+    "sgkBaiSo": 24,
+    "skillIds": [
+      "bio-thuc-hanh-quang-hop"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi đưa que đóm còn tàn đỏ vào miệng ống nghiệm thu khí từ cành rong đuôi chó để ngoài nắng, hiện tượng gì đã xảy ra?",
+    "knowledge": [
+      "kb-bio-g7-thuc-hanh-oxygen"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Que đóm bùng cháy sáng mãnh liệt"
+        },
+        {
+          "id": "opt-b",
+          "label": "Que đóm bị dập tắt ngay lập tức"
+        },
+        {
+          "id": "opt-c",
+          "label": "Que đóm phát ra tiếng nổ lách tách rồi tắt"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tàn đỏ biến thành màu xanh lục"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khí thu được từ quang hợp là Oxygen - chất khí duy trì sự cháy."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 24 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hiện tượng que đóm gặp khí O2",
+        "body": "Khí O2 duy trì sự cháy nên làm que đóm tàn đỏ bùng cháy thành ngọn lửa."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Khí O2 sinh ra từ quang hợp làm que đóm còn tàn đỏ bùng cháy sáng."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Que đóm bùng cháy sáng."
+      }
+    ],
+    "finalSolution": "Khí O2 sinh ra từ quang hợp làm que đóm còn tàn đỏ bùng cháy sáng.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b04-q03",
+    "lessonId": "bio-g7-b04",
+    "sgkBaiSo": 24,
+    "skillIds": [
+      "bio-thuc-hanh-quang-hop"
+    ],
+    "difficulty": 2,
+    "prompt": "Mục đích của việc để chậu cây vào chỗ tối 2 ngày trước khi tiến hành thí nghiệm chứng minh sự tạo thành tinh bột là gì?",
+    "knowledge": [
+      "kb-bio-g7-thuc-hanh-tinh-bot"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Để cây tiêu thụ hết lượng tinh bột đã có sẵn trong lá từ trước"
+        },
+        {
+          "id": "opt-b",
+          "label": "Để làm cho lá cây mềm ra dễ bịt băng giấy đen"
+        },
+        {
+          "id": "opt-c",
+          "label": "Để diệt hết toàn bộ diệp lục có trong lục lạp"
+        },
+        {
+          "id": "opt-d",
+          "label": "Để kích thích rễ cây hút nhiều nước hơn"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nếu không tiêu hết tinh bột cũ, phần lá bị che đen vẫn có thể chứa tinh bột từ hôm trước làm sai lệch kết quả."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 24 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu câu hỏi",
+        "body": "Mục đích của việc để chậu cây vào chỗ tối 2 ngày trước khi tiến hành thí nghiệm chứng minh sự tạo thành tinh bột là gì?"
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy trình chuẩn hóa thí nghiệm",
+        "body": "Để trong tối giúp cây chỉ hô hấp mà không quang hợp, tiêu hao hết tinh bột tích trữ cũ, đảm bảo tinh bột sau này chỉ sinh ra do phần lá được chiếu sáng mới."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tiêu thụ hết lượng tinh bột có sẵn trong lá."
+      }
+    ],
+    "finalSolution": "Đặt cây trong tối 2 ngày giúp loại bỏ tinh bột tồn dư trước thí nghiệm.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b04-q04",
+    "lessonId": "bio-g7-b04",
+    "sgkBaiSo": 24,
+    "skillIds": [
+      "bio-thuc-hanh-quang-hop"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp đúng thứ tự các bước tiến hành thí nghiệm chứng minh sự tạo thành tinh bột trong quang hợp ở cây xanh:",
+    "knowledge": [
+      "kb-bio-g7-thuc-hanh-tinh-bot"
+    ],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Đặt chậu cây vào chỗ tối 2 ngày",
+        "Bịt băng giấy đen một phần lá và đem phơi nắng 4-6 giờ",
+        "Ngắt lá, tháo băng giấy đen",
+        "Đun cách thủy lá trong cồn 90° để tẩy diệp lục",
+        "Rửa lá trong nước ấm và nhỏ dung dịch Iodine"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bắt đầu bằng việc để cây trong tối, kết thúc bằng việc nhỏ thuốc thử Iodine lên lá đã tẩy trắng."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 24 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định trình tự thí nghiệm",
+        "body": "Quy trình: Để tối → Bịt giấy đen & phơi sáng → Ngắt lá & tháo giấy → Đun cách thủy cồn → Rửa & nhỏ Iodine."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Trình tự chuẩn: Để tối → Bịt giấy & phơi nắng → Tháo giấy → Đun cồn cách thủy → Nhỏ dung dịch Iodine."
+      },
+      {
+        "kind": "answer",
+        "title": "Sắp xếp theo thứ tự",
+        "body": "Đúng trình tự 5 bước theo sách giáo khoa KHTN 7."
+      }
+    ],
+    "finalSolution": "Trình tự chuẩn: Để tối → Bịt giấy & phơi nắng → Tháo giấy → Đun cồn cách thủy → Nhỏ dung dịch Iodine.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b04-q05",
+    "lessonId": "bio-g7-b04",
+    "sgkBaiSo": 24,
+    "skillIds": [
+      "bio-thuc-hanh-quang-hop"
+    ],
+    "difficulty": 2,
+    "prompt": "Tại sao trong phòng thí nghiệm, khi tẩy diệp lục ta BẮT BUỘC phải đun CÁCH THỦY cốc cồn chứa lá cây thay vì đun trực tiếp trên ngọn lửa đèn cồn?",
+    "knowledge": [
+      "kb-bio-g7-an-toan-thi-nghiem"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vì cồn là chất lỏng cực kì dễ bay hơi và dễ bắt lửa bốc cháy gây nguy hiểm"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vì đun trực tiếp sẽ làm chiếc lá biến thành tro đen ngay lập tức"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì cồn đun trực tiếp sẽ biến thành nước tinh khiết không tẩy được diệp lục"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì ngọn lửa đèn cồn sẽ làm vỡ tan đáy cốc thủy tinh ngay khi chạm vào"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Quy tắc an toàn phòng thí nghiệm đối với các dung môi hữu cơ dễ cháy như cồn (ethanol)."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 24 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu câu hỏi",
+        "body": "Tại sao trong phòng thí nghiệm, khi tẩy diệp lục ta BẮT BUỘC phải đun CÁCH THỦY cốc cồn chứa lá cây thay vì đun trực tiếp trên ngọn lửa đèn cồn?"
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tính chất dễ cháy của cồn",
+        "body": "Cồn 90° bốc hơi ở nhiệt độ thấp (~78°C) và hơi cồn rất dễ bắt lửa gây cháy nổ nếu tiếp xúc trực tiếp ngọn lửa. Đun cách thủy trong nồi nước sôi đảm bảo nhiệt độ ổn định và an toàn cháy nổ."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đun cách thủy để phòng tránh nguy cơ bắt lửa bốc cháy."
+      }
+    ],
+    "finalSolution": "Cồn dễ bay hơi và dễ bắt lửa nên tuyệt đối phải đun cách thủy để đảm bảo an toàn phòng thực hành.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b04-q06",
+    "lessonId": "bio-g7-b04",
+    "sgkBaiSo": 24,
+    "skillIds": [
+      "bio-thuc-hanh-quang-hop"
+    ],
+    "difficulty": 2,
+    "prompt": "Sau khi nhỏ dung dịch Iodine lên chiếc lá thí nghiệm, kết quả quan sát thấy được là gì?",
+    "knowledge": [
+      "kb-bio-g7-thuc-hanh-tinh-bot"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Phần lá được chiếu sáng hóa màu xanh tím, phần lá bị bịt giấy đen không đổi màu (giữ màu vàng nâu)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Toàn bộ chiếc lá biến thành màu xanh tím đồng đều"
+        },
+        {
+          "id": "opt-c",
+          "label": "Phần lá bị bịt giấy đen hóa màu xanh tím, phần được chiếu sáng hóa màu đỏ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Toàn bộ chiếc lá bị hòa tan biến mất trong dung dịch Iodine"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Chỉ có phần lá nhận được ánh sáng mặt trời mới tiến hành quang hợp tạo ra tinh bột."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 24 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hiện tượng đổi màu với Iodine",
+        "body": "Phần hứng sáng: quang hợp → có tinh bột → màu xanh tím. Phần bịt giấy đen: không có ánh sáng → không quang hợp → không tinh bột → giữ màu vàng nâu của Iodine."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Chỉ phần lá được chiếu sáng mới xuất hiện màu xanh tím do chứa tinh bột mới quang hợp."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Đáp án A mô tả đúng kết quả thí nghiệm."
+      }
+    ],
+    "finalSolution": "Chỉ phần lá được chiếu sáng mới xuất hiện màu xanh tím do chứa tinh bột mới quang hợp.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b04-q07",
+    "lessonId": "bio-g7-b04",
+    "sgkBaiSo": 24,
+    "skillIds": [
+      "bio-thuc-hanh-quang-hop"
+    ],
+    "difficulty": 3,
+    "prompt": "Nếu thay cành rong đuôi chó để ngoài nắng bằng một cành rong để hoàn toàn trong bóng tối thì hiện tượng thu được ở ống nghiệm sẽ như thế nào?",
+    "knowledge": [
+      "kb-bio-g7-thuc-hanh-oxygen"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hầu như không có bọt khí nổi lên và mực nước trong ống nghiệm không tụt xuống"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bọt khí sủi lên dữ dội gấp đôi so với cốc để ngoài nắng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ống nghiệm sẽ hút cành rong vào bên trong"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nước trong ống nghiệm chuyển sang màu đen kịt"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Không có ánh sáng thì quá trình quang hợp không thể diễn ra để giải phóng khí O2."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 24 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu câu hỏi",
+        "body": "Nếu thay cành rong đuôi chó để ngoài nắng bằng một cành rong để hoàn toàn trong bóng tối thì hiện tượng thu được ở ống nghiệm sẽ như thế nào?"
+      },
+      {
+        "kind": "knowledge",
+        "title": "Điều kiện ánh sáng trong quang hợp",
+        "body": "Trong bóng tối, cây không nhận được năng lượng quang năng nên không xảy ra quang phân li nước và quang hợp, không tạo ra bọt khí O2."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Không có bọt khí sinh ra, mực nước không tụt."
+      }
+    ],
+    "finalSolution": "Trong bóng tối cây không quang hợp nên không giải phóng bọt khí Oxygen.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b04-q08",
+    "lessonId": "bio-g7-b04",
+    "sgkBaiSo": 24,
+    "skillIds": [
+      "bio-thuc-hanh-quang-hop"
+    ],
+    "difficulty": 3,
+    "prompt": "Từ kết quả của cả hai thí nghiệm trên, học sinh có thể rút ra KẾT LUẬN KHOA HỌC nào sau đây?",
+    "knowledge": [
+      "kb-bio-g7-ket-luan-quang-hop"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Quang hợp ở cây xanh cần có ánh sáng, sản phẩm tạo thành là tinh bột và giải phóng khí oxygen"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cây xanh chỉ quang hợp được khi ngâm hoàn toàn chìm trong nước"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tinh bột chỉ được tạo thành ở cành rong đuôi chó chứ không có ở cây trồng trên cạn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khí oxygen được tạo ra bởi cồn 90° chứ không phải do lá cây"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thí nghiệm 1 chứng minh sản phẩm tinh bột; Thí nghiệm 2 chứng minh sản phẩm khí Oxygen, cả 2 đều phụ thuộc ánh sáng."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 24 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tổng hợp kết luận thí nghiệm",
+        "body": "Hai thí nghiệm chứng minh trọn vẹn sản phẩm vật chất của quang hợp: chất hữu cơ (tinh bột) và chất khí (Oxygen)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Quang hợp cần ánh sáng để tổng hợp tinh bột và giải phóng khí oxygen."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Đáp án A là kết luận khoa học đầy đủ và chính xác nhất."
+      }
+    ],
+    "finalSolution": "Quang hợp cần ánh sáng để tổng hợp tinh bột và giải phóng khí oxygen.",
+    "commonMistakes": []
+  }
+]

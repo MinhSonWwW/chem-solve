@@ -1,0 +1,523 @@
+[
+  {
+    "id": "bio-g7-b05-q01",
+    "lessonId": "bio-g7-b05",
+    "sgkBaiSo": 25,
+    "skillIds": [
+      "bio-ho-hap-te-bao"
+    ],
+    "difficulty": 1,
+    "prompt": "Bào quan nào bên trong tế bào được mệnh danh là 'nhà máy năng lượng', nơi diễn ra quá trình hô hấp tế bào?",
+    "knowledge": [
+      "kb-bio-g7-ho-hap-te-bao-khai-niem"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Ty thể"
+        },
+        {
+          "id": "opt-b",
+          "label": "Lục lạp"
+        },
+        {
+          "id": "opt-c",
+          "label": "Không bào"
+        },
+        {
+          "id": "opt-d",
+          "label": "Lưới nội chất"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bào quan này có màng trong gấp nếp chứa các enzym oxy hóa phân giải glucose."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 25 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận biết bào quan hô hấp",
+        "body": "Đề bài hỏi về bào quan diễn ra hô hấp tế bào."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Chức năng của ty thể",
+        "body": "Ty thể là nơi phân giải chất hữu cơ giải phóng năng lượng ATP."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Ty thể là câu trả lời đúng."
+      }
+    ],
+    "finalSolution": "Ty thể là bào quan thực hiện hô hấp tế bào ở sinh vật nhân thực.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm với lục lạp (nơi diễn ra quang hợp)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g7-b05-q02",
+    "lessonId": "bio-g7-b05",
+    "sgkBaiSo": 25,
+    "skillIds": [
+      "bio-ho-hap-te-bao"
+    ],
+    "difficulty": 1,
+    "prompt": "Nguyên liệu tham gia vào quá trình hô hấp tế bào bao gồm những chất nào?",
+    "knowledge": [
+      "kb-bio-g7-ho-hap-te-bao-khai-niem"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Glucose và khí Oxygen (O2)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nước và khí Carbon dioxide (CO2)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Nước và tinh bột nguyên vẹn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chất diệp lục và năng lượng mặt trời"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tế bào cần chất dinh dưỡng hữu cơ và khí oxygen lấy từ hệ hô hấp."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 25 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu câu hỏi",
+        "body": "Nguyên liệu tham gia vào quá trình hô hấp tế bào bao gồm những chất nào?"
+      },
+      {
+        "kind": "equation",
+        "title": "Phương trình hô hấp",
+        "body": "Glucose + Oxygen → Carbon dioxide + Nước + ATP."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Glucose và Oxygen là chất tham gia."
+      }
+    ],
+    "finalSolution": "Hô hấp tế bào sử dụng chất hữu cơ (glucose) và oxygen để tạo năng lượng.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b05-q03",
+    "lessonId": "bio-g7-b05",
+    "sgkBaiSo": 25,
+    "skillIds": [
+      "bio-ho-hap-te-bao"
+    ],
+    "difficulty": 2,
+    "prompt": "Phương trình chữ nào sau đây mô tả ĐÚNG bản chất của quá trình hô hấp tế bào?",
+    "knowledge": [
+      "kb-bio-g7-ho-hap-te-bao-khai-niem"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Glucose + Oxygen → Carbon dioxide + Nước + Năng lượng (ATP + Nhiệt)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Carbon dioxide + Nước → Glucose + Oxygen + Năng lượng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Glucose + Nước → Carbon dioxide + Oxygen"
+        },
+        {
+          "id": "opt-d",
+          "label": "Oxygen + Carbon dioxide → Glucose + Nước + Nhiệt"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Quá trình này oxy hóa phân giải glucose giải phóng CO2, nước và năng lượng."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 25 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu câu hỏi",
+        "body": "Phương trình chữ nào sau đây mô tả ĐÚNG bản chất của quá trình hô hấp tế bào?"
+      },
+      {
+        "kind": "equation",
+        "title": "Kiểm tra phương trình",
+        "body": "Chất tham gia: Glucose + Oxygen. Sản phẩm: Carbon dioxide + Nước + Năng lượng (ATP + Nhiệt)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án A là phương trình chính xác."
+      }
+    ],
+    "finalSolution": "Phương trình hô hấp: Glucose + Oxygen → Carbon dioxide + Nước + Năng lượng (ATP + Nhiệt).",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b05-q04",
+    "lessonId": "bio-g7-b05",
+    "sgkBaiSo": 25,
+    "skillIds": [
+      "bio-ho-hap-te-bao"
+    ],
+    "difficulty": 2,
+    "prompt": "Năng lượng được giải phóng từ quá trình hô hấp tế bào được lưu trữ chủ yếu dưới dạng phân tử nào để cung cấp trực tiếp cho các hoạt động sống của tế bào?",
+    "knowledge": [
+      "kb-bio-g7-ho-hap-te-bao-khai-niem"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Phân tử ATP (Adenosine Triphosphate)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Phân tử Glucose"
+        },
+        {
+          "id": "opt-c",
+          "label": "Phân tử Tinh bột"
+        },
+        {
+          "id": "opt-d",
+          "label": "Phân tử Nước"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Được coi là 'đồng tiền năng lượng' vạn năng của mọi tế bào sống."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 25 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Dạng năng lượng trực tiếp",
+        "body": "ATP là dạng năng lượng hóa học dễ phân giải để thực hiện công co cơ, vận chuyển chất và tổng hợp chất."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "ATP là dạng năng lượng trực tiếp được sinh ra từ hô hấp tế bào."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Phân tử ATP."
+      }
+    ],
+    "finalSolution": "ATP là dạng năng lượng trực tiếp được sinh ra từ hô hấp tế bào.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b05-q05",
+    "lessonId": "bio-g7-b05",
+    "sgkBaiSo": 25,
+    "skillIds": [
+      "bio-ho-hap-te-bao"
+    ],
+    "difficulty": 2,
+    "prompt": "Điểm KHÁC BIỆT cơ bản nhất về mặt chuyển hóa năng lượng giữa quang hợp và hô hấp tế bào là gì?",
+    "knowledge": [
+      "kb-bio-g7-so-sanh-quang-hop-ho-hap"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Quang hợp tích lũy năng lượng trong chất hữu cơ, còn hô hấp tế bào giải phóng năng lượng từ chất hữu cơ"
+        },
+        {
+          "id": "opt-b",
+          "label": "Quang hợp chỉ tạo ra nhiệt năng, còn hô hấp tế bào tạo ra quang năng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Quang hợp tiêu tốn phân tử ATP, còn hô hấp tế bào hấp thụ ánh sáng mặt trời"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cả hai quá trình đều chỉ giải phóng nhiệt năng ra môi trường ngoài"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Một bên tổng hợp và tích lũy; một bên phân giải và giải phóng."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 25 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu câu hỏi",
+        "body": "Điểm KHÁC BIỆT cơ bản nhất về mặt chuyển hóa năng lượng giữa quang hợp và hô hấp tế bào là gì?"
+      },
+      {
+        "kind": "knowledge",
+        "title": "So sánh hai chiều",
+        "body": "Quang hợp: Quang năng → Hóa năng tích lũy. Hô hấp tế bào: Hóa năng tích lũy → ATP hoạt dụng + Nhiệt năng."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Đáp án A mô tả đúng bản chất đối lập."
+      }
+    ],
+    "finalSolution": "Quang hợp tích lũy năng lượng, hô hấp tế bào giải phóng năng lượng.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b05-q06",
+    "lessonId": "bio-g7-b05",
+    "sgkBaiSo": 25,
+    "skillIds": [
+      "bio-ho-hap-te-bao"
+    ],
+    "difficulty": 2,
+    "prompt": "Nhận định nào sau đây là SAI khi nói về quá trình hô hấp ở thực vật?",
+    "knowledge": [
+      "kb-bio-g7-ho-hap-te-bao-khai-niem"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cây xanh chỉ hô hấp vào ban đêm, ban ngày cây không hô hấp mà chỉ quang hợp"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hô hấp tế bào diễn ra liên tục cả ngày lẫn đêm ở tất cả các cơ quan của cây"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hô hấp phân giải glucose tạo ra carbon dioxide và nước"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tế bào rễ, thân, lá của cây đều cần năng lượng từ hô hấp để sống"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cây xanh là sinh vật sống, nếu ngừng hô hấp vào ban ngày thì các tế bào sẽ thiếu năng lượng và chết."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 25 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tìm nhận định sai",
+        "body": "Khẳng định 'cây chỉ hô hấp ban đêm' là sai lầm phổ biến. Ban ngày cây vẫn hô hấp liên tục, nhưng cường độ quang hợp mạnh hơn nên lượng O2 thải ra lấn át lượng O2 hấp thụ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Cây xanh hô hấp liên tục suốt 24/24 giờ chứ không phải chỉ hô hấp vào ban đêm."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Đáp án A là nhận định sai."
+      }
+    ],
+    "finalSolution": "Cây xanh hô hấp liên tục suốt 24/24 giờ chứ không phải chỉ hô hấp vào ban đêm.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Hiểu nhầm rằng ban ngày cây chỉ quang hợp, ban đêm mới hô hấp."
+      }
+    ]
+  },
+  {
+    "id": "bio-g7-b05-q07",
+    "lessonId": "bio-g7-b05",
+    "sgkBaiSo": 25,
+    "skillIds": [
+      "bio-ho-hap-te-bao"
+    ],
+    "difficulty": 3,
+    "prompt": "Hãy ghép các tiêu chí sau với đặc điểm tương ứng của Quang hợp và Hô hấp tế bào:",
+    "knowledge": [
+      "kb-bio-g7-so-sanh-quang-hop-ho-hap"
+    ],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Bào quan thực hiện quang hợp",
+          "right": "Lục lạp"
+        },
+        {
+          "left": "Bào quan thực hiện hô hấp",
+          "right": "Ty thể"
+        },
+        {
+          "left": "Khí thải ra trong quang hợp",
+          "right": "Khí Oxygen (O2)"
+        },
+        {
+          "left": "Khí thải ra trong hô hấp",
+          "right": "Khí Carbon dioxide (CO2)"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Lục lạp gắn liền với O2; Ty thể gắn liền với CO2."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 25 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đối chiếu 4 cặp tiêu chí",
+        "body": "Quang hợp: diễn ra ở lục lạp, nhả O2. Hô hấp: diễn ra ở ty thể, nhả CO2."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Quang hợp và Hô hấp đối lập hoàn hảo về bào quan và sản phẩm khí thải."
+      },
+      {
+        "kind": "answer",
+        "title": "Ghép đôi",
+        "body": "Ghép nối chính xác 4 cặp tiêu chí."
+      }
+    ],
+    "finalSolution": "Quang hợp và Hô hấp đối lập hoàn hảo về bào quan và sản phẩm khí thải.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b05-q08",
+    "lessonId": "bio-g7-b05",
+    "sgkBaiSo": 25,
+    "skillIds": [
+      "bio-ho-hap-te-bao"
+    ],
+    "difficulty": 3,
+    "prompt": "Tại sao một người bị ngạt thở (thiếu khí oxygen) trong vài phút thì các tế bào não sẽ bắt đầu bị tổn thương nghiêm trọng không thể phục hồi?",
+    "knowledge": [
+      "kb-bio-g7-vai-tro-ho-hap"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vì tế bào não tiêu thụ rất nhiều năng lượng; thiếu O2 làm hô hấp tế bào ngừng trệ, thiếu hụt ATP khiến tế bào não chết dần"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vì thiếu O2 làm máu trong não chuyển sang thể rắn làm tắc nghẽn hoàn toàn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì thiếu O2 làm tế bào não chuyển sang tự quang hợp phá hủy tế bào"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì nồng độ glucose trong não tăng vọt lên gấp 100 lần gây ngộ độc"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Oxygen là nguyên liệu bắt buộc để ty thể tạo ra nguồn năng lượng ATP nuôi tế bào não."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 25 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Vai trò của O2 đối với tế bào não",
+        "body": "Não bộ tiêu tốn ~20% lượng O2 toàn cơ thể. Không có O2, hô hấp tế bào không tạo đủ ATP, màng tế bào mất kiểm soát và tế bào não hoại tử nhanh chóng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Thiếu O2 làm tê liệt quá trình hô hấp tế bào tạo ATP, dẫn tới hoại tử tế bào thần kinh não."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Đáp án A giải thích chuẩn xác bản chất sinh lí học."
+      }
+    ],
+    "finalSolution": "Thiếu O2 làm tê liệt quá trình hô hấp tế bào tạo ATP, dẫn tới hoại tử tế bào thần kinh não.",
+    "commonMistakes": []
+  }
+]

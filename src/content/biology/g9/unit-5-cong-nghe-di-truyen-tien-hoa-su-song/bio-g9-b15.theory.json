@@ -1,0 +1,75 @@
+{
+  "lessonId": "bio-g9-b15",
+  "nodeId": "bio-g9-b15-theory",
+  "title": "Lý thuyết: Thuyết tiến hóa tổng hợp hiện đại",
+  "subtitle": "Bài 50 SGK KHTN 9 Kết nối tri thức: Quần thể là đơn vị tiến hóa, các nhân tố tiến hóa (đột biến, giao phối, CLTN) và cơ chế hình thành loài mới",
+  "sgkBaiSo": 50,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Thuyết tiến hóa hiện đại",
+      "badgeColor": "emerald",
+      "title": "Thuyết tiến hóa tổng hợp hiện đại",
+      "content": "Sự kết hợp xuất sắc giữa học thuyết chọn lọc tự nhiên của Darwin với di truyền học phân tử và di truyền học quần thể:",
+      "bulletPoints": [
+        "Đơn vị tiến hóa cơ sở: Quần thể là đơn vị tiến hóa cơ sở của loài (chứ không phải từng cá thể riêng lẻ, vì cá thể không thể biến đổi vốn gen qua các thế hệ).",
+        "Tiến hóa nhỏ (Microevolution): Quá trình biến đổi tần số allele và thành phần kiểu gen của quần thể dưới tác động của các nhân tố tiến hóa, dẫn tới sự hình thành loài mới (diễn ra trong phạm vi thời gian tương đối ngắn, có thể nghiên cứu bằng thực nghiệm).",
+        "Tiến hóa lớn (Macroevolution): Quá trình hình thành các nhóm phân loại trên loài (chi, họ, bộ, lớp, ngành) diễn ra trên quy mô rộng lớn qua hàng triệu năm thời gian địa chất."
+      ],
+      "callout": "Quần thể là đơn vị sinh sản, tồn tại thực tế trong tự nhiên và là đơn vị tiến hóa cơ sở của loài!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Nhân tố tiến hóa",
+      "badgeColor": "amber",
+      "title": "Các nhân tố tiến hóa cơ bản",
+      "content": "Ba nhân tố phối hợp tạo nên động lực biến đổi di truyền của quần thể:",
+      "bulletPoints": [
+        "1. Đột biến: Làm biến đổi cấu trúc của gen, tạo ra các allele mới hoàn toàn; là nguồn cung cấp nguyên liệu sơ cấp cho quá trình tiến hóa.",
+        "2. Giao phối (giao phối ngẫu nhiên): Không làm thay đổi tần số allele, nhưng phát tán đột biến và tổ hợp các allele thành vô số tổ hợp kiểu gen mới (biến dị tổ hợp); cung cấp nguồn nguyên liệu thứ cấp dồi dào.",
+        "3. Chọn lọc tự nhiên (Nhân tố có hướng duy nhất): Sàng lọc các kiểu hình thích nghi, làm biến đổi tần số allele và thành phần kiểu gen của quần thể theo một hướng xác định, quy định chiều hướng và nhịp điệu của tiến hóa.",
+        "Lưu ý chống bẫy: Chọn lọc tự nhiên KHÔNG trực tiếp tạo ra biến dị; nó chỉ đóng vai trò 'cái rây' sàng lọc giữ lại biến dị có lợi và đào thải biến dị có hại."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Hình thành loài mới",
+      "badgeColor": "cyan",
+      "title": "Cơ chế hình thành loài mới và vai trò của cách li",
+      "content": "Quá trình phân li từ một loài ban đầu thành các loài mới độc lập:",
+      "bulletPoints": [
+        "Quá trình hình thành thích nghi: Sự phối hợp giữa đột biến tạo nguồn gen mới, giao phối nhân rộng tổ hợp gen và CLTN giữ lại kiểu gen thích nghi nhất với môi trường.",
+        "Vai trò của các cơ chế cách li: Cách li địa lí (núi cao, sông rộng), cách li sinh thái (khác ổ sinh thái), cách li tập tính sinh sản ngăn cản các quần thể giao phối tự do với nhau, giúp các quần thể tích lũy những đột biến riêng rẽ.",
+        "Dấu hiệu then chốt: Cách li sinh sản (các cá thể không thể giao phối với nhau hoặc giao phối sinh con bất thụ) là tiêu chuẩn khách quan khẳng định loài mới đã chính thức hình thành!"
+      ],
+      "callout": "Cách li sinh sản là ranh giới then chốt đánh dấu một quần thể đã chính thức trở thành loài mới độc lập!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Nhận định nào sau đây là ĐÚNG về vai trò của 'chọn lọc tự nhiên' trong thuyết tiến hóa tổng hợp hiện đại?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Chọn lọc tự nhiên là nhân tố tiến hóa có hướng duy nhất, quy định chiều hướng và nhịp điệu của quá trình tiến hóa bằng cách sàng lọc kiểu hình thích nghi",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Chọn lọc tự nhiên trực tiếp tạo ra các allele đột biến mới có lợi cho sinh vật",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Chọn lọc tự nhiên làm tăng tần số của tất cả các allele lặn có hại trong quần thể",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Chọn lọc tự nhiên chỉ tác động lên các cá thể đơn bào, không tác động lên động vật đa bào",
+        "correct": false
+      }
+    ],
+    "explanation": "Chọn lọc tự nhiên là nhân tố tiến hóa có hướng duy nhất. Nó không tạo ra biến dị hay allele mới (đột biến mới tạo allele mới), mà chỉ sàng lọc các kiểu hình thích nghi sẵn có, từ đó định hướng sự biến đổi tần số allele của quần thể."
+  }
+}

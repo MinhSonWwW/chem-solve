@@ -1,0 +1,298 @@
+[
+  {
+    "id": "bio-g6-b03-q01",
+    "lessonId": "bio-g6-b03",
+    "sgkBaiSo": 18,
+    "skillIds": ["bio-te-bao-co-ban"],
+    "difficulty": 1,
+    "prompt": "Đơn vị cấu trúc và chức năng cơ bản nhất cấu tạo nên mọi cơ thể sinh vật sống là gì?",
+    "knowledge": ["bio-te-bao-don-vi-song"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tế bào" },
+        { "id": "opt-b", "label": "Mô cơ" },
+        { "id": "opt-c", "label": "Hạt khoáng chất" },
+        { "id": "opt-d", "label": "Phân tử nước" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mọi vật sống từ vi khuẩn, nấm, cây cỏ đến con người đều được xây dựng từ đơn vị này."
+      },
+      {
+        "level": 2,
+        "text": "Đó chính là 'viên gạch' nền móng của sự sống: tế bào."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định khái niệm sinh học cơ bản",
+        "body": "Đề bài hỏi về đơn vị cơ bản cấu tạo nên mọi cơ thể sống."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Học thuyết tế bào theo SGK",
+        "body": "Mọi cơ thể sinh vật đều được cấu tạo từ một hay nhiều tế bào. Tế bào là đơn vị cơ bản của sự sống."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án đúng",
+        "body": "Tế bào là câu trả lời chính xác."
+      }
+    ],
+    "finalSolution": "Tế bào là đơn vị cấu trúc và chức năng cơ bản cấu tạo nên mọi cơ thể sinh vật sống.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm lẫn giữa cấp độ tế bào với cấp độ cao hơn như mô hay cơ quan."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b03-q02",
+    "lessonId": "bio-g6-b03",
+    "sgkBaiSo": 18,
+    "skillIds": ["bio-te-bao-co-ban"],
+    "difficulty": 2,
+    "prompt": "Ghép nối từng loại tế bào (cột bên trái) với hình dạng đặc trưng tương ứng của nó (cột bên phải):",
+    "knowledge": ["bio-kich-thuoc-hinh-dang-te-bao"],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Tế bào hồng cầu người",
+          "right": "Hình đĩa lõm hai mặt"
+        },
+        {
+          "left": "Tế bào cơ vân",
+          "right": "Hình sợi dài"
+        },
+        {
+          "left": "Tế bào thần kinh (nơron)",
+          "right": "Hình sao có nhiều nhánh"
+        },
+        {
+          "left": "Tế bào biểu bì vảy hành",
+          "right": "Hình đa giác xếp khít nhau"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tế bào hồng cầu lõm 2 mặt để tăng diện tích trao đổi khí oxygen."
+      },
+      {
+        "level": 2,
+        "text": "Tế bào thần kinh có các nhánh sợi để tiếp nhận và truyền tín hiệu xung thần kinh."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu bài tập",
+        "body": "Nối đúng tên tế bào với hình thái cấu tạo phù hợp với chức năng của nó."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu hình dạng từng tế bào",
+        "body": "Hồng cầu: hình đĩa lõm 2 mặt; Tế bào cơ: hình sợi dài co giãn; Nơron: hình sao nhiều nhánh; Biểu bì vảy hành: hình đa giác/chữ nhật bảo vệ."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất ghép nối",
+        "body": "Khớp chính xác 4 cặp tế bào và hình dạng chuẩn SGK KHTN 6."
+      }
+    ],
+    "finalSolution": "Hồng cầu: hình đĩa lõm hai mặt; Tế bào cơ: hình sợi; Tế bào thần kinh: hình sao nhiều nhánh; Tế bào biểu bì vảy hành: hình đa giác xếp khít.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Nhầm tế bào hồng cầu hình đĩa lõm với tế bào nơron hình sao."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b03-q03",
+    "lessonId": "bio-g6-b03",
+    "sgkBaiSo": 18,
+    "skillIds": ["bio-te-bao-co-ban"],
+    "difficulty": 2,
+    "prompt": "Trong các mẫu vật sau, những tế bào nào có kích thước lớn mà mắt thường có thể quan sát trực tiếp (chọn các phương án đúng)?",
+    "knowledge": ["bio-kich-thuoc-hinh-dang-te-bao"],
+    "answer": {
+      "kind": "mcq-multi",
+      "options": [
+        { "id": "opt-a", "label": "Tế bào tép bưởi (hoặc tép cam, chanh)" },
+        { "id": "opt-b", "label": "Tế bào trứng chim đà điểu" },
+        { "id": "opt-c", "label": "Tế bào vi khuẩn lactic trong sữa chua" },
+        { "id": "opt-d", "label": "Tế bào trứng cá chép" }
+      ],
+      "correctIds": ["opt-a", "opt-b", "opt-d"]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Vi khuẩn là sinh vật đơn bào siêu nhỏ chỉ vài micromet, bắt buộc nhìn bằng kính hiển vi."
+      },
+      {
+        "level": 2,
+        "text": "Tép bưởi, trứng các loài chim và trứng cá đều là các tế bào khổng lồ chứa chất dự trữ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích yêu cầu",
+        "body": "Tìm các tế bào có kích thước lớn nhìn thấy được bằng mắt thường."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kích thước các mẫu vật trong đời sống",
+        "body": "Tép bưởi, trứng đà điểu, trứng cá chép có kích thước từ milimet đến centimet, nhìn thấy rõ bằng mắt thường. Vi khuẩn lactic chỉ có kích thước khoảng 1 - 2 micromet."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn các phương án chính xác",
+        "body": "Chọn A, B và D. Loại trừ C (vi khuẩn là tế bào hiển vi)."
+      }
+    ],
+    "finalSolution": "Tế bào tép bưởi, trứng chim đà điểu và trứng cá chép là những tế bào khổng lồ nhìn thấy trực tiếp bằng mắt thường mà không cần kính hỗ trợ.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nghĩ rằng mọi tế bào đều là kính hiển vi mới nhìn thấy, không biết trứng chim và tép bưởi là tế bào đơn lẻ."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b03-q04",
+    "lessonId": "bio-g6-b03",
+    "sgkBaiSo": 18,
+    "skillIds": ["bio-te-bao-co-ban"],
+    "difficulty": 2,
+    "prompt": "Phân loại các đối tượng sau vào hai nhóm: 'Vật thể sống (Cấu tạo từ tế bào)' và 'Vật không sống (Không cấu tạo từ tế bào)':",
+    "knowledge": ["bio-te-bao-don-vi-song"],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "b-living", "label": "Vật thể sống (Cấu tạo từ tế bào)" },
+        { "id": "b-nonliving", "label": "Vật không sống (Không cấu tạo từ tế bào)" }
+      ],
+      "items": [
+        { "id": "it-1", "label": "Cây hoa phượng vĩ", "bucketId": "b-living" },
+        { "id": "it-2", "label": "Vi khuẩn tả", "bucketId": "b-living" },
+        { "id": "it-3", "label": "Chú mèo con", "bucketId": "b-living" },
+        { "id": "it-4", "label": "Hòn đá cuội bên suối", "bucketId": "b-nonliving" },
+        { "id": "it-5", "label": "Chiếc xe đạp kim loại", "bucketId": "b-nonliving" },
+        { "id": "it-6", "label": "Giọt nước mưa", "bucketId": "b-nonliving" }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sinh vật có khả năng trao đổi chất, lớn lên và sinh sản là vật sống cấu tạo từ tế bào."
+      },
+      {
+        "level": 2,
+        "text": "Đất, đá, kim loại và nước là vật không sống, cấu tạo từ các phân tử chất vô cơ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân biệt vật sống và vật không sống",
+        "body": "Xác định bản chất cấu tạo của 6 đối tượng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Áp dụng định luật tế bào",
+        "body": "Thực vật (hoa phượng), vi sinh vật (vi khuẩn tả) và động vật (mèo con) là sinh vật sống nên được cấu tạo từ tế bào. Đá cuội, xe đạp, nước mưa là vật không sống."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất phân loại",
+        "body": "Xếp 3 đối tượng sinh vật vào nhóm sống và 3 đối tượng vật lý/hóa học vào nhóm không sống."
+      }
+    ],
+    "finalSolution": "Vật sống (cấu tạo từ tế bào): Cây hoa phượng, Vi khuẩn tả, Chú mèo con. Vật không sống: Hòn đá cuội, Chiếc xe đạp kim loại, Giọt nước mưa.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Nghĩ rằng vi khuẩn không phải là vật sống cấu tạo từ tế bào vì kích thước của nó quá nhỏ."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b03-q05",
+    "lessonId": "bio-g6-b03",
+    "sgkBaiSo": 18,
+    "skillIds": ["bio-te-bao-co-ban"],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về tế bào:",
+    "knowledge": ["bio-te-bao-don-vi-song", "bio-kich-thuoc-hinh-dang-te-bao"],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Mọi cơ thể sinh vật sống đều được cấu tạo từ một hay nhiều tế bào.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Tất cả các loại tế bào trong cơ thể người đều có hình dạng và kích thước hoàn toàn giống nhau.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Đa số các tế bào có kích thước hiển vi, chỉ quan sát được rõ chi tiết dưới kính hiển vi quang học.",
+          "correct": true
+        },
+        {
+          "id": "st-4",
+          "text": "Một quả trứng gà thực chất là một tế bào khổng lồ chứa noãn hoàng (lòng đỏ).",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trong cơ thể người, tế bào hồng cầu hình đĩa, tế bào cơ hình sợi, tế bào thần kinh hình sao... có hình dạng rất khác nhau."
+      },
+      {
+        "level": 2,
+        "text": "Kích thước tế bào rất nhỏ (micromet), chỉ trừ một số tế bào trứng hoặc tép bưởi là ngoại lệ khổng lồ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Đánh giá từng nhận định theo chuẩn kiến thức Bài 18 SGK KHTN 6."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra từng ý",
+        "body": "1. Mọi sinh vật cấu tạo từ tế bào: Đúng. 2. Các tế bào cơ thể người giống nhau: Sai (rất đa dạng theo chức năng). 3. Đa số tế bào hiển vi: Đúng. 4. Trứng gà là một tế bào: Đúng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Ý 1: Đúng, Ý 2: Sai, Ý 3: Đúng, Ý 4: Đúng."
+      }
+    ],
+    "finalSolution": "Phát biểu 1, 3, 4 đúng. Phát biểu 2 sai vì các loại tế bào khác nhau trong cơ thể có hình dạng và kích thước rất khác nhau để thích nghi với chức năng riêng.",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng các tế bào trong một cơ thể đều phải có cùng một khuôn mẫu hình cầu."
+      }
+    ]
+  }
+]

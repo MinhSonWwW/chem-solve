@@ -1,0 +1,554 @@
+[
+  {
+    "id": "bio-g8-b11-q01",
+    "lessonId": "bio-g8-b11",
+    "sgkBaiSo": 40,
+    "skillIds": [
+      "bio-sinh-san-o-nguoi"
+    ],
+    "difficulty": 1,
+    "prompt": "Hai chức năng sinh học cốt lõi của đôi tinh hoàn ở cơ quan sinh dục nam là gì?",
+    "knowledge": [
+      "kb-bio-g8-co-quan-sinh-san-nam-nu"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Sản xuất tinh trùng và tiết hormone sinh dục nam Testosterone"
+        },
+        {
+          "id": "opt-b",
+          "label": "Chỉ làm nhiệm vụ sản xuất nước tiểu và tích trữ mỡ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Nuôi dưỡng phôi thai và tiết sữa sau sinh"
+        },
+        {
+          "id": "opt-d",
+          "label": "Sản xuất hormone Insulin để kiểm soát đường huyết"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tinh hoàn vừa có chức năng tạo giao tử nam, vừa là một tuyến nội tiết sinh dục."
+      },
+      {
+        "level": 2,
+        "text": "Sản xuất tinh trùng trong các ống sinh tinh và tiết hormone testosterone bởi tế bào kẽ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Vai trò của tuyến sinh dục nam",
+        "body": "Tinh hoàn là tuyến sinh dục chính của hệ sinh sản nam."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Chức năng kép của tinh hoàn",
+        "body": "Các ống sinh tinh trong tinh hoàn liên tục giảm phân sản sinh tinh trùng (ngoại tiết); đồng thời các tế bào kẽ Leydig tiết hormone sinh dục nam Testosterone trực tiếp vào dòng máu (nội tiết)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tinh hoàn sản xuất tinh trùng và tiết hormone Testosterone."
+      }
+    ],
+    "finalSolution": "Tinh hoàn đảm bảo cả khả năng sinh sản (tinh trùng) và giới tính nam (testosterone) cho nam giới.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng túi tinh mới là nơi sản xuất ra tinh trùng (túi tinh chỉ chứa dịch nuôi tinh trùng)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b11-q02",
+    "lessonId": "bio-g8-b11",
+    "sgkBaiSo": 40,
+    "skillIds": [
+      "bio-sinh-san-o-nguoi"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong cơ quan sinh sản của nữ giới, quá trình thụ tinh bình thường diễn ra tại vị trí giải phẫu nào?",
+    "knowledge": [
+      "kb-bio-g8-thu-tinh-thu-thai-kinh-nguyet"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Ở 1/3 phía ngoài của ống dẫn trứng (vòi trứng)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bên trong khoang tử cung (dạ con)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Trực tiếp bên trong nang trứng ở buồng trứng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tại cổ tử cung hoặc âm đạo"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tinh trùng bơi từ âm đạo qua tử cung lên ống dẫn trứng để đón gặp trứng vừa rụng."
+      },
+      {
+        "level": 2,
+        "text": "Điểm gặp gỡ thụ tinh chuẩn xác là đoạn 1/3 phía ngoài của vòi trứng (gần phễu buồng trứng)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quá trình thụ tinh",
+        "body": "Thụ tinh là sự kết hợp giữa vật chất di truyền của một tinh trùng và một tế bào trứng tạo hợp tử 2n."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Vị trí thụ tinh tối ưu",
+        "body": "Sau khi rụng, trứng được phễu hút vào ống dẫn trứng. Hàng triệu tinh trùng bơi ngược dòng, và sự thụ tinh diễn ra ở 1/3 phía ngoài của ống dẫn trứng. Hợp tử sau đó mới phân cắt và di chuyển dần về tử cung."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thụ tinh diễn ra ở 1/3 phía ngoài của ống dẫn trứng."
+      }
+    ],
+    "finalSolution": "Ống dẫn trứng là con đường và địa điểm gặp gỡ thụ tinh tự nhiên giữa trứng và tinh trùng.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm vị trí thụ tinh là ở trong buồng tử cung (tử cung là nơi thụ thai và nuôi thai, không phải nơi thụ tinh)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b11-q03",
+    "lessonId": "bio-g8-b11",
+    "sgkBaiSo": 40,
+    "skillIds": [
+      "bio-sinh-san-o-nguoi"
+    ],
+    "difficulty": 2,
+    "prompt": "Điểm khác biệt căn bản giữa hai khái niệm sinh học 'Thụ tinh' và 'Thụ thai' là gì?",
+    "knowledge": [
+      "kb-bio-g8-thu-tinh-thu-thai-kinh-nguyet"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Thụ tinh là tinh trùng kết hợp với trứng tạo hợp tử; Thụ thai là phôi di chuyển về tử cung và bám vào làm tổ trong lớp niêm mạc tử cung"
+        },
+        {
+          "id": "opt-b",
+          "label": "Thụ tinh và thụ thai là hai từ đồng nghĩa hoàn toàn chỉ cùng một thời điểm trứng rụng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Thụ thai diễn ra trước khi trứng gặp tinh trùng ở buồng trứng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Thụ tinh là khi em bé cất tiếng khóc chào đời sau 9 tháng mang thai"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thụ tinh mới chỉ là tạo ra tế bào hợp tử đầu tiên."
+      },
+      {
+        "level": 2,
+        "text": "Người phụ nữ chỉ thực sự có thai (thụ thai) khi phôi thai bám sâu và làm tổ an toàn trong thành tử cung."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân biệt thụ tinh và thụ thai",
+        "body": "Đây là hai giai đoạn nối tiếp nhau để bắt đầu một thai kì."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hai mốc sinh học riêng biệt",
+        "body": "Thụ tinh là sự phối hợp giữa nhân tinh trùng và trứng tạo hợp tử ở vòi trứng. Hợp tử phân chia thành phôi dâu, phôi nang di chuyển 3 - 5 ngày về tử cung và bám làm tổ trong lớp niêm mạc tử cung dày xốp. Quá trình làm tổ thành công đó gọi là thụ thai."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thụ tinh là trứng gặp tinh trùng tạo hợp tử; thụ thai là phôi bám làm tổ trong niêm mạc tử cung."
+      }
+    ],
+    "finalSolution": "Nếu phôi không làm tổ được trong niêm mạc tử cung thì thụ thai không diễn ra và phôi sẽ bị đào thải ra ngoài.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Đồng nhất thụ tinh với thụ thai là một sự kiện duy nhất."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b11-q04",
+    "lessonId": "bio-g8-b11",
+    "sgkBaiSo": 40,
+    "skillIds": [
+      "bio-sinh-san-o-nguoi"
+    ],
+    "difficulty": 2,
+    "prompt": "Bản chất sinh lí của hiện tượng hành kinh (kinh nguyệt) ở bạn nữ là gì?",
+    "knowledge": [
+      "kb-bio-g8-thu-tinh-thu-thai-kinh-nguyet"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Trứng chín rụng không được thụ tinh, thể vàng teo đi làm sụt giảm hormone khiến lớp niêm mạc tử cung bong tróc xuất huyết ra ngoài"
+        },
+        {
+          "id": "opt-b",
+          "label": "Trứng đã thụ tinh thành công và bắt đầu làm tổ trong ống dẫn trứng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cơ quan sinh dục bị viêm nhiễm tổn thương do vi khuẩn gây chảy máu"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tuyến yên bị vỡ mạch máu làm máu chảy theo đường bài tiết ra ngoài"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hàng tháng tử cung chuẩn bị lớp niêm mạc dày giàu mạch máu để đón phôi làm tổ."
+      },
+      {
+        "level": 2,
+        "text": "Nếu không có thụ tinh, lớp niêm mạc này trở nên thừa thãi và bị bong tróc tống ra ngoài theo chu kì."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Chu kì kinh nguyệt ở nữ",
+        "body": "Hiện tượng lặp lại có tính chu kì khoảng 28 - 30 ngày ở bạn nữ tuổi dậy thì."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế nội tiết của kinh nguyệt",
+        "body": "Khi trứng không được thụ tinh, thể vàng ở buồng trứng teo thoái hóa, nồng độ progesterone và estrogen giảm đột ngột. Lớp niêm mạc tử cung mất nguồn nuôi dưỡng sẽ bong ra, kèm theo máu và dịch nhầy thoát ra ngoài qua âm đạo."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Trứng không thụ tinh, thể vàng teo làm niêm mạc tử cung bong tróc xuất huyết tạo kinh nguyệt."
+      }
+    ],
+    "finalSolution": "Kinh nguyệt là dấu hiệu sinh lí hoàn toàn bình thường chứng tỏ buồng trứng đã bắt đầu hoạt động phóng noãn ở tuổi dậy thì.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng kinh nguyệt là máu độc ứ đọng trong cơ thể cần thải ra."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b11-q05",
+    "lessonId": "bio-g8-b11",
+    "sgkBaiSo": 40,
+    "skillIds": [
+      "bio-sinh-san-o-nguoi"
+    ],
+    "difficulty": 2,
+    "prompt": "Tại sao ở nam giới, hai tinh hoàn lại nằm bên ngoài ổ bụng trong lớp bìu thay vì nằm bên trong khoang bụng như buồng trứng ở nữ?",
+    "knowledge": [
+      "kb-bio-g8-co-quan-sinh-san-nam-nu"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Để duy trì nhiệt độ tinh hoàn thấp hơn thân nhiệt cơ thể khoảng 2 - 3°C, là điều kiện nhiệt độ tối ưu cho sự sinh tinh"
+        },
+        {
+          "id": "opt-b",
+          "label": "Để tinh hoàn đón nhận trực tiếp ánh sáng mặt trời tổng hợp vitamin D"
+        },
+        {
+          "id": "opt-c",
+          "label": "Do khoang bụng nam giới quá chật hẹp không đủ chỗ chứa tinh hoàn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Để tinh hoàn không bị ảnh hưởng bởi quá trình tiêu hóa thức ăn ở dạ dày"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sự sản sinh tinh trùng rất nhạy cảm với nhiệt độ cao của ổ bụng (~37°C)."
+      },
+      {
+        "level": 2,
+        "text": "Nhiệt độ túi bìu khoảng 34 - 35°C giúp các ống sinh tinh sản sinh tinh trùng khỏe mạnh."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đặc điểm giải phẫu của túi bìu",
+        "body": "Tinh hoàn ban đầu phát triển trong ổ bụng thai nhi rồi di chuyển xuống bìu trước khi sinh."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Yêu cầu nhiệt độ của quá trình sinh tinh",
+        "body": "Nhiệt độ trong ổ bụng (37°C) quá nóng sẽ ức chế quá trình sinh tinh và làm tinh trùng biến dạng hoặc chết. Nằm ngoài bìu giúp nhiệt độ tinh hoàn mát hơn thân nhiệt khoảng 2 - 3°C (khoảng 34 - 35°C), là nhiệt độ thích hợp nhất cho sự sinh tinh."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nằm trong bìu để giữ nhiệt độ thấp hơn thân nhiệt 2 - 3°C thuận lợi cho sản sinh tinh trùng."
+      }
+    ],
+    "finalSolution": "Bìu đóng vai trò như một bộ điều nhiệt sinh học bảo đảm điều kiện nhiệt độ lí tưởng cho sự sinh tinh liên tục.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng tinh trùng cần nhiệt độ càng nóng càng tốt (nhiệt độ nóng gây vô sinh nam)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b11-q06",
+    "lessonId": "bio-g8-b11",
+    "sgkBaiSo": 40,
+    "skillIds": [
+      "bio-sinh-san-o-nguoi"
+    ],
+    "difficulty": 2,
+    "prompt": "Tất cả các biện pháp tránh thai khoa học hiện nay đều dựa trên những nguyên tắc sinh học cốt lõi nào?",
+    "knowledge": [
+      "kb-bio-g8-cac-bien-phap-tranh-thai"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Ngăn không cho trứng chín và rụng; ngăn không cho tinh trùng gặp trứng; hoặc ngăn không cho phôi thai làm tổ trong tử cung"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tiêu diệt hoàn toàn toàn bộ buồng trứng và tinh hoàn vĩnh viễn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Làm cho màng tế bào của trứng biến mất để không thể thụ tinh"
+        },
+        {
+          "id": "opt-d",
+          "label": "Ức chế quá trình tuần hoàn máu của người phụ nữ trong 1 năm"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Để có thai phải có 3 điều kiện: trứng rụng, tinh trùng gặp trứng tạo hợp tử, và phôi bám vào tử cung."
+      },
+      {
+        "level": 2,
+        "text": "Chặn đứng bất kì một trong 3 điều kiện trên đều giúp tránh thai thành công."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cơ sở sinh học của tránh thai",
+        "body": "Mang thai đòi hỏi chuỗi sự kiện: rụng noãn → thụ tinh → làm tổ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "3 nguyên tắc vàng trong tránh thai",
+        "body": "1. Ngăn rụng trứng (thuốc tránh thai); 2. Ngăn tinh trùng gặp trứng (bao cao su, thắt ống dẫn tinh/ống dẫn trứng); 3. Ngăn phôi làm tổ (đặt dụng cụ tử cung - vòng tránh thai)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Ngăn rụng trứng, ngăn tinh trùng gặp trứng hoặc ngăn phôi làm tổ."
+      }
+    ],
+    "finalSolution": "Hiểu rõ 3 nguyên tắc tránh thai giúp thanh thiếu niên lựa chọn biện pháp bảo vệ sức khỏe sinh sản phù hợp và an toàn.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng mọi biện pháp tránh thai đều phải phẫu thuật cắt bỏ cơ quan sinh dục."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b11-q07",
+    "lessonId": "bio-g8-b11",
+    "sgkBaiSo": 40,
+    "skillIds": [
+      "bio-sinh-san-o-nguoi"
+    ],
+    "difficulty": 2,
+    "prompt": "Vì sao bao cao su được tổ chức y tế thế giới (WHO) khuyến nghị là biện pháp bảo vệ quan trọng hàng đầu trong quan hệ tình dục?",
+    "knowledge": [
+      "kb-bio-g8-cac-bien-phap-tranh-thai"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Là biện pháp DUY NHẤT vừa có hiệu quả tránh thai cao, vừa ngăn chặn lây truyền các bệnh tình dục nguy hiểm (HIV, giang mai, lậu)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vì bao cao su có thể sử dụng lại nhiều lần trong nhiều năm mà không cần thay mới"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì bao cao su trực tiếp cung cấp chất dinh dưỡng nuôi cơ quan sinh sản"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì bao cao su có khả năng chữa khỏi hoàn toàn bệnh AIDS chỉ sau một lần dùng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Các biện pháp khác như thuốc tránh thai hay đặt vòng chỉ ngừa thai chứ không ngăn được vi khuẩn, virus truyền nhiễm."
+      },
+      {
+        "level": 2,
+        "text": "Bao cao su tạo màng chắn cơ học tuyệt đối cách ly dịch cơ thể, mang lại tác dụng bảo vệ kép."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tác dụng bảo vệ của bao cao su",
+        "body": "Bao cao su là dụng cụ bảo vệ cơ học trong quan hệ tình dục."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hiệu quả kép độc nhất",
+        "body": "Thuốc tránh thai, que cấy hay vòng tránh thai chỉ ngăn mang thai chứ hoàn toàn không ngăn được mầm bệnh STDs. Bao cao su ngăn chặn hoàn toàn sự tiếp xúc dịch sinh học và niêm mạc, do đó là biện pháp duy nhất vừa ngừa thai vừa phòng lây nhiễm HIV và các bệnh STDs."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Là biện pháp duy nhất vừa tránh thai vừa phòng bệnh lây qua đường tình dục STDs."
+      }
+    ],
+    "finalSolution": "Sử dụng bao cao su đúng cách là hành vi trách nhiệm bảo vệ toàn diện cho bản thân và bạn đời.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng uống thuốc tránh thai hàng ngày cũng có thể phòng tránh được bệnh HIV."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b11-q08",
+    "lessonId": "bio-g8-b11",
+    "sgkBaiSo": 40,
+    "skillIds": [
+      "bio-sinh-san-o-nguoi"
+    ],
+    "difficulty": 3,
+    "prompt": "Nhóm các bệnh nào sau đây đều là những bệnh lây truyền qua đường tình dục (STDs) nguy hiểm có thể để lại di chứng vô sinh hoặc đe dọa tính mạng?",
+    "knowledge": [
+      "kb-bio-g8-phong-benh-tinh-duc-stds"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "HIV/AIDS, Giang mai, Lậu và Sùi mào gà (HPV)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bệnh bướu cổ, Bệnh còi xương và Cận thị"
+        },
+        {
+          "id": "opt-c",
+          "label": "Đau dạ dày, Bệnh sỏi thận và Sâu răng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cong vẹo cột sống, Bệnh Basedow và Thiếu máu"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "STDs là các bệnh lây nhiễm vi khuẩn, virus qua quan hệ tình dục không an toàn."
+      },
+      {
+        "level": 2,
+        "text": "Nhóm này gồm virus HIV, xoắn khuẩn giang mai, song cầu khuẩn lậu và virus sùi mào gà HPV."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khái niệm bệnh STDs",
+        "body": "Sexually Transmitted Diseases (STDs) là các bệnh lây truyền qua đường tình dục."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Các bệnh STDs phổ biến và nguy hiểm",
+        "body": "Gồm HIV/AIDS (suy giảm miễn dịch tử vong), Giang mai (do xoắn khuẩn phá hủy thần kinh, tim mạch), Lậu (do vi khuẩn lậu cầu gây viêm tắc vòi trứng, vô sinh) và Sùi mào gà do virus HPV gây u nhú và ung thư cổ tử cung."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "HIV/AIDS, Giang mai, Lậu và Sùi mào gà đều thuộc nhóm bệnh STDs."
+      }
+    ],
+    "finalSolution": "Giáo dục giới tính và quan hệ tình dục an toàn là lá chắn hữu hiệu bảo vệ giới trẻ khỏi các bệnh STDs.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm các bệnh nội tiết hay chuyển hóa (Basedow, bướu cổ, sỏi thận) thành bệnh lây qua đường tình dục."
+      }
+    ]
+  }
+]

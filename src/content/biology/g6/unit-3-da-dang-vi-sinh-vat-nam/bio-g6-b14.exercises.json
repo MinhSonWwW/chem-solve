@@ -1,0 +1,375 @@
+[
+  {
+    "id": "bio-g6-b14-q01",
+    "lessonId": "bio-g6-b14",
+    "sgkBaiSo": 29,
+    "skillIds": [
+      "bio-virus"
+    ],
+    "difficulty": 1,
+    "prompt": "Cấu tạo cơ bản của một hạt virus (virion) bao gồm những thành phần cốt lõi nào sau đây?",
+    "knowledge": [
+      "bio-virus"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vỏ protein và lõi chứa vật chất di truyền (DNA hoặc RNA)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Màng tế bào, chất tế bào và nhân tế bào hoàn chỉnh"
+        },
+        {
+          "id": "opt-c",
+          "label": "Thành tế bào cellulose và lục lạp quang hợp"
+        },
+        {
+          "id": "opt-d",
+          "label": "Không bào lớn và ti thể tạo năng lượng"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Virus chưa có cấu tạo tế bào, cấu trúc vô cùng tối giản."
+      },
+      {
+        "level": 2,
+        "text": "Chỉ gồm áo khoác protein (capsid) bọc lấy sợi acid nucleic bên trong."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định cấu trúc virus",
+        "body": "Đề bài hỏi các thành phần cấu tạo nên hạt virus."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cấu tạo cơ bản của virus",
+        "body": "Virus chưa có màng sinh chất hay bào quan. Cấu tạo cơ bản chỉ gồm vỏ protein bao bọc lõi vật chất di truyền (DNA hoặc RNA)."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn phương án đúng",
+        "body": "Lựa chọn chính xác là cấu trúc chuẩn xác."
+      }
+    ],
+    "finalSolution": "Hạt virus cấu tạo cơ bản gồm 2 phần: Lõi vật chất di truyền (DNA hoặc RNA) và Vỏ bọc bằng protein.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng virus là một tế bào có đầy đủ màng sinh chất và chất tế bào."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b14-q02",
+    "lessonId": "bio-g6-b14",
+    "sgkBaiSo": 29,
+    "skillIds": [
+      "bio-virus",
+      "bio-vi-khuan"
+    ],
+    "difficulty": 2,
+    "prompt": "Phân loại các bệnh truyền nhiễm sau đây vào hai nhóm: 'Bệnh do vi khuẩn gây ra' và 'Bệnh do virus gây ra':",
+    "knowledge": [
+      "bio-virus",
+      "bio-vi-khuan"
+    ],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        {
+          "id": "b-bacteria-disease",
+          "label": "Bệnh do vi khuẩn gây ra"
+        },
+        {
+          "id": "b-virus-disease",
+          "label": "Bệnh do virus gây ra"
+        }
+      ],
+      "items": [
+        {
+          "id": "it-1",
+          "label": "Bệnh lao phổi",
+          "bucketId": "b-bacteria-disease"
+        },
+        {
+          "id": "it-2",
+          "label": "Bệnh dịch tả",
+          "bucketId": "b-bacteria-disease"
+        },
+        {
+          "id": "it-3",
+          "label": "Bệnh thương hàn",
+          "bucketId": "b-bacteria-disease"
+        },
+        {
+          "id": "it-4",
+          "label": "Bệnh cúm mùa",
+          "bucketId": "b-virus-disease"
+        },
+        {
+          "id": "it-5",
+          "label": "Bệnh sốt xuất huyết",
+          "bucketId": "b-virus-disease"
+        },
+        {
+          "id": "it-6",
+          "label": "Bệnh thủy đậu",
+          "bucketId": "b-virus-disease"
+        },
+        {
+          "id": "it-7",
+          "label": "Bệnh COVID-19",
+          "bucketId": "b-virus-disease"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Lao, tả, thương hàn do các trực khuẩn và phẩy khuẩn gây ra."
+      },
+      {
+        "level": 2,
+        "text": "Cúm mùa, sốt xuất huyết Dengue, thủy đậu, SARS-CoV-2 do virus gây ra."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân loại mầm bệnh gây bệnh",
+        "body": "Xếp 7 căn bệnh vào nhóm nguyên nhân do vi khuẩn hay virus."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu tác nhân gây bệnh",
+        "body": "Lao (trực khuẩn lao), tả (phẩy khuẩn tả), thương hàn (vi khuẩn Salmonella). Cúm, sốt xuất huyết, thủy đậu, COVID-19 đều do virus gây ra."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất phân nhóm",
+        "body": "3 bệnh do vi khuẩn và 4 bệnh do virus."
+      }
+    ],
+    "finalSolution": "Do vi khuẩn: Bệnh lao phổi, Bệnh dịch tả, Bệnh thương hàn. Do virus: Bệnh cúm mùa, Bệnh sốt xuất huyết, Bệnh thủy đậu, Bệnh COVID-19.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Nghĩ sốt xuất huyết hay cúm là do vi khuẩn gây ra."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b14-q03",
+    "lessonId": "bio-g6-b14",
+    "sgkBaiSo": 29,
+    "skillIds": [
+      "bio-virus"
+    ],
+    "difficulty": 1,
+    "prompt": "Biện pháp phòng ngừa chủ động và hiệu quả nhất đối với các bệnh truyền nhiễm nguy hiểm do virus gây ra ở người là gì?",
+    "knowledge": [
+      "bio-virus"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Uống thật nhiều thuốc kháng sinh hàng ngày"
+        },
+        {
+          "id": "opt-b",
+          "label": "Ngâm mình trong nước đá lạnh"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tiêm vaccine (vắc-xin) phòng bệnh đúng lịch và đủ liều"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nhịn ăn để virus không có chất dinh dưỡng"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Vaccine giúp hệ miễn dịch nhận diện trước mầm bệnh và sinh kháng thể bảo vệ cơ thể."
+      },
+      {
+        "level": 2,
+        "text": "Kháng sinh không có tác dụng với virus."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định biện pháp phòng bệnh chủ động",
+        "body": "Đề bài hỏi giải pháp hiệu quả nhất ngăn ngừa virus."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế tác động của vaccine",
+        "body": "Vaccine chứa mầm bệnh đã bị làm yếu hoặc bất hoạt, giúp cơ thể tập dượt và sản sinh kháng thể miễn dịch chủ động bền vững."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn phương án đúng",
+        "body": "Tiêm vaccine là biện pháp phòng ngừa hữu hiệu nhất."
+      }
+    ],
+    "finalSolution": "Tiêm vaccine là biện pháp phòng bệnh chủ động và có hiệu quả cao nhất để ngăn ngừa các bệnh truyền nhiễm nguy hiểm do virus gây ra.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nghĩ rằng uống thuốc kháng sinh có thể phòng ngừa được bệnh do virus."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b14-q04",
+    "lessonId": "bio-g6-b14",
+    "sgkBaiSo": 29,
+    "skillIds": [
+      "bio-virus"
+    ],
+    "difficulty": 2,
+    "prompt": "Ghép nối từng bệnh do virus gây ra (cột bên trái) với đúng con đường lây truyền chủ yếu của nó (cột bên phải):",
+    "knowledge": [
+      "bio-virus"
+    ],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Bệnh sốt xuất huyết",
+          "right": "Do muỗi vằn Aedes đốt và truyền virus Dengue vào máu"
+        },
+        {
+          "left": "Bệnh cúm mùa và COVID-19",
+          "right": "Lây qua các giọt bắn đường hô hấp khi ho, hắt hơi, nói chuyện"
+        },
+        {
+          "left": "Bệnh dại",
+          "right": "Lây qua vết cắn, cào của động vật (chó, mèo) bị nhiễm virus"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Muỗi vằn là véc-tơ truyền virus sốt xuất huyết."
+      },
+      {
+        "level": 2,
+        "text": "Chó dại cắn truyền virus dại qua tuyến nước bọt."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 3 bệnh truyền nhiễm virus",
+        "body": "Sốt xuất huyết, Cúm/COVID-19, Bệnh dại."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Con đường lây truyền",
+        "body": "Sốt xuất huyết: muỗi vằn đốt; Cúm/COVID-19: giọt bắn hô hấp; Dại: chó mèo cắn cào."
+      },
+      {
+        "kind": "answer",
+        "title": "Ghép cặp chính xác",
+        "body": "Khớp đúng 3 bệnh với 3 đường lây truyền chuẩn y tế."
+      }
+    ],
+    "finalSolution": "Sốt xuất huyết: Muỗi vằn đốt truyền virus; Cúm/COVID-19: Giọt bắn hô hấp; Bệnh dại: Vết cắn cào của chó mèo nhiễm bệnh.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Nghĩ rằng bệnh dại lây qua đường hô hấp trong không khí."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b14-q05",
+    "lessonId": "bio-g6-b14",
+    "sgkBaiSo": 29,
+    "skillIds": [
+      "bio-virus"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về virus:",
+    "knowledge": [
+      "bio-virus"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Virus có kích thước siêu nhỏ, chỉ quan sát được hình ảnh rõ nét dưới kính hiển vi điện tử.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Khi ở ngoài tế bào vật chủ, virus vẫn tự trao đổi chất và tự sinh sản phân chia bình thường.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Thuốc kháng sinh hoàn toàn không có tác dụng tiêu diệt virus gây bệnh.",
+          "correct": true
+        },
+        {
+          "id": "st-4",
+          "text": "Đeo khẩu trang và rửa tay bằng xà phòng giúp làm giảm nguy cơ lây lan virus qua đường hô hấp.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Virus là ký sinh nội bào bắt buộc, ra ngoài tế bào sống nó bất hoạt như vật vô sinh."
+      },
+      {
+        "level": 2,
+        "text": "Kháng sinh chỉ tác dụng lên tế bào vi khuẩn, vô tác dụng với hạt virus."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Đánh giá từng câu về đặc điểm sinh học và phòng dịch virus."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra chi tiết",
+        "body": "1. Kính hiển vi điện tử mới thấy virus: Đúng. 2. Tự sinh sản ngoài tế bào: Sai (ký sinh nội bào bắt buộc). 3. Kháng sinh không diệt được virus: Đúng. 4. Đeo khẩu trang giảm lây: Đúng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Ý 1: Đúng; Ý 2: Sai; Ý 3: Đúng; Ý 4: Đúng."
+      }
+    ],
+    "finalSolution": "Phát biểu 1, 3 và 4 đúng. Phát biểu 2 sai vì virus là sinh vật ký sinh nội bào bắt buộc, không thể tự trao đổi chất hay sinh sản bên ngoài tế bào vật chủ.",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng virus có thể tự lớn lên và đẻ ra virus con trên mặt bàn hay không khí."
+      }
+    ]
+  }
+]

@@ -1,0 +1,77 @@
+{
+  "lessonId": "bio-g9-b07",
+  "nodeId": "bio-g9-b07-theory",
+  "title": "Lý thuyết: Nhiễm sắc thể và bộ nhiễm sắc thể",
+  "subtitle": "Bài 42 SGK KHTN 9 Kết nối tri thức: Cấu trúc hiển vi và siêu hiển vi của NST, bộ NST lưỡng bội (2n), đơn bội (n) và tính đặc trưng theo loài",
+  "sgkBaiSo": 42,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Cấu trúc hiển vi",
+      "badgeColor": "emerald",
+      "title": "Cấu tạo hóa học và siêu hiển vi của nhiễm sắc thể",
+      "content": "Nhiễm sắc thể (NST) là vật thể bắt màu thuốc nhuộm kiềm tính nằm trong nhân tế bào của sinh vật nhân thực:",
+      "bulletPoints": [
+        "Thành phần hóa học: Được cấu tạo chủ yếu từ phân tử DNA chuỗi xoắn kép liên kết với protein loại histone.",
+        "Đơn vị cấu trúc cơ bản (Nucleosome): Gồm đoạn DNA dài khoảng 146 - 147 cặp nucleotide quấn 1 3/4 vòng quanh khối cầu gồm 8 phân tử histone.",
+        "Các bậc cấu trúc cuộn xoắn: Chuỗi nucleosome tạo sợi cơ bản (10 - 11 nm) → sợi nhiễm sắc (30 nm) → vùng xếp cuộn (300 nm) → chromatid (700 nm) → NST kép co xoắn cực đại ở kì giữa (1400 nm).",
+        "Ý nghĩa sự co xoắn: Giúp nén chiều dài DNA từ vài mét xuống chỉ còn vài micromet để nằm gọn trong nhân tế bào và bảo vệ DNA khỏi bị đứt gãy khi phân bào."
+      ],
+      "callout": "NST chỉ quan sát rõ hình thái nhất dưới kính hiển vi quang học khi nó co xoắn cực đại tại kì giữa của quá trình phân bào!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Hình thái kì giữa",
+      "badgeColor": "amber",
+      "title": "Hình thái nhiễm sắc thể tại kì giữa phân bào",
+      "content": "Tại kì giữa, mỗi nhiễm sắc thể kép có cấu trúc đối xứng đặc trưng gồm 2 nhiễm sắc tử:",
+      "bulletPoints": [
+        "Hai nhiễm sắc tử chị em (Chromatid): Mỗi NST kép gồm 2 chromatid giống hệt nhau về trình tự gen, hình thành do sự tự nhân đôi của DNA ở pha S kì trung gian.",
+        "Tâm động (Eo sơ cấp): Là điểm thắt kết nối 2 chromatid chị em với nhau, mang phức hệ protein đính với sợi tơ của thoi phân bào để kéo NST di chuyển về 2 cực tế bào.",
+        "Đầu mút (Telomere): Nằm ở 2 đầu tận cùng của NST, bảo vệ NST khỏi bị dính vào nhau và duy trì tính ổn định của bộ gen.",
+        "Hình dạng theo vị trí tâm động: Hình chữ V (tâm giữa), hình chữ J (tâm lệch) hoặc hình que/hình hạt (tâm mút)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Bộ NST đặc trưng",
+      "badgeColor": "cyan",
+      "title": "Bộ nhiễm sắc thể lưỡng bội (2n) và tính đặc trưng của loài",
+      "content": "Tính đặc trưng và phân loại bộ nhiễm sắc thể trong tế bào sinh vật:",
+      "bulletPoints": [
+        "Bộ lưỡng bội (2n): Tồn tại trong các tế bào sinh dưỡng và tế bào sinh dục sơ khai; các NST tồn tại thành từng cặp tương đồng (1 chiếc từ bố, 1 chiếc từ mẹ).",
+        "Bộ đơn bội (n): Tồn tại trong các tế bào giao tử (tinh trùng, trứng); chỉ chứa 1 chiếc của mỗi cặp tương đồng.",
+        "Tính đặc trưng: Mỗi loài sinh vật có bộ NST đặc trưng về số lượng, kích thước và hình thái (Người 2n = 46; Ruồi giấm 2n = 8; Đậu Hà Lan 2n = 14; Tinh tinh 2n = 48; Gà 2n = 78).",
+        "Cạm bẫy quan trọng: Số lượng nhiễm sắc thể nhiều hay ít không phản ánh mức độ tiến hóa của loài (gà 2n = 78 nhiều hơn người 2n = 46 nhưng kém tiến hóa hơn người)."
+      ],
+      "callout": "Ở kì sau khi tâm động chẻ đôi tách 2 chromatid thành 2 NST đơn thì số chromatid trong tế bào bằng 0!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Tại kì sau của quá trình nguyên phân trong một tế bào sinh dưỡng của người (2n = 46), số lượng chromatid có trong tế bào là bao nhiêu?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "0 chromatid (vì tâm động đã chẻ đôi tách thành các NST đơn)",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "92 chromatid",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "46 chromatid",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "23 chromatid",
+        "correct": false
+      }
+    ],
+    "explanation": "Tại kì sau nguyên phân, tâm động của mỗi NST kép chẻ đôi tách rời 2 chromatid chị em thành 2 NST đơn phân li về 2 cực tế bào. Lúc này trong tế bào có 92 NST đơn và 0 chromatid."
+  }
+}

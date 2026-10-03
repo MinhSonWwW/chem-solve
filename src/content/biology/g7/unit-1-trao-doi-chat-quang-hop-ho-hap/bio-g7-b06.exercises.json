@@ -1,0 +1,518 @@
+[
+  {
+    "id": "bio-g7-b06-q01",
+    "lessonId": "bio-g7-b06",
+    "sgkBaiSo": 26,
+    "skillIds": [
+      "bio-yeu-to-ho-hap"
+    ],
+    "difficulty": 1,
+    "prompt": "Yếu tố nào sau đây tỉ lệ thuận với cường độ hô hấp tế bào ở hạt giống cây trồng?",
+    "knowledge": [
+      "kb-bio-g7-yeu-to-nuoc-ho-hap"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hàm lượng nước trong hạt"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nồng độ khí CO2 xung quanh hạt"
+        },
+        {
+          "id": "opt-c",
+          "label": "Độ dày của lớp vỏ trấu bảo vệ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Số lượng gai nhọn trên vỏ quả"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nước là môi trường và dung môi cần thiết để enzym hô hấp hoạt động phân giải chất hữu cơ."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 26 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Yếu tố tỉ lệ thuận với hô hấp hạt",
+        "body": "Hạt càng ẩm, nước càng nhiều thì enzym hô hấp hoạt động càng mạnh, cường độ hô hấp càng tăng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Hàm lượng nước trong tế bào hạt tỉ lệ thuận với cường độ hô hấp tế bào."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hàm lượng nước trong hạt tỉ lệ thuận với hô hấp."
+      }
+    ],
+    "finalSolution": "Hàm lượng nước trong tế bào hạt tỉ lệ thuận với cường độ hô hấp tế bào.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm với nồng độ CO2 (CO2 cao gây ức chế hô hấp)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g7-b06-q02",
+    "lessonId": "bio-g7-b06",
+    "sgkBaiSo": 26,
+    "skillIds": [
+      "bio-yeu-to-ho-hap"
+    ],
+    "difficulty": 1,
+    "prompt": "Mục đích cốt lõi của việc bảo quản các loại nông sản (thóc, ngô, đỗ, rau củ) sau thu hoạch là gì?",
+    "knowledge": [
+      "kb-bio-g7-muc-dich-bao-quan"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Kìm hãm hô hấp tế bào xuống mức tối thiểu để hạn chế tiêu hao chất dinh dưỡng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Kích thích cho nông sản tiếp tục quang hợp mạnh hơn trong kho kín"
+        },
+        {
+          "id": "opt-c",
+          "label": "Làm cho hạt giống nảy mầm thật nhanh ngay trong bao bì"
+        },
+        {
+          "id": "opt-d",
+          "label": "Làm tăng khối lượng của nông sản lên gấp đôi để bán được giá"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hô hấp tiêu tốn tinh bột và đường trong hạt làm giảm chất lượng và hao hụt khối lượng."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 26 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu câu hỏi",
+        "body": "Mục đích cốt lõi của việc bảo quản các loại nông sản (thóc, ngô, đỗ, rau củ) sau thu hoạch là gì?"
+      },
+      {
+        "kind": "knowledge",
+        "title": "Nguyên lí bảo quản nông sản",
+        "body": "Phải đưa hô hấp về mức thấp nhất nhưng không làm chết tế bào phôi giống."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Kìm hãm hô hấp tế bào xuống mức tối thiểu."
+      }
+    ],
+    "finalSolution": "Bảo quản nông sản nhằm ức chế hô hấp, giảm thiểu hao hụt chất hữu cơ.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b06-q03",
+    "lessonId": "bio-g7-b06",
+    "sgkBaiSo": 26,
+    "skillIds": [
+      "bio-yeu-to-ho-hap"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi để một đống lúa hoặc bắp ngô còn tươi, ẩm ướt chất đống trong góc nhà một đêm, sờ tay vào giữa đống hạt ta thấy ấm nóng rõ rệt. Nhiệt lượng đó sinh ra từ đâu?",
+    "knowledge": [
+      "kb-bio-g7-ho-hap-sinh-nhiet"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Do các hạt lúa tươi hô hấp tế bào mạnh mẽ và giải phóng nhiệt năng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Do ánh nắng mặt trời ban ngày vẫn còn tích tụ lại bên trong vỏ trấu"
+        },
+        {
+          "id": "opt-c",
+          "label": "Do phản ứng quang hợp của hạt lúa trong bóng tối tỏa nhiệt"
+        },
+        {
+          "id": "opt-d",
+          "label": "Do hơi nóng từ nền gạch truyền ngược lên đống lúa"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Phương trình hô hấp: Glucose + O2 → CO2 + H2O + ATP + Nhiệt năng."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 26 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nguồn gốc nhiệt lượng",
+        "body": "Hạt ẩm hô hấp rất mạnh, một phần lớn năng lượng hóa học giải phóng dưới dạng nhiệt năng làm nóng đống hạt."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Hô hấp tế bào giải phóng nhiệt năng khiến đống hạt tươi ấm nóng lên nhanh chóng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nhiệt sinh ra từ quá trình hô hấp tế bào của hạt."
+      }
+    ],
+    "finalSolution": "Hô hấp tế bào giải phóng nhiệt năng khiến đống hạt tươi ấm nóng lên nhanh chóng.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b06-q04",
+    "lessonId": "bio-g7-b06",
+    "sgkBaiSo": 26,
+    "skillIds": [
+      "bio-yeu-to-ho-hap"
+    ],
+    "difficulty": 2,
+    "prompt": "Phương pháp bảo quản nào sau đây thích hợp nhất đối với các loại rau xanh và hoa quả tươi?",
+    "knowledge": [
+      "kb-bio-g7-phuong-phap-bao-quan"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Bảo quản lạnh (nhiệt độ mát từ 1°C đến 5°C)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Phơi thật khô dưới nắng to cho đến khi giòn vụn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ngâm ngập hoàn toàn trong nước sôi 100°C"
+        },
+        {
+          "id": "opt-d",
+          "label": "Đặt trong lò sấy nhiệt độ cao 80°C"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Rau quả cần giữ được độ tươi mọng nước, không thể phơi khô như ngũ cốc."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 26 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đặc điểm của rau quả tươi",
+        "body": "Rau quả chứa nhiều nước, bảo quản mát giúp hạ hoạt tính enzym hô hấp mà không làm hỏng cấu trúc tế bào."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Bảo quản lạnh trong kho mát/tủ lạnh giúp giữ rau quả tươi ngon dài ngày."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn phương án",
+        "body": "Bảo quản lạnh là phương pháp phù hợp nhất."
+      }
+    ],
+    "finalSolution": "Bảo quản lạnh trong kho mát/tủ lạnh giúp giữ rau quả tươi ngon dài ngày.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b06-q05",
+    "lessonId": "bio-g7-b06",
+    "sgkBaiSo": 26,
+    "skillIds": [
+      "bio-yeu-to-ho-hap"
+    ],
+    "difficulty": 2,
+    "prompt": "Tại sao người ta lại sử dụng biện pháp 'hút chân không' trong đóng gói bảo quản nhiều loại thực phẩm?",
+    "knowledge": [
+      "kb-bio-g7-phuong-phap-bao-quan"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Loại bỏ khí Oxygen (O2), kìm hãm hô hấp hiếu khí và ngăn chặn sự phát triển của vi sinh vật gây thối rữa"
+        },
+        {
+          "id": "opt-b",
+          "label": "Làm cho bao bì nhẹ hơn giúp tiết kiệm chi phí vận chuyển"
+        },
+        {
+          "id": "opt-c",
+          "label": "Kích thích cho các tế bào thực phẩm tự nhân đôi làm tăng số lượng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Làm biến đổi thực phẩm thành thể khí dễ tiêu hóa hơn"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hút chân không làm môi trường bên trong bao bì gần như cạn kiệt khí O2."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 26 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu câu hỏi",
+        "body": "Tại sao người ta lại sử dụng biện pháp 'hút chân không' trong đóng gói bảo quản nhiều loại thực phẩm?"
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế của hút chân không",
+        "body": "Không có O2, các enzym hô hấp hiếu khí của thực phẩm và các vi khuẩn, nấm mốc không thể hoạt động, ngăn chặn quá trình ôi thiu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Loại bỏ O2 để ức chế hô hấp và vi sinh vật gây hại."
+      }
+    ],
+    "finalSolution": "Hút chân không ngăn cản O2, ức chế hô hấp và bảo vệ thực phẩm khỏi nấm mốc.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b06-q06",
+    "lessonId": "bio-g7-b06",
+    "sgkBaiSo": 26,
+    "skillIds": [
+      "bio-yeu-to-ho-hap"
+    ],
+    "difficulty": 3,
+    "prompt": "Điều gì sẽ xảy ra nếu bảo quản rau xanh tươi trong ngăn đá (ngăn đông < 0°C) của tủ lạnh?",
+    "knowledge": [
+      "kb-bio-g7-yeu-to-nhiet-do-ho-hap"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Nước trong tế bào bị đóng băng tạo tinh thể sắc nhọn làm rách màng tế bào, khi rã đông rau sẽ bị dập nát, chảy nước và thâm hỏng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Rau sẽ tươi ngon và xanh đậm hơn gấp nhiều lần so với để ngăn mát"
+        },
+        {
+          "id": "opt-c",
+          "label": "Rau sẽ biến đổi hoàn toàn thành đường glucose có vị ngọt sắc"
+        },
+        {
+          "id": "opt-d",
+          "label": "Các tế bào rau sẽ tiếp tục quang hợp dưới nhiệt độ âm"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nước khi đóng băng nở thể tích và hình thành các tinh thể đá làm vỡ tế bào thực vật mềm."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 26 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tác động của nhiệt độ âm tới tế bào rau",
+        "body": "Tinh thể nước đá phá vỡ cấu trúc không bào và màng tế bào. Khi tan băng, dịch bào chảy ra ngoài khiến rau bị nhũn nát."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Rau quả tươi chỉ nên bảo quản ở ngăn mát (1-5°C), không để ở ngăn đông vì sẽ làm vỡ màng tế bào."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Đáp án A mô tả đúng hiện tượng dập nát khi để rau ở ngăn đá."
+      }
+    ],
+    "finalSolution": "Rau quả tươi chỉ nên bảo quản ở ngăn mát (1-5°C), không để ở ngăn đông vì sẽ làm vỡ màng tế bào.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b06-q07",
+    "lessonId": "bio-g7-b06",
+    "sgkBaiSo": 26,
+    "skillIds": [
+      "bio-yeu-to-ho-hap"
+    ],
+    "difficulty": 3,
+    "prompt": "Hãy ghép mỗi loại nông sản với phương pháp bảo quản phù hợp nhất:",
+    "knowledge": [
+      "kb-bio-g7-phuong-phap-bao-quan"
+    ],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Hạt thóc, ngô, đỗ xanh",
+          "right": "Phơi sấy khô dưới 13% ẩm"
+        },
+        {
+          "left": "Rau xà lách, cà chua, dâu tây",
+          "right": "Bảo quản trong ngăn mát 1°C - 5°C"
+        },
+        {
+          "left": "Táo, lê xuất khẩu đường biển",
+          "right": "Bảo quản kho kín tăng nồng độ khí CO2"
+        },
+        {
+          "left": "Xúc xích, lạp xưởng, chả lụa",
+          "right": "Bảo quản đóng gói hút chân không"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ngũ cốc cần sấy khô; Rau củ cần kho mát; Hàng xuất khẩu dài ngày dùng khí CO2 kìm hãm."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 26 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân loại nông sản",
+        "body": "Thóc ngô: bảo quản khô. Rau quả tươi: bảo quản mát. Táo lê đi tàu biển: bảo quản CO2. Thịt chế biến: hút chân không."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức cốt lõi SGK KHTN 7",
+        "body": "Mỗi loại nông sản có đặc tính sinh học riêng đòi hỏi phương pháp bảo quản thích hợp."
+      },
+      {
+        "kind": "answer",
+        "title": "Ghép cặp",
+        "body": "Ghép đúng 4 phương pháp bảo quản đặc thù."
+      }
+    ],
+    "finalSolution": "Mỗi loại nông sản có đặc tính sinh học riêng đòi hỏi phương pháp bảo quản thích hợp.",
+    "commonMistakes": []
+  },
+  {
+    "id": "bio-g7-b06-q08",
+    "lessonId": "bio-g7-b06",
+    "sgkBaiSo": 26,
+    "skillIds": [
+      "bio-yeu-to-ho-hap"
+    ],
+    "difficulty": 3,
+    "prompt": "Tại sao khi nồng độ khí CO2 trong kho bảo quản tăng quá cao (trên 3% - 5%) thì hô hấp tế bào lại bị ức chế?",
+    "knowledge": [
+      "kb-bio-g7-yeu-to-co2-ho-hap"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vì CO2 là sản phẩm của hô hấp; nồng độ sản phẩm quá cao sẽ gây chuyển dịch cân bằng và ức chế hoạt tính của các enzym phân giải"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vì CO2 phản ứng với nước tạo thành acid cực mạnh hòa tan hoàn toàn nông sản"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì CO2 biến đổi thành chất diệp lục kích thích hạt nảy mầm"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì CO2 đóng băng làm đông cứng các phân tử tế bào"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Quy tắc ức chế ngược bởi sản phẩm phản ứng sinh hóa."
+      },
+      {
+        "level": 2,
+        "text": "Gợi ý chi tiết: Đối chiếu với lí thuyết trọng tâm của Bài 26 SGK KHTN 7 Kết nối tri thức."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định yêu cầu câu hỏi",
+        "body": "Tại sao khi nồng độ khí CO2 trong kho bảo quản tăng quá cao (trên 3% - 5%) thì hô hấp tế bào lại bị ức chế?"
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế ức chế của CO2",
+        "body": "Hô hấp sinh ra CO2. Khi môi trường có nồng độ CO2 quá cao, sự chênh lệch nồng độ khí bị đảo lộn, phản ứng enzym hô hấp bị kìm hãm mạnh mẽ."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án",
+        "body": "Đáp án A giải thích chính xác cơ chế sinh hóa."
+      }
+    ],
+    "finalSolution": "Nồng độ CO2 cao ức chế enzym hô hấp, giúp bảo quản nông sản không bị tiêu hao dinh dưỡng.",
+    "commonMistakes": []
+  }
+]

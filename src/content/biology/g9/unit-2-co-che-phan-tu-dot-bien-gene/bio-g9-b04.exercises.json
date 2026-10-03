@@ -1,0 +1,259 @@
+[
+  {
+    "id": "bio-g9-b04-q01",
+    "lessonId": "bio-g9-b04",
+    "sgkBaiSo": 39,
+    "skillIds": ["bio9-tai-ban-phien-ma"],
+    "difficulty": 1,
+    "prompt": "Trong tế bào nhân thực, quá trình tái bản (nhân đôi) DNA diễn ra ở vị trí và thời điểm nào của chu kì tế bào?",
+    "knowledge": ["kb-bio-g9-tai-ban-dna-nguyen-tac"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Trong nhân tế bào, tại kì trung gian giữa 2 lần phân bào" },
+        { "id": "opt-b", "label": "Trong tế bào chất, tại kì giữa của nguyên phân" },
+        { "id": "opt-c", "label": "Tại bào quan ribosome, khi tế bào đang phân chia" },
+        { "id": "opt-d", "label": "Ở màng sinh chất, tại kì đầu của giảm phân" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Hầu hết DNA của sinh vật nhân thực tập trung trong nhân tế bào tạo nên nhiễm sắc thể." },
+      { "level": 2, "text": "Quá trình nhân đôi diễn ra để chuẩn bị vật chất di truyền trước khi tế bào bước vào phân chia." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định nơi chứa DNA và thời điểm nhân đôi", "body": "Ở tế bào nhân thực, DNA nằm chủ yếu trong nhân tế bào liên kết với protein tạo thành nhiễm sắc thể." },
+      { "kind": "knowledge", "title": "Thời điểm trong chu kì tế bào", "body": "Nhiễm sắc thể và DNA nhân đôi tại pha S của kì trung gian, khi sợi nhiễm sắc dãn xoắn tối đa để enzyme tiếp cận." },
+      { "kind": "answer", "title": "Kết luận", "body": "Quá trình tái bản DNA diễn ra trong nhân tế bào, tại kì trung gian giữa hai lần phân bào." }
+    ],
+    "finalSolution": "Quá trình tái bản DNA diễn ra trong nhân tế bào, tại kì trung gian giữa hai lần phân bào để chuẩn bị cho sự phân chia tế bào.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn với quá trình dịch mã diễn ra ở bào quan ribosome trong tế bào chất." }
+    ]
+  },
+  {
+    "id": "bio-g9-b04-q02",
+    "lessonId": "bio-g9-b04",
+    "sgkBaiSo": 39,
+    "skillIds": ["bio9-tai-ban-phien-ma"],
+    "difficulty": 1,
+    "prompt": "Hai nguyên tắc cơ bản chi phối toàn bộ quá trình tái bản (nhân đôi) của phân tử DNA là gì?",
+    "knowledge": ["kb-bio-g9-tai-ban-dna-nguyen-tac"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Nguyên tắc bổ sung và nguyên tắc bán bảo tồn" },
+        { "id": "opt-b", "label": "Nguyên tắc đối song song và nguyên tắc phân li" },
+        { "id": "opt-c", "label": "Nguyên tắc tự do và nguyên tắc đồng hóa" },
+        { "id": "opt-d", "label": "Nguyên tắc bảo tồn hoàn toàn và nguyên tắc ngẫu nhiên" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Một nguyên tắc quy định cách ghép cặp bazơ (A với T, G với C) và một nguyên tắc quy định việc giữ lại một nửa mạch cũ." },
+      { "level": 2, "text": "'Bán bảo tồn' nghĩa là giữ lại một nửa phân tử DNA mẹ ban đầu." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xem xét các nguyên tắc nhân đôi DNA", "body": "Quá trình nhân đôi DNA đòi hỏi tính chính xác tuyệt đối để thông tin di truyền không bị sai lệch." },
+      { "kind": "knowledge", "title": "Phân tích hai nguyên tắc", "body": "Nguyên tắc bổ sung (A-T, G-C) giúp lắp ráp chính xác nucleotide tự do theo khuôn. Nguyên tắc bán bảo tồn (mỗi DNA con giữ lại 1 mạch cũ) đảm bảo tính kế thừa trung thực." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đó là Nguyên tắc bổ sung và Nguyên tắc bán bảo tồn." }
+    ],
+    "finalSolution": "Hai nguyên tắc chi phối quá trình tái bản DNA là nguyên tắc bổ sung (A-T, G-C) và nguyên tắc bán bảo tồn (giữ lại 1 mạch cũ của mẹ trong mỗi DNA con).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm sang nguyên tắc bảo tồn hoàn toàn (sai lầm kinh điển tưởng rằng DNA mẹ được giữ nguyên vẹn)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b04-q03",
+    "lessonId": "bio-g9-b04",
+    "sgkBaiSo": 39,
+    "skillIds": ["bio9-tai-ban-phien-ma"],
+    "difficulty": 2,
+    "prompt": "Trong quá trình nhân đôi DNA, enzyme DNA polymerase di chuyển trên mạch khuôn và kéo dài mạch mới theo chiều nào?",
+    "knowledge": ["kb-bio-g9-tai-ban-dna-dien-bien"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Trượt theo chiều 3' → 5' trên mạch khuôn và kéo dài mạch mới theo chiều 5' → 3'" },
+        { "id": "opt-b", "label": "Trượt theo chiều 5' → 3' trên mạch khuôn và kéo dài mạch mới theo chiều 3' → 5'" },
+        { "id": "opt-c", "label": "Trượt đồng thời theo cả hai chiều 3' → 5' và 5' → 3' trên cả hai mạch mới" },
+        { "id": "opt-d", "label": "Kéo dài mạch mới ngẫu nhiên không phân biệt chiều phân tử" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Do hai mạch của DNA đối song song (ngược chiều nhau) và enzyme chỉ gắn nucleotide vào đầu 3'-OH tự do." },
+      { "level": 2, "text": "Mạch mới luôn được tổng hợp theo chiều kéo dài từ đầu 5' đến đầu 3'." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đặc tính xúc tác của enzyme DNA polymerase", "body": "Enzyme DNA polymerase chỉ có thể gắn nucleotide mới vào nhóm 3'-OH tự do của chuỗi polynucleotide đang phát triển." },
+      { "kind": "knowledge", "title": "Quy tắc chiều phân tử", "body": "Vì mạch mới phát triển theo chiều 5' → 3' và hai mạch đối song song nhau, nên enzyme phải trượt trên mạch khuôn theo chiều ngược lại là 3' → 5'." },
+      { "kind": "answer", "title": "Kết luận", "body": "Enzyme DNA polymerase trượt theo chiều 3' → 5' trên mạch khuôn và tổng hợp mạch mới theo chiều 5' → 3'." }
+    ],
+    "finalSolution": "Enzyme DNA polymerase luôn trượt theo chiều 3' → 5' trên mạch khuôn để tổng hợp mạch mới theo chiều 5' → 3'.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm chiều trượt trên mạch khuôn với chiều tổng hợp mạch mới." }
+    ]
+  },
+  {
+    "id": "bio-g9-b04-q04",
+    "lessonId": "bio-g9-b04",
+    "sgkBaiSo": 39,
+    "skillIds": ["bio9-tai-ban-phien-ma"],
+    "difficulty": 2,
+    "prompt": "Một phân tử DNA nhân đôi liên tiếp 3 lần trong môi trường tế bào chứa các nucleotide tự do. Kết thúc quá trình, có bao nhiêu phân tử DNA con được tạo thành và có bao nhiêu phân tử DNA con còn chứa mạch cũ của mẹ?",
+    "knowledge": ["kb-bio-g9-toan-tai-ban-dna"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "8 phân tử DNA con, trong đó có đúng 2 phân tử còn chứa mạch cũ của mẹ" },
+        { "id": "opt-b", "label": "6 phân tử DNA con, trong đó có 3 phân tử chứa mạch cũ của mẹ" },
+        { "id": "opt-c", "label": "8 phân tử DNA con, trong đó cả 8 phân tử đều chứa mạch cũ của mẹ" },
+        { "id": "opt-d", "label": "16 phân tử DNA con, trong đó có 4 phân tử chứa mạch cũ của mẹ" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Số phân tử DNA tạo thành sau k lần nhân đôi tính theo công thức 2^k." },
+      { "level": 2, "text": "Phân tử DNA mẹ ban đầu chỉ gồm đúng 2 mạch đơn cũ, phân chia về 2 phân tử DNA con khác nhau." }
+    ],
+    "steps": [
+      { "kind": "compute", "title": "Tính tổng số phân tử DNA con", "body": "Từ 1 phân tử DNA ban đầu, qua k = 3 lần nhân đôi sẽ tạo thành 2^3 = 8 phân tử DNA con." },
+      { "kind": "knowledge", "title": "Áp dụng nguyên tắc bán bảo tồn", "body": "Phân tử DNA mẹ ban đầu chỉ có 2 mạch khuôn cũ. Khi nhân đôi theo nguyên tắc bán bảo tồn, 2 mạch khuôn cũ này tách ra và nằm trong 2 phân tử DNA con riêng biệt." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tạo ra 8 phân tử DNA con, trong đó có đúng 2 phân tử mang 1 mạch cũ của mẹ (6 phân tử còn lại được cấu tạo hoàn toàn từ nguyên liệu mới)." }
+    ],
+    "finalSolution": "Số phân tử DNA con là 2^3 = 8 phân tử; theo nguyên tắc bán bảo tồn luôn luôn chỉ có đúng 2 phân tử chứa mạch cũ của mẹ ban đầu.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Quên nguyên tắc bán bảo tồn, tưởng rằng số phân tử mang mạch cũ tăng dần theo số lần nhân đôi." }
+    ]
+  },
+  {
+    "id": "bio-g9-b04-q05",
+    "lessonId": "bio-g9-b04",
+    "sgkBaiSo": 39,
+    "skillIds": ["bio9-tai-ban-phien-ma"],
+    "difficulty": 2,
+    "prompt": "Một gen có tổng số 3000 nucleotide tiến hành nhân đôi liên tiếp 2 lần. Số nucleotide môi trường nội bào cần cung cấp cho quá trình nhân đôi này là bao nhiêu?",
+    "knowledge": ["kb-bio-g9-toan-tai-ban-dna"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "9000 nucleotide" },
+        { "id": "opt-b", "label": "12000 nucleotide" },
+        { "id": "opt-c", "label": "6000 nucleotide" },
+        { "id": "opt-d", "label": "3000 nucleotide" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Sau 2 lần nhân đôi sẽ tạo ra 2^2 = 4 phân tử gen con, nhưng trong đó có 1 gen tương đương cấu trúc gốc ban đầu." },
+      { "level": 2, "text": "Công thức số nucleotide môi trường cung cấp: N_mt = N × (2^k - 1)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định dữ liệu đề bài", "body": "Tổng số nucleotide ban đầu N = 3000; số lần nhân đôi k = 2." },
+      { "kind": "compute", "title": "Áp dụng công thức tính nucleotide môi trường cung cấp", "body": "N_mt = N × (2^k - 1) = 3000 × (2^2 - 1) = 3000 × 3 = 9000 nucleotide." },
+      { "kind": "answer", "title": "Kết luận", "body": "Môi trường nội bào cần cung cấp 9000 nucleotide tự do." }
+    ],
+    "finalSolution": "Số nucleotide môi trường cung cấp là: N_mt = 3000 × (2^2 - 1) = 9000 nucleotide.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Lấy 3000 × 4 = 12000 nucleotide do quên trừ đi phân tử DNA mẹ ban đầu đã có sẵn 2 mạch cũ." }
+    ]
+  },
+  {
+    "id": "bio-g9-b04-q06",
+    "lessonId": "bio-g9-b04",
+    "sgkBaiSo": 39,
+    "skillIds": ["bio9-tai-ban-phien-ma"],
+    "difficulty": 1,
+    "prompt": "Trong quá trình phiên mã tổng hợp phân tử RNA, mạch nào của gen được sử dụng làm mạch khuôn và enzyme nào trực tiếp xúc tác?",
+    "knowledge": ["kb-bio-g9-mach-khuon-phien-ma"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Mạch gốc (chiều 3' → 5') làm khuôn; enzyme xúc tác là RNA polymerase" },
+        { "id": "opt-b", "label": "Cả hai mạch của gen đều làm khuôn; enzyme xúc tác là DNA polymerase" },
+        { "id": "opt-c", "label": "Mạch bổ sung (chiều 5' → 3') làm khuôn; enzyme xúc tác là DNA ligase" },
+        { "id": "opt-d", "label": "Mạch khuôn được chọn ngẫu nhiên giữa 2 mạch; enzyme xúc tác là amylase" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Khác với tái bản (dùng cả 2 mạch làm khuôn), phiên mã chỉ sử dụng duy nhất một mạch mang thông tin." },
+      { "level": 2, "text": "Enzyme xúc tác tổng hợp RNA mang tên chính sản phẩm của nó: RNA polymerase." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đặc điểm mạch khuôn của phiên mã", "body": "Trong gen chỉ có một mạch đơn mang thông tin mã hóa trực tiếp có chiều 3' → 5' được gọi là mạch gốc." },
+      { "kind": "knowledge", "title": "Enzyme phiên mã", "body": "Enzyme RNA polymerase bám vào vùng điều hòa, trượt dọc trên mạch gốc 3' → 5' để tổng hợp chuỗi ribonucleotide theo chiều 5' → 3'." },
+      { "kind": "answer", "title": "Kết luận", "body": "Mạch gốc (3' → 5') được dùng làm khuôn và enzyme xúc tác là RNA polymerase." }
+    ],
+    "finalSolution": "Quá trình phiên mã chỉ dùng mạch gốc (chiều 3' → 5') của gen làm khuôn mẫu và được xúc tác bởi enzyme RNA polymerase.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm tưởng cả hai mạch của gen đều được phiên mã giống như quá trình nhân đôi DNA." }
+    ]
+  },
+  {
+    "id": "bio-g9-b04-q07",
+    "lessonId": "bio-g9-b04",
+    "sgkBaiSo": 39,
+    "skillIds": ["bio9-tai-ban-phien-ma"],
+    "difficulty": 2,
+    "prompt": "Một đoạn mạch gốc của gen có trình tự nucleotide là: 3'-A-A-T-G-C-T-T-G-C-5'. Trình tự các ribonucleotide của đoạn phân tử mRNA được tổng hợp từ đoạn mạch gốc này là:",
+    "knowledge": ["kb-bio-g9-nguyen-tac-bo-sung-phien-ma"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "5'-U-U-A-C-G-A-A-C-G-3'" },
+        { "id": "opt-b", "label": "5'-T-T-A-C-G-A-A-C-G-3'" },
+        { "id": "opt-c", "label": "5'-A-A-U-G-C-U-U-G-C-3'" },
+        { "id": "opt-d", "label": "3'-U-U-A-C-G-A-A-C-G-5'" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Áp dụng NTBS trong phiên mã: A mạch gốc liên kết với U, T liên kết với A, G liên kết với C, C liên kết với G." },
+      { "level": 2, "text": "Chú ý phân tử RNA không chứa base T và chiều phân tử mRNA là 5' → 3'." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định mạch gốc và chiều phân tử", "body": "Mạch gốc: 3'-A-A-T-G-C-T-T-G-C-5'. Mạch mRNA được tổng hợp theo chiều đối song song là 5' → 3'." },
+      { "kind": "compute", "title": "Áp dụng nguyên tắc bổ sung phiên mã", "body": "A → U; A → U; T → A; G → C; C → G; T → A; T → A; G → C; C → G." },
+      { "kind": "answer", "title": "Kết luận", "body": "Trình tự mRNA tạo thành là: 5'-U-U-A-C-G-A-A-C-G-3'." }
+    ],
+    "finalSolution": "Theo nguyên tắc bổ sung trong phiên mã (A-U, T-A, G-C, C-G), trình tự ribonucleotide trên mRNA là: 5'-U-U-A-C-G-A-A-C-G-3'.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Ghi nucleotide loại T trên mRNA (mRNA không có T, chỉ có U)." },
+      { "id": "cm-02", "message": "Nhầm chiều 5' → 3' thành 3' → 5'." }
+    ]
+  },
+  {
+    "id": "bio-g9-b04-q08",
+    "lessonId": "bio-g9-b04",
+    "sgkBaiSo": 39,
+    "skillIds": ["bio9-tai-ban-phien-ma"],
+    "difficulty": 2,
+    "prompt": "Phân tử RNA nào sau đây có cấu tạo cuộn gập hình lá chẽ ba, mang một đầu gắn amino acid đặc hiệu và một đầu mang bộ ba đối mã (anticodon)?",
+    "knowledge": ["kb-bio-g9-cac-loai-rna-chuc-nang"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "tRNA (RNA vận chuyển)" },
+        { "id": "opt-b", "label": "mRNA (RNA thông tin)" },
+        { "id": "opt-c", "label": "rRNA (RNA ribosome)" },
+        { "id": "opt-d", "label": "DNA xoắn kép" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Loại RNA này làm nhiệm vụ vận chuyển amino acid tới ribosome trong quá trình dịch mã." },
+      { "level": 2, "text": "Chữ 't' viết tắt của từ 'transfer' (vận chuyển)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xem xét đặc điểm cấu trúc và chức năng", "body": "Đặc điểm hình lá chẽ ba, có bộ ba đối mã (anticodon) và đầu gắn amino acid đặc hiệu là cấu trúc thích nghi hoàn hảo để vận chuyển amino acid." },
+      { "kind": "knowledge", "title": "So sánh các loại RNA", "body": "mRNA có dạng mạch thẳng làm khuôn dịch mã; rRNA kết hợp protein tạo ribosome; tRNA chuyên hóa làm nhiệm vụ vận chuyển amino acid." },
+      { "kind": "answer", "title": "Kết luận", "body": "Phân tử đó là tRNA (RNA vận chuyển)." }
+    ],
+    "finalSolution": "tRNA (RNA vận chuyển) có cấu trúc cuộn gập hình lá chẽ ba, mang anticodon để khớp mã với mRNA và một đầu liên kết với amino acid đặc hiệu.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm tRNA với mRNA (mRNA có dạng mạch đơn thẳng làm khuôn, không mang anticodon)." }
+    ]
+  }
+]

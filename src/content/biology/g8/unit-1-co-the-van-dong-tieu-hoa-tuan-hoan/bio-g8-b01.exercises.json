@@ -1,0 +1,554 @@
+[
+  {
+    "id": "bio-g8-b01-q01",
+    "lessonId": "bio-g8-b01",
+    "sgkBaiSo": 30,
+    "skillIds": [
+      "bio-khai-quat-co-the-nguoi"
+    ],
+    "difficulty": 1,
+    "prompt": "Sắp xếp theo thứ tự đúng từ cấp độ tổ chức thấp đến cao trong cơ thể người là gì?",
+    "knowledge": [
+      "kb-bio-g8-cap-do-to-chuc"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tế bào → Mô → Cơ quan → Hệ cơ quan → Cơ thể"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tế bào → Cơ quan → Mô → Hệ cơ quan → Cơ thể"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mô → Tế bào → Cơ quan → Hệ cơ quan → Cơ thể"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tế bào → Mô → Hệ cơ quan → Cơ quan → Cơ thể"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tập hợp các tế bào cùng loại tạo thành mô, nhiều mô hợp thành cơ quan."
+      },
+      {
+        "level": 2,
+        "text": "Thứ tự bắt đầu từ đơn vị nhỏ nhất là Tế bào và kết thúc ở Cơ thể hoàn chỉnh."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định các cấp bậc cấu trúc",
+        "body": "Đơn vị cấu tạo nhỏ nhất là tế bào. Nhiều tế bào cùng chức năng kết hợp tạo thành mô."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy luật tổ chức thứ bậc",
+        "body": "Các mô phối hợp tạo thành cơ quan. Các cơ quan cùng phối hợp thực hiện chức năng tạo nên hệ cơ quan, và các hệ cơ quan hợp thành cơ thể thống nhất."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Trình tự đúng là: Tế bào → Mô → Cơ quan → Hệ cơ quan → Cơ thể."
+      }
+    ],
+    "finalSolution": "Mọi cơ thể sinh vật đa bào đều tổ chức theo trình tự thứ bậc: Tế bào → Mô → Cơ quan → Hệ cơ quan → Cơ thể.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm lẫn vị trí giữa Mô và Cơ quan."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b01-q02",
+    "lessonId": "bio-g8-b01",
+    "sgkBaiSo": 30,
+    "skillIds": [
+      "bio-khai-quat-co-the-nguoi"
+    ],
+    "difficulty": 1,
+    "prompt": "Cơ quan nào ngăn cách khoang thân của cơ thể người thành khoang ngực và khoang bụng?",
+    "knowledge": [
+      "kb-bio-g8-khoang-co-the"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cơ hoành"
+        },
+        {
+          "id": "opt-b",
+          "label": "Xương sườn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cơ liên sườn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Xương ức"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đây là một cơ bản rộng dẹt hình vòm tham gia tích cực vào động tác hít thở."
+      },
+      {
+        "level": 2,
+        "text": "Tên gọi của cơ này là cơ hoành (diaphragm)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Vị trí giải phẫu",
+        "body": "Thân người chia thành khoang ngực ở phía trên và khoang bụng ở phía dưới."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cấu trúc cơ hoành",
+        "body": "Cơ hoành là một tấm cơ rộng dẹp hình vòm ngăn cách hoàn toàn khoang ngực (chứa tim, phổi) và khoang bụng (chứa ống tiêu hóa, gan, thận...)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cơ hoành là ranh giới ngăn cách khoang ngực và khoang bụng."
+      }
+    ],
+    "finalSolution": "Cơ hoành là cơ dẹt ngăn đôi khoang thân thành khoang ngực và khoang bụng ở thú và người.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm lẫn cơ hoành với cơ liên sườn gắn giữa các nan xương sườn."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b01-q03",
+    "lessonId": "bio-g8-b01",
+    "sgkBaiSo": 30,
+    "skillIds": [
+      "bio-khai-quat-co-the-nguoi"
+    ],
+    "difficulty": 1,
+    "prompt": "Đặc điểm cấu tạo chủ yếu của mô biểu bì là gì?",
+    "knowledge": [
+      "kb-bio-g8-bon-loai-mo"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Gồm các tế bào xếp xít nhau, phủ mặt ngoài hoặc lót mặt trong cơ quan rỗng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Gồm các tế bào nằm rải rác trong chất gian bào phong phú"
+        },
+        {
+          "id": "opt-c",
+          "label": "Gồm các tế bào dài có khả năng co rút tạo lực chuyển động"
+        },
+        {
+          "id": "opt-d",
+          "label": "Gồm thân nơron với các sợi nhánh và sợi trục dẫn truyền xung điện"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mô biểu bì có nhiệm vụ bao bọc bề mặt cơ thể và lót lòng ống tiêu hóa, niêm mạc phế quản."
+      },
+      {
+        "level": 2,
+        "text": "Để che chắn và bảo vệ hiệu quả, các tế bào biểu bì phải liên kết khít sát với nhau."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đặc trưng của mô biểu bì",
+        "body": "Mô biểu bì có chức năng che chở, bảo vệ bề mặt ngoài hoặc lót bề mặt các xoang rỗng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Mối quan hệ cấu trúc - chức năng",
+        "body": "Để che chở kín khẽ, các tế bào mô biểu bì luôn sắp xếp san sát, hầu như không có chất gian bào xen kẽ."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là: Gồm các tế bào xếp xít nhau, phủ mặt ngoài hoặc lót mặt trong cơ quan rỗng."
+      }
+    ],
+    "finalSolution": "Mô biểu bì bảo vệ bề mặt ngoài của cơ thể (lớp biểu bì da) và lót mặt trong các ống cơ quan rỗng (ống tiêu hóa, khí quản).",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm đặc điểm tế bào xếp khít của biểu bì với đặc điểm tế bào rải rác của mô liên kết."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b01-q04",
+    "lessonId": "bio-g8-b01",
+    "sgkBaiSo": 30,
+    "skillIds": [
+      "bio-khai-quat-co-the-nguoi"
+    ],
+    "difficulty": 2,
+    "prompt": "Các cấu trúc nào sau đây đều thuộc loại mô liên kết trong cơ thể người?",
+    "knowledge": [
+      "kb-bio-g8-bon-loai-mo"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Mô sụn, mô xương, mô mỡ và máu"
+        },
+        {
+          "id": "opt-b",
+          "label": "Mô cơ vân, mô sụn và lớp biểu bì da"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mô thần kinh đệm, mô xương và cơ tim"
+        },
+        {
+          "id": "opt-d",
+          "label": "Lớp niêm mạc dạ dày, mô mỡ và nơron"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mô liên kết gồm các tế bào nằm rải rác trong chất nền lỏng (huyết tương) hoặc chất nền cứng (xương, sụn)."
+      },
+      {
+        "level": 2,
+        "text": "Máu được xếp vào mô liên kết lỏng; xương và sụn là mô liên kết nâng đỡ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khái niệm mô liên kết",
+        "body": "Mô liên kết gồm các tế bào nằm rải rác trong chất gian bào (chất nền ngoại bào)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân loại các dạng mô liên kết",
+        "body": "Mô liên kết bao gồm mô sợi liên kết, mô mỡ dự trữ, mô sụn, mô xương cứng và máu (chất gian bào là huyết tương)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nhóm cấu trúc hoàn toàn thuộc mô liên kết là: Mô sụn, mô xương, mô mỡ và máu."
+      }
+    ],
+    "finalSolution": "Mô liên kết rất đa dạng về hình thái, có chức năng neo giữ, liên kết và nâng đỡ các cơ quan trong cơ thể.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Không biết rằng máu cũng là một dạng mô liên kết đặc biệt (mô liên kết thể lỏng)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b01-q05",
+    "lessonId": "bio-g8-b01",
+    "sgkBaiSo": 30,
+    "skillIds": [
+      "bio-khai-quat-co-the-nguoi"
+    ],
+    "difficulty": 2,
+    "prompt": "Mô cơ vân có điểm khác biệt căn bản nào so với mô cơ trơn?",
+    "knowledge": [
+      "kb-bio-g8-bon-loai-mo"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Gắn vào xương và co dãn theo ý muốn của con người"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cấu tạo nên thành dạ dày và co bóp tự động không theo ý muốn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chỉ có ở thành tim và phân nhánh nối tiếp nhau"
+        },
+        {
+          "id": "opt-d",
+          "label": "Không có khả năng co rút tạo chuyển động"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cơ vân tạo nên hệ cơ bắp bám vào khung xương (như cơ nhị đầu tay, cơ đùi)."
+      },
+      {
+        "level": 2,
+        "text": "Ta có thể chủ động cử động tay chân theo ý muốn nhờ sự co rút của cơ vân."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đặc điểm cơ vân",
+        "body": "Cơ vân có các vân ngang sáng tối xen kẽ, bám vào hai đầu xương qua gân."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế điều khiển thần kinh",
+        "body": "Cơ vân hoạt động chịu sự điều khiển của vỏ não (co rút theo ý muốn); trong khi cơ trơn ở thành nội tạng co bóp vô thức không theo ý muốn."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cơ vân gắn vào xương và co dãn theo ý muốn, khác với cơ trơn ở nội tạng co bóp vô thức."
+      }
+    ],
+    "finalSolution": "Cơ vân là loại mô cơ duy nhất hoạt động hoàn toàn theo sự chỉ huy có ý thức của não bộ.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm cơ trơn thành cơ co bóp theo ý muốn."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b01-q06",
+    "lessonId": "bio-g8-b01",
+    "sgkBaiSo": 30,
+    "skillIds": [
+      "bio-khai-quat-co-the-nguoi"
+    ],
+    "difficulty": 2,
+    "prompt": "Hai chức năng cơ bản nhất của mô thần kinh trong cơ thể người là gì?",
+    "knowledge": [
+      "kb-bio-g8-bon-loai-mo"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tiếp nhận kích thích (cảm ứng) và dẫn truyền xung thần kinh"
+        },
+        {
+          "id": "opt-b",
+          "label": "Co rút tạo lực đẩy và tiết dịch nhầy bảo vệ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Dự trữ mỡ năng lượng và sản sinh hồng cầu mới"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nâng đỡ trọng lượng cơ thể và đệm chống sốc"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nơron có các sợi nhánh nhận tín hiệu và sợi trục phát xung điện."
+      },
+      {
+        "level": 2,
+        "text": "Hai đặc tính sinh lí nổi bật của mô thần kinh là cảm ứng và dẫn truyền."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cấu tạo nơron thần kinh",
+        "body": "Mô thần kinh gồm các nơron chuyên hóa có thân, sợi nhánh và sợi trục kéo dài."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hai đặc tính sinh lí cốt lõi",
+        "body": "Nơron có khả năng cảm ứng (tiếp nhận các kích thích từ môi trường) và dẫn truyền các xung thần kinh đó truyền về trung ương não/tủy."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Chức năng cơ bản là tiếp nhận kích thích và dẫn truyền xung thần kinh."
+      }
+    ],
+    "finalSolution": "Mô thần kinh điều hòa và phối hợp các hoạt động cơ thể thông qua cảm ứng và dẫn truyền xung thần kinh.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm chức năng dẫn truyền thần kinh với chức năng co dãn của cơ."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b01-q07",
+    "lessonId": "bio-g8-b01",
+    "sgkBaiSo": 30,
+    "skillIds": [
+      "bio-khai-quat-co-the-nguoi"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi một vận động viên đang thi đấu chạy cự li ngắn 100m, hoạt động của các hệ cơ quan phối hợp như thế nào?",
+    "knowledge": [
+      "kb-bio-g8-su-phoi-hop-he-co-quan"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hệ tuần hoàn tăng nhịp tim, hệ hô hấp tăng nhịp thở và da tăng tiết mồ hôi để tỏa nhiệt"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hệ tuần hoàn giảm nhịp tim để tiết kiệm máu, hệ hô hấp ngừng thở tạm thời"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hệ tiêu hóa tăng cường co bóp thức ăn mạnh mẽ để cung cấp năng lượng tức thì"
+        },
+        {
+          "id": "opt-d",
+          "label": "Mọi hệ cơ quan đều giảm hoạt động xuống mức tối thiểu để dồn sức cho chân"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cơ bắp hoạt động cực mạnh cần nhiều oxy và năng lượng, đồng thời sinh ra rất nhiều nhiệt."
+      },
+      {
+        "level": 2,
+        "text": "Tim phải đập nhanh hơn để cấp máu, phổi thở nhanh để trao đổi khí, tuyến mồ hôi toát ra để làm mát."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhu cầu của hệ vận động",
+        "body": "Cơ bắp co rút liên tục tiêu thụ rất nhiều khí O2 và glucose, giải phóng nhiều CO2 và nhiệt lượng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phản ứng phối hợp của các hệ",
+        "body": "Tim tăng tốc đập bơm máu giàu O2, phổi thở nhanh sâu để nạp khí và thải CO2, tuyến mồ hôi hoạt động mạnh để bốc hơi hạ nhiệt cơ thể."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng: Hệ tuần hoàn tăng nhịp tim, hệ hô hấp tăng nhịp thở và da tăng tiết mồ hôi."
+      }
+    ],
+    "finalSolution": "Hoạt động phối hợp nhịp nhàng giữa hệ vận động, tuần hoàn, hô hấp và bài tiết minh chứng cho tính thống nhất toàn vẹn của cơ thể người.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng khi chạy hệ tiêu hóa tăng co bóp (thực tế hệ tiêu hóa bị ức chế tạm thời để dồn máu nuôi cơ)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b01-q08",
+    "lessonId": "bio-g8-b01",
+    "sgkBaiSo": 30,
+    "skillIds": [
+      "bio-khai-quat-co-the-nguoi"
+    ],
+    "difficulty": 3,
+    "prompt": "Hai cơ chế chủ đạo điều khiển và phối hợp hoạt động của tất cả các hệ cơ quan, đảm bảo cơ thể là một thể thống nhất là gì?",
+    "knowledge": [
+      "kb-bio-g8-su-phoi-hop-he-co-quan"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cơ chế điều hòa thần kinh và cơ chế điều hòa thể dịch (hormone)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cơ chế tuần hoàn máu và cơ chế bài tiết nước tiểu"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cơ chế tiêu hóa thức ăn và hô hấp phế nang"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cơ chế co dãn cơ vân và phản xạ bất điều kiện"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Một cơ chế truyền tín hiệu điện cực nhanh, một cơ chế truyền tín hiệu hóa học qua dòng máu."
+      },
+      {
+        "level": 2,
+        "text": "Đó là sự điều khiển của hệ thần kinh và hệ nội tiết (hormone thể dịch)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Vai trò của sự thống nhất",
+        "body": "Cơ thể chỉ tồn tại được khi các hệ cơ quan phối hợp nhịp nhàng dưới sự điều hòa chung."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hai cơ chế điều hòa tối cao",
+        "body": "Hệ thần kinh đảm nhiệm điều hòa thần kinh (nhanh, chính xác). Hệ nội tiết đảm nhiệm điều hòa thể dịch bằng cách tiết hormone vào máu (chậm, tác động rộng và kéo dài)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cơ thể thống nhất nhờ cơ chế điều hòa thần kinh và cơ chế điều hòa thể dịch."
+      }
+    ],
+    "finalSolution": "Điều hòa thần kinh và điều hòa thể dịch (hormone) là hai cơ chế cốt lõi gắn kết toàn bộ các hệ cơ quan thành một khối thống nhất.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Chỉ kể đến hệ thần kinh mà bỏ quên cơ chế điều hòa thể dịch qua hormone của hệ nội tiết."
+      }
+    ]
+  }
+]

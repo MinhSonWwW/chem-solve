@@ -1,0 +1,298 @@
+[
+  {
+    "id": "bio-g6-b12-q01",
+    "lessonId": "bio-g6-b12",
+    "sgkBaiSo": 27,
+    "skillIds": ["bio-vi-khuan"],
+    "difficulty": 1,
+    "prompt": "Ghép nối từng nhóm vi khuẩn (cột bên trái) với đúng hình dạng hình học tương ứng của nó (cột bên phải):",
+    "knowledge": ["bio-vi-khuan"],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Trực khuẩn (như vi khuẩn E. coli, vi khuẩn lao)",
+          "right": "Hình que"
+        },
+        {
+          "left": "Cầu khuẩn (như tụ cầu khuẩn)",
+          "right": "Hình cầu"
+        },
+        {
+          "left": "Xoắn khuẩn (như xoắn khuẩn giang mai)",
+          "right": "Hình xoắn lò xo"
+        },
+        {
+          "left": "Phẩy khuẩn (như phẩy khuẩn tả)",
+          "right": "Hình dấu phẩy uốn cong"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Từ Hán Việt: Trực = thẳng (que); Cầu = tròn; Xoắn = lò xo; Phẩy = dấu phẩy."
+      },
+      {
+        "level": 2,
+        "text": "Tên gọi của vi khuẩn thường phản ánh chính xác hình dạng của nó."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu bài tập",
+        "body": "Nối 4 nhóm vi khuẩn với 4 dạng hình học đặc trưng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu hình dạng",
+        "body": "Trực khuẩn = que; Cầu khuẩn = cầu tròn; Xoắn khuẩn = xoắn; Phẩy khuẩn = dấu phẩy."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất ghép cặp",
+        "body": "Nối đúng 4 cặp hình thái vi khuẩn."
+      }
+    ],
+    "finalSolution": "Trực khuẩn: Hình que; Cầu khuẩn: Hình cầu; Xoắn khuẩn: Hình xoắn; Phẩy khuẩn: Hình dấu phẩy.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm trực khuẩn (hình que) với xoắn khuẩn (hình xoắn)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b12-q02",
+    "lessonId": "bio-g6-b12",
+    "sgkBaiSo": 27,
+    "skillIds": ["bio-vi-khuan"],
+    "difficulty": 2,
+    "prompt": "Phân loại các hoạt động sau đây của vi khuẩn vào hai nhóm: 'Vai trò có ích' và 'Tác hại đối với đời sống':",
+    "knowledge": ["bio-vi-khuan"],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "b-beneficial", "label": "Vai trò có ích" },
+        { "id": "b-harmful", "label": "Tác hại đối với đời sống" }
+      ],
+      "items": [
+        { "id": "it-1", "label": "Lên men sữa chua và dưa chua", "bucketId": "b-beneficial" },
+        { "id": "it-2", "label": "Phân giải xác động vật, rác thải hữu cơ tạo mùn đất", "bucketId": "b-beneficial" },
+        { "id": "it-3", "label": "Cố định đạm trong nốt sần rễ cây họ đậu", "bucketId": "b-beneficial" },
+        { "id": "it-4", "label": "Làm thức ăn bị ôi thiu, thối rữa và bốc mùi", "bucketId": "b-harmful" },
+        { "id": "it-5", "label": "Gây bệnh lao phổi nguy hiểm cho người", "bucketId": "b-harmful" },
+        { "id": "it-6", "label": "Gây bệnh dịch tả tiêu chảy mất nước", "bucketId": "b-harmful" }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Lên men làm thực phẩm và làm sạch môi trường là những lợi ích to lớn."
+      },
+      {
+        "level": 2,
+        "text": "Gây ôi thiu và gây bệnh truyền nhiễm là những tác hại cần phòng tránh."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 6 hoạt động",
+        "body": "Đánh giá mặt lợi và mặt hại của vi khuẩn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu kiến thức SGK",
+        "body": "Lên men sữa chua, phân giải mùn, cố định đạm là có ích. Làm thiu hỏng thức ăn, gây bệnh lao, dịch tả là có hại."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất phân nhóm",
+        "body": "3 hoạt động có ích và 3 tác hại được xếp chính xác."
+      }
+    ],
+    "finalSolution": "Có ích: Lên men sữa chua, Phân giải xác hữu cơ, Cố định đạm rễ đậu. Có hại: Làm ôi thiu thức ăn, Gây bệnh lao phổi, Gây bệnh dịch tả.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Nghĩ rằng mọi vi khuẩn đều nguy hiểm và có hại cho con người."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b12-q03",
+    "lessonId": "bio-g6-b12",
+    "sgkBaiSo": 27,
+    "skillIds": ["bio-vi-khuan"],
+    "difficulty": 1,
+    "prompt": "Cấu tạo tế bào của vi khuẩn thuộc loại tế bào nào sau đây?",
+    "knowledge": ["bio-vi-khuan"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tế bào nhân sơ (chưa có màng nhân bao bọc vật chất di truyền)" },
+        { "id": "opt-b", "label": "Tế bào nhân thực (có nhân hoàn chỉnh với màng nhân)" },
+        { "id": "opt-c", "label": "Thực thể chưa có cấu tạo tế bào" },
+        { "id": "opt-d", "label": "Tế bào thực vật có chứa nhiều lục lạp quang hợp" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Vi khuẩn là đại diện duy nhất của giới Khởi sinh."
+      },
+      {
+        "level": 2,
+        "text": "Vật chất di truyền của vi khuẩn nằm tự do trong chất tế bào gọi là Vùng nhân."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân loại kiểu tế bào của vi khuẩn",
+        "body": "Xác định vi khuẩn là nhân sơ hay nhân thực."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cấu trúc vi khuẩn",
+        "body": "Vi khuẩn có cấu tạo tế bào nhân sơ, kích thước 0,5 - 5 μm, chưa có màng nhân bao bọc vật chất di truyền."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án đúng",
+        "body": "Lựa chọn chính xác là cấu trúc chuẩn xác."
+      }
+    ],
+    "finalSolution": "Vi khuẩn có cấu tạo tế bào nhân sơ, vật chất di truyền DNA nằm trần ở vùng nhân chưa có màng nhân bao bọc.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nhầm vi khuẩn là chưa có cấu tạo tế bào (chưa có cấu tạo tế bào là virus)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b12-q04",
+    "lessonId": "bio-g6-b12",
+    "sgkBaiSo": 27,
+    "skillIds": ["bio-vi-khuan"],
+    "difficulty": 2,
+    "prompt": "Những biện pháp nào sau đây giúp phòng tránh hiệu quả các bệnh truyền nhiễm lây qua đường tiêu hóa do vi khuẩn (chọn các phương án đúng)?",
+    "knowledge": ["bio-vi-khuan"],
+    "answer": {
+      "kind": "mcq-multi",
+      "options": [
+        { "id": "opt-a", "label": "Thực hiện ăn chín, uống sôi, không ăn thức ăn ôi thiu" },
+        { "id": "opt-b", "label": "Rửa tay sạch bằng xà phòng trước khi ăn và sau khi đi vệ sinh" },
+        { "id": "opt-c", "label": "Bảo quản thực phẩm trong tủ lạnh và che đậy thức ăn tránh ruồi nhặng" },
+        { "id": "opt-d", "label": "Uống thuốc kháng sinh liều cao hàng ngày ngay cả khi hoàn toàn khỏe mạnh" }
+      ],
+      "correctIds": ["opt-a", "opt-b", "opt-c"]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhiệt độ sôi tiêu diệt vi khuẩn, xà phòng rửa trôi mầm bệnh trên tay."
+      },
+      {
+        "level": 2,
+        "text": "Uống kháng sinh bừa bãi khi không bị bệnh gây tác hại nghiêm trọng và nhờn thuốc."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu vệ sinh phòng bệnh",
+        "body": "Tìm các biện pháp an toàn vệ sinh thực phẩm và phòng nhiễm khuẩn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đánh giá các biện pháp",
+        "body": "Ăn chín uống sôi (đúng), rửa tay xà phòng (đúng), bảo quản tủ lạnh (đúng). Tự uống kháng sinh hàng ngày là sai lầm nguy hiểm dẫn đến kháng kháng sinh."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn các phương án chính xác",
+        "body": "Chọn A, B và C."
+      }
+    ],
+    "finalSolution": "Các biện pháp đúng là ăn chín uống sôi, rửa tay bằng xà phòng và bảo quản thực phẩm hợp vệ sinh. Tuyệt đối không tự ý uống kháng sinh khi không có chỉ định của bác sĩ.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Nghĩ rằng uống kháng sinh phòng ngừa hàng ngày là tốt cho sức khỏe."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b12-q05",
+    "lessonId": "bio-g6-b12",
+    "sgkBaiSo": 27,
+    "skillIds": ["bio-vi-khuan"],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về vi khuẩn và sử dụng kháng sinh:",
+    "knowledge": ["bio-vi-khuan"],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Thuốc kháng sinh có tác dụng tiêu diệt hoặc ức chế sự phát triển của vi khuẩn gây bệnh.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Khi uống thuốc kháng sinh thấy đỡ sốt thì nên lập tức ngừng thuốc ngay không cần uống hết đơn.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Vi khuẩn lactic lên men đường tạo môi trường acid giúp sữa đông tụ thành sữa chua thơm ngon.",
+          "correct": true
+        },
+        {
+          "id": "st-4",
+          "text": "Tất cả các loài vi khuẩn trên Trái Đất đều là mầm mống gây bệnh nguy hiểm chết người.",
+          "correct": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ngừng thuốc kháng sinh giữa chừng làm vi khuẩn sót lại kháng thuốc mạnh hơn."
+      },
+      {
+        "level": 2,
+        "text": "Đa phần vi khuẩn có ích trong tự nhiên và trong cơ thể người."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Đánh giá từng câu về tác dụng kháng sinh và vai trò của vi khuẩn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra chi tiết",
+        "body": "1. Kháng sinh diệt vi khuẩn: Đúng. 2. Ngừng kháng sinh sớm: Sai (phải uống đủ liều). 3. Vi khuẩn lactic lên men sữa: Đúng. 4. Tất cả vi khuẩn gây bệnh: Sai (phần lớn có ích)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Ý 1: Đúng; Ý 2: Sai; Ý 3: Đúng; Ý 4: Sai."
+      }
+    ],
+    "finalSolution": "Phát biểu 1 và 3 đúng. Phát biểu 2 sai (phải uống đủ liều kháng sinh tránh vi khuẩn nhờn thuốc). Phát biểu 4 sai (phần lớn vi khuẩn có ích hoặc vô hại).",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Thói quen tự ngưng kháng sinh khi mới bớt triệu chứng là nguyên nhân chính gây ra siêu vi khuẩn kháng thuốc."
+      }
+    ]
+  }
+]

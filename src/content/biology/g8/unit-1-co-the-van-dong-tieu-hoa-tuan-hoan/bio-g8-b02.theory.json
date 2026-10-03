@@ -1,0 +1,72 @@
+{
+  "lessonId": "bio-g8-b02",
+  "nodeId": "bio-g8-b02-theory",
+  "title": "Lý thuyết: Hệ vận động ở người",
+  "subtitle": "Bài 31 SGK KHTN 8 Kết nối tri thức: Cấu tạo bộ xương, các loại khớp, cơ chế co cơ, tật cong vẹo cột sống và sơ cứu gãy xương",
+  "sgkBaiSo": 31,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Bộ xương",
+      "badgeColor": "emerald",
+      "title": "Cấu tạo bộ xương & Thành phần của xương",
+      "content": "Bộ xương người trưởng thành gồm khoảng 206 xương, chia làm 3 phần: Xương đầu (hộp sọ, xương mặt), Xương thân (cột sống cong 4 chỗ chữ S, lồng ngực tạo bởi 12 đôi xương sườn và xương ức) và Xương chi (chi trên và chi dưới).",
+      "bulletPoints": [
+        "Thành phần hóa học: Chất hữu cơ (chất cốt giao) tạo tính đàn hồi, mềm dẻo; Chất vô cơ (muối canxi, photpho) tạo tính rắn chắc.",
+        "Sự phát triển của xương: Xương dài ra nhờ sự phân chia của lớp sụn tăng trưởng ở hai đầu xương; to ra bề ngang nhờ sự phân chia của các tế bào màng xương.",
+        "3 loại khớp: Khớp bất động (khớp sọ), Khớp bán động (khớp đốt sống), Khớp động (khớp vai, khớp gối có bao hoạt dịch chứa dịch khớp giúp cử động dễ dàng)."
+      ],
+      "callout": "Cột sống người có 4 chỗ cong chữ S giúp phân tán trọng lực và giảm xóc khi di chuyển thẳng đứng bằng 2 chân!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Cơ & Co cơ",
+      "badgeColor": "amber",
+      "title": "Hệ cơ & Cơ chế trượt của tơ cơ",
+      "content": "Cơ vân bám vào hai đầu xương nhờ gân. Khi cơ co rút sẽ kéo xương chuyển động quanh khớp đòn bẩy.",
+      "bulletPoints": [
+        "Cấu tạo sợi cơ: Chứa hai loại tơ cơ là tơ cơ mảnh (actin) và tơ cơ dày (myosin) nằm xen kẽ song song.",
+        "Cơ chế co cơ: Dưới kích thích thần kinh, tơ cơ mảnh trượt sâu vào khoảng giữa các tơ cơ dày làm đĩa sáng ngắn lại, bắp cơ co ngắn và phình to.",
+        "Hiện tượng mỏi cơ: Khi cơ bắp làm việc quá sức trong điều kiện thiếu oxy, tế bào phải chuyển sang lên men tạo axit lactic (acid lactic) ứ đọng đầu độc cơ và gây đau mỏi, chuột rút."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Bảo vệ & Sơ cứu",
+      "badgeColor": "cyan",
+      "title": "Vệ sinh hệ vận động & Sơ cứu gãy xương",
+      "content": "Rèn luyện hệ vận động giúp xương khớp chắc khỏe và phòng tránh dị tật học đường:",
+      "bulletPoints": [
+        "Phòng tránh cong vẹo cột sống: Ngồi học ngay ngắn, giữ khoảng cách mắt - bàn hợp lí, không mang cặp sách lệch một bên vai, tắm nắng sớm để tổng hợp vitamin D hấp thu canxi.",
+        "Quy tắc sơ cứu gãy xương: Đặt nạn nhân nằm yên, dùng nẹp nẹp cố định cả khớp trên và khớp dưới vị trí gãy bằng dây băng/vải sạch, tuyệt đối không tự ý nắn chỉnh hay kéo nắn xương gãy rồi chuyển ngay tới bệnh viện."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Xương của con người phát triển dài ra là nhờ hoạt động phân chia của cấu trúc nào sau đây?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Lớp sụn tăng trưởng ở hai đầu xương",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Các tế bào của màng xương bao bọc thân xương",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Tủy vàng trong khoang xương",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Mô xương cứng ở thân xương",
+        "correct": false
+      }
+    ],
+    "explanation": "Xương dài ra nhờ lớp sụn tăng trưởng ở hai đầu xương phân chia liên tục rồi hóa xương; trong khi đó xương to ra về bề ngang là nhờ các tế bào màng xương phân chia."
+  }
+}

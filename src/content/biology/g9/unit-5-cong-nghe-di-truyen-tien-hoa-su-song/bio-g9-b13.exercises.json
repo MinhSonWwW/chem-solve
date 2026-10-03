@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g9-b13-q01",
+    "lessonId": "bio-g9-b13",
+    "sgkBaiSo": 48,
+    "skillIds": ["bio9-cong-nghe-di-truyen"],
+    "difficulty": 1,
+    "prompt": "Kĩ thuật nuôi cấy mô tế bào thực vật trong ống nghiệm (in vitro) được xây dựng dựa trên cơ sở sinh học cốt lõi nào?",
+    "knowledge": ["kb-bio-g9-cong-nghe-te-bao-thuc-vat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tính toàn năng của tế bào thực vật" },
+        { "id": "opt-b", "label": "Khả năng tự thụ tinh của các tế bào sinh dưỡng" },
+        { "id": "opt-c", "label": "Hiện tượng đột biến đa bội hóa tự nhiên" },
+        { "id": "opt-d", "label": "Sự thụ phấn chéo giữa các cơ quan sinh dưỡng" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Mỗi tế bào thực vật sống đều mang trọn vẹn bộ gen của loài và có tiềm năng tái sinh thành cây hoàn chỉnh." },
+      { "level": 2, "text": "Thuật ngữ khoa học gọi là tính 'toàn năng' (totipotency)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Bản chất của nuôi cấy mô thực vật", "body": "Từ một mẩu mô hoặc một tế bào lá, củ, thân có thể phát triển thành một cây hoàn chỉnh trong ống nghiệm." },
+      { "kind": "knowledge", "title": "Cơ sở sinh học", "body": "Mỗi tế bào sinh dưỡng thực vật đều chứa toàn bộ hệ gen giống như hợp tử ban đầu. Khi được nuôi trong môi trường dinh dưỡng nhân tạo thích hợp chứa hormone sinh trưởng (auxin, cytokinin), tế bào có khả năng phân chia và biệt hóa thành cơ quan hoàn chỉnh — đó là tính toàn năng của tế bào." },
+      { "kind": "answer", "title": "Kết luận", "body": "Dựa trên tính toàn năng của tế bào thực vật." }
+    ],
+    "finalSolution": "Kĩ thuật nuôi cấy mô tế bào thực vật dựa trên tính toàn năng của tế bào (khả năng phát triển thành một cơ thể hoàn chỉnh từ một tế bào sinh dưỡng).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng nuôi cấy mô là một dạng sinh sản hữu tính có thụ tinh." }
+    ]
+  },
+  {
+    "id": "bio-g9-b13-q02",
+    "lessonId": "bio-g9-b13",
+    "sgkBaiSo": 48,
+    "skillIds": ["bio9-cong-nghe-di-truyen"],
+    "difficulty": 2,
+    "prompt": "Trong thí nghiệm nhân bản vô tính cừu Dolly nổi tiếng (1996), cừu Dolly mang đặc điểm kiểu hình và kiểu gen nhân giống hệt con cừu nào sau đây?",
+    "knowledge": ["kb-bio-g9-nhan-ban-vo-tinh-dong-vat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Con cừu cho tế bào tuyến vú (con cừu cho nhân)" },
+        { "id": "opt-b", "label": "Con cừu cho tế bào trứng đã hút bỏ nhân" },
+        { "id": "opt-c", "label": "Con cừu mẹ mang thai hộ và sinh ra Dolly" },
+        { "id": "opt-d", "label": "Pha trộn đồng đều giữa cừu cho trứng và cừu mang thai" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Toàn bộ thông tin di truyền chính yếu của tế bào nằm ở nhân tế bào." },
+      { "level": 2, "text": "Con cừu nào cho nhân tế bào tuyến vú thì cừu Dolly mang kiểu gen nhân của con cừu đó." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích 3 con cừu tham gia thí nghiệm", "body": "Cừu A (mặt trắng, cho nhân tế bào tuyến vú); Cừu B (mặt đen, cho trứng đã hút bỏ nhân); Cừu C (mặt đen, mang thai hộ)." },
+      { "kind": "knowledge", "title": "Vị trí lưu giữ vật chất di truyền", "body": "Vật chất di truyền quy định kiểu hình của cơ thể chủ yếu nằm trong nhân tế bào (các nhiễm sắc thể). Vì Dolly nhận nhân từ cừu A nên Dolly có đầu màu trắng và mang 100% kiểu gen nhân của cừu A." },
+      { "kind": "answer", "title": "Kết luận", "body": "Giống hệt con cừu cho tế bào tuyến vú (cừu cho nhân)." }
+    ],
+    "finalSolution": "Cừu Dolly mang kiểu gen trong nhân giống hệt con cừu cho tế bào tuyến vú (con cừu cho nhân).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng cừu Dolly giống con cừu mang thai hoặc cừu cho trứng (đây là cạm bẫy kinh điển)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b13-q03",
+    "lessonId": "bio-g9-b13",
+    "sgkBaiSo": 48,
+    "skillIds": ["bio9-cong-nghe-di-truyen"],
+    "difficulty": 2,
+    "prompt": "Kĩ thuật cấy truyền phôi ở gia súc (bò sữa cao sản) mang lại lợi ích kinh tế chủ yếu nào sau đây?",
+    "knowledge": ["kb-bio-g9-cay-truyen-phoi-dong-vat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Giúp khai thác tối đa tiềm năng sinh sản của bò cái giống tốt, tạo ra hàng chục đến hàng trăm con giống quý mỗi năm thông qua các bò mẹ mang thai hộ" },
+        { "id": "opt-b", "label": "Làm thay đổi hoàn toàn hệ gen của bò sữa thành hệ gen của loài dê" },
+        { "id": "opt-c", "label": "Khiến bò cái có thể tự sinh sản mà không cần tinh trùng thụ tinh" },
+        { "id": "opt-d", "label": "Làm tăng gấp đôi số lượng nhiễm sắc thể của toàn bộ đàn bò" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Một con bò cái cao sản bình thường mang thai 9 tháng chỉ sinh được 1 con bê trong 1 năm." },
+      { "level": 2, "text": "Nếu lấy nhiều phôi của bò mẹ tốt cấy cho các con bò khác mang thai hộ thì số lượng con giống quý sinh ra sẽ tăng vọt." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Hạn chế sinh sản tự nhiên của bò", "body": "Bò cái sinh sản chậm (mỗi lứa 1 con/năm), khiến việc nhân đàn giống quý mất nhiều năm." },
+      { "kind": "knowledge", "title": "Cơ chế cấy truyền phôi", "body": "Bằng cách gây rụng nhiều trứng ở bò cái giống tốt rồi thụ tinh, người ta thu được nhiều phôi. Cấy các phôi này vào tử cung của nhiều bò cái mang thai hộ giúp nhân nhanh số lượng con giống quý trong thời gian ngắn." },
+      { "kind": "answer", "title": "Kết luận", "body": "Khai thác tối đa tiềm năng sinh sản của bò cái quý qua mang thai hộ." }
+    ],
+    "finalSolution": "Cấy truyền phôi giúp khai thác tối đa phẩm chất giống của bò cái cao sản, tạo ra số lượng lớn con giống quý trong một năm nhờ các bò mẹ mang thai hộ.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm cấy truyền phôi với kĩ thuật chuyển gen (cấy truyền phôi không can thiệp sửa đổi gen)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b13-q04",
+    "lessonId": "bio-g9-b13",
+    "sgkBaiSo": 48,
+    "skillIds": ["bio9-cong-nghe-di-truyen"],
+    "difficulty": 2,
+    "prompt": "Trình tự các bước cơ bản trong quy trình kĩ thuật chuyển gen để tạo sinh vật biến đổi gen là gì?",
+    "knowledge": ["kb-bio-g9-cong-nghe-gene-quy-trinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tách thể truyền và gen đích → Cắt và nối tạo DNA tái tổ hợp → Chuyển DNA tái tổ hợp vào tế bào nhận → Phân lập dòng tế bào biểu hiện gen" },
+        { "id": "opt-b", "label": "Chuyển DNA tái tổ hợp vào tế bào nhận → Tách thể truyền → Cắt và nối gen → Nhân dòng tế bào" },
+        { "id": "opt-c", "label": "Chiếu tia phóng xạ gây đột biến → Lai hữu tính → Chọn lọc cá thể tốt" },
+        { "id": "opt-d", "label": "Nuôi cấy mô tế bào → Thụ tinh nhân tạo → Chuyển phôi vào tử cung" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Phải có 'nguyên liệu' (thể truyền và gen cần chuyển) trước khi tiến hành cắt nối." },
+      { "level": 2, "text": "Cắt nối tạo DNA tái tổ hợp xong mới chuyển vào tế bào nhận (E. coli) để nuôi cấy nhân lên." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Các giai đoạn công nghệ gen", "body": "Quy trình chuyển gen gồm 4 bước nối tiếp logic." },
+      { "kind": "knowledge", "title": "Thứ tự các bước chuẩn", "body": "Bước 1: Tách chiết thể truyền (plasmid) và gen cần chuyển. Bước 2: Dùng restrictase và ligase tạo DNA tái tổ hợp. Bước 3: Đưa DNA tái tổ hợp vào tế bào nhận. Bước 4: Phân lập dòng tế bào nhận và thu sản phẩm." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tách thể truyền & gen → Tạo DNA tái tổ hợp → Chuyển vào tế bào nhận → Phân lập dòng tế bào." }
+    ],
+    "finalSolution": "Quy trình chuyển gen chuẩn: Tách thể truyền và gen đích → Tạo DNA tái tổ hợp → Chuyển vào tế bào nhận → Phân lập dòng tế bào biểu hiện gen.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Đảo lộn đưa gen vào tế bào nhận trước khi tạo DNA tái tổ hợp." }
+    ]
+  },
+  {
+    "id": "bio-g9-b13-q05",
+    "lessonId": "bio-g9-b13",
+    "sgkBaiSo": 48,
+    "skillIds": ["bio9-cong-nghe-di-truyen"],
+    "difficulty": 1,
+    "prompt": "Thể truyền (vector chuyển gen) thường được sử dụng phổ biến nhất trong kĩ thuật chuyển gen là gì?",
+    "knowledge": ["kb-bio-g9-cong-nghe-gene-quy-trinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Plasmid của vi khuẩn hoặc thể thực khuẩn (virus)" },
+        { "id": "opt-b", "label": "Ribosome trong chất tế bào động vật" },
+        { "id": "opt-c", "label": "Không bào lớn của tế bào thực vật" },
+        { "id": "opt-d", "label": "Lớp màng kép của ti thể" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Phân tử DNA dạng vòng nhỏ nằm trong tế bào chất của vi khuẩn có khả năng tự nhân đôi." },
+      { "level": 2, "text": "Phân tử đó mang tên là Plasmid." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Khái niệm thể truyền", "body": "Thể truyền là phân tử DNA có khả năng mang gen lạ và tự nhân đôi độc lập trong tế bào nhận." },
+      { "kind": "knowledge", "title": "Các loại thể truyền thông dụng", "body": "Plasmid (DNA vòng nhỏ trong tế bào vi khuẩn) và virus (thực khuẩn thể bacteriophage) là hai loại thể truyền được sử dụng phổ biến nhất trong kĩ thuật di truyền." },
+      { "kind": "answer", "title": "Kết luận", "body": "Plasmid của vi khuẩn hoặc virus." }
+    ],
+    "finalSolution": "Thể truyền thông dụng nhất trong công nghệ gen là plasmid của vi khuẩn hoặc virus (thực khuẩn thể).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm thể truyền với bào quan ribosome hay màng tế bào." }
+    ]
+  },
+  {
+    "id": "bio-g9-b13-q06",
+    "lessonId": "bio-g9-b13",
+    "sgkBaiSo": 48,
+    "skillIds": ["bio9-cong-nghe-di-truyen"],
+    "difficulty": 1,
+    "prompt": "Thành tựu công nghệ gen nào sau đây đã giúp cứu sống hàng triệu bệnh nhân tiểu đường trên toàn thế giới?",
+    "knowledge": ["kb-bio-g9-thanh-tuu-sinh-vat-gmo"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Chuyển gen mã hóa insulin của người vào vi khuẩn E. coli để sản xuất insulin đại trà giá rẻ" },
+        { "id": "opt-b", "label": "Nuôi cấy tế bào tuyến tụy của chuột để chiết xuất insulin" },
+        { "id": "opt-c", "label": "Gây đột biến phóng xạ làm giảm lượng đường trong cơ thể bệnh nhân" },
+        { "id": "opt-d", "label": "Lai tế bào người với tế bào thực vật để quang hợp tạo đường ăn kiêng" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Trước đây phải chiết xuất insulin từ tụy lợn/bò rất đắt và dễ gây dị ứng." },
+      { "level": 2, "text": "Các nhà khoa học đã dùng vi khuẩn E. coli làm 'nhà máy sinh học' sản xuất insulin người chuẩn xác." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Ứng dụng y học của công nghệ gen", "body": "Insulin là hormone điều hòa đường huyết do tuyến tụy người tiết ra." },
+      { "kind": "knowledge", "title": "Thành tựu sản xuất insulin tái tổ hợp", "body": "Gen mã hóa insulin người được chuyển vào vi khuẩn E. coli nhờ plasmid. Vi khuẩn sinh sản nhanh chóng nhân đôi và tiết ra lượng lớn insulin người tinh khiết, giúp hạ giá thành và cung ứng đủ cho bệnh nhân tiểu đường." },
+      { "kind": "answer", "title": "Kết luận", "body": "Chuyển gen insulin người vào vi khuẩn E. coli." }
+    ],
+    "finalSolution": "Thành tựu chuyển gen tổng hợp insulin người vào vi khuẩn E. coli giúp sản xuất lượng lớn insulin điều trị bệnh tiểu đường hiệu quả và giá thành rẻ.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng dùng phương pháp hóa học thuần túy tổng hợp chuỗi protein insulin nhân tạo." }
+    ]
+  },
+  {
+    "id": "bio-g9-b13-q07",
+    "lessonId": "bio-g9-b13",
+    "sgkBaiSo": 48,
+    "skillIds": ["bio9-cong-nghe-di-truyen"],
+    "difficulty": 2,
+    "prompt": "Giống lúa gạo vàng (Golden Rice) là một sản phẩm biến đổi gen nổi tiếng nhằm giải quyết vấn đề sức khỏe cộng đồng nào?",
+    "knowledge": ["kb-bio-g9-thanh-tuu-sinh-vat-gmo"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Bổ sung tiền chất vitamin A (beta-carotene) trong hạt gạo giúp phòng chống bệnh khô mắt và mù lòa ở trẻ em" },
+        { "id": "opt-b", "label": "Tăng cường hàm lượng đường saccarozo cho bệnh nhân hạ đường huyết" },
+        { "id": "opt-c", "label": "Chống chịu hoàn toàn ngập úng nước mặn ở vùng ven biển" },
+        { "id": "opt-d", "label": "Loại bỏ hoàn toàn tinh bột để làm gạo ăn kiêng giảm béo" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Hạt gạo có màu vàng óng do chứa hàm lượng sắc tố beta-carotene (tiền chất của vitamin A)." },
+      { "level": 2, "text": "Thiếu vitamin A ở các nước đang phát triển là nguyên nhân gây mù lòa và suy giảm miễn dịch ở trẻ." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đặc tính của giống lúa vàng", "body": "Hạt gạo vàng Golden Rice mang gen tổng hợp beta-carotene từ hoa thủy tiên và vi khuẩn." },
+      { "kind": "knowledge", "title": "Ý nghĩa y tế cộng đồng", "body": "Beta-carotene là tiền chất của vitamin A. Khi vào cơ thể người, chất này chuyển hóa thành vitamin A, giúp ngăn ngừa tình trạng thiếu hụt vitamin A gây khô giác mạc và mù lòa ở hàng triệu trẻ em tại các quốc gia nghèo." },
+      { "kind": "answer", "title": "Kết luận", "body": "Bổ sung tiền chất vitamin A (beta-carotene) chống mù lòa ở trẻ em." }
+    ],
+    "finalSolution": "Giống lúa gạo vàng (Golden Rice) chứa gen tổng hợp beta-carotene (tiền chất vitamin A) giúp giải quyết nạn thiếu vitamin A và bệnh mù lòa ở trẻ em.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng lúa vàng là do nhuộm phẩm màu hay chỉ để làm cảnh." }
+    ]
+  },
+  {
+    "id": "bio-g9-b13-q08",
+    "lessonId": "bio-g9-b13",
+    "sgkBaiSo": 48,
+    "skillIds": ["bio9-cong-nghe-di-truyen"],
+    "difficulty": 2,
+    "prompt": "Cây ngô và cây bông chuyển gen Bt (mang gen từ vi khuẩn Bacillus thuringiensis) mang lại ưu thế vượt trội nào cho nông nghiệp và môi trường?",
+    "knowledge": ["kb-bio-g9-thanh-tuu-sinh-vat-gmo"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Có khả năng tự tiết ra protein độc tố tiêu diệt sâu đục thân gây hại, giúp giảm thiểu việc phun thuốc trừ sâu hóa học độc hại" },
+        { "id": "opt-b", "label": "Có thể tự cố định nitơ trong không khí mà không cần bón phân đạm" },
+        { "id": "opt-c", "label": "Sinh trưởng được trên đất cát sa mạc khô hạn không cần tưới nước" },
+        { "id": "opt-d", "label": "Làm cho quả ngô tự động rơi rụng khi chín" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Vi khuẩn Bt tự nhiên tiết ra một loại protein tinh thể độc hại đặc hiệu đối với ấu trùng sâu bọ." },
+      { "level": 2, "text": "Cây trồng mang gen Bt sẽ tự bảo vệ mình khỏi sâu đục thân mà không cần phun thuốc hóa học." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Bản chất cây trồng chuyển gen Bt", "body": "Cây ngô, bông Bt mang gen mã hóa protein tinh thể độc tố diệt côn trùng từ vi khuẩn Bacillus thuringiensis." },
+      { "kind": "knowledge", "title": "Lợi ích kinh tế và môi trường", "body": "Khi sâu cắn phá thân lá cây Bt, protein độc tố làm tê liệt ruột sâu khiến sâu chết, trong khi protein này hoàn toàn vô hại với người và gia súc. Nhờ đó, người nông dân giảm được hàng triệu lít thuốc bảo vệ thực vật, bảo vệ sức khỏe và môi trường." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tự tiết protein độc diệt sâu đục thân, giảm phun thuốc trừ sâu hóa học." }
+    ],
+    "finalSolution": "Cây trồng chuyển gen Bt có khả năng tự kháng sâu hại đục thân, giúp bảo vệ năng suất mùa màng và giảm thiểu ô nhiễm thuốc trừ sâu hóa học.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng gen Bt làm tăng khả năng cố định đạm (cố định đạm là do gen nif ở vi khuẩn nốt sần)." }
+    ]
+  }
+]

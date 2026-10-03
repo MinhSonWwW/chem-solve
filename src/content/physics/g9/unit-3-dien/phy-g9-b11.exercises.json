@@ -16,11 +16,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "I = I1 - I2"
+          "label": "I = I1 = I2 (cường độ dòng điện có giá trị như nhau tại mọi điểm)"
         },
         {
           "id": "opt-b",
-          "label": "I = I1 = I2 (cường độ dòng điện có giá trị như nhau tại mọi điểm)"
+          "label": "I = I1 - I2"
         },
         {
           "id": "opt-c",
@@ -31,7 +31,7 @@
           "label": "I = I1 . I2"
         }
       ],
-      "correctId": "opt-b"
+      "correctId": "opt-a"
     },
     "hints": [
       {
@@ -85,22 +85,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "U = U1 = U2 (hiệu điện thế bằng nhau giữa hai đầu các nhánh)"
-        },
-        {
-          "id": "opt-b",
           "label": "U = U1 - U2"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "U = U1 + U2"
+        },
+        {
+          "id": "opt-c",
+          "label": "U = U1 = U2 (hiệu điện thế bằng nhau giữa hai đầu các nhánh)"
         },
         {
           "id": "opt-d",
           "label": "U = U1 / U2"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -154,11 +154,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Để mỗi thiết bị đều nhận đủ hiệu điện thế định mức 220 V và có thể hoạt động độc lập khi thiết bị khác tắt"
+          "label": "Để khi một bóng đèn bị cháy thì tất cả các bóng đèn khác tự động tắt hết"
         },
         {
           "id": "opt-b",
-          "label": "Để khi một bóng đèn bị cháy thì tất cả các bóng đèn khác tự động tắt hết"
+          "label": "Để mỗi thiết bị đều nhận đủ hiệu điện thế định mức 220 V và có thể hoạt động độc lập khi thiết bị khác tắt"
         },
         {
           "id": "opt-c",
@@ -169,7 +169,7 @@
           "label": "Để tăng điện trở tương đương của toàn bộ ngôi nhà lên mức tối đa"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "kb-bio-g7-nhan-to-anh-huong-sinh-truong",
+    "title": "Các nhân tố ảnh hưởng đến sinh trưởng và phát triển",
+    "description": "Nhân tố bên trong: Đặc điểm di truyền của loài và hormone sinh trưởng. Nhân tố bên ngoài: Nước (môi trường hòa tan và nguyên liệu sinh hóa), Nhiệt độ (ảnh hưởng hoạt tính enzym), Ánh sáng (chi phối quang hợp và phân hóa mầm hoa), Chất dinh dưỡng (cung cấp vật liệu cấu trúc và năng lượng)."
+  },
+  {
+    "id": "kb-bio-g7-ung-dung-bam-ngon-tia-canh",
+    "title": "Biện pháp bấm ngọn và tỉa cành trong nông nghiệp",
+    "description": "Bấm ngọn (ngắt bỏ mô phân sinh đỉnh ngọn): Loại bỏ ưu thế ngọn, kích thích các chồi nách sinh trưởng phân nhiều cành ngang mang nhiều hoa và quả (áp dụng cho cây lấy quả/ngọn như bầu, bí, mướp, chè, bông). Tỉa cành (loại bỏ cành la, cành sâu bệnh): Giúp cây tập trung dinh dưỡng nuôi thân chính vươn cao (áp dụng cho cây lấy gỗ như xoan, keo, bạch đàn)."
+  },
+  {
+    "id": "kb-bio-g7-thuc-hanh-do-chieu-cao-do-thi",
+    "title": "Phương pháp theo dõi và vẽ đồ thị sinh trưởng ở thực vật",
+    "description": "Gieo hạt đậu xanh trong cốc ẩm, dùng thước kẻ đo chiều cao thân mầm định kì mỗi ngày vào cùng một thời điểm, ghi vào bảng theo dõi và dựng đồ thị biểu diễn tốc độ sinh trưởng theo thời gian."
+  },
+  {
+    "id": "kb-bio-g7-thuc-hanh-vong-doi-ech-buom",
+    "title": "Sơ đồ vòng đời biến thái hoàn toàn ở bướm và ếch",
+    "description": "Ở bướm: Trứng nở thành Sâu non (giai đoạn tích lũy dinh dưỡng và cắn phá lá cây) → hóa Nhộng bất động → biến đổi thành Bướm trưởng thành có cánh đẹp. Ở ếch đồng: Trứng thụ tinh nở ra Nòng nọc (bơi trong nước, có đuôi, thở bằng mang) → Nòng nọc mọc chân sau rồi chân trước, rụng đuôi, phát triển phổi → Ếch trưởng thành nhảy lên cạn."
+  }
+]

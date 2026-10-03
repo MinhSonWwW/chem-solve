@@ -1,0 +1,611 @@
+[
+  {
+    "id": "bio-tf-01",
+    "statement": "Tất cả mọi sinh vật trên Trái Đất đều được cấu tạo từ đơn vị cơ bản là tế bào.",
+    "isTrue": true,
+    "explanation": "Tế bào là đơn vị cơ sở về cấu trúc và chức năng của mọi cơ thể sống.",
+    "topic": "Tế bào học"
+  },
+  {
+    "id": "bio-tf-02",
+    "statement": "Tế bào nhân sơ đã có màng nhân bao bọc hoàn chỉnh bảo vệ vật chất di truyền.",
+    "isTrue": false,
+    "explanation": "Tế bào nhân sơ (như vi khuẩn) chưa có màng nhân, vật chất di truyền chỉ tập trung ở vùng nhân.",
+    "topic": "Tế bào học"
+  },
+  {
+    "id": "bio-tf-03",
+    "statement": "Tế bào thực vật có lục lạp chứa chất diệp lục giúp thực hiện quá trình quang hợp.",
+    "isTrue": true,
+    "explanation": "Lục lạp là bào quan quang hợp đặc trưng của tế bào thực vật, tế bào động vật không có lục lạp.",
+    "topic": "Tế bào thực vật"
+  },
+  {
+    "id": "bio-tf-04",
+    "statement": "Thành tế bào thực vật được cấu tạo chủ yếu từ cellulose giúp nâng đỡ và tạo hình dạng cố định cho tế bào.",
+    "isTrue": true,
+    "explanation": "Thành cellulose cứng chắc bảo vệ và định hình tế bào thực vật.",
+    "topic": "Tế bào thực vật"
+  },
+  {
+    "id": "bio-tf-05",
+    "statement": "Từ 1 tế bào ban đầu, sau 3 lần phân chia liên tiếp sẽ tạo thành 6 tế bào con.",
+    "isTrue": false,
+    "explanation": "Số tế bào con tạo thành là 2³ = 8 tế bào con, không phải 6 tế bào.",
+    "topic": "Sự phân chia tế bào"
+  },
+  {
+    "id": "bio-tf-06",
+    "statement": "Khi sử dụng kính hiển vi quang học, cần quan sát với vật kính có độ phóng đại nhỏ trước rồi mới chuyển sang vật kính lớn hơn.",
+    "isTrue": true,
+    "explanation": "Luôn bắt đầu từ vật kính phóng đại nhỏ để dễ dàng tìm kiếm vùng mẫu vật và căn chỉnh tiêu cự an toàn.",
+    "topic": "Kỹ thuật hiển vi"
+  },
+  {
+    "id": "bio-tf-07",
+    "statement": "Độ phóng đại của kính hiển vi bằng tổng độ phóng đại của thị kính cộng với vật kính.",
+    "isTrue": false,
+    "explanation": "Độ phóng đại là tích số (nhân) giữa độ phóng đại thị kính và vật kính, không phải phép cộng.",
+    "topic": "Kỹ thuật hiển vi"
+  },
+  {
+    "id": "bio-tf-08",
+    "statement": "Trùng roi xanh và vi khuẩn là các ví dụ tiêu biểu về cơ thể đơn bào.",
+    "isTrue": true,
+    "explanation": "Cơ thể đơn bào chỉ gồm 1 tế bào duy nhất nhưng thực hiện đầy đủ các chức năng sống.",
+    "topic": "Cơ thể sinh vật"
+  },
+  {
+    "id": "bio-tf-09",
+    "statement": "Thứ tự tổ chức cơ thể đa bào từ nhỏ đến lớn là: Tế bào → Cơ quan → Mô → Hệ cơ quan → Cơ thể.",
+    "isTrue": false,
+    "explanation": "Thứ tự đúng phải là: Tế bào → Mô → Cơ quan → Hệ cơ quan → Cơ thể sống.",
+    "topic": "Cơ thể đa bào"
+  },
+  {
+    "id": "bio-tf-10",
+    "statement": "Dạ dày, tim, phổi, lá cây là các ví dụ về cấp độ tổ chức cơ quan trong cơ thể.",
+    "isTrue": true,
+    "explanation": "Cơ quan gồm nhiều loại mô cùng phối hợp thực hiện chức năng nhất định.",
+    "topic": "Cơ thể đa bào"
+  },
+  {
+    "id": "bio-tf-11",
+    "statement": "Khóa lưỡng phân là công cụ phân loại sinh vật bằng cách dựa trên một cặp đặc điểm đối lập ở mỗi bước.",
+    "isTrue": true,
+    "explanation": "Khóa lưỡng phân chia đối tượng thành hai nhánh đối lập ở từng nấc phân loại.",
+    "topic": "Phân loại sinh giới"
+  },
+  {
+    "id": "bio-tf-12",
+    "statement": "Virus đã có cấu tạo tế bào hoàn chỉnh gồm màng sinh chất, tế bào chất và nhân.",
+    "isTrue": false,
+    "explanation": "Virus là dạng sống chưa có cấu tạo tế bào, chỉ gồm lõi vật chất di truyền và vỏ protein.",
+    "topic": "Virus & Vi khuẩn"
+  },
+  {
+    "id": "bio-tf-13",
+    "statement": "Virus chỉ có thể nhân lên và biểu hiện hoạt động sống khi ở bên trong tế bào vật chủ sống.",
+    "isTrue": true,
+    "explanation": "Virus là sinh vật ký sinh nội bào bắt buộc, không thể tự sinh sản ngoài tế bào chủ.",
+    "topic": "Virus & Vi khuẩn"
+  },
+  {
+    "id": "bio-tf-14",
+    "statement": "Thuốc kháng sinh có tác dụng tiêu diệt virus gây bệnh cảm cúm và sốt xuất huyết.",
+    "isTrue": false,
+    "explanation": "Thuốc kháng sinh chỉ có tác dụng ức chế hoặc tiêu diệt vi khuẩn, hoàn toàn vô hiệu với virus.",
+    "topic": "Virus & Vi khuẩn"
+  },
+  {
+    "id": "bio-tf-15",
+    "statement": "Vi khuẩn lên men lactic (như trong sữa chua, muối dưa) là nhóm vi khuẩn có lợi cho con người.",
+    "isTrue": true,
+    "explanation": "Lên men lactic biến đổi đường thành acid lactic tạo vị chua ngon và bảo quản thực phẩm tốt.",
+    "topic": "Virus & Vi khuẩn"
+  },
+  {
+    "id": "bio-tf-16",
+    "statement": "Nấm là sinh vật tự dưỡng có khả năng quang hợp giống như thực vật.",
+    "isTrue": false,
+    "explanation": "Nấm không có chất diệp lục, không quang hợp được mà sống dị dưỡng (hoại sinh hoặc ký sinh).",
+    "topic": "Nấm"
+  },
+  {
+    "id": "bio-tf-17",
+    "statement": "Rêu là nhóm thực vật bậc cao đầu tiên đã có hệ mạch dẫn nước và muối khoáng hoàn chỉnh.",
+    "isTrue": false,
+    "explanation": "Rêu chưa có mạch dẫn thực sự, rễ chỉ là rễ giả nên cây rêu có kích thước rất nhỏ và sống nơi ẩm ướt.",
+    "topic": "Giới Thực vật"
+  },
+  {
+    "id": "bio-tf-18",
+    "statement": "Dương xỉ sinh sản bằng bào tử nằm trong các túi bào tử ở mặt dưới của lá già.",
+    "isTrue": true,
+    "explanation": "Bào tử dương xỉ phát tán nhờ gió khi túi bào tử nứt mở.",
+    "topic": "Giới Thực vật"
+  },
+  {
+    "id": "bio-tf-19",
+    "statement": "Cây thông là thực vật Hạt trần vì hạt của nó nằm lộ trên các lá noãn hở (nón cái), chưa có quả bọc ngoài.",
+    "isTrue": true,
+    "explanation": "Hạt trần nghĩa là hạt nằm lộ bên ngoài, không được bao bọc trong bầu nhụy (quả).",
+    "topic": "Giới Thực vật"
+  },
+  {
+    "id": "bio-tf-20",
+    "statement": "Thực vật Hạt kín là nhóm thực vật tiến hóa và đa dạng nhất nhờ hạt được bảo vệ kín trong quả.",
+    "isTrue": true,
+    "explanation": "Hạt kín có hoa, quả và cơ quan sinh dưỡng thích nghi đa dạng với mọi môi trường.",
+    "topic": "Giới Thực vật"
+  },
+  {
+    "id": "bio-tf-21",
+    "statement": "Tôm, cua, châu chấu, ong và nhện đều thuộc ngành Động vật chân khớp.",
+    "isTrue": true,
+    "explanation": "Động vật chân khớp có phần phụ phân đốt, khớp động và lớp vỏ kitin bảo vệ ngoài.",
+    "topic": "Giới Động vật"
+  },
+  {
+    "id": "bio-tf-22",
+    "statement": "Cá voi và cá heo đẻ trứng dưới nước giống như các loài cá thông thường.",
+    "isTrue": false,
+    "explanation": "Cá voi và cá heo là lớp Thú (động vật có vú), đẻ con và nuôi con bằng sữa mẹ, thở bằng phổi.",
+    "topic": "Giới Động vật"
+  },
+  {
+    "id": "bio-tf-23",
+    "statement": "Đa dạng sinh học bao gồm đa dạng nguồn gen, đa dạng loài và đa dạng hệ sinh thái.",
+    "isTrue": true,
+    "explanation": "Đây là 3 cấp độ cấu thành nên sự phong phú của đa dạng sinh học trên Trái Đất.",
+    "topic": "Đa dạng sinh học"
+  },
+  {
+    "id": "bio-tf-24",
+    "statement": "Rừng mưa nhiệt đới là một trong những hệ sinh thái có độ đa dạng loài sinh học cao nhất hành tinh.",
+    "isTrue": true,
+    "explanation": "Khí hậu nóng ẩm mưa nhiều tạo điều kiện sống lý tưởng cho hàng triệu loài động thực vật.",
+    "topic": "Đa dạng sinh học"
+  },
+  {
+    "id": "bio-tf-25",
+    "statement": "Sách Đỏ là tài liệu ghi nhận danh mục các loài động vật, thực vật quý hiếm đang có nguy cơ tuyệt chủng cần được bảo vệ.",
+    "isTrue": true,
+    "explanation": "Sách Đỏ là cơ sở khoa học và pháp lý để thực thi các biện pháp bảo tồn loài nguy cấp.",
+    "topic": "Bảo tồn thiên nhiên"
+  },
+  {
+    "id": "bio-tf-26",
+    "statement": "Quang hợp là quá trình lá cây tổng hợp chất hữu cơ (glucose) và giải phóng khí oxygen từ nước và carbon dioxide.",
+    "isTrue": true,
+    "explanation": "Phương trình chữ của quang hợp: Nước + Carbon dioxide —(Ánh sáng / Diệp lục)→ Glucose + Oxygen.",
+    "topic": "Quang hợp"
+  },
+  {
+    "id": "bio-tf-27",
+    "statement": "Ty thể là bào quan trực tiếp thực hiện quá trình quang hợp ở tế bào lá cây.",
+    "isTrue": false,
+    "explanation": "Bào quan thực hiện quang hợp là lục lạp (chứa diệp lục); ty thể là bào quan thực hiện hô hấp tế bào.",
+    "topic": "Quang hợp"
+  },
+  {
+    "id": "bio-tf-28",
+    "statement": "Cây ưa bóng thường có phiến lá mỏng, bản lá rộng, màu xanh sẫm để tăng hiệu quả hấp thụ ánh sáng tán xạ.",
+    "isTrue": true,
+    "explanation": "Đặc điểm giải phẫu này giúp cây ưa bóng thích nghi tối đa với môi trường dưới tán cây lớn.",
+    "topic": "Quang hợp"
+  },
+  {
+    "id": "bio-tf-29",
+    "statement": "Thuốc thử iodine (cồn iod) dùng để nhận biết sự có mặt của tinh bột bằng phản ứng tạo màu xanh tím đặc trưng.",
+    "isTrue": true,
+    "explanation": "Iodine len lỏi vào các xoắn của tinh bột tạo hợp chất có màu xanh tím đặc hiệu.",
+    "topic": "Thực hành quang hợp"
+  },
+  {
+    "id": "bio-tf-30",
+    "statement": "Hô hấp tế bào là quá trình phân giải chất hữu cơ giải phóng năng lượng ATP cung cấp cho mọi hoạt động sống của sinh vật.",
+    "isTrue": true,
+    "explanation": "Hô hấp tế bào diễn ra trong ty thể của tất cả các tế bào sống (thực vật, động vật, nấm...).",
+    "topic": "Hô hấp tế bào"
+  },
+  {
+    "id": "bio-tf-31",
+    "statement": "Hạt thóc khô bảo quản trong kho có cường độ hô hấp tế bào cao hơn rất nhiều so với hạt đang nảy mầm.",
+    "isTrue": false,
+    "explanation": "Hạt khô có độ ẩm thấp nên hô hấp cực yếu; hạt nảy mầm hút nước nên hô hấp diễn ra vô cùng mạnh mẽ.",
+    "topic": "Hô hấp tế bào"
+  },
+  {
+    "id": "bio-tf-32",
+    "statement": "Để nhiều chậu cây xanh trong phòng ngủ đóng kín cửa ban đêm có lợi cho sức khỏe vì cây tạo ra nhiều khí oxygen.",
+    "isTrue": false,
+    "explanation": "Ban đêm không có ánh sáng, cây chỉ hô hấp lấy khí O2 và thải khí CO2, gây ngột ngạt và nguy hiểm.",
+    "topic": "Hô hấp tế bào"
+  },
+  {
+    "id": "bio-tf-33",
+    "statement": "Khí sinh ra từ bình chứa hạt đang nảy mầm làm đục nước vôi trong là khí Carbon dioxide (CO2).",
+    "isTrue": true,
+    "explanation": "Hô hấp tế bào thải ra khí CO2; CO2 phản ứng với Ca(OH)2 tạo kết tủa CaCO3 làm đục nước vôi trong.",
+    "topic": "Thực hành hô hấp"
+  },
+  {
+    "id": "bio-tf-34",
+    "statement": "Sự đóng mở của khí khổng ở lá cây được điều tiết bởi độ trương nước của hai tế bào hạt đậu.",
+    "isTrue": true,
+    "explanation": "Khi tế bào hạt đậu no nước, vách mỏng căng phồng kéo vách dày mở lỗ khí; khi mất nước, lỗ khí khép lại.",
+    "topic": "Trao đổi khí"
+  },
+  {
+    "id": "bio-tf-35",
+    "statement": "Côn trùng (như châu chấu, cào cào) trao đổi khí trực tiếp với tế bào thông qua hệ thống ống khí phân nhánh.",
+    "isTrue": true,
+    "explanation": "Hệ thống ống khí dẫn khí từ các lỗ thở ngoài vỏ trực tiếp tới từng mô và tế bào của côn trùng.",
+    "topic": "Trao đổi khí"
+  },
+  {
+    "id": "bio-tf-36",
+    "statement": "Dòng mạch gỗ (xylem) vận chuyển nước và muối khoáng hòa tan từ rễ ngược chiều trọng lực lên thân và lá.",
+    "isTrue": true,
+    "explanation": "Động lực gồm áp suất rễ đẩy lên, lực hút do thoát hơi nước ở lá và lực liên kết giữa các phân tử nước.",
+    "topic": "Trao đổi nước"
+  },
+  {
+    "id": "bio-tf-37",
+    "statement": "Dòng mạch rây (phloem) đảm nhiệm việc vận chuyển chất hữu cơ tổng hợp từ lá đến các bộ phận sử dụng và dự trữ.",
+    "isTrue": true,
+    "explanation": "Mạch rây gồm các tế bào sống vận chuyển dòng dịch hữu cơ giàu đường sucrose xuôi/ngược theo nhu cầu.",
+    "topic": "Trao đổi nước"
+  },
+  {
+    "id": "bio-tf-38",
+    "statement": "Theo khuyến nghị y khoa, một người bình thường cần uống khoảng 40 mL nước cho mỗi kilôgam khối lượng cơ thể mỗi ngày.",
+    "isTrue": true,
+    "explanation": "Công thức tính lượng nước: V = m × 40 mL (ví dụ người 50 kg cần khoảng 2000 mL nước).",
+    "topic": "Dinh dưỡng & Nước"
+  },
+  {
+    "id": "bio-tf-39",
+    "statement": "Hiện tượng ngọn cây mọc nghiêng và vươn về phía có nguồn ánh sáng chiếu vào được gọi là tính hướng sáng dương.",
+    "isTrue": true,
+    "explanation": "Do hormone sinh trưởng auxin tập trung nhiều ở phía tối kích thích tế bào phía tối dãn dài nhanh hơn.",
+    "topic": "Cảm ứng sinh vật"
+  },
+  {
+    "id": "bio-tf-40",
+    "statement": "Tập tính nhện giăng tơ và ong xây tổ hình lục lạp là tập tính học được thông qua kinh nghiệm sống.",
+    "isTrue": false,
+    "explanation": "Đây là các tập tính bẩm sinh sinh ra đã có, mang tính di truyền và đặc trưng cho loài.",
+    "topic": "Tập tính động vật"
+  },
+  {
+    "id": "bio-tf-41",
+    "statement": "Mô phân sinh đỉnh ở ngọn chồi và chóp rễ giúp cây gia tăng kích thước về chiều dài.",
+    "isTrue": true,
+    "explanation": "Các tế bào mô phân sinh đỉnh liên tục phân chia nguyên phân làm chồi vươn cao và rễ đâm sâu.",
+    "topic": "Sinh trưởng & Phát triển"
+  },
+  {
+    "id": "bio-tf-42",
+    "statement": "Vòng đời của bướm trải qua 4 giai đoạn: Trứng → Sâu non → Nhộng → Bướm trưởng thành là biến thái hoàn toàn.",
+    "isTrue": true,
+    "explanation": "Sâu non có hình thái và cấu tạo hoàn toàn khác biệt so với bướm trưởng thành.",
+    "topic": "Vòng đời sinh vật"
+  },
+  {
+    "id": "bio-tf-43",
+    "statement": "Giâm cành và chiết cành là hai hình thức sinh sản hữu tính phổ biến được ứng dụng trong nhân giống cây ăn quả.",
+    "isTrue": false,
+    "explanation": "Giâm cành và chiết cành là các phương pháp sinh sản vô tính (nhân giống sinh dưỡng nhân tạo).",
+    "topic": "Sinh sản vô tính"
+  },
+  {
+    "id": "bio-tf-44",
+    "statement": "Trong sinh sản hữu tính ở hoa, noãn sau khi thụ tinh sẽ phát triển thành hạt, còn bầu nhụy dày lên tạo thành quả.",
+    "isTrue": true,
+    "explanation": "Hạt chứa phôi mang mầm sống mới, quả bảo vệ hạt và hỗ trợ phát tán nòi giống.",
+    "topic": "Sinh sản hữu tính"
+  },
+  {
+    "id": "bio-tf-45",
+    "statement": "Ở cá chép và ếch đồng, sự thụ tinh giữa trứng và tinh trùng diễn ra bên trong đường sinh dục của cơ thể con cái.",
+    "isTrue": false,
+    "explanation": "Cá chép và ếch thụ tinh ngoài: con đực và con cái cùng phóng giao tử vào môi trường nước để thụ tinh.",
+    "topic": "Sinh sản hữu tính"
+  },
+  {
+    "id": "bio-tf-46",
+    "statement": "Ở một số loài bò sát như rùa biển và cá sấu, nhiệt độ của tổ cát ấp trứng quyết định giới tính của con non.",
+    "isTrue": true,
+    "explanation": "Nhiệt độ ấp cao thường tạo ra nhiều cá thể cái ở rùa, nhiệt độ thấp tạo ra nhiều cá thể đực.",
+    "topic": "Điều khiển sinh sản"
+  },
+  {
+    "id": "bio-tf-47",
+    "statement": "Cơ thể sinh vật là một thể thống nhất; khi rễ bị ngập úng thối hỏng sẽ kéo theo lá bị héo và ngừng quang hợp.",
+    "isTrue": true,
+    "explanation": "Rễ hỏng không hút được nước và khoáng dẫn đến toàn bộ các cơ quan khác đều bị đình trệ hoạt động sống.",
+    "topic": "Thể thống nhất"
+  },
+  {
+    "id": "bio-tf-48",
+    "statement": "Cơ thể người được cấu tạo từ 4 nhóm mô cơ bản gồm: mô biểu bì, mô liên kết, mô cơ và mô thần kinh.",
+    "isTrue": true,
+    "explanation": "Mỗi loại mô đảm nhiệm chức năng chuyên biệt: biểu bì bảo vệ/tiết dịch, liên kết nâng đỡ/dẫn truyền, cơ co dãn vận động, thần kinh điều hòa.",
+    "topic": "Khái quát cơ thể người"
+  },
+  {
+    "id": "bio-tf-49",
+    "statement": "Ở người, xương dài phát triển to ra về bề ngang là nhờ sự phân chia của các tế bào màng xương.",
+    "isTrue": true,
+    "explanation": "Tế bào màng xương phân chia tạo tế bào xương mới làm xương to ra; sụn tăng trưởng ở hai đầu xương giúp xương dài ra.",
+    "topic": "Hệ vận động"
+  },
+  {
+    "id": "bio-tf-50",
+    "statement": "Khi hít vào bình thường, cơ liên sườn ngoài và cơ hoành cùng co lại làm tăng thể tích khoang ngực.",
+    "isTrue": true,
+    "explanation": "Thể tích lồng ngực tăng làm áp suất trong phổi giảm thấp hơn áp suất khí quyển, không khí tràn vào phế nang.",
+    "topic": "Hệ hô hấp"
+  },
+  {
+    "id": "bio-tf-51",
+    "statement": "Máu người thuộc nhóm máu O có chứa cả hai loại kháng nguyên A và B trên bề mặt màng hồng cầu.",
+    "isTrue": false,
+    "explanation": "Hồng cầu nhóm máu O không chứa kháng nguyên A và B; trong huyết tương nhóm O có cả hai loại kháng thể α và β.",
+    "topic": "Hệ tuần hoàn"
+  },
+  {
+    "id": "bio-tf-52",
+    "statement": "Vòng tuần hoàn lớn xuất phát từ tâm thất trái, bơm máu giàu O2 qua động mạch chủ đi nuôi khắp các mô tế bào.",
+    "isTrue": true,
+    "explanation": "Máu đỏ tươi từ tâm thất trái theo động mạch chủ đến các cơ quan, trao đổi O2 lấy CO2 thành máu đỏ thẫm về tâm nhĩ phải.",
+    "topic": "Hệ tuần hoàn"
+  },
+  {
+    "id": "bio-tf-53",
+    "statement": "Ở dạ dày, sự tiêu hóa hóa học diễn ra triệt để nhất đối với tinh bột chín nhờ enzym amylase.",
+    "isTrue": false,
+    "explanation": "Dạ dày tiêu hóa protein nhờ enzym pepsin; môi trường acid HCl tại dạ dày làm bất hoạt enzym amylase nên tinh bột ngừng tiêu hóa.",
+    "topic": "Hệ tiêu hóa"
+  },
+  {
+    "id": "bio-tf-54",
+    "statement": "Nước tiểu đầu được hình thành tại nang cầu thận thông qua quá trình lọc máu thụ động.",
+    "isTrue": true,
+    "explanation": "Áp lực lọc tại quản cầu thận đẩy nước và các chất hòa tan qua màng lọc sang nang cầu thận tạo nước tiểu đầu.",
+    "topic": "Hệ bài tiết"
+  },
+  {
+    "id": "bio-tf-55",
+    "statement": "Tuyến tụy là tuyến pha vừa tiết dịch tụy tiêu hóa vừa tiết hormone insulin và glucagon vào máu.",
+    "isTrue": true,
+    "explanation": "Phần ngoại tiết tiết dịch tụy đổ vào tá tràng; các đảo tụy (nội tiết) tiết insulin và glucagon điều hòa lượng đường huyết.",
+    "topic": "Hệ nội tiết"
+  },
+  {
+    "id": "bio-tf-56",
+    "statement": "Hormone insulin do tế bào beta đảo tụy tiết ra có tác dụng làm tăng nồng độ glucose trong máu khi cơ thể đói.",
+    "isTrue": false,
+    "explanation": "Insulin làm giảm đường huyết (chuyển glucose thành glycogen tích lũy); glucagon mới làm tăng đường huyết khi đói.",
+    "topic": "Hệ nội tiết"
+  },
+  {
+    "id": "bio-tf-57",
+    "statement": "Khi trời nóng gay gắt, các mao mạch dưới da giãn ra và tuyến mồ hôi tăng tiết để tăng cường tỏa nhiệt làm mát cơ thể.",
+    "isTrue": true,
+    "explanation": "Mao mạch giãn đưa nhiều máu ra sát bề mặt da, nước mồ hôi bay hơi thu nhiệt giúp hạ thân nhiệt bảo vệ cơ thể.",
+    "topic": "Điều hòa thân nhiệt"
+  },
+  {
+    "id": "bio-tf-58",
+    "statement": "Quá trình thụ tinh bình thường ở người diễn ra tại vị trí 1/3 phía ngoài của ống dẫn trứng.",
+    "isTrue": true,
+    "explanation": "Tinh trùng gặp trứng tại 1/3 ngoài ống dẫn trứng tạo hợp tử, sau đó phôi di chuyển về tử cung để làm tổ và phát triển.",
+    "topic": "Sinh sản ở người"
+  },
+  {
+    "id": "bio-tf-59",
+    "statement": "Tập hợp các loài cá trắm, cá mè, cá chép và cá rô phi cùng nuôi trong một chiếc ao là một quần thể sinh vật.",
+    "isTrue": false,
+    "explanation": "Quần thể chỉ gồm các cá thể cùng 1 loài; tập hợp nhiều loài cá khác nhau trong ao thuộc cấp độ quần xã.",
+    "topic": "Quần thể sinh vật"
+  },
+  {
+    "id": "bio-tf-60",
+    "statement": "Mật độ cá thể là đặc trưng cơ bản và quan trọng nhất của quần thể, ảnh hưởng trực tiếp đến mức sinh sản và tử vong.",
+    "isTrue": true,
+    "explanation": "Mật độ chi phối mức độ cạnh tranh thức ăn, nơi ở, khả năng gặp gỡ ghép đôi và lây lan dịch bệnh của quần thể.",
+    "topic": "Quần thể sinh vật"
+  },
+  {
+    "id": "bio-tf-61",
+    "statement": "Địa y là ví dụ kinh điển của mối quan hệ hội sinh giữa nấm và tảo đơn bào.",
+    "isTrue": false,
+    "explanation": "Địa y là quan hệ cộng sinh bắt buộc: nấm cung cấp nước và muối khoáng, tảo quang hợp cung cấp chất hữu cơ.",
+    "topic": "Quần xã sinh vật"
+  },
+  {
+    "id": "bio-tf-62",
+    "statement": "Loài đặc trưng là loài chỉ có ở một quần xã xác định hoặc có số lượng cá thể nhiều hơn hẳn các loài khác.",
+    "isTrue": true,
+    "explanation": "Loài đặc trưng tiêu biểu cho quần xã, ví dụ cá cóc ở rừng Tam Đảo, cây tràm ở rừng ngập nước U Minh.",
+    "topic": "Quần xã sinh vật"
+  },
+  {
+    "id": "bio-tf-63",
+    "statement": "Trong hệ sinh thái hoàn chỉnh, sinh vật sản xuất (cây xanh, tảo quang hợp) luôn thuộc bậc dinh dưỡng cấp 1.",
+    "isTrue": true,
+    "explanation": "Sinh vật sản xuất tự dưỡng tổng hợp chất hữu cơ đầu tiên đưa năng lượng vào hệ sinh thái nên luôn ở bậc 1.",
+    "topic": "Hệ sinh thái"
+  },
+  {
+    "id": "bio-tf-64",
+    "statement": "Tháp năng lượng trong hệ sinh thái luôn có dạng chuẩn tắc đáy rộng đỉnh nhọn và không bao giờ bị đảo ngược.",
+    "isTrue": true,
+    "explanation": "Năng lượng bị hao hụt phần lớn (~90%) qua mỗi bậc dinh dưỡng do hô hấp tỏa nhiệt và chất bài tiết.",
+    "topic": "Hệ sinh thái"
+  },
+  {
+    "id": "bio-tf-65",
+    "statement": "Khu sinh học đài nguyên (tundra) ở vùng cực lạnh giá có thảm thực vật chủ yếu là rêu, địa y và cây bụi lùn sát đất.",
+    "isTrue": true,
+    "explanation": "Lớp đất đóng băng vĩnh cửu ngăn cản rễ cây phát triển sâu, cây gỗ lớn không thể tồn tại được.",
+    "topic": "Sinh quyển"
+  },
+  {
+    "id": "bio-tf-66",
+    "statement": "Cân bằng tự nhiên là trạng thái cân bằng động, các chỉ số số lượng cá thể luôn dao động nhịp nhàng quanh ngưỡng ổn định.",
+    "isTrue": true,
+    "explanation": "Nhờ cơ chế khống chế sinh học và tự điều chỉnh mật độ, số lượng cá thể tăng giảm linh hoạt phù hợp với nguồn sống.",
+    "topic": "Cân bằng tự nhiên"
+  },
+  {
+    "id": "bio-tf-67",
+    "statement": "Đốt cháy các bao bì túi nilon và đồ nhựa phế thải ngoài trời là phương pháp xử lý rác an toàn bảo vệ môi trường.",
+    "isTrue": false,
+    "explanation": "Đốt đồ nhựa ở nhiệt độ thấp giải phóng khí dioxin và furan cực độc gây ung thư và làm ô nhiễm nghiêm trọng bầu không khí.",
+    "topic": "Bảo vệ môi trường"
+  },
+  {
+    "id": "bio-tf-68",
+    "statement": "Cặp tính trạng tương phản là hai trạng thái biểu hiện trái ngược nhau của cùng một loại tính trạng.",
+    "isTrue": true,
+    "explanation": "Cùng một tính trạng (màu hạt) có hai biểu hiện đối lập như hạt vàng đối lập với hạt xanh.",
+    "topic": "Di truyền học Mendel"
+  },
+  {
+    "id": "bio-tf-69",
+    "statement": "Phép lai phân tích là phép lai giữa cá thể mang tính trạng trội cần xác định kiểu gen với cá thể mang kiểu hình lặn.",
+    "isTrue": true,
+    "explanation": "Nếu con lai 100% trội thì cá thể trội là đồng hợp (AA); nếu con lai phân tính 1:1 thì cá thể trội là dị hợp (Aa).",
+    "topic": "Di truyền học Mendel"
+  },
+  {
+    "id": "bio-tf-70",
+    "statement": "Trong phân tử DNA, nucleotide loại A liên kết với T bằng 3 liên kết hydrogen, còn G liên kết với C bằng 2 liên kết hydrogen.",
+    "isTrue": false,
+    "explanation": "Theo nguyên tắc bổ sung, A liên kết với T bằng 2 liên kết hydrogen (A = T), G liên kết với C bằng 3 liên kết hydrogen (G ≡ C).",
+    "topic": "Nucleic acid & Gene"
+  },
+  {
+    "id": "bio-tf-71",
+    "statement": "Trong cấu trúc của phân tử RNA không chứa nucleotide loại T (Thymine), thay vào đó là nucleotide loại U (Uracil).",
+    "isTrue": true,
+    "explanation": "RNA có 4 loại nucleotide là A, U, G, C; base T chỉ có trong cấu trúc phân tử DNA.",
+    "topic": "Nucleic acid & Gene"
+  },
+  {
+    "id": "bio-tf-72",
+    "statement": "Quá trình tái bản DNA diễn ra theo hai nguyên tắc bất di bất dịch: nguyên tắc bổ sung và nguyên tắc bán bảo tồn.",
+    "isTrue": true,
+    "explanation": "Nguyên tắc bổ sung (A-T, G-C) và bán bảo tồn (mỗi DNA con giữ lại 1 mạch cũ của mẹ) đảm bảo tính kế thừa trung thực.",
+    "topic": "Cơ chế di truyền phân tử"
+  },
+  {
+    "id": "bio-tf-73",
+    "statement": "Sau k lần nhân đôi từ một phân tử DNA ban đầu luôn luôn chỉ có đúng 2 phân tử DNA con còn chứa mạch cũ của mẹ.",
+    "isTrue": true,
+    "explanation": "Phân tử DNA mẹ ban đầu chỉ có 2 mạch đơn khuôn cũ, phân về 2 phân tử DNA con khác nhau.",
+    "topic": "Cơ chế di truyền phân tử"
+  },
+  {
+    "id": "bio-tf-74",
+    "statement": "Quá trình phiên mã tổng hợp phân tử mRNA sử dụng đồng thời cả hai mạch đơn của gen làm khuôn mẫu.",
+    "isTrue": false,
+    "explanation": "Phiên mã chỉ sử dụng duy nhất một mạch gốc có chiều 3' → 5' của gen làm khuôn mẫu.",
+    "topic": "Phiên mã & Dịch mã"
+  },
+  {
+    "id": "bio-tf-75",
+    "statement": "Ba bộ ba UAA, UAG, UGA trên phân tử mRNA là các bộ ba kết thúc dịch mã và không mã hóa cho bất kì amino acid nào.",
+    "isTrue": true,
+    "explanation": "Chúng đóng vai trò tín hiệu báo hiệu cho ribosome dừng dịch mã và giải phóng chuỗi polypeptide.",
+    "topic": "Phiên mã & Dịch mã"
+  },
+  {
+    "id": "bio-tf-76",
+    "statement": "Quá trình dịch mã tổng hợp protein diễn ra bên trong nhân tế bào trên các nhiễm sắc thể.",
+    "isTrue": false,
+    "explanation": "Dịch mã diễn ra tại tế bào chất trên bào quan ribosome; chỉ có tái bản và phiên mã diễn ra trong nhân tế bào.",
+    "topic": "Phiên mã & Dịch mã"
+  },
+  {
+    "id": "bio-tf-77",
+    "statement": "Đột biến thêm hoặc mất một cặp nucleotide thường gây hậu quả nghiêm trọng hơn đột biến thay thế vì gây hiện tượng dịch khung đọc mã di truyền.",
+    "isTrue": true,
+    "explanation": "Dịch khung làm thay đổi toàn bộ các bộ ba codon và trình tự amino acid từ vị trí đột biến cho đến cuối chuỗi protein.",
+    "topic": "Đột biến gene"
+  },
+  {
+    "id": "bio-tf-78",
+    "statement": "Đột biến thay thế một cặp nucleotide luôn luôn làm thay đổi một amino acid tương ứng trong chuỗi polypeptide.",
+    "isTrue": false,
+    "explanation": "Do tính thoái hóa của mã di truyền, nhiều bộ ba cùng mã hóa 1 amino acid nên đột biến thay thế có thể không làm đổi amino acid (đột biến câm).",
+    "topic": "Đột biến gene"
+  },
+  {
+    "id": "bio-tf-79",
+    "statement": "Tại kì sau của quá trình nguyên phân, khi các tâm động đã chẻ đôi thì số lượng chromatid trong tế bào bằng 0.",
+    "isTrue": true,
+    "explanation": "Khi tâm động tách đôi, các chromatid chị em đã trở thành các nhiễm sắc thể đơn độc lập nên số chromatid = 0.",
+    "topic": "Nhiễm sắc thể & Phân bào"
+  },
+  {
+    "id": "bio-tf-80",
+    "statement": "Ở kì giữa nguyên phân các NST kép xếp thành 1 hàng, còn ở kì giữa I giảm phân các cặp NST kép tương đồng xếp thành 2 hàng song song.",
+    "isTrue": true,
+    "explanation": "Đây là dấu hiệu nhận biết hình thái phân bào then chốt giữa nguyên phân và giảm phân I.",
+    "topic": "Nhiễm sắc thể & Phân bào"
+  },
+  {
+    "id": "bio-tf-81",
+    "statement": "Loài sinh vật nào có số lượng nhiễm sắc thể trong tế bào nhiều hơn thì loài đó luôn ở bậc tiến hóa cao hơn.",
+    "isTrue": false,
+    "explanation": "Số lượng NST không phản ánh mức độ tiến hóa (ví dụ gà 2n = 78 nhiều hơn người 2n = 46 nhưng kém tiến hóa hơn người).",
+    "topic": "Nhiễm sắc thể & Phân bào"
+  },
+  {
+    "id": "bio-tf-82",
+    "statement": "Ở các loài chim và bò sát, con đực mang cặp NST giới tính XY còn con cái mang cặp NST giới tính XX giống như người.",
+    "isTrue": false,
+    "explanation": "Ở chim, bướm và bò sát thì ngược lại: giới đực mang cặp NST giới tính XX, còn giới cái mang cặp NST giới tính XY.",
+    "topic": "Di truyền giới tính"
+  },
+  {
+    "id": "bio-tf-83",
+    "statement": "Số nhóm gen liên kết của một loài sinh vật luôn bằng số lượng nhiễm sắc thể trong bộ đơn bội (n) của loài đó.",
+    "isTrue": true,
+    "explanation": "Mỗi chiếc nhiễm sắc thể chứa 1 phân tử DNA mang 1 nhóm gen liên kết (ruồi giấm 2n = 8 có n = 4 nhóm liên kết).",
+    "topic": "Di truyền liên kết"
+  },
+  {
+    "id": "bio-tf-84",
+    "statement": "Người mắc Hội chứng Đao có 47 nhiễm sắc thể do đột biến lệch bội dạng thể ba ở cặp nhiễm sắc thể số 21.",
+    "isTrue": true,
+    "explanation": "Cặp NST số 21 có 3 chiếc (2n + 1 = 47), nguy cơ tăng cao theo độ tuổi sinh con của người mẹ trên 35 tuổi.",
+    "topic": "Di truyền học người"
+  },
+  {
+    "id": "bio-tf-85",
+    "statement": "Cừu Dolly được nhân bản vô tính mang 100% kiểu gen trong nhân giống hệt con cừu mẹ mang thai hộ.",
+    "isTrue": false,
+    "explanation": "Cừu Dolly mang 100% kiểu gen nhân của con cừu cho tế bào tuyến vú (con cừu cho nhân), cừu mang thai hộ chỉ cung cấp môi trường tử cung nuôi dưỡng.",
+    "topic": "Công nghệ di truyền"
+  },
+  {
+    "id": "bio-tf-86",
+    "statement": "Cánh của loài dơi và cánh của loài côn trùng là ví dụ điển hình của cơ quan tương đồng phản ánh nguồn gốc chung.",
+    "isTrue": false,
+    "explanation": "Cánh dơi và cánh côn trùng là cơ quan tương tự (khác nguồn gốc phát sinh phôi học dù có cùng chức năng bay).",
+    "topic": "Tiến hóa sinh học"
+  },
+  {
+    "id": "bio-tf-87",
+    "statement": "Bầu khí quyển Trái Đất nguyên thủy khi sự sống mới bắt đầu phát sinh hoàn toàn không có khí oxy (O2) tự do.",
+    "isTrue": true,
+    "explanation": "Khí quyển nguyên thủy chứa CH4, NH3, H2O, H2; khí O2 chỉ xuất hiện sau khi vi khuẩn lam quang hợp giải phóng ra.",
+    "topic": "Nguồn gốc sự sống"
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "lessonId": "bio-g6-b03",
+  "nodeId": "bio-g6-b03-theory",
+  "title": "Lý thuyết: Tế bào – Đơn vị cơ bản của sự sống",
+  "subtitle": "Bài 18 SGK KHTN 6 Kết nối tri thức: Khái niệm tế bào, kích thước hiển vi và sự phong phú về hình dạng",
+  "sgkBaiSo": 18,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Khái niệm",
+      "badgeColor": "emerald",
+      "title": "Tế bào là đơn vị cơ bản của sự sống",
+      "content": "Mọi sinh vật sống xung quanh chúng ta (từ vi sinh vật, nấm, cây cỏ cho đến động vật và con người) đều được cấu tạo từ các tế bào.",
+      "bulletPoints": [
+        "Tế bào là đơn vị cấu trúc: Mọi cơ thể sống được xây dựng nên từ một hay nhiều tế bào.",
+        "Tế bào là đơn vị chức năng: Mọi hoạt động sống (trao đổi chất, lớn lên, cảm ứng, sinh sản) đều diễn ra bên trong tế bào.",
+        "Cơ thể có thể chỉ gồm 1 tế bào (sinh vật đơn bào) hoặc gồm hàng tỷ tế bào (sinh vật đa bào)."
+      ],
+      "callout": "Tế bào là viên gạch cấu trúc nên mọi dạng sống trên Trái Đất!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Kích thước",
+      "badgeColor": "amber",
+      "title": "Kích thước tế bào: Hiển vi & Khổng lồ",
+      "content": "Kích thước của các loại tế bào rất khác nhau:",
+      "bulletPoints": [
+        "Kích thước hiển vi (phổ biến nhất): Đa số tế bào có kích thước rất nhỏ từ 1 đến 100 micromet (1 μm = 1/1000 mm), không thể nhìn bằng mắt thường mà phải dùng kính hiển vi quang học (tế bào vi khuẩn, tế bào biểu bì, tế bào hồng cầu).",
+        "Tế bào khổng lồ nhìn thấy bằng mắt thường: Một số ít tế bào có kích thước lớn như tế bào tép bưởi (tép cam/chanh), tế bào trứng cá, trứng chim/gà, tế bào sợi gai (dài đến vài xentimet)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Hình dạng",
+      "badgeColor": "cyan",
+      "title": "Sự đa dạng về hình dạng của tế bào",
+      "content": "Tùy theo vị trí và chức năng đảm nhận, tế bào có nhiều hình dạng phong phú:",
+      "bulletPoints": [
+        "Hình đĩa lõm 2 mặt: Tế bào hồng cầu người (tăng diện tích tiếp xúc để vận chuyển oxygen).",
+        "Hình sợi dài: Tế bào cơ (giúp co giãn nhịp nhàng tạo ra chuyển động).",
+        "Hình sao nhiều nhánh: Tế bào thần kinh (nơron - phân nhánh truyền dẫn tín hiệu xung thần kinh).",
+        "Hình cầu / bầu dục: Tế bào trứng, tế bào nấm men.",
+        "Hình đa giác / chữ nhật: Tế bào biểu bì lá cây, tế bào biểu bì vảy hành (xếp khít nhau để che chở, bảo vệ)."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Tế bào nào sau đây có kích thước lớn mà mắt thường chúng ta có thể nhìn thấy trực tiếp mà không cần dùng kính lúp hay kính hiển vi?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Tế bào tép bưởi",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Tế bào vi khuẩn E. coli",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Tế bào hồng cầu người",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Tế bào biểu bì vảy hành tây",
+        "correct": false
+      }
+    ],
+    "explanation": "Mỗi tép bưởi (hoặc tép cam, chanh) thực chất là một tế bào đơn lẻ chứa đầy dịch quả ngọt, có kích thước hàng milimet đến centimet nên mắt thường dễ dàng nhìn thấy."
+  }
+}

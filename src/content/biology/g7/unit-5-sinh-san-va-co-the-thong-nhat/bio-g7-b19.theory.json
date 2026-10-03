@@ -1,0 +1,75 @@
+{
+  "lessonId": "bio-g7-b19",
+  "nodeId": "bio-g7-b19-theory",
+  "title": "Lý thuyết: Sinh sản vô tính ở sinh vật",
+  "subtitle": "Bài 39 SGK KHTN 7 Kết nối tri thức: Sinh sản sinh dưỡng tự nhiên, các kĩ thuật nhân giống nhân tạo và sinh sản vô tính ở động vật",
+  "sgkBaiSo": 39,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Khái niệm & Tự nhiên",
+      "badgeColor": "cyan",
+      "title": "Sinh sản sinh dưỡng tự nhiên ở thực vật",
+      "content": "Sinh sản vô tính là hình thức sinh sản tạo ra cá thể mới từ một phần của cơ thể mẹ, không có sự kết hợp giữa giao tử đực và giao tử cái:",
+      "bulletPoints": [
+        "Đặc điểm di truyền: Đàn con sinh ra đồng nhất và mang vật chất di truyền giống hệt cơ thể mẹ ban đầu.",
+        "Sinh sản bằng thân củ: Cây khoai tây hình thành các chồi mầm mọc ra từ các mắt lõm trên thân củ.",
+        "Sinh sản bằng thân rễ: Cây gừng, nghệ, dong ta, cỏ tranh mọc chồi mới từ thân rễ ngầm dưới đất.",
+        "Sinh sản bằng thân bò: Cây rau má, dâu tây mọc các thân bò lan trên mặt đất, tại các mấu đốt bén rễ và mọc chồi tạo thành cây độc lập.",
+        "Sinh sản bằng lá: Cây thuốc bỏng (cây lá bỏng) mọc các chồi non và rễ con trực tiếp từ mép răng cưa của phiến lá già."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Nhân giống nhân tạo",
+      "badgeColor": "emerald",
+      "title": "Các phương pháp nhân giống vô tính",
+      "content": "Con người ứng dụng sinh sản vô tính để nhân nhanh các giống cây trồng quý giữ nguyên đặc tính tốt:",
+      "bulletPoints": [
+        "Giâm cành: Cắt một đoạn cành bánh tẻ (cành vừa) cắm vào đất ẩm, sau một thời gian cành ra rễ và chồi mới tạo thành cây độc lập (mía, sắn, hoa hồng, dâm bụt).",
+        "Chiết cành: Bóc một khoanh vỏ trên cành đang sống ở cây mẹ, đắp bầu đất ẩm giữ ẩm; khi rễ non mọc xuyên qua bầu đất thì cắt cành đem trồng vào đất (cam, chanh, bưởi, nhãn).",
+        "Ghép cành / Ghép mắt: Lấy cành hoặc mắt ghép gắn chặt vào gốc ghép sao cho các tầng sinh mô áp khít nhau để nuôi dưỡng mắt ghép phát triển thành cây (xoài, táo, hoa hồng).",
+        "Nuôi cấy mô tế bào: Tách mẫu mô tế bào nuôi trong ống nghiệm vô trùng với môi trường dinh dưỡng và hormone nhân tạo để nhân nhanh hàng triệu cây con sạch bệnh (hoa lan, chuối, sâm ngọc linh)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Động vật",
+      "badgeColor": "amber",
+      "title": "Sinh sản vô tính ở động vật",
+      "content": "Một số loài động vật bậc thấp duy trì nòi giống qua các hình thức sinh sản vô tính:",
+      "bulletPoints": [
+        "Phân đôi: Cơ thể mẹ tự phân chia nhân và tế bào chất thành 2 cá thể con bằng nhau. Đại diện: trùng roi xanh, trùng giày, amip.",
+        "Nảy chồi: Chồi non mọc ra từ cơ thể mẹ, lớn dần rồi tách ra sống độc lập hoặc dính liền tạo tập đoàn. Đại diện: thủy tức, bọt biển.",
+        "Tái sinh: Một phần cơ thể bị đứt ra có khả năng tái sinh phát triển thành một cơ thể hoàn chỉnh. Đại diện: sao biển, đỉa, giun dẹp."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Cây thuốc bỏng (cây lá bỏng) thực hiện sinh sản sinh dưỡng tự nhiên từ bộ phận nào của cơ thể?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Các chồi mầm mọc ra từ mép răng cưa của phiến lá già",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Các chồi mọc từ củ ngầm dưới đáy đất",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Hạt phấn rơi vào nhụy hoa thụ tinh tạo hạt",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Các tua cuốn bám vào giàn leo",
+        "correct": false
+      }
+    ],
+    "explanation": "Cây lá bỏng có khả năng sinh sản sinh dưỡng tự nhiên bằng lá: tại các khía răng cưa ở mép lá già rụng xuống đất ẩm sẽ đâm chồi mầm và ra rễ con tạo thành cây mới."
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "lessonId": "bio-g8-b01",
+  "nodeId": "bio-g8-b01-theory",
+  "title": "Lý thuyết: Khái quát về cơ thể người",
+  "subtitle": "Bài 30 SGK KHTN 8 Kết nối tri thức: Các cấp độ tổ chức, 4 loại mô cơ bản và sự phối hợp nhịp nhàng giữa các hệ cơ quan",
+  "sgkBaiSo": 30,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Cấu tạo chung",
+      "badgeColor": "emerald",
+      "title": "Cấu tạo cơ thể & Các cấp độ tổ chức",
+      "content": "Cơ thể người gồm 3 phần chính: Đầu, Thân và Chi (tay, chân). Cơ hoành ngăn cách khoang thân thành khoang ngực (chứa tim, phổi) và khoang bụng (chứa dạ dày, ruột, gan, tụy, thận, bóng đái và cơ quan sinh dục).",
+      "bulletPoints": [
+        "Cấp độ tổ chức từ nhỏ đến lớn: Tế bào → Mô → Cơ quan → Hệ cơ quan → Cơ thể toàn vẹn.",
+        "Tế bào là đơn vị cấu trúc và chức năng cơ bản nhất của mọi hoạt động sống.",
+        "Mô là tập hợp các tế bào có cùng hình dạng, cấu tạo và cùng thực hiện một chức năng nhất định."
+      ],
+      "callout": "Cơ hoành là cơ dẹp ngăn đôi khoang ngực và khoang bụng, đóng vai trò quan trọng trong động tác thở!"
+    },
+    {
+      "id": "card-2",
+      "badge": "4 loại mô",
+      "badgeColor": "amber",
+      "title": "4 loại mô cơ bản cấu tạo nên cơ thể",
+      "content": "Toàn bộ cơ thể người được xây dựng từ 4 loại mô chính:",
+      "bulletPoints": [
+        "1. Mô biểu bì: Tế bào xếp khít nhau, phủ mặt ngoài cơ thể (da) hoặc lót mặt trong các cơ quan rỗng (ống tiêu hóa, khí quản, mạch máu); chức năng bảo vệ, che chở và tiết chất.",
+        "2. Mô liên kết: Tế bào nằm rải rác trong chất gian bào (chất nền); gồm mô sụn, mô xương, mô mỡ, mô sợi và máu; chức năng nâng đỡ, liên kết và neo giữ các cơ quan.",
+        "3. Mô cơ: Tế bào kéo dài có khả năng co dãn, gồm cơ vân (gắn vào xương, hoạt động theo ý muốn), cơ trơn (ở thành mạch máu, ruột non, dạ dày) và cơ tim (ở tim); chức năng tạo cử động và vận động cơ thể.",
+        "4. Mô thần kinh: Gồm các nơron (tế bào thần kinh) và tế bào thần kinh đệm; chức năng tiếp nhận kích thích, dẫn truyền và xử lí xung thần kinh."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Hệ thống nhất",
+      "badgeColor": "cyan",
+      "title": "Sự phối hợp hoạt động của các hệ cơ quan",
+      "content": "Cơ thể người là một khối thống nhất hoàn chỉnh. Mọi hoạt động của các cơ quan đều có sự liên hệ chặt chẽ và tương hỗ lẫn nhau:",
+      "bulletPoints": [
+        "Ví dụ khi chạy nhanh: Hệ vận động hoạt động mạnh → Hệ tuần hoàn tăng nhịp tim để bơm máu → Hệ hô hấp thở nhanh và sâu hơn để lấy O2 và thải CO2 → Da toát nhiều mồ hôi để tỏa bớt nhiệt.",
+        "Hai cơ chế điều hòa tối cao đảm bảo sự thống nhất: Điều hòa thần kinh (nhanh, chính xác) và Điều hòa thể dịch qua đường máu bởi các hormone của hệ nội tiết (chậm, diện rộng và kéo dài)."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Loại mô nào có đặc điểm gồm các tế bào nằm rải rác bên trong chất nền ngoại bào và có chức năng nâng đỡ, liên kết các cơ quan?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Mô liên kết",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Mô biểu bì",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Mô cơ vân",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Mô thần kinh",
+        "correct": false
+      }
+    ],
+    "explanation": "Mô liên kết (gồm mô xương, sụn, mỡ, máu...) có cấu tạo đặc trưng là các tế bào nằm rải rác trong chất gian bào, đảm nhiệm vai trò nâng đỡ, neo giữ và liên kết các cơ quan lại với nhau."
+  }
+}

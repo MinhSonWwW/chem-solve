@@ -1,0 +1,250 @@
+[
+  {
+    "id": "bio-g9-b02-q01",
+    "lessonId": "bio-g9-b02",
+    "sgkBaiSo": 37,
+    "skillIds": ["bio9-quy-luat-mendel"],
+    "difficulty": 1,
+    "prompt": "Khi lai hai cơ thể bố mẹ thuần chủng khác nhau về một cặp tính trạng tương phản (hoa đỏ AA × hoa trắng aa), ở thế hệ F2 tỉ lệ phân li KIỂU HÌNH là bao nhiêu?",
+    "knowledge": ["kb-bio-g9-quy-luat-phan-li"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "3 trội : 1 lặn (3 hoa đỏ : 1 hoa trắng)" },
+        { "id": "opt-b", "label": "1 trội : 2 trung gian : 1 lặn" },
+        { "id": "opt-c", "label": "100% tính trạng trội (100% hoa đỏ)" },
+        { "id": "opt-d", "label": "1 trội : 1 lặn (1 hoa đỏ : 1 hoa trắng)" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "F1 có 100% kiểu hình trội (Aa). Khi F1 tự thụ phấn, tính trạng lặn xuất hiện trở lại ở F2." },
+      { "level": 2, "text": "Tỉ lệ kiểu gen là 1 AA : 2 Aa : 1 aa, do A trội hoàn toàn nên AA và Aa đều biểu hiện hoa đỏ (1 + 2 = 3)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích phép lai", "body": "P: AA × aa → F1: 100% Aa. F1 tự thụ phấn: Aa × Aa." },
+      { "kind": "knowledge", "title": "Xác định kiểu gen và kiểu hình", "body": "Kiểu gen F2 gồm: 1/4 AA, 2/4 Aa, 1/4 aa. Vì allele A trội hoàn toàn so với a nên (AA, Aa) cho kiểu hình hoa đỏ (chiếm 3/4 = 75%), còn aa cho hoa trắng (chiếm 1/4 = 25%)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tỉ lệ kiểu hình là 3 trội : 1 lặn (3 hoa đỏ : 1 hoa trắng)." }
+    ],
+    "finalSolution": "Ở F2 trong lai một cặp tính trạng của Mendel, tỉ lệ phân li kiểu hình là 3 trội : 1 lặn (3 hoa đỏ : 1 hoa trắng).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn giữa tỉ lệ kiểu hình (3 : 1) với tỉ lệ kiểu gen (1 : 2 : 1)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b02-q02",
+    "lessonId": "bio-g9-b02",
+    "sgkBaiSo": 37,
+    "skillIds": ["bio9-quy-luat-mendel"],
+    "difficulty": 2,
+    "prompt": "Khi thực hiện phép lai phân tích giữa một cá thể dị hợp hoa đỏ (Aa) với một cá thể hoa trắng (aa), kết quả thu được ở thế hệ lai Fa là:",
+    "knowledge": ["kb-bio-g9-phep-lai-phan-tich"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "1 hoa đỏ : 1 hoa trắng (50% đỏ : 50% trắng)" },
+        { "id": "opt-b", "label": "100% hoa đỏ" },
+        { "id": "opt-c", "label": "3 hoa đỏ : 1 hoa trắng" },
+        { "id": "opt-d", "label": "100% hoa trắng" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Cơ thể Aa cho 2 loại giao tử với tỉ lệ 1/2 A và 1/2 a; cơ thể aa chỉ cho 1 loại giao tử a." },
+      { "level": 2, "text": "Tổ hợp hợp tử: (1/2 A + 1/2 a) × a = 1/2 Aa + 1/2 aa." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Sơ đồ phép lai phân tích", "body": "P: Aa (hoa đỏ) × aa (hoa trắng). Giao tử: G = (1/2 A, 1/2 a) × a." },
+      { "kind": "compute", "title": "Tổ hợp giao tử", "body": "Fa = 1/2 Aa (hoa đỏ) : 1/2 aa (hoa trắng)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tỉ lệ phân tính là 1 hoa đỏ : 1 hoa trắng." }
+    ],
+    "finalSolution": "Phép lai phân tích cá thể dị hợp Aa × aa cho tỉ lệ kiểu hình phân tính 1 trội : 1 lặn (1 hoa đỏ : 1 hoa trắng).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng phép lai phân tích luôn cho 100% tính trạng trội." }
+    ]
+  },
+  {
+    "id": "bio-g9-b02-q03",
+    "lessonId": "bio-g9-b02",
+    "sgkBaiSo": 37,
+    "skillIds": ["bio9-quy-luat-mendel"],
+    "difficulty": 2,
+    "prompt": "Một cơ thể có kiểu gen dị hợp 2 cặp gene phân li độc lập (AaBb) khi giảm phân bình thường sẽ tạo ra bao nhiêu loại giao tử khác nhau?",
+    "knowledge": ["kb-bio-g9-phan-li-doc-lap"],
+    "answer": {
+      "kind": "number",
+      "value": 4
+    },
+    "hints": [
+      { "level": 1, "text": "Số loại giao tử của cơ thể có n cặp gene dị hợp phân li độc lập được tính theo công thức 2^n." },
+      { "level": 2, "text": "Ở đây có 2 cặp gene dị hợp (Aa và Bb) nên n = 2. Hãy tính 2^2." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định số cặp gene dị hợp", "body": "Cơ thể có kiểu gen AaBb mang 2 cặp gene dị hợp: cặp Aa và cặp Bb." },
+      { "kind": "compute", "title": "Áp dụng công thức số loại giao tử", "body": "Số loại giao tử = 2^n = 2^2 = 4 loại giao tử (gồm: AB, Ab, aB, ab với tỉ lệ ngang nhau 1/4)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Số loại giao tử tạo thành là 4." }
+    ],
+    "finalSolution": "Cơ thể có kiểu gen AaBb (2 cặp dị hợp) tạo ra 2^2 = 4 loại giao tử: AB, Ab, aB, ab.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm số loại giao tử (4) với số tổ hợp hợp tử khi tự thụ phấn (16)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b02-q04",
+    "lessonId": "bio-g9-b02",
+    "sgkBaiSo": 37,
+    "skillIds": ["bio9-quy-luat-mendel"],
+    "difficulty": 2,
+    "prompt": "Thực chất của quy luật phân li độc lập của Mendel được giải thích như thế nào?",
+    "knowledge": ["kb-bio-g9-phan-li-doc-lap"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Các cặp allele quy định các tính trạng khác nhau phân li độc lập về các giao tử trong giảm phân" },
+        { "id": "opt-b", "label": "Các tính trạng của bố và mẹ hòa lẫn vào nhau tạo nên tính trạng trung gian ở con cái" },
+        { "id": "opt-c", "label": "Tất cả các gene đều nằm trên cùng một nhiễm sắc thể và di truyền cùng nhau" },
+        { "id": "opt-d", "label": "Các allele trội luôn bắt cặp với allele trội và allele lặn bắt cặp với allele lặn" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Mỗi cặp nhân tố di truyền phân li riêng rẽ và không phụ thuộc vào cặp nhân tố di truyền khác." },
+      { "level": 2, "text": "Sự phân li độc lập của các allele diễn ra trong quá trình phát sinh giao tử." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Bản chất phân tử và tế bào", "body": "Các cặp gene nằm trên các cặp nhiễm sắc thể tương đồng khác nhau." },
+      { "kind": "knowledge", "title": "Cơ chế phân li độc lập", "body": "Khi giảm phân, sự phân li của cặp NST này độc lập với cặp NST khác dẫn đến sự phân li độc lập của các cặp allele về các giao tử." },
+      { "kind": "answer", "title": "Kết luận", "body": "Phương án A phản ánh đúng bản chất quy luật." }
+    ],
+    "finalSolution": "Quy luật phân li độc lập giải thích rằng các cặp allele phân li độc lập và tổ hợp tự do về các giao tử trong giảm phân.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng tính trạng bị hòa lẫn vào nhau theo quan niệm di truyền hòa hợp cổ xưa." }
+    ]
+  },
+  {
+    "id": "bio-g9-b02-q05",
+    "lessonId": "bio-g9-b02",
+    "sgkBaiSo": 37,
+    "skillIds": ["bio9-quy-luat-mendel"],
+    "difficulty": 2,
+    "prompt": "Ghép nối phép lai của bố mẹ ở cột trái với tỉ lệ phân li kiểu hình tương ứng ở đời con ở cột phải:",
+    "knowledge": ["kb-bio-g9-quy-luat-phan-li", "kb-bio-g9-phep-lai-phan-tich", "kb-bio-g9-toan-xac-suat-mendel"],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Aa × Aa", "right": "3 trội : 1 lặn" },
+        { "left": "Aa × aa", "right": "1 trội : 1 lặn" },
+        { "left": "AA × aa", "right": "100% trội" },
+        { "left": "AaBb × AaBb", "right": "9 trội-trội : 3 trội-lặn : 3 lặn-trội : 1 lặn-lặn" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Phép lai AA × aa luôn cho con 100% mang kiểu hình trội (Aa)." },
+      { "level": 2, "text": "AaBb × AaBb là phép lai 2 cặp phân li độc lập kinh điển cho 16 tổ hợp với tỉ lệ 9:3:3:1." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích 4 phép lai", "body": "Từng phép lai đại diện cho các trường hợp cơ bản trong di truyền học Mendel." },
+      { "kind": "compute", "title": "Xác định tỉ lệ", "body": "Aa × Aa → 3:1; Aa × aa → 1:1; AA × aa → 100% trội; AaBb × AaBb → 9:3:3:1." },
+      { "kind": "answer", "title": "Kết luận", "body": "Khớp nối chính xác 4 cặp phép lai theo quy luật Mendel." }
+    ],
+    "finalSolution": "Khớp nối chuẩn: Aa×Aa (3:1), Aa×aa (1:1), AA×aa (100% trội), AaBb×AaBb (9:3:3:1).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn giữa phép lai tự thụ Aa×Aa với phép lai phân tích Aa×aa." }
+    ]
+  },
+  {
+    "id": "bio-g9-b02-q06",
+    "lessonId": "bio-g9-b02",
+    "sgkBaiSo": 37,
+    "skillIds": ["bio9-quy-luat-mendel"],
+    "difficulty": 2,
+    "prompt": "Đánh giá tính Đúng hoặc Sai cho mỗi nhận định sau về các quy luật di truyền của Mendel:",
+    "knowledge": ["kb-bio-g9-quy-luat-phan-li", "kb-bio-g9-bien-di-to-hop"],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "st-1", "text": "Trong phép lai một cặp tính trạng của Mendel, ở F2 tỉ lệ phân li kiểu gen là 1 : 2 : 1.", "correct": true },
+        { "id": "st-2", "text": "Biến dị tổ hợp chỉ xuất hiện ở các loài sinh sản vô tính nhờ cơ chế nguyên phân.", "correct": false },
+        { "id": "st-3", "text": "Phép lai phân tích giúp xác định chính xác kiểu gen của cá thể mang tính trạng trội là đồng hợp hay dị hợp.", "correct": true },
+        { "id": "st-4", "text": "Tỉ lệ 9 : 3 : 3 : 1 ở F2 là tích của hai tỉ lệ phân li độc lập: (3 trội : 1 lặn) × (3 trội : 1 lặn).", "correct": true }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Biến dị tổ hợp xuất hiện do sự tổ hợp lại vật chất di truyền trong sinh sản hữu tính (giảm phân và thụ tinh)." },
+      { "level": 2, "text": "Sinh sản vô tính tạo ra con giống hệt mẹ nên không tạo biến dị tổ hợp." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Kiểm tra từng phát biểu", "body": "St-1: Đúng (1 AA : 2 Aa : 1 aa). St-2: Sai (biến dị tổ hợp xuất hiện trong sinh sản hữu tính, không phải vô tính). St-3: Đúng (mục đích phép lai phân tích). St-4: Đúng (tính chất nhân xác suất độc lập)." },
+      { "kind": "knowledge", "title": "Bản chất sinh sản hữu tính", "body": "Biến dị tổ hợp xuất hiện phong phú nhờ giảm phân tạo giao tử và thụ tinh kết hợp tổ hợp." },
+      { "kind": "answer", "title": "Kết luận", "body": "Thứ tự: Đúng - Sai - Đúng - Đúng." }
+    ],
+    "finalSolution": "Các câu 1, 3, 4 Đúng; Câu 2 Sai vì biến dị tổ hợp gắn liền với sinh sản hữu tính, không phải vô tính.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng sinh sản vô tính cũng tạo ra biến dị tổ hợp." }
+    ]
+  },
+  {
+    "id": "bio-g9-b02-q07",
+    "lessonId": "bio-g9-b02",
+    "sgkBaiSo": 37,
+    "skillIds": ["bio9-quy-luat-mendel"],
+    "difficulty": 2,
+    "prompt": "Một nông dân đem lai cây cà chua quả đỏ với cây cà chua quả vàng (tính trạng lặn). Kết quả thu được toàn bộ 100% cây quả đỏ. Kiểu gen của cây cà chua quả đỏ ban đầu là gì?",
+    "knowledge": ["kb-bio-g9-phep-lai-phan-tich"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Đồng hợp trội (AA)" },
+        { "id": "opt-b", "label": "Dị hợp (Aa)" },
+        { "id": "opt-c", "label": "Đồng hợp lặn (aa)" },
+        { "id": "opt-d", "label": "Không thể xác định được" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Đây chính là phép lai phân tích cây quả đỏ với cây quả vàng (aa)." },
+      { "level": 2, "text": "Vì con lai đồng tính 100% quả đỏ nên cây quả đỏ ban đầu chỉ cho 1 loại giao tử mang allele A." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích phép lai", "body": "P: Cây quả đỏ (A-) × Cây quả vàng (aa) → F1: 100% Cà chua quả đỏ (A-)." },
+      { "kind": "knowledge", "title": "Biện luận kiểu gen", "body": "Cây quả vàng (aa) luôn cho giao tử a. Để đời con 100% quả đỏ (Aa) thì cây quả đỏ ban đầu bắt buộc chỉ cho giao tử A. Vậy kiểu gen của nó phải là AA (đồng hợp trội)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Kiểu gen của cây quả đỏ ban đầu là đồng hợp trội (AA)." }
+    ],
+    "finalSolution": "Con lai đồng tính 100% quả đỏ chứng tỏ cây bố mẹ mang kiểu gen đồng hợp trội (AA).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng cây quả đỏ mang kiểu gen dị hợp Aa." }
+    ]
+  },
+  {
+    "id": "bio-g9-b02-q08",
+    "lessonId": "bio-g9-b02",
+    "sgkBaiSo": 37,
+    "skillIds": ["bio9-quy-luat-mendel"],
+    "difficulty": 3,
+    "prompt": "Trong thí nghiệm lai hai cặp tính trạng của Mendel (P thuần chủng: Hạt vàng, trơn × Hạt xanh, nhăn), ở thế hệ F2 xuất hiện những kiểu hình nào là BIẾN DỊ TỔ HỢP? (Chọn các phương án đúng)",
+    "knowledge": ["kb-bio-g9-bien-di-to-hop"],
+    "answer": {
+      "kind": "mcq-multi",
+      "options": [
+        { "id": "opt-1", "label": "Hạt vàng, vỏ nhăn" },
+        { "id": "opt-2", "label": "Hạt xanh, vỏ trơn" },
+        { "id": "opt-3", "label": "Hạt vàng, vỏ trơn" },
+        { "id": "opt-4", "label": "Hạt xanh, vỏ nhăn" }
+      ],
+      "correctIds": ["opt-1", "opt-2"]
+    },
+    "hints": [
+      { "level": 1, "text": "Biến dị tổ hợp là các kiểu hình MỚI xuất hiện ở đời con, khác với kiểu hình ban đầu của bố mẹ thuần chủng P." },
+      { "level": 2, "text": "Bố mẹ P ban đầu là 'Vàng, trơn' và 'Xanh, nhăn'. Hai kiểu hình nào là sự kết hợp chéo giữa chúng?" }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định kiểu hình của P", "body": "P ban đầu có 2 kiểu hình: Hạt vàng, vỏ trơn và Hạt xanh, vỏ nhăn." },
+      { "kind": "knowledge", "title": "Phân biệt biến dị tổ hợp", "body": "Biến dị tổ hợp là kiểu hình mới khác P. Đó là sự tái tổ hợp: Hạt vàng đi cùng vỏ nhăn (opt-1) và Hạt xanh đi cùng vỏ trơn (opt-2). Cả hai chiếm tỉ lệ 3/16 + 3/16 = 6/16 = 3/8." },
+      { "kind": "answer", "title": "Kết luận", "body": "Các phương án đúng là opt-1 và opt-2." }
+    ],
+    "finalSolution": "Hai kiểu hình biến dị tổ hợp mới xuất hiện ở F2 là Hạt vàng - vỏ nhăn và Hạt xanh - vỏ trơn.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Chọn cả kiểu hình vàng trơn và xanh nhăn vốn là kiểu hình sẵn có của P." }
+    ]
+  }
+]

@@ -1,0 +1,554 @@
+[
+  {
+    "id": "bio-g8-b02-q01",
+    "lessonId": "bio-g8-b02",
+    "sgkBaiSo": 31,
+    "skillIds": [
+      "bio-he-van-dong"
+    ],
+    "difficulty": 1,
+    "prompt": "Cột sống của người có bao nhiêu chỗ cong tự nhiên tạo thành hình chữ S thích nghi với dáng đứng thẳng?",
+    "knowledge": [
+      "kb-bio-g8-bo-xuong-nguoi"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "4 chỗ cong (2 cong trước, 2 cong sau)"
+        },
+        {
+          "id": "opt-b",
+          "label": "2 chỗ cong (1 trước, 1 sau)"
+        },
+        {
+          "id": "opt-c",
+          "label": "3 chỗ cong"
+        },
+        {
+          "id": "opt-d",
+          "label": "Không có chỗ cong, thẳng đứng tuyệt đối"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Các chỗ cong nằm ở vùng cổ, ngực, thắt lưng và cùng cụt."
+      },
+      {
+        "level": 2,
+        "text": "Có 4 chỗ cong xen kẽ nhau giúp phân tán lực tác động lên đầu và thân."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cấu tạo cột sống người",
+        "body": "Cột sống là trục chính của bộ xương gồm nhiều đốt sống khớp nhau."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Số chỗ cong sinh lí",
+        "body": "Cột sống người có 4 chỗ cong lượn chữ S: cong ra trước ở đoạn cổ và thắt lưng; cong ra sau ở đoạn ngực và cùng cụt."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Cột sống có 4 chỗ cong hình chữ S giúp cơ thể giữ thăng bằng và giảm chấn động khi di chuyển."
+      }
+    ],
+    "finalSolution": "Cột sống người gồm nhiều đốt sống khớp nhau với 4 chỗ cong chữ S, là đặc điểm tiến hóa thích nghi cao độ với tư thế đi đứng thẳng bằng 2 chân.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng cột sống hoàn toàn thẳng đứng không có độ cong sinh lí."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b02-q02",
+    "lessonId": "bio-g8-b02",
+    "sgkBaiSo": 31,
+    "skillIds": [
+      "bio-he-van-dong"
+    ],
+    "difficulty": 1,
+    "prompt": "Tính mềm dẻo và đàn hồi của xương được quyết định chủ yếu bởi thành phần nào sau đây?",
+    "knowledge": [
+      "kb-bio-g8-thanh-phan-xuong"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chất hữu cơ (chất cốt giao)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Muối khoáng vô cơ (canxi cacbonat, canxi photphat)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Lớp màng xương bọc bên ngoài"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tủy vàng trong khoang xương"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nếu ngâm xương trong dung dịch axit clohiđric loãng, muối khoáng bị hòa tan, xương trở nên mềm dẻo có thể thắt nút được."
+      },
+      {
+        "level": 2,
+        "text": "Thành phần hữu cơ protein đó gọi là chất cốt giao (ossein)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Thành phần hóa học của xương",
+        "body": "Xương cấu tạo gồm chất hữu cơ (chất cốt giao) và chất vô cơ (chủ yếu là canxi)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Vai trò của chất cốt giao",
+        "body": "Chất cốt giao protein mang lại tính mềm dẻo và đàn hồi cho xương; trong khi muối khoáng canxi mang lại tính rắn chắc."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Chất hữu cơ (chất cốt giao) quyết định tính mềm dẻo và đàn hồi của xương."
+      }
+    ],
+    "finalSolution": "Sự kết hợp giữa chất hữu cơ cốt giao và muối khoáng canxi giúp xương người vừa chắc khỏe vừa đàn hồi chịu được tải trọng lớn.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm lẫn chất khoáng vô cơ mang lại tính mềm dẻo (khoáng vô cơ mang lại tính cứng chắc)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b02-q03",
+    "lessonId": "bio-g8-b02",
+    "sgkBaiSo": 31,
+    "skillIds": [
+      "bio-he-van-dong"
+    ],
+    "difficulty": 2,
+    "prompt": "Xương của cơ thể người phát triển to ra về bề ngang là nhờ hoạt động của cấu trúc nào?",
+    "knowledge": [
+      "kb-bio-g8-phat-trien-xuong"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Sự phân chia của các tế bào màng xương"
+        },
+        {
+          "id": "opt-b",
+          "label": "Sự phân chia của lớp sụn tăng trưởng ở hai đầu xương"
+        },
+        {
+          "id": "opt-c",
+          "label": "Sự tích lũy tủy vàng trong khoang xương"
+        },
+        {
+          "id": "opt-d",
+          "label": "Sự gia tăng số lượng các nan xương xốp"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Màng xương là lớp màng liên kết mỏng bao bọc toàn bộ bề mặt thân xương."
+      },
+      {
+        "level": 2,
+        "text": "Các tế bào non ở tầng trong của màng xương phân chia tạo tế bào xương mới đắp ra ngoài."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hai hướng phát triển của xương",
+        "body": "Xương người phát triển theo hai chiều: chiều dài (cao lên) và bề ngang (to ra)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế phân chia tế bào xương",
+        "body": "Xương dài ra nhờ lớp sụn tăng trưởng ở hai đầu xương; xương to ra bề ngang nhờ màng xương bao bọc thân xương liên tục phân chia tạo tế bào xương mới."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Xương to ra bề ngang là nhờ sự phân chia của các tế bào màng xương."
+      }
+    ],
+    "finalSolution": "Màng xương sinh ra các tế bào xương mới giúp xương to dần về chu vi theo sự tăng trưởng của cơ thể.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm chức năng làm to bề ngang của màng xương với chức năng làm dài xương của sụn tăng trưởng."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b02-q04",
+    "lessonId": "bio-g8-b02",
+    "sgkBaiSo": 31,
+    "skillIds": [
+      "bio-he-van-dong"
+    ],
+    "difficulty": 2,
+    "prompt": "Khớp giữa các xương sọ thuộc loại khớp xương nào?",
+    "knowledge": [
+      "kb-bio-g8-cac-loai-khop"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Khớp bất động"
+        },
+        {
+          "id": "opt-b",
+          "label": "Khớp bán động"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khớp động"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khớp hoạt dịch"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hộp sọ có nhiệm vụ bảo vệ cố định não bộ bên trong, các xương khớp chặt vào nhau bởi đường răng cưa không thể cử động."
+      },
+      {
+        "level": 2,
+        "text": "Khớp không thể chuyển động được gọi là khớp bất động."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Vị trí giải phẫu khớp sọ",
+        "body": "Hộp sọ gồm nhiều mảnh xương dẹt khớp với nhau tạo khoang chứa não bộ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân loại mức độ vận động của khớp",
+        "body": "Các xương sọ liên kết với nhau bằng các khớp mép răng cưa cố định, hoàn toàn không cử động được để bảo vệ não khỏi rung lắc va đập."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khớp giữa các xương sọ là khớp bất động."
+      }
+    ],
+    "finalSolution": "Khớp sọ là khớp bất động, giúp hộp sọ chịu va đập bảo vệ an toàn tối đa cho trung khu thần kinh não bộ.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm khớp xương sọ với khớp hàm (khớp hàm là khớp động)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b02-q05",
+    "lessonId": "bio-g8-b02",
+    "sgkBaiSo": 31,
+    "skillIds": [
+      "bio-he-van-dong"
+    ],
+    "difficulty": 2,
+    "prompt": "Cơ chế co cơ ở mức độ tế bào diễn ra như thế nào?",
+    "knowledge": [
+      "kb-bio-g8-co-che-co-co"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tơ cơ mảnh trượt sâu vào khoảng giữa các tơ cơ dày làm bắp cơ ngắn lại và phình to"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tơ cơ dày và tơ cơ mảnh cùng dãn dài ra đẩy hai đầu xương ra xa"
+        },
+        {
+          "id": "opt-c",
+          "label": "Các tế bào cơ tự phân chia nhân lên làm tăng thể tích bắp cơ tức thời"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tơ cơ tiêu biến tạm thời tạo khoảng trống co rút"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sợi cơ chứa các sợi actin mảnh và myosin dày lồng vào nhau."
+      },
+      {
+        "level": 2,
+        "text": "Khi nhận kích thích, tơ cơ actin trượt sâu vào giữa tơ cơ myosin làm cho toàn bộ bắp cơ ngắn lại."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cấu tạo siêu vi của tơ cơ",
+        "body": "Sợi cơ gồm tơ cơ mảnh (actin) và tơ cơ dày (myosin) xếp xen kẽ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế trượt tơ cơ",
+        "body": "Dưới tác dụng của xung thần kinh và năng lượng ATP, các tơ cơ mảnh trượt sâu vào khoảng giữa các tơ cơ dày làm ngắn khoảng cách giữa hai đầu bắp cơ."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tơ cơ mảnh trượt sâu vào khoảng giữa tơ cơ dày làm bắp cơ ngắn lại và phình to."
+      }
+    ],
+    "finalSolution": "Cơ chế co cơ bản chất là sự trượt cơ học giữa tơ cơ mảnh actin và tơ cơ dày myosin nhờ năng lượng giải phóng từ phân giải ATP.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng bản thân các tơ cơ bị co ngắn lại thay vì trượt lồng vào nhau."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b02-q06",
+    "lessonId": "bio-g8-b02",
+    "sgkBaiSo": 31,
+    "skillIds": [
+      "bio-he-van-dong"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi cơ bắp hoạt động quá sức và kéo dài, nguyên nhân chính dẫn đến hiện tượng mỏi cơ là gì?",
+    "knowledge": [
+      "kb-bio-g8-co-che-co-co"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Lượng oxy cung cấp không đủ, tế bào lên men tạo acid lactic tích tụ đầu độc cơ"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cơ thể tích tụ quá nhiều khí oxygen trong cơ bắp"
+        },
+        {
+          "id": "opt-c",
+          "label": "Lượng canxi trong xương bị giải phóng ồ ạt vào máu"
+        },
+        {
+          "id": "opt-d",
+          "label": "Xương bị mềm đi do mất chất cốt giao"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi thở không kịp cấp đủ oxy, tế bào phải chuyển sang phân giải yếm khí."
+      },
+      {
+        "level": 2,
+        "text": "Sản phẩm chuyển hóa phụ có tính acid gây ức chế co cơ là acid lactic."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tình trạng khi cơ hoạt động quá sức",
+        "body": "Cơ bắp hoạt động liên tục vượt quá khả năng cung cấp khí oxygen của hệ tuần hoàn và hô hấp."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Chuyển hóa yếm khí và acid lactic",
+        "body": "Tế bào chuyển sang phân giải glucose không có oxy (lên men) tạo ra acid lactic tích tụ lại trong mô cơ làm giảm pH, gây đau mỏi và ức chế co cơ."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Do thiếu oxy, tế bào tích tụ acid lactic gây mỏi cơ."
+      }
+    ],
+    "finalSolution": "Thiếu oxy và sự tích tụ acid lactic là nguyên nhân hàng đầu gây đau mỏi cơ sau khi vận động cường độ cao.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng mỏi cơ là do thiếu canxi tức thời trong bữa ăn."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b02-q07",
+    "lessonId": "bio-g8-b02",
+    "sgkBaiSo": 31,
+    "skillIds": [
+      "bio-he-van-dong"
+    ],
+    "difficulty": 2,
+    "prompt": "Hành vi nào dưới đây là nguyên nhân trực tiếp dẫn tới tật cong vẹo cột sống ở học sinh?",
+    "knowledge": [
+      "kb-bio-g8-ve-sinh-he-van-dong"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Ngồi học sai tư thế, cúi gập sát bàn hoặc đeo cặp sách quá nặng lệch một bên vai"
+        },
+        {
+          "id": "opt-b",
+          "label": "Thường xuyên tập thể dục buổi sáng và bơi lội"
+        },
+        {
+          "id": "opt-c",
+          "label": "Uống đủ nước và bổ sung sữa giàu canxi mỗi ngày"
+        },
+        {
+          "id": "opt-d",
+          "label": "Ngồi học thẳng lưng trên bàn ghế có kích thước phù hợp với chiều cao"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Xương của học sinh còn nhiều cốt giao mềm dẻo, dễ bị biến dạng nếu chịu lực tì đè lệch lạc kéo dài."
+      },
+      {
+        "level": 2,
+        "text": "Cúi gập người hoặc đeo cặp lệch một bên vai làm cột sống bị uốn lệch khỏi trục bình thường."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đặc điểm xương ở tuổi học sinh",
+        "body": "Xương đang phát triển, giàu chất cốt giao nên mềm dẻo và dễ biến dạng trước các tư thế sai."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Các yếu tố nguy cơ cong vẹo cột sống",
+        "body": "Ngồi lệch người khi viết, cúi gập tì ngực vào bàn, dùng bàn ghế sai kích cỡ hoặc thường xuyên đeo ba lô nặng chỉ bằng một bên vai kéo lệch cột sống."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Ngồi học sai tư thế và đeo cặp lệch vai là nguyên nhân trực tiếp gây cong vẹo cột sống."
+      }
+    ],
+    "finalSolution": "Giữ đúng tư thế ngồi học và đeo ba lô cân đối cả hai vai là biện pháp cốt lõi ngăn ngừa cong vẹo cột sống học đường.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Chủ quan cho rằng chỉ có người già mới bị cong vẹo cột sống."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b02-q08",
+    "lessonId": "bio-g8-b02",
+    "sgkBaiSo": 31,
+    "skillIds": [
+      "bio-he-van-dong"
+    ],
+    "difficulty": 3,
+    "prompt": "Khi gặp một người bị gãy xương cẳng tay, hành động sơ cứu nào sau đây là ĐÚNG quy chuẩn y tế?",
+    "knowledge": [
+      "kb-bio-g8-so-cuu-gay-xuong"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Đặt nẹp cố định ôm qua cả khớp cổ tay và khớp khuỷu tay bằng băng gạc, giữ nạn nhân nằm yên rồi đưa đến viện"
+        },
+        {
+          "id": "opt-b",
+          "label": "Dùng sức kéo thật mạnh hai đầu cẳng tay để nắn cho xương gãy thẳng lại vị trí ban đầu"
+        },
+        {
+          "id": "opt-c",
+          "label": "Xoa bóp dầu nóng thật mạnh vào chỗ gãy để làm tan máu bầm"
+        },
+        {
+          "id": "opt-d",
+          "label": "Yêu cầu nạn nhân tự cử động lắc cổ tay liên tục để kiểm tra mức độ tổn thương"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nguyên tắc quan trọng nhất trong sơ cứu gãy xương là 'bất động hóa' ổ gãy."
+      },
+      {
+        "level": 2,
+        "text": "Nẹp phải dài đủ để cố định cả khớp trên và khớp dưới vùng xương bị gãy, tuyệt đối không tự ý nắn chỉnh."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu sơ cứu gãy xương",
+        "body": "Cần cố định bất động chi bị gãy để tránh đầu xương đâm rách cơ, mạch máu và dây thần kinh."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kĩ thuật nẹp xương cẳng tay",
+        "body": "Dùng hai nẹp đặt hai bên cẳng tay, lót gạc đệm êm, buộc cố định qua cả khớp cổ tay và khớp khuỷu tay, treo tay vuông góc trước ngực bằng khăn tam giác."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Phải dùng nẹp cố định cả khớp cổ tay và khuỷu tay, giữ nạn nhân nằm yên rồi đưa đến viện."
+      }
+    ],
+    "finalSolution": "Cố định bất động ổ gãy qua hai khớp lân cận là nguyên tắc vàng giúp ngăn ngừa đầu xương sắc nhọn làm tổn thương mô mềm xung quanh.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Tự ý kéo nắn xương hoặc xoa dầu nóng gây xuất huyết nội và chấn thương nặng hơn."
+      }
+    ]
+  }
+]

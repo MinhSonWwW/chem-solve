@@ -1,0 +1,332 @@
+[
+  {
+    "id": "bio-g6-b16-q01",
+    "lessonId": "bio-g6-b16",
+    "sgkBaiSo": 31,
+    "skillIds": [
+      "bio-thuc-hanh-nguyen-sinh-vat"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp các thao tác sau theo đúng trình tự chuẩn khi làm tiêu bản giọt nước ao hồ để quan sát nguyên sinh vật:",
+    "knowledge": [
+      "bio-thuc-hanh-nguyen-sinh-vat"
+    ],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Dùng ống hút nhỏ giọt lấy một giọt nước ở lớp váng xanh bề mặt nước ao hồ",
+        "Nhỏ giọt nước lên chính giữa lam kính sạch",
+        "Đặt vài sợi bông gòn tơi xốp vào giọt nước để cản trở tốc độ bơi",
+        "Đậy lamen nghiêng góc 45 độ, hút nước thừa rồi đưa lên kính hiển vi quan sát"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bắt đầu bằng việc hút giọt nước ở lớp váng bề mặt giàu sinh vật."
+      },
+      {
+        "level": 2,
+        "text": "Cho sợi bông gòn vào trước khi hạ lamen nghiêng 45 độ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu bài thực hành",
+        "body": "Xác định 4 bước tuần tự làm tiêu bản giọt nước sống."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Trình tự thao tác",
+        "body": "Hút nước váng bề mặt → Nhỏ giọt lên lam kính → Đặt sợi bông gòn → Đậy lamen nghiêng 45°."
+      },
+      {
+        "kind": "answer",
+        "title": "Thứ tự chính xác",
+        "body": "Trình tự chuẩn bị mẫu vật quan sát hoàn chỉnh."
+      }
+    ],
+    "finalSolution": "Trình tự chuẩn: Hút giọt nước bề mặt → Nhỏ lên lam kính → Thêm sợi bông gòn cản tốc độ → Đậy lamen nghiêng 45° và quan sát.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Đậy lamen xong mới cố nhét sợi bông gòn vào giọt nước làm nứt vỡ lamen."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b16-q02",
+    "lessonId": "bio-g6-b16",
+    "sgkBaiSo": 31,
+    "skillIds": [
+      "bio-thuc-hanh-nguyen-sinh-vat"
+    ],
+    "difficulty": 1,
+    "prompt": "Ghép nối từng nguyên sinh vật (cột bên trái) với đúng hình ảnh hiển vi nhận diện được dưới kính (cột bên phải):",
+    "knowledge": [
+      "bio-thuc-hanh-nguyen-sinh-vat"
+    ],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Trùng roi xanh",
+          "right": "Hình thoi thon gọn màu xanh lục, bơi xoáy tròn tiến về phía trước"
+        },
+        {
+          "left": "Trùng giày",
+          "right": "Hình chiếc đế giày bơi lội linh hoạt nhờ hàng nghìn lông bơi viền quanh thân"
+        },
+        {
+          "left": "Tảo silic",
+          "right": "Hình que, hình quạt có vỏ cứng bằng chất silic trong suốt như thủy tinh"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Màu xanh lục và hình thoi là đặc điểm của trùng roi."
+      },
+      {
+        "level": 2,
+        "text": "Vỏ trong suốt như thủy tinh là đặc điểm độc đáo của tảo silic."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 3 mẫu sinh vật hiển vi",
+        "body": "Trùng roi xanh, trùng giày, tảo silic."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc điểm hình ảnh trực quan",
+        "body": "Trùng roi: thoi xanh + bơi xoáy; Trùng giày: đế giày + lông bơi; Tảo silic: vỏ silic trong suốt như thủy tinh."
+      },
+      {
+        "kind": "answer",
+        "title": "Ghép cặp chính xác",
+        "body": "Nối đúng 3 sinh vật với mô tả hình ảnh hiển vi."
+      }
+    ],
+    "finalSolution": "Trùng roi: Thân hình thoi màu xanh lục bơi xoáy; Trùng giày: Hình đế giày có lông bơi; Tảo silic: Vỏ cứng trong suốt như thủy tinh.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Nhầm tảo silic với trùng giày (tảo silic đứng yên hoặc trôi dạt nhẹ, không có lông bơi)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b16-q03",
+    "lessonId": "bio-g6-b16",
+    "sgkBaiSo": 31,
+    "skillIds": [
+      "bio-thuc-hanh-nguyen-sinh-vat"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi làm tiêu bản giọt nước ao hồ, tác dụng chủ yếu của việc đặt thêm vài sợi bông gòn vào giọt nước trước khi đậy lamen là gì?",
+    "knowledge": [
+      "bio-thuc-hanh-nguyen-sinh-vat"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Làm chậm và cản trở tốc độ bơi quá nhanh của trùng giày, trùng roi giúp dễ quan sát"
+        },
+        {
+          "id": "opt-b",
+          "label": "Làm tăng độ phóng đại quang học của thấu kính"
+        },
+        {
+          "id": "opt-c",
+          "label": "Giúp tiêu diệt bớt vi khuẩn gây hại trên lam kính"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cung cấp chất béo làm thức ăn cho trùng roi"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nguyên sinh vật bơi rất nhanh sẽ dễ bị bơi ra ngoài vùng nhìn của kính."
+      },
+      {
+        "level": 2,
+        "text": "Các sợi bông đan xen tạo thành các chướng ngại vật hãm bớt tốc độ bơi của chúng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục đích của mẹo thực nghiệm",
+        "body": "Đề bài hỏi vai trò của sợi bông gòn trong giọt nước sống."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kỹ thuật phòng thí nghiệm",
+        "body": "Sợi bông gòn tạo mạng lưới cản chuyển động cơ học, khiến trùng giày và trùng roi phải luồn lách chậm lại, giúp mắt người quan sát dễ dàng theo dõi và vẽ hình."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn phương án đúng",
+        "body": "Lựa chọn chính xác là tác dụng chính xác."
+      }
+    ],
+    "finalSolution": "Sợi bông gòn đan xen tạo vật cản làm chậm tốc độ bơi của các sinh vật đơn bào, giúp người quan sát dễ dàng theo dõi dưới kính hiển vi.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nghĩ rằng sợi bông gòn có tác dụng phóng đại hình ảnh."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b16-q04",
+    "lessonId": "bio-g6-b16",
+    "sgkBaiSo": 31,
+    "skillIds": [
+      "bio-thuc-hanh-nguyen-sinh-vat"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi đi lấy mẫu nước ao hồ để thực hành quan sát nguyên sinh vật, nên lấy mẫu ở vị trí nào để thu được nhiều sinh vật nhất?",
+    "knowledge": [
+      "bio-thuc-hanh-nguyen-sinh-vat"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Dưới đáy bùn đen sâu thẳm không có ánh sáng"
+        },
+        {
+          "id": "opt-b",
+          "label": "Chỗ dòng nước chảy xiết xối xả"
+        },
+        {
+          "id": "opt-c",
+          "label": "Lớp nước có váng xanh ở sát bề mặt nơi có nhiều ánh sáng chiếu vào"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nước mưa vừa rơi từ trên mái nhà xuống"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tảo và trùng roi cần ánh sáng để quang hợp nên tập trung ở mặt nước."
+      },
+      {
+        "level": 2,
+        "text": "Lớp váng xanh chứa mật độ tảo và vi sinh vật dày đặc nhất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Chọn vị trí lấy mẫu nước",
+        "body": "Tìm nơi có mật độ nguyên sinh vật cao nhất trong thủy vực."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tập tính quang học của nguyên sinh vật",
+        "body": "Váng xanh trên mặt nước chứa hàng triệu tế bào tảo lục và trùng roi đang tập trung quang hợp và trao đổi khí oxygen với không khí."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án đúng",
+        "body": "Lớp nước váng xanh bề mặt là mẫu vật tốt nhất."
+      }
+    ],
+    "finalSolution": "Nên lấy mẫu nước ở lớp váng xanh bề mặt vì nơi này giàu ánh sáng và oxygen, là nơi tập trung với mật độ cao nhất của trùng roi và các loài tảo hiển vi.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Nghĩ rằng xúc lớp bùn đen dưới đáy ao sẽ có nhiều trùng roi xanh hơn."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b16-q05",
+    "lessonId": "bio-g6-b16",
+    "sgkBaiSo": 31,
+    "skillIds": [
+      "bio-thuc-hanh-nguyen-sinh-vat"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về thực hành quan sát nguyên sinh vật:",
+    "knowledge": [
+      "bio-thuc-hanh-nguyen-sinh-vat"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Nên quan sát mẫu vật ở độ phóng đại nhỏ (vật kính 10x) trước để tìm sinh vật, sau đó mới chuyển sang vật kính 40x để nhìn chi tiết.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Khi hạ lamen đậy lên giọt nước, nên hạ thẳng đứng 90 độ thật mạnh để ép phẳng toàn bộ sinh vật.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Trùng roi xanh có thể di chuyển hướng về phía nguồn ánh sáng nhờ có điểm mắt màu đỏ cảm nhận quang học.",
+          "correct": true
+        },
+        {
+          "id": "st-4",
+          "text": "Tảo silic là động vật di chuyển săn mồi hung dữ nhờ có nhiều chân giả bao quanh thân.",
+          "correct": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nguyên tắc sử dụng kính hiển vi luôn là từ vật kính nhỏ đến vật kính lớn."
+      },
+      {
+        "level": 2,
+        "text": "Hạ lamen phải nghiêng 45 độ để tránh bọt khí; tảo silic là thực vật trôi nổi quang hợp."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Đánh giá từng câu về kỹ thuật hiển vi và đặc tính sinh vật."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra chi tiết",
+        "body": "1. Từ 10x sang 40x: Đúng. 2. Hạ thẳng đứng 90°: Sai (phải hạ nghiêng 45°). 3. Điểm mắt hướng sáng: Đúng. 4. Tảo silic là động vật săn mồi: Sai (tảo là sinh vật tự dưỡng có vỏ silic)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Ý 1: Đúng; Ý 2: Sai; Ý 3: Đúng; Ý 4: Sai."
+      }
+    ],
+    "finalSolution": "Phát biểu 1 và 3 đúng. Phát biểu 2 sai (phải hạ lamen nghiêng 45 độ tránh bọt khí). Phát biểu 4 sai (tảo silic là nhóm tảo quang hợp có vỏ silic cứng, không phải động vật săn mồi).",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng đậy lamen càng mạnh và thẳng đứng thì bọt khí càng dễ thoát ra ngoài."
+      }
+    ]
+  }
+]

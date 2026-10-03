@@ -1,0 +1,205 @@
+[
+  {
+    "id": "kb-bio-g9-cong-nghe-te-bao-thuc-vat",
+    "title": "Kĩ thuật nuôi cấy mô tế bào thực vật",
+    "summary": "Phương pháp nhân giống vô tính trong ống nghiệm (in vitro) dựa trên tính toàn năng của tế bào thực vật.",
+    "keyTakeaways": [
+      "Cơ sở khoa học: Tính toàn năng của tế bào - mỗi tế bào thực vật đều chứa toàn bộ hệ gen của loài và có khả năng phát triển thành một cơ thể hoàn chỉnh khi được nuôi trong môi trường dinh dưỡng và hormone phù hợp.",
+      "Quy trình: Tách mô phân sinh (đỉnh sinh trưởng) → Khử trùng → Nuôi cấy tạo mô sẹo (callus) → Kích thích tạo chồi và rễ → Chuyển cây con ra vườn ươm.",
+      "Ý nghĩa: Nhân nhanh hàng loạt cây giống sạch bệnh, đồng nhất 100% về mặt di truyền, bảo tồn nguồn gen thực vật quý hiếm (hoa phong lan, sâm Ngọc Linh, khoai tây, chuối giống sạch virus)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-nhan-ban-vo-tinh-dong-vat",
+    "title": "Nhân bản vô tính ở động vật và cừu Dolly",
+    "summary": "Kĩ thuật chuyển nhân tế bào xôma vào tế bào trứng đã hút nhân để tạo ra cơ thể động vật mới không qua thụ tinh.",
+    "keyTakeaways": [
+      "Thành tựu lịch sử: Cừu Dolly (1996) do Ian Wilmut và cộng sự tạo ra tại Viện Roslin (Scotland), là động vật có vú đầu tiên được nhân bản vô tính từ tế bào sinh dưỡng trưởng thành.",
+      "Quy trình: Lấy nhân tế bào tuyến vú của cừu mặt trắng (cho nhân) → Đưa vào tế bào trứng đã hút bỏ nhân của cừu mặt đen (cho trứng) → Dùng xung điện kích hoạt trứng phát triển thành phôi → Cấy phôi vào tử cung cừu mẹ mang thai (mặt đen) → Sinh ra cừu Dolly.",
+      "Cơ sở di truyền quan trọng: Cừu Dolly có đầu màu trắng và mang 100% kiểu gen trong nhân của con cừu cho tế bào tuyến vú (con cừu cho trứng và cừu mang thai không truyền gen nhân cho Dolly).",
+      "Ý nghĩa: Mở ra triển vọng nhân bản động vật biến đổi gen quý hiếm sản xuất dược phẩm và ứng dụng y học tái tạo mô, tạng cấy ghép."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-cay-truyen-phoi-dong-vat",
+    "title": "Kĩ thuật cấy truyền phôi ở gia súc",
+    "summary": "Biện pháp đưa phôi từ cá thể mẹ cao sản sang tử cung của nhiều cá thể mẹ nhận để tăng nhanh số lượng con giống quý.",
+    "keyTakeaways": [
+      "Quy trình: Tiêm hormone kích thích rụng nhiều trứng ở bò cái giống cao sản → Thụ tinh nhân tạo với tinh trùng bò đực giống tốt → Thu hồi các phôi trước khi làm tổ → Tách phôi hoặc cấy truyền từng phôi vào tử cung các con bò cái mang thai hộ.",
+      "Ý nghĩa: Khai thác tối đa tiềm năng sinh sản của con cái cao sản (một bò cái tốt bình thường chỉ đẻ 1 con/năm, qua cấy truyền phôi có thể cho hàng chục đến hàng trăm con giống quý mỗi năm)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-cong-nghe-gene-quy-trinh",
+    "title": "Quy trình kĩ thuật chuyển gen (Công nghệ gene)",
+    "summary": "Quy trình đưa một gen mong muốn từ sinh vật này sang hệ gen của sinh vật khác để tạo sinh vật chuyển gen.",
+    "keyTakeaways": [
+      "Bước 1: Tách chiết thể truyền (plasmid vi khuẩn hoặc virus) và tách phân tử DNA chứa gen cần chuyển từ tế bào cho.",
+      "Bước 2: Tạo DNA tái tổ hợp bằng cách dùng cùng một loại enzyme cắt giới hạn (restrictase) để cắt mở vòng thể truyền và cắt lấy gen đích (tạo đầu dính so le), sau đó dùng enzyme nối (DNA ligase) để gắn kết gen cần chuyển vào thể truyền.",
+      "Bước 3: Chuyển DNA tái tổ hợp vào tế bào nhận (thường dùng vi khuẩn E. coli, nấm men hoặc tế bào thực vật).",
+      "Bước 4: Phân lập dòng tế bào nhận chứa DNA tái tổ hợp và kích thích chúng biểu hiện gen để sản xuất protein mong muốn."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-thanh-tuu-sinh-vat-gmo",
+    "title": "Thành tựu sinh vật biến đổi gen (GMO) trong thực tiễn",
+    "summary": "Ứng dụng công nghệ gen tạo ra các giống vi sinh vật, cây trồng và vật nuôi có đặc tính ưu việt.",
+    "keyTakeaways": [
+      "Vi sinh vật GMO: Chuyển gen tổng hợp insulin người vào vi khuẩn E. coli để sản xuất insulin đại trà trị bệnh tiểu đường với giá thành rẻ; chuyển gen sản xuất hormone sinh trưởng người (GH), vaccine tái tổ hợp.",
+      "Cây trồng GMO: Giống lúa gạo vàng (Golden Rice) mang gen tổng hợp beta-carotene (tiền chất vitamin A) giúp chống bệnh mù lòa ở trẻ em; Ngô và bông chuyển gen Bt (mang độc tố từ vi khuẩn Bacillus thuringiensis) có khả năng tự kháng sâu đục thân mà không cần phun thuốc trừ sâu hóa học; Đậu tương kháng thuốc diệt cỏ glyphosate.",
+      "Động vật GMO: Dê chuyển gen sản xuất tơ nhện trong sữa; Cá hồi chuyển gen sinh trưởng nhanh quanh năm."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-khai-niem-tien-hoa",
+    "title": "Khái niệm tiến hóa sinh học",
+    "summary": "Quá trình biến đổi của sinh giới từ đơn giản đến phức tạp, từ ít thích nghi đến thích nghi hoàn hảo hơn với môi trường sống.",
+    "keyTakeaways": [
+      "Bản chất: Sự biến đổi liên tục cấu trúc di truyền của các quần thể sinh vật qua thời gian địa chất, dẫn tới sự thích nghi và hình thành các loài mới.",
+      "Quy luật chung: Sinh giới phát triển từ đơn bào đến đa bào, từ sống dưới nước di cư lên cạn, tổ chức cơ thể ngày càng phân hóa và hoàn thiện."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-co-quan-tuong-dong",
+    "title": "Cơ quan tương đồng (Homologous organs)",
+    "summary": "Bằng chứng giải phẫu so sánh chứng minh nguồn gốc chung giữa các loài sinh vật.",
+    "keyTakeaways": [
+      "Định nghĩa: Cơ quan tương đồng là những cơ quan bắt nguồn từ cùng một cơ quan ở loài tổ tiên, mặc dù hiện tại chúng có thể thực hiện các chức năng hoàn toàn khác nhau.",
+      "Ví dụ điển hình: Tuyến xương chi trước của các loài động vật có xương sống (tay người để cầm nắm, chân trước của ngựa để chạy, cánh của dơi để bay, vây ngực của cá voi để bơi) đều có cùng kiểu sắp xếp xương: xương cánh tay, xương cẳng tay, xương cổ tay, xương bàn và xương ngón tay.",
+      "Ý nghĩa: Phản ánh hướng tiến hóa phân li (từ một tổ tiên chung thích nghi với các môi trường sống khác nhau biến đổi thành nhiều dạng)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-co-quan-tuong-tu",
+    "title": "Cơ quan tương tự (Analogous organs)",
+    "summary": "Những cơ quan có chức năng giống nhau nhưng có nguồn gốc phát sinh hoàn toàn khác nhau.",
+    "keyTakeaways": [
+      "Định nghĩa: Cơ quan tương tự là những cơ quan thực hiện những chức năng như nhau nhưng lại có nguồn gốc phát sinh phôi học khác nhau.",
+      "Ví dụ: Cánh của loài dơi (biến đổi từ chi trước có xương) và cánh của loài côn trùng (nếp gấp biểu bì cutin không có xương) cùng dùng để bay; Gai của cây hoàng liên (biến đổi từ lá) và gai của cây hoa hồng (do biểu bì thân phát triển thành).",
+      "Ý nghĩa: Phản ánh hướng tiến hóa đồng quy (các loài khác nguồn gốc sống trong cùng điều kiện môi trường tương tự thì chọn lọc tự nhiên tích lũy những đặc điểm hình thái giống nhau)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-co-quan-thoai-hoa",
+    "title": "Cơ quan thoái hóa (Vestigial organs)",
+    "summary": "Di tích của những cơ quan từng phát triển mạnh ở loài tổ tiên nhưng nay đã tiêu giảm chức năng.",
+    "keyTakeaways": [
+      "Định nghĩa: Cơ quan thoái hóa thực chất là một trường hợp đặc biệt của cơ quan tương đồng, đã ngừng thực hiện chức năng ban đầu và bị tiêu giảm dần trong quá trình tiến hóa.",
+      "Ví dụ ở người: Ruột thừa (vết tích của manh tràng rất phát triển ở động vật ăn cỏ để tiêu hóa cellulose); Xương cùng (di tích của đuôi); Răng khôn (di tích răng hàm nhai thức ăn thô cứng); Nếp mí mắt thứ ba ở khóe mắt.",
+      "Ý nghĩa: Cung cấp bằng chứng thuyết phục chứng minh con người có nguồn gốc phát sinh từ động vật có xương sống cổ xưa."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-bang-chung-hoa-thach",
+    "title": "Hóa thạch — Bằng chứng tiến hóa trực tiếp",
+    "summary": "Di tích của sinh vật cổ đại để lại trong các lớp đất đá của vỏ Trái Đất, cung cấp bằng chứng trực tiếp và tin cậy nhất về lịch sử sinh giới.",
+    "keyTakeaways": [
+      "Dạng hóa thạch: Xương, vỏ sò hóa đá, dấu chân in trên đá, côn trùng bọc trong hổ phách, xác voi ma mút nguyên vẹn trong băng vĩnh cửu.",
+      "Định tuổi hóa thạch: Sử dụng phương pháp đồng vị phóng xạ (Cacbon-14 để xác định mẫu vật dưới 50.000 năm; Urani-238 để xác định mẫu hàng tỉ năm).",
+      "Hóa thạch chuyển tiếp: Hóa thạch chim cổ (Archaeopteryx) vừa mang đặc điểm của bò sát (có răng, đuôi dài có đốt xương, móng ở cánh) vừa mang đặc điểm của chim (có lông vũ) → chứng minh chim tiến hóa từ bò sát cổ."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-chon-loc-nhan-tao",
+    "title": "Học thuyết chọn lọc nhân tạo (Artificial Selection)",
+    "summary": "Quá trình con người chủ động chọn lọc và giữ lại những biến dị có lợi cho nhu cầu kinh tế hoặc thị hiếu thẩm mĩ.",
+    "keyTakeaways": [
+      "Động lực và tác nhân: Do con người trực tiếp thực hiện thông qua việc chọn giống và đào thải.",
+      "Cơ chế: Con người phát hiện các biến dị cá thể xuất hiện ngẫu nhiên, giữ lại những cá thể mang biến dị đáp ứng nhu cầu (cho nhiều sữa, quả ngọt, lông đẹp) và cho chúng sinh sản, đồng thời loại bỏ các cá thể mang biến dị không mong muốn.",
+      "Kết quả: Tạo ra hàng trăm giống vật nuôi, cây trồng khác nhau từ một dạng tổ tiên hoang dại (ví dụ từ loài gà rừng hoang dã tạo ra hàng chục giống gà lấy thịt, lấy trứng, gà cảnh; từ loài mù tạt dại tạo ra súp lơ, bắp cải, su hào)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-chon-loc-tu-nhien-darwin",
+    "title": "Học thuyết chọn lọc tự nhiên của Charles Darwin",
+    "summary": "Cơ chế chính giải thích sự thích nghi và nguồn gốc các loài sinh vật trong tác phẩm kinh điển 'Nguồn gốc các loài' (1859).",
+    "keyTakeaways": [
+      "Đấu tranh sinh tồn: Do sinh vật sinh sản với số lượng con cháu vượt xa khả năng cung cấp thức ăn và nơi ở của môi trường sống, dẫn đến sự cạnh tranh khốc liệt giữa các cá thể.",
+      "Cơ chế chọn lọc tự nhiên: Môi trường tự nhiên tác động đào thải những cá thể mang biến dị bất lợi cho sự sống sót, đồng thời bảo tồn và nhân lên những cá thể mang biến dị cá thể có lợi.",
+      "Kết quả: Tích lũy các biến dị có lợi qua nhiều thế hệ, hình thành nên các đặc điểm thích nghi hoàn hảo với môi trường sống và phân li thành các loài mới."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-thuyet-tien-hoa-tong-hop",
+    "title": "Thuyết tiến hóa tổng hợp hiện đại (Modern Synthesis)",
+    "summary": "Học thuyết tiến hóa hiện đại kết hợp chọn lọc tự nhiên của Darwin với di truyền học phân tử và di truyền học quần thể.",
+    "keyTakeaways": [
+      "Đơn vị tiến hóa cơ sở: Quần thể là đơn vị tiến hóa cơ sở (không phải cá thể như quan niệm cổ điển).",
+      "Tiến hóa nhỏ (Microevolution): Quá trình biến đổi tần số allele và thành phần kiểu gen của quần thể, dẫn đến sự hình thành loài mới.",
+      "Tiến hóa lớn (Macroevolution): Quá trình hình thành các nhóm phân loại trên loài (chi, họ, bộ, lớp, ngành) qua hàng triệu năm."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-nhan-to-dot-bien-tien-hoa",
+    "title": "Nhân tố đột biến trong tiến hóa",
+    "summary": "Nhân tố làm thay đổi tần số allele vô hướng và cung cấp nguồn nguyên liệu sơ cấp dồi dào.",
+    "keyTakeaways": [
+      "Tạo allele mới: Đột biến gen là nhân tố duy nhất trực tiếp tạo ra các allele mới hoàn toàn trong vốn gen của quần thể.",
+      "Nguyên liệu sơ cấp: Cung cấp nguồn biến dị di truyền sơ cấp cho chọn lọc tự nhiên sàng lọc.",
+      "Tần số: Tần số đột biến tự nhiên ở mỗi locus gen là rất thấp (10^-6 đến 10^-4), nhưng vì mỗi cá thể có hàng vạn gen và kích thước quần thể lớn nên số lượng đột biến xuất hiện mỗi thế hệ là rất đáng kể."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-nhan-to-giao-phoi-tien-hoa",
+    "title": "Nhân tố giao phối (giao phối ngẫu nhiên)",
+    "summary": "Tổ hợp các gen có sẵn tạo ra nguồn biến dị thứ cấp phong phú cho tiến hóa.",
+    "keyTakeaways": [
+      "Vai trò: Giao phối ngẫu nhiên không làm thay đổi tần số allele của quần thể, nhưng làm phát tán các đột biến gen và tổ hợp lại các allele thành vô số tổ hợp kiểu gen mới (biến dị tổ hợp).",
+      "Nguyên liệu thứ cấp: Cung cấp nguồn biến dị thứ cấp khổng lồ cho chọn lọc tự nhiên.",
+      "Tạo trạng thái cân bằng: Giúp duy trì sự đa dạng di truyền trong quần thể."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-nhan-to-cltn-tien-hoa",
+    "title": "Vai trò định hướng của chọn lọc tự nhiên trong tiến hóa hiện đại",
+    "summary": "Nhân tố tiến hóa duy nhất có hướng, quy định chiều hướng và nhịp điệu của tiến hóa.",
+    "keyTakeaways": [
+      "Bản chất: Phân hóa khả năng sống sót và sinh sản của các cá thể mang các kiểu gen khác nhau trong quần thể.",
+      "Tác động lên kiểu hình: Chọn lọc tự nhiên tác động trực tiếp lên kiểu hình của cá thể, qua đó gián tiếp chọn lọc kiểu gen và làm biến đổi tần số allele của quần thể theo một hướng xác định.",
+      "Lưu ý chống bẫy: Chọn lọc tự nhiên KHÔNG trực tiếp tạo ra biến dị, nó chỉ đóng vai trò là 'cái rây' (bộ lọc) sàng lọc, giữ lại kiểu gen thích nghi và đào thải kiểu gen bất lợi."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-co-che-hinh-thanh-loai",
+    "title": "Cơ chế hình thành loài mới và các cơ chế cách li",
+    "summary": "Quá trình phân li tính trạng tích lũy sai khác di truyền dẫn tới sự hình thành loài mới.",
+    "keyTakeaways": [
+      "Các cơ chế cách li: Cách li địa lí (núi cao, sông sâu ngăn cách các quần thể), cách li sinh thái (khác ổ sinh thái), cách li tập tính (khác tập tính giao phối), cách li mùa sinh sản.",
+      "Dấu hiệu then chốt: Cách li sinh sản (các cá thể của 2 quần thể không thể giao phối với nhau hoặc giao phối sinh con bất thụ) là dấu hiệu khẳng định loài mới đã chính thức hình thành.",
+      "Con đường hình thành loài: Hình thành loài khác khu vực địa lí (phổ biến ở động vật di chuyển xa) và Cùng khu vực địa lí (hình thành loài bằng đột biến đa bội hóa, lai xa ở thực vật)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-ba-giai-doan-nguon-goc-su-song",
+    "title": "Ba giai đoạn phát sinh sự sống (Thuyết Oparin - Haldane)",
+    "summary": "Lịch sử tiến hóa từ vật chất vô cơ nguyên thủy hình thành nên tế bào sống đầu tiên.",
+    "keyTakeaways": [
+      "1. Tiến hóa hóa học: Từ các chất vô cơ đơn giản trong khí quyển nguyên thủy dưới tác động sấm sét, bức xạ tử ngoại hình thành chất hữu cơ đơn giản (amino acid, nucleotide) → trùng phân thành đại phân tử sinh học (protein, nucleic acid).",
+      "Thí nghiệm Miller - Urey (1953): Mô phỏng khí quyển nguyên thủy với hỗn hợp CH4, NH3, H2, hơi nước và phóng tia lửa điện, sau một tuần đã tổng hợp được nhiều loại amino acid hữu cơ quan trọng.",
+      "2. Tiến hóa tiền sinh học: Sự tập hợp các đại phân tử tạo thành các giọt đông tụ (coacervate), xuất hiện màng lipid kép bao bọc tạo nên tế bào nguyên thủy (protocell) có khả năng trao đổi chất và tự nhân đôi sơ khai.",
+      "3. Tiến hóa sinh học: Dưới tác dụng của chọn lọc tự nhiên, từ tế bào nguyên thủy tiến hóa phân nhánh thành toàn bộ thế giới sinh vật đa dạng ngày nay."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-khi-quyen-nguyen-thuy",
+    "title": "Đặc điểm của bầu khí quyển Trái Đất nguyên thủy",
+    "summary": "Điều kiện môi trường hóa học đặc biệt thuở sơ khai khoảng 4,5 tỉ năm trước.",
+    "keyTakeaways": [
+      "Thành phần khí quyển: Gồm khí metan (CH4), amoniac (NH3), hơi nước (H2O), hydro (H2), cacbon monoxit (CO)... mang tính khử mạnh.",
+      "Đặc điểm quyết định: Hoàn toàn KHÔNG có khí oxy tự do (O2) và KHÔNG có tầng ozone (O3).",
+      "Nguồn năng lượng tự nhiên dồi dào: Năng lượng từ sấm sét dữ dội, bức xạ tử ngoại (tia UV cực mạnh chiếu thẳng từ Mặt Trời vì chưa có tầng ozone), hoạt động phun trào núi lửa và nhiệt độ bề mặt Trái Đất còn rất cao."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-lich-su-nam-dai-dia-chat",
+    "title": "Lịch sử phát triển sinh giới qua 5 đại địa chất",
+    "summary": "Các mốc tiến hóa then chốt từ Đại Thái cổ đến Đại Tân sinh.",
+    "keyTakeaways": [
+      "1. Đại Thái cổ (cổ xưa nhất): Xuất hiện sinh vật nhân sơ cổ nhất (vi khuẩn, vi khuẩn lam quang hợp giải phóng O2 ra khí quyển).",
+      "2. Đại Nguyên sinh: Xuất hiện sinh vật nhân thực đơn bào, tảo và động vật không xương sống nguyên thủy ở biển.",
+      "3. Đại Cổ sinh: Thực vật di cư lên cạn, phát triển rừng quyết khổng lồ (tạo nên các mỏ than đá ngày nay), xuất hiện cá, lưỡng cư và bò sát cổ.",
+      "4. Đại Trung sinh: Kỉ Tam điệp, kỉ Jura, kỉ Phấn trắng — Thời đại cực thịnh của bò sát khổng lồ (khủng long), xuất hiện chim cổ, thú cổ và thực vật hạt trần.",
+      "5. Đại Tân sinh: Kỉ Đệ Tam và Đệ Tứ — Thời đại phồn thịnh của thú, chim và thực vật hạt kín; loài người xuất hiện ở kỉ Đệ Tứ (thế Canh tân)."
+    ]
+  }
+]

@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g9-b07-q01",
+    "lessonId": "bio-g9-b07",
+    "sgkBaiSo": 42,
+    "skillIds": ["bio9-nhiem-sac-the"],
+    "difficulty": 1,
+    "prompt": "Ở sinh vật nhân thực, thành phần hóa học chủ yếu cấu tạo nên nhiễm sắc thể trong nhân tế bào là gì?",
+    "knowledge": ["kb-bio-g9-cau-truc-nhiem-sac-the"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Phân tử DNA và protein loại histone" },
+        { "id": "opt-b", "label": "Phân tử RNA và phospholipid kép" },
+        { "id": "opt-c", "label": "Chỉ duy nhất một chuỗi polysaccharide glycogen" },
+        { "id": "opt-d", "label": "Axit béo liên kết với ribosome" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Nhiễm sắc thể chứa vật chất mang thông tin di truyền kết hợp với protein để đóng gói." },
+      { "level": 2, "text": "Vật chất di truyền là DNA và protein có tính kiềm mang tên histone." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Bản chất của nhiễm sắc thể", "body": "Nhiễm sắc thể là cấu trúc bắt màu thuốc nhuộm kiềm tính trong nhân tế bào nhân thực." },
+      { "kind": "knowledge", "title": "Thành phần hóa học", "body": "Chất nhiễm sắc được cấu tạo từ chuỗi xoắn kép DNA liên kết chặt chẽ với các khối cầu protein loại histone." },
+      { "kind": "answer", "title": "Kết luận", "body": "Thành phần cấu tạo là phân tử DNA và protein loại histone." }
+    ],
+    "finalSolution": "Nhiễm sắc thể ở sinh vật nhân thực được cấu tạo từ phân tử DNA liên kết với protein loại histone.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn với thành phần của màng sinh chất (phospholipid và protein)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b07-q02",
+    "lessonId": "bio-g9-b07",
+    "sgkBaiSo": 42,
+    "skillIds": ["bio9-nhiem-sac-the"],
+    "difficulty": 1,
+    "prompt": "Đơn vị cấu trúc cơ bản của nhiễm sắc thể gồm đoạn DNA dài khoảng 146 cặp nucleotide quấn quanh 8 phân tử protein histone được gọi là gì?",
+    "knowledge": ["kb-bio-g9-cau-truc-nhiem-sac-the"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Nucleosome" },
+        { "id": "opt-b", "label": "Nucleotide" },
+        { "id": "opt-c", "label": "Centromere (tâm động)" },
+        { "id": "opt-d", "label": "Telomere (đầu mút)" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Từ này bắt đầu bằng 'Nucleo-' và kết thúc bằng '-some' (thể)." },
+      { "level": 2, "text": "Nhiều đơn vị này liên kết với nhau bằng các đoạn DNA nối tạo thành sợi cơ bản có hình chuỗi hạt." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Cấu trúc hiển vi của sợi nhiễm sắc", "body": "Dưới kính hiển vi điện tử, sợi nhiễm sắc trông giống như một chuỗi các hạt cườm." },
+      { "kind": "knowledge", "title": "Định nghĩa Nucleosome", "body": "Mỗi hạt cườm đó được gọi là nucleosome, gồm 8 phân tử protein histone làm lõi được bao bọc bởi một đoạn DNA dài khoảng 146 cặp base quấn khoảng 1 3/4 vòng." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đơn vị cấu trúc cơ bản đó là Nucleosome." }
+    ],
+    "finalSolution": "Đơn vị cấu trúc cơ bản của nhiễm sắc thể là nucleosome (gồm lõi 8 phân tử histone được quấn quanh bởi 146 cặp nucleotide DNA).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn giữa nucleosome (đơn vị NST) và nucleotide (đơn vị của DNA/RNA)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b07-q03",
+    "lessonId": "bio-g9-b07",
+    "sgkBaiSo": 42,
+    "skillIds": ["bio9-nhiem-sac-the"],
+    "difficulty": 1,
+    "prompt": "Tại kì giữa của quá trình phân bào, mỗi nhiễm sắc thể kép có cấu tạo gồm những thành phần nào?",
+    "knowledge": ["kb-bio-g9-hinh-thai-nst-ki-giua"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Hai nhiễm sắc tử chị em (chromatid) giống hệt nhau, đính với nhau tại tâm động" },
+        { "id": "opt-b", "label": "Bốn nhiễm sắc thể đơn độc lập không gắn kết với nhau" },
+        { "id": "opt-c", "label": "Một sợi DNA đơn cuộn xoắn tự do trong chất tế bào" },
+        { "id": "opt-d", "label": "Hai tâm động nối liền hai đầu mút của cùng một phân tử RNA" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Ở kì trung gian DNA đã nhân đôi tạo nên 2 sợi giống nhau gắn liền ở một điểm thắt." },
+      { "level": 2, "text": "Hai sợi giống nhau đó gọi là 2 nhiễm sắc tử chị em (chromatid) đính tại tâm động." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Hình thái NST kì giữa", "body": "Tại kì giữa, NST kép co xoắn cực đại tạo hình thái đối xứng rõ nét." },
+      { "kind": "knowledge", "title": "Cấu tạo NST kép", "body": "Mỗi NST kép gồm 2 nhiễm sắc tử chị em (chromatid) mang cùng trình tự gen, được giữ chặt với nhau tại điểm eo sơ cấp gọi là tâm động." },
+      { "kind": "answer", "title": "Kết luận", "body": "Gồm hai chromatid chị em đính nhau tại tâm động." }
+    ],
+    "finalSolution": "Mỗi nhiễm sắc thể kép tại kì giữa gồm 2 nhiễm sắc tử chị em (chromatid) đính với nhau tại tâm động.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng mỗi NST kép chỉ có 1 chromatid hoặc có 4 chromatid." }
+    ]
+  },
+  {
+    "id": "bio-g9-b07-q04",
+    "lessonId": "bio-g9-b07",
+    "sgkBaiSo": 42,
+    "skillIds": ["bio9-nhiem-sac-the"],
+    "difficulty": 2,
+    "prompt": "Tâm động (eo sơ cấp) trên nhiễm sắc thể đóng vai trò then chốt nào trong quá trình phân chia tế bào?",
+    "knowledge": ["kb-bio-g9-hinh-thai-nst-ki-giua"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Là vị trí liên kết với các sợi tơ của thoi vô sắc, giúp nhiễm sắc thể di chuyển về hai cực của tế bào" },
+        { "id": "opt-b", "label": "Là nơi diễn ra quá trình dịch mã tổng hợp protein cho toàn bộ tế bào" },
+        { "id": "opt-c", "label": "Chứa enzyme hô hấp tế bào cung cấp năng lượng cho chuỗi truyền electron" },
+        { "id": "opt-d", "label": "Bảo vệ hai đầu tận cùng của NST không bị phân giải bởi enzyme nuclease" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Để các NST có thể xếp hàng và tách nhau về 2 cực, chúng cần bám vào chiếc cầu nối di chuyển." },
+      { "level": 2, "text": "Cầu nối đó là thoi vô sắc (thoi phân bào) và điểm bám của nó chính là tâm động." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đặc điểm của tâm động", "body": "Tâm động là điểm thắt hẹp trên NST chứa vùng thể động (kinetochore) cấu tạo từ protein chuyên biệt." },
+      { "kind": "knowledge", "title": "Vai trò trong phân bào", "body": "Các vi ống của thoi phân bào bám vào thể động tại tâm động. Khi thoi phân bào co rút ở kì sau, nó kéo các NST phân li đồng đều về hai cực của tế bào." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tâm động là vị trí đính thoi phân bào giúp NST di chuyển." }
+    ],
+    "finalSolution": "Tâm động là vị trí gắn kết của thoi phân bào, đóng vai trò kéo các nhiễm sắc thể di chuyển về hai cực tế bào trong phân bào.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm tâm động với đầu mút telomere (telomere mới có chức năng bảo vệ hai đầu tận cùng của NST)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b07-q05",
+    "lessonId": "bio-g9-b07",
+    "sgkBaiSo": 42,
+    "skillIds": ["bio9-nhiem-sac-the"],
+    "difficulty": 1,
+    "prompt": "Điểm khác biệt cơ bản giữa bộ nhiễm sắc thể lưỡng bội (2n) và bộ nhiễm sắc thể đơn bội (n) là gì?",
+    "knowledge": ["kb-bio-g9-bo-nst-luong-boi-don-boi"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Bộ lưỡng bội (2n) chứa các cặp NST tương đồng, còn bộ đơn bội (n) chỉ chứa 1 chiếc của mỗi cặp" },
+        { "id": "opt-b", "label": "Bộ lưỡng bội chỉ có trong tinh trùng, còn bộ đơn bội có trong tế bào da và cơ" },
+        { "id": "opt-c", "label": "Bộ lưỡng bội không chứa DNA, còn bộ đơn bội chứa toàn bộ phân tử RNA" },
+        { "id": "opt-d", "label": "Bộ lưỡng bội luôn có số lượng NST lẻ, còn bộ đơn bội có số lượng chẵn" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Trong tế bào sinh dưỡng, mỗi NST đều có một 'bạn đồng hành' tương đồng (1 từ bố, 1 từ mẹ)." },
+      { "level": 2, "text": "Khi giảm phân tạo giao tử, các cặp tương đồng tách đôi nên giao tử chỉ mang bộ đơn bội n." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Khái niệm 2n và n", "body": "2n là bộ NST lưỡng bội đặc trưng của tế bào sinh dưỡng. n là bộ đơn bội đặc trưng của giao tử." },
+      { "kind": "knowledge", "title": "Phân tích cặp tương đồng", "body": "Bộ 2n có các NST tồn tại theo từng cặp tương đồng giống nhau về hình thái và kích thước. Bộ n chỉ mang 1 chiếc của mỗi cặp tương đồng (số lượng giảm một nửa)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Bộ 2n chứa các cặp tương đồng, bộ n chỉ chứa 1 chiếc của mỗi cặp." }
+    ],
+    "finalSolution": "Bộ NST lưỡng bội (2n) chứa các cặp NST tương đồng tồn tại theo từng đôi; bộ đơn bội (n) chỉ chứa 1 chiếc của mỗi cặp tương đồng.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Gán nhầm bộ 2n cho giao tử (tinh trùng/trứng) và n cho tế bào sinh dưỡng." }
+    ]
+  },
+  {
+    "id": "bio-g9-b07-q06",
+    "lessonId": "bio-g9-b07",
+    "sgkBaiSo": 42,
+    "skillIds": ["bio9-nhiem-sac-the"],
+    "difficulty": 2,
+    "prompt": "Ở loài ruồi giấm có bộ nhiễm sắc thể lưỡng bội 2n = 8. Một tế bào sinh dưỡng của ruồi giấm đang ở kì sau của quá trình nguyên phân có bao nhiêu nhiễm sắc thể và bao nhiêu chromatid?",
+    "knowledge": ["kb-bio-g9-tinh-dac-trung-bo-nst", "kb-bio-g9-nguyen-phan-dien-bien"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "16 nhiễm sắc thể đơn và 0 chromatid" },
+        { "id": "opt-b", "label": "8 nhiễm sắc thể kép và 16 chromatid" },
+        { "id": "opt-c", "label": "16 nhiễm sắc thể kép và 32 chromatid" },
+        { "id": "opt-d", "label": "8 nhiễm sắc thể đơn và 0 chromatid" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Tại kì sau nguyên phân, tâm động của các NST kép chẻ đôi làm mỗi chromatid trở thành 1 NST đơn." },
+      { "level": 2, "text": "Khi tâm động đã tách, không còn trạng thái chromatid (số chromatid = 0) và số NST đơn tăng gấp đôi thành 2 × 8 = 16." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định trạng thái NST ở kì sau nguyên phân", "body": "Trước kì sau (ở kì giữa), tế bào có 8 NST kép (16 chromatid). Bước vào kì sau, tâm động chẻ đôi." },
+      { "kind": "compute", "title": "Tính số lượng NST và chromatid", "body": "Khi tâm động tách, 16 chromatid trở thành 16 NST đơn phân li về 2 cực tế bào. Lúc này, số chromatid trong tế bào bằng 0." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tế bào có 16 NST đơn và 0 chromatid." }
+    ],
+    "finalSolution": "Ở kì sau nguyên phân, tâm động chẻ đôi nên tế bào có 16 NST đơn và 0 chromatid.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Quên rằng tâm động đã tách nên vẫn tính 16 chromatid (cạm bẫy kinh điển trong các bài thi)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b07-q07",
+    "lessonId": "bio-g9-b07",
+    "sgkBaiSo": 42,
+    "skillIds": ["bio9-nhiem-sac-the"],
+    "difficulty": 2,
+    "prompt": "Gà có bộ NST lưỡng bội 2n = 78, trong khi con người có bộ NST 2n = 46. Nhận xét nào sau đây là ĐÚNG về mối quan hệ giữa số lượng NST và mức độ tiến hóa của loài?",
+    "knowledge": ["kb-bio-g9-tinh-dac-trung-bo-nst"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Số lượng nhiễm sắc thể không phản ánh mức độ tiến hóa hay tính phức tạp của loài sinh vật" },
+        { "id": "opt-b", "label": "Loài gà tiến hóa hơn loài người vì có số lượng nhiễm sắc thể nhiều hơn" },
+        { "id": "opt-c", "label": "Loài người kém tiến hóa hơn loài gà vì có ít nhiễm sắc thể hơn" },
+        { "id": "opt-d", "label": "Mọi loài sinh vật có số lượng NST trên 50 đều thuộc bậc tiến hóa cao nhất" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Mỗi loài có số lượng NST đặc trưng riêng không tỉ lệ thuận với trí tuệ hay cấu trúc cơ thể." },
+      { "level": 2, "text": "Mức độ tiến hóa phụ thuộc vào hàm lượng thông tin và cấu trúc sắp xếp các gen trên DNA, không phụ thuộc vào số lượng thanh NST." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "So sánh số lượng NST giữa các loài", "body": "Gà (2n = 78), người (2n = 46), tinh tinh (2n = 48), ruồi giấm (2n = 8)." },
+      { "kind": "knowledge", "title": "Nguyên lí sinh học", "body": "Số lượng NST chỉ là đặc trưng phân loại của từng loài sinh vật. Sự tiến hóa phản ánh chất lượng thông tin di truyền (số lượng gen có nghĩa, mức độ biểu hiện và điều hòa gen), không phản ánh qua số lượng NST." },
+      { "kind": "answer", "title": "Kết luận", "body": "Số lượng NST không phản ánh mức độ tiến hóa của loài." }
+    ],
+    "finalSolution": "Số lượng nhiễm sắc thể không phản ánh mức độ tiến hóa hay sự phức tạp của loài sinh vật.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Hiểu nhầm loài nào có nhiều NST hơn thì bậc tiến hóa cao hơn." }
+    ]
+  },
+  {
+    "id": "bio-g9-b07-q08",
+    "lessonId": "bio-g9-b07",
+    "sgkBaiSo": 42,
+    "skillIds": ["bio9-nhiem-sac-the"],
+    "difficulty": 2,
+    "prompt": "Sự cuộn xoắn của phân tử DNA quanh protein histone thành nhiều cấp độ co xoắn trong nhiễm sắc thể mang lại ý nghĩa quan trọng nào?",
+    "knowledge": ["kb-bio-g9-cau-truc-nhiem-sac-the"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Giúp nén chiều dài DNA hàng nghìn lần để xếp gọn trong nhân tế bào hiển vi và bảo vệ DNA khỏi bị đứt gãy khi di chuyển phân bào" },
+        { "id": "opt-b", "label": "Giúp tăng tốc độ tổng hợp protein gấp hàng triệu lần trong tế bào chất" },
+        { "id": "opt-c", "label": "Biến đổi vĩnh viễn cấu trúc DNA thành phân tử RNA mạch đơn dài" },
+        { "id": "opt-d", "label": "Loại bỏ hoàn toàn các liên kết hydro giữa hai mạch của DNA" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Tổng chiều dài phân tử DNA trong 1 tế bào người dài khoảng 2 mét, trong khi nhân tế bào chỉ có đường kính khoảng 5 micromet." },
+      { "level": 2, "text": "Cần một cơ chế đóng gói cực kì tinh vi để thu gọn kích thước và thuận tiện di chuyển khi phân bào." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Bài toán không gian trong nhân tế bào", "body": "Chiều dài DNA rất lớn (hàng mét) so với kích thước siêu nhỏ của nhân tế bào (micromet)." },
+      { "kind": "knowledge", "title": "Ý nghĩa sinh học của đóng gói NST", "body": "Nhờ cuộn xoắn qua các cấp độ (nucleosome → sợi cơ bản → sợi nhiễm sắc → vùng xếp cuộn → chromatid), chiều dài DNA được nén ngắn lại 15.000 - 20.000 lần, giúp xếp vừa vặn vào nhân tế bào và dễ dàng phân li đồng đều mà không bị rối hay đứt gãy." },
+      { "kind": "answer", "title": "Kết luận", "body": "Giúp nén chiều dài xếp gọn trong nhân và bảo vệ DNA khi phân bào." }
+    ],
+    "finalSolution": "Sự co xoắn giúp nén ngắn chiều dài DNA hàng nghìn lần để xếp vừa trong nhân tế bào hiển vi, đồng thời bảo vệ vật chất di truyền phân li thuận lợi trong phân bào.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng sự co xoắn làm tăng tốc độ dịch mã (thực tế khi co xoắn gen không thể dịch mã hay phiên mã được)." }
+    ]
+  }
+]

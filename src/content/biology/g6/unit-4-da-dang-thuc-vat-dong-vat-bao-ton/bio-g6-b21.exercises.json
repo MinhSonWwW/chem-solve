@@ -1,0 +1,304 @@
+[
+  {
+    "id": "bio-g6-b21-q01",
+    "lessonId": "bio-g6-b21",
+    "sgkBaiSo": 36,
+    "skillIds": ["bio-gioi-dong-vat"],
+    "difficulty": 1,
+    "prompt": "Phân loại các loài động vật sau vào hai nhóm lớn: 'Động vật không xương sống' và 'Động vật có xương sống':",
+    "knowledge": ["bio-gioi-dong-vat", "bio-dong-vat-khong-xuong-song", "bio-dong-vat-co-xuong-song"],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "b-invertebrates", "label": "Động vật không xương sống" },
+        { "id": "b-vertebrates", "label": "Động vật có xương sống" }
+      ],
+      "items": [
+        { "id": "it-1", "label": "Con sứa biển", "bucketId": "b-invertebrates" },
+        { "id": "it-2", "label": "Con giun đất", "bucketId": "b-invertebrates" },
+        { "id": "it-3", "label": "Con ốc sên", "bucketId": "b-invertebrates" },
+        { "id": "it-4", "label": "Con tôm sông", "bucketId": "b-invertebrates" },
+        { "id": "it-5", "label": "Con cá chép", "bucketId": "b-vertebrates" },
+        { "id": "it-6", "label": "Con ếch đồng", "bucketId": "b-vertebrates" },
+        { "id": "it-7", "label": "Con chim bồ câu", "bucketId": "b-vertebrates" },
+        { "id": "it-8", "label": "Con thỏ trắng", "bucketId": "b-vertebrates" }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sứa, giun, ốc, tôm không có cột sống bên trong."
+      },
+      {
+        "level": 2,
+        "text": "Cá, ếch, chim, thỏ đều có cột sống nâng đỡ cơ thể."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu bài tập",
+        "body": "Xếp 8 loài động vật vào nhóm có xương sống hoặc không xương sống."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tiêu chí phân chia",
+        "body": "Có cột sống: Cá, Lưỡng cư, Bò sát, Chim, Thú. Không cột sống: Ruột khoang, Giun, Thân mềm, Chân khớp."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất phân loại",
+        "body": "4 động vật không xương sống và 4 động vật có xương sống."
+      }
+    ],
+    "finalSolution": "Không xương sống: Con sứa biển, Con giun đất, Con ốc sên, Con tôm sông. Có xương sống: Con cá chép, Con ếch đồng, Con chim bồ câu, Con thỏ trắng.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng vỏ cứng của con tôm là xương sống (thực chất đó là bộ xương ngoài bằng chitin)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b21-q02",
+    "lessonId": "bio-g6-b21",
+    "sgkBaiSo": 36,
+    "skillIds": ["bio-gioi-dong-vat", "bio-dong-vat-co-xuong-song"],
+    "difficulty": 1,
+    "prompt": "Ghép nối từng lớp động vật có xương sống (cột bên trái) với đúng đặc điểm da, cơ quan vận động và sinh sản tương ứng (cột bên phải):",
+    "knowledge": ["bio-gioi-dong-vat", "bio-dong-vat-co-xuong-song"],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Lớp Cá",
+          "right": "Sống dưới nước, bơi bằng vây, hô hấp bằng mang, đẻ trứng"
+        },
+        {
+          "left": "Lớp Lưỡng cư",
+          "right": "Da trần ẩm ướt, hô hấp bằng da và phổi, đẻ trứng dưới nước"
+        },
+        {
+          "left": "Lớp Bò sát",
+          "right": "Da khô có vảy sừng bao phủ, bò sát đất, đẻ trứng có vỏ dai"
+        },
+        {
+          "left": "Lớp Chim",
+          "right": "Mình phủ lông vũ, chi trước biến thành cánh, đẳng nhiệt, đẻ trứng"
+        },
+        {
+          "left": "Lớp Thú",
+          "right": "Mình phủ lông mao, đẻ con và nuôi con bằng sữa mẹ, đẳng nhiệt"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cá bơi vây thở mang; Lưỡng cư da trần ẩm; Bò sát vảy sừng."
+      },
+      {
+        "level": 2,
+        "text": "Chim có lông vũ và cánh; Thú có lông mao và nuôi con bằng sữa."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "So sánh 5 lớp động vật có xương sống",
+        "body": "Khớp nối từng lớp với đặc điểm sinh học cốt lõi."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu 5 lớp",
+        "body": "Cá: vây mang; Lưỡng cư: da trần ẩm; Bò sát: vảy sừng khô; Chim: lông vũ cánh; Thú: lông mao nuôi con bằng sữa."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất ghép cặp",
+        "body": "Nối đúng 5 cặp lớp động vật."
+      }
+    ],
+    "finalSolution": "Cá: Bơi vây thở mang; Lưỡng cư: Da trần ẩm; Bò sát: Vảy sừng khô; Chim: Lông vũ cánh; Thú: Lông mao nuôi con bằng sữa.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Nhầm lông vũ của loài chim với lông mao của lớp thú."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b21-q03",
+    "lessonId": "bio-g6-b21",
+    "sgkBaiSo": 36,
+    "skillIds": ["bio-gioi-dong-vat", "bio-dong-vat-khong-xuong-song"],
+    "difficulty": 1,
+    "prompt": "Ngành động vật không xương sống nào sau đây có số lượng loài phong phú và đông đúc nhất (chiếm hơn 2/3 tổng số loài động vật trên Trái Đất)?",
+    "knowledge": ["bio-gioi-dong-vat", "bio-dong-vat-khong-xuong-song"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Ngành Chân khớp (như côn trùng, tôm, cua, nhện)" },
+        { "id": "opt-b", "label": "Ngành Ruột khoang (như thủy tức, sứa biển)" },
+        { "id": "opt-c", "label": "Ngành Thân mềm (như ốc sên, trai sông)" },
+        { "id": "opt-d", "label": "Ngành Giun đất" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhóm này có lớp vỏ ngoài bằng kitin và các chân phân đốt cử động linh hoạt."
+      },
+      {
+        "level": 2,
+        "text": "Riêng nhóm côn trùng đã có hơn 1 triệu loài đã được phát hiện."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định nhóm động vật phong phú nhất",
+        "body": "Tìm ngành động vật đông đúc nhất sinh giới."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Thống kê đa dạng loài",
+        "body": "Ngành Chân khớp (Arthropoda) chiếm hơn 1 triệu loài nhờ bộ xương ngoài kitin và khả năng thích nghi siêu việt ở mọi môi trường sống."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn phương án đúng",
+        "body": "Lựa chọn chính xác là ngành chân khớp."
+      }
+    ],
+    "finalSolution": "Ngành Chân khớp là ngành động vật đông đúc và đa dạng nhất trên Trái Đất, chiếm hơn 2/3 tổng số loài động vật hiện nay.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nghĩ rằng loài người hoặc động vật có xương sống chiếm số lượng loài nhiều nhất."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b21-q04",
+    "lessonId": "bio-g6-b21",
+    "sgkBaiSo": 36,
+    "skillIds": ["bio-gioi-dong-vat", "bio-dong-vat-co-xuong-song"],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp 5 lớp động vật có xương sống theo chiều hướng tiến hóa từ đời sống hoàn toàn dưới nước chuyển dần lên cạn:",
+    "knowledge": ["bio-gioi-dong-vat", "bio-dong-vat-co-xuong-song"],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "1. Lớp Cá (sống hoàn toàn dưới nước, bơi bằng vây)",
+        "2. Lớp Lưỡng cư (chuyển tiếp: vừa ở nước vừa ở cạn, da trần ẩm)",
+        "3. Lớp Bò sát (hoàn toàn ở cạn, da khô có vảy sừng)",
+        "4. Lớp Chim (phát triển cánh bay lượn, đẳng nhiệt)",
+        "5. Lớp Thú (tiến hóa nhất, thai sinh nuôi con bằng sữa mẹ)"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bắt đầu bằng Lớp Cá bơi dưới nước."
+      },
+      {
+        "level": 2,
+        "text": "Kết thúc bằng Lớp Thú nuôi con bằng sữa mẹ tiến hóa cao nhất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Trật tự tiến hóa động vật có xương sống",
+        "body": "Sắp xếp 5 lớp theo tiến trình lịch sử phát triển."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cây phát sinh",
+        "body": "Cá → Lưỡng cư → Bò sát → Chim → Thú."
+      },
+      {
+        "kind": "answer",
+        "title": "Thứ tự chính xác",
+        "body": "Từ Lớp Cá (1) đến Lớp Thú (5)."
+      }
+    ],
+    "finalSolution": "Chiều hướng tiến hóa: Lớp Cá → Lớp Lưỡng cư → Lớp Bò sát → Lớp Chim → Lớp Thú.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Xếp bò sát trước lưỡng cư (ếch nhái lưỡng cư lên cạn trước bò sát)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b21-q05",
+    "lessonId": "bio-g6-b21",
+    "sgkBaiSo": 36,
+    "skillIds": ["bio-gioi-dong-vat"],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về giới Động vật:",
+    "knowledge": ["bio-gioi-dong-vat"],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Chim và Thú là các động vật đẳng nhiệt (thân nhiệt luôn giữ ổn định, không phụ thuộc vào nhiệt độ môi trường ngoài).",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Cá voi và cá heo sống dưới nước, bơi bằng vây nên được xếp vào Lớp Cá chứ không phải Lớp Thú.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Động vật không xương sống chiếm khoảng 95% tổng số loài động vật trên Trái Đất.",
+          "correct": true
+        },
+        {
+          "id": "st-4",
+          "text": "Tế bào của động vật có một lớp thành tế bào bằng cellulose dày cứng bao bọc bên ngoài màng sinh chất.",
+          "correct": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cá voi thở bằng phổi, đẻ con và nuôi con bằng sữa mẹ nên thuộc Lớp Thú."
+      },
+      {
+        "level": 2,
+        "text": "Thành tế bào cellulose chỉ có ở tế bào thực vật, không có ở tế bào động vật."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Đánh giá từng câu về phân loại học và sinh lý động vật."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra chi tiết",
+        "body": "1. Chim và thú đẳng nhiệt: Đúng. 2. Cá voi thuộc lớp Cá: Sai (cá voi đẻ con nuôi con bằng sữa mẹ nên thuộc Lớp Thú). 3. Động vật không xương sống 95%: Đúng. 4. Động vật có thành cellulose: Sai (chỉ thực vật có thành cellulose)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Ý 1: Đúng; Ý 2: Sai; Ý 3: Đúng; Ý 4: Sai."
+      }
+    ],
+    "finalSolution": "Phát biểu 1 và 3 đúng. Phát biểu 2 sai (cá voi là thú có vú đẻ con và thở bằng phổi). Phát biểu 4 sai (tế bào động vật không có thành cellulose).",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng cá voi có chữ 'cá' và bơi dưới biển thì bắt buộc phải thuộc Lớp Cá."
+      }
+    ]
+  }
+]

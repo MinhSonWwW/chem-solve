@@ -1,0 +1,372 @@
+[
+  {
+    "id": "bio-g6-b10-q01",
+    "lessonId": "bio-g6-b10",
+    "sgkBaiSo": 25,
+    "skillIds": [
+      "bio-he-thong-phan-loai"
+    ],
+    "difficulty": 1,
+    "prompt": "Hãy sắp xếp 7 bậc phân loại sinh vật theo đúng thứ tự từ bậc cơ bản nhỏ nhất đến bậc lớn nhất:",
+    "knowledge": [
+      "bio-phan-loai-bac"
+    ],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "1. Loài",
+        "2. Chi (giống)",
+        "3. Họ",
+        "4. Bộ",
+        "5. Lớp",
+        "6. Ngành",
+        "7. Giới"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bắt đầu bằng bậc phân loại cơ sở nhỏ nhất là Loài."
+      },
+      {
+        "level": 2,
+        "text": "Kết thúc bằng bậc phân loại lớn nhất và bao quát toàn bộ là Giới."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu bài toán",
+        "body": "Xếp 7 bậc phân loại của sinh giới theo trật tự tôn ti chuẩn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Trật tự 7 bậc chuẩn SGK",
+        "body": "Loài → Chi → Họ → Bộ → Lớp → Ngành → Giới."
+      },
+      {
+        "kind": "answer",
+        "title": "Thứ tự chính xác",
+        "body": "Loài (1) đến Giới (7)."
+      }
+    ],
+    "finalSolution": "Thứ tự 7 bậc từ nhỏ đến lớn: Loài → Chi → Họ → Bộ → Lớp → Ngành → Giới.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm lẫn trật tự giữa Bộ và Lớp (Lớp lớn hơn Bộ)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b10-q02",
+    "lessonId": "bio-g6-b10",
+    "sgkBaiSo": 25,
+    "skillIds": [
+      "bio-he-thong-phan-loai"
+    ],
+    "difficulty": 2,
+    "prompt": "Phân loại các sinh vật sau vào đúng 5 giới sinh vật trong hệ thống phân loại của Whittaker:",
+    "knowledge": [
+      "bio-he-thong-5-gioi"
+    ],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        {
+          "id": "b-monera",
+          "label": "Giới Khởi sinh (Monera)"
+        },
+        {
+          "id": "b-protista",
+          "label": "Giới Nguyên sinh (Protista)"
+        },
+        {
+          "id": "b-fungi",
+          "label": "Giới Nấm (Fungi)"
+        },
+        {
+          "id": "b-plantae",
+          "label": "Giới Thực vật (Plantae)"
+        },
+        {
+          "id": "b-animalia",
+          "label": "Giới Động vật (Animalia)"
+        }
+      ],
+      "items": [
+        {
+          "id": "it-1",
+          "label": "Vi khuẩn E. coli",
+          "bucketId": "b-monera"
+        },
+        {
+          "id": "it-2",
+          "label": "Trùng roi xanh",
+          "bucketId": "b-protista"
+        },
+        {
+          "id": "it-3",
+          "label": "Nấm rơm",
+          "bucketId": "b-fungi"
+        },
+        {
+          "id": "it-4",
+          "label": "Cây hoa sen",
+          "bucketId": "b-plantae"
+        },
+        {
+          "id": "it-5",
+          "label": "Con chim sẻ",
+          "bucketId": "b-animalia"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Vi khuẩn thuộc giới Khởi sinh; trùng roi thuộc giới Nguyên sinh."
+      },
+      {
+        "level": 2,
+        "text": "Cây sen quang hợp thuộc Thực vật; chim sẻ di chuyển thuộc Động vật."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân loại 5 giới sinh vật",
+        "body": "Xếp 5 loài tiêu biểu vào 5 giới của sinh giới."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc trưng từng giới",
+        "body": "E. coli: Khởi sinh (nhân sơ). Trùng roi: Nguyên sinh (nhân thực đơn bào). Nấm rơm: Nấm. Hoa sen: Thực vật. Chim sẻ: Động vật."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất phân loại",
+        "body": "Mỗi giới chứa đúng 1 đại diện tương ứng."
+      }
+    ],
+    "finalSolution": "Khởi sinh: Vi khuẩn E. coli; Nguyên sinh: Trùng roi xanh; Nấm: Nấm rơm; Thực vật: Cây hoa sen; Động vật: Con chim sẻ.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Xếp nấm rơm vào giới Thực vật vì thấy nấm mọc dưới đất giống cây cỏ."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b10-q03",
+    "lessonId": "bio-g6-b10",
+    "sgkBaiSo": 25,
+    "skillIds": [
+      "bio-he-thong-phan-loai"
+    ],
+    "difficulty": 1,
+    "prompt": "Theo quy tắc gọi tên khoa học quốc tế, tên của loài người 'Homo sapiens' bao gồm hai thành phần nào sau đây?",
+    "knowledge": [
+      "bio-ten-khoa-hoc"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Từ thứ nhất 'Homo' là tên Chi (viết hoa) và từ thứ hai 'sapiens' là tên Loài (viết thường)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Từ thứ nhất là tên Giới và từ thứ hai là tên Bộ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Từ thứ nhất là tên Quốc gia và từ thứ hai là tên Nhà khoa học"
+        },
+        {
+          "id": "opt-d",
+          "label": "Từ thứ nhất là tên Họ và từ thứ hai là tên Lớp"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Quy tắc nhị danh đặt tên kép gồm: Tên Chi + Tên Loài."
+      },
+      {
+        "level": 2,
+        "text": "Chữ cái đầu của Chi viết hoa, tên loài viết thường và in nghiêng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quy tắc gọi tên khoa học",
+        "body": "Giải mã ý nghĩa 2 từ trong tên khoa học 'Homo sapiens'."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Nguyên tắc nhị danh Linnaeus",
+        "body": "Tên khoa học loài gồm 2 từ tiếng Latinh: Tên Chi viết trước viết hoa chữ cái đầu, tiếp theo là tên Loài viết thường."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án đúng",
+        "body": "Lựa chọn chính xác là quy chuẩn đặt tên chính xác."
+      }
+    ],
+    "finalSolution": "Trong tên khoa học Homo sapiens: 'Homo' là tên Chi (viết hoa chữ đầu) và 'sapiens' là tên Loài (viết thường toàn bộ).",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nghĩ rằng từ thứ nhất là tên Giới hoặc tên Họ."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b10-q04",
+    "lessonId": "bio-g6-b10",
+    "sgkBaiSo": 25,
+    "skillIds": [
+      "bio-he-thong-phan-loai"
+    ],
+    "difficulty": 1,
+    "prompt": "Bậc phân loại lớn nhất và bao quát toàn bộ các ngành sinh vật trong sinh giới là gì?",
+    "knowledge": [
+      "bio-phan-loai-bac"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Lớp (Class)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bộ (Order)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Giới (Kingdom)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Loài (Species)"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đây là bậc phân loại cao nhất gồm 5 giới lớn của Whittaker."
+      },
+      {
+        "level": 2,
+        "text": "Các ngành tập hợp lại thành Giới."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định bậc phân loại cao nhất",
+        "body": "Tìm bậc phân loại có phạm vi lớn nhất trong 7 bậc."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hệ thống cấp bậc",
+        "body": "Loài là nhỏ nhất, Giới là lớn nhất bao trùm toàn bộ các ngành."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn phương án đúng",
+        "body": "Giới là bậc phân loại lớn nhất."
+      }
+    ],
+    "finalSolution": "Giới (Kingdom) là bậc phân loại lớn nhất và bao quát nhất trong hệ thống 7 bậc phân loại sinh vật.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Nhầm lẫn giữa Ngành và Giới (Giới lớn hơn Ngành)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b10-q05",
+    "lessonId": "bio-g6-b10",
+    "sgkBaiSo": 25,
+    "skillIds": [
+      "bio-he-thong-phan-loai"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai cho mỗi nhận định sau đây về phân loại sinh vật:",
+    "knowledge": [
+      "bio-phan-loai-bac",
+      "bio-he-thong-5-gioi",
+      "bio-ten-khoa-hoc"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Bậc phân loại càng nhỏ thì các sinh vật trong bậc đó càng có nhiều đặc điểm giống nhau.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Giới Nấm có khả năng tự quang hợp chế tạo chất hữu cơ giống hệt giới Thực vật.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Tên khoa học của loài được viết bằng tiếng Latinh và in nghiêng để thống nhất trên toàn thế giới.",
+          "correct": true
+        },
+        {
+          "id": "st-4",
+          "text": "Các sinh vật thuộc giới Khởi sinh đã có nhân tế bào hoàn chỉnh với màng nhân bao bọc.",
+          "correct": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nấm không có chất diệp lục nên không thể quang hợp mà phải sống dị dưỡng."
+      },
+      {
+        "level": 2,
+        "text": "Giới Khởi sinh (vi khuẩn) là sinh vật nhân sơ, chưa có màng nhân."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Đánh giá từng câu theo chuẩn kiến thức Bài 25 SGK KHTN 6."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra chi tiết",
+        "body": "1. Bậc nhỏ tương đồng cao: Đúng. 2. Nấm quang hợp được: Sai (nấm dị dưỡng). 3. Tên khoa học tiếng Latin in nghiêng: Đúng. 4. Khởi sinh có màng nhân: Sai (nhân sơ)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Ý 1: Đúng; Ý 2: Sai; Ý 3: Đúng; Ý 4: Sai."
+      }
+    ],
+    "finalSolution": "Phát biểu 1 và 3 đúng. Phát biểu 2 sai (nấm là sinh vật dị dưỡng không có diệp lục). Phát biểu 4 sai (giới Khởi sinh gồm các vi khuẩn nhân sơ chưa có màng nhân).",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Tưởng rằng nấm có màu trắng hoặc nâu nên quang hợp được như thực vật."
+      }
+    ]
+  }
+]

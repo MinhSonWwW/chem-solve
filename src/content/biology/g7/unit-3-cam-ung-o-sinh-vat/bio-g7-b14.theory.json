@@ -1,0 +1,72 @@
+{
+  "lessonId": "bio-g7-b14",
+  "nodeId": "bio-g7-b14-theory",
+  "title": "Lý thuyết: Vận dụng hiện tượng cảm ứng ở sinh vật vào thực tiễn",
+  "subtitle": "Bài 34 SGK KHTN 7 Kết nối tri thức: Ứng dụng cảm ứng trong trồng trọt, chăn nuôi, huấn luyện động vật và xây dựng nếp sống tốt",
+  "sgkBaiSo": 34,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Trồng trọt",
+      "badgeColor": "cyan",
+      "title": "Vận dụng cảm ứng ở thực vật trong nông nghiệp",
+      "content": "Con người ứng dụng các tính hướng động của cây xanh để tăng năng suất và chất lượng nông sản:",
+      "bulletPoints": [
+        "Ứng dụng tính hướng sáng: Chiếu đèn sợi đốt/LED ban đêm kích thích thanh long và hoa cúc ra hoa trái vụ để bán dịp Tết; trồng xen canh cây ưa sáng tầng trên với cây ưa bóng tầng dưới; tỉa bớt cành la để tán cây hứng đều ánh sáng.",
+        "Ứng dụng tính hướng tiếp xúc: Làm giàn bằng cọc tre, lưới cước cho cây thân leo (bầu, bí, mướp, dưa lưới, chanh leo, hồ tiêu) giúp ngọn cây vươn tỏa đều, đón nắng tốt và hạn chế sâu bệnh bám từ đất.",
+        "Ứng dụng tính hướng nước và hướng hóa: Đào rãnh bón phân và tưới nước quanh tán lá kích thích rễ cây vươn rộng và ăn sâu vào lòng đất; cày xới đất tơi xốp giúp rễ hút nước và khoáng dễ dàng."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Chăn nuôi & Bảo vệ mùa màng",
+      "badgeColor": "emerald",
+      "title": "Vận dụng tập tính động vật trong sản xuất",
+      "content": "Ứng dụng các tập tính bẩm sinh và tập tính học được để nâng cao hiệu quả chăn nuôi và phòng trừ sâu bệnh:",
+      "bulletPoints": [
+        "Huấn luyện phản xạ có điều kiện: Gõ kẻng hoặc bấm chuông kết hợp rải thức ăn giúp đàn cá nuôi ngoi lên ăn đồng loạt; huýt sáo hoặc gọi tiếng quen thuộc để đàn lợn, gà tự giác về chuồng khi chiều tối.",
+        "Huấn luyện nghiệp vụ: Dạy chó chăn cừu, chó nghiệp vụ ngửi phân biệt mùi ma túy, chất nổ và cứu nạn tìm kiếm người trong các vụ sạt lở.",
+        "Bảo vệ mùa màng: Đặt bẫy đèn bắt các loài bướm đêm và côn trùng hại lúa (do côn trùng có tính hướng sáng bẩm sinh); làm bù nhìn rơm hoặc máy phát âm thanh giả tiếng chim săn mồi để xua đuổi chim phá hoại nương ngô."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Đời sống con người",
+      "badgeColor": "amber",
+      "title": "Hình thành thói quen tốt và từ bỏ thói quen xấu",
+      "content": "Ở con người, các thói quen hàng ngày thực chất là các tập tính học được có thể chủ động rèn luyện:",
+      "bulletPoints": [
+        "Thói quen tốt cần hình thành: Đi ngủ đúng giờ và dậy sớm tập thể dục, rửa tay bằng xà phòng trước khi ăn và sau khi đi vệ sinh, đọc sách mỗi ngày, nghiêm chỉnh chấp hành luật giao thông.",
+        "Thói quen xấu cần loại bỏ: Thức khuya chơi game, lướt điện thoại khi đang học bài, ăn vặt đồ chiên rán vỉa hè, lười vận động thể chất.",
+        "Nguyên tắc rèn luyện: Muốn tạo thói quen tốt phải kiên trì lặp đi lặp lại hành động nhiều lần trong thời gian đủ dài để hình thành phản xạ thần kinh bền vững."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Tại các nhà vườn trồng thanh long ở Bình Thuận, việc thắp đèn điện vào ban đêm trong các tháng mùa đông có mục đích nông học gì?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Ứng dụng tính hướng sáng để kích thích thanh long ra hoa và kết quả trái vụ",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Để sưởi ấm cho rễ cây thanh long không bị chết cóng vì tuyết",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Để xua đuổi hoàn toàn các loài ong bướm không đến thụ phấn",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Để cây thanh long chuyển sang hô hấp yếm khí tạo hương thơm",
+        "correct": false
+      }
+    ],
+    "explanation": "Cây thanh long là cây ngày dài, việc thắp đèn nhân tạo ban đêm trong mùa đông kéo dài thời gian nhận sáng kích thích cây phân hóa mầm hoa nở hoa trái vụ, mang lại hiệu quả kinh tế cao."
+  }
+}

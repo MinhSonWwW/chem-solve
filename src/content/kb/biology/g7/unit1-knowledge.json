@@ -1,0 +1,147 @@
+[
+  {
+    "id": "kb-bio-g7-trao-doi-chat-khai-niem",
+    "title": "Khái niệm trao đổi chất",
+    "description": "Tập hợp các phản ứng biến đổi hóa học diễn ra bên trong tế bào của sinh vật và quá trình trao đổi các chất giữa cơ thể với môi trường ngoài."
+  },
+  {
+    "id": "kb-bio-g7-chuyen-hoa-nang-luong",
+    "title": "Chuyển hóa năng lượng trong cơ thể",
+    "description": "Sự biến đổi năng lượng từ dạng này sang dạng khác (quang năng thành hóa năng trong quang hợp; hóa năng phân giải thành ATP, cơ năng và nhiệt năng)."
+  },
+  {
+    "id": "kb-bio-g7-moi-quan-he-tdc-nl",
+    "title": "Mối quan hệ giữa trao đổi chất và năng lượng",
+    "description": "Trao đổi chất và chuyển hóa năng lượng luôn diễn ra đồng thời, thống nhất mật thiết và không thể tách rời nhau trong mọi tế bào sống."
+  },
+  {
+    "id": "kb-bio-g7-vai-tro-trao-doi-chat",
+    "title": "Vai trò của trao đổi chất đối với sự sống",
+    "description": "Cung cấp vật chất xây dựng, sửa chữa tế bào và cung cấp năng lượng ATP cho sinh trưởng, phát triển, cảm ứng và sinh sản."
+  },
+  {
+    "id": "kb-bio-g7-quang-hop-khai-niem",
+    "title": "Khái niệm và phương trình quang hợp",
+    "description": "Nước + Carbon dioxide —(Ánh sáng / Diệp lục)→ Glucose + Oxygen. Diễn ra ở lục lạp nhờ chất diệp lục hấp thụ quang năng."
+  },
+  {
+    "id": "kb-bio-g7-cau-tao-la-quang-hop",
+    "title": "Đặc điểm của lá phù hợp quang hợp",
+    "description": "Phiến lá bản dẹt rộng hứng sáng; gân lá chứa mạch gỗ và mạch rây; khí khổng điều tiết thoát hơi nước và trao đổi khí CO2/O2; thịt lá giàu lục lạp."
+  },
+  {
+    "id": "kb-bio-g7-y-nghia-quang-hop",
+    "title": "Ý nghĩa sinh thái của quang hợp",
+    "description": "Cung cấp thức ăn hữu cơ cho chuỗi thức ăn, giải phóng khí O2 trong lành, điều hòa khí hậu và lọc sạch bụi bẩn môi trường."
+  },
+  {
+    "id": "kb-bio-g7-yeu-to-anh-sang",
+    "title": "Ảnh hưởng của ánh sáng đến quang hợp",
+    "description": "Cường độ ánh sáng tăng thì quang hợp tăng tới điểm bão hòa; phân biệt cây ưa sáng (lúa, ngô) và cây ưa bóng (lá lốt, phong lan)."
+  },
+  {
+    "id": "kb-bio-g7-yeu-to-nhiet-do",
+    "title": "Ảnh hưởng của nhiệt độ đến quang hợp",
+    "description": "Khoảng nhiệt độ tối ưu từ 25°C đến 35°C; nhiệt độ quá thấp (<10°C) hoặc quá cao (>40°C) làm enzym quang hợp bị giảm hoặc mất hoạt tính."
+  },
+  {
+    "id": "kb-bio-g7-yeu-to-co2",
+    "title": "Ảnh hưởng của nồng độ CO2 đến quang hợp",
+    "description": "Nồng độ CO2 tự nhiên khoảng 0,03%; tăng nồng độ CO2 tới 0,2% giúp quang hợp tăng nhưng quá cao sẽ gây ngộ độc tế bào lá."
+  },
+  {
+    "id": "kb-bio-g7-yeu-to-nuoc",
+    "title": "Ảnh hưởng của nước đến quang hợp",
+    "description": "Nước là nguyên liệu trực tiếp và điều tiết sự đóng mở khí khổng; thiếu nước làm khí khổng đóng, cản trở CO2 vào lá khiến quang hợp giảm mạnh."
+  },
+  {
+    "id": "kb-bio-g7-ung-dung-quang-hop",
+    "title": "Ứng dụng quang hợp trong trồng trọt",
+    "description": "Trồng xen canh tối ưu hóa ánh sáng tầng trên/dưới, gieo trồng đúng mật độ, thắp đèn sợi đốt ban đêm kích thích ra hoa trái vụ."
+  },
+  {
+    "id": "kb-bio-g7-thuc-hanh-tinh-bot",
+    "title": "Thực hành chứng minh tạo thành tinh bột",
+    "description": "Bịt băng giấy đen một phần lá, phơi nắng, đun cách thủy cồn tẩy diệp lục, nhỏ Iodine: phần hứng sáng hóa xanh tím chứng tỏ có tinh bột."
+  },
+  {
+    "id": "kb-bio-g7-thuc-hanh-oxygen",
+    "title": "Thực hành chứng minh giải phóng khí Oxygen",
+    "description": "Cành rong đuôi chó ngoài nắng sủi bọt khí đẩy nước trong ống nghiệm xuống; đưa que đóm tàn đỏ vào miệng ống nghiệm thấy bùng cháy sáng."
+  },
+  {
+    "id": "kb-bio-g7-an-toan-thi-nghiem",
+    "title": "An toàn khi đun cồn tẩy diệp lục",
+    "description": "Cồn 90° dễ bay hơi và dễ bắt lửa nên bắt buộc phải đun cách thủy trong nồi nước sôi, không đun trực tiếp trên ngọn lửa."
+  },
+  {
+    "id": "kb-bio-g7-ket-luan-quang-hop",
+    "title": "Kết luận thực nghiệm quang hợp",
+    "description": "Quá trình quang hợp ở thực vật cần ánh sáng mặt trời để tổng hợp chất hữu cơ (tinh bột) và giải phóng khí oxygen."
+  },
+  {
+    "id": "kb-bio-g7-ho-hap-te-bao-khai-niem",
+    "title": "Khái niệm và phương trình hô hấp tế bào",
+    "description": "Glucose + Oxygen → Carbon dioxide + Nước + Năng lượng (ATP + Nhiệt). Diễn ra trong ty thể nhằm phân giải glucose cung cấp ATP cho tế bào."
+  },
+  {
+    "id": "kb-bio-g7-so-sanh-quang-hop-ho-hap",
+    "title": "So sánh quang hợp và hô hấp tế bào",
+    "description": "Quang hợp tích lũy hóa năng và nhả O2 ở lục lạp; Hô hấp giải phóng ATP và nhả CO2 ở ty thể. Hai quá trình trái ngược nhưng thống nhất."
+  },
+  {
+    "id": "kb-bio-g7-vai-tro-ho-hap",
+    "title": "Vai trò của hô hấp tế bào",
+    "description": "Cung cấp năng lượng ATP cho mọi hoạt động co cơ, dẫn truyền xung thần kinh, phân chia tế bào và tổng hợp các hợp chất sinh học."
+  },
+  {
+    "id": "kb-bio-g7-yeu-to-nuoc-ho-hap",
+    "title": "Ảnh hưởng của nước đến hô hấp hạt",
+    "description": "Hàm lượng nước tỉ lệ thuận với cường độ hô hấp; hạt khô hô hấp yếu giúp giữ mầm sống lâu dài; hạt ẩm hô hấp mạnh phục vụ nảy mầm."
+  },
+  {
+    "id": "kb-bio-g7-muc-dich-bao-quan",
+    "title": "Mục đích bảo quản nông sản",
+    "description": "Kìm hãm hô hấp tế bào xuống mức tối thiểu nhằm hạn chế tiêu hao chất hữu cơ, tránh sinh nhiệt ẩm và ngăn ngừa nấm mốc."
+  },
+  {
+    "id": "kb-bio-g7-ho-hap-sinh-nhiet",
+    "title": "Hô hấp giải phóng nhiệt năng",
+    "description": "Một phần năng lượng từ phân giải glucose tỏa ra dưới dạng nhiệt năng, làm tăng nhiệt độ xung quanh đống hạt ẩm nảy mầm."
+  },
+  {
+    "id": "kb-bio-g7-phuong-phap-bao-quan",
+    "title": "Các phương pháp bảo quản nông sản",
+    "description": "Bảo quản khô (sấy lúa ngô dưới 13% ẩm), bảo quản lạnh (kho mát 1-5°C cho rau quả), bảo quản hút chân không hoặc tăng nồng độ khí CO2."
+  },
+  {
+    "id": "kb-bio-g7-yeu-to-nhiet-do-ho-hap",
+    "title": "Ảnh hưởng của nhiệt độ đến hô hấp tế bào",
+    "description": "Nhiệt độ tối ưu khoảng 30°C - 35°C; nhiệt độ mát kìm hãm hô hấp; nhiệt độ âm (<0°C) làm tinh thể đá làm vỡ màng tế bào rau củ."
+  },
+  {
+    "id": "kb-bio-g7-yeu-to-co2-ho-hap",
+    "title": "Ảnh hưởng của nồng độ CO2 đến hô hấp",
+    "description": "Khí CO2 là sản phẩm của hô hấp; nồng độ CO2 tăng cao (>3% - 5%) sẽ ức chế hoạt tính của các enzym hô hấp phân giải."
+  },
+  {
+    "id": "kb-bio-g7-thuc-hanh-co2",
+    "title": "Thực hành nhận biết khí CO2 từ hạt nảy mầm",
+    "description": "Khí từ bình hạt nảy mầm dẫn qua ống nghiệm nước vôi trong làm dung dịch vẩn đục trắng do phản ứng tạo kết tủa CaCO3."
+  },
+  {
+    "id": "kb-bio-g7-thuc-hanh-sinh-nhiet",
+    "title": "Thực hành chứng minh hô hấp sinh nhiệt",
+    "description": "Cắm nhiệt kế vào bình hạt nảy mầm thấy nhiệt độ tăng cao 2-5°C so với bình hạt luộc chín đối chứng (tế bào chết không sinh nhiệt)."
+  },
+  {
+    "id": "kb-bio-g7-doi-tuong-thi-nghiem",
+    "title": "Đối tượng hạt nảy mầm trong thí nghiệm",
+    "description": "Hạt nảy mầm hô hấp rất mạnh và không chứa diệp lục nên không bị quá trình quang hợp làm sai lệch kết quả thí nghiệm."
+  },
+  {
+    "id": "kb-bio-g7-tong-hop-thuc-hanh-ho-hap",
+    "title": "Tổng kết thực hành hô hấp ở thực vật",
+    "description": "Chuỗi thí nghiệm chứng minh trọn vẹn: Hô hấp tế bào tiêu thụ khí Oxygen, thải ra khí Carbon dioxide và giải phóng năng lượng nhiệt."
+  }
+]

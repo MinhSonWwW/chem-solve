@@ -1,0 +1,75 @@
+{
+  "lessonId": "bio-g7-b02",
+  "nodeId": "bio-g7-b02-theory",
+  "title": "Lý thuyết: Quang hợp ở thực vật",
+  "subtitle": "Bài 22 SGK KHTN 7 Kết nối tri thức: Khái niệm, phương trình chữ, vai trò của lục lạp và cấu tạo lá",
+  "sgkBaiSo": 22,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Khái niệm",
+      "badgeColor": "emerald",
+      "title": "Quang hợp là gì?",
+      "content": "Quang hợp là quá trình lá cây sử dụng nước và khí carbon dioxide nhờ năng lượng ánh sáng do diệp lục hấp thụ để tổng hợp chất hữu cơ (glucose, tinh bột) và giải phóng khí oxygen.",
+      "bulletPoints": [
+        "Nguyên liệu: Nước (hấp thụ từ rễ) và khí Carbon dioxide (lấy từ không khí qua khí khổng).",
+        "Sản phẩm: Chất hữu cơ (Glucose, sau đó chuyển thành tinh bột) và khí Oxygen giải phóng ra khí quyển.",
+        "Điều kiện: Phải có năng lượng ánh sáng (mặt trời hoặc đèn chuyên dụng) và chất diệp lục trong lục lạp."
+      ],
+      "formulaExample": "Nước + Carbon dioxide —(Ánh sáng / Diệp lục)→ Glucose + Oxygen",
+      "callout": "Phương trình chữ của quang hợp là một trong những phương trình nền tảng nhất nuôi dưỡng sự sống!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Bào quan",
+      "badgeColor": "amber",
+      "title": "Lục lạp – Bào quan thực hiện quang hợp",
+      "content": "Ở thực vật, lá là cơ quan quang hợp chủ yếu. Bào quan trực tiếp thực hiện quang hợp bên trong tế bào thịt lá là lục lạp.",
+      "bulletPoints": [
+        "Lục lạp chứa chất diệp lục (chlorophyll) có khả năng hấp thụ năng lượng ánh sáng mặt trời.",
+        "Chất diệp lục phản chiếu ánh sáng màu xanh lục nên khiến lá cây có màu xanh đặc trưng.",
+        "Trong lục lạp diễn ra chuỗi phản ứng chuyển hóa quang năng thành hóa năng tích lũy trong phân tử glucose."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Cấu tạo lá",
+      "badgeColor": "cyan",
+      "title": "Đặc điểm của lá phù hợp với chức năng quang hợp",
+      "content": "Cấu tạo hình thái và giải phẫu của lá thích nghi hoàn hảo cho việc thu nhận ánh sáng và trao đổi khí:",
+      "bulletPoints": [
+        "Phiến lá dạng bản dẹt, rộng: Tăng diện tích tiếp xúc để hấp thụ được tối đa ánh sáng mặt trời.",
+        "Lớp thịt lá: Chứa nhiều tế bào có vô số hạt lục lạp (đặc biệt lớp tế bào mô giậu xếp sát mặt trên).",
+        "Gân lá: Chứa bó mạch dẫn gồm mạch gỗ (đưa nước và muối khoáng từ rễ lên) và mạch rây (chuyển chất hữu cơ đi nuôi cây).",
+        "Khí khổng: Nằm nhiều ở lớp biểu bì dưới của lá, đóng mở nhịp nhàng giúp khí CO2 khuếch tán vào lá và giải phóng O2 ra ngoài."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Sản phẩm của quá trình quang hợp ở thực vật gồm những chất nào sau đây?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Glucose (chất hữu cơ) và khí Oxygen",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Nước và khí Carbon dioxide",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Khí Carbon dioxide và năng lượng ATP",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Chỉ có muối khoáng và nước",
+        "correct": false
+      }
+    ],
+    "explanation": "Trong quang hợp, từ nguyên liệu là nước và CO2, cây xanh sử dụng ánh sáng và diệp lục để tổng hợp nên chất hữu cơ (glucose) và giải phóng khí oxygen."
+  }
+}

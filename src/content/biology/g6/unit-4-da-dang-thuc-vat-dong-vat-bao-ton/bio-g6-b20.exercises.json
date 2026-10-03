@@ -1,0 +1,296 @@
+[
+  {
+    "id": "bio-g6-b20-q01",
+    "lessonId": "bio-g6-b20",
+    "sgkBaiSo": 35,
+    "skillIds": ["bio-thuc-hanh-thuc-vat"],
+    "difficulty": 1,
+    "prompt": "Ghép nối từng mẫu vật thực vật thực hành (cột bên trái) với đúng đặc điểm quan sát giải phẫu nhận diện được bằng kính lúp (cột bên phải):",
+    "knowledge": ["bio-thuc-hanh-thuc-vat"],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Cây rêu tường",
+          "right": "Thân lá nhỏ, rễ giả dạng sợi, túi bào tử có nắp đậy ở ngọn cây"
+        },
+        {
+          "left": "Cây dương xỉ",
+          "right": "Lá non cuộn tròn ở đầu, mặt dưới lá già có các ổ túi bào tử màu nâu"
+        },
+        {
+          "left": "Cành cây thông",
+          "right": "Lá hình kim, nón cái mang các vảy noãn hở chứa hạt có cánh"
+        },
+        {
+          "left": "Cây quả bưởi / hoa hồng",
+          "right": "Có hoa sặc sỡ, bổ đôi quả thấy hạt nằm giấu kín trong múi quả"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Rêu có túi bào tử ở ngọn; dương xỉ có lá non cuộn và ổ bào tử dưới lá."
+      },
+      {
+        "level": 2,
+        "text": "Thông có lá kim và hạt có cánh; cây bưởi có hạt nằm kín trong quả."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu bài tập",
+        "body": "Nối 4 mẫu vật thực hành với đặc điểm hình ảnh giải phẫu."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu từng mẫu vật",
+        "body": "Rêu: rễ giả + túi bào tử ngọn; Dương xỉ: ổ bào tử dưới lá + lá non cuộn; Thông: lá kim + nón hạt hở; Bưởi: hoa + hạt giấu kín trong quả."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất ghép cặp",
+        "body": "Khớp chính xác 4 mẫu vật."
+      }
+    ],
+    "finalSolution": "Cây rêu: Rễ giả, túi bào tử ở ngọn; Cây dương xỉ: Lá non cuộn, ổ túi bào tử dưới lá; Cành thông: Lá kim, hạt có cánh trên nón; Cây bưởi: Hoa quả, hạt nằm kín trong quả.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm ổ túi bào tử ở mặt dưới lá dương xỉ với các vết sâu bọ cắn phá lá."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b20-q02",
+    "lessonId": "bio-g6-b20",
+    "sgkBaiSo": 35,
+    "skillIds": ["bio-thuc-hanh-thuc-vat"],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp 3 bước phân loại 4 mẫu thực vật (Rêu, Dương xỉ, Thông, Bưởi) theo đúng quy trình của khóa lưỡng phân:",
+    "knowledge": ["bio-thuc-hanh-thuc-vat", "bio-khoa-luong-phan"],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Bước 1: Dựa vào sự có mặt của mạch dẫn để tách Cây rêu (chưa có mạch dẫn)",
+        "Bước 2: Trong nhóm có mạch, dựa vào cơ quan sinh sản để tách Cây dương xỉ (sinh sản bằng bào tử)",
+        "Bước 3: Trong nhóm sinh sản bằng hạt, dựa vào vị trí hạt để tách Cây thông (hạt trần) và Cây bưởi (hạt kín)"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bắt đầu bằng việc phân biệt rêu chưa có mạch dẫn với 3 nhóm còn lại."
+      },
+      {
+        "level": 2,
+        "text": "Bước cuối cùng là phân biệt hạt lộ trên nón (thông) với hạt kín trong quả (bưởi)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xây dựng khóa lưỡng phân cho thực vật",
+        "body": "Sắp xếp 3 bước phân nhánh từ lớn đến nhỏ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tiêu chí phân nhánh",
+        "body": "Mạch dẫn (tách Rêu) → Sinh sản bào tử hay hạt (tách Dương xỉ) → Hạt trần hay hạt kín (tách Thông và Bưởi)."
+      },
+      {
+        "kind": "answer",
+        "title": "Thứ tự chính xác",
+        "body": "Bước 1 đến Bước 3 theo trình tự phân loại chuẩn SGK."
+      }
+    ],
+    "finalSolution": "Trình tự phân loại: Tách Rêu (chưa có mạch) → Tách Dương xỉ (sinh sản bằng bào tử) → Tách Thông (hạt trần) và Bưởi (hạt kín).",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Dựa vào hoa để tách cây bưởi ngay từ bước đầu tiên khi chưa phân loại mạch dẫn."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b20-q03",
+    "lessonId": "bio-g6-b20",
+    "sgkBaiSo": 35,
+    "skillIds": ["bio-thuc-hanh-thuc-vat"],
+    "difficulty": 1,
+    "prompt": "Khi bóc tách các vảy (lá noãn) của nón thông cái già, người ta thấy hạt của cây thông có đặc điểm cấu tạo nào giúp nó phát tán rộng rãi?",
+    "knowledge": ["bio-thuc-hanh-thuc-vat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Hạt có gắn một màng cánh mỏng dẹt giúp hạt bay lượn theo gió đi xa" },
+        { "id": "opt-b", "label": "Hạt có nhiều gai móc nhọn hoắt bám chặt vào lông thú" },
+        { "id": "opt-c", "label": "Hạt có nhiều vây bơi giúp bơi lội dưới nước" },
+        { "id": "opt-d", "label": "Hạt chứa túi khí giúp hạt phát sáng trong đêm" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cây thông mọc trên các đồi núi cao lộng gió."
+      },
+      {
+        "level": 2,
+        "text": "Mỗi hạt thông có một cánh mỏng hình quạt như cánh quạt máy bay trực thăng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cấu tạo thích nghi của hạt thông",
+        "body": "Tìm đặc điểm giúp hạt thông phát tán trong tự nhiên."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quan sát tiêu bản hạt thông",
+        "body": "Hạt thông mang một cánh mỏng dẹt màu nâu nhạt. Khi rơi khỏi nón, gió thổi cánh quay tròn giúp hạt bay xa khỏi cây mẹ."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn phương án đúng",
+        "body": "Lựa chọn chính xác là cấu trúc chính xác."
+      }
+    ],
+    "finalSolution": "Hạt thông có một cánh mỏng dẹt gắn liền, giúp hạt quay tròn và bay lượn theo luồng gió để phát tán đi rất xa.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nghĩ rằng hạt thông được chim ăn thịt quả rồi thải hạt ra ngoài (thông không có thịt quả)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b20-q04",
+    "lessonId": "bio-g6-b20",
+    "sgkBaiSo": 35,
+    "skillIds": ["bio-thuc-hanh-thuc-vat"],
+    "difficulty": 2,
+    "prompt": "Phân loại các đặc điểm sau đây vào hai nhóm: 'Đặc điểm của Cây rêu tường' và 'Đặc điểm của Cây dương xỉ':",
+    "knowledge": ["bio-thuc-hanh-thuc-vat"],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "b-moss", "label": "Đặc điểm của Cây rêu tường" },
+        { "id": "b-fern", "label": "Đặc điểm của Cây dương xỉ" }
+      ],
+      "items": [
+        { "id": "it-1", "label": "Chưa có mạch dẫn thực sự", "bucketId": "b-moss" },
+        { "id": "it-2", "label": "Dưới gốc chỉ có các sợi rễ giả", "bucketId": "b-moss" },
+        { "id": "it-3", "label": "Túi bào tử hình bầu có nắp mở ở ngọn cây", "bucketId": "b-moss" },
+        { "id": "it-4", "label": "Đã có mạch dẫn chính thức chạy dọc thân lá", "bucketId": "b-fern" },
+        { "id": "it-5", "label": "Lá non có đầu cuộn tròn hình đầu gậy", "bucketId": "b-fern" },
+        { "id": "it-6", "label": "Các ổ túi bào tử màu nâu xếp hàng ở mặt dưới lá già", "bucketId": "b-fern" }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Rêu chưa có mạch và có rễ giả; dương xỉ có mạch và rễ thật."
+      },
+      {
+        "level": 2,
+        "text": "Túi bào tử ở ngọn là của rêu; ổ bào tử mặt dưới lá là của dương xỉ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân biệt Rêu và Dương xỉ",
+        "body": "Xếp 6 đặc điểm vào đúng nhóm cây."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu giải phẫu",
+        "body": "Rêu: Chưa mạch, rễ giả, túi bào tử ở ngọn. Dương xỉ: Có mạch, lá non cuộn, ổ bào tử dưới lá."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất phân loại",
+        "body": "3 đặc điểm của rêu và 3 đặc điểm của dương xỉ."
+      }
+    ],
+    "finalSolution": "Cây rêu: Chưa có mạch dẫn, Rễ giả, Túi bào tử ở ngọn. Cây dương xỉ: Đã có mạch dẫn, Lá non cuộn tròn, Ổ túi bào tử dưới lá già.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Nghĩ rằng cây rêu cũng đã có mạch dẫn hoàn thiện như cây dương xỉ."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b20-q05",
+    "lessonId": "bio-g6-b20",
+    "sgkBaiSo": 35,
+    "skillIds": ["bio-thuc-hanh-thuc-vat"],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về thực hành phân biệt các nhóm thực vật:",
+    "knowledge": ["bio-thuc-hanh-thuc-vat"],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Dùng kính lúp quan sát lá non của dương xỉ sẽ thấy phần đầu ngọn của nó luôn cuộn tròn lại.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Cắt đôi quả cam, quả bưởi sẽ thấy hạt nằm lộ thiên ở bên ngoài vỏ quả để đón gió.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Rễ của cây rêu tường chỉ là các sợi rễ giả có chức năng bám vào giá thể chứ chưa có mạch dẫn nhựa.",
+          "correct": true
+        },
+        {
+          "id": "st-4",
+          "text": "Nón cái của cây thông chính là một bông hoa khổng lồ có cánh hoa màu tím rực rỡ.",
+          "correct": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Quả bưởi có hạt nằm kín bên trong các múi tép bưởi (thực vật Hạt kín)."
+      },
+      {
+        "level": 2,
+        "text": "Nón thông không phải là hoa, không có cánh hoa."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Đánh giá từng câu về mẫu vật quan sát thực hành."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra chi tiết",
+        "body": "1. Dương xỉ lá non cuộn: Đúng. 2. Hạt bưởi lộ thiên: Sai (hạt nằm kín trong quả). 3. Rêu rễ giả chưa có mạch: Đúng. 4. Nón thông là hoa có cánh: Sai (nón hóa gỗ, chưa có hoa)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Ý 1: Đúng; Ý 2: Sai; Ý 3: Đúng; Ý 4: Sai."
+      }
+    ],
+    "finalSolution": "Phát biểu 1 và 3 đúng. Phát biểu 2 sai (hạt bưởi nằm kín bên trong quả). Phát biểu 4 sai (nón thông là cơ quan sinh sản của hạt trần gồm các vảy gỗ, không phải hoa có cánh).",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nhầm tưởng nón thông là hoa thông."
+      }
+    ]
+  }
+]

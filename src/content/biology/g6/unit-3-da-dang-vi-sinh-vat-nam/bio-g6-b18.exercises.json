@@ -1,0 +1,297 @@
+[
+  {
+    "id": "bio-g6-b18-q01",
+    "lessonId": "bio-g6-b18",
+    "sgkBaiSo": 33,
+    "skillIds": ["bio-thuc-hanh-nam"],
+    "difficulty": 1,
+    "prompt": "Ghép nối từng bộ phận của cây nấm rơm (cột bên trái) với đúng đặc điểm hoặc chức năng của nó (cột bên phải):",
+    "knowledge": ["bio-thuc-hanh-nam", "bio-gioi-nam"],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Mũ nấm",
+          "right": "Phần trên cùng xòe rộng như chiếc ô bảo vệ các cấu trúc bên dưới"
+        },
+        {
+          "left": "Phiến nấm",
+          "right": "Nằm ở mặt dưới mũ nấm, chứa và phát tán hàng triệu bào tử nấm"
+        },
+        {
+          "left": "Cuống nấm",
+          "right": "Trụ thẳng đứng nâng đỡ mũ nấm vươn cao khỏi giá thể"
+        },
+        {
+          "left": "Bao gốc nấm",
+          "right": "Phần màng dày phình to ở dưới đáy gốc nấm bám vào rơm rạ mục"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mũ nấm xòe trên cùng; phiến nấm ở mặt dưới mũ mang bào tử sinh sản."
+      },
+      {
+        "level": 2,
+        "text": "Cuống nấm nâng đỡ mũ nấm; bao gốc nấm nằm dưới đáy cùng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu bài tập",
+        "body": "Nối 4 bộ phận của cây nấm rơm với cấu trúc và vai trò."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu giải phẫu nấm rơm",
+        "body": "Mũ: chiếc ô phía trên; Phiến: dưới mũ chứa bào tử; Cuống: trụ nâng đỡ; Bao gốc: đáy nấm bám giá thể."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất ghép cặp",
+        "body": "Khớp chính xác 4 bộ phận giải phẫu."
+      }
+    ],
+    "finalSolution": "Mũ nấm: Phần trên xòe như chiếc ô; Phiến nấm: Dưới mũ chứa bào tử; Cuống nấm: Trụ nâng đỡ; Bao gốc nấm: Đáy phình to bám giá thể.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm chức năng của phiến nấm (chứa bào tử) với chức năng quang hợp của lá cây."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b18-q02",
+    "lessonId": "bio-g6-b18",
+    "sgkBaiSo": 33,
+    "skillIds": ["bio-thuc-hanh-nam"],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp các thao tác sau theo đúng trình tự chuẩn khi làm tiêu bản quan sát sợi nấm mốc bánh mì dưới kính hiển vi:",
+    "knowledge": ["bio-thuc-hanh-nam"],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Chuẩn bị mẫu bánh mì đã mọc mốc trắng và đen đặt trên đĩa petri",
+        "Dùng kim mũi mác nhẹ nhàng gạt lấy một lượng rất nhỏ sợi nấm mốc",
+        "Đặt sợi mốc vào giọt nước cất trên lam kính rồi dùng kim dầm nhẹ cho tơi ra",
+        "Đậy lamen cẩn thận, thấm nước thừa rồi đưa lên kính hiển vi quan sát"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Phải có mẫu bánh mì mọc mốc trước khi lấy mẫu."
+      },
+      {
+        "level": 2,
+        "text": "Dầm tơi sợi nấm trong giọt nước trước khi đậy lamen để các sợi không bị vón cục dày cộm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quy trình làm tiêu bản sợi nấm mốc",
+        "body": "Xác định 4 bước chuẩn thao tác hiển vi."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Thao tác phòng thí nghiệm",
+        "body": "Chuẩn bị mẫu bánh mì mốc → Gạt lấy ít sợi nấm → Đặt vào giọt nước dầm tơi → Đậy lamen và quan sát."
+      },
+      {
+        "kind": "answer",
+        "title": "Thứ tự chính xác",
+        "body": "Sắp xếp theo thứ tự chuẩn SGK KHTN 6."
+      }
+    ],
+    "finalSolution": "Trình tự chuẩn: Chuẩn bị bánh mì mốc → Gạt lấy ít sợi mốc → Đặt vào giọt nước dầm tơi sợi → Đậy lamen và quan sát.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Lấy quá nhiều sợi mốc vón cục dày khiến ánh sáng kính hiển vi không xuyên qua được."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b18-q03",
+    "lessonId": "bio-g6-b18",
+    "sgkBaiSo": 33,
+    "skillIds": ["bio-thuc-hanh-nam"],
+    "difficulty": 1,
+    "prompt": "Khi quan sát tiêu bản nấm mốc trắng trên bánh mì dưới kính hiển vi quang học, cơ quan sinh sản của nấm mốc có dạng cấu trúc nào sau đây?",
+    "knowledge": ["bio-thuc-hanh-nam"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Các túi bào tử hình cầu nằm ở đầu các sợi nấm vươn cao" },
+        { "id": "opt-b", "label": "Các bông hoa màu vàng rực rỡ" },
+        { "id": "opt-c", "label": "Các quả mọng chứa hạt giống bên trong" },
+        { "id": "opt-d", "label": "Các vây bơi di chuyển linh hoạt" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nấm mốc sinh sản bằng bào tử nằm trong các túi tròn li ti ở đầu sợi nấm."
+      },
+      {
+        "level": 2,
+        "text": "Nấm không có hoa hay quả như thực vật bậc cao."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hình thái cơ quan sinh sản nấm mốc",
+        "body": "Đề bài hỏi cấu trúc sinh sản của nấm mốc dưới kính hiển vi."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cấu trúc nấm mốc",
+        "body": "Đầu mỗi sợi nấm mốc trắng vươn lên mang một túi bào tử hình cầu màu đen hoặc nâu, bên trong chứa đầy các hạt bào tử sinh sản."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn phương án đúng",
+        "body": "Lựa chọn chính xác là cấu trúc chính xác."
+      }
+    ],
+    "finalSolution": "Cơ quan sinh sản của nấm mốc trắng là các túi bào tử hình cầu nằm ở đầu các sợi nấm, bên trong chứa các bào tử phát tán theo gió.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nghĩ rằng nấm mốc cũng sinh sản bằng hạt giống như cây cỏ."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b18-q04",
+    "lessonId": "bio-g6-b18",
+    "sgkBaiSo": 33,
+    "skillIds": ["bio-thuc-hanh-nam"],
+    "difficulty": 2,
+    "prompt": "Phân loại các loại nấm sau vào hai nhóm: 'Nấm ăn được / Nấm làm thuốc' và 'Nấm cực độc tuyệt đối không được ăn':",
+    "knowledge": ["bio-thuc-hanh-nam", "bio-gioi-nam"],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "b-edible", "label": "Nấm ăn được / Nấm dược liệu an toàn" },
+        { "id": "b-poisonous", "label": "Nấm cực độc tuyệt đối không được ăn" }
+      ],
+      "items": [
+        { "id": "it-1", "label": "Nấm rơm mọc trên rơm rạ ẩm", "bucketId": "b-edible" },
+        { "id": "it-2", "label": "Nấm hương (nấm đông cô)", "bucketId": "b-edible" },
+        { "id": "it-3", "label": "Nấm linh chi bồi bổ sức khỏe", "bucketId": "b-edible" },
+        { "id": "it-4", "label": "Nấm đùi gà nuôi trồng sạch", "bucketId": "b-edible" },
+        { "id": "it-5", "label": "Nấm tán trắng mọc hoang trong rừng có vòng cuống và bao gốc", "bucketId": "b-poisonous" },
+        { "id": "it-6", "label": "Nấm độc đỏ có mũ đỏ chấm trắng sặc sỡ", "bucketId": "b-poisonous" }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nấm rơm, nấm hương, linh chi, đùi gà là nấm ăn và nấm thuốc quen thuộc."
+      },
+      {
+        "level": 2,
+        "text": "Nấm tán trắng và nấm độc đỏ là những loài nấm rừng cực độc có thể gây tử vong."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân biệt nấm ăn và nấm độc",
+        "body": "Xếp 6 loài nấm vào nhóm an toàn và nhóm độc hại."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu kiến thức",
+        "body": "Rơm, hương, linh chi, đùi gà là thực phẩm/dược liệu. Tán trắng, nấm độc đỏ là nấm rừng cực độc tuyệt đối tránh xa."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất phân loại",
+        "body": "4 nấm ăn/thuốc và 2 nấm cực độc được xếp đúng vị trí."
+      }
+    ],
+    "finalSolution": "Nấm ăn/thuốc: Nấm rơm, Nấm hương, Nấm linh chi, Nấm đùi gà. Nấm cực độc: Nấm tán trắng, Nấm độc đỏ.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Nghĩ rằng nấm tán trắng có màu trắng tinh giống nấm mỡ nên ăn được."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b18-q05",
+    "lessonId": "bio-g6-b18",
+    "sgkBaiSo": 33,
+    "skillIds": ["bio-thuc-hanh-nam"],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về thực hành quan sát các loại nấm:",
+    "knowledge": ["bio-thuc-hanh-nam"],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Hệ sợi nấm mốc phát triển len lỏi sâu vào trong ruột bánh mì để hút chất dinh dưỡng từ bột mì.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Các bào tử nấm mốc rất nhẹ nên dễ dàng bay theo luồng không khí để phát tán đi khắp nơi.",
+          "correct": true
+        },
+        {
+          "id": "st-3",
+          "text": "Khi đi dã ngoại trong rừng, có thể thoải mái hái bất kỳ cây nấm sặc sỡ nào về nấu ăn thử.",
+          "correct": false
+        },
+        {
+          "id": "st-4",
+          "text": "Sau khi thực hành quan sát nấm mốc, học sinh cần rửa tay sạch sẽ bằng xà phòng để tránh dính bào tử mốc.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nấm mốc là sinh vật hoại sinh hút dưỡng chất từ tinh bột bánh mì."
+      },
+      {
+        "level": 2,
+        "text": "Ăn thử nấm rừng hoang dại là hành vi cực kỳ nguy hiểm có thể mất mạng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Đánh giá từng câu về sinh lý nấm mốc và an toàn thực hành."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra chi tiết",
+        "body": "1. Sợi nấm hút dinh dưỡng bánh mì: Đúng. 2. Bào tử bay theo gió: Đúng. 3. Ăn thử nấm rừng: Sai (nguy cơ ngộ độc chết người). 4. Rửa tay sau khi làm tiêu bản mốc: Đúng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Ý 1: Đúng; Ý 2: Đúng; Ý 3: Sai; Ý 4: Đúng."
+      }
+    ],
+    "finalSolution": "Phát biểu 1, 2 và 4 đúng. Phát biểu 3 sai (tuyệt đối không được hái và ăn thử các loại nấm mọc hoang dại trong rừng).",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng bào tử nấm mốc trên bánh mì hoàn toàn vô hại nên không cần rửa tay sau khi làm thí nghiệm."
+      }
+    ]
+  }
+]

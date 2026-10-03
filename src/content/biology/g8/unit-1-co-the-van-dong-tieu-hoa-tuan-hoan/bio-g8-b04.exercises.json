@@ -1,0 +1,554 @@
+[
+  {
+    "id": "bio-g8-b04-q01",
+    "lessonId": "bio-g8-b04",
+    "sgkBaiSo": 33,
+    "skillIds": [
+      "bio-mau-tuan-hoan"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi để lắng một ống nghiệm chứa máu chống đông, máu tách làm hai phần chính gồm những thành phần nào với tỉ lệ thể tích tương ứng?",
+    "knowledge": [
+      "kb-bio-g8-thanh-phan-mau"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Huyết tương chiếm khoảng 55% và các tế bào máu chiếm khoảng 45%"
+        },
+        {
+          "id": "opt-b",
+          "label": "Huyết tương chiếm khoảng 45% và các tế bào máu chiếm khoảng 55%"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hồng cầu chiếm khoảng 80% và huyết thanh chiếm khoảng 20%"
+        },
+        {
+          "id": "opt-d",
+          "label": "Bạch cầu chiếm 50% và tiểu cầu chiếm 50%"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Phần lỏng màu vàng rơm ở trên chiếm hơn một nửa thể tích ống máu."
+      },
+      {
+        "level": 2,
+        "text": "Huyết tương chiếm ~55%, lớp tế bào máu nặng lắng ở dưới chiếm ~45%."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hiện tượng tách lớp của máu",
+        "body": "Máu được pha chất chống đông khi để lắng hoặc quay li tâm sẽ phân thành hai lớp rõ rệt."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tỉ lệ thể tích chuẩn",
+        "body": "Lớp trên là huyết tương (chất lỏng màu vàng nhạt) chiếm khoảng 55% thể tích máu; lớp dưới gồm các tế bào máu (hồng cầu, bạch cầu, tiểu cầu) chiếm khoảng 45% thể tích."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đáp án đúng là: Huyết tương chiếm khoảng 55% và các tế bào máu chiếm khoảng 45%."
+      }
+    ],
+    "finalSolution": "Huyết tương chiếm 55% thể tích máu, chứa 90% nước hòa tan các chất dinh dưỡng, hormone và muối khoáng.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Đảo ngược tỉ lệ thành phần giữa huyết tương (55%) và tế bào máu (45%)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b04-q02",
+    "lessonId": "bio-g8-b04",
+    "sgkBaiSo": 33,
+    "skillIds": [
+      "bio-mau-tuan-hoan"
+    ],
+    "difficulty": 1,
+    "prompt": "Đặc điểm hình thái và cấu tạo nào của tế bào hồng cầu người giúp tối ưu hóa chức năng vận chuyển khí O2 và CO2?",
+    "knowledge": [
+      "kb-bio-g8-hong-cau"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Hình đĩa lõm hai mặt, không nhân ở trạng thái trưởng thành và chứa huyết sắc tố hemoglobin"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hình cầu có nhân lớn và có chân giả di chuyển"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hình thoi dài có màng tế bào dày và chứa nhiều ty thể"
+        },
+        {
+          "id": "opt-d",
+          "label": "Không có màng sinh chất và không có sắc tố hô hấp"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hình đĩa lõm 2 mặt làm tăng diện tích tiếp xúc với khí lên nhiều lần."
+      },
+      {
+        "level": 2,
+        "text": "Mất nhân giúp nhường chỗ cho hemoglobin và giúp hồng cầu mềm dẻo lách qua mao mạch hẹp."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhiệm vụ của hồng cầu",
+        "body": "Hồng cầu là tế bào vận chuyển khí O2 từ phổi đến tế bào và CO2 từ tế bào về phổi."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cấu trúc vi thể thích nghi",
+        "body": "Hồng cầu hình đĩa lõm 2 mặt tăng diện tích khuếch tán khí O2/CO2; hồng cầu trưởng thành không có nhân giúp chứa tối đa hemoglobin (Hb) và dễ dàng biến dạng khi di chuyển trong mao mạch nhỏ."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hồng cầu có hình đĩa lõm 2 mặt, không nhân và chứa hemoglobin."
+      }
+    ],
+    "finalSolution": "Hemoglobin trong hồng cầu kết hợp lỏng lẻo với O2 tại phổi (máu đỏ tươi) và phân li nhả O2 tại các mô (máu đỏ thẫm).",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng hồng cầu người trưởng thành vẫn có nhân giống như bạch cầu."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b04-q03",
+    "lessonId": "bio-g8-b04",
+    "sgkBaiSo": 33,
+    "skillIds": [
+      "bio-mau-tuan-hoan"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi một mạch máu nhỏ bị tổn thương gây chảy máu, thành phần nào của máu giải phóng enzym xúc tác tạo mạng lưới fibrin giữ hồng cầu tạo thành cục máu đông?",
+    "knowledge": [
+      "kb-bio-g8-tieu-cau-dong-mau"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tiểu cầu"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bạch cầu lympho"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hồng cầu"
+        },
+        {
+          "id": "opt-d",
+          "label": "Đại thực bào"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đây là những mảnh tế bào chất không nhân rất dễ vỡ khi tiếp xúc với bờ mép vết thương sắc nhọn."
+      },
+      {
+        "level": 2,
+        "text": "Các tế bào này được gọi là tiểu cầu (platelets)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cơ chế bảo vệ chống mất máu",
+        "body": "Đông máu là phản ứng tự vệ ngăn cơ thể mất máu đến cạn kiệt khi bị rách thành mạch."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Vai trò của tiểu cầu",
+        "body": "Tiểu cầu va chạm vào vết rách vỡ ra giải phóng enzym biến fibrinogen hòa tan thành mạng lưới sợi tơ máu (fibrin) giăng bắt hồng cầu tạo nút máu đông bịt kín vết thương."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tiểu cầu là thành phần chịu trách nhiệm chính khởi phát quá trình đông máu."
+      }
+    ],
+    "finalSolution": "Tiểu cầu giải phóng enzym đông máu giúp tạo cục máu đông ngăn chặn sự mất máu của cơ thể khi bị thương.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm chức năng đông máu của tiểu cầu với chức năng miễn dịch của bạch cầu."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b04-q04",
+    "lessonId": "bio-g8-b04",
+    "sgkBaiSo": 33,
+    "skillIds": [
+      "bio-mau-tuan-hoan"
+    ],
+    "difficulty": 2,
+    "prompt": "Vì sao người mang nhóm máu O trong hệ ABO lại được gọi là người cho hồng cầu phổ thông (chuyên cho)?",
+    "knowledge": [
+      "kb-bio-g8-nhom-mau-abo"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Trên bề mặt màng hồng cầu nhóm O không có kháng nguyên A và B nên không bị kháng thể người nhận ngưng kết"
+        },
+        {
+          "id": "opt-b",
+          "label": "Huyết tương nhóm O không chứa bất kì loại kháng thể nào"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hồng cầu nhóm O có cả hai loại kháng nguyên A và B bảo vệ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hồng cầu nhóm O có kích thước siêu nhỏ không thể bị bắt giữ"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nguyên tắc truyền máu là không để kháng nguyên trên hồng cầu người cho bị kháng thể người nhận ngưng kết."
+      },
+      {
+        "level": 2,
+        "text": "Hồng cầu nhóm O hoàn toàn không mang kháng nguyên A lẫn kháng nguyên B."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nguyên tắc truyền máu",
+        "body": "Tai biến truyền máu xảy ra khi kháng thể người nhận gặp kháng nguyên tương ứng trên hồng cầu người cho."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc điểm hồng cầu nhóm O",
+        "body": "Màng hồng cầu nhóm O không có kháng nguyên A và không có kháng nguyên B. Do đó kháng thể α và β của người nhận không có kháng nguyên tương ứng để gây ngưng kết hồng cầu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Hồng cầu nhóm O không có kháng nguyên A và B nên không bị ngưng kết."
+      }
+    ],
+    "finalSolution": "Nhóm máu O là nhóm chuyên cho vì hồng cầu không mang kháng nguyên A, B nhưng chỉ nhận được máu nhóm O vì huyết tương có cả hai kháng thể α và β.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm tưởng huyết tương nhóm O không có kháng thể (thực tế huyết tương nhóm O có cả kháng thể α và β)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b04-q05",
+    "lessonId": "bio-g8-b04",
+    "sgkBaiSo": 33,
+    "skillIds": [
+      "bio-mau-tuan-hoan"
+    ],
+    "difficulty": 2,
+    "prompt": "Một bệnh nhân có nhóm máu A đang cấp cứu cần truyền máu khẩn cấp, bệnh viện có thể truyền cho bệnh nhân này hồng cầu từ những nhóm máu nào?",
+    "knowledge": [
+      "kb-bio-g8-nguyen-tac-truyen-mau"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Nhóm máu A và Nhóm máu O"
+        },
+        {
+          "id": "opt-b",
+          "label": "Nhóm máu A và Nhóm máu B"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chỉ duy nhất Nhóm máu AB"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nhóm máu B và Nhóm máu AB"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Người nhận nhóm A có kháng thể β trong huyết tương, nên không được nhận hồng cầu có kháng nguyên B (nhóm B, AB)."
+      },
+      {
+        "level": 2,
+        "text": "Bệnh nhân có thể nhận máu cùng nhóm A hoặc nhóm máu chuyên cho O."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định kháng thể của người nhận",
+        "body": "Người nhận nhóm A có kháng nguyên A trên hồng cầu và có kháng thể β (anti-B) trong huyết tương."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Chọn lọc nhóm máu người cho an toàn",
+        "body": "Kháng thể β sẽ làm vỡ hồng cầu mang kháng nguyên B (nhóm B và AB). Người cho an toàn chỉ có thể là nhóm A (cùng nhóm) hoặc nhóm O (không có kháng nguyên B)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Bệnh nhân nhóm máu A có thể nhận máu nhóm A và nhóm O."
+      }
+    ],
+    "finalSolution": "Người nhóm máu A nhận được hồng cầu nhóm A và nhóm O an toàn.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng người nhóm A có thể nhận được máu nhóm AB (hồng cầu AB có kháng nguyên B sẽ bị ngưng kết gây chết người)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b04-q06",
+    "lessonId": "bio-g8-b04",
+    "sgkBaiSo": 33,
+    "skillIds": [
+      "bio-mau-tuan-hoan"
+    ],
+    "difficulty": 2,
+    "prompt": "Đường đi của máu trong vòng tuần hoàn lớn (nuôi dưỡng cơ thể) bắt đầu và kết thúc tại những ngăn tim nào?",
+    "knowledge": [
+      "kb-bio-g8-vong-tuan-hoan-lon"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Bắt đầu từ Tâm thất trái và kết thúc tại Tâm nhĩ phải"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bắt đầu từ Tâm thất phải và kết thúc tại Tâm nhĩ trái"
+        },
+        {
+          "id": "opt-c",
+          "label": "Bắt đầu từ Tâm nhĩ trái và kết thúc tại Tâm thất phải"
+        },
+        {
+          "id": "opt-d",
+          "label": "Bắt đầu từ Tâm thất trái và kết thúc tại Tâm nhĩ trái"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Máu giàu oxy được tâm thất dày nhất bơm vào động mạch chủ đi khắp cơ thể."
+      },
+      {
+        "level": 2,
+        "text": "Sau khi nuôi mô, máu nghèo oxy theo tĩnh mạch chủ đổ về tâm nhĩ phải."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Chức năng vòng tuần hoàn lớn",
+        "body": "Vòng tuần hoàn lớn vận chuyển máu giàu oxy và dinh dưỡng đi nuôi mọi tế bào trong cơ thể."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đường đi của máu",
+        "body": "Tâm thất trái co bóp tống máu vào động mạch chủ → mao mạch cơ quan trao đổi chất chuyển thành máu đỏ thẫm → theo tĩnh mạch chủ trên và dưới trở về tâm nhĩ phải."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Vòng tuần hoàn lớn bắt đầu từ Tâm thất trái và kết thúc tại Tâm nhĩ phải."
+      }
+    ],
+    "finalSolution": "Vòng tuần hoàn lớn xuất phát từ tâm thất trái có thành cơ dày nhất để tạo áp lực đưa máu nuôi toàn bộ cơ thể rồi trở về tâm nhĩ phải.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm lẫn điểm bắt đầu giữa tâm thất trái (vòng lớn) và tâm thất phải (vòng nhỏ qua phổi)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b04-q07",
+    "lessonId": "bio-g8-b04",
+    "sgkBaiSo": 33,
+    "skillIds": [
+      "bio-mau-tuan-hoan"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong hệ mạch của vòng tuần hoàn nhỏ (vòng phổi), máu chảy trong động mạch phổi và tĩnh mạch phổi có đặc điểm gì?",
+    "knowledge": [
+      "kb-bio-g8-vong-tuan-hoan-nho"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Động mạch phổi dẫn máu đỏ thẫm (nghèo O2); Tĩnh mạch phổi dẫn máu đỏ tươi (giàu O2)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Động mạch phổi dẫn máu đỏ tươi; Tĩnh mạch phổi dẫn máu đỏ thẫm"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cả hai mạch đều chỉ dẫn máu đỏ tươi giàu O2"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cả hai mạch đều chỉ dẫn máu đỏ thẫm nghèo O2"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Động mạch là mạch dẫn máu RỜI tim; Tĩnh mạch là mạch dẫn máu VỀ tim."
+      },
+      {
+        "level": 2,
+        "text": "Máu từ tâm thất phải bơm lên phổi để lấy O2 là máu nghèo O2 (đỏ thẫm); sau khi nạp O2 ở phổi về tâm nhĩ trái là máu đỏ tươi."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Định nghĩa động mạch và tĩnh mạch",
+        "body": "Động mạch là mạch đưa máu từ tim đi; tĩnh mạch là mạch dẫn máu về tim."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Biến đổi màu máu tại phổi",
+        "body": "Động mạch phổi dẫn máu nghèo O2 từ tâm thất phải lên phổi để trao đổi khí (máu đỏ thẫm). Tĩnh mạch phổi thu nhận máu đã nhận đầy O2 từ phế nang về tâm nhĩ trái (máu đỏ tươi)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Động mạch phổi dẫn máu đỏ thẫm; tĩnh mạch phổi dẫn máu đỏ tươi."
+      }
+    ],
+    "finalSolution": "Đây là ngoại lệ quan trọng: Động mạch phổi là động mạch duy nhất dẫn máu nghèo O2, và tĩnh mạch phổi là tĩnh mạch duy nhất dẫn máu giàu O2.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Mặc định cứ 'động mạch' là máu đỏ tươi và 'tĩnh mạch' là máu đỏ thẫm."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b04-q08",
+    "lessonId": "bio-g8-b04",
+    "sgkBaiSo": 33,
+    "skillIds": [
+      "bio-mau-tuan-hoan"
+    ],
+    "difficulty": 3,
+    "prompt": "Khi gặp một nạn nhân bị chấn thương sâu ở cẳng tay, máu đỏ tươi phun mạnh thành từng tia theo nhịp tim đập, thao tác sơ cứu khẩn cấp nào là ĐÚNG quy chuẩn?",
+    "knowledge": [
+      "kb-bio-g8-so-cuu-cam-mau"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Dùng ngón tay ấn mạnh vào động mạch phía trên vết thương, đặt garô siết chặt phía gần tim và nới lỏng mỗi 15 phút"
+        },
+        {
+          "id": "opt-b",
+          "label": "Chỉ dùng một miếng băng gạc mỏng đắp hờ lên vết thương rồi chờ máu tự đông"
+        },
+        {
+          "id": "opt-c",
+          "label": "Buộc chặt dây garô ở vị trí phía dưới vết thương (về phía ngón tay)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Rửa vết thương liên tục dưới vòi nước chảy xiết mà không cần băng ép"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Máu phun thành tia đỏ tươi là dấu hiệu đứt động mạch, có nguy cơ mất máu cấp dẫn đến tử vong trong vài phút."
+      },
+      {
+        "level": 2,
+        "text": "Động mạch dẫn máu từ tim ra ngọn chi, do đó điểm chặn garô phải nằm ở phía trên vết thương (hướng về phía tim)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận diện tổn thương đứt động mạch",
+        "body": "Máu đỏ tươi phun thành tia theo nhịp đập của tim là tổn thương đứt động mạch nguy hiểm tính mạng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc garô động mạch",
+        "body": "Động mạch chảy từ tim ra ngọn chi nên phải buộc dây garô chặn máu ở phía trên vết thương (gần tim hơn). Định kì 15 phút phải nới lỏng garô 1 - 2 phút để ngừa hoại tử chi do thiếu oxy."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Ấn động mạch, đặt garô phía gần tim hơn vết thương và nới lỏng mỗi 15 phút."
+      }
+    ],
+    "finalSolution": "Cầm máu động mạch bằng garô phía trên vết thương kết hợp nới garô định kì là kĩ năng sơ cấp cứu sống còn giúp bảo toàn tính mạng và chi của nạn nhân.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Đặt garô phía dưới vết thương hoặc garô quá lâu nhiều giờ không nới lỏng làm chi bị hoại tử."
+      }
+    ]
+  }
+]

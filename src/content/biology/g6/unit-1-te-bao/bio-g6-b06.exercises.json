@@ -1,0 +1,328 @@
+[
+  {
+    "id": "bio-g6-b06-q01",
+    "lessonId": "bio-g6-b06",
+    "sgkBaiSo": 21,
+    "skillIds": [
+      "bio-thuc-hanh-te-bao"
+    ],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp các thao tác sau theo đúng trình tự chuẩn khi làm tiêu bản tạm thời tế bào biểu bì vảy hành tây:",
+    "knowledge": [
+      "bio-thuc-hanh-te-bao-hanh-ca-chua"
+    ],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Nhỏ một giọt nước cất vào chính giữa lam kính sạch",
+        "Dùng kim mũi mác và kẹp khẽ bóc lớp màng biểu bì mỏng ở mặt trong vảy hành",
+        "Đặt lớp màng biểu bì trải phẳng hoàn toàn vào giọt nước trên lam kính",
+        "Đặt lamen nghiêng góc 45 độ rồi từ từ hạ xuống, dùng giấy thấm hút nước thừa"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bắt đầu bằng việc chuẩn bị giọt chất lỏng trên lam kính sạch trước."
+      },
+      {
+        "level": 2,
+        "text": "Đậy lamen là bước hoàn thiện cuối cùng trước khi đưa lên kính quan sát."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu bài thực hành",
+        "body": "Xác định các bước tuần tự làm tiêu bản vảy hành tây."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy trình chuẩn trong phòng thí nghiệm",
+        "body": "1. Nhỏ giọt nước lên lam kính → 2. Bóc màng biểu bì mỏng → 3. Đặt trải phẳng màng vào giọt nước → 4. Hạ lamen nghiêng 45° và thấm nước thừa."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận thứ tự",
+        "body": "Tuân thủ nghiêm ngặt 4 bước để tiêu bản trong suốt và không bị nếp gập."
+      }
+    ],
+    "finalSolution": "Trình tự chuẩn: Nhỏ giọt nước → Bóc màng biểu bì mỏng → Đặt trải phẳng vào giọt nước → Hạ lamen nghiêng 45° và thấm nước thừa.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Bóc màng đặt lên lam kính trước rồi mới nhỏ nước lên trên làm màng bị cuộn tròn."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b06-q02",
+    "lessonId": "bio-g6-b06",
+    "sgkBaiSo": 21,
+    "skillIds": [
+      "bio-thuc-hanh-te-bao"
+    ],
+    "difficulty": 1,
+    "prompt": "Ghép nối mẫu tế bào thực vật (cột bên trái) với đặc điểm hình thái quan sát được dưới kính hiển vi (cột bên phải):",
+    "knowledge": [
+      "bio-thuc-hanh-te-bao-hanh-ca-chua"
+    ],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Tế bào biểu bì vảy hành tây",
+          "right": "Hình đa giác/chữ nhật, xếp khít nhau như tường gạch"
+        },
+        {
+          "left": "Tế bào thịt quả cà chua chín",
+          "right": "Hình cầu hoặc bầu dục rời rạc, chứa hạt sắc tố đỏ"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tế bào biểu bì có vai trò che chở nên các tế bào phải gắn khít với nhau."
+      },
+      {
+        "level": 2,
+        "text": "Thịt quả cà chua chứa dịch ngọt và các hạt sắc tố màu đỏ lycopene."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 2 mẫu vật thực hành",
+        "body": "Tế bào vảy hành và tế bào thịt quả cà chua chín."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc điểm hình dạng dưới kính hiển vi",
+        "body": "Biểu bì vảy hành: hình đa giác dài, xếp sát khít nhau. Thịt quả cà chua: tế bào rời nhau, hình cầu/bầu dục có hạt sắc tố đỏ."
+      },
+      {
+        "kind": "answer",
+        "title": "Ghép cặp chính xác",
+        "body": "Nối đúng 2 mẫu tế bào với mô tả hình ảnh hiển vi."
+      }
+    ],
+    "finalSolution": "Tế bào biểu bì vảy hành: hình đa giác xếp khít nhau như tường gạch; Tế bào thịt quả cà chua chín: hình cầu/bầu dục đứng rời nhau và chứa hạt sắc tố đỏ.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Nghĩ rằng tế bào thịt quả cà chua cũng xếp khít chặt chẽ như tế bào biểu bì vảy hành."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b06-q03",
+    "lessonId": "bio-g6-b06",
+    "sgkBaiSo": 21,
+    "skillIds": [
+      "bio-thuc-hanh-te-bao"
+    ],
+    "difficulty": 1,
+    "prompt": "Khi làm tiêu bản tế bào biểu bì vảy hành, việc nhỏ thêm một giọt thuốc nhuộm xanh metylen hoặc dung dịch iot loãng có tác dụng gì?",
+    "knowledge": [
+      "bio-thuc-hanh-te-bao-hanh-ca-chua"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Giúp các thành phần tế bào bắt màu (đặc biệt là nhân tế bào) để quan sát rõ nét hơn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Làm cho tế bào phát sáng trong bóng tối"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tăng kích thước phóng đại của thấu kính hiển vi"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hòa tan hoàn toàn màng tế bào của vảy hành"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tế bào sống trong suốt thường rất khó nhìn thấy nhân nếu không được nhuộm màu."
+      },
+      {
+        "level": 2,
+        "text": "Thuốc nhuộm hữu cơ liên kết với protein và acid nucleic trong nhân làm nhân hiện màu đậm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục đích của việc nhuộm tiêu bản",
+        "body": "Đề bài hỏi về vai trò của xanh metylen hoặc dung dịch iot trong thực hành hiển vi."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế bắt màu thuốc nhuộm",
+        "body": "Các thành phần tế bào thực vật đa phần không màu trong suốt. Nhuộm màu giúp tạo độ tương phản, đặc biệt là nhân tế bào bắt màu đậm giúp dễ dàng định vị và quan sát dưới kính."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án đúng",
+        "body": "Lựa chọn chính xác là vai trò khoa học chuẩn xác."
+      }
+    ],
+    "finalSolution": "Thuốc nhuộm xanh metylen hoặc dung dịch iot giúp các cấu trúc tế bào (đặc biệt là nhân tế bào) bắt màu đậm, tạo độ tương phản rõ rệt giúp dễ dàng quan sát.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nghĩ rằng thuốc nhuộm có tác dụng làm to kích thước tế bào."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b06-q04",
+    "lessonId": "bio-g6-b06",
+    "sgkBaiSo": 21,
+    "skillIds": [
+      "bio-thuc-hanh-te-bao"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi quan sát tiêu bản biểu bì vảy hành dưới kính hiển vi, học sinh nhìn thấy một số hình tròn có viền đen rất dày và bên trong hoàn toàn rỗng sáng. Đó là cấu trúc gì?",
+    "knowledge": [
+      "bio-thuc-hanh-te-bao-hanh-ca-chua"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Nhân khổng lồ của tế bào vảy hành"
+        },
+        {
+          "id": "opt-b",
+          "label": "Lục lạp của tế bào vảy hành"
+        },
+        {
+          "id": "opt-c",
+          "label": "Bọt khí bị lọt vào do thao tác đậy lamen chưa đúng cách"
+        },
+        {
+          "id": "opt-d",
+          "label": "Một loại vi khuẩn lạ xâm nhập"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bọt khí khi ánh sáng đi qua sẽ bị khúc xạ mạnh ở mép tạo thành viền đen dày đặc trưng."
+      },
+      {
+        "level": 2,
+        "text": "Hạ lamen thẳng đứng từ trên xuống thường làm không khí bị nhốt lại tạo thành bọt khí."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận diện lỗi kỹ thuật thực hành",
+        "body": "Phân tích cấu trúc hình tròn viền đen dày dưới kính hiển vi."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc điểm quang học của bọt khí",
+        "body": "Bọt khí có dạng hình tròn vo, viền ngoài đen đậm do khúc xạ ánh sáng và ở giữa sáng trắng. Đây là lỗi kinh điển khi đậy lamen không nghiêng 45 độ."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án đúng",
+        "body": "Đó chính là bọt khí bị kẹt dưới lamen."
+      }
+    ],
+    "finalSolution": "Hình tròn có viền đen dày và sáng ở giữa chính là các bọt khí bị nhốt lại do đậy lamen chưa đúng kỹ thuật (không hạ nghiêng 45 độ).",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Nhầm bọt khí viền đen với nhân tế bào (nhân tế bào có cấu trúc hạt màu sẫm mờ, không có viền đen dày)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b06-q05",
+    "lessonId": "bio-g6-b06",
+    "sgkBaiSo": 21,
+    "skillIds": [
+      "bio-thuc-hanh-te-bao"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai cho mỗi nhận định sau đây về thực hành quan sát tế bào:",
+    "knowledge": [
+      "bio-thuc-hanh-te-bao-hanh-ca-chua"
+    ],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Khi bóc biểu bì vảy hành, lớp màng bóc được càng mỏng và trải càng phẳng thì quan sát tế bào càng rõ ràng.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Lấy một tảng thịt quả cà chua thật dày đặt lên lam kính sẽ giúp nhìn thấy nhiều tế bào hơn.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Dưới kính hiển vi, tế bào biểu bì vảy hành xếp khít nhau còn tế bào thịt quả cà chua chín nằm rời rạc.",
+          "correct": true
+        },
+        {
+          "id": "st-4",
+          "text": "Màu đỏ của quả cà chua là do các hạt sắc tố lycopene nằm bên trong chất tế bào tạo nên.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mẫu vật quan sát dưới kính hiển vi quang học phải đủ mỏng để ánh sáng truyền xuyên qua được."
+      },
+      {
+        "level": 2,
+        "text": "Nếu mẫu vật quá dày, các lớp tế bào chồng lên nhau tạo thành mảng đen sì không thể nhìn thấy gì."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Đánh giá từng câu về nguyên tắc quang học và kết quả quan sát tế bào."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra từng ý",
+        "body": "1. Màng càng mỏng càng rõ: Đúng (ánh sáng xuyên qua tốt). 2. Lấy tảng dày để nhìn nhiều: Sai (ánh sáng bị chặn, không thấy gì). 3. Vảy hành xếp khít, cà chua rời rạc: Đúng. 4. Sắc tố đỏ trong tế bào cà chua: Đúng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Ý 1: Đúng; Ý 2: Sai; Ý 3: Đúng; Ý 4: Đúng."
+      }
+    ],
+    "finalSolution": "Phát biểu 1, 3 và 4 đúng. Phát biểu 2 sai vì mẫu vật phải thật mỏng để ánh sáng truyền qua; nếu lấy mẫu quá dày các tế bào chồng chất lên nhau sẽ tối đen không quan sát được.",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng lấy mẫu vật càng nhiều và càng dày thì quan sát được càng rõ dưới kính hiển vi."
+      }
+    ]
+  }
+]

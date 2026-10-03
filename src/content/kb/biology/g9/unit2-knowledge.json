@@ -1,0 +1,185 @@
+[
+  {
+    "id": "kb-bio-g9-tai-ban-dna-nguyen-tac",
+    "title": "Nguyên tắc tái bản (nhân đôi) DNA",
+    "summary": "Tái bản DNA diễn ra trong nhân tế bào tại pha S kì trung gian theo hai nguyên tắc bất di bất dịch: nguyên tắc bổ sung và nguyên tắc bán bảo tồn.",
+    "keyTakeaways": [
+      "Nguyên tắc bổ sung: Các nucleotide tự do trong môi trường nội bào liên kết với các nucleotide trên mạch khuôn của DNA theo quy tắc A liên kết với T (bằng 2 liên kết hydrogen), G liên kết với C (bằng 3 liên kết hydrogen).",
+      "Nguyên tắc bán bảo tồn (giữ lại một nửa): Trong mỗi phân tử DNA con tạo thành, có một mạch là của DNA mẹ ban đầu (mạch khuôn cũ) và một mạch mới được tổng hợp từ nguyên liệu của môi trường.",
+      "Ý nghĩa: Đảm bảo thông tin di truyền được truyền đạt chính xác, nguyên vẹn từ tế bào mẹ sang các tế bào con."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-tai-ban-dna-dien-bien",
+    "title": "Diễn biến các bước trong quá trình tái bản DNA",
+    "summary": "Quá trình nhân đôi DNA diễn ra nhịp nhàng qua 3 bước với sự tham gia của các hệ enzyme chuyên biệt.",
+    "keyTakeaways": [
+      "Bước 1: Tháo xoắn phân tử DNA nhờ enzyme tháo xoắn làm đứt các liên kết hydrogen giữa 2 mạch, làm lộ ra hai mạch đơn khuôn mẫu.",
+      "Bước 2: Tổng hợp mạch DNA mới nhờ enzyme DNA polymerase trượt trên mạch khuôn theo chiều 3' → 5' và gắn các nucleotide tự do theo nguyên tắc bổ sung (A-T, G-C) để kéo dài mạch mới theo chiều 5' → 3'.",
+      "Bước 3: Tạo thành hai phân tử DNA con đóng xoắn. Cả hai DNA con đều giống hệt nhau và giống hệt phân tử DNA mẹ ban đầu."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-tai-ban-dna-y-nghia",
+    "title": "Ý nghĩa sinh học của quá trình tái bản DNA",
+    "summary": "Tái bản DNA là cơ sở phân tử của sự nhân đôi nhiễm sắc thể, giúp duy trì ổn định bộ gen qua các thế hệ tế bào và cá thể.",
+    "keyTakeaways": [
+      "Là cơ sở phân tử cho sự tự nhân đôi của nhiễm sắc thể trước mỗi lần phân chia tế bào (nguyên phân, giảm phân).",
+      "Đảm bảo cho các tế bào con sinh ra từ nguyên phân có bộ gen giống hệt tế bào mẹ ban đầu.",
+      "Duy trì tính đặc trưng và liên tục của thông tin di truyền của loài qua các thế hệ."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-toan-tai-ban-dna",
+    "title": "Các công thức toán học về tái bản DNA",
+    "summary": "Quy luật số lượng phân tử DNA và số nucleotide môi trường cung cấp qua k lần nhân đôi.",
+    "keyTakeaways": [
+      "Số phân tử DNA tạo thành sau k lần nhân đôi từ 1 DNA ban đầu: N_DNA = 2^k.",
+      "Số phân tử DNA con có chứa mạch cũ của DNA mẹ: Luôn luôn bằng 2 phân tử (mỗi phân tử chứa 1 mạch cũ và 1 mạch mới).",
+      "Số phân tử DNA con hoàn toàn mới (cả 2 mạch đều mới): N_mới = 2^k - 2.",
+      "Số nucleotide môi trường cung cấp: N_mt = N × (2^k - 1)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-khai-niem-phien-ma",
+    "title": "Khái niệm và vị trí của quá trình phiên mã",
+    "summary": "Phiên mã là quá trình tổng hợp phân tử RNA dựa trên mạch khuôn của gen trong nhân tế bào.",
+    "keyTakeaways": [
+      "Phiên mã diễn ra trong nhân tế bào (ở sinh vật nhân thực) tại kì trung gian, khi nhiễm sắc thể ở trạng thái tháo xoắn.",
+      "Là giai đoạn đầu tiên của quá trình biểu hiện gen, chuyển thông tin di truyền từ DNA sang RNA.",
+      "Kết quả: Tạo ra các phân tử RNA gồm mRNA (RNA thông tin), tRNA (RNA vận chuyển) và rRNA (RNA ribosome)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-mach-khuon-phien-ma",
+    "title": "Mạch khuôn phiên mã và enzyme RNA polymerase",
+    "summary": "Chỉ một mạch của gen mang thông tin dùng làm khuôn mẫu để tổng hợp phân tử RNA.",
+    "keyTakeaways": [
+      "Mạch khuôn (mạch gốc): Là mạch đơn của gen có chiều 3' → 5'. Mạch còn lại (5' → 3') gọi là mạch bổ sung.",
+      "Enzyme RNA polymerase: Bám vào vùng điều hòa của gen, tháo xoắn gen và trượt dọc trên mạch gốc theo chiều 3' → 5' để tổng hợp chuỗi RNA theo chiều 5' → 3'.",
+      "RNA polymerase không cần đoạn mồi và có khả năng tự tháo xoắn cục bộ trên đoạn gen đang phiên mã."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-nguyen-tac-bo-sung-phien-ma",
+    "title": "Nguyên tắc bổ sung trong quá trình phiên mã",
+    "summary": "Các ribonucleotide tự do trong môi trường liên kết với các nucleotide trên mạch gốc của gen theo quy tắc bổ sung.",
+    "keyTakeaways": [
+      "A trên mạch gốc liên kết với U của môi trường tự do (A_gốc - U_mt).",
+      "T trên mạch gốc liên kết với A của môi trường tự do (T_gốc - A_mt).",
+      "G trên mạch gốc liên kết với C của môi trường tự do (G_gốc - C_mt).",
+      "C trên mạch gốc liên kết với G của môi trường tự do (C_gốc - G_mt).",
+      "Lưu ý quan trọng: Trong RNA không có base Thymine (T), thay vào đó là Uracil (U)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-cac-loai-rna-chuc-nang",
+    "title": "Cấu trúc và chức năng của các loại phân tử RNA",
+    "summary": "Ba loại RNA chủ yếu tham gia vào cơ chế di truyền phân tử: mRNA, tRNA, rRNA.",
+    "keyTakeaways": [
+      "mRNA (RNA thông tin): Mạch đơn dạng thẳng, làm khuôn trực tiếp cho quá trình dịch mã tổng hợp protein tại ribosome.",
+      "tRNA (RNA vận chuyển): Có cấu trúc cuộn gập hình lá chẽ ba, mang một đầu gắn amino acid đặc hiệu và một bộ ba đối mã (anticodon) để khớp với codon trên mRNA.",
+      "rRNA (RNA ribosome): Kết hợp với protein để tạo nên bào quan ribosome - nơi diễn ra quá trình sinh tổng hợp protein."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-ma-di-truyen-dac-diem",
+    "title": "Đặc điểm của mã di truyền",
+    "summary": "Mã di truyền là trình tự sắp xếp các nucleotide trong gen (trên mRNA) quy định trình tự sắp xếp các amino acid trong chuỗi polypeptide.",
+    "keyTakeaways": [
+      "Mã bộ ba (Triplet/Codon): Cứ 3 nucleotide đứng liền kề quy định một amino acid. Có tất cả 4^3 = 64 bộ ba codon.",
+      "Tính phổ biến: Toàn bộ sinh giới (từ vi khuẩn, thực vật đến động vật, người) đều dùng chung một bộ mã di truyền (chứng minh nguồn gốc chung của sinh giới).",
+      "Tính đặc hiệu: Mỗi bộ ba chỉ mã hóa cho duy nhất một loại amino acid.",
+      "Tính thoái hóa (dư thừa): Nhiều bộ ba khác nhau cùng quy định một loại amino acid (ví dụ: có 6 bộ ba cùng mã hóa Leucine), ngoại trừ AUG và UGG."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-codon-khoi-dau-ket-thuc",
+    "title": "Bộ ba mở đầu và các bộ ba kết thúc dịch mã",
+    "summary": "Trong 64 codon trên mRNA, có 61 codon mã hóa amino acid và 3 codon làm tín hiệu kết thúc.",
+    "keyTakeaways": [
+      "Bộ ba mở đầu (Start codon): 5'AUG3' nằm ở đầu phân tử mRNA, mã hóa cho amino acid Methionine (Met) ở sinh vật nhân thực (Formylmethionine ở nhân sơ), phát tín hiệu bắt đầu dịch mã.",
+      "3 bộ ba kết thúc (Stop codons): 5'UAA3', 5'UAG3', 5'UGA3' - không mã hóa cho bất kì amino acid nào, đóng vai trò tín hiệu báo cho ribosome dừng dịch mã và giải phóng chuỗi polypeptide."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-dich-ma-khai-niem-vi-tri",
+    "title": "Khái niệm và vị trí của quá trình dịch mã",
+    "summary": "Dịch mã là quá trình tổng hợp chuỗi polypeptide (protein) dựa trên trình tự các codon trên phân tử mRNA.",
+    "keyTakeaways": [
+      "Địa điểm diễn ra: Diễn ra tại tế bào chất của tế bào, trên bào quan ribosome.",
+      "Các thành phần tham gia: Khuôn mẫu mRNA, các phân tử tRNA mang amino acid tự do, năng lượng ATP, ribosome và các enzyme xúc tác.",
+      "Bản chất: Chuyển đổi ngôn ngữ di truyền từ trình tự nucleotide trên mRNA sang trình tự amino acid trong protein."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-dien-bien-dich-ma",
+    "title": "Diễn biến các giai đoạn của quá trình dịch mã",
+    "summary": "Quá trình dịch mã diễn ra qua 3 giai đoạn: Mở đầu, Kéo dài chuỗi polypeptide và Kết thúc.",
+    "keyTakeaways": [
+      "Mở đầu: Tiểu đơn vị bé của ribosome gắn vào đầu 5' của mRNA tại vị trí nhận biết đặc hiệu và tiến đến codon mở đầu 5'AUG3'. Phức hệ tRNA-Met mang anticodon 3'UAC5' khớp bổ sung vào AUG, sau đó tiểu đơn vị lớn gắn vào tạo ribosome hoàn chỉnh.",
+      "Kéo dài: Các phức hệ tRNA - amino acid tiếp theo lần lượt tiến vào vị trí nhận diện, khớp anticodon với codon tương ứng theo NTBS. Enzyme xúc tác hình thành liên kết peptide giữa các amino acid kế tiếp. Ribosome dịch chuyển từng bước 1 codon (3 nucleotide) theo chiều 5' → 3'.",
+      "Kết thúc: Khi ribosome gặp một trong 3 codon kết thúc (UAA, UAG, UGA), quá trình dịch mã dừng lại. Ribosome tách rời khỏi mRNA, chuỗi polypeptide được giải phóng và enzyme cắt bỏ amino acid mở đầu (Met) để tạo protein hoàn chỉnh."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-central-dogma-so-do",
+    "title": "Sơ đồ cơ chế truyền đạt thông tin di truyền trung tâm (Central Dogma)",
+    "summary": "Mối quan hệ mật thiết giữa Gene, mRNA, Protein và Tính trạng trong sự biểu hiện đặc điểm sinh học.",
+    "keyTakeaways": [
+      "Sơ đồ dòng thông tin: Gene (đoạn DNA) → (Phiên mã trong nhân) → mRNA → (Dịch mã tại tế bào chất) → Protein (chuỗi polypeptide) → Biểu hiện thành Tính trạng.",
+      "Bản chất: Trình tự các nucleotide trong mạch khuôn của gen quy định trình tự ribonucleotide trên mRNA. Trình tự codon trên mRNA quy định trình tự amino acid trong chuỗi polypeptide. Trình tự amino acid quyết định cấu trúc không gian và chức năng sinh học của protein, từ đó biểu hiện thành tính trạng cụ thể của sinh vật."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-khai-niem-dot-bien-gene",
+    "title": "Khái niệm và đặc điểm của đột biến gene",
+    "summary": "Đột biến gene là những biến đổi trong cấu trúc của gene, liên quan đến một hoặc một số cặp nucleotide.",
+    "keyTakeaways": [
+      "Đột biến điểm: Là dạng đột biến gene chỉ liên quan đến đúng một cặp nucleotide trong phân tử DNA.",
+      "Thể đột biến: Là những cá thể mang gene đột biến đã biểu hiện ra kiểu hình của cơ thể.",
+      "Tần số đột biến: Trong tự nhiên, tần số đột biến gen tự phát là rất thấp (khoảng 10^-6 đến 10^-4)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-cac-dang-dot-bien-diem",
+    "title": "Ba dạng đột biến điểm cơ bản",
+    "summary": "Phân loại đột biến điểm dựa trên sự biến đổi số lượng hoặc thành phần cặp nucleotide.",
+    "keyTakeaways": [
+      "1. Thay thế một cặp nucleotide: Thay cặp nu này bằng cặp nu khác (ví dụ: thay A-T bằng G-C). Tổng số nucleotide và chiều dài của gen không đổi; số liên kết hydrogen có thể tăng (+1), giảm (-1) hoặc không đổi.",
+      "2. Thêm một cặp nucleotide: Chèn thêm một cặp nu vào chuỗi xoắn kép. Chiều dài gen tăng thêm 3,4 Å; tổng số nu tăng thêm 2.",
+      "3. Mất một cặp nucleotide: Mất đi một cặp nu trong chuỗi xoắn kép. Chiều dài gen giảm đi 3,4 Å; tổng số nu giảm đi 2."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-tac-dong-dich-khung-dot-bien",
+    "title": "Tác động của đột biến gene đến cấu trúc chuỗi polypeptide",
+    "summary": "Mức độ ảnh hưởng của các dạng đột biến điểm đến trình tự amino acid và chức năng của protein.",
+    "keyTakeaways": [
+      "Đột biến thay thế 1 cặp nu: Chỉ ảnh hưởng tối đa đến 1 amino acid trong chuỗi polypeptide (hoặc không làm thay đổi amino acid nào do tính thoái hóa của mã di truyền - đột biến đồng nghĩa).",
+      "Đột biến thêm hoặc mất 1 cặp nu: Gây ra hiện tượng 'dịch khung đọc mã' (frameshift mutation). Làm thay đổi toàn bộ các bộ ba từ vị trí đột biến cho đến cuối gen, dẫn đến chuỗi polypeptide bị biến đổi hoàn toàn, thường làm mất chức năng sinh học của protein.",
+      "Hồng cầu hình liềm (bệnh thiếu máu HbS ở người): Do đột biến thay thế cặp A-T thành T-A ở codon số 6 của gen beta-globin, làm amino acid glutamic acid bị thay bằng valine."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-nguyen-nhan-dot-bien-gene",
+    "title": "Nguyên nhân phát sinh đột biến gene",
+    "summary": "Đột biến gene phát sinh do tác động của môi trường bên ngoài hoặc rối loạn bên trong tế bào.",
+    "keyTakeaways": [
+      "Tác nhân vật lí: Tia tử ngoại (UV), tia phóng xạ (X-ray, gamma), sốc nhiệt làm bắt cặp nhầm hoặc đứt gãy liên kết.",
+      "Tác nhân hóa học: Các hóa chất độc hại như 5-bromouracil (5-BU), chất độc da cam (Dioxin), EMS, khói thuốc lá làm biến đổi cấu trúc các base nitơ.",
+      "Tác nhân sinh học: Một số loại virus (như HPV, viêm gan B) xâm nhập và cài xen vào hệ gen tế bào chủ.",
+      "Nguyên nhân bên trong: Do rối loạn các quá trình sinh lí, hóa sinh nội bào trong quá trình nhân đôi DNA (sai sót tự phát của enzyme polymerase)."
+    ]
+  },
+  {
+    "id": "kb-bio-g9-vai-tro-y-nghia-dot-bien-gene",
+    "title": "Vai trò và ý nghĩa của đột biến gene",
+    "summary": "Đột biến gene là nguồn nguyên liệu sơ cấp của tiến hóa và tạo nguồn giống mới trong nông nghiệp.",
+    "keyTakeaways": [
+      "Đối với cơ thể sinh vật: Đa số đột biến gene có hại hoặc trung tính vì phá vỡ cấu trúc hài hòa đã qua chọn lọc; một số ít có lợi trong điều kiện môi trường nhất định.",
+      "Đối với tiến hóa: Tạo ra các allele mới, cung cấp nguồn nguyên liệu sơ cấp dồi dào cho quá trình chọn lọc tự nhiên.",
+      "Đối với chọn giống: Con người chủ động dùng các tác nhân gây đột biến nhân tạo để tạo ra các biến dị có lợi, chọn lọc giống cây trồng, vi sinh vật có năng suất cao, phẩm chất tốt, kháng sâu bệnh."
+    ]
+  }
+]

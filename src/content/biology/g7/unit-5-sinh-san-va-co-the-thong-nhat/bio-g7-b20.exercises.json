@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g7-b20-q01",
+    "lessonId": "bio-g7-b20",
+    "sgkBaiSo": 40,
+    "skillIds": ["bio-sinh-san-huu-tinh"],
+    "difficulty": 1,
+    "prompt": "Khái niệm 'Sinh sản hữu tính' ở sinh vật được định nghĩa chuẩn xác là:",
+    "knowledge": ["kb-bio-g7-sinh-san-huu-tinh-hoa"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Hình thức sinh sản có sự kết hợp giữa giao tử đực và giao tử cái qua thụ tinh tạo thành hợp tử, phát triển thành cơ thể mới" },
+        { "id": "opt-b", "label": "Hình thức sinh sản chỉ cần một phần cành lá của cây mẹ cắm xuống đất ẩm" },
+        { "id": "opt-c", "label": "Quá trình tự phân chia nhân và tế bào chất của trùng biến hình" },
+        { "id": "opt-d", "label": "Hiện tượng nảy chồi con trên thân cơ thể thủy tức" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Sinh sản hữu tính bắt buộc phải có sự tham gia của hai loại tế bào sinh dục." },
+      { "level": 2, "text": "Quá trình dung hợp nhân của tinh trùng/tinh tử với trứng gọi là thụ tinh để tạo hợp tử." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định định nghĩa sinh sản hữu tính", "body": "Tìm phát biểu chuẩn mực về sinh sản hữu tính ở sinh vật." },
+      { "kind": "knowledge", "title": "Định nghĩa sinh sản hữu tính", "body": "Sinh sản hữu tính có sự kết hợp giữa giao tử đực và giao tử cái thông qua thụ tinh để tạo nên hợp tử phát triển thành cá thể mới." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hình thức sinh sản có sự kết hợp giữa giao tử đực và giao tử cái qua thụ tinh tạo thành hợp tử, phát triển thành cơ thể mới." }
+    ],
+    "finalSolution": "Sinh sản hữu tính có sự kết hợp giữa giao tử đực và giao tử cái qua thụ tinh tạo thành hợp tử.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn sinh sản hữu tính với sinh sản sinh dưỡng (vô tính)." }
+    ]
+  },
+  {
+    "id": "bio-g7-b20-q02",
+    "lessonId": "bio-g7-b20",
+    "sgkBaiSo": 40,
+    "skillIds": ["bio-sinh-san-huu-tinh"],
+    "difficulty": 1,
+    "prompt": "Bộ phận nào của hoa mang cơ quan sinh dục đực và cơ quan sinh dục cái?",
+    "knowledge": ["kb-bio-g7-sinh-san-huu-tinh-hoa"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Nhị hoa là cơ quan sinh dục đực (chứa hạt phấn), Nhụy hoa là cơ quan sinh dục cái (chứa noãn)" },
+        { "id": "opt-b", "label": "Cánh hoa là cơ quan sinh dục đực, Đài hoa là cơ quan sinh dục cái" },
+        { "id": "opt-c", "label": "Cuống hoa là cơ quan sinh dục đực, Lá bắc là cơ quan sinh dục cái" },
+        { "id": "opt-d", "label": "Nhị hoa mang noãn, Nhụy hoa chứa hạt phấn" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Nhị hoa mang bao phấn chứa vô số hạt phấn màu vàng." },
+      { "level": 2, "text": "Nhụy hoa nằm ở trung tâm gồm đầu nhụy, vòi nhụy và bầu nhụy chứa noãn." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận diện giải phẫu cơ quan hoa", "body": "Xác định cơ quan sinh dục đực và cái ở thực vật có hoa." },
+      { "kind": "knowledge", "title": "Cấu tạo nhị và nhụy", "body": "Nhị (gồm chỉ nhị và bao phấn mang hạt phấn) là cơ quan đực; Nhụy (gồm đầu nhụy, vòi nhụy, bầu chứa noãn) là cơ quan cái." },
+      { "kind": "answer", "title": "Kết luận", "body": "Nhị hoa là cơ quan sinh dục đực (chứa hạt phấn), Nhụy hoa là cơ quan sinh dục cái (chứa noãn)." }
+    ],
+    "finalSolution": "Nhị hoa là cơ quan sinh dục đực chứa hạt phấn, nhụy hoa là cơ quan sinh dục cái chứa noãn.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Đảo ngược chức năng giữa nhị hoa (đực) và nhụy hoa (cái)." }
+    ]
+  },
+  {
+    "id": "bio-g7-b20-q03",
+    "lessonId": "bio-g7-b20",
+    "sgkBaiSo": 40,
+    "skillIds": ["bio-sinh-san-huu-tinh"],
+    "difficulty": 1,
+    "prompt": "Phân biệt hiện tượng 'Thụ phấn' và 'Thụ tinh' ở thực vật có hoa:",
+    "knowledge": ["kb-bio-g7-sinh-san-huu-tinh-hoa"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Thụ phấn là hiện tượng hạt phấn tiếp xúc đầu nhụy, còn Thụ tinh là sự kết hợp giữa tinh tử và tế bào trứng trong noãn tạo hợp tử" },
+        { "id": "opt-b", "label": "Thụ phấn và thụ tinh là hai từ đồng nghĩa hoàn toàn giống nhau" },
+        { "id": "opt-c", "label": "Thụ tinh diễn ra trước khi hạt phấn tiếp xúc với đầu nhụy" },
+        { "id": "opt-d", "label": "Thụ phấn tạo thành quả, còn thụ tinh tạo thành cánh hoa" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Hạt phấn bay đến bám vào đầu nhụy chỉ mới là bước thụ phấn bên ngoài." },
+      { "level": 2, "text": "Sau đó hạt phấn phải mọc ống phấn chui sâu vào noãn kết hợp giao tử mới gọi là thụ tinh." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân biệt hai khái niệm then chốt", "body": "Làm rõ sự khác nhau giữa thụ phấn (pollination) và thụ tinh (fertilization)." },
+      { "kind": "knowledge", "title": "Cơ chế thụ phấn vs thụ tinh", "body": "Thụ phấn là sự chuyển giao cơ học hạt phấn đến đầu nhụy; thụ tinh là sự dung hợp sinh học giữa tinh tử và trứng trong noãn." },
+      { "kind": "answer", "title": "Kết luận", "body": "Thụ phấn là hiện tượng hạt phấn tiếp xúc đầu nhụy, còn Thụ tinh là sự kết hợp giữa tinh tử và tế bào trứng trong noãn tạo hợp tử." }
+    ],
+    "finalSolution": "Thụ phấn là hạt phấn tiếp xúc đầu nhụy; thụ tinh là sự kết hợp giữa tinh tử và trứng trong noãn tạo hợp tử.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Đồng nhất thụ phấn và thụ tinh là một quá trình duy nhất." }
+    ]
+  },
+  {
+    "id": "bio-g7-b20-q04",
+    "lessonId": "bio-g7-b20",
+    "sgkBaiSo": 40,
+    "skillIds": ["bio-sinh-san-huu-tinh"],
+    "difficulty": 2,
+    "prompt": "Sau khi thụ tinh, các bộ phận của hoa biến đổi thành cấu trúc nào trong quả?",
+    "knowledge": ["kb-bio-g7-sinh-san-huu-tinh-hoa"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Noãn biến đổi thành Hạt (chứa phôi), Bầu nhụy dày lên biến đổi thành Quả" },
+        { "id": "opt-b", "label": "Bao phấn biến đổi thành Hạt, Cánh hoa biến đổi thành Quả" },
+        { "id": "opt-c", "label": "Đầu nhụy biến đổi thành Hạt, Noãn biến đổi thành Quả" },
+        { "id": "opt-d", "label": "Noãn biến đổi thành Cùi thịt, Bầu nhụy rụng đi" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Hạt nằm bên trong quả tương ứng với cấu trúc nằm bên trong bầu nhụy." },
+      { "level": 2, "text": "Noãn chứa hợp tử biến đổi thành hạt, còn thành bầu nhụy bao quanh phát triển thành quả." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định nguồn gốc cấu trúc", "body": "Nguồn gốc hình thành quả và hạt sau quá trình thụ tinh ở hoa." },
+      { "kind": "knowledge", "title": "Sự hình thành hạt và quả", "body": "Hợp tử thành phôi; noãn thành hạt; bầu nhụy phình to phát triển thành quả chứa hạt." },
+      { "kind": "answer", "title": "Kết luận", "body": "Noãn biến đổi thành Hạt (chứa phôi), Bầu nhụy dày lên biến đổi thành Quả." }
+    ],
+    "finalSolution": "Sau thụ tinh: noãn biến đổi thành hạt chứa phôi, bầu nhụy phát triển thành quả.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm noãn thành quả và bầu nhụy thành hạt." }
+    ]
+  },
+  {
+    "id": "bio-g7-b20-q05",
+    "lessonId": "bio-g7-b20",
+    "sgkBaiSo": 40,
+    "skillIds": ["bio-sinh-san-huu-tinh"],
+    "difficulty": 1,
+    "prompt": "Hình thức 'Thụ tinh ngoài' ở động vật có đặc điểm sinh học nào sau đây?",
+    "knowledge": ["kb-bio-g7-sinh-san-dong-vat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Trứng và tinh trùng gặp nhau thụ tinh trong môi trường nước bên ngoài cơ thể con cái (ví dụ: cá chép, ếch đồng)" },
+        { "id": "opt-b", "label": "Tinh trùng thụ tinh trực tiếp trong tử cung của con mẹ" },
+        { "id": "opt-c", "label": "Chỉ xảy ra ở các loài chim và thú ăn thịt trên cạn" },
+        { "id": "opt-d", "label": "Tỷ lệ thụ tinh luôn đạt 100% tuyệt đối" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Thụ tinh diễn ra ở môi trường bên ngoài cơ thể (môi trường nước)." },
+      { "level": 2, "text": "Cá và ếch nhái phóng thích trứng và tinh trùng vào dòng nước để thụ tinh." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định đặc điểm thụ tinh ngoài", "body": "Khảo sát cơ chế thụ tinh ngoài ở động vật sống dưới nước hoặc lưỡng cư." },
+      { "kind": "knowledge", "title": "Đặc trưng thụ tinh ngoài", "body": "Giao tử đực và cái gặp nhau trong môi trường nước ngoài cơ thể; gặp ở cá chép, ếch đồng." },
+      { "kind": "answer", "title": "Kết luận", "body": "Trứng và tinh trùng gặp nhau thụ tinh trong môi trường nước bên ngoài cơ thể con cái (ví dụ: cá chép, ếch đồng)." }
+    ],
+    "finalSolution": "Thụ tinh ngoài là trứng và tinh trùng gặp nhau thụ tinh trong nước bên ngoài cơ thể mẹ (cá, ếch).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng chim và thú cũng thụ tinh ngoài." }
+    ]
+  },
+  {
+    "id": "bio-g7-b20-q06",
+    "lessonId": "bio-g7-b20",
+    "sgkBaiSo": 40,
+    "skillIds": ["bio-sinh-san-huu-tinh"],
+    "difficulty": 2,
+    "prompt": "Tại sao các loài động vật thụ tinh ngoài (như cá chép, ếch đồng) thường phải đẻ số lượng trứng rất lớn (hàng vạn quả mỗi lứa)?",
+    "knowledge": ["kb-bio-g7-sinh-san-dong-vat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Vì tỉ lệ tinh trùng gặp trứng trong nước thấp và trứng/nòng nọc dễ bị dòng nước cuốn trôi hoặc bị kẻ thù ăn thịt" },
+        { "id": "opt-b", "label": "Vì cơ thể cá chép quá thừa năng lượng không biết tiêu thụ vào đâu" },
+        { "id": "opt-c", "label": "Để làm cho nước ao hồ trở nên ấm áp hơn" },
+        { "id": "opt-d", "label": "Vì tất cả số trứng đó sinh ra đều sẽ nở thành con trưởng thành 100%" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Trong môi trường nước mênh mông, tinh trùng có dễ tìm thấy trứng không?" },
+      { "level": 2, "text": "Trứng không được con mẹ bảo vệ nên bị cá khác ăn thịt rất nhiều, đẻ nhiều để bù đắp tỉ lệ sống sót thấp." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Giải thích thích nghi sinh thái", "body": "Lý do thích nghi số lượng trứng đẻ ở động vật thụ tinh ngoài." },
+      { "kind": "knowledge", "title": "Ý nghĩa thích nghi của thụ tinh ngoài", "body": "Hiệu suất thụ tinh thấp và tỉ lệ sống sót phôi kém đòi hỏi đẻ số lượng lớn trứng để đảm bảo duy trì nòi giống." },
+      { "kind": "answer", "title": "Kết luận", "body": "Vì tỉ lệ tinh trùng gặp trứng trong nước thấp và trứng/nòng nọc dễ bị dòng nước cuốn trôi hoặc bị kẻ thù ăn thịt." }
+    ],
+    "finalSolution": "Động vật thụ tinh ngoài đẻ nhiều trứng để bù trừ cho tỷ lệ thụ tinh thấp và rủi ro bị kẻ thù săn ăn trứng trong nước.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng loài nào đẻ nhiều trứng thì số lượng cá thể sống sót đến lúc trưởng thành cũng nhiều bấy nhiêu." }
+    ]
+  },
+  {
+    "id": "bio-g7-b20-q07",
+    "lessonId": "bio-g7-b20",
+    "sgkBaiSo": 40,
+    "skillIds": ["bio-sinh-san-huu-tinh"],
+    "difficulty": 1,
+    "prompt": "Nhóm động vật nào sau đây đều có hình thức THỤ TINH TRONG (tinh trùng phóng trực tiếp vào cơ quan sinh dục con cái)?",
+    "knowledge": ["kb-bio-g7-sinh-san-dong-vat"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Thằn lằn, chim bồ câu, chó, mèo, người" },
+        { "id": "opt-b", "label": "Cá chép, cá mè, ếch đồng, ễnh ương" },
+        { "id": "opt-c", "label": "Thủy tức, san hô, hải quỳ" },
+        { "id": "opt-d", "label": "Sao biển, cầu gai, trai sông" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Động vật sống hoàn toàn trên cạn cần thụ tinh bên trong cơ thể để tinh trùng không bị khô chết." },
+      { "level": 2, "text": "Bò sát, chim và thú đều thụ tinh trong." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại hình thức thụ tinh", "body": "Tìm nhóm sinh vật có hình thức thụ tinh bên trong cơ thể mẹ." },
+      { "kind": "knowledge", "title": "Đại diện thụ tinh trong", "body": "Bò sát, chim, động vật có vú (kể cả con người) thụ tinh trong đảm bảo tỷ lệ sống sót cao." },
+      { "kind": "answer", "title": "Kết luận", "body": "Thằn lằn, chim bồ câu, chó, mèo, người." }
+    ],
+    "finalSolution": "Bò sát, chim và thú (kể cả con người) đều có hình thức thụ tinh trong.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Xếp ếch hoặc cá vào thụ tinh trong (chúng là thụ tinh ngoài)." }
+    ]
+  },
+  {
+    "id": "bio-g7-b20-q08",
+    "lessonId": "bio-g7-b20",
+    "sgkBaiSo": 40,
+    "skillIds": ["bio-sinh-san-huu-tinh", "bio-sinh-san-huu-tinh-vs-vo-tinh"],
+    "difficulty": 2,
+    "prompt": "Ưu điểm tiến hóa lớn nhất của SINH SẢN HỮU TÍNH so với sinh sản vô tính là gì?",
+    "knowledge": ["kb-bio-g7-sinh-san-huu-tinh-vs-vo-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tạo ra nhiều biến dị tổ hợp phong phú, giúp sinh vật thích nghi tốt hơn và sống sót trong môi trường luôn biến đổi" },
+        { "id": "opt-b", "label": "Tốc độ sinh sản nhanh gấp hàng nghìn lần sinh sản vô tính" },
+        { "id": "opt-c", "label": "Không cần tốn năng lượng sản xuất giao tử đực và cái" },
+        { "id": "opt-d", "label": "Các cá thể con sinh ra luôn luôn giống hệt mẹ 100%" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Sự kết hợp giữa gen bố và mẹ tạo ra những kiểu hình đa dạng mới." },
+      { "level": 2, "text": "Tính đa dạng di truyền giúp loài có tiềm năng thích nghi cao hơn trước dịch bệnh và biến đổi khí hậu." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đánh giá ưu thế tiến hóa", "body": "So sánh giá trị thích nghi giữa sinh sản hữu tính và sinh sản vô tính." },
+      { "kind": "knowledge", "title": "Ưu điểm sinh sản hữu tính", "body": "Sinh sản hữu tính tạo biến dị tổ hợp dồi dào, là nguyên liệu cho chọn lọc tự nhiên và giúp loài thích nghi sinh tồn." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tạo ra nhiều biến dị tổ hợp phong phú, giúp sinh vật thích nghi tốt hơn và sống sót trong môi trường luôn biến đổi." }
+    ],
+    "finalSolution": "Sinh sản hữu tính tạo nguồn biến dị tổ hợp phong phú, nâng cao khả năng thích nghi của sinh vật trước môi trường biến đổi.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng sinh sản hữu tính có tốc độ nhân giống nhanh hơn sinh sản vô tính (thực tế vô tính mới nhân giống nhanh hơn)." }
+    ]
+  }
+]

@@ -1,0 +1,554 @@
+[
+  {
+    "id": "bio-g8-b05-q01",
+    "lessonId": "bio-g8-b05",
+    "sgkBaiSo": 34,
+    "skillIds": [
+      "bio-he-ho-hap"
+    ],
+    "difficulty": 1,
+    "prompt": "Vì sao các chuyên gia y tế luôn khuyến cáo nên thở bằng mũi thay vì thở bằng miệng?",
+    "knowledge": [
+      "kb-bio-g8-vai-tro-duong-dan-khi"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Mũi có lông mũi lọc bụi, lớp niêm mạc tiết chất nhầy diệt khuẩn và mạng mao mạch giúp sưởi ấm, làm ẩm không khí"
+        },
+        {
+          "id": "opt-b",
+          "label": "Miệng hoàn toàn không có khả năng dẫn không khí vào đến khí quản"
+        },
+        {
+          "id": "opt-c",
+          "label": "Thở bằng mũi giúp hấp thụ trực tiếp toàn bộ khí oxy vào não bộ mà không qua phổi"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khoang miệng chỉ có chức năng phát ra âm thanh và nhai thức ăn"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khoang mũi được trang bị các cấu trúc bảo vệ tự nhiên mà khoang miệng không có."
+      },
+      {
+        "level": 2,
+        "text": "Lông mũi giữ bụi bẩn, chất nhầy sát khuẩn và mao mạch sưởi ấm luồng khí lạnh."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Chức năng bảo vệ của đường dẫn khí",
+        "body": "Đường dẫn khí ngoài nhiệm vụ dẫn khí còn có vai trò thanh lọc bảo vệ lá phổi."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cấu tạo thích nghi của khoang mũi",
+        "body": "Mũi có lớp lông mũi chặn các hạt bụi thô; niêm mạc tiết chất nhầy giữ bụi mịn và diệt khuẩn; lớp mao mạch dày đặc tỏa nhiệt sưởi ấm luồng khí trước khi đi sâu vào phế nang."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thở bằng mũi giúp lọc bụi, diệt khuẩn, làm ẩm và sưởi ấm không khí bảo vệ đường hô hấp."
+      }
+    ],
+    "finalSolution": "Thở bằng mũi kích hoạt hàng rào bảo vệ tự nhiên, giảm thiểu tối đa nguy cơ viêm nhiễm đường hô hấp dưới.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng thở bằng miệng và thở bằng mũi có hiệu quả thanh lọc không khí như nhau."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b05-q02",
+    "lessonId": "bio-g8-b05",
+    "sgkBaiSo": 34,
+    "skillIds": [
+      "bio-he-ho-hap"
+    ],
+    "difficulty": 1,
+    "prompt": "Cấu trúc nào ở ngã tư đường hô hấp và tiêu hóa có vai trò tự động đậy kín đường thở khi nuốt thức ăn để chống sặc?",
+    "knowledge": [
+      "kb-bio-g8-vai-tro-duong-dan-khi"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Nắp thanh quản (sụn thanh thiệt)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vòng sụn khí quản"
+        },
+        {
+          "id": "opt-c",
+          "label": "Dây thanh âm"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khẩu cái mềm (lưỡi gà)"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cấu trúc sụn này nằm ngay phía trên thanh quản, hoạt động như một nắp van an toàn."
+      },
+      {
+        "level": 2,
+        "text": "Nó đậy kín lỗ thanh quản khi nuốt để thức ăn trượt thẳng vào thực quản."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nguy cơ sặc khi nuốt",
+        "body": "Họng là ngã tư chung của đường ăn và đường thở. Nếu thức ăn lọt vào khí quản sẽ gây phản xạ ho sặc sụa hoặc nghẹt thở."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế đậy của nắp thanh quản",
+        "body": "Khi cử động nuốt, thanh quản bị kéo nhô lên phía trên khiến nắp thanh quản (sụn thanh thiệt) tự động gập xuống đậy kín đường vào khí quản, ép viên thức ăn trượt an toàn vào thực quản."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nắp thanh quản (sụn thanh thiệt) đậy kín đường thở khi nuốt."
+      }
+    ],
+    "finalSolution": "Nắp thanh quản là van sinh học hoàn hảo ngăn ngừa dị vật và thức ăn rơi vào đường hô hấp.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm nắp thanh quản với lưỡi gà (lưỡi gà đậy đường thông lên mũi phía sau vòm họng)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b05-q03",
+    "lessonId": "bio-g8-b05",
+    "sgkBaiSo": 34,
+    "skillIds": [
+      "bio-he-ho-hap"
+    ],
+    "difficulty": 2,
+    "prompt": "Đặc điểm cấu tạo nào của phế nang giúp hai lá phổi người tối ưu hóa quá trình trao đổi khí với máu?",
+    "knowledge": [
+      "kb-bio-g8-phe-nang-trao-doi-khi"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Số lượng khổng lồ (~700 - 800 triệu phế nang), diện tích bề mặt lớn (~70 - 100 m²), thành mỏng và mạng mao mạch bao bọc dày đặc"
+        },
+        {
+          "id": "opt-b",
+          "label": "Có lớp sụn cứng hình chữ C bao quanh và có van đóng mở tự động"
+        },
+        {
+          "id": "opt-c",
+          "label": "Thành phế nang cấu tạo từ 3 lớp cơ trơn dày dặn để co bóp đẩy khí"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chỉ có khoảng vài trăm túi khí lớn để giảm sức cản của luồng khí thở"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Để khí khuếch tán nhanh, diện tích tiếp xúc phải cực lớn và bề mặt màng phải cực mỏng."
+      },
+      {
+        "level": 2,
+        "text": "Hàng trăm triệu phế nang tạo bề mặt trao đổi khí rộng bằng cả một sân bóng nhỏ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Yêu cầu trao đổi khí ở phổi",
+        "body": "Trao đổi khí cần diện tích tiếp xúc lớn, màng trao đổi mỏng và mạng lưới mạch máu phong phú."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cấu trúc vi thể của phế nang",
+        "body": "Khoảng 700 - 800 triệu phế nang trải rộng diện tích tới 70 - 100 m². Mỗi phế nang chỉ có một lớp tế bào biểu mô mỏng tiếp xúc trực tiếp với mao mạch máu giúp O2 và CO2 khuếch tán gần như tức thì."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Số lượng lớn, diện tích bề mặt 70-100 m², thành mỏng và mạng mao mạch dày đặc là đặc điểm tối ưu của phế nang."
+      }
+    ],
+    "finalSolution": "Phế nang là đơn vị cấu trúc và chức năng trao đổi khí tinh vi và hiệu quả nhất của hệ hô hấp người.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng phế nang có các vòng sụn cứng (vòng sụn chỉ có ở khí quản và phế quản lớn)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b05-q04",
+    "lessonId": "bio-g8-b05",
+    "sgkBaiSo": 34,
+    "skillIds": [
+      "bio-he-ho-hap"
+    ],
+    "difficulty": 2,
+    "prompt": "Diễn biến áp suất và thể tích khoang ngực trong cử động hít vào diễn ra như thế nào?",
+    "knowledge": [
+      "kb-bio-g8-co-che-thong-khi-hit-tho"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Thể tích lồng ngực tăng lên → Áp suất trong khoang ngực giảm nhỏ hơn áp suất khí quyển → Không khí bị hút vào phổi"
+        },
+        {
+          "id": "opt-b",
+          "label": "Thể tích lồng ngực giảm xuống → Áp suất trong khoang ngực tăng cao hơn áp suất khí quyển → Không khí bị nén vào phổi"
+        },
+        {
+          "id": "opt-c",
+          "label": "Thể tích lồng ngực không đổi, không khí tự di chuyển vào do chênh lệch nhiệt độ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cơ hoành đẩy lên cao làm nén phổi hút không khí tràn vào"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Chất khí luôn chảy từ nơi có áp suất cao về nơi có áp suất thấp."
+      },
+      {
+        "level": 2,
+        "text": "Khi lồng ngực nở to, thể tích tăng khiến áp suất giảm tạo lực hút chân không."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nguyên lí khí động học của sự thở",
+        "body": "Không khí lưu thông giữa phổi và khí quyển theo quy luật chênh lệch áp suất."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế cử động hít vào",
+        "body": "Cơ liên sườn co nâng xương sườn, cơ hoành co hạ phẳng xuống làm khoang ngực nở rộng, thể tích tăng dẫn đến áp suất phế nang giảm thấp hơn áp suất khí quyển bên ngoài, khiến dòng không khí tự động ùa vào phổi."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thể tích lồng ngực tăng làm áp suất khoang ngực giảm nhỏ hơn áp suất khí quyển, hút không khí vào phổi."
+      }
+    ],
+    "finalSolution": "Cử động hít vào là quá trình chủ động làm tăng thể tích khoang ngực, tạo áp suất âm hút khí vào phế nang.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm lẫn rằng không khí tràn vào trước rồi mới làm lồng ngực phồng lên (thực tế cơ nâng lồng ngực phồng lên trước rồi mới hút khí vào)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b05-q05",
+    "lessonId": "bio-g8-b05",
+    "sgkBaiSo": 34,
+    "skillIds": [
+      "bio-he-ho-hap"
+    ],
+    "difficulty": 2,
+    "prompt": "Sự trao đổi khí O2 và CO2 giữa phế nang với máu mao mạch phổi diễn ra theo cơ chế vật lí nào?",
+    "knowledge": [
+      "kb-bio-g8-trao-doi-khi-khuech-tan"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Cơ chế khuếch tán thụ động từ nơi có phân áp cao đến nơi có phân áp thấp"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cơ chế vận chuyển chủ động tiêu tốn lượng lớn năng lượng ATP"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cơ chế thẩm thấu chọn lọc qua màng sinh chất tế bào"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cơ chế co bóp cơ học của thành mao mạch máu"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Các phân tử khí di chuyển tự do qua màng mỏng mà không tiêu tốn ATP."
+      },
+      {
+        "level": 2,
+        "text": "Khí di chuyển từ nơi có nồng độ (phân áp) cao về nơi có nồng độ (phân áp) thấp hơn, gọi là khuếch tán."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất trao đổi khí",
+        "body": "Trao đổi khí là sự chuyển động của các phân tử khí qua màng hô hấp mỏng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Định luật khuếch tán khí",
+        "body": "O2 có phân áp trong phế nang cao hơn trong máu mao mạch nên tự khuếch tán vào máu; ngược lại CO2 có phân áp trong máu cao hơn trong phế nang nên khuếch tán vào lòng phế nang mà không tốn năng lượng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Diễn ra theo cơ chế khuếch tán thụ động từ nơi có phân áp cao sang phân áp thấp."
+      }
+    ],
+    "finalSolution": "Trao đổi khí ở phổi và tế bào hoàn toàn dựa trên sự chênh lệch phân áp khuếch tán tự nhiên của các chất khí.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng trao đổi khí cần tiêu hao năng lượng ATP như vận chuyển chủ động."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b05-q06",
+    "lessonId": "bio-g8-b05",
+    "sgkBaiSo": 34,
+    "skillIds": [
+      "bio-he-ho-hap"
+    ],
+    "difficulty": 2,
+    "prompt": "Tại các tế bào của mô cơ quan, quá trình trao đổi khí diễn ra theo chiều hướng nào?",
+    "knowledge": [
+      "kb-bio-g8-trao-doi-khi-khuech-tan"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "O2 khuếch tán từ máu mao mạch vào tế bào; CO2 khuếch tán từ tế bào vào máu mao mạch"
+        },
+        {
+          "id": "opt-b",
+          "label": "O2 khuếch tán từ tế bào vào máu mao mạch; CO2 khuếch tán từ máu vào tế bào"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cả O2 và CO2 đều cùng khuếch tán từ máu mao mạch vào trong tế bào"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cả O2 và CO2 đều cùng khuếch tán từ tế bào ra dòng máu mao mạch"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tế bào liên tục tiêu thụ oxy để hô hấp tế bào sinh năng lượng và thải ra khí cacbonic."
+      },
+      {
+        "level": 2,
+        "text": "Máu động mạch đỏ tươi đem O2 cấp cho tế bào và thu nhận CO2 biến thành máu đỏ thẫm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Chuyển hóa tại tế bào",
+        "body": "Tế bào hô hấp tiêu thụ O2 liên tục nên nồng độ O2 trong tế bào luôn thấp; đồng thời sinh nhiều CO2 nên nồng độ CO2 trong tế bào luôn cao."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Chiều khuếch tán khí ở mô",
+        "body": "Phân áp O2 trong máu mao mạch cao hơn tế bào nên O2 khuếch tán vào tế bào; phân áp CO2 trong tế bào cao hơn máu mao mạch nên CO2 khuếch tán vào máu để đưa về phổi bài tiết."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "O2 khuếch tán từ máu vào tế bào; CO2 khuếch tán từ tế bào vào máu."
+      }
+    ],
+    "finalSolution": "Trao đổi khí ở mô cấp dưỡng khí O2 cho ty thể tạo ATP và thu dọn khí thải CO2 đưa ra ngoài cơ thể.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Đảo ngược chiều khuếch tán khí ở mô với chiều khuếch tán khí tại phế nang phổi."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b05-q07",
+    "lessonId": "bio-g8-b05",
+    "sgkBaiSo": 34,
+    "skillIds": [
+      "bio-he-ho-hap"
+    ],
+    "difficulty": 2,
+    "prompt": "Khí carbon monoxide (CO) có trong khói thuốc lá và khí đốt than gây nguy hiểm tính mạng cho người hít phải do cơ chế nào?",
+    "knowledge": [
+      "kb-bio-g8-ve-sinh-ho-hap-thuoc-la"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Khí CO liên kết rất chặt chẽ và bền vững với hemoglobin, chiếm chỗ của O2 làm hồng cầu mất khả năng vận chuyển oxy"
+        },
+        {
+          "id": "opt-b",
+          "label": "Khí CO ăn mòn phá hủy toàn bộ lớp sụn khí quản trong tích tắc"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khí CO hòa tan màng tế bào bạch cầu khiến hệ miễn dịch sụp đổ tức thời"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khí CO kích thích các phế nang tiết quá nhiều dịch nhầy gây tắc nghẽn hoàn toàn"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khí CO cạnh tranh trực tiếp vị trí gắn kết với O2 trên phân tử sắc tố hồng cầu."
+      },
+      {
+        "level": 2,
+        "text": "Lực liên kết giữa CO với hemoglobin mạnh gấp hơn 200 lần so với O2, biến hồng cầu thành vô dụng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Độc tính của khí CO",
+        "body": "Khí CO không màu, không mùi, sinh ra khi đốt cháy không hoàn toàn than củi hoặc có trong khói thuốc lá."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế gây ngạt của CO",
+        "body": "CO có ái lực với hemoglobin (Hb) cao gấp hơn 200 lần so với O2, tạo hợp chất rất bền vững cacboxyhemoglobin (HbCO). Điều này làm tê liệt khả năng gắn và vận chuyển O2 của hồng cầu, khiến tế bào não chết ngạt vì thiếu oxy."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "CO liên kết rất chặt chẽ với hemoglobin, chiếm chỗ của O2 làm hồng cầu mất khả năng vận chuyển oxy."
+      }
+    ],
+    "finalSolution": "Khí CO trong khói than và khói thuốc là chất gây ngạt tế bào cực kì nguy hiểm vì nó trực tiếp vô hiệu hóa huyết sắc tố hồng cầu.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm khí độc CO (carbon monoxide) với khí CO2 (carbon dioxide - sản phẩm thải hô hấp thông thường)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b05-q08",
+    "lessonId": "bio-g8-b05",
+    "sgkBaiSo": 34,
+    "skillIds": [
+      "bio-he-ho-hap"
+    ],
+    "difficulty": 3,
+    "prompt": "Khi thực hiện sơ cứu hồi sinh tim phổi (CPR) cho nạn nhân bị ngạt thở ngừng tim do đuối nước, chu kì phối hợp chuẩn giữa ép tim và thổi ngạt là bao nhiêu?",
+    "knowledge": [
+      "kb-bio-g8-ve-sinh-ho-hap-thuoc-la"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "30 lần ép tim ngoài lồng ngực liên tiếp phối hợp với 2 lần hà hơi thổi ngạt (tỉ lệ 30 : 2)"
+        },
+        {
+          "id": "opt-b",
+          "label": "5 lần ép tim phối hợp với 5 lần thổi ngạt (tỉ lệ 5 : 5)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chỉ thổi ngạt liên tục 50 lần mà không cần ép tim"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chỉ ép tim 100 lần liên tục mà tuyệt đối không được thổi ngạt"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ép tim tạo dòng máu nhân tạo lưu thông nuôi não, thổi ngạt cung cấp oxy vào phổi."
+      },
+      {
+        "level": 2,
+        "text": "Quy chuẩn cấp cứu quốc tế khuyến nghị tỉ lệ 30 lần ép tim xen kẽ 2 lần thổi ngạt."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu của kĩ thuật CPR",
+        "body": "Hồi sinh tim phổi nhằm duy trì tuần hoàn máu não và nạp oxy vào phổi khi nạn nhân ngừng thở, ngừng tim."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tỉ lệ chu kì chuẩn",
+        "body": "Người sơ cứu đặt hai bàn tay lồng vào nhau ở nửa dưới xương ức nạn nhân, ép sâu 5-6 cm với tốc độ 100 - 120 lần/phút; thực hiện 30 lần ép tim thì chuyển sang bịt mũi nâng cằm hà hơi thổi ngạt 2 lần liên tiếp (chu kì 30 : 2)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tỉ lệ chuẩn là 30 lần ép tim kết hợp 2 lần hà hơi thổi ngạt."
+      }
+    ],
+    "finalSolution": "Phối hợp 30 lần ép tim và 2 lần thổi ngạt là kĩ năng sơ cấp cứu chuẩn mực quốc tế giúp bảo toàn sự sống cho nạn nhân ngạt thở.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Ép tim quá ít hoặc chỉ thổi ngạt mà không ép tim khiến máu không được bơm lên não."
+      }
+    ]
+  }
+]

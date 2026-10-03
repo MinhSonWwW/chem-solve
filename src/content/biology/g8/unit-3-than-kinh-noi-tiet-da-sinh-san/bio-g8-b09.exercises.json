@@ -1,0 +1,554 @@
+[
+  {
+    "id": "bio-g8-b09-q01",
+    "lessonId": "bio-g8-b09",
+    "sgkBaiSo": 38,
+    "skillIds": [
+      "bio-he-noi-tiet"
+    ],
+    "difficulty": 1,
+    "prompt": "Điểm khác biệt căn bản nhất về mặt cấu tạo giữa tuyến nội tiết và tuyến ngoại tiết là gì?",
+    "knowledge": [
+      "kb-bio-g8-phan-biet-tuyen-noi-tiet"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tuyến nội tiết không có ống dẫn, chất tiết (hormone) ngấm trực tiếp vào dòng máu tuần hoàn"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tuyến ngoại tiết không có ống dẫn, tiết chất trực tiếp qua màng tế bào vào tủy xương"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tuyến nội tiết có ống dẫn rất lớn đưa chất tiết ra ngoài bề mặt da"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cả hai loại tuyến đều có cấu tạo và con đường vận chuyển chất tiết giống hệt nhau"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tuyến mồ hôi có ống dẫn đổ mồ hôi ra da; tuyến yên hay tuyến giáp không hề có ống dẫn."
+      },
+      {
+        "level": 2,
+        "text": "Tuyến nội tiết tiết các hormone thẳng vào mạng mao mạch máu phong phú bên trong tuyến."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân loại các tuyến trong cơ thể",
+        "body": "Cơ thể có tuyến ngoại tiết (tiết dịch có ống dẫn) và tuyến nội tiết (tiết hormone không có ống dẫn)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc trưng của tuyến nội tiết",
+        "body": "Tuyến nội tiết hoàn toàn không có ống dẫn riêng. Các tế bào tuyến giải phóng sản phẩm tiết (hormone) trực tiếp vào dịch kẽ và mao mạch máu bao quanh để dòng máu vận chuyển đến cơ quan đích khắp cơ thể."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tuyến nội tiết không có ống dẫn, hormone ngấm trực tiếp vào máu."
+      }
+    ],
+    "finalSolution": "Không có ống dẫn và đưa hormone thẳng vào hệ mạch máu là đặc điểm nhận diện cốt lõi của mọi tuyến nội tiết.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng tuyến nội tiết có ống dẫn dẫn hormone vào tim."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b09-q02",
+    "lessonId": "bio-g8-b09",
+    "sgkBaiSo": 38,
+    "skillIds": [
+      "bio-he-noi-tiet"
+    ],
+    "difficulty": 1,
+    "prompt": "Hormone do các tuyến nội tiết tiết ra mang những tính chất sinh học đặc trưng nào sau đây?",
+    "knowledge": [
+      "kb-bio-g8-phan-biet-tuyen-noi-tiet"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tính đặc hiệu cao, hoạt tính sinh học cực mạnh và không mang tính đặc trưng cho loài"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tác động lên mọi tế bào trong cơ thể với liều lượng cực lớn hàng kilogam"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mỗi loài sinh vật chỉ có một loại hormone duy nhất và không bao giờ bị phân hủy"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chỉ hoạt động được khi nhiệt độ cơ thể hạ xuống dưới 0°C"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Chỉ cần một lượng vết siêu nhỏ hormone đã gây biến đổi chuyển hóa to lớn."
+      },
+      {
+        "level": 2,
+        "text": "Mỗi hormone gắn đúng thụ thể tế bào đích (tính đặc hiệu) và insulin động vật dùng được cho người (không đặc trưng loài)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tính chất của hormone sinh học",
+        "body": "Hormone là các chất hóa học truyền tin do tuyến nội tiết sản xuất với nồng độ cực thấp."
+      },
+      {
+        "kind": "knowledge",
+        "title": "3 đặc tính nền tảng của hormone",
+        "body": "1. Tính đặc hiệu (chỉ tác động lên cơ quan đích có thụ thể tương ứng); 2. Hoạt tính sinh học rất cao (chỉ cần nồng độ 10^-9 đến 10^-12 mol/L); 3. Không đặc trưng cho loài (hormone cùng loại ở các loài thú có cấu trúc hóa học tương tự)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tính đặc hiệu cao, hoạt tính sinh học cực mạnh và không đặc trưng cho loài."
+      }
+    ],
+    "finalSolution": "Nhờ tính không đặc trưng loài, y học có thể chiết xuất insulin từ tụy bò, lợn để điều trị bệnh đái tháo đường ở người.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng hormone tác động bừa bãi lên mọi tế bào mà không cần thụ thể đặc hiệu."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b09-q03",
+    "lessonId": "bio-g8-b09",
+    "sgkBaiSo": 38,
+    "skillIds": [
+      "bio-he-noi-tiet"
+    ],
+    "difficulty": 2,
+    "prompt": "Hormone sinh trưởng GH do thùy trước tuyến yên tiết ra nếu bị rối loạn bài tiết ở lứa tuổi thiếu niên sẽ dẫn đến hậu quả gì?",
+    "knowledge": [
+      "kb-bio-g8-tuyen-yen-hormone-gh"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tiết quá nhiều gây bệnh người khổng lồ; tiết quá ít gây bệnh người lùn cân đối"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tiết quá nhiều gây bệnh đái tháo đường; tiết quá ít gây bệnh suy thận"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tiết quá nhiều gây mất màu tóc; tiết quá ít gây mất giọng nói"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hoàn toàn không ảnh hưởng đến chiều cao hay hình vóc cơ thể"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "GH kích thích tăng trưởng phân chia tế bào xương dài khi còn sụn tăng trưởng."
+      },
+      {
+        "level": 2,
+        "text": "Thừa GH lúc nhỏ làm cơ thể cao lớn bất thường (>2,2m), thiếu GH làm ngừng lớn trở thành người lùn tỉ lệ đều đặn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Vai trò của hormone GH tuyến yên",
+        "body": "Growth Hormone (GH) kiểm soát sự phát triển chiều dài xương và sinh khối cơ thể."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Rối loạn GH ở tuổi đang lớn",
+        "body": "Ở giai đoạn trước tuổi dậy thì, nếu ưu năng tiết quá nhiều GH sẽ dẫn đến bệnh khổng lồ (gigantism). Ngược lại, nếu nhược năng thiếu hụt GH sẽ gây bệnh lùn tuyến yên (dwarfism) với cơ thể nhỏ bé nhưng tỉ lệ các phần vẫn cân đối."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Thừa GH gây bệnh người khổng lồ, thiếu GH gây bệnh người lùn cân đối."
+      }
+    ],
+    "finalSolution": "Tuyến yên đóng vai trò trung tâm điều hòa tăng trưởng thể chất của con người thông qua hormone GH.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm bệnh lùn tuyến yên (cân đối) với bệnh lùn do suy giáp bẩm sinh (đần độn, cơ thể mất cân đối)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b09-q04",
+    "lessonId": "bio-g8-b09",
+    "sgkBaiSo": 38,
+    "skillIds": [
+      "bio-he-noi-tiet"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi khẩu phần ăn uống hàng ngày thiếu hụt nguyên tố vi lượng Iod (I), tuyến giáp sẽ phản ứng như thế nào và gây ra bệnh lí gì?",
+    "knowledge": [
+      "kb-bio-g8-tuyen-giap-basedow-buou-co"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Không tổng hợp đủ hormone Thyroxine, tuyến yên tăng tiết TSH kích thích tuyến giáp phì đại tạo thành bệnh bướu cổ"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tuyến giáp lập tức teo biến hoàn toàn làm ngừng mọi hoạt động của tim"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tuyến giáp tiết ra lượng lớn acid clohiđric gây bỏng rát vòm họng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Làm cho mắt lồi to và sụt cân nhanh chóng tạo thành bệnh Basedow"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Iod là nguyên liệu tổng hợp Thyroxine. Thiếu Iod, tuyến giáp phải phình to để cố bắt lấy lượng iod ít ỏi."
+      },
+      {
+        "level": 2,
+        "text": "Cơ chế liên hệ ngược: Thyroxine giảm làm tuyến yên tiết TSH kích thích tuyến giáp to ra tạo bướu cổ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mối quan hệ giữa Iod và tuyến giáp",
+        "body": "Thyroxine chứa thành phần chính là các nguyên tử Iod."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cơ chế sinh bệnh bướu cổ",
+        "body": "Khi thiếu Iod, nồng độ Thyroxine trong máu hạ thấp. Tuyến yên phản ứng bù trừ bằng cách tăng tiết TSH kích thích tuyến giáp tăng sinh tế bào làm việc quá tải, khiến tuyến giáp phì đại to thành khối u ở cổ gọi là bệnh bướu cổ."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Không tổng hợp đủ Thyroxine, tuyến yên kích thích tuyến giáp phì đại gây bướu cổ."
+      }
+    ],
+    "finalSolution": "Bổ sung muối iod vào bữa ăn hàng ngày là biện pháp y tế cộng đồng hữu hiệu nhất phòng chống bệnh bướu cổ và thiểu năng trí tuệ.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm bệnh bướu cổ do thiếu iod (nhược năng) với bệnh Basedow (ưu năng tuyến giáp tiết thừa thyroxine)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b09-q05",
+    "lessonId": "bio-g8-b09",
+    "sgkBaiSo": 38,
+    "skillIds": [
+      "bio-he-noi-tiet"
+    ],
+    "difficulty": 2,
+    "prompt": "Bệnh Basedow xảy ra do nguyên nhân nào và có những triệu chứng điển hình gì?",
+    "knowledge": [
+      "kb-bio-g8-tuyen-giap-basedow-buou-co"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Tuyến giáp hoạt động quá mạnh tiết thừa Thyroxine; triệu chứng gồm bướu cổ, mắt lồi, tim đập nhanh, sút cân và mất ngủ"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tuyến tụy ngừng tiết insulin gây tăng đường huyết và tiểu nhiều"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tuyến trên thận bị teo làm tụt huyết áp và da sạm đen"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tuyến yên tiết quá ít hormone GH khiến cơ thể còi cọc"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đây là hội chứng cường giáp (ưu năng tuyến giáp) khiến trao đổi chất tăng tốc quá mức."
+      },
+      {
+        "level": 2,
+        "text": "Bệnh nhân có biểu hiện mắt lồi to, người gầy sút, tim đập hồi hộp và tính khí nóng nảy."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất bệnh Basedow",
+        "body": "Basedow là bệnh tự miễn gây cường năng tuyến giáp."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hậu quả của dư thừa Thyroxine",
+        "body": "Tuyến giáp tiết quá nhiều Thyroxine đẩy tốc độ oxy hóa tế bào lên cao, sinh nhiệt nhiều khiến người luôn nóng nực, sút cân nhanh dù ăn nhiều, nhịp tim nhanh hồi hộp, bồn chồn mất ngủ và nhãn cầu bị đẩy lồi ra phía trước."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tuyến giáp ưu năng tiết thừa Thyroxine gây bướu cổ, mắt lồi, tim đập nhanh và sút cân."
+      }
+    ],
+    "finalSolution": "Basedow là bệnh lí cường giáp điển hình, cần dùng thuốc ức chế tổng hợp hormone hoặc phẫu thuật thu nhỏ tuyến giáp.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng Basedow là do thiếu iod (Basedow là cường giáp do thừa hoạt tính thyroxine)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b09-q06",
+    "lessonId": "bio-g8-b09",
+    "sgkBaiSo": 38,
+    "skillIds": [
+      "bio-he-noi-tiet"
+    ],
+    "difficulty": 2,
+    "prompt": "Vì sao tuyến tụy được các nhà sinh học gọi là một tuyến pha điển hình trong cơ thể người?",
+    "knowledge": [
+      "kb-bio-g8-tuyen-tuy-tuyen-tren-than"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Vừa có phần ngoại tiết tiết dịch tụy tiêu hóa qua ống dẫn, vừa có phần nội tiết (đảo tụy) tiết hormone Insulin và Glucagon trực tiếp vào máu"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vừa có chức năng lọc máu tạo nước tiểu, vừa có chức năng hô hấp trao đổi khí"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vừa dẫn truyền xung điện thần kinh, vừa co rút bắp cơ tạo chuyển động"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tồn tại ở cả thể rắn và thể lỏng tùy theo thời gian trong ngày"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tuyến pha là tuyến vừa mang chức năng ngoại tiết vừa mang chức năng nội tiết."
+      },
+      {
+        "level": 2,
+        "text": "Dịch tụy tiêu hóa đổ vào tá tràng (ngoại tiết); đảo tụy tiết insulin/glucagon vào máu (nội tiết)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Khái niệm tuyến pha",
+        "body": "Tuyến pha là cơ quan thực hiện song song cả hai chức năng nội tiết và ngoại tiết."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cấu trúc kép của tuyến tụy",
+        "body": "Phần lớn mô tụy là các túi tụy ngoại tiết sản xuất dịch tụy dẫn qua ống tụy đổ vào tá tràng để tiêu hóa thức ăn. Xen kẽ giữa các túi tụy là các đảo tụy Langerhans (nội tiết) tiết hai hormone Insulin và Glucagon trực tiếp vào dòng máu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Tuyến tụy là tuyến pha vì vừa ngoại tiết dịch tụy vừa nội tiết hormone insulin và glucagon."
+      }
+    ],
+    "finalSolution": "Cấu trúc vừa nội tiết vừa ngoại tiết của tuyến tụy đảm bảo sự tích hợp hoàn hảo giữa tiêu hóa và chuyển hóa năng lượng.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng toàn bộ tuyến tụy chỉ làm nhiệm vụ tiêu hóa hoặc chỉ làm nhiệm vụ nội tiết."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b09-q07",
+    "lessonId": "bio-g8-b09",
+    "sgkBaiSo": 38,
+    "skillIds": [
+      "bio-he-noi-tiet"
+    ],
+    "difficulty": 2,
+    "prompt": "Khi một người bất ngờ đối mặt với tình huống nguy hiểm cấp bách (gặp thú dữ, hỏa hoạn), phần tủy tuyến trên thận tiết hormone nào giúp cơ thể phản ứng tức thì?",
+    "knowledge": [
+      "kb-bio-g8-tuyen-tuy-tuyen-tren-than"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Adrenaline và Noradrenaline (làm tăng nhịp tim, co mạch, tăng huyết áp, dãn phế quản và tăng đường huyết)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Insulin (làm hạ đường huyết và hạ nhịp tim xuống mức thấp nhất)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Melatonin (làm cho mắt buồn ngủ và cơ bắp thư dãn)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Calcitonin (làm cho xương mềm dẻo hơn)"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hormone này kích hoạt phản ứng sinh tồn kinh điển 'chống trả hoặc bỏ chạy' (fight or flight)."
+      },
+      {
+        "level": 2,
+        "text": "Tủy tuyến trên thận tiết Adrenaline giúp tim đập thình thịch, thở gấp, đồng tử dãn to."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đáp ứng stress khẩn cấp",
+        "body": "Cơ thể cần huy động tối đa oxy và năng lượng trong vài giây để sinh tồn trước hiểm nguy."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tác động của Adrenaline",
+        "body": "Tủy tuyến trên thận tiết ngay Adrenaline và Noradrenaline. Các hormone này làm tim đập nhanh và mạnh, co mạch da và nội tạng để dồn máu nuôi não và cơ bắp, dãn khí phế quản nạp oxy, tăng phân giải đường giúp cơ thể sẵn sàng chiến đấu hoặc tháo chạy."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Adrenaline và Noradrenaline làm tăng nhịp tim, huyết áp và năng lượng đáp ứng nguy hiểm."
+      }
+    ],
+    "finalSolution": "Adrenaline là hormone báo động khẩn cấp tối ưu hóa sinh lí tức thì giúp con người vượt qua các tình huống sinh tử.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng tuyến trên thận chỉ tiết hormone điều hòa muối khoáng của vỏ tuyến."
+      }
+    ]
+  },
+  {
+    "id": "bio-g8-b09-q08",
+    "lessonId": "bio-g8-b09",
+    "sgkBaiSo": 38,
+    "skillIds": [
+      "bio-he-noi-tiet"
+    ],
+    "difficulty": 3,
+    "prompt": "Hormone Testosterone (ở nam) và Estrogen (ở nữ) giữ vai trò chủ đạo nào trong giai đoạn dậy thì của thanh thiếu niên?",
+    "knowledge": [
+      "kb-bio-g8-tuyen-tuy-tuyen-tren-than"
+    ],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Kích thích hoàn thiện cơ quan sinh dục và làm xuất hiện các đặc tính sinh dục phụ thứ cấp đặc trưng cho giới tính"
+        },
+        {
+          "id": "opt-b",
+          "label": "Làm ngừng hoàn toàn sự phát triển của hệ xương và răng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Trực tiếp tiêu hóa toàn bộ lipid và protein trong máu"
+        },
+        {
+          "id": "opt-d",
+          "label": "Ức chế mọi hoạt động tiết hormone của tuyến yên và não bộ"
+        }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tuổi dậy thì gắn liền với sự thay đổi vóc dáng, giọng nói và khả năng sinh sản của cả nam và nữ."
+      },
+      {
+        "level": 2,
+        "text": "Testosterone làm nam vỡ giọng, nở vai, mọc râu; Estrogen làm nữ nở ngực, phát triển hông, giọng thanh."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hiện tượng biến đổi ở tuổi dậy thì",
+        "body": "Tuổi dậy thì đánh dấu bước ngoặt trưởng thành sinh dục và giới tính của con người."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Vai trò của hormone sinh dục",
+        "body": "Testosterone (do tinh hoàn tiết) và Estrogen (do buồng trứng tiết) kích thích hoàn thiện cơ quan sinh dục, sản sinh giao tử, đồng thời phát triển các dấu hiệu sinh dục phụ thứ cấp: phát triển cơ bắp, vỡ giọng trầm (nam) hoặc tích mỡ dưới da mềm mại, giọng thanh, nở ngực và hông (nữ)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Kích thích hoàn thiện cơ quan sinh dục và xuất hiện đặc tính sinh dục phụ thứ cấp."
+      }
+    ],
+    "finalSolution": "Sự bài tiết mạnh mẽ của Testosterone và Estrogen là động lực sinh học biến đổi một đứa trẻ thành người trưởng thành hoàn chỉnh về giới tính.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng hormone sinh dục chỉ xuất hiện sau khi đã sinh con."
+      }
+    ]
+  }
+]

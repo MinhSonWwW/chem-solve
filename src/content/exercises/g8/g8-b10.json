@@ -2,120 +2,286 @@
   {
     "id": "g8-b10-mcq-001",
     "lessonId": "g8-b10",
-    "skillIds": ["oxide-classification"],
+    "skillIds": [
+      "oxide-classification"
+    ],
     "difficulty": 1,
     "prompt": "Chất nào sau đây là một oxide acid (oxit axit) gây ra hiện tượng mưa acid?",
-    "given": [{ "label": "Hiện tượng", "value": "Mưa axit (acid rain)" }],
-    "find": { "label": "Oxide acid tương ứng" },
-    "knowledge": ["oxide.acid-rain"],
+    "given": [
+      {
+        "label": "Hiện tượng",
+        "value": "Mưa axit (acid rain)"
+      }
+    ],
+    "find": {
+      "label": "Oxide acid tương ứng"
+    },
+    "knowledge": [
+      "oxide.acid-rain"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-1", "label": "SO2 (Lưu huỳnh đioxit)" },
-        { "id": "opt-2", "label": "CaO (Canxi oxit)" },
-        { "id": "opt-3", "label": "Na2O (Natri oxit)" },
-        { "id": "opt-4", "label": "CuO (Đồng(II) oxit)" }
+        {
+          "id": "opt-1",
+          "label": "SO2 (Lưu huỳnh đioxit)"
+        },
+        {
+          "id": "opt-2",
+          "label": "CaO (Canxi oxit)"
+        },
+        {
+          "id": "opt-3",
+          "label": "Na2O (Natri oxit)"
+        },
+        {
+          "id": "opt-4",
+          "label": "CuO (Đồng(II) oxit)"
+        }
       ],
       "correctId": "opt-1"
     },
     "hints": [
-      { "level": 1, "text": "Oxide acid thường là oxide của phi kim như S, C, N." },
-      { "level": 2, "text": "CaO, Na2O, CuO là oxide của kim loại (oxide base)." }
+      {
+        "level": 1,
+        "text": "Oxide acid thường là oxide của phi kim như S, C, N."
+      },
+      {
+        "level": 2,
+        "text": "CaO, Na2O, CuO là oxide của kim loại (oxide base)."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Xác định nguyên tố", "body": "SO2 gồm phi kim S liên kết với nguyên tố O." },
-      { "kind": "knowledge", "title": "Tính chất oxide acid", "body": "Oxide phi kim SO2 tác dụng với nước trong khí quyển tạo thành axit H2SO3 gây mưa acid." },
-      { "kind": "answer", "title": "Kết luận", "body": "Chất cần tìm là SO2 (opt-1)." }
+      {
+        "kind": "identify",
+        "title": "Xác định nguyên tố",
+        "body": "SO2 gồm phi kim S liên kết với nguyên tố O."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tính chất oxide acid",
+        "body": "Oxide phi kim SO2 tác dụng với nước trong khí quyển tạo thành axit H2SO3 gây mưa acid."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Chất cần tìm là SO2 (opt-1)."
+      }
     ],
     "commonMistakes": [
-      { "id": "cm-base-oxide", "message": "Nhầm oxide base với oxide acid. CaO, Na2O là oxide base của kim loại." }
+      {
+        "id": "cm-base-oxide",
+        "message": "Nhầm oxide base với oxide acid. CaO, Na2O là oxide base của kim loại."
+      }
     ],
     "finalSolution": "SO2 (Lưu huỳnh đioxit)"
   },
   {
     "id": "g8-b10-mcq-002",
     "lessonId": "g8-b10",
-    "skillIds": ["oxide-reactions"],
+    "skillIds": [
+      "oxide-reactions"
+    ],
     "difficulty": 1,
     "prompt": "Vôi sống ([[CaO]]) khi tác dụng với nước ([[H2O]]) tỏa rất nhiều nhiệt và tạo thành dung dịch vôi tôi có tính kiềm. Phương trình hóa học của phản ứng là:",
-    "knowledge": ["reactions.oxide-base-water"],
+    "knowledge": [
+      "reactions.oxide-base-water"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-1", "label": "CaO + H2O -> Ca(OH)2" },
-        { "id": "opt-2", "label": "CaO + 2H2O -> Ca(OH)2 + H2" },
-        { "id": "opt-3", "label": "2CaO + H2O -> 2CaOH" },
-        { "id": "opt-4", "label": "CaO + H2O -> CaCO3" }
+        {
+          "id": "opt-1",
+          "label": "CaO + 2H2O -> Ca(OH)2 + H2"
+        },
+        {
+          "id": "opt-2",
+          "label": "2CaO + H2O -> 2CaOH"
+        },
+        {
+          "id": "opt-3",
+          "label": "CaO + H2O -> Ca(OH)2"
+        },
+        {
+          "id": "opt-4",
+          "label": "CaO + H2O -> CaCO3"
+        }
       ],
-      "correctId": "opt-1"
+      "correctId": "opt-3"
     },
     "hints": [
-      { "level": 1, "text": "Canxi (Ca) có hóa trị II, nhóm hiđroxit (OH) có hóa trị I => Ca(OH)2." },
-      { "level": 2, "text": "Phản ứng tôi vôi là phản ứng hóa hợp giữa oxide base và nước." }
+      {
+        "level": 1,
+        "text": "Canxi (Ca) có hóa trị II, nhóm hiđroxit (OH) có hóa trị I => Ca(OH)2."
+      },
+      {
+        "level": 2,
+        "text": "Phản ứng tôi vôi là phản ứng hóa hợp giữa oxide base và nước."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Xác định chất tham gia", "body": "Canxi oxit (CaO) là oxide base, phản ứng với nước H2O." },
-      { "kind": "equation", "title": "Viết phản ứng", "body": "CaO + H2O -> Ca(OH)2 (Canxi hiđroxit / vôi tôi)." },
-      { "kind": "answer", "title": "Kiểm tra hệ số", "body": "Phương trình tự cân bằng với tỉ lệ 1:1:1." }
+      {
+        "kind": "identify",
+        "title": "Xác định chất tham gia",
+        "body": "Canxi oxit (CaO) là oxide base, phản ứng với nước H2O."
+      },
+      {
+        "kind": "equation",
+        "title": "Viết phản ứng",
+        "body": "CaO + H2O -> Ca(OH)2 (Canxi hiđroxit / vôi tôi)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kiểm tra hệ số",
+        "body": "Phương trình tự cân bằng với tỉ lệ 1:1:1."
+      }
     ],
     "finalSolution": "CaO + H2O -> Ca(OH)2"
   },
   {
     "id": "g8-b10-tf-001",
     "lessonId": "g8-b10",
-    "skillIds": ["oxide-classification"],
+    "skillIds": [
+      "oxide-classification"
+    ],
     "difficulty": 2,
     "prompt": "Xác định tính Đúng hay Sai của các khẳng định sau về Oxide:",
-    "knowledge": ["oxide.properties"],
+    "knowledge": [
+      "oxide.properties"
+    ],
     "answer": {
       "kind": "true-false",
       "statements": [
-        { "id": "s1", "text": "Oxide là hợp chất gồm hai nguyên tố, trong đó có một nguyên tố là Oxygen.", "correct": true },
-        { "id": "s2", "text": "Tất cả các oxide phi kim đều tác dụng được với nước tạo thành dung dịch acid.", "correct": false },
-        { "id": "s3", "text": "CO và NO là các oxide trung tính (không tạo muối).", "correct": true },
-        { "id": "s4", "text": "Dung dịch Canxi oxit làm quỳ tím chuyển sang màu đỏ.", "correct": false }
+        {
+          "id": "s1",
+          "text": "Oxide là hợp chất gồm hai nguyên tố, trong đó có một nguyên tố là Oxygen.",
+          "correct": true
+        },
+        {
+          "id": "s2",
+          "text": "Tất cả các oxide phi kim đều tác dụng được với nước tạo thành dung dịch acid.",
+          "correct": false
+        },
+        {
+          "id": "s3",
+          "text": "CO và NO là các oxide trung tính (không tạo muối).",
+          "correct": true
+        },
+        {
+          "id": "s4",
+          "text": "Dung dịch Canxi oxit làm quỳ tím chuyển sang màu đỏ.",
+          "correct": false
+        }
       ]
     },
     "hints": [
-      { "level": 1, "text": "CO và NO không tác dụng với nước, axit hay bazơ nên gọi là oxide trung tính." },
-      { "level": 2, "text": "Canxi oxit (CaO) tác dụng với nước tạo base Ca(OH)2 làm quỳ tím hóa xanh." }
+      {
+        "level": 1,
+        "text": "CO và NO không tác dụng với nước, axit hay bazơ nên gọi là oxide trung tính."
+      },
+      {
+        "level": 2,
+        "text": "Canxi oxit (CaO) tác dụng với nước tạo base Ca(OH)2 làm quỳ tím hóa xanh."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Định nghĩa oxide", "body": "Định nghĩa oxide là hợp chất 2 nguyên tố trong đó có 1 nguyên tố O (s1 đúng)." },
-      { "kind": "knowledge", "title": "Phân tích ngoại lệ", "body": "CO và NO là oxide phi kim nhưng không tạo axit (s2 sai, s3 đúng)." },
-      { "kind": "answer", "title": "Tính chất chỉ thị màu", "body": "Vôi tôi Ca(OH)2 có tính bazơ làm quỳ tím hóa xanh, không phải đỏ (s4 sai)." }
+      {
+        "kind": "identify",
+        "title": "Định nghĩa oxide",
+        "body": "Định nghĩa oxide là hợp chất 2 nguyên tố trong đó có 1 nguyên tố O (s1 đúng)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân tích ngoại lệ",
+        "body": "CO và NO là oxide phi kim nhưng không tạo axit (s2 sai, s3 đúng)."
+      },
+      {
+        "kind": "answer",
+        "title": "Tính chất chỉ thị màu",
+        "body": "Vôi tôi Ca(OH)2 có tính bazơ làm quỳ tím hóa xanh, không phải đỏ (s4 sai)."
+      }
     ],
     "finalSolution": "s1: Đúng, s2: Sai, s3: Đúng, s4: Sai"
   },
   {
     "id": "g8-b10-sort-004",
     "lessonId": "g8-b10",
-    "skillIds": ["oxide-classification"],
+    "skillIds": [
+      "oxide-classification"
+    ],
     "difficulty": 1,
     "prompt": "Phân loại các oxide sau vào hai nhóm: Oxide acid hay Oxide base.",
     "answer": {
       "kind": "sort",
       "buckets": [
-        { "id": "acid-oxide", "label": "Oxide acid (Oxit axit)" },
-        { "id": "base-oxide", "label": "Oxide base (Oxit bazơ)" }
+        {
+          "id": "acid-oxide",
+          "label": "Oxide acid (Oxit axit)"
+        },
+        {
+          "id": "base-oxide",
+          "label": "Oxide base (Oxit bazơ)"
+        }
       ],
       "items": [
-        { "id": "co2", "label": "CO2 (Carbon dioxide)", "bucketId": "acid-oxide" },
-        { "id": "so2", "label": "SO2 (Sulfur dioxide)", "bucketId": "acid-oxide" },
-        { "id": "p2o5", "label": "P2O5 (Diphosphorus pentoxide)", "bucketId": "acid-oxide" },
-        { "id": "cao", "label": "CaO (Calcium oxide)", "bucketId": "base-oxide" },
-        { "id": "na2o", "label": "Na2O (Sodium oxide)", "bucketId": "base-oxide" },
-        { "id": "fe2o3", "label": "Fe2O3 (Iron(III) oxide)", "bucketId": "base-oxide" }
+        {
+          "id": "co2",
+          "label": "CO2 (Carbon dioxide)",
+          "bucketId": "acid-oxide"
+        },
+        {
+          "id": "so2",
+          "label": "SO2 (Sulfur dioxide)",
+          "bucketId": "acid-oxide"
+        },
+        {
+          "id": "p2o5",
+          "label": "P2O5 (Diphosphorus pentoxide)",
+          "bucketId": "acid-oxide"
+        },
+        {
+          "id": "cao",
+          "label": "CaO (Calcium oxide)",
+          "bucketId": "base-oxide"
+        },
+        {
+          "id": "na2o",
+          "label": "Na2O (Sodium oxide)",
+          "bucketId": "base-oxide"
+        },
+        {
+          "id": "fe2o3",
+          "label": "Fe2O3 (Iron(III) oxide)",
+          "bucketId": "base-oxide"
+        }
       ]
     },
     "hints": [
-      { "level": 1, "text": "Oxide của phi kim thường là oxide acid; oxide của kim loại thường là oxide base." },
-      { "level": 2, "text": "CO2, SO2, P2O5 là oxide phi kim (acid); CaO, Na2O, Fe2O3 là oxide kim loại (base)." }
+      {
+        "level": 1,
+        "text": "Oxide của phi kim thường là oxide acid; oxide của kim loại thường là oxide base."
+      },
+      {
+        "level": 2,
+        "text": "CO2, SO2, P2O5 là oxide phi kim (acid); CaO, Na2O, Fe2O3 là oxide kim loại (base)."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Phân loại theo nguyên tố kết hợp", "body": "Phi kim + Oxygen -> Oxide acid. Kim loại + Oxygen -> Oxide base." },
-      { "kind": "knowledge", "title": "Đối chiếu chất", "body": "Oxide acid: CO2, SO2, P2O5. Oxide base: CaO, Na2O, Fe2O3." },
-      { "kind": "answer", "title": "Kết luận", "body": "Đã phân chia chính xác 6 oxide vào 2 nhóm." }
+      {
+        "kind": "identify",
+        "title": "Phân loại theo nguyên tố kết hợp",
+        "body": "Phi kim + Oxygen -> Oxide acid. Kim loại + Oxygen -> Oxide base."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu chất",
+        "body": "Oxide acid: CO2, SO2, P2O5. Oxide base: CaO, Na2O, Fe2O3."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đã phân chia chính xác 6 oxide vào 2 nhóm."
+      }
     ],
     "finalSolution": "Oxide acid: **CO2, SO2, P2O5** · Oxide base: **CaO, Na2O, Fe2O3**.",
     "commonMistakes": []
@@ -123,22 +289,51 @@
   {
     "id": "g8-b10-build-005",
     "lessonId": "g8-b10",
-    "skillIds": ["oxide-classification"],
+    "skillIds": [
+      "oxide-classification"
+    ],
     "difficulty": 2,
     "prompt": "Nhấn các mảnh ghép để tạo công thức hóa học của Nhôm oxide (Aluminium oxide) có hóa trị Al(III) và O(II).",
     "answer": {
       "kind": "formula-builder",
-      "tiles": ["Al", "O", "2", "3", "4", "Fe"],
-      "accepted": ["Al2O3"]
+      "tiles": [
+        "Al",
+        "O",
+        "2",
+        "3",
+        "4",
+        "Fe"
+      ],
+      "accepted": [
+        "Al2O3"
+      ]
     },
     "hints": [
-      { "level": 1, "text": "Áp dụng quy tắc hóa trị: x × III = y × II => x/y = 2/3." },
-      { "level": 2, "text": "Nhấn theo thứ tự: Al → 2 → O → 3 để tạo Al2O3." }
+      {
+        "level": 1,
+        "text": "Áp dụng quy tắc hóa trị: x × III = y × II => x/y = 2/3."
+      },
+      {
+        "level": 2,
+        "text": "Nhấn theo thứ tự: Al → 2 → O → 3 để tạo Al2O3."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Quy tắc hóa trị", "body": "Al hóa trị III, O hóa trị II: CTHH dạng Al_x O_y với x/y = 2/3." },
-      { "kind": "compute", "title": "Xác định chỉ số", "body": "x = 2, y = 3 => CTHH là Al2O3." },
-      { "kind": "answer", "title": "Kết luận", "body": "Công thức đúng là **Al2O3**." }
+      {
+        "kind": "identify",
+        "title": "Quy tắc hóa trị",
+        "body": "Al hóa trị III, O hóa trị II: CTHH dạng Al_x O_y với x/y = 2/3."
+      },
+      {
+        "kind": "compute",
+        "title": "Xác định chỉ số",
+        "body": "x = 2, y = 3 => CTHH là Al2O3."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Công thức đúng là **Al2O3**."
+      }
     ],
     "finalSolution": "Công thức hóa học của nhôm oxide là **Al2O3**.",
     "commonMistakes": []
@@ -146,26 +341,58 @@
   {
     "id": "g8-b10-match-006",
     "lessonId": "g8-b10",
-    "skillIds": ["oxide-reactions"],
+    "skillIds": [
+      "oxide-reactions"
+    ],
     "difficulty": 2,
     "prompt": "Ghép đôi mỗi oxide với acid hoặc base tương ứng của nó khi phản ứng với nước.",
     "answer": {
       "kind": "match",
       "pairs": [
-        { "left": "CO2 (Carbon dioxide)", "right": "H2CO3 (Carbonic acid)" },
-        { "left": "SO3 (Sulfur trioxide)", "right": "H2SO4 (Sulfuric acid)" },
-        { "left": "CaO (Calcium oxide)", "right": "Ca(OH)2 (Calcium hydroxide)" },
-        { "left": "Na2O (Sodium oxide)", "right": "NaOH (Sodium hydroxide)" }
+        {
+          "left": "CO2 (Carbon dioxide)",
+          "right": "H2CO3 (Carbonic acid)"
+        },
+        {
+          "left": "SO3 (Sulfur trioxide)",
+          "right": "H2SO4 (Sulfuric acid)"
+        },
+        {
+          "left": "CaO (Calcium oxide)",
+          "right": "Ca(OH)2 (Calcium hydroxide)"
+        },
+        {
+          "left": "Na2O (Sodium oxide)",
+          "right": "NaOH (Sodium hydroxide)"
+        }
       ]
     },
     "hints": [
-      { "level": 1, "text": "Oxide acid + nước -> acid tương ứng; Oxide base + nước -> base tương ứng." },
-      { "level": 2, "text": "CO2 tạo H2CO3, SO3 tạo H2SO4, CaO tạo Ca(OH)2, Na2O tạo NaOH." }
+      {
+        "level": 1,
+        "text": "Oxide acid + nước -> acid tương ứng; Oxide base + nước -> base tương ứng."
+      },
+      {
+        "level": 2,
+        "text": "CO2 tạo H2CO3, SO3 tạo H2SO4, CaO tạo Ca(OH)2, Na2O tạo NaOH."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Xác định sản phẩm với nước", "body": "Oxide acid tạo acid, oxide base tạo base kiềm tương ứng." },
-      { "kind": "knowledge", "title": "PTHH", "body": "CO2 + H2O -> H2CO3 · SO3 + H2O -> H2SO4 · CaO + H2O -> Ca(OH)2 · Na2O + H2O -> 2NaOH." },
-      { "kind": "answer", "title": "Kết luận", "body": "Ghép đúng từng cặp oxide và hợp chất tương ứng." }
+      {
+        "kind": "identify",
+        "title": "Xác định sản phẩm với nước",
+        "body": "Oxide acid tạo acid, oxide base tạo base kiềm tương ứng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "PTHH",
+        "body": "CO2 + H2O -> H2CO3 · SO3 + H2O -> H2SO4 · CaO + H2O -> Ca(OH)2 · Na2O + H2O -> 2NaOH."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Ghép đúng từng cặp oxide và hợp chất tương ứng."
+      }
     ],
     "finalSolution": "CO2 ↔ H2CO3 · SO3 ↔ H2SO4 · CaO ↔ Ca(OH)2 · Na2O ↔ NaOH.",
     "commonMistakes": []

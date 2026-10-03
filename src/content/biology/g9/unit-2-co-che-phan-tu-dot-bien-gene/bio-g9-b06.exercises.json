@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g9-b06-q01",
+    "lessonId": "bio-g9-b06",
+    "sgkBaiSo": 41,
+    "skillIds": ["bio9-dot-bien-gene"],
+    "difficulty": 1,
+    "prompt": "Đột biến gene là gì và dạng đột biến gen chỉ liên quan đến một cặp nucleotide duy nhất được gọi là gì?",
+    "knowledge": ["kb-bio-g9-khai-niem-dot-bien-gene"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Những biến đổi trong cấu trúc của gene; dạng chỉ liên quan đến một cặp nucleotide gọi là đột biến điểm" },
+        { "id": "opt-b", "label": "Những biến đổi về số lượng nhiễm sắc thể trong tế bào; gọi là đột biến dị bội" },
+        { "id": "opt-c", "label": "Những biến đổi kiểu hình do môi trường sống mà không đổi kiểu gen; gọi là thường biến" },
+        { "id": "opt-d", "label": "Sự tổ hợp lại các gene có sẵn của bố mẹ trong thụ tinh; gọi là biến dị tổ hợp" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Đột biến gene diễn ra ở cấp độ phân tử (cấu trúc của phân tử DNA)." },
+      { "level": 2, "text": "Từ 'điểm' thể hiện phạm vi xảy ra chỉ tại một vị trí (một cặp nucleotide) xác định." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Khái niệm đột biến gene", "body": "Đột biến gene là những biến đổi trong cấu trúc của gen, liên quan đến một hoặc một số cặp nucleotide." },
+      { "kind": "knowledge", "title": "Khái niệm đột biến điểm", "body": "Khi đột biến gen chỉ liên quan đến đúng một cặp nucleotide trong cấu trúc phân tử DNA thì được gọi là đột biến điểm." },
+      { "kind": "answer", "title": "Kết luận", "body": "Biến đổi trong cấu trúc của gen; chỉ liên quan đến 1 cặp nu gọi là đột biến điểm." }
+    ],
+    "finalSolution": "Đột biến gene là những biến đổi trong cấu trúc của gene, liên quan đến một hoặc một số cặp nucleotide. Dạng chỉ liên quan đến 1 cặp nucleotide gọi là đột biến điểm.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm đột biến gen với đột biến nhiễm sắc thể (cấp độ tế bào) hoặc thường biến (không biến đổi kiểu gen)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b06-q02",
+    "lessonId": "bio-g9-b06",
+    "sgkBaiSo": 41,
+    "skillIds": ["bio9-dot-bien-gene"],
+    "difficulty": 1,
+    "prompt": "Ba dạng đột biến điểm cơ bản thường gặp nhất trong tự nhiên là gì?",
+    "knowledge": ["kb-bio-g9-cac-dang-dot-bien-diem"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Thay thế một cặp nucleotide, Thêm một cặp nucleotide, Mất một cặp nucleotide" },
+        { "id": "opt-b", "label": "Mất đoạn, Lặp đoạn, Đảo đoạn" },
+        { "id": "opt-c", "label": "Tăng một nhiễm sắc thể, Giảm một nhiễm sắc thể, Đa bội hóa" },
+        { "id": "opt-d", "label": "Chuyển đoạn tương hỗ, Chuyển đoạn không tương hỗ, Dính tâm động" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Đột biến điểm chỉ liên quan đến việc thay đổi số lượng (+1, -1) hoặc thay đổi bản chất của 1 cặp nucleotide." },
+      { "level": 2, "text": "Mất đoạn, lặp đoạn, đảo đoạn là đột biến cấu trúc nhiễm sắc thể, không phải đột biến điểm của gene." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại các dạng biến đổi của một cặp nucleotide", "body": "Một cặp nucleotide trong gen có thể bị thay bởi cặp khác, bị chèn thêm vào, hoặc bị loại bỏ." },
+      { "kind": "knowledge", "title": "Ba dạng đột biến điểm", "body": "1. Thay thế 1 cặp nucleotide; 2. Thêm 1 cặp nucleotide; 3. Mất 1 cặp nucleotide." },
+      { "kind": "answer", "title": "Kết luận", "body": "Ba dạng đột biến điểm là: Thay thế, Thêm, Mất một cặp nucleotide." }
+    ],
+    "finalSolution": "Ba dạng đột biến điểm cơ bản gồm: Thay thế một cặp nucleotide, Thêm một cặp nucleotide, Mất một cặp nucleotide.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn với các dạng đột biến cấu trúc nhiễm sắc thể (mất đoạn, lặp đoạn, đảo đoạn, chuyển đoạn)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b06-q03",
+    "lessonId": "bio-g9-b06",
+    "sgkBaiSo": 41,
+    "skillIds": ["bio9-dot-bien-gene"],
+    "difficulty": 2,
+    "prompt": "Một gen xảy ra đột biến điểm thay thế một cặp A - T bằng một cặp G - C. Chiều dài của gen và số liên kết hydrogen của gen sau đột biến thay đổi như thế nào?",
+    "knowledge": ["kb-bio-g9-cac-dang-dot-bien-diem"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Chiều dài của gen không đổi; số liên kết hydrogen tăng thêm 1 liên kết" },
+        { "id": "opt-b", "label": "Chiều dài của gen tăng thêm 3,4 Å; số liên kết hydrogen không đổi" },
+        { "id": "opt-c", "label": "Chiều dài của gen giảm đi 3,4 Å; số liên kết hydrogen giảm đi 1 liên kết" },
+        { "id": "opt-d", "label": "Cả chiều dài và số liên kết hydrogen của gen đều không đổi" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Thay thế 1 cặp nu bằng 1 cặp nu khác thì tổng số nucleotide trong gen không tăng không giảm." },
+      { "level": 2, "text": "Cặp A-T có 2 liên kết hydrogen, trong khi cặp G-C có 3 liên kết hydrogen (3 - 2 = 1)." }
+    ],
+    "steps": [
+      { "kind": "compute", "title": "Xem xét chiều dài của gen", "body": "Vì thay thế 1 cặp nucleotide bằng 1 cặp nucleotide khác nên tổng số nucleotide N của gen không đổi, do đó chiều dài của gen L = (N/2) × 3,4 Å giữ nguyên không đổi." },
+      { "kind": "compute", "title": "Xem xét số liên kết hydrogen", "body": "Cặp A-T có 2 liên kết hydrogen. Cặp G-C có 3 liên kết hydrogen. Khi thay 1 cặp A-T bằng 1 cặp G-C, số liên kết hydrogen thay đổi: H_mới = H_cũ - 2 + 3 = H_cũ + 1 (tăng 1)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Chiều dài của gen không thay đổi và số liên kết hydrogen tăng thêm 1." }
+    ],
+    "finalSolution": "Đột biến thay thế cặp A-T bằng G-C làm chiều dài của gen không đổi nhưng số liên kết hydrogen tăng thêm 1 liên kết (vì G-C có 3 liên kết H, A-T chỉ có 2).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng thay thế nucleotide làm thay đổi chiều dài của gen." }
+    ]
+  },
+  {
+    "id": "bio-g9-b06-q04",
+    "lessonId": "bio-g9-b06",
+    "sgkBaiSo": 41,
+    "skillIds": ["bio9-dot-bien-gene"],
+    "difficulty": 2,
+    "prompt": "Tại sao đột biến điểm dạng 'thêm hoặc mất một cặp nucleotide' thường gây ra hậu quả nghiêm trọng hơn rất nhiều so với đột biến 'thay thế một cặp nucleotide'?",
+    "knowledge": ["kb-bio-g9-tac-dong-dich-khung-dot-bien"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Vì gây ra hiện tượng dịch khung đọc mã di truyền, làm thay đổi toàn bộ trình tự amino acid từ vị trí đột biến cho đến cuối chuỗi polypeptide" },
+        { "id": "opt-b", "label": "Vì làm phá hủy toàn bộ phân tử DNA và khiến tế bào chết ngay lập tức" },
+        { "id": "opt-c", "label": "Vì biến đổi trực tiếp bộ ba mở đầu thành bộ ba kết thúc ở mọi vị trí" },
+        { "id": "opt-d", "label": "Vì làm tăng gấp đôi số lượng nhiễm sắc thể của toàn bộ tế bào" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Mã di truyền được đọc liên tục theo từng bộ ba từ một điểm xuất phát cố định." },
+      { "level": 2, "text": "Khi chèn thêm hoặc rút bớt 1 nucleotide, toàn bộ các bộ ba phía sau đều bị dồn lại hoặc lệch đi 1 nấc." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích cơ chế đọc mã di truyền", "body": "Ribosome đọc mRNA liên tục từng cụm 3 nucleotide không ngắt quãng (mã bộ ba)." },
+      { "kind": "knowledge", "title": "Cơ chế dịch khung (frameshift)", "body": "Đột biến thay thế chỉ làm thay đổi 1 bộ ba tại vị trí đó (tối đa đổi 1 amino acid). Nhưng thêm hoặc mất 1 nucleotide làm xô lệch toàn bộ khung đọc của tất cả các bộ ba từ điểm đột biến đến cuối gen." },
+      { "kind": "answer", "title": "Kết luận", "body": "Gây dịch khung đọc mã di truyền làm biến đổi toàn bộ trình tự amino acid phía sau." }
+    ],
+    "finalSolution": "Đột biến thêm hoặc mất một cặp nu làm dịch khung đọc mã di truyền, thay đổi toàn bộ trình tự amino acid từ vị trí đột biến về sau, làm protein thường mất hoàn toàn hoạt tính sinh học.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng đột biến thêm/mất chỉ ảnh hưởng đến đúng vị trí đột biến giống như thay thế." }
+    ]
+  },
+  {
+    "id": "bio-g9-b06-q05",
+    "lessonId": "bio-g9-b06",
+    "sgkBaiSo": 41,
+    "skillIds": ["bio9-dot-bien-gene"],
+    "difficulty": 2,
+    "prompt": "Một đột biến thay thế nucleotide ở vùng mã hóa của gen nhưng chuỗi polypeptide tạo ra không hề bị thay đổi bất kì amino acid nào. Giải thích hợp lí nhất cho hiện tượng này là gì?",
+    "knowledge": ["kb-bio-g9-tac-dong-dich-khung-dot-bien"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Do tính thoái hóa của mã di truyền: bộ ba sau đột biến vẫn cùng mã hóa cho đúng loại amino acid ban đầu" },
+        { "id": "opt-b", "label": "Do ribosome tự động sửa lỗi và thay thế nucleotide sai bằng nucleotide đúng khi dịch mã" },
+        { "id": "opt-c", "label": "Do tế bào không thực hiện dịch mã đoạn gen bị đột biến này" },
+        { "id": "opt-d", "label": "Do enzyme DNA polymerase đã đảo ngược quá trình phiên mã để phục hồi gen gốc" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Nhiều bộ ba khác nhau có thể cùng mã hóa cho một loại amino acid." },
+      { "level": 2, "text": "Hiện tượng này gọi là đột biến đồng nghĩa (đột biến câm) dựa trên tính thoái hóa của mã di truyền." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Hiện tượng đột biến không đổi amino acid", "body": "Đột biến thay đổi nucleotide trên gen dẫn đến thay đổi codon trên mRNA, nhưng amino acid lắp ráp vào không đổi." },
+      { "kind": "knowledge", "title": "Tính thoái hóa của mã di truyền", "body": "Do nhiều codon khác nhau cùng quy định 1 loại amino acid. Ví dụ, cả 5'-GAA-3' và 5'-GAG-3' đều mã hóa cho glutamic acid. Nếu đột biến thay thế A thành G ở vị trí thứ 3, amino acid vẫn giữ nguyên." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hiện tượng này là do tính thoái hóa (tính dư thừa) của mã di truyền." }
+    ],
+    "finalSolution": "Do tính thoái hóa của mã di truyền, bộ ba mới sau đột biến vẫn mã hóa cho cùng loại amino acid như ban đầu nên chuỗi protein không thay đổi (đột biến đồng nghĩa).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng ribosome có chức năng sửa đổi mã nucleotide trên mRNA." }
+    ]
+  },
+  {
+    "id": "bio-g9-b06-q06",
+    "lessonId": "bio-g9-b06",
+    "sgkBaiSo": 41,
+    "skillIds": ["bio9-dot-bien-gene"],
+    "difficulty": 2,
+    "prompt": "Bệnh thiếu máu hồng cầu hình liềm (HbS) ở người xuất phát từ dạng đột biến gene nào sau đây?",
+    "knowledge": ["kb-bio-g9-tac-dong-dich-khung-dot-bien"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Đột biến thay thế một cặp A - T bằng một cặp T - A ở gen mã hóa chuỗi beta-globin" },
+        { "id": "opt-b", "label": "Đột biến mất một đoạn lớn trên cánh dài của nhiễm sắc thể số 21" },
+        { "id": "opt-c", "label": "Đột biến thêm một nhiễm sắc thể ở cặp số 21 tạo thể ba" },
+        { "id": "opt-d", "label": "Đột biến mất hoàn toàn cả hai mạch của gen tổng hợp hồng cầu" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Đây là ví dụ kinh điển trong sách giáo khoa về đột biến điểm thay thế một cặp nucleotide." },
+      { "level": 2, "text": "Đột biến thay codon GAG (mã hóa Glutamic acid) thành GUG (mã hóa Valine) ở vị trí amino acid số 6 chuỗi beta-globin." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Bản chất bệnh hồng cầu hình liềm", "body": "Bệnh thiếu máu hồng cầu hình liềm (HbS) là bệnh di truyền phân tử điển hình ở người." },
+      { "kind": "knowledge", "title": "Cơ chế đột biến phân tử", "body": "Gen HbA bình thường bị đột biến thay thế 1 cặp nucleotide A-T thành T-A ở codon thứ 6 của gen beta-globin, làm amino acid glutamic acid ưa nước bị biến đổi thành valine kị nước. Protein hemoglobin biến tính khiến hồng cầu vón cục và có hình liềm." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đột biến thay thế cặp A-T bằng T-A ở gen mã hóa chuỗi beta-globin." }
+    ],
+    "finalSolution": "Bệnh hồng cầu hình liềm là do đột biến thay thế một cặp nucleotide A-T bằng T-A ở codon số 6 của gen chuỗi beta-globin, làm thay đổi 1 amino acid (Glutamic acid → Valine).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn bệnh hồng cầu hình liềm với đột biến số lượng NST (như hội chứng Đao)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b06-q07",
+    "lessonId": "bio-g9-b06",
+    "sgkBaiSo": 41,
+    "skillIds": ["bio9-dot-bien-gene"],
+    "difficulty": 1,
+    "prompt": "Tác nhân nào sau đây thuộc nhóm tác nhân hóa học có khả năng gây đột biến gene nguy hiểm ở người và động vật?",
+    "knowledge": ["kb-bio-g9-nguyen-nhan-dot-bien-gene"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Chất độc màu da cam chứa Dioxin và hợp chất 5-bromouracil (5-BU)" },
+        { "id": "opt-b", "label": "Tia tử ngoại (UV) từ ánh sáng mặt trời" },
+        { "id": "opt-c", "label": "Tia phóng xạ X-ray phát ra từ máy chụp X-quang" },
+        { "id": "opt-d", "label": "Nhiệt độ môi trường tăng cao đột ngột (sốc nhiệt)" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Phân biệt giữa tác nhân vật lí (tia bức xạ, nhiệt độ) và tác nhân hóa học (hợp chất, hóa chất độc hại)." },
+      { "level": 2, "text": "Dioxin trong chất độc màu da cam do quân đội Mỹ rải xuống Việt Nam là chất độc hóa học gây đột biến khôn lường." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại các tác nhân gây đột biến", "body": "Tác nhân gây đột biến chia thành 3 nhóm: vật lí, hóa học và sinh học." },
+      { "kind": "knowledge", "title": "Phân loại cụ thể", "body": "Tia UV, tia phóng xạ, sốc nhiệt là tác nhân vật lí. Dioxin, chất 5-BU, nicotin/hắc ín trong thuốc lá là tác nhân hóa học. Virus là tác nhân sinh học." },
+      { "kind": "answer", "title": "Kết luận", "body": "Chất độc màu da cam chứa Dioxin và hợp chất 5-BU thuộc nhóm tác nhân hóa học." }
+    ],
+    "finalSolution": "Chất độc da cam Dioxin và hóa chất 5-BU là các tác nhân hóa học gây đột biến gen nghiêm trọng.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm tia tử ngoại (UV) và tia X sang nhóm tác nhân hóa học (chúng là tác nhân vật lí)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b06-q08",
+    "lessonId": "bio-g9-b06",
+    "sgkBaiSo": 41,
+    "skillIds": ["bio9-dot-bien-gene"],
+    "difficulty": 2,
+    "prompt": "Nhận định nào sau đây là ĐÚNG về vai trò và ý nghĩa của đột biến gene trong tự nhiên và chọn giống thực tiễn?",
+    "knowledge": ["kb-bio-g9-vai-tro-y-nghia-dot-bien-gene"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Đột biến gene tạo ra các allele mới, là nguồn nguyên liệu sơ cấp của tiến hóa và tạo nguồn biến dị quý cho chọn giống" },
+        { "id": "opt-b", "label": "Tất cả các đột biến gene đều có hại và luôn bị chọn lọc tự nhiên đào thải ngay lập tức" },
+        { "id": "opt-c", "label": "Đột biến gene chỉ xuất hiện khi con người chủ động chiếu tia phóng xạ vào sinh vật" },
+        { "id": "opt-d", "label": "Đột biến gene không thể di truyền được cho các thế hệ con cháu" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Mặc dù đa số đột biến tự nhiên có hại hoặc trung tính, nhưng một số ít có lợi trong môi trường sống mới." },
+      { "level": 2, "text": "Đột biến gen tạo ra các allele mới (từ A thành a), đóng vai trò nguyên liệu sơ cấp cho chọn lọc tự nhiên." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đánh giá vai trò của đột biến gene", "body": "Nếu không có đột biến gen thì sinh giới không có allele mới, không thể có sự đa dạng sinh học phong phú như ngày nay." },
+      { "kind": "knowledge", "title": "Ý nghĩa trong tiến hóa và chọn giống", "body": "Đột biến gen là nguồn nguyên liệu sơ cấp dồi dào cho tiến hóa và chọn giống. Con người sử dụng tác nhân gây đột biến nhân tạo để tạo các giống lúa chịu hạn, nấm men năng suất cao." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đột biến gen tạo ra các allele mới, là nguồn nguyên liệu sơ cấp của tiến hóa và chọn giống." }
+    ],
+    "finalSolution": "Đột biến gene tạo ra các allele mới, là nguồn nguyên liệu sơ cấp của quá trình tiến hóa và chọn giống cây trồng, vật nuôi.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng 100% đột biến gen đều gây chết hoặc có hại hoàn toàn trong mọi hoàn cảnh." }
+    ]
+  }
+]

@@ -1,0 +1,294 @@
+[
+  {
+    "id": "bio-g6-b23-q01",
+    "lessonId": "bio-g6-b23",
+    "sgkBaiSo": 38,
+    "skillIds": ["bio-da-dang-sinh-hoc"],
+    "difficulty": 1,
+    "prompt": "Phân loại các hành động sau vào hai nhóm: 'Hành động bảo vệ đa dạng sinh học' và 'Hành vi phá hoại đa dạng sinh học':",
+    "knowledge": ["bio-da-dang-sinh-hoc"],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "b-protect", "label": "Hành động bảo vệ đa dạng sinh học" },
+        { "id": "b-destroy", "label": "Hành vi phá hoại đa dạng sinh học" }
+      ],
+      "items": [
+        { "id": "it-1", "label": "Tích cực trồng cây gây rừng phủ xanh đất trống đồi trọc", "bucketId": "b-protect" },
+        { "id": "it-2", "label": "Thành lập và bảo vệ các vườn quốc gia, khu bảo tồn thiên nhiên", "bucketId": "b-protect" },
+        { "id": "it-3", "label": "Tuyên truyền nói không với việc tiêu thụ thịt thú rừng và động vật hoang dã", "bucketId": "b-protect" },
+        { "id": "it-4", "label": "Đốt phá rừng tự nhiên bừa bãi để làm nương rẫy", "bucketId": "b-destroy" },
+        { "id": "it-5", "label": "Sử dụng kích điện và chất độc để đánh bắt thủy hải sản", "bucketId": "b-destroy" },
+        { "id": "it-6", "label": "Săn bẫy trộm và buôn bán trái phép ngà voi, vảy tê tê", "bucketId": "b-destroy" }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trồng rừng, bảo tồn vườn quốc gia và không ăn thịt rừng là các việc làm tốt."
+      },
+      {
+        "level": 2,
+        "text": "Đốt rừng, kích điện, buôn bán động vật quý hiếm là các hành vi bị pháp luật nghiêm cấm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 6 hành vi của con người",
+        "body": "Đánh giá mức độ ảnh hưởng tích cực hay tiêu cực đến hệ sinh thái."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu quy định bảo tồn",
+        "body": "Trồng rừng, bảo vệ vườn quốc gia, chống tiêu thụ hoang dã: Bảo vệ. Đốt rừng, kích điện, buôn bán thú quý hiếm: Phá hoại."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất phân nhóm",
+        "body": "3 hành động bảo vệ và 3 hành vi phá hoại."
+      }
+    ],
+    "finalSolution": "Bảo vệ: Trồng cây gây rừng, Thành lập vườn quốc gia, Nói không với thịt thú rừng. Phá hoại: Đốt rừng làm rẫy, Đánh bắt bằng kích điện, Săn buôn bán ngà voi và tê tê.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nghĩ rằng mua thịt thú rừng về ăn là không vi phạm vì mình không trực tiếp đi săn."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b23-q02",
+    "lessonId": "bio-g6-b23",
+    "sgkBaiSo": 38,
+    "skillIds": ["bio-da-dang-sinh-hoc"],
+    "difficulty": 1,
+    "prompt": "Mục đích cốt lõi của việc ban hành cuốn 'Sách Đỏ' (Red Data Book) ở Việt Nam và trên thế giới là gì?",
+    "knowledge": ["bio-da-dang-sinh-hoc"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Liệt kê và cảnh báo các loài sinh vật quý hiếm đang có nguy cơ bị tuyệt chủng để có biện pháp bảo vệ kịp thời" },
+        { "id": "opt-b", "label": "Giới thiệu bảng giá thương mại của các loài động vật hoang dã" },
+        { "id": "opt-c", "label": "Hướng dẫn các món ăn ngon chế biến từ thú rừng" },
+        { "id": "opt-d", "label": "Tổng hợp các mẹo đặt bẫy săn bắt muông thú hiệu quả nhất" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Màu đỏ tượng trưng cho sự báo động nguy hiểm cấp bách."
+      },
+      {
+        "level": 2,
+        "text": "Sách ghi nhận các loài sinh vật đang trên bờ vực biến mất vĩnh viễn khỏi Trái Đất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Ý nghĩa của Sách Đỏ",
+        "body": "Đề bài hỏi mục đích của việc xuất bản Sách Đỏ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Khái niệm Sách Đỏ",
+        "body": "Sách Đỏ là tài liệu pháp lý khoa học công bố tình trạng bảo tồn của các loài động thực vật quý hiếm bị đe dọa tuyệt chủng, làm cơ sở ban hành các đạo luật bảo vệ nghiêm ngặt."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án đúng",
+        "body": "Lựa chọn chính xác là mục đích chuẩn xác."
+      }
+    ],
+    "finalSolution": "Sách Đỏ nhằm mục đích ghi nhận và cảnh báo các loài sinh vật quý hiếm có nguy cơ tuyệt chủng, từ đó đưa ra các chính sách bảo vệ nghiêm ngặt.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Nghĩ rằng Sách Đỏ là cuốn sách giới thiệu đặc sản du lịch."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b23-q03",
+    "lessonId": "bio-g6-b23",
+    "sgkBaiSo": 38,
+    "skillIds": ["bio-da-dang-sinh-hoc"],
+    "difficulty": 1,
+    "prompt": "Ghép nối từng loài sinh vật đặc hữu, quý hiếm của Việt Nam (cột bên trái) với đúng nhóm phân loại hoặc danh hiệu biểu tượng của nó (cột bên phải):",
+    "knowledge": ["bio-da-dang-sinh-hoc"],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Sao la",
+          "right": "Thú quý hiếm được thế giới mệnh danh là 'Kỳ lân châu Á'"
+        },
+        {
+          "left": "Voọc mũi hếch",
+          "right": "Loài linh trưởng đặc hữu cực kỳ quý hiếm ở vùng núi đá vôi miền Bắc"
+        },
+        {
+          "left": "Sâm Ngọc Linh",
+          "right": "Cây thuốc thảo dược quý giá bậc nhất thế giới mọc trên đỉnh núi cao"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sao la phát hiện tại dãy Trường Sơn được gọi là Kỳ lân châu Á."
+      },
+      {
+        "level": 2,
+        "text": "Sâm Ngọc Linh là quốc bảo dược liệu quý của Việt Nam."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận diện 3 loài biểu tượng bảo tồn",
+        "body": "Sao la, Voọc mũi hếch, Sâm Ngọc Linh."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu danh tính",
+        "body": "Sao la: Kỳ lân châu Á; Voọc mũi hếch: linh trưởng đặc hữu; Sâm Ngọc Linh: cây thuốc quý."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất ghép cặp",
+        "body": "Nối đúng 3 sinh vật quý hiếm."
+      }
+    ],
+    "finalSolution": "Sao la: Kỳ lân châu Á; Voọc mũi hếch: Linh trưởng núi đá vôi; Sâm Ngọc Linh: Thảo dược quý bậc nhất.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nhầm cây sâm Ngọc Linh với một loài động vật bò sát."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b23-q04",
+    "lessonId": "bio-g6-b23",
+    "sgkBaiSo": 38,
+    "skillIds": ["bio-da-dang-sinh-hoc"],
+    "difficulty": 2,
+    "prompt": "Những nguyên nhân chủ yếu nào sau đây đang trực tiếp làm suy giảm nghiêm trọng tính đa dạng sinh học trên Trái Đất (chọn các phương án đúng)?",
+    "knowledge": ["bio-da-dang-sinh-hoc"],
+    "answer": {
+      "kind": "mcq-multi",
+      "options": [
+        { "id": "opt-a", "label": "Chặt phá và đốt rừng tự nhiên làm phá hủy sinh cảnh sống của sinh vật" },
+        { "id": "opt-b", "label": "Ô nhiễm môi trường nước, đất và không khí do chất thải công nghiệp và rác thải nhựa" },
+        { "id": "opt-c", "label": "Săn bắt, bẫy trộm và buôn bán trái phép các loài động vật hoang dã" },
+        { "id": "opt-d", "label": "Trồng thêm nhiều cây xanh và bảo tồn các vườn quốc gia nguyên vẹn" }
+      ],
+      "correctIds": ["opt-a", "opt-b", "opt-c"]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mất môi trường sống, ô nhiễm và săn bắt bừa bãi là 3 tác nhân tàn phá hàng đầu."
+      },
+      {
+        "level": 2,
+        "text": "Trồng thêm cây xanh là biện pháp tích cực giúp bảo vệ đa dạng sinh học."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tìm nguyên nhân suy giảm",
+        "body": "Đánh giá các hoạt động gây tổn hại đến tự nhiên."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra từng phương án",
+        "body": "Phá rừng (A - đúng tác hại); Ô nhiễm môi trường (B - đúng tác hại); Săn bắt trái phép (C - đúng tác hại). Trồng cây xanh (D - hành động bảo vệ chứ không phải nguyên nhân suy giảm)."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn các đáp án đúng",
+        "body": "Chọn A, B và C."
+      }
+    ],
+    "finalSolution": "3 nguyên nhân hàng đầu làm suy giảm đa dạng sinh học: Chặt phá rừng làm mất sinh cảnh, Ô nhiễm môi trường và Tình trạng săn bắt buôn bán động vật hoang dã trái phép.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Chọn nhầm phương án D (trồng cây là biện pháp bảo vệ, không phải nguyên nhân suy giảm)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b23-q05",
+    "lessonId": "bio-g6-b23",
+    "sgkBaiSo": 38,
+    "skillIds": ["bio-da-dang-sinh-hoc"],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về đa dạng sinh học:",
+    "knowledge": ["bio-da-dang-sinh-hoc"],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Việt Nam là một trong những quốc gia có độ đa dạng sinh học cao hàng đầu thế giới với nhiều loài đặc hữu quý giá.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Đa dạng sinh học chỉ mang lại lợi ích cho các nhà khoa học nghiên cứu chứ hoàn toàn không có ích gì cho đời sống con người.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Rừng cây xanh giúp giữ nước ngầm, cản dòng chảy lũ quét và chống xói mòn bảo vệ đất đai màu mỡ.",
+          "correct": true
+        },
+        {
+          "id": "st-4",
+          "text": "Thả tự do các loài ngoại lai hung dữ (như rùa tai đỏ, cá lau kính, ốc bươu vàng) vào sông hồ tự nhiên là việc làm rất đáng khuyến khích.",
+          "correct": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đa dạng sinh học cung cấp toàn bộ lương thực, thuốc men và oxy cho loài người."
+      },
+      {
+        "level": 2,
+        "text": "Loài ngoại lai xâm lấn cạnh tranh thức ăn và tiêu diệt các sinh vật bản địa, gây mất cân bằng sinh thái."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định",
+        "body": "Đánh giá từng câu về tầm quan trọng và bảo tồn đa dạng sinh học."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra chi tiết",
+        "body": "1. Việt Nam top đa dạng: Đúng. 2. Không có ích cho con người: Sai (cung cấp toàn bộ thực phẩm, dược liệu). 3. Rừng giữ nước chống lũ: Đúng. 4. Thả loài ngoại lai vào tự nhiên: Sai (gây thảm họa sinh thái)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Ý 1: Đúng; Ý 2: Sai; Ý 3: Đúng; Ý 4: Sai."
+      }
+    ],
+    "finalSolution": "Phát biểu 1 và 3 đúng. Phát biểu 2 sai (đa dạng sinh học là nền tảng cho sự sống của con người). Phát biểu 4 sai (các loài ngoại lai như rùa tai đỏ, ốc bươu vàng phá hoại môi trường bản địa nghiêm trọng).",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng phóng sinh rùa tai đỏ xuống hồ nước là hành động bảo vệ động vật."
+      }
+    ]
+  }
+]

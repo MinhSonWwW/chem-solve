@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g9-b09-q01",
+    "lessonId": "bio-g9-b09",
+    "sgkBaiSo": 44,
+    "skillIds": ["bio9-nst-gioi-tinh"],
+    "difficulty": 1,
+    "prompt": "Điểm khác biệt cơ bản về số lượng và sự phân bố giữa nhiễm sắc thể thường và nhiễm sắc thể giới tính trong tế bào sinh dưỡng là gì?",
+    "knowledge": ["kb-bio-g9-phan-biet-nst-thuong-gioi-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "NST thường có nhiều cặp giống nhau ở cả hai giới; còn NST giới tính thường chỉ có một cặp khác nhau giữa giới đực và giới cái" },
+        { "id": "opt-b", "label": "NST thường chỉ có ở con đực, còn NST giới tính chỉ có ở con cái" },
+        { "id": "opt-c", "label": "NST thường chỉ nhân đôi trong giảm phân, còn NST giới tính chỉ nhân đôi trong nguyên phân" },
+        { "id": "opt-d", "label": "NST thường cấu tạo từ RNA, còn NST giới tính cấu tạo từ DNA" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Trong tế bào người (2n = 46), có 22 cặp NST thường và chỉ 1 cặp NST giới tính." },
+      { "level": 2, "text": "22 cặp NST thường hoàn toàn giống nhau ở cả nam và nữ; chỉ có cặp số 23 (NST giới tính) là khác nhau." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "So sánh hai loại nhiễm sắc thể", "body": "Bộ NST lưỡng bội của loài phân tính luôn được chia thành hai nhóm: NST thường (autosome) và NST giới tính (heterosome)." },
+      { "kind": "knowledge", "title": "Đặc điểm phân biệt", "body": "NST thường tồn tại thành nhiều cặp tương đồng và giống nhau ở cả hai giới đực và cái. NST giới tính thường chỉ có một cặp, khác nhau giữa con đực và con cái (XX hoặc XY)." },
+      { "kind": "answer", "title": "Kết luận", "body": "NST thường có nhiều cặp giống nhau ở 2 giới; NST giới tính có 1 cặp khác nhau giữa đực và cái." }
+    ],
+    "finalSolution": "Trong tế bào sinh dưỡng, NST thường có nhiều cặp tương đồng giống nhau ở hai giới, còn NST giới tính thường chỉ có một cặp khác nhau giữa giới đực và giới cái.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng mỗi giới chỉ có một loại NST (đực chỉ có NST thường hoặc cái chỉ có NST giới tính)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b09-q02",
+    "lessonId": "bio-g9-b09",
+    "sgkBaiSo": 44,
+    "skillIds": ["bio9-nst-gioi-tinh"],
+    "difficulty": 1,
+    "prompt": "Bộ nhiễm sắc thể trong một tế bào sinh dưỡng bình thường của người đàn ông được kí hiệu như thế nào?",
+    "knowledge": ["kb-bio-g9-phan-biet-nst-thuong-gioi-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "44A + XY (gồm 44 NST thường và 1 cặp NST giới tính XY)" },
+        { "id": "opt-b", "label": "44A + XX (gồm 44 NST thường và 1 cặp NST giới tính XX)" },
+        { "id": "opt-c", "label": "22A + Y (gồm 22 NST thường và 1 NST Y)" },
+        { "id": "opt-d", "label": "46A + XY (gồm 46 NST thường và 2 NST giới tính)" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Tổng số NST trong tế bào sinh dưỡng của người là 2n = 46." },
+      { "level": 2, "text": "Gồm 22 cặp NST thường (44 chiếc, kí hiệu 44A) và cặp NST giới tính ở nam là XY." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định tổng số NST ở người", "body": "Người có bộ NST 2n = 46 chiếc." },
+      { "kind": "compute", "title": "Phân chia NST thường và giới tính ở nam", "body": "Gồm 22 cặp NST thường = 44 chiếc NST thường (44A) và 1 cặp NST giới tính không tương đồng gồm 1 chiếc X và 1 chiếc Y (XY)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Bộ NST tế bào sinh dưỡng người nam là: 44A + XY." }
+    ],
+    "finalSolution": "Bộ NST tế bào sinh dưỡng của người nam là 44A + XY (44 NST thường và cặp NST giới tính XY).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm bộ NST của tế bào sinh dưỡng (44A + XY) với bộ NST của tinh trùng (22A + Y)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b09-q03",
+    "lessonId": "bio-g9-b09",
+    "sgkBaiSo": 44,
+    "skillIds": ["bio9-nst-gioi-tinh"],
+    "difficulty": 2,
+    "prompt": "Tại sao trong cấu trúc dân số tự nhiên ở người, tỉ lệ sinh con trai và con gái sơ sinh luôn xấp xỉ tỉ lệ 1 nam : 1 nữ?",
+    "knowledge": ["kb-bio-g9-co-che-xac-dinh-gioi-tinh-nguoi"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Do người bố tạo ra 2 loại tinh trùng mang NST X và NST Y với tỉ lệ ngang nhau (1 : 1), và quá trình thụ tinh diễn ra hoàn toàn ngẫu nhiên" },
+        { "id": "opt-b", "label": "Do người mẹ tạo ra 2 loại trứng mang NST X và NST Y với tỉ lệ ngang nhau" },
+        { "id": "opt-c", "label": "Do môi trường tử cung tự động chọn lọc tiêu hủy một nửa số phôi thai đực" },
+        { "id": "opt-d", "label": "Do số lượng hợp tử mang kiểu gen XX luôn nhân đôi nhanh gấp đôi kiểu gen XY" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Người mẹ chỉ tạo 1 loại trứng mang X; sự phân hóa giới tính do các loại tinh trùng của bố quyết định." },
+      { "level": 2, "text": "Số lượng tinh trùng mang X và Y sinh ra ngang nhau (50% X : 50% Y) và có cơ hội thụ tinh ngang nhau." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích quá trình tạo giao tử ở người", "body": "Mẹ (XX) chỉ tạo 1 loại trứng (X). Bố (XY) giảm phân tạo 2 loại tinh trùng mang X và Y với tỉ lệ ngang nhau 1 : 1." },
+      { "kind": "knowledge", "title": "Cơ chế thụ tinh", "body": "Tinh trùng X kết hợp trứng X tạo hợp tử XX (gái) xác suất 50%; tinh trùng Y kết hợp trứng X tạo hợp tử XY (trai) xác suất 50%." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tỉ lệ 1 : 1 do người bố tạo ra 2 loại tinh trùng mang X và Y ngang nhau và thụ tinh ngẫu nhiên." }
+    ],
+    "finalSolution": "Tỉ lệ giới tính xấp xỉ 1 : 1 là do người bố giảm phân tạo 2 loại tinh trùng (X và Y) với tỉ lệ 1 : 1 và xác suất thụ tinh ngẫu nhiên với trứng (X).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng người mẹ tạo ra 2 loại trứng khác nhau (người mẹ là giới đồng giao tử, chỉ tạo trứng X)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b09-q04",
+    "lessonId": "bio-g9-b09",
+    "sgkBaiSo": 44,
+    "skillIds": ["bio9-nst-gioi-tinh"],
+    "difficulty": 2,
+    "prompt": "Theo cơ chế tế bào học xác định giới tính ở người, việc sinh con trai hay con gái phụ thuộc vào yếu tố nào?",
+    "knowledge": ["kb-bio-g9-co-che-xac-dinh-gioi-tinh-nguoi"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Phụ thuộc vào loại tinh trùng của người bố (mang NST X hay mang NST Y) thụ tinh cho tế bào trứng của mẹ" },
+        { "id": "opt-b", "label": "Hoàn toàn phụ thuộc vào người mẹ vì mẹ mang cặp NST giới tính XX" },
+        { "id": "opt-c", "label": "Phụ thuộc vào chế độ ăn uống của người mẹ trong 3 tháng đầu thai kì" },
+        { "id": "opt-d", "label": "Phụ thuộc vào mùa sinh sản trong năm" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Trứng của mẹ luôn luôn chỉ mang 1 chiếc NST giới tính X." },
+      { "level": 2, "text": "Nếu tinh trùng mang X thụ tinh cho trứng sẽ sinh con gái (XX); nếu tinh trùng mang Y thụ tinh sẽ sinh con trai (XY)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đặc điểm giao tử của bố và mẹ", "body": "Người mẹ chỉ tạo một loại trứng duy nhất mang NST X. Người bố tạo 2 loại tinh trùng mang X hoặc Y." },
+      { "kind": "knowledge", "title": "Xác định giới tính hợp tử", "body": "Nếu tinh trùng mang NST X kết hợp với trứng (X) → Hợp tử XX (con gái). Nếu tinh trùng mang NST Y kết hợp với trứng (X) → Hợp tử XY (con trai)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Giới tính của con phụ thuộc vào loại tinh trùng của người bố thụ tinh cho trứng." }
+    ],
+    "finalSolution": "Việc sinh con trai hay con gái do loại tinh trùng của người bố thụ tinh quyết định (tinh trùng mang X sinh con gái, mang Y sinh con trai).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Quan niệm sai lầm cổ hủ cho rằng sinh con trai hay con gái là do người mẹ." }
+    ]
+  },
+  {
+    "id": "bio-g9-b09-q05",
+    "lessonId": "bio-g9-b09",
+    "sgkBaiSo": 44,
+    "skillIds": ["bio9-nst-gioi-tinh"],
+    "difficulty": 2,
+    "prompt": "Ở các loài chim, bò sát và bướm tằm, cơ chế xác định giới tính có đặc điểm nào sau đây khác biệt so với người và thú?",
+    "knowledge": ["kb-bio-g9-cac-kieu-nst-gioi-tinh-sinh-gioi"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Giới đực mang cặp NST giới tính XX (đồng giao tử), còn giới cái mang cặp NST giới tính XY (dị giao tử)" },
+        { "id": "opt-b", "label": "Giới đực mang cặp NST giới tính XY, còn giới cái mang cặp NST giới tính XX" },
+        { "id": "opt-c", "label": "Con cái chỉ mang một chiếc NST giới tính XO, còn con đực mang cặp XX" },
+        { "id": "opt-d", "label": "Không có nhiễm sắc thể giới tính, giới tính hoàn toàn do tuổi thọ quyết định" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Đây là cạm bẫy kinh điển: cơ chế giới tính ở chim và bò sát đảo ngược so với người và thú." },
+      { "level": 2, "text": "Ở chim, con trống là XX còn con mái là XY." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xem xét cơ chế giới tính ở các nhóm động vật", "body": "Ở người, thú và ruồi giấm: đực là XY, cái là XX." },
+      { "kind": "knowledge", "title": "Quy tắc ở chim, bướm và bò sát", "body": "Ở các loài chim (gà, bồ câu...), bò sát và bướm tằm: giới đực (trống) mang cặp NST giới tính XX (đồng giao tử), trong khi giới cái (mái) mang cặp NST giới tính XY (dị giao tử)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Giới đực mang XX, giới cái mang XY." }
+    ],
+    "finalSolution": "Ở chim, bò sát và bướm tằm: giới đực mang cặp NST giới tính XX, giới cái mang cặp NST giới tính XY (ngược lại với người và thú).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Áp dụng máy móc quy ước của người (cho rằng con đực luôn là XY) cho loài chim và bò sát." }
+    ]
+  },
+  {
+    "id": "bio-g9-b09-q06",
+    "lessonId": "bio-g9-b09",
+    "sgkBaiSo": 44,
+    "skillIds": ["bio9-nst-gioi-tinh"],
+    "difficulty": 2,
+    "prompt": "Ở loài châu chấu, con cái có bộ nhiễm sắc thể giới tính là XX, trong khi con đực chỉ mang duy nhất một chiếc NST giới tính X (kí hiệu là XO). Nếu con cái có 2n = 24 thì con đực có bao nhiêu nhiễm sắc thể?",
+    "knowledge": ["kb-bio-g9-cac-kieu-nst-gioi-tinh-sinh-gioi"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "23 nhiễm sắc thể (22A + XO)" },
+        { "id": "opt-b", "label": "24 nhiễm sắc thể (22A + XY)" },
+        { "id": "opt-c", "label": "12 nhiễm sắc thể (11A + X)" },
+        { "id": "opt-d", "label": "25 nhiễm sắc thể (24A + X)" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Châu chấu cái có 2n = 24 gồm 22 NST thường và 2 chiếc NST X (22A + XX)." },
+      { "level": 2, "text": "Châu chấu đực chỉ có 1 chiếc NST X và không có chiếc thứ hai (22A + XO), do đó ít hơn con cái đúng 1 chiếc." }
+    ],
+    "steps": [
+      { "kind": "compute", "title": "Phân tích bộ NST của con cái", "body": "Châu chấu cái có 2n = 24 = 22A + XX (22 chiếc NST thường và 2 chiếc NST giới tính X)." },
+      { "kind": "compute", "title": "Xác định bộ NST của con đực", "body": "Châu chấu đực thuộc kiểu XO, có 22 chiếc NST thường và chỉ 1 chiếc NST giới tính X: 22A + XO = 22 + 1 = 23 chiếc NST." },
+      { "kind": "answer", "title": "Kết luận", "body": "Châu chấu đực có 23 nhiễm sắc thể." }
+    ],
+    "finalSolution": "Châu chấu đực mang kiểu NST giới tính XO nên bộ NST tế bào sinh dưỡng có 22A + XO = 23 nhiễm sắc thể (ít hơn con cái 1 chiếc).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng con đực cũng có 24 chiếc NST giống con cái (cho rằng O là một chiếc NST thực sự)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b09-q07",
+    "lessonId": "bio-g9-b09",
+    "sgkBaiSo": 44,
+    "skillIds": ["bio9-nst-gioi-tinh"],
+    "difficulty": 2,
+    "prompt": "Ở loài rùa biển, nhiệt độ ấp trứng trong tổ cát ảnh hưởng đến tỉ lệ giới tính của rùa con như thế nào?",
+    "knowledge": ["kb-bio-g9-yeu-to-moi-truong-gioi-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Ấp trứng ở nhiệt độ dưới 28°C nở ra hầu hết con đực, trên 32°C nở ra hầu hết con cái" },
+        { "id": "opt-b", "label": "Nhiệt độ môi trường hoàn toàn không ảnh hưởng đến giới tính của rùa biển" },
+        { "id": "opt-c", "label": "Nhiệt độ càng cao thì rùa con nở ra tỉ lệ con đực càng nhiều" },
+        { "id": "opt-d", "label": "Ấp ở nhiệt độ trên 32°C khiến toàn bộ trứng bị ung không nở được con nào" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Rùa biển là ví dụ tiêu biểu trong SGK về ảnh hưởng của nhiệt độ môi trường đến sự phân hóa giới tính." },
+      { "level": 2, "text": "Mẹo ghi nhớ: 'Nóng nở nàng, lạnh nở chàng' đối với loài rùa (nhiệt độ cao nở con cái, mát nở con đực)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Sự phân hóa giới tính theo nhiệt độ", "body": "Ở nhiều loài bò sát (như rùa biển), nhiệt độ ấp trứng quyết định hoạt tính của các enzyme tổng hợp hormone sinh dục." },
+      { "kind": "knowledge", "title": "Số liệu thực nghiệm", "body": "Trứng rùa ấp ở nhiệt độ thấp (< 28°C) nở ra hầu hết là rùa đực; ấp ở nhiệt độ trung bình (28 - 30°C) nở ra tỉ lệ 1 đực : 1 cái; ấp ở nhiệt độ cao (> 32°C) nở ra hầu hết là rùa cái." },
+      { "kind": "answer", "title": "Kết luận", "body": "Dưới 28°C nở hầu hết con đực, trên 32°C nở hầu hết con cái." }
+    ],
+    "finalSolution": "Ở rùa biển, nhiệt độ ấp trứng dưới 28°C nở ra đa số rùa đực, còn trên 32°C nở ra đa số rùa cái.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm với cá sấu (cá sấu thì nhiệt độ cao nở con đực, nhiệt độ thấp nở con cái)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b09-q08",
+    "lessonId": "bio-g9-b09",
+    "sgkBaiSo": 44,
+    "skillIds": ["bio9-nst-gioi-tinh"],
+    "difficulty": 2,
+    "prompt": "Trong nuôi trồng thủy sản, người ta thường ứng dụng phương pháp nào để tạo ra đàn cá rô phi đơn tính (toàn con đực) nhằm nâng cao tốc độ sinh trưởng và sản lượng thịt?",
+    "knowledge": ["kb-bio-g9-y-nghia-thuc-tien-dieu-khien-gioi-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Cho cá bột mới nở ăn thức ăn trộn hormone sinh dục đực (testosterone) trong giai đoạn cửa sổ phân hóa giới tính" },
+        { "id": "opt-b", "label": "Nuôi cá rô phi trong nước muối nồng độ cao để ức chế cá cái phát triển" },
+        { "id": "opt-c", "label": "Chiếu tia phóng xạ gamma liều cao làm đột biến mất hoàn toàn NST X của cá" },
+        { "id": "opt-d", "label": "Chỉ nuôi cá rô phi trong bóng tối suốt chu kì sinh trưởng" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Cá rô phi đực lớn nhanh hơn cá cái từ 20 - 30% và không bị phân tán năng lượng cho việc mang trứng trong miệng." },
+      { "level": 2, "text": "Người ta sử dụng hormone sinh dục đực tác động vào giai đoạn cá con mới nở để chuyển hướng kiểu hình giới tính." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Mục tiêu kinh tế", "body": "Cá rô phi đực sinh trưởng nhanh, kích thước cơ thể lớn và thịt dày hơn cá cái rất nhiều." },
+      { "kind": "knowledge", "title": "Ứng dụng điều khiển giới tính", "body": "Khi cá rô phi bột mới nở, cơ quan sinh dục chưa biệt hóa hoàn toàn. Bổ sung hormone sinh dục đực (17-alpha-methyltestosterone) vào thức ăn giúp 100% cá con phát triển theo hướng kiểu hình cá đực." },
+      { "kind": "answer", "title": "Kết luận", "body": "Trộn hormone sinh dục đực vào thức ăn cho cá bột mới nở." }
+    ],
+    "finalSolution": "Phương pháp phổ biến là cho cá rô phi bột ăn thức ăn có bổ sung hormone sinh dục đực để chuyển đổi toàn bộ đàn cá sang kiểu hình con đực, giúp cá lớn nhanh và tăng hiệu quả kinh tế.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng chiếu tia phóng xạ đột biến gen để biến cá cái thành cá đực." }
+    ]
+  }
+]

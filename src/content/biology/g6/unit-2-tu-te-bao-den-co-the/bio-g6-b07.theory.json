@@ -1,0 +1,76 @@
+{
+  "lessonId": "bio-g6-b07",
+  "nodeId": "bio-g6-b07-theory",
+  "title": "Lý thuyết: Cơ thể sinh vật",
+  "subtitle": "Bài 22 SGK KHTN 6 Kết nối tri thức: 6 quá trình sống đặc trưng và phân biệt sinh vật đơn bào – đa bào",
+  "sgkBaiSo": 22,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Dấu hiệu sống",
+      "badgeColor": "emerald",
+      "title": "6 quá trình sống đặc trưng của cơ thể sinh vật",
+      "content": "Một sinh vật sống phân biệt với vật không sống nhờ 6 quá trình sống cốt lõi diễn ra liên tục:",
+      "bulletPoints": [
+        "1. Cảm ứng: Khả năng tiếp nhận kích thích từ môi trường và phản ứng lại (ví dụ: cây trinh nữ cụp lá khi chạm vào, con mèo co người khi trời rét).",
+        "2. Dinh dưỡng: Lấy thức ăn, nước và chất dinh dưỡng từ môi trường ngoài vào cơ thể.",
+        "3. Hô hấp: Hấp thụ oxygen để phân giải chất hữu cơ giải phóng năng lượng sống và thải khí carbon dioxide.",
+        "4. Bài tiết: Thải các chất cặn bã, độc hại do chuyển hóa tạo ra ra khỏi cơ thể.",
+        "5. Sinh trưởng & phát triển: Lớn lên về kích thước, khối lượng và biến đổi chức năng các bộ phận.",
+        "6. Sinh sản: Tạo ra các thế hệ cá thể con mới để duy trì nòi giống."
+      ],
+      "callout": "Nếu một vật không thực hiện được các quá trình này (như hòn đá, chiếc bàn), đó là vật không sống!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Đơn bào",
+      "badgeColor": "amber",
+      "title": "Sinh vật đơn bào: Một tế bào là một cơ thể",
+      "content": "Sinh vật đơn bào là những sinh vật có toàn bộ cơ thể chỉ cấu tạo từ một tế bào duy nhất:",
+      "bulletPoints": [
+        "Cơ chế hoạt động: Tế bào duy nhất này tự mình đảm nhận mọi chức năng sống độc lập (dinh dưỡng, hô hấp, bài tiết, cảm ứng và sinh sản).",
+        "Kích thước: Đa số có kích thước hiển vi, phải quan sát bằng kính hiển vi quang học.",
+        "Đại diện quen thuộc: Trùng roi xanh, trùng giày, trùng biến hình (nguyên sinh vật); vi khuẩn E. coli, vi khuẩn lactic (khởi sinh); nấm men (nấm đơn bào); tảo lục đơn bào."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Đa bào",
+      "badgeColor": "cyan",
+      "title": "Sinh vật đa bào: Tập hợp hàng triệu tế bào chuyên hóa",
+      "content": "Sinh vật đa bào là những sinh vật có cơ thể được xây dựng từ rất nhiều tế bào:",
+      "bulletPoints": [
+        "Cơ chế hoạt động: Các tế bào phân hóa về hình dạng và chức năng, phối hợp chặt chẽ với nhau để tạo thành các mô, cơ quan và hệ cơ quan chuyên trách.",
+        "Kích thước: Đa số nhìn thấy được bằng mắt thường, kích thước từ vài milimet đến hàng chục mét (cá voi xanh, cây sequoia khổng lồ).",
+        "Đại diện: Cây bàng, cây phượng, cây lúa (thực vật); con chó, con mèo, chim bồ câu, con người (động vật); nấm rơm, nấm mộc nhĩ (nấm lớn)."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Sinh vật nào sau đây là sinh vật đơn bào có toàn bộ cơ thể chỉ cấu tạo từ một tế bào duy nhất?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Trùng roi xanh",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Cây hoa sen",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Con chim sẻ",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Cây rêu tường",
+        "correct": false
+      }
+    ],
+    "explanation": "Trùng roi xanh sống ở nước ao hồ là sinh vật đơn bào, cơ thể chỉ gồm một tế bào nhân thực có roi bơi và điểm mắt màu đỏ."
+  }
+}

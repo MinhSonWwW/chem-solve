@@ -1,0 +1,84 @@
+{
+  "lessonId": "bio-g6-b17",
+  "nodeId": "bio-g6-b17-theory",
+  "title": "Lý thuyết: Nấm",
+  "subtitle": "Bài 32 SGK KHTN 6 Kết nối tri thức: Đặc điểm sinh vật nhân thực dị dưỡng, phân loại nấm, vai trò và nhận diện nấm độc",
+  "sgkBaiSo": 32,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Đặc điểm chung",
+      "badgeColor": "emerald",
+      "title": "Đặc điểm cấu tạo và dinh dưỡng của nấm",
+      "content": "Nấm là một giới sinh vật nhân thực riêng biệt (Fungi) có các đặc tính sau:",
+      "bulletPoints": [
+        "Cấu tạo tế bào: Là sinh vật nhân thực, thành tế bào được cấu tạo từ chất kitin (chitin) dẻo dai.",
+        "Hình thức dinh dưỡng: Dị dưỡng hoàn toàn (hoại sinh phân giải xác hữu cơ hoặc ký sinh). Nấm KHÔNG có chất diệp lục nên hoàn toàn KHÔNG có khả năng quang hợp như thực vật.",
+        "Cơ thể: Đa số cấu tạo từ nhiều sợi nấm (khuẩn ty) mảnh mai phân nhánh chằng chịt len lỏi trong cơ chất."
+      ],
+      "callout": "Lưu ý quan trọng: Nấm KHÔNG PHẢI là thực vật vì nấm dị dưỡng và không có diệp lục quang hợp!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Phân loại",
+      "badgeColor": "amber",
+      "title": "3 nhóm nấm phổ biến trong đời sống",
+      "content": "Dựa vào hình thái và kích thước, nấm được chia làm 3 nhóm:",
+      "bulletPoints": [
+        "Nấm men: Cơ thể đơn bào hình cầu hoặc bầu dục, sinh sản vô tính bằng cách mọc chồi (ví dụ: men bánh mì, men rượu).",
+        "Nấm mốc: Cơ thể dạng sợi phân nhánh chằng chịt, sinh sản bằng các bào tử mọc trên đầu sợi nấm (ví dụ: mốc trắng, mốc đen trên bánh mì thiu, mốc xanh Penicillium).",
+        "Nấm lớn (nấm thể quả): Có thể nhìn thấy bằng mắt thường, gồm 5 bộ phận: Mũ nấm, Phiến nấm (dưới mũ chứa bào tử), Vòng cuống, Cuống nấm và Bao gốc nấm (ví dụ: nấm rơm, nấm hương, nấm sò, nấm linh chi)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Lợi ích & Tác hại",
+      "badgeColor": "cyan",
+      "title": "Vai trò của nấm đối với con người và tự nhiên",
+      "content": "Nấm mang lại nhiều lợi ích to lớn nhưng cũng có những tác hại cần lưu ý:",
+      "bulletPoints": [
+        "Lợi ích: Thực phẩm giàu đạm thơm ngon (nấm rơm, nấm đùi gà, nấm sò); lên men nở bột bánh mì và ủ bia rượu; sản xuất thuốc kháng sinh penicillin từ nấm mốc; dược liệu quý tăng sức đề kháng (nấm linh chi, đông trùng hạ thảo); dọn dẹp xác thực vật chết làm mùn đất.",
+        "Tác hại: Làm mốc thiu ôi thức ăn, sinh độc tố aflatoxin trên hạt lạc ngô mốc (độc tố gây ung thư gan); gây bệnh nấm da ở người (hắc lào, lang ben, nấm kẽ chân, nấm móng); gây bệnh gỉ sắt, thối rễ cây trồng."
+      ]
+    },
+    {
+      "id": "card-4",
+      "badge": "Nhận diện nấm độc",
+      "badgeColor": "purple",
+      "title": "Dấu hiệu nhận biết và phòng tránh ngộ độc nấm rừng",
+      "content": "Ngộ độc nấm rừng có thể gây tử vong nhanh chóng:",
+      "bulletPoints": [
+        "Tuyệt đối không hái ăn các loại nấm mọc hoang dại trong rừng nếu không biết rõ nguồn gốc an toàn.",
+        "Dấu hiệu nấm cực độc (như nấm tán trắng, nấm độc đỏ): Thường có màu sắc sặc sỡ hoặc trắng toát, có cả Vòng cuống ở thân và Bao gốc phình to hình chén ở dưới gốc nấm.",
+        "Xử lý khi ngộ độc: Cho nạn nhân nôn hết thức ăn, uống nhiều nước ấm và lập tức đưa đến cơ sở y tế gần nhất kèm mẫu nấm đã ăn."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Tại sao nấm KHÔNG được xếp vào giới Thực vật mặc dù chúng cũng mọc trên mặt đất như cây cỏ?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Vì nấm dị dưỡng và không có chất diệp lục nên không thể tự quang hợp như thực vật",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Vì nấm có khả năng bơi lội dưới nước như cá",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Vì tế bào nấm không có màng tế bào",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Vì nấm chỉ xuất hiện vào ban đêm",
+        "correct": false
+      }
+    ],
+    "explanation": "Thực vật là sinh vật tự dưỡng có diệp lục để quang hợp, còn nấm là sinh vật dị dưỡng (hoại sinh hoặc ký sinh), thành tế bào bằng chitin và hoàn toàn không có diệp lục."
+  }
+}

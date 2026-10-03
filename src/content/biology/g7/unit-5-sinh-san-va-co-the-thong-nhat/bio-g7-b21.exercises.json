@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g7-b21-q01",
+    "lessonId": "bio-g7-b21",
+    "sgkBaiSo": 41,
+    "skillIds": ["bio-dieu-khien-sinh-san"],
+    "difficulty": 1,
+    "prompt": "Biện pháp thụ phấn nhân tạo bổ sung cho cây ngô (bắp) hoặc cây thanh long nhằm mục đích quan trọng nhất là gì?",
+    "knowledge": ["kb-bio-g7-dieu-khien-sinh-san", "kb-bio-g7-sinh-san-huu-tinh-hoa"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tăng tỉ lệ hạt phấn tiếp xúc đầu nhụy, nâng cao tỉ lệ đậu quả và giúp bắp ngô chắc mẩy kín hạt" },
+        { "id": "opt-b", "label": "Làm cho cây ngô biến thành cây ăn quả thân gỗ" },
+        { "id": "opt-c", "label": "Ngăn cản không cho hạt ngô tích lũy tinh bột" },
+        { "id": "opt-d", "label": "Làm cho hoa thanh long không cần nước vẫn nở được" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Trong điều kiện tự nhiên, gió hoặc côn trùng có thể không mang đủ hạt phấn đến tất cả các đầu nhụy." },
+      { "level": 2, "text": "Thụ phấn nhân tạo giúp mọi noãn đều được thụ tinh, tránh hiện tượng bắp ngô bị lép hạt hoặc quả thanh long nhỏ méo mó." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định mục đích kỹ thuật nông học", "body": "Khảo sát ứng dụng thụ phấn nhân tạo ở thực vật có hoa." },
+      { "kind": "knowledge", "title": "Hiệu quả thụ phấn nhân tạo", "body": "Chủ động đưa hạt phấn đến đầu nhụy giúp tăng tối đa tỷ lệ thụ tinh tạo hạt và tạo quả chất lượng cao." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tăng tỉ lệ hạt phấn tiếp xúc đầu nhụy, nâng cao tỉ lệ đậu quả và giúp bắp ngô chắc mẩy kín hạt." }
+    ],
+    "finalSolution": "Thụ phấn nhân tạo bổ sung giúp nâng cao tỉ lệ thụ tinh, tăng năng suất và phẩm chất hạt/quả.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng thụ phấn nhân tạo là biến đổi gen của cây trồng." }
+    ]
+  },
+  {
+    "id": "bio-g7-b21-q02",
+    "lessonId": "bio-g7-b21",
+    "sgkBaiSo": 41,
+    "skillIds": ["bio-dieu-khien-sinh-san"],
+    "difficulty": 2,
+    "prompt": "Trong nuôi trồng thủy sản, tại sao người ta lại tiêm dịch chiết tuyến yên hoặc hormone sinh dục nhân tạo cho cá mè, cá trắm nuôi trong ao?",
+    "knowledge": ["kb-bio-g7-dieu-khien-sinh-san"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Kích thích trứng và tinh trùng của cá chín đồng loạt và kích thích cá đẻ trứng trong điều kiện nước tĩnh ao hồ" },
+        { "id": "opt-b", "label": "Để làm cho cá lớn nhanh gấp 10 lần chỉ sau một đêm" },
+        { "id": "opt-c", "label": "Để cá mè có thể tự thở được trên cạn không cần nước" },
+        { "id": "opt-d", "label": "Để tiêu diệt toàn bộ ký sinh trùng trong mang cá" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Trong ao hồ nước tĩnh, cá mè tự nhiên không có dòng chảy kích thích nên không thể tự phóng trứng." },
+      { "level": 2, "text": "Hormone tuyến yên kích thích buồng trứng cá chín rụng đồng loạt để thụ tinh nhân tạo lấy con giống." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Hiểu ứng dụng điều hòa nội tiết", "body": "Giải thích kỹ thuật kích thích cá sinh sản nhân tạo trong ao nuôi." },
+      { "kind": "knowledge", "title": "Tác dụng của hormone sinh dục ở cá", "body": "Hormone kích dục thay thế kích thích dòng chảy tự nhiên, giúp cá nuôi trong ao đẻ trứng và phóng tinh nhân tạo để ấp nở cá giống." },
+      { "kind": "answer", "title": "Kết luận", "body": "Kích thích trứng và tinh trùng của cá chín đồng loạt và kích thích cá đẻ trứng trong điều kiện nước tĩnh ao hồ." }
+    ],
+    "finalSolution": "Tiêm hormone kích thích cá đẻ trứng nhân tạo giúp chủ động sản xuất hàng triệu con cá giống trong ao nuôi.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn giữa hormone kích dục sinh sản với hormone tăng trưởng sinh dưỡng." }
+    ]
+  },
+  {
+    "id": "bio-g7-b21-q03",
+    "lessonId": "bio-g7-b21",
+    "sgkBaiSo": 41,
+    "skillIds": ["bio-dieu-khien-sinh-san"],
+    "difficulty": 2,
+    "prompt": "Ở loài rùa biển, nhiệt độ cát ấp trứng ảnh hưởng trực tiếp đến giới tính của rùa con như thế nào?",
+    "knowledge": ["kb-bio-g7-dieu-khien-sinh-san"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Nhiệt độ ấp trứng cao (trên 30°C) nở ra đa số rùa cái, nhiệt độ ấp thấp (dưới 28°C) nở ra đa số rùa đực" },
+        { "id": "opt-b", "label": "Nhiệt độ hoàn toàn không có bất kỳ ảnh hưởng nào đến giới tính của rùa" },
+        { "id": "opt-c", "label": "Nhiệt độ cao làm trứng nở ra cá sấu, nhiệt độ thấp nở ra rùa" },
+        { "id": "opt-d", "label": "Nhiệt độ cao chỉ nở ra rùa đực còn nhiệt độ thấp nở ra rùa cái" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Nhiều loài bò sát có cơ chế xác định giới tính phụ thuộc nhiệt độ môi trường ấp trứng." },
+      { "level": 2, "text": "Ở rùa biển: Cát ấm cho rùa cái, cát mát cho rùa đực (Ấm = Cái, Lạnh = Đực)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích ảnh hưởng của nhiệt độ", "body": "Xác định quy luật tác động của nhiệt độ lên sự phân hóa giới tính ở rùa." },
+      { "kind": "knowledge", "title": "Xác định giới tính phụ thuộc nhiệt độ (TSD)", "body": "Ở rùa biển, nhiệt độ ổ ấp > 30°C thúc đẩy phát triển buồng trứng thành con cái; nhiệt độ < 28°C nở ra con đực." },
+      { "kind": "answer", "title": "Kết luận", "body": "Nhiệt độ ấp trứng cao (trên 30°C) nở ra đa số rùa cái, nhiệt độ ấp thấp (dưới 28°C) nở ra đa số rùa đực." }
+    ],
+    "finalSolution": "Ở rùa biển, nhiệt độ cát ấp trứng cao trên 30°C nở ra rùa cái, dưới 28°C nở ra rùa đực.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Đảo ngược quy luật (ở cá sấu nhiệt độ trung bình cao nở ra con đực, còn ở rùa nhiệt độ cao nở ra con cái)." }
+    ]
+  },
+  {
+    "id": "bio-g7-b21-q04",
+    "lessonId": "bio-g7-b21",
+    "sgkBaiSo": 41,
+    "skillIds": ["bio-dieu-khien-sinh-san"],
+    "difficulty": 1,
+    "prompt": "Ứng dụng THỤ TINH NHÂN TẠO trong chăn nuôi gia súc (bò sữa, lợn giống) đem lại lợi ích kinh tế chủ yếu gì?",
+    "knowledge": ["kb-bio-g7-dieu-khien-sinh-san"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tận dụng tối đa nguồn tinh trùng của con đực giống tốt để phối giống cho hàng nghìn con cái, nâng cao chất lượng giống" },
+        { "id": "opt-b", "label": "Làm cho bò cái không cần mang thai mà vẫn đẻ ra con ngay lập tức" },
+        { "id": "opt-c", "label": "Giúp bò đực có thể trực tiếp mang thai và sinh con" },
+        { "id": "opt-d", "label": "Ngăn chặn bò cái không bao giờ tiết sữa" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Tinh trùng của một con đực giống nhập ngoại cao sản có thể pha loãng và đông lạnh bảo quản lâu dài." },
+      { "level": 2, "text": "Một liều tinh phối giống được cho rất nhiều con bò cái ở khắp các địa phương mà không cần di chuyển con đực." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đánh giá hiệu quả kinh tế kỹ thuật", "body": "Ý nghĩa ứng dụng của thụ tinh nhân tạo trong ngành chăn nuôi đại gia súc." },
+      { "kind": "knowledge", "title": "Lợi ích thụ tinh nhân tạo gia súc", "body": "Khai thác tối đa phẩm chất di truyền quý của con đực giống, nâng cao tỷ lệ thụ thai và kiểm soát an toàn dịch bệnh." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tận dụng tối đa nguồn tinh trùng của con đực giống tốt để phối giống cho hàng nghìn con cái, nâng cao chất lượng giống." }
+    ],
+    "finalSolution": "Thụ tinh nhân tạo giúp nhân nhanh các nguồn gen đực giống quý cho hàng nghìn con cái, nâng cao chất lượng đàn vật nuôi.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng thụ tinh nhân tạo là nuôi con non hoàn toàn trong phòng thí nghiệm không cần bò mẹ mang thai." }
+    ]
+  },
+  {
+    "id": "bio-g7-b21-q05",
+    "lessonId": "bio-g7-b21",
+    "sgkBaiSo": 41,
+    "skillIds": ["bio-dieu-khien-sinh-san"],
+    "difficulty": 1,
+    "prompt": "Kỹ thuật Thụ tinh trong ống nghiệm (IVF) ở người có bản chất là:",
+    "knowledge": ["kb-bio-g7-dieu-khien-sinh-san"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Cho trứng và tinh trùng gặp nhau thụ tinh bên ngoài cơ thể (trong đĩa/ống nghiệm), sau đó cấy phôi sớm vào tử cung người mẹ để mang thai" },
+        { "id": "opt-b", "label": "Nuôi thai nhi hoàn toàn trong bình thủy tinh suốt 9 tháng 10 ngày không cần bụng mẹ" },
+        { "id": "opt-c", "label": "Tạo ra em bé từ tế bào da mà không cần trứng và tinh trùng" },
+        { "id": "opt-d", "label": "Biến đổi toàn bộ các tế bào hồng cầu thành tế bào hợp tử" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Quá trình thụ tinh tạo hợp tử diễn ra trong đĩa thí nghiệm." },
+      { "level": 2, "text": "Sau vài ngày phân chia thành phôi, phôi sẽ được chuyển vào tử cung người mẹ để phát triển thành thai nhi bình thường." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định quy trình kỹ thuật IVF", "body": "Hiểu bản chất phương pháp thụ tinh trong ống nghiệm hỗ trợ sinh sản ở người." },
+      { "kind": "knowledge", "title": "Bản chất IVF", "body": "Thụ tinh diễn ra ngoài cơ thể trong môi trường nuôi cấy nhân tạo, sau đó phôi non được đưa vào tử cung mẹ để làm tổ và mang thai." },
+      { "kind": "answer", "title": "Kết luận", "body": "Cho trứng và tinh trùng gặp nhau thụ tinh bên ngoài cơ thể (trong đĩa/ống nghiệm), sau đó cấy phôi sớm vào tử cung người mẹ để mang thai." }
+    ],
+    "finalSolution": "IVF là kỹ thuật cho trứng và tinh trùng thụ tinh ngoài ống nghiệm rồi chuyển phôi vào tử cung người mẹ mang thai.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Hiểu lầm rằng thai nhi lớn lên hoàn toàn trong ống nghiệm cho đến khi sinh ra." }
+    ]
+  },
+  {
+    "id": "bio-g7-b21-q06",
+    "lessonId": "bio-g7-b21",
+    "sgkBaiSo": 41,
+    "skillIds": ["bio-dieu-khien-sinh-san"],
+    "difficulty": 1,
+    "prompt": "Tại sao việc thực hiện 'Sinh đẻ có kế hoạch' lại có ý nghĩa to lớn đối với mỗi gia đình và sự phát triển xã hội?",
+    "knowledge": ["kb-bio-g7-dieu-khien-sinh-san"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Giúp đảm bảo sức khỏe người mẹ, nuôi dạy con cái chu đáo và nâng cao chất lượng cuộc sống toàn xã hội" },
+        { "id": "opt-b", "label": "Để làm cho dân số của loài người giảm xuống bằng 0" },
+        { "id": "opt-c", "label": "Để không ai phải tham gia học tập và lao động" },
+        { "id": "opt-d", "label": "Để thay thế hoàn toàn hình thức sinh sản hữu tính bằng sinh sản vô tính" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Sinh đẻ có kế hoạch là sinh con theo mong muốn về số lượng và khoảng cách giữa các lần sinh." },
+      { "level": 2, "text": "Giúp gia đình có điều kiện kinh tế chăm sóc con cái học hành tốt và bảo vệ sức khỏe người mẹ." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đánh giá ý nghĩa xã hội", "body": "Hiểu vai trò của sinh đẻ có kế hoạch đối với hạnh phúc gia đình và sự phồn vinh của đất nước." },
+      { "kind": "knowledge", "title": "Ý nghĩa sinh đẻ có kế hoạch", "body": "Mỗi cặp vợ chồng nên sinh 1-2 con, cách nhau 3-5 năm để có điều kiện nuôi dạy tốt và bảo vệ sức khỏe sinh sản." },
+      { "kind": "answer", "title": "Kết luận", "body": "Giúp đảm bảo sức khỏe người mẹ, nuôi dạy con cái chu đáo và nâng cao chất lượng cuộc sống toàn xã hội." }
+    ],
+    "finalSolution": "Sinh đẻ có kế hoạch giúp đảm bảo sức khỏe bà mẹ, nuôi dạy con tốt và phát triển kinh tế xã hội bền vững.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Hiểu sinh đẻ có kế hoạch là cấm hoàn toàn việc sinh con." }
+    ]
+  },
+  {
+    "id": "bio-g7-b21-q07",
+    "lessonId": "bio-g7-b21",
+    "sgkBaiSo": 41,
+    "skillIds": ["bio-dieu-khien-sinh-san"],
+    "difficulty": 2,
+    "prompt": "Nhân tố nào sau đây KHÔNG THUỘC nhóm các nhân tố môi trường bên ngoài ảnh hưởng đến sinh sản ở sinh vật?",
+    "knowledge": ["kb-bio-g7-dieu-khien-sinh-san"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Nồng độ các hormone sinh dục do tuyến yên tiết ra bên trong cơ thể" },
+        { "id": "opt-b", "label": "Nhiệt độ môi trường không khí và nhiệt độ nước" },
+        { "id": "opt-c", "label": "Thời gian và cường độ chiếu sáng trong ngày" },
+        { "id": "opt-d", "label": "Thành phần và lượng chất dinh dưỡng trong thức ăn" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Phân biệt nhân tố bên ngoài (môi trường) với nhân tố bên trong cơ thể." },
+      { "level": 2, "text": "Hormone là các chất hóa học nội tiết do các tuyến bên trong cơ thể sinh vật sản xuất." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân loại nhân tố ảnh hưởng", "body": "Tìm nhân tố thuộc nhóm nhân tố bên trong (nội sinh)." },
+      { "kind": "knowledge", "title": "Nhân tố bên trong vs bên ngoài", "body": "Nhiệt độ, ánh sáng, độ ẩm, dinh dưỡng là nhân tố môi trường bên ngoài; hormone và di truyền là nhân tố bên trong." },
+      { "kind": "answer", "title": "Kết luận", "body": "Nồng độ các hormone sinh dục do tuyến yên tiết ra bên trong cơ thể." }
+    ],
+    "finalSolution": "Hormone sinh dục là nhân tố bên trong (nội tiết), không thuộc nhóm nhân tố môi trường bên ngoài.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Xếp hormone vào nhân tố môi trường ngoài." }
+    ]
+  },
+  {
+    "id": "bio-g7-b21-q08",
+    "lessonId": "bio-g7-b21",
+    "sgkBaiSo": 41,
+    "skillIds": ["bio-dieu-khien-sinh-san"],
+    "difficulty": 2,
+    "prompt": "Hành động nào sau đây là biện pháp tránh thai an toàn, vừa giúp ngừa thai ngoài ý muốn vừa phòng chống các bệnh lây truyền qua đường tình dục (như HIV, viêm gan B)?",
+    "knowledge": ["kb-bio-g7-dieu-khien-sinh-san"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Sử dụng bao cao su đúng cách khi quan hệ tình dục" },
+        { "id": "opt-b", "label": "Uống thật nhiều nước đá lạnh sau khi quan hệ" },
+        { "id": "opt-c", "label": "Tắm bằng xà phòng thơm sát khuẩn" },
+        { "id": "opt-d", "label": "Chạy bộ 5 km ngay sau khi quan hệ" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Biện pháp tạo màng ngăn cơ học ngăn cản tinh trùng gặp trứng và ngăn tiếp xúc dịch thể mang mầm bệnh." },
+      { "level": 2, "text": "Bao cao su là biện pháp duy nhất vừa tránh thai vừa bảo vệ khỏi các bệnh lây qua đường tình dục." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Hiểu kiến thức sức khỏe sinh sản", "body": "Xác định biện pháp kép vừa phòng thai vừa ngăn ngừa bệnh truyền nhiễm lây qua đường tình dục." },
+      { "kind": "knowledge", "title": "Tác dụng của bao cao su", "body": "Bao cao su ngăn tinh trùng xâm nhập vào đường sinh dục nữ và ngăn cản mầm bệnh lây qua dịch sinh dục." },
+      { "kind": "answer", "title": "Kết luận", "body": "Sử dụng bao cao su đúng cách khi quan hệ tình dục." }
+    ],
+    "finalSolution": "Sử dụng bao cao su là biện pháp khoa học hiệu quả vừa ngừa thai vừa phòng tránh các bệnh lây truyền qua đường tình dục.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Tin vào các mẹo dân gian truyền miệng sai lệch như tắm nước lạnh hay chạy bộ để ngừa thai." }
+    ]
+  }
+]

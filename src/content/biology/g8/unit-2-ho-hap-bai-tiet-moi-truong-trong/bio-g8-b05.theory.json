@@ -1,0 +1,74 @@
+{
+  "lessonId": "bio-g8-b05",
+  "nodeId": "bio-g8-b05-theory",
+  "title": "Lý thuyết: Hệ hô hấp ở người",
+  "subtitle": "Bài 34 SGK KHTN 8 Kết nối tri thức: Cấu tạo đường dẫn khí và phổi, cơ chế thông khí, trao đổi khí khuếch tán, tác hại khói thuốc và sơ cứu ngạt thở",
+  "sgkBaiSo": 34,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Cấu tạo",
+      "badgeColor": "emerald",
+      "title": "Cấu tạo đường dẫn khí và hai lá phổi",
+      "content": "Hệ hô hấp gồm đường dẫn khí và phổi:",
+      "bulletPoints": [
+        "Đường dẫn khí: Mũi (lông mũi lọc bụi, niêm mạc tiết nhầy diệt khuẩn, mao mạch sưởi ấm không khí) → Họng → Thanh quản (có nắp thanh quản đậy kín khi nuốt chống sặc) → Khí quản (15-20 vòng sụn khuyết chữ C giữ ống luôn mở) → Phế quản.",
+        "Hai lá phổi: Phổi phải 3 thùy, phổi trái 2 thùy. Đơn vị trao đổi khí là phế nang (khoảng 700 - 800 triệu phế nang), tạo diện tích bề mặt tiếp xúc khổng lồ từ 70 - 100 m².",
+        "Màng phế nang mỏng chỉ 1 lớp tế bào biểu mô, bao quanh bởi mạng lưới mao mạch máu dày đặc giúp khí khuếch tán tức thì."
+      ],
+      "callout": "Thở bằng mũi giúp sưởi ấm, làm ẩm và làm sạch không khí; thở bằng miệng làm mất các cơ chế bảo vệ này khiến đường thở dễ viêm nhiễm!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Cơ chế",
+      "badgeColor": "amber",
+      "title": "Cơ chế thông khí và Trao đổi khí khuếch tán",
+      "content": "Hoạt động hô hấp gồm sự thông khí ở phổi và trao đổi khí ở mô:",
+      "bulletPoints": [
+        "Hít vào (chủ động): Cơ liên sườn ngoài co nâng xương sườn + cơ hoành co hạ xuống → Thể tích lồng ngực tăng → Áp suất khoang ngực giảm nhỏ hơn áp suất khí quyển → Không khí ùa vào phổi.",
+        "Thở ra (thụ động): Các cơ hô hấp dãn → Thể tích lồng ngực giảm → Áp suất khoang ngực tăng ép không khí từ phổi ra ngoài.",
+        "Trao đổi khí ở phổi: O2 khuếch tán từ phế nang vào máu mao mạch; CO2 từ máu khuếch tán ra lòng phế nang.",
+        "Trao đổi khí ở tế bào: O2 khuếch tán từ máu vào tế bào để oxy hóa tạo ATP; CO2 từ tế bào khuếch tán vào máu trở về tim."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Bảo vệ & Sơ cứu",
+      "badgeColor": "cyan",
+      "title": "Tác hại khói thuốc lá & Kĩ năng sơ cứu hô hấp",
+      "content": "Bảo vệ đường hô hấp và xử lí tình huống ngạt thở khẩn cấp:",
+      "bulletPoints": [
+        "Khói thuốc lá: Chứa Nicotine gây nghiện và co thắt mạch máu, khí CO chiếm chỗ của O2 gắn với hồng cầu, hắc ín (tar) làm tê liệt lông rung khí quản và gây ung thư phổi.",
+        "Bảo vệ lá phổi: Đeo khẩu trang chống bụi mịn PM2.5, trồng nhiều cây xanh, không hút thuốc lá chủ động và thụ động.",
+        "Sơ cứu ngạt thở / đuối nước: Làm thông thoáng đường thở, đặt nạn nhân nằm ngửa, thực hiện ép tim ngoài lồng ngực kết hợp hà hơi thổi ngạt với tỉ lệ chuẩn 30 lần ép tim : 2 lần thổi ngạt."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Trong cử động hít vào bình thường ở người, trạng thái của cơ liên sườn và cơ hoành diễn ra như thế nào?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Cơ liên sườn co nâng xương sườn lên và cơ hoành co hạ xuống làm tăng thể tích lồng ngực",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Cơ liên sườn dãn và cơ hoành dãn nâng lên làm tăng thể tích lồng ngực",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Cả hai cơ đều dãn làm giảm áp suất khí quyển",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Cơ liên sườn co nhưng cơ hoành giữ nguyên vị trí",
+        "correct": false
+      }
+    ],
+    "explanation": "Khi hít vào, cơ liên sườn ngoài co kéo lồng ngực nở rộng sang hai bên, đồng thời cơ hoành co phẳng hạ xuống làm tăng chiều dọc khoang ngực, tạo áp suất âm hút không khí tràn vào phế nang."
+  }
+}

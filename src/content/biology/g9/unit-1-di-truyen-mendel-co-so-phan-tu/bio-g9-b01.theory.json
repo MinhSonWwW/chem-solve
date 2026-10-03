@@ -1,0 +1,78 @@
+{
+  "lessonId": "bio-g9-b01",
+  "nodeId": "bio-g9-b01-theory",
+  "title": "Lý thuyết: Khái quát về di truyền học",
+  "subtitle": "Bài 36 SGK KHTN 9 Kết nối tri thức: Di truyền, biến dị, thuật ngữ di truyền cơ bản và phương pháp nghiên cứu của Mendel",
+  "sgkBaiSo": 36,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Bản chất sự sống",
+      "badgeColor": "emerald",
+      "title": "Di truyền và biến dị",
+      "content": "Di truyền và biến dị là hai đặc tính cơ bản, song song và mật thiết gắn liền với quá trình sinh sản của mọi sinh vật:",
+      "bulletPoints": [
+        "Di truyền: Hiện tượng truyền đạt các tính trạng của bố mẹ, tổ tiên cho các thế hệ con cháu (ví dụ: con cái thừa hưởng màu mắt, nhóm máu, màu tóc từ bố mẹ).",
+        "Biến dị: Hiện tượng con sinh ra khác bố mẹ và khác nhau về nhiều chi tiết trong cấu tạo hoặc sinh lí.",
+        "Mối quan hệ: Di truyền đảm bảo tính ổn định của loài qua các thế hệ, trong khi biến dị tạo nên sự đa dạng phong phú, cung cấp nguyên liệu cho tiến hóa và chọn giống."
+      ],
+      "callout": "Không có sinh sản thì không có di truyền và biến dị; mọi sinh vật đều kế thừa thông tin di truyền từ thế hệ trước!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Thuật ngữ cốt lõi",
+      "badgeColor": "amber",
+      "title": "Các thuật ngữ di truyền cơ bản",
+      "content": "Hệ thống khái niệm chuẩn mực cần nắm vững để giải quyết các bài toán di truyền:",
+      "bulletPoints": [
+        "1. Tính trạng: Những đặc điểm cụ thể về hình thái, cấu tạo, sinh lí của cơ thể (ví dụ: màu hoa, hình dạng hạt, chiều cao thân).",
+        "2. Cặp tính trạng tương phản: Hai trạng thái biểu hiện trái ngược nhau của cùng một loại tính trạng (ví dụ: hạt vàng đối lập với hạt xanh, hoa đỏ đối lập với hoa trắng).",
+        "3. Nhân tố di truyền (Gene): Đơn vị quy định tính trạng của sinh vật, nằm trong nhân tế bào, tồn tại thành từng cặp tương ứng.",
+        "4. Kiểu gen: Tổ hợp toàn bộ các gene trong tế bào cơ thể (ví dụ: AA, Aa, aa, AaBb).",
+        "5. Kiểu hình: Tập hợp toàn bộ các tính trạng của cơ thể biểu hiện ra ngoài (ví dụ: hoa đỏ, thân cao).",
+        "6. Thể đồng hợp: Mang 2 allele giống nhau (AA - đồng hợp trội, aa - đồng hợp lặn).",
+        "7. Thể dị hợp: Mang 2 allele khác nhau của cùng một gene (Aa)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Phương pháp Mendel",
+      "badgeColor": "cyan",
+      "title": "Phương pháp phân tích các thế hệ lai của Mendel",
+      "content": "Gregor Mendel (1822 - 1884) là người đầu tiên đặt nền móng cho Di truyền học với phương pháp nghiên cứu độc đáo trên cây Đậu Hà Lan:",
+      "bulletPoints": [
+        "Tạo dòng thuần chủng: Cho cây đậu tự thụ phấn nghiêm ngặt qua nhiều thế hệ để thu được các dòng thuần chủng về từng cặp tính trạng.",
+        "Lai và theo dõi riêng rẽ: Cho lai các cặp bố mẹ thuần chủng khác nhau về một hoặc một số cặp tính trạng tương phản, rồi theo dõi sự biểu hiện của từng cặp tính trạng ở con lai F1, F2, F3.",
+        "Toán học thống kê: Sử dụng toán xác suất thống kê để đếm số lượng hạt/cây con lai, từ đó phát hiện ra các quy luật di truyền khách quan.",
+        "Kí hiệu quy ước: P (bố mẹ ban đầu), × (phép lai), F1, F2 (thế hệ con lai 1, 2), G (giao tử), ♂ (đực), ♀ (cái)."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Cặp tính trạng nào sau đây là một 'cặp tính trạng tương phản' theo đúng định nghĩa của Mendel?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Hạt trơn và hạt nhăn",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Hạt vàng và vỏ nhăn",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Thân cao và hoa đỏ",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Quả dài và hạt xanh",
+        "correct": false
+      }
+    ],
+    "explanation": "Cặp tính trạng tương phản phải là hai trạng thái biểu hiện trái ngược nhau của CÙNG MỘT LOẠI tính trạng (hình dạng vỏ hạt: trơn đối lập với nhăn)."
+  }
+}

@@ -1,0 +1,255 @@
+[
+  {
+    "id": "bio-g9-b01-q01",
+    "lessonId": "bio-g9-b01",
+    "sgkBaiSo": 36,
+    "skillIds": ["bio9-khai-quat-di-truyen"],
+    "difficulty": 1,
+    "prompt": "Hiện tượng con cái sinh ra mang những đặc điểm cấu tạo, hình thái giống với bố mẹ và tổ tiên được gọi là gì?",
+    "knowledge": ["kb-bio-g9-di-truyen-bien-di"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Di truyền" },
+        { "id": "opt-b", "label": "Biến dị" },
+        { "id": "opt-c", "label": "Đột biến" },
+        { "id": "opt-d", "label": "Thường biến" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Khái niệm này chỉ việc truyền đạt các đặc tính từ thế hệ trước sang thế hệ sau." },
+      { "level": 2, "text": "Gồm từ 'Di' (chuyển dịch, truyền lại) và 'Truyền' (kế thừa nòi giống)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định hiện tượng sinh học", "body": "Đề bài mô tả sự giống nhau giữa con cái và bố mẹ/tổ tiên về các đặc điểm hình thái và sinh lí." },
+      { "kind": "knowledge", "title": "Định nghĩa di truyền", "body": "Di truyền là hiện tượng truyền đạt các tính trạng của bố mẹ, tổ tiên cho các thế hệ con cháu qua sinh sản." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hiện tượng đó chính là Di truyền." }
+    ],
+    "finalSolution": "Hiện tượng truyền đạt các đặc điểm tính trạng từ bố mẹ cho con cháu gọi là Di truyền.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn với Biến dị (con sinh ra khác bố mẹ)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b01-q02",
+    "lessonId": "bio-g9-b01",
+    "sgkBaiSo": 36,
+    "skillIds": ["bio9-khai-quat-di-truyen"],
+    "difficulty": 1,
+    "prompt": "Trong các cặp tính trạng sau đây, cặp nào là cặp tính trạng tương phản?",
+    "knowledge": ["kb-bio-g9-cap-tinh-trang-tuong-phan"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Thân cao và thân lùn" },
+        { "id": "opt-b", "label": "Hạt vàng và vỏ nhăn" },
+        { "id": "opt-c", "label": "Hoa đỏ và quả dài" },
+        { "id": "opt-d", "label": "Lông đen và đuôi ngắn" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Cặp tương phản phải cùng thuộc một loại tính trạng nhưng ở hai trạng thái trái ngược nhau." },
+      { "level": 2, "text": "Chiều cao thân có hai trạng thái đối lập là cao và lùn." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích khái niệm", "body": "Cặp tính trạng tương phản là hai trạng thái biểu hiện trái ngược nhau của cùng một loại tính trạng." },
+      { "kind": "knowledge", "title": "Kiểm tra từng phương án", "body": "Thân cao và thân lùn cùng là tính trạng chiều cao cây. Các phương án khác so sánh hai loại tính trạng khác nhau." },
+      { "kind": "answer", "title": "Kết luận", "body": "Thân cao và thân lùn là cặp tính trạng tương phản chuẩn mực." }
+    ],
+    "finalSolution": "Cặp tính trạng tương phản phải cùng loại tính trạng nhưng đối lập nhau: Thân cao đối lập với thân lùn.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm cặp tính trạng tương phản với hai tính trạng độc lập khác nhau." }
+    ]
+  },
+  {
+    "id": "bio-g9-b01-q03",
+    "lessonId": "bio-g9-b01",
+    "sgkBaiSo": 36,
+    "skillIds": ["bio9-khai-quat-di-truyen"],
+    "difficulty": 2,
+    "prompt": "Ghép nối chính xác các thuật ngữ di truyền học ở cột trái với định nghĩa tương ứng ở cột phải:",
+    "knowledge": ["kb-bio-g9-kieu-gen-kieu-hinh", "kb-bio-g9-dong-hop-di-hop"],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        { "left": "Kiểu gen", "right": "Tổ hợp toàn bộ các gene trong tế bào cơ thể" },
+        { "left": "Kiểu hình", "right": "Tập hợp các tính trạng của cơ thể biểu hiện ra bên ngoài" },
+        { "left": "Thể đồng hợp", "right": "Cá thể mang 2 allele giống nhau của cùng một gene (AA hoặc aa)" },
+        { "left": "Thể dị hợp", "right": "Cá thể mang 2 allele khác nhau của cùng một gene (Aa)" }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Kiểu gen là bản chất mã hóa bên trong nhân; kiểu hình là những gì quan sát được bên ngoài." },
+      { "level": 2, "text": "'Đồng' nghĩa là giống nhau (AA, aa); 'Dị' nghĩa là khác nhau (Aa)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Nhận diện 4 thuật ngữ", "body": "Cần phân định rõ giữa cấu trúc di truyền bên trong (genotype) và biểu hiện bên ngoài (phenotype)." },
+      { "kind": "knowledge", "title": "Đối chiếu khái niệm", "body": "Kiểu gen là tổ hợp gene; Kiểu hình là tập hợp tính trạng; Thể đồng hợp mang allele giống nhau; Thể dị hợp mang allele khác nhau." },
+      { "kind": "answer", "title": "Kết luận", "body": "Nối đúng 4 cặp thuật ngữ theo chuẩn SGK KHTN 9." }
+    ],
+    "finalSolution": "Khớp nối chuẩn: Kiểu gen (tổ hợp gene), Kiểu hình (tập hợp tính trạng), Đồng hợp (allele giống nhau), Dị hợp (allele khác nhau).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn giữa thể đồng hợp và thể dị hợp." }
+    ]
+  },
+  {
+    "id": "bio-g9-b01-q04",
+    "lessonId": "bio-g9-b01",
+    "sgkBaiSo": 36,
+    "skillIds": ["bio9-khai-quat-di-truyen"],
+    "difficulty": 2,
+    "prompt": "Vì sao Gregor Mendel chọn cây đậu Hà Lan (Pisum sativum) làm đối tượng nghiên cứu chính trong các thí nghiệm lai giống của mình?",
+    "knowledge": ["kb-bio-g9-dau-ha-lan-doi-tuong-nghien-cuu"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tự thụ phấn nghiêm ngặt, có nhiều cặp tính trạng tương phản rõ rệt và thời gian sinh trưởng ngắn" },
+        { "id": "opt-b", "label": "Là loài cây giao phấn ngẫu nhiên nhờ gió nên cho con lai rất đa dạng" },
+        { "id": "opt-c", "label": "Có hoa nở to hướng thiên giúp các loài côn trùng dễ dàng thụ phấn chéo" },
+        { "id": "opt-d", "label": "Số lượng hạt thu được rất ít nên dễ dàng đếm thủ công mà không cần thống kê" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Đặc điểm cấu tạo hoa của đậu Hà Lan ngăn cản hạt phấn bên ngoài bay vào." },
+      { "level": 2, "text": "Hoa tự thụ phấn nghiêm ngặt giúp tạo và duy trì dòng thuần chủng ổn định." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đặc điểm sinh học của cây đậu Hà Lan", "body": "Hoa đậu Hà Lan là hoa lưỡng tính, có cánh tràng thìa bao kín nhị và nhụy nên tự thụ phấn trước khi hoa nở." },
+      { "kind": "knowledge", "title": "Ý nghĩa với thí nghiệm Mendel", "body": "Nhờ tự thụ phấn nghiêm ngặt nên dễ tạo dòng thuần chủng; ngoài ra cây có nhiều cặp tính trạng tương phản rõ ràng và vòng đời ngắn." },
+      { "kind": "answer", "title": "Kết luận", "body": "Phương án A là lý do chuẩn xác nhất." }
+    ],
+    "finalSolution": "Cây đậu Hà Lan tự thụ phấn nghiêm ngặt, có nhiều cặp tính trạng tương phản và sinh sản nhanh, dễ tạo dòng thuần chủng.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng cây đậu Hà Lan thụ phấn chéo nhờ gió." }
+    ]
+  },
+  {
+    "id": "bio-g9-b01-q05",
+    "lessonId": "bio-g9-b01",
+    "sgkBaiSo": 36,
+    "skillIds": ["bio9-khai-quat-di-truyen"],
+    "difficulty": 2,
+    "prompt": "Sắp xếp theo thứ tự đúng các bước trong phương pháp phân tích các thế hệ lai của Mendel:",
+    "knowledge": ["kb-bio-g9-phuong-phap-lai-mendel"],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Tạo các dòng thuần chủng về từng cặp tính trạng bằng cách cho tự thụ phấn nhiều thế hệ",
+        "Lai các cặp bố mẹ thuần chủng khác nhau về một hoặc một số cặp tính trạng tương phản",
+        "Theo dõi sự di truyền riêng rẽ của từng cặp tính trạng trên con cháu F1, F2, F3",
+        "Dùng toán thống kê xác suất để phân tích số liệu và rút ra quy luật di truyền"
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Mendel phải có dòng thuần chủng trước khi tiến hành lai." },
+      { "level": 2, "text": "Sau khi lai và thu thập số liệu con lai F1, F2, bước cuối cùng là dùng toán thống kê để phân tích." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phương pháp luận của Mendel", "body": "Mendel đi từ chuẩn bị vật liệu thuần chủng → tiến hành lai → quan sát ghi chép → phân tích bằng toán thống kê." },
+      { "kind": "knowledge", "title": "Quy trình khoa học", "body": "Tạo dòng thuần → Thực hiện phép lai → Theo dõi từng tính trạng → Xử lí số liệu bằng xác suất." },
+      { "kind": "answer", "title": "Kết luận", "body": "Trật tự sắp xếp logic phản ánh chính xác phương pháp nghiên cứu của Mendel." }
+    ],
+    "finalSolution": "Trình tự chuẩn: Tạo dòng thuần → Lai cặp tương phản → Theo dõi riêng rẽ → Dùng toán thống kê phân tích số liệu.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Đảo bước phân tích toán học lên trước khi theo dõi con lai." }
+    ]
+  },
+  {
+    "id": "bio-g9-b01-q06",
+    "lessonId": "bio-g9-b01",
+    "sgkBaiSo": 36,
+    "skillIds": ["bio9-khai-quat-di-truyen"],
+    "difficulty": 2,
+    "prompt": "Đánh giá tính Đúng hoặc Sai cho mỗi nhận định sau về các quy ước và thuật ngữ di truyền của Mendel:",
+    "knowledge": ["kb-bio-g9-nhan-to-di-truyen-gene", "kb-bio-g9-phuong-phap-lai-mendel"],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        { "id": "st-1", "text": "Kí hiệu P dùng để chỉ thế hệ bố mẹ ban đầu của phép lai.", "correct": true },
+        { "id": "st-2", "text": "Mendel dùng các chữ cái in hoa như A, B để quy định nhân tố di truyền lặn.", "correct": false },
+        { "id": "st-3", "text": "Dòng thuần chủng là dòng đồng hợp về kiểu gen, tự thụ phấn cho con cháu đồng nhất về kiểu hình.", "correct": true },
+        { "id": "st-4", "text": "F1 là thế hệ con thứ hai thu được khi cho các cá thể con lai tự thụ phấn.", "correct": false }
+      ]
+    },
+    "hints": [
+      { "level": 1, "text": "Chữ cái in hoa quy định tính trạng trội, chữ cái in thường quy định tính trạng lặn." },
+      { "level": 2, "text": "F1 là con lai thế hệ thứ nhất (thế hệ thứ nhất sau P); F2 mới là thế hệ thứ hai." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Kiểm tra từng mệnh đề", "body": "P là Parents (bố mẹ) → Đúng. Chữ hoa là trội, chữ thường là lặn → St-2 Sai. Dòng thuần chủng đồng hợp → Đúng. F1 là đời con thứ nhất (Filial 1) → St-4 Sai." },
+      { "kind": "knowledge", "title": "Bản chất quy ước", "body": "Quy ước chữ cái in hoa chỉ allele trội, in thường chỉ allele lặn; F1 là đời con lai thứ nhất." },
+      { "kind": "answer", "title": "Kết luận", "body": "Thứ tự kết quả: Đúng - Sai - Đúng - Sai." }
+    ],
+    "finalSolution": "Nhận định 1, 3 Đúng; Nhận định 2 Sai (chữ hoa chỉ gen trội); Nhận định 4 Sai (F1 là thế hệ con thứ nhất).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm F1 là con thứ hai sau P." }
+    ]
+  },
+  {
+    "id": "bio-g9-b01-q07",
+    "lessonId": "bio-g9-b01",
+    "sgkBaiSo": 36,
+    "skillIds": ["bio9-khai-quat-di-truyen"],
+    "difficulty": 2,
+    "prompt": "Một tính trạng chỉ biểu hiện ra kiểu hình khi ở trạng thái đồng hợp tử (ví dụ: aa) và bị che khuất khi đi cùng allele trội được gọi là gì?",
+    "knowledge": ["kb-bio-g9-nhan-to-di-truyen-gene"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tính trạng lặn" },
+        { "id": "opt-b", "label": "Tính trạng trội" },
+        { "id": "opt-c", "label": "Tính trạng trung gian" },
+        { "id": "opt-d", "label": "Tính trạng tương phản" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Tính trạng này bị 'lặn' đi khi có mặt của nhân tố di truyền trội át chế." },
+      { "level": 2, "text": "Chỉ khi mang cả 2 allele lặn (aa) thì tính trạng mới được biểu hiện." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đặc điểm biểu hiện kiểu hình", "body": "Allele lặn chỉ biểu hiện ra kiểu hình khi ở trạng thái đồng hợp lặn (aa); ở trạng thái dị hợp (Aa), kiểu hình biểu hiện tính trạng trội." },
+      { "kind": "knowledge", "title": "Khái niệm tính trạng lặn", "body": "Tính trạng lặn là tính trạng không biểu hiện ở cơ thể dị hợp F1 mà chỉ xuất hiện ở F2 khi ở thể đồng hợp lặn." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đó chính là tính trạng lặn." }
+    ],
+    "finalSolution": "Tính trạng chỉ biểu hiện khi ở trạng thái đồng hợp lặn (aa) được gọi là tính trạng lặn.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm tính trạng lặn với tính trạng trung gian." }
+    ]
+  },
+  {
+    "id": "bio-g9-b01-q08",
+    "lessonId": "bio-g9-b01",
+    "sgkBaiSo": 36,
+    "skillIds": ["bio9-khai-quat-di-truyen"],
+    "difficulty": 3,
+    "prompt": "Trong các cặp tính trạng sau đây ở cây đậu Hà Lan, những cặp nào là tính trạng tương phản mà Mendel đã nghiên cứu? (Chọn các phương án đúng)",
+    "knowledge": ["kb-bio-g9-dau-ha-lan-doi-tuong-nghien-cuu"],
+    "answer": {
+      "kind": "mcq-multi",
+      "options": [
+        { "id": "opt-1", "label": "Màu sắc hạt: Hạt vàng đối lập với hạt xanh" },
+        { "id": "opt-2", "label": "Hình dạng vỏ hạt: Vỏ trơn nhẵn đối lập với vỏ nhăn nheo" },
+        { "id": "opt-3", "label": "Màu sắc hoa: Hoa đỏ đối lập với hoa trắng" },
+        { "id": "opt-4", "label": "Chiều cao thân: Thân cao đối lập với vỏ nhăn" }
+      ],
+      "correctIds": ["opt-1", "opt-2", "opt-3"]
+    },
+    "hints": [
+      { "level": 1, "text": "Mỗi cặp tính trạng tương phản phải cùng chỉ một cơ quan/bộ phận nhất định." },
+      { "level": 2, "text": "Phương án 4 so sánh chiều cao thân với hình dạng vỏ là sai vì không cùng một tính trạng." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Tiêu chuẩn cặp tương phản của Mendel", "body": "Mendel nghiên cứu 7 cặp tính trạng tương phản ở đậu Hà Lan, trong đó có màu hạt (vàng/xanh), dạng hạt (trơn/nhăn), màu hoa (đỏ/trắng), chiều cao cây (cao/lùn)..." },
+      { "kind": "knowledge", "title": "Loại trừ phương án sai", "body": "Phương án 4 ghép 'thân cao' với 'vỏ nhăn' là hai tính trạng hoàn toàn khác nhau." },
+      { "kind": "answer", "title": "Kết luận", "body": "Các phương án đúng là opt-1, opt-2 và opt-3." }
+    ],
+    "finalSolution": "Các cặp tương phản chuẩn của Mendel là: Hạt vàng/xanh, Hạt trơn/nhăn, Hoa đỏ/trắng.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Chọn nhầm phương án 4 vốn ghép 2 loại tính trạng khác nhau." }
+    ]
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "lessonId": "bio-g9-b09",
+  "nodeId": "bio-g9-b09-theory",
+  "title": "Lý thuyết: NST giới tính & Xác định giới tính",
+  "subtitle": "Bài 44 SGK KHTN 9 Kết nối tri thức: Cặp NST giới tính XX và XY, cơ chế thụ tinh xác định giới tính tỉ lệ 1 : 1 và các yếu tố môi trường ảnh hưởng",
+  "sgkBaiSo": 44,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Phân loại NST",
+      "badgeColor": "emerald",
+      "title": "Nhiễm sắc thể thường và nhiễm sắc thể giới tính",
+      "content": "Trong bộ NST lưỡng bội (2n) của các loài sinh vật phân tính luôn bao gồm hai nhóm nhiễm sắc thể:",
+      "bulletPoints": [
+        "Nhiễm sắc thể thường (Autosomes - kí hiệu A): Tồn tại thành nhiều cặp tương đồng giống hệt nhau ở cả giới đực và giới cái; mang các gen quy định các tính trạng sinh dưỡng thông thường của cơ thể.",
+        "Nhiễm sắc thể giới tính (Heterosomes): Thường chỉ có một cặp duy nhất trong tế bào lưỡng bội, có sự khác nhau cơ bản giữa giới đực và giới cái.",
+        "Chức năng NST giới tính: Mang các gen quy định đặc điểm giới tính của cơ thể, đồng thời mang các gen quy định tính trạng thường liên kết với giới tính (như gen mù màu, máu khó đông trên NST X).",
+        "Ví dụ ở người (2n = 46): Gồm 22 cặp NST thường (44A) và 1 cặp NST giới tính (Nữ: 44A + XX; Nam: 44A + XY)."
+      ],
+      "callout": "NST giới tính không chỉ quy định giới tính mà còn mang nhiều gen quy định các tính trạng sinh dưỡng quan trọng của cơ thể!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Các kiểu giới tính",
+      "badgeColor": "amber",
+      "title": "Các kiểu nhiễm sắc thể giới tính trong sinh giới",
+      "content": "Sự phân hóa các kiểu cặp NST giới tính ở các nhóm động, thực vật trong tự nhiên:",
+      "bulletPoints": [
+        "1. Kiểu XX (cái) - XY (đực): Gặp ở người, động vật có vú, ruồi giấm, cây gai, cây chua me. Giới cái là giới đồng giao tử (chỉ tạo 1 loại giao tử mang X), giới đực là giới dị giao tử (tạo 2 loại giao tử mang X và Y).",
+        "2. Kiểu XX (đực) - XY (cái): Ngược lại hoàn toàn, gặp ở các loài chim, bò sát, ếch nhái, dâu tằm, bướm tằm. Ở các loài này, con trống mang cặp NST giới tính XX, còn con mái mang cặp NST giới tính XY.",
+        "3. Kiểu XX (cái) - XO (đực): Gặp ở châu chấu, rệp lúa, bọ xít. Con cái mang cặp XX, còn con đực chỉ mang duy nhất 1 chiếc NST giới tính X (không có chiếc tương ứng)."
+      ],
+      "callout": "Cạm bẫy kinh điển: Ở loài chim (như gà, bồ câu), con đực mang cặp NST giới tính XX, con cái mang cặp NST giới tính XY!"
+    },
+    {
+      "id": "card-3",
+      "badge": "Cơ chế thụ tinh",
+      "badgeColor": "cyan",
+      "title": "Cơ chế xác định giới tính và các yếu tố môi trường",
+      "content": "Cơ chế tế bào học xác định tỉ lệ đực : cái và các nhân tố ảnh hưởng:",
+      "bulletPoints": [
+        "Cơ chế xác định giới tính ở người: Người mẹ (44A + XX) giảm phân chỉ cho 1 loại trứng mang 22A + X. Người bố (44A + XY) giảm phân cho 2 loại tinh trùng với tỉ lệ ngang nhau: 50% mang 22A + X và 50% mang 22A + Y. Sự kết hợp ngẫu nhiên giữa trứng và 2 loại tinh trùng tạo ra hợp tử 44A + XX (gái) và 44A + XY (trai) với tỉ lệ xấp xỉ 1 : 1.",
+        "Kết luận nhân văn: Giới tính của con do loại tinh trùng của người bố thụ tinh cho trứng quyết định, việc định kiến phân biệt đối xử với người mẹ là hoàn toàn phi khoa học.",
+        "Yếu tố môi trường ảnh hưởng: Nhiệt độ ấp trứng (rùa biển ấp dưới 28°C nở đực, trên 32°C nở cái; cá sấu ấp trên 32°C nở đực); hormone sinh dục (cho cá rô phi bột ăn thức ăn trộn hormone testosterone tạo đàn cá toàn đực).",
+        "Ứng dụng: Chọn tằm đực lấy nhiều tơ, điều khiển gà mái đẻ trứng, tạo đàn gia súc cái lấy sữa."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Ở loài gà (thuộc lớp Chim), một con gà trống bình thường mang cặp nhiễm sắc thể giới tính nào sau đây?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Cặp NST giới tính XX",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Cặp NST giới tính XY",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Cặp NST giới tính XO",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Không mang bất kì NST giới tính nào",
+        "correct": false
+      }
+    ],
+    "explanation": "Ở các loài chim, bướm và bò sát, cơ chế xác định giới tính ngược lại với người và thú: giới đực (gà trống) mang cặp NST giới tính XX (đồng giao tử), còn giới cái (gà mái) mang cặp NST giới tính XY (dị giao tử)."
+  }
+}

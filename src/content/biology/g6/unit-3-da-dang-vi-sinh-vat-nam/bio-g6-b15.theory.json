@@ -1,0 +1,84 @@
+{
+  "lessonId": "bio-g6-b15",
+  "nodeId": "bio-g6-b15-theory",
+  "title": "Lý thuyết: Nguyên sinh vật",
+  "subtitle": "Bài 30 SGK KHTN 6 Kết nối tri thức: Đặc điểm sinh vật nhân thực đơn bào, vai trò sinh thái và bệnh sốt rét, kiết lị",
+  "sgkBaiSo": 30,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Đặc điểm chung",
+      "badgeColor": "emerald",
+      "title": "Nguyên sinh vật là gì?",
+      "content": "Nguyên sinh vật là nhóm sinh vật phong phú thuộc giới Nguyên sinh (Protista):",
+      "bulletPoints": [
+        "Cấu tạo tế bào: Là sinh vật nhân thực (đã có màng nhân bao bọc vật chất di truyền và các bào quan có màng).",
+        "Số lượng tế bào: Đa số là cơ thể đơn bào hiển vi, một số ít là tập đoàn đơn bào hoặc cơ thể đa bào đơn giản (như các loài tảo).",
+        "Môi trường sống: Sống phổ biến trong môi trường nước (nước ngọt ao hồ, nước mặn biển cả), đất ẩm hoặc ký sinh trong cơ thể sinh vật khác."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "Đại diện tiêu biểu",
+      "badgeColor": "amber",
+      "title": "Các đại diện nguyên sinh vật quen thuộc",
+      "content": "Hình thái và phương thức sống rất phong phú:",
+      "bulletPoints": [
+        "Trùng roi xanh (Euglena): Cơ thể hình thoi, bơi bằng roi ở đầu; có điểm mắt đỏ cảm nhận ánh sáng và hạt diệp lục giúp tự dưỡng quang hợp khi có ánh sáng.",
+        "Trùng giày (Paramecium): Hình đế giày, bơi nhanh nhờ hàng nghìn lông bơi viền quanh cơ thể.",
+        "Trùng biến hình (Amoeba): Không có hình dạng cố định, tạo chân giả để di chuyển và bao vây nuốt trọn con mồi.",
+        "Tảo silic, tảo lục: Chứa diệp lục, sống trôi nổi và quang hợp mạnh mẽ."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Vai trò sinh thái",
+      "badgeColor": "cyan",
+      "title": "Lợi ích của nguyên sinh vật",
+      "content": "Nguyên sinh vật đóng vai trò quan trọng trong chuỗi thức ăn tự nhiên:",
+      "bulletPoints": [
+        "Thức ăn tự nhiên: Là mắt xích đầu tiên cung cấp thức ăn giàu dinh dưỡng cho cá, tôm và các động vật thủy sinh nhỏ.",
+        "Cung cấp oxy: Các loài tảo nguyên sinh quang hợp giải phóng lượng lớn oxygen hòa tan vào nước và bầu khí quyển.",
+        "Chế biến thực phẩm: Chiết xuất từ tảo biển dùng làm thạch rau câu (agar), làm thực phẩm chức năng bổ dưỡng."
+      ]
+    },
+    {
+      "id": "card-4",
+      "badge": "Bệnh tật & Phòng tránh",
+      "badgeColor": "purple",
+      "title": "Các bệnh nguy hiểm do nguyên sinh vật gây ra",
+      "content": "Một số nguyên sinh vật sống ký sinh gây bệnh nguy hiểm cho người:",
+      "bulletPoints": [
+        "Bệnh sốt rét: Do trùng sốt rét (Plasmodium) ký sinh trong tế bào hồng cầu người làm vỡ hồng cầu, gây sốt rét run từng cơn và thiếu máu trầm trọng. Trung gian truyền bệnh là muỗi cái Anopheles. Phòng bệnh: Ngủ màn, diệt muỗi, phát quang bụi rậm.",
+        "Bệnh kiết lị: Do trùng kiết lị (Entamoeba histolytica) theo thức ăn nước uống bẩn vào ruột già làm viêm loét niêm mạc ruột, gây đau quặn bụng, mót rặn và đi ngoài phân lẫn máu. Phòng bệnh: Ăn chín, uống sôi, rửa tay trước khi ăn."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Trùng sốt rét (Plasmodium) lây truyền từ người bệnh sang người khỏe mạnh qua vật trung gian nào sau đây?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Muỗi cái Anopheles khi hút máu",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Ruồi nhà đậu vào thức ăn",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Chuột cắn",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Hắt hơi qua đường không khí",
+        "correct": false
+      }
+    ],
+    "explanation": "Trùng sốt rét ký sinh trong tuyến nước bọt của muỗi cái Anopheles. Khi muỗi đốt người lành, nó sẽ truyền trùng sốt rét vào dòng máu của người đó."
+  }
+}

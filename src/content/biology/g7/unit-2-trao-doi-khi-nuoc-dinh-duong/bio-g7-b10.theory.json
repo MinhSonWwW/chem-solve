@@ -1,0 +1,74 @@
+{
+  "lessonId": "bio-g7-b10",
+  "nodeId": "bio-g7-b10-theory",
+  "title": "Lý thuyết: Trao đổi nước và chất dinh dưỡng ở thực vật",
+  "subtitle": "Bài 30 SGK KHTN 7 Kết nối tri thức: Hấp thụ ở rễ, dòng mạch gỗ, dòng mạch rây và vai trò thoát hơi nước",
+  "sgkBaiSo": 30,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Hấp thụ ở rễ",
+      "badgeColor": "cyan",
+      "title": "Con đường hấp thụ nước và khoáng ở rễ",
+      "content": "Rễ là cơ quan chủ yếu thực hiện chức năng hấp thụ nước và muối khoáng hòa tan từ đất:",
+      "bulletPoints": [
+        "Tế bào lông hút: Được hình thành từ tế bào biểu bì ở miền hút của rễ. Lông hút có thành mỏng, không có lớp cutin, không bào trung tâm lớn giúp hút nước và khoáng hiệu quả.",
+        "Cơ chế hấp thụ nước: Nước di chuyển từ đất vào lông hút theo cơ chế thẩm thấu (từ nơi có nồng độ chất tan thấp đến nơi có nồng độ chất tan cao).",
+        "Cơ chế hấp thụ khoáng: Các ion khoáng hòa tan trong dung dịch đất xâm nhập vào rễ theo cơ chế thụ động (theo chênh lệch nồng độ) hoặc chủ động (ngược chiều nồng độ, tiêu tốn năng lượng ATP).",
+        "Con đường đi vào mạch gỗ: Nước và khoáng từ lông hút đi qua các lớp tế bào vỏ rễ, qua nội bì để vào các ống mạch gỗ của rễ."
+      ],
+      "callout": "Nếu bón phân quá đậm đặc, nồng độ chất tan trong đất cao hơn trong rễ khiến nước từ lông hút bị rút ngược ra ngoài đất, làm cây héo và chết!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Vận chuyển trong cây",
+      "badgeColor": "emerald",
+      "title": "Dòng Mạch gỗ và Dòng Mạch rây",
+      "content": "Hệ mạch dẫn trong thân cây đảm nhận việc vận chuyển vật chất gồm hai dòng song song:",
+      "bulletPoints": [
+        "Dòng mạch gỗ (Xylem): Gồm các tế bào chết (quản bào và mạch ống) xếp nối tiếp tạo ống rỗng. Vận chuyển nước và ion khoáng một chiều từ rễ lên thân và lá.",
+        "Động lực dòng mạch gỗ: Kết hợp của 3 lực: (1) Áp suất rễ (lực đẩy từ dưới), (2) Thoát hơi nước ở lá (lực kéo cực mạnh từ trên), và (3) Lực liên kết giữa các phân tử nước với nhau và với thành mạch gỗ.",
+        "Dòng mạch rây (Phloem): Gồm các tế bào sống (ống rây và tế bào kèm). Vận chuyển các chất hữu cơ (chủ yếu là đường sucrose, amino acid) từ lá quang hợp đến các bộ phận sử dụng (chồi non, rễ) hoặc bộ phận dự trữ (củ, quả, hạt)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Thoát hơi nước",
+      "badgeColor": "amber",
+      "title": "Vai trò của thoát hơi nước qua lá",
+      "content": "Khoảng 98% lượng nước rễ hút vào được thoát ra khí quyển chủ yếu qua khí khổng ở lá:",
+      "bulletPoints": [
+        "Tạo động lực kéo: Thoát hơi nước là động lực đầu trên chính giúp hút dòng nước và muối khoáng từ rễ lên tới ngọn cây cao hàng chục mét.",
+        "Hạ nhiệt độ bề mặt lá: Quá trình bốc hơi nước thu nhiệt, giúp làm mát lá cây, tránh cho lá bị thiêu đốt và bảo vệ lục lạp dưới ánh nắng gắt trưa hè.",
+        "Giúp khí khổng mở: Khi thoát hơi nước diễn ra, khí khổng mở cho phép khí CO2 từ không khí khuếch tán vào bên trong lá cung cấp nguyên liệu cho quang hợp."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Khi một người làm vườn bóc bỏ một khoanh vỏ tròn quanh thân cây (cắt đứt mạch rây nhưng chưa chạm tới mạch gỗ), sau một thời gian mép trên của vết cắt sẽ phình to ra vì nguyên nhân nào?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Chất hữu cơ do lá quang hợp tổng hợp được vận chuyển xuống qua mạch rây bị tắc lại tích tụ ở mép trên",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Nước và muối khoáng từ rễ theo mạch gỗ đẩy lên bị tràn ra ngoài vết cắt làm mép trên phồng to",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Do vi khuẩn xâm nhập vào vết cắt gây viêm nhiễm tế bào biểu bì",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Do khí carbon dioxide tích tụ không thoát được qua lỗ khí khổng",
+        "correct": false
+      }
+    ],
+    "explanation": "Mạch rây nằm ở phần vỏ cây, chịu trách nhiệm vận chuyển chất hữu cơ từ lá xuống rễ. Khi bóc khoanh vỏ, dòng mạch rây bị cắt đứt khiến đường hữu cơ dồn ứ lại ở mép trên vết cắt và tích tụ kích thích tế bào phân chia tạo mô sẹo phồng to."
+  }
+}

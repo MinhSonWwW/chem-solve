@@ -1,0 +1,110 @@
+[
+  {
+    "id": "kb-bio-g8-mutualism",
+    "name": "Cộng sinh (Mutualism)",
+    "category": "Quan hệ hỗ trợ (+ / +)",
+    "definition": "Hai loài gắn kết chặt chẽ và bắt buộc cùng có lợi. Nếu tách rời nhau, một hoặc cả hai loài đều không thể sống sót và sinh sản bình thường.",
+    "examples": [
+      {
+        "pair": "Nấm và Vi khuẩn lam / Tảo đơn bào trong Địa y",
+        "mechanism": "Nấm hút nước và muối khoáng cung cấp cho tảo; tảo quang hợp tạo chất hữu cơ nuôi dưỡng cả thể địa y."
+      },
+      {
+        "pair": "Vi khuẩn Rhizobium và rễ cây họ Đậu",
+        "mechanism": "Vi khuẩn sống trong nốt sần cố định khí nitơ (N2) thành đạm cho cây hấp thụ; cây cung cấp đường và chất hữu cơ cho vi khuẩn."
+      },
+      {
+        "pair": "Trùng roi (Trichonympha) và Ruột mối",
+        "mechanism": "Trùng roi tiết enzym cellulase phân giải chất xơ gỗ cho mối hấp thụ; mối cung cấp môi trường sống an toàn và thức ăn mùn gỗ liên tục."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g8-commensalism",
+    "name": "Hội sinh (Commensalism)",
+    "category": "Quan hệ hỗ trợ (+ / 0)",
+    "definition": "Mối quan hệ giữa hai loài trong đó một loài có lợi (+), còn loài kia hoàn toàn không được lợi cũng không bị tổn hại (0).",
+    "examples": [
+      {
+        "pair": "Cây phong lan sống bám trên thân cây gỗ lớn",
+        "mechanism": "Phong lan có rễ khí sinh tự hút ẩm và lá có diệp lục tự quang hợp, chỉ bám nhờ vỏ cây gỗ cao để đón ánh sáng; cây gỗ không bị hút nhựa hay ảnh hưởng sinh trưởng."
+      },
+      {
+        "pair": "Cá ép bám trên mai rùa hoặc da cá mập",
+        "mechanism": "Cá ép có giác bám đi nhờ quãng đường xa và ăn các mẩu thức ăn vụn rơi ra khi cá mập săn mồi mà không gây hại cho cá mập."
+      },
+      {
+        "pair": "Chim làm tổ trên cành cây cao",
+        "mechanism": "Chim có nơi làm tổ an toàn tránh kẻ săn mồi dưới mặt đất, cây xanh không bị ảnh hưởng."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g8-protocooperation",
+    "name": "Hợp tác (Protocooperation)",
+    "category": "Quan hệ hỗ trợ (+ / + không bắt buộc)",
+    "definition": "Hai bên cùng đem lại lợi ích cho nhau nhưng sự liên kết không mang tính bắt buộc, khi tách rời nhau cả hai loài vẫn sinh tồn độc lập.",
+    "examples": [
+      {
+        "pair": "Chim sáo / Chim mỏ đỏ và Trâu rừng",
+        "mechanism": "Chim ăn ve bét kí sinh trên lưng trâu (có nguồn thức ăn), trâu rừng được làm sạch da và dễ chịu."
+      },
+      {
+        "pair": "Ong bướm và Cây có hoa",
+        "mechanism": "Côn trùng hút mật hoa làm thức ăn, đồng thời dính hạt phấn giúp hoa thụ phấn chéo."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g8-competition",
+    "name": "Cạnh tranh (Competition)",
+    "category": "Quan hệ đối kháng (- / -)",
+    "definition": "Các loài cùng tranh giành một hay nhiều nguồn sống thiết yếu bị giới hạn như ánh sáng, thức ăn, nước, muối khoáng hoặc nơi làm tổ.",
+    "examples": [
+      {
+        "pair": "Cỏ dại và Cây trồng nông nghiệp",
+        "mechanism": "Tranh giành ánh sáng mặt trời, diện tích đất, nước tưới và phân bón khiến năng suất cây trồng sụt giảm nghiêm trọng."
+      },
+      {
+        "pair": "Sư tử và Linh cẩu",
+        "mechanism": "Cùng cạnh tranh các loài thú móng guốc trên đồng cỏ thảo nguyên hoang dã Châu Phi."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g8-parasitism",
+    "name": "Kí sinh và Nửa kí sinh (Parasitism)",
+    "category": "Quan hệ đối kháng (+ / -)",
+    "definition": "Loài kí sinh sống trên hoặc trong cơ thể vật chủ, lấy trực tiếp chất dinh dưỡng và máu của vật chủ gây tổn hại cho vật chủ.",
+    "examples": [
+      {
+        "pair": "Giun đũa, sán dây kí sinh trong ruột người và gia súc",
+        "mechanism": "Hút dưỡng chất trong lòng ruột làm vật chủ gầy còm, thiếu máu và suy nhược."
+      },
+      {
+        "pair": "Cây tơ hồng sống bám trên thân cây bụi",
+        "mechanism": "Kí sinh hoàn toàn: không có diệp lục, cắm giác mút vào mạch rây cây chủ để hút nhựa sống làm cây chủ héo rũ."
+      },
+      {
+        "pair": "Cây tầm gửi sống trên cành cây gỗ",
+        "mechanism": "Nửa kí sinh: có lá xanh quang hợp nhưng dùng giác mút cắm vào mạch gỗ để hút nước và muối khoáng của cây chủ."
+      }
+    ]
+  },
+  {
+    "id": "kb-bio-g8-predation",
+    "name": "Sinh vật ăn sinh vật khác (Predation & Herbivory)",
+    "category": "Quan hệ đối kháng (+ / -)",
+    "definition": "Bao gồm động vật ăn thịt - con mồi, động vật ăn thực vật và thực vật bắt mồi bổ sung dinh dưỡng.",
+    "examples": [
+      {
+        "pair": "Hổ vồ hươu sao; Chim ưng săn thỏ",
+        "mechanism": "Kẻ săn mồi giết chết và ăn thịt con mồi; đóng vai trò thanh lọc tự nhiên giữ cho số lượng con mồi ở mức cân bằng."
+      },
+      {
+        "pair": "Cây nắp ấm, cây bẫy kẹp bắt côn trùng",
+        "mechanism": "Sống ở vùng đất lầy thụt nghèo đạm, biến đổi lá thành bẫy bắt côn trùng và tiết enzym tiêu hóa lấy hợp chất chứa nitơ."
+      }
+    ]
+  }
+]

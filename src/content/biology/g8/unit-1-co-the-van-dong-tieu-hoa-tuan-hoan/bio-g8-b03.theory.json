@@ -1,0 +1,74 @@
+{
+  "lessonId": "bio-g8-b03",
+  "nodeId": "bio-g8-b03-theory",
+  "title": "Lý thuyết: Dinh dưỡng và tiêu hóa ở người",
+  "subtitle": "Bài 32 SGK KHTN 8 Kết nối tri thức: Khẩu phần ăn hợp lí, cấu tạo hệ tiêu hóa, quá trình biến đổi thức ăn và phòng bệnh tiêu hóa",
+  "sgkBaiSo": 32,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Dinh dưỡng",
+      "badgeColor": "emerald",
+      "title": "Chất dinh dưỡng & Khẩu phần ăn hợp lí",
+      "content": "Chất dinh dưỡng cung cấp năng lượng và nguyên liệu xây dựng tế bào:",
+      "bulletPoints": [
+        "Nhóm sinh năng lượng: Carbohydrate (Glucid - tinh bột, đường), Protein (Chất đạm), Lipid (Chất béo).",
+        "Nhóm không sinh năng lượng nhưng sống còn: Nước, Muối khoáng (Ca, Fe, I, Na), Vitamin (A, B, C, D) và Chất xơ.",
+        "Khẩu phần ăn hợp lí phải cân bằng giữa năng lượng nạp vào và năng lượng tiêu hao, kết hợp hài hòa 4 nhóm thực phẩm và ăn nhiều rau củ quả tươi."
+      ],
+      "callout": "Chất xơ không tiêu hóa được nhưng đóng vai trò như 'chiếc chổi quét' kích thích nhu động ruột chống táo bón!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Giải phẫu",
+      "badgeColor": "amber",
+      "title": "Cấu tạo ống và tuyến tiêu hóa",
+      "content": "Hệ tiêu hóa gồm hai bộ phận phối hợp nhịp nhàng:",
+      "bulletPoints": [
+        "Ống tiêu hóa: Khoang miệng → Hầu → Thực quản → Dạ dày → Ruột non → Ruột già → Trực tràng → Hậu môn.",
+        "Tuyến tiêu hóa: Tuyến nước bọt, Tuyến vị (dạ dày), Gan (tiết mật), Tuyến tụy (tiết dịch tụy) và Tuyến ruột.",
+        "Dịch mật (gan tiết, túi mật chứa) không chứa enzym tiêu hóa mà chứa muối mật giúp nhũ tương hóa lipid thành những hạt mỡ nhỏ."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Tiêu hóa & Hấp thụ",
+      "badgeColor": "cyan",
+      "title": "Quá trình biến đổi thức ăn & Hấp thụ dưỡng chất",
+      "content": "Thức ăn trải qua biến đổi cơ học và biến đổi hóa học:",
+      "bulletPoints": [
+        "Tại khoang miệng: Nhai nghiền cơ học; enzym Amylase biến đổi một phần tinh bột chín thành đường Mantôzơ (maltose).",
+        "Tại dạ dày: Co bóp cơ học mạnh mẽ; enzym Pepsin trong môi trường acid HCl biến đổi protein thành chuỗi peptide ngắn.",
+        "Tại ruột non: Đoạn quan trọng nhất; các enzym từ tụy và ruột biến đổi triệt để tinh bột thành Glucose, protein thành Amino acid, lipid thành Glycerol và Acid béo.",
+        "Hấp thụ: Diễn ra chủ yếu ở ruột non nhờ hệ thống nhung mao và vi nhung mao dày đặc, hấp thụ theo 2 con đường (mạch máu và mạch bạch huyết)."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Bộ phận nào trong hệ tiêu hóa của người là nơi diễn ra quá trình tiêu hóa hóa học và hấp thụ chất dinh dưỡng triệt để nhất?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Ruột non",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Dạ dày",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Khoang miệng",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Ruột già",
+        "correct": false
+      }
+    ],
+    "explanation": "Ruột non có đầy đủ mọi loại enzym tiêu hóa (từ dịch tụy, dịch mật và dịch ruột) giúp phân giải hoàn toàn thức ăn thành các đơn phân và hấp thụ tối đa dưỡng chất nhờ hệ thống nhung mao rộng lớn."
+  }
+}

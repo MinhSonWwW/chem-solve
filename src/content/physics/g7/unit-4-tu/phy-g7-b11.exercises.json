@@ -85,22 +85,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Các cực cùng tên thì đẩy nhau, các cực khác tên thì hút nhau"
-        },
-        {
-          "id": "opt-b",
           "label": "Hai nam châm luôn luôn đẩy nhau trong mọi trường hợp"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Các cực cùng tên thì hút nhau, các cực khác tên thì đẩy nhau"
+        },
+        {
+          "id": "opt-c",
+          "label": "Các cực cùng tên thì đẩy nhau, các cực khác tên thì hút nhau"
         },
         {
           "id": "opt-d",
           "label": "Hai nam châm luôn luôn hút nhau bất kể đưa cực nào lại gần"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -153,18 +153,18 @@
         },
         {
           "id": "opt-b",
-          "label": "Chì, thiếc nguyên chất, cao su"
+          "label": "Sắt, thép, niken, coban"
         },
         {
           "id": "opt-c",
-          "label": "Sắt, thép, niken, coban"
+          "label": "Chì, thiếc nguyên chất, cao su"
         },
         {
           "id": "opt-d",
           "label": "Gỗ khô, nhựa tổng hợp, thủy tinh"
         }
       ],
-      "correctId": "opt-c"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -226,14 +226,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Hai đầu cực của thanh nam châm"
+          "label": "Phân bố đều như nhau trên toàn bộ bề mặt thanh nam châm"
         },
         {
           "id": "opt-d",
-          "label": "Phân bố đều như nhau trên toàn bộ bề mặt thanh nam châm"
+          "label": "Hai đầu cực của thanh nam châm"
         }
       ],
-      "correctId": "opt-c"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -346,22 +346,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Chỉ lấy được chiếc đinh sắt vì sắt có tính từ, nhôm không bị nam châm hút"
-        },
-        {
-          "id": "opt-b",
           "label": "Lấy được cả đinh sắt và thìa nhôm cùng lúc"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Chỉ lấy được chiếc thìa nhôm vì nhôm nhẹ hơn sắt"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chỉ lấy được chiếc đinh sắt vì sắt có tính từ, nhôm không bị nam châm hút"
         },
         {
           "id": "opt-d",
           "label": "Không lấy được vật nào vì mùn cưa cản trở lực từ"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {

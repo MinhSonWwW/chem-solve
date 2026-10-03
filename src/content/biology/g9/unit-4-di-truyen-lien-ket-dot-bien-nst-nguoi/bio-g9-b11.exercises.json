@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g9-b11-q01",
+    "lessonId": "bio-g9-b11",
+    "sgkBaiSo": 46,
+    "skillIds": ["bio9-dot-bien-nst"],
+    "difficulty": 1,
+    "prompt": "Bốn dạng đột biến cấu trúc nhiễm sắc thể cơ bản thường gặp ở sinh vật là gì?",
+    "knowledge": ["kb-bio-g9-dot-bien-cau-truc-nst-mat-doan", "kb-bio-g9-dot-bien-cau-truc-nst-lap-doan", "kb-bio-g9-dot-bien-cau-truc-nst-dao-chuyen"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Mất đoạn, Lặp đoạn, Đảo đoạn và Chuyển đoạn" },
+        { "id": "opt-b", "label": "Thay thế, Thêm, Mất một cặp nucleotide" },
+        { "id": "opt-c", "label": "Thể một, Thể ba, Thể không và Thể bốn" },
+        { "id": "opt-d", "label": "Tam bội, Tứ bội, Lục bội và Bát bội" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Đột biến cấu trúc làm thay đổi hình dạng và trật tự các đoạn trên thanh nhiễm sắc thể." },
+      { "level": 2, "text": "Gồm 4 dạng: Mất một đoạn, Lặp lại một đoạn, Đảo ngược một đoạn và Chuyển đoạn sang NST khác." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Khái niệm đột biến cấu trúc NST", "body": "Là những biến đổi trong cấu trúc hình thái của nhiễm sắc thể làm đứt gãy hoặc sắp xếp lại các khối gen lớn." },
+      { "kind": "knowledge", "title": "Bốn dạng cơ bản", "body": "1. Mất đoạn: Một đoạn NST bị đứt và mất đi. 2. Lặp đoạn: Một đoạn NST được nhân đôi thêm. 3. Đảo đoạn: Một đoạn NST đứt ra quay 180° rồi nối lại. 4. Chuyển đoạn: Trao đổi đoạn giữa các NST." },
+      { "kind": "answer", "title": "Kết luận", "body": "Bốn dạng gồm: Mất đoạn, Lặp đoạn, Đảo đoạn và Chuyển đoạn." }
+    ],
+    "finalSolution": "Bốn dạng đột biến cấu trúc nhiễm sắc thể là: Mất đoạn, Lặp đoạn, Đảo đoạn và Chuyển đoạn.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm với các dạng đột biến điểm của gen (thay thế, thêm, mất cặp nu)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b11-q02",
+    "lessonId": "bio-g9-b11",
+    "sgkBaiSo": 46,
+    "skillIds": ["bio9-dot-bien-nst"],
+    "difficulty": 1,
+    "prompt": "Ở loài ruồi giấm, hiện tượng đột biến biến đổi mắt lồi bình thường thành mắt dẹt xuất phát từ dạng đột biến cấu trúc NST nào?",
+    "knowledge": ["kb-bio-g9-dot-bien-cau-truc-nst-lap-doan"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Đột biến lặp đoạn trên nhiễm sắc thể giới tính X" },
+        { "id": "opt-b", "label": "Đột biến mất toàn bộ nhiễm sắc thể số 4" },
+        { "id": "opt-c", "label": "Đột biến chuyển đoạn không tương hỗ giữa NST 2 và NST 3" },
+        { "id": "opt-d", "label": "Đột biến mất đoạn ở hai đầu mút của NST thường" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Đây là ví dụ kinh điển trong SGK về dạng đột biến làm tăng liều lượng gen." },
+      { "level": 2, "text": "Đoạn 16A trên NST X bị lặp lại làm giảm kích thước mắt của ruồi giấm từ lồi thành dẹt." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích ví dụ đột biến mắt dẹt", "body": "Mắt dẹt ở ruồi giấm do sự xuất hiện thêm các bản sao gen quy định diện tích mắt." },
+      { "kind": "knowledge", "title": "Cơ chế lặp đoạn", "body": "Đột biến lặp đoạn 16A trên nhiễm sắc thể giới tính X của ruồi giấm làm tăng số lượng bản sao gen, dẫn đến biến đổi mắt lồi bình thường thành mắt dẹt." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đột biến lặp đoạn trên NST giới tính X." }
+    ],
+    "finalSolution": "Hiện tượng mắt dẹt ở ruồi giấm là do đột biến lặp đoạn trên nhiễm sắc thể giới tính X.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm sang đột biến mất đoạn hoặc đột biến gen đơn lẻ." }
+    ]
+  },
+  {
+    "id": "bio-g9-b11-q03",
+    "lessonId": "bio-g9-b11",
+    "sgkBaiSo": 46,
+    "skillIds": ["bio9-dot-bien-nst"],
+    "difficulty": 2,
+    "prompt": "Hội chứng tiếng mèo kêu (Cri-du-chat syndrome) ở trẻ sơ sinh (tiếng khóc the thé như mèo kêu, dị tật bẩm sinh, chậm phát triển trí tuệ nặng) là do dạng đột biến nào gây nên?",
+    "knowledge": ["kb-bio-g9-dot-bien-cau-truc-nst-mat-doan"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Đột biến mất một đoạn ở đầu cánh ngắn của nhiễm sắc thể số 5" },
+        { "id": "opt-b", "label": "Đột biến lặp đoạn dài trên nhiễm sắc thể số 21" },
+        { "id": "opt-c", "label": "Đột biến thêm một nhiễm sắc thể ở cặp số 13" },
+        { "id": "opt-d", "label": "Đột biến mất đoạn tâm động của nhiễm sắc thể giới tính Y" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Hội chứng này xuất phát từ việc bị mất đi một đoạn vật chất di truyền trên NST số 5." },
+      { "level": 2, "text": "Đoạn bị mất nằm ở phần đầu mút cánh ngắn của NST số 5 (5p minus)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đặc điểm hội chứng tiếng mèo kêu", "body": "Hội chứng Cri-du-chat đặc trưng bởi thanh quản kém phát triển khiến tiếng khóc của trẻ the thé như mèo kêu kèm theo thiểu năng trí tuệ." },
+      { "kind": "knowledge", "title": "Nguyên nhân di truyền học", "body": "Bệnh do đột biến cấu trúc NST dạng mất đoạn ở đầu cánh ngắn của nhiễm sắc thể số 5 gây nên (mất đi nhiều gen quan trọng điều hòa phát triển thần kinh và thanh quản)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đột biến mất đoạn ở đầu cánh ngắn nhiễm sắc thể số 5." }
+    ],
+    "finalSolution": "Hội chứng tiếng mèo kêu do đột biến mất đoạn ở đầu cánh ngắn của nhiễm sắc thể số 5 ở người.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm lẫn với đột biến số lượng NST (như hội chứng Đao ở NST 21 hay Patau ở NST 13)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b11-q04",
+    "lessonId": "bio-g9-b11",
+    "sgkBaiSo": 46,
+    "skillIds": ["bio9-dot-bien-nst"],
+    "difficulty": 2,
+    "prompt": "Đột biến chuyển đoạn giữa các nhiễm sắc thể không tương đồng có đặc điểm nào sau đây?",
+    "knowledge": ["kb-bio-g9-dot-bien-cau-truc-nst-dao-chuyen"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Một đoạn NST bị đứt ra và chuyển sang gắn vào một NST thuộc cặp tương đồng khác, làm thay đổi nhóm gen liên kết" },
+        { "id": "opt-b", "label": "Một đoạn NST bị nhân đôi gấp 10 lần ngay tại vị trí ban đầu" },
+        { "id": "opt-c", "label": "Toàn bộ bộ NST tăng lên gấp đôi trong nguyên phân" },
+        { "id": "opt-d", "label": "Chỉ làm thay đổi đúng một cặp base nitơ trên phân tử DNA" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Từ 'chuyển đoạn' thể hiện sự di chuyển của một đoạn NST sang vị trí mới." },
+      { "level": 2, "text": "Khác với tiếp hợp trao đổi chéo (giữa 2 NST tương đồng), chuyển đoạn xảy ra giữa 2 NST KHÔNG tương đồng." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Bản chất của chuyển đoạn", "body": "Chuyển đoạn là sự tái sắp xếp đoạn NST giữa các nhiễm sắc thể không thuộc cùng một cặp tương đồng." },
+      { "kind": "knowledge", "title": "Hậu quả di truyền", "body": "Khi một đoạn NST chuyển sang NST khác, các gen trên đoạn đó sẽ thuộc về nhóm gen liên kết mới, làm thay đổi kích thước và cấu trúc của cả hai NST tham gia." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đoạn NST đứt ra gắn sang NST không tương đồng, thay đổi nhóm gen liên kết." }
+    ],
+    "finalSolution": "Đột biến chuyển đoạn là sự trao đổi hoặc chuyển dời đoạn NST giữa các NST không tương đồng, dẫn tới làm thay đổi nhóm gen liên kết.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm chuyển đoạn với trao đổi chéo bình thường giữa 2 chromatid của cặp tương đồng ở kì đầu I." }
+    ]
+  },
+  {
+    "id": "bio-g9-b11-q05",
+    "lessonId": "bio-g9-b11",
+    "sgkBaiSo": 46,
+    "skillIds": ["bio9-dot-bien-nst"],
+    "difficulty": 2,
+    "prompt": "Cơ chế tế bào học trực tiếp làm phát sinh đột biến lệch bội (dị bội) dạng thể ba (2n + 1) trong tự nhiên là gì?",
+    "knowledge": ["kb-bio-g9-dot-bien-lech-boi"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Sự không phân li của một cặp NST tương đồng trong giảm phân tạo giao tử thừa 1 chiếc (n + 1), kết hợp với giao tử bình thường (n) trong thụ tinh" },
+        { "id": "opt-b", "label": "Tất cả các cặp NST đều nhân đôi nhưng thoi phân bào không hình thành trong nguyên phân" },
+        { "id": "opt-c", "label": "Một phân tử DNA tự đứt gãy làm mất toàn bộ 2 cánh của NST" },
+        { "id": "opt-d", "label": "Sự thụ tinh đồng thời giữa 1 trứng với 2 tinh trùng cùng lúc" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Thể ba (2n + 1) có tổng số chiếc tăng thêm 1 do sự kết hợp của 2 giao tử: (n + 1) và (n)." },
+      { "level": 2, "text": "Giao tử (n + 1) hình thành do một cặp NST tương đồng bị lỗi không phân li ở giảm phân I hoặc giảm phân II." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích công thức thể ba", "body": "Thể ba có dạng (2n + 1), tức là có một cặp NST nào đó có 3 chiếc thay vì 2 chiếc bình thường." },
+      { "kind": "knowledge", "title": "Cơ chế thụ tinh", "body": "Trong quá trình giảm phân, nếu 1 cặp NST không phân li sẽ tạo ra 1 giao tử mang (n + 1) chiếc và 1 giao tử mang (n - 1) chiếc. Giao tử (n + 1) thụ tinh với giao tử bình thường (n) sẽ tạo hợp tử mang (2n + 1) chiếc." },
+      { "kind": "answer", "title": "Kết luận", "body": "Giao tử (n + 1) kết hợp với giao tử bình thường (n) tạo thể ba (2n + 1)." }
+    ],
+    "finalSolution": "Thể ba (2n + 1) phát sinh do sự kết hợp trong thụ tinh giữa giao tử thừa 1 NST (n + 1) với giao tử bình thường (n).",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm cơ chế phát sinh thể lệch bội (rối loạn 1 cặp NST) với thể tam bội (rối loạn toàn bộ bộ NST)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b11-q06",
+    "lessonId": "bio-g9-b11",
+    "sgkBaiSo": 46,
+    "skillIds": ["bio9-dot-bien-nst"],
+    "difficulty": 1,
+    "prompt": "Ở người, hội chứng Turner (người nữ chỉ có 1 nhiễm sắc thể X, kí hiệu 45, XO) thuộc dạng đột biến số lượng NST nào?",
+    "knowledge": ["kb-bio-g9-dot-bien-lech-boi"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Thể một (2n - 1)" },
+        { "id": "opt-b", "label": "Thể ba (2n + 1)" },
+        { "id": "opt-c", "label": "Thể tam bội (3n)" },
+        { "id": "opt-d", "label": "Thể không (2n - 2)" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Bộ NST người bình thường là 2n = 46; người bệnh Turner chỉ có 45 chiếc (thiếu 1 chiếc)." },
+      { "level": 2, "text": "Dạng thiếu 1 chiếc ở một cặp tương đồng gọi là thể một (2n - 1)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định số lượng NST ở hội chứng Turner", "body": "Nữ bình thường có 46 chiếc (44A + XX). Nữ mắc hội chứng Turner chỉ có 45 chiếc (44A + XO), thiếu 1 chiếc NST giới tính X." },
+      { "kind": "compute", "title": "Đối chiếu công thức", "body": "45 chiếc = 46 - 1 = 2n - 1." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hội chứng Turner thuộc dạng thể một (2n - 1)." }
+    ],
+    "finalSolution": "Hội chứng Turner (45, XO) là đột biến lệch bội dạng thể một (2n - 1) ở cặp nhiễm sắc thể giới tính.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm hội chứng Turner (thể một 2n - 1) với hội chứng Đao hay Klinefelter (thể ba 2n + 1)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b11-q07",
+    "lessonId": "bio-g9-b11",
+    "sgkBaiSo": 46,
+    "skillIds": ["bio9-dot-bien-nst"],
+    "difficulty": 2,
+    "prompt": "Tại sao các giống cây trồng đa bội (như nho tứ bội 4n, dâu tằm tứ bội) lại có thân, lá to bản, quả lớn và khả năng chống chịu sâu bệnh vượt trội so với giống lưỡng bội (2n) tương ứng?",
+    "knowledge": ["kb-bio-g9-dot-bien-da-boi"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Do số lượng nhiễm sắc thể và hàm lượng DNA trong nhân tăng lên gấp bội, làm quá trình tổng hợp chất hữu cơ diễn ra mạnh mẽ và kích thước tế bào tăng lên rõ rệt" },
+        { "id": "opt-b", "label": "Do cây đa bội hấp thụ nước nhiều gấp 10 lần cây bình thường" },
+        { "id": "opt-c", "label": "Do cây đa bội không còn màng nhân nên các enzyme hoạt động tự do" },
+        { "id": "opt-d", "label": "Do cây đa bội đã biến đổi hoàn toàn thành loài thực vật hạt trần" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Mỗi gen trên NST là bản thiết kế tổng hợp protein; nhiều bản sao gen hơn thì tổng hợp được nhiều vật chất hơn." },
+      { "level": 2, "text": "Hàm lượng DNA tăng gấp 2 hay gấp 3 làm kích thước tế bào lớn hơn và đồng hóa chất dinh dưỡng mạnh mẽ hơn." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đặc điểm tế bào thể đa bội", "body": "Tế bào thể đa bội chứa 3n, 4n... lượng DNA so với tế bào 2n bình thường." },
+      { "kind": "knowledge", "title": "Cơ chế phân tử và sinh lí", "body": "Hàm lượng DNA tăng làm tăng mức độ phiên mã và dịch mã tổng hợp protein và enzyme, thúc đẩy quá trình trao đổi chất diễn ra mạnh mẽ. Thể tích nhân và kích thước tế bào nở to, kéo theo toàn bộ cơ quan sinh dưỡng (lá, hoa, quả, củ) to lớn và sức sống mạnh mẽ." },
+      { "kind": "answer", "title": "Kết luận", "body": "Hàm lượng DNA tăng làm tăng tổng hợp chất hữu cơ và kích thước tế bào to." }
+    ],
+    "finalSolution": "Thể đa bội có hàm lượng DNA tăng gấp bội làm tăng cường tổng hợp chất hữu cơ, kích thước tế bào nở to khiến cơ quan sinh dưỡng phát triển vượt trội.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng cây đa bội to lớn chỉ đơn thuần do trương nước mà không có sự gia tăng sinh khối hữu cơ." }
+    ]
+  },
+  {
+    "id": "bio-g9-b11-q08",
+    "lessonId": "bio-g9-b11",
+    "sgkBaiSo": 46,
+    "skillIds": ["bio9-dot-bien-nst"],
+    "difficulty": 2,
+    "prompt": "Trong thực tiễn sản xuất, người ta ứng dụng đột biến đa bội lẻ dạng tam bội (3n) để tạo ra các giống cây trồng nào sau đây?",
+    "knowledge": ["kb-bio-g9-dot-bien-da-boi"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Dưa hấu tam bội không hạt và chuối tam bội không hạt" },
+        { "id": "opt-b", "label": "Lúa mì hạt to để lấy bột mì" },
+        { "id": "opt-c", "label": "Cây dâu tằm lấy lá nuôi tằm" },
+        { "id": "opt-d", "label": "Ngô hạt dày để làm thức ăn gia súc" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Thể tam bội (3n) có bộ NST lẻ nên khi giảm phân các NST không thể phân li đồng đều, dẫn tới hạt bị thoái hóa." },
+      { "level": 2, "text": "Đặc tính quả không hạt rất được ưa chuộng ở dưa hấu và chuối ăn quả." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đặc điểm thể tam bội (3n)", "body": "Do chứa 3 bộ NST đơn bội (3n), quá trình giảm phân tạo giao tử bị rối loạn nghiêm trọng không hình thành được hạt hữu thụ (bất thụ)." },
+      { "kind": "knowledge", "title": "Ứng dụng cây ăn quả không hạt", "body": "Người ta cho lai cây tứ bội (4n) với cây lưỡng bội (2n) để tạo ra cây tam bội (3n). Cây 3n cho quả to, ngọt và đặc biệt là không có hạt cứng (như dưa hấu 3n không hạt, nho 3n không hạt)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tạo các giống quả không hạt như dưa hấu tam bội không hạt." }
+    ],
+    "finalSolution": "Đột biến tam bội (3n) bị rối loạn giảm phân tạo quả bất thụ nên được ứng dụng tạo các giống cây ăn quả không hạt như dưa hấu 3n.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Chọn cây lấy hạt như lúa hay ngô (cây lấy hạt nếu bị tam bội sẽ không có hạt, dẫn tới mất mùa hoàn toàn)." }
+    ]
+  }
+]

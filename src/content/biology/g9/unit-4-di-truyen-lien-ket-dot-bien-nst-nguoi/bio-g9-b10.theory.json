@@ -1,0 +1,76 @@
+{
+  "lessonId": "bio-g9-b10",
+  "nodeId": "bio-g9-b10-theory",
+  "title": "Lý thuyết: Di truyền liên kết",
+  "subtitle": "Bài 45 SGK KHTN 9 Kết nối tri thức: Thí nghiệm của Morgan trên ruồi giấm, khái niệm di truyền liên kết, nhóm gen liên kết và ý nghĩa",
+  "sgkBaiSo": 45,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Thí nghiệm Morgan",
+      "badgeColor": "emerald",
+      "title": "Thí nghiệm của Morgan trên ruồi giấm",
+      "content": "Thomas Hunt Morgan phát hiện ra hiện tượng di truyền liên kết qua thí nghiệm trên ruồi giấm (2n = 8):",
+      "bulletPoints": [
+        "Ưu điểm của ruồi giấm: Dễ nuôi trong ống nghiệm, đẻ nhiều, vòng đời ngắn (10 - 14 ngày), số lượng NST ít (2n = 8) và có nhiều biến dị hình thái rõ rệt.",
+        "Phép lai P: Ruồi thuần chủng Thân xám, cánh dài × Thân đen, cánh cụt → F1: 100% Thân xám, cánh dài (chứng minh xám, dài là các tính trạng trội hoàn toàn).",
+        "Lai phân tích ruồi đực F1: Cho ruồi đực F1 (thân xám, cánh dài) lai với ruồi cái thân đen, cánh cụt (đồng hợp lặn) → Fa thu được tỉ lệ: 1 Thân xám, cánh dài : 1 Thân đen, cánh cụt (tỉ lệ 1 : 1).",
+        "Nhận xét mấu chốt: Nếu 2 gen phân li độc lập như Mendel thì Fa phải cho 4 lớp kiểu hình tỉ lệ 1 : 1 : 1 : 1. Nhưng ở đây chỉ thu được 2 lớp kiểu hình giống bố mẹ ban đầu với tỉ lệ 1 : 1!"
+      ],
+      "callout": "Tỉ lệ 1 : 1 trong phép lai phân tích cá thể dị hợp 2 cặp gen là dấu hiệu nhận biết đặc trưng của di truyền liên kết hoàn toàn!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Khái niệm cốt lõi",
+      "badgeColor": "amber",
+      "title": "Khái niệm và cơ chế của di truyền liên kết",
+      "content": "Bản chất tế bào học của hiện tượng liên kết gen:",
+      "bulletPoints": [
+        "Khái niệm: Di truyền liên kết là hiện tượng các gen quy định các tính trạng khác nhau cùng nằm trên một nhiễm sắc thể và cùng phân li về một giao tử trong quá trình giảm phân.",
+        "Kí hiệu kiểu gen: Dùng dấu gạch phân số để biểu thị các gen cùng nằm trên 1 chiếc NST, ví dụ BV/bv (F1 xám, dài dị hợp liên kết).",
+        "Tạo giao tử: Ruồi đực BV/bv giảm phân chỉ tạo ra 2 loại tinh trùng với tỉ lệ ngang nhau: 1/2 BV và 1/2 bv (không tạo ra các giao tử tổ hợp Bv hay bV).",
+        "Nhóm gen liên kết: Các gen cùng nằm trên một NST tạo thành một nhóm gen liên kết. Số nhóm gen liên kết của một loài bằng số NST trong bộ đơn bội (n) của loài đó (Ruồi giấm n = 4 có 4 nhóm gen liên kết; người n = 23 có 23 nhóm ở nữ và 24 nhóm ở nam)."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Ý nghĩa thực tiễn",
+      "badgeColor": "cyan",
+      "title": "Ý nghĩa của di truyền liên kết trong chọn giống",
+      "content": "Giá trị ứng dụng to lớn trong công tác giống cây trồng và vật nuôi:",
+      "bulletPoints": [
+        "Duy trì ổn định các nhóm tính trạng tốt: Cho phép các nhà chọn giống chọn được các cá thể mang nhiều gen quý cùng nằm trên một NST (ví dụ vừa cho năng suất cao vừa kháng sâu bệnh) để chúng luôn di truyền cùng nhau qua các thế hệ.",
+        "Hạn chế biến dị tổ hợp không mong muốn: Khác với phân li độc lập tạo ra nhiều biến dị phân tán, liên kết gen giúp bảo tồn nguyên vẹn tổ hợp tính trạng ưu việt của dòng thuần chủng.",
+        "Lập bản đồ di truyền: Dựa vào tần số hoán vị gen để xác định vị trí tương đối và khoảng cách giữa các gen trên từng nhiễm sắc thể."
+      ],
+      "callout": "Phân li độc lập tạo ra nhiều biến dị tổ hợp; trong khi di truyền liên kết hạn chế biến dị tổ hợp để giữ vững phẩm chất giống thuần!"
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Ở ruồi giấm có bộ nhiễm sắc thể 2n = 8. Số nhóm gen liên kết ở loài ruồi giấm là bao nhiêu?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "4 nhóm gen liên kết (vì số nhóm gen liên kết bằng n = 8 / 2)",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "8 nhóm gen liên kết",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "2 nhóm gen liên kết",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "16 nhóm gen liên kết",
+        "correct": false
+      }
+    ],
+    "explanation": "Số nhóm gen liên kết của một loài bằng số lượng nhiễm sắc thể trong bộ đơn bội (n) của loài đó. Ruồi giấm có 2n = 8 nên n = 4, do đó có đúng 4 nhóm gen liên kết."
+  }
+}

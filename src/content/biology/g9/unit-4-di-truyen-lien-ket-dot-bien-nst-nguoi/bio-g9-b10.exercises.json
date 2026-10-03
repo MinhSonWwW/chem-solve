@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g9-b10-q01",
+    "lessonId": "bio-g9-b10",
+    "sgkBaiSo": 45,
+    "skillIds": ["bio9-di-truyen-lien-ket"],
+    "difficulty": 1,
+    "prompt": "Nhà khoa học Thomas Hunt Morgan đã chọn đối tượng sinh vật nào để tiến hành các thí nghiệm phát hiện ra quy luật di truyền liên kết gen?",
+    "knowledge": ["kb-bio-g9-thi-nghiem-morgan-ruoi-giam"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Ruồi giấm (Drosophila melanogaster)" },
+        { "id": "opt-b", "label": "Cây Đậu Hà Lan (Pisum sativum)" },
+        { "id": "opt-c", "label": "Vi khuẩn đường ruột (Escherichia coli)" },
+        { "id": "opt-d", "label": "Chuột bạch thí nghiệm (Mus musculus)" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Loài côn trùng mắt đỏ nhỏ bé thường bu quanh các quả chín lên men." },
+      { "level": 2, "text": "Loài này có bộ NST rất ít (2n = 8) và vòng đời ngắn chỉ 10 - 14 ngày." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Đối tượng nghiên cứu của Morgan", "body": "Mendel nổi tiếng với Đậu Hà Lan; Morgan tiếp nối xuất sắc bằng một đối tượng động vật." },
+      { "kind": "knowledge", "title": "Ưu điểm của ruồi giấm", "body": "Morgan đã chọn ruồi giấm vì chúng dễ nuôi trong ống nghiệm, sinh sản nhanh, đẻ nhiều trứng, có số lượng NST ít (2n = 8) và mang nhiều biến dị hình thái dễ nhận biết." },
+      { "kind": "answer", "title": "Kết luận", "body": "Đối tượng nghiên cứu của Morgan là Ruồi giấm." }
+    ],
+    "finalSolution": "Morgan đã chọn ruồi giấm (Drosophila melanogaster) làm đối tượng nghiên cứu để phát hiện ra quy luật di truyền liên kết.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm đối tượng của Morgan (ruồi giấm) với đối tượng của Mendel (cây đậu Hà Lan)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b10-q02",
+    "lessonId": "bio-g9-b10",
+    "sgkBaiSo": 45,
+    "skillIds": ["bio9-di-truyen-lien-ket"],
+    "difficulty": 1,
+    "prompt": "Trong thí nghiệm của Morgan, khi cho ruồi đực F1 thân xám, cánh dài lai phân tích với ruồi cái thân đen, cánh cụt thì thu được kết quả kiểu hình ở thế hệ lai Fa như thế nào?",
+    "knowledge": ["kb-bio-g9-thi-nghiem-morgan-ruoi-giam"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "1 Thân xám, cánh dài : 1 Thân đen, cánh cụt (tỉ lệ 1 : 1)" },
+        { "id": "opt-b", "label": "1 Thân xám, dài : 1 Thân xám, cụt : 1 Thân đen, dài : 1 Thân đen, cụt (1 : 1 : 1 : 1)" },
+        { "id": "opt-c", "label": "3 Thân xám, cánh dài : 1 Thân đen, cánh cụt (3 : 1)" },
+        { "id": "opt-d", "label": "9 Thân xám, dài : 3 Thân xám, cụt : 3 Thân đen, dài : 1 Thân đen, cụt" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Nếu phân li độc lập sẽ cho 4 kiểu hình 1:1:1:1; nhưng ở đây các gen đi liền với nhau." },
+      { "level": 2, "text": "Chỉ thu được 2 kiểu hình giống bố mẹ ban đầu với tỉ lệ ngang nhau 1 : 1." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích phép lai phân tích ruồi đực F1", "body": "Phép lai: ♂ Thân xám, cánh dài (F1) × ♀ Thân đen, cánh cụt (đồng hợp lặn)." },
+      { "kind": "knowledge", "title": "Kết quả thực nghiệm của Morgan", "body": "Thế hệ con lai Fa chỉ thu được đúng 2 lớp kiểu hình là: 1 Thân xám, cánh dài : 1 Thân đen, cánh cụt (tỉ lệ 1 : 1), không xuất hiện biến dị tổ hợp (xám cụt hay đen dài)." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tỉ lệ kiểu hình là 1 Thân xám, cánh dài : 1 Thân đen, cánh cụt." }
+    ],
+    "finalSolution": "Phép lai phân tích ruồi đực F1 của Morgan cho tỉ lệ kiểu hình ở đời con Fa là 1 thân xám, cánh dài : 1 thân đen, cánh cụt.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm kết quả phép lai phân tích của Morgan (1:1) với phép lai phân tích của Mendel (1:1:1:1)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b10-q03",
+    "lessonId": "bio-g9-b10",
+    "sgkBaiSo": 45,
+    "skillIds": ["bio9-di-truyen-lien-ket"],
+    "difficulty": 1,
+    "prompt": "Khái niệm 'Di truyền liên kết' được định nghĩa chính xác như thế nào trong di truyền học?",
+    "knowledge": ["kb-bio-g9-khai-niem-di-truyen-lien-ket"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Hiện tượng các gen quy định các tính trạng khác nhau cùng nằm trên một nhiễm sắc thể và cùng phân li về một giao tử trong giảm phân" },
+        { "id": "opt-b", "label": "Hiện tượng các gen nằm trên các cặp nhiễm sắc thể khác nhau phân li độc lập về các giao tử" },
+        { "id": "opt-c", "label": "Hiện tượng một gen quy định nhiều tính trạng khác nhau của cơ thể" },
+        { "id": "opt-d", "label": "Hiện tượng đột biến gen truyền từ đời bố mẹ sang con cháu qua nguyên phân" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Từ 'liên kết' thể hiện sự gắn kết giữa các gen trên cùng một vật thể mang." },
+      { "level": 2, "text": "Vật thể mang đó chính là một chiếc nhiễm sắc thể duy nhất." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Bản chất di truyền liên kết", "body": "Mỗi nhiễm sắc thể chứa một phân tử DNA dài mang hàng trăm, hàng nghìn locus gen khác nhau." },
+      { "kind": "knowledge", "title": "Định nghĩa chuẩn mực", "body": "Di truyền liên kết là hiện tượng các gen quy định các tính trạng khác nhau cùng nằm trên một nhiễm sắc thể và cùng phân li về một giao tử trong quá trình giảm phân." },
+      { "kind": "answer", "title": "Kết luận", "body": "Các gen cùng nằm trên 1 NST và cùng phân li về 1 giao tử." }
+    ],
+    "finalSolution": "Di truyền liên kết là hiện tượng các gen quy định các tính trạng khác nhau cùng nằm trên một nhiễm sắc thể và cùng phân li về một giao tử trong giảm phân.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm khái niệm di truyền liên kết với quy luật phân li độc lập (các gen nằm trên các NST khác nhau)." }
+    ]
+  },
+  {
+    "id": "bio-g9-b10-q04",
+    "lessonId": "bio-g9-b10",
+    "sgkBaiSo": 45,
+    "skillIds": ["bio9-di-truyen-lien-ket"],
+    "difficulty": 2,
+    "prompt": "Một cá thể đực có kiểu gen liên kết là BV/bv (các gen B và V liên kết hoàn toàn). Khi giảm phân bình thường, cá thể này sẽ tạo ra những loại tinh trùng nào với tỉ lệ bao nhiêu?",
+    "knowledge": ["kb-bio-g9-khai-niem-di-truyen-lien-ket"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "2 loại tinh trùng với tỉ lệ ngang nhau: 1/2 BV và 1/2 bv (tỉ lệ 1 : 1)" },
+        { "id": "opt-b", "label": "4 loại tinh trùng với tỉ lệ ngang nhau: 1/4 BV : 1/4 Bv : 1/4 bV : 1/4 bv" },
+        { "id": "opt-c", "label": "Chỉ 1 loại tinh trùng duy nhất mang kiểu gen BVbv" },
+        { "id": "opt-d", "label": "3 loại tinh trùng với tỉ lệ 1 BV : 2 Bv : 1 bv" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Do hai gen B và V cùng nằm trên 1 chiếc NST, còn b và v cùng nằm trên chiếc NST tương đồng còn lại." },
+      { "level": 2, "text": "Khi giảm phân không có hoán vị, chỉ có 2 loại giao tử mang nguyên vẹn từng chiếc NST: BV và bv." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định kiểu gen liên kết", "body": "Kiểu gen BV/bv mang 2 cặp gen dị hợp cùng nằm trên 1 cặp NST tương đồng." },
+      { "kind": "knowledge", "title": "Sự phân li giao tử", "body": "Khi giảm phân, chiếc NST mang cụm gen BV đi về 1 cực tế bào tạo tinh trùng BV; chiếc NST mang cụm gen bv đi về cực đối diện tạo tinh trùng bv. Không xuất hiện giao tử tái tổ hợp Bv hay bV." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tạo ra 2 loại giao tử tỉ lệ 1/2 BV : 1/2 bv." }
+    ],
+    "finalSolution": "Cá thể đực BV/bv liên kết hoàn toàn khi giảm phân chỉ tạo ra 2 loại giao tử với tỉ lệ bằng nhau: 50% BV và 50% bv.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Áp dụng công thức phân li độc lập (AaBb tạo 4 loại giao tử) cho kiểu gen liên kết BV/bv." }
+    ]
+  },
+  {
+    "id": "bio-g9-b10-q05",
+    "lessonId": "bio-g9-b10",
+    "sgkBaiSo": 45,
+    "skillIds": ["bio9-di-truyen-lien-ket"],
+    "difficulty": 2,
+    "prompt": "Ở cây ngô có bộ nhiễm sắc thể lưỡng bội 2n = 20. Số nhóm gen liên kết của loài ngô là bao nhiêu?",
+    "knowledge": ["kb-bio-g9-nhom-gen-lien-ket"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "10 nhóm gen liên kết" },
+        { "id": "opt-b", "label": "20 nhóm gen liên kết" },
+        { "id": "opt-c", "label": "5 nhóm gen liên kết" },
+        { "id": "opt-d", "label": "40 nhóm gen liên kết" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Quy tắc: Số nhóm gen liên kết của một loài bằng số lượng nhiễm sắc thể trong bộ đơn bội (n)." },
+      { "level": 2, "text": "Ở ngô 2n = 20 thì n = 20 / 2 = 10." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định công thức tính nhóm gen liên kết", "body": "Số nhóm gen liên kết của một loài = Số NST trong bộ đơn bội (n)." },
+      { "kind": "compute", "title": "Tính số NST đơn bội của cây ngô", "body": "Đề bài cho cây ngô có 2n = 20 ⇒ n = 20 / 2 = 10." },
+      { "kind": "answer", "title": "Kết luận", "body": "Cây ngô có đúng 10 nhóm gen liên kết." }
+    ],
+    "finalSolution": "Số nhóm gen liên kết bằng số NST trong bộ đơn bội: n = 20 / 2 = 10 nhóm gen liên kết.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Lấy luôn số 2n = 20 làm số nhóm gen liên kết." }
+    ]
+  },
+  {
+    "id": "bio-g9-b10-q06",
+    "lessonId": "bio-g9-b10",
+    "sgkBaiSo": 45,
+    "skillIds": ["bio9-di-truyen-lien-ket"],
+    "difficulty": 2,
+    "prompt": "Điểm khác biệt then chốt giữa kết quả phép lai phân tích cá thể dị hợp 2 cặp gen theo quy luật phân li độc lập (Mendel) và theo quy luật di truyền liên kết (Morgan) là gì?",
+    "knowledge": ["kb-bio-g9-thi-nghiem-morgan-ruoi-giam"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Phân li độc lập cho 4 lớp kiểu hình tỉ lệ 1 : 1 : 1 : 1, còn di truyền liên kết chỉ cho 2 lớp kiểu hình tỉ lệ 1 : 1 giống bố mẹ" },
+        { "id": "opt-b", "label": "Phân li độc lập cho tỉ lệ 3 : 1, còn di truyền liên kết cho tỉ lệ 9 : 3 : 3 : 1" },
+        { "id": "opt-c", "label": "Phân li độc lập không xuất hiện biến dị tổ hợp, còn di truyền liên kết tạo ra nhiều biến dị mới" },
+        { "id": "opt-d", "label": "Cả hai quy luật đều cho kết quả giống hệt nhau ở đời con lai phân tích" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Phân li độc lập tạo ra 4 loại giao tử nên lai phân tích cho 4 lớp kiểu hình." },
+      { "level": 2, "text": "Di truyền liên kết chỉ tạo ra 2 loại giao tử nên đời con chỉ có 2 lớp kiểu hình giống bố mẹ." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "So sánh phép lai phân tích dị hợp 2 cặp gen", "body": "Lai cá thể dị hợp 2 cặp gen với cá thể đồng hợp lặn." },
+      { "kind": "knowledge", "title": "Đối chiếu kết quả", "body": "Mendel (AaBb × aabb): F1 tạo 4 loại giao tử (AB, Ab, aB, ab) → Đời con có 4 kiểu hình tỉ lệ 1 : 1 : 1 : 1. Morgan (BV/bv × bv/bv): F1 chỉ tạo 2 loại giao tử (BV, bv) → Đời con có 2 kiểu hình tỉ lệ 1 : 1." },
+      { "kind": "answer", "title": "Kết luận", "body": "Phân li độc lập cho tỉ lệ 1:1:1:1, liên kết gen cho tỉ lệ 1:1." }
+    ],
+    "finalSolution": "Phép lai phân tích dị hợp 2 cặp gen: Phân li độc lập cho 4 kiểu hình tỉ lệ 1:1:1:1; Di truyền liên kết chỉ cho 2 kiểu hình giống bố mẹ tỉ lệ 1:1.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm tỉ lệ lai phân tích 1:1:1:1 với tỉ lệ F2 tự thụ phấn 9:3:3:1." }
+    ]
+  },
+  {
+    "id": "bio-g9-b10-q07",
+    "lessonId": "bio-g9-b10",
+    "sgkBaiSo": 45,
+    "skillIds": ["bio9-di-truyen-lien-ket"],
+    "difficulty": 2,
+    "prompt": "Hình ảnh trực quan nào sau đây mô tả chính xác nhất bản chất của hiện tượng các gen di truyền liên kết trên nhiễm sắc thể?",
+    "knowledge": ["kb-bio-g9-khai-niem-di-truyen-lien-ket"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Các gen giống như những hành khách ngồi chung trên một toa tàu, khi con tàu (NST) di chuyển về đâu thì toàn bộ hành khách trên toa cùng đi về đó" },
+        { "id": "opt-b", "label": "Các gen giống như những hạt cát bay tự do trong không khí không liên quan đến nhau" },
+        { "id": "opt-c", "label": "Các gen tự do gắn kết và tách rời ngẫu nhiên sau mỗi đợt dịch mã" },
+        { "id": "opt-d", "label": "Mỗi gen nằm trên một tế bào riêng biệt và hòa lẫn nhau khi thụ tinh" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Các gen phân bố dọc theo chiều dài của phân tử DNA trong nhiễm sắc thể." },
+      { "level": 2, "text": "Khi NST phân li về cực tế bào, tất cả các gen trên chiếc NST đó phải đi cùng nhau." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Mô hình hóa liên kết gen", "body": "Hình ảnh trực quan giúp học sinh dễ dàng liên tưởng bản chất vật lí của liên kết gen." },
+      { "kind": "knowledge", "title": "Phân tích hình tượng toa tàu", "body": "Nhiễm sắc thể đóng vai trò như một toa tàu, các locus gen là những hành khách ngồi cố định trên toa đó. Khi thoi phân bào kéo NST về một cực tế bào, toàn bộ các gen cùng đi liền nhau về cùng một giao tử." },
+      { "kind": "answer", "title": "Kết luận", "body": "Như những hành khách ngồi chung trên một toa tàu." }
+    ],
+    "finalSolution": "Các gen liên kết giống như những hành khách ngồi chung trên một toa tàu (chiếc NST), luôn cùng di chuyển về một cực tế bào trong phân bào.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng các gen có thể tự ý tách rời khỏi phân tử DNA trong điều kiện phân bào bình thường." }
+    ]
+  },
+  {
+    "id": "bio-g9-b10-q08",
+    "lessonId": "bio-g9-b10",
+    "sgkBaiSo": 45,
+    "skillIds": ["bio9-di-truyen-lien-ket"],
+    "difficulty": 2,
+    "prompt": "Trong chọn giống cây trồng và vật nuôi, việc ứng dụng hiện tượng di truyền liên kết mang lại lợi ích nổi bật nào sau đây?",
+    "knowledge": ["kb-bio-g9-y-nghia-di-truyen-lien-ket"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Giúp duy trì các nhóm tính trạng tốt luôn đi cùng nhau qua các thế hệ và hạn chế xuất hiện các biến dị tổ hợp không mong muốn" },
+        { "id": "opt-b", "label": "Làm tăng tối đa số lượng biến dị tổ hợp để tạo ra hàng vạn giống mới trong một vụ" },
+        { "id": "opt-c", "label": "Làm mất hoàn toàn các gen lặn có hại trong toàn bộ hệ sinh thái" },
+        { "id": "opt-d", "label": "Giúp cây trồng có thể quang hợp trong bóng tối không cần ánh sáng" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Khi đã tạo ra một giống tốt mang nhiều gen quý, người ta muốn giữ nguyên tổ hợp gen đó mà không bị phân li rải rác." },
+      { "level": 2, "text": "Di truyền liên kết đảm bảo các gen tốt luôn gắn bó với nhau qua các đời con cháu." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Mục tiêu trong công tác chọn giống", "body": "Cần cố định những tổ hợp tính trạng kinh tế có lợi (ví dụ: lúa vừa hạt gạo thơm ngon vừa kháng bệnh đạo ôn)." },
+      { "kind": "knowledge", "title": "Ý nghĩa của liên kết gen", "body": "Nếu các gen quý cùng nằm trên 1 NST, chúng sẽ luôn di truyền cùng nhau, tránh hiện tượng phân li tạo ra các con lai mang biến dị bất lợi, giúp duy trì độ thuần và phẩm chất ưu việt của giống." },
+      { "kind": "answer", "title": "Kết luận", "body": "Duy trì nhóm tính trạng tốt cùng nhau và hạn chế biến dị tổ hợp bất lợi." }
+    ],
+    "finalSolution": "Di truyền liên kết giúp người làm giống duy trì các nhóm gen tốt luôn đi cùng nhau và hạn chế biến dị tổ hợp không mong muốn, ổn định đặc tính giống.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng di truyền liên kết làm tăng biến dị tổ hợp (thực tế phân li độc lập mới làm tăng biến dị tổ hợp)." }
+    ]
+  }
+]

@@ -1,0 +1,293 @@
+[
+  {
+    "id": "bio-g6-b09-q01",
+    "lessonId": "bio-g6-b09",
+    "sgkBaiSo": 24,
+    "skillIds": ["bio-thuc-hanh-co-the"],
+    "difficulty": 1,
+    "prompt": "Ghép nối từng sinh vật đơn bào (cột bên trái) với đúng đặc điểm hình thái và cơ quan di chuyển của nó (cột bên phải):",
+    "knowledge": ["bio-thuc-hanh-don-bao-da-bao", "bio-sinh-vat-don-bao"],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Trùng giày (Paramecium)",
+          "right": "Hình chiếc đế giày, bơi nhanh nhờ hàng nghìn lông bơi ngắn quanh mép"
+        },
+        {
+          "left": "Trùng roi xanh (Euglena)",
+          "right": "Hình thoi có điểm mắt đỏ, bơi lội nhờ một roi dài ở đầu xoáy nước"
+        },
+        {
+          "left": "Trùng biến hình (Amoeba)",
+          "right": "Hình dạng luôn thay đổi, di chuyển và bắt mồi bằng các chân giả"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Trùng giày có hình giống chiếc giày và có lông bơi."
+      },
+      {
+        "level": 2,
+        "text": "Trùng roi có một roi bơi dài ở đầu và điểm mắt đỏ nhận biết ánh sáng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 3 đại diện đơn bào quen thuộc",
+        "body": "Trùng giày, trùng roi xanh, trùng biến hình."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc điểm nhận diện hiển vi",
+        "body": "Trùng giày: hình đế giày + lông bơi; Trùng roi: hình thoi + roi bơi + điểm mắt đỏ; Trùng biến hình: chân giả luôn đổi dạng."
+      },
+      {
+        "kind": "answer",
+        "title": "Ghép cặp chính xác",
+        "body": "Nối đúng 3 sinh vật đơn bào với cơ quan vận động tương ứng."
+      }
+    ],
+    "finalSolution": "Trùng giày: hình đế giày có lông bơi; Trùng roi: hình thoi có roi dài và điểm mắt đỏ; Trùng biến hình: chân giả chuyển động.",
+    "commonMistakes": [
+      {
+        "id": "cm-01",
+        "message": "Nhầm cơ quan di chuyển của trùng giày (lông bơi) với trùng roi (roi bơi)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b09-q02",
+    "lessonId": "bio-g6-b09",
+    "sgkBaiSo": 24,
+    "skillIds": ["bio-thuc-hanh-co-the"],
+    "difficulty": 2,
+    "prompt": "Hãy sắp xếp các thao tác sau theo đúng trình tự chuẩn khi làm tiêu bản quan sát trùng giày trong nước rơm ngâm:",
+    "knowledge": ["bio-thuc-hanh-don-bao-da-bao"],
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Dùng ống hút nhỏ giọt lấy một giọt nước ở lớp váng bề mặt bình ngâm rơm rạ",
+        "Nhỏ giọt nước lên chính giữa lam kính sạch",
+        "Dùng kim mũi mác đặt vài sợi bông gòn thấm nước vào giọt nước để hãm tốc độ bơi",
+        "Đậy lamen nghiêng 45 độ, dùng giấy thấm hút nước tràn rồi đưa lên kính hiển vi quan sát"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bắt đầu bằng việc hút mẫu nước ở lớp váng bề mặt."
+      },
+      {
+        "level": 2,
+        "text": "Cho sợi bông vào trước khi đậy lamen để cản tốc độ bơi."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục tiêu bài thực hành",
+        "body": "Xác định 4 bước tuần tự làm tiêu bản hiển vi giọt nước sống."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy trình thực nghiệm",
+        "body": "1. Hút nước váng bề mặt → 2. Nhỏ giọt nước lên lam kính → 3. Đặt sợi bông gòn hãm bơi → 4. Đậy lamen và quan sát."
+      },
+      {
+        "kind": "answer",
+        "title": "Thứ tự chính xác",
+        "body": "Sắp xếp theo quy trình chuẩn SGK KHTN 6."
+      }
+    ],
+    "finalSolution": "Trình tự chuẩn: Hút giọt nước váng bề mặt → Nhỏ lên lam kính → Cho sợi bông gòn vào → Đậy lamen và quan sát.",
+    "commonMistakes": [
+      {
+        "id": "cm-02",
+        "message": "Đậy lamen xong mới tìm cách nhét sợi bông vào (làm vỡ lamen)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b09-q03",
+    "lessonId": "bio-g6-b09",
+    "sgkBaiSo": 24,
+    "skillIds": ["bio-thuc-hanh-co-the"],
+    "difficulty": 1,
+    "prompt": "Khi lấy mẫu nước từ bình ngâm rơm rạ để làm tiêu bản quan sát vi sinh vật, tại sao nên dùng ống hút lấy giọt nước ở lớp váng bề mặt?",
+    "knowledge": ["bio-thuc-hanh-don-bao-da-bao"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Vì lớp nước bề mặt có nhiều oxygen hòa tan và ánh sáng nên sinh vật đơn bào tập trung nhiều nhất" },
+        { "id": "opt-b", "label": "Vì nước ở bề mặt không chứa vi khuẩn gây hại" },
+        { "id": "opt-c", "label": "Vì ở bề mặt nước không bị bay hơi" },
+        { "id": "opt-d", "label": "Vì ở bề mặt trùng giày không có lông bơi" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Sinh vật đơn bào như trùng giày, trùng roi là những sinh vật hiếu khí cần oxygen để thở."
+      },
+      {
+        "level": 2,
+        "text": "Bề mặt tiếp xúc trực tiếp với không khí có hàm lượng O2 cao nhất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Giải thích thao tác lấy mẫu",
+        "body": "Đề bài hỏi lý do lấy nước ở lớp bề mặt bình ngâm rơm."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Tập tính hô hấp của sinh vật đơn bào",
+        "body": "Trùng giày, trùng roi hô hấp hiếu khí qua bề mặt tế bào. Chúng có tập tính bơi lên phía trên mặt nước nơi giàu oxygen và ánh sáng, do đó hút lớp váng bề mặt sẽ bắt được mật độ cá thể dày đặc nhất."
+      },
+      {
+        "kind": "answer",
+        "title": "Chọn đáp án đúng",
+        "body": "Lựa chọn chính xác là lời giải thích khoa học chuẩn xác."
+      }
+    ],
+    "finalSolution": "Nên lấy nước ở lớp váng bề mặt vì nơi này tiếp xúc với không khí có nhiều oxygen hòa tan nhất, thu hút trùng giày và trùng roi tập trung với mật độ cao.",
+    "commonMistakes": [
+      {
+        "id": "cm-03",
+        "message": "Nghĩ rằng cắm ống hút sâu tận đáy bình có nhiều rơm mục lắng đọng sẽ có nhiều trùng giày bơi hơn."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b09-q04",
+    "lessonId": "bio-g6-b09",
+    "sgkBaiSo": 24,
+    "skillIds": ["bio-thuc-hanh-co-the"],
+    "difficulty": 2,
+    "prompt": "Phân loại các cơ quan nội tạng sau đây của cơ thể người theo vị trí giải phẫu: 'Khoang ngực' và 'Khoang bụng':",
+    "knowledge": ["bio-co-quan-he-co-quan-dong-vat"],
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        { "id": "b-chest", "label": "Nằm trong Khoang ngực" },
+        { "id": "b-abdomen", "label": "Nằm trong Khoang bụng" }
+      ],
+      "items": [
+        { "id": "it-1", "label": "Quả tim", "bucketId": "b-chest" },
+        { "id": "it-2", "label": "Hai lá phổi", "bucketId": "b-chest" },
+        { "id": "it-3", "label": "Dạ dày", "bucketId": "b-abdomen" },
+        { "id": "it-4", "label": "Lá gan", "bucketId": "b-abdomen" },
+        { "id": "it-5", "label": "Ruột non và ruột già", "bucketId": "b-abdomen" },
+        { "id": "it-6", "label": "Hai quả thận", "bucketId": "b-abdomen" }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khoang ngực được bảo vệ bởi lồng xương sườn, ngăn cách với khoang bụng bởi cơ hoành."
+      },
+      {
+        "level": 2,
+        "text": "Tim và phổi nằm ở khoang ngực; hệ tiêu hóa và bài tiết nằm ở khoang bụng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Xác định vị trí giải phẫu cơ thể người",
+        "body": "Phân chia 6 cơ quan vào Khoang ngực và Khoang bụng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Bản đồ cơ quan người",
+        "body": "Khoang ngực chứa Tim và Phổi. Khoang bụng (dưới cơ hoành) chứa Dạ dày, Gan, Ruột non/già và Thận."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất phân nhóm",
+        "body": "Xếp 2 cơ quan hô hấp - tuần hoàn vào khoang ngực; 4 cơ quan tiêu hóa - bài tiết vào khoang bụng."
+      }
+    ],
+    "finalSolution": "Khoang ngực: Quả tim, Hai lá phổi. Khoang bụng: Dạ dày, Lá gan, Ruột non và ruột già, Hai quả thận.",
+    "commonMistakes": [
+      {
+        "id": "cm-04",
+        "message": "Xếp dạ dày vào khoang ngực vì tưởng dạ dày gần tim."
+      }
+    ]
+  },
+  {
+    "id": "bio-g6-b09-q05",
+    "lessonId": "bio-g6-b09",
+    "sgkBaiSo": 24,
+    "skillIds": ["bio-thuc-hanh-co-the"],
+    "difficulty": 2,
+    "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về thực hành quan sát cơ thể đơn bào và đa bào:",
+    "knowledge": ["bio-thuc-hanh-don-bao-da-bao"],
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "st-1",
+          "text": "Trùng roi xanh có điểm mắt màu đỏ giúp nó cảm nhận và bơi về phía có nguồn ánh sáng mặt trời.",
+          "correct": true
+        },
+        {
+          "id": "st-2",
+          "text": "Trùng giày là sinh vật đa bào có hàng triệu tế bào liên kết lại thành hình chiếc đế giày.",
+          "correct": false
+        },
+        {
+          "id": "st-3",
+          "text": "Đặt vài sợi bông gòn thấm nước vào lam kính giúp tạo vật cản làm trùng giày bơi chậm lại.",
+          "correct": true
+        },
+        {
+          "id": "st-4",
+          "text": "Trên mô hình cây xanh, hoa và quả thuộc hệ chồi ở phía trên mặt đất.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Toàn bộ cơ thể trùng giày chỉ là một tế bào duy nhất."
+      },
+      {
+        "level": 2,
+        "text": "Điểm mắt màu đỏ ở gốc roi của trùng roi xanh có tính hướng sáng rõ rệt."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân tích 4 nhận định thực hành",
+        "body": "Đánh giá từng câu về trùng roi, trùng giày và cơ quan cây xanh."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra chi tiết",
+        "body": "1. Điểm mắt trùng roi hướng sáng: Đúng. 2. Trùng giày là đa bào: Sai (trùng giày là đơn bào). 3. Sợi bông hãm tốc độ: Đúng. 4. Hoa quả thuộc hệ chồi: Đúng."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận Đúng / Sai",
+        "body": "Ý 1: Đúng; Ý 2: Sai; Ý 3: Đúng; Ý 4: Đúng."
+      }
+    ],
+    "finalSolution": "Phát biểu 1, 3 và 4 đúng. Phát biểu 2 sai vì trùng giày là sinh vật đơn bào (toàn bộ cơ thể chỉ là 1 tế bào duy nhất).",
+    "commonMistakes": [
+      {
+        "id": "cm-05",
+        "message": "Nghĩ rằng trùng giày bơi nhanh và có miệng thì phải là sinh vật đa bào."
+      }
+    ]
+  }
+]

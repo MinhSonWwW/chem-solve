@@ -1,0 +1,88 @@
+{
+  "lessonId": "bio-g6-b10",
+  "nodeId": "bio-g6-b10-theory",
+  "title": "Lý thuyết: Hệ thống phân loại sinh vật",
+  "subtitle": "Bài 25 SGK KHTN 6 Kết nối tri thức: 7 bậc phân loại, hệ thống 5 giới sinh vật và quy tắc gọi tên khoa học",
+  "sgkBaiSo": 25,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Khái niệm",
+      "badgeColor": "emerald",
+      "title": "Phân loại sinh vật và ý nghĩa",
+      "content": "Phân loại sinh vật là việc sắp xếp các loài sinh vật vào một hệ thống trật tự nhất định dựa vào các đặc điểm hình thái, cấu tạo và quan hệ họ hàng:",
+      "bulletPoints": [
+        "Mục đích: Giúp các nhà khoa học và con người dễ dàng gọi tên, nhận diện, tìm hiểu và bảo vệ sự đa dạng của thế giới sống.",
+        "Tiêu chí phân loại: Dựa vào cấu tạo tế bào (nhân sơ hay nhân thực), số lượng tế bào (đơn bào hay đa bào), hình thức dinh dưỡng (tự dưỡng hay dị dưỡng)."
+      ]
+    },
+    {
+      "id": "card-2",
+      "badge": "7 bậc phân loại",
+      "badgeColor": "amber",
+      "title": "7 bậc phân loại từ nhỏ đến lớn",
+      "content": "Sinh giới được phân cấp thành 7 bậc phân loại chính tắc:",
+      "bulletPoints": [
+        "Thứ tự từ nhỏ đến lớn: Loài → Chi (giống) → Họ → Bộ → Lớp → Ngành → Giới.",
+        "Loài (Species): Bậc phân loại cơ sở nhỏ nhất gồm các cá thể có cấu tạo tương tự nhau, có khả năng giao phối tự do sinh con hữu thụ.",
+        "Giới (Kingdom): Bậc phân loại lớn và bao quát nhất trong sinh giới.",
+        "Quy luật: Bậc phân loại càng nhỏ thì số lượng loài càng ít và mức độ tương đồng giữa các sinh vật càng nhiều."
+      ],
+      "callout": "Ghi nhớ chuỗi 7 bậc: Loài → Chi → Họ → Bộ → Lớp → Ngành → Giới!"
+    },
+    {
+      "id": "card-3",
+      "badge": "5 giới sinh vật",
+      "badgeColor": "cyan",
+      "title": "Hệ thống 5 giới sinh vật (Whittaker)",
+      "content": "Toàn bộ sinh giới trên Trái Đất được phân chia thành 5 giới lớn:",
+      "bulletPoints": [
+        "1. Giới Khởi sinh (Monera): Gồm các sinh vật nhân sơ, đơn bào siêu nhỏ (các loài vi khuẩn).",
+        "2. Giới Nguyên sinh (Protista): Gồm các sinh vật nhân thực, đa số đơn bào (trùng roi, trùng giày, tảo đơn bào).",
+        "3. Giới Nấm (Fungi): Gồm các sinh vật nhân thực, dị dưỡng, thành tế bào chứa chitin (nấm men, nấm mốc, nấm rơm).",
+        "4. Giới Thực vật (Plantae): Gồm các sinh vật nhân thực, đa bào, có khả năng quang hợp tự dưỡng (rêu, dương xỉ, thông, lúa).",
+        "5. Giới Động vật (Animalia): Gồm các sinh vật nhân thực, đa bào, dị dưỡng, có khả năng di chuyển (cá, ếch, chim, hổ, con người)."
+      ]
+    },
+    {
+      "id": "card-4",
+      "badge": "Tên khoa học",
+      "badgeColor": "purple",
+      "title": "Quy tắc đặt tên khoa học của loài sinh vật",
+      "content": "Để tránh nhầm lẫn giữa các ngôn ngữ địa phương trên thế giới, mỗi loài sinh vật có một tên khoa học chuẩn quốc tế bằng tiếng Latin:",
+      "bulletPoints": [
+        "Quy tắc 2 từ (hệ thống nhị danh Linnaeus): Tên Chi (viết hoa chữ cái đầu) + Tên Loài (viết thường toàn bộ).",
+        "Cách trình bày: Luôn in nghiêng trong văn bản.",
+        "Ví dụ 1: Loài người có tên khoa học là Homo sapiens (Homo là tên Chi, sapiens là tên Loài).",
+        "Ví dụ 2: Con hổ có tên khoa học là Panthera tigris."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Bậc phân loại cơ bản và nhỏ nhất trong hệ thống phân loại sinh giới là bậc nào?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Loài",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Chi (giống)",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Họ",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Giới",
+        "correct": false
+      }
+    ],
+    "explanation": "Loài là đơn vị phân loại cơ bản và nhỏ nhất trong sinh học. Giới là bậc phân loại lớn nhất và bao quát nhất."
+  }
+}

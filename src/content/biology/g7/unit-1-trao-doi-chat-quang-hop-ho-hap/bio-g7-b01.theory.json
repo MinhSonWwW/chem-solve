@@ -1,0 +1,73 @@
+{
+  "lessonId": "bio-g7-b01",
+  "nodeId": "bio-g7-b01-theory",
+  "title": "Lý thuyết: Khái quát về trao đổi chất và chuyển hóa năng lượng",
+  "subtitle": "Bài 21 SGK KHTN 7 Kết nối tri thức: Khái niệm, mối quan hệ và vai trò của trao đổi chất & năng lượng",
+  "sgkBaiSo": 21,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "card-1",
+      "badge": "Khái niệm",
+      "badgeColor": "emerald",
+      "title": "Trao đổi chất ở sinh vật",
+      "content": "Trao đổi chất là tập hợp các biến đổi hóa học diễn ra bên trong tế bào của cơ thể sinh vật và quá trình trao đổi các chất giữa cơ thể với môi trường bên ngoài.",
+      "bulletPoints": [
+        "Lấy vào: Sinh vật lấy nước, khí oxygen (hoặc carbon dioxide), chất khoáng và chất dinh dưỡng từ môi trường.",
+        "Biến đổi: Các chất hấp thụ được biến đổi thành vật chất cấu tạo nên tế bào và cơ thể.",
+        "Thải ra: Sinh vật đào thải các chất cặn bã, chất dư thừa không cần thiết (khí CO2, nước tiểu, phân, mồ hôi) ra môi trường."
+      ],
+      "callout": "Không có trao đổi chất, sinh vật sẽ ngừng hoạt động sống và chết!"
+    },
+    {
+      "id": "card-2",
+      "badge": "Năng lượng",
+      "badgeColor": "amber",
+      "title": "Chuyển hóa năng lượng trong cơ thể",
+      "content": "Chuyển hóa năng lượng là sự biến đổi từ dạng năng lượng này sang dạng năng lượng khác trong các hoạt động sống của sinh vật.",
+      "bulletPoints": [
+        "Quang năng → Hóa năng: Cây xanh hấp thụ năng lượng ánh sáng mặt trời để tổng hợp chất hữu cơ (quang hợp).",
+        "Hóa năng → Nhiệt năng & Cơ năng: Năng lượng dự trữ trong liên kết hóa học của thức ăn được phân giải thành ATP, cơ năng (vận động co cơ) và nhiệt năng (sưởi ấm cơ thể).",
+        "Năng lượng ATP (Adenosine Triphosphate) là đồng tiền năng lượng trực tiếp của tế bào."
+      ]
+    },
+    {
+      "id": "card-3",
+      "badge": "Mối quan hệ",
+      "badgeColor": "cyan",
+      "title": "Mối quan hệ hai chiều & Vai trò sống còn",
+      "content": "Trao đổi chất và chuyển hóa năng lượng luôn diễn ra đồng thời, không thể tách rời nhau:",
+      "bulletPoints": [
+        "Trao đổi chất cung cấp nguyên liệu hữu cơ cho chuyển hóa năng lượng.",
+        "Chuyển hóa năng lượng giải phóng ATP cung cấp cho các hoạt động hấp thụ và biến đổi chất.",
+        "Vai trò đối với sinh vật: Cung cấp vật liệu xây dựng và sửa chữa tế bào, cung cấp năng lượng cho mọi hoạt động sống và giúp cơ thể sinh trưởng, phát triển."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Quá trình biến đổi năng lượng ánh sáng mặt trời thành năng lượng tích lũy trong các phân tử hữu cơ ở lá cây thuộc dạng chuyển hóa nào?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Quang năng chuyển hóa thành Hóa năng",
+        "correct": true
+      },
+      {
+        "id": "opt-2",
+        "text": "Hóa năng chuyển hóa thành Nhiệt năng",
+        "correct": false
+      },
+      {
+        "id": "opt-3",
+        "text": "Cơ năng chuyển hóa thành Hóa năng",
+        "correct": false
+      },
+      {
+        "id": "opt-4",
+        "text": "Nhiệt năng chuyển hóa thành Quang năng",
+        "correct": false
+      }
+    ],
+    "explanation": "Trong quá trình quang hợp, chất diệp lục hấp thụ quang năng từ ánh sáng mặt trời rồi chuyển hóa thành hóa năng dự trữ trong các liên kết hóa học của phân tử glucose và tinh bột."
+  }
+}

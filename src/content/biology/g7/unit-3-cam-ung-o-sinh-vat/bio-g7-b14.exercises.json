@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bio-g7-b14-q01",
+    "lessonId": "bio-g7-b14",
+    "sgkBaiSo": 34,
+    "skillIds": ["bio-ung-dung-cam-ung-tap-tinh"],
+    "difficulty": 1,
+    "prompt": "Việc nông dân làm giàn leo bằng tre, nứa hoặc lưới cước cho cây bầu, bí, mướp, dưa leo là ứng dụng của hiện tượng cảm ứng nào?",
+    "knowledge": ["kb-bio-g7-huong-dong-thuc-vat", "kb-bio-g7-ung-dung-tap-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Ứng dụng tính hướng tiếp xúc của thân leo và tua cuốn" },
+        { "id": "opt-b", "label": "Ứng dụng tính hướng đất âm của rễ cây" },
+        { "id": "opt-c", "label": "Ứng dụng tính hướng hóa âm của hoa" },
+        { "id": "opt-d", "label": "Ứng dụng hiện tượng cụp lá của thể gối" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Tua cuốn của cây họ bầu bí có đặc tính bám quấn chặt khi tiếp xúc với cọc giàn." },
+      { "level": 2, "text": "Đó là phản ứng sinh trưởng định hướng khi có sự va chạm cơ học (tính hướng tiếp xúc)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định biện pháp kỹ thuật", "body": "Biện pháp làm giàn cọc cho cây họ bầu bí thân leo." },
+      { "kind": "knowledge", "title": "Tính hướng tiếp xúc", "body": "Làm giàn tận dụng tính hướng tiếp xúc của tua cuốn, giúp cây leo lên cao đón nhận ánh sáng mặt trời tốt hơn." },
+      { "kind": "answer", "title": "Kết luận", "body": "Ứng dụng tính hướng tiếp xúc của thân leo và tua cuốn." }
+    ],
+    "finalSolution": "Làm giàn leo là ứng dụng tính hướng tiếp xúc giúp cây bầu, bí, mướp bám vững và vươn cao quang hợp.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm tính hướng tiếp xúc với tính hướng hóa." }
+    ]
+  },
+  {
+    "id": "bio-g7-b14-q02",
+    "lessonId": "bio-g7-b14",
+    "sgkBaiSo": 34,
+    "skillIds": ["bio-ung-dung-cam-ung-tap-tinh"],
+    "difficulty": 1,
+    "prompt": "Biện pháp thắp đèn điện vào ban đêm cho vườn hoa cúc hoặc vườn thanh long trong nông nghiệp dựa trên cơ sở khoa học nào?",
+    "knowledge": ["kb-bio-g7-huong-dong-thuc-vat", "kb-bio-g7-ung-dung-tap-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Ứng dụng cảm ứng với ánh sáng (quang chu kì) để điều khiển thời điểm ra hoa theo ý muốn con người" },
+        { "id": "opt-b", "label": "Để sưởi ấm rễ cây thanh long không bị thối nhũn" },
+        { "id": "opt-c", "label": "Để dẫn dụ côn trùng vào ăn hết lá già của cây" },
+        { "id": "opt-d", "label": "Để ngăn cản hoàn toàn quá trình thoát hơi nước qua khí khổng" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Ánh sáng nhân tạo giúp kéo dài thời gian chiếu sáng trong ngày cho cây." },
+      { "level": 2, "text": "Thời gian chiếu sáng tác động trực tiếp đến sự phân hóa mầm hoa và nở hoa của cây trồng." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích tác động ánh sáng", "body": "Thắp đèn ban đêm nhằm thay đổi thời gian chiếu sáng tác động lên cây." },
+      { "kind": "knowledge", "title": "Cảm ứng quang chu kì", "body": "Ánh sáng điều khiển cảm ứng ra hoa của cây ngày dài (thanh long ra hoa trái vụ) hoặc kìm hãm cúc nở sớm để kịp bán Tết." },
+      { "kind": "answer", "title": "Kết luận", "body": "Ứng dụng cảm ứng với ánh sáng (quang chu kì) để điều khiển thời điểm ra hoa theo ý muốn con người." }
+    ],
+    "finalSolution": "Thắp đèn ban đêm là ứng dụng cảm ứng với ánh sáng nhằm chủ động điều khiển quá trình ra hoa của thanh long và hoa cúc.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng thắp đèn chỉ đơn thuần là để người nông dân đi tưới cây ban đêm." }
+    ]
+  },
+  {
+    "id": "bio-g7-b14-q03",
+    "lessonId": "bio-g7-b14",
+    "sgkBaiSo": 34,
+    "skillIds": ["bio-ung-dung-cam-ung-tap-tinh"],
+    "difficulty": 2,
+    "prompt": "Khi bón phân cho cây ăn quả thân gỗ (như cam, bưởi, nhãn), người nông dân thường đào rãnh bón phân xung quanh mép tán lá thay vì bón trực tiếp sát gốc cây. Biện pháp này dựa trên cơ sở gì?",
+    "knowledge": ["kb-bio-g7-huong-dong-thuc-vat", "kb-bio-g7-ung-dung-tap-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Ứng dụng tính hướng nước và hướng hóa dương kích thích hệ rễ non vươn rộng ra xung quanh hấp thụ dinh dưỡng" },
+        { "id": "opt-b", "label": "Để phân bón không bị ánh nắng mặt trời thiêu đốt bay hơi" },
+        { "id": "opt-c", "label": "Để kích thích thân cây sinh trưởng uốn cong thành hình tròn uốn lượn" },
+        { "id": "opt-d", "label": "Để ngăn cản không cho rễ cây tiếp xúc với nước ngầm" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Rễ cây sinh trưởng hướng về phía có nguồn chất dinh dưỡng và nước (hướng hóa và hướng nước dương)." },
+      { "level": 2, "text": "Khu vực mép tán lá là nơi phân bố nhiều đầu rễ tơ hút dinh dưỡng nhất." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Hiểu kỹ thuật bón phân", "body": "Đào rãnh bón phân vòng quanh mép hình chiếu tán lá cây ăn quả." },
+      { "kind": "knowledge", "title": "Tính hướng hóa và hướng nước", "body": "Rễ cây có tính hướng hóa dương, bón quanh mép tán kích thích rễ tơ phát triển lan rộng, tăng khả năng hút khoáng và đứng vững." },
+      { "kind": "answer", "title": "Kết luận", "body": "Ứng dụng tính hướng nước và hướng hóa dương kích thích hệ rễ non vươn rộng ra xung quanh hấp thụ dinh dưỡng." }
+    ],
+    "finalSolution": "Bón phân theo mép tán ứng dụng tính hướng hóa dương, kích thích rễ cây ăn sâu và lan rộng tìm dinh dưỡng.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhiều người nghĩ bón sát gốc là tốt nhất, nhưng sát gốc chỉ có rễ già không có rễ tơ hút khoáng và dễ gây xót rễ." }
+    ]
+  },
+  {
+    "id": "bio-g7-b14-q04",
+    "lessonId": "bio-g7-b14",
+    "sgkBaiSo": 34,
+    "skillIds": ["bio-ung-dung-cam-ung-tap-tinh"],
+    "difficulty": 1,
+    "prompt": "Trong chăn nuôi gia súc, gia cầm, người nông dân thường kết hợp tiếng gõ kẻng hoặc huýt sáo mỗi khi cho ăn nhằm hình thành:",
+    "knowledge": ["kb-bio-g7-phan-loai-tap-tinh", "kb-bio-g7-ung-dung-tap-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tập tính học được (phản xạ có điều kiện) giúp đàn vật nuôi tập trung ăn và về chuồng nhanh chóng" },
+        { "id": "opt-b", "label": "Tập tính bẩm sinh di truyền vĩnh viễn qua nhiều thế hệ đời sau" },
+        { "id": "opt-c", "label": "Bản năng hung dữ để xua đuổi các loài thú ăn thịt" },
+        { "id": "opt-d", "label": "Sự thay đổi hoàn toàn hệ gen của vật nuôi" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Tiếng kẻng hay huýt sáo ban đầu là kích thích trung tính, sau khi lặp lại cùng thức ăn sẽ trở thành tín hiệu báo hiệu bữa ăn." },
+      { "level": 2, "text": "Đây là phản xạ có điều kiện (tập tính học được) giúp người nuôi dễ dàng quản lý đàn." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích kỹ thuật chăn nuôi", "body": "Tạo mối liên hệ giữa tín hiệu âm thanh và hành vi ăn uống của vật nuôi." },
+      { "kind": "knowledge", "title": "Huấn luyện phản xạ có điều kiện", "body": "Lặp lại âm thanh đi kèm thức ăn tạo thành tập tính học được giúp vật nuôi tự giác tập trung ăn uống và về chuồng." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tập tính học được (phản xạ có điều kiện) giúp đàn vật nuôi tập trung ăn và về chuồng nhanh chóng." }
+    ],
+    "finalSolution": "Gõ kẻng hoặc huýt sáo khi cho ăn tạo thành tập tính học được giúp vật nuôi nghe hiệu lệnh là tập trung về chuồng.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Cho rằng phản xạ nghe tiếng kẻng là bẩm sinh di truyền của con vật từ trong trứng." }
+    ]
+  },
+  {
+    "id": "bio-g7-b14-q05",
+    "lessonId": "bio-g7-b14",
+    "sgkBaiSo": 34,
+    "skillIds": ["bio-ung-dung-cam-ung-tap-tinh"],
+    "difficulty": 1,
+    "prompt": "Người nông dân dùng bẫy đèn vào ban đêm trên cánh đồng để diệt rầy nâu, sâu đục thân bướm hại lúa là dựa vào đặc tính nào của côn trùng?",
+    "knowledge": ["kb-bio-g7-ung-dung-tap-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tập tính bẩm sinh tính hướng sáng của nhiều loài côn trùng hoạt động ban đêm" },
+        { "id": "opt-b", "label": "Tập tính học được do người nông dân dạy cho côn trùng" },
+        { "id": "opt-c", "label": "Tính hướng nước âm của cánh bướm" },
+        { "id": "opt-d", "label": "Tập tính bảo vệ lãnh thổ của rầy nâu" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Nhiều loài sâu bọ, thiêu thân, bướm đêm khi thấy ánh đèn sáng thì lao tới." },
+      { "level": 2, "text": "Đó là tập tính bản năng bẩm sinh bị thu hút bởi nguồn sáng (tính hướng sáng)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích phương pháp bẫy đèn", "body": "Giải thích tại sao côn trùng bay vào bẫy đèn bắt sâu ban đêm." },
+      { "kind": "knowledge", "title": "Tập tính hướng sáng của côn trùng", "body": "Côn trùng đêm có tập tính bẩm sinh bị thu hút bởi ánh sáng, bẫy đèn tiêu diệt chúng hiệu quả mà không dùng hóa chất trừ sâu." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tập tính bẩm sinh tính hướng sáng của nhiều loài côn trùng hoạt động ban đêm." }
+    ],
+    "finalSolution": "Bẫy đèn tận dụng tập tính bẩm sinh hướng sáng của côn trùng hại lúa để tiêu diệt chúng an toàn sinh học.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nghĩ rằng bẫy đèn tỏa mùi thức ăn dẫn dụ thay vì bản năng hướng sáng." }
+    ]
+  },
+  {
+    "id": "bio-g7-b14-q06",
+    "lessonId": "bio-g7-b14",
+    "sgkBaiSo": 34,
+    "skillIds": ["bio-ung-dung-cam-ung-tap-tinh"],
+    "difficulty": 2,
+    "prompt": "Việc lực lượng công an, hải quan sử dụng chó nghiệp vụ để phát hiện ma túy, chất nổ giấu trong hành lý là ứng dụng của:",
+    "knowledge": ["kb-bio-g7-phan-loai-tap-tinh", "kb-bio-g7-ung-dung-tap-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Tập tính học được thông qua quá trình huấn luyện kiên trì kết hợp khứu giác nhạy bén của chó" },
+        { "id": "opt-b", "label": "Tập tính bẩm sinh tự nhiên của tất cả loài chó sinh ra đều tự biết ngửi ma túy" },
+        { "id": "opt-c", "label": "Sự biến đổi hệ gen di truyền qua thụ tinh nhân tạo" },
+        { "id": "opt-d", "label": "Hiện tượng cảm ứng hướng tiếp xúc cơ học ở móng vuốt" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Một chú chó bình thường nếu không được huấn luyện có biết chỉ điểm gói ma túy không?" },
+      { "level": 2, "text": "Phải trải qua quá trình huấn luyện nghiêm ngặt, rèn luyện kỹ năng phân biệt mùi (tập tính học được)." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích năng lực của chó nghiệp vụ", "body": "Xác định nguồn gốc khả năng phát hiện tang vật của chó cảnh sát." },
+      { "kind": "knowledge", "title": "Huấn luyện tập tính học được", "body": "Dựa trên khứu giác tinh nhạy bẩm sinh, huấn luyện viên tạo thành phản xạ có điều kiện (tập tính học được) giúp chó nhận diện mùi đặc biệt." },
+      { "kind": "answer", "title": "Kết luận", "body": "Tập tính học được thông qua quá trình huấn luyện kiên trì kết hợp khứu giác nhạy bén của chó." }
+    ],
+    "finalSolution": "Chó nghiệp vụ phát hiện chất cấm là nhờ tập tính học được được tôi luyện qua các khóa huấn luyện chuyên sâu.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nhầm tưởng chó sinh ra tự nhiên đã có phản xạ sủa báo hiệu ma túy." }
+    ]
+  },
+  {
+    "id": "bio-g7-b14-q07",
+    "lessonId": "bio-g7-b14",
+    "sgkBaiSo": 34,
+    "skillIds": ["bio-ung-dung-cam-ung-tap-tinh"],
+    "difficulty": 1,
+    "prompt": "Hành vi nào sau đây là thói quen tốt (tập tính học được có lợi) mà học sinh THCS cần kiên trì xây dựng mỗi ngày?",
+    "knowledge": ["kb-bio-g7-ung-dung-tap-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Rửa tay bằng xà phòng trước khi ăn, sau khi đi vệ sinh và duy trì thói quen đọc sách, tập thể dục" },
+        { "id": "opt-b", "label": "Thức thật khuya lướt mạng xã hội rồi ngủ bù đến trưa hôm sau" },
+        { "id": "opt-c", "label": "Ăn thật nhiều đồ chiên rán cay nóng và uống nước ngọt có ga thay nước lọc" },
+        { "id": "opt-d", "label": "Vừa ăn cơm vừa chăm chú nhìn màn hình điện thoại chơi game" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Tìm phương án bảo vệ sức khỏe, thể chất và nâng cao tinh thần học tập lành mạnh." },
+      { "level": 2, "text": "Rửa tay xà phòng ngăn ngừa bệnh đường ruột; đọc sách và tập thể dục giúp phát triển trí tuệ và cơ thể." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Xác định thói quen có lợi", "body": "Tìm hành vi có ý nghĩa tích cực đối với sức khỏe và sự phát triển của học sinh." },
+      { "kind": "knowledge", "title": "Rèn luyện tập tính tốt ở người", "body": "Thói quen vệ sinh, vận động và học tập là các tập tính học được cần duy trì đều đặn để bảo vệ sức khỏe." },
+      { "kind": "answer", "title": "Kết luận", "body": "Rửa tay bằng xà phòng trước khi ăn, sau khi đi vệ sinh và duy trì thói quen đọc sách, tập thể dục." }
+    ],
+    "finalSolution": "Rửa tay xà phòng, đọc sách và tập thể dục là những thói quen tốt cần được rèn luyện hàng ngày.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Coi nhẹ thói quen rửa tay bằng xà phòng trong phòng ngừa dịch bệnh truyền nhiễm." }
+    ]
+  },
+  {
+    "id": "bio-g7-b14-q08",
+    "lessonId": "bio-g7-b14",
+    "sgkBaiSo": 34,
+    "skillIds": ["bio-ung-dung-cam-ung-tap-tinh"],
+    "difficulty": 2,
+    "prompt": "Muốn từ bỏ một thói quen xấu (như tật cắn móng tay hoặc trì hoãn việc học) và hình thành một thói quen tốt mới, nguyên tắc khoa học hiệu quả nhất là gì?",
+    "knowledge": ["kb-bio-g7-ung-dung-tap-tinh", "kb-bio-g7-phan-loai-tap-tinh"],
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        { "id": "opt-a", "label": "Kiên trì lặp đi lặp lại hành động tốt mới nhiều lần trong thời gian đủ dài để hình thành phản xạ thần kinh bền vững thay thế" },
+        { "id": "opt-b", "label": "Chỉ cần quyết tâm trong một ngày duy nhất rồi sau đó bỏ mặc tự nhiên" },
+        { "id": "opt-c", "label": "Uống các loại thuốc an thần để ức chế toàn bộ hoạt động của hệ thần kinh" },
+        { "id": "opt-d", "label": "Thay đổi môi trường sống liên tục mỗi tuần một nơi để não không kịp ghi nhớ" }
+      ],
+      "correctId": "opt-a"
+    },
+    "hints": [
+      { "level": 1, "text": "Tập tính học được hình thành dựa trên việc lặp lại liên tục kích thích và phản ứng." },
+      { "level": 2, "text": "Đường liên hệ thần kinh tạm thời cần có thời gian và sự kiên trì luyện tập để củng cố bền vững." }
+    ],
+    "steps": [
+      { "kind": "identify", "title": "Phân tích cơ chế thần kinh", "body": "Xác định nguyên lý hình thành và xóa bỏ phản xạ có điều kiện ở người." },
+      { "kind": "knowledge", "title": "Cơ chế tạo lập thói quen", "body": "Lặp lại hành động tích cực liên tục tạo nên cung phản xạ thần kinh vững chắc, dần dần ức chế và thay thế thói quen cũ." },
+      { "kind": "answer", "title": "Kết luận", "body": "Kiên trì lặp đi lặp lại hành động tốt mới nhiều lần trong thời gian đủ dài để hình thành phản xạ thần kinh bền vững thay thế." }
+    ],
+    "finalSolution": "Muốn tạo thói quen tốt phải kiên trì lặp đi lặp lại hành động trong thời gian đủ dài để tạo phản xạ thần kinh bền vững.",
+    "commonMistakes": [
+      { "id": "cm-01", "message": "Nôn nóng muốn thay đổi ngay sau 1-2 ngày mà không duy trì được tính liên tục." }
+    ]
+  }
+]
