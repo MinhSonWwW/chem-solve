@@ -75,5 +75,41 @@ describe('Exercise Generators Validation', () => {
       expect(ex.id).toBeDefined();
     });
   });
+
+  it('generates valid Grade 9 Biology exercises (Mendel, DNA, Chromosomes)', async () => {
+    const {
+      generateMendelInheritanceExercise,
+      generateMolecularDnaExercise,
+      generateCellDivisionChromosomeExercise,
+      generateBiologyDynamicExercises,
+    } = await import('./biologyGenerators');
+
+    const mendelEx = generateMendelInheritanceExercise('test-mendel');
+    expect(mendelEx.answer.kind).toBe('number');
+    expect(mendelEx.hints.length).toBeGreaterThanOrEqual(2);
+    expect(mendelEx.steps.length).toBeGreaterThanOrEqual(3);
+
+    const dnaEx = generateMolecularDnaExercise('test-dna');
+    expect(dnaEx.answer.kind).toBe('number');
+    expect(dnaEx.hints.length).toBeGreaterThanOrEqual(2);
+    expect(dnaEx.steps.length).toBeGreaterThanOrEqual(3);
+
+    const chromoEx = generateCellDivisionChromosomeExercise('test-chromo');
+    expect(chromoEx.answer.kind).toBe('number');
+    expect(chromoEx.hints.length).toBeGreaterThanOrEqual(2);
+    expect(chromoEx.steps.length).toBeGreaterThanOrEqual(3);
+
+    const mendelPack = generateBiologyDynamicExercises('bio-gen-mendel');
+    expect(mendelPack.length).toBe(5);
+
+    const dnaPack = generateBiologyDynamicExercises('bio-gen-dna');
+    expect(dnaPack.length).toBe(5);
+
+    const chromoPack = generateBiologyDynamicExercises('bio-gen-chromosomes');
+    expect(chromoPack.length).toBe(5);
+
+    const infinitePack = generateBiologyDynamicExercises('bio-gen-infinite');
+    expect(infinitePack.length).toBe(5);
+  });
 });
 

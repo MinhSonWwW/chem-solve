@@ -4,3 +4,4 @@ export * from './gasDensityGenerator';
 export * from './solutionConcentrationGenerator';
 export * from './stoichiometryGenerator';
 export * from './physicsGenerators';
+export * from './biologyGenerators';
