@@ -4,6 +4,7 @@ import {
   BookOpen,
   FlaskConical,
   Zap,
+  Dna,
   BarChart3,
   User,
   ShoppingBag,
@@ -55,11 +56,15 @@ export const DesktopSidebar: React.FC = () => {
             className={`w-10 h-10 rounded-2xl flex items-center justify-center font-black text-white text-base overflow-hidden border group-hover:scale-105 transition-transform ${
               activeSubject === 'physics'
                 ? 'bg-[#eab308] border-amber-300/50 shadow-[0_4px_0_0_#ca8a04]'
+                : activeSubject === 'bio'
+                ? 'bg-[#10b981] border-emerald-300/50 shadow-[0_4px_0_0_#059669]'
                 : 'bg-[#0ea5e9] border-sky-300/40 shadow-[0_4px_0_0_#0284c7]'
             }`}
           >
             {activeSubject === 'physics' ? (
               <Zap className="w-6 h-6 text-slate-950 fill-slate-950" />
+            ) : activeSubject === 'bio' ? (
+              <span className="text-xl select-none">🌿</span>
             ) : (
               <img
                 src={assetUrl('/assets/mascot/atom-idle.png')}
@@ -77,6 +82,10 @@ export const DesktopSidebar: React.FC = () => {
                 <>
                   PHY<span className="text-[#eab308]">-SOLVE</span>
                 </>
+              ) : activeSubject === 'bio' ? (
+                <>
+                  BIO<span className="text-[#10b981]">-SOLVE</span>
+                </>
               ) : (
                 <>
                   CHEM<span className="text-[#0ea5e9]">-SOLVE</span>
@@ -84,7 +93,11 @@ export const DesktopSidebar: React.FC = () => {
               )}
             </span>
             <span className="text-[10px] font-bold text-slate-400 tracking-wider uppercase">
-              {activeSubject === 'physics' ? 'Vật lý Lớp 6-9 KNTT' : 'Hóa học THCS'}
+              {activeSubject === 'physics'
+                ? 'Vật lý Lớp 6-9 KNTT'
+                : activeSubject === 'bio'
+                ? 'Sinh học Lớp 6-8 KNTT'
+                : 'Hóa học THCS'}
             </span>
           </div>
         </NavLink>
@@ -96,9 +109,13 @@ export const DesktopSidebar: React.FC = () => {
             setShowSubjectModal(true);
           }}
           className={`w-full flex items-center justify-between p-2.5 rounded-2xl bg-[#18272f] border-2 transition-all text-left shadow-[0_3px_0_0_#101a1f] cursor-pointer group ${
-            activeSubject === 'physics' ? 'border-amber-500/40 hover:border-amber-400' : 'border-[#2e4756] hover:border-sky-500/60'
+            activeSubject === 'physics'
+              ? 'border-amber-500/40 hover:border-amber-400'
+              : activeSubject === 'bio'
+              ? 'border-emerald-500/40 hover:border-emerald-400'
+              : 'border-[#2e4756] hover:border-sky-500/60'
           }`}
-          title="Chọn môn học (Hóa học, Vật lý...)"
+          title="Chọn môn học (Hóa học, Vật lý, Sinh học...)"
         >
           <div className="flex items-center gap-2.5 min-w-0">
             <span className="text-xl shrink-0">{currentSub.icon}</span>
@@ -125,17 +142,30 @@ export const DesktopSidebar: React.FC = () => {
         {/* 2. Navigation List */}
         <nav className="space-y-1.5">
           {NAV_ITEMS.map((item) => {
-            // For Physics, replace chemistry flask with lightning bolt icon
-            const Icon = (item.to === '/practice' && activeSubject === 'physics') ? Zap : item.icon;
+            // For Physics & Bio, replace chemistry flask icon
+            const Icon =
+              item.to === '/practice' && activeSubject === 'physics'
+                ? Zap
+                : item.to === '/practice' && activeSubject === 'bio'
+                ? Dna
+                : item.icon;
             const isActive = item.matchPrefix
               ? location.pathname.startsWith(item.matchPrefix)
               : location.pathname === item.to;
 
-            const activeColorClass = activeSubject === 'physics'
-              ? 'bg-[#eab308]/15 border-[#eab308] text-amber-300 shadow-[0_4px_0_0_#ca8a04]'
-              : 'bg-[#0ea5e9]/15 border-[#0ea5e9] text-[#38bdf8] shadow-[0_4px_0_0_#0284c7]';
+            const activeColorClass =
+              activeSubject === 'physics'
+                ? 'bg-[#eab308]/15 border-[#eab308] text-amber-300 shadow-[0_4px_0_0_#ca8a04]'
+                : activeSubject === 'bio'
+                ? 'bg-[#10b981]/15 border-[#10b981] text-emerald-300 shadow-[0_4px_0_0_#059669]'
+                : 'bg-[#0ea5e9]/15 border-[#0ea5e9] text-[#38bdf8] shadow-[0_4px_0_0_#0284c7]';
 
-            const activeIconColor = activeSubject === 'physics' ? 'text-[#eab308]' : 'text-[#0ea5e9]';
+            const activeIconColor =
+              activeSubject === 'physics'
+                ? 'text-[#eab308]'
+                : activeSubject === 'bio'
+                ? 'text-[#10b981]'
+                : 'text-[#0ea5e9]';
 
             return (
               <NavLink

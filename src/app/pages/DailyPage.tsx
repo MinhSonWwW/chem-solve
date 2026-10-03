@@ -14,7 +14,10 @@ import {
 import { useUserStore } from '@/features/gamification/useUserStore';
 import { Button, Streak, CurrencyIcon } from '@/design-system';
 import { sound } from '@/lib/audio';
+import { useActiveSubject } from '@/content/subjects';
 import trueFalseData from '@/content/kb/true-false-statements.json';
+import physicsTrueFalseData from '@/content/kb/physics/true-false-statements.json';
+import biologyTrueFalseData from '@/content/kb/biology/true-false-statements.json';
 
 // Simple pseudo-random generator seeded by integer
 function seededRandom(seed: number) {
@@ -25,6 +28,7 @@ function seededRandom(seed: number) {
 export const DailyPage: React.FC = () => {
   const navigate = useNavigate();
   const { streak, addXp, incrementStreak } = useUserStore();
+  const { subject: activeSubject } = useActiveSubject();
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentQIndex, setCurrentQIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -32,7 +36,7 @@ export const DailyPage: React.FC = () => {
   const [isFinished, setIsFinished] = useState(false);
 
   const todayStr = useMemo(() => new Date().toISOString().slice(0, 10), []);
-  const storageKey = `chem_daily_${todayStr}`;
+  const storageKey = `daily_${activeSubject}_${todayStr}`;
 
   const [alreadyCompleted, setAlreadyCompleted] = useState(false);
 
@@ -46,7 +50,12 @@ export const DailyPage: React.FC = () => {
   // Deterministic 5 questions for today using date as seed
   const dailyQuestions = useMemo(() => {
     let seedNum = todayStr.split('-').reduce((acc, part) => acc * 31 + parseInt(part, 10), 7);
-    const pool = [...trueFalseData];
+    const pool =
+      activeSubject === 'bio'
+        ? [...biologyTrueFalseData]
+        : activeSubject === 'physics'
+        ? [...physicsTrueFalseData]
+        : [...trueFalseData];
     const picked: typeof pool = [];
 
     for (let i = 0; i < 5; i++) {
@@ -54,7 +63,7 @@ export const DailyPage: React.FC = () => {
       picked.push(pool.splice(idx, 1)[0]);
     }
     return picked;
-  }, [todayStr]);
+  }, [todayStr, activeSubject]);
 
   const currentQ = dailyQuestions[currentQIndex] || dailyQuestions[0];
 
@@ -131,7 +140,7 @@ export const DailyPage: React.FC = () => {
 
           <div>
             <h2 className="text-base font-extrabold text-slate-100">
-              Chủ đề hôm nay: Thử thách Hóa học tổng hợp
+              Chủ đề hôm nay: Thử thách {activeSubject === 'physics' ? 'Vật lý' : activeSubject === 'bio' ? 'Sinh học' : 'Hóa học'} tổng hợp
             </h2>
             <div className="flex items-center gap-1.5 text-xs text-slate-400 mt-1">
               <span>Phần thưởng:</span>

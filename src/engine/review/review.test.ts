@@ -172,5 +172,16 @@ describe('Review & Personalization Engine (M7)', () => {
       expect(results.skills.some((s) => s.name.toLowerCase().includes('mol'))).toBe(true);
       expect(results.lessons.some((l) => l.title.toLowerCase().includes('mol'))).toBe(true);
     });
+
+    it('searches Grade 9 biology lessons matching mendel, dna, and nguyen phan', () => {
+      const mendelRes = searchChemicalData('mendel');
+      expect(mendelRes.lessons.some((l) => l.grade === 9 && l.title.toLowerCase().includes('mendel'))).toBe(true);
+
+      const dnaRes = searchChemicalData('dna');
+      expect(dnaRes.lessons.some((l) => l.grade === 9 && l.title.toLowerCase().includes('nucleic acid'))).toBe(true);
+
+      const mitosisRes = searchChemicalData('nguyên phân');
+      expect(mitosisRes.lessons.some((l) => l.grade === 9 && l.title.toLowerCase().includes('nguyên phân'))).toBe(true);
+    });
   });
 });

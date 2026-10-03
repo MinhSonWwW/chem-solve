@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback, useMemo } from 'react';
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Sparkles, FlaskConical, Heart as HeartIcon, Zap } from 'lucide-react';
+import { X, Sparkles, FlaskConical, Heart as HeartIcon, Zap, Dna } from 'lucide-react';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import {
   Button,
@@ -30,6 +30,8 @@ import {
   PhysicsVisualizer,
   type PhysicsVisualizerMode,
   type PhysicsEffectData,
+  BiologyVisualizer,
+  type BiologyVisualizerMode,
 } from '@/design-system';
 import { sound } from '@/lib/audio';
 import { loadExercisesForNode } from '@/content/contentLoader';
@@ -59,9 +61,18 @@ const PHYSICS_TRIVIA = [
   'Nhiệt độ thấp nhất trên thang Kelvin là Độ không tuyệt đối (0 K hay -273,15 °C), nơi mọi chuyển động nhiệt ngừng lại.',
 ];
 
-const ChemicalLoadingScreen: React.FC<{ isPhysics?: boolean }> = ({ isPhysics }) => {
+const BIOLOGY_TRIVIA = [
+  'Tổng chiều dài các mạch máu trong cơ thể một người trưởng thành lên tới gần 100 000 km — đủ quấn quanh Trái Đất hơn 2 vòng!',
+  'Mỗi ngày tim người đập khoảng 100 000 lần và bơm khoảng 7 500 lít máu đi khắp cơ thể không ngừng nghỉ.',
+  'Diện tích bề mặt trao đổi khí của hàng triệu phế nang trong hai lá phổi người trải rộng tới khoảng 70 - 80 m² (bằng một sân cầu lông)!',
+  'Nephron là đơn vị chức năng của thận. Mỗi quả thận chứa khoảng 1 triệu nephron để lọc khoảng 1 400 lít máu mỗi ngày.',
+  'Nhóm máu O là nhóm máu chuyên cho trong hệ ABO vì trên màng tế bào hồng cầu không chứa kháng nguyên A hay B.',
+  'Trong hệ sinh thái, năng lượng hao hụt khoảng 90% qua mỗi bậc dinh dưỡng và chỉ có khoảng 10% được chuyển lên bậc kế tiếp.',
+];
+
+const ChemicalLoadingScreen: React.FC<{ isPhysics?: boolean; isBio?: boolean }> = ({ isPhysics, isBio }) => {
   const [triviaIndex, setTriviaIndex] = useState(0);
-  const triviaList = isPhysics ? PHYSICS_TRIVIA : CHEMISTRY_TRIVIA;
+  const triviaList = isPhysics ? PHYSICS_TRIVIA : isBio ? BIOLOGY_TRIVIA : CHEMISTRY_TRIVIA;
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -73,62 +84,98 @@ const ChemicalLoadingScreen: React.FC<{ isPhysics?: boolean }> = ({ isPhysics })
   return (
     <div className="flex flex-col items-center justify-center min-h-[82dvh] px-4 select-none">
       <div className="max-w-sm w-full flex flex-col items-center text-center space-y-6">
-        {/* Animated laboratory flask with bubbling effect */}
+        {/* Animated aura & icon container */}
         <div className="relative w-24 h-24 flex items-center justify-center">
           {/* Outer glowing aura */}
-          <div className="absolute inset-0 rounded-full bg-cyan-500/15 blur-xl animate-pulse" />
+          <div
+            className={`absolute inset-0 rounded-full blur-xl animate-pulse ${
+              isPhysics
+                ? 'bg-amber-500/20'
+                : isBio
+                ? 'bg-emerald-500/20'
+                : 'bg-cyan-500/15'
+            }`}
+          />
 
-          {/* Flask container */}
-          <div className="relative w-20 h-20 rounded-3xl bg-[#131f24] border-2 border-cyan-400/50 shadow-[0_6px_0_0_#0284c7] flex items-center justify-center overflow-hidden">
-            {/* Liquid level */}
-            <div className="absolute bottom-0 inset-x-0 h-11 bg-gradient-to-t from-cyan-500/40 to-teal-400/20 border-t border-cyan-400/50" />
-
-            {/* Rising bubbling particles */}
-            <motion.div
-              animate={{ y: [16, -18], opacity: [0, 1, 0], scale: [0.6, 1.2, 0.8] }}
-              transition={{ repeat: Infinity, duration: 1.4, ease: 'easeOut' }}
-              className="absolute w-2.5 h-2.5 rounded-full bg-cyan-300 shadow-sm"
-              style={{ left: '35%' }}
-            />
-            <motion.div
-              animate={{ y: [18, -20], opacity: [0, 1, 0], scale: [0.5, 1, 0.7] }}
-              transition={{ repeat: Infinity, duration: 1.8, delay: 0.4, ease: 'easeOut' }}
-              className="absolute w-2 h-2 rounded-full bg-teal-200 shadow-sm"
-              style={{ left: '55%' }}
-            />
-            <motion.div
-              animate={{ y: [14, -16], opacity: [0, 1, 0], scale: [0.4, 0.9, 0.5] }}
-              transition={{ repeat: Infinity, duration: 1.2, delay: 0.7, ease: 'easeOut' }}
-              className="absolute w-1.5 h-1.5 rounded-full bg-sky-200 shadow-sm"
-              style={{ left: '46%' }}
-            />
-
-            <FlaskConical className="w-10 h-10 text-cyan-400 drop-shadow-md z-10 animate-bounce duration-1000" />
+          {/* Icon Container */}
+          <div
+            className={`relative w-20 h-20 rounded-3xl bg-[#131f24] border-2 shadow-[0_6px_0_0_#131f24] flex items-center justify-center overflow-hidden ${
+              isPhysics
+                ? 'border-amber-400/50 shadow-amber-950'
+                : isBio
+                ? 'border-emerald-400/50 shadow-emerald-950'
+                : 'border-cyan-400/50 shadow-[#0284c7]'
+            }`}
+          >
+            {isPhysics ? (
+              <Zap className="w-10 h-10 text-amber-400 drop-shadow-md z-10 animate-bounce duration-1000 fill-amber-400" />
+            ) : isBio ? (
+              <Dna className="w-10 h-10 text-emerald-400 drop-shadow-md z-10 animate-spin duration-[4000ms]" />
+            ) : (
+              <>
+                <div className="absolute bottom-0 inset-x-0 h-11 bg-gradient-to-t from-cyan-500/40 to-teal-400/20 border-t border-cyan-400/50" />
+                <motion.div
+                  animate={{ y: [16, -18], opacity: [0, 1, 0], scale: [0.6, 1.2, 0.8] }}
+                  transition={{ repeat: Infinity, duration: 1.4, ease: 'easeOut' }}
+                  className="absolute w-2.5 h-2.5 rounded-full bg-cyan-300 shadow-sm"
+                  style={{ left: '35%' }}
+                />
+                <FlaskConical className="w-10 h-10 text-cyan-400 drop-shadow-md z-10 animate-bounce duration-1000" />
+              </>
+            )}
           </div>
         </div>
 
         {/* Loading text & progress bar */}
         <div className="space-y-2 w-full max-w-xs">
           <div className="flex items-center justify-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
+            <span
+              className={`w-2 h-2 rounded-full animate-ping ${
+                isPhysics ? 'bg-amber-400' : isBio ? 'bg-emerald-400' : 'bg-cyan-400'
+              }`}
+            />
             <span className="text-sm font-black text-slate-200 tracking-wide">
-              {isPhysics ? 'Đang chuẩn bị dụng cụ thí nghiệm…' : 'Đang chuẩn bị phòng thí nghiệm…'}
+              {isPhysics
+                ? 'Đang chuẩn bị dụng cụ thí nghiệm…'
+                : isBio
+                ? 'Đang chuẩn bị tiêu bản & quan sát sinh học…'
+                : 'Đang chuẩn bị phòng thí nghiệm…'}
             </span>
           </div>
           <div className="w-full h-2 rounded-full bg-[#131f24] border border-[#2e4756] overflow-hidden p-0.5">
             <motion.div
               animate={{ x: ['-100%', '100%'] }}
               transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }}
-              className="w-1/2 h-full rounded-full bg-gradient-to-r from-transparent via-cyan-400 to-transparent"
+              className={`w-1/2 h-full rounded-full bg-gradient-to-r ${
+                isPhysics
+                  ? 'from-transparent via-amber-400 to-transparent'
+                  : isBio
+                  ? 'from-transparent via-emerald-400 to-transparent'
+                  : 'from-transparent via-cyan-400 to-transparent'
+              }`}
             />
           </div>
         </div>
 
         {/* Trivia Flashcard */}
         <div className="w-full bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] rounded-2xl p-4 text-left relative overflow-hidden">
-          <div className="flex items-center gap-1.5 text-amber-400 text-[11px] font-black uppercase tracking-wider mb-1.5">
+          <div
+            className={`flex items-center gap-1.5 text-[11px] font-black uppercase tracking-wider mb-1.5 ${
+              isPhysics
+                ? 'text-amber-400'
+                : isBio
+                ? 'text-emerald-400'
+                : 'text-amber-400'
+            }`}
+          >
             <Sparkles className="w-3.5 h-3.5" />
-            <span>{isPhysics ? 'Góc khám phá Vật lý' : 'Góc khám phá Hóa học'}</span>
+            <span>
+              {isPhysics
+                ? 'Góc khám phá Vật lý'
+                : isBio
+                ? 'Góc khám phá Sinh học'
+                : 'Góc khám phá Hóa học'}
+            </span>
           </div>
           <p className="text-xs text-slate-300 leading-relaxed min-h-[36px]">
             {triviaList[triviaIndex]}
@@ -145,7 +192,8 @@ export const ExercisePage: React.FC = () => {
   const [searchParams] = useSearchParams();
   const isPracticeMode = searchParams.get('mode') === 'practice';
   const isPhysics = lessonId.startsWith('phy-');
-  const gradeNumber = lessonId.match(/(?:phy-)?g(\d)/)?.[1] ?? '8';
+  const isBio = lessonId.startsWith('bio-');
+  const gradeNumber = lessonId.match(/(?:phy-|bio-)?g(\d)/)?.[1] ?? '8';
 
   const {
     hearts: _hearts,
@@ -182,7 +230,7 @@ export const ExercisePage: React.FC = () => {
   // ── Load exercises & resume ──
   useEffect(() => {
     let cancelled = false;
-    setActiveSubject(isPhysics ? 'physics' : 'chem');
+    setActiveSubject(isBio ? 'bio' : isPhysics ? 'physics' : 'chem');
 
     async function init() {
       try {
@@ -456,6 +504,123 @@ export const ExercisePage: React.FC = () => {
     return undefined;
   }, [exercise?.prompt]);
 
+  // ── Biology Interactive Visualizer Mode ──
+  const biologyVisualMode = useMemo<BiologyVisualizerMode | null>(() => {
+    if (!isBio || !exercise) return null;
+    if (exercise.visual?.mode) {
+      return exercise.visual.mode as BiologyVisualizerMode;
+    }
+    const lid = exercise.lessonId;
+    const pLower = (exercise.prompt || '').toLowerCase();
+
+    // 1. Blood Transfusion (Bài 33: nhóm máu ABO, truyền máu, hồng cầu, ngưng kết)
+    if (
+      pLower.includes('nhóm máu') ||
+      pLower.includes('truyền máu') ||
+      pLower.includes('ngưng kết') ||
+      pLower.includes('kháng thể α') ||
+      pLower.includes('kháng thể β') ||
+      exercise.skillIds?.some((s) => s.includes('blood') || s.includes('truyen-mau'))
+    ) {
+      return 'blood-transfusion';
+    }
+
+    // 2. Circulation Loop & Heart (Bài 33: vòng tuần hoàn, tâm thất, tâm nhĩ, mao mạch)
+    if (
+      pLower.includes('vòng tuần hoàn') ||
+      pLower.includes('tâm thất') ||
+      pLower.includes('tâm nhĩ') ||
+      pLower.includes('động mạch chủ') ||
+      pLower.includes('tĩnh mạch') ||
+      exercise.skillIds?.some((s) => s.includes('circulation') || s.includes('tuan-hoan'))
+    ) {
+      return 'circulation-loop';
+    }
+
+    // 3. Energy Pyramid (Bài 44: tháp năng lượng, bậc dinh dưỡng, quy luật 10%)
+    if (
+      pLower.includes('tháp năng lượng') ||
+      pLower.includes('tháp sinh thái') ||
+      pLower.includes('bậc dinh dưỡng') ||
+      pLower.includes('hao hụt') ||
+      pLower.includes('10%') ||
+      exercise.skillIds?.some((s) => s.includes('he-sinh-thai') || s.includes('pyramid'))
+    ) {
+      return 'energy-pyramid';
+    }
+
+    // 4. Nephron Filtration (Bài 35: cầu thận, ống thận, nước tiểu đầu, nephron)
+    if (
+      pLower.includes('nephron') ||
+      pLower.includes('cầu thận') ||
+      pLower.includes('nước tiểu đầu') ||
+      pLower.includes('tái hấp thụ') ||
+      pLower.includes('bài tiết') ||
+      exercise.skillIds?.some((s) => s.includes('bai-tiet') || s.includes('nephron'))
+    ) {
+      return 'nephron-filtration';
+    }
+
+    // 5. Cell Structure (Bài 19, 20 Lớp 6 / Lớp 8 Bài 30: tế bào, lục lạp, nhân tế bào)
+    if (
+      pLower.includes('lục lạp') ||
+      pLower.includes('không bào') ||
+      pLower.includes('thành tế bào') ||
+      (lid.includes('b01') && pLower.includes('tế bào'))
+    ) {
+      return 'cell-structure';
+    }
+
+    // 6. Mendel Punnett Grid (Bài 36, 37: lai phân tích, mendel, punnett, dị hợp, đồng hợp, AaBb)
+    if (
+      pLower.includes('mendel') ||
+      pLower.includes('punnett') ||
+      pLower.includes('phép lai') ||
+      pLower.includes('lai phân tích') ||
+      pLower.includes('aabb') ||
+      pLower.includes('dị hợp') ||
+      pLower.includes('đồng hợp') ||
+      pLower.includes('tính trạng trội') ||
+      exercise.skillIds?.some((s) => s.includes('mendel'))
+    ) {
+      return 'mendel-punnett-grid';
+    }
+
+    // 7. DNA & Transcription Builder (Bài 38, 39, 40, 41: nucleic acid, dna, rna, phiên mã, dịch mã, codon)
+    if (
+      pLower.includes('dna') ||
+      pLower.includes('rna') ||
+      pLower.includes('nucleotide') ||
+      pLower.includes('tái bản') ||
+      pLower.includes('phiên mã') ||
+      pLower.includes('dịch mã') ||
+      pLower.includes('hydrogen') ||
+      pLower.includes('codon') ||
+      exercise.skillIds?.some((s) => s.includes('nucleic') || s.includes('tai-ban') || s.includes('dich-ma'))
+    ) {
+      return 'dna-transcription-builder';
+    }
+
+    // 8. Mitosis & Meiosis Scope (Bài 42, 43, 44, 46: nguyên phân, giảm phân, nhiễm sắc thể, chromatid, kì giữa)
+    if (
+      pLower.includes('nguyên phân') ||
+      pLower.includes('giảm phân') ||
+      pLower.includes('nhiễm sắc thể') ||
+      pLower.includes('chromatid') ||
+      pLower.includes('thoi phân bào') ||
+      pLower.includes('thoi vô sắc') ||
+      pLower.includes('kì giữa') ||
+      pLower.includes('kì sau') ||
+      pLower.includes('kì đầu') ||
+      pLower.includes('kì cuối') ||
+      exercise.skillIds?.some((s) => s.includes('nguyen-phan') || s.includes('nhiem-sac-the'))
+    ) {
+      return 'mitosis-meiosis-scope';
+    }
+
+    return null;
+  }, [isBio, exercise]);
+
   // ── Handlers ──
   const handleSetInput = useCallback(
     (value: unknown) => {
@@ -621,9 +786,9 @@ export const ExercisePage: React.FC = () => {
     );
   }
 
-  // ── Chemical Loading state ──
+  // ── Loading state ──
   if (loadingState === 'loading') {
-    return <ChemicalLoadingScreen isPhysics={isPhysics} />;
+    return <ChemicalLoadingScreen isPhysics={isPhysics} isBio={isBio} />;
   }
 
   // ── Error state ──
@@ -834,6 +999,18 @@ export const ExercisePage: React.FC = () => {
               initialValue={initialVisualValue}
               params={physicsParams}
             />
+          </motion.div>
+        )}
+
+        {/* Biology Interactive Visualizer Sandbox directly integrated into lesson */}
+        {biologyVisualMode && (
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+            className="pt-0.5"
+          >
+            <BiologyVisualizer mode={biologyVisualMode} />
           </motion.div>
         )}
 

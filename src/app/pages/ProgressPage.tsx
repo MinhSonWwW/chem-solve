@@ -19,6 +19,7 @@ import {
   Search,
   FlaskConical,
   Zap,
+  Dna,
 } from 'lucide-react';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import { getLevelInfo } from '@/config/gamification';
@@ -53,10 +54,44 @@ export const ProgressPage: React.FC = () => {
   const { xp, streak, completedNodes, achievements } = useUserStore();
   const { subject: activeSubject } = useActiveSubject();
   const isPhysics = activeSubject === 'physics';
+  const isBio = activeSubject === 'bio';
 
   // Grade selection (Duolingo Course switcher style)
-  const [selectedGrade, setSelectedGrade] = useState<Grade>(() => (isPhysics ? 9 : 8));
+  const [selectedGrade, setSelectedGrade] = useState<Grade>(() => {
+    const saved = typeof window !== 'undefined' ? localStorage.getItem('chem_active_grade') : null;
+    if (saved && ['6', '7', '8', '9'].includes(saved)) {
+      const g = parseInt(saved, 10) as Grade;
+      if (isBio && [6, 7, 8].includes(g)) return g;
+      if (isPhysics && [8, 9].includes(g)) return g;
+      if (!isBio && !isPhysics && [8, 9].includes(g)) return g;
+    }
+    return isBio ? 8 : isPhysics ? 9 : 8;
+  });
   const [leitnerCards, setLeitnerCards] = useState<LeitnerCard[]>([]);
+
+  useEffect(() => {
+    const saved = typeof window !== 'undefined' ? localStorage.getItem('chem_active_grade') : null;
+    const g = saved ? (parseInt(saved, 10) as Grade) : null;
+    if (activeSubject === 'bio') {
+      if (g && [6, 7, 8].includes(g)) {
+        setSelectedGrade(g);
+      } else {
+        setSelectedGrade(8);
+      }
+    } else if (activeSubject === 'physics') {
+      if (g && [8, 9].includes(g)) {
+        setSelectedGrade(g);
+      } else {
+        setSelectedGrade(9);
+      }
+    } else {
+      if (g && [8, 9].includes(g)) {
+        setSelectedGrade(g);
+      } else {
+        setSelectedGrade(8);
+      }
+    }
+  }, [activeSubject]);
 
   useEffect(() => {
     setLeitnerCards(loadStoredLeitnerCards());
@@ -96,9 +131,9 @@ export const ProgressPage: React.FC = () => {
   }, [allGradeLessons]);
 
   const completedGradeNodeEntries = useMemo(() => {
-    const prefix = isPhysics ? `phy-g${selectedGrade}-` : `g${selectedGrade}-`;
+    const prefix = isBio ? `bio-g${selectedGrade}-` : isPhysics ? `phy-g${selectedGrade}-` : `g${selectedGrade}-`;
     return Object.entries(completedNodes).filter(([key]) => key.startsWith(prefix));
-  }, [completedNodes, selectedGrade, isPhysics]);
+  }, [completedNodes, selectedGrade, isPhysics, isBio]);
 
   const completedGradeCount = completedGradeNodeEntries.length;
   const totalGradeNodeCount = allGradeNodes.length;
@@ -131,7 +166,7 @@ export const ProgressPage: React.FC = () => {
 
   // ── Dynamic Skills for the Selected Grade ──
   const gradeSkillsWithProgress = useMemo(() => {
-    const skills = getSkillsByGrade(selectedGrade);
+    const skills = getSkillsByGrade(selectedGrade, activeSubject);
     return skills.map((skill) => {
       const lesson = allGradeLessons.find((l) => l.id === skill.lessonId);
       if (!lesson) {
@@ -208,7 +243,7 @@ export const ProgressPage: React.FC = () => {
         firstNodeId: lesson.nodes[0]?.id ?? '',
       };
     });
-  }, [selectedGrade, allGradeLessons, completedNodes]);
+  }, [selectedGrade, activeSubject, allGradeLessons, completedNodes]);
 
   // Genuine weak topic detection derived from user's actual completed node accuracy
   const weakTopics: WeakTopicReport[] = useMemo(() => {
@@ -250,17 +285,21 @@ export const ProgressPage: React.FC = () => {
           <div className={`w-10 h-10 rounded-2xl border-2 flex items-center justify-center shrink-0 ${
             isPhysics
               ? 'bg-amber-500/15 border-amber-500/30 text-amber-300'
+              : isBio
+              ? 'bg-emerald-500/15 border-emerald-500/30 text-emerald-300'
               : 'bg-[#0ea5e9]/15 border-[#0ea5e9]/30 text-[#38bdf8]'
           }`}>
-            {isPhysics ? <Zap className="w-5 h-5" /> : <BarChart3 className="w-5 h-5" />}
+            {isPhysics ? <Zap className="w-5 h-5" /> : isBio ? <span className="text-xl">🌿</span> : <BarChart3 className="w-5 h-5" />}
           </div>
           <div>
             <h1 className="text-xl font-black text-slate-100">
-              {isPhysics ? 'Tiến trình & Kỹ năng Vật lý' : 'Tiến trình & Kỹ năng'}
+              {isPhysics ? 'Tiến trình & Kỹ năng Vật lý' : isBio ? 'Tiến trình & Kỹ năng Sinh học' : 'Tiến trình & Kỹ năng Hóa học'}
             </h1>
             <p className="text-xs text-slate-400 mt-0.5">
               {isPhysics
                 ? 'Theo dõi tiến độ học SGK Vật lý, phân loại theo khối lớp và kỹ năng giải toán'
+                : isBio
+                ? 'Theo dõi tiến độ học SGK Sinh học, phân loại theo tế bào, cơ thể và đa dạng sinh giới'
                 : 'Theo dõi tiến độ, phân loại theo từng khối lớp và rèn luyện các kỹ năng trọng tâm'}
             </p>
           </div>
@@ -271,10 +310,10 @@ export const ProgressPage: React.FC = () => {
       <div className="space-y-2">
         <div className="flex items-center justify-between px-1">
           <label className="text-xs font-black uppercase tracking-wider text-slate-300 flex items-center gap-1.5">
-            <GraduationCap className={`w-4 h-4 ${isPhysics ? 'text-amber-400' : 'text-[#38bdf8]'}`} />
+            <GraduationCap className={`w-4 h-4 ${isPhysics ? 'text-amber-400' : isBio ? 'text-emerald-400' : 'text-[#38bdf8]'}`} />
             Chọn khối lớp theo dõi:
           </label>
-          <span className={`text-[11px] font-bold ${isPhysics ? 'text-amber-400' : 'text-[#38bdf8]'}`}>
+          <span className={`text-[11px] font-bold ${isPhysics ? 'text-amber-400' : isBio ? 'text-emerald-400' : 'text-[#38bdf8]'}`}>
             Đang xem Lớp {selectedGrade}
           </span>
         </div>
@@ -293,13 +332,15 @@ export const ProgressPage: React.FC = () => {
                   isSelected
                     ? isPhysics
                       ? 'bg-[#eab308] text-slate-950 shadow-[0_3px_0_0_#ca8a04]'
+                      : isBio
+                      ? 'bg-[#10b981] text-slate-950 shadow-[0_3px_0_0_#059669]'
                       : 'bg-[#0ea5e9] text-[#131f24] shadow-[0_3px_0_0_#0284c7]'
                     : 'text-slate-400 hover:text-slate-200 hover:bg-[#20333d]'
                 }`}
               >
-                <span><span className="hidden sm:inline">{isPhysics ? 'Vật lý ' : 'Hóa học '}</span>Lớp {g}</span>
+                <span><span className="hidden sm:inline">{isPhysics ? 'Vật lý ' : isBio ? 'Sinh học ' : 'Hóa học '}</span>Lớp {g}</span>
                 {isSelected && (
-                  <span className={`w-1.5 h-1.5 rounded-full animate-pulse ${isPhysics ? 'bg-slate-950' : 'bg-[#131f24]'}`} />
+                  <span className={`w-1.5 h-1.5 rounded-full animate-pulse ${isPhysics ? 'bg-slate-950' : isBio ? 'bg-slate-950' : 'bg-[#131f24]'}`} />
                 )}
               </button>
             );
@@ -314,6 +355,8 @@ export const ProgressPage: React.FC = () => {
             <span className={`inline-block text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-lg border ${
               isPhysics
                 ? 'text-amber-300 bg-amber-950/90 border-amber-800/60'
+                : isBio
+                ? 'text-emerald-300 bg-emerald-950/90 border-emerald-800/60'
                 : 'text-cyan-300 bg-cyan-950/90 border-cyan-800/60'
             }`}>
               {selectedCurriculum.title} · SGK Mới
@@ -326,6 +369,12 @@ export const ProgressPage: React.FC = () => {
                 ? (selectedGrade === 9
                     ? 'Năng lượng cơ học, Ánh sáng, Điện, Điện từ & Năng lượng tái tạo'
                     : selectedCurriculum.chapters.map((c) => c.title).slice(0, 3).join(', '))
+                : isBio
+                ? (selectedGrade === 8
+                    ? 'Cơ thể người: Vận động, Tuần hoàn, Hô hấp, Tiêu hóa, Thần kinh & Sinh thái học'
+                    : selectedGrade === 7
+                    ? 'Trao đổi chất & Chuyển hoá năng lượng, Sinh trưởng & Sinh sản ở sinh vật'
+                    : 'Tế bào - đơn vị cơ sở của sự sống, Đa dạng thế giới sống')
                 : (selectedGrade === 6
                     ? 'Chất quanh ta: Sự đa dạng của chất, Các thể của chất, Oxygen và Không khí'
                     : selectedGrade === 8
@@ -337,7 +386,7 @@ export const ProgressPage: React.FC = () => {
           </div>
 
           <div className="text-right">
-            <span className={`text-2xl font-black ${isPhysics ? 'text-amber-400' : 'text-cyan-400'}`}>{gradeCompletionPercent}%</span>
+            <span className={`text-2xl font-black ${isPhysics ? 'text-amber-400' : isBio ? 'text-emerald-400' : 'text-cyan-400'}`}>{gradeCompletionPercent}%</span>
             <span className="text-[10px] text-slate-400 block font-bold">hoàn thành</span>
           </div>
         </div>
@@ -349,6 +398,8 @@ export const ProgressPage: React.FC = () => {
               className={`h-full rounded-full transition-all duration-700 ${
                 isPhysics
                   ? 'bg-gradient-to-r from-amber-500 to-yellow-400'
+                  : isBio
+                  ? 'bg-gradient-to-r from-emerald-500 to-teal-400'
                   : 'bg-gradient-to-r from-cyan-500 to-emerald-400'
               }`}
               style={{ width: `${Math.max(4, gradeCompletionPercent)}%` }}
@@ -378,7 +429,7 @@ export const ProgressPage: React.FC = () => {
 
           <div className="p-3 bg-[#131f24] border-2 border-[#2e4756] rounded-2xl space-y-0.5 text-center">
             <span className="text-[10px] font-bold text-slate-400 uppercase">Bài hoàn thành</span>
-            <div className={`text-base font-black ${isPhysics ? 'text-amber-400' : 'text-cyan-400'}`}>
+            <div className={`text-base font-black ${isPhysics ? 'text-amber-400' : isBio ? 'text-emerald-400' : 'text-cyan-400'}`}>
               {completedGradeLessonsCount}/{allGradeLessons.length}
             </div>
           </div>
@@ -399,6 +450,8 @@ export const ProgressPage: React.FC = () => {
             className={`flex items-center justify-center gap-2 ${
               isPhysics
                 ? 'bg-[#eab308] hover:bg-[#ca8a04] text-slate-950 shadow-[0_3px_0_0_#a16207]'
+                : isBio
+                ? 'bg-[#10b981] hover:bg-[#059669] text-slate-950 shadow-[0_3px_0_0_#047857]'
                 : ''
             }`}
             onClick={() => {
@@ -406,7 +459,7 @@ export const ProgressPage: React.FC = () => {
               navigate(`/learn/${selectedGrade}`);
             }}
           >
-            {isPhysics ? <Zap className="w-4 h-4 text-slate-950" /> : <BookOpen className="w-4 h-4" />}
+            {isPhysics ? <Zap className="w-4 h-4 text-slate-950" /> : isBio ? <Dna className="w-4 h-4 text-slate-950" /> : <BookOpen className="w-4 h-4" />}
             <span>MỞ BẢN ĐỒ HỌC LỚP {selectedGrade}</span>
           </Button>
 
@@ -482,8 +535,8 @@ export const ProgressPage: React.FC = () => {
       <div className="space-y-3">
         <div className="flex items-center justify-between px-1">
           <h2 className="text-xs font-extrabold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
-            <TrendingUp className="w-3.5 h-3.5 text-cyan-400" />
-            Kỹ năng Hóa học trọng tâm · Lớp {selectedGrade} ({gradeSkillsWithProgress.length} kỹ năng)
+            <TrendingUp className={`w-3.5 h-3.5 ${isPhysics ? 'text-amber-400' : isBio ? 'text-emerald-400' : 'text-cyan-400'}`} />
+            Kỹ năng {isPhysics ? 'Vật lý' : isBio ? 'Sinh học' : 'Hóa học'} trọng tâm · Lớp {selectedGrade} ({gradeSkillsWithProgress.length} kỹ năng)
           </h2>
           <span className="text-[10px] font-bold text-slate-500">
             Cập nhật theo tiến độ học

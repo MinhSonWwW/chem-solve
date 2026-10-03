@@ -354,52 +354,8 @@ export const LearnPage: React.FC = () => {
         </div>
       )}
 
-      {/* Biology Preview View */}
-      {activeSubject === 'bio' && (
-        <div className="bg-[#18272f] border-2 border-emerald-500/40 p-6 sm:p-8 rounded-3xl shadow-[0_6px_0_0_#131f24] space-y-6 text-center">
-          <div className="w-20 h-20 rounded-3xl bg-emerald-500/20 border-2 border-emerald-500/40 flex items-center justify-center text-4xl mx-auto shadow-inner">
-            🌿
-          </div>
-          <div className="space-y-2">
-            <span className="text-xs font-black uppercase text-emerald-400 tracking-wider bg-emerald-950/60 px-3 py-1 rounded-xl border border-emerald-800/60 inline-block">
-              LÊN KẾ HOẠCH TÍCH HỢP
-            </span>
-            <h2 className="text-xl sm:text-2xl font-black text-white">Môn Sinh học THCS</h2>
-            <p className="text-xs sm:text-sm text-slate-300 max-w-lg mx-auto leading-relaxed">
-              Môn Sinh học sẽ hoàn thiện bộ ba môn Khoa học Tự nhiên THCS, với các bài tập sơ đồ tế bào, di truyền học và hệ sinh thái tương tác!
-            </p>
-          </div>
-
-          <div className="space-y-2 text-left max-w-md mx-auto pt-2">
-            <div className="text-[11px] font-black uppercase tracking-wider text-slate-400">
-              LỘ TRÌNH DỰ KIẾN:
-            </div>
-            {currentSub.topics.map((top, i) => (
-              <div key={i} className="p-3 rounded-xl bg-[#131f24] border border-[#2e4756] flex items-center gap-3">
-                <div className="w-7 h-7 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs font-black shrink-0 border border-emerald-500/30">
-                  {i + 1}
-                </div>
-                <span className="text-xs font-bold text-slate-200">{top}</span>
-              </div>
-            ))}
-          </div>
-
-          <div className="pt-2">
-            <button
-              onClick={() => {
-                sound.playClick();
-                setActiveSubjectState('chem');
-              }}
-              className="px-6 py-3 bg-[#0ea5e9] hover:bg-[#38bdf8] text-white font-black text-xs sm:text-sm rounded-2xl shadow-[0_4px_0_0_#0284c7] active:translate-y-1 active:shadow-none transition-all cursor-pointer"
-            >
-              🧪 Quay lại học Hóa học ngay
-            </button>
-          </div>
-        </div>
-      )}
-
-      {/* Active Curriculum Snake Path View (Chemistry OR Physics with ready lessons) */}
-      {(activeSubject === 'chem' || (activeSubject === 'physics' && chaptersWithNodes.some((c) => c.pathNodes.length > 0))) && (
+      {/* Active Curriculum Snake Path View (Chemistry, Physics, or Biology) */}
+      {(activeSubject === 'chem' || activeSubject === 'bio' || (activeSubject === 'physics' && chaptersWithNodes.some((c) => c.pathNodes.length > 0))) && (
         <>
           {/* 1. Grade Selector (3D chunky tabs) */}
           <div className="flex bg-[#18272f] border-2 border-[#2e4756] p-1.5 rounded-2xl shadow-[0_4px_0_0_#131f24]">
@@ -414,6 +370,8 @@ export const LearnPage: React.FC = () => {
                   currentGrade === g
                     ? activeSubject === 'physics'
                       ? 'bg-[#eab308] text-slate-950 shadow-[0_3px_0_0_#ca8a04]'
+                      : activeSubject === 'bio'
+                      ? 'bg-[#10b981] text-slate-950 shadow-[0_3px_0_0_#059669]'
                       : 'bg-[#0ea5e9] text-white shadow-[0_3px_0_0_#0284c7]'
                     : 'text-slate-400 hover:text-white'
                 }`}
@@ -431,17 +389,27 @@ export const LearnPage: React.FC = () => {
                 {/* Background glowing ambient light */}
                 <div
                   className={`absolute -right-8 -top-8 w-32 h-32 ${
-                    activeSubject === 'physics' ? 'bg-amber-500/10' : 'bg-[#0ea5e9]/10'
+                    activeSubject === 'physics'
+                      ? 'bg-amber-500/10'
+                      : activeSubject === 'bio'
+                      ? 'bg-emerald-500/10'
+                      : 'bg-[#0ea5e9]/10'
                   } rounded-full blur-2xl pointer-events-none`}
                 />
 
                 <div className="space-y-1 max-w-[65%] sm:max-w-[70%] relative z-10">
                   <span
                     className={`inline-block text-[10px] font-black uppercase tracking-wider ${
-                      activeSubject === 'physics' ? 'text-amber-300' : 'text-sky-300'
+                      activeSubject === 'physics'
+                        ? 'text-amber-300'
+                        : activeSubject === 'bio'
+                        ? 'text-emerald-300'
+                        : 'text-sky-300'
                     } bg-[#20333d] px-2 py-0.5 rounded-lg border border-[#2e4756]`}
                   >
-                    {activeSubject === 'physics' ? `Unit ${chapter.chapterNumber}` : `Chương ${chapter.chapterNumber}`} · Lớp {currentGrade}
+                    {activeSubject === 'physics' || activeSubject === 'bio'
+                      ? `Unit ${chapter.chapterNumber}`
+                      : `Chương ${chapter.chapterNumber}`} · Lớp {currentGrade}
                   </span>
                   <h1 className="text-sm sm:text-base font-black text-white leading-tight">
                     {chapter.title}
@@ -460,6 +428,8 @@ export const LearnPage: React.FC = () => {
                   className={`relative z-10 flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 font-black text-[11px] sm:text-xs rounded-2xl active:translate-y-1 active:shadow-none transition-all cursor-pointer whitespace-nowrap border-2 ${
                     activeSubject === 'physics'
                       ? 'bg-[#f59e0b] hover:bg-[#fbbf24] text-slate-950 shadow-[0_4px_0_0_#b45309] border-amber-200/50'
+                      : activeSubject === 'bio'
+                      ? 'bg-[#10b981] hover:bg-[#34d399] text-slate-950 shadow-[0_4px_0_0_#059669] border-emerald-200/50'
                       : 'bg-[#ce82ff] hover:bg-[#d896ff] text-white shadow-[0_4px_0_0_#a545ee] border-[#e9d5ff]/40'
                   }`}
                   title="Xem sổ tay kiến thức chương"
@@ -473,7 +443,7 @@ export const LearnPage: React.FC = () => {
               <SnakePath
                 nodes={pathNodes}
                 onNodeClick={(node) => handleNodeClick(node, nodeLessonMap)}
-                subject={activeSubject as 'chem' | 'physics'}
+                subject={activeSubject as 'chem' | 'physics' | 'bio'}
               />
             </div>
           ))}

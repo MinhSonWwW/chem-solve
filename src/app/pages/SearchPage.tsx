@@ -13,7 +13,7 @@ import { Formula } from '@/design-system';
 import { searchChemicalData } from '@/features/search/searchEngine';
 import { sound } from '@/lib/audio';
 
-const QUICK_SEARCH_CHIPS = ['NaOH', 'H2SO4', 'Mol', 'CO2', 'Acid', 'Kim loại', 'Al2O3', 'Alkane'];
+const QUICK_SEARCH_CHIPS = ['Tế bào', 'Quang hợp', 'Hệ tuần hoàn', 'Quần thể', 'NaOH', 'H2SO4', 'Mol', 'Vận tốc', 'Acid'];
 
 export const SearchPage: React.FC = () => {
   const navigate = useNavigate();

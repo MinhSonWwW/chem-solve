@@ -1,7 +1,7 @@
 import substancesData from '@/content/kb/substances.json';
 import reactionsData from '@/content/kb/reactions.json';
 import { SKILLS, Skill } from '@/content/skills';
-import { CURRICULUM } from '@/content/curriculum';
+import { CURRICULUM, PHYSICS_CURRICULUM, BIOLOGY_CURRICULUM } from '@/content/curriculum';
 
 export interface SubstanceResult {
   formula: string;
@@ -22,17 +22,7 @@ export interface SearchResultsGrouped {
   reactions: ReactionResult[];
   skills: Skill[];
   lessons: Array<{ id: string; title: string; grade: number; chapterTitle: string }>;
-  minigames: Array<{ id: string; name: string; desc: string }>;
 }
-
-const MINIGAMES_CATALOG = [
-  { id: 'match', name: 'Ghép đôi chất & loại', desc: 'Nhận diện chất & loại hợp chất (Acid, Base, Oxide, Muối)' },
-  { id: 'formula-builder', name: 'Ghép công thức (Formula Builder)', desc: 'Cân bằng điện tích ion ∑q = 0 tạo phân tử' },
-  { id: 'equation-balance', name: 'Cân bằng PTHH', desc: 'Điền hệ số cân bằng phản ứng hóa học' },
-  { id: 'sort', name: 'Phân loại hợp chất', desc: 'Phân loại chất vào 4 nhóm Axit, Bazơ, Oxide, Muối' },
-  { id: 'true-false', name: 'Đúng hay Sai', desc: 'Phản xạ nhanh với nhận định Hóa học then chốt' },
-  { id: 'speed', name: 'Thử thách tốc độ (60s)', desc: '60 giây trắc nghiệm tốc độ' },
-];
 
 /**
  * Normalizes strings by removing Vietnamese accents, non-alphanumerics and lowercasing
@@ -61,7 +51,6 @@ export function searchChemicalData(query: string): SearchResultsGrouped {
       reactions: [],
       skills: [],
       lessons: [],
-      minigames: [],
     };
   }
 
@@ -93,14 +82,23 @@ export function searchChemicalData(query: string): SearchResultsGrouped {
     ...(CURRICULUM[7]?.chapters || []).map((c) => ({ chapter: c, grade: 7 })),
     ...(CURRICULUM[8]?.chapters || []).map((c) => ({ chapter: c, grade: 8 })),
     ...(CURRICULUM[9]?.chapters || []).map((c) => ({ chapter: c, grade: 9 })),
+    ...(PHYSICS_CURRICULUM[6]?.chapters || []).map((c) => ({ chapter: c, grade: 6 })),
+    ...(PHYSICS_CURRICULUM[7]?.chapters || []).map((c) => ({ chapter: c, grade: 7 })),
+    ...(PHYSICS_CURRICULUM[8]?.chapters || []).map((c) => ({ chapter: c, grade: 8 })),
+    ...(PHYSICS_CURRICULUM[9]?.chapters || []).map((c) => ({ chapter: c, grade: 9 })),
+    ...(BIOLOGY_CURRICULUM[6]?.chapters || []).map((c) => ({ chapter: c, grade: 6 })),
+    ...(BIOLOGY_CURRICULUM[7]?.chapters || []).map((c) => ({ chapter: c, grade: 7 })),
+    ...(BIOLOGY_CURRICULUM[8]?.chapters || []).map((c) => ({ chapter: c, grade: 8 })),
+    ...(BIOLOGY_CURRICULUM[9]?.chapters || []).map((c) => ({ chapter: c, grade: 9 })),
   ];
 
   const lessons: SearchResultsGrouped['lessons'] = [];
   for (const item of allCurriculum) {
     for (const l of item.chapter.lessons) {
       const normTitle = normalizeSearchTerm(l.title);
+      const normSub = l.subtitle ? normalizeSearchTerm(l.subtitle) : '';
       const normChap = normalizeSearchTerm(item.chapter.title);
-      if (normTitle.includes(normQ) || normChap.includes(normQ)) {
+      if (normTitle.includes(normQ) || normSub.includes(normQ) || normChap.includes(normQ)) {
         lessons.push({
           id: l.id,
           title: l.title,
@@ -111,18 +109,10 @@ export function searchChemicalData(query: string): SearchResultsGrouped {
     }
   }
 
-  // 5. Search Minigames
-  const minigames = MINIGAMES_CATALOG.filter((g) => {
-    const normName = normalizeSearchTerm(g.name);
-    const normDesc = normalizeSearchTerm(g.desc);
-    return normName.includes(normQ) || normDesc.includes(normQ);
-  });
-
   return {
     substances,
     reactions,
     skills,
     lessons: lessons.slice(0, 6),
-    minigames,
   };
 }

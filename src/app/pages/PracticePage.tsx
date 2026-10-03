@@ -13,6 +13,8 @@ import {
   Lock,
   CheckCircle2,
   ArrowRight,
+  Droplets,
+  Layers,
 } from 'lucide-react';
 import { sound } from '@/lib/audio';
 import { assetUrl } from '@/lib/utils';
@@ -147,16 +149,437 @@ const PHYSICS_GENERATOR_TOPICS = [
   },
 ];
 
+const BIOLOGY_GENERATOR_TOPICS = [
+  {
+    id: 'bio-gen-infinite',
+    title: 'Đề Sinh Học Tổng Hợp (Vô Hạn)',
+    desc: 'Trộn ngẫu nhiên câu hỏi phân bào & NST, tái bản DNA, phép lai Mendel, calo, truyền máu & mật độ quần thể',
+    icon: Sparkles,
+    color: 'from-emerald-500/20 to-teal-500/20 text-emerald-400 border-emerald-500/30',
+    badge: 'Đề Trộn',
+    requiredLessonId: 'bio-g6-b04',
+    requiredLessonName: 'Bài 20: Tế bào lớn lên và phân chia',
+  },
+  {
+    id: 'bio-gen-mendel',
+    title: 'Toán Phép Lai Mendel & Bảng Punnett',
+    desc: 'Tính số loại giao tử 2ⁿ, số loại kiểu gen, kiểu hình và tỉ lệ phân li độc lập (9:3:3:1)',
+    icon: Calculator,
+    color: 'from-amber-500/20 to-yellow-500/20 text-amber-400 border-amber-500/30',
+    badge: 'Di truyền 9',
+    requiredLessonId: 'bio-g9-b02',
+    requiredLessonName: 'Bài 37: Các quy luật di truyền của Mendel',
+  },
+  {
+    id: 'bio-gen-dna',
+    title: 'Toán Phân Tử DNA & Tái Bản Nhân Đôi',
+    desc: 'Tính số liên kết hydrogen (2A+3G), chiều dài L = (N/2)×3,4Å và nucleotide môi trường N(2^k - 1)',
+    icon: Sparkles,
+    color: 'from-blue-500/20 to-cyan-500/20 text-blue-400 border-blue-500/30',
+    badge: 'Phân tử 9',
+    requiredLessonId: 'bio-g9-b03',
+    requiredLessonName: 'Bài 38: Nucleic acid và gene',
+  },
+  {
+    id: 'bio-gen-chromosomes',
+    title: 'Toán Nhiễm Sắc Thể, Nguyên Phân & Giao Tử',
+    desc: 'Tính số NST môi trường 2n×a(2^k - 1), số tinh trùng (4x) và số trứng (1y) sau giảm phân',
+    icon: Scale,
+    color: 'from-emerald-500/20 to-teal-500/20 text-emerald-400 border-emerald-500/30',
+    badge: 'Nhiễm sắc thể 9',
+    requiredLessonId: 'bio-g9-b08',
+    requiredLessonName: 'Bài 43: Nguyên phân và giảm phân',
+  },
+  {
+    id: 'bio-gen-calories',
+    title: 'Toán Năng Lượng Khẩu Phần Ăn (Calo)',
+    desc: 'Tính tổng năng lượng: E = 4×Protein + 4×Carbohydrate + 9×Lipid (kcal)',
+    icon: Flame,
+    color: 'from-amber-500/20 to-orange-500/20 text-amber-400 border-amber-500/30',
+    badge: 'Dinh dưỡng 8',
+    requiredLessonId: 'bio-g8-b03',
+    requiredLessonName: 'Bài 32: Dinh dưỡng và tiêu hóa ở người',
+  },
+  {
+    id: 'bio-gen-blood',
+    title: 'Toán Truyền Máu ABO & Kháng Thể',
+    desc: 'Nguyên tắc truyền máu an toàn hệ ABO: không để hồng cầu người cho bị ngưng kết',
+    icon: Calculator,
+    color: 'from-rose-500/20 to-red-500/20 text-rose-400 border-rose-500/30',
+    badge: 'Tuần hoàn 8',
+    requiredLessonId: 'bio-g8-b04',
+    requiredLessonName: 'Bài 33: Máu và hệ tuần hoàn của cơ thể người',
+  },
+  {
+    id: 'bio-gen-density',
+    title: 'Toán Mật Độ Cá Thể Quần Thể (D = N/S)',
+    desc: 'Tính mật độ cá thể trên đơn vị diện tích (m², ha) hoặc thể tích (m³)',
+    icon: Scale,
+    color: 'from-green-500/20 to-emerald-500/20 text-green-400 border-green-500/30',
+    badge: 'Sinh thái 8',
+    requiredLessonId: 'bio-g8-b13',
+    requiredLessonName: 'Bài 42: Quần thể sinh vật',
+  },
+  {
+    id: 'bio-gen-water',
+    title: 'Toán Nhu Cầu Nước Cơ Thể Mỗi Ngày',
+    desc: 'Tính lượng nước cần thiết theo cân nặng: V = m × 40 mL (Lớp 7 KNTT)',
+    icon: Beaker,
+    color: 'from-cyan-500/20 to-blue-500/20 text-cyan-400 border-cyan-500/30',
+    badge: 'Dinh dưỡng 7',
+    requiredLessonId: 'bio-g7-b09',
+    requiredLessonName: 'Bài 29: Vai trò của nước và chất dinh dưỡng',
+  },
+  {
+    id: 'bio-gen-division',
+    title: 'Toán Phân Bào & Sinh Sản Tế Bào (N = N₀ × 2ⁿ)',
+    desc: 'Tính số lượng tế bào con sau n lần nguyên phân liên tiếp từ tế bào ban đầu',
+    icon: Calculator,
+    color: 'from-green-500/20 to-emerald-500/20 text-green-400 border-green-500/30',
+    badge: 'Tế bào học 6',
+    requiredLessonId: 'bio-g6-b04',
+    requiredLessonName: 'Bài 20: Tế bào lớn lên và phân chia',
+  },
+  {
+    id: 'bio-gen-microscope',
+    title: 'Toán Độ Phóng Đại Kính Hiển Vi Quang Học',
+    desc: 'Tính độ phóng đại ảnh = Độ phóng đại thị kính × Độ phóng đại vật kính',
+    icon: Scale,
+    color: 'from-teal-500/20 to-cyan-500/20 text-teal-400 border-teal-500/30',
+    badge: 'Kỹ thuật 6',
+    requiredLessonId: 'bio-g6-b03',
+    requiredLessonName: 'Bài 19: Cấu tạo và chức năng các thành phần của tế bào',
+  },
+];
+
+const CHEMISTRY_MINIGAMES = [
+  {
+    id: 'equation-balance',
+    title: 'Cân Bằng PTHH',
+    desc: 'Cân bằng hệ số nguyên tử 25 phản ứng hóa học kinh điển!',
+    icon: Scale,
+    badge: 'Hóa 8 - 9',
+    route: '/games/equation-balance',
+    colorKey: 'emerald',
+  },
+  {
+    id: 'formula-builder',
+    title: 'Ghép Công Thức Hóa Học',
+    desc: 'Lắp ghép cation kim loại với anion gốc acid theo quy tắc hóa trị!',
+    icon: Beaker,
+    badge: 'Hóa 8',
+    route: '/games/formula-builder',
+    colorKey: 'sky',
+  },
+  {
+    id: 'reaction-builder',
+    title: 'Ghép Chuỗi Phản Ứng',
+    desc: 'Chọn đúng chất tham gia và sản phẩm phản ứng tạo chuỗi biến hóa!',
+    icon: Flame,
+    badge: 'Hóa 9',
+    route: '/games/reaction-builder',
+    colorKey: 'amber',
+  },
+  {
+    id: 'match',
+    title: 'Nối Thẻ Chất Hóa Học',
+    desc: 'Nối công thức hóa học với tên gọi tiếng Việt và phân loại chất!',
+    icon: Layers,
+    badge: 'Tương tác',
+    route: '/games/match',
+    colorKey: 'purple',
+  },
+  {
+    id: 'sort',
+    title: 'Phân Loại Chất Hóa Học',
+    desc: 'Rót chất vào đúng bình tam giác: Acid, Base, Oxide, Muối!',
+    icon: Droplets,
+    badge: 'Phễu lọc',
+    route: '/games/sort',
+    colorKey: 'rose',
+  },
+  {
+    id: 'speed',
+    title: 'Đố Vui Tốc Độ Hóa Học',
+    desc: 'Thử thách phản xạ nhanh 15 câu trắc nghiệm kiến thức trong 60 giây!',
+    icon: Zap,
+    badge: '60 Giây',
+    route: '/games/speed',
+    colorKey: 'amber',
+  },
+  {
+    id: 'true-false',
+    title: 'Đúng Hay Sai Hóa Học',
+    desc: 'Kiểm định nhanh độ chính xác nhận định và hiện tượng hóa học!',
+    icon: CheckCircle2,
+    badge: 'Nhận định',
+    route: '/games/true-false',
+    colorKey: 'emerald',
+  },
+  {
+    id: 'review',
+    title: 'Hộp Ghi Nhớ Leitner (5 Cấp)',
+    desc: 'Ôn tập lặp lại ngắt quãng củng cố kiến thức hóa học dài hạn!',
+    icon: Layers,
+    badge: 'Spaced Repetition',
+    route: '/games/review',
+    colorKey: 'cyan',
+  },
+];
+
+const PHYSICS_MINIGAMES = [
+  {
+    id: 'match',
+    title: 'Nối Cặp Công Thức Vật Lý',
+    desc: 'Nối công thức với đại lượng & đơn vị chuẩn: Cơ, Nhiệt, Điện, Quang!',
+    icon: Layers,
+    badge: 'Công thức',
+    route: '/games/match',
+    colorKey: 'amber',
+  },
+  {
+    id: 'sort',
+    title: 'Phân Loại Hiện Tượng Vật Lý',
+    desc: 'Phân loại hiện tượng vào đúng 4 chuyên đề: Cơ - Nhiệt - Điện - Quang!',
+    icon: Sparkles,
+    badge: 'Hiện tượng',
+    route: '/games/sort',
+    colorKey: 'sky',
+  },
+  {
+    id: 'speed',
+    title: 'Đố Vui Tốc Độ Vật Lý',
+    desc: 'Tính nhanh vận tốc, công suất, áp suất, điện trở trong 60 giây!',
+    icon: Zap,
+    badge: '60 Giây',
+    route: '/games/speed',
+    colorKey: 'rose',
+  },
+  {
+    id: 'true-false',
+    title: 'Đúng Hay Sai Vật Lý',
+    desc: 'Kiểm định định luật chuyển động, nhiệt học, từ trường & quang học!',
+    icon: CheckCircle2,
+    badge: 'Định luật',
+    route: '/games/true-false',
+    colorKey: 'emerald',
+  },
+  {
+    id: 'review',
+    title: 'Hộp Ghi Nhớ Leitner (5 Cấp)',
+    desc: 'Ôn tập lặp lại ngắt quãng củng cố công thức và định luật vật lý!',
+    icon: Layers,
+    badge: 'Spaced Repetition',
+    route: '/games/review',
+    colorKey: 'cyan',
+  },
+];
+
+const BIOLOGY_MINIGAMES = [
+  {
+    id: 'blood-transfusion',
+    title: 'Cấp Cứu Truyền Máu ABO',
+    desc: 'Chọn túi máu tương thích an toàn cho bệnh nhân cấp cứu trong 50s!',
+    icon: Droplets,
+    badge: 'Sinh 8',
+    route: '/games/blood-transfusion',
+    colorKey: 'rose',
+  },
+  {
+    id: 'match',
+    title: 'Nối Thẻ Sinh Học Đối Ứng',
+    desc: 'Nối bào quan - chức năng, hoocmôn - tuyến nội tiết, bằng chứng tiến hóa!',
+    icon: Layers,
+    badge: 'Bào quan & Gen',
+    route: '/games/match',
+    colorKey: 'emerald',
+  },
+  {
+    id: 'sort',
+    title: 'Phân Loại Sinh Học',
+    desc: 'Phân loại vào 4 nhóm: Tế bào, Cơ thể người, Di truyền học & Sinh thái!',
+    icon: Sparkles,
+    badge: '4 Chuyên đề',
+    route: '/games/sort',
+    colorKey: 'teal',
+  },
+  {
+    id: 'speed',
+    title: 'Đố Vui Tốc Độ Sinh Học',
+    desc: 'Thử thách phản xạ nhanh 15 câu trắc nghiệm di truyền, phân bào & sinh thái!',
+    icon: Zap,
+    badge: '60 Giây',
+    route: '/games/speed',
+    colorKey: 'amber',
+  },
+  {
+    id: 'true-false',
+    title: 'Đúng Hay Sai Sinh Học',
+    desc: 'Kiểm định nhanh 87 nhận định chuẩn SGK Sinh học THCS từ lớp 6 đến 9!',
+    icon: CheckCircle2,
+    badge: '87 Nhận Định',
+    route: '/games/true-false',
+    colorKey: 'emerald',
+  },
+  {
+    id: 'review',
+    title: 'Hộp Ghi Nhớ Leitner (5 Cấp)',
+    desc: 'Ôn tập lặp lại ngắt quãng củng cố kiến thức sinh học dài hạn chống quên!',
+    icon: Layers,
+    badge: 'Spaced Repetition',
+    route: '/games/review',
+    colorKey: 'cyan',
+  },
+];
+
+const GAME_COLOR_MAP: Record<
+  string,
+  {
+    iconBg: string;
+    iconBorder: string;
+    iconColor: string;
+    badgeBg: string;
+    badgeText: string;
+    badgeBorder: string;
+    hoverBorder: string;
+    hoverTitle: string;
+    playBg: string;
+    playBorder: string;
+    playFill: string;
+    playShadow: string;
+  }
+> = {
+  emerald: {
+    iconBg: 'bg-emerald-500/20',
+    iconBorder: 'border-emerald-500/40',
+    iconColor: 'text-emerald-400',
+    badgeBg: 'bg-emerald-500/20',
+    badgeText: 'text-emerald-300',
+    badgeBorder: 'border-emerald-500/40',
+    hoverBorder: 'hover:border-emerald-400',
+    hoverTitle: 'group-hover:text-emerald-300',
+    playBg: 'bg-emerald-500/20',
+    playBorder: 'border-emerald-500',
+    playFill: 'fill-emerald-400 text-emerald-400',
+    playShadow: 'shadow-[0_2px_0_0_#059669]',
+  },
+  rose: {
+    iconBg: 'bg-rose-500/20',
+    iconBorder: 'border-rose-500/40',
+    iconColor: 'text-rose-400',
+    badgeBg: 'bg-rose-500/20',
+    badgeText: 'text-rose-300',
+    badgeBorder: 'border-rose-500/40',
+    hoverBorder: 'hover:border-rose-400',
+    hoverTitle: 'group-hover:text-rose-300',
+    playBg: 'bg-rose-500/20',
+    playBorder: 'border-rose-500',
+    playFill: 'fill-rose-400 text-rose-400',
+    playShadow: 'shadow-[0_2px_0_0_#9f1239]',
+  },
+  sky: {
+    iconBg: 'bg-sky-500/20',
+    iconBorder: 'border-sky-500/40',
+    iconColor: 'text-sky-400',
+    badgeBg: 'bg-sky-500/20',
+    badgeText: 'text-sky-300',
+    badgeBorder: 'border-sky-500/40',
+    hoverBorder: 'hover:border-sky-400',
+    hoverTitle: 'group-hover:text-sky-300',
+    playBg: 'bg-sky-500/20',
+    playBorder: 'border-sky-500',
+    playFill: 'fill-sky-400 text-sky-400',
+    playShadow: 'shadow-[0_2px_0_0_#0284c7]',
+  },
+  amber: {
+    iconBg: 'bg-amber-500/20',
+    iconBorder: 'border-amber-500/40',
+    iconColor: 'text-amber-400',
+    badgeBg: 'bg-amber-500/20',
+    badgeText: 'text-amber-300',
+    badgeBorder: 'border-amber-500/40',
+    hoverBorder: 'hover:border-amber-400',
+    hoverTitle: 'group-hover:text-amber-300',
+    playBg: 'bg-amber-500/20',
+    playBorder: 'border-amber-500',
+    playFill: 'fill-amber-400 text-amber-400',
+    playShadow: 'shadow-[0_2px_0_0_#ca8a04]',
+  },
+  cyan: {
+    iconBg: 'bg-cyan-500/20',
+    iconBorder: 'border-cyan-500/40',
+    iconColor: 'text-cyan-400',
+    badgeBg: 'bg-cyan-500/20',
+    badgeText: 'text-cyan-300',
+    badgeBorder: 'border-cyan-500/40',
+    hoverBorder: 'hover:border-cyan-400',
+    hoverTitle: 'group-hover:text-cyan-300',
+    playBg: 'bg-cyan-500/20',
+    playBorder: 'border-cyan-500',
+    playFill: 'fill-cyan-400 text-cyan-400',
+    playShadow: 'shadow-[0_2px_0_0_#0891b2]',
+  },
+  purple: {
+    iconBg: 'bg-purple-500/20',
+    iconBorder: 'border-purple-500/40',
+    iconColor: 'text-purple-400',
+    badgeBg: 'bg-purple-500/20',
+    badgeText: 'text-purple-300',
+    badgeBorder: 'border-purple-500/40',
+    hoverBorder: 'hover:border-purple-400',
+    hoverTitle: 'group-hover:text-purple-300',
+    playBg: 'bg-purple-500/20',
+    playBorder: 'border-purple-500',
+    playFill: 'fill-purple-400 text-purple-400',
+    playShadow: 'shadow-[0_2px_0_0_#7e22ce]',
+  },
+  teal: {
+    iconBg: 'bg-teal-500/20',
+    iconBorder: 'border-teal-500/40',
+    iconColor: 'text-teal-400',
+    badgeBg: 'bg-teal-500/20',
+    badgeText: 'text-teal-300',
+    badgeBorder: 'border-teal-500/40',
+    hoverBorder: 'hover:border-teal-400',
+    hoverTitle: 'group-hover:text-teal-300',
+    playBg: 'bg-teal-500/20',
+    playBorder: 'border-teal-500',
+    playFill: 'fill-teal-400 text-teal-400',
+    playShadow: 'shadow-[0_2px_0_0_#0f766e]',
+  },
+};
+
 export const PracticePage: React.FC = () => {
   const navigate = useNavigate();
   const { completedNodes, hearts } = useUserStore();
   const { subject: activeSubject } = useActiveSubject();
   const isPhysics = activeSubject === 'physics';
+  const isBio = activeSubject === 'bio';
+  const activeMinigames = isBio ? BIOLOGY_MINIGAMES : isPhysics ? PHYSICS_MINIGAMES : CHEMISTRY_MINIGAMES;
 
-  const [selectedGrade, setSelectedGrade] = useState<Grade>(() => (isPhysics ? 9 : 8));
+  const [selectedGrade, setSelectedGrade] = useState<Grade>(() => {
+    const saved = localStorage.getItem('chem_active_grade');
+    const parsed = saved ? (parseInt(saved, 10) as Grade) : null;
+    if (parsed && (parsed === 6 || parsed === 7 || parsed === 8 || parsed === 9)) {
+      return parsed;
+    }
+    return isBio ? 8 : isPhysics ? 6 : 8;
+  });
   const [selectedDiff, setSelectedDiff] = useState<'all' | '1' | '2' | '3'>('all');
   const [selectedChapterId, setSelectedChapterId] = useState<string>('all');
   const [modalInfo, setModalInfo] = useState<LockModalInfo | null>(null);
+
+  useEffect(() => {
+    const saved = localStorage.getItem('chem_active_grade');
+    const parsed = saved ? (parseInt(saved, 10) as Grade) : null;
+    if (activeSubject === 'bio') {
+      if (parsed === 6 || parsed === 7 || parsed === 8 || parsed === 9) {
+        setSelectedGrade(parsed);
+      } else {
+        setSelectedGrade(8);
+      }
+    }
+  }, [activeSubject]);
 
   const curriculum = useMemo(() => getCurriculum(selectedGrade, activeSubject), [selectedGrade, activeSubject]);
   const chapters = curriculum.chapters;
@@ -260,10 +683,14 @@ export const PracticePage: React.FC = () => {
           <div className={`w-12 h-12 rounded-2xl border-2 flex items-center justify-center p-2 shrink-0 ${
             isPhysics
               ? 'bg-[#291e07] border-amber-500/40 text-amber-400 shadow-[0_4px_0_0_#78350f]'
+              : isBio
+              ? 'bg-[#062c20] border-emerald-500/40 text-emerald-400 shadow-[0_4px_0_0_#064e3b]'
               : 'bg-[#18272f] border-[#2e4756] shadow-[0_4px_0_0_#131f24]'
           }`}>
             {isPhysics ? (
               <Zap className="w-7 h-7 text-amber-400" />
+            ) : isBio ? (
+              <span className="text-2xl select-none">🌿</span>
             ) : (
               <img
                 src={assetUrl('/assets/icons/xp-potion.png')}
@@ -274,11 +701,13 @@ export const PracticePage: React.FC = () => {
           </div>
           <div>
             <h1 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
-              <span>{isPhysics ? 'Luyện Tập Vật Lý' : 'Luyện Tập Hóa Học'}</span>
+              <span>{isPhysics ? 'Luyện Tập Vật Lý' : isBio ? 'Luyện Tập Sinh Học' : 'Luyện Tập Hóa Học'}</span>
             </h1>
             <p className="text-xs text-slate-300 font-medium leading-relaxed">
               {isPhysics
                 ? 'Luyện bài tập SGK Vật lý: học đến đâu mở khóa đến đấy, không trừ tim, kiếm thêm XP'
+                : isBio
+                ? 'Luyện bài tập SGK Sinh học: học đến đâu mở khóa đến đấy, không trừ tim, kiếm thêm XP'
                 : 'Tích hợp luyện tập SGK & dạng toán: học đến đâu mở khóa đến đấy, không trừ tim, kiếm thêm XP & phục hồi Tim'}
             </p>
           </div>
@@ -324,7 +753,7 @@ export const PracticePage: React.FC = () => {
           <label className="text-xs font-black text-slate-300 uppercase tracking-wider">
             Chọn khối lớp học tập:
           </label>
-          <span className={`text-[11px] font-bold ${isPhysics ? 'text-amber-400' : 'text-[#0ea5e9]'}`}>
+          <span className={`text-[11px] font-bold ${isPhysics ? 'text-amber-400' : isBio ? 'text-emerald-400' : 'text-[#0ea5e9]'}`}>
             {unlockedLessonsCount} bài đã mở khóa
           </span>
         </div>
@@ -341,6 +770,8 @@ export const PracticePage: React.FC = () => {
                 selectedGrade === g
                   ? isPhysics
                     ? 'bg-[#eab308] text-slate-950 border-amber-200 shadow-[0_4px_0_0_#ca8a04] scale-[1.02]'
+                    : isBio
+                    ? 'bg-[#10b981] text-slate-950 border-emerald-200 shadow-[0_4px_0_0_#059669] scale-[1.02]'
                     : 'bg-[#0ea5e9] text-white border-sky-200 shadow-[0_4px_0_0_#0284c7] scale-[1.02]'
                   : 'bg-[#20333d] border-[#2e4756] text-slate-400 hover:text-white hover:bg-[#283e4a]'
               }`}
@@ -355,12 +786,18 @@ export const PracticePage: React.FC = () => {
       <div className="space-y-3 pt-2">
         <div className="flex items-center justify-between px-1">
           <div className="flex items-center gap-2">
-            {isPhysics ? <Zap className="w-4 h-4 text-amber-400" /> : <BookOpen className="w-4 h-4 text-cyan-400" />}
+            {isPhysics ? (
+              <Zap className="w-4 h-4 text-amber-400" />
+            ) : isBio ? (
+              <span className="text-sm">🌿</span>
+            ) : (
+              <BookOpen className="w-4 h-4 text-cyan-400" />
+            )}
             <h2 className="text-sm font-black text-slate-200 uppercase tracking-wider">
-              Bài Tập Theo Từng Bài SGK {isPhysics ? 'Vật Lý' : 'Hóa Học'} Lớp {selectedGrade} ({lessons.length} bài)
+              Bài Tập Theo Từng Bài SGK {isPhysics ? 'Vật Lý' : isBio ? 'Sinh Học' : 'Hóa Học'} Lớp {selectedGrade} ({lessons.length} bài)
             </h2>
           </div>
-          <span className={`text-[11px] font-semibold ${isPhysics ? 'text-amber-400' : 'text-cyan-400'}`}>
+          <span className={`text-[11px] font-semibold ${isPhysics ? 'text-amber-400' : isBio ? 'text-emerald-400' : 'text-cyan-400'}`}>
             Chỉ mở khóa các bài bạn đã học đến
           </span>
         </div>
@@ -374,6 +811,8 @@ export const PracticePage: React.FC = () => {
                 selectedChapterId === 'all'
                   ? isPhysics
                     ? 'bg-[#eab308]/20 text-[#facc15] border-[#eab308] shadow-[0_2px_0_0_#ca8a04]'
+                    : isBio
+                    ? 'bg-[#10b981]/20 text-[#34d399] border-[#10b981] shadow-[0_2px_0_0_#059669]'
                     : 'bg-[#0ea5e9]/20 text-[#38bdf8] border-[#0ea5e9] shadow-[0_2px_0_0_#0284c7]'
                   : 'bg-[#20333d] text-slate-300 border-[#2e4756] hover:text-white hover:bg-[#283e4a]'
               }`}
@@ -388,11 +827,13 @@ export const PracticePage: React.FC = () => {
                   selectedChapterId === c.id
                     ? isPhysics
                       ? 'bg-[#eab308]/20 text-[#facc15] border-[#eab308] shadow-[0_2px_0_0_#ca8a04]'
+                      : isBio
+                      ? 'bg-[#10b981]/20 text-[#34d399] border-[#10b981] shadow-[0_2px_0_0_#059669]'
                       : 'bg-[#0ea5e9]/20 text-[#38bdf8] border-[#0ea5e9] shadow-[0_2px_0_0_#0284c7]'
                     : 'bg-[#20333d] text-slate-300 border-[#2e4756] hover:text-white hover:bg-[#283e4a]'
                 }`}
               >
-                Chương {c.chapterNumber}: {c.title}
+                {c.title.startsWith('Unit') ? c.title : `Chương ${c.chapterNumber}: ${c.title}`}
               </button>
             ))}
           </div>
@@ -416,6 +857,8 @@ export const PracticePage: React.FC = () => {
                 selectedDiff === d.id
                   ? isPhysics
                     ? 'bg-[#eab308]/20 text-[#facc15] border-[#eab308] shadow-[0_2px_0_0_#ca8a04]'
+                    : isBio
+                    ? 'bg-[#10b981]/20 text-[#34d399] border-[#10b981] shadow-[0_2px_0_0_#059669]'
                     : 'bg-[#0ea5e9]/20 text-[#38bdf8] border-[#0ea5e9] shadow-[0_2px_0_0_#0284c7]'
                   : 'bg-[#20333d] border-[#2e4756] text-slate-400 hover:text-slate-200'
               }`}
@@ -443,6 +886,8 @@ export const PracticePage: React.FC = () => {
                     : isAvailable
                       ? isPhysics
                         ? 'bg-[#18272f] border-[#2e4756] hover:border-amber-400 shadow-[0_4px_0_0_#131f24] cursor-pointer hover:translate-y-[-2px]'
+                        : isBio
+                        ? 'bg-[#18272f] border-[#2e4756] hover:border-emerald-400 shadow-[0_4px_0_0_#131f24] cursor-pointer hover:translate-y-[-2px]'
                         : 'bg-[#18272f] border-[#2e4756] hover:border-[#0ea5e9] shadow-[0_4px_0_0_#131f24] cursor-pointer hover:translate-y-[-2px]'
                       : 'bg-[#131f24]/80 border-[#20333d] hover:border-amber-500/40 cursor-pointer opacity-75'
                 }`}
@@ -497,6 +942,10 @@ export const PracticePage: React.FC = () => {
                           <span className="text-[10px] font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30 px-2 py-0.5 rounded-lg flex items-center gap-1">
                             <Zap className="w-3 h-3 text-amber-400" /> Đang học · Luyện tập
                           </span>
+                        ) : isBio ? (
+                          <span className="text-[10px] font-bold bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-lg flex items-center gap-1">
+                            🌿 Đang học · Luyện tập
+                          </span>
                         ) : (
                           <span className="text-[10px] font-bold bg-[#0ea5e9]/15 text-[#38bdf8] border border-[#0ea5e9]/30 px-2 py-0.5 rounded-lg flex items-center gap-1">
                             <Sparkles className="w-3 h-3 text-[#0ea5e9]" /> Đang học · Luyện tập
@@ -528,9 +977,17 @@ export const PracticePage: React.FC = () => {
                     <div className={`w-9 h-9 rounded-2xl border-2 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform ${
                       isPhysics
                         ? 'bg-amber-500/20 border-amber-500 text-amber-400 shadow-[0_2px_0_0_#ca8a04]'
+                        : isBio
+                        ? 'bg-emerald-500/20 border-emerald-500 text-emerald-400 shadow-[0_2px_0_0_#059669]'
                         : 'bg-[#0ea5e9]/20 border-[#0ea5e9] text-[#38bdf8] shadow-[0_2px_0_0_#0284c7]'
                     }`}>
-                      <Play className={`w-4 h-4 ${isPhysics ? 'fill-amber-400 text-amber-400' : 'fill-[#0ea5e9] text-[#0ea5e9]'}`} />
+                      <Play className={`w-4 h-4 ${
+                        isPhysics
+                          ? 'fill-amber-400 text-amber-400'
+                          : isBio
+                          ? 'fill-emerald-400 text-emerald-400'
+                          : 'fill-[#0ea5e9] text-[#0ea5e9]'
+                      }`} />
                     </div>
                   ) : (
                     <div className="w-9 h-9 rounded-2xl bg-[#18272f] border-2 border-[#20333d] flex items-center justify-center text-slate-500 shrink-0">
@@ -653,8 +1110,121 @@ export const PracticePage: React.FC = () => {
         </div>
       )}
 
+      {/* ── SECTION 2: ĐỀ SINH HỌC TỰ ĐỘNG (Dành cho Sinh học) ── */}
+      {isBio && (
+        <div className="space-y-3 pt-2">
+          <div className="flex items-center justify-between px-1">
+            <div className="flex items-center gap-2">
+              <span className="text-base">🌿</span>
+              <h2 className="text-sm font-black text-slate-200 uppercase tracking-wider">
+                Đề Sinh Học Tự Động (Generators Vô Hạn)
+              </h2>
+            </div>
+            <span className="text-[11px] text-emerald-300 font-bold">
+              Tự sinh số liệu mới: Phép lai Mendel, DNA & Tái bản, Phân bào & NST, Calo, ABO
+            </span>
+          </div>
+
+          <div className="space-y-2.5">
+            {BIOLOGY_GENERATOR_TOPICS.map((gen) => {
+              const Icon = gen.icon;
+              const targetGrade = (gen.requiredLessonId.includes('g9')
+                ? 9
+                : gen.requiredLessonId.includes('g8')
+                ? 8
+                : gen.requiredLessonId.includes('g7')
+                ? 7
+                : 6) as Grade;
+              const isUnlocked = isLessonReached(gen.requiredLessonId, targetGrade);
+
+              return (
+                <div
+                  key={gen.id}
+                  onClick={() => {
+                    sound.playClick();
+                    if (isUnlocked) {
+                      navigate(`/play/${gen.id}/dyn?mode=practice`);
+                    } else {
+                      setModalInfo({
+                        isOpen: true,
+                        title: gen.title,
+                        badge: '🔒 Chưa mở khóa',
+                        description: `Dạng bài tập "${gen.title}" yêu cầu vận dụng kiến thức của ${gen.requiredLessonName}. Bạn cần học và hoàn thành bài này trên lộ trình trước nhé!`,
+                        requiredLessonName: gen.requiredLessonName,
+                        targetGrade,
+                        actionLabel: 'ĐẾN HỌC BÀI NÀY',
+                      });
+                    }
+                  }}
+                  className={`border-2 p-4 rounded-3xl transition-all shadow-[0_4px_0_0_#131f24] flex items-center justify-between group cursor-pointer ${
+                    isUnlocked
+                      ? 'bg-[#18272f] border-[#2e4756] hover:border-emerald-400 hover:translate-y-[-2px]'
+                      : 'bg-[#131f24]/80 border-[#20333d] hover:border-emerald-500/40 opacity-75'
+                  }`}
+                >
+                  <div className="flex items-center gap-3.5 min-w-0 pr-2">
+                    <div
+                      className={`w-11 h-11 rounded-2xl border-2 flex items-center justify-center shrink-0 ${
+                        isUnlocked
+                          ? 'bg-[#062c20] border-emerald-500/40 text-emerald-400'
+                          : 'bg-[#18272f] border-[#20333d] text-slate-600'
+                      }`}
+                    >
+                      {isUnlocked ? <Icon className="w-5 h-5 text-emerald-400" /> : <Lock className="w-5 h-5 text-slate-500" />}
+                    </div>
+                    <div className="min-w-0">
+                      <div className="flex flex-wrap items-center gap-2 mb-0.5">
+                        <h3
+                          className={`text-xs font-black truncate transition-colors ${
+                            isUnlocked ? 'text-white group-hover:text-emerald-300' : 'text-slate-400'
+                          }`}
+                        >
+                          {gen.title}
+                        </h3>
+                        {isUnlocked ? (
+                          <span className="text-[10px] font-bold bg-emerald-500/15 text-emerald-400 px-2 py-0.5 rounded-full border border-emerald-500/30 shrink-0">
+                            {gen.badge}
+                          </span>
+                        ) : (
+                          <span className="text-[10px] font-bold bg-[#20333d] text-slate-400 px-2 py-0.5 rounded-full border border-[#2e4756] flex items-center gap-1 shrink-0">
+                            <Lock className="w-2.5 h-2.5" /> Chưa mở khóa
+                          </span>
+                        )}
+                      </div>
+                      <p className="text-[11px] text-slate-300 leading-relaxed truncate font-medium">
+                        {gen.desc}
+                      </p>
+                      {!isUnlocked && gen.requiredLessonName && (
+                        <div className="flex items-center gap-1 text-[10px] font-bold text-amber-400/90 pt-0.5">
+                          <span>🔒 Mở khóa khi học đến: {gen.requiredLessonName}</span>
+                          <span className="text-emerald-400 underline flex items-center ml-1">
+                            Đến học <ArrowRight className="w-3 h-3 ml-0.5 inline" />
+                          </span>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
+                  <div
+                    className={`w-9 h-9 rounded-2xl border-2 flex items-center justify-center shrink-0 transition-transform ${
+                      isUnlocked
+                        ? 'bg-emerald-500/20 border-emerald-500 text-emerald-400 shadow-[0_2px_0_0_#059669] group-hover:scale-105'
+                        : 'bg-[#18272f] border-[#20333d] text-slate-600'
+                    }`}
+                  >
+                    {isUnlocked ? <Play className="w-4 h-4 fill-emerald-400 text-emerald-400" /> : <Lock className="w-4 h-4" />}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+
+
       {/* ── SECTION 2: ĐỀ TOÁN HÓA SINH TỰ ĐỘNG (Dành cho Hóa học Lớp 8) ── */}
-      {!isPhysics && selectedGrade === 8 && (
+      {!isPhysics && !isBio && selectedGrade === 8 && (
         <div className="space-y-3 pt-2">
           <div className="flex items-center justify-between px-1">
             <div className="flex items-center gap-2">
@@ -756,6 +1326,60 @@ export const PracticePage: React.FC = () => {
           </div>
         </div>
       )}
+
+      {/* ── SECTION 3: ĐẤU TRƯỜNG MINIGAMES (Tương tác & Thử thách Đa Môn) ── */}
+      <div className="space-y-3 pt-2">
+        <div className="flex items-center justify-between px-1">
+          <div className="flex items-center gap-2">
+            <span className="text-base">🎮</span>
+            <h2 className="text-sm font-black text-slate-200 uppercase tracking-wider">
+              Đấu Trường Mini-Games {isPhysics ? 'Vật Lý' : isBio ? 'Sinh Học' : 'Hóa Học'}
+            </h2>
+          </div>
+          <span className={`text-[11px] font-bold ${isPhysics ? 'text-amber-300' : isBio ? 'text-emerald-300' : 'text-[#38bdf8]'}`}>
+            {activeMinigames.length} trò chơi tương tác & phản xạ
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {activeMinigames.map((game) => {
+            const Icon = game.icon;
+            const theme = GAME_COLOR_MAP[game.colorKey] || GAME_COLOR_MAP.emerald;
+            return (
+              <div
+                key={game.id}
+                onClick={() => {
+                  sound.playClick();
+                  navigate(game.route);
+                }}
+                className={`p-4 rounded-3xl border-2 bg-[#18272f] border-[#2e4756] ${theme.hoverBorder} shadow-[0_4px_0_0_#131f24] hover:translate-y-[-2px] transition-all cursor-pointer flex items-center justify-between group`}
+              >
+                <div className="flex items-center gap-3 min-w-0 pr-2">
+                  <div className={`w-12 h-12 rounded-2xl ${theme.iconBg} border-2 ${theme.iconBorder} ${theme.iconColor} flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform`}>
+                    <Icon className="w-6 h-6" />
+                  </div>
+                  <div className="min-w-0">
+                    <div className="flex items-center gap-2 mb-0.5">
+                      <h3 className={`text-xs font-black text-white ${theme.hoverTitle} truncate`}>
+                        {game.title}
+                      </h3>
+                      <span className={`text-[9px] font-black uppercase px-2 py-0.5 rounded-full ${theme.badgeBg} ${theme.badgeText} border ${theme.badgeBorder} shrink-0`}>
+                        {game.badge}
+                      </span>
+                    </div>
+                    <p className="text-[11px] text-slate-400 leading-snug line-clamp-2">
+                      {game.desc}
+                    </p>
+                  </div>
+                </div>
+                <div className={`w-9 h-9 rounded-2xl ${theme.playBg} border-2 ${theme.playBorder} ${theme.iconColor} flex items-center justify-center shrink-0 ${theme.playShadow}`}>
+                  <Play className={`w-4 h-4 ${theme.playFill}`} />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
 
       {/* Interactive Guidance Modal for Locked & Coming Soon Items */}
       <AnimatePresence>

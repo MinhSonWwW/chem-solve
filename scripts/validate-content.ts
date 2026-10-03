@@ -172,6 +172,7 @@ if (currentPath === scriptPath || process.argv[1]?.includes('validate-content'))
   const dirsToScan = [
     path.resolve(process.cwd(), 'src/content/exercises'),
     path.resolve(process.cwd(), 'src/content/physics'),
+    path.resolve(process.cwd(), 'src/content/biology'),
   ].filter(fs.existsSync);
 
   let grandTotalFiles = 0;

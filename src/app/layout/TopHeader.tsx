@@ -31,11 +31,15 @@ export const TopHeader: React.FC = () => {
                 className={`w-8 h-8 rounded-xl flex items-center justify-center font-black text-white text-sm overflow-hidden border ${
                   activeSubject === 'physics'
                     ? 'bg-[#eab308] border-amber-300/50 shadow-[0_3px_0_0_#ca8a04]'
+                    : activeSubject === 'bio'
+                    ? 'bg-[#10b981] border-emerald-300/50 shadow-[0_3px_0_0_#059669]'
                     : 'bg-[#0ea5e9] border-sky-300/40 shadow-[0_3px_0_0_#0284c7]'
                 }`}
               >
                 {activeSubject === 'physics' ? (
                   <Zap className="w-5 h-5 text-slate-950 fill-slate-950" />
+                ) : activeSubject === 'bio' ? (
+                  <span className="text-base select-none">🌿</span>
                 ) : (
                   <img
                     src={assetUrl('/assets/mascot/atom-idle.png')}
@@ -51,6 +55,10 @@ export const TopHeader: React.FC = () => {
                 {activeSubject === 'physics' ? (
                   <>
                     PHY<span className="text-[#eab308]">-SOLVE</span>
+                  </>
+                ) : activeSubject === 'bio' ? (
+                  <>
+                    BIO<span className="text-[#10b981]">-SOLVE</span>
                   </>
                 ) : (
                   <>
@@ -69,12 +77,22 @@ export const TopHeader: React.FC = () => {
               className={`flex items-center gap-1 px-2 py-1 rounded-xl bg-[#18272f] border text-xs font-black transition-colors shadow-sm cursor-pointer ${
                 activeSubject === 'physics'
                   ? 'border-amber-500/40 hover:border-amber-400 text-amber-300'
+                  : activeSubject === 'bio'
+                  ? 'border-emerald-500/40 hover:border-emerald-400 text-emerald-300'
                   : 'border-[#2e4756] hover:border-sky-400 text-slate-200'
               }`}
-              title="Đổi môn học (Hóa học, Vật lý...)"
+              title="Đổi môn học (Hóa học, Vật lý, Sinh học...)"
             >
               <span>{currentSub.icon}</span>
-              <span className={`text-[11px] ${activeSubject === 'physics' ? 'text-amber-400' : 'text-sky-400'}`}>
+              <span
+                className={`text-[11px] ${
+                  activeSubject === 'physics'
+                    ? 'text-amber-400'
+                    : activeSubject === 'bio'
+                    ? 'text-emerald-400'
+                    : 'text-sky-400'
+                }`}
+              >
                 {currentSub.shortName}
               </span>
             </button>

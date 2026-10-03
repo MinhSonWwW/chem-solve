@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { BookOpen, FlaskConical, ShoppingBag, BarChart3, User, Zap } from 'lucide-react';
+import { BookOpen, FlaskConical, ShoppingBag, BarChart3, User, Zap, Dna } from 'lucide-react';
 import { sound } from '@/lib/audio';
 import { useActiveSubject } from '@/content/subjects';
 
@@ -11,7 +11,7 @@ export const BottomNav: React.FC = () => {
 
   const navItems = [
     { to: `/learn/${activeGrade}`, label: 'Học', icon: BookOpen, isLearn: true },
-    { to: '/practice', label: 'Luyện tập', icon: activeSubject === 'physics' ? Zap : FlaskConical },
+    { to: '/practice', label: 'Luyện tập', icon: activeSubject === 'physics' ? Zap : activeSubject === 'bio' ? Dna : FlaskConical },
     { to: '/shop', label: 'Shop', icon: ShoppingBag },
     { to: '/progress', label: 'Tiến độ', icon: BarChart3 },
     { to: '/profile', label: 'Hồ sơ', icon: User },
@@ -26,7 +26,12 @@ export const BottomNav: React.FC = () => {
             ? location.pathname.startsWith('/learn')
             : location.pathname === item.to || location.pathname.startsWith(`${item.to}/`);
 
-          const activeColor = activeSubject === 'physics' ? 'text-[#eab308]' : 'text-[#0ea5e9]';
+          const activeColor =
+            activeSubject === 'physics'
+              ? 'text-[#eab308]'
+              : activeSubject === 'bio'
+              ? 'text-[#10b981]'
+              : 'text-[#0ea5e9]';
 
           return (
             <NavLink

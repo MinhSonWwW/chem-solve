@@ -9,6 +9,7 @@ import {
   SpeedChallengeGame,
   ReviewGame,
   ReactionBuilderGame,
+  BloodTransfusionGame,
 } from '@/features/minigames';
 
 export const GamesPage: React.FC = () => {
@@ -25,6 +26,9 @@ export const GamesPage: React.FC = () => {
   }
 
   // Render active minigame if gameId matches
+  if (gameId === 'blood-transfusion') {
+    return <BloodTransfusionGame onExit={handleExitGame} />;
+  }
   if (gameId === 'match') {
     return <MatchGame onExit={handleExitGame} />;
   }

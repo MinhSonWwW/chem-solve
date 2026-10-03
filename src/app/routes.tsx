@@ -11,6 +11,7 @@ import { ProgressPage } from './pages/ProgressPage';
 import { ProfilePage } from './pages/ProfilePage';
 import { SearchPage } from './pages/SearchPage';
 import { ShopPage } from './pages/ShopPage';
+import { GamesPage } from './pages/GamesPage';
 import { DesignSystemPage } from './pages/DesignSystemPage';
 
 export const router = createHashRouter([
@@ -57,7 +58,7 @@ export const router = createHashRouter([
       },
       {
         path: 'games/:gameId',
-        element: <Navigate to="/practice" replace />
+        element: <GamesPage />
       },
       {
         path: 'daily',
