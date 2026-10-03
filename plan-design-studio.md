@@ -119,8 +119,8 @@ Linh vật bình tam giác **Flasky** không phải là ảnh tĩnh gắn cho c�
 ---
 
 ### 🚀 Milestone 4: Tái Thiết Kế Đấu Trường Luyện Tập (PracticePage & Generators Hub)
-- [ ] **Mục tiêu:** Xóa bỏ hoàn toàn bố cục "card hộp màu kẹp icon" đại trà trên trang Luyện tập, chuyển sang phong cách Studio Thao Trường.
-- [ ] **Công việc chi tiết:**
+- [x] **Mục tiêu:** Xóa bỏ hoàn toàn bố cục "card hộp màu kẹp icon" đại trà trên trang Luyện tập, chuyển sang phong cách Studio Thao Trường.
+- [x] **Công việc chi tiết:**
   1. **Thẻ Đấu Trường Mini-Games:**
      - Thay thế toàn bộ icon hộp vuông màu mè bằng thẻ minh họa chuyên biệt:
        - Cấp cứu ABO: Túi máu truyền dịch hoạt hình có kim tiêm chibi.
@@ -132,7 +132,7 @@ Linh vật bình tam giác **Flasky** không phải là ảnh tĩnh gắn cho c�
   2. **Thẻ Đề Tính Toán Generators Tự Động:**
      - Sử dụng hình ảnh "Máy tạo đề tự động phòng lab" với bánh răng hoạt họa và cần gạt.
      - Thay icon Lucide nhỏ bằng nhãn bài toán có công thức cách điệu dạng hand-drawn.
-- [ ] **Nghiệm thu M4:** Trang Luyện tập có tính đồ họa phong phú, mỗi mini-game và dạng toán là một tác phẩm minh họa rõ nét, không còn bất kỳ card nào trông giống template AI.
+- [x] **Nghiệm thu M4:** Trang Luyện tập có tính đồ họa phong phú, mỗi mini-game và dạng toán là một tác phẩm minh họa rõ nét, không còn bất kỳ card nào trông giống template AI.
 
 ---
 

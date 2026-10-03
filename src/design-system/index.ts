@@ -30,3 +30,7 @@ export * from './components/SubjectSelectorModal';
 export * from './components/PhysicsKeyboard';
 export * from './components/PhysicsVisualizer';
 export * from './components/BiologyVisualizer';
+export * from './components/HandDrawnIcon';
+export * from './components/DoodleOrnament';
+export * from './components/MinigameIllustration';
+export * from './components/GeneratorBadge';

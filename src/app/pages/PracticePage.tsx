@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from 'motion/react';
 import {
   Play,
   Sparkles,
-  BookOpen,
   Zap,
   Calculator,
   Scale,
@@ -17,11 +16,17 @@ import {
   Layers,
 } from 'lucide-react';
 import { sound } from '@/lib/audio';
-import { assetUrl } from '@/lib/utils';
 import { getCurriculum, type Grade } from '@/content/curriculum';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import { useActiveSubject } from '@/content/subjects';
-import { Mascot, Button } from '@/design-system';
+import {
+  Mascot,
+  Button,
+  HandDrawnIcon,
+  DoodleOrnament,
+  MinigameIllustration,
+  GeneratorBadge,
+} from '@/design-system';
 
 interface LockModalInfo {
   isOpen: boolean;
@@ -677,33 +682,37 @@ export const PracticePage: React.FC = () => {
 
   return (
     <div className="space-y-6 pb-12 select-none max-w-3xl mx-auto">
-      {/* Header Banner */}
-      <div>
-        <div className="flex items-center gap-3.5">
-          <div className={`w-12 h-12 rounded-2xl border-2 flex items-center justify-center p-2 shrink-0 ${
+      {/* Header Banner — Phong cách Studio Thao Trường */}
+      <div className="relative rounded-3xl bg-[#18272f] border-2 border-[#2e4756] p-5 shadow-[0_6px_0_0_#131f24] overflow-hidden">
+        {/* Góc gấp sổ tay thí nghiệm */}
+        <div
+          className={`absolute top-0 right-0 w-8 h-8 pointer-events-none ${
+            isPhysics ? 'bg-amber-600/30' : isBio ? 'bg-emerald-600/30' : 'bg-[#0284c7]/30'
+          }`}
+          style={{ clipPath: 'polygon(100% 0, 0 100%, 100% 100%)' }}
+        />
+        <div className="flex items-center gap-4">
+          <div className={`w-14 h-14 rounded-2xl border-2 flex items-center justify-center p-2 shrink-0 ${
             isPhysics
-              ? 'bg-[#291e07] border-amber-500/40 text-amber-400 shadow-[0_4px_0_0_#78350f]'
+              ? 'bg-[#291e07] border-amber-500/40 shadow-[0_4px_0_0_#78350f]'
               : isBio
-              ? 'bg-[#062c20] border-emerald-500/40 text-emerald-400 shadow-[0_4px_0_0_#064e3b]'
-              : 'bg-[#18272f] border-[#2e4756] shadow-[0_4px_0_0_#131f24]'
+              ? 'bg-[#062c20] border-emerald-500/40 shadow-[0_4px_0_0_#064e3b]'
+              : 'bg-[#0e2233] border-[#2e4756] shadow-[0_4px_0_0_#131f24]'
           }`}>
-            {isPhysics ? (
-              <Zap className="w-7 h-7 text-amber-400" />
-            ) : isBio ? (
-              <span className="text-2xl select-none">🌿</span>
-            ) : (
-              <img
-                src={assetUrl('/assets/icons/xp-potion.png')}
-                alt="Practice"
-                className="w-full h-full object-contain"
-              />
-            )}
+            <HandDrawnIcon
+              name={isPhysics ? 'atom' : isBio ? 'dna' : 'xp-potion'}
+              size={36}
+            />
           </div>
-          <div>
+          <div className="space-y-1 min-w-0">
             <h1 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
-              <span>{isPhysics ? 'Luyện Tập Vật Lý' : isBio ? 'Luyện Tập Sinh Học' : 'Luyện Tập Hóa Học'}</span>
+              <span>{isPhysics ? 'Thao Trường Vật Lý' : isBio ? 'Thao Trường Sinh Học' : 'Thao Trường Hóa Học'}</span>
             </h1>
-            <p className="text-xs text-slate-300 font-medium leading-relaxed">
+            <DoodleOrnament
+              name="wavy-underline"
+              color={isPhysics ? '#fbbf24' : isBio ? '#34d399' : '#38bdf8'}
+            />
+            <p className="text-xs text-slate-300 font-medium leading-relaxed pt-0.5">
               {isPhysics
                 ? 'Luyện bài tập SGK Vật lý: học đến đâu mở khóa đến đấy, không trừ tim, kiếm thêm XP'
                 : isBio
@@ -725,11 +734,7 @@ export const PracticePage: React.FC = () => {
         >
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-2xl bg-[#18272f] border-2 border-[#2e4756] flex items-center justify-center p-1.5 shrink-0 shadow-inner">
-              <img
-                src={assetUrl('/assets/icons/heart-flask.png')}
-                alt="Heart"
-                className="w-full h-full object-contain animate-pulse"
-              />
+              <HandDrawnIcon name="heart-flask" size={26} className="animate-pulse" />
             </div>
             <div>
               <div className="text-xs font-black text-white">
@@ -741,7 +746,7 @@ export const PracticePage: React.FC = () => {
             </div>
           </div>
           <div className="shrink-0 text-xs font-black px-3 py-1.5 rounded-xl bg-[#18272f] border-2 border-[#2e4756] text-white flex items-center gap-1.5 shadow-sm">
-            <img src={assetUrl('/assets/icons/heart-flask.png')} alt="Heart" className="w-3.5 h-3.5 object-contain" />
+            <HandDrawnIcon name="heart-flask" size={16} />
             <span>{hearts}/5</span>
           </div>
         </div>
@@ -786,13 +791,7 @@ export const PracticePage: React.FC = () => {
       <div className="space-y-3 pt-2">
         <div className="flex items-center justify-between px-1">
           <div className="flex items-center gap-2">
-            {isPhysics ? (
-              <Zap className="w-4 h-4 text-amber-400" />
-            ) : isBio ? (
-              <span className="text-sm">🌿</span>
-            ) : (
-              <BookOpen className="w-4 h-4 text-cyan-400" />
-            )}
+            <HandDrawnIcon name={isPhysics ? 'atom' : isBio ? 'dna' : 'flask'} size={20} />
             <h2 className="text-sm font-black text-slate-200 uppercase tracking-wider">
               Bài Tập Theo Từng Bài SGK {isPhysics ? 'Vật Lý' : isBio ? 'Sinh Học' : 'Hóa Học'} Lớp {selectedGrade} ({lessons.length} bài)
             </h2>
@@ -964,7 +963,8 @@ export const PracticePage: React.FC = () => {
 
                     {!isAvailable && lesson.ready && status.requiredLessonTitle && (
                       <div className="flex items-center gap-1.5 text-[10px] font-bold text-amber-400/90 pt-0.5">
-                        <span>🔒 Cần hoàn thành "{status.requiredLessonTitle}" trên lộ trình học</span>
+                        <Lock className="w-3 h-3 text-amber-400 inline shrink-0" />
+                        <span>Cần hoàn thành "{status.requiredLessonTitle}" trên lộ trình học</span>
                         <span className="text-[#38bdf8] underline flex items-center ml-1">
                           Đến học <ArrowRight className="w-3 h-3 ml-0.5 inline" />
                         </span>
@@ -1004,21 +1004,28 @@ export const PracticePage: React.FC = () => {
       {/* ── SECTION 2: ĐỀ TÍNH TOÁN VẬT LÝ TỰ ĐỘNG (Dành cho Vật lý) ── */}
       {isPhysics && (
         <div className="space-y-3 pt-2">
-          <div className="flex items-center justify-between px-1">
-            <div className="flex items-center gap-2">
-              <Zap className="w-4 h-4 text-amber-400" />
-              <h2 className="text-sm font-black text-slate-200 uppercase tracking-wider">
-                Đề Tính Toán Vật Lý Tự Động (Generators Vô Hạn)
-              </h2>
+          {/* Lab Machine Hub Banner */}
+          <div className="p-3.5 rounded-2xl bg-[#1c1e0d] border-2 border-amber-600/40 shadow-[0_4px_0_0_#131f24] flex items-center justify-between gap-3">
+            <div className="flex items-center gap-2.5">
+              <div className="w-9 h-9 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400">
+                <HandDrawnIcon name="atom" size={22} />
+              </div>
+              <div>
+                <h2 className="text-xs sm:text-sm font-black text-amber-300 uppercase tracking-wider">
+                  Máy Tạo Đề Tự Động Phòng Lab (Vật Lý)
+                </h2>
+                <p className="text-[11px] text-amber-200/80">
+                  Tự động sinh ngẫu nhiên số liệu bài toán: Vận tốc, KLR, Áp suất, Cơ năng, Định luật Ôm
+                </p>
+              </div>
             </div>
-            <span className="text-[11px] text-amber-300 font-bold">
-              Tự sinh số liệu mới: Vận tốc, KLR, Áp suất, Cơ năng, Định luật Ôm
+            <span className="hidden sm:inline-block text-[10px] font-black uppercase px-2.5 py-1 rounded-xl bg-amber-400 text-amber-950 shadow-sm shrink-0">
+              VÔ HẠN ĐỀ
             </span>
           </div>
 
           <div className="space-y-2.5">
             {PHYSICS_GENERATOR_TOPICS.map((gen) => {
-              const Icon = gen.icon;
               const targetGrade = (gen.requiredLessonId.includes('g7')
                 ? 7
                 : gen.requiredLessonId.includes('g9')
@@ -1037,7 +1044,7 @@ export const PracticePage: React.FC = () => {
                       setModalInfo({
                         isOpen: true,
                         title: gen.title,
-                        badge: '🔒 Chưa mở khóa',
+                        badge: 'Chưa mở khóa',
                         description: `Dạng bài tập "${gen.title}" yêu cầu vận dụng kiến thức của ${gen.requiredLessonName}. Bạn cần học và hoàn thành bài này trên lộ trình trước nhé!`,
                         requiredLessonName: gen.requiredLessonName,
                         targetGrade,
@@ -1045,26 +1052,20 @@ export const PracticePage: React.FC = () => {
                       });
                     }
                   }}
-                  className={`border-2 p-4 rounded-3xl transition-all shadow-[0_4px_0_0_#131f24] flex items-center justify-between group cursor-pointer ${
+                  className={`border-2 p-3.5 sm:p-4 rounded-3xl transition-all shadow-[0_4px_0_0_#131f24] flex items-center justify-between group cursor-pointer ${
                     isUnlocked
                       ? 'bg-[#18272f] border-[#2e4756] hover:border-amber-400 hover:translate-y-[-2px]'
                       : 'bg-[#131f24]/80 border-[#20333d] hover:border-amber-500/40 opacity-75'
                   }`}
                 >
                   <div className="flex items-center gap-3.5 min-w-0 pr-2">
-                    <div
-                      className={`w-11 h-11 rounded-2xl border-2 flex items-center justify-center shrink-0 ${
-                        isUnlocked
-                          ? 'bg-[#291e07] border-amber-500/40 text-amber-400'
-                          : 'bg-[#18272f] border-[#20333d] text-slate-600'
-                      }`}
-                    >
-                      {isUnlocked ? <Icon className="w-5 h-5 text-amber-400" /> : <Lock className="w-5 h-5 text-slate-500" />}
+                    <div className="shrink-0 group-hover:scale-105 transition-transform">
+                      <GeneratorBadge id={gen.id} size={48} />
                     </div>
                     <div className="min-w-0">
                       <div className="flex flex-wrap items-center gap-2 mb-0.5">
                         <h3
-                          className={`text-xs font-black truncate transition-colors ${
+                          className={`text-xs sm:text-sm font-black truncate transition-colors ${
                             isUnlocked ? 'text-white group-hover:text-amber-300' : 'text-slate-400'
                           }`}
                         >
@@ -1076,7 +1077,7 @@ export const PracticePage: React.FC = () => {
                           </span>
                         ) : (
                           <span className="text-[10px] font-bold bg-[#20333d] text-slate-400 px-2 py-0.5 rounded-full border border-[#2e4756] flex items-center gap-1 shrink-0">
-                            <Lock className="w-2.5 h-2.5" /> Chưa mở khóa
+                            <Lock className="w-2.5 h-2.5 text-amber-400" /> Chưa mở khóa
                           </span>
                         )}
                       </div>
@@ -1085,7 +1086,8 @@ export const PracticePage: React.FC = () => {
                       </p>
                       {!isUnlocked && gen.requiredLessonName && (
                         <div className="flex items-center gap-1 text-[10px] font-bold text-amber-400/90 pt-0.5">
-                          <span>🔒 Mở khóa khi học đến: {gen.requiredLessonName}</span>
+                          <Lock className="w-3 h-3 text-amber-400 inline" />
+                          <span>Mở khóa khi học đến: {gen.requiredLessonName}</span>
                           <span className="text-amber-400 underline flex items-center ml-1">
                             Đến học <ArrowRight className="w-3 h-3 ml-0.5 inline" />
                           </span>
@@ -1113,21 +1115,28 @@ export const PracticePage: React.FC = () => {
       {/* ── SECTION 2: ĐỀ SINH HỌC TỰ ĐỘNG (Dành cho Sinh học) ── */}
       {isBio && (
         <div className="space-y-3 pt-2">
-          <div className="flex items-center justify-between px-1">
-            <div className="flex items-center gap-2">
-              <span className="text-base">🌿</span>
-              <h2 className="text-sm font-black text-slate-200 uppercase tracking-wider">
-                Đề Sinh Học Tự Động (Generators Vô Hạn)
-              </h2>
+          {/* Lab Machine Hub Banner */}
+          <div className="p-3.5 rounded-2xl bg-[#0d1e17] border-2 border-emerald-600/40 shadow-[0_4px_0_0_#131f24] flex items-center justify-between gap-3">
+            <div className="flex items-center gap-2.5">
+              <div className="w-9 h-9 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400">
+                <HandDrawnIcon name="dna" size={22} />
+              </div>
+              <div>
+                <h2 className="text-xs sm:text-sm font-black text-emerald-300 uppercase tracking-wider">
+                  Máy Tạo Đề Tự Động Phòng Lab (Sinh Học)
+                </h2>
+                <p className="text-[11px] text-emerald-200/80">
+                  Tự động sinh ngẫu nhiên số liệu bài toán: Phép lai Mendel, DNA & Tái bản, Phân bào & NST, Calo, ABO
+                </p>
+              </div>
             </div>
-            <span className="text-[11px] text-emerald-300 font-bold">
-              Tự sinh số liệu mới: Phép lai Mendel, DNA & Tái bản, Phân bào & NST, Calo, ABO
+            <span className="hidden sm:inline-block text-[10px] font-black uppercase px-2.5 py-1 rounded-xl bg-emerald-400 text-emerald-950 shadow-sm shrink-0">
+              VÔ HẠN ĐỀ
             </span>
           </div>
 
           <div className="space-y-2.5">
             {BIOLOGY_GENERATOR_TOPICS.map((gen) => {
-              const Icon = gen.icon;
               const targetGrade = (gen.requiredLessonId.includes('g9')
                 ? 9
                 : gen.requiredLessonId.includes('g8')
@@ -1148,7 +1157,7 @@ export const PracticePage: React.FC = () => {
                       setModalInfo({
                         isOpen: true,
                         title: gen.title,
-                        badge: '🔒 Chưa mở khóa',
+                        badge: 'Chưa mở khóa',
                         description: `Dạng bài tập "${gen.title}" yêu cầu vận dụng kiến thức của ${gen.requiredLessonName}. Bạn cần học và hoàn thành bài này trên lộ trình trước nhé!`,
                         requiredLessonName: gen.requiredLessonName,
                         targetGrade,
@@ -1156,26 +1165,20 @@ export const PracticePage: React.FC = () => {
                       });
                     }
                   }}
-                  className={`border-2 p-4 rounded-3xl transition-all shadow-[0_4px_0_0_#131f24] flex items-center justify-between group cursor-pointer ${
+                  className={`border-2 p-3.5 sm:p-4 rounded-3xl transition-all shadow-[0_4px_0_0_#131f24] flex items-center justify-between group cursor-pointer ${
                     isUnlocked
                       ? 'bg-[#18272f] border-[#2e4756] hover:border-emerald-400 hover:translate-y-[-2px]'
                       : 'bg-[#131f24]/80 border-[#20333d] hover:border-emerald-500/40 opacity-75'
                   }`}
                 >
                   <div className="flex items-center gap-3.5 min-w-0 pr-2">
-                    <div
-                      className={`w-11 h-11 rounded-2xl border-2 flex items-center justify-center shrink-0 ${
-                        isUnlocked
-                          ? 'bg-[#062c20] border-emerald-500/40 text-emerald-400'
-                          : 'bg-[#18272f] border-[#20333d] text-slate-600'
-                      }`}
-                    >
-                      {isUnlocked ? <Icon className="w-5 h-5 text-emerald-400" /> : <Lock className="w-5 h-5 text-slate-500" />}
+                    <div className="shrink-0 group-hover:scale-105 transition-transform">
+                      <GeneratorBadge id={gen.id} size={48} />
                     </div>
                     <div className="min-w-0">
                       <div className="flex flex-wrap items-center gap-2 mb-0.5">
                         <h3
-                          className={`text-xs font-black truncate transition-colors ${
+                          className={`text-xs sm:text-sm font-black truncate transition-colors ${
                             isUnlocked ? 'text-white group-hover:text-emerald-300' : 'text-slate-400'
                           }`}
                         >
@@ -1187,7 +1190,7 @@ export const PracticePage: React.FC = () => {
                           </span>
                         ) : (
                           <span className="text-[10px] font-bold bg-[#20333d] text-slate-400 px-2 py-0.5 rounded-full border border-[#2e4756] flex items-center gap-1 shrink-0">
-                            <Lock className="w-2.5 h-2.5" /> Chưa mở khóa
+                            <Lock className="w-2.5 h-2.5 text-amber-400" /> Chưa mở khóa
                           </span>
                         )}
                       </div>
@@ -1196,7 +1199,8 @@ export const PracticePage: React.FC = () => {
                       </p>
                       {!isUnlocked && gen.requiredLessonName && (
                         <div className="flex items-center gap-1 text-[10px] font-bold text-amber-400/90 pt-0.5">
-                          <span>🔒 Mở khóa khi học đến: {gen.requiredLessonName}</span>
+                          <Lock className="w-3 h-3 text-amber-400 inline" />
+                          <span>Mở khóa khi học đến: {gen.requiredLessonName}</span>
                           <span className="text-emerald-400 underline flex items-center ml-1">
                             Đến học <ArrowRight className="w-3 h-3 ml-0.5 inline" />
                           </span>
@@ -1226,21 +1230,28 @@ export const PracticePage: React.FC = () => {
       {/* ── SECTION 2: ĐỀ TOÁN HÓA SINH TỰ ĐỘNG (Dành cho Hóa học Lớp 8) ── */}
       {!isPhysics && !isBio && selectedGrade === 8 && (
         <div className="space-y-3 pt-2">
-          <div className="flex items-center justify-between px-1">
-            <div className="flex items-center gap-2">
-              <Zap className="w-4 h-4 text-amber-400" />
-              <h2 className="text-sm font-black text-slate-200 uppercase tracking-wider">
-                Đề Toán Hóa Sinh Tự Động (Generators Vô Hạn)
-              </h2>
+          {/* Lab Machine Hub Banner */}
+          <div className="p-3.5 rounded-2xl bg-[#0d1a24] border-2 border-sky-600/40 shadow-[0_4px_0_0_#131f24] flex items-center justify-between gap-3">
+            <div className="flex items-center gap-2.5">
+              <div className="w-9 h-9 rounded-xl bg-sky-500/20 border border-sky-500/40 flex items-center justify-center text-sky-400">
+                <HandDrawnIcon name="flask" size={22} />
+              </div>
+              <div>
+                <h2 className="text-xs sm:text-sm font-black text-sky-300 uppercase tracking-wider">
+                  Máy Tạo Đề Tự Động Phòng Lab (Hóa Học)
+                </h2>
+                <p className="text-[11px] text-sky-200/80">
+                  Tự động sinh ngẫu nhiên số liệu bài toán: Mol, Khí ĐKC 24,79L, Dung dịch & Nồng độ, PTHH
+                </p>
+              </div>
             </div>
-            <span className="text-[11px] text-amber-300 font-bold">
-              Tự sinh đề & chất mới theo bài học
+            <span className="hidden sm:inline-block text-[10px] font-black uppercase px-2.5 py-1 rounded-xl bg-sky-400 text-slate-950 shadow-sm shrink-0">
+              VÔ HẠN ĐỀ
             </span>
           </div>
 
           <div className="space-y-2.5">
             {GENERATOR_TOPICS.map((gen) => {
-              const Icon = gen.icon;
               const isUnlocked = isLessonReached(gen.requiredLessonId, 8);
 
               return (
@@ -1254,7 +1265,7 @@ export const PracticePage: React.FC = () => {
                       setModalInfo({
                         isOpen: true,
                         title: gen.title,
-                        badge: '🔒 Chưa mở khóa',
+                        badge: 'Chưa mở khóa',
                         description: `Dạng bài tập "${gen.title}" yêu cầu vận dụng kiến thức của ${gen.requiredLessonName}. Bạn cần học và hoàn thành bài này trên lộ trình trước nhé!`,
                         requiredLessonName: gen.requiredLessonName,
                         targetGrade: 8,
@@ -1262,26 +1273,20 @@ export const PracticePage: React.FC = () => {
                       });
                     }
                   }}
-                  className={`border-2 p-4 rounded-3xl transition-all shadow-[0_4px_0_0_#131f24] flex items-center justify-between group cursor-pointer ${
+                  className={`border-2 p-3.5 sm:p-4 rounded-3xl transition-all shadow-[0_4px_0_0_#131f24] flex items-center justify-between group cursor-pointer ${
                     isUnlocked
                       ? 'bg-[#18272f] border-[#2e4756] hover:border-[#ff9600] hover:translate-y-[-2px]'
                       : 'bg-[#131f24]/80 border-[#20333d] hover:border-amber-500/40 opacity-75'
                   }`}
                 >
                   <div className="flex items-center gap-3.5 min-w-0 pr-2">
-                    <div
-                      className={`w-11 h-11 rounded-2xl border-2 flex items-center justify-center shrink-0 ${
-                        isUnlocked
-                          ? `bg-[#20333d] border-[#2e4756] text-[#ff9600]`
-                          : 'bg-[#18272f] border-[#20333d] text-slate-600'
-                      }`}
-                    >
-                      {isUnlocked ? <Icon className="w-5 h-5" /> : <Lock className="w-5 h-5 text-slate-500" />}
+                    <div className="shrink-0 group-hover:scale-105 transition-transform">
+                      <GeneratorBadge id={gen.id} size={48} />
                     </div>
                     <div className="min-w-0">
                       <div className="flex flex-wrap items-center gap-2 mb-0.5">
                         <h3
-                          className={`text-xs font-black truncate transition-colors ${
+                          className={`text-xs sm:text-sm font-black truncate transition-colors ${
                             isUnlocked ? 'text-white group-hover:text-amber-300' : 'text-slate-400'
                           }`}
                         >
@@ -1293,7 +1298,7 @@ export const PracticePage: React.FC = () => {
                           </span>
                         ) : (
                           <span className="text-[10px] font-bold bg-[#20333d] text-slate-400 px-2 py-0.5 rounded-full border border-[#2e4756] flex items-center gap-1 shrink-0">
-                            <Lock className="w-2.5 h-2.5" /> Chưa mở khóa
+                            <Lock className="w-2.5 h-2.5 text-amber-400" /> Chưa mở khóa
                           </span>
                         )}
                       </div>
@@ -1302,7 +1307,8 @@ export const PracticePage: React.FC = () => {
                       </p>
                       {!isUnlocked && gen.requiredLessonName && (
                         <div className="flex items-center gap-1 text-[10px] font-bold text-amber-400/90 pt-0.5">
-                          <span>🔒 Mở khóa khi học đến: {gen.requiredLessonName}</span>
+                          <Lock className="w-3 h-3 text-amber-400 inline" />
+                          <span>Mở khóa khi học đến: {gen.requiredLessonName}</span>
                           <span className="text-[#38bdf8] underline flex items-center ml-1">
                             Đến học <ArrowRight className="w-3 h-3 ml-0.5 inline" />
                           </span>
@@ -1328,22 +1334,21 @@ export const PracticePage: React.FC = () => {
       )}
 
       {/* ── SECTION 3: ĐẤU TRƯỜNG MINIGAMES (Tương tác & Thử thách Đa Môn) ── */}
-      <div className="space-y-3 pt-2">
+      <div className="space-y-3 pt-3">
         <div className="flex items-center justify-between px-1">
           <div className="flex items-center gap-2">
-            <span className="text-base">🎮</span>
+            <HandDrawnIcon name="flame" size={22} />
             <h2 className="text-sm font-black text-slate-200 uppercase tracking-wider">
               Đấu Trường Mini-Games {isPhysics ? 'Vật Lý' : isBio ? 'Sinh Học' : 'Hóa Học'}
             </h2>
           </div>
           <span className={`text-[11px] font-bold ${isPhysics ? 'text-amber-300' : isBio ? 'text-emerald-300' : 'text-[#38bdf8]'}`}>
-            {activeMinigames.length} trò chơi tương tác & phản xạ
+            {activeMinigames.length} trò chơi thử thách studio
           </span>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
           {activeMinigames.map((game) => {
-            const Icon = game.icon;
             const theme = GAME_COLOR_MAP[game.colorKey] || GAME_COLOR_MAP.emerald;
             return (
               <div
@@ -1352,27 +1357,30 @@ export const PracticePage: React.FC = () => {
                   sound.playClick();
                   navigate(game.route);
                 }}
-                className={`p-4 rounded-3xl border-2 bg-[#18272f] border-[#2e4756] ${theme.hoverBorder} shadow-[0_4px_0_0_#131f24] hover:translate-y-[-2px] transition-all cursor-pointer flex items-center justify-between group`}
+                className={`p-4 rounded-3xl border-2 bg-[#18272f] border-[#2e4756] ${theme.hoverBorder}
+                  shadow-[0_5px_0_0_#101c24] hover:shadow-[0_7px_0_0_#0f172a]
+                  hover:-translate-y-1 active:translate-y-[4px] active:shadow-none
+                  transition-all cursor-pointer flex items-center justify-between group`}
               >
-                <div className="flex items-center gap-3 min-w-0 pr-2">
-                  <div className={`w-12 h-12 rounded-2xl ${theme.iconBg} border-2 ${theme.iconBorder} ${theme.iconColor} flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform`}>
-                    <Icon className="w-6 h-6" />
+                <div className="flex items-center gap-3.5 min-w-0 pr-2">
+                  <div className="w-14 h-14 rounded-2xl bg-[#0f172a] border-2 border-[#2e4756] group-hover:border-slate-400 flex items-center justify-center shrink-0 p-1 shadow-inner group-hover:scale-105 transition-transform">
+                    <MinigameIllustration id={game.id} size={50} />
                   </div>
                   <div className="min-w-0">
                     <div className="flex items-center gap-2 mb-0.5">
-                      <h3 className={`text-xs font-black text-white ${theme.hoverTitle} truncate`}>
+                      <h3 className={`text-xs sm:text-sm font-black text-white ${theme.hoverTitle} truncate`}>
                         {game.title}
                       </h3>
                       <span className={`text-[9px] font-black uppercase px-2 py-0.5 rounded-full ${theme.badgeBg} ${theme.badgeText} border ${theme.badgeBorder} shrink-0`}>
                         {game.badge}
                       </span>
                     </div>
-                    <p className="text-[11px] text-slate-400 leading-snug line-clamp-2">
+                    <p className="text-[11px] text-slate-300 leading-snug line-clamp-2">
                       {game.desc}
                     </p>
                   </div>
                 </div>
-                <div className={`w-9 h-9 rounded-2xl ${theme.playBg} border-2 ${theme.playBorder} ${theme.iconColor} flex items-center justify-center shrink-0 ${theme.playShadow}`}>
+                <div className={`w-10 h-10 rounded-2xl ${theme.playBg} border-2 ${theme.playBorder} ${theme.iconColor} flex items-center justify-center shrink-0 ${theme.playShadow} group-hover:scale-105 transition-transform`}>
                   <Play className={`w-4 h-4 ${theme.playFill}`} />
                 </div>
               </div>
@@ -1421,7 +1429,10 @@ export const PracticePage: React.FC = () => {
                     <span className="text-[10px] uppercase text-amber-400/80 font-black block">
                       Điều kiện mở khóa:
                     </span>
-                    <span>👉 Cần học xong: <strong>{modalInfo.requiredLessonName}</strong></span>
+                    <span className="flex items-center gap-1.5 pt-0.5">
+                      <ArrowRight className="w-3.5 h-3.5 text-amber-400 inline shrink-0" />
+                      <span>Cần học xong: <strong>{modalInfo.requiredLessonName}</strong></span>
+                    </span>
                   </div>
                 )}
               </div>
