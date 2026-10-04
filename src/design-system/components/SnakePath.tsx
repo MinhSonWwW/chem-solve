@@ -9,7 +9,7 @@
  */
 import React from 'react';
 import { motion } from 'motion/react';
-import { Check, Lock, Star, Play, Award, BookOpen } from 'lucide-react';
+import { Check, Lock, Star, Play, Award, BookOpen, Gift } from 'lucide-react';
 import { sound } from '@/lib/audio';
 import { HandDrawnIcon } from './HandDrawnIcon';
 import { Mascot } from './Mascot';
@@ -431,10 +431,8 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
 
                   {/* Icon nội dung nốt */}
                   {isChest ? (
-                    <HandDrawnIcon
-                      name="treasure-chest"
-                      size={36}
-                      className={isCompleted ? 'opacity-70' : ''}
+                    <Gift
+                      className={`w-9 h-9 stroke-[2] ${isCompleted ? 'text-slate-400' : 'text-white'}`}
                     />
                   ) : isCompleted ? (
                     <Check className="w-8 h-8 stroke-[3.5]" />
@@ -443,7 +441,7 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
                   ) : isActive ? (
                     <Play className={`w-7 h-7 ${ac.iconColor === 'text-white' ? 'fill-white' : 'fill-slate-950'} ml-0.5`} />
                   ) : isUnready ? (
-                    <HandDrawnIcon name="flask" size={22} className="opacity-40" />
+                    <Lock className="w-6 h-6 text-slate-500 opacity-40" />
                   ) : isTheory ? (
                     <BookOpen className="w-6 h-6 text-slate-500" />
                   ) : isCheckpoint ? (
