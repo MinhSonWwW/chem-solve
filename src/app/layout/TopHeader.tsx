@@ -1,18 +1,11 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Search } from 'lucide-react';
-import { Heart, Streak, XPBadge, GemBadge, HeartRefillModal, SubjectSelectorModal, HandDrawnIcon } from '@/design-system';
+import { Search, Zap } from 'lucide-react';
+import { Heart, Streak, XPBadge, GemBadge, HeartRefillModal, SubjectSelectorModal } from '@/design-system';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import { sound } from '@/lib/audio';
+import { assetUrl } from '@/lib/utils';
 import { useActiveSubject, SUBJECTS } from '@/content/subjects';
-import type { HandDrawnIconName } from '@/design-system';
-
-/** Icon vẽ tay cho từng môn học — thay thế emoji/Lucide */
-const SUBJECT_ICON_MAP: Record<string, HandDrawnIconName> = {
-  chem: 'flask',
-  physics: 'atom',
-  bio: 'dna',
-};
 
 export const TopHeader: React.FC = () => {
   const { xp, streak, hearts, gems, buyHeartWithGems } = useUserStore();
@@ -54,8 +47,6 @@ export const TopHeader: React.FC = () => {
   const brandPrefix =
     activeSubject === 'physics' ? 'PHY' : activeSubject === 'bio' ? 'BIO' : 'CHEM';
 
-  const iconName = SUBJECT_ICON_MAP[activeSubject] ?? 'flask';
-
   return (
     <>
       <header className="sticky top-0 z-30 w-full bg-[#0f171c]/95 backdrop-blur-md border-b-2 border-[#2e4756] px-4 py-2 lg:hidden">
@@ -68,14 +59,27 @@ export const TopHeader: React.FC = () => {
               onClick={() => sound.playClick()}
               className="flex items-center gap-1.5 cursor-pointer group"
             >
-              {/* Avatar icon vẽ tay — 3D chunky */}
+              {/* Avatar icon môn học — phong cách ảnh 2 */}
               <div
                 className={`w-9 h-9 rounded-xl flex items-center justify-center overflow-hidden border-2
                   ${accentBg} ${accentShadow}
                   group-active:translate-y-[2px] group-active:shadow-none
                   transition-all duration-100`}
               >
-                <HandDrawnIcon name={iconName} size={28} />
+                {activeSubject === 'physics' ? (
+                  <Zap className="w-5 h-5 text-slate-950 fill-slate-950" />
+                ) : activeSubject === 'bio' ? (
+                  <span className="text-base select-none">🌿</span>
+                ) : (
+                  <img
+                    src={assetUrl('/assets/mascot/atom-idle.png')}
+                    alt="Atom"
+                    className="w-7 h-7 object-contain"
+                    onError={(e) => {
+                      (e.target as HTMLElement).style.display = 'none';
+                    }}
+                  />
+                )}
               </div>
               <span className="font-black tracking-wider text-sm sm:text-base text-white">
                 {brandPrefix}<span className={accentText}>-SOLVE</span>
@@ -97,8 +101,7 @@ export const TopHeader: React.FC = () => {
                 ${accentBorder}`}
               title="Đổi môn học"
             >
-              {/* Icon vẽ tay nhỏ */}
-              <HandDrawnIcon name={iconName} size={16} />
+              <span className="text-sm shrink-0">{currentSub.icon}</span>
               <span className={`text-[11px] ${accentText}`}>{currentSub.shortName}</span>
             </button>
           </div>
