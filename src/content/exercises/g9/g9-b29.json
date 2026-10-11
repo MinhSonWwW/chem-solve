@@ -12,11 +12,11 @@
       "options": [
         {
           "id": "a",
-          "label": "C6H12O6 (Glucose) và C12H22O11 (Saccharose)"
+          "label": "C12H22O11 (Glucose) và C6H12O6 (Saccharose)"
         },
         {
           "id": "b",
-          "label": "C12H22O11 (Glucose) và C6H12O6 (Saccharose)"
+          "label": "C6H12O6 (Glucose) và C12H22O11 (Saccharose)"
         },
         {
           "id": "c",
@@ -27,7 +27,7 @@
           "label": "CH3COOH và C2H5OH"
         }
       ],
-      "correctId": "a"
+      "correctId": "b"
     },
     "hints": [
       {
@@ -72,7 +72,7 @@
       "options": [
         {
           "id": "a",
-          "label": "Nhỏ dung dịch acid HCl"
+          "label": "Phản ứng tráng bạc với dung dịch AgNO3 trong NH3 đun nóng (chỉ Glucose có kết tủa bạc sáng bóng bám thành ống)"
         },
         {
           "id": "b",
@@ -80,14 +80,14 @@
         },
         {
           "id": "c",
-          "label": "Phản ứng tráng bạc với dung dịch AgNO3 trong NH3 đun nóng (chỉ Glucose có kết tủa bạc sáng bóng bám thành ống)"
+          "label": "Dùng quỳ tím thử độ pH"
         },
         {
           "id": "d",
-          "label": "Dùng quỳ tím thử độ pH"
+          "label": "Nhỏ dung dịch acid HCl"
         }
       ],
-      "correctId": "c"
+      "correctId": "a"
     },
     "hints": [
       {

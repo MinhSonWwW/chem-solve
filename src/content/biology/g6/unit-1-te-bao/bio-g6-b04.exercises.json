@@ -173,11 +173,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Tế bào nhân thực đã có màng nhân bao bọc vật chất di truyền, còn nhân sơ chưa có màng nhân"
+          "label": "Tế bào nhân sơ không có màng tế bào bên ngoài"
         },
         {
           "id": "opt-b",
-          "label": "Tế bào nhân sơ không có màng tế bào bên ngoài"
+          "label": "Tế bào nhân sơ không có vật chất di truyền DNA"
         },
         {
           "id": "opt-c",
@@ -185,10 +185,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Tế bào nhân sơ không có vật chất di truyền DNA"
+          "label": "Tế bào nhân thực đã có màng nhân bao bọc vật chất di truyền, còn nhân sơ chưa có màng nhân"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -214,7 +214,7 @@
       {
         "kind": "answer",
         "title": "Chọn phương án đúng",
-        "body": "Đáp án A là định nghĩa chính xác theo SGK."
+        "body": "Đáp án chính xác là định nghĩa chính xác theo SGK."
       }
     ],
     "finalSolution": "Tế bào nhân thực đã có màng nhân bao bọc vật chất di truyền tạo thành nhân hoàn chỉnh, trong khi tế bào nhân sơ chưa có màng nhân (chỉ có vùng nhân chứa DNA trần).",
@@ -329,7 +329,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Chứa chất độc để tiêu diệt các tế bào xung quanh"
+          "label": "Thực hiện quá trình quang hợp tổng hợp chất hữu cơ nhờ chất diệp lục"
         },
         {
           "id": "opt-b",
@@ -337,14 +337,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Thực hiện quá trình quang hợp tổng hợp chất hữu cơ nhờ chất diệp lục"
+          "label": "Chứa chất độc để tiêu diệt các tế bào xung quanh"
         },
         {
           "id": "opt-d",
           "label": "Điều khiển mọi quá trình phân chia của nhân tế bào"
         }
       ],
-      "correctId": "opt-c"
+      "correctId": "opt-a"
     },
     "hints": [
       {

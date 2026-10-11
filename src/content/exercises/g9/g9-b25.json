@@ -12,22 +12,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Nhiều hydrocarbon khác nhau"
-        },
-        {
-          "id": "b",
           "label": "Chỉ duy nhất chất methane (CH4)"
         },
         {
+          "id": "b",
+          "label": "Hợp chất vô cơ của lưu huỳnh và sắt"
+        },
+        {
           "id": "c",
-          "label": "Các este và chất béo"
+          "label": "Nhiều hydrocarbon khác nhau"
         },
         {
           "id": "d",
-          "label": "Hợp chất vô cơ của lưu huỳnh và sắt"
+          "label": "Các este và chất béo"
         }
       ],
-      "correctId": "a"
+      "correctId": "c"
     },
     "hints": [
       {
@@ -163,14 +163,14 @@
         },
         {
           "id": "c",
-          "label": "Methane (CH4, chiếm tới 75 - 95%)"
+          "label": "Hydrogen (H2)"
         },
         {
           "id": "d",
-          "label": "Hydrogen (H2)"
+          "label": "Methane (CH4, chiếm tới 75 - 95%)"
         }
       ],
-      "correctId": "c"
+      "correctId": "d"
     },
     "hints": [
       {

@@ -3,10 +3,14 @@
     "id": "bio-g6-b19-q01",
     "lessonId": "bio-g6-b19",
     "sgkBaiSo": 34,
-    "skillIds": ["bio-thuc-vat-4-nganh"],
+    "skillIds": [
+      "bio-thuc-vat-4-nganh"
+    ],
     "difficulty": 1,
     "prompt": "Hãy sắp xếp 4 ngành thực vật chính theo đúng trình tự tiến hóa từ bậc thấp (xuất hiện sớm) đến bậc cao nhất:",
-    "knowledge": ["bio-thuc-vat-4-nganh"],
+    "knowledge": [
+      "bio-thuc-vat-4-nganh"
+    ],
     "answer": {
       "kind": "ordering",
       "correctOrder": [
@@ -55,25 +59,65 @@
     "id": "bio-g6-b19-q02",
     "lessonId": "bio-g6-b19",
     "sgkBaiSo": 34,
-    "skillIds": ["bio-thuc-vat-4-nganh"],
+    "skillIds": [
+      "bio-thuc-vat-4-nganh"
+    ],
     "difficulty": 2,
     "prompt": "Phân loại các loài thực vật sau vào đúng 4 ngành thực vật tương ứng:",
-    "knowledge": ["bio-thuc-vat-4-nganh"],
+    "knowledge": [
+      "bio-thuc-vat-4-nganh"
+    ],
     "answer": {
       "kind": "sort",
       "buckets": [
-        { "id": "b-bryo", "label": "Ngành Rêu" },
-        { "id": "b-pteri", "label": "Ngành Dương xỉ" },
-        { "id": "b-gymno", "label": "Ngành Hạt trần" },
-        { "id": "b-angio", "label": "Ngành Hạt kín" }
+        {
+          "id": "b-bryo",
+          "label": "Ngành Rêu"
+        },
+        {
+          "id": "b-pteri",
+          "label": "Ngành Dương xỉ"
+        },
+        {
+          "id": "b-gymno",
+          "label": "Ngành Hạt trần"
+        },
+        {
+          "id": "b-angio",
+          "label": "Ngành Hạt kín"
+        }
       ],
       "items": [
-        { "id": "it-1", "label": "Cây rêu tường", "bucketId": "b-bryo" },
-        { "id": "it-2", "label": "Cây dương xỉ", "bucketId": "b-pteri" },
-        { "id": "it-3", "label": "Cây thông hai lá", "bucketId": "b-gymno" },
-        { "id": "it-4", "label": "Cây vạn tuế", "bucketId": "b-gymno" },
-        { "id": "it-5", "label": "Cây hoa sen", "bucketId": "b-angio" },
-        { "id": "it-6", "label": "Cây bàng", "bucketId": "b-angio" }
+        {
+          "id": "it-1",
+          "label": "Cây rêu tường",
+          "bucketId": "b-bryo"
+        },
+        {
+          "id": "it-2",
+          "label": "Cây dương xỉ",
+          "bucketId": "b-pteri"
+        },
+        {
+          "id": "it-3",
+          "label": "Cây thông hai lá",
+          "bucketId": "b-gymno"
+        },
+        {
+          "id": "it-4",
+          "label": "Cây vạn tuế",
+          "bucketId": "b-gymno"
+        },
+        {
+          "id": "it-5",
+          "label": "Cây hoa sen",
+          "bucketId": "b-angio"
+        },
+        {
+          "id": "it-6",
+          "label": "Cây bàng",
+          "bucketId": "b-angio"
+        }
       ]
     },
     "hints": [
@@ -115,10 +159,14 @@
     "id": "bio-g6-b19-q03",
     "lessonId": "bio-g6-b19",
     "sgkBaiSo": 34,
-    "skillIds": ["bio-thuc-vat-4-nganh"],
+    "skillIds": [
+      "bio-thuc-vat-4-nganh"
+    ],
     "difficulty": 1,
     "prompt": "Ghép nối từng ngành thực vật (cột bên trái) với đúng đặc điểm cơ quan sinh dưỡng và sinh sản tiêu biểu nhất của nó (cột bên phải):",
-    "knowledge": ["bio-thuc-vat-4-nganh"],
+    "knowledge": [
+      "bio-thuc-vat-4-nganh"
+    ],
     "answer": {
       "kind": "match",
       "pairs": [
@@ -179,19 +227,35 @@
     "id": "bio-g6-b19-q04",
     "lessonId": "bio-g6-b19",
     "sgkBaiSo": 34,
-    "skillIds": ["bio-thuc-vat-4-nganh"],
+    "skillIds": [
+      "bio-thuc-vat-4-nganh"
+    ],
     "difficulty": 1,
     "prompt": "Đặc điểm hình thái đặc trưng nào sau đây giúp chúng ta dễ dàng nhận biết một cây thuộc nhóm Dương xỉ ngoài thiên nhiên?",
-    "knowledge": ["bio-thuc-vat-4-nganh"],
+    "knowledge": [
+      "bio-thuc-vat-4-nganh"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Lá non có đầu cuộn tròn lại giống như chiếc đầu gậy" },
-        { "id": "opt-b", "label": "Lá có hình chiếc kim nhọn hoắt tiết ra nhựa thơm" },
-        { "id": "opt-c", "label": "Cây luôn nở những bông hoa màu đỏ rực rỡ" },
-        { "id": "opt-d", "label": "Cây chỉ sống trôi nổi tự do trên mặt biển sâu" }
+        {
+          "id": "opt-a",
+          "label": "Cây luôn nở những bông hoa màu đỏ rực rỡ"
+        },
+        {
+          "id": "opt-b",
+          "label": "Lá non có đầu cuộn tròn lại giống như chiếc đầu gậy"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cây chỉ sống trôi nổi tự do trên mặt biển sâu"
+        },
+        {
+          "id": "opt-d",
+          "label": "Lá có hình chiếc kim nhọn hoắt tiết ra nhựa thơm"
+        }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -232,10 +296,14 @@
     "id": "bio-g6-b19-q05",
     "lessonId": "bio-g6-b19",
     "sgkBaiSo": 34,
-    "skillIds": ["bio-thuc-vat-4-nganh"],
+    "skillIds": [
+      "bio-thuc-vat-4-nganh"
+    ],
     "difficulty": 2,
     "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về giới Thực vật:",
-    "knowledge": ["bio-thuc-vat-4-nganh"],
+    "knowledge": [
+      "bio-thuc-vat-4-nganh"
+    ],
     "answer": {
       "kind": "true-false",
       "statements": [

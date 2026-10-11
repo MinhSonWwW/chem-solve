@@ -2,15 +2,45 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <meta name="theme-color" content="#0f172a" />
-    <meta name="description" content="CHEM-SOLVE: Web giải bài tập Hóa học THCS lớp 7-9 theo tinh thần tương tác" />
-    <title>CHEM-SOLVE — Học Hóa Học THCS</title>
+    <meta name="description" content="STEM-SOLVE: Nền tảng học tập & giải bài tập Khoa học Tự nhiên THCS (Hóa học, Sinh học, Vật lý) Lớp 6–9 tương tác theo phong cách Duolingo: giải từng bước, phản hồi tức thì, minigame khoa học và bộ 3 mascot Atom, Leafy, Proton." />
+    <title>STEM-SOLVE — Học & Luyện Tập Khoa Học Tự Nhiên THCS (Hóa, Sinh, Lý)</title>
+
+    <!-- Open Graph / Facebook / Zalo -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="STEM-Solve" />
+    <meta property="og:title" content="STEM-SOLVE — Học & Luyện Tập Khoa Học Tự Nhiên THCS" />
+    <meta property="og:description" content="Giải bài tập từng bước, phản hồi tức thì, minigame tương tác và bộ 3 mascot khoa học Atom, Leafy, Proton." />
+    <meta property="og:image" content="/assets/mascot/atom-celebrating.png" />
+    <meta property="og:locale" content="vi_VN" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="STEM-SOLVE — Khoa Học Tự Nhiên THCS" />
+    <meta name="twitter:description" content="Nền tảng giải bài tập Hóa học, Sinh học, Vật lý THCS tương tác mượt mà." />
+    <meta name="twitter:image" content="/assets/mascot/atom-celebrating.png" />
+
     <!-- Google Fonts: Nunito (Vietnamese + Latin subset) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Instant Theme Detection Script -->
+    <script>
+      (function() {
+        try {
+          var theme = localStorage.getItem('chem_theme') || 'dark';
+          document.documentElement.setAttribute('data-theme', theme);
+          if (theme === 'light') {
+            document.documentElement.classList.add('light');
+          } else {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body class="bg-[#131f24] text-slate-100 antialiased selection:bg-[#0ea5e9] selection:text-white min-h-[100dvh]">
     <div id="root"></div>

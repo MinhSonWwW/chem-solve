@@ -34,3 +34,5 @@ export * from './components/HandDrawnIcon';
 export * from './components/DoodleOrnament';
 export * from './components/MinigameIllustration';
 export * from './components/GeneratorBadge';
+export * from './components/SubjectTrophy';
+export * from './components/ThemeToggle';

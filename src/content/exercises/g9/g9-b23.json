@@ -12,22 +12,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Khí thiên nhiên và khí sinh học (biogas)"
-        },
-        {
-          "id": "b",
-          "label": "Khí than tổ ong (chứa nhiều CO)"
-        },
-        {
-          "id": "c",
           "label": "Khí gas máy lạnh (CFC)"
         },
         {
-          "id": "d",
+          "id": "b",
           "label": "Khí cười (N2O)"
+        },
+        {
+          "id": "c",
+          "label": "Khí than tổ ong (chứa nhiều CO)"
+        },
+        {
+          "id": "d",
+          "label": "Khí thiên nhiên và khí sinh học (biogas)"
         }
       ],
-      "correctId": "a"
+      "correctId": "d"
     },
     "hints": [
       {
@@ -143,11 +143,11 @@
       "options": [
         {
           "id": "a",
-          "label": "Phản ứng cộng"
+          "label": "Phản ứng trao đổi"
         },
         {
           "id": "b",
-          "label": "Phản ứng phân hủy"
+          "label": "Phản ứng cộng"
         },
         {
           "id": "c",
@@ -155,7 +155,7 @@
         },
         {
           "id": "d",
-          "label": "Phản ứng trao đổi"
+          "label": "Phản ứng phân hủy"
         }
       ],
       "correctId": "c"

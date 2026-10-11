@@ -90,8 +90,8 @@ export const MinigameShell: React.FC<MinigameShellProps> = ({
               <div
                 className={`h-full rounded-full transition-all duration-300 ${
                   isTimeCritical
-                    ? 'bg-[#ff4b4b] shadow-[0_0_10px_rgba(255,75,75,0.6)]'
-                    : 'bg-gradient-to-r from-[#0ea5e9] to-[#00cd9c]'
+                    ? 'bg-[#ff4b4b]'
+                    : 'bg-[#00cd9c]'
                 }`}
                 style={{ width: `${timePercent}%` }}
               />
@@ -102,7 +102,7 @@ export const MinigameShell: React.FC<MinigameShellProps> = ({
         {/* Combo Badge (if combo >= 2) */}
         {combo >= 2 && (
           <div className="flex justify-center">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#ff9600]/15 border border-[#ff9600]/40 text-[#ff9600] text-[11px] font-black animate-pulse shadow-[0_0_10px_rgba(255,150,0,0.2)]">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#ff9600]/15 border border-[#ff9600]/40 text-[#ff9600] text-[11px] font-black">
               <CurrencyIcon type="streak" size="xs" />
               <span>Chuỗi x{combo}!</span>
             </div>

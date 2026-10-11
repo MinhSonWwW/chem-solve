@@ -187,22 +187,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Đều là cơ thể sống hoàn chỉnh có khả năng thực hiện đầy đủ các quá trình sống cơ bản"
+          "label": "Đều có số lượng tế bào bằng nhau"
         },
         {
           "id": "opt-b",
-          "label": "Đều có hệ tuần hoàn và hệ hô hấp chuyên biệt phức tạp"
-        },
-        {
-          "id": "opt-c",
           "label": "Đều có kích thước cơ thể lớn nhìn thấy được bằng mắt thường"
         },
         {
+          "id": "opt-c",
+          "label": "Đều có hệ tuần hoàn và hệ hô hấp chuyên biệt phức tạp"
+        },
+        {
           "id": "opt-d",
-          "label": "Đều có số lượng tế bào bằng nhau"
+          "label": "Đều là cơ thể sống hoàn chỉnh có khả năng thực hiện đầy đủ các quá trình sống cơ bản"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -257,7 +257,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Vì tế bào hồng cầu không chứa màng sinh chất"
+          "label": "Vì tế bào hồng cầu có màu đỏ"
         },
         {
           "id": "opt-b",
@@ -265,14 +265,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Vì tế bào hồng cầu chỉ là một bộ phận chuyên hóa phụ thuộc, không thể tự thực hiện mọi chức năng sống độc lập ngoài cơ thể"
+          "label": "Vì tế bào hồng cầu không chứa màng sinh chất"
         },
         {
           "id": "opt-d",
-          "label": "Vì tế bào hồng cầu có màu đỏ"
+          "label": "Vì tế bào hồng cầu chỉ là một bộ phận chuyên hóa phụ thuộc, không thể tự thực hiện mọi chức năng sống độc lập ngoài cơ thể"
         }
       ],
-      "correctId": "opt-c"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -298,7 +298,7 @@
       {
         "kind": "answer",
         "title": "Chọn đáp án đúng",
-        "body": "Đáp án A giải thích chuẩn xác bản chất sinh học."
+        "body": "Đáp án chính xác giải thích chuẩn xác bản chất sinh học."
       }
     ],
     "finalSolution": "Tế bào hồng cầu chỉ là một tế bào chuyên hóa thuộc mô máu của cơ thể đa bào, phụ thuộc vào hệ cơ quan và không có khả năng tự tồn tại, sinh sản độc lập như sinh vật đơn bào.",

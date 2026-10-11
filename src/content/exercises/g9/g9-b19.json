@@ -23,23 +23,23 @@
       "kind": "mcq-single",
       "options": [
         {
-          "id": "opt-1",
-          "label": "Đồng (Cu)"
+          "id": "opt-a",
+          "label": "Nhôm (Al)"
         },
         {
-          "id": "opt-2",
+          "id": "opt-b",
           "label": "Kẽm (Zn)"
         },
         {
-          "id": "opt-3",
+          "id": "opt-c",
           "label": "Sắt (Fe)"
         },
         {
-          "id": "opt-4",
-          "label": "Nhôm (Al)"
+          "id": "opt-d",
+          "label": "Đồng (Cu)"
         }
       ],
-      "correctId": "opt-1"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -91,23 +91,23 @@
       "kind": "mcq-single",
       "options": [
         {
-          "id": "opt-1",
-          "label": "Sủi bọt khí mạnh, đinh sắt tan biến hoàn toàn"
-        },
-        {
-          "id": "opt-2",
+          "id": "opt-a",
           "label": "Xuất hiện kết tủa trắng đục dưới đáy cốc"
         },
         {
-          "id": "opt-3",
+          "id": "opt-b",
+          "label": "Không có hiện tượng gì xảy ra"
+        },
+        {
+          "id": "opt-c",
           "label": "Có lớp kim loại màu đỏ bám ngoài đinh sắt, màu xanh lam của dung dịch nhạt dần"
         },
         {
-          "id": "opt-4",
-          "label": "Không có hiện tượng gì xảy ra"
+          "id": "opt-d",
+          "label": "Sủi bọt khí mạnh, đinh sắt tan biến hoàn toàn"
         }
       ],
-      "correctId": "opt-3"
+      "correctId": "opt-c"
     },
     "hints": [
       {

@@ -3,10 +3,15 @@
     "id": "bio-g6-b09-q01",
     "lessonId": "bio-g6-b09",
     "sgkBaiSo": 24,
-    "skillIds": ["bio-thuc-hanh-co-the"],
+    "skillIds": [
+      "bio-thuc-hanh-co-the"
+    ],
     "difficulty": 1,
     "prompt": "Ghép nối từng sinh vật đơn bào (cột bên trái) với đúng đặc điểm hình thái và cơ quan di chuyển của nó (cột bên phải):",
-    "knowledge": ["bio-thuc-hanh-don-bao-da-bao", "bio-sinh-vat-don-bao"],
+    "knowledge": [
+      "bio-thuc-hanh-don-bao-da-bao",
+      "bio-sinh-vat-don-bao"
+    ],
     "answer": {
       "kind": "match",
       "pairs": [
@@ -63,10 +68,14 @@
     "id": "bio-g6-b09-q02",
     "lessonId": "bio-g6-b09",
     "sgkBaiSo": 24,
-    "skillIds": ["bio-thuc-hanh-co-the"],
+    "skillIds": [
+      "bio-thuc-hanh-co-the"
+    ],
     "difficulty": 2,
     "prompt": "Hãy sắp xếp các thao tác sau theo đúng trình tự chuẩn khi làm tiêu bản quan sát trùng giày trong nước rơm ngâm:",
-    "knowledge": ["bio-thuc-hanh-don-bao-da-bao"],
+    "knowledge": [
+      "bio-thuc-hanh-don-bao-da-bao"
+    ],
     "answer": {
       "kind": "ordering",
       "correctOrder": [
@@ -115,17 +124,33 @@
     "id": "bio-g6-b09-q03",
     "lessonId": "bio-g6-b09",
     "sgkBaiSo": 24,
-    "skillIds": ["bio-thuc-hanh-co-the"],
+    "skillIds": [
+      "bio-thuc-hanh-co-the"
+    ],
     "difficulty": 1,
     "prompt": "Khi lấy mẫu nước từ bình ngâm rơm rạ để làm tiêu bản quan sát vi sinh vật, tại sao nên dùng ống hút lấy giọt nước ở lớp váng bề mặt?",
-    "knowledge": ["bio-thuc-hanh-don-bao-da-bao"],
+    "knowledge": [
+      "bio-thuc-hanh-don-bao-da-bao"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Vì lớp nước bề mặt có nhiều oxygen hòa tan và ánh sáng nên sinh vật đơn bào tập trung nhiều nhất" },
-        { "id": "opt-b", "label": "Vì nước ở bề mặt không chứa vi khuẩn gây hại" },
-        { "id": "opt-c", "label": "Vì ở bề mặt nước không bị bay hơi" },
-        { "id": "opt-d", "label": "Vì ở bề mặt trùng giày không có lông bơi" }
+        {
+          "id": "opt-a",
+          "label": "Vì lớp nước bề mặt có nhiều oxygen hòa tan và ánh sáng nên sinh vật đơn bào tập trung nhiều nhất"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vì nước ở bề mặt không chứa vi khuẩn gây hại"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì ở bề mặt trùng giày không có lông bơi"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì ở bề mặt nước không bị bay hơi"
+        }
       ],
       "correctId": "opt-a"
     },
@@ -168,23 +193,57 @@
     "id": "bio-g6-b09-q04",
     "lessonId": "bio-g6-b09",
     "sgkBaiSo": 24,
-    "skillIds": ["bio-thuc-hanh-co-the"],
+    "skillIds": [
+      "bio-thuc-hanh-co-the"
+    ],
     "difficulty": 2,
     "prompt": "Phân loại các cơ quan nội tạng sau đây của cơ thể người theo vị trí giải phẫu: 'Khoang ngực' và 'Khoang bụng':",
-    "knowledge": ["bio-co-quan-he-co-quan-dong-vat"],
+    "knowledge": [
+      "bio-co-quan-he-co-quan-dong-vat"
+    ],
     "answer": {
       "kind": "sort",
       "buckets": [
-        { "id": "b-chest", "label": "Nằm trong Khoang ngực" },
-        { "id": "b-abdomen", "label": "Nằm trong Khoang bụng" }
+        {
+          "id": "b-chest",
+          "label": "Nằm trong Khoang ngực"
+        },
+        {
+          "id": "b-abdomen",
+          "label": "Nằm trong Khoang bụng"
+        }
       ],
       "items": [
-        { "id": "it-1", "label": "Quả tim", "bucketId": "b-chest" },
-        { "id": "it-2", "label": "Hai lá phổi", "bucketId": "b-chest" },
-        { "id": "it-3", "label": "Dạ dày", "bucketId": "b-abdomen" },
-        { "id": "it-4", "label": "Lá gan", "bucketId": "b-abdomen" },
-        { "id": "it-5", "label": "Ruột non và ruột già", "bucketId": "b-abdomen" },
-        { "id": "it-6", "label": "Hai quả thận", "bucketId": "b-abdomen" }
+        {
+          "id": "it-1",
+          "label": "Quả tim",
+          "bucketId": "b-chest"
+        },
+        {
+          "id": "it-2",
+          "label": "Hai lá phổi",
+          "bucketId": "b-chest"
+        },
+        {
+          "id": "it-3",
+          "label": "Dạ dày",
+          "bucketId": "b-abdomen"
+        },
+        {
+          "id": "it-4",
+          "label": "Lá gan",
+          "bucketId": "b-abdomen"
+        },
+        {
+          "id": "it-5",
+          "label": "Ruột non và ruột già",
+          "bucketId": "b-abdomen"
+        },
+        {
+          "id": "it-6",
+          "label": "Hai quả thận",
+          "bucketId": "b-abdomen"
+        }
       ]
     },
     "hints": [
@@ -226,10 +285,14 @@
     "id": "bio-g6-b09-q05",
     "lessonId": "bio-g6-b09",
     "sgkBaiSo": 24,
-    "skillIds": ["bio-thuc-hanh-co-the"],
+    "skillIds": [
+      "bio-thuc-hanh-co-the"
+    ],
     "difficulty": 2,
     "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về thực hành quan sát cơ thể đơn bào và đa bào:",
-    "knowledge": ["bio-thuc-hanh-don-bao-da-bao"],
+    "knowledge": [
+      "bio-thuc-hanh-don-bao-da-bao"
+    ],
     "answer": {
       "kind": "true-false",
       "statements": [

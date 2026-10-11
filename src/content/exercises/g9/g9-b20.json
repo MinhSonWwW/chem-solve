@@ -16,7 +16,7 @@
         },
         {
           "id": "b",
-          "label": "Kim loại hoạt động rất mạnh (K, Na, Ca, Mg, Al)"
+          "label": "Chỉ duy nhất kim loại sắt (Fe)"
         },
         {
           "id": "c",
@@ -24,7 +24,7 @@
         },
         {
           "id": "d",
-          "label": "Chỉ duy nhất kim loại sắt (Fe)"
+          "label": "Kim loại hoạt động rất mạnh (K, Na, Ca, Mg, Al)"
         }
       ],
       "correctId": "a"
@@ -81,18 +81,18 @@
         },
         {
           "id": "b",
-          "label": "Hàm lượng carbon trong thép cao hơn trong gang"
-        },
-        {
-          "id": "c",
           "label": "Hàm lượng carbon trong gang (2 - 5%) cao hơn trong thép (dưới 2%)"
         },
         {
-          "id": "d",
+          "id": "c",
           "label": "Thép là đơn chất, còn gang là hợp chất"
+        },
+        {
+          "id": "d",
+          "label": "Hàm lượng carbon trong thép cao hơn trong gang"
         }
       ],
-      "correctId": "c"
+      "correctId": "b"
     },
     "hints": [
       {
@@ -293,11 +293,11 @@
       "options": [
         {
           "id": "a",
-          "label": "Fe2O3 + CO -> 2FeO + CO2"
+          "label": "2Fe2O3 + 3CO -> 4Fe + 3CO2"
         },
         {
           "id": "b",
-          "label": "Fe2O3 + 3CO -> 2Fe + 3CO2 (to)"
+          "label": "Fe2O3 + CO -> 2FeO + CO2"
         },
         {
           "id": "c",
@@ -305,10 +305,10 @@
         },
         {
           "id": "d",
-          "label": "2Fe2O3 + 3CO -> 4Fe + 3CO2"
+          "label": "Fe2O3 + 3CO -> 2Fe + 3CO2 (to)"
         }
       ],
-      "correctId": "b"
+      "correctId": "d"
     },
     "hints": [
       {
@@ -334,7 +334,7 @@
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Đáp án A: Fe2O3 + 3CO -> 2Fe + 3CO2."
+        "body": "Đáp án chính xác: Fe2O3 + 3CO -> 2Fe + 3CO2."
       }
     ],
     "finalSolution": "Fe2O3 + 3CO --to--> 2Fe + 3CO2.",

@@ -16,7 +16,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Từ 3 lần đến 20 lần (3x – 20x)"
+          "label": "Từ 10 000 lần đến 50 000 lần"
         },
         {
           "id": "opt-b",
@@ -24,14 +24,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Từ 10 000 lần đến 50 000 lần"
+          "label": "Chỉ phóng to đúng 2 lần duy nhất"
         },
         {
           "id": "opt-d",
-          "label": "Chỉ phóng to đúng 2 lần duy nhất"
+          "label": "Từ 3 lần đến 20 lần (3x – 20x)"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -149,22 +149,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Tế bào biểu bì vảy hành tây"
+          "label": "Cấu trúc nhân tế bào thực vật"
         },
         {
           "id": "opt-b",
-          "label": "Vi khuẩn tả trong giọt nước đọng"
-        },
-        {
-          "id": "opt-c",
           "label": "Gân của một chiếc lá cây và các rãnh vân tay"
         },
         {
+          "id": "opt-c",
+          "label": "Tế bào biểu bì vảy hành tây"
+        },
+        {
           "id": "opt-d",
-          "label": "Cấu trúc nhân tế bào thực vật"
+          "label": "Vi khuẩn tả trong giọt nước đọng"
         }
       ],
-      "correctId": "opt-c"
+      "correctId": "opt-b"
     },
     "hints": [
       {

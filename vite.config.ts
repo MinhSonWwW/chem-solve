@@ -6,7 +6,7 @@ import path from 'path';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/chem-solve/' : '/',
+  base: process.env.BASE_URL || (process.env.GITHUB_PAGES === 'true' ? '/chem-solve/' : '/'),
   plugins: [
     react(),
     tailwindcss(),
@@ -14,10 +14,11 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
       manifest: {
-        name: 'Chem-Solve: Học Hóa Học THCS',
-        short_name: 'ChemSolve',
-        description: 'Web giải bài tập Hóa học THCS lớp 7-9 theo phương pháp tương tác',
+        name: 'STEM-Solve: Học Khoa Học Tự Nhiên THCS',
+        short_name: 'STEMSolve',
+        description: 'Web giải bài tập Khoa học Tự nhiên THCS (Hóa học, Sinh học, Vật lý) lớp 6-9 theo phương pháp tương tác',
         theme_color: '#0f172a',
+        background_color: '#0f172a',
         icons: [
           {
             src: 'pwa-192x192.png',
@@ -41,6 +42,7 @@ export default defineConfig({
           'vendor-react': ['react', 'react-dom', 'react-router-dom'],
           'vendor-motion': ['motion'],
           'vendor-dnd': ['@dnd-kit/core', '@dnd-kit/sortable', '@dnd-kit/utilities'],
+          'vendor-icons': ['lucide-react'],
         },
       },
     },

@@ -17,11 +17,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Hệ thống phóng đại"
+          "label": "Hệ thống giá đỡ"
         },
         {
           "id": "opt-b",
-          "label": "Hệ thống giá đỡ"
+          "label": "Hệ thống điều chỉnh"
         },
         {
           "id": "opt-c",
@@ -29,10 +29,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Hệ thống điều chỉnh"
+          "label": "Hệ thống phóng đại"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -289,22 +289,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Để ánh sáng không chiếu thẳng vào làm tổn thương võng mạc mắt"
-        },
-        {
-          "id": "opt-b",
           "label": "Để kiểm tra xem bóng đèn chiếu sáng có bị nhấp nháy không"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Để quan sát khoảng cách, tránh cho đầu vật kính chạm mạnh làm vỡ lam kính tiêu bản"
+        },
+        {
+          "id": "opt-c",
+          "label": "Để ánh sáng không chiếu thẳng vào làm tổn thương võng mạc mắt"
         },
         {
           "id": "opt-d",
           "label": "Để nhìn xem mâm xoay vật kính có bị lỏng ốc hay không"
         }
       ],
-      "correctId": "opt-c"
+      "correctId": "opt-b"
     },
     "hints": [
       {

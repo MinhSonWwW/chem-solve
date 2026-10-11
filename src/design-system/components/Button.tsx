@@ -3,6 +3,7 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { motion, type HTMLMotionProps } from 'motion/react';
 import { cn } from '@/lib/utils';
 import { spring } from '@/design-system/motion/presets';
+import { haptic } from '@/lib/haptic';
 
 export const buttonVariants = cva(
   'inline-flex items-center justify-center font-black transition-colors select-none cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 disabled:active:translate-y-0 disabled:active:shadow-[0_4px_0_0]',
@@ -64,6 +65,12 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         whileTap={disabled || isLoading ? undefined : { y: 4 }}
         transition={spring.tactile}
         className={cn(buttonVariants({ variant, size, fullWidth }), className)}
+        onClick={(e) => {
+          if (!disabled && !isLoading) {
+            haptic.tap();
+          }
+          props.onClick?.(e);
+        }}
         {...(props as HTMLMotionProps<'button'>)}
       >
         {isLoading ? (

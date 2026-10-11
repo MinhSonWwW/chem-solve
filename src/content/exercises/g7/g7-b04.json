@@ -12,22 +12,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Số hiệu nguyên tử, kí hiệu hóa học, tên nguyên tố và khối lượng nguyên tử"
-        },
-        {
-          "id": "b",
-          "label": "Chỉ có kí hiệu hóa học và tên nguyên tố"
-        },
-        {
-          "id": "c",
           "label": "Chỉ có số hiệu nguyên tử và khối lượng"
         },
         {
-          "id": "d",
+          "id": "b",
           "label": "Tên nguyên tố, trạng thái và màu sắc"
+        },
+        {
+          "id": "c",
+          "label": "Số hiệu nguyên tử, kí hiệu hóa học, tên nguyên tố và khối lượng nguyên tử"
+        },
+        {
+          "id": "d",
+          "label": "Chỉ có kí hiệu hóa học và tên nguyên tố"
         }
       ],
-      "correctId": "a"
+      "correctId": "c"
     },
     "hints": [
       {
@@ -77,22 +77,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Khối lượng nguyên tử"
+          "label": "Số hiệu nguyên tử (Z)"
         },
         {
           "id": "b",
-          "label": "Số neutron"
+          "label": "Khối lượng nguyên tử"
         },
         {
           "id": "c",
-          "label": "Số hiệu nguyên tử (Z)"
+          "label": "Số neutron"
         },
         {
           "id": "d",
           "label": "Số electron hóa trị"
         }
       ],
-      "correctId": "c"
+      "correctId": "a"
     },
     "hints": [
       {
@@ -142,22 +142,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Cột dọc gồm các nguyên tố có tính chất giống nhau"
-        },
-        {
-          "id": "b",
           "label": "Dãy các nguyên tố xếp theo hàng ngang, có cùng số lớp electron"
         },
         {
+          "id": "b",
+          "label": "Danh sách tất cả phi kim"
+        },
+        {
           "id": "c",
-          "label": "Nhóm nguyên tố có cùng khối lượng"
+          "label": "Cột dọc gồm các nguyên tố có tính chất giống nhau"
         },
         {
           "id": "d",
-          "label": "Danh sách tất cả phi kim"
+          "label": "Nhóm nguyên tố có cùng khối lượng"
         }
       ],
-      "correctId": "b"
+      "correctId": "a"
     },
     "hints": [
       {
@@ -421,22 +421,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Mg có 12 neutron, 3 lớp electron"
+          "label": "Mg có 12 proton, 3 lớp electron, 2 electron ở lớp ngoài cùng"
         },
         {
           "id": "b",
-          "label": "Mg có 3 proton, 12 lớp electron"
-        },
-        {
-          "id": "c",
           "label": "Mg có 2 proton, 3 electron ở lớp ngoài cùng"
         },
         {
+          "id": "c",
+          "label": "Mg có 3 proton, 12 lớp electron"
+        },
+        {
           "id": "d",
-          "label": "Mg có 12 proton, 3 lớp electron, 2 electron ở lớp ngoài cùng"
+          "label": "Mg có 12 neutron, 3 lớp electron"
         }
       ],
-      "correctId": "d"
+      "correctId": "a"
     },
     "hints": [
       {
@@ -539,22 +539,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Fluorine (F, Z = 9)"
-        },
-        {
-          "id": "b",
           "label": "Chlorine (Cl, Z = 17)"
         },
         {
+          "id": "b",
+          "label": "Nitrogen (N, Z = 7)"
+        },
+        {
           "id": "c",
-          "label": "Oxygen (O, Z = 8)"
+          "label": "Fluorine (F, Z = 9)"
         },
         {
           "id": "d",
-          "label": "Nitrogen (N, Z = 7)"
+          "label": "Oxygen (O, Z = 8)"
         }
       ],
-      "correctId": "a"
+      "correctId": "c"
     },
     "hints": [
       {
@@ -604,7 +604,7 @@
       "options": [
         {
           "id": "a",
-          "label": "Có cùng số lớp electron"
+          "label": "Đều là phi kim"
         },
         {
           "id": "b",
@@ -612,14 +612,14 @@
         },
         {
           "id": "c",
-          "label": "Có tính chất hóa học tương tự nhau"
+          "label": "Có cùng số lớp electron"
         },
         {
           "id": "d",
-          "label": "Đều là phi kim"
+          "label": "Có tính chất hóa học tương tự nhau"
         }
       ],
-      "correctId": "c"
+      "correctId": "d"
     },
     "hints": [
       {

@@ -16,11 +16,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "4 chỗ cong (2 cong trước, 2 cong sau)"
+          "label": "2 chỗ cong (1 trước, 1 sau)"
         },
         {
           "id": "opt-b",
-          "label": "2 chỗ cong (1 trước, 1 sau)"
+          "label": "4 chỗ cong (2 cong trước, 2 cong sau)"
         },
         {
           "id": "opt-c",
@@ -31,7 +31,7 @@
           "label": "Không có chỗ cong, thẳng đứng tuyệt đối"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -85,7 +85,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Chất hữu cơ (chất cốt giao)"
+          "label": "Lớp màng xương bọc bên ngoài"
         },
         {
           "id": "opt-b",
@@ -93,14 +93,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Lớp màng xương bọc bên ngoài"
+          "label": "Chất hữu cơ (chất cốt giao)"
         },
         {
           "id": "opt-d",
           "label": "Tủy vàng trong khoang xương"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -158,11 +158,11 @@
         },
         {
           "id": "opt-b",
-          "label": "Sự phân chia của lớp sụn tăng trưởng ở hai đầu xương"
+          "label": "Sự tích lũy tủy vàng trong khoang xương"
         },
         {
           "id": "opt-c",
-          "label": "Sự tích lũy tủy vàng trong khoang xương"
+          "label": "Sự phân chia của lớp sụn tăng trưởng ở hai đầu xương"
         },
         {
           "id": "opt-d",
@@ -223,22 +223,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Khớp bất động"
+          "label": "Khớp hoạt dịch"
         },
         {
           "id": "opt-b",
-          "label": "Khớp bán động"
+          "label": "Khớp bất động"
         },
         {
           "id": "opt-c",
-          "label": "Khớp động"
+          "label": "Khớp bán động"
         },
         {
           "id": "opt-d",
-          "label": "Khớp hoạt dịch"
+          "label": "Khớp động"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -292,22 +292,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Tơ cơ mảnh trượt sâu vào khoảng giữa các tơ cơ dày làm bắp cơ ngắn lại và phình to"
+          "label": "Tơ cơ tiêu biến tạm thời tạo khoảng trống co rút"
         },
         {
           "id": "opt-b",
-          "label": "Tơ cơ dày và tơ cơ mảnh cùng dãn dài ra đẩy hai đầu xương ra xa"
-        },
-        {
-          "id": "opt-c",
           "label": "Các tế bào cơ tự phân chia nhân lên làm tăng thể tích bắp cơ tức thời"
         },
         {
+          "id": "opt-c",
+          "label": "Tơ cơ dày và tơ cơ mảnh cùng dãn dài ra đẩy hai đầu xương ra xa"
+        },
+        {
           "id": "opt-d",
-          "label": "Tơ cơ tiêu biến tạm thời tạo khoảng trống co rút"
+          "label": "Tơ cơ mảnh trượt sâu vào khoảng giữa các tơ cơ dày làm bắp cơ ngắn lại và phình to"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -365,15 +365,15 @@
         },
         {
           "id": "opt-b",
-          "label": "Cơ thể tích tụ quá nhiều khí oxygen trong cơ bắp"
-        },
-        {
-          "id": "opt-c",
           "label": "Lượng canxi trong xương bị giải phóng ồ ạt vào máu"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "Xương bị mềm đi do mất chất cốt giao"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cơ thể tích tụ quá nhiều khí oxygen trong cơ bắp"
         }
       ],
       "correctId": "opt-a"
@@ -430,7 +430,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Ngồi học sai tư thế, cúi gập sát bàn hoặc đeo cặp sách quá nặng lệch một bên vai"
+          "label": "Ngồi học thẳng lưng trên bàn ghế có kích thước phù hợp với chiều cao"
         },
         {
           "id": "opt-b",
@@ -438,14 +438,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Uống đủ nước và bổ sung sữa giàu canxi mỗi ngày"
+          "label": "Ngồi học sai tư thế, cúi gập sát bàn hoặc đeo cặp sách quá nặng lệch một bên vai"
         },
         {
           "id": "opt-d",
-          "label": "Ngồi học thẳng lưng trên bàn ghế có kích thước phù hợp với chiều cao"
+          "label": "Uống đủ nước và bổ sung sữa giàu canxi mỗi ngày"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -499,7 +499,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Đặt nẹp cố định ôm qua cả khớp cổ tay và khớp khuỷu tay bằng băng gạc, giữ nạn nhân nằm yên rồi đưa đến viện"
+          "label": "Yêu cầu nạn nhân tự cử động lắc cổ tay liên tục để kiểm tra mức độ tổn thương"
         },
         {
           "id": "opt-b",
@@ -507,14 +507,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Xoa bóp dầu nóng thật mạnh vào chỗ gãy để làm tan máu bầm"
+          "label": "Đặt nẹp cố định ôm qua cả khớp cổ tay và khớp khuỷu tay bằng băng gạc, giữ nạn nhân nằm yên rồi đưa đến viện"
         },
         {
           "id": "opt-d",
-          "label": "Yêu cầu nạn nhân tự cử động lắc cổ tay liên tục để kiểm tra mức độ tổn thương"
+          "label": "Xoa bóp dầu nóng thật mạnh vào chỗ gãy để làm tan máu bầm"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {

@@ -24,11 +24,11 @@
         },
         {
           "id": "opt-c",
-          "label": "Cơ quan thụ cảm → Nơron li tâm → Não bộ → Nơron hướng tâm → Cơ bắp"
+          "label": "Trung ương thần kinh → Nơron hướng tâm → Cơ quan thụ cảm → Nơron li tâm → Cơ quan đáp ứng"
         },
         {
           "id": "opt-d",
-          "label": "Trung ương thần kinh → Nơron hướng tâm → Cơ quan thụ cảm → Nơron li tâm → Cơ quan đáp ứng"
+          "label": "Cơ quan thụ cảm → Nơron li tâm → Não bộ → Nơron hướng tâm → Cơ bắp"
         }
       ],
       "correctId": "opt-a"
@@ -85,22 +85,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Não bộ (nằm trong hộp sọ) và Tủy sống (nằm trong ống xương sống)"
-        },
-        {
-          "id": "opt-b",
           "label": "Các dây thần kinh tủy và các hạch thần kinh giao cảm"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Mắt, tai và các cơ quan xúc giác ở da"
+        },
+        {
+          "id": "opt-c",
+          "label": "Não bộ (nằm trong hộp sọ) và Tủy sống (nằm trong ống xương sống)"
         },
         {
           "id": "opt-d",
           "label": "Dây thần kinh não và các thụ thể áp lực"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -154,22 +154,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Thân chứa nhân, các sợi nhánh ngắn và một sợi trục dài thường có bao myelin cách điện"
-        },
-        {
-          "id": "opt-b",
           "label": "Một màng cứng bọc ngoài không có sợi dẫn truyền"
         },
         {
+          "id": "opt-b",
+          "label": "Thân chứa nhân, các sợi nhánh ngắn và một sợi trục dài thường có bao myelin cách điện"
+        },
+        {
           "id": "opt-c",
-          "label": "Nhiều sợi trục dài nhưng không có thân và không có nhân"
+          "label": "Chỉ gồm các đĩa sụn khớp nối tiếp nhau"
         },
         {
           "id": "opt-d",
-          "label": "Chỉ gồm các đĩa sụn khớp nối tiếp nhau"
+          "label": "Nhiều sợi trục dài nhưng không có thân và không có nhân"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -223,22 +223,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Thể thủy tinh (thể tinh thể)"
-        },
-        {
-          "id": "opt-b",
           "label": "Màng giác (giác mạc)"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Lòng đen và lỗ đồng tử"
+        },
+        {
+          "id": "opt-c",
+          "label": "Thể thủy tinh (thể tinh thể)"
         },
         {
           "id": "opt-d",
           "label": "Dịch thủy dịch"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -292,22 +292,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Ảnh rơi ở phía trước màng lưới; cần đeo thấu kính phân kì thích hợp"
-        },
-        {
-          "id": "opt-b",
-          "label": "Ảnh rơi ở phía sau màng lưới; cần đeo thấu kính hội tụ"
-        },
-        {
-          "id": "opt-c",
           "label": "Ảnh rơi đúng trên màng lưới; chỉ cần đeo kính râm chống lóa"
         },
         {
-          "id": "opt-d",
+          "id": "opt-b",
+          "label": "Ảnh rơi ở phía trước màng lưới; cần đeo thấu kính phân kì thích hợp"
+        },
+        {
+          "id": "opt-c",
           "label": "Cầu mắt không nhận được ánh sáng; cần phẫu thuật ghép màng giác"
+        },
+        {
+          "id": "opt-d",
+          "label": "Ảnh rơi ở phía sau màng lưới; cần đeo thấu kính hội tụ"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -361,22 +361,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Truyền và khuếch đại dao động sóng âm từ màng nhĩ vào màng cửa bầu ở tai trong"
-        },
-        {
-          "id": "opt-b",
           "label": "Tiết chất dịch nhầy để bôi trơn vành tai ngoài"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Trực tiếp phát ra âm thanh phản hồi lại tiếng ồn"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "Ngăn cản không cho bất kì sóng âm nào lọt vào não bộ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Truyền và khuếch đại dao động sóng âm từ màng nhĩ vào màng cửa bầu ở tai trong"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -438,11 +438,11 @@
         },
         {
           "id": "opt-c",
-          "label": "Màng nhĩ và vành tai"
+          "label": "Vòi nhĩ thông họng"
         },
         {
           "id": "opt-d",
-          "label": "Vòi nhĩ thông họng"
+          "label": "Màng nhĩ và vành tai"
         }
       ],
       "correctId": "opt-a"
@@ -499,7 +499,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Giấc ngủ là quá trình ức chế bảo vệ tự nhiên giúp tế bào vỏ não phục hồi; thiếu ngủ kéo dài gây suy giảm trí nhớ, kiệt quệ thần kinh và rối loạn miễn dịch"
+          "label": "Giấc ngủ giúp tăng tiêu hao năng lượng tối đa để giảm cân nhanh chóng"
         },
         {
           "id": "opt-b",
@@ -507,14 +507,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Giấc ngủ giúp tăng tiêu hao năng lượng tối đa để giảm cân nhanh chóng"
+          "label": "Giấc ngủ là quá trình ức chế bảo vệ tự nhiên giúp tế bào vỏ não phục hồi; thiếu ngủ kéo dài gây suy giảm trí nhớ, kiệt quệ thần kinh và rối loạn miễn dịch"
         },
         {
           "id": "opt-d",
           "label": "Thiếu ngủ hoàn toàn không ảnh hưởng đến khả năng tư duy và phản xạ của con người"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {

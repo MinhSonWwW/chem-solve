@@ -16,11 +16,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Lục lạp"
+          "label": "Màng nhân"
         },
         {
           "id": "opt-b",
-          "label": "Ty thể"
+          "label": "Lục lạp"
         },
         {
           "id": "opt-c",
@@ -28,10 +28,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Màng nhân"
+          "label": "Ty thể"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -85,22 +85,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Nước và khí Carbon dioxide (CO2)"
-        },
-        {
-          "id": "opt-b",
           "label": "Glucose và khí Oxygen (O2)"
         },
         {
+          "id": "opt-b",
+          "label": "Nước và khí Carbon dioxide (CO2)"
+        },
+        {
           "id": "opt-c",
-          "label": "Khí Oxygen (O2) và tinh bột"
+          "label": "Nước và chất diệp lục"
         },
         {
           "id": "opt-d",
-          "label": "Nước và chất diệp lục"
+          "label": "Khí Oxygen (O2) và tinh bột"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -149,22 +149,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Nước + Carbon dioxide —(Ánh sáng / Diệp lục)→ Glucose + Oxygen"
-        },
-        {
-          "id": "opt-b",
-          "label": "Glucose + Oxygen —(Ánh sáng)→ Carbon dioxide + Nước"
-        },
-        {
-          "id": "opt-c",
           "label": "Nước + Oxygen —(Diệp lục)→ Glucose + Carbon dioxide"
         },
         {
-          "id": "opt-d",
+          "id": "opt-b",
+          "label": "Nước + Carbon dioxide —(Ánh sáng / Diệp lục)→ Glucose + Oxygen"
+        },
+        {
+          "id": "opt-c",
           "label": "Carbon dioxide + Tinh bột —(Nhiệt độ)→ Nước + Oxygen"
+        },
+        {
+          "id": "opt-d",
+          "label": "Glucose + Oxygen —(Ánh sáng)→ Carbon dioxide + Nước"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -190,7 +190,7 @@
       {
         "kind": "answer",
         "title": "Chọn đáp án",
-        "body": "Đáp án A thể hiện đúng nguyên liệu, điều kiện và sản phẩm."
+        "body": "Đáp án chính xác thể hiện đúng nguyên liệu, điều kiện và sản phẩm."
       }
     ],
     "finalSolution": "Phương trình quang hợp: Nước + Carbon dioxide —(Ánh sáng / Diệp lục)→ Glucose + Oxygen.",
@@ -218,7 +218,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Phiến lá có dạng bản dẹt, diện tích bề mặt lớn"
+          "label": "Phiến lá luôn cuộn tròn kín mít"
         },
         {
           "id": "opt-b",
@@ -230,10 +230,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Phiến lá luôn cuộn tròn kín mít"
+          "label": "Phiến lá có dạng bản dẹt, diện tích bề mặt lớn"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -282,22 +282,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Khí khổng ở lớp biểu bì"
-        },
-        {
-          "id": "opt-b",
           "label": "Mạch gỗ ở cuống lá"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Mô xốp ở giữa phiến lá"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khí khổng ở lớp biểu bì"
         },
         {
           "id": "opt-d",
           "label": "Lớp sáp cutin ngoài cùng"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -346,22 +346,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Chất diệp lục trong lục lạp hấp thụ các ánh sáng màu khác nhưng không hấp thụ và phản chiếu ánh sáng màu xanh lục đến mắt ta"
+          "label": "Do thành tế bào cellulose của lá cây tự phát ra ánh sáng màu xanh lục"
         },
         {
           "id": "opt-b",
-          "label": "Do tế bào lá cây chứa nhiều nước và muối khoáng màu xanh"
+          "label": "Chất diệp lục trong lục lạp hấp thụ các ánh sáng màu khác nhưng không hấp thụ và phản chiếu ánh sáng màu xanh lục đến mắt ta"
         },
         {
           "id": "opt-c",
-          "label": "Do khí carbon dioxide trong không khí có màu xanh lục bám vào bề mặt lá"
+          "label": "Do tế bào lá cây chứa nhiều nước và muối khoáng màu xanh"
         },
         {
           "id": "opt-d",
-          "label": "Do thành tế bào cellulose của lá cây tự phát ra ánh sáng màu xanh lục"
+          "label": "Do khí carbon dioxide trong không khí có màu xanh lục bám vào bề mặt lá"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -387,7 +387,7 @@
       {
         "kind": "answer",
         "title": "Chọn đáp án",
-        "body": "Đáp án A giải thích chính xác hiện tượng."
+        "body": "Đáp án chính xác giải thích chính xác hiện tượng."
       }
     ],
     "finalSolution": "Chất diệp lục phản chiếu ánh sáng màu xanh lục khiến lá cây có màu xanh đặc trưng.",
@@ -410,22 +410,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Chứa mạch gỗ đưa nước từ rễ lên và mạch rây chuyển chất hữu cơ sau quang hợp đến các bộ phận khác"
-        },
-        {
-          "id": "opt-b",
           "label": "Chỉ có tác dụng làm khung đỡ cơ học giúp lá không bị rách, không tham gia vận chuyển"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Hấp thụ trực tiếp khí carbon dioxide và giải phóng oxygen ra ngoài"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "Phát ra nhiệt năng sưởi ấm tế bào lá trong những ngày rét đậm"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chứa mạch gỗ đưa nước từ rễ lên và mạch rây chuyển chất hữu cơ sau quang hợp đến các bộ phận khác"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -451,7 +451,7 @@
       {
         "kind": "answer",
         "title": "Chọn phương án",
-        "body": "Đáp án A mô tả đầy đủ chức năng vận chuyển hai dòng của gân lá."
+        "body": "Đáp án chính xác mô tả đầy đủ chức năng vận chuyển hai dòng của gân lá."
       }
     ],
     "finalSolution": "Gân lá chứa mạch gỗ (cấp nước) và mạch rây (dẫn sản phẩm quang hợp).",
@@ -474,7 +474,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Vì quang hợp hấp thụ khí CO2, tạo khí O2 và lọc bớt bụi bẩn, điều hòa độ ẩm khí hậu"
+          "label": "Vì cây xanh hút hết toàn bộ ánh sáng mặt trời làm thành phố không bị nóng"
         },
         {
           "id": "opt-b",
@@ -486,10 +486,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Vì cây xanh hút hết toàn bộ ánh sáng mặt trời làm thành phố không bị nóng"
+          "label": "Vì quang hợp hấp thụ khí CO2, tạo khí O2 và lọc bớt bụi bẩn, điều hòa độ ẩm khí hậu"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {

@@ -580,7 +580,7 @@ export const ShopPage: React.FC = () => {
 
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 relative z-10">
           <div className="flex items-center gap-4">
-            <div className="w-18 h-18 rounded-2xl bg-[#131f24] border-2 border-amber-400/60 shadow-[0_0_20px_rgba(245,158,11,0.2)] flex items-center justify-center p-1 shrink-0 overflow-hidden group-hover:scale-105 transition-transform relative">
+            <div className="w-18 h-18 rounded-2xl bg-[#131f24] border-2 border-amber-400/80 shadow-[0_4px_0_0_#b45309] flex items-center justify-center p-1 shrink-0 overflow-hidden group-hover:scale-105 transition-transform relative">
               <video
                 src={assetUrl('/assets/animations/gift.mp4')}
                 autoPlay

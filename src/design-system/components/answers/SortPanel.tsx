@@ -130,7 +130,7 @@ const DroppableBucket: React.FC<DroppableBucketProps> = ({
       onClick={onBucketClick}
       className={`p-3.5 rounded-2xl border-2 transition-all flex flex-col min-h-[120px] relative ${
         isOver
-          ? 'border-cyan-400 bg-cyan-950/50 ring-2 ring-cyan-400/70 scale-[1.02] shadow-[0_0_25px_rgba(6,182,212,0.3)]'
+          ? 'border-cyan-400 bg-cyan-950/40 ring-2 ring-cyan-400/60 scale-[1.02] shadow-[0_4px_0_0_#0284c7]'
           : isTarget
           ? 'cursor-pointer border-cyan-500/80 bg-cyan-950/20 hover:bg-cyan-900/30 hover:border-cyan-400'
           : 'border-slate-800 bg-slate-900/60'

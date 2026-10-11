@@ -723,6 +723,42 @@ export const PracticePage: React.FC = () => {
         </div>
       </div>
 
+      {/* Interactive Virtual Lab Banner Card */}
+      <div
+        onClick={() => {
+          sound.playClick();
+          navigate(`/lab?tab=${isPhysics ? 'physics' : isBio ? 'bio' : 'chem'}`);
+        }}
+        className="p-3.5 sm:p-4 rounded-3xl bg-gradient-to-r from-[#18272f] via-[#1f333f] to-[#18272f] border-2 border-sky-500/40 hover:border-sky-400 transition-all cursor-pointer shadow-[0_4px_0_0_#101a1f] group flex items-center justify-between gap-3 active:translate-y-[2px] active:shadow-none"
+      >
+        <div className="flex items-center gap-3.5 min-w-0">
+          <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-br from-sky-500/20 to-emerald-500/20 border-2 border-sky-400/50 flex items-center justify-center shrink-0 text-xl sm:text-2xl group-hover:scale-105 transition-transform shadow-inner">
+            {isPhysics ? '⚡' : isBio ? '🔬' : '🧪'}
+          </div>
+          <div>
+            <div className="flex items-center gap-2">
+              <span className="text-xs sm:text-sm font-black text-white group-hover:text-sky-300 transition-colors">
+                Phòng Thí Nghiệm Ảo Tương Tác
+              </span>
+              <span className="text-[9px] font-black px-2 py-0.5 rounded-full bg-gradient-to-r from-sky-500 to-emerald-500 text-slate-950">
+                M10 LAB
+              </span>
+            </div>
+            <p className="text-[11px] text-slate-400 font-medium line-clamp-1 mt-0.5">
+              {isPhysics
+                ? 'Lắp mạch điện, bóng đèn, điện trở & kiểm chứng Định luật Ôm I = U/R'
+                : isBio
+                ? 'Soi kính hiển vi 4 tiêu bản tế bào, chỉnh ốc vi cấp & đổi vật kính'
+                : 'Thực hành nhỏ giọt hóa chất vào ống nghiệm: quỳ tím, kim loại, kết tủa'}
+            </p>
+          </div>
+        </div>
+        <div className="shrink-0 flex items-center gap-1 text-xs font-black text-sky-400 group-hover:translate-x-1 transition-transform">
+          <span className="hidden sm:inline">Vào Lab</span>
+          <ArrowRight className="w-4 h-4" />
+        </div>
+      </div>
+
       {/* Hearts Recovery Alert if user is low on hearts */}
       {hearts < 5 && (
         <div

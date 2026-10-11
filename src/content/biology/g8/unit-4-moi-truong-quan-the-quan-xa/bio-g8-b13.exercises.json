@@ -20,11 +20,11 @@
         },
         {
           "id": "opt-b",
-          "label": "Tập hợp các loài cá mè, cá trắm và cá chép trong một chiếc ao nuôi"
+          "label": "Các cây bắp cải, cà chua và hành hoa trồng trên một luống đất"
         },
         {
           "id": "opt-c",
-          "label": "Các cây bắp cải, cà chua và hành hoa trồng trên một luống đất"
+          "label": "Tập hợp các loài cá mè, cá trắm và cá chép trong một chiếc ao nuôi"
         },
         {
           "id": "opt-d",
@@ -85,22 +85,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Xấp xỉ 1 : 1, phản ánh tiềm năng sinh sản và duy trì nòi giống của quần thể"
+          "label": "Không có tỉ lệ nào cố định và không ảnh hưởng đến sinh sản"
         },
         {
           "id": "opt-b",
-          "label": "Luôn là 1 đực : 10 cái ở mọi loài động vật"
-        },
-        {
-          "id": "opt-c",
           "label": "Luôn là 10 đực : 1 cái để tăng sức cạnh tranh"
         },
         {
+          "id": "opt-c",
+          "label": "Luôn là 1 đực : 10 cái ở mọi loài động vật"
+        },
+        {
           "id": "opt-d",
-          "label": "Không có tỉ lệ nào cố định và không ảnh hưởng đến sinh sản"
+          "label": "Xấp xỉ 1 : 1, phản ánh tiềm năng sinh sản và duy trì nòi giống của quần thể"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -154,7 +154,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Nhóm tuổi trước sinh sản, Nhóm tuổi sinh sản và Nhóm tuổi sau sinh sản"
+          "label": "Tuổi mùa xuân, Tuổi mùa hạ và Tuổi mùa đông"
         },
         {
           "id": "opt-b",
@@ -162,14 +162,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Tuổi mùa xuân, Tuổi mùa hạ và Tuổi mùa đông"
+          "label": "Nhóm tuổi trước sinh sản, Nhóm tuổi sinh sản và Nhóm tuổi sau sinh sản"
         },
         {
           "id": "opt-d",
           "label": "Tuổi ấu trùng, Tuổi nhộng và Tuổi trưởng thành"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -227,11 +227,11 @@
         },
         {
           "id": "opt-b",
-          "label": "Tháp suy thoái (quần thể có nguy cơ diệt vong)"
+          "label": "Tháp ổn định (số lượng cá thể không đổi)"
         },
         {
           "id": "opt-c",
-          "label": "Tháp ổn định (số lượng cá thể không đổi)"
+          "label": "Tháp suy thoái (quần thể có nguy cơ diệt vong)"
         },
         {
           "id": "opt-d",
@@ -296,11 +296,11 @@
         },
         {
           "id": "opt-b",
-          "label": "4 800 cây / ha"
+          "label": "2 400 cây / ha"
         },
         {
           "id": "opt-c",
-          "label": "2 400 cây / ha"
+          "label": "4 800 cây / ha"
         },
         {
           "id": "opt-d",
@@ -361,11 +361,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Vì mật độ ảnh hưởng trực tiếp đến mức độ sử dụng nguồn sống, tần số gặp gỡ giao phối cũng như mức sinh sản và mức tử vong của quần thể"
+          "label": "Vì chỉ có những loài có mật độ cao mới có khả năng quang hợp"
         },
         {
           "id": "opt-b",
-          "label": "Vì mật độ là chỉ số duy nhất không bao giờ thay đổi dù môi trường biến động"
+          "label": "Vì mật độ ảnh hưởng trực tiếp đến mức độ sử dụng nguồn sống, tần số gặp gỡ giao phối cũng như mức sinh sản và mức tử vong của quần thể"
         },
         {
           "id": "opt-c",
@@ -373,10 +373,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Vì chỉ có những loài có mật độ cao mới có khả năng quang hợp"
+          "label": "Vì mật độ là chỉ số duy nhất không bao giờ thay đổi dù môi trường biến động"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -430,7 +430,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Số lượng ếch đồng và muỗi tăng vọt vào mùa mưa ẩm và sụt giảm mạnh vào mùa khô hạn hàng năm"
+          "label": "Số lượng cá trong hồ bị suy giảm nghiêm trọng do một vụ tràn dầu hóa chất đột ngột"
         },
         {
           "id": "opt-b",
@@ -438,14 +438,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Số lượng cá trong hồ bị suy giảm nghiêm trọng do một vụ tràn dầu hóa chất đột ngột"
+          "label": "Số lượng ếch đồng và muỗi tăng vọt vào mùa mưa ẩm và sụt giảm mạnh vào mùa khô hạn hàng năm"
         },
         {
           "id": "opt-d",
           "label": "Cả cánh rừng bị cháy rụi do sét đánh làm chết hầu hết các loài thú"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -499,22 +499,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Cạnh tranh cùng loài gay gắt làm tăng tỉ lệ tử vong, thúc đẩy di cư sang nơi khác và làm giảm tỉ lệ sinh sản"
+          "label": "Mọi cá thể đều chuyển sang sống kí sinh trên cơ thể nhau"
         },
         {
           "id": "opt-b",
-          "label": "Các cá thể tự động ngừng thở để nhường thức ăn cho thế hệ sau"
-        },
-        {
-          "id": "opt-c",
           "label": "Quần thể sẽ tăng gấp đôi tốc độ sinh sản để bù đắp sự thiếu hụt lương thực"
         },
         {
+          "id": "opt-c",
+          "label": "Các cá thể tự động ngừng thở để nhường thức ăn cho thế hệ sau"
+        },
+        {
           "id": "opt-d",
-          "label": "Mọi cá thể đều chuyển sang sống kí sinh trên cơ thể nhau"
+          "label": "Cạnh tranh cùng loài gay gắt làm tăng tỉ lệ tử vong, thúc đẩy di cư sang nơi khác và làm giảm tỉ lệ sinh sản"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {

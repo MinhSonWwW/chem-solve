@@ -23,23 +23,23 @@
       "kind": "mcq-single",
       "options": [
         {
-          "id": "opt-1",
-          "label": "SO2 (Lưu huỳnh đioxit)"
-        },
-        {
-          "id": "opt-2",
+          "id": "opt-a",
           "label": "CaO (Canxi oxit)"
         },
         {
-          "id": "opt-3",
-          "label": "Na2O (Natri oxit)"
+          "id": "opt-b",
+          "label": "SO2 (Lưu huỳnh đioxit)"
         },
         {
-          "id": "opt-4",
+          "id": "opt-c",
           "label": "CuO (Đồng(II) oxit)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Na2O (Natri oxit)"
         }
       ],
-      "correctId": "opt-1"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -91,23 +91,23 @@
       "kind": "mcq-single",
       "options": [
         {
-          "id": "opt-1",
-          "label": "CaO + 2H2O -> Ca(OH)2 + H2"
-        },
-        {
-          "id": "opt-2",
-          "label": "2CaO + H2O -> 2CaOH"
-        },
-        {
-          "id": "opt-3",
+          "id": "opt-a",
           "label": "CaO + H2O -> Ca(OH)2"
         },
         {
-          "id": "opt-4",
+          "id": "opt-b",
+          "label": "CaO + 2H2O -> Ca(OH)2 + H2"
+        },
+        {
+          "id": "opt-c",
           "label": "CaO + H2O -> CaCO3"
+        },
+        {
+          "id": "opt-d",
+          "label": "2CaO + H2O -> 2CaOH"
         }
       ],
-      "correctId": "opt-3"
+      "correctId": "opt-a"
     },
     "hints": [
       {

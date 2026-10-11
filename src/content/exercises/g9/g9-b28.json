@@ -12,7 +12,7 @@
       "options": [
         {
           "id": "a",
-          "label": "Các acid béo (acid hữu cơ đơn chức có mạch carbon dài, không phân nhánh)"
+          "label": "Các amino acid"
         },
         {
           "id": "b",
@@ -24,10 +24,10 @@
         },
         {
           "id": "d",
-          "label": "Các amino acid"
+          "label": "Các acid béo (acid hữu cơ đơn chức có mạch carbon dài, không phân nhánh)"
         }
       ],
-      "correctId": "a"
+      "correctId": "d"
     },
     "hints": [
       {
@@ -76,18 +76,18 @@
         },
         {
           "id": "b",
-          "label": "Khí CO2 và hơi nước"
+          "label": "Glycerol và acid béo tự do"
         },
         {
           "id": "c",
-          "label": "Glycerol và muối của các acid béo (thành phần chính của xà phòng)"
+          "label": "Khí CO2 và hơi nước"
         },
         {
           "id": "d",
-          "label": "Glycerol và acid béo tự do"
+          "label": "Glycerol và muối của các acid béo (thành phần chính của xà phòng)"
         }
       ],
-      "correctId": "c"
+      "correctId": "d"
     },
     "hints": [
       {

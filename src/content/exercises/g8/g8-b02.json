@@ -155,22 +155,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Kích thước của vật thể bị thu nhỏ lại"
-        },
-        {
-          "id": "b",
-          "label": "Chất rắn được nghiền nhỏ thành bột mịn"
-        },
-        {
-          "id": "c",
           "label": "Có sự tạo thành một hoặc nhiều chất mới"
         },
         {
-          "id": "d",
+          "id": "b",
+          "label": "Kích thước của vật thể bị thu nhỏ lại"
+        },
+        {
+          "id": "c",
           "label": "Chất lỏng chuyển thể sang chất rắn"
+        },
+        {
+          "id": "d",
+          "label": "Chất rắn được nghiền nhỏ thành bột mịn"
         }
       ],
-      "correctId": "c"
+      "correctId": "a"
     },
     "hints": [
       {
@@ -351,7 +351,7 @@
         },
         {
           "id": "b",
-          "label": "Sắt và Khí oxi"
+          "label": "Khí oxi và Oxit sắt từ"
         },
         {
           "id": "c",
@@ -359,10 +359,10 @@
         },
         {
           "id": "d",
-          "label": "Khí oxi và Oxit sắt từ"
+          "label": "Sắt và Khí oxi"
         }
       ],
-      "correctId": "b"
+      "correctId": "d"
     },
     "hints": [
       {

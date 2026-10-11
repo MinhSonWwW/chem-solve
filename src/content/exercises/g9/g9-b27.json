@@ -137,23 +137,23 @@
       "kind": "mcq-single",
       "options": [
         {
-          "id": "opt-1",
-          "label": "Đá vôi tan dần, sủi bọt khí không màu CO2 bay lên"
-        },
-        {
-          "id": "opt-2",
-          "label": "Xuất hiện kết tủa trắng không tan"
-        },
-        {
-          "id": "opt-3",
+          "id": "opt-a",
           "label": "Có mùi hắc của khí lưu huỳnh đioxit SO2"
         },
         {
-          "id": "opt-4",
+          "id": "opt-b",
+          "label": "Xuất hiện kết tủa trắng không tan"
+        },
+        {
+          "id": "opt-c",
+          "label": "Đá vôi tan dần, sủi bọt khí không màu CO2 bay lên"
+        },
+        {
+          "id": "opt-d",
           "label": "Không có hiện tượng gì xảy ra"
         }
       ],
-      "correctId": "opt-1"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -199,23 +199,23 @@
       "kind": "mcq-single",
       "options": [
         {
-          "id": "opt-1",
-          "label": "Phản ứng trùng hợp"
-        },
-        {
-          "id": "opt-2",
+          "id": "opt-a",
           "label": "Phản ứng thủy phân"
         },
         {
-          "id": "opt-3",
+          "id": "opt-b",
           "label": "Phản ứng este hóa (tạo ethyl acetate có mùi thơm hoa quả)"
         },
         {
-          "id": "opt-4",
+          "id": "opt-c",
+          "label": "Phản ứng trùng hợp"
+        },
+        {
+          "id": "opt-d",
           "label": "Phản ứng trung hòa"
         }
       ],
-      "correctId": "opt-3"
+      "correctId": "opt-b"
     },
     "hints": [
       {

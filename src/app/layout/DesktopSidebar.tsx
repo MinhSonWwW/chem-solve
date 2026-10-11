@@ -12,12 +12,15 @@ import {
   VolumeX,
   Code2,
   ChevronDown,
+  LogIn,
+  TestTubes,
 } from 'lucide-react';
 import { sound } from '@/lib/audio';
 import { useUserStore } from '@/features/gamification/useUserStore';
+import { useAuthStore } from '@/features/auth/useAuthStore';
 import { assetUrl } from '@/lib/utils';
-import { SubjectSelectorModal } from '@/design-system';
-import { useActiveSubject, SUBJECTS } from '@/content/subjects';
+import { SubjectSelectorModal, ThemeToggle } from '@/design-system';
+import { useActiveSubject, useActiveGrade, SUBJECTS } from '@/content/subjects';
 
 interface NavItem {
   to: string;
@@ -29,6 +32,7 @@ interface NavItem {
 const NAV_ITEMS: NavItem[] = [
   { to: '/learn', label: 'HỌC', icon: BookOpen, matchPrefix: '/learn' },
   { to: '/practice', label: 'LUYỆN TẬP', icon: FlaskConical, matchPrefix: '/practice' },
+  { to: '/lab', label: 'PHÒNG LAB', icon: TestTubes, matchPrefix: '/lab' },
   { to: '/shop', label: 'CỬA HÀNG', icon: ShoppingBag, matchPrefix: '/shop' },
   { to: '/daily', label: 'NHIỆM VỤ', icon: Zap, matchPrefix: '/daily' },
   { to: '/progress', label: 'TIẾN ĐỘ', icon: BarChart3, matchPrefix: '/progress' },
@@ -38,11 +42,11 @@ const NAV_ITEMS: NavItem[] = [
 export const DesktopSidebar: React.FC = () => {
   const location = useLocation();
   const { soundEnabled, toggleSound } = useUserStore();
+  const { user, isAuthenticated } = useAuthStore();
   const [showSubjectModal, setShowSubjectModal] = useState(false);
   const { subject: activeSubject, setSubject: setActiveSubjectState } = useActiveSubject();
+  const { grade: activeGrade } = useActiveGrade();
   const currentSub = SUBJECTS.find((s) => s.id === activeSubject) || SUBJECTS[0];
-  const activeGrade =
-    typeof window !== 'undefined' ? localStorage.getItem('chem_active_grade') || '8' : '8';
 
   return (
     <aside className="hidden lg:flex flex-col justify-between w-64 h-[100dvh] sticky top-0 border-r-2 border-[#2e4756] bg-[#131f24]/95 px-4 py-6 select-none z-20">
@@ -109,7 +113,7 @@ export const DesktopSidebar: React.FC = () => {
             sound.playClick();
             setShowSubjectModal(true);
           }}
-          className={`w-full flex items-center justify-between p-2.5 rounded-2xl bg-[#18272f] border-2 transition-all text-left shadow-[0_3px_0_0_#101a1f] cursor-pointer group ${
+          className={`sidebar-subject-btn w-full flex items-center justify-between p-2.5 rounded-2xl bg-[#18272f] border-2 transition-all text-left shadow-[0_3px_0_0_#101a1f] cursor-pointer group ${
             activeSubject === 'physics'
               ? 'border-amber-500/40 hover:border-amber-400'
               : activeSubject === 'bio'
@@ -174,7 +178,7 @@ export const DesktopSidebar: React.FC = () => {
                 key={item.to}
                 to={to}
                 onClick={() => sound.playClick()}
-                className={`flex items-center gap-3.5 px-4 py-3.5 rounded-2xl text-xs font-black tracking-wider transition-all duration-150 cursor-pointer border-2 ${
+                className={`sidebar-nav-item flex items-center gap-3.5 px-4 py-3.5 rounded-2xl text-xs font-black tracking-wider transition-all duration-150 cursor-pointer border-2 ${
                   isActive
                     ? `${activeColorClass} -translate-y-[2px]`
                     : 'border-transparent text-slate-400 hover:text-white hover:bg-[#18272f]'
@@ -193,7 +197,45 @@ export const DesktopSidebar: React.FC = () => {
       </div>
 
       {/* 3. Footer Tools */}
-      <div className="pt-4 border-t border-slate-800/80 space-y-2">
+      <div className="pt-4 border-t border-slate-800/80 space-y-2.5">
+        {/* Account / Login CTA Widget */}
+        {isAuthenticated && user ? (
+          <NavLink
+            to="/profile"
+            onClick={() => sound.playClick()}
+            className="sidebar-profile-card w-full flex items-center justify-between p-2 rounded-2xl bg-[#18272f] border-2 border-emerald-500/40 hover:border-emerald-400 transition-all cursor-pointer group shadow-[0_2px_0_0_#064e3b]"
+            title="Đến trang Hồ sơ cá nhân"
+          >
+            <div className="flex items-center gap-2 min-w-0">
+              <div className="w-8 h-8 rounded-xl bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 flex items-center justify-center font-black text-xs shrink-0">
+                {user.displayName?.[0]?.toUpperCase() || 'U'}
+              </div>
+              <div className="min-w-0 text-left">
+                <span className="block text-xs font-black text-white truncate group-hover:text-emerald-300">
+                  {user.displayName}
+                </span>
+                <span className="block text-[9px] text-emerald-400 font-extrabold uppercase tracking-tight">
+                  Đã đồng bộ ✓
+                </span>
+              </div>
+            </div>
+            <User className="w-4 h-4 text-slate-400 group-hover:text-emerald-300 shrink-0 mr-1" />
+          </NavLink>
+        ) : (
+          <NavLink
+            to="/auth"
+            onClick={() => sound.playClick()}
+            className="w-full py-2.5 px-3 rounded-2xl bg-gradient-to-r from-[#0ea5e9] to-[#0284c7] hover:from-[#38bdf8] hover:to-[#0ea5e9] text-white text-xs font-black flex items-center justify-center gap-2 shadow-[0_3px_0_0_#0369a1] active:translate-y-[3px] active:shadow-none transition-all cursor-pointer select-none"
+            title="Đăng nhập để lưu tiến trình học tập"
+          >
+            <LogIn className="w-4 h-4" />
+            <span>ĐĂNG NHẬP / ĐĂNG KÝ</span>
+          </NavLink>
+        )}
+
+        {/* Theme Toggle (Light / Dark mode) */}
+        <ThemeToggle variant="sidebar" />
+
         {/* Sound Toggle */}
         <button
           onClick={() => {

@@ -12,22 +12,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Các amino acid (liên kết với nhau bằng liên kết peptide)"
-        },
-        {
-          "id": "b",
-          "label": "Các phân tử glucose"
-        },
-        {
-          "id": "c",
           "label": "Glycerol và các acid béo"
         },
         {
-          "id": "d",
+          "id": "b",
+          "label": "Các amino acid (liên kết với nhau bằng liên kết peptide)"
+        },
+        {
+          "id": "c",
           "label": "Các ion kim loại nặng"
+        },
+        {
+          "id": "d",
+          "label": "Các phân tử glucose"
         }
       ],
-      "correctId": "a"
+      "correctId": "b"
     },
     "hints": [
       {
@@ -72,22 +72,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Lòng trắng trứng bốc cháy thành ngọn lửa màu xanh"
+          "label": "Không có hiện tượng gì, chất lỏng giữ nguyên trạng thái"
         },
         {
           "id": "b",
-          "label": "Lòng trắng trứng hóa lỏng hoàn toàn như nước"
+          "label": "Lòng trắng trứng bốc cháy thành ngọn lửa màu xanh"
         },
         {
           "id": "c",
-          "label": "Protein bị đông tụ thành khối chất rắn màu trắng đục"
+          "label": "Lòng trắng trứng hóa lỏng hoàn toàn như nước"
         },
         {
           "id": "d",
-          "label": "Không có hiện tượng gì, chất lỏng giữ nguyên trạng thái"
+          "label": "Protein bị đông tụ thành khối chất rắn màu trắng đục"
         }
       ],
-      "correctId": "c"
+      "correctId": "d"
     },
     "hints": [
       {
@@ -132,22 +132,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Nhúng vào nước xem sợi nào ướt nhanh hơn"
-        },
-        {
-          "id": "b",
-          "label": "Đốt từng mẫu tơ: tơ tằm cháy có mùi khét như tóc cháy và tạo tro xốp bóp vụn được"
-        },
-        {
-          "id": "c",
           "label": "Dùng nam châm hút thử"
         },
         {
-          "id": "d",
+          "id": "b",
           "label": "Nhỏ dung dịch muối ăn vào sợi"
+        },
+        {
+          "id": "c",
+          "label": "Đốt từng mẫu tơ: tơ tằm cháy có mùi khét như tóc cháy và tạo tro xốp bóp vụn được"
+        },
+        {
+          "id": "d",
+          "label": "Nhúng vào nước xem sợi nào ướt nhanh hơn"
         }
       ],
-      "correctId": "b"
+      "correctId": "c"
     },
     "hints": [
       {

@@ -248,8 +248,8 @@ export const EquationInput: React.FC<EquationInputProps> = ({
                 key={elem}
                 className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-xl font-mono font-black transition-all ${
                   isMatch
-                    ? 'bg-emerald-950/70 text-emerald-300 border border-emerald-500/50 shadow-[0_0_10px_rgba(16,185,129,0.2)]'
-                    : 'bg-amber-950/70 text-amber-300 border border-amber-500/50 shadow-[0_0_10px_rgba(245,158,11,0.2)]'
+                    ? 'bg-emerald-950/70 text-emerald-300 border border-emerald-500/60'
+                    : 'bg-amber-950/70 text-amber-300 border border-amber-500/60'
                 }`}
               >
                 <span>{elem}:</span>

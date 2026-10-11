@@ -4,7 +4,7 @@ import { cn, assetUrl } from '@/lib/utils';
 import { useReducedMotion } from '@/design-system/motion/useReducedMotion';
 import { sound } from '@/lib/audio';
 
-export type ReactionEffectType = 'gas' | 'precipitate' | 'indicator' | 'liquid-level';
+export type ReactionEffectType = 'gas' | 'precipitate' | 'indicator' | 'liquid-level' | 'fire' | 'color-change';
 
 export interface ReactionVisualizerProps {
   type: ReactionEffectType;
@@ -233,8 +233,16 @@ export const ReactionVisualizer: React.FC<ReactionVisualizerProps> = ({
       ? assetUrl('/assets/vfx/vfx-gas.png')
       : type === 'precipitate'
       ? assetUrl('/assets/vfx/vfx-precipitate.png')
-      : type === 'indicator'
+      : type === 'fire'
+      ? assetUrl('/assets/vfx/reaction-fire.png')
+      : type === 'color-change'
       ? resolvedColor === '#ef4444' || resolvedColor === '#f43f5e'
+        ? assetUrl('/assets/vfx/reaction-color-change-red.png')
+        : assetUrl('/assets/vfx/reaction-color-change-blue.png')
+      : type === 'indicator'
+      ? resolvedColor === '#8b5cf6' || resolvedColor === '#a855f7' || resolvedColor === '#c084fc'
+        ? assetUrl('/assets/vfx/reaction-litmus-purple.png')
+        : resolvedColor === '#ef4444' || resolvedColor === '#f43f5e'
         ? assetUrl('/assets/vfx/litmus-red.png')
         : assetUrl('/assets/vfx/litmus-blue.png')
       : null;

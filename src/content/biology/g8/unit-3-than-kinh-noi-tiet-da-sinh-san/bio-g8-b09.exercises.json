@@ -24,11 +24,11 @@
         },
         {
           "id": "opt-c",
-          "label": "Tuyến nội tiết có ống dẫn rất lớn đưa chất tiết ra ngoài bề mặt da"
+          "label": "Cả hai loại tuyến đều có cấu tạo và con đường vận chuyển chất tiết giống hệt nhau"
         },
         {
           "id": "opt-d",
-          "label": "Cả hai loại tuyến đều có cấu tạo và con đường vận chuyển chất tiết giống hệt nhau"
+          "label": "Tuyến nội tiết có ống dẫn rất lớn đưa chất tiết ra ngoài bề mặt da"
         }
       ],
       "correctId": "opt-a"
@@ -93,11 +93,11 @@
         },
         {
           "id": "opt-c",
-          "label": "Mỗi loài sinh vật chỉ có một loại hormone duy nhất và không bao giờ bị phân hủy"
+          "label": "Chỉ hoạt động được khi nhiệt độ cơ thể hạ xuống dưới 0°C"
         },
         {
           "id": "opt-d",
-          "label": "Chỉ hoạt động được khi nhiệt độ cơ thể hạ xuống dưới 0°C"
+          "label": "Mỗi loài sinh vật chỉ có một loại hormone duy nhất và không bao giờ bị phân hủy"
         }
       ],
       "correctId": "opt-a"
@@ -154,22 +154,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Tiết quá nhiều gây bệnh người khổng lồ; tiết quá ít gây bệnh người lùn cân đối"
-        },
-        {
-          "id": "opt-b",
           "label": "Tiết quá nhiều gây bệnh đái tháo đường; tiết quá ít gây bệnh suy thận"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Tiết quá nhiều gây mất màu tóc; tiết quá ít gây mất giọng nói"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tiết quá nhiều gây bệnh người khổng lồ; tiết quá ít gây bệnh người lùn cân đối"
         },
         {
           "id": "opt-d",
           "label": "Hoàn toàn không ảnh hưởng đến chiều cao hay hình vóc cơ thể"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -292,22 +292,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Tuyến giáp hoạt động quá mạnh tiết thừa Thyroxine; triệu chứng gồm bướu cổ, mắt lồi, tim đập nhanh, sút cân và mất ngủ"
-        },
-        {
-          "id": "opt-b",
           "label": "Tuyến tụy ngừng tiết insulin gây tăng đường huyết và tiểu nhiều"
         },
         {
+          "id": "opt-b",
+          "label": "Tuyến yên tiết quá ít hormone GH khiến cơ thể còi cọc"
+        },
+        {
           "id": "opt-c",
-          "label": "Tuyến trên thận bị teo làm tụt huyết áp và da sạm đen"
+          "label": "Tuyến giáp hoạt động quá mạnh tiết thừa Thyroxine; triệu chứng gồm bướu cổ, mắt lồi, tim đập nhanh, sút cân và mất ngủ"
         },
         {
           "id": "opt-d",
-          "label": "Tuyến yên tiết quá ít hormone GH khiến cơ thể còi cọc"
+          "label": "Tuyến trên thận bị teo làm tụt huyết áp và da sạm đen"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -361,11 +361,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Vừa có phần ngoại tiết tiết dịch tụy tiêu hóa qua ống dẫn, vừa có phần nội tiết (đảo tụy) tiết hormone Insulin và Glucagon trực tiếp vào máu"
+          "label": "Tồn tại ở cả thể rắn và thể lỏng tùy theo thời gian trong ngày"
         },
         {
           "id": "opt-b",
-          "label": "Vừa có chức năng lọc máu tạo nước tiểu, vừa có chức năng hô hấp trao đổi khí"
+          "label": "Vừa có phần ngoại tiết tiết dịch tụy tiêu hóa qua ống dẫn, vừa có phần nội tiết (đảo tụy) tiết hormone Insulin và Glucagon trực tiếp vào máu"
         },
         {
           "id": "opt-c",
@@ -373,10 +373,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Tồn tại ở cả thể rắn và thể lỏng tùy theo thời gian trong ngày"
+          "label": "Vừa có chức năng lọc máu tạo nước tiểu, vừa có chức năng hô hấp trao đổi khí"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -430,22 +430,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Adrenaline và Noradrenaline (làm tăng nhịp tim, co mạch, tăng huyết áp, dãn phế quản và tăng đường huyết)"
-        },
-        {
-          "id": "opt-b",
           "label": "Insulin (làm hạ đường huyết và hạ nhịp tim xuống mức thấp nhất)"
         },
         {
+          "id": "opt-b",
+          "label": "Adrenaline và Noradrenaline (làm tăng nhịp tim, co mạch, tăng huyết áp, dãn phế quản và tăng đường huyết)"
+        },
+        {
           "id": "opt-c",
-          "label": "Melatonin (làm cho mắt buồn ngủ và cơ bắp thư dãn)"
+          "label": "Calcitonin (làm cho xương mềm dẻo hơn)"
         },
         {
           "id": "opt-d",
-          "label": "Calcitonin (làm cho xương mềm dẻo hơn)"
+          "label": "Melatonin (làm cho mắt buồn ngủ và cơ bắp thư dãn)"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -503,15 +503,15 @@
         },
         {
           "id": "opt-b",
-          "label": "Làm ngừng hoàn toàn sự phát triển của hệ xương và răng"
-        },
-        {
-          "id": "opt-c",
           "label": "Trực tiếp tiêu hóa toàn bộ lipid và protein trong máu"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "Ức chế mọi hoạt động tiết hormone của tuyến yên và não bộ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Làm ngừng hoàn toàn sự phát triển của hệ xương và răng"
         }
       ],
       "correctId": "opt-a"

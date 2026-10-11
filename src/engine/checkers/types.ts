@@ -10,7 +10,7 @@ export type PartialReason =
 export type Verdict =
   | { status: 'correct' }
   | { status: 'partial'; reason: PartialReason; message: string }
-  | { status: 'incorrect'; reason: string; mistakeId?: string; diagnosis?: string };
+  | { status: 'incorrect'; reason: string; mistakeId?: string; diagnosis?: string; smartHint?: string };
 
 export interface Checker<A, I> {
   check(answer: A, input: I, commonMistakes?: CommonMistake[]): Verdict;

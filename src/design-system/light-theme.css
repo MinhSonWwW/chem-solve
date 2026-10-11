@@ -1,0 +1,730 @@
+/* ==========================================================================
+   Chem-Solve Vibrant Pastel Light Theme ("Màu Sáng" Cheerful STEM Palette)
+   Activated when html.light, body.light, or [data-theme="light"] is present.
+   Designed for soothing visual comfort with pastel color hierarchy & 3D tactile depth.
+   NO harsh hospital white glare. Every surface is softly tinted and cheerful.
+   ========================================================================== */
+
+html.light,
+body.light,
+[data-theme="light"] {
+  color-scheme: light;
+
+  /* Fresh morning sky-mist canvas and soft tinted surfaces (NO stark white) */
+  --color-background: #e2ecf5;
+  --color-surface: #edf4fa;
+  --color-surface-card: #eaf1f8;
+  --color-border: #b8cee4;
+
+  --color-secondary: #dbe7f2;
+  --color-secondary-dark: #b8cee4;
+  --color-secondary-light: #c5d7e8;
+}
+
+html.light body,
+[data-theme="light"] body {
+  /* Fresh, soothing sky-mist canvas - eliminates harsh white eye glare */
+  background-color: #e2ecf5 !important;
+  color: #0f2942 !important;
+}
+
+/* ─── 1. Main Canvas & Surface Hierarchy ─── */
+/* The main page canvas background */
+html.light .bg-\[\#131f24\],
+[data-theme="light"] .bg-\[\#131f24\] {
+  background-color: #e2ecf5 !important;
+}
+
+html.light .bg-\[\#131f24\]\/98,
+[data-theme="light"] .bg-\[\#131f24\]\/98,
+html.light .bg-\[\#131f24\]\/95,
+[data-theme="light"] .bg-\[\#131f24\]\/95,
+html.light .bg-\[\#131f24\]\/80,
+[data-theme="light"] .bg-\[\#131f24\]\/80 {
+  background-color: rgba(226, 236, 245, 0.96) !important;
+}
+
+/* Header & mobile nav bar background */
+html.light .bg-\[\#0f171c\],
+[data-theme="light"] .bg-\[\#0f171c\],
+html.light .bg-\[\#0f171c\]\/95,
+[data-theme="light"] .bg-\[\#0f171c\]\/95 {
+  background-color: rgba(234, 241, 248, 0.96) !important;
+}
+
+/* Primary cards & panels: Soft ice-tinted surface #edf4fa (NOT pure white) */
+html.light .bg-\[\#18272f\],
+[data-theme="light"] .bg-\[\#18272f\] {
+  background-color: #edf4fa !important;
+}
+
+html.light .bg-\[\#18272f\]\/80,
+[data-theme="light"] .bg-\[\#18272f\]\/80,
+html.light .bg-\[\#18272f\]\/95,
+[data-theme="light"] .bg-\[\#18272f\]\/95 {
+  background-color: rgba(237, 244, 250, 0.95) !important;
+}
+
+/* Inner containers, sub-blocks, input backgrounds */
+html.light .bg-\[\#20333d\],
+[data-theme="light"] .bg-\[\#20333d\] {
+  background-color: #dbe7f2 !important;
+}
+
+html.light .bg-\[\#1e2e38\],
+[data-theme="light"] .bg-\[\#1e2e38\],
+html.light .bg-\[\#1a2831\],
+[data-theme="light"] .bg-\[\#1a2831\],
+html.light .bg-\[\#1c2c36\],
+[data-theme="light"] .bg-\[\#1c2c36\] {
+  background-color: #dbe7f2 !important;
+}
+
+html.light .bg-slate-900,
+[data-theme="light"] .bg-slate-900,
+html.light .bg-slate-950,
+[data-theme="light"] .bg-slate-950 {
+  background-color: #edf4fa !important;
+}
+
+html.light .bg-slate-900\/60,
+[data-theme="light"] .bg-slate-900\/60,
+html.light .bg-slate-950\/50,
+[data-theme="light"] .bg-slate-950\/50,
+html.light .bg-slate-950\/40,
+[data-theme="light"] .bg-slate-950\/40 {
+  background-color: #dbe7f2 !important;
+}
+
+/* Modal Backdrops in Light Mode */
+html.light .bg-slate-950\/85,
+[data-theme="light"] .bg-slate-950\/85,
+html.light .bg-slate-950\/80,
+[data-theme="light"] .bg-slate-950\/80 {
+  background-color: rgba(15, 41, 66, 0.5) !important;
+}
+
+/* ─── 2. Crisp Borders & Tactile 3D Depth ─── */
+html.light .border-\[\#2e4756\],
+[data-theme="light"] .border-\[\#2e4756\],
+html.light .border-\[\#2e4756\]\/60,
+[data-theme="light"] .border-\[\#2e4756\]\/60,
+html.light .border-\[\#20333d\],
+[data-theme="light"] .border-\[\#20333d\],
+html.light .border-slate-800,
+[data-theme="light"] .border-slate-800,
+html.light .border-slate-800\/80,
+[data-theme="light"] .border-slate-800\/80 {
+  border-color: #b8cee4 !important;
+}
+
+html.light .border-\[\#3d5a6c\]\/60,
+[data-theme="light"] .border-\[\#3d5a6c\]\/60,
+html.light .border-slate-700,
+[data-theme="light"] .border-slate-700 {
+  border-color: #a2bed8 !important;
+}
+
+/* 3D Chunky Shadows */
+html.light .shadow-\[0_4px_0_0_\#131f24\],
+[data-theme="light"] .shadow-\[0_4px_0_0_\#131f24\],
+html.light .shadow-\[0_3px_0_0_\#131f24\],
+[data-theme="light"] .shadow-\[0_3px_0_0_\#131f24\],
+html.light .shadow-\[0_2px_0_0_\#131f24\],
+[data-theme="light"] .shadow-\[0_2px_0_0_\#131f24\],
+html.light .shadow-\[0_6px_0_0_\#131f24\],
+[data-theme="light"] .shadow-\[0_6px_0_0_\#131f24\],
+html.light .shadow-\[0_4px_0_0_\#101a1f\],
+[data-theme="light"] .shadow-\[0_4px_0_0_\#101a1f\],
+html.light .shadow-\[0_6px_0_0_\#101a1f\],
+[data-theme="light"] .shadow-\[0_6px_0_0_\#101a1f\],
+html.light .shadow-\[0_3px_0_0_\#101a1f\],
+[data-theme="light"] .shadow-\[0_3px_0_0_\#101a1f\] {
+  box-shadow: 0 4px 0 0 #a2bed8 !important;
+}
+
+html.light .shadow-\[0_12px_40px_rgba\(0\,0\,0\,0\.85\)\],
+[data-theme="light"] .shadow-\[0_12px_40px_rgba\(0\,0\,0\,0\.85\)\] {
+  box-shadow: 0 16px 40px rgba(15, 41, 66, 0.16) !important;
+}
+
+html.light .shadow-\[0_-12px_45px_rgba\(0\,0\,0\,0\.85\)\],
+[data-theme="light"] .shadow-\[0_-12px_45px_rgba\(0\,0\,0\,0\.85\)\] {
+  box-shadow: 0 -10px 32px rgba(15, 41, 66, 0.1) !important;
+}
+
+/* ─── 3. Navigation Bars & Sidebars (Soft Ice-Slate, NOT stark white) ─── */
+html.light aside,
+[data-theme="light"] aside {
+  background-color: #eaf1f8 !important;
+  border-right-color: #b8cee4 !important;
+  border-left-color: #b8cee4 !important;
+}
+
+html.light header,
+[data-theme="light"] header {
+  background-color: rgba(234, 241, 248, 0.96) !important;
+  border-bottom-color: #b8cee4 !important;
+}
+
+html.light nav,
+[data-theme="light"] nav {
+  background-color: rgba(234, 241, 248, 0.98) !important;
+  border-top-color: #b8cee4 !important;
+}
+
+/* Left Sidebar Logo text */
+html.light aside .text-white,
+[data-theme="light"] aside .text-white {
+  color: #0c4a6e !important;
+}
+
+/* Left Sidebar Subject Button */
+html.light .sidebar-subject-btn,
+[data-theme="light"] .sidebar-subject-btn {
+  background-color: #e0ecf7 !important;
+  border-color: #9fc0db !important;
+  box-shadow: 0 3px 0 0 #89aecb !important;
+}
+html.light .sidebar-subject-btn:hover,
+[data-theme="light"] .sidebar-subject-btn:hover {
+  background-color: #d5e5f3 !important;
+  border-color: #0284c7 !important;
+}
+html.light .sidebar-subject-btn .text-white,
+[data-theme="light"] .sidebar-subject-btn .text-white {
+  color: #0c4a6e !important;
+  font-weight: 800 !important;
+}
+
+/* Left Sidebar Nav Items */
+html.light .sidebar-nav-item,
+[data-theme="light"] .sidebar-nav-item {
+  color: #334e68 !important;
+  font-weight: 800 !important;
+}
+html.light .sidebar-nav-item svg,
+[data-theme="light"] .sidebar-nav-item svg {
+  color: #486581 !important;
+}
+html.light .sidebar-nav-item:hover,
+[data-theme="light"] .sidebar-nav-item:hover {
+  background-color: #dce7f2 !important;
+  color: #0c4a6e !important;
+}
+html.light .sidebar-nav-item:hover svg,
+[data-theme="light"] .sidebar-nav-item:hover svg {
+  color: #0284c7 !important;
+}
+
+/* Active Nav Item: Cheerful Sky Blue Pill */
+html.light .sidebar-nav-item[class*="border-[#0ea5e9]"],
+html.light .sidebar-nav-item[class*="border-[#10b981]"],
+html.light .sidebar-nav-item[class*="border-[#eab308]"],
+[data-theme="light"] .sidebar-nav-item[class*="border-[#0ea5e9]"],
+[data-theme="light"] .sidebar-nav-item[class*="border-[#10b981]"],
+[data-theme="light"] .sidebar-nav-item[class*="border-[#eab308]"] {
+  background-color: #dbeafe !important;
+  border-color: #0284c7 !important;
+  color: #0284c7 !important;
+  box-shadow: 0 4px 0 0 #93c5fd !important;
+}
+html.light .sidebar-nav-item[class*="border-[#0ea5e9]"] svg,
+[data-theme="light"] .sidebar-nav-item[class*="border-[#0ea5e9]"] svg {
+  color: #0284c7 !important;
+}
+
+/* Sidebar Profile Widget */
+html.light .sidebar-profile-card,
+[data-theme="light"] .sidebar-profile-card {
+  background-color: #e6f7ef !important;
+  border-color: #86efac !important;
+  box-shadow: 0 2px 0 0 #4ade80 !important;
+}
+html.light .sidebar-profile-card .text-white,
+[data-theme="light"] .sidebar-profile-card .text-white {
+  color: #065f46 !important;
+  font-weight: 800 !important;
+}
+
+/* Mobile Bottom Nav in Light Mode */
+html.light nav a,
+[data-theme="light"] nav a {
+  color: #486581 !important;
+}
+html.light nav a svg,
+[data-theme="light"] nav a svg {
+  color: #486581 !important;
+}
+html.light nav a[class*="scale-105"],
+[data-theme="light"] nav a[class*="scale-105"] {
+  color: #0284c7 !important;
+}
+html.light nav a[class*="scale-105"] svg,
+[data-theme="light"] nav a[class*="scale-105"] svg {
+  color: #0284c7 !important;
+}
+
+/* ─── 4. Top Subject Selection Bar in LearnPage ("Màu Sáng" Sky Pastel) ─── */
+html.light .learn-subject-bar,
+[data-theme="light"] .learn-subject-bar {
+  background: linear-gradient(135deg, #e0f2fe 0%, #eaf5fd 100%) !important;
+  border-color: #7dd3fc !important;
+  box-shadow: 0 4px 0 0 #38bdf8 !important;
+}
+html.light .learn-subject-bar .text-white,
+[data-theme="light"] .learn-subject-bar .text-white {
+  color: #0c4a6e !important;
+  font-weight: 900 !important;
+}
+html.light .learn-subject-bar .text-slate-400,
+[data-theme="light"] .learn-subject-bar .text-slate-400 {
+  color: #0369a1 !important;
+  font-weight: 600 !important;
+}
+html.light .learn-subject-bar button,
+[data-theme="light"] .learn-subject-bar button {
+  background-color: #ffffff !important;
+  border-color: #7dd3fc !important;
+  color: #0284c7 !important;
+  box-shadow: 0 2px 0 0 #bae6fd !important;
+}
+html.light .learn-subject-bar button:hover,
+[data-theme="light"] .learn-subject-bar button:hover {
+  background-color: #f0f9ff !important;
+  border-color: #0284c7 !important;
+}
+
+/* ─── 5. Grade Selector Bar in LearnPage ("Màu Sáng" Tactile Pills) ─── */
+html.light .learn-grade-selector,
+[data-theme="light"] .learn-grade-selector,
+html.light .flex.bg-\[\#18272f\].p-1\.5.rounded-2xl {
+  background-color: #d8e6f3 !important;
+  border-color: #b3cde3 !important;
+  box-shadow: 0 3px 0 0 #9bbcd7 !important;
+}
+
+html.light .learn-grade-selector button:not([class*="bg-"]),
+[data-theme="light"] .learn-grade-selector button:not([class*="bg-"]),
+html.light .flex.bg-\[\#18272f\].p-1\.5.rounded-2xl button:not([class*="bg-"]) {
+  color: #334e68 !important;
+  font-weight: 800 !important;
+}
+
+html.light .learn-grade-selector button:not([class*="bg-"]):hover,
+[data-theme="light"] .learn-grade-selector button:not([class*="bg-"]):hover,
+html.light .flex.bg-\[\#18272f\].p-1\.5.rounded-2xl button:not([class*="bg-"]):hover {
+  color: #0c4a6e !important;
+}
+
+/* Active Grade Tab */
+html.light .learn-grade-selector button[class*="bg-"],
+[data-theme="light"] .learn-grade-selector button[class*="bg-"],
+html.light .flex.bg-\[\#18272f\].p-1\.5.rounded-2xl button[class*="bg-"] {
+  background-color: #0284c7 !important;
+  color: #ffffff !important;
+  box-shadow: 0 3px 0 0 #0369a1 !important;
+  font-weight: 900 !important;
+}
+
+/* ─── 6. Chapter Banner in Light Mode (Vibrant Ocean Gradient) ─── */
+/* Chemistry Chapter Header */
+html.light .bg-\[\#0d1a24\],
+[data-theme="light"] .bg-\[\#0d1a24\] {
+  background: linear-gradient(135deg, #0284c7 0%, #0ea5e9 100%) !important;
+  border-color: #0369a1 !important;
+  box-shadow: 0 6px 0 0 #075985 !important;
+}
+
+/* Physics Chapter Header */
+html.light .bg-\[\#1c1e0d\],
+[data-theme="light"] .bg-\[\#1c1e0d\] {
+  background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%) !important;
+  border-color: #b45309 !important;
+  box-shadow: 0 6px 0 0 #92400e !important;
+}
+
+/* Biology Chapter Header */
+html.light .bg-\[\#0d1e17\],
+[data-theme="light"] .bg-\[\#0d1e17\] {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%) !important;
+  border-color: #047857 !important;
+  box-shadow: 0 6px 0 0 #065f46 !important;
+}
+
+/* Text and elements inside Chapter Banners */
+html.light .bg-\[\#0d1a24\] h2,
+html.light .bg-\[\#1c1e0d\] h2,
+html.light .bg-\[\#0d1e17\] h2,
+[data-theme="light"] .bg-\[\#0d1a24\] h2,
+[data-theme="light"] .bg-\[\#1c1e0d\] h2,
+[data-theme="light"] .bg-\[\#0d1e17\] h2 {
+  color: #ffffff !important;
+  font-weight: 900 !important;
+}
+
+html.light .bg-\[\#0d1a24\] p,
+html.light .bg-\[\#1c1e0d\] p,
+html.light .bg-\[\#0d1e17\] p,
+[data-theme="light"] .bg-\[\#0d1a24\] p,
+[data-theme="light"] .bg-\[\#1c1e0d\] p,
+[data-theme="light"] .bg-\[\#0d1e17\] p {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Chapter Banner "HƯỚNG DẪN" button */
+html.light .bg-\[\#0d1a24\] button,
+[data-theme="light"] .bg-\[\#0d1a24\] button {
+  background-color: #ffffff !important;
+  color: #0284c7 !important;
+  border-color: #ffffff !important;
+  box-shadow: 0 4px 0 0 #bae6fd !important;
+}
+html.light .bg-\[\#0d1a24\] button:hover,
+[data-theme="light"] .bg-\[\#0d1a24\] button:hover {
+  background-color: #f0f9ff !important;
+}
+
+/* ─── 7. Right Sidebar Widgets: "Màu Sáng" Cheerful Pastel Thematic Cards ─── */
+
+/* 7.1 Header Stats Bar */
+html.light .sidebar-stats-bar,
+[data-theme="light"] .sidebar-stats-bar {
+  background-color: #e4edf6 !important;
+  border-color: #bcd0e4 !important;
+  box-shadow: 0 3px 0 0 #a5bed7 !important;
+}
+html.light .sidebar-stats-bar button[aria-label="Tìm kiếm"],
+[data-theme="light"] .sidebar-stats-bar button[aria-label="Tìm kiếm"] {
+  background-color: #d5e4f2 !important;
+  border-color: #adc7de !important;
+  color: #0284c7 !important;
+  box-shadow: 0 2px 0 0 #95b6d1 !important;
+}
+
+/* 7.2 Widget: Nhiệm vụ hôm nay (Quests) - Soft Mint Pastel */
+html.light .widget-quests-card,
+[data-theme="light"] .widget-quests-card {
+  background: linear-gradient(145deg, #e8f7ee 0%, #dcf3e5 100%) !important;
+  border-color: #86efac !important;
+  box-shadow: 0 4px 0 0 #4ade80 !important;
+}
+html.light .widget-quests-card h3,
+[data-theme="light"] .widget-quests-card h3 {
+  color: #065f46 !important;
+  font-weight: 900 !important;
+}
+html.light .widget-quests-card a,
+[data-theme="light"] .widget-quests-card a {
+  color: #047857 !important;
+  font-weight: 900 !important;
+}
+html.light .widget-quests-card a:hover,
+[data-theme="light"] .widget-quests-card a:hover {
+  color: #065f46 !important;
+  text-decoration: underline !important;
+}
+html.light .widget-quests-card .text-slate-300,
+[data-theme="light"] .widget-quests-card .text-slate-300 {
+  color: #14532d !important;
+  font-weight: 700 !important;
+}
+html.light .widget-quests-card .text-slate-400,
+[data-theme="light"] .widget-quests-card .text-slate-400 {
+  color: #166534 !important;
+  font-weight: 700 !important;
+}
+html.light .widget-quests-card .bg-\[\#20333d\],
+[data-theme="light"] .widget-quests-card .bg-\[\#20333d\] {
+  background-color: #bbf7d0 !important;
+  border-color: #86efac !important;
+}
+
+/* 7.3 Widget: Chuỗi đèn cồn Streak - Soft Warm Honey Cream Pastel */
+html.light .widget-streak-card,
+[data-theme="light"] .widget-streak-card {
+  background: linear-gradient(145deg, #fef3c7 0%, #fee7a0 100%) !important;
+  border-color: #fcd34d !important;
+  box-shadow: 0 4px 0 0 #f59e0b !important;
+}
+html.light .widget-streak-card .text-\[\#ff9600\],
+[data-theme="light"] .widget-streak-card .text-\[\#ff9600\] {
+  color: #92400e !important;
+  font-weight: 900 !important;
+}
+html.light .widget-streak-card p,
+[data-theme="light"] .widget-streak-card p {
+  color: #78350f !important;
+  font-weight: 600 !important;
+}
+html.light .widget-streak-card .text-2xl,
+[data-theme="light"] .widget-streak-card .text-2xl {
+  color: #d97706 !important;
+  font-weight: 900 !important;
+}
+
+/* 7.4 Widget: Sổ tay ôn tập (Review) - Soft Periwinkle Blue Pastel */
+html.light .widget-review-card,
+[data-theme="light"] .widget-review-card {
+  background: linear-gradient(145deg, #eff6ff 0%, #dbeafe 100%) !important;
+  border-color: #93c5fd !important;
+  box-shadow: 0 4px 0 0 #60a5fa !important;
+}
+html.light .widget-review-card .text-\[\#38bdf8\],
+[data-theme="light"] .widget-review-card .text-\[\#38bdf8\] {
+  color: #1e40af !important;
+  font-weight: 900 !important;
+}
+html.light .widget-review-card p,
+[data-theme="light"] .widget-review-card p {
+  color: #1e3a8a !important;
+  font-weight: 600 !important;
+}
+html.light .widget-review-card button,
+[data-theme="light"] .widget-review-card button {
+  background-color: #0284c7 !important;
+  color: #ffffff !important;
+  font-weight: 900 !important;
+  box-shadow: 0 4px 0 0 #0369a1 !important;
+}
+html.light .widget-review-card button:hover,
+[data-theme="light"] .widget-review-card button:hover {
+  background-color: #0369a1 !important;
+}
+
+/* ─── 8. SnakePath SVG & Path Stones (Rich Tactile Contrast) ─── */
+html.light svg path[stroke="#080d12"],
+[data-theme="light"] svg path[stroke="#080d12"] {
+  stroke: #b3cde3 !important;
+}
+
+html.light svg path[stroke="#20333d"],
+[data-theme="light"] svg path[stroke="#20333d"] {
+  stroke: #d0e0ee !important;
+}
+
+html.light svg path[stroke="#131f24"],
+[data-theme="light"] svg path[stroke="#131f24"] {
+  stroke: #e2ecf5 !important;
+}
+
+html.light svg path[stroke="#1e3040"],
+[data-theme="light"] svg path[stroke="#1e3040"] {
+  stroke: #627d98 !important;
+}
+
+/* Locked Node button on SnakePath */
+html.light button.bg-\[\#20333d\],
+[data-theme="light"] button.bg-\[\#20333d\] {
+  background-color: #c5d7e8 !important;
+  border-color: #adc5db !important;
+  box-shadow: 0 6px 0 0 #8aa9c4 !important;
+  color: #486581 !important;
+}
+
+/* Active Node Halo Ring - Soft Glowing Blue */
+html.light .bg-cyan-400\/30,
+[data-theme="light"] .bg-cyan-400\/30 {
+  background-color: rgba(2, 132, 199, 0.22) !important;
+}
+
+html.light .bg-amber-400\/30,
+[data-theme="light"] .bg-amber-400\/30 {
+  background-color: rgba(217, 119, 6, 0.22) !important;
+}
+
+html.light .bg-emerald-400\/30,
+[data-theme="light"] .bg-emerald-400\/30 {
+  background-color: rgba(5, 150, 105, 0.22) !important;
+}
+
+/* SnakePath Node Title Legibility on Canvas */
+html.light .text-sky-300,
+[data-theme="light"] .text-sky-300 {
+  color: #0369a1 !important;
+  font-weight: 800 !important;
+}
+
+html.light .text-amber-300,
+[data-theme="light"] .text-amber-300 {
+  color: #b45309 !important;
+  font-weight: 800 !important;
+}
+
+html.light .text-emerald-300,
+[data-theme="light"] .text-emerald-300 {
+  color: #047857 !important;
+  font-weight: 800 !important;
+}
+
+/* ─── 9. Text & Typography Hierarchy in Light Mode ─── */
+html.light .text-slate-100:not(button *):not([class*="btn-"]):not([class*="bg-cyan"]):not([class*="bg-emerald"]):not([class*="bg-rose"]):not([class*="bg-amber"]):not([class*="bg-gradient-"]),
+[data-theme="light"] .text-slate-100:not(button *):not([class*="btn-"]):not([class*="bg-cyan"]):not([class*="bg-emerald"]):not([class*="bg-rose"]):not([class*="bg-amber"]):not([class*="bg-gradient-"]) {
+  color: #0f2942 !important;
+}
+
+html.light .text-slate-200:not(button *):not([class*="btn-"]):not([class*="bg-cyan"]):not([class*="bg-emerald"]):not([class*="bg-rose"]):not([class*="bg-amber"]):not([class*="bg-gradient-"]),
+[data-theme="light"] .text-slate-200:not(button *):not([class*="btn-"]):not([class*="bg-cyan"]):not([class*="bg-emerald"]):not([class*="bg-rose"]):not([class*="bg-amber"]):not([class*="bg-gradient-"]) {
+  color: #1e3a5f !important;
+}
+
+html.light .text-slate-300:not(button *):not([class*="btn-"]):not([class*="bg-cyan"]):not([class*="bg-emerald"]):not([class*="bg-rose"]):not([class*="bg-amber"]):not([class*="bg-gradient-"]),
+[data-theme="light"] .text-slate-300:not(button *):not([class*="btn-"]):not([class*="bg-cyan"]):not([class*="bg-emerald"]):not([class*="bg-rose"]):not([class*="bg-amber"]):not([class*="bg-gradient-"]) {
+  color: #334e68 !important;
+}
+
+html.light .text-slate-400:not(button *):not([class*="btn-"]):not([class*="bg-cyan"]):not([class*="bg-emerald"]):not([class*="bg-rose"]):not([class*="bg-amber"]):not([class*="bg-gradient-"]),
+[data-theme="light"] .text-slate-400:not(button *):not([class*="btn-"]):not([class*="bg-cyan"]):not([class*="bg-emerald"]):not([class*="bg-rose"]):not([class*="bg-amber"]):not([class*="bg-gradient-"]) {
+  color: #486581 !important;
+}
+
+html.light .text-white:not(button *):not([class*="btn-"]):not([class*="bg-cyan"]):not([class*="bg-emerald"]):not([class*="bg-rose"]):not([class*="bg-amber"]):not([class*="bg-blue"]):not([class*="bg-gradient-"]):not([class*="bg-\[\#0d1a24\]"] *):not([class*="bg-\[\#1c1e0d\]"] *):not([class*="bg-\[\#0d1e17\]"] *):not(.sidebar-stats-bar *):not(.widget-quests-card *):not(.widget-streak-card *):not(.widget-review-card *),
+[data-theme="light"] .text-white:not(button *):not([class*="btn-"]):not([class*="bg-cyan"]):not([class*="bg-emerald"]):not([class*="bg-rose"]):not([class*="bg-amber"]):not([class*="bg-blue"]):not([class*="bg-gradient-"]):not([class*="bg-\[\#0d1a24\]"] *):not([class*="bg-\[\#1c1e0d\]"] *):not([class*="bg-\[\#0d1e17\]"] *):not(.sidebar-stats-bar *):not(.widget-quests-card *):not(.widget-streak-card *):not(.widget-review-card *) {
+  color: #0f2942 !important;
+}
+
+/* Crisp white text on primary colorful buttons */
+html.light button.btn-chunky-primary,
+html.light button.btn-chunky-success,
+html.light button.btn-chunky-danger,
+html.light button[class*="bg-gradient-"],
+html.light button[class*="bg-[#00cd9c]"],
+html.light button[class*="bg-[#ff4b4b]"],
+html.light button[class*="bg-[#0ea5e9]"],
+html.light button[class*="bg-[#eab308]"],
+html.light [class*="bg-[#0ea5e9]"] .text-white,
+html.light [class*="bg-[#00cd9c]"] .text-white,
+html.light [class*="bg-[#ff4b4b]"] .text-white {
+  color: #ffffff !important;
+}
+
+/* ─── 10. Accent Colors High Contrast on Light Surfaces ─── */
+html.light .text-\[\#38bdf8\],
+[data-theme="light"] .text-\[\#38bdf8\],
+html.light .text-cyan-400,
+[data-theme="light"] .text-cyan-400,
+html.light .text-sky-400,
+[data-theme="light"] .text-sky-400 {
+  color: #0284c7 !important;
+}
+
+html.light .text-emerald-400,
+[data-theme="light"] .text-emerald-400,
+html.light .text-emerald-300,
+[data-theme="light"] .text-emerald-300,
+html.light .text-emerald-200,
+[data-theme="light"] .text-emerald-200 {
+  color: #047857 !important;
+}
+
+html.light .text-rose-400,
+[data-theme="light"] .text-rose-400,
+html.light .text-rose-300,
+[data-theme="light"] .text-rose-300,
+html.light .text-rose-200,
+[data-theme="light"] .text-rose-200 {
+  color: #b91c1c !important;
+}
+
+html.light .text-amber-400,
+[data-theme="light"] .text-amber-400,
+html.light .text-amber-300,
+[data-theme="light"] .text-amber-300,
+html.light .text-amber-200,
+[data-theme="light"] .text-amber-200 {
+  color: #b45309 !important;
+}
+
+html.light .text-purple-400,
+[data-theme="light"] .text-purple-400,
+html.light .text-purple-300,
+[data-theme="light"] .text-purple-300,
+html.light .text-purple-200,
+[data-theme="light"] .text-purple-200 {
+  color: #6b21a8 !important;
+}
+
+/* ─── 11. Soft Pastel Badges & Chips in Light Mode ─── */
+html.light .bg-cyan-950,
+[data-theme="light"] .bg-cyan-950,
+html.light .bg-cyan-950\/40,
+[data-theme="light"] .bg-cyan-950\/40,
+html.light .bg-cyan-950\/50,
+[data-theme="light"] .bg-cyan-950\/50 {
+  background-color: #dbeafe !important;
+  border-color: #93c5fd !important;
+}
+
+html.light .bg-emerald-950,
+[data-theme="light"] .bg-emerald-950,
+html.light .bg-emerald-950\/40,
+[data-theme="light"] .bg-emerald-950\/40,
+html.light .bg-emerald-950\/30,
+[data-theme="light"] .bg-emerald-950\/30 {
+  background-color: #dcfce7 !important;
+  border-color: #86efac !important;
+}
+
+html.light .bg-amber-950,
+[data-theme="light"] .bg-amber-950,
+html.light .bg-amber-950\/60,
+[data-theme="light"] .bg-amber-950\/60,
+html.light .bg-amber-950\/40,
+[data-theme="light"] .bg-amber-950\/40 {
+  background-color: #fef3c7 !important;
+  border-color: #fcd34d !important;
+}
+
+html.light .bg-rose-950,
+[data-theme="light"] .bg-rose-950,
+html.light .bg-rose-950\/60,
+[data-theme="light"] .bg-rose-950\/60,
+html.light .bg-rose-950\/30,
+[data-theme="light"] .bg-rose-950\/30 {
+  background-color: #ffe4e6 !important;
+  border-color: #fda4af !important;
+}
+
+html.light .bg-purple-950,
+[data-theme="light"] .bg-purple-950,
+html.light .bg-purple-950\/40,
+[data-theme="light"] .bg-purple-950\/40 {
+  background-color: #f3e8ff !important;
+  border-color: #e9d5ff !important;
+}
+
+/* ─── 12. Interactive Hovers, Form Controls & Feedback ─── */
+html.light .hover\:bg-\[\#20333d\]:hover,
+[data-theme="light"] .hover\:bg-\[\#20333d\]:hover,
+html.light .hover\:bg-slate-800:hover,
+[data-theme="light"] .hover\:bg-slate-800:hover,
+html.light .hover\:bg-slate-900\/60:hover,
+[data-theme="light"] .hover\:bg-slate-900\/60:hover {
+  background-color: #dbe7f2 !important;
+}
+
+html.light input:not([type="checkbox"]):not([type="radio"]),
+html.light textarea,
+[data-theme="light"] input:not([type="checkbox"]):not([type="radio"]),
+[data-theme="light"] textarea {
+  color: #0f2942 !important;
+  background-color: #edf4fa !important;
+  border-color: #b8cee4 !important;
+}
+
+html.light [class*="FeedbackSheet"],
+[data-theme="light"] [class*="FeedbackSheet"] {
+  background-color: rgba(237, 244, 250, 0.98) !important;
+}
+
+/* Progress bar tracks in Light Mode */
+html.light .bg-\[\#0d161c\],
+[data-theme="light"] .bg-\[\#0d161c\] {
+  background-color: #dbe7f2 !important;
+  border-color: #b8cee4 !important;
+}
+
+html.light .border-\[\#233541\],
+[data-theme="light"] .border-\[\#233541\] {
+  border-color: #b8cee4 !important;
+}

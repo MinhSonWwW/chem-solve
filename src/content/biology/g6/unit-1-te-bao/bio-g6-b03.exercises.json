@@ -3,19 +3,35 @@
     "id": "bio-g6-b03-q01",
     "lessonId": "bio-g6-b03",
     "sgkBaiSo": 18,
-    "skillIds": ["bio-te-bao-co-ban"],
+    "skillIds": [
+      "bio-te-bao-co-ban"
+    ],
     "difficulty": 1,
     "prompt": "Đơn vị cấu trúc và chức năng cơ bản nhất cấu tạo nên mọi cơ thể sinh vật sống là gì?",
-    "knowledge": ["bio-te-bao-don-vi-song"],
+    "knowledge": [
+      "bio-te-bao-don-vi-song"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Tế bào" },
-        { "id": "opt-b", "label": "Mô cơ" },
-        { "id": "opt-c", "label": "Hạt khoáng chất" },
-        { "id": "opt-d", "label": "Phân tử nước" }
+        {
+          "id": "opt-a",
+          "label": "Mô cơ"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hạt khoáng chất"
+        },
+        {
+          "id": "opt-c",
+          "label": "Phân tử nước"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tế bào"
+        }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -56,10 +72,14 @@
     "id": "bio-g6-b03-q02",
     "lessonId": "bio-g6-b03",
     "sgkBaiSo": 18,
-    "skillIds": ["bio-te-bao-co-ban"],
+    "skillIds": [
+      "bio-te-bao-co-ban"
+    ],
     "difficulty": 2,
     "prompt": "Ghép nối từng loại tế bào (cột bên trái) với hình dạng đặc trưng tương ứng của nó (cột bên phải):",
-    "knowledge": ["bio-kich-thuoc-hinh-dang-te-bao"],
+    "knowledge": [
+      "bio-kich-thuoc-hinh-dang-te-bao"
+    ],
     "answer": {
       "kind": "match",
       "pairs": [
@@ -120,19 +140,39 @@
     "id": "bio-g6-b03-q03",
     "lessonId": "bio-g6-b03",
     "sgkBaiSo": 18,
-    "skillIds": ["bio-te-bao-co-ban"],
+    "skillIds": [
+      "bio-te-bao-co-ban"
+    ],
     "difficulty": 2,
     "prompt": "Trong các mẫu vật sau, những tế bào nào có kích thước lớn mà mắt thường có thể quan sát trực tiếp (chọn các phương án đúng)?",
-    "knowledge": ["bio-kich-thuoc-hinh-dang-te-bao"],
+    "knowledge": [
+      "bio-kich-thuoc-hinh-dang-te-bao"
+    ],
     "answer": {
       "kind": "mcq-multi",
       "options": [
-        { "id": "opt-a", "label": "Tế bào tép bưởi (hoặc tép cam, chanh)" },
-        { "id": "opt-b", "label": "Tế bào trứng chim đà điểu" },
-        { "id": "opt-c", "label": "Tế bào vi khuẩn lactic trong sữa chua" },
-        { "id": "opt-d", "label": "Tế bào trứng cá chép" }
+        {
+          "id": "opt-a",
+          "label": "Tế bào tép bưởi (hoặc tép cam, chanh)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tế bào trứng chim đà điểu"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tế bào vi khuẩn lactic trong sữa chua"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tế bào trứng cá chép"
+        }
       ],
-      "correctIds": ["opt-a", "opt-b", "opt-d"]
+      "correctIds": [
+        "opt-a",
+        "opt-b",
+        "opt-d"
+      ]
     },
     "hints": [
       {
@@ -173,23 +213,57 @@
     "id": "bio-g6-b03-q04",
     "lessonId": "bio-g6-b03",
     "sgkBaiSo": 18,
-    "skillIds": ["bio-te-bao-co-ban"],
+    "skillIds": [
+      "bio-te-bao-co-ban"
+    ],
     "difficulty": 2,
     "prompt": "Phân loại các đối tượng sau vào hai nhóm: 'Vật thể sống (Cấu tạo từ tế bào)' và 'Vật không sống (Không cấu tạo từ tế bào)':",
-    "knowledge": ["bio-te-bao-don-vi-song"],
+    "knowledge": [
+      "bio-te-bao-don-vi-song"
+    ],
     "answer": {
       "kind": "sort",
       "buckets": [
-        { "id": "b-living", "label": "Vật thể sống (Cấu tạo từ tế bào)" },
-        { "id": "b-nonliving", "label": "Vật không sống (Không cấu tạo từ tế bào)" }
+        {
+          "id": "b-living",
+          "label": "Vật thể sống (Cấu tạo từ tế bào)"
+        },
+        {
+          "id": "b-nonliving",
+          "label": "Vật không sống (Không cấu tạo từ tế bào)"
+        }
       ],
       "items": [
-        { "id": "it-1", "label": "Cây hoa phượng vĩ", "bucketId": "b-living" },
-        { "id": "it-2", "label": "Vi khuẩn tả", "bucketId": "b-living" },
-        { "id": "it-3", "label": "Chú mèo con", "bucketId": "b-living" },
-        { "id": "it-4", "label": "Hòn đá cuội bên suối", "bucketId": "b-nonliving" },
-        { "id": "it-5", "label": "Chiếc xe đạp kim loại", "bucketId": "b-nonliving" },
-        { "id": "it-6", "label": "Giọt nước mưa", "bucketId": "b-nonliving" }
+        {
+          "id": "it-1",
+          "label": "Cây hoa phượng vĩ",
+          "bucketId": "b-living"
+        },
+        {
+          "id": "it-2",
+          "label": "Vi khuẩn tả",
+          "bucketId": "b-living"
+        },
+        {
+          "id": "it-3",
+          "label": "Chú mèo con",
+          "bucketId": "b-living"
+        },
+        {
+          "id": "it-4",
+          "label": "Hòn đá cuội bên suối",
+          "bucketId": "b-nonliving"
+        },
+        {
+          "id": "it-5",
+          "label": "Chiếc xe đạp kim loại",
+          "bucketId": "b-nonliving"
+        },
+        {
+          "id": "it-6",
+          "label": "Giọt nước mưa",
+          "bucketId": "b-nonliving"
+        }
       ]
     },
     "hints": [
@@ -231,10 +305,15 @@
     "id": "bio-g6-b03-q05",
     "lessonId": "bio-g6-b03",
     "sgkBaiSo": 18,
-    "skillIds": ["bio-te-bao-co-ban"],
+    "skillIds": [
+      "bio-te-bao-co-ban"
+    ],
     "difficulty": 2,
     "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về tế bào:",
-    "knowledge": ["bio-te-bao-don-vi-song", "bio-kich-thuoc-hinh-dang-te-bao"],
+    "knowledge": [
+      "bio-te-bao-don-vi-song",
+      "bio-kich-thuoc-hinh-dang-te-bao"
+    ],
     "answer": {
       "kind": "true-false",
       "statements": [

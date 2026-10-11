@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Search, BookOpen, ArrowRight } from 'lucide-react';
-import { Heart, Streak, XPBadge, GemBadge, HeartRefillModal, CurrencyIcon } from '@/design-system';
+import { Heart, Streak, XPBadge, GemBadge, HeartRefillModal, CurrencyIcon, ThemeToggle } from '@/design-system';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import { sound } from '@/lib/audio';
 
@@ -35,7 +35,7 @@ export const DesktopRightSidebar: React.FC = () => {
     <>
       <aside className="hidden lg:flex flex-col gap-5 w-[340px] h-[100dvh] sticky top-0 border-l-2 border-[#2e4756] bg-[#131f24]/95 px-5 py-6 select-none overflow-y-auto z-20">
         {/* 1. Header Stats Bar */}
-        <div className="flex items-center justify-between p-2 rounded-2xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_3px_0_0_#131f24] gap-1.5">
+        <div className="sidebar-stats-bar flex items-center justify-between p-2 rounded-2xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_3px_0_0_#131f24] gap-1.5">
           <Streak days={streak} />
           <XPBadge amount={xp} />
           <div
@@ -70,10 +70,13 @@ export const DesktopRightSidebar: React.FC = () => {
           >
             <Search className="w-4 h-4" />
           </button>
+
+          {/* Theme Toggle (Light / Dark mode) */}
+          <ThemeToggle variant="compact" />
         </div>
 
         {/* 2. Widget: Nhiệm vụ hằng ngày (Real Daily Quests) */}
-        <div className="p-4 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] space-y-3.5">
+        <div className="widget-quests-card p-4 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] space-y-3.5">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <CurrencyIcon type="xp" size="xs" />
@@ -155,7 +158,7 @@ export const DesktopRightSidebar: React.FC = () => {
         </div>
 
         {/* 3. Widget: Chuỗi đèn cồn Streak */}
-        <div className="p-4 rounded-3xl bg-[#18272f] border-2 border-[#ff9600]/40 shadow-[0_4px_0_0_#131f24] flex items-center justify-between">
+        <div className="widget-streak-card p-4 rounded-3xl bg-[#18272f] border-2 border-[#ff9600]/40 shadow-[0_4px_0_0_#131f24] flex items-center justify-between">
           <div className="space-y-1">
             <div className="flex items-center gap-1.5 text-xs font-black text-[#ff9600] uppercase tracking-wider">
               <CurrencyIcon type="streak" size="xs" />
@@ -174,7 +177,7 @@ export const DesktopRightSidebar: React.FC = () => {
         </div>
 
       {/* 5. Widget: Ôn tập nhanh (Spaced Repetition) */}
-      <div className="p-4 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] space-y-2.5">
+      <div className="widget-review-card p-4 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] space-y-2.5">
         <div className="flex items-center gap-2 text-[#38bdf8] text-xs font-black uppercase tracking-wider">
           <BookOpen className="w-4 h-4" />
           <span>Sổ tay ôn tập</span>

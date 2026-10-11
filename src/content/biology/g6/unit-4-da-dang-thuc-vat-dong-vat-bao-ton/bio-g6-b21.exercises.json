@@ -3,25 +3,69 @@
     "id": "bio-g6-b21-q01",
     "lessonId": "bio-g6-b21",
     "sgkBaiSo": 36,
-    "skillIds": ["bio-gioi-dong-vat"],
+    "skillIds": [
+      "bio-gioi-dong-vat"
+    ],
     "difficulty": 1,
     "prompt": "Phân loại các loài động vật sau vào hai nhóm lớn: 'Động vật không xương sống' và 'Động vật có xương sống':",
-    "knowledge": ["bio-gioi-dong-vat", "bio-dong-vat-khong-xuong-song", "bio-dong-vat-co-xuong-song"],
+    "knowledge": [
+      "bio-gioi-dong-vat",
+      "bio-dong-vat-khong-xuong-song",
+      "bio-dong-vat-co-xuong-song"
+    ],
     "answer": {
       "kind": "sort",
       "buckets": [
-        { "id": "b-invertebrates", "label": "Động vật không xương sống" },
-        { "id": "b-vertebrates", "label": "Động vật có xương sống" }
+        {
+          "id": "b-invertebrates",
+          "label": "Động vật không xương sống"
+        },
+        {
+          "id": "b-vertebrates",
+          "label": "Động vật có xương sống"
+        }
       ],
       "items": [
-        { "id": "it-1", "label": "Con sứa biển", "bucketId": "b-invertebrates" },
-        { "id": "it-2", "label": "Con giun đất", "bucketId": "b-invertebrates" },
-        { "id": "it-3", "label": "Con ốc sên", "bucketId": "b-invertebrates" },
-        { "id": "it-4", "label": "Con tôm sông", "bucketId": "b-invertebrates" },
-        { "id": "it-5", "label": "Con cá chép", "bucketId": "b-vertebrates" },
-        { "id": "it-6", "label": "Con ếch đồng", "bucketId": "b-vertebrates" },
-        { "id": "it-7", "label": "Con chim bồ câu", "bucketId": "b-vertebrates" },
-        { "id": "it-8", "label": "Con thỏ trắng", "bucketId": "b-vertebrates" }
+        {
+          "id": "it-1",
+          "label": "Con sứa biển",
+          "bucketId": "b-invertebrates"
+        },
+        {
+          "id": "it-2",
+          "label": "Con giun đất",
+          "bucketId": "b-invertebrates"
+        },
+        {
+          "id": "it-3",
+          "label": "Con ốc sên",
+          "bucketId": "b-invertebrates"
+        },
+        {
+          "id": "it-4",
+          "label": "Con tôm sông",
+          "bucketId": "b-invertebrates"
+        },
+        {
+          "id": "it-5",
+          "label": "Con cá chép",
+          "bucketId": "b-vertebrates"
+        },
+        {
+          "id": "it-6",
+          "label": "Con ếch đồng",
+          "bucketId": "b-vertebrates"
+        },
+        {
+          "id": "it-7",
+          "label": "Con chim bồ câu",
+          "bucketId": "b-vertebrates"
+        },
+        {
+          "id": "it-8",
+          "label": "Con thỏ trắng",
+          "bucketId": "b-vertebrates"
+        }
       ]
     },
     "hints": [
@@ -63,10 +107,16 @@
     "id": "bio-g6-b21-q02",
     "lessonId": "bio-g6-b21",
     "sgkBaiSo": 36,
-    "skillIds": ["bio-gioi-dong-vat", "bio-dong-vat-co-xuong-song"],
+    "skillIds": [
+      "bio-gioi-dong-vat",
+      "bio-dong-vat-co-xuong-song"
+    ],
     "difficulty": 1,
     "prompt": "Ghép nối từng lớp động vật có xương sống (cột bên trái) với đúng đặc điểm da, cơ quan vận động và sinh sản tương ứng (cột bên phải):",
-    "knowledge": ["bio-gioi-dong-vat", "bio-dong-vat-co-xuong-song"],
+    "knowledge": [
+      "bio-gioi-dong-vat",
+      "bio-dong-vat-co-xuong-song"
+    ],
     "answer": {
       "kind": "match",
       "pairs": [
@@ -131,17 +181,35 @@
     "id": "bio-g6-b21-q03",
     "lessonId": "bio-g6-b21",
     "sgkBaiSo": 36,
-    "skillIds": ["bio-gioi-dong-vat", "bio-dong-vat-khong-xuong-song"],
+    "skillIds": [
+      "bio-gioi-dong-vat",
+      "bio-dong-vat-khong-xuong-song"
+    ],
     "difficulty": 1,
     "prompt": "Ngành động vật không xương sống nào sau đây có số lượng loài phong phú và đông đúc nhất (chiếm hơn 2/3 tổng số loài động vật trên Trái Đất)?",
-    "knowledge": ["bio-gioi-dong-vat", "bio-dong-vat-khong-xuong-song"],
+    "knowledge": [
+      "bio-gioi-dong-vat",
+      "bio-dong-vat-khong-xuong-song"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Ngành Chân khớp (như côn trùng, tôm, cua, nhện)" },
-        { "id": "opt-b", "label": "Ngành Ruột khoang (như thủy tức, sứa biển)" },
-        { "id": "opt-c", "label": "Ngành Thân mềm (như ốc sên, trai sông)" },
-        { "id": "opt-d", "label": "Ngành Giun đất" }
+        {
+          "id": "opt-a",
+          "label": "Ngành Chân khớp (như côn trùng, tôm, cua, nhện)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Ngành Ruột khoang (như thủy tức, sứa biển)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ngành Thân mềm (như ốc sên, trai sông)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Ngành Giun đất"
+        }
       ],
       "correctId": "opt-a"
     },
@@ -184,10 +252,16 @@
     "id": "bio-g6-b21-q04",
     "lessonId": "bio-g6-b21",
     "sgkBaiSo": 36,
-    "skillIds": ["bio-gioi-dong-vat", "bio-dong-vat-co-xuong-song"],
+    "skillIds": [
+      "bio-gioi-dong-vat",
+      "bio-dong-vat-co-xuong-song"
+    ],
     "difficulty": 2,
     "prompt": "Hãy sắp xếp 5 lớp động vật có xương sống theo chiều hướng tiến hóa từ đời sống hoàn toàn dưới nước chuyển dần lên cạn:",
-    "knowledge": ["bio-gioi-dong-vat", "bio-dong-vat-co-xuong-song"],
+    "knowledge": [
+      "bio-gioi-dong-vat",
+      "bio-dong-vat-co-xuong-song"
+    ],
     "answer": {
       "kind": "ordering",
       "correctOrder": [
@@ -237,10 +311,14 @@
     "id": "bio-g6-b21-q05",
     "lessonId": "bio-g6-b21",
     "sgkBaiSo": 36,
-    "skillIds": ["bio-gioi-dong-vat"],
+    "skillIds": [
+      "bio-gioi-dong-vat"
+    ],
     "difficulty": 2,
     "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về giới Động vật:",
-    "knowledge": ["bio-gioi-dong-vat"],
+    "knowledge": [
+      "bio-gioi-dong-vat"
+    ],
     "answer": {
       "kind": "true-false",
       "statements": [

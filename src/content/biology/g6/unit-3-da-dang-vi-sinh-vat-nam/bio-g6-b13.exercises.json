@@ -77,15 +77,15 @@
         },
         {
           "id": "opt-b",
-          "label": "Do toàn bộ nước trong sữa đã bay hơi hết khi ủ ấm"
-        },
-        {
-          "id": "opt-c",
           "label": "Do đường trong sữa đặc tự biến đổi thành thạch rau câu"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "Do sữa bị thối rữa và tạo thành bọt khí"
+        },
+        {
+          "id": "opt-d",
+          "label": "Do toàn bộ nước trong sữa đã bay hơi hết khi ủ ấm"
         }
       ],
       "correctId": "opt-a"
@@ -146,7 +146,7 @@
         },
         {
           "id": "opt-b",
-          "label": "Khoảng 80°C đến 100°C (nước sôi sùng sục)"
+          "label": "Khoảng -10°C"
         },
         {
           "id": "opt-c",
@@ -154,7 +154,7 @@
         },
         {
           "id": "opt-d",
-          "label": "Khoảng -10°C"
+          "label": "Khoảng 80°C đến 100°C (nước sôi sùng sục)"
         }
       ],
       "correctId": "opt-c"
@@ -211,11 +211,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Sữa chua sẽ đông tụ nhanh hơn bình thường gấp 2 lần"
+          "label": "Sữa chua bị hỏng và không thể đông tụ được do vi khuẩn lactic đã bị chết ở nhiệt độ quá cao"
         },
         {
           "id": "opt-b",
-          "label": "Sữa chua bị hỏng và không thể đông tụ được do vi khuẩn lactic đã bị chết ở nhiệt độ quá cao"
+          "label": "Không có hiện tượng gì khác biệt"
         },
         {
           "id": "opt-c",
@@ -223,10 +223,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Không có hiện tượng gì khác biệt"
+          "label": "Sữa chua sẽ đông tụ nhanh hơn bình thường gấp 2 lần"
         }
       ],
-      "correctId": "opt-b"
+      "correctId": "opt-a"
     },
     "hints": [
       {
@@ -252,7 +252,7 @@
       {
         "kind": "answer",
         "title": "Chọn đáp án đúng",
-        "body": "Đáp án A là kết quả thực tế xảy ra."
+        "body": "Đáp án chính xác là kết quả thực tế xảy ra."
       }
     ],
     "finalSolution": "Đổ nước sôi 100°C trực tiếp làm chết toàn bộ vi khuẩn lactic giống, khiến sữa không thể lên men và không thể đông tụ thành sữa chua.",

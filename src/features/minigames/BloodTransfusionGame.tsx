@@ -41,7 +41,7 @@ const BLOOD_RULES: Record<
     color: 'bg-emerald-500/20',
     text: 'text-emerald-400',
     border: 'border-emerald-500/50',
-    glow: 'shadow-[0_0_15px_rgba(16,185,129,0.3)]',
+    glow: 'shadow-[0_4px_0_0_#059669]',
   },
   A: {
     antigens: 'Có kháng nguyên A',
@@ -50,7 +50,7 @@ const BLOOD_RULES: Record<
     color: 'bg-sky-500/20',
     text: 'text-sky-400',
     border: 'border-sky-500/50',
-    glow: 'shadow-[0_0_15px_rgba(14,165,233,0.3)]',
+    glow: 'shadow-[0_4px_0_0_#0284c7]',
   },
   B: {
     antigens: 'Có kháng nguyên B',
@@ -59,7 +59,7 @@ const BLOOD_RULES: Record<
     color: 'bg-amber-500/20',
     text: 'text-amber-400',
     border: 'border-amber-500/50',
-    glow: 'shadow-[0_0_15px_rgba(245,158,11,0.3)]',
+    glow: 'shadow-[0_4px_0_0_#b45309]',
   },
   AB: {
     antigens: 'Có cả kháng nguyên A và B',
@@ -68,7 +68,7 @@ const BLOOD_RULES: Record<
     color: 'bg-purple-500/20',
     text: 'text-purple-400',
     border: 'border-purple-500/50',
-    glow: 'shadow-[0_0_15px_rgba(168,85,247,0.3)]',
+    glow: 'shadow-[0_4px_0_0_#7e22ce]',
   },
 };
 

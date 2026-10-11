@@ -20,15 +20,15 @@
         },
         {
           "id": "opt-b",
-          "label": "Nước, Muối khoáng và Vitamin"
-        },
-        {
-          "id": "opt-c",
           "label": "Chất xơ, Nước và Canxi"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "Vitamin A, Vitamin C và Vitamin D"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nước, Muối khoáng và Vitamin"
         }
       ],
       "correctId": "opt-a"
@@ -89,15 +89,15 @@
         },
         {
           "id": "opt-b",
-          "label": "Khoang miệng → Thực quản → Hầu → Dạ dày → Ruột già → Ruột non → Trực tràng"
+          "label": "Khoang miệng → Hầu → Dạ dày → Thực quản → Ruột già → Ruột non"
         },
         {
           "id": "opt-c",
-          "label": "Khoang miệng → Dạ dày → Thực quản → Ruột non → Ruột già → Hậu môn"
+          "label": "Khoang miệng → Thực quản → Hầu → Dạ dày → Ruột già → Ruột non → Trực tràng"
         },
         {
           "id": "opt-d",
-          "label": "Khoang miệng → Hầu → Dạ dày → Thực quản → Ruột già → Ruột non"
+          "label": "Khoang miệng → Dạ dày → Thực quản → Ruột non → Ruột già → Hậu môn"
         }
       ],
       "correctId": "opt-a"
@@ -154,11 +154,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Một phần tinh bột chín được enzym amylase biến đổi thành đường Mantôzơ"
+          "label": "Protein được biến đổi thành các amino acid tự do"
         },
         {
           "id": "opt-b",
-          "label": "Protein được biến đổi thành các amino acid tự do"
+          "label": "Mọi chất hữu cơ đều được phân giải triệt để thành chất đơn giản"
         },
         {
           "id": "opt-c",
@@ -166,10 +166,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Mọi chất hữu cơ đều được phân giải triệt để thành chất đơn giản"
+          "label": "Một phần tinh bột chín được enzym amylase biến đổi thành đường Mantôzơ"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -223,7 +223,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Tạo môi trường acid để hoạt hóa pepsinogen thành enzym pepsin và tiêu diệt vi khuẩn"
+          "label": "Biến đổi tinh bột thành đường glucose hấp thụ vào máu"
         },
         {
           "id": "opt-b",
@@ -231,14 +231,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Biến đổi tinh bột thành đường glucose hấp thụ vào máu"
+          "label": "Tạo màng bảo vệ niêm mạc dạ dày không bị bào mòn"
         },
         {
           "id": "opt-d",
-          "label": "Tạo màng bảo vệ niêm mạc dạ dày không bị bào mòn"
+          "label": "Tạo môi trường acid để hoạt hóa pepsinogen thành enzym pepsin và tiêu diệt vi khuẩn"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -292,11 +292,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Dịch mật không chứa enzym tiêu hóa; muối mật giúp nhũ tương hóa lipid"
+          "label": "Dịch mật chứa nồng độ cao enzym pepsin và trypsin để tiêu hóa đạm"
         },
         {
           "id": "opt-b",
-          "label": "Dịch mật chứa nồng độ cao enzym pepsin và trypsin để tiêu hóa đạm"
+          "label": "Dịch mật không chứa enzym tiêu hóa; muối mật giúp nhũ tương hóa lipid"
         },
         {
           "id": "opt-c",
@@ -307,7 +307,7 @@
           "label": "Dịch mật do túi mật tự sản xuất và tiết thẳng vào dạ dày"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -430,22 +430,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Các nếp gấp niêm mạc, lông ruột (nhung mao) và vi nhung mao dày đặc"
-        },
-        {
-          "id": "opt-b",
           "label": "Các tuyến tiết chất nhầy ở thành ruột non"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Lớp cơ trơn dày dặn có khả năng co thắt liên tục"
+        },
+        {
+          "id": "opt-c",
+          "label": "Các nếp gấp niêm mạc, lông ruột (nhung mao) và vi nhung mao dày đặc"
         },
         {
           "id": "opt-d",
           "label": "Cơ vòng môn vị điều tiết lượng thức ăn"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -499,7 +499,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Ăn uống thất thường bỏ bữa, ăn quá nhiều đồ cay nóng, căng thẳng stress kéo dài và nhiễm khuẩn HP"
+          "label": "Nghỉ ngơi thư giãn 30 phút sau mỗi bữa ăn chính"
         },
         {
           "id": "opt-b",
@@ -507,14 +507,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Uống đủ nước lọc và ăn bổ sung nhiều rau xanh tươi"
+          "label": "Ăn uống thất thường bỏ bữa, ăn quá nhiều đồ cay nóng, căng thẳng stress kéo dài và nhiễm khuẩn HP"
         },
         {
           "id": "opt-d",
-          "label": "Nghỉ ngơi thư giãn 30 phút sau mỗi bữa ăn chính"
+          "label": "Uống đủ nước lọc và ăn bổ sung nhiều rau xanh tươi"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {

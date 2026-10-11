@@ -11,6 +11,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Check, Lock, Star, Play, Award, BookOpen, Gift } from 'lucide-react';
 import { sound } from '@/lib/audio';
+import { assetUrl } from '@/lib/utils';
 import { HandDrawnIcon } from './HandDrawnIcon';
 import { Mascot } from './Mascot';
 
@@ -129,78 +130,26 @@ function PathDecorations({
   return <>{decorations}</>;
 }
 
-/* ─── Mũi tên vẽ tay chỉ vào rương cuối chương: "Chinh phục để mở rương!" ─── */
-function ChestArrow({ x, y }: { x: number; y: number }) {
-  const pillW = 148;
-  const pillH = 22;
-  const pillX = x - pillW / 2;
-  const pillY = y - 56;
-
-  return (
-    <g className="pointer-events-none">
-      {/* Khung nhãn dạng sticker vẽ tay */}
-      <rect
-        x={pillX}
-        y={pillY}
-        width={pillW}
-        height={pillH}
-        rx={11}
-        fill="#18272f"
-        stroke="#f59e0b"
-        strokeWidth={2}
-      />
-      {/* Text nhãn */}
-      <text
-        x={x}
-        y={pillY + 14.5}
-        fontSize="9.5"
-        fontWeight="900"
-        fill="#fbbf24"
-        fontFamily="system-ui, -apple-system, sans-serif"
-        textAnchor="middle"
-        letterSpacing="0.3px"
-      >
-        Chinh phục để mở rương!
-      </text>
-
-      {/* Mũi tên vẽ tay cong chỉ từ đáy nhãn xuống nóc rương */}
-      <path
-        d={`M ${x} ${pillY + pillH + 1} Q ${x + 6} ${y - 20}, ${x} ${y - 10}`}
-        fill="none"
-        stroke="#fbbf24"
-        strokeWidth={2.5}
-        strokeLinecap="round"
-      />
-      {/* Đầu mũi tên nhọn */}
-      <path
-        d={`M ${x - 4} ${y - 16} L ${x} ${y - 10} L ${x + 4} ${y - 16}`}
-        fill="none"
-        stroke="#fbbf24"
-        strokeWidth={2.5}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </g>
-  );
-}
-
 export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subject = 'chem' }) => {
   const ac = ACCENT[subject] ?? ACCENT.chem;
   const isPhysics = subject === 'physics';
   const isBio = subject === 'bio';
 
-  const nodeSpacing = 94;
-  const startY = 52;
   const svgWidth = 360;
-  const totalHeight = startY + nodes.length * nodeSpacing + 40;
 
-  /* Tọa độ nốt — sine wave ziczac */
-  const nodeCoords = nodes.map((_, index) => {
+  /* Tọa độ nốt — sine wave ziczac với khoảng cách tối ưu cho chest */
+  let currentY = 56;
+  const nodeCoords = nodes.map((node, index) => {
     const wave = Math.sin((index * Math.PI) / 2);
     const x = 180 + Math.round(wave * 68);
-    const y = startY + index * nodeSpacing;
+    const y = currentY;
+    const nextNode = nodes[index + 1];
+    // Tăng khoảng cách khi nốt hiện tại là chest hoặc nốt kế tiếp là chest để không dính title/badge
+    const spacing = nextNode?.type === 'chest' ? 134 : node.type === 'chest' ? 124 : 110;
+    currentY += spacing;
     return { x, y };
   });
+  const totalHeight = currentY + 30;
 
   /* Build SVG paths */
   let fullPathD = '';
@@ -219,8 +168,9 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
       completedPathD = `M ${coord.x} ${coord.y}`;
     } else {
       const prev = nodeCoords[i - 1];
-      const cy1 = prev.y + nodeSpacing / 2;
-      const cy2 = coord.y - nodeSpacing / 2;
+      const segDy = coord.y - prev.y;
+      const cy1 = prev.y + segDy / 2;
+      const cy2 = coord.y - segDy / 2;
       const seg = ` C ${prev.x} ${cy1}, ${coord.x} ${cy2}, ${coord.x} ${coord.y}`;
       fullPathD += seg;
       if (i <= lastReachedIndex) completedPathD += seg;
@@ -228,10 +178,6 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
   });
 
   const firstActiveIndex = nodes.findIndex((n) => n.status === 'active');
-  // Tìm chỉ số nốt rương để vẽ mũi tên
-  const chestIndices = nodes
-    .map((n, i) => (n.type === 'chest' && n.status !== 'completed' ? i : -1))
-    .filter((i) => i >= 0);
 
   const handleNodePress = (node: PathNode) => {
     sound.playClick();
@@ -307,11 +253,6 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
 
         {/* 6. Bọt khí + tinh thể trang trí rải trên đường */}
         <PathDecorations nodeCoords={nodeCoords} bubbleColor={ac.bubbleColor} />
-
-        {/* 7. Mũi tên vẽ tay chỉ vào rương chưa mở */}
-        {chestIndices.map((ci) => (
-          <ChestArrow key={ci} x={nodeCoords[ci].x} y={nodeCoords[ci].y} />
-        ))}
       </svg>
 
       {/* ─── Nodes Container ─── */}
@@ -324,7 +265,7 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
           const isTheory = node.type === 'theory';
           const isCheckpoint = node.type === 'checkpoint';
           const isUnready = node.isReady === false;
-          const showStartBadge = isActive && index === firstActiveIndex;
+          const showStartBadge = isActive && index === firstActiveIndex && !isChest;
           const leftPercent = (coord.x / svgWidth) * 100;
 
           return (
@@ -333,6 +274,23 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
               className="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center"
               style={{ left: `${leftPercent}%`, top: `${coord.y}px` }}
             >
+              {/* ── Badge "Chinh phục để mở rương!" cho nốt rương chưa mở ── */}
+              {isChest && !isCompleted && (
+                <motion.div
+                  initial={{ y: 2 }}
+                  animate={{ y: -3 }}
+                  transition={{ repeat: Infinity, repeatType: 'reverse', duration: 1.6, ease: 'easeInOut' }}
+                  className="absolute -top-[52px] z-20 flex flex-col items-center pointer-events-none whitespace-nowrap"
+                >
+                  <div className="bg-[#18272f]/95 text-amber-300 border-2 border-amber-500/90 text-[10.5px] font-black tracking-wide px-3 py-1 rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.6)] flex items-center gap-1.5 backdrop-blur-md">
+                    <span className="text-amber-400 text-xs select-none">🎁</span>
+                    <span>Chinh phục để mở rương!</span>
+                  </div>
+                  {/* Mũi tên chỉ xuống nốt rương */}
+                  <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] border-t-amber-500 -mt-[1px]" />
+                </motion.div>
+              )}
+
               {/* ── Badge nổi "BẮT ĐẦU / LÝ THUYẾT" có Flasky mini nhún nhảy vẫy tay ── */}
               {showStartBadge && (
                 <motion.div
@@ -431,9 +389,17 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
 
                   {/* Icon nội dung nốt */}
                   {isChest ? (
-                    <Gift
-                      className={`w-9 h-9 stroke-[2] ${isCompleted ? 'text-slate-400' : 'text-white'}`}
-                    />
+                    isCompleted ? (
+                      <img
+                        src={assetUrl('/assets/roadmap/node-chest-completed.png')}
+                        alt="Rương đã mở"
+                        className="w-12 h-12 object-contain drop-shadow-md select-none pointer-events-none"
+                      />
+                    ) : (
+                      <Gift
+                        className="w-9 h-9 stroke-[2] text-white"
+                      />
+                    )
                   ) : isCompleted ? (
                     <Check className="w-8 h-8 stroke-[3.5]" />
                   ) : isActive && isTheory ? (

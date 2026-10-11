@@ -12,7 +12,7 @@
       "options": [
         {
           "id": "a",
-          "label": "Chiếc bàn học bằng gỗ"
+          "label": "Dòng sông Hồng"
         },
         {
           "id": "b",
@@ -20,14 +20,14 @@
         },
         {
           "id": "c",
-          "label": "Dòng sông Hồng"
+          "label": "Đám mây trên bầu trời"
         },
         {
           "id": "d",
-          "label": "Đám mây trên bầu trời"
+          "label": "Chiếc bàn học bằng gỗ"
         }
       ],
-      "correctId": "a"
+      "correctId": "d"
     },
     "hints": [
       {
@@ -77,22 +77,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Cây bút bi bằng nhựa"
+          "label": "Chiếc xe đạp mini"
         },
         {
           "id": "b",
-          "label": "Hòn đá cuội bên bờ suối"
-        },
-        {
-          "id": "c",
           "label": "Con cá vàng bơi trong bể"
         },
         {
+          "id": "c",
+          "label": "Cây bút bi bằng nhựa"
+        },
+        {
           "id": "d",
-          "label": "Chiếc xe đạp mini"
+          "label": "Hòn đá cuội bên bờ suối"
         }
       ],
-      "correctId": "c"
+      "correctId": "b"
     },
     "hints": [
       {
@@ -434,11 +434,11 @@
       "options": [
         {
           "id": "a",
-          "label": "Cắt tờ giấy trắng thành các mảnh vụn nhỏ"
+          "label": "Đốt cháy tờ giấy thành tro màu xám và khói"
         },
         {
           "id": "b",
-          "label": "Đốt cháy tờ giấy thành tro màu xám và khói"
+          "label": "Hòa tan muối ăn vào nước thành nước muối trong suốt"
         },
         {
           "id": "c",
@@ -446,10 +446,10 @@
         },
         {
           "id": "d",
-          "label": "Hòa tan muối ăn vào nước thành nước muối trong suốt"
+          "label": "Cắt tờ giấy trắng thành các mảnh vụn nhỏ"
         }
       ],
-      "correctId": "b"
+      "correctId": "a"
     },
     "hints": [
       {
@@ -567,15 +567,15 @@
       "options": [
         {
           "id": "a",
-          "label": "Muối ăn (natri clorua)"
-        },
-        {
-          "id": "b",
           "label": "Cát trắng tinh khiết"
         },
         {
-          "id": "c",
+          "id": "b",
           "label": "Nước cất"
+        },
+        {
+          "id": "c",
+          "label": "Muối ăn (natri clorua)"
         },
         {
           "id": "d",
@@ -679,22 +679,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Tuyệt đối không tự ý nếm hoặc ngửi trực tiếp các hóa chất lạ"
-        },
-        {
-          "id": "b",
           "label": "Dùng tay không cầm trực tiếp tất cả các loại hóa chất"
         },
         {
-          "id": "c",
+          "id": "b",
           "label": "Nếm thử một lượng nhỏ để nhận biết vị chua hay mặn của hóa chất"
         },
         {
-          "id": "d",
+          "id": "c",
           "label": "Ghé sát mũi vào miệng lọ hóa chất hít thật sâu để ngửi mùi"
+        },
+        {
+          "id": "d",
+          "label": "Tuyệt đối không tự ý nếm hoặc ngửi trực tiếp các hóa chất lạ"
         }
       ],
-      "correctId": "a"
+      "correctId": "d"
     },
     "hints": [
       {
@@ -739,11 +739,11 @@
       "options": [
         {
           "id": "a",
-          "label": "Vật chỉ bị biến dạng thay đổi kích thước mà giữ nguyên chất ban đầu"
+          "label": "Chất chỉ chuyển từ thể rắn sang thể lỏng khi đun nóng nhẹ"
         },
         {
           "id": "b",
-          "label": "Chất chỉ chuyển từ thể rắn sang thể lỏng khi đun nóng nhẹ"
+          "label": "Hạt chất rắn bị nghiền vụn thành bột mịn"
         },
         {
           "id": "c",
@@ -751,7 +751,7 @@
         },
         {
           "id": "d",
-          "label": "Hạt chất rắn bị nghiền vụn thành bột mịn"
+          "label": "Vật chỉ bị biến dạng thay đổi kích thước mà giữ nguyên chất ban đầu"
         }
       ],
       "correctId": "c"

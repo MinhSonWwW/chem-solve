@@ -3,10 +3,15 @@
     "id": "bio-g6-b18-q01",
     "lessonId": "bio-g6-b18",
     "sgkBaiSo": 33,
-    "skillIds": ["bio-thuc-hanh-nam"],
+    "skillIds": [
+      "bio-thuc-hanh-nam"
+    ],
     "difficulty": 1,
     "prompt": "Ghép nối từng bộ phận của cây nấm rơm (cột bên trái) với đúng đặc điểm hoặc chức năng của nó (cột bên phải):",
-    "knowledge": ["bio-thuc-hanh-nam", "bio-gioi-nam"],
+    "knowledge": [
+      "bio-thuc-hanh-nam",
+      "bio-gioi-nam"
+    ],
     "answer": {
       "kind": "match",
       "pairs": [
@@ -67,10 +72,14 @@
     "id": "bio-g6-b18-q02",
     "lessonId": "bio-g6-b18",
     "sgkBaiSo": 33,
-    "skillIds": ["bio-thuc-hanh-nam"],
+    "skillIds": [
+      "bio-thuc-hanh-nam"
+    ],
     "difficulty": 2,
     "prompt": "Hãy sắp xếp các thao tác sau theo đúng trình tự chuẩn khi làm tiêu bản quan sát sợi nấm mốc bánh mì dưới kính hiển vi:",
-    "knowledge": ["bio-thuc-hanh-nam"],
+    "knowledge": [
+      "bio-thuc-hanh-nam"
+    ],
     "answer": {
       "kind": "ordering",
       "correctOrder": [
@@ -119,17 +128,33 @@
     "id": "bio-g6-b18-q03",
     "lessonId": "bio-g6-b18",
     "sgkBaiSo": 33,
-    "skillIds": ["bio-thuc-hanh-nam"],
+    "skillIds": [
+      "bio-thuc-hanh-nam"
+    ],
     "difficulty": 1,
     "prompt": "Khi quan sát tiêu bản nấm mốc trắng trên bánh mì dưới kính hiển vi quang học, cơ quan sinh sản của nấm mốc có dạng cấu trúc nào sau đây?",
-    "knowledge": ["bio-thuc-hanh-nam"],
+    "knowledge": [
+      "bio-thuc-hanh-nam"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Các túi bào tử hình cầu nằm ở đầu các sợi nấm vươn cao" },
-        { "id": "opt-b", "label": "Các bông hoa màu vàng rực rỡ" },
-        { "id": "opt-c", "label": "Các quả mọng chứa hạt giống bên trong" },
-        { "id": "opt-d", "label": "Các vây bơi di chuyển linh hoạt" }
+        {
+          "id": "opt-a",
+          "label": "Các túi bào tử hình cầu nằm ở đầu các sợi nấm vươn cao"
+        },
+        {
+          "id": "opt-b",
+          "label": "Các bông hoa màu vàng rực rỡ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Các quả mọng chứa hạt giống bên trong"
+        },
+        {
+          "id": "opt-d",
+          "label": "Các vây bơi di chuyển linh hoạt"
+        }
       ],
       "correctId": "opt-a"
     },
@@ -172,23 +197,58 @@
     "id": "bio-g6-b18-q04",
     "lessonId": "bio-g6-b18",
     "sgkBaiSo": 33,
-    "skillIds": ["bio-thuc-hanh-nam"],
+    "skillIds": [
+      "bio-thuc-hanh-nam"
+    ],
     "difficulty": 2,
     "prompt": "Phân loại các loại nấm sau vào hai nhóm: 'Nấm ăn được / Nấm làm thuốc' và 'Nấm cực độc tuyệt đối không được ăn':",
-    "knowledge": ["bio-thuc-hanh-nam", "bio-gioi-nam"],
+    "knowledge": [
+      "bio-thuc-hanh-nam",
+      "bio-gioi-nam"
+    ],
     "answer": {
       "kind": "sort",
       "buckets": [
-        { "id": "b-edible", "label": "Nấm ăn được / Nấm dược liệu an toàn" },
-        { "id": "b-poisonous", "label": "Nấm cực độc tuyệt đối không được ăn" }
+        {
+          "id": "b-edible",
+          "label": "Nấm ăn được / Nấm dược liệu an toàn"
+        },
+        {
+          "id": "b-poisonous",
+          "label": "Nấm cực độc tuyệt đối không được ăn"
+        }
       ],
       "items": [
-        { "id": "it-1", "label": "Nấm rơm mọc trên rơm rạ ẩm", "bucketId": "b-edible" },
-        { "id": "it-2", "label": "Nấm hương (nấm đông cô)", "bucketId": "b-edible" },
-        { "id": "it-3", "label": "Nấm linh chi bồi bổ sức khỏe", "bucketId": "b-edible" },
-        { "id": "it-4", "label": "Nấm đùi gà nuôi trồng sạch", "bucketId": "b-edible" },
-        { "id": "it-5", "label": "Nấm tán trắng mọc hoang trong rừng có vòng cuống và bao gốc", "bucketId": "b-poisonous" },
-        { "id": "it-6", "label": "Nấm độc đỏ có mũ đỏ chấm trắng sặc sỡ", "bucketId": "b-poisonous" }
+        {
+          "id": "it-1",
+          "label": "Nấm rơm mọc trên rơm rạ ẩm",
+          "bucketId": "b-edible"
+        },
+        {
+          "id": "it-2",
+          "label": "Nấm hương (nấm đông cô)",
+          "bucketId": "b-edible"
+        },
+        {
+          "id": "it-3",
+          "label": "Nấm linh chi bồi bổ sức khỏe",
+          "bucketId": "b-edible"
+        },
+        {
+          "id": "it-4",
+          "label": "Nấm đùi gà nuôi trồng sạch",
+          "bucketId": "b-edible"
+        },
+        {
+          "id": "it-5",
+          "label": "Nấm tán trắng mọc hoang trong rừng có vòng cuống và bao gốc",
+          "bucketId": "b-poisonous"
+        },
+        {
+          "id": "it-6",
+          "label": "Nấm độc đỏ có mũ đỏ chấm trắng sặc sỡ",
+          "bucketId": "b-poisonous"
+        }
       ]
     },
     "hints": [
@@ -230,10 +290,14 @@
     "id": "bio-g6-b18-q05",
     "lessonId": "bio-g6-b18",
     "sgkBaiSo": 33,
-    "skillIds": ["bio-thuc-hanh-nam"],
+    "skillIds": [
+      "bio-thuc-hanh-nam"
+    ],
     "difficulty": 2,
     "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về thực hành quan sát các loại nấm:",
-    "knowledge": ["bio-thuc-hanh-nam"],
+    "knowledge": [
+      "bio-thuc-hanh-nam"
+    ],
     "answer": {
       "kind": "true-false",
       "statements": [

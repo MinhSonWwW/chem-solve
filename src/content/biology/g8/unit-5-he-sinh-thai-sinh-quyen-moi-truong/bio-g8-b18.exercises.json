@@ -16,22 +16,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Khí carbon dioxide (CO2)"
-        },
-        {
-          "id": "opt-b",
           "label": "Khí oxy (O2)"
         },
         {
+          "id": "opt-b",
+          "label": "Khí argon (Ar)"
+        },
+        {
           "id": "opt-c",
-          "label": "Khí nitơ phân tử (N2)"
+          "label": "Khí carbon dioxide (CO2)"
         },
         {
           "id": "opt-d",
-          "label": "Khí argon (Ar)"
+          "label": "Khí nitơ phân tử (N2)"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -85,22 +85,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Nguồn nước bị dư thừa quá mức các chất dinh dưỡng khoáng (đặc biệt là nitơ và phospho) từ phân bón và nước thải"
+          "label": "Hàm lượng khí oxy hòa tan trong nước ao hồ đạt mức bão hòa cực đại"
         },
         {
           "id": "opt-b",
-          "label": "Nhiệt độ nước ao hồ bị đóng băng dưới không độ C trong nhiều tuần liền"
+          "label": "Nguồn nước bị dư thừa quá mức các chất dinh dưỡng khoáng (đặc biệt là nitơ và phospho) từ phân bón và nước thải"
         },
         {
           "id": "opt-c",
-          "label": "Hàm lượng khí oxy hòa tan trong nước ao hồ đạt mức bão hòa cực đại"
+          "label": "Nhiệt độ nước ao hồ bị đóng băng dưới không độ C trong nhiều tuần liền"
         },
         {
           "id": "opt-d",
           "label": "Tất cả các loài cá trong hồ ngừng ăn thức ăn hữu cơ"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -154,22 +154,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Vì chúng giải phóng các kim loại nặng cực độc (chì, thủy ngân, cadmium) ngấm vào đất và mạch nước ngầm gây ung thư"
-        },
-        {
-          "id": "opt-b",
           "label": "Vì vỏ pin sẽ tự động biến thành phân bón hóa học làm chua đất"
         },
         {
+          "id": "opt-b",
+          "label": "Vì chúng làm tăng độ ẩm của đất khiến giun đất sinh sôi quá nhiều"
+        },
+        {
           "id": "opt-c",
-          "label": "Vì pin cũ sẽ phát ra tia phóng xạ hạt nhân ngay lập tức thiêu rụi cây cỏ"
+          "label": "Vì chúng giải phóng các kim loại nặng cực độc (chì, thủy ngân, cadmium) ngấm vào đất và mạch nước ngầm gây ung thư"
         },
         {
           "id": "opt-d",
-          "label": "Vì chúng làm tăng độ ẩm của đất khiến giun đất sinh sôi quá nhiều"
+          "label": "Vì pin cũ sẽ phát ra tia phóng xạ hạt nhân ngay lập tức thiêu rụi cây cỏ"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -223,22 +223,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Tái chế rác thải thành nguyên liệu đầu vào để sản xuất ra các sản phẩm mới có ích"
-        },
-        {
-          "id": "opt-b",
           "label": "Giảm thiểu việc tiêu dùng các loại bao bì và hàng hóa không cần thiết"
         },
         {
+          "id": "opt-b",
+          "label": "Tái chế rác thải thành nguyên liệu đầu vào để sản xuất ra các sản phẩm mới có ích"
+        },
+        {
           "id": "opt-c",
-          "label": "Sử dụng lại chai lọ, túi xách nhiều lần mà không qua quá trình chế biến nhiệt"
+          "label": "Đốt cháy toàn bộ rác thải nhựa ở nhiệt độ cao ngoài trời để giảm thể tích"
         },
         {
           "id": "opt-d",
-          "label": "Đốt cháy toàn bộ rác thải nhựa ở nhiệt độ cao ngoài trời để giảm thể tích"
+          "label": "Sử dụng lại chai lọ, túi xách nhiều lần mà không qua quá trình chế biến nhiệt"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -292,11 +292,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Chuyển đổi mạnh mẽ sang sử dụng các nguồn năng lượng tái tạo (năng lượng mặt trời, năng lượng gió) thay thế nhiên liệu hóa thạch"
+          "label": "Xây dựng thêm nhiều nhà máy nhiệt điện chạy bằng than đá nhập khẩu"
         },
         {
           "id": "opt-b",
-          "label": "Xây dựng thêm nhiều nhà máy nhiệt điện chạy bằng than đá nhập khẩu"
+          "label": "Sử dụng bếp than tổ ong để sưởi ấm trong phòng kín vào mùa đông"
         },
         {
           "id": "opt-c",
@@ -304,10 +304,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Sử dụng bếp than tổ ong để sưởi ấm trong phòng kín vào mùa đông"
+          "label": "Chuyển đổi mạnh mẽ sang sử dụng các nguồn năng lượng tái tạo (năng lượng mặt trời, năng lượng gió) thay thế nhiên liệu hóa thạch"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -361,22 +361,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Sự phát triển đáp ứng nhu cầu của thế hệ hiện tại mà không làm tổn hại đến khả năng đáp ứng nhu cầu của các thế hệ mai sau"
+          "label": "Chỉ phát triển kinh tế vùng đô thị và bỏ mặc hoàn toàn môi trường sinh thái nông thôn"
         },
         {
           "id": "opt-b",
-          "label": "Tập trung khai thác cạn kiệt toàn bộ tài nguyên thiên nhiên ngay lập tức để làm giàu cấp tốc cho đất nước"
+          "label": "Sự phát triển đáp ứng nhu cầu của thế hệ hiện tại mà không làm tổn hại đến khả năng đáp ứng nhu cầu của các thế hệ mai sau"
         },
         {
           "id": "opt-c",
-          "label": "Ngừng toàn bộ mọi hoạt động sản xuất công nghiệp và nông nghiệp để thiên nhiên tự phát triển hoang dã"
+          "label": "Tập trung khai thác cạn kiệt toàn bộ tài nguyên thiên nhiên ngay lập tức để làm giàu cấp tốc cho đất nước"
         },
         {
           "id": "opt-d",
-          "label": "Chỉ phát triển kinh tế vùng đô thị và bỏ mặc hoàn toàn môi trường sinh thái nông thôn"
+          "label": "Ngừng toàn bộ mọi hoạt động sản xuất công nghiệp và nông nghiệp để thiên nhiên tự phát triển hoang dã"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -430,22 +430,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Xâm nhập vào cơ thể cá, tôm, chim biển và tích tụ tăng dần qua chuỗi thức ăn rồi quay lại cơ thể con người gây độc"
-        },
-        {
-          "id": "opt-b",
           "label": "Tự động phân giải thành khí oxy làm sạch nước đại dương"
         },
         {
+          "id": "opt-b",
+          "label": "Xâm nhập vào cơ thể cá, tôm, chim biển và tích tụ tăng dần qua chuỗi thức ăn rồi quay lại cơ thể con người gây độc"
+        },
+        {
           "id": "opt-c",
-          "label": "Tạo ra một lớp màng bảo vệ giúp các rạn san hô không bị sóng biển đánh vỡ"
+          "label": "Làm tăng độ ngọt của nước biển giúp các loài cá nước ngọt có thể sống được ở biển"
         },
         {
           "id": "opt-d",
-          "label": "Làm tăng độ ngọt của nước biển giúp các loài cá nước ngọt có thể sống được ở biển"
+          "label": "Tạo ra một lớp màng bảo vệ giúp các rạn san hô không bị sóng biển đánh vỡ"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -499,22 +499,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Mang theo bình đựng nước cá nhân, dùng hộp cơm và túi vải có thể tái sử dụng nhiều lần"
+          "label": "Đốt các bao bì túi bóng nilon ở góc sân trường vào giờ ra chơi"
         },
         {
           "id": "opt-b",
-          "label": "Mỗi ngày sử dụng nhiều cốc trà sữa và ống hút nhựa dùng 1 lần rồi vứt ra gốc cây"
-        },
-        {
-          "id": "opt-c",
           "label": "Yêu cầu người bán hàng gói mỗi món đồ ăn vào 3 lớp túi nilon riêng biệt"
         },
         {
+          "id": "opt-c",
+          "label": "Mỗi ngày sử dụng nhiều cốc trà sữa và ống hút nhựa dùng 1 lần rồi vứt ra gốc cây"
+        },
+        {
           "id": "opt-d",
-          "label": "Đốt các bao bì túi bóng nilon ở góc sân trường vào giờ ra chơi"
+          "label": "Mang theo bình đựng nước cá nhân, dùng hộp cơm và túi vải có thể tái sử dụng nhiều lần"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {

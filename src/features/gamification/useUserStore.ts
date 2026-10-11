@@ -3,6 +3,7 @@ import { sound } from '@/lib/audio';
 import { GAMIFICATION } from '@/config/gamification';
 import { sessionReducer, createInitialSession } from '@/engine/session/sessionReducer';
 import { checkAnswer } from '@/engine/checkers';
+import { generateSmartHint } from '@/engine/solution/smartHintEngine';
 import type { SessionState, SessionAction } from '@/engine/session/types';
 import type { Exercise } from '@/content/schema/exercise';
 import type { Verdict } from '@/engine/checkers/types';
@@ -148,6 +149,21 @@ export const useUserStore = create<UserState>((set, get) => ({
       currentQ.userInput,
       currentQ.exercise.commonMistakes ?? []
     );
+
+    // AI Smart Pedagogical Hint (Milestone M11)
+    if (verdict.status === 'incorrect' && !verdict.smartHint) {
+      const diagnosis = generateSmartHint(
+        currentQ.exercise,
+        currentQ.userInput,
+        verdict
+      );
+      if (diagnosis) {
+        verdict.smartHint = diagnosis.hint;
+        if (!verdict.diagnosis) {
+          verdict.diagnosis = diagnosis.title;
+        }
+      }
+    }
 
     set({ lastVerdict: verdict });
 

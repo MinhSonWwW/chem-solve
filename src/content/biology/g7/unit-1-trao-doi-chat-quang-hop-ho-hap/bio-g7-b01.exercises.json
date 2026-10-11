@@ -16,11 +16,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Trao đổi chất"
+          "label": "Cảm ứng sinh học"
         },
         {
           "id": "opt-b",
-          "label": "Cảm ứng sinh học"
+          "label": "Trao đổi chất"
         },
         {
           "id": "opt-c",
@@ -31,7 +31,7 @@
           "label": "Biến thái hoàn toàn"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -89,11 +89,11 @@
         },
         {
           "id": "opt-b",
-          "label": "Quang năng"
+          "label": "Cơ năng"
         },
         {
           "id": "opt-c",
-          "label": "Cơ năng"
+          "label": "Quang năng"
         },
         {
           "id": "opt-d",
@@ -154,22 +154,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Quang năng chuyển hóa thành Hóa năng"
-        },
-        {
-          "id": "opt-b",
           "label": "Hóa năng chuyển hóa thành Nhiệt năng"
         },
         {
+          "id": "opt-b",
+          "label": "Quang năng chuyển hóa thành Hóa năng"
+        },
+        {
           "id": "opt-c",
-          "label": "Nhiệt năng chuyển hóa thành Cơ năng"
+          "label": "Cơ năng chuyển hóa thành Quang năng"
         },
         {
           "id": "opt-d",
-          "label": "Cơ năng chuyển hóa thành Quang năng"
+          "label": "Nhiệt năng chuyển hóa thành Cơ năng"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -218,7 +218,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Trao đổi chất và chuyển hóa năng lượng luôn diễn ra đồng thời và gắn bó mật thiết với nhau"
+          "label": "Trao đổi chất là quá trình hoàn toàn độc lập, không liên quan đến năng lượng"
         },
         {
           "id": "opt-b",
@@ -230,10 +230,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Trao đổi chất là quá trình hoàn toàn độc lập, không liên quan đến năng lượng"
+          "label": "Trao đổi chất và chuyển hóa năng lượng luôn diễn ra đồng thời và gắn bó mật thiết với nhau"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -282,7 +282,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Một phần hóa năng từ chất dinh dưỡng đã chuyển hóa thành cơ năng và giải phóng nhiều nhiệt năng"
+          "label": "Năng lượng trong cơ thể không thay đổi dạng trong suốt quá trình chạy"
         },
         {
           "id": "opt-b",
@@ -290,14 +290,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Quá trình trao đổi chất đã bị tạm dừng hoàn toàn để tiết kiệm năng lượng"
+          "label": "Một phần hóa năng từ chất dinh dưỡng đã chuyển hóa thành cơ năng và giải phóng nhiều nhiệt năng"
         },
         {
           "id": "opt-d",
-          "label": "Năng lượng trong cơ thể không thay đổi dạng trong suốt quá trình chạy"
+          "label": "Quá trình trao đổi chất đã bị tạm dừng hoàn toàn để tiết kiệm năng lượng"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -346,7 +346,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Khí carbon dioxide (CO2), mồ hôi, nước tiểu"
+          "label": "Protein và tinh bột nguyên vẹn"
         },
         {
           "id": "opt-b",
@@ -354,14 +354,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Protein và tinh bột nguyên vẹn"
+          "label": "Khí carbon dioxide (CO2), mồ hôi, nước tiểu"
         },
         {
           "id": "opt-d",
           "label": "Khoáng chất cần thiết và vitamin"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -473,7 +473,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Sinh vật sẽ mất dần năng lượng duy trì sự sống và dẫn tới cái chết"
+          "label": "Tế bào sẽ tự động nhân đôi liên tục mà không cần nguyên liệu"
         },
         {
           "id": "opt-b",
@@ -485,10 +485,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Tế bào sẽ tự động nhân đôi liên tục mà không cần nguyên liệu"
+          "label": "Sinh vật sẽ mất dần năng lượng duy trì sự sống và dẫn tới cái chết"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {

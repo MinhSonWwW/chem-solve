@@ -136,22 +136,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Làm chậm và cản trở tốc độ bơi quá nhanh của trùng giày, trùng roi giúp dễ quan sát"
+          "label": "Cung cấp chất béo làm thức ăn cho trùng roi"
         },
         {
           "id": "opt-b",
-          "label": "Làm tăng độ phóng đại quang học của thấu kính"
-        },
-        {
-          "id": "opt-c",
           "label": "Giúp tiêu diệt bớt vi khuẩn gây hại trên lam kính"
         },
         {
+          "id": "opt-c",
+          "label": "Làm tăng độ phóng đại quang học của thấu kính"
+        },
+        {
           "id": "opt-d",
-          "label": "Cung cấp chất béo làm thức ăn cho trùng roi"
+          "label": "Làm chậm và cản trở tốc độ bơi quá nhanh của trùng giày, trùng roi giúp dễ quan sát"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -205,22 +205,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Dưới đáy bùn đen sâu thẳm không có ánh sáng"
-        },
-        {
-          "id": "opt-b",
           "label": "Chỗ dòng nước chảy xiết xối xả"
         },
         {
+          "id": "opt-b",
+          "label": "Nước mưa vừa rơi từ trên mái nhà xuống"
+        },
+        {
           "id": "opt-c",
-          "label": "Lớp nước có váng xanh ở sát bề mặt nơi có nhiều ánh sáng chiếu vào"
+          "label": "Dưới đáy bùn đen sâu thẳm không có ánh sáng"
         },
         {
           "id": "opt-d",
-          "label": "Nước mưa vừa rơi từ trên mái nhà xuống"
+          "label": "Lớp nước có váng xanh ở sát bề mặt nơi có nhiều ánh sáng chiếu vào"
         }
       ],
-      "correctId": "opt-c"
+      "correctId": "opt-d"
     },
     "hints": [
       {

@@ -12,22 +12,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Vôi sống (CaO) và khí carbon dioxide (CO2)"
-        },
-        {
-          "id": "b",
-          "label": "Vôi tôi Ca(OH)2 và khí oxy"
-        },
-        {
-          "id": "c",
           "label": "Kim loại canxi (Ca) và khí CO"
         },
         {
-          "id": "d",
+          "id": "b",
+          "label": "Vôi sống (CaO) và khí carbon dioxide (CO2)"
+        },
+        {
+          "id": "c",
           "label": "Canxi clorua (CaCl2) và nước"
+        },
+        {
+          "id": "d",
+          "label": "Vôi tôi Ca(OH)2 và khí oxy"
         }
       ],
-      "correctId": "a"
+      "correctId": "b"
     },
     "hints": [
       {
@@ -154,18 +154,18 @@
         },
         {
           "id": "b",
-          "label": "Xuất hiện khí màu vàng lục có mùi hắc"
+          "label": "Vôi sống nhão ra, phản ứng tỏa rất nhiều nhiệt làm nước sôi sùng sục, tạo thành vôi tôi Ca(OH)2"
         },
         {
           "id": "c",
-          "label": "Vôi sống nhão ra, phản ứng tỏa rất nhiều nhiệt làm nước sôi sùng sục, tạo thành vôi tôi Ca(OH)2"
+          "label": "Xuất hiện khí màu vàng lục có mùi hắc"
         },
         {
           "id": "d",
           "label": "Dung dịch chuyển sang màu đỏ tím"
         }
       ],
-      "correctId": "c"
+      "correctId": "b"
     },
     "hints": [
       {

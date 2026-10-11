@@ -12,7 +12,7 @@
       "options": [
         {
           "id": "a",
-          "label": "Natri hiđroxit (NaOH)"
+          "label": "Nhôm hiđroxit (Al(OH)3)"
         },
         {
           "id": "b",
@@ -24,10 +24,10 @@
         },
         {
           "id": "d",
-          "label": "Nhôm hiđroxit (Al(OH)3)"
+          "label": "Natri hiđroxit (NaOH)"
         }
       ],
-      "correctId": "a"
+      "correctId": "d"
     },
     "hints": [
       {
@@ -77,11 +77,11 @@
       "options": [
         {
           "id": "a",
-          "label": "Mẫu nước có môi trường axit"
+          "label": "Không xác định được môi trường"
         },
         {
           "id": "b",
-          "label": "Mẫu nước có môi trường trung tính"
+          "label": "Mẫu nước có môi trường axit"
         },
         {
           "id": "c",
@@ -89,7 +89,7 @@
         },
         {
           "id": "d",
-          "label": "Không xác định được môi trường"
+          "label": "Mẫu nước có môi trường trung tính"
         }
       ],
       "correctId": "c"

@@ -14,6 +14,7 @@ import {
 import { useUserStore } from '@/features/gamification/useUserStore';
 import { Button, Streak, CurrencyIcon } from '@/design-system';
 import { sound } from '@/lib/audio';
+import { assetUrl } from '@/lib/utils';
 import { useActiveSubject } from '@/content/subjects';
 import trueFalseData from '@/content/kb/true-false-statements.json';
 import physicsTrueFalseData from '@/content/kb/physics/true-false-statements.json';
@@ -138,16 +139,23 @@ export const DailyPage: React.FC = () => {
             <Streak days={streak} />
           </div>
 
-          <div>
-            <h2 className="text-base font-extrabold text-slate-100">
-              Chủ đề hôm nay: Thử thách {activeSubject === 'physics' ? 'Vật lý' : activeSubject === 'bio' ? 'Sinh học' : 'Hóa học'} tổng hợp
-            </h2>
-            <div className="flex items-center gap-1.5 text-xs text-slate-400 mt-1">
-              <span>Phần thưởng:</span>
-              <span className="text-[#38bdf8] font-bold flex items-center gap-1">
-                <CurrencyIcon type="xp" size="xs" /> +30 XP
-              </span>
-              <span>& thắp sáng ngọn lửa Streak</span>
+          <div className="flex items-center gap-4">
+            <img
+              src={assetUrl('/assets/roadmap/node-daily.png')}
+              alt="Thử thách ngày"
+              className="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-lg shrink-0 select-none pointer-events-none"
+            />
+            <div className="space-y-1">
+              <h2 className="text-base font-extrabold text-slate-100 leading-snug">
+                Chủ đề hôm nay: Thử thách {activeSubject === 'physics' ? 'Vật lý' : activeSubject === 'bio' ? 'Sinh học' : 'Hóa học'} tổng hợp
+              </h2>
+              <div className="flex items-center gap-1.5 text-xs text-slate-400">
+                <span>Phần thưởng:</span>
+                <span className="text-[#38bdf8] font-bold flex items-center gap-1">
+                  <CurrencyIcon type="xp" size="xs" /> +30 XP
+                </span>
+                <span>& thắp sáng ngọn lửa Streak</span>
+              </div>
             </div>
           </div>
 

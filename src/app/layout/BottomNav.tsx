@@ -2,12 +2,12 @@ import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { BookOpen, FlaskConical, ShoppingBag, BarChart3, User, Zap, Dna } from 'lucide-react';
 import { sound } from '@/lib/audio';
-import { useActiveSubject } from '@/content/subjects';
+import { useActiveSubject, useActiveGrade } from '@/content/subjects';
 
 export const BottomNav: React.FC = () => {
   const location = useLocation();
   const { subject: activeSubject } = useActiveSubject();
-  const activeGrade = typeof window !== 'undefined' ? localStorage.getItem('chem_active_grade') || '8' : '8';
+  const { grade: activeGrade } = useActiveGrade();
 
   const navItems = [
     { to: `/learn/${activeGrade}`, label: 'Học', icon: BookOpen, isLearn: true },

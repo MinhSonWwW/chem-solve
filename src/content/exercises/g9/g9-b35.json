@@ -16,15 +16,15 @@
         },
         {
           "id": "b",
-          "label": "Oxygen (O2)"
+          "label": "Helium (He)"
         },
         {
           "id": "c",
-          "label": "Nitrogen (N2)"
+          "label": "Oxygen (O2)"
         },
         {
           "id": "d",
-          "label": "Helium (He)"
+          "label": "Nitrogen (N2)"
         }
       ],
       "correctId": "a"
@@ -160,22 +160,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Lạm dụng túi nilon và đồ nhựa một lần rồi vứt bừa bãi"
-        },
-        {
-          "id": "b",
-          "label": "Bật điều hòa ở nhiệt độ 16°C cả ngày lẫn đêm dù không có người"
-        },
-        {
-          "id": "c",
           "label": "Đi bộ hoặc xe đạp, tắt thiết bị điện khi không dùng và tích cực trồng cây xanh"
         },
         {
-          "id": "d",
+          "id": "b",
           "label": "Đốt các loại rác thải cao su và nhựa tại vườn nhà"
+        },
+        {
+          "id": "c",
+          "label": "Lạm dụng túi nilon và đồ nhựa một lần rồi vứt bừa bãi"
+        },
+        {
+          "id": "d",
+          "label": "Bật điều hòa ở nhiệt độ 16°C cả ngày lẫn đêm dù không có người"
         }
       ],
-      "correctId": "c"
+      "correctId": "a"
     },
     "hints": [
       {

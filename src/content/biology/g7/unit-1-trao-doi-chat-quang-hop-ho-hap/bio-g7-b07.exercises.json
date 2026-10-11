@@ -16,22 +16,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Dung dịch nước vôi trong Ca(OH)2"
-        },
-        {
-          "id": "opt-b",
-          "label": "Dung dịch Iodine"
-        },
-        {
-          "id": "opt-c",
           "label": "Dung dịch cồn 90°"
         },
         {
-          "id": "opt-d",
+          "id": "opt-b",
+          "label": "Dung dịch nước vôi trong Ca(OH)2"
+        },
+        {
+          "id": "opt-c",
           "label": "Dung dịch muối ăn NaCl"
+        },
+        {
+          "id": "opt-d",
+          "label": "Dung dịch Iodine"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -89,11 +89,11 @@
         },
         {
           "id": "opt-b",
-          "label": "Để hạt luộc chín tỏa ra nhiều nhiệt lượng hơn hạt sống"
+          "label": "Để giữ cho bình thủy tinh không bị nứt vỡ khi thay đổi nhiệt độ"
         },
         {
           "id": "opt-c",
-          "label": "Để giữ cho bình thủy tinh không bị nứt vỡ khi thay đổi nhiệt độ"
+          "label": "Để hạt luộc chín tỏa ra nhiều nhiệt lượng hơn hạt sống"
         },
         {
           "id": "opt-d",
@@ -153,15 +153,15 @@
         },
         {
           "id": "opt-b",
-          "label": "O2 + Ca(OH)2 → CaO + H2O2"
+          "label": "Glucose + Ca(OH)2 → Ca(OH)2 + C6H12O6"
         },
         {
           "id": "opt-c",
-          "label": "N2 + Ca(OH)2 → Ca(NO3)2 + H2"
+          "label": "O2 + Ca(OH)2 → CaO + H2O2"
         },
         {
           "id": "opt-d",
-          "label": "Glucose + Ca(OH)2 → Ca(OH)2 + C6H12O6"
+          "label": "N2 + Ca(OH)2 → Ca(NO3)2 + H2"
         }
       ],
       "correctId": "opt-a"
@@ -190,7 +190,7 @@
       {
         "kind": "answer",
         "title": "Chọn phương án",
-        "body": "Đáp án A là phương trình hóa học chuẩn."
+        "body": "Đáp án chính xác là phương trình hóa học chuẩn."
       }
     ],
     "finalSolution": "Khí CO2 phản ứng với nước vôi trong tạo kết tủa trắng CaCO3 làm vẩn đục dung dịch.",
@@ -213,22 +213,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Hạt đậu nảy mầm đã hô hấp và tiêu thụ hết khí Oxygen (O2) trong bình"
-        },
-        {
-          "id": "opt-b",
-          "label": "Hạt đậu nảy mầm đã giải phóng ra khí Oxygen dập tắt ngọn lửa"
-        },
-        {
-          "id": "opt-c",
           "label": "Nước bốc hơi từ hạt làm que diêm bị ướt ngay lập tức"
         },
         {
-          "id": "opt-d",
+          "id": "opt-b",
           "label": "Nhiệt độ trong bình quá lạnh làm ngọn lửa bị đóng băng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hạt đậu nảy mầm đã hô hấp và tiêu thụ hết khí Oxygen (O2) trong bình"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hạt đậu nảy mầm đã giải phóng ra khí Oxygen dập tắt ngọn lửa"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -277,22 +277,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Vì hạt nảy mầm hô hấp cực kì mạnh mẽ và không có diệp lục nên không bị quá trình quang hợp làm ảnh hưởng kết quả"
+          "label": "Vì hạt nảy mầm không chứa nước nên dễ bảo quản trong phòng thí nghiệm"
         },
         {
           "id": "opt-b",
-          "label": "Vì hạt nảy mầm có kích thước to nhất trong tất cả các bộ phận của cây"
-        },
-        {
-          "id": "opt-c",
           "label": "Vì chỉ có hạt nảy mầm mới biết hút khí oxygen còn các bộ phận khác thì không"
         },
         {
+          "id": "opt-c",
+          "label": "Vì hạt nảy mầm hô hấp cực kì mạnh mẽ và không có diệp lục nên không bị quá trình quang hợp làm ảnh hưởng kết quả"
+        },
+        {
           "id": "opt-d",
-          "label": "Vì hạt nảy mầm không chứa nước nên dễ bảo quản trong phòng thí nghiệm"
+          "label": "Vì hạt nảy mầm có kích thước to nhất trong tất cả các bộ phận của cây"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -318,7 +318,7 @@
       {
         "kind": "answer",
         "title": "Chọn đáp án",
-        "body": "Đáp án A giải thích chuẩn xác lí do lựa chọn hạt nảy mầm."
+        "body": "Đáp án chính xác giải thích chuẩn xác lí do lựa chọn hạt nảy mầm."
       }
     ],
     "finalSolution": "Hạt nảy mầm hô hấp mạnh và không quang hợp, là đối tượng lí tưởng cho thí nghiệm hô hấp.",
@@ -341,22 +341,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Quá trình hô hấp tế bào ở hạt nảy mầm đã giải phóng một phần năng lượng dưới dạng nhiệt năng"
-        },
-        {
-          "id": "opt-b",
           "label": "Hạt đậu đã tự hút nhiệt từ thủy tinh để làm nóng bên trong"
         },
         {
+          "id": "opt-b",
+          "label": "Hạt đậu nảy mầm đã chuyển hóa toàn bộ nước thành thể hơi nóng"
+        },
+        {
           "id": "opt-c",
-          "label": "Nhiệt độ phòng đã tăng lên đột ngột làm bình nóng theo"
+          "label": "Quá trình hô hấp tế bào ở hạt nảy mầm đã giải phóng một phần năng lượng dưới dạng nhiệt năng"
         },
         {
           "id": "opt-d",
-          "label": "Hạt đậu nảy mầm đã chuyển hóa toàn bộ nước thành thể hơi nóng"
+          "label": "Nhiệt độ phòng đã tăng lên đột ngột làm bình nóng theo"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -468,11 +468,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Hô hấp tế bào ở thực vật là quá trình tiêu thụ khí oxygen, thải ra khí carbon dioxide và giải phóng năng lượng nhiệt"
+          "label": "Hô hấp ở thực vật chỉ tạo ra khí oxygen làm sạch không khí xung quanh"
         },
         {
           "id": "opt-b",
-          "label": "Hô hấp ở thực vật chỉ tạo ra khí oxygen làm sạch không khí xung quanh"
+          "label": "Hô hấp tế bào ở thực vật là quá trình tiêu thụ khí oxygen, thải ra khí carbon dioxide và giải phóng năng lượng nhiệt"
         },
         {
           "id": "opt-c",
@@ -483,7 +483,7 @@
           "label": "Thực vật hoàn toàn không có quá trình hô hấp mà chỉ có động vật mới hô hấp"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -509,7 +509,7 @@
       {
         "kind": "answer",
         "title": "Chọn khẳng định đúng",
-        "body": "Đáp án A tóm tắt chính xác toàn bộ bản chất khoa học của bài học."
+        "body": "Đáp án chính xác tóm tắt chính xác toàn bộ bản chất khoa học của bài học."
       }
     ],
     "finalSolution": "Hô hấp tế bào ở thực vật tiêu thụ O2, sinh ra CO2 và giải phóng năng lượng nhiệt.",

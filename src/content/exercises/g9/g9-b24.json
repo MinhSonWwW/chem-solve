@@ -12,22 +12,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Chứa một liên kết đôi C=C (gồm 1 liên kết bền và 1 liên kết kém bền dễ đứt)"
-        },
-        {
-          "id": "b",
           "label": "Chỉ chứa toàn bộ liên kết đơn C-H bền vững"
         },
         {
-          "id": "c",
+          "id": "b",
           "label": "Chứa liên kết ba C≡C"
         },
         {
-          "id": "d",
+          "id": "c",
           "label": "Có vòng carbon khép kín"
+        },
+        {
+          "id": "d",
+          "label": "Chứa một liên kết đôi C=C (gồm 1 liên kết bền và 1 liên kết kém bền dễ đứt)"
         }
       ],
-      "correctId": "a"
+      "correctId": "d"
     },
     "hints": [
       {
@@ -77,22 +77,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Xuất hiện kết tủa trắng"
+          "label": "Không có hiện tượng gì, dung dịch giữ nguyên màu"
         },
         {
           "id": "b",
-          "label": "Dung dịch chuyển sang màu xanh lam"
-        },
-        {
-          "id": "c",
           "label": "Dung dịch Bromine bị mất màu (nhạt dần rồi không màu)"
         },
         {
+          "id": "c",
+          "label": "Xuất hiện kết tủa trắng"
+        },
+        {
           "id": "d",
-          "label": "Không có hiện tượng gì, dung dịch giữ nguyên màu"
+          "label": "Dung dịch chuyển sang màu xanh lam"
         }
       ],
-      "correctId": "c"
+      "correctId": "b"
     },
     "hints": [
       {

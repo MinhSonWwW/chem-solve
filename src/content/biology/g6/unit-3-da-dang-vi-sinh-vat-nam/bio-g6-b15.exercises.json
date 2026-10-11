@@ -3,10 +3,14 @@
     "id": "bio-g6-b15-q01",
     "lessonId": "bio-g6-b15",
     "sgkBaiSo": 30,
-    "skillIds": ["bio-nguyen-sinh-vat"],
+    "skillIds": [
+      "bio-nguyen-sinh-vat"
+    ],
     "difficulty": 1,
     "prompt": "Ghép nối từng loài nguyên sinh vật (cột bên trái) với đúng đặc điểm sinh học hoặc bệnh tật tương ứng của nó (cột bên phải):",
-    "knowledge": ["bio-nguyen-sinh-vat"],
+    "knowledge": [
+      "bio-nguyen-sinh-vat"
+    ],
     "answer": {
       "kind": "match",
       "pairs": [
@@ -67,22 +71,52 @@
     "id": "bio-g6-b15-q02",
     "lessonId": "bio-g6-b15",
     "sgkBaiSo": 30,
-    "skillIds": ["bio-nguyen-sinh-vat"],
+    "skillIds": [
+      "bio-nguyen-sinh-vat"
+    ],
     "difficulty": 2,
     "prompt": "Phân loại các vai trò sau đây của nguyên sinh vật vào hai nhóm: 'Vai trò có ích' và 'Tác hại':",
-    "knowledge": ["bio-nguyen-sinh-vat"],
+    "knowledge": [
+      "bio-nguyen-sinh-vat"
+    ],
     "answer": {
       "kind": "sort",
       "buckets": [
-        { "id": "b-useful", "label": "Vai trò có ích trong tự nhiên và đời sống" },
-        { "id": "b-harmful", "label": "Tác hại gây bệnh cho con người" }
+        {
+          "id": "b-useful",
+          "label": "Vai trò có ích trong tự nhiên và đời sống"
+        },
+        {
+          "id": "b-harmful",
+          "label": "Tác hại gây bệnh cho con người"
+        }
       ],
       "items": [
-        { "id": "it-1", "label": "Là nguồn thức ăn tự nhiên quan trọng cho cá, tôm thủy sinh", "bucketId": "b-useful" },
-        { "id": "it-2", "label": "Tảo nguyên sinh quang hợp cung cấp khí oxygen cho nước ao hồ", "bucketId": "b-useful" },
-        { "id": "it-3", "label": "Chiết xuất chất agar từ tảo để làm thạch rau câu thơm ngon", "bucketId": "b-useful" },
-        { "id": "it-4", "label": "Gây bệnh sốt rét làm phá hủy hồng cầu dẫn tới thiếu máu nặng", "bucketId": "b-harmful" },
-        { "id": "it-5", "label": "Gây bệnh kiết lị làm viêm loét niêm mạc ruột già", "bucketId": "b-harmful" }
+        {
+          "id": "it-1",
+          "label": "Là nguồn thức ăn tự nhiên quan trọng cho cá, tôm thủy sinh",
+          "bucketId": "b-useful"
+        },
+        {
+          "id": "it-2",
+          "label": "Tảo nguyên sinh quang hợp cung cấp khí oxygen cho nước ao hồ",
+          "bucketId": "b-useful"
+        },
+        {
+          "id": "it-3",
+          "label": "Chiết xuất chất agar từ tảo để làm thạch rau câu thơm ngon",
+          "bucketId": "b-useful"
+        },
+        {
+          "id": "it-4",
+          "label": "Gây bệnh sốt rét làm phá hủy hồng cầu dẫn tới thiếu máu nặng",
+          "bucketId": "b-harmful"
+        },
+        {
+          "id": "it-5",
+          "label": "Gây bệnh kiết lị làm viêm loét niêm mạc ruột già",
+          "bucketId": "b-harmful"
+        }
       ]
     },
     "hints": [
@@ -124,19 +158,35 @@
     "id": "bio-g6-b15-q03",
     "lessonId": "bio-g6-b15",
     "sgkBaiSo": 30,
-    "skillIds": ["bio-nguyen-sinh-vat"],
+    "skillIds": [
+      "bio-nguyen-sinh-vat"
+    ],
     "difficulty": 1,
     "prompt": "Loài muỗi nào sau đây đóng vai trò là vật trung gian truyền trùng sốt rét (Plasmodium) từ người bệnh sang người khỏe mạnh?",
-    "knowledge": ["bio-nguyen-sinh-vat"],
+    "knowledge": [
+      "bio-nguyen-sinh-vat"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Muỗi cái Anopheles" },
-        { "id": "opt-b", "label": "Muỗi vằn Aedes" },
-        { "id": "opt-c", "label": "Muỗi Culex (muỗi nhà)" },
-        { "id": "opt-d", "label": "Bọ gậy lăng quăng" }
+        {
+          "id": "opt-a",
+          "label": "Muỗi vằn Aedes"
+        },
+        {
+          "id": "opt-b",
+          "label": "Bọ gậy lăng quăng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Muỗi cái Anopheles"
+        },
+        {
+          "id": "opt-d",
+          "label": "Muỗi Culex (muỗi nhà)"
+        }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -177,19 +227,39 @@
     "id": "bio-g6-b15-q04",
     "lessonId": "bio-g6-b15",
     "sgkBaiSo": 30,
-    "skillIds": ["bio-nguyen-sinh-vat"],
+    "skillIds": [
+      "bio-nguyen-sinh-vat"
+    ],
     "difficulty": 2,
     "prompt": "Những biện pháp nào sau đây giúp phòng tránh hiệu quả bệnh sốt rét và bệnh kiết lị (chọn các phương án đúng)?",
-    "knowledge": ["bio-nguyen-sinh-vat"],
+    "knowledge": [
+      "bio-nguyen-sinh-vat"
+    ],
     "answer": {
       "kind": "mcq-multi",
       "options": [
-        { "id": "opt-a", "label": "Ngủ trong màn (mùng) và diệt muỗi, bọ gậy quanh nơi ở" },
-        { "id": "opt-b", "label": "Thực hiện ăn chín, uống nước đun sôi để nguội, rửa sạch rau sống" },
-        { "id": "opt-c", "label": "Rửa tay sạch bằng xà phòng trước khi ăn và sau khi đi vệ sinh" },
-        { "id": "opt-d", "label": "Uống nước lã trực tiếp ở ao hồ tù đọng" }
+        {
+          "id": "opt-a",
+          "label": "Ngủ trong màn (mùng) và diệt muỗi, bọ gậy quanh nơi ở"
+        },
+        {
+          "id": "opt-b",
+          "label": "Thực hiện ăn chín, uống nước đun sôi để nguội, rửa sạch rau sống"
+        },
+        {
+          "id": "opt-c",
+          "label": "Rửa tay sạch bằng xà phòng trước khi ăn và sau khi đi vệ sinh"
+        },
+        {
+          "id": "opt-d",
+          "label": "Uống nước lã trực tiếp ở ao hồ tù đọng"
+        }
       ],
-      "correctIds": ["opt-a", "opt-b", "opt-c"]
+      "correctIds": [
+        "opt-a",
+        "opt-b",
+        "opt-c"
+      ]
     },
     "hints": [
       {
@@ -230,10 +300,14 @@
     "id": "bio-g6-b15-q05",
     "lessonId": "bio-g6-b15",
     "sgkBaiSo": 30,
-    "skillIds": ["bio-nguyen-sinh-vat"],
+    "skillIds": [
+      "bio-nguyen-sinh-vat"
+    ],
     "difficulty": 2,
     "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về giới Nguyên sinh vật:",
-    "knowledge": ["bio-nguyen-sinh-vat"],
+    "knowledge": [
+      "bio-nguyen-sinh-vat"
+    ],
     "answer": {
       "kind": "true-false",
       "statements": [

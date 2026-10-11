@@ -16,22 +16,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Dựa vào một cặp đặc điểm đối lập để chia sinh vật thành hai nhóm cho đến khi xác định được từng loài"
-        },
-        {
-          "id": "opt-b",
           "label": "Dựa vào kích thước cơ thể từ to đến nhỏ"
         },
         {
+          "id": "opt-b",
+          "label": "Dựa vào số lượng cá thể đếm được trong tự nhiên"
+        },
+        {
           "id": "opt-c",
-          "label": "Dựa vào màu sắc bên ngoài của cơ thể sinh vật"
+          "label": "Dựa vào một cặp đặc điểm đối lập để chia sinh vật thành hai nhóm cho đến khi xác định được từng loài"
         },
         {
           "id": "opt-d",
-          "label": "Dựa vào số lượng cá thể đếm được trong tự nhiên"
+          "label": "Dựa vào màu sắc bên ngoài của cơ thể sinh vật"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -57,7 +57,7 @@
       {
         "kind": "answer",
         "title": "Chọn phương án đúng",
-        "body": "Đáp án A là định nghĩa chuẩn xác."
+        "body": "Đáp án chính xác là định nghĩa chuẩn xác."
       }
     ],
     "finalSolution": "Khóa lưỡng phân là phương pháp phân loại dựa vào một cặp đặc điểm đối lập để chia sinh vật thành hai nhóm nhỏ dần cho đến từng loài cụ thể.",
@@ -204,22 +204,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Con thằn lằn"
+          "label": "Con chim sẻ"
         },
         {
           "id": "opt-b",
-          "label": "Con cá chép"
-        },
-        {
-          "id": "opt-c",
           "label": "Con ếch đồng"
         },
         {
+          "id": "opt-c",
+          "label": "Con cá chép"
+        },
+        {
           "id": "opt-d",
-          "label": "Con chim sẻ"
+          "label": "Con thằn lằn"
         }
       ],
-      "correctId": "opt-c"
+      "correctId": "opt-b"
     },
     "hints": [
       {

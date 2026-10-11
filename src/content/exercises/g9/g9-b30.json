@@ -12,22 +12,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Dung dịch Iodine (I2) – cho màu xanh tím đặc trưng"
-        },
-        {
-          "id": "b",
           "label": "Dung dịch Bromine (Br2)"
         },
         {
+          "id": "b",
+          "label": "Dung dịch phenolphtalein"
+        },
+        {
           "id": "c",
-          "label": "Dung dịch AgNO3 trong NH3"
+          "label": "Dung dịch Iodine (I2) – cho màu xanh tím đặc trưng"
         },
         {
           "id": "d",
-          "label": "Dung dịch phenolphtalein"
+          "label": "Dung dịch AgNO3 trong NH3"
         }
       ],
-      "correctId": "a"
+      "correctId": "c"
     },
     "hints": [
       {
@@ -72,22 +72,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Saccharose (C12H22O11)"
-        },
-        {
-          "id": "b",
-          "label": "Rượu etylic (C2H5OH)"
-        },
-        {
-          "id": "c",
           "label": "Glucose (C6H12O6)"
         },
         {
-          "id": "d",
+          "id": "b",
           "label": "Axit axetic (CH3COOH)"
+        },
+        {
+          "id": "c",
+          "label": "Saccharose (C12H22O11)"
+        },
+        {
+          "id": "d",
+          "label": "Rượu etylic (C2H5OH)"
         }
       ],
-      "correctId": "c"
+      "correctId": "a"
     },
     "hints": [
       {

@@ -3,10 +3,14 @@
     "id": "bio-g6-b24-q01",
     "lessonId": "bio-g6-b24",
     "sgkBaiSo": 39,
-    "skillIds": ["bio-khao-sat-ngoai-thien-nhien"],
+    "skillIds": [
+      "bio-khao-sat-ngoai-thien-nhien"
+    ],
     "difficulty": 1,
     "prompt": "Ghép nối từng dụng cụ khảo sát thực địa sinh vật ngoài thiên nhiên (cột bên trái) với đúng công dụng nghiên cứu của nó (cột bên phải):",
-    "knowledge": ["bio-khao-sat-ngoai-thien-nhien"],
+    "knowledge": [
+      "bio-khao-sat-ngoai-thien-nhien"
+    ],
     "answer": {
       "kind": "match",
       "pairs": [
@@ -67,10 +71,14 @@
     "id": "bio-g6-b24-q02",
     "lessonId": "bio-g6-b24",
     "sgkBaiSo": 39,
-    "skillIds": ["bio-khao-sat-ngoai-thien-nhien"],
+    "skillIds": [
+      "bio-khao-sat-ngoai-thien-nhien"
+    ],
     "difficulty": 2,
     "prompt": "Hãy sắp xếp các bước thực hiện một buổi khảo sát sinh vật ngoài thiên nhiên theo đúng trình tự phương pháp khoa học:",
-    "knowledge": ["bio-khao-sat-ngoai-thien-nhien"],
+    "knowledge": [
+      "bio-khao-sat-ngoai-thien-nhien"
+    ],
     "answer": {
       "kind": "ordering",
       "correctOrder": [
@@ -119,23 +127,58 @@
     "id": "bio-g6-b24-q03",
     "lessonId": "bio-g6-b24",
     "sgkBaiSo": 39,
-    "skillIds": ["bio-khao-sat-ngoai-thien-nhien"],
+    "skillIds": [
+      "bio-khao-sat-ngoai-thien-nhien"
+    ],
     "difficulty": 1,
     "prompt": "Phân loại các hành vi sau của học sinh trong chuyến dã ngoại khảo sát thiên nhiên vào hai nhóm:",
-    "knowledge": ["bio-khao-sat-ngoai-thien-nhien", "bio-da-dang-sinh-hoc"],
+    "knowledge": [
+      "bio-khao-sat-ngoai-thien-nhien",
+      "bio-da-dang-sinh-hoc"
+    ],
     "answer": {
       "kind": "sort",
       "buckets": [
-        { "id": "b-civil", "label": "Hành vi văn minh, bảo vệ tự nhiên" },
-        { "id": "b-wrong", "label": "Hành vi sai trái, gây hại môi trường" }
+        {
+          "id": "b-civil",
+          "label": "Hành vi văn minh, bảo vệ tự nhiên"
+        },
+        {
+          "id": "b-wrong",
+          "label": "Hành vi sai trái, gây hại môi trường"
+        }
       ],
       "items": [
-        { "id": "it-1", "label": "Đi theo lối mòn chỉ dẫn, không giẫm đạp lên thảm thực vật", "bucketId": "b-civil" },
-        { "id": "it-2", "label": "Dùng điện thoại chụp ảnh lại các loài hoa rừng và bướm lạ", "bucketId": "b-civil" },
-        { "id": "it-3", "label": "Thả nhẹ nhàng con bọ cánh cứng về lại cành cây sau khi soi kính lúp", "bucketId": "b-civil" },
-        { "id": "it-4", "label": "Bẻ trộm các nhánh lan rừng quý hiếm nhét vào ba lô mang về", "bucketId": "b-wrong" },
-        { "id": "it-5", "label": "Dùng gậy chọc phá các tổ chim non trên cành cây cao", "bucketId": "b-wrong" },
-        { "id": "it-6", "label": "Vứt bừa bãi vỏ chai nước và túi nilon lại trong rừng", "bucketId": "b-wrong" }
+        {
+          "id": "it-1",
+          "label": "Đi theo lối mòn chỉ dẫn, không giẫm đạp lên thảm thực vật",
+          "bucketId": "b-civil"
+        },
+        {
+          "id": "it-2",
+          "label": "Dùng điện thoại chụp ảnh lại các loài hoa rừng và bướm lạ",
+          "bucketId": "b-civil"
+        },
+        {
+          "id": "it-3",
+          "label": "Thả nhẹ nhàng con bọ cánh cứng về lại cành cây sau khi soi kính lúp",
+          "bucketId": "b-civil"
+        },
+        {
+          "id": "it-4",
+          "label": "Bẻ trộm các nhánh lan rừng quý hiếm nhét vào ba lô mang về",
+          "bucketId": "b-wrong"
+        },
+        {
+          "id": "it-5",
+          "label": "Dùng gậy chọc phá các tổ chim non trên cành cây cao",
+          "bucketId": "b-wrong"
+        },
+        {
+          "id": "it-6",
+          "label": "Vứt bừa bãi vỏ chai nước và túi nilon lại trong rừng",
+          "bucketId": "b-wrong"
+        }
       ]
     },
     "hints": [
@@ -177,19 +220,35 @@
     "id": "bio-g6-b24-q04",
     "lessonId": "bio-g6-b24",
     "sgkBaiSo": 39,
-    "skillIds": ["bio-khao-sat-ngoai-thien-nhien"],
+    "skillIds": [
+      "bio-khao-sat-ngoai-thien-nhien"
+    ],
     "difficulty": 1,
     "prompt": "Khi đi khảo sát ở những vùng rừng ẩm ướt hoặc ven suối nhiều cây bụi, học sinh cần trang bị trang phục nào để đảm bảo an toàn tuyệt đối?",
-    "knowledge": ["bio-khao-sat-ngoai-thien-nhien"],
+    "knowledge": [
+      "bio-khao-sat-ngoai-thien-nhien"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Quần áo dài tay dày dặn, đội mũ nón và đi giày thể thao có tất cổ cao chống vắt cắn" },
-        { "id": "opt-b", "label": "Mặc quần soóc ngắn và đi dép lê xỏ ngón cho mát mẻ" },
-        { "id": "opt-c", "label": "Đi chân đất để cảm nhận độ ẩm của đất rừng chân thực nhất" },
-        { "id": "opt-d", "label": "Mặc áo mưa bọc kín từ đầu đến chân không hở một lỗ thở" }
+        {
+          "id": "opt-a",
+          "label": "Mặc quần soóc ngắn và đi dép lê xỏ ngón cho mát mẻ"
+        },
+        {
+          "id": "opt-b",
+          "label": "Đi chân đất để cảm nhận độ ẩm của đất rừng chân thực nhất"
+        },
+        {
+          "id": "opt-c",
+          "label": "Mặc áo mưa bọc kín từ đầu đến chân không hở một lỗ thở"
+        },
+        {
+          "id": "opt-d",
+          "label": "Quần áo dài tay dày dặn, đội mũ nón và đi giày thể thao có tất cổ cao chống vắt cắn"
+        }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -230,10 +289,14 @@
     "id": "bio-g6-b24-q05",
     "lessonId": "bio-g6-b24",
     "sgkBaiSo": 39,
-    "skillIds": ["bio-khao-sat-ngoai-thien-nhien"],
+    "skillIds": [
+      "bio-khao-sat-ngoai-thien-nhien"
+    ],
     "difficulty": 2,
     "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về kỹ năng tìm hiểu sinh vật ngoài thiên nhiên:",
-    "knowledge": ["bio-khao-sat-ngoai-thien-nhien"],
+    "knowledge": [
+      "bio-khao-sat-ngoai-thien-nhien"
+    ],
     "answer": {
       "kind": "true-false",
       "statements": [

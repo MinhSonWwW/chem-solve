@@ -16,22 +16,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Môi trường sinh vật (cơ thể vật chủ)"
-        },
-        {
-          "id": "opt-b",
           "label": "Môi trường đất ngầm"
         },
         {
+          "id": "opt-b",
+          "label": "Môi trường sinh vật (cơ thể vật chủ)"
+        },
+        {
           "id": "opt-c",
-          "label": "Môi trường nước ngọt"
+          "label": "Môi trường cạn trên mặt đất"
         },
         {
           "id": "opt-d",
-          "label": "Môi trường cạn trên mặt đất"
+          "label": "Môi trường nước ngọt"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -85,22 +85,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Ánh sáng, nhiệt độ, độ ẩm không khí, lượng mưa và đất đá"
-        },
-        {
-          "id": "opt-b",
           "label": "Cây gỗ lim, nấm mốc và vi khuẩn hoại sinh"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Chim sâu, ánh sáng mặt trời và chuột đồng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ánh sáng, nhiệt độ, độ ẩm không khí, lượng mưa và đất đá"
         },
         {
           "id": "opt-d",
           "label": "Độ mặn của nước, giun đất và khí oxygen"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -154,22 +154,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Vì con người có trí tuệ, có lao động sản xuất và có khả năng chủ động cải tạo hoặc phá hủy môi trường trên quy mô toàn cầu"
-        },
-        {
-          "id": "opt-b",
-          "label": "Vì con người không cần trao đổi chất với môi trường tự nhiên"
-        },
-        {
-          "id": "opt-c",
           "label": "Vì con người không chịu sự chi phối của bất kì nhân tố vô sinh nào"
         },
         {
-          "id": "opt-d",
+          "id": "opt-b",
           "label": "Vì con người chỉ sinh sống được ở môi trường nhân tạo trong nhà"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì con người không cần trao đổi chất với môi trường tự nhiên"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì con người có trí tuệ, có lao động sản xuất và có khả năng chủ động cải tạo hoặc phá hủy môi trường trên quy mô toàn cầu"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -227,15 +227,15 @@
         },
         {
           "id": "opt-b",
-          "label": "Vận tốc di chuyển tối đa của sinh vật khi bị kẻ săn mồi rượt đuổi"
-        },
-        {
-          "id": "opt-c",
           "label": "Số lượng cá thể tối đa mà một cánh rừng có thể chứa đựng"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "Tuổi thọ trung bình cao nhất của các cá thể trong loài"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vận tốc di chuyển tối đa của sinh vật khi bị kẻ săn mồi rượt đuổi"
         }
       ],
       "correctId": "opt-a"
@@ -296,15 +296,15 @@
         },
         {
           "id": "opt-b",
-          "label": "Cá rô phi sẽ phát triển mạnh hơn do nước lạnh kích thích bơi lội"
+          "label": "Cá rô phi vẫn sinh trưởng bình thường không bị ảnh hưởng"
         },
         {
           "id": "opt-c",
-          "label": "Cá rô phi sẽ tự biến đổi thành loài cá rộng nhiệt chịu lạnh"
+          "label": "Cá rô phi sẽ phát triển mạnh hơn do nước lạnh kích thích bơi lội"
         },
         {
           "id": "opt-d",
-          "label": "Cá rô phi vẫn sinh trưởng bình thường không bị ảnh hưởng"
+          "label": "Cá rô phi sẽ tự biến đổi thành loài cá rộng nhiệt chịu lạnh"
         }
       ],
       "correctId": "opt-a"
@@ -361,7 +361,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Có vùng phân bố địa lí rộng lớn hơn và khả năng thích nghi cao hơn trước các biến động môi trường"
+          "label": "Chỉ sinh sống được ở một hang động biệt lập duy nhất"
         },
         {
           "id": "opt-b",
@@ -369,14 +369,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Chỉ sinh sống được ở một hang động biệt lập duy nhất"
+          "label": "Có vùng phân bố địa lí rộng lớn hơn và khả năng thích nghi cao hơn trước các biến động môi trường"
         },
         {
           "id": "opt-d",
           "label": "Không cần ánh sáng mặt trời để tổng hợp chất hữu cơ"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -430,22 +430,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Phiến lá nhỏ, dày, màu xanh nhạt, có lớp cutin dày bóng để giảm thoát hơi nước"
-        },
-        {
-          "id": "opt-b",
-          "label": "Phiến lá bản to, mỏng, màu xanh thẫm và không có lớp sáp cutin"
-        },
-        {
-          "id": "opt-c",
           "label": "Lá tiêu biến hoàn toàn thành các gai nhọn để quang hợp"
         },
         {
-          "id": "opt-d",
+          "id": "opt-b",
+          "label": "Phiến lá nhỏ, dày, màu xanh nhạt, có lớp cutin dày bóng để giảm thoát hơi nước"
+        },
+        {
+          "id": "opt-c",
           "label": "Lá cây ưa sáng hoàn toàn không chứa hạt diệp lục"
+        },
+        {
+          "id": "opt-d",
+          "label": "Phiến lá bản to, mỏng, màu xanh thẫm và không có lớp sáp cutin"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -499,22 +499,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Bố trí thời vụ gieo trồng hợp lí, thuần hóa giống cây và áp dụng các biện pháp tưới tiêu, che chắn chống rét hoặc chống nóng hiệu quả"
-        },
-        {
-          "id": "opt-b",
-          "label": "Có thể gieo trồng bất kì loại cây nào ở mọi thời điểm trong năm mà không cần chăm sóc"
-        },
-        {
-          "id": "opt-c",
           "label": "Tăng tối đa lượng thuốc trừ sâu hóa học để mở rộng giới hạn chịu đựng của cây"
         },
         {
-          "id": "opt-d",
+          "id": "opt-b",
           "label": "Bỏ hẳn việc bón phân vì cây tự điều hòa trong mọi điều kiện"
+        },
+        {
+          "id": "opt-c",
+          "label": "Bố trí thời vụ gieo trồng hợp lí, thuần hóa giống cây và áp dụng các biện pháp tưới tiêu, che chắn chống rét hoặc chống nóng hiệu quả"
+        },
+        {
+          "id": "opt-d",
+          "label": "Có thể gieo trồng bất kì loại cây nào ở mọi thời điểm trong năm mà không cần chăm sóc"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {

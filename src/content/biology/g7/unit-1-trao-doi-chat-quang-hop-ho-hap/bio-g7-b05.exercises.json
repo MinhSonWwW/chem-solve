@@ -16,22 +16,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Ty thể"
-        },
-        {
-          "id": "opt-b",
           "label": "Lục lạp"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Không bào"
+        },
+        {
+          "id": "opt-c",
+          "label": "Ty thể"
         },
         {
           "id": "opt-d",
           "label": "Lưới nội chất"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -85,7 +85,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Glucose và khí Oxygen (O2)"
+          "label": "Chất diệp lục và năng lượng mặt trời"
         },
         {
           "id": "opt-b",
@@ -97,10 +97,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Chất diệp lục và năng lượng mặt trời"
+          "label": "Glucose và khí Oxygen (O2)"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -153,15 +153,15 @@
         },
         {
           "id": "opt-b",
-          "label": "Carbon dioxide + Nước → Glucose + Oxygen + Năng lượng"
+          "label": "Oxygen + Carbon dioxide → Glucose + Nước + Nhiệt"
         },
         {
           "id": "opt-c",
-          "label": "Glucose + Nước → Carbon dioxide + Oxygen"
+          "label": "Carbon dioxide + Nước → Glucose + Oxygen + Năng lượng"
         },
         {
           "id": "opt-d",
-          "label": "Oxygen + Carbon dioxide → Glucose + Nước + Nhiệt"
+          "label": "Glucose + Nước → Carbon dioxide + Oxygen"
         }
       ],
       "correctId": "opt-a"
@@ -190,7 +190,7 @@
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Đáp án A là phương trình chính xác."
+        "body": "Đáp án chính xác là phương trình chính xác."
       }
     ],
     "finalSolution": "Phương trình hô hấp: Glucose + Oxygen → Carbon dioxide + Nước + Năng lượng (ATP + Nhiệt).",
@@ -213,11 +213,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Phân tử ATP (Adenosine Triphosphate)"
+          "label": "Phân tử Glucose"
         },
         {
           "id": "opt-b",
-          "label": "Phân tử Glucose"
+          "label": "Phân tử ATP (Adenosine Triphosphate)"
         },
         {
           "id": "opt-c",
@@ -228,7 +228,7 @@
           "label": "Phân tử Nước"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -277,7 +277,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Quang hợp tích lũy năng lượng trong chất hữu cơ, còn hô hấp tế bào giải phóng năng lượng từ chất hữu cơ"
+          "label": "Quang hợp tiêu tốn phân tử ATP, còn hô hấp tế bào hấp thụ ánh sáng mặt trời"
         },
         {
           "id": "opt-b",
@@ -285,14 +285,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Quang hợp tiêu tốn phân tử ATP, còn hô hấp tế bào hấp thụ ánh sáng mặt trời"
+          "label": "Cả hai quá trình đều chỉ giải phóng nhiệt năng ra môi trường ngoài"
         },
         {
           "id": "opt-d",
-          "label": "Cả hai quá trình đều chỉ giải phóng nhiệt năng ra môi trường ngoài"
+          "label": "Quang hợp tích lũy năng lượng trong chất hữu cơ, còn hô hấp tế bào giải phóng năng lượng từ chất hữu cơ"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -318,7 +318,7 @@
       {
         "kind": "answer",
         "title": "Chọn đáp án",
-        "body": "Đáp án A mô tả đúng bản chất đối lập."
+        "body": "Đáp án chính xác mô tả đúng bản chất đối lập."
       }
     ],
     "finalSolution": "Quang hợp tích lũy năng lượng, hô hấp tế bào giải phóng năng lượng.",
@@ -341,22 +341,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Cây xanh chỉ hô hấp vào ban đêm, ban ngày cây không hô hấp mà chỉ quang hợp"
-        },
-        {
-          "id": "opt-b",
           "label": "Hô hấp tế bào diễn ra liên tục cả ngày lẫn đêm ở tất cả các cơ quan của cây"
         },
         {
+          "id": "opt-b",
+          "label": "Tế bào rễ, thân, lá của cây đều cần năng lượng từ hô hấp để sống"
+        },
+        {
           "id": "opt-c",
-          "label": "Hô hấp phân giải glucose tạo ra carbon dioxide và nước"
+          "label": "Cây xanh chỉ hô hấp vào ban đêm, ban ngày cây không hô hấp mà chỉ quang hợp"
         },
         {
           "id": "opt-d",
-          "label": "Tế bào rễ, thân, lá của cây đều cần năng lượng từ hô hấp để sống"
+          "label": "Hô hấp phân giải glucose tạo ra carbon dioxide và nước"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -382,7 +382,7 @@
       {
         "kind": "answer",
         "title": "Chọn đáp án",
-        "body": "Đáp án A là nhận định sai."
+        "body": "Đáp án chính xác là nhận định sai."
       }
     ],
     "finalSolution": "Cây xanh hô hấp liên tục suốt 24/24 giờ chứ không phải chỉ hô hấp vào ban đêm.",
@@ -473,22 +473,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Vì tế bào não tiêu thụ rất nhiều năng lượng; thiếu O2 làm hô hấp tế bào ngừng trệ, thiếu hụt ATP khiến tế bào não chết dần"
-        },
-        {
-          "id": "opt-b",
-          "label": "Vì thiếu O2 làm máu trong não chuyển sang thể rắn làm tắc nghẽn hoàn toàn"
-        },
-        {
-          "id": "opt-c",
           "label": "Vì thiếu O2 làm tế bào não chuyển sang tự quang hợp phá hủy tế bào"
         },
         {
-          "id": "opt-d",
+          "id": "opt-b",
           "label": "Vì nồng độ glucose trong não tăng vọt lên gấp 100 lần gây ngộ độc"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì tế bào não tiêu thụ rất nhiều năng lượng; thiếu O2 làm hô hấp tế bào ngừng trệ, thiếu hụt ATP khiến tế bào não chết dần"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì thiếu O2 làm máu trong não chuyển sang thể rắn làm tắc nghẽn hoàn toàn"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -514,7 +514,7 @@
       {
         "kind": "answer",
         "title": "Chọn đáp án",
-        "body": "Đáp án A giải thích chuẩn xác bản chất sinh lí học."
+        "body": "Đáp án chính xác giải thích chuẩn xác bản chất sinh lí học."
       }
     ],
     "finalSolution": "Thiếu O2 làm tê liệt quá trình hô hấp tế bào tạo ATP, dẫn tới hoại tử tế bào thần kinh não.",

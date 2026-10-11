@@ -3,17 +3,33 @@
     "id": "bio-g7-b09-q01",
     "lessonId": "bio-g7-b09",
     "sgkBaiSo": 29,
-    "skillIds": ["bio-vai-tro-nuoc-dinh-duong"],
+    "skillIds": [
+      "bio-vai-tro-nuoc-dinh-duong"
+    ],
     "difficulty": 1,
     "prompt": "Nước chiếm khoảng bao nhiêu phần trăm khối lượng cơ thể của đa số các loài sinh vật?",
-    "knowledge": ["kb-bio-g7-vai-tro-cua-nuoc"],
+    "knowledge": [
+      "kb-bio-g7-vai-tro-cua-nuoc"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Khoảng 70% đến 90%" },
-        { "id": "opt-b", "label": "Khoảng 10% đến 20%" },
-        { "id": "opt-c", "label": "Chỉ khoảng 5%" },
-        { "id": "opt-d", "label": "Đúng 100%" }
+        {
+          "id": "opt-a",
+          "label": "Khoảng 70% đến 90%"
+        },
+        {
+          "id": "opt-b",
+          "label": "Đúng 100%"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chỉ khoảng 5%"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khoảng 10% đến 20%"
+        }
       ],
       "correctId": "opt-a"
     },
@@ -51,19 +67,35 @@
     "id": "bio-g7-b09-q02",
     "lessonId": "bio-g7-b09",
     "sgkBaiSo": 29,
-    "skillIds": ["bio-vai-tro-nuoc-dinh-duong"],
+    "skillIds": [
+      "bio-vai-tro-nuoc-dinh-duong"
+    ],
     "difficulty": 1,
     "prompt": "Nhóm chất dinh dưỡng nào sau đây đóng vai trò là nguồn cung cấp năng lượng chủ yếu cho các hoạt động sống hàng ngày của con người?",
-    "knowledge": ["kb-bio-g7-vai-tro-chat-dinh-duong"],
+    "knowledge": [
+      "kb-bio-g7-vai-tro-chat-dinh-duong"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Carbohydrate (tinh bột, đường)" },
-        { "id": "opt-b", "label": "Chất khoáng (Sắt, Kẽm)" },
-        { "id": "opt-c", "label": "Vitamin A và Vitamin D" },
-        { "id": "opt-d", "label": "Chất xơ không tiêu hóa" }
+        {
+          "id": "opt-a",
+          "label": "Vitamin A và Vitamin D"
+        },
+        {
+          "id": "opt-b",
+          "label": "Carbohydrate (tinh bột, đường)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chất khoáng (Sắt, Kẽm)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chất xơ không tiêu hóa"
+        }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -99,15 +131,21 @@
     "id": "bio-g7-b09-q03",
     "lessonId": "bio-g7-b09",
     "sgkBaiSo": 29,
-    "skillIds": ["bio-vai-tro-nuoc-dinh-duong"],
+    "skillIds": [
+      "bio-vai-tro-nuoc-dinh-duong"
+    ],
     "difficulty": 2,
     "prompt": "Một người nặng 60 kg thì theo công thức khoa học (40 mL/kg/ngày), lượng nước tối thiểu cần bổ sung mỗi ngày là bao nhiêu?",
-    "knowledge": ["kb-bio-g7-nhu-cau-nuoc-sinh-vat"],
+    "knowledge": [
+      "kb-bio-g7-nhu-cau-nuoc-sinh-vat"
+    ],
     "answer": {
       "kind": "number",
       "value": 2.4,
       "unit": "lít",
-      "tolerance": { "abs": 0.1 }
+      "tolerance": {
+        "abs": 0.1
+      }
     },
     "hints": [
       {
@@ -148,19 +186,35 @@
     "id": "bio-g7-b09-q04",
     "lessonId": "bio-g7-b09",
     "sgkBaiSo": 29,
-    "skillIds": ["bio-vai-tro-nuoc-dinh-duong"],
+    "skillIds": [
+      "bio-vai-tro-nuoc-dinh-duong"
+    ],
     "difficulty": 2,
     "prompt": "Tại sao khi bị sốt cao hoặc tiêu chảy nặng, bệnh nhân cần phải được bù nước và dung dịch oresol ngay lập tức?",
-    "knowledge": ["kb-bio-g7-vai-tro-cua-nuoc"],
+    "knowledge": [
+      "kb-bio-g7-vai-tro-cua-nuoc"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Để bù đắp lượng nước và các ion khoáng đã mất, tránh rối loạn tuần hoàn và trao đổi chất nguy hiểm tính mạng" },
-        { "id": "opt-b", "label": "Để làm cho dạ dày chứa đầy nước không còn cảm giác thèm ăn" },
-        { "id": "opt-c", "label": "Để làm tăng nồng độ đường trong máu lên gấp nhiều lần" },
-        { "id": "opt-d", "label": "Để tiêu diệt toàn bộ tế bào hồng cầu trong máu" }
+        {
+          "id": "opt-a",
+          "label": "Để làm tăng nồng độ đường trong máu lên gấp nhiều lần"
+        },
+        {
+          "id": "opt-b",
+          "label": "Để tiêu diệt toàn bộ tế bào hồng cầu trong máu"
+        },
+        {
+          "id": "opt-c",
+          "label": "Để làm cho dạ dày chứa đầy nước không còn cảm giác thèm ăn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Để bù đắp lượng nước và các ion khoáng đã mất, tránh rối loạn tuần hoàn và trao đổi chất nguy hiểm tính mạng"
+        }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -196,19 +250,35 @@
     "id": "bio-g7-b09-q05",
     "lessonId": "bio-g7-b09",
     "sgkBaiSo": 29,
-    "skillIds": ["bio-vai-tro-nuoc-dinh-duong"],
+    "skillIds": [
+      "bio-vai-tro-nuoc-dinh-duong"
+    ],
     "difficulty": 2,
     "prompt": "Chất khoáng nào sau đây là thành phần cấu tạo chủ yếu của xương và răng ở người và động vật có xương sống?",
-    "knowledge": ["kb-bio-g7-vai-tro-chat-dinh-duong"],
+    "knowledge": [
+      "kb-bio-g7-vai-tro-chat-dinh-duong"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Calcium (Canxi)" },
-        { "id": "opt-b", "label": "Sắt (Iron)" },
-        { "id": "opt-c", "label": "Iodine (I-ốt)" },
-        { "id": "opt-d", "label": "Natri (Sodium)" }
+        {
+          "id": "opt-a",
+          "label": "Sắt (Iron)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Natri (Sodium)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Iodine (I-ốt)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Calcium (Canxi)"
+        }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -249,17 +319,33 @@
     "id": "bio-g7-b09-q06",
     "lessonId": "bio-g7-b09",
     "sgkBaiSo": 29,
-    "skillIds": ["bio-vai-tro-nuoc-dinh-duong"],
+    "skillIds": [
+      "bio-vai-tro-nuoc-dinh-duong"
+    ],
     "difficulty": 3,
     "prompt": "Hãy ghép mỗi nhóm chất dinh dưỡng với vai trò sinh học tương ứng trong cơ thể:",
-    "knowledge": ["kb-bio-g7-vai-tro-chat-dinh-duong"],
+    "knowledge": [
+      "kb-bio-g7-vai-tro-chat-dinh-duong"
+    ],
     "answer": {
       "kind": "match",
       "pairs": [
-        { "left": "Carbohydrate (Đường, tinh bột)", "right": "Cung cấp nguồn năng lượng chính hàng ngày" },
-        { "left": "Protein (Chất đạm)", "right": "Xây dựng tế bào, cơ bắp và tạo enzym, kháng thể" },
-        { "left": "Lipid (Chất béo)", "right": "Dự trữ năng lượng và cách nhiệt giữ ấm cơ thể" },
-        { "left": "Vitamin và Khoáng chất", "right": "Điều hòa chuyển hóa và bảo vệ cơ thể khỏi bệnh tật" }
+        {
+          "left": "Carbohydrate (Đường, tinh bột)",
+          "right": "Cung cấp nguồn năng lượng chính hàng ngày"
+        },
+        {
+          "left": "Protein (Chất đạm)",
+          "right": "Xây dựng tế bào, cơ bắp và tạo enzym, kháng thể"
+        },
+        {
+          "left": "Lipid (Chất béo)",
+          "right": "Dự trữ năng lượng và cách nhiệt giữ ấm cơ thể"
+        },
+        {
+          "left": "Vitamin và Khoáng chất",
+          "right": "Điều hòa chuyển hóa và bảo vệ cơ thể khỏi bệnh tật"
+        }
       ]
     },
     "hints": [
@@ -296,19 +382,35 @@
     "id": "bio-g7-b09-q07",
     "lessonId": "bio-g7-b09",
     "sgkBaiSo": 29,
-    "skillIds": ["bio-vai-tro-nuoc-dinh-duong"],
+    "skillIds": [
+      "bio-vai-tro-nuoc-dinh-duong"
+    ],
     "difficulty": 3,
     "prompt": "Tại sao khi trời nắng nóng nực hoặc khi tập thể dục cường độ cao, cơ thể người lại toát ra nhiều mồ hôi?",
-    "knowledge": ["kb-bio-g7-vai-tro-cua-nuoc"],
+    "knowledge": [
+      "kb-bio-g7-vai-tro-cua-nuoc"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Sự bay hơi của nước trong mồ hôi qua da mang đi một lượng nhiệt lớn giúp làm mát và điều hòa thân nhiệt" },
-        { "id": "opt-b", "label": "Để tống khứ hết toàn bộ lượng máu dư thừa ra khỏi cơ thể" },
-        { "id": "opt-c", "label": "Để làm cho da khô hơn giúp hạn chế vi khuẩn bám dính" },
-        { "id": "opt-d", "label": "Để tạo ra một lớp màng bảo vệ ngăn ánh sáng mặt trời chiếu vào cơ bắp" }
+        {
+          "id": "opt-a",
+          "label": "Để tạo ra một lớp màng bảo vệ ngăn ánh sáng mặt trời chiếu vào cơ bắp"
+        },
+        {
+          "id": "opt-b",
+          "label": "Để tống khứ hết toàn bộ lượng máu dư thừa ra khỏi cơ thể"
+        },
+        {
+          "id": "opt-c",
+          "label": "Sự bay hơi của nước trong mồ hôi qua da mang đi một lượng nhiệt lớn giúp làm mát và điều hòa thân nhiệt"
+        },
+        {
+          "id": "opt-d",
+          "label": "Để làm cho da khô hơn giúp hạn chế vi khuẩn bám dính"
+        }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -344,19 +446,35 @@
     "id": "bio-g7-b09-q08",
     "lessonId": "bio-g7-b09",
     "sgkBaiSo": 29,
-    "skillIds": ["bio-vai-tro-nuoc-dinh-duong"],
+    "skillIds": [
+      "bio-vai-tro-nuoc-dinh-duong"
+    ],
     "difficulty": 3,
     "prompt": "Bệnh bướu cổ đơn thuần ở người thường liên quan trực tiếp đến việc thiếu hụt nguyên tố khoáng vi lượng nào trong khẩu phần ăn uống hàng ngày?",
-    "knowledge": ["kb-bio-g7-vai-tro-chat-dinh-duong"],
+    "knowledge": [
+      "kb-bio-g7-vai-tro-chat-dinh-duong"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Iodine (I-ốt)" },
-        { "id": "opt-b", "label": "Sắt (Iron)" },
-        { "id": "opt-c", "label": "Calcium (Canxi)" },
-        { "id": "opt-d", "label": "Kali (Potassium)" }
+        {
+          "id": "opt-a",
+          "label": "Calcium (Canxi)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Sắt (Iron)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Kali (Potassium)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Iodine (I-ốt)"
+        }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {

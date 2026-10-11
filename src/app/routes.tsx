@@ -1,20 +1,39 @@
+import React, { lazy } from 'react';
 import { createHashRouter, Navigate } from 'react-router-dom';
 import { AppLayout } from './layout/AppLayout';
 import { RouteErrorBoundary } from './ErrorBoundary';
-import { HomePage } from './pages/HomePage';
-import { LearnPage } from './pages/LearnPage';
-import { PracticePage } from './pages/PracticePage';
-import { ExercisePage } from './pages/ExercisePage';
-import { TheoryPage } from './pages/TheoryPage';
-import { DailyPage } from './pages/DailyPage';
-import { ProgressPage } from './pages/ProgressPage';
-import { ProfilePage } from './pages/ProfilePage';
-import { SearchPage } from './pages/SearchPage';
-import { ShopPage } from './pages/ShopPage';
-import { GamesPage } from './pages/GamesPage';
-import { DesignSystemPage } from './pages/DesignSystemPage';
+
+const AuthPage = lazy(() => import('@/features/auth/AuthPage').then(m => ({ default: m.AuthPage })));
+
+const HomePage = lazy(() => import('./pages/HomePage').then(m => ({ default: m.HomePage })));
+const LearnPage = lazy(() => import('./pages/LearnPage').then(m => ({ default: m.LearnPage })));
+const PracticePage = lazy(() => import('./pages/PracticePage').then(m => ({ default: m.PracticePage })));
+const ExercisePage = lazy(() => import('./pages/ExercisePage').then(m => ({ default: m.ExercisePage })));
+const TheoryPage = lazy(() => import('./pages/TheoryPage').then(m => ({ default: m.TheoryPage })));
+const DailyPage = lazy(() => import('./pages/DailyPage').then(m => ({ default: m.DailyPage })));
+const ProgressPage = lazy(() => import('./pages/ProgressPage').then(m => ({ default: m.ProgressPage })));
+const ProfilePage = lazy(() => import('./pages/ProfilePage').then(m => ({ default: m.ProfilePage })));
+const SearchPage = lazy(() => import('./pages/SearchPage').then(m => ({ default: m.SearchPage })));
+const ShopPage = lazy(() => import('./pages/ShopPage').then(m => ({ default: m.ShopPage })));
+const GamesPage = lazy(() => import('./pages/GamesPage').then(m => ({ default: m.GamesPage })));
+const LabPage = lazy(() => import('@/features/lab/LabPage').then(m => ({ default: m.LabPage })));
+const DesignSystemPage = lazy(() => import('./pages/DesignSystemPage').then(m => ({ default: m.DesignSystemPage })));
+
+const LearnRedirect: React.FC = () => {
+  const grade = typeof window !== 'undefined' ? localStorage.getItem('chem_active_grade') || '8' : '8';
+  return <Navigate to={`/learn/${grade}`} replace />;
+};
 
 export const router = createHashRouter([
+  {
+    path: '/auth',
+    element: (
+      <React.Suspense fallback={<div className="min-h-[100dvh] bg-[#131f24]" />}>
+        <AuthPage />
+      </React.Suspense>
+    ),
+    errorElement: <RouteErrorBoundary />,
+  },
   {
     path: '/',
     element: <AppLayout />,
@@ -22,7 +41,7 @@ export const router = createHashRouter([
     children: [
       {
         index: true,
-        element: <Navigate to="/learn/8" replace />
+        element: <LearnRedirect />
       },
       {
         path: 'home',
@@ -30,7 +49,7 @@ export const router = createHashRouter([
       },
       {
         path: 'learn',
-        element: <Navigate to="/learn/8" replace />
+        element: <LearnRedirect />
       },
       {
         path: 'learn/:grade',
@@ -79,6 +98,10 @@ export const router = createHashRouter([
       {
         path: 'shop',
         element: <ShopPage />
+      },
+      {
+        path: 'lab',
+        element: <LabPage />
       },
       {
         path: 'dev/design-system',

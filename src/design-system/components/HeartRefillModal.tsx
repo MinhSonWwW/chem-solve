@@ -52,7 +52,7 @@ export const HeartRefillModal: React.FC<HeartRefillModalProps> = ({
           animate={{ scale: 1, opacity: 1, y: 0 }}
           exit={{ scale: 0.9, opacity: 0, y: 15 }}
           transition={{ type: 'spring', stiffness: 350, damping: 25 }}
-          className="relative w-full max-w-sm rounded-3xl bg-slate-900 border-2 border-rose-500/40 p-6 shadow-[0_0_50px_rgba(244,63,94,0.2)] text-center space-y-4 z-10"
+          className="relative w-full max-w-sm rounded-3xl bg-[#18272f] border-2 border-[#2e4756] p-6 shadow-[0_12px_40px_rgba(0,0,0,0.85)] text-center space-y-4 z-10"
         >
           {/* Close button */}
           <button
@@ -89,7 +89,7 @@ export const HeartRefillModal: React.FC<HeartRefillModalProps> = ({
           </div>
 
           {/* Heart Status Bar */}
-          <div className="flex justify-center items-center gap-2 py-1.5 bg-slate-950/50 border border-slate-800 rounded-2xl p-2">
+          <div className="flex justify-center items-center gap-2 py-1.5 bg-[#131f24] border border-[#2e4756] rounded-2xl p-2">
             {Array.from({ length: maxHearts }).map((_, i) => (
               <div
                 key={i}
@@ -106,7 +106,7 @@ export const HeartRefillModal: React.FC<HeartRefillModalProps> = ({
           </div>
 
           {/* Gem Balance Display */}
-          <div className="flex items-center justify-between px-3.5 py-2 rounded-2xl bg-cyan-950/40 border border-cyan-700/50 text-xs">
+          <div className="flex items-center justify-between px-3.5 py-2 rounded-2xl bg-[#131f24] border border-[#2e4756] text-xs">
             <span className="text-slate-300 font-bold">Số Đá quý của bạn:</span>
             <div className="flex items-center gap-1.5 font-black text-cyan-300">
               <img src={assetUrl('/assets/icons/gem-crystal.png')} alt="Gem" className="w-4 h-4 object-contain" />
@@ -126,7 +126,7 @@ export const HeartRefillModal: React.FC<HeartRefillModalProps> = ({
                 className={cn(
                   'flex items-center justify-center gap-2 font-black',
                   canAfford
-                    ? 'bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-slate-950 shadow-[0_4px_0_0_#0891b2]'
+                    ? 'bg-cyan-500 hover:bg-cyan-400 text-slate-950 border-b-4 border-cyan-600 active:translate-y-1 active:border-b-0'
                     : 'opacity-50 cursor-not-allowed bg-slate-800 text-slate-400 border border-slate-700'
                 )}
                 onClick={() => {
@@ -148,7 +148,7 @@ export const HeartRefillModal: React.FC<HeartRefillModalProps> = ({
                 variant="secondary"
                 size="md"
                 fullWidth
-                className="flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-black shadow-[0_4px_0_0_#b45309]"
+                className="flex items-center justify-center gap-2 bg-[#f59e0b] hover:bg-[#fbbf24] text-slate-950 font-black border-b-4 border-[#b45309] active:translate-y-1 active:border-b-0"
                 onClick={() => {
                   sound.playClick();
                   onGoToPractice();

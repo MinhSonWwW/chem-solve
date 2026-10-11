@@ -16,22 +16,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Quần xã sinh vật và sinh cảnh (thành phần môi trường vô sinh)"
+          "label": "Quần thể các loài cây xanh cùng sống trong một khu bảo tồn"
         },
         {
           "id": "opt-b",
-          "label": "Chỉ gồm tập hợp các loài động vật và thực vật sinh sống trong rừng"
-        },
-        {
-          "id": "opt-c",
           "label": "Chỉ gồm các nhân tố vô sinh như đất, nước, không khí và ánh sáng"
         },
         {
+          "id": "opt-c",
+          "label": "Chỉ gồm tập hợp các loài động vật và thực vật sinh sống trong rừng"
+        },
+        {
           "id": "opt-d",
-          "label": "Quần thể các loài cây xanh cùng sống trong một khu bảo tồn"
+          "label": "Quần xã sinh vật và sinh cảnh (thành phần môi trường vô sinh)"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -93,11 +93,11 @@
         },
         {
           "id": "opt-c",
-          "label": "Châu chấu, thỏ rừng, bò sữa và hươu cao cổ"
+          "label": "Hổ, báo hoa mai, đại bàng và trăn gấm"
         },
         {
           "id": "opt-d",
-          "label": "Hổ, báo hoa mai, đại bàng và trăn gấm"
+          "label": "Châu chấu, thỏ rừng, bò sữa và hươu cao cổ"
         }
       ],
       "correctId": "opt-a"
@@ -154,11 +154,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Phân hủy xác sinh vật và chất hữu cơ thành muối khoáng vô cơ trả lại môi trường cho cây xanh hấp thụ"
+          "label": "Trực tiếp quang hợp tạo ra khí oxy và tinh bột cung cấp cho các loài động vật ăn cỏ"
         },
         {
           "id": "opt-b",
-          "label": "Trực tiếp quang hợp tạo ra khí oxy và tinh bột cung cấp cho các loài động vật ăn cỏ"
+          "label": "Ngăn cản hoàn toàn sự thất thoát năng lượng ánh sáng mặt trời ra ngoài vũ trụ"
         },
         {
           "id": "opt-c",
@@ -166,10 +166,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Ngăn cản hoàn toàn sự thất thoát năng lượng ánh sáng mặt trời ra ngoài vũ trụ"
+          "label": "Phân hủy xác sinh vật và chất hữu cơ thành muối khoáng vô cơ trả lại môi trường cho cây xanh hấp thụ"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -227,7 +227,7 @@
         },
         {
           "id": "opt-b",
-          "label": "Cỏ lau"
+          "label": "Rắn nước"
         },
         {
           "id": "opt-c",
@@ -235,7 +235,7 @@
         },
         {
           "id": "opt-d",
-          "label": "Rắn nước"
+          "label": "Cỏ lau"
         }
       ],
       "correctId": "opt-a"
@@ -292,11 +292,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Nhiều chuỗi thức ăn có các mắt xích chung đan xen liên kết với nhau"
+          "label": "Sự di cư định kì của các loài chim di cư giữa các bán cầu Trái Đất"
         },
         {
           "id": "opt-b",
-          "label": "Một chuỗi thức ăn duy nhất kéo dài vô tận qua hàng chục bậc dinh dưỡng"
+          "label": "Nhiều chuỗi thức ăn có các mắt xích chung đan xen liên kết với nhau"
         },
         {
           "id": "opt-c",
@@ -304,10 +304,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Sự di cư định kì của các loài chim di cư giữa các bán cầu Trái Đất"
+          "label": "Một chuỗi thức ăn duy nhất kéo dài vô tận qua hàng chục bậc dinh dưỡng"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -361,22 +361,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Bậc dinh dưỡng cấp 1 (Sinh vật sản xuất)"
-        },
-        {
-          "id": "opt-b",
           "label": "Bậc dinh dưỡng cấp 2 (Sinh vật tiêu thụ bậc 1)"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Bậc dinh dưỡng cấp 3 (Sinh vật tiêu thụ bậc 2)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Bậc dinh dưỡng cấp 1 (Sinh vật sản xuất)"
         },
         {
           "id": "opt-d",
           "label": "Bậc dinh dưỡng cấp cao nhất (Thú săn mồi đỉnh chuỗi)"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -430,7 +430,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Vì năng lượng bị thất thoát phần lớn (~90%) qua hô hấp tỏa nhiệt và chất bài tiết khi truyền từ bậc thấp lên bậc cao"
+          "label": "Vì sinh vật sản xuất không tiêu tốn bất kì năng lượng nào cho các hoạt động sống của chính mình"
         },
         {
           "id": "opt-b",
@@ -438,14 +438,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Vì sinh vật sản xuất không tiêu tốn bất kì năng lượng nào cho các hoạt động sống của chính mình"
+          "label": "Vì năng lượng bị thất thoát phần lớn (~90%) qua hô hấp tỏa nhiệt và chất bài tiết khi truyền từ bậc thấp lên bậc cao"
         },
         {
           "id": "opt-d",
           "label": "Vì động vật ăn cỏ hấp thụ hoàn toàn 100% năng lượng chứa trong thức ăn thực vật"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -499,7 +499,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Số lượng chuột đồng bùng phát mạnh mẽ, cắn phá nghiêm trọng làm giảm sút năng suất mùa màng"
+          "label": "Số lượng châu chấu và cào cào sẽ lập tức tuyệt chủng hoàn toàn trên cánh đồng"
         },
         {
           "id": "opt-b",
@@ -507,14 +507,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Số lượng châu chấu và cào cào sẽ lập tức tuyệt chủng hoàn toàn trên cánh đồng"
+          "label": "Tất cả các loài vi khuẩn phân giải trong đất ruộng sẽ ngừng hoạt động"
         },
         {
           "id": "opt-d",
-          "label": "Tất cả các loài vi khuẩn phân giải trong đất ruộng sẽ ngừng hoạt động"
+          "label": "Số lượng chuột đồng bùng phát mạnh mẽ, cắn phá nghiêm trọng làm giảm sút năng suất mùa màng"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {

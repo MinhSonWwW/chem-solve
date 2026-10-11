@@ -3,26 +3,42 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { Compass, ChevronRight } from 'lucide-react';
 import { SnakePath, type PathNode, NodePreviewDrawer, ChapterGuideModal, SubjectSelectorModal, HandDrawnIcon, DoodleOrnament } from '@/design-system';
 import { sound } from '@/lib/audio';
+import { assetUrl } from '@/lib/utils';
 import { getCurriculum, type Grade, type Lesson, type NodeInfo, type Chapter } from '@/content/curriculum';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import { loadUserProgress, saveUserProgress } from '@/engine/progress';
-import { useActiveSubject, SUBJECTS } from '@/content/subjects';
+import { useActiveSubject, useActiveGrade, setActiveGrade, SUBJECTS } from '@/content/subjects';
+import { useOnboarding, WelcomeOnboardingTour } from '@/features/onboarding';
 
 export const LearnPage: React.FC = () => {
-  const { grade = '8' } = useParams<{ grade: string }>();
+  const { grade } = useParams<{ grade: string }>();
   const navigate = useNavigate();
   const { completedNodes, hearts, addGems, addXp } = useUserStore();
   const { subject: activeSubject, setSubject: setActiveSubjectState } = useActiveSubject();
+  const { setGrade: setActiveGradeState } = useActiveGrade();
+  const { shouldShowOnboarding, completeOnboarding } = useOnboarding();
   const [showSubjectModal, setShowSubjectModal] = useState(false);
   const currentSub = useMemo(() => SUBJECTS.find((s) => s.id === activeSubject) || SUBJECTS[0], [activeSubject]);
 
-
-  const currentGrade = (parseInt(grade, 10) as Grade) || 8;
+  const currentGrade = (parseInt(grade || (typeof window !== 'undefined' ? localStorage.getItem('chem_active_grade') || '8' : '8'), 10) as Grade) || 8;
   const curriculum = useMemo(() => getCurriculum(currentGrade, activeSubject), [currentGrade, activeSubject]);
 
   useEffect(() => {
-    localStorage.setItem('chem_active_grade', String(currentGrade));
-  }, [currentGrade]);
+    setActiveGrade(currentGrade);
+    setActiveGradeState(currentGrade);
+  }, [currentGrade, setActiveGradeState]);
+
+  // Sync route whenever grade changes from external modals (like Onboarding tour)
+  useEffect(() => {
+    const handleGradeChanged = (e: Event) => {
+      const g = (e as CustomEvent<Grade>).detail;
+      if (g && String(g) !== grade) {
+        navigate(`/learn/${g}`, { replace: true });
+      }
+    };
+    window.addEventListener('chem_grade_changed', handleGradeChanged);
+    return () => window.removeEventListener('chem_grade_changed', handleGradeChanged);
+  }, [grade, navigate]);
 
   // Selected node for preview drawer
   const [selectedNode, setSelectedNode] = useState<{
@@ -239,7 +255,7 @@ export const LearnPage: React.FC = () => {
   return (
     <div className="space-y-6">
       {/* 0. Subject Selection Bar */}
-      <div className="bg-[#18272f] border-2 border-[#2e4756] p-3 rounded-2xl flex items-center justify-between shadow-[0_4px_0_0_#131f24]">
+      <div className="learn-subject-bar bg-[#18272f] border-2 border-[#2e4756] p-3 rounded-2xl flex items-center justify-between shadow-[0_4px_0_0_#131f24]">
         <div className="flex items-center gap-3">
           <div
             className="w-10 h-10 rounded-2xl flex items-center justify-center text-xl shrink-0 border shadow-inner"
@@ -359,7 +375,7 @@ export const LearnPage: React.FC = () => {
       {(activeSubject === 'chem' || activeSubject === 'bio' || (activeSubject === 'physics' && chaptersWithNodes.some((c) => c.pathNodes.length > 0))) && (
         <>
           {/* 1. Grade Selector (3D chunky tabs) */}
-          <div className="flex bg-[#18272f] border-2 border-[#2e4756] p-1.5 rounded-2xl shadow-[0_4px_0_0_#131f24]">
+          <div className="learn-grade-selector flex bg-[#18272f] border-2 border-[#2e4756] p-1.5 rounded-2xl shadow-[0_4px_0_0_#131f24]">
             {([6, 7, 8, 9] as Grade[]).map((g) => (
               <button
                 key={g}
@@ -493,6 +509,20 @@ export const LearnPage: React.FC = () => {
               />
             </div>
           ))}
+
+          {chaptersWithNodes.length === 0 && (
+            <div className="py-12 px-4 text-center space-y-3 bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] rounded-3xl">
+              <img
+                src={assetUrl('/assets/ui/empty-no-lessons.png')}
+                alt="Chưa có bài học"
+                className="w-32 h-32 object-contain mx-auto drop-shadow-md select-none pointer-events-none"
+              />
+              <p className="text-base font-bold text-slate-200">Chưa có bài học cho khối Lớp {currentGrade}</p>
+              <p className="text-xs text-slate-400 max-w-sm mx-auto">
+                Hãy chọn khối lớp khác hoặc chuyển sang môn học khác từ thanh chọn môn để tiếp tục hành trình khám phá!
+              </p>
+            </div>
+          )}
         </>
       )}
 
@@ -529,6 +559,12 @@ export const LearnPage: React.FC = () => {
         currentSubject={activeSubject}
         onSelectSubject={(id) => setActiveSubjectState(id)}
         onClose={() => setShowSubjectModal(false)}
+      />
+
+      {/* 6. Welcome Onboarding Tour (Interactive Walkthrough A-Z) */}
+      <WelcomeOnboardingTour
+        isOpen={shouldShowOnboarding}
+        onClose={completeOnboarding}
       />
     </div>
   );

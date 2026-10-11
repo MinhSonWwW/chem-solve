@@ -24,11 +24,11 @@
         },
         {
           "id": "opt-c",
-          "label": "Mồ hôi, Nước tiểu và Dịch mật"
+          "label": "Dịch tụy, Dịch ruột và Không khí phế nang"
         },
         {
           "id": "opt-d",
-          "label": "Dịch tụy, Dịch ruột và Không khí phế nang"
+          "label": "Mồ hôi, Nước tiểu và Dịch mật"
         }
       ],
       "correctId": "opt-a"
@@ -85,22 +85,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Huyết tương thấm qua thành mao mạch máu tạo thành dịch mô; dịch mô thấm vào mao mạch bạch huyết tạo thành bạch huyết; bạch huyết lại đổ về tĩnh mạch máu"
-        },
-        {
-          "id": "opt-b",
           "label": "Bạch huyết thấm qua da tạo thành máu; máu chảy vào dạ dày tạo thành dịch mô"
         },
         {
+          "id": "opt-b",
+          "label": "Huyết tương thấm qua thành mao mạch máu tạo thành dịch mô; dịch mô thấm vào mao mạch bạch huyết tạo thành bạch huyết; bạch huyết lại đổ về tĩnh mạch máu"
+        },
+        {
           "id": "opt-c",
-          "label": "Dịch mô tự sinh ra từ nhân tế bào rồi biến đổi trực tiếp thành các tế bào hồng cầu"
+          "label": "Máu, dịch mô và bạch huyết hoàn toàn độc lập, không hề có sự chuyển hóa qua lại"
         },
         {
           "id": "opt-d",
-          "label": "Máu, dịch mô và bạch huyết hoàn toàn độc lập, không hề có sự chuyển hóa qua lại"
+          "label": "Dịch mô tự sinh ra từ nhân tế bào rồi biến đổi trực tiếp thành các tế bào hồng cầu"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -154,22 +154,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Duy trì ổn định các điều kiện lí - hóa của môi trường trong giúp các tế bào và cơ quan hoạt động bình thường"
-        },
-        {
-          "id": "opt-b",
           "label": "Giúp cơ thể không bao giờ cảm thấy đói và không cần uống nước"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Làm cho thân nhiệt cơ thể luôn thay đổi linh hoạt theo nhiệt độ của môi trường ngoài"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "Khiến tim ngừng đập khi ngủ để tiết kiệm năng lượng tiêu hao"
+        },
+        {
+          "id": "opt-d",
+          "label": "Duy trì ổn định các điều kiện lí - hóa của môi trường trong giúp các tế bào và cơ quan hoạt động bình thường"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -223,22 +223,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Thân nhiệt khoảng 37°C, pH máu khoảng 7,35 - 7,45 và nồng độ glucose máu lúc đói khoảng 0,1%"
-        },
-        {
-          "id": "opt-b",
           "label": "Thân nhiệt khoảng 41°C, pH máu khoảng 2,0 và nồng độ glucose máu 5%"
         },
         {
+          "id": "opt-b",
+          "label": "Thân nhiệt khoảng 37°C, pH máu khoảng 7,35 - 7,45 và nồng độ glucose máu lúc đói khoảng 0,1%"
+        },
+        {
           "id": "opt-c",
-          "label": "Thân nhiệt khoảng 25°C, pH máu khoảng 9,5 và không có đường trong máu"
+          "label": "Thân nhiệt dao động tự do từ 10°C đến 50°C tùy theo thời tiết bốn mùa"
         },
         {
           "id": "opt-d",
-          "label": "Thân nhiệt dao động tự do từ 10°C đến 50°C tùy theo thời tiết bốn mùa"
+          "label": "Thân nhiệt khoảng 25°C, pH máu khoảng 9,5 và không có đường trong máu"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -292,22 +292,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Tế bào beta (β) của đảo tụy tiết hormone Insulin kích thích tế bào tăng nhận glucose và gan tổng hợp glycogen dự trữ"
+          "label": "Tuyến giáp tiết Thyroxine làm ngừng hoàn toàn quá trình trao đổi chất"
         },
         {
           "id": "opt-b",
-          "label": "Tế bào alpha (α) của đảo tụy tiết hormone Glucagon để phân giải toàn bộ glycogen trong gan"
-        },
-        {
-          "id": "opt-c",
           "label": "Tuyến trên thận tiết Adrenaline làm tim đập chậm lại"
         },
         {
+          "id": "opt-c",
+          "label": "Tế bào beta (β) của đảo tụy tiết hormone Insulin kích thích tế bào tăng nhận glucose và gan tổng hợp glycogen dự trữ"
+        },
+        {
           "id": "opt-d",
-          "label": "Tuyến giáp tiết Thyroxine làm ngừng hoàn toàn quá trình trao đổi chất"
+          "label": "Tế bào alpha (α) của đảo tụy tiết hormone Glucagon để phân giải toàn bộ glycogen trong gan"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -361,22 +361,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Tế bào alpha (α) đảo tụy tiết hormone Glucagon kích thích gan phân giải glycogen thành glucose đưa vào máu"
-        },
-        {
-          "id": "opt-b",
           "label": "Tế bào beta (β) đảo tụy tiết hormone Insulin để ngăn cản gan giải phóng đường"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Tuyến yên tiết hormone sinh trưởng GH để đốt cháy mỡ thành nước"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "Thận bài tiết toàn bộ lượng nước tiểu còn lại trong bóng đái"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tế bào alpha (α) đảo tụy tiết hormone Glucagon kích thích gan phân giải glycogen thành glucose đưa vào máu"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -434,11 +434,11 @@
         },
         {
           "id": "opt-b",
-          "label": "Trực tiếp hít thở không khí và bơm máu đi khắp hai vòng tuần hoàn"
+          "label": "Tạo ra các xung điện thần kinh để điều khiển cử động của cơ bắp"
         },
         {
           "id": "opt-c",
-          "label": "Tạo ra các xung điện thần kinh để điều khiển cử động của cơ bắp"
+          "label": "Trực tiếp hít thở không khí và bơm máu đi khắp hai vòng tuần hoàn"
         },
         {
           "id": "opt-d",
@@ -499,22 +499,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Tăng cường tái hấp thụ nước ở các ống thận đưa trở lại máu, làm nước tiểu giảm thể tích và trở nên đặc hơn"
-        },
-        {
-          "id": "opt-b",
           "label": "Thải ra một lượng lớn nước tiểu loãng gấp đôi bình thường để rửa trôi muối"
         },
         {
+          "id": "opt-b",
+          "label": "Tiết toàn bộ dịch mật qua đường nước tiểu"
+        },
+        {
           "id": "opt-c",
-          "label": "Ngừng hoàn toàn hoạt động của tim và phổi để giữ nước"
+          "label": "Tăng cường tái hấp thụ nước ở các ống thận đưa trở lại máu, làm nước tiểu giảm thể tích và trở nên đặc hơn"
         },
         {
           "id": "opt-d",
-          "label": "Tiết toàn bộ dịch mật qua đường nước tiểu"
+          "label": "Ngừng hoàn toàn hoạt động của tim và phổi để giữ nước"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {

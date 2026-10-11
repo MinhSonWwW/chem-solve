@@ -86,22 +86,22 @@
       "options": [
         {
           "id": "a",
-          "label": "60 g"
-        },
-        {
-          "id": "b",
           "label": "45 g"
         },
         {
-          "id": "c",
+          "id": "b",
           "label": "30 g"
         },
         {
-          "id": "d",
+          "id": "c",
           "label": "75 g"
+        },
+        {
+          "id": "d",
+          "label": "60 g"
         }
       ],
-      "correctId": "a"
+      "correctId": "d"
     },
     "hints": [
       {
@@ -373,11 +373,11 @@
       "options": [
         {
           "id": "a",
-          "label": "CM = m / V (m tính bằng gam, V tính bằng mL)"
+          "label": "CM = (m_ct / m_dd) × 100%"
         },
         {
           "id": "b",
-          "label": "CM = (m_ct / m_dd) × 100%"
+          "label": "CM = m / V (m tính bằng gam, V tính bằng mL)"
         },
         {
           "id": "c",

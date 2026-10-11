@@ -2,114 +2,271 @@
   {
     "id": "g8-b11-mcq-001",
     "lessonId": "g8-b11",
-    "skillIds": ["salt-reactions"],
+    "skillIds": [
+      "salt-reactions"
+    ],
     "difficulty": 1,
     "prompt": "Khi nhỏ dung dịch muối Barium chloride ([[BaCl2]]) vào dung dịch Natri sunfat ([[Na2SO4]]), hiện tượng quan sát được là:",
-    "given": [{ "label": "Chất tham gia", "value": "BaCl2 + Na2SO4" }],
-    "find": { "label": "Hiện tượng thí nghiệm" },
-    "knowledge": ["reactions.salt-precipitate"],
+    "given": [
+      {
+        "label": "Chất tham gia",
+        "value": "BaCl2 + Na2SO4"
+      }
+    ],
+    "find": {
+      "label": "Hiện tượng thí nghiệm"
+    },
+    "knowledge": [
+      "reactions.salt-precipitate"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-1", "label": "Xuất hiện kết tủa trắng không tan trong acid" },
-        { "id": "opt-2", "label": "Sủi bọt khí không màu bay lên" },
-        { "id": "opt-3", "label": "Dung dịch chuyển sang màu xanh lam" },
-        { "id": "opt-4", "label": "Không có hiện tượng gì xảy ra" }
+        {
+          "id": "opt-a",
+          "label": "Không có hiện tượng gì xảy ra"
+        },
+        {
+          "id": "opt-b",
+          "label": "Sủi bọt khí không màu bay lên"
+        },
+        {
+          "id": "opt-c",
+          "label": "Dung dịch chuyển sang màu xanh lam"
+        },
+        {
+          "id": "opt-d",
+          "label": "Xuất hiện kết tủa trắng không tan trong acid"
+        }
       ],
-      "correctId": "opt-1"
+      "correctId": "opt-d"
     },
     "hints": [
-      { "level": 1, "text": "Phản ứng trao đổi tạo ra muối Barium sulfate (BaSO4)." },
-      { "level": 2, "text": "BaSO4 là chất kết tủa màu trắng đặc trưng, không tan trong nước và acid." }
+      {
+        "level": 1,
+        "text": "Phản ứng trao đổi tạo ra muối Barium sulfate (BaSO4)."
+      },
+      {
+        "level": 2,
+        "text": "BaSO4 là chất kết tủa màu trắng đặc trưng, không tan trong nước và acid."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Xác định loại phản ứng", "body": "Đây là phản ứng trao đổi giữa 2 muối trong dung dịch." },
-      { "kind": "equation", "title": "Viết phương trình hóa học", "body": "BaCl2 + Na2SO4 -> BaSO4 (kết tủa trắng) + 2NaCl." },
-      { "kind": "answer", "title": "Kết luận hiện tượng", "body": "Xuất hiện kết tủa trắng của BaSO4." }
+      {
+        "kind": "identify",
+        "title": "Xác định loại phản ứng",
+        "body": "Đây là phản ứng trao đổi giữa 2 muối trong dung dịch."
+      },
+      {
+        "kind": "equation",
+        "title": "Viết phương trình hóa học",
+        "body": "BaCl2 + Na2SO4 -> BaSO4 (kết tủa trắng) + 2NaCl."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận hiện tượng",
+        "body": "Xuất hiện kết tủa trắng của BaSO4."
+      }
     ],
     "commonMistakes": [
-      { "id": "cm-nacl-precipitate", "message": "Nghĩ NaCl kết tủa. Muối ăn NaCl tan rất tốt trong nước, kết tủa trắng là BaSO4." }
+      {
+        "id": "cm-nacl-precipitate",
+        "message": "Nghĩ NaCl kết tủa. Muối ăn NaCl tan rất tốt trong nước, kết tủa trắng là BaSO4."
+      }
     ],
     "finalSolution": "Xuất hiện kết tủa trắng không tan trong acid"
   },
   {
     "id": "g8-b11-formula-001",
     "lessonId": "g8-b11",
-    "skillIds": ["salt-naming"],
+    "skillIds": [
+      "salt-naming"
+    ],
     "difficulty": 1,
     "prompt": "Nhập công thức hóa học của muối Canxi cacbonat (thành phần chính của đá vôi, vỏ sò, phấn viết bảng):",
-    "knowledge": ["formulas.calcium-carbonate"],
+    "knowledge": [
+      "formulas.calcium-carbonate"
+    ],
     "answer": {
       "kind": "formula",
-      "accepted": ["CaCO3", "caco3"]
+      "accepted": [
+        "CaCO3",
+        "caco3"
+      ]
     },
     "hints": [
-      { "level": 1, "text": "Gồm cation Ca (hóa trị II) và gốc anion CO3 (hóa trị II)." },
-      { "level": 2, "text": "Vì cùng hóa trị II nên tỉ lệ là 1:1 => CaCO3." }
+      {
+        "level": 1,
+        "text": "Gồm cation Ca (hóa trị II) và gốc anion CO3 (hóa trị II)."
+      },
+      {
+        "level": 2,
+        "text": "Vì cùng hóa trị II nên tỉ lệ là 1:1 => CaCO3."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Xác định hóa trị", "body": "Canxi có hóa trị II, gốc cacbonat (CO3) có hóa trị II." },
-      { "kind": "knowledge", "title": "Áp dụng quy tắc hóa trị", "body": "Tỉ lệ hóa trị 1:1 nên chỉ số của mỗi thành phần là 1." },
-      { "kind": "answer", "title": "Lập công thức", "body": "Công thức là CaCO3." }
+      {
+        "kind": "identify",
+        "title": "Xác định hóa trị",
+        "body": "Canxi có hóa trị II, gốc cacbonat (CO3) có hóa trị II."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Áp dụng quy tắc hóa trị",
+        "body": "Tỉ lệ hóa trị 1:1 nên chỉ số của mỗi thành phần là 1."
+      },
+      {
+        "kind": "answer",
+        "title": "Lập công thức",
+        "body": "Công thức là CaCO3."
+      }
     ],
     "finalSolution": "CaCO3"
   },
   {
     "id": "g8-b11-tf-001",
     "lessonId": "g8-b11",
-    "skillIds": ["salt-solubility"],
+    "skillIds": [
+      "salt-solubility"
+    ],
     "difficulty": 2,
     "prompt": "Đánh giá tính Đúng hay Sai của các nhận định sau về độ tan của muối trong nước:",
-    "knowledge": ["salts.solubility-rules"],
+    "knowledge": [
+      "salts.solubility-rules"
+    ],
     "answer": {
       "kind": "true-false",
       "statements": [
-        { "id": "s1", "text": "Tất cả các muối của kim loại Natri (Na) và Kali (K) đều tan tốt trong nước.", "correct": true },
-        { "id": "s2", "text": "Tất cả các muối nitrat (gốc -NO3) đều tan trong nước.", "correct": true },
-        { "id": "s3", "text": "Bạc clorua (AgCl) là một muối tan tốt trong nước.", "correct": false },
-        { "id": "s4", "text": "Phản ứng trao đổi trong dung dịch chỉ xảy ra khi sản phẩm có chất kết tủa hoặc chất khí hoặc nước.", "correct": true }
+        {
+          "id": "s1",
+          "text": "Tất cả các muối của kim loại Natri (Na) và Kali (K) đều tan tốt trong nước.",
+          "correct": true
+        },
+        {
+          "id": "s2",
+          "text": "Tất cả các muối nitrat (gốc -NO3) đều tan trong nước.",
+          "correct": true
+        },
+        {
+          "id": "s3",
+          "text": "Bạc clorua (AgCl) là một muối tan tốt trong nước.",
+          "correct": false
+        },
+        {
+          "id": "s4",
+          "text": "Phản ứng trao đổi trong dung dịch chỉ xảy ra khi sản phẩm có chất kết tủa hoặc chất khí hoặc nước.",
+          "correct": true
+        }
       ]
     },
     "hints": [
-      { "level": 1, "text": "Nhớ quy tắc vàng: muối Na, K và gốc NO3 luôn tan." },
-      { "level": 2, "text": "AgCl là chất kết tủa màu trắng đặc trưng khi thử ion Cl-." }
+      {
+        "level": 1,
+        "text": "Nhớ quy tắc vàng: muối Na, K và gốc NO3 luôn tan."
+      },
+      {
+        "level": 2,
+        "text": "AgCl là chất kết tủa màu trắng đặc trưng khi thử ion Cl-."
+      }
     ],
     "steps": [
-      { "kind": "knowledge", "title": "Quy tắc tính tan", "body": "Muối gốc Na, K và NO3 luôn tan tốt trong nước (s1, s2 đúng)." },
-      { "kind": "identify", "title": "Muối không tan", "body": "AgCl là muối kết tủa màu trắng không tan trong nước và axit (s3 sai)." },
-      { "kind": "answer", "title": "Điều kiện trao đổi", "body": "Điều kiện phản ứng trao đổi tạo kết tủa, khí hoặc chất điện li yếu (s4 đúng)." }
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc tính tan",
+        "body": "Muối gốc Na, K và NO3 luôn tan tốt trong nước (s1, s2 đúng)."
+      },
+      {
+        "kind": "identify",
+        "title": "Muối không tan",
+        "body": "AgCl là muối kết tủa màu trắng không tan trong nước và axit (s3 sai)."
+      },
+      {
+        "kind": "answer",
+        "title": "Điều kiện trao đổi",
+        "body": "Điều kiện phản ứng trao đổi tạo kết tủa, khí hoặc chất điện li yếu (s4 đúng)."
+      }
     ],
     "finalSolution": "s1: Đúng, s2: Đúng, s3: Sai, s4: Đúng"
   },
   {
     "id": "g8-b11-sort-004",
     "lessonId": "g8-b11",
-    "skillIds": ["salt-solubility"],
+    "skillIds": [
+      "salt-solubility"
+    ],
     "difficulty": 1,
     "prompt": "Phân loại các muối sau thành hai nhóm: Muối tan tốt trong nước hay Muối không tan (kết tủa).",
     "answer": {
       "kind": "sort",
       "buckets": [
-        { "id": "soluble", "label": "Muối tan" },
-        { "id": "insoluble", "label": "Muối không tan (kết tủa)" }
+        {
+          "id": "soluble",
+          "label": "Muối tan"
+        },
+        {
+          "id": "insoluble",
+          "label": "Muối không tan (kết tủa)"
+        }
       ],
       "items": [
-        { "id": "nacl", "label": "NaCl (Sodium chloride)", "bucketId": "soluble" },
-        { "id": "kno3", "label": "KNO3 (Potassium nitrate)", "bucketId": "soluble" },
-        { "id": "cacl2", "label": "CaCl2 (Calcium chloride)", "bucketId": "soluble" },
-        { "id": "baso4", "label": "BaSO4 (Barium sulfate)", "bucketId": "insoluble" },
-        { "id": "agcl", "label": "AgCl (Silver chloride)", "bucketId": "insoluble" },
-        { "id": "caco3", "label": "CaCO3 (Calcium carbonate)", "bucketId": "insoluble" }
+        {
+          "id": "nacl",
+          "label": "NaCl (Sodium chloride)",
+          "bucketId": "soluble"
+        },
+        {
+          "id": "kno3",
+          "label": "KNO3 (Potassium nitrate)",
+          "bucketId": "soluble"
+        },
+        {
+          "id": "cacl2",
+          "label": "CaCl2 (Calcium chloride)",
+          "bucketId": "soluble"
+        },
+        {
+          "id": "baso4",
+          "label": "BaSO4 (Barium sulfate)",
+          "bucketId": "insoluble"
+        },
+        {
+          "id": "agcl",
+          "label": "AgCl (Silver chloride)",
+          "bucketId": "insoluble"
+        },
+        {
+          "id": "caco3",
+          "label": "CaCO3 (Calcium carbonate)",
+          "bucketId": "insoluble"
+        }
       ]
     },
     "hints": [
-      { "level": 1, "text": "Hầu hết muối Na, K và gốc nitrat NO3 đều tan tốt." },
-      { "level": 2, "text": "BaSO4, AgCl, CaCO3 là những chất kết tủa không tan trong nước." }
+      {
+        "level": 1,
+        "text": "Hầu hết muối Na, K và gốc nitrat NO3 đều tan tốt."
+      },
+      {
+        "level": 2,
+        "text": "BaSO4, AgCl, CaCO3 là những chất kết tủa không tan trong nước."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Bảng tính tan", "body": "Dựa vào quy tắc tính tan của các muối vô cơ." },
-      { "kind": "knowledge", "title": "Phân loại", "body": "Muối tan: NaCl, KNO3, CaCl2. Muối không tan: BaSO4, AgCl, CaCO3." },
-      { "kind": "answer", "title": "Kết luận", "body": "Đã phân loại đúng 6 muối vào 2 nhóm." }
+      {
+        "kind": "identify",
+        "title": "Bảng tính tan",
+        "body": "Dựa vào quy tắc tính tan của các muối vô cơ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân loại",
+        "body": "Muối tan: NaCl, KNO3, CaCl2. Muối không tan: BaSO4, AgCl, CaCO3."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đã phân loại đúng 6 muối vào 2 nhóm."
+      }
     ],
     "finalSolution": "Muối tan: **NaCl, KNO3, CaCl2** · Muối kết tủa: **BaSO4, AgCl, CaCO3**.",
     "commonMistakes": []
@@ -117,26 +274,58 @@
   {
     "id": "g8-b11-match-005",
     "lessonId": "g8-b11",
-    "skillIds": ["salt-reactions"],
+    "skillIds": [
+      "salt-reactions"
+    ],
     "difficulty": 2,
     "prompt": "Ghép đôi mỗi chất kết tủa sau với màu sắc đặc trưng của nó trong dung dịch.",
     "answer": {
       "kind": "match",
       "pairs": [
-        { "left": "BaSO4 (Barium sulfate)", "right": "Kết tủa trắng (không tan trong acid mạnh)" },
-        { "left": "AgCl (Silver chloride)", "right": "Kết tủa trắng (hóa đen ngoài ánh sáng)" },
-        { "left": "Cu(OH)2 (Copper(II) hydroxide)", "right": "Kết tủa màu xanh lam" },
-        { "left": "Fe(OH)3 (Iron(III) hydroxide)", "right": "Kết tủa màu nâu đỏ" }
+        {
+          "left": "BaSO4 (Barium sulfate)",
+          "right": "Kết tủa trắng (không tan trong acid mạnh)"
+        },
+        {
+          "left": "AgCl (Silver chloride)",
+          "right": "Kết tủa trắng (hóa đen ngoài ánh sáng)"
+        },
+        {
+          "left": "Cu(OH)2 (Copper(II) hydroxide)",
+          "right": "Kết tủa màu xanh lam"
+        },
+        {
+          "left": "Fe(OH)3 (Iron(III) hydroxide)",
+          "right": "Kết tủa màu nâu đỏ"
+        }
       ]
     },
     "hints": [
-      { "level": 1, "text": "Cu(II) thường có màu xanh lam, Fe(III) thường có màu nâu đỏ." },
-      { "level": 2, "text": "BaSO4 và AgCl đều là kết tủa trắng, nhưng AgCl nhạy cảm ánh sáng bị sẫm màu." }
+      {
+        "level": 1,
+        "text": "Cu(II) thường có màu xanh lam, Fe(III) thường có màu nâu đỏ."
+      },
+      {
+        "level": 2,
+        "text": "BaSO4 và AgCl đều là kết tủa trắng, nhưng AgCl nhạy cảm ánh sáng bị sẫm màu."
+      }
     ],
     "steps": [
-      { "kind": "identify", "title": "Màu sắc kết tủa", "body": "Nhận biết các chất kết tủa thông dụng qua màu sắc." },
-      { "kind": "knowledge", "title": "Đặc điểm màu", "body": "BaSO4: trắng · AgCl: trắng hóa đen ngoài ánh sáng · Cu(OH)2: xanh lam · Fe(OH)3: nâu đỏ." },
-      { "kind": "answer", "title": "Kết luận", "body": "Ghép đúng từng kết tủa với màu sắc." }
+      {
+        "kind": "identify",
+        "title": "Màu sắc kết tủa",
+        "body": "Nhận biết các chất kết tủa thông dụng qua màu sắc."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc điểm màu",
+        "body": "BaSO4: trắng · AgCl: trắng hóa đen ngoài ánh sáng · Cu(OH)2: xanh lam · Fe(OH)3: nâu đỏ."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Ghép đúng từng kết tủa với màu sắc."
+      }
     ],
     "finalSolution": "BaSO4 ↔ Trắng · AgCl ↔ Trắng hóa đen · Cu(OH)2 ↔ Xanh lam · Fe(OH)3 ↔ Nâu đỏ.",
     "commonMistakes": []

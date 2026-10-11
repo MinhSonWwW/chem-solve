@@ -132,22 +132,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Giúp các thành phần tế bào bắt màu (đặc biệt là nhân tế bào) để quan sát rõ nét hơn"
-        },
-        {
-          "id": "opt-b",
-          "label": "Làm cho tế bào phát sáng trong bóng tối"
-        },
-        {
-          "id": "opt-c",
           "label": "Tăng kích thước phóng đại của thấu kính hiển vi"
         },
         {
-          "id": "opt-d",
+          "id": "opt-b",
           "label": "Hòa tan hoàn toàn màng tế bào của vảy hành"
+        },
+        {
+          "id": "opt-c",
+          "label": "Giúp các thành phần tế bào bắt màu (đặc biệt là nhân tế bào) để quan sát rõ nét hơn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Làm cho tế bào phát sáng trong bóng tối"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -201,7 +201,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Nhân khổng lồ của tế bào vảy hành"
+          "label": "Bọt khí bị lọt vào do thao tác đậy lamen chưa đúng cách"
         },
         {
           "id": "opt-b",
@@ -209,14 +209,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Bọt khí bị lọt vào do thao tác đậy lamen chưa đúng cách"
+          "label": "Một loại vi khuẩn lạ xâm nhập"
         },
         {
           "id": "opt-d",
-          "label": "Một loại vi khuẩn lạ xâm nhập"
+          "label": "Nhân khổng lồ của tế bào vảy hành"
         }
       ],
-      "correctId": "opt-c"
+      "correctId": "opt-a"
     },
     "hints": [
       {

@@ -12,22 +12,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Proton, neutron và electron"
+          "label": "Proton và hạt nhân"
         },
         {
           "id": "b",
-          "label": "Chỉ gồm proton và neutron"
-        },
-        {
-          "id": "c",
           "label": "Chỉ gồm proton và electron"
         },
         {
+          "id": "c",
+          "label": "Chỉ gồm proton và neutron"
+        },
+        {
           "id": "d",
-          "label": "Proton và hạt nhân"
+          "label": "Proton, neutron và electron"
         }
       ],
-      "correctId": "a"
+      "correctId": "d"
     },
     "hints": [
       {

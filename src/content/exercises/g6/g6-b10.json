@@ -67,7 +67,7 @@
       "options": [
         {
           "id": "a",
-          "label": "Thể khí"
+          "label": "Thể rắn"
         },
         {
           "id": "b",
@@ -75,14 +75,14 @@
         },
         {
           "id": "c",
-          "label": "Thể rắn"
+          "label": "Thể khí"
         },
         {
           "id": "d",
           "label": "Cả ba thể đều nén dễ như nhau"
         }
       ],
-      "correctId": "a"
+      "correctId": "c"
     },
     "hints": [
       {
@@ -132,22 +132,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Các hạt ở xa nhau, chuyển động hoàn toàn tự do và hỗn loạn về mọi hướng"
-        },
-        {
-          "id": "b",
           "label": "Các hạt ở gần nhau nhưng không cố định, có thể trượt lên nhau"
         },
         {
+          "id": "b",
+          "label": "Các hạt không hề có bất kì chuyển động nào kể cả dao động"
+        },
+        {
           "id": "c",
-          "label": "Các hạt xếp rất sát nhau, có trật tự chặt chẽ và chỉ dao động xung quanh vị trí cố định"
+          "label": "Các hạt ở xa nhau, chuyển động hoàn toàn tự do và hỗn loạn về mọi hướng"
         },
         {
           "id": "d",
-          "label": "Các hạt không hề có bất kì chuyển động nào kể cả dao động"
+          "label": "Các hạt xếp rất sát nhau, có trật tự chặt chẽ và chỉ dao động xung quanh vị trí cố định"
         }
       ],
-      "correctId": "c"
+      "correctId": "d"
     },
     "hints": [
       {
@@ -351,18 +351,18 @@
         },
         {
           "id": "b",
-          "label": "100 °C"
+          "label": "50 °C"
         },
         {
           "id": "c",
-          "label": "50 °C"
+          "label": "100 °C"
         },
         {
           "id": "d",
           "label": "150 °C"
         }
       ],
-      "correctId": "b"
+      "correctId": "c"
     },
     "hints": [
       {

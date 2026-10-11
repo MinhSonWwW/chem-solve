@@ -1,20 +1,22 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Search, Zap } from 'lucide-react';
-import { Heart, Streak, XPBadge, GemBadge, HeartRefillModal, SubjectSelectorModal } from '@/design-system';
+import { Search, Zap, User, LogIn } from 'lucide-react';
+import { Heart, Streak, XPBadge, GemBadge, HeartRefillModal, SubjectSelectorModal, ThemeToggle } from '@/design-system';
 import { useUserStore } from '@/features/gamification/useUserStore';
+import { useAuthStore } from '@/features/auth/useAuthStore';
 import { sound } from '@/lib/audio';
 import { assetUrl } from '@/lib/utils';
-import { useActiveSubject, SUBJECTS } from '@/content/subjects';
+import { useActiveSubject, useActiveGrade, SUBJECTS } from '@/content/subjects';
 
 export const TopHeader: React.FC = () => {
   const { xp, streak, hearts, gems, buyHeartWithGems } = useUserStore();
+  const { user, isAuthenticated } = useAuthStore();
   const [showHeartModal, setShowHeartModal] = useState(false);
   const [showSubjectModal, setShowSubjectModal] = useState(false);
   const { subject: activeSubject, setSubject: setActiveSubjectState } = useActiveSubject();
+  const { grade: activeGrade } = useActiveGrade();
   const currentSub = SUBJECTS.find((s) => s.id === activeSubject) || SUBJECTS[0];
   const navigate = useNavigate();
-  const activeGrade = typeof window !== 'undefined' ? localStorage.getItem('chem_active_grade') || '8' : '8';
 
   const accentShadow =
     activeSubject === 'physics'
@@ -81,7 +83,7 @@ export const TopHeader: React.FC = () => {
                   />
                 )}
               </div>
-              <span className="font-black tracking-wider text-sm sm:text-base text-white">
+              <span className="hidden sm:inline font-black tracking-wider text-sm sm:text-base text-white">
                 {brandPrefix}<span className={accentText}>-SOLVE</span>
               </span>
             </Link>
@@ -93,7 +95,7 @@ export const TopHeader: React.FC = () => {
                 sound.playClick();
                 setShowSubjectModal(true);
               }}
-              className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl
+              className={`flex items-center gap-1 px-2 py-1.5 rounded-xl
                 bg-[#18272f] border-2 text-xs font-black
                 shadow-[0_3px_0_0_#101a1f]
                 active:translate-y-[3px] active:shadow-none
@@ -102,14 +104,16 @@ export const TopHeader: React.FC = () => {
               title="Đổi môn học"
             >
               <span className="text-sm shrink-0">{currentSub.icon}</span>
-              <span className={`text-[11px] ${accentText}`}>{currentSub.shortName}</span>
+              <span className={`hidden sm:inline text-[11px] ${accentText}`}>{currentSub.shortName}</span>
             </button>
           </div>
 
           {/* ─── Gamification Stats ─── */}
-          <div className="flex items-center gap-1.5 sm:gap-2">
+          <div className="flex items-center gap-1 sm:gap-1.5 shrink-0">
             <Streak days={streak} />
-            <XPBadge amount={xp} />
+            <div className="hidden sm:inline-flex">
+              <XPBadge amount={xp} />
+            </div>
 
             {/* Gems → nhấn vào đến Shop */}
             <div
@@ -118,7 +122,7 @@ export const TopHeader: React.FC = () => {
                 sound.playClick();
                 navigate('/shop');
               }}
-              className="cursor-pointer active:scale-90 transition-transform duration-100"
+              className="hidden min-[400px]:block cursor-pointer active:scale-90 transition-transform duration-100"
               title="Cửa hàng — đổi đá quý lấy vật phẩm!"
             >
               <GemBadge amount={gems} />
@@ -142,13 +146,38 @@ export const TopHeader: React.FC = () => {
               id="top-header-search"
               onClick={() => navigate('/search')}
               aria-label="Tìm kiếm bài học"
-              className="p-1.5 text-slate-400 hover:text-cyan-400 rounded-lg
+              className="hidden sm:flex p-1.5 text-slate-400 hover:text-cyan-400 rounded-lg
                 bg-[#18272f] border-2 border-[#2e4756]
                 shadow-[0_2px_0_0_#101a1f]
                 active:translate-y-[2px] active:shadow-none
-                transition-all duration-100"
+                transition-all duration-100 cursor-pointer"
             >
               <Search className="w-4 h-4" />
+            </button>
+
+            {/* Theme Toggle (Light / Dark mode) */}
+            <ThemeToggle variant="compact" />
+
+            {/* Account / Login button */}
+            <button
+              id="top-header-auth"
+              onClick={() => {
+                sound.playClick();
+                navigate(isAuthenticated ? '/profile' : '/auth');
+              }}
+              aria-label={isAuthenticated ? 'Hồ sơ người dùng' : 'Đăng nhập / Đăng ký'}
+              title={isAuthenticated ? `Tài khoản: ${user?.displayName}` : 'Đăng nhập để lưu tiến trình'}
+              className={`p-1.5 rounded-lg border-2 shadow-[0_2px_0_0_#101a1f] active:translate-y-[2px] active:shadow-none transition-all duration-100 cursor-pointer ${
+                isAuthenticated
+                  ? 'bg-emerald-950/40 border-emerald-500/50 text-emerald-400 hover:border-emerald-400'
+                  : 'bg-[#18272f] border-[#2e4756] text-slate-400 hover:text-cyan-400'
+              }`}
+            >
+              {isAuthenticated ? (
+                <User className="w-4 h-4 text-emerald-400" />
+              ) : (
+                <LogIn className="w-4 h-4" />
+              )}
             </button>
           </div>
         </div>

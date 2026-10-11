@@ -3,10 +3,14 @@
     "id": "bio-g6-b20-q01",
     "lessonId": "bio-g6-b20",
     "sgkBaiSo": 35,
-    "skillIds": ["bio-thuc-hanh-thuc-vat"],
+    "skillIds": [
+      "bio-thuc-hanh-thuc-vat"
+    ],
     "difficulty": 1,
     "prompt": "Ghép nối từng mẫu vật thực vật thực hành (cột bên trái) với đúng đặc điểm quan sát giải phẫu nhận diện được bằng kính lúp (cột bên phải):",
-    "knowledge": ["bio-thuc-hanh-thuc-vat"],
+    "knowledge": [
+      "bio-thuc-hanh-thuc-vat"
+    ],
     "answer": {
       "kind": "match",
       "pairs": [
@@ -67,10 +71,15 @@
     "id": "bio-g6-b20-q02",
     "lessonId": "bio-g6-b20",
     "sgkBaiSo": 35,
-    "skillIds": ["bio-thuc-hanh-thuc-vat"],
+    "skillIds": [
+      "bio-thuc-hanh-thuc-vat"
+    ],
     "difficulty": 2,
     "prompt": "Hãy sắp xếp 3 bước phân loại 4 mẫu thực vật (Rêu, Dương xỉ, Thông, Bưởi) theo đúng quy trình của khóa lưỡng phân:",
-    "knowledge": ["bio-thuc-hanh-thuc-vat", "bio-khoa-luong-phan"],
+    "knowledge": [
+      "bio-thuc-hanh-thuc-vat",
+      "bio-khoa-luong-phan"
+    ],
     "answer": {
       "kind": "ordering",
       "correctOrder": [
@@ -118,17 +127,33 @@
     "id": "bio-g6-b20-q03",
     "lessonId": "bio-g6-b20",
     "sgkBaiSo": 35,
-    "skillIds": ["bio-thuc-hanh-thuc-vat"],
+    "skillIds": [
+      "bio-thuc-hanh-thuc-vat"
+    ],
     "difficulty": 1,
     "prompt": "Khi bóc tách các vảy (lá noãn) của nón thông cái già, người ta thấy hạt của cây thông có đặc điểm cấu tạo nào giúp nó phát tán rộng rãi?",
-    "knowledge": ["bio-thuc-hanh-thuc-vat"],
+    "knowledge": [
+      "bio-thuc-hanh-thuc-vat"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Hạt có gắn một màng cánh mỏng dẹt giúp hạt bay lượn theo gió đi xa" },
-        { "id": "opt-b", "label": "Hạt có nhiều gai móc nhọn hoắt bám chặt vào lông thú" },
-        { "id": "opt-c", "label": "Hạt có nhiều vây bơi giúp bơi lội dưới nước" },
-        { "id": "opt-d", "label": "Hạt chứa túi khí giúp hạt phát sáng trong đêm" }
+        {
+          "id": "opt-a",
+          "label": "Hạt có gắn một màng cánh mỏng dẹt giúp hạt bay lượn theo gió đi xa"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hạt chứa túi khí giúp hạt phát sáng trong đêm"
+        },
+        {
+          "id": "opt-c",
+          "label": "Hạt có nhiều vây bơi giúp bơi lội dưới nước"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hạt có nhiều gai móc nhọn hoắt bám chặt vào lông thú"
+        }
       ],
       "correctId": "opt-a"
     },
@@ -171,23 +196,57 @@
     "id": "bio-g6-b20-q04",
     "lessonId": "bio-g6-b20",
     "sgkBaiSo": 35,
-    "skillIds": ["bio-thuc-hanh-thuc-vat"],
+    "skillIds": [
+      "bio-thuc-hanh-thuc-vat"
+    ],
     "difficulty": 2,
     "prompt": "Phân loại các đặc điểm sau đây vào hai nhóm: 'Đặc điểm của Cây rêu tường' và 'Đặc điểm của Cây dương xỉ':",
-    "knowledge": ["bio-thuc-hanh-thuc-vat"],
+    "knowledge": [
+      "bio-thuc-hanh-thuc-vat"
+    ],
     "answer": {
       "kind": "sort",
       "buckets": [
-        { "id": "b-moss", "label": "Đặc điểm của Cây rêu tường" },
-        { "id": "b-fern", "label": "Đặc điểm của Cây dương xỉ" }
+        {
+          "id": "b-moss",
+          "label": "Đặc điểm của Cây rêu tường"
+        },
+        {
+          "id": "b-fern",
+          "label": "Đặc điểm của Cây dương xỉ"
+        }
       ],
       "items": [
-        { "id": "it-1", "label": "Chưa có mạch dẫn thực sự", "bucketId": "b-moss" },
-        { "id": "it-2", "label": "Dưới gốc chỉ có các sợi rễ giả", "bucketId": "b-moss" },
-        { "id": "it-3", "label": "Túi bào tử hình bầu có nắp mở ở ngọn cây", "bucketId": "b-moss" },
-        { "id": "it-4", "label": "Đã có mạch dẫn chính thức chạy dọc thân lá", "bucketId": "b-fern" },
-        { "id": "it-5", "label": "Lá non có đầu cuộn tròn hình đầu gậy", "bucketId": "b-fern" },
-        { "id": "it-6", "label": "Các ổ túi bào tử màu nâu xếp hàng ở mặt dưới lá già", "bucketId": "b-fern" }
+        {
+          "id": "it-1",
+          "label": "Chưa có mạch dẫn thực sự",
+          "bucketId": "b-moss"
+        },
+        {
+          "id": "it-2",
+          "label": "Dưới gốc chỉ có các sợi rễ giả",
+          "bucketId": "b-moss"
+        },
+        {
+          "id": "it-3",
+          "label": "Túi bào tử hình bầu có nắp mở ở ngọn cây",
+          "bucketId": "b-moss"
+        },
+        {
+          "id": "it-4",
+          "label": "Đã có mạch dẫn chính thức chạy dọc thân lá",
+          "bucketId": "b-fern"
+        },
+        {
+          "id": "it-5",
+          "label": "Lá non có đầu cuộn tròn hình đầu gậy",
+          "bucketId": "b-fern"
+        },
+        {
+          "id": "it-6",
+          "label": "Các ổ túi bào tử màu nâu xếp hàng ở mặt dưới lá già",
+          "bucketId": "b-fern"
+        }
       ]
     },
     "hints": [
@@ -229,10 +288,14 @@
     "id": "bio-g6-b20-q05",
     "lessonId": "bio-g6-b20",
     "sgkBaiSo": 35,
-    "skillIds": ["bio-thuc-hanh-thuc-vat"],
+    "skillIds": [
+      "bio-thuc-hanh-thuc-vat"
+    ],
     "difficulty": 2,
     "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về thực hành phân biệt các nhóm thực vật:",
-    "knowledge": ["bio-thuc-hanh-thuc-vat"],
+    "knowledge": [
+      "bio-thuc-hanh-thuc-vat"
+    ],
     "answer": {
       "kind": "true-false",
       "statements": [

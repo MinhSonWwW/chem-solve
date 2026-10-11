@@ -16,11 +16,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Tế bào → Mô → Cơ quan → Hệ cơ quan → Cơ thể"
+          "label": "Tế bào → Cơ quan → Mô → Hệ cơ quan → Cơ thể"
         },
         {
           "id": "opt-b",
-          "label": "Tế bào → Cơ quan → Mô → Hệ cơ quan → Cơ thể"
+          "label": "Tế bào → Mô → Cơ quan → Hệ cơ quan → Cơ thể"
         },
         {
           "id": "opt-c",
@@ -31,7 +31,7 @@
           "label": "Tế bào → Mô → Hệ cơ quan → Cơ quan → Cơ thể"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -85,11 +85,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Cơ hoành"
+          "label": "Xương sườn"
         },
         {
           "id": "opt-b",
-          "label": "Xương sườn"
+          "label": "Xương ức"
         },
         {
           "id": "opt-c",
@@ -97,10 +97,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Xương ức"
+          "label": "Cơ hoành"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -154,7 +154,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Gồm các tế bào xếp xít nhau, phủ mặt ngoài hoặc lót mặt trong cơ quan rỗng"
+          "label": "Gồm thân nơron với các sợi nhánh và sợi trục dẫn truyền xung điện"
         },
         {
           "id": "opt-b",
@@ -166,10 +166,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Gồm thân nơron với các sợi nhánh và sợi trục dẫn truyền xung điện"
+          "label": "Gồm các tế bào xếp xít nhau, phủ mặt ngoài hoặc lót mặt trong cơ quan rỗng"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -223,11 +223,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Mô sụn, mô xương, mô mỡ và máu"
+          "label": "Mô cơ vân, mô sụn và lớp biểu bì da"
         },
         {
           "id": "opt-b",
-          "label": "Mô cơ vân, mô sụn và lớp biểu bì da"
+          "label": "Lớp niêm mạc dạ dày, mô mỡ và nơron"
         },
         {
           "id": "opt-c",
@@ -235,10 +235,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Lớp niêm mạc dạ dày, mô mỡ và nơron"
+          "label": "Mô sụn, mô xương, mô mỡ và máu"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -300,11 +300,11 @@
         },
         {
           "id": "opt-c",
-          "label": "Chỉ có ở thành tim và phân nhánh nối tiếp nhau"
+          "label": "Không có khả năng co rút tạo chuyển động"
         },
         {
           "id": "opt-d",
-          "label": "Không có khả năng co rút tạo chuyển động"
+          "label": "Chỉ có ở thành tim và phân nhánh nối tiếp nhau"
         }
       ],
       "correctId": "opt-a"
@@ -361,7 +361,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Tiếp nhận kích thích (cảm ứng) và dẫn truyền xung thần kinh"
+          "label": "Nâng đỡ trọng lượng cơ thể và đệm chống sốc"
         },
         {
           "id": "opt-b",
@@ -369,14 +369,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Dự trữ mỡ năng lượng và sản sinh hồng cầu mới"
+          "label": "Tiếp nhận kích thích (cảm ứng) và dẫn truyền xung thần kinh"
         },
         {
           "id": "opt-d",
-          "label": "Nâng đỡ trọng lượng cơ thể và đệm chống sốc"
+          "label": "Dự trữ mỡ năng lượng và sản sinh hồng cầu mới"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -430,22 +430,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Hệ tuần hoàn tăng nhịp tim, hệ hô hấp tăng nhịp thở và da tăng tiết mồ hôi để tỏa nhiệt"
+          "label": "Mọi hệ cơ quan đều giảm hoạt động xuống mức tối thiểu để dồn sức cho chân"
         },
         {
           "id": "opt-b",
-          "label": "Hệ tuần hoàn giảm nhịp tim để tiết kiệm máu, hệ hô hấp ngừng thở tạm thời"
-        },
-        {
-          "id": "opt-c",
           "label": "Hệ tiêu hóa tăng cường co bóp thức ăn mạnh mẽ để cung cấp năng lượng tức thì"
         },
         {
+          "id": "opt-c",
+          "label": "Hệ tuần hoàn giảm nhịp tim để tiết kiệm máu, hệ hô hấp ngừng thở tạm thời"
+        },
+        {
           "id": "opt-d",
-          "label": "Mọi hệ cơ quan đều giảm hoạt động xuống mức tối thiểu để dồn sức cho chân"
+          "label": "Hệ tuần hoàn tăng nhịp tim, hệ hô hấp tăng nhịp thở và da tăng tiết mồ hôi để tỏa nhiệt"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -499,22 +499,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Cơ chế điều hòa thần kinh và cơ chế điều hòa thể dịch (hormone)"
+          "label": "Cơ chế co dãn cơ vân và phản xạ bất điều kiện"
         },
         {
           "id": "opt-b",
-          "label": "Cơ chế tuần hoàn máu và cơ chế bài tiết nước tiểu"
-        },
-        {
-          "id": "opt-c",
           "label": "Cơ chế tiêu hóa thức ăn và hô hấp phế nang"
         },
         {
+          "id": "opt-c",
+          "label": "Cơ chế tuần hoàn máu và cơ chế bài tiết nước tiểu"
+        },
+        {
           "id": "opt-d",
-          "label": "Cơ chế co dãn cơ vân và phản xạ bất điều kiện"
+          "label": "Cơ chế điều hòa thần kinh và cơ chế điều hòa thể dịch (hormone)"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {

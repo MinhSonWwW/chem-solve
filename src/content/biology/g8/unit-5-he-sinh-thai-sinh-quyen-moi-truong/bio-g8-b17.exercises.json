@@ -16,22 +16,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Số lượng cá thể của các quần thể sinh vật duy trì ở mức độ phù hợp với khả năng cung cấp của nguồn sống"
+          "label": "Số lượng cá thể của một loài sâu hại tăng trưởng đột biến gấp hàng trăm lần sau một đêm"
         },
         {
           "id": "opt-b",
-          "label": "Tất cả các loài thú ăn thịt đều hoàn toàn biến mất khỏi quần xã rừng"
+          "label": "Số lượng cá thể của các quần thể sinh vật duy trì ở mức độ phù hợp với khả năng cung cấp của nguồn sống"
         },
         {
           "id": "opt-c",
-          "label": "Số lượng cá thể của một loài sâu hại tăng trưởng đột biến gấp hàng trăm lần sau một đêm"
+          "label": "Tất cả các loài thú ăn thịt đều hoàn toàn biến mất khỏi quần xã rừng"
         },
         {
           "id": "opt-d",
           "label": "Các chu trình tuần hoàn vật chất trong đất và nước ngừng hoạt động hoàn toàn"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -85,22 +85,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Là trạng thái cân bằng động, các chỉ số số lượng liên tục dao động nhịp nhàng quanh một ngưỡng ổn định"
+          "label": "Là trạng thái chỉ có sự chuyển hóa năng lượng một chiều mà không có sự tuần hoàn vật chất"
         },
         {
           "id": "opt-b",
-          "label": "Là trạng thái tĩnh tuyệt đối, số lượng cá thể các loài hoàn toàn bất biến theo thời gian"
-        },
-        {
-          "id": "opt-c",
           "label": "Là trạng thái biến động hỗn loạn không có quy luật điều chỉnh nào"
         },
         {
+          "id": "opt-c",
+          "label": "Là trạng thái tĩnh tuyệt đối, số lượng cá thể các loài hoàn toàn bất biến theo thời gian"
+        },
+        {
           "id": "opt-d",
-          "label": "Là trạng thái chỉ có sự chuyển hóa năng lượng một chiều mà không có sự tuần hoàn vật chất"
+          "label": "Là trạng thái cân bằng động, các chỉ số số lượng liên tục dao động nhịp nhàng quanh một ngưỡng ổn định"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -162,11 +162,11 @@
         },
         {
           "id": "opt-c",
-          "label": "Môi trường sống sẽ tự động nhân đôi diện tích và lượng thức ăn sẵn có"
+          "label": "Các cá thể sẽ ngừng hoàn toàn quá trình hô hấp tế bào để tiết kiệm năng lượng"
         },
         {
           "id": "opt-d",
-          "label": "Các cá thể sẽ ngừng hoàn toàn quá trình hô hấp tế bào để tiết kiệm năng lượng"
+          "label": "Môi trường sống sẽ tự động nhân đôi diện tích và lượng thức ăn sẵn có"
         }
       ],
       "correctId": "opt-a"
@@ -227,15 +227,15 @@
         },
         {
           "id": "opt-b",
-          "label": "Cá voi xanh di cư hàng nghìn cây số tránh mùa đông lạnh giá ở hai cực"
+          "label": "Hai con hươu đực húc nhau quyết liệt tranh giành bạn tình vào mùa sinh sản"
         },
         {
           "id": "opt-c",
-          "label": "Cây tràm tiết chất thơm xua đuổi các loài thú ăn cỏ đến gần"
+          "label": "Cá voi xanh di cư hàng nghìn cây số tránh mùa đông lạnh giá ở hai cực"
         },
         {
           "id": "opt-d",
-          "label": "Hai con hươu đực húc nhau quyết liệt tranh giành bạn tình vào mùa sinh sản"
+          "label": "Cây tràm tiết chất thơm xua đuổi các loài thú ăn cỏ đến gần"
         }
       ],
       "correctId": "opt-a"
@@ -296,15 +296,15 @@
         },
         {
           "id": "opt-b",
-          "label": "Trồng thêm cây hoa và cây bóng mát trong khuôn viên trường học"
-        },
-        {
-          "id": "opt-c",
           "label": "Áp dụng phương pháp tưới nhỏ giọt tiết kiệm nước trong nông nghiệp"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "Thu gom và tái chế chai nhựa và lon nhôm sinh hoạt"
+        },
+        {
+          "id": "opt-d",
+          "label": "Trồng thêm cây hoa và cây bóng mát trong khuôn viên trường học"
         }
       ],
       "correctId": "opt-a"
@@ -361,7 +361,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Chúng phát triển bùng phát do thiếu thiên địch, cạnh tranh nguồn sống và đe dọa tiêu diệt các loài bản địa"
+          "label": "Tự động tiêu diệt sạch tất cả các loài cỏ dại và sâu bọ mà không gây hại mùa màng"
         },
         {
           "id": "opt-b",
@@ -369,14 +369,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Tự động tiêu diệt sạch tất cả các loài cỏ dại và sâu bọ mà không gây hại mùa màng"
+          "label": "Ngăn chặn hiện tượng nước biển dâng và làm dịu đi biến đổi khí hậu"
         },
         {
           "id": "opt-d",
-          "label": "Ngăn chặn hiện tượng nước biển dâng và làm dịu đi biến đổi khí hậu"
+          "label": "Chúng phát triển bùng phát do thiếu thiên địch, cạnh tranh nguồn sống và đe dọa tiêu diệt các loài bản địa"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -438,11 +438,11 @@
         },
         {
           "id": "opt-c",
-          "label": "Làm nước sông hồ trở nên trong sạch hơn nhờ tiêu diệt các loài phù du"
+          "label": "Giúp bảo tồn đa dạng di truyền cho các thế hệ cá mai sau"
         },
         {
           "id": "opt-d",
-          "label": "Giúp bảo tồn đa dạng di truyền cho các thế hệ cá mai sau"
+          "label": "Làm nước sông hồ trở nên trong sạch hơn nhờ tiêu diệt các loài phù du"
         }
       ],
       "correctId": "opt-a"
@@ -499,7 +499,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Tích cực trồng và chăm sóc cây xanh, nói không với việc tiêu thụ và mua bán động vật hoang dã"
+          "label": "Tăng cường săn bắt chim sâu để bảo vệ quả chín trên cây"
         },
         {
           "id": "opt-b",
@@ -507,14 +507,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Đốt thực bì cỏ dại trên các đồi thông vào mùa khô hanh"
+          "label": "Tích cực trồng và chăm sóc cây xanh, nói không với việc tiêu thụ và mua bán động vật hoang dã"
         },
         {
           "id": "opt-d",
-          "label": "Tăng cường săn bắt chim sâu để bảo vệ quả chín trên cây"
+          "label": "Đốt thực bì cỏ dại trên các đồi thông vào mùa khô hanh"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {

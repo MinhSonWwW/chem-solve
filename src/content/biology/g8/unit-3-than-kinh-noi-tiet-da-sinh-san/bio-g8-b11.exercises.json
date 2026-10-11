@@ -16,22 +16,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Sản xuất tinh trùng và tiết hormone sinh dục nam Testosterone"
-        },
-        {
-          "id": "opt-b",
-          "label": "Chỉ làm nhiệm vụ sản xuất nước tiểu và tích trữ mỡ"
-        },
-        {
-          "id": "opt-c",
           "label": "Nuôi dưỡng phôi thai và tiết sữa sau sinh"
         },
         {
-          "id": "opt-d",
+          "id": "opt-b",
           "label": "Sản xuất hormone Insulin để kiểm soát đường huyết"
+        },
+        {
+          "id": "opt-c",
+          "label": "Chỉ làm nhiệm vụ sản xuất nước tiểu và tích trữ mỡ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Sản xuất tinh trùng và tiết hormone sinh dục nam Testosterone"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -85,22 +85,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Ở 1/3 phía ngoài của ống dẫn trứng (vòi trứng)"
+          "label": "Trực tiếp bên trong nang trứng ở buồng trứng"
         },
         {
           "id": "opt-b",
-          "label": "Bên trong khoang tử cung (dạ con)"
+          "label": "Ở 1/3 phía ngoài của ống dẫn trứng (vòi trứng)"
         },
         {
           "id": "opt-c",
-          "label": "Trực tiếp bên trong nang trứng ở buồng trứng"
+          "label": "Bên trong khoang tử cung (dạ con)"
         },
         {
           "id": "opt-d",
           "label": "Tại cổ tử cung hoặc âm đạo"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -158,7 +158,7 @@
         },
         {
           "id": "opt-b",
-          "label": "Thụ tinh và thụ thai là hai từ đồng nghĩa hoàn toàn chỉ cùng một thời điểm trứng rụng"
+          "label": "Thụ tinh là khi em bé cất tiếng khóc chào đời sau 9 tháng mang thai"
         },
         {
           "id": "opt-c",
@@ -166,7 +166,7 @@
         },
         {
           "id": "opt-d",
-          "label": "Thụ tinh là khi em bé cất tiếng khóc chào đời sau 9 tháng mang thai"
+          "label": "Thụ tinh và thụ thai là hai từ đồng nghĩa hoàn toàn chỉ cùng một thời điểm trứng rụng"
         }
       ],
       "correctId": "opt-a"
@@ -292,7 +292,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Để duy trì nhiệt độ tinh hoàn thấp hơn thân nhiệt cơ thể khoảng 2 - 3°C, là điều kiện nhiệt độ tối ưu cho sự sinh tinh"
+          "label": "Do khoang bụng nam giới quá chật hẹp không đủ chỗ chứa tinh hoàn"
         },
         {
           "id": "opt-b",
@@ -300,14 +300,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Do khoang bụng nam giới quá chật hẹp không đủ chỗ chứa tinh hoàn"
+          "label": "Để tinh hoàn không bị ảnh hưởng bởi quá trình tiêu hóa thức ăn ở dạ dày"
         },
         {
           "id": "opt-d",
-          "label": "Để tinh hoàn không bị ảnh hưởng bởi quá trình tiêu hóa thức ăn ở dạ dày"
+          "label": "Để duy trì nhiệt độ tinh hoàn thấp hơn thân nhiệt cơ thể khoảng 2 - 3°C, là điều kiện nhiệt độ tối ưu cho sự sinh tinh"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -365,15 +365,15 @@
         },
         {
           "id": "opt-b",
-          "label": "Tiêu diệt hoàn toàn toàn bộ buồng trứng và tinh hoàn vĩnh viễn"
-        },
-        {
-          "id": "opt-c",
           "label": "Làm cho màng tế bào của trứng biến mất để không thể thụ tinh"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "Ức chế quá trình tuần hoàn máu của người phụ nữ trong 1 năm"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tiêu diệt hoàn toàn toàn bộ buồng trứng và tinh hoàn vĩnh viễn"
         }
       ],
       "correctId": "opt-a"
@@ -430,22 +430,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Là biện pháp DUY NHẤT vừa có hiệu quả tránh thai cao, vừa ngăn chặn lây truyền các bệnh tình dục nguy hiểm (HIV, giang mai, lậu)"
-        },
-        {
-          "id": "opt-b",
           "label": "Vì bao cao su có thể sử dụng lại nhiều lần trong nhiều năm mà không cần thay mới"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Vì bao cao su trực tiếp cung cấp chất dinh dưỡng nuôi cơ quan sinh sản"
+        },
+        {
+          "id": "opt-c",
+          "label": "Là biện pháp DUY NHẤT vừa có hiệu quả tránh thai cao, vừa ngăn chặn lây truyền các bệnh tình dục nguy hiểm (HIV, giang mai, lậu)"
         },
         {
           "id": "opt-d",
           "label": "Vì bao cao su có khả năng chữa khỏi hoàn toàn bệnh AIDS chỉ sau một lần dùng"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -499,11 +499,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "HIV/AIDS, Giang mai, Lậu và Sùi mào gà (HPV)"
+          "label": "Cong vẹo cột sống, Bệnh Basedow và Thiếu máu"
         },
         {
           "id": "opt-b",
-          "label": "Bệnh bướu cổ, Bệnh còi xương và Cận thị"
+          "label": "HIV/AIDS, Giang mai, Lậu và Sùi mào gà (HPV)"
         },
         {
           "id": "opt-c",
@@ -511,10 +511,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Cong vẹo cột sống, Bệnh Basedow và Thiếu máu"
+          "label": "Bệnh bướu cổ, Bệnh còi xương và Cận thị"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {

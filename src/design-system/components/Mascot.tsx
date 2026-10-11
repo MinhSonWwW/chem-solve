@@ -4,6 +4,8 @@ import { cn, assetUrl } from '@/lib/utils';
 import { useReducedMotion } from '@/design-system/motion/useReducedMotion';
 import { sound } from '@/lib/audio';
 
+import { SubjectId, useActiveSubject } from '@/content/subjects';
+
 export type MascotState =
   | 'idle'
   | 'happy'
@@ -20,18 +22,22 @@ export interface MascotProps extends React.HTMLAttributes<HTMLDivElement> {
   state?: MascotState;
   size?: 'sm' | 'md' | 'lg' | 'xl';
   interactive?: boolean;
+  subject?: SubjectId;
 }
 
 export const Mascot: React.FC<MascotProps> = ({
   state = 'idle',
   size = 'md',
   interactive = true,
+  subject: propSubject,
   className,
   onClick,
   ...props
 }) => {
   const prefersReduced = useReducedMotion();
   const [isPokeJiggle, setIsPokeJiggle] = useState(false);
+  const { subject: activeSubject } = useActiveSubject();
+  const subject = propSubject || activeSubject || 'chem';
 
   const pixelSize =
     size === 'sm' ? 44 : size === 'lg' ? 96 : size === 'xl' ? 128 : 64;
@@ -119,26 +125,55 @@ export const Mascot: React.FC<MascotProps> = ({
   };
 
   const rawSrc = (() => {
+    const prefix = subject === 'bio' ? 'bio' : subject === 'physics' ? 'physics' : 'atom';
+    
+    // Atom specific state fallbacks
+    if (prefix === 'atom') {
+      switch (state) {
+        case 'thinking':
+          return '/assets/mascot/atom-thinking.png';
+        case 'celebrating':
+          return '/assets/mascot/atom-celebrating.png';
+        case 'cheering':
+          return '/assets/mascot/atom-cheering.png';
+        case 'surprised':
+          return '/assets/mascot/atom-surprised.png';
+        case 'sleeping':
+        case 'out_of_hearts':
+          return '/assets/mascot/atom-out-of-hearts.png';
+        case 'correct':
+          return '/assets/mascot/atom-correct.png';
+        case 'wrong':
+          return '/assets/mascot/atom-wrong.png';
+        case 'idle':
+        case 'happy':
+        default:
+          return '/assets/mascot/atom-idle.png';
+      }
+    }
+
+    // Bio (Leafy) & Physics (Sparky) have complete dedicated sets
     switch (state) {
+      case 'happy':
+        return `/assets/mascot/${prefix}-happy.png`;
       case 'thinking':
-        return '/assets/mascot/atom-thinking.png';
+        return `/assets/mascot/${prefix}-thinking.png`;
       case 'celebrating':
-        return '/assets/mascot/atom-celebrating.png';
+        return `/assets/mascot/${prefix}-celebrating.png`;
       case 'cheering':
-        return '/assets/mascot/atom-cheering.png';
+        return `/assets/mascot/${prefix}-cheering.png`;
       case 'surprised':
-        return '/assets/mascot/atom-surprised.png';
+        return `/assets/mascot/${prefix}-surprised.png`;
       case 'sleeping':
       case 'out_of_hearts':
-        return '/assets/mascot/atom-out-of-hearts.png';
+        return `/assets/mascot/${prefix}-out-of-hearts.png`;
       case 'correct':
-        return '/assets/mascot/atom-correct.png';
+        return `/assets/mascot/${prefix}-correct.png`;
       case 'wrong':
-        return '/assets/mascot/atom-wrong.png';
+        return `/assets/mascot/${prefix}-wrong.png`;
       case 'idle':
-      case 'happy':
       default:
-        return '/assets/mascot/atom-idle.png';
+        return `/assets/mascot/${prefix}-idle.png`;
     }
   })();
   const mascotSrc = assetUrl(rawSrc);

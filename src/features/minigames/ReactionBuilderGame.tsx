@@ -178,7 +178,7 @@ export const ReactionBuilderGame: React.FC<{ onExit: () => void }> = ({ onExit }
             <div
               className={`min-w-[120px] px-3.5 py-2 rounded-2xl border-2 border-dashed flex items-center justify-center transition-all ${
                 isCorrectSolved
-                  ? 'border-emerald-500 bg-emerald-950/40 text-emerald-300 shadow-[0_0_15px_rgba(16,185,129,0.4)]'
+                  ? 'border-emerald-500 bg-emerald-950/40 text-emerald-300 shadow-[0_3px_0_0_#059669]'
                   : 'border-slate-700 bg-slate-950/40 text-slate-500'
               }`}
             >
@@ -227,10 +227,10 @@ export const ReactionBuilderGame: React.FC<{ onExit: () => void }> = ({ onExit }
                   onClick={() => handleSelectOption(opt)}
                   className={`p-3.5 rounded-2xl border font-bold text-sm flex items-center justify-between transition-all cursor-pointer ${
                     isCorrect
-                      ? 'bg-emerald-950/60 border-emerald-500 text-emerald-300 shadow-[0_0_15px_rgba(16,185,129,0.3)]'
+                      ? 'bg-emerald-950/60 border-2 border-emerald-500 text-emerald-300 shadow-[0_3px_0_0_#059669]'
                       : isSelected
-                      ? 'bg-rose-950/60 border-rose-500 text-rose-300'
-                      : 'bg-slate-900 border-slate-800 text-slate-200 hover:border-slate-700'
+                      ? 'bg-rose-950/60 border-2 border-rose-500 text-rose-300 shadow-[0_3px_0_0_#dc2626]'
+                      : 'bg-slate-900 border-2 border-slate-800 text-slate-200 hover:border-slate-700 shadow-[0_3px_0_0_#131f24]'
                   }`}
                 >
                   <div className="flex items-center gap-1.5">

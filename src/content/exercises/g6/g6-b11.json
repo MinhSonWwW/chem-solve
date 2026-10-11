@@ -12,22 +12,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Khoảng 21 % (gần 1/5 thể tích)"
-        },
-        {
-          "id": "b",
-          "label": "Khoảng 78 % (gần 4/5 thể tích)"
-        },
-        {
-          "id": "c",
           "label": "Khoảng 1 %"
         },
         {
-          "id": "d",
+          "id": "b",
           "label": "Khoảng 50 %"
+        },
+        {
+          "id": "c",
+          "label": "Khoảng 21 % (gần 1/5 thể tích)"
+        },
+        {
+          "id": "d",
+          "label": "Khoảng 78 % (gần 4/5 thể tích)"
         }
       ],
-      "correctId": "a"
+      "correctId": "c"
     },
     "hints": [
       {
@@ -77,7 +77,7 @@
       "options": [
         {
           "id": "a",
-          "label": "Khí Oxygen (chiếm khoảng 21 %)"
+          "label": "Khí Nitrogen (chiếm khoảng 78 %)"
         },
         {
           "id": "b",
@@ -85,14 +85,14 @@
         },
         {
           "id": "c",
-          "label": "Khí Nitrogen (chiếm khoảng 78 %)"
+          "label": "Khí Hydrogen"
         },
         {
           "id": "d",
-          "label": "Khí Hydrogen"
+          "label": "Khí Oxygen (chiếm khoảng 21 %)"
         }
       ],
-      "correctId": "c"
+      "correctId": "a"
     },
     "hints": [
       {
@@ -205,22 +205,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Nến bùng cháy mãnh liệt và làm vỡ cốc thủy tinh"
+          "label": "Nước trong đĩa bị đẩy ra ngoài và cạn kiệt hoàn toàn"
         },
         {
           "id": "b",
-          "label": "Ngọn nến cháy yếu dần rồi tắt, đồng thời nước dâng lên chiếm khoảng 1/5 thể tích bên trong cốc"
-        },
-        {
-          "id": "c",
           "label": "Nến cháy mãi không bao giờ tắt vì đã được che chắn khỏi gió"
         },
         {
+          "id": "c",
+          "label": "Ngọn nến cháy yếu dần rồi tắt, đồng thời nước dâng lên chiếm khoảng 1/5 thể tích bên trong cốc"
+        },
+        {
           "id": "d",
-          "label": "Nước trong đĩa bị đẩy ra ngoài và cạn kiệt hoàn toàn"
+          "label": "Nến bùng cháy mãnh liệt và làm vỡ cốc thủy tinh"
         }
       ],
-      "correctId": "b"
+      "correctId": "c"
     },
     "hints": [
       {
@@ -453,7 +453,7 @@
       "options": [
         {
           "id": "a",
-          "label": "Cây xanh hút hết toàn bộ không khí xung quanh"
+          "label": "Cây xanh quang hợp hấp thụ khí CO2, cản bụi và giải phóng khí Oxygen sạch"
         },
         {
           "id": "b",
@@ -461,14 +461,14 @@
         },
         {
           "id": "c",
-          "label": "Cây xanh ngăn chặn hoàn toàn ánh sáng mặt trời"
+          "label": "Cây xanh hút hết toàn bộ không khí xung quanh"
         },
         {
           "id": "d",
-          "label": "Cây xanh quang hợp hấp thụ khí CO2, cản bụi và giải phóng khí Oxygen sạch"
+          "label": "Cây xanh ngăn chặn hoàn toàn ánh sáng mặt trời"
         }
       ],
-      "correctId": "d"
+      "correctId": "a"
     },
     "hints": [
       {

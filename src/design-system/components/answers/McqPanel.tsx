@@ -18,6 +18,7 @@ export interface McqPanelProps {
   onChange: (v: string | string[]) => void;
   disabled: boolean;
   verdict?: Verdict;
+  shuffle?: boolean;
 }
 
 export const McqPanel: React.FC<McqPanelProps> = ({
@@ -29,9 +30,19 @@ export const McqPanel: React.FC<McqPanelProps> = ({
   onChange,
   disabled,
   verdict,
+  shuffle = false,
 }) => {
   // Display options in stable order matching keys 1, 2, 3, 4 and A, B, C, D
-  const displayOptions = options;
+  const optionsKey = options.map((o) => `${o.id}:${o.label}`).join('|');
+  const displayOptions = React.useMemo(() => {
+    if (!shuffle) return options;
+    const arr = [...options];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }, [optionsKey, shuffle]);
 
   const isChecked = !!verdict;
   const selectedSet = new Set(

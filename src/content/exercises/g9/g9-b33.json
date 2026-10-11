@@ -13,22 +13,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Oxygen (khoảng 46 - 49%) và Silicon (khoảng 27 - 28%)"
-        },
-        {
-          "id": "b",
           "label": "Sắt (Fe) và Đồng (Cu)"
         },
         {
-          "id": "c",
+          "id": "b",
           "label": "Nitrogen và Hydrogen"
         },
         {
-          "id": "d",
+          "id": "c",
           "label": "Vàng (Au) và Bạc (Ag)"
+        },
+        {
+          "id": "d",
+          "label": "Oxygen (khoảng 46 - 49%) và Silicon (khoảng 27 - 28%)"
         }
       ],
-      "correctId": "a"
+      "correctId": "d"
     },
     "hints": [
       {
@@ -83,18 +83,18 @@
         },
         {
           "id": "b",
-          "label": "Vàng (Au)"
+          "label": "Nhôm (Al, chiếm khoảng 8%)"
         },
         {
           "id": "c",
-          "label": "Nhôm (Al, chiếm khoảng 8%)"
+          "label": "Vàng (Au)"
         },
         {
           "id": "d",
           "label": "Đồng (Cu)"
         }
       ],
-      "correctId": "c"
+      "correctId": "b"
     },
     "hints": [
       {
@@ -209,22 +209,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Khai thác tối đa mọi mỏ quặng với tốc độ nhanh nhất có thể"
-        },
-        {
-          "id": "b",
-          "label": "Đẩy mạnh thu gom, tái chế kim loại phế liệu và nghiên cứu vật liệu nhân tạo thay thế"
-        },
-        {
-          "id": "c",
           "label": "Chôn toàn bộ rác thải kim loại xuống đất để tạo mỏ quặng mới"
         },
         {
-          "id": "d",
+          "id": "b",
+          "label": "Khai thác tối đa mọi mỏ quặng với tốc độ nhanh nhất có thể"
+        },
+        {
+          "id": "c",
           "label": "Cấm hoàn toàn việc sử dụng các kim loại như sắt, nhôm và đồng"
+        },
+        {
+          "id": "d",
+          "label": "Đẩy mạnh thu gom, tái chế kim loại phế liệu và nghiên cứu vật liệu nhân tạo thay thế"
         }
       ],
-      "correctId": "b"
+      "correctId": "d"
     },
     "hints": [
       {

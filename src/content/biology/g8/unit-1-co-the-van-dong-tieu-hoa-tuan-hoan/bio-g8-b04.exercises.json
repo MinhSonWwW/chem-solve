@@ -20,15 +20,15 @@
         },
         {
           "id": "opt-b",
-          "label": "Huyết tương chiếm khoảng 45% và các tế bào máu chiếm khoảng 55%"
-        },
-        {
-          "id": "opt-c",
           "label": "Hồng cầu chiếm khoảng 80% và huyết thanh chiếm khoảng 20%"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "Bạch cầu chiếm 50% và tiểu cầu chiếm 50%"
+        },
+        {
+          "id": "opt-d",
+          "label": "Huyết tương chiếm khoảng 45% và các tế bào máu chiếm khoảng 55%"
         }
       ],
       "correctId": "opt-a"
@@ -231,11 +231,11 @@
         },
         {
           "id": "opt-c",
-          "label": "Hồng cầu nhóm O có cả hai loại kháng nguyên A và B bảo vệ"
+          "label": "Hồng cầu nhóm O có kích thước siêu nhỏ không thể bị bắt giữ"
         },
         {
           "id": "opt-d",
-          "label": "Hồng cầu nhóm O có kích thước siêu nhỏ không thể bị bắt giữ"
+          "label": "Hồng cầu nhóm O có cả hai loại kháng nguyên A và B bảo vệ"
         }
       ],
       "correctId": "opt-a"
@@ -296,15 +296,15 @@
         },
         {
           "id": "opt-b",
-          "label": "Nhóm máu A và Nhóm máu B"
+          "label": "Nhóm máu B và Nhóm máu AB"
         },
         {
           "id": "opt-c",
-          "label": "Chỉ duy nhất Nhóm máu AB"
+          "label": "Nhóm máu A và Nhóm máu B"
         },
         {
           "id": "opt-d",
-          "label": "Nhóm máu B và Nhóm máu AB"
+          "label": "Chỉ duy nhất Nhóm máu AB"
         }
       ],
       "correctId": "opt-a"
@@ -361,22 +361,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Bắt đầu từ Tâm thất trái và kết thúc tại Tâm nhĩ phải"
+          "label": "Bắt đầu từ Tâm thất trái và kết thúc tại Tâm nhĩ trái"
         },
         {
           "id": "opt-b",
-          "label": "Bắt đầu từ Tâm thất phải và kết thúc tại Tâm nhĩ trái"
-        },
-        {
-          "id": "opt-c",
           "label": "Bắt đầu từ Tâm nhĩ trái và kết thúc tại Tâm thất phải"
         },
         {
+          "id": "opt-c",
+          "label": "Bắt đầu từ Tâm thất trái và kết thúc tại Tâm nhĩ phải"
+        },
+        {
           "id": "opt-d",
-          "label": "Bắt đầu từ Tâm thất trái và kết thúc tại Tâm nhĩ trái"
+          "label": "Bắt đầu từ Tâm thất phải và kết thúc tại Tâm nhĩ trái"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -430,22 +430,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Động mạch phổi dẫn máu đỏ thẫm (nghèo O2); Tĩnh mạch phổi dẫn máu đỏ tươi (giàu O2)"
-        },
-        {
-          "id": "opt-b",
           "label": "Động mạch phổi dẫn máu đỏ tươi; Tĩnh mạch phổi dẫn máu đỏ thẫm"
         },
         {
+          "id": "opt-b",
+          "label": "Cả hai mạch đều chỉ dẫn máu đỏ thẫm nghèo O2"
+        },
+        {
           "id": "opt-c",
-          "label": "Cả hai mạch đều chỉ dẫn máu đỏ tươi giàu O2"
+          "label": "Động mạch phổi dẫn máu đỏ thẫm (nghèo O2); Tĩnh mạch phổi dẫn máu đỏ tươi (giàu O2)"
         },
         {
           "id": "opt-d",
-          "label": "Cả hai mạch đều chỉ dẫn máu đỏ thẫm nghèo O2"
+          "label": "Cả hai mạch đều chỉ dẫn máu đỏ tươi giàu O2"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -499,22 +499,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Dùng ngón tay ấn mạnh vào động mạch phía trên vết thương, đặt garô siết chặt phía gần tim và nới lỏng mỗi 15 phút"
-        },
-        {
-          "id": "opt-b",
-          "label": "Chỉ dùng một miếng băng gạc mỏng đắp hờ lên vết thương rồi chờ máu tự đông"
-        },
-        {
-          "id": "opt-c",
           "label": "Buộc chặt dây garô ở vị trí phía dưới vết thương (về phía ngón tay)"
         },
         {
-          "id": "opt-d",
+          "id": "opt-b",
           "label": "Rửa vết thương liên tục dưới vòi nước chảy xiết mà không cần băng ép"
+        },
+        {
+          "id": "opt-c",
+          "label": "Dùng ngón tay ấn mạnh vào động mạch phía trên vết thương, đặt garô siết chặt phía gần tim và nới lỏng mỗi 15 phút"
+        },
+        {
+          "id": "opt-d",
+          "label": "Chỉ dùng một miếng băng gạc mỏng đắp hờ lên vết thương rồi chờ máu tự đông"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {

@@ -3,10 +3,14 @@
     "id": "bio-g6-b12-q01",
     "lessonId": "bio-g6-b12",
     "sgkBaiSo": 27,
-    "skillIds": ["bio-vi-khuan"],
+    "skillIds": [
+      "bio-vi-khuan"
+    ],
     "difficulty": 1,
     "prompt": "Ghép nối từng nhóm vi khuẩn (cột bên trái) với đúng hình dạng hình học tương ứng của nó (cột bên phải):",
-    "knowledge": ["bio-vi-khuan"],
+    "knowledge": [
+      "bio-vi-khuan"
+    ],
     "answer": {
       "kind": "match",
       "pairs": [
@@ -67,23 +71,57 @@
     "id": "bio-g6-b12-q02",
     "lessonId": "bio-g6-b12",
     "sgkBaiSo": 27,
-    "skillIds": ["bio-vi-khuan"],
+    "skillIds": [
+      "bio-vi-khuan"
+    ],
     "difficulty": 2,
     "prompt": "Phân loại các hoạt động sau đây của vi khuẩn vào hai nhóm: 'Vai trò có ích' và 'Tác hại đối với đời sống':",
-    "knowledge": ["bio-vi-khuan"],
+    "knowledge": [
+      "bio-vi-khuan"
+    ],
     "answer": {
       "kind": "sort",
       "buckets": [
-        { "id": "b-beneficial", "label": "Vai trò có ích" },
-        { "id": "b-harmful", "label": "Tác hại đối với đời sống" }
+        {
+          "id": "b-beneficial",
+          "label": "Vai trò có ích"
+        },
+        {
+          "id": "b-harmful",
+          "label": "Tác hại đối với đời sống"
+        }
       ],
       "items": [
-        { "id": "it-1", "label": "Lên men sữa chua và dưa chua", "bucketId": "b-beneficial" },
-        { "id": "it-2", "label": "Phân giải xác động vật, rác thải hữu cơ tạo mùn đất", "bucketId": "b-beneficial" },
-        { "id": "it-3", "label": "Cố định đạm trong nốt sần rễ cây họ đậu", "bucketId": "b-beneficial" },
-        { "id": "it-4", "label": "Làm thức ăn bị ôi thiu, thối rữa và bốc mùi", "bucketId": "b-harmful" },
-        { "id": "it-5", "label": "Gây bệnh lao phổi nguy hiểm cho người", "bucketId": "b-harmful" },
-        { "id": "it-6", "label": "Gây bệnh dịch tả tiêu chảy mất nước", "bucketId": "b-harmful" }
+        {
+          "id": "it-1",
+          "label": "Lên men sữa chua và dưa chua",
+          "bucketId": "b-beneficial"
+        },
+        {
+          "id": "it-2",
+          "label": "Phân giải xác động vật, rác thải hữu cơ tạo mùn đất",
+          "bucketId": "b-beneficial"
+        },
+        {
+          "id": "it-3",
+          "label": "Cố định đạm trong nốt sần rễ cây họ đậu",
+          "bucketId": "b-beneficial"
+        },
+        {
+          "id": "it-4",
+          "label": "Làm thức ăn bị ôi thiu, thối rữa và bốc mùi",
+          "bucketId": "b-harmful"
+        },
+        {
+          "id": "it-5",
+          "label": "Gây bệnh lao phổi nguy hiểm cho người",
+          "bucketId": "b-harmful"
+        },
+        {
+          "id": "it-6",
+          "label": "Gây bệnh dịch tả tiêu chảy mất nước",
+          "bucketId": "b-harmful"
+        }
       ]
     },
     "hints": [
@@ -125,17 +163,33 @@
     "id": "bio-g6-b12-q03",
     "lessonId": "bio-g6-b12",
     "sgkBaiSo": 27,
-    "skillIds": ["bio-vi-khuan"],
+    "skillIds": [
+      "bio-vi-khuan"
+    ],
     "difficulty": 1,
     "prompt": "Cấu tạo tế bào của vi khuẩn thuộc loại tế bào nào sau đây?",
-    "knowledge": ["bio-vi-khuan"],
+    "knowledge": [
+      "bio-vi-khuan"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Tế bào nhân sơ (chưa có màng nhân bao bọc vật chất di truyền)" },
-        { "id": "opt-b", "label": "Tế bào nhân thực (có nhân hoàn chỉnh với màng nhân)" },
-        { "id": "opt-c", "label": "Thực thể chưa có cấu tạo tế bào" },
-        { "id": "opt-d", "label": "Tế bào thực vật có chứa nhiều lục lạp quang hợp" }
+        {
+          "id": "opt-a",
+          "label": "Tế bào nhân sơ (chưa có màng nhân bao bọc vật chất di truyền)"
+        },
+        {
+          "id": "opt-b",
+          "label": "Tế bào nhân thực (có nhân hoàn chỉnh với màng nhân)"
+        },
+        {
+          "id": "opt-c",
+          "label": "Thực thể chưa có cấu tạo tế bào"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tế bào thực vật có chứa nhiều lục lạp quang hợp"
+        }
       ],
       "correctId": "opt-a"
     },
@@ -178,19 +232,39 @@
     "id": "bio-g6-b12-q04",
     "lessonId": "bio-g6-b12",
     "sgkBaiSo": 27,
-    "skillIds": ["bio-vi-khuan"],
+    "skillIds": [
+      "bio-vi-khuan"
+    ],
     "difficulty": 2,
     "prompt": "Những biện pháp nào sau đây giúp phòng tránh hiệu quả các bệnh truyền nhiễm lây qua đường tiêu hóa do vi khuẩn (chọn các phương án đúng)?",
-    "knowledge": ["bio-vi-khuan"],
+    "knowledge": [
+      "bio-vi-khuan"
+    ],
     "answer": {
       "kind": "mcq-multi",
       "options": [
-        { "id": "opt-a", "label": "Thực hiện ăn chín, uống sôi, không ăn thức ăn ôi thiu" },
-        { "id": "opt-b", "label": "Rửa tay sạch bằng xà phòng trước khi ăn và sau khi đi vệ sinh" },
-        { "id": "opt-c", "label": "Bảo quản thực phẩm trong tủ lạnh và che đậy thức ăn tránh ruồi nhặng" },
-        { "id": "opt-d", "label": "Uống thuốc kháng sinh liều cao hàng ngày ngay cả khi hoàn toàn khỏe mạnh" }
+        {
+          "id": "opt-a",
+          "label": "Thực hiện ăn chín, uống sôi, không ăn thức ăn ôi thiu"
+        },
+        {
+          "id": "opt-b",
+          "label": "Rửa tay sạch bằng xà phòng trước khi ăn và sau khi đi vệ sinh"
+        },
+        {
+          "id": "opt-c",
+          "label": "Bảo quản thực phẩm trong tủ lạnh và che đậy thức ăn tránh ruồi nhặng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Uống thuốc kháng sinh liều cao hàng ngày ngay cả khi hoàn toàn khỏe mạnh"
+        }
       ],
-      "correctIds": ["opt-a", "opt-b", "opt-c"]
+      "correctIds": [
+        "opt-a",
+        "opt-b",
+        "opt-c"
+      ]
     },
     "hints": [
       {
@@ -231,10 +305,14 @@
     "id": "bio-g6-b12-q05",
     "lessonId": "bio-g6-b12",
     "sgkBaiSo": 27,
-    "skillIds": ["bio-vi-khuan"],
+    "skillIds": [
+      "bio-vi-khuan"
+    ],
     "difficulty": 2,
     "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về vi khuẩn và sử dụng kháng sinh:",
-    "knowledge": ["bio-vi-khuan"],
+    "knowledge": [
+      "bio-vi-khuan"
+    ],
     "answer": {
       "kind": "true-false",
       "statements": [

@@ -2,7 +2,6 @@ import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Heart, AlertTriangle } from 'lucide-react';
 import { Button } from './Button';
-import { Mascot } from './Mascot';
 import { sound } from '@/lib/audio';
 
 import { assetUrl, cn } from '@/lib/utils';
@@ -43,7 +42,7 @@ export const OutOfHeartsModal: React.FC<OutOfHeartsModalProps> = ({
           animate={{ scale: 1, opacity: 1, y: 0 }}
           exit={{ scale: 0.85, opacity: 0, y: 20 }}
           transition={{ type: 'spring', stiffness: 350, damping: 25 }}
-          className="relative w-full max-w-sm rounded-3xl bg-slate-900 border-2 border-rose-500/40 p-6 shadow-[0_0_50px_rgba(244,63,94,0.2)] text-center space-y-4 z-10"
+          className="relative w-full max-w-sm rounded-3xl bg-[#18272f] border-2 border-[#ff4b4b] p-6 shadow-[0_12px_40px_rgba(0,0,0,0.85)] text-center space-y-4 z-10"
         >
           {/* Failure Alert Badge */}
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-500/20 border border-rose-500/40 text-[11px] font-black uppercase tracking-wider text-rose-300">
@@ -51,16 +50,13 @@ export const OutOfHeartsModal: React.FC<OutOfHeartsModalProps> = ({
             <span>Thất bại chặng này</span>
           </div>
 
-          {/* Header Icon / Mascot */}
-          <div className="flex justify-center items-center gap-3 pt-1">
-            <Mascot state="out_of_hearts" size="lg" />
-            <motion.div
-              animate={{ scale: [1, 1.15, 1], rotate: [0, -4, 4, 0] }}
-              transition={{ repeat: Infinity, duration: 2 }}
-              className="w-12 h-12 rounded-2xl bg-rose-500/20 border border-rose-500/50 flex items-center justify-center text-rose-400 shadow-inner"
-            >
-              <Heart className="w-7 h-7 stroke-rose-400 opacity-60" />
-            </motion.div>
+          {/* Header Illustration */}
+          <div className="flex justify-center items-center pt-1">
+            <img
+              src={assetUrl('/assets/ui/empty-no-hearts.png')}
+              alt="Hết tim"
+              className="w-28 h-28 object-contain drop-shadow-lg select-none pointer-events-none"
+            />
           </div>
 
           <div className="space-y-1.5">
@@ -84,7 +80,7 @@ export const OutOfHeartsModal: React.FC<OutOfHeartsModalProps> = ({
                 className={cn(
                   'flex items-center justify-center gap-2 font-black',
                   canAfford
-                    ? 'bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-slate-950 shadow-[0_4px_0_0_#0891b2]'
+                    ? 'bg-cyan-500 hover:bg-cyan-400 text-slate-950 border-b-4 border-cyan-600 active:translate-y-1 active:border-b-0'
                     : 'opacity-50 cursor-not-allowed bg-slate-800 text-slate-400 border border-slate-700'
                 )}
                 onClick={() => {
@@ -105,7 +101,7 @@ export const OutOfHeartsModal: React.FC<OutOfHeartsModalProps> = ({
               variant="primary"
               size="lg"
               fullWidth
-              className="flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-black shadow-[0_4px_0_0_#b45309]"
+              className="flex items-center justify-center gap-2 bg-[#f59e0b] hover:bg-[#fbbf24] text-slate-950 font-black border-b-4 border-[#b45309] active:translate-y-1 active:border-b-0"
               onClick={() => {
                 sound.playClick();
                 onGoToPractice();

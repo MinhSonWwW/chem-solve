@@ -16,22 +16,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Vỏ protein và lõi chứa vật chất di truyền (DNA hoặc RNA)"
-        },
-        {
-          "id": "opt-b",
-          "label": "Màng tế bào, chất tế bào và nhân tế bào hoàn chỉnh"
-        },
-        {
-          "id": "opt-c",
           "label": "Thành tế bào cellulose và lục lạp quang hợp"
         },
         {
-          "id": "opt-d",
+          "id": "opt-b",
           "label": "Không bào lớn và ti thể tạo năng lượng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vỏ protein và lõi chứa vật chất di truyền (DNA hoặc RNA)"
+        },
+        {
+          "id": "opt-d",
+          "label": "Màng tế bào, chất tế bào và nhân tế bào hoàn chỉnh"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -184,22 +184,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Uống thật nhiều thuốc kháng sinh hàng ngày"
+          "label": "Tiêm vaccine (vắc-xin) phòng bệnh đúng lịch và đủ liều"
         },
         {
           "id": "opt-b",
-          "label": "Ngâm mình trong nước đá lạnh"
+          "label": "Uống thật nhiều thuốc kháng sinh hàng ngày"
         },
         {
           "id": "opt-c",
-          "label": "Tiêm vaccine (vắc-xin) phòng bệnh đúng lịch và đủ liều"
+          "label": "Ngâm mình trong nước đá lạnh"
         },
         {
           "id": "opt-d",
           "label": "Nhịn ăn để virus không có chất dinh dưỡng"
         }
       ],
-      "correctId": "opt-c"
+      "correctId": "opt-a"
     },
     "hints": [
       {

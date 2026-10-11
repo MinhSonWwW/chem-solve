@@ -16,22 +16,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Tầng đối lưu của khí quyển, toàn bộ thủy quyển và lớp đất mặt của thạch quyển"
+          "label": "Chỉ tính lớp nước mặt của các đại dương và sông hồ"
         },
         {
           "id": "opt-b",
-          "label": "Toàn bộ lõi Trái Đất và tầng bình lưu ngoài không gian vũ trụ"
-        },
-        {
-          "id": "opt-c",
           "label": "Chỉ bao gồm các cánh rừng nhiệt đới nằm trên đất liền"
         },
         {
+          "id": "opt-c",
+          "label": "Toàn bộ lõi Trái Đất và tầng bình lưu ngoài không gian vũ trụ"
+        },
+        {
           "id": "opt-d",
-          "label": "Chỉ tính lớp nước mặt của các đại dương và sông hồ"
+          "label": "Tầng đối lưu của khí quyển, toàn bộ thủy quyển và lớp đất mặt của thạch quyển"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -85,22 +85,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Rừng mưa nhiệt đới"
+          "label": "Hoang mạc và bán hoang mạc"
         },
         {
           "id": "opt-b",
-          "label": "Rừng lá kim phương Bắc (Taiga)"
+          "label": "Rừng mưa nhiệt đới"
         },
         {
           "id": "opt-c",
-          "label": "Đài nguyên hàn đới (Tundra)"
+          "label": "Rừng lá kim phương Bắc (Taiga)"
         },
         {
           "id": "opt-d",
-          "label": "Hoang mạc và bán hoang mạc"
+          "label": "Đài nguyên hàn đới (Tundra)"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -158,7 +158,7 @@
         },
         {
           "id": "opt-b",
-          "label": "Cây dẻ, phong, sồi có lá rộng bản rụng lá vào mùa đông"
+          "label": "Cây xương rồng và các loài cỏ bụi mọc rải rác"
         },
         {
           "id": "opt-c",
@@ -166,7 +166,7 @@
         },
         {
           "id": "opt-d",
-          "label": "Cây xương rồng và các loài cỏ bụi mọc rải rác"
+          "label": "Cây dẻ, phong, sồi có lá rộng bản rụng lá vào mùa đông"
         }
       ],
       "correctId": "opt-a"
@@ -223,22 +223,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Lá tiêu giảm hoặc biến thành gai, thân mọng nước và hệ rễ phát triển đâm rất sâu"
+          "label": "Hệ rễ thở mọc nhô ngược lên mặt đất để hấp thu khí oxy trong bùn lầy"
         },
         {
           "id": "opt-b",
-          "label": "Bản lá rất rộng, mỏng và có nhiều khí khổng để tăng cường thoát hơi nước"
-        },
-        {
-          "id": "opt-c",
           "label": "Thân cây gỗ cao lớn vượt tán có bạnh vè khổng lồ để giữ cây đứng vững"
         },
         {
+          "id": "opt-c",
+          "label": "Lá tiêu giảm hoặc biến thành gai, thân mọng nước và hệ rễ phát triển đâm rất sâu"
+        },
+        {
           "id": "opt-d",
-          "label": "Hệ rễ thở mọc nhô ngược lên mặt đất để hấp thu khí oxy trong bùn lầy"
+          "label": "Bản lá rất rộng, mỏng và có nhiều khí khổng để tăng cường thoát hơi nước"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -292,7 +292,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Rêu, địa y và các loài cỏ, cây bụi thân gỗ lùn bám sát mặt đất"
+          "label": "Cây cao su, cọ dầu và chuối rừng xanh tốt"
         },
         {
           "id": "opt-b",
@@ -304,10 +304,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Cây cao su, cọ dầu và chuối rừng xanh tốt"
+          "label": "Rêu, địa y và các loài cỏ, cây bụi thân gỗ lùn bám sát mặt đất"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -361,22 +361,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Vùng nước đứng (ao, hồ, đầm) và vùng nước chảy (sông, suối)"
-        },
-        {
-          "id": "opt-b",
-          "label": "Vùng nước ngầm sâu trong lòng đất và vùng tuyết tan đỉnh núi"
-        },
-        {
-          "id": "opt-c",
           "label": "Vùng nước mặn rạn san hô và vùng rừng ngập mặn ven biển"
         },
         {
-          "id": "opt-d",
+          "id": "opt-b",
+          "label": "Vùng nước đứng (ao, hồ, đầm) và vùng nước chảy (sông, suối)"
+        },
+        {
+          "id": "opt-c",
           "label": "Vùng nước lợ cửa sông và vùng biển khơi đại dương"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vùng nước ngầm sâu trong lòng đất và vùng tuyết tan đỉnh núi"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -434,15 +434,15 @@
         },
         {
           "id": "opt-b",
-          "label": "Vùng biển khơi xa xôi cách bờ hàng nghìn hải lí"
-        },
-        {
-          "id": "opt-c",
           "label": "Đáy vực thẳm đại dương tối tăm lạnh giá"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "Bãi cát nông ven biển có sóng đập liên tục"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vùng biển khơi xa xôi cách bờ hàng nghìn hải lí"
         }
       ],
       "correctId": "opt-a"
@@ -499,22 +499,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Phân bố theo vĩ độ địa lí từ xích đạo về hai cực và theo độ cao sườn núi do biến đổi nhiệt ẩm"
+          "label": "Chỉ phụ thuộc duy nhất vào hoạt động trồng rừng nhân tạo của con người"
         },
         {
           "id": "opt-b",
-          "label": "Phân bố hoàn toàn ngẫu nhiên và biến động hỗn loạn theo từng tháng trong năm"
+          "label": "Phân bố theo vĩ độ địa lí từ xích đạo về hai cực và theo độ cao sườn núi do biến đổi nhiệt ẩm"
         },
         {
           "id": "opt-c",
-          "label": "Chỉ phụ thuộc duy nhất vào hoạt động trồng rừng nhân tạo của con người"
+          "label": "Phân bố hoàn toàn ngẫu nhiên và biến động hỗn loạn theo từng tháng trong năm"
         },
         {
           "id": "opt-d",
           "label": "Chỉ phụ thuộc vào độ nghiêng của trục từ trường Trái Đất"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {

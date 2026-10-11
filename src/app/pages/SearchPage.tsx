@@ -12,6 +12,7 @@ import {
 import { Formula } from '@/design-system';
 import { searchChemicalData } from '@/features/search/searchEngine';
 import { sound } from '@/lib/audio';
+import { assetUrl } from '@/lib/utils';
 
 const QUICK_SEARCH_CHIPS = ['Tế bào', 'Quang hợp', 'Hệ tuần hoàn', 'Quần thể', 'NaOH', 'H2SO4', 'Mol', 'Vận tốc', 'Acid'];
 
@@ -80,10 +81,14 @@ export const SearchPage: React.FC = () => {
           </div>
 
           {totalResults === 0 && (
-            <div className="py-12 text-center space-y-2 bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] rounded-3xl">
-              <FlaskConical className="w-10 h-10 text-slate-600 mx-auto" />
-              <p className="text-sm font-bold text-slate-300">Không tìm thấy kết quả phù hợp</p>
-              <p className="text-xs text-slate-500 max-w-xs mx-auto">
+            <div className="py-8 px-4 text-center space-y-3 bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] rounded-3xl">
+              <img
+                src={assetUrl('/assets/ui/empty-search.png')}
+                alt="Không tìm thấy kết quả"
+                className="w-28 h-28 object-contain mx-auto drop-shadow-md select-none pointer-events-none"
+              />
+              <p className="text-sm font-bold text-slate-200">Không tìm thấy kết quả phù hợp</p>
+              <p className="text-xs text-slate-400 max-w-xs mx-auto">
                 Thử tìm theo công thức (vd: naoh, h2so4), tên chất (acid, base, oxide) hoặc tên bài học
               </p>
             </div>

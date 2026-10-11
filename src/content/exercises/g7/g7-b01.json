@@ -12,22 +12,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Quan sát và đặt câu hỏi"
-        },
-        {
-          "id": "b",
-          "label": "Làm thí nghiệm"
-        },
-        {
-          "id": "c",
           "label": "Viết báo cáo"
         },
         {
-          "id": "d",
+          "id": "b",
           "label": "Rút ra kết luận"
+        },
+        {
+          "id": "c",
+          "label": "Làm thí nghiệm"
+        },
+        {
+          "id": "d",
+          "label": "Quan sát và đặt câu hỏi"
         }
       ],
-      "correctId": "a"
+      "correctId": "d"
     },
     "hints": [
       {
@@ -284,14 +284,14 @@
         },
         {
           "id": "c",
-          "label": "Ống đong (cylinder đo)"
+          "label": "Đĩa thủy tinh"
         },
         {
           "id": "d",
-          "label": "Đĩa thủy tinh"
+          "label": "Ống đong (cylinder đo)"
         }
       ],
-      "correctId": "c"
+      "correctId": "d"
     },
     "hints": [
       {
@@ -404,11 +404,11 @@
       "options": [
         {
           "id": "a",
-          "label": "Hiện tượng vật lý (chỉ thay đổi hình dạng)"
+          "label": "Không có hiện tượng gì đặc biệt"
         },
         {
           "id": "b",
-          "label": "Hiện tượng hóa học (phản ứng hóa học xảy ra)"
+          "label": "Hiện tượng vật lý (chỉ thay đổi hình dạng)"
         },
         {
           "id": "c",
@@ -416,10 +416,10 @@
         },
         {
           "id": "d",
-          "label": "Không có hiện tượng gì đặc biệt"
+          "label": "Hiện tượng hóa học (phản ứng hóa học xảy ra)"
         }
       ],
-      "correctId": "b"
+      "correctId": "d"
     },
     "hints": [
       {
@@ -469,11 +469,11 @@
       "options": [
         {
           "id": "a",
-          "label": "Dùng miệng thổi tắt ngọn lửa"
+          "label": "Rót thêm cồn khi đèn đang cháy"
         },
         {
           "id": "b",
-          "label": "Rót thêm cồn khi đèn đang cháy"
+          "label": "Dùng nắp đậy để tắt ngọn lửa đèn cồn"
         },
         {
           "id": "c",
@@ -481,10 +481,10 @@
         },
         {
           "id": "d",
-          "label": "Dùng nắp đậy để tắt ngọn lửa đèn cồn"
+          "label": "Dùng miệng thổi tắt ngọn lửa"
         }
       ],
-      "correctId": "d"
+      "correctId": "b"
     },
     "hints": [
       {
@@ -617,22 +617,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Cho cùng lượng đường vào 2 cốc nước: 1 cốc lạnh, 1 cốc nóng. So sánh thời gian tan."
-        },
-        {
-          "id": "b",
           "label": "Cho lượng đường khác nhau vào 2 cốc nước có cùng nhiệt độ."
         },
         {
+          "id": "b",
+          "label": "Hỏi giáo viên xem giả thuyết có đúng không."
+        },
+        {
           "id": "c",
-          "label": "Cho đường vào 1 cốc nước nóng và quan sát."
+          "label": "Cho cùng lượng đường vào 2 cốc nước: 1 cốc lạnh, 1 cốc nóng. So sánh thời gian tan."
         },
         {
           "id": "d",
-          "label": "Hỏi giáo viên xem giả thuyết có đúng không."
+          "label": "Cho đường vào 1 cốc nước nóng và quan sát."
         }
       ],
-      "correctId": "a"
+      "correctId": "c"
     },
     "hints": [
       {
@@ -658,7 +658,7 @@
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Đáp án A: Cùng lượng đường, cùng lượng nước, chỉ khác nhiệt độ → Đối chứng chuẩn."
+        "body": "Đáp án chính xác: Cùng lượng đường, cùng lượng nước, chỉ khác nhiệt độ → Đối chứng chuẩn."
       }
     ],
     "finalSolution": "Cùng lượng đường, cùng thể tích nước, chỉ khác nhiệt độ (1 lạnh, 1 nóng). So sánh thời gian tan.",

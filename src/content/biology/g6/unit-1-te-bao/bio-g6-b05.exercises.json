@@ -177,22 +177,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Vết trầy xước ngoài da sau vài ngày tự lành lại và tạo lớp da non mới"
-        },
-        {
-          "id": "opt-b",
           "label": "Mắt chớp liên tục khi có bụi bay vào"
         },
         {
+          "id": "opt-b",
+          "label": "Tim đập nhanh hơn khi chạy nhanh"
+        },
+        {
           "id": "opt-c",
-          "label": "Cơ thể run lên khi trời chuyển lạnh"
+          "label": "Vết trầy xước ngoài da sau vài ngày tự lành lại và tạo lớp da non mới"
         },
         {
           "id": "opt-d",
-          "label": "Tim đập nhanh hơn khi chạy nhanh"
+          "label": "Cơ thể run lên khi trời chuyển lạnh"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -250,18 +250,18 @@
         },
         {
           "id": "opt-b",
-          "label": "Tế bào động vật luôn phân chia tạo 4 tế bào con"
+          "label": "Tế bào thực vật hình thành vách ngăn từ giữa ra ngoài, còn tế bào động vật màng sinh chất thắt lại ở giữa"
         },
         {
           "id": "opt-c",
-          "label": "Tế bào thực vật hình thành vách ngăn từ giữa ra ngoài, còn tế bào động vật màng sinh chất thắt lại ở giữa"
+          "label": "Tế bào động vật luôn phân chia tạo 4 tế bào con"
         },
         {
           "id": "opt-d",
           "label": "Tế bào thực vật không thể phân chia tế bào"
         }
       ],
-      "correctId": "opt-c"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -287,7 +287,7 @@
       {
         "kind": "answer",
         "title": "Chọn đáp án đúng",
-        "body": "Đáp án A mô tả chính xác sự khác biệt."
+        "body": "Đáp án chính xác mô tả chính xác sự khác biệt."
       }
     ],
     "finalSolution": "Ở tế bào thực vật, do có thành tế bào cellulose cứng cáp nên hình thành vách ngăn chia đôi; ở tế bào động vật màng sinh chất thắt lại ở giữa để tách thành 2 tế bào con.",

@@ -3,23 +3,57 @@
     "id": "bio-g6-b23-q01",
     "lessonId": "bio-g6-b23",
     "sgkBaiSo": 38,
-    "skillIds": ["bio-da-dang-sinh-hoc"],
+    "skillIds": [
+      "bio-da-dang-sinh-hoc"
+    ],
     "difficulty": 1,
     "prompt": "Phân loại các hành động sau vào hai nhóm: 'Hành động bảo vệ đa dạng sinh học' và 'Hành vi phá hoại đa dạng sinh học':",
-    "knowledge": ["bio-da-dang-sinh-hoc"],
+    "knowledge": [
+      "bio-da-dang-sinh-hoc"
+    ],
     "answer": {
       "kind": "sort",
       "buckets": [
-        { "id": "b-protect", "label": "Hành động bảo vệ đa dạng sinh học" },
-        { "id": "b-destroy", "label": "Hành vi phá hoại đa dạng sinh học" }
+        {
+          "id": "b-protect",
+          "label": "Hành động bảo vệ đa dạng sinh học"
+        },
+        {
+          "id": "b-destroy",
+          "label": "Hành vi phá hoại đa dạng sinh học"
+        }
       ],
       "items": [
-        { "id": "it-1", "label": "Tích cực trồng cây gây rừng phủ xanh đất trống đồi trọc", "bucketId": "b-protect" },
-        { "id": "it-2", "label": "Thành lập và bảo vệ các vườn quốc gia, khu bảo tồn thiên nhiên", "bucketId": "b-protect" },
-        { "id": "it-3", "label": "Tuyên truyền nói không với việc tiêu thụ thịt thú rừng và động vật hoang dã", "bucketId": "b-protect" },
-        { "id": "it-4", "label": "Đốt phá rừng tự nhiên bừa bãi để làm nương rẫy", "bucketId": "b-destroy" },
-        { "id": "it-5", "label": "Sử dụng kích điện và chất độc để đánh bắt thủy hải sản", "bucketId": "b-destroy" },
-        { "id": "it-6", "label": "Săn bẫy trộm và buôn bán trái phép ngà voi, vảy tê tê", "bucketId": "b-destroy" }
+        {
+          "id": "it-1",
+          "label": "Tích cực trồng cây gây rừng phủ xanh đất trống đồi trọc",
+          "bucketId": "b-protect"
+        },
+        {
+          "id": "it-2",
+          "label": "Thành lập và bảo vệ các vườn quốc gia, khu bảo tồn thiên nhiên",
+          "bucketId": "b-protect"
+        },
+        {
+          "id": "it-3",
+          "label": "Tuyên truyền nói không với việc tiêu thụ thịt thú rừng và động vật hoang dã",
+          "bucketId": "b-protect"
+        },
+        {
+          "id": "it-4",
+          "label": "Đốt phá rừng tự nhiên bừa bãi để làm nương rẫy",
+          "bucketId": "b-destroy"
+        },
+        {
+          "id": "it-5",
+          "label": "Sử dụng kích điện và chất độc để đánh bắt thủy hải sản",
+          "bucketId": "b-destroy"
+        },
+        {
+          "id": "it-6",
+          "label": "Săn bẫy trộm và buôn bán trái phép ngà voi, vảy tê tê",
+          "bucketId": "b-destroy"
+        }
       ]
     },
     "hints": [
@@ -61,19 +95,35 @@
     "id": "bio-g6-b23-q02",
     "lessonId": "bio-g6-b23",
     "sgkBaiSo": 38,
-    "skillIds": ["bio-da-dang-sinh-hoc"],
+    "skillIds": [
+      "bio-da-dang-sinh-hoc"
+    ],
     "difficulty": 1,
     "prompt": "Mục đích cốt lõi của việc ban hành cuốn 'Sách Đỏ' (Red Data Book) ở Việt Nam và trên thế giới là gì?",
-    "knowledge": ["bio-da-dang-sinh-hoc"],
+    "knowledge": [
+      "bio-da-dang-sinh-hoc"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Liệt kê và cảnh báo các loài sinh vật quý hiếm đang có nguy cơ bị tuyệt chủng để có biện pháp bảo vệ kịp thời" },
-        { "id": "opt-b", "label": "Giới thiệu bảng giá thương mại của các loài động vật hoang dã" },
-        { "id": "opt-c", "label": "Hướng dẫn các món ăn ngon chế biến từ thú rừng" },
-        { "id": "opt-d", "label": "Tổng hợp các mẹo đặt bẫy săn bắt muông thú hiệu quả nhất" }
+        {
+          "id": "opt-a",
+          "label": "Giới thiệu bảng giá thương mại của các loài động vật hoang dã"
+        },
+        {
+          "id": "opt-b",
+          "label": "Hướng dẫn các món ăn ngon chế biến từ thú rừng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Liệt kê và cảnh báo các loài sinh vật quý hiếm đang có nguy cơ bị tuyệt chủng để có biện pháp bảo vệ kịp thời"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tổng hợp các mẹo đặt bẫy săn bắt muông thú hiệu quả nhất"
+        }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -114,10 +164,14 @@
     "id": "bio-g6-b23-q03",
     "lessonId": "bio-g6-b23",
     "sgkBaiSo": 38,
-    "skillIds": ["bio-da-dang-sinh-hoc"],
+    "skillIds": [
+      "bio-da-dang-sinh-hoc"
+    ],
     "difficulty": 1,
     "prompt": "Ghép nối từng loài sinh vật đặc hữu, quý hiếm của Việt Nam (cột bên trái) với đúng nhóm phân loại hoặc danh hiệu biểu tượng của nó (cột bên phải):",
-    "knowledge": ["bio-da-dang-sinh-hoc"],
+    "knowledge": [
+      "bio-da-dang-sinh-hoc"
+    ],
     "answer": {
       "kind": "match",
       "pairs": [
@@ -174,19 +228,39 @@
     "id": "bio-g6-b23-q04",
     "lessonId": "bio-g6-b23",
     "sgkBaiSo": 38,
-    "skillIds": ["bio-da-dang-sinh-hoc"],
+    "skillIds": [
+      "bio-da-dang-sinh-hoc"
+    ],
     "difficulty": 2,
     "prompt": "Những nguyên nhân chủ yếu nào sau đây đang trực tiếp làm suy giảm nghiêm trọng tính đa dạng sinh học trên Trái Đất (chọn các phương án đúng)?",
-    "knowledge": ["bio-da-dang-sinh-hoc"],
+    "knowledge": [
+      "bio-da-dang-sinh-hoc"
+    ],
     "answer": {
       "kind": "mcq-multi",
       "options": [
-        { "id": "opt-a", "label": "Chặt phá và đốt rừng tự nhiên làm phá hủy sinh cảnh sống của sinh vật" },
-        { "id": "opt-b", "label": "Ô nhiễm môi trường nước, đất và không khí do chất thải công nghiệp và rác thải nhựa" },
-        { "id": "opt-c", "label": "Săn bắt, bẫy trộm và buôn bán trái phép các loài động vật hoang dã" },
-        { "id": "opt-d", "label": "Trồng thêm nhiều cây xanh và bảo tồn các vườn quốc gia nguyên vẹn" }
+        {
+          "id": "opt-a",
+          "label": "Chặt phá và đốt rừng tự nhiên làm phá hủy sinh cảnh sống của sinh vật"
+        },
+        {
+          "id": "opt-b",
+          "label": "Ô nhiễm môi trường nước, đất và không khí do chất thải công nghiệp và rác thải nhựa"
+        },
+        {
+          "id": "opt-c",
+          "label": "Săn bắt, bẫy trộm và buôn bán trái phép các loài động vật hoang dã"
+        },
+        {
+          "id": "opt-d",
+          "label": "Trồng thêm nhiều cây xanh và bảo tồn các vườn quốc gia nguyên vẹn"
+        }
       ],
-      "correctIds": ["opt-a", "opt-b", "opt-c"]
+      "correctIds": [
+        "opt-a",
+        "opt-b",
+        "opt-c"
+      ]
     },
     "hints": [
       {
@@ -227,10 +301,14 @@
     "id": "bio-g6-b23-q05",
     "lessonId": "bio-g6-b23",
     "sgkBaiSo": 38,
-    "skillIds": ["bio-da-dang-sinh-hoc"],
+    "skillIds": [
+      "bio-da-dang-sinh-hoc"
+    ],
     "difficulty": 2,
     "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về đa dạng sinh học:",
-    "knowledge": ["bio-da-dang-sinh-hoc"],
+    "knowledge": [
+      "bio-da-dang-sinh-hoc"
+    ],
     "answer": {
       "kind": "true-false",
       "statements": [

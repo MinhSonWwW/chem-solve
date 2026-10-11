@@ -33,6 +33,7 @@ import {
 import { detectWeakTopics, type WeakTopicReport } from '@/engine/review/weakTopics';
 import { Button } from '@/design-system';
 import { sound } from '@/lib/audio';
+import { assetUrl } from '@/lib/utils';
 import { getCurriculum, type Grade } from '@/content/curriculum';
 import { SKILLS, getSkillsByGrade, type Skill } from '@/content/skills';
 import { useActiveSubject } from '@/content/subjects';
@@ -441,6 +442,22 @@ export const ProgressPage: React.FC = () => {
             </div>
           </div>
         </div>
+
+        {completedGradeCount === 0 && (
+          <div className="p-4 rounded-2xl bg-[#131f24] border-2 border-[#2e4756] flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left relative z-10">
+            <img
+              src={assetUrl('/assets/ui/empty-no-progress.png')}
+              alt="Chưa có tiến độ"
+              className="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-md shrink-0 select-none pointer-events-none"
+            />
+            <div className="space-y-1">
+              <h4 className="text-xs font-black text-slate-200">Bạn chưa bắt đầu học Lớp {selectedGrade}</h4>
+              <p className="text-[11px] text-slate-400 leading-relaxed">
+                Nhấn "Mở bản đồ học Lớp {selectedGrade}" để làm bài đầu tiên và tích lũy XP cùng đá quý!
+              </p>
+            </div>
+          </div>
+        )}
 
         {/* Quick Action Navigation Buttons */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1 relative z-10">

@@ -17,21 +17,34 @@ import {
   FlaskConical,
   Crown,
   Sliders,
-  Lock,
-  Check,
   Sparkles,
   Medal,
+  Check,
+  Lock,
+  LogOut,
+  LogIn,
+  UserCheck,
+  Mic,
+  Vibrate,
+  Compass,
 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { useAuthStore } from '@/features/auth/useAuthStore';
 import { useUserStore } from '@/features/gamification/useUserStore';
-import { Button, Streak, XPBadge, Heart, GemBadge, Mascot, type MascotState } from '@/design-system';
+import { Button, Streak, XPBadge, Heart, GemBadge, Mascot, type MascotState, ThemeToggle } from '@/design-system';
 import { ACHIEVEMENTS } from '@/config/achievements';
 import { getLevelInfo, GAMIFICATION } from '@/config/gamification';
 import { sound } from '@/lib/audio';
+import { haptic } from '@/lib/haptic';
+import { mascotVoice } from '@/lib/mascotVoice';
+import { WelcomeOnboardingTour } from '@/features/onboarding';
+import { assetUrl } from '@/lib/utils';
 
 interface AchievementMeta {
   tier: 'bronze' | 'silver' | 'gold' | 'diamond' | 'emerald' | 'ruby' | 'amethyst' | 'mythic';
   tierLabel: string;
   icon: React.ElementType;
+  image?: string;
   gradient: string;
   border: string;
   shadow: string;
@@ -43,6 +56,7 @@ const ACHIEVEMENT_METAS: Record<string, AchievementMeta> = {
     tier: 'bronze',
     tierLabel: 'Huy Chương Đồng',
     icon: Rocket,
+    image: '/assets/icons/achievement-first-lesson.png',
     gradient: 'from-amber-500 via-amber-600 to-amber-700',
     border: 'border-amber-300/80',
     shadow: '#78350f',
@@ -52,6 +66,7 @@ const ACHIEVEMENT_METAS: Record<string, AchievementMeta> = {
     tier: 'silver',
     tierLabel: 'Huy Chương Bạc',
     icon: Zap,
+    image: '/assets/icons/achievement-streak-3.png',
     gradient: 'from-slate-100 via-slate-200 to-slate-400',
     border: 'border-white',
     shadow: '#475569',
@@ -61,6 +76,7 @@ const ACHIEVEMENT_METAS: Record<string, AchievementMeta> = {
     tier: 'gold',
     tierLabel: 'Huy Chương Vàng',
     icon: Flame,
+    image: '/assets/icons/achievement-combo-master.png',
     gradient: 'from-amber-300 via-yellow-400 to-amber-500',
     border: 'border-yellow-100',
     shadow: '#b45309',
@@ -70,6 +86,7 @@ const ACHIEVEMENT_METAS: Record<string, AchievementMeta> = {
     tier: 'diamond',
     tierLabel: 'Kim Cương Hoàn Hảo',
     icon: Gem,
+    image: '/assets/icons/achievement-perfect-run.png',
     gradient: 'from-cyan-200 via-sky-300 to-blue-500',
     border: 'border-cyan-100',
     shadow: '#0369a1',
@@ -79,6 +96,7 @@ const ACHIEVEMENT_METAS: Record<string, AchievementMeta> = {
     tier: 'emerald',
     tierLabel: 'Ngọc Lục Chiến Binh',
     icon: Scale,
+    image: '/assets/icons/achievement-mol-warrior.png',
     gradient: 'from-emerald-300 via-emerald-400 to-teal-600',
     border: 'border-emerald-100',
     shadow: '#065f46',
@@ -88,6 +106,7 @@ const ACHIEVEMENT_METAS: Record<string, AchievementMeta> = {
     tier: 'ruby',
     tierLabel: 'Hồng Ngọc Cân Bằng',
     icon: Target,
+    image: '/assets/icons/achievement-equation-hunter.png',
     gradient: 'from-rose-300 via-rose-400 to-rose-600',
     border: 'border-rose-100',
     shadow: '#9f1239',
@@ -97,6 +116,7 @@ const ACHIEVEMENT_METAS: Record<string, AchievementMeta> = {
     tier: 'amethyst',
     tierLabel: 'Thạch Anh Chuyên Gia',
     icon: FlaskConical,
+    image: '/assets/icons/achievement-acid-base-expert.png',
     gradient: 'from-purple-300 via-fuchsia-400 to-purple-600',
     border: 'border-purple-100',
     shadow: '#6b21a8',
@@ -106,6 +126,7 @@ const ACHIEVEMENT_METAS: Record<string, AchievementMeta> = {
     tier: 'mythic',
     tierLabel: 'Vương Miện Huyền Thoại',
     icon: Crown,
+    image: '/assets/icons/achievement-level-5.png',
     gradient: 'from-yellow-200 via-amber-400 to-orange-500',
     border: 'border-yellow-100',
     shadow: '#9a3412',
@@ -138,7 +159,13 @@ export const ProfilePage: React.FC = () => {
     importData,
   } = useUserStore();
 
+  const navigate = useNavigate();
+  const { user, isAuthenticated, logout } = useAuthStore();
+
   const [reducedMotion, setReducedMotion] = useState(false);
+  const [voiceEnabled, setVoiceEnabled] = useState(mascotVoice.isEnabled());
+  const [hapticEnabled, setHapticEnabled] = useState(haptic.isEnabled());
+  const [showOnboardingModal, setShowOnboardingModal] = useState(false);
   const [importStatus, setImportStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [avatarState, setAvatarState] = useState<MascotState>('happy');
   const [achFilter, setAchFilter] = useState<'all' | 'unlocked' | 'locked'>('all');
@@ -196,6 +223,66 @@ export const ProfilePage: React.FC = () => {
 
   return (
     <div className="space-y-5 pb-8">
+      {/* 0. Account Status & Sync Banner */}
+      {isAuthenticated && user ? (
+        <div className="p-4 rounded-3xl bg-[#18272f] border-2 border-emerald-500/40 shadow-[0_4px_0_0_#064e3b] flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-emerald-500/20 border-2 border-emerald-400/50 flex items-center justify-center text-emerald-400 font-bold shrink-0">
+              <UserCheck className="w-5 h-5" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="text-sm font-black text-white">{user.displayName || 'Nhà Khoa Học'}</span>
+                <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+                  {user.provider === 'google' ? 'Google' : user.provider === 'facebook' ? 'Facebook' : user.provider === 'github' ? 'GitHub' : 'Đã xác thực'}
+                </span>
+              </div>
+              <span className="text-xs text-slate-400 font-medium">{user.email}</span>
+            </div>
+          </div>
+          <button
+            onClick={() => {
+              sound.playClick();
+              logout();
+            }}
+            className="px-3.5 py-2 rounded-xl bg-[#20333d] hover:bg-[#ff4b4b]/20 hover:border-[#ff4b4b]/50 border-2 border-[#2e4756] text-xs font-bold text-slate-300 hover:text-[#ff4b4b] flex items-center gap-1.5 transition-all self-start sm:self-auto cursor-pointer shadow-[0_2px_0_0_#131f24] active:translate-y-[2px] active:shadow-none"
+            title="Đăng xuất khỏi tài khoản"
+          >
+            <LogOut className="w-3.5 h-3.5" />
+            <span>Đăng xuất</span>
+          </button>
+        </div>
+      ) : (
+        <div className="p-4 rounded-3xl bg-gradient-to-r from-[#18272f] via-[#1a2e3b] to-[#18272f] border-2 border-[#0ea5e9]/50 shadow-[0_4px_0_0_#0284c7]/40 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-[#0ea5e9] to-[#00cd9c] flex items-center justify-center text-white shrink-0 shadow-lg shadow-[#0ea5e9]/20">
+              <Sparkles className="w-5 h-5 animate-pulse" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="text-sm font-black text-white">Chế độ Học viên Tự do (Guest)</span>
+                <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40">
+                  Chưa đăng nhập
+                </span>
+              </div>
+              <p className="text-xs text-slate-300 font-medium mt-0.5">
+                Đăng nhập để đồng bộ tiến trình học, lưu huy chương và thi đua cùng bạn bè!
+              </p>
+            </div>
+          </div>
+          <button
+            onClick={() => {
+              sound.playClick();
+              navigate('/auth');
+            }}
+            className="px-4 py-2.5 rounded-2xl bg-gradient-to-r from-[#0ea5e9] to-[#0284c7] hover:from-[#38bdf8] hover:to-[#0ea5e9] text-white text-xs font-black flex items-center justify-center gap-2 transition-all shadow-[0_3px_0_0_#0369a1] active:translate-y-[3px] active:shadow-none cursor-pointer shrink-0"
+          >
+            <LogIn className="w-4 h-4" />
+            <span>ĐĂNG NHẬP / ĐĂNG KÝ</span>
+          </button>
+        </div>
+      )}
+
       {/* 1. Profile Header */}
       <div className="p-5 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] space-y-4">
         <div className="flex items-center gap-4">
@@ -206,7 +293,9 @@ export const ProfilePage: React.FC = () => {
             <div className="inline-block px-2.5 py-0.5 rounded-full bg-[#0ea5e9]/15 text-[#38bdf8] font-extrabold text-[10px] uppercase tracking-wider mb-1 border border-[#0ea5e9]/30">
               Cấp {levelInfo.level} · Nhà Hóa Học Chem-Solve
             </div>
-            <h1 className="text-lg font-black text-slate-100 truncate">Học viên xuất sắc</h1>
+            <h1 className="text-lg font-black text-slate-100 truncate">
+              {isAuthenticated && user?.displayName ? user.displayName : 'Học viên xuất sắc'}
+            </h1>
             <div className="flex flex-wrap items-center gap-2 mt-1.5">
               <Streak days={streak} />
               <XPBadge amount={xp} />
@@ -387,7 +476,7 @@ export const ProfilePage: React.FC = () => {
                         }
                       }}
                       title={isUnlocked ? 'Nhấn để nghe âm thanh vinh danh!' : `${currentProgress}/${ach.maxProgress}`}
-                      className={`w-12 h-12 rounded-2xl flex items-center justify-center relative transition-transform group-hover:scale-105 active:scale-95 cursor-pointer border-2 shrink-0 ${
+                      className={`w-13 h-13 rounded-2xl flex items-center justify-center relative transition-transform group-hover:scale-105 active:scale-95 cursor-pointer border-2 shrink-0 overflow-hidden ${
                         isUnlocked
                           ? `bg-gradient-to-b ${meta.gradient} ${meta.border} ${meta.textColor} shadow-[0_4px_0_0_${meta.shadow},inset_0_1.5px_0_rgba(255,255,255,0.7)]`
                           : percent > 0
@@ -395,13 +484,25 @@ export const ProfilePage: React.FC = () => {
                           : 'bg-[#121b21] border-[#253946] text-slate-500 shadow-[0_4px_0_0_#0a1014]'
                       }`}
                     >
-                      <AchIcon className="w-6 h-6 stroke-[2.2]" />
+                      {meta.image ? (
+                        <img
+                          src={assetUrl(meta.image)}
+                          alt={ach.title}
+                          className={`w-full h-full object-cover select-none pointer-events-none transition-all ${
+                            isUnlocked
+                              ? 'filter-none drop-shadow-md'
+                              : 'grayscale opacity-40 contrast-75'
+                          }`}
+                        />
+                      ) : (
+                        <AchIcon className="w-6 h-6 stroke-[2.2]" />
+                      )}
                       {isUnlocked ? (
-                        <div className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-[#182a35] flex items-center justify-center text-white shadow-sm">
+                        <div className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-[#182a35] flex items-center justify-center text-white shadow-sm z-10">
                           <Check className="w-2.5 h-2.5 stroke-[3]" />
                         </div>
                       ) : percent === 0 ? (
-                        <div className="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-slate-800 border border-slate-600 flex items-center justify-center text-slate-400">
+                        <div className="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-slate-800 border border-slate-600 flex items-center justify-center text-slate-400 z-10">
                           <Lock className="w-2.5 h-2.5" />
                         </div>
                       ) : null}
@@ -481,6 +582,9 @@ export const ProfilePage: React.FC = () => {
           Cài đặt & Dữ liệu
         </h2>
         <div className="bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] rounded-2xl divide-y divide-[#2e4756]">
+          {/* Light / Dark Theme Mode Toggle */}
+          <ThemeToggle variant="switch" />
+
           {/* Sound toggle */}
           <div className="p-3.5 flex items-center justify-between">
             <div className="flex items-center gap-2.5">
@@ -510,6 +614,73 @@ export const ProfilePage: React.FC = () => {
             </button>
           </div>
 
+          {/* Mascot Voice Acting Toggle (Milestone M14) */}
+          <div className="p-3.5 flex items-center justify-between">
+            <div className="flex items-center gap-2.5">
+              <Mic className={`w-4 h-4 ${voiceEnabled ? 'text-purple-400' : 'text-slate-500'}`} />
+              <div>
+                <div className="text-xs font-semibold text-slate-200">
+                  Giọng nói linh vật Mascot
+                </div>
+                <div className="text-[11px] text-slate-400">
+                  Chỉ phát lời khích lệ khi đang làm bài học & luyện tập
+                </div>
+              </div>
+            </div>
+            <button
+              onClick={() => {
+                sound.playClick();
+                haptic.tap();
+                const nextVal = !voiceEnabled;
+                setVoiceEnabled(nextVal);
+                mascotVoice.setEnabled(nextVal);
+              }}
+              className={`w-12 h-6 rounded-full transition-colors relative cursor-pointer border-2 ${
+                voiceEnabled ? 'bg-purple-600 border-purple-400' : 'bg-[#131f24] border-[#2e4756]'
+              }`}
+            >
+              <div
+                className={`w-4 h-4 rounded-full bg-slate-100 absolute top-0.5 transition-all ${
+                  voiceEnabled ? 'right-0.5' : 'left-0.5'
+                }`}
+              />
+            </button>
+          </div>
+
+          {/* Haptic Vibration Toggle (Milestone M14) */}
+          <div className="p-3.5 flex items-center justify-between">
+            <div className="flex items-center gap-2.5">
+              <Vibrate className={`w-4 h-4 ${hapticEnabled ? 'text-amber-400' : 'text-slate-500'}`} />
+              <div>
+                <div className="text-xs font-semibold text-slate-200">
+                  Rung phản hồi xúc giác (Haptic)
+                </div>
+                <div className="text-[11px] text-slate-400">
+                  Rung nhẹ khi nhấn nút và làm bài trên điện thoại
+                </div>
+              </div>
+            </div>
+            <button
+              onClick={() => {
+                const nextVal = !hapticEnabled;
+                setHapticEnabled(nextVal);
+                haptic.setEnabled(nextVal);
+                if (nextVal) {
+                  haptic.correct();
+                }
+              }}
+              className={`w-12 h-6 rounded-full transition-colors relative cursor-pointer border-2 ${
+                hapticEnabled ? 'bg-amber-600 border-amber-400' : 'bg-[#131f24] border-[#2e4756]'
+              }`}
+            >
+              <div
+                className={`w-4 h-4 rounded-full bg-slate-100 absolute top-0.5 transition-all ${
+                  hapticEnabled ? 'right-0.5' : 'left-0.5'
+                }`}
+              />
+            </button>
+          </div>
+
           {/* Reduced Motion toggle */}
           <div className="p-3.5 flex items-center justify-between">
             <div className="flex items-center gap-2.5">
@@ -521,6 +692,7 @@ export const ProfilePage: React.FC = () => {
             <button
               onClick={() => {
                 sound.playClick();
+                haptic.tap();
                 setReducedMotion(!reducedMotion);
               }}
               className={`w-12 h-6 rounded-full transition-colors relative cursor-pointer border-2 ${
@@ -533,6 +705,33 @@ export const ProfilePage: React.FC = () => {
                 }`}
               />
             </button>
+          </div>
+
+          {/* Re-open Onboarding Tour from A-Z */}
+          <div className="p-3.5 flex items-center justify-between">
+            <div className="flex items-center gap-2.5">
+              <Compass className="w-4 h-4 text-cyan-400" />
+              <div>
+                <div className="text-xs font-semibold text-slate-200">
+                  Hướng dẫn tân thủ (Tour A-Z)
+                </div>
+                <div className="text-[11px] text-slate-400">
+                  Xem lại cách chọn môn, mở nốt, hồi tim và quà khởi nghiệp
+                </div>
+              </div>
+            </div>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => {
+                sound.playClick();
+                haptic.tap();
+                setShowOnboardingModal(true);
+              }}
+              className="text-xs shrink-0"
+            >
+              <span>Xem lại</span>
+            </Button>
           </div>
 
           {/* Export / Import Section */}
@@ -585,6 +784,12 @@ export const ProfilePage: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Welcome Onboarding Tour Modal */}
+      <WelcomeOnboardingTour
+        isOpen={showOnboardingModal}
+        onClose={() => setShowOnboardingModal(false)}
+      />
     </div>
   );
 };

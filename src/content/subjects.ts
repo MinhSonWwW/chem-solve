@@ -99,4 +99,60 @@ export function useActiveSubject() {
   return { subject, setSubject: changeSubject };
 }
 
+export type Grade = 6 | 7 | 8 | 9;
+
+export function getActiveGrade(): Grade {
+  if (typeof window === 'undefined') return 8;
+  const saved = localStorage.getItem('chem_active_grade');
+  const num = saved ? parseInt(saved, 10) : 8;
+  return ([6, 7, 8, 9].includes(num) ? num : 8) as Grade;
+}
+
+export function setActiveGrade(grade: Grade): void {
+  if (typeof window !== 'undefined') {
+    localStorage.setItem('chem_active_grade', String(grade));
+    window.dispatchEvent(new CustomEvent('chem_grade_changed', { detail: grade }));
+  }
+}
+
+export function useActiveGrade() {
+  const [grade, setGradeState] = useState<Grade>(getActiveGrade);
+
+  useEffect(() => {
+    const handler = (e: Event) => {
+      const detail = (e as CustomEvent<Grade>).detail;
+      if (detail) setGradeState(detail);
+      else setGradeState(getActiveGrade());
+    };
+    window.addEventListener('chem_grade_changed', handler);
+    window.addEventListener('storage', handler);
+    return () => {
+      window.removeEventListener('chem_grade_changed', handler);
+      window.removeEventListener('storage', handler);
+    };
+  }, []);
+
+  const changeGrade = (g: Grade) => {
+    setActiveGrade(g);
+    setGradeState(g);
+  };
+
+  return { grade, setGrade: changeGrade };
+}
+
+export function parseLessonSubjectAndGrade(lessonId?: string): { subject: SubjectId; grade: Grade } {
+  if (!lessonId) {
+    return { subject: getActiveSubject(), grade: getActiveGrade() };
+  }
+  const isPhysics = lessonId.startsWith('phy-');
+  const isBio = lessonId.startsWith('bio-');
+  const subject: SubjectId = isBio ? 'bio' : isPhysics ? 'physics' : 'chem';
+
+  const gradeMatch = lessonId.match(/g(\d)/);
+  const gradeNum = gradeMatch ? parseInt(gradeMatch[1], 10) : 8;
+  const grade: Grade = ([6, 7, 8, 9].includes(gradeNum) ? gradeNum : 8) as Grade;
+
+  return { subject, grade };
+}
+
 

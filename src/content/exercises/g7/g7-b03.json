@@ -11,23 +11,23 @@
       "kind": "mcq-single",
       "options": [
         {
-          "id": "opt-1",
+          "id": "opt-a",
           "label": "Na"
         },
         {
-          "id": "opt-2",
-          "label": "N"
-        },
-        {
-          "id": "opt-3",
+          "id": "opt-b",
           "label": "K"
         },
         {
-          "id": "opt-4",
+          "id": "opt-c",
           "label": "Ne"
+        },
+        {
+          "id": "opt-d",
+          "label": "N"
         }
       ],
-      "correctId": "opt-1"
+      "correctId": "opt-a"
     },
     "hints": [
       {
@@ -80,23 +80,23 @@
       "kind": "mcq-single",
       "options": [
         {
-          "id": "opt-1",
+          "id": "opt-a",
           "label": "Nitrogen (Nitơ)"
         },
         {
-          "id": "opt-2",
-          "label": "Hydrogen (Hiđro)"
+          "id": "opt-b",
+          "label": "Carbon (Cacbon)"
         },
         {
-          "id": "opt-3",
+          "id": "opt-c",
           "label": "Oxygen (Oxi)"
         },
         {
-          "id": "opt-4",
-          "label": "Carbon (Cacbon)"
+          "id": "opt-d",
+          "label": "Hydrogen (Hiđro)"
         }
       ],
-      "correctId": "opt-3"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -485,11 +485,11 @@
       "options": [
         {
           "id": "a",
-          "label": "Carbon (C)"
+          "label": "Calcium (Ca)"
         },
         {
           "id": "b",
-          "label": "Calcium (Ca)"
+          "label": "Chromium (Cr)"
         },
         {
           "id": "c",
@@ -497,10 +497,10 @@
         },
         {
           "id": "d",
-          "label": "Chromium (Cr)"
+          "label": "Carbon (C)"
         }
       ],
-      "correctId": "b"
+      "correctId": "a"
     },
     "hints": [
       {

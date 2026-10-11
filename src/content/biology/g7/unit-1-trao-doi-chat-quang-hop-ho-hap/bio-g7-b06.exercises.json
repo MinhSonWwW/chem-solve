@@ -16,22 +16,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Hàm lượng nước trong hạt"
-        },
-        {
-          "id": "opt-b",
-          "label": "Nồng độ khí CO2 xung quanh hạt"
-        },
-        {
-          "id": "opt-c",
           "label": "Độ dày của lớp vỏ trấu bảo vệ"
         },
         {
-          "id": "opt-d",
+          "id": "opt-b",
+          "label": "Hàm lượng nước trong hạt"
+        },
+        {
+          "id": "opt-c",
           "label": "Số lượng gai nhọn trên vỏ quả"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nồng độ khí CO2 xung quanh hạt"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -85,22 +85,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Kìm hãm hô hấp tế bào xuống mức tối thiểu để hạn chế tiêu hao chất dinh dưỡng"
+          "label": "Làm tăng khối lượng của nông sản lên gấp đôi để bán được giá"
         },
         {
           "id": "opt-b",
-          "label": "Kích thích cho nông sản tiếp tục quang hợp mạnh hơn trong kho kín"
+          "label": "Kìm hãm hô hấp tế bào xuống mức tối thiểu để hạn chế tiêu hao chất dinh dưỡng"
         },
         {
           "id": "opt-c",
-          "label": "Làm cho hạt giống nảy mầm thật nhanh ngay trong bao bì"
+          "label": "Kích thích cho nông sản tiếp tục quang hợp mạnh hơn trong kho kín"
         },
         {
           "id": "opt-d",
-          "label": "Làm tăng khối lượng của nông sản lên gấp đôi để bán được giá"
+          "label": "Làm cho hạt giống nảy mầm thật nhanh ngay trong bao bì"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -149,22 +149,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Do các hạt lúa tươi hô hấp tế bào mạnh mẽ và giải phóng nhiệt năng"
-        },
-        {
-          "id": "opt-b",
-          "label": "Do ánh nắng mặt trời ban ngày vẫn còn tích tụ lại bên trong vỏ trấu"
-        },
-        {
-          "id": "opt-c",
           "label": "Do phản ứng quang hợp của hạt lúa trong bóng tối tỏa nhiệt"
         },
         {
-          "id": "opt-d",
+          "id": "opt-b",
           "label": "Do hơi nóng từ nền gạch truyền ngược lên đống lúa"
+        },
+        {
+          "id": "opt-c",
+          "label": "Do ánh nắng mặt trời ban ngày vẫn còn tích tụ lại bên trong vỏ trấu"
+        },
+        {
+          "id": "opt-d",
+          "label": "Do các hạt lúa tươi hô hấp tế bào mạnh mẽ và giải phóng nhiệt năng"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -213,11 +213,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Bảo quản lạnh (nhiệt độ mát từ 1°C đến 5°C)"
+          "label": "Phơi thật khô dưới nắng to cho đến khi giòn vụn"
         },
         {
           "id": "opt-b",
-          "label": "Phơi thật khô dưới nắng to cho đến khi giòn vụn"
+          "label": "Đặt trong lò sấy nhiệt độ cao 80°C"
         },
         {
           "id": "opt-c",
@@ -225,10 +225,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Đặt trong lò sấy nhiệt độ cao 80°C"
+          "label": "Bảo quản lạnh (nhiệt độ mát từ 1°C đến 5°C)"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -277,22 +277,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Loại bỏ khí Oxygen (O2), kìm hãm hô hấp hiếu khí và ngăn chặn sự phát triển của vi sinh vật gây thối rữa"
-        },
-        {
-          "id": "opt-b",
           "label": "Làm cho bao bì nhẹ hơn giúp tiết kiệm chi phí vận chuyển"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Kích thích cho các tế bào thực phẩm tự nhân đôi làm tăng số lượng"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "Làm biến đổi thực phẩm thành thể khí dễ tiêu hóa hơn"
+        },
+        {
+          "id": "opt-d",
+          "label": "Loại bỏ khí Oxygen (O2), kìm hãm hô hấp hiếu khí và ngăn chặn sự phát triển của vi sinh vật gây thối rữa"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -345,11 +345,11 @@
         },
         {
           "id": "opt-b",
-          "label": "Rau sẽ tươi ngon và xanh đậm hơn gấp nhiều lần so với để ngăn mát"
+          "label": "Rau sẽ biến đổi hoàn toàn thành đường glucose có vị ngọt sắc"
         },
         {
           "id": "opt-c",
-          "label": "Rau sẽ biến đổi hoàn toàn thành đường glucose có vị ngọt sắc"
+          "label": "Rau sẽ tươi ngon và xanh đậm hơn gấp nhiều lần so với để ngăn mát"
         },
         {
           "id": "opt-d",
@@ -382,7 +382,7 @@
       {
         "kind": "answer",
         "title": "Chọn đáp án",
-        "body": "Đáp án A mô tả đúng hiện tượng dập nát khi để rau ở ngăn đá."
+        "body": "Đáp án chính xác mô tả đúng hiện tượng dập nát khi để rau ở ngăn đá."
       }
     ],
     "finalSolution": "Rau quả tươi chỉ nên bảo quản ở ngăn mát (1-5°C), không để ở ngăn đông vì sẽ làm vỡ màng tế bào.",
@@ -468,22 +468,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Vì CO2 là sản phẩm của hô hấp; nồng độ sản phẩm quá cao sẽ gây chuyển dịch cân bằng và ức chế hoạt tính của các enzym phân giải"
-        },
-        {
-          "id": "opt-b",
-          "label": "Vì CO2 phản ứng với nước tạo thành acid cực mạnh hòa tan hoàn toàn nông sản"
-        },
-        {
-          "id": "opt-c",
           "label": "Vì CO2 biến đổi thành chất diệp lục kích thích hạt nảy mầm"
         },
         {
-          "id": "opt-d",
+          "id": "opt-b",
+          "label": "Vì CO2 là sản phẩm của hô hấp; nồng độ sản phẩm quá cao sẽ gây chuyển dịch cân bằng và ức chế hoạt tính của các enzym phân giải"
+        },
+        {
+          "id": "opt-c",
           "label": "Vì CO2 đóng băng làm đông cứng các phân tử tế bào"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì CO2 phản ứng với nước tạo thành acid cực mạnh hòa tan hoàn toàn nông sản"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -509,7 +509,7 @@
       {
         "kind": "answer",
         "title": "Chọn đáp án",
-        "body": "Đáp án A giải thích chính xác cơ chế sinh hóa."
+        "body": "Đáp án chính xác giải thích chính xác cơ chế sinh hóa."
       }
     ],
     "finalSolution": "Nồng độ CO2 cao ức chế enzym hô hấp, giúp bảo quản nông sản không bị tiêu hao dinh dưỡng.",

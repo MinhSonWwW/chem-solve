@@ -1,10 +1,11 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { AlertTriangle, Lightbulb, Zap } from 'lucide-react';
+import { AlertTriangle, Lightbulb, Zap, Sparkles } from 'lucide-react';
 import { Mascot } from './Mascot';
 import { FeedbackBadge } from './FeedbackBadge';
 import { ReactionVisualizer, type ReactionEffectType } from './ReactionVisualizer';
 import { sound } from '@/lib/audio';
+import { haptic } from '@/lib/haptic';
 
 export interface PhysicsEffectData {
   type: 'energy-surge' | 'electric-spark' | 'optics-beam' | 'motion-burst';
@@ -18,6 +19,7 @@ export interface FeedbackSheetProps {
   solutionText?: string;
   explanation?: string;
   diagnosis?: string;
+  smartHint?: string;
   hints?: Array<{ level: 1 | 2; text: string }>;
   attemptsLeft?: number;
   reactionEffect?: {
@@ -51,6 +53,7 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
   solutionText,
   explanation,
   diagnosis,
+  smartHint,
   hints,
   attemptsLeft,
   reactionEffect,
@@ -65,9 +68,7 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
   const config = {
     correct: {
       sheetBorder: isPhysicsSheet ? 'border-t-2 border-[#f59e0b]' : 'border-t-2 border-[#00cd9c]',
-      topGlow: isPhysicsSheet
-        ? 'bg-gradient-to-r from-transparent via-[#f59e0b]/80 to-transparent shadow-[0_0_25px_rgba(245,158,11,0.7)]'
-        : 'bg-gradient-to-r from-transparent via-[#00cd9c]/70 to-transparent shadow-[0_0_20px_rgba(0,205,156,0.6)]',
+      topGlow: isPhysicsSheet ? 'bg-[#f59e0b]' : 'bg-[#00cd9c]',
       badgeType: 'check' as const,
       titleColor: isPhysicsSheet ? 'text-[#f59e0b]' : 'text-[#00cd9c]',
       title: 'CHÍNH XÁC!',
@@ -76,13 +77,13 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
         : 'Bạn đã nắm chắc kiến thức này (+10 XP)',
       mascot: 'celebrating' as const,
       btnStyle: isPhysicsSheet
-        ? 'bg-[#f59e0b] hover:bg-[#fbbf24] text-slate-950 border-b-4 border-[#b45309] shadow-[0_4px_16px_rgba(245,158,11,0.4)]'
-        : 'bg-[#00cd9c] hover:bg-[#00e6aa] text-[#131f24] border-b-4 border-[#009b76] shadow-[0_4px_16px_rgba(0,205,156,0.35)]',
+        ? 'bg-[#f59e0b] hover:bg-[#fbbf24] text-slate-950 border-b-4 border-[#b45309] active:translate-y-1 active:border-b-0'
+        : 'bg-[#00cd9c] hover:bg-[#00e6aa] text-[#131f24] border-b-4 border-[#009b76] active:translate-y-1 active:border-b-0',
       btnLabel: 'TIẾP TỤC',
     },
     wrong: {
       sheetBorder: 'border-t-2 border-[#ff4b4b]',
-      topGlow: 'bg-gradient-to-r from-transparent via-[#ff4b4b]/70 to-transparent shadow-[0_0_20px_rgba(255,75,75,0.6)]',
+      topGlow: 'bg-[#ff4b4b]',
       badgeType: 'cross' as const,
       titleColor: 'text-[#ff4b4b]',
       title: 'CHƯA CHÍNH XÁC!',
@@ -90,35 +91,36 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
         ? `Còn ${attemptsLeft} lượt thử · Hãy đọc gợi ý bên dưới!`
         : 'Đọc kỹ gợi ý bên dưới để chuẩn bị làm lại ở cuối bài nhé!',
       mascot: 'wrong' as const,
-      btnStyle: 'bg-[#ff4b4b] hover:bg-[#ff5964] text-white border-b-4 border-[#c92a2a] shadow-[0_4px_16px_rgba(255,75,75,0.35)]',
+      btnStyle: 'bg-[#ff4b4b] hover:bg-[#ff5964] text-white border-b-4 border-[#c92a2a] active:translate-y-1 active:border-b-0',
       btnLabel: attemptsLeft && attemptsLeft > 0 ? 'THỬ LẠI' : 'ĐÃ HIỂU',
     },
     partial: {
       sheetBorder: 'border-t-2 border-[#ff9600]',
-      topGlow: 'bg-gradient-to-r from-transparent via-[#ff9600]/70 to-transparent shadow-[0_0_20px_rgba(255,150,0,0.6)]',
+      topGlow: 'bg-[#ff9600]',
       badgeType: 'warning' as const,
       titleColor: 'text-[#ff9600]',
       title: 'GẦN ĐÚNG RỒI!',
       subtitle: 'Hãy chỉnh sửa lại cho chính xác hơn',
       mascot: 'thinking' as const,
-      btnStyle: 'bg-[#ff9600] hover:bg-[#ffa726] text-[#131f24] border-b-4 border-[#cc7800] shadow-[0_4px_16px_rgba(255,150,0,0.35)]',
+      btnStyle: 'bg-[#ff9600] hover:bg-[#ffa726] text-[#131f24] border-b-4 border-[#cc7800] active:translate-y-1 active:border-b-0',
       btnLabel: 'SỬA LẠI',
     },
     revealed: {
       sheetBorder: 'border-t-2 border-[#ff9600]',
-      topGlow: 'bg-gradient-to-r from-transparent via-[#ff9600]/70 to-transparent shadow-[0_0_20px_rgba(255,150,0,0.6)]',
+      topGlow: 'bg-[#ff9600]',
       badgeType: 'hint' as const,
       titleColor: 'text-[#ff9600]',
       title: 'GỢI Ý TƯ DUY',
       subtitle: 'Đọc kỹ gợi ý để chuẩn bị thử sức lại ở cuối bài nhé!',
       mascot: 'thinking' as const,
-      btnStyle: 'bg-[#ff9600] hover:bg-[#ffa726] text-[#131f24] border-b-4 border-[#cc7800] shadow-[0_4px_16px_rgba(255,150,0,0.35)]',
+      btnStyle: 'bg-[#ff9600] hover:bg-[#ffa726] text-[#131f24] border-b-4 border-[#cc7800] active:translate-y-1 active:border-b-0',
       btnLabel: 'TIẾP TỤC',
     },
   }[status];
 
   const handleAction = () => {
     sound.playClick();
+    haptic.tap();
     if (
       (status === 'wrong' && attemptsLeft && attemptsLeft > 0 && onRetry) ||
       (status === 'partial' && onRetry)
@@ -166,8 +168,36 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
             </div>
           </div>
 
-          {/* Diagnosis (from commonMistakes) */}
-          {diagnosis && (
+          {/* AI Smart Step Hint Card (Milestone M11) */}
+          {smartHint && (
+            <motion.div
+              initial={{ scale: 0.96, opacity: 0, y: 8 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              className="p-3.5 sm:p-4 rounded-2xl bg-[#18272f] border-2 border-purple-500/50 shadow-[0_4px_0_0_#131f24] relative overflow-hidden space-y-2"
+            >
+              <div className="flex items-center justify-between gap-2">
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 rounded-lg bg-purple-500/25 border border-purple-400/50 flex items-center justify-center shrink-0 shadow-inner">
+                    <Sparkles className="w-3.5 h-3.5 text-purple-300" />
+                  </div>
+                  <span className="font-black text-xs text-purple-300 uppercase tracking-wide flex items-center gap-1.5">
+                    Gợi ý tư duy sư phạm
+                  </span>
+                </div>
+                {diagnosis && (
+                  <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-200 border border-purple-400/30 truncate max-w-[180px]">
+                    {diagnosis}
+                  </span>
+                )}
+              </div>
+              <div className="text-xs sm:text-[13px] text-purple-100/95 font-medium leading-relaxed pl-8">
+                {renderFormattedText(smartHint)}
+              </div>
+            </motion.div>
+          )}
+
+          {/* Fallback Diagnosis (from commonMistakes) if no smartHint */}
+          {!smartHint && diagnosis && (
             <div className="p-3.5 rounded-2xl bg-[#18272f] border-2 border-[#ce82ff]/30 shadow-[0_4px_0_0_#131f24] text-xs leading-relaxed space-y-1">
               <div className="font-black text-xs text-[#ce82ff] flex items-center gap-1.5 uppercase tracking-wide">
                 <AlertTriangle className="w-3.5 h-3.5" />
@@ -192,7 +222,7 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
             <motion.div
               initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              className="p-3 rounded-2xl bg-gradient-to-r from-amber-500/15 via-yellow-500/10 to-amber-500/15 border-2 border-amber-500/40 shadow-[0_0_20px_rgba(245,158,11,0.25)] relative overflow-hidden"
+              className="p-3.5 rounded-2xl bg-[#18272f] border-2 border-amber-500/50 shadow-[0_4px_0_0_#131f24] relative overflow-hidden"
             >
               {/* Animated energy sweep */}
               <motion.div

@@ -174,11 +174,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Từ thứ nhất 'Homo' là tên Chi (viết hoa) và từ thứ hai 'sapiens' là tên Loài (viết thường)"
+          "label": "Từ thứ nhất là tên Họ và từ thứ hai là tên Lớp"
         },
         {
           "id": "opt-b",
-          "label": "Từ thứ nhất là tên Giới và từ thứ hai là tên Bộ"
+          "label": "Từ thứ nhất 'Homo' là tên Chi (viết hoa) và từ thứ hai 'sapiens' là tên Loài (viết thường)"
         },
         {
           "id": "opt-c",
@@ -186,10 +186,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Từ thứ nhất là tên Họ và từ thứ hai là tên Lớp"
+          "label": "Từ thứ nhất là tên Giới và từ thứ hai là tên Bộ"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -243,11 +243,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Lớp (Class)"
+          "label": "Bộ (Order)"
         },
         {
           "id": "opt-b",
-          "label": "Bộ (Order)"
+          "label": "Loài (Species)"
         },
         {
           "id": "opt-c",
@@ -255,7 +255,7 @@
         },
         {
           "id": "opt-d",
-          "label": "Loài (Species)"
+          "label": "Lớp (Class)"
         }
       ],
       "correctId": "opt-c"

@@ -34,10 +34,12 @@ import {
   type BiologyVisualizerMode,
 } from '@/design-system';
 import { sound } from '@/lib/audio';
+import { haptic } from '@/lib/haptic';
+import { mascotVoice } from '@/lib/mascotVoice';
 import { loadExercisesForNode } from '@/content/contentLoader';
 import { loadSession, clearSession } from '@/engine/progress';
 import { GAMIFICATION } from '@/config/gamification';
-import { setActiveSubject } from '@/content/subjects';
+import { setActiveSubject, setActiveGrade, parseLessonSubjectAndGrade } from '@/content/subjects';
 import type { Exercise } from '@/content/schema/exercise';
 import type { Verdict } from '@/engine/checkers/types';
 
@@ -191,9 +193,10 @@ export const ExercisePage: React.FC = () => {
   const { lessonId = 'g8-b03', nodeId = 'n01' } = useParams();
   const [searchParams] = useSearchParams();
   const isPracticeMode = searchParams.get('mode') === 'practice';
-  const isPhysics = lessonId.startsWith('phy-');
-  const isBio = lessonId.startsWith('bio-');
-  const gradeNumber = lessonId.match(/(?:phy-|bio-)?g(\d)/)?.[1] ?? '8';
+  const { subject, grade } = parseLessonSubjectAndGrade(lessonId);
+  const isPhysics = subject === 'physics';
+  const isBio = subject === 'bio';
+  const gradeNumber = String(grade);
 
   const {
     hearts: _hearts,
@@ -230,7 +233,8 @@ export const ExercisePage: React.FC = () => {
   // ── Load exercises & resume ──
   useEffect(() => {
     let cancelled = false;
-    setActiveSubject(isBio ? 'bio' : isPhysics ? 'physics' : 'chem');
+    setActiveSubject(subject);
+    setActiveGrade(grade);
 
     async function init() {
       try {
@@ -281,11 +285,33 @@ export const ExercisePage: React.FC = () => {
           return copy;
         };
 
+        const shuffleExerciseOptions = (ex: Exercise): Exercise => {
+          if (ex.answer.kind === 'mcq-single') {
+            return {
+              ...ex,
+              answer: {
+                ...ex.answer,
+                options: shuffleArray(ex.answer.options),
+              },
+            };
+          }
+          if (ex.answer.kind === 'mcq-multi') {
+            return {
+              ...ex,
+              answer: {
+                ...ex.answer,
+                options: shuffleArray(ex.answer.options),
+              },
+            };
+          }
+          return ex;
+        };
+
         const sortedExercises = [
           ...shuffleArray(diff1),
           ...shuffleArray(diff2),
           ...shuffleArray(diff3),
-        ];
+        ].map(shuffleExerciseOptions);
 
         startSession(sessionKey, nodeId, sortedExercises, undefined, isPracticeMode);
         if (!cancelled) setLoadingState('ready');
@@ -638,26 +664,38 @@ export const ExercisePage: React.FC = () => {
     const updated = useUserStore.getState().sessionState;
     if (updated) {
       const q = updated.questions[updated.currentIndex];
+      const subj = isBio ? 'bio' : isPhysics ? 'physics' : 'chem';
+
       if (q?.status === 'correct') {
+        haptic.correct();
+        mascotVoice.speakCorrect(subj);
         setShowXpFly(true);
         setTimeout(() => setShowXpFly(false), 1200);
 
         if (updated.comboStreak >= 2) {
+          haptic.streak();
+          mascotVoice.speakStreak(subj);
           setComboCount(updated.comboStreak);
           setShowComboBanner(true);
-          setTimeout(() => setShowComboBanner(false), 2400);
+          setTimeout(() => setShowComboBanner(2400));
         }
-      } else if (!isPracticeMode && updated.hearts <= 0) {
-        // Failed session! Clear in-progress session so it doesn't linger
-        clearSession(sessionKey, nodeId).catch(console.error);
-        sound.playWrong();
-        setShowOutOfHeartsModal(true);
+      } else if (q?.status === 'wrong') {
+        haptic.wrong();
+        mascotVoice.speakWrong(subj);
+
+        if (!isPracticeMode && updated.hearts <= 0) {
+          // Failed session! Clear in-progress session so it doesn't linger
+          clearSession(sessionKey, nodeId).catch(console.error);
+          sound.playWrong();
+          setShowOutOfHeartsModal(true);
+        }
       }
     }
-  }, [currentQ, submitAnswer, isPracticeMode, lessonId, nodeId]);
+  }, [currentQ, submitAnswer, isPracticeMode, lessonId, nodeId, isBio, isPhysics]);
 
   const handleNext = useCallback(async () => {
     sound.playClick();
+    haptic.tap();
 
     if (!sessionState) return;
 
@@ -670,6 +708,9 @@ export const ExercisePage: React.FC = () => {
     if (isLast) {
       const result = await endSession();
       if (result) {
+        haptic.completion();
+        mascotVoice.speakCompletion(isBio ? 'bio' : isPhysics ? 'physics' : 'chem');
+
         if (isPracticeMode) {
           sound.playLevelUp();
           setShowHeartFly(true);
@@ -679,7 +720,7 @@ export const ExercisePage: React.FC = () => {
         setSessionResult(result);
       }
     }
-  }, [sessionState, dispatch, endSession, isPracticeMode]);
+  }, [sessionState, dispatch, endSession, isPracticeMode, isBio, isPhysics]);
 
   const handleRetry = useCallback(() => {
     sound.playClick();
@@ -688,7 +729,17 @@ export const ExercisePage: React.FC = () => {
 
   const handleExit = useCallback(() => {
     sound.playClick();
+    mascotVoice.stop();
+    setActiveSubject(subject);
+    setActiveGrade(grade);
     setShowQuitModal(true);
+  }, [subject, grade]);
+
+  // Ensure speech synthesis ceases immediately whenever leaving exercise
+  useEffect(() => {
+    return () => {
+      mascotVoice.stop();
+    };
   }, []);
 
   // ── ChemKeyboard handlers ──
@@ -775,7 +826,10 @@ export const ExercisePage: React.FC = () => {
         streak={streak}
         isPractice={isPracticeMode}
         recoveredHearts={recoveredHeartsCount}
+        subject={isBio ? 'bio' : isPhysics ? 'physics' : 'chem'}
         onContinue={() => {
+          setActiveSubject(subject);
+          setActiveGrade(grade);
           if (isPracticeMode) {
             navigate('/practice');
           } else {
@@ -809,7 +863,7 @@ export const ExercisePage: React.FC = () => {
     return null;
   }
 
-  // ── Diagnosis from commonMistakes ──
+  // ── Diagnosis & Smart Hint (Milestone M11) ──
   const diagnosis =
     lastVerdict?.status === 'incorrect' && lastVerdict.diagnosis
       ? lastVerdict.diagnosis
@@ -817,6 +871,11 @@ export const ExercisePage: React.FC = () => {
         ? exercise.commonMistakes?.find((m) => m.id === lastVerdict.mistakeId)
             ?.message
         : undefined;
+
+  const smartHint =
+    lastVerdict?.status === 'incorrect' && lastVerdict.smartHint
+      ? lastVerdict.smartHint
+      : undefined;
 
   const progressPercent = Math.round(
     ((sessionState.currentIndex + (isCompleted ? 1 : 0)) /
@@ -1175,6 +1234,7 @@ export const ExercisePage: React.FC = () => {
             explanation={status === 'correct' ? exercise.steps[exercise.steps.length - 1]?.body : undefined}
             hints={status === 'wrong' || status === 'revealed' ? exercise.hints : undefined}
             diagnosis={diagnosis}
+            smartHint={smartHint}
             attemptsLeft={attemptsLeft > 0 ? attemptsLeft : undefined}
             onContinue={handleNext}
             onRetry={handleRetry}
@@ -1203,7 +1263,11 @@ export const ExercisePage: React.FC = () => {
       <QuitModal
         isOpen={showQuitModal}
         onKeepLearning={() => setShowQuitModal(false)}
-        onQuit={() => navigate(isPracticeMode ? '/practice' : `/learn/${gradeNumber}`)}
+        onQuit={() => {
+          setActiveSubject(subject);
+          setActiveGrade(grade);
+          navigate(isPracticeMode ? '/practice' : `/learn/${gradeNumber}`);
+        }}
       />
 
       <OutOfHeartsModal
@@ -1221,6 +1285,8 @@ export const ExercisePage: React.FC = () => {
         }}
         onQuit={() => {
           setShowOutOfHeartsModal(false);
+          setActiveSubject(subject);
+          setActiveGrade(grade);
           navigate(`/learn/${gradeNumber}`);
         }}
       />

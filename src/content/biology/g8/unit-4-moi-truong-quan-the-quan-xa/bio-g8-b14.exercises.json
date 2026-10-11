@@ -16,22 +16,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Tập hợp các loài cá mè, cá chép, cua, ốc, rong đuôi chó và phù du sống trong một hồ nước tự nhiên"
+          "label": "Các con gà chọi, vịt bầu và chim bồ câu được nhốt chung trong một lồng ở chợ"
         },
         {
           "id": "opt-b",
-          "label": "Tập hợp các con hươu sao đang sinh sống trong khu bảo tồn thiên nhiên Cát Tiên"
+          "label": "Tập hợp các loài cá mè, cá chép, cua, ốc, rong đuôi chó và phù du sống trong một hồ nước tự nhiên"
         },
         {
           "id": "opt-c",
-          "label": "Các con gà chọi, vịt bầu và chim bồ câu được nhốt chung trong một lồng ở chợ"
+          "label": "Tập hợp các con hươu sao đang sinh sống trong khu bảo tồn thiên nhiên Cát Tiên"
         },
         {
           "id": "opt-d",
           "label": "Các cây thông ba lá cùng sinh trưởng trên một ngọn đồi ở cao nguyên Lâm Viên"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -85,22 +85,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Loài đặc trưng của quần xã"
-        },
-        {
-          "id": "opt-b",
           "label": "Loài ưu thế của quần xã"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Loài ngẫu nhiên của quần xã"
+        },
+        {
+          "id": "opt-c",
+          "label": "Loài đặc trưng của quần xã"
         },
         {
           "id": "opt-d",
           "label": "Loài sinh vật chủ của quần xã"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -154,7 +154,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Cây lúa nước (Oryza sativa)"
+          "label": "Cào cào ăn lá lúa"
         },
         {
           "id": "opt-b",
@@ -162,14 +162,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Cua đồng sống dưới bùn lúa"
+          "label": "Cây lúa nước (Oryza sativa)"
         },
         {
           "id": "opt-d",
-          "label": "Cào cào ăn lá lúa"
+          "label": "Cua đồng sống dưới bùn lúa"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -223,7 +223,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Cộng sinh (hai bên bắt buộc gắn bó chặt chẽ và cùng có lợi)"
+          "label": "Cạnh tranh sinh học (tranh giành chất dinh dưỡng trong đất)"
         },
         {
           "id": "opt-b",
@@ -235,10 +235,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Cạnh tranh sinh học (tranh giành chất dinh dưỡng trong đất)"
+          "label": "Cộng sinh (hai bên bắt buộc gắn bó chặt chẽ và cùng có lợi)"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -292,11 +292,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Hội sinh (phong lan có lợi, cây gỗ không có lợi cũng không bị hại)"
+          "label": "Cộng sinh (hai bên cùng bắt buộc có lợi như nhau)"
         },
         {
           "id": "opt-b",
-          "label": "Cộng sinh (hai bên cùng bắt buộc có lợi như nhau)"
+          "label": "Hợp tác ngẫu nhiên (hai loài không cần tiếp xúc vật lý)"
         },
         {
           "id": "opt-c",
@@ -304,10 +304,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Hợp tác ngẫu nhiên (hai loài không cần tiếp xúc vật lý)"
+          "label": "Hội sinh (phong lan có lợi, cây gỗ không có lợi cũng không bị hại)"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -361,11 +361,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Kí sinh (cây tơ hồng có lợi, cây chủ bị tổn hại nghiêm trọng)"
+          "label": "Hội sinh (cây tơ hồng chỉ bám nhờ mà không hại cây chủ)"
         },
         {
           "id": "opt-b",
-          "label": "Hội sinh (cây tơ hồng chỉ bám nhờ mà không hại cây chủ)"
+          "label": "Kí sinh (cây tơ hồng có lợi, cây chủ bị tổn hại nghiêm trọng)"
         },
         {
           "id": "opt-c",
@@ -376,7 +376,7 @@
           "label": "Cộng sinh trao đổi chất hữu cơ qua lại"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -430,22 +430,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Kìm hãm số lượng cá thể của các loài ở mức nhất định, đảm bảo trạng thái cân bằng sinh học"
+          "label": "Biến đổi cấu trúc quần xã từ đa dạng thành chỉ còn duy nhất một loài ưu thế tồn tại"
         },
         {
           "id": "opt-b",
-          "label": "Tiêu diệt hoàn toàn các loài sâu hại và động vật ăn thịt trong tự nhiên"
-        },
-        {
-          "id": "opt-c",
           "label": "Làm cho số lượng cá thể của tất cả các loài luôn tăng trưởng theo hàm số mũ"
         },
         {
+          "id": "opt-c",
+          "label": "Tiêu diệt hoàn toàn các loài sâu hại và động vật ăn thịt trong tự nhiên"
+        },
+        {
           "id": "opt-d",
-          "label": "Biến đổi cấu trúc quần xã từ đa dạng thành chỉ còn duy nhất một loài ưu thế tồn tại"
+          "label": "Kìm hãm số lượng cá thể của các loài ở mức nhất định, đảm bảo trạng thái cân bằng sinh học"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -507,11 +507,11 @@
         },
         {
           "id": "opt-c",
-          "label": "Sử dụng xung điện để đánh bắt cá tạp trong đầm nuôi tôm giống"
+          "label": "Bón thật nhiều phân đạm vô cơ để kích thích cây trồng phát triển nhanh"
         },
         {
           "id": "opt-d",
-          "label": "Bón thật nhiều phân đạm vô cơ để kích thích cây trồng phát triển nhanh"
+          "label": "Sử dụng xung điện để đánh bắt cá tạp trong đầm nuôi tôm giống"
         }
       ],
       "correctId": "opt-a"

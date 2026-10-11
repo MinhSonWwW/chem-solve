@@ -13,6 +13,7 @@ import {
   FeedbackSheet,
   ReactionVisualizer,
   type ReactionEffectType,
+  ThemeToggle,
 } from '@/design-system';
 import { sound } from '@/lib/audio';
 
@@ -50,17 +51,20 @@ export const DesignSystemPage: React.FC = () => {
   return (
     <div className="p-4 max-w-md mx-auto space-y-6 pb-24">
       {/* Top Header */}
-      <div className="flex items-center gap-3">
-        <button
-          onClick={() => navigate(-1)}
-          className="p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-slate-200"
-        >
-          <ArrowLeft className="w-5 h-5" />
-        </button>
-        <div>
-          <h1 className="text-xl font-black text-slate-100">Design System & Sound</h1>
-          <p className="text-xs text-slate-400">Mascot 9 States, Audio FX & Chemical Reactions</p>
+      <div className="flex items-center justify-between gap-3">
+        <div className="flex items-center gap-3">
+          <button
+            onClick={() => navigate(-1)}
+            className="p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-slate-200"
+          >
+            <ArrowLeft className="w-5 h-5" />
+          </button>
+          <div>
+            <h1 className="text-xl font-black text-slate-100">Design System & Sound</h1>
+            <p className="text-xs text-slate-400">Mascot 9 States, Audio FX & Chemical Reactions</p>
+          </div>
         </div>
+        <ThemeToggle variant="compact" />
       </div>
 
       {/* 1. Mascot Showcase (9 States) */}

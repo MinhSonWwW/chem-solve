@@ -3,19 +3,35 @@
     "id": "bio-g7-b08-q01",
     "lessonId": "bio-g7-b08",
     "sgkBaiSo": 28,
-    "skillIds": ["bio-trao-doi-khi"],
+    "skillIds": [
+      "bio-trao-doi-khi"
+    ],
     "difficulty": 1,
     "prompt": "Quá trình trao đổi khí giữa tế bào sinh vật và môi trường xung quanh diễn ra chủ yếu theo cơ chế vật lí nào?",
-    "knowledge": ["kb-bio-g7-khai-niem-trao-doi-khi"],
+    "knowledge": [
+      "kb-bio-g7-khai-niem-trao-doi-khi"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Cơ chế khuếch tán từ nơi có nồng độ cao sang nơi có nồng độ thấp" },
-        { "id": "opt-b", "label": "Cơ chế thẩm thấu ngược chiều nồng độ khí" },
-        { "id": "opt-c", "label": "Cơ chế bơm chủ động tiêu tốn hàng nghìn phân tử ATP" },
-        { "id": "opt-d", "label": "Cơ chế tĩnh điện hút các hạt bụi mang điện" }
+        {
+          "id": "opt-a",
+          "label": "Cơ chế thẩm thấu ngược chiều nồng độ khí"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cơ chế tĩnh điện hút các hạt bụi mang điện"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cơ chế bơm chủ động tiêu tốn hàng nghìn phân tử ATP"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cơ chế khuếch tán từ nơi có nồng độ cao sang nơi có nồng độ thấp"
+        }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -56,19 +72,35 @@
     "id": "bio-g7-b08-q02",
     "lessonId": "bio-g7-b08",
     "sgkBaiSo": 28,
-    "skillIds": ["bio-trao-doi-khi"],
+    "skillIds": [
+      "bio-trao-doi-khi"
+    ],
     "difficulty": 1,
     "prompt": "Bộ phận nào trên lá cây đảm nhận chức năng chủ yếu trong việc đóng mở để trao đổi khí và thoát hơi nước?",
-    "knowledge": ["kb-bio-g7-khi-khong-thuc-vat"],
+    "knowledge": [
+      "kb-bio-g7-khi-khong-thuc-vat"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Khí khổng ở biểu bì lá" },
-        { "id": "opt-b", "label": "Lớp sáp cutin trơn bóng" },
-        { "id": "opt-c", "label": "Mô xốp bên trong thịt lá" },
-        { "id": "opt-d", "label": "Mạch gỗ của gân lá" }
+        {
+          "id": "opt-a",
+          "label": "Mạch gỗ của gân lá"
+        },
+        {
+          "id": "opt-b",
+          "label": "Mô xốp bên trong thịt lá"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khí khổng ở biểu bì lá"
+        },
+        {
+          "id": "opt-d",
+          "label": "Lớp sáp cutin trơn bóng"
+        }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -104,19 +136,35 @@
     "id": "bio-g7-b08-q03",
     "lessonId": "bio-g7-b08",
     "sgkBaiSo": 28,
-    "skillIds": ["bio-trao-doi-khi"],
+    "skillIds": [
+      "bio-trao-doi-khi"
+    ],
     "difficulty": 2,
     "prompt": "Hiện tượng nào sau đây diễn ra khi hai tế bào hình hạt đậu của khí khổng 'no nước' (hút nhiều nước)?",
-    "knowledge": ["kb-bio-g7-khi-khong-thuc-vat"],
+    "knowledge": [
+      "kb-bio-g7-khi-khong-thuc-vat"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Thành mỏng căng phồng kéo thành dày uốn cong làm khe khí khổng mở rộng" },
-        { "id": "opt-b", "label": "Hai tế bào ép chặt khít vào nhau bịt kín hoàn toàn khe khí khổng" },
-        { "id": "opt-c", "label": "Khí khổng tự rụng khỏi bề mặt phiến lá" },
-        { "id": "opt-d", "label": "Thành dày duỗi thẳng làm tắc nghẽn hoàn toàn đường dẫn khí" }
+        {
+          "id": "opt-a",
+          "label": "Khí khổng tự rụng khỏi bề mặt phiến lá"
+        },
+        {
+          "id": "opt-b",
+          "label": "Thành mỏng căng phồng kéo thành dày uốn cong làm khe khí khổng mở rộng"
+        },
+        {
+          "id": "opt-c",
+          "label": "Thành dày duỗi thẳng làm tắc nghẽn hoàn toàn đường dẫn khí"
+        },
+        {
+          "id": "opt-d",
+          "label": "Hai tế bào ép chặt khít vào nhau bịt kín hoàn toàn khe khí khổng"
+        }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -157,19 +205,35 @@
     "id": "bio-g7-b08-q04",
     "lessonId": "bio-g7-b08",
     "sgkBaiSo": 28,
-    "skillIds": ["bio-trao-doi-khi"],
+    "skillIds": [
+      "bio-trao-doi-khi"
+    ],
     "difficulty": 2,
     "prompt": "Loài động vật nào sau đây thực hiện quá trình trao đổi khí trực tiếp qua BỀ MẶT CƠ THỂ (qua da ẩm)?",
-    "knowledge": ["kb-bio-g7-trao-doi-khi-dong-vat-4-kieu"],
+    "knowledge": [
+      "kb-bio-g7-trao-doi-khi-dong-vat-4-kieu"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Giun đất" },
-        { "id": "opt-b", "label": "Châu chấu" },
-        { "id": "opt-c", "label": "Cá chép" },
-        { "id": "opt-d", "label": "Chim bồ câu" }
+        {
+          "id": "opt-a",
+          "label": "Chim bồ câu"
+        },
+        {
+          "id": "opt-b",
+          "label": "Giun đất"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cá chép"
+        },
+        {
+          "id": "opt-d",
+          "label": "Châu chấu"
+        }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -205,19 +269,35 @@
     "id": "bio-g7-b08-q05",
     "lessonId": "bio-g7-b08",
     "sgkBaiSo": 28,
-    "skillIds": ["bio-trao-doi-khi"],
+    "skillIds": [
+      "bio-trao-doi-khi"
+    ],
     "difficulty": 2,
     "prompt": "Tại sao khi nuôi cá trong bể kính nhỏ, người ta thường phải lắp thêm máy sục bọt khí?",
-    "knowledge": ["kb-bio-g7-trao-doi-khi-dong-vat-4-kieu"],
+    "knowledge": [
+      "kb-bio-g7-trao-doi-khi-dong-vat-4-kieu"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Tăng cường lượng khí Oxygen hòa tan trong nước giúp cá hô hấp qua mang thuận lợi" },
-        { "id": "opt-b", "label": "Tạo ra các bong bóng đẹp mắt để làm mát thân cá" },
-        { "id": "opt-c", "label": "Cung cấp thêm khí Carbon dioxide cho cá hấp thụ" },
-        { "id": "opt-d", "label": "Để đẩy hết phân cá trôi ra khỏi bể" }
+        {
+          "id": "opt-a",
+          "label": "Để đẩy hết phân cá trôi ra khỏi bể"
+        },
+        {
+          "id": "opt-b",
+          "label": "Cung cấp thêm khí Carbon dioxide cho cá hấp thụ"
+        },
+        {
+          "id": "opt-c",
+          "label": "Tạo ra các bong bóng đẹp mắt để làm mát thân cá"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tăng cường lượng khí Oxygen hòa tan trong nước giúp cá hô hấp qua mang thuận lợi"
+        }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -253,17 +333,33 @@
     "id": "bio-g7-b08-q06",
     "lessonId": "bio-g7-b08",
     "sgkBaiSo": 28,
-    "skillIds": ["bio-trao-doi-khi"],
+    "skillIds": [
+      "bio-trao-doi-khi"
+    ],
     "difficulty": 3,
     "prompt": "Hãy ghép đúng tên cơ quan trao đổi khí với đại diện sinh vật tương ứng:",
-    "knowledge": ["kb-bio-g7-trao-doi-khi-dong-vat-4-kieu"],
+    "knowledge": [
+      "kb-bio-g7-trao-doi-khi-dong-vat-4-kieu"
+    ],
     "answer": {
       "kind": "match",
       "pairs": [
-        { "left": "Hệ thống ống khí phân nhánh", "right": "Châu chấu, ong mật" },
-        { "left": "Các lá mang mỏng giàu mao mạch", "right": "Cá chép, tôm sông" },
-        { "left": "Phế nang trong phổi", "right": "Chim bồ câu, con người" },
-        { "left": "Bề mặt da trần ẩm ướt", "right": "Giun đất, ếch đồng" }
+        {
+          "left": "Hệ thống ống khí phân nhánh",
+          "right": "Châu chấu, ong mật"
+        },
+        {
+          "left": "Các lá mang mỏng giàu mao mạch",
+          "right": "Cá chép, tôm sông"
+        },
+        {
+          "left": "Phế nang trong phổi",
+          "right": "Chim bồ câu, con người"
+        },
+        {
+          "left": "Bề mặt da trần ẩm ướt",
+          "right": "Giun đất, ếch đồng"
+        }
       ]
     },
     "hints": [
@@ -300,19 +396,35 @@
     "id": "bio-g7-b08-q07",
     "lessonId": "bio-g7-b08",
     "sgkBaiSo": 28,
-    "skillIds": ["bio-trao-doi-khi"],
+    "skillIds": [
+      "bio-trao-doi-khi"
+    ],
     "difficulty": 3,
     "prompt": "Tại sao sau những trận mưa rào ngập nước, giun đất thường phải chui hết lên mặt đất?",
-    "knowledge": ["kb-bio-g7-trao-doi-khi-dong-vat-4-kieu"],
+    "knowledge": [
+      "kb-bio-g7-trao-doi-khi-dong-vat-4-kieu"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Vì nước mưa lấp đầy các khe đất làm cạn kiệt không khí, giun đất bị ngạt thở nên phải ngoi lên để hô hấp" },
-        { "id": "opt-b", "label": "Vì giun đất thích bơi lội trên vũng nước mưa" },
-        { "id": "opt-c", "label": "Vì nước mưa làm da giun đất bị khô cứng không thở được" },
-        { "id": "opt-d", "label": "Vì giun đất lên mặt đất để đón ánh nắng mặt trời quang hợp" }
+        {
+          "id": "opt-a",
+          "label": "Vì giun đất lên mặt đất để đón ánh nắng mặt trời quang hợp"
+        },
+        {
+          "id": "opt-b",
+          "label": "Vì giun đất thích bơi lội trên vũng nước mưa"
+        },
+        {
+          "id": "opt-c",
+          "label": "Vì nước mưa lấp đầy các khe đất làm cạn kiệt không khí, giun đất bị ngạt thở nên phải ngoi lên để hô hấp"
+        },
+        {
+          "id": "opt-d",
+          "label": "Vì nước mưa làm da giun đất bị khô cứng không thở được"
+        }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -338,7 +450,7 @@
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Đáp án A giải thích chính xác hiện tượng sinh học."
+        "body": "Đáp án chính xác giải thích chính xác hiện tượng sinh học."
       }
     ],
     "finalSolution": "Đất ngập nước làm thiếu không khí khiến giun đất phải ngoi lên mặt đất để hô hấp.",
@@ -348,17 +460,33 @@
     "id": "bio-g7-b08-q08",
     "lessonId": "bio-g7-b08",
     "sgkBaiSo": 28,
-    "skillIds": ["bio-trao-doi-khi"],
+    "skillIds": [
+      "bio-trao-doi-khi"
+    ],
     "difficulty": 3,
     "prompt": "Tại sao không nên để quá nhiều chậu hoa, cây cảnh xanh trong phòng ngủ đóng kín cửa vào ban đêm?",
-    "knowledge": ["kb-bio-g7-khai-niem-trao-doi-khi"],
+    "knowledge": [
+      "kb-bio-g7-khai-niem-trao-doi-khi"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Ban đêm cây không quang hợp mà chỉ hô hấp, hút khí O2 và thải nhiều khí CO2 làm không khí phòng ngủ bị thiếu dưỡng khí gây ngạt thở" },
-        { "id": "opt-b", "label": "Ban đêm rễ cây sẽ hút hết lượng nước trong cơ thể con người đang ngủ" },
-        { "id": "opt-c", "label": "Lá cây ban đêm tự phóng ra các tia sáng có hại cho mắt" },
-        { "id": "opt-d", "label": "Cây xanh ban đêm sẽ tự biến đổi thành khí độc phá hủy phòng ngủ" }
+        {
+          "id": "opt-a",
+          "label": "Ban đêm cây không quang hợp mà chỉ hô hấp, hút khí O2 và thải nhiều khí CO2 làm không khí phòng ngủ bị thiếu dưỡng khí gây ngạt thở"
+        },
+        {
+          "id": "opt-b",
+          "label": "Lá cây ban đêm tự phóng ra các tia sáng có hại cho mắt"
+        },
+        {
+          "id": "opt-c",
+          "label": "Cây xanh ban đêm sẽ tự biến đổi thành khí độc phá hủy phòng ngủ"
+        },
+        {
+          "id": "opt-d",
+          "label": "Ban đêm rễ cây sẽ hút hết lượng nước trong cơ thể con người đang ngủ"
+        }
       ],
       "correctId": "opt-a"
     },
@@ -386,7 +514,7 @@
       {
         "kind": "answer",
         "title": "Chọn phương án",
-        "body": "Đáp án A giải thích chuẩn xác nguy cơ thiếu khí O2."
+        "body": "Đáp án chính xác giải thích chuẩn xác nguy cơ thiếu khí O2."
       }
     ],
     "finalSolution": "Ban đêm cây xanh hút O2 và thải CO2, do đó không để nhiều cây trong phòng ngủ kín cửa.",

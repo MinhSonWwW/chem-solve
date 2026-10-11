@@ -3,10 +3,14 @@
     "id": "bio-g6-b17-q01",
     "lessonId": "bio-g6-b17",
     "sgkBaiSo": 32,
-    "skillIds": ["bio-gioi-nam"],
+    "skillIds": [
+      "bio-gioi-nam"
+    ],
     "difficulty": 1,
     "prompt": "Ghép nối từng đại diện của giới Nấm (cột bên trái) với đúng đặc điểm hình thái và ứng dụng thực tiễn của nó (cột bên phải):",
-    "knowledge": ["bio-gioi-nam"],
+    "knowledge": [
+      "bio-gioi-nam"
+    ],
     "answer": {
       "kind": "match",
       "pairs": [
@@ -67,23 +71,57 @@
     "id": "bio-g6-b17-q02",
     "lessonId": "bio-g6-b17",
     "sgkBaiSo": 32,
-    "skillIds": ["bio-gioi-nam"],
+    "skillIds": [
+      "bio-gioi-nam"
+    ],
     "difficulty": 2,
     "prompt": "Phân loại các hiện tượng sau đây vào hai nhóm: 'Lợi ích của nấm' và 'Tác hại của nấm':",
-    "knowledge": ["bio-gioi-nam"],
+    "knowledge": [
+      "bio-gioi-nam"
+    ],
     "answer": {
       "kind": "sort",
       "buckets": [
-        { "id": "b-benefit", "label": "Lợi ích của nấm đối với con người" },
-        { "id": "b-harm", "label": "Tác hại của nấm đối với đời sống" }
+        {
+          "id": "b-benefit",
+          "label": "Lợi ích của nấm đối với con người"
+        },
+        {
+          "id": "b-harm",
+          "label": "Tác hại của nấm đối với đời sống"
+        }
       ],
       "items": [
-        { "id": "it-1", "label": "Dùng làm thực phẩm thơm ngon và giàu chất đạm (nấm rơm, nấm hương)", "bucketId": "b-benefit" },
-        { "id": "it-2", "label": "Sản xuất thuốc kháng sinh penicillin cứu sống nhiều bệnh nhân", "bucketId": "b-benefit" },
-        { "id": "it-3", "label": "Lên men bột nở bánh mì và ủ rượu bia từ nấm men", "bucketId": "b-benefit" },
-        { "id": "it-4", "label": "Gây bệnh nấm da hắc lào, lang ben, ngứa ngáy ở người", "bucketId": "b-harm" },
-        { "id": "it-5", "label": "Làm mốc thiu hạt lạc, ngô sinh độc tố aflatoxin gây ung thư gan", "bucketId": "b-harm" },
-        { "id": "it-6", "label": "Nấm độc rừng gây ngộ độc nôn mửa và tử vong khi ăn nhầm", "bucketId": "b-harm" }
+        {
+          "id": "it-1",
+          "label": "Dùng làm thực phẩm thơm ngon và giàu chất đạm (nấm rơm, nấm hương)",
+          "bucketId": "b-benefit"
+        },
+        {
+          "id": "it-2",
+          "label": "Sản xuất thuốc kháng sinh penicillin cứu sống nhiều bệnh nhân",
+          "bucketId": "b-benefit"
+        },
+        {
+          "id": "it-3",
+          "label": "Lên men bột nở bánh mì và ủ rượu bia từ nấm men",
+          "bucketId": "b-benefit"
+        },
+        {
+          "id": "it-4",
+          "label": "Gây bệnh nấm da hắc lào, lang ben, ngứa ngáy ở người",
+          "bucketId": "b-harm"
+        },
+        {
+          "id": "it-5",
+          "label": "Làm mốc thiu hạt lạc, ngô sinh độc tố aflatoxin gây ung thư gan",
+          "bucketId": "b-harm"
+        },
+        {
+          "id": "it-6",
+          "label": "Nấm độc rừng gây ngộ độc nôn mửa và tử vong khi ăn nhầm",
+          "bucketId": "b-harm"
+        }
       ]
     },
     "hints": [
@@ -125,10 +163,14 @@
     "id": "bio-g6-b17-q03",
     "lessonId": "bio-g6-b17",
     "sgkBaiSo": 32,
-    "skillIds": ["bio-gioi-nam"],
+    "skillIds": [
+      "bio-gioi-nam"
+    ],
     "difficulty": 2,
     "prompt": "Hãy sắp xếp các bộ phận cấu tạo của một cây nấm thể quả (như nấm rơm) theo thứ tự từ trên đỉnh cao nhất xuống dưới gốc:",
-    "knowledge": ["bio-gioi-nam"],
+    "knowledge": [
+      "bio-gioi-nam"
+    ],
     "answer": {
       "kind": "ordering",
       "correctOrder": [
@@ -178,19 +220,35 @@
     "id": "bio-g6-b17-q04",
     "lessonId": "bio-g6-b17",
     "sgkBaiSo": 32,
-    "skillIds": ["bio-gioi-nam"],
+    "skillIds": [
+      "bio-gioi-nam"
+    ],
     "difficulty": 1,
     "prompt": "Khi quan sát một cây nấm hoang dại trong rừng, dấu hiệu nào sau đây là dấu hiệu cảnh báo cây nấm đó CỰC KỲ ĐỘC không được hái ăn?",
-    "knowledge": ["bio-gioi-nam"],
+    "knowledge": [
+      "bio-gioi-nam"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Màu sắc sặc sỡ hoặc trắng toát, có đầy đủ cả vòng cuống và bao gốc phình to hình chén" },
-        { "id": "opt-b", "label": "Mọc trên đống rơm rạ mục ẩm ướt ở vườn nhà" },
-        { "id": "opt-c", "label": "Có mùi thơm ngọt ngào của nấm hương" },
-        { "id": "opt-d", "label": "Được bày bán có nhãn mác trong siêu thị" }
+        {
+          "id": "opt-a",
+          "label": "Được bày bán có nhãn mác trong siêu thị"
+        },
+        {
+          "id": "opt-b",
+          "label": "Mọc trên đống rơm rạ mục ẩm ướt ở vườn nhà"
+        },
+        {
+          "id": "opt-c",
+          "label": "Màu sắc sặc sỡ hoặc trắng toát, có đầy đủ cả vòng cuống và bao gốc phình to hình chén"
+        },
+        {
+          "id": "opt-d",
+          "label": "Có mùi thơm ngọt ngào của nấm hương"
+        }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -231,10 +289,14 @@
     "id": "bio-g6-b17-q05",
     "lessonId": "bio-g6-b17",
     "sgkBaiSo": 32,
-    "skillIds": ["bio-gioi-nam"],
+    "skillIds": [
+      "bio-gioi-nam"
+    ],
     "difficulty": 2,
     "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về giới Nấm:",
-    "knowledge": ["bio-gioi-nam"],
+    "knowledge": [
+      "bio-gioi-nam"
+    ],
     "answer": {
       "kind": "true-false",
       "statements": [

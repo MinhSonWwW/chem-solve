@@ -16,22 +16,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Hệ bài tiết nước tiểu (đôi thận)"
+          "label": "Tuyến mồ hôi ở da"
         },
         {
           "id": "opt-b",
-          "label": "Hệ hô hấp (hai lá phổi)"
+          "label": "Hệ bài tiết nước tiểu (đôi thận)"
         },
         {
           "id": "opt-c",
-          "label": "Tuyến mồ hôi ở da"
+          "label": "Hệ hô hấp (hai lá phổi)"
         },
         {
           "id": "opt-d",
           "label": "Tuyến nước bọt ở khoang miệng"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -85,22 +85,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Hai quả thận → Hai ống dẫn nước tiểu (niệu quản) → Bóng đái (bàng quang) → Ống đái (niệu đạo)"
+          "label": "Bóng đái → Hai quả thận → Ống dẫn nước tiểu → Hậu môn"
         },
         {
           "id": "opt-b",
-          "label": "Hai quả thận → Bóng đái → Ống dẫn nước tiểu → Ống đái"
-        },
-        {
-          "id": "opt-c",
           "label": "Hai quả thận → Ống đái → Bóng đái → Ống dẫn nước tiểu"
         },
         {
+          "id": "opt-c",
+          "label": "Hai quả thận → Bóng đái → Ống dẫn nước tiểu → Ống đái"
+        },
+        {
           "id": "opt-d",
-          "label": "Bóng đái → Hai quả thận → Ống dẫn nước tiểu → Hậu môn"
+          "label": "Hai quả thận → Hai ống dẫn nước tiểu (niệu quản) → Bóng đái (bàng quang) → Ống đái (niệu đạo)"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -154,7 +154,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Cầu thận, nang cầu thận (nang Bowman) và hệ thống ống thận"
+          "label": "Ống đái, tủy thận và mô cơ trơn bàng quang"
         },
         {
           "id": "opt-b",
@@ -162,14 +162,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Ống đái, tủy thận và mô cơ trơn bàng quang"
+          "label": "Động mạch thận và các nang bạch huyết"
         },
         {
           "id": "opt-d",
-          "label": "Động mạch thận và các nang bạch huyết"
+          "label": "Cầu thận, nang cầu thận (nang Bowman) và hệ thống ống thận"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -223,22 +223,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Diễn ra tại cầu thận nhờ áp lực lọc máu cao ép dịch qua màng lọc sang nang cầu thận"
-        },
-        {
-          "id": "opt-b",
           "label": "Diễn ra tại ống thận nhờ lực hút chân không từ quai Henle"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Diễn ra tại bóng đái nhờ sự co bóp của thành cơ trơn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Diễn ra tại cầu thận nhờ áp lực lọc máu cao ép dịch qua màng lọc sang nang cầu thận"
         },
         {
           "id": "opt-d",
           "label": "Diễn ra tại bể thận nhờ trọng lực hút dịch xuống"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -292,22 +292,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Nước tiểu đầu còn chứa nhiều chất dinh dưỡng (glucose, amino acid) và ure loãng; nước tiểu chính thức không còn chất dinh dưỡng và chứa ure đậm đặc"
-        },
-        {
-          "id": "opt-b",
-          "label": "Nước tiểu đầu chứa nhiều tế bào hồng cầu; nước tiểu chính thức chỉ có bạch cầu"
-        },
-        {
-          "id": "opt-c",
           "label": "Nước tiểu đầu hoàn toàn không có nước; nước tiểu chính thức chứa 99% nước"
         },
         {
-          "id": "opt-d",
+          "id": "opt-b",
           "label": "Nước tiểu đầu có màu vàng đậm; nước tiểu chính thức hoàn toàn trong suốt không mùi"
+        },
+        {
+          "id": "opt-c",
+          "label": "Nước tiểu đầu còn chứa nhiều chất dinh dưỡng (glucose, amino acid) và ure loãng; nước tiểu chính thức không còn chất dinh dưỡng và chứa ure đậm đặc"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nước tiểu đầu chứa nhiều tế bào hồng cầu; nước tiểu chính thức chỉ có bạch cầu"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -361,22 +361,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Màng lọc của cầu thận"
-        },
-        {
-          "id": "opt-b",
           "label": "Quai Henle ở ống thận"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Cơ thắt của ống đái"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "Niêm mạc của ống dẫn nước tiểu"
+        },
+        {
+          "id": "opt-d",
+          "label": "Màng lọc của cầu thận"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -430,11 +430,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Uống quá ít nước, ăn quá nhiều muối mặn và thường xuyên nhịn tiểu kéo dài"
+          "label": "Uống đủ 2 lít nước lọc mỗi ngày và vận động thể thao điều độ"
         },
         {
           "id": "opt-b",
-          "label": "Uống đủ 2 lít nước lọc mỗi ngày và vận động thể thao điều độ"
+          "label": "Uống quá ít nước, ăn quá nhiều muối mặn và thường xuyên nhịn tiểu kéo dài"
         },
         {
           "id": "opt-c",
@@ -445,7 +445,7 @@
           "label": "Hạn chế tối đa các loại nước ngọt có gas và rượu bia"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -503,11 +503,11 @@
         },
         {
           "id": "opt-b",
-          "label": "Để bổ sung thêm thật nhiều hồng cầu và bạch cầu mới cho cơ thể"
+          "label": "Để kích thích thận tự tái sinh lại các Nephron đã bị xơ hóa"
         },
         {
           "id": "opt-c",
-          "label": "Để kích thích thận tự tái sinh lại các Nephron đã bị xơ hóa"
+          "label": "Để bổ sung thêm thật nhiều hồng cầu và bạch cầu mới cho cơ thể"
         },
         {
           "id": "opt-d",

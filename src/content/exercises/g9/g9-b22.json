@@ -160,22 +160,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Chất rắn và Chất khí"
-        },
-        {
-          "id": "b",
           "label": "Axit hữu cơ và Bazo hữu cơ"
         },
         {
-          "id": "c",
+          "id": "b",
           "label": "Hydrocarbon và Dẫn xuất của hydrocarbon"
         },
         {
-          "id": "d",
+          "id": "c",
           "label": "Chất tự nhiên và Chất tổng hợp"
+        },
+        {
+          "id": "d",
+          "label": "Chất rắn và Chất khí"
         }
       ],
-      "correctId": "c"
+      "correctId": "b"
     },
     "hints": [
       {

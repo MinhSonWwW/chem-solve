@@ -187,9 +187,9 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
                     fullWidth
                     className={`flex items-center justify-center gap-2 ${
                       isTheory
-                        ? 'bg-gradient-to-r from-purple-600 to-fuchsia-500 hover:from-purple-500 hover:to-fuchsia-400 text-white font-black shadow-[0_4px_0_0_#6b21a8]'
+                        ? 'bg-[#9333ea] hover:bg-[#a855f7] text-white font-black border-b-4 border-[#6b21a8] active:translate-y-1 active:border-b-0'
                         : isCheckpoint
-                        ? 'bg-gradient-to-r from-rose-600 to-amber-500 hover:from-rose-500 hover:to-amber-400 text-white font-black shadow-[0_4px_0_0_#9f1239]'
+                        ? 'bg-[#e11d48] hover:bg-[#f43f5e] text-white font-black border-b-4 border-[#9f1239] active:translate-y-1 active:border-b-0'
                         : ''
                     }`}
                     onClick={() => {

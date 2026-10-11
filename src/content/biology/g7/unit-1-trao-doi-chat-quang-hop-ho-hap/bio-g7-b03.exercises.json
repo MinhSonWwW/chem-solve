@@ -16,11 +16,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Cây lúa nước, ngô, mía, phi lao"
+          "label": "Cây lá lốt, phong lan, gừng"
         },
         {
           "id": "opt-b",
-          "label": "Cây lá lốt, phong lan, gừng"
+          "label": "Cây kim phát tài trồng trong phòng khách"
         },
         {
           "id": "opt-c",
@@ -28,10 +28,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Cây kim phát tài trồng trong phòng khách"
+          "label": "Cây lúa nước, ngô, mía, phi lao"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -89,7 +89,7 @@
         },
         {
           "id": "opt-b",
-          "label": "Từ 0°C đến 5°C"
+          "label": "Dưới 10°C"
         },
         {
           "id": "opt-c",
@@ -97,7 +97,7 @@
         },
         {
           "id": "opt-d",
-          "label": "Dưới 10°C"
+          "label": "Từ 0°C đến 5°C"
         }
       ],
       "correctId": "opt-a"
@@ -153,15 +153,15 @@
         },
         {
           "id": "opt-b",
-          "label": "Khoảng 21%"
-        },
-        {
-          "id": "opt-c",
           "label": "Khoảng 78%"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "Khoảng 5%"
+        },
+        {
+          "id": "opt-d",
+          "label": "Khoảng 21%"
         }
       ],
       "correctId": "opt-a"
@@ -218,11 +218,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Vì thiếu nước làm tế bào khí khổng mất sức trương và đóng lại, khiến CO2 không thể khuếch tán vào lá"
+          "label": "Vì cây chuyển sang hút khí oxygen để thay thế cho nước"
         },
         {
           "id": "opt-b",
-          "label": "Vì thiếu nước làm toàn bộ diệp lục trong lục lạp tự biến mất"
+          "label": "Vì thiếu nước làm tế bào khí khổng mất sức trương và đóng lại, khiến CO2 không thể khuếch tán vào lá"
         },
         {
           "id": "opt-c",
@@ -230,10 +230,10 @@
         },
         {
           "id": "opt-d",
-          "label": "Vì cây chuyển sang hút khí oxygen để thay thế cho nước"
+          "label": "Vì thiếu nước làm toàn bộ diệp lục trong lục lạp tự biến mất"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -259,7 +259,7 @@
       {
         "kind": "answer",
         "title": "Chọn đáp án",
-        "body": "Đáp án A giải thích chính xác cơ chế sinh lí."
+        "body": "Đáp án chính xác giải thích chính xác cơ chế sinh lí."
       }
     ],
     "finalSolution": "Thiếu nước làm khí khổng đóng, ngăn cản CO2 khuếch tán vào lá khiến quang hợp giảm mạnh.",
@@ -286,15 +286,15 @@
         },
         {
           "id": "opt-b",
-          "label": "Để xua đuổi dơi và các loài chuột phá hoại cành cây"
+          "label": "Để làm cho vỏ quả thanh long chuyển sang màu vàng thay vì màu đỏ"
         },
         {
           "id": "opt-c",
-          "label": "Để làm ấm rễ cây thanh long trong mùa đông lạnh giá"
+          "label": "Để xua đuổi dơi và các loài chuột phá hoại cành cây"
         },
         {
           "id": "opt-d",
-          "label": "Để làm cho vỏ quả thanh long chuyển sang màu vàng thay vì màu đỏ"
+          "label": "Để làm ấm rễ cây thanh long trong mùa đông lạnh giá"
         }
       ],
       "correctId": "opt-a"
@@ -387,7 +387,7 @@
       {
         "kind": "answer",
         "title": "Chọn đáp án",
-        "body": "Đáp án A giải thích chuẩn xác nguyên nhân nông học."
+        "body": "Đáp án chính xác giải thích chuẩn xác nguyên nhân nông học."
       }
     ],
     "finalSolution": "Gieo trồng quá dày khiến lá che khuất nhau, giảm quang hợp và cạnh tranh chất dinh dưỡng.",
@@ -410,22 +410,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Cường độ quang hợp sẽ tăng lên rõ rệt"
-        },
-        {
-          "id": "opt-b",
           "label": "Cường độ quang hợp giảm về 0 ngay lập tức"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Cây bị ngộ độc và rụng hết toàn bộ lá"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "Cường độ quang hợp hoàn toàn không có bất kì sự thay đổi nào"
+        },
+        {
+          "id": "opt-d",
+          "label": "Cường độ quang hợp sẽ tăng lên rõ rệt"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -479,22 +479,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Tận dụng triệt để năng lượng ánh sáng mặt trời ở các tầng khác nhau và nâng cao hiệu quả sử dụng đất"
-        },
-        {
-          "id": "opt-b",
-          "label": "Để cây ưa bóng hút bớt lượng nước thừa chống ngập úng cho cây ưa sáng"
-        },
-        {
-          "id": "opt-c",
           "label": "Để cây ưa sáng che chở cho cây ưa bóng không bị sâu bọ tấn công"
         },
         {
-          "id": "opt-d",
+          "id": "opt-b",
           "label": "Để hai loài cây lai giống tự nhiên với nhau tạo ra giống cây mới"
+        },
+        {
+          "id": "opt-c",
+          "label": "Để cây ưa bóng hút bớt lượng nước thừa chống ngập úng cho cây ưa sáng"
+        },
+        {
+          "id": "opt-d",
+          "label": "Tận dụng triệt để năng lượng ánh sáng mặt trời ở các tầng khác nhau và nâng cao hiệu quả sử dụng đất"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {

@@ -188,9 +188,8 @@ export const SubjectSelectorModal: React.FC<SubjectSelectorModalProps> = ({
             })}
           </div>
 
-          {/* Footer Notice */}
           <div className="pt-2 text-center text-xs text-slate-400 font-medium flex items-center justify-center gap-1.5">
-            <span className="inline-block w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_6px_#38bdf8]" />
+            <span className="inline-block w-2 h-2 rounded-full bg-cyan-400" />
             Bám sát SGK Kết nối tri thức THCS (Lớp 6, 7, 8, 9)
           </div>
         </motion.div>

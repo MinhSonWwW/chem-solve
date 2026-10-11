@@ -3,10 +3,15 @@
     "id": "bio-g6-b22-q01",
     "lessonId": "bio-g6-b22",
     "sgkBaiSo": 37,
-    "skillIds": ["bio-thuc-hanh-dong-vat"],
+    "skillIds": [
+      "bio-thuc-hanh-dong-vat"
+    ],
     "difficulty": 1,
     "prompt": "Ghép nối từng loài động vật quan sát được ngoài thiên nhiên (cột bên trái) với đúng cơ quan di chuyển thích nghi của nó (cột bên phải):",
-    "knowledge": ["bio-thuc-hanh-dong-vat", "bio-gioi-dong-vat"],
+    "knowledge": [
+      "bio-thuc-hanh-dong-vat",
+      "bio-gioi-dong-vat"
+    ],
     "answer": {
       "kind": "match",
       "pairs": [
@@ -67,25 +72,69 @@
     "id": "bio-g6-b22-q02",
     "lessonId": "bio-g6-b22",
     "sgkBaiSo": 37,
-    "skillIds": ["bio-thuc-hanh-dong-vat", "bio-gioi-dong-vat"],
+    "skillIds": [
+      "bio-thuc-hanh-dong-vat",
+      "bio-gioi-dong-vat"
+    ],
     "difficulty": 2,
     "prompt": "Phân loại các loài động vật quan sát được trong khuôn viên vườn trường vào hai nhóm lớn:",
-    "knowledge": ["bio-thuc-hanh-dong-vat", "bio-gioi-dong-vat"],
+    "knowledge": [
+      "bio-thuc-hanh-dong-vat",
+      "bio-gioi-dong-vat"
+    ],
     "answer": {
       "kind": "sort",
       "buckets": [
-        { "id": "b-inverts", "label": "Động vật không xương sống" },
-        { "id": "b-verts", "label": "Động vật có xương sống" }
+        {
+          "id": "b-inverts",
+          "label": "Động vật không xương sống"
+        },
+        {
+          "id": "b-verts",
+          "label": "Động vật có xương sống"
+        }
       ],
       "items": [
-        { "id": "it-1", "label": "Con giun đất đào hang", "bucketId": "b-inverts" },
-        { "id": "it-2", "label": "Con ốc sên trên lá chuối", "bucketId": "b-inverts" },
-        { "id": "it-3", "label": "Con bướm cải bay lượn", "bucketId": "b-inverts" },
-        { "id": "it-4", "label": "Con nhện chăng tơ góc vườn", "bucketId": "b-inverts" },
-        { "id": "it-5", "label": "Con thạch sùng bám vách tường", "bucketId": "b-verts" },
-        { "id": "it-6", "label": "Con chim sẻ nhảy nhót", "bucketId": "b-verts" },
-        { "id": "it-7", "label": "Con ếch đồng ngồi bờ cỏ", "bucketId": "b-verts" },
-        { "id": "it-8", "label": "Con sóc nhảy trên cành cây", "bucketId": "b-verts" }
+        {
+          "id": "it-1",
+          "label": "Con giun đất đào hang",
+          "bucketId": "b-inverts"
+        },
+        {
+          "id": "it-2",
+          "label": "Con ốc sên trên lá chuối",
+          "bucketId": "b-inverts"
+        },
+        {
+          "id": "it-3",
+          "label": "Con bướm cải bay lượn",
+          "bucketId": "b-inverts"
+        },
+        {
+          "id": "it-4",
+          "label": "Con nhện chăng tơ góc vườn",
+          "bucketId": "b-inverts"
+        },
+        {
+          "id": "it-5",
+          "label": "Con thạch sùng bám vách tường",
+          "bucketId": "b-verts"
+        },
+        {
+          "id": "it-6",
+          "label": "Con chim sẻ nhảy nhót",
+          "bucketId": "b-verts"
+        },
+        {
+          "id": "it-7",
+          "label": "Con ếch đồng ngồi bờ cỏ",
+          "bucketId": "b-verts"
+        },
+        {
+          "id": "it-8",
+          "label": "Con sóc nhảy trên cành cây",
+          "bucketId": "b-verts"
+        }
       ]
     },
     "hints": [
@@ -127,19 +176,35 @@
     "id": "bio-g6-b22-q03",
     "lessonId": "bio-g6-b22",
     "sgkBaiSo": 37,
-    "skillIds": ["bio-thuc-hanh-dong-vat"],
+    "skillIds": [
+      "bio-thuc-hanh-dong-vat"
+    ],
     "difficulty": 1,
     "prompt": "Khi dùng tay vuốt nhẹ từ đuôi lên đầu ở mặt bụng của con giun đất, ta thấy có cảm giác ram ráp tay. Nguyên nhân là do cấu trúc nào sau đây?",
-    "knowledge": ["bio-thuc-hanh-dong-vat"],
+    "knowledge": [
+      "bio-thuc-hanh-dong-vat"
+    ],
     "answer": {
       "kind": "mcq-single",
       "options": [
-        { "id": "opt-a", "label": "Các vòng tơ nhỏ li ti ở mỗi đốt thân giúp giun tì bám vào đất khi di chuyển" },
-        { "id": "opt-b", "label": "Các hạt cát bám dính ngoài da giun" },
-        { "id": "opt-c", "label": "Các móng vuốt sắc nhọn của giun" },
-        { "id": "opt-d", "label": "Các lớp vảy sừng dày cứng như da rắn" }
+        {
+          "id": "opt-a",
+          "label": "Các hạt cát bám dính ngoài da giun"
+        },
+        {
+          "id": "opt-b",
+          "label": "Các lớp vảy sừng dày cứng như da rắn"
+        },
+        {
+          "id": "opt-c",
+          "label": "Các vòng tơ nhỏ li ti ở mỗi đốt thân giúp giun tì bám vào đất khi di chuyển"
+        },
+        {
+          "id": "opt-d",
+          "label": "Các móng vuốt sắc nhọn của giun"
+        }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -180,10 +245,14 @@
     "id": "bio-g6-b22-q04",
     "lessonId": "bio-g6-b22",
     "sgkBaiSo": 37,
-    "skillIds": ["bio-thuc-hanh-dong-vat"],
+    "skillIds": [
+      "bio-thuc-hanh-dong-vat"
+    ],
     "difficulty": 2,
     "prompt": "Hãy sắp xếp các cột thông tin trong bảng nhật ký quan sát động vật thực địa theo đúng trình tự khoa học:",
-    "knowledge": ["bio-thuc-hanh-dong-vat"],
+    "knowledge": [
+      "bio-thuc-hanh-dong-vat"
+    ],
     "answer": {
       "kind": "ordering",
       "correctOrder": [
@@ -232,10 +301,14 @@
     "id": "bio-g6-b22-q05",
     "lessonId": "bio-g6-b22",
     "sgkBaiSo": 37,
-    "skillIds": ["bio-thuc-hanh-dong-vat"],
+    "skillIds": [
+      "bio-thuc-hanh-dong-vat"
+    ],
     "difficulty": 2,
     "prompt": "Xác định tính Đúng hay Sai cho mỗi phát biểu sau đây về thực hành quan sát động vật ngoài thiên nhiên:",
-    "knowledge": ["bio-thuc-hanh-dong-vat"],
+    "knowledge": [
+      "bio-thuc-hanh-dong-vat"
+    ],
     "answer": {
       "kind": "true-false",
       "statements": [

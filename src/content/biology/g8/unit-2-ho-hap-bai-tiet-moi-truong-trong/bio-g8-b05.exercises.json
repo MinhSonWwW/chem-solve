@@ -24,11 +24,11 @@
         },
         {
           "id": "opt-c",
-          "label": "Thở bằng mũi giúp hấp thụ trực tiếp toàn bộ khí oxy vào não bộ mà không qua phổi"
+          "label": "Khoang miệng chỉ có chức năng phát ra âm thanh và nhai thức ăn"
         },
         {
           "id": "opt-d",
-          "label": "Khoang miệng chỉ có chức năng phát ra âm thanh và nhai thức ăn"
+          "label": "Thở bằng mũi giúp hấp thụ trực tiếp toàn bộ khí oxy vào não bộ mà không qua phổi"
         }
       ],
       "correctId": "opt-a"
@@ -85,7 +85,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Nắp thanh quản (sụn thanh thiệt)"
+          "label": "Dây thanh âm"
         },
         {
           "id": "opt-b",
@@ -93,14 +93,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Dây thanh âm"
+          "label": "Khẩu cái mềm (lưỡi gà)"
         },
         {
           "id": "opt-d",
-          "label": "Khẩu cái mềm (lưỡi gà)"
+          "label": "Nắp thanh quản (sụn thanh thiệt)"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -154,22 +154,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Số lượng khổng lồ (~700 - 800 triệu phế nang), diện tích bề mặt lớn (~70 - 100 m²), thành mỏng và mạng mao mạch bao bọc dày đặc"
-        },
-        {
-          "id": "opt-b",
-          "label": "Có lớp sụn cứng hình chữ C bao quanh và có van đóng mở tự động"
-        },
-        {
-          "id": "opt-c",
           "label": "Thành phế nang cấu tạo từ 3 lớp cơ trơn dày dặn để co bóp đẩy khí"
         },
         {
-          "id": "opt-d",
+          "id": "opt-b",
+          "label": "Số lượng khổng lồ (~700 - 800 triệu phế nang), diện tích bề mặt lớn (~70 - 100 m²), thành mỏng và mạng mao mạch bao bọc dày đặc"
+        },
+        {
+          "id": "opt-c",
           "label": "Chỉ có khoảng vài trăm túi khí lớn để giảm sức cản của luồng khí thở"
+        },
+        {
+          "id": "opt-d",
+          "label": "Có lớp sụn cứng hình chữ C bao quanh và có van đóng mở tự động"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -223,22 +223,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Thể tích lồng ngực tăng lên → Áp suất trong khoang ngực giảm nhỏ hơn áp suất khí quyển → Không khí bị hút vào phổi"
-        },
-        {
-          "id": "opt-b",
           "label": "Thể tích lồng ngực giảm xuống → Áp suất trong khoang ngực tăng cao hơn áp suất khí quyển → Không khí bị nén vào phổi"
         },
         {
+          "id": "opt-b",
+          "label": "Cơ hoành đẩy lên cao làm nén phổi hút không khí tràn vào"
+        },
+        {
           "id": "opt-c",
-          "label": "Thể tích lồng ngực không đổi, không khí tự di chuyển vào do chênh lệch nhiệt độ"
+          "label": "Thể tích lồng ngực tăng lên → Áp suất trong khoang ngực giảm nhỏ hơn áp suất khí quyển → Không khí bị hút vào phổi"
         },
         {
           "id": "opt-d",
-          "label": "Cơ hoành đẩy lên cao làm nén phổi hút không khí tràn vào"
+          "label": "Thể tích lồng ngực không đổi, không khí tự di chuyển vào do chênh lệch nhiệt độ"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -292,22 +292,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Cơ chế khuếch tán thụ động từ nơi có phân áp cao đến nơi có phân áp thấp"
-        },
-        {
-          "id": "opt-b",
           "label": "Cơ chế vận chuyển chủ động tiêu tốn lượng lớn năng lượng ATP"
         },
         {
+          "id": "opt-b",
+          "label": "Cơ chế co bóp cơ học của thành mao mạch máu"
+        },
+        {
           "id": "opt-c",
-          "label": "Cơ chế thẩm thấu chọn lọc qua màng sinh chất tế bào"
+          "label": "Cơ chế khuếch tán thụ động từ nơi có phân áp cao đến nơi có phân áp thấp"
         },
         {
           "id": "opt-d",
-          "label": "Cơ chế co bóp cơ học của thành mao mạch máu"
+          "label": "Cơ chế thẩm thấu chọn lọc qua màng sinh chất tế bào"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -361,22 +361,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "O2 khuếch tán từ máu mao mạch vào tế bào; CO2 khuếch tán từ tế bào vào máu mao mạch"
-        },
-        {
-          "id": "opt-b",
           "label": "O2 khuếch tán từ tế bào vào máu mao mạch; CO2 khuếch tán từ máu vào tế bào"
         },
         {
+          "id": "opt-b",
+          "label": "O2 khuếch tán từ máu mao mạch vào tế bào; CO2 khuếch tán từ tế bào vào máu mao mạch"
+        },
+        {
           "id": "opt-c",
-          "label": "Cả O2 và CO2 đều cùng khuếch tán từ máu mao mạch vào trong tế bào"
+          "label": "Cả O2 và CO2 đều cùng khuếch tán từ tế bào ra dòng máu mao mạch"
         },
         {
           "id": "opt-d",
-          "label": "Cả O2 và CO2 đều cùng khuếch tán từ tế bào ra dòng máu mao mạch"
+          "label": "Cả O2 và CO2 đều cùng khuếch tán từ máu mao mạch vào trong tế bào"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -430,22 +430,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Khí CO liên kết rất chặt chẽ và bền vững với hemoglobin, chiếm chỗ của O2 làm hồng cầu mất khả năng vận chuyển oxy"
-        },
-        {
-          "id": "opt-b",
           "label": "Khí CO ăn mòn phá hủy toàn bộ lớp sụn khí quản trong tích tắc"
         },
         {
-          "id": "opt-c",
+          "id": "opt-b",
           "label": "Khí CO hòa tan màng tế bào bạch cầu khiến hệ miễn dịch sụp đổ tức thời"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khí CO liên kết rất chặt chẽ và bền vững với hemoglobin, chiếm chỗ của O2 làm hồng cầu mất khả năng vận chuyển oxy"
         },
         {
           "id": "opt-d",
           "label": "Khí CO kích thích các phế nang tiết quá nhiều dịch nhầy gây tắc nghẽn hoàn toàn"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -503,15 +503,15 @@
         },
         {
           "id": "opt-b",
-          "label": "5 lần ép tim phối hợp với 5 lần thổi ngạt (tỉ lệ 5 : 5)"
+          "label": "Chỉ ép tim 100 lần liên tục mà tuyệt đối không được thổi ngạt"
         },
         {
           "id": "opt-c",
-          "label": "Chỉ thổi ngạt liên tục 50 lần mà không cần ép tim"
+          "label": "5 lần ép tim phối hợp với 5 lần thổi ngạt (tỉ lệ 5 : 5)"
         },
         {
           "id": "opt-d",
-          "label": "Chỉ ép tim 100 lần liên tục mà tuyệt đối không được thổi ngạt"
+          "label": "Chỉ thổi ngạt liên tục 50 lần mà không cần ép tim"
         }
       ],
       "correctId": "opt-a"

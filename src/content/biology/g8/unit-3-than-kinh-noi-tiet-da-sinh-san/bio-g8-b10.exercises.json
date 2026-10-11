@@ -16,7 +16,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Lớp biểu bì → Lớp bì → Lớp mỡ dưới da"
+          "label": "Tầng sừng → Lớp mỡ dưới da → Lớp bì"
         },
         {
           "id": "opt-b",
@@ -24,14 +24,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Lớp mỡ dưới da → Lớp bì → Lớp biểu bì"
+          "label": "Lớp biểu bì → Lớp bì → Lớp mỡ dưới da"
         },
         {
           "id": "opt-d",
-          "label": "Tầng sừng → Lớp mỡ dưới da → Lớp bì"
+          "label": "Lớp mỡ dưới da → Lớp bì → Lớp biểu bì"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -85,7 +85,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Hấp thụ và ngăn chặn tác hại của tia cực tím (tia UV) trong ánh nắng mặt trời, bảo vệ ADN tế bào da không bị tổn thương"
+          "label": "Trực tiếp tiêu hóa các vi khuẩn gây bệnh bám trên bề mặt da"
         },
         {
           "id": "opt-b",
@@ -93,14 +93,14 @@
         },
         {
           "id": "opt-c",
-          "label": "Trực tiếp tiêu hóa các vi khuẩn gây bệnh bám trên bề mặt da"
+          "label": "Hấp thụ và ngăn chặn tác hại của tia cực tím (tia UV) trong ánh nắng mặt trời, bảo vệ ADN tế bào da không bị tổn thương"
         },
         {
           "id": "opt-d",
           "label": "Làm cho lông dựng đứng lên để giữ ấm cơ thể"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-c"
     },
     "hints": [
       {
@@ -158,15 +158,15 @@
         },
         {
           "id": "opt-b",
-          "label": "Tầng tế bào sừng bong vảy và các hạt sắc tố melanin"
+          "label": "Các mô xương cứng và sụn khớp cử động"
         },
         {
           "id": "opt-c",
-          "label": "Chỉ có các tế bào mỡ đệm cách nhiệt dày dặn"
+          "label": "Tầng tế bào sừng bong vảy và các hạt sắc tố melanin"
         },
         {
           "id": "opt-d",
-          "label": "Các mô xương cứng và sụn khớp cử động"
+          "label": "Chỉ có các tế bào mỡ đệm cách nhiệt dày dặn"
         }
       ],
       "correctId": "opt-a"
@@ -223,22 +223,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Mao mạch dưới da dãn ra giúp máu lưu thông nhiều để bức xạ nhiệt, đồng thời tuyến mồ hôi tăng tiết mồ hôi để bốc hơi làm mát"
-        },
-        {
-          "id": "opt-b",
           "label": "Mao mạch dưới da co thắt lại và tuyến mồ hôi ngừng tiết hoàn toàn để tích nước"
         },
         {
+          "id": "opt-b",
+          "label": "Mao mạch dưới da dãn ra giúp máu lưu thông nhiều để bức xạ nhiệt, đồng thời tuyến mồ hôi tăng tiết mồ hôi để bốc hơi làm mát"
+        },
+        {
           "id": "opt-c",
-          "label": "Cơ dựng lông co lại làm nổi da gà để ngăn không khí nóng xâm nhập"
+          "label": "Các cơ bắp co giật liên tục (run cơ) để đốt cháy nhiệt thừa"
         },
         {
           "id": "opt-d",
-          "label": "Các cơ bắp co giật liên tục (run cơ) để đốt cháy nhiệt thừa"
+          "label": "Cơ dựng lông co lại làm nổi da gà để ngăn không khí nóng xâm nhập"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-b"
     },
     "hints": [
       {
@@ -296,15 +296,15 @@
         },
         {
           "id": "opt-b",
-          "label": "Nổi da gà để phát tín hiệu báo động cho người xung quanh; run cơ để làm mềm khớp"
-        },
-        {
-          "id": "opt-c",
           "label": "Để làm tăng tối đa quá trình thoát mồ hôi qua lỗ chân lông"
         },
         {
-          "id": "opt-d",
+          "id": "opt-c",
           "label": "Là hiện tượng co giật bệnh lí nguy hiểm không mang ý nghĩa điều hòa thân nhiệt"
+        },
+        {
+          "id": "opt-d",
+          "label": "Nổi da gà để phát tín hiệu báo động cho người xung quanh; run cơ để làm mềm khớp"
         }
       ],
       "correctId": "opt-a"
@@ -365,11 +365,11 @@
         },
         {
           "id": "opt-b",
-          "label": "Tủy sống thắt lưng"
+          "label": "Vỏ đại não thùy chẩm"
         },
         {
           "id": "opt-c",
-          "label": "Vỏ đại não thùy chẩm"
+          "label": "Tủy sống thắt lưng"
         },
         {
           "id": "opt-d",
@@ -430,22 +430,22 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Đội mũ nón rộng vành, mặc trang phục thoáng mát thấm mồ hôi và uống bổ sung nước có pha ít muối khoáng định kì"
-        },
-        {
-          "id": "opt-b",
-          "label": "Uống thật nhiều nước đá lạnh có gas và không đội mũ để đầu tóc đón gió"
-        },
-        {
-          "id": "opt-c",
           "label": "Nhịn uống nước hoàn toàn để tránh đổ mồ hôi làm bẩn quần áo"
         },
         {
-          "id": "opt-d",
+          "id": "opt-b",
           "label": "Lao động liên tục giữa trời trưa nắng 12h mà không cần nghỉ ngơi"
+        },
+        {
+          "id": "opt-c",
+          "label": "Uống thật nhiều nước đá lạnh có gas và không đội mũ để đầu tóc đón gió"
+        },
+        {
+          "id": "opt-d",
+          "label": "Đội mũ nón rộng vành, mặc trang phục thoáng mát thấm mồ hôi và uống bổ sung nước có pha ít muối khoáng định kì"
         }
       ],
-      "correctId": "opt-a"
+      "correctId": "opt-d"
     },
     "hints": [
       {
@@ -503,15 +503,15 @@
         },
         {
           "id": "opt-b",
-          "label": "Ngâm vết bỏng dưới vòi nước sạch mát trong 15 - 20 phút"
+          "label": "Dùng gạc y tế vô trùng che phủ nhẹ nhàng vết bỏng rồi đưa nạn nhân đến viện"
         },
         {
           "id": "opt-c",
-          "label": "Cởi bỏ nhẹ nhàng quần áo vùng bị bỏng trước khi vết thương phù nề"
+          "label": "Ngâm vết bỏng dưới vòi nước sạch mát trong 15 - 20 phút"
         },
         {
           "id": "opt-d",
-          "label": "Dùng gạc y tế vô trùng che phủ nhẹ nhàng vết bỏng rồi đưa nạn nhân đến viện"
+          "label": "Cởi bỏ nhẹ nhàng quần áo vùng bị bỏng trước khi vết thương phù nề"
         }
       ],
       "correctId": "opt-a"

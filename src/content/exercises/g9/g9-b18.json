@@ -12,22 +12,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Bạc (Ag)"
+          "label": "Nhôm (Al)"
         },
         {
           "id": "b",
-          "label": "Đồng (Cu)"
+          "label": "Bạc (Ag)"
         },
         {
           "id": "c",
-          "label": "Vàng (Au)"
+          "label": "Đồng (Cu)"
         },
         {
           "id": "d",
-          "label": "Nhôm (Al)"
+          "label": "Vàng (Au)"
         }
       ],
-      "correctId": "a"
+      "correctId": "b"
     },
     "hints": [
       {
@@ -77,22 +77,22 @@
       "options": [
         {
           "id": "a",
-          "label": "Sủi bọt khí không màu mãnh liệt, đinh sắt tan hết"
-        },
-        {
-          "id": "b",
           "label": "Xuất hiện kết tủa trắng, không có chất bám vào đinh sắt"
         },
         {
-          "id": "c",
+          "id": "b",
           "label": "Có lớp kim loại màu đỏ bám trên đinh sắt, màu xanh lam của dung dịch nhạt dần"
         },
         {
-          "id": "d",
+          "id": "c",
           "label": "Không có hiện tượng gì xảy ra"
+        },
+        {
+          "id": "d",
+          "label": "Sủi bọt khí không màu mãnh liệt, đinh sắt tan hết"
         }
       ],
-      "correctId": "c"
+      "correctId": "b"
     },
     "hints": [
       {
