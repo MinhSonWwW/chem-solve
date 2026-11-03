@@ -135,7 +135,11 @@
         "id": "cm-01",
         "message": "Nhầm số liên kết hydrogen: tưởng A-T có 3 liên kết và G-C có 2 liên kết."
       }
-    ]
+    ],
+    "visual": {
+      "image": "/assets/images/bio-g9-dna-structure.jpg",
+      "caption": "Sơ đồ: Cấu trúc xoắn kép ADN và nguyên tắc bổ sung A-T, G-C"
+    }
   },
   {
     "id": "bio-g9-b03-q03",
@@ -528,5 +532,110 @@
         "message": "Nhầm khoảng cách giữa 2 cặp nu (3,4 Å) với đường kính vòng xoắn (20 Å)."
       }
     ]
+  },
+  {
+    "id": "bio-g9-b03-ord-001",
+    "lessonId": "bio-g9-b03",
+    "skillIds": [
+      "chromosome-structure"
+    ],
+    "difficulty": 2,
+    "prompt": "Sắp xếp các cấp độ cuộn xoắn cấu trúc siêu hiển vi của nhiễm sắc thể (NST) **từ kích thước nhỏ nhất đến lớn nhất**.",
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Phân tử DNA kép xoắn kép (đường kính 2 nm).",
+        "Sợi cơ bản gồm chuỗi các nucleosome quấn quanh khối protein histone (đường kính 11 nm).",
+        "Sợi nhiễm sắc cuộn xoắn cấp hai (đường kính 30 nm).",
+        "Vùng xếp cuộn / Vùng sợi siêu xoắn (đường kính 300 nm).",
+        "Chromatid của nhiễm sắc thể kép (đường kính 700 nm)."
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Kích thước đường kính tăng dần: 2 nm → 11 nm → 30 nm → 300 nm → 700 nm (và NST ở kì giữa đạt 1400 nm)."
+      },
+      {
+        "level": 2,
+        "text": "Bắt đầu từ phân tử DNA mạch kép, quấn quanh protein histone tạo nucleosome (sợi cơ bản), rồi cuộn xoắn nhiều cấp tạo chromatid."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cấu trúc siêu hiển vi NST",
+        "body": "Trật tự các bậc cuộn xoắn đóng gói DNA trong nhân tế bào."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đường kính từng cấp",
+        "body": "DNA (2nm) → Sợi cơ bản (11nm) → Sợi nhiễm sắc (30nm) → Vùng xếp cuộn (300nm) → Chromatid (700nm)."
+      },
+      {
+        "kind": "answer",
+        "title": "Sắp xếp",
+        "body": "Sắp xếp đúng 5 cấp độ từ nhỏ đến lớn."
+      }
+    ],
+    "finalSolution": "Thứ tự kích thước: **DNA (2 nm) → Sợi cơ bản (11 nm) → Sợi nhiễm sắc (30 nm) → Vùng xếp cuộn (300 nm) → Chromatid (700 nm)**."
+  },
+  {
+    "id": "bio-g9-b03-match-002",
+    "lessonId": "bio-g9-b03",
+    "skillIds": [
+      "dna-complementary-rule"
+    ],
+    "difficulty": 1,
+    "prompt": "Ghép các loại nucleotide trên mạch đơn của phân tử DNA với **nucleotide liên kết bổ sung và số liên kết hydrogen tương ứng**.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Adenine (A) liên kết với",
+          "right": "Thymine (T) bằng 2 liên kết hydrogen (A = T)"
+        },
+        {
+          "left": "Thymine (T) liên kết với",
+          "right": "Adenine (A) bằng 2 liên kết hydrogen (T = A)"
+        },
+        {
+          "left": "Guanine (G) liên kết với",
+          "right": "Cytosine (C) bằng 3 liên kết hydrogen (G ≡ C)"
+        },
+        {
+          "left": "Cytosine (C) liên kết với",
+          "right": "Guanine (G) bằng 3 liên kết hydrogen (C ≡ G)"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nguyên tắc bổ sung trong DNA: A liên kết với T bằng 2 liên kết H; G liên kết với C bằng 3 liên kết H."
+      },
+      {
+        "level": 2,
+        "text": "Nhớ công thức: A liên kết với T (2 gạch), G liên kết với C (3 gạch bền hơn)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nguyên tắc bổ sung (Watson - Crick)",
+        "body": "Quy luật bắt cặp bazơ giữa hai mạch đơn DNA."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Liên kết hydrogen",
+        "body": "A-T có 2 liên kết H; G-C có 3 liên kết H."
+      },
+      {
+        "kind": "answer",
+        "title": "Nối cặp",
+        "body": "Nối đúng 4 cặp nucleotide."
+      }
+    ],
+    "finalSolution": "**A** liên kết với **T** (2 liên kết H); **G** liên kết với **C** (3 liên kết H)."
   }
 ]

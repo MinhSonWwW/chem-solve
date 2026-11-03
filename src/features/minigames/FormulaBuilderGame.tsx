@@ -169,7 +169,7 @@ export const FormulaBuilderGame: React.FC<{ onExit: () => void }> = ({ onExit })
           <div>
             <span className="text-slate-400">Nhiệm vụ {pairIndex + 1}/{ionPairs.length}:</span>
             <p className="font-bold text-slate-200 mt-0.5">
-              Cân bằng điện tích giữa <span className="text-cyan-400">{currentPair.cation.nameVi}</span> và{' '}
+              Cân bằng điện tích giữa <span className="text-[var(--chem-fg)]">{currentPair.cation.nameVi}</span> và{' '}
               <span className="text-pink-400">{currentPair.anion.nameVi}</span>
             </p>
           </div>
@@ -181,16 +181,16 @@ export const FormulaBuilderGame: React.FC<{ onExit: () => void }> = ({ onExit })
         {/* Ion adjustment trays */}
         <div className="grid grid-cols-2 gap-3">
           {/* Cation Tray */}
-          <div className="bg-slate-900 border-2 border-cyan-500/30 rounded-2xl p-3.5 flex flex-col items-center justify-between shadow-lg">
+          <div className="bg-slate-900 border-2 border-[var(--chem-edge)]/40 rounded-2xl p-3.5 flex flex-col items-center justify-between shadow-lg">
             <div className="text-center space-y-1">
-              <span className="text-[10px] font-black uppercase tracking-wider text-cyan-400">
+              <span className="text-[10px] font-black uppercase tracking-wider text-[var(--chem-fg)]">
                 Ion Dương (Cation)
               </span>
               <div className="py-2 text-2xl font-black text-cyan-200">
                 <Formula formula={currentPair.cation.symbol} />
               </div>
               <p className="text-[11px] text-slate-400 font-medium">
-                Điện tích: <span className="text-cyan-300 font-bold">+{currentPair.cation.charge}</span>
+                Điện tích: <span className="text-[var(--chem-fg)] font-bold">+{currentPair.cation.charge}</span>
               </p>
             </div>
 
@@ -209,13 +209,13 @@ export const FormulaBuilderGame: React.FC<{ onExit: () => void }> = ({ onExit })
               <button
                 disabled={cationCount >= 4 || !!successFormula}
                 onClick={() => setCationCount((c) => Math.min(4, c + 1))}
-                className="w-8 h-8 rounded-lg bg-cyan-600/30 hover:bg-cyan-600/50 text-cyan-300 flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed transition"
+                className="w-8 h-8 rounded-lg bg-cyan-600/30 hover:bg-cyan-600/50 text-[var(--chem-fg)] flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed transition"
               >
                 <Plus className="w-4 h-4" />
               </button>
             </div>
 
-            <div className="text-[10px] font-bold text-cyan-400 mt-2">
+            <div className="text-[10px] font-bold text-[var(--chem-fg)] mt-2">
               Tổng điện tích: +{totalPositive}
             </div>
           </div>
@@ -284,7 +284,7 @@ export const FormulaBuilderGame: React.FC<{ onExit: () => void }> = ({ onExit })
             <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-slate-500 z-10" />
             <div
               className={`h-full transition-all duration-300 ${
-                isNeutral ? 'w-full bg-emerald-500' : netCharge > 0 ? 'bg-cyan-500' : 'bg-pink-500'
+                isNeutral ? 'w-full bg-[var(--ok-fill)]' : netCharge > 0 ? 'bg-[var(--chem-fill)]' : 'bg-[var(--gem-fill)]'
               }`}
               style={{
                 width: isNeutral ? '100%' : `${Math.min(100, Math.abs(netCharge) * 25)}%`,

@@ -136,7 +136,11 @@
         "body": "Lớp đồng đỏ bám ngoài đinh sắt và màu xanh lam của dung dịch CuSO4 nhạt dần."
       }
     ],
-    "finalSolution": "Có lớp kim loại màu đỏ bám ngoài đinh sắt, màu xanh lam của dung dịch nhạt dần"
+    "finalSolution": "Có lớp kim loại màu đỏ bám ngoài đinh sắt, màu xanh lam của dung dịch nhạt dần",
+    "visual": {
+      "image": "/assets/images/chem-g9-fe-cuso4.jpg",
+      "caption": "Thí nghiệm: Đinh sắt (Fe) nhúng trong dung dịch Đồng(II) sunfat (CuSO4)"
+    }
   },
   {
     "id": "g9-b19-ordering-001",
@@ -329,5 +333,55 @@
     ],
     "finalSolution": "Trước H: **K, Mg, Zn, Fe** · Sau H: **Cu, Ag**.",
     "commonMistakes": []
+  },
+  {
+    "id": "g9-b19-ord-001",
+    "lessonId": "g9-b19",
+    "skillIds": [
+      "metal-activity-series"
+    ],
+    "difficulty": 1,
+    "prompt": "Kéo thả các kim loại để sắp xếp theo **chiều giảm dần mức độ hoạt động hóa học** từ trái sang phải.",
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Kali (K)",
+        "Natri (Na)",
+        "Magnesium (Mg)",
+        "Nhôm (Al)",
+        "Kẽm (Zn)",
+        "Sắt (Fe)",
+        "Đồng (Cu)",
+        "Bạc (Ag)"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhẩm câu thần chú dãy hoạt động hóa học: Khi Nào May Áo Giáp Sắt ... Cửa Hàng Á Phi Âu."
+      },
+      {
+        "level": 2,
+        "text": "K > Na > Mg > Al > Zn > Fe > Cu > Ag."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quy tắc dãy hoạt động hóa học",
+        "body": "Sắp xếp theo mức độ giảm dần hoạt động hóa học."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Dãy hoạt động",
+        "body": "K, Na (kim loại kiềm mạnh nhất) → Mg, Al, Zn, Fe (trung bình) → Cu, Ag (yếu)."
+      },
+      {
+        "kind": "answer",
+        "title": "Trật tự hoàn chỉnh",
+        "body": "K → Na → Mg → Al → Zn → Fe → Cu → Ag."
+      }
+    ],
+    "finalSolution": "Thứ tự giảm dần: **K → Na → Mg → Al → Zn → Fe → Cu → Ag**."
   }
 ]

@@ -550,5 +550,63 @@
         "message": "Nghĩ rằng di truyền liên kết làm tăng biến dị tổ hợp (thực tế phân li độc lập mới làm tăng biến dị tổ hợp)."
       }
     ]
+  },
+  {
+    "id": "bio-g9-b10-match-001",
+    "lessonId": "bio-g9-b10",
+    "skillIds": [
+      "human-genetics-disorders"
+    ],
+    "difficulty": 2,
+    "prompt": "Ghép các hội chứng và bệnh di truyền ở người với **đặc điểm đột biến số lượng hoặc liên kết giới tính tương ứng**.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Hội chứng Down (Đao)",
+          "right": "Có 3 nhiễm sắc thể ở cặp số 21 (thể ba nhiễm $2n+1 = 47$ NST)"
+        },
+        {
+          "left": "Hội chứng Turner (Tơc-nơ)",
+          "right": "Nữ giới chỉ có 1 NST X ở cặp giới tính (cặp 23 dạng OX, $2n-1 = 45$ NST)"
+        },
+        {
+          "left": "Hội chứng Klinefelter (Claifentơ)",
+          "right": "Nam giới thừa 1 NST X ở cặp giới tính (cặp 23 dạng XXY, $2n+1 = 47$ NST)"
+        },
+        {
+          "left": "Bệnh máu khó đông và mù màu",
+          "right": "Do gen lặn nằm trên vùng không tương đồng của NST giới tính X quy định"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hội chứng Down thừa 1 NST ở cặp 21; Turner thiếu 1 NST giới tính (OX); Klinefelter thừa 1 NST giới tính (XXY)."
+      },
+      {
+        "level": 2,
+        "text": "Máu khó đông và mù màu là bệnh do gen lặn trên NST X, biểu hiện chủ yếu ở nam giới (XY)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bệnh di truyền người",
+        "body": "Phân loại hội chứng NST thường, hội chứng NST giới tính và bệnh gen lặn trên X."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc điểm di truyền",
+        "body": "Down: 3 NST 21; Turner: OX (45); Klinefelter: XXY (47); Máu khó đông/mù màu: gen lặn trên X."
+      },
+      {
+        "kind": "answer",
+        "title": "Nối cặp",
+        "body": "Nối đúng 4 hội chứng bệnh."
+      }
+    ],
+    "finalSolution": "**Down:** 3 NST cặp 21; **Turner:** nữ OX (45 NST); **Klinefelter:** nam XXY (47 NST); **Máu khó đông/mù màu:** gen lặn trên NST X."
   }
 ]

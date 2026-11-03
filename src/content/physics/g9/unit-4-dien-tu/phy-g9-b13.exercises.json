@@ -550,5 +550,52 @@
         "message": "Lý do hoàn toàn là kĩ thuật dẫn điện an toàn, không phải vì cuộn dây nặng hơn nam châm."
       }
     ]
+  },
+  {
+    "id": "phy-g9-b13-ord-001",
+    "lessonId": "phy-g9-b13",
+    "skillIds": [
+      "transformer-power-grid"
+    ],
+    "difficulty": 2,
+    "prompt": "Sắp xếp theo thứ tự **chu trình truyền tải điện năng từ nhà máy điện đến các thiết bị gia đình** để giảm hao phí nhiệt trên đường dây.",
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Máy phát điện tại nhà máy sản xuất dòng điện xoay chiều có hiệu điện thế cỡ vài nghìn Vôn (khoảng 6 - 25 kV).",
+        "Máy biến áp tăng áp đặt tại nhà máy nâng hiệu điện thế lên hàng trăm nghìn Vôn (110 kV, 220 kV, 500 kV).",
+        "Dòng điện cao thế được truyền tải đi xa qua hệ thống đường dây truyền tải cao áp trên các cột điện lớn.",
+        "Tại trạm biến áp phân phối địa phương, máy hạ áp hạ dần hiệu điện thế qua các cấp xuống còn 220 V.",
+        "Dòng điện xoay chiều 220 V an toàn được dẫn vào mạng điện sinh hoạt của các hộ gia đình tiêu thụ."
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Công suất hao phí tỉ lệ nghịch với bình phương hiệu điện thế ($P_{hp} \\sim 1/U^2$), do đó phải tăng áp trước khi truyền đi xa."
+      },
+      {
+        "level": 2,
+        "text": "Chu trình: Sản xuất điện → Tăng áp → Truyền tải xa → Hạ áp qua trạm trung gian → Cung cấp 220 V cho gia đình."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mục đích truyền tải điện",
+        "body": "Tăng U để giảm hao phí tỏa nhiệt trên đường dây dài."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy trình thực tế",
+        "body": "Nhà máy phát điện → Máy tăng áp → Đường dây cao thế → Trạm hạ áp → Hộ gia đình 220 V."
+      },
+      {
+        "kind": "answer",
+        "title": "Sắp xếp",
+        "body": "Trình tự hợp lý 5 giai đoạn truyền tải điện năng."
+      }
+    ],
+    "finalSolution": "Quy trình: **Phát điện tại nhà máy → Máy tăng áp lên cao thế → Truyền tải xa trên dây cao thế → Máy hạ áp tại trạm phân phối → Mạng điện gia đình 220 V**."
   }
 ]

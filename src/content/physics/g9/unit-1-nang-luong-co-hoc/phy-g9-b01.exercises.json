@@ -544,5 +544,145 @@
         ]
       }
     ]
+  },
+  {
+    "id": "phy-g9-b01-sort-001",
+    "lessonId": "phy-g9-b01",
+    "skillIds": [
+      "kinetic-potential-energy"
+    ],
+    "difficulty": 1,
+    "prompt": "Thao tác kéo thả phân loại các vật và hiện tượng sau vào nhóm mang **Động năng** hay mang **Thế năng trọng trường**.",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        {
+          "id": "kinetic",
+          "label": "Động năng (Do vật đang chuyển động mà có)"
+        },
+        {
+          "id": "potential",
+          "label": "Thế năng trọng trường (Do vật ở độ cao so với mốc mà có)"
+        }
+      ],
+      "items": [
+        {
+          "id": "bullet",
+          "label": "Viên đạn đang bay với vận tốc 400 m/s",
+          "bucketId": "kinetic"
+        },
+        {
+          "id": "car",
+          "label": "Chiếc ô tô đang chạy trên đường cao tốc",
+          "bucketId": "kinetic"
+        },
+        {
+          "id": "river",
+          "label": "Dòng nước đang chảy xiết qua tua-bin",
+          "bucketId": "kinetic"
+        },
+        {
+          "id": "coconut",
+          "label": "Quả dừa đang treo trên cây dừa cao 8 m",
+          "bucketId": "potential"
+        },
+        {
+          "id": "chandelier",
+          "label": "Chiếc đèn chùm đang treo cố định trên trần nhà",
+          "bucketId": "potential"
+        },
+        {
+          "id": "dam",
+          "label": "Khối nước tích trữ tĩnh trong hồ đập thủy điện trên núi cao",
+          "bucketId": "potential"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Vật đang di chuyển với vận tốc v thì mang động năng (W_đ = 0.5 m v^2)."
+      },
+      {
+        "level": 2,
+        "text": "Vật đứng yên ở một độ cao h so với mặt đất thì mang thế năng trọng trường (W_t = 10 m h)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bản chất dạng năng lượng",
+        "body": "Chuyển động → Động năng; Độ cao → Thế năng trọng trường."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân tích trạng thái",
+        "body": "Viên đạn, ô tô, dòng nước chảy đang có vận tốc. Quả dừa, đèn chùm, hồ nước có độ cao tích lũy."
+      },
+      {
+        "kind": "answer",
+        "title": "Xếp nhóm",
+        "body": "Phân chia 6 trường hợp vào 2 xô năng lượng tương ứng."
+      }
+    ],
+    "finalSolution": "**Động năng:** Viên đạn bay, ô tô chạy, dòng nước chảy xiết.\n**Thế năng trọng trường:** Quả dừa trên cây, đèn chùm trên trần, khối nước hồ đập thủy điện."
+  },
+  {
+    "id": "phy-g9-b01-match-001",
+    "lessonId": "phy-g9-b01",
+    "skillIds": [
+      "mechanical-energy-conservation"
+    ],
+    "difficulty": 1,
+    "prompt": "Chạm nối từng đại lượng cơ học với **công thức tính chuẩn trong SGK KHTN 9**.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Động năng của vật (W_đ)",
+          "right": "$W_đ = \\frac{1}{2} m v^2$"
+        },
+        {
+          "left": "Thế năng trọng trường (W_t)",
+          "right": "$W_t = P \\cdot h = 10 m \\cdot h$"
+        },
+        {
+          "left": "Cơ năng tổng cộng của vật (W)",
+          "right": "$W = W_đ + W_t$"
+        },
+        {
+          "left": "Định luật bảo toàn cơ năng",
+          "right": "$W = \\text{hằng số (const) khi bỏ qua ma sát và lực cản}$"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Động năng phụ thuộc vào khối lượng m và bình phương vận tốc v; thế năng phụ thuộc vào độ cao h."
+      },
+      {
+        "level": 2,
+        "text": "Cơ năng là tổng động năng và thế năng, được bảo toàn khi không có ma sát."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hệ thống công thức cơ năng",
+        "body": "Đối chiếu đại lượng và biểu thức toán học tương ứng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Công thức SGK",
+        "body": "Wđ = 1/2 m v^2; Wt = 10 m h; W = Wđ + Wt; W = const."
+      },
+      {
+        "kind": "answer",
+        "title": "Nối cặp",
+        "body": "Ghép chính xác 4 công thức."
+      }
+    ],
+    "finalSolution": "**W_đ** = $\\frac{1}{2}mv^2$; **W_t** = $10mh$; **W** = $W_đ + W_t$; **Bảo toàn**: $W = \\text{const}$."
   }
 ]

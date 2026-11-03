@@ -269,5 +269,63 @@
     ],
     "finalSolution": "Chất béo không tan trong nước (S3 Sai). S1, S2, S4 đều đúng.",
     "commonMistakes": []
+  },
+  {
+    "id": "g9-b28-match-001",
+    "lessonId": "g9-b28",
+    "skillIds": [
+      "lipids-fats"
+    ],
+    "difficulty": 1,
+    "prompt": "Ghép tính chất và phản ứng của chất béo (lipid) với **đặc điểm hóa học tương ứng**.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Tính chất vật lý của chất béo",
+          "right": "Nhẹ hơn nước, không tan trong nước, tan tốt trong benzen, xăng, ete"
+        },
+        {
+          "left": "Phản ứng xà phòng hóa",
+          "right": "Đun nóng chất béo với dung dịch kiềm (NaOH) tạo muối của acid béo (xà phòng) và glycerol"
+        },
+        {
+          "left": "Phản ứng thủy phân trong acid",
+          "right": "Đun nóng chất béo với nước có xúc tác acid tạo glycerol và các acid béo tự do"
+        },
+        {
+          "left": "Trạng thái mỡ động vật và dầu thực vật",
+          "right": "Chất béo no thường ở thể rắn (mỡ lợn, mỡ bò); chất béo không no ở thể lỏng (dầu mè, dầu lạc)"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Chất béo là trieste của glycerol và các acid béo."
+      },
+      {
+        "level": 2,
+        "text": "Phản ứng với dung dịch NaOH gọi là phản ứng xà phòng hóa vì tạo ra muối xà phòng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tính chất của chất béo",
+        "body": "Xác định tính chất vật lý và phản ứng thủy phân của lipid."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Xà phòng hóa",
+        "body": "Chất béo + NaOH → Muối acid béo (xà phòng) + Glycerol."
+      },
+      {
+        "kind": "answer",
+        "title": "Nối cặp",
+        "body": "Nối đúng 4 đặc điểm của chất béo."
+      }
+    ],
+    "finalSolution": "**Tính chất vật lý:** nhẹ hơn nước, không tan trong nước; **Xà phòng hóa:** tác dụng NaOH tạo xà phòng + glycerol; **Trạng thái:** mỡ rắn, dầu lỏng."
   }
 ]

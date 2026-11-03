@@ -241,5 +241,63 @@
     ],
     "finalSolution": "Protein bị thủy phân trong dạ dày thành amino acid (S3 Sai). S1, S2, S4 đều đúng.",
     "commonMistakes": []
+  },
+  {
+    "id": "g9-b31-match-001",
+    "lessonId": "g9-b31",
+    "skillIds": [
+      "protein-properties"
+    ],
+    "difficulty": 1,
+    "prompt": "Ghép các hiện tượng biến đổi của protein (chất đạm) với **bản chất hoặc ứng dụng thực tiễn tương ứng**.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Đông tụ protein do nhiệt độ",
+          "right": "Lòng trắng trứng đông cứng lại khi luộc chín; riêu cua nổi lên khi nấu canh"
+        },
+        {
+          "left": "Đông tụ protein do acid hoặc cồn",
+          "right": "Vắt chanh/giấm vào sữa đậu nành kết tủa; dùng cồn 70° sát trùng diệt vi khuẩn"
+        },
+        {
+          "left": "Hiện tượng đốt cháy protein",
+          "right": "Tóc, lông gà, tơ tằm khi đốt cháy có mùi khét đặc trưng (mùi khét sừng)"
+        },
+        {
+          "left": "Phản ứng thủy phân protein",
+          "right": "Dưới tác dụng của enzyme trong hệ tiêu hóa, protein bị phân giải thành các amino acid"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Protein bị đông tụ bởi nhiệt độ cao, acid, bazơ hoặc cồn mạnh."
+      },
+      {
+        "level": 2,
+        "text": "Đốt tóc hay lông có mùi khét là cách nhận biết vải tơ tằm thật (chứa protein) với sợi tổng hợp."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tính chất của Protein",
+        "body": "Đông tụ, đốt cháy có mùi khét, thủy phân thành amino acid."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hiện tượng đời sống",
+        "body": "Luộc trứng: đông tụ nhiệt; chanh vào sữa: đông tụ acid; đốt tóc: mùi khét; tiêu hóa: thủy phân."
+      },
+      {
+        "kind": "answer",
+        "title": "Nối cặp",
+        "body": "Nối chuẩn xác 4 hiện tượng."
+      }
+    ],
+    "finalSolution": "**Đông tụ nhiệt:** luộc trứng, riêu cua; **Đông tụ acid/cồn:** chanh vào sữa, cồn sát khuẩn; **Đốt cháy:** mùi khét đặc trưng; **Thủy phân:** tạo amino acid."
   }
 ]

@@ -38,37 +38,37 @@ const BLOOD_RULES: Record<
     antigens: 'Không có kháng nguyên A, B',
     antibodies: 'Có kháng thể α và β',
     compatibleDonors: ['O'],
-    color: 'bg-emerald-500/20',
-    text: 'text-emerald-400',
-    border: 'border-emerald-500/50',
-    glow: 'shadow-[0_4px_0_0_#059669]',
+    color: 'bg-[var(--bio-subtle)]',
+    text: 'text-[var(--bio-fg)]',
+    border: 'border-[var(--bio)]',
+    glow: 'shadow-[0_4px_0_0_var(--bio-shade)]',
   },
   A: {
     antigens: 'Có kháng nguyên A',
     antibodies: 'Có kháng thể β (chống B)',
     compatibleDonors: ['O', 'A'],
-    color: 'bg-sky-500/20',
-    text: 'text-sky-400',
-    border: 'border-sky-500/50',
-    glow: 'shadow-[0_4px_0_0_#0284c7]',
+    color: 'bg-[var(--chem-subtle)]',
+    text: 'text-[var(--chem-fg)]',
+    border: 'border-[var(--chem)]',
+    glow: 'shadow-[0_4px_0_0_var(--chem-shade)]',
   },
   B: {
     antigens: 'Có kháng nguyên B',
     antibodies: 'Có kháng thể α (chống A)',
     compatibleDonors: ['O', 'B'],
-    color: 'bg-amber-500/20',
-    text: 'text-amber-400',
-    border: 'border-amber-500/50',
-    glow: 'shadow-[0_4px_0_0_#b45309]',
+    color: 'bg-[var(--warn-subtle)]',
+    text: 'text-[var(--warn-fg)]',
+    border: 'border-[var(--warn)]',
+    glow: 'shadow-[0_4px_0_0_var(--warn-shade)]',
   },
   AB: {
     antigens: 'Có cả kháng nguyên A và B',
     antibodies: 'Không có kháng thể α, β',
     compatibleDonors: ['O', 'A', 'B', 'AB'],
-    color: 'bg-purple-500/20',
-    text: 'text-purple-400',
-    border: 'border-purple-500/50',
-    glow: 'shadow-[0_4px_0_0_#7e22ce]',
+    color: 'bg-[var(--phy-subtle)]',
+    text: 'text-[var(--phy-fg)]',
+    border: 'border-[var(--phy)]',
+    glow: 'shadow-[0_4px_0_0_var(--phy-shade)]',
   },
 };
 
@@ -233,22 +233,22 @@ export const BloodTransfusionGame: React.FC<{ onExit: () => void }> = ({ onExit 
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           className={cn(
-            'p-4 rounded-3xl border-2 transition-all relative overflow-hidden space-y-3 shadow-[0_6px_0_0_#131f24]',
+            'p-4 rounded-3xl border transition-all relative overflow-hidden space-y-3',
             feedback?.correct === false
-              ? 'bg-rose-950/60 border-rose-500 animate-shake'
-              : 'bg-[#18272f] border-[#2e4756]'
+              ? 'bg-[var(--err-subtle)] border-[var(--err)] animate-shake'
+              : 'bg-[var(--bg-surface)] border-[var(--border)]'
           )}
         >
           <div className="flex items-start justify-between gap-3">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-2xl bg-rose-500/20 border-2 border-rose-500/50 flex items-center justify-center text-rose-400 shrink-0">
-                <Heart className="w-6 h-6 fill-rose-500 text-rose-500 animate-pulse" />
+              <div className="w-12 h-12 rounded-2xl bg-[var(--err-subtle)] border border-[var(--err)] flex items-center justify-center text-[var(--err-fg)] shrink-0">
+                <Heart className="w-6 h-6 fill-[var(--err)] text-[var(--err)] animate-pulse" />
               </div>
 
               <div>
-                <h3 className="text-sm font-black text-white">{currentPatient.name}</h3>
-                <p className="text-[11px] text-slate-400">{currentPatient.condition}</p>
-                <span className="text-[10px] text-rose-400 font-bold block mt-0.5">
+                <h3 className="text-sm font-black text-[var(--fg-default)]">{currentPatient.name}</h3>
+                <p className="text-[11px] text-[var(--fg-muted)]">{currentPatient.condition}</p>
+                <span className="text-[10px] text-[var(--err-fg)] font-bold block mt-0.5">
                   ⚠️ {currentPatient.vitalStatus}
                 </span>
               </div>
@@ -256,12 +256,12 @@ export const BloodTransfusionGame: React.FC<{ onExit: () => void }> = ({ onExit 
 
             {/* Patient Blood Group Badge */}
             <div className="text-right shrink-0">
-              <span className="text-[10px] text-slate-400 font-bold block uppercase">
+              <span className="text-[10px] text-[var(--fg-subtle)] font-bold block uppercase">
                 Nhóm máu BN
               </span>
               <span
                 className={cn(
-                  'text-2xl font-black px-3 py-1 rounded-2xl border-2 inline-block shadow-md',
+                  'text-2xl font-black px-3 py-1 rounded-2xl border-2 inline-block',
                   patientRule.color,
                   patientRule.text,
                   patientRule.border,
@@ -274,18 +274,18 @@ export const BloodTransfusionGame: React.FC<{ onExit: () => void }> = ({ onExit 
           </div>
 
           {/* Biological details of patient's blood */}
-          <div className="grid grid-cols-2 gap-2 text-left bg-[#131f24] p-2.5 rounded-2xl border border-slate-700/60 text-[11px]">
+          <div className="grid grid-cols-2 gap-2 text-left bg-[var(--bg-canvas)] p-2.5 rounded-2xl border border-[var(--border)] text-[11px]">
             <div>
-              <span className="text-[10px] uppercase font-bold text-slate-400 block">
+              <span className="text-[10px] uppercase font-bold text-[var(--fg-subtle)] block">
                 Kháng thể huyết tương:
               </span>
-              <strong className="text-rose-300 font-semibold">{patientRule.antibodies}</strong>
+              <strong className="text-[var(--err-fg)] font-semibold">{patientRule.antibodies}</strong>
             </div>
             <div>
-              <span className="text-[10px] uppercase font-bold text-slate-400 block">
+              <span className="text-[10px] uppercase font-bold text-[var(--fg-subtle)] block">
                 Kháng nguyên hồng cầu:
               </span>
-              <strong className="text-sky-300 font-semibold">{patientRule.antigens}</strong>
+              <strong className="text-[var(--chem-fg)] font-semibold">{patientRule.antigens}</strong>
             </div>
           </div>
         </motion.div>
@@ -300,14 +300,14 @@ export const BloodTransfusionGame: React.FC<{ onExit: () => void }> = ({ onExit 
               className={cn(
                 'p-3 rounded-2xl border-2 text-xs font-bold flex items-center gap-2',
                 feedback.correct
-                  ? 'bg-emerald-950/80 border-emerald-500/60 text-emerald-300'
-                  : 'bg-rose-950/80 border-rose-500/80 text-rose-200'
+                  ? 'bg-[var(--ok-subtle)] border-[var(--ok)] text-[var(--ok-fg)]'
+                  : 'bg-[var(--err-subtle)] border-[var(--err)] text-[var(--err-fg)]'
               )}
             >
               {feedback.correct ? (
-                <ShieldCheck className="w-5 h-5 text-emerald-400 shrink-0" />
+                <ShieldCheck className="w-5 h-5 text-[var(--ok-fg)] shrink-0" />
               ) : (
-                <AlertTriangle className="w-5 h-5 text-rose-400 shrink-0 animate-bounce" />
+                <AlertTriangle className="w-5 h-5 text-[var(--err-fg)] shrink-0 animate-bounce" />
               )}
               <span>{feedback.message}</span>
             </motion.div>
@@ -317,11 +317,11 @@ export const BloodTransfusionGame: React.FC<{ onExit: () => void }> = ({ onExit 
         {/* Blood Bank Selection (4 TÚI MÁU ĐỂ HỌC SINH CHỌN) */}
         <div className="space-y-2">
           <div className="flex items-center justify-between px-1">
-            <span className="text-xs font-black uppercase tracking-wider text-slate-300 flex items-center gap-1.5">
-              <Droplets className="w-4 h-4 text-rose-400" />
+            <span className="text-xs font-black uppercase tracking-wider text-[var(--fg-default)] flex items-center gap-1.5">
+              <Droplets className="w-4 h-4 text-[var(--err-fg)]" />
               Ngân Hàng Máu — Chọn Túi Máu Tiếp Ứng:
             </span>
-            <span className="text-[10px] text-amber-300 font-bold">Bấm để truyền ngay</span>
+            <span className="text-[10px] text-[var(--warn-fg)] font-bold">Bấm để truyền ngay</span>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
@@ -334,16 +334,16 @@ export const BloodTransfusionGame: React.FC<{ onExit: () => void }> = ({ onExit 
                     handleSelectBloodBag(donorType);
                   }}
                   className={cn(
-                    'p-3 rounded-2xl border-2 transition-all flex flex-col items-center justify-center text-center group cursor-pointer shadow-[0_4px_0_0_#131f24] active:scale-95 disabled:cursor-not-allowed',
-                    'bg-[#18272f] hover:bg-[#20333d] border-[#2e4756] hover:border-rose-400'
+                    'p-3 rounded-2xl border transition-all flex flex-col items-center justify-center text-center group cursor-pointer shadow-[0_3px_0_0_var(--border-strong)] active:scale-95 disabled:cursor-not-allowed',
+                    'bg-[var(--bg-surface)] hover:bg-[var(--bg-muted)] border-[var(--border)] hover:border-[var(--err)]'
                   )}
                 >
-                  <div className="w-10 h-10 rounded-2xl bg-rose-500/20 border-2 border-rose-500/40 flex items-center justify-center mb-1 group-hover:scale-110 transition-transform">
-                    <Droplets className="w-5 h-5 text-rose-400 fill-rose-500" />
+                  <div className="w-10 h-10 rounded-2xl bg-[var(--err-subtle)] border border-[var(--err)] flex items-center justify-center mb-1 group-hover:scale-110 transition-transform">
+                    <Droplets className="w-5 h-5 text-[var(--err-fg)] fill-[var(--err)]" />
                   </div>
 
-                  <span className="text-lg font-black text-white">Túi {donorType}</span>
-                  <span className="text-[9px] text-slate-400 mt-0.5 line-clamp-1">
+                  <span className="text-lg font-black text-[var(--fg-default)]">Túi {donorType}</span>
+                  <span className="text-[9px] text-[var(--fg-subtle)] mt-0.5 line-clamp-1">
                     {donorType === 'O' ? 'Chuyên cho' : donorType === 'AB' ? 'Chuyên nhận' : `KN ${donorType}`}
                   </span>
                 </button>
@@ -353,7 +353,7 @@ export const BloodTransfusionGame: React.FC<{ onExit: () => void }> = ({ onExit 
         </div>
 
         {/* Educational Hint Footer */}
-        <div className="p-3 bg-[#14232c] border border-slate-700/60 rounded-2xl text-[11px] text-slate-400 text-left leading-relaxed">
+        <div className="p-3 bg-[var(--bg-canvas)] border border-[var(--border)] rounded-2xl text-[11px] text-[var(--fg-muted)] text-left leading-relaxed">
           💡 <strong>Nguyên tắc vàng truyền máu:</strong> Không để kháng nguyên trên hồng cầu người cho bị kháng thể trong huyết tương người nhận ngưng kết. Nhóm <strong>O</strong> truyền được cho tất cả các nhóm; Nhóm <strong>AB</strong> có thể nhận được từ tất cả các nhóm.
         </div>
       </div>

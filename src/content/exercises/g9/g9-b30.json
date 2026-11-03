@@ -259,5 +259,63 @@
     ],
     "finalSolution": "Cellulose không tác dụng với iodine tạo màu xanh tím (S3 Sai). S1, S2, S4 đều đúng.",
     "commonMistakes": []
+  },
+  {
+    "id": "g9-b30-match-001",
+    "lessonId": "g9-b30",
+    "skillIds": [
+      "carbohydrates"
+    ],
+    "difficulty": 1,
+    "prompt": "Ghép chất carbohydrate với **thuốc thử hoặc hiện tượng phản ứng hóa học đặc trưng tương ứng**.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Hồ tinh bột",
+          "right": "Tác dụng với dung dịch Iodine (I2) cho hợp chất màu xanh tím đặc trưng"
+        },
+        {
+          "left": "Glucose",
+          "right": "Tác dụng với dung dịch AgNO3 trong NH3 đun nóng tạo lớp bạc sáng bóng (tráng gương)"
+        },
+        {
+          "left": "Cellulose",
+          "right": "Tan được trong nước Schweizer (dung dịch đồng hydroxide trong amoniac)"
+        },
+        {
+          "left": "Saccharose",
+          "right": "Thủy phân trong môi trường acid tạo ra hỗn hợp gồm glucose và fructose"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Iodine là thuốc thử đặc trưng nhất của tinh bột; Phản ứng tráng bạc là phản ứng đặc trưng của glucose."
+      },
+      {
+        "level": 2,
+        "text": "Cellulose có trong sợi bông/gỗ tan trong nước Schweizer; Saccharose là đường đôi bị thủy phân thành 2 phân tử đường đơn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Thuốc thử carbohydrate",
+        "body": "Nhận biết từng loại carbohydrate qua phản ứng đặc trưng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Hiện tượng",
+        "body": "Tinh bột + I2 → xanh tím; Glucose + AgNO3/NH3 → tráng bạc; Cellulose tan trong dd Schweizer; Saccharose thủy phân."
+      },
+      {
+        "kind": "answer",
+        "title": "Nối cặp",
+        "body": "Nối đúng 4 chất với hiện tượng."
+      }
+    ],
+    "finalSolution": "**Tinh bột:** xanh tím với I2; **Glucose:** phản ứng tráng bạc; **Cellulose:** tan trong nước Schweizer; **Saccharose:** thủy phân thành glucose + fructose."
   }
 ]

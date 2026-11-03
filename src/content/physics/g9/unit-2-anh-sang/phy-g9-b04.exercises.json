@@ -135,7 +135,11 @@
         "id": "reverse-inequality",
         "message": "Góc khúc xạ chỉ lớn hơn góc tới (r > i) khi ánh sáng truyền NGƯỢC LẠI từ nước ra không khí."
       }
-    ]
+    ],
+    "visual": {
+      "image": "/assets/images/physics-g9-refraction-water.jpg",
+      "caption": "Sơ đồ: Hiện tượng khúc xạ ánh sáng truyền từ không khí vào nước (r < i)"
+    }
   },
   {
     "id": "phy-g9-b04-mcq-003",
@@ -550,5 +554,52 @@
         "message": "Nếu nhắm thẳng vào vị trí nhìn thấy (ảnh ảo), mũi xiên sẽ bay qua phía trên con cá và bị hụt."
       }
     ]
+  },
+  {
+    "id": "phy-g9-b04-ord-001",
+    "lessonId": "phy-g9-b04",
+    "skillIds": [
+      "light-refraction"
+    ],
+    "difficulty": 1,
+    "prompt": "Sắp xếp các bước tiến hành **thí nghiệm khảo sát hiện tượng khúc xạ ánh sáng từ không khí vào khối bán trụ thủy tinh**.",
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Cố định miếng bán trụ thủy tinh trong suốt lên bảng thí nghiệm có thước chia độ tròn tâm O.",
+        "Bật nguồn phát laser, chiếu một chùm sáng hẹp là là trên mặt bảng đến đúng tâm O của bán trụ.",
+        "Xác định góc tới $i$ là góc hợp bởi tia tới laser và đường pháp tuyến tại điểm tới O.",
+        "Quan sát tia sáng bị gãy khúc khi đi vào thủy tinh và đọc giá trị của góc khúc xạ $r$.",
+        "Rút ra kết luận: Tia khúc xạ nằm trong mặt phẳng tới và góc khúc xạ $r$ luôn nhỏ hơn góc tới $i$ ($r < i$)."
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bắt đầu bằng lắp đặt dụng cụ, chiếu tia sáng tới, đo góc tới i, đọc góc khúc xạ r và rút ra kết luận."
+      },
+      {
+        "level": 2,
+        "text": "Khi ánh sáng truyền từ môi trường kém chiết quang (không khí) sang chiết quang hơn (thủy tinh), góc khúc xạ luôn nhỏ hơn góc tới."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Bố trí thí nghiệm khúc xạ",
+        "body": "Các bước tiến hành đo đạc tia khúc xạ trên đĩa chia độ."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc khúc xạ",
+        "body": "Tia sáng truyền từ không khí vào thủy tinh: r < i, nằm trong mặt phẳng tới."
+      },
+      {
+        "kind": "answer",
+        "title": "Sắp xếp",
+        "body": "Thứ tự: Lắp đặt → Chiếu laser → Đo góc tới → Đọc góc khúc xạ → Rút ra kết luận."
+      }
+    ],
+    "finalSolution": "Trình tự chuẩn: **Cố định bán trụ → Chiếu laser vào tâm O → Xác định góc tới i → Đọc góc khúc xạ r → Rút ra kết luận r < i**."
   }
 ]

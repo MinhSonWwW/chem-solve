@@ -239,7 +239,7 @@ export const SpeedChallengeGame: React.FC<{ onExit: () => void }> = ({ onExit })
                 {currentQ.prompt}
               </h2>
               {currentQ.formula && (
-                <div className="text-2xl font-black text-cyan-300">
+                <div className="text-2xl font-black text-[var(--chem-fg)]">
                   <Formula formula={currentQ.formula} />
                 </div>
               )}

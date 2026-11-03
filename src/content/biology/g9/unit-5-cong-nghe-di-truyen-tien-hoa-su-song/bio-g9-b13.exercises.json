@@ -550,5 +550,52 @@
         "message": "Nghĩ rằng gen Bt làm tăng khả năng cố định đạm (cố định đạm là do gen nif ở vi khuẩn nốt sần)."
       }
     ]
+  },
+  {
+    "id": "bio-g9-b13-ord-001",
+    "lessonId": "bio-g9-b13",
+    "skillIds": [
+      "genetic-engineering"
+    ],
+    "difficulty": 2,
+    "prompt": "Kéo thả sắp xếp đúng trình tự **các bước cơ bản của kỹ thuật chuyển gen trong công nghệ DNA tái tổ hợp**.",
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Tách phân tử DNA chứa gen cần chuyển từ tế bào cho và tách phân tử plasmid (thể truyền) từ vi khuẩn.",
+        "Dùng cùng một loại enzyme cắt giới hạn (restrictase) để cắt mở vòng plasmid và cắt lấy đoạn gen cần chuyển tạo các đầu dính.",
+        "Dùng enzyme nối ligase để gắn đoạn gen cần chuyển vào phân tử plasmid tạo thành phân tử DNA tái tổ hợp.",
+        "Chuyển phân tử DNA tái tổ hợp vào tế bào nhận (thường là vi khuẩn E. coli hoặc nấm men).",
+        "Nuôi cấy tế bào nhận trong môi trường chọn lọc để phân lập dòng tế bào mang gen chuyển và thu sinh khối sản phẩm sinh học."
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "3 khâu cơ bản: (1) Tách DNA và plasmid → (2) Cắt nối tạo DNA tái tổ hợp → (3) Chuyển vào tế bào nhận và nhân dòng."
+      },
+      {
+        "level": 2,
+        "text": "Enzyme cắt là restrictase, enzyme nối là ligase."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Kỹ thuật chuyển gen",
+        "body": "Quy trình công nghệ DNA tái tổ hợp ứng dụng sản xuất insulin, hormone tăng trưởng..."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy trình 3 bước lớn",
+        "body": "Tách thể truyền & gen cho → Cắt bằng restrictase & nối bằng ligase → Chuyển vào tế bào nhận & nuôi cấy thu sản phẩm."
+      },
+      {
+        "kind": "answer",
+        "title": "Sắp xếp",
+        "body": "Đặt đúng 5 bước kỹ thuật chuyển gen."
+      }
+    ],
+    "finalSolution": "Trình tự: **Tách DNA & thể truyền → Cắt mở vòng bằng restrictase → Nối tạo DNA tái tổ hợp bằng ligase → Chuyển vào tế bào nhận E. coli → Nuôi cấy chọn lọc thu sản phẩm**."
   }
 ]

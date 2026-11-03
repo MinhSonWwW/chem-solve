@@ -177,7 +177,7 @@ export const ReviewGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
             {currentQ && (
               <div className="p-5 rounded-3xl bg-slate-900 border-2 border-slate-800 shadow-xl min-h-[160px] flex flex-col justify-between">
                 <div className="space-y-2">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-400">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--chem-fg)]">
                     {currentQ.topic}
                   </span>
                   <p className="text-base font-bold text-slate-100 leading-snug">

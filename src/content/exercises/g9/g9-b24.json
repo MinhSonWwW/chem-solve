@@ -127,7 +127,11 @@
         "id": "no-reaction-like-ch4",
         "message": "Khác với methane (CH4) không làm mất màu Br2, ethylene có liên kết đôi nên phản ứng ngay ở điều kiện thường."
       }
-    ]
+    ],
+    "visual": {
+      "image": "/assets/images/chem-g9-c2h4-bromine.jpg",
+      "caption": "Thí nghiệm: Khí Ethylene (C2H4) làm mất màu dung dịch Bromine da cam"
+    }
   },
   {
     "id": "g9-b24-tf-001",
@@ -264,5 +268,63 @@
     ],
     "finalSolution": "Methane: phản ứng thế với Cl2. Ethylene: cộng Br2, cộng H2, trùng hợp PE.",
     "commonMistakes": []
+  },
+  {
+    "id": "g9-b24-match-001",
+    "lessonId": "g9-b24",
+    "skillIds": [
+      "hydrocarbon-alkene"
+    ],
+    "difficulty": 1,
+    "prompt": "Ghép đôi các đặc điểm về **cấu tạo phân tử và tính chất hóa học đặc trưng của khí ethylene ($C_2H_4$)**.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Liên kết đôi C=C",
+          "right": "Gồm 1 liên kết bền và 1 liên kết kém bền dễ bị đứt ra trong phản ứng"
+        },
+        {
+          "left": "Phản ứng với dung dịch Bromine",
+          "right": "Làm mất màu da cam của dung dịch bromine (phản ứng cộng đặc trưng)"
+        },
+        {
+          "left": "Phản ứng trùng hợp",
+          "right": "Nhiều phân tử ethylene kết hợp lại tạo thành chuỗi polymer polyethylene (PE)"
+        },
+        {
+          "left": "Phản ứng đốt cháy",
+          "right": "Tác dụng với oxygen tạo ra khí CO2 và hơi nước, tỏa nhiều nhiệt"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ethylene có liên kết đôi C=C nên có phản ứng cộng làm mất màu dung dịch bromine và phản ứng trùng hợp tạo nhựa PE."
+      },
+      {
+        "level": 2,
+        "text": "Liên kết kém bền trong liên kết đôi là nguyên nhân chính gây ra phản ứng cộng đặc trưng của alkene."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cấu tạo & tính chất ethylene",
+        "body": "Xác định mối liên hệ giữa liên kết đôi và các phản ứng tiêu biểu."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Liên kết đôi",
+        "body": "C=C có 1 liên kết kém bền → phản ứng cộng dung dịch Br2, phản ứng trùng hợp PE, phản ứng cháy."
+      },
+      {
+        "kind": "answer",
+        "title": "Nối cặp",
+        "body": "Ghép chính xác 4 cặp khái niệm."
+      }
+    ],
+    "finalSolution": "**Liên kết C=C:** 1 bền, 1 kém bền; **Tác dụng Br2:** mất màu da cam (phản ứng cộng); **Trùng hợp:** tạo nhựa PE; **Đốt cháy:** tạo CO2 và H2O."
   }
 ]

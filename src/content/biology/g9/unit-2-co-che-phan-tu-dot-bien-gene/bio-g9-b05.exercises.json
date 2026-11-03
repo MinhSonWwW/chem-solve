@@ -558,5 +558,63 @@
         "message": "Nghĩ rằng bệnh do tác động thuần túy của môi trường hay thiếu hụt toàn bộ ribosome."
       }
     ]
+  },
+  {
+    "id": "bio-g9-b05-match-001",
+    "lessonId": "bio-g9-b05",
+    "skillIds": [
+      "rna-transcription-translation"
+    ],
+    "difficulty": 1,
+    "prompt": "Ghép các loại phân tử RNA với **chức năng sinh học đặc trưng trong quá trình biểu hiện gen của tế bào**.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "mRNA (RNA thông tin)",
+          "right": "Truyền đạt thông tin di truyền từ gen trên DNA trong nhân đến ribosome ở tế bào chất"
+        },
+        {
+          "left": "tRNA (RNA vận chuyển)",
+          "right": "Vận chuyển amino acid đặc hiệu đến ribosome và khớp bộ ba đối mã (anticodon) với codon trên mRNA"
+        },
+        {
+          "left": "rRNA (RNA ribosome)",
+          "right": "Thành phần cấu tạo nên bào quan ribosome - nơi diễn ra quá trình dịch mã tổng hợp protein"
+        },
+        {
+          "left": "Codon mở đầu (5' AUG 3')",
+          "right": "Mã hóa amino acid Methionine và là tín hiệu bắt đầu quá trình dịch mã tổng hợp polypeptide"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "mRNA mang thông tin bản mã; tRNA vận chuyển nguyên liệu amino acid; rRNA cấu tạo nên nhà máy ribosome."
+      },
+      {
+        "level": 2,
+        "text": "AUG là codon mở đầu trên phân tử mRNA mã hóa cho Methionine."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Các loại phân tử RNA",
+        "body": "Xác định vai trò của mRNA, tRNA, rRNA và codon mở đầu."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Chức năng",
+        "body": "mRNA: khuôn dịch mã; tRNA: vận chuyển amino acid; rRNA: cấu trúc ribosome; AUG: mở đầu."
+      },
+      {
+        "kind": "answer",
+        "title": "Nối cặp",
+        "body": "Nối chuẩn xác 4 cặp vai trò."
+      }
+    ],
+    "finalSolution": "**mRNA:** truyền thông tin làm khuôn; **tRNA:** vận chuyển amino acid; **rRNA:** cấu tạo ribosome; **Codon AUG:** mở đầu dịch mã (Met)."
   }
 ]

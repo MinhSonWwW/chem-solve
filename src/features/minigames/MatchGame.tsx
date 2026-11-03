@@ -204,10 +204,10 @@ export const MatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
         {/* Header indicator */}
         <div className="flex items-center justify-between text-xs font-bold text-slate-400 px-1">
           <span className="flex items-center gap-1.5 text-slate-300">
-            <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
+            <Sparkles className="w-3.5 h-3.5 text-[var(--chem-fg)]" />
             {isPhysics ? 'Ghép Công thức ↔ Đại lượng & Đơn vị' : 'Ghép Công thức ↔ Tên / Phân loại'}
           </span>
-          <span className="px-2.5 py-0.5 rounded-full bg-cyan-950/80 border border-cyan-700/60 text-cyan-300 font-black text-[11px] flex items-center gap-1">
+          <span className="px-2.5 py-0.5 rounded-full bg-[var(--chem-tint)] border border-[var(--chem-edge)] text-[var(--chem-fg)] font-black text-[11px] flex items-center gap-1">
             <Layers className="w-3 h-3" />
             Vòng {roundNumber}
           </span>
@@ -216,7 +216,7 @@ export const MatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
         <div className="grid grid-cols-2 gap-3">
           {/* Left Column: Formulas / Symbols */}
           <div className="space-y-2.5">
-            <div className="text-[10px] font-black text-cyan-400 uppercase tracking-widest text-center py-1 bg-cyan-950/30 rounded-xl border border-cyan-900/40">
+            <div className="text-[10px] font-black text-[var(--chem-fg)] uppercase tracking-widest text-center py-1 bg-cyan-950/30 rounded-xl border border-cyan-900/40">
               {isPhysics ? 'CÔNG THỨC / KÝ HIỆU' : 'CÔNG THỨC HÓA HỌC'}
             </div>
             {leftItems.map((sub) => {
@@ -232,24 +232,24 @@ export const MatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                   onClick={() => handleSelectLeft(sub.formula)}
                   className={`w-full p-3.5 rounded-2xl border-2 font-bold text-sm flex items-center justify-between transition-all cursor-pointer ${
                     isMatched
-                      ? 'bg-gradient-to-r from-emerald-950/60 to-[#122b24] border-emerald-500/60 text-emerald-400 opacity-60 cursor-default shadow-none'
+                      ? 'bg-[var(--ok-subtle)] border-[var(--ok)] text-[var(--ok-fg)] opacity-60 cursor-default shadow-none'
                       : isWrong
-                      ? 'bg-gradient-to-r from-rose-950/80 to-[#2b1414] border-rose-500 text-rose-300 shadow-[0_4px_0_0_#9f1239] animate-shake'
+                      ? 'bg-[var(--err-subtle)] border-[var(--err)] text-[var(--err-fg)] shadow-[0_3px_0_0_var(--err-shade)] animate-shake'
                       : isSelected
-                      ? 'bg-gradient-to-b from-[#183a48] to-[#112732] border-cyan-400 text-cyan-200 shadow-[0_4px_0_0_#0891b2,0_0_18px_rgba(6,182,212,0.4)]'
-                      : 'bg-gradient-to-b from-[#1c2c36] to-[#121c22] border-[#2e4756] text-slate-100 hover:border-slate-500 shadow-[0_4px_0_0_#0c1419]'
+                      ? 'bg-[var(--chem-subtle)] border-[var(--chem)] text-[var(--chem-fg)] shadow-[0_3px_0_0_var(--chem-shade)]'
+                      : 'bg-[var(--bg-surface)] border-[var(--border)] text-[var(--fg-default)] hover:border-[var(--border-strong)] shadow-[0_3px_0_0_var(--border-strong)]'
                   }`}
                 >
                   {isPhysics ? (
-                    <span className="text-sm sm:text-base font-black tracking-wide font-mono text-cyan-200">
+                    <span className="text-sm sm:text-base font-black tracking-wide font-mono text-[var(--chem-fg)]">
                       {sub.formula}
                     </span>
                   ) : (
                     <Formula code={sub.formula} className="text-sm sm:text-base font-black tracking-wide" />
                   )}
                   {isMatched && (
-                    <div className="w-5 h-5 rounded-full bg-emerald-500/20 border border-emerald-400/60 flex items-center justify-center shrink-0">
-                      <Check className="w-3.5 h-3.5 text-emerald-400 stroke-[3]" />
+                    <div className="w-5 h-5 rounded-full bg-[var(--ok-subtle)] border border-[var(--ok)] flex items-center justify-center shrink-0">
+                      <Check className="w-3.5 h-3.5 text-[var(--ok-fg)] stroke-[3]" />
                     </div>
                   )}
                 </motion.button>
@@ -259,7 +259,7 @@ export const MatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
 
           {/* Right Column: Names & Types */}
           <div className="space-y-2.5">
-            <div className="text-[10px] font-black text-amber-400 uppercase tracking-widest text-center py-1 bg-amber-950/30 rounded-xl border border-amber-900/40">
+            <div className="text-[10px] font-black text-[var(--warn-fg)] uppercase tracking-widest text-center py-1 bg-[var(--warn-subtle)] rounded-xl border border-[var(--warn)]">
               {isPhysics ? 'ĐẠI LƯỢNG / ĐƠN VỊ' : 'TÊN GỌI / PHÂN LOẠI'}
             </div>
             {rightItems.map((sub) => {
@@ -275,24 +275,24 @@ export const MatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                   onClick={() => handleSelectRight(sub.formula)}
                   className={`w-full p-3 rounded-2xl border-2 font-bold text-xs text-left transition-all cursor-pointer flex items-center justify-between ${
                     isMatched
-                      ? 'bg-gradient-to-r from-emerald-950/60 to-[#122b24] border-emerald-500/60 text-emerald-300 opacity-60 cursor-default shadow-none'
+                      ? 'bg-[var(--ok-subtle)] border-[var(--ok)] text-[var(--ok-fg)] opacity-60 cursor-default shadow-none'
                       : isWrong
-                      ? 'bg-gradient-to-r from-rose-950/80 to-[#2b1414] border-rose-500 text-rose-300 shadow-[0_4px_0_0_#9f1239]'
+                      ? 'bg-[var(--err-subtle)] border-[var(--err)] text-[var(--err-fg)] shadow-[0_3px_0_0_var(--err-shade)] animate-shake'
                       : isSelected
-                      ? 'bg-gradient-to-b from-[#3a2e1d] to-[#251e12] border-amber-400 text-amber-200 shadow-[0_4px_0_0_#d97706,0_0_18px_rgba(245,158,11,0.4)]'
-                      : 'bg-gradient-to-b from-[#1c2c36] to-[#121c22] border-[#2e4756] text-slate-200 hover:border-slate-500 shadow-[0_4px_0_0_#0c1419]'
+                      ? 'bg-[var(--warn-subtle)] border-[var(--warn)] text-[var(--warn-fg)] shadow-[0_3px_0_0_var(--warn-shade)]'
+                      : 'bg-[var(--bg-surface)] border-[var(--border)] text-[var(--fg-default)] hover:border-[var(--border-strong)] shadow-[0_3px_0_0_var(--border-strong)]'
                   }`}
                 >
                   <div className="min-w-0 pr-1.5 flex-1">
-                    <div className="font-extrabold truncate text-slate-100 text-xs sm:text-sm">
+                    <div className="font-extrabold truncate text-[var(--fg-default)] text-xs sm:text-sm">
                       {sub.nameVi}
                     </div>
-                    <div className="text-[10px] text-amber-400/90 font-semibold mt-0.5">
+                    <div className="text-[10px] text-[var(--warn-fg)] font-semibold mt-0.5">
                       {TYPE_NAMES[sub.type] || sub.type}
                     </div>
                   </div>
                   {isMatched && (
-                    <div className="w-5 h-5 rounded-full bg-emerald-500/20 border border-emerald-400/60 flex items-center justify-center shrink-0">
+                    <div className="w-5 h-5 rounded-full bg-[var(--ok-subtle)] border border-[var(--ok)] flex items-center justify-center shrink-0">
                       <Check className="w-3.5 h-3.5 text-emerald-400 stroke-[3]" />
                     </div>
                   )}

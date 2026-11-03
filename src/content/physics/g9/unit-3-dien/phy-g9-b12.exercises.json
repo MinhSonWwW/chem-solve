@@ -531,5 +531,63 @@
         ]
       }
     ]
+  },
+  {
+    "id": "phy-g9-b12-match-001",
+    "lessonId": "phy-g9-b12",
+    "skillIds": [
+      "electric-power-energy"
+    ],
+    "difficulty": 1,
+    "prompt": "Ghép các công thức tính toán điện năng với **đại lượng và định luật vật lý tương ứng**.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Công suất tiêu thụ điện năng (P)",
+          "right": "$P = U \\cdot I = I^2 \\cdot R = \\frac{U^2}{R}$"
+        },
+        {
+          "left": "Điện năng tiêu thụ của đoạn mạch (A)",
+          "right": "$A = P \\cdot t = U \\cdot I \\cdot t$"
+        },
+        {
+          "left": "Nhiệt lượng tỏa ra (Định luật Joule - Lenz)",
+          "right": "$Q = I^2 \\cdot R \\cdot t$"
+        },
+        {
+          "left": "Quy đổi đơn vị điện năng kWh sang Jun",
+          "right": "$1\\text{ kWh} = 1\\text{ số điện} = 3\\,600\\,000\\text{ J} = 3{,}6\\text{ MJ}$"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Công suất P đo bằng Watt (W); điện năng A đo bằng Jun (J) hoặc kilôoát giờ (kWh)."
+      },
+      {
+        "level": 2,
+        "text": "Định luật Joule - Lenz: Nhiệt lượng tỏa ra tỉ lệ thuận với bình phương cường độ dòng điện (Q = I^2 R t)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Công thức điện năng và công suất",
+        "body": "Tổng hợp hệ thống công thức tính P, A, Q."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Biểu thức",
+        "body": "P = U.I; A = P.t; Q = I^2.R.t; 1 kWh = 3.600.000 J."
+      },
+      {
+        "kind": "answer",
+        "title": "Nối cặp",
+        "body": "Nối chính xác 4 công thức."
+      }
+    ],
+    "finalSolution": "**P:** $U \\cdot I = I^2 R = \\frac{U^2}{R}$; **A:** $P \\cdot t = UIt$; **Q (Joule - Lenz):** $I^2 R t$; **1 kWh:** $3{,}6\\text{ MJ}$."
   }
 ]

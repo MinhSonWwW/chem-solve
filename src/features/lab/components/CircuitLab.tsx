@@ -192,7 +192,7 @@ export const CircuitLab: React.FC = () => {
                         exit={{ scale: 0.9, opacity: 0 }}
                         className={`p-2.5 rounded-2xl border-2 transition-all relative flex flex-col justify-between min-h-[96px] ${
                           comp.type === 'bulb' && simState.bulbBrightness > 0 && !simState.isBulbBurnt
-                            ? 'bg-amber-500/10 border-amber-400/60 shadow-[0_0_15px_rgba(251,191,36,0.25)]'
+                            ? 'bg-amber-500/10 border-amber-500 shadow-sm'
                             : comp.type === 'bulb' && simState.isBulbBurnt
                             ? 'bg-rose-500/10 border-rose-500/50'
                             : 'bg-[#18272f] border-[#2e4756]'
@@ -260,7 +260,7 @@ export const CircuitLab: React.FC = () => {
                                   simState.isBulbBurnt
                                     ? 'bg-rose-950 text-rose-400 border-rose-700'
                                     : simState.bulbBrightness > 0
-                                    ? 'bg-yellow-400 text-slate-950 border-amber-300 shadow-[0_0_12px_#facc15]'
+                                    ? 'bg-amber-400 text-slate-950 border-amber-500 shadow-sm'
                                     : 'bg-slate-800 text-slate-500 border-slate-700'
                                 }`}
                               >

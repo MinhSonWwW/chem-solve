@@ -550,5 +550,145 @@
         "message": "Tia ló không bao giờ lệch về phía đỉnh; đáy ở dưới thì tia sáng phải chúc xuống dưới."
       }
     ]
+  },
+  {
+    "id": "phy-g9-b06-sort-001",
+    "lessonId": "phy-g9-b06",
+    "skillIds": [
+      "converging-diverging-lens"
+    ],
+    "difficulty": 1,
+    "prompt": "Phân loại các đặc điểm cấu tạo và đường truyền tia sáng vào hai nhóm **Thấu kính hội tụ** và **Thấu kính phân kì**.",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        {
+          "id": "convex",
+          "label": "Thấu kính hội tụ (Rìa mỏng)"
+        },
+        {
+          "id": "concave",
+          "label": "Thấu kính phân kì (Rìa dày)"
+        }
+      ],
+      "items": [
+        {
+          "id": "thin-edge",
+          "label": "Phần rìa mỏng hơn phần giữa",
+          "bucketId": "convex"
+        },
+        {
+          "id": "parallel-converge",
+          "label": "Chùm tia tới song song cho chùm tia ló hội tụ tại một điểm",
+          "bucketId": "convex"
+        },
+        {
+          "id": "real-image",
+          "label": "Có thể tạo ra ảnh thật hứng được rõ nét trên màn chắn",
+          "bucketId": "convex"
+        },
+        {
+          "id": "thick-edge",
+          "label": "Phần rìa dày hơn phần giữa",
+          "bucketId": "concave"
+        },
+        {
+          "id": "parallel-diverge",
+          "label": "Chùm tia tới song song cho chùm tia ló loe rộng phân kì",
+          "bucketId": "concave"
+        },
+        {
+          "id": "always-virtual",
+          "label": "Luôn luôn chỉ tạo ảnh ảo, cùng chiều và nhỏ hơn vật",
+          "bucketId": "concave"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thấu kính hội tụ có rìa mỏng, thấu kính phân kì có rìa dày."
+      },
+      {
+        "level": 2,
+        "text": "Thấu kính phân kì luôn chỉ cho ảnh ảo nhỏ hơn vật, không bao giờ hứng được ảnh thật trên màn chắn."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "So sánh hai loại thấu kính",
+        "body": "Phân biệt theo hình dạng hình học và tính chất quang học."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc điểm nhận biết",
+        "body": "Hội tụ: rìa mỏng, chùm ló hội tụ, có ảnh thật. Phân kì: rìa dày, chùm ló phân kì, luôn ảnh ảo nhỏ hơn vật."
+      },
+      {
+        "kind": "answer",
+        "title": "Phân loại",
+        "body": "Xếp 6 đặc điểm vào 2 loại thấu kính."
+      }
+    ],
+    "finalSolution": "**Thấu kính hội tụ:** Rìa mỏng, chùm ló hội tụ, có thể tạo ảnh thật.\n**Thấu kính phân kì:** Rìa dày, chùm ló phân kì, luôn cho ảnh ảo nhỏ hơn vật."
+  },
+  {
+    "id": "phy-g9-b06-match-001",
+    "lessonId": "phy-g9-b06",
+    "skillIds": [
+      "lens-image-formation"
+    ],
+    "difficulty": 2,
+    "prompt": "Ghép vị trí của vật sáng $AB$ đặt vuông góc với trục chính của thấu kính hội tụ (tiêu cự $f$) với **tính chất ảnh $A'B'$ tương ứng**.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Vật đặt cách thấu kính d > 2f",
+          "right": "Cho ảnh thật, ngược chiều với vật và nhỏ hơn vật ($f < d' < 2f$)"
+        },
+        {
+          "left": "Vật đặt cách thấu kính đúng d = 2f",
+          "right": "Cho ảnh thật, ngược chiều với vật và có kích thước bằng đúng vật ($d' = 2f$)"
+        },
+        {
+          "left": "Vật đặt trong khoảng f < d < 2f",
+          "right": "Cho ảnh thật, ngược chiều với vật và lớn hơn vật ($d' > 2f$)"
+        },
+        {
+          "left": "Vật đặt trong khoảng tiêu cự (d < f)",
+          "right": "Cho ảnh ảo, cùng chiều với vật và lớn hơn vật (dùng làm kính lúp)"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khi d > f cho ảnh thật ngược chiều; khi d < f cho ảnh ảo cùng chiều lớn hơn vật."
+      },
+      {
+        "level": 2,
+        "text": "Điểm mốc d = 2f cho ảnh thật kích thước đúng bằng vật."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quy tắc tạo ảnh qua TKHT",
+        "body": "Phụ thuộc vào khoảng cách d từ vật đến thấu kính so với f và 2f."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Bảng ảnh SGK",
+        "body": "d > 2f: thật, nhỏ; d = 2f: thật, bằng; f < d < 2f: thật, lớn; d < f: ảo, lớn hơn."
+      },
+      {
+        "kind": "answer",
+        "title": "Nối cặp",
+        "body": "Nối đúng 4 vị trí với tính chất ảnh."
+      }
+    ],
+    "finalSolution": "**d > 2f:** ảnh thật, ngược chiều, nhỏ hơn vật; **d = 2f:** ảnh thật, bằng vật; **f < d < 2f:** ảnh thật, lớn hơn vật; **d < f:** ảnh ảo, cùng chiều, lớn hơn vật."
   }
 ]

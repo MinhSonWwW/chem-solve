@@ -527,5 +527,132 @@
         ]
       }
     ]
+  },
+  {
+    "id": "phy-g9-b10-match-001",
+    "lessonId": "phy-g9-b10",
+    "sgkBaiSo": 11,
+    "skillIds": [
+      "ohm-law-statement",
+      "resistance-unit-si"
+    ],
+    "difficulty": 1,
+    "prompt": "Kéo ghép đại lượng điện học với đơn vị đo trong hệ SI và thiết bị đo tương ứng:",
+    "knowledge": [
+      "law.ohm"
+    ],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Hiệu điện thế (U)",
+          "right": "Vôn (V) — Đo bằng Vôn kế mắc song song"
+        },
+        {
+          "left": "Cường độ dòng điện (I)",
+          "right": "Ampe (A) — Đo bằng Ampe kế mắc nối tiếp"
+        },
+        {
+          "left": "Điện trở (R)",
+          "right": "Ôm (Ω) — Đo tỉ số U / I"
+        },
+        {
+          "left": "Công suất điện (P)",
+          "right": "Oát (W) — Tích số U · I"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Ampe kế luôn mắc nối tiếp vào mạch điện để đo dòng I, còn Vôn kế mắc song song để đo U."
+      },
+      {
+        "level": 2,
+        "text": "1 Vôn / 1 Ampe = 1 Ôm theo định luật Ohm."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đại lượng và thiết bị đo",
+        "body": "Bốn đại lượng điện học cơ bản trong đoạn mạch một chiều."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc đo",
+        "body": "U đo bằng Vôn kế (V). I đo bằng Ampe kế (A). R đo bằng Ôm (Ω). P đo bằng Oát (W)."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nối đúng 4 cặp đại lượng - đơn vị - quy tắc mắc mạch."
+      }
+    ],
+    "finalSolution": "Hiệu điện thế (V, Vôn kế song song), Dòng điện (A, Ampe kế nối tiếp), Điện trở (Ω, U/I), Công suất (W, U·I).",
+    "commonMistakes": [
+      {
+        "id": "cm-voltmeter-ammeter",
+        "message": "Tuyệt đối không mắc nhầm Ampe kế song song vào nguồn điện vì sẽ gây đoản mạch (chập điện)."
+      }
+    ]
+  },
+  {
+    "id": "phy-g9-b10-match-002",
+    "lessonId": "phy-g9-b10",
+    "skillIds": [
+      "ohms-law"
+    ],
+    "difficulty": 1,
+    "prompt": "Ghép các đại lượng trong mạch điện với **đơn vị đo chuẩn trong hệ đo lường quốc tế SI tương ứng**.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Cường độ dòng điện (I)",
+          "right": "Ampe (kí hiệu: A)"
+        },
+        {
+          "left": "Hiệu điện thế (U)",
+          "right": "Vôn (kí hiệu: V)"
+        },
+        {
+          "left": "Điện trở của vật dẫn (R)",
+          "right": "Ôm (kí hiệu: $\\Omega$)"
+        },
+        {
+          "left": "Công suất tiêu thụ điện (P)",
+          "right": "Oát (kí hiệu: W)"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Định luật Ohm: I = U / R, trong đó I tính bằng Ampe, U tính bằng Vôn, R tính bằng Ôm."
+      },
+      {
+        "level": 2,
+        "text": "Công suất điện P = U . I được đo bằng Oát (Watt - W)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Đại lượng và đơn vị điện học",
+        "body": "Xác định đơn vị đo chuẩn SI của các đại lượng cơ bản."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kí hiệu SI",
+        "body": "I (A), U (V), R (Ω), P (W)."
+      },
+      {
+        "kind": "answer",
+        "title": "Nối cặp",
+        "body": "Ghép chuẩn xác 4 cặp."
+      }
+    ],
+    "finalSolution": "**I:** Ampe (A); **U:** Vôn (V); **R:** Ôm ($\\Omega$); **P:** Oát (W)."
   }
 ]

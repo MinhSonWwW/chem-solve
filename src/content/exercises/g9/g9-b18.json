@@ -257,5 +257,150 @@
         "message": "Kim loại mạnh hơn (đứng trước) mới đẩy được kim loại yếu hơn (đứng sau)."
       }
     ]
+  },
+  {
+    "id": "g9-b18-sort-001",
+    "lessonId": "g9-b18",
+    "skillIds": [
+      "metal-properties"
+    ],
+    "difficulty": 1,
+    "prompt": "Thao tác kéo thả phân loại các kim loại sau vào 2 nhóm: **Kim loại nhẹ** (khối lượng riêng $D < 5\\text{ g/cm}^3$) và **Kim loại nặng** ($D \\ge 5\\text{ g/cm}^3$).",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        {
+          "id": "light",
+          "label": "Kim loại nhẹ (< 5 g/cm³)"
+        },
+        {
+          "id": "heavy",
+          "label": "Kim loại nặng (≥ 5 g/cm³)"
+        }
+      ],
+      "items": [
+        {
+          "id": "na",
+          "label": "Natri (Na: 0,97 g/cm³)",
+          "bucketId": "light"
+        },
+        {
+          "id": "k",
+          "label": "Kali (K: 0,86 g/cm³)",
+          "bucketId": "light"
+        },
+        {
+          "id": "al",
+          "label": "Nhôm (Al: 2,7 g/cm³)",
+          "bucketId": "light"
+        },
+        {
+          "id": "fe",
+          "label": "Sắt (Fe: 7,86 g/cm³)",
+          "bucketId": "heavy"
+        },
+        {
+          "id": "cu",
+          "label": "Đồng (Cu: 8,96 g/cm³)",
+          "bucketId": "heavy"
+        },
+        {
+          "id": "pb",
+          "label": "Chì (Pb: 11,3 g/cm³)",
+          "bucketId": "heavy"
+        },
+        {
+          "id": "au",
+          "label": "Vàng (Au: 19,3 g/cm³)",
+          "bucketId": "heavy"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Kim loại có khối lượng riêng nhỏ hơn 5 g/cm³ được xếp vào nhóm kim loại nhẹ."
+      },
+      {
+        "level": 2,
+        "text": "Natri, Kali và Nhôm là kim loại nhẹ (Na và K còn nổi được trên mặt nước); Sắt, Đồng, Chì, Vàng là kim loại nặng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân loại khối lượng riêng",
+        "body": "Xác định ranh giới kim loại nhẹ (< 5 g/cm³) và kim loại nặng (≥ 5 g/cm³)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu bảng số liệu SGK",
+        "body": "Na (0,97), K (0,86), Al (2,7) đều < 5; Fe (7,86), Cu (8,96), Pb (11,3), Au (19,3) đều ≥ 5."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nhóm nhẹ: Na, K, Al. Nhóm nặng: Fe, Cu, Pb, Au."
+      }
+    ],
+    "finalSolution": "**Kim loại nhẹ (< 5 g/cm³):** Na, K, Al.\n**Kim loại nặng (≥ 5 g/cm³):** Fe, Cu, Pb, Au."
+  },
+  {
+    "id": "g9-b18-match-001",
+    "lessonId": "g9-b18",
+    "skillIds": [
+      "metal-properties"
+    ],
+    "difficulty": 1,
+    "prompt": "Chạm nối từng kim loại với **đặc tính vật lý vượt trội nhất** của nó trong đời sống và kỹ thuật.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Bạc (Ag)",
+          "right": "Dẫn điện và dẫn nhiệt tốt nhất"
+        },
+        {
+          "left": "Vàng (Au)",
+          "right": "Có tính dẻo cao nhất (dát mỏng đến mức ánh sáng lọt qua)"
+        },
+        {
+          "left": "Tungsten (Vonfam - W)",
+          "right": "Nhiệt độ nóng chảy cao nhất (3422 °C, làm dây tóc bóng đèn)"
+        },
+        {
+          "left": "Thủy ngân (Hg)",
+          "right": "Kim loại duy nhất ở thể lỏng ở nhiệt độ phòng"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Bạc dẫn điện số 1, Vàng dẻo số 1, Vonfam chịu nhiệt số 1, Thủy ngân duy nhất ở thể lỏng."
+      },
+      {
+        "level": 2,
+        "text": "Nhớ thứ tự dẫn điện Ag > Cu > Au > Al > Fe để không nhầm giữa Bạc và Đồng."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận diện kỷ lục kim loại",
+        "body": "Mỗi kim loại đều có một tính chất vật lý đặc trưng nổi bật nhất."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc tính SGK",
+        "body": "Ag: dẫn điện/nhiệt nhất; Au: dẻo nhất; W: nóng chảy cao nhất; Hg: thể lỏng."
+      },
+      {
+        "kind": "answer",
+        "title": "Nối cặp",
+        "body": "Nối đúng 4 cặp đặc tính vật lý tương ứng."
+      }
+    ],
+    "finalSolution": "**Bạc (Ag)** dẫn điện/nhiệt nhất; **Vàng (Au)** dẻo nhất; **Tungsten (W)** nóng chảy cao nhất; **Thủy ngân (Hg)** thể lỏng."
   }
 ]

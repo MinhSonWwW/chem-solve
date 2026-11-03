@@ -522,5 +522,87 @@
         ]
       }
     ]
+  },
+  {
+    "id": "phy-g9-b11-sort-001",
+    "lessonId": "phy-g9-b11",
+    "skillIds": [
+      "series-parallel-circuits"
+    ],
+    "difficulty": 1,
+    "prompt": "Phân loại các quy luật điện học vào hai loại đoạn mạch: **Mắc nối tiếp** và **Mắc song song**.",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        {
+          "id": "series",
+          "label": "Đoạn mạch mắc nối tiếp"
+        },
+        {
+          "id": "parallel",
+          "label": "Đoạn mạch mắc song song"
+        }
+      ],
+      "items": [
+        {
+          "id": "i-series",
+          "label": "$I = I_1 = I_2$ (Cường độ dòng điện như nhau tại mọi vị trí)",
+          "bucketId": "series"
+        },
+        {
+          "id": "u-series",
+          "label": "$U = U_1 + U_2$ (Hiệu điện thế bằng tổng các HĐT thành phần)",
+          "bucketId": "series"
+        },
+        {
+          "id": "r-series",
+          "label": "$R_{tđ} = R_1 + R_2$ (Điện trở tương đương lớn hơn từng điện trở thành phần)",
+          "bucketId": "series"
+        },
+        {
+          "id": "u-parallel",
+          "label": "$U = U_1 = U_2$ (Hiệu điện thế hai đầu mỗi nhánh bằng nhau)",
+          "bucketId": "parallel"
+        },
+        {
+          "id": "i-parallel",
+          "label": "$I = I_1 + I_2$ (Cường độ mạch chính bằng tổng cường độ các nhánh)",
+          "bucketId": "parallel"
+        },
+        {
+          "id": "r-parallel",
+          "label": "$\\frac{1}{R_{tđ}} = \\frac{1}{R_1} + \\frac{1}{R_2}$ (Điện trở tương đương nhỏ hơn từng điện trở thành phần)",
+          "bucketId": "parallel"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Mạch nối tiếp: dòng điện I không đổi, U cộng lại. Mạch song song: hiệu điện thế U không đổi, I cộng lại."
+      },
+      {
+        "level": 2,
+        "text": "Điện trở tương đương: nối tiếp R = R1 + R2; song song 1/R = 1/R1 + 1/R2."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quy tắc mạch nối tiếp và song song",
+        "body": "Phân biệt rõ biểu thức I, U, R trong hai kiểu ghép mạch."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Công thức đối chiếu",
+        "body": "Nối tiếp: I bằng nhau, U và R cộng dồn. Song song: U bằng nhau, I cộng dồn, nghịch đảo R."
+      },
+      {
+        "kind": "answer",
+        "title": "Phân loại",
+        "body": "Xếp 6 công thức vào 2 nhóm mạch điện."
+      }
+    ],
+    "finalSolution": "**Nối tiếp:** $I = I_1 = I_2$, $U = U_1 + U_2$, $R_{tđ} = R_1 + R_2$.\n**Song song:** $U = U_1 = U_2$, $I = I_1 + I_2$, $\\frac{1}{R_{tđ}} = \\frac{1}{R_1} + \\frac{1}{R_2}$."
   }
 ]

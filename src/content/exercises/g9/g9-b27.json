@@ -310,5 +310,52 @@
     ],
     "finalSolution": "Quỳ tím ↔ Đỏ nhạt · Zn ↔ Khí H2 · CaCO3 ↔ Khí CO2 · C2H5OH ↔ Este mùi thơm.",
     "commonMistakes": []
+  },
+  {
+    "id": "g9-b27-ord-001",
+    "lessonId": "g9-b27",
+    "skillIds": [
+      "acetic-acid"
+    ],
+    "difficulty": 2,
+    "prompt": "Sắp xếp quy trình các bước tiến hành **phản ứng este hóa điều chế ethyl acetate ($CH_3COOC_2H_5$)** trong phòng thí nghiệm.",
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Cho 2 ml ethylic alcohol khan và 2 ml acetic acid nguyên chất vào ống nghiệm A.",
+        "Nhỏ từ từ khoảng 1 ml dung dịch H2SO4 đặc vào ống nghiệm A làm chất xúc tác và hút nước.",
+        "Lắp ống dẫn khí cong dẫn từ ống A sang ống nghiệm B có chứa sẵn dung dịch NaCl bão hòa.",
+        "Đun nóng nhẹ ống nghiệm A trên ngọn lửa đèn cồn hoặc đun cách thủy trong khoảng 5 - 7 phút.",
+        "Ngừng đun, làm lạnh ống B và quan sát thấy este ethyl acetate nhẹ hơn nổi lên trên bề mặt, có mùi thơm hoa quả chín."
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Phản ứng giữa axit axetic và rượu etylic cần H2SO4 đặc làm xúc tác đun nóng: CH3COOH + C2H5OH ⇄ CH3COOC2H5 + H2O."
+      },
+      {
+        "level": 2,
+        "text": "Dung dịch NaCl bão hòa giúp este ethyl acetate ít tan và dễ dàng tách lớp nổi lên trên mặt nước."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phản ứng este hóa",
+        "body": "Quy trình điều chế este mùi thơm hoa quả."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Thao tác chuẩn",
+        "body": "Trộn acid + rượu → Thêm H2SO4 đặc → Lắp ống dẫn sang dd NaCl → Đun nhẹ → Quan sát este nổi lên."
+      },
+      {
+        "kind": "answer",
+        "title": "Hoàn tất thứ tự",
+        "body": "Trình tự chuẩn bị và tiến hành phản ứng este hóa."
+      }
+    ],
+    "finalSolution": "Quy trình: **Trộn rượu và acid → Thêm H2SO4 đặc xúc tác → Lắp hệ thống ống dẫn sang dd NaCl → Đun nóng nhẹ → Làm lạnh, quan sát este nổi lên có mùi thơm**."
   }
 ]

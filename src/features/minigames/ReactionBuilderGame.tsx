@@ -167,7 +167,7 @@ export const ReactionBuilderGame: React.FC<{ onExit: () => void }> = ({ onExit }
               {currentRx?.reactants.map((r, i) => (
                 <React.Fragment key={i}>
                   {i > 0 && <span className="text-slate-500 font-bold">+</span>}
-                  <Formula code={r.formula} className="text-cyan-300" />
+                  <Formula code={r.formula} className="text-[var(--chem-fg)] font-bold" />
                 </React.Fragment>
               ))}
             </div>
@@ -178,16 +178,16 @@ export const ReactionBuilderGame: React.FC<{ onExit: () => void }> = ({ onExit }
             <div
               className={`min-w-[120px] px-3.5 py-2 rounded-2xl border-2 border-dashed flex items-center justify-center transition-all ${
                 isCorrectSolved
-                  ? 'border-emerald-500 bg-emerald-950/40 text-emerald-300 shadow-[0_3px_0_0_#059669]'
-                  : 'border-slate-700 bg-slate-950/40 text-slate-500'
+                  ? 'border-[var(--ok)] bg-[var(--ok-subtle)] text-[var(--ok-fg)] shadow-[0_3px_0_0_var(--ok-shade)]'
+                  : 'border-[var(--border)] bg-[var(--bg-canvas)] text-[var(--fg-subtle)]'
               }`}
             >
               {selectedProduct ? (
-                <div className="flex items-center gap-1.5 text-slate-200">
+                <div className="flex items-center gap-1.5 text-[var(--fg-default)]">
                   {selectedProduct.split(' + ').map((f, idx) => (
                     <React.Fragment key={idx}>
-                      {idx > 0 && <span className="text-slate-500">+</span>}
-                      <Formula code={f} className={isCorrectSolved ? 'text-emerald-300' : 'text-slate-200'} />
+                      {idx > 0 && <span className="text-[var(--fg-subtle)]">+</span>}
+                      <Formula code={f} className={isCorrectSolved ? 'text-[var(--ok-fg)]' : 'text-[var(--fg-default)]'} />
                     </React.Fragment>
                   ))}
                 </div>
@@ -202,7 +202,7 @@ export const ReactionBuilderGame: React.FC<{ onExit: () => void }> = ({ onExit }
             <motion.div
               initial={{ opacity: 0, y: 5 }}
               animate={{ opacity: 1, y: 0 }}
-              className="text-xs text-emerald-400 font-semibold bg-emerald-950/30 border border-emerald-800/40 rounded-xl p-2"
+              className="text-xs text-[var(--ok-fg)] font-semibold bg-[var(--ok-subtle)] border border-[var(--ok)] rounded-xl p-2"
             >
               ✨ Hiện tượng: {currentRx.phenomenon}
             </motion.div>
@@ -211,7 +211,7 @@ export const ReactionBuilderGame: React.FC<{ onExit: () => void }> = ({ onExit }
 
         {/* Options Selection Tray */}
         <div className="space-y-2">
-          <div className="text-[11px] font-black text-slate-400 uppercase tracking-wider text-center">
+          <div className="text-[11px] font-black text-[var(--fg-muted)] uppercase tracking-wider text-center">
             Chọn sản phẩm chính xác
           </div>
           <div className="grid grid-cols-1 gap-2">
@@ -225,12 +225,12 @@ export const ReactionBuilderGame: React.FC<{ onExit: () => void }> = ({ onExit }
                   whileTap={{ scale: 0.98 }}
                   disabled={isCorrectSolved}
                   onClick={() => handleSelectOption(opt)}
-                  className={`p-3.5 rounded-2xl border font-bold text-sm flex items-center justify-between transition-all cursor-pointer ${
+                  className={`p-3.5 rounded-2xl font-bold text-sm flex items-center justify-between transition-all cursor-pointer ${
                     isCorrect
-                      ? 'bg-emerald-950/60 border-2 border-emerald-500 text-emerald-300 shadow-[0_3px_0_0_#059669]'
+                      ? 'bg-[var(--ok-subtle)] border-2 border-[var(--ok)] text-[var(--ok-fg)] shadow-[0_3px_0_0_var(--ok-shade)]'
                       : isSelected
-                      ? 'bg-rose-950/60 border-2 border-rose-500 text-rose-300 shadow-[0_3px_0_0_#dc2626]'
-                      : 'bg-slate-900 border-2 border-slate-800 text-slate-200 hover:border-slate-700 shadow-[0_3px_0_0_#131f24]'
+                      ? 'bg-[var(--err-subtle)] border-2 border-[var(--err)] text-[var(--err-fg)] shadow-[0_3px_0_0_var(--err-shade)]'
+                      : 'bg-[var(--bg-surface)] border-2 border-[var(--border)] text-[var(--fg-default)] hover:border-[var(--border-strong)] shadow-[0_3px_0_0_var(--border-strong)]'
                   }`}
                 >
                   <div className="flex items-center gap-1.5">

@@ -174,6 +174,56 @@ describe('Minigames Engine Tests', () => {
       }
     });
   });
+
+  describe('Scientific Minigames Catalog Validation (36 Games)', () => {
+    it('contains all 36 scientific minigames (12 Chem, 12 Phy, 12 Bio)', async () => {
+      const { MINIGAME_CATALOG } = await import('./minigameCatalog');
+      const gameIds = Object.keys(MINIGAME_CATALOG);
+      expect(gameIds.length).toBe(36);
+
+      const chemGames = Object.values(MINIGAME_CATALOG).filter((g) => g.subject === 'chem');
+      const phyGames = Object.values(MINIGAME_CATALOG).filter((g) => g.subject === 'physics');
+      const bioGames = Object.values(MINIGAME_CATALOG).filter((g) => g.subject === 'bio');
+
+      expect(chemGames.length).toBe(12);
+      expect(phyGames.length).toBe(12);
+      expect(bioGames.length).toBe(12);
+    });
+
+    it('verifies every game has valid structure and questions', async () => {
+      const { MINIGAME_CATALOG } = await import('./minigameCatalog');
+      for (const [id, game] of Object.entries(MINIGAME_CATALOG)) {
+        expect(game.id).toBe(id);
+        expect(game.title.length).toBeGreaterThan(3);
+        expect(game.desc.length).toBeGreaterThan(5);
+        expect(game.questions.length).toBeGreaterThanOrEqual(3);
+
+        for (const q of game.questions) {
+          expect(q.id).toBeDefined();
+          expect(q.scenario.length).toBeGreaterThan(5);
+          expect(q.options.length).toBeGreaterThanOrEqual(4);
+          expect(q.correctIndex).toBeGreaterThanOrEqual(0);
+          expect(q.correctIndex).toBeLessThan(q.options.length);
+          expect(q.explanation.length).toBeGreaterThan(5);
+        }
+      }
+    });
+  });
+
+  describe('Dedicated Tactile Manipulation Minigames', () => {
+    it('exports all dedicated hands-on lab minigames correctly', async () => {
+      const minigames = await import('./index');
+      expect(minigames.TitrationLabGame).toBeDefined();
+      expect(minigames.CircuitMasterGame).toBeDefined();
+      expect(minigames.OpticsBenchGame).toBeDefined();
+      expect(minigames.MicroscopeFocusGame).toBeDefined();
+      expect(minigames.BloodTransfusionGame).toBeDefined();
+      expect(minigames.EquationBalanceGame).toBeDefined();
+      expect(minigames.FormulaBuilderGame).toBeDefined();
+      expect(minigames.ReactionBuilderGame).toBeDefined();
+    });
+  });
 });
+
 
 

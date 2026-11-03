@@ -53,14 +53,14 @@ const CATEGORIES: CategoryConfig[] = [
     subtitle: 'Axit',
     desc: 'Bắt đầu bằng H...',
     theme: {
-      text: 'text-rose-400',
-      border: 'border-rose-500/40 hover:border-rose-400',
-      borderActive: 'border-rose-400 ring-4 ring-rose-500/30',
-      bg: 'from-rose-950/50 via-[#1a1318] to-[#12181f]',
-      glow: 'rgba(244,63,94,0.35)',
-      liquid: '#f43f5e',
-      accent: '#fb7185',
-      shadow: '#4c0519',
+      text: 'text-[var(--err-fg)]',
+      border: 'border-[var(--err)]/40 hover:border-[var(--err)]',
+      borderActive: 'border-[var(--err)] ring-4 ring-[var(--err)]/30',
+      bg: 'from-[var(--err-subtle)] to-[var(--bg-surface)]',
+      glow: 'var(--err)',
+      liquid: 'var(--err)',
+      accent: 'var(--err-hover)',
+      shadow: 'var(--err-shade)',
     },
   },
   {
@@ -69,14 +69,14 @@ const CATEGORIES: CategoryConfig[] = [
     subtitle: 'Bazơ',
     desc: 'Kim loại + nhóm -OH',
     theme: {
-      text: 'text-sky-400',
-      border: 'border-sky-500/40 hover:border-sky-400',
-      borderActive: 'border-sky-400 ring-4 ring-sky-500/30',
-      bg: 'from-sky-950/50 via-[#121c27] to-[#12181f]',
-      glow: 'rgba(14,165,233,0.35)',
-      liquid: '#0ea5e9',
-      accent: '#38bdf8',
-      shadow: '#082f49',
+      text: 'text-[var(--chem-fg)]',
+      border: 'border-[var(--chem)]/40 hover:border-[var(--chem)]',
+      borderActive: 'border-[var(--chem)] ring-4 ring-[var(--chem)]/30',
+      bg: 'from-[var(--chem-subtle)] to-[var(--bg-surface)]',
+      glow: 'var(--chem)',
+      liquid: 'var(--chem)',
+      accent: 'var(--chem-hover)',
+      shadow: 'var(--chem-shade)',
     },
   },
   {
@@ -85,14 +85,14 @@ const CATEGORIES: CategoryConfig[] = [
     subtitle: 'Oxide kim/phi kim',
     desc: 'Nguyên tố + Oxi',
     theme: {
-      text: 'text-amber-400',
-      border: 'border-amber-500/40 hover:border-amber-400',
-      borderActive: 'border-amber-400 ring-4 ring-amber-500/30',
-      bg: 'from-amber-950/50 via-[#211a14] to-[#12181f]',
-      glow: 'rgba(245,158,11,0.35)',
-      liquid: '#f59e0b',
-      accent: '#fbbf24',
-      shadow: '#451a03',
+      text: 'text-[var(--warn-fg)]',
+      border: 'border-[var(--warn)]/40 hover:border-[var(--warn)]',
+      borderActive: 'border-[var(--warn)] ring-4 ring-[var(--warn)]/30',
+      bg: 'from-[var(--warn-subtle)] to-[var(--bg-surface)]',
+      glow: 'var(--warn)',
+      liquid: 'var(--warn)',
+      accent: 'var(--warn-hover)',
+      shadow: 'var(--warn-shade)',
     },
   },
   {
@@ -101,14 +101,14 @@ const CATEGORIES: CategoryConfig[] = [
     subtitle: 'Salt',
     desc: 'Kim loại + gốc acid',
     theme: {
-      text: 'text-emerald-400',
-      border: 'border-emerald-500/40 hover:border-emerald-400',
-      borderActive: 'border-emerald-400 ring-4 ring-emerald-500/30',
-      bg: 'from-emerald-950/50 via-[#11231f] to-[#12181f]',
-      glow: 'rgba(16,185,129,0.35)',
-      liquid: '#10b981',
-      accent: '#34d399',
-      shadow: '#022c22',
+      text: 'text-[var(--bio-fg)]',
+      border: 'border-[var(--bio)]/40 hover:border-[var(--bio)]',
+      borderActive: 'border-[var(--bio)] ring-4 ring-[var(--bio)]/30',
+      bg: 'from-[var(--bio-subtle)] to-[var(--bg-surface)]',
+      glow: 'var(--bio)',
+      liquid: 'var(--bio)',
+      accent: 'var(--bio-hover)',
+      shadow: 'var(--bio-shade)',
     },
   },
 ];
@@ -120,14 +120,14 @@ const PHYSICS_CATEGORIES: CategoryConfig[] = [
     subtitle: 'Mechanics',
     desc: 'Vận tốc, KLR, Áp suất, Lực...',
     theme: {
-      text: 'text-amber-400',
-      border: 'border-amber-500/40 hover:border-amber-400',
-      borderActive: 'border-amber-400 ring-4 ring-amber-500/30',
-      bg: 'from-amber-950/50 via-[#211a14] to-[#12181f]',
-      glow: 'rgba(245,158,11,0.35)',
-      liquid: '#f59e0b',
-      accent: '#fbbf24',
-      shadow: '#451a03',
+      text: 'text-[var(--warn-fg)]',
+      border: 'border-[var(--warn)]/40 hover:border-[var(--warn)]',
+      borderActive: 'border-[var(--warn)] ring-4 ring-[var(--warn)]/30',
+      bg: 'from-[var(--warn-subtle)] to-[var(--bg-surface)]',
+      glow: 'var(--warn)',
+      liquid: 'var(--warn)',
+      accent: 'var(--warn-hover)',
+      shadow: 'var(--warn-shade)',
     },
   },
   {
@@ -136,14 +136,14 @@ const PHYSICS_CATEGORIES: CategoryConfig[] = [
     subtitle: 'Thermal',
     desc: 'Nhiệt lượng, Dẫn nhiệt, Đối lưu...',
     theme: {
-      text: 'text-rose-400',
-      border: 'border-rose-500/40 hover:border-rose-400',
-      borderActive: 'border-rose-400 ring-4 ring-rose-500/30',
-      bg: 'from-rose-950/50 via-[#1a1318] to-[#12181f]',
-      glow: 'rgba(244,63,94,0.35)',
-      liquid: '#f43f5e',
-      accent: '#fb7185',
-      shadow: '#4c0519',
+      text: 'text-[var(--err-fg)]',
+      border: 'border-[var(--err)]/40 hover:border-[var(--err)]',
+      borderActive: 'border-[var(--err)] ring-4 ring-[var(--err)]/30',
+      bg: 'from-[var(--err-subtle)] to-[var(--bg-surface)]',
+      glow: 'var(--err)',
+      liquid: 'var(--err)',
+      accent: 'var(--err-hover)',
+      shadow: 'var(--err-shade)',
     },
   },
   {
@@ -152,14 +152,14 @@ const PHYSICS_CATEGORIES: CategoryConfig[] = [
     subtitle: 'Electricity',
     desc: 'Định luật Ôm, Cường độ I, Mạch điện...',
     theme: {
-      text: 'text-sky-400',
-      border: 'border-sky-500/40 hover:border-sky-400',
-      borderActive: 'border-sky-400 ring-4 ring-sky-500/30',
-      bg: 'from-sky-950/50 via-[#121c27] to-[#12181f]',
-      glow: 'rgba(14,165,233,0.35)',
-      liquid: '#0ea5e9',
-      accent: '#38bdf8',
-      shadow: '#082f49',
+      text: 'text-[var(--chem-fg)]',
+      border: 'border-[var(--chem)]/40 hover:border-[var(--chem)]',
+      borderActive: 'border-[var(--chem)] ring-4 ring-[var(--chem)]/30',
+      bg: 'from-[var(--chem-subtle)] to-[var(--bg-surface)]',
+      glow: 'var(--chem)',
+      liquid: 'var(--chem)',
+      accent: 'var(--chem-hover)',
+      shadow: 'var(--chem-shade)',
     },
   },
   {
@@ -168,14 +168,14 @@ const PHYSICS_CATEGORIES: CategoryConfig[] = [
     subtitle: 'Optics',
     desc: 'Phản xạ, Khúc xạ, Thấu kính...',
     theme: {
-      text: 'text-emerald-400',
-      border: 'border-emerald-500/40 hover:border-emerald-400',
-      borderActive: 'border-emerald-400 ring-4 ring-emerald-500/30',
-      bg: 'from-emerald-950/50 via-[#11231f] to-[#12181f]',
-      glow: 'rgba(16,185,129,0.35)',
-      liquid: '#10b981',
-      accent: '#34d399',
-      shadow: '#022c22',
+      text: 'text-[var(--bio-fg)]',
+      border: 'border-[var(--bio)]/40 hover:border-[var(--bio)]',
+      borderActive: 'border-[var(--bio)] ring-4 ring-[var(--bio)]/30',
+      bg: 'from-[var(--bio-subtle)] to-[var(--bg-surface)]',
+      glow: 'var(--bio)',
+      liquid: 'var(--bio)',
+      accent: 'var(--bio-hover)',
+      shadow: 'var(--bio-shade)',
     },
   },
 ];
@@ -187,14 +187,14 @@ const BIOLOGY_CATEGORIES: CategoryConfig[] = [
     subtitle: 'Cell Biology',
     desc: 'Ti thể, Lục lạp, Màng, Ribosome...',
     theme: {
-      text: 'text-emerald-400',
-      border: 'border-emerald-500/40 hover:border-emerald-400',
-      borderActive: 'border-emerald-400 ring-4 ring-emerald-500/30',
-      bg: 'from-emerald-950/50 via-[#11231f] to-[#12181f]',
-      glow: 'rgba(16,185,129,0.35)',
-      liquid: '#10b981',
-      accent: '#34d399',
-      shadow: '#022c22',
+      text: 'text-[var(--bio-fg)]',
+      border: 'border-[var(--bio)]/40 hover:border-[var(--bio)]',
+      borderActive: 'border-[var(--bio)] ring-4 ring-[var(--bio)]/30',
+      bg: 'from-[var(--bio-subtle)] to-[var(--bg-surface)]',
+      glow: 'var(--bio)',
+      liquid: 'var(--bio)',
+      accent: 'var(--bio-hover)',
+      shadow: 'var(--bio-shade)',
     },
   },
   {
@@ -203,14 +203,14 @@ const BIOLOGY_CATEGORIES: CategoryConfig[] = [
     subtitle: 'Human Physiology',
     desc: 'Dạ dày, Tim, Thận, Tuyến tụy...',
     theme: {
-      text: 'text-rose-400',
-      border: 'border-rose-500/40 hover:border-rose-400',
-      borderActive: 'border-rose-400 ring-4 ring-rose-500/30',
-      bg: 'from-rose-950/50 via-[#1a1318] to-[#12181f]',
-      glow: 'rgba(244,63,94,0.35)',
-      liquid: '#f43f5e',
-      accent: '#fb7185',
-      shadow: '#4c0519',
+      text: 'text-[var(--err-fg)]',
+      border: 'border-[var(--err)]/40 hover:border-[var(--err)]',
+      borderActive: 'border-[var(--err)] ring-4 ring-[var(--err)]/30',
+      bg: 'from-[var(--err-subtle)] to-[var(--bg-surface)]',
+      glow: 'var(--err)',
+      liquid: 'var(--err)',
+      accent: 'var(--err-hover)',
+      shadow: 'var(--err-shade)',
     },
   },
   {
@@ -219,14 +219,14 @@ const BIOLOGY_CATEGORIES: CategoryConfig[] = [
     subtitle: 'Genetics',
     desc: 'DNA, Đột biến, Hội chứng, Mendel...',
     theme: {
-      text: 'text-sky-400',
-      border: 'border-sky-500/40 hover:border-sky-400',
-      borderActive: 'border-sky-400 ring-4 ring-sky-500/30',
-      bg: 'from-sky-950/50 via-[#121c27] to-[#12181f]',
-      glow: 'rgba(14,165,233,0.35)',
-      liquid: '#0ea5e9',
-      accent: '#38bdf8',
-      shadow: '#082f49',
+      text: 'text-[var(--chem-fg)]',
+      border: 'border-[var(--chem)]/40 hover:border-[var(--chem)]',
+      borderActive: 'border-[var(--chem)] ring-4 ring-[var(--chem)]/30',
+      bg: 'from-[var(--chem-subtle)] to-[var(--bg-surface)]',
+      glow: 'var(--chem)',
+      liquid: 'var(--chem)',
+      accent: 'var(--chem-hover)',
+      shadow: 'var(--chem-shade)',
     },
   },
   {
@@ -235,14 +235,14 @@ const BIOLOGY_CATEGORIES: CategoryConfig[] = [
     subtitle: 'Ecology & Evolution',
     desc: 'Chuỗi thức ăn, CLTN, Hóa thạch...',
     theme: {
-      text: 'text-amber-400',
-      border: 'border-amber-500/40 hover:border-amber-400',
-      borderActive: 'border-amber-400 ring-4 ring-amber-500/30',
-      bg: 'from-amber-950/50 via-[#211a14] to-[#12181f]',
-      glow: 'rgba(245,158,11,0.35)',
-      liquid: '#f59e0b',
-      accent: '#fbbf24',
-      shadow: '#451a03',
+      text: 'text-[var(--warn-fg)]',
+      border: 'border-[var(--warn)]/40 hover:border-[var(--warn)]',
+      borderActive: 'border-[var(--warn)] ring-4 ring-[var(--warn)]/30',
+      bg: 'from-[var(--warn-subtle)] to-[var(--bg-surface)]',
+      glow: 'var(--warn)',
+      liquid: 'var(--warn)',
+      accent: 'var(--warn-hover)',
+      shadow: 'var(--warn-shade)',
     },
   },
 ];
@@ -261,6 +261,7 @@ const FlaskGraphic: React.FC<{
   accentColor: string;
   isCorrect?: boolean;
 }> = ({ liquidColor, accentColor, isCorrect }) => {
+  const gradId = `liquidGrad-${liquidColor.replace(/[^a-zA-Z0-9]/g, '')}`;
   return (
     <div className="relative w-14 h-16 sm:w-16 sm:h-20 flex items-center justify-center shrink-0">
       <svg
@@ -270,20 +271,16 @@ const FlaskGraphic: React.FC<{
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
-          <linearGradient id={`liquidGrad-${liquidColor}`} x1="0%" y1="0%" x2="0%" y2="100%">
+          <linearGradient id={gradId} x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="0%" stopColor={accentColor} stopOpacity="0.85" />
             <stop offset="100%" stopColor={liquidColor} stopOpacity="0.95" />
           </linearGradient>
-          <filter id={`glow-${liquidColor}`} x="-20%" y="-20%" width="140%" height="140%">
-            <feGaussianBlur stdDeviation="3" result="blur" />
-            <feComposite in="SourceGraphic" in2="blur" operator="over" />
-          </filter>
         </defs>
 
         {/* Liquid body */}
         <motion.path
           d="M 17 42 Q 32 39 47 42 L 53 58 C 55 63 51 67 46 67 L 18 67 C 13 67 9 63 11 58 Z"
-          fill={`url(#liquidGrad-${liquidColor})`}
+          fill={`url(#${gradId})`}
           animate={
             isCorrect
               ? {
@@ -500,7 +497,7 @@ export const SortGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
         <div className="flex items-center justify-between text-xs px-1">
           <span className="font-bold text-slate-400">
             {isPhysics ? 'Khái niệm' : 'Chất'}{' '}
-            <span className="text-cyan-400 font-black">{currentIndex + 1}</span> / {roundSubstances.length}
+            <span className="text-[var(--chem-fg)] font-black">{currentIndex + 1}</span> / {roundSubstances.length}
           </span>
           <span className="text-[11px] font-black uppercase tracking-wider text-slate-400 flex items-center gap-1">
             <Sparkles className="w-3.5 h-3.5 text-amber-400" />
@@ -520,32 +517,32 @@ export const SortGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
               className={`w-full py-5 px-6 rounded-3xl border-2 flex flex-col items-center justify-center text-center transition-all ${
                 lastFeedback
                   ? lastFeedback.correct
-                    ? 'border-[#00cd9c] bg-gradient-to-b from-[#00cd9c]/20 to-[#122b24] shadow-[0_6px_0_0_#007a5d]'
-                    : 'border-[#ff4b4b] bg-gradient-to-b from-[#ff4b4b]/20 to-[#2b1414] shadow-[0_6px_0_0_#b32525]'
-                  : 'bg-gradient-to-b from-[#1c2c36] to-[#121c22] border-[#2e4756] shadow-[0_6px_0_0_#0c1419]'
+                    ? 'border-[var(--ok)] bg-[var(--ok-subtle)] text-[var(--ok-fg)] shadow-[0_4px_0_0_var(--ok-shade)]'
+                    : 'border-[var(--err)] bg-[var(--err-subtle)] text-[var(--err-fg)] shadow-[0_4px_0_0_var(--err-shade)]'
+                  : 'bg-[var(--bg-surface)] border-[var(--border)] shadow-[0_4px_0_0_var(--border-strong)]'
               }`}
             >
-              <div className="text-[10px] font-black uppercase tracking-widest text-cyan-400 mb-1">
+              <div className="text-[10px] font-black uppercase tracking-widest text-[var(--chem-fg)] mb-1">
                 {isPhysics ? 'KHÁI NIỆM / CÔNG THỨC' : 'MẪU THỬ HÓA CHẤT'}
               </div>
 
-              <div className="text-2xl sm:text-3xl font-black text-slate-100 mb-1 tracking-wider drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] font-mono">
+              <div className="text-2xl sm:text-3xl font-black text-[var(--fg-default)] mb-1 tracking-wider font-mono">
                 {isPhysics ? currentItem?.formula : <Formula formula={currentItem?.formula || ''} />}
               </div>
 
-              <p className="text-sm text-slate-300 font-semibold">{currentItem?.nameVi}</p>
+              <p className="text-sm text-[var(--fg-muted)] font-semibold">{currentItem?.nameVi}</p>
 
               {/* Instant feedback explanation if wrong */}
               {lastFeedback && !lastFeedback.correct && (
                 <motion.div
                   initial={{ opacity: 0, y: 5 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="mt-2.5 px-3 py-1 rounded-xl bg-rose-950/80 border border-rose-500/60 text-xs font-bold text-rose-300 flex items-center gap-1.5"
+                  className="mt-2.5 px-3 py-1 rounded-xl bg-[var(--err-subtle)] border border-[var(--err)] text-xs font-bold text-[var(--err-fg)] flex items-center gap-1.5"
                 >
                   <ShieldAlert className="w-3.5 h-3.5 shrink-0" />
                   <span>
                     Chính xác là:{' '}
-                    <strong className="underline text-white">
+                    <strong className="underline text-[var(--fg-default)]">
                       {categories.find((c) => c.key === lastFeedback.expected)?.label}
                     </strong>
                   </span>
@@ -577,16 +574,16 @@ export const SortGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                 onClick={() => handleSelectCategory(cat.key)}
                 className={`p-3.5 sm:p-4 rounded-3xl border-2 bg-gradient-to-b ${cat.theme.bg} ${
                   isChosenCorrect
-                    ? 'border-emerald-400 ring-4 ring-emerald-500/40 shadow-[0_6px_20px_rgba(16,185,129,0.5)]'
+                    ? 'border-[var(--ok)] ring-4 ring-[var(--ok)]/40 shadow-[0_4px_0_0_var(--ok-shade)]'
                     : isTargetOfWrong
-                    ? 'border-emerald-400 ring-2 ring-emerald-400 animate-pulse'
+                    ? 'border-[var(--ok)] ring-2 ring-[var(--ok)] animate-pulse'
                     : isChosenWrong
-                    ? 'border-rose-500 opacity-50'
+                    ? 'border-[var(--err)] opacity-50'
                     : cat.theme.border
-                } flex items-center gap-3 text-left shadow-[0_5px_0_0_${cat.theme.shadow}] transition-all cursor-pointer group`}
+                } flex items-center gap-3 text-left transition-all cursor-pointer group`}
                 style={{
                   boxShadow: isChosenCorrect
-                    ? `0 6px 0 0 #007a5d, 0 0 25px ${cat.theme.glow}`
+                    ? '0 5px 0 0 var(--ok-shade)'
                     : `0 5px 0 0 ${cat.theme.shadow}`,
                 }}
               >

@@ -550,5 +550,63 @@
         "message": "Gương phẳng không thể uốn cong theo đường tiêu hóa; chỉ có bó sợi quang mềm phản xạ toàn phần mới làm được điều này."
       }
     ]
+  },
+  {
+    "id": "phy-g9-b05-match-001",
+    "lessonId": "phy-g9-b05",
+    "skillIds": [
+      "total-internal-reflection"
+    ],
+    "difficulty": 2,
+    "prompt": "Ghép điều kiện và hiện tượng liên quan đến **sự truyền ánh sáng qua mặt phân cách giữa hai môi trường trong suốt**.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Điều kiện xảy ra phản xạ toàn phần",
+          "right": "Ánh sáng truyền từ môi trường chiết quang hơn sang kém hơn và góc tới $i \\ge i_{gh}$"
+        },
+        {
+          "left": "Góc giới hạn phản xạ toàn phần (i_gh)",
+          "right": "Góc tới mà tại đó tia khúc xạ đi là là sát mặt phân cách ($r = 90^\\circ$)"
+        },
+        {
+          "left": "Hiện tượng ảo ảnh trên mặt đường nhựa trưa hè",
+          "right": "Do hiện tượng phản xạ toàn phần của các lớp không khí nóng chênh lệch nhiệt độ"
+        },
+        {
+          "left": "Ứng dụng trong cáp quang viễn thông",
+          "right": "Tín hiệu ánh sáng truyền đi nhờ phản xạ toàn phần liên tục bên trong lõi sợi quang"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Phản xạ toàn phần chỉ xảy ra khi ánh sáng đi từ môi trường chiết quang hơn sang kém hơn (như từ thủy tinh/nước ra không khí) và góc tới đủ lớn."
+      },
+      {
+        "level": 2,
+        "text": "Cáp quang và ảo ảnh sa mạc là hai ứng dụng và hiện tượng kinh điển của phản xạ toàn phần trong thực tế."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Hiện tượng phản xạ toàn phần",
+        "body": "Nắm vững 2 điều kiện cần và đủ cùng các ứng dụng thực tế."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Định nghĩa & Ứng dụng",
+        "body": "i ≥ igh và môi trường 1 chiết quang hơn; cáp quang truyền dữ liệu tốc độ ánh sáng."
+      },
+      {
+        "kind": "answer",
+        "title": "Nối cặp",
+        "body": "Ghép chính xác 4 nội dung kiến thức."
+      }
+    ],
+    "finalSolution": "**Điều kiện PXTP:** từ chiết quang hơn sang kém và $i \\ge i_{gh}$; **Góc igh:** $r = 90^\\circ$; **Ảo ảnh:** chênh lệch nhiệt độ không khí; **Cáp quang:** phản xạ toàn phần trong lõi."
   }
 ]

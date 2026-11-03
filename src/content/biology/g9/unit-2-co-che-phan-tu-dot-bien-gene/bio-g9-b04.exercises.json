@@ -554,5 +554,52 @@
         "message": "Nhầm tRNA với mRNA (mRNA có dạng mạch đơn thẳng làm khuôn, không mang anticodon)."
       }
     ]
+  },
+  {
+    "id": "bio-g9-b04-ord-001",
+    "lessonId": "bio-g9-b04",
+    "skillIds": [
+      "dna-replication"
+    ],
+    "difficulty": 2,
+    "prompt": "Kéo thả sắp xếp đúng trình tự **các sự kiện diễn ra trong quá trình nhân đôi phân tử DNA (tái bản)**.",
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Enzyme tháo xoắn làm đứt các liên kết hydrogen giữa hai mạch đơn, tách hai mạch DNA mẹ tạo chạc ba tái bản.",
+        "Enzyme DNA polymerase dùng nucleotide tự do liên kết với nucleotide trên mạch khuôn theo nguyên tắc bổ sung (A-T, G-C).",
+        "Mạch mới được tổng hợp liên tục trên mạch khuôn 3'→5' và ngắt quãng tạo các đoạn Okazaki trên mạch khuôn 5'→3'.",
+        "Enzyme nối ligase gắn các đoạn Okazaki lại với nhau thành mạch đơn hoàn chỉnh.",
+        "Hai phân tử DNA con xoắn lại, mỗi phân tử gồm 1 mạch cũ của mẹ và 1 mạch mới tổng hợp (nguyên tắc bán bảo tồn)."
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhân đôi DNA diễn ra theo 2 nguyên tắc chính: nguyên tắc bổ sung và nguyên tắc bán bảo tồn (giữ lại một nửa)."
+      },
+      {
+        "level": 2,
+        "text": "Trình tự: Tháo xoắn tách mạch → Tổng hợp mạch mới → Nối đoạn Okazaki → Đóng xoắn tạo 2 DNA con."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quá trình nhân đôi DNA",
+        "body": "Diễn ra tại pha S của kỳ trung gian trong nhân tế bào."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Diễn biến phân tử",
+        "body": "Tháo xoắn → DNA polymerase tổng hợp theo NTBS → Ligase nối Okazaki → 2 DNA con bán bảo tồn."
+      },
+      {
+        "kind": "answer",
+        "title": "Sắp xếp",
+        "body": "Hoàn tất trật tự 5 sự kiện nhân đôi."
+      }
+    ],
+    "finalSolution": "Trình tự: **Tháo xoắn tách 2 mạch → DNA polymerase lắp ráp nucleotide theo NTBS → Nối đoạn Okazaki → Tạo 2 phân tử DNA con theo nguyên tắc bán bảo tồn**."
   }
 ]

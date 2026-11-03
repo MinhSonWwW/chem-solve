@@ -550,5 +550,63 @@
         "message": "Nghĩ rằng xét nghiệm sàng lọc có thể can thiệp chữa khỏi hoặc thay thế gen cho thai nhi."
       }
     ]
+  },
+  {
+    "id": "bio-g9-b12-match-001",
+    "lessonId": "bio-g9-b12",
+    "skillIds": [
+      "human-genetics-methods"
+    ],
+    "difficulty": 1,
+    "prompt": "Ghép phương pháp nghiên cứu di truyền học người với **mục đích và cách tiến hành đặc trưng**.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Phương pháp nghiên cứu phả hệ",
+          "right": "Theo dõi sự di truyền của một tính trạng qua nhiều thế hệ trong cùng một dòng họ để xác định tính trạng trội/lặn"
+        },
+        {
+          "left": "Phương pháp nghiên cứu trẻ đồng sinh",
+          "right": "So sánh trẻ đồng sinh cùng trứng và khác trứng để xác định vai trò của kiểu gen và môi trường đối với tính trạng"
+        },
+        {
+          "left": "Phương pháp di truyền tế bào (lập karyotype)",
+          "right": "Quan sát bộ nhiễm sắc thể dưới kính hiển vi để phát hiện các đột biến số lượng và cấu trúc NST (như bệnh Down, Turner)"
+        },
+        {
+          "left": "Ý nghĩa của di truyền y học tư vấn",
+          "right": "Chẩn đoán, cung cấp thông tin và lời khuyên cho các cặp vợ chồng có nguy cơ sinh con mắc dị tật bẩm sinh"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Người sinh sản muộn và đẻ ít con nên không thể áp dụng phương pháp lai hay gây đột biến, phải dùng phả hệ và nghiên cứu trẻ đồng sinh."
+      },
+      {
+        "level": 2,
+        "text": "Đồng sinh cùng trứng có cùng kiểu gen hoàn toàn, sự khác biệt do môi trường quyết định."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phương pháp nghiên cứu di truyền người",
+        "body": "Phả hệ, trẻ đồng sinh, di truyền tế bào và tư vấn di truyền."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Mục đích",
+        "body": "Phả hệ: theo dõi tính trạng; Trẻ đồng sinh: gen vs môi trường; Tế bào: đột biến NST; Tư vấn: phòng tránh dị tật."
+      },
+      {
+        "kind": "answer",
+        "title": "Nối cặp",
+        "body": "Nối chuẩn xác 4 phương pháp."
+      }
+    ],
+    "finalSolution": "**Phả hệ:** theo dõi qua nhiều thế hệ; **Trẻ đồng sinh:** vai trò gen vs môi trường; **Di truyền tế bào:** phát hiện đột biến NST; **Tư vấn:** phòng ngừa dị tật bẩm sinh."
   }
 ]

@@ -229,7 +229,7 @@ export const EquationBalanceGame: React.FC<{ onExit: () => void }> = ({ onExit }
             })}
 
             {/* Reaction Arrow */}
-            <div className="flex flex-col items-center px-1 text-cyan-400 font-black">
+            <div className="flex flex-col items-center px-1 text-[var(--chem-fg)] font-black">
               <span className="text-lg">→</span>
             </div>
 
@@ -274,7 +274,7 @@ export const EquationBalanceGame: React.FC<{ onExit: () => void }> = ({ onExit }
         <div className="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 space-y-2">
           <div className="flex items-center justify-between text-xs">
             <span className="font-bold text-slate-300 flex items-center gap-1.5">
-              <Scale className="w-3.5 h-3.5 text-cyan-400" />
+              <Scale className="w-3.5 h-3.5 text-[var(--chem-fg)]" />
               Đếm số nguyên tử mỗi vế:
             </span>
             {balanceResult?.isBalanced && !balanceResult.isSimplest && (

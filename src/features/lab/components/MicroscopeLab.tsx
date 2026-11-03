@@ -362,7 +362,7 @@ export const MicroscopeLab: React.FC = () => {
                     onClick={() => handleSelectSpecimen(id)}
                     className={`p-2.5 rounded-2xl border-2 text-left transition-all cursor-pointer shadow-[0_2px_0_0_#131f24] active:translate-y-[2px] active:shadow-none ${
                       isSelected
-                        ? 'bg-emerald-500/15 border-emerald-500/60 shadow-[0_0_12px_rgba(16,185,129,0.2)]'
+                        ? 'bg-emerald-500/15 border-emerald-600 shadow-sm'
                         : 'bg-[#20333d] hover:bg-[#28404e] border-[#2e4756]'
                     }`}
                   >

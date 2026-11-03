@@ -522,5 +522,63 @@
         "message": "Độ sáng của ảnh không phải là lý do; lý do là để thiết lập hệ thức toán học d = d' = 2f."
       }
     ]
+  },
+  {
+    "id": "phy-g9-b08-match-001",
+    "lessonId": "phy-g9-b08",
+    "skillIds": [
+      "eye-and-magnifier"
+    ],
+    "difficulty": 1,
+    "prompt": "Ghép tật khúc xạ của mắt và dụng cụ bổ trợ với **đặc điểm điều chỉnh quang học tương ứng**.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Mắt cận thị",
+          "right": "Điểm cực viễn ở gần hơn bình thường, phải đeo thấu kính phân kì để nhìn rõ vật ở xa"
+        },
+        {
+          "left": "Mắt viễn thị (hoặc mắt lão)",
+          "right": "Điểm cực cận ở xa hơn bình thường, phải đeo thấu kính hội tụ để nhìn rõ vật ở gần"
+        },
+        {
+          "left": "Kính lúp cầm tay",
+          "right": "Là thấu kính hội tụ có tiêu cự ngắn ($f < 25\\text{ cm}$), tạo ảnh ảo lớn hơn vật để quan sát chi tiết nhỏ"
+        },
+        {
+          "left": "Khoảng nhìn rõ của mắt bình thường",
+          "right": "Từ điểm cực cận ($C_c \\approx 25\\text{ cm}$) đến điểm cực viễn ($C_v$ ở vô cực)"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Cận thị nhìn gần được nhưng không nhìn xa được, phải đeo kính phân kì (kính cận)."
+      },
+      {
+        "level": 2,
+        "text": "Kính lúp là thấu kính hội tụ tiêu cự ngắn, vật phải đặt trong khoảng tiêu cự để tạo ảnh ảo phóng đại."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Quang học mắt và kính",
+        "body": "Nhận biết các tật khúc xạ và cách khắc phục bằng thấu kính."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc đeo kính",
+        "body": "Cận thị → đeo TK phân kì; Viễn thị → đeo TK hội tụ; Kính lúp = TK hội tụ tiêu cự ngắn."
+      },
+      {
+        "kind": "answer",
+        "title": "Nối cặp",
+        "body": "Nối đúng 4 nội dung kiến thức."
+      }
+    ],
+    "finalSolution": "**Mắt cận thị:** đeo TK phân kì; **Mắt viễn thị:** đeo TK hội tụ; **Kính lúp:** TK hội tụ tiêu cự ngắn; **Mắt bình thường:** nhìn rõ từ 25 cm đến vô cực."
   }
 ]

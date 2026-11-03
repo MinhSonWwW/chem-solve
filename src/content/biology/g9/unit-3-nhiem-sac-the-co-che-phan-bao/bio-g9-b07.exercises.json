@@ -551,5 +551,51 @@
         "message": "Nghĩ rằng sự co xoắn làm tăng tốc độ dịch mã (thực tế khi co xoắn gen không thể dịch mã hay phiên mã được)."
       }
     ]
+  },
+  {
+    "id": "bio-g9-b07-ord-001",
+    "lessonId": "bio-g9-b07",
+    "skillIds": [
+      "mitosis-stages"
+    ],
+    "difficulty": 1,
+    "prompt": "Kéo thả sắp xếp thứ tự diễn biến **4 kỳ của quá trình nguyên phân trong chu kì phân bào**.",
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Kỳ đầu: Màng nhân và nhân con tiêu biến, thoi phân bào hình thành, các NST kép bắt đầu co xoắn.",
+        "Kỳ giữa: Các NST kép co xoắn cực đại và tập trung xếp thành một hàng trên mặt phẳng xích đạo của thoi phân bào.",
+        "Kỳ sau: Hai chromatid của mỗi NST kép tách nhau tại tâm động thành 2 NST đơn trượt về hai cực của tế bào.",
+        "Kỳ cuối: NST dãn xoắn dài ra, màng nhân và nhân con xuất hiện trở lại, tế bào chất phân chia tạo 2 tế bào con."
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Thứ tự 4 kỳ kinh điển của nguyên phân: Kỳ đầu → Kỳ giữa → Kỳ sau → Kỳ cuối."
+      },
+      {
+        "level": 2,
+        "text": "Dấu hiệu nhận biết: Kỳ giữa xếp 1 hàng xích đạo; Kỳ sau tách tâm động trượt về 2 cực."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Chu kỳ nguyên phân",
+        "body": "4 kỳ nối tiếp nhau để phân chia đồng đều vật chất di truyền."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Trật tự 4 kỳ",
+        "body": "Kỳ đầu (co xoắn) → Kỳ giữa (xếp 1 hàng xích đạo) → Kỳ sau (tách về 2 cực) → Kỳ cuối (hình thành 2 nhân con)."
+      },
+      {
+        "kind": "answer",
+        "title": "Sắp xếp",
+        "body": "Đặt đúng trật tự 4 kỳ nguyên phân."
+      }
+    ],
+    "finalSolution": "Trật tự: **Kỳ đầu (NST kép co xoắn) → Kỳ giữa (xếp 1 hàng xích đạo) → Kỳ sau (tách chromatid về 2 cực) → Kỳ cuối (tạo 2 tế bào con 2n)**."
   }
 ]

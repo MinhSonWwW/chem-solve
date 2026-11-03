@@ -325,5 +325,52 @@
         "message": "Quên mất 1 nguyên tử O nằm sẵn trong phân tử rượu C2H5OH dẫn đến cân bằng sai hệ số của O2."
       }
     ]
+  },
+  {
+    "id": "g9-b26-ord-001",
+    "lessonId": "g9-b26",
+    "skillIds": [
+      "ethylic-alcohol"
+    ],
+    "difficulty": 2,
+    "prompt": "Sắp xếp theo thứ tự các bước tiến hành **thí nghiệm cho ethylic alcohol ($C_2H_5OH$) tác dụng với kim loại natri (Na)**.",
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Rót khoảng 2 - 3 ml ethylic alcohol nguyên chất vào một ống nghiệm khô và sạch.",
+        "Dùng dao cắt một mẩu natri nhỏ bằng hạt đỗ, dùng giấy lọc thấm sạch lớp dầu bảo quản bên ngoài.",
+        "Thả nhẹ mẩu natri đã thấm sạch vào ống nghiệm chứa ethylic alcohol.",
+        "Quan sát mẩu natri chìm xuống đáy ống nghiệm và sủi bọt khí hydro không màu xung quanh.",
+        "Đưa que đóm đang cháy vào miệng ống nghiệm, khí cháy kèm theo tiếng nổ bốp nhẹ chứng minh là khí H2."
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhóm -OH trong rượu ethylic làm cho nguyên tử hydro linh động có thể bị kim loại kiềm như Na thay thế giải phóng H2."
+      },
+      {
+        "level": 2,
+        "text": "Natri chìm trong rượu (vì khối lượng riêng của rượu bé hơn Na) và sủi bọt khí H2."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Thí nghiệm rượu tác dụng với Na",
+        "body": "2C2H5OH + 2Na → 2C2H5ONa + H2↑."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Trình tự thao tác",
+        "body": "Rót rượu → Cắt và thấm khô Na → Thả mẩu Na → Quan sát sủi bọt khí → Thử khí H2 bằng que đóm."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Sắp xếp đúng 5 bước thực nghiệm an toàn."
+      }
+    ],
+    "finalSolution": "Quy trình: **Rót rượu → Cắt & thấm khô mẩu Na → Thả Na vào ống nghiệm → Quan sát sủi bọt khí → Đốt thử khí H2 bằng que đóm**."
   }
 ]

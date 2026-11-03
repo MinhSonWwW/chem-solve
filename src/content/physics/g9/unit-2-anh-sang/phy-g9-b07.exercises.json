@@ -135,7 +135,11 @@
         "id": "confuse-parallel-ray",
         "message": "Chỉ tia tới song song với trục chính mới cho tia ló đi qua tiêu điểm F'; tia qua O thì truyền thẳng."
       }
-    ]
+    ],
+    "visual": {
+      "image": "/assets/images/physics-g9-convex-lens.jpg",
+      "caption": "Sơ đồ: Đường truyền 3 tia sáng đặc biệt qua Thấu kính hội tụ"
+    }
   },
   {
     "id": "phy-g9-b07-mcq-003",

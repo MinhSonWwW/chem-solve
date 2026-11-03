@@ -257,5 +257,52 @@
         "message": "Metan trong tự nhiên hoàn toàn không có mùi và không có màu."
       }
     ]
+  },
+  {
+    "id": "g9-b23-ord-001",
+    "lessonId": "g9-b23",
+    "skillIds": [
+      "hydrocarbon-alkane"
+    ],
+    "difficulty": 2,
+    "prompt": "Kéo thả để sắp xếp các bước **thực hiện thí nghiệm phản ứng thế của methane ($CH_4$) với khí chlorine ($Cl_2$)** theo đúng quy trình SGK KHTN 9.",
+    "answer": {
+      "kind": "ordering",
+      "correctOrder": [
+        "Thu khí methane và khí chlorine vào ống nghiệm theo tỉ lệ thể tích 1 : 1 rồi đậy chặt nút cao su.",
+        "Đưa ống nghiệm chứa hỗn hợp khí ra ngoài ánh sáng khuếch tán để kích hoạt phản ứng thế.",
+        "Quan sát thấy màu vàng lục đặc trưng của khí chlorine trong ống nghiệm nhạt dần rồi mất hẳn.",
+        "Mở nút ống nghiệm, đưa mẩu giấy quỳ tím ẩm vào miệng ống nghiệm để kiểm tra sản phẩm khí sinh ra.",
+        "Quỳ tím ẩm hóa đỏ chứng tỏ đã sinh ra khí hydrogen chloride (HCl) có tính acid."
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Phản ứng thế giữa CH4 và Cl2 cần có ánh sáng khuếch tán làm điều kiện xúc tác."
+      },
+      {
+        "level": 2,
+        "text": "Khí chlorine màu vàng lục nhạt dần khi phản ứng, sản phẩm HCl được nhận biết bằng quỳ tím ẩm hóa đỏ."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Thí nghiệm phản ứng thế",
+        "body": "Quy trình thử phản ứng của CH4 với Cl2 ngoài ánh sáng."
+      },
+      {
+        "kind": "knowledge",
+        "title": "PTHH",
+        "body": "CH4 + Cl2 --(ánh sáng)--> CH3Cl + HCl. Khí HCl làm ẩm quỳ tím hóa đỏ."
+      },
+      {
+        "kind": "answer",
+        "title": "Trình tự các bước",
+        "body": "Trộn khí → Chiếu sáng → Khí nhạt màu → Thử quỳ ẩm → Quỳ hóa đỏ."
+      }
+    ],
+    "finalSolution": "Trình tự chuẩn: **Trộn khí 1:1 → Đưa ra ánh sáng → Màu vàng lục nhạt dần → Thử bằng quỳ tím ẩm → Quỳ tím hóa đỏ (chứng minh có HCl)**."
   }
 ]

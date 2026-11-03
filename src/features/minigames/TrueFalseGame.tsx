@@ -146,7 +146,7 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
         {/* Progress & topic header */}
         <div className="flex items-center justify-between text-xs px-1">
           <span className="font-bold text-slate-400">
-            Câu <span className="text-cyan-400 font-black">{currentIndex + 1}</span> / {roundStatements.length}
+            Câu <span className="text-[var(--chem-fg)] font-black">{currentIndex + 1}</span> / {roundStatements.length}
           </span>
           <span className="px-2.5 py-0.5 rounded-full bg-violet-950/80 border border-violet-700/60 text-violet-300 font-black text-[11px] flex items-center gap-1">
             <Sparkles className="w-3 h-3 text-violet-400" />
@@ -166,19 +166,19 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
               className={`w-full p-5 rounded-3xl border-2 flex flex-col justify-between transition-all min-h-[180px] ${
                 lastFeedback
                   ? lastFeedback.correct
-                    ? 'border-[#00cd9c] bg-gradient-to-b from-[#00cd9c]/20 to-[#122b24] shadow-[0_6px_0_0_#007a5d]'
-                    : 'border-[#ff4b4b] bg-gradient-to-b from-[#ff4b4b]/20 to-[#2b1414] shadow-[0_6px_0_0_#b32525]'
-                  : 'bg-gradient-to-b from-[#1c2c36] to-[#121c22] border-[#2e4756] shadow-[0_6px_0_0_#0c1419]'
+                    ? 'border-[var(--ok)] bg-[var(--ok-subtle)] text-[var(--ok-fg)]'
+                    : 'border-[var(--err)] bg-[var(--err-subtle)] text-[var(--err-fg)]'
+                  : 'bg-[var(--bg-surface)] border-[var(--border)]'
               }`}
             >
               <div>
-                <div className="flex items-center gap-2 mb-2 text-cyan-400">
+                <div className="flex items-center gap-2 mb-2 text-[var(--chem-fg)]">
                   <HelpCircle className="w-4 h-4 shrink-0" />
                   <span className="text-[10px] font-black uppercase tracking-widest">
                     NHẬN ĐỊNH THÍ NGHIỆM
                   </span>
                 </div>
-                <p className="text-base sm:text-lg font-bold text-slate-100 leading-snug">
+                <p className="text-base sm:text-lg font-bold text-[var(--fg-default)] leading-snug">
                   {currentItem?.statement}
                 </p>
               </div>
@@ -188,10 +188,10 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                 <motion.div
                   initial={{ opacity: 0, y: 6 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className={`mt-3 p-3 rounded-2xl border-2 text-xs leading-relaxed flex items-start gap-2 ${
+                  className={`mt-3 p-3 rounded-2xl border text-xs leading-relaxed flex items-start gap-2 ${
                     lastFeedback.correct
-                      ? 'bg-[#00cd9c]/15 border-[#00cd9c]/40 text-[#00cd9c]'
-                      : 'bg-[#ff4b4b]/15 border-[#ff4b4b]/40 text-[#ff4b4b]'
+                      ? 'bg-[var(--ok-subtle)] border-[var(--ok)] text-[var(--ok-fg)]'
+                      : 'bg-[var(--err-subtle)] border-[var(--err)] text-[var(--err-fg)]'
                   }`}
                 >
                   <Info className="w-4 h-4 shrink-0 mt-0.5" />
@@ -214,10 +214,10 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
             whileTap={{ scale: 0.96, y: 4 }}
             disabled={!!lastFeedback}
             onClick={() => handleAnswer(true)}
-            className="py-4 px-4 rounded-3xl border-2 border-[#00cd9c] bg-gradient-to-b from-[#00cd9c]/30 to-[#00cd9c]/10 text-[#00cd9c] flex flex-col items-center justify-center gap-2 shadow-[0_6px_0_0_#007a5d] active:shadow-none hover:from-[#00cd9c]/40 hover:to-[#00cd9c]/15 transition-all font-black text-lg disabled:opacity-40 cursor-pointer group"
+            className="py-4 px-4 rounded-3xl border-2 border-[var(--ok)] bg-[var(--ok)] text-[var(--on-ok)] flex flex-col items-center justify-center gap-2 shadow-[0_5px_0_0_var(--ok-shade)] active:translate-y-1 active:shadow-none hover:bg-[var(--ok-hover)] transition-all font-black text-lg disabled:opacity-40 cursor-pointer group"
           >
-            <div className="w-10 h-10 rounded-full bg-[#00cd9c]/25 border border-[#00cd9c]/60 flex items-center justify-center shadow-[0_2px_8px_rgba(0,205,156,0.3)] group-hover:scale-110 transition-transform">
-              <Check className="w-6 h-6 text-[#00cd9c] stroke-[3.5]" />
+            <div className="w-10 h-10 rounded-full bg-white/20 border border-white/40 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <Check className="w-6 h-6 text-white stroke-[3.5]" />
             </div>
             <span className="tracking-wide">ĐÚNG</span>
           </motion.button>
@@ -227,10 +227,10 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
             whileTap={{ scale: 0.96, y: 4 }}
             disabled={!!lastFeedback}
             onClick={() => handleAnswer(false)}
-            className="py-4 px-4 rounded-3xl border-2 border-[#ff4b4b] bg-gradient-to-b from-[#ff4b4b]/30 to-[#ff4b4b]/10 text-[#ff4b4b] flex flex-col items-center justify-center gap-2 shadow-[0_6px_0_0_#b32525] active:shadow-none hover:from-[#ff4b4b]/40 hover:to-[#ff4b4b]/15 transition-all font-black text-lg disabled:opacity-40 cursor-pointer group"
+            className="py-4 px-4 rounded-3xl border-2 border-[var(--err)] bg-[var(--err)] text-[var(--on-err)] flex flex-col items-center justify-center gap-2 shadow-[0_5px_0_0_var(--err-shade)] active:translate-y-1 active:shadow-none hover:bg-[var(--err-hover)] transition-all font-black text-lg disabled:opacity-40 cursor-pointer group"
           >
-            <div className="w-10 h-10 rounded-full bg-[#ff4b4b]/25 border border-[#ff4b4b]/60 flex items-center justify-center shadow-[0_2px_8px_rgba(255,75,75,0.3)] group-hover:scale-110 transition-transform">
-              <X className="w-6 h-6 text-[#ff4b4b] stroke-[3.5]" />
+            <div className="w-10 h-10 rounded-full bg-white/20 border border-white/40 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <X className="w-6 h-6 text-white stroke-[3.5]" />
             </div>
             <span className="tracking-wide">SAI</span>
           </motion.button>

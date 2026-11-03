@@ -66,7 +66,11 @@
         "id": "cm-01",
         "message": "Nhầm kết quả của nguyên phân (tạo 2 tế bào con 2n) với giảm phân (tạo 4 tế bào con n)."
       }
-    ]
+    ],
+    "visual": {
+      "image": "/assets/images/bio-g9-mitosis-stages.jpg",
+      "caption": "Sơ đồ: Diễn biến 4 kì của quá trình Nguyên phân ở tế bào"
+    }
   },
   {
     "id": "bio-g9-b08-q02",
@@ -551,5 +555,92 @@
         "message": "Nhầm bộ ba tế bào học (Nguyên phân, Giảm phân, Thụ tinh) với bộ ba phân tử (Nhân đôi, Phiên mã, Dịch mã)."
       }
     ]
+  },
+  {
+    "id": "bio-g9-b08-sort-001",
+    "lessonId": "bio-g9-b08",
+    "skillIds": [
+      "mitosis-vs-meiosis"
+    ],
+    "difficulty": 2,
+    "prompt": "Phân loại các đặc điểm sinh học vào hai hình thức phân chia tế bào: **Nguyên phân** và **Giảm phân**.",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        {
+          "id": "mitosis",
+          "label": "Nguyên phân (Phân bào nguyên nhiễm)"
+        },
+        {
+          "id": "meiosis",
+          "label": "Giảm phân (Phân bào giảm nhiễm)"
+        }
+      ],
+      "items": [
+        {
+          "id": "somatic",
+          "label": "Xảy ra ở tế bào sinh dưỡng (sôma) và tế bào sinh dục sơ khai",
+          "bucketId": "mitosis"
+        },
+        {
+          "id": "one-div",
+          "label": "Trải qua 1 lần phân bào duy nhất",
+          "bucketId": "mitosis"
+        },
+        {
+          "id": "two-cells",
+          "label": "Kết quả tạo ra 2 tế bào con có bộ NST 2n giống hệt tế bào mẹ",
+          "bucketId": "mitosis"
+        },
+        {
+          "id": "germ",
+          "label": "Xảy ra ở tế bào sinh dục thời kỳ chín (tạo tinh trùng và noãn/trứng)",
+          "bucketId": "meiosis"
+        },
+        {
+          "id": "two-divs",
+          "label": "Trải qua 2 lần phân bào liên tiếp nhưng DNA chỉ nhân đôi 1 lần",
+          "bucketId": "meiosis"
+        },
+        {
+          "id": "four-cells",
+          "label": "Kết quả tạo ra 4 tế bào giao tử có bộ NST giảm đi một nửa (đơn bội n)",
+          "bucketId": "meiosis"
+        },
+        {
+          "id": "crossing-over",
+          "label": "Có hiện tượng tiếp hợp và trao đổi chéo giữa các chromatid ở kỳ đầu I",
+          "bucketId": "meiosis"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nguyên phân: 1 lần phân chia, tạo 2 tế bào 2n giống mẹ. Giảm phân: 2 lần phân chia, tạo 4 giao tử n giảm một nửa."
+      },
+      {
+        "level": 2,
+        "text": "Trao đổi chéo tạo biến dị tổ hợp chỉ xuất hiện ở kỳ đầu I của giảm phân."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "So sánh Nguyên phân và Giảm phân",
+        "body": "Phân biệt vị trí xảy ra, số lần phân bào, số tế bào con và bộ NST."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đặc trưng",
+        "body": "Nguyên phân: 1 phân chia, 2n → 2n. Giảm phân: 2 phân chia, trao đổi chéo, 2n → n."
+      },
+      {
+        "kind": "answer",
+        "title": "Phân loại",
+        "body": "Xếp 7 đặc điểm vào đúng 2 quá trình."
+      }
+    ],
+    "finalSolution": "**Nguyên phân:** Tế bào sinh dưỡng, 1 lần phân bào, tạo 2 tế bào con 2n giống mẹ.\n**Giảm phân:** Tế bào sinh dục chín, 2 lần phân bào, trao đổi chéo kì đầu I, tạo 4 giao tử n."
   }
 ]

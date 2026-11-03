@@ -169,7 +169,12 @@ export const ExerciseSchema = z.object({
   commonMistakes: z.array(CommonMistakeSchema).default([]),
   related: z.array(z.string()).optional(),
   minigameTags: z.array(z.string()).optional(),
-  visual: z.object({ sprite: z.string().optional(), mode: z.string().optional() }).optional(),
+  visual: z.object({
+    sprite: z.string().optional(),
+    mode: z.string().optional(),
+    image: z.string().optional(),
+    caption: z.string().optional(),
+  }).optional(),
   verify: z.object({
     fn: z.string(),
     args: z.record(z.union([z.string(), z.number()]))

@@ -552,5 +552,165 @@
         "message": "Chọn cây lấy hạt như lúa hay ngô (cây lấy hạt nếu bị tam bội sẽ không có hạt, dẫn tới mất mùa hoàn toàn)."
       }
     ]
+  },
+  {
+    "id": "bio-g9-b11-match-001",
+    "lessonId": "bio-g9-b11",
+    "sgkBaiSo": 46,
+    "skillIds": [
+      "bio9-dot-bien-nst"
+    ],
+    "difficulty": 2,
+    "prompt": "Kéo ghép từng hội chứng bệnh di truyền ở người với đặc điểm đột biến nhiễm sắc thể tương ứng:",
+    "knowledge": [
+      "kb-bio-g9-dot-bien-so-luong-nst-nguoi"
+    ],
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Hội chứng Đao (Down)",
+          "right": "Thừa 1 NST ở cặp số 21 (Thể ba: 2n + 1 = 47)"
+        },
+        {
+          "left": "Hội chứng Tơcnơ (Turner)",
+          "right": "Chỉ có 1 NST X ở cặp giới tính (Thể một: 2n - 1 = 45, XO)"
+        },
+        {
+          "left": "Hội chứng Claiphentơ",
+          "right": "Cặp NST giới tính có 3 chiếc (XXY, 2n + 1 = 47)"
+        },
+        {
+          "left": "Hội chứng Mèo kêu (Cri-du-chat)",
+          "right": "Đột biến mất một đoạn ở nhánh ngắn của NST số 5"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Hội chứng Đao liên quan đến NST thường số 21, còn Turner và Klinefelter liên quan đến NST giới tính."
+      },
+      {
+        "level": 2,
+        "text": "Turner là nữ lùn cổ ngắn (XO), Klinefelter là nam vô sinh có ngực phát triển (XXY)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Nhận diện bệnh và tật di truyền",
+        "body": "Phân biệt giữa đột biến số lượng NST thường, số lượng NST giới tính và cấu trúc NST."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Đối chiếu cơ chế",
+        "body": "Đao: 3 NST 21. Turner: 1 NST X (XO). Claiphentơ: XXY. Mèo kêu: mất đoạn NST 5."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Ghép chính xác 4 cặp hội chứng bệnh với biến đổi nhiễm sắc thể."
+      }
+    ],
+    "finalSolution": "Hội chứng Đao (3 NST 21), Turner (XO), Claiphentơ (XXY), Mèo kêu (mất đoạn NST 5).",
+    "commonMistakes": [
+      {
+        "id": "cm-turner-down",
+        "message": "Tránh nhầm giữa Đao (lệch bội NST thường số 21) và Turner (lệch bội NST giới tính XO)."
+      }
+    ]
+  },
+  {
+    "id": "bio-g9-b11-sort-001",
+    "lessonId": "bio-g9-b11",
+    "skillIds": [
+      "chromosome-mutations"
+    ],
+    "difficulty": 1,
+    "prompt": "Phân loại các dạng đột biến sau vào hai nhóm: **Đột biến cấu trúc NST** và **Đột biến số lượng NST**.",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        {
+          "id": "structure",
+          "label": "Đột biến cấu trúc nhiễm sắc thể"
+        },
+        {
+          "id": "number",
+          "label": "Đột biến số lượng nhiễm sắc thể"
+        }
+      ],
+      "items": [
+        {
+          "id": "del",
+          "label": "Mất đoạn nhiễm sắc thể (mất một đoạn chứa gen)",
+          "bucketId": "structure"
+        },
+        {
+          "id": "dup",
+          "label": "Lặp đoạn nhiễm sắc thể (một đoạn NST được lặp lại)",
+          "bucketId": "structure"
+        },
+        {
+          "id": "inv",
+          "label": "Đảo đoạn nhiễm sắc thể (một đoạn đứt ra quay 180° rồi gắn lại)",
+          "bucketId": "structure"
+        },
+        {
+          "id": "trans",
+          "label": "Chuyển đoạn nhiễm sắc thể (chuyển đoạn tương hỗ hoặc không tương hỗ)",
+          "bucketId": "structure"
+        },
+        {
+          "id": "mono",
+          "label": "Thể một nhiễm ($2n - 1$ do thiếu 1 NST)",
+          "bucketId": "number"
+        },
+        {
+          "id": "trisomy",
+          "label": "Thể ba nhiễm ($2n + 1$ do thừa 1 NST)",
+          "bucketId": "number"
+        },
+        {
+          "id": "triploid",
+          "label": "Thể tam bội ($3n$ - đa bội lẻ)",
+          "bucketId": "number"
+        },
+        {
+          "id": "tetraploid",
+          "label": "Thể tứ bội ($4n$ - đa bội chẵn)",
+          "bucketId": "number"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đột biến cấu trúc gồm 4 dạng: Mất đoạn, Lặp đoạn, Đảo đoạn, Chuyển đoạn."
+      },
+      {
+        "level": 2,
+        "text": "Đột biến số lượng liên quan đến thay đổi số lượng NST ở một vài cặp (dị bội 2n±1) hoặc toàn bộ bộ NST (đa bội 3n, 4n)."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Phân loại đột biến NST",
+        "body": "Chia thành biến đổi cấu trúc phân tử và biến đổi số lượng nguyên vẹn."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Các dạng",
+        "body": "Cấu trúc: Mất, lặp, đảo, chuyển đoạn. Số lượng: Thể một (2n-1), thể ba (2n+1), tam bội (3n), tứ bội (4n)."
+      },
+      {
+        "kind": "answer",
+        "title": "Phân loại",
+        "body": "Xếp 8 dạng đột biến vào 2 xô tương ứng."
+      }
+    ],
+    "finalSolution": "**Đột biến cấu trúc:** Mất đoạn, lặp đoạn, đảo đoạn, chuyển đoạn.\n**Đột biến số lượng:** Thể một (2n-1), thể ba (2n+1), tam bội (3n), tứ bội (4n)."
   }
 ]

@@ -545,5 +545,63 @@
         "message": "Chọn nhầm phương án 4 vốn ghép 2 loại tính trạng khác nhau."
       }
     ]
+  },
+  {
+    "id": "bio-g9-b01-match-001",
+    "lessonId": "bio-g9-b01",
+    "skillIds": [
+      "mendel-genetics"
+    ],
+    "difficulty": 1,
+    "prompt": "Ghép các phép lai kinh điển của Mendel với **tỉ lệ phân li kiểu hình ở thế hệ con tương ứng**.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Lai 1 cặp tính trạng trội lặn hoàn toàn ở F2 (Aa x Aa)",
+          "right": "Tỉ lệ 3 trội : 1 lặn (75% trội : 25% lặn)"
+        },
+        {
+          "left": "Lai phân tích cá thể dị hợp 1 cặp gen (Aa x aa)",
+          "right": "Tỉ lệ 1 trội : 1 lặn (50% trội : 50% lặn)"
+        },
+        {
+          "left": "Lai 2 cặp tính trạng phân li độc lập ở F2 (AaBb x AaBb)",
+          "right": "Tỉ lệ 9 : 3 : 3 : 1 (9 trội-trội : 3 trội-lặn : 3 lặn-trội : 1 lặn-lặn)"
+        },
+        {
+          "left": "Lai phân tích cá thể dị hợp 2 cặp gen (AaBb x aabb)",
+          "right": "Tỉ lệ 1 : 1 : 1 : 1 (4 nhóm kiểu hình có tỉ lệ bằng nhau)"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Lai phân tích là lai giữa cá thể mang tính trạng trội cần xác định kiểu gen với cá thể mang tính trạng lặn."
+      },
+      {
+        "level": 2,
+        "text": "F2 của 1 cặp tính trạng có tỉ lệ 3:1; F2 của 2 cặp phân li độc lập là tích (3:1)(3:1) = 9:3:3:1."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Tỉ lệ phân li Mendel",
+        "body": "Xác định tỉ lệ kiểu hình đặc trưng cho từng phép lai cơ bản."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy luật di truyền",
+        "body": "Aa x Aa → 3:1; Aa x aa → 1:1; AaBb x AaBb → 9:3:3:1; AaBb x aabb → 1:1:1:1."
+      },
+      {
+        "kind": "answer",
+        "title": "Nối cặp",
+        "body": "Nối chuẩn xác 4 phép lai với tỉ lệ kiểu hình."
+      }
+    ],
+    "finalSolution": "**Aa x Aa:** 3:1; **Aa x aa:** 1:1; **AaBb x AaBb:** 9:3:3:1; **AaBb x aabb:** 1:1:1:1."
   }
 ]
