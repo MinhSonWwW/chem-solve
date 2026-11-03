@@ -16,21 +16,13 @@ import {
 } from 'lucide-react';
 import { loadTheory, type TheoryContent } from '@/content/contentLoader';
 import { useUserStore } from '@/features/gamification/useUserStore';
-import { Formula, Mascot, Button } from '@/design-system';
+import { Mascot, Button, MathText } from '@/design-system';
 import { sound } from '@/lib/audio';
 import { setActiveSubject, setActiveGrade, parseLessonSubjectAndGrade } from '@/content/subjects';
 
-// Helper to render text with [[Formula]] markers
+// Helper to render text with Math ($...$), Formula ([[...]]), and Bold (**)
 function renderFormulaText(text: string): React.ReactNode {
-  const parts = text.split(/\[\[([^\]]+)\]\]/g);
-  if (parts.length === 1) return text;
-  return parts.map((part, i) =>
-    i % 2 === 1 ? (
-      <Formula key={i} code={part} className="text-cyan-300 font-bold inline-block mx-0.5" />
-    ) : (
-      <React.Fragment key={i}>{part}</React.Fragment>
-    )
-  );
+  return <MathText text={text} />;
 }
 
 export const TheoryPage: React.FC = () => {
@@ -40,7 +32,6 @@ export const TheoryPage: React.FC = () => {
 
   const { subject, grade } = parseLessonSubjectAndGrade(lessonId);
   const isPhysics = subject === 'physics';
-  const isBio = subject === 'bio';
   const gradeNumber = String(grade);
 
   const [theory, setTheory] = useState<TheoryContent | null>(null);
@@ -86,19 +77,19 @@ export const TheoryPage: React.FC = () => {
 
   if (loading) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-[80dvh] px-4 select-none">
-        <div className="w-16 h-16 rounded-3xl bg-[#131f24] border-2 border-purple-500/50 flex items-center justify-center animate-pulse shadow-[0_4px_0_0_#6b21a8]">
-          <BookOpen className="w-8 h-8 text-purple-400" />
+      <div className="flex flex-col items-center justify-center min-h-[80dvh] px-4 select-none" data-subject={subject}>
+        <div className="w-16 h-16 rounded-3xl bg-[var(--bg-surface)] border border-[var(--border)] flex items-center justify-center animate-pulse">
+          <BookOpen className="w-8 h-8 text-[var(--subject-fg)]" />
         </div>
-        <p className="mt-4 text-sm font-bold text-slate-300">Đang chuẩn bị kiến thức trọng tâm…</p>
+        <p className="mt-4 text-sm font-bold text-[var(--text-secondary)]">Đang chuẩn bị kiến thức trọng tâm…</p>
       </div>
     );
   }
 
   if (error || !theory) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-[70dvh] px-4 text-center">
-        <p className="text-sm text-rose-300 font-bold mb-4">{error ?? 'Lỗi không xác định'}</p>
+      <div className="flex flex-col items-center justify-center min-h-[70dvh] px-4 text-center" data-subject={subject}>
+        <p className="text-sm text-[var(--err-fg)] font-bold mb-4">{error ?? 'Lỗi không xác định'}</p>
         <Button variant="primary" onClick={() => navigate(-1)}>
           QUAY LẠI
         </Button>
@@ -157,13 +148,13 @@ export const TheoryPage: React.FC = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto min-h-[88dvh] flex flex-col justify-between py-2 sm:py-4 px-3 sm:px-4 select-none">
+    <div data-subject={subject} className="max-w-xl mx-auto min-h-[88dvh] flex flex-col justify-between py-2 sm:py-4 px-3 sm:px-4 select-none">
       {/* 1. Header with Close Button & Story Segments Progress */}
       <div className="space-y-3 pt-1">
         <div className="flex items-center justify-between gap-3">
           <button
             onClick={handleExitOrFinish}
-            className="p-2 text-slate-400 hover:text-white rounded-2xl hover:bg-[#20333d] transition-colors cursor-pointer"
+            className="p-2 text-[var(--text-tertiary)] hover:text-[var(--text-primary)] rounded-2xl hover:bg-[var(--bg-surface-2)] transition-colors cursor-pointer"
             aria-label="Đóng"
           >
             <X className="w-5 h-5 stroke-[2.5]" />
@@ -177,16 +168,10 @@ export const TheoryPage: React.FC = () => {
               return (
                 <div
                   key={idx}
-                  className="h-2 flex-1 rounded-full bg-[#20333d] overflow-hidden relative"
+                  className="h-2 flex-1 rounded-full bg-[var(--bg-surface-2)] overflow-hidden relative"
                 >
                   <motion.div
-                    className={`h-full rounded-full ${
-                      isPhysics
-                        ? 'bg-gradient-to-r from-amber-500 to-yellow-400'
-                        : isBio
-                        ? 'bg-gradient-to-r from-emerald-500 to-teal-400'
-                        : 'bg-gradient-to-r from-sky-500 to-cyan-400'
-                    }`}
+                    className="h-full rounded-full bg-[var(--subject-fill)]"
                     initial={false}
                     animate={{
                       width: isPassed ? '100%' : isCurrent ? '100%' : '0%',
@@ -198,16 +183,8 @@ export const TheoryPage: React.FC = () => {
             })}
           </div>
 
-          <div
-            className={`flex items-center gap-1 px-2.5 py-1 rounded-xl text-[11px] font-black border ${
-              isPhysics
-                ? 'bg-amber-500/15 border-amber-500/30 text-amber-300'
-                : isBio
-                ? 'bg-emerald-500/15 border-emerald-500/30 text-emerald-300'
-                : 'bg-sky-500/15 border-sky-500/30 text-sky-300'
-            }`}
-          >
-            <Sparkles className={`w-3.5 h-3.5 ${isPhysics ? 'text-amber-400' : isBio ? 'text-emerald-400' : 'text-sky-400'}`} />
+          <div className="flex items-center gap-1 px-2.5 py-1 rounded-xl text-[11px] font-black border border-[var(--gold-edge)]/30 bg-[var(--gold-tint)] text-[var(--gold-fg)]">
+            <Sparkles className="w-3.5 h-3.5 text-[var(--gold-fg)]" />
             <span>+10 XP</span>
           </div>
         </div>
@@ -230,36 +207,24 @@ export const TheoryPage: React.FC = () => {
               </div>
 
               <div className="space-y-2">
-                <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wide border ${
-                  isPhysics
-                    ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
-                    : isBio
-                    ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40'
-                    : 'bg-sky-500/20 text-sky-300 border-sky-500/40'
-                }`}>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wide border border-[var(--subject-edge)]/40 bg-[var(--subject-tint)] text-[var(--subject-fg)]">
                   <Award className="w-4 h-4" /> Hoàn thành bài học
                 </span>
-                <h1 className="text-2xl font-black text-white">Xuất sắc!</h1>
-                <p className="text-sm text-slate-300 max-w-sm mx-auto leading-relaxed">
+                <h1 className="text-2xl font-black text-[var(--text-primary)]">Xuất sắc!</h1>
+                <p className="text-sm text-[var(--text-secondary)] max-w-sm mx-auto leading-relaxed">
                   Bạn đã nắm vững lý thuyết trọng tâm của bài{' '}
-                  <span className={`font-bold ${isPhysics ? 'text-amber-300' : isBio ? 'text-emerald-300' : 'text-sky-300'}`}>{theory.title}</span>. Bây giờ hãy tự tin bước vào phần bài tập nhé!
+                  <span className="font-bold text-[var(--subject-fg)]">{theory.title}</span>. Bây giờ hãy tự tin bước vào phần bài tập nhé!
                 </p>
               </div>
 
               <div className="flex justify-center gap-4">
-                <div className={`bg-[#18272f] border-2 px-5 py-3 rounded-2xl text-center ${
-                  isPhysics
-                    ? 'border-amber-500/40 shadow-[0_4px_0_0_#ca8a04]'
-                    : isBio
-                    ? 'border-emerald-500/40 shadow-[0_4px_0_0_#059669]'
-                    : 'border-sky-500/40 shadow-[0_4px_0_0_#0284c7]'
-                }`}>
-                  <span className="text-xs text-slate-400 block font-bold">Kinh nghiệm</span>
-                  <span className={`text-xl font-black ${isPhysics ? 'text-amber-300' : isBio ? 'text-emerald-300' : 'text-sky-300'}`}>+10 XP</span>
+                <div className="bg-[var(--bg-surface)] border border-[var(--border)] px-5 py-3 rounded-2xl text-center">
+                  <span className="text-xs text-[var(--text-tertiary)] block font-bold">Kinh nghiệm</span>
+                  <span className="text-xl font-black text-[var(--gold-fg)]">+10 XP</span>
                 </div>
-                <div className="bg-[#18272f] border-2 border-[#58cc02]/40 px-5 py-3 rounded-2xl shadow-[0_4px_0_0_#2b590e] text-center">
-                  <span className="text-xs text-slate-400 block font-bold">Luyện tập</span>
-                  <span className="text-xl font-black text-emerald-300">Đã mở khóa</span>
+                <div className="bg-[var(--bg-surface)] border border-[var(--border)] px-5 py-3 rounded-2xl text-center">
+                  <span className="text-xs text-[var(--text-tertiary)] block font-bold">Luyện tập</span>
+                  <span className="text-xl font-black text-[var(--ok-fg)]">Đã mở khóa</span>
                 </div>
               </div>
 
@@ -268,13 +233,6 @@ export const TheoryPage: React.FC = () => {
                   variant="primary"
                   size="lg"
                   fullWidth
-                  className={
-                    isPhysics
-                      ? 'bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-400 hover:to-yellow-300 text-slate-950 font-black shadow-[0_4px_0_0_#ca8a04]'
-                      : isBio
-                      ? 'bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-slate-950 font-black shadow-[0_4px_0_0_#059669]'
-                      : 'bg-gradient-to-r from-sky-500 to-cyan-400 hover:from-sky-400 hover:to-cyan-300 text-slate-950 font-black shadow-[0_4px_0_0_#0284c7]'
-                  }
                   onClick={handleExitOrFinish}
                 >
                   TIẾP TỤC HÀNH TRÌNH
@@ -291,57 +249,36 @@ export const TheoryPage: React.FC = () => {
               transition={{ duration: 0.25 }}
               className="space-y-4"
             >
-              <div
-                className={`bg-[#18272f] border-2 p-5 rounded-3xl space-y-4 ${
-                  isPhysics
-                    ? 'border-amber-500/50 shadow-[0_6px_0_0_#ca8a04]'
-                    : isBio
-                    ? 'border-emerald-500/50 shadow-[0_6px_0_0_#059669]'
-                    : 'border-sky-500/50 shadow-[0_6px_0_0_#0284c7]'
-                }`}
-              >
+              <div className="bg-[var(--bg-surface)] border border-[var(--border)] p-5 rounded-3xl space-y-4">
                 <div className="flex items-center gap-2">
-                  <span
-                    className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-black border ${
-                      isPhysics
-                        ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
-                        : isBio
-                        ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40'
-                        : 'bg-sky-500/20 text-sky-300 border-sky-500/40'
-                    }`}
-                  >
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-black border border-[var(--subject-edge)]/40 bg-[var(--subject-tint)] text-[var(--subject-fg)]">
                     <Sparkles className="w-3.5 h-3.5" /> Kiểm tra nhanh
                   </span>
-                  <span className="text-xs text-slate-400 font-medium">Không trừ tim</span>
+                  <span className="text-xs text-[var(--text-tertiary)] font-medium">Không trừ tim</span>
                 </div>
 
-                <h2 className="text-base sm:text-lg font-black text-white leading-relaxed">
+                <h2 className="text-base sm:text-lg font-black text-[var(--text-primary)] leading-relaxed">
                   {renderFormulaText(theory.quickCheck.prompt)}
                 </h2>
 
                 <div className="space-y-2.5 pt-1">
                   {theory.quickCheck.options.map((opt) => {
                     const isSelected = selectedOption === opt.id;
-                    let optionStyle = isPhysics
-                      ? 'bg-[#20333d] border-[#2e4756] text-slate-200 hover:border-amber-400 shadow-[0_3px_0_0_#131f24]'
-                      : isBio
-                      ? 'bg-[#20333d] border-[#2e4756] text-slate-200 hover:border-emerald-400 shadow-[0_3px_0_0_#131f24]'
-                      : 'bg-[#20333d] border-[#2e4756] text-slate-200 hover:border-sky-400 shadow-[0_3px_0_0_#131f24]';
+                    let optionStyle =
+                      'bg-[var(--bg-surface-2)] border border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--border-strong)]';
 
                     if (isChecked) {
                       if (opt.correct) {
                         optionStyle =
-                          'bg-[#58cc02]/20 border-[#58cc02] text-emerald-200 shadow-[0_3px_0_0_#46a302]';
+                          'bg-[var(--ok-tint)] border-2 border-[var(--ok-fill)] text-[var(--ok-fg)]';
                       } else if (isSelected) {
                         optionStyle =
-                          'bg-[#ff4b4b]/20 border-[#ff4b4b] text-rose-200 shadow-[0_3px_0_0_#ea2b2b]';
+                          'bg-[var(--err-tint)] border-2 border-[var(--err-fill)] text-[var(--err-fg)]';
                       } else {
-                        optionStyle = 'opacity-40 border-[#20333d] text-slate-500';
+                        optionStyle = 'opacity-40 border-[var(--border)] text-[var(--text-tertiary)] bg-[var(--bg-surface-2)]';
                       }
                     } else if (isSelected) {
-                      optionStyle = isPhysics
-                        ? 'bg-amber-500/20 border-amber-400 text-amber-200 shadow-[0_3px_0_0_#ca8a04]'
-                        : 'bg-purple-500/20 border-purple-400 text-fuchsia-200 shadow-[0_3px_0_0_#7e22ce]';
+                      optionStyle = 'bg-[var(--subject-tint)] border-2 border-[var(--subject-fill)] text-[var(--text-primary)]';
                     }
 
                     return (
@@ -352,14 +289,14 @@ export const TheoryPage: React.FC = () => {
                           sound.playClick();
                           setSelectedOption(opt.id);
                         }}
-                        className={`w-full p-3.5 rounded-2xl border-2 text-left text-sm font-bold flex items-center justify-between transition-all cursor-pointer ${optionStyle}`}
+                        className={`w-full p-3.5 rounded-2xl text-left text-sm font-bold flex items-center justify-between transition-all cursor-pointer ${optionStyle}`}
                       >
                         <span>{renderFormulaText(opt.text)}</span>
                         {isChecked && opt.correct && (
-                          <Check className="w-4 h-4 text-emerald-400 stroke-[3]" />
+                          <Check className="w-4 h-4 text-[var(--ok-fg)] stroke-[3]" />
                         )}
                         {isChecked && isSelected && !opt.correct && (
-                          <X className="w-4 h-4 text-rose-400 stroke-[3]" />
+                          <X className="w-4 h-4 text-[var(--err-fg)] stroke-[3]" />
                         )}
                       </button>
                     );
@@ -370,13 +307,9 @@ export const TheoryPage: React.FC = () => {
                   <motion.div
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className={`p-3.5 rounded-2xl border text-xs leading-relaxed ${
-                      isPhysics
-                        ? 'bg-amber-950/40 border-amber-500/40 text-amber-200'
-                        : 'bg-purple-950/40 border-purple-500/40 text-purple-200'
-                    }`}
+                    className="p-3.5 rounded-2xl border border-[var(--border)] bg-[var(--bg-surface-2)] text-xs leading-relaxed text-[var(--text-secondary)]"
                   >
-                    💡 {theory.quickCheck.explanation}
+                    💡 {renderFormulaText(theory.quickCheck.explanation)}
                   </motion.div>
                 )}
               </div>
@@ -389,27 +322,15 @@ export const TheoryPage: React.FC = () => {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -30, opacity: 0 }}
               transition={{ duration: 0.25 }}
-              className={`bg-[#18272f] border-2 p-5 sm:p-6 rounded-3xl shadow-[0_6px_0_0_#131f24] space-y-4 ${
-                isPhysics ? 'border-amber-500/30' : 'border-[#2e4756]'
-              }`}
+              className="bg-[var(--bg-surface)] border border-[var(--border)] p-5 sm:p-6 rounded-3xl space-y-4"
             >
               {/* Badge & Step indicator */}
               <div className="flex items-center justify-between">
                 <span
                   className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black border ${
-                    currentCard.badgeColor === 'emerald'
-                      ? isPhysics
-                        ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
-                        : 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40'
-                      : currentCard.badgeColor === 'amber'
-                      ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
-                      : currentCard.badgeColor === 'cyan'
-                      ? isPhysics
-                        ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
-                        : 'bg-cyan-500/20 text-cyan-300 border-cyan-500/40'
-                      : isPhysics
-                      ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
-                      : 'bg-purple-500/20 text-purple-300 border-purple-500/40'
+                    currentCard.badgeColor === 'amber'
+                      ? 'bg-[var(--warn-tint)] text-[var(--warn-fg)] border-[var(--warn-edge)]/40'
+                      : 'bg-[var(--subject-tint)] text-[var(--subject-fg)] border-[var(--subject-edge)]/40'
                   }`}
                 >
                   {currentCard.badgeColor === 'amber' ? (
@@ -424,33 +345,27 @@ export const TheoryPage: React.FC = () => {
                   {currentCard.badge}
                 </span>
 
-                <span className="text-xs font-bold text-slate-400">
+                <span className="text-xs font-bold text-[var(--text-tertiary)]">
                   {currentSlide + 1} / {totalSlides}
                 </span>
               </div>
 
               {/* Title */}
-              <h2 className="text-lg sm:text-xl font-black text-white leading-tight">
-                {currentCard.title}
+              <h2 className="text-lg sm:text-xl font-black text-[var(--text-primary)] leading-tight">
+                {renderFormulaText(currentCard.title)}
               </h2>
 
               {/* Body Content */}
-              <p className="text-sm text-slate-200 leading-relaxed font-medium">
+              <p className="text-sm text-[var(--text-secondary)] leading-relaxed font-medium">
                 {renderFormulaText(currentCard.content)}
               </p>
 
               {/* Formula Example (if present) */}
               {currentCard.formulaExample && (
-                <div
-                  className={`p-3.5 rounded-2xl bg-[#131f24] border-2 flex items-center justify-center text-center shadow-inner ${
-                    isPhysics ? 'border-amber-500/40' : 'border-emerald-500/40'
-                  }`}
-                >
-                  <Formula
-                    code={currentCard.formulaExample}
-                    className={`font-black text-base sm:text-lg tracking-wide ${
-                      isPhysics ? 'text-amber-300' : 'text-emerald-300'
-                    }`}
+                <div className="p-3.5 rounded-2xl bg-[var(--bg-surface-2)] border border-[var(--border)] flex items-center justify-center text-center">
+                  <MathText
+                    text={currentCard.formulaExample}
+                    className="font-black text-base sm:text-lg tracking-wide text-[var(--subject-fg)]"
                   />
                 </div>
               )}
@@ -459,12 +374,8 @@ export const TheoryPage: React.FC = () => {
               {currentCard.bulletPoints && (
                 <div className="space-y-2 pt-1">
                   {currentCard.bulletPoints.map((pt, i) => (
-                    <div key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-300 leading-relaxed">
-                      <span
-                        className={`w-2 h-2 rounded-full mt-1.5 shrink-0 ${
-                          isPhysics ? 'bg-amber-400' : 'bg-purple-400'
-                        }`}
-                      />
+                    <div key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed">
+                      <span className="w-2 h-2 rounded-full mt-1.5 shrink-0 bg-[var(--subject-fill)]" />
                       <span>{renderFormulaText(pt)}</span>
                     </div>
                   ))}
@@ -473,13 +384,7 @@ export const TheoryPage: React.FC = () => {
 
               {/* Highlight Callout Box */}
               {currentCard.callout && (
-                <div
-                  className={`p-3.5 rounded-2xl border-2 text-xs sm:text-sm font-bold whitespace-pre-line leading-relaxed shadow-[0_3px_0_0_#131f24] ${
-                    isPhysics
-                      ? 'bg-[#18272f] border-amber-500/40 text-amber-200'
-                      : 'bg-[#18272f] border-purple-500/40 text-purple-200'
-                  }`}
-                >
+                <div className="p-3.5 rounded-2xl border border-[var(--border)] bg-[var(--bg-surface-2)] text-xs sm:text-sm font-bold whitespace-pre-line leading-relaxed text-[var(--text-primary)]">
                   {renderFormulaText(currentCard.callout)}
                 </div>
               )}
@@ -490,13 +395,13 @@ export const TheoryPage: React.FC = () => {
 
       {/* 3. Bottom Sticky Action Navigation */}
       {!isCompleted && (
-        <div className="pt-2 border-t border-slate-800 flex items-center gap-3">
+        <div className="pt-2 border-t border-[var(--border)] flex items-center gap-3">
           {currentSlide > 0 && (
             <Button
               variant="outline"
               size="lg"
               onClick={handlePrev}
-              className="px-4 border-2 border-[#2e4756] text-slate-300 hover:text-white"
+              className="px-4 text-[var(--text-secondary)]"
             >
               <ArrowLeft className="w-5 h-5" />
             </Button>
@@ -510,13 +415,6 @@ export const TheoryPage: React.FC = () => {
                 fullWidth
                 disabled={!selectedOption}
                 onClick={handleCheckAnswer}
-                className={
-                  isPhysics
-                    ? 'bg-[#eab308] hover:bg-[#facc15] text-slate-950 font-black shadow-[0_4px_0_0_#ca8a04]'
-                    : isBio
-                    ? 'bg-[#10b981] hover:bg-[#34d399] text-slate-950 font-black shadow-[0_4px_0_0_#059669]'
-                    : 'bg-[#0ea5e9] hover:bg-[#38bdf8] text-white font-black shadow-[0_4px_0_0_#0284c7]'
-                }
               >
                 KIỂM TRA
               </Button>
@@ -526,13 +424,6 @@ export const TheoryPage: React.FC = () => {
                 size="lg"
                 fullWidth
                 onClick={handleFinish}
-                className={
-                  isPhysics
-                    ? 'bg-gradient-to-r from-amber-500 to-yellow-400 text-slate-950 font-black shadow-[0_4px_0_0_#ca8a04]'
-                    : isBio
-                    ? 'bg-gradient-to-r from-emerald-500 to-teal-400 text-slate-950 font-black shadow-[0_4px_0_0_#059669]'
-                    : 'bg-gradient-to-r from-sky-500 to-cyan-400 text-slate-950 font-black shadow-[0_4px_0_0_#0284c7]'
-                }
               >
                 HOÀN THÀNH
               </Button>
@@ -543,13 +434,7 @@ export const TheoryPage: React.FC = () => {
               size="lg"
               fullWidth
               onClick={handleNext}
-              className={`font-black flex items-center justify-center gap-2 ${
-                isPhysics
-                  ? 'bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-400 hover:to-yellow-300 text-slate-950 shadow-[0_4px_0_0_#ca8a04]'
-                  : isBio
-                  ? 'bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-slate-950 shadow-[0_4px_0_0_#059669]'
-                  : 'bg-gradient-to-r from-sky-500 to-cyan-400 hover:from-sky-400 hover:to-cyan-300 text-slate-950 shadow-[0_4px_0_0_#0284c7]'
-              }`}
+              className="font-black flex items-center justify-center gap-2"
             >
               <span>{currentSlide === totalSlides - 1 ? 'HOÀN THÀNH' : 'TIẾP THEO'}</span>
               <ArrowRight className="w-4 h-4 stroke-[3]" />

@@ -36,3 +36,4 @@ export * from './components/MinigameIllustration';
 export * from './components/GeneratorBadge';
 export * from './components/SubjectTrophy';
 export * from './components/ThemeToggle';
+export * from './components/MathText';

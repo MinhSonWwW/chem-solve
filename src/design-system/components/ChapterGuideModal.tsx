@@ -2,6 +2,7 @@ import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Sparkles, AlertTriangle, Lightbulb } from 'lucide-react';
 import { Button } from './Button';
+import { MathText } from './MathText';
 import { sound } from '@/lib/audio';
 import type { Chapter } from '@/content/curriculum';
 
@@ -43,11 +44,11 @@ export const ChapterGuideModal: React.FC<ChapterGuideModalProps> = ({
           {/* Header */}
           <div className="flex items-center justify-between pb-3 border-b border-slate-800">
             <div className="flex items-center gap-2.5">
-              <div className="w-10 h-10 rounded-2xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-xl">
+              <div className="w-10 h-10 rounded-2xl bg-[var(--chem-tint)] border border-[var(--chem-edge)] flex items-center justify-center text-xl">
                 📖
               </div>
               <div>
-                <span className="text-[10px] font-black uppercase tracking-wider text-cyan-400">
+                <span className="text-[10px] font-black uppercase tracking-wider text-[var(--chem-fg)]">
                   Sổ tay Lớp {grade} · Chương {chapter.chapterNumber}
                 </span>
                 <h2 className="text-base font-black text-slate-100 leading-tight">
@@ -82,22 +83,22 @@ export const ChapterGuideModal: React.FC<ChapterGuideModalProps> = ({
             {/* Core Formulas & Concepts */}
             <div className="p-3.5 rounded-2xl bg-slate-950/60 border border-slate-800 space-y-2">
               <div className="font-black text-slate-200 flex items-center gap-1.5">
-                <Sparkles className="w-4 h-4 text-cyan-400" />
+                <Sparkles className="w-4 h-4 text-[var(--chem-fg)]" />
                 Kiến thức & Công thức cần nhớ
               </div>
               <div className="space-y-1.5 text-slate-300 font-mono text-[11px]">
                 {chapter.guidebook?.formulas && chapter.guidebook.formulas.length > 0 ? (
                   chapter.guidebook.formulas.map((f, i) => (
                     <div key={i} className="p-2 rounded-xl bg-slate-900 border border-slate-800">
-                      <span className="text-cyan-300 font-bold">{f.label} </span>
-                      <span>{f.text}</span>
+                      <span className="text-[var(--chem-fg)] font-bold">{f.label} </span>
+                      <span><MathText text={f.text} /></span>
                     </div>
                   ))
                 ) : (
                   chapter.lessons.map((lesson) => (
                     <div key={lesson.id} className="p-2 rounded-xl bg-slate-900 border border-slate-800">
-                      <span className="text-cyan-300 font-bold">Bài {lesson.lessonNumber}: {lesson.title}</span>
-                      <p className="text-slate-400 font-sans text-[11px] mt-0.5">{lesson.subtitle}</p>
+                      <span className="text-[var(--chem-fg)] font-bold">Bài {lesson.lessonNumber}: <MathText text={lesson.title} /></span>
+                      <p className="text-slate-400 font-sans text-[11px] mt-0.5"><MathText text={lesson.subtitle} /></p>
                     </div>
                   ))
                 )}
@@ -112,7 +113,7 @@ export const ChapterGuideModal: React.FC<ChapterGuideModalProps> = ({
               </div>
               <ul className="list-disc list-inside space-y-1 text-[11px] opacity-90 leading-relaxed font-medium">
                 {chapter.guidebook?.traps && chapter.guidebook.traps.length > 0 ? (
-                  chapter.guidebook.traps.map((trap, i) => <li key={i}>{trap}</li>)
+                  chapter.guidebook.traps.map((trap, i) => <li key={i}><MathText text={trap} /></li>)
                 ) : (
                   <>
                     <li>Đọc kĩ đề bài và xác định chính xác hiện tượng/đại lượng cần tìm.</li>

@@ -18,3 +18,8 @@ File này ghi lại các quyết định kỹ thuật quan trọng của CHEM-SO
 - **Quyết định**: Dùng `motion` (Framer Motion v12) và CSS variables/transform, tôn trọng `prefers-reduced-motion`.
 - **Lý do**: Đảm bảo 60fps trên thiết bị di động, chỉ chạy hiệu ứng khi cần thiết, hỗ trợ đầy đủ accessibility.
 - **Ngày**: 2026-09-20.
+
+## ADR 004: Tích hợp KaTeX render công thức Toán - Lý - Hóa
+- **Quyết định**: Cài đặt thư viện `katex` để render chính xác tất cả các ký hiệu, biểu thức toán học và vật lý định lượng ($W_đ = \frac{1}{2}mv^2$, định luật Ohm, máy biến thế, số mũ, phân số, chỉ số dưới).
+- **Lý do**: Khắc phục triệt để lỗi hiển thị raw LaTeX dạng `$W_đ$`, `$\frac{1}{2}$`, đem lại giao diện công thức chuẩn sách giáo khoa, tải siêu nhanh và nhẹ hơn MathJax.
+- **Ngày**: 2026-11-01.
