@@ -14,6 +14,15 @@ import {
   ArrowRight,
   Droplets,
   Layers,
+  Atom,
+  Eye,
+  Activity,
+  Dna,
+  Thermometer,
+  Pipette,
+  Search,
+  Gauge,
+  Sliders,
 } from 'lucide-react';
 import { sound } from '@/lib/audio';
 import { getCurriculum, type Grade } from '@/content/curriculum';
@@ -26,6 +35,7 @@ import {
   DoodleOrnament,
   MinigameIllustration,
   GeneratorBadge,
+  MathText,
 } from '@/design-system';
 
 interface LockModalInfo {
@@ -44,7 +54,6 @@ const GENERATOR_TOPICS = [
     title: 'Đề tổng hợp toán hóa ngẫu nhiên',
     desc: 'Trộn đều 5 câu: Mol, Thể tích khí, Tỉ khối, Nồng độ & PTHH',
     icon: Zap,
-    color: 'from-amber-500/20 to-orange-500/20 text-amber-400 border-amber-500/30',
     badge: 'Vô hạn đề',
     requiredLessonId: 'g8-b06',
     requiredLessonName: 'Bài 6: Tính theo PTHH',
@@ -54,7 +63,6 @@ const GENERATOR_TOPICS = [
     title: 'Toán số Mol & Khối lượng',
     desc: 'Công thức n = m / M và m = n × M với các bẫy đảo mẫu số',
     icon: Calculator,
-    color: 'from-cyan-500/20 to-blue-500/20 text-cyan-400 border-cyan-500/30',
     badge: 'Cơ bản',
     requiredLessonId: 'g8-b03',
     requiredLessonName: 'Bài 3: Mol và tỉ khối chất khí',
@@ -64,7 +72,6 @@ const GENERATOR_TOPICS = [
     title: 'Thể tích khí ở ĐKC & Tỉ khối',
     desc: 'Áp dụng chuẩn mới 24,79 L/mol, tỉ khối d(A/B) và d(A/kk)',
     icon: Flame,
-    color: 'from-emerald-500/20 to-teal-500/20 text-emerald-400 border-emerald-500/30',
     badge: 'ĐKC 24,79L',
     requiredLessonId: 'g8-b03',
     requiredLessonName: 'Bài 3: Mol và tỉ khối chất khí',
@@ -74,7 +81,6 @@ const GENERATOR_TOPICS = [
     title: 'Dung dịch & Nồng độ (C%, CM)',
     desc: 'Nồng độ phần trăm, nồng độ mol và quy đổi thể tích dung dịch',
     icon: Beaker,
-    color: 'from-purple-500/20 to-pink-500/20 text-purple-400 border-purple-500/30',
     badge: 'Dung dịch',
     requiredLessonId: 'g8-b04',
     requiredLessonName: 'Bài 4: Dung dịch và nồng độ',
@@ -84,7 +90,6 @@ const GENERATOR_TOPICS = [
     title: 'Tính theo phương trình hóa học',
     desc: 'Kim loại tác dụng với axit: Zn, Fe + HCl, H2SO4 loãng',
     icon: Scale,
-    color: 'from-rose-500/20 to-red-500/20 text-rose-400 border-rose-500/30',
     badge: 'Toán PTHH',
     requiredLessonId: 'g8-b06',
     requiredLessonName: 'Bài 6: Tính theo PTHH',
@@ -97,7 +102,6 @@ const PHYSICS_GENERATOR_TOPICS = [
     title: 'Đề tổng hợp Vật lý ngẫu nhiên',
     desc: 'Trộn đều 5 câu: Vận tốc, Khối lượng riêng, Áp suất, Cơ năng & Định luật Ôm',
     icon: Zap,
-    color: 'from-amber-500/20 to-yellow-500/20 text-amber-400 border-amber-500/30',
     badge: 'Vô hạn đề',
     requiredLessonId: 'phy-g8-b13',
     requiredLessonName: 'Bài 13: Khối lượng riêng',
@@ -107,7 +111,6 @@ const PHYSICS_GENERATOR_TOPICS = [
     title: 'Toán Tốc độ & Chuyển động (v = s/t)',
     desc: 'Tính tốc độ v, quãng đường s, thời gian t và chuyển đổi đơn vị km/h ↔ m/s',
     icon: Flame,
-    color: 'from-cyan-500/20 to-blue-500/20 text-cyan-400 border-cyan-500/30',
     badge: 'Cơ học',
     requiredLessonId: 'phy-g7-b08',
     requiredLessonName: 'Bài 8: Tốc độ chuyển động',
@@ -117,7 +120,6 @@ const PHYSICS_GENERATOR_TOPICS = [
     title: 'Toán Khối lượng riêng & Trọng lượng',
     desc: 'Công thức D = m / V và P = 10m với các chất: nhôm, sắt, đồng, nước',
     icon: Calculator,
-    color: 'from-emerald-500/20 to-teal-500/20 text-emerald-400 border-emerald-500/30',
     badge: 'KLR & Trọng lực',
     requiredLessonId: 'phy-g8-b13',
     requiredLessonName: 'Bài 13: Khối lượng riêng',
@@ -127,7 +129,6 @@ const PHYSICS_GENERATOR_TOPICS = [
     title: 'Toán Áp suất & Lực đẩy Archimedes',
     desc: 'Công thức áp suất p = F / S và độ lớn lực đẩy chất lỏng F_A = d × V',
     icon: Scale,
-    color: 'from-purple-500/20 to-pink-500/20 text-purple-400 border-purple-500/30',
     badge: 'Áp suất & Lực',
     requiredLessonId: 'phy-g8-b14',
     requiredLessonName: 'Bài 14: Áp suất',
@@ -137,7 +138,6 @@ const PHYSICS_GENERATOR_TOPICS = [
     title: 'Toán Công cơ học & Cơ năng',
     desc: 'Tính công kéo A = F × s, thế năng trọng trường W_t và động năng W_đ',
     icon: Sparkles,
-    color: 'from-rose-500/20 to-orange-500/20 text-rose-400 border-rose-500/30',
     badge: 'Năng lượng',
     requiredLessonId: 'phy-g8-b17',
     requiredLessonName: 'Bài 17: Cơ năng',
@@ -147,7 +147,6 @@ const PHYSICS_GENERATOR_TOPICS = [
     title: 'Toán Định luật Ôm & Điện trở (I = U/R)',
     desc: 'Tính cường độ I, hiệu điện thế U và điện trở tương đương mạch nối tiếp',
     icon: Zap,
-    color: 'from-yellow-500/20 to-amber-500/20 text-yellow-400 border-yellow-500/30',
     badge: 'Điện học',
     requiredLessonId: 'phy-g9-b08',
     requiredLessonName: 'Bài 8: Đoạn mạch nối tiếp',
@@ -160,7 +159,6 @@ const BIOLOGY_GENERATOR_TOPICS = [
     title: 'Đề Sinh Học Tổng Hợp (Vô Hạn)',
     desc: 'Trộn ngẫu nhiên câu hỏi phân bào & NST, tái bản DNA, phép lai Mendel, calo, truyền máu & mật độ quần thể',
     icon: Sparkles,
-    color: 'from-emerald-500/20 to-teal-500/20 text-emerald-400 border-emerald-500/30',
     badge: 'Đề Trộn',
     requiredLessonId: 'bio-g6-b04',
     requiredLessonName: 'Bài 20: Tế bào lớn lên và phân chia',
@@ -170,7 +168,6 @@ const BIOLOGY_GENERATOR_TOPICS = [
     title: 'Toán Phép Lai Mendel & Bảng Punnett',
     desc: 'Tính số loại giao tử 2ⁿ, số loại kiểu gen, kiểu hình và tỉ lệ phân li độc lập (9:3:3:1)',
     icon: Calculator,
-    color: 'from-amber-500/20 to-yellow-500/20 text-amber-400 border-amber-500/30',
     badge: 'Di truyền 9',
     requiredLessonId: 'bio-g9-b02',
     requiredLessonName: 'Bài 37: Các quy luật di truyền của Mendel',
@@ -180,7 +177,6 @@ const BIOLOGY_GENERATOR_TOPICS = [
     title: 'Toán Phân Tử DNA & Tái Bản Nhân Đôi',
     desc: 'Tính số liên kết hydrogen (2A+3G), chiều dài L = (N/2)×3,4Å và nucleotide môi trường N(2^k - 1)',
     icon: Sparkles,
-    color: 'from-blue-500/20 to-cyan-500/20 text-blue-400 border-blue-500/30',
     badge: 'Phân tử 9',
     requiredLessonId: 'bio-g9-b03',
     requiredLessonName: 'Bài 38: Nucleic acid và gene',
@@ -190,7 +186,6 @@ const BIOLOGY_GENERATOR_TOPICS = [
     title: 'Toán Nhiễm Sắc Thể, Nguyên Phân & Giao Tử',
     desc: 'Tính số NST môi trường 2n×a(2^k - 1), số tinh trùng (4x) và số trứng (1y) sau giảm phân',
     icon: Scale,
-    color: 'from-emerald-500/20 to-teal-500/20 text-emerald-400 border-emerald-500/30',
     badge: 'Nhiễm sắc thể 9',
     requiredLessonId: 'bio-g9-b08',
     requiredLessonName: 'Bài 43: Nguyên phân và giảm phân',
@@ -200,7 +195,6 @@ const BIOLOGY_GENERATOR_TOPICS = [
     title: 'Toán Năng Lượng Khẩu Phần Ăn (Calo)',
     desc: 'Tính tổng năng lượng: E = 4×Protein + 4×Carbohydrate + 9×Lipid (kcal)',
     icon: Flame,
-    color: 'from-amber-500/20 to-orange-500/20 text-amber-400 border-amber-500/30',
     badge: 'Dinh dưỡng 8',
     requiredLessonId: 'bio-g8-b03',
     requiredLessonName: 'Bài 32: Dinh dưỡng và tiêu hóa ở người',
@@ -210,7 +204,6 @@ const BIOLOGY_GENERATOR_TOPICS = [
     title: 'Toán Truyền Máu ABO & Kháng Thể',
     desc: 'Nguyên tắc truyền máu an toàn hệ ABO: không để hồng cầu người cho bị ngưng kết',
     icon: Calculator,
-    color: 'from-rose-500/20 to-red-500/20 text-rose-400 border-rose-500/30',
     badge: 'Tuần hoàn 8',
     requiredLessonId: 'bio-g8-b04',
     requiredLessonName: 'Bài 33: Máu và hệ tuần hoàn của cơ thể người',
@@ -220,7 +213,6 @@ const BIOLOGY_GENERATOR_TOPICS = [
     title: 'Toán Mật Độ Cá Thể Quần Thể (D = N/S)',
     desc: 'Tính mật độ cá thể trên đơn vị diện tích (m², ha) hoặc thể tích (m³)',
     icon: Scale,
-    color: 'from-green-500/20 to-emerald-500/20 text-green-400 border-green-500/30',
     badge: 'Sinh thái 8',
     requiredLessonId: 'bio-g8-b13',
     requiredLessonName: 'Bài 42: Quần thể sinh vật',
@@ -230,7 +222,6 @@ const BIOLOGY_GENERATOR_TOPICS = [
     title: 'Toán Nhu Cầu Nước Cơ Thể Mỗi Ngày',
     desc: 'Tính lượng nước cần thiết theo cân nặng: V = m × 40 mL (Lớp 7 KNTT)',
     icon: Beaker,
-    color: 'from-cyan-500/20 to-blue-500/20 text-cyan-400 border-cyan-500/30',
     badge: 'Dinh dưỡng 7',
     requiredLessonId: 'bio-g7-b09',
     requiredLessonName: 'Bài 29: Vai trò của nước và chất dinh dưỡng',
@@ -240,7 +231,6 @@ const BIOLOGY_GENERATOR_TOPICS = [
     title: 'Toán Phân Bào & Sinh Sản Tế Bào (N = N₀ × 2ⁿ)',
     desc: 'Tính số lượng tế bào con sau n lần nguyên phân liên tiếp từ tế bào ban đầu',
     icon: Calculator,
-    color: 'from-green-500/20 to-emerald-500/20 text-green-400 border-green-500/30',
     badge: 'Tế bào học 6',
     requiredLessonId: 'bio-g6-b04',
     requiredLessonName: 'Bài 20: Tế bào lớn lên và phân chia',
@@ -250,7 +240,6 @@ const BIOLOGY_GENERATOR_TOPICS = [
     title: 'Toán Độ Phóng Đại Kính Hiển Vi Quang Học',
     desc: 'Tính độ phóng đại ảnh = Độ phóng đại thị kính × Độ phóng đại vật kính',
     icon: Scale,
-    color: 'from-teal-500/20 to-cyan-500/20 text-teal-400 border-teal-500/30',
     badge: 'Kỹ thuật 6',
     requiredLessonId: 'bio-g6-b03',
     requiredLessonName: 'Bài 19: Cấu tạo và chức năng các thành phần của tế bào',
@@ -330,6 +319,123 @@ const CHEMISTRY_MINIGAMES = [
     route: '/games/review',
     colorKey: 'cyan',
   },
+  {
+    id: 'periodic-guess',
+    title: 'Đoán Ô Nguyên Tố Hóa Học',
+    desc: 'Đoán tên và ký hiệu nguyên tố qua số hiệu nguyên tử Z, chu kì & tính chất!',
+    icon: Atom,
+    badge: 'Bảng Tuần Hoàn',
+    route: '/games/periodic-guess',
+    colorKey: 'sky',
+  },
+  {
+    id: 'indicator-lab',
+    title: 'Phòng Thử Chỉ Thị Màu pH',
+    desc: 'Nhỏ chất chỉ thị quỳ tím & phenolphthalein nhận diện acid, base và muối!',
+    icon: Beaker,
+    badge: 'Thang pH',
+    route: '/games/indicator-lab',
+    colorKey: 'purple',
+  },
+  {
+    id: 'precipitate-catcher',
+    title: 'Bắt Kết Tủa Hóa Học',
+    desc: 'Nhận biết màu sắc và bản chất hóa học của các kết tủa vô cơ kinh điển!',
+    icon: Droplets,
+    badge: 'Kết Tủa Vô Cơ',
+    route: '/games/precipitate-catcher',
+    colorKey: 'emerald',
+  },
+  {
+    id: 'metal-race',
+    title: 'Đua Dãy Hoạt Động Kim Loại',
+    desc: 'Quyết định nhanh phản ứng kim loại đẩy muối và tác dụng với acid!',
+    icon: Flame,
+    badge: 'Dãy Hoạt Động',
+    route: '/games/metal-race',
+    colorKey: 'amber',
+  },
+  {
+    id: 'hydrocarbon-sorter',
+    title: 'Phân Loại Hydrocarbon Hữu Cơ',
+    desc: 'Phân loại nhanh Alkane, Alkene, Alkyne và Rượu theo cấu tạo phân tử!',
+    icon: Layers,
+    badge: 'Hóa Hữu Cơ',
+    route: '/games/hydrocarbon-sorter',
+    colorKey: 'rose',
+  },
+  {
+    id: 'flame-test',
+    title: 'Bí Ẩn Màu Ngọn Lửa Kim Loại',
+    desc: 'Nhận diện kim loại qua màu sắc đặc trưng khi đốt trên ngọn lửa đèn khí!',
+    icon: Flame,
+    badge: 'Quang Phổ Lửa',
+    route: '/games/flame-test',
+    colorKey: 'amber',
+  },
+  {
+    id: 'gas-collector',
+    title: 'Bậc Thầy Thu Khí Lab',
+    desc: 'Chọn chuẩn phương pháp thu khí: Đẩy nước hay đẩy không khí (ngửa hay úp)!',
+    icon: Droplets,
+    badge: 'Kỹ Năng Lab',
+    route: '/games/gas-collector',
+    colorKey: 'teal',
+  },
+  {
+    id: 'titration-lab',
+    title: 'Thí Nghiệm Chuẩn Độ Acid - Base',
+    desc: 'Thao tác van buret nhỏ từng giọt NaOH vào bình tam giác, căn điểm tương đương!',
+    icon: Pipette,
+    badge: 'Thực Hành Lab',
+    route: '/games/titration-lab',
+    colorKey: 'emerald',
+  },
+  {
+    id: 'electrolyte-tester',
+    title: 'Thử Tính Dẫn Điện Dung Dịch',
+    desc: 'Nhúng hai điện cực vào dung dịch để kiểm tra bóng đèn sáng, mờ hay không sáng!',
+    icon: Zap,
+    badge: 'Chất Điện Ly',
+    route: '/games/electrolyte-tester',
+    colorKey: 'amber',
+  },
+  {
+    id: 'separation-lab',
+    title: 'Tách Chiết & Tinh Chế Hỗn Hợp',
+    desc: 'Chọn phương pháp tách chất thông minh: lọc, cô cạn, chiết hay chưng cất!',
+    icon: Beaker,
+    badge: 'Kỹ Thuật Lab',
+    route: '/games/separation-lab',
+    colorKey: 'cyan',
+  },
+  {
+    id: 'metal-corrosion',
+    title: 'Chống Ăn Mòn Kim Loại & Gỉ Sắt',
+    desc: 'Bảo vệ vỏ tàu biển, cầu sắt và máy móc trước sự phá hủy của môi trường!',
+    icon: Flame,
+    badge: 'Ăn Mòn Kim Loại',
+    route: '/games/metal-corrosion',
+    colorKey: 'rose',
+  },
+  {
+    id: 'polymer-factory',
+    title: 'Nhà Máy Hợp Chất Polymer',
+    desc: 'Lắp ráp monome thành polyme: Nhựa PE, PVC, Cao su, Tơ tằm và Tinh bột!',
+    icon: Layers,
+    badge: 'Hóa Hữu Cơ',
+    route: '/games/polymer-factory',
+    colorKey: 'purple',
+  },
+  {
+    id: 'energy-reaction',
+    title: 'Năng Lượng Phản Ứng Enthalpy',
+    desc: 'Phân loại phản ứng tỏa nhiệt (giải phóng năng lượng) và thu nhiệt!',
+    icon: Sparkles,
+    badge: 'Nhiệt Hóa Học',
+    route: '/games/energy-reaction',
+    colorKey: 'emerald',
+  },
 ];
 
 const PHYSICS_MINIGAMES = [
@@ -377,6 +483,132 @@ const PHYSICS_MINIGAMES = [
     badge: 'Spaced Repetition',
     route: '/games/review',
     colorKey: 'cyan',
+  },
+  {
+    id: 'circuit-builder',
+    title: 'Thợ Nối Mạch Điện Thông Minh',
+    desc: 'Phán đoán mạch kín, mạch hở, đoản mạch và an toàn mạng điện!',
+    icon: Zap,
+    badge: 'Mạch Điện',
+    route: '/games/circuit-builder',
+    colorKey: 'amber',
+  },
+  {
+    id: 'optics-target',
+    title: 'Bắn Tia Sáng Khúc Xạ & Phản Xạ',
+    desc: 'Làm chủ góc tới i, góc khúc xạ r và định luật phản xạ toàn phần!',
+    icon: Eye,
+    badge: 'Quang Học',
+    route: '/games/optics-target',
+    colorKey: 'cyan',
+  },
+  {
+    id: 'density-scale',
+    title: 'Cân Khối Lượng Riêng & Lực Đẩy',
+    desc: 'Tính khối lượng riêng D = m/V và phân biệt chìm nổi trong chất lỏng!',
+    icon: Scale,
+    badge: 'Chất Lưu',
+    route: '/games/density-scale',
+    colorKey: 'emerald',
+  },
+  {
+    id: 'speed-radar',
+    title: 'Bắn Tốc Độ Chuyển Động',
+    desc: 'Tính tốc độ v = s/t và quy đổi siêu tốc km/h ↔ m/s!',
+    icon: Zap,
+    badge: 'Tốc Độ',
+    route: '/games/speed-radar',
+    colorKey: 'rose',
+  },
+  {
+    id: 'lever-balance',
+    title: 'Cân Bằng Đòn Bẩy Thần Tốc',
+    desc: 'Vận dụng quy tắc đòn bẩy F1.d1 = F2.d2 để bập bênh thăng bằng!',
+    icon: Scale,
+    badge: 'Cơ Học Máy',
+    route: '/games/lever-balance',
+    colorKey: 'purple',
+  },
+  {
+    id: 'heat-transfer',
+    title: 'Đua Hình Thức Truyền Nhiệt',
+    desc: 'Phân loại nhanh Dẫn nhiệt (chất rắn), Đối lưu & Bức xạ nhiệt!',
+    icon: Thermometer,
+    badge: 'Nhiệt Học',
+    route: '/games/heat-transfer',
+    colorKey: 'rose',
+  },
+  {
+    id: 'lens-quiz',
+    title: 'Thấu Kính Hội Tụ & Tiêu Cự',
+    desc: 'Xác định nhanh tính chất ảnh thật hay ảo, cùng chiều hay ngược chiều!',
+    icon: Eye,
+    badge: 'Quang Hình',
+    route: '/games/lens-quiz',
+    colorKey: 'sky',
+  },
+  {
+    id: 'circuit-master',
+    title: 'Thợ Lắp Mạch Điện Thực Hành',
+    desc: 'Đóng khóa K, kéo con chạy biến trở và đo dòng điện chạy qua đèn theo định luật Ohm!',
+    icon: Sliders,
+    badge: 'Thực Hành Lab',
+    route: '/games/circuit-master',
+    colorKey: 'amber',
+  },
+  {
+    id: 'optics-bench',
+    title: 'Bàn Quang Học Thấu Kính Hội Tụ',
+    desc: 'Kéo màn hứng ảnh lấy nét trên trục chính và xác định tính chất quang học!',
+    icon: Eye,
+    badge: 'Thực Hành Lab',
+    route: '/games/optics-bench',
+    colorKey: 'cyan',
+  },
+  {
+    id: 'ohm-resistor',
+    title: 'Bậc Thầy Ghép Điện Trở Mạch Điện',
+    desc: 'Tính toán điện trở tương đương nối tiếp & song song trong tích tắc!',
+    icon: Zap,
+    badge: 'Định Luật Ohm',
+    route: '/games/ohm-resistor',
+    colorKey: 'amber',
+  },
+  {
+    id: 'transformer-grid',
+    title: 'Máy Biến Áp & Lưới Điện Cao Thế',
+    desc: 'Tăng áp giảm hao phí đường dây truyền tải điện đi xa hàng trăm km!',
+    icon: Zap,
+    badge: 'Truyền Tải Điện',
+    route: '/games/transformer-grid',
+    colorKey: 'sky',
+  },
+  {
+    id: 'echo-sonar',
+    title: 'Sóng Siêu Âm Đo Độ Sâu Đáy Biển',
+    desc: 'Phát sóng âm xuống đáy biển và hứng tiếng vang dội lại để vẽ bản đồ đáy đại dương!',
+    icon: Gauge,
+    badge: 'Âm Học',
+    route: '/games/echo-sonar',
+    colorKey: 'teal',
+  },
+  {
+    id: 'pressure-diver',
+    title: 'Áp Suất Khí Quyển & Áp Suất Lỏng',
+    desc: 'Lặn xuống đáy biển sâu & leo lên đỉnh núi Everest đo áp suất Torricelli!',
+    icon: Scale,
+    badge: 'Chất Lưu',
+    route: '/games/pressure-diver',
+    colorKey: 'cyan',
+  },
+  {
+    id: 'work-power',
+    title: 'Đua Công Suất & Hiệu Suất Động Cơ',
+    desc: 'Tính công cơ học A = F.s và công suất P = A/t của các cỗ máy siêu tốc!',
+    icon: Zap,
+    badge: 'Năng Lượng Cơ',
+    route: '/games/work-power',
+    colorKey: 'purple',
   },
 ];
 
@@ -435,6 +667,123 @@ const BIOLOGY_MINIGAMES = [
     route: '/games/review',
     colorKey: 'cyan',
   },
+  {
+    id: 'dna-pairing',
+    title: 'Bắt Cặp Nucleotide DNA Thần Tốc',
+    desc: 'Bắt cặp đúng nguyên tắc bổ sung A-T, G-C và tính toán liên kết hydro DNA!',
+    icon: Dna,
+    badge: 'Di truyền 9',
+    route: '/games/dna-pairing',
+    colorKey: 'emerald',
+  },
+  {
+    id: 'mitosis-rush',
+    title: 'Đua Kỳ Nguyên Phân & Phân Bào',
+    desc: 'Nhận diện chớp nhoáng 4 kì: Đầu, Giữa, Sau, Cuối và số lượng NST!',
+    icon: Activity,
+    badge: 'Tế bào 9',
+    route: '/games/mitosis-rush',
+    colorKey: 'purple',
+  },
+  {
+    id: 'organelle-quest',
+    title: 'Đại Chiến Bào Quan Tế Bào',
+    desc: 'Khám phá Ti thể, Lục lạp, Ribosome, Lưới nội chất và Bộ máy Golgi!',
+    icon: Sparkles,
+    badge: 'Bào quan 6-9',
+    route: '/games/organelle-quest',
+    colorKey: 'cyan',
+  },
+  {
+    id: 'punnett-challenge',
+    title: 'Thử Thách Bảng Lai Punnett',
+    desc: 'Dự đoán tỉ lệ phân li kiểu gen & kiểu hình các phép lai Mendel!',
+    icon: Calculator,
+    badge: 'Lai giống 9',
+    route: '/games/punnett-challenge',
+    colorKey: 'teal',
+  },
+  {
+    id: 'food-chain',
+    title: 'Chuỗi Thức Ăn & Sinh Thái Học',
+    desc: 'Xếp đúng bậc dinh dưỡng: Sinh vật sản xuất -> Tiêu thụ bậc 1 -> Phân giải!',
+    icon: Layers,
+    badge: 'Sinh thái 9',
+    route: '/games/food-chain',
+    colorKey: 'emerald',
+  },
+  {
+    id: 'chromosome-doctor',
+    title: 'Bác Sĩ Di Truyền Học NST',
+    desc: 'Chẩn đoán các hội chứng di truyền: Down (3 NST 21), Turner (XO), Klinefelter (XXY)!',
+    icon: Activity,
+    badge: 'Bệnh học 9',
+    route: '/games/chromosome-doctor',
+    colorKey: 'rose',
+  },
+  {
+    id: 'blood-flow',
+    title: 'Bác Sĩ Tim Mạch & Hệ Tuần Hoàn',
+    desc: 'Lần theo vòng tuần hoàn lớn & nhỏ: Tâm thất trái -> Động mạch chủ -> Tĩnh mạch!',
+    icon: Droplets,
+    badge: 'Cơ thể 8',
+    route: '/games/blood-flow',
+    colorKey: 'rose',
+  },
+  {
+    id: 'microscope-focus',
+    title: 'Kính Hiển Vi Thao Tác Soi Tế Bào',
+    desc: 'Vặn ốc sơ cấp, vi cấp lấy nét tiêu bản và giải phẫu các bào quan tế bào!',
+    icon: Search,
+    badge: 'Thực Hành Lab',
+    route: '/games/microscope-focus',
+    colorKey: 'emerald',
+  },
+  {
+    id: 'blood-pressure',
+    title: 'Bác Sĩ Đo Huyết Áp & Vận Tốc Máu',
+    desc: 'Đọc chỉ số máy đo huyết áp 120/80 mmHg và giải mã áp lực dòng máu!',
+    icon: Activity,
+    badge: 'Sinh Lý Người',
+    route: '/games/blood-pressure',
+    colorKey: 'rose',
+  },
+  {
+    id: 'photosynthesis-lab',
+    title: 'Thí Nghiệm Quang Hợp Ở Thực Vật',
+    desc: 'Chiếu sáng cành rong đuôi chó trong ống nghiệm hứng bọt khí oxygen!',
+    icon: Sparkles,
+    badge: 'Quang Hợp',
+    route: '/games/photosynthesis-lab',
+    colorKey: 'emerald',
+  },
+  {
+    id: 'pedigree-detective',
+    title: 'Thám Tử Phả Hệ Di Truyền Gia Đình',
+    desc: 'Giải mã sơ đồ phả hệ: Bệnh mù màu, Máu khó đông & Bạch tạng di truyền!',
+    icon: Dna,
+    badge: 'Di Truyền Học',
+    route: '/games/pedigree-detective',
+    colorKey: 'purple',
+  },
+  {
+    id: 'reflex-arc',
+    title: 'Cung Phản Xạ Thần Kinh Thần Tốc',
+    desc: 'Theo dấu xung thần kinh truyền đi khi tay chạm vào vật nóng!',
+    icon: Zap,
+    badge: 'Hệ Thần Kinh',
+    route: '/games/reflex-arc',
+    colorKey: 'teal',
+  },
+  {
+    id: 'immune-defense',
+    title: 'Đại Chiến Miễn Dịch & Kháng Thể',
+    desc: 'Bạch cầu thực bào, Lympho B tiết kháng thể hình chữ Y tiêu diệt virus vi khuẩn!',
+    icon: Droplets,
+    badge: 'Miễn Dịch Học',
+    route: '/games/immune-defense',
+    colorKey: 'rose',
+  },
 ];
 
 const GAME_COLOR_MAP: Record<
@@ -455,108 +804,108 @@ const GAME_COLOR_MAP: Record<
   }
 > = {
   emerald: {
-    iconBg: 'bg-emerald-500/20',
-    iconBorder: 'border-emerald-500/40',
-    iconColor: 'text-emerald-400',
-    badgeBg: 'bg-emerald-500/20',
-    badgeText: 'text-emerald-300',
-    badgeBorder: 'border-emerald-500/40',
-    hoverBorder: 'hover:border-emerald-400',
-    hoverTitle: 'group-hover:text-emerald-300',
-    playBg: 'bg-emerald-500/20',
-    playBorder: 'border-emerald-500',
-    playFill: 'fill-emerald-400 text-emerald-400',
-    playShadow: 'shadow-[0_2px_0_0_#059669]',
+    iconBg: 'bg-[var(--ok-tint)]',
+    iconBorder: 'border-[var(--ok-edge)]/40',
+    iconColor: 'text-[var(--ok-fg)]',
+    badgeBg: 'bg-[var(--ok-tint)]',
+    badgeText: 'text-[var(--ok-fg)]',
+    badgeBorder: 'border-[var(--ok-edge)]/40',
+    hoverBorder: 'hover:border-[var(--ok-fill)]',
+    hoverTitle: 'group-hover:text-[var(--ok-fg)]',
+    playBg: 'bg-[var(--ok-fill)]',
+    playBorder: 'border-[var(--ok-edge)]',
+    playFill: 'fill-white text-white',
+    playShadow: 'shadow-[0_2px_0_0_var(--ok-edge)]',
   },
   rose: {
-    iconBg: 'bg-rose-500/20',
-    iconBorder: 'border-rose-500/40',
-    iconColor: 'text-rose-400',
-    badgeBg: 'bg-rose-500/20',
-    badgeText: 'text-rose-300',
-    badgeBorder: 'border-rose-500/40',
-    hoverBorder: 'hover:border-rose-400',
-    hoverTitle: 'group-hover:text-rose-300',
-    playBg: 'bg-rose-500/20',
-    playBorder: 'border-rose-500',
-    playFill: 'fill-rose-400 text-rose-400',
-    playShadow: 'shadow-[0_2px_0_0_#9f1239]',
+    iconBg: 'bg-[var(--gem-tint)]',
+    iconBorder: 'border-[var(--gem-edge)]/40',
+    iconColor: 'text-[var(--gem-fg)]',
+    badgeBg: 'bg-[var(--gem-tint)]',
+    badgeText: 'text-[var(--gem-fg)]',
+    badgeBorder: 'border-[var(--gem-edge)]/40',
+    hoverBorder: 'hover:border-[var(--gem-fill)]',
+    hoverTitle: 'group-hover:text-[var(--gem-fg)]',
+    playBg: 'bg-[var(--gem-fill)]',
+    playBorder: 'border-[var(--gem-edge)]',
+    playFill: 'fill-white text-white',
+    playShadow: 'shadow-[0_2px_0_0_var(--gem-edge)]',
   },
   sky: {
-    iconBg: 'bg-sky-500/20',
-    iconBorder: 'border-sky-500/40',
-    iconColor: 'text-sky-400',
-    badgeBg: 'bg-sky-500/20',
-    badgeText: 'text-sky-300',
-    badgeBorder: 'border-sky-500/40',
-    hoverBorder: 'hover:border-sky-400',
-    hoverTitle: 'group-hover:text-sky-300',
-    playBg: 'bg-sky-500/20',
-    playBorder: 'border-sky-500',
-    playFill: 'fill-sky-400 text-sky-400',
-    playShadow: 'shadow-[0_2px_0_0_#0284c7]',
+    iconBg: 'bg-[var(--chem-tint)]',
+    iconBorder: 'border-[var(--chem-edge)]/40',
+    iconColor: 'text-[var(--chem-fg)]',
+    badgeBg: 'bg-[var(--chem-tint)]',
+    badgeText: 'text-[var(--chem-fg)]',
+    badgeBorder: 'border-[var(--chem-edge)]/40',
+    hoverBorder: 'hover:border-[var(--chem-fill)]',
+    hoverTitle: 'group-hover:text-[var(--chem-fg)]',
+    playBg: 'bg-[var(--chem-fill)]',
+    playBorder: 'border-[var(--chem-edge)]',
+    playFill: 'fill-white text-white',
+    playShadow: 'shadow-[0_2px_0_0_var(--chem-edge)]',
   },
   amber: {
-    iconBg: 'bg-amber-500/20',
-    iconBorder: 'border-amber-500/40',
-    iconColor: 'text-amber-400',
-    badgeBg: 'bg-amber-500/20',
-    badgeText: 'text-amber-300',
-    badgeBorder: 'border-amber-500/40',
-    hoverBorder: 'hover:border-amber-400',
-    hoverTitle: 'group-hover:text-amber-300',
-    playBg: 'bg-amber-500/20',
-    playBorder: 'border-amber-500',
-    playFill: 'fill-amber-400 text-amber-400',
-    playShadow: 'shadow-[0_2px_0_0_#ca8a04]',
+    iconBg: 'bg-[var(--gold-tint)]',
+    iconBorder: 'border-[var(--gold-edge)]/40',
+    iconColor: 'text-[var(--gold-fg)]',
+    badgeBg: 'bg-[var(--gold-tint)]',
+    badgeText: 'text-[var(--gold-fg)]',
+    badgeBorder: 'border-[var(--gold-edge)]/40',
+    hoverBorder: 'hover:border-[var(--gold-fill)]',
+    hoverTitle: 'group-hover:text-[var(--gold-fg)]',
+    playBg: 'bg-[var(--gold-fill)]',
+    playBorder: 'border-[var(--gold-edge)]',
+    playFill: 'fill-[var(--on-ink)] text-[var(--on-ink)]',
+    playShadow: 'shadow-[0_2px_0_0_var(--gold-edge)]',
   },
   cyan: {
-    iconBg: 'bg-cyan-500/20',
-    iconBorder: 'border-cyan-500/40',
-    iconColor: 'text-cyan-400',
-    badgeBg: 'bg-cyan-500/20',
-    badgeText: 'text-cyan-300',
-    badgeBorder: 'border-cyan-500/40',
-    hoverBorder: 'hover:border-cyan-400',
-    hoverTitle: 'group-hover:text-cyan-300',
-    playBg: 'bg-cyan-500/20',
-    playBorder: 'border-cyan-500',
-    playFill: 'fill-cyan-400 text-cyan-400',
-    playShadow: 'shadow-[0_2px_0_0_#0891b2]',
+    iconBg: 'bg-[var(--slate-tint)]',
+    iconBorder: 'border-[var(--slate-edge)]/40',
+    iconColor: 'text-[var(--slate-fg)]',
+    badgeBg: 'bg-[var(--slate-tint)]',
+    badgeText: 'text-[var(--slate-fg)]',
+    badgeBorder: 'border-[var(--slate-edge)]/40',
+    hoverBorder: 'hover:border-[var(--slate-fill)]',
+    hoverTitle: 'group-hover:text-[var(--slate-fg)]',
+    playBg: 'bg-[var(--slate-fill)]',
+    playBorder: 'border-[var(--slate-edge)]',
+    playFill: 'fill-white text-white',
+    playShadow: 'shadow-[0_2px_0_0_var(--slate-edge)]',
   },
   purple: {
-    iconBg: 'bg-purple-500/20',
-    iconBorder: 'border-purple-500/40',
-    iconColor: 'text-purple-400',
-    badgeBg: 'bg-purple-500/20',
-    badgeText: 'text-purple-300',
-    badgeBorder: 'border-purple-500/40',
-    hoverBorder: 'hover:border-purple-400',
-    hoverTitle: 'group-hover:text-purple-300',
-    playBg: 'bg-purple-500/20',
-    playBorder: 'border-purple-500',
-    playFill: 'fill-purple-400 text-purple-400',
-    playShadow: 'shadow-[0_2px_0_0_#7e22ce]',
+    iconBg: 'bg-[var(--phy-tint)]',
+    iconBorder: 'border-[var(--phy-edge)]/40',
+    iconColor: 'text-[var(--phy-fg)]',
+    badgeBg: 'bg-[var(--phy-tint)]',
+    badgeText: 'text-[var(--phy-fg)]',
+    badgeBorder: 'border-[var(--phy-edge)]/40',
+    hoverBorder: 'hover:border-[var(--phy-fill)]',
+    hoverTitle: 'group-hover:text-[var(--phy-fg)]',
+    playBg: 'bg-[var(--phy-fill)]',
+    playBorder: 'border-[var(--phy-edge)]',
+    playFill: 'fill-white text-white',
+    playShadow: 'shadow-[0_2px_0_0_var(--phy-edge)]',
   },
   teal: {
-    iconBg: 'bg-teal-500/20',
-    iconBorder: 'border-teal-500/40',
-    iconColor: 'text-teal-400',
-    badgeBg: 'bg-teal-500/20',
-    badgeText: 'text-teal-300',
-    badgeBorder: 'border-teal-500/40',
-    hoverBorder: 'hover:border-teal-400',
-    hoverTitle: 'group-hover:text-teal-300',
-    playBg: 'bg-teal-500/20',
-    playBorder: 'border-teal-500',
-    playFill: 'fill-teal-400 text-teal-400',
-    playShadow: 'shadow-[0_2px_0_0_#0f766e]',
+    iconBg: 'bg-[var(--bio-tint)]',
+    iconBorder: 'border-[var(--bio-edge)]/40',
+    iconColor: 'text-[var(--bio-fg)]',
+    badgeBg: 'bg-[var(--bio-tint)]',
+    badgeText: 'text-[var(--bio-fg)]',
+    badgeBorder: 'border-[var(--bio-edge)]/40',
+    hoverBorder: 'hover:border-[var(--bio-fill)]',
+    hoverTitle: 'group-hover:text-[var(--bio-fg)]',
+    playBg: 'bg-[var(--bio-fill)]',
+    playBorder: 'border-[var(--bio-edge)]',
+    playFill: 'fill-white text-white',
+    playShadow: 'shadow-[0_2px_0_0_var(--bio-edge)]',
   },
 };
 
 export const PracticePage: React.FC = () => {
   const navigate = useNavigate();
-  const { completedNodes, hearts } = useUserStore();
+  const { completedNodes, practiceCompletedLessons, hearts } = useUserStore();
   const { subject: activeSubject } = useActiveSubject();
   const isPhysics = activeSubject === 'physics';
   const isBio = activeSubject === 'bio';
@@ -596,41 +945,45 @@ export const PracticePage: React.FC = () => {
       { isUnlocked: boolean; isCompleted: boolean; requiredLessonTitle?: string }
     >();
 
-    let canUnlockNextPlayable = true;
+    let previousLessonsCompleted = true;
     let lastCompletedTitle = '';
 
     for (const ch of chapters) {
       for (const lesson of ch.lessons) {
-        const nodes = lesson.nodes;
-        const isAnyNodeCompleted = nodes.some((n) => !!completedNodes[`${lesson.id}:${n.id}`]);
-        const isAllNodesCompleted =
-          nodes.length > 0 && nodes.every((n) => !!completedNodes[`${lesson.id}:${n.id}`]);
+        const requiredNodes = lesson.nodes.filter((n) => n.type !== 'chest');
+        const isAllNodesCompletedOnLearn =
+          requiredNodes.length > 0 &&
+          requiredNodes.every((n) => !!completedNodes[`${lesson.id}:${n.id}`]);
+        const isAnyNodeCompletedOnLearn =
+          requiredNodes.some((n) => !!completedNodes[`${lesson.id}:${n.id}`]);
+        const isPracticeCompleted = !!practiceCompletedLessons?.[lesson.id];
 
-        let isUnlocked = false;
+        // Lesson is considered "completed" if all nodes done in Learn OR practice session completed
+        const isCompleted = isAllNodesCompletedOnLearn || isPracticeCompleted;
 
-        if (isAnyNodeCompleted || isAllNodesCompleted) {
-          isUnlocked = true;
-          if (lesson.ready) {
-            lastCompletedTitle = lesson.title;
-          }
-        } else if (canUnlockNextPlayable && lesson.ready) {
-          // Current active uncompleted lesson reached on the Learn path
-          isUnlocked = true;
-          canUnlockNextPlayable = false; // Only unlock up to the lesson currently reached!
-        } else {
-          isUnlocked = false;
-        }
+        // Lesson is unlocked in Practice ONLY IF previous lessons were completed, or if student already reached this lesson
+        const isUnlocked = previousLessonsCompleted || isAnyNodeCompletedOnLearn || isAllNodesCompletedOnLearn;
 
         statusMap.set(lesson.id, {
           isUnlocked,
-          isCompleted: isAllNodesCompleted,
+          isCompleted,
           requiredLessonTitle: isUnlocked ? undefined : lastCompletedTitle || 'bài học trước đó',
         });
+
+        if (lesson.ready) {
+          if (isAllNodesCompletedOnLearn) {
+            lastCompletedTitle = lesson.title;
+            // previousLessonsCompleted stays true to unlock the next lesson
+          } else {
+            // Lesson has not been fully finished on the Learn path! Stop cascading unlock!
+            previousLessonsCompleted = false;
+          }
+        }
       }
     }
 
     return statusMap;
-  }, [chapters, completedNodes]);
+  }, [chapters, completedNodes, practiceCompletedLessons]);
 
   const lessons = useMemo(() => {
     if (selectedChapterId === 'all') {
@@ -646,15 +999,18 @@ export const PracticePage: React.FC = () => {
   };
 
   // Helper to verify if a topic / lesson has been reached on the Learn path
-  const isLessonReached = (targetLessonId?: string, targetGrade: Grade = 8) => {
+  const isLessonReached = (targetLessonId?: string, targetGrade: Grade = selectedGrade) => {
     if (!targetLessonId) return true;
     const gradeCurriculum = getCurriculum(targetGrade, activeSubject);
     let canUnlockNext = true;
     for (const ch of gradeCurriculum.chapters) {
       for (const l of ch.lessons) {
-        const isAnyDone = l.nodes.some((n) => !!completedNodes[`${l.id}:${n.id}`]);
-        const isAllDone = l.nodes.length > 0 && l.nodes.every((n) => !!completedNodes[`${l.id}:${n.id}`]);
-        const isReached = isAnyDone || isAllDone || (canUnlockNext && l.ready);
+        const requiredNodes = l.nodes.filter((n) => n.type !== 'chest');
+        const isAllDone =
+          requiredNodes.length > 0 &&
+          requiredNodes.every((n) => !!completedNodes[`${l.id}:${n.id}`]);
+        const isAnyDone = requiredNodes.some((n) => !!completedNodes[`${l.id}:${n.id}`]);
+        const isReached = isAnyDone || isAllDone || canUnlockNext;
         if (l.id === targetLessonId) {
           return isReached;
         }
@@ -681,38 +1037,30 @@ export const PracticePage: React.FC = () => {
   }, [lessonUnlockStatus]);
 
   return (
-    <div className="space-y-6 pb-12 select-none max-w-3xl mx-auto">
+    <div data-subject={activeSubject} className="space-y-6 pb-12 select-none max-w-3xl mx-auto">
       {/* Header Banner — Phong cách Studio Thao Trường */}
-      <div className="relative rounded-3xl bg-[#18272f] border-2 border-[#2e4756] p-5 shadow-[0_6px_0_0_#131f24] overflow-hidden">
+      <div className="relative rounded-3xl bg-[var(--bg-surface)] border border-[var(--border)] p-5 overflow-hidden">
         {/* Góc gấp sổ tay thí nghiệm */}
         <div
-          className={`absolute top-0 right-0 w-8 h-8 pointer-events-none ${
-            isPhysics ? 'bg-amber-600/30' : isBio ? 'bg-emerald-600/30' : 'bg-[#0284c7]/30'
-          }`}
+          className="absolute top-0 right-0 w-8 h-8 pointer-events-none bg-[var(--subject-fill)]/20"
           style={{ clipPath: 'polygon(100% 0, 0 100%, 100% 100%)' }}
         />
         <div className="flex items-center gap-4">
-          <div className={`w-14 h-14 rounded-2xl border-2 flex items-center justify-center p-2 shrink-0 ${
-            isPhysics
-              ? 'bg-[#291e07] border-amber-500/40 shadow-[0_4px_0_0_#78350f]'
-              : isBio
-              ? 'bg-[#062c20] border-emerald-500/40 shadow-[0_4px_0_0_#064e3b]'
-              : 'bg-[#0e2233] border-[#2e4756] shadow-[0_4px_0_0_#131f24]'
-          }`}>
+          <div className="w-14 h-14 rounded-2xl border border-[var(--border)] bg-[var(--bg-surface-2)] flex items-center justify-center p-2 shrink-0">
             <HandDrawnIcon
               name={isPhysics ? 'atom' : isBio ? 'dna' : 'xp-potion'}
               size={36}
             />
           </div>
           <div className="space-y-1 min-w-0">
-            <h1 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+            <h1 className="text-xl sm:text-2xl font-black text-[var(--text-primary)] tracking-tight flex items-center gap-2">
               <span>{isPhysics ? 'Thao Trường Vật Lý' : isBio ? 'Thao Trường Sinh Học' : 'Thao Trường Hóa Học'}</span>
             </h1>
             <DoodleOrnament
               name="wavy-underline"
-              color={isPhysics ? '#fbbf24' : isBio ? '#34d399' : '#38bdf8'}
+              color={isPhysics ? 'var(--phy-fill)' : isBio ? 'var(--bio-fill)' : 'var(--chem-fill)'}
             />
-            <p className="text-xs text-slate-300 font-medium leading-relaxed pt-0.5">
+            <p className="text-xs text-[var(--text-secondary)] font-medium leading-relaxed pt-0.5">
               {isPhysics
                 ? 'Luyện bài tập SGK Vật lý: học đến đâu mở khóa đến đấy, không trừ tim, kiếm thêm XP'
                 : isBio
@@ -729,22 +1077,22 @@ export const PracticePage: React.FC = () => {
           sound.playClick();
           navigate(`/lab?tab=${isPhysics ? 'physics' : isBio ? 'bio' : 'chem'}`);
         }}
-        className="p-3.5 sm:p-4 rounded-3xl bg-gradient-to-r from-[#18272f] via-[#1f333f] to-[#18272f] border-2 border-sky-500/40 hover:border-sky-400 transition-all cursor-pointer shadow-[0_4px_0_0_#101a1f] group flex items-center justify-between gap-3 active:translate-y-[2px] active:shadow-none"
+        className="p-3.5 sm:p-4 rounded-3xl bg-[var(--bg-surface)] border border-[var(--border)] hover:border-[var(--chem-fill)] transition-all cursor-pointer group flex items-center justify-between gap-3 active:translate-y-[2px]"
       >
         <div className="flex items-center gap-3.5 min-w-0">
-          <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-br from-sky-500/20 to-emerald-500/20 border-2 border-sky-400/50 flex items-center justify-center shrink-0 text-xl sm:text-2xl group-hover:scale-105 transition-transform shadow-inner">
+          <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-[var(--chem-tint)] border border-[var(--chem-fill)]/40 flex items-center justify-center shrink-0 text-xl sm:text-2xl group-hover:scale-105 transition-transform">
             {isPhysics ? '⚡' : isBio ? '🔬' : '🧪'}
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="text-xs sm:text-sm font-black text-white group-hover:text-sky-300 transition-colors">
+              <span className="text-xs sm:text-sm font-black text-[var(--text-primary)] group-hover:text-[var(--chem-fg)] transition-colors">
                 Phòng Thí Nghiệm Ảo Tương Tác
               </span>
-              <span className="text-[9px] font-black px-2 py-0.5 rounded-full bg-gradient-to-r from-sky-500 to-emerald-500 text-slate-950">
+              <span className="text-[9px] font-black px-2 py-0.5 rounded-full bg-[var(--chem-tint)] text-[var(--chem-fg)] border border-[var(--chem-fill)]/40">
                 M10 LAB
               </span>
             </div>
-            <p className="text-[11px] text-slate-400 font-medium line-clamp-1 mt-0.5">
+            <p className="text-[11px] text-[var(--text-tertiary)] font-medium line-clamp-1 mt-0.5">
               {isPhysics
                 ? 'Lắp mạch điện, bóng đèn, điện trở & kiểm chứng Định luật Ôm I = U/R'
                 : isBio
@@ -753,7 +1101,7 @@ export const PracticePage: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="shrink-0 flex items-center gap-1 text-xs font-black text-sky-400 group-hover:translate-x-1 transition-transform">
+        <div className="shrink-0 flex items-center gap-1 text-xs font-black text-[var(--chem-fg)] group-hover:translate-x-1 transition-transform">
           <span className="hidden sm:inline">Vào Lab</span>
           <ArrowRight className="w-4 h-4" />
         </div>
@@ -762,26 +1110,26 @@ export const PracticePage: React.FC = () => {
       {/* Hearts Recovery Alert if user is low on hearts */}
       {hearts < 5 && (
         <div
-          className={`p-3.5 rounded-3xl border-2 flex items-center justify-between gap-3 shadow-[0_4px_0_0_#131f24] ${
+          className={`p-3.5 rounded-3xl border border-[var(--border)] flex items-center justify-between gap-3 ${
             hearts === 0
-              ? 'bg-[#ff4b4b]/15 border-[#ff4b4b]/40 text-rose-200'
-              : 'bg-[#ff9600]/15 border-[#ff9600]/40 text-amber-200'
+              ? 'bg-[var(--err-tint)] border-[var(--err-edge)]/40 text-[var(--err-fg)]'
+              : 'bg-[var(--warn-tint)] border-[var(--warn-edge)]/40 text-[var(--warn-fg)]'
           }`}
         >
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-2xl bg-[#18272f] border-2 border-[#2e4756] flex items-center justify-center p-1.5 shrink-0 shadow-inner">
+            <div className="w-10 h-10 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] flex items-center justify-center p-1.5 shrink-0 shadow-inner">
               <HandDrawnIcon name="heart-flask" size={26} className="animate-pulse" />
             </div>
             <div>
-              <div className="text-xs font-black text-white">
+              <div className="text-xs font-black text-[var(--text-primary)]">
                 {hearts === 0 ? 'Bạn đã hết tim (0/5)!' : `Đang có ${hearts}/5 tim`}
               </div>
-              <div className="text-[11px] text-slate-300 font-medium">
-                Hoàn thành 1 bài luyện tập sẽ nhận ngay <span className="font-bold text-[#58cc02]">+1 tim</span>!
+              <div className="text-[11px] text-[var(--text-secondary)] font-medium">
+                Hoàn thành 1 bài luyện tập sẽ nhận ngay <span className="font-bold text-[var(--ok-fg)]">+1 tim</span>!
               </div>
             </div>
           </div>
-          <div className="shrink-0 text-xs font-black px-3 py-1.5 rounded-xl bg-[#18272f] border-2 border-[#2e4756] text-white flex items-center gap-1.5 shadow-sm">
+          <div className="shrink-0 text-xs font-black px-3 py-1.5 rounded-xl bg-[var(--bg-surface)] border border-[var(--border)] text-[var(--text-primary)] flex items-center gap-1.5 shadow-sm">
             <HandDrawnIcon name="heart-flask" size={16} />
             <span>{hearts}/5</span>
           </div>
@@ -789,12 +1137,12 @@ export const PracticePage: React.FC = () => {
       )}
 
       {/* Grade Selector (Lớp 6 | Lớp 7 | Lớp 8 | Lớp 9) */}
-      <div className="space-y-1.5 bg-[#18272f] border-2 border-[#2e4756] p-2.5 rounded-3xl shadow-[0_4px_0_0_#131f24]">
+      <div className="space-y-1.5 bg-[var(--bg-surface)] border border-[var(--border)] p-2.5 rounded-3xl">
         <div className="flex items-center justify-between px-1 mb-1">
-          <label className="text-xs font-black text-slate-300 uppercase tracking-wider">
+          <label className="text-xs font-black text-[var(--text-secondary)] uppercase tracking-wider">
             Chọn khối lớp học tập:
           </label>
-          <span className={`text-[11px] font-bold ${isPhysics ? 'text-amber-400' : isBio ? 'text-emerald-400' : 'text-[#0ea5e9]'}`}>
+          <span className="text-[11px] font-bold text-[var(--subject-fg)]">
             {unlockedLessonsCount} bài đã mở khóa
           </span>
         </div>
@@ -807,14 +1155,10 @@ export const PracticePage: React.FC = () => {
                 setSelectedGrade(g);
                 setSelectedChapterId('all');
               }}
-              className={`py-2.5 text-xs font-black rounded-2xl transition-all cursor-pointer border-2 ${
+              className={`py-2.5 text-xs font-black rounded-2xl transition-all cursor-pointer border ${
                 selectedGrade === g
-                  ? isPhysics
-                    ? 'bg-[#eab308] text-slate-950 border-amber-200 shadow-[0_4px_0_0_#ca8a04] scale-[1.02]'
-                    : isBio
-                    ? 'bg-[#10b981] text-slate-950 border-emerald-200 shadow-[0_4px_0_0_#059669] scale-[1.02]'
-                    : 'bg-[#0ea5e9] text-white border-sky-200 shadow-[0_4px_0_0_#0284c7] scale-[1.02]'
-                  : 'bg-[#20333d] border-[#2e4756] text-slate-400 hover:text-white hover:bg-[#283e4a]'
+                  ? 'bg-[var(--subject-fill)] text-white shadow-[0_4px_0_0_var(--subject-edge)] border-[var(--subject-edge)] scale-[1.02]'
+                  : 'bg-[var(--bg-surface-2)] border-[var(--border)] text-[var(--text-tertiary)] hover:text-[var(--text-primary)]'
               }`}
             >
               Lớp {g}
@@ -828,11 +1172,11 @@ export const PracticePage: React.FC = () => {
         <div className="flex items-center justify-between px-1">
           <div className="flex items-center gap-2">
             <HandDrawnIcon name={isPhysics ? 'atom' : isBio ? 'dna' : 'flask'} size={20} />
-            <h2 className="text-sm font-black text-slate-200 uppercase tracking-wider">
+            <h2 className="text-sm font-black text-[var(--text-primary)] uppercase tracking-wider">
               Bài Tập Theo Từng Bài SGK {isPhysics ? 'Vật Lý' : isBio ? 'Sinh Học' : 'Hóa Học'} Lớp {selectedGrade} ({lessons.length} bài)
             </h2>
           </div>
-          <span className={`text-[11px] font-semibold ${isPhysics ? 'text-amber-400' : isBio ? 'text-emerald-400' : 'text-cyan-400'}`}>
+          <span className="text-[11px] font-semibold text-[var(--subject-fg)]">
             Chỉ mở khóa các bài bạn đã học đến
           </span>
         </div>
@@ -842,14 +1186,10 @@ export const PracticePage: React.FC = () => {
           <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-none">
             <button
               onClick={() => setSelectedChapterId('all')}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer border-2 ${
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer border ${
                 selectedChapterId === 'all'
-                  ? isPhysics
-                    ? 'bg-[#eab308]/20 text-[#facc15] border-[#eab308] shadow-[0_2px_0_0_#ca8a04]'
-                    : isBio
-                    ? 'bg-[#10b981]/20 text-[#34d399] border-[#10b981] shadow-[0_2px_0_0_#059669]'
-                    : 'bg-[#0ea5e9]/20 text-[#38bdf8] border-[#0ea5e9] shadow-[0_2px_0_0_#0284c7]'
-                  : 'bg-[#20333d] text-slate-300 border-[#2e4756] hover:text-white hover:bg-[#283e4a]'
+                  ? 'bg-[var(--subject-tint)] text-[var(--subject-fg)] border-[var(--subject-fill)]'
+                  : 'bg-[var(--bg-surface-2)] text-[var(--text-secondary)] border-[var(--border)] hover:text-[var(--text-primary)]'
               }`}
             >
               Tất cả chương ({chapters.length} chương)
@@ -858,14 +1198,10 @@ export const PracticePage: React.FC = () => {
               <button
                 key={c.id}
                 onClick={() => setSelectedChapterId(c.id)}
-                className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer border-2 ${
+                className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer border ${
                   selectedChapterId === c.id
-                    ? isPhysics
-                      ? 'bg-[#eab308]/20 text-[#facc15] border-[#eab308] shadow-[0_2px_0_0_#ca8a04]'
-                      : isBio
-                      ? 'bg-[#10b981]/20 text-[#34d399] border-[#10b981] shadow-[0_2px_0_0_#059669]'
-                      : 'bg-[#0ea5e9]/20 text-[#38bdf8] border-[#0ea5e9] shadow-[0_2px_0_0_#0284c7]'
-                    : 'bg-[#20333d] text-slate-300 border-[#2e4756] hover:text-white hover:bg-[#283e4a]'
+                    ? 'bg-[var(--subject-tint)] text-[var(--subject-fg)] border-[var(--subject-fill)]'
+                    : 'bg-[var(--bg-surface-2)] text-[var(--text-secondary)] border-[var(--border)] hover:text-[var(--text-primary)]'
                 }`}
               >
                 {c.title.startsWith('Unit') ? c.title : `Chương ${c.chapterNumber}: ${c.title}`}
@@ -888,14 +1224,10 @@ export const PracticePage: React.FC = () => {
                 sound.playClick();
                 setSelectedDiff(d.id as 'all' | '1' | '2' | '3');
               }}
-              className={`py-1.5 rounded-xl text-[11px] font-bold border-2 transition-all cursor-pointer ${
+              className={`py-1.5 rounded-xl text-[11px] font-bold border transition-all cursor-pointer ${
                 selectedDiff === d.id
-                  ? isPhysics
-                    ? 'bg-[#eab308]/20 text-[#facc15] border-[#eab308] shadow-[0_2px_0_0_#ca8a04]'
-                    : isBio
-                    ? 'bg-[#10b981]/20 text-[#34d399] border-[#10b981] shadow-[0_2px_0_0_#059669]'
-                    : 'bg-[#0ea5e9]/20 text-[#38bdf8] border-[#0ea5e9] shadow-[0_2px_0_0_#0284c7]'
-                  : 'bg-[#20333d] border-[#2e4756] text-slate-400 hover:text-slate-200'
+                  ? 'bg-[var(--subject-tint)] text-[var(--subject-fg)] border-[var(--subject-fill)]'
+                  : 'bg-[var(--bg-surface-2)] border-[var(--border)] text-[var(--text-tertiary)] hover:text-[var(--text-secondary)]'
               }`}
             >
               {d.label}
@@ -915,20 +1247,20 @@ export const PracticePage: React.FC = () => {
             return (
               <div
                 key={lesson.id}
-                className={`p-4 rounded-3xl border-2 transition-all ${
+                className={`p-4 rounded-3xl border transition-all ${
                   !lesson.ready
-                    ? 'bg-[#131f24]/80 border-[#20333d] hover:border-[#2e4756] cursor-pointer opacity-75'
+                    ? 'bg-[var(--bg-canvas)] border-[var(--border)] cursor-pointer opacity-75'
                     : isAvailable
-                      ? isPhysics
-                        ? 'bg-[#18272f] border-[#2e4756] hover:border-amber-400 shadow-[0_4px_0_0_#131f24] cursor-pointer hover:translate-y-[-2px]'
-                        : isBio
-                        ? 'bg-[#18272f] border-[#2e4756] hover:border-emerald-400 shadow-[0_4px_0_0_#131f24] cursor-pointer hover:translate-y-[-2px]'
-                        : 'bg-[#18272f] border-[#2e4756] hover:border-[#0ea5e9] shadow-[0_4px_0_0_#131f24] cursor-pointer hover:translate-y-[-2px]'
-                      : 'bg-[#131f24]/80 border-[#20333d] hover:border-amber-500/40 cursor-pointer opacity-75'
+                    ? 'bg-[var(--bg-surface)] border-[var(--border)] hover:border-[var(--subject-fill)] cursor-pointer hover:translate-y-[-1px]'
+                    : 'bg-[var(--bg-canvas)] border-[var(--border)] cursor-pointer opacity-75'
                 }`}
                 onClick={() => {
-                  if (isAvailable && lesson.nodes[0]) {
-                    handleStartPractice(lesson.id, lesson.nodes[0].id);
+                  if (isAvailable) {
+                    const exerciseNode =
+                      lesson.nodes.find((n) => n.type === 'lesson') ?? lesson.nodes[0];
+                    if (exerciseNode) {
+                      handleStartPractice(lesson.id, exerciseNode.id);
+                    }
                   } else if (!lesson.ready) {
                     sound.playClick();
                     setModalInfo({
@@ -959,49 +1291,39 @@ export const PracticePage: React.FC = () => {
                     <div className="flex flex-wrap items-center gap-2">
                       <span
                         className={`text-xs font-black ${
-                          isAvailable ? 'text-white' : 'text-slate-400'
+                          isAvailable ? 'text-[var(--text-primary)]' : 'text-[var(--text-tertiary)]'
                         }`}
                       >
-                        {lesson.title}
+                        <MathText text={lesson.title} />
                       </span>
                       {!lesson.ready ? (
-                        <span className="text-[10px] font-bold bg-[#20333d] text-slate-400 border border-[#2e4756] px-2 py-0.5 rounded-lg flex items-center gap-1">
+                        <span className="text-[10px] font-bold bg-[var(--bg-surface-2)] text-[var(--text-tertiary)] border border-[var(--border)] px-2 py-0.5 rounded-lg flex items-center gap-1">
                           🛠️ Sắp có
                         </span>
                       ) : status.isCompleted ? (
-                        <span className="text-[10px] font-bold bg-[#58cc02]/15 text-emerald-300 border border-[#58cc02]/30 px-2 py-0.5 rounded-lg flex items-center gap-1">
-                          <CheckCircle2 className="w-3 h-3 text-[#58cc02]" /> Đã học · Luyện tập
+                        <span className="text-[10px] font-bold bg-[var(--ok-tint)] text-[var(--ok-fg)] border border-[var(--ok-edge)]/40 px-2 py-0.5 rounded-lg flex items-center gap-1">
+                          <CheckCircle2 className="w-3 h-3 text-[var(--ok-fg)]" /> Đã học · Luyện tập
                         </span>
                       ) : isAvailable ? (
-                        isPhysics ? (
-                          <span className="text-[10px] font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30 px-2 py-0.5 rounded-lg flex items-center gap-1">
-                            <Zap className="w-3 h-3 text-amber-400" /> Đang học · Luyện tập
-                          </span>
-                        ) : isBio ? (
-                          <span className="text-[10px] font-bold bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-lg flex items-center gap-1">
-                            🌿 Đang học · Luyện tập
-                          </span>
-                        ) : (
-                          <span className="text-[10px] font-bold bg-[#0ea5e9]/15 text-[#38bdf8] border border-[#0ea5e9]/30 px-2 py-0.5 rounded-lg flex items-center gap-1">
-                            <Sparkles className="w-3 h-3 text-[#0ea5e9]" /> Đang học · Luyện tập
-                          </span>
-                        )
+                        <span className="text-[10px] font-bold bg-[var(--subject-tint)] text-[var(--subject-fg)] border border-[var(--subject-edge)]/40 px-2 py-0.5 rounded-lg flex items-center gap-1">
+                          <Sparkles className="w-3 h-3 text-[var(--subject-fg)]" /> Đang học · Luyện tập
+                        </span>
                       ) : (
-                        <span className="text-[10px] font-bold bg-[#20333d] text-amber-400/90 border border-amber-500/30 px-2 py-0.5 rounded-lg flex items-center gap-1">
-                          <Lock className="w-3 h-3 text-amber-400" /> Chưa mở khóa
+                        <span className="text-[10px] font-bold bg-[var(--bg-surface-2)] text-[var(--warn-fg)] border border-[var(--warn-edge)]/40 px-2 py-0.5 rounded-lg flex items-center gap-1">
+                          <Lock className="w-3 h-3 text-[var(--warn-fg)]" /> Chưa mở khóa
                         </span>
                       )}
                     </div>
 
-                    <p className="text-[11px] text-slate-300 leading-relaxed font-medium">
-                      {lesson.subtitle}
+                    <p className="text-[11px] text-[var(--text-secondary)] leading-relaxed font-medium">
+                      <MathText text={lesson.subtitle} />
                     </p>
 
                     {!isAvailable && lesson.ready && status.requiredLessonTitle && (
-                      <div className="flex items-center gap-1.5 text-[10px] font-bold text-amber-400/90 pt-0.5">
-                        <Lock className="w-3 h-3 text-amber-400 inline shrink-0" />
+                      <div className="flex items-center gap-1.5 text-[10px] font-bold text-[var(--warn-fg)] pt-0.5">
+                        <Lock className="w-3 h-3 text-[var(--warn-fg)] inline shrink-0" />
                         <span>Cần hoàn thành "{status.requiredLessonTitle}" trên lộ trình học</span>
-                        <span className="text-[#38bdf8] underline flex items-center ml-1">
+                        <span className="text-[var(--subject-fg)] underline flex items-center ml-1">
                           Đến học <ArrowRight className="w-3 h-3 ml-0.5 inline" />
                         </span>
                       </div>
@@ -1010,23 +1332,11 @@ export const PracticePage: React.FC = () => {
 
                   {/* Right Action Icon */}
                   {isAvailable ? (
-                    <div className={`w-9 h-9 rounded-2xl border-2 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform ${
-                      isPhysics
-                        ? 'bg-amber-500/20 border-amber-500 text-amber-400 shadow-[0_2px_0_0_#ca8a04]'
-                        : isBio
-                        ? 'bg-emerald-500/20 border-emerald-500 text-emerald-400 shadow-[0_2px_0_0_#059669]'
-                        : 'bg-[#0ea5e9]/20 border-[#0ea5e9] text-[#38bdf8] shadow-[0_2px_0_0_#0284c7]'
-                    }`}>
-                      <Play className={`w-4 h-4 ${
-                        isPhysics
-                          ? 'fill-amber-400 text-amber-400'
-                          : isBio
-                          ? 'fill-emerald-400 text-emerald-400'
-                          : 'fill-[#0ea5e9] text-[#0ea5e9]'
-                      }`} />
+                    <div className="w-9 h-9 rounded-2xl bg-[var(--subject-fill)] text-white shadow-[0_2px_0_0_var(--subject-edge)] flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                      <Play className="w-4 h-4 fill-white text-white" />
                     </div>
                   ) : (
-                    <div className="w-9 h-9 rounded-2xl bg-[#18272f] border-2 border-[#20333d] flex items-center justify-center text-slate-500 shrink-0">
+                    <div className="w-9 h-9 rounded-2xl bg-[var(--bg-surface-2)] border border-[var(--border)] flex items-center justify-center text-[var(--text-tertiary)] shrink-0">
                       <Lock className="w-4 h-4" />
                     </div>
                   )}
@@ -1041,21 +1351,21 @@ export const PracticePage: React.FC = () => {
       {isPhysics && (
         <div className="space-y-3 pt-2">
           {/* Lab Machine Hub Banner */}
-          <div className="p-3.5 rounded-2xl bg-[#1c1e0d] border-2 border-amber-600/40 shadow-[0_4px_0_0_#131f24] flex items-center justify-between gap-3">
+          <div className="p-3.5 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] flex items-center justify-between gap-3">
             <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400">
+              <div className="w-9 h-9 rounded-xl bg-[var(--phy-tint)] border border-[var(--phy-fill)]/40 flex items-center justify-center text-[var(--phy-fg)]">
                 <HandDrawnIcon name="atom" size={22} />
               </div>
               <div>
-                <h2 className="text-xs sm:text-sm font-black text-amber-300 uppercase tracking-wider">
+                <h2 className="text-xs sm:text-sm font-black text-[var(--phy-fg)] uppercase tracking-wider">
                   Máy Tạo Đề Tự Động Phòng Lab (Vật Lý)
                 </h2>
-                <p className="text-[11px] text-amber-200/80">
+                <p className="text-[11px] text-[var(--text-secondary)]">
                   Tự động sinh ngẫu nhiên số liệu bài toán: Vận tốc, KLR, Áp suất, Cơ năng, Định luật Ôm
                 </p>
               </div>
             </div>
-            <span className="hidden sm:inline-block text-[10px] font-black uppercase px-2.5 py-1 rounded-xl bg-amber-400 text-amber-950 shadow-sm shrink-0">
+            <span className="hidden sm:inline-block text-[10px] font-black uppercase px-2.5 py-1 rounded-xl bg-[var(--phy-tint)] text-[var(--phy-fg)] border border-[var(--phy-fill)]/40 shrink-0">
               VÔ HẠN ĐỀ
             </span>
           </div>
@@ -1088,10 +1398,10 @@ export const PracticePage: React.FC = () => {
                       });
                     }
                   }}
-                  className={`border-2 p-3.5 sm:p-4 rounded-3xl transition-all shadow-[0_4px_0_0_#131f24] flex items-center justify-between group cursor-pointer ${
+                  className={`border p-3.5 sm:p-4 rounded-3xl transition-all flex items-center justify-between group cursor-pointer ${
                     isUnlocked
-                      ? 'bg-[#18272f] border-[#2e4756] hover:border-amber-400 hover:translate-y-[-2px]'
-                      : 'bg-[#131f24]/80 border-[#20333d] hover:border-amber-500/40 opacity-75'
+                      ? 'bg-[var(--bg-surface)] border-[var(--border)] hover:border-[var(--phy-fill)] hover:translate-y-[-1px]'
+                      : 'bg-[var(--bg-canvas)] border-[var(--border)] opacity-75'
                   }`}
                 >
                   <div className="flex items-center gap-3.5 min-w-0 pr-2">
@@ -1102,29 +1412,29 @@ export const PracticePage: React.FC = () => {
                       <div className="flex flex-wrap items-center gap-2 mb-0.5">
                         <h3
                           className={`text-xs sm:text-sm font-black truncate transition-colors ${
-                            isUnlocked ? 'text-white group-hover:text-amber-300' : 'text-slate-400'
+                            isUnlocked ? 'text-[var(--text-primary)] group-hover:text-[var(--phy-fg)]' : 'text-[var(--text-tertiary)]'
                           }`}
                         >
                           {gen.title}
                         </h3>
                         {isUnlocked ? (
-                          <span className="text-[10px] font-bold bg-amber-500/15 text-amber-400 px-2 py-0.5 rounded-full border border-amber-500/30 shrink-0">
+                          <span className="text-[10px] font-bold bg-[var(--phy-tint)] text-[var(--phy-fg)] px-2 py-0.5 rounded-full border border-[var(--phy-fill)]/40 shrink-0">
                             {gen.badge}
                           </span>
                         ) : (
-                          <span className="text-[10px] font-bold bg-[#20333d] text-slate-400 px-2 py-0.5 rounded-full border border-[#2e4756] flex items-center gap-1 shrink-0">
-                            <Lock className="w-2.5 h-2.5 text-amber-400" /> Chưa mở khóa
+                          <span className="text-[10px] font-bold bg-[var(--bg-surface-2)] text-[var(--text-tertiary)] px-2 py-0.5 rounded-full border border-[var(--border)] flex items-center gap-1 shrink-0">
+                            <Lock className="w-2.5 h-2.5 text-[var(--warn-fg)]" /> Chưa mở khóa
                           </span>
                         )}
                       </div>
-                      <p className="text-[11px] text-slate-300 leading-relaxed truncate font-medium">
+                      <p className="text-[11px] text-[var(--text-secondary)] leading-relaxed truncate font-medium">
                         {gen.desc}
                       </p>
                       {!isUnlocked && gen.requiredLessonName && (
-                        <div className="flex items-center gap-1 text-[10px] font-bold text-amber-400/90 pt-0.5">
-                          <Lock className="w-3 h-3 text-amber-400 inline" />
+                        <div className="flex items-center gap-1 text-[10px] font-bold text-[var(--warn-fg)] pt-0.5">
+                          <Lock className="w-3 h-3 text-[var(--warn-fg)] inline" />
                           <span>Mở khóa khi học đến: {gen.requiredLessonName}</span>
-                          <span className="text-amber-400 underline flex items-center ml-1">
+                          <span className="text-[var(--phy-fg)] underline flex items-center ml-1">
                             Đến học <ArrowRight className="w-3 h-3 ml-0.5 inline" />
                           </span>
                         </div>
@@ -1133,13 +1443,13 @@ export const PracticePage: React.FC = () => {
                   </div>
 
                   <div
-                    className={`w-9 h-9 rounded-2xl border-2 flex items-center justify-center shrink-0 transition-transform ${
+                    className={`w-9 h-9 rounded-2xl border flex items-center justify-center shrink-0 transition-transform ${
                       isUnlocked
-                        ? 'bg-amber-500/20 border-amber-500 text-amber-400 shadow-[0_2px_0_0_#ca8a04] group-hover:scale-105'
-                        : 'bg-[#18272f] border-[#20333d] text-slate-600'
+                        ? 'bg-[var(--phy-fill)] text-white shadow-[0_2px_0_0_var(--phy-edge)] group-hover:scale-105'
+                        : 'bg-[var(--bg-surface-2)] border-[var(--border)] text-[var(--text-tertiary)]'
                     }`}
                   >
-                    {isUnlocked ? <Play className="w-4 h-4 fill-amber-400" /> : <Lock className="w-4 h-4" />}
+                    {isUnlocked ? <Play className="w-4 h-4 fill-white" /> : <Lock className="w-4 h-4" />}
                   </div>
                 </div>
               );
@@ -1152,21 +1462,21 @@ export const PracticePage: React.FC = () => {
       {isBio && (
         <div className="space-y-3 pt-2">
           {/* Lab Machine Hub Banner */}
-          <div className="p-3.5 rounded-2xl bg-[#0d1e17] border-2 border-emerald-600/40 shadow-[0_4px_0_0_#131f24] flex items-center justify-between gap-3">
+          <div className="p-3.5 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] flex items-center justify-between gap-3">
             <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400">
+              <div className="w-9 h-9 rounded-xl bg-[var(--bio-tint)] border border-[var(--bio-fill)]/40 flex items-center justify-center text-[var(--bio-fg)]">
                 <HandDrawnIcon name="dna" size={22} />
               </div>
               <div>
-                <h2 className="text-xs sm:text-sm font-black text-emerald-300 uppercase tracking-wider">
+                <h2 className="text-xs sm:text-sm font-black text-[var(--bio-fg)] uppercase tracking-wider">
                   Máy Tạo Đề Tự Động Phòng Lab (Sinh Học)
                 </h2>
-                <p className="text-[11px] text-emerald-200/80">
+                <p className="text-[11px] text-[var(--text-secondary)]">
                   Tự động sinh ngẫu nhiên số liệu bài toán: Phép lai Mendel, DNA & Tái bản, Phân bào & NST, Calo, ABO
                 </p>
               </div>
             </div>
-            <span className="hidden sm:inline-block text-[10px] font-black uppercase px-2.5 py-1 rounded-xl bg-emerald-400 text-emerald-950 shadow-sm shrink-0">
+            <span className="hidden sm:inline-block text-[10px] font-black uppercase px-2.5 py-1 rounded-xl bg-[var(--bio-tint)] text-[var(--bio-fg)] border border-[var(--bio-fill)]/40 shrink-0">
               VÔ HẠN ĐỀ
             </span>
           </div>
@@ -1201,10 +1511,10 @@ export const PracticePage: React.FC = () => {
                       });
                     }
                   }}
-                  className={`border-2 p-3.5 sm:p-4 rounded-3xl transition-all shadow-[0_4px_0_0_#131f24] flex items-center justify-between group cursor-pointer ${
+                  className={`border p-3.5 sm:p-4 rounded-3xl transition-all flex items-center justify-between group cursor-pointer ${
                     isUnlocked
-                      ? 'bg-[#18272f] border-[#2e4756] hover:border-emerald-400 hover:translate-y-[-2px]'
-                      : 'bg-[#131f24]/80 border-[#20333d] hover:border-emerald-500/40 opacity-75'
+                      ? 'bg-[var(--bg-surface)] border-[var(--border)] hover:border-[var(--bio-fill)] hover:translate-y-[-1px]'
+                      : 'bg-[var(--bg-canvas)] border-[var(--border)] opacity-75'
                   }`}
                 >
                   <div className="flex items-center gap-3.5 min-w-0 pr-2">
@@ -1215,29 +1525,29 @@ export const PracticePage: React.FC = () => {
                       <div className="flex flex-wrap items-center gap-2 mb-0.5">
                         <h3
                           className={`text-xs sm:text-sm font-black truncate transition-colors ${
-                            isUnlocked ? 'text-white group-hover:text-emerald-300' : 'text-slate-400'
+                            isUnlocked ? 'text-[var(--text-primary)] group-hover:text-[var(--bio-fg)]' : 'text-[var(--text-tertiary)]'
                           }`}
                         >
                           {gen.title}
                         </h3>
                         {isUnlocked ? (
-                          <span className="text-[10px] font-bold bg-emerald-500/15 text-emerald-400 px-2 py-0.5 rounded-full border border-emerald-500/30 shrink-0">
+                          <span className="text-[10px] font-bold bg-[var(--bio-tint)] text-[var(--bio-fg)] px-2 py-0.5 rounded-full border border-[var(--bio-fill)]/40 shrink-0">
                             {gen.badge}
                           </span>
                         ) : (
-                          <span className="text-[10px] font-bold bg-[#20333d] text-slate-400 px-2 py-0.5 rounded-full border border-[#2e4756] flex items-center gap-1 shrink-0">
-                            <Lock className="w-2.5 h-2.5 text-amber-400" /> Chưa mở khóa
+                          <span className="text-[10px] font-bold bg-[var(--bg-surface-2)] text-[var(--text-tertiary)] px-2 py-0.5 rounded-full border border-[var(--border)] flex items-center gap-1 shrink-0">
+                            <Lock className="w-2.5 h-2.5 text-[var(--warn-fg)]" /> Chưa mở khóa
                           </span>
                         )}
                       </div>
-                      <p className="text-[11px] text-slate-300 leading-relaxed truncate font-medium">
+                      <p className="text-[11px] text-[var(--text-secondary)] leading-relaxed truncate font-medium">
                         {gen.desc}
                       </p>
                       {!isUnlocked && gen.requiredLessonName && (
-                        <div className="flex items-center gap-1 text-[10px] font-bold text-amber-400/90 pt-0.5">
-                          <Lock className="w-3 h-3 text-amber-400 inline" />
+                        <div className="flex items-center gap-1 text-[10px] font-bold text-[var(--warn-fg)] pt-0.5">
+                          <Lock className="w-3 h-3 text-[var(--warn-fg)] inline" />
                           <span>Mở khóa khi học đến: {gen.requiredLessonName}</span>
-                          <span className="text-emerald-400 underline flex items-center ml-1">
+                          <span className="text-[var(--bio-fg)] underline flex items-center ml-1">
                             Đến học <ArrowRight className="w-3 h-3 ml-0.5 inline" />
                           </span>
                         </div>
@@ -1246,13 +1556,13 @@ export const PracticePage: React.FC = () => {
                   </div>
 
                   <div
-                    className={`w-9 h-9 rounded-2xl border-2 flex items-center justify-center shrink-0 transition-transform ${
+                    className={`w-9 h-9 rounded-2xl border flex items-center justify-center shrink-0 transition-transform ${
                       isUnlocked
-                        ? 'bg-emerald-500/20 border-emerald-500 text-emerald-400 shadow-[0_2px_0_0_#059669] group-hover:scale-105'
-                        : 'bg-[#18272f] border-[#20333d] text-slate-600'
+                        ? 'bg-[var(--bio-fill)] text-white shadow-[0_2px_0_0_var(--bio-edge)] group-hover:scale-105'
+                        : 'bg-[var(--bg-surface-2)] border-[var(--border)] text-[var(--text-tertiary)]'
                     }`}
                   >
-                    {isUnlocked ? <Play className="w-4 h-4 fill-emerald-400 text-emerald-400" /> : <Lock className="w-4 h-4" />}
+                    {isUnlocked ? <Play className="w-4 h-4 fill-white" /> : <Lock className="w-4 h-4" />}
                   </div>
                 </div>
               );
@@ -1261,27 +1571,25 @@ export const PracticePage: React.FC = () => {
         </div>
       )}
 
-
-
       {/* ── SECTION 2: ĐỀ TOÁN HÓA SINH TỰ ĐỘNG (Dành cho Hóa học Lớp 8) ── */}
       {!isPhysics && !isBio && selectedGrade === 8 && (
         <div className="space-y-3 pt-2">
           {/* Lab Machine Hub Banner */}
-          <div className="p-3.5 rounded-2xl bg-[#0d1a24] border-2 border-sky-600/40 shadow-[0_4px_0_0_#131f24] flex items-center justify-between gap-3">
+          <div className="p-3.5 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] flex items-center justify-between gap-3">
             <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-sky-500/20 border border-sky-500/40 flex items-center justify-center text-sky-400">
+              <div className="w-9 h-9 rounded-xl bg-[var(--chem-tint)] border border-[var(--chem-fill)]/40 flex items-center justify-center text-[var(--chem-fg)]">
                 <HandDrawnIcon name="flask" size={22} />
               </div>
               <div>
-                <h2 className="text-xs sm:text-sm font-black text-sky-300 uppercase tracking-wider">
+                <h2 className="text-xs sm:text-sm font-black text-[var(--chem-fg)] uppercase tracking-wider">
                   Máy Tạo Đề Tự Động Phòng Lab (Hóa Học)
                 </h2>
-                <p className="text-[11px] text-sky-200/80">
+                <p className="text-[11px] text-[var(--text-secondary)]">
                   Tự động sinh ngẫu nhiên số liệu bài toán: Mol, Khí ĐKC 24,79L, Dung dịch & Nồng độ, PTHH
                 </p>
               </div>
             </div>
-            <span className="hidden sm:inline-block text-[10px] font-black uppercase px-2.5 py-1 rounded-xl bg-sky-400 text-slate-950 shadow-sm shrink-0">
+            <span className="hidden sm:inline-block text-[10px] font-black uppercase px-2.5 py-1 rounded-xl bg-[var(--chem-tint)] text-[var(--chem-fg)] border border-[var(--chem-fill)]/40 shrink-0">
               VÔ HẠN ĐỀ
             </span>
           </div>
@@ -1309,10 +1617,10 @@ export const PracticePage: React.FC = () => {
                       });
                     }
                   }}
-                  className={`border-2 p-3.5 sm:p-4 rounded-3xl transition-all shadow-[0_4px_0_0_#131f24] flex items-center justify-between group cursor-pointer ${
+                  className={`border p-3.5 sm:p-4 rounded-3xl transition-all flex items-center justify-between group cursor-pointer ${
                     isUnlocked
-                      ? 'bg-[#18272f] border-[#2e4756] hover:border-[#ff9600] hover:translate-y-[-2px]'
-                      : 'bg-[#131f24]/80 border-[#20333d] hover:border-amber-500/40 opacity-75'
+                      ? 'bg-[var(--bg-surface)] border-[var(--border)] hover:border-[var(--chem-fill)] hover:translate-y-[-1px]'
+                      : 'bg-[var(--bg-canvas)] border-[var(--border)] opacity-75'
                   }`}
                 >
                   <div className="flex items-center gap-3.5 min-w-0 pr-2">
@@ -1323,29 +1631,29 @@ export const PracticePage: React.FC = () => {
                       <div className="flex flex-wrap items-center gap-2 mb-0.5">
                         <h3
                           className={`text-xs sm:text-sm font-black truncate transition-colors ${
-                            isUnlocked ? 'text-white group-hover:text-amber-300' : 'text-slate-400'
+                            isUnlocked ? 'text-[var(--text-primary)] group-hover:text-[var(--chem-fg)]' : 'text-[var(--text-tertiary)]'
                           }`}
                         >
                           {gen.title}
                         </h3>
                         {isUnlocked ? (
-                          <span className="text-[10px] font-bold bg-[#ff9600]/15 text-[#ff9600] px-2 py-0.5 rounded-full border border-[#ff9600]/30 shrink-0">
+                          <span className="text-[10px] font-bold bg-[var(--chem-tint)] text-[var(--chem-fg)] px-2 py-0.5 rounded-full border border-[var(--chem-fill)]/40 shrink-0">
                             {gen.badge}
                           </span>
                         ) : (
-                          <span className="text-[10px] font-bold bg-[#20333d] text-slate-400 px-2 py-0.5 rounded-full border border-[#2e4756] flex items-center gap-1 shrink-0">
-                            <Lock className="w-2.5 h-2.5 text-amber-400" /> Chưa mở khóa
+                          <span className="text-[10px] font-bold bg-[var(--bg-surface-2)] text-[var(--text-tertiary)] px-2 py-0.5 rounded-full border border-[var(--border)] flex items-center gap-1 shrink-0">
+                            <Lock className="w-2.5 h-2.5 text-[var(--warn-fg)]" /> Chưa mở khóa
                           </span>
                         )}
                       </div>
-                      <p className="text-[11px] text-slate-300 leading-relaxed truncate font-medium">
+                      <p className="text-[11px] text-[var(--text-secondary)] leading-relaxed truncate font-medium">
                         {gen.desc}
                       </p>
                       {!isUnlocked && gen.requiredLessonName && (
-                        <div className="flex items-center gap-1 text-[10px] font-bold text-amber-400/90 pt-0.5">
-                          <Lock className="w-3 h-3 text-amber-400 inline" />
+                        <div className="flex items-center gap-1 text-[10px] font-bold text-[var(--warn-fg)] pt-0.5">
+                          <Lock className="w-3 h-3 text-[var(--warn-fg)] inline" />
                           <span>Mở khóa khi học đến: {gen.requiredLessonName}</span>
-                          <span className="text-[#38bdf8] underline flex items-center ml-1">
+                          <span className="text-[var(--chem-fg)] underline flex items-center ml-1">
                             Đến học <ArrowRight className="w-3 h-3 ml-0.5 inline" />
                           </span>
                         </div>
@@ -1354,13 +1662,13 @@ export const PracticePage: React.FC = () => {
                   </div>
 
                   <div
-                    className={`w-9 h-9 rounded-2xl border-2 flex items-center justify-center shrink-0 transition-transform ${
+                    className={`w-9 h-9 rounded-2xl border flex items-center justify-center shrink-0 transition-transform ${
                       isUnlocked
-                        ? 'bg-[#ff9600]/20 border-[#ff9600] text-[#ff9600] shadow-[0_2px_0_0_#c26f00] group-hover:scale-105'
-                        : 'bg-[#18272f] border-[#20333d] text-slate-600'
+                        ? 'bg-[var(--chem-fill)] text-white shadow-[0_2px_0_0_var(--chem-edge)] group-hover:scale-105'
+                        : 'bg-[var(--bg-surface-2)] border-[var(--border)] text-[var(--text-tertiary)]'
                     }`}
                   >
-                    {isUnlocked ? <Play className="w-4 h-4 fill-[#ff9600]" /> : <Lock className="w-4 h-4" />}
+                    {isUnlocked ? <Play className="w-4 h-4 fill-white" /> : <Lock className="w-4 h-4" />}
                   </div>
                 </div>
               );
@@ -1374,11 +1682,11 @@ export const PracticePage: React.FC = () => {
         <div className="flex items-center justify-between px-1">
           <div className="flex items-center gap-2">
             <HandDrawnIcon name="flame" size={22} />
-            <h2 className="text-sm font-black text-slate-200 uppercase tracking-wider">
+            <h2 className="text-sm font-black text-[var(--text-primary)] uppercase tracking-wider">
               Đấu Trường Mini-Games {isPhysics ? 'Vật Lý' : isBio ? 'Sinh Học' : 'Hóa Học'}
             </h2>
           </div>
-          <span className={`text-[11px] font-bold ${isPhysics ? 'text-amber-300' : isBio ? 'text-emerald-300' : 'text-[#38bdf8]'}`}>
+          <span className="text-[11px] font-bold text-[var(--subject-fg)]">
             {activeMinigames.length} trò chơi thử thách studio
           </span>
         </div>
@@ -1393,30 +1701,27 @@ export const PracticePage: React.FC = () => {
                   sound.playClick();
                   navigate(game.route);
                 }}
-                className={`p-4 rounded-3xl border-2 bg-[#18272f] border-[#2e4756] ${theme.hoverBorder}
-                  shadow-[0_5px_0_0_#101c24] hover:shadow-[0_7px_0_0_#0f172a]
-                  hover:-translate-y-1 active:translate-y-[4px] active:shadow-none
-                  transition-all cursor-pointer flex items-center justify-between group`}
+                className={`p-4 rounded-3xl border border-[var(--border)] bg-[var(--bg-surface)] ${theme.hoverBorder} hover:translate-y-[-1px] transition-all cursor-pointer flex items-center justify-between group`}
               >
                 <div className="flex items-center gap-3.5 min-w-0 pr-2">
-                  <div className="w-14 h-14 rounded-2xl bg-[#0f172a] border-2 border-[#2e4756] group-hover:border-slate-400 flex items-center justify-center shrink-0 p-1 shadow-inner group-hover:scale-105 transition-transform">
+                  <div className="w-14 h-14 rounded-2xl bg-[var(--bg-surface-2)] border border-[var(--border)] flex items-center justify-center shrink-0 p-1 group-hover:scale-105 transition-transform">
                     <MinigameIllustration id={game.id} size={50} />
                   </div>
                   <div className="min-w-0">
                     <div className="flex items-center gap-2 mb-0.5">
-                      <h3 className={`text-xs sm:text-sm font-black text-white ${theme.hoverTitle} truncate`}>
+                      <h3 className={`text-xs sm:text-sm font-black text-[var(--text-primary)] ${theme.hoverTitle} truncate`}>
                         {game.title}
                       </h3>
                       <span className={`text-[9px] font-black uppercase px-2 py-0.5 rounded-full ${theme.badgeBg} ${theme.badgeText} border ${theme.badgeBorder} shrink-0`}>
                         {game.badge}
                       </span>
                     </div>
-                    <p className="text-[11px] text-slate-300 leading-snug line-clamp-2">
+                    <p className="text-[11px] text-[var(--text-secondary)] leading-snug line-clamp-2">
                       {game.desc}
                     </p>
                   </div>
                 </div>
-                <div className={`w-10 h-10 rounded-2xl ${theme.playBg} border-2 ${theme.playBorder} ${theme.iconColor} flex items-center justify-center shrink-0 ${theme.playShadow} group-hover:scale-105 transition-transform`}>
+                <div className={`w-10 h-10 rounded-2xl ${theme.playBg} border border-[var(--border)] flex items-center justify-center shrink-0 ${theme.playShadow} group-hover:scale-105 transition-transform`}>
                   <Play className={`w-4 h-4 ${theme.playFill}`} />
                 </div>
               </div>
@@ -1434,7 +1739,7 @@ export const PracticePage: React.FC = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setModalInfo(null)}
-              className="absolute inset-0 bg-[#0c1417]/80 backdrop-blur-sm"
+              className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             />
 
             <motion.div
@@ -1442,7 +1747,7 @@ export const PracticePage: React.FC = () => {
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.9, opacity: 0, y: 20 }}
               transition={{ type: 'spring', stiffness: 350, damping: 25 }}
-              className="relative w-full max-w-sm rounded-3xl bg-[#18272f] border-2 border-[#2e4756] p-6 shadow-[0_16px_40px_rgba(0,0,0,0.65)] text-center space-y-4 z-10"
+              className="relative w-full max-w-sm rounded-3xl bg-[var(--bg-surface)] border border-[var(--border)] p-6 shadow-[var(--shadow-modal)] text-center space-y-4 z-10"
             >
               {/* Mascot */}
               <div className="flex justify-center pt-1">
@@ -1450,23 +1755,23 @@ export const PracticePage: React.FC = () => {
               </div>
 
               <div className="space-y-2">
-                <span className="inline-block text-[11px] font-black uppercase tracking-wider text-amber-400 bg-amber-950/60 px-3 py-1 rounded-xl border border-amber-800/60">
+                <span className="inline-block text-[11px] font-black uppercase tracking-wider text-[var(--warn-fg)] bg-[var(--warn-tint)] px-3 py-1 rounded-xl border border-[var(--warn-edge)]/40">
                   {modalInfo.badge}
                 </span>
-                <h3 className="text-base sm:text-lg font-black text-white">
+                <h3 className="text-base sm:text-lg font-black text-[var(--text-primary)]">
                   {modalInfo.title}
                 </h3>
-                <p className="text-xs text-slate-300 leading-relaxed font-medium">
+                <p className="text-xs text-[var(--text-secondary)] leading-relaxed font-medium">
                   {modalInfo.description}
                 </p>
 
                 {modalInfo.requiredLessonName && (
-                  <div className="p-3 rounded-2xl bg-amber-500/10 border-2 border-amber-500/30 text-amber-300 text-xs font-bold text-left space-y-0.5">
-                    <span className="text-[10px] uppercase text-amber-400/80 font-black block">
+                  <div className="p-3 rounded-2xl bg-[var(--warn-tint)] border border-[var(--warn-edge)]/40 text-[var(--warn-fg)] text-xs font-bold text-left space-y-0.5">
+                    <span className="text-[10px] uppercase opacity-80 font-black block">
                       Điều kiện mở khóa:
                     </span>
                     <span className="flex items-center gap-1.5 pt-0.5">
-                      <ArrowRight className="w-3.5 h-3.5 text-amber-400 inline shrink-0" />
+                      <ArrowRight className="w-3.5 h-3.5 text-[var(--warn-fg)] inline shrink-0" />
                       <span>Cần học xong: <strong>{modalInfo.requiredLessonName}</strong></span>
                     </span>
                   </div>

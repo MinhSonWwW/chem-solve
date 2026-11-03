@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Compass, ChevronRight } from 'lucide-react';
+import { Compass, ChevronRight, BookOpen } from 'lucide-react';
 import { SnakePath, type PathNode, NodePreviewDrawer, ChapterGuideModal, SubjectSelectorModal, HandDrawnIcon, DoodleOrnament } from '@/design-system';
 import { sound } from '@/lib/audio';
 import { assetUrl } from '@/lib/utils';
@@ -77,7 +77,7 @@ export const LearnPage: React.FC = () => {
 
     // 2. Determine node statuses sequentially across the entire grade
     const completedKeys = new Set(
-      Object.keys(completedNodes).filter((k) => completedNodes[k])
+      Object.keys(completedNodes).filter((k) => completedNodes[k] && !k.includes(':practice'))
     );
 
     let canUnlock = true;
@@ -100,9 +100,9 @@ export const LearnPage: React.FC = () => {
       const isComp = completedKeys.has(item.key);
       const isReady = item.lesson.ready;
 
-      if (isComp) {
+      if (canUnlock && isComp) {
         const compData = completedNodes[item.key];
-        const stars = Math.min(3, Math.max(1, Math.round(compData.accuracy * 3)));
+        const stars = Math.min(3, Math.max(1, Math.round((compData?.accuracy ?? 1) * 3)));
         nodeStatusMap.set(item.key, {
           status: 'completed',
           isUnlocked: true,
@@ -129,6 +129,7 @@ export const LearnPage: React.FC = () => {
           isCompleted: false,
           prerequisiteTitle: lastCompletedReadyTitle,
         });
+        canUnlock = false;
       }
     }
 
@@ -255,32 +256,19 @@ export const LearnPage: React.FC = () => {
   return (
     <div className="space-y-6">
       {/* 0. Subject Selection Bar */}
-      <div className="learn-subject-bar bg-[#18272f] border-2 border-[#2e4756] p-3 rounded-2xl flex items-center justify-between shadow-[0_4px_0_0_#131f24]">
+      <div className="learn-subject-bar bg-[var(--bg-surface)] border border-[var(--border)] p-3 rounded-2xl flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div
-            className="w-10 h-10 rounded-2xl flex items-center justify-center text-xl shrink-0 border shadow-inner"
-            style={{
-              backgroundColor: `${currentSub.accentColor}20`,
-              borderColor: `${currentSub.accentColor}50`,
-            }}
-          >
+          <div className="w-10 h-10 rounded-2xl flex items-center justify-center text-xl shrink-0 border bg-[var(--subject-tint)] border-[var(--subject-edge)] text-[var(--subject-fg)] shadow-inner">
             {currentSub.icon}
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="text-sm font-black text-white">{currentSub.name} THCS</span>
-              <span
-                className="text-[9px] font-black uppercase px-1.5 py-0.5 rounded-md border tracking-wider"
-                style={{
-                  backgroundColor: `${currentSub.accentColor}25`,
-                  color: currentSub.accentColor,
-                  borderColor: `${currentSub.accentColor}50`,
-                }}
-              >
+              <span className="text-sm font-black text-[var(--text-primary)]">{currentSub.name} THCS</span>
+              <span className="text-[9px] font-black uppercase px-1.5 py-0.5 rounded-md border tracking-wider bg-[var(--subject-tint)] text-[var(--subject-fg)] border-[var(--subject-edge)]">
                 {currentSub.badge}
               </span>
             </div>
-            <p className="text-[11px] text-slate-400 font-medium line-clamp-1">
+            <p className="text-[11px] text-[var(--text-secondary)] font-medium line-clamp-1">
               {currentSub.tagline}
             </p>
           </div>
@@ -291,11 +279,11 @@ export const LearnPage: React.FC = () => {
             sound.playClick();
             setShowSubjectModal(true);
           }}
-          className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-[#20333d] hover:bg-[#28414f] border border-[#2e4756] text-xs font-black text-sky-400 hover:text-white transition-colors cursor-pointer shrink-0 shadow-[0_2px_0_0_#131f24]"
+          className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-[var(--bg-surface-2)] hover:bg-[var(--border)] border border-[var(--border)] text-xs font-black text-[var(--subject-fg)] hover:text-[var(--text-primary)] transition-colors cursor-pointer shrink-0"
         >
           <Compass className="w-3.5 h-3.5" />
           <span>Đổi môn</span>
-          <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
+          <ChevronRight className="w-3.5 h-3.5 text-[var(--text-tertiary)]" />
         </button>
       </div>
 
@@ -303,7 +291,7 @@ export const LearnPage: React.FC = () => {
       {activeSubject === 'physics' && chaptersWithNodes.every((c) => c.pathNodes.length === 0) && (
         <div className="space-y-6">
           {/* Grade Selector for Physics */}
-          <div className="flex bg-[#18272f] border-2 border-amber-500/30 p-1.5 rounded-2xl shadow-[0_4px_0_0_#131f24]">
+          <div className="flex bg-[var(--bg-surface)] border border-[var(--border)] p-1.5 rounded-2xl">
             {([6, 7, 8, 9] as Grade[]).map((g) => (
               <button
                 key={g}
@@ -313,8 +301,8 @@ export const LearnPage: React.FC = () => {
                 }}
                 className={`flex-1 py-2 text-xs font-black rounded-xl transition-all cursor-pointer ${
                   currentGrade === g
-                    ? 'bg-[#eab308] text-slate-950 shadow-[0_3px_0_0_#ca8a04]'
-                    : 'text-slate-400 hover:text-white'
+                    ? 'bg-[var(--phy-fill)] text-white shadow-[0_3px_0_0_var(--phy-edge)]'
+                    : 'text-[var(--text-tertiary)] hover:text-[var(--text-primary)]'
                 }`}
               >
                 Lớp {g}
@@ -322,35 +310,35 @@ export const LearnPage: React.FC = () => {
             ))}
           </div>
 
-          <div className="bg-[#18272f] border-2 border-amber-500/40 p-6 sm:p-8 rounded-3xl shadow-[0_6px_0_0_#131f24] space-y-6 text-center">
-            <div className="w-16 h-16 rounded-2xl bg-amber-500/20 border-2 border-amber-500/40 flex items-center justify-center mx-auto shadow-inner">
+          <div className="bg-[var(--bg-surface)] border border-[var(--border)] p-6 sm:p-8 rounded-3xl space-y-6 text-center">
+            <div className="w-16 h-16 rounded-2xl bg-[var(--phy-tint)] border border-[var(--phy-edge)] text-[var(--phy-fg)] flex items-center justify-center mx-auto shadow-inner">
               <HandDrawnIcon name="atom" size={36} />
             </div>
             <div className="space-y-2">
-              <span className="text-xs font-black uppercase text-amber-400 tracking-wider bg-amber-950/60 px-3 py-1 rounded-xl border border-amber-800/60 inline-block">
+              <span className="text-xs font-black uppercase text-[var(--phy-fg)] tracking-wider bg-[var(--phy-tint)] px-3 py-1 rounded-xl border border-[var(--phy-edge)] inline-block">
                 HẠ TẦNG VẬT LÝ SẴN SÀNG · LỚP {currentGrade}
               </span>
-              <h2 className="text-xl sm:text-2xl font-black text-white">{curriculum.title}</h2>
-              <p className="text-xs sm:text-sm text-slate-300 max-w-lg mx-auto leading-relaxed">
+              <h2 className="text-xl sm:text-2xl font-black text-[var(--text-primary)]">{curriculum.title}</h2>
+              <p className="text-xs sm:text-sm text-[var(--text-secondary)] max-w-lg mx-auto leading-relaxed">
                 Khung chương trình, bộ hằng số, công thức và bàn phím Vật lý đã được thiết lập. Hệ thống sẵn sàng tạo chặng học ngay khi bạn cung cấp danh sách bài học!
               </p>
             </div>
 
             {/* Chapters list */}
             <div className="space-y-3 text-left max-w-lg mx-auto pt-2">
-              <div className="text-[11px] font-black uppercase tracking-wider text-amber-400 flex items-center justify-between">
+              <div className="text-[11px] font-black uppercase tracking-wider text-[var(--phy-fg)] flex items-center justify-between">
                 <span>CÁC CHƯƠNG LỚP {currentGrade} ({curriculum.chapters.length} chương)</span>
-                <span className="text-[10px] text-slate-400 font-normal">Chờ danh sách bài</span>
+                <span className="text-[10px] text-[var(--text-tertiary)] font-normal">Chờ danh sách bài</span>
               </div>
               {curriculum.chapters.map((ch) => (
-                <div key={ch.id} className="p-3.5 rounded-2xl bg-[#131f24] border border-[#2e4756] hover:border-amber-500/40 transition-colors">
+                <div key={ch.id} className="p-3.5 rounded-2xl bg-[var(--bg-surface-2)] border border-[var(--border)] hover:border-[var(--phy-edge)] transition-colors">
                   <div className="flex items-center justify-between gap-2">
-                    <span className="text-xs font-black text-amber-300">{ch.title}</span>
-                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-amber-500/10 text-amber-400 border border-amber-500/20 shrink-0">
+                    <span className="text-xs font-black text-[var(--text-primary)]">{ch.title}</span>
+                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-[var(--phy-tint)] text-[var(--phy-fg)] border border-[var(--phy-edge)] shrink-0">
                       Sẵn sàng nạp bài
                     </span>
                   </div>
-                  <p className="text-[11px] text-slate-400 mt-1 leading-relaxed">{ch.description}</p>
+                  <p className="text-[11px] text-[var(--text-secondary)] mt-1 leading-relaxed">{ch.description}</p>
                 </div>
               ))}
             </div>
@@ -361,7 +349,7 @@ export const LearnPage: React.FC = () => {
                   sound.playClick();
                   navigate('/learn/6');
                 }}
-                className="w-full sm:w-auto px-6 py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs sm:text-sm rounded-2xl shadow-[0_4px_0_0_#b45309] active:translate-y-1 active:shadow-none transition-all cursor-pointer flex items-center justify-center gap-2"
+                className="w-full sm:w-auto px-6 py-2.5 bg-[var(--phy-fill)] hover:opacity-95 text-white font-black text-xs sm:text-sm rounded-2xl shadow-[0_4px_0_0_var(--phy-edge)] active:translate-y-1 active:shadow-none transition-all cursor-pointer flex items-center justify-center gap-2"
               >
                 <HandDrawnIcon name="atom" size={18} />
                 <span>Học Vật lý Lớp 6 (Unit 0 Đo lường)</span>
@@ -375,7 +363,7 @@ export const LearnPage: React.FC = () => {
       {(activeSubject === 'chem' || activeSubject === 'bio' || (activeSubject === 'physics' && chaptersWithNodes.some((c) => c.pathNodes.length > 0))) && (
         <>
           {/* 1. Grade Selector (3D chunky tabs) */}
-          <div className="learn-grade-selector flex bg-[#18272f] border-2 border-[#2e4756] p-1.5 rounded-2xl shadow-[0_4px_0_0_#131f24]">
+          <div className="learn-grade-selector flex bg-[var(--bg-surface)] border border-[var(--border)] p-1.5 rounded-2xl">
             {([6, 7, 8, 9] as Grade[]).map((g) => (
               <button
                 key={g}
@@ -385,12 +373,8 @@ export const LearnPage: React.FC = () => {
                 }}
                 className={`flex-1 py-2 text-xs font-black rounded-xl transition-all cursor-pointer ${
                   currentGrade === g
-                    ? activeSubject === 'physics'
-                      ? 'bg-[#eab308] text-slate-950 shadow-[0_3px_0_0_#ca8a04]'
-                      : activeSubject === 'bio'
-                      ? 'bg-[#10b981] text-slate-950 shadow-[0_3px_0_0_#059669]'
-                      : 'bg-[#0ea5e9] text-white shadow-[0_3px_0_0_#0284c7]'
-                    : 'text-slate-400 hover:text-white'
+                    ? 'bg-[var(--subject-fill)] text-white shadow-[0_3px_0_0_var(--subject-edge)]'
+                    : 'text-[var(--text-tertiary)] hover:text-[var(--text-primary)]'
                 }`}
               >
                 Lớp {g}
@@ -403,26 +387,11 @@ export const LearnPage: React.FC = () => {
             <div key={chapter.id} className="space-y-3">
               {/* ─── Chapter Banner — Sổ tay phòng thí nghiệm ─── */}
               <div
-                className={`relative rounded-3xl overflow-hidden
-                  border-2 shadow-[0_6px_0_0_#0c1419]
-                  ${activeSubject === 'physics'
-                    ? 'bg-[#1c1e0d] border-amber-600/50'
-                    : activeSubject === 'bio'
-                    ? 'bg-[#0d1e17] border-emerald-600/50'
-                    : 'bg-[#0d1a24] border-[#2e4756]'
-                  }`}
+                className="relative rounded-3xl overflow-hidden border border-[var(--border)] bg-[var(--bg-surface)]"
               >
                 {/* Nhãn dán chương — sticker label dán chéo */}
                 <div
-                  className={`absolute -left-2 top-4 z-10
-                    px-3 py-0.5 text-[9px] font-black uppercase tracking-widest
-                    shadow-[2px_2px_0_rgba(0,0,0,0.4)]
-                    ${ activeSubject === 'physics'
-                      ? 'bg-amber-400 text-amber-950'
-                      : activeSubject === 'bio'
-                      ? 'bg-emerald-400 text-emerald-950'
-                      : 'bg-[#38bdf8] text-slate-950'
-                    }`}
+                  className="absolute -left-2 top-4 z-10 px-3 py-0.5 text-[9px] font-black uppercase tracking-widest bg-[var(--subject-fill)] text-white shadow-sm"
                   style={{ transform: 'rotate(-1.5deg)' }}
                 >
                   {activeSubject === 'physics' || activeSubject === 'bio'
@@ -436,21 +405,7 @@ export const LearnPage: React.FC = () => {
                   <div className="flex items-start gap-3 min-w-0">
                     {/* Icon vẽ tay lớn — đặc trưng môn học */}
                     <div
-                      className={`shrink-0 w-12 h-12 rounded-2xl flex items-center justify-center
-                        border-2 shadow-[0_4px_0_0_var(--ch-icon-shadow)]
-                        ${ activeSubject === 'physics'
-                          ? 'bg-amber-900/50 border-amber-600/60'
-                          : activeSubject === 'bio'
-                          ? 'bg-emerald-900/50 border-emerald-600/60'
-                          : 'bg-[#0e2233] border-[#2e4756]'
-                        }`}
-                      style={{
-                        // @ts-expect-error CSS custom property
-                        '--ch-icon-shadow':
-                          activeSubject === 'physics' ? '#78350f'
-                          : activeSubject === 'bio' ? '#065f46'
-                          : '#0c1419',
-                      }}
+                      className="shrink-0 w-12 h-12 rounded-2xl flex items-center justify-center border bg-[var(--subject-tint)] border-[var(--subject-edge)] text-[var(--subject-fg)]"
                     >
                       <HandDrawnIcon
                         name={activeSubject === 'physics' ? 'atom' : activeSubject === 'bio' ? 'dna' : 'flask'}
@@ -459,18 +414,14 @@ export const LearnPage: React.FC = () => {
                     </div>
 
                     <div className="space-y-0.5 min-w-0">
-                      <h2 className="text-sm sm:text-base font-black text-white leading-tight line-clamp-2">
+                      <h2 className="text-sm sm:text-base font-black text-[var(--text-primary)] leading-tight line-clamp-2">
                         {chapter.title}
                       </h2>
-                      <p className="text-[11px] text-slate-400 line-clamp-1">
+                      <p className="text-[11px] text-[var(--text-secondary)] line-clamp-1">
                         {chapter.description}
                       </p>
-                      {/* Gạch chân lượn sóng vàng dưới tiêu đề */}
-                      <DoodleOrnament name="wavy-underline" color={
-                        activeSubject === 'physics' ? '#fbbf24'
-                        : activeSubject === 'bio' ? '#34d399'
-                        : '#38bdf8'
-                      } />
+                      {/* Gạch chân lượn sóng dưới tiêu đề */}
+                      <DoodleOrnament name="wavy-underline" color="var(--subject-fg)" />
                     </div>
                   </div>
 
@@ -480,22 +431,10 @@ export const LearnPage: React.FC = () => {
                       sound.playClick();
                       setSelectedChapterGuide(chapter);
                     }}
-                    className={`relative z-10 shrink-0 flex flex-col items-center gap-1 px-3 py-2.5
-                      font-black text-[10px] rounded-2xl
-                      active:translate-y-[4px] active:shadow-none
-                      transition-all duration-100 cursor-pointer whitespace-nowrap border-2
-                      ${ activeSubject === 'physics'
-                        ? 'bg-[#f59e0b] text-slate-950 shadow-[0_4px_0_0_#b45309] border-amber-300/40'
-                        : activeSubject === 'bio'
-                        ? 'bg-[#10b981] text-slate-950 shadow-[0_4px_0_0_#059669] border-emerald-300/40'
-                        : 'bg-[#0ea5e9] text-slate-950 shadow-[0_4px_0_0_#0284c7] border-sky-300/40'
-                      }`}
+                    className="relative z-10 shrink-0 flex flex-col items-center gap-1 px-3 py-2.5 font-black text-[10px] rounded-2xl active:translate-y-[4px] active:shadow-none transition-all duration-100 cursor-pointer whitespace-nowrap bg-[var(--subject-fill)] text-white shadow-[0_4px_0_0_var(--subject-edge)] border border-[var(--subject-edge)]"
                     title="Xem sổ tay kiến thức chương"
                   >
-                    <HandDrawnIcon
-                      name={activeSubject === 'physics' ? 'atom' : activeSubject === 'bio' ? 'microscope' : 'flask'}
-                      size={22}
-                    />
+                    <BookOpen className="w-5 h-5 text-white stroke-[2.5]" />
                     <span className="tracking-wide">HƯỚNG DẪN</span>
                   </button>
                 </div>
@@ -511,13 +450,13 @@ export const LearnPage: React.FC = () => {
           ))}
 
           {chaptersWithNodes.length === 0 && (
-            <div className="py-12 px-4 text-center space-y-3 bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] rounded-3xl">
+            <div className="py-12 px-4 text-center space-y-3 bg-[var(--bg-surface)] border border-[var(--border)] rounded-3xl">
               <img
                 src={assetUrl('/assets/ui/empty-no-lessons.png')}
                 alt="Chưa có bài học"
                 className="w-32 h-32 object-contain mx-auto drop-shadow-md select-none pointer-events-none"
               />
-              <p className="text-base font-bold text-slate-200">Chưa có bài học cho khối Lớp {currentGrade}</p>
+              <p className="text-base font-bold text-[var(--text-primary)]">Chưa có bài học cho khối Lớp {currentGrade}</p>
               <p className="text-xs text-slate-400 max-w-sm mx-auto">
                 Hãy chọn khối lớp khác hoặc chuyển sang môn học khác từ thanh chọn môn để tiếp tục hành trình khám phá!
               </p>

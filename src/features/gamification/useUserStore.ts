@@ -33,6 +33,7 @@ interface UserState {
   dailyGoal: number;
   achievements: Record<string, number>;
   completedNodes: Record<string, CompletedNodeData>;
+  practiceCompletedLessons: Record<string, { accuracy: number; completedAt: number }>;
 
   // ── Session state ──
   sessionState: SessionState | null;
@@ -87,6 +88,7 @@ export const useUserStore = create<UserState>((set, get) => ({
   dailyGoal: 20,
   achievements: {},
   completedNodes: {},
+  practiceCompletedLessons: {},
 
   sessionState: null,
   sessionInfo: null,
@@ -356,6 +358,7 @@ export const useUserStore = create<UserState>((set, get) => ({
         dailyGoal: progress.dailyGoal ?? 20,
         achievements: progress.achievements ?? {},
         completedNodes: progress.completedNodes ?? {},
+        practiceCompletedLessons: progress.practiceCompletedLessons ?? {},
       });
     } catch (err) {
       console.error('Failed to restore progress:', err);
@@ -440,24 +443,34 @@ export const useUserStore = create<UserState>((set, get) => ({
       progress.xp = get().xp;
       progress.gems = nextGems;
 
-      // When finishing a full practice session, award +1 heart!
+      // When finishing a full practice session, award +1 heart and track practice completion isolated from curriculum
       if (sessionState.isPractice) {
         const nextHearts = Math.min(GAMIFICATION.hearts.max, get().hearts + 1);
         set({ hearts: nextHearts });
         progress.hearts = nextHearts;
-      } else {
-        progress.hearts = get().hearts;
-        progress.heartsLastDecAt = heartsLost > 0 ? Date.now() : progress.heartsLastDecAt;
-      }
 
-      const nodeKey = `${sessionInfo.lessonId}:${sessionInfo.nodeId}`;
-      const existing = progress.completedNodes[nodeKey];
-      if (!existing || totalXp > existing.bestXp) {
-        progress.completedNodes[nodeKey] = {
+        const cleanLessonId = sessionInfo.lessonId.replace(':practice', '');
+        progress.practiceCompletedLessons = progress.practiceCompletedLessons ?? {};
+        progress.practiceCompletedLessons[cleanLessonId] = {
           accuracy,
-          bestXp: totalXp,
           completedAt: Date.now(),
         };
+        set({ practiceCompletedLessons: progress.practiceCompletedLessons });
+      } else {
+        // Official curriculum session in Learn mode
+        progress.hearts = get().hearts;
+        progress.heartsLastDecAt = heartsLost > 0 ? Date.now() : progress.heartsLastDecAt;
+
+        const nodeKey = `${sessionInfo.lessonId}:${sessionInfo.nodeId}`;
+        const existing = progress.completedNodes[nodeKey];
+        if (!existing || totalXp > existing.bestXp) {
+          progress.completedNodes[nodeKey] = {
+            accuracy,
+            bestXp: totalXp,
+            completedAt: Date.now(),
+          };
+        }
+        set({ completedNodes: progress.completedNodes });
       }
 
       // Streak: calculate consecutive days
@@ -495,6 +508,7 @@ export const useUserStore = create<UserState>((set, get) => ({
 
       set({
         completedNodes: progress.completedNodes,
+        practiceCompletedLessons: progress.practiceCompletedLessons,
         achievements: progress.achievements,
       });
 

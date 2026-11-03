@@ -2,6 +2,42 @@ import { get, set, del } from 'idb-keyval';
 import type { SessionState } from '../session/types';
 import { GAMIFICATION } from '../../config/gamification';
 
+// Resilient fallback store for environments without IndexedDB (e.g. Vitest, private mode)
+const memStore = new Map<string, unknown>();
+
+async function storageGet<T>(key: string): Promise<T | undefined> {
+  if (typeof indexedDB === 'undefined') {
+    return memStore.get(key) as T | undefined;
+  }
+  try {
+    return await get<T>(key);
+  } catch {
+    return memStore.get(key) as T | undefined;
+  }
+}
+
+async function storageSet<T>(key: string, value: T): Promise<void> {
+  memStore.set(key, value);
+  if (typeof indexedDB !== 'undefined') {
+    try {
+      await set(key, value);
+    } catch {
+      // safely fallback to memory
+    }
+  }
+}
+
+async function storageDel(key: string): Promise<void> {
+  memStore.delete(key);
+  if (typeof indexedDB !== 'undefined') {
+    try {
+      await del(key);
+    } catch {
+      // safely fallback to memory
+    }
+  }
+}
+
 // ── Saved session (resume mid-session) ──
 
 export interface SavedSession {
@@ -28,14 +64,14 @@ export async function saveSession(
     sessionState: state,
     savedAt: Date.now(),
   };
-  await set(sessionKey(lessonId, nodeId), data);
+  await storageSet(sessionKey(lessonId, nodeId), data);
 }
 
 export async function loadSession(
   lessonId: string,
   nodeId: string
 ): Promise<SavedSession | null> {
-  const data = await get<SavedSession>(sessionKey(lessonId, nodeId));
+  const data = await storageGet<SavedSession>(sessionKey(lessonId, nodeId));
   return data ?? null;
 }
 
@@ -43,7 +79,7 @@ export async function clearSession(
   lessonId: string,
   nodeId: string
 ): Promise<void> {
-  await del(sessionKey(lessonId, nodeId));
+  await storageDel(sessionKey(lessonId, nodeId));
 }
 
 // ── User progress (persistent stats) ──
@@ -67,6 +103,7 @@ export interface UserProgress {
   dailyGoal: number; // 20, 40, 60 XP
   achievements: Record<string, number>; // achievementId -> progress
   completedNodes: Record<string, CompletedNodeData>;
+  practiceCompletedLessons?: Record<string, { accuracy: number; completedAt: number }>;
 }
 
 const USER_PROGRESS_KEY = 'userProgress';
@@ -84,10 +121,11 @@ const DEFAULT_PROGRESS: UserProgress = {
   dailyGoal: 20,
   achievements: {},
   completedNodes: {},
+  practiceCompletedLessons: {},
 };
 
 export async function loadUserProgress(): Promise<UserProgress> {
-  const raw = await get<UserProgress>(USER_PROGRESS_KEY);
+  const raw = await storageGet<UserProgress>(USER_PROGRESS_KEY);
   if (!raw) return { ...DEFAULT_PROGRESS };
 
   // Ensure default values if old schema
@@ -97,6 +135,22 @@ export async function loadUserProgress(): Promise<UserProgress> {
   raw.dailyGoal = raw.dailyGoal ?? 20;
   raw.achievements = raw.achievements ?? {};
   raw.completedNodes = raw.completedNodes ?? {};
+  raw.practiceCompletedLessons = raw.practiceCompletedLessons ?? {};
+
+  // Sanitize and isolate any practice keys accidentally stored in completedNodes
+  for (const key of Object.keys(raw.completedNodes)) {
+    if (key.includes(':practice')) {
+      const lessonId = key.split(':')[0];
+      if (lessonId) {
+        raw.practiceCompletedLessons[lessonId] = {
+          accuracy: raw.completedNodes[key].accuracy,
+          completedAt: raw.completedNodes[key].completedAt,
+        };
+      }
+      delete raw.completedNodes[key];
+    }
+  }
+
   raw.hearts = 99; // Testing mode: unlimited hearts
 
   // Daily Full Heart Refill: automatically recovers full 5 hearts upon new calendar day
@@ -105,7 +159,7 @@ export async function loadUserProgress(): Promise<UserProgress> {
     raw.hearts = GAMIFICATION.hearts.max;
     raw.heartsLastDecAt = 0;
     raw.lastHeartResetDate = today;
-    await set(USER_PROGRESS_KEY, raw);
+    await storageSet(USER_PROGRESS_KEY, raw);
   }
 
   // Streak validation on new calendar day:
@@ -123,7 +177,7 @@ export async function loadUserProgress(): Promise<UserProgress> {
       } else {
         raw.streak = 0;
       }
-      await set(USER_PROGRESS_KEY, raw);
+      await storageSet(USER_PROGRESS_KEY, raw);
     }
   }
 
@@ -143,7 +197,7 @@ export async function loadUserProgress(): Promise<UserProgress> {
         // Advance the timer by the recovered amount
         raw.heartsLastDecAt += recoveredHearts * GAMIFICATION.hearts.recoveryMinutes * 60 * 1000;
       }
-      await set(USER_PROGRESS_KEY, raw);
+      await storageSet(USER_PROGRESS_KEY, raw);
     }
   }
 
@@ -151,7 +205,7 @@ export async function loadUserProgress(): Promise<UserProgress> {
 }
 
 export async function saveUserProgress(data: UserProgress): Promise<void> {
-  await set(USER_PROGRESS_KEY, data);
+  await storageSet(USER_PROGRESS_KEY, data);
 }
 
 /** Export all progress as JSON string */
