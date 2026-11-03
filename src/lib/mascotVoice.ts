@@ -1,6 +1,22 @@
 // Mascot Voice Acting & Speech Synthesis System (Milestone M14)
 // Provides unique voice personas and encouraging Vietnamese voice acting for Atom, Leafy, and Proton.
 
+import {
+  CHEM_CORRECT_PRAISE_LINES,
+  BIO_CORRECT_PRAISE_LINES,
+  PHYSICS_CORRECT_PRAISE_LINES,
+  ALL_CORRECT_PRAISE_LINES,
+  defaultVoicePicker,
+} from '../copy/voiceScripts';
+
+export {
+  CHEM_CORRECT_PRAISE_LINES,
+  BIO_CORRECT_PRAISE_LINES,
+  PHYSICS_CORRECT_PRAISE_LINES,
+  ALL_CORRECT_PRAISE_LINES,
+  defaultVoicePicker,
+};
+
 export type MascotSubject = 'chem' | 'bio' | 'physics';
 
 export interface VoicePersona {
@@ -37,13 +53,7 @@ export const MASCOT_PERSONAS: Record<MascotSubject, VoicePersona> = {
 
 export const MASCOT_VOICE_SCRIPTS = {
   chem: {
-    correct: [
-      'Chuẩn không cần chỉnh!',
-      'Phản ứng xuất sắc!',
-      'Đỉnh nóc kịch trần!',
-      'Tuyệt đỉnh Hóa học!',
-      'Biến đổi ngoạn mục!',
-    ],
+    correct: CHEM_CORRECT_PRAISE_LINES,
     wrong: [
       'Đừng nản nhé, thử lại nào!',
       'Gần đúng rồi, cân bằng lại xem sao!',
@@ -61,13 +71,7 @@ export const MASCOT_VOICE_SCRIPTS = {
     ],
   },
   bio: {
-    correct: [
-      'Tuyệt vời quá!',
-      'Quan sát rất tinh tế!',
-      'Quá xuất sắc bạn ơi!',
-      'Bạn là bậc thầy tự nhiên!',
-      'Tiêu bản hoàn hảo!',
-    ],
+    correct: BIO_CORRECT_PRAISE_LINES,
     wrong: [
       'Không sao cả, cùng nhìn kỹ lại nhé!',
       'Cố lên nào bạn ơi!',
@@ -84,13 +88,7 @@ export const MASCOT_VOICE_SCRIPTS = {
     ],
   },
   physics: {
-    correct: [
-      'Bừng sáng năng lượng!',
-      'Chính xác tuyệt đối!',
-      'Tốc độ thần sầu!',
-      'Động năng bùng nổ!',
-      'Gia tốc hoàn hảo!',
-    ],
+    correct: PHYSICS_CORRECT_PRAISE_LINES,
     wrong: [
       'Gia tốc lại nào!',
       'Chưa trúng đích, căn lại lực nhé!',
@@ -114,15 +112,16 @@ function getRandomItem(arr: string[]): string {
 }
 
 class MascotVoiceManager {
-  private enabled: boolean = true;
-  private currentUtterance: SpeechSynthesisUtterance | null = null;
+  private enabled: boolean = false;
   private cachedVoice: SpeechSynthesisVoice | null = null;
 
   constructor() {
+    this.enabled = false;
     if (typeof window !== 'undefined') {
-      const stored = localStorage.getItem('chem_voice_enabled');
-      if (stored !== null) {
-        this.enabled = stored === 'true';
+      try {
+        localStorage.removeItem('chem_voice_enabled');
+      } catch {
+        // Ignore
       }
 
       // Preload available voices
@@ -185,7 +184,14 @@ class MascotVoiceManager {
       this.stop();
 
       const persona = MASCOT_PERSONAS[subject] || MASCOT_PERSONAS.chem;
-      const utterance = new SpeechSynthesisUtterance(text);
+      const UtteranceConstructor =
+        typeof SpeechSynthesisUtterance !== 'undefined'
+          ? SpeechSynthesisUtterance
+          : (globalThis as unknown as { SpeechSynthesisUtterance?: new (text: string) => unknown })
+              .SpeechSynthesisUtterance;
+      if (!UtteranceConstructor) return;
+
+      const utterance = new UtteranceConstructor(text) as SpeechSynthesisUtterance;
       utterance.lang = 'vi-VN';
       utterance.pitch = persona.pitch;
       utterance.rate = persona.rate;
@@ -195,19 +201,35 @@ class MascotVoiceManager {
         utterance.voice = voice;
       }
 
-      this.currentUtterance = utterance;
       window.speechSynthesis.speak(utterance);
     } catch {
-      // Graceful degradation if browser prevents speech playback
+      // Gracefully ignore speech synthesis errors
     }
   }
 
   /**
    * Mascot speaks encouraging praise upon correct answer.
+   * Utilizes non-repeating smart picker across 200+ unique voice lines.
    */
-  public speakCorrect(subject: MascotSubject = 'chem') {
+  public speakCorrect(subject: MascotSubject = 'chem'): string {
     const scripts = MASCOT_VOICE_SCRIPTS[subject]?.correct || MASCOT_VOICE_SCRIPTS.chem.correct;
-    this.speakPhrase(subject, getRandomItem(scripts));
+    const phrase = defaultVoicePicker.pick(`correct_${subject}`, scripts);
+    this.speakPhrase(subject, phrase);
+    return phrase;
+  }
+
+  /**
+   * Returns all correct praise lines for a given subject.
+   */
+  public getPraiseLines(subject: MascotSubject = 'chem'): readonly string[] {
+    return MASCOT_VOICE_SCRIPTS[subject]?.correct || MASCOT_VOICE_SCRIPTS.chem.correct;
+  }
+
+  /**
+   * Returns all correct praise lines across all subjects (>= 200 lines).
+   */
+  public getAllPraiseLines(): readonly string[] {
+    return ALL_CORRECT_PRAISE_LINES;
   }
 
   /**

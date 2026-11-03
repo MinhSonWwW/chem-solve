@@ -1,6 +1,15 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { haptic } from './haptic';
-import { mascotVoice, MASCOT_PERSONAS, MASCOT_VOICE_SCRIPTS } from './mascotVoice';
+import {
+  mascotVoice,
+  MASCOT_PERSONAS,
+  MASCOT_VOICE_SCRIPTS,
+  CHEM_CORRECT_PRAISE_LINES,
+  BIO_CORRECT_PRAISE_LINES,
+  PHYSICS_CORRECT_PRAISE_LINES,
+  ALL_CORRECT_PRAISE_LINES,
+  defaultVoicePicker,
+} from './mascotVoice';
 
 describe('Milestone M14: Mobile Haptic & Mascot Voice Acting', () => {
   beforeEach(() => {
@@ -80,9 +89,69 @@ describe('Milestone M14: Mobile Haptic & Mascot Voice Acting', () => {
       });
     });
 
+    it('provides at least 200 distinct correct praise voice lines across subjects', () => {
+      const allLines = ALL_CORRECT_PRAISE_LINES;
+      expect(allLines.length).toBeGreaterThanOrEqual(200);
+
+      // Verify no duplicates across the entire corpus
+      const uniqueLines = new Set(allLines);
+      expect(uniqueLines.size).toBe(allLines.length);
+      expect(uniqueLines.size).toBeGreaterThanOrEqual(200);
+
+      // Verify each individual subject has extensive pools (>= 70 lines each)
+      expect(CHEM_CORRECT_PRAISE_LINES.length).toBeGreaterThanOrEqual(70);
+      expect(BIO_CORRECT_PRAISE_LINES.length).toBeGreaterThanOrEqual(70);
+      expect(PHYSICS_CORRECT_PRAISE_LINES.length).toBeGreaterThanOrEqual(70);
+
+      // Verify mascotVoice manager exposes them
+      expect(mascotVoice.getAllPraiseLines().length).toBeGreaterThanOrEqual(200);
+      expect(mascotVoice.getPraiseLines('chem')).toBe(CHEM_CORRECT_PRAISE_LINES);
+      expect(mascotVoice.getPraiseLines('bio')).toBe(BIO_CORRECT_PRAISE_LINES);
+      expect(mascotVoice.getPraiseLines('physics')).toBe(PHYSICS_CORRECT_PRAISE_LINES);
+    });
+
+    it('features authentic subject-tailored pedagogical terminology for THCS', () => {
+      // Chemistry: reactions, mole, acids, bases, precipitates, conservation
+      const chemSample = CHEM_CORRECT_PRAISE_LINES.join(' ');
+      expect(chemSample).toMatch(/phản ứng|mol|axit|bazơ|kết tủa|khối lượng|electron/i);
+
+      // Biology: cells, DNA, photosynthesis, respiration, ecosystems, genetics
+      const bioSample = BIO_CORRECT_PRAISE_LINES.join(' ');
+      expect(bioSample).toMatch(/tế bào|quang hợp|ADN|Men-đen|hệ sinh thái|tuần hoàn/i);
+
+      // Physics: energy, Ohm law, circuit, velocity, force, optics
+      const physSample = PHYSICS_CORRECT_PRAISE_LINES.join(' ');
+      expect(physSample).toMatch(/năng lượng|định luật|mạch điện|vận tốc|thấu kính|áp suất/i);
+    });
+
+    it('picker rotates non-repeating praise lines without immediate duplicates', () => {
+      defaultVoicePicker.reset();
+      const testPool = ['Câu 1', 'Câu 2', 'Câu 3', 'Câu 4', 'Câu 5'];
+      const picked: string[] = [];
+
+      for (let i = 0; i < 5; i++) {
+        const item = defaultVoicePicker.pick('test_pool', testPool);
+        picked.push(item);
+      }
+
+      // First 5 picks of a 5-item pool with history must be distinct
+      const uniquePicked = new Set(picked);
+      expect(uniquePicked.size).toBe(5);
+    });
+
     it('invokes speech synthesis when available', () => {
       const mockSpeak = vi.fn();
       const mockCancel = vi.fn();
+      class MockUtterance {
+        text: string;
+        lang = '';
+        pitch = 1;
+        rate = 1;
+        constructor(text: string) {
+          this.text = text;
+        }
+      }
+      vi.stubGlobal('SpeechSynthesisUtterance', MockUtterance);
       vi.stubGlobal('speechSynthesis', {
         speak: mockSpeak,
         cancel: mockCancel,
