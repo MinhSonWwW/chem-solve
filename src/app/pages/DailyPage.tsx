@@ -110,17 +110,17 @@ export const DailyPage: React.FC = () => {
   return (
     <div className="space-y-5 pb-8">
       <div>
-        <h1 className="text-xl font-black text-slate-100 flex items-center gap-2">
-          <Calendar className="w-5 h-5 text-[#ff9600]" />
+        <h1 className="text-xl font-black text-[var(--text-primary)] flex items-center gap-2">
+          <Calendar className="w-5 h-5 text-[var(--warn-fg)]" />
           Thử thách hàng ngày
         </h1>
-        <p className="text-xs text-slate-400 mt-1 flex items-center gap-1.5 flex-wrap">
+        <p className="text-xs text-[var(--text-secondary)] mt-1 flex items-center gap-1.5 flex-wrap">
           Hoàn thành 5 câu mỗi ngày để nhận
-          <span className="inline-flex items-center gap-1 font-bold text-cyan-300">
+          <span className="inline-flex items-center gap-1 font-bold text-[var(--gold-fg)]">
             <CurrencyIcon type="xp" size="xs" /> +30 XP
           </span>
           và duy trì ngọn lửa chuỗi
-          <span className="inline-flex items-center gap-1 font-bold text-amber-400">
+          <span className="inline-flex items-center gap-1 font-bold text-[var(--warn-fg)]">
             <CurrencyIcon type="streak" size="xs" /> Streak
           </span>
         </p>
@@ -128,11 +128,11 @@ export const DailyPage: React.FC = () => {
 
       {/* Main Challenge Card or Active Game Card */}
       {!isPlaying ? (
-        <div className="p-5 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] space-y-4">
+        <div className="p-5 rounded-3xl bg-[var(--bg-surface)] border border-[var(--border)] space-y-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <Calendar className="w-4 h-4 text-[#ff9600]" />
-              <span className="text-xs font-black text-slate-200">
+              <Calendar className="w-4 h-4 text-[var(--warn-fg)]" />
+              <span className="text-xs font-black text-[var(--text-primary)]">
                 {todayStr} · 5 câu hỏi
               </span>
             </div>
@@ -146,12 +146,12 @@ export const DailyPage: React.FC = () => {
               className="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-lg shrink-0 select-none pointer-events-none"
             />
             <div className="space-y-1">
-              <h2 className="text-base font-extrabold text-slate-100 leading-snug">
+              <h2 className="text-base font-extrabold text-[var(--text-primary)] leading-snug">
                 Chủ đề hôm nay: Thử thách {activeSubject === 'physics' ? 'Vật lý' : activeSubject === 'bio' ? 'Sinh học' : 'Hóa học'} tổng hợp
               </h2>
-              <div className="flex items-center gap-1.5 text-xs text-slate-400">
+              <div className="flex items-center gap-1.5 text-xs text-[var(--text-secondary)]">
                 <span>Phần thưởng:</span>
-                <span className="text-[#38bdf8] font-bold flex items-center gap-1">
+                <span className="text-[var(--gold-fg)] font-bold flex items-center gap-1">
                   <CurrencyIcon type="xp" size="xs" /> +30 XP
                 </span>
                 <span>& thắp sáng ngọn lửa Streak</span>
@@ -160,8 +160,8 @@ export const DailyPage: React.FC = () => {
           </div>
 
           {alreadyCompleted ? (
-            <div className="p-3.5 rounded-2xl bg-[#00cd9c]/10 border-2 border-[#00cd9c]/40 flex items-center justify-between">
-              <div className="flex items-center gap-2 text-[#00cd9c] font-bold text-xs">
+            <div className="p-3.5 rounded-2xl bg-[var(--ok-tint)] border border-[var(--ok-edge)] flex items-center justify-between">
+              <div className="flex items-center gap-2 text-[var(--ok-fg)] font-bold text-xs">
                 <CheckCircle2 className="w-4 h-4" />
                 <span>Bạn đã hoàn thành thử thách hôm nay! (+30 XP)</span>
               </div>
@@ -171,7 +171,7 @@ export const DailyPage: React.FC = () => {
             </div>
           ) : (
             <Button
-              variant="accent"
+              variant="primary"
               size="lg"
               fullWidth
               onClick={startDaily}
@@ -185,27 +185,27 @@ export const DailyPage: React.FC = () => {
         </div>
       ) : (
         /* In-session 5 Questions Flow */
-        <div className="p-5 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] space-y-4">
+        <div className="p-5 rounded-3xl bg-[var(--bg-surface)] border border-[var(--border)] space-y-4">
           <div className="flex items-center justify-between text-xs">
-            <span className="font-bold text-[#38bdf8]">
+            <span className="font-bold text-[var(--subject-fg)]">
               Câu {currentQIndex + 1} / 5
             </span>
-            <span className="text-slate-400">
+            <span className="text-[var(--text-secondary)]">
               Đúng: {score}/{currentQIndex + (selectedAns !== null ? 1 : 0)}
             </span>
           </div>
 
           {/* Progress bar */}
-          <div className="w-full bg-[#131f24] h-2.5 rounded-full overflow-hidden border border-[#2e4756]">
+          <div className="w-full bg-[var(--bg-surface-2)] h-2.5 rounded-full overflow-hidden border border-[var(--border)]">
             <div
-              className="bg-gradient-to-r from-cyan-500 to-blue-500 h-full transition-all duration-300 rounded-full"
+              className="bg-[var(--subject-fill)] h-full transition-all duration-300 rounded-full"
               style={{ width: `${((currentQIndex + 1) / 5) * 100}%` }}
             />
           </div>
 
           {/* Question card */}
-          <div className="p-4 rounded-2xl bg-[#131f24] border-2 border-[#2e4756] min-h-[120px] flex flex-col justify-between">
-            <p className="text-sm sm:text-base font-bold text-slate-100 leading-relaxed">
+          <div className="p-4 rounded-2xl bg-[var(--bg-surface-2)] border border-[var(--border)] min-h-[120px] flex flex-col justify-between">
+            <p className="text-sm sm:text-base font-bold text-[var(--text-primary)] leading-relaxed">
               {currentQ.statement}
             </p>
 
@@ -215,8 +215,8 @@ export const DailyPage: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 className={`mt-2 p-2.5 rounded-xl text-xs font-semibold ${
                   selectedAns === currentQ.isTrue
-                    ? 'text-[#00cd9c] bg-[#00cd9c]/15 border border-[#00cd9c]/30'
-                    : 'text-[#ff4b4b] bg-[#ff4b4b]/15 border border-[#ff4b4b]/30'
+                    ? 'text-[var(--ok-fg)] bg-[var(--ok-tint)] border border-[var(--ok-edge)]'
+                    : 'text-[var(--err-fg)] bg-[var(--err-tint)] border border-[var(--err-edge)]'
                 }`}
               >
                 {selectedAns === currentQ.isTrue ? '✓ Đúng! ' : '✗ Chưa đúng! '}
@@ -231,7 +231,7 @@ export const DailyPage: React.FC = () => {
               whileTap={{ scale: 0.96, y: 3 }}
               disabled={selectedAns !== null}
               onClick={() => handleAnswer(true)}
-              className="py-3.5 rounded-2xl border-2 border-[#00cd9c] bg-gradient-to-b from-[#00cd9c]/25 to-[#00cd9c]/10 text-[#00cd9c] font-black flex items-center justify-center gap-2 shadow-[0_4px_0_0_#007a5d] active:shadow-none hover:bg-[#00cd9c]/30 transition disabled:opacity-40 cursor-pointer text-base"
+              className="py-3.5 rounded-2xl border border-[var(--ok-edge)] bg-[var(--ok-fill)] text-white font-black flex items-center justify-center gap-2 shadow-[0_4px_0_0_var(--ok-edge)] active:shadow-none hover:opacity-95 transition disabled:opacity-40 cursor-pointer text-base"
             >
               <Check className="w-5 h-5 stroke-[3]" /> ĐÚNG
             </motion.button>
@@ -239,7 +239,7 @@ export const DailyPage: React.FC = () => {
               whileTap={{ scale: 0.96, y: 3 }}
               disabled={selectedAns !== null}
               onClick={() => handleAnswer(false)}
-              className="py-3.5 rounded-2xl border-2 border-[#ff4b4b] bg-gradient-to-b from-[#ff4b4b]/25 to-[#ff4b4b]/10 text-[#ff4b4b] font-black flex items-center justify-center gap-2 shadow-[0_4px_0_0_#b32525] active:shadow-none hover:bg-[#ff4b4b]/30 transition disabled:opacity-40 cursor-pointer text-base"
+              className="py-3.5 rounded-2xl border border-[var(--err-edge)] bg-[var(--err-fill)] text-white font-black flex items-center justify-center gap-2 shadow-[0_4px_0_0_var(--err-edge)] active:shadow-none hover:opacity-95 transition disabled:opacity-40 cursor-pointer text-base"
             >
               <X className="w-5 h-5 stroke-[3]" /> SAI
             </motion.button>
@@ -252,17 +252,17 @@ export const DailyPage: React.FC = () => {
         <motion.div
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          className="p-5 rounded-3xl bg-[#18272f] border-2 border-[#ffc800] shadow-[0_6px_0_0_#b38b00] text-center space-y-3"
+          className="p-5 rounded-3xl bg-[var(--bg-surface)] border border-[var(--gold-edge)] shadow-[var(--shadow-modal)] text-center space-y-3"
         >
           <div className="flex justify-center">
             <CurrencyIcon type="trophy" size="lg" className="animate-bounce" />
           </div>
-          <h2 className="text-lg font-black text-slate-100">
+          <h2 className="text-lg font-black text-[var(--text-primary)]">
             Hoàn thành Thử thách Hôm nay!
           </h2>
-          <p className="text-xs text-slate-300">
-            Bạn đạt <span className="text-[#38bdf8] font-black">{score}/5 câu đúng</span>. Nhận ngay{' '}
-            <span className="text-[#ffc800] font-black inline-flex items-center gap-1">
+          <p className="text-xs text-[var(--text-secondary)]">
+            Bạn đạt <span className="text-[var(--subject-fg)] font-black">{score}/5 câu đúng</span>. Nhận ngay{' '}
+            <span className="text-[var(--gold-fg)] font-black inline-flex items-center gap-1">
               <CurrencyIcon type="xp" size="xs" /> +30 XP
             </span>{' '}
             và kéo dài chuỗi streak!
@@ -277,7 +277,6 @@ export const DailyPage: React.FC = () => {
                 const activeGrade = typeof window !== 'undefined' ? localStorage.getItem('chem_active_grade') || '8' : '8';
                 navigate(`/learn/${activeGrade}`);
               }}
-              className="font-black bg-gradient-to-r from-amber-500 to-yellow-400 text-slate-950 shadow-[0_4px_0_0_#b45309]"
             >
               TIẾP TỤC HỌC TẬP
             </Button>
@@ -287,7 +286,7 @@ export const DailyPage: React.FC = () => {
 
       {/* Previous Streak Tracker */}
       <div className="space-y-2">
-        <h2 className="text-xs font-black uppercase tracking-wider text-slate-400">
+        <h2 className="text-xs font-black uppercase tracking-wider text-[var(--text-tertiary)]">
           Lịch sử tuần này
         </h2>
         <div className="flex justify-between gap-2">
@@ -296,16 +295,16 @@ export const DailyPage: React.FC = () => {
               <div
                 className={`w-9 h-9 rounded-full flex items-center justify-center font-bold border-2 ${
                   i < 5
-                    ? 'bg-[#ff9600] border-[#ff9600] text-slate-950 shadow-[0_3px_0_0_#b36b00]'
+                    ? 'bg-[var(--warn-fill)] border-[var(--warn-edge)] text-[var(--on-ink)] shadow-[0_3px_0_0_var(--warn-edge)]'
                     : i === 5
-                    ? 'bg-[#0ea5e9] border-[#0ea5e9] text-slate-950 shadow-[0_3px_0_0_#0284c7] ring-2 ring-[#38bdf8]/40'
-                    : 'bg-[#18272f] border-[#2e4756] text-slate-600'
+                    ? 'bg-[var(--subject-fill)] border-[var(--subject-edge)] text-white shadow-[0_3px_0_0_var(--subject-edge)] ring-2 ring-[var(--subject-tint)]'
+                    : 'bg-[var(--bg-surface-2)] border-[var(--border)] text-[var(--text-tertiary)]'
                 }`}
               >
-                {i < 6 ? <Flame className="w-4 h-4 fill-slate-950 text-slate-950" /> : <span className="text-xs opacity-40">○</span>}
+                {i < 6 ? <Flame className="w-4 h-4 fill-current text-current" /> : <span className="text-xs opacity-40">○</span>}
               </div>
               <span
-                className={`text-[10px] font-bold ${i < 6 ? 'text-[#ff9600]' : 'text-slate-600'}`}
+                className={`text-[10px] font-bold ${i < 6 ? 'text-[var(--warn-fg)]' : 'text-[var(--text-tertiary)]'}`}
               >
                 {day}
               </span>

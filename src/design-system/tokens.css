@@ -1,123 +1,304 @@
-/* Chem-Solve Design Tokens (Playful Tactile Lab - Duolingo & Brilliant Game Feel) */
+/* ==========================================================================
+   STEM-Solve Design Tokens v2 (stem-solve-colors-v2.md)
+   Single source of truth for color semantics and tactile game feel.
+   Contrast ratios strictly calculated via WCAG 2.x standards.
+   ========================================================================== */
 
-:root {
-  /* Brand Chemistry Colors */
-  --color-primary: #0ea5e9;
-  --color-primary-dark: #0284c7;
-  --color-primary-light: #38bdf8;
+:root,
+:root[data-theme="light"],
+html.light {
+  /* Neutrals - Light Mode */
+  --bg-canvas: #EEF2F7;
+  --bg-surface: #FAFBFD;
+  --bg-surface-2: #E6ECF3;
+  --border: #D3DBE5;
+  --border-strong: #B9C5D3;
+  --edge-neutral: #C2CCD9;
+  --text-primary: #0F1B2D;
+  --text-secondary: #44546A;
+  --text-tertiary: #5F6E84;
+  --on-ink: #1A1205;
 
-  --color-success: #58cc02;
-  --color-success-dark: #46a302;
-  --color-success-light: #86efac;
+  /* Accents - 6 variants per role */
+  --chem-fill: #2A6FDB;  --chem-edge: #1D55AD;  --chem-fg: #1F5BBF;  --chem-tint: rgb(42 111 219 / 0.12);
+  --phy-fill:  #6B4DE0;  --phy-edge:  #5139B4;  --phy-fg:  #5538C4;  --phy-tint:  rgb(107 77 224 / 0.12);
+  --bio-fill:  #0A8272;  --bio-edge:  #075F54;  --bio-fg:  #0A6F62;  --bio-tint:  rgb(10 130 114 / 0.12);
+  --ok-fill:   #258540;  --ok-edge:   #1B6B30;  --ok-fg:   #1B6B30;  --ok-tint:   rgb(37 133 64 / 0.12);
+  --err-fill:  #D23636;  --err-edge:  #A82A2A;  --err-fg:  #B52E2E;  --err-tint:  rgb(210 54 54 / 0.12);
+  --warn-fill: #E8710A;  --warn-edge: #B35500;  --warn-fg: #A64D00;  --warn-tint: rgb(232 113 10 / 0.12);
+  --gold-fill: #F2B705;  --gold-edge: #B88A00;  --gold-fg: #8A6100;  --gold-tint: rgb(242 183 5 / 0.14);
+  --gem-fill:  #CC3A78;  --gem-edge:  #9E2C5B;  --gem-fg:  #B02E66;  --gem-tint:  rgb(204 58 120 / 0.12);
+  --slate-fill:#5B6B82;  --slate-edge:#3F4D61;  --slate-fg:#44546A;  --slate-tint:rgb(91 107 130 / 0.12);
 
-  --color-danger: #ff4b4b;
-  --color-danger-dark: #ea2b2b;
-  --color-danger-light: #fca5a5;
+  --shadow-modal: 0 8px 24px rgb(15 27 45 / 0.10);
 
-  --color-accent: #ff9600;
-  --color-accent-dark: #e07a00;
-  --color-accent-light: #fde68a;
+  /* Lab Namespace (Phòng thí nghiệm ảo - mô phỏng hiện tượng, không dùng cho UI) */
+  --lab-acid-red: #EF4444;
+  --lab-base-blue: #2563EB;
+  --lab-cuso4: #0284C7;
+  --lab-gas: rgb(203 213 225 / 0.70);
+  --lab-precipitate: #F8FAFC;
+  --lab-wire: #F59E0B;
+  --lab-bulb: #FEF08A;
+  --lab-chloroplast: #10B981;
+  --lab-nucleus-stain: #6366F1;
 
-  --color-secondary: #20333d;
-  --color-secondary-dark: #131f24;
-  --color-secondary-light: #2e4756;
+  /* Backward Compatibility & Shorthand Aliases */
+  --color-background: var(--bg-canvas);
+  --color-surface: var(--bg-surface);
+  --color-surface-card: var(--bg-surface);
+  --color-border: var(--border);
+  --color-primary: var(--chem-fill);
+  --color-primary-dark: var(--chem-edge);
+  --color-primary-light: var(--chem-tint);
+  --color-success: var(--ok-fill);
+  --color-success-dark: var(--ok-edge);
+  --color-danger: var(--err-fill);
+  --color-danger-dark: var(--err-edge);
+  --color-accent: var(--gold-fill);
+  --color-accent-dark: var(--gold-edge);
+  --color-gem: var(--gem-fill);
+  --color-gem-dark: var(--gem-edge);
+  --color-secondary: var(--bg-surface-2);
+  --color-secondary-dark: var(--bg-canvas);
+  --color-secondary-light: var(--border);
 
-  --color-gem: #00cd9c;
-  --color-gem-dark: #00a880;
-  --color-gem-light: #5eead4;
+  /* Shorthand Accents & Art Tokens */
+  --chem: var(--chem-fill);
+  --chem-shade: var(--chem-edge);
+  --chem-soft: var(--chem-tint);
+  --chem-subtle: var(--chem-tint);
+  --chem-hover: var(--chem-fill);
+  --on-chem: #ffffff;
 
-  /* Surfaces & Backgrounds - Deep Obsidian Lab Ink */
-  --color-background: #131f24;
-  --color-surface: #18272f;
-  --color-surface-card: #20333d;
-  --color-border: #2e4756;
+  --phy: var(--phy-fill);
+  --phy-shade: var(--phy-edge);
+  --phy-soft: var(--phy-tint);
+  --phy-subtle: var(--phy-tint);
+  --on-phy: #ffffff;
 
-  /* 3D Chunky Shadow Sizes */
-  --shadow-chunky-sm: 0 3px 0 0;
-  --shadow-chunky-md: 0 4px 0 0;
-  --shadow-chunky-lg: 0 6px 0 0;
+  --bio: var(--bio-fill);
+  --bio-shade: var(--bio-edge);
+  --bio-soft: var(--bio-tint);
+  --bio-subtle: var(--bio-tint);
+  --bio-hover: var(--bio-fill);
+  --on-bio: #ffffff;
 
-  /* Border Radii */
-  --radius-sm: 0.5rem;
-  --radius-md: 0.75rem;
-  --radius-lg: 1rem;
-  --radius-xl: 1.25rem;
-  --radius-2xl: 1.5rem;
-  --radius-full: 9999px;
+  --ok: var(--ok-fill);
+  --ok-shade: var(--ok-edge);
+  --ok-soft: var(--ok-tint);
+  --ok-subtle: var(--ok-tint);
+  --ok-hover: var(--ok-fill);
+  --on-ok: #ffffff;
 
-  /* Animation Timings */
-  --motion-fast: 150ms;
-  --motion-normal: 250ms;
-  --motion-bouncy: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --err: var(--err-fill);
+  --err-shade: var(--err-edge);
+  --err-soft: var(--err-tint);
+  --err-subtle: var(--err-tint);
+  --err-hover: var(--err-fill);
+  --on-err: #ffffff;
+  --heart: var(--err-fill);
+  --heart-shade: var(--err-edge);
+
+  --warn: var(--warn-fill);
+  --warn-shade: var(--warn-edge);
+  --warn-soft: var(--warn-tint);
+  --warn-subtle: var(--warn-tint);
+  --warn-hover: var(--warn-fill);
+
+  --gold: var(--gold-fill);
+  --gold-shade: var(--gold-edge);
+  --gold-soft: var(--gold-tint);
+  --gold-subtle: var(--gold-tint);
+
+  --gem: var(--gem-fill);
+  --gems: var(--gem-fill);
+  --gem-shade: var(--gem-edge);
+  --gems-shade: var(--gem-edge);
+  --gem-soft: var(--gem-tint);
+  --gems-soft: var(--gem-tint);
+
+  --slate: var(--slate-fill);
+  --slate-shade: var(--slate-edge);
+  --slate-soft: var(--slate-tint);
+  --slate-subtle: var(--slate-tint);
+  --review: var(--slate-fill);
+
+  /* Surface & Typography Aliases */
+  --bg-muted: var(--bg-surface-2);
+  --bg-elevated: var(--bg-surface-2);
+  --fg-default: var(--text-primary);
+  --fg-muted: var(--text-secondary);
+  --fg-subtle: var(--text-tertiary);
+  --text-muted: var(--text-tertiary);
+
+  /* Shadows for Modal & Sub-elements */
+  --sub-shadow: 0 8px 24px rgb(15 27 45 / 0.12);
+  --sub-icon-shadow: 0 2px 8px rgb(15 27 45 / 0.10);
+
+  /* Ink for hand-drawn art, outlines & icons */
+  --ink: #101A1F;
+  --ink-muted: #4A5B68;
+  --ink-secondary: #2C3E4C;
 }
 
-/* 3D Chunky Button Utility Classes */
+:root[data-theme="dark"],
+html.dark,
+body.dark {
+  /* Neutrals - Dark Mode */
+  --bg-canvas: #131F24;
+  --bg-surface: #18272F;
+  --bg-surface-2: #20333D;
+  --border: #2E4756;
+  --border-strong: #3D5A6C;
+  --edge-neutral: #131F24;
+  --text-primary: #F5F8FA;
+  --text-secondary: #C2CEDA;
+  --text-tertiary: #8FA1B3;
+  --on-ink: #1A1205;
+
+  /* Explicit Accents for Dark Mode */
+  --chem-fill: #2A6FDB;  --chem-edge: #1D55AD;  --chem-fg: #6AA3FF;  --chem-tint: rgb(42 111 219 / 0.18);
+  --phy-fill:  #6B4DE0;  --phy-edge:  #5139B4;  --phy-fg:  #A593FF;  --phy-tint:  rgb(107 77 224 / 0.18);
+  --bio-fill:  #0A8272;  --bio-edge:  #075F54;  --bio-fg:  #3CCFB9;  --bio-tint:  rgb(10 130 114 / 0.18);
+  --ok-fill:   #258540;  --ok-edge:   #1B6B30;  --ok-fg:   #5CD07A;  --ok-tint:   rgb(37 133 64 / 0.18);
+  --err-fill:  #D23636;  --err-edge:  #A82A2A;  --err-fg:  #FF7B7B;  --err-tint:  rgb(210 54 54 / 0.18);
+  --warn-fill: #E8710A;  --warn-edge: #B35500;  --warn-fg: #FFA24D;  --warn-tint: rgb(232 113 10 / 0.18);
+  --gold-fill: #F2B705;  --gold-edge: #B88A00;  --gold-fg: #FFD34D;  --gold-tint: rgb(242 183 5 / 0.18);
+  --gem-fill:  #CC3A78;  --gem-edge:  #9E2C5B;  --gem-fg:  #FF7FB1;  --gem-tint:  rgb(204 58 120 / 0.18);
+  --slate-fill:#5B6B82;  --slate-edge:#3F4D61;  --slate-fg:#A9B7C8;  --slate-tint:rgb(91 107 130 / 0.22);
+
+  --shadow-modal: 0 8px 24px rgb(0 0 0 / 0.40);
+  --sub-shadow: 0 8px 24px rgb(0 0 0 / 0.40);
+  --sub-icon-shadow: 0 2px 8px rgb(0 0 0 / 0.30);
+
+  /* Ink for hand-drawn art, outlines & icons in dark mode */
+  --ink: #0C151A;
+  --ink-muted: #64748B;
+  --ink-secondary: #334155;
+
+  /* Backward Compatibility Aliases for Legacy CSS */
+  --color-background: var(--bg-canvas);
+  --color-surface: var(--bg-surface);
+  --color-surface-card: var(--bg-surface-2);
+  --color-border: var(--border);
+}
+
+/* Default Fallback (Default to Dark Mode if no data-theme explicitly set) */
+:root:not([data-theme="light"]):not([data-theme="dark"]) {
+  --bg-canvas: #131F24;
+  --bg-surface: #18272F;
+  --bg-surface-2: #20333D;
+  --border: #2E4756;
+  --border-strong: #3D5A6C;
+  --edge-neutral: #131F24;
+  --text-primary: #F5F8FA;
+  --text-secondary: #C2CEDA;
+  --text-tertiary: #8FA1B3;
+  --on-ink: #1A1205;
+
+  --chem-fill: #2A6FDB;  --chem-edge: #1D55AD;  --chem-fg: #6AA3FF;  --chem-tint: rgb(42 111 219 / 0.18);
+  --phy-fill:  #6B4DE0;  --phy-edge:  #5139B4;  --phy-fg:  #A593FF;  --phy-tint:  rgb(107 77 224 / 0.18);
+  --bio-fill:  #0A8272;  --bio-edge:  #075F54;  --bio-fg:  #3CCFB9;  --bio-tint:  rgb(10 130 114 / 0.18);
+  --ok-fill:   #258540;  --ok-edge:   #1B6B30;  --ok-fg:   #5CD07A;  --ok-tint:   rgb(37 133 64 / 0.18);
+  --err-fill:  #D23636;  --err-edge:  #A82A2A;  --err-fg:  #FF7B7B;  --err-tint:  rgb(210 54 54 / 0.18);
+  --warn-fill: #E8710A;  --warn-edge: #B35500;  --warn-fg: #FFA24D;  --warn-tint: rgb(232 113 10 / 0.18);
+  --gold-fill: #F2B705;  --gold-edge: #B88A00;  --gold-fg: #FFD34D;  --gold-tint: rgb(242 183 5 / 0.18);
+  --gem-fill:  #CC3A78;  --gem-edge:  #9E2C5B;  --gem-fg:  #FF7FB1;  --gem-tint:  rgb(204 58 120 / 0.18);
+  --slate-fill:#5B6B82;  --slate-edge:#3F4D61;  --slate-fg:#A9B7C8;  --slate-tint:rgb(91 107 130 / 0.22);
+
+  --shadow-modal: 0 8px 24px rgb(0 0 0 / 0.40);
+  --sub-shadow: 0 8px 24px rgb(0 0 0 / 0.40);
+  --sub-icon-shadow: 0 2px 8px rgb(0 0 0 / 0.30);
+
+  /* Ink for hand-drawn art, outlines & icons in dark mode */
+  --ink: #0C151A;
+  --ink-muted: #64748B;
+  --ink-secondary: #334155;
+
+  --lab-acid-red: #EF4444;
+  --lab-base-blue: #2563EB;
+  --lab-cuso4: #0284C7;
+  --lab-gas: rgb(203 213 225 / 0.70);
+  --lab-precipitate: #F8FAFC;
+  --lab-wire: #F59E0B;
+  --lab-bulb: #FEF08A;
+  --lab-chloroplast: #10B981;
+  --lab-nucleus-stain: #6366F1;
+}
+
+/* ─── Subject Active Scoping ─── */
+/* Gán ở root hoặc layout, mọi component con tự kế thừa --subject-* */
+:root,
+[data-subject="chem"] {
+  --subject-fill: var(--chem-fill);
+  --subject-edge: var(--chem-edge);
+  --subject-fg: var(--chem-fg);
+  --subject-tint: var(--chem-tint);
+}
+[data-subject="physics"] {
+  --subject-fill: var(--phy-fill);
+  --subject-edge: var(--phy-edge);
+  --subject-fg: var(--phy-fg);
+  --subject-tint: var(--phy-tint);
+}
+[data-subject="bio"] {
+  --subject-fill: var(--bio-fill);
+  --subject-edge: var(--bio-edge);
+  --subject-fg: var(--bio-fg);
+  --subject-tint: var(--bio-tint);
+}
+
+/* ─── Chunky 3D Tactile Buttons (Chỉ nút và node) ─── */
+.btn-chunky {
+  background-color: var(--btn-fill);
+  color: #ffffff;
+  box-shadow: 0 4px 0 0 var(--btn-edge);
+  transition: transform 0.08s ease-out, box-shadow 0.08s ease-out;
+}
+.btn-chunky:active:not(:disabled) {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 0 var(--btn-edge);
+}
+
 .btn-chunky-primary {
-  background-color: var(--color-primary);
-  box-shadow: 0 4px 0 0 var(--color-primary-dark);
+  --btn-fill: var(--subject-fill);
+  --btn-edge: var(--subject-edge);
   color: #ffffff;
 }
-.btn-chunky-primary:active:not(:disabled) {
-  transform: translateY(4px);
-  box-shadow: 0 0 0 0 transparent;
-}
-
-.btn-chunky-success {
-  background-color: var(--color-success);
-  box-shadow: 0 4px 0 0 var(--color-success-dark);
+.btn-chunky-ok {
+  --btn-fill: var(--ok-fill);
+  --btn-edge: var(--ok-edge);
   color: #ffffff;
 }
-.btn-chunky-success:active:not(:disabled) {
-  transform: translateY(4px);
-  box-shadow: 0 0 0 0 transparent;
-}
-
 .btn-chunky-danger {
-  background-color: var(--color-danger);
-  box-shadow: 0 4px 0 0 var(--color-danger-dark);
+  --btn-fill: var(--err-fill);
+  --btn-edge: var(--err-edge);
   color: #ffffff;
 }
-.btn-chunky-danger:active:not(:disabled) {
-  transform: translateY(4px);
-  box-shadow: 0 0 0 0 transparent;
+.btn-chunky-warn {
+  --btn-fill: var(--warn-fill);
+  --btn-edge: var(--warn-edge);
+  color: var(--on-ink);
 }
-
-.btn-chunky-accent {
-  background-color: var(--color-accent);
-  box-shadow: 0 4px 0 0 var(--color-accent-dark);
-  color: #ffffff;
+.btn-chunky-gold {
+  --btn-fill: var(--gold-fill);
+  --btn-edge: var(--gold-edge);
+  color: var(--on-ink);
 }
-.btn-chunky-accent:active:not(:disabled) {
-  transform: translateY(4px);
-  box-shadow: 0 0 0 0 transparent;
-}
-
-.btn-chunky-secondary {
-  background-color: var(--color-secondary);
-  box-shadow: 0 4px 0 0 var(--color-secondary-dark);
-  color: #ffffff;
-}
-.btn-chunky-secondary:active:not(:disabled) {
-  transform: translateY(4px);
-  box-shadow: 0 0 0 0 transparent;
-}
-
 .btn-chunky-gem {
-  background-color: var(--color-gem);
-  box-shadow: 0 4px 0 0 var(--color-gem-dark);
+  --btn-fill: var(--gem-fill);
+  --btn-edge: var(--gem-edge);
   color: #ffffff;
 }
-.btn-chunky-gem:active:not(:disabled) {
-  transform: translateY(4px);
-  box-shadow: 0 0 0 0 transparent;
+.btn-chunky-secondary {
+  --btn-fill: var(--bg-surface-2);
+  --btn-edge: var(--edge-neutral);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
 }
-
-.btn-chunky-surface {
-  background-color: var(--color-surface-card);
-  box-shadow: 0 4px 0 0 var(--color-border);
-  color: #f1f5f9;
-}
-.btn-chunky-surface:active:not(:disabled) {
-  transform: translateY(4px);
-  box-shadow: 0 0 0 0 transparent;
+.btn-chunky-disabled {
+  --btn-fill: var(--bg-surface-2);
+  --btn-edge: var(--border);
+  color: var(--text-tertiary);
 }

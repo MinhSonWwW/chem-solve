@@ -12,17 +12,17 @@ export const Card = React.forwardRef<HTMLDivElement, CardProps>(
       <div
         ref={ref}
         className={cn(
-          'rounded-3xl p-5 transition-all',
+          'rounded-2xl p-5 transition-all',
           variant === 'default' &&
-            'bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24]',
+            'bg-[var(--bg-surface)] border border-[var(--border)]',
           variant === 'erlenmeyer' &&
-            'bg-[#18272f] border-2 border-[#2e4756] shadow-[0_6px_0_0_#131f24] relative overflow-hidden',
+            'bg-[var(--bg-surface)] border border-[var(--border)] relative overflow-hidden',
           variant === 'interactive' &&
-            'bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] hover:border-[#0ea5e9] cursor-pointer active:translate-y-1 active:shadow-none',
+            'bg-[var(--bg-surface)] border border-[var(--border)] hover:border-[var(--subject-fill)] cursor-pointer transition-colors',
           variant === 'outline' &&
-            'bg-[#131f24]/80 border-2 border-[#20333d]',
+            'bg-transparent border border-[var(--border)]',
           selected &&
-            'border-[#0ea5e9] bg-[#0ea5e9]/15 shadow-[0_4px_0_0_#0284c7] ring-1 ring-[#0ea5e9]/50',
+            'border-2 border-[var(--subject-fill)] bg-[var(--subject-tint)]',
           className
         )}
         {...props}

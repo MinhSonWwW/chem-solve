@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { AlertTriangle, Lightbulb, Zap, Sparkles } from 'lucide-react';
 import { Mascot } from './Mascot';
 import { FeedbackBadge } from './FeedbackBadge';
+import { MathText } from './MathText';
 import { ReactionVisualizer, type ReactionEffectType } from './ReactionVisualizer';
 import { sound } from '@/lib/audio';
 import { haptic } from '@/lib/haptic';
@@ -35,19 +36,8 @@ export interface FeedbackSheetProps {
 // Helper to render markdown **bold** text as styled strong elements
 function renderFormattedText(text: string) {
   if (!text) return null;
-  const parts = text.split(/(\*\*.*?\*\*)/g);
-  return parts.map((part, index) => {
-    if (part.startsWith('**') && part.endsWith('**')) {
-      return (
-        <strong key={index} className="font-black text-white px-0.5">
-          {part.slice(2, -2)}
-        </strong>
-      );
-    }
-    return <span key={index}>{part}</span>;
-  });
+  return <MathText text={text} />;
 }
-
 export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
   status,
   solutionText,
@@ -63,57 +53,55 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
 }) => {
   if (status === 'idle') return null;
 
-  const isPhysicsSheet = Boolean(physicsEffect);
-
   const config = {
     correct: {
-      sheetBorder: isPhysicsSheet ? 'border-t-2 border-[#f59e0b]' : 'border-t-2 border-[#00cd9c]',
-      topGlow: isPhysicsSheet ? 'bg-[#f59e0b]' : 'bg-[#00cd9c]',
+      sheetBg: 'bg-[var(--ok-tint)]',
+      sheetBorder: 'border-t-2 border-[var(--ok-fill)]',
+      topGlow: 'bg-[var(--ok-fill)]',
       badgeType: 'check' as const,
-      titleColor: isPhysicsSheet ? 'text-[#f59e0b]' : 'text-[#00cd9c]',
+      titleColor: 'text-[var(--ok-fg)]',
       title: 'CHÍNH XÁC!',
-      subtitle: isPhysicsSheet
-        ? 'Bạn đã làm chủ định luật vật lý này (+10 XP)'
-        : 'Bạn đã nắm chắc kiến thức này (+10 XP)',
+      subtitle: 'Bạn đã nắm chắc kiến thức phần này (+10 XP)',
       mascot: 'celebrating' as const,
-      btnStyle: isPhysicsSheet
-        ? 'bg-[#f59e0b] hover:bg-[#fbbf24] text-slate-950 border-b-4 border-[#b45309] active:translate-y-1 active:border-b-0'
-        : 'bg-[#00cd9c] hover:bg-[#00e6aa] text-[#131f24] border-b-4 border-[#009b76] active:translate-y-1 active:border-b-0',
+      btnStyle: 'bg-[var(--ok-fill)] hover:opacity-95 text-white shadow-[0_4px_0_0_var(--ok-edge)] active:translate-y-1 active:shadow-none',
       btnLabel: 'TIẾP TỤC',
     },
     wrong: {
-      sheetBorder: 'border-t-2 border-[#ff4b4b]',
-      topGlow: 'bg-[#ff4b4b]',
+      sheetBg: 'bg-[var(--err-tint)]',
+      sheetBorder: 'border-t-2 border-[var(--err-fill)]',
+      topGlow: 'bg-[var(--err-fill)]',
       badgeType: 'cross' as const,
-      titleColor: 'text-[#ff4b4b]',
+      titleColor: 'text-[var(--err-fg)]',
       title: 'CHƯA CHÍNH XÁC!',
       subtitle: attemptsLeft
         ? `Còn ${attemptsLeft} lượt thử · Hãy đọc gợi ý bên dưới!`
         : 'Đọc kỹ gợi ý bên dưới để chuẩn bị làm lại ở cuối bài nhé!',
       mascot: 'wrong' as const,
-      btnStyle: 'bg-[#ff4b4b] hover:bg-[#ff5964] text-white border-b-4 border-[#c92a2a] active:translate-y-1 active:border-b-0',
+      btnStyle: 'bg-[var(--err-fill)] hover:opacity-95 text-white shadow-[0_4px_0_0_var(--err-edge)] active:translate-y-1 active:shadow-none',
       btnLabel: attemptsLeft && attemptsLeft > 0 ? 'THỬ LẠI' : 'ĐÃ HIỂU',
     },
     partial: {
-      sheetBorder: 'border-t-2 border-[#ff9600]',
-      topGlow: 'bg-[#ff9600]',
+      sheetBg: 'bg-[var(--warn-tint)]',
+      sheetBorder: 'border-t-2 border-[var(--warn-fill)]',
+      topGlow: 'bg-[var(--warn-fill)]',
       badgeType: 'warning' as const,
-      titleColor: 'text-[#ff9600]',
+      titleColor: 'text-[var(--warn-fg)]',
       title: 'GẦN ĐÚNG RỒI!',
-      subtitle: 'Hãy chỉnh sửa lại cho chính xác hơn',
+      subtitle: 'Hãy điều chỉnh lại để hoàn thiện đáp án',
       mascot: 'thinking' as const,
-      btnStyle: 'bg-[#ff9600] hover:bg-[#ffa726] text-[#131f24] border-b-4 border-[#cc7800] active:translate-y-1 active:border-b-0',
+      btnStyle: 'bg-[var(--warn-fill)] hover:opacity-95 text-[var(--on-ink)] shadow-[0_4px_0_0_var(--warn-edge)] active:translate-y-1 active:shadow-none',
       btnLabel: 'SỬA LẠI',
     },
     revealed: {
-      sheetBorder: 'border-t-2 border-[#ff9600]',
-      topGlow: 'bg-[#ff9600]',
+      sheetBg: 'bg-[var(--warn-tint)]',
+      sheetBorder: 'border-t-2 border-[var(--warn-fill)]',
+      topGlow: 'bg-[var(--warn-fill)]',
       badgeType: 'hint' as const,
-      titleColor: 'text-[#ff9600]',
+      titleColor: 'text-[var(--warn-fg)]',
       title: 'GỢI Ý TƯ DUY',
       subtitle: 'Đọc kỹ gợi ý để chuẩn bị thử sức lại ở cuối bài nhé!',
       mascot: 'thinking' as const,
-      btnStyle: 'bg-[#ff9600] hover:bg-[#ffa726] text-[#131f24] border-b-4 border-[#cc7800] active:translate-y-1 active:border-b-0',
+      btnStyle: 'bg-[var(--warn-fill)] hover:opacity-95 text-[var(--on-ink)] shadow-[0_4px_0_0_var(--warn-edge)] active:translate-y-1 active:shadow-none',
       btnLabel: 'TIẾP TỤC',
     },
   }[status];
@@ -138,7 +126,7 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 240, opacity: 0 }}
         transition={{ type: 'spring', stiffness: 420, damping: 28 }}
-        className={`fixed bottom-0 left-0 right-0 z-40 p-4 sm:p-6 safe-pb backdrop-blur-2xl shadow-[0_-12px_45px_rgba(0,0,0,0.85)] bg-[#131f24]/98 relative overflow-hidden ${config.sheetBorder}`}
+        className={`fixed bottom-0 left-0 right-0 z-40 p-4 sm:p-6 safe-pb bg-[var(--bg-surface)] shadow-[var(--shadow-modal)] relative overflow-hidden ${config.sheetBg} ${config.sheetBorder}`}
       >
         {/* Subtle luminous top accent bar */}
         <div className={`absolute top-0 left-0 right-0 h-[2px] ${config.topGlow}`} />
@@ -147,7 +135,6 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
           {/* Header & Atom Mascot */}
           <div className="flex items-center justify-between gap-3">
             <div className="flex items-center gap-3.5 min-w-0">
-              {/* Dedicated 3D Tactile Feedback Badge */}
               <FeedbackBadge type={config.badgeType} size="lg" />
 
               <div className="min-w-0">
@@ -155,7 +142,7 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
                   {config.title}
                 </h3>
                 {config.subtitle && (
-                  <p className="text-xs sm:text-[13px] font-semibold text-slate-300 mt-0.5 leading-snug">
+                  <p className="text-xs sm:text-[13px] font-semibold text-[var(--text-secondary)] mt-0.5 leading-snug">
                     {config.subtitle}
                   </p>
                 )}
@@ -168,42 +155,44 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
             </div>
           </div>
 
-          {/* AI Smart Step Hint Card (Milestone M11) */}
+          {/* AI Smart Step Hint Card */}
           {smartHint && (
             <motion.div
               initial={{ scale: 0.96, opacity: 0, y: 8 }}
               animate={{ scale: 1, opacity: 1, y: 0 }}
-              className="p-3.5 sm:p-4 rounded-2xl bg-[#18272f] border-2 border-purple-500/50 shadow-[0_4px_0_0_#131f24] relative overflow-hidden space-y-2"
+              className="p-3.5 sm:p-4 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] relative overflow-hidden space-y-2"
             >
               <div className="flex items-center justify-between gap-2">
                 <div className="flex items-center gap-2">
-                  <div className="w-6 h-6 rounded-lg bg-purple-500/25 border border-purple-400/50 flex items-center justify-center shrink-0 shadow-inner">
-                    <Sparkles className="w-3.5 h-3.5 text-purple-300" />
+                  <div className="w-6 h-6 rounded-lg bg-[var(--phy-tint)] border border-[var(--phy-edge)] flex items-center justify-center shrink-0">
+                    <Sparkles className="w-3.5 h-3.5 text-[var(--phy-fg)]" />
                   </div>
-                  <span className="font-black text-xs text-purple-300 uppercase tracking-wide flex items-center gap-1.5">
+                  <span className="font-black text-xs text-[var(--text-primary)] uppercase tracking-wide flex items-center gap-1.5">
                     Gợi ý tư duy sư phạm
                   </span>
                 </div>
                 {diagnosis && (
-                  <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-200 border border-purple-400/30 truncate max-w-[180px]">
+                  <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-[var(--bg-surface-2)] text-[var(--text-secondary)] border border-[var(--border)] truncate max-w-[180px]">
                     {diagnosis}
                   </span>
                 )}
               </div>
-              <div className="text-xs sm:text-[13px] text-purple-100/95 font-medium leading-relaxed pl-8">
+              <div className="text-xs sm:text-[13px] text-[var(--text-secondary)] font-medium leading-relaxed pl-8">
                 {renderFormattedText(smartHint)}
               </div>
             </motion.div>
           )}
 
-          {/* Fallback Diagnosis (from commonMistakes) if no smartHint */}
+          {/* Fallback Diagnosis if no smartHint */}
           {!smartHint && diagnosis && (
-            <div className="p-3.5 rounded-2xl bg-[#18272f] border-2 border-[#ce82ff]/30 shadow-[0_4px_0_0_#131f24] text-xs leading-relaxed space-y-1">
-              <div className="font-black text-xs text-[#ce82ff] flex items-center gap-1.5 uppercase tracking-wide">
+            <div className="p-3.5 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] text-xs leading-relaxed space-y-1">
+              <div className="font-black text-xs text-[var(--err-fg)] flex items-center gap-1.5 uppercase tracking-wide">
                 <AlertTriangle className="w-3.5 h-3.5" />
                 Chẩn đoán lỗi
               </div>
-              <p className="text-slate-300 font-medium">{diagnosis}</p>
+              <p className="text-[var(--text-secondary)] font-medium">
+                {renderFormattedText(diagnosis)}
+              </p>
             </div>
           )}
 
@@ -222,30 +211,18 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
             <motion.div
               initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              className="p-3.5 rounded-2xl bg-[#18272f] border-2 border-amber-500/50 shadow-[0_4px_0_0_#131f24] relative overflow-hidden"
+              className="p-3.5 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] relative overflow-hidden"
             >
-              {/* Animated energy sweep */}
-              <motion.div
-                animate={{ x: ['-100%', '200%'] }}
-                transition={{ duration: 1.8, repeat: Infinity, ease: 'linear' }}
-                className="absolute inset-y-0 w-24 bg-gradient-to-r from-transparent via-amber-400/20 to-transparent skew-x-12 pointer-events-none"
-              />
-
               <div className="flex items-center gap-3 relative z-10">
-                <div className="w-9 h-9 rounded-xl bg-amber-500/25 border border-amber-400/50 flex items-center justify-center shrink-0 shadow-inner">
-                  <motion.div
-                    animate={{ rotate: [0, 15, -15, 0], scale: [1, 1.15, 1] }}
-                    transition={{ duration: 1.5, repeat: Infinity }}
-                  >
-                    <Zap className="w-5 h-5 text-amber-300 fill-amber-300/40" />
-                  </motion.div>
+                <div className="w-9 h-9 rounded-xl bg-[var(--phy-tint)] border border-[var(--phy-edge)] flex items-center justify-center shrink-0">
+                  <Zap className="w-5 h-5 text-[var(--phy-fg)]" />
                 </div>
                 <div className="min-w-0">
-                  <div className="text-xs sm:text-sm font-black text-amber-300 tracking-tight flex items-center gap-1.5">
-                    <span>{physicsEffect.label || 'Bừng sáng năng lượng vật lý!'}</span>
+                  <div className="text-xs sm:text-sm font-black text-[var(--text-primary)] tracking-tight flex items-center gap-1.5">
+                    <span>{physicsEffect.label || 'Hiện tượng vật lý'}</span>
                   </div>
                   {physicsEffect.detail && (
-                    <div className="text-[11px] sm:text-xs text-amber-200/90 font-medium mt-0.5 line-clamp-2">
+                    <div className="text-[11px] sm:text-xs text-[var(--text-secondary)] font-medium mt-0.5 line-clamp-2">
                       {physicsEffect.detail}
                     </div>
                   )}
@@ -256,20 +233,20 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
 
           {/* Hints display for wrong/revealed answers */}
           {hints && hints.length > 0 && (
-            <div className="p-4 rounded-2xl bg-[#18272f] border-2 border-[#ff9600]/30 shadow-[0_4px_0_0_#131f24] space-y-2.5">
-              <div className="flex items-center gap-2 text-xs font-black text-[#ff9600] uppercase tracking-wider">
-                <div className="w-6 h-6 rounded-lg bg-[#ff9600]/20 border border-[#ff9600]/40 flex items-center justify-center shrink-0">
-                  <Lightbulb className="w-3.5 h-3.5 text-[#ff9600]" />
+            <div className="p-4 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] space-y-2.5">
+              <div className="flex items-center gap-2 text-xs font-black text-[var(--warn-fg)] uppercase tracking-wider">
+                <div className="w-6 h-6 rounded-lg bg-[var(--warn-tint)] border border-[var(--warn-edge)] flex items-center justify-center shrink-0">
+                  <Lightbulb className="w-3.5 h-3.5 text-[var(--warn-fg)]" />
                 </div>
                 <span>Gợi ý hướng dẫn tư duy:</span>
               </div>
               <div className="space-y-2 pt-0.5">
                 {hints.map((h, i) => (
-                  <div key={i} className="flex items-start gap-2.5 text-slate-200">
-                    <span className="w-5 h-5 rounded-full bg-[#ff9600]/20 text-[#ff9600] border border-[#ff9600]/40 font-black text-[11px] flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                  <div key={i} className="flex items-start gap-2.5 text-[var(--text-secondary)]">
+                    <span className="w-5 h-5 rounded-full bg-[var(--warn-tint)] text-[var(--warn-fg)] border border-[var(--warn-edge)] font-black text-[11px] flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
                       {h.level || i + 1}
                     </span>
-                    <p className="text-xs sm:text-[13px] font-medium text-slate-200 leading-relaxed">
+                    <p className="text-xs sm:text-[13px] font-medium text-[var(--text-secondary)] leading-relaxed">
                       {renderFormattedText(h.text)}
                     </p>
                   </div>
@@ -278,16 +255,16 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
             </div>
           )}
 
-          {/* Solution Body / Explanation (Only shown if solutionText or explanation is provided) */}
+          {/* Solution Body / Explanation */}
           {(solutionText || explanation) && (
-            <div className="p-4 rounded-2xl bg-[#18272f] border-2 border-[#00cd9c]/30 shadow-[0_4px_0_0_#131f24] space-y-2">
+            <div className="p-4 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] space-y-2">
               {solutionText && (
-                <div className="text-xs sm:text-sm text-slate-100 font-bold leading-relaxed border-b border-[#2e4756] pb-2">
+                <div className="text-xs sm:text-sm text-[var(--text-primary)] font-bold leading-relaxed border-b border-[var(--border)] pb-2">
                   {renderFormattedText(solutionText)}
                 </div>
               )}
               {explanation && (
-                <div className="text-xs text-slate-300 leading-relaxed whitespace-pre-line font-normal">
+                <div className="text-xs text-[var(--text-secondary)] leading-relaxed whitespace-pre-line font-normal">
                   {renderFormattedText(explanation)}
                 </div>
               )}
@@ -297,7 +274,7 @@ export const FeedbackSheet: React.FC<FeedbackSheetProps> = ({
           {/* Action Button (Tactile Chunky 3D) */}
           <button
             onClick={handleAction}
-            className={`w-full py-3.5 sm:py-4 px-6 rounded-2xl text-sm sm:text-base font-black uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center gap-2 select-none active:translate-y-1 active:border-b-0 ${config.btnStyle}`}
+            className={`w-full py-3.5 sm:py-4 px-6 rounded-2xl text-sm sm:text-base font-black uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center gap-2 select-none ${config.btnStyle}`}
           >
             <span>{config.btnLabel}</span>
           </button>

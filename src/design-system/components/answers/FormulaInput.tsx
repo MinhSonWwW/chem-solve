@@ -25,19 +25,19 @@ export const FormulaInput: React.FC<FormulaInputProps> = ({
     }
   }, [disabled]);
 
-  let borderClass = 'border-slate-700 focus-within:border-cyan-400';
+  let borderClass = 'border-[var(--border)] focus-within:border-[var(--subject-fill)]';
   if (isChecked) {
     borderClass =
       verdict.status === 'correct'
-        ? 'border-emerald-500'
+        ? 'border-[var(--ok-fill)]'
         : verdict.status === 'partial'
-          ? 'border-amber-500'
-          : 'border-rose-500';
+          ? 'border-[var(--warn-fill)]'
+          : 'border-[var(--err-fill)]';
   }
 
   return (
     <div
-      className={`flex items-center gap-2 p-3 rounded-2xl bg-slate-900/90 border-2 transition-colors ${borderClass}`}
+      className={`flex items-center gap-2 p-3 rounded-2xl bg-[var(--bg-surface-2)] border-2 transition-colors ${borderClass}`}
     >
       <input
         ref={inputRef}
@@ -46,13 +46,13 @@ export const FormulaInput: React.FC<FormulaInputProps> = ({
         onChange={(e) => onChange(e.target.value)}
         disabled={disabled}
         placeholder={placeholder}
-        className="flex-1 bg-transparent text-slate-100 text-lg font-bold outline-none placeholder:text-slate-600 font-mono"
+        className="flex-1 bg-transparent text-[var(--text-primary)] text-lg font-bold outline-none placeholder:text-[var(--text-tertiary)] font-mono"
         style={{ fontSize: '16px' }}
         autoComplete="off"
         autoCorrect="off"
         spellCheck={false}
       />
-      <span className="text-[10px] font-bold text-slate-500 bg-slate-800/60 px-2 py-0.5 rounded-md border border-slate-700/60">
+      <span className="text-[10px] font-bold text-[var(--text-tertiary)] bg-[var(--bg-canvas)] px-2 py-0.5 rounded-md border border-[var(--border)]">
         CTHH
       </span>
     </div>

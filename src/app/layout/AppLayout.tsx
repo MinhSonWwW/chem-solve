@@ -1,29 +1,40 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import { TopHeader } from './TopHeader';
 import { BottomNav } from './BottomNav';
 import { DesktopSidebar } from './DesktopSidebar';
 import { DesktopRightSidebar } from './DesktopRightSidebar';
+import { useActiveSubject } from '@/content/subjects';
 
 export const PageLoadingFallback: React.FC = () => (
   <div className="flex flex-col items-center justify-center min-h-[50vh] py-16 text-center select-none animate-pulse">
-    <div className="w-16 h-16 rounded-2xl bg-[#1e2e38] border-2 border-[#2e4756] flex items-center justify-center text-3xl mb-3 shadow-lg animate-bounce">
+    <div className="w-16 h-16 rounded-2xl bg-[var(--bg-surface-2)] border border-[var(--border)] flex items-center justify-center text-3xl mb-3 shadow-[var(--shadow-modal)] animate-bounce">
       🧪
     </div>
-    <div className="text-sm font-black text-slate-200">Đang chuẩn bị thí nghiệm...</div>
-    <div className="text-xs text-slate-400 mt-1">Phòng lab đang nạp tài nguyên bài học</div>
+    <div className="text-sm font-black text-[var(--text-primary)]">Đang chuẩn bị nội dung...</div>
+    <div className="text-xs text-[var(--text-tertiary)] mt-1">Hệ thống đang tải tài nguyên bài học</div>
   </div>
 );
 
 export const AppLayout: React.FC = () => {
   const location = useLocation();
+  const { subject: activeSubject } = useActiveSubject();
   const isExerciseMode = location.pathname.startsWith('/play');
   const isLabMode = location.pathname.startsWith('/lab');
+
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      document.documentElement.setAttribute('data-subject', activeSubject);
+    }
+  }, [activeSubject]);
 
   // Distraction-free exercise mode
   if (isExerciseMode) {
     return (
-      <div className="min-h-[100dvh] bg-[#131f24] text-slate-100 flex flex-col justify-between">
+      <div
+        data-subject={activeSubject}
+        className="min-h-[100dvh] bg-[var(--bg-canvas)] text-[var(--text-primary)] flex flex-col justify-between"
+      >
         <main className="flex-1 max-w-2xl w-full mx-auto px-4 py-4">
           <Suspense fallback={<PageLoadingFallback />}>
             <Outlet />
@@ -35,7 +46,10 @@ export const AppLayout: React.FC = () => {
 
   // Standard 3-column Duolingo layout for desktop + responsive mobile layout
   return (
-    <div className="min-h-[100dvh] bg-[#131f24] text-slate-100 flex flex-col">
+    <div
+      data-subject={activeSubject}
+      className="min-h-[100dvh] bg-[var(--bg-canvas)] text-[var(--text-primary)] flex flex-col"
+    >
       {/* Mobile Top Header */}
       <TopHeader />
 

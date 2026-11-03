@@ -33,9 +33,9 @@ export const DesktopRightSidebar: React.FC = () => {
 
   return (
     <>
-      <aside className="hidden lg:flex flex-col gap-5 w-[340px] h-[100dvh] sticky top-0 border-l-2 border-[#2e4756] bg-[#131f24]/95 px-5 py-6 select-none overflow-y-auto z-20">
+      <aside className="hidden lg:flex flex-col gap-5 w-[340px] h-[100dvh] sticky top-0 border-l border-[var(--border)] bg-[var(--bg-surface)] px-5 py-6 select-none overflow-y-auto z-20">
         {/* 1. Header Stats Bar */}
-        <div className="sidebar-stats-bar flex items-center justify-between p-2 rounded-2xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_3px_0_0_#131f24] gap-1.5">
+        <div className="sidebar-stats-bar flex items-center justify-between p-2 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] gap-1.5">
           <Streak days={streak} />
           <XPBadge amount={xp} />
           <div
@@ -65,7 +65,7 @@ export const DesktopRightSidebar: React.FC = () => {
               navigate('/search');
             }}
             aria-label="Tìm kiếm"
-            className="p-2 text-slate-300 hover:text-[#0ea5e9] rounded-xl bg-[#20333d] hover:bg-[#283e4a] border border-[#2e4756] shadow-[0_2px_0_0_#131f24] active:translate-y-[2px] active:shadow-none transition-all cursor-pointer"
+            className="p-2 text-[var(--text-secondary)] hover:text-[var(--subject-fg)] rounded-xl bg-[var(--bg-surface-2)] border border-[var(--border)] active:translate-y-[1px] transition-all cursor-pointer"
             title="Tìm kiếm chất, phản ứng, bài học"
           >
             <Search className="w-4 h-4" />
@@ -75,19 +75,19 @@ export const DesktopRightSidebar: React.FC = () => {
           <ThemeToggle variant="compact" />
         </div>
 
-        {/* 2. Widget: Nhiệm vụ hằng ngày (Real Daily Quests) */}
-        <div className="widget-quests-card p-4 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] space-y-3.5">
+        {/* 2. Widget: Nhiệm vụ hôm nay — vạch nhấn trái môn học */}
+        <div className="widget-quests-card p-4 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] border-l-4 border-l-[var(--subject-fill)] space-y-3.5">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <CurrencyIcon type="xp" size="xs" />
-              <h3 className="text-xs font-black text-white tracking-wider uppercase">
+              <h3 className="text-xs font-black text-[var(--text-primary)] tracking-wider uppercase">
                 Nhiệm vụ hôm nay
               </h3>
             </div>
             <Link
               to="/daily"
               onClick={() => sound.playClick()}
-              className="text-[10px] font-black text-[#0ea5e9] hover:text-[#38bdf8] uppercase tracking-tight"
+              className="text-[10px] font-black text-[var(--subject-fg)] hover:underline uppercase tracking-tight"
             >
               Xem thử thách
             </Link>
@@ -96,17 +96,17 @@ export const DesktopRightSidebar: React.FC = () => {
           {/* Quest Item 1: Daily Challenge */}
           <div className="space-y-1.5">
             <div className="flex items-center justify-between text-xs">
-              <span className="font-bold text-slate-300 text-[11px]">
+              <span className="font-bold text-[var(--text-secondary)] text-[11px]">
                 5 câu Thử thách ngày
               </span>
-              <span className={`text-[11px] font-mono font-bold ${dailyChallengeDone ? 'text-emerald-400' : 'text-slate-400'}`}>
+              <span className={`text-[11px] font-mono font-bold ${dailyChallengeDone ? 'text-[var(--ok-fg)]' : 'text-[var(--text-tertiary)]'}`}>
                 {dailyChallengeDone ? '1/1 ✓' : '0/1'}
               </span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="flex-1 h-2.5 rounded-full bg-[#20333d] overflow-hidden border border-[#2e4756] p-0.5">
+              <div className="flex-1 h-2.5 rounded-full bg-[var(--bg-surface-2)] overflow-hidden border border-[var(--border)] p-0.5">
                 <div
-                  className="h-full rounded-full bg-gradient-to-r from-emerald-500 to-teal-400 transition-all duration-500"
+                  className="h-full rounded-full bg-[var(--ok-fill)] transition-all duration-500"
                   style={{ width: dailyChallengeDone ? '100%' : '0%' }}
                 />
               </div>
@@ -117,17 +117,17 @@ export const DesktopRightSidebar: React.FC = () => {
           {/* Quest Item 2: Lesson Completion Today */}
           <div className="space-y-1.5 pt-1">
             <div className="flex items-center justify-between text-xs">
-              <span className="font-bold text-slate-300 text-[11px]">
+              <span className="font-bold text-[var(--text-secondary)] text-[11px]">
                 Hoàn thành 1 chặng bài học
               </span>
-              <span className={`text-[11px] font-mono font-bold ${todayNodesCount >= 1 ? 'text-cyan-400' : 'text-slate-400'}`}>
+              <span className={`text-[11px] font-mono font-bold ${todayNodesCount >= 1 ? 'text-[var(--subject-fg)]' : 'text-[var(--text-tertiary)]'}`}>
                 {todayNodesCount >= 1 ? '1/1 ✓' : '0/1'}
               </span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="flex-1 h-2.5 rounded-full bg-[#20333d] overflow-hidden border border-[#2e4756] p-0.5">
+              <div className="flex-1 h-2.5 rounded-full bg-[var(--bg-surface-2)] overflow-hidden border border-[var(--border)] p-0.5">
                 <div
-                  className="h-full rounded-full bg-gradient-to-r from-cyan-500 to-blue-400 transition-all duration-500"
+                  className="h-full rounded-full bg-[var(--subject-fill)] transition-all duration-500"
                   style={{ width: todayNodesCount >= 1 ? '100%' : '0%' }}
                 />
               </div>
@@ -138,17 +138,17 @@ export const DesktopRightSidebar: React.FC = () => {
           {/* Quest Item 3: Daily Goal XP */}
           <div className="space-y-1.5 pt-1">
             <div className="flex items-center justify-between text-xs">
-              <span className="font-bold text-slate-300 text-[11px]">
+              <span className="font-bold text-[var(--text-secondary)] text-[11px]">
                 Đạt mục tiêu {dailyGoalTarget} XP ngày
               </span>
-              <span className={`text-[11px] font-mono font-bold ${dailyXpPercent >= 100 ? 'text-amber-400' : 'text-slate-400'}`}>
+              <span className={`text-[11px] font-mono font-bold ${dailyXpPercent >= 100 ? 'text-[var(--gold-fg)]' : 'text-[var(--text-tertiary)]'}`}>
                 {currentDailyXp}/{dailyGoalTarget} XP
               </span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="flex-1 h-2.5 rounded-full bg-[#20333d] overflow-hidden border border-[#2e4756] p-0.5">
+              <div className="flex-1 h-2.5 rounded-full bg-[var(--bg-surface-2)] overflow-hidden border border-[var(--border)] p-0.5">
                 <div
-                  className="h-full rounded-full bg-gradient-to-r from-amber-500 to-yellow-400 transition-all duration-500"
+                  className="h-full rounded-full bg-[var(--gold-fill)] transition-all duration-500"
                   style={{ width: `${dailyXpPercent}%` }}
                 />
               </div>
@@ -157,45 +157,45 @@ export const DesktopRightSidebar: React.FC = () => {
           </div>
         </div>
 
-        {/* 3. Widget: Chuỗi đèn cồn Streak */}
-        <div className="widget-streak-card p-4 rounded-3xl bg-[#18272f] border-2 border-[#ff9600]/40 shadow-[0_4px_0_0_#131f24] flex items-center justify-between">
+        {/* 3. Widget: Chuỗi đèn cồn Streak — vạch nhấn trái warn.fill */}
+        <div className="widget-streak-card p-4 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] border-l-4 border-l-[var(--warn-fill)] flex items-center justify-between">
           <div className="space-y-1">
-            <div className="flex items-center gap-1.5 text-xs font-black text-[#ff9600] uppercase tracking-wider">
+            <div className="flex items-center gap-1.5 text-xs font-black text-[var(--warn-fg)] uppercase tracking-wider">
               <CurrencyIcon type="streak" size="xs" />
               <span>Chuỗi đèn cồn Streak</span>
             </div>
-            <p className="text-[11px] text-slate-300 font-medium leading-tight">
+            <p className="text-[11px] text-[var(--text-secondary)] font-medium leading-tight">
               {streak > 0
                 ? `Bạn đang giữ chuỗi ${streak} ngày học liên tiếp!`
                 : 'Học 1 bài hôm nay để thắp sáng ngọn đèn cồn!'}
             </p>
           </div>
-          <div className="flex items-center gap-1 text-2xl font-black text-[#ff9600] pl-2">
+          <div className="flex items-center gap-1 text-2xl font-black text-[var(--warn-fg)] pl-2">
             <span>{streak}</span>
             <CurrencyIcon type="streak" size="sm" className="animate-pulse" />
           </div>
         </div>
 
-      {/* 5. Widget: Ôn tập nhanh (Spaced Repetition) */}
-      <div className="widget-review-card p-4 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] space-y-2.5">
-        <div className="flex items-center gap-2 text-[#38bdf8] text-xs font-black uppercase tracking-wider">
-          <BookOpen className="w-4 h-4" />
-          <span>Sổ tay ôn tập</span>
+        {/* 4. Widget: Sổ tay ôn tập Leitner — vạch nhấn trái slate.fill */}
+        <div className="widget-review-card p-4 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] border-l-4 border-l-[var(--slate-fill)] space-y-2.5">
+          <div className="flex items-center gap-2 text-[var(--slate-fg)] text-xs font-black uppercase tracking-wider">
+            <BookOpen className="w-4 h-4" />
+            <span>Sổ tay ôn tập</span>
+          </div>
+          <p className="text-[11px] text-[var(--text-secondary)] leading-tight">
+            Hệ thống Leitner tự động nhắc nhở ôn lại các câu bạn đã từng làm sai.
+          </p>
+          <button
+            onClick={() => {
+              sound.playClick();
+              navigate('/practice');
+            }}
+            className="w-full py-2.5 px-3 rounded-xl bg-[var(--slate-fill)] hover:opacity-95 text-white font-black text-xs flex items-center justify-center gap-2 shadow-[0_4px_0_0_var(--slate-edge)] active:translate-y-1 active:shadow-none transition-all cursor-pointer"
+          >
+            <span>ÔN TẬP CÂU SAI</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </button>
         </div>
-        <p className="text-[11px] text-slate-300 leading-tight">
-          Hệ thống Leitner tự động nhắc nhở ôn lại các câu bạn đã từng làm sai.
-        </p>
-        <button
-          onClick={() => {
-            sound.playClick();
-            navigate('/practice');
-          }}
-          className="w-full py-2.5 px-3 rounded-2xl bg-[#0ea5e9] hover:bg-[#38bdf8] text-white font-black text-xs flex items-center justify-center gap-2 shadow-[0_4px_0_0_#0284c7] active:translate-y-1 active:shadow-none transition-all cursor-pointer"
-        >
-          <span>ÔN TẬP CÂU SAI</span>
-          <ArrowRight className="w-3.5 h-3.5" />
-        </button>
-      </div>
       </aside>
 
       {/* Heart Refill & Gem Exchange Modal */}

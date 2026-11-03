@@ -46,7 +46,7 @@ describe('ReactionVisualizer Component', () => {
     render(
       <ReactionVisualizer
         type="precipitate"
-        color="#38bdf8"
+        color="var(--chem)"
         label="↓ Kết tủa Cu(OH)2 xanh lam"
         autoPlaySound={false}
       />
@@ -58,7 +58,7 @@ describe('ReactionVisualizer Component', () => {
     render(
       <ReactionVisualizer
         type="indicator"
-        color="#ef4444"
+        color="var(--err)"
         label="Quỳ tím hóa đỏ"
         autoPlaySound={false}
       />

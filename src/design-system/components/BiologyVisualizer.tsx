@@ -100,13 +100,12 @@ export const BiologyVisualizer: React.FC<BiologyVisualizerProps> = ({
   return (
     <div
       className={cn(
-        'w-full rounded-3xl bg-[#111f26]/95 border-2 border-emerald-500/30 p-4 shadow-[0_6px_0_0_#062319] relative overflow-hidden select-none',
+        'w-full rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] p-4 relative overflow-hidden select-none',
         className
       )}
     >
-      {/* Background glow & subtle bio grid pattern */}
-      <div className="absolute -top-12 -right-12 w-48 h-48 rounded-full bg-emerald-500/10 blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-12 -left-12 w-48 h-48 rounded-full bg-teal-500/10 blur-3xl pointer-events-none" />
+      {/* Clean bio container */}
+      
 
       {mode === 'blood-transfusion' && (
         <BloodTransfusionSandbox
@@ -188,7 +187,7 @@ const BloodTransfusionSandbox: React.FC<{
       {/* Interactive Selectors Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
         {/* Donor Selector */}
-        <div className="p-3 rounded-2xl bg-[#14232c] border-2 border-[#223946] space-y-2">
+        <div className="p-3 rounded-2xl bg-[var(--bg-canvas)] border-2 border-[var(--border)] space-y-2">
           <div className="flex items-center justify-between">
             <span className="text-[11px] font-black uppercase text-slate-300 flex items-center gap-1">
               🩸 Người Cho (Hồng Cầu):
@@ -209,8 +208,8 @@ const BloodTransfusionSandbox: React.FC<{
                 className={cn(
                   'py-1.5 rounded-xl text-xs font-black transition-all border',
                   donor === b
-                    ? 'bg-rose-500 text-slate-950 border-rose-400 shadow-[0_2px_0_0_#9f1239]'
-                    : 'bg-[#1b2f3a] text-slate-400 border-slate-700/60 hover:text-white'
+                    ? 'bg-rose-500 text-slate-950 border-rose-400 shadow-[0_2px_0_0_var(--err-shade)]'
+                    : 'bg-[var(--bg-elevated)] text-slate-400 border-slate-700/60 hover:text-white'
                 )}
               >
                 {b}
@@ -224,7 +223,7 @@ const BloodTransfusionSandbox: React.FC<{
         </div>
 
         {/* Patient / Recipient Selector */}
-        <div className="p-3 rounded-2xl bg-[#14232c] border-2 border-[#223946] space-y-2">
+        <div className="p-3 rounded-2xl bg-[var(--bg-canvas)] border-2 border-[var(--border)] space-y-2">
           <div className="flex items-center justify-between">
             <span className="text-[11px] font-black uppercase text-slate-300 flex items-center gap-1">
               🏥 Người Nhận (Huyết Tương):
@@ -245,8 +244,8 @@ const BloodTransfusionSandbox: React.FC<{
                 className={cn(
                   'py-1.5 rounded-xl text-xs font-black transition-all border',
                   patient === b
-                    ? 'bg-cyan-500 text-slate-950 border-cyan-400 shadow-[0_2px_0_0_#0284c7]'
-                    : 'bg-[#1b2f3a] text-slate-400 border-slate-700/60 hover:text-white'
+                    ? 'bg-[var(--bio-fill)] text-white border-[var(--bio-edge)] shadow-[0_2px_0_0_var(--chem-shade)]'
+                    : 'bg-[var(--bg-elevated)] text-slate-400 border-slate-700/60 hover:text-white'
                 )}
               >
                 {b}
@@ -271,7 +270,7 @@ const BloodTransfusionSandbox: React.FC<{
       >
         <div className="flex items-center gap-3">
           {/* Animated Erythrocytes */}
-          <div className="relative w-12 h-12 rounded-2xl bg-[#111f26] border border-slate-700 flex items-center justify-center overflow-hidden">
+          <div className="relative w-12 h-12 rounded-2xl bg-[var(--bg-canvas)] border border-slate-700 flex items-center justify-center overflow-hidden">
             {isCompatible ? (
               <motion.div
                 animate={{ rotate: 360 }}
@@ -335,7 +334,7 @@ const CirculationLoopSandbox: React.FC = () => {
         </div>
 
         {/* Tab switcher */}
-        <div className="flex gap-1 bg-[#14232c] p-0.5 rounded-xl border border-slate-700">
+        <div className="flex gap-1 bg-[var(--bg-canvas)] p-0.5 rounded-xl border border-slate-700">
           <button
             onClick={() => setActiveLoop('all')}
             className={cn(
@@ -380,7 +379,7 @@ const CirculationLoopSandbox: React.FC = () => {
             'p-3 rounded-2xl border-2 transition-all space-y-1.5',
             activeLoop === 'all' || activeLoop === 'pulmonary'
               ? 'bg-sky-950/30 border-sky-500/40 shadow-sm'
-              : 'bg-[#14232c]/50 border-slate-800 opacity-50'
+              : 'bg-[var(--bg-canvas)]/50 border-slate-800 opacity-50'
           )}
         >
           <div className="flex items-center justify-between">
@@ -392,7 +391,7 @@ const CirculationLoopSandbox: React.FC = () => {
             </span>
           </div>
 
-          <div className="text-[11px] text-slate-300 font-mono space-y-0.5 leading-relaxed bg-[#0d171d] p-2 rounded-xl border border-sky-900/50">
+          <div className="text-[11px] text-slate-300 font-mono space-y-0.5 leading-relaxed bg-[var(--bg-canvas)] p-2 rounded-xl border border-sky-900/50">
             <div className="text-slate-400">Tâm thất phải (máu thẫm)</div>
             <div className="text-sky-400 font-bold">↳ Động mạch phổi ➜ Mao mạch phổi</div>
             <div className="text-emerald-400 font-bold">↳ Nhả CO₂ & Nhận O₂ (hóa đỏ tươi)</div>
@@ -406,7 +405,7 @@ const CirculationLoopSandbox: React.FC = () => {
             'p-3 rounded-2xl border-2 transition-all space-y-1.5',
             activeLoop === 'all' || activeLoop === 'systemic'
               ? 'bg-rose-950/30 border-rose-500/40 shadow-sm'
-              : 'bg-[#14232c]/50 border-slate-800 opacity-50'
+              : 'bg-[var(--bg-canvas)]/50 border-slate-800 opacity-50'
           )}
         >
           <div className="flex items-center justify-between">
@@ -418,7 +417,7 @@ const CirculationLoopSandbox: React.FC = () => {
             </span>
           </div>
 
-          <div className="text-[11px] text-slate-300 font-mono space-y-0.5 leading-relaxed bg-[#0d171d] p-2 rounded-xl border border-rose-900/50">
+          <div className="text-[11px] text-slate-300 font-mono space-y-0.5 leading-relaxed bg-[var(--bg-canvas)] p-2 rounded-xl border border-rose-900/50">
             <div className="text-rose-300 font-bold">Tâm thất trái (máu đỏ tươi)</div>
             <div className="text-rose-400 font-bold">↳ Động mạch chủ ➜ Mao mạch cơ quan</div>
             <div className="text-amber-400 font-bold">↳ Cung cấp O₂ & dinh dưỡng (hóa thẫm)</div>
@@ -427,7 +426,7 @@ const CirculationLoopSandbox: React.FC = () => {
         </div>
       </div>
 
-      <div className="text-[11px] text-slate-400 flex items-center justify-between bg-[#14232c] px-3 py-2 rounded-xl border border-slate-700/60">
+      <div className="text-[11px] text-slate-400 flex items-center justify-between bg-[var(--bg-canvas)] px-3 py-2 rounded-xl border border-slate-700/60">
         <span>💡 Tim người có <strong>4 ngăn</strong>: 2 tâm nhĩ ở trên, 2 tâm thất ở dưới.</span>
         <span className="text-rose-400 font-black">Nhịp tim TB: 75 lần/phút</span>
       </div>
@@ -482,8 +481,8 @@ const EnergyPyramidSandbox: React.FC = () => {
         </div>
 
         {/* Tier 2 */}
-        <div className="w-3/4 mx-auto p-1.5 bg-cyan-500/20 border-2 border-cyan-500/50 rounded-xl text-center shadow-sm">
-          <div className="text-[10px] font-black text-cyan-300">Bậc 2: SV Tiêu Thụ Bậc 1 (Ăn cỏ)</div>
+        <div className="w-3/4 mx-auto p-1.5 bg-[var(--bio-tint)] border-2 border-[var(--bio-edge)] rounded-xl text-center shadow-sm">
+          <div className="text-[10px] font-black text-[var(--bio-fg)]">Bậc 2: SV Tiêu Thụ Bậc 1 (Ăn cỏ)</div>
           <div className="text-xs font-mono font-black text-white">{level2.toLocaleString()} kcal (10%)</div>
         </div>
 
@@ -498,7 +497,7 @@ const EnergyPyramidSandbox: React.FC = () => {
       </div>
 
       {/* Interactive slider */}
-      <div className="p-2.5 rounded-2xl bg-[#14232c] border border-slate-700/60 space-y-1">
+      <div className="p-2.5 rounded-2xl bg-[var(--bg-canvas)] border border-slate-700/60 space-y-1">
         <div className="flex justify-between text-[11px] font-bold text-slate-300">
           <span>Năng lượng ban đầu (SV sản xuất):</span>
           <span className="text-emerald-400 font-mono font-black">{baseEnergy.toLocaleString()} kcal</span>
@@ -525,7 +524,7 @@ const NephronFiltrationSandbox: React.FC = () => {
     <div className="space-y-3 relative z-10">
       <div className="flex items-center justify-between pb-1.5 border-b border-slate-700/60">
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-cyan-400">
+          <div className="w-7 h-7 rounded-xl bg-[var(--bio-tint)] border border-[var(--bio-edge)] flex items-center justify-center text-[var(--bio-fg)]">
             <Activity className="w-4 h-4" />
           </div>
           <div>
@@ -538,7 +537,7 @@ const NephronFiltrationSandbox: React.FC = () => {
           </div>
         </div>
 
-        <span className="text-[10px] text-cyan-300 font-bold">1 triệu Nephron / thận</span>
+        <span className="text-[10px] text-[var(--bio-fg)] font-bold">1 triệu Nephron / thận</span>
       </div>
 
       {/* 3 Steps Pipeline */}
@@ -553,7 +552,7 @@ const NephronFiltrationSandbox: React.FC = () => {
             onClick={() => setActiveStep(s.step as 1 | 2 | 3)}
             className={cn(
               'p-2 rounded-xl border text-center transition-all cursor-pointer',
-              activeStep === s.step ? s.color : 'bg-[#14232c] border-slate-800 text-slate-400 hover:text-white'
+              activeStep === s.step ? s.color : 'bg-[var(--bg-canvas)] border-slate-800 text-slate-400 hover:text-white'
             )}
           >
             <div className="text-[10px] font-black">{s.title}</div>
@@ -563,7 +562,7 @@ const NephronFiltrationSandbox: React.FC = () => {
       </div>
 
       {/* Step details card */}
-      <div className="p-3 bg-[#14232c] rounded-2xl border-2 border-slate-700/60 space-y-1">
+      <div className="p-3 bg-[var(--bg-canvas)] rounded-2xl border-2 border-slate-700/60 space-y-1">
         {activeStep === 1 && (
           <div className="text-xs leading-relaxed space-y-0.5">
             <span className="text-rose-400 font-black block">🩸 Bước 1: Quá trình lọc máu tại Cầu thận</span>
@@ -611,7 +610,7 @@ const CellStructureSandbox: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex gap-1 bg-[#14232c] p-0.5 rounded-xl border border-slate-700">
+        <div className="flex gap-1 bg-[var(--bg-canvas)] p-0.5 rounded-xl border border-slate-700">
           <button
             onClick={() => setCellType('plant')}
             className={cn(
@@ -633,11 +632,11 @@ const CellStructureSandbox: React.FC = () => {
         </div>
       </div>
 
-      <div className="p-3 bg-[#14232c] rounded-2xl border-2 border-slate-700/60 grid grid-cols-2 gap-2 text-xs">
+      <div className="p-3 bg-[var(--bg-canvas)] rounded-2xl border-2 border-slate-700/60 grid grid-cols-2 gap-2 text-xs">
         <div className="space-y-1">
           <span className="text-[10px] font-black uppercase text-slate-400 block">Thành phần chung:</span>
           <div className="text-emerald-300 font-bold">• Màng sinh chất (bảo vệ & trao đổi chất)</div>
-          <div className="text-cyan-300 font-bold">• Tế bào chất (chứa bào quan)</div>
+          <div className="text-[var(--bio-fg)] font-bold">• Tế bào chất (chứa bào quan)</div>
           <div className="text-purple-300 font-bold">• Nhân tế bào (chứa vật chất di truyền ADN)</div>
         </div>
 
@@ -786,8 +785,8 @@ const MendelPunnettGridSandbox: React.FC = () => {
             className={cn(
               'px-2 py-1.5 rounded-xl text-left border transition-all cursor-pointer',
               selectedPresetId === p.id
-                ? 'bg-amber-500/20 text-amber-300 border-amber-500 shadow-[0_2px_0_0_#ca8a04]'
-                : 'bg-[#14232c] text-slate-400 border-slate-700/60 hover:text-white hover:bg-[#1b2f3a]'
+                ? 'bg-amber-500/20 text-amber-300 border-amber-500 shadow-[0_2px_0_0_var(--gold-shade)]'
+                : 'bg-[var(--bg-canvas)] text-slate-400 border-slate-700/60 hover:text-white hover:bg-[var(--bg-elevated)]'
             )}
           >
             <div className="text-xs font-black">{p.title}</div>
@@ -797,17 +796,17 @@ const MendelPunnettGridSandbox: React.FC = () => {
       </div>
 
       {/* Punnett Table */}
-      <div className="p-3 bg-[#14232c] rounded-2xl border-2 border-slate-700/60 overflow-x-auto">
+      <div className="p-3 bg-[var(--bg-canvas)] rounded-2xl border-2 border-slate-700/60 overflow-x-auto">
         <table className="w-full text-center border-collapse">
           <thead>
             <tr>
-              <th className="p-1.5 text-[11px] font-black text-slate-400 border border-slate-700/50 bg-[#18272f]">
+              <th className="p-1.5 text-[11px] font-black text-slate-400 border border-slate-700/50 bg-[var(--bg-elevated)]">
                 ♀ \ ♂
               </th>
               {preset.maleGametes.map((mg, idx) => (
                 <th
                   key={`mg-${idx}`}
-                  className="p-1.5 text-xs font-black text-cyan-300 border border-slate-700/50 bg-[#18272f]"
+                  className="p-1.5 text-xs font-black text-[var(--bio-fg)] border border-slate-700/50 bg-[var(--bg-elevated)]"
                 >
                   ♂ {mg}
                 </th>
@@ -817,7 +816,7 @@ const MendelPunnettGridSandbox: React.FC = () => {
           <tbody>
             {preset.femaleGametes.map((fg, rIdx) => (
               <tr key={`fg-${rIdx}`}>
-                <td className="p-1.5 text-xs font-black text-rose-300 border border-slate-700/50 bg-[#18272f]">
+                <td className="p-1.5 text-xs font-black text-rose-300 border border-slate-700/50 bg-[var(--bg-elevated)]">
                   ♀ {fg}
                 </td>
                 {preset.maleGametes.map((mg, cIdx) => {
@@ -825,7 +824,7 @@ const MendelPunnettGridSandbox: React.FC = () => {
                   return (
                     <td
                       key={`cell-${rIdx}-${cIdx}`}
-                      className="p-1.5 border border-slate-700/50 bg-[#101b22]"
+                      className="p-1.5 border border-slate-700/50 bg-[var(--bg-canvas)]"
                     >
                       <div className={cn('p-1 rounded-lg border text-center transition-all', cell.color)}>
                         <div className="text-xs font-black flex items-center justify-center gap-1">
@@ -893,7 +892,7 @@ const DnaTranscriptionBuilderSandbox: React.FC = () => {
         </div>
 
         {/* Tab switchers */}
-        <div className="flex gap-1 bg-[#14232c] p-0.5 rounded-xl border border-slate-700">
+        <div className="flex gap-1 bg-[var(--bg-canvas)] p-0.5 rounded-xl border border-slate-700">
           <button
             onClick={() => {
               sound.playClick();
@@ -913,7 +912,7 @@ const DnaTranscriptionBuilderSandbox: React.FC = () => {
             }}
             className={cn(
               'px-2 py-0.5 rounded-lg text-[10px] font-bold transition-all cursor-pointer',
-              subMode === 'transcription' ? 'bg-cyan-500 text-slate-950 font-black' : 'text-slate-400 hover:text-white'
+              subMode === 'transcription' ? 'bg-[var(--bio-fill)] text-white font-black' : 'text-slate-400 hover:text-white'
             )}
           >
             ⚡ Phiên mã mRNA
@@ -934,7 +933,7 @@ const DnaTranscriptionBuilderSandbox: React.FC = () => {
       </div>
 
       {/* Main Interactive Visual */}
-      <div className="p-3 bg-[#14232c] rounded-2xl border-2 border-slate-700/60 space-y-3">
+      <div className="p-3 bg-[var(--bg-canvas)] rounded-2xl border-2 border-slate-700/60 space-y-3">
         {/* Template Strand */}
         <div>
           <div className="text-[10px] font-black uppercase text-slate-400 mb-1 flex items-center justify-between">
@@ -964,7 +963,7 @@ const DnaTranscriptionBuilderSandbox: React.FC = () => {
                   <span className="text-[8px] text-amber-300 font-mono">{item.bonds}H</span>
                 </>
               ) : subMode === 'transcription' ? (
-                <span className="text-cyan-400 text-xs">↓</span>
+                <span className="text-[var(--bio-fg)] text-xs">↓</span>
               ) : (
                 <span className="text-purple-400 text-[9px] font-mono">cod</span>
               )}
@@ -980,7 +979,7 @@ const DnaTranscriptionBuilderSandbox: React.FC = () => {
                 ? "Mạch bổ sung DNA (5' → 3'):"
                 : "Mạch đơn mRNA (5' → 3'):"}
             </span>
-            <span className={cn('text-[10px] font-bold', subMode === 'dna-structure' ? 'text-blue-400' : 'text-cyan-400')}>
+            <span className={cn('text-[10px] font-bold', subMode === 'dna-structure' ? 'text-blue-400' : 'text-[var(--bio-fg)]')}>
               {subMode === 'dna-structure' ? 'NTBS: A=T, G≡C' : 'NTBS: A-U, T-A, G-C'}
             </span>
           </div>
@@ -1092,7 +1091,7 @@ const MitosisMeiosisScopeSandbox: React.FC = () => {
         </div>
 
         {/* Division switch */}
-        <div className="flex gap-1 bg-[#14232c] p-0.5 rounded-xl border border-slate-700">
+        <div className="flex gap-1 bg-[var(--bg-canvas)] p-0.5 rounded-xl border border-slate-700">
           <button
             onClick={() => {
               sound.playClick();
@@ -1137,7 +1136,7 @@ const MitosisMeiosisScopeSandbox: React.FC = () => {
                 ? divisionType === 'mitosis'
                   ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500 shadow-sm'
                   : 'bg-amber-500/20 text-amber-300 border-amber-500 shadow-sm'
-                : 'bg-[#14232c] text-slate-400 border-slate-700/60 hover:text-white'
+                : 'bg-[var(--bg-canvas)] text-slate-400 border-slate-700/60 hover:text-white'
             )}
           >
             {st.name}
@@ -1146,7 +1145,7 @@ const MitosisMeiosisScopeSandbox: React.FC = () => {
       </div>
 
       {/* Microscope Viewport & Metrics */}
-      <div className="p-3 bg-[#14232c] rounded-2xl border-2 border-slate-700/60 space-y-2.5">
+      <div className="p-3 bg-[var(--bg-canvas)] rounded-2xl border-2 border-slate-700/60 space-y-2.5">
         <div className="flex items-center justify-between">
           <span className="text-xs font-black text-white flex items-center gap-1.5">
             <span>🔬 Tiêu bản tế bào (2n = 4):</span>
@@ -1160,11 +1159,11 @@ const MitosisMeiosisScopeSandbox: React.FC = () => {
         </div>
 
         {/* Visual chromosome representation */}
-        <div className="h-24 rounded-xl bg-[#091317] border border-slate-800 flex items-center justify-center p-3 relative overflow-hidden">
+        <div className="h-24 rounded-xl bg-[var(--bg-canvas)] border border-slate-800 flex items-center justify-center p-3 relative overflow-hidden">
           {/* Centrosomes & spindle fibers */}
-          <div className="absolute left-3 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-cyan-400 shadow-[0_0_8px_#22d3ee]" />
-          <div className="absolute right-3 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-cyan-400 shadow-[0_0_8px_#22d3ee]" />
-          <div className="absolute inset-x-6 top-1/2 h-[1px] bg-cyan-500/20 border-dashed" />
+          <div className="absolute left-3 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-[var(--bio-fill)] shadow-sm" />
+          <div className="absolute right-3 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-[var(--bio-fill)] shadow-sm" />
+          <div className="absolute inset-x-6 top-1/2 h-[1px] bg-[var(--border)] border-dashed" />
 
           {/* Chromosome graphics depending on stage */}
           <div className="flex items-center justify-center gap-4 z-10">
@@ -1194,19 +1193,19 @@ const MitosisMeiosisScopeSandbox: React.FC = () => {
 
         {/* Live Chromosome Counts Table (2n = 4) */}
         <div className="grid grid-cols-4 gap-1.5 text-center text-xs">
-          <div className="p-2 rounded-xl bg-[#18272f] border border-slate-700/60">
+          <div className="p-2 rounded-xl bg-[var(--bg-elevated)] border border-slate-700/60">
             <div className="text-[10px] text-slate-400">Số NST</div>
             <div className="font-black text-emerald-400 text-xs">{currentStage.chromosomes}</div>
           </div>
-          <div className="p-2 rounded-xl bg-[#18272f] border border-slate-700/60">
+          <div className="p-2 rounded-xl bg-[var(--bg-elevated)] border border-slate-700/60">
             <div className="text-[10px] text-slate-400">Chromatid</div>
-            <div className="font-black text-cyan-400 text-xs">{currentStage.chromatids}</div>
+            <div className="font-black text-[var(--bio-fg)] text-xs">{currentStage.chromatids}</div>
           </div>
-          <div className="p-2 rounded-xl bg-[#18272f] border border-slate-700/60">
+          <div className="p-2 rounded-xl bg-[var(--bg-elevated)] border border-slate-700/60">
             <div className="text-[10px] text-slate-400">Tâm động</div>
             <div className="font-black text-amber-400 text-xs">{currentStage.centromeres}</div>
           </div>
-          <div className="p-2 rounded-xl bg-[#18272f] border border-slate-700/60">
+          <div className="p-2 rounded-xl bg-[var(--bg-elevated)] border border-slate-700/60">
             <div className="text-[10px] text-slate-400">Trạng thái</div>
             <div className="font-black text-purple-400 text-[11px] truncate">
               {currentStage.chromatids === '0' ? 'NST Đơn' : 'NST Kép'}

@@ -28,19 +28,19 @@ export const NumberInput: React.FC<NumberInputProps> = ({
     }
   }, [disabled]);
 
-  let borderClass = 'border-slate-700 focus-within:border-cyan-400';
+  let borderClass = 'border-[var(--border)] focus-within:border-[var(--subject-fill)]';
   if (isChecked) {
     borderClass =
       verdict.status === 'correct'
-        ? 'border-emerald-500'
+        ? 'border-[var(--ok-fill)]'
         : verdict.status === 'partial'
-          ? 'border-amber-500'
-          : 'border-rose-500';
+          ? 'border-[var(--warn-fill)]'
+          : 'border-[var(--err-fill)]';
   }
 
   return (
     <div
-      className={`flex items-center gap-2 p-3 rounded-2xl bg-slate-900/90 border-2 transition-colors ${borderClass}`}
+      className={`flex items-center gap-2 p-3 rounded-2xl bg-[var(--bg-surface-2)] border-2 transition-colors ${borderClass}`}
     >
       <input
         ref={inputRef}
@@ -50,14 +50,14 @@ export const NumberInput: React.FC<NumberInputProps> = ({
         onChange={(e) => onChange(e.target.value)}
         disabled={disabled}
         placeholder={placeholder}
-        className="flex-1 bg-transparent text-slate-100 text-lg font-bold outline-none placeholder:text-slate-600"
+        className="flex-1 bg-transparent text-[var(--text-primary)] text-lg font-bold outline-none placeholder:text-[var(--text-tertiary)]"
         style={{ fontSize: '16px' }} /* Prevent iOS zoom */
         autoComplete="off"
         autoCorrect="off"
         spellCheck={false}
       />
       {unit && (
-        <span className="text-sm font-bold text-slate-400 bg-slate-800/80 px-2.5 py-1 rounded-lg border border-slate-700">
+        <span className="text-sm font-bold text-[var(--text-secondary)] bg-[var(--bg-canvas)] px-2.5 py-1 rounded-lg border border-[var(--border)]">
           {unit}
         </span>
       )}

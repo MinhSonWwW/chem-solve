@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Lightbulb, BookOpen, Eye, ChevronDown, ChevronUp } from 'lucide-react';
 import type { Hint, SolutionStep } from '@/content/schema/exercise';
+import { MathText } from './MathText';
 
 export interface HintLadderProps {
   hints: Hint[];
@@ -85,35 +86,35 @@ export const HintLadder: React.FC<HintLadderProps> = ({
             className="space-y-2 overflow-hidden"
           >
             {hintsUsed >= 1 && hint1 && (
-              <div className="p-3 bg-amber-950/30 border border-amber-800/40 rounded-xl text-xs text-amber-200">
+              <div className="p-3 bg-[var(--gold-tint)] border border-[var(--gold-edge)] rounded-xl text-xs text-[var(--gold-fg)]">
                 <div className="flex items-center gap-1.5 mb-1">
-                  <Lightbulb className="w-3.5 h-3.5 text-amber-400" />
-                  <strong className="text-amber-300">Gợi ý 1</strong>
+                  <Lightbulb className="w-3.5 h-3.5 text-[var(--gold-fg)]" />
+                  <strong className="text-[var(--gold-fg)]">Gợi ý 1</strong>
                 </div>
-                {hint1.text}
+                <MathText text={hint1.text} />
               </div>
             )}
             {hintsUsed >= 2 && hint2 && (
-              <div className="p-3 bg-amber-950/30 border border-amber-800/40 rounded-xl text-xs text-amber-200">
+              <div className="p-3 bg-[var(--gold-tint)] border border-[var(--gold-edge)] rounded-xl text-xs text-[var(--gold-fg)]">
                 <div className="flex items-center gap-1.5 mb-1">
-                  <Lightbulb className="w-3.5 h-3.5 text-amber-400" />
-                  <strong className="text-amber-300">Gợi ý 2</strong>
+                  <Lightbulb className="w-3.5 h-3.5 text-[var(--gold-fg)]" />
+                  <strong className="text-[var(--gold-fg)]">Gợi ý 2</strong>
                 </div>
-                {hint2.text}
+                <MathText text={hint2.text} />
               </div>
             )}
             {stepsRevealedCount > 0 && (
-              <div className="p-3 bg-indigo-950/30 border border-indigo-800/40 rounded-xl text-xs text-indigo-200 space-y-2">
+              <div className="p-3 bg-[var(--bg-surface-2)] border border-[var(--border)] rounded-xl text-xs text-[var(--text-secondary)] space-y-2">
                 <div className="flex items-center gap-1.5 mb-1">
-                  <BookOpen className="w-3.5 h-3.5 text-indigo-400" />
-                  <strong className="text-indigo-300">
+                  <BookOpen className="w-3.5 h-3.5 text-[var(--subject-fg)]" />
+                  <strong className="text-[var(--subject-fg)]">
                     Bước giải ({stepsRevealedCount}/{steps.length})
                   </strong>
                 </div>
                 {steps.slice(0, stepsRevealedCount).map((step, i) => (
-                  <div key={i} className="pl-2 border-l-2 border-indigo-700/40">
-                    <strong className="text-indigo-300">{step.title}:</strong>{' '}
-                    {step.body}
+                  <div key={i} className="pl-2 border-l-2 border-[var(--subject-edge)]">
+                    <strong className="text-[var(--subject-fg)]">{step.title}:</strong>{' '}
+                    <MathText text={step.body} />
                   </div>
                 ))}
               </div>
@@ -127,7 +128,7 @@ export const HintLadder: React.FC<HintLadderProps> = ({
         {(hintsUsed > 0 || stepsRevealedCount > 0) && (
           <button
             onClick={() => setExpanded(!expanded)}
-            className="p-2 bg-slate-900 border border-slate-800 rounded-xl text-slate-400 hover:text-slate-200 transition-colors cursor-pointer"
+            className="p-2 bg-[var(--bg-surface-2)] border border-[var(--border)] rounded-xl text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors cursor-pointer"
             aria-label={expanded ? 'Thu gọn gợi ý' : 'Xem gợi ý đã dùng'}
           >
             {expanded ? (
@@ -140,7 +141,7 @@ export const HintLadder: React.FC<HintLadderProps> = ({
 
         <button
           onClick={handleHintClick}
-          className="p-3 bg-slate-900 border-2 border-slate-800 rounded-2xl text-slate-400 hover:text-amber-400 hover:border-amber-500/40 transition-colors shadow-[0_4px_0_0_#1e293b] active:translate-y-1 active:shadow-none cursor-pointer flex items-center gap-1.5 text-xs font-bold"
+          className="p-3 bg-[var(--bg-surface)] border border-[var(--border)] rounded-2xl text-[var(--gold-fg)] hover:border-[var(--gold-edge)] transition-colors shadow-[0_3px_0_0_var(--border)] active:translate-y-1 active:shadow-none cursor-pointer flex items-center gap-1.5 text-xs font-bold"
           aria-label={getLevelLabel()}
         >
           {getLevelIcon()}

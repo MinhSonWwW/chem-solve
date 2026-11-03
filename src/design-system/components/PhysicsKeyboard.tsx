@@ -52,7 +52,7 @@ export const PhysicsKeyboard: React.FC<PhysicsKeyboardProps> = ({
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 200, opacity: 0 }}
           transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-          className="fixed bottom-0 left-0 right-0 z-50 bg-slate-950/98 backdrop-blur-xl border-t-2 border-slate-800 safe-pb"
+          className="fixed bottom-0 left-0 right-0 z-50 bg-[var(--bg-surface)] border-t-2 border-[var(--border-strong)] shadow-lg safe-pb"
         >
           {/* Tab bar + close */}
           <div className="flex items-center justify-between px-3 py-2 border-b border-slate-800/60">

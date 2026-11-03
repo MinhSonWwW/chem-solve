@@ -11,6 +11,7 @@ export interface SubjectInfo {
   badge: string;
   accentColor: string;
   borderColor: string;
+  mascotName: string;
   available: boolean;
   statusText?: string;
   topics: string[];
@@ -24,8 +25,9 @@ export const SUBJECTS: SubjectInfo[] = [
     tagline: 'Phản ứng, nguyên tử, liên kết & tính toán hóa học THCS',
     icon: '🧪',
     badge: 'ĐANG HỌC',
-    accentColor: '#0ea5e9',
-    borderColor: '#0284c7',
+    accentColor: '#2A6FDB',
+    borderColor: '#1D55AD',
+    mascotName: 'Atom',
     available: true,
     topics: ['Chất quanh ta (KHTN 6)', 'Nguyên tử & Bảng tuần hoàn (7)', 'Phản ứng & Tính toán Mol (8)', 'Kim loại, Phi kim & Hữu cơ (9)'],
   },
@@ -36,8 +38,9 @@ export const SUBJECTS: SubjectInfo[] = [
     tagline: 'Cơ học, Nhiệt học, Điện từ học & Quang học THCS',
     icon: '⚡',
     badge: 'TRỌN BỘ 20 BÀI',
-    accentColor: '#eab308',
-    borderColor: '#ca8a04',
+    accentColor: '#6B4DE0',
+    borderColor: '#5139B4',
+    mascotName: 'Proton',
     available: true,
     statusText: 'Đã hoàn thành trọn bộ 20 bài (Unit 0, 1, 2, 3) Vật lý Lớp 6 KNTT',
     topics: ['Lực & Chuyển động (Cơ học)', 'Nhiệt năng & Sự truyền nhiệt', 'Điện trở, Định luật Ohm & Mạch điện', 'Khúc xạ, Thấu kính & Ánh sáng'],
@@ -49,8 +52,9 @@ export const SUBJECTS: SubjectInfo[] = [
     tagline: 'Tế bào, sinh lý, chuyển hóa năng lượng, cảm ứng & sinh sản THCS',
     icon: '🌿',
     badge: 'TRỌN BỘ 64 BÀI',
-    accentColor: '#10b981',
-    borderColor: '#059669',
+    accentColor: '#0A8272',
+    borderColor: '#075F54',
+    mascotName: 'Leafy',
     available: true,
     statusText: 'Đã hoàn thành trọn bộ 64 bài: Lớp 6 (24 bài), Lớp 7 (22 bài) & Lớp 8 (18 bài) KNTT',
     topics: [
@@ -64,12 +68,19 @@ export const SUBJECTS: SubjectInfo[] = [
 
 export function getActiveSubject(): SubjectId {
   if (typeof window === 'undefined') return 'chem';
-  return (localStorage.getItem('chem_active_subject') as SubjectId) || 'chem';
+  const sub = (localStorage.getItem('chem_active_subject') as SubjectId) || 'chem';
+  if (typeof document !== 'undefined') {
+    document.documentElement.setAttribute('data-subject', sub);
+  }
+  return sub;
 }
 
 export function setActiveSubject(subjectId: SubjectId): void {
   if (typeof window !== 'undefined') {
     localStorage.setItem('chem_active_subject', subjectId);
+    if (typeof document !== 'undefined') {
+      document.documentElement.setAttribute('data-subject', subjectId);
+    }
     window.dispatchEvent(new CustomEvent('chem_subject_changed', { detail: subjectId }));
   }
 }

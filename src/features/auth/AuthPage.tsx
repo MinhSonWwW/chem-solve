@@ -54,22 +54,8 @@ const FloatingBackground: React.FC = React.memo(() => {
 
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-      {/* Gradient mesh */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0c1a22] via-[#131f24] to-[#0d2233]" />
-
-      {/* Radial glow */}
-      <div
-        className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] sm:w-[600px] sm:h-[600px] rounded-full"
-        style={{
-          background: 'radial-gradient(circle, rgba(14,165,233,0.08) 0%, transparent 70%)',
-        }}
-      />
-      <div
-        className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] rounded-full"
-        style={{
-          background: 'radial-gradient(circle, rgba(0,205,156,0.06) 0%, transparent 70%)',
-        }}
-      />
+      {/* Background canvas */}
+      <div className="absolute inset-0 bg-[var(--bg-canvas)]" />
 
       {/* Floating molecular dots */}
       {molecules.map((m) => (
@@ -82,12 +68,10 @@ const FloatingBackground: React.FC = React.memo(() => {
             width: m.size,
             height: m.size,
             backgroundColor:
-              m.id % 3 === 0
-                ? 'rgba(14,165,233,0.4)'
-                : m.id % 3 === 1
-                ? 'rgba(0,205,156,0.4)'
-                : 'rgba(255,150,0,0.3)',
-            opacity: m.opacity,
+              m.id % 2 === 0
+                ? 'var(--subject-fill)'
+                : 'var(--gold-fill)',
+            opacity: m.opacity * 0.5,
           }}
           animate={
             prefersReduced
@@ -109,7 +93,7 @@ const FloatingBackground: React.FC = React.memo(() => {
 
       {/* Hexagon grid pattern (subtle) */}
       <svg
-        className="absolute inset-0 w-full h-full opacity-[0.025]"
+        className="absolute inset-0 w-full h-full opacity-[0.03]"
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
@@ -117,13 +101,13 @@ const FloatingBackground: React.FC = React.memo(() => {
             <path
               d="M28 66L0 50L0 16L28 0L56 16L56 50L28 66Z"
               fill="none"
-              stroke="#0ea5e9"
+              stroke="var(--border-strong)"
               strokeWidth="0.5"
             />
             <path
               d="M28 100L0 84L0 50L28 34L56 50L56 84L28 100Z"
               fill="none"
-              stroke="#0ea5e9"
+              stroke="var(--border-strong)"
               strokeWidth="0.5"
             />
           </pattern>
@@ -169,11 +153,11 @@ function getPasswordStrength(password: string): { score: number; label: string; 
   if (/\d/.test(password)) score++;
   if (/[^A-Za-z0-9]/.test(password)) score++;
 
-  if (score <= 1) return { score: 1, label: 'Yếu', color: '#ff4b4b' };
-  if (score <= 2) return { score: 2, label: 'Trung bình', color: '#ff9600' };
-  if (score <= 3) return { score: 3, label: 'Khá', color: '#fde68a' };
-  if (score <= 4) return { score: 4, label: 'Mạnh', color: '#58cc02' };
-  return { score: 5, label: 'Rất mạnh', color: '#00cd9c' };
+  if (score <= 1) return { score: 1, label: 'Yếu', color: 'var(--err-fill)' };
+  if (score <= 2) return { score: 2, label: 'Trung bình', color: 'var(--warn-fill)' };
+  if (score <= 3) return { score: 3, label: 'Khá', color: 'var(--warn-fg)' };
+  if (score <= 4) return { score: 4, label: 'Mạnh', color: 'var(--ok-fg)' };
+  return { score: 5, label: 'Rất mạnh', color: 'var(--ok-fill)' };
 }
 
 const PasswordStrengthBar: React.FC<{ password: string }> = ({ password }) => {
@@ -193,7 +177,7 @@ const PasswordStrengthBar: React.FC<{ password: string }> = ({ password }) => {
             key={i}
             className="h-1 flex-1 rounded-full"
             style={{
-              backgroundColor: i <= strength.score ? strength.color : '#2e4756',
+              backgroundColor: i <= strength.score ? strength.color : 'var(--bg-surface-2)',
             }}
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
@@ -239,12 +223,12 @@ const AuthInput: React.FC<AuthInputProps> = ({
   return (
     <div className="relative">
       <motion.div
-        className={`relative flex items-center rounded-2xl border-2 transition-colors ${
+        className={`relative flex items-center rounded-2xl border transition-colors ${
           error
-            ? 'border-[#ff4b4b]/60 bg-[#ff4b4b]/5'
+            ? 'border-[var(--err-edge)] bg-[var(--err-tint)]'
             : isFocused
-            ? 'border-[#0ea5e9]/60 bg-[#0ea5e9]/5'
-            : 'border-[#2e4756]/60 bg-[#18272f]/80'
+            ? 'border-[var(--subject-fill)] bg-[var(--subject-tint)]'
+            : 'border-[var(--border)] bg-[var(--bg-surface)]'
         }`}
         animate={{
           scale: isFocused ? 1.01 : 1,
@@ -252,7 +236,7 @@ const AuthInput: React.FC<AuthInputProps> = ({
         transition={{ duration: 0.15 }}
       >
         <div className={`pl-3.5 sm:pl-4 pr-2 transition-colors shrink-0 ${
-          error ? 'text-[#ff4b4b]' : isFocused ? 'text-[#0ea5e9]' : 'text-slate-500'
+          error ? 'text-[var(--err-fg)]' : isFocused ? 'text-[var(--subject-fg)]' : 'text-[var(--text-tertiary)]'
         }`}>
           <Icon size={18} />
         </div>
@@ -264,13 +248,13 @@ const AuthInput: React.FC<AuthInputProps> = ({
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
           autoComplete={autoComplete}
-          className="flex-1 bg-transparent py-3 sm:py-3.5 pr-3 sm:pr-4 text-xs sm:text-sm text-slate-100 placeholder:text-slate-500 outline-none font-semibold min-w-0"
+          className="flex-1 bg-transparent py-3 sm:py-3.5 pr-3 sm:pr-4 text-xs sm:text-sm text-[var(--text-primary)] placeholder:text-[var(--text-tertiary)] outline-none font-semibold min-w-0"
         />
         {showPasswordToggle && value && (
           <button
             type="button"
             onClick={() => setShowPassword(!showPassword)}
-            className="pr-3.5 sm:pr-4 pl-2 text-slate-500 hover:text-slate-300 transition-colors shrink-0"
+            className="pr-3.5 sm:pr-4 pl-2 text-[var(--text-tertiary)] hover:text-[var(--text-primary)] transition-colors shrink-0"
             tabIndex={-1}
           >
             {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
@@ -283,7 +267,7 @@ const AuthInput: React.FC<AuthInputProps> = ({
             initial={{ opacity: 0, y: -4 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -4 }}
-            className="text-[11px] text-[#ff4b4b] mt-1.5 pl-1 flex items-center gap-1 font-semibold"
+            className="text-[11px] text-[var(--err-fg)] mt-1.5 pl-1 flex items-center gap-1 font-semibold"
           >
             <AlertCircle size={12} /> {error}
           </motion.p>
@@ -309,7 +293,7 @@ const SocialButton: React.FC<SocialButtonProps> = ({ icon, label, onClick, disab
     disabled={disabled}
     whileHover={{ scale: 1.02 }}
     whileTap={{ scale: 0.96, y: 2 }}
-    className="flex items-center justify-center gap-1.5 sm:gap-2 w-full py-2.5 sm:py-3 px-2 sm:px-3 rounded-2xl border-2 border-[#2e4756]/60 bg-[#18272f]/80 hover:bg-[#20333d] hover:border-[#3d5a6c]/60 transition-all duration-200 text-xs sm:text-sm font-bold text-slate-200 disabled:opacity-50 disabled:cursor-not-allowed select-none cursor-pointer shadow-[0_3px_0_0_#131f24] active:shadow-[0_0_0_0_transparent] active:translate-y-[3px]"
+    className="flex items-center justify-center gap-1.5 sm:gap-2 w-full py-2.5 sm:py-3 px-2 sm:px-3 rounded-2xl border border-[var(--border)] bg-[var(--bg-surface)] hover:bg-[var(--bg-surface-2)] transition-all duration-200 text-xs sm:text-sm font-bold text-[var(--text-primary)] disabled:opacity-50 disabled:cursor-not-allowed select-none cursor-pointer"
   >
     {icon}
     <span className="truncate">{label}</span>
@@ -320,9 +304,9 @@ const SocialButton: React.FC<SocialButtonProps> = ({ icon, label, onClick, disab
 
 const AuthDivider: React.FC = () => (
   <div className="flex items-center gap-3 my-3 sm:my-4">
-    <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#2e4756] to-transparent" />
-    <span className="text-[10px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider">hoặc</span>
-    <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#2e4756] to-transparent" />
+    <div className="flex-1 h-px bg-[var(--border)]" />
+    <span className="text-[10px] sm:text-xs font-bold text-[var(--text-tertiary)] uppercase tracking-wider">hoặc</span>
+    <div className="flex-1 h-px bg-[var(--border)]" />
   </div>
 );
 
@@ -335,13 +319,13 @@ const AuthLogo: React.FC = () => (
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.4 }}
   >
-    {/* Animated Flask Icon */}
+    {/* Flask Icon */}
     <motion.div
       className="relative w-14 h-14 sm:w-18 sm:h-18 mb-2 sm:mb-3"
       animate={{ rotate: [0, -3, 3, -1, 0] }}
       transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
     >
-      <div className="w-14 h-14 sm:w-18 sm:h-18 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-[#0ea5e9] to-[#00cd9c] flex items-center justify-center shadow-lg shadow-[#0ea5e9]/20">
+      <div className="w-14 h-14 sm:w-18 sm:h-18 rounded-2xl sm:rounded-3xl bg-[var(--chem-fill)] flex items-center justify-center shadow-lg shadow-[var(--chem-tint)]">
         <FlaskConical className="w-7 h-7 sm:w-9 sm:h-9 text-white" strokeWidth={2.5} />
       </div>
       {/* Sparkle decorations */}
@@ -350,21 +334,21 @@ const AuthLogo: React.FC = () => (
         animate={{ scale: [0.8, 1.2, 0.8], opacity: [0.5, 1, 0.5] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
-        <Sparkles size={14} className="text-[#fde68a]" />
+        <Sparkles size={14} className="text-[var(--gold-fg)]" />
       </motion.div>
       <motion.div
         className="absolute -bottom-1 -left-1"
         animate={{ scale: [1, 0.7, 1], opacity: [0.7, 0.3, 0.7] }}
         transition={{ duration: 2.5, repeat: Infinity, delay: 0.5 }}
       >
-        <Atom size={12} className="text-[#0ea5e9]" />
+        <Atom size={12} className="text-white" />
       </motion.div>
     </motion.div>
 
-    <h1 className="text-xl sm:text-2xl font-black tracking-tight bg-gradient-to-r from-[#0ea5e9] via-[#00cd9c] to-[#0ea5e9] bg-clip-text text-transparent bg-[length:200%_auto] animate-[shimmer_3s_ease-in-out_infinite]">
-      CHEM-SOLVE
+    <h1 className="text-xl sm:text-2xl font-black tracking-tight text-[var(--text-primary)]">
+      STEM-SOLVE
     </h1>
-    <p className="text-[11px] sm:text-xs text-slate-400 font-semibold mt-0.5 tracking-wide">
+    <p className="text-[11px] sm:text-xs text-[var(--text-secondary)] font-semibold mt-0.5 tracking-wide">
       Đấu Trường Khoa Học THCS
     </p>
   </motion.div>
@@ -472,7 +456,7 @@ export const AuthPage: React.FC = () => {
 
   if (showSuccess) {
     return (
-      <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#131f24] px-4 safe-pt safe-pb overflow-hidden">
+      <div className="fixed inset-0 z-50 flex items-center justify-center bg-[var(--bg-canvas)] px-4 safe-pt safe-pb overflow-hidden">
         <FloatingBackground />
         <motion.div
           className="relative z-10 flex flex-col items-center max-w-sm w-full px-6 py-8 text-center"
@@ -481,24 +465,24 @@ export const AuthPage: React.FC = () => {
           transition={{ type: 'spring', bounce: 0.4, duration: 0.6 }}
         >
           <motion.div
-            className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-[#58cc02] to-[#00cd9c] flex items-center justify-center mb-5 shadow-lg shadow-[#58cc02]/30"
+            className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[var(--ok-fill)] flex items-center justify-center mb-5 shadow-lg shadow-[var(--ok-tint)] text-white"
             animate={{ scale: [1, 1.08, 1] }}
             transition={{ duration: 1.5, repeat: Infinity }}
           >
             <Check size={40} className="text-white" strokeWidth={3} />
           </motion.div>
-          <h2 className="text-xl sm:text-2xl font-black text-white mb-2">
+          <h2 className="text-xl sm:text-2xl font-black text-[var(--text-primary)] mb-2">
             {mode === 'register' ? 'Chào mừng nhà khoa học mới!' : 'Chào mừng trở lại!'}
           </h2>
-          <p className="text-xs sm:text-sm text-slate-400 font-semibold mb-6">
+          <p className="text-xs sm:text-sm text-[var(--text-secondary)] font-semibold mb-6">
             Phòng lab đã sẵn sàng, bắt đầu khám phá thôi! 🧪
           </p>
           <motion.div
-            className="w-7 h-7 border-2 border-[#0ea5e9] border-t-transparent rounded-full"
+            className="w-7 h-7 border-2 border-[var(--subject-fill)] border-t-transparent rounded-full"
             animate={{ rotate: 360 }}
             transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
           />
-          <p className="text-[11px] text-slate-500 mt-3 font-semibold">Đang chuyển hướng...</p>
+          <p className="text-[11px] text-[var(--text-tertiary)] mt-3 font-semibold">Đang chuyển hướng...</p>
         </motion.div>
       </div>
     );
@@ -507,50 +491,41 @@ export const AuthPage: React.FC = () => {
   // ── Main Render ──────────────────────────────────────────────
 
   return (
-    <div className="fixed inset-0 z-50 bg-[#131f24] overflow-y-auto overflow-x-hidden flex flex-col justify-between selection:bg-[#0ea5e9]/30">
+    <div className="fixed inset-0 z-50 bg-[var(--bg-canvas)] text-[var(--text-primary)] overflow-y-auto overflow-x-hidden flex flex-col justify-between selection:bg-[var(--subject-tint)]">
       <FloatingBackground />
-
-      {/* Add shimmer animation */}
-      <style>{`
-        @keyframes shimmer {
-          0% { background-position: 0% center; }
-          50% { background-position: 200% center; }
-          100% { background-position: 0% center; }
-        }
-      `}</style>
 
       {/* Top Header Bar with Safe Top Area */}
       <header className="relative z-20 w-full max-w-[440px] mx-auto flex items-center justify-between px-4 pt-3 sm:pt-4 pb-1 shrink-0 safe-pt">
         <button
           type="button"
           onClick={() => navigate('/')}
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#18272f]/90 hover:bg-[#20333d] border-2 border-[#2e4756] text-slate-300 hover:text-white text-xs font-bold transition-all shadow-[0_2px_0_0_#101a1f] active:translate-y-[2px] active:shadow-none cursor-pointer backdrop-blur-md"
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[var(--bg-surface)] hover:bg-[var(--bg-surface-2)] border border-[var(--border)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-xs font-bold transition-all cursor-pointer backdrop-blur-md"
           title="Quay về trang chính"
         >
           <ArrowLeft size={14} />
           <span>Về trang chủ</span>
         </button>
 
-        <span className="text-[10px] sm:text-xs font-extrabold text-slate-400 uppercase tracking-wider bg-[#18272f]/80 px-2.5 py-1 rounded-lg border border-[#2e4756]/40">
+        <span className="text-[10px] sm:text-xs font-extrabold text-[var(--text-tertiary)] uppercase tracking-wider bg-[var(--bg-surface)] px-2.5 py-1 rounded-lg border border-[var(--border)]">
           {mode === 'login' ? 'Đăng nhập' : 'Tạo tài khoản'}
         </span>
       </header>
 
-      {/* Main Content Area: uses my-auto on card so on short screens (360x640, landscape) it gracefully starts from top and scrolls down, while on tall screens it's vertically centered */}
+      {/* Main Content Area */}
       <main className="flex-1 flex flex-col justify-center items-center px-4 py-2 sm:py-6 w-full relative z-10 safe-pb">
         <div className="w-full max-w-[420px] mx-auto my-auto py-1 sm:py-2">
           <AuthLogo />
 
           {/* Mode Toggle Tabs */}
-          <div className="flex bg-[#18272f] rounded-2xl p-1 mb-3.5 sm:mb-5 border border-[#2e4756]/40">
+          <div className="flex bg-[var(--bg-surface-2)] rounded-2xl p-1 mb-3.5 sm:mb-5 border border-[var(--border)]">
             {(['login', 'register'] as AuthMode[]).map((m) => (
               <button
                 key={m}
                 onClick={() => switchMode(m)}
                 className={`flex-1 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-black transition-all duration-200 select-none cursor-pointer ${
                   mode === m
-                    ? 'bg-gradient-to-r from-[#0ea5e9] to-[#0284c7] text-white shadow-lg shadow-[#0ea5e9]/20'
-                    : 'text-slate-400 hover:text-slate-200'
+                    ? 'bg-[var(--subject-fill)] text-white shadow-[0_2px_0_0_var(--subject-edge)]'
+                    : 'text-[var(--text-tertiary)] hover:text-[var(--text-primary)]'
                 }`}
               >
                 {m === 'login' ? 'Đăng nhập' : 'Đăng ký'}
@@ -565,10 +540,10 @@ export const AuthPage: React.FC = () => {
                 initial={{ opacity: 0, y: -10, height: 0 }}
                 animate={{ opacity: 1, y: 0, height: 'auto' }}
                 exit={{ opacity: 0, y: -10, height: 0 }}
-                className="mb-3 p-2.5 sm:p-3 rounded-xl bg-[#ff4b4b]/10 border border-[#ff4b4b]/30 flex items-center gap-2"
+                className="mb-3 p-2.5 sm:p-3 rounded-xl bg-[var(--err-tint)] border border-[var(--err-edge)] flex items-center gap-2"
               >
-                <AlertCircle size={15} className="text-[#ff4b4b] shrink-0" />
-                <p className="text-xs text-[#ff4b4b] font-semibold">{error}</p>
+                <AlertCircle size={15} className="text-[var(--err-fg)] shrink-0" />
+                <p className="text-xs text-[var(--err-fg)] font-semibold">{error}</p>
               </motion.div>
             )}
           </AnimatePresence>
@@ -671,7 +646,7 @@ export const AuthPage: React.FC = () => {
                 <div className="text-right">
                   <button
                     type="button"
-                    className="text-xs text-[#0ea5e9] font-bold hover:text-[#38bdf8] transition-colors cursor-pointer"
+                    className="text-xs text-[var(--subject-fg)] font-bold hover:underline transition-colors cursor-pointer"
                   >
                     Quên mật khẩu?
                   </button>
@@ -682,9 +657,9 @@ export const AuthPage: React.FC = () => {
               <motion.button
                 type="submit"
                 disabled={isLoading}
-                whileHover={isLoading ? undefined : { scale: 1.01 }}
-                whileTap={isLoading ? undefined : { scale: 0.98, y: 3 }}
-                className="w-full py-3.5 sm:py-4 rounded-2xl font-black text-sm sm:text-base text-white bg-gradient-to-r from-[#0ea5e9] to-[#0284c7] shadow-[0_4px_0_0_#065985] hover:from-[#38bdf8] hover:to-[#0ea5e9] transition-all duration-200 flex items-center justify-center gap-2.5 disabled:opacity-60 disabled:cursor-not-allowed active:shadow-[0_0_0_0_transparent] active:translate-y-[4px] select-none cursor-pointer"
+                whileHover={isLoading ? undefined : { opacity: 0.95 }}
+                whileTap={isLoading ? undefined : { y: 2 }}
+                className="w-full py-3.5 sm:py-4 rounded-2xl font-black text-sm sm:text-base text-white bg-[var(--subject-fill)] shadow-[0_4px_0_0_var(--subject-edge)] transition-all duration-200 flex items-center justify-center gap-2.5 disabled:opacity-60 disabled:cursor-not-allowed active:shadow-none active:translate-y-[4px] select-none cursor-pointer"
               >
                 {isLoading ? (
                   <>
@@ -708,7 +683,7 @@ export const AuthPage: React.FC = () => {
           {/* Social Divider */}
           <AuthDivider />
 
-          {/* Social Login Buttons - Responsive 3-column grid that works seamlessly on mobile and desktop */}
+          {/* Social Login Buttons */}
           <div className="grid grid-cols-3 gap-2 sm:gap-2.5">
             <SocialButton
               icon={<GoogleIcon className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />}
@@ -723,7 +698,7 @@ export const AuthPage: React.FC = () => {
               disabled={isLoading}
             />
             <SocialButton
-              icon={<GithubIcon className="w-4 h-4 sm:w-5 sm:h-5 text-white shrink-0" />}
+              icon={<GithubIcon className="w-4 h-4 sm:w-5 sm:h-5 text-current shrink-0" />}
               label="GitHub"
               onClick={() => handleSocial('github')}
               disabled={isLoading}
@@ -731,16 +706,16 @@ export const AuthPage: React.FC = () => {
           </div>
 
           {/* Footer Terms */}
-          <p className="text-center text-[10px] sm:text-[11px] text-slate-500 mt-4 sm:mt-5 leading-relaxed font-medium">
+          <p className="text-center text-[10px] sm:text-[11px] text-[var(--text-tertiary)] mt-4 sm:mt-5 leading-relaxed font-medium">
             Khi tiếp tục, bạn đồng ý với{' '}
-            <button type="button" className="text-[#0ea5e9] hover:underline font-bold cursor-pointer">
+            <button type="button" className="text-[var(--subject-fg)] hover:underline font-bold cursor-pointer">
               Điều khoản
             </button>{' '}
             và{' '}
-            <button type="button" className="text-[#0ea5e9] hover:underline font-bold cursor-pointer">
+            <button type="button" className="text-[var(--subject-fg)] hover:underline font-bold cursor-pointer">
               Bảo mật
             </button>{' '}
-            của Chem-Solve.
+            của STEM-Solve.
           </p>
         </div>
       </main>

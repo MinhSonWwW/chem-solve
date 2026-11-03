@@ -49,7 +49,7 @@ export const DesktopSidebar: React.FC = () => {
   const currentSub = SUBJECTS.find((s) => s.id === activeSubject) || SUBJECTS[0];
 
   return (
-    <aside className="hidden lg:flex flex-col justify-between w-64 h-[100dvh] sticky top-0 border-r-2 border-[#2e4756] bg-[#131f24]/95 px-4 py-6 select-none z-20">
+    <aside className="hidden lg:flex flex-col justify-between w-64 h-[100dvh] sticky top-0 border-r border-[var(--border)] bg-[var(--bg-surface)] px-4 py-6 select-none z-20">
       {/* 1. Header / Logo */}
       <div className="space-y-4">
         <NavLink
@@ -58,16 +58,10 @@ export const DesktopSidebar: React.FC = () => {
           className="flex items-center gap-3 px-2 group cursor-pointer"
         >
           <div
-            className={`w-10 h-10 rounded-2xl flex items-center justify-center font-black text-white text-base overflow-hidden border group-hover:scale-105 transition-transform ${
-              activeSubject === 'physics'
-                ? 'bg-[#eab308] border-amber-300/50 shadow-[0_4px_0_0_#ca8a04]'
-                : activeSubject === 'bio'
-                ? 'bg-[#10b981] border-emerald-300/50 shadow-[0_4px_0_0_#059669]'
-                : 'bg-[#0ea5e9] border-sky-300/40 shadow-[0_4px_0_0_#0284c7]'
-            }`}
+            className="w-10 h-10 rounded-2xl flex items-center justify-center font-black text-white text-base overflow-hidden border border-white/30 bg-[var(--subject-fill)] shadow-[0_4px_0_0_var(--subject-edge)] group-hover:scale-105 transition-transform"
           >
             {activeSubject === 'physics' ? (
-              <Zap className="w-6 h-6 text-slate-950 fill-slate-950" />
+              <Zap className="w-6 h-6 text-white fill-white" />
             ) : activeSubject === 'bio' ? (
               <span className="text-xl select-none">🌿</span>
             ) : (
@@ -82,22 +76,22 @@ export const DesktopSidebar: React.FC = () => {
             )}
           </div>
           <div>
-            <span className="font-black text-xl tracking-wider text-white block leading-tight">
+            <span className="font-black text-xl tracking-wider text-[var(--text-primary)] block leading-tight">
               {activeSubject === 'physics' ? (
                 <>
-                  PHY<span className="text-[#eab308]">-SOLVE</span>
+                  PHY<span className="text-[var(--phy-fg)]">-SOLVE</span>
                 </>
               ) : activeSubject === 'bio' ? (
                 <>
-                  BIO<span className="text-[#10b981]">-SOLVE</span>
+                  BIO<span className="text-[var(--bio-fg)]">-SOLVE</span>
                 </>
               ) : (
                 <>
-                  CHEM<span className="text-[#0ea5e9]">-SOLVE</span>
+                  CHEM<span className="text-[var(--chem-fg)]">-SOLVE</span>
                 </>
               )}
             </span>
-            <span className="text-[10px] font-bold text-slate-400 tracking-wider uppercase">
+            <span className="text-[10px] font-bold text-[var(--text-tertiary)] tracking-wider uppercase">
               {activeSubject === 'physics'
                 ? 'Vật lý Lớp 6-9 KNTT'
                 : activeSubject === 'bio'
@@ -113,41 +107,29 @@ export const DesktopSidebar: React.FC = () => {
             sound.playClick();
             setShowSubjectModal(true);
           }}
-          className={`sidebar-subject-btn w-full flex items-center justify-between p-2.5 rounded-2xl bg-[#18272f] border-2 transition-all text-left shadow-[0_3px_0_0_#101a1f] cursor-pointer group ${
-            activeSubject === 'physics'
-              ? 'border-amber-500/40 hover:border-amber-400'
-              : activeSubject === 'bio'
-              ? 'border-emerald-500/40 hover:border-emerald-400'
-              : 'border-[#2e4756] hover:border-sky-500/60'
-          }`}
+          className="sidebar-subject-btn w-full flex items-center justify-between p-2.5 rounded-2xl bg-[var(--bg-surface-2)] border border-[var(--border)] hover:border-[var(--subject-edge)] transition-all text-left cursor-pointer group"
           title="Chọn môn học (Hóa học, Vật lý, Sinh học...)"
         >
           <div className="flex items-center gap-2.5 min-w-0">
             <span className="text-xl shrink-0">{currentSub.icon}</span>
             <div className="min-w-0">
               <div className="flex items-center gap-1.5">
-                <span className="text-xs font-black text-white truncate">{currentSub.name}</span>
+                <span className="text-xs font-black text-[var(--text-primary)] truncate">{currentSub.name}</span>
                 <span
-                  className="text-[9px] font-black uppercase px-1 py-0.2 rounded border"
-                  style={{
-                    backgroundColor: `${currentSub.accentColor}20`,
-                    color: currentSub.accentColor,
-                    borderColor: `${currentSub.accentColor}40`,
-                  }}
+                  className="text-[9px] font-black uppercase px-1 py-0.2 rounded border bg-[var(--subject-tint)] text-[var(--subject-fg)] border-[var(--subject-edge)]"
                 >
                   {currentSub.badge}
                 </span>
               </div>
-              <div className="text-[10px] text-slate-400 truncate">Nhấn để đổi môn</div>
+              <div className="text-[10px] text-[var(--text-tertiary)] truncate">Nhấn để đổi môn</div>
             </div>
           </div>
-          <ChevronDown className="w-4 h-4 text-slate-400 group-hover:text-white transition-colors shrink-0" />
+          <ChevronDown className="w-4 h-4 text-[var(--text-tertiary)] group-hover:text-[var(--text-primary)] transition-colors shrink-0" />
         </button>
 
         {/* 2. Navigation List */}
         <nav className="space-y-1.5">
           {NAV_ITEMS.map((item) => {
-            // For Physics & Bio, replace chemistry flask icon
             const Icon =
               item.to === '/practice' && activeSubject === 'physics'
                 ? Zap
@@ -159,34 +141,20 @@ export const DesktopSidebar: React.FC = () => {
               ? location.pathname.startsWith(item.matchPrefix)
               : location.pathname === item.to;
 
-            const activeColorClass =
-              activeSubject === 'physics'
-                ? 'bg-[#eab308]/15 border-[#eab308] text-amber-300 shadow-[0_4px_0_0_#ca8a04]'
-                : activeSubject === 'bio'
-                ? 'bg-[#10b981]/15 border-[#10b981] text-emerald-300 shadow-[0_4px_0_0_#059669]'
-                : 'bg-[#0ea5e9]/15 border-[#0ea5e9] text-[#38bdf8] shadow-[0_4px_0_0_#0284c7]';
-
-            const activeIconColor =
-              activeSubject === 'physics'
-                ? 'text-[#eab308]'
-                : activeSubject === 'bio'
-                ? 'text-[#10b981]'
-                : 'text-[#0ea5e9]';
-
             return (
               <NavLink
                 key={item.to}
                 to={to}
                 onClick={() => sound.playClick()}
-                className={`sidebar-nav-item flex items-center gap-3.5 px-4 py-3.5 rounded-2xl text-xs font-black tracking-wider transition-all duration-150 cursor-pointer border-2 ${
+                className={`sidebar-nav-item flex items-center gap-3.5 px-4 py-3 rounded-2xl text-xs font-black tracking-wider transition-all duration-150 cursor-pointer border ${
                   isActive
-                    ? `${activeColorClass} -translate-y-[2px]`
-                    : 'border-transparent text-slate-400 hover:text-white hover:bg-[#18272f]'
+                    ? 'border-2 border-[var(--subject-fill)] bg-[var(--subject-tint)] text-[var(--subject-fg)]'
+                    : 'border-transparent text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-surface-2)]'
                 }`}
               >
                 <Icon
-                  className={`w-6 h-6 transition-transform ${
-                    isActive ? `${activeIconColor} scale-110` : 'text-slate-400'
+                  className={`w-5 h-5 transition-transform ${
+                    isActive ? 'text-[var(--subject-fg)] scale-110' : 'text-[var(--text-tertiary)]'
                   }`}
                 />
                 <span>{item.label}</span>
@@ -197,35 +165,35 @@ export const DesktopSidebar: React.FC = () => {
       </div>
 
       {/* 3. Footer Tools */}
-      <div className="pt-4 border-t border-slate-800/80 space-y-2.5">
+      <div className="pt-4 border-t border-[var(--border)] space-y-2.5">
         {/* Account / Login CTA Widget */}
         {isAuthenticated && user ? (
           <NavLink
             to="/profile"
             onClick={() => sound.playClick()}
-            className="sidebar-profile-card w-full flex items-center justify-between p-2 rounded-2xl bg-[#18272f] border-2 border-emerald-500/40 hover:border-emerald-400 transition-all cursor-pointer group shadow-[0_2px_0_0_#064e3b]"
+            className="sidebar-profile-card w-full flex items-center justify-between p-2 rounded-2xl bg-[var(--ok-tint)] border border-[var(--ok-edge)] transition-all cursor-pointer group"
             title="Đến trang Hồ sơ cá nhân"
           >
             <div className="flex items-center gap-2 min-w-0">
-              <div className="w-8 h-8 rounded-xl bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 flex items-center justify-center font-black text-xs shrink-0">
+              <div className="w-8 h-8 rounded-xl bg-[var(--ok-fill)] text-white flex items-center justify-center font-black text-xs shrink-0">
                 {user.displayName?.[0]?.toUpperCase() || 'U'}
               </div>
               <div className="min-w-0 text-left">
-                <span className="block text-xs font-black text-white truncate group-hover:text-emerald-300">
+                <span className="block text-xs font-black text-[var(--text-primary)] truncate">
                   {user.displayName}
                 </span>
-                <span className="block text-[9px] text-emerald-400 font-extrabold uppercase tracking-tight">
+                <span className="block text-[9px] text-[var(--ok-fg)] font-extrabold uppercase tracking-tight">
                   Đã đồng bộ ✓
                 </span>
               </div>
             </div>
-            <User className="w-4 h-4 text-slate-400 group-hover:text-emerald-300 shrink-0 mr-1" />
+            <User className="w-4 h-4 text-[var(--ok-fg)] shrink-0 mr-1" />
           </NavLink>
         ) : (
           <NavLink
             to="/auth"
             onClick={() => sound.playClick()}
-            className="w-full py-2.5 px-3 rounded-2xl bg-gradient-to-r from-[#0ea5e9] to-[#0284c7] hover:from-[#38bdf8] hover:to-[#0ea5e9] text-white text-xs font-black flex items-center justify-center gap-2 shadow-[0_3px_0_0_#0369a1] active:translate-y-[3px] active:shadow-none transition-all cursor-pointer select-none"
+            className="w-full py-2.5 px-3 rounded-2xl bg-[var(--subject-fill)] hover:opacity-95 text-white text-xs font-black flex items-center justify-center gap-2 shadow-[0_4px_0_0_var(--subject-edge)] active:translate-y-1 active:shadow-none transition-all cursor-pointer select-none"
             title="Đăng nhập để lưu tiến trình học tập"
           >
             <LogIn className="w-4 h-4" />
@@ -242,19 +210,19 @@ export const DesktopSidebar: React.FC = () => {
             toggleSound();
             sound.playClick();
           }}
-          className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-[11px] font-bold text-slate-400 hover:text-slate-200 hover:bg-slate-900/60 transition-colors cursor-pointer"
+          className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-[11px] font-bold text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-surface-2)] transition-colors cursor-pointer"
         >
           <span className="flex items-center gap-2">
             {soundEnabled ? (
-              <Volume2 className="w-4 h-4 text-cyan-400" />
+              <Volume2 className="w-4 h-4 text-[var(--subject-fg)]" />
             ) : (
-              <VolumeX className="w-4 h-4 text-slate-500" />
+              <VolumeX className="w-4 h-4 text-[var(--text-tertiary)]" />
             )}
             Âm thanh
           </span>
           <span
             className={`text-[10px] font-extrabold uppercase px-1.5 py-0.5 rounded ${
-              soundEnabled ? 'bg-cyan-950 text-cyan-300 border border-cyan-800' : 'bg-slate-800 text-slate-400'
+              soundEnabled ? 'bg-[var(--subject-tint)] text-[var(--subject-fg)] border border-[var(--subject-edge)]' : 'bg-[var(--bg-surface-2)] text-[var(--text-tertiary)]'
             }`}
           >
             {soundEnabled ? 'BẬT' : 'TẮT'}
@@ -264,7 +232,7 @@ export const DesktopSidebar: React.FC = () => {
         {/* Design System Gallery Link */}
         <NavLink
           to="/dev/design-system"
-          className="w-full flex items-center gap-2 px-3 py-2 rounded-xl text-[11px] font-bold text-slate-500 hover:text-cyan-400 hover:bg-slate-900/60 transition-colors"
+          className="w-full flex items-center gap-2 px-3 py-2 rounded-xl text-[11px] font-bold text-[var(--text-tertiary)] hover:text-[var(--subject-fg)] hover:bg-[var(--bg-surface-2)] transition-colors"
         >
           <Code2 className="w-4 h-4" />
           <span>Design System</span>

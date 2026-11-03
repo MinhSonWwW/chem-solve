@@ -10,6 +10,12 @@ import {
   ReviewGame,
   ReactionBuilderGame,
   BloodTransfusionGame,
+  TitrationLabGame,
+  CircuitMasterGame,
+  OpticsBenchGame,
+  MicroscopeFocusGame,
+  ScientificMinigameRunner,
+  MINIGAME_CATALOG,
 } from '@/features/minigames';
 
 export const GamesPage: React.FC = () => {
@@ -25,9 +31,21 @@ export const GamesPage: React.FC = () => {
     return <Navigate to="/practice" replace />;
   }
 
-  // Render active minigame if gameId matches
+  // 1. Check specialized minigame components
   if (gameId === 'blood-transfusion') {
     return <BloodTransfusionGame onExit={handleExitGame} />;
+  }
+  if (gameId === 'titration-lab') {
+    return <TitrationLabGame onExit={handleExitGame} />;
+  }
+  if (gameId === 'circuit-master') {
+    return <CircuitMasterGame onExit={handleExitGame} />;
+  }
+  if (gameId === 'optics-bench') {
+    return <OpticsBenchGame onExit={handleExitGame} />;
+  }
+  if (gameId === 'microscope-focus') {
+    return <MicroscopeFocusGame onExit={handleExitGame} />;
   }
   if (gameId === 'match') {
     return <MatchGame onExit={handleExitGame} />;
@@ -52,6 +70,11 @@ export const GamesPage: React.FC = () => {
   }
   if (gameId === 'review') {
     return <ReviewGame onExit={handleExitGame} />;
+  }
+
+  // 2. Check 21 new scientific interactive minigames in catalog
+  if (gameId in MINIGAME_CATALOG) {
+    return <ScientificMinigameRunner gameId={gameId} onExit={handleExitGame} />;
   }
 
   return <Navigate to="/practice" replace />;

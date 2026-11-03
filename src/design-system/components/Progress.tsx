@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 
 export interface ProgressProps extends React.HTMLAttributes<HTMLDivElement> {
   value: number; // 0 to 100
-  color?: 'primary' | 'success' | 'amber';
+  color?: 'primary' | 'success' | 'amber' | 'gold';
   showTicks?: boolean;
 }
 
@@ -17,17 +17,19 @@ export const Progress: React.FC<ProgressProps> = ({
 }) => {
   const clamped = Math.min(100, Math.max(0, value));
 
-  const gradientClass =
+  const fillStyle =
     color === 'success'
-      ? 'from-emerald-500 to-teal-400'
+      ? { backgroundColor: 'var(--ok-fill)' }
       : color === 'amber'
-      ? 'from-amber-500 to-orange-400'
-      : 'from-cyan-500 to-blue-500';
+      ? { backgroundColor: 'var(--warn-fill)' }
+      : color === 'gold'
+      ? { backgroundColor: 'var(--gold-fill)' }
+      : { backgroundColor: 'var(--subject-fill)' };
 
   return (
     <div
       className={cn(
-        'w-full bg-slate-950 h-3.5 rounded-full border border-slate-800 relative overflow-hidden shadow-inner',
+        'w-full bg-[var(--bg-surface-2)] h-3.5 rounded-full border border-[var(--border)] relative overflow-hidden',
         className
       )}
       {...props}
@@ -37,7 +39,8 @@ export const Progress: React.FC<ProgressProps> = ({
         initial={{ width: 0 }}
         animate={{ width: `${clamped}%` }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
-        className={cn('h-full bg-gradient-to-r rounded-full relative', gradientClass)}
+        style={fillStyle}
+        className="h-full rounded-full relative"
       >
         {/* Highlight sheen */}
         <div className="absolute top-0 left-0 right-0 h-[1.5px] bg-white/40 rounded-full" />
@@ -46,10 +49,10 @@ export const Progress: React.FC<ProgressProps> = ({
       {/* Laboratory Measurement Ticks */}
       {showTicks && (
         <div className="absolute inset-0 flex justify-between px-3 pointer-events-none opacity-40">
-          <span className="w-[1px] h-full bg-slate-700" />
-          <span className="w-[1px] h-full bg-slate-700" />
-          <span className="w-[1px] h-full bg-slate-700" />
-          <span className="w-[1px] h-full bg-slate-700" />
+          <span className="w-[1px] h-full bg-[var(--border)]" />
+          <span className="w-[1px] h-full bg-[var(--border)]" />
+          <span className="w-[1px] h-full bg-[var(--border)]" />
+          <span className="w-[1px] h-full bg-[var(--border)]" />
         </div>
       )}
     </div>

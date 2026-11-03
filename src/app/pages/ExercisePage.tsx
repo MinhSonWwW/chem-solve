@@ -9,7 +9,7 @@ import {
   Progress,
   Heart,
   GemBadge,
-  Formula,
+  MathText,
   FeedbackSheet,
   SessionCompleteScreen,
   QuitModal,
@@ -35,9 +35,9 @@ import {
 } from '@/design-system';
 import { sound } from '@/lib/audio';
 import { haptic } from '@/lib/haptic';
-import { mascotVoice } from '@/lib/mascotVoice';
 import { loadExercisesForNode } from '@/content/contentLoader';
 import { loadSession, clearSession } from '@/engine/progress';
+import { assetUrl } from '@/lib/utils';
 import { GAMIFICATION } from '@/config/gamification';
 import { setActiveSubject, setActiveGrade, parseLessonSubjectAndGrade } from '@/content/subjects';
 import type { Exercise } from '@/content/schema/exercise';
@@ -86,43 +86,25 @@ const ChemicalLoadingScreen: React.FC<{ isPhysics?: boolean; isBio?: boolean }> 
   return (
     <div className="flex flex-col items-center justify-center min-h-[82dvh] px-4 select-none">
       <div className="max-w-sm w-full flex flex-col items-center text-center space-y-6">
-        {/* Animated aura & icon container */}
+        {/* Icon Container */}
         <div className="relative w-24 h-24 flex items-center justify-center">
-          {/* Outer glowing aura */}
           <div
-            className={`absolute inset-0 rounded-full blur-xl animate-pulse ${
-              isPhysics
-                ? 'bg-amber-500/20'
-                : isBio
-                ? 'bg-emerald-500/20'
-                : 'bg-cyan-500/15'
-            }`}
-          />
-
-          {/* Icon Container */}
-          <div
-            className={`relative w-20 h-20 rounded-3xl bg-[#131f24] border-2 shadow-[0_6px_0_0_#131f24] flex items-center justify-center overflow-hidden ${
-              isPhysics
-                ? 'border-amber-400/50 shadow-amber-950'
-                : isBio
-                ? 'border-emerald-400/50 shadow-emerald-950'
-                : 'border-cyan-400/50 shadow-[#0284c7]'
-            }`}
+            className={`relative w-20 h-20 rounded-3xl bg-[var(--bg-surface)] border-2 border-[var(--border)] flex items-center justify-center overflow-hidden shadow-sm`}
           >
             {isPhysics ? (
-              <Zap className="w-10 h-10 text-amber-400 drop-shadow-md z-10 animate-bounce duration-1000 fill-amber-400" />
+              <Zap className="w-10 h-10 text-[var(--phy-fg)] drop-shadow-md z-10 animate-bounce duration-1000 fill-[var(--phy-fill)]" />
             ) : isBio ? (
-              <Dna className="w-10 h-10 text-emerald-400 drop-shadow-md z-10 animate-spin duration-[4000ms]" />
+              <Dna className="w-10 h-10 text-[var(--bio-fg)] drop-shadow-md z-10 animate-spin duration-[4000ms]" />
             ) : (
               <>
-                <div className="absolute bottom-0 inset-x-0 h-11 bg-gradient-to-t from-cyan-500/40 to-teal-400/20 border-t border-cyan-400/50" />
+                <div className="absolute bottom-0 inset-x-0 h-11 bg-[var(--chem-tint)] border-t border-[var(--chem-edge)]" />
                 <motion.div
                   animate={{ y: [16, -18], opacity: [0, 1, 0], scale: [0.6, 1.2, 0.8] }}
                   transition={{ repeat: Infinity, duration: 1.4, ease: 'easeOut' }}
-                  className="absolute w-2.5 h-2.5 rounded-full bg-cyan-300 shadow-sm"
+                  className="absolute w-2.5 h-2.5 rounded-full bg-[var(--chem-fg)] shadow-sm"
                   style={{ left: '35%' }}
                 />
-                <FlaskConical className="w-10 h-10 text-cyan-400 drop-shadow-md z-10 animate-bounce duration-1000" />
+                <FlaskConical className="w-10 h-10 text-[var(--chem-fg)] drop-shadow-md z-10 animate-bounce duration-1000" />
               </>
             )}
           </div>
@@ -133,10 +115,10 @@ const ChemicalLoadingScreen: React.FC<{ isPhysics?: boolean; isBio?: boolean }> 
           <div className="flex items-center justify-center gap-2">
             <span
               className={`w-2 h-2 rounded-full animate-ping ${
-                isPhysics ? 'bg-amber-400' : isBio ? 'bg-emerald-400' : 'bg-cyan-400'
+                isPhysics ? 'bg-[var(--phy-fill)]' : isBio ? 'bg-[var(--bio-fill)]' : 'bg-[var(--chem-fill)]'
               }`}
             />
-            <span className="text-sm font-black text-slate-200 tracking-wide">
+            <span className="text-sm font-black text-[var(--text-primary)] tracking-wide">
               {isPhysics
                 ? 'Đang chuẩn bị dụng cụ thí nghiệm…'
                 : isBio
@@ -144,30 +126,30 @@ const ChemicalLoadingScreen: React.FC<{ isPhysics?: boolean; isBio?: boolean }> 
                 : 'Đang chuẩn bị phòng thí nghiệm…'}
             </span>
           </div>
-          <div className="w-full h-2 rounded-full bg-[#131f24] border border-[#2e4756] overflow-hidden p-0.5">
+          <div className="w-full h-2 rounded-full bg-[var(--bg-surface-2)] border border-[var(--border)] overflow-hidden p-0.5">
             <motion.div
               animate={{ x: ['-100%', '100%'] }}
               transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }}
               className={`w-1/2 h-full rounded-full bg-gradient-to-r ${
                 isPhysics
-                  ? 'from-transparent via-amber-400 to-transparent'
+                  ? 'from-transparent via-[var(--phy-fill)] to-transparent'
                   : isBio
-                  ? 'from-transparent via-emerald-400 to-transparent'
-                  : 'from-transparent via-cyan-400 to-transparent'
+                  ? 'from-transparent via-[var(--bio-fill)] to-transparent'
+                  : 'from-transparent via-[var(--chem-fill)] to-transparent'
               }`}
             />
           </div>
         </div>
 
         {/* Trivia Flashcard */}
-        <div className="w-full bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] rounded-2xl p-4 text-left relative overflow-hidden">
+        <div className="w-full bg-[var(--bg-surface)] border border-[var(--border)] rounded-2xl p-4 text-left relative overflow-hidden">
           <div
             className={`flex items-center gap-1.5 text-[11px] font-black uppercase tracking-wider mb-1.5 ${
               isPhysics
-                ? 'text-amber-400'
+                ? 'text-[var(--phy-fg)]'
                 : isBio
-                ? 'text-emerald-400'
-                : 'text-amber-400'
+                ? 'text-[var(--bio-fg)]'
+                : 'text-[var(--chem-fg)]'
             }`}
           >
             <Sparkles className="w-3.5 h-3.5" />
@@ -664,24 +646,20 @@ export const ExercisePage: React.FC = () => {
     const updated = useUserStore.getState().sessionState;
     if (updated) {
       const q = updated.questions[updated.currentIndex];
-      const subj = isBio ? 'bio' : isPhysics ? 'physics' : 'chem';
 
       if (q?.status === 'correct') {
         haptic.correct();
-        mascotVoice.speakCorrect(subj);
         setShowXpFly(true);
         setTimeout(() => setShowXpFly(false), 1200);
 
         if (updated.comboStreak >= 2) {
           haptic.streak();
-          mascotVoice.speakStreak(subj);
           setComboCount(updated.comboStreak);
           setShowComboBanner(true);
-          setTimeout(() => setShowComboBanner(2400));
+          setTimeout(() => setShowComboBanner(false), 2400);
         }
       } else if (q?.status === 'wrong') {
         haptic.wrong();
-        mascotVoice.speakWrong(subj);
 
         if (!isPracticeMode && updated.hearts <= 0) {
           // Failed session! Clear in-progress session so it doesn't linger
@@ -709,7 +687,6 @@ export const ExercisePage: React.FC = () => {
       const result = await endSession();
       if (result) {
         haptic.completion();
-        mascotVoice.speakCompletion(isBio ? 'bio' : isPhysics ? 'physics' : 'chem');
 
         if (isPracticeMode) {
           sound.playLevelUp();
@@ -720,7 +697,7 @@ export const ExercisePage: React.FC = () => {
         setSessionResult(result);
       }
     }
-  }, [sessionState, dispatch, endSession, isPracticeMode, isBio, isPhysics]);
+  }, [sessionState, dispatch, endSession, isPracticeMode]);
 
   const handleRetry = useCallback(() => {
     sound.playClick();
@@ -729,18 +706,10 @@ export const ExercisePage: React.FC = () => {
 
   const handleExit = useCallback(() => {
     sound.playClick();
-    mascotVoice.stop();
     setActiveSubject(subject);
     setActiveGrade(grade);
     setShowQuitModal(true);
   }, [subject, grade]);
-
-  // Ensure speech synthesis ceases immediately whenever leaving exercise
-  useEffect(() => {
-    return () => {
-      mascotVoice.stop();
-    };
-  }, []);
 
   // ── ChemKeyboard handlers ──
   const handleChemInsert = useCallback(
@@ -917,14 +886,14 @@ export const ExercisePage: React.FC = () => {
             sound.playClick();
             setShowReferenceDrawer(true);
           }}
-          className={`p-1.5 px-2 rounded-xl bg-slate-900 border text-xs font-bold flex items-center gap-1 transition-colors cursor-pointer ${
+          className={`p-1.5 px-2 rounded-xl bg-[var(--bg-surface)] border text-xs font-bold flex items-center gap-1 transition-colors cursor-pointer ${
             isPhysics
-              ? 'border-amber-500/50 text-amber-300 hover:text-amber-200 hover:bg-slate-800'
-              : 'border-slate-700/80 text-cyan-400 hover:text-cyan-300 hover:bg-slate-800'
+              ? 'border-[var(--phy-edge)]/50 text-[var(--phy-fg)] hover:bg-[var(--bg-surface-2)]'
+              : 'border-[var(--border)] text-[var(--chem-fg)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-surface-2)]'
           }`}
           title={isPhysics ? 'Tra cứu công thức & hằng số Vật lý' : 'Tra cứu nguyên tử khối & hóa trị'}
         >
-          {isPhysics ? <Zap className="w-3.5 h-3.5 text-amber-400 fill-amber-400" /> : <FlaskConical className="w-3.5 h-3.5 text-cyan-400" />}
+          {isPhysics ? <Zap className="w-3.5 h-3.5 text-[var(--phy-fg)] fill-[var(--phy-fill)]" /> : <FlaskConical className="w-3.5 h-3.5 text-[var(--chem-fg)]" />}
           <span className="hidden sm:inline">{isPhysics ? 'Công thức' : 'Tra cứu'}</span>
         </button>
 
@@ -982,10 +951,10 @@ export const ExercisePage: React.FC = () => {
         <div className="flex items-center justify-between">
           <div
             className={`text-[11px] font-black uppercase tracking-wide ${
-              isPhysics ? 'text-amber-400 flex items-center gap-1' : 'text-cyan-400'
+              isPhysics ? 'text-[var(--phy-fg)] flex items-center gap-1' : 'text-[var(--chem-fg)]'
             }`}
           >
-            {isPhysics && <Zap className="w-3.5 h-3.5 fill-amber-400" />}
+            {isPhysics && <Zap className="w-3.5 h-3.5 fill-[var(--phy-fill)]" />}
             <span>
               {lessonId} · Câu {sessionState.currentIndex + 1}/{sessionState.questions.length}
             </span>
@@ -1000,16 +969,9 @@ export const ExercisePage: React.FC = () => {
         {/* Prompt Card */}
         <Card
           variant={isPhysics ? 'default' : 'erlenmeyer'}
-          className={`space-y-3 relative overflow-hidden ${
-            isPhysics
-              ? 'border-2 border-amber-500/40 bg-[#18272f] shadow-[0_6px_0_0_#131f24]'
-              : ''
-          }`}
+          className="space-y-3 relative overflow-hidden"
         >
-          {isPhysics && (
-            <div className="absolute -right-6 -top-6 w-24 h-24 bg-amber-500/10 rounded-full blur-xl pointer-events-none" />
-          )}
-          <h2 className="text-base font-bold text-slate-100 leading-relaxed relative z-10">
+          <h2 className="text-base font-bold text-[var(--text-primary)] leading-relaxed relative z-10">
             {renderPrompt(exercise.prompt)}
           </h2>
 
@@ -1019,11 +981,7 @@ export const ExercisePage: React.FC = () => {
               {exercise.given?.map((g, i) => (
                 <span
                   key={i}
-                  className={`text-[11px] px-2.5 py-1 rounded-xl border ${
-                    isPhysics
-                      ? 'bg-slate-800/90 border-slate-700 text-amber-200'
-                      : 'bg-slate-800/80 border-slate-700/80 text-slate-300'
-                  }`}
+                  className="text-[11px] px-2.5 py-1 rounded-xl border bg-[var(--bg-surface-2)] border-[var(--border)] text-[var(--text-secondary)]"
                 >
                   📌 {renderPrompt(g.label)}: {g.value}
                   {g.unit ? ` ${g.unit}` : ''}
@@ -1031,13 +989,9 @@ export const ExercisePage: React.FC = () => {
               ))}
               {exercise.find && (
                 <span
-                  className={`text-[11px] px-2.5 py-1 rounded-xl border ${
-                    isPhysics
-                      ? 'bg-amber-950/60 border-amber-500/60 text-amber-300'
-                      : 'bg-cyan-950/50 border-cyan-800/60 text-cyan-300'
-                  }`}
+                  className="text-[11px] px-2.5 py-1 rounded-xl border bg-[var(--subject-tint)] border-[var(--subject-edge)] text-[var(--subject-fg)]"
                 >
-                  🎯 Cần tìm: {exercise.find.label}
+                  🎯 Cần tìm: {renderPrompt(exercise.find.label)}
                   {exercise.find.unit ? ` (${exercise.find.unit})` : ''}
                 </span>
               )}
@@ -1073,6 +1027,28 @@ export const ExercisePage: React.FC = () => {
           </motion.div>
         )}
 
+        {/* Visual Illustration Image (if specified in exercise) */}
+        {exercise.visual?.image && (
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+            className="w-full rounded-2xl overflow-hidden border border-[var(--border)] bg-[var(--bg-surface)] p-2.5 flex flex-col items-center justify-center shadow-sm select-none"
+          >
+            <img
+              src={assetUrl(exercise.visual.image)}
+              alt={exercise.visual.caption || 'Hình ảnh minh họa'}
+              className="max-h-56 w-auto object-contain rounded-xl"
+              loading="lazy"
+            />
+            {exercise.visual.caption && (
+              <p className="text-xs text-[var(--text-secondary)] mt-2 text-center font-medium">
+                {exercise.visual.caption}
+              </p>
+            )}
+          </motion.div>
+        )}
+
         {/* Answer Area — dynamic by kind */}
         <AnswerRenderer
           exercise={exercise}
@@ -1086,17 +1062,12 @@ export const ExercisePage: React.FC = () => {
       </motion.div>
 
       {/* 4. Bottom Sticky Action Bar */}
-      <div className="pt-2 border-t border-slate-800 safe-pb">
+      <div className="pt-2 border-t border-[var(--border)] safe-pb">
         {!isFeedbackVisible && (
           <Button
             variant="primary"
             size="lg"
             fullWidth
-            className={
-              isPhysics
-                ? 'bg-[#eab308] hover:bg-[#facc15] text-slate-950 font-black shadow-[0_4px_0_0_#ca8a04]'
-                : ''
-            }
             disabled={
               exercise.answer.kind === 'equation' && exercise.answer.mode === 'fill-coefficients'
                 ? false
@@ -1145,7 +1116,7 @@ export const ExercisePage: React.FC = () => {
               if (isRed || isBlue) {
                 reactionEffect = {
                   type: 'indicator',
-                  color: isRed ? '#ef4444' : '#3b82f6',
+                  color: isRed ? 'var(--lab-acid-red)' : 'var(--lab-base-blue)',
                   label: isRed ? 'Hiện tượng: Quỳ tím hóa đỏ (Tính axit)' : 'Hiện tượng: Quỳ tím hóa xanh (Tính kiềm)',
                 };
               }
@@ -1165,7 +1136,7 @@ export const ExercisePage: React.FC = () => {
               if (isBlue || isBrown || isWhite || finalSolLower.includes('↓')) {
                 reactionEffect = {
                   type: 'precipitate',
-                  color: isBlue ? '#38bdf8' : isBrown ? '#b45309' : '#ffffff',
+                  color: isBlue ? 'var(--lab-cuso4)' : isBrown ? 'var(--warn-fill)' : 'var(--lab-precipitate)',
                   label: isBlue
                     ? '↓ Hiện tượng: Kết tủa xanh lam Cu(OH)2'
                     : isBrown
@@ -1182,7 +1153,7 @@ export const ExercisePage: React.FC = () => {
             ) {
               reactionEffect = {
                 type: 'gas',
-                color: '#38bdf8',
+                color: 'var(--lab-cuso4)',
                 label: '↑ Hiện tượng: Sủi bọt khí bay lên',
               };
             }
@@ -1302,16 +1273,9 @@ export const ExercisePage: React.FC = () => {
   );
 };
 
-// ── Helper: Render prompt with [[Formula]] markers ──
+// ── Helper: Render prompt with Math ($...$), [[Formula]], and Bold (**) ──
 function renderPrompt(text: string): React.ReactNode {
-  const parts = text.split(/\[\[([^\]]+)\]\]/g);
-  return parts.map((part, i) =>
-    i % 2 === 1 ? (
-      <Formula key={i} code={part} className="text-cyan-300 font-black" />
-    ) : (
-      <React.Fragment key={i}>{part}</React.Fragment>
-    )
-  );
+  return <MathText text={text} />;
 }
 
 // ── Answer Renderer ──
@@ -1397,7 +1361,7 @@ const AnswerRenderer: React.FC<AnswerRendererProps> = ({
             <button
               onClick={onShowChemKeyboard}
               className={`mt-2 text-[11px] font-bold transition-colors cursor-pointer ${
-                isPhysics ? 'text-amber-400 hover:text-amber-300' : 'text-cyan-400 hover:text-cyan-300'
+                isPhysics ? 'text-[var(--phy-fg)] hover:underline' : 'text-[var(--chem-fg)] hover:underline'
               }`}
             >
               {isPhysics ? '⌨️ Mở bàn phím vật lý & công thức' : '⌨️ Mở bàn phím hóa học'}

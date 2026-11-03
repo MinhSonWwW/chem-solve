@@ -1,7 +1,7 @@
 /**
  * DoodleOrnament — Bộ trang trí vẽ tay (doodles) cho giao diện:
  * mũi tên uốn lượn, tia sao 4 cánh, gạch chân lượn sóng, bụi sao, bọt khí.
- * Mọi nét vẽ dùng stroke #131f24, dày 2–3px, không dùng bóng mờ nhòe.
+ * Mọi nét vẽ dùng stroke INK, dày 2–3px, không dùng bóng mờ nhòe.
  */
 import React from 'react';
 
@@ -22,7 +22,7 @@ interface DoodleOrnamentProps {
   className?: string;
 }
 
-const INK = '#131f24';
+const INK = 'currentColor';
 
 /* ─────────────────────────────────────────────────────────────────
    Shared SVG wrapper
@@ -111,7 +111,7 @@ function ArrowBounce({ size = 40, color = INK, className }: DoodleOrnamentProps)
 /* ─────────────────────────────────────────────────────────────────
    SPARKLE-STAR — Tia sao 4 cánh nét dày mỏng không đều tự nhiên
    ───────────────────────────────────────────────────────────────── */
-function SparkleStar({ size = 32, color = '#ff9600', className }: DoodleOrnamentProps) {
+function SparkleStar({ size = 32, color = 'var(--gold)', className }: DoodleOrnamentProps) {
   return (
     <DoodleSVG size={size} viewBox="0 0 32 32" className={className}>
       {/* Cánh sao dọc dày */}
@@ -146,7 +146,7 @@ function SparkleStar({ size = 32, color = '#ff9600', className }: DoodleOrnament
 /* ─────────────────────────────────────────────────────────────────
    GLINT — Tia lấp lánh nhỏ (3 cánh) dùng trang trí góc icon
    ───────────────────────────────────────────────────────────────── */
-function Glint({ size = 20, color = '#fbbf24', className }: DoodleOrnamentProps) {
+function Glint({ size = 20, color = 'var(--gold)', className }: DoodleOrnamentProps) {
   return (
     <DoodleSVG size={size} viewBox="0 0 20 20" className={className}>
       <path d="M10 2 L10 18" stroke={color} strokeWidth={2.5} strokeLinecap="round" />
@@ -160,7 +160,7 @@ function Glint({ size = 20, color = '#fbbf24', className }: DoodleOrnamentProps)
 /* ─────────────────────────────────────────────────────────────────
    WAVY-UNDERLINE — Gạch chân lượn sóng màu vàng phấn
    ───────────────────────────────────────────────────────────────── */
-function WavyUnderline({ color = '#fbbf24', className }: DoodleOrnamentProps) {
+function WavyUnderline({ color = 'var(--gold)', className }: DoodleOrnamentProps) {
   return (
     <DoodleSVG width={80} height={10} viewBox="0 0 80 10" className={className}>
       <path
@@ -197,7 +197,7 @@ function DoubleUnderline({ color = INK, className }: DoodleOrnamentProps) {
 /* ─────────────────────────────────────────────────────────────────
    STAR-DUST — Bụi sao bay lơ lửng (5 điểm sáng ngẫu nhiên)
    ───────────────────────────────────────────────────────────────── */
-function StarDust({ size = 48, color = '#fbbf24', className }: DoodleOrnamentProps) {
+function StarDust({ size = 48, color = 'var(--gold)', className }: DoodleOrnamentProps) {
   // Vị trí cố định — intentionally not centered, tạo cảm giác tự nhiên
   const stars = [
     { cx: 8, cy: 10, r: 1.8 },
@@ -224,7 +224,7 @@ function StarDust({ size = 48, color = '#fbbf24', className }: DoodleOrnamentPro
 /* ─────────────────────────────────────────────────────────────────
    BUBBLE-LAB — Bọt khí phòng lab bay lơ lửng (cartoon circles)
    ───────────────────────────────────────────────────────────────── */
-function BubbleLab({ size = 48, color = '#38bdf8', className }: DoodleOrnamentProps) {
+function BubbleLab({ size = 48, color = 'var(--chem)', className }: DoodleOrnamentProps) {
   return (
     <DoodleSVG size={size} viewBox="0 0 48 48" className={className}>
       <circle cx="10" cy="38" r="5" stroke={color} strokeWidth={2} fill="none" />
@@ -233,8 +233,8 @@ function BubbleLab({ size = 48, color = '#38bdf8', className }: DoodleOrnamentPr
       <circle cx="18" cy="12" r="3" stroke={color} strokeWidth={1.5} fill="none" />
       <circle cx="40" cy="18" r="2" stroke={color} strokeWidth={1.2} fill="none" />
       {/* Phản quang bọt khí */}
-      <path d="M21 22 Q22 20 24 21" stroke="#fff" strokeWidth={1.5} strokeLinecap="round" strokeOpacity={0.8} />
-      <path d="M8 35 Q9 34 10 35" stroke="#fff" strokeWidth={1.2} strokeLinecap="round" strokeOpacity={0.7} />
+      <path d="M21 22 Q22 20 24 21" stroke="var(--bg-surface)" strokeWidth={1.5} strokeLinecap="round" strokeOpacity={0.8} />
+      <path d="M8 35 Q9 34 10 35" stroke="var(--bg-surface)" strokeWidth={1.2} strokeLinecap="round" strokeOpacity={0.7} />
     </DoodleSVG>
   );
 }

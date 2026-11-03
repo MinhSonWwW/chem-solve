@@ -10,10 +10,10 @@ export const GemBadge: React.FC<GemBadgeProps> = ({ amount, className, ...props 
   return (
     <div
       className={cn(
-        'inline-flex items-center gap-1.5 text-cyan-200 font-black text-xs bg-cyan-950/60 border border-cyan-700/60 px-2.5 py-1 rounded-full shadow-[0_2px_0_0_#0e7490] select-none hover:scale-105 transition-transform',
+        'inline-flex items-center gap-1.5 text-[var(--gem-fg)] font-black text-xs bg-[var(--gem-tint)] border border-[var(--gem-edge)] px-2.5 py-1 rounded-full select-none hover:scale-105 transition-transform',
         className
       )}
-      title={`${amount} Đá quý (Dùng 150 đá quý để đổi 1 Tim)`}
+      title={`${amount} Đá quý`}
       {...props}
     >
       <img
@@ -24,7 +24,7 @@ export const GemBadge: React.FC<GemBadgeProps> = ({ amount, className, ...props 
           (e.target as HTMLElement).style.display = 'none';
         }}
       />
-      <GemIcon className="hidden w-3.5 h-3.5 fill-cyan-400 text-cyan-400" />
+      <GemIcon className="hidden w-3.5 h-3.5 fill-[var(--gem-fill)] text-[var(--gem-fill)]" />
       <span>{amount}</span>
     </div>
   );

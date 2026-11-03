@@ -45,7 +45,7 @@ export const CurrencyIcon: React.FC<CurrencyIconProps> = ({
           alt="Đá quý"
           className={cn(
             s.box,
-            'object-contain inline-block shrink-0 select-none align-middle filter drop-shadow-[0_2px_4px_rgba(6,182,212,0.4)]',
+            'object-contain inline-block shrink-0 select-none align-middle filter drop-shadow(0 2px 3px rgba(0,0,0,0.25))',
             animate && 'animate-bounce',
             className
           )}
@@ -60,7 +60,7 @@ export const CurrencyIcon: React.FC<CurrencyIconProps> = ({
           alt="Bình tim"
           className={cn(
             s.box,
-            'object-contain inline-block shrink-0 select-none align-middle filter drop-shadow-[0_2px_4px_rgba(244,63,94,0.4)]',
+            'object-contain inline-block shrink-0 select-none align-middle filter drop-shadow(0 2px 3px rgba(0,0,0,0.25))',
             animate && 'animate-pulse',
             className
           )}
@@ -75,7 +75,7 @@ export const CurrencyIcon: React.FC<CurrencyIconProps> = ({
           alt="Lửa chuỗi"
           className={cn(
             s.box,
-            'object-contain inline-block shrink-0 select-none align-middle filter drop-shadow-[0_2px_6px_rgba(249,115,22,0.5)]',
+            'object-contain inline-block shrink-0 select-none align-middle filter drop-shadow(0 2px 3px rgba(0,0,0,0.25))',
             className
           )}
           loading="lazy"
@@ -89,7 +89,7 @@ export const CurrencyIcon: React.FC<CurrencyIconProps> = ({
           alt="Kinh nghiệm"
           className={cn(
             s.box,
-            'object-contain inline-block shrink-0 select-none align-middle filter drop-shadow-[0_2px_4px_rgba(168,85,247,0.4)]',
+            'object-contain inline-block shrink-0 select-none align-middle filter drop-shadow(0 2px 3px rgba(0,0,0,0.25))',
             className
           )}
           loading="lazy"
@@ -103,7 +103,7 @@ export const CurrencyIcon: React.FC<CurrencyIconProps> = ({
           alt="Xu Hóa học"
           className={cn(
             s.box,
-            'object-contain inline-block shrink-0 select-none align-middle filter drop-shadow-[0_2px_4px_rgba(234,179,8,0.4)]',
+            'object-contain inline-block shrink-0 select-none align-middle filter drop-shadow(0 2px 3px rgba(0,0,0,0.25))',
             className
           )}
           loading="lazy"
@@ -117,7 +117,7 @@ export const CurrencyIcon: React.FC<CurrencyIconProps> = ({
           alt="Cúp vàng"
           className={cn(
             s.box,
-            'object-contain inline-block shrink-0 select-none align-middle filter drop-shadow-[0_2px_6px_rgba(245,158,11,0.5)]',
+            'object-contain inline-block shrink-0 select-none align-middle filter drop-shadow(0 2px 3px rgba(0,0,0,0.25))',
             className
           )}
           loading="lazy"
@@ -136,7 +136,7 @@ export const CurrencyIcon: React.FC<CurrencyIconProps> = ({
           title="Khiên đóng băng"
         >
           {type === 'freeze' ? (
-            <Snowflake className="w-full h-full p-0.5 text-cyan-300" />
+            <Snowflake className="w-full h-full p-0.5 text-sky-300" />
           ) : (
             <Shield className="w-full h-full p-0.5 text-sky-400" />
           )}

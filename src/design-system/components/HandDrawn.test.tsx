@@ -57,11 +57,11 @@ describe('HandDrawnIcon', () => {
 
   it('applies custom fillColor to flask', () => {
     const { container } = render(
-      <HandDrawnIcon name="flask" fillColor="#ff0000" />
+      <HandDrawnIcon name="flask" fillColor="var(--err)" />
     );
     const paths = container.querySelectorAll('path');
     const hasFill = Array.from(paths).some(
-      (p) => p.getAttribute('fill') === '#ff0000'
+      (p) => p.getAttribute('fill') === 'var(--err)'
     );
     expect(hasFill).toBe(true);
   });
@@ -108,13 +108,13 @@ describe('DoodleOrnament', () => {
 
   it('applies custom color to sparkle-star', () => {
     const { container } = render(
-      <DoodleOrnament name="sparkle-star" color="#00ff00" />
+      <DoodleOrnament name="sparkle-star" color="var(--bio)" />
     );
     const paths = container.querySelectorAll('path, circle');
     const hasColor = Array.from(paths).some(
       (el) =>
-        el.getAttribute('stroke') === '#00ff00' ||
-        el.getAttribute('fill') === '#00ff00'
+        el.getAttribute('stroke') === 'var(--bio)' ||
+        el.getAttribute('fill') === 'var(--bio)'
     );
     expect(hasColor).toBe(true);
   });

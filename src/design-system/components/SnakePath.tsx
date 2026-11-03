@@ -1,11 +1,11 @@
 /**
  * SnakePath — Bản đồ học tập ziczac phong cách Studio Game vẽ tay.
- * M3 Design Bible:
- *  - Đường nối: nét đứt 4px vẽ tay không đều, bọt khí + tinh thể rải rác
- *  - Nốt chưa học: khối đá xám 3D viền #2e4756, bóng 6px
- *  - Nốt đang học: hào quang pulse + linh vật Flasky mini nhún nhảy vẫy tay
- *  - Nốt hoàn thành: sao vàng đúc nổi viền mực đen tỏa tia sáng khi hover
- *  - Rương cuối chương: animation bập bùng + mũi tên vẽ tay "Chinh phục để mở rương!"
+ * Hệ màu v2 (stem-solve-colors-v2.md):
+ *  - Node đang học: {subject}.fill + bóng 3D {subject}.edge + pulse {subject}-tint + mascot
+ *  - Node đã hoàn thành: {subject}.fill + tick + sao gold (KHÔNG tô xanh lục)
+ *  - Node đã khóa: --bg-surface-2 + viền/đáy --border + icon ổ khóa --text-tertiary
+ *  - Rương thưởng: gold.fill + bóng gold.edge (chữ/icon mực --on-ink)
+ *  - Trạm ôn tập: slate.fill + bóng slate.edge + icon trắng
  */
 import React from 'react';
 import { motion } from 'motion/react';
@@ -30,48 +30,45 @@ export interface SnakePathProps {
   subject?: 'chem' | 'physics' | 'bio';
 }
 
-/* ─── Design tokens per subject ─── */
+/* ─── Design tokens per subject (v2) ─── */
 const ACCENT = {
   chem: {
-    grad1: '#38bdf8',
-    grad2: '#0ea5e9',
-    shadow: '#0284c7',
-    activeBg: 'bg-gradient-to-tr from-[#0ea5e9] to-[#38bdf8]',
-    activeShadow: 'shadow-[0_8px_0_0_#0284c7] active:shadow-[0_0px_0_0_#0284c7]',
-    ring: 'bg-cyan-400/30',
-    badge: 'from-cyan-400 to-sky-300 text-slate-950 border-cyan-200',
-    badgePointer: 'border-t-sky-300',
-    trackColor: '#0ea5e9',
-    glowColor: '#0284c7',
-    bubbleColor: '#38bdf8',
+    fill: 'var(--chem-fill)',
+    edge: 'var(--chem-edge)',
+    fg: 'var(--chem-fg)',
+    tint: 'var(--chem-tint)',
+    activeShadow: 'shadow-[0_8px_0_0_var(--chem-edge)]',
+    ring: 'bg-[var(--chem-tint)]',
+    badge: 'bg-[var(--chem-fill)] text-white border-[var(--chem-edge)]',
+    badgePointer: 'border-t-[var(--chem-fill)]',
+    trackColor: 'var(--chem-fill)',
+    bubbleColor: 'var(--chem-fg)',
     iconColor: 'text-white',
   },
   physics: {
-    grad1: '#fde68a',
-    grad2: '#eab308',
-    shadow: '#ca8a04',
-    activeBg: 'bg-gradient-to-tr from-[#eab308] to-[#fde68a]',
-    activeShadow: 'shadow-[0_8px_0_0_#ca8a04] active:shadow-[0_0px_0_0_#ca8a04]',
-    ring: 'bg-amber-400/30',
-    badge: 'from-amber-400 to-yellow-300 text-slate-950 border-amber-200',
-    badgePointer: 'border-t-yellow-300',
-    trackColor: '#eab308',
-    glowColor: '#ca8a04',
-    bubbleColor: '#fbbf24',
-    iconColor: 'text-slate-950',
+    fill: 'var(--phy-fill)',
+    edge: 'var(--phy-edge)',
+    fg: 'var(--phy-fg)',
+    tint: 'var(--phy-tint)',
+    activeShadow: 'shadow-[0_8px_0_0_var(--phy-edge)]',
+    ring: 'bg-[var(--phy-tint)]',
+    badge: 'bg-[var(--phy-fill)] text-white border-[var(--phy-edge)]',
+    badgePointer: 'border-t-[var(--phy-fill)]',
+    trackColor: 'var(--phy-fill)',
+    bubbleColor: 'var(--phy-fg)',
+    iconColor: 'text-white',
   },
   bio: {
-    grad1: '#34d399',
-    grad2: '#059669',
-    shadow: '#047857',
-    activeBg: 'bg-gradient-to-tr from-[#059669] to-[#34d399]',
-    activeShadow: 'shadow-[0_8px_0_0_#047857] active:shadow-[0_0px_0_0_#047857]',
-    ring: 'bg-emerald-400/30',
-    badge: 'from-emerald-400 to-teal-300 text-slate-950 border-emerald-200',
-    badgePointer: 'border-t-teal-300',
-    trackColor: '#10b981',
-    glowColor: '#059669',
-    bubbleColor: '#34d399',
+    fill: 'var(--bio-fill)',
+    edge: 'var(--bio-edge)',
+    fg: 'var(--bio-fg)',
+    tint: 'var(--bio-tint)',
+    activeShadow: 'shadow-[0_8px_0_0_var(--bio-edge)]',
+    ring: 'bg-[var(--bio-tint)]',
+    badge: 'bg-[var(--bio-fill)] text-white border-[var(--bio-edge)]',
+    badgePointer: 'border-t-[var(--bio-fill)]',
+    trackColor: 'var(--bio-fill)',
+    bubbleColor: 'var(--bio-fg)',
     iconColor: 'text-white',
   },
 };
@@ -91,91 +88,92 @@ function PathDecorations({
     const midX = (c.x + n.x) / 2;
     const midY = (c.y + n.y) / 2;
 
-    // Bọt khí nhỏ (2 bên đường)
     decorations.push(
       <circle
         key={`bubble-${i}-a`}
         cx={midX + 22}
         cy={midY - 10}
         r={4}
-        fill="none"
-        stroke={bubbleColor}
-        strokeWidth={1.5}
-        opacity={0.45}
-      />,
+        fill={bubbleColor}
+        opacity={0.35}
+      />
+    );
+    decorations.push(
       <circle
         key={`bubble-${i}-b`}
-        cx={midX - 22}
-        cy={midY + 8}
+        cx={midX - 18}
+        cy={midY + 12}
         r={2.5}
-        fill="none"
-        stroke={bubbleColor}
-        strokeWidth={1.2}
-        opacity={0.35}
-      />,
+        fill={bubbleColor}
+        opacity={0.25}
+      />
     );
 
-    // Tinh thể dấu sao nhỏ (glint 4 nét)
-    const sx = midX + (i % 2 === 0 ? -32 : 30);
-    const sy = midY + (i % 3 === 0 ? 6 : -14);
-    decorations.push(
-      <g key={`glint-${i}`} opacity={0.55}>
-        <line x1={sx - 4} y1={sy} x2={sx + 4} y2={sy} stroke={bubbleColor} strokeWidth={1.5} strokeLinecap="round" />
-        <line x1={sx} y1={sy - 4} x2={sx} y2={sy + 4} stroke={bubbleColor} strokeWidth={1.5} strokeLinecap="round" />
-        <line x1={sx - 2.5} y1={sy - 2.5} x2={sx + 2.5} y2={sy + 2.5} stroke={bubbleColor} strokeWidth={0.8} strokeLinecap="round" />
-        <line x1={sx + 2.5} y1={sy - 2.5} x2={sx - 2.5} y2={sy + 2.5} stroke={bubbleColor} strokeWidth={0.8} strokeLinecap="round" />
-      </g>,
-    );
+    if (i % 2 === 0) {
+      decorations.push(
+        <polygon
+          key={`glint-${i}`}
+          points={`${midX},${midY - 5} ${midX + 3},${midY} ${midX},${midY + 5} ${midX - 3},${midY}`}
+          fill="white"
+          opacity={0.4}
+        />
+      );
+    }
   }
-  return <>{decorations}</>;
+  return <g>{decorations}</g>;
 }
 
-export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subject = 'chem' }) => {
-  const ac = ACCENT[subject] ?? ACCENT.chem;
-  const isPhysics = subject === 'physics';
-  const isBio = subject === 'bio';
+export const SnakePath: React.FC<SnakePathProps> = ({
+  nodes,
+  onNodeClick,
+  subject = 'chem',
+}) => {
+  const ac = ACCENT[subject] || ACCENT.chem;
 
   const svgWidth = 360;
+  const nodeSpacingY = 112;
+  const startY = 80;
+  const xOffsets = [180, 110, 80, 130, 220, 260, 220, 140, 90, 130, 230];
 
-  /* Tọa độ nốt — sine wave ziczac với khoảng cách tối ưu cho chest */
-  let currentY = 56;
-  const nodeCoords = nodes.map((node, index) => {
-    const wave = Math.sin((index * Math.PI) / 2);
-    const x = 180 + Math.round(wave * 68);
-    const y = currentY;
-    const nextNode = nodes[index + 1];
-    // Tăng khoảng cách khi nốt hiện tại là chest hoặc nốt kế tiếp là chest để không dính title/badge
-    const spacing = nextNode?.type === 'chest' ? 134 : node.type === 'chest' ? 124 : 110;
-    currentY += spacing;
-    return { x, y };
-  });
-  const totalHeight = currentY + 30;
+  const nodeCoords = nodes.map((_, index) => ({
+    x: xOffsets[index % xOffsets.length],
+    y: startY + index * nodeSpacingY,
+  }));
 
-  /* Build SVG paths */
+  const totalHeight = startY + (nodes.length - 1) * nodeSpacingY + 100;
+
   let fullPathD = '';
-  let completedPathD = '';
-  let lastReachedIndex = -1;
+  for (let i = 0; i < nodeCoords.length; i++) {
+    const { x, y } = nodeCoords[i];
+    if (i === 0) {
+      fullPathD = `M ${x} ${y}`;
+    } else {
+      const prev = nodeCoords[i - 1];
+      const midY = (prev.y + y) / 2;
+      fullPathD += ` C ${prev.x} ${midY}, ${x} ${midY}, ${x} ${y}`;
+    }
+  }
 
+  let lastReachedIndex = -1;
   nodes.forEach((node, idx) => {
     if (node.status === 'completed' || node.status === 'active') {
       lastReachedIndex = idx;
     }
   });
 
-  nodeCoords.forEach((coord, i) => {
-    if (i === 0) {
-      fullPathD = `M ${coord.x} ${coord.y}`;
-      completedPathD = `M ${coord.x} ${coord.y}`;
-    } else {
-      const prev = nodeCoords[i - 1];
-      const segDy = coord.y - prev.y;
-      const cy1 = prev.y + segDy / 2;
-      const cy2 = coord.y - segDy / 2;
-      const seg = ` C ${prev.x} ${cy1}, ${coord.x} ${cy2}, ${coord.x} ${coord.y}`;
-      fullPathD += seg;
-      if (i <= lastReachedIndex) completedPathD += seg;
+  let completedPathD = '';
+  if (lastReachedIndex > 0) {
+    for (let i = 0; i <= lastReachedIndex; i++) {
+      const { x, y } = nodeCoords[i];
+      if (i === 0) {
+        completedPathD = `M ${x} ${y}`;
+      } else {
+        const prev = nodeCoords[i - 1];
+        const midY = (prev.y + y) / 2;
+        completedPathD += ` C ${prev.x} ${midY}, ${x} ${midY}, ${x} ${y}`;
+      }
     }
-  });
+  }
 
   const firstActiveIndex = nodes.findIndex((n) => n.status === 'active');
 
@@ -185,73 +183,50 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
   };
 
   return (
-    <div className="relative w-full max-w-[380px] mx-auto select-none py-1">
-      {/* ─── SVG Background Track ─── */}
+    <div className="relative w-full max-w-[390px] mx-auto select-none pt-4 pb-20">
+      {/* ─── SVG Connecting Road ─── */}
       <svg
-        className="absolute top-0 left-0 w-full h-full pointer-events-none"
+        className="absolute top-0 left-0 w-full pointer-events-none"
+        style={{ height: `${totalHeight}px` }}
         viewBox={`0 0 ${svgWidth} ${totalHeight}`}
         preserveAspectRatio="xMidYMin meet"
       >
-        <defs>
-          {/* Gradient cho đường đã đi */}
-          <linearGradient id={`grad-${subject}`} x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor={ac.grad1} />
-            <stop offset="100%" stopColor={ac.grad2} />
-          </linearGradient>
-          {/* Glow filter nhẹ */}
-          <filter id={`glow-${subject}`} x="-20%" y="-20%" width="140%" height="140%">
-            <feDropShadow dx="0" dy="2" stdDeviation="3"
-              floodColor={ac.glowColor} floodOpacity="0.4" />
-          </filter>
-        </defs>
-
-        {/* 1. Bóng đổ đường (3D depth) */}
-        <path d={fullPathD} fill="none"
-          stroke="#080d12" strokeWidth={18}
-          strokeLinecap="round" strokeLinejoin="round"
+        {/* Nét viền tối bên ngoài đường */}
+        <path
+          d={fullPathD}
+          fill="none"
+          stroke="var(--border)"
+          strokeWidth={14}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          opacity={0.4}
         />
 
-        {/* 2. Đường nền xám đá — viền #20333d */}
-        <path d={fullPathD} fill="none"
-          stroke="#20333d" strokeWidth={14}
-          strokeLinecap="round" strokeLinejoin="round"
-        />
-
-        {/* 3. Nét viền mực đậm bên ngoài đường */}
-        <path d={fullPathD} fill="none"
-          stroke="#131f24" strokeWidth={16}
-          strokeLinecap="round" strokeLinejoin="round"
-          opacity={0.6}
-        />
-
-        {/* 4. Đường đã hoàn thành — gradient rực rỡ */}
+        {/* Đường đã hoàn thành — màu môn học */}
         {lastReachedIndex > 0 && (
-          <path d={completedPathD} fill="none"
-            stroke={`url(#grad-${subject})`} strokeWidth={14}
-            strokeLinecap="round" strokeLinejoin="round"
-            filter={`url(#glow-${subject})`}
+          <path
+            d={completedPathD}
+            fill="none"
+            stroke={ac.trackColor}
+            strokeWidth={10}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            opacity={0.8}
           />
         )}
 
-        {/* 5. Nét đứt vẽ tay dày 4px — uốn lượn tự nhiên */}
-        <path d={fullPathD} fill="none"
-          stroke="#1e3040" strokeWidth={4}
+        {/* Nét đứt vẽ tay tự nhiên */}
+        <path
+          d={fullPathD}
+          fill="none"
+          stroke="var(--bg-canvas)"
+          strokeWidth={3}
           strokeLinecap="round"
           strokeDasharray="8 8 4 8 12 8"
-          opacity={0.8}
+          opacity={0.7}
         />
 
-        {/* 5b. Nét đứt phát sáng trên đoạn đường đã hoàn thành */}
-        {lastReachedIndex > 0 && (
-          <path d={completedPathD} fill="none"
-            stroke="#ffffff" strokeWidth={3}
-            strokeLinecap="round"
-            strokeDasharray="6 8 3 8 10 8"
-            opacity={0.4}
-          />
-        )}
-
-        {/* 6. Bọt khí + tinh thể trang trí rải trên đường */}
+        {/* Bọt khí trang trí rải trên đường */}
         <PathDecorations nodeCoords={nodeCoords} bubbleColor={ac.bubbleColor} />
       </svg>
 
@@ -274,7 +249,7 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
               className="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center"
               style={{ left: `${leftPercent}%`, top: `${coord.y}px` }}
             >
-              {/* ── Badge "Chinh phục để mở rương!" cho nốt rương chưa mở ── */}
+              {/* Badge "Chinh phục để mở rương!" */}
               {isChest && !isCompleted && (
                 <motion.div
                   initial={{ y: 2 }}
@@ -282,16 +257,15 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
                   transition={{ repeat: Infinity, repeatType: 'reverse', duration: 1.6, ease: 'easeInOut' }}
                   className="absolute -top-[52px] z-20 flex flex-col items-center pointer-events-none whitespace-nowrap"
                 >
-                  <div className="bg-[#18272f]/95 text-amber-300 border-2 border-amber-500/90 text-[10.5px] font-black tracking-wide px-3 py-1 rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.6)] flex items-center gap-1.5 backdrop-blur-md">
-                    <span className="text-amber-400 text-xs select-none">🎁</span>
+                  <div className="bg-[var(--bg-surface)] text-[var(--gold-fg)] border border-[var(--gold-edge)] text-[10.5px] font-black tracking-wide px-3 py-1 rounded-xl shadow-[var(--shadow-modal)] flex items-center gap-1.5 backdrop-blur-md">
+                    <span className="text-xs select-none">🎁</span>
                     <span>Chinh phục để mở rương!</span>
                   </div>
-                  {/* Mũi tên chỉ xuống nốt rương */}
-                  <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] border-t-amber-500 -mt-[1px]" />
+                  <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] border-t-[var(--gold-edge)] -mt-[1px]" />
                 </motion.div>
               )}
 
-              {/* ── Badge nổi "BẮT ĐẦU / LÝ THUYẾT" có Flasky mini nhún nhảy vẫy tay ── */}
+              {/* Badge nổi "BẮT ĐẦU / LÝ THUYẾT" */}
               {showStartBadge && (
                 <motion.div
                   initial={{ y: 4 }}
@@ -299,30 +273,27 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
                   transition={{ repeat: Infinity, repeatType: 'reverse', duration: 0.85, ease: 'easeInOut' }}
                   className="absolute -top-16 z-20 flex flex-col items-center pointer-events-none"
                 >
-                  {/* Linh vật Flasky mini nhún nhảy vẫy tay gọi học sinh */}
-                  <div className="-mb-2 scale-75 filter drop-shadow-[0_4px_6px_rgba(0,0,0,0.5)]">
+                  <div className="-mb-2 scale-75 drop-shadow-md">
                     <Mascot state="cheering" size="sm" interactive={false} />
                   </div>
                   <div
                     className={`font-black text-[11px] uppercase tracking-wider px-3.5 py-1 rounded-xl
-                      shadow-[0_4px_0_0_rgba(0,0,0,0.4)] border-2
-                      bg-gradient-to-r ${ac.badge}`}
+                      shadow-[0_4px_0_0_var(--subject-edge)] border-2 ${ac.badge}`}
                   >
                     {isTheory ? 'LÝ THUYẾT' : 'BẮT ĐẦU'}
                   </div>
-                  {/* Tam giác chỉ xuống */}
                   <div className={`w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[7px] -mt-[1px] ${ac.badgePointer}`} />
                 </motion.div>
               )}
 
-              {/* ── Sparkle trang trí quanh nốt active ── */}
+              {/* Sparkle trang trí quanh nốt active */}
               {isActive && (
-                <div className="absolute -top-4 -right-6 pointer-events-none opacity-80">
+                <div className="absolute -top-4 -right-6 pointer-events-none opacity-80 text-[var(--warn-fg)]">
                   <HandDrawnIcon name="flame" size={16} />
                 </div>
               )}
 
-              {/* ── Node Button ── */}
+              {/* Node Button */}
               <div className="relative">
                 {/* Pulse ring cho nốt active */}
                 {isActive && (
@@ -330,7 +301,6 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
                     className={`absolute -inset-3 rounded-full animate-ping pointer-events-none ${ac.ring}`}
                   />
                 )}
-                {/* Ring thứ 2 chậm hơn */}
                 {isActive && (
                   <span
                     className={`absolute -inset-1.5 rounded-full pointer-events-none opacity-50
@@ -342,50 +312,46 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
                   onClick={() => handleNodePress(node)}
                   aria-label={node.title}
                   style={
-                    isActive
+                    isActive || isCompleted
                       ? {
-                          background: `linear-gradient(135deg, ${ac.grad2}, ${ac.grad1})`,
-                          boxShadow: `0 8px 0 0 ${ac.shadow}`,
+                          backgroundColor: ac.fill,
+                          boxShadow: `0 8px 0 0 ${ac.edge}`,
                         }
-                      : undefined
+                      : isChest
+                      ? {
+                          backgroundColor: 'var(--gold-fill)',
+                          boxShadow: '0 8px 0 0 var(--gold-edge)',
+                        }
+                      : isCheckpoint
+                      ? {
+                          backgroundColor: 'var(--slate-fill)',
+                          boxShadow: '0 8px 0 0 var(--slate-edge)',
+                        }
+                      : {
+                          backgroundColor: 'var(--bg-surface-2)',
+                          boxShadow: '0 6px 0 0 var(--border)',
+                        }
                   }
                   className={`relative flex flex-col items-center justify-center font-black select-none
                     transition-all duration-100 cursor-pointer rounded-full
                     ${isChest
-                      ? `w-[76px] h-[76px]
-                          bg-gradient-to-tr from-amber-600 to-amber-300
-                          text-amber-950 border-[3px] border-amber-200
-                          shadow-[0_8px_0_0_#78350f]
-                          hover:brightness-110
-                          active:translate-y-[8px] active:shadow-[0_0px_0_0_#78350f]`
+                      ? `w-[76px] h-[76px] text-[var(--on-ink)] border-2 border-[var(--gold-edge)]
+                         hover:brightness-105 active:translate-y-[8px] active:shadow-none`
                       : isCompleted
-                      ? `w-[68px] h-[68px]
-                          bg-[#22c55e] text-slate-950 border-[3px] border-emerald-300
-                          shadow-[0_6px_0_0_#15803d]
-                          hover:bg-emerald-400
-                          active:translate-y-[6px] active:shadow-[0_0px_0_0_#15803d]`
+                      ? `w-[68px] h-[68px] text-white border-2 border-white/40
+                         hover:brightness-105 active:translate-y-[6px] active:shadow-none`
                       : isActive
-                      ? `w-[74px] h-[74px]
-                          ${ac.activeBg}
-                          ${ac.activeShadow}
-                          border-[3px] border-white/40
-                          hover:brightness-110
-                          active:translate-y-[8px]
-                          ring-4 ring-white/20`
+                      ? `w-[74px] h-[74px] text-white border-2 border-white/50
+                         hover:brightness-110 active:translate-y-[8px] active:shadow-none ring-4 ring-white/20`
                       : isCheckpoint
-                      ? `w-[64px] h-[64px]
-                          bg-[#1e3a4a] text-slate-300 border-[3px] border-[#2e5470]
-                          shadow-[0_6px_0_0_#0f1f28]
-                          active:translate-y-[6px] active:shadow-[0_0px_0_0_#0f1f28]`
-                      : `w-[64px] h-[64px]
-                          bg-[#20333d] text-slate-400 border-[3px] border-[#2e4756]
-                          shadow-[0_6px_0_0_#131f24]
-                          hover:border-slate-500
-                          active:translate-y-[6px] active:shadow-[0_0px_0_0_#131f24]`
+                      ? `w-[64px] h-[64px] text-white border-2 border-[var(--slate-edge)]
+                         active:translate-y-[6px] active:shadow-none`
+                      : `w-[64px] h-[64px] text-[var(--text-tertiary)] border border-[var(--border)]
+                         active:translate-y-[6px] active:shadow-none`
                     }`}
                 >
                   {/* Gloss shine viền trên */}
-                  <div className="absolute top-1.5 left-3 right-3 h-3 bg-white/20 rounded-full pointer-events-none" />
+                  <div className="absolute top-1.5 left-3 right-3 h-3 bg-white/25 rounded-full pointer-events-none" />
 
                   {/* Icon nội dung nốt */}
                   {isChest ? (
@@ -396,41 +362,24 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
                         className="w-12 h-12 object-contain drop-shadow-md select-none pointer-events-none"
                       />
                     ) : (
-                      <Gift
-                        className="w-9 h-9 stroke-[2] text-white"
-                      />
+                      <Gift className="w-9 h-9 stroke-[2] text-[var(--on-ink)]" />
                     )
                   ) : isCompleted ? (
-                    <Check className="w-8 h-8 stroke-[3.5]" />
+                    <Check className="w-8 h-8 stroke-[3.5] text-white" />
                   ) : isActive && isTheory ? (
-                    <BookOpen className={`w-7 h-7 stroke-[2.5] ${ac.iconColor}`} />
+                    <BookOpen className="w-7 h-7 stroke-[2.5] text-white" />
                   ) : isActive ? (
-                    <Play className={`w-7 h-7 ${ac.iconColor === 'text-white' ? 'fill-white' : 'fill-slate-950'} ml-0.5`} />
+                    <Play className="w-7 h-7 fill-white text-white ml-0.5" />
                   ) : isUnready ? (
-                    <Lock className="w-6 h-6 text-slate-500 opacity-40" />
+                    <Lock className="w-6 h-6 text-[var(--text-tertiary)] opacity-40" />
                   ) : isTheory ? (
-                    <BookOpen className="w-6 h-6 text-slate-500" />
+                    <BookOpen className="w-6 h-6 text-[var(--text-tertiary)]" />
                   ) : isCheckpoint ? (
-                    <Award className="w-7 h-7 text-slate-400" />
+                    <Award className="w-7 h-7 text-white" />
                   ) : (
-                    <Lock className="w-6 h-6 text-slate-500" />
+                    <Lock className="w-6 h-6 text-[var(--text-tertiary)]" />
                   )}
                 </button>
-
-                {/* Rương: animation bập bùng ánh sáng vàng */}
-                {isChest && node.status !== 'completed' && (
-                  <motion.div
-                    className="absolute -inset-1 rounded-full pointer-events-none"
-                    animate={{
-                      boxShadow: [
-                        '0 0 0 0 rgba(251,191,36,0)',
-                        '0 0 12px 8px rgba(251,191,36,0.35)',
-                        '0 0 0 0 rgba(251,191,36,0)',
-                      ],
-                    }}
-                    transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}
-                  />
-                )}
               </div>
 
               {/* ── Node Title & Star Rating ── */}
@@ -438,10 +387,10 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
                 <span
                   className={`text-[11px] font-black block leading-tight truncate w-full text-center
                     ${isActive
-                      ? isPhysics ? 'text-amber-300' : isBio ? 'text-emerald-300' : 'text-sky-300'
+                      ? 'text-[var(--text-primary)]'
                       : isCompleted
-                      ? 'text-slate-200'
-                      : 'text-slate-500'
+                      ? 'text-[var(--text-primary)]'
+                      : 'text-[var(--text-tertiary)]'
                     }`}
                 >
                   {node.title}
@@ -449,14 +398,14 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
 
                 {/* "Sắp có" badge cho bài chưa sẵn */}
                 {isUnready && !isCompleted && (
-                  <span className="inline-block text-[9px] font-bold text-amber-400/80
-                    bg-amber-950/60 px-1.5 py-0.5 rounded mt-0.5
-                    border border-amber-900/50">
+                  <span className="inline-block text-[9px] font-bold text-[var(--warn-fg)]
+                    bg-[var(--warn-tint)] px-1.5 py-0.5 rounded mt-0.5
+                    border border-[var(--warn-edge)]">
                     Sắp có
                   </span>
                 )}
 
-                {/* Sao vàng đúc nổi viền mực đen cho nốt hoàn thành */}
+                {/* 1-3 Sao vàng gold cho nốt hoàn thành */}
                 {isCompleted && (
                   <div className="flex justify-center gap-0.5 mt-1">
                     {[0, 1, 2].map((i) => (
@@ -467,9 +416,8 @@ export const SnakePath: React.FC<SnakePathProps> = ({ nodes, onNodeClick, subjec
                         className="relative group/star"
                       >
                         <Star
-                          className="w-4 h-4 fill-amber-400 text-slate-950 stroke-[1.8] drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]"
+                          className="w-4 h-4 fill-[var(--gold-fill)] text-[var(--gold-edge)] stroke-[1.5]"
                         />
-                        <span className="absolute -top-1 -right-1 w-1.5 h-1.5 bg-yellow-200 rounded-full opacity-0 group-hover/star:opacity-100 animate-ping pointer-events-none" />
                       </motion.div>
                     ))}
                   </div>

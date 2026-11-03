@@ -11,7 +11,7 @@ import {
   type DragEndEvent,
 } from '@dnd-kit/core';
 import { X, Folder, GripVertical } from 'lucide-react';
-import { Formula } from '../Formula';
+import { MathText } from '../MathText';
 import { sound } from '@/lib/audio';
 import type { Verdict } from '@/engine/checkers/types';
 
@@ -56,20 +56,20 @@ const DraggableItem: React.FC<DraggableItemProps> = ({
         onClick={onClick}
         className={`inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border text-xs font-semibold max-w-full text-left select-none transition-all touch-none cursor-grab active:cursor-grabbing ${
           isDragging
-            ? 'opacity-30 border-dashed border-cyan-400 bg-slate-800/40'
+            ? 'opacity-30 border-dashed border-[var(--subject-fill)] bg-[var(--bg-surface-2)]'
             : isSelected
-            ? 'bg-cyan-500/20 text-cyan-200 border-cyan-400 ring-2 ring-cyan-400/40 shadow-sm'
-            : 'bg-slate-800/90 hover:bg-slate-750 text-slate-200 border-slate-700 hover:border-slate-500'
+            ? 'bg-[var(--subject-tint)] text-[var(--subject-fg)] border-[var(--subject-fill)] ring-2 ring-[var(--subject-fill)]/40 shadow-sm'
+            : 'bg-[var(--bg-surface)] text-[var(--text-primary)] border-[var(--border)] hover:border-[var(--border-strong)]'
         }`}
       >
-        <GripVertical className="w-3 h-3 text-slate-500 shrink-0" />
-        <Formula formula={item.label} className="break-words" />
+        <GripVertical className="w-3 h-3 text-[var(--text-tertiary)] shrink-0" />
+        <MathText text={item.label} className="break-words" />
         {!disabled && onRemove && (
           <button
             type="button"
             onClick={onRemove}
             aria-label="Bỏ khỏi nhóm"
-            className="hover:text-rose-400 text-slate-400 transition-colors cursor-pointer ml-0.5 shrink-0 p-0.5"
+            className="hover:text-[var(--err-fg)] text-[var(--text-tertiary)] transition-colors cursor-pointer ml-0.5 shrink-0 p-0.5"
           >
             <X className="w-3.5 h-3.5" />
           </button>
@@ -86,14 +86,14 @@ const DraggableItem: React.FC<DraggableItemProps> = ({
       onClick={onClick}
       className={`inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-bold transition-all border text-left max-w-full select-none touch-none cursor-grab active:cursor-grabbing ${
         isDragging
-          ? 'opacity-30 border-dashed border-cyan-400 bg-slate-800/40'
+          ? 'opacity-30 border-dashed border-[var(--subject-fill)] bg-[var(--bg-surface-2)]'
           : isSelected
-          ? 'bg-cyan-500 text-slate-950 border-cyan-300 ring-2 ring-cyan-400/50 scale-105 shadow-lg'
-          : 'bg-slate-800 text-slate-200 border-slate-700 hover:border-slate-500 hover:bg-slate-750 shadow-sm'
+          ? 'bg-[var(--subject-fill)] text-white border-2 border-white/40 ring-2 ring-[var(--subject-fill)]/50 scale-105 shadow-[0_4px_0_0_var(--subject-edge)]'
+          : 'bg-[var(--bg-surface)] text-[var(--text-primary)] border border-[var(--border)] hover:border-[var(--subject-edge)] shadow-[0_2px_0_0_var(--edge-neutral)]'
       }`}
     >
       <GripVertical className="w-3.5 h-3.5 opacity-50 shrink-0" />
-      <Formula formula={item.label} />
+      <MathText text={item.label} />
     </div>
   );
 };
@@ -128,21 +128,21 @@ const DroppableBucket: React.FC<DroppableBucketProps> = ({
     <div
       ref={setNodeRef}
       onClick={onBucketClick}
-      className={`p-3.5 rounded-2xl border-2 transition-all flex flex-col min-h-[120px] relative ${
+      className={`p-3.5 rounded-2xl border transition-all flex flex-col min-h-[120px] relative ${
         isOver
-          ? 'border-cyan-400 bg-cyan-950/40 ring-2 ring-cyan-400/60 scale-[1.02] shadow-[0_4px_0_0_#0284c7]'
+          ? 'border-2 border-[var(--subject-fill)] bg-[var(--subject-tint)] ring-2 ring-[var(--subject-fill)]/60 scale-[1.02]'
           : isTarget
-          ? 'cursor-pointer border-cyan-500/80 bg-cyan-950/20 hover:bg-cyan-900/30 hover:border-cyan-400'
-          : 'border-slate-800 bg-slate-900/60'
+          ? 'cursor-pointer border-2 border-[var(--subject-fill)] bg-[var(--subject-tint)] hover:border-[var(--subject-edge)]'
+          : 'border border-[var(--border)] bg-[var(--bg-surface)]'
       }`}
     >
       {/* Bucket Header */}
-      <div className="flex items-center justify-between gap-2 mb-2.5 pb-1.5 border-b border-slate-800/80">
-        <div className="flex items-center gap-1.5 font-bold text-sm text-cyan-300">
-          <Folder className="w-4 h-4 text-cyan-400 shrink-0" />
-          <span>{bucket.label}</span>
+      <div className="flex items-center justify-between gap-2 mb-2.5 pb-1.5 border-b border-[var(--border)]">
+        <div className="flex items-center gap-1.5 font-bold text-sm text-[var(--subject-fg)]">
+          <Folder className="w-4 h-4 text-[var(--subject-fg)] shrink-0" />
+          <span><MathText text={bucket.label} /></span>
         </div>
-        <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-slate-800 text-slate-400 border border-slate-700/60">
+        <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-[var(--bg-surface-2)] text-[var(--text-tertiary)] border border-[var(--border)]">
           {bucketItems.length}
         </span>
       </div>
@@ -150,7 +150,7 @@ const DroppableBucket: React.FC<DroppableBucketProps> = ({
       {/* Bucket Items */}
       <div className="flex flex-wrap gap-1.5 flex-1 items-start content-start">
         {bucketItems.length === 0 ? (
-          <span className="text-xs text-slate-500 italic py-3 select-none">
+          <span className="text-xs text-[var(--text-tertiary)] italic py-3 select-none">
             {isOver
               ? 'Thả vào đây'
               : isTarget
@@ -200,17 +200,17 @@ const DroppableTray: React.FC<DroppableTrayProps> = ({
       ref={setNodeRef}
       className={`p-3.5 rounded-2xl border transition-all ${
         isOver
-          ? 'border-cyan-400 bg-cyan-950/40 ring-2 ring-cyan-400/40'
-          : 'bg-slate-900/80 border-slate-800'
+          ? 'border-2 border-[var(--subject-fill)] bg-[var(--subject-tint)]'
+          : 'bg-[var(--bg-surface-2)] border border-[var(--border)]'
       }`}
     >
-      <div className="flex items-center justify-between text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2 select-none">
+      <div className="flex items-center justify-between text-[11px] font-bold text-[var(--text-secondary)] uppercase tracking-wider mb-2 select-none">
         <span>Các chất cần phân loại ({unassignedItems.length})</span>
-        <span className="text-[10px] text-slate-500 font-normal lowercase">kéo hoặc nhấn chọn</span>
+        <span className="text-[10px] text-[var(--text-tertiary)] font-normal lowercase">kéo hoặc nhấn chọn</span>
       </div>
       <div className="flex flex-wrap gap-2 min-h-[44px] items-center">
         {unassignedItems.length === 0 ? (
-          <span className="text-xs text-cyan-300/80 italic py-1">
+          <span className="text-xs text-[var(--subject-fg)] italic py-1">
             Thả vào đây để đưa chất về khay chưa phân loại
           </span>
         ) : (
@@ -241,7 +241,6 @@ export const SortPanel: React.FC<SortPanelProps> = ({
   const [selectedItemId, setSelectedItemId] = useState<string | null>(null);
   const [activeDragId, setActiveDragId] = useState<string | null>(null);
 
-  // Require small movement before initiating drag so simple tap/click triggers selection seamlessly
   const sensors = useSensors(
     useSensor(PointerSensor, {
       activationConstraint: {
@@ -322,18 +321,18 @@ export const SortPanel: React.FC<SortPanelProps> = ({
     >
       <div className="w-full space-y-4">
         {/* Instructions */}
-        <div className="text-center text-xs font-semibold text-slate-400">
+        <div className="text-center text-xs font-semibold text-[var(--text-secondary)]">
           {activeDragId ? (
-            <span className="text-cyan-300 font-bold animate-pulse">
+            <span className="text-[var(--subject-fg)] font-bold animate-pulse">
               🎯 Thả vào nhóm bạn muốn phân loại!
             </span>
           ) : selectedItemId ? (
-            <span className="text-cyan-300 animate-pulse font-bold">
+            <span className="text-[var(--subject-fg)] animate-pulse font-bold">
               Đang chọn một chất — Nhấn vào nhóm bên dưới hoặc kéo thả trực tiếp!
             </span>
           ) : (
-            <span className="flex items-center justify-center gap-1.5 text-slate-300">
-              <span className="text-cyan-400 font-bold">Giữ để kéo thả</span> hoặc <span className="text-cyan-400 font-bold">nhấn</span> vào chất rồi chọn nhóm
+            <span className="flex items-center justify-center gap-1.5 text-[var(--text-secondary)]">
+              <span className="text-[var(--subject-fg)] font-bold">Giữ để kéo thả</span> hoặc <span className="text-[var(--subject-fg)] font-bold">nhấn</span> vào chất rồi chọn nhóm
             </span>
           )}
         </div>
@@ -368,12 +367,12 @@ export const SortPanel: React.FC<SortPanelProps> = ({
           })}
         </div>
 
-        {/* Drag Overlay with beautiful elevated card */}
+        {/* Drag Overlay with elevated card */}
         <DragOverlay dropAnimation={{ duration: 150, easing: 'cubic-bezier(0.18, 0.67, 0.6, 1.22)' }}>
           {draggedItem ? (
-            <div className="inline-flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-black bg-cyan-400 text-slate-950 border-2 border-cyan-200 shadow-[0_12px_30px_rgba(6,182,212,0.45)] scale-105 rotate-2 cursor-grabbing pointer-events-none select-none">
-              <GripVertical className="w-3.5 h-3.5 text-slate-800" />
-              <Formula formula={draggedItem.label} />
+            <div className="inline-flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-black bg-[var(--subject-fill)] text-white border-2 border-white/50 shadow-[var(--shadow-modal)] scale-105 rotate-2 cursor-grabbing pointer-events-none select-none">
+              <GripVertical className="w-3.5 h-3.5 opacity-80" />
+              <MathText text={draggedItem.label} />
             </div>
           ) : null}
         </DragOverlay>

@@ -4,6 +4,15 @@
  * Không dùng văn phong dịch máy, khích lệ người học tự tin khám phá khoa học.
  */
 
+import {
+  CHEM_CORRECT_PRAISE_LINES,
+  BIO_CORRECT_PRAISE_LINES,
+  PHYSICS_CORRECT_PRAISE_LINES,
+  ALL_CORRECT_PRAISE_LINES,
+} from './voiceScripts';
+
+export * from './voiceScripts';
+
 export const copyVi = {
   app: {
     title: 'CHEM-SOLVE',
@@ -164,6 +173,13 @@ export const copyVi = {
     goodSub: (correct: number, total: number) =>
       `Bạn đã xuất sắc trả lời đúng ${correct}/${total} câu hỏi, tiếp tục giữ vững đà tiến lên nhé!`,
     continueButton: 'TIẾP TỤC BÀI HỌC',
+  },
+
+  voice: {
+    chem: CHEM_CORRECT_PRAISE_LINES,
+    bio: BIO_CORRECT_PRAISE_LINES,
+    physics: PHYSICS_CORRECT_PRAISE_LINES,
+    allCorrect: ALL_CORRECT_PRAISE_LINES,
   },
 };
 

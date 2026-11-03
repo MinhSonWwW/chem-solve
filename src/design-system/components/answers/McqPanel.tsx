@@ -2,8 +2,9 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Check, X } from 'lucide-react';
 import type { Verdict } from '@/engine/checkers/types';
+import { MathText } from '../MathText';
 
-interface Option {
+export interface Option {
   id: string;
   label: string;
   note?: string;
@@ -11,46 +12,35 @@ interface Option {
 
 export interface McqPanelProps {
   options: Option[];
+  value: string | string[] | null;
+  onChange: (value: string | string[]) => void;
+  disabled?: boolean;
   correctId?: string;
   correctIds?: string[];
+  isChecked?: boolean;
+  verdict?: Verdict | null;
   multi?: boolean;
-  value: string | string[] | null;
-  onChange: (v: string | string[]) => void;
-  disabled: boolean;
-  verdict?: Verdict;
-  shuffle?: boolean;
 }
 
 export const McqPanel: React.FC<McqPanelProps> = ({
   options,
-  correctId,
-  correctIds,
-  multi = false,
   value,
   onChange,
-  disabled,
-  verdict,
-  shuffle = false,
+  disabled = false,
+  correctId,
+  correctIds,
+  isChecked = false,
+  verdict = null,
+  multi = false,
 }) => {
-  // Display options in stable order matching keys 1, 2, 3, 4 and A, B, C, D
-  const optionsKey = options.map((o) => `${o.id}:${o.label}`).join('|');
-  const displayOptions = React.useMemo(() => {
-    if (!shuffle) return options;
-    const arr = [...options];
-    for (let i = arr.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [arr[i], arr[j]] = [arr[j], arr[i]];
-    }
-    return arr;
-  }, [optionsKey, shuffle]);
+  const displayOptions = options;
 
-  const isChecked = !!verdict;
-  const selectedSet = new Set(
-    multi
+  const selectedSet = new Set<string>(
+    Array.isArray(value)
       ? (value as string[] | null) ?? []
       : value
-        ? [value as string]
-        : []
+      ? [value as string]
+      : []
   );
 
   const isCorrectOption = (id: string) => {
@@ -86,38 +76,33 @@ export const McqPanel: React.FC<McqPanelProps> = ({
 
         if (isChecked) {
           if (isVerdictCorrect && correct) {
-            // Only highlight correct option in green when the user's answer is correct!
             classes =
-              'bg-[#58cc02]/20 border-2 border-[#58cc02] shadow-[0_4px_0_0_#46a302] text-emerald-200';
+              'bg-[var(--ok-tint)] border-2 border-[var(--ok-fill)] text-[var(--ok-fg)]';
             indicator = (
-              <div className="w-6 h-6 rounded-full bg-[#58cc02] text-white flex items-center justify-center font-black shadow-sm">
+              <div className="w-6 h-6 rounded-full bg-[var(--ok-fill)] text-white flex items-center justify-center font-black shadow-sm">
                 <Check className="w-4 h-4 stroke-[3.5]" />
               </div>
             );
           } else if (isSelected && !correct) {
-            // When user selected an incorrect option, highlight it in red
             classes =
-              'bg-[#ff4b4b]/20 border-2 border-[#ff4b4b] shadow-[0_4px_0_0_#ea2b2b] text-rose-200';
+              'bg-[var(--err-tint)] border-2 border-[var(--err-fill)] text-[var(--err-fg)]';
             indicator = (
-              <div className="w-6 h-6 rounded-full bg-[#ff4b4b] text-white flex items-center justify-center font-black shadow-sm">
+              <div className="w-6 h-6 rounded-full bg-[var(--err-fill)] text-white flex items-center justify-center font-black shadow-sm">
                 <X className="w-4 h-4 stroke-[3.5]" />
               </div>
             );
           } else if (isSelected && correct && !isVerdictCorrect) {
-            // Selected partially correct in multi-choice, but overall wrong
             classes =
-              'bg-[#ff9600]/20 border-2 border-[#ff9600] shadow-[0_4px_0_0_#e07a00] text-amber-200';
+              'bg-[var(--warn-tint)] border-2 border-[var(--warn-fill)] text-[var(--warn-fg)]';
             indicator = (
-              <div className="w-6 h-6 rounded-full bg-[#ff9600] text-white flex items-center justify-center font-black shadow-sm">
+              <div className="w-6 h-6 rounded-full bg-[var(--warn-fill)] text-[var(--on-ink)] flex items-center justify-center font-black shadow-sm">
                 <Check className="w-4 h-4 stroke-[3]" />
               </div>
             );
           } else {
-            // Unselected options (including the correct answer when user is wrong)
-            // DO NOT highlight in green! Keep neutral and unrevealed.
-            classes = 'opacity-40 border-2 border-[#20333d] bg-[#131f24]/60 text-slate-400';
+            classes = 'opacity-40 border border-[var(--border)] bg-[var(--bg-canvas)] text-[var(--text-tertiary)]';
             indicator = (
-              <div className="w-6 h-6 rounded-full border border-[#2e4756] text-[10px] text-slate-500 flex items-center justify-center font-bold">
+              <div className="w-6 h-6 rounded-full border border-[var(--border)] text-[10px] text-[var(--text-tertiary)] flex items-center justify-center font-bold">
                 {letter}
               </div>
             );
@@ -125,17 +110,17 @@ export const McqPanel: React.FC<McqPanelProps> = ({
         } else {
           if (isSelected) {
             classes =
-              'bg-[#0ea5e9]/15 border-2 border-[#0ea5e9] shadow-[0_4px_0_0_#0284c7] text-[#38bdf8]';
+              'bg-[var(--bg-surface)] border-2 border-[var(--subject-fill)] text-[var(--text-primary)] shadow-[0_2px_0_0_var(--subject-edge)]';
             indicator = (
-              <div className="w-6 h-6 rounded-full bg-[#0ea5e9] text-white flex items-center justify-center font-black shadow-sm">
+              <div className="w-6 h-6 rounded-full bg-[var(--subject-fill)] text-white flex items-center justify-center font-black shadow-sm">
                 <Check className="w-4 h-4 stroke-[3]" />
               </div>
             );
           } else {
             classes =
-              'bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] hover:border-[#38bdf8] active:translate-y-1 active:shadow-none text-slate-200';
+              'bg-[var(--bg-surface)] border border-[var(--border)] hover:border-[var(--subject-edge)] text-[var(--text-primary)]';
             indicator = (
-              <div className="w-6 h-6 rounded-full border-2 border-[#2e4756] text-[11px] text-slate-300 flex items-center justify-center font-black">
+              <div className="w-6 h-6 rounded-full border border-[var(--border)] text-[11px] text-[var(--text-secondary)] flex items-center justify-center font-black">
                 {letter}
               </div>
             );
@@ -150,16 +135,16 @@ export const McqPanel: React.FC<McqPanelProps> = ({
             whileTap={!disabled ? { scale: 0.98 } : undefined}
           >
             <div className="flex items-center gap-3">
-              <span className="font-bold text-sm text-slate-100">
-                {option.label}
+              <span className="font-bold text-sm text-[var(--text-primary)]">
+                <MathText text={option.label} />
               </span>
               {isChecked && isVerdictCorrect && correct && (
-                <span className="text-[10px] font-black uppercase tracking-wider bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-md border border-emerald-500/40">
+                <span className="text-[10px] font-black uppercase tracking-wider bg-[var(--ok-tint)] text-[var(--ok-fg)] px-2 py-0.5 rounded-md border border-[var(--ok-edge)]">
                   Chính xác
                 </span>
               )}
               {isChecked && isSelected && !correct && (
-                <span className="text-[10px] font-black uppercase tracking-wider bg-rose-500/20 text-rose-300 px-2 py-0.5 rounded-md border border-rose-500/40">
+                <span className="text-[10px] font-black uppercase tracking-wider bg-[var(--err-tint)] text-[var(--err-fg)] px-2 py-0.5 rounded-md border border-[var(--err-edge)]">
                   Bạn đã chọn
                 </span>
               )}

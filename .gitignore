@@ -36,3 +36,5 @@ dist-ssr
 test-results/
 playwright-report/
 *.tsbuildinfo
+*.docx
+*.xlsx

@@ -37,7 +37,7 @@ export const ChemKeyboard: React.FC<ChemKeyboardProps> = ({
   const tabClass = (active: boolean) =>
     `px-3 py-1.5 rounded-lg text-xs font-bold transition-colors cursor-pointer ${
       active
-        ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40'
+        ? 'bg-[var(--chem-tint)] text-[var(--chem-fg)] border border-[var(--chem-edge)]'
         : 'bg-slate-800/60 text-slate-400 border border-slate-700/60 hover:text-slate-300'
     }`;
 
@@ -49,12 +49,12 @@ export const ChemKeyboard: React.FC<ChemKeyboardProps> = ({
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 200, opacity: 0 }}
           transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-          className="fixed bottom-0 left-0 right-0 z-50 bg-slate-950/98 backdrop-blur-xl border-t-2 border-slate-800 safe-pb"
+          className="fixed bottom-0 left-0 right-0 z-50 bg-[var(--bg-surface)] border-t-2 border-[var(--border-strong)] shadow-lg safe-pb"
         >
           {/* Tab bar + close */}
           <div className="flex items-center justify-between px-3 py-2 border-b border-slate-800/60">
             <div className="flex items-center gap-1.5">
-              <Atom className="w-4 h-4 text-cyan-400" />
+              <Atom className="w-4 h-4 text-[var(--chem-fg)]" />
               <button
                 onClick={() => setTab('elements')}
                 className={tabClass(tab === 'elements')}

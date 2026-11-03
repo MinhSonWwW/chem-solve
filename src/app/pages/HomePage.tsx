@@ -69,9 +69,9 @@ export const HomePage: React.FC = () => {
   return (
     <div className="space-y-5 pb-8">
       {/* Grade Selector Pills */}
-      <div className="flex items-center justify-between gap-1.5 p-1.5 rounded-2xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24]">
-        <span className="text-[10px] font-black uppercase text-slate-400 pl-2 tracking-wider flex items-center gap-1">
-          <BookOpen className={`w-3.5 h-3.5 ${isPhysics ? 'text-amber-400' : 'text-cyan-400'}`} />
+      <div className="flex items-center justify-between gap-1.5 p-1.5 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)]">
+        <span className="text-[10px] font-black uppercase text-[var(--text-tertiary)] pl-2 tracking-wider flex items-center gap-1">
+          <BookOpen className="w-3.5 h-3.5 text-[var(--subject-fg)]" />
           Khối lớp:
         </span>
         <div className="flex gap-1">
@@ -81,10 +81,8 @@ export const HomePage: React.FC = () => {
               onClick={() => handleSelectGrade(g)}
               className={`px-3 py-1.5 rounded-xl text-xs font-black transition-all cursor-pointer border ${
                 activeGrade === g
-                  ? isPhysics
-                    ? 'bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 border-amber-300 shadow-[0_2px_0_0_#ca8a04] font-black'
-                    : 'bg-gradient-to-r from-cyan-500 to-blue-500 text-slate-950 border-cyan-300 shadow-[0_2px_0_0_#0891b2] font-black'
-                  : 'bg-[#131f24] border-[#2e4756] text-slate-400 hover:text-slate-200'
+                  ? 'bg-[var(--subject-fill)] text-white border-[var(--subject-edge)] shadow-[0_2px_0_0_var(--subject-edge)] font-black'
+                  : 'bg-[var(--bg-surface-2)] border-[var(--border)] text-[var(--text-tertiary)] hover:text-[var(--text-primary)]'
               }`}
             >
               Lớp {g}
@@ -97,30 +95,23 @@ export const HomePage: React.FC = () => {
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="bg-gradient-to-b from-[#1c2c36] to-[#121c22] border-2 border-[#2e4756] rounded-3xl p-5 shadow-[0_6px_0_0_#0c1419] relative overflow-hidden"
+        className="bg-[var(--bg-surface)] border border-[var(--border)] rounded-3xl p-5 relative overflow-hidden"
       >
-        {/* Ambient radial glow */}
-        <div className={`absolute -right-12 -top-12 w-48 h-48 rounded-full blur-3xl pointer-events-none ${isPhysics ? 'bg-amber-500/10' : 'bg-cyan-500/10'}`} />
-
         <div className="flex items-center justify-between gap-3 relative z-10">
           <div className="space-y-2.5 flex-1 min-w-0">
-            <div className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-black text-[10px] uppercase tracking-wider border shadow-sm ${
-              isPhysics
-                ? 'bg-amber-950/80 text-amber-300 border-amber-700/60'
-                : 'bg-cyan-950/80 text-cyan-300 border-cyan-700/60'
-            }`}>
-              {isPhysics ? <Zap className="w-3 h-3 text-amber-400" /> : <Sparkles className="w-3 h-3 text-cyan-400" />}
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-black text-[10px] uppercase tracking-wider border bg-[var(--subject-tint)] text-[var(--subject-fg)] border-[var(--subject-edge)]">
+              {isPhysics ? <Zap className="w-3 h-3" /> : <Sparkles className="w-3 h-3" />}
               {nextPlayable.isCompletedAll ? 'Đã hoàn thành xuất sắc' : 'Chặng tiếp theo của bạn'}
             </div>
 
-            <h1 className="text-lg sm:text-xl font-black text-white leading-snug">
+            <h1 className="text-lg sm:text-xl font-black text-[var(--text-primary)] leading-snug">
               Lớp {nextPlayable.grade} · {nextPlayable.lesson?.title ?? (isPhysics ? 'Vật lý THCS' : 'Hóa học THCS')} <br />
-              <span className={`text-base sm:text-lg ${isPhysics ? 'text-amber-400' : 'text-cyan-400'}`}>
+              <span className="text-base sm:text-lg text-[var(--subject-fg)]">
                 {nextPlayable.node?.title ?? 'Khám phá bài học mới'}
               </span>
             </h1>
 
-            <p className="text-xs text-slate-300 line-clamp-1">
+            <p className="text-xs text-[var(--text-secondary)] line-clamp-1">
               Chương {nextPlayable.chapter?.chapterNumber}: {nextPlayable.chapter?.title} · {nextPlayable.node?.description}
             </p>
 
@@ -128,11 +119,7 @@ export const HomePage: React.FC = () => {
               <Button
                 variant="primary"
                 size="md"
-                className={`flex items-center gap-2 font-black text-slate-950 ${
-                  isPhysics
-                    ? 'shadow-[0_4px_0_0_#ca8a04] bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400'
-                    : 'shadow-[0_4px_0_0_#007a5d] bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400'
-                }`}
+                className="flex items-center gap-2"
                 onClick={() => {
                   sound.playClick();
                   if (nextPlayable.lesson && nextPlayable.node) {
@@ -146,7 +133,7 @@ export const HomePage: React.FC = () => {
                   }
                 }}
               >
-                <Play className="w-4 h-4 fill-slate-950 text-slate-950" />
+                <Play className="w-4 h-4 fill-current" />
                 <span>{nextPlayable.isCompletedAll ? 'ÔN TẬP LẠI' : 'TIẾP TỤC CHẶNG'}</span>
               </Button>
             </div>
@@ -159,19 +146,19 @@ export const HomePage: React.FC = () => {
       </motion.div>
 
       {/* Daily Goal Progress Card */}
-      <Card className="space-y-3.5 py-4 border-2 border-[#2e4756] bg-[#18272f] shadow-[0_4px_0_0_#131f24] rounded-3xl">
+      <Card className="space-y-3.5 py-4 border border-[var(--border)] bg-[var(--bg-surface)] rounded-3xl">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-1.5">
             <CurrencyIcon type="xp" size="xs" />
-            <span className="text-xs font-black text-white tracking-wide uppercase">Mục tiêu hôm nay</span>
+            <span className="text-xs font-black text-[var(--text-primary)] tracking-wide uppercase">Mục tiêu hôm nay</span>
             {progressPercent >= 100 && (
-              <span className="text-[10px] font-black bg-emerald-950/80 text-emerald-300 border border-emerald-500/60 px-2 py-0.5 rounded-lg flex items-center gap-1">
-                <CheckCircle2 className="w-3 h-3 text-emerald-400" />
+              <span className="text-[10px] font-black bg-[var(--ok-tint)] text-[var(--ok-fg)] border border-[var(--ok-edge)] px-2 py-0.5 rounded-lg flex items-center gap-1">
+                <CheckCircle2 className="w-3 h-3 text-[var(--ok-fg)]" />
                 Hoàn thành!
               </span>
             )}
           </div>
-          <span className="text-xs font-mono font-black text-amber-300">
+          <span className="text-xs font-mono font-black text-[var(--gold-fg)]">
             {xp}/{dailyGoal} XP
           </span>
         </div>
@@ -187,86 +174,66 @@ export const HomePage: React.FC = () => {
         </div>
       </Card>
 
-      {/* Quick Actions Grid (3D tactile style) */}
+      {/* Quick Actions Grid */}
       <div className="grid grid-cols-2 gap-3">
         {/* Daily Challenge Card */}
         <motion.div
-          whileTap={{ scale: 0.96, y: 3 }}
+          whileTap={{ scale: 0.98, y: 1 }}
           onClick={() => {
             sound.playClick();
             navigate('/daily');
           }}
-          className="bg-gradient-to-b from-[#2a1c38] to-[#1a1224] border-2 border-purple-500/40 hover:border-purple-400 p-4 rounded-3xl cursor-pointer flex flex-col gap-3 shadow-[0_5px_0_0_#3b0764] transition-all group"
+          className="bg-[var(--bg-surface)] border border-[var(--border)] hover:border-[var(--border-strong)] p-4 rounded-3xl cursor-pointer flex flex-col gap-3 transition-all group"
         >
-          <div className="w-10 h-10 rounded-2xl bg-purple-500/20 border border-purple-400/50 flex items-center justify-center text-purple-300 shadow-[0_2px_8px_rgba(168,85,247,0.3)] group-hover:scale-110 transition-transform">
+          <div className="w-10 h-10 rounded-2xl bg-[var(--gold-tint)] border border-[var(--gold-edge)] flex items-center justify-center text-[var(--gold-fg)] group-hover:scale-105 transition-transform">
             <CurrencyIcon type="trophy" size="sm" />
           </div>
           <div>
             <div className="flex items-center justify-between">
-              <h2 className="font-black text-sm text-white">Thử thách ngày</h2>
-              <span className="text-[10px] font-black px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/40">
+              <h2 className="font-black text-sm text-[var(--text-primary)]">Thử thách ngày</h2>
+              <span className="text-[10px] font-black px-1.5 py-0.5 rounded bg-[var(--gold-tint)] text-[var(--gold-fg)] border border-[var(--gold-edge)]">
                 +30 XP
               </span>
             </div>
-            <p className="text-[11px] text-slate-300 mt-1">5 câu kiểm định nhanh</p>
+            <p className="text-[11px] text-[var(--text-secondary)] mt-1">5 câu kiểm định nhanh</p>
           </div>
         </motion.div>
 
         {/* Roadmap Card */}
         <motion.div
-          whileTap={{ scale: 0.96, y: 3 }}
+          whileTap={{ scale: 0.98, y: 1 }}
           onClick={() => {
             sound.playClick();
             navigate(`/learn/${activeGrade}`);
           }}
-          className={`border-2 p-4 rounded-3xl cursor-pointer flex flex-col gap-3 transition-all group ${
-            isPhysics
-              ? 'bg-gradient-to-b from-[#2d2208] to-[#1a1403] border-amber-500/40 hover:border-amber-400 shadow-[0_5px_0_0_#78350f]'
-              : 'bg-gradient-to-b from-[#182c38] to-[#121c24] border-cyan-500/40 hover:border-cyan-400 shadow-[0_5px_0_0_#083344]'
-          }`}
+          className="border border-[var(--border)] hover:border-[var(--border-strong)] p-4 rounded-3xl cursor-pointer flex flex-col gap-3 transition-all group bg-[var(--bg-surface)]"
         >
-          <div className={`w-10 h-10 rounded-2xl border flex items-center justify-center group-hover:scale-110 transition-transform ${
-            isPhysics
-              ? 'bg-amber-500/20 border-amber-400/50 text-amber-300 shadow-[0_2px_8px_rgba(245,158,11,0.3)]'
-              : 'bg-cyan-500/20 border-cyan-400/50 text-cyan-300 shadow-[0_2px_8px_rgba(6,182,212,0.3)]'
-          }`}>
-            <Map className={`w-5 h-5 ${isPhysics ? 'text-amber-400' : 'text-cyan-400'}`} />
+          <div className="w-10 h-10 rounded-2xl border border-[var(--subject-edge)] bg-[var(--subject-tint)] text-[var(--subject-fg)] flex items-center justify-center group-hover:scale-105 transition-transform">
+            <Map className="w-5 h-5 text-[var(--subject-fg)]" />
           </div>
           <div>
             <div className="flex items-center justify-between">
-              <h2 className="font-black text-sm text-white">Lộ trình học</h2>
-              <span className={`text-[10px] font-black px-1.5 py-0.5 rounded border ${
-                isPhysics
-                  ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
-                  : 'bg-cyan-500/20 text-cyan-300 border-cyan-500/40'
-              }`}>
+              <h2 className="font-black text-sm text-[var(--text-primary)]">Lộ trình học</h2>
+              <span className="text-[10px] font-black px-1.5 py-0.5 rounded border bg-[var(--subject-tint)] text-[var(--subject-fg)] border-[var(--subject-edge)]">
                 Lớp {activeGrade}
               </span>
             </div>
-            <p className="text-[11px] text-slate-300 mt-1">Bản đồ học tập chuẩn SGK</p>
+            <p className="text-[11px] text-[var(--text-secondary)] mt-1">Bản đồ học tập chuẩn SGK</p>
           </div>
         </motion.div>
       </div>
 
       {/* Practice Lab Banner */}
       <motion.div
-        whileTap={{ scale: 0.98, y: 2 }}
+        whileTap={{ scale: 0.98, y: 1 }}
         onClick={() => {
           sound.playClick();
           navigate('/practice');
         }}
-        className={`flex items-center justify-between p-4 border-2 rounded-3xl cursor-pointer transition-all group ${
-          isPhysics
-            ? 'bg-gradient-to-r from-[#291e07] to-[#181305] border-amber-500/40 hover:border-amber-400 shadow-[0_5px_0_0_#78350f]'
-            : 'bg-gradient-to-r from-[#142921] to-[#121c22] border-emerald-500/40 hover:border-emerald-400 shadow-[0_5px_0_0_#064e3b]'
-        }`}
+        className="flex items-center justify-between p-4 border border-[var(--border)] rounded-3xl cursor-pointer transition-all group bg-[var(--bg-surface)] hover:border-[var(--border-strong)]"
       >
         <div className="flex items-center gap-3">
-          <div className={`w-11 h-11 rounded-2xl border flex items-center justify-center group-hover:scale-110 transition-transform ${
-            isPhysics
-              ? 'bg-amber-500/20 border-amber-400/50 text-amber-400 shadow-[0_2px_8px_rgba(245,158,11,0.3)]'
-              : 'bg-emerald-500/20 border-emerald-400/50 text-emerald-400 shadow-[0_2px_8px_rgba(16,185,129,0.3)]'
-          }`}>
+          <div className="w-11 h-11 rounded-2xl border border-[var(--subject-edge)] bg-[var(--subject-tint)] text-[var(--subject-fg)] flex items-center justify-center group-hover:scale-105 transition-transform">
             {isPhysics ? <Zap className="w-6 h-6" /> : <FlaskConical className="w-6 h-6" />}
           </div>
           <div>

@@ -26,11 +26,11 @@ export const ComboBanner: React.FC<ComboBannerProps> = ({ combo, visible }) => {
         transition={{ type: 'spring', stiffness: 400, damping: 22 }}
         className="fixed top-14 left-1/2 -translate-x-1/2 z-40 pointer-events-none"
       >
-        <div className="flex items-center gap-2 bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 text-white font-black px-4 py-2 rounded-2xl shadow-[0_6px_25px_rgba(249,115,22,0.6)] border-2 border-amber-200 text-sm tracking-wide">
+        <div className="flex items-center gap-2 bg-[var(--warn-fill)] text-[var(--on-ink)] font-black px-4 py-2 rounded-2xl shadow-[var(--shadow-modal)] border border-[var(--warn-edge)] text-sm tracking-wide">
           {combo >= 4 ? (
-            <Zap className="w-5 h-5 fill-yellow-200 text-yellow-100 animate-bounce" />
+            <Zap className="w-5 h-5 fill-[var(--on-ink)] text-[var(--on-ink)]" />
           ) : (
-            <Flame className="w-5 h-5 fill-amber-300 text-amber-200 animate-pulse" />
+            <Flame className="w-5 h-5 fill-[var(--on-ink)] text-[var(--on-ink)]" />
           )}
           <span>{getComboText()}</span>
         </div>

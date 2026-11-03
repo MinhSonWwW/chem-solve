@@ -28,7 +28,7 @@ export const router = createHashRouter([
   {
     path: '/auth',
     element: (
-      <React.Suspense fallback={<div className="min-h-[100dvh] bg-[#131f24]" />}>
+      <React.Suspense fallback={<div className="min-h-[100dvh] bg-[var(--bg-canvas)]" />}>
         <AuthPage />
       </React.Suspense>
     ),

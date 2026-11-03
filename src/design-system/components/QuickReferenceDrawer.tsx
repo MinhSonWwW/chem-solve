@@ -226,7 +226,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
               <div>
                 <h3 className="text-base font-black text-slate-100 flex items-center gap-2">
                   {isPhy ? 'Sổ tay tra cứu Vật lý' : 'Sổ tay tra cứu Hóa học'}
-                  <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${isPhy ? 'bg-amber-500/20 text-amber-300 border-amber-500/30' : 'bg-cyan-500/20 text-cyan-300 border-cyan-500/30'}`}>
+                  <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${isPhy ? 'bg-amber-500/20 text-amber-300 border-amber-500/30' : 'bg-[var(--chem-tint)] text-[var(--chem-fg)] border-[var(--chem-edge)]'}`}>
                     THCS 6-9
                   </span>
                 </h3>
@@ -286,7 +286,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                 onClick={() => setChemTab('elements')}
                 className={`py-2 px-3 rounded-xl flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer ${
                   chemTab === 'elements'
-                    ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40'
+                    ? 'bg-[var(--chem-tint)] text-[var(--chem-fg)] border border-[var(--chem-edge)]'
                     : 'text-slate-400 hover:text-slate-200'
                 }`}
               >
@@ -297,7 +297,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                 onClick={() => setChemTab('solubility')}
                 className={`py-2 px-3 rounded-xl flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer ${
                   chemTab === 'solubility'
-                    ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40'
+                    ? 'bg-[var(--chem-tint)] text-[var(--chem-fg)] border border-[var(--chem-edge)]'
                     : 'text-slate-400 hover:text-slate-200'
                 }`}
               >
@@ -308,7 +308,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                 onClick={() => setChemTab('reactivity')}
                 className={`py-2 px-3 rounded-xl flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer ${
                   chemTab === 'reactivity'
-                    ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40'
+                    ? 'bg-[var(--chem-tint)] text-[var(--chem-fg)] border border-[var(--chem-edge)]'
                     : 'text-slate-400 hover:text-slate-200'
                 }`}
               >
@@ -319,7 +319,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                 onClick={() => setChemTab('radicals')}
                 className={`py-2 px-3 rounded-xl flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer ${
                   chemTab === 'radicals'
-                    ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40'
+                    ? 'bg-[var(--chem-tint)] text-[var(--chem-fg)] border border-[var(--chem-edge)]'
                     : 'text-slate-400 hover:text-slate-200'
                 }`}
               >
@@ -330,7 +330,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                 onClick={() => setChemTab('formulas')}
                 className={`py-2 px-3 rounded-xl flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer ${
                   chemTab === 'formulas'
-                    ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40'
+                    ? 'bg-[var(--chem-tint)] text-[var(--chem-fg)] border border-[var(--chem-edge)]'
                     : 'text-slate-400 hover:text-slate-200'
                 }`}
               >
@@ -350,7 +350,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                   placeholder="Tìm tên hoặc kí hiệu (vd: Fe, O, Sắt, Sodium...)"
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
-                  className="w-full bg-slate-950/80 border border-slate-700/80 rounded-xl pl-9 pr-3 py-1.5 text-xs placeholder:text-slate-500 outline-none focus:ring-1 focus:ring-cyan-500"
+                  className="w-full bg-[var(--bg-surface-2)] border border-[var(--border)] rounded-xl pl-9 pr-3 py-1.5 text-xs placeholder:text-slate-500 outline-none focus:ring-1 focus:ring-[var(--chem-fill)] text-[var(--text-primary)]"
                 />
               </div>
             </div>
@@ -443,7 +443,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                     className="p-2.5 rounded-2xl bg-slate-950/60 border border-slate-800 flex items-center justify-between"
                   >
                     <div>
-                      <div className="text-base font-black text-cyan-400 font-mono">
+                      <div className="text-base font-black text-[var(--chem-fg)] font-mono">
                         {el.sym}
                       </div>
                       <div className="text-xs font-bold text-slate-200">{el.name}</div>
@@ -498,7 +498,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                     <tbody className="divide-y divide-slate-800/80 font-mono">
                       {SOLUBILITY_DATA.map((row) => (
                         <tr key={row.cation} className="hover:bg-slate-900/40 transition-colors">
-                          <td className="p-2 text-left font-bold text-cyan-300 font-sans sticky left-0 bg-slate-950/95 border-r border-slate-800 whitespace-nowrap">
+                          <td className="p-2 text-left font-bold text-[var(--chem-fg)] font-sans sticky left-0 bg-slate-950/95 border-r border-slate-800 whitespace-nowrap">
                             {row.cationLabel}
                           </td>
                           {[row.OH, row.Cl, row.NO3, row.SO4, row.CO3, row.PO4, row.S].map((cell, idx) => {
@@ -552,7 +552,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
               <div className="space-y-3">
                 {/* Mnemonic Banner */}
                 <div className="p-3 rounded-2xl bg-linear-to-r from-cyan-950/60 to-blue-950/60 border border-cyan-700/50">
-                  <div className="text-xs font-black text-cyan-300 mb-1 flex items-center gap-1.5">
+                  <div className="text-xs font-black text-[var(--chem-fg)] mb-1 flex items-center gap-1.5">
                     <Zap className="w-3.5 h-3.5 text-amber-400 shrink-0" />
                     <span>Câu thần chú học thuộc lòng:</span>
                   </div>
@@ -581,7 +581,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                         <div className="text-base font-black font-mono leading-none">
                           {m.sym}
                         </div>
-                        <div className="text-[10px] font-extrabold text-cyan-400 mt-1">
+                        <div className="text-[10px] font-extrabold text-[var(--chem-fg)] mt-1">
                           {m.mnemonic}
                         </div>
                       </div>

@@ -8,7 +8,7 @@ export type ReactionEffectType = 'gas' | 'precipitate' | 'indicator' | 'liquid-l
 
 export interface ReactionVisualizerProps {
   type: ReactionEffectType;
-  color?: string; // Hex or CSS color, e.g. '#ffffff' (BaSO4), '#38bdf8' (Cu(OH)2), '#ef4444' (red acid litmus)
+  color?: string; // CSS color or variable, e.g. 'var(--bg-canvas)' (BaSO4), 'var(--chem)' (Cu(OH)2), 'var(--err)' (red litmus)
   label?: string; // Optional label e.g. "↑ Khí H2 thoát ra", "↓ Kết tủa BaSO4 trắng"
   className?: string;
   autoPlaySound?: boolean;
@@ -49,12 +49,12 @@ export const ReactionVisualizer: React.FC<ReactionVisualizerProps> = ({
   const resolvedColor =
     color ||
     (type === 'gas'
-      ? '#38bdf8' // Sky blue bubbles
+      ? 'var(--chem)' // Blue bubbles
       : type === 'precipitate'
-      ? '#ffffff' // White precipitate
+      ? 'var(--bg-canvas)' // White precipitate
       : type === 'indicator'
-      ? '#f43f5e' // Red litmus
-      : '#10b981'); // Emerald liquid
+      ? 'var(--err)' // Red litmus
+      : 'var(--bio)'); // Emerald liquid
 
   // 1. Gas Evolution (≤ 12 bubbles rising from bottom)
   const renderGasEffect = () => {
@@ -93,7 +93,7 @@ export const ReactionVisualizer: React.FC<ReactionVisualizerProps> = ({
                   delay: b.delay,
                   ease: 'easeOut',
                 }}
-                className="absolute rounded-full border border-white/80 bg-cyan-300/40"
+                className="absolute rounded-full border border-white/80 bg-white/40 shadow-xs"
                 style={{
                   width: b.size,
                   height: b.size,
@@ -228,6 +228,9 @@ export const ReactionVisualizer: React.FC<ReactionVisualizerProps> = ({
     );
   };
 
+  const isRed = resolvedColor.includes('err') || resolvedColor.includes('red');
+  const isPurple = resolvedColor.includes('phy') || resolvedColor.includes('purple');
+
   const vfxSticker =
     type === 'gas'
       ? assetUrl('/assets/vfx/vfx-gas.png')
@@ -236,13 +239,13 @@ export const ReactionVisualizer: React.FC<ReactionVisualizerProps> = ({
       : type === 'fire'
       ? assetUrl('/assets/vfx/reaction-fire.png')
       : type === 'color-change'
-      ? resolvedColor === '#ef4444' || resolvedColor === '#f43f5e'
+      ? isRed
         ? assetUrl('/assets/vfx/reaction-color-change-red.png')
         : assetUrl('/assets/vfx/reaction-color-change-blue.png')
       : type === 'indicator'
-      ? resolvedColor === '#8b5cf6' || resolvedColor === '#a855f7' || resolvedColor === '#c084fc'
+      ? isPurple
         ? assetUrl('/assets/vfx/reaction-litmus-purple.png')
-        : resolvedColor === '#ef4444' || resolvedColor === '#f43f5e'
+        : isRed
         ? assetUrl('/assets/vfx/litmus-red.png')
         : assetUrl('/assets/vfx/litmus-blue.png')
       : null;
@@ -252,7 +255,7 @@ export const ReactionVisualizer: React.FC<ReactionVisualizerProps> = ({
       onClick={() => setAnimationKey((k) => k + 1)}
       title="Chạm để phát lại hiện tượng phản ứng"
       className={cn(
-        'flex flex-col items-center justify-center p-3 rounded-2xl bg-slate-950/40 border border-slate-800/80 cursor-pointer hover:border-cyan-500/30 transition-colors relative overflow-hidden',
+        'flex flex-col items-center justify-center p-3 rounded-2xl bg-slate-950/40 border border-slate-800/80 cursor-pointer hover:border-[var(--chem-edge)]/40 transition-colors relative overflow-hidden',
         className
       )}
     >

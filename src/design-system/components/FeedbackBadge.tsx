@@ -21,31 +21,27 @@ export const FeedbackBadge: React.FC<FeedbackBadgeProps> = ({
 
   const config = {
     check: {
-      border: 'border-[3.5px] border-[#009b76]',
-      bg: 'bg-gradient-to-br from-[#10e8b0] via-[#00cd9c] to-[#009b76]',
-      shadow: 'shadow-[0_5px_0_0_#00684f,0_10px_24px_rgba(0,205,156,0.45)]',
-      glow: 'after:absolute after:inset-0 after:rounded-full after:ring-4 after:ring-[#00cd9c]/30 after:animate-pulse',
+      border: 'border-[3px] border-[var(--ok-edge)]',
+      bg: 'bg-[var(--ok-fill)]',
+      shadow: 'shadow-[0_4px_0_0_var(--ok-edge)]',
       rotation: [0, -6, 4, 0],
     },
     cross: {
-      border: 'border-[3.5px] border-[#c92a2a]',
-      bg: 'bg-gradient-to-br from-[#ff6b6b] via-[#ff4b4b] to-[#c92a2a]',
-      shadow: 'shadow-[0_5px_0_0_#8f1818,0_10px_24px_rgba(255,75,75,0.45)]',
-      glow: 'after:absolute after:inset-0 after:rounded-full after:ring-4 after:ring-[#ff4b4b]/30 after:animate-pulse',
+      border: 'border-[3px] border-[var(--err-edge)]',
+      bg: 'bg-[var(--err-fill)]',
+      shadow: 'shadow-[0_4px_0_0_var(--err-edge)]',
       rotation: [0, 8, -6, 0],
     },
     warning: {
-      border: 'border-[3.5px] border-[#d97706]',
-      bg: 'bg-gradient-to-br from-[#fbbf24] via-[#f59e0b] to-[#d97706]',
-      shadow: 'shadow-[0_5px_0_0_#92400e,0_10px_24px_rgba(245,158,11,0.45)]',
-      glow: 'after:absolute after:inset-0 after:rounded-full after:ring-4 after:ring-[#f59e0b]/30 after:animate-pulse',
+      border: 'border-[3px] border-[var(--warn-edge)]',
+      bg: 'bg-[var(--warn-fill)]',
+      shadow: 'shadow-[0_4px_0_0_var(--warn-edge)]',
       rotation: [0, -4, 4, 0],
     },
     hint: {
-      border: 'border-[3.5px] border-[#d97706]',
-      bg: 'bg-gradient-to-br from-[#fde047] via-[#eab308] to-[#ca8a04]',
-      shadow: 'shadow-[0_5px_0_0_#854d0e,0_10px_24px_rgba(234,179,8,0.45)]',
-      glow: 'after:absolute after:inset-0 after:rounded-full after:ring-4 after:ring-[#eab308]/30 after:animate-pulse',
+      border: 'border-[3px] border-[var(--warn-edge)]',
+      bg: 'bg-[var(--warn-fill)]',
+      shadow: 'shadow-[0_4px_0_0_var(--warn-edge)]',
       rotation: [0, -4, 4, 0],
     },
   }[type];
@@ -57,8 +53,8 @@ export const FeedbackBadge: React.FC<FeedbackBadgeProps> = ({
       transition={{ type: 'spring', stiffness: 500, damping: 20 }}
       className={`relative rounded-full shrink-0 flex items-center justify-center select-none overflow-visible ${sizeClasses} ${config.border} ${config.bg} ${config.shadow} ${className}`}
     >
-      {/* 3D Specular Gloss Highlight Arc (top shine) */}
-      <div className="absolute top-1 left-2 right-2 h-1/3 rounded-full bg-gradient-to-b from-white/50 via-white/20 to-transparent pointer-events-none" />
+      {/* 3D Specular Highlight Arc */}
+      <div className="absolute top-1 left-2 right-2 h-1/3 rounded-full bg-gradient-to-b from-white/35 to-transparent pointer-events-none" />
 
       {/* Inner Icon */}
       {type === 'check' && (
@@ -69,7 +65,7 @@ export const FeedbackBadge: React.FC<FeedbackBadgeProps> = ({
           strokeWidth="4"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="w-1/2 h-1/2 text-white filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)] relative z-10"
+          className="w-1/2 h-1/2 text-white relative z-10"
         >
           <polyline points="20 6 9 17 4 12" />
         </svg>
@@ -83,7 +79,7 @@ export const FeedbackBadge: React.FC<FeedbackBadgeProps> = ({
           strokeWidth="4.2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="w-[45%] h-[45%] text-white filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)] relative z-10"
+          className="w-[45%] h-[45%] text-white relative z-10"
         >
           <line x1="18" y1="6" x2="6" y2="18" />
           <line x1="6" y1="6" x2="18" y2="18" />
@@ -91,11 +87,11 @@ export const FeedbackBadge: React.FC<FeedbackBadgeProps> = ({
       )}
 
       {type === 'warning' && (
-        <AlertTriangle className="w-1/2 h-1/2 text-white stroke-[3.5] filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)] relative z-10" />
+        <AlertTriangle className="w-1/2 h-1/2 text-[var(--on-ink)] stroke-[3.5] relative z-10" />
       )}
 
       {type === 'hint' && (
-        <Lightbulb className="w-1/2 h-1/2 text-white stroke-[3.5] filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)] relative z-10" />
+        <Lightbulb className="w-1/2 h-1/2 text-[var(--on-ink)] stroke-[3.5] relative z-10" />
       )}
     </motion.div>
   );

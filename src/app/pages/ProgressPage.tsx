@@ -43,11 +43,11 @@ const CATEGORY_MAP: Record<
   Skill['category'],
   { label: string; bg: string; text: string; border: string; icon: React.ElementType }
 > = {
-  'ly-thuyet': { label: 'Lý thuyết', bg: 'bg-[#0ea5e9]/15', text: 'text-[#38bdf8]', border: 'border-[#0ea5e9]/30', icon: BookOpen },
-  'tinh-toan': { label: 'Tính toán', bg: 'bg-[#00cd9c]/15', text: 'text-[#00cd9c]', border: 'border-[#00cd9c]/30', icon: Calculator },
-  'phuong-trinh': { label: 'Phương trình', bg: 'bg-[#ce82ff]/15', text: 'text-[#ce82ff]', border: 'border-[#ce82ff]/30', icon: Scale },
-  'nhan-biet': { label: 'Nhận biết', bg: 'bg-[#58cc02]/15', text: 'text-[#58cc02]', border: 'border-[#58cc02]/30', icon: Search },
-  'thi-nghiem': { label: 'Thí nghiệm', bg: 'bg-[#ff9600]/15', text: 'text-[#ff9600]', border: 'border-[#ff9600]/30', icon: FlaskConical },
+  'ly-thuyet': { label: 'Lý thuyết', bg: 'bg-[var(--slate-subtle)]', text: 'text-[var(--slate-fg)]', border: 'border-[var(--slate)]', icon: BookOpen },
+  'tinh-toan': { label: 'Tính toán', bg: 'bg-[var(--chem-subtle)]', text: 'text-[var(--chem-fg)]', border: 'border-[var(--chem)]', icon: Calculator },
+  'phuong-trinh': { label: 'Phương trình', bg: 'bg-[var(--phy-subtle)]', text: 'text-[var(--phy-fg)]', border: 'border-[var(--phy)]', icon: Scale },
+  'nhan-biet': { label: 'Nhận biết', bg: 'bg-[var(--bio-subtle)]', text: 'text-[var(--bio-fg)]', border: 'border-[var(--bio)]', icon: Search },
+  'thi-nghiem': { label: 'Thí nghiệm', bg: 'bg-[var(--warn-subtle)]', text: 'text-[var(--warn-fg)]', border: 'border-[var(--warn)]', icon: FlaskConical },
 };
 
 export const ProgressPage: React.FC = () => {
@@ -203,34 +203,34 @@ export const ProgressPage: React.FC = () => {
         if (avgAcc >= 0.85) {
           status = 'Thành thạo (Cấp 3)';
           progress = 100;
-          color = 'bg-[#58cc02]';
-          textColor = 'text-[#58cc02]';
+          color = 'bg-[var(--ok)]';
+          textColor = 'text-[var(--ok-fg)]';
         } else if (avgAcc >= 0.65) {
           status = 'Khá tốt (Cấp 2)';
           progress = Math.round(avgAcc * 100);
-          color = 'bg-[#0ea5e9]';
-          textColor = 'text-[#38bdf8]';
+          color = 'bg-[var(--chem)]';
+          textColor = 'text-[var(--chem-fg)]';
         } else {
           status = 'Cần củng cố';
           progress = Math.round(avgAcc * 100);
-          color = 'bg-[#ff9600]';
-          textColor = 'text-[#ff9600]';
+          color = 'bg-[var(--warn)]';
+          textColor = 'text-[var(--warn-fg)]';
         }
       } else if (isPartiallyCompleted) {
         status = 'Đang rèn luyện';
         progress = Math.round((lessonCompletedNodes.length / lesson.nodes.length) * 60);
-        color = 'bg-[#38bdf8]';
-        textColor = 'text-[#38bdf8]';
+        color = 'bg-[var(--chem)]';
+        textColor = 'text-[var(--chem-fg)]';
       } else if (lesson.ready) {
         status = 'Sẵn sàng học';
         progress = 10;
-        color = 'bg-[#0ea5e9]';
-        textColor = 'text-[#38bdf8]';
+        color = 'bg-[var(--chem-subtle)]';
+        textColor = 'text-[var(--chem-fg)]';
       } else {
         status = 'Đang biên soạn';
         progress = 0;
-        color = 'bg-slate-700';
-        textColor = 'text-slate-500';
+        color = 'bg-[var(--bg-muted)]';
+        textColor = 'text-[var(--fg-subtle)]';
       }
 
       return {
@@ -283,20 +283,20 @@ export const ProgressPage: React.FC = () => {
       {/* 1. Page Header */}
       <div>
         <div className="flex items-center gap-3">
-          <div className={`w-10 h-10 rounded-2xl border-2 flex items-center justify-center shrink-0 ${
+          <div className={`w-10 h-10 rounded-2xl border flex items-center justify-center shrink-0 ${
             isPhysics
-              ? 'bg-amber-500/15 border-amber-500/30 text-amber-300'
+              ? 'bg-[var(--phy-subtle)] border-[var(--phy)] text-[var(--phy-fg)]'
               : isBio
-              ? 'bg-emerald-500/15 border-emerald-500/30 text-emerald-300'
-              : 'bg-[#0ea5e9]/15 border-[#0ea5e9]/30 text-[#38bdf8]'
+              ? 'bg-[var(--bio-subtle)] border-[var(--bio)] text-[var(--bio-fg)]'
+              : 'bg-[var(--chem-subtle)] border-[var(--chem)] text-[var(--chem-fg)]'
           }`}>
             {isPhysics ? <Zap className="w-5 h-5" /> : isBio ? <span className="text-xl">🌿</span> : <BarChart3 className="w-5 h-5" />}
           </div>
           <div>
-            <h1 className="text-xl font-black text-slate-100">
+            <h1 className="text-xl font-black text-[var(--fg-default)]">
               {isPhysics ? 'Tiến trình & Kỹ năng Vật lý' : isBio ? 'Tiến trình & Kỹ năng Sinh học' : 'Tiến trình & Kỹ năng Hóa học'}
             </h1>
-            <p className="text-xs text-slate-400 mt-0.5">
+            <p className="text-xs text-[var(--fg-muted)] mt-0.5">
               {isPhysics
                 ? 'Theo dõi tiến độ học SGK Vật lý, phân loại theo khối lớp và kỹ năng giải toán'
                 : isBio
@@ -310,16 +310,16 @@ export const ProgressPage: React.FC = () => {
       {/* 2. Duolingo-style Grade Switcher Tabs */}
       <div className="space-y-2">
         <div className="flex items-center justify-between px-1">
-          <label className="text-xs font-black uppercase tracking-wider text-slate-300 flex items-center gap-1.5">
-            <GraduationCap className={`w-4 h-4 ${isPhysics ? 'text-amber-400' : isBio ? 'text-emerald-400' : 'text-[#38bdf8]'}`} />
+          <label className="text-xs font-black uppercase tracking-wider text-[var(--fg-default)] flex items-center gap-1.5">
+            <GraduationCap className={`w-4 h-4 ${isPhysics ? 'text-[var(--phy-fg)]' : isBio ? 'text-[var(--bio-fg)]' : 'text-[var(--chem-fg)]'}`} />
             Chọn khối lớp theo dõi:
           </label>
-          <span className={`text-[11px] font-bold ${isPhysics ? 'text-amber-400' : isBio ? 'text-emerald-400' : 'text-[#38bdf8]'}`}>
+          <span className={`text-[11px] font-bold ${isPhysics ? 'text-[var(--phy-fg)]' : isBio ? 'text-[var(--bio-fg)]' : 'text-[var(--chem-fg)]'}`}>
             Đang xem Lớp {selectedGrade}
           </span>
         </div>
 
-        <div className="flex bg-[#18272f] border-2 border-[#2e4756] p-1.5 rounded-2xl shadow-[0_4px_0_0_#131f24]">
+        <div className="flex bg-[var(--bg-surface)] border border-[var(--border)] p-1.5 rounded-2xl">
           {([6, 7, 8, 9] as Grade[]).map((g) => {
             const isSelected = selectedGrade === g;
             return (
@@ -332,16 +332,16 @@ export const ProgressPage: React.FC = () => {
                 className={`flex-1 py-2.5 text-xs font-black rounded-xl transition-all cursor-pointer flex items-center justify-center gap-1.5 sm:gap-2 ${
                   isSelected
                     ? isPhysics
-                      ? 'bg-[#eab308] text-slate-950 shadow-[0_3px_0_0_#ca8a04]'
+                      ? 'bg-[var(--phy)] text-[var(--on-phy)] shadow-[0_3px_0_0_var(--phy-shade)]'
                       : isBio
-                      ? 'bg-[#10b981] text-slate-950 shadow-[0_3px_0_0_#059669]'
-                      : 'bg-[#0ea5e9] text-[#131f24] shadow-[0_3px_0_0_#0284c7]'
-                    : 'text-slate-400 hover:text-slate-200 hover:bg-[#20333d]'
+                      ? 'bg-[var(--bio)] text-[var(--on-bio)] shadow-[0_3px_0_0_var(--bio-shade)]'
+                      : 'bg-[var(--chem)] text-[var(--on-chem)] shadow-[0_3px_0_0_var(--chem-shade)]'
+                    : 'text-[var(--fg-muted)] hover:text-[var(--fg-default)] hover:bg-[var(--bg-muted)]'
                 }`}
               >
                 <span><span className="hidden sm:inline">{isPhysics ? 'Vật lý ' : isBio ? 'Sinh học ' : 'Hóa học '}</span>Lớp {g}</span>
                 {isSelected && (
-                  <span className={`w-1.5 h-1.5 rounded-full animate-pulse ${isPhysics ? 'bg-slate-950' : isBio ? 'bg-slate-950' : 'bg-[#131f24]'}`} />
+                  <span className={`w-1.5 h-1.5 rounded-full animate-pulse ${isPhysics ? 'bg-[var(--on-phy)]' : isBio ? 'bg-[var(--on-bio)]' : 'bg-[var(--on-chem)]'}`} />
                 )}
               </button>
             );
@@ -350,22 +350,22 @@ export const ProgressPage: React.FC = () => {
       </div>
 
       {/* 3. Grade Overview Card (Thông số riêng của khối lớp được chọn) */}
-      <div className="p-5 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] space-y-4 relative overflow-hidden">
+      <div className="p-5 rounded-3xl bg-[var(--bg-surface)] border border-[var(--border)] space-y-4 relative overflow-hidden">
         <div className="flex items-start justify-between relative z-10">
           <div className="space-y-1">
             <span className={`inline-block text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-lg border ${
               isPhysics
-                ? 'text-amber-300 bg-amber-950/90 border-amber-800/60'
+                ? 'text-[var(--phy-fg)] bg-[var(--phy-subtle)] border-[var(--phy)]'
                 : isBio
-                ? 'text-emerald-300 bg-emerald-950/90 border-emerald-800/60'
-                : 'text-cyan-300 bg-cyan-950/90 border-cyan-800/60'
+                ? 'text-[var(--bio-fg)] bg-[var(--bio-subtle)] border-[var(--bio)]'
+                : 'text-[var(--chem-fg)] bg-[var(--chem-subtle)] border-[var(--chem)]'
             }`}>
               {selectedCurriculum.title} · SGK Mới
             </span>
-            <h2 className="text-lg font-black text-white">
+            <h2 className="text-lg font-black text-[var(--fg-default)]">
               Tiến độ hoàn thành Lớp {selectedGrade}
             </h2>
-            <p className="text-xs text-slate-300 line-clamp-1">
+            <p className="text-xs text-[var(--fg-muted)] line-clamp-1">
               {isPhysics
                 ? (selectedGrade === 9
                     ? 'Năng lượng cơ học, Ánh sáng, Điện, Điện từ & Năng lượng tái tạo'
@@ -387,26 +387,26 @@ export const ProgressPage: React.FC = () => {
           </div>
 
           <div className="text-right">
-            <span className={`text-2xl font-black ${isPhysics ? 'text-amber-400' : isBio ? 'text-emerald-400' : 'text-cyan-400'}`}>{gradeCompletionPercent}%</span>
-            <span className="text-[10px] text-slate-400 block font-bold">hoàn thành</span>
+            <span className={`text-2xl font-black ${isPhysics ? 'text-[var(--phy-fg)]' : isBio ? 'text-[var(--bio-fg)]' : 'text-[var(--chem-fg)]'}`}>{gradeCompletionPercent}%</span>
+            <span className="text-[10px] text-[var(--fg-subtle)] block font-bold">hoàn thành</span>
           </div>
         </div>
 
         {/* Master Progress Bar */}
         <div className="space-y-1.5 relative z-10">
-          <div className="w-full bg-[#131f24] h-3 rounded-full overflow-hidden border border-[#2e4756] p-0.5 shadow-inner">
+          <div className="w-full bg-[var(--bg-canvas)] h-3 rounded-full overflow-hidden border border-[var(--border)] p-0.5">
             <div
               className={`h-full rounded-full transition-all duration-700 ${
                 isPhysics
-                  ? 'bg-gradient-to-r from-amber-500 to-yellow-400'
+                  ? 'bg-[var(--phy)]'
                   : isBio
-                  ? 'bg-gradient-to-r from-emerald-500 to-teal-400'
-                  : 'bg-gradient-to-r from-cyan-500 to-emerald-400'
+                  ? 'bg-[var(--bio)]'
+                  : 'bg-[var(--chem)]'
               }`}
               style={{ width: `${Math.max(4, gradeCompletionPercent)}%` }}
             />
           </div>
-          <div className="flex justify-between text-[11px] font-bold text-slate-400 px-0.5">
+          <div className="flex justify-between text-[11px] font-bold text-[var(--fg-muted)] px-0.5">
             <span>Đã vượt qua {completedGradeCount}/{totalGradeNodeCount} chặng</span>
             <span>{totalGradeNodeCount - completedGradeCount} chặng còn lại</span>
           </div>
@@ -414,45 +414,45 @@ export const ProgressPage: React.FC = () => {
 
         {/* 4 Per-Grade Specific Stats */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-1 relative z-10">
-          <div className="p-3 bg-[#131f24] border-2 border-[#2e4756] rounded-2xl space-y-0.5 text-center">
-            <span className="text-[10px] font-bold text-slate-400 uppercase">Chặng đã học</span>
-            <div className="text-base font-black text-slate-100">
+          <div className="p-3 bg-[var(--bg-canvas)] border border-[var(--border)] rounded-2xl space-y-0.5 text-center">
+            <span className="text-[10px] font-bold text-[var(--fg-subtle)] uppercase">Chặng đã học</span>
+            <div className="text-base font-black text-[var(--fg-default)]">
               {completedGradeCount}/{totalGradeNodeCount}
             </div>
           </div>
 
-          <div className="p-3 bg-[#131f24] border-2 border-[#2e4756] rounded-2xl space-y-0.5 text-center">
-            <span className="text-[10px] font-bold text-slate-400 uppercase">Độ chính xác TB</span>
-            <div className="text-base font-black text-emerald-400">
+          <div className="p-3 bg-[var(--bg-canvas)] border border-[var(--border)] rounded-2xl space-y-0.5 text-center">
+            <span className="text-[10px] font-bold text-[var(--fg-subtle)] uppercase">Độ chính xác TB</span>
+            <div className="text-base font-black text-[var(--ok-fg)]">
               {completedGradeCount > 0 ? `${gradeAccuracy}%` : 'Chưa học'}
             </div>
           </div>
 
-          <div className="p-3 bg-[#131f24] border-2 border-[#2e4756] rounded-2xl space-y-0.5 text-center">
-            <span className="text-[10px] font-bold text-slate-400 uppercase">Bài hoàn thành</span>
-            <div className={`text-base font-black ${isPhysics ? 'text-amber-400' : isBio ? 'text-emerald-400' : 'text-cyan-400'}`}>
+          <div className="p-3 bg-[var(--bg-canvas)] border border-[var(--border)] rounded-2xl space-y-0.5 text-center">
+            <span className="text-[10px] font-bold text-[var(--fg-subtle)] uppercase">Bài hoàn thành</span>
+            <div className={`text-base font-black ${isPhysics ? 'text-[var(--phy-fg)]' : isBio ? 'text-[var(--bio-fg)]' : 'text-[var(--chem-fg)]'}`}>
               {completedGradeLessonsCount}/{allGradeLessons.length}
             </div>
           </div>
 
-          <div className="p-3 bg-[#131f24] border-2 border-[#2e4756] rounded-2xl space-y-0.5 text-center">
-            <span className="text-[10px] font-bold text-slate-400 uppercase">Bài có sẵn</span>
-            <div className="text-base font-black text-amber-400">
+          <div className="p-3 bg-[var(--bg-canvas)] border border-[var(--border)] rounded-2xl space-y-0.5 text-center">
+            <span className="text-[10px] font-bold text-[var(--fg-subtle)] uppercase">Bài có sẵn</span>
+            <div className="text-base font-black text-[var(--gold-fg)]">
               {readyGradeLessonsCount}/{allGradeLessons.length}
             </div>
           </div>
         </div>
 
         {completedGradeCount === 0 && (
-          <div className="p-4 rounded-2xl bg-[#131f24] border-2 border-[#2e4756] flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left relative z-10">
+          <div className="p-4 rounded-2xl bg-[var(--bg-canvas)] border border-[var(--border)] flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left relative z-10">
             <img
               src={assetUrl('/assets/ui/empty-no-progress.png')}
               alt="Chưa có tiến độ"
               className="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-md shrink-0 select-none pointer-events-none"
             />
             <div className="space-y-1">
-              <h4 className="text-xs font-black text-slate-200">Bạn chưa bắt đầu học Lớp {selectedGrade}</h4>
-              <p className="text-[11px] text-slate-400 leading-relaxed">
+              <h4 className="text-xs font-black text-[var(--fg-default)]">Bạn chưa bắt đầu học Lớp {selectedGrade}</h4>
+              <p className="text-[11px] text-[var(--fg-muted)] leading-relaxed">
                 Nhấn "Mở bản đồ học Lớp {selectedGrade}" để làm bài đầu tiên và tích lũy XP cùng đá quý!
               </p>
             </div>
@@ -464,19 +464,13 @@ export const ProgressPage: React.FC = () => {
           <Button
             variant="primary"
             size="md"
-            className={`flex items-center justify-center gap-2 ${
-              isPhysics
-                ? 'bg-[#eab308] hover:bg-[#ca8a04] text-slate-950 shadow-[0_3px_0_0_#a16207]'
-                : isBio
-                ? 'bg-[#10b981] hover:bg-[#059669] text-slate-950 shadow-[0_3px_0_0_#047857]'
-                : ''
-            }`}
+            className="flex items-center justify-center gap-2"
             onClick={() => {
               sound.playClick();
               navigate(`/learn/${selectedGrade}`);
             }}
           >
-            {isPhysics ? <Zap className="w-4 h-4 text-slate-950" /> : isBio ? <Dna className="w-4 h-4 text-slate-950" /> : <BookOpen className="w-4 h-4" />}
+            {isPhysics ? <Zap className="w-4 h-4" /> : isBio ? <Dna className="w-4 h-4" /> : <BookOpen className="w-4 h-4" />}
             <span>MỞ BẢN ĐỒ HỌC LỚP {selectedGrade}</span>
           </Button>
 
@@ -497,25 +491,25 @@ export const ProgressPage: React.FC = () => {
 
       {/* 4. Weak Topics of Selected Grade */}
       {gradeWeakTopics.length > 0 ? (
-        <div className="p-4 bg-[#241a10] border-2 border-[#e67e22]/40 rounded-3xl space-y-2.5 shadow-[0_4px_0_0_#131f24]">
-          <div className="flex items-center gap-2 text-amber-400">
+        <div className="p-4 bg-[var(--warn-subtle)] border border-[var(--warn)] rounded-3xl space-y-2.5">
+          <div className="flex items-center gap-2 text-[var(--warn-fg)]">
             <AlertTriangle className="w-4 h-4 shrink-0" />
             <h2 className="text-xs font-black uppercase tracking-wider">
               Chủ đề cần củng cố ở Lớp {selectedGrade}
             </h2>
           </div>
-          <p className="text-xs text-slate-300">
+          <p className="text-xs text-[var(--fg-muted)]">
             Hệ thống phát hiện bạn gặp khó khăn ở các dạng bài sau (&lt; 70% chính xác):
           </p>
           <div className="space-y-2">
             {gradeWeakTopics.map((item) => (
               <div
                 key={item.skill.id}
-                className="p-3 bg-[#18272f] border-2 border-[#2e4756] rounded-2xl flex items-center justify-between"
+                className="p-3 bg-[var(--bg-surface)] border border-[var(--border)] rounded-2xl flex items-center justify-between"
               >
                 <div>
-                  <h3 className="text-xs font-bold text-slate-100">{item.skill.name}</h3>
-                  <p className="text-[10px] text-amber-400 mt-0.5 font-medium">
+                  <h3 className="text-xs font-bold text-[var(--fg-default)]">{item.skill.name}</h3>
+                  <p className="text-[10px] text-[var(--warn-fg)] mt-0.5 font-medium">
                     Độ chính xác: {Math.round(item.accuracy * 100)}% ({item.correctCount}/{item.totalAttempts} câu)
                   </p>
                 </div>
@@ -524,7 +518,7 @@ export const ProgressPage: React.FC = () => {
                     sound.playClick();
                     navigate(`/learn/${item.skill.grade}`);
                   }}
-                  className="px-2.5 py-1.5 rounded-xl bg-amber-500/20 border border-amber-500/40 text-amber-300 font-bold text-xs hover:bg-amber-500/30 flex items-center gap-1 transition cursor-pointer"
+                  className="px-2.5 py-1.5 rounded-xl bg-[var(--warn)] text-[var(--on-ink)] font-bold text-xs hover:bg-[var(--warn-hover)] flex items-center gap-1 transition cursor-pointer shadow-[0_2px_0_0_var(--warn-shade)] active:translate-y-0.5"
                 >
                   Luyện ngay <ArrowRight className="w-3 h-3" />
                 </button>
@@ -533,15 +527,15 @@ export const ProgressPage: React.FC = () => {
           </div>
         </div>
       ) : completedGradeCount > 0 ? (
-        <div className="p-4 bg-[#11241f] border-2 border-[#10b981]/30 rounded-3xl flex items-center gap-3 shadow-[0_4px_0_0_#131f24]">
-          <div className="w-10 h-10 rounded-2xl bg-emerald-500/15 border-2 border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+        <div className="p-4 bg-[var(--ok-subtle)] border border-[var(--ok)] rounded-3xl flex items-center gap-3">
+          <div className="w-10 h-10 rounded-2xl bg-[var(--ok-subtle)] border border-[var(--ok)] flex items-center justify-center text-[var(--ok-fg)] shrink-0">
             <CheckCircle2 className="w-5 h-5" />
           </div>
           <div>
-            <h3 className="text-xs font-black uppercase tracking-wider text-emerald-400">
+            <h3 className="text-xs font-black uppercase tracking-wider text-[var(--ok-fg)]">
               Nắm vững kiến thức Lớp {selectedGrade}
             </h3>
-            <p className="text-xs text-slate-300 mt-0.5">
+            <p className="text-xs text-[var(--fg-muted)] mt-0.5">
               Hệ thống không phát hiện kỹ năng nào có độ chính xác dưới 70%. Bạn đang học rất chắc chắn!
             </p>
           </div>
@@ -551,11 +545,11 @@ export const ProgressPage: React.FC = () => {
       {/* 5. Mastered Skills of Selected Grade (Kỹ năng hóa học trọng tâm của từng lớp) */}
       <div className="space-y-3">
         <div className="flex items-center justify-between px-1">
-          <h2 className="text-xs font-extrabold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
-            <TrendingUp className={`w-3.5 h-3.5 ${isPhysics ? 'text-amber-400' : isBio ? 'text-emerald-400' : 'text-cyan-400'}`} />
+          <h2 className="text-xs font-extrabold uppercase tracking-wider text-[var(--fg-muted)] flex items-center gap-1.5">
+            <TrendingUp className={`w-3.5 h-3.5 ${isPhysics ? 'text-[var(--phy-fg)]' : isBio ? 'text-[var(--bio-fg)]' : 'text-[var(--chem-fg)]'}`} />
             Kỹ năng {isPhysics ? 'Vật lý' : isBio ? 'Sinh học' : 'Hóa học'} trọng tâm · Lớp {selectedGrade} ({gradeSkillsWithProgress.length} kỹ năng)
           </h2>
-          <span className="text-[10px] font-bold text-slate-500">
+          <span className="text-[10px] font-bold text-[var(--fg-subtle)]">
             Cập nhật theo tiến độ học
           </span>
         </div>
@@ -567,7 +561,7 @@ export const ProgressPage: React.FC = () => {
             return (
               <div
                 key={skill.id}
-                className="p-4 bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] rounded-2xl space-y-2.5 transition-all"
+                className="p-4 bg-[var(--bg-surface)] border border-[var(--border)] rounded-2xl space-y-2.5 transition-all"
               >
                 <div className="flex items-start justify-between gap-2">
                   <div className="space-y-1">
@@ -578,15 +572,15 @@ export const ProgressPage: React.FC = () => {
                         <CatIcon className="w-3 h-3" />
                         <span>{cat.label}</span>
                       </span>
-                      <span className="text-[11px] font-bold text-slate-400">
+                      <span className="text-[11px] font-bold text-[var(--fg-subtle)]">
                         {skill.lessonTitle}
                       </span>
                     </div>
 
-                    <h3 className="text-xs sm:text-sm font-black text-slate-100">
+                    <h3 className="text-xs sm:text-sm font-black text-[var(--fg-default)]">
                       {skill.name}
                     </h3>
-                    <p className="text-[11px] text-slate-400 leading-relaxed font-normal">
+                    <p className="text-[11px] text-[var(--fg-muted)] leading-relaxed font-normal">
                       {skill.description}
                     </p>
                   </div>
@@ -601,9 +595,9 @@ export const ProgressPage: React.FC = () => {
                           sound.playClick();
                           navigate(`/play/${skill.lessonId}/${skill.firstNodeId}`);
                         }}
-                        className="mt-1.5 px-2.5 py-1 bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 border border-cyan-500/40 rounded-xl text-[10px] font-bold inline-flex items-center gap-1 cursor-pointer transition active:scale-95"
+                        className="mt-1.5 px-2.5 py-1 bg-[var(--chem-subtle)] hover:bg-[var(--chem-subtle)] text-[var(--chem-fg)] border border-[var(--chem)] rounded-xl text-[10px] font-bold inline-flex items-center gap-1 cursor-pointer transition active:scale-95"
                       >
-                        <Play className="w-3 h-3 fill-cyan-400 text-cyan-400" />
+                        <Play className="w-3 h-3 fill-[var(--chem-fg)] text-[var(--chem-fg)]" />
                         <span>Luyện tập</span>
                       </button>
                     )}
@@ -611,7 +605,7 @@ export const ProgressPage: React.FC = () => {
                 </div>
 
                 {/* Progress bar */}
-                <div className="w-full bg-[#131f24] h-2 rounded-full overflow-hidden border border-[#2e4756]">
+                <div className="w-full bg-[var(--bg-canvas)] h-2 rounded-full overflow-hidden border border-[var(--border)]">
                   <div
                     className={`${skill.color} h-full rounded-full transition-all duration-500`}
                     style={{ width: `${Math.max(4, skill.progress)}%` }}
@@ -624,15 +618,15 @@ export const ProgressPage: React.FC = () => {
       </div>
 
       {/* 6. Spaced Repetition (Leitner 5-Box Distribution) */}
-      <div className="p-4 bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] rounded-3xl space-y-3">
+      <div className="p-4 bg-[var(--bg-surface)] border border-[var(--border)] rounded-3xl space-y-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Layers className="w-4 h-4 text-cyan-400" />
-            <h2 className="text-xs font-black uppercase tracking-wider text-slate-200">
+            <Layers className="w-4 h-4 text-[var(--chem-fg)]" />
+            <h2 className="text-xs font-black uppercase tracking-wider text-[var(--fg-default)]">
               Hộp ghi nhớ Leitner (5 cấp độ)
             </h2>
           </div>
-          <span className="text-[10px] font-bold text-slate-400">
+          <span className="text-[10px] font-bold text-[var(--fg-subtle)]">
             {dueCards.length} thẻ đến hạn
           </span>
         </div>
@@ -640,11 +634,11 @@ export const ProgressPage: React.FC = () => {
         {/* 5 Boxes Visualization */}
         <div className="grid grid-cols-5 gap-1.5 pt-1">
           {[
-            { box: 1, label: '1 ngày', count: boxStats[1] || 0, color: 'bg-rose-500/20 text-rose-400 border-rose-500/40' },
-            { box: 2, label: '2 ngày', count: boxStats[2] || 0, color: 'bg-amber-500/20 text-amber-400 border-amber-500/40' },
-            { box: 3, label: '4 ngày', count: boxStats[3] || 0, color: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/40' },
-            { box: 4, label: '7 ngày', count: boxStats[4] || 0, color: 'bg-cyan-500/20 text-cyan-400 border-cyan-500/40' },
-            { box: 5, label: '14 ngày', count: boxStats[5] || 0, color: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/40' },
+            { box: 1, label: '1 ngày', count: boxStats[1] || 0, color: 'bg-[var(--err-subtle)] text-[var(--err-fg)] border-[var(--err)]' },
+            { box: 2, label: '2 ngày', count: boxStats[2] || 0, color: 'bg-[var(--warn-subtle)] text-[var(--warn-fg)] border-[var(--warn)]' },
+            { box: 3, label: '4 ngày', count: boxStats[3] || 0, color: 'bg-[var(--gold-subtle)] text-[var(--gold-fg)] border-[var(--gold)]' },
+            { box: 4, label: '7 ngày', count: boxStats[4] || 0, color: 'bg-[var(--chem-subtle)] text-[var(--chem-fg)] border-[var(--chem)]' },
+            { box: 5, label: '14 ngày', count: boxStats[5] || 0, color: 'bg-[var(--ok-subtle)] text-[var(--ok-fg)] border-[var(--ok)]' },
           ].map((b) => (
             <div
               key={b.box}
@@ -658,7 +652,7 @@ export const ProgressPage: React.FC = () => {
         </div>
 
         <Button
-          variant="accent"
+          variant="primary"
           size="sm"
           fullWidth
           onClick={() => {
@@ -674,54 +668,54 @@ export const ProgressPage: React.FC = () => {
 
       {/* 7. Overall Account Stats Summary Grid */}
       <div className="space-y-2">
-        <h2 className="text-xs font-extrabold uppercase tracking-wider text-slate-400 px-1 flex items-center gap-1.5">
-          <Award className="w-3.5 h-3.5 text-violet-400" />
+        <h2 className="text-xs font-extrabold uppercase tracking-wider text-[var(--fg-muted)] px-1 flex items-center gap-1.5">
+          <Award className="w-3.5 h-3.5 text-[var(--phy-fg)]" />
           Tổng quan toàn tài khoản
         </h2>
 
         <div className="grid grid-cols-2 gap-3">
-          <div className="p-4 bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] rounded-2xl space-y-1">
-            <div className="flex items-center gap-1.5 text-cyan-400 text-xs font-bold">
-              <Sparkles className="w-4 h-4 fill-cyan-400" />
+          <div className="p-4 bg-[var(--bg-surface)] border border-[var(--border)] rounded-2xl space-y-1">
+            <div className="flex items-center gap-1.5 text-[var(--gold-fg)] text-xs font-bold">
+              <Sparkles className="w-4 h-4 fill-[var(--gold-fg)]" />
               Tổng kinh nghiệm
             </div>
-            <div className="text-2xl font-black text-slate-100">{xp} XP</div>
-            <div className="text-[10px] text-cyan-400 font-medium">
+            <div className="text-2xl font-black text-[var(--fg-default)]">{xp} XP</div>
+            <div className="text-[10px] text-[var(--gold-fg)] font-medium">
               Cấp {levelInfo.level} · {levelInfo.progressPercent}% đến Cấp {levelInfo.level + 1}
             </div>
           </div>
 
-          <div className="p-4 bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] rounded-2xl space-y-1">
-            <div className="flex items-center gap-1.5 text-amber-400 text-xs font-bold">
-              <Flame className="w-4 h-4 fill-amber-400" />
+          <div className="p-4 bg-[var(--bg-surface)] border border-[var(--border)] rounded-2xl space-y-1">
+            <div className="flex items-center gap-1.5 text-[var(--warn-fg)] text-xs font-bold">
+              <Flame className="w-4 h-4 fill-[var(--warn-fg)]" />
               Chuỗi ngày học
             </div>
-            <div className="text-2xl font-black text-slate-100">{streak} ngày</div>
-            <div className="text-[10px] text-amber-400 font-medium">
+            <div className="text-2xl font-black text-[var(--fg-default)]">{streak} ngày</div>
+            <div className="text-[10px] text-[var(--warn-fg)] font-medium">
               {streak > 0 ? 'Đang duy trì ngọn lửa!' : 'Học hôm nay để thắp lửa!'}
             </div>
           </div>
 
-          <div className="p-4 bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] rounded-2xl space-y-1">
-            <div className="flex items-center gap-1.5 text-emerald-400 text-xs font-bold">
+          <div className="p-4 bg-[var(--bg-surface)] border border-[var(--border)] rounded-2xl space-y-1">
+            <div className="flex items-center gap-1.5 text-[var(--ok-fg)] text-xs font-bold">
               <CheckCircle2 className="w-4 h-4" />
               Độ chính xác chung
             </div>
-            <div className="text-2xl font-black text-slate-100">{avgAccuracy}%</div>
-            <div className="text-[10px] text-emerald-400 font-medium">
+            <div className="text-2xl font-black text-[var(--fg-default)]">{avgAccuracy}%</div>
+            <div className="text-[10px] text-[var(--ok-fg)] font-medium">
               {totalCompleted > 0 ? `Dựa trên ${totalCompleted} chặng đã qua` : 'Chưa có dữ liệu'}
             </div>
           </div>
 
-          <div className="p-4 bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] rounded-2xl space-y-1">
-            <div className="flex items-center gap-1.5 text-violet-400 text-xs font-bold">
+          <div className="p-4 bg-[var(--bg-surface)] border border-[var(--border)] rounded-2xl space-y-1">
+            <div className="flex items-center gap-1.5 text-[var(--phy-fg)] text-xs font-bold">
               <Award className="w-4 h-4" />
               Huy hiệu đạt được
             </div>
-            <div className="text-2xl font-black text-slate-100">
+            <div className="text-2xl font-black text-[var(--fg-default)]">
               {unlockedAchievementsCount}/{ACHIEVEMENTS.length}
             </div>
-            <div className="text-[10px] text-violet-400 font-medium">
+            <div className="text-[10px] text-[var(--phy-fg)] font-medium">
               Thành tựu Chem-Solve
             </div>
           </div>

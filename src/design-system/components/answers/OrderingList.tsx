@@ -3,6 +3,7 @@ import { Reorder, useDragControls } from 'motion/react';
 import { GripVertical, ChevronUp, ChevronDown } from 'lucide-react';
 import type { Verdict } from '@/engine/checkers/types';
 import { sound } from '@/lib/audio';
+import { MathText } from '../MathText';
 
 export interface OrderingListProps {
   items: string[];
@@ -42,12 +43,12 @@ const OrderingItem: React.FC<OrderingItemProps> = ({
       dragControls={controls}
       whileDrag={{
         scale: 1.025,
-        boxShadow: '0 14px 30px rgba(0, 0, 0, 0.65)',
-        borderColor: '#38bdf8',
-        backgroundColor: '#1b2f3a',
+        boxShadow: 'var(--shadow-modal)',
+        borderColor: 'var(--subject-edge)',
+        backgroundColor: 'var(--bg-surface)',
         zIndex: 50,
       }}
-      whileHover={!disabled ? { borderColor: '#38bdf8' } : undefined}
+      whileHover={!disabled ? { borderColor: 'var(--subject-edge)' } : undefined}
       className={`group flex items-center gap-3 p-3.5 sm:p-4 rounded-2xl select-none transition-colors relative ${itemStyle} ${
         disabled ? 'cursor-default' : 'cursor-grab active:cursor-grabbing touch-pan-y'
       }`}
@@ -59,8 +60,8 @@ const OrderingItem: React.FC<OrderingItemProps> = ({
         }}
         className={`p-1.5 -ml-1 rounded-xl flex items-center justify-center transition-colors ${
           disabled
-            ? 'text-slate-600'
-            : 'text-slate-400 group-hover:text-[#38bdf8] hover:bg-[#20333d] cursor-grab active:cursor-grabbing touch-none'
+            ? 'text-[var(--text-tertiary)]'
+            : 'text-[var(--text-secondary)] group-hover:text-[var(--subject-fg)] hover:bg-[var(--bg-surface-2)] cursor-grab active:cursor-grabbing touch-none'
         }`}
         title="Kéo thả để sắp xếp"
       >
@@ -68,16 +69,16 @@ const OrderingItem: React.FC<OrderingItemProps> = ({
       </div>
 
       {/* Step number badge */}
-      <div className="w-7 h-7 rounded-full bg-[#131f24] border-2 border-[#2e4756] group-hover:border-[#38bdf8]/50 flex items-center justify-center text-xs font-black text-[#38bdf8] shrink-0 shadow-inner">
+      <div className="w-7 h-7 rounded-full bg-[var(--bg-surface-2)] border border-[var(--border)] group-hover:border-[var(--subject-edge)] flex items-center justify-center text-xs font-black text-[var(--subject-fg)] shrink-0">
         {idx + 1}
       </div>
 
       {/* Item text */}
-      <span className="flex-1 text-xs sm:text-sm font-bold text-slate-100 leading-relaxed">
-        {item}
+      <span className="flex-1 text-xs sm:text-sm font-bold text-[var(--text-primary)] leading-relaxed">
+        <MathText text={item} />
       </span>
 
-      {/* Move controls (accessible fallback buttons) */}
+      {/* Move controls */}
       {!disabled && (
         <div className="flex flex-col gap-1 shrink-0 ml-1">
           <button
@@ -87,7 +88,7 @@ const OrderingItem: React.FC<OrderingItemProps> = ({
               onMoveUp();
             }}
             disabled={idx === 0}
-            className="p-1 rounded-lg bg-[#131f24] hover:bg-[#20333d] border border-[#2e4756] hover:border-[#38bdf8]/50 disabled:opacity-20 transition-all cursor-pointer text-slate-400 hover:text-slate-100 active:scale-95"
+            className="p-1 rounded-lg bg-[var(--bg-surface-2)] hover:bg-[var(--border)] border border-[var(--border)] disabled:opacity-20 transition-all cursor-pointer text-[var(--text-secondary)] hover:text-[var(--text-primary)] active:scale-95"
             aria-label="Di chuyển lên"
           >
             <ChevronUp className="w-3.5 h-3.5" />
@@ -99,7 +100,7 @@ const OrderingItem: React.FC<OrderingItemProps> = ({
               onMoveDown();
             }}
             disabled={idx === total - 1}
-            className="p-1 rounded-lg bg-[#131f24] hover:bg-[#20333d] border border-[#2e4756] hover:border-[#38bdf8]/50 disabled:opacity-20 transition-all cursor-pointer text-slate-400 hover:text-slate-100 active:scale-95"
+            className="p-1 rounded-lg bg-[var(--bg-surface-2)] hover:bg-[var(--border)] border border-[var(--border)] disabled:opacity-20 transition-all cursor-pointer text-[var(--text-secondary)] hover:text-[var(--text-primary)] active:scale-95"
             aria-label="Di chuyển xuống"
           >
             <ChevronDown className="w-3.5 h-3.5" />
@@ -110,10 +111,6 @@ const OrderingItem: React.FC<OrderingItemProps> = ({
   );
 };
 
-/**
- * Ordering list with both smooth drag-and-drop (Framer Motion Reorder)
- * and accessible tap-to-move controls.
- */
 export const OrderingList: React.FC<OrderingListProps> = ({
   items: _items,
   value,
@@ -124,7 +121,6 @@ export const OrderingList: React.FC<OrderingListProps> = ({
 }) => {
   const isChecked = !!verdict;
 
-  // Use value if populated, otherwise use items (initially shuffled)
   const safeValue = value || [];
   const orderedItems = safeValue.length > 0 ? safeValue : _items;
 
@@ -152,20 +148,20 @@ export const OrderingList: React.FC<OrderingListProps> = ({
 
   const getItemStyle = () => {
     if (!isChecked) {
-      return 'border-2 border-[#2e4756] bg-[#18272f] text-slate-100 shadow-[0_3px_0_0_#131f24]';
+      return 'border border-[var(--border)] bg-[var(--bg-surface)] text-[var(--text-primary)] shadow-[0_3px_0_0_var(--edge-neutral)]';
     }
     if (verdict?.status === 'correct') {
-      return 'border-2 border-[#00cd9c] bg-[#00cd9c]/15 text-emerald-200 shadow-[0_3px_0_0_#007a5d]';
+      return 'border-2 border-[var(--ok-fill)] bg-[var(--ok-tint)] text-[var(--ok-fg)] shadow-[0_3px_0_0_var(--ok-edge)]';
     }
-    return 'border-2 border-[#ff4b4b] bg-[#ff4b4b]/15 text-rose-200 shadow-[0_3px_0_0_#b32525]';
+    return 'border-2 border-[var(--err-fill)] bg-[var(--err-tint)] text-[var(--err-fg)] shadow-[0_3px_0_0_var(--err-edge)]';
   };
 
   return (
     <div className="space-y-2.5">
       {/* Drag instruction notice */}
       {!disabled && !isChecked && (
-        <div className="flex items-center gap-1.5 text-[11px] font-bold text-slate-400 px-1">
-          <GripVertical className="w-3.5 h-3.5 text-[#38bdf8]" />
+        <div className="flex items-center gap-1.5 text-[11px] font-bold text-[var(--text-tertiary)] px-1">
+          <GripVertical className="w-3.5 h-3.5 text-[var(--subject-fg)]" />
           <span>Giữ và kéo thả các thẻ để sắp xếp theo đúng thứ tự</span>
         </div>
       )}

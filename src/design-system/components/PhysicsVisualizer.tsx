@@ -56,13 +56,12 @@ export const PhysicsVisualizer: React.FC<PhysicsVisualizerProps> = ({
   return (
     <div
       className={cn(
-        'w-full rounded-2xl bg-[#0e1720]/90 border border-amber-500/25 p-3.5 shadow-lg relative overflow-hidden select-none',
+        'w-full rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] p-3.5 relative overflow-hidden select-none',
         className
       )}
     >
-      {/* Background radial glow */}
-      <div className="absolute -top-12 -right-12 w-36 h-36 bg-amber-500/10 rounded-full blur-2xl pointer-events-none" />
-      <div className="absolute -bottom-12 -left-12 w-36 h-36 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none" />
+      {/* Clean container frame */}
+      
 
       {mode === 'spring-scale' && <SpringScaleWidget initialMass={params?.mass ?? initialValue ?? 100} />}
       {mode === 'moon-phases' && <MoonPhasesWidget />}
@@ -133,7 +132,7 @@ const SpringScaleWidget: React.FC<{ initialMass: number }> = ({ initialMass }) =
                   L 24 6 L 8 14 L 24 22 L 8 30 L 24 38 L 8 46 L 24 54 
                   L 16 ${50 + stretchY}`}
               fill="none"
-              stroke="#f59e0b"
+              stroke="var(--gold)"
               strokeWidth="2.5"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -155,7 +154,7 @@ const SpringScaleWidget: React.FC<{ initialMass: number }> = ({ initialMass }) =
         </div>
 
         {/* Newton Gauge Ruler */}
-        <div className="h-32 w-16 bg-[#16222f] border border-slate-700/80 rounded-xl p-1.5 flex flex-col justify-between text-[10px] font-bold text-slate-400 relative">
+        <div className="h-32 w-16 bg-[var(--bg-canvas)] border border-slate-700/80 rounded-xl p-1.5 flex flex-col justify-between text-[10px] font-bold text-slate-400 relative">
           <div className="text-[9px] text-center font-black text-amber-400 uppercase tracking-wider border-b border-slate-700 pb-0.5">
             Lực kế (N)
           </div>
@@ -174,7 +173,7 @@ const SpringScaleWidget: React.FC<{ initialMass: number }> = ({ initialMass }) =
             <motion.div
               animate={{ top: `${Math.min(95, (mass / 300) * 90)}%` }}
               transition={{ type: 'spring', stiffness: 200, damping: 10 }}
-              className="absolute left-0 right-0 h-0.5 bg-rose-500 shadow-[0_0_8px_#f43f5e] flex items-center"
+              className="absolute left-0 right-0 h-0.5 bg-rose-500 shadow-sm flex items-center"
             >
               <div className="w-2 h-2 rounded-full bg-rose-500 -ml-1 shadow-sm" />
             </motion.div>
@@ -246,7 +245,7 @@ const MoonPhasesWidget: React.FC = () => {
       <div className="flex flex-col sm:flex-row items-center justify-around gap-4 py-1">
         {/* Earth View Simulation Telescope */}
         <div className="flex items-center gap-3">
-          <div className="relative w-16 h-16 rounded-full bg-[#0b1017] border-2 border-cyan-500/40 p-1 flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.2)]">
+          <div className="relative w-16 h-16 rounded-full bg-[var(--bg-canvas)] border-2 border-[var(--border-strong)] p-1 flex items-center justify-center shadow-sm">
             {/* The Moon Disk */}
             <div className="relative w-12 h-12 rounded-full bg-slate-900 border border-slate-700 overflow-hidden shadow-inner flex items-center justify-center">
               {/* Moon craters texture dots */}
@@ -258,7 +257,7 @@ const MoonPhasesWidget: React.FC = () => {
                 key={phaseIndex}
                 initial={{ opacity: 0.5, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                className="absolute inset-0 rounded-full bg-gradient-to-r from-amber-200 via-amber-100 to-yellow-200 shadow-[0_0_12px_#fef08a]"
+                className="absolute inset-0 rounded-full bg-gradient-to-r from-amber-200 via-amber-100 to-yellow-200 shadow-sm"
                 style={{
                   clipPath:
                     current.lightPct === 0
@@ -276,7 +275,7 @@ const MoonPhasesWidget: React.FC = () => {
           </div>
 
           <div className="flex flex-col">
-            <div className="text-[10px] text-cyan-400 font-bold uppercase tracking-wider flex items-center gap-1">
+            <div className="text-[10px] text-[var(--phy-fg)] font-bold uppercase tracking-wider flex items-center gap-1">
               <Eye className="w-3 h-3" />
               <span>Góc nhìn từ Trái Đất:</span>
             </div>
@@ -292,7 +291,7 @@ const MoonPhasesWidget: React.FC = () => {
         {/* Orbit Model diagram */}
         <div className="flex items-center gap-2 text-[10px] text-slate-400 bg-slate-900/60 border border-slate-800 px-3 py-1.5 rounded-xl">
           <div className="flex flex-col items-center">
-            <div className="w-5 h-5 rounded-full bg-cyan-500 shadow-sm flex items-center justify-center text-[8px] font-black text-slate-950">
+            <div className="w-5 h-5 rounded-full bg-[var(--phy-fill)] shadow-sm flex items-center justify-center text-[8px] font-black text-slate-950">
               🌍
             </div>
             <span className="text-[9px]">Trái Đất</span>
@@ -306,7 +305,7 @@ const MoonPhasesWidget: React.FC = () => {
           </div>
           <ArrowRight className="w-3.5 h-3.5 text-slate-600" />
           <div className="flex flex-col items-center">
-            <div className="w-6 h-6 rounded-full bg-amber-500 shadow-[0_0_8px_#f59e0b] flex items-center justify-center text-[9px]">
+            <div className="w-6 h-6 rounded-full bg-amber-500 shadow-sm flex items-center justify-center text-[9px]">
               ☀️
             </div>
             <span className="text-[9px] text-amber-300">Tia nắng</span>
@@ -355,7 +354,7 @@ const RulerMeasurementWidget: React.FC<{ initialLength: number }> = ({ initialLe
       </div>
 
       {/* Visual Ruler & Pencil */}
-      <div className="relative h-20 bg-[#1e2a38] border border-amber-500/30 rounded-xl p-2 overflow-hidden flex flex-col justify-end">
+      <div className="relative h-20 bg-[var(--bg-canvas)] border border-amber-500/30 rounded-xl p-2 overflow-hidden flex flex-col justify-end">
         {/* Pencil object placed from 0 to length */}
         <motion.div
           animate={{ width: `${(lengthCm / 15) * 100}%` }}
@@ -417,10 +416,10 @@ const ThermometerWidget: React.FC<{ initialTemp: number }> = ({ initialTemp }) =
           <motion.div
             animate={{ height: `${Math.max(10, Math.min(100, ((temp + 10) / 110) * 100))}%` }}
             transition={{ type: 'spring', stiffness: 120, damping: 10 }}
-            className="w-2 bg-rose-500 rounded-t-full shadow-[0_0_8px_#f43f5e]"
+            className="w-2 bg-rose-500 rounded-t-full shadow-sm"
           />
           {/* Bulb at bottom */}
-          <div className="w-5 h-5 rounded-full bg-rose-500 border border-rose-300 shadow-[0_0_10px_#f43f5e] -mb-0.5" />
+          <div className="w-5 h-5 rounded-full bg-rose-500 border border-rose-300 shadow-sm -mb-0.5" />
         </div>
 
         <div className="flex flex-col">
@@ -471,14 +470,14 @@ const ThermometerWidget: React.FC<{ initialTemp: number }> = ({ initialTemp }) =
 
 // ── 5. Solar System Mini-Orrery (8 Hành tinh) ──
 const PLANETS = [
-  { name: 'Thủy', color: '#94a3b8', size: 5, note: 'Gần Mặt Trời nhất' },
-  { name: 'Kim', color: '#fbbf24', size: 7, note: 'Nóng nhất Hệ Mặt Trời' },
-  { name: 'Trái Đất', color: '#38bdf8', size: 8, note: 'Duy nhất có sự sống' },
-  { name: 'Hỏa', color: '#f87171', size: 6, note: 'Hành tinh Đỏ' },
-  { name: 'Mộc', color: '#fb923c', size: 14, note: 'Lớn nhất Hệ Mặt Trời' },
-  { name: 'Thổ', color: '#fde047', size: 12, note: 'Vành đai đẹp nhất' },
-  { name: 'Thiên vương', color: '#67e8f9', size: 9, note: 'Băng khổng lồ' },
-  { name: 'Hải vương', color: '#60a5fa', size: 9, note: 'Xa Mặt Trời nhất' },
+  { name: 'Thủy', color: 'var(--ink-muted)', size: 5, note: 'Gần Mặt Trời nhất' },
+  { name: 'Kim', color: 'var(--gold)', size: 7, note: 'Nóng nhất Hệ Mặt Trời' },
+  { name: 'Trái Đất', color: 'var(--chem)', size: 8, note: 'Duy nhất có sự sống' },
+  { name: 'Hỏa', color: 'var(--err)', size: 6, note: 'Hành tinh Đỏ' },
+  { name: 'Mộc', color: 'var(--warn)', size: 14, note: 'Lớn nhất Hệ Mặt Trời' },
+  { name: 'Thổ', color: 'var(--gold)', size: 12, note: 'Vành đai đẹp nhất' },
+  { name: 'Thiên vương', color: 'var(--phy-soft)', size: 9, note: 'Băng khổng lồ' },
+  { name: 'Hải vương', color: 'var(--phy)', size: 9, note: 'Xa Mặt Trời nhất' },
 ];
 
 const SolarSystemWidget: React.FC<{ activePlanet?: string }> = ({ activePlanet }) => {
@@ -493,16 +492,16 @@ const SolarSystemWidget: React.FC<{ activePlanet?: string }> = ({ activePlanet }
           <Orbit className="w-3.5 h-3.5" />
           <span>Hệ Mặt Trời — 8 Hành tinh theo thứ tự khoảng cách</span>
         </span>
-        <span className="text-[11px] text-cyan-400 font-bold">
+        <span className="text-[11px] text-[var(--phy-fg)] font-bold">
           Hành tinh #{selectedIdx + 1}: {selected.name} tinh
         </span>
       </div>
 
       {/* Visual Alignment of Sun and 8 Planets */}
-      <div className="flex items-center justify-between gap-1 py-3 px-2 bg-[#091017] rounded-xl border border-slate-800/80 overflow-x-auto scrollbar-none">
+      <div className="flex items-center justify-between gap-1 py-3 px-2 bg-[var(--bg-canvas)] rounded-xl border border-slate-800/80 overflow-x-auto scrollbar-none">
         {/* Sun */}
         <div className="flex flex-col items-center shrink-0">
-          <div className="w-8 h-8 rounded-full bg-gradient-to-r from-amber-400 to-yellow-300 shadow-[0_0_15px_#f59e0b] animate-pulse flex items-center justify-center text-xs">
+          <div className="w-8 h-8 rounded-full bg-gradient-to-r from-amber-400 to-yellow-300 shadow-sm animate-pulse flex items-center justify-center text-xs">
             ☀️
           </div>
           <span className="text-[8px] text-amber-300 font-black mt-1">Mặt Trời</span>
@@ -562,13 +561,13 @@ const VectorForceWidget: React.FC<{ initialForce: number }> = ({ initialForce })
           <ArrowRight className="w-3.5 h-3.5" />
           <span>Biểu diễn lực kéo: Tỉ xích 1 cm ứng với 10 N</span>
         </span>
-        <span className="text-[11px] font-mono text-cyan-300">
+        <span className="text-[11px] font-mono text-[var(--phy-fg)]">
           Độ lớn: <strong className="text-amber-300">{force} N</strong> ({force / 10} đoạn tỉ xích)
         </span>
       </div>
 
       {/* Visual block on horizontal floor with force arrow */}
-      <div className="relative h-20 bg-[#0c131a] rounded-xl border border-slate-800 p-2 flex items-center overflow-hidden">
+      <div className="relative h-20 bg-[var(--bg-canvas)] rounded-xl border border-slate-800 p-2 flex items-center overflow-hidden">
         {/* Floor line */}
         <div className="absolute bottom-3 inset-x-0 h-0.5 bg-slate-600" />
 
@@ -583,7 +582,7 @@ const VectorForceWidget: React.FC<{ initialForce: number }> = ({ initialForce })
         <motion.div
           animate={{ width: arrowLength }}
           transition={{ type: 'spring', stiffness: 200, damping: 12 }}
-          className="h-1 bg-amber-400 shadow-[0_0_8px_#f59e0b] relative flex items-center justify-end z-10"
+          className="h-1 bg-amber-400 shadow-sm relative flex items-center justify-end z-10"
           style={{ marginLeft: 0 }}
         >
           {/* Arrowhead */}
@@ -662,7 +661,7 @@ const LeverBalanceWidget: React.FC = () => {
     <div className="flex flex-col gap-2.5">
       <div className="flex items-center justify-between text-xs border-b border-slate-800 pb-1">
         <span className="font-bold text-amber-300 flex items-center gap-1.5">
-          <Weight className="w-3.5 h-3.5 text-cyan-400" />
+          <Weight className="w-3.5 h-3.5 text-[var(--phy-fg)]" />
           <span>Mô hình đòn bẩy: Điểm tựa O & Quy tắc Momen lực</span>
         </span>
         <span
@@ -678,13 +677,13 @@ const LeverBalanceWidget: React.FC = () => {
       </div>
 
       {/* SVG Canvas */}
-      <div className="relative h-28 bg-[#0a1017] rounded-xl border border-slate-800/80 p-2 flex items-center justify-center overflow-hidden">
+      <div className="relative h-28 bg-[var(--bg-canvas)] rounded-xl border border-slate-800/80 p-2 flex items-center justify-center overflow-hidden">
         <svg viewBox="0 0 320 100" className="w-full h-full max-w-[340px] overflow-visible select-none">
           {/* Base Stand & Triangular Fulcrum (Điểm tựa O) */}
-          <path d="M 145 92 L 175 92 L 160 62 Z" fill="#475569" stroke="#64748b" strokeWidth="1.5" />
-          <line x1="130" y1="92" x2="190" y2="92" stroke="#334155" strokeWidth="4" strokeLinecap="round" />
-          <circle cx="160" cy="62" r="3" fill="#f59e0b" stroke="#ffffff" strokeWidth="1" />
-          <text x="160" y="56" fill="#f59e0b" fontSize="10" fontWeight="900" textAnchor="middle">
+          <path d="M 145 92 L 175 92 L 160 62 Z" fill="var(--border)" stroke="var(--border)" strokeWidth="1.5" />
+          <line x1="130" y1="92" x2="190" y2="92" stroke="var(--ink)" strokeWidth="4" strokeLinecap="round" />
+          <circle cx="160" cy="62" r="3" fill="var(--gold)" stroke="var(--bg-surface)" strokeWidth="1" />
+          <text x="160" y="56" fill="var(--gold)" fontSize="10" fontWeight="900" textAnchor="middle">
             O
           </text>
 
@@ -695,20 +694,20 @@ const LeverBalanceWidget: React.FC = () => {
             style={{ originX: '160px', originY: '62px' }}
           >
             {/* Beam bar */}
-            <rect x="20" y="59" width="280" height="6" rx="2" fill="#94a3b8" stroke="#cbd5e1" strokeWidth="1" />
+            <rect x="20" y="59" width="280" height="6" rx="2" fill="var(--border)" stroke="var(--ink-muted)" strokeWidth="1" />
 
             {/* Left load (F1, d1) */}
             <g transform={`translate(${160 - p.d1 * 6}, 59)`}>
               {/* String */}
-              <line x1="0" y1="6" x2="0" y2="18" stroke="#f43f5e" strokeWidth="1.5" strokeDasharray="2 2" />
+              <line x1="0" y1="6" x2="0" y2="18" stroke="var(--err)" strokeWidth="1.5" strokeDasharray="2 2" />
               {/* Box */}
-              <rect x="-12" y="18" width="24" height="16" rx="2" fill="#e11d48" stroke="#fda4af" strokeWidth="1" />
-              <text x="0" y="30" fill="#ffffff" fontSize="8" fontWeight="bold" textAnchor="middle">
+              <rect x="-12" y="18" width="24" height="16" rx="2" fill="var(--err)" stroke="var(--err-soft)" strokeWidth="1" />
+              <text x="0" y="30" fill="var(--bg-surface)" fontSize="8" fontWeight="bold" textAnchor="middle">
                 {p.f1}N
               </text>
               {/* Vector arrow down */}
-              <line x1="0" y1="35" x2="0" y2="48" stroke="#f43f5e" strokeWidth="1.5" markerEnd="url(#arrow-red)" />
-              <text x="0" y="-4" fill="#fda4af" fontSize="8" fontWeight="bold" textAnchor="middle">
+              <line x1="0" y1="35" x2="0" y2="48" stroke="var(--err)" strokeWidth="1.5" markerEnd="url(#arrow-red)" />
+              <text x="0" y="-4" fill="var(--err-soft)" fontSize="8" fontWeight="bold" textAnchor="middle">
                 d1={p.d1}cm
               </text>
             </g>
@@ -716,15 +715,15 @@ const LeverBalanceWidget: React.FC = () => {
             {/* Right load (F2, d2) */}
             <g transform={`translate(${160 + p.d2 * 6}, 59)`}>
               {/* String */}
-              <line x1="0" y1="6" x2="0" y2="18" stroke="#06b6d4" strokeWidth="1.5" strokeDasharray="2 2" />
+              <line x1="0" y1="6" x2="0" y2="18" stroke="var(--phy)" strokeWidth="1.5" strokeDasharray="2 2" />
               {/* Box */}
-              <rect x="-12" y="18" width="24" height="16" rx="2" fill="#0891b2" stroke="#67e8f9" strokeWidth="1" />
-              <text x="0" y="30" fill="#ffffff" fontSize="8" fontWeight="bold" textAnchor="middle">
+              <rect x="-12" y="18" width="24" height="16" rx="2" fill="var(--phy)" stroke="var(--phy-soft)" strokeWidth="1" />
+              <text x="0" y="30" fill="var(--bg-surface)" fontSize="8" fontWeight="bold" textAnchor="middle">
                 {p.f2}N
               </text>
               {/* Vector arrow down */}
-              <line x1="0" y1="35" x2="0" y2="48" stroke="#06b6d4" strokeWidth="1.5" markerEnd="url(#arrow-cyan)" />
-              <text x="0" y="-4" fill="#67e8f9" fontSize="8" fontWeight="bold" textAnchor="middle">
+              <line x1="0" y1="35" x2="0" y2="48" stroke="var(--phy)" strokeWidth="1.5" markerEnd="url(#arrow-phy)" />
+              <text x="0" y="-4" fill="var(--phy-soft)" fontSize="8" fontWeight="bold" textAnchor="middle">
                 d2={p.d2}cm
               </text>
             </g>
@@ -733,10 +732,10 @@ const LeverBalanceWidget: React.FC = () => {
           {/* Marker definitions */}
           <defs>
             <marker id="arrow-red" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
-              <path d="M 0 0 L 6 3 L 0 6 Z" fill="#f43f5e" />
+              <path d="M 0 0 L 6 3 L 0 6 Z" fill="var(--err)" />
             </marker>
-            <marker id="arrow-cyan" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
-              <path d="M 0 0 L 6 3 L 0 6 Z" fill="#06b6d4" />
+            <marker id="arrow-phy" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+              <path d="M 0 0 L 6 3 L 0 6 Z" fill="var(--phy)" />
             </marker>
           </defs>
         </svg>
@@ -748,7 +747,7 @@ const LeverBalanceWidget: React.FC = () => {
           M₁ = F₁ × d₁ = <strong>{m1} N·cm</strong>
         </span>
         <span className="text-slate-400 font-sans text-[10px]">{p.label}</span>
-        <span className="text-cyan-300">
+        <span className="text-[var(--phy-fg)]">
           M₂ = F₂ × d₂ = <strong>{m2} N·cm</strong>
         </span>
       </div>
@@ -767,8 +766,8 @@ const LeverBalanceWidget: React.FC = () => {
               className={cn(
                 'px-2 py-0.5 rounded text-[10px] font-bold border transition-colors cursor-pointer',
                 presetIdx === idx
-                  ? 'bg-cyan-500 text-slate-950 border-cyan-400 font-black'
-                  : 'bg-slate-800 text-slate-300 border-slate-700 hover:border-cyan-400/50'
+                  ? 'bg-[var(--phy-fill)] text-white border-[var(--phy-edge)] font-black'
+                  : 'bg-slate-800 text-slate-300 border-slate-700 hover:border-[var(--phy-edge)]/50'
               )}
             >
               {item.name}
@@ -804,7 +803,7 @@ const CircuitDiagramWidget: React.FC = () => {
           className={cn(
             'text-[10px] font-black px-2.5 py-0.5 rounded-full border cursor-pointer transition-all',
             isClosed
-              ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40 shadow-[0_0_8px_rgba(16,185,129,0.3)]'
+              ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40 shadow-sm'
               : 'bg-rose-500/20 text-rose-300 border-rose-500/40'
           )}
         >
@@ -813,13 +812,13 @@ const CircuitDiagramWidget: React.FC = () => {
       </div>
 
       {/* SVG Circuit Canvas */}
-      <div className="relative h-32 bg-[#090e15] rounded-xl border border-slate-800 p-2 flex items-center justify-center overflow-hidden">
+      <div className="relative h-32 bg-[var(--bg-canvas)] rounded-xl border border-slate-800 p-2 flex items-center justify-center overflow-hidden">
         <svg viewBox="0 0 320 120" className="w-full h-full max-w-[340px] select-none">
           {/* Main Circuit Wires */}
           <path
             d="M 50 35 L 140 35 M 180 35 L 215 35 M 245 35 L 270 35 L 270 85 L 180 85 M 140 85 L 50 85 L 50 35"
             fill="none"
-            stroke={isClosed ? '#f59e0b' : '#64748b'}
+            stroke={isClosed ? 'var(--gold)' : 'var(--border)'}
             strokeWidth="2"
             strokeLinecap="round"
           />
@@ -828,7 +827,7 @@ const CircuitDiagramWidget: React.FC = () => {
           <path
             d="M 130 85 L 130 110 L 145 110 M 175 110 L 190 110 L 190 85"
             fill="none"
-            stroke={isClosed ? '#06b6d4' : '#475569'}
+            stroke={isClosed ? 'var(--phy)' : 'var(--border)'}
             strokeWidth="1.5"
             strokeDasharray="3 2"
           />
@@ -836,46 +835,46 @@ const CircuitDiagramWidget: React.FC = () => {
           {/* 1. Battery (Nguồn điện một chiều DC) at Top Center */}
           <g transform="translate(70, 35)">
             {/* Long thin line (+) */}
-            <line x1="0" y1="-12" x2="0" y2="12" stroke="#f43f5e" strokeWidth="2.5" />
-            <text x="-6" y="-14" fill="#f43f5e" fontSize="9" fontWeight="black">
+            <line x1="0" y1="-12" x2="0" y2="12" stroke="var(--err)" strokeWidth="2.5" />
+            <text x="-6" y="-14" fill="var(--err)" fontSize="9" fontWeight="black">
               +
             </text>
             {/* Short thick line (-) */}
-            <line x1="8" y1="-7" x2="8" y2="7" stroke="#38bdf8" strokeWidth="4" />
-            <text x="12" y="-14" fill="#38bdf8" fontSize="9" fontWeight="black">
+            <line x1="8" y1="-7" x2="8" y2="7" stroke="var(--chem)" strokeWidth="4" />
+            <text x="12" y="-14" fill="var(--chem)" fontSize="9" fontWeight="black">
               -
             </text>
-            <text x="4" y="24" fill="#94a3b8" fontSize="8" textAnchor="middle">
+            <text x="4" y="24" fill="var(--ink-muted)" fontSize="8" textAnchor="middle">
               Pin 6V
             </text>
           </g>
 
           {/* 2. Switch (Khóa K) */}
           <g transform="translate(150, 35)" className="cursor-pointer" onClick={toggleSwitch}>
-            <circle cx="0" cy="0" r="2.5" fill="#f59e0b" />
-            <circle cx="20" cy="0" r="2.5" fill="#f59e0b" />
+            <circle cx="0" cy="0" r="2.5" fill="var(--gold)" />
+            <circle cx="20" cy="0" r="2.5" fill="var(--gold)" />
             {/* Switch arm: horizontal if closed, angled if open */}
             <line
               x1="0"
               y1="0"
               x2={isClosed ? "20" : "16"}
               y2={isClosed ? "0" : "-12"}
-              stroke="#f59e0b"
+              stroke="var(--gold)"
               strokeWidth="2.5"
               strokeLinecap="round"
             />
-            <text x="10" y="-12" fill="#cbd5e1" fontSize="8" fontWeight="bold" textAnchor="middle">
+            <text x="10" y="-12" fill="var(--ink-secondary)" fontSize="8" fontWeight="bold" textAnchor="middle">
               K
             </text>
           </g>
 
           {/* 3. Ammeter (Ampe kế A mắc nối tiếp) */}
           <g transform="translate(230, 35)">
-            <circle cx="0" cy="0" r="10" fill="#1e293b" stroke="#f59e0b" strokeWidth="1.5" />
-            <text x="0" y="3.5" fill="#fbbf24" fontSize="9" fontWeight="900" textAnchor="middle">
+            <circle cx="0" cy="0" r="10" fill="var(--bg-canvas)" stroke="var(--gold)" strokeWidth="1.5" />
+            <text x="0" y="3.5" fill="var(--gold)" fontSize="9" fontWeight="900" textAnchor="middle">
               A
             </text>
-            <text x="0" y="-13" fill="#f59e0b" fontSize="7" fontWeight="bold" textAnchor="middle">
+            <text x="0" y="-13" fill="var(--gold)" fontSize="7" fontWeight="bold" textAnchor="middle">
               + nối tiếp
             </text>
           </g>
@@ -886,33 +885,33 @@ const CircuitDiagramWidget: React.FC = () => {
               cx="0"
               cy="0"
               r="12"
-              fill={isClosed ? '#fef08a' : '#1e293b'}
-              stroke={isClosed ? '#eab308' : '#64748b'}
+              fill={isClosed ? 'var(--gold-soft)' : 'var(--bg-canvas)'}
+              stroke={isClosed ? 'var(--gold)' : 'var(--border)'}
               strokeWidth="1.5"
-              className={isClosed ? 'filter drop-shadow-[0_0_10px_rgba(234,179,8,0.8)]' : ''}
+              className={isClosed ? 'filter drop-shadow(0 2px 4px rgba(234,179,8,0.4))' : ''}
             />
             {/* Cross inside bulb */}
-            <line x1="-7" y1="-7" x2="7" y2="7" stroke={isClosed ? '#a16207' : '#94a3b8'} strokeWidth="1.5" />
-            <line x1="7" y1="-7" x2="-7" y2="7" stroke={isClosed ? '#a16207' : '#94a3b8'} strokeWidth="1.5" />
-            <text x="0" y="-15" fill={isClosed ? '#fef08a' : '#94a3b8'} fontSize="8" fontWeight="bold" textAnchor="middle">
+            <line x1="-7" y1="-7" x2="7" y2="7" stroke={isClosed ? 'var(--gold-shade)' : 'var(--ink-muted)'} strokeWidth="1.5" />
+            <line x1="7" y1="-7" x2="-7" y2="7" stroke={isClosed ? 'var(--gold-shade)' : 'var(--ink-muted)'} strokeWidth="1.5" />
+            <text x="0" y="-15" fill={isClosed ? 'var(--gold-soft)' : 'var(--ink-muted)'} fontSize="8" fontWeight="bold" textAnchor="middle">
               Đèn Đ
             </text>
           </g>
 
           {/* 5. Voltmeter (Vôn kế V mắc song song) */}
           <g transform="translate(160, 110)">
-            <circle cx="0" cy="0" r="9" fill="#0f172a" stroke="#06b6d4" strokeWidth="1.5" />
-            <text x="0" y="3.5" fill="#67e8f9" fontSize="9" fontWeight="900" textAnchor="middle">
+            <circle cx="0" cy="0" r="9" fill="var(--bg-canvas)" stroke="var(--phy)" strokeWidth="1.5" />
+            <text x="0" y="3.5" fill="var(--phy-soft)" fontSize="9" fontWeight="900" textAnchor="middle">
               V
             </text>
-            <text x="0" y="16" fill="#06b6d4" fontSize="7" fontWeight="bold" textAnchor="middle">
+            <text x="0" y="16" fill="var(--phy)" fontSize="7" fontWeight="bold" textAnchor="middle">
               song song
             </text>
           </g>
 
           {/* Conventional Current Flow Arrows (+ to -) */}
           {isClosed && (
-            <g fill="#ef4444" fontSize="8" fontWeight="black">
+            <g fill="var(--err)" fontSize="8" fontWeight="black">
               {/* Arrow right on top wire */}
               <polygon points="120,33 125,35 120,37" />
               {/* Arrow down on right wire */}
@@ -931,7 +930,7 @@ const CircuitDiagramWidget: React.FC = () => {
         <span className="text-amber-300">
           Ampe kế: I = <strong>{currentI.toFixed(1)} A</strong> (Mắc nối tiếp)
         </span>
-        <span className="text-cyan-300">
+        <span className="text-[var(--phy-fg)]">
           Vôn kế: U = <strong>{voltageU.toFixed(1)} V</strong> (Mắc song song)
         </span>
       </div>
@@ -1013,7 +1012,7 @@ const PotentialHeightWidget: React.FC<{ initialMass: number; initialHeight: numb
           <span className="px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/30 text-amber-300">
             m = <strong>{mass} kg</strong> (P = {weightP} N)
           </span>
-          <span className="px-2 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/30 text-cyan-300">
+          <span className="px-2 py-0.5 rounded bg-[var(--phy-tint)] border border-[var(--phy-edge)]/40 text-[var(--phy-fg)]">
             h = <strong>{height} m</strong>
           </span>
         </div>
@@ -1022,9 +1021,9 @@ const PotentialHeightWidget: React.FC<{ initialMass: number; initialHeight: numb
       {/* Main Simulation Stage & Energy Meters */}
       <div className="grid grid-cols-1 sm:grid-cols-12 gap-3 items-center">
         {/* Visual Fall Stage (7 cols) */}
-        <div className="sm:col-span-7 relative h-48 bg-[#070d14] rounded-xl border border-slate-800 p-2 overflow-hidden flex flex-col justify-between">
+        <div className="sm:col-span-7 relative h-48 bg-[var(--bg-canvas)] rounded-xl border border-slate-800 p-2 overflow-hidden flex flex-col justify-between">
           {/* Subtle background height grid lines */}
-          <div className="absolute inset-0 bg-[linear-gradient(to_bottom,#1e293b22_1px,transparent_1px)] bg-[size:100%_20px] pointer-events-none" />
+          <div className="absolute inset-0 bg-[linear-gradient(to_bottom,var(--border)_1px,transparent_1px)] bg-[size:100%_20px] opacity-20 pointer-events-none" />
 
           {/* Left Height Ruler */}
           <div className="absolute left-2 top-3 bottom-8 flex flex-col justify-between text-[9px] font-mono text-slate-500 select-none border-r border-slate-700/60 pr-1.5 z-10">
@@ -1056,7 +1055,7 @@ const PotentialHeightWidget: React.FC<{ initialMass: number; initialHeight: numb
                 className="relative group"
               >
                 {/* Object Body (Flower pot / heavy weight) */}
-                <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 border-2 border-amber-300 shadow-[0_0_12px_rgba(245,158,11,0.5)] flex items-center justify-center text-slate-950 font-black text-[10px]">
+                <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 border-2 border-amber-300 shadow-sm border-b-2 border-amber-600 flex items-center justify-center text-slate-950 font-black text-[10px]">
                   {mass}kg
                 </div>
 
@@ -1064,7 +1063,7 @@ const PotentialHeightWidget: React.FC<{ initialMass: number; initialHeight: numb
                 {isFalling && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 flex gap-1 pointer-events-none opacity-80">
                     <span className="w-0.5 h-3 bg-amber-400/80 rounded animate-pulse" />
-                    <span className="w-0.5 h-4 bg-cyan-400/80 rounded" />
+                    <span className="w-0.5 h-4 bg-[var(--phy-fg)] rounded" />
                     <span className="w-0.5 h-3 bg-amber-400/80 rounded animate-pulse" />
                   </div>
                 )}
@@ -1112,18 +1111,18 @@ const PotentialHeightWidget: React.FC<{ initialMass: number; initialHeight: numb
           {/* Kinetic Energy Bar */}
           <div className="space-y-1">
             <div className="flex justify-between items-center text-[11px]">
-              <span className="font-bold text-cyan-300">Động năng W_đ:</span>
-              <span className="font-mono font-black text-cyan-400">{currentWd} J</span>
+              <span className="font-bold text-[var(--phy-fg)]">Động năng W_đ:</span>
+              <span className="font-mono font-black text-[var(--phy-fg)]">{currentWd} J</span>
             </div>
             <div className="w-full h-2.5 bg-slate-800 rounded-full overflow-hidden p-0.5">
               <div
-                className="h-full bg-gradient-to-r from-cyan-500 to-cyan-300 rounded-full transition-all duration-75"
+                className="h-full bg-gradient-to-r from-[var(--phy-fill)] to-[var(--phy-edge)] rounded-full transition-all duration-75"
                 style={{ width: `${Math.max(0, Math.min(100, (currentWd / (maxEnergy || 1)) * 100))}%` }}
               />
             </div>
             <div className="flex justify-between text-[9px] text-slate-400 font-mono">
               <span>W_đ = ½ · m · v²</span>
-              <span className="text-cyan-300 font-bold">v = {currentV} m/s</span>
+              <span className="text-[var(--phy-fg)] font-bold">v = {currentV} m/s</span>
             </div>
           </div>
 
@@ -1178,7 +1177,7 @@ const PotentialHeightWidget: React.FC<{ initialMass: number; initialHeight: numb
               className={cn(
                 'px-2 py-1 rounded-md text-[10px] font-bold transition-all border cursor-pointer',
                 mass === mVal
-                  ? 'bg-cyan-500/25 border-cyan-400 text-cyan-300 shadow-sm'
+                  ? 'bg-[var(--phy-tint)] border-[var(--phy-edge)] text-[var(--phy-fg)] shadow-sm'
                   : 'bg-slate-800/60 border-slate-700 text-slate-400 hover:text-slate-200'
               )}
             >
@@ -1274,14 +1273,14 @@ const KineticSpeedWidget: React.FC<{ initialMass: number; initialSpeed: number }
           <span className="px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/30 text-amber-300">
             m = <strong>{mass} kg</strong>
           </span>
-          <span className="px-2 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/30 text-cyan-300">
+          <span className="px-2 py-0.5 rounded bg-[var(--phy-tint)] border border-[var(--phy-edge)]/40 text-[var(--phy-fg)]">
             v = <strong>{speed} m/s</strong>
           </span>
         </div>
       </div>
 
       {/* Experimental Track */}
-      <div className="relative h-28 bg-[#070d14] rounded-xl border border-slate-800 p-2 overflow-hidden flex flex-col justify-end">
+      <div className="relative h-28 bg-[var(--bg-canvas)] rounded-xl border border-slate-800 p-2 overflow-hidden flex flex-col justify-end">
         {/* Distance Grid & Marks */}
         <div className="absolute top-2 inset-x-4 flex justify-between text-[9px] font-mono text-slate-500 select-none border-b border-slate-800 pb-1">
           <span>0m (Khởi hành)</span>
@@ -1307,7 +1306,7 @@ const KineticSpeedWidget: React.FC<{ initialMass: number; initialSpeed: number }
               className="relative"
             >
               {/* Sleek Aerodynamic Cart Body */}
-              <div className="w-14 h-6 rounded-lg bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 border border-amber-300 shadow-[0_0_12px_rgba(245,158,11,0.6)] flex items-center justify-center text-slate-950 font-black text-[9px]">
+              <div className="w-14 h-6 rounded-lg bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 border border-amber-300 shadow-sm border-b-2 border-amber-600 flex items-center justify-center text-slate-950 font-black text-[9px]">
                 {speed}m/s
               </div>
               {/* Wheels */}
@@ -1320,7 +1319,7 @@ const KineticSpeedWidget: React.FC<{ initialMass: number; initialSpeed: number }
               {isRunning && (
                 <div className="absolute -left-6 top-1/2 -translate-y-1/2 flex flex-col gap-0.5 opacity-80 pointer-events-none">
                   <span className="w-5 h-0.5 bg-amber-400/80 rounded" />
-                  <span className="w-8 h-0.5 bg-cyan-400/80 rounded" />
+                  <span className="w-8 h-0.5 bg-[var(--phy-fg)] rounded" />
                 </div>
               )}
             </motion.div>
@@ -1333,7 +1332,7 @@ const KineticSpeedWidget: React.FC<{ initialMass: number; initialSpeed: number }
               <path
                 d={isImpact ? "M 0 8 L 4 3 L 8 13 L 12 3 L 16 13 L 20 8" : "M 0 8 L 5 2 L 10 14 L 15 2 L 20 14 L 24 8"}
                 fill="none"
-                stroke="#94a3b8"
+                stroke="var(--ink-muted)"
                 strokeWidth="2"
                 strokeLinecap="round"
               />
@@ -1363,7 +1362,7 @@ const KineticSpeedWidget: React.FC<{ initialMass: number; initialSpeed: number }
           </div>
           <div className="w-full h-2.5 bg-slate-800 rounded-full overflow-hidden p-0.5">
             <div
-              className="h-full bg-gradient-to-r from-amber-500 to-cyan-400 rounded-full transition-all duration-150"
+              className="h-full bg-gradient-to-r from-amber-500 to-indigo-500 rounded-full transition-all duration-150"
               style={{ width: `${Math.max(5, Math.min(100, (kineticEnergy / (maxRefEnergy || 1)) * 100))}%` }}
             />
           </div>
@@ -1415,7 +1414,7 @@ const KineticSpeedWidget: React.FC<{ initialMass: number; initialSpeed: number }
               className={cn(
                 'px-2 py-1 rounded-md text-[10px] font-bold transition-all border cursor-pointer',
                 mass === mVal
-                  ? 'bg-cyan-500/25 border-cyan-400 text-cyan-300 shadow-sm'
+                  ? 'bg-[var(--phy-tint)] border-[var(--phy-edge)] text-[var(--phy-fg)] shadow-sm'
                   : 'bg-slate-800/60 border-slate-700 text-slate-400 hover:text-slate-200'
               )}
             >
@@ -1488,7 +1487,7 @@ const OpticsLensWidget: React.FC<{ focalLength: number; initialDistance: number 
           <span>Thí nghiệm: Thấu kính hội tụ</span>
         </div>
         <div className="flex items-center gap-2 text-[11px] font-mono">
-          <span className="px-2 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/30 text-cyan-300">
+          <span className="px-2 py-0.5 rounded bg-[var(--phy-tint)] border border-[var(--phy-edge)]/40 text-[var(--phy-fg)]">
             f = <strong>{f} cm</strong>
           </span>
           <span className="px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/30 text-amber-300">
@@ -1498,72 +1497,72 @@ const OpticsLensWidget: React.FC<{ focalLength: number; initialDistance: number 
       </div>
 
       {/* Optical Bench Canvas */}
-      <div className="relative h-44 bg-[#070d14] rounded-xl border border-slate-800 overflow-hidden flex items-center justify-center">
+      <div className="relative h-44 bg-[var(--bg-canvas)] rounded-xl border border-slate-800 overflow-hidden flex items-center justify-center">
         <svg viewBox="0 0 360 160" className="w-full h-full select-none">
           {/* Main Optical Axis Delta */}
-          <line x1="10" y1={originY} x2="350" y2={originY} stroke="#475569" strokeWidth="1.5" />
-          <polygon points="350,80 344,77 344,83" fill="#475569" />
-          <text x="345" y="74" fill="#64748b" fontSize="8" fontWeight="bold">Δ</text>
+          <line x1="10" y1={originY} x2="350" y2={originY} stroke="var(--border)" strokeWidth="1.5" />
+          <polygon points="350,80 344,77 344,83" fill="var(--border)" />
+          <text x="345" y="74" fill="var(--ink-muted)" fontSize="8" fontWeight="bold">Δ</text>
 
           {/* Converging Lens at Center (x = 180) */}
-          <line x1={originX} y1="15" x2={originX} y2="145" stroke="#38bdf8" strokeWidth="2.5" />
+          <line x1={originX} y1="15" x2={originX} y2="145" stroke="var(--chem)" strokeWidth="2.5" />
           {/* Double-arrowheads for converging lens */}
-          <polygon points={`${originX},15 ${originX - 4},23 ${originX + 4},23`} fill="#38bdf8" />
-          <polygon points={`${originX},145 ${originX - 4},137 ${originX + 4},137`} fill="#38bdf8" />
+          <polygon points={`${originX},15 ${originX - 4},23 ${originX + 4},23`} fill="var(--chem)" />
+          <polygon points={`${originX},145 ${originX - 4},137 ${originX + 4},137`} fill="var(--chem)" />
           {/* Optical Center O */}
-          <circle cx={originX} cy={originY} r="2.5" fill="#38bdf8" />
-          <text x={originX + 4} y={originY + 12} fill="#38bdf8" fontSize="9" fontWeight="bold">O</text>
+          <circle cx={originX} cy={originY} r="2.5" fill="var(--chem)" />
+          <text x={originX + 4} y={originY + 12} fill="var(--chem)" fontSize="9" fontWeight="bold">O</text>
 
           {/* Focal Points F and F' */}
           {/* Object focal point F on left */}
-          <circle cx={originX - fPx} cy={originY} r="2.5" fill="#f59e0b" />
-          <text x={originX - fPx} y={originY + 12} fill="#f59e0b" fontSize="9" fontWeight="bold" textAnchor="middle">F</text>
+          <circle cx={originX - fPx} cy={originY} r="2.5" fill="var(--gold)" />
+          <text x={originX - fPx} y={originY + 12} fill="var(--gold)" fontSize="9" fontWeight="bold" textAnchor="middle">F</text>
           {/* 2F marker */}
-          <circle cx={originX - 2 * fPx} cy={originY} r="2" fill="#64748b" />
-          <text x={originX - 2 * fPx} y={originY + 12} fill="#64748b" fontSize="8" textAnchor="middle">2F</text>
+          <circle cx={originX - 2 * fPx} cy={originY} r="2" fill="var(--ink-muted)" />
+          <text x={originX - 2 * fPx} y={originY + 12} fill="var(--ink-muted)" fontSize="8" textAnchor="middle">2F</text>
 
           {/* Image focal point F' on right */}
-          <circle cx={originX + fPx} cy={originY} r="2.5" fill="#f59e0b" />
-          <text x={originX + fPx} y={originY + 12} fill="#f59e0b" fontSize="9" fontWeight="bold" textAnchor="middle">F&apos;</text>
+          <circle cx={originX + fPx} cy={originY} r="2.5" fill="var(--gold)" />
+          <text x={originX + fPx} y={originY + 12} fill="var(--gold)" fontSize="9" fontWeight="bold" textAnchor="middle">F&apos;</text>
           {/* 2F' marker */}
-          <circle cx={originX + 2 * fPx} cy={originY} r="2" fill="#64748b" />
-          <text x={originX + 2 * fPx} y={originY + 12} fill="#64748b" fontSize="8" textAnchor="middle">2F&apos;</text>
+          <circle cx={originX + 2 * fPx} cy={originY} r="2" fill="var(--ink-muted)" />
+          <text x={originX + 2 * fPx} y={originY + 12} fill="var(--ink-muted)" fontSize="8" textAnchor="middle">2F&apos;</text>
 
           {/* Object Arrow AB */}
           <g>
-            <line x1={objX} y1={originY} x2={objX} y2={objTopY} stroke="#fbbf24" strokeWidth="2.5" />
-            <polygon points={`${objX},${objTopY} ${objX - 3},${objTopY + 7} ${objX + 3},${objTopY + 7}`} fill="#fbbf24" />
-            <text x={objX - 4} y={objTopY - 3} fill="#fbbf24" fontSize="9" fontWeight="black">B</text>
-            <text x={objX - 4} y={originY + 12} fill="#fbbf24" fontSize="9" fontWeight="bold">A</text>
+            <line x1={objX} y1={originY} x2={objX} y2={objTopY} stroke="var(--gold)" strokeWidth="2.5" />
+            <polygon points={`${objX},${objTopY} ${objX - 3},${objTopY + 7} ${objX + 3},${objTopY + 7}`} fill="var(--gold)" />
+            <text x={objX - 4} y={objTopY - 3} fill="var(--gold)" fontSize="9" fontWeight="black">B</text>
+            <text x={objX - 4} y={originY + 12} fill="var(--gold)" fontSize="9" fontWeight="bold">A</text>
           </g>
 
           {/* Light Rays */}
           {showRays && !isInfinity && (
             <g opacity="0.9">
               {/* Ray 1: From B parallel to axis -> Lens -> passes through F' */}
-              <line x1={objX} y1={objTopY} x2={originX} y2={objTopY} stroke="#06b6d4" strokeWidth="1.5" />
+              <line x1={objX} y1={objTopY} x2={originX} y2={objTopY} stroke="var(--phy)" strokeWidth="1.5" />
               {/* Arrow on parallel ray */}
-              <polygon points={`${(objX + originX) / 2},${objTopY} ${(objX + originX) / 2 - 4},${objTopY - 3} ${(objX + originX) / 2 - 4},${objTopY + 3}`} fill="#06b6d4" />
+              <polygon points={`${(objX + originX) / 2},${objTopY} ${(objX + originX) / 2 - 4},${objTopY - 3} ${(objX + originX) / 2 - 4},${objTopY + 3}`} fill="var(--phy)" />
 
               {/* Refracted Ray 1 through F' */}
               {!isVirtual ? (
-                <line x1={originX} y1={objTopY} x2={imgX} y2={imgTopY} stroke="#06b6d4" strokeWidth="1.5" />
+                <line x1={originX} y1={objTopY} x2={imgX} y2={imgTopY} stroke="var(--phy)" strokeWidth="1.5" />
               ) : (
                 <>
-                  <line x1={originX} y1={objTopY} x2="340" y2={originY + (originY - objTopY)} stroke="#06b6d4" strokeWidth="1.5" />
+                  <line x1={originX} y1={objTopY} x2="340" y2={originY + (originY - objTopY)} stroke="var(--phy)" strokeWidth="1.5" />
                   {/* Virtual backward extension */}
-                  <line x1={originX} y1={objTopY} x2={imgX} y2={imgTopY} stroke="#06b6d4" strokeWidth="1.5" strokeDasharray="3 3" />
+                  <line x1={originX} y1={objTopY} x2={imgX} y2={imgTopY} stroke="var(--phy)" strokeWidth="1.5" strokeDasharray="3 3" />
                 </>
               )}
 
               {/* Ray 2: From B through optical center O */}
               {!isVirtual ? (
-                <line x1={objX} y1={objTopY} x2={imgX} y2={imgTopY} stroke="#f59e0b" strokeWidth="1.5" />
+                <line x1={objX} y1={objTopY} x2={imgX} y2={imgTopY} stroke="var(--gold)" strokeWidth="1.5" />
               ) : (
                 <>
-                  <line x1={objX} y1={objTopY} x2="340" y2={originY + ((340 - originX) / (originX - objX)) * (originY - objTopY)} stroke="#f59e0b" strokeWidth="1.5" />
+                  <line x1={objX} y1={objTopY} x2="340" y2={originY + ((340 - originX) / (originX - objX)) * (originY - objTopY)} stroke="var(--gold)" strokeWidth="1.5" />
                   {/* Virtual backward extension */}
-                  <line x1={originX} y1={originY} x2={imgX} y2={imgTopY} stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="3 3" />
+                  <line x1={originX} y1={originY} x2={imgX} y2={imgTopY} stroke="var(--gold)" strokeWidth="1.5" strokeDasharray="3 3" />
                 </>
               )}
             </g>
@@ -1577,7 +1576,7 @@ const OpticsLensWidget: React.FC<{ focalLength: number; initialDistance: number 
                 y1={originY}
                 x2={imgX}
                 y2={imgTopY}
-                stroke={isVirtual ? '#ec4899' : '#10b981'}
+                stroke={isVirtual ? 'var(--gems)' : 'var(--bio)'}
                 strokeWidth="2.5"
                 strokeDasharray={isVirtual ? '4 3' : undefined}
               />
@@ -1587,12 +1586,12 @@ const OpticsLensWidget: React.FC<{ focalLength: number; initialDistance: number 
                     ? `${imgX},${imgTopY} ${imgX - 3},${imgTopY - 7} ${imgX + 3},${imgTopY - 7}`
                     : `${imgX},${imgTopY} ${imgX - 3},${imgTopY + 7} ${imgX + 3},${imgTopY + 7}`
                 }
-                fill={isVirtual ? '#ec4899' : '#10b981'}
+                fill={isVirtual ? 'var(--gems)' : 'var(--bio)'}
               />
-              <text x={imgX + 4} y={imgTopY + (isVirtual ? -2 : 10)} fill={isVirtual ? '#ec4899' : '#10b981'} fontSize="9" fontWeight="black">
+              <text x={imgX + 4} y={imgTopY + (isVirtual ? -2 : 10)} fill={isVirtual ? 'var(--gems)' : 'var(--bio)'} fontSize="9" fontWeight="black">
                 B&apos;
               </text>
-              <text x={imgX + 4} y={originY + 12} fill={isVirtual ? '#ec4899' : '#10b981'} fontSize="9" fontWeight="bold">
+              <text x={imgX + 4} y={originY + 12} fill={isVirtual ? 'var(--gems)' : 'var(--bio)'} fontSize="9" fontWeight="bold">
                 A&apos;
               </text>
             </g>
@@ -1604,7 +1603,7 @@ const OpticsLensWidget: React.FC<{ focalLength: number; initialDistance: number 
       <div className="bg-slate-900/60 rounded-xl p-2.5 border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs">
         <div className="flex items-center gap-2">
           <span className="text-slate-400 font-mono text-[11px]">Vị trí ảnh d&apos;:</span>
-          <span className="font-mono font-bold text-cyan-300">
+          <span className="font-mono font-bold text-[var(--phy-fg)]">
             {isInfinity ? 'Ở vô cực (∞)' : `${Math.abs(dPrime).toFixed(1)} cm`}
           </span>
         </div>
@@ -1666,7 +1665,7 @@ const OpticsLensWidget: React.FC<{ focalLength: number; initialDistance: number 
           className={cn(
             'flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all border cursor-pointer',
             showRays
-              ? 'bg-cyan-500/20 text-cyan-300 border-cyan-500/40'
+              ? 'bg-[var(--phy-tint)] text-[var(--phy-fg)] border-[var(--phy-edge)]/40'
               : 'bg-slate-800 text-slate-400 border-slate-700'
           )}
         >

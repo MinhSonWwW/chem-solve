@@ -6,47 +6,53 @@ import { spring } from '@/design-system/motion/presets';
 import { haptic } from '@/lib/haptic';
 
 export const buttonVariants = cva(
-  'inline-flex items-center justify-center font-black transition-colors select-none cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 disabled:active:translate-y-0 disabled:active:shadow-[0_4px_0_0]',
+  'inline-flex items-center justify-center font-black transition-all select-none cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 disabled:active:translate-y-0 disabled:active:shadow-[0_4px_0_0_var(--border)]',
   {
     variants: {
       variant: {
         primary:
-          'bg-[#0ea5e9] text-white shadow-[0_4px_0_0_#0284c7] hover:bg-[#38bdf8] active:shadow-[0_0px_0_0_transparent]',
+          'bg-[var(--subject-fill)] text-white shadow-[0_4px_0_0_var(--subject-edge)] active:shadow-[0_0px_0_0_transparent]',
         success:
-          'bg-[#58cc02] text-white shadow-[0_4px_0_0_#46a302] hover:bg-[#68d810] active:shadow-[0_0px_0_0_transparent]',
+          'bg-[var(--ok-fill)] text-white shadow-[0_4px_0_0_var(--ok-edge)] active:shadow-[0_0px_0_0_transparent]',
+        ok:
+          'bg-[var(--ok-fill)] text-white shadow-[0_4px_0_0_var(--ok-edge)] active:shadow-[0_0px_0_0_transparent]',
         danger:
-          'bg-[#ff4b4b] text-white shadow-[0_4px_0_0_#ea2b2b] hover:bg-[#ff6161] active:shadow-[0_0px_0_0_transparent]',
-        accent:
-          'bg-[#ff9600] text-white shadow-[0_4px_0_0_#e07a00] hover:bg-[#ffa726] active:shadow-[0_0px_0_0_transparent]',
-        surface:
-          'bg-[#20333d] text-slate-100 shadow-[0_4px_0_0_#131f24] border-2 border-[#2e4756] hover:bg-[#283e4a] active:shadow-[0_0px_0_0_transparent]',
-        outline:
-          'bg-transparent text-slate-300 border-2 border-[#2e4756] shadow-[0_4px_0_0_#131f24] hover:bg-[#20333d] active:shadow-[0_0px_0_0_transparent]',
+          'bg-[var(--err-fill)] text-white shadow-[0_4px_0_0_var(--err-edge)] active:shadow-[0_0px_0_0_transparent]',
         warning:
-          'bg-[#ff9600] text-white shadow-[0_4px_0_0_#b45309] hover:bg-[#ffa726] active:shadow-[0_0px_0_0_transparent]',
-        secondary:
-          'bg-[#20333d] text-slate-100 shadow-[0_4px_0_0_#131f24] border-2 border-[#2e4756] hover:bg-[#283e4a] hover:border-[#3d5a6c] active:shadow-[0_0px_0_0_transparent]',
+          'bg-[var(--warn-fill)] text-[var(--on-ink)] shadow-[0_4px_0_0_var(--warn-edge)] active:shadow-[0_0px_0_0_transparent]',
+        warn:
+          'bg-[var(--warn-fill)] text-[var(--on-ink)] shadow-[0_4px_0_0_var(--warn-edge)] active:shadow-[0_0px_0_0_transparent]',
+        accent:
+          'bg-[var(--gold-fill)] text-[var(--on-ink)] shadow-[0_4px_0_0_var(--gold-edge)] active:shadow-[0_0px_0_0_transparent]',
+        gold:
+          'bg-[var(--gold-fill)] text-[var(--on-ink)] shadow-[0_4px_0_0_var(--gold-edge)] active:shadow-[0_0px_0_0_transparent]',
         gem:
-          'bg-[#00cd9c] text-white shadow-[0_4px_0_0_#00a880] hover:bg-[#10dcab] active:shadow-[0_0px_0_0_transparent]',
+          'bg-[var(--gem-fill)] text-white shadow-[0_4px_0_0_var(--gem-edge)] active:shadow-[0_0px_0_0_transparent]',
+        secondary:
+          'bg-[var(--bg-surface-2)] text-[var(--text-primary)] border border-[var(--border)] shadow-[0_4px_0_0_var(--edge-neutral)] hover:bg-[var(--bg-surface-2)]/80 active:shadow-[0_0px_0_0_transparent]',
+        surface:
+          'bg-[var(--bg-surface-2)] text-[var(--text-primary)] border border-[var(--border)] shadow-[0_4px_0_0_var(--edge-neutral)] hover:bg-[var(--bg-surface-2)]/80 active:shadow-[0_0px_0_0_transparent]',
+        outline:
+          'bg-transparent text-[var(--text-secondary)] border-2 border-[var(--border)] shadow-[0_4px_0_0_var(--edge-neutral)] hover:bg-[var(--bg-surface-2)] active:shadow-[0_0px_0_0_transparent]',
         ghost:
-          'bg-transparent text-slate-400 hover:text-slate-100 hover:bg-[#20333d]/60'
+          'bg-transparent text-[var(--text-tertiary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-surface-2)]/60',
       },
       size: {
         sm: 'text-xs py-2 px-3.5 rounded-xl gap-1.5',
         md: 'text-sm py-3 px-5 rounded-2xl gap-2',
         lg: 'text-base py-4 px-6 rounded-2xl gap-2.5',
-        icon: 'p-3 rounded-2xl'
+        icon: 'p-3 rounded-2xl',
       },
       fullWidth: {
         true: 'w-full',
-        false: 'w-auto'
-      }
+        false: 'w-auto',
+      },
     },
     defaultVariants: {
       variant: 'primary',
       size: 'md',
-      fullWidth: false
-    }
+      fullWidth: false,
+    },
   }
 );
 
