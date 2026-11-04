@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { setCookie, getCookie, deleteCookie } from '@/lib/cookies';
+import { signInWithGoogleReal } from '@/lib/googleAuth';
 
 export interface UserProfile {
   uid: string;
@@ -20,6 +21,7 @@ interface AuthState {
   loginWithEmail: (email: string, password: string) => Promise<boolean>;
   registerWithEmail: (name: string, email: string, password: string) => Promise<boolean>;
   loginWithSocial: (provider: 'google' | 'facebook' | 'github') => Promise<boolean>;
+  loginWithGoogleReal: (customClientId?: string) => Promise<boolean>;
   logout: () => void;
   clearError: () => void;
   setUser: (user: UserProfile) => void;
@@ -183,6 +185,25 @@ export const useAuthStore = create<AuthState>((set) => ({
     set({ user: profile, isAuthenticated: true, isLoading: false, error: null });
     notifyProgressReload();
     return true;
+  },
+
+  loginWithGoogleReal: async (customClientId?: string) => {
+    set({ isLoading: true, error: null });
+    try {
+      const profile = await signInWithGoogleReal(customClientId);
+      persistUser(profile);
+      set({ user: profile, isAuthenticated: true, isLoading: false, error: null });
+      notifyProgressReload();
+      return true;
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : String(err);
+      if (msg === 'MISSING_CLIENT_ID') {
+        set({ isLoading: false });
+        throw err;
+      }
+      set({ isLoading: false, error: msg });
+      return false;
+    }
   },
 
   logout: () => {

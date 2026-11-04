@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import { useAuthStore } from '@/features/auth/useAuthStore';
 import { useReducedMotion } from '@/design-system';
+import { GoogleClientIdModal } from './GoogleClientIdModal';
 
 // ── Types ──────────────────────────────────────────────────────────────
 
@@ -365,8 +366,9 @@ export const AuthPage: React.FC = () => {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [showSuccess, setShowSuccess] = useState(false);
+  const [showGoogleModal, setShowGoogleModal] = useState(false);
 
-  const { loginWithEmail, registerWithEmail, loginWithSocial, isLoading, error, clearError } =
+  const { loginWithEmail, registerWithEmail, loginWithSocial, loginWithGoogleReal, isLoading, error, clearError } =
     useAuthStore();
 
   // Auto-redirect after successful login
@@ -446,10 +448,21 @@ export const AuthPage: React.FC = () => {
   const handleSocial = useCallback(
     async (provider: 'google' | 'facebook' | 'github') => {
       clearError();
+      if (provider === 'google') {
+        try {
+          const success = await loginWithGoogleReal();
+          if (success) setShowSuccess(true);
+        } catch (err: unknown) {
+          if (err instanceof Error && err.message === 'MISSING_CLIENT_ID') {
+            setShowGoogleModal(true);
+          }
+        }
+        return;
+      }
       const success = await loginWithSocial(provider);
       if (success) setShowSuccess(true);
     },
-    [loginWithSocial, clearError]
+    [loginWithGoogleReal, loginWithSocial, clearError]
   );
 
   // ── Success Animation ──────────────────────────────────────
@@ -719,6 +732,26 @@ export const AuthPage: React.FC = () => {
           </p>
         </div>
       </main>
+
+      {/* Google OAuth 2.0 Client ID Configuration & Connect Modal */}
+      <GoogleClientIdModal
+        isOpen={showGoogleModal}
+        onClose={() => setShowGoogleModal(false)}
+        onSuccess={async (clientId) => {
+          setShowGoogleModal(false);
+          try {
+            const ok = await loginWithGoogleReal(clientId);
+            if (ok) setShowSuccess(true);
+          } catch {
+            // Error captured in store
+          }
+        }}
+        onFallbackDemo={async () => {
+          setShowGoogleModal(false);
+          const ok = await loginWithSocial('google');
+          if (ok) setShowSuccess(true);
+        }}
+      />
     </div>
   );
 };

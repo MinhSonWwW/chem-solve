@@ -265,8 +265,17 @@ export const ProfilePage: React.FC = () => {
       {isAuthenticated && user ? (
         <div className="p-4 rounded-3xl bg-[var(--bg-surface)] border border-[var(--ok)] flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-[var(--ok-subtle)] border border-[var(--ok)] flex items-center justify-center text-[var(--ok-fg)] font-bold shrink-0">
-              <UserCheck className="w-5 h-5" />
+            <div className="w-10 h-10 rounded-xl bg-[var(--ok-subtle)] border border-[var(--ok)] flex items-center justify-center text-[var(--ok-fg)] font-bold shrink-0 overflow-hidden">
+              {user.photoURL ? (
+                <img
+                  src={user.photoURL}
+                  alt={user.displayName}
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              ) : (
+                <UserCheck className="w-5 h-5" />
+              )}
             </div>
             <div>
               <div className="flex items-center gap-2">
@@ -325,7 +334,16 @@ export const ProfilePage: React.FC = () => {
       <div className="p-5 rounded-3xl bg-[var(--bg-surface)] border border-[var(--border)] space-y-4">
         <div className="flex items-center gap-4">
           <div className="w-16 h-16 rounded-2xl bg-[var(--bg-canvas)] border border-[var(--border)] flex items-center justify-center overflow-hidden shrink-0 p-1">
-            <Mascot state={avatarState} size="sm" interactive={false} />
+            {isAuthenticated && user?.photoURL ? (
+              <img
+                src={user.photoURL}
+                alt={user.displayName}
+                className="w-full h-full object-cover rounded-xl"
+                referrerPolicy="no-referrer"
+              />
+            ) : (
+              <Mascot state={avatarState} size="sm" interactive={false} />
+            )}
           </div>
           <div className="flex-1 min-w-0">
             <div className="inline-block px-2.5 py-0.5 rounded-full bg-[var(--chem-subtle)] text-[var(--chem-fg)] font-extrabold text-[10px] uppercase tracking-wider mb-1 border border-[var(--border)]">

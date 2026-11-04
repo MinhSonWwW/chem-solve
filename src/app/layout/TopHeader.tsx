@@ -132,7 +132,14 @@ export const TopHeader: React.FC = () => {
                   : 'bg-[var(--bg-surface-2)] border-[var(--border)] text-[var(--text-secondary)] hover:text-[var(--subject-fg)]'
               }`}
             >
-              {isAuthenticated ? (
+              {isAuthenticated && user?.photoURL ? (
+                <img
+                  src={user.photoURL}
+                  alt={user.displayName}
+                  className="w-full h-full object-cover rounded-xl"
+                  referrerPolicy="no-referrer"
+                />
+              ) : isAuthenticated ? (
                 <User className="w-4 h-4 text-[var(--ok-fg)]" />
               ) : (
                 <LogIn className="w-4 h-4" />
