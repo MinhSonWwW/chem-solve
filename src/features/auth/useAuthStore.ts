@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import { setCookie, getCookie, deleteCookie } from '@/lib/cookies';
 
 export interface UserProfile {
   uid: string;
@@ -25,25 +26,61 @@ interface AuthState {
 }
 
 const STORAGE_KEY = 'chem_auth_user';
+const TOKEN_KEY = 'chem_auth_token';
 
-// Load persisted user
+// Load persisted user across LocalStorage and Cookies
 function loadPersistedUser(): UserProfile | null {
+  // 1. Try LocalStorage
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) return JSON.parse(raw);
+    if (raw) {
+      const user = JSON.parse(raw);
+      if (user && user.uid) return user;
+    }
   } catch { /* ignore */ }
+
+  // 2. Fallback to Cookie
+  try {
+    const cookieRaw = getCookie(STORAGE_KEY);
+    if (cookieRaw) {
+      const user = JSON.parse(cookieRaw);
+      if (user && user.uid) {
+        // Self-heal: restore to localStorage
+        try {
+          localStorage.setItem(STORAGE_KEY, cookieRaw);
+        } catch { /* ignore */ }
+        return user;
+      }
+    }
+  } catch { /* ignore */ }
+
   return null;
 }
 
 function persistUser(user: UserProfile | null) {
   if (user) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(user));
+    const str = JSON.stringify(user);
+    // 1. Save to LocalStorage
+    try {
+      localStorage.setItem(STORAGE_KEY, str);
+    } catch { /* ignore */ }
+
+    // 2. Save to Cookies (365 days)
+    setCookie(STORAGE_KEY, str, 365);
+    setCookie(TOKEN_KEY, user.uid, 365);
   } else {
-    localStorage.removeItem(STORAGE_KEY);
+    // 1. Remove from LocalStorage
+    try {
+      localStorage.removeItem(STORAGE_KEY);
+    } catch { /* ignore */ }
+
+    // 2. Remove Cookies
+    deleteCookie(STORAGE_KEY);
+    deleteCookie(TOKEN_KEY);
   }
 }
 
-// Simple mock user DB in localStorage
+// Resilient mock user DB across LocalStorage
 function getMockUsers(): Record<string, { password: string; profile: UserProfile }> {
   try {
     const raw = localStorage.getItem('chem_mock_users');
@@ -53,7 +90,19 @@ function getMockUsers(): Record<string, { password: string; profile: UserProfile
 }
 
 function saveMockUsers(users: Record<string, { password: string; profile: UserProfile }>) {
-  localStorage.setItem('chem_mock_users', JSON.stringify(users));
+  try {
+    const json = JSON.stringify(users);
+    localStorage.setItem('chem_mock_users', json);
+    localStorage.setItem('chem_mock_users_backup', json);
+  } catch { /* ignore */ }
+}
+
+function notifyProgressReload() {
+  try {
+    import('@/features/gamification/useUserStore').then((m) => {
+      m.useUserStore.getState().restoreProgress().catch(console.error);
+    });
+  } catch { /* ignore */ }
 }
 
 export const useAuthStore = create<AuthState>((set) => ({
@@ -83,6 +132,7 @@ export const useAuthStore = create<AuthState>((set) => ({
 
     persistUser(userEntry.profile);
     set({ user: userEntry.profile, isAuthenticated: true, isLoading: false, error: null });
+    notifyProgressReload();
     return true;
   },
 
@@ -110,6 +160,7 @@ export const useAuthStore = create<AuthState>((set) => ({
     saveMockUsers(users);
     persistUser(profile);
     set({ user: profile, isAuthenticated: true, isLoading: false, error: null });
+    notifyProgressReload();
     return true;
   },
 
@@ -130,6 +181,7 @@ export const useAuthStore = create<AuthState>((set) => ({
 
     persistUser(profile);
     set({ user: profile, isAuthenticated: true, isLoading: false, error: null });
+    notifyProgressReload();
     return true;
   },
 

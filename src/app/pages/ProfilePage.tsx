@@ -26,6 +26,8 @@ import {
   UserCheck,
   Vibrate,
   Compass,
+  ShieldCheck,
+  Copy,
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useAuthStore } from '@/features/auth/useAuthStore';
@@ -164,6 +166,63 @@ export const ProfilePage: React.FC = () => {
       return true;
     });
   }, [achievements, achFilter]);
+
+  const handleCopyBackupCode = async () => {
+    sound.playClick();
+    try {
+      const jsonStr = await exportData();
+      await navigator.clipboard.writeText(jsonStr);
+      setImportStatus('success');
+      setTimeout(() => setImportStatus('idle'), 3000);
+    } catch {
+      handleExport();
+    }
+  };
+
+  const handlePasteBackupCode = async () => {
+    sound.playClick();
+    try {
+      const text = await navigator.clipboard.readText();
+      if (!text || !text.trim()) {
+        const manual = prompt('Dán chuỗi mã sao lưu tiến trình của bạn vào đây:');
+        if (!manual) return;
+        const ok = await importData(manual);
+        if (ok) {
+          sound.playCorrect();
+          setImportStatus('success');
+          setTimeout(() => setImportStatus('idle'), 3000);
+        } else {
+          sound.playWrong();
+          setImportStatus('error');
+          setTimeout(() => setImportStatus('idle'), 3000);
+        }
+        return;
+      }
+      const success = await importData(text);
+      if (success) {
+        sound.playCorrect();
+        setImportStatus('success');
+        setTimeout(() => setImportStatus('idle'), 3000);
+      } else {
+        sound.playWrong();
+        setImportStatus('error');
+        setTimeout(() => setImportStatus('idle'), 3000);
+      }
+    } catch {
+      const manual = prompt('Dán chuỗi mã sao lưu tiến trình của bạn vào đây:');
+      if (!manual) return;
+      const ok = await importData(manual);
+      if (ok) {
+        sound.playCorrect();
+        setImportStatus('success');
+        setTimeout(() => setImportStatus('idle'), 3000);
+      } else {
+        sound.playWrong();
+        setImportStatus('error');
+        setTimeout(() => setImportStatus('idle'), 3000);
+      }
+    }
+  };
 
   const handleExport = async () => {
     sound.playClick();
@@ -676,29 +735,64 @@ export const ProfilePage: React.FC = () => {
             </Button>
           </div>
 
-          {/* Export / Import Section */}
-          <div className="p-3.5 space-y-2">
-            <div className="flex gap-2">
+          {/* Export / Import & 3-Layer Persistent Backup Section */}
+          <div className="p-3.5 space-y-3">
+            {/* 3-Tier Protection Status Card */}
+            <div className="p-3 rounded-2xl bg-[var(--bg-canvas)] border border-[var(--border)] text-xs space-y-1.5">
+              <div className="flex items-center gap-2 font-black text-[var(--ok-fg)]">
+                <ShieldCheck className="w-4 h-4 shrink-0 text-[var(--ok-fg)]" />
+                <span>Bảo vệ tiến trình 3 lớp: Cookies + LocalStorage + IndexedDB</span>
+              </div>
+              <p className="text-[11px] text-[var(--fg-muted)] leading-relaxed">
+                Dữ liệu bài học và đăng nhập được lưu song song trên Cookies (365 ngày), Bộ nhớ cục bộ và Cơ sở dữ liệu PWA. Khi web cập nhật phiên bản mới, tiến trình sẽ tự động khôi phục.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 gap-2">
               <Button
                 variant="surface"
                 size="sm"
-                fullWidth
-                onClick={handleExport}
-                className="flex items-center justify-center gap-1.5"
+                onClick={handleCopyBackupCode}
+                className="flex items-center justify-center gap-1.5 text-xs"
+                title="Sao chép toàn bộ mã tiến trình vào bộ nhớ tạm"
               >
-                <Download className="w-3.5 h-3.5 text-[var(--chem-fg)]" />
-                <span>Sao lưu dữ liệu</span>
+                <Copy className="w-3.5 h-3.5 text-[var(--chem-fg)]" />
+                <span>Chép mã sao lưu</span>
               </Button>
 
               <Button
                 variant="surface"
                 size="sm"
-                fullWidth
-                onClick={() => fileInputRef.current?.click()}
-                className="flex items-center justify-center gap-1.5"
+                onClick={handlePasteBackupCode}
+                className="flex items-center justify-center gap-1.5 text-xs"
+                title="Dán mã sao lưu để khôi phục tiến trình"
               >
                 <Upload className="w-3.5 h-3.5 text-[var(--chem-fg)]" />
-                <span>Khôi phục dữ liệu</span>
+                <span>Dán mã khôi phục</span>
+              </Button>
+            </div>
+
+            <div className="flex gap-2">
+              <Button
+                variant="outline"
+                size="sm"
+                fullWidth
+                onClick={handleExport}
+                className="flex items-center justify-center gap-1.5 text-xs"
+              >
+                <Download className="w-3.5 h-3.5 text-[var(--fg-muted)]" />
+                <span>Tải tệp JSON</span>
+              </Button>
+
+              <Button
+                variant="outline"
+                size="sm"
+                fullWidth
+                onClick={() => fileInputRef.current?.click()}
+                className="flex items-center justify-center gap-1.5 text-xs"
+              >
+                <Upload className="w-3.5 h-3.5 text-[var(--fg-muted)]" />
+                <span>Mở tệp JSON</span>
               </Button>
 
               <input
@@ -713,14 +807,14 @@ export const ProfilePage: React.FC = () => {
             {/* Import Status Alert */}
             {importStatus === 'success' && (
               <div className="p-2.5 rounded-xl bg-[var(--ok-subtle)] border border-[var(--ok)] text-[var(--ok-fg)] text-xs flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4" />
-                <span>Đã khôi phục tiến trình học tập thành công!</span>
+                <CheckCircle2 className="w-4 h-4 shrink-0" />
+                <span>Đã sao lưu / khôi phục tiến trình học tập thành công!</span>
               </div>
             )}
             {importStatus === 'error' && (
               <div className="p-2.5 rounded-xl bg-[var(--err-subtle)] border border-[var(--err)] text-[var(--err-fg)] text-xs flex items-center gap-2">
-                <AlertCircle className="w-4 h-4" />
-                <span>Tệp dữ liệu không hợp lệ. Vui lòng kiểm tra lại.</span>
+                <AlertCircle className="w-4 h-4 shrink-0" />
+                <span>Mã hoặc tệp dữ liệu không hợp lệ. Vui lòng thử lại.</span>
               </div>
             )}
           </div>

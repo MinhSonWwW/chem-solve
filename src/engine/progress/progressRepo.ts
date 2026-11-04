@@ -1,6 +1,7 @@
 import { get, set, del } from 'idb-keyval';
 import type { SessionState } from '../session/types';
 import { GAMIFICATION } from '../../config/gamification';
+import { setCookie, getCookie } from '@/lib/cookies';
 
 // Resilient fallback store for environments without IndexedDB (e.g. Vitest, private mode)
 const memStore = new Map<string, unknown>();
@@ -107,6 +108,29 @@ export interface UserProgress {
 }
 
 const USER_PROGRESS_KEY = 'userProgress';
+const LOCALSTORAGE_BACKUP_KEY = 'chem_progress_backup';
+const COOKIE_SUMMARY_KEY = 'chem_progress_summary';
+
+// Helper to get active user ID across LocalStorage and Cookies
+function getActiveUserId(): string | null {
+  try {
+    if (typeof localStorage !== 'undefined') {
+      const raw = localStorage.getItem('chem_auth_user');
+      if (raw) {
+        const u = JSON.parse(raw);
+        if (u && typeof u.uid === 'string') return u.uid;
+      }
+    }
+  } catch { /* ignore */ }
+  try {
+    const cookieRaw = getCookie('chem_auth_user');
+    if (cookieRaw) {
+      const u = JSON.parse(cookieRaw);
+      if (u && typeof u.uid === 'string') return u.uid;
+    }
+  } catch { /* ignore */ }
+  return null;
+}
 
 const DEFAULT_PROGRESS: UserProgress = {
   xp: 0,
@@ -125,8 +149,98 @@ const DEFAULT_PROGRESS: UserProgress = {
 };
 
 export async function loadUserProgress(): Promise<UserProgress> {
-  const raw = await storageGet<UserProgress>(USER_PROGRESS_KEY);
-  if (!raw) return { ...DEFAULT_PROGRESS };
+  const candidates: UserProgress[] = [];
+
+  // 1. Layer 1: IndexedDB
+  const idbData = await storageGet<UserProgress>(USER_PROGRESS_KEY);
+  if (idbData && typeof idbData === 'object' && typeof idbData.xp === 'number') {
+    candidates.push(idbData);
+  }
+
+  // 2. Layer 2: LocalStorage Backup (General + User-specific)
+  try {
+    if (typeof localStorage !== 'undefined') {
+      const lsRaw = localStorage.getItem(LOCALSTORAGE_BACKUP_KEY);
+      if (lsRaw) {
+        const parsed = JSON.parse(lsRaw) as UserProgress;
+        if (parsed && typeof parsed.xp === 'number') {
+          candidates.push(parsed);
+        }
+      }
+
+      const uid = getActiveUserId();
+      if (uid) {
+        const userLsRaw = localStorage.getItem(`chem_progress_${uid}`);
+        if (userLsRaw) {
+          const parsed = JSON.parse(userLsRaw) as UserProgress;
+          if (parsed && typeof parsed.xp === 'number') {
+            candidates.push(parsed);
+          }
+        }
+      }
+    }
+  } catch { /* ignore */ }
+
+  // 3. Layer 3: Cookies Summary Fallback
+  if (candidates.length === 0) {
+    try {
+      const cookieRaw = getCookie(COOKIE_SUMMARY_KEY);
+      if (cookieRaw) {
+        const summary = JSON.parse(cookieRaw);
+        if (summary && typeof summary.xp === 'number') {
+          const restoredCompleted: Record<string, CompletedNodeData> = {};
+          if (Array.isArray(summary.keys)) {
+            for (const k of summary.keys) {
+              restoredCompleted[k] = {
+                accuracy: 1,
+                bestXp: 20,
+                completedAt: summary.time || Date.now(),
+              };
+            }
+          }
+          candidates.push({
+            ...DEFAULT_PROGRESS,
+            xp: summary.xp || 0,
+            gems: summary.gems || 0,
+            streak: summary.streak || 0,
+            streakDate: summary.streakDate || '',
+            completedNodes: restoredCompleted,
+          });
+        }
+      }
+    } catch { /* ignore */ }
+  }
+
+  // 4. Merge candidates into the most advanced progress state
+  let raw: UserProgress;
+  if (candidates.length === 0) {
+    raw = { ...DEFAULT_PROGRESS };
+  } else {
+    raw = { ...DEFAULT_PROGRESS };
+    for (const c of candidates) {
+      raw.xp = Math.max(raw.xp, c.xp ?? 0);
+      raw.gems = Math.max(raw.gems, c.gems ?? 0);
+      raw.streak = Math.max(raw.streak, c.streak ?? 0);
+      if (c.streakDate && (!raw.streakDate || c.streakDate > raw.streakDate)) {
+        raw.streakDate = c.streakDate;
+      }
+      raw.streakFreeze = Math.max(raw.streakFreeze ?? 0, c.streakFreeze ?? 0);
+      raw.dailyGoal = c.dailyGoal ?? raw.dailyGoal ?? 20;
+
+      if (c.achievements) {
+        raw.achievements = { ...raw.achievements, ...c.achievements };
+      }
+      if (c.completedNodes) {
+        raw.completedNodes = { ...raw.completedNodes, ...c.completedNodes };
+      }
+      if (c.practiceCompletedLessons) {
+        raw.practiceCompletedLessons = {
+          ...raw.practiceCompletedLessons,
+          ...c.practiceCompletedLessons,
+        };
+      }
+    }
+  }
 
   // Ensure default values if old schema
   raw.gems = raw.gems ?? 0;
@@ -205,7 +319,41 @@ export async function loadUserProgress(): Promise<UserProgress> {
 }
 
 export async function saveUserProgress(data: UserProgress): Promise<void> {
+  // 1. Layer 1: IndexedDB
   await storageSet(USER_PROGRESS_KEY, data);
+
+  // 2. Layer 2: LocalStorage Backup (General + User-specific)
+  try {
+    if (typeof localStorage !== 'undefined') {
+      const serialized = JSON.stringify(data);
+      localStorage.setItem(LOCALSTORAGE_BACKUP_KEY, serialized);
+
+      const uid = getActiveUserId();
+      if (uid) {
+        localStorage.setItem(`chem_progress_${uid}`, serialized);
+        await storageSet(`chem_progress_${uid}`, data);
+      }
+    }
+  } catch {
+    // LocalStorage quota or blocked
+  }
+
+  // 3. Layer 3: Cookies Summary (Preserved across PWA updates & hard reloads)
+  try {
+    const completedKeys = Object.keys(data.completedNodes || {});
+    const summary = {
+      xp: data.xp,
+      gems: data.gems,
+      streak: data.streak,
+      streakDate: data.streakDate,
+      count: completedKeys.length,
+      keys: completedKeys.slice(0, 100),
+      time: Date.now(),
+    };
+    setCookie(COOKIE_SUMMARY_KEY, JSON.stringify(summary), 365);
+  } catch {
+    // Cookie blocked
+  }
 }
 
 /** Export all progress as JSON string */
