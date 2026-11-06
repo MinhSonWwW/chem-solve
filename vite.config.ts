@@ -5,10 +5,9 @@ import { VitePWA } from 'vite-plugin-pwa';
 import path from 'path';
 
 // https://vite.dev/config/
-export default defineConfig(({ mode }) => {
+export default defineConfig(() => {
   const isGitHub = !!(process.env.GITHUB_ACTIONS || process.env.GITHUB_PAGES);
-  const isProd = mode === 'production';
-  const base = process.env.BASE_URL || (isGitHub || isProd ? '/chem-solve/' : '/');
+  const base = process.env.BASE_URL || (isGitHub ? '/chem-solve/' : '/');
 
   return {
     base,
