@@ -8,7 +8,7 @@ import type { UserProfile } from '@/features/auth/useAuthStore';
 // Default or environment configured Google OAuth Client ID
 const DEFAULT_CLIENT_ID =
   (typeof import.meta !== 'undefined' && import.meta.env?.VITE_GOOGLE_CLIENT_ID) ||
-  '';
+  '21560242226-l5m16g2kegnfpj6ba6opjg07lkl22f4g.apps.googleusercontent.com';
 
 export const GOOGLE_CLIENT_ID_STORAGE_KEY = 'chem_google_client_id';
 
