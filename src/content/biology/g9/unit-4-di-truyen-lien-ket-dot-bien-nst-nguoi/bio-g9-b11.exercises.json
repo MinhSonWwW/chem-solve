@@ -563,7 +563,10 @@
     "difficulty": 2,
     "prompt": "Kéo ghép từng hội chứng bệnh di truyền ở người với đặc điểm đột biến nhiễm sắc thể tương ứng:",
     "knowledge": [
-      "kb-bio-g9-dot-bien-so-luong-nst-nguoi"
+      "kb-bio-g9-dot-bien-lech-boi",
+      "kb-bio-g9-hoi-chung-dao-co-che",
+      "kb-bio-g9-hoi-chung-turner-klinefelter",
+      "kb-bio-g9-dot-bien-cau-truc-nst-mat-doan"
     ],
     "answer": {
       "kind": "match",

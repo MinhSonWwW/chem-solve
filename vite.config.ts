@@ -17,6 +17,46 @@ export default defineConfig(() => {
       VitePWA({
         registerType: 'autoUpdate',
         includeAssets: ['favicon.svg', 'apple-touch-icon.png', 'mask-icon.svg'],
+        workbox: {
+          // App shell + all lesson chunks (default) + the 7 tiny reward videos (~340 KB).
+          // Videos are precached because they are fetched with Range requests (206),
+          // which runtime caching cannot store.
+          // Plus the six small currency/HUD icons shown on almost every screen (~480 KB),
+          // so the header never shows broken images offline even if they were never seen online.
+          globPatterns: [
+            '**/*.{js,wasm,css,html}',
+            'assets/animations/*.mp4',
+            'assets/icons/{chem-coin,gem-crystal,heart-flask,streak-flame,xp-potion}.png',
+            'assets/roadmap/trophy-gold.png',
+          ],
+          runtimeCaching: [
+            {
+              // Mascots, icons, roadmap art (~45 MB total): cache each image the first
+              // time it is shown, so it keeps working offline without a huge first download.
+              urlPattern: ({ request, sameOrigin }) => sameOrigin && request.destination === 'image',
+              handler: 'CacheFirst',
+              options: {
+                cacheName: 'sci-images',
+                expiration: { maxEntries: 300, maxAgeSeconds: 60 * 60 * 24 * 90 },
+                cacheableResponse: { statuses: [0, 200] },
+              },
+            },
+            {
+              urlPattern: ({ url }) => url.origin === 'https://fonts.googleapis.com',
+              handler: 'StaleWhileRevalidate',
+              options: { cacheName: 'google-fonts-css' },
+            },
+            {
+              urlPattern: ({ url }) => url.origin === 'https://fonts.gstatic.com',
+              handler: 'CacheFirst',
+              options: {
+                cacheName: 'google-fonts-files',
+                expiration: { maxEntries: 20, maxAgeSeconds: 60 * 60 * 24 * 365 },
+                cacheableResponse: { statuses: [0, 200] },
+              },
+            },
+          ],
+        },
         manifest: {
           name: 'Sci-Solve: Học Khoa Học Tự Nhiên THCS',
           short_name: 'SciSolve',
