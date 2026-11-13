@@ -82,11 +82,12 @@ export const MathText: React.FC<MathTextProps> = ({ text, children, className, .
           );
         }
 
-        // Markdown Bold: **bold text**
+        // Markdown Bold: **bold text** — recurse so LaTeX/chemical formulas nested
+        // inside bold markers (e.g. "**$F_A = d \times V$**") still get rendered.
         if (token.startsWith('**') && token.endsWith('**') && token.length > 4) {
           return (
             <strong key={idx} className="font-black text-[var(--text-primary)]">
-              {token.slice(2, -2)}
+              <MathText text={token.slice(2, -2)} />
             </strong>
           );
         }

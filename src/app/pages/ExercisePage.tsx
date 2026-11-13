@@ -344,16 +344,26 @@ export const ExercisePage: React.FC = () => {
     const pLower = (exercise.prompt || '').toLowerCase();
 
     // 1. Potential energy & Gravitational height (Grade 9 Unit 1: Cơ năng, thế năng, độ cao)
+    // Exclude elastic potential energy (thế năng đàn hồi: lò xo, dây cung, dây cao su bị kéo căng)
+    const isElasticPotential =
+      pLower.includes('đàn hồi') ||
+      pLower.includes('dây cung') ||
+      pLower.includes('cánh cung') ||
+      pLower.includes('kéo căng') ||
+      pLower.includes('lò xo bị nén') ||
+      pLower.includes('dây cao su') ||
+      exercise.skillIds?.some((s) => s.includes('elastic'));
     if (
-      pLower.includes('thế năng') ||
-      pLower.includes('mốc thế năng') ||
-      pLower.includes('rơi từ') ||
-      pLower.includes('rơi tự do') ||
-      pLower.includes('thả rơi') ||
-      pLower.includes('gác lửng') ||
-      pLower.includes('lan can') ||
-      (pLower.includes('độ cao') && !pLower.includes('thước')) ||
-      exercise.skillIds?.some((s) => s.includes('potential'))
+      !isElasticPotential &&
+      (pLower.includes('thế năng') ||
+        pLower.includes('mốc thế năng') ||
+        pLower.includes('rơi từ') ||
+        pLower.includes('rơi tự do') ||
+        pLower.includes('thả rơi') ||
+        pLower.includes('gác lửng') ||
+        pLower.includes('lan can') ||
+        (pLower.includes('độ cao') && !pLower.includes('thước')) ||
+        exercise.skillIds?.some((s) => s.includes('potential') && !s.includes('elastic')))
     ) {
       return 'potential-height';
     }
@@ -395,20 +405,45 @@ export const ExercisePage: React.FC = () => {
       return 'circuit-diagram';
     }
 
-    // 5. Spring stretch & Dynamometer (Specific to springs, NOT general weight)
+    // 5. Spring stretch & Dynamometer — only for actual spring/force-gauge questions
+    // B09 = ma sát (friction), B10 = lực cản — do NOT show spring widget for those lessons
+    // Archimedes buoyancy questions also mention "lực kế" as the measuring tool, but are
+    // not about Hooke's law spring stretch — exclude them too (no dedicated widget exists).
+    const isFrictionOrDragQuestion =
+      pLower.includes('ma sát') ||
+      pLower.includes('lực cản') ||
+      pLower.includes('bề mặt');
+    const isArchimedesQuestion =
+      pLower.includes('archimedes') ||
+      pLower.includes('lực đẩy ác-si-mét') ||
+      pLower.includes('nhúng chìm') ||
+      pLower.includes('nhúng vào');
     if (
-      lid === 'phy-g6-b07' ||
-      lid === 'phy-g6-b08' ||
-      lid === 'phy-g6-b09' ||
-      pLower.includes('lò xo') ||
-      pLower.includes('lực kế') ||
-      pLower.includes('độ dãn')
+      !isFrictionOrDragQuestion &&
+      !isArchimedesQuestion &&
+      (lid === 'phy-g6-b07' ||
+        lid === 'phy-g6-b08' ||
+        pLower.includes('lò xo') ||
+        pLower.includes('lực kế') ||
+        pLower.includes('độ dãn'))
     ) {
       return 'spring-scale';
     }
 
-    // 6. Length measurement
-    if (lid === 'phy-g6-b01' || pLower.includes('thước kẻ') || pLower.includes('đo chiều dài') || pLower.includes('đcnn')) {
+    // 6. Length measurement — only for length tools, NOT mass/volume instruments that also have ĐCNN
+    const isMassOrVolume =
+      pLower.includes('cân') ||
+      pLower.includes('khối lượng') ||
+      pLower.includes('bình chia độ') ||
+      pLower.includes('thể tích');
+    if (
+      !isMassOrVolume &&
+      (lid === 'phy-g6-b01' ||
+        pLower.includes('thước kẻ') ||
+        pLower.includes('đo chiều dài') ||
+        pLower.includes('chiều dài') ||
+        pLower.includes('đcnn'))
+    ) {
       return 'ruler-measurement';
     }
 
@@ -417,8 +452,25 @@ export const ExercisePage: React.FC = () => {
       return 'thermometer';
     }
 
-    // 8. Vector Force representation
-    if (lid === 'phy-g6-b06' || pLower.includes('biểu diễn lực') || pLower.includes('mũi tên lực') || pLower.includes('tỉ xích')) {
+    // 8. Vector Force representation — skip for:
+    //    a) vertical/lifting forces (widget only supports horizontal)
+    //    b) reverse-calculation questions ("mũi tên dài X cm ... bao nhiêu N?") — answer.kind === 'number'
+    const isVerticalForce =
+      pLower.includes('lực nâng') ||
+      pLower.includes('thẳng đứng') ||
+      pLower.includes('chiều từ dưới lên') ||
+      pLower.includes('chiều từ trên xuống');
+    const isReverseCalc =
+      exercise.answer?.kind === 'number' &&
+      (pLower.includes('mũi tên dài') || pLower.includes('độ lớn của lực'));
+    if (
+      !isVerticalForce &&
+      !isReverseCalc &&
+      (lid === 'phy-g6-b06' ||
+        pLower.includes('biểu diễn lực') ||
+        pLower.includes('mũi tên lực') ||
+        pLower.includes('tỉ xích'))
+    ) {
       return 'vector-force';
     }
 
@@ -658,6 +710,8 @@ export const ExercisePage: React.FC = () => {
           setShowComboBanner(true);
           setTimeout(() => setShowComboBanner(false), 2400);
         }
+      } else if (q?.status === 'partial') {
+        haptic.tap();
       } else if (q?.status === 'wrong') {
         haptic.wrong();
 
@@ -833,18 +887,37 @@ export const ExercisePage: React.FC = () => {
   }
 
   // ── Diagnosis & Smart Hint (Milestone M11) ──
+  const activeVerdict = currentQ.lastVerdict ?? lastVerdict;
+  const isPartialVerdict = status === 'partial' && activeVerdict?.status === 'partial';
+
+  const partialTitle = isPartialVerdict
+    ? activeVerdict.reason === 'not-simplest'
+      ? 'Hệ số chưa tối giản'
+      : activeVerdict.reason === 'wrong-case'
+        ? 'Sai quy tắc viết hoa ký hiệu'
+        : activeVerdict.reason === 'noncanonical-formula'
+          ? 'Thứ tự ký hiệu chưa chuẩn'
+          : activeVerdict.reason === 'missing-unit'
+            ? 'Thiếu đơn vị kết quả'
+            : 'Cần điều chỉnh đáp án'
+    : undefined;
+
   const diagnosis =
-    lastVerdict?.status === 'incorrect' && lastVerdict.diagnosis
-      ? lastVerdict.diagnosis
-      : lastVerdict?.status === 'incorrect' && lastVerdict.mistakeId
-        ? exercise.commonMistakes?.find((m) => m.id === lastVerdict.mistakeId)
+    activeVerdict?.status === 'incorrect' && activeVerdict.diagnosis
+      ? activeVerdict.diagnosis
+      : activeVerdict?.status === 'incorrect' && activeVerdict.mistakeId
+        ? exercise.commonMistakes?.find((m) => m.id === activeVerdict.mistakeId)
             ?.message
-        : undefined;
+        : isPartialVerdict
+          ? partialTitle
+          : undefined;
 
   const smartHint =
-    lastVerdict?.status === 'incorrect' && lastVerdict.smartHint
-      ? lastVerdict.smartHint
-      : undefined;
+    activeVerdict?.status === 'incorrect' && activeVerdict.smartHint
+      ? activeVerdict.smartHint
+      : isPartialVerdict
+        ? activeVerdict.message
+        : undefined;
 
   const progressPercent = Math.round(
     ((sessionState.currentIndex + (isCompleted ? 1 : 0)) /
@@ -857,7 +930,7 @@ export const ExercisePage: React.FC = () => {
     showChemKeyboard && (answerKind === 'formula' || answerKind === 'equation');
 
   return (
-    <div className="flex flex-col justify-between min-h-[92dvh] relative overflow-x-hidden">
+    <div className={`flex flex-col justify-between min-h-[92dvh] relative overflow-x-hidden ${isFeedbackVisible ? 'pb-52 sm:pb-56' : ''}`}>
       {/* 1. Top Bar */}
       <div className="flex items-center justify-between gap-2.5 pb-3 border-b border-slate-800">
         <button
@@ -1055,15 +1128,15 @@ export const ExercisePage: React.FC = () => {
           userInput={currentQ.userInput}
           onInputChange={handleSetInput}
           disabled={status === 'checking' || isCompleted}
-          verdict={isFeedbackVisible ? lastVerdict ?? undefined : undefined}
+          verdict={isFeedbackVisible ? activeVerdict ?? undefined : undefined}
           onShowChemKeyboard={() => setShowChemKeyboard(true)}
           isPhysics={isPhysics}
         />
       </motion.div>
 
       {/* 4. Bottom Sticky Action Bar */}
-      <div className="pt-2 border-t border-[var(--border)] safe-pb">
-        {!isFeedbackVisible && (
+      {!isFeedbackVisible && (
+        <div className="pt-2 border-t border-[var(--border)] safe-pb">
           <Button
             variant="primary"
             size="lg"
@@ -1089,8 +1162,8 @@ export const ExercisePage: React.FC = () => {
           >
             KIỂM TRA
           </Button>
-        )}
-      </div>
+        </div>
+      )}
 
       {/* 5. Feedback Sheet */}
       {(() => {
