@@ -145,21 +145,21 @@
       "mass-conservation"
     ],
     "difficulty": 2,
-    "prompt": "Đốt cháy hoàn toàn 2,4 g kim loại magie ([[Mg]]) trong bình chứa khí oxi, thu được 4,0 g magie oxit ([[MgO]]). Tính khối lượng khí oxi đã tham gia phản ứng.",
+    "prompt": "Đốt cháy hoàn toàn 2,4 g kim loại magnesium ([[Mg]]) trong bình chứa khí oxygen, thu được 4,0 g magnesium oxide ([[MgO]]). Tính khối lượng khí oxygen đã tham gia phản ứng.",
     "given": [
       {
-        "label": "Khối lượng Magie (m_Mg)",
+        "label": "Khối lượng Magnesium (m_Mg)",
         "value": "2.4",
         "unit": "g"
       },
       {
-        "label": "Khối lượng Magie oxit (m_MgO)",
+        "label": "Khối lượng Magnesium oxide (m_MgO)",
         "value": "4.0",
         "unit": "g"
       }
     ],
     "find": {
-      "label": "Khối lượng khí Oxi (m_O2)",
+      "label": "Khối lượng khí Oxygen (m_O2)",
       "unit": "g"
     },
     "knowledge": [
@@ -177,7 +177,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Áp dụng định luật bảo toàn khối lượng cho phản ứng: Magie + Oxi -> Magie oxit."
+        "text": "Áp dụng định luật bảo toàn khối lượng cho phản ứng: Magie + Oxygen -> Magnesium oxide."
       },
       {
         "level": 2,
@@ -203,7 +203,7 @@
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Khối lượng khí oxi đã phản ứng là **1,6 g**."
+        "body": "Khối lượng khí oxygen đã phản ứng là **1,6 g**."
       }
     ],
     "finalSolution": "m_O2 = m_MgO - m_Mg = 4,0 - 2,4 = **1,6 g**.",
@@ -298,7 +298,7 @@
       "mass-conservation"
     ],
     "difficulty": 2,
-    "prompt": "Cho 6,5 g kim loại kẽm ([[Zn]]) tác dụng với dung dịch chứa 7,3 g axit clohidric ([[HCl]]), sau phản ứng thu được 13,6 g muối kẽm clorua ([[ZnCl2]]) và khí hiđro ([[H2]]). Tính khối lượng khí [[H2]] sinh ra.",
+    "prompt": "Cho 6,5 g kim loại kẽm ([[Zn]]) tác dụng với dung dịch chứa 7,3 g hydrochloric acid ([[HCl]]), sau phản ứng thu được 13,6 g muối zinc chloride ([[ZnCl2]]) và khí hydrogen ([[H2]]). Tính khối lượng khí [[H2]] sinh ra.",
     "given": [
       {
         "label": "Khối lượng kẽm (m_Zn)",
@@ -306,7 +306,7 @@
         "unit": "g"
       },
       {
-        "label": "Khối lượng axit HCl (m_HCl)",
+        "label": "Khối lượng acid HCl (m_HCl)",
         "value": "7.3",
         "unit": "g"
       },
@@ -362,7 +362,7 @@
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Khối lượng khí hiđro sinh ra là **0,2 g**."
+        "body": "Khối lượng khí hydrogen sinh ra là **0,2 g**."
       }
     ],
     "finalSolution": "m_H2 = (6,5 + 7,3) - 13,6 = **0,2 g**.",
@@ -449,7 +449,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Số nguyên tử Oxi ở vế trái là 2, vế phải là 5. Bội chung nhỏ nhất của 2 và 5 là 10."
+        "text": "Số nguyên tử Oxygen ở vế trái là 2, vế phải là 5. Bội chung nhỏ nhất của 2 và 5 là 10."
       },
       {
         "level": 2,
@@ -493,7 +493,7 @@
       "balance-equation"
     ],
     "difficulty": 2,
-    "prompt": "Cân bằng phương trình phản ứng đốt cháy sắt trong khí oxi ở nhiệt độ cao: [[Fe]] + [[O2]] -> [[Fe3O4]].",
+    "prompt": "Cân bằng phương trình phản ứng đốt cháy sắt trong khí oxygen ở nhiệt độ cao: [[Fe]] + [[O2]] -> [[Fe3O4]].",
     "knowledge": [],
     "answer": {
       "kind": "equation",
@@ -553,7 +553,7 @@
       "balance-equation"
     ],
     "difficulty": 2,
-    "prompt": "Cân bằng phương trình phản ứng giữa nhôm và dung dịch axit sunfuric: [[Al]] + [[H2SO4]] -> [[Al2(SO4)3]] + [[H2]].",
+    "prompt": "Cân bằng phương trình phản ứng giữa nhôm và dung dịch sulfuric acid: [[Al]] + [[H2SO4]] -> [[Al2(SO4)3]] + [[H2]].",
     "knowledge": [],
     "answer": {
       "kind": "equation",

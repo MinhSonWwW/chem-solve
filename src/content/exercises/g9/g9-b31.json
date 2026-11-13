@@ -92,7 +92,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Protein rất nhạy cảm với nhiệt độ cao và axit/kiềm mạnh."
+        "text": "Protein rất nhạy cảm với nhiệt độ cao và acid/kiềm mạnh."
       },
       {
         "level": 2,
@@ -152,7 +152,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Protein chứa nitơ và lưu huỳnh nên khi đốt có mùi đặc trưng như tóc/lông cháy."
+        "text": "Protein chứa nitrogen và sulfur nên khi đốt có mùi đặc trưng như tóc/lông cháy."
       },
       {
         "level": 2,
@@ -274,7 +274,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Protein bị đông tụ bởi nhiệt độ cao, acid, bazơ hoặc cồn mạnh."
+        "text": "Protein bị đông tụ bởi nhiệt độ cao, acid, base hoặc cồn mạnh."
       },
       {
         "level": 2,

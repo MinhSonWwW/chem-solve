@@ -47,12 +47,12 @@ import type { Verdict } from '@/engine/checkers/types';
 type LoadingState = 'loading' | 'ready' | 'error';
 
 const CHEMISTRY_TRIVIA = [
-  'Oxy chiếm 21% thể tích không khí và là nguyên tố phổ biến nhất trong vỏ Trái Đất.',
+  'Oxygen chiếm 21% thể tích không khí và là nguyên tố phổ biến nhất trong vỏ Trái Đất.',
   'Kim cương và than chì cùng cấu tạo từ nguyên tử Carbon, chỉ khác nhau ở cấu trúc mạng tinh thể.',
   'Nước (H2O) có khối lượng riêng lớn nhất ở 4°C, giúp sinh vật thủy sinh không bị đông đá vào mùa đông.',
   'Acid trong dạ dày (HCl) có nồng độ pH từ 1.5 - 3.5, đủ mạnh để hòa tan nhiều kim loại thông thường.',
   'Khí Heli nhẹ hơn không khí khoảng 7 lần và hoàn toàn trơ, rất an toàn để bơm bóng thám không.',
-  'Muối ăn (NaCl) được tạo bởi kim loại hoạt động mạnh (Natri) và khí độc màu vàng lục (Clo).',
+  'Muối ăn (NaCl) được tạo bởi kim loại hoạt động mạnh (Sodium) và khí độc màu vàng lục (Chlorine).',
 ];
 
 const PHYSICS_TRIVIA = [
@@ -1179,12 +1179,12 @@ export const ExercisePage: React.FC = () => {
             // Specific indicator reaction
             if (finalSolLower.includes('quỳ tím') || promptLower.includes('nhúng giấy quỳ') || promptLower.includes('nhỏ quỳ tím')) {
               const isRed = finalSolLower.includes('đỏ') || promptLower.includes('acid') || promptLower.includes('axit');
-              const isBlue = finalSolLower.includes('xanh') || promptLower.includes('base') || promptLower.includes('bazơ');
+              const isBlue = finalSolLower.includes('xanh') || promptLower.includes('base') || promptLower.includes('base');
               if (isRed || isBlue) {
                 reactionEffect = {
                   type: 'indicator',
                   color: isRed ? 'var(--lab-acid-red)' : 'var(--lab-base-blue)',
-                  label: isRed ? 'Hiện tượng: Quỳ tím hóa đỏ (Tính axit)' : 'Hiện tượng: Quỳ tím hóa xanh (Tính kiềm)',
+                  label: isRed ? 'Hiện tượng: Quỳ tím hóa đỏ (Tính acid)' : 'Hiện tượng: Quỳ tím hóa xanh (Tính kiềm)',
                 };
               }
             }

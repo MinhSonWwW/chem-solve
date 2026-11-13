@@ -6,7 +6,7 @@
       "alkane-methane"
     ],
     "difficulty": 1,
-    "prompt": "Khí metan ([[CH4]]) là thành phần chính của loại khí tự nhiên nào sau đây?",
+    "prompt": "Khí methane ([[CH4]]) là thành phần chính của loại khí tự nhiên nào sau đây?",
     "answer": {
       "kind": "mcq-single",
       "options": [
@@ -32,35 +32,35 @@
     "hints": [
       {
         "level": 1,
-        "text": "Metan sinh ra nhiều trong các hầm ủ rác thải hữu cơ hoặc mỏ khí tự nhiên."
+        "text": "Methane sinh ra nhiều trong các hầm ủ rác thải hữu cơ hoặc mỏ khí tự nhiên."
       },
       {
         "level": 2,
-        "text": "Khí thiên nhiên chứa đến 85% – 95% metan; khí biogas ở hầm ủ chất thải gia súc cũng có thành phần chính là CH4."
+        "text": "Khí thiên nhiên chứa đến 85% – 95% methane; khí biogas ở hầm ủ chất thải gia súc cũng có thành phần chính là CH4."
       }
     ],
     "steps": [
       {
         "kind": "identify",
-        "title": "Nguồn gốc của metan",
+        "title": "Nguồn gốc của methane",
         "body": "Ứng dụng và trạng thái tự nhiên của alkane đơn giản nhất."
       },
       {
         "kind": "knowledge",
         "title": "Khí thiên nhiên & biogas",
-        "body": "Thành phần chủ yếu của khí thiên nhiên, khí mỏ dầu và biogas chính là metan (CH4)."
+        "body": "Thành phần chủ yếu của khí thiên nhiên, khí mỏ dầu và biogas chính là methane (CH4)."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Metan là thành phần chính của **khí thiên nhiên và biogas**."
+        "body": "Methane là thành phần chính của **khí thiên nhiên và biogas**."
       }
     ],
-    "finalSolution": "Khí metan ([[CH4]]) chiếm tới 90% trong **khí thiên nhiên và biogas**.",
+    "finalSolution": "Khí methane ([[CH4]]) chiếm tới 90% trong **khí thiên nhiên và biogas**.",
     "commonMistakes": [
       {
         "id": "confused-with-co",
-        "message": "Khí than là hỗn hợp chứa khí độc CO, không phải khí metan sạch."
+        "message": "Khí than là hỗn hợp chứa khí độc CO, không phải khí methane sạch."
       }
     ]
   },
@@ -71,7 +71,7 @@
       "alkane-methane"
     ],
     "difficulty": 1,
-    "prompt": "Cân bằng phương trình đốt cháy hoàn toàn khí metan trong khí oxi: [[CH4]] + [[O2]] -> [[CO2]] + [[H2O]].",
+    "prompt": "Cân bằng phương trình đốt cháy hoàn toàn khí methane trong khí oxygen: [[CH4]] + [[O2]] -> [[CO2]] + [[H2O]].",
     "answer": {
       "kind": "equation",
       "mode": "fill-coefficients",
@@ -97,7 +97,7 @@
       },
       {
         "level": 2,
-        "text": "Tổng số nguyên tử Oxi ở vế phải: 2 (trong CO2) + 2 (trong 2H2O) = 4 => cần 2 phân tử O2."
+        "text": "Tổng số nguyên tử Oxygen ở vế phải: 2 (trong CO2) + 2 (trong 2H2O) = 4 => cần 2 phân tử O2."
       }
     ],
     "steps": [
@@ -137,7 +137,7 @@
       "alkane-methane"
     ],
     "difficulty": 2,
-    "prompt": "Khi cho khí metan tác dụng với khí clo ([[Cl2]]) theo tỉ lệ mol 1 : 1 dưới ánh sáng khuếch tán, phản ứng thuộc loại phản ứng nào?",
+    "prompt": "Khi cho khí methane tác dụng với khí chlorine ([[Cl2]]) theo tỉ lệ mol 1 : 1 dưới ánh sáng khuếch tán, phản ứng thuộc loại phản ứng nào?",
     "answer": {
       "kind": "mcq-single",
       "options": [
@@ -163,7 +163,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Một nguyên tử Clo thay thế vị trí của một nguyên tử Hiđro trong phân tử metan."
+        "text": "Một nguyên tử Chlorine thay thế vị trí của một nguyên tử Hydrogen trong phân tử methane."
       },
       {
         "level": 2,
@@ -179,7 +179,7 @@
       {
         "kind": "knowledge",
         "title": "Định nghĩa phản ứng thế",
-        "body": "Nguyên tử Cl đã thế chỗ của nguyên tử H trong phân tử CH4, sinh ra metyl clorua và hiđro clorua."
+        "body": "Nguyên tử Cl đã thế chỗ của nguyên tử H trong phân tử CH4, sinh ra methyl chloride và hydrogen chloride."
       },
       {
         "kind": "answer",
@@ -187,11 +187,11 @@
         "body": "Đây là **phản ứng thế**."
       }
     ],
-    "finalSolution": "Phản ứng giữa metan và clo là **phản ứng thế** đặc trưng của ankan: CH4 + Cl2 -> CH3Cl + HCl.",
+    "finalSolution": "Phản ứng giữa methane và chlorine là **phản ứng thế** đặc trưng của ankan: CH4 + Cl2 -> CH3Cl + HCl.",
     "commonMistakes": [
       {
         "id": "confused-with-addition",
-        "message": "Phản ứng cộng là của liên kết đôi/ba (như etilen C2H4), còn metan chỉ có liên kết đơn nên tham gia phản ứng thế."
+        "message": "Phản ứng cộng là của liên kết đôi/ba (như ethylene C2H4), còn methane chỉ có liên kết đơn nên tham gia phản ứng thế."
       }
     ]
   },
@@ -202,18 +202,18 @@
       "alkane-methane"
     ],
     "difficulty": 1,
-    "prompt": "Chọn ĐÚNG hoặc SAI cho mỗi nhận định sau về tính chất của khí metan ([[CH4]]):",
+    "prompt": "Chọn ĐÚNG hoặc SAI cho mỗi nhận định sau về tính chất của khí methane ([[CH4]]):",
     "answer": {
       "kind": "true-false",
       "statements": [
         {
           "id": "s1",
-          "text": "Khí metan có màu vàng lục và có mùi hắc đặc trưng.",
+          "text": "Khí methane có màu vàng lục và có mùi hắc đặc trưng.",
           "correct": false
         },
         {
           "id": "s2",
-          "text": "Khí metan nặng hơn không khí và tan rất tốt trong nước.",
+          "text": "Khí methane nặng hơn không khí và tan rất tốt trong nước.",
           "correct": false
         },
         {
@@ -226,7 +226,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Metan là chất khí không màu, không mùi, nhẹ hơn không khí và ít tan trong nước."
+        "text": "Methane là chất khí không màu, không mùi, nhẹ hơn không khí và ít tan trong nước."
       },
       {
         "level": 2,
@@ -236,7 +236,7 @@
     "steps": [
       {
         "kind": "identify",
-        "title": "Tính chất vật lý & an toàn của metan",
+        "title": "Tính chất vật lý & an toàn của methane",
         "body": "Kiểm tra màu sắc, tỉ khối và tính cháy nổ của CH4."
       },
       {
@@ -254,7 +254,7 @@
     "commonMistakes": [
       {
         "id": "confused-gas-color",
-        "message": "Metan trong tự nhiên hoàn toàn không có mùi và không có màu."
+        "message": "Methane trong tự nhiên hoàn toàn không có mùi và không có màu."
       }
     ]
   },

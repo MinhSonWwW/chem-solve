@@ -6,25 +6,25 @@
       "base-properties"
     ],
     "difficulty": 1,
-    "prompt": "Dung dịch bazơ nào sau đây là bazơ kiềm (tan tốt trong nước ở nhiệt độ thường)?",
+    "prompt": "Dung dịch base nào sau đây là base kiềm (tan tốt trong nước ở nhiệt độ thường)?",
     "answer": {
       "kind": "mcq-single",
       "options": [
         {
           "id": "a",
-          "label": "Nhôm hiđroxit (Al(OH)3)"
+          "label": "Aluminium hydroxide (Al(OH)3)"
         },
         {
           "id": "b",
-          "label": "Đồng(II) hiđroxit (Cu(OH)2)"
+          "label": "Copper(II) hydroxide (Cu(OH)2)"
         },
         {
           "id": "c",
-          "label": "Sắt(III) hiđroxit (Fe(OH)3)"
+          "label": "Iron(III) hydroxide (Fe(OH)3)"
         },
         {
           "id": "d",
-          "label": "Natri hiđroxit (NaOH)"
+          "label": "Sodium hydroxide (NaOH)"
         }
       ],
       "correctId": "d"
@@ -32,31 +32,31 @@
     "hints": [
       {
         "level": 1,
-        "text": "Các bazơ kiềm phổ biến bao gồm bazơ của kim loại kiềm như K, Na và Ba, Ca."
+        "text": "Các base kiềm phổ biến bao gồm base của kim loại kiềm như K, Na và Ba, Ca."
       },
       {
         "level": 2,
-        "text": "NaOH, KOH, Ba(OH)2, Ca(OH)2 tan trong nước; các bazơ còn lại như Cu(OH)2, Fe(OH)3 là chất kết tủa không tan."
+        "text": "NaOH, KOH, Ba(OH)2, Ca(OH)2 tan trong nước; các base còn lại như Cu(OH)2, Fe(OH)3 là chất kết tủa không tan."
       }
     ],
     "steps": [
       {
         "kind": "identify",
-        "title": "Phân biệt bazơ tan và không tan",
+        "title": "Phân biệt base tan và không tan",
         "body": "Cần tìm dung dịch kiềm trong 4 chất đã cho."
       },
       {
         "kind": "knowledge",
-        "title": "Tính tan của bazơ",
+        "title": "Tính tan của base",
         "body": "Chỉ có NaOH, KOH, Ba(OH)2 và Ca(OH)2 là tan tốt trong nước tạo dung dịch kiềm."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "**NaOH** là bazơ kiềm tan trong nước."
+        "body": "**NaOH** là base kiềm tan trong nước."
       }
     ],
-    "finalSolution": "**NaOH (Natri hiđroxit)** là bazơ kiềm tan tốt trong nước.",
+    "finalSolution": "**NaOH (Sodium hydroxide)** là base kiềm tan tốt trong nước.",
     "commonMistakes": [
       {
         "id": "picked-insoluble",
@@ -81,11 +81,11 @@
         },
         {
           "id": "b",
-          "label": "Mẫu nước có môi trường axit"
+          "label": "Mẫu nước có môi trường acid"
         },
         {
           "id": "c",
-          "label": "Mẫu nước có môi trường bazơ (kiềm)"
+          "label": "Mẫu nước có môi trường base (kiềm)"
         },
         {
           "id": "d",
@@ -101,7 +101,7 @@
       },
       {
         "level": 2,
-        "text": "pH < 7 là axit, pH = 7 là trung tính, pH > 7 là môi trường bazơ."
+        "text": "pH < 7 là acid, pH = 7 là trung tính, pH > 7 là môi trường base."
       }
     ],
     "steps": [
@@ -113,24 +113,24 @@
       {
         "kind": "knowledge",
         "title": "Thang đo pH",
-        "body": "pH < 7: Axit; pH = 7: Trung tính; pH > 7: Bazơ."
+        "body": "pH < 7: Acid; pH = 7: Trung tính; pH > 7: Base."
       },
       {
         "kind": "compute",
         "title": "Đối chiếu",
-        "body": "Vì 8,5 > 7 nên dung dịch có tính bazơ."
+        "body": "Vì 8,5 > 7 nên dung dịch có tính base."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Mẫu nước có **môi trường bazơ**."
+        "body": "Mẫu nước có **môi trường base**."
       }
     ],
-    "finalSolution": "Vì pH = 8,5 > 7 nên mẫu nước có **môi trường bazơ (kiềm)**.",
+    "finalSolution": "Vì pH = 8,5 > 7 nên mẫu nước có **môi trường base (kiềm)**.",
     "commonMistakes": [
       {
         "id": "inverted-ph-scale",
-        "message": "Nhớ rằng pH > 7 là bazơ, không phải axit."
+        "message": "Nhớ rằng pH > 7 là base, không phải acid."
       }
     ]
   },
@@ -141,7 +141,7 @@
       "base-properties"
     ],
     "difficulty": 1,
-    "prompt": "Ghép chất chỉ thị với màu sắc khi nhỏ vào dung dịch bazơ ([[NaOH]]):",
+    "prompt": "Ghép chất chỉ thị với màu sắc khi nhỏ vào dung dịch base ([[NaOH]]):",
     "answer": {
       "kind": "match",
       "pairs": [
@@ -168,8 +168,8 @@
     "steps": [
       {
         "kind": "identify",
-        "title": "Chỉ thị màu với bazơ",
-        "body": "Dấu hiệu nhận biết dung dịch bazơ tan."
+        "title": "Chỉ thị màu với base",
+        "body": "Dấu hiệu nhận biết dung dịch base tan."
       },
       {
         "kind": "knowledge",
@@ -208,12 +208,12 @@
         },
         {
           "id": "s2",
-          "text": "Dung dịch có tính bazơ (kiềm) làm quỳ tím hóa đỏ và có độ pH nhỏ hơn 7.",
+          "text": "Dung dịch có tính base (kiềm) làm quỳ tím hóa đỏ và có độ pH nhỏ hơn 7.",
           "correct": false
         },
         {
           "id": "s3",
-          "text": "Dung dịch có độ pH càng nhỏ (tiến dần về 0) thì tính axit càng mạnh.",
+          "text": "Dung dịch có độ pH càng nhỏ (tiến dần về 0) thì tính acid càng mạnh.",
           "correct": true
         }
       ]
@@ -221,23 +221,23 @@
     "hints": [
       {
         "level": 1,
-        "text": "Axit có pH < 7, bazơ có pH > 7. pH càng nhỏ tính axit càng mạnh."
+        "text": "Acid có pH < 7, base có pH > 7. pH càng nhỏ tính acid càng mạnh."
       },
       {
         "level": 2,
-        "text": "Dung dịch bazơ làm quỳ tím hóa xanh và có pH > 7."
+        "text": "Dung dịch base làm quỳ tím hóa xanh và có pH > 7."
       }
     ],
     "steps": [
       {
         "kind": "identify",
         "title": "Xét từng nhận định về pH",
-        "body": "Liên hệ giữa pH, môi trường và độ mạnh của axit/bazơ."
+        "body": "Liên hệ giữa pH, môi trường và độ mạnh của acid/base."
       },
       {
         "kind": "knowledge",
         "title": "Quy luật thang pH",
-        "body": "1. Nước chanh có tính axit nên pH < 7: câu 1 SAI. 2. Bazơ làm quỳ tím hóa xanh và pH > 7: câu 2 SAI. 3. pH càng thấp tính axit càng mạnh: ĐÚNG."
+        "body": "1. Nước chanh có tính acid nên pH < 7: câu 1 SAI. 2. Base làm quỳ tím hóa xanh và pH > 7: câu 2 SAI. 3. pH càng thấp tính acid càng mạnh: ĐÚNG."
       },
       {
         "kind": "answer",
@@ -245,11 +245,11 @@
         "body": "s1: Sai, s2: Sai, s3: Đúng."
       }
     ],
-    "finalSolution": "s1: **Sai** (nước chanh pH < 7), s2: **Sai** (bazơ có pH > 7 và làm quỳ hóa xanh), s3: **Đúng**.",
+    "finalSolution": "s1: **Sai** (nước chanh pH < 7), s2: **Sai** (base có pH > 7 và làm quỳ hóa xanh), s3: **Đúng**.",
     "commonMistakes": [
       {
         "id": "thought-acid-has-high-ph",
-        "message": "Nhầm lẫn chiều thang đo: Axit có pH < 7, pH càng nhỏ tính axit càng mạnh."
+        "message": "Nhầm lẫn chiều thang đo: Acid có pH < 7, pH càng nhỏ tính acid càng mạnh."
       }
     ]
   },

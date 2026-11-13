@@ -86,7 +86,7 @@
     "title": "Phản ứng tôi vôi và oxide base tan với nước",
     "formula": "CaO + H2O -> Ca(OH)2",
     "variables": [],
-    "notes": "Oxide kim loại kiềm/kiềm thổ tan trong nước tạo thành dung dịch bazơ tương ứng (vôi tôi Ca(OH)2 tỏa nhiều nhiệt)."
+    "notes": "Oxide kim loại kiềm/kiềm thổ tan trong nước tạo thành dung dịch base tương ứng (vôi tôi Ca(OH)2 tỏa nhiều nhiệt)."
   },
   {
     "id": "oxide.properties",
@@ -104,7 +104,7 @@
   },
   {
     "id": "formulas.calcium-carbonate",
-    "title": "Canxi cacbonat (Đá vôi)",
+    "title": "Calcium carbonate (Đá vôi)",
     "formula": "CaCO3",
     "variables": [],
     "notes": "Thành phần chính của đá vôi, đá hoa, phấn viết bảng và vỏ sò biển. Nhiệt phân ở 900-1000°C tạo CaO và CO2."
@@ -114,14 +114,14 @@
     "title": "Quy tắc độ tan của muối trong nước",
     "formula": "Na+, K+, NO3- luôn tan",
     "variables": [],
-    "notes": "Tất cả muối Na, K, amoni và nitrat đều tan. Đa số muối sunfat tan (trừ BaSO4, PbSO4). Đa số clorua tan (trừ AgCl)."
+    "notes": "Tất cả muối Na, K, amoni và nitrate đều tan. Đa số muối sulfate tan (trừ BaSO4, PbSO4). Đa số chloride tan (trừ AgCl)."
   },
   {
     "id": "activity-series.acid-reaction",
     "title": "Phản ứng của kim loại với acid loãng",
     "formula": "Kim loại (trước H) + Acid -> Muối + H2",
     "variables": [],
-    "notes": "Chỉ các kim loại đứng trước Hydro trong dãy hoạt động hóa học mới tác dụng được với dung dịch HCl, H2SO4 loãng."
+    "notes": "Chỉ các kim loại đứng trước Hydrogen trong dãy hoạt động hóa học mới tác dụng được với dung dịch HCl, H2SO4 loãng."
   },
   {
     "id": "reactions.metal-displaces-metal",
@@ -139,7 +139,7 @@
   },
   {
     "id": "formulas.ethanol",
-    "title": "Rượu etylic (Ethanol)",
+    "title": "Ethylic alcohol (Ethanol)",
     "formula": "C2H5OH (M = 46 g/mol)",
     "variables": [],
     "notes": "Chất lỏng không màu, nhẹ hơn nước, tan vô hạn trong nước. Độ rượu là số ml rượu nguyên chất trong 100 ml hỗn hợp rượu và nước."
@@ -149,34 +149,34 @@
     "title": "Nhóm chức đặc trưng trong hợp chất hữu cơ",
     "formula": "-OH (Hydroxyl), -COOH (Carboxyl)",
     "variables": [],
-    "notes": "Nhóm -OH đặc trưng cho rượu (tác dụng Na giải phóng H2); nhóm -COOH đặc trưng cho axit cacboxylic (mang đầy đủ tính chất của acid)."
+    "notes": "Nhóm -OH đặc trưng cho rượu (tác dụng Na giải phóng H2); nhóm -COOH đặc trưng cho acid cacboxylic (mang đầy đủ tính chất của acid)."
   },
   {
     "id": "alcohol.properties",
-    "title": "Tính chất hóa học của rượu etylic",
+    "title": "Tính chất hóa học của ethylic alcohol",
     "formula": "2C2H5OH + 2Na -> 2C2H5ONa + H2",
     "variables": [],
-    "notes": "Rượu etylic phản ứng cháy tỏa nhiều nhiệt tạo CO2 và H2O; phản ứng với kim loại kiềm do có nguyên tử H linh động trong nhóm -OH."
+    "notes": "Ethylic alcohol phản ứng cháy tỏa nhiều nhiệt tạo CO2 và H2O; phản ứng với kim loại kiềm do có nguyên tử H linh động trong nhóm -OH."
   },
   {
     "id": "formulas.acetic-acid",
-    "title": "Axit axetic (Axit etanoic)",
+    "title": "Acetic acid (Axit etanoic)",
     "formula": "CH3COOH (M = 60 g/mol)",
     "variables": [],
     "notes": "Chất lỏng không màu, vị chua đặc trưng của giấm ăn. Dung dịch giấm ăn thường có nồng độ 2% - 5%."
   },
   {
     "id": "reactions.acetic-acid-carbonate",
-    "title": "Phản ứng của axit axetic với muối cacbonat",
+    "title": "Phản ứng của acetic acid với muối carbonate",
     "formula": "2CH3COOH + CaCO3 -> (CH3COO)2Ca + CO2 + H2O",
     "variables": [],
-    "notes": "Axit axetic làm sủi bọt khí CO2 khi tác dụng với đá vôi (CaCO3) hoặc bột baking soda (NaHCO3)."
+    "notes": "Acetic acid làm sủi bọt khí CO2 khi tác dụng với đá vôi (CaCO3) hoặc bột baking soda (NaHCO3)."
   },
   {
     "id": "reactions.esterification",
-    "title": "Phản ứng este hóa tạo este có mùi thơm",
+    "title": "Phản ứng ester hóa tạo ester có mùi thơm",
     "formula": "CH3COOH + C2H5OH <=> CH3COOC2H5 + H2O",
     "variables": [],
-    "notes": "Phản ứng este hóa giữa axit axetic và rượu etylic (xúc tác H2SO4 đặc, đun nóng) tạo ethyl acetate có mùi thơm hoa quả chín."
+    "notes": "Phản ứng ester hóa giữa acetic acid và ethylic alcohol (xúc tác H2SO4 đặc, đun nóng) tạo ethyl acetate có mùi thơm hoa quả chín."
   }
 ]

@@ -71,7 +71,7 @@
       "activity-series"
     ],
     "difficulty": 2,
-    "prompt": "Nhúng một chiếc đinh sắt sạch vào ống nghiệm chứa dung dịch đồng(II) sunfat ([[CuSO4]]). Hiện tượng quan sát được là gì?",
+    "prompt": "Nhúng một chiếc đinh sắt sạch vào ống nghiệm chứa dung dịch copper(II) sulfate ([[CuSO4]]). Hiện tượng quan sát được là gì?",
     "answer": {
       "kind": "mcq-single",
       "options": [
@@ -136,7 +136,7 @@
       "activity-series"
     ],
     "difficulty": 2,
-    "prompt": "Cân bằng phương trình hóa học khi cho đồng tác dụng với dung dịch bạc nitrat: [[Cu]] + [[AgNO3]] -> [[Cu(NO3)2]] + [[Ag]].",
+    "prompt": "Cân bằng phương trình hóa học khi cho đồng tác dụng với dung dịch silver nitrate: [[Cu]] + [[AgNO3]] -> [[Cu(NO3)2]] + [[Ag]].",
     "answer": {
       "kind": "equation",
       "mode": "fill-coefficients",
@@ -208,7 +208,7 @@
       "statements": [
         {
           "id": "s1",
-          "text": "Kim loại đồng (Cu) đẩy được magie (Mg) ra khỏi dung dịch MgSO4.",
+          "text": "Kim loại đồng (Cu) đẩy được magnesium (Mg) ra khỏi dung dịch MgSO4.",
           "correct": false
         },
         {
@@ -230,7 +230,7 @@
       },
       {
         "level": 2,
-        "text": "Zn đứng trước Fe nên đẩy được Fe. Ag và Au đứng sau H nên không tác dụng với axit loãng."
+        "text": "Zn đứng trước Fe nên đẩy được Fe. Ag và Au đứng sau H nên không tác dụng với acid loãng."
       }
     ],
     "steps": [
@@ -281,12 +281,12 @@
       "items": [
         {
           "id": "na",
-          "label": "Natri (Na: 0,97 g/cm³)",
+          "label": "Sodium (Na: 0,97 g/cm³)",
           "bucketId": "light"
         },
         {
           "id": "k",
-          "label": "Kali (K: 0,86 g/cm³)",
+          "label": "Potassium (K: 0,86 g/cm³)",
           "bucketId": "light"
         },
         {
@@ -323,7 +323,7 @@
       },
       {
         "level": 2,
-        "text": "Natri, Kali và Nhôm là kim loại nhẹ (Na và K còn nổi được trên mặt nước); Sắt, Đồng, Chì, Vàng là kim loại nặng."
+        "text": "Sodium, Potassium và Nhôm là kim loại nhẹ (Na và K còn nổi được trên mặt nước); Sắt, Đồng, Chì, Vàng là kim loại nặng."
       }
     ],
     "steps": [

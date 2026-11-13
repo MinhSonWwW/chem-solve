@@ -357,7 +357,7 @@
         },
         {
           "id": "opt-d",
-          "label": "Báo ngay giáo viên, mở toang cửa thông gió, rắc bột lưu huỳnh (nếu có) lên để gom thủy ngân lại"
+          "label": "Báo ngay giáo viên, mở toang cửa thông gió, rắc bột sulfur (nếu có) lên để gom thủy ngân lại"
         }
       ],
       "correctId": "opt-d"
@@ -369,7 +369,7 @@
       },
       {
         "level": 2,
-        "text": "Cần mở cửa thông gió, không làm thủy ngân phân tán thành hạt bụi nhỏ, và rắc bột lưu huỳnh để phản ứng tạo chất rắn an toàn."
+        "text": "Cần mở cửa thông gió, không làm thủy ngân phân tán thành hạt bụi nhỏ, và rắc bột sulfur để phản ứng tạo chất rắn an toàn."
       }
     ],
     "steps": [
@@ -381,15 +381,15 @@
       {
         "kind": "knowledge",
         "title": "Biện pháp xử lý chuẩn",
-        "body": "Khi nhiệt kế vỡ: (1) Báo ngay cho giáo viên/người lớn; (2) Mở cửa phòng thông gió; (3) Tuyệt đối không dùng máy hút bụi vì sẽ làm phát tán hơi thủy ngân vào không khí; (4) Rắc bột lưu huỳnh (S) để tạo muối HgS kết tủa rắn không bay hơi và thu gom cẩn thận."
+        "body": "Khi nhiệt kế vỡ: (1) Báo ngay cho giáo viên/người lớn; (2) Mở cửa phòng thông gió; (3) Tuyệt đối không dùng máy hút bụi vì sẽ làm phát tán hơi thủy ngân vào không khí; (4) Rắc bột sulfur (S) để tạo muối HgS kết tủa rắn không bay hơi và thu gom cẩn thận."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Hành động đúng là **Báo ngay giáo viên, mở toang cửa thông gió, rắc bột lưu huỳnh (nếu có) lên để gom thủy ngân lại**."
+        "body": "Hành động đúng là **Báo ngay giáo viên, mở toang cửa thông gió, rắc bột sulfur (nếu có) lên để gom thủy ngân lại**."
       }
     ],
-    "finalSolution": "Phải **báo giáo viên, mở cửa thông gió và rắc bột lưu huỳnh** để thu gom thủy ngân an toàn.",
+    "finalSolution": "Phải **báo giáo viên, mở cửa thông gió và rắc bột sulfur** để thu gom thủy ngân an toàn.",
     "commonMistakes": [
       {
         "id": "used-vacuum",

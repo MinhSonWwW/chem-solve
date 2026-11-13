@@ -24,19 +24,19 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "CaO (Canxi oxit)"
+          "label": "CaO (Calcium oxide)"
         },
         {
           "id": "opt-b",
-          "label": "SO2 (Lưu huỳnh đioxit)"
+          "label": "SO2 (Sulfur dioxide)"
         },
         {
           "id": "opt-c",
-          "label": "CuO (Đồng(II) oxit)"
+          "label": "CuO (Copper(II) oxide)"
         },
         {
           "id": "opt-d",
-          "label": "Na2O (Natri oxit)"
+          "label": "Na2O (Sodium oxide)"
         }
       ],
       "correctId": "opt-b"
@@ -60,7 +60,7 @@
       {
         "kind": "knowledge",
         "title": "Tính chất oxide acid",
-        "body": "Oxide phi kim SO2 tác dụng với nước trong khí quyển tạo thành axit H2SO3 gây mưa acid."
+        "body": "Oxide phi kim SO2 tác dụng với nước trong khí quyển tạo thành acid H2SO3 gây mưa acid."
       },
       {
         "kind": "answer",
@@ -74,7 +74,7 @@
         "message": "Nhầm oxide base với oxide acid. CaO, Na2O là oxide base của kim loại."
       }
     ],
-    "finalSolution": "SO2 (Lưu huỳnh đioxit)"
+    "finalSolution": "SO2 (Sulfur dioxide)"
   },
   {
     "id": "g8-b10-mcq-002",
@@ -112,7 +112,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Canxi (Ca) có hóa trị II, nhóm hiđroxit (OH) có hóa trị I => Ca(OH)2."
+        "text": "Calcium (Ca) có hóa trị II, nhóm hydroxide (OH) có hóa trị I => Ca(OH)2."
       },
       {
         "level": 2,
@@ -123,12 +123,12 @@
       {
         "kind": "identify",
         "title": "Xác định chất tham gia",
-        "body": "Canxi oxit (CaO) là oxide base, phản ứng với nước H2O."
+        "body": "Calcium oxide (CaO) là oxide base, phản ứng với nước H2O."
       },
       {
         "kind": "equation",
         "title": "Viết phản ứng",
-        "body": "CaO + H2O -> Ca(OH)2 (Canxi hiđroxit / vôi tôi)."
+        "body": "CaO + H2O -> Ca(OH)2 (Calcium hydroxide / vôi tôi)."
       },
       {
         "kind": "answer",
@@ -169,7 +169,7 @@
         },
         {
           "id": "s4",
-          "text": "Dung dịch Canxi oxit làm quỳ tím chuyển sang màu đỏ.",
+          "text": "Dung dịch Calcium oxide làm quỳ tím chuyển sang màu đỏ.",
           "correct": false
         }
       ]
@@ -177,11 +177,11 @@
     "hints": [
       {
         "level": 1,
-        "text": "CO và NO không tác dụng với nước, axit hay bazơ nên gọi là oxide trung tính."
+        "text": "CO và NO không tác dụng với nước, acid hay base nên gọi là oxide trung tính."
       },
       {
         "level": 2,
-        "text": "Canxi oxit (CaO) tác dụng với nước tạo base Ca(OH)2 làm quỳ tím hóa xanh."
+        "text": "Calcium oxide (CaO) tác dụng với nước tạo base Ca(OH)2 làm quỳ tím hóa xanh."
       }
     ],
     "steps": [
@@ -193,12 +193,12 @@
       {
         "kind": "knowledge",
         "title": "Phân tích ngoại lệ",
-        "body": "CO và NO là oxide phi kim nhưng không tạo axit (s2 sai, s3 đúng)."
+        "body": "CO và NO là oxide phi kim nhưng không tạo acid (s2 sai, s3 đúng)."
       },
       {
         "kind": "answer",
         "title": "Tính chất chỉ thị màu",
-        "body": "Vôi tôi Ca(OH)2 có tính bazơ làm quỳ tím hóa xanh, không phải đỏ (s4 sai)."
+        "body": "Vôi tôi Ca(OH)2 có tính base làm quỳ tím hóa xanh, không phải đỏ (s4 sai)."
       }
     ],
     "finalSolution": "s1: Đúng, s2: Sai, s3: Đúng, s4: Sai"

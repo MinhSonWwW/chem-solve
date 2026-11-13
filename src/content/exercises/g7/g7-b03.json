@@ -59,7 +59,7 @@
     "commonMistakes": [
       {
         "id": "mistake-n",
-        "message": "N là kí hiệu của Nitrogen (Nitơ), không phải Natri."
+        "message": "N là kí hiệu của Nitrogen (Nitơ), không phải Sodium."
       },
       {
         "id": "mistake-k",
@@ -359,7 +359,7 @@
         },
         {
           "id": "s",
-          "label": "S (Lưu huỳnh)",
+          "label": "S (Sulfur)",
           "bucketId": "nonmetal"
         },
         {
@@ -444,7 +444,7 @@
       },
       {
         "level": 2,
-        "text": "N là Nitrogen (Nitơ). Natri có kí hiệu Na (từ Natrium)."
+        "text": "N là Nitrogen (Nitơ). Sodium có kí hiệu Na (từ Natrium)."
       }
     ],
     "steps": [
@@ -464,7 +464,7 @@
         "body": "S1: Đúng, S2: Sai, S3: Đúng, S4: Sai."
       }
     ],
-    "finalSolution": "S1: Đúng (1-2 chữ cái). S2: Sai (Kali = K). S3: Đúng. S4: Sai (N = Nitrogen).",
+    "finalSolution": "S1: Đúng (1-2 chữ cái). S2: Sai (Potassium = K). S3: Đúng. S4: Sai (N = Nitrogen).",
     "commonMistakes": [
       {
         "id": "k-vs-po",
@@ -774,7 +774,7 @@
       },
       {
         "level": 2,
-        "text": "Khí oxi, than chì (carbon), lưu huỳnh là các phi kim."
+        "text": "Khí oxygen, than chì (carbon), sulfur là các phi kim."
       }
     ],
     "steps": [

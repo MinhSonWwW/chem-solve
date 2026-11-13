@@ -28,7 +28,7 @@
         },
         {
           "id": "opt-d",
-          "label": "Thở bằng mũi giúp hấp thụ trực tiếp toàn bộ khí oxy vào não bộ mà không qua phổi"
+          "label": "Thở bằng mũi giúp hấp thụ trực tiếp toàn bộ khí oxygen vào não bộ mà không qua phổi"
         }
       ],
       "correctId": "opt-a"
@@ -381,7 +381,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Tế bào liên tục tiêu thụ oxy để hô hấp tế bào sinh năng lượng và thải ra khí cacbonic."
+        "text": "Tế bào liên tục tiêu thụ oxygen để hô hấp tế bào sinh năng lượng và thải ra khí carbon dioxide."
       },
       {
         "level": 2,
@@ -438,7 +438,7 @@
         },
         {
           "id": "opt-c",
-          "label": "Khí CO liên kết rất chặt chẽ và bền vững với hemoglobin, chiếm chỗ của O2 làm hồng cầu mất khả năng vận chuyển oxy"
+          "label": "Khí CO liên kết rất chặt chẽ và bền vững với hemoglobin, chiếm chỗ của O2 làm hồng cầu mất khả năng vận chuyển oxygen"
         },
         {
           "id": "opt-d",
@@ -466,12 +466,12 @@
       {
         "kind": "knowledge",
         "title": "Cơ chế gây ngạt của CO",
-        "body": "CO có ái lực với hemoglobin (Hb) cao gấp hơn 200 lần so với O2, tạo hợp chất rất bền vững cacboxyhemoglobin (HbCO). Điều này làm tê liệt khả năng gắn và vận chuyển O2 của hồng cầu, khiến tế bào não chết ngạt vì thiếu oxy."
+        "body": "CO có ái lực với hemoglobin (Hb) cao gấp hơn 200 lần so với O2, tạo hợp chất rất bền vững cacboxyhemoglobin (HbCO). Điều này làm tê liệt khả năng gắn và vận chuyển O2 của hồng cầu, khiến tế bào não chết ngạt vì thiếu oxygen."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "CO liên kết rất chặt chẽ với hemoglobin, chiếm chỗ của O2 làm hồng cầu mất khả năng vận chuyển oxy."
+        "body": "CO liên kết rất chặt chẽ với hemoglobin, chiếm chỗ của O2 làm hồng cầu mất khả năng vận chuyển oxygen."
       }
     ],
     "finalSolution": "Khí CO trong khói than và khói thuốc là chất gây ngạt tế bào cực kì nguy hiểm vì nó trực tiếp vô hiệu hóa huyết sắc tố hồng cầu.",
@@ -519,7 +519,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Ép tim tạo dòng máu nhân tạo lưu thông nuôi não, thổi ngạt cung cấp oxy vào phổi."
+        "text": "Ép tim tạo dòng máu nhân tạo lưu thông nuôi não, thổi ngạt cung cấp oxygen vào phổi."
       },
       {
         "level": 2,
@@ -530,7 +530,7 @@
       {
         "kind": "identify",
         "title": "Mục tiêu của kĩ thuật CPR",
-        "body": "Hồi sinh tim phổi nhằm duy trì tuần hoàn máu não và nạp oxy vào phổi khi nạn nhân ngừng thở, ngừng tim."
+        "body": "Hồi sinh tim phổi nhằm duy trì tuần hoàn máu não và nạp oxygen vào phổi khi nạn nhân ngừng thở, ngừng tim."
       },
       {
         "kind": "knowledge",

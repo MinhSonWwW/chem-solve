@@ -20,7 +20,7 @@
         },
         {
           "id": "opt-b",
-          "label": "Axit béo liên kết với ribosome"
+          "label": "Acid béo liên kết với ribosome"
         },
         {
           "id": "opt-c",
@@ -504,7 +504,7 @@
         },
         {
           "id": "opt-b",
-          "label": "Loại bỏ hoàn toàn các liên kết hydro giữa hai mạch của DNA"
+          "label": "Loại bỏ hoàn toàn các liên kết hydrogen giữa hai mạch của DNA"
         },
         {
           "id": "opt-c",

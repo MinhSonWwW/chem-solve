@@ -60,7 +60,7 @@
     "commonMistakes": [
       {
         "id": "confuse-triple-bond",
-        "message": "Liên kết ba C≡C là của axetilen (C2H2), không phải etilen."
+        "message": "Liên kết ba C≡C là của acetylene (C2H2), không phải ethylene."
       }
     ]
   },
@@ -101,7 +101,7 @@
       },
       {
         "level": 2,
-        "text": "CH2=CH2 + Br2 -> CH2Br-CH2Br (chất lỏng không màu). Dung dịch brom bị mất màu."
+        "text": "CH2=CH2 + Br2 -> CH2Br-CH2Br (chất lỏng không màu). Dung dịch bromine bị mất màu."
       }
     ],
     "steps": [
@@ -118,7 +118,7 @@
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Dung dịch brom bị mất màu. Đây là phản ứng đặc trưng dùng để nhận biết alkene."
+        "body": "Dung dịch bromine bị mất màu. Đây là phản ứng đặc trưng dùng để nhận biết alkene."
       }
     ],
     "finalSolution": "Dung dịch Bromine bị mất màu do phản ứng cộng: C2H4 + Br2 -> C2H4Br2.",
@@ -169,7 +169,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Methane (CH4) chỉ có liên kết đơn nên KHÔNG phản ứng với dung dịch brom."
+        "text": "Methane (CH4) chỉ có liên kết đơn nên KHÔNG phản ứng với dung dịch bromine."
       },
       {
         "level": 2,

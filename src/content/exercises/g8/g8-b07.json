@@ -102,7 +102,7 @@
         },
         {
           "id": "i4",
-          "label": "Hút chân không túi thực phẩm để ngăn tiếp xúc với khí oxi",
+          "label": "Hút chân không túi thực phẩm để ngăn tiếp xúc với khí oxygen",
           "bucketId": "giam-toc"
         }
       ]
@@ -110,18 +110,18 @@
     "hints": [
       {
         "level": 1,
-        "text": "Đập nhỏ chất rắn làm tăng diện tích bề mặt; quạt gió cung cấp thêm lượng khí oxi (tăng nồng độ)."
+        "text": "Đập nhỏ chất rắn làm tăng diện tích bề mặt; quạt gió cung cấp thêm lượng khí oxygen (tăng nồng độ)."
       },
       {
         "level": 2,
-        "text": "Hạ nhiệt độ và giảm nồng độ oxi giúp kìm hãm quá trình phân hủy và ôi thiu của thức ăn."
+        "text": "Hạ nhiệt độ và giảm nồng độ oxygen giúp kìm hãm quá trình phân hủy và ôi thiu của thức ăn."
       }
     ],
     "steps": [
       {
         "kind": "identify",
         "title": "Mục đích từng hành động",
-        "body": "Xác định yếu tố tác động: diện tích bề mặt, nồng độ khí oxi, nhiệt độ môi trường."
+        "body": "Xác định yếu tố tác động: diện tích bề mặt, nồng độ khí oxygen, nhiệt độ môi trường."
       },
       {
         "kind": "knowledge",
@@ -217,7 +217,7 @@
           "right": "Ảnh hưởng của chất xúc tác sinh học"
         },
         {
-          "left": "Sục khí oxi nguyên chất vào ngọn lửa than",
+          "left": "Sục khí oxygen nguyên chất vào ngọn lửa than",
           "right": "Ảnh hưởng của nồng độ chất phản ứng"
         }
       ]
@@ -241,7 +241,7 @@
       {
         "kind": "knowledge",
         "title": "Ánh xạ yếu tố",
-        "body": "Nồi áp suất -> Nhiệt độ/áp suất; Chẻ nhỏ củi -> Diện tích tiếp xúc; Men rượu -> Chất xúc tác; Oxi nguyên chất -> Nồng độ."
+        "body": "Nồi áp suất -> Nhiệt độ/áp suất; Chẻ nhỏ củi -> Diện tích tiếp xúc; Men rượu -> Chất xúc tác; Oxygen nguyên chất -> Nồng độ."
       },
       {
         "kind": "answer",
@@ -258,11 +258,11 @@
       "reaction-rate"
     ],
     "difficulty": 2,
-    "prompt": "Sắp xếp các bước tiến hành thí nghiệm so sánh tốc độ thoát khí [[H2]] khi cho kẽm hạt và kẽm bột tác dụng với axit [[HCl]]:",
+    "prompt": "Sắp xếp các bước tiến hành thí nghiệm so sánh tốc độ thoát khí [[H2]] khi cho kẽm hạt và kẽm bột tác dụng với acid [[HCl]]:",
     "answer": {
       "kind": "ordering",
       "correctOrder": [
-        "Chuẩn bị 2 ống nghiệm chứa cùng thể tích và nồng độ dung dịch axit HCl",
+        "Chuẩn bị 2 ống nghiệm chứa cùng thể tích và nồng độ dung dịch acid HCl",
         "Lấy 2 phần kẽm có khối lượng bằng nhau: 1 phần dạng hạt, 1 phần dạng bột mịn",
         "Cho đồng thời kẽm hạt vào ống 1 và kẽm bột vào ống 2",
         "Quan sát tốc độ bọt khí thoát ra ở 2 ống nghiệm và rút ra kết luận"
@@ -271,11 +271,11 @@
     "hints": [
       {
         "level": 1,
-        "text": "Nguyên tắc thí nghiệm đối chứng: giữ cố định nồng độ axit và khối lượng kẽm, chỉ thay đổi kích thước hạt kẽm."
+        "text": "Nguyên tắc thí nghiệm đối chứng: giữ cố định nồng độ acid và khối lượng kẽm, chỉ thay đổi kích thước hạt kẽm."
       },
       {
         "level": 2,
-        "text": "Phải cho đồng thời 2 mẫu kẽm vào dung dịch axit để quan sát chính xác sự khác biệt."
+        "text": "Phải cho đồng thời 2 mẫu kẽm vào dung dịch acid để quan sát chính xác sự khác biệt."
       }
     ],
     "steps": [
@@ -287,15 +287,15 @@
       {
         "kind": "knowledge",
         "title": "Nguyên tắc kiểm soát biến số",
-        "body": "Cố định nồng độ, nhiệt độ, thể tích axit và khối lượng kẽm; biến đổi dạng hình học (hạt vs bột)."
+        "body": "Cố định nồng độ, nhiệt độ, thể tích acid và khối lượng kẽm; biến đổi dạng hình học (hạt vs bột)."
       },
       {
         "kind": "answer",
         "title": "Trình tự chuẩn",
-        "body": "1. Chuẩn bị dung dịch axit -> 2. Cân lượng kẽm hạt và bột -> 3. Cho đồng thời vào 2 ống -> 4. Quan sát tốc độ sủi bọt khí."
+        "body": "1. Chuẩn bị dung dịch acid -> 2. Cân lượng kẽm hạt và bột -> 3. Cho đồng thời vào 2 ống -> 4. Quan sát tốc độ sủi bọt khí."
       }
     ],
-    "finalSolution": "Trình tự: Chuẩn bị axit -> Cân kẽm hạt và bột -> Thả đồng thời -> Quan sát so sánh."
+    "finalSolution": "Trình tự: Chuẩn bị acid -> Cân kẽm hạt và bột -> Thả đồng thời -> Quan sát so sánh."
   },
   {
     "id": "g8-b07-num-001",

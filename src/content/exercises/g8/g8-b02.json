@@ -12,7 +12,7 @@
       "options": [
         {
           "id": "a",
-          "label": "Đốt cháy que đóm tạo thành than đen và khí cacbonic"
+          "label": "Đốt cháy que đóm tạo thành than đen và khí carbon dioxide"
         },
         {
           "id": "b",
@@ -56,7 +56,7 @@
         "body": "Đốt cháy que đóm tạo thành than và khí mới là **biến đổi hóa học**."
       }
     ],
-    "finalSolution": "**Đốt cháy que đóm** là biến đổi hóa học vì có sự tạo thành than và khí cacbonic mới.",
+    "finalSolution": "**Đốt cháy que đóm** là biến đổi hóa học vì có sự tạo thành than và khí carbon dioxide mới.",
     "commonMistakes": [
       {
         "id": "confused-evaporation",
@@ -138,7 +138,7 @@
     "commonMistakes": [
       {
         "id": "rust-is-physical",
-        "message": "Gỉ sắt (chứa Fe2O3.nH2O) là chất mới màu nâu đỏ sinh ra do sắt tác dụng với oxi và hơi nước, đây là biến đổi hóa học."
+        "message": "Gỉ sắt (chứa Fe2O3.nH2O) là chất mới màu nâu đỏ sinh ra do sắt tác dụng với oxygen và hơi nước, đây là biến đổi hóa học."
       }
     ]
   },
@@ -223,7 +223,7 @@
           "right": "Sủi bọt khí (sinh khí CO2)"
         },
         {
-          "left": "Sục khí cacbonic vào nước vôi trong",
+          "left": "Sục khí carbon dioxide vào nước vôi trong",
           "right": "Xuất hiện vẩn đục màu trắng (kết tủa)"
         },
         {
@@ -239,7 +239,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Vỏ trứng chứa canxi cacbonat (CaCO3), khi gặp axit axetic trong giấm sẽ sủi bọt khí."
+        "text": "Vỏ trứng chứa calcium carbonate (CaCO3), khi gặp acetic acid trong giấm sẽ sủi bọt khí."
       },
       {
         "level": 2,
@@ -341,7 +341,7 @@
       "chemical-change"
     ],
     "difficulty": 1,
-    "prompt": "Cho phản ứng hóa học biểu diễn bằng chữ: Sắt + Khí oxi -> Oxit sắt từ. Các chất tham gia phản ứng là:",
+    "prompt": "Cho phản ứng hóa học biểu diễn bằng chữ: Sắt + Khí oxygen -> Oxide sắt từ. Các chất tham gia phản ứng là:",
     "answer": {
       "kind": "mcq-single",
       "options": [
@@ -351,15 +351,15 @@
         },
         {
           "id": "b",
-          "label": "Khí oxi và Oxit sắt từ"
+          "label": "Khí oxygen và Oxide sắt từ"
         },
         {
           "id": "c",
-          "label": "Oxit sắt từ"
+          "label": "Oxide sắt từ"
         },
         {
           "id": "d",
-          "label": "Sắt và Khí oxi"
+          "label": "Sắt và Khí oxygen"
         }
       ],
       "correctId": "d"
@@ -378,7 +378,7 @@
       {
         "kind": "identify",
         "title": "Đọc phương trình chữ",
-        "body": "Sắt + Khí oxi -> Oxit sắt từ."
+        "body": "Sắt + Khí oxygen -> Oxide sắt từ."
       },
       {
         "kind": "knowledge",
@@ -388,14 +388,14 @@
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Chất tham gia phản ứng gồm **Sắt và Khí oxi**."
+        "body": "Chất tham gia phản ứng gồm **Sắt và Khí oxygen**."
       }
     ],
-    "finalSolution": "Chất tham gia phản ứng là các chất ở bên trái mũi tên: **Sắt và Khí oxi**.",
+    "finalSolution": "Chất tham gia phản ứng là các chất ở bên trái mũi tên: **Sắt và Khí oxygen**.",
     "commonMistakes": [
       {
         "id": "confused-reactants-products",
-        "message": "Oxit sắt từ là chất mới sinh ra (sản phẩm), không phải chất tham gia."
+        "message": "Oxide sắt từ là chất mới sinh ra (sản phẩm), không phải chất tham gia."
       }
     ]
   },

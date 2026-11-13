@@ -381,18 +381,18 @@
     "hints": [
       {
         "level": 1,
-        "text": "Máu giàu oxy được tâm thất dày nhất bơm vào động mạch chủ đi khắp cơ thể."
+        "text": "Máu giàu oxygen được tâm thất dày nhất bơm vào động mạch chủ đi khắp cơ thể."
       },
       {
         "level": 2,
-        "text": "Sau khi nuôi mô, máu nghèo oxy theo tĩnh mạch chủ đổ về tâm nhĩ phải."
+        "text": "Sau khi nuôi mô, máu nghèo oxygen theo tĩnh mạch chủ đổ về tâm nhĩ phải."
       }
     ],
     "steps": [
       {
         "kind": "identify",
         "title": "Chức năng vòng tuần hoàn lớn",
-        "body": "Vòng tuần hoàn lớn vận chuyển máu giàu oxy và dinh dưỡng đi nuôi mọi tế bào trong cơ thể."
+        "body": "Vòng tuần hoàn lớn vận chuyển máu giàu oxygen và dinh dưỡng đi nuôi mọi tế bào trong cơ thể."
       },
       {
         "kind": "knowledge",
@@ -535,7 +535,7 @@
       {
         "kind": "knowledge",
         "title": "Quy tắc garô động mạch",
-        "body": "Động mạch chảy từ tim ra ngọn chi nên phải buộc dây garô chặn máu ở phía trên vết thương (gần tim hơn). Định kì 15 phút phải nới lỏng garô 1 - 2 phút để ngừa hoại tử chi do thiếu oxy."
+        "body": "Động mạch chảy từ tim ra ngọn chi nên phải buộc dây garô chặn máu ở phía trên vết thương (gần tim hơn). Định kì 15 phút phải nới lỏng garô 1 - 2 phút để ngừa hoại tử chi do thiếu oxygen."
       },
       {
         "kind": "answer",

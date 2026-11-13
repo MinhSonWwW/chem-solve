@@ -36,17 +36,17 @@
         },
         {
           "id": "i3",
-          "label": "Kali clorua [[KCl]]",
+          "label": "Potassium chloride [[KCl]]",
           "bucketId": "kali"
         },
         {
           "id": "i4",
-          "label": "Amoni nitrat [[NH4NO3]]",
+          "label": "Ammonium nitrate [[NH4NO3]]",
           "bucketId": "dam"
         },
         {
           "id": "i5",
-          "label": "Kali sunfat [[K2SO4]]",
+          "label": "Potassium sulfate [[K2SO4]]",
           "bucketId": "kali"
         }
       ]
@@ -54,11 +54,11 @@
     "hints": [
       {
         "level": 1,
-        "text": "Phân đạm cung cấp N (chứa gốc amoni hoặc nhóm NH2); phân lân cung cấp P (chứa gốc photphat); phân kali cung cấp K."
+        "text": "Phân đạm cung cấp N (chứa gốc amoni hoặc nhóm NH2); phân lân cung cấp P (chứa gốc phosphate); phân kali cung cấp K."
       },
       {
         "level": 2,
-        "text": "Nhìn vào ký hiệu hóa học của nguyên tố dinh dưỡng chính trong công thức: N (đạm), P (lân), K (kali)."
+        "text": "Nhìn vào ký hiệu hóa học của nguyên tố dinh dưỡng chính trong công thức: N (đạm), P (lân), K (potassium)."
       }
     ],
     "steps": [
@@ -93,15 +93,15 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Phân lân (cung cấp Photpho)"
+          "label": "Phân lân (cung cấp Phosphorus)"
         },
         {
           "id": "opt-b",
-          "label": "Phân kali (cung cấp Kali)"
+          "label": "Phân kali (cung cấp Potassium)"
         },
         {
           "id": "opt-c",
-          "label": "Phân đạm (cung cấp Nitơ)"
+          "label": "Phân đạm (cung cấp Nitrogen)"
         },
         {
           "id": "opt-d",
@@ -113,7 +113,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Nitơ là thành phần chính cấu tạo nên protein, tế bào và diệp lục trong lá cây."
+        "text": "Nitrogen là thành phần chính cấu tạo nên protein, tế bào và diệp lục trong lá cây."
       },
       {
         "level": 2,
@@ -137,7 +137,7 @@
         "body": "Phân đạm là loại phân giúp cây đâm chồi và xanh tốt bộ lá."
       }
     ],
-    "finalSolution": "Phương án đúng: **Phân đạm (cung cấp Nitơ)**."
+    "finalSolution": "Phương án đúng: **Phân đạm (cung cấp Nitrogen)**."
   },
   {
     "id": "g8-b12-num-001",
@@ -146,7 +146,7 @@
       "fertilizer-calc"
     ],
     "difficulty": 2,
-    "prompt": "Phân Urê có công thức hóa học là [[(NH2)2CO]]. Tính hàm lượng phần trăm theo khối lượng của nguyên tố Nitơ (%N) trong phân Urê nguyên chất. (Cho M(N) = 14, M(H) = 1, M(C) = 12, M(O) = 16 g/mol. Làm tròn kết quả đến 1 chữ số thập phân).",
+    "prompt": "Phân Urê có công thức hóa học là [[(NH2)2CO]]. Tính hàm lượng phần trăm theo khối lượng của nguyên tố Nitrogen (%N) trong phân Urê nguyên chất. (Cho M(N) = 14, M(H) = 1, M(C) = 12, M(O) = 16 g/mol. Làm tròn kết quả đến 1 chữ số thập phân).",
     "given": [
       {
         "label": "Công thức Urê",
@@ -223,7 +223,7 @@
       "fertilizer-classification"
     ],
     "difficulty": 1,
-    "prompt": "Nhập công thức hóa học của phân kali clorua (chứa nguyên tố kali hóa trị I và gốc clorua hóa trị I):",
+    "prompt": "Nhập công thức hóa học của phân kali chloride (chứa nguyên tố potassium hóa trị I và gốc chloride hóa trị I):",
     "answer": {
       "kind": "formula",
       "accepted": [
@@ -233,7 +233,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Kí hiệu hóa học của Kali là K, của Clo là Cl, tỉ lệ 1:1."
+        "text": "Kí hiệu hóa học của Potassium là K, của Chlorine là Cl, tỉ lệ 1:1."
       },
       {
         "level": 2,
@@ -244,7 +244,7 @@
       {
         "kind": "identify",
         "title": "Xác định hóa trị",
-        "body": "Nguyên tố Kali có hóa trị I, gốc Clorua có hóa trị I."
+        "body": "Nguyên tố Potassium có hóa trị I, gốc Chloride có hóa trị I."
       },
       {
         "kind": "knowledge",
@@ -254,7 +254,7 @@
       {
         "kind": "answer",
         "title": "Kết luận CTHH",
-        "body": "Công thức hóa học chuẩn của phân kali clorua là KCl."
+        "body": "Công thức hóa học chuẩn của phân kali chloride là KCl."
       }
     ],
     "finalSolution": "KCl"
@@ -329,15 +329,15 @@
       "pairs": [
         {
           "left": "Phân đạm",
-          "right": "Cung cấp nguyên tố Nitơ (N)"
+          "right": "Cung cấp nguyên tố Nitrogen (N)"
         },
         {
           "left": "Phân lân",
-          "right": "Cung cấp nguyên tố Photpho (P)"
+          "right": "Cung cấp nguyên tố Phosphorus (P)"
         },
         {
           "left": "Phân kali",
-          "right": "Cung cấp nguyên tố Kali (K)"
+          "right": "Cung cấp nguyên tố Potassium (K)"
         },
         {
           "left": "Phân NPK",
@@ -348,7 +348,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Đạm tương ứng với N, Lân tương ứng với P, Kali tương ứng với K."
+        "text": "Đạm tương ứng với N, Lân tương ứng với P, Potassium tương ứng với K."
       },
       {
         "level": 2,
@@ -364,7 +364,7 @@
       {
         "kind": "knowledge",
         "title": "Nguyên tố tương ứng",
-        "body": "Đạm -> N; Lân -> P; Kali -> K; NPK -> Cả N, P, K."
+        "body": "Đạm -> N; Lân -> P; Potassium -> K; NPK -> Cả N, P, K."
       },
       {
         "kind": "answer",

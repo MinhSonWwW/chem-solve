@@ -56,7 +56,7 @@
         "body": "Nhiệt luyện áp dụng cho kim loại trung bình và yếu."
       }
     ],
-    "finalSolution": "Phương pháp nhiệt luyện dùng chất khử (CO, C, H2) khử oxit của kim loại đứng sau Al (Zn, Fe, Cu, Pb...).",
+    "finalSolution": "Phương pháp nhiệt luyện dùng chất khử (CO, C, H2) khử oxide của kim loại đứng sau Al (Zn, Fe, Cu, Pb...).",
     "commonMistakes": [
       {
         "id": "confuse-al",
@@ -162,7 +162,7 @@
         },
         {
           "id": "m3",
-          "label": "Natri (Na)",
+          "label": "Sodium (Na)",
           "bucketId": "electrolysis"
         },
         {
@@ -172,7 +172,7 @@
         },
         {
           "id": "m5",
-          "label": "Magie (Mg)",
+          "label": "Magnesium (Mg)",
           "bucketId": "electrolysis"
         },
         {
@@ -248,11 +248,11 @@
     "hints": [
       {
         "level": 1,
-        "text": "CO nhận oxy từ oxit sắt nên CO là chất khử, không phải chất oxi hóa."
+        "text": "CO nhận oxygen từ oxide sắt nên CO là chất khử, không phải chất oxi hóa."
       },
       {
         "level": 2,
-        "text": "Luyện thép là thổi oxy vào gang nóng chảy để đốt cháy bớt carbon."
+        "text": "Luyện thép là thổi oxygen vào gang nóng chảy để đốt cháy bớt carbon."
       }
     ],
     "steps": [
@@ -276,7 +276,7 @@
     "commonMistakes": [
       {
         "id": "co-role",
-        "message": "CO lấy oxi của Fe2O3: Fe2O3 + 3CO -> 2Fe + 3CO2. CO là chất khử."
+        "message": "CO lấy oxygen của Fe2O3: Fe2O3 + 3CO -> 2Fe + 3CO2. CO là chất khử."
       }
     ]
   },
@@ -358,7 +358,7 @@
       "correctOrder": [
         "Đốt cháy than cốc: C + O2 -> CO2",
         "Khí CO2 bị than khử thành CO: C + CO2 -> 2CO",
-        "Khí CO khử oxit sắt qua từng nấc tạo Fe",
+        "Khí CO khử oxide sắt qua từng nấc tạo Fe",
         "Tạo xỉ từ đá vôi CaCO3 để tách tạp chất"
       ]
     },
@@ -381,7 +381,7 @@
       {
         "kind": "knowledge",
         "title": "Quá trình",
-        "body": "C cháy -> tạo CO -> khử oxit sắt -> tạo xỉ bảo vệ gang lỏng."
+        "body": "C cháy -> tạo CO -> khử oxide sắt -> tạo xỉ bảo vệ gang lỏng."
       },
       {
         "kind": "answer",
@@ -389,7 +389,7 @@
         "body": "Đốt than -> tạo CO -> khử quặng -> tạo xỉ."
       }
     ],
-    "finalSolution": "C + O2 -> CO2; C + CO2 -> 2CO; CO khử oxit sắt; CaCO3 tạo xỉ.",
+    "finalSolution": "C + O2 -> CO2; C + CO2 -> 2CO; CO khử oxide sắt; CaCO3 tạo xỉ.",
     "commonMistakes": []
   }
 ]

@@ -92,7 +92,7 @@
   },
   {
     "id": "tf-14",
-    "statement": "Khí cacbonic (CO2) duy trì tốt sự cháy của que đóm đỏ.",
+    "statement": "Khí carbon dioxide (CO2) duy trì tốt sự cháy của que đóm đỏ.",
     "isTrue": false,
     "explanation": "CO2 không duy trì sự cháy, người ta thường dùng bình chữa cháy CO2 để dập tắt đám cháy.",
     "topic": "Khí"
@@ -106,30 +106,30 @@
   },
   {
     "id": "tf-16",
-    "statement": "Kim loại natri (Na) có thể cắt bằng dao và phản ứng rất mãnh liệt với nước ở nhiệt độ phòng.",
+    "statement": "Kim loại sodium (Na) có thể cắt bằng dao và phản ứng rất mãnh liệt với nước ở nhiệt độ phòng.",
     "isTrue": true,
-    "explanation": "Natri là kim loại kiềm mềm, phản ứng sinh ra dung dịch kiềm NaOH và khí H2 nổ bốc cháy.",
+    "explanation": "Sodium là kim loại kiềm mềm, phản ứng sinh ra dung dịch kiềm NaOH và khí H2 nổ bốc cháy.",
     "topic": "Kim loại"
   },
   {
     "id": "tf-17",
-    "statement": "Muối ăn hàng ngày dùng trong nấu ăn có thành phần chính là natri clorua (NaCl).",
+    "statement": "Muối ăn hàng ngày dùng trong nấu ăn có thành phần chính là sodium chloride (NaCl).",
     "isTrue": true,
     "explanation": "Muối ăn có thành phần hóa học chính là hợp chất ion NaCl.",
     "topic": "Muối"
   },
   {
     "id": "tf-18",
-    "statement": "Không khí là một đơn chất tinh khiết gồm 100% khí oxi.",
+    "statement": "Không khí là một đơn chất tinh khiết gồm 100% khí oxygen.",
     "isTrue": false,
     "explanation": "Không khí là một hỗn hợp gồm khoảng 78% N2, 21% O2 và 1% các khí khác.",
     "topic": "Hỗn hợp"
   },
   {
     "id": "tf-19",
-    "statement": "Kim cương và than chì (than chì bút chì) đều được tạo nên từ nguyên tố cacbon (C).",
+    "statement": "Kim cương và than chì (than chì bút chì) đều được tạo nên từ nguyên tố carbon (C).",
     "isTrue": true,
-    "explanation": "Chúng là các dạng thù hình khác nhau của cùng một nguyên tố cacbon.",
+    "explanation": "Chúng là các dạng thù hình khác nhau của cùng một nguyên tố carbon.",
     "topic": "Phi kim"
   },
   {

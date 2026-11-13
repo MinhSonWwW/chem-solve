@@ -508,7 +508,7 @@
       "molar-concentration-calc"
     ],
     "difficulty": 2,
-    "prompt": "Cần bao nhiêu mol đồng(II) sunfat ([[CuSO4]]) để pha chế được 500 mL dung dịch [[CuSO4]] có nồng độ 0,4 M?",
+    "prompt": "Cần bao nhiêu mol copper(II) sulfate ([[CuSO4]]) để pha chế được 500 mL dung dịch [[CuSO4]] có nồng độ 0,4 M?",
     "given": [
       {
         "label": "Thể tích dung dịch (V)",

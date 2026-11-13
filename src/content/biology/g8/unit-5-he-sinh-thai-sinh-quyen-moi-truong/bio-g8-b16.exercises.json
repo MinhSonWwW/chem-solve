@@ -52,7 +52,7 @@
       {
         "kind": "knowledge",
         "title": "Giới hạn các quyển",
-        "body": "Giới hạn sinh quyển gồm: tầng đối lưu khí quyển (nơi có không khí giàu oxy), toàn bộ thủy quyển từ mặt nước đến đáy vực thẳm và lớp thổ nhưỡng trên mặt thạch quyển nơi rễ cây và vi sinh vật hoạt động."
+        "body": "Giới hạn sinh quyển gồm: tầng đối lưu khí quyển (nơi có không khí giàu oxygen), toàn bộ thủy quyển từ mặt nước đến đáy vực thẳm và lớp thổ nhưỡng trên mặt thạch quyển nơi rễ cây và vi sinh vật hoạt động."
       },
       {
         "kind": "answer",
@@ -223,7 +223,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Hệ rễ thở mọc nhô ngược lên mặt đất để hấp thu khí oxy trong bùn lầy"
+          "label": "Hệ rễ thở mọc nhô ngược lên mặt đất để hấp thu khí oxygen trong bùn lầy"
         },
         {
           "id": "opt-b",
@@ -397,7 +397,7 @@
       {
         "kind": "knowledge",
         "title": "Đặc trưng hai nhóm",
-        "body": "Nhóm nước đứng (ao, hồ, đầm lầy) có hàm lượng oxy phân tầng và nhiều thực vật nổi; nhóm nước chảy (suối, sông) có dòng chảy liên tục, hàm lượng oxy hòa tan cao hơn và sinh vật có khả năng bám chắc hoặc bơi khỏe."
+        "body": "Nhóm nước đứng (ao, hồ, đầm lầy) có hàm lượng oxygen phân tầng và nhiều thực vật nổi; nhóm nước chảy (suối, sông) có dòng chảy liên tục, hàm lượng oxygen hòa tan cao hơn và sinh vật có khả năng bám chắc hoặc bơi khỏe."
       },
       {
         "kind": "answer",

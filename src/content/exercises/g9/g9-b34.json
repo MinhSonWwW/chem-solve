@@ -12,7 +12,7 @@
       "options": [
         {
           "id": "a",
-          "label": "Kim loại canxi (Ca) và khí CO"
+          "label": "Kim loại calcium (Ca) và khí CO"
         },
         {
           "id": "b",
@@ -20,11 +20,11 @@
         },
         {
           "id": "c",
-          "label": "Canxi clorua (CaCl2) và nước"
+          "label": "Calcium chloride (CaCl2) và nước"
         },
         {
           "id": "d",
-          "label": "Vôi tôi Ca(OH)2 và khí oxy"
+          "label": "Vôi tôi Ca(OH)2 và khí oxygen"
         }
       ],
       "correctId": "b"

@@ -683,7 +683,7 @@
       "items": [
         {
           "id": "na",
-          "label": "Natri (Na)",
+          "label": "Sodium (Na)",
           "bucketId": "metal"
         },
         {
@@ -693,12 +693,12 @@
         },
         {
           "id": "c",
-          "label": "Cacbon (C)",
+          "label": "Carbon (C)",
           "bucketId": "non-metal"
         },
         {
           "id": "cl",
-          "label": "Clo (Cl)",
+          "label": "Chlorine (Cl)",
           "bucketId": "non-metal"
         },
         {

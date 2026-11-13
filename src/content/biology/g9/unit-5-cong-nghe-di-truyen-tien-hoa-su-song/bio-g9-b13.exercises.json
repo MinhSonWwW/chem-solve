@@ -511,7 +511,7 @@
         },
         {
           "id": "opt-d",
-          "label": "Có thể tự cố định nitơ trong không khí mà không cần bón phân đạm"
+          "label": "Có thể tự cố định nitrogen trong không khí mà không cần bón phân đạm"
         }
       ],
       "correctId": "opt-c"

@@ -16,7 +16,7 @@
         },
         {
           "id": "b",
-          "label": "Hợp chất vô cơ của lưu huỳnh và sắt"
+          "label": "Hợp chất vô cơ của sulfur và sắt"
         },
         {
           "id": "c",
@@ -24,7 +24,7 @@
         },
         {
           "id": "d",
-          "label": "Các este và chất béo"
+          "label": "Các ester và chất béo"
         }
       ],
       "correctId": "c"
@@ -215,12 +215,12 @@
       "statements": [
         {
           "id": "s1",
-          "text": "Cung cấp đủ không khí hoặc oxy giúp nhiên liệu cháy hoàn toàn, tỏa nhiều nhiệt hơn.",
+          "text": "Cung cấp đủ không khí hoặc oxygen giúp nhiên liệu cháy hoàn toàn, tỏa nhiều nhiệt hơn.",
           "correct": true
         },
         {
           "id": "s2",
-          "text": "Đốt nhiên liệu trong điều kiện thiếu oxy sẽ sinh ra khí độc carbon monoxide (CO) gây ngạt thở.",
+          "text": "Đốt nhiên liệu trong điều kiện thiếu oxygen sẽ sinh ra khí độc carbon monoxide (CO) gây ngạt thở.",
           "correct": true
         },
         {

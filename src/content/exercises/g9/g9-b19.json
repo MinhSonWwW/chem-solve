@@ -6,7 +6,7 @@
       "activity-series"
     ],
     "difficulty": 1,
-    "prompt": "Kim loại nào sau đây KHÔNG tác dụng được với dung dịch axit [[HCl]] loãng để giải phóng khí hiđro [[H2]]?",
+    "prompt": "Kim loại nào sau đây KHÔNG tác dụng được với dung dịch acid [[HCl]] loãng để giải phóng khí hydrogen [[H2]]?",
     "given": [
       {
         "label": "Thuốc thử",
@@ -44,7 +44,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Chỉ những kim loại đứng TRƯỚC Hydro (H) trong dãy hoạt động hóa học mới đẩy được H ra khỏi dung dịch acid loãng."
+        "text": "Chỉ những kim loại đứng TRƯỚC Hydrogen (H) trong dãy hoạt động hóa học mới đẩy được H ra khỏi dung dịch acid loãng."
       },
       {
         "level": 2,
@@ -83,7 +83,7 @@
       "metal-displacement"
     ],
     "difficulty": 2,
-    "prompt": "Nhúng một chiếc đinh sắt sạch ([[Fe]]) vào dung dịch muối đồng sunfat ([[CuSO4]]). Hiện tượng quan sát được sau một thời gian là:",
+    "prompt": "Nhúng một chiếc đinh sắt sạch ([[Fe]]) vào dung dịch muối copper sulfate ([[CuSO4]]). Hiện tượng quan sát được sau một thời gian là:",
     "knowledge": [
       "reactions.metal-displaces-metal"
     ],
@@ -139,7 +139,7 @@
     "finalSolution": "Có lớp kim loại màu đỏ bám ngoài đinh sắt, màu xanh lam của dung dịch nhạt dần",
     "visual": {
       "image": "/assets/images/chem-g9-fe-cuso4.jpg",
-      "caption": "Thí nghiệm: Đinh sắt (Fe) nhúng trong dung dịch Đồng(II) sunfat (CuSO4)"
+      "caption": "Thí nghiệm: Đinh sắt (Fe) nhúng trong dung dịch Copper(II) sulfate (CuSO4)"
     }
   },
   {
@@ -156,8 +156,8 @@
     "answer": {
       "kind": "ordering",
       "correctOrder": [
-        "Kali (K)",
-        "Magie (Mg)",
+        "Potassium (K)",
+        "Magnesium (Mg)",
         "Sắt (Fe)",
         "Đồng (Cu)",
         "Bạc (Ag)"
@@ -170,7 +170,7 @@
       },
       {
         "level": 2,
-        "text": "Kali thuộc nhóm kiềm mạnh nhất, Bạc là kim loại quý kém hoạt động đứng gần cuối."
+        "text": "Potassium thuộc nhóm kiềm mạnh nhất, Bạc là kim loại quý kém hoạt động đứng gần cuối."
       }
     ],
     "steps": [
@@ -187,7 +187,7 @@
       {
         "kind": "answer",
         "title": "Xếp thứ tự giảm dần",
-        "body": "Kali (K) -> Magie (Mg) -> Sắt (Fe) -> Đồng (Cu) -> Bạc (Ag)."
+        "body": "Potassium (K) -> Magnesium (Mg) -> Sắt (Fe) -> Đồng (Cu) -> Bạc (Ag)."
       }
     ],
     "finalSolution": "K -> Mg -> Fe -> Cu -> Ag"
@@ -258,7 +258,7 @@
       "activity-series"
     ],
     "difficulty": 1,
-    "prompt": "Phân loại các kim loại sau thành hai nhóm: Đứng trước Hydro (tác dụng với acid HCl loãng) hay Đứng sau Hydro (không tác dụng).",
+    "prompt": "Phân loại các kim loại sau thành hai nhóm: Đứng trước Hydrogen (tác dụng với acid HCl loãng) hay Đứng sau Hydrogen (không tác dụng).",
     "answer": {
       "kind": "sort",
       "buckets": [
@@ -274,12 +274,12 @@
       "items": [
         {
           "id": "k",
-          "label": "Kali (K)",
+          "label": "Potassium (K)",
           "bucketId": "before-h"
         },
         {
           "id": "mg",
-          "label": "Magie (Mg)",
+          "label": "Magnesium (Mg)",
           "bucketId": "before-h"
         },
         {
@@ -317,8 +317,8 @@
     "steps": [
       {
         "kind": "identify",
-        "title": "Mốc Hydro (H)",
-        "body": "Vị trí của nguyên tố Hydro trong dãy hoạt động là ranh giới tác dụng với acid loãng."
+        "title": "Mốc Hydrogen (H)",
+        "body": "Vị trí của nguyên tố Hydrogen trong dãy hoạt động là ranh giới tác dụng với acid loãng."
       },
       {
         "kind": "knowledge",
@@ -345,8 +345,8 @@
     "answer": {
       "kind": "ordering",
       "correctOrder": [
-        "Kali (K)",
-        "Natri (Na)",
+        "Potassium (K)",
+        "Sodium (Na)",
         "Magnesium (Mg)",
         "Nhôm (Al)",
         "Kẽm (Zn)",

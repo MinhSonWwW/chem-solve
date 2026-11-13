@@ -16,11 +16,11 @@
         },
         {
           "id": "b",
-          "label": "Axit axetic (CH3COOH)"
+          "label": "Acetic acid (CH3COOH)"
         },
         {
           "id": "c",
-          "label": "Axit vô cơ như HCl hoặc H2SO4"
+          "label": "Acid vô cơ như HCl hoặc H2SO4"
         },
         {
           "id": "d",
@@ -36,7 +36,7 @@
       },
       {
         "level": 2,
-        "text": "RCOOH ở đây là các acid béo như axit stearic, axit panmitic, axit oleic."
+        "text": "RCOOH ở đây là các acid béo như stearic acid, axit panmitic, oleic acid."
       }
     ],
     "steps": [
@@ -72,7 +72,7 @@
       "options": [
         {
           "id": "a",
-          "label": "Rượu etylic và natri axetat"
+          "label": "Ethylic alcohol và sodium acetate"
         },
         {
           "id": "b",
@@ -96,7 +96,7 @@
       },
       {
         "level": 2,
-        "text": "RCOONa là muối của axit béo, dùng làm xà phòng tắm gội hàng ngày."
+        "text": "RCOONa là muối của acid béo, dùng làm xà phòng tắm gội hàng ngày."
       }
     ],
     "steps": [
@@ -225,7 +225,7 @@
         },
         {
           "id": "s2",
-          "text": "Chất béo tan tốt trong các dung môi hữu cơ như benzen, xăng, ete.",
+          "text": "Chất béo tan tốt trong các dung môi hữu cơ như benzene, xăng, ete.",
           "correct": true
         },
         {
@@ -259,7 +259,7 @@
       {
         "kind": "knowledge",
         "title": "Kiến thức",
-        "body": "Nhẹ hơn nước, không tan trong nước (Đúng); Tan trong xăng/benzen (Đúng); Nước lạnh không sạch (S3 Sai); Xà phòng nhũ hóa (Đúng)."
+        "body": "Nhẹ hơn nước, không tan trong nước (Đúng); Tan trong xăng/benzene (Đúng); Nước lạnh không sạch (S3 Sai); Xà phòng nhũ hóa (Đúng)."
       },
       {
         "kind": "answer",
@@ -283,7 +283,7 @@
       "pairs": [
         {
           "left": "Tính chất vật lý của chất béo",
-          "right": "Nhẹ hơn nước, không tan trong nước, tan tốt trong benzen, xăng, ete"
+          "right": "Nhẹ hơn nước, không tan trong nước, tan tốt trong benzene, xăng, ete"
         },
         {
           "left": "Phản ứng xà phòng hóa",

@@ -51,7 +51,7 @@
     "options": [
       { "id": "opt-1", "text": "Khí Carbon dioxide (CO2)", "correct": false },
       { "id": "opt-2", "text": "Khí Sulfur dioxide (SO2)", "correct": false },
-      { "id": "opt-3", "text": "Canxi oxide - Vôi sống (CaO)", "correct": true },
+      { "id": "opt-3", "text": "Calcium oxide - Vôi sống (CaO)", "correct": true },
       { "id": "opt-4", "text": "Diphosphorus pentoxide (P2O5)", "correct": false }
     ],
     "explanation": "Chính xác! CaO (Calcium oxide) là hợp chất của kim loại Ca với oxygen nên là oxide base. Các chất CO2, SO2, P2O5 là oxide của phi kim nên thuộc loại oxide acid."

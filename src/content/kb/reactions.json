@@ -32,7 +32,7 @@
     "reactants": [{ "formula": "CaCO3", "coef": 1 }],
     "products": [{ "formula": "CaO", "coef": 1 }, { "formula": "CO2", "coef": 1 }],
     "condition": "t° cao (khoảng 900 °C)",
-    "phenomenon": "Đá vôi bị phân hủy sinh ra vôi sống và khí cacbonic thoát ra [[up]].",
+    "phenomenon": "Đá vôi bị phân hủy sinh ra vôi sống và khí carbon dioxide thoát ra [[up]].",
     "grade": 8
   },
   {
@@ -50,7 +50,7 @@
     "reactants": [{ "formula": "BaCl2", "coef": 1 }, { "formula": "Na2SO4", "coef": 1 }],
     "products": [{ "formula": "BaSO4", "coef": 1 }, { "formula": "NaCl", "coef": 2 }],
     "condition": "",
-    "phenomenon": "Xuất hiện kết tủa trắng không tan trong axit [[down]].",
+    "phenomenon": "Xuất hiện kết tủa trắng không tan trong acid [[down]].",
     "grade": 8
   },
   {
@@ -68,7 +68,7 @@
     "reactants": [{ "formula": "P", "coef": 4 }, { "formula": "O2", "coef": 5 }],
     "products": [{ "formula": "P2O5", "coef": 2 }],
     "condition": "t°",
-    "phenomenon": "Photpho cháy mạnh với ngọn lửa sáng chói, tạo khói dày đặc màu trắng (điphotpho pentaoxit).",
+    "phenomenon": "Phosphorus cháy mạnh với ngọn lửa sáng chói, tạo khói dày đặc màu trắng (diphosphorus pentoxide).",
     "grade": 8
   },
   {
@@ -77,7 +77,7 @@
     "reactants": [{ "formula": "Al", "coef": 4 }, { "formula": "O2", "coef": 3 }],
     "products": [{ "formula": "Al2O3", "coef": 2 }],
     "condition": "t°",
-    "phenomenon": "Nhôm cháy chói lóa tạo chất rắn màu trắng nhôm oxit.",
+    "phenomenon": "Nhôm cháy chói lóa tạo chất rắn màu trắng aluminium oxide.",
     "grade": 8
   },
   {
@@ -86,7 +86,7 @@
     "reactants": [{ "formula": "Fe", "coef": 3 }, { "formula": "O2", "coef": 2 }],
     "products": [{ "formula": "Fe3O4", "coef": 1 }],
     "condition": "t°",
-    "phenomenon": "Sắt cháy sáng chói, không có ngọn lửa, không có khói, tạo ra các hạt nhỏ nóng chảy màu nâu đen là oxit sắt từ.",
+    "phenomenon": "Sắt cháy sáng chói, không có ngọn lửa, không có khói, tạo ra các hạt nhỏ nóng chảy màu nâu đen là oxide sắt từ.",
     "grade": 8
   },
   {
@@ -95,7 +95,7 @@
     "reactants": [{ "formula": "CH4", "coef": 1 }, { "formula": "O2", "coef": 2 }],
     "products": [{ "formula": "CO2", "coef": 1 }, { "formula": "H2O", "coef": 2 }],
     "condition": "t°",
-    "phenomenon": "Metan cháy tạo ngọn lửa màu xanh, tỏa nhiều nhiệt.",
+    "phenomenon": "Methane cháy tạo ngọn lửa màu xanh, tỏa nhiều nhiệt.",
     "grade": 9
   },
   {
@@ -104,7 +104,7 @@
     "reactants": [{ "formula": "Al", "coef": 2 }, { "formula": "HCl", "coef": 6 }],
     "products": [{ "formula": "AlCl3", "coef": 2 }, { "formula": "H2", "coef": 3 }],
     "condition": "",
-    "phenomenon": "Nhôm tan dần trong dung dịch axit, sủi bọt khí không màu mãnh liệt [[up]].",
+    "phenomenon": "Nhôm tan dần trong dung dịch acid, sủi bọt khí không màu mãnh liệt [[up]].",
     "grade": 8
   },
   {
@@ -122,7 +122,7 @@
     "reactants": [{ "formula": "Na", "coef": 2 }, { "formula": "H2O", "coef": 2 }],
     "products": [{ "formula": "NaOH", "coef": 2 }, { "formula": "H2", "coef": 1 }],
     "condition": "",
-    "phenomenon": "Mẩu natri nóng chảy thành giọt tròn chạy trên mặt nước và tan dần, có khí bay lên [[up]].",
+    "phenomenon": "Mẩu sodium nóng chảy thành giọt tròn chạy trên mặt nước và tan dần, có khí bay lên [[up]].",
     "grade": 8
   },
   {
@@ -158,7 +158,7 @@
     "reactants": [{ "formula": "C2H5OH", "coef": 1 }, { "formula": "O2", "coef": 3 }],
     "products": [{ "formula": "CO2", "coef": 2 }, { "formula": "H2O", "coef": 3 }],
     "condition": "t°",
-    "phenomenon": "Rượu etylic cháy tạo ngọn lửa màu xanh mờ, tỏa nhiều nhiệt.",
+    "phenomenon": "Ethylic alcohol cháy tạo ngọn lửa màu xanh mờ, tỏa nhiều nhiệt.",
     "grade": 9
   }
 ]

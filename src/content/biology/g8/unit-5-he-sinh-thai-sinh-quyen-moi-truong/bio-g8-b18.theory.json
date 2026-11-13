@@ -14,7 +14,7 @@
       "content": "Ô nhiễm môi trường xảy ra khi thành phần môi trường bị biến đổi vượt tiêu chuẩn an toàn:",
       "bulletPoints": [
         "1. Ô nhiễm không khí: Do khí thải công nghiệp, phương tiện giao thông (CO2, SO2, NOx, CO) và bụi mịn (PM2.5), gây mưa acid, phá hủy tầng ozon và các bệnh hô hấp nghiêm trọng.",
-        "2. Ô nhiễm nước: Do nước thải sinh hoạt, công nghiệp và dư lượng hóa chất nông nghiệp xả thẳng ra nguồn nước; gây hiện tượng phú dưỡng (tảo nở hoa hút cạn oxy) làm chết hàng loạt thủy hải sản.",
+        "2. Ô nhiễm nước: Do nước thải sinh hoạt, công nghiệp và dư lượng hóa chất nông nghiệp xả thẳng ra nguồn nước; gây hiện tượng phú dưỡng (tảo nở hoa hút cạn oxygen) làm chết hàng loạt thủy hải sản.",
         "3. Ô nhiễm đất: Do lạm dụng thuốc bảo vệ thực vật, phân bón hóa học và rác thải độc hại (pin cũ chứa kim loại nặng chì, thủy ngân) ngấm vào đất và chuỗi thức ăn.",
         "4. Ô nhiễm rác thải nhựa: Nhựa mất hàng trăm năm mới phân hủy, vỡ thành các hạt vi nhựa (microplastics) gây độc cho sinh vật biển và con người qua đường tiêu hóa."
       ],
@@ -54,12 +54,12 @@
       },
       {
         "id": "opt-2",
-        "text": "Khí oxy (O2)",
+        "text": "Khí oxygen (O2)",
         "correct": false
       },
       {
         "id": "opt-3",
-        "text": "Khí nitơ (N2)",
+        "text": "Khí nitrogen (N2)",
         "correct": false
       },
       {

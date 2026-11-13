@@ -2,7 +2,7 @@ import { Exercise } from '@/content/schema';
 
 export function generateGasDensityAirExercise(
   gasFormula = 'SO2',
-  gasNameVi = 'khí lưu huỳnh đioxit',
+  gasNameVi = 'khí sulfur dioxide',
   molarMass = 64,
   idSuffix = '001'
 ): Exercise {

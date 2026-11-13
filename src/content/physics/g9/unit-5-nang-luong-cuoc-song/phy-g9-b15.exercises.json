@@ -85,7 +85,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Khí hiđro, uranium và pin hóa học"
+          "label": "Khí hydrogen, uranium và pin hóa học"
         },
         {
           "id": "opt-b",
@@ -243,7 +243,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Khi đốt cháy các hợp chất chứa carbon, sản phẩm chính là khí cacbonic."
+        "text": "Khi đốt cháy các hợp chất chứa carbon, sản phẩm chính là khí carbon dioxide."
       },
       {
         "level": 2,
@@ -316,7 +316,7 @@
       },
       {
         "level": 2,
-        "text": "Quang năng được tổng hợp thành năng lượng liên kết hóa học trong glucozơ và tinh bột (hóa năng)."
+        "text": "Quang năng được tổng hợp thành năng lượng liên kết hóa học trong glucose và tinh bột (hóa năng)."
       }
     ],
     "steps": [
@@ -365,7 +365,7 @@
         },
         {
           "id": "opt-b",
-          "label": "Mưa axit làm hủy hoại rừng cây, axit hóa ao hồ và phá hủy công trình"
+          "label": "Mưa acid làm hủy hoại rừng cây, acid hóa ao hồ và phá hủy công trình"
         },
         {
           "id": "opt-c",
@@ -381,31 +381,31 @@
     "hints": [
       {
         "level": 1,
-        "text": "SO2 và NOx tác dụng với nước mưa tạo thành dung dịch axit sunfuric và axit nitric loãng."
+        "text": "SO2 và NOx tác dụng với nước mưa tạo thành dung dịch sulfuric acid và nitric acid loãng."
       },
       {
         "level": 2,
-        "text": "Nước mưa có tính axit rơi xuống gọi là hiện tượng mưa axit."
+        "text": "Nước mưa có tính acid rơi xuống gọi là hiện tượng mưa acid."
       }
     ],
     "steps": [
       {
         "kind": "identify",
-        "title": "Hiện tượng mưa axit",
-        "body": "Tìm hậu quả môi trường của khí thải oxit lưu huỳnh và nitơ."
+        "title": "Hiện tượng mưa acid",
+        "body": "Tìm hậu quả môi trường của khí thải oxide sulfur và nitrogen."
       },
       {
         "kind": "knowledge",
         "title": "Tác động môi trường",
-        "body": "Theo SGK KHTN 9 Bài 16: Khí $SO_2$ và $NO_x$ từ khói đốt than kết hợp với hơi nước tạo thành mưa axit, làm suy thoái đất, chết rừng cây, tiêu diệt sinh vật thủy sinh và ăn mòn kim loại, tượng đài công trình."
+        "body": "Theo SGK KHTN 9 Bài 16: Khí $SO_2$ và $NO_x$ từ khói đốt than kết hợp với hơi nước tạo thành mưa acid, làm suy thoái đất, chết rừng cây, tiêu diệt sinh vật thủy sinh và ăn mòn kim loại, tượng đài công trình."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Đáp án đúng là **Mưa axit làm hủy hoại rừng cây, ao hồ và công trình**."
+        "body": "Đáp án đúng là **Mưa acid làm hủy hoại rừng cây, ao hồ và công trình**."
       }
     ],
-    "finalSolution": "Khí thải $SO_2$ và $NO_x$ gây ra hiện tượng **mưa axit** phá hủy hệ sinh thái và công trình.",
+    "finalSolution": "Khí thải $SO_2$ và $NO_x$ gây ra hiện tượng **mưa acid** phá hủy hệ sinh thái và công trình.",
     "commonMistakes": [
       {
         "id": "confuse-natural-disasters",

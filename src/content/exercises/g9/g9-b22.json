@@ -12,15 +12,15 @@
       "options": [
         {
           "id": "a",
-          "label": "Carbon (trừ CO, CO2, H2CO3, muối cacbonat kim loại...)"
+          "label": "Carbon (trừ CO, CO2, H2CO3, muối carbonate kim loại...)"
         },
         {
           "id": "b",
-          "label": "Bất kì hợp chất nào chứa nguyên tố oxy"
+          "label": "Bất kì hợp chất nào chứa nguyên tố oxygen"
         },
         {
           "id": "c",
-          "label": "Chỉ gồm hợp chất của hydro và nitơ"
+          "label": "Chỉ gồm hợp chất của hydrogen và nitrogen"
         },
         {
           "id": "d",
@@ -36,7 +36,7 @@
       },
       {
         "level": 2,
-        "text": "Một số oxit của carbon (CO, CO2) và muối cacbonat (CaCO3, Na2CO3) là hợp chất vô cơ."
+        "text": "Một số oxide của carbon (CO, CO2) và muối carbonate (CaCO3, Na2CO3) là hợp chất vô cơ."
       }
     ],
     "steps": [
@@ -48,7 +48,7 @@
       {
         "kind": "knowledge",
         "title": "Kiến thức",
-        "body": "Hợp chất hữu cơ là hợp chất của carbon (trừ CO, CO2, H2CO3, các muối cacbonat, xianua, cacbua...)."
+        "body": "Hợp chất hữu cơ là hợp chất của carbon (trừ CO, CO2, H2CO3, các muối carbonate, xianua, cacbua...)."
       },
       {
         "kind": "answer",
@@ -56,7 +56,7 @@
         "body": "Hợp chất của carbon trừ một số chất vô cơ đơn giản."
       }
     ],
-    "finalSolution": "Hợp chất hữu cơ là hợp chất của carbon (trừ CO, CO2, axit cacbonic và các muối cacbonat...).",
+    "finalSolution": "Hợp chất hữu cơ là hợp chất của carbon (trừ CO, CO2, carbonic acid và các muối carbonate...).",
     "commonMistakes": [
       {
         "id": "picked-co2",
@@ -97,17 +97,17 @@
         },
         {
           "id": "c3",
-          "label": "C2H5OH (Rượu etylic)",
+          "label": "C2H5OH (Ethylic alcohol)",
           "bucketId": "organic"
         },
         {
           "id": "c4",
-          "label": "CO2 (Khí cacbonic)",
+          "label": "CO2 (Khí carbon dioxide)",
           "bucketId": "inorganic"
         },
         {
           "id": "c5",
-          "label": "CH3COOH (Axit axetic)",
+          "label": "CH3COOH (Acetic acid)",
           "bucketId": "organic"
         },
         {
@@ -160,7 +160,7 @@
       "options": [
         {
           "id": "a",
-          "label": "Axit hữu cơ và Bazo hữu cơ"
+          "label": "Acid hữu cơ và Base hữu cơ"
         },
         {
           "id": "b",

@@ -89,15 +89,15 @@
         },
         {
           "id": "opt-b",
-          "label": "Chỉ duy nhất có khí oxy (O2) nguyên chất"
+          "label": "Chỉ duy nhất có khí oxygen (O2) nguyên chất"
         },
         {
           "id": "opt-c",
-          "label": "CH4 (metan), NH3 (amoniac), H2O (hơi nước), H2 (hydro) và hoàn toàn không có khí O2 tự do"
+          "label": "CH4 (methane), NH3 (ammonia), H2O (hơi nước), H2 (hydrogen) và hoàn toàn không có khí O2 tự do"
         },
         {
           "id": "opt-d",
-          "label": "N2 (nitơ), O2 (oxy), CO2 (cacbonic) và tầng ozone đậm đặc"
+          "label": "N2 (nitrogen), O2 (oxygen), CO2 (carbon dioxide) và tầng ozone đậm đặc"
         }
       ],
       "correctId": "opt-c"
@@ -109,7 +109,7 @@
       },
       {
         "level": 2,
-        "text": "Đặc điểm cốt lõi là hoàn toàn không có khí oxy tự do (O2)."
+        "text": "Đặc điểm cốt lõi là hoàn toàn không có khí oxygen tự do (O2)."
       }
     ],
     "steps": [
@@ -121,7 +121,7 @@
       {
         "kind": "knowledge",
         "title": "Các khí đặc trưng",
-        "body": "Khí quyển nguyên thủy chứa: CH4, NH3, hơi nước, H2, CO... Tính chất mang tính khử và hoàn toàn vắng bóng khí oxy tự do (O2) cũng như tầng ozone (O3)."
+        "body": "Khí quyển nguyên thủy chứa: CH4, NH3, hơi nước, H2, CO... Tính chất mang tính khử và hoàn toàn vắng bóng khí oxygen tự do (O2) cũng như tầng ozone (O3)."
       },
       {
         "kind": "answer",
@@ -129,11 +129,11 @@
         "body": "Gồm CH4, NH3, hơi nước, H2 và không có O2 tự do."
       }
     ],
-    "finalSolution": "Khí quyển Trái Đất nguyên thủy gồm CH4, NH3, H2O, H2 mang tính khử và hoàn toàn không có khí oxy tự do (O2).",
+    "finalSolution": "Khí quyển Trái Đất nguyên thủy gồm CH4, NH3, H2O, H2 mang tính khử và hoàn toàn không có khí oxygen tự do (O2).",
     "commonMistakes": [
       {
         "id": "cm-01",
-        "message": "Nghĩ rằng khí quyển nguyên thủy đã có sẵn khí oxy như ngày nay (cạm bẫy kinh điển)."
+        "message": "Nghĩ rằng khí quyển nguyên thủy đã có sẵn khí oxygen như ngày nay (cạm bẫy kinh điển)."
       }
     ]
   },
@@ -231,7 +231,7 @@
         },
         {
           "id": "opt-c",
-          "label": "Sự tích tụ khí oxy dày đặc trên tầng bình lưu"
+          "label": "Sự tích tụ khí oxygen dày đặc trên tầng bình lưu"
         },
         {
           "id": "opt-d",
@@ -283,7 +283,7 @@
       "bio9-nguon-goc-su-song"
     ],
     "difficulty": 2,
-    "prompt": "Nguồn gốc của lượng khí oxy (O2) dồi dào trong bầu khí quyển Trái Đất ngày nay bắt nguồn từ sự kiện sinh học nào trong lịch sử?",
+    "prompt": "Nguồn gốc của lượng khí oxygen (O2) dồi dào trong bầu khí quyển Trái Đất ngày nay bắt nguồn từ sự kiện sinh học nào trong lịch sử?",
     "knowledge": [
       "kb-bio-g9-khi-quyen-nguyen-thuy",
       "kb-bio-g9-lich-su-nam-dai-dia-chat"
@@ -293,11 +293,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Do các tảng băng từ sao chổi rơi xuống Trái Đất tan chảy giải phóng oxy"
+          "label": "Do các tảng băng từ sao chổi rơi xuống Trái Đất tan chảy giải phóng oxygen"
         },
         {
           "id": "opt-b",
-          "label": "Do các vụ phun trào núi lửa liên tục thổi khí oxy từ tâm Trái Đất lên"
+          "label": "Do các vụ phun trào núi lửa liên tục thổi khí oxygen từ tâm Trái Đất lên"
         },
         {
           "id": "opt-c",
@@ -337,7 +337,7 @@
         "body": "Do hoạt động quang hợp của vi khuẩn lam cổ đại ở Đại Thái cổ."
       }
     ],
-    "finalSolution": "Khí oxy trong khí quyển Trái Đất ngày nay bắt nguồn từ hoạt động quang hợp của các loài vi khuẩn lam cổ đại từ Đại Thái cổ.",
+    "finalSolution": "Khí oxygen trong khí quyển Trái Đất ngày nay bắt nguồn từ hoạt động quang hợp của các loài vi khuẩn lam cổ đại từ Đại Thái cổ.",
     "commonMistakes": [
       {
         "id": "cm-01",

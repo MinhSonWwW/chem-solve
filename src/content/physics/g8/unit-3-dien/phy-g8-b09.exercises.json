@@ -481,7 +481,7 @@
     "commonMistakes": [
       {
         "id": "ion-flow-in-metal-mistake",
-        "message": "Ion chỉ dịch chuyển trong chất điện phân (dung dịch axit, bazo, muối), trong kim loại chỉ có electron tự do dịch chuyển."
+        "message": "Ion chỉ dịch chuyển trong chất điện phân (dung dịch acid, base, muối), trong kim loại chỉ có electron tự do dịch chuyển."
       }
     ]
   },

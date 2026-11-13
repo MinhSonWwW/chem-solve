@@ -136,7 +136,7 @@
       "atom-structure"
     ],
     "difficulty": 1,
-    "prompt": "Một nguyên tử cacbon có 6 hạt proton trong hạt nhân. Hỏi nguyên tử đó có bao nhiêu hạt electron ở lớp vỏ?",
+    "prompt": "Một nguyên tử carbon có 6 hạt proton trong hạt nhân. Hỏi nguyên tử đó có bao nhiêu hạt electron ở lớp vỏ?",
     "given": [
       {
         "label": "Số proton (p)",
@@ -180,7 +180,7 @@
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Nguyên tử cacbon có 6 hạt electron."
+        "body": "Nguyên tử carbon có 6 hạt electron."
       }
     ],
     "finalSolution": "Do nguyên tử trung hòa về điện nên số e = số p = **6**.",

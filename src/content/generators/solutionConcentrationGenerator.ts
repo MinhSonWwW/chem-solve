@@ -2,7 +2,7 @@ import { Exercise } from '@/content/schema';
 
 export function generateMassPercentageExercise(
   soluteFormula = 'NaCl',
-  soluteNameVi = 'natri clorua',
+  soluteNameVi = 'sodium chloride',
   soluteMass = 20,
   waterMass = 80,
   idSuffix = '001'
@@ -75,7 +75,7 @@ export function generateMassPercentageExercise(
 
 export function generateMolarConcentrationExercise(
   soluteFormula = 'CuSO4',
-  soluteNameVi = 'đồng(II) sunfat',
+  soluteNameVi = 'copper(II) sulfate',
   molVal = 0.2,
   volumeMl = 400,
   idSuffix = '002'

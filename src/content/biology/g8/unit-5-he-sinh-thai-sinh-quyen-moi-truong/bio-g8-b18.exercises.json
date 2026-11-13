@@ -16,7 +16,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Khí oxy (O2)"
+          "label": "Khí oxygen (O2)"
         },
         {
           "id": "opt-b",
@@ -28,7 +28,7 @@
         },
         {
           "id": "opt-d",
-          "label": "Khí nitơ phân tử (N2)"
+          "label": "Khí nitrogen phân tử (N2)"
         }
       ],
       "correctId": "opt-c"
@@ -64,7 +64,7 @@
     "commonMistakes": [
       {
         "id": "cm-01",
-        "message": "Nhầm khí oxy hoặc nitơ (các thành phần chính của không khí sạch) là nguyên nhân gây hiệu ứng nhà kính."
+        "message": "Nhầm khí oxygen hoặc nitrogen (các thành phần chính của không khí sạch) là nguyên nhân gây hiệu ứng nhà kính."
       }
     ]
   },
@@ -85,11 +85,11 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Hàm lượng khí oxy hòa tan trong nước ao hồ đạt mức bão hòa cực đại"
+          "label": "Hàm lượng khí oxygen hòa tan trong nước ao hồ đạt mức bão hòa cực đại"
         },
         {
           "id": "opt-b",
-          "label": "Nguồn nước bị dư thừa quá mức các chất dinh dưỡng khoáng (đặc biệt là nitơ và phospho) từ phân bón và nước thải"
+          "label": "Nguồn nước bị dư thừa quá mức các chất dinh dưỡng khoáng (đặc biệt là nitrogen và phosphorus) từ phân bón và nước thải"
         },
         {
           "id": "opt-c",
@@ -116,20 +116,20 @@
       {
         "kind": "identify",
         "title": "Bản chất hiện tượng phú dưỡng",
-        "body": "Hiện tượng phú dưỡng (eutrophication) xảy ra khi thủy vực tiếp nhận quá nhiều hợp chất chứa nitơ (N) và phospho (P)."
+        "body": "Hiện tượng phú dưỡng (eutrophication) xảy ra khi thủy vực tiếp nhận quá nhiều hợp chất chứa nitrogen (N) và phosphorus (P)."
       },
       {
         "kind": "knowledge",
         "title": "Hậu quả tảo nở hoa",
-        "body": "Nguồn dinh dưỡng khoáng dư thừa kích thích tảo và vi khuẩn lam phát triển bùng phát tạo thành váng xanh phủ kín mặt nước; khi tảo chết bị vi khuẩn phân hủy sẽ hút cạn oxy hòa tan khiến cá và các loài thủy sinh chết ngạt hàng loạt."
+        "body": "Nguồn dinh dưỡng khoáng dư thừa kích thích tảo và vi khuẩn lam phát triển bùng phát tạo thành váng xanh phủ kín mặt nước; khi tảo chết bị vi khuẩn phân hủy sẽ hút cạn oxygen hòa tan khiến cá và các loài thủy sinh chết ngạt hàng loạt."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Nguồn nước dư thừa nitơ và phospho từ phân bón, nước thải là nguyên nhân gây ra hiện tượng phú dưỡng."
+        "body": "Nguồn nước dư thừa nitrogen và phosphorus từ phân bón, nước thải là nguyên nhân gây ra hiện tượng phú dưỡng."
       }
     ],
-    "finalSolution": "Phú dưỡng là do nước ao hồ bị ô nhiễm dư thừa chất dinh dưỡng nitơ và phospho, làm tảo nở hoa và cạn kiệt oxy.",
+    "finalSolution": "Phú dưỡng là do nước ao hồ bị ô nhiễm dư thừa chất dinh dưỡng nitrogen và phosphorus, làm tảo nở hoa và cạn kiệt oxygen.",
     "commonMistakes": [
       {
         "id": "cm-02",
@@ -328,7 +328,7 @@
       {
         "kind": "knowledge",
         "title": "Giải pháp chuyển đổi xanh",
-        "body": "Phát triển và ứng dụng năng lượng tái tạo (điện gió, quang điện mặt trời) không tiêu hao nhiên liệu cacbon và không phát thải khí nhà kính, là chìa khóa then chốt cho mục tiêu phát thải ròng bằng 0 (Net Zero)."
+        "body": "Phát triển và ứng dụng năng lượng tái tạo (điện gió, quang điện mặt trời) không tiêu hao nhiên liệu carbon và không phát thải khí nhà kính, là chìa khóa then chốt cho mục tiêu phát thải ròng bằng 0 (Net Zero)."
       },
       {
         "kind": "answer",
@@ -430,7 +430,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Tự động phân giải thành khí oxy làm sạch nước đại dương"
+          "label": "Tự động phân giải thành khí oxygen làm sạch nước đại dương"
         },
         {
           "id": "opt-b",

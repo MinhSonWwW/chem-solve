@@ -36,7 +36,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Phổi bài tiết CO2, da tiết mồ hôi, còn các chất thải nitơ (ure, acid uric) được lọc qua nước tiểu."
+        "text": "Phổi bài tiết CO2, da tiết mồ hôi, còn các chất thải nitrogen (ure, acid uric) được lọc qua nước tiểu."
       },
       {
         "level": 2,
@@ -52,7 +52,7 @@
       {
         "kind": "knowledge",
         "title": "Vai trò áp đảo của thận",
-        "body": "Thận bài tiết khoảng 90% các chất cặn bã chuyển hóa hòa tan trong máu như ure, axit uric, creatinin, thuốc thừa và muối khoáng dư thừa thông qua nước tiểu."
+        "body": "Thận bài tiết khoảng 90% các chất cặn bã chuyển hóa hòa tan trong máu như ure, acid uric, creatinin, thuốc thừa và muối khoáng dư thừa thông qua nước tiểu."
       },
       {
         "kind": "answer",
@@ -454,7 +454,7 @@
       },
       {
         "level": 2,
-        "text": "Muối canxi oxalat, canxi photphat kết tinh quanh nhân lắng cặn tạo thành những viên sỏi rắn."
+        "text": "Muối calcium oxalate, calcium phosphate kết tinh quanh nhân lắng cặn tạo thành những viên sỏi rắn."
       }
     ],
     "steps": [
@@ -466,7 +466,7 @@
       {
         "kind": "knowledge",
         "title": "Các yếu tố thúc đẩy tạo sỏi",
-        "body": "Uống ít nước làm thể tích nước tiểu giảm, nồng độ muối khoáng quá bão hòa; ăn nhiều muối làm tăng canxi niệu; nhịn tiểu làm nước tiểu lưu cữu lắng cặn muối canxi oxalat kết tụ thành sỏi."
+        "body": "Uống ít nước làm thể tích nước tiểu giảm, nồng độ muối khoáng quá bão hòa; ăn nhiều muối làm tăng calcium niệu; nhịn tiểu làm nước tiểu lưu cữu lắng cặn muối calcium oxalat kết tụ thành sỏi."
       },
       {
         "kind": "answer",

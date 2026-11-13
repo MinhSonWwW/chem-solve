@@ -291,7 +291,7 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
             id: 'g8-b12',
             lessonNumber: 12,
             title: 'Phân bón hóa học',
-            subtitle: 'Phân đạm (N), lân (P), kali (K) và NPK',
+            subtitle: 'Phân đạm (N), lân (P), potassium (K) và NPK',
             ready: true,
             nodes: [
               { id: 'g8-b12-theory', nodeIndex: 1, title: 'Lý thuyết: Phân đạm, lân, kali & NPK', description: '2 phút ghi nhớ', type: 'theory' },
@@ -414,28 +414,28 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
         id: 'g9-c08',
         chapterNumber: 8,
         title: 'Ethylic alcohol & Acetic acid',
-        description: 'Rượu etylic và Axit axetic',
+        description: 'Ethylic alcohol và Acetic acid',
         lessons: [
           {
             id: 'g9-b26',
             lessonNumber: 26,
             title: 'Ethylic alcohol',
-            subtitle: 'C2H5OH, độ rượu và phản ứng este hóa',
+            subtitle: 'C2H5OH, độ rượu và phản ứng ester hóa',
             ready: true,
             nodes: [
               { id: 'g9-b26-theory', nodeIndex: 1, title: 'Lý thuyết Ethylic alcohol', description: 'Cấu tạo nhóm -OH & độ rượu', type: 'theory' },
-              { id: 'g9-b26-n01', nodeIndex: 2, title: 'Tính chất Rượu etylic', description: '5 câu hỏi', type: 'lesson' },
+              { id: 'g9-b26-n01', nodeIndex: 2, title: 'Tính chất Ethylic alcohol', description: '5 câu hỏi', type: 'lesson' },
             ],
           },
           {
             id: 'g9-b27',
             lessonNumber: 27,
             title: 'Acetic acid',
-            subtitle: 'CH3COOH, tính axit và phản ứng với kim loại',
+            subtitle: 'CH3COOH, tính acid và phản ứng với kim loại',
             ready: true,
             nodes: [
               { id: 'g9-b27-theory', nodeIndex: 1, title: 'Lý thuyết Acetic acid', description: 'Nhóm -COOH & phản ứng ester hóa', type: 'theory' },
-              { id: 'g9-b27-n01', nodeIndex: 2, title: 'Tính chất Axit axetic', description: '5 câu hỏi', type: 'lesson' },
+              { id: 'g9-b27-n01', nodeIndex: 2, title: 'Tính chất Acetic acid', description: '5 câu hỏi', type: 'lesson' },
             ],
           },
         ],

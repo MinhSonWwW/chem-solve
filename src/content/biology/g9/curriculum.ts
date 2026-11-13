@@ -552,7 +552,7 @@ export const GRADE_9_BIOLOGY_CURRICULUM: GradeCurriculum = {
         traps: [
           'Phân biệt cơ quan tương đồng (cùng nguồn gốc, khác chức năng: cánh dơi và tay người) với cơ quan tương tự (khác nguồn gốc, cùng chức năng: cánh dơi và cánh bướm).',
           'Chọn lọc tự nhiên không tạo ra các biến dị mới thích nghi; đột biến và giao phối mới là nhân tố phát sinh biến dị, CLTN chỉ làm nhiệm vụ sàng lọc và định hướng.',
-          'Trong khí quyển nguyên thủy của Trái Đất thuở sơ khai không có khí oxy (O2); khí oxy chỉ xuất hiện sau khi vi khuẩn lam quang hợp giải phóng ra.',
+          'Trong khí quyển nguyên thủy của Trái Đất thuở sơ khai không có khí oxygen (O2); khí oxygen chỉ xuất hiện sau khi vi khuẩn lam quang hợp giải phóng ra.',
           'Loài người xuất hiện ở Đại Tân sinh (Kỉ Đệ Tứ - kỉ gần đây nhất), không xuất hiện ở các đại trước.',
         ],
       },

@@ -102,7 +102,7 @@
         },
         {
           "id": "c4",
-          "label": "Hòa tan CO2 vào nước biển tạo muối cacbonat",
+          "label": "Hòa tan CO2 vào nước biển tạo muối carbonate",
           "bucketId": "decrease"
         },
         {
@@ -235,7 +235,7 @@
         },
         {
           "id": "s4",
-          "text": "Axit hóa đại dương do nồng độ CO2 hòa tan tăng cao đe dọa trực tiếp các rạn san hô và sinh vật biển.",
+          "text": "Acid hóa đại dương do nồng độ CO2 hòa tan tăng cao đe dọa trực tiếp các rạn san hô và sinh vật biển.",
           "correct": true
         }
       ]
@@ -247,7 +247,7 @@
       },
       {
         "level": 2,
-        "text": "Nước biển dâng, bão lũ, axit hóa đại dương là các hậu quả nhãn tiền."
+        "text": "Nước biển dâng, bão lũ, acid hóa đại dương là các hậu quả nhãn tiền."
       }
     ],
     "steps": [
@@ -259,7 +259,7 @@
       {
         "kind": "knowledge",
         "title": "Hệ quả",
-        "body": "S1: Đúng (băng tan). S2: Đúng (thời tiết cực đoan). S3: Sai (ảnh hưởng nặng tới nông nghiệp). S4: Đúng (axit hóa đại dương)."
+        "body": "S1: Đúng (băng tan). S2: Đúng (thời tiết cực đoan). S3: Sai (ảnh hưởng nặng tới nông nghiệp). S4: Đúng (acid hóa đại dương)."
       },
       {
         "kind": "answer",

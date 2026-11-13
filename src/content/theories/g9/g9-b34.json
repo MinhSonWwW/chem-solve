@@ -38,7 +38,7 @@
       "title": "Những sai lầm hay mắc phải trong đề thi",
       "content": "Các điểm dễ nhầm lẫn trong phần khai thác khoáng sản:",
       "bulletPoints": [
-        "Bẫy 1: Nhầm tên chất: [[CaCO3]] là đá vôi (canxi cacbonat), [[CaO]] là vôi sống (canxi oxit), [[Ca(OH)2]] là vôi tôi (canxi hidroxit).",
+        "Bẫy 1: Nhầm tên chất: [[CaCO3]] là đá vôi (calcium carbonate), [[CaO]] là vôi sống (calcium oxide), [[Ca(OH)2]] là vôi tôi (calcium hydroxide).",
         "Bẫy 2: Thạch cao ([[CaSO4.2H2O]]) được thêm vào xi măng để ĐIỀU CHỈNH TỐC ĐỘ ĐÔNG KẾT của xi măng (không phải làm tăng nhiệt độ nung).",
         "Bẫy 3: Khí [[CO2]] sinh ra từ các lò nung vôi và xi măng là một nguồn phát thải khí nhà kính lớn cần được xử lý."
       ],
@@ -51,7 +51,7 @@
       { "id": "opt-1", "text": "CaO (Vôi sống)", "correct": true },
       { "id": "opt-2", "text": "Ca(OH)2 (Vôi tôi)", "correct": false },
       { "id": "opt-3", "text": "CaSO4 (Thạch cao)", "correct": false },
-      { "id": "opt-4", "text": "Ca (Kim loại canxi)", "correct": false }
+      { "id": "opt-4", "text": "Ca (Kim loại calcium)", "correct": false }
     ],
     "explanation": "Chính xác! Nung đá vôi: CaCO3 -(900-1000°C)-> CaO + CO2↑. Chất rắn thu được là vôi sống (CaO)."
   }

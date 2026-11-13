@@ -52,7 +52,7 @@
       { "id": "opt-1", "text": "Kim loại sắt (Fe)", "correct": false },
       { "id": "opt-2", "text": "Kim loại nhôm (Al)", "correct": true },
       { "id": "opt-3", "text": "Kim loại đồng (Cu)", "correct": false },
-      { "id": "opt-4", "text": "Kim loại canxi (Ca)", "correct": false }
+      { "id": "opt-4", "text": "Kim loại calcium (Ca)", "correct": false }
     ],
     "explanation": "Chính xác! Nhôm (Al) chiếm khoảng 8,1% khối lượng vỏ Trái Đất, là kim loại phổ biến nhất (nhiều hơn sắt Fe chiếm 5,0%)."
   }

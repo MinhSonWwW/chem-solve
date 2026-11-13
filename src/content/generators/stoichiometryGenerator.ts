@@ -57,13 +57,13 @@ export function generateMetalAcidStoichiometry(
       },
       {
         kind: 'compute',
-        title: 'Bước 3: Tính thể tích khí hiđro ở điều kiện chuẩn',
+        title: 'Bước 3: Tính thể tích khí hydrogen ở điều kiện chuẩn',
         body: `V_{H2} = n_{H2} × 24,79 = ${molH2} × 24,79 = ${volH2} (lít).`,
       },
       {
         kind: 'answer',
         title: 'Kết luận',
-        body: `Thể tích khí hiđro thu được ở ĐKC là ${volH2} L.`,
+        body: `Thể tích khí hydrogen thu được ở ĐKC là ${volH2} L.`,
       },
     ],
     finalSolution: `n_${metal} = ${molMetal} mol => n_H2 = ${molH2} mol => V_H2 = ${molH2} × 24,79 = ${volH2} L.`,

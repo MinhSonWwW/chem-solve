@@ -298,7 +298,7 @@
         },
         {
           "id": "s3",
-          "text": "Cơ thể người chứa nhiều chất như nước, protein, chất béo, canxi...",
+          "text": "Cơ thể người chứa nhiều chất như nước, protein, chất béo, calcium...",
           "correct": true
         },
         {
@@ -458,7 +458,7 @@
       },
       {
         "level": 2,
-        "text": "Khi đốt giấy, giấy biến đổi thành tro, khí cacbonic và hơi nước (có chất mới)."
+        "text": "Khi đốt giấy, giấy biến đổi thành tro, khí carbon dioxide và hơi nước (có chất mới)."
       }
     ],
     "steps": [
@@ -575,7 +575,7 @@
         },
         {
           "id": "c",
-          "label": "Muối ăn (natri clorua)"
+          "label": "Muối ăn (sodium chloride)"
         },
         {
           "id": "d",
@@ -591,7 +591,7 @@
       },
       {
         "level": 2,
-        "text": "Đường dễ bị phân hủy bởi nhiệt độ tạo thành than đen (cacbon) và hơi nước có mùi khét."
+        "text": "Đường dễ bị phân hủy bởi nhiệt độ tạo thành than đen (carbon) và hơi nước có mùi khét."
       }
     ],
     "steps": [

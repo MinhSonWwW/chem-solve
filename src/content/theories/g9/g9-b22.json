@@ -42,7 +42,7 @@
       "bulletPoints": [
         "Công thức phân tử: Cho biết số lượng nguyên tử mỗi nguyên tố (như [[C2H6O]]).",
         "Công thức cấu tạo: Biểu diễn trật tự liên kết giữa các nguyên tử trong phân tử.",
-        "Ví dụ: Cùng là [[C2H6O]], nếu cấu tạo là [[CH3-CH2-OH]] thì là Rượu etylic (chất lỏng), còn nếu là [[CH3-O-CH3]] thì là Dimethyl ether (chất khí)."
+        "Ví dụ: Cùng là [[C2H6O]], nếu cấu tạo là [[CH3-CH2-OH]] thì là Ethylic alcohol (chất lỏng), còn nếu là [[CH3-O-CH3]] thì là Dimethyl ether (chất khí)."
       ],
       "callout": "⚠️ Cùng công thức phân tử nhưng trật tự liên kết khác nhau sẽ tạo ra các chất hoàn toàn khác biệt!"
     }
@@ -51,7 +51,7 @@
     "prompt": "Chất nào sau đây KHÔNG PHẢI là hợp chất hữu cơ?",
     "options": [
       { "id": "opt-1", "text": "Methane (CH4)", "correct": false },
-      { "id": "opt-2", "text": "Rượu etylic (C2H5OH)", "correct": false },
+      { "id": "opt-2", "text": "Ethylic alcohol (C2H5OH)", "correct": false },
       { "id": "opt-3", "text": "Khí Carbon dioxide (CO2)", "correct": true },
       { "id": "opt-4", "text": "Đường Glucose (C6H12O6)", "correct": false }
     ],

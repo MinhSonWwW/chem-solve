@@ -38,7 +38,7 @@
       "title": "Tên gọi quốc tế theo chuẩn SGK mới",
       "content": "Làm quen với danh pháp tiếng Anh quốc tế của các nguyên tố quen thuộc:",
       "bulletPoints": [
-        "Kim loại kiềm: Sodium ([[Na]] - tên cũ Natri), Potassium ([[K]] - tên cũ Kali).",
+        "Kim loại kiềm: Sodium ([[Na]] - tên cũ Natri), Potassium ([[K]] - tên cũ Potassium).",
         "Kim loại thông dụng: Iron ([[Fe]] - Sắt), Copper ([[Cu]] - Đồng), Aluminium ([[Al]] - Nhôm), Zinc ([[Zn]] - Kẽm), Silver ([[Ag]] - Bạc), Gold ([[Au]] - Vàng).",
         "Phi kim phổ biến: Oxygen ([[O]] - Oxi), Hydrogen ([[H]] - Hiđro), Chlorine ([[Cl]] - Clo), Nitrogen ([[N]] - Nitơ), Carbon ([[C]] - Cacbon)."
       ],
@@ -46,7 +46,7 @@
     }
   ],
   "quickCheck": {
-    "prompt": "Kí hiệu hóa học nào sau đây là của nguyên tố Sodium (tên thường gọi là Natri)?",
+    "prompt": "Kí hiệu hóa học nào sau đây là của nguyên tố Sodium (tên thường gọi là Sodium)?",
     "options": [
       { "id": "opt-1", "text": "Na", "correct": true },
       { "id": "opt-2", "text": "So", "correct": false },

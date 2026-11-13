@@ -166,7 +166,7 @@
         },
         {
           "id": "opt-d",
-          "label": "Hai bản kim loại nhúng trong dung dịch axit"
+          "label": "Hai bản kim loại nhúng trong dung dịch acid"
         }
       ],
       "correctId": "opt-c"
@@ -202,7 +202,7 @@
     "commonMistakes": [
       {
         "id": "confuse-chemical-battery",
-        "message": "Bản kim loại nhúng axit là cấu tạo của pin hóa học, không phải máy phát điện cảm ứng xoay chiều."
+        "message": "Bản kim loại nhúng acid là cấu tạo của pin hóa học, không phải máy phát điện cảm ứng xoay chiều."
       }
     ]
   },

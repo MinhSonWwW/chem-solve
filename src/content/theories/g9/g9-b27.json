@@ -38,24 +38,24 @@
       "id": "c3",
       "badge": "So sánh rượu & acid",
       "badgeColor": "amber",
-      "title": "Phân biệt Rượu etylic và Acetic acid",
+      "title": "Phân biệt Ethylic alcohol và Acetic acid",
       "content": "Cách nhanh nhất để nhận biết trong bài tập phân biệt hóa chất:",
       "bulletPoints": [
-        "Dùng quỳ tím: Acetic acid làm quỳ tím hóa ĐỎ; Rượu etylic KHÔNG làm đổi màu quỳ tím.",
-        "Dùng muối carbonate ([[Na2CO3]] hoặc đá vôi): Acetic acid sủi bọt khí [[CO2]]; Rượu etylic không phản ứng.",
+        "Dùng quỳ tím: Acetic acid làm quỳ tím hóa ĐỎ; Ethylic alcohol KHÔNG làm đổi màu quỳ tím.",
+        "Dùng muối carbonate ([[Na2CO3]] hoặc đá vôi): Acetic acid sủi bọt khí [[CO2]]; Ethylic alcohol không phản ứng.",
         "Tác dụng với kim loại Na: CẢ HAI CHẤT đều sủi bọt khí [[H2]] (vì cùng chứa nguyên tử H linh động) -> Không dùng Na để phân biệt!"
       ],
       "callout": "⚠️ Cạm bẫy thi: Đừng chọn kim loại Na để phân biệt C2H5OH và CH3COOH vì cả hai đều phản ứng sinh khí H2!"
     }
   ],
   "quickCheck": {
-    "prompt": "Thuốc thử đơn giản nhất dùng để PHÂN BIỆT Rượu etylic (C2H5OH) và Acetic acid (CH3COOH) là gì?",
+    "prompt": "Thuốc thử đơn giản nhất dùng để PHÂN BIỆT Ethylic alcohol (C2H5OH) và Acetic acid (CH3COOH) là gì?",
     "options": [
       { "id": "opt-1", "text": "Kim loại Sodium (Na)", "correct": false },
       { "id": "opt-2", "text": "Quỳ tím", "correct": true },
       { "id": "opt-3", "text": "Nước lọc", "correct": false },
       { "id": "opt-4", "text": "Dung dịch Bromine", "correct": false }
     ],
-    "explanation": "Chính xác! Acetic acid là acid nên làm quỳ tím hóa đỏ, còn Rượu etylic là hợp chất trung tính không làm đổi màu quỳ tím."
+    "explanation": "Chính xác! Acetic acid là acid nên làm quỳ tím hóa đỏ, còn Ethylic alcohol là hợp chất trung tính không làm đổi màu quỳ tím."
   }
 }

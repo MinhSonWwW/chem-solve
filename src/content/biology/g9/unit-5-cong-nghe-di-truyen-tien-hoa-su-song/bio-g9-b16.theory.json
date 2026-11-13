@@ -26,10 +26,10 @@
       "title": "Đặc điểm bầu khí quyển Trái Đất nguyên thủy",
       "content": "Môi trường hóa học đặc biệt thuở sơ khai khoảng 4,5 tỉ năm trước:",
       "bulletPoints": [
-        "Thành phần khí: Chủ yếu gồm metan (CH4), amoniac (NH3), hơi nước (H2O), hydro (H2) và carbon monoxit (CO) mang tính khử mạnh.",
-        "Cạm bẫy đặc biệt: Bầu khí quyển nguyên thủy hoàn toàn KHÔNG có khí oxy tự do (O2) và KHÔNG có tầng ozone (O3) bảo vệ.",
+        "Thành phần khí: Chủ yếu gồm methane (CH4), ammonia (NH3), hơi nước (H2O), hydrogen (H2) và carbon monoxide (CO) mang tính khử mạnh.",
+        "Cạm bẫy đặc biệt: Bầu khí quyển nguyên thủy hoàn toàn KHÔNG có khí oxygen tự do (O2) và KHÔNG có tầng ozone (O3) bảo vệ.",
         "Nguồn năng lượng tự nhiên: Năng lượng sấm sét dữ dội, nhiệt lượng núi lửa và tia bức xạ tử ngoại (tia UV) cực mạnh chiếu thẳng từ Mặt Trời xuống đại dương nguyên thủy.",
-        "Sự xuất hiện của Oxy: Khí O2 chỉ bắt đầu xuất hiện và tích tụ trong khí quyển sau khi các vi khuẩn lam cổ đại tiến hóa khả năng quang hợp giải phóng O2."
+        "Sự xuất hiện của Oxygen: Khí O2 chỉ bắt đầu xuất hiện và tích tụ trong khí quyển sau khi các vi khuẩn lam cổ đại tiến hóa khả năng quang hợp giải phóng O2."
       ]
     },
     {
@@ -53,12 +53,12 @@
     "options": [
       {
         "id": "opt-1",
-        "text": "Hoàn toàn chưa có khí oxy tự do (O2) và chưa có tầng ozone (O3)",
+        "text": "Hoàn toàn chưa có khí oxygen tự do (O2) và chưa có tầng ozone (O3)",
         "correct": true
       },
       {
         "id": "opt-2",
-        "text": "Chứa nồng độ khí oxy (O2) đậm đặc lên đến 80%",
+        "text": "Chứa nồng độ khí oxygen (O2) đậm đặc lên đến 80%",
         "correct": false
       },
       {

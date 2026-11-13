@@ -227,7 +227,7 @@ export const SKILLS: Skill[] = [
     grade: 8,
     lessonId: 'g8-b09',
     category: 'nhan-biet',
-    description: 'Nhận biết môi trường axit (pH < 7), trung tính (pH = 7), bazơ (pH > 7).',
+    description: 'Nhận biết môi trường acid (pH < 7), trung tính (pH = 7), base (pH > 7).',
   },
   {
     id: 'oxide-classification',
@@ -235,7 +235,7 @@ export const SKILLS: Skill[] = [
     grade: 8,
     lessonId: 'g8-b10',
     category: 'ly-thuyet',
-    description: 'Phân loại oxide axit, oxide bazơ, oxide lưỡng tính và oxide trung tính.',
+    description: 'Phân loại oxide acid, oxide base, oxide lưỡng tính và oxide trung tính.',
   },
   {
     id: 'salt-reactions',
@@ -269,7 +269,7 @@ export const SKILLS: Skill[] = [
     grade: 9,
     lessonId: 'g9-b18',
     category: 'ly-thuyet',
-    description: 'Ánh kim, dẫn điện, dẫn nhiệt, tính dẻo và phản ứng với phi kim, axit, muối.',
+    description: 'Ánh kim, dẫn điện, dẫn nhiệt, tính dẻo và phản ứng với phi kim, acid, muối.',
   },
   {
     id: 'activity-series',
@@ -317,7 +317,7 @@ export const SKILLS: Skill[] = [
     grade: 9,
     lessonId: 'g9-b24',
     category: 'nhan-biet',
-    description: 'Liên kết đôi C=C, phản ứng cộng làm mất màu dung dịch brom (Br2).',
+    description: 'Liên kết đôi C=C, phản ứng cộng làm mất màu dung dịch bromine (Br2).',
   },
   {
     id: 'fuel-sources',
@@ -341,7 +341,7 @@ export const SKILLS: Skill[] = [
     grade: 9,
     lessonId: 'g9-b27',
     category: 'phuong-trinh',
-    description: 'Tính axit của nhóm -COOH và phản ứng este hóa với rượu etylic.',
+    description: 'Tính acid của nhóm -COOH và phản ứng ester hóa với ethylic alcohol.',
   },
   {
     id: 'lipid-fats',
@@ -349,7 +349,7 @@ export const SKILLS: Skill[] = [
     grade: 9,
     lessonId: 'g9-b28',
     category: 'ly-thuyet',
-    description: 'Thành phần este của glycerol với axit béo, phản ứng xà phòng hóa.',
+    description: 'Thành phần ester của glycerol với acid béo, phản ứng xà phòng hóa.',
   },
   {
     id: 'carbohydrate-identification',
@@ -373,7 +373,7 @@ export const SKILLS: Skill[] = [
     grade: 9,
     lessonId: 'g9-b31',
     category: 'ly-thuyet',
-    description: 'Thành phần amino acid, sự đông tụ bởi nhiệt độ và axit/kiềm.',
+    description: 'Thành phần amino acid, sự đông tụ bởi nhiệt độ và acid/kiềm.',
   },
   {
     id: 'polymer-applications',

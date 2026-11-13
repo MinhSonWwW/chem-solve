@@ -42,7 +42,7 @@
       "bulletPoints": [
         "Tàu thuyền nổi trên mặt nước: Dù làm bằng sắt thép rất nặng ($D = 7\\,800\\text{ kg/m}^3$), thân tàu được thiết kế rỗng chứa nhiều không khí nên thể tích chiếm chỗ $V$ cực lớn, khiến trọng lượng riêng trung bình của cả con tàu nhỏ hơn nước, giúp tàu nổi và chở được hàng hóa.",
         "Tàu ngầm lặn và nổi: Thân tàu ngầm có các khoang dằn. Khi muốn lặn, tàu mở van cho nước biển tràn vào khoang làm trọng lượng $P$ tăng lên ($P > F_A$); khi muốn nổi, dùng khí nén đẩy nước ra khỏi khoang làm $P < F_A$ giúp tàu nổi lên.",
-        "Khí cầu và khinh khí cầu: Bơm khí nhẹ (heli hoặc hydro, không khí nóng) vào bóng khí để trọng lượng riêng nhỏ hơn không khí xung quanh, lực đẩy Archimedes của không khí nâng khí cầu bay lên."
+        "Khí cầu và khinh khí cầu: Bơm khí nhẹ (heli hoặc hydrogen, không khí nóng) vào bóng khí để trọng lượng riêng nhỏ hơn không khí xung quanh, lực đẩy Archimedes của không khí nâng khí cầu bay lên."
       ],
       "callout": "Vạch dấu mớn nước: Trên vỏ tàu chở hàng có các vạch mớn nước Plimsoll quy định tải trọng tối đa an toàn để đảm bảo tàu không bị chìm quá sâu."
     }

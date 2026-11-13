@@ -119,7 +119,7 @@
       "stoichiometry-calc"
     ],
     "difficulty": 2,
-    "prompt": "Đốt cháy hoàn toàn 2,4 g kim loại Magie ([[Mg]]) trong khí oxi ([[O2]]) thu được Magie oxit ([[MgO]]) theo PTHH: 2[[Mg]] + [[O2]] -> 2[[MgO]]. Tính khối lượng [[MgO]] thu được. (Cho M(Mg) = 24 g/mol, M(O) = 16 g/mol).",
+    "prompt": "Đốt cháy hoàn toàn 2,4 g kim loại Magnesium ([[Mg]]) trong khí oxygen ([[O2]]) thu được Magnesium oxide ([[MgO]]) theo PTHH: 2[[Mg]] + [[O2]] -> 2[[MgO]]. Tính khối lượng [[MgO]] thu được. (Cho M(Mg) = 24 g/mol, M(O) = 16 g/mol).",
     "given": [
       {
         "label": "Khối lượng Mg (m_Mg)",
@@ -194,7 +194,7 @@
       "stoichiometry-calc"
     ],
     "difficulty": 2,
-    "prompt": "Cho 6,5 g Kẽm ([[Zn]]) tác dụng hết với dung dịch axit [[HCl]] theo PTHH: [[Zn]] + 2[[HCl]] -> [[ZnCl2]] + [[H2]]. Tính thể tích khí [[H2]] thoát ra ở điều kiện chuẩn (25 °C, 1 bar). (Cho M(Zn) = 65 g/mol).",
+    "prompt": "Cho 6,5 g Kẽm ([[Zn]]) tác dụng hết với dung dịch acid [[HCl]] theo PTHH: [[Zn]] + 2[[HCl]] -> [[ZnCl2]] + [[H2]]. Tính thể tích khí [[H2]] thoát ra ở điều kiện chuẩn (25 °C, 1 bar). (Cho M(Zn) = 65 g/mol).",
     "given": [
       {
         "label": "Khối lượng Zn",
@@ -265,7 +265,7 @@
       "stoichiometry-calc"
     ],
     "difficulty": 2,
-    "prompt": "Hòa tan hoàn toàn 2,4 g kim loại Magie ([[Mg]]) vào dung dịch [[HCl]] dư theo PTHH: [[Mg]] + 2[[HCl]] -> [[MgCl2]] + [[H2]]. Tính khối lượng muối [[MgCl2]] tạo thành. (Cho M(Mg) = 24 g/mol, M(Cl) = 35,5 g/mol).",
+    "prompt": "Hòa tan hoàn toàn 2,4 g kim loại Magnesium ([[Mg]]) vào dung dịch [[HCl]] dư theo PTHH: [[Mg]] + 2[[HCl]] -> [[MgCl2]] + [[H2]]. Tính khối lượng muối [[MgCl2]] tạo thành. (Cho M(Mg) = 24 g/mol, M(Cl) = 35,5 g/mol).",
     "given": [
       {
         "label": "Khối lượng Mg",

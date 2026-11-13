@@ -4,7 +4,7 @@
     {
       "order": 1,
       "symbol": "K",
-      "nameVi": "Kali",
+      "nameVi": "Potassium",
       "level": "Rất mạnh",
       "reactsWithWaterCold": true,
       "reactsWithDiluteAcid": true,
@@ -13,7 +13,7 @@
     {
       "order": 2,
       "symbol": "Na",
-      "nameVi": "Natri",
+      "nameVi": "Sodium",
       "level": "Rất mạnh",
       "reactsWithWaterCold": true,
       "reactsWithDiluteAcid": true,
@@ -44,7 +44,7 @@
       "level": "Trung bình - mạnh",
       "reactsWithWaterCold": false,
       "reactsWithDiluteAcid": true,
-      "notes": "Bền trong không khí và nước do có màng oxit Al2O3 bảo vệ."
+      "notes": "Bền trong không khí và nước do có màng oxide Al2O3 bảo vệ."
     },
     {
       "order": 6,

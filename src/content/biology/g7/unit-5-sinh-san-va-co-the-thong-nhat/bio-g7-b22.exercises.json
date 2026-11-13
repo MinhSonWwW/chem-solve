@@ -88,7 +88,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Vì lá cây quá thừa oxy từ đất ngập úng"
+          "label": "Vì lá cây quá thừa oxygen từ đất ngập úng"
         },
         {
           "id": "opt-b",
@@ -182,7 +182,7 @@
       },
       {
         "level": 2,
-        "text": "Máu trong hệ tuần hoàn vận chuyển oxy từ phổi, thức ăn từ ruột và mang chất thải đến thận."
+        "text": "Máu trong hệ tuần hoàn vận chuyển oxygen từ phổi, thức ăn từ ruột và mang chất thải đến thận."
       }
     ],
     "steps": [
@@ -228,7 +228,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Hệ hô hấp ngừng hoạt động hoàn toàn để tiết kiệm khí oxy"
+          "label": "Hệ hô hấp ngừng hoạt động hoàn toàn để tiết kiệm khí oxygen"
         },
         {
           "id": "opt-b",
@@ -386,7 +386,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Sinh vật có thể tồn tại nếu bị cô lập hoàn toàn không lấy thức ăn, nước và oxy từ môi trường ngoài không?"
+        "text": "Sinh vật có thể tồn tại nếu bị cô lập hoàn toàn không lấy thức ăn, nước và oxygen từ môi trường ngoài không?"
       },
       {
         "level": 2,

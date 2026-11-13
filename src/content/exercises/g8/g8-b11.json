@@ -6,7 +6,7 @@
       "salt-reactions"
     ],
     "difficulty": 1,
-    "prompt": "Khi nhỏ dung dịch muối Barium chloride ([[BaCl2]]) vào dung dịch Natri sunfat ([[Na2SO4]]), hiện tượng quan sát được là:",
+    "prompt": "Khi nhỏ dung dịch muối Barium chloride ([[BaCl2]]) vào dung dịch Sodium sulfate ([[Na2SO4]]), hiện tượng quan sát được là:",
     "given": [
       {
         "label": "Chất tham gia",
@@ -83,7 +83,7 @@
       "salt-naming"
     ],
     "difficulty": 1,
-    "prompt": "Nhập công thức hóa học của muối Canxi cacbonat (thành phần chính của đá vôi, vỏ sò, phấn viết bảng):",
+    "prompt": "Nhập công thức hóa học của muối Calcium carbonate (thành phần chính của đá vôi, vỏ sò, phấn viết bảng):",
     "knowledge": [
       "formulas.calcium-carbonate"
     ],
@@ -108,7 +108,7 @@
       {
         "kind": "identify",
         "title": "Xác định hóa trị",
-        "body": "Canxi có hóa trị II, gốc cacbonat (CO3) có hóa trị II."
+        "body": "Calcium có hóa trị II, gốc carbonate (CO3) có hóa trị II."
       },
       {
         "kind": "knowledge",
@@ -139,17 +139,17 @@
       "statements": [
         {
           "id": "s1",
-          "text": "Tất cả các muối của kim loại Natri (Na) và Kali (K) đều tan tốt trong nước.",
+          "text": "Tất cả các muối của kim loại Sodium (Na) và Potassium (K) đều tan tốt trong nước.",
           "correct": true
         },
         {
           "id": "s2",
-          "text": "Tất cả các muối nitrat (gốc -NO3) đều tan trong nước.",
+          "text": "Tất cả các muối nitrate (gốc -NO3) đều tan trong nước.",
           "correct": true
         },
         {
           "id": "s3",
-          "text": "Bạc clorua (AgCl) là một muối tan tốt trong nước.",
+          "text": "Silver chloride (AgCl) là một muối tan tốt trong nước.",
           "correct": false
         },
         {
@@ -178,7 +178,7 @@
       {
         "kind": "identify",
         "title": "Muối không tan",
-        "body": "AgCl là muối kết tủa màu trắng không tan trong nước và axit (s3 sai)."
+        "body": "AgCl là muối kết tủa màu trắng không tan trong nước và acid (s3 sai)."
       },
       {
         "kind": "answer",
@@ -244,7 +244,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Hầu hết muối Na, K và gốc nitrat NO3 đều tan tốt."
+        "text": "Hầu hết muối Na, K và gốc nitrate NO3 đều tan tốt."
       },
       {
         "level": 2,

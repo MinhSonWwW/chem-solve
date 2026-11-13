@@ -26,19 +26,19 @@
       },
       {
         "level": 2,
-        "text": "Có nhóm chức đặc trưng hiđroxyl (-OH) liên kết với gốc C2H5-."
+        "text": "Có nhóm chức đặc trưng hydroxyl (-OH) liên kết với gốc C2H5-."
       }
     ],
     "steps": [
       {
         "kind": "identify",
         "title": "Xác định thành phần nguyên tố",
-        "body": "Rượu etylic chứa các nguyên tố C, H, O."
+        "body": "Ethylic alcohol chứa các nguyên tố C, H, O."
       },
       {
         "kind": "knowledge",
         "title": "Cấu tạo phân tử",
-        "body": "Gồm gốc etyl C2H5- liên kết với nhóm hydroxyl -OH."
+        "body": "Gồm gốc ethyl C2H5- liên kết với nhóm hydroxyl -OH."
       },
       {
         "kind": "answer",
@@ -55,7 +55,7 @@
       "alcohol-properties"
     ],
     "difficulty": 1,
-    "prompt": "Đánh giá tính Đúng hay Sai của các khẳng định sau về rượu etylic:",
+    "prompt": "Đánh giá tính Đúng hay Sai của các khẳng định sau về ethylic alcohol:",
     "knowledge": [
       "alcohol.properties"
     ],
@@ -64,22 +64,22 @@
       "statements": [
         {
           "id": "s1",
-          "text": "Rượu etylic là chất lỏng không màu, nhẹ hơn nước và tan vô hạn trong nước.",
+          "text": "Ethylic alcohol là chất lỏng không màu, nhẹ hơn nước và tan vô hạn trong nước.",
           "correct": true
         },
         {
           "id": "s2",
-          "text": "Độ rượu là số mililít rượu etylic nguyên chất có trong 100 ml hỗn hợp rượu với nước.",
+          "text": "Độ rượu là số mililít ethylic alcohol nguyên chất có trong 100 ml hỗn hợp rượu với nước.",
           "correct": true
         },
         {
           "id": "s3",
-          "text": "Rượu etylic làm quỳ tím chuyển sang màu đỏ giống như axit.",
+          "text": "Ethylic alcohol làm quỳ tím chuyển sang màu đỏ giống như acid.",
           "correct": false
         },
         {
           "id": "s4",
-          "text": "Khi đốt cháy hoàn toàn rượu etylic thu được khí CO2 và hơi nước.",
+          "text": "Khi đốt cháy hoàn toàn ethylic alcohol thu được khí CO2 và hơi nước.",
           "correct": true
         }
       ]
@@ -87,7 +87,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Rượu etylic có tính trung tính, không làm đổi màu quỳ tím."
+        "text": "Ethylic alcohol có tính trung tính, không làm đổi màu quỳ tím."
       },
       {
         "level": 2,
@@ -120,7 +120,7 @@
       "alcohol-reactions"
     ],
     "difficulty": 2,
-    "prompt": "Rượu etylic phản ứng được với kim loại Natri ([[Na]]) giải phóng khí hiđro [[H2]] là do trong phân tử có chứa nhóm nguyên tử nào?",
+    "prompt": "Ethylic alcohol phản ứng được với kim loại Sodium ([[Na]]) giải phóng khí hydrogen [[H2]] là do trong phân tử có chứa nhóm nguyên tử nào?",
     "given": [
       {
         "label": "Phản ứng",
@@ -138,15 +138,15 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Nhóm metyl (-CH3)"
+          "label": "Nhóm methyl (-CH3)"
         },
         {
           "id": "opt-b",
-          "label": "Nhóm hiđroxyl (-OH)"
+          "label": "Nhóm hydroxyl (-OH)"
         },
         {
           "id": "opt-c",
-          "label": "Nhóm etyl (-C2H5)"
+          "label": "Nhóm ethyl (-C2H5)"
         },
         {
           "id": "opt-d",
@@ -179,10 +179,10 @@
       {
         "kind": "answer",
         "title": "Kết luận nhóm chức",
-        "body": "Nhóm hiđroxyl (-OH) quyết định tính chất phản ứng với Na."
+        "body": "Nhóm hydroxyl (-OH) quyết định tính chất phản ứng với Na."
       }
     ],
-    "finalSolution": "Nhóm hiđroxyl (-OH)"
+    "finalSolution": "Nhóm hydroxyl (-OH)"
   },
   {
     "id": "g9-b26-calc-001",
@@ -191,7 +191,7 @@
       "alcohol-properties"
     ],
     "difficulty": 2,
-    "prompt": "Trong 500 mL rượu vang có độ rượu là 12°. Tính thể tích rượu etylic nguyên chất có trong chai rượu vang đó.",
+    "prompt": "Trong 500 mL rượu vang có độ rượu là 12°. Tính thể tích ethylic alcohol nguyên chất có trong chai rượu vang đó.",
     "given": [
       {
         "label": "Thể tích hỗn hợp (V_hh)",
@@ -224,7 +224,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Độ rượu là số mL rượu etylic nguyên chất có trong 100 mL hỗn hợp rượu với nước."
+        "text": "Độ rượu là số mL ethylic alcohol nguyên chất có trong 100 mL hỗn hợp rượu với nước."
       },
       {
         "level": 2,
@@ -250,7 +250,7 @@
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Chai rượu vang chứa **60 mL** rượu etylic nguyên chất."
+        "body": "Chai rượu vang chứa **60 mL** ethylic alcohol nguyên chất."
       }
     ],
     "finalSolution": "V_rượu = (500 × 12) / 100 = **60 mL**.",
@@ -268,7 +268,7 @@
       "alcohol-reactions"
     ],
     "difficulty": 2,
-    "prompt": "Điền các hệ số thích hợp để hoàn thành phương trình phản ứng đốt cháy rượu etylic: [[C2H5OH]] + [[O2]] -> [[CO2]] + [[H2O]].",
+    "prompt": "Điền các hệ số thích hợp để hoàn thành phương trình phản ứng đốt cháy ethylic alcohol: [[C2H5OH]] + [[O2]] -> [[CO2]] + [[H2O]].",
     "knowledge": [
       "formulas.ethanol",
       "alcohol.properties"
@@ -333,25 +333,25 @@
       "ethylic-alcohol"
     ],
     "difficulty": 2,
-    "prompt": "Sắp xếp theo thứ tự các bước tiến hành **thí nghiệm cho ethylic alcohol ($C_2H_5OH$) tác dụng với kim loại natri (Na)**.",
+    "prompt": "Sắp xếp theo thứ tự các bước tiến hành **thí nghiệm cho ethylic alcohol ($C_2H_5OH$) tác dụng với kim loại sodium (Na)**.",
     "answer": {
       "kind": "ordering",
       "correctOrder": [
         "Rót khoảng 2 - 3 ml ethylic alcohol nguyên chất vào một ống nghiệm khô và sạch.",
-        "Dùng dao cắt một mẩu natri nhỏ bằng hạt đỗ, dùng giấy lọc thấm sạch lớp dầu bảo quản bên ngoài.",
-        "Thả nhẹ mẩu natri đã thấm sạch vào ống nghiệm chứa ethylic alcohol.",
-        "Quan sát mẩu natri chìm xuống đáy ống nghiệm và sủi bọt khí hydro không màu xung quanh.",
+        "Dùng dao cắt một mẩu sodium nhỏ bằng hạt đỗ, dùng giấy lọc thấm sạch lớp dầu bảo quản bên ngoài.",
+        "Thả nhẹ mẩu sodium đã thấm sạch vào ống nghiệm chứa ethylic alcohol.",
+        "Quan sát mẩu sodium chìm xuống đáy ống nghiệm và sủi bọt khí hydrogen không màu xung quanh.",
         "Đưa que đóm đang cháy vào miệng ống nghiệm, khí cháy kèm theo tiếng nổ bốp nhẹ chứng minh là khí H2."
       ]
     },
     "hints": [
       {
         "level": 1,
-        "text": "Nhóm -OH trong rượu ethylic làm cho nguyên tử hydro linh động có thể bị kim loại kiềm như Na thay thế giải phóng H2."
+        "text": "Nhóm -OH trong rượu ethylic làm cho nguyên tử hydrogen linh động có thể bị kim loại kiềm như Na thay thế giải phóng H2."
       },
       {
         "level": 2,
-        "text": "Natri chìm trong rượu (vì khối lượng riêng của rượu bé hơn Na) và sủi bọt khí H2."
+        "text": "Sodium chìm trong rượu (vì khối lượng riêng của rượu bé hơn Na) và sủi bọt khí H2."
       }
     ],
     "steps": [

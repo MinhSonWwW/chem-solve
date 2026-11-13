@@ -268,7 +268,7 @@
           "right": "Duy trì sự sống (hỗ trợ hô hấp)"
         },
         {
-          "left": "Thổi luồng khí oxy vào lò luyện thép nung nóng",
+          "left": "Thổi luồng khí oxygen vào lò luyện thép nung nóng",
           "right": "Duy trì sự cháy tỏa nhiệt cao"
         },
         {
@@ -276,7 +276,7 @@
           "right": "Duy trì sự sống (hỗ trợ hô hấp)"
         },
         {
-          "left": "Đèn xì oxy - axetilen dùng để hàn cắt kim loại",
+          "left": "Đèn xì oxygen - acetylene dùng để hàn cắt kim loại",
           "right": "Duy trì sự cháy tỏa nhiệt cao"
         }
       ]
@@ -284,11 +284,11 @@
     "hints": [
       {
         "level": 1,
-        "text": "Thợ lặn, bệnh nhân cần oxy để thở -> Hô hấp (sự sống)."
+        "text": "Thợ lặn, bệnh nhân cần oxygen để thở -> Hô hấp (sự sống)."
       },
       {
         "level": 2,
-        "text": "Lò luyện thép, đèn hàn xì cần oxy để tạo ngọn lửa nhiệt độ cao -> Sự cháy."
+        "text": "Lò luyện thép, đèn hàn xì cần oxygen để tạo ngọn lửa nhiệt độ cao -> Sự cháy."
       }
     ],
     "steps": [
@@ -300,7 +300,7 @@
       {
         "kind": "knowledge",
         "title": "Vai trò",
-        "body": "Hô hấp: bình thở bệnh viện, bình dưỡng khí thợ lặn. Sự cháy: thổi oxy lò thép, đèn hàn xì cắt kim loại."
+        "body": "Hô hấp: bình thở bệnh viện, bình dưỡng khí thợ lặn. Sự cháy: thổi oxygen lò thép, đèn hàn xì cắt kim loại."
       },
       {
         "kind": "answer",
