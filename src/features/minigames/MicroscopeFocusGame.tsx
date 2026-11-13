@@ -164,7 +164,7 @@ export const MicroscopeFocusGame: React.FC<{ onExit: () => void }> = ({ onExit }
 
   return (
     <MinigameShell
-      title="Thao Tác Kính Hiển Vi Soi Tế Bào"
+      title="Thao tác kính hiển vi soi tế bào"
       description="Vặn ốc sơ cấp, vi cấp lấy nét & giải phẫu bào quan!"
       icon={<Search className="w-5 h-5 text-[var(--bio-fg)]" />}
       timeLeft={timeLeft}
@@ -180,14 +180,14 @@ export const MicroscopeFocusGame: React.FC<{ onExit: () => void }> = ({ onExit }
         {/* Specimen Case Header */}
         <div className="p-3.5 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] flex items-center justify-between">
           <div className="space-y-0.5">
-            <span className="text-[10px] font-black uppercase tracking-wider text-[var(--bio-fg)]">
+            <span className="text-[11px] font-black text-[var(--bio-fg)]">
               Tiêu bản {specimenIndex + 1}
             </span>
             <h2 className="text-sm font-black text-[var(--text-primary)]">{specimen.name}</h2>
             <p className="text-xs text-[var(--text-secondary)]">{specimen.magnification}</p>
           </div>
           <div className="text-right">
-            <span className="text-[10px] font-bold text-[var(--text-tertiary)] block">Độ nét</span>
+            <span className="text-[11px] font-bold text-[var(--text-tertiary)] block">Độ nét</span>
             <span
               className={`text-xs font-black px-2 py-0.5 rounded-full ${
                 isSharp
@@ -195,7 +195,7 @@ export const MicroscopeFocusGame: React.FC<{ onExit: () => void }> = ({ onExit }
                   : 'bg-[var(--warn-tint)] text-[var(--warn-fg)]'
               }`}
             >
-              {isSharp ? 'RÕ NÉT 100%' : 'MỜ (LẤY NÉT)'}
+              {isSharp ? 'Rõ nét 100%' : 'Mờ (lấy nét)'}
             </span>
           </div>
         </div>
@@ -236,7 +236,7 @@ export const MicroscopeFocusGame: React.FC<{ onExit: () => void }> = ({ onExit }
                   }`}
                   title={org.label}
                 >
-                  <Crosshair className="w-4 h-4 text-white drop-shadow" />
+                  <Crosshair className="w-4 h-4 text-[var(--text-primary)] drop-shadow" />
                 </button>
               );
             })}
@@ -248,8 +248,8 @@ export const MicroscopeFocusGame: React.FC<{ onExit: () => void }> = ({ onExit }
             </div>
           </div>
 
-          <div className="mt-2 text-[11px] font-black text-center text-[var(--text-primary)]">
-            🎯 {specimen.question}
+          <div className="mt-2 text-xs font-black text-center text-[var(--text-primary)]">
+            {specimen.question}
           </div>
         </div>
 
@@ -329,7 +329,7 @@ export const MicroscopeFocusGame: React.FC<{ onExit: () => void }> = ({ onExit }
               onClick={handleNextSpecimen}
               className="font-black bg-[var(--bio-fill)] text-white shadow-md flex items-center justify-center gap-2"
             >
-              <span>SOI TIÊU BẢN TIẾP THEO</span>
+              <span>Soi tiêu bản tiếp theo</span>
               <Sparkles className="w-4 h-4" />
             </Button>
           </motion.div>

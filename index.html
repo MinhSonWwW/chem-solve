@@ -4,23 +4,24 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <meta name="theme-color" content="#0f172a" />
-    <meta name="description" content="STEM-SOLVE: Nền tảng học tập & giải bài tập Khoa học Tự nhiên THCS (Hóa học, Sinh học, Vật lý) Lớp 6–9 tương tác theo phong cách Duolingo: giải từng bước, phản hồi tức thì, minigame khoa học và bộ 3 mascot Atom, Leafy, Proton." />
-    <title>STEM-SOLVE — Học & Luyện Tập Khoa Học Tự Nhiên THCS (Hóa, Sinh, Lý)</title>
+    <meta name="theme-color" content="#151513" />
+    <meta name="description" content="Sci-Solve giúp học sinh lớp 6–9 luyện Khoa học tự nhiên (Hóa học, Vật lý, Sinh học) theo SGK Kết nối tri thức: giải từng bước, có gợi ý khi sai và thí nghiệm ảo." />
+    <title>Sci-Solve · Luyện Khoa học tự nhiên THCS</title>
 
     <!-- Open Graph / Facebook / Zalo -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="STEM-Solve" />
-    <meta property="og:title" content="STEM-SOLVE — Học & Luyện Tập Khoa Học Tự Nhiên THCS" />
-    <meta property="og:description" content="Giải bài tập từng bước, phản hồi tức thì, minigame tương tác và bộ 3 mascot khoa học Atom, Leafy, Proton." />
-    <meta property="og:image" content="https://minhsonwww.github.io/chem-solve/assets/mascot/atom-celebrating.png" />
+    <meta property="og:url" content="https://sci-solve.pages.dev/" />
+    <meta property="og:site_name" content="Sci-Solve" />
+    <meta property="og:title" content="Sci-Solve · Luyện Khoa học tự nhiên THCS" />
+    <meta property="og:description" content="Bài tập Hóa, Lý, Sinh lớp 6–9 theo SGK Kết nối tri thức, giải từng bước và có gợi ý khi sai." />
+    <meta property="og:image" content="https://sci-solve.pages.dev/assets/mascot/atom-celebrating.png" />
     <meta property="og:locale" content="vi_VN" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="STEM-SOLVE — Khoa Học Tự Nhiên THCS" />
-    <meta name="twitter:description" content="Nền tảng giải bài tập Hóa học, Sinh học, Vật lý THCS tương tác mượt mà." />
-    <meta name="twitter:image" content="https://minhsonwww.github.io/chem-solve/assets/mascot/atom-celebrating.png" />
+    <meta name="twitter:title" content="Sci-Solve · Luyện Khoa học tự nhiên THCS" />
+    <meta name="twitter:description" content="Bài tập Hóa, Lý, Sinh lớp 6–9 theo SGK Kết nối tri thức, giải từng bước và có gợi ý khi sai." />
+    <meta name="twitter:image" content="https://sci-solve.pages.dev/assets/mascot/atom-celebrating.png" />
 
     <!-- Google Fonts: Nunito (Vietnamese + Latin subset) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,18 +32,22 @@
     <script>
       (function() {
         try {
-          var theme = localStorage.getItem('chem_theme') || 'dark';
+          var explicit = localStorage.getItem('chem_theme_explicit');
+          var saved = localStorage.getItem('chem_theme');
+          var theme = (explicit === '1' && (saved === 'light' || saved === 'dark')) ? saved : 'dark';
           document.documentElement.setAttribute('data-theme', theme);
           if (theme === 'light') {
             document.documentElement.classList.add('light');
+            document.documentElement.classList.remove('dark');
           } else {
             document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
           }
         } catch (e) {}
       })();
     </script>
   </head>
-  <body class="bg-[#131f24] text-slate-100 antialiased selection:bg-[#0ea5e9] selection:text-white min-h-[100dvh]">
+  <body class="bg-[var(--bg-canvas)] text-[var(--text-primary)] antialiased selection:bg-[var(--chem-fill)] selection:text-white min-h-[100dvh]">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

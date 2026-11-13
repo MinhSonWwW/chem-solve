@@ -1,13 +1,19 @@
 import React from 'react';
 import { Heart as HeartIcon } from 'lucide-react';
 import { cn, assetUrl } from '@/lib/utils';
+import { GAMIFICATION } from '@/config/gamification';
 
 export interface HeartProps extends React.HTMLAttributes<HTMLDivElement> {
   count: number;
   max?: number;
 }
 
-export const Heart: React.FC<HeartProps> = ({ count, max = 5, className, ...props }) => {
+export const Heart: React.FC<HeartProps> = ({
+  count,
+  max = GAMIFICATION.hearts.max,
+  className,
+  ...props
+}) => {
   const isInfinite = count >= 99 || count === Infinity;
 
   return (

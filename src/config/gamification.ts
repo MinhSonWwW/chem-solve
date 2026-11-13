@@ -28,7 +28,7 @@ export const GAMIFICATION = {
   },
   hearts: {
     /** Maximum hearts */
-    max: 5,
+    max: 10,
     /** Minutes to recover 1 heart */
     recoveryMinutes: 20,
     /** Hearts restored when completing a review exercise */

@@ -26,8 +26,8 @@ export const ThemeToggle: React.FC<ThemeToggleProps> = ({
     return (
       <button
         onClick={handleClick}
-        className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-[11px] font-bold transition-all cursor-pointer select-none text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-surface-2)] ${className}`}
-        title={isLight ? 'Chuyển sang Chế độ Tối' : 'Chuyển sang Chế độ Sáng'}
+        className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer select-none text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-surface-2)] ${className}`}
+        title={isLight ? 'Chuyển sang chế độ tối' : 'Chuyển sang chế độ sáng'}
       >
         <span className="flex items-center gap-2">
           {isLight ? (
@@ -38,9 +38,9 @@ export const ThemeToggle: React.FC<ThemeToggleProps> = ({
           Giao diện
         </span>
         <span
-          className="text-[10px] font-extrabold uppercase px-1.5 py-0.5 rounded border transition-colors bg-[var(--gold-tint)] text-[var(--gold-fg)] border-[var(--gold-edge)]"
+          className="text-[11px] font-extrabold px-1.5 py-0.5 rounded border transition-colors bg-[var(--gold-tint)] text-[var(--gold-fg)] border-[var(--gold-edge)]"
         >
-          {isLight ? 'SÁNG' : 'TỐI'}
+          {isLight ? 'Sáng' : 'Tối'}
         </span>
       </button>
     );
@@ -57,9 +57,9 @@ export const ThemeToggle: React.FC<ThemeToggleProps> = ({
           )}
           <div>
             <div className="text-xs font-semibold text-[var(--text-primary)]">
-              Chế độ hiển thị: {isLight ? 'Giao diện Sáng' : 'Giao diện Tối'}
+              Chế độ hiển thị: {isLight ? 'Sáng' : 'Tối'}
             </div>
-            <div className="text-[11px] text-[var(--text-secondary)]">
+            <div className="text-xs text-[var(--text-secondary)]">
               {isLight
                 ? 'Nền sáng dịu mắt, tương phản cao, dễ nhìn ban ngày'
                 : 'Nền tối chống mỏi mắt, gam màu khoa học tiêu chuẩn'}
@@ -72,13 +72,13 @@ export const ThemeToggle: React.FC<ThemeToggleProps> = ({
           title={isLight ? 'Bấm để đổi sang giao diện Tối' : 'Bấm để đổi sang giao diện Sáng'}
         >
           <div
-            className={`w-5 h-5 rounded-full flex items-center justify-center text-[10px] transition-all transform ${
+            className={`w-5 h-5 rounded-full flex items-center justify-center text-[11px] transition-all transform ${
               isLight
                 ? 'translate-x-6 bg-[var(--gold-fill)] text-[var(--on-ink)] shadow-sm'
                 : 'translate-x-0 bg-[var(--border-strong)] text-[var(--text-primary)]'
             }`}
           >
-            {isLight ? '☀️' : '🌙'}
+            {isLight ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
           </div>
         </button>
       </div>

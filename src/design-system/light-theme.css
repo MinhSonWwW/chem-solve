@@ -1,253 +1,200 @@
 /* ==========================================================================
-   STEM-Solve Light Theme (stem-solve-colors-v2.md)
-   Canvas: #EEF2F7 | Surface (Card/Sidebar): #FAFBFD | Surface-2: #E6ECF3
-   Border: #D3DBE5 | Border-strong: #B9C5D3 | Edge-neutral: #C2CCD9
-   Text Primary: #0F1B2D (15.4:1) | Secondary: #44546A (6.9:1) | Tertiary: #5F6E84 (4.6:1)
-   No pure white glare, no arbitrary pastel gradients, 3D tactile ONLY on buttons and nodes.
+   STEM-Solve — light theme
+   Cách hoạt động: app viết theo dark (Tailwind hex tuỳ ý), file này đè lại
+   khi <html class="light"> hoặc data-theme="light".
+   Mọi màu đều lấy từ biến ở :root bên dưới. Muốn đổi màu thì sửa ở đó.
    ========================================================================== */
 
 html.light,
-body.light,
 [data-theme="light"] {
   color-scheme: light;
 
-  --bg-canvas: #EEF2F7;
-  --bg-surface: #FAFBFD;
-  --bg-surface-2: #E6ECF3;
-  --border: #D3DBE5;
-  --border-strong: #B9C5D3;
-  --edge-neutral: #C2CCD9;
-  --text-primary: #0F1B2D;
-  --text-secondary: #44546A;
-  --text-tertiary: #5F6E84;
-  --on-ink: #1A1205;
+  --bg-canvas: #b3c9ea;
+  --bg-surface: #FFFFFF;
+  --bg-surface-2: #E9EEF4;
+  --border: #D9E1EA;
+  --border-strong: #769dca;
+  --edge: #BCCADB;            /* đáy nút 3D */
+  --text-1: #0F1B2D;
+  --text-2: #36465C;
+  --text-3: #5A6B82;          /* chỉ dùng cho chữ phụ, không dùng cho nội dung chính */
 
-  --color-background: #EEF2F7;
-  --color-surface: #FAFBFD;
-  --color-surface-card: #FAFBFD;
-  --color-border: #D3DBE5;
-
-  --shadow-modal: 0 8px 24px rgb(15 27 45 / 0.10);
+  --shadow-modal: 0 8px 30px rgb(15 27 45 / 0.10);
+  --overlay: rgb(15 27 45 / 0.45);
 }
 
-html.light body,
-[data-theme="light"] body {
-  background-color: #EEF2F7 !important;
-  color: #0F1B2D !important;
+:is(html.light, [data-theme="light"]) body {
+  background-color: var(--bg-canvas) !important;
+  color: var(--text-1) !important;
 }
 
-/* ─── 1. Main Canvas & Surface Hierarchy ─── */
-html.light .bg-\[\#131f24\],
-[data-theme="light"] .bg-\[\#131f24\] {
-  background-color: #EEF2F7 !important;
+/* ─── Nền ─────────────────────────────────────────────────────────────── */
+
+/* Nền trang */
+:is(html.light, [data-theme="light"]) :is(.bg-\[\#131f24\]) {
+  background-color: var(--bg-canvas) !important;
+}
+:is(html.light, [data-theme="light"]) :is(
+  .bg-\[\#131f24\]\/98, .bg-\[\#131f24\]\/95, .bg-\[\#131f24\]\/80
+) {
+  background-color: rgb(243 245 248 / 0.96) !important;
 }
 
-html.light .bg-\[\#131f24\]\/98,
-[data-theme="light"] .bg-\[\#131f24\]\/98,
-html.light .bg-\[\#131f24\]\/95,
-[data-theme="light"] .bg-\[\#131f24\]\/95,
-html.light .bg-\[\#131f24\]\/80,
-[data-theme="light"] .bg-\[\#131f24\]\/80 {
-  background-color: rgba(238, 242, 247, 0.96) !important;
+/* Thanh header / nav mobile */
+:is(html.light, [data-theme="light"]) :is(.bg-\[\#0f171c\], .bg-\[\#0f171c\]\/95) {
+  background-color: rgb(255 255 255 / 0.96) !important;
 }
 
-/* Header & mobile nav bar background */
-html.light .bg-\[\#0f171c\],
-[data-theme="light"] .bg-\[\#0f171c\],
-html.light .bg-\[\#0f171c\]\/95,
-[data-theme="light"] .bg-\[\#0f171c\]\/95 {
-  background-color: rgba(250, 251, 253, 0.96) !important;
+/* Card, panel */
+:is(html.light, [data-theme="light"]) :is(
+  .bg-\[\#18272f\], .bg-slate-900, .bg-slate-950
+) {
+  background-color: var(--bg-surface) !important;
+}
+:is(html.light, [data-theme="light"]) :is(
+  .bg-\[\#18272f\]\/80, .bg-\[\#18272f\]\/95
+) {
+  background-color: rgb(255 255 255 / 0.95) !important;
 }
 
-/* Primary cards & panels: Surface #FAFBFD */
-html.light .bg-\[\#18272f\],
-[data-theme="light"] .bg-\[\#18272f\],
-html.light .bg-slate-900,
-[data-theme="light"] .bg-slate-900,
-html.light .bg-slate-950,
-[data-theme="light"] .bg-slate-950 {
-  background-color: #FAFBFD !important;
+/* Khối con, ô input */
+:is(html.light, [data-theme="light"]) :is(
+  .bg-\[\#20333d\], .bg-\[\#1e2e38\], .bg-\[\#1a2831\], .bg-\[\#1c2c36\],
+  .bg-slate-900\/60, .bg-slate-950\/50, .bg-slate-950\/40
+) {
+  background-color: var(--bg-surface-2) !important;
 }
 
-html.light .bg-\[\#18272f\]\/80,
-[data-theme="light"] .bg-\[\#18272f\]\/80,
-html.light .bg-\[\#18272f\]\/95,
-[data-theme="light"] .bg-\[\#18272f\]\/95 {
-  background-color: rgba(250, 251, 253, 0.95) !important;
+/* Nền mờ sau modal */
+:is(html.light, [data-theme="light"]) :is(.bg-slate-950\/85, .bg-slate-950\/80) {
+  background-color: var(--overlay) !important;
 }
 
-/* Inner containers, sub-blocks, input backgrounds: Surface-2 #E6ECF3 */
-html.light .bg-\[\#20333d\],
-[data-theme="light"] .bg-\[\#20333d\],
-html.light .bg-\[\#1e2e38\],
-[data-theme="light"] .bg-\[\#1e2e38\],
-html.light .bg-\[\#1a2831\],
-[data-theme="light"] .bg-\[\#1a2831\],
-html.light .bg-\[\#1c2c36\],
-[data-theme="light"] .bg-\[\#1c2c36\],
-html.light .bg-slate-900\/60,
-[data-theme="light"] .bg-slate-900\/60,
-html.light .bg-slate-950\/50,
-[data-theme="light"] .bg-slate-950\/50,
-html.light .bg-slate-950\/40,
-[data-theme="light"] .bg-slate-950\/40 {
-  background-color: #E6ECF3 !important;
+/* ─── Viền ────────────────────────────────────────────────────────────── */
+
+:is(html.light, [data-theme="light"]) :is(
+  .border-\[\#2e4756\], .border-\[\#2e4756\]\/60, .border-\[\#20333d\],
+  .border-slate-800, .border-slate-800\/80
+) {
+  border-color: var(--border) !important;
+}
+:is(html.light, [data-theme="light"]) :is(
+  .border-\[\#3d5a6c\], .border-\[\#3d5a6c\]\/60, .border-slate-700
+) {
+  border-color: var(--border-strong) !important;
 }
 
-/* Modal Backdrops in Light Mode */
-html.light .bg-slate-950\/85,
-[data-theme="light"] .bg-slate-950\/85,
-html.light .bg-slate-950\/80,
-[data-theme="light"] .bg-slate-950\/80 {
-  background-color: rgba(15, 27, 45, 0.45) !important;
-}
+/* ─── Đổ bóng ─────────────────────────────────────────────────────────── */
 
-/* ─── 2. Crisp Borders & Neutral Edges ─── */
-html.light .border-\[\#2e4756\],
-[data-theme="light"] .border-\[\#2e4756\],
-html.light .border-\[\#2e4756\]\/60,
-[data-theme="light"] .border-\[\#2e4756\]\/60,
-html.light .border-\[\#20333d\],
-[data-theme="light"] .border-\[\#20333d\],
-html.light .border-slate-800,
-[data-theme="light"] .border-slate-800,
-html.light .border-slate-800\/80,
-[data-theme="light"] .border-slate-800\/80 {
-  border-color: #D3DBE5 !important;
-}
-
-html.light .border-\[\#3d5a6c\],
-[data-theme="light"] .border-\[\#3d5a6c\],
-html.light .border-\[\#3d5a6c\]\/60,
-[data-theme="light"] .border-\[\#3d5a6c\]\/60,
-html.light .border-slate-700,
-[data-theme="light"] .border-slate-700 {
-  border-color: #B9C5D3 !important;
-}
-
-/* Card, sidebar, modal phẳng — KHÔNG đổ bóng đáy 3D */
-html.light aside,
-[data-theme="light"] aside,
-html.light .widget-quests-card,
-[data-theme="light"] .widget-quests-card,
-html.light .widget-streak-card,
-[data-theme="light"] .widget-streak-card,
-html.light .widget-review-card,
-[data-theme="light"] .widget-review-card,
-html.light .sidebar-profile-card,
-[data-theme="light"] .sidebar-profile-card,
-html.light div.rounded-3xl.p-5,
-[data-theme="light"] div.rounded-3xl.p-5 {
+/* Card và sidebar phẳng, không có bóng đáy */
+:is(html.light, [data-theme="light"]) :is(
+  aside, .widget-quests-card, .widget-streak-card, .widget-review-card,
+  .sidebar-profile-card, div.rounded-3xl.p-5
+) {
   box-shadow: none !important;
 }
 
-/* 3D Shadows cho nút phụ và node trong light mode */
-html.light button.shadow-\[0_4px_0_0_\#131f24\],
-[data-theme="light"] button.shadow-\[0_4px_0_0_\#131f24\],
-html.light button.shadow-\[0_3px_0_0_\#131f24\],
-[data-theme="light"] button.shadow-\[0_3px_0_0_\#131f24\],
-html.light button.shadow-\[0_2px_0_0_\#131f24\],
-[data-theme="light"] button.shadow-\[0_2px_0_0_\#131f24\],
-html.light button.shadow-\[0_4px_0_0_\#101a1f\],
-[data-theme="light"] button.shadow-\[0_4px_0_0_\#101a1f\] {
-  box-shadow: 0 4px 0 0 #C2CCD9 !important;
+/* Bóng đáy của nút/node: giữ nguyên độ sâu gốc (4 / 3 / 2px) */
+:is(html.light, [data-theme="light"]) :is(
+  .shadow-\[0_4px_0_0_\#131f24\], .shadow-\[0_4px_0_0_\#101a1f\], .shadow-\[0_4px_0_0_\#091014\]
+) {
+  box-shadow: 0 4px 0 0 var(--edge) !important;
+}
+:is(html.light, [data-theme="light"]) :is(
+  .shadow-\[0_3px_0_0_\#131f24\], .shadow-\[0_3px_0_0_\#101a1f\]
+) {
+  box-shadow: 0 3px 0 0 var(--edge) !important;
+}
+:is(html.light, [data-theme="light"]) :is(
+  .shadow-\[0_2px_0_0_\#131f24\], .shadow-\[0_2px_0_0_\#101a1f\]
+) {
+  box-shadow: 0 2px 0 0 var(--edge) !important;
 }
 
-/* Modal Shadows */
-html.light .shadow-\[0_12px_40px_rgba\(0\,0\,0\,0\.85\)\],
-[data-theme="light"] .shadow-\[0_12px_40px_rgba\(0\,0\,0\,0\.85\)\],
-html.light .shadow-\[0_-12px_45px_rgba\(0\,0\,0\,0\.85\)\],
-[data-theme="light"] .shadow-\[0_-12px_45px_rgba\(0\,0\,0\,0\.85\)\] {
-  box-shadow: 0 8px 24px rgb(15 27 45 / 0.10) !important;
+/* Modal */
+:is(html.light, [data-theme="light"]) :is(
+  .shadow-\[0_12px_40px_rgba\(0\,0\,0\,0\.85\)\],
+  .shadow-\[0_-12px_45px_rgba\(0\,0\,0\,0\.85\)\]
+) {
+  box-shadow: var(--shadow-modal) !important;
 }
 
-/* ─── 3. Sidebars & Layout ─── */
-html.light aside,
-[data-theme="light"] aside {
-  background-color: #FAFBFD !important;
-  border-right-color: #D3DBE5 !important;
-  border-left-color: #D3DBE5 !important;
+/* ─── Layout ──────────────────────────────────────────────────────────── */
+
+:is(html.light, [data-theme="light"]) aside {
+  background-color: var(--bg-surface) !important;
+  border-color: var(--border) !important;
 }
 
-html.light header,
-[data-theme="light"] header {
-  background-color: rgba(250, 251, 253, 0.96) !important;
-  border-bottom-color: #D3DBE5 !important;
+:is(html.light, [data-theme="light"]) header {
+  background-color: rgb(255 255 255 / 0.96) !important;
+  border-bottom-color: var(--border) !important;
 }
 
-html.light nav,
-[data-theme="light"] nav {
-  background-color: rgba(250, 251, 253, 0.98) !important;
-  border-top-color: #D3DBE5 !important;
+/* Chỉ nav cố định ở đáy (mobile). Không đụng tab/breadcrumb trong nội dung.
+   Nếu thanh nav của bạn dùng class khác, sửa selector này. */
+:is(html.light, [data-theme="light"]) nav:is(.fixed, [class*="bottom-0"]) {
+  background-color: rgb(255 255 255 / 0.98) !important;
+  border-top-color: var(--border) !important;
 }
 
-/* Sidebar Nav Items */
-html.light .sidebar-nav-item,
-[data-theme="light"] .sidebar-nav-item {
-  color: #44546A !important;
-  font-weight: 700 !important;
+:is(html.light, [data-theme="light"]) .sidebar-nav-item {
+  color: var(--text-2) !important;
+  font-weight: 600 !important;
 }
-html.light .sidebar-nav-item svg,
-[data-theme="light"] .sidebar-nav-item svg {
-  color: #5F6E84 !important;
+:is(html.light, [data-theme="light"]) .sidebar-nav-item svg {
+  color: var(--text-3) !important;
 }
-html.light .sidebar-nav-item:hover,
-[data-theme="light"] .sidebar-nav-item:hover {
-  background-color: #E6ECF3 !important;
-  color: #0F1B2D !important;
+:is(html.light, [data-theme="light"]) .sidebar-nav-item:hover {
+  background-color: var(--bg-surface-2) !important;
+  color: var(--text-1) !important;
 }
-
-/* ─── 4. Text Hierarchy trong Light Mode ─── */
-html.light h1, html.light h2, html.light h3, html.light h4,
-[data-theme="light"] h1, [data-theme="light"] h2, [data-theme="light"] h3, [data-theme="light"] h4 {
-  color: #0F1B2D;
+/* Mục đang chọn phải nhìn ra ngay, không chỉ khác hover */
+:is(html.light, [data-theme="light"]) .sidebar-nav-item[aria-current="page"] {
+  color: var(--text-1) !important;
+  background-color: var(--bg-surface-2) !important;
 }
 
-html.light aside .text-white,
-[data-theme="light"] aside .text-white,
-html.light header .text-white,
-[data-theme="light"] header .text-white,
-html.light .text-slate-100,
-[data-theme="light"] .text-slate-100 {
-  color: #0F1B2D !important;
+/* ─── Chữ ─────────────────────────────────────────────────────────────── */
+
+:is(html.light, [data-theme="light"]) :is(h1, h2, h3, h4) {
+  color: var(--text-1);
+}
+:is(html.light, [data-theme="light"]) :is(
+  aside .text-white, header .text-white, .text-slate-100
+) {
+  color: var(--text-1) !important;
+}
+:is(html.light, [data-theme="light"]) :is(.text-slate-200, .text-slate-300) {
+  color: var(--text-2) !important;
+}
+:is(html.light, [data-theme="light"]) .text-slate-400 {
+  color: var(--text-2) !important;   /* 400 vẫn là chữ đọc được, không hạ xuống mức phụ */
+}
+:is(html.light, [data-theme="light"]) .text-slate-500 {
+  color: var(--text-3) !important;
 }
 
-html.light .text-slate-200,
-[data-theme="light"] .text-slate-200,
-html.light .text-slate-300,
-[data-theme="light"] .text-slate-300 {
-  color: #44546A !important;
+/* ─── Nút ─────────────────────────────────────────────────────────────── */
+
+/* Nền đậm → chữ trắng */
+:is(html.light, [data-theme="light"]) :is(
+  .btn-chunky-primary, .btn-chunky-danger, .btn-chunky-gem,
+  button.bg-\[\#1D64EC\], button.bg-\[\#F43F5E\], button.bg-\[\#2A6FDB\],
+  button.bg-\[\#258540\], button.bg-\[\#D23636\]
+) {
+  color: #fff !important;
 }
 
-html.light .text-slate-400,
-[data-theme="light"] .text-slate-400,
-html.light .text-slate-500,
-[data-theme="light"] .text-slate-500 {
-  color: #5F6E84 !important;
+/* Nền sáng → chữ mực. #12B36C với chữ trắng chỉ đạt ~2.7:1 (trượt AA) */
+:is(html.light, [data-theme="light"]) :is(
+  .btn-chunky-ok, button.bg-\[\#12B36C\], .btn-chunky-warn, .btn-chunky-gold
+) {
+  color: var(--text-1) !important;
 }
 
-/* Nút chữ trắng vẫn giữ màu trắng */
-html.light .btn-chunky-primary,
-html.light .btn-chunky-ok,
-html.light .btn-chunky-danger,
-html.light .btn-chunky-gem,
-[data-theme="light"] .btn-chunky-primary,
-[data-theme="light"] .btn-chunky-ok,
-[data-theme="light"] .btn-chunky-danger,
-[data-theme="light"] .btn-chunky-gem,
-html.light button.bg-\[\#2A6FDB\],
-[data-theme="light"] button.bg-\[\#2A6FDB\],
-html.light button.bg-\[\#258540\],
-[data-theme="light"] button.bg-\[\#258540\],
-html.light button.bg-\[\#D23636\],
-[data-theme="light"] button.bg-\[\#D23636\] {
-  color: #ffffff !important;
-}
-
-/* Nút warn và gold dùng chữ mực #1A1205 */
-html.light .btn-chunky-warn,
-html.light .btn-chunky-gold,
-[data-theme="light"] .btn-chunky-warn,
-[data-theme="light"] .btn-chunky-gold {
-  color: #1A1205 !important;
+/* Focus bàn phím */
+:is(html.light, [data-theme="light"]) :is(button, a, input, select, textarea):focus-visible {
+  outline: 2px solid #1D64EC;
+  outline-offset: 2px;
 }

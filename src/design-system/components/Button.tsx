@@ -6,7 +6,7 @@ import { spring } from '@/design-system/motion/presets';
 import { haptic } from '@/lib/haptic';
 
 export const buttonVariants = cva(
-  'inline-flex items-center justify-center font-black transition-all select-none cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 disabled:active:translate-y-0 disabled:active:shadow-[0_4px_0_0_var(--border)]',
+  'inline-flex items-center justify-center font-black transition-all select-none cursor-pointer disabled:cursor-not-allowed disabled:bg-[var(--bg-surface-2)] disabled:text-[var(--text-tertiary)] disabled:border disabled:border-[var(--border)] disabled:shadow-[0_4px_0_0_var(--edge-neutral)] disabled:active:translate-y-0',
   {
     variants: {
       variant: {

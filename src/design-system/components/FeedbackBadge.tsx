@@ -54,7 +54,7 @@ export const FeedbackBadge: React.FC<FeedbackBadgeProps> = ({
       className={`relative rounded-full shrink-0 flex items-center justify-center select-none overflow-visible ${sizeClasses} ${config.border} ${config.bg} ${config.shadow} ${className}`}
     >
       {/* 3D Specular Highlight Arc */}
-      <div className="absolute top-1 left-2 right-2 h-1/3 rounded-full bg-gradient-to-b from-white/35 to-transparent pointer-events-none" />
+      <div className="absolute top-1 left-2 right-2 h-1/3 rounded-full pointer-events-none bg-white/35" />
 
       {/* Inner Icon */}
       {type === 'check' && (

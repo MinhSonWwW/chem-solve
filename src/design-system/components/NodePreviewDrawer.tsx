@@ -5,6 +5,7 @@ import { Button } from './Button';
 import { Mascot } from './Mascot';
 import { MathText } from './MathText';
 import { sound } from '@/lib/audio';
+import { GAMIFICATION } from '@/config/gamification';
 import type { Lesson, NodeInfo } from '@/content/curriculum';
 
 export interface NodePreviewDrawerProps {
@@ -30,7 +31,7 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
   isCompleted,
   bestAccuracy,
   prerequisiteTitle,
-  hearts = 5,
+  hearts = GAMIFICATION.hearts.max,
   onGoToPractice,
   onClose,
   onStart,
@@ -92,7 +93,7 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
               {/* Title & Info */}
               <div className="space-y-1">
                 <span
-                  className={`text-[10px] font-black uppercase tracking-wider ${
+                  className={`text-[11px] font-black ${
                     isTheory
                       ? 'text-[var(--slate-fg)]'
                       : isChest
@@ -103,11 +104,11 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
                   }`}
                 >
                   {isTheory
-                    ? '📖 LÝ THUYẾT TRỌNG TÂM'
+                    ? 'Lý thuyết trọng tâm'
                     : isChest
-                    ? '🎁 RƯƠNG KHO BÁU PHẦN THƯỞNG'
+                    ? 'Rương kho báu phần thưởng'
                     : isCheckpoint
-                    ? '👑 THỬ THÁCH TRÙM CUỐI (BOSS)'
+                    ? 'Thử thách trùm cuối (boss)'
                     : lesson?.title}
                 </span>
                 <h2 className="text-lg font-black text-[var(--text-primary)]">
@@ -126,7 +127,7 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
                     {isTheory
                       ? 'Đã hoàn thành phần lý thuyết'
                       : isChest
-                      ? 'Đã mở rương nhận thưởng (+30 💎 · +50 XP)'
+                      ? 'Đã mở rương nhận thưởng (+30 · +50 XP)'
                       : `Đã hoàn thành · Chính xác: ${Math.round((bestAccuracy ?? 1) * 100)}%`}
                   </span>
                 </div>
@@ -138,9 +139,9 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
                   <div className="space-y-2.5">
                     <div className="p-3.5 rounded-2xl bg-[var(--err-tint)] border border-[var(--err-edge)] flex flex-col items-center justify-center gap-1.5 text-xs text-[var(--err-fg)]">
                       <div className="flex items-center gap-1.5 text-[var(--err-fg)] font-bold">
-                        <span>⚠️ Bạn đã hết tim (0/5)</span>
+                        <span>Bạn đã hết tim (0/{GAMIFICATION.hearts.max})</span>
                       </div>
-                      <p className="text-[11px] text-[var(--text-secondary)] font-normal">
+                      <p className="text-xs text-[var(--text-secondary)] font-normal">
                         Hãy giải bài tập trong mục <span className="text-[var(--warn-fg)] font-bold">Luyện tập</span> để hồi phục tim trước khi bắt đầu bài mới nhé!
                       </p>
                     </div>
@@ -155,7 +156,7 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
                         else onClose();
                       }}
                     >
-                      <span>ĐẾN TRANG BÀI TẬP (+1 TIM)</span>
+                      <span>Đến trang bài tập (+1 tim)</span>
                     </Button>
                   </div>
                 ) : isChest && isUnlocked ? (
@@ -175,7 +176,7 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
                     <Gift
                       className="w-5 h-5"
                     />
-                    <span>{isCompleted ? 'ĐÃ NHẬN THƯỞNG' : 'MỞ RƯƠNG (+30 💎 · +50 XP)'}</span>
+                    <span>{isCompleted ? 'Đã nhận thưởng' : 'Mở rương (+30 · +50 XP)'}</span>
                   </Button>
                 ) : isUnlocked ? (
                   <Button
@@ -198,15 +199,15 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
                     <span>
                       {isTheory
                         ? isCompleted
-                          ? 'XEM LẠI LÝ THUYẾT'
-                          : 'HỌC LÝ THUYẾT (2 PHÚT)'
+                          ? 'Xem lại lý thuyết'
+                          : 'Học lý thuyết (2 phút)'
                         : isCheckpoint
                         ? isCompleted
-                          ? 'KHIÊU CHIẾN LẠI TRÙM'
-                          : 'KHIÊU CHIẾN TRÙM CUỐI'
+                          ? 'Khiêu chiến lại trùm'
+                          : 'Khiêu chiến trùm cuối'
                         : isCompleted
-                        ? 'ÔN TẬP LẠI'
-                        : 'BẮT ĐẦU CHẶNG'}
+                        ? 'Ôn tập lại'
+                        : 'Bắt đầu chặng'}
                     </span>
                   </Button>
                 ) : (
@@ -217,11 +218,11 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
                         <span>Chưa mở khóa</span>
                       </div>
                       {prerequisiteTitle ? (
-                        <p className="text-[11px] text-[var(--text-secondary)] font-normal">
+                        <p className="text-xs text-[var(--text-secondary)] font-normal">
                           Cần hoàn thành: <span className="font-bold text-[var(--subject-fg)]">{prerequisiteTitle}</span>
                         </p>
                       ) : (
-                        <p className="text-[11px] text-[var(--text-tertiary)] font-normal">
+                        <p className="text-xs text-[var(--text-tertiary)] font-normal">
                           Hoàn thành các chặng trước để mở khóa bài này
                         </p>
                       )}
@@ -235,7 +236,7 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
                         onClose();
                       }}
                     >
-                      ĐÃ HIỂU
+                      Đã hiểu
                     </Button>
                   </div>
                 )}
@@ -248,14 +249,14 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
                 <Mascot state="thinking" size="lg" />
               </div>
               <div className="space-y-1.5">
-                <span className="text-[10px] font-black uppercase tracking-wider text-amber-400">
+                <span className="text-[11px] font-black text-[var(--gold-fg)]">
                   Đang phát triển
                 </span>
                 <h2 className="text-lg font-black text-slate-100">
                   {lesson?.title}
                 </h2>
                 <p className="text-xs text-slate-400 leading-relaxed font-medium">
-                  Nội dung bài học này đang được đội ngũ Chem-Solve biên soạn theo SGK mới. Hãy luyện tập trước với bài học có sẵn nhé!
+                  Nội dung bài học này đang được đội ngũ Sci-Solve biên soạn theo SGK mới. Hãy luyện tập trước với bài học có sẵn nhé!
                 </p>
               </div>
               <Button
@@ -267,7 +268,7 @@ export const NodePreviewDrawer: React.FC<NodePreviewDrawerProps> = ({
                   onClose();
                 }}
               >
-                ĐÃ HIỂU
+                Đã hiểu
               </Button>
             </>
           )}

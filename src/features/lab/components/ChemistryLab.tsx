@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useMemo } from 'react';
+import React, { useState, useCallback, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import {
   FlaskConical,
@@ -10,8 +10,14 @@ import {
 import { REAGENTS, evaluateReaction } from '../chemEngine';
 import type { ReagentId, ChemistryReactionResult } from '../types';
 import { sound } from '@/lib/audio';
+import { Formula } from '@/design-system/components/Formula';
 
-export const ChemistryLab: React.FC = () => {
+export interface ChemistryLabProps {
+  /** Fired once the Zn + HCl → H2↑ mission experiment has actually been performed. */
+  onAchieve?: () => void;
+}
+
+export const ChemistryLab: React.FC<ChemistryLabProps> = ({ onAchieve }) => {
   const [selectedReagents, setSelectedReagents] = useState<ReagentId[]>([]);
   const [activePipette, setActivePipette] = useState<ReagentId | null>(null);
   const [isDropping, setIsDropping] = useState(false);
@@ -20,6 +26,14 @@ export const ChemistryLab: React.FC = () => {
   const reactionResult: ChemistryReactionResult | null = useMemo(() => {
     return evaluateReaction(selectedReagents);
   }, [selectedReagents]);
+
+  const missionDone =
+    selectedReagents.includes('zinc') &&
+    selectedReagents.includes('hcl') &&
+    !!reactionResult?.gasBubbles;
+  useEffect(() => {
+    if (missionDone) onAchieve?.();
+  }, [missionDone, onAchieve]);
 
   // Color of liquid in test tube
   const liquidColor = useMemo(() => {
@@ -57,21 +71,21 @@ export const ChemistryLab: React.FC = () => {
   return (
     <div className="space-y-4">
       {/* Top Banner / Mode Explanation */}
-      <div className="p-3.5 rounded-2xl bg-[#18272f] border-2 border-[#2e4756] flex items-center justify-between gap-3 shadow-[0_3px_0_0_#101a1f]">
+      <div className="p-3.5 rounded-2xl bg-[var(--bg-surface)] border-2 border-[var(--border)] flex items-center justify-between gap-3 shadow-[0_3px_0_0_var(--edge-neutral)]">
         <div className="flex items-center gap-2.5 min-w-0">
-          <div className="w-9 h-9 rounded-xl bg-sky-500/20 text-sky-400 border border-sky-500/40 flex items-center justify-center shrink-0">
+          <div className="w-9 h-9 rounded-xl bg-sky-500/20 text-[var(--chem-fg)] border border-sky-500/40 flex items-center justify-center shrink-0">
             <FlaskConical className="w-5 h-5" />
           </div>
           <div>
-            <h3 className="text-xs sm:text-sm font-black text-white">Bàn Thí Nghiệm Hóa Học Ảo</h3>
-            <p className="text-[11px] text-slate-400 font-medium">
+            <h3 className="text-xs sm:text-sm font-black text-[var(--text-primary)]">Bàn thí nghiệm hóa học ảo</h3>
+            <p className="text-xs text-slate-400 font-medium">
               Nhỏ hóa chất vào ống nghiệm để quan sát đổi màu, sủi bọt khí và kết tủa.
             </p>
           </div>
         </div>
         <button
           onClick={handleReset}
-          className="px-3 py-1.5 rounded-xl bg-[#20333d] hover:bg-[#ff4b4b]/20 hover:border-[#ff4b4b]/50 border-2 border-[#2e4756] text-slate-300 hover:text-[#ff4b4b] text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer shrink-0 shadow-[0_2px_0_0_#131f24] active:translate-y-[2px] active:shadow-none"
+          className="px-3 py-1.5 rounded-xl bg-[var(--bg-surface-2)] hover:bg-[var(--err-fill)]/20 hover:border-[var(--err-fill)]/50 border-2 border-[var(--border)] text-slate-300 hover:text-[var(--err-fill)] text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer shrink-0 shadow-[0_2px_0_0_var(--edge-neutral)] active:translate-y-[2px] active:shadow-none"
           title="Rửa sạch ống nghiệm"
         >
           <RotateCcw className="w-3.5 h-3.5" />
@@ -82,13 +96,13 @@ export const ChemistryLab: React.FC = () => {
       {/* Main Lab Bench: Workbench Layout */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
         {/* Left Column: Reagent Rack */}
-        <div className="md:col-span-5 p-3.5 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#101a1f] space-y-3">
+        <div className="md:col-span-5 p-3.5 rounded-3xl bg-[var(--bg-surface)] border-2 border-[var(--border)] shadow-[0_4px_0_0_var(--edge-neutral)] space-y-3">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-black text-white uppercase tracking-wider flex items-center gap-1.5">
-              <Droplets className="w-4 h-4 text-sky-400" />
-              Kệ Hóa Chất
+            <span className="text-xs font-black text-[var(--text-primary)] flex items-center gap-1.5">
+              <Droplets className="w-4 h-4 text-[var(--chem-fg)]" />
+              Kệ hóa chất
             </span>
-            <span className="text-[10px] font-bold text-slate-400">Chạm để nhỏ</span>
+            <span className="text-[11px] font-bold text-slate-400">Chạm để nhỏ</span>
           </div>
 
           <div className="grid grid-cols-2 gap-2">
@@ -104,17 +118,17 @@ export const ChemistryLab: React.FC = () => {
                   className={`p-2.5 rounded-xl border-2 text-left transition-all duration-150 cursor-pointer select-none flex flex-col justify-between ${
                     isAdded
                       ? 'bg-slate-900/60 border-slate-700/60 opacity-40 cursor-not-allowed'
-                      : 'bg-[#20333d] border-[#2e4756] hover:border-sky-400/80 hover:bg-[#263e4a] shadow-[0_3px_0_0_#131f24] active:translate-y-[2px] active:shadow-none'
+                      : 'bg-[var(--bg-surface-2)] border-[var(--border)] hover:border-sky-400/80 hover:bg-[var(--bg-surface-2)] shadow-[0_3px_0_0_var(--edge-neutral)] active:translate-y-[2px] active:shadow-none'
                   }`}
                 >
                   <div className="flex items-center justify-between gap-1 mb-1">
-                    <span className="font-mono font-black text-xs text-sky-300">{r.formula}</span>
+                    <span className="font-mono font-black text-xs text-[var(--chem-fg)]"><Formula code={r.formula} /></span>
                     <span
                       className="w-3 h-3 rounded-full border border-white/20 shrink-0"
                       style={{ backgroundColor: r.color }}
                     />
                   </div>
-                  <span className="text-[11px] font-bold text-slate-200 line-clamp-1">{r.name}</span>
+                  <span className="text-xs font-bold text-slate-200 line-clamp-1">{r.name}</span>
                 </button>
               );
             })}
@@ -124,7 +138,7 @@ export const ChemistryLab: React.FC = () => {
         {/* Right Column: Active Reaction Vessel & Phenomena */}
         <div className="md:col-span-7 flex flex-col gap-3">
           {/* Reaction Vessel Visualizer */}
-          <div className="p-4 rounded-3xl bg-[#0f171c] border-2 border-[#2e4756] shadow-[0_4px_0_0_#091014] flex flex-col items-center justify-center relative min-h-[260px] overflow-hidden">
+          <div className="p-4 rounded-3xl bg-[var(--bg-canvas)] border-2 border-[var(--border)] shadow-[0_4px_0_0_var(--edge-neutral)] flex flex-col items-center justify-center relative min-h-[260px] overflow-hidden">
             {/* Background Lab Grid */}
             <div
               className="absolute inset-0 opacity-10 pointer-events-none"
@@ -210,15 +224,15 @@ export const ChemistryLab: React.FC = () => {
             {/* Solid Reagents sitting at bottom of tube */}
             <div className="mt-2 text-center">
               {selectedReagents.length === 0 ? (
-                <span className="text-[11px] text-slate-500 font-bold">Ống nghiệm trống</span>
+                <span className="text-xs text-slate-500 font-bold">Ống nghiệm trống</span>
               ) : (
                 <div className="flex flex-wrap gap-1 justify-center max-w-[200px]">
                   {selectedReagents.map((id) => (
                     <span
                       key={id}
-                      className="px-2 py-0.5 rounded-md bg-[#20333d] border border-[#2e4756] text-[10px] font-mono font-bold text-slate-300"
+                      className="px-2 py-0.5 rounded-md bg-[var(--bg-surface-2)] border border-[var(--border)] text-[11px] font-mono font-bold text-slate-300"
                     >
-                      {REAGENTS[id].formula}
+                      <Formula code={REAGENTS[id].formula} />
                     </span>
                   ))}
                 </div>
@@ -231,18 +245,18 @@ export const ChemistryLab: React.FC = () => {
             <motion.div
               initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              className="p-3.5 rounded-2xl bg-gradient-to-br from-[#18272f] to-[#1a2d39] border-2 border-emerald-500/50 shadow-[0_3px_0_0_#064e3b] space-y-2"
+              className="p-3.5 rounded-2xl border-2 border-emerald-500/50 shadow-[0_3px_0_0_var(--bio-edge)] space-y-2 bg-[var(--bg-surface)]"
             >
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span className="text-xs font-black text-emerald-300 uppercase tracking-wide">
-                  Phát Hiện Hiện Tượng Phản Ứng!
+                <CheckCircle2 className="w-4 h-4 text-[var(--ok-fg)] shrink-0" />
+                <span className="text-xs font-black text-[var(--ok-fg)] tracking-wide">
+                  Phát hiện hiện tượng phản ứng!
                 </span>
               </div>
 
               {/* Equation */}
               <div className="p-2 rounded-xl bg-black/40 border border-emerald-500/30 text-center font-mono font-black text-sm text-emerald-300">
-                {reactionResult.equation}
+                <Formula code={reactionResult.equation} />
               </div>
 
               {/* Phenomenon description */}
@@ -251,15 +265,14 @@ export const ChemistryLab: React.FC = () => {
               </p>
 
               {/* Scientific explanation */}
-              <p className="text-[11px] text-slate-400 font-medium leading-relaxed border-t border-[#2e4756] pt-1.5">
-                💡 <span className="font-bold text-slate-300">Bản chất:</span> {reactionResult.explanation}
+              <p className="text-xs text-slate-400 font-medium leading-relaxed border-t border-[var(--border)] pt-1.5"> <span className="font-bold text-slate-300">Bản chất:</span> {reactionResult.explanation}
               </p>
             </motion.div>
           ) : (
-            <div className="p-3.5 rounded-2xl bg-[#18272f] border-2 border-[#2e4756] flex items-center gap-2.5 text-slate-400">
-              <Info className="w-4 h-4 text-sky-400 shrink-0" />
+            <div className="p-3.5 rounded-2xl bg-[var(--bg-surface)] border-2 border-[var(--border)] flex items-center gap-2.5 text-slate-400">
+              <Info className="w-4 h-4 text-[var(--chem-fg)] shrink-0" />
               <p className="text-xs font-medium">
-                Hãy phối hợp các chất hóa học để kích hoạt hiện tượng phản ứng (ví dụ: Axit HCl + Quỳ tím, hoặc HCl + Kẽm Zn).
+                Hãy phối hợp các chất hóa học để kích hoạt hiện tượng phản ứng (ví dụ: Acid HCl + Quỳ tím, hoặc HCl + Kẽm Zn).
               </p>
             </div>
           )}

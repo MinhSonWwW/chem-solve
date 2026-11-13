@@ -130,15 +130,15 @@ export const CurrencyIcon: React.FC<CurrencyIconProps> = ({
         <span
           className={cn(
             s.box,
-            'inline-flex items-center justify-center rounded-lg bg-sky-500/20 border border-sky-400/50 text-sky-300 shrink-0 shadow-sm align-middle',
+            'inline-flex items-center justify-center rounded-lg bg-sky-500/20 border border-sky-400/50 text-[var(--chem-fg)] shrink-0 shadow-sm align-middle',
             className
           )}
           title="Khiên đóng băng"
         >
           {type === 'freeze' ? (
-            <Snowflake className="w-full h-full p-0.5 text-sky-300" />
+            <Snowflake className="w-full h-full p-0.5 text-[var(--chem-fg)]" />
           ) : (
-            <Shield className="w-full h-full p-0.5 text-sky-400" />
+            <Shield className="w-full h-full p-0.5 text-[var(--chem-fg)]" />
           )}
         </span>
       );

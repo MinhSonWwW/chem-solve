@@ -112,12 +112,29 @@ describe('engine/checkers', () => {
       expect(res.status).toBe('correct');
     });
 
-    it('warns partial for balanced but not-simplest coefficients', () => {
+    it('warns partial for balanced but not-simplest coefficients with common divisor factor', () => {
       const res = checkAnswer(eqAnswer, [4, 2, 4]);
       expect(res.status).toBe('partial');
       if (res.status === 'partial') {
         expect(res.reason).toBe('not-simplest');
+        expect(res.message).toContain('chia hết cho 2');
       }
+
+      const cuAgAnswer: Answer = {
+        kind: 'equation',
+        mode: 'fill-coefficients',
+        reactants: ['Cu', 'AgNO3'],
+        products: ['Cu(NO3)2', 'Ag'],
+        coefficients: [1, 2, 1, 2]
+      };
+      const scaledRes = checkAnswer(cuAgAnswer, [2, 4, 2, 4]);
+      expect(scaledRes.status).toBe('partial');
+      if (scaledRes.status === 'partial') {
+        expect(scaledRes.reason).toBe('not-simplest');
+        expect(scaledRes.message).toContain('2, 4, 2, 4');
+        expect(scaledRes.message).toContain('chia hết cho 2');
+      }
+      expect(checkAnswer(cuAgAnswer, [1, 2, 1, 2]).status).toBe('correct');
     });
 
     it('rejects unbalanced coefficients and reports error', () => {

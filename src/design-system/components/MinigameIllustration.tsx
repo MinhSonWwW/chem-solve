@@ -5,6 +5,8 @@ export type MinigameId =
   | 'equation-balance'
   | 'formula-builder'
   | 'reaction-builder'
+  | 'formula-meteor'
+  | 'eco-rescue'
   | 'match'
   | 'sort'
   | 'speed'
@@ -257,6 +259,42 @@ export const MinigameIllustration: React.FC<MinigameIllustrationProps> = ({
           <path d="M 28 32 C 32 26, 32 38, 36 32" fill="none" stroke="var(--gold)" strokeWidth={2.5} strokeLinecap="round" />
           {/* Tia sáng tia chớp ở điểm nối */}
           <path d="M 32 23 L 34 27 L 31 29 L 33 33" stroke="var(--gold)" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      );
+
+    /* ─── Thiên thạch vũ trụ: Đá thiên thạch rực lửa + tia laser ─── */
+    case 'formula-meteor':
+      return (
+        <svg {...common}>
+          {/* Vệt đuôi lửa thiên thạch */}
+          <path d="M 12 8 Q 28 14, 38 24 L 46 16 Q 36 28, 42 36 Z" fill="var(--warn)" opacity={0.6} />
+          <path d="M 18 12 Q 30 18, 38 28" stroke="var(--gold)" strokeWidth={2.5} strokeLinecap="round" />
+          {/* Khối đá thiên thạch */}
+          <circle cx="42" cy="38" r="14" fill="var(--err)" stroke="var(--ink)" strokeWidth={2.5} />
+          <circle cx="40" cy="34" r="3" fill="var(--err-shade)" />
+          <circle cx="46" cy="40" r="2" fill="var(--err-shade)" />
+          {/* Lửa bọc ngoài */}
+          <path d="M 32 30 Q 30 22, 38 24 Q 42 18, 48 24 Q 56 26, 54 36" fill="none" stroke="var(--gold)" strokeWidth={2} strokeLinecap="round" />
+          {/* Tia laser pháo phòng thủ từ dưới */}
+          <line x1="14" y1="56" x2="34" y2="44" stroke="var(--chem)" strokeWidth={3} strokeLinecap="round" />
+          <line x1="14" y1="56" x2="34" y2="44" stroke="#ffffff" strokeWidth={1.5} strokeLinecap="round" />
+        </svg>
+      );
+
+    /* ─── Cứu hộ môi trường: Quả địa cầu mầm cây + giọt nước trong ─── */
+    case 'eco-rescue':
+      return (
+        <svg {...common}>
+          {/* Địa cầu / Vòng sinh thái */}
+          <circle cx="32" cy="32" r="22" fill="var(--bio-soft)" stroke="var(--ink)" strokeWidth={2.5} />
+          {/* Đại dương & Lục địa */}
+          <path d="M 18 26 Q 24 20, 32 26 Q 40 32, 46 28 Q 50 36, 44 44 Q 32 54, 20 44 Z" fill="var(--bio)" opacity={0.7} />
+          {/* Mầm cây vươn lên */}
+          <path d="M 32 46 L 32 24" stroke="var(--ink)" strokeWidth={2.5} strokeLinecap="round" />
+          <path d="M 32 28 C 24 24, 22 16, 32 16 C 34 22, 34 26, 32 28 Z" fill="var(--bio)" stroke="var(--ink)" strokeWidth={1.5} />
+          <path d="M 32 32 C 40 28, 42 20, 32 20 C 30 26, 30 30, 32 32 Z" fill="var(--gold)" stroke="var(--ink)" strokeWidth={1.5} />
+          {/* Giọt nước sạch */}
+          <path d="M 20 34 C 20 30, 24 24, 24 24 C 24 24, 28 30, 28 34 C 28 36, 26 38, 24 38 C 22 38, 20 36, 20 34 Z" fill="var(--chem)" stroke="var(--ink)" strokeWidth={1.5} />
         </svg>
       );
 

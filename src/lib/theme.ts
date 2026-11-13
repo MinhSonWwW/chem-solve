@@ -3,17 +3,19 @@ import { create } from 'zustand';
 export type Theme = 'dark' | 'light';
 
 const THEME_STORAGE_KEY = 'chem_theme';
+const THEME_EXPLICIT_KEY = 'chem_theme_explicit';
 
 function getInitialTheme(): Theme {
   if (typeof window === 'undefined') return 'dark';
+  const explicit = localStorage.getItem(THEME_EXPLICIT_KEY);
   const saved = localStorage.getItem(THEME_STORAGE_KEY);
-  if (saved === 'light' || saved === 'dark') {
+  if (explicit === '1' && (saved === 'light' || saved === 'dark')) {
     return saved;
   }
   return 'dark';
 }
 
-function applyThemeToDom(theme: Theme) {
+function applyThemeToDom(theme: Theme, persist = false) {
   if (typeof document === 'undefined') return;
   const root = document.documentElement;
   const body = document.body;
@@ -32,7 +34,12 @@ function applyThemeToDom(theme: Theme) {
     body.classList.remove('light');
   }
 
-  localStorage.setItem(THEME_STORAGE_KEY, theme);
+  if (persist) {
+    localStorage.setItem(THEME_STORAGE_KEY, theme);
+    localStorage.setItem(THEME_EXPLICIT_KEY, '1');
+  } else if (localStorage.getItem(THEME_EXPLICIT_KEY) !== '1') {
+    localStorage.removeItem(THEME_STORAGE_KEY);
+  }
   window.dispatchEvent(new CustomEvent('chem_theme_changed', { detail: { theme } }));
 }
 
@@ -44,20 +51,20 @@ interface ThemeState {
 
 export const useTheme = create<ThemeState>((set, get) => {
   const initialTheme = getInitialTheme();
-  // Apply initially on store load
+  // Apply initially on store load without forcing user preference into localStorage
   if (typeof window !== 'undefined') {
-    applyThemeToDom(initialTheme);
+    applyThemeToDom(initialTheme, false);
   }
 
   return {
     theme: initialTheme,
     setTheme: (theme: Theme) => {
-      applyThemeToDom(theme);
+      applyThemeToDom(theme, true);
       set({ theme });
     },
     toggleTheme: () => {
       const nextTheme = get().theme === 'dark' ? 'light' : 'dark';
-      applyThemeToDom(nextTheme);
+      applyThemeToDom(nextTheme, true);
       set({ theme: nextTheme });
     },
   };

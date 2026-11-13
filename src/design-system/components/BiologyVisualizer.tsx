@@ -60,7 +60,7 @@ const ABO_DATA: Record<
     canReceiveFrom: ['O'],
     canDonateTo: ['O', 'A', 'B', 'AB'],
     color: 'bg-emerald-500/20',
-    textColor: 'text-emerald-400',
+    textColor: 'text-[var(--ok-fg)]',
     borderColor: 'border-emerald-500/40',
   },
   A: {
@@ -69,7 +69,7 @@ const ABO_DATA: Record<
     canReceiveFrom: ['O', 'A'],
     canDonateTo: ['A', 'AB'],
     color: 'bg-sky-500/20',
-    textColor: 'text-sky-400',
+    textColor: 'text-[var(--chem-fg)]',
     borderColor: 'border-sky-500/40',
   },
   B: {
@@ -78,7 +78,7 @@ const ABO_DATA: Record<
     canReceiveFrom: ['O', 'B'],
     canDonateTo: ['B', 'AB'],
     color: 'bg-amber-500/20',
-    textColor: 'text-amber-400',
+    textColor: 'text-[var(--gold-fg)]',
     borderColor: 'border-amber-500/40',
   },
   AB: {
@@ -87,10 +87,27 @@ const ABO_DATA: Record<
     canReceiveFrom: ['O', 'A', 'B', 'AB'],
     canDonateTo: ['AB'],
     color: 'bg-purple-500/20',
-    textColor: 'text-purple-400',
+    textColor: 'text-[var(--gem-fg)]',
     borderColor: 'border-purple-500/40',
   },
 };
+
+/** Replicated chromosome (two sister chromatids joined at the centromere), drawn as an X. */
+const ChromosomeRow: React.FC<{ count: number }> = ({ count }) => (
+  <span className="inline-flex items-center gap-1 text-[var(--bio-fg)]" aria-hidden>
+    {Array.from({ length: count }).map((_, i) => (
+      <svg key={i} viewBox="0 0 14 22" className="w-3.5 h-5">
+        <path
+          d="M3 2 Q7 11 3 20 M11 2 Q7 11 11 20"
+          stroke="currentColor"
+          strokeWidth="3.2"
+          strokeLinecap="round"
+          fill="none"
+        />
+      </svg>
+    ))}
+  </span>
+);
 
 export const BiologyVisualizer: React.FC<BiologyVisualizerProps> = ({
   mode,
@@ -148,13 +165,13 @@ const BloodTransfusionSandbox: React.FC<{
       {/* Header */}
       <div className="flex items-center justify-between pb-1.5 border-b border-slate-700/60">
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-xl bg-rose-500/20 border border-rose-500/40 flex items-center justify-center text-rose-400">
+          <div className="w-7 h-7 rounded-xl bg-rose-500/20 border border-rose-500/40 flex items-center justify-center text-[var(--err-fg)]">
             <Droplets className="w-4 h-4" />
           </div>
           <div>
-            <h4 className="text-xs font-black text-white uppercase tracking-wider flex items-center gap-1.5">
-              <span>Mô Phỏng Truyền Máu ABO</span>
-              <span className="text-[10px] text-emerald-400 font-bold lowercase px-1.5 py-0.2 rounded bg-emerald-950/60 border border-emerald-800/60">
+            <h4 className="text-xs font-black text-[var(--text-primary)] flex items-center gap-1.5">
+              <span>Mô phỏng truyền máu ABO</span>
+              <span className="text-[11px] text-emerald-400 font-bold lowercase px-1.5 py-0.2 rounded bg-emerald-950/60 border border-emerald-800/60">
                 bài 33
               </span>
             </h4>
@@ -164,21 +181,21 @@ const BloodTransfusionSandbox: React.FC<{
         {/* Compatibility badge */}
         <span
           className={cn(
-            'text-[10px] font-black px-2.5 py-1 rounded-xl border flex items-center gap-1 transition-all',
+            'text-[11px] font-black px-2.5 py-1 rounded-xl border flex items-center gap-1 transition-all',
             isCompatible
-              ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40 shadow-sm'
-              : 'bg-rose-500/20 text-rose-300 border-rose-500/40 animate-pulse'
+              ? 'bg-emerald-500/20 text-[var(--ok-fg)] border-emerald-500/40 shadow-sm'
+              : 'bg-rose-500/20 text-[var(--err-fg)] border-rose-500/40 '
           )}
         >
           {isCompatible ? (
             <>
-              <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-              <span>TRUYỀN ĐƯỢC (AN TOÀN)</span>
+              <ShieldCheck className="w-3.5 h-3.5 text-[var(--ok-fg)]" />
+              <span>Truyền được (an toàn)</span>
             </>
           ) : (
             <>
-              <AlertTriangle className="w-3.5 h-3.5 text-rose-400" />
-              <span>NGƯNG KẾT HỒNG CẦU (NGUY HIỂM)</span>
+              <AlertTriangle className="w-3.5 h-3.5 text-[var(--err-fg)]" />
+              <span>Ngưng kết hồng cầu (nguy hiểm)</span>
             </>
           )}
         </span>
@@ -189,8 +206,8 @@ const BloodTransfusionSandbox: React.FC<{
         {/* Donor Selector */}
         <div className="p-3 rounded-2xl bg-[var(--bg-canvas)] border-2 border-[var(--border)] space-y-2">
           <div className="flex items-center justify-between">
-            <span className="text-[11px] font-black uppercase text-slate-300 flex items-center gap-1">
-              🩸 Người Cho (Hồng Cầu):
+            <span className="text-xs font-black text-slate-300 flex items-center gap-1">
+              Người Cho (Hồng Cầu):
             </span>
             <span className={cn('text-xs font-black px-2 py-0.5 rounded-lg border', donorInfo.color, donorInfo.textColor, donorInfo.borderColor)}>
               Nhóm {donor}
@@ -209,7 +226,7 @@ const BloodTransfusionSandbox: React.FC<{
                   'py-1.5 rounded-xl text-xs font-black transition-all border',
                   donor === b
                     ? 'bg-rose-500 text-slate-950 border-rose-400 shadow-[0_2px_0_0_var(--err-shade)]'
-                    : 'bg-[var(--bg-elevated)] text-slate-400 border-slate-700/60 hover:text-white'
+                    : 'bg-[var(--bg-elevated)] text-slate-400 border-slate-700/60 hover:text-[var(--text-primary)]'
                 )}
               >
                 {b}
@@ -217,7 +234,7 @@ const BloodTransfusionSandbox: React.FC<{
             ))}
           </div>
 
-          <p className="text-[10px] text-slate-400 leading-tight">
+          <p className="text-[11px] text-slate-400 leading-tight">
             Kháng nguyên: <strong className="text-slate-200">{donorInfo.antigens}</strong>
           </p>
         </div>
@@ -225,8 +242,8 @@ const BloodTransfusionSandbox: React.FC<{
         {/* Patient / Recipient Selector */}
         <div className="p-3 rounded-2xl bg-[var(--bg-canvas)] border-2 border-[var(--border)] space-y-2">
           <div className="flex items-center justify-between">
-            <span className="text-[11px] font-black uppercase text-slate-300 flex items-center gap-1">
-              🏥 Người Nhận (Huyết Tương):
+            <span className="text-xs font-black text-slate-300 flex items-center gap-1">
+              Người Nhận (Huyết Tương):
             </span>
             <span className={cn('text-xs font-black px-2 py-0.5 rounded-lg border', patientInfo.color, patientInfo.textColor, patientInfo.borderColor)}>
               Nhóm {patient}
@@ -245,7 +262,7 @@ const BloodTransfusionSandbox: React.FC<{
                   'py-1.5 rounded-xl text-xs font-black transition-all border',
                   patient === b
                     ? 'bg-[var(--bio-fill)] text-white border-[var(--bio-edge)] shadow-[0_2px_0_0_var(--chem-shade)]'
-                    : 'bg-[var(--bg-elevated)] text-slate-400 border-slate-700/60 hover:text-white'
+                    : 'bg-[var(--bg-elevated)] text-slate-400 border-slate-700/60 hover:text-[var(--text-primary)]'
                 )}
               >
                 {b}
@@ -253,7 +270,7 @@ const BloodTransfusionSandbox: React.FC<{
             ))}
           </div>
 
-          <p className="text-[10px] text-slate-400 leading-tight">
+          <p className="text-[11px] text-slate-400 leading-tight">
             Kháng thể: <strong className="text-slate-200">{patientInfo.antibodies}</strong>
           </p>
         </div>
@@ -285,7 +302,7 @@ const BloodTransfusionSandbox: React.FC<{
               <motion.div
                 animate={{ x: [-2, 2, -2], scale: [0.95, 1.05, 0.95] }}
                 transition={{ duration: 0.25, repeat: Infinity }}
-                className="w-7 h-7 rounded-xl bg-rose-600/80 border border-rose-300 flex items-center justify-center font-black text-white text-[10px]"
+                className="w-7 h-7 rounded-xl bg-rose-600/80 border border-rose-300 flex items-center justify-center font-black text-white text-[11px]"
               >
                 ✕
               </motion.div>
@@ -294,15 +311,15 @@ const BloodTransfusionSandbox: React.FC<{
 
           <div className="text-xs leading-snug">
             {isCompatible ? (
-              <p className="text-emerald-300 font-bold">
-                ✅ Không xảy ra ngưng kết: Huyết tương người nhận ({patient}) không có kháng thể tương ứng chống lại hồng cầu người cho ({donor}).
+              <p className="text-[var(--ok-fg)] font-bold">
+                Không xảy ra ngưng kết: Huyết tương người nhận ({patient}) không có kháng thể tương ứng chống lại hồng cầu người cho ({donor}).
               </p>
             ) : (
-              <p className="text-rose-300 font-bold">
-                ⚠️ Ngưng kết hồng cầu: Kháng thể của người nhận kết dính với kháng nguyên trên hồng cầu người cho, gây tắc mạch máu nguy kịch!
+              <p className="text-[var(--err-fg)] font-bold">
+                Ngưng kết hồng cầu: Kháng thể của người nhận kết dính với kháng nguyên trên hồng cầu người cho, gây tắc mạch máu nguy kịch!
               </p>
             )}
-            <span className="text-[10px] text-slate-400 block mt-0.5">
+            <span className="text-[11px] text-slate-400 block mt-0.5">
               Quy tắc vàng: Nhóm O chuyên cho; Nhóm AB chuyên nhận.
             </span>
           </div>
@@ -320,13 +337,13 @@ const CirculationLoopSandbox: React.FC = () => {
     <div className="space-y-3 relative z-10">
       <div className="flex items-center justify-between pb-1.5 border-b border-slate-700/60">
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-xl bg-rose-500/20 border border-rose-500/40 flex items-center justify-center text-rose-400">
+          <div className="w-7 h-7 rounded-xl bg-rose-500/20 border border-rose-500/40 flex items-center justify-center text-[var(--err-fg)]">
             <Heart className="w-4 h-4 fill-rose-500 animate-pulse" />
           </div>
           <div>
-            <h4 className="text-xs font-black text-white uppercase tracking-wider flex items-center gap-1.5">
-              <span>Hệ Tuần Hoàn Kép & Nhịp Tim</span>
-              <span className="text-[10px] text-emerald-400 font-bold lowercase px-1.5 py-0.2 rounded bg-emerald-950/60 border border-emerald-800/60">
+            <h4 className="text-xs font-black text-[var(--text-primary)] flex items-center gap-1.5">
+              <span>Hệ tuần hoàn kép & nhịp tim</span>
+              <span className="text-[11px] text-emerald-400 font-bold lowercase px-1.5 py-0.2 rounded bg-emerald-950/60 border border-emerald-800/60">
                 bài 33
               </span>
             </h4>
@@ -338,10 +355,10 @@ const CirculationLoopSandbox: React.FC = () => {
           <button
             onClick={() => setActiveLoop('all')}
             className={cn(
-              'px-2 py-0.5 rounded-lg text-[10px] font-bold transition-all',
+              'px-2 py-0.5 rounded-lg text-[11px] font-bold transition-all',
               activeLoop === 'all'
                 ? 'bg-rose-500 text-slate-950 font-black'
-                : 'text-slate-400 hover:text-white'
+                : 'text-slate-400 hover:text-[var(--text-primary)]'
             )}
           >
             Tất cả
@@ -349,10 +366,10 @@ const CirculationLoopSandbox: React.FC = () => {
           <button
             onClick={() => setActiveLoop('pulmonary')}
             className={cn(
-              'px-2 py-0.5 rounded-lg text-[10px] font-bold transition-all',
+              'px-2 py-0.5 rounded-lg text-[11px] font-bold transition-all',
               activeLoop === 'pulmonary'
                 ? 'bg-sky-500 text-slate-950 font-black'
-                : 'text-slate-400 hover:text-white'
+                : 'text-slate-400 hover:text-[var(--text-primary)]'
             )}
           >
             Vòng nhỏ (Phổi)
@@ -360,10 +377,10 @@ const CirculationLoopSandbox: React.FC = () => {
           <button
             onClick={() => setActiveLoop('systemic')}
             className={cn(
-              'px-2 py-0.5 rounded-lg text-[10px] font-bold transition-all',
+              'px-2 py-0.5 rounded-lg text-[11px] font-bold transition-all',
               activeLoop === 'systemic'
                 ? 'bg-rose-500 text-slate-950 font-black'
-                : 'text-slate-400 hover:text-white'
+                : 'text-slate-400 hover:text-[var(--text-primary)]'
             )}
           >
             Vòng lớn (Cơ thể)
@@ -383,19 +400,19 @@ const CirculationLoopSandbox: React.FC = () => {
           )}
         >
           <div className="flex items-center justify-between">
-            <span className="text-xs font-black text-sky-400 uppercase">
+            <span className="text-xs font-black text-[var(--chem-fg)] ">
               1. Vòng tuần hoàn nhỏ (ở Phổi)
             </span>
-            <span className="text-[10px] font-bold text-sky-300 bg-sky-950/60 px-1.5 py-0.5 rounded border border-sky-700/60">
+            <span className="text-[11px] font-bold text-sky-300 bg-sky-950/60 px-1.5 py-0.5 rounded border border-sky-700/60">
               Trao đổi khí
             </span>
           </div>
 
-          <div className="text-[11px] text-slate-300 font-mono space-y-0.5 leading-relaxed bg-[var(--bg-canvas)] p-2 rounded-xl border border-sky-900/50">
+          <div className="text-xs text-slate-300 font-mono space-y-0.5 leading-relaxed bg-[var(--bg-canvas)] p-2 rounded-xl border border-sky-900/50">
             <div className="text-slate-400">Tâm thất phải (máu thẫm)</div>
-            <div className="text-sky-400 font-bold">↳ Động mạch phổi ➜ Mao mạch phổi</div>
-            <div className="text-emerald-400 font-bold">↳ Nhả CO₂ & Nhận O₂ (hóa đỏ tươi)</div>
-            <div className="text-rose-400 font-bold">↳ Tĩnh mạch phổi ➜ Tâm nhĩ trái</div>
+            <div className="text-[var(--chem-fg)] font-bold">↳ Động mạch phổi → Mao mạch phổi</div>
+            <div className="text-[var(--ok-fg)] font-bold">↳ Nhả CO₂ & Nhận O₂ (hóa đỏ tươi)</div>
+            <div className="text-[var(--err-fg)] font-bold">↳ Tĩnh mạch phổi → Tâm nhĩ trái</div>
           </div>
         </div>
 
@@ -409,26 +426,26 @@ const CirculationLoopSandbox: React.FC = () => {
           )}
         >
           <div className="flex items-center justify-between">
-            <span className="text-xs font-black text-rose-400 uppercase">
+            <span className="text-xs font-black text-[var(--err-fg)] ">
               2. Vòng tuần hoàn lớn (Cơ thể)
             </span>
-            <span className="text-[10px] font-bold text-rose-300 bg-rose-950/60 px-1.5 py-0.5 rounded border border-rose-700/60">
+            <span className="text-[11px] font-bold text-rose-300 bg-rose-950/60 px-1.5 py-0.5 rounded border border-rose-700/60">
               Nuôi tế bào
             </span>
           </div>
 
-          <div className="text-[11px] text-slate-300 font-mono space-y-0.5 leading-relaxed bg-[var(--bg-canvas)] p-2 rounded-xl border border-rose-900/50">
-            <div className="text-rose-300 font-bold">Tâm thất trái (máu đỏ tươi)</div>
-            <div className="text-rose-400 font-bold">↳ Động mạch chủ ➜ Mao mạch cơ quan</div>
-            <div className="text-amber-400 font-bold">↳ Cung cấp O₂ & dinh dưỡng (hóa thẫm)</div>
-            <div className="text-sky-400 font-bold">↳ Tĩnh mạch chủ ➜ Tâm nhĩ phải</div>
+          <div className="text-xs text-slate-300 font-mono space-y-0.5 leading-relaxed bg-[var(--bg-canvas)] p-2 rounded-xl border border-rose-900/50">
+            <div className="text-[var(--err-fg)] font-bold">Tâm thất trái (máu đỏ tươi)</div>
+            <div className="text-[var(--err-fg)] font-bold">↳ Động mạch chủ → Mao mạch cơ quan</div>
+            <div className="text-[var(--gold-fg)] font-bold">↳ Cung cấp O₂ & dinh dưỡng (hóa thẫm)</div>
+            <div className="text-[var(--chem-fg)] font-bold">↳ Tĩnh mạch chủ → Tâm nhĩ phải</div>
           </div>
         </div>
       </div>
 
-      <div className="text-[11px] text-slate-400 flex items-center justify-between bg-[var(--bg-canvas)] px-3 py-2 rounded-xl border border-slate-700/60">
-        <span>💡 Tim người có <strong>4 ngăn</strong>: 2 tâm nhĩ ở trên, 2 tâm thất ở dưới.</span>
-        <span className="text-rose-400 font-black">Nhịp tim TB: 75 lần/phút</span>
+      <div className="text-xs text-slate-400 flex items-center justify-between bg-[var(--bg-canvas)] px-3 py-2 rounded-xl border border-slate-700/60">
+        <span>Tim người có <strong>4 ngăn</strong>: 2 tâm nhĩ ở trên, 2 tâm thất ở dưới.</span>
+        <span className="text-[var(--err-fg)] font-black">Nhịp tim TB: 75 lần/phút</span>
       </div>
     </div>
   );
@@ -447,21 +464,21 @@ const EnergyPyramidSandbox: React.FC = () => {
     <div className="space-y-3 relative z-10">
       <div className="flex items-center justify-between pb-1.5 border-b border-slate-700/60">
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400">
+          <div className="w-7 h-7 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-[var(--ok-fg)]">
             <Layers className="w-4 h-4" />
           </div>
           <div>
-            <h4 className="text-xs font-black text-white uppercase tracking-wider flex items-center gap-1.5">
-              <span>Tháp Năng Lượng & Quy Luật 10%</span>
-              <span className="text-[10px] text-emerald-400 font-bold lowercase px-1.5 py-0.2 rounded bg-emerald-950/60 border border-emerald-800/60">
+            <h4 className="text-xs font-black text-[var(--text-primary)] flex items-center gap-1.5">
+              <span>Tháp năng lượng & quy luật 10%</span>
+              <span className="text-[11px] text-emerald-400 font-bold lowercase px-1.5 py-0.2 rounded bg-emerald-950/60 border border-emerald-800/60">
                 bài 44
               </span>
             </h4>
           </div>
         </div>
 
-        <span className="text-[10px] text-amber-300 font-bold bg-amber-950/60 px-2 py-0.5 rounded border border-amber-800/60 flex items-center gap-1">
-          <Flame className="w-3 h-3 text-amber-400" />
+        <span className="text-[11px] text-amber-300 font-bold bg-amber-950/60 px-2 py-0.5 rounded border border-amber-800/60 flex items-center gap-1">
+          <Flame className="w-3 h-3 text-[var(--gold-fg)]" />
           Hao hụt 90% mỗi bậc
         </span>
       </div>
@@ -470,37 +487,37 @@ const EnergyPyramidSandbox: React.FC = () => {
       <div className="space-y-1.5 max-w-md mx-auto pt-1">
         {/* Tier 4 (Apex) */}
         <div className="w-1/3 mx-auto p-1.5 bg-rose-500/20 border-2 border-rose-500/50 rounded-xl text-center shadow-sm">
-          <div className="text-[10px] font-black text-rose-300">Đỉnh: SV Tiêu Thụ Bậc 3</div>
-          <div className="text-xs font-mono font-black text-white">{level4.toLocaleString()} kcal (0,1%)</div>
+          <div className="text-[11px] font-black text-[var(--err-fg)]">Đỉnh: SV tiêu thụ bậc 3</div>
+          <div className="text-xs font-mono font-black text-[var(--text-primary)]">{level4.toLocaleString()} kcal (0,1%)</div>
         </div>
 
         {/* Tier 3 */}
         <div className="w-1/2 mx-auto p-1.5 bg-amber-500/20 border-2 border-amber-500/50 rounded-xl text-center shadow-sm">
-          <div className="text-[10px] font-black text-amber-300">Bậc 3: SV Tiêu Thụ Bậc 2</div>
-          <div className="text-xs font-mono font-black text-white">{level3.toLocaleString()} kcal (1%)</div>
+          <div className="text-[11px] font-black text-[var(--gold-fg)]">Bậc 3: SV tiêu thụ bậc 2</div>
+          <div className="text-xs font-mono font-black text-[var(--text-primary)]">{level3.toLocaleString()} kcal (1%)</div>
         </div>
 
         {/* Tier 2 */}
         <div className="w-3/4 mx-auto p-1.5 bg-[var(--bio-tint)] border-2 border-[var(--bio-edge)] rounded-xl text-center shadow-sm">
-          <div className="text-[10px] font-black text-[var(--bio-fg)]">Bậc 2: SV Tiêu Thụ Bậc 1 (Ăn cỏ)</div>
-          <div className="text-xs font-mono font-black text-white">{level2.toLocaleString()} kcal (10%)</div>
+          <div className="text-[11px] font-black text-[var(--bio-fg)]">Bậc 2: SV tiêu thụ bậc 1 (Ăn cỏ)</div>
+          <div className="text-xs font-mono font-black text-[var(--text-primary)]">{level2.toLocaleString()} kcal (10%)</div>
         </div>
 
         {/* Tier 1 (Base) */}
         <div className="w-full p-2 bg-emerald-500/25 border-2 border-emerald-500/60 rounded-xl text-center shadow-sm">
-          <div className="text-[10px] font-black text-emerald-300 flex items-center justify-center gap-1">
-            <Leaf className="w-3 h-3 text-emerald-400" />
-            Đáy Tháp: Sinh Vật Sản Xuất (Cây Xanh, Tảo)
+          <div className="text-[11px] font-black text-[var(--ok-fg)] flex items-center justify-center gap-1">
+            <Leaf className="w-3 h-3 text-[var(--ok-fg)]" />
+            Đáy Tháp: Sinh vật sản xuất (Cây Xanh, Tảo)
           </div>
-          <div className="text-sm font-mono font-black text-white">{level1.toLocaleString()} kcal (100%)</div>
+          <div className="text-sm font-mono font-black text-[var(--text-primary)]">{level1.toLocaleString()} kcal (100%)</div>
         </div>
       </div>
 
       {/* Interactive slider */}
       <div className="p-2.5 rounded-2xl bg-[var(--bg-canvas)] border border-slate-700/60 space-y-1">
-        <div className="flex justify-between text-[11px] font-bold text-slate-300">
+        <div className="flex justify-between text-xs font-bold text-slate-300">
           <span>Năng lượng ban đầu (SV sản xuất):</span>
-          <span className="text-emerald-400 font-mono font-black">{baseEnergy.toLocaleString()} kcal</span>
+          <span className="text-[var(--ok-fg)] font-mono font-black">{baseEnergy.toLocaleString()} kcal</span>
         </div>
         <input
           type="range"
@@ -528,35 +545,35 @@ const NephronFiltrationSandbox: React.FC = () => {
             <Activity className="w-4 h-4" />
           </div>
           <div>
-            <h4 className="text-xs font-black text-white uppercase tracking-wider flex items-center gap-1.5">
-              <span>Đơn Vị Chức Năng Thận (Nephron)</span>
-              <span className="text-[10px] text-emerald-400 font-bold lowercase px-1.5 py-0.2 rounded bg-emerald-950/60 border border-emerald-800/60">
+            <h4 className="text-xs font-black text-[var(--text-primary)] flex items-center gap-1.5">
+              <span>Đơn vị chức năng thận (Nephron)</span>
+              <span className="text-[11px] text-emerald-400 font-bold lowercase px-1.5 py-0.2 rounded bg-emerald-950/60 border border-emerald-800/60">
                 bài 35
               </span>
             </h4>
           </div>
         </div>
 
-        <span className="text-[10px] text-[var(--bio-fg)] font-bold">1 triệu Nephron / thận</span>
+        <span className="text-[11px] text-[var(--bio-fg)] font-bold">1 triệu Nephron / thận</span>
       </div>
 
       {/* 3 Steps Pipeline */}
       <div className="grid grid-cols-3 gap-1.5">
         {[
-          { step: 1, title: '1. Lọc máu', place: 'Cầu thận', color: 'border-rose-500/50 bg-rose-950/30 text-rose-300' },
-          { step: 2, title: '2. Tái hấp thụ', place: 'Ống thận', color: 'border-amber-500/50 bg-amber-950/30 text-amber-300' },
-          { step: 3, title: '3. Bài tiết tiếp', place: 'Ống góp', color: 'border-emerald-500/50 bg-emerald-950/30 text-emerald-300' },
+          { step: 1, title: '1. Lọc máu', place: 'Cầu thận', color: 'border-rose-500/50 bg-rose-950/30 text-[var(--err-fg)]' },
+          { step: 2, title: '2. Tái hấp thụ', place: 'Ống thận', color: 'border-amber-500/50 bg-amber-950/30 text-[var(--gold-fg)]' },
+          { step: 3, title: '3. Bài tiết tiếp', place: 'Ống góp', color: 'border-emerald-500/50 bg-emerald-950/30 text-[var(--ok-fg)]' },
         ].map((s) => (
           <button
             key={s.step}
             onClick={() => setActiveStep(s.step as 1 | 2 | 3)}
             className={cn(
               'p-2 rounded-xl border text-center transition-all cursor-pointer',
-              activeStep === s.step ? s.color : 'bg-[var(--bg-canvas)] border-slate-800 text-slate-400 hover:text-white'
+              activeStep === s.step ? s.color : 'bg-[var(--bg-canvas)] border-slate-800 text-slate-400 hover:text-[var(--text-primary)]'
             )}
           >
-            <div className="text-[10px] font-black">{s.title}</div>
-            <div className="text-[9px] opacity-80">{s.place}</div>
+            <div className="text-[11px] font-black">{s.title}</div>
+            <div className="text-[11px] opacity-80">{s.place}</div>
           </button>
         ))}
       </div>
@@ -565,7 +582,7 @@ const NephronFiltrationSandbox: React.FC = () => {
       <div className="p-3 bg-[var(--bg-canvas)] rounded-2xl border-2 border-slate-700/60 space-y-1">
         {activeStep === 1 && (
           <div className="text-xs leading-relaxed space-y-0.5">
-            <span className="text-rose-400 font-black block">🩸 Bước 1: Quá trình lọc máu tại Cầu thận</span>
+            <span className="text-[var(--err-fg)] font-black block">Bước 1: Quá trình lọc máu tại Cầu thận</span>
             <p className="text-slate-300">
               Áp lực máu đẩy nước, ion, glucose, ure qua vách mao mạch cầu thận vào nang Bowman tạo ra <strong>Nước tiểu đầu (170 - 180 lít/ngày)</strong>. Tế bào máu và protein kích thước lớn được giữ lại trong máu.
             </p>
@@ -573,7 +590,7 @@ const NephronFiltrationSandbox: React.FC = () => {
         )}
         {activeStep === 2 && (
           <div className="text-xs leading-relaxed space-y-0.5">
-            <span className="text-amber-400 font-black block">💧 Bước 2: Quá trình tái hấp thụ tại Ống thận</span>
+            <span className="text-[var(--gold-fg)] font-black block">Bước 2: Quá trình tái hấp thụ tại Ống thận</span>
             <p className="text-slate-300">
               Ống thận hấp thụ lại <strong>99% lượng nước</strong>, toàn bộ glucose, axit amin và các ion cần thiết trở lại mao mạch máu. Tiết kiệm tối đa nước và dưỡng chất cho cơ thể.
             </p>
@@ -581,7 +598,7 @@ const NephronFiltrationSandbox: React.FC = () => {
         )}
         {activeStep === 3 && (
           <div className="text-xs leading-relaxed space-y-0.5">
-            <span className="text-emerald-400 font-black block">✨ Bước 3: Bài tiết tiếp tạo Nước tiểu chính thức</span>
+            <span className="text-[var(--ok-fg)] font-black block">Bước 3: Bài tiết tiếp tạo Nước tiểu chính thức</span>
             <p className="text-slate-300">
               Ống thận chủ động bài tiết các chất cặn bã thừa, axit uric, ure, thuốc men tạo thành <strong>Nước tiểu chính thức (khoảng 1,5 lít/ngày)</strong> dẫn về bóng đái và thải ra ngoài.
             </p>
@@ -600,12 +617,12 @@ const CellStructureSandbox: React.FC = () => {
     <div className="space-y-3 relative z-10">
       <div className="flex items-center justify-between pb-1.5 border-b border-slate-700/60">
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400">
+          <div className="w-7 h-7 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-[var(--ok-fg)]">
             <Dna className="w-4 h-4" />
           </div>
           <div>
-            <h4 className="text-xs font-black text-white uppercase tracking-wider flex items-center gap-1.5">
-              <span>Cấu Trúc Tế Bào Sống</span>
+            <h4 className="text-xs font-black text-[var(--text-primary)] flex items-center gap-1.5">
+              <span>Cấu trúc tế bào sống</span>
             </h4>
           </div>
         </div>
@@ -614,45 +631,45 @@ const CellStructureSandbox: React.FC = () => {
           <button
             onClick={() => setCellType('plant')}
             className={cn(
-              'px-2 py-0.5 rounded-lg text-[10px] font-bold transition-all',
-              cellType === 'plant' ? 'bg-emerald-500 text-slate-950 font-black' : 'text-slate-400 hover:text-white'
+              'px-2 py-0.5 rounded-lg text-[11px] font-bold transition-all',
+              cellType === 'plant' ? 'bg-emerald-500 text-slate-950 font-black' : 'text-slate-400 hover:text-[var(--text-primary)]'
             )}
           >
-            🌿 Tế bào thực vật
+            Tế bào thực vật
           </button>
           <button
             onClick={() => setCellType('animal')}
             className={cn(
-              'px-2 py-0.5 rounded-lg text-[10px] font-bold transition-all',
-              cellType === 'animal' ? 'bg-amber-500 text-slate-950 font-black' : 'text-slate-400 hover:text-white'
+              'px-2 py-0.5 rounded-lg text-[11px] font-bold transition-all',
+              cellType === 'animal' ? 'bg-amber-500 text-slate-950 font-black' : 'text-slate-400 hover:text-[var(--text-primary)]'
             )}
           >
-            🐾 Tế bào động vật
+            Tế bào động vật
           </button>
         </div>
       </div>
 
       <div className="p-3 bg-[var(--bg-canvas)] rounded-2xl border-2 border-slate-700/60 grid grid-cols-2 gap-2 text-xs">
         <div className="space-y-1">
-          <span className="text-[10px] font-black uppercase text-slate-400 block">Thành phần chung:</span>
-          <div className="text-emerald-300 font-bold">• Màng sinh chất (bảo vệ & trao đổi chất)</div>
+          <span className="text-[11px] font-black text-slate-400 block">Thành phần chung:</span>
+          <div className="text-[var(--ok-fg)] font-bold">• Màng sinh chất (bảo vệ & trao đổi chất)</div>
           <div className="text-[var(--bio-fg)] font-bold">• Tế bào chất (chứa bào quan)</div>
-          <div className="text-purple-300 font-bold">• Nhân tế bào (chứa vật chất di truyền ADN)</div>
+          <div className="text-[var(--gem-fg)] font-bold">• Nhân tế bào (chứa vật chất di truyền ADN)</div>
         </div>
 
         <div className="space-y-1 border-l border-slate-700 pl-2">
-          <span className="text-[10px] font-black uppercase text-amber-400 block">Đặc điểm riêng {cellType === 'plant' ? 'Thực vật' : 'Động vật'}:</span>
+          <span className="text-[11px] font-black text-[var(--gold-fg)] block">Đặc điểm riêng {cellType === 'plant' ? 'Thực vật' : 'Động vật'}:</span>
           {cellType === 'plant' ? (
             <>
-              <div className="text-emerald-400 font-bold">✓ Có thành tế bào xenlulôzơ vững chắc</div>
-              <div className="text-emerald-400 font-bold">✓ Có Lục lạp (quang hợp tạo glucose)</div>
-              <div className="text-emerald-400 font-bold">✓ Có Không bào trung tâm rất lớn</div>
+              <div className="text-[var(--ok-fg)] font-bold">✓ Có thành tế bào xenlulôzơ vững chắc</div>
+              <div className="text-[var(--ok-fg)] font-bold">✓ Có Lục lạp (quang hợp tạo glucose)</div>
+              <div className="text-[var(--ok-fg)] font-bold">✓ Có Không bào trung tâm rất lớn</div>
             </>
           ) : (
             <>
-              <div className="text-amber-300 font-bold">✕ Không có thành tế bào cứng</div>
-              <div className="text-amber-300 font-bold">✕ Không có lục lạp (dị dưỡng)</div>
-              <div className="text-amber-300 font-bold">• Có trung thể tham gia phân bào</div>
+              <div className="text-[var(--gold-fg)] font-bold">✕ Không có thành tế bào cứng</div>
+              <div className="text-[var(--gold-fg)] font-bold">✕ Không có lục lạp (dị dưỡng)</div>
+              <div className="text-[var(--gold-fg)] font-bold">• Có trung thể tham gia phân bào</div>
             </>
           )}
         </div>
@@ -675,7 +692,7 @@ const MENDEL_PRESETS = [
       return {
         genotype: g,
         phenotype: isRed ? 'Hoa đỏ' : 'Hoa trắng',
-        color: isRed ? 'bg-rose-500/20 text-rose-300 border-rose-500/40' : 'bg-slate-500/20 text-slate-300 border-slate-500/40',
+        color: isRed ? 'bg-rose-500/20 text-[var(--err-fg)] border-rose-500/40' : 'bg-slate-500/20 text-slate-300 border-slate-500/40',
         badge: isRed ? '🔴' : '⚪',
       };
     },
@@ -693,7 +710,7 @@ const MENDEL_PRESETS = [
       return {
         genotype: g,
         phenotype: isRed ? 'Hoa đỏ' : 'Hoa trắng',
-        color: isRed ? 'bg-rose-500/20 text-rose-300 border-rose-500/40' : 'bg-slate-500/20 text-slate-300 border-slate-500/40',
+        color: isRed ? 'bg-rose-500/20 text-[var(--err-fg)] border-rose-500/40' : 'bg-slate-500/20 text-slate-300 border-slate-500/40',
         badge: isRed ? '🔴' : '⚪',
       };
     },
@@ -712,15 +729,15 @@ const MENDEL_PRESETS = [
       const hasA = aAlleles.includes('A');
       const hasB = bAlleles.includes('B');
       if (hasA && hasB) {
-        return { genotype, phenotype: 'Vàng, trơn', color: 'bg-amber-500/20 text-amber-300 border-amber-500/40', badge: '🟡' };
+        return { genotype, phenotype: 'Vàng, trơn', color: 'bg-amber-500/20 text-[var(--gold-fg)] border-amber-500/40', badge: '🟡' };
       }
       if (hasA && !hasB) {
-        return { genotype, phenotype: 'Vàng, nhăn', color: 'bg-orange-500/20 text-orange-300 border-orange-500/40', badge: '🟨' };
+        return { genotype, phenotype: 'Vàng, nhăn', color: 'bg-orange-500/20 text-[var(--warn-fg)] border-orange-500/40', badge: '🟨' };
       }
       if (!hasA && hasB) {
-        return { genotype, phenotype: 'Xanh, trơn', color: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40', badge: '🟢' };
+        return { genotype, phenotype: 'Xanh, trơn', color: 'bg-emerald-500/20 text-[var(--ok-fg)] border-emerald-500/40', badge: '🟢' };
       }
-      return { genotype, phenotype: 'Xanh, nhăn', color: 'bg-teal-500/20 text-teal-300 border-teal-500/40', badge: '🟩' };
+      return { genotype, phenotype: 'Xanh, nhăn', color: 'bg-teal-500/20 text-[var(--ok-fg)] border-teal-500/40', badge: '🟩' };
     },
     ratioSummary: 'Tỉ lệ KH F2: 9 Vàng, trơn : 3 Vàng, nhăn : 3 Xanh, trơn : 1 Xanh, nhăn (16 tổ hợp)',
   },
@@ -737,15 +754,15 @@ const MENDEL_PRESETS = [
       const hasA = aAlleles.includes('A');
       const hasB = bAlleles.includes('B');
       if (hasA && hasB) {
-        return { genotype, phenotype: 'Vàng, trơn', color: 'bg-amber-500/20 text-amber-300 border-amber-500/40', badge: '🟡' };
+        return { genotype, phenotype: 'Vàng, trơn', color: 'bg-amber-500/20 text-[var(--gold-fg)] border-amber-500/40', badge: '🟡' };
       }
       if (hasA && !hasB) {
-        return { genotype, phenotype: 'Vàng, nhăn', color: 'bg-orange-500/20 text-orange-300 border-orange-500/40', badge: '🟨' };
+        return { genotype, phenotype: 'Vàng, nhăn', color: 'bg-orange-500/20 text-[var(--warn-fg)] border-orange-500/40', badge: '🟨' };
       }
       if (!hasA && hasB) {
-        return { genotype, phenotype: 'Xanh, trơn', color: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40', badge: '🟢' };
+        return { genotype, phenotype: 'Xanh, trơn', color: 'bg-emerald-500/20 text-[var(--ok-fg)] border-emerald-500/40', badge: '🟢' };
       }
-      return { genotype, phenotype: 'Xanh, nhăn', color: 'bg-teal-500/20 text-teal-300 border-teal-500/40', badge: '🟩' };
+      return { genotype, phenotype: 'Xanh, nhăn', color: 'bg-teal-500/20 text-[var(--ok-fg)] border-teal-500/40', badge: '🟩' };
     },
     ratioSummary: 'Tỉ lệ KH Fa: 1 Vàng, trơn : 1 Vàng, nhăn : 1 Xanh, trơn : 1 Xanh, nhăn (1:1:1:1)',
   },
@@ -759,13 +776,13 @@ const MendelPunnettGridSandbox: React.FC = () => {
     <div className="space-y-3 relative z-10">
       <div className="flex items-center justify-between pb-1.5 border-b border-slate-700/60">
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400">
+          <div className="w-7 h-7 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-[var(--gold-fg)]">
             <Grid className="w-4 h-4" />
           </div>
           <div>
-            <h4 className="text-xs font-black text-white uppercase tracking-wider flex items-center gap-1.5">
-              <span>Bảng Punnett Mendel Tương Tác</span>
-              <span className="text-[10px] text-amber-400 font-bold lowercase px-1.5 py-0.2 rounded bg-amber-950/60 border border-amber-800/60">
+            <h4 className="text-xs font-black text-[var(--text-primary)] flex items-center gap-1.5">
+              <span>Bảng Punnett Mendel tương tác</span>
+              <span className="text-[11px] text-amber-400 font-bold lowercase px-1.5 py-0.2 rounded bg-amber-950/60 border border-amber-800/60">
                 bài 37
               </span>
             </h4>
@@ -785,12 +802,12 @@ const MendelPunnettGridSandbox: React.FC = () => {
             className={cn(
               'px-2 py-1.5 rounded-xl text-left border transition-all cursor-pointer',
               selectedPresetId === p.id
-                ? 'bg-amber-500/20 text-amber-300 border-amber-500 shadow-[0_2px_0_0_var(--gold-shade)]'
-                : 'bg-[var(--bg-canvas)] text-slate-400 border-slate-700/60 hover:text-white hover:bg-[var(--bg-elevated)]'
+                ? 'bg-amber-500/20 text-[var(--gold-fg)] border-amber-500 shadow-[0_2px_0_0_var(--gold-shade)]'
+                : 'bg-[var(--bg-canvas)] text-slate-400 border-slate-700/60 hover:text-[var(--text-primary)] hover:bg-[var(--bg-elevated)]'
             )}
           >
             <div className="text-xs font-black">{p.title}</div>
-            <div className="text-[10px] text-slate-400 truncate">{p.desc}</div>
+            <div className="text-[11px] text-slate-400 truncate">{p.desc}</div>
           </button>
         ))}
       </div>
@@ -800,7 +817,7 @@ const MendelPunnettGridSandbox: React.FC = () => {
         <table className="w-full text-center border-collapse">
           <thead>
             <tr>
-              <th className="p-1.5 text-[11px] font-black text-slate-400 border border-slate-700/50 bg-[var(--bg-elevated)]">
+              <th className="p-1.5 text-xs font-black text-slate-400 border border-slate-700/50 bg-[var(--bg-elevated)]">
                 ♀ \ ♂
               </th>
               {preset.maleGametes.map((mg, idx) => (
@@ -816,7 +833,7 @@ const MendelPunnettGridSandbox: React.FC = () => {
           <tbody>
             {preset.femaleGametes.map((fg, rIdx) => (
               <tr key={`fg-${rIdx}`}>
-                <td className="p-1.5 text-xs font-black text-rose-300 border border-slate-700/50 bg-[var(--bg-elevated)]">
+                <td className="p-1.5 text-xs font-black text-[var(--err-fg)] border border-slate-700/50 bg-[var(--bg-elevated)]">
                   ♀ {fg}
                 </td>
                 {preset.maleGametes.map((mg, cIdx) => {
@@ -831,7 +848,7 @@ const MendelPunnettGridSandbox: React.FC = () => {
                           <span>{cell.badge}</span>
                           <span>{cell.genotype}</span>
                         </div>
-                        <div className="text-[10px] font-medium opacity-90 truncate">{cell.phenotype}</div>
+                        <div className="text-[11px] font-medium opacity-90 truncate">{cell.phenotype}</div>
                       </div>
                     </td>
                   );
@@ -843,8 +860,8 @@ const MendelPunnettGridSandbox: React.FC = () => {
       </div>
 
       {/* Ratio Summary */}
-      <div className="p-2.5 bg-amber-500/10 rounded-xl border border-amber-500/30 text-xs font-bold text-amber-300 flex items-center gap-2">
-        <Sparkles className="w-4 h-4 shrink-0 text-amber-400" />
+      <div className="p-2.5 bg-amber-500/10 rounded-xl border border-amber-500/30 text-xs font-bold text-[var(--gold-fg)] flex items-center gap-2">
+        <Sparkles className="w-4 h-4 shrink-0 text-[var(--gold-fg)]" />
         <span>{preset.ratioSummary}</span>
       </div>
     </div>
@@ -867,24 +884,24 @@ const DnaTranscriptionBuilderSandbox: React.FC = () => {
   const [subMode, setSubMode] = useState<'dna-structure' | 'transcription' | 'translation'>('dna-structure');
 
   const baseColors: Record<string, string> = {
-    A: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/50',
-    T: 'bg-rose-500/20 text-rose-300 border-rose-500/50',
-    U: 'bg-purple-500/20 text-purple-300 border-purple-500/50',
-    G: 'bg-amber-500/20 text-amber-300 border-amber-500/50',
-    C: 'bg-sky-500/20 text-sky-300 border-sky-500/50',
+    A: 'bg-emerald-500/20 text-[var(--ok-fg)] border-emerald-500/50',
+    T: 'bg-rose-500/20 text-[var(--err-fg)] border-rose-500/50',
+    U: 'bg-purple-500/20 text-[var(--gem-fg)] border-purple-500/50',
+    G: 'bg-amber-500/20 text-[var(--gold-fg)] border-amber-500/50',
+    C: 'bg-sky-500/20 text-[var(--chem-fg)] border-sky-500/50',
   };
 
   return (
     <div className="space-y-3 relative z-10">
       <div className="flex items-center justify-between pb-1.5 border-b border-slate-700/60">
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-xl bg-blue-500/20 border border-blue-500/40 flex items-center justify-center text-blue-400">
+          <div className="w-7 h-7 rounded-xl bg-blue-500/20 border border-blue-500/40 flex items-center justify-center text-[var(--chem-fg)]">
             <Dna className="w-4 h-4" />
           </div>
           <div>
-            <h4 className="text-xs font-black text-white uppercase tracking-wider flex items-center gap-1.5">
-              <span>Mô Hình Phân Tử DNA & Phiên Mã</span>
-              <span className="text-[10px] text-blue-400 font-bold lowercase px-1.5 py-0.2 rounded bg-blue-950/60 border border-blue-800/60">
+            <h4 className="text-xs font-black text-[var(--text-primary)] flex items-center gap-1.5">
+              <span>Mô hình phân tử DNA & Phiên Mã</span>
+              <span className="text-[11px] text-blue-400 font-bold lowercase px-1.5 py-0.2 rounded bg-blue-950/60 border border-blue-800/60">
                 bài 38-40
               </span>
             </h4>
@@ -899,11 +916,11 @@ const DnaTranscriptionBuilderSandbox: React.FC = () => {
               setSubMode('dna-structure');
             }}
             className={cn(
-              'px-2 py-0.5 rounded-lg text-[10px] font-bold transition-all cursor-pointer',
-              subMode === 'dna-structure' ? 'bg-blue-500 text-slate-950 font-black' : 'text-slate-400 hover:text-white'
+              'px-2 py-0.5 rounded-lg text-[11px] font-bold transition-all cursor-pointer',
+              subMode === 'dna-structure' ? 'bg-blue-500 text-slate-950 font-black' : 'text-slate-400 hover:text-[var(--text-primary)]'
             )}
           >
-            🧬 DNA Xoắn kép
+            DNA Xoắn kép
           </button>
           <button
             onClick={() => {
@@ -911,11 +928,11 @@ const DnaTranscriptionBuilderSandbox: React.FC = () => {
               setSubMode('transcription');
             }}
             className={cn(
-              'px-2 py-0.5 rounded-lg text-[10px] font-bold transition-all cursor-pointer',
-              subMode === 'transcription' ? 'bg-[var(--bio-fill)] text-white font-black' : 'text-slate-400 hover:text-white'
+              'px-2 py-0.5 rounded-lg text-[11px] font-bold transition-all cursor-pointer',
+              subMode === 'transcription' ? 'bg-[var(--bio-fill)] text-white font-black' : 'text-slate-400 hover:text-[var(--text-primary)]'
             )}
           >
-            ⚡ Phiên mã mRNA
+            Phiên mã mRNA
           </button>
           <button
             onClick={() => {
@@ -923,11 +940,11 @@ const DnaTranscriptionBuilderSandbox: React.FC = () => {
               setSubMode('translation');
             }}
             className={cn(
-              'px-2 py-0.5 rounded-lg text-[10px] font-bold transition-all cursor-pointer',
-              subMode === 'translation' ? 'bg-purple-500 text-slate-950 font-black' : 'text-slate-400 hover:text-white'
+              'px-2 py-0.5 rounded-lg text-[11px] font-bold transition-all cursor-pointer',
+              subMode === 'translation' ? 'bg-purple-500 text-slate-950 font-black' : 'text-slate-400 hover:text-[var(--text-primary)]'
             )}
           >
-            🧪 Dịch mã Codon
+            Dịch mã Codon
           </button>
         </div>
       </div>
@@ -936,7 +953,7 @@ const DnaTranscriptionBuilderSandbox: React.FC = () => {
       <div className="p-3 bg-[var(--bg-canvas)] rounded-2xl border-2 border-slate-700/60 space-y-3">
         {/* Template Strand */}
         <div>
-          <div className="text-[10px] font-black uppercase text-slate-400 mb-1 flex items-center justify-between">
+          <div className="text-[11px] font-black text-slate-400 mb-1 flex items-center justify-between">
             <span>Mạch gốc DNA (3' → 5'):</span>
             <span className="text-slate-500">Mạch khuôn</span>
           </div>
@@ -947,7 +964,7 @@ const DnaTranscriptionBuilderSandbox: React.FC = () => {
                 className={cn('p-1.5 rounded-xl border font-black text-xs shadow-sm', baseColors[item.base])}
               >
                 <div>{item.base}</div>
-                <div className="text-[9px] opacity-75 font-normal">#{item.pos}</div>
+                <div className="text-[11px] opacity-75 font-normal">#{item.pos}</div>
               </div>
             ))}
           </div>
@@ -956,16 +973,16 @@ const DnaTranscriptionBuilderSandbox: React.FC = () => {
         {/* Hydrogen Bonds or Process Indicator */}
         <div className="grid grid-cols-8 gap-1.5 text-center">
           {DNA_TEMPLATE_DEMO.map((item) => (
-            <div key={`bond-${item.pos}`} className="flex flex-col items-center justify-center text-[10px] text-amber-400 font-bold">
+            <div key={`bond-${item.pos}`} className="flex flex-col items-center justify-center text-[11px] text-[var(--gold-fg)] font-bold">
               {subMode === 'dna-structure' ? (
                 <>
                   <span className="leading-none text-slate-400">{item.bonds === 3 ? '≡' : '='}</span>
-                  <span className="text-[8px] text-amber-300 font-mono">{item.bonds}H</span>
+                  <span className="text-[11px] text-[var(--gold-fg)] font-mono">{item.bonds}H</span>
                 </>
               ) : subMode === 'transcription' ? (
                 <span className="text-[var(--bio-fg)] text-xs">↓</span>
               ) : (
-                <span className="text-purple-400 text-[9px] font-mono">cod</span>
+                <span className="text-[var(--gem-fg)] text-[11px] font-mono">cod</span>
               )}
             </div>
           ))}
@@ -973,13 +990,13 @@ const DnaTranscriptionBuilderSandbox: React.FC = () => {
 
         {/* Complementary Strand / mRNA */}
         <div>
-          <div className="text-[10px] font-black uppercase text-slate-400 mb-1 flex items-center justify-between">
+          <div className="text-[11px] font-black text-slate-400 mb-1 flex items-center justify-between">
             <span>
               {subMode === 'dna-structure'
                 ? "Mạch bổ sung DNA (5' → 3'):"
                 : "Mạch đơn mRNA (5' → 3'):"}
             </span>
-            <span className={cn('text-[10px] font-bold', subMode === 'dna-structure' ? 'text-blue-400' : 'text-[var(--bio-fg)]')}>
+            <span className={cn('text-[11px] font-bold', subMode === 'dna-structure' ? 'text-[var(--chem-fg)]' : 'text-[var(--bio-fg)]')}>
               {subMode === 'dna-structure' ? 'NTBS: A=T, G≡C' : 'NTBS: A-U, T-A, G-C'}
             </span>
           </div>
@@ -992,7 +1009,7 @@ const DnaTranscriptionBuilderSandbox: React.FC = () => {
                   className={cn('p-1.5 rounded-xl border font-black text-xs shadow-sm', baseColors[base])}
                 >
                   <div>{base}</div>
-                  <div className="text-[9px] opacity-75 font-normal">
+                  <div className="text-[11px] opacity-75 font-normal">
                     {subMode === 'dna-structure'
                       ? base === 'T' ? 'Thymine' : base === 'A' ? 'Adenine' : base === 'C' ? 'Cytosine' : 'Guanine'
                       : base === 'U' ? 'Uracil' : base}
@@ -1006,7 +1023,7 @@ const DnaTranscriptionBuilderSandbox: React.FC = () => {
         {/* Translation Codon Breakdown if translation submode */}
         {subMode === 'translation' && (
           <div className="p-2.5 rounded-xl bg-purple-950/40 border border-purple-800/60 space-y-1.5">
-            <span className="text-[10px] font-black uppercase text-purple-300 block">
+            <span className="text-[11px] font-black text-[var(--gem-fg)] block">
               Dịch mã trên Ribosome (Central Dogma: Gene → mRNA → Protein):
             </span>
             <div className="flex flex-wrap items-center gap-2 text-xs">
@@ -1027,20 +1044,20 @@ const DnaTranscriptionBuilderSandbox: React.FC = () => {
       </div>
 
       {/* Explanatory footer */}
-      <div className="p-2.5 bg-blue-500/10 rounded-xl border border-blue-500/30 text-xs text-blue-300 space-y-0.5">
+      <div className="p-2.5 bg-blue-500/10 rounded-xl border border-blue-500/30 text-xs text-[var(--chem-fg)] space-y-0.5">
         <strong>Nguyên tắc bổ sung:</strong>
         {subMode === 'dna-structure' && (
-          <p className="text-[11px] text-slate-300">
+          <p className="text-xs text-slate-300">
             Adenine (A) liên kết với Thymine (T) bằng 2 liên kết hydrogen. Guanine (G) liên kết với Cytosine (C) bằng 3 liên kết hydrogen.
           </p>
         )}
         {subMode === 'transcription' && (
-          <p className="text-[11px] text-slate-300">
+          <p className="text-xs text-slate-300">
             Enzyme RNA polymerase sử dụng mạch gốc 3'→5' tổng hợp mRNA: A liên kết U, T liên kết A, G liên kết C, C liên kết G.
           </p>
         )}
         {subMode === 'translation' && (
-          <p className="text-[11px] text-slate-300">
+          <p className="text-xs text-slate-300">
             Cứ 3 nucleotide liền kề trên mRNA tạo thành 1 bộ ba codon mã hóa 1 amino acid trong chuỗi polypeptide.
           </p>
         )}
@@ -1052,16 +1069,16 @@ const DnaTranscriptionBuilderSandbox: React.FC = () => {
 // ── 8. MITOSIS & MEIOSIS SCOPE (Kính hiển vi bắt kì phân bào) ──
 const MITOSIS_STAGES = [
   { id: 'prophase', name: 'Kì đầu', chromosomes: '4 NST kép', chromatids: '8', centromeres: '4', desc: 'Màng nhân tiêu biến, thoi vô sắc xuất hiện, NST kép bắt đầu co xoắn.' },
-  { id: 'metaphase', name: 'Kì giữa', chromosomes: '4 NST kép (xếp 1 hàng)', chromatids: '8', centromeres: '4', desc: 'NST kép co xoắn cực đại, tập trung xếp thành 1 HÀNG tại mặt phẳng xích đạo.' },
+  { id: 'metaphase', name: 'Kì giữa', chromosomes: '4 NST kép (xếp 1 hàng)', chromatids: '8', centromeres: '4', desc: 'NST kép co xoắn cực đại, tập trung xếp thành 1 hàng tại mặt phẳng xích đạo.' },
   { id: 'anaphase', name: 'Kì sau', chromosomes: '8 NST đơn (phân li)', chromatids: '0', centromeres: '8', desc: 'Tâm động chẻ đôi, 2 nhiễm sắc tử (chromatid) tách nhau thành 2 NST đơn phân li về 2 cực.' },
   { id: 'telophase', name: 'Kì cuối', chromosomes: '4 NST đơn / mỗi tế bào', chromatids: '0', centromeres: '4', desc: 'Màng nhân tái lập, dãn xoắn, phân chia tế bào chất tạo 2 tế bào con giống hệt mẹ (2n = 4).' },
 ];
 
 const MEIOSIS_STAGES = [
-  { id: 'metaphase-1', name: 'Kì giữa I', chromosomes: '4 NST kép (xếp 2 hàng)', chromatids: '8', centromeres: '4', desc: 'Các cặp NST kép tương đồng tập trung xếp thành 2 HÀNG song song trên mặt phẳng xích đạo.' },
-  { id: 'anaphase-1', name: 'Kì sau I', chromosomes: '4 NST kép (phân li kép)', chromatids: '8', centromeres: '4', desc: 'Các cặp NST kép tương đồng phân li độc lập về 2 cực. Tâm động KHÔNG chẻ đôi!' },
+  { id: 'metaphase-1', name: 'Kì giữa I', chromosomes: '4 NST kép (xếp 2 hàng)', chromatids: '8', centromeres: '4', desc: 'Các cặp NST kép tương đồng tập trung xếp thành 2 hàng song song trên mặt phẳng xích đạo.' },
+  { id: 'anaphase-1', name: 'Kì sau I', chromosomes: '4 NST kép (phân li kép)', chromatids: '8', centromeres: '4', desc: 'Các cặp NST kép tương đồng phân li độc lập về 2 cực. Tâm động không chẻ đôi!' },
   { id: 'telophase-1', name: 'Kì cuối I', chromosomes: '2 NST kép / mỗi tế bào', chromatids: '4', centromeres: '2', desc: 'Tạo 2 tế bào con có số lượng NST giảm một nửa (bộ đơn bội kép n = 2 kép).' },
-  { id: 'metaphase-2', name: 'Kì giữa II', chromosomes: '2 NST kép (xếp 1 hàng)', chromatids: '4', centromeres: '2', desc: 'n NST kép co xoắn và xếp thành 1 HÀNG trên mặt phẳng xích đạo thoi phân bào.' },
+  { id: 'metaphase-2', name: 'Kì giữa II', chromosomes: '2 NST kép (xếp 1 hàng)', chromatids: '4', centromeres: '2', desc: 'n NST kép co xoắn và xếp thành 1 hàng trên mặt phẳng xích đạo thoi phân bào.' },
   { id: 'anaphase-2', name: 'Kì sau II', chromosomes: '4 NST đơn (phân li đơn)', chromatids: '0', centromeres: '4', desc: 'Tâm động chẻ đôi, các chromatid tách nhau thành NST đơn phân li về 2 cực tế bào.' },
   { id: 'telophase-2', name: 'Kì cuối II', chromosomes: '2 NST đơn / giao tử (n = 2)', chromatids: '0', centromeres: '2', desc: 'Kết thúc giảm phân tạo 4 tế bào con đơn bội (giao tử: tinh trùng hoặc trứng).' },
 ];
@@ -1077,13 +1094,13 @@ const MitosisMeiosisScopeSandbox: React.FC = () => {
     <div className="space-y-3 relative z-10">
       <div className="flex items-center justify-between pb-1.5 border-b border-slate-700/60">
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400">
+          <div className="w-7 h-7 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-[var(--ok-fg)]">
             <Microscope className="w-4 h-4" />
           </div>
           <div>
-            <h4 className="text-xs font-black text-white uppercase tracking-wider flex items-center gap-1.5">
-              <span>Kính Hiển Vi Bắt Kì Phân Bào</span>
-              <span className="text-[10px] text-emerald-400 font-bold lowercase px-1.5 py-0.2 rounded bg-emerald-950/60 border border-emerald-800/60">
+            <h4 className="text-xs font-black text-[var(--text-primary)] flex items-center gap-1.5">
+              <span>Kính hiển vi bắt kì phân bào</span>
+              <span className="text-[11px] text-emerald-400 font-bold lowercase px-1.5 py-0.2 rounded bg-emerald-950/60 border border-emerald-800/60">
                 bài 42-43
               </span>
             </h4>
@@ -1099,8 +1116,8 @@ const MitosisMeiosisScopeSandbox: React.FC = () => {
               setStageIdx(1);
             }}
             className={cn(
-              'px-2 py-0.5 rounded-lg text-[10px] font-bold transition-all cursor-pointer',
-              divisionType === 'mitosis' ? 'bg-emerald-500 text-slate-950 font-black' : 'text-slate-400 hover:text-white'
+              'px-2 py-0.5 rounded-lg text-[11px] font-bold transition-all cursor-pointer',
+              divisionType === 'mitosis' ? 'bg-emerald-500 text-slate-950 font-black' : 'text-slate-400 hover:text-[var(--text-primary)]'
             )}
           >
             Nguyên phân (2n → 2n)
@@ -1112,8 +1129,8 @@ const MitosisMeiosisScopeSandbox: React.FC = () => {
               setStageIdx(0);
             }}
             className={cn(
-              'px-2 py-0.5 rounded-lg text-[10px] font-bold transition-all cursor-pointer',
-              divisionType === 'meiosis' ? 'bg-amber-500 text-slate-950 font-black' : 'text-slate-400 hover:text-white'
+              'px-2 py-0.5 rounded-lg text-[11px] font-bold transition-all cursor-pointer',
+              divisionType === 'meiosis' ? 'bg-amber-500 text-slate-950 font-black' : 'text-slate-400 hover:text-[var(--text-primary)]'
             )}
           >
             Giảm phân (2n → n)
@@ -1134,9 +1151,9 @@ const MitosisMeiosisScopeSandbox: React.FC = () => {
               'px-2.5 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all border cursor-pointer',
               stageIdx === idx
                 ? divisionType === 'mitosis'
-                  ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500 shadow-sm'
-                  : 'bg-amber-500/20 text-amber-300 border-amber-500 shadow-sm'
-                : 'bg-[var(--bg-canvas)] text-slate-400 border-slate-700/60 hover:text-white'
+                  ? 'bg-emerald-500/20 text-[var(--ok-fg)] border-emerald-500 shadow-sm'
+                  : 'bg-amber-500/20 text-[var(--gold-fg)] border-amber-500 shadow-sm'
+                : 'bg-[var(--bg-canvas)] text-slate-400 border-slate-700/60 hover:text-[var(--text-primary)]'
             )}
           >
             {st.name}
@@ -1147,13 +1164,13 @@ const MitosisMeiosisScopeSandbox: React.FC = () => {
       {/* Microscope Viewport & Metrics */}
       <div className="p-3 bg-[var(--bg-canvas)] rounded-2xl border-2 border-slate-700/60 space-y-2.5">
         <div className="flex items-center justify-between">
-          <span className="text-xs font-black text-white flex items-center gap-1.5">
-            <span>🔬 Tiêu bản tế bào (2n = 4):</span>
-            <span className={cn('px-2 py-0.5 rounded-lg border text-[10px] font-bold', divisionType === 'mitosis' ? 'bg-emerald-950 text-emerald-300 border-emerald-700' : 'bg-amber-950 text-amber-300 border-amber-700')}>
+          <span className="text-xs font-black text-[var(--text-primary)] flex items-center gap-1.5">
+            <span>Tiêu bản tế bào (2n = 4):</span>
+            <span className={cn('px-2 py-0.5 rounded-lg border text-[11px] font-bold', divisionType === 'mitosis' ? 'bg-emerald-950 text-emerald-300 border-emerald-700' : 'bg-amber-950 text-amber-300 border-amber-700')}>
               {currentStage.name}
             </span>
           </span>
-          <span className="text-[10px] text-slate-400 font-mono">
+          <span className="text-[11px] text-slate-400 font-mono">
             {divisionType === 'mitosis' ? '1 lần phân bào' : '2 lần phân bào liên tiếp'}
           </span>
         </div>
@@ -1169,23 +1186,23 @@ const MitosisMeiosisScopeSandbox: React.FC = () => {
           <div className="flex items-center justify-center gap-4 z-10">
             {currentStage.id.includes('metaphase') && (
               <div className={cn('flex items-center gap-2 p-2 rounded-xl border', currentStage.id.includes('1') ? 'flex-col border-amber-500/40 bg-amber-500/10' : 'flex-row border-emerald-500/40 bg-emerald-500/10')}>
-                <span className="text-xs font-black text-white">
+                <span className="text-xs font-black text-[var(--text-primary)]">
                   {currentStage.id.includes('1') ? 'Xếp 2 hàng song song' : 'Xếp 1 hàng mặt phẳng xích đạo'}
                 </span>
-                <span className="text-lg">🧬🧬🧬🧬</span>
+                <ChromosomeRow count={4} />
               </div>
             )}
             {currentStage.id.includes('anaphase') && (
               <div className="flex items-center justify-between w-48 px-2">
-                <span className="text-base animate-pulse">👈 🧬🧬</span>
-                <span className="text-[10px] font-bold text-amber-400">Phân li về 2 cực</span>
-                <span className="text-base animate-pulse">🧬🧬 👉</span>
+                <ChromosomeRow count={2} />
+                <span className="text-[11px] font-bold text-[var(--gold-fg)]">Phân li về 2 cực</span>
+                <ChromosomeRow count={2} />
               </div>
             )}
             {(!currentStage.id.includes('metaphase') && !currentStage.id.includes('anaphase')) && (
               <div className="text-center space-y-1">
-                <span className="text-xl">🧬 🧬 🧬 🧬</span>
-                <div className="text-[10px] text-slate-400 font-bold">{currentStage.chromosomes}</div>
+                <ChromosomeRow count={4} />
+                <div className="text-[11px] text-slate-400 font-bold">{currentStage.chromosomes}</div>
               </div>
             )}
           </div>
@@ -1194,20 +1211,20 @@ const MitosisMeiosisScopeSandbox: React.FC = () => {
         {/* Live Chromosome Counts Table (2n = 4) */}
         <div className="grid grid-cols-4 gap-1.5 text-center text-xs">
           <div className="p-2 rounded-xl bg-[var(--bg-elevated)] border border-slate-700/60">
-            <div className="text-[10px] text-slate-400">Số NST</div>
-            <div className="font-black text-emerald-400 text-xs">{currentStage.chromosomes}</div>
+            <div className="text-[11px] text-slate-400">Số NST</div>
+            <div className="font-black text-[var(--ok-fg)] text-xs">{currentStage.chromosomes}</div>
           </div>
           <div className="p-2 rounded-xl bg-[var(--bg-elevated)] border border-slate-700/60">
-            <div className="text-[10px] text-slate-400">Chromatid</div>
+            <div className="text-[11px] text-slate-400">Chromatid</div>
             <div className="font-black text-[var(--bio-fg)] text-xs">{currentStage.chromatids}</div>
           </div>
           <div className="p-2 rounded-xl bg-[var(--bg-elevated)] border border-slate-700/60">
-            <div className="text-[10px] text-slate-400">Tâm động</div>
-            <div className="font-black text-amber-400 text-xs">{currentStage.centromeres}</div>
+            <div className="text-[11px] text-slate-400">Tâm động</div>
+            <div className="font-black text-[var(--gold-fg)] text-xs">{currentStage.centromeres}</div>
           </div>
           <div className="p-2 rounded-xl bg-[var(--bg-elevated)] border border-slate-700/60">
-            <div className="text-[10px] text-slate-400">Trạng thái</div>
-            <div className="font-black text-purple-400 text-[11px] truncate">
+            <div className="text-[11px] text-slate-400">Trạng thái</div>
+            <div className="font-black text-[var(--gem-fg)] text-xs truncate">
               {currentStage.chromatids === '0' ? 'NST Đơn' : 'NST Kép'}
             </div>
           </div>

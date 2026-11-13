@@ -5,7 +5,7 @@ export interface MinigameProps {
   onExit: () => void;
 }
 
-// ─── 🧪 Hóa học (7 Minigames) ───
+// ─── Hóa học (7 Minigames) ───
 export const PeriodicGuessGame: React.FC<MinigameProps> = ({ onExit }) => (
   <ScientificMinigameRunner gameId="periodic-guess" onExit={onExit} />
 );
@@ -54,7 +54,7 @@ export const EnergyReactionGame: React.FC<MinigameProps> = ({ onExit }) => (
   <ScientificMinigameRunner gameId="energy-reaction" onExit={onExit} />
 );
 
-// ─── ⚡ Vật lý (12 Minigames) ───
+// ─── Vật lý (12 Minigames) ───
 export const CircuitBuilderGame: React.FC<MinigameProps> = ({ onExit }) => (
   <ScientificMinigameRunner gameId="circuit-builder" onExit={onExit} />
 );
@@ -103,7 +103,7 @@ export const WorkPowerGame: React.FC<MinigameProps> = ({ onExit }) => (
   <ScientificMinigameRunner gameId="work-power" onExit={onExit} />
 );
 
-// ─── 🌿 Sinh học (12 Minigames) ───
+// ─── Sinh học (12 Minigames) ───
 export const DnaPairingGame: React.FC<MinigameProps> = ({ onExit }) => (
   <ScientificMinigameRunner gameId="dna-pairing" onExit={onExit} />
 );

@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { createInitialSession, sessionReducer } from './sessionReducer';
 import type { Exercise } from '../../content/schema/exercise';
+import { GAMIFICATION } from '../../config/gamification';
 
 const SAMPLE_EXERCISES: Exercise[] = [
   {
@@ -46,11 +47,11 @@ const SAMPLE_EXERCISES: Exercise[] = [
 ];
 
 describe('engine/sessionReducer', () => {
-  it('initializes session correctly with 5 hearts', () => {
+  it('initializes session correctly with full hearts', () => {
     const session = createInitialSession(SAMPLE_EXERCISES);
     expect(session.questions).toHaveLength(2);
     expect(session.currentIndex).toBe(0);
-    expect(session.hearts).toBe(5);
+    expect(session.hearts).toBe(GAMIFICATION.hearts.max);
     expect(session.totalXpEarned).toBe(0);
     expect(session.isSessionComplete).toBe(false);
   });
@@ -71,7 +72,7 @@ describe('engine/sessionReducer', () => {
     expect(state.questions[0].status).toBe('correct');
     expect(state.questions[0].earnedXp).toBe(10);
     expect(state.totalXpEarned).toBe(10);
-    expect(state.hearts).toBe(5);
+    expect(state.hearts).toBe(GAMIFICATION.hearts.max);
     expect(state.questions[0].isCompleted).toBe(true);
 
     // 4. Advance to next question
@@ -91,7 +92,7 @@ describe('engine/sessionReducer', () => {
     });
 
     expect(state.questions[0].status).toBe('partial');
-    expect(state.hearts).toBe(5); // Hearts preserved!
+    expect(state.hearts).toBe(GAMIFICATION.hearts.max); // Hearts preserved!
     expect(state.questions[0].attemptsCount).toBe(0); // Not counted as failed attempt!
 
     // Dismiss feedback to re-answer
@@ -109,7 +110,7 @@ describe('engine/sessionReducer', () => {
       type: 'EVALUATE_RESULT',
       payload: { status: 'incorrect', reason: 'Sai kết quả' }
     });
-    expect(state.hearts).toBe(4);
+    expect(state.hearts).toBe(GAMIFICATION.hearts.max - 1);
     expect(state.questions[0].attemptsCount).toBe(1);
     expect(state.questions[0].status).toBe('wrong');
 
@@ -121,7 +122,7 @@ describe('engine/sessionReducer', () => {
       type: 'EVALUATE_RESULT',
       payload: { status: 'incorrect', reason: 'Sai kết quả' }
     });
-    expect(state.hearts).toBe(3);
+    expect(state.hearts).toBe(GAMIFICATION.hearts.max - 2);
     expect(state.questions[0].attemptsCount).toBe(2);
 
     // Dismiss feedback & Attempt 3: Wrong -> Revealed!
@@ -132,7 +133,7 @@ describe('engine/sessionReducer', () => {
       type: 'EVALUATE_RESULT',
       payload: { status: 'incorrect', reason: 'Sai kết quả' }
     });
-    expect(state.hearts).toBe(2);
+    expect(state.hearts).toBe(GAMIFICATION.hearts.max - 3);
     expect(state.questions[0].attemptsCount).toBe(3);
     expect(state.questions[0].status).toBe('revealed');
     expect(state.questions[0].isCompleted).toBe(true);
@@ -200,7 +201,7 @@ describe('engine/sessionReducer', () => {
     expect(state.hearts).toBe(1);
 
     state = sessionReducer(state, { type: 'REFILL_HEARTS' });
-    expect(state.hearts).toBe(5);
+    expect(state.hearts).toBe(GAMIFICATION.hearts.max);
   });
 
   it('queues revealed question to the end for review practice', () => {

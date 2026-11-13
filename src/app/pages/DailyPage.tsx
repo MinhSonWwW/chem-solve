@@ -178,7 +178,7 @@ export const DailyPage: React.FC = () => {
               className="flex items-center justify-center gap-2"
             >
               <Sparkles className="w-4 h-4" />
-              <span>BẮT ĐẦU THỬ THÁCH NGAY</span>
+              <span>Bắt đầu thử thách ngay</span>
               <ArrowRight className="w-4 h-4" />
             </Button>
           )}
@@ -233,7 +233,7 @@ export const DailyPage: React.FC = () => {
               onClick={() => handleAnswer(true)}
               className="py-3.5 rounded-2xl border border-[var(--ok-edge)] bg-[var(--ok-fill)] text-white font-black flex items-center justify-center gap-2 shadow-[0_4px_0_0_var(--ok-edge)] active:shadow-none hover:opacity-95 transition disabled:opacity-40 cursor-pointer text-base"
             >
-              <Check className="w-5 h-5 stroke-[3]" /> ĐÚNG
+              <Check className="w-5 h-5 stroke-[3]" /> Đúng
             </motion.button>
             <motion.button
               whileTap={{ scale: 0.96, y: 3 }}
@@ -278,7 +278,7 @@ export const DailyPage: React.FC = () => {
                 navigate(`/learn/${activeGrade}`);
               }}
             >
-              TIẾP TỤC HỌC TẬP
+              Tiếp tục học tập
             </Button>
           </div>
         </motion.div>
@@ -286,7 +286,7 @@ export const DailyPage: React.FC = () => {
 
       {/* Previous Streak Tracker */}
       <div className="space-y-2">
-        <h2 className="text-xs font-black uppercase tracking-wider text-[var(--text-tertiary)]">
+        <h2 className="text-xs font-black text-[var(--text-tertiary)]">
           Lịch sử tuần này
         </h2>
         <div className="flex justify-between gap-2">
@@ -304,7 +304,7 @@ export const DailyPage: React.FC = () => {
                 {i < 6 ? <Flame className="w-4 h-4 fill-current text-current" /> : <span className="text-xs opacity-40">○</span>}
               </div>
               <span
-                className={`text-[10px] font-bold ${i < 6 ? 'text-[var(--warn-fg)]' : 'text-[var(--text-tertiary)]'}`}
+                className={`text-[11px] font-bold ${i < 6 ? 'text-[var(--warn-fg)]' : 'text-[var(--text-tertiary)]'}`}
               >
                 {day}
               </span>

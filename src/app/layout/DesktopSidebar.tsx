@@ -14,12 +14,13 @@ import {
   ChevronDown,
   LogIn,
   TestTubes,
+  Leaf,
 } from 'lucide-react';
 import { sound } from '@/lib/audio';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import { useAuthStore } from '@/features/auth/useAuthStore';
 import { assetUrl } from '@/lib/utils';
-import { SubjectSelectorModal, ThemeToggle } from '@/design-system';
+import { SubjectSelectorModal, ThemeToggle, SubjectIcon } from '@/design-system';
 import { useActiveSubject, useActiveGrade, SUBJECTS } from '@/content/subjects';
 
 interface NavItem {
@@ -30,13 +31,13 @@ interface NavItem {
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { to: '/learn', label: 'HỌC', icon: BookOpen, matchPrefix: '/learn' },
-  { to: '/practice', label: 'LUYỆN TẬP', icon: FlaskConical, matchPrefix: '/practice' },
-  { to: '/lab', label: 'PHÒNG LAB', icon: TestTubes, matchPrefix: '/lab' },
-  { to: '/shop', label: 'CỬA HÀNG', icon: ShoppingBag, matchPrefix: '/shop' },
-  { to: '/daily', label: 'NHIỆM VỤ', icon: Zap, matchPrefix: '/daily' },
-  { to: '/progress', label: 'TIẾN ĐỘ', icon: BarChart3, matchPrefix: '/progress' },
-  { to: '/profile', label: 'HỒ SƠ', icon: User, matchPrefix: '/profile' },
+  { to: '/learn', label: 'Học', icon: BookOpen, matchPrefix: '/learn' },
+  { to: '/practice', label: 'Luyện tập', icon: FlaskConical, matchPrefix: '/practice' },
+  { to: '/lab', label: 'Phòng lab', icon: TestTubes, matchPrefix: '/lab' },
+  { to: '/shop', label: 'Cửa hàng', icon: ShoppingBag, matchPrefix: '/shop' },
+  { to: '/daily', label: 'Nhiệm vụ', icon: Zap, matchPrefix: '/daily' },
+  { to: '/progress', label: 'Tiến độ', icon: BarChart3, matchPrefix: '/progress' },
+  { to: '/profile', label: 'Hồ sơ', icon: User, matchPrefix: '/profile' },
 ];
 
 export const DesktopSidebar: React.FC = () => {
@@ -61,9 +62,9 @@ export const DesktopSidebar: React.FC = () => {
             className="w-10 h-10 rounded-2xl flex items-center justify-center font-black text-white text-base overflow-hidden border border-white/30 bg-[var(--subject-fill)] shadow-[0_4px_0_0_var(--subject-edge)] group-hover:scale-105 transition-transform"
           >
             {activeSubject === 'physics' ? (
-              <Zap className="w-6 h-6 text-white fill-white" />
+              <Zap className="w-6 h-6 text-[var(--text-primary)] fill-white" />
             ) : activeSubject === 'bio' ? (
-              <span className="text-xl select-none">🌿</span>
+              <Leaf className="w-5 h-5" />
             ) : (
               <img
                 src={assetUrl('/assets/mascot/atom-idle.png')}
@@ -76,22 +77,10 @@ export const DesktopSidebar: React.FC = () => {
             )}
           </div>
           <div>
-            <span className="font-black text-xl tracking-wider text-[var(--text-primary)] block leading-tight">
-              {activeSubject === 'physics' ? (
-                <>
-                  PHY<span className="text-[var(--phy-fg)]">-SOLVE</span>
-                </>
-              ) : activeSubject === 'bio' ? (
-                <>
-                  BIO<span className="text-[var(--bio-fg)]">-SOLVE</span>
-                </>
-              ) : (
-                <>
-                  CHEM<span className="text-[var(--chem-fg)]">-SOLVE</span>
-                </>
-              )}
+            <span className="font-black text-xl text-[var(--text-primary)] block leading-tight">
+              Sci<span className="text-[var(--subject-fg)]">-Solve</span>
             </span>
-            <span className="text-[10px] font-bold text-[var(--text-tertiary)] tracking-wider uppercase">
+            <span className="text-[11px] font-bold text-[var(--text-tertiary)]  ">
               {activeSubject === 'physics'
                 ? 'Vật lý Lớp 6-9 KNTT'
                 : activeSubject === 'bio'
@@ -111,17 +100,17 @@ export const DesktopSidebar: React.FC = () => {
           title="Chọn môn học (Hóa học, Vật lý, Sinh học...)"
         >
           <div className="flex items-center gap-2.5 min-w-0">
-            <span className="text-xl shrink-0">{currentSub.icon}</span>
+            <SubjectIcon subject={currentSub.id} className="w-5 h-5 shrink-0 text-[var(--subject-fg)]" />
             <div className="min-w-0">
               <div className="flex items-center gap-1.5">
                 <span className="text-xs font-black text-[var(--text-primary)] truncate">{currentSub.name}</span>
                 <span
-                  className="text-[9px] font-black uppercase px-1 py-0.2 rounded border bg-[var(--subject-tint)] text-[var(--subject-fg)] border-[var(--subject-edge)]"
+                  className="text-[11px] font-black px-1 py-0.2 rounded border bg-[var(--subject-tint)] text-[var(--subject-fg)] border-[var(--subject-edge)]"
                 >
                   {currentSub.badge}
                 </span>
               </div>
-              <div className="text-[10px] text-[var(--text-tertiary)] truncate">Nhấn để đổi môn</div>
+              <div className="text-[11px] text-[var(--text-tertiary)] truncate">Nhấn để đổi môn</div>
             </div>
           </div>
           <ChevronDown className="w-4 h-4 text-[var(--text-tertiary)] group-hover:text-[var(--text-primary)] transition-colors shrink-0" />
@@ -146,7 +135,7 @@ export const DesktopSidebar: React.FC = () => {
                 key={item.to}
                 to={to}
                 onClick={() => sound.playClick()}
-                className={`sidebar-nav-item flex items-center gap-3.5 px-4 py-3 rounded-2xl text-xs font-black tracking-wider transition-all duration-150 cursor-pointer border ${
+                className={`sidebar-nav-item flex items-center gap-3.5 px-4 py-3 rounded-2xl text-xs font-black transition-all duration-150 cursor-pointer border ${
                   isActive
                     ? 'border-2 border-[var(--subject-fill)] bg-[var(--subject-tint)] text-[var(--subject-fg)]'
                     : 'border-transparent text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-surface-2)]'
@@ -182,7 +171,7 @@ export const DesktopSidebar: React.FC = () => {
                 <span className="block text-xs font-black text-[var(--text-primary)] truncate">
                   {user.displayName}
                 </span>
-                <span className="block text-[9px] text-[var(--ok-fg)] font-extrabold uppercase tracking-tight">
+                <span className="block text-[11px] text-[var(--ok-fg)] font-extrabold tracking-tight">
                   Đã đồng bộ ✓
                 </span>
               </div>
@@ -197,7 +186,7 @@ export const DesktopSidebar: React.FC = () => {
             title="Đăng nhập để lưu tiến trình học tập"
           >
             <LogIn className="w-4 h-4" />
-            <span>ĐĂNG NHẬP / ĐĂNG KÝ</span>
+            <span>Đăng nhập / đăng ký</span>
           </NavLink>
         )}
 
@@ -210,7 +199,7 @@ export const DesktopSidebar: React.FC = () => {
             toggleSound();
             sound.playClick();
           }}
-          className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-[11px] font-bold text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-surface-2)] transition-colors cursor-pointer"
+          className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-surface-2)] transition-colors cursor-pointer"
         >
           <span className="flex items-center gap-2">
             {soundEnabled ? (
@@ -221,22 +210,24 @@ export const DesktopSidebar: React.FC = () => {
             Âm thanh
           </span>
           <span
-            className={`text-[10px] font-extrabold uppercase px-1.5 py-0.5 rounded ${
+            className={`text-[11px] font-extrabold px-1.5 py-0.5 rounded ${
               soundEnabled ? 'bg-[var(--subject-tint)] text-[var(--subject-fg)] border border-[var(--subject-edge)]' : 'bg-[var(--bg-surface-2)] text-[var(--text-tertiary)]'
             }`}
           >
-            {soundEnabled ? 'BẬT' : 'TẮT'}
+            {soundEnabled ? 'Bật' : 'Tắt'}
           </span>
         </button>
 
-        {/* Design System Gallery Link */}
+        {/* Design System Gallery Link (developer-only, hidden in production builds) */}
+        {import.meta.env.DEV && (
         <NavLink
           to="/dev/design-system"
-          className="w-full flex items-center gap-2 px-3 py-2 rounded-xl text-[11px] font-bold text-[var(--text-tertiary)] hover:text-[var(--subject-fg)] hover:bg-[var(--bg-surface-2)] transition-colors"
+          className="w-full flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-bold text-[var(--text-tertiary)] hover:text-[var(--subject-fg)] hover:bg-[var(--bg-surface-2)] transition-colors"
         >
           <Code2 className="w-4 h-4" />
           <span>Design System</span>
         </NavLink>
+        )}
       </div>
 
       {/* Subject Switcher Modal */}

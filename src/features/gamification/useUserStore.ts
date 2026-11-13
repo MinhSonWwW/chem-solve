@@ -81,7 +81,7 @@ export const useUserStore = create<UserState>((set, get) => ({
   xp: 0,
   gems: 0,
   streak: 0,
-  hearts: 99,
+  hearts: GAMIFICATION.hearts.max,
   streakFreeze: 0,
   xpBoostUntil: 0,
   soundEnabled: true,
@@ -96,7 +96,7 @@ export const useUserStore = create<UserState>((set, get) => ({
   consecutiveCorrect: 0,
 
   startSession: (lessonId, nodeId, exercises, initialHearts, isPractice = false) => {
-    const hearts = initialHearts ?? 99;
+    const hearts = initialHearts ?? get().hearts;
     const session = createInitialSession(exercises, hearts, isPractice);
     set({
       sessionState: session,
@@ -297,13 +297,23 @@ export const useUserStore = create<UserState>((set, get) => ({
   },
 
   decrementHearts: () =>
-    set(() => {
-      // Testing mode: unlimited hearts
-      return { hearts: 99 };
+    set((state) => {
+      const next = Math.max(0, state.hearts - 1);
+      loadUserProgress().then((p) => {
+        p.hearts = next;
+        p.heartsLastDecAt = Date.now();
+        saveUserProgress(p).catch(console.error);
+      });
+      return { hearts: next };
     }),
-  addHearts: () =>
-    set(() => {
-      return { hearts: 99 };
+  addHearts: (amount = 1) =>
+    set((state) => {
+      const next = Math.min(GAMIFICATION.hearts.max, state.hearts + amount);
+      loadUserProgress().then((p) => {
+        p.hearts = next;
+        saveUserProgress(p).catch(console.error);
+      });
+      return { hearts: next };
     }),
   incrementStreak: () => {
     const today = new Date().toISOString().slice(0, 10);
@@ -348,10 +358,14 @@ export const useUserStore = create<UserState>((set, get) => ({
   restoreProgress: async () => {
     try {
       const progress: UserProgress = await loadUserProgress();
+      const currentHearts =
+        progress.hearts === undefined || progress.hearts >= 99
+          ? GAMIFICATION.hearts.max
+          : Math.min(GAMIFICATION.hearts.max, Math.max(0, progress.hearts));
       set({
         xp: progress.xp,
         gems: progress.gems ?? 0,
-        hearts: 99,
+        hearts: currentHearts,
         streak: progress.streak,
         streakFreeze: progress.streakFreeze ?? 0,
         xpBoostUntil: progress.xpBoostUntil ?? 0,

@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { parseEquation } from './parseEquation';
-import { checkBalance, areSimplestCoefficients, simplestCoefficients } from './checkBalance';
+import { checkBalance, areSimplestCoefficients, simplestCoefficients, coefficientsGcd } from './checkBalance';
 
 describe('chem/equation', () => {
   describe('parseEquation', () => {
@@ -51,6 +51,12 @@ describe('chem/equation', () => {
       expect(res.isBalanced).toBe(true);
       expect(res.isSimplest).toBe(false);
       expect(res.feedbackMessage).toContain('chưa ở tỉ lệ tối giản');
+      expect(res.feedbackMessage).toContain('chia hết cho 2');
+
+      const cuAg = checkBalance('2Cu + 4AgNO3 -> 2Cu(NO3)2 + 4Ag');
+      expect(cuAg.isBalanced).toBe(true);
+      expect(cuAg.isSimplest).toBe(false);
+      expect(cuAg.feedbackMessage).toContain('chia hết cho 2');
     });
 
     it('accurately identifies unbalanced elements and atom count discrepancy', () => {
@@ -74,6 +80,8 @@ describe('chem/equation', () => {
 
   describe('simplestCoefficients', () => {
     it('reduces non-simplest integer ratios', () => {
+      expect(coefficientsGcd([2, 4, 2, 4])).toBe(2);
+      expect(coefficientsGcd([1, 2, 1, 2])).toBe(1);
       expect(areSimplestCoefficients([4, 2, 4])).toBe(false);
       expect(simplestCoefficients([4, 2, 4])).toEqual([2, 1, 2]);
       expect(simplestCoefficients([6, 3, 6])).toEqual([2, 1, 2]);

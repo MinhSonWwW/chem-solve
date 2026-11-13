@@ -32,7 +32,7 @@ import {
 import { useNavigate } from 'react-router-dom';
 import { useAuthStore } from '@/features/auth/useAuthStore';
 import { useUserStore } from '@/features/gamification/useUserStore';
-import { Button, Streak, XPBadge, Heart, GemBadge, Mascot, type MascotState, ThemeToggle } from '@/design-system';
+import { Button, Mascot, type MascotState, ThemeToggle } from '@/design-system';
 import { ACHIEVEMENTS } from '@/config/achievements';
 import { getLevelInfo, GAMIFICATION } from '@/config/gamification';
 import { sound } from '@/lib/audio';
@@ -52,7 +52,7 @@ interface AchievementMeta {
 const ACHIEVEMENT_METAS: Record<string, AchievementMeta> = {
   'first-lesson': {
     tier: 'bronze',
-    tierLabel: 'Huy Chương Đồng',
+    tierLabel: 'Huy chương đồng',
     icon: Rocket,
     image: '/assets/icons/achievement-first-lesson.png',
     badgeClass: 'bg-[var(--gold-subtle)] text-[var(--gold-fg)] border-[var(--gold)] shadow-[0_3px_0_0_var(--gold-shade)]',
@@ -60,7 +60,7 @@ const ACHIEVEMENT_METAS: Record<string, AchievementMeta> = {
   },
   'streak-3': {
     tier: 'silver',
-    tierLabel: 'Huy Chương Bạc',
+    tierLabel: 'Huy chương bạc',
     icon: Zap,
     image: '/assets/icons/achievement-streak-3.png',
     badgeClass: 'bg-[var(--slate-subtle)] text-[var(--slate-fg)] border-[var(--slate)] shadow-[0_3px_0_0_var(--border-strong)]',
@@ -68,7 +68,7 @@ const ACHIEVEMENT_METAS: Record<string, AchievementMeta> = {
   },
   'combo-master': {
     tier: 'gold',
-    tierLabel: 'Huy Chương Vàng',
+    tierLabel: 'Huy chương vàng',
     icon: Flame,
     image: '/assets/icons/achievement-combo-master.png',
     badgeClass: 'bg-[var(--gold)] text-[var(--on-ink)] border-[var(--gold-shade)] shadow-[0_3px_0_0_var(--gold-shade)]',
@@ -76,7 +76,7 @@ const ACHIEVEMENT_METAS: Record<string, AchievementMeta> = {
   },
   'perfect-run': {
     tier: 'diamond',
-    tierLabel: 'Kim Cương Hoàn Hảo',
+    tierLabel: 'Kim cương hoàn hảo',
     icon: Gem,
     image: '/assets/icons/achievement-perfect-run.png',
     badgeClass: 'bg-[var(--chem)] text-[var(--on-chem)] border-[var(--chem-shade)] shadow-[0_3px_0_0_var(--chem-shade)]',
@@ -84,7 +84,7 @@ const ACHIEVEMENT_METAS: Record<string, AchievementMeta> = {
   },
   'mol-warrior': {
     tier: 'emerald',
-    tierLabel: 'Ngọc Lục Chiến Binh',
+    tierLabel: 'Ngọc lục chiến binh',
     icon: Scale,
     image: '/assets/icons/achievement-mol-warrior.png',
     badgeClass: 'bg-[var(--bio)] text-[var(--on-bio)] border-[var(--bio-shade)] shadow-[0_3px_0_0_var(--bio-shade)]',
@@ -92,7 +92,7 @@ const ACHIEVEMENT_METAS: Record<string, AchievementMeta> = {
   },
   'equation-hunter': {
     tier: 'ruby',
-    tierLabel: 'Hồng Ngọc Cân Bằng',
+    tierLabel: 'Hồng ngọc cân bằng',
     icon: Target,
     image: '/assets/icons/achievement-equation-hunter.png',
     badgeClass: 'bg-[var(--err)] text-[var(--on-err)] border-[var(--err-shade)] shadow-[0_3px_0_0_var(--err-shade)]',
@@ -100,7 +100,7 @@ const ACHIEVEMENT_METAS: Record<string, AchievementMeta> = {
   },
   'acid-base-expert': {
     tier: 'amethyst',
-    tierLabel: 'Thạch Anh Chuyên Gia',
+    tierLabel: 'Thạch anh chuyên gia',
     icon: FlaskConical,
     image: '/assets/icons/achievement-acid-base-expert.png',
     badgeClass: 'bg-[var(--phy)] text-[var(--on-phy)] border-[var(--phy-shade)] shadow-[0_3px_0_0_var(--phy-shade)]',
@@ -108,7 +108,7 @@ const ACHIEVEMENT_METAS: Record<string, AchievementMeta> = {
   },
   'level-5': {
     tier: 'mythic',
-    tierLabel: 'Vương Miện Huyền Thoại',
+    tierLabel: 'Vương miện huyền thoại',
     icon: Crown,
     image: '/assets/icons/achievement-level-5.png',
     badgeClass: 'bg-[var(--warn)] text-[var(--on-ink)] border-[var(--warn-shade)] shadow-[0_3px_0_0_var(--warn-shade)]',
@@ -231,7 +231,7 @@ export const ProfilePage: React.FC = () => {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `chem-solve-progress-${new Date().toISOString().slice(0, 10)}.json`;
+    a.download = `sci-solve-progress-${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
     URL.revokeObjectURL(url);
   };
@@ -279,8 +279,8 @@ export const ProfilePage: React.FC = () => {
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="text-sm font-black text-[var(--fg-default)]">{user.displayName || 'Nhà Khoa Học'}</span>
-                <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-[var(--ok-subtle)] text-[var(--ok-fg)] border border-[var(--ok)]">
+                <span className="text-sm font-black text-[var(--fg-default)]">{user.displayName || 'Nhà khoa học'}</span>
+                <span className="text-[11px] font-extrabold px-2 py-0.5 rounded-full bg-[var(--ok-subtle)] text-[var(--ok-fg)] border border-[var(--ok)]">
                   {user.provider === 'google' ? 'Google' : user.provider === 'facebook' ? 'Facebook' : user.provider === 'github' ? 'GitHub' : 'Đã xác thực'}
                 </span>
               </div>
@@ -300,20 +300,15 @@ export const ProfilePage: React.FC = () => {
           </button>
         </div>
       ) : (
-        <div className="p-4 rounded-3xl bg-[var(--bg-surface)] border border-[var(--chem)] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="p-4 rounded-3xl bg-[var(--bg-surface)] border border-[var(--border)] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-11 h-11 rounded-2xl bg-[var(--chem-subtle)] border border-[var(--chem)] flex items-center justify-center text-[var(--chem-fg)] shrink-0">
-              <Sparkles className="w-5 h-5 animate-pulse" />
+            <div className="w-11 h-11 rounded-2xl bg-[var(--bg-surface-2)] border border-[var(--border)] flex items-center justify-center text-[var(--chem-fg)] shrink-0">
+              <LogIn className="w-5 h-5" />
             </div>
             <div>
-              <div className="flex items-center gap-2">
-                <span className="text-sm font-black text-[var(--fg-default)]">Chế độ Học viên Tự do (Guest)</span>
-                <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-[var(--warn-subtle)] text-[var(--warn-fg)] border border-[var(--warn)]">
-                  Chưa đăng nhập
-                </span>
-              </div>
+              <span className="text-sm font-black text-[var(--fg-default)]">Bạn chưa đăng nhập</span>
               <p className="text-xs text-[var(--fg-muted)] font-medium mt-0.5">
-                Đăng nhập để đồng bộ tiến trình học, lưu huy chương và thi đua cùng bạn bè!
+                Tiến độ đang lưu trên máy này. Đăng nhập để không bị mất khi đổi máy.
               </p>
             </div>
           </div>
@@ -325,7 +320,7 @@ export const ProfilePage: React.FC = () => {
             className="px-4 py-2.5 rounded-2xl bg-[var(--chem)] hover:bg-[var(--chem-hover)] text-[var(--on-chem)] text-xs font-black flex items-center justify-center gap-2 transition-all shadow-[0_3px_0_0_var(--chem-shade)] active:translate-y-[2px] active:shadow-none cursor-pointer shrink-0"
           >
             <LogIn className="w-4 h-4" />
-            <span>ĐĂNG NHẬP / ĐĂNG KÝ</span>
+            <span>Đăng nhập / đăng ký</span>
           </button>
         </div>
       )}
@@ -346,28 +341,21 @@ export const ProfilePage: React.FC = () => {
             )}
           </div>
           <div className="flex-1 min-w-0">
-            <div className="inline-block px-2.5 py-0.5 rounded-full bg-[var(--chem-subtle)] text-[var(--chem-fg)] font-extrabold text-[10px] uppercase tracking-wider mb-1 border border-[var(--border)]">
-              Cấp {levelInfo.level} · Nhà Hóa Học Chem-Solve
-            </div>
             <h1 className="text-lg font-black text-[var(--fg-default)] truncate">
-              {isAuthenticated && user?.displayName ? user.displayName : 'Học viên xuất sắc'}
+              {isAuthenticated && user?.displayName ? user.displayName : 'Bạn'}
             </h1>
-            <div className="flex flex-wrap items-center gap-2 mt-1.5">
-              <Streak days={streak} />
-              <XPBadge amount={xp} />
-              <GemBadge amount={gems} />
-              <Heart count={hearts} max={GAMIFICATION.hearts.max} />
-              <span className="inline-flex items-center gap-1.5 text-[var(--fg-default)] font-black text-xs bg-[var(--bg-canvas)] border border-[var(--border)] px-2.5 py-1 rounded-full">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[var(--ok-fg)]" />
-                <span>{totalCompletedCount} chặng đã qua</span>
-              </span>
-            </div>
+            <p className="text-xs text-[var(--fg-muted)] font-medium">
+              Cấp {levelInfo.level} · {xp} XP · {totalCompletedCount} bài đã xong
+            </p>
+            <p className="text-xs text-[var(--fg-muted)] font-medium">
+              {streak} ngày liên tiếp · {gems} đá quý · {hearts}/{GAMIFICATION.hearts.max} tim
+            </p>
           </div>
         </div>
 
         {/* Mascot Avatar Mood Selector */}
         <div className="pt-3 border-t border-[var(--border)] flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-          <span className="text-[11px] font-bold text-[var(--fg-muted)]">Tâm trạng Mascot đại diện:</span>
+          <span className="text-xs font-bold text-[var(--fg-muted)]">Biểu cảm mascot</span>
           <div className="flex gap-1.5 overflow-x-auto pb-0.5">
             {AVATAR_STATES.map(({ state, label }) => (
               <button
@@ -376,7 +364,7 @@ export const ProfilePage: React.FC = () => {
                   sound.playClick();
                   setAvatarState(state);
                 }}
-                className={`px-2.5 py-1 rounded-xl flex items-center gap-1.5 text-xs font-bold transition-all cursor-pointer border ${
+                className={`shrink-0 whitespace-nowrap px-2.5 py-1 rounded-xl flex items-center gap-1.5 text-xs font-bold transition-all cursor-pointer border ${
                   avatarState === state
                     ? 'bg-[var(--chem-subtle)] border-[var(--chem)] text-[var(--chem-fg)]'
                     : 'bg-[var(--bg-canvas)] border-[var(--border)] text-[var(--fg-muted)] hover:text-[var(--fg-default)]'
@@ -394,7 +382,7 @@ export const ProfilePage: React.FC = () => {
       <div className="p-4 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] space-y-2">
         <div className="flex justify-between text-xs font-bold">
           <span className="text-[var(--fg-muted)]">
-            Tiến độ lên Cấp {levelInfo.level + 1}
+            Lên cấp {levelInfo.level + 1}
           </span>
           <span className="text-[var(--chem-fg)] font-mono">
             {levelInfo.currentLevelXp}/{levelInfo.nextLevelXp} XP
@@ -442,7 +430,7 @@ export const ProfilePage: React.FC = () => {
       {/* 4. Achievements Grid */}
       <div className="space-y-3">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 px-1">
-          <h2 className="text-xs font-extrabold uppercase tracking-wider text-[var(--fg-muted)] flex items-center gap-1.5">
+          <h2 className="text-xs font-extrabold text-[var(--fg-muted)] flex items-center gap-1.5">
             <Medal className="w-4 h-4 text-[var(--gold-fg)]" />
             Bảng Thành tựu Vinh danh ({unlockedAchCount}/{ACHIEVEMENTS.length})
           </h2>
@@ -454,7 +442,7 @@ export const ProfilePage: React.FC = () => {
                 sound.playClick();
                 setAchFilter('all');
               }}
-              className={`px-2.5 py-0.5 rounded-lg text-[11px] font-bold transition-all cursor-pointer ${
+              className={`px-2.5 py-0.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
                 achFilter === 'all'
                   ? 'bg-[var(--gold-subtle)] text-[var(--gold-fg)] border border-[var(--gold)]'
                   : 'text-[var(--fg-muted)] hover:text-[var(--fg-default)]'
@@ -467,7 +455,7 @@ export const ProfilePage: React.FC = () => {
                 sound.playClick();
                 setAchFilter('unlocked');
               }}
-              className={`px-2.5 py-0.5 rounded-lg text-[11px] font-bold transition-all cursor-pointer ${
+              className={`px-2.5 py-0.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
                 achFilter === 'unlocked'
                   ? 'bg-[var(--ok-subtle)] text-[var(--ok-fg)] border border-[var(--ok)]'
                   : 'text-[var(--fg-muted)] hover:text-[var(--fg-default)]'
@@ -480,7 +468,7 @@ export const ProfilePage: React.FC = () => {
                 sound.playClick();
                 setAchFilter('locked');
               }}
-              className={`px-2.5 py-0.5 rounded-lg text-[11px] font-bold transition-all cursor-pointer ${
+              className={`px-2.5 py-0.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
                 achFilter === 'locked'
                   ? 'bg-[var(--chem-subtle)] text-[var(--chem-fg)] border border-[var(--chem)]'
                   : 'text-[var(--fg-muted)] hover:text-[var(--fg-default)]'
@@ -498,7 +486,7 @@ export const ProfilePage: React.FC = () => {
             const percent = Math.min(100, Math.round((currentProgress / ach.maxProgress) * 100));
             const meta = ACHIEVEMENT_METAS[ach.id] || {
               tier: 'gold',
-              tierLabel: 'Huy Chương Vàng',
+              tierLabel: 'Huy chương vàng',
               icon: Award,
               badgeClass: 'bg-[var(--gold)] text-[var(--on-ink)] border-[var(--gold-shade)] shadow-[0_3px_0_0_var(--gold-shade)]',
               tierColor: 'text-[var(--gold-fg)]',
@@ -562,7 +550,7 @@ export const ProfilePage: React.FC = () => {
 
                     <div>
                       <span
-                        className={`text-[10px] font-black uppercase tracking-wider block ${
+                        className={`text-[11px] font-black block ${
                           isUnlocked ? meta.tierColor : 'text-[var(--fg-muted)]'
                         }`}
                       >
@@ -579,12 +567,12 @@ export const ProfilePage: React.FC = () => {
                   </div>
 
                   {isUnlocked ? (
-                    <span className="inline-flex items-center gap-1 text-[10px] font-black text-[var(--gold-fg)] bg-[var(--gold-subtle)] border border-[var(--gold)] px-2.5 py-1 rounded-full shrink-0">
+                    <span className="inline-flex items-center gap-1 text-[11px] font-black text-[var(--gold-fg)] bg-[var(--gold-subtle)] border border-[var(--gold)] px-2.5 py-1 rounded-full shrink-0">
                       <Sparkles className="w-3 h-3 text-[var(--gold-fg)]" />
-                      <span>ĐÃ ĐẠT</span>
+                      <span>Đã đạt</span>
                     </span>
                   ) : (
-                    <span className="text-[10px] font-black text-[var(--fg-muted)] bg-[var(--bg-canvas)] border border-[var(--border)] px-2.5 py-1 rounded-full shrink-0">
+                    <span className="text-[11px] font-black text-[var(--fg-muted)] bg-[var(--bg-canvas)] border border-[var(--border)] px-2.5 py-1 rounded-full shrink-0">
                       {currentProgress}/{ach.maxProgress}
                     </span>
                   )}
@@ -596,7 +584,7 @@ export const ProfilePage: React.FC = () => {
 
                 {/* Tactile Progress bar */}
                 <div className="space-y-1.5 pt-1">
-                  <div className="flex justify-between text-[11px] font-bold">
+                  <div className="flex justify-between text-xs font-bold">
                     <span className="text-[var(--fg-muted)]">
                       {isUnlocked
                         ? 'Hoàn thành tuyệt đối'
@@ -629,7 +617,7 @@ export const ProfilePage: React.FC = () => {
 
       {/* 5. Settings & Data Export / Import */}
       <div className="space-y-3">
-        <h2 className="text-xs font-extrabold uppercase tracking-wider text-[var(--fg-muted)] px-1 flex items-center gap-1.5">
+        <h2 className="text-xs font-extrabold text-[var(--fg-muted)] px-1 flex items-center gap-1.5">
           <Sliders className="w-4 h-4 text-[var(--chem-fg)]" />
           Cài đặt & Dữ liệu
         </h2>
@@ -674,7 +662,7 @@ export const ProfilePage: React.FC = () => {
                 <div className="text-xs font-semibold text-[var(--fg-default)]">
                   Rung phản hồi xúc giác (Haptic)
                 </div>
-                <div className="text-[11px] text-[var(--fg-muted)]">
+                <div className="text-xs text-[var(--fg-muted)]">
                   Rung nhẹ khi nhấn nút và làm bài trên điện thoại
                 </div>
               </div>
@@ -734,7 +722,7 @@ export const ProfilePage: React.FC = () => {
                 <div className="text-xs font-semibold text-[var(--fg-default)]">
                   Hướng dẫn tân thủ (Tour A-Z)
                 </div>
-                <div className="text-[11px] text-[var(--fg-muted)]">
+                <div className="text-xs text-[var(--fg-muted)]">
                   Xem lại cách chọn môn, mở nốt, hồi tim và quà khởi nghiệp
                 </div>
               </div>
@@ -761,7 +749,7 @@ export const ProfilePage: React.FC = () => {
                 <ShieldCheck className="w-4 h-4 shrink-0 text-[var(--ok-fg)]" />
                 <span>Bảo vệ tiến trình 3 lớp: Cookies + LocalStorage + IndexedDB</span>
               </div>
-              <p className="text-[11px] text-[var(--fg-muted)] leading-relaxed">
+              <p className="text-xs text-[var(--fg-muted)] leading-relaxed">
                 Dữ liệu bài học và đăng nhập được lưu song song trên Cookies (365 ngày), Bộ nhớ cục bộ và Cơ sở dữ liệu PWA. Khi web cập nhật phiên bản mới, tiến trình sẽ tự động khôi phục.
               </p>
             </div>

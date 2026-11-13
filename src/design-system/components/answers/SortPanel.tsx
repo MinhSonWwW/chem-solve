@@ -142,7 +142,7 @@ const DroppableBucket: React.FC<DroppableBucketProps> = ({
           <Folder className="w-4 h-4 text-[var(--subject-fg)] shrink-0" />
           <span><MathText text={bucket.label} /></span>
         </div>
-        <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-[var(--bg-surface-2)] text-[var(--text-tertiary)] border border-[var(--border)]">
+        <span className="text-xs font-mono px-2 py-0.5 rounded-full bg-[var(--bg-surface-2)] text-[var(--text-tertiary)] border border-[var(--border)]">
           {bucketItems.length}
         </span>
       </div>
@@ -204,9 +204,9 @@ const DroppableTray: React.FC<DroppableTrayProps> = ({
           : 'bg-[var(--bg-surface-2)] border border-[var(--border)]'
       }`}
     >
-      <div className="flex items-center justify-between text-[11px] font-bold text-[var(--text-secondary)] uppercase tracking-wider mb-2 select-none">
+      <div className="flex items-center justify-between text-xs font-bold text-[var(--text-secondary)] mb-2 select-none">
         <span>Các chất cần phân loại ({unassignedItems.length})</span>
-        <span className="text-[10px] text-[var(--text-tertiary)] font-normal lowercase">kéo hoặc nhấn chọn</span>
+        <span className="text-[11px] text-[var(--text-tertiary)] font-normal lowercase">kéo hoặc nhấn chọn</span>
       </div>
       <div className="flex flex-wrap gap-2 min-h-[44px] items-center">
         {unassignedItems.length === 0 ? (
@@ -323,11 +323,11 @@ export const SortPanel: React.FC<SortPanelProps> = ({
         {/* Instructions */}
         <div className="text-center text-xs font-semibold text-[var(--text-secondary)]">
           {activeDragId ? (
-            <span className="text-[var(--subject-fg)] font-bold animate-pulse">
-              🎯 Thả vào nhóm bạn muốn phân loại!
+            <span className="text-[var(--subject-fg)] font-bold ">
+              Thả vào nhóm bạn muốn phân loại!
             </span>
           ) : selectedItemId ? (
-            <span className="text-[var(--subject-fg)] animate-pulse font-bold">
+            <span className="text-[var(--subject-fg)] font-bold">
               Đang chọn một chất — Nhấn vào nhóm bên dưới hoặc kéo thả trực tiếp!
             </span>
           ) : (

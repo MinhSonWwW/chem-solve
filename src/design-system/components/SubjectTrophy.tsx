@@ -374,7 +374,7 @@ export const SubjectTrophy: React.FC<SubjectTrophyProps> = ({
         height: size,
         animationDuration: '2.5s',
       }}
-      title="Cúp Hóa học: Bình Chưng Cất Hoàng Kim"
+      title="Cúp Hóa học: Bình chưng cất hoàng kim"
     >
       <img
         src={assetUrl('/assets/roadmap/trophy-gold.png')}

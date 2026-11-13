@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo } from 'react';
 import { Plus, Minus, ArrowRight, Check, AlertCircle } from 'lucide-react';
 import { Formula } from '../Formula';
-import { checkBalance } from '@/chem/checkBalance';
+import { checkBalance, coefficientsGcd } from '@/chem/checkBalance';
 import { sound } from '@/lib/audio';
 import type { Verdict } from '@/engine/checkers/types';
 
@@ -85,6 +85,8 @@ export const EquationInput: React.FC<EquationInputProps> = ({
     }
   }, [reactants, products, currentCoeffs]);
 
+  const gcdFactor = useMemo(() => coefficientsGcd(currentCoeffs), [currentCoeffs]);
+
   // Merge elements from both sides to display atom balance
   const elements = useMemo(() => {
     if (!balanceInfo) return [];
@@ -120,12 +122,14 @@ export const EquationInput: React.FC<EquationInputProps> = ({
         className={`p-4 sm:p-6 rounded-2xl border transition-all ${
           verdict?.status === 'correct'
             ? 'border-[var(--ok-edge)] bg-[var(--ok-tint)]'
+            : verdict?.status === 'partial'
+            ? 'border-[var(--warn-edge)] bg-[var(--warn-tint)]'
             : verdict?.status === 'incorrect'
             ? 'border-[var(--err-edge)] bg-[var(--err-tint)]'
             : 'border-[var(--border)] bg-[var(--bg-surface)]'
         }`}
       >
-        <div className="text-center text-xs font-semibold text-[var(--text-muted)] mb-4 uppercase tracking-wider">
+        <div className="text-center text-xs font-semibold text-[var(--text-muted)] mb-4  ">
           Chọn hệ số thích hợp trước mỗi chất để cân bằng
         </div>
 
@@ -171,15 +175,11 @@ export const EquationInput: React.FC<EquationInputProps> = ({
             </React.Fragment>
           ))}
 
-          {/* Reaction Arrow with condition badge */}
-          <div className="flex flex-col items-center px-1 text-[var(--warn-fg)]">
-            {condition ? (
-              <span className="text-[10px] font-black text-[var(--warn-fg)] tracking-tighter mb-0.5 px-1.5 py-0.5 rounded bg-[var(--warn-tint)] border border-[var(--warn-edge)] shadow-sm">
+          {/* Reaction Arrow with optional condition badge */}
+          <div className="flex flex-col items-center justify-center px-1 text-[var(--warn-fg)]">
+            {condition && (
+              <span className="text-[11px] font-black text-[var(--warn-fg)] tracking-tighter mb-0.5 px-1.5 py-0.5 rounded bg-[var(--warn-tint)] border border-[var(--warn-edge)] shadow-sm">
                 {condition}
-              </span>
-            ) : (
-              <span className="text-[10px] font-black text-[var(--warn-fg)] tracking-tighter mb-0.5 opacity-80">
-                t°
               </span>
             )}
             <div className="flex items-center">
@@ -235,8 +235,14 @@ export const EquationInput: React.FC<EquationInputProps> = ({
 
       {/* Real-time Atom Balance Indicator - Spectrometer Style */}
       {balanceInfo && elements.length > 0 && (
-        <div className="flex flex-wrap items-center justify-center gap-2 p-3 rounded-2xl bg-[var(--bg-surface-2)] border border-[var(--border)] text-xs">
-          <span className="text-[var(--text-muted)] font-bold mr-1 uppercase text-[11px] tracking-wider">
+        <div
+          className={`flex flex-wrap items-center justify-center gap-2 p-3 rounded-2xl border text-xs transition-colors ${
+            balanceInfo.isBalanced && !balanceInfo.isSimplest
+              ? 'bg-[var(--warn-tint)] border-[var(--warn-edge)]'
+              : 'bg-[var(--bg-surface-2)] border-[var(--border)]'
+          }`}
+        >
+          <span className="text-[var(--text-muted)] font-bold mr-1 text-xs ">
             Cân bằng nguyên tử:
           </span>
           {elements.map((elem) => {
@@ -264,6 +270,12 @@ export const EquationInput: React.FC<EquationInputProps> = ({
               </span>
             );
           })}
+          {balanceInfo.isBalanced && !balanceInfo.isSimplest && gcdFactor > 1 && (
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl font-bold bg-[var(--bg-surface)] text-[var(--warn-fg)] border border-[var(--warn-edge)] shadow-sm">
+              <AlertCircle className="w-3.5 h-3.5 text-[var(--warn-fg)] stroke-[2.5]" />
+              <span>Chưa tối giản (chia hết cho {gcdFactor})</span>
+            </span>
+          )}
         </div>
       )}
     </div>

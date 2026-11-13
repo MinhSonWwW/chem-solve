@@ -149,7 +149,7 @@ export const ReactionBuilderGame: React.FC<{ onExit: () => void }> = ({ onExit }
             Câu {currentIndex + 1}/{roundReactions.length}
           </span>
           {currentRx?.condition && (
-            <span className="flex items-center gap-1 text-amber-400 font-bold bg-amber-950/40 px-2 py-0.5 rounded-full border border-amber-800/40">
+            <span className="flex items-center gap-1 text-[var(--gold-fg)] font-bold bg-amber-950/40 px-2 py-0.5 rounded-full border border-amber-800/40">
               <Flame className="w-3 h-3" /> {currentRx.condition}
             </span>
           )}
@@ -172,7 +172,7 @@ export const ReactionBuilderGame: React.FC<{ onExit: () => void }> = ({ onExit }
               ))}
             </div>
 
-            <ArrowRight className="w-5 h-5 text-amber-400 shrink-0" />
+            <ArrowRight className="w-5 h-5 text-[var(--gold-fg)] shrink-0" />
 
             {/* Products Drop Target */}
             <div
@@ -204,14 +204,14 @@ export const ReactionBuilderGame: React.FC<{ onExit: () => void }> = ({ onExit }
               animate={{ opacity: 1, y: 0 }}
               className="text-xs text-[var(--ok-fg)] font-semibold bg-[var(--ok-subtle)] border border-[var(--ok)] rounded-xl p-2"
             >
-              ✨ Hiện tượng: {currentRx.phenomenon}
+              Hiện tượng: {currentRx.phenomenon}
             </motion.div>
           )}
         </div>
 
         {/* Options Selection Tray */}
         <div className="space-y-2">
-          <div className="text-[11px] font-black text-[var(--fg-muted)] uppercase tracking-wider text-center">
+          <div className="text-xs font-black text-[var(--fg-muted)] text-center">
             Chọn sản phẩm chính xác
           </div>
           <div className="grid grid-cols-1 gap-2">
@@ -241,7 +241,7 @@ export const ReactionBuilderGame: React.FC<{ onExit: () => void }> = ({ onExit }
                       </React.Fragment>
                     ))}
                   </div>
-                  {isCorrect && <Check className="w-5 h-5 text-emerald-400 shrink-0" />}
+                  {isCorrect && <Check className="w-5 h-5 text-[var(--ok-fg)] shrink-0" />}
                 </motion.button>
               );
             })}

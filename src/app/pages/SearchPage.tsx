@@ -57,7 +57,7 @@ export const SearchPage: React.FC = () => {
 
       {/* Quick Search Suggestion Chips */}
       <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none">
-        <span className="text-[11px] font-bold text-[var(--fg-subtle)] shrink-0 mr-1">Gợi ý:</span>
+        <span className="text-xs font-bold text-[var(--fg-subtle)] shrink-0 mr-1">Gợi ý:</span>
         {QUICK_SEARCH_CHIPS.map((chip) => (
           <button
             key={chip}
@@ -65,7 +65,7 @@ export const SearchPage: React.FC = () => {
               sound.playClick();
               setQuery(chip);
             }}
-            className="px-2.5 py-1 rounded-xl bg-[var(--bg-surface)] border border-[var(--border)] hover:border-[var(--chem)] text-[11px] font-semibold text-[var(--fg-muted)] hover:text-[var(--fg-default)] shrink-0 transition cursor-pointer"
+            className="px-2.5 py-1 rounded-xl bg-[var(--bg-surface)] border border-[var(--border)] hover:border-[var(--chem)] text-xs font-semibold text-[var(--fg-muted)] hover:text-[var(--fg-default)] shrink-0 transition cursor-pointer"
           >
             {chip}
           </button>
@@ -75,7 +75,7 @@ export const SearchPage: React.FC = () => {
       {/* Search Results Display */}
       {query ? (
         <div className="space-y-4">
-          <div className="text-[11px] font-bold uppercase tracking-wider text-[var(--fg-muted)] px-1 flex items-center justify-between">
+          <div className="text-xs font-bold text-[var(--fg-muted)] px-1 flex items-center justify-between">
             <span>Kết quả tìm kiếm cho "{query}"</span>
             <span className="text-[var(--chem-fg)] font-mono">({totalResults})</span>
           </div>
@@ -112,7 +112,7 @@ export const SearchPage: React.FC = () => {
                       </div>
                       <p className="text-xs text-[var(--fg-muted)] mt-0.5">{s.nameVi}</p>
                     </div>
-                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-lg bg-[var(--chem-subtle)] text-[var(--chem-fg)] border border-[var(--border)]">
+                    <span className="text-[11px] font-bold px-2 py-0.5 rounded-lg bg-[var(--chem-subtle)] text-[var(--chem-fg)] border border-[var(--border)]">
                       {s.type}
                     </span>
                   </div>
@@ -166,7 +166,7 @@ export const SearchPage: React.FC = () => {
                   >
                     <div>
                       <h3 className="text-xs font-bold text-[var(--fg-default)]">{l.title}</h3>
-                      <p className="text-[11px] text-[var(--fg-subtle)] mt-0.5">
+                      <p className="text-xs text-[var(--fg-subtle)] mt-0.5">
                         Lớp {l.grade} · {l.chapterTitle}
                       </p>
                     </div>
@@ -182,7 +182,7 @@ export const SearchPage: React.FC = () => {
         /* Empty State / Discovery Guide */
         <div className="space-y-4 pt-2">
           <div className="p-4 rounded-3xl bg-[var(--bg-surface)] border border-[var(--border)] space-y-2">
-            <h2 className="text-xs font-black text-[var(--fg-default)] uppercase tracking-wider flex items-center gap-1.5">
+            <h2 className="text-xs font-black text-[var(--fg-default)] flex items-center gap-1.5">
               <Sparkles className="w-4 h-4 text-[var(--chem-fg)]" />
               Tra cứu hóa học tức thì
             </h2>

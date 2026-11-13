@@ -23,16 +23,18 @@ import {
   Search,
   Gauge,
   Sliders,
+  Microscope,
+  FlaskConical,
 } from 'lucide-react';
 import { sound } from '@/lib/audio';
 import { getCurriculum, type Grade } from '@/content/curriculum';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import { useActiveSubject } from '@/content/subjects';
+import { GAMIFICATION } from '@/config/gamification';
 import {
   Mascot,
   Button,
   HandDrawnIcon,
-  DoodleOrnament,
   MinigameIllustration,
   GeneratorBadge,
   MathText,
@@ -156,7 +158,7 @@ const PHYSICS_GENERATOR_TOPICS = [
 const BIOLOGY_GENERATOR_TOPICS = [
   {
     id: 'bio-gen-infinite',
-    title: 'Đề Sinh Học Tổng Hợp (Vô Hạn)',
+    title: 'Đề sinh học tổng hợp (Vô Hạn)',
     desc: 'Trộn ngẫu nhiên câu hỏi phân bào & NST, tái bản DNA, phép lai Mendel, calo, truyền máu & mật độ quần thể',
     icon: Sparkles,
     badge: 'Đề Trộn',
@@ -165,7 +167,7 @@ const BIOLOGY_GENERATOR_TOPICS = [
   },
   {
     id: 'bio-gen-mendel',
-    title: 'Toán Phép Lai Mendel & Bảng Punnett',
+    title: 'Toán phép lai Mendel & bảng Punnett',
     desc: 'Tính số loại giao tử 2ⁿ, số loại kiểu gen, kiểu hình và tỉ lệ phân li độc lập (9:3:3:1)',
     icon: Calculator,
     badge: 'Di truyền 9',
@@ -174,7 +176,7 @@ const BIOLOGY_GENERATOR_TOPICS = [
   },
   {
     id: 'bio-gen-dna',
-    title: 'Toán Phân Tử DNA & Tái Bản Nhân Đôi',
+    title: 'Toán phân tử DNA & tái bản nhân đôi',
     desc: 'Tính số liên kết hydrogen (2A+3G), chiều dài L = (N/2)×3,4Å và nucleotide môi trường N(2^k - 1)',
     icon: Sparkles,
     badge: 'Phân tử 9',
@@ -183,7 +185,7 @@ const BIOLOGY_GENERATOR_TOPICS = [
   },
   {
     id: 'bio-gen-chromosomes',
-    title: 'Toán Nhiễm Sắc Thể, Nguyên Phân & Giao Tử',
+    title: 'Toán nhiễm sắc thể, nguyên phân & giao tử',
     desc: 'Tính số NST môi trường 2n×a(2^k - 1), số tinh trùng (4x) và số trứng (1y) sau giảm phân',
     icon: Scale,
     badge: 'Nhiễm sắc thể 9',
@@ -192,7 +194,7 @@ const BIOLOGY_GENERATOR_TOPICS = [
   },
   {
     id: 'bio-gen-calories',
-    title: 'Toán Năng Lượng Khẩu Phần Ăn (Calo)',
+    title: 'Toán năng lượng khẩu phần ăn (Calo)',
     desc: 'Tính tổng năng lượng: E = 4×Protein + 4×Carbohydrate + 9×Lipid (kcal)',
     icon: Flame,
     badge: 'Dinh dưỡng 8',
@@ -201,7 +203,7 @@ const BIOLOGY_GENERATOR_TOPICS = [
   },
   {
     id: 'bio-gen-blood',
-    title: 'Toán Truyền Máu ABO & Kháng Thể',
+    title: 'Toán truyền máu ABO & Kháng Thể',
     desc: 'Nguyên tắc truyền máu an toàn hệ ABO: không để hồng cầu người cho bị ngưng kết',
     icon: Calculator,
     badge: 'Tuần hoàn 8',
@@ -210,7 +212,7 @@ const BIOLOGY_GENERATOR_TOPICS = [
   },
   {
     id: 'bio-gen-density',
-    title: 'Toán Mật Độ Cá Thể Quần Thể (D = N/S)',
+    title: 'Toán mật độ cá thể quần thể (D = N/S)',
     desc: 'Tính mật độ cá thể trên đơn vị diện tích (m², ha) hoặc thể tích (m³)',
     icon: Scale,
     badge: 'Sinh thái 8',
@@ -219,7 +221,7 @@ const BIOLOGY_GENERATOR_TOPICS = [
   },
   {
     id: 'bio-gen-water',
-    title: 'Toán Nhu Cầu Nước Cơ Thể Mỗi Ngày',
+    title: 'Toán nhu cầu nước cơ thể mỗi ngày',
     desc: 'Tính lượng nước cần thiết theo cân nặng: V = m × 40 mL (Lớp 7 KNTT)',
     icon: Beaker,
     badge: 'Dinh dưỡng 7',
@@ -228,7 +230,7 @@ const BIOLOGY_GENERATOR_TOPICS = [
   },
   {
     id: 'bio-gen-division',
-    title: 'Toán Phân Bào & Sinh Sản Tế Bào (N = N₀ × 2ⁿ)',
+    title: 'Toán phân bào & sinh sản tế bào (N = N₀ × 2ⁿ)',
     desc: 'Tính số lượng tế bào con sau n lần nguyên phân liên tiếp từ tế bào ban đầu',
     icon: Calculator,
     badge: 'Tế bào học 6',
@@ -237,7 +239,7 @@ const BIOLOGY_GENERATOR_TOPICS = [
   },
   {
     id: 'bio-gen-microscope',
-    title: 'Toán Độ Phóng Đại Kính Hiển Vi Quang Học',
+    title: 'Toán độ phóng đại kính hiển vi quang học',
     desc: 'Tính độ phóng đại ảnh = Độ phóng đại thị kính × Độ phóng đại vật kính',
     icon: Scale,
     badge: 'Kỹ thuật 6',
@@ -247,6 +249,24 @@ const BIOLOGY_GENERATOR_TOPICS = [
 ];
 
 const CHEMISTRY_MINIGAMES = [
+  {
+    id: 'formula-meteor',
+    title: 'Bắn phá thiên thạch vũ trụ',
+    desc: 'Đếm ngược 10s: Nhập chuẩn công thức hóa học để kích hoạt pháo laser bắn nổ thiên thạch cứu trạm không gian!',
+    icon: Zap,
+    badge: 'Đếm Ngược 10s',
+    route: '/games/formula-meteor',
+    colorKey: 'rose',
+  },
+  {
+    id: 'eco-rescue',
+    title: 'Chiến dịch giải cứu môi trường',
+    desc: 'Ứng dụng hóa học xử lý khói độc SO2, trung hòa nước thải axit H2SO4 và tái sinh hành tinh xanh!',
+    icon: Droplets,
+    badge: 'Môi trường xanh',
+    route: '/games/eco-rescue',
+    colorKey: 'emerald',
+  },
   {
     id: 'equation-balance',
     title: 'Cân Bằng PTHH',
@@ -258,7 +278,7 @@ const CHEMISTRY_MINIGAMES = [
   },
   {
     id: 'formula-builder',
-    title: 'Ghép Công Thức Hóa Học',
+    title: 'Ghép công thức hóa học',
     desc: 'Lắp ghép cation kim loại với anion gốc acid theo quy tắc hóa trị!',
     icon: Beaker,
     badge: 'Hóa 8',
@@ -267,7 +287,7 @@ const CHEMISTRY_MINIGAMES = [
   },
   {
     id: 'reaction-builder',
-    title: 'Ghép Chuỗi Phản Ứng',
+    title: 'Ghép chuỗi phản ứng',
     desc: 'Chọn đúng chất tham gia và sản phẩm phản ứng tạo chuỗi biến hóa!',
     icon: Flame,
     badge: 'Hóa 9',
@@ -276,7 +296,7 @@ const CHEMISTRY_MINIGAMES = [
   },
   {
     id: 'match',
-    title: 'Nối Thẻ Chất Hóa Học',
+    title: 'Nối thẻ chất hóa học',
     desc: 'Nối công thức hóa học với tên gọi tiếng Việt và phân loại chất!',
     icon: Layers,
     badge: 'Tương tác',
@@ -285,7 +305,7 @@ const CHEMISTRY_MINIGAMES = [
   },
   {
     id: 'sort',
-    title: 'Phân Loại Chất Hóa Học',
+    title: 'Phân loại chất hóa học',
     desc: 'Rót chất vào đúng bình tam giác: Acid, Base, Oxide, Muối!',
     icon: Droplets,
     badge: 'Phễu lọc',
@@ -294,7 +314,7 @@ const CHEMISTRY_MINIGAMES = [
   },
   {
     id: 'speed',
-    title: 'Đố Vui Tốc Độ Hóa Học',
+    title: 'Đố vui tốc độ hóa học',
     desc: 'Thử thách phản xạ nhanh 15 câu trắc nghiệm kiến thức trong 60 giây!',
     icon: Zap,
     badge: '60 Giây',
@@ -303,7 +323,7 @@ const CHEMISTRY_MINIGAMES = [
   },
   {
     id: 'true-false',
-    title: 'Đúng Hay Sai Hóa Học',
+    title: 'Đúng hay sai hóa học',
     desc: 'Kiểm định nhanh độ chính xác nhận định và hiện tượng hóa học!',
     icon: CheckCircle2,
     badge: 'Nhận định',
@@ -312,7 +332,7 @@ const CHEMISTRY_MINIGAMES = [
   },
   {
     id: 'review',
-    title: 'Hộp Ghi Nhớ Leitner (5 Cấp)',
+    title: 'Hộp ghi nhớ Leitner (5 cấp)',
     desc: 'Ôn tập lặp lại ngắt quãng củng cố kiến thức hóa học dài hạn!',
     icon: Layers,
     badge: 'Spaced Repetition',
@@ -321,16 +341,16 @@ const CHEMISTRY_MINIGAMES = [
   },
   {
     id: 'periodic-guess',
-    title: 'Đoán Ô Nguyên Tố Hóa Học',
+    title: 'Đoán Ô nguyên tố hóa học',
     desc: 'Đoán tên và ký hiệu nguyên tố qua số hiệu nguyên tử Z, chu kì & tính chất!',
     icon: Atom,
-    badge: 'Bảng Tuần Hoàn',
+    badge: 'Bảng tuần hoàn',
     route: '/games/periodic-guess',
     colorKey: 'sky',
   },
   {
     id: 'indicator-lab',
-    title: 'Phòng Thử Chỉ Thị Màu pH',
+    title: 'Phòng thử chỉ thị màu pH',
     desc: 'Nhỏ chất chỉ thị quỳ tím & phenolphthalein nhận diện acid, base và muối!',
     icon: Beaker,
     badge: 'Thang pH',
@@ -339,100 +359,100 @@ const CHEMISTRY_MINIGAMES = [
   },
   {
     id: 'precipitate-catcher',
-    title: 'Bắt Kết Tủa Hóa Học',
+    title: 'Bắt kết tủa hóa học',
     desc: 'Nhận biết màu sắc và bản chất hóa học của các kết tủa vô cơ kinh điển!',
     icon: Droplets,
-    badge: 'Kết Tủa Vô Cơ',
+    badge: 'Kết tủa vô cơ',
     route: '/games/precipitate-catcher',
     colorKey: 'emerald',
   },
   {
     id: 'metal-race',
-    title: 'Đua Dãy Hoạt Động Kim Loại',
+    title: 'Đua dãy hoạt động kim loại',
     desc: 'Quyết định nhanh phản ứng kim loại đẩy muối và tác dụng với acid!',
     icon: Flame,
-    badge: 'Dãy Hoạt Động',
+    badge: 'Dãy hoạt động',
     route: '/games/metal-race',
     colorKey: 'amber',
   },
   {
     id: 'hydrocarbon-sorter',
-    title: 'Phân Loại Hydrocarbon Hữu Cơ',
+    title: 'Phân loại hydrocarbon hữu cơ',
     desc: 'Phân loại nhanh Alkane, Alkene, Alkyne và Rượu theo cấu tạo phân tử!',
     icon: Layers,
-    badge: 'Hóa Hữu Cơ',
+    badge: 'Hóa hữu cơ',
     route: '/games/hydrocarbon-sorter',
     colorKey: 'rose',
   },
   {
     id: 'flame-test',
-    title: 'Bí Ẩn Màu Ngọn Lửa Kim Loại',
+    title: 'Bí ẩn màu ngọn lửa kim loại',
     desc: 'Nhận diện kim loại qua màu sắc đặc trưng khi đốt trên ngọn lửa đèn khí!',
     icon: Flame,
-    badge: 'Quang Phổ Lửa',
+    badge: 'Quang phổ lửa',
     route: '/games/flame-test',
     colorKey: 'amber',
   },
   {
     id: 'gas-collector',
-    title: 'Bậc Thầy Thu Khí Lab',
+    title: 'Bậc thầy thu khí lab',
     desc: 'Chọn chuẩn phương pháp thu khí: Đẩy nước hay đẩy không khí (ngửa hay úp)!',
     icon: Droplets,
-    badge: 'Kỹ Năng Lab',
+    badge: 'Kỹ năng lab',
     route: '/games/gas-collector',
     colorKey: 'teal',
   },
   {
     id: 'titration-lab',
-    title: 'Thí Nghiệm Chuẩn Độ Acid - Base',
+    title: 'Thí nghiệm chuẩn độ acid - Base',
     desc: 'Thao tác van buret nhỏ từng giọt NaOH vào bình tam giác, căn điểm tương đương!',
     icon: Pipette,
-    badge: 'Thực Hành Lab',
+    badge: 'Thực hành lab',
     route: '/games/titration-lab',
     colorKey: 'emerald',
   },
   {
     id: 'electrolyte-tester',
-    title: 'Thử Tính Dẫn Điện Dung Dịch',
+    title: 'Thử tính dẫn điện dung dịch',
     desc: 'Nhúng hai điện cực vào dung dịch để kiểm tra bóng đèn sáng, mờ hay không sáng!',
     icon: Zap,
-    badge: 'Chất Điện Ly',
+    badge: 'Chất điện ly',
     route: '/games/electrolyte-tester',
     colorKey: 'amber',
   },
   {
     id: 'separation-lab',
-    title: 'Tách Chiết & Tinh Chế Hỗn Hợp',
+    title: 'Tách chiết & tinh chế hỗn hợp',
     desc: 'Chọn phương pháp tách chất thông minh: lọc, cô cạn, chiết hay chưng cất!',
     icon: Beaker,
-    badge: 'Kỹ Thuật Lab',
+    badge: 'Kỹ thuật lab',
     route: '/games/separation-lab',
     colorKey: 'cyan',
   },
   {
     id: 'metal-corrosion',
-    title: 'Chống Ăn Mòn Kim Loại & Gỉ Sắt',
+    title: 'Chống ăn mòn kim loại & gỉ sắt',
     desc: 'Bảo vệ vỏ tàu biển, cầu sắt và máy móc trước sự phá hủy của môi trường!',
     icon: Flame,
-    badge: 'Ăn Mòn Kim Loại',
+    badge: 'Ăn mòn kim loại',
     route: '/games/metal-corrosion',
     colorKey: 'rose',
   },
   {
     id: 'polymer-factory',
-    title: 'Nhà Máy Hợp Chất Polymer',
+    title: 'Nhà máy hợp chất polymer',
     desc: 'Lắp ráp monome thành polyme: Nhựa PE, PVC, Cao su, Tơ tằm và Tinh bột!',
     icon: Layers,
-    badge: 'Hóa Hữu Cơ',
+    badge: 'Hóa hữu cơ',
     route: '/games/polymer-factory',
     colorKey: 'purple',
   },
   {
     id: 'energy-reaction',
-    title: 'Năng Lượng Phản Ứng Enthalpy',
+    title: 'Năng lượng phản ứng enthalpy',
     desc: 'Phân loại phản ứng tỏa nhiệt (giải phóng năng lượng) và thu nhiệt!',
     icon: Sparkles,
-    badge: 'Nhiệt Hóa Học',
+    badge: 'Nhiệt hóa học',
     route: '/games/energy-reaction',
     colorKey: 'emerald',
   },
@@ -441,7 +461,7 @@ const CHEMISTRY_MINIGAMES = [
 const PHYSICS_MINIGAMES = [
   {
     id: 'match',
-    title: 'Nối Cặp Công Thức Vật Lý',
+    title: 'Nối cặp công thức vật lý',
     desc: 'Nối công thức với đại lượng & đơn vị chuẩn: Cơ, Nhiệt, Điện, Quang!',
     icon: Layers,
     badge: 'Công thức',
@@ -450,7 +470,7 @@ const PHYSICS_MINIGAMES = [
   },
   {
     id: 'sort',
-    title: 'Phân Loại Hiện Tượng Vật Lý',
+    title: 'Phân loại hiện tượng vật lý',
     desc: 'Phân loại hiện tượng vào đúng 4 chuyên đề: Cơ - Nhiệt - Điện - Quang!',
     icon: Sparkles,
     badge: 'Hiện tượng',
@@ -459,7 +479,7 @@ const PHYSICS_MINIGAMES = [
   },
   {
     id: 'speed',
-    title: 'Đố Vui Tốc Độ Vật Lý',
+    title: 'Đố vui tốc độ vật lý',
     desc: 'Tính nhanh vận tốc, công suất, áp suất, điện trở trong 60 giây!',
     icon: Zap,
     badge: '60 Giây',
@@ -468,7 +488,7 @@ const PHYSICS_MINIGAMES = [
   },
   {
     id: 'true-false',
-    title: 'Đúng Hay Sai Vật Lý',
+    title: 'Đúng hay sai vật lý',
     desc: 'Kiểm định định luật chuyển động, nhiệt học, từ trường & quang học!',
     icon: CheckCircle2,
     badge: 'Định luật',
@@ -477,7 +497,7 @@ const PHYSICS_MINIGAMES = [
   },
   {
     id: 'review',
-    title: 'Hộp Ghi Nhớ Leitner (5 Cấp)',
+    title: 'Hộp ghi nhớ Leitner (5 cấp)',
     desc: 'Ôn tập lặp lại ngắt quãng củng cố công thức và định luật vật lý!',
     icon: Layers,
     badge: 'Spaced Repetition',
@@ -486,7 +506,7 @@ const PHYSICS_MINIGAMES = [
   },
   {
     id: 'circuit-builder',
-    title: 'Thợ Nối Mạch Điện Thông Minh',
+    title: 'Thợ nối mạch điện thông minh',
     desc: 'Phán đoán mạch kín, mạch hở, đoản mạch và an toàn mạng điện!',
     icon: Zap,
     badge: 'Mạch Điện',
@@ -495,7 +515,7 @@ const PHYSICS_MINIGAMES = [
   },
   {
     id: 'optics-target',
-    title: 'Bắn Tia Sáng Khúc Xạ & Phản Xạ',
+    title: 'Bắn tia sáng khúc xạ & phản xạ',
     desc: 'Làm chủ góc tới i, góc khúc xạ r và định luật phản xạ toàn phần!',
     icon: Eye,
     badge: 'Quang Học',
@@ -504,7 +524,7 @@ const PHYSICS_MINIGAMES = [
   },
   {
     id: 'density-scale',
-    title: 'Cân Khối Lượng Riêng & Lực Đẩy',
+    title: 'Cân khối lượng riêng & lực đẩy',
     desc: 'Tính khối lượng riêng D = m/V và phân biệt chìm nổi trong chất lỏng!',
     icon: Scale,
     badge: 'Chất Lưu',
@@ -513,7 +533,7 @@ const PHYSICS_MINIGAMES = [
   },
   {
     id: 'speed-radar',
-    title: 'Bắn Tốc Độ Chuyển Động',
+    title: 'Bắn tốc độ chuyển động',
     desc: 'Tính tốc độ v = s/t và quy đổi siêu tốc km/h ↔ m/s!',
     icon: Zap,
     badge: 'Tốc Độ',
@@ -522,16 +542,16 @@ const PHYSICS_MINIGAMES = [
   },
   {
     id: 'lever-balance',
-    title: 'Cân Bằng Đòn Bẩy Thần Tốc',
+    title: 'Cân bằng đòn bẩy thần tốc',
     desc: 'Vận dụng quy tắc đòn bẩy F1.d1 = F2.d2 để bập bênh thăng bằng!',
     icon: Scale,
-    badge: 'Cơ Học Máy',
+    badge: 'Cơ học máy',
     route: '/games/lever-balance',
     colorKey: 'purple',
   },
   {
     id: 'heat-transfer',
-    title: 'Đua Hình Thức Truyền Nhiệt',
+    title: 'Đua hình thức truyền nhiệt',
     desc: 'Phân loại nhanh Dẫn nhiệt (chất rắn), Đối lưu & Bức xạ nhiệt!',
     icon: Thermometer,
     badge: 'Nhiệt Học',
@@ -540,7 +560,7 @@ const PHYSICS_MINIGAMES = [
   },
   {
     id: 'lens-quiz',
-    title: 'Thấu Kính Hội Tụ & Tiêu Cự',
+    title: 'Thấu kính hội tụ & tiêu cự',
     desc: 'Xác định nhanh tính chất ảnh thật hay ảo, cùng chiều hay ngược chiều!',
     icon: Eye,
     badge: 'Quang Hình',
@@ -549,43 +569,43 @@ const PHYSICS_MINIGAMES = [
   },
   {
     id: 'circuit-master',
-    title: 'Thợ Lắp Mạch Điện Thực Hành',
+    title: 'Thợ lắp mạch điện thực hành',
     desc: 'Đóng khóa K, kéo con chạy biến trở và đo dòng điện chạy qua đèn theo định luật Ohm!',
     icon: Sliders,
-    badge: 'Thực Hành Lab',
+    badge: 'Thực hành lab',
     route: '/games/circuit-master',
     colorKey: 'amber',
   },
   {
     id: 'optics-bench',
-    title: 'Bàn Quang Học Thấu Kính Hội Tụ',
+    title: 'Bàn quang học thấu kính hội tụ',
     desc: 'Kéo màn hứng ảnh lấy nét trên trục chính và xác định tính chất quang học!',
     icon: Eye,
-    badge: 'Thực Hành Lab',
+    badge: 'Thực hành lab',
     route: '/games/optics-bench',
     colorKey: 'cyan',
   },
   {
     id: 'ohm-resistor',
-    title: 'Bậc Thầy Ghép Điện Trở Mạch Điện',
+    title: 'Bậc thầy ghép điện trở mạch điện',
     desc: 'Tính toán điện trở tương đương nối tiếp & song song trong tích tắc!',
     icon: Zap,
-    badge: 'Định Luật Ohm',
+    badge: 'Định luật Ohm',
     route: '/games/ohm-resistor',
     colorKey: 'amber',
   },
   {
     id: 'transformer-grid',
-    title: 'Máy Biến Áp & Lưới Điện Cao Thế',
+    title: 'Máy biến áp & lưới điện cao thế',
     desc: 'Tăng áp giảm hao phí đường dây truyền tải điện đi xa hàng trăm km!',
     icon: Zap,
-    badge: 'Truyền Tải Điện',
+    badge: 'Truyền tải điện',
     route: '/games/transformer-grid',
     colorKey: 'sky',
   },
   {
     id: 'echo-sonar',
-    title: 'Sóng Siêu Âm Đo Độ Sâu Đáy Biển',
+    title: 'Sóng siêu âm đo độ sâu đáy biển',
     desc: 'Phát sóng âm xuống đáy biển và hứng tiếng vang dội lại để vẽ bản đồ đáy đại dương!',
     icon: Gauge,
     badge: 'Âm Học',
@@ -594,7 +614,7 @@ const PHYSICS_MINIGAMES = [
   },
   {
     id: 'pressure-diver',
-    title: 'Áp Suất Khí Quyển & Áp Suất Lỏng',
+    title: 'Áp suất khí quyển & áp suất lỏng',
     desc: 'Lặn xuống đáy biển sâu & leo lên đỉnh núi Everest đo áp suất Torricelli!',
     icon: Scale,
     badge: 'Chất Lưu',
@@ -603,10 +623,10 @@ const PHYSICS_MINIGAMES = [
   },
   {
     id: 'work-power',
-    title: 'Đua Công Suất & Hiệu Suất Động Cơ',
+    title: 'Đua công suất & hiệu suất động cơ',
     desc: 'Tính công cơ học A = F.s và công suất P = A/t của các cỗ máy siêu tốc!',
     icon: Zap,
-    badge: 'Năng Lượng Cơ',
+    badge: 'Năng lượng cơ',
     route: '/games/work-power',
     colorKey: 'purple',
   },
@@ -615,7 +635,7 @@ const PHYSICS_MINIGAMES = [
 const BIOLOGY_MINIGAMES = [
   {
     id: 'blood-transfusion',
-    title: 'Cấp Cứu Truyền Máu ABO',
+    title: 'Cấp cứu truyền máu ABO',
     desc: 'Chọn túi máu tương thích an toàn cho bệnh nhân cấp cứu trong 50s!',
     icon: Droplets,
     badge: 'Sinh 8',
@@ -624,7 +644,7 @@ const BIOLOGY_MINIGAMES = [
   },
   {
     id: 'match',
-    title: 'Nối Thẻ Sinh Học Đối Ứng',
+    title: 'Nối thẻ sinh học đối ứng',
     desc: 'Nối bào quan - chức năng, hoocmôn - tuyến nội tiết, bằng chứng tiến hóa!',
     icon: Layers,
     badge: 'Bào quan & Gen',
@@ -633,7 +653,7 @@ const BIOLOGY_MINIGAMES = [
   },
   {
     id: 'sort',
-    title: 'Phân Loại Sinh Học',
+    title: 'Phân loại sinh học',
     desc: 'Phân loại vào 4 nhóm: Tế bào, Cơ thể người, Di truyền học & Sinh thái!',
     icon: Sparkles,
     badge: '4 Chuyên đề',
@@ -642,7 +662,7 @@ const BIOLOGY_MINIGAMES = [
   },
   {
     id: 'speed',
-    title: 'Đố Vui Tốc Độ Sinh Học',
+    title: 'Đố vui tốc độ sinh học',
     desc: 'Thử thách phản xạ nhanh 15 câu trắc nghiệm di truyền, phân bào & sinh thái!',
     icon: Zap,
     badge: '60 Giây',
@@ -651,7 +671,7 @@ const BIOLOGY_MINIGAMES = [
   },
   {
     id: 'true-false',
-    title: 'Đúng Hay Sai Sinh Học',
+    title: 'Đúng hay sai sinh học',
     desc: 'Kiểm định nhanh 87 nhận định chuẩn SGK Sinh học THCS từ lớp 6 đến 9!',
     icon: CheckCircle2,
     badge: '87 Nhận Định',
@@ -660,7 +680,7 @@ const BIOLOGY_MINIGAMES = [
   },
   {
     id: 'review',
-    title: 'Hộp Ghi Nhớ Leitner (5 Cấp)',
+    title: 'Hộp ghi nhớ Leitner (5 cấp)',
     desc: 'Ôn tập lặp lại ngắt quãng củng cố kiến thức sinh học dài hạn chống quên!',
     icon: Layers,
     badge: 'Spaced Repetition',
@@ -669,7 +689,7 @@ const BIOLOGY_MINIGAMES = [
   },
   {
     id: 'dna-pairing',
-    title: 'Bắt Cặp Nucleotide DNA Thần Tốc',
+    title: 'Bắt cặp nucleotide DNA Thần Tốc',
     desc: 'Bắt cặp đúng nguyên tắc bổ sung A-T, G-C và tính toán liên kết hydro DNA!',
     icon: Dna,
     badge: 'Di truyền 9',
@@ -678,7 +698,7 @@ const BIOLOGY_MINIGAMES = [
   },
   {
     id: 'mitosis-rush',
-    title: 'Đua Kỳ Nguyên Phân & Phân Bào',
+    title: 'Đua kỳ nguyên phân & phân bào',
     desc: 'Nhận diện chớp nhoáng 4 kì: Đầu, Giữa, Sau, Cuối và số lượng NST!',
     icon: Activity,
     badge: 'Tế bào 9',
@@ -687,7 +707,7 @@ const BIOLOGY_MINIGAMES = [
   },
   {
     id: 'organelle-quest',
-    title: 'Đại Chiến Bào Quan Tế Bào',
+    title: 'Đại chiến bào quan tế bào',
     desc: 'Khám phá Ti thể, Lục lạp, Ribosome, Lưới nội chất và Bộ máy Golgi!',
     icon: Sparkles,
     badge: 'Bào quan 6-9',
@@ -696,7 +716,7 @@ const BIOLOGY_MINIGAMES = [
   },
   {
     id: 'punnett-challenge',
-    title: 'Thử Thách Bảng Lai Punnett',
+    title: 'Thử thách bảng lai Punnett',
     desc: 'Dự đoán tỉ lệ phân li kiểu gen & kiểu hình các phép lai Mendel!',
     icon: Calculator,
     badge: 'Lai giống 9',
@@ -705,7 +725,7 @@ const BIOLOGY_MINIGAMES = [
   },
   {
     id: 'food-chain',
-    title: 'Chuỗi Thức Ăn & Sinh Thái Học',
+    title: 'Chuỗi thức ăn & sinh thái học',
     desc: 'Xếp đúng bậc dinh dưỡng: Sinh vật sản xuất -> Tiêu thụ bậc 1 -> Phân giải!',
     icon: Layers,
     badge: 'Sinh thái 9',
@@ -714,7 +734,7 @@ const BIOLOGY_MINIGAMES = [
   },
   {
     id: 'chromosome-doctor',
-    title: 'Bác Sĩ Di Truyền Học NST',
+    title: 'Bác sĩ di truyền học NST',
     desc: 'Chẩn đoán các hội chứng di truyền: Down (3 NST 21), Turner (XO), Klinefelter (XXY)!',
     icon: Activity,
     badge: 'Bệnh học 9',
@@ -723,7 +743,7 @@ const BIOLOGY_MINIGAMES = [
   },
   {
     id: 'blood-flow',
-    title: 'Bác Sĩ Tim Mạch & Hệ Tuần Hoàn',
+    title: 'Bác sĩ tim mạch & hệ tuần hoàn',
     desc: 'Lần theo vòng tuần hoàn lớn & nhỏ: Tâm thất trái -> Động mạch chủ -> Tĩnh mạch!',
     icon: Droplets,
     badge: 'Cơ thể 8',
@@ -732,25 +752,25 @@ const BIOLOGY_MINIGAMES = [
   },
   {
     id: 'microscope-focus',
-    title: 'Kính Hiển Vi Thao Tác Soi Tế Bào',
+    title: 'Kính hiển vi thao tác soi tế bào',
     desc: 'Vặn ốc sơ cấp, vi cấp lấy nét tiêu bản và giải phẫu các bào quan tế bào!',
     icon: Search,
-    badge: 'Thực Hành Lab',
+    badge: 'Thực hành lab',
     route: '/games/microscope-focus',
     colorKey: 'emerald',
   },
   {
     id: 'blood-pressure',
-    title: 'Bác Sĩ Đo Huyết Áp & Vận Tốc Máu',
+    title: 'Bác sĩ đo huyết áp & vận tốc máu',
     desc: 'Đọc chỉ số máy đo huyết áp 120/80 mmHg và giải mã áp lực dòng máu!',
     icon: Activity,
-    badge: 'Sinh Lý Người',
+    badge: 'Sinh lý người',
     route: '/games/blood-pressure',
     colorKey: 'rose',
   },
   {
     id: 'photosynthesis-lab',
-    title: 'Thí Nghiệm Quang Hợp Ở Thực Vật',
+    title: 'Thí nghiệm quang hợp Ở Thực Vật',
     desc: 'Chiếu sáng cành rong đuôi chó trong ống nghiệm hứng bọt khí oxygen!',
     icon: Sparkles,
     badge: 'Quang Hợp',
@@ -759,28 +779,28 @@ const BIOLOGY_MINIGAMES = [
   },
   {
     id: 'pedigree-detective',
-    title: 'Thám Tử Phả Hệ Di Truyền Gia Đình',
+    title: 'Thám tử phả hệ di truyền gia đình',
     desc: 'Giải mã sơ đồ phả hệ: Bệnh mù màu, Máu khó đông & Bạch tạng di truyền!',
     icon: Dna,
-    badge: 'Di Truyền Học',
+    badge: 'Di truyền học',
     route: '/games/pedigree-detective',
     colorKey: 'purple',
   },
   {
     id: 'reflex-arc',
-    title: 'Cung Phản Xạ Thần Kinh Thần Tốc',
+    title: 'Cung phản xạ thần kinh thần tốc',
     desc: 'Theo dấu xung thần kinh truyền đi khi tay chạm vào vật nóng!',
     icon: Zap,
-    badge: 'Hệ Thần Kinh',
+    badge: 'Hệ thần kinh',
     route: '/games/reflex-arc',
     colorKey: 'teal',
   },
   {
     id: 'immune-defense',
-    title: 'Đại Chiến Miễn Dịch & Kháng Thể',
+    title: 'Đại chiến miễn dịch & kháng thể',
     desc: 'Bạch cầu thực bào, Lympho B tiết kháng thể hình chữ Y tiêu diệt virus vi khuẩn!',
     icon: Droplets,
-    badge: 'Miễn Dịch Học',
+    badge: 'Miễn dịch học',
     route: '/games/immune-defense',
     colorKey: 'rose',
   },
@@ -814,7 +834,7 @@ const GAME_COLOR_MAP: Record<
     hoverTitle: 'group-hover:text-[var(--ok-fg)]',
     playBg: 'bg-[var(--ok-fill)]',
     playBorder: 'border-[var(--ok-edge)]',
-    playFill: 'fill-white text-white',
+    playFill: 'fill-white text-[var(--text-primary)]',
     playShadow: 'shadow-[0_2px_0_0_var(--ok-edge)]',
   },
   rose: {
@@ -828,7 +848,7 @@ const GAME_COLOR_MAP: Record<
     hoverTitle: 'group-hover:text-[var(--gem-fg)]',
     playBg: 'bg-[var(--gem-fill)]',
     playBorder: 'border-[var(--gem-edge)]',
-    playFill: 'fill-white text-white',
+    playFill: 'fill-white text-[var(--text-primary)]',
     playShadow: 'shadow-[0_2px_0_0_var(--gem-edge)]',
   },
   sky: {
@@ -842,7 +862,7 @@ const GAME_COLOR_MAP: Record<
     hoverTitle: 'group-hover:text-[var(--chem-fg)]',
     playBg: 'bg-[var(--chem-fill)]',
     playBorder: 'border-[var(--chem-edge)]',
-    playFill: 'fill-white text-white',
+    playFill: 'fill-white text-[var(--text-primary)]',
     playShadow: 'shadow-[0_2px_0_0_var(--chem-edge)]',
   },
   amber: {
@@ -870,7 +890,7 @@ const GAME_COLOR_MAP: Record<
     hoverTitle: 'group-hover:text-[var(--slate-fg)]',
     playBg: 'bg-[var(--slate-fill)]',
     playBorder: 'border-[var(--slate-edge)]',
-    playFill: 'fill-white text-white',
+    playFill: 'fill-white text-[var(--text-primary)]',
     playShadow: 'shadow-[0_2px_0_0_var(--slate-edge)]',
   },
   purple: {
@@ -884,7 +904,7 @@ const GAME_COLOR_MAP: Record<
     hoverTitle: 'group-hover:text-[var(--phy-fg)]',
     playBg: 'bg-[var(--phy-fill)]',
     playBorder: 'border-[var(--phy-edge)]',
-    playFill: 'fill-white text-white',
+    playFill: 'fill-white text-[var(--text-primary)]',
     playShadow: 'shadow-[0_2px_0_0_var(--phy-edge)]',
   },
   teal: {
@@ -898,7 +918,7 @@ const GAME_COLOR_MAP: Record<
     hoverTitle: 'group-hover:text-[var(--bio-fg)]',
     playBg: 'bg-[var(--bio-fill)]',
     playBorder: 'border-[var(--bio-edge)]',
-    playFill: 'fill-white text-white',
+    playFill: 'fill-white text-[var(--text-primary)]',
     playShadow: 'shadow-[0_2px_0_0_var(--bio-edge)]',
   },
 };
@@ -1040,11 +1060,6 @@ export const PracticePage: React.FC = () => {
     <div data-subject={activeSubject} className="space-y-6 pb-12 select-none max-w-3xl mx-auto">
       {/* Header Banner — Phong cách Studio Thao Trường */}
       <div className="relative rounded-3xl bg-[var(--bg-surface)] border border-[var(--border)] p-5 overflow-hidden">
-        {/* Góc gấp sổ tay thí nghiệm */}
-        <div
-          className="absolute top-0 right-0 w-8 h-8 pointer-events-none bg-[var(--subject-fill)]/20"
-          style={{ clipPath: 'polygon(100% 0, 0 100%, 100% 100%)' }}
-        />
         <div className="flex items-center gap-4">
           <div className="w-14 h-14 rounded-2xl border border-[var(--border)] bg-[var(--bg-surface-2)] flex items-center justify-center p-2 shrink-0">
             <HandDrawnIcon
@@ -1054,18 +1069,10 @@ export const PracticePage: React.FC = () => {
           </div>
           <div className="space-y-1 min-w-0">
             <h1 className="text-xl sm:text-2xl font-black text-[var(--text-primary)] tracking-tight flex items-center gap-2">
-              <span>{isPhysics ? 'Thao Trường Vật Lý' : isBio ? 'Thao Trường Sinh Học' : 'Thao Trường Hóa Học'}</span>
+              <span>Luyện tập {isPhysics ? 'Vật lý' : isBio ? 'Sinh học' : 'Hóa học'}</span>
             </h1>
-            <DoodleOrnament
-              name="wavy-underline"
-              color={isPhysics ? 'var(--phy-fill)' : isBio ? 'var(--bio-fill)' : 'var(--chem-fill)'}
-            />
             <p className="text-xs text-[var(--text-secondary)] font-medium leading-relaxed pt-0.5">
-              {isPhysics
-                ? 'Luyện bài tập SGK Vật lý: học đến đâu mở khóa đến đấy, không trừ tim, kiếm thêm XP'
-                : isBio
-                ? 'Luyện bài tập SGK Sinh học: học đến đâu mở khóa đến đấy, không trừ tim, kiếm thêm XP'
-                : 'Tích hợp luyện tập SGK & dạng toán: học đến đâu mở khóa đến đấy, không trừ tim, kiếm thêm XP & phục hồi Tim'}
+              Làm lại các bài đã học hoặc thử dạng toán mới. Ở đây làm sai không mất tim, làm đúng còn được +1 tim.
             </p>
           </div>
         </div>
@@ -1081,34 +1088,31 @@ export const PracticePage: React.FC = () => {
       >
         <div className="flex items-center gap-3.5 min-w-0">
           <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-[var(--chem-tint)] border border-[var(--chem-fill)]/40 flex items-center justify-center shrink-0 text-xl sm:text-2xl group-hover:scale-105 transition-transform">
-            {isPhysics ? '⚡' : isBio ? '🔬' : '🧪'}
+            {isPhysics ? <Zap className="w-5 h-5" /> : isBio ? <Microscope className="w-5 h-5" /> : <FlaskConical className="w-5 h-5" />}
           </div>
           <div>
             <div className="flex items-center gap-2">
               <span className="text-xs sm:text-sm font-black text-[var(--text-primary)] group-hover:text-[var(--chem-fg)] transition-colors">
-                Phòng Thí Nghiệm Ảo Tương Tác
-              </span>
-              <span className="text-[9px] font-black px-2 py-0.5 rounded-full bg-[var(--chem-tint)] text-[var(--chem-fg)] border border-[var(--chem-fill)]/40">
-                M10 LAB
+                Phòng thí nghiệm ảo
               </span>
             </div>
-            <p className="text-[11px] text-[var(--text-tertiary)] font-medium line-clamp-1 mt-0.5">
+            <p className="text-xs text-[var(--text-tertiary)] font-medium line-clamp-1 mt-0.5">
               {isPhysics
-                ? 'Lắp mạch điện, bóng đèn, điện trở & kiểm chứng Định luật Ôm I = U/R'
+                ? 'Lắp mạch điện và kiểm chứng định luật Ohm'
                 : isBio
-                ? 'Soi kính hiển vi 4 tiêu bản tế bào, chỉnh ốc vi cấp & đổi vật kính'
-                : 'Thực hành nhỏ giọt hóa chất vào ống nghiệm: quỳ tím, kim loại, kết tủa'}
+                ? 'Soi tế bào bằng kính hiển vi'
+                : 'Nhỏ hóa chất vào ống nghiệm, quan sát hiện tượng'}
             </p>
           </div>
         </div>
         <div className="shrink-0 flex items-center gap-1 text-xs font-black text-[var(--chem-fg)] group-hover:translate-x-1 transition-transform">
-          <span className="hidden sm:inline">Vào Lab</span>
+          <span className="hidden sm:inline">Mở</span>
           <ArrowRight className="w-4 h-4" />
         </div>
       </div>
 
       {/* Hearts Recovery Alert if user is low on hearts */}
-      {hearts < 5 && (
+      {hearts < GAMIFICATION.hearts.max && (
         <div
           className={`p-3.5 rounded-3xl border border-[var(--border)] flex items-center justify-between gap-3 ${
             hearts === 0
@@ -1122,16 +1126,16 @@ export const PracticePage: React.FC = () => {
             </div>
             <div>
               <div className="text-xs font-black text-[var(--text-primary)]">
-                {hearts === 0 ? 'Bạn đã hết tim (0/5)!' : `Đang có ${hearts}/5 tim`}
+                {hearts === 0 ? `Bạn đã hết tim (0/${GAMIFICATION.hearts.max})!` : `Đang có ${hearts}/${GAMIFICATION.hearts.max} tim`}
               </div>
-              <div className="text-[11px] text-[var(--text-secondary)] font-medium">
+              <div className="text-xs text-[var(--text-secondary)] font-medium">
                 Hoàn thành 1 bài luyện tập sẽ nhận ngay <span className="font-bold text-[var(--ok-fg)]">+1 tim</span>!
               </div>
             </div>
           </div>
           <div className="shrink-0 text-xs font-black px-3 py-1.5 rounded-xl bg-[var(--bg-surface)] border border-[var(--border)] text-[var(--text-primary)] flex items-center gap-1.5 shadow-sm">
             <HandDrawnIcon name="heart-flask" size={16} />
-            <span>{hearts}/5</span>
+            <span>{hearts}/{GAMIFICATION.hearts.max}</span>
           </div>
         </div>
       )}
@@ -1139,10 +1143,10 @@ export const PracticePage: React.FC = () => {
       {/* Grade Selector (Lớp 6 | Lớp 7 | Lớp 8 | Lớp 9) */}
       <div className="space-y-1.5 bg-[var(--bg-surface)] border border-[var(--border)] p-2.5 rounded-3xl">
         <div className="flex items-center justify-between px-1 mb-1">
-          <label className="text-xs font-black text-[var(--text-secondary)] uppercase tracking-wider">
-            Chọn khối lớp học tập:
+          <label className="text-xs font-black text-[var(--text-secondary)]  ">
+            Lớp
           </label>
-          <span className="text-[11px] font-bold text-[var(--subject-fg)]">
+          <span className="text-xs font-bold text-[var(--subject-fg)]">
             {unlockedLessonsCount} bài đã mở khóa
           </span>
         </div>
@@ -1172,12 +1176,12 @@ export const PracticePage: React.FC = () => {
         <div className="flex items-center justify-between px-1">
           <div className="flex items-center gap-2">
             <HandDrawnIcon name={isPhysics ? 'atom' : isBio ? 'dna' : 'flask'} size={20} />
-            <h2 className="text-sm font-black text-[var(--text-primary)] uppercase tracking-wider">
-              Bài Tập Theo Từng Bài SGK {isPhysics ? 'Vật Lý' : isBio ? 'Sinh Học' : 'Hóa Học'} Lớp {selectedGrade} ({lessons.length} bài)
+            <h2 className="text-sm font-black text-[var(--text-primary)]  ">
+              Bài tập theo SGK · lớp {selectedGrade}
             </h2>
           </div>
-          <span className="text-[11px] font-semibold text-[var(--subject-fg)]">
-            Chỉ mở khóa các bài bạn đã học đến
+          <span className="text-xs font-semibold text-[var(--subject-fg)]">
+            {lessons.length} bài · mở dần theo tiến độ học
           </span>
         </div>
 
@@ -1224,7 +1228,7 @@ export const PracticePage: React.FC = () => {
                 sound.playClick();
                 setSelectedDiff(d.id as 'all' | '1' | '2' | '3');
               }}
-              className={`py-1.5 rounded-xl text-[11px] font-bold border transition-all cursor-pointer ${
+              className={`py-1.5 rounded-xl text-xs font-bold border transition-all cursor-pointer ${
                 selectedDiff === d.id
                   ? 'bg-[var(--subject-tint)] text-[var(--subject-fg)] border-[var(--subject-fill)]'
                   : 'bg-[var(--bg-surface-2)] border-[var(--border)] text-[var(--text-tertiary)] hover:text-[var(--text-secondary)]'
@@ -1266,22 +1270,22 @@ export const PracticePage: React.FC = () => {
                     setModalInfo({
                       isOpen: true,
                       title: lesson.title,
-                      badge: '🛠️ Sắp có (Đang biên soạn)',
+                      badge: 'Sắp có (Đang biên soạn)',
                       description: `Nội dung của bài "${lesson.title}" đang được ban biên tập hoàn thiện theo SGK mới. Bạn hãy tập trung học và luyện tập các bài học đang có sẵn trên bản đồ trước nhé!`,
                       requiredLessonName: status.requiredLessonTitle || 'các bài học trước đó',
                       targetGrade: selectedGrade,
-                      actionLabel: 'XEM BẢN ĐỒ HỌC',
+                      actionLabel: 'Xem bản đồ học',
                     });
                   } else if (!status.isUnlocked) {
                     sound.playClick();
                     setModalInfo({
                       isOpen: true,
                       title: lesson.title,
-                      badge: '🔒 Chưa mở khóa',
+                      badge: 'Chưa mở khóa',
                       description: `Bạn chưa học đến bài "${lesson.title}". Cần hoàn thành "${status.requiredLessonTitle}" trên Lộ trình học trước để mở khóa bài luyện tập này nhé!`,
                       requiredLessonName: status.requiredLessonTitle,
                       targetGrade: selectedGrade,
-                      actionLabel: 'ĐẾN LỘ TRÌNH HỌC NGAY',
+                      actionLabel: 'Đến lộ trình học ngay',
                     });
                   }
                 }}
@@ -1297,30 +1301,30 @@ export const PracticePage: React.FC = () => {
                         <MathText text={lesson.title} />
                       </span>
                       {!lesson.ready ? (
-                        <span className="text-[10px] font-bold bg-[var(--bg-surface-2)] text-[var(--text-tertiary)] border border-[var(--border)] px-2 py-0.5 rounded-lg flex items-center gap-1">
-                          🛠️ Sắp có
+                        <span className="text-[11px] font-bold bg-[var(--bg-surface-2)] text-[var(--text-tertiary)] border border-[var(--border)] px-2 py-0.5 rounded-lg flex items-center gap-1">
+                          Sắp có
                         </span>
                       ) : status.isCompleted ? (
-                        <span className="text-[10px] font-bold bg-[var(--ok-tint)] text-[var(--ok-fg)] border border-[var(--ok-edge)]/40 px-2 py-0.5 rounded-lg flex items-center gap-1">
+                        <span className="text-[11px] font-bold bg-[var(--ok-tint)] text-[var(--ok-fg)] border border-[var(--ok-edge)]/40 px-2 py-0.5 rounded-lg flex items-center gap-1">
                           <CheckCircle2 className="w-3 h-3 text-[var(--ok-fg)]" /> Đã học · Luyện tập
                         </span>
                       ) : isAvailable ? (
-                        <span className="text-[10px] font-bold bg-[var(--subject-tint)] text-[var(--subject-fg)] border border-[var(--subject-edge)]/40 px-2 py-0.5 rounded-lg flex items-center gap-1">
-                          <Sparkles className="w-3 h-3 text-[var(--subject-fg)]" /> Đang học · Luyện tập
+                        <span className="text-[11px] font-bold bg-[var(--subject-tint)] text-[var(--subject-fg)] border border-[var(--subject-edge)]/40 px-2 py-0.5 rounded-lg flex items-center gap-1">
+                          Đang học
                         </span>
                       ) : (
-                        <span className="text-[10px] font-bold bg-[var(--bg-surface-2)] text-[var(--warn-fg)] border border-[var(--warn-edge)]/40 px-2 py-0.5 rounded-lg flex items-center gap-1">
+                        <span className="text-[11px] font-bold bg-[var(--bg-surface-2)] text-[var(--warn-fg)] border border-[var(--warn-edge)]/40 px-2 py-0.5 rounded-lg flex items-center gap-1">
                           <Lock className="w-3 h-3 text-[var(--warn-fg)]" /> Chưa mở khóa
                         </span>
                       )}
                     </div>
 
-                    <p className="text-[11px] text-[var(--text-secondary)] leading-relaxed font-medium">
+                    <p className="text-xs text-[var(--text-secondary)] leading-relaxed font-medium">
                       <MathText text={lesson.subtitle} />
                     </p>
 
                     {!isAvailable && lesson.ready && status.requiredLessonTitle && (
-                      <div className="flex items-center gap-1.5 text-[10px] font-bold text-[var(--warn-fg)] pt-0.5">
+                      <div className="flex items-center gap-1.5 text-[11px] font-bold text-[var(--warn-fg)] pt-0.5">
                         <Lock className="w-3 h-3 text-[var(--warn-fg)] inline shrink-0" />
                         <span>Cần hoàn thành "{status.requiredLessonTitle}" trên lộ trình học</span>
                         <span className="text-[var(--subject-fg)] underline flex items-center ml-1">
@@ -1333,7 +1337,7 @@ export const PracticePage: React.FC = () => {
                   {/* Right Action Icon */}
                   {isAvailable ? (
                     <div className="w-9 h-9 rounded-2xl bg-[var(--subject-fill)] text-white shadow-[0_2px_0_0_var(--subject-edge)] flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
-                      <Play className="w-4 h-4 fill-white text-white" />
+                      <Play className="w-4 h-4 fill-white text-[var(--text-primary)]" />
                     </div>
                   ) : (
                     <div className="w-9 h-9 rounded-2xl bg-[var(--bg-surface-2)] border border-[var(--border)] flex items-center justify-center text-[var(--text-tertiary)] shrink-0">
@@ -1357,16 +1361,16 @@ export const PracticePage: React.FC = () => {
                 <HandDrawnIcon name="atom" size={22} />
               </div>
               <div>
-                <h2 className="text-xs sm:text-sm font-black text-[var(--phy-fg)] uppercase tracking-wider">
-                  Máy Tạo Đề Tự Động Phòng Lab (Vật Lý)
+                <h2 className="text-xs sm:text-sm font-black text-[var(--phy-fg)]  ">
+                  Máy tạo đề tự động phòng lab (Vật lý)
                 </h2>
-                <p className="text-[11px] text-[var(--text-secondary)]">
+                <p className="text-xs text-[var(--text-secondary)]">
                   Tự động sinh ngẫu nhiên số liệu bài toán: Vận tốc, KLR, Áp suất, Cơ năng, Định luật Ôm
                 </p>
               </div>
             </div>
-            <span className="hidden sm:inline-block text-[10px] font-black uppercase px-2.5 py-1 rounded-xl bg-[var(--phy-tint)] text-[var(--phy-fg)] border border-[var(--phy-fill)]/40 shrink-0">
-              VÔ HẠN ĐỀ
+            <span className="hidden sm:inline-block text-[11px] font-black px-2.5 py-1 rounded-xl bg-[var(--phy-tint)] text-[var(--phy-fg)] border border-[var(--phy-fill)]/40 shrink-0">
+              Vô hạn đề
             </span>
           </div>
 
@@ -1394,7 +1398,7 @@ export const PracticePage: React.FC = () => {
                         description: `Dạng bài tập "${gen.title}" yêu cầu vận dụng kiến thức của ${gen.requiredLessonName}. Bạn cần học và hoàn thành bài này trên lộ trình trước nhé!`,
                         requiredLessonName: gen.requiredLessonName,
                         targetGrade,
-                        actionLabel: 'ĐẾN HỌC BÀI NÀY',
+                        actionLabel: 'Đến học bài này',
                       });
                     }
                   }}
@@ -1418,20 +1422,20 @@ export const PracticePage: React.FC = () => {
                           {gen.title}
                         </h3>
                         {isUnlocked ? (
-                          <span className="text-[10px] font-bold bg-[var(--phy-tint)] text-[var(--phy-fg)] px-2 py-0.5 rounded-full border border-[var(--phy-fill)]/40 shrink-0">
+                          <span className="text-[11px] font-bold bg-[var(--phy-tint)] text-[var(--phy-fg)] px-2 py-0.5 rounded-full border border-[var(--phy-fill)]/40 shrink-0">
                             {gen.badge}
                           </span>
                         ) : (
-                          <span className="text-[10px] font-bold bg-[var(--bg-surface-2)] text-[var(--text-tertiary)] px-2 py-0.5 rounded-full border border-[var(--border)] flex items-center gap-1 shrink-0">
+                          <span className="text-[11px] font-bold bg-[var(--bg-surface-2)] text-[var(--text-tertiary)] px-2 py-0.5 rounded-full border border-[var(--border)] flex items-center gap-1 shrink-0">
                             <Lock className="w-2.5 h-2.5 text-[var(--warn-fg)]" /> Chưa mở khóa
                           </span>
                         )}
                       </div>
-                      <p className="text-[11px] text-[var(--text-secondary)] leading-relaxed truncate font-medium">
-                        {gen.desc}
+                      <p className="text-xs text-[var(--text-secondary)] leading-relaxed truncate font-medium">
+                        <MathText text={gen.desc} />
                       </p>
                       {!isUnlocked && gen.requiredLessonName && (
-                        <div className="flex items-center gap-1 text-[10px] font-bold text-[var(--warn-fg)] pt-0.5">
+                        <div className="flex items-center gap-1 text-[11px] font-bold text-[var(--warn-fg)] pt-0.5">
                           <Lock className="w-3 h-3 text-[var(--warn-fg)] inline" />
                           <span>Mở khóa khi học đến: {gen.requiredLessonName}</span>
                           <span className="text-[var(--phy-fg)] underline flex items-center ml-1">
@@ -1468,16 +1472,16 @@ export const PracticePage: React.FC = () => {
                 <HandDrawnIcon name="dna" size={22} />
               </div>
               <div>
-                <h2 className="text-xs sm:text-sm font-black text-[var(--bio-fg)] uppercase tracking-wider">
-                  Máy Tạo Đề Tự Động Phòng Lab (Sinh Học)
+                <h2 className="text-xs sm:text-sm font-black text-[var(--bio-fg)]  ">
+                  Máy tạo đề tự động phòng lab (Sinh học)
                 </h2>
-                <p className="text-[11px] text-[var(--text-secondary)]">
+                <p className="text-xs text-[var(--text-secondary)]">
                   Tự động sinh ngẫu nhiên số liệu bài toán: Phép lai Mendel, DNA & Tái bản, Phân bào & NST, Calo, ABO
                 </p>
               </div>
             </div>
-            <span className="hidden sm:inline-block text-[10px] font-black uppercase px-2.5 py-1 rounded-xl bg-[var(--bio-tint)] text-[var(--bio-fg)] border border-[var(--bio-fill)]/40 shrink-0">
-              VÔ HẠN ĐỀ
+            <span className="hidden sm:inline-block text-[11px] font-black px-2.5 py-1 rounded-xl bg-[var(--bio-tint)] text-[var(--bio-fg)] border border-[var(--bio-fill)]/40 shrink-0">
+              Vô hạn đề
             </span>
           </div>
 
@@ -1507,7 +1511,7 @@ export const PracticePage: React.FC = () => {
                         description: `Dạng bài tập "${gen.title}" yêu cầu vận dụng kiến thức của ${gen.requiredLessonName}. Bạn cần học và hoàn thành bài này trên lộ trình trước nhé!`,
                         requiredLessonName: gen.requiredLessonName,
                         targetGrade,
-                        actionLabel: 'ĐẾN HỌC BÀI NÀY',
+                        actionLabel: 'Đến học bài này',
                       });
                     }
                   }}
@@ -1531,20 +1535,20 @@ export const PracticePage: React.FC = () => {
                           {gen.title}
                         </h3>
                         {isUnlocked ? (
-                          <span className="text-[10px] font-bold bg-[var(--bio-tint)] text-[var(--bio-fg)] px-2 py-0.5 rounded-full border border-[var(--bio-fill)]/40 shrink-0">
+                          <span className="text-[11px] font-bold bg-[var(--bio-tint)] text-[var(--bio-fg)] px-2 py-0.5 rounded-full border border-[var(--bio-fill)]/40 shrink-0">
                             {gen.badge}
                           </span>
                         ) : (
-                          <span className="text-[10px] font-bold bg-[var(--bg-surface-2)] text-[var(--text-tertiary)] px-2 py-0.5 rounded-full border border-[var(--border)] flex items-center gap-1 shrink-0">
+                          <span className="text-[11px] font-bold bg-[var(--bg-surface-2)] text-[var(--text-tertiary)] px-2 py-0.5 rounded-full border border-[var(--border)] flex items-center gap-1 shrink-0">
                             <Lock className="w-2.5 h-2.5 text-[var(--warn-fg)]" /> Chưa mở khóa
                           </span>
                         )}
                       </div>
-                      <p className="text-[11px] text-[var(--text-secondary)] leading-relaxed truncate font-medium">
-                        {gen.desc}
+                      <p className="text-xs text-[var(--text-secondary)] leading-relaxed truncate font-medium">
+                        <MathText text={gen.desc} />
                       </p>
                       {!isUnlocked && gen.requiredLessonName && (
-                        <div className="flex items-center gap-1 text-[10px] font-bold text-[var(--warn-fg)] pt-0.5">
+                        <div className="flex items-center gap-1 text-[11px] font-bold text-[var(--warn-fg)] pt-0.5">
                           <Lock className="w-3 h-3 text-[var(--warn-fg)] inline" />
                           <span>Mở khóa khi học đến: {gen.requiredLessonName}</span>
                           <span className="text-[var(--bio-fg)] underline flex items-center ml-1">
@@ -1581,16 +1585,16 @@ export const PracticePage: React.FC = () => {
                 <HandDrawnIcon name="flask" size={22} />
               </div>
               <div>
-                <h2 className="text-xs sm:text-sm font-black text-[var(--chem-fg)] uppercase tracking-wider">
-                  Máy Tạo Đề Tự Động Phòng Lab (Hóa Học)
+                <h2 className="text-xs sm:text-sm font-black text-[var(--chem-fg)]  ">
+                  Máy tạo đề tự động phòng lab (Hóa học)
                 </h2>
-                <p className="text-[11px] text-[var(--text-secondary)]">
+                <p className="text-xs text-[var(--text-secondary)]">
                   Tự động sinh ngẫu nhiên số liệu bài toán: Mol, Khí ĐKC 24,79L, Dung dịch & Nồng độ, PTHH
                 </p>
               </div>
             </div>
-            <span className="hidden sm:inline-block text-[10px] font-black uppercase px-2.5 py-1 rounded-xl bg-[var(--chem-tint)] text-[var(--chem-fg)] border border-[var(--chem-fill)]/40 shrink-0">
-              VÔ HẠN ĐỀ
+            <span className="hidden sm:inline-block text-[11px] font-black px-2.5 py-1 rounded-xl bg-[var(--chem-tint)] text-[var(--chem-fg)] border border-[var(--chem-fill)]/40 shrink-0">
+              Vô hạn đề
             </span>
           </div>
 
@@ -1613,7 +1617,7 @@ export const PracticePage: React.FC = () => {
                         description: `Dạng bài tập "${gen.title}" yêu cầu vận dụng kiến thức của ${gen.requiredLessonName}. Bạn cần học và hoàn thành bài này trên lộ trình trước nhé!`,
                         requiredLessonName: gen.requiredLessonName,
                         targetGrade: 8,
-                        actionLabel: 'ĐẾN HỌC BÀI NÀY',
+                        actionLabel: 'Đến học bài này',
                       });
                     }
                   }}
@@ -1637,20 +1641,20 @@ export const PracticePage: React.FC = () => {
                           {gen.title}
                         </h3>
                         {isUnlocked ? (
-                          <span className="text-[10px] font-bold bg-[var(--chem-tint)] text-[var(--chem-fg)] px-2 py-0.5 rounded-full border border-[var(--chem-fill)]/40 shrink-0">
+                          <span className="text-[11px] font-bold bg-[var(--chem-tint)] text-[var(--chem-fg)] px-2 py-0.5 rounded-full border border-[var(--chem-fill)]/40 shrink-0">
                             {gen.badge}
                           </span>
                         ) : (
-                          <span className="text-[10px] font-bold bg-[var(--bg-surface-2)] text-[var(--text-tertiary)] px-2 py-0.5 rounded-full border border-[var(--border)] flex items-center gap-1 shrink-0">
+                          <span className="text-[11px] font-bold bg-[var(--bg-surface-2)] text-[var(--text-tertiary)] px-2 py-0.5 rounded-full border border-[var(--border)] flex items-center gap-1 shrink-0">
                             <Lock className="w-2.5 h-2.5 text-[var(--warn-fg)]" /> Chưa mở khóa
                           </span>
                         )}
                       </div>
-                      <p className="text-[11px] text-[var(--text-secondary)] leading-relaxed truncate font-medium">
-                        {gen.desc}
+                      <p className="text-xs text-[var(--text-secondary)] leading-relaxed truncate font-medium">
+                        <MathText text={gen.desc} />
                       </p>
                       {!isUnlocked && gen.requiredLessonName && (
-                        <div className="flex items-center gap-1 text-[10px] font-bold text-[var(--warn-fg)] pt-0.5">
+                        <div className="flex items-center gap-1 text-[11px] font-bold text-[var(--warn-fg)] pt-0.5">
                           <Lock className="w-3 h-3 text-[var(--warn-fg)] inline" />
                           <span>Mở khóa khi học đến: {gen.requiredLessonName}</span>
                           <span className="text-[var(--chem-fg)] underline flex items-center ml-1">
@@ -1682,11 +1686,11 @@ export const PracticePage: React.FC = () => {
         <div className="flex items-center justify-between px-1">
           <div className="flex items-center gap-2">
             <HandDrawnIcon name="flame" size={22} />
-            <h2 className="text-sm font-black text-[var(--text-primary)] uppercase tracking-wider">
-              Đấu Trường Mini-Games {isPhysics ? 'Vật Lý' : isBio ? 'Sinh Học' : 'Hóa Học'}
+            <h2 className="text-sm font-black text-[var(--text-primary)]  ">
+              Đấu trường mini-Games {isPhysics ? 'Vật lý' : isBio ? 'Sinh học' : 'Hóa học'}
             </h2>
           </div>
-          <span className="text-[11px] font-bold text-[var(--subject-fg)]">
+          <span className="text-xs font-bold text-[var(--subject-fg)]">
             {activeMinigames.length} trò chơi thử thách studio
           </span>
         </div>
@@ -1712,12 +1716,12 @@ export const PracticePage: React.FC = () => {
                       <h3 className={`text-xs sm:text-sm font-black text-[var(--text-primary)] ${theme.hoverTitle} truncate`}>
                         {game.title}
                       </h3>
-                      <span className={`text-[9px] font-black uppercase px-2 py-0.5 rounded-full ${theme.badgeBg} ${theme.badgeText} border ${theme.badgeBorder} shrink-0`}>
+                      <span className={`text-[11px] font-black px-2 py-0.5 rounded-full ${theme.badgeBg} ${theme.badgeText} border ${theme.badgeBorder} shrink-0`}>
                         {game.badge}
                       </span>
                     </div>
-                    <p className="text-[11px] text-[var(--text-secondary)] leading-snug line-clamp-2">
-                      {game.desc}
+                    <p className="text-xs text-[var(--text-secondary)] leading-snug line-clamp-2">
+                      <MathText text={game.desc} />
                     </p>
                   </div>
                 </div>
@@ -1755,7 +1759,7 @@ export const PracticePage: React.FC = () => {
               </div>
 
               <div className="space-y-2">
-                <span className="inline-block text-[11px] font-black uppercase tracking-wider text-[var(--warn-fg)] bg-[var(--warn-tint)] px-3 py-1 rounded-xl border border-[var(--warn-edge)]/40">
+                <span className="inline-block text-xs font-black text-[var(--warn-fg)] bg-[var(--warn-tint)] px-3 py-1 rounded-xl border border-[var(--warn-edge)]/40">
                   {modalInfo.badge}
                 </span>
                 <h3 className="text-base sm:text-lg font-black text-[var(--text-primary)]">
@@ -1767,7 +1771,7 @@ export const PracticePage: React.FC = () => {
 
                 {modalInfo.requiredLessonName && (
                   <div className="p-3 rounded-2xl bg-[var(--warn-tint)] border border-[var(--warn-edge)]/40 text-[var(--warn-fg)] text-xs font-bold text-left space-y-0.5">
-                    <span className="text-[10px] uppercase opacity-80 font-black block">
+                    <span className="text-[11px] opacity-80 font-black block">
                       Điều kiện mở khóa:
                     </span>
                     <span className="flex items-center gap-1.5 pt-0.5">
@@ -1792,7 +1796,7 @@ export const PracticePage: React.FC = () => {
                     navigate(`/learn/${target}`);
                   }}
                 >
-                  <span>{modalInfo.actionLabel || 'ĐẾN LỘ TRÌNH HỌC'}</span>
+                  <span>{modalInfo.actionLabel || 'Đến lộ trình học'}</span>
                   <ArrowRight className="w-4 h-4 ml-1" />
                 </Button>
 
@@ -1805,7 +1809,7 @@ export const PracticePage: React.FC = () => {
                     setModalInfo(null);
                   }}
                 >
-                  ĐÃ HIỂU
+                  Đã hiểu
                 </Button>
               </div>
             </motion.div>

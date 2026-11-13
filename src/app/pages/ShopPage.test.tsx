@@ -51,9 +51,8 @@ describe('ShopPage (Milestone 5: Tactile & Human Copy)', () => {
   it('renders hero banner and wallet summary with human-crafted copy', () => {
     render(<ShopPage />);
     expect(screen.getByText(copyVi.shop.hero.title)).toBeDefined();
-    expect(screen.getByText(copyVi.shop.hero.badge)).toBeDefined();
     expect(screen.getByText('500')).toBeDefined(); // gems
-    expect(screen.getByText('3/5')).toBeDefined(); // hearts
+    expect(screen.getByText('3/10')).toBeDefined(); // hearts
     expect(screen.getByText('0/2 khiên')).toBeDefined(); // freeze shields
   });
 
@@ -85,7 +84,7 @@ describe('ShopPage (Milestone 5: Tactile & Human Copy)', () => {
 
   it('allows purchasing a single heart when user has enough gems and missing hearts', () => {
     render(<ShopPage />);
-    const buyButton = screen.getByText('150 ĐÁ QUÝ (+1 TIM)');
+    const buyButton = screen.getByText('150 đá quý (+1 tim)');
     expect(buyButton).toBeDefined();
 
     fireEvent.click(buyButton);
@@ -103,8 +102,8 @@ describe('ShopPage (Milestone 5: Tactile & Human Copy)', () => {
     expect(screen.getByText(`(${copyVi.shop.status.needMoreGems(100)})`)).toBeDefined();
   });
 
-  it('shows full hearts state when user already has 5/5 hearts', () => {
-    useUserStore.setState({ hearts: 5, gems: 1000 });
+  it('shows full hearts state when user already has full hearts', () => {
+    useUserStore.setState({ hearts: 10, gems: 1000 });
     render(<ShopPage />);
 
     const fullHeartBadges = screen.getAllByText(copyVi.shop.status.fullHearts);
@@ -113,7 +112,7 @@ describe('ShopPage (Milestone 5: Tactile & Human Copy)', () => {
 
   it('handles mystery chest purchase with sufficient gems', () => {
     render(<ShopPage />);
-    const chestButton = screen.getByText('120 ĐÁ QUÝ — MỞ RƯƠNG MAY MẮN');
+    const chestButton = screen.getByText('Mở rương · 120 đá quý');
     expect(chestButton).toBeDefined();
 
     fireEvent.click(chestButton);

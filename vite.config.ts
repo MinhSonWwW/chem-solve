@@ -18,11 +18,11 @@ export default defineConfig(() => {
         registerType: 'autoUpdate',
         includeAssets: ['favicon.svg', 'apple-touch-icon.png', 'mask-icon.svg'],
         manifest: {
-          name: 'STEM-Solve: Học Khoa Học Tự Nhiên THCS',
-          short_name: 'STEMSolve',
+          name: 'Sci-Solve: Học Khoa Học Tự Nhiên THCS',
+          short_name: 'SciSolve',
           description: 'Web giải bài tập Khoa học Tự nhiên THCS (Hóa học, Sinh học, Vật lý) lớp 6-9 theo phương pháp tương tác',
-          theme_color: '#0f172a',
-          background_color: '#0f172a',
+          theme_color: '#151513',
+          background_color: '#151513',
           icons: [
             {
               src: 'pwa-192x192.png',

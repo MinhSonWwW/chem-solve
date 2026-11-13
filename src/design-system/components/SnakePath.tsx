@@ -38,9 +38,9 @@ const ACCENT = {
     fg: 'var(--chem-fg)',
     tint: 'var(--chem-tint)',
     activeShadow: 'shadow-[0_8px_0_0_var(--chem-edge)]',
-    ring: 'bg-[var(--chem-tint)]',
-    badge: 'bg-[var(--chem-fill)] text-white border-[var(--chem-edge)]',
-    badgePointer: 'border-t-[var(--chem-fill)]',
+    ring: 'bg-(--chem-tint)',
+    badge: 'bg-(--chem-fill) text-white border-(--chem-edge)',
+    badgePointer: 'border-t-(--chem-fill)',
     trackColor: 'var(--chem-fill)',
     bubbleColor: 'var(--chem-fg)',
     iconColor: 'text-white',
@@ -51,9 +51,9 @@ const ACCENT = {
     fg: 'var(--phy-fg)',
     tint: 'var(--phy-tint)',
     activeShadow: 'shadow-[0_8px_0_0_var(--phy-edge)]',
-    ring: 'bg-[var(--phy-tint)]',
-    badge: 'bg-[var(--phy-fill)] text-white border-[var(--phy-edge)]',
-    badgePointer: 'border-t-[var(--phy-fill)]',
+    ring: 'bg-(--phy-tint)',
+    badge: 'bg-(--phy-fill) text-white border-(--phy-edge)',
+    badgePointer: 'border-t-(--phy-fill)',
     trackColor: 'var(--phy-fill)',
     bubbleColor: 'var(--phy-fg)',
     iconColor: 'text-white',
@@ -64,9 +64,9 @@ const ACCENT = {
     fg: 'var(--bio-fg)',
     tint: 'var(--bio-tint)',
     activeShadow: 'shadow-[0_8px_0_0_var(--bio-edge)]',
-    ring: 'bg-[var(--bio-tint)]',
-    badge: 'bg-[var(--bio-fill)] text-white border-[var(--bio-edge)]',
-    badgePointer: 'border-t-[var(--bio-fill)]',
+    ring: 'bg-(--bio-tint)',
+    badge: 'bg-(--bio-fill) text-white border-(--bio-edge)',
+    badgePointer: 'border-t-(--bio-fill)',
     trackColor: 'var(--bio-fill)',
     bubbleColor: 'var(--bio-fg)',
     iconColor: 'text-white',
@@ -95,7 +95,7 @@ function PathDecorations({
         cy={midY - 10}
         r={4}
         fill={bubbleColor}
-        opacity={0.35}
+        opacity={0.55}
       />
     );
     decorations.push(
@@ -105,7 +105,7 @@ function PathDecorations({
         cy={midY + 12}
         r={2.5}
         fill={bubbleColor}
-        opacity={0.25}
+        opacity={0.45}
       />
     );
 
@@ -114,8 +114,8 @@ function PathDecorations({
         <polygon
           key={`glint-${i}`}
           points={`${midX},${midY - 5} ${midX + 3},${midY} ${midX},${midY + 5} ${midX - 3},${midY}`}
-          fill="white"
-          opacity={0.4}
+          fill={bubbleColor}
+          opacity={0.50}
         />
       );
     }
@@ -195,11 +195,22 @@ export const SnakePath: React.FC<SnakePathProps> = ({
         <path
           d={fullPathD}
           fill="none"
-          stroke="var(--border)"
+          stroke="var(--edge-neutral)"
           strokeWidth={14}
           strokeLinecap="round"
           strokeLinejoin="round"
-          opacity={0.4}
+          opacity={0.75}
+        />
+
+        {/* Nền mặt đường ray phẳng sạch sẽ */}
+        <path
+          d={fullPathD}
+          fill="none"
+          stroke="var(--bg-surface)"
+          strokeWidth={10}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          opacity={0.95}
         />
 
         {/* Đường đã hoàn thành — màu môn học */}
@@ -211,19 +222,19 @@ export const SnakePath: React.FC<SnakePathProps> = ({
             strokeWidth={10}
             strokeLinecap="round"
             strokeLinejoin="round"
-            opacity={0.8}
+            opacity={0.9}
           />
         )}
 
-        {/* Nét đứt vẽ tay tự nhiên */}
+        {/* Nét đứt tâm đường vẽ tay rõ nét */}
         <path
           d={fullPathD}
           fill="none"
-          stroke="var(--bg-canvas)"
-          strokeWidth={3}
+          stroke="var(--border-strong)"
+          strokeWidth={2.5}
           strokeLinecap="round"
           strokeDasharray="8 8 4 8 12 8"
-          opacity={0.7}
+          opacity={0.85}
         />
 
         {/* Bọt khí trang trí rải trên đường */}
@@ -255,17 +266,17 @@ export const SnakePath: React.FC<SnakePathProps> = ({
                   initial={{ y: 2 }}
                   animate={{ y: -3 }}
                   transition={{ repeat: Infinity, repeatType: 'reverse', duration: 1.6, ease: 'easeInOut' }}
-                  className="absolute -top-[52px] z-20 flex flex-col items-center pointer-events-none whitespace-nowrap"
+                  className="absolute -top-13 z-20 flex flex-col items-center pointer-events-none whitespace-nowrap"
                 >
-                  <div className="bg-[var(--bg-surface)] text-[var(--gold-fg)] border border-[var(--gold-edge)] text-[10.5px] font-black tracking-wide px-3 py-1 rounded-xl shadow-[var(--shadow-modal)] flex items-center gap-1.5 backdrop-blur-md">
-                    <span className="text-xs select-none">🎁</span>
+                  <div className="bg-(--bg-surface) text-(--gold-fg) border border-(--gold-edge) text-[10.5px] font-black tracking-wide px-3 py-1 rounded-xl shadow-(--shadow-modal) flex items-center gap-1.5 backdrop-blur-md">
+                    <Gift className="w-3.5 h-3.5" />
                     <span>Chinh phục để mở rương!</span>
                   </div>
-                  <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] border-t-[var(--gold-edge)] -mt-[1px]" />
+                  <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] border-t-(--gold-edge) -mt-px" />
                 </motion.div>
               )}
 
-              {/* Badge nổi "BẮT ĐẦU / LÝ THUYẾT" */}
+              {/* Badge nổi "Bắt đầu / lý thuyết" */}
               {showStartBadge && (
                 <motion.div
                   initial={{ y: 4 }}
@@ -277,18 +288,18 @@ export const SnakePath: React.FC<SnakePathProps> = ({
                     <Mascot state="cheering" size="sm" interactive={false} />
                   </div>
                   <div
-                    className={`font-black text-[11px] uppercase tracking-wider px-3.5 py-1 rounded-xl
+                    className={`font-black text-xs px-3.5 py-1 rounded-xl
                       shadow-[0_4px_0_0_var(--subject-edge)] border-2 ${ac.badge}`}
                   >
-                    {isTheory ? 'LÝ THUYẾT' : 'BẮT ĐẦU'}
+                    {isTheory ? 'Lý thuyết' : 'Bắt đầu'}
                   </div>
-                  <div className={`w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[7px] -mt-[1px] ${ac.badgePointer}`} />
+                  <div className={`w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[7px] -mt-px ${ac.badgePointer}`} />
                 </motion.div>
               )}
 
               {/* Sparkle trang trí quanh nốt active */}
               {isActive && (
-                <div className="absolute -top-4 -right-6 pointer-events-none opacity-80 text-[var(--warn-fg)]">
+                <div className="absolute -top-4 -right-6 pointer-events-none opacity-80 text-(--warn-fg)">
                   <HandDrawnIcon name="flame" size={16} />
                 </div>
               )}
@@ -328,26 +339,27 @@ export const SnakePath: React.FC<SnakePathProps> = ({
                           boxShadow: '0 8px 0 0 var(--slate-edge)',
                         }
                       : {
-                          backgroundColor: 'var(--bg-surface-2)',
-                          boxShadow: '0 6px 0 0 var(--border)',
+                          backgroundColor: 'var(--bg-surface)',
+                          boxShadow: '0 6px 0 0 var(--edge-neutral)',
                         }
                   }
                   className={`relative flex flex-col items-center justify-center font-black select-none
                     transition-all duration-100 cursor-pointer rounded-full
                     ${isChest
-                      ? `w-[76px] h-[76px] text-[var(--on-ink)] border-2 border-[var(--gold-edge)]
-                         hover:brightness-105 active:translate-y-[8px] active:shadow-none`
+                      ? `w-19 h-19 text-(--on-ink) border-2 border-(--gold-edge)
+                         hover:brightness-105 active:translate-y-2 active:shadow-none`
                       : isCompleted
-                      ? `w-[68px] h-[68px] text-white border-2 border-white/40
-                         hover:brightness-105 active:translate-y-[6px] active:shadow-none`
+                      ? `w-17 h-17 text-white border-2 border-white/40
+                         hover:brightness-105 active:translate-y-1.5 active:shadow-none`
                       : isActive
                       ? `w-[74px] h-[74px] text-white border-2 border-white/50
-                         hover:brightness-110 active:translate-y-[8px] active:shadow-none ring-4 ring-white/20`
+                         hover:brightness-110 active:translate-y-2 active:shadow-none ring-4 ring-white/20`
                       : isCheckpoint
-                      ? `w-[64px] h-[64px] text-white border-2 border-[var(--slate-edge)]
-                         active:translate-y-[6px] active:shadow-none`
-                      : `w-[64px] h-[64px] text-[var(--text-tertiary)] border border-[var(--border)]
-                         active:translate-y-[6px] active:shadow-none`
+                      ? `w-[66px] h-[66px] text-white border-2 border-(--slate-edge)
+                         active:translate-y-1.5 active:shadow-none`
+                      : `w-[66px] h-[66px] text-(--text-secondary) border-2 border-(--border-strong)
+                         hover:border-(--subject-edge) hover:bg-(--bg-surface-2)
+                         active:translate-y-1.5 active:shadow-none`
                     }`}
                 >
                   {/* Gloss shine viền trên */}
@@ -362,7 +374,7 @@ export const SnakePath: React.FC<SnakePathProps> = ({
                         className="w-12 h-12 object-contain drop-shadow-md select-none pointer-events-none"
                       />
                     ) : (
-                      <Gift className="w-9 h-9 stroke-[2] text-[var(--on-ink)]" />
+                      <Gift className="w-9 h-9 stroke-[2] text-(--on-ink)" />
                     )
                   ) : isCompleted ? (
                     <Check className="w-8 h-8 stroke-[3.5] text-white" />
@@ -371,26 +383,26 @@ export const SnakePath: React.FC<SnakePathProps> = ({
                   ) : isActive ? (
                     <Play className="w-7 h-7 fill-white text-white ml-0.5" />
                   ) : isUnready ? (
-                    <Lock className="w-6 h-6 text-[var(--text-tertiary)] opacity-40" />
+                    <Lock className="w-6 h-6 text-(--text-secondary) opacity-40" />
                   ) : isTheory ? (
-                    <BookOpen className="w-6 h-6 text-[var(--text-tertiary)]" />
+                    <BookOpen className="w-6 h-6 text-(--text-secondary) opacity-85" />
                   ) : isCheckpoint ? (
                     <Award className="w-7 h-7 text-white" />
                   ) : (
-                    <Lock className="w-6 h-6 text-[var(--text-tertiary)]" />
+                    <Lock className="w-6 h-6 text-(--text-secondary) opacity-85" />
                   )}
                 </button>
               </div>
 
               {/* ── Node Title & Star Rating ── */}
-              <div className="mt-2.5 text-center w-[130px] flex flex-col items-center">
+              <div className="mt-3 text-center w-[138px] flex flex-col items-center">
                 <span
-                  className={`text-[11px] font-black block leading-tight truncate w-full text-center
+                  className={`text-xs block leading-snug line-clamp-2 w-full text-center transition-colors
                     ${isActive
-                      ? 'text-[var(--text-primary)]'
+                      ? 'text-(--subject-fg) font-black'
                       : isCompleted
-                      ? 'text-[var(--text-primary)]'
-                      : 'text-[var(--text-tertiary)]'
+                      ? 'text-(--text-primary) font-extrabold'
+                      : 'text-(--text-secondary) font-bold'
                     }`}
                 >
                   {node.title}
@@ -398,9 +410,9 @@ export const SnakePath: React.FC<SnakePathProps> = ({
 
                 {/* "Sắp có" badge cho bài chưa sẵn */}
                 {isUnready && !isCompleted && (
-                  <span className="inline-block text-[9px] font-bold text-[var(--warn-fg)]
-                    bg-[var(--warn-tint)] px-1.5 py-0.5 rounded mt-0.5
-                    border border-[var(--warn-edge)]">
+                  <span className="inline-block text-[11px] font-bold text-(--warn-fg)
+                    bg-(--warn-tint) px-1.5 py-0.5 rounded mt-0.5
+                    border border-(--warn-edge)">
                     Sắp có
                   </span>
                 )}
@@ -416,7 +428,7 @@ export const SnakePath: React.FC<SnakePathProps> = ({
                         className="relative group/star"
                       >
                         <Star
-                          className="w-4 h-4 fill-[var(--gold-fill)] text-[var(--gold-edge)] stroke-[1.5]"
+                          className="w-4 h-4 fill-(--gold-fill) text-(--gold-edge) stroke-[1.5]"
                         />
                       </motion.div>
                     ))}

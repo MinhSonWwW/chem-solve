@@ -55,8 +55,8 @@ export const GoogleClientIdModal: React.FC<GoogleClientIdModalProps> = ({
                 <KeyRound className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="text-base font-black text-[var(--text-primary)]">Đăng Nhập Google Thật</h3>
-                <span className="text-[11px] font-bold text-[var(--text-tertiary)]">Google Identity Services (OAuth 2.0)</span>
+                <h3 className="text-base font-black text-[var(--text-primary)]">Đăng nhập Google thật</h3>
+                <span className="text-xs font-bold text-[var(--text-tertiary)]">Google Identity Services (OAuth 2.0)</span>
               </div>
             </div>
             <button
@@ -81,7 +81,7 @@ export const GoogleClientIdModal: React.FC<GoogleClientIdModalProps> = ({
               <Sparkles className="w-3.5 h-3.5 text-[var(--gold-fg)]" />
               <span>3 bước lấy Client ID miễn phí từ Google:</span>
             </div>
-            <ol className="list-decimal list-inside space-y-1.5 text-[var(--text-secondary)] pl-1 text-[11px]">
+            <ol className="list-decimal list-inside space-y-1.5 text-[var(--text-secondary)] pl-1 text-xs">
               <li>
                 Truy cập{' '}
                 <a
@@ -96,8 +96,8 @@ export const GoogleClientIdModal: React.FC<GoogleClientIdModalProps> = ({
               <li>Tạo <b>OAuth Client ID</b> (Loại: <i>Web application</i>).</li>
               <li>
                 Thêm <b>Authorized JavaScript origin</b>:
-                <code className="block mt-1 p-1 bg-[var(--bg-canvas)] rounded border border-[var(--border)] font-mono text-[10px] text-[var(--text-primary)]">
-                  {typeof window !== 'undefined' ? window.location.origin : 'https://minhsonwww.github.io'}
+                <code className="block mt-1 p-1 bg-[var(--bg-canvas)] rounded border border-[var(--border)] font-mono text-[11px] text-[var(--text-primary)]">
+                  {typeof window !== 'undefined' ? window.location.origin : 'https://sci-solve.pages.dev'}
                 </code>
               </li>
             </ol>
@@ -106,7 +106,7 @@ export const GoogleClientIdModal: React.FC<GoogleClientIdModalProps> = ({
           {/* Input */}
           <div className="space-y-1.5">
             <label className="text-xs font-black text-[var(--text-primary)] block">
-              Dán Google Client ID vào đây:
+              Dán Google client ID vào đây:
             </label>
             <input
               type="text"
@@ -119,7 +119,7 @@ export const GoogleClientIdModal: React.FC<GoogleClientIdModalProps> = ({
               className="w-full px-3.5 py-2.5 rounded-xl bg-[var(--bg-canvas)] border border-[var(--border)] text-xs text-[var(--text-primary)] focus:outline-none focus:border-[var(--subject-fill)] transition-colors font-mono"
             />
             {error && (
-              <p className="text-[11px] text-[var(--err-fg)] font-bold flex items-center gap-1">
+              <p className="text-xs text-[var(--err-fg)] font-bold flex items-center gap-1">
                 <AlertCircle className="w-3.5 h-3.5 shrink-0" />
                 <span>{error}</span>
               </p>
@@ -136,7 +136,7 @@ export const GoogleClientIdModal: React.FC<GoogleClientIdModalProps> = ({
               className="flex items-center justify-center gap-2 font-black"
             >
               <Check className="w-4 h-4 stroke-[3]" />
-              <span>LƯU & BẬT POPUP GOOGLE THẬT</span>
+              <span>Lưu & bật popup Google thật</span>
             </Button>
 
             <button

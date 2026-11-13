@@ -61,6 +61,20 @@ describe('MathText component', () => {
     expect(katexEls.length).toBe(2);
   });
 
+  it('renders KaTeX inside bold markers (**$F_A = d \\times V$**)', () => {
+    const { container } = render(<MathText text="Công thức: **$F_A = d \\times V$**." />);
+    expect(container.textContent).not.toContain('$');
+    expect(container.querySelector('strong .katex')).not.toBeNull();
+  });
+
+  it('renders plain-text physics subscripts (F_A, d_vật, v_{tb}) but leaves snake_case alone', () => {
+    const { container } = render(<MathText text="F_A = d_vật × V; v_{tb} = s/t; key snake_case" />);
+    const subs = [...container.querySelectorAll('sub')].map((s) => s.textContent);
+    expect(subs).toEqual(['A', 'vật', 'tb']);
+    expect(container.textContent).toContain('snake_case');
+    expect(container.textContent).not.toContain('F_A');
+  });
+
   it('handles empty or null text safely', () => {
     const { container } = render(<MathText text="" />);
     expect(container.firstChild).toBeNull();

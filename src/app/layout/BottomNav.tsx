@@ -38,7 +38,7 @@ export const BottomNav: React.FC = () => {
               }`}
             >
               <Icon className="w-5 h-5" />
-              <span className="text-[10px] font-semibold tracking-tight">{item.label}</span>
+              <span className="text-[11px] font-semibold tracking-tight">{item.label}</span>
             </NavLink>
           );
         })}

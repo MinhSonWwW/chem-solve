@@ -52,7 +52,7 @@ export const FormulaBuilderPanel: React.FC<FormulaBuilderPanelProps> = ({
             : 'border-[var(--border)]'
         }`}
       >
-        <div className="flex-1 text-center font-bold text-2xl tracking-wider text-[var(--subject-fg)]">
+        <div className="flex-1 text-center font-bold text-2xl text-[var(--subject-fg)]">
           {value ? (
             <Formula formula={value} />
           ) : (
@@ -87,7 +87,7 @@ export const FormulaBuilderPanel: React.FC<FormulaBuilderPanelProps> = ({
 
       {/* Available Tiles Grid */}
       <div className="p-3 bg-[var(--bg-surface-2)] border border-[var(--border)] rounded-2xl">
-        <div className="text-[11px] font-bold text-[var(--text-tertiary)] uppercase tracking-wider mb-2.5 text-center">
+        <div className="text-xs font-bold text-[var(--text-tertiary)] mb-2.5 text-center">
           Các mảnh ghép công thức
         </div>
         <div className="flex flex-wrap items-center justify-center gap-2">

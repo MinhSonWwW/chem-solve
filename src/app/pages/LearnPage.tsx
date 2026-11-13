@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Compass, ChevronRight, BookOpen } from 'lucide-react';
-import { SnakePath, type PathNode, NodePreviewDrawer, ChapterGuideModal, SubjectSelectorModal, HandDrawnIcon, DoodleOrnament } from '@/design-system';
+import { SnakePath, type PathNode, NodePreviewDrawer, ChapterGuideModal, SubjectSelectorModal, HandDrawnIcon, SubjectIcon } from '@/design-system';
 import { sound } from '@/lib/audio';
 import { assetUrl } from '@/lib/utils';
 import { getCurriculum, type Grade, type Lesson, type NodeInfo, type Chapter } from '@/content/curriculum';
@@ -259,16 +259,13 @@ export const LearnPage: React.FC = () => {
       <div className="learn-subject-bar bg-[var(--bg-surface)] border border-[var(--border)] p-3 rounded-2xl flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-2xl flex items-center justify-center text-xl shrink-0 border bg-[var(--subject-tint)] border-[var(--subject-edge)] text-[var(--subject-fg)] shadow-inner">
-            {currentSub.icon}
+            <SubjectIcon subject={currentSub.id} className="w-5 h-5" />
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="text-sm font-black text-[var(--text-primary)]">{currentSub.name} THCS</span>
-              <span className="text-[9px] font-black uppercase px-1.5 py-0.5 rounded-md border tracking-wider bg-[var(--subject-tint)] text-[var(--subject-fg)] border-[var(--subject-edge)]">
-                {currentSub.badge}
-              </span>
+              <span className="text-sm font-black text-[var(--text-primary)]">{currentSub.name}</span>
             </div>
-            <p className="text-[11px] text-[var(--text-secondary)] font-medium line-clamp-1">
+            <p className="text-xs text-[var(--text-secondary)] font-medium line-clamp-1">
               {currentSub.tagline}
             </p>
           </div>
@@ -315,7 +312,7 @@ export const LearnPage: React.FC = () => {
               <HandDrawnIcon name="atom" size={36} />
             </div>
             <div className="space-y-2">
-              <span className="text-xs font-black uppercase text-[var(--phy-fg)] tracking-wider bg-[var(--phy-tint)] px-3 py-1 rounded-xl border border-[var(--phy-edge)] inline-block">
+              <span className="text-xs font-black text-[var(--phy-fg)] bg-[var(--phy-tint)] px-3 py-1 rounded-xl border border-[var(--phy-edge)] inline-block">
                 HẠ TẦNG VẬT LÝ SẴN SÀNG · LỚP {currentGrade}
               </span>
               <h2 className="text-xl sm:text-2xl font-black text-[var(--text-primary)]">{curriculum.title}</h2>
@@ -326,19 +323,19 @@ export const LearnPage: React.FC = () => {
 
             {/* Chapters list */}
             <div className="space-y-3 text-left max-w-lg mx-auto pt-2">
-              <div className="text-[11px] font-black uppercase tracking-wider text-[var(--phy-fg)] flex items-center justify-between">
-                <span>CÁC CHƯƠNG LỚP {currentGrade} ({curriculum.chapters.length} chương)</span>
-                <span className="text-[10px] text-[var(--text-tertiary)] font-normal">Chờ danh sách bài</span>
+              <div className="text-xs font-black text-[var(--phy-fg)] flex items-center justify-between">
+                <span>Lớp {currentGrade} · {curriculum.chapters.length} chương</span>
+                <span className="text-[11px] text-[var(--text-tertiary)] font-normal">Chờ danh sách bài</span>
               </div>
               {curriculum.chapters.map((ch) => (
                 <div key={ch.id} className="p-3.5 rounded-2xl bg-[var(--bg-surface-2)] border border-[var(--border)] hover:border-[var(--phy-edge)] transition-colors">
                   <div className="flex items-center justify-between gap-2">
                     <span className="text-xs font-black text-[var(--text-primary)]">{ch.title}</span>
-                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-[var(--phy-tint)] text-[var(--phy-fg)] border border-[var(--phy-edge)] shrink-0">
+                    <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-[var(--phy-tint)] text-[var(--phy-fg)] border border-[var(--phy-edge)] shrink-0">
                       Sẵn sàng nạp bài
                     </span>
                   </div>
-                  <p className="text-[11px] text-[var(--text-secondary)] mt-1 leading-relaxed">{ch.description}</p>
+                  <p className="text-xs text-[var(--text-secondary)] mt-1 leading-relaxed">{ch.description}</p>
                 </div>
               ))}
             </div>
@@ -391,12 +388,12 @@ export const LearnPage: React.FC = () => {
               >
                 {/* Nhãn dán chương — sticker label dán chéo */}
                 <div
-                  className="absolute -left-2 top-4 z-10 px-3 py-0.5 text-[9px] font-black uppercase tracking-widest bg-[var(--subject-fill)] text-white shadow-sm"
+                  className="absolute -left-2 top-4 z-10 px-3 py-0.5 text-[11px] font-black bg-[var(--subject-fill)] text-white shadow-sm"
                   style={{ transform: 'rotate(-1.5deg)' }}
                 >
                   {activeSubject === 'physics' || activeSubject === 'bio'
-                    ? `UNIT ${chapter.chapterNumber}`
-                    : `CHƯƠNG ${chapter.chapterNumber}`}
+                    ? `Chủ đề ${chapter.chapterNumber}`
+                    : `Chương ${chapter.chapterNumber}`}
                 </div>
 
                 {/* Nội dung chính */}
@@ -417,11 +414,9 @@ export const LearnPage: React.FC = () => {
                       <h2 className="text-sm sm:text-base font-black text-[var(--text-primary)] leading-tight line-clamp-2">
                         {chapter.title}
                       </h2>
-                      <p className="text-[11px] text-[var(--text-secondary)] line-clamp-1">
+                      <p className="text-xs text-[var(--text-secondary)] line-clamp-1">
                         {chapter.description}
                       </p>
-                      {/* Gạch chân lượn sóng dưới tiêu đề */}
-                      <DoodleOrnament name="wavy-underline" color="var(--subject-fg)" />
                     </div>
                   </div>
 
@@ -431,11 +426,11 @@ export const LearnPage: React.FC = () => {
                       sound.playClick();
                       setSelectedChapterGuide(chapter);
                     }}
-                    className="relative z-10 shrink-0 flex flex-col items-center gap-1 px-3 py-2.5 font-black text-[10px] rounded-2xl active:translate-y-[4px] active:shadow-none transition-all duration-100 cursor-pointer whitespace-nowrap bg-[var(--subject-fill)] text-white shadow-[0_4px_0_0_var(--subject-edge)] border border-[var(--subject-edge)]"
+                    className="relative z-10 shrink-0 flex flex-col items-center gap-1 px-3 py-2.5 font-black text-[11px] rounded-2xl active:translate-y-[4px] active:shadow-none transition-all duration-100 cursor-pointer whitespace-nowrap bg-[var(--subject-fill)] text-white shadow-[0_4px_0_0_var(--subject-edge)] border border-[var(--subject-edge)]"
                     title="Xem sổ tay kiến thức chương"
                   >
-                    <BookOpen className="w-5 h-5 text-white stroke-[2.5]" />
-                    <span className="tracking-wide">HƯỚNG DẪN</span>
+                    <BookOpen className="w-5 h-5 text-[var(--text-primary)] stroke-[2.5]" />
+                    <span className="tracking-wide">Hướng dẫn</span>
                   </button>
                 </div>
               </div>

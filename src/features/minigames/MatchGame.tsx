@@ -9,9 +9,14 @@ import substancesData from '@/content/kb/substances.json';
 import physicsMatchPairs from '@/content/kb/physics/match-pairs.json';
 import biologyMatchPairs from '@/content/kb/biology/match-pairs.json';
 
+/** Prefer the SGK Kết nối tri thức (IUPAC) name when the KB provides one. */
+const displayName = (s: { nameVi: string; nameSgk?: string }) => s.nameSgk ?? s.nameVi;
+
 interface Substance {
   formula: string;
   nameVi: string;
+  /** SGK Kết nối tri thức (IUPAC) name — preferred for display. */
+  nameSgk?: string;
   type: string;
 }
 
@@ -207,7 +212,7 @@ export const MatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
             <Sparkles className="w-3.5 h-3.5 text-[var(--chem-fg)]" />
             {isPhysics ? 'Ghép Công thức ↔ Đại lượng & Đơn vị' : 'Ghép Công thức ↔ Tên / Phân loại'}
           </span>
-          <span className="px-2.5 py-0.5 rounded-full bg-[var(--chem-tint)] border border-[var(--chem-edge)] text-[var(--chem-fg)] font-black text-[11px] flex items-center gap-1">
+          <span className="px-2.5 py-0.5 rounded-full bg-[var(--chem-tint)] border border-[var(--chem-edge)] text-[var(--chem-fg)] font-black text-xs flex items-center gap-1">
             <Layers className="w-3 h-3" />
             Vòng {roundNumber}
           </span>
@@ -216,8 +221,8 @@ export const MatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
         <div className="grid grid-cols-2 gap-3">
           {/* Left Column: Formulas / Symbols */}
           <div className="space-y-2.5">
-            <div className="text-[10px] font-black text-[var(--chem-fg)] uppercase tracking-widest text-center py-1 bg-cyan-950/30 rounded-xl border border-cyan-900/40">
-              {isPhysics ? 'CÔNG THỨC / KÝ HIỆU' : 'CÔNG THỨC HÓA HỌC'}
+            <div className="text-[11px] font-black text-[var(--chem-fg)] text-center py-1 bg-cyan-950/30 rounded-xl border border-cyan-900/40">
+              {isPhysics ? 'Công thức / ký hiệu' : 'Công thức hóa học'}
             </div>
             {leftItems.map((sub) => {
               const isMatched = matchedFormulas.has(sub.formula);
@@ -259,8 +264,8 @@ export const MatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
 
           {/* Right Column: Names & Types */}
           <div className="space-y-2.5">
-            <div className="text-[10px] font-black text-[var(--warn-fg)] uppercase tracking-widest text-center py-1 bg-[var(--warn-subtle)] rounded-xl border border-[var(--warn)]">
-              {isPhysics ? 'ĐẠI LƯỢNG / ĐƠN VỊ' : 'TÊN GỌI / PHÂN LOẠI'}
+            <div className="text-[11px] font-black text-[var(--warn-fg)] text-center py-1 bg-[var(--warn-subtle)] rounded-xl border border-[var(--warn)]">
+              {isPhysics ? 'Đại lượng / đơn vị' : 'Tên gọi / phân loại'}
             </div>
             {rightItems.map((sub) => {
               const isMatched = matchedFormulas.has(sub.formula);
@@ -285,15 +290,15 @@ export const MatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                 >
                   <div className="min-w-0 pr-1.5 flex-1">
                     <div className="font-extrabold truncate text-[var(--fg-default)] text-xs sm:text-sm">
-                      {sub.nameVi}
+                      {displayName(sub)}
                     </div>
-                    <div className="text-[10px] text-[var(--warn-fg)] font-semibold mt-0.5">
+                    <div className="text-[11px] text-[var(--warn-fg)] font-semibold mt-0.5">
                       {TYPE_NAMES[sub.type] || sub.type}
                     </div>
                   </div>
                   {isMatched && (
                     <div className="w-5 h-5 rounded-full bg-[var(--ok-subtle)] border border-[var(--ok)] flex items-center justify-center shrink-0">
-                      <Check className="w-3.5 h-3.5 text-emerald-400 stroke-[3]" />
+                      <Check className="w-3.5 h-3.5 text-[var(--ok-fg)] stroke-[3]" />
                     </div>
                   )}
                 </motion.button>

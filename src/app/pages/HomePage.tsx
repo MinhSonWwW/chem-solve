@@ -1,9 +1,9 @@
 import React, { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { Play, ArrowRight, Map, FlaskConical, CheckCircle2, Sparkles, BookOpen, Zap } from 'lucide-react';
+import { Play, ArrowRight, Map, FlaskConical, CheckCircle2, BookOpen, Zap } from 'lucide-react';
 import { useUserStore } from '@/features/gamification/useUserStore';
-import { Button, Card, Progress, Streak, XPBadge, Mascot, CurrencyIcon } from '@/design-system';
+import { Button, Card, Progress, Mascot, CurrencyIcon } from '@/design-system';
 import { sound } from '@/lib/audio';
 import { getCurriculum, type Grade } from '@/content/curriculum';
 import { useActiveSubject } from '@/content/subjects';
@@ -70,7 +70,7 @@ export const HomePage: React.FC = () => {
     <div className="space-y-5 pb-8">
       {/* Grade Selector Pills */}
       <div className="flex items-center justify-between gap-1.5 p-1.5 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)]">
-        <span className="text-[10px] font-black uppercase text-[var(--text-tertiary)] pl-2 tracking-wider flex items-center gap-1">
+        <span className="text-[11px] font-black text-[var(--text-tertiary)] pl-2 flex items-center gap-1">
           <BookOpen className="w-3.5 h-3.5 text-[var(--subject-fg)]" />
           Khối lớp:
         </span>
@@ -99,20 +99,17 @@ export const HomePage: React.FC = () => {
       >
         <div className="flex items-center justify-between gap-3 relative z-10">
           <div className="space-y-2.5 flex-1 min-w-0">
-            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-black text-[10px] uppercase tracking-wider border bg-[var(--subject-tint)] text-[var(--subject-fg)] border-[var(--subject-edge)]">
-              {isPhysics ? <Zap className="w-3 h-3" /> : <Sparkles className="w-3 h-3" />}
-              {nextPlayable.isCompletedAll ? 'Đã hoàn thành xuất sắc' : 'Chặng tiếp theo của bạn'}
-            </div>
+            <p className="text-xs font-bold text-[var(--text-tertiary)]">
+              {nextPlayable.isCompletedAll ? 'Bạn đã học hết lớp này' : 'Học tiếp'}
+            </p>
 
             <h1 className="text-lg sm:text-xl font-black text-[var(--text-primary)] leading-snug">
-              Lớp {nextPlayable.grade} · {nextPlayable.lesson?.title ?? (isPhysics ? 'Vật lý THCS' : 'Hóa học THCS')} <br />
-              <span className="text-base sm:text-lg text-[var(--subject-fg)]">
-                {nextPlayable.node?.title ?? 'Khám phá bài học mới'}
-              </span>
+              {nextPlayable.node?.title ?? 'Bài học mới'}
             </h1>
 
-            <p className="text-xs text-[var(--text-secondary)] line-clamp-1">
-              Chương {nextPlayable.chapter?.chapterNumber}: {nextPlayable.chapter?.title} · {nextPlayable.node?.description}
+            <p className="text-xs text-[var(--text-secondary)] line-clamp-2">
+              Lớp {nextPlayable.grade} · {nextPlayable.lesson?.title ?? (isPhysics ? 'Vật lý' : 'Hóa học')}
+              {nextPlayable.chapter ? ` · Chương ${nextPlayable.chapter.chapterNumber}` : ''}
             </p>
 
             <div className="pt-1">
@@ -134,7 +131,7 @@ export const HomePage: React.FC = () => {
                 }}
               >
                 <Play className="w-4 h-4 fill-current" />
-                <span>{nextPlayable.isCompletedAll ? 'ÔN TẬP LẠI' : 'TIẾP TỤC CHẶNG'}</span>
+                <span>{nextPlayable.isCompletedAll ? 'Ôn tập lại' : 'Học tiếp'}</span>
               </Button>
             </div>
           </div>
@@ -150,9 +147,9 @@ export const HomePage: React.FC = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-1.5">
             <CurrencyIcon type="xp" size="xs" />
-            <span className="text-xs font-black text-[var(--text-primary)] tracking-wide uppercase">Mục tiêu hôm nay</span>
+            <span className="text-sm font-black text-[var(--text-primary)]">Mục tiêu hôm nay</span>
             {progressPercent >= 100 && (
-              <span className="text-[10px] font-black bg-[var(--ok-tint)] text-[var(--ok-fg)] border border-[var(--ok-edge)] px-2 py-0.5 rounded-lg flex items-center gap-1">
+              <span className="text-[11px] font-black bg-[var(--ok-tint)] text-[var(--ok-fg)] border border-[var(--ok-edge)] px-2 py-0.5 rounded-lg flex items-center gap-1">
                 <CheckCircle2 className="w-3 h-3 text-[var(--ok-fg)]" />
                 Hoàn thành!
               </span>
@@ -168,10 +165,11 @@ export const HomePage: React.FC = () => {
           color={progressPercent >= 100 ? 'success' : 'amber'}
         />
 
-        <div className="flex items-center gap-2 pt-0.5">
-          <Streak days={streak} />
-          <XPBadge amount={xp} />
-        </div>
+        <p className="text-xs text-[var(--text-secondary)]">
+          {progressPercent >= 100
+            ? `Xong mục tiêu rồi. Chuỗi học hiện tại: ${streak} ngày.`
+            : `Còn ${Math.max(0, dailyGoal - xp)} XP nữa là đạt mục tiêu hôm nay.`}
+        </p>
       </Card>
 
       {/* Quick Actions Grid */}
@@ -189,13 +187,8 @@ export const HomePage: React.FC = () => {
             <CurrencyIcon type="trophy" size="sm" />
           </div>
           <div>
-            <div className="flex items-center justify-between">
-              <h2 className="font-black text-sm text-[var(--text-primary)]">Thử thách ngày</h2>
-              <span className="text-[10px] font-black px-1.5 py-0.5 rounded bg-[var(--gold-tint)] text-[var(--gold-fg)] border border-[var(--gold-edge)]">
-                +30 XP
-              </span>
-            </div>
-            <p className="text-[11px] text-[var(--text-secondary)] mt-1">5 câu kiểm định nhanh</p>
+            <h2 className="font-black text-sm text-[var(--text-primary)]">Thử thách ngày</h2>
+            <p className="text-xs text-[var(--text-secondary)] mt-1">5 câu nhanh · +30 XP</p>
           </div>
         </motion.div>
 
@@ -212,13 +205,8 @@ export const HomePage: React.FC = () => {
             <Map className="w-5 h-5 text-[var(--subject-fg)]" />
           </div>
           <div>
-            <div className="flex items-center justify-between">
-              <h2 className="font-black text-sm text-[var(--text-primary)]">Lộ trình học</h2>
-              <span className="text-[10px] font-black px-1.5 py-0.5 rounded border bg-[var(--subject-tint)] text-[var(--subject-fg)] border-[var(--subject-edge)]">
-                Lớp {activeGrade}
-              </span>
-            </div>
-            <p className="text-[11px] text-[var(--text-secondary)] mt-1">Bản đồ học tập chuẩn SGK</p>
+            <h2 className="font-black text-sm text-[var(--text-primary)]">Lộ trình lớp {activeGrade}</h2>
+            <p className="text-xs text-[var(--text-secondary)] mt-1">Các bài theo SGK</p>
           </div>
         </motion.div>
       </div>
@@ -237,26 +225,17 @@ export const HomePage: React.FC = () => {
             {isPhysics ? <Zap className="w-6 h-6" /> : <FlaskConical className="w-6 h-6" />}
           </div>
           <div>
-            <div className="text-sm font-black text-white flex items-center gap-1.5">
-              <span>{isPhysics ? 'Phòng Luyện Tập Vật Lý' : 'Phòng Thí Nghiệm & Ôn Tập'}</span>
-              <span className={`text-[10px] font-black px-2 py-0.5 rounded-full border ${
-                isPhysics
-                  ? 'bg-amber-950 border-amber-600/60 text-amber-300'
-                  : 'bg-emerald-950 border-emerald-600/60 text-emerald-300'
-              }`}>
-                {isPhysics ? 'Công Thức & Bài Tập' : '5 Trò Chơi'}
-              </span>
+            <div className="text-sm font-black text-[var(--text-primary)]">
+              Luyện tập &amp; trò chơi
             </div>
-            <div className="text-[11px] text-slate-300 mt-0.5">
+            <div className="text-xs text-[var(--text-secondary)] mt-0.5">
               {isPhysics
-                ? 'Luyện giải toán Cơ - Nhiệt - Điện - Quang, thử thách tốc độ & ôn tập'
-                : 'Ghép đôi, cân bằng PTHH, phân loại hợp chất & ráp phản ứng'}
+                ? 'Bài tập cơ, nhiệt, điện, quang và thử thách tốc độ'
+                : 'Cân bằng PTHH, phân loại chất, ghép công thức'}
             </div>
           </div>
         </div>
-        <ArrowRight className={`w-5 h-5 group-hover:translate-x-1 transition-transform shrink-0 ${
-          isPhysics ? 'text-amber-400' : 'text-emerald-400'
-        }`} />
+        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform shrink-0 text-[var(--text-tertiary)]" />
       </motion.div>
     </div>
   );

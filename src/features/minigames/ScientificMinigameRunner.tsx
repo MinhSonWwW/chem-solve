@@ -20,7 +20,7 @@ export const ScientificMinigameRunner: React.FC<ScientificMinigameRunnerProps> =
     return (
       MINIGAME_CATALOG[gameId] || {
         id: gameId,
-        title: 'Trò Chơi Khoa Học',
+        title: 'Trò chơi khoa học',
         subject: 'chem',
         grade: 8,
         desc: 'Thử thách kiến thức khoa học',
@@ -45,12 +45,23 @@ export const ScientificMinigameRunner: React.FC<ScientificMinigameRunnerProps> =
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [isAnswerChecked, setIsAnswerChecked] = useState(false);
 
-  // Shuffle question pool on start
-  const shuffledQuestions = useMemo(() => {
-    return [...config.questions].sort(() => 0.5 - Math.random());
+  // Xáo trộn cả danh sách câu hỏi VÀ các phương án trả lời để đáp án đúng phân bổ ngẫu nhiên (A, B, C, D)
+  const preparedQuestions = useMemo(() => {
+    return [...config.questions]
+      .sort(() => 0.5 - Math.random())
+      .map((q) => {
+        const correctText = q.options[q.correctIndex];
+        const shuffledOpts = [...q.options].sort(() => 0.5 - Math.random());
+        const newIdx = shuffledOpts.indexOf(correctText);
+        return {
+          ...q,
+          options: shuffledOpts,
+          correctIndex: newIdx >= 0 ? newIdx : 0,
+        };
+      });
   }, [config.questions]);
 
-  const currentQ = shuffledQuestions[currentIndex] || shuffledQuestions[0];
+  const currentQ = preparedQuestions[currentIndex] || preparedQuestions[0];
 
   const finishGame = useCallback(
     (finalScore: number) => {
@@ -102,7 +113,7 @@ export const ScientificMinigameRunner: React.FC<ScientificMinigameRunnerProps> =
 
     // Auto advance after 1.4s delay so student can see feedback
     setTimeout(() => {
-      if (currentIndex + 1 < shuffledQuestions.length) {
+      if (currentIndex + 1 < preparedQuestions.length) {
         setCurrentIndex((prev) => prev + 1);
         setSelectedOption(null);
         setIsAnswerChecked(false);
@@ -145,9 +156,9 @@ export const ScientificMinigameRunner: React.FC<ScientificMinigameRunnerProps> =
         {/* Progress & Badge */}
         <div className="flex items-center justify-between text-xs">
           <span className="font-bold text-[var(--text-secondary)]">
-            Câu {currentIndex + 1} / {shuffledQuestions.length}
+            Câu {currentIndex + 1} / {preparedQuestions.length}
           </span>
-          <span className="px-2.5 py-0.5 rounded-full font-black text-[11px] bg-[var(--subject-tint)] text-[var(--subject-fg)] border border-[var(--subject-edge)]">
+          <span className="px-2.5 py-0.5 rounded-full font-black text-xs bg-[var(--subject-tint)] text-[var(--subject-fg)] border border-[var(--subject-edge)]">
             {config.badge}
           </span>
         </div>
@@ -203,7 +214,7 @@ export const ScientificMinigameRunner: React.FC<ScientificMinigameRunnerProps> =
                 className={`w-full p-3.5 sm:p-4 rounded-2xl border text-left text-xs sm:text-sm font-bold flex items-center justify-between transition-all cursor-pointer ${btnStyle}`}
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-6 h-6 rounded-full border border-[var(--border)] bg-[var(--bg-surface-2)] text-[11px] text-[var(--text-secondary)] flex items-center justify-center font-black shrink-0">
+                  <div className="w-6 h-6 rounded-full border border-[var(--border)] bg-[var(--bg-surface-2)] text-xs text-[var(--text-secondary)] flex items-center justify-center font-black shrink-0">
                     {String.fromCharCode(65 + idx)}
                   </div>
                   <span className="leading-relaxed">

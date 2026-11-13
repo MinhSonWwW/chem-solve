@@ -36,6 +36,7 @@ import {
 import { sound } from '@/lib/audio';
 import { haptic } from '@/lib/haptic';
 import { loadExercisesForNode } from '@/content/contentLoader';
+import { findLesson } from '@/content/curriculum';
 import { loadSession, clearSession } from '@/engine/progress';
 import { assetUrl } from '@/lib/utils';
 import { GAMIFICATION } from '@/config/gamification';
@@ -130,12 +131,8 @@ const ChemicalLoadingScreen: React.FC<{ isPhysics?: boolean; isBio?: boolean }> 
             <motion.div
               animate={{ x: ['-100%', '100%'] }}
               transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }}
-              className={`w-1/2 h-full rounded-full bg-gradient-to-r ${
-                isPhysics
-                  ? 'from-transparent via-[var(--phy-fill)] to-transparent'
-                  : isBio
-                  ? 'from-transparent via-[var(--bio-fill)] to-transparent'
-                  : 'from-transparent via-[var(--chem-fill)] to-transparent'
+              className={`w-1/2 h-full rounded-full ${
+                isPhysics ? 'bg-[var(--phy-fill)]' : isBio ? 'bg-[var(--bio-fill)]' : 'bg-[var(--chem-fill)]'
               }`}
             />
           </div>
@@ -144,7 +141,7 @@ const ChemicalLoadingScreen: React.FC<{ isPhysics?: boolean; isBio?: boolean }> 
         {/* Trivia Flashcard */}
         <div className="w-full bg-[var(--bg-surface)] border border-[var(--border)] rounded-2xl p-4 text-left relative overflow-hidden">
           <div
-            className={`flex items-center gap-1.5 text-[11px] font-black uppercase tracking-wider mb-1.5 ${
+            className={`flex items-center gap-1.5 text-xs font-black mb-1.5 ${
               isPhysics
                 ? 'text-[var(--phy-fg)]'
                 : isBio
@@ -872,7 +869,7 @@ export const ExercisePage: React.FC = () => {
   if (loadingState === 'error') {
     return (
       <div className="flex flex-col items-center justify-center min-h-[80dvh] gap-4 text-center">
-        <div className="text-4xl">⚗️</div>
+        <FlaskConical className="w-10 h-10 text-[var(--text-tertiary)]" />
         <h2 className="text-lg font-black text-slate-200">Có lỗi xảy ra</h2>
         <p className="text-sm text-slate-400">{errorMsg}</p>
         <Button variant="primary" onClick={() => navigate(-1)}>
@@ -947,7 +944,7 @@ export const ExercisePage: React.FC = () => {
 
         {/* Practice Mode Badge */}
         {isPracticeMode && (
-          <div className="hidden sm:inline-flex items-center gap-1.5 text-[11px] font-black uppercase text-amber-300 bg-amber-950/70 border border-amber-500/50 px-2.5 py-1 rounded-xl shadow-sm">
+          <div className="hidden sm:inline-flex items-center gap-1.5 text-xs font-black text-amber-300 bg-amber-950/70 border border-amber-500/50 px-2.5 py-1 rounded-xl shadow-sm">
             <HeartIcon className="w-3.5 h-3.5 fill-rose-500 text-rose-500" />
             <span>Luyện tập · Hồi tim</span>
           </div>
@@ -986,9 +983,9 @@ export const ExercisePage: React.FC = () => {
             transition={{ duration: 0.6, type: 'spring', stiffness: 300 }}
             className="absolute top-28 left-1/2 -translate-x-1/2 z-50 pointer-events-none"
           >
-            <div className="bg-gradient-to-r from-amber-400 to-yellow-500 text-slate-950 font-black px-4 py-2 rounded-2xl shadow-[0_8px_20px_rgba(245,158,11,0.5)] border-2 border-amber-200 flex items-center gap-1.5 text-base">
+            <div className="   text-slate-950 font-black px-4 py-2 rounded-2xl border-2 border-amber-200 flex items-center gap-1.5 text-base bg-amber-400">
               <Sparkles className="w-5 h-5 fill-slate-950 text-slate-950" />
-              <span>+{currentQ.earnedXp} KN!</span>
+              <span>+{currentQ.earnedXp} XP</span>
             </div>
           </motion.div>
         )}
@@ -1004,8 +1001,8 @@ export const ExercisePage: React.FC = () => {
             transition={{ duration: 0.6, type: 'spring', stiffness: 300 }}
             className="absolute top-40 left-1/2 -translate-x-1/2 z-50 pointer-events-none"
           >
-            <div className="bg-gradient-to-r from-rose-500 to-pink-600 text-white font-black px-4 py-2 rounded-2xl shadow-[0_8px_20px_rgba(244,63,94,0.5)] border-2 border-rose-300 flex items-center gap-1.5 text-base">
-              <HeartIcon className="w-5 h-5 fill-white text-white animate-pulse" />
+            <div className="   text-white font-black px-4 py-2 rounded-2xl border-2 border-rose-300 flex items-center gap-1.5 text-base bg-rose-500">
+              <HeartIcon className="w-5 h-5 fill-white text-[var(--text-primary)] " />
               <span>+1 Tim hồi phục!</span>
             </div>
           </motion.div>
@@ -1023,18 +1020,15 @@ export const ExercisePage: React.FC = () => {
         {/* Question meta & Review badge */}
         <div className="flex items-center justify-between">
           <div
-            className={`text-[11px] font-black uppercase tracking-wide ${
-              isPhysics ? 'text-[var(--phy-fg)] flex items-center gap-1' : 'text-[var(--chem-fg)]'
-            }`}
+            className="min-w-0 truncate text-xs font-bold text-[var(--text-secondary)] flex items-center gap-1"
           >
-            {isPhysics && <Zap className="w-3.5 h-3.5 fill-[var(--phy-fill)]" />}
-            <span>
-              {lessonId} · Câu {sessionState.currentIndex + 1}/{sessionState.questions.length}
+                        <span>
+              {findLesson(lessonId)?.title ?? 'Bài tập'} · Câu {sessionState.currentIndex + 1}/{sessionState.questions.length}
             </span>
           </div>
           {currentQ.isReview && (
-            <span className="text-[11px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 px-2.5 py-0.5 rounded-xl flex items-center gap-1">
-              🔁 Cùng làm lại câu chưa đúng nhé!
+            <span className="text-xs font-bold bg-amber-500/20 text-[var(--gold-fg)] border border-amber-500/40 px-2.5 py-0.5 rounded-xl flex items-center gap-1">
+              Cùng làm lại câu chưa đúng nhé!
             </span>
           )}
         </div>
@@ -1054,17 +1048,17 @@ export const ExercisePage: React.FC = () => {
               {exercise.given?.map((g, i) => (
                 <span
                   key={i}
-                  className="text-[11px] px-2.5 py-1 rounded-xl border bg-[var(--bg-surface-2)] border-[var(--border)] text-[var(--text-secondary)]"
+                  className="text-xs px-2.5 py-1 rounded-xl border bg-[var(--bg-surface-2)] border-[var(--border)] text-[var(--text-secondary)]"
                 >
-                  📌 {renderPrompt(g.label)}: {g.value}
+                  {renderPrompt(g.label)}: {g.value}
                   {g.unit ? ` ${g.unit}` : ''}
                 </span>
               ))}
               {exercise.find && (
                 <span
-                  className="text-[11px] px-2.5 py-1 rounded-xl border bg-[var(--subject-tint)] border-[var(--subject-edge)] text-[var(--subject-fg)]"
+                  className="text-xs px-2.5 py-1 rounded-xl border bg-[var(--subject-tint)] border-[var(--subject-edge)] text-[var(--subject-fg)]"
                 >
-                  🎯 Cần tìm: {renderPrompt(exercise.find.label)}
+                  Cần tìm: {renderPrompt(exercise.find.label)}
                   {exercise.find.unit ? ` (${exercise.find.unit})` : ''}
                 </span>
               )}
@@ -1160,7 +1154,7 @@ export const ExercisePage: React.FC = () => {
               handleCheck();
             }}
           >
-            KIỂM TRA
+            Kiểm tra
           </Button>
         </div>
       )}
@@ -1239,34 +1233,29 @@ export const ExercisePage: React.FC = () => {
           if (physicsVisualMode === 'potential-height') {
             physicsEffect = {
               type: 'energy-surge',
-              label: '⚡ Bừng sáng thế năng & cơ năng bảo toàn!',
+              label: 'Cơ năng được bảo toàn',
               detail: 'Thế năng cực đại tại đỉnh chuyển hóa trọn vẹn thành động năng khi chạm đất (W = Wt + Wđ = hằng số).',
             };
           } else if (physicsVisualMode === 'kinetic-speed') {
             physicsEffect = {
               type: 'motion-burst',
-              label: '⚡ Bừng sáng động năng & tốc độ!',
+              label: 'Động năng và tốc độ',
               detail: 'Động năng tỉ lệ thuận với khối lượng và bình phương tốc độ (Wđ = ½ · m · v²).',
             };
           } else if (physicsVisualMode === 'circuit-diagram') {
             physicsEffect = {
               type: 'electric-spark',
-              label: '⚡ Mạch điện thông suốt - Định luật Ôm nghiệm đúng!',
+              label: 'Mạch kín, đúng định luật Ohm',
               detail: 'Cường độ dòng điện tỉ lệ thuận với hiệu điện thế và tỉ lệ nghịch với điện trở (I = U / R).',
             };
           } else if (physicsVisualMode === 'optics-lens') {
             physicsEffect = {
               type: 'optics-beam',
-              label: '💡 Chùm sáng khúc xạ chuẩn xác!',
+              label: 'Tia sáng khúc xạ đúng hướng',
               detail: 'Đường truyền các tia sáng đặc biệt qua thấu kính hội tụ xác định đúng vị trí và tính chất của ảnh.',
             };
-          } else {
-            physicsEffect = {
-              type: 'energy-surge',
-              label: '⚡ Thực hành vật lý chuẩn xác!',
-              detail: 'Bạn đã áp dụng đúng quy luật và biểu thức định lượng.',
-            };
           }
+          // No generic filler card: only show a recap when it adds a real physics idea.
         }
 
         return (
@@ -1433,7 +1422,7 @@ const AnswerRenderer: React.FC<AnswerRendererProps> = ({
           {!disabled && (
             <button
               onClick={onShowChemKeyboard}
-              className={`mt-2 text-[11px] font-bold transition-colors cursor-pointer ${
+              className={`mt-2 text-xs font-bold transition-colors cursor-pointer ${
                 isPhysics ? 'text-[var(--phy-fg)] hover:underline' : 'text-[var(--chem-fg)] hover:underline'
               }`}
             >

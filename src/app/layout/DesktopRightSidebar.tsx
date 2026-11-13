@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Search, BookOpen, ArrowRight } from 'lucide-react';
 import { Heart, Streak, XPBadge, GemBadge, HeartRefillModal, CurrencyIcon, ThemeToggle } from '@/design-system';
 import { useUserStore } from '@/features/gamification/useUserStore';
+import { GAMIFICATION } from '@/config/gamification';
 import { sound } from '@/lib/audio';
 
 export const DesktopRightSidebar: React.FC = () => {
@@ -54,9 +55,9 @@ export const DesktopRightSidebar: React.FC = () => {
               setShowHeartModal(true);
             }}
             className="cursor-pointer hover:scale-105 active:scale-95 transition-transform"
-            title={`Đang có ${hearts}/5 tim. Bấm để đổi đá quý hoặc luyện tập!`}
+            title={`Đang có ${hearts}/${GAMIFICATION.hearts.max} tim. Bấm để đổi đá quý hoặc luyện tập!`}
           >
-            <Heart count={hearts} max={5} />
+            <Heart count={hearts} max={GAMIFICATION.hearts.max} />
           </div>
 
           <button
@@ -80,14 +81,14 @@ export const DesktopRightSidebar: React.FC = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <CurrencyIcon type="xp" size="xs" />
-              <h3 className="text-xs font-black text-[var(--text-primary)] tracking-wider uppercase">
+              <h3 className="text-xs font-black text-[var(--text-primary)] ">
                 Nhiệm vụ hôm nay
               </h3>
             </div>
             <Link
               to="/daily"
               onClick={() => sound.playClick()}
-              className="text-[10px] font-black text-[var(--subject-fg)] hover:underline uppercase tracking-tight"
+              className="text-[11px] font-black text-[var(--subject-fg)] hover:underline tracking-tight"
             >
               Xem thử thách
             </Link>
@@ -96,10 +97,10 @@ export const DesktopRightSidebar: React.FC = () => {
           {/* Quest Item 1: Daily Challenge */}
           <div className="space-y-1.5">
             <div className="flex items-center justify-between text-xs">
-              <span className="font-bold text-[var(--text-secondary)] text-[11px]">
+              <span className="font-bold text-[var(--text-secondary)] text-xs">
                 5 câu Thử thách ngày
               </span>
-              <span className={`text-[11px] font-mono font-bold ${dailyChallengeDone ? 'text-[var(--ok-fg)]' : 'text-[var(--text-tertiary)]'}`}>
+              <span className={`text-xs font-mono font-bold ${dailyChallengeDone ? 'text-[var(--ok-fg)]' : 'text-[var(--text-tertiary)]'}`}>
                 {dailyChallengeDone ? '1/1 ✓' : '0/1'}
               </span>
             </div>
@@ -117,10 +118,10 @@ export const DesktopRightSidebar: React.FC = () => {
           {/* Quest Item 2: Lesson Completion Today */}
           <div className="space-y-1.5 pt-1">
             <div className="flex items-center justify-between text-xs">
-              <span className="font-bold text-[var(--text-secondary)] text-[11px]">
+              <span className="font-bold text-[var(--text-secondary)] text-xs">
                 Hoàn thành 1 chặng bài học
               </span>
-              <span className={`text-[11px] font-mono font-bold ${todayNodesCount >= 1 ? 'text-[var(--subject-fg)]' : 'text-[var(--text-tertiary)]'}`}>
+              <span className={`text-xs font-mono font-bold ${todayNodesCount >= 1 ? 'text-[var(--subject-fg)]' : 'text-[var(--text-tertiary)]'}`}>
                 {todayNodesCount >= 1 ? '1/1 ✓' : '0/1'}
               </span>
             </div>
@@ -138,10 +139,10 @@ export const DesktopRightSidebar: React.FC = () => {
           {/* Quest Item 3: Daily Goal XP */}
           <div className="space-y-1.5 pt-1">
             <div className="flex items-center justify-between text-xs">
-              <span className="font-bold text-[var(--text-secondary)] text-[11px]">
+              <span className="font-bold text-[var(--text-secondary)] text-xs">
                 Đạt mục tiêu {dailyGoalTarget} XP ngày
               </span>
-              <span className={`text-[11px] font-mono font-bold ${dailyXpPercent >= 100 ? 'text-[var(--gold-fg)]' : 'text-[var(--text-tertiary)]'}`}>
+              <span className={`text-xs font-mono font-bold ${dailyXpPercent >= 100 ? 'text-[var(--gold-fg)]' : 'text-[var(--text-tertiary)]'}`}>
                 {currentDailyXp}/{dailyGoalTarget} XP
               </span>
             </div>
@@ -160,11 +161,11 @@ export const DesktopRightSidebar: React.FC = () => {
         {/* 3. Widget: Chuỗi đèn cồn Streak — vạch nhấn trái warn.fill */}
         <div className="widget-streak-card p-4 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] border-l-4 border-l-[var(--warn-fill)] flex items-center justify-between">
           <div className="space-y-1">
-            <div className="flex items-center gap-1.5 text-xs font-black text-[var(--warn-fg)] uppercase tracking-wider">
+            <div className="flex items-center gap-1.5 text-xs font-black text-[var(--warn-fg)]  ">
               <CurrencyIcon type="streak" size="xs" />
               <span>Chuỗi đèn cồn Streak</span>
             </div>
-            <p className="text-[11px] text-[var(--text-secondary)] font-medium leading-tight">
+            <p className="text-xs text-[var(--text-secondary)] font-medium leading-tight">
               {streak > 0
                 ? `Bạn đang giữ chuỗi ${streak} ngày học liên tiếp!`
                 : 'Học 1 bài hôm nay để thắp sáng ngọn đèn cồn!'}
@@ -178,11 +179,11 @@ export const DesktopRightSidebar: React.FC = () => {
 
         {/* 4. Widget: Sổ tay ôn tập Leitner — vạch nhấn trái slate.fill */}
         <div className="widget-review-card p-4 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] border-l-4 border-l-[var(--slate-fill)] space-y-2.5">
-          <div className="flex items-center gap-2 text-[var(--slate-fg)] text-xs font-black uppercase tracking-wider">
+          <div className="flex items-center gap-2 text-[var(--slate-fg)] text-xs font-black  ">
             <BookOpen className="w-4 h-4" />
             <span>Sổ tay ôn tập</span>
           </div>
-          <p className="text-[11px] text-[var(--text-secondary)] leading-tight">
+          <p className="text-xs text-[var(--text-secondary)] leading-tight">
             Hệ thống Leitner tự động nhắc nhở ôn lại các câu bạn đã từng làm sai.
           </p>
           <button
@@ -192,7 +193,7 @@ export const DesktopRightSidebar: React.FC = () => {
             }}
             className="w-full py-2.5 px-3 rounded-xl bg-[var(--slate-fill)] hover:opacity-95 text-white font-black text-xs flex items-center justify-center gap-2 shadow-[0_4px_0_0_var(--slate-edge)] active:translate-y-1 active:shadow-none transition-all cursor-pointer"
           >
-            <span>ÔN TẬP CÂU SAI</span>
+            <span>Ôn tập câu sai</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </button>
         </div>
@@ -202,8 +203,9 @@ export const DesktopRightSidebar: React.FC = () => {
       <HeartRefillModal
         isOpen={showHeartModal}
         hearts={hearts}
+        maxHearts={GAMIFICATION.hearts.max}
         gems={gems}
-        costPerHeart={150}
+        costPerHeart={GAMIFICATION.gems.costPerHeart}
         onBuyWithGems={() => {
           buyHeartWithGems();
         }}

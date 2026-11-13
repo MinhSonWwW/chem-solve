@@ -180,7 +180,7 @@ export const EquationBalanceGame: React.FC<{ onExit: () => void }> = ({ onExit }
             Phương trình {currentIndex + 1}/{reactionsList.length}
           </span>
           {currentRx.condition && (
-            <span className="px-2 py-0.5 rounded-lg bg-amber-950/60 border border-amber-700/50 text-amber-300 font-bold text-[11px]">
+            <span className="px-2 py-0.5 rounded-lg bg-amber-950/60 border border-amber-700/50 text-amber-300 font-bold text-xs">
               Đk: {currentRx.condition}
             </span>
           )}
@@ -188,7 +188,7 @@ export const EquationBalanceGame: React.FC<{ onExit: () => void }> = ({ onExit }
 
         {/* Chemical Equation Board with Steppers */}
         <div className="bg-slate-900 border-2 border-slate-800 rounded-2xl p-4 shadow-xl space-y-4">
-          <div className="text-[11px] font-black uppercase tracking-wider text-slate-400 text-center">
+          <div className="text-xs font-black text-slate-400 text-center">
             Điều chỉnh hệ số nguyên tối giản
           </div>
 
@@ -209,7 +209,7 @@ export const EquationBalanceGame: React.FC<{ onExit: () => void }> = ({ onExit }
                       >
                         <Minus className="w-3 h-3" />
                       </button>
-                      <span className="text-base font-black text-amber-400 min-w-[20px] text-center">
+                      <span className="text-base font-black text-[var(--gold-fg)] min-w-[20px] text-center">
                         {c}
                       </span>
                       <button
@@ -220,7 +220,7 @@ export const EquationBalanceGame: React.FC<{ onExit: () => void }> = ({ onExit }
                         <Plus className="w-3 h-3" />
                       </button>
                     </div>
-                    <div className="text-sm font-bold text-cyan-200">
+                    <div className="text-sm font-bold text-[var(--chem-fg)]">
                       <Formula formula={r.formula} />
                     </div>
                   </div>
@@ -249,7 +249,7 @@ export const EquationBalanceGame: React.FC<{ onExit: () => void }> = ({ onExit }
                       >
                         <Minus className="w-3 h-3" />
                       </button>
-                      <span className="text-base font-black text-amber-400 min-w-[20px] text-center">
+                      <span className="text-base font-black text-[var(--gold-fg)] min-w-[20px] text-center">
                         {c}
                       </span>
                       <button
@@ -260,7 +260,7 @@ export const EquationBalanceGame: React.FC<{ onExit: () => void }> = ({ onExit }
                         <Plus className="w-3 h-3" />
                       </button>
                     </div>
-                    <div className="text-sm font-bold text-pink-200">
+                    <div className="text-sm font-bold text-[var(--err-fg)]">
                       <Formula formula={p.formula} />
                     </div>
                   </div>
@@ -278,7 +278,7 @@ export const EquationBalanceGame: React.FC<{ onExit: () => void }> = ({ onExit }
               Đếm số nguyên tử mỗi vế:
             </span>
             {balanceResult?.isBalanced && !balanceResult.isSimplest && (
-              <span className="text-[11px] font-bold text-amber-400 bg-amber-950/60 px-2 py-0.5 rounded">
+              <span className="text-xs font-bold text-amber-400 bg-amber-950/60 px-2 py-0.5 rounded">
                 Chưa tối giản hệ số
               </span>
             )}
@@ -295,12 +295,12 @@ export const EquationBalanceGame: React.FC<{ onExit: () => void }> = ({ onExit }
                   key={elem}
                   className={`p-2 rounded-xl border flex items-center justify-between text-xs ${
                     isMatch
-                      ? 'bg-emerald-950/40 border-emerald-700/50 text-emerald-300'
-                      : 'bg-rose-950/40 border-rose-700/50 text-rose-300'
+                      ? 'bg-emerald-950/40 border-emerald-700/50 text-[var(--ok-fg)]'
+                      : 'bg-rose-950/40 border-rose-700/50 text-[var(--err-fg)]'
                   }`}
                 >
-                  <span className="font-black text-white">{elem}</span>
-                  <span className="font-mono font-bold text-[11px]">
+                  <span className="font-black text-[var(--text-primary)]">{elem}</span>
+                  <span className="font-mono font-bold text-xs">
                     {left} ⇄ {right} {isMatch ? '✓' : '✗'}
                   </span>
                 </div>
@@ -317,7 +317,7 @@ export const EquationBalanceGame: React.FC<{ onExit: () => void }> = ({ onExit }
               animate={{ scale: 1, opacity: 1 }}
               className="p-3.5 rounded-2xl bg-emerald-950/80 border border-emerald-500 flex items-center justify-center gap-2 text-emerald-300 font-black text-sm shadow-lg"
             >
-              <CheckCircle2 className="w-5 h-5 text-emerald-400 animate-bounce" />
+              <CheckCircle2 className="w-5 h-5 text-[var(--ok-fg)] animate-bounce" />
               Cân bằng chính xác! (+35 XP)
             </motion.div>
           ) : (

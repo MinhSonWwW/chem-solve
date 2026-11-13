@@ -52,7 +52,7 @@ export const FormulaInput: React.FC<FormulaInputProps> = ({
         autoCorrect="off"
         spellCheck={false}
       />
-      <span className="text-[10px] font-bold text-[var(--text-tertiary)] bg-[var(--bg-canvas)] px-2 py-0.5 rounded-md border border-[var(--border)]">
+      <span className="text-[11px] font-bold text-[var(--text-tertiary)] bg-[var(--bg-canvas)] px-2 py-0.5 rounded-md border border-[var(--border)]">
         CTHH
       </span>
     </div>

@@ -32,15 +32,24 @@ function gcd(a: number, b: number): number {
 }
 
 /**
+ * Computes the greatest common divisor across a list of integer coefficients.
+ */
+export function coefficientsGcd(coefficients: number[]): number {
+  const nonZero = coefficients.map((c) => Math.abs(Math.trunc(c))).filter((c) => c > 0);
+  if (nonZero.length === 0) return 1;
+  let overallGcd = nonZero[0];
+  for (let i = 1; i < nonZero.length; i++) {
+    overallGcd = gcd(overallGcd, nonZero[i]);
+  }
+  return overallGcd;
+}
+
+/**
  * Checks if a list of coefficients is in simplest integer ratio.
  */
 export function areSimplestCoefficients(coefficients: number[]): boolean {
   if (coefficients.length === 0) return true;
-  let overallGcd = coefficients[0];
-  for (let i = 1; i < coefficients.length; i++) {
-    overallGcd = gcd(overallGcd, coefficients[i]);
-  }
-  return overallGcd === 1;
+  return coefficientsGcd(coefficients) === 1;
 }
 
 /**
@@ -48,10 +57,7 @@ export function areSimplestCoefficients(coefficients: number[]): boolean {
  */
 export function simplestCoefficients(coefficients: number[]): number[] {
   if (coefficients.length === 0) return [];
-  let overallGcd = coefficients[0];
-  for (let i = 1; i < coefficients.length; i++) {
-    overallGcd = gcd(overallGcd, coefficients[i]);
-  }
+  const overallGcd = coefficientsGcd(coefficients);
   if (overallGcd <= 1) return [...coefficients];
   return coefficients.map((c) => c / overallGcd);
 }
@@ -116,7 +122,11 @@ export function checkBalance(input: string | ParsedEquation): BalanceResult {
       .join('; ');
     feedbackMessage = `Phương trình chưa cân bằng ở: ${details}.`;
   } else if (!isSimplest) {
-    feedbackMessage = 'Phương trình đã cân bằng đúng nhưng các hệ số chưa ở tỉ lệ tối giản.';
+    const overallGcd = coefficientsGcd(allCoefficients);
+    feedbackMessage =
+      overallGcd > 1
+        ? `Phương trình đã cân bằng đúng nhưng các hệ số chưa ở tỉ lệ tối giản (đều chia hết cho ${overallGcd}).`
+        : 'Phương trình đã cân bằng đúng nhưng các hệ số chưa ở tỉ lệ tối giản.';
   }
 
   return {

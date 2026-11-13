@@ -157,7 +157,7 @@
         },
         {
           "id": "o3",
-          "label": "Chú mèo mướp",
+          "label": "Con khỉ rừng",
           "bucketId": "natural"
         },
         {
@@ -180,7 +180,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Những gì tự nhiên sinh ra: núi, mèo, biển -> Tự nhiên."
+        "text": "Những gì có sẵn trong tự nhiên: núi, con khỉ rừng, biển -> Tự nhiên."
       },
       {
         "level": 2,
@@ -196,15 +196,15 @@
       {
         "kind": "knowledge",
         "title": "Tiêu chí",
-        "body": "Có sẵn trong tự nhiên: núi, mèo, biển. Do bàn tay con người làm ra: ghế, nồi nhôm, điện thoại."
+        "body": "Có sẵn trong tự nhiên: núi, con khỉ rừng, biển. Do bàn tay con người làm ra: ghế, nồi nhôm, điện thoại."
       },
       {
         "kind": "answer",
         "title": "Kết quả",
-        "body": "Tự nhiên: núi, mèo, biển. Nhân tạo: ghế, nồi, điện thoại."
+        "body": "Tự nhiên: núi, con khỉ rừng, biển. Nhân tạo: ghế, nồi, điện thoại."
       }
     ],
-    "finalSolution": "Tự nhiên: ngọn núi, chú mèo, biển. Nhân tạo: cái ghế, nồi nhôm, điện thoại.",
+    "finalSolution": "Tự nhiên: ngọn núi, con khỉ rừng, biển. Nhân tạo: cái ghế, nồi nhôm, điện thoại.",
     "commonMistakes": []
   },
   {

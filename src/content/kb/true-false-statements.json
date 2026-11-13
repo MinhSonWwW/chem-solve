@@ -1,16 +1,16 @@
 [
   {
     "id": "tf-01",
-    "statement": "Dung dịch axit làm đổi màu giấy quỳ tím sang màu đỏ.",
+    "statement": "Dung dịch acid làm đổi màu giấy quỳ tím sang màu đỏ.",
     "isTrue": true,
-    "explanation": "Axit giải phóng ion H+ trong dung dịch làm giấy quỳ tím hóa đỏ.",
+    "explanation": "Acid giải phóng ion H+ trong dung dịch làm giấy quỳ tím hóa đỏ.",
     "topic": "Acid"
   },
   {
     "id": "tf-02",
-    "statement": "Dung dịch bazơ (kiềm) làm đổi màu giấy quỳ tím sang màu đỏ.",
+    "statement": "Dung dịch base (kiềm) làm đổi màu giấy quỳ tím sang màu đỏ.",
     "isTrue": false,
-    "explanation": "Dung dịch bazơ làm giấy quỳ tím chuyển sang màu xanh (hoặc phenolphtalein không màu thành hồng).",
+    "explanation": "Dung dịch base làm giấy quỳ tím chuyển sang màu xanh (hoặc phenolphtalein không màu thành hồng).",
     "topic": "Base"
   },
   {
@@ -36,23 +36,23 @@
   },
   {
     "id": "tf-06",
-    "statement": "Kim loại đồng (Cu) tác dụng được với dung dịch axit HCl loãng giải phóng khí H2.",
+    "statement": "Kim loại đồng (Cu) tác dụng được với dung dịch acid HCl loãng giải phóng khí H2.",
     "isTrue": false,
-    "explanation": "Đồng đứng sau hiđro trong dãy hoạt động hóa học nên không đẩy được H ra khỏi axit HCl/H2SO4 loãng.",
+    "explanation": "Đồng đứng sau hydrogen trong dãy hoạt động hóa học nên không đẩy được H ra khỏi acid HCl/H2SO4 loãng.",
     "topic": "Kim loại"
   },
   {
     "id": "tf-07",
-    "statement": "Khí hiđro (H2) là chất khí nhẹ nhất trong tất cả các chất khí.",
+    "statement": "Khí hydrogen (H2) là chất khí nhẹ nhất trong tất cả các chất khí.",
     "isTrue": true,
     "explanation": "Khối lượng mol của H2 chỉ là 2 g/mol, nhẹ hơn rất nhiều so với không khí (29 g/mol).",
     "topic": "Đơn chất"
   },
   {
     "id": "tf-08",
-    "statement": "Dung dịch có độ pH < 7 là dung dịch có tính bazơ.",
+    "statement": "Dung dịch có độ pH < 7 là dung dịch có tính base.",
     "isTrue": false,
-    "explanation": "pH < 7 là môi trường axit, pH = 7 là trung tính, pH > 7 mới là môi trường bazơ.",
+    "explanation": "pH < 7 là môi trường acid, pH = 7 là trung tính, pH > 7 mới là môi trường base.",
     "topic": "Thang pH"
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "id": "tf-11",
-    "statement": "Kim loại kẽm (Zn) tác dụng được với dung dịch H2SO4 loãng sinh ra khí hiđro.",
+    "statement": "Kim loại kẽm (Zn) tác dụng được với dung dịch H2SO4 loãng sinh ra khí hydrogen.",
     "isTrue": true,
     "explanation": "PTHH: Zn + H2SO4 -> ZnSO4 + H2.",
     "topic": "Kim loại"
@@ -85,9 +85,9 @@
   },
   {
     "id": "tf-13",
-    "statement": "Giấm ăn thông thường có chứa axit axetic (CH3COOH) khoảng 2% – 5%.",
+    "statement": "Giấm ăn thông thường có chứa acetic acid (CH3COOH) khoảng 2% – 5%.",
     "isTrue": true,
-    "explanation": "Thành phần tạo nên vị chua đặc trưng của giấm ăn chính là axit axetic.",
+    "explanation": "Thành phần tạo nên vị chua đặc trưng của giấm ăn chính là acetic acid.",
     "topic": "Hợp chất hữu cơ"
   },
   {
@@ -134,9 +134,9 @@
   },
   {
     "id": "tf-20",
-    "statement": "Khi hòa tan axit sunfuric đặc (H2SO4) cần rót thật nhanh nước vào axit đặc.",
+    "statement": "Khi hòa tan acid sunfuric đặc (H2SO4) cần rót thật nhanh nước vào acid đặc.",
     "isTrue": false,
-    "explanation": "Tuyệt đối không được đổ nước vào axit đặc vì sẽ gây sôi đột ngột và bắn axit gây bỏng nặng! Phải rót từ từ axit vào nước.",
+    "explanation": "Tuyệt đối không được đổ nước vào acid đặc vì sẽ gây sôi đột ngột và bắn acid gây bỏng nặng! Phải rót từ từ acid vào nước.",
     "topic": "An toàn phòng thí nghiệm"
   }
 ]

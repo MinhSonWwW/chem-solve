@@ -196,7 +196,7 @@ export const BloodTransfusionGame: React.FC<{ onExit: () => void }> = ({ onExit 
 
   return (
     <MinigameShell
-      title="Bác Sĩ Cấp Cứu — Truyền Máu ABO"
+      title="Bác sĩ cấp cứu — Truyền Máu ABO"
       description="Chọn túi máu an toàn tiếp ứng cho bệnh nhân trước khi cạn thời gian!"
       skillId="bio-truyen-mau"
       timeLeft={timeLeft}
@@ -219,11 +219,11 @@ export const BloodTransfusionGame: React.FC<{ onExit: () => void }> = ({ onExit 
         {/* Top Case Progress Bar */}
         <div className="flex items-center justify-between text-xs px-1">
           <span className="font-bold text-slate-400">
-            Ca cấp cứu đã cứu sống: <span className="text-emerald-400 font-black">{roundsCompleted}</span>
+            Ca cấp cứu đã cứu sống: <span className="text-[var(--ok-fg)] font-black">{roundsCompleted}</span>
           </span>
-          <span className="px-2.5 py-0.5 rounded-full bg-rose-950/80 border border-rose-700/60 text-rose-300 font-black text-[11px] flex items-center gap-1">
-            <Activity className="w-3.5 h-3.5 text-rose-400 animate-pulse" />
-            Phòng Hồi Sức Cấp Cứu
+          <span className="px-2.5 py-0.5 rounded-full bg-rose-950/80 border border-rose-700/60 text-rose-300 font-black text-xs flex items-center gap-1">
+            <Activity className="w-3.5 h-3.5 text-[var(--err-fg)] " />
+            Phòng hồi sức cấp cứu
           </span>
         </div>
 
@@ -242,21 +242,21 @@ export const BloodTransfusionGame: React.FC<{ onExit: () => void }> = ({ onExit 
           <div className="flex items-start justify-between gap-3">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-2xl bg-[var(--err-subtle)] border border-[var(--err)] flex items-center justify-center text-[var(--err-fg)] shrink-0">
-                <Heart className="w-6 h-6 fill-[var(--err)] text-[var(--err)] animate-pulse" />
+                <Heart className="w-6 h-6 fill-[var(--err)] text-[var(--err)] " />
               </div>
 
               <div>
                 <h3 className="text-sm font-black text-[var(--fg-default)]">{currentPatient.name}</h3>
-                <p className="text-[11px] text-[var(--fg-muted)]">{currentPatient.condition}</p>
-                <span className="text-[10px] text-[var(--err-fg)] font-bold block mt-0.5">
-                  ⚠️ {currentPatient.vitalStatus}
+                <p className="text-xs text-[var(--fg-muted)]">{currentPatient.condition}</p>
+                <span className="text-[11px] text-[var(--err-fg)] font-bold block mt-0.5">
+                  {currentPatient.vitalStatus}
                 </span>
               </div>
             </div>
 
             {/* Patient Blood Group Badge */}
             <div className="text-right shrink-0">
-              <span className="text-[10px] text-[var(--fg-subtle)] font-bold block uppercase">
+              <span className="text-[11px] text-[var(--fg-subtle)] font-bold block ">
                 Nhóm máu BN
               </span>
               <span
@@ -274,15 +274,15 @@ export const BloodTransfusionGame: React.FC<{ onExit: () => void }> = ({ onExit 
           </div>
 
           {/* Biological details of patient's blood */}
-          <div className="grid grid-cols-2 gap-2 text-left bg-[var(--bg-canvas)] p-2.5 rounded-2xl border border-[var(--border)] text-[11px]">
+          <div className="grid grid-cols-2 gap-2 text-left bg-[var(--bg-canvas)] p-2.5 rounded-2xl border border-[var(--border)] text-xs">
             <div>
-              <span className="text-[10px] uppercase font-bold text-[var(--fg-subtle)] block">
+              <span className="text-[11px] font-bold text-[var(--fg-subtle)] block">
                 Kháng thể huyết tương:
               </span>
               <strong className="text-[var(--err-fg)] font-semibold">{patientRule.antibodies}</strong>
             </div>
             <div>
-              <span className="text-[10px] uppercase font-bold text-[var(--fg-subtle)] block">
+              <span className="text-[11px] font-bold text-[var(--fg-subtle)] block">
                 Kháng nguyên hồng cầu:
               </span>
               <strong className="text-[var(--chem-fg)] font-semibold">{patientRule.antigens}</strong>
@@ -317,11 +317,11 @@ export const BloodTransfusionGame: React.FC<{ onExit: () => void }> = ({ onExit 
         {/* Blood Bank Selection (4 TÚI MÁU ĐỂ HỌC SINH CHỌN) */}
         <div className="space-y-2">
           <div className="flex items-center justify-between px-1">
-            <span className="text-xs font-black uppercase tracking-wider text-[var(--fg-default)] flex items-center gap-1.5">
+            <span className="text-xs font-black text-[var(--fg-default)] flex items-center gap-1.5">
               <Droplets className="w-4 h-4 text-[var(--err-fg)]" />
-              Ngân Hàng Máu — Chọn Túi Máu Tiếp Ứng:
+              Ngân hàng máu — Chọn túi máu tiếp ứng:
             </span>
-            <span className="text-[10px] text-[var(--warn-fg)] font-bold">Bấm để truyền ngay</span>
+            <span className="text-[11px] text-[var(--warn-fg)] font-bold">Bấm để truyền ngay</span>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
@@ -343,7 +343,7 @@ export const BloodTransfusionGame: React.FC<{ onExit: () => void }> = ({ onExit 
                   </div>
 
                   <span className="text-lg font-black text-[var(--fg-default)]">Túi {donorType}</span>
-                  <span className="text-[9px] text-[var(--fg-subtle)] mt-0.5 line-clamp-1">
+                  <span className="text-[11px] text-[var(--fg-subtle)] mt-0.5 line-clamp-1">
                     {donorType === 'O' ? 'Chuyên cho' : donorType === 'AB' ? 'Chuyên nhận' : `KN ${donorType}`}
                   </span>
                 </button>
@@ -353,8 +353,7 @@ export const BloodTransfusionGame: React.FC<{ onExit: () => void }> = ({ onExit 
         </div>
 
         {/* Educational Hint Footer */}
-        <div className="p-3 bg-[var(--bg-canvas)] border border-[var(--border)] rounded-2xl text-[11px] text-[var(--fg-muted)] text-left leading-relaxed">
-          💡 <strong>Nguyên tắc vàng truyền máu:</strong> Không để kháng nguyên trên hồng cầu người cho bị kháng thể trong huyết tương người nhận ngưng kết. Nhóm <strong>O</strong> truyền được cho tất cả các nhóm; Nhóm <strong>AB</strong> có thể nhận được từ tất cả các nhóm.
+        <div className="p-3 bg-[var(--bg-canvas)] border border-[var(--border)] rounded-2xl text-xs text-[var(--fg-muted)] text-left leading-relaxed"> <strong>Nguyên tắc vàng truyền máu:</strong> Không để kháng nguyên trên hồng cầu người cho bị kháng thể trong huyết tương người nhận ngưng kết. Nhóm <strong>O</strong> truyền được cho tất cả các nhóm; Nhóm <strong>AB</strong> có thể nhận được từ tất cả các nhóm.
         </div>
       </div>
     </MinigameShell>

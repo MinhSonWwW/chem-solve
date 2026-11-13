@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Search, Zap, User, LogIn } from 'lucide-react';
-import { Heart, Streak, XPBadge, GemBadge, HeartRefillModal, SubjectSelectorModal, ThemeToggle } from '@/design-system';
+import { Search, Zap, User, LogIn, Leaf } from 'lucide-react';
+import { Heart, Streak, XPBadge, GemBadge, HeartRefillModal, SubjectSelectorModal, ThemeToggle, SubjectIcon } from '@/design-system';
 import { useUserStore } from '@/features/gamification/useUserStore';
 import { useAuthStore } from '@/features/auth/useAuthStore';
 import { sound } from '@/lib/audio';
 import { assetUrl } from '@/lib/utils';
 import { useActiveSubject, useActiveGrade, SUBJECTS } from '@/content/subjects';
+import { GAMIFICATION } from '@/config/gamification';
 
 export const TopHeader: React.FC = () => {
   const { xp, streak, hearts, gems, buyHeartWithGems } = useUserStore();
@@ -17,9 +18,6 @@ export const TopHeader: React.FC = () => {
   const { grade: activeGrade } = useActiveGrade();
   const currentSub = SUBJECTS.find((s) => s.id === activeSubject) || SUBJECTS[0];
   const navigate = useNavigate();
-
-  const brandPrefix =
-    activeSubject === 'physics' ? 'PHY' : activeSubject === 'bio' ? 'BIO' : 'CHEM';
 
   return (
     <>
@@ -37,9 +35,9 @@ export const TopHeader: React.FC = () => {
                 className="w-9 h-9 rounded-xl flex items-center justify-center overflow-hidden border border-white/30 bg-[var(--subject-fill)] shadow-[0_3px_0_0_var(--subject-edge)] group-active:translate-y-[2px] group-active:shadow-none transition-all duration-100"
               >
                 {activeSubject === 'physics' ? (
-                  <Zap className="w-5 h-5 text-white fill-white" />
+                  <Zap className="w-5 h-5 text-[var(--text-primary)] fill-white" />
                 ) : activeSubject === 'bio' ? (
-                  <span className="text-base select-none">🌿</span>
+                  <Leaf className="w-4 h-4" />
                 ) : (
                   <img
                     src={assetUrl('/assets/mascot/atom-idle.png')}
@@ -51,8 +49,8 @@ export const TopHeader: React.FC = () => {
                   />
                 )}
               </div>
-              <span className="hidden sm:inline font-black tracking-wider text-sm sm:text-base text-[var(--text-primary)]">
-                {brandPrefix}<span className="text-[var(--subject-fg)]">-SOLVE</span>
+              <span className="hidden sm:inline font-black text-sm sm:text-base text-[var(--text-primary)]">
+                SCI<span className="text-[var(--subject-fg)]">-SOLVE</span>
               </span>
             </Link>
 
@@ -66,8 +64,8 @@ export const TopHeader: React.FC = () => {
               className="flex items-center gap-1 px-2 py-1.5 rounded-xl bg-[var(--bg-surface-2)] border border-[var(--border)] text-xs font-black shadow-[0_2px_0_0_var(--edge-neutral)] active:translate-y-[2px] active:shadow-none transition-all duration-100 cursor-pointer hover:border-[var(--subject-edge)]"
               title="Đổi môn học"
             >
-              <span className="text-sm shrink-0">{currentSub.icon}</span>
-              <span className="hidden sm:inline text-[11px] text-[var(--subject-fg)]">{currentSub.shortName}</span>
+              <SubjectIcon subject={currentSub.id} className="w-4 h-4 shrink-0 text-[var(--subject-fg)]" />
+              <span className="hidden sm:inline text-xs text-[var(--subject-fg)]">{currentSub.shortName}</span>
             </button>
           </div>
 
@@ -99,9 +97,9 @@ export const TopHeader: React.FC = () => {
                 setShowHeartModal(true);
               }}
               className="cursor-pointer active:scale-90 transition-transform duration-100"
-              title={`${hearts}/5 tim — Bấm để hồi phục!`}
+              title={`Đang có ${hearts}/${GAMIFICATION.hearts.max} tim — Bấm để hồi phục!`}
             >
-              <Heart count={hearts} max={5} />
+              <Heart count={hearts} max={GAMIFICATION.hearts.max} />
             </div>
 
             {/* Search button */}
@@ -153,8 +151,9 @@ export const TopHeader: React.FC = () => {
       <HeartRefillModal
         isOpen={showHeartModal}
         hearts={hearts}
+        maxHearts={GAMIFICATION.hearts.max}
         gems={gems}
-        costPerHeart={150}
+        costPerHeart={GAMIFICATION.gems.costPerHeart}
         onBuyWithGems={() => {
           buyHeartWithGems();
         }}

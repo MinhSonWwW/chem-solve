@@ -4,6 +4,7 @@ import { X, RotateCcw, ArrowLeft, Clock } from 'lucide-react';
 import { Button } from './Button';
 import { Mascot } from './Mascot';
 import { CurrencyIcon } from './CurrencyIcon';
+import { MathText } from './MathText';
 import { sound } from '@/lib/audio';
 
 export interface MinigameShellProps {
@@ -49,24 +50,30 @@ export const MinigameShell: React.FC<MinigameShellProps> = ({
               sound.playClick();
               onExit();
             }}
-            className="p-2 text-[var(--text-tertiary)] hover:text-[var(--text-primary)] rounded-xl bg-[var(--bg-surface)] border border-[var(--border)] hover:bg-[var(--bg-surface-2)] transition-colors cursor-pointer"
+            className="shrink-0 p-2 text-[var(--text-tertiary)] hover:text-[var(--text-primary)] rounded-xl bg-[var(--bg-surface)] border border-[var(--border)] hover:bg-[var(--bg-surface-2)] transition-colors cursor-pointer"
             aria-label="Thoát trò chơi"
           >
             <X className="w-5 h-5" />
           </button>
 
-          <div className="flex items-center gap-2">
-            {icon && <span className="text-xl">{icon}</span>}
-            <div className="text-left">
+          {/* flex-1 + min-w-0 lets long titles/descriptions truncate instead of
+              pushing the score counter off-screen on 360px phones. */}
+          <div className="flex-1 min-w-0 flex items-center gap-2">
+            {icon && <span className="text-xl shrink-0">{icon}</span>}
+            <div className="min-w-0 text-left">
               <h1 className="text-xs font-black text-[var(--text-primary)] leading-tight truncate">
                 {title}
               </h1>
-              <p className="text-[10px] text-[var(--text-secondary)] truncate">{description}</p>
+              {description && (
+                <p className="text-[11px] text-[var(--text-secondary)] truncate">
+                  <MathText text={description} />
+                </p>
+              )}
             </div>
           </div>
 
           {/* Score counter */}
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[var(--bg-surface)] border border-[var(--border)]">
+          <div className="shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[var(--bg-surface)] border border-[var(--border)]">
             <CurrencyIcon type="trophy" size="xs" />
             <span className="text-xs font-black text-[var(--gold-fg)] font-mono">
               {score}
@@ -77,8 +84,8 @@ export const MinigameShell: React.FC<MinigameShellProps> = ({
         {/* Timer Bar (if timed) */}
         {timeLeft != null && (
           <div className="space-y-1">
-            <div className="flex justify-between items-center text-[10px] font-bold">
-              <span className={`flex items-center gap-1 ${isTimeCritical ? 'text-[var(--err-fg)] animate-pulse' : 'text-[var(--text-secondary)]'}`}>
+            <div className="flex justify-between items-center text-[11px] font-bold">
+              <span className={`flex items-center gap-1 ${isTimeCritical ? 'text-[var(--err-fg)] ' : 'text-[var(--text-secondary)]'}`}>
                 <Clock className="w-3 h-3" />
                 Thời gian còn lại:
               </span>
@@ -102,7 +109,7 @@ export const MinigameShell: React.FC<MinigameShellProps> = ({
         {/* Combo Badge (if combo >= 2) */}
         {combo >= 2 && (
           <div className="flex justify-center">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[var(--warn-tint)] border border-[var(--warn-edge)] text-[var(--warn-fg)] text-[11px] font-black">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[var(--warn-tint)] border border-[var(--warn-edge)] text-[var(--warn-fg)] text-xs font-black">
               <CurrencyIcon type="streak" size="xs" />
               <span>Chuỗi x{combo}!</span>
             </div>
@@ -126,7 +133,7 @@ export const MinigameShell: React.FC<MinigameShellProps> = ({
             </div>
 
             <div className="space-y-1">
-              <span className="text-[10px] font-black uppercase tracking-wider text-[var(--ok-fg)]">
+              <span className="text-[11px] font-black text-[var(--ok-fg)]">
                 Hoàn thành vòng chơi!
               </span>
               <h2 className="text-xl font-black text-[var(--text-primary)]">
@@ -137,7 +144,7 @@ export const MinigameShell: React.FC<MinigameShellProps> = ({
             {/* Score & XP Cards */}
             <div className="grid grid-cols-2 gap-3 py-2">
               <div className="p-3 rounded-2xl bg-[var(--bg-surface-2)] border border-[var(--border)] space-y-1">
-                <span className="text-[10px] text-[var(--text-secondary)] font-bold uppercase">
+                <span className="text-[11px] text-[var(--text-secondary)] font-bold ">
                   Điểm số
                 </span>
                 <div className="text-2xl font-black text-[var(--gold-fg)] font-mono flex items-center justify-center gap-1.5">
@@ -146,7 +153,7 @@ export const MinigameShell: React.FC<MinigameShellProps> = ({
                 </div>
               </div>
               <div className="p-3 rounded-2xl bg-[var(--bg-surface-2)] border border-[var(--border)] space-y-1">
-                <span className="text-[10px] text-[var(--text-secondary)] font-bold uppercase">
+                <span className="text-[11px] text-[var(--text-secondary)] font-bold ">
                   Kinh nghiệm
                 </span>
                 <div className="text-2xl font-black text-[var(--gold-fg)] font-mono flex items-center justify-center gap-1.5">
@@ -169,20 +176,20 @@ export const MinigameShell: React.FC<MinigameShellProps> = ({
                 }}
               >
                 <RotateCcw className="w-4 h-4" />
-                <span>CHƠI LẠI VÒNG MỚI</span>
+                <span>Chơi lại vòng mới</span>
               </Button>
               <Button
                 variant="ghost"
                 size="md"
                 fullWidth
-                className="text-slate-400 hover:text-slate-200"
+                className="text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
                 onClick={() => {
                   sound.playClick();
                   onExit();
                 }}
               >
                 <ArrowLeft className="w-4 h-4 mr-1" />
-                QUAY VỀ KHO TRÒ CHƠI
+                Quay về kho trò chơi
               </Button>
             </div>
           </motion.div>

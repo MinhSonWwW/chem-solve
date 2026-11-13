@@ -1,5 +1,5 @@
 import { parseEquation } from '../../chem/parseEquation';
-import { checkBalance, areSimplestCoefficients } from '../../chem/checkBalance';
+import { checkBalance, areSimplestCoefficients, coefficientsGcd } from '../../chem/checkBalance';
 import type { Checker, Verdict } from './types';
 
 export interface EquationAnswerConfig {
@@ -43,10 +43,15 @@ export const equationChecker: Checker<EquationAnswerConfig, number[] | string> =
 
       if (balance.isBalanced) {
         if (!balance.isSimplest || !areSimplestCoefficients(coefs)) {
+          const factor = coefficientsGcd(coefs);
+          const coefPreview = coefs.join(', ');
           return {
             status: 'partial',
             reason: 'not-simplest',
-            message: 'Hệ số của bạn đã cân bằng đúng số nguyên tử, nhưng chưa ở tỉ lệ nguyên tối giản nhất.'
+            message:
+              factor > 1
+                ? `Số nguyên tử hai vế đã bằng nhau, nhưng bộ hệ số (${coefPreview}) chưa tối giản — các hệ số đều chia hết cho ${factor}. Hãy chia tất cả cho ${factor} để được tỉ lệ tối giản nhất!`
+                : 'Hệ số của bạn đã cân bằng đúng số nguyên tử, nhưng chưa ở tỉ lệ nguyên tối giản nhất.'
           };
         }
         return { status: 'correct' };
@@ -97,10 +102,18 @@ export const equationChecker: Checker<EquationAnswerConfig, number[] | string> =
         }
 
         if (!balance.isSimplest) {
+          const parsedCoefs = [
+            ...parsed.reactants.map((r) => r.coefficient),
+            ...parsed.products.map((p) => p.coefficient)
+          ];
+          const factor = coefficientsGcd(parsedCoefs);
           return {
             status: 'partial',
             reason: 'not-simplest',
-            message: 'Phương trình đã cân bằng đúng, nhưng hệ số chưa ở tỉ lệ tối giản.'
+            message:
+              factor > 1
+                ? `Phương trình đã cân bằng đúng số nguyên tử, nhưng các hệ số đều chia hết cho ${factor}. Hãy rút gọn về tỉ lệ nguyên tối giản nhất!`
+                : 'Phương trình đã cân bằng đúng, nhưng hệ số chưa ở tỉ lệ tối giản.'
           };
         }
 

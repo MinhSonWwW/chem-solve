@@ -88,11 +88,11 @@ export const TitrationLabGame: React.FC<{ onExit: () => void }> = ({ onExit }) =
 
   if (diff >= -0.3 && diff <= 0.3) {
     flaskColor = 'rgba(244, 114, 182, 0.55)'; // light baby pink
-    colorStatusText = '🌸 Hồng nhạt bền trong 30s (Điểm tương đương hoàn hảo!)';
+    colorStatusText = 'Hồng nhạt bền trong 30s (Điểm tương đương hoàn hảo!)';
     isPerfectZone = true;
   } else if (diff > 0.3) {
     flaskColor = 'rgba(219, 39, 119, 0.9)'; // strong magenta
-    colorStatusText = '⚠️ Hồng tím đậm (Quá chuẩn độ do dư thừa base NaOH!)';
+    colorStatusText = 'Hồng tím đậm (Quá chuẩn độ do dư thừa base NaOH!)';
     isOvershot = true;
   }
 
@@ -217,7 +217,7 @@ export const TitrationLabGame: React.FC<{ onExit: () => void }> = ({ onExit }) =
 
   return (
     <MinigameShell
-      title="Thí Nghiệm Chuẩn Độ Acid - Base"
+      title="Thí nghiệm chuẩn độ acid - Base"
       description="Thao tác buret & chỉ thị phenolphtalein chuẩn xác!"
       icon={<Pipette className="w-5 h-5 text-[var(--chem-fg)]" />}
       timeLeft={timeLeft}
@@ -233,7 +233,7 @@ export const TitrationLabGame: React.FC<{ onExit: () => void }> = ({ onExit }) =
         {/* Sample Target Card */}
         <div className="p-3.5 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] flex items-center justify-between">
           <div className="space-y-0.5">
-            <span className="text-[10px] font-black uppercase tracking-wider text-[var(--chem-fg)]">
+            <span className="text-[11px] font-black text-[var(--chem-fg)]">
               Mẫu thử {currentCaseIndex + 1}
             </span>
             <h2 className="text-sm font-black text-[var(--text-primary)]">
@@ -244,7 +244,7 @@ export const TitrationLabGame: React.FC<{ onExit: () => void }> = ({ onExit }) =
             </p>
           </div>
           <div className="text-right">
-            <span className="text-[10px] font-bold text-[var(--text-tertiary)] block">Thể tích buret</span>
+            <span className="text-[11px] font-bold text-[var(--text-tertiary)] block">Thể tích buret</span>
             <span className="text-base font-black font-mono text-[var(--chem-fg)]">
               {buretVolume.toFixed(2)} mL
             </span>
@@ -255,7 +255,7 @@ export const TitrationLabGame: React.FC<{ onExit: () => void }> = ({ onExit }) =
         <div className="relative p-5 rounded-3xl bg-[var(--bg-surface-2)] border border-[var(--border)] overflow-hidden flex flex-col items-center justify-center min-h-[220px]">
           {/* Buret apparatus column */}
           <div className="relative flex flex-col items-center w-28">
-            <div className="text-[10px] font-black text-[var(--text-tertiary)] mb-1">BURET 25 mL</div>
+            <div className="text-[11px] font-black text-[var(--text-tertiary)] mb-1">BURET 25 mL</div>
             {/* Glass tube */}
             <div className="w-6 h-28 border-2 border-[var(--text-secondary)]/40 rounded-t-md bg-white/5 relative overflow-hidden flex flex-col justify-end">
               {/* Liquid inside buret */}
@@ -303,14 +303,14 @@ export const TitrationLabGame: React.FC<{ onExit: () => void }> = ({ onExit }) =
               style={{ backgroundColor: flaskColor }}
             >
               <div className="w-full text-center pb-2">
-                <span className="text-[10px] font-black text-[var(--text-primary)] opacity-80">
+                <span className="text-[11px] font-black text-[var(--text-primary)] opacity-80">
                   {currentCase.analyteVolume + buretVolume > 0
                     ? `${(currentCase.analyteVolume + buretVolume).toFixed(1)} mL`
                     : ''}
                 </span>
               </div>
             </div>
-            <span className="text-[10px] font-bold text-[var(--text-tertiary)] mt-1">Bình tam giác + Phenolphtalein</span>
+            <span className="text-[11px] font-bold text-[var(--text-tertiary)] mt-1">Bình tam giác + Phenolphtalein</span>
           </div>
 
           {/* Real-time Indicator status alert */}
@@ -367,7 +367,7 @@ export const TitrationLabGame: React.FC<{ onExit: () => void }> = ({ onExit }) =
               onClick={handleLockBuret}
               className="font-black bg-[var(--chem-fill)] text-white shadow-md flex items-center justify-center gap-2"
             >
-              <span>KHÓA BURET & CHỐT ĐIỂM TƯƠNG ĐƯƠNG</span>
+              <span>Khóa buret & chốt điểm tương đương</span>
             </Button>
           </div>
         )}
@@ -382,7 +382,7 @@ export const TitrationLabGame: React.FC<{ onExit: () => void }> = ({ onExit }) =
             <div className="text-xs font-bold text-[var(--text-secondary)] leading-relaxed">
               {feedback}
               {calculatedChoice != null && (
-                <div className="text-[11px] text-[var(--text-tertiary)] mt-1 font-mono">
+                <div className="text-xs text-[var(--text-tertiary)] mt-1 font-mono">
                   Lựa chọn của bạn: {calculatedChoice.toFixed(2)} M
                 </div>
               )}
@@ -391,7 +391,7 @@ export const TitrationLabGame: React.FC<{ onExit: () => void }> = ({ onExit }) =
             <div className="p-3 rounded-xl bg-[var(--bg-surface-2)] border border-[var(--border)] text-xs text-[var(--text-primary)]">
               <div className="font-bold text-[var(--chem-fg)] mb-1">Công thức tính nồng độ:</div>
               <MathText text="$C_{\text{acid}} = \frac{C_{\text{NaOH}} \times V_{\text{NaOH}}}{V_{\text{acid}}}$" />
-              <div className="mt-1 text-[11px] text-[var(--text-tertiary)]">
+              <div className="mt-1 text-xs text-[var(--text-tertiary)]">
                 <MathText text={`Với $V_{\\text{NaOH}} = ${buretVolume.toFixed(2)}\\text{ mL}$, $C_{\\text{NaOH}} = ${currentCase.titrantMolarity}\\text{ M}$, $V_{\\text{acid}} = ${currentCase.analyteVolume}\\text{ mL}$`} />
               </div>
             </div>
@@ -424,7 +424,7 @@ export const TitrationLabGame: React.FC<{ onExit: () => void }> = ({ onExit }) =
             <div className="text-xs font-bold text-[var(--text-secondary)] leading-relaxed">
               {feedback}
               {calculatedChoice != null && (
-                <div className="text-[11px] text-[var(--text-tertiary)] mt-1 font-mono">
+                <div className="text-xs text-[var(--text-tertiary)] mt-1 font-mono">
                   Lựa chọn của bạn: {calculatedChoice.toFixed(2)} M
                 </div>
               )}
@@ -437,7 +437,7 @@ export const TitrationLabGame: React.FC<{ onExit: () => void }> = ({ onExit }) =
               onClick={handleNextCase}
               className="font-black bg-[var(--chem-fill)] text-white shadow-md flex items-center justify-center gap-2"
             >
-              <span>CHUYỂN SANG MẪU THỬ TIẾP THEO</span>
+              <span>Chuyển sang mẫu thử tiếp theo</span>
               <Sparkles className="w-4 h-4" />
             </Button>
           </motion.div>

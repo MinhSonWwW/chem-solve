@@ -102,7 +102,7 @@ export const McqPanel: React.FC<McqPanelProps> = ({
           } else {
             classes = 'opacity-40 border border-[var(--border)] bg-[var(--bg-canvas)] text-[var(--text-tertiary)]';
             indicator = (
-              <div className="w-6 h-6 rounded-full border border-[var(--border)] text-[10px] text-[var(--text-tertiary)] flex items-center justify-center font-bold">
+              <div className="w-6 h-6 rounded-full border border-[var(--border)] text-[11px] text-[var(--text-tertiary)] flex items-center justify-center font-bold">
                 {letter}
               </div>
             );
@@ -120,7 +120,7 @@ export const McqPanel: React.FC<McqPanelProps> = ({
             classes =
               'bg-[var(--bg-surface)] border border-[var(--border)] hover:border-[var(--subject-edge)] text-[var(--text-primary)]';
             indicator = (
-              <div className="w-6 h-6 rounded-full border border-[var(--border)] text-[11px] text-[var(--text-secondary)] flex items-center justify-center font-black">
+              <div className="w-6 h-6 rounded-full border border-[var(--border)] text-xs text-[var(--text-secondary)] flex items-center justify-center font-black">
                 {letter}
               </div>
             );
@@ -131,25 +131,25 @@ export const McqPanel: React.FC<McqPanelProps> = ({
           <motion.div
             key={option.id}
             onClick={() => handleSelect(option.id)}
-            className={`p-3.5 rounded-2xl flex items-center justify-between cursor-pointer select-none transition-all ${classes}`}
+            className={`p-3.5 rounded-2xl flex items-center justify-between gap-3 cursor-pointer select-none transition-all ${classes}`}
             whileTap={!disabled ? { scale: 0.98 } : undefined}
           >
-            <div className="flex items-center gap-3">
-              <span className="font-bold text-sm text-[var(--text-primary)]">
+            <div className="flex-1 min-w-0 flex items-center gap-3">
+              <span className="font-bold text-sm text-[var(--text-primary)] break-words">
                 <MathText text={option.label} />
               </span>
               {isChecked && isVerdictCorrect && correct && (
-                <span className="text-[10px] font-black uppercase tracking-wider bg-[var(--ok-tint)] text-[var(--ok-fg)] px-2 py-0.5 rounded-md border border-[var(--ok-edge)]">
+                <span className="text-[11px] font-black bg-[var(--ok-tint)] text-[var(--ok-fg)] px-2 py-0.5 rounded-md border border-[var(--ok-edge)]">
                   Chính xác
                 </span>
               )}
               {isChecked && isSelected && !correct && (
-                <span className="text-[10px] font-black uppercase tracking-wider bg-[var(--err-tint)] text-[var(--err-fg)] px-2 py-0.5 rounded-md border border-[var(--err-edge)]">
+                <span className="text-[11px] font-black bg-[var(--err-tint)] text-[var(--err-fg)] px-2 py-0.5 rounded-md border border-[var(--err-edge)]">
                   Bạn đã chọn
                 </span>
               )}
             </div>
-            {indicator}
+            <span className="shrink-0">{indicator}</span>
           </motion.div>
         );
       })}

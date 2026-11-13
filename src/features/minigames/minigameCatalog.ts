@@ -22,7 +22,7 @@ export const MINIGAME_CATALOG: Record<string, MinigameConfig> = {
   // ─── 1. HÓA HỌC (CHEMISTRY) ───
   'periodic-guess': {
     id: 'periodic-guess',
-    title: 'Đoán Ô Nguyên Tố Hóa Học',
+    title: 'Đoán Ô Nguyên Tố Hóa học',
     subject: 'chem',
     grade: 7,
     desc: 'Đoán tên và ký hiệu nguyên tố qua số hiệu nguyên tử Z, chu kì & tính chất!',
@@ -139,7 +139,7 @@ export const MINIGAME_CATALOG: Record<string, MinigameConfig> = {
 
   'precipitate-catcher': {
     id: 'precipitate-catcher',
-    title: 'Bắt Kết Tủa Hóa Học',
+    title: 'Bắt Kết Tủa Hóa học',
     subject: 'chem',
     grade: 8,
     desc: 'Nhận biết màu sắc và bản chất hóa học của các kết tủa vô cơ kinh điển!',
@@ -225,7 +225,7 @@ export const MINIGAME_CATALOG: Record<string, MinigameConfig> = {
       },
       {
         id: 'mr-5',
-        scenario: 'Nhúng một sợi dây bạc ($Ag$) vào dung dịch đồng sunfat $CuSO_4$:',
+        scenario: 'Nhúng một sợi dây bạc ($Ag$) vào dung dịch copper(II) sulfate $CuSO_4$:',
         options: ['Không có hiện tượng gì xảy ra', 'Bạc tan dần đẩy đồng ra', 'Dung dịch nhạt màu xanh', 'Có kết tủa đen'],
         correctIndex: 0,
         explanation: 'Ag đứng sau Cu nên không đẩy được Cu ra khỏi dung dịch muối.',
@@ -996,7 +996,7 @@ export const MINIGAME_CATALOG: Record<string, MinigameConfig> = {
       {
         id: 'et-4',
         scenario: 'Chất nào sau đây khi hòa tan vào nước tạo dung dịch KHÔNG dẫn điện (đèn tắt hoàn toàn)?',
-        options: ['Đường mía saccharose ($C_{12}H_{22}O_{11}$)', 'Muối ăn $NaCl$', 'Vôi tôi $Ca(OH)_2$', 'Acid sunfuric $H_2SO_4$'],
+        options: ['Đường mía saccharose ($C_{12}H_{22}O_{11}$)', 'Muối ăn $NaCl$', 'Vôi tôi $Ca(OH)_2$', 'Sulfuric acid $H_2SO_4$'],
         correctIndex: 0,
         explanation: 'Đường tan thành các phân tử trung hòa không mang điện nên dung dịch không dẫn điện.',
       },
@@ -1080,7 +1080,7 @@ export const MINIGAME_CATALOG: Record<string, MinigameConfig> = {
         scenario: 'Tôn lợp nhà là kim loại sắt ($Fe$) được tráng bảo vệ bằng lớp kim loại nào?',
         options: ['Kẽm ($Zn$)', 'Đồng ($Cu$)', 'Chì ($Pb$)', 'Vàng ($Au$)'],
         correctIndex: 0,
-        explanation: 'Tôn chính là sắt mạ kẽm (galvanized steel), kẽm tạo lớp oxit bảo vệ bền vững.',
+        explanation: 'Tôn chính là sắt mạ kẽm (galvanized steel), kẽm tạo lớp oxide bảo vệ bền vững.',
       },
     ],
   },
@@ -1132,7 +1132,7 @@ export const MINIGAME_CATALOG: Record<string, MinigameConfig> = {
     subject: 'chem',
     grade: 9,
     desc: 'Phân loại phản ứng tỏa nhiệt (giải phóng năng lượng) và thu nhiệt!',
-    badge: 'Nhiệt Hóa Học',
+    badge: 'Nhiệt Hóa học',
     colorKey: 'emerald',
     timeSeconds: 50,
     questions: [

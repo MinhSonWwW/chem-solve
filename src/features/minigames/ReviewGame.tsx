@@ -177,7 +177,7 @@ export const ReviewGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
             {currentQ && (
               <div className="p-5 rounded-3xl bg-slate-900 border-2 border-slate-800 shadow-xl min-h-[160px] flex flex-col justify-between">
                 <div className="space-y-2">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--chem-fg)]">
+                  <span className="text-[11px] font-bold text-[var(--chem-fg)]">
                     {currentQ.topic}
                   </span>
                   <p className="text-base font-bold text-slate-100 leading-snug">
@@ -201,7 +201,7 @@ export const ReviewGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                         : '✗ Chưa chính xác! Thẻ quay về Hộp 1 để ôn lại.'}
                     </div>
                     <div className="text-slate-300 font-normal">
-                      💡 {currentQ.explanation}
+                      {currentQ.explanation}
                     </div>
                   </motion.div>
                 )}
@@ -223,7 +223,7 @@ export const ReviewGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                       : 'border-emerald-500/50 bg-emerald-950/30 text-emerald-400 hover:bg-emerald-950/50'
                   } ${selectedAns !== null && selectedAns !== true ? 'opacity-40' : ''}`}
                 >
-                  <Check className="w-5 h-5" /> ĐÚNG
+                  <Check className="w-5 h-5" /> Đúng
                 </motion.button>
                 <motion.button
                   whileTap={{ scale: 0.96 }}

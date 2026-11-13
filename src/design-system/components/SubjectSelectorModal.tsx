@@ -56,8 +56,8 @@ export const SubjectSelectorModal: React.FC<SubjectSelectorModalProps> = ({
                 <Compass className="w-5 h-5 text-[var(--chem-fg)]" />
               </div>
               <div>
-                <span className="text-[10px] font-black uppercase tracking-wider text-[var(--chem-fg)] block">
-                  KHOA HỌC TỰ NHIÊN THCS
+                <span className="text-[11px] font-black text-[var(--chem-fg)] block">
+                  Khoa học tự nhiên THCS
                 </span>
                 <h2 className="text-base sm:text-lg font-black text-[var(--text-primary)] leading-tight">
                   Chọn môn học
@@ -128,7 +128,7 @@ export const SubjectSelectorModal: React.FC<SubjectSelectorModalProps> = ({
                             {sub.name}
                           </h3>
                           <span
-                            className="text-[10px] font-black uppercase px-2 py-0.5 rounded-md tracking-wider border"
+                            className="text-[11px] font-black px-2 py-0.5 rounded-md border"
                             style={{
                               backgroundColor: `${sub.accentColor}25`,
                               color: sub.accentColor,
@@ -148,7 +148,7 @@ export const SubjectSelectorModal: React.FC<SubjectSelectorModalProps> = ({
                           {sub.topics.map((t, idx) => (
                             <span
                               key={idx}
-                              className="text-[10px] font-bold text-[var(--text-tertiary)] bg-[var(--bg-canvas)] px-2 py-0.5 rounded-md border border-[var(--border)]"
+                              className="text-[11px] font-bold text-[var(--text-tertiary)] bg-[var(--bg-canvas)] px-2 py-0.5 rounded-md border border-[var(--border)]"
                             >
                               {t}
                             </span>
@@ -161,7 +161,7 @@ export const SubjectSelectorModal: React.FC<SubjectSelectorModalProps> = ({
                     <div className="shrink-0 pt-1">
                       {isActive ? (
                         <div
-                          className="w-7 h-7 rounded-xl flex items-center justify-center text-white"
+                          className="w-7 h-7 rounded-xl flex items-center justify-center text-[var(--text-primary)]"
                           style={{
                             backgroundColor: sub.accentColor,
                             boxShadow: `0 2px 0 0 ${sub.borderColor}`,
@@ -177,7 +177,7 @@ export const SubjectSelectorModal: React.FC<SubjectSelectorModalProps> = ({
                           Chọn
                         </span>
                       ) : (
-                        <span className="text-[10px] font-black text-[var(--text-tertiary)] uppercase">
+                        <span className="text-[11px] font-black text-[var(--text-tertiary)] ">
                           Sắp có
                         </span>
                       )}

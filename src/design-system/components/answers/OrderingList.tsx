@@ -160,7 +160,7 @@ export const OrderingList: React.FC<OrderingListProps> = ({
     <div className="space-y-2.5">
       {/* Drag instruction notice */}
       {!disabled && !isChecked && (
-        <div className="flex items-center gap-1.5 text-[11px] font-bold text-[var(--text-tertiary)] px-1">
+        <div className="flex items-center gap-1.5 text-xs font-bold text-[var(--text-tertiary)] px-1">
           <GripVertical className="w-3.5 h-3.5 text-[var(--subject-fg)]" />
           <span>Giữ và kéo thả các thẻ để sắp xếp theo đúng thứ tự</span>
         </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Search, Atom, Scale, Calculator, Droplets, Zap } from 'lucide-react';
+import { X, Search, Atom, Scale, Calculator, Droplets, Zap, FlaskConical } from 'lucide-react';
 import { Formula } from './Formula';
 
 export interface QuickReferenceDrawerProps {
@@ -222,15 +222,15 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
           {/* Header */}
           <div className="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-900/95">
             <div className="flex items-center gap-2.5">
-              <span className="text-2xl">{isPhy ? '⚡' : '🧪'}</span>
+              {isPhy ? <Zap className="w-6 h-6" /> : <FlaskConical className="w-6 h-6" />}
               <div>
                 <h3 className="text-base font-black text-slate-100 flex items-center gap-2">
                   {isPhy ? 'Sổ tay tra cứu Vật lý' : 'Sổ tay tra cứu Hóa học'}
-                  <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${isPhy ? 'bg-amber-500/20 text-amber-300 border-amber-500/30' : 'bg-[var(--chem-tint)] text-[var(--chem-fg)] border-[var(--chem-edge)]'}`}>
+                  <span className={`text-[11px] font-bold px-2 py-0.5 rounded-full border ${isPhy ? 'bg-amber-500/20 text-[var(--gold-fg)] border-amber-500/30' : 'bg-[var(--chem-tint)] text-[var(--chem-fg)] border-[var(--chem-edge)]'}`}>
                     THCS 6-9
                   </span>
                 </h3>
-                <p className="text-[11px] text-slate-400 font-medium">
+                <p className="text-xs text-slate-400 font-medium">
                   {isPhy ? 'Công thức Cơ - Nhiệt - Điện, Hệ đơn vị SI & Hằng số vật lý' : 'Nguyên tử khối, Bảng tính tan, Dãy hoạt động và Công thức'}
                 </p>
               </div>
@@ -245,12 +245,12 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
 
           {/* Navigation Tabs */}
           {isPhy ? (
-            <div className="flex border-b border-slate-800 bg-slate-950/60 p-1.5 gap-1 text-[11px] font-bold select-none">
+            <div className="flex border-b border-slate-800 bg-slate-950/60 p-1.5 gap-1 text-xs font-bold select-none">
               <button
                 onClick={() => setPhyTab('phy-formulas')}
                 className={`py-2 px-3 rounded-xl flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer ${
                   phyTab === 'phy-formulas'
-                    ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40'
+                    ? 'bg-amber-500/20 text-[var(--gold-fg)] border border-amber-500/40'
                     : 'text-slate-400 hover:text-slate-200'
                 }`}
               >
@@ -261,7 +261,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                 onClick={() => setPhyTab('phy-units')}
                 className={`py-2 px-3 rounded-xl flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer ${
                   phyTab === 'phy-units'
-                    ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40'
+                    ? 'bg-amber-500/20 text-[var(--gold-fg)] border border-amber-500/40'
                     : 'text-slate-400 hover:text-slate-200'
                 }`}
               >
@@ -272,7 +272,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                 onClick={() => setPhyTab('phy-constants')}
                 className={`py-2 px-3 rounded-xl flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer ${
                   phyTab === 'phy-constants'
-                    ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40'
+                    ? 'bg-amber-500/20 text-[var(--gold-fg)] border border-amber-500/40'
                     : 'text-slate-400 hover:text-slate-200'
                 }`}
               >
@@ -281,7 +281,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
               </button>
             </div>
           ) : (
-            <div className="flex border-b border-slate-800 bg-slate-950/60 p-1.5 gap-1 text-[11px] font-bold overflow-x-auto select-none no-scrollbar">
+            <div className="flex border-b border-slate-800 bg-slate-950/60 p-1.5 gap-1 text-xs font-bold overflow-x-auto select-none no-scrollbar">
               <button
                 onClick={() => setChemTab('elements')}
                 className={`py-2 px-3 rounded-xl flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer ${
@@ -381,12 +381,12 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                   <div key={i} className="p-3 rounded-2xl bg-slate-950/60 border border-slate-800 space-y-1.5 hover:border-amber-500/40 transition-colors">
                     <div className="flex items-center justify-between gap-2">
                       <span className="text-xs font-bold text-slate-200">{f.name}</span>
-                      <span className="text-[10px] font-black uppercase px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/30 shrink-0">
+                      <span className="text-[11px] font-black px-2 py-0.5 rounded-full bg-amber-500/10 text-[var(--gold-fg)] border border-amber-500/30 shrink-0">
                         {f.category}
                       </span>
                     </div>
-                    <div className="text-sm font-black text-amber-300 font-mono tracking-wide">{f.eq}</div>
-                    <div className="text-[11px] text-slate-400 leading-relaxed">{f.note}</div>
+                    <div className="text-sm font-black text-[var(--gold-fg)] font-mono tracking-wide">{f.eq}</div>
+                    <div className="text-xs text-slate-400 leading-relaxed">{f.note}</div>
                   </div>
                 ))}
                 {filteredPhyFormulas.length === 0 && (
@@ -399,14 +399,13 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
 
             {isPhy && phyTab === 'phy-units' && (
               <div className="space-y-2">
-                <div className="p-3 rounded-2xl bg-amber-950/20 border border-amber-500/30 text-xs text-amber-200 leading-relaxed font-medium">
-                  💡 <strong>Quy tắc giải toán Vật lý:</strong> Luôn đổi tất cả các đại lượng về đơn vị chuẩn trong hệ SI trước khi thế số vào công thức tính toán.
+                <div className="p-3 rounded-2xl bg-amber-950/20 border border-amber-500/30 text-xs text-[var(--gold-fg)] leading-relaxed font-medium"> <strong>Quy tắc giải toán Vật lý:</strong> Luôn đổi tất cả các đại lượng về đơn vị chuẩn trong hệ SI trước khi thế số vào công thức tính toán.
                 </div>
                 {PHYSICS_UNITS.map((u, i) => (
                   <div key={i} className="p-3 rounded-2xl bg-slate-950/60 border border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                     <div>
                       <span className="text-xs font-bold text-slate-200">{u.qty}</span>
-                      <div className="text-[11px] text-amber-300 font-mono mt-0.5">{u.conv}</div>
+                      <div className="text-xs text-[var(--gold-fg)] font-mono mt-0.5">{u.conv}</div>
                     </div>
                     <span className="text-xs font-mono font-black text-slate-300 bg-slate-800/80 px-2.5 py-1 rounded-xl shrink-0 self-start sm:self-auto border border-slate-700">
                       SI: {u.si}
@@ -422,12 +421,12 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                   <div key={i} className="p-3 rounded-2xl bg-slate-950/60 border border-slate-800 space-y-1">
                     <div className="flex items-center justify-between">
                       <span className="text-xs font-bold text-slate-200">{c.name}</span>
-                      <span className="text-xs font-mono font-black text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded-lg border border-amber-500/30">
+                      <span className="text-xs font-mono font-black text-[var(--gold-fg)] bg-amber-500/10 px-2 py-0.5 rounded-lg border border-amber-500/30">
                         {c.sym}
                       </span>
                     </div>
-                    <div className="text-sm font-black text-emerald-400 font-mono">{c.val}</div>
-                    <div className="text-[11px] text-slate-400">{c.note}</div>
+                    <div className="text-sm font-black text-[var(--ok-fg)] font-mono">{c.val}</div>
+                    <div className="text-xs text-slate-400">{c.note}</div>
                   </div>
                 ))}
               </div>
@@ -447,14 +446,14 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                         {el.sym}
                       </div>
                       <div className="text-xs font-bold text-slate-200">{el.name}</div>
-                      <div className="text-[10px] text-slate-400 italic">({el.vnName})</div>
-                      <div className="text-[10px] text-slate-500 font-semibold mt-0.5">HT: {el.val}</div>
+                      <div className="text-[11px] text-slate-400 italic">({el.vnName})</div>
+                      <div className="text-[11px] text-slate-500 font-semibold mt-0.5">HT: {el.val}</div>
                     </div>
                     <div className="text-right">
-                      <div className="text-sm font-black text-amber-300 font-mono">
+                      <div className="text-sm font-black text-[var(--gold-fg)] font-mono">
                         {el.m}
                       </div>
-                      <div className="text-[9px] text-slate-500 uppercase font-bold">amu</div>
+                      <div className="text-[11px] text-slate-500 font-bold">amu</div>
                     </div>
                   </div>
                 ))}
@@ -465,18 +464,18 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
             {!isPhy && chemTab === 'solubility' && (
               <div className="space-y-3">
                 {/* Legend bar */}
-                <div className="flex flex-wrap gap-2 text-[11px] p-2.5 rounded-xl bg-slate-950/70 border border-slate-800">
-                  <span className="inline-flex items-center gap-1 font-bold text-emerald-300">
-                    <span className="w-3 h-3 rounded bg-emerald-500/20 border border-emerald-500/60 inline-flex items-center justify-center text-[9px]">T</span> Tan
+                <div className="flex flex-wrap gap-2 text-xs p-2.5 rounded-xl bg-slate-950/70 border border-slate-800">
+                  <span className="inline-flex items-center gap-1 font-bold text-[var(--ok-fg)]">
+                    <span className="w-3 h-3 rounded bg-emerald-500/20 border border-emerald-500/60 inline-flex items-center justify-center text-[11px]">T</span> Tan
                   </span>
-                  <span className="inline-flex items-center gap-1 font-bold text-rose-300">
-                    <span className="w-3 h-3 rounded bg-rose-500/20 border border-rose-500/60 inline-flex items-center justify-center text-[9px]">K</span> Không tan (↓)
+                  <span className="inline-flex items-center gap-1 font-bold text-[var(--err-fg)]">
+                    <span className="w-3 h-3 rounded bg-rose-500/20 border border-rose-500/60 inline-flex items-center justify-center text-[11px]">K</span> Không tan (↓)
                   </span>
-                  <span className="inline-flex items-center gap-1 font-bold text-amber-300">
-                    <span className="w-3 h-3 rounded bg-amber-500/20 border border-amber-500/60 inline-flex items-center justify-center text-[9px]">I</span> Ít tan
+                  <span className="inline-flex items-center gap-1 font-bold text-[var(--gold-fg)]">
+                    <span className="w-3 h-3 rounded bg-amber-500/20 border border-amber-500/60 inline-flex items-center justify-center text-[11px]">I</span> Ít tan
                   </span>
                   <span className="inline-flex items-center gap-1 font-bold text-slate-400">
-                    <span className="w-3 h-3 rounded bg-slate-800 border border-slate-700 inline-flex items-center justify-center text-[9px]">-</span> Không tồn tại / bay hơi
+                    <span className="w-3 h-3 rounded bg-slate-800 border border-slate-700 inline-flex items-center justify-center text-[11px]">-</span> Không tồn tại / bay hơi
                   </span>
                 </div>
 
@@ -484,7 +483,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                 <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-950/50 shadow-inner">
                   <table className="w-full text-xs text-center border-collapse">
                     <thead>
-                      <tr className="bg-slate-900 border-b border-slate-800 font-black text-slate-300 text-[11px]">
+                      <tr className="bg-slate-900 border-b border-slate-800 font-black text-slate-300 text-xs">
                         <th className="p-2.5 text-left sticky left-0 bg-slate-900 z-10">Cation</th>
                         <th className="p-2 border-l border-slate-800"><Formula formula="OH^-" /></th>
                         <th className="p-2 border-l border-slate-800"><Formula formula="Cl^-" /></th>
@@ -522,7 +521,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                                   {cell.val}
                                 </span>
                                 {cell.color && (
-                                  <div className="text-[9px] font-sans text-slate-400 scale-90 -mt-0.5 truncate max-w-15 mx-auto">
+                                  <div className="text-[11px] font-sans text-slate-400 scale-90 -mt-0.5 truncate max-w-15 mx-auto">
                                     {cell.color}
                                   </div>
                                 )}
@@ -536,8 +535,8 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                 </div>
 
                 <div className="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 leading-relaxed">
-                  <div className="font-bold text-amber-300 mb-1">💡 Mẹo nhớ nhanh tính tan:</div>
-                  <ul className="list-disc list-inside space-y-1 text-[11px] text-slate-400">
+                  <div className="font-bold text-[var(--gold-fg)] mb-1">Mẹo nhớ nhanh tính tan:</div>
+                  <ul className="list-disc list-inside space-y-1 text-xs text-slate-400">
                     <li>Tất cả muối của <strong className="text-slate-200">Na, K, <Formula formula="NH4^+" /></strong> và muối <strong className="text-slate-200">Nitrate (<Formula formula="NO3^-" />)</strong> đều <strong>tan hoàn toàn</strong>.</li>
                     <li>Muối <strong className="text-slate-200">Chloride (<Formula formula="Cl^-" />)</strong>: chỉ có <strong><Formula formula="AgCl" /> ↓ trắng</strong> không tan; <Formula formula="PbCl2" /> ít tan.</li>
                     <li>Muối <strong className="text-slate-200">Sulfate (<Formula formula="SO4^2-" />)</strong>: có <strong><Formula formula="BaSO4" /> ↓ trắng</strong> không tan; <Formula formula="CaSO4" />, <Formula formula="Ag2SO4" /> ít tan.</li>
@@ -551,9 +550,9 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
             {!isPhy && chemTab === 'reactivity' && (
               <div className="space-y-3">
                 {/* Mnemonic Banner */}
-                <div className="p-3 rounded-2xl bg-linear-to-r from-cyan-950/60 to-blue-950/60 border border-cyan-700/50">
+                <div className="p-3 rounded-2xl bg-[var(--chem-tint)] border border-[var(--border)]">
                   <div className="text-xs font-black text-[var(--chem-fg)] mb-1 flex items-center gap-1.5">
-                    <Zap className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                    <Zap className="w-3.5 h-3.5 text-[var(--gold-fg)] shrink-0" />
                     <span>Câu thần chú học thuộc lòng:</span>
                   </div>
                   <p className="text-xs font-medium text-slate-200 leading-relaxed italic">
@@ -563,9 +562,9 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
 
                 {/* Series horizontal cards */}
                 <div className="p-3 rounded-2xl bg-slate-950/60 border border-slate-800">
-                  <div className="flex items-center justify-between text-[11px] font-bold text-slate-400 mb-2">
-                    <span className="text-rose-400 font-extrabold">← Kim loại hoạt động MẠNH</span>
-                    <span className="text-blue-400 font-extrabold">Kim loại hoạt động YẾU →</span>
+                  <div className="flex items-center justify-between text-xs font-bold text-slate-400 mb-2">
+                    <span className="text-[var(--err-fg)] font-extrabold">← Kim loại hoạt động mạnh</span>
+                    <span className="text-[var(--chem-fg)] font-extrabold">Kim loại hoạt động YẾU →</span>
                   </div>
 
                   <div className="grid grid-cols-4 sm:grid-cols-8 gap-1.5">
@@ -581,7 +580,7 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                         <div className="text-base font-black font-mono leading-none">
                           {m.sym}
                         </div>
-                        <div className="text-[10px] font-extrabold text-[var(--chem-fg)] mt-1">
+                        <div className="text-[11px] font-extrabold text-[var(--chem-fg)] mt-1">
                           {m.mnemonic}
                         </div>
                       </div>
@@ -592,22 +591,22 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                 {/* 3 Golden Rules */}
                 <div className="space-y-2">
                   <div className="p-2.5 rounded-xl bg-slate-900/60 border border-slate-800 text-xs">
-                    <span className="font-black text-rose-400">1. Tác dụng với nước ở t° thường:</span>
-                    <p className="text-[11px] text-slate-300 mt-0.5">
+                    <span className="font-black text-[var(--err-fg)]">1. Tác dụng với nước ở t° thường:</span>
+                    <p className="text-xs text-slate-300 mt-0.5">
                       Chỉ có các kim loại mạnh: <strong>K, Na, Ca, Ba</strong> phản ứng mạnh với nước tạo dung dịch kiềm (base) và giải phóng khí <Formula formula="H2" />.
                     </p>
                   </div>
 
                   <div className="p-2.5 rounded-xl bg-slate-900/60 border border-slate-800 text-xs">
-                    <span className="font-black text-amber-400">2. Tác dụng với dung dịch Acid (HCl, <Formula formula="H2SO4" /> loãng):</span>
-                    <p className="text-[11px] text-slate-300 mt-0.5">
+                    <span className="font-black text-[var(--gold-fg)]">2. Tác dụng với dung dịch Acid (HCl, <Formula formula="H2SO4" /> loãng):</span>
+                    <p className="text-xs text-slate-300 mt-0.5">
                       Kim loại đứng <strong>trước H</strong> (từ K đến Pb) phản ứng giải phóng khí <Formula formula="H2" />. Các kim loại đứng <strong>sau H (Cu, Ag, Pt, Au) không phản ứng</strong>.
                     </p>
                   </div>
 
                   <div className="p-2.5 rounded-xl bg-slate-900/60 border border-slate-800 text-xs">
-                    <span className="font-black text-emerald-400">3. Kim loại đẩy nhau ra khỏi dung dịch muối:</span>
-                    <p className="text-[11px] text-slate-300 mt-0.5">
+                    <span className="font-black text-[var(--ok-fg)]">3. Kim loại đẩy nhau ra khỏi dung dịch muối:</span>
+                    <p className="text-xs text-slate-300 mt-0.5">
                       Kim loại đứng trước (từ Mg trở đi) <strong>đẩy kim loại đứng sau</strong> ra khỏi dung dịch muối của chúng. (Ví dụ: Fe + <Formula formula="CuSO4" /> → <Formula formula="FeSO4" /> + Cu ↓).
                     </p>
                   </div>
@@ -624,13 +623,13 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                     className="p-3 rounded-2xl bg-slate-950/60 border border-slate-800 flex items-center justify-between"
                   >
                     <div>
-                      <div className="text-sm font-black text-amber-400 font-mono">
+                      <div className="text-sm font-black text-[var(--gold-fg)] font-mono">
                         {rad.group}
                       </div>
-                      <div className="text-[11px] text-slate-300 font-bold">{rad.name}</div>
-                      <div className="text-[10px] text-slate-500 font-mono">M = {rad.formulaM} g/mol</div>
+                      <div className="text-xs text-slate-300 font-bold">{rad.name}</div>
+                      <div className="text-[11px] text-slate-500 font-mono">M = {rad.formulaM} g/mol</div>
                     </div>
-                    <div className="px-2.5 py-1 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-300 font-black text-xs">
+                    <div className="px-2.5 py-1 rounded-xl bg-amber-500/10 border border-amber-500/30 text-[var(--gold-fg)] font-black text-xs">
                       HT: {rad.val}
                     </div>
                   </div>
@@ -647,10 +646,10 @@ export const QuickReferenceDrawer: React.FC<QuickReferenceDrawerProps> = ({
                     className="p-3 rounded-2xl bg-slate-950/60 border border-slate-800 space-y-1"
                   >
                     <div className="text-xs font-bold text-slate-200">{f.name}</div>
-                    <div className="text-sm font-black text-emerald-400 font-mono">
+                    <div className="text-sm font-black text-[var(--ok-fg)] font-mono">
                       {f.eq}
                     </div>
-                    <div className="text-[10px] text-slate-400">{f.note}</div>
+                    <div className="text-[11px] text-slate-400">{f.note}</div>
                   </div>
                 ))}
               </div>

@@ -93,7 +93,7 @@ export const MatchGrid: React.FC<MatchGridProps> = ({
     if (pairedRight.has(right))
       return 'border-2 border-[var(--subject-fill)] bg-[var(--subject-tint)] text-[var(--subject-fg)] shadow-[0_3px_0_0_var(--subject-edge)]';
     if (selectedLeft)
-      return 'border border-[var(--border)] bg-[var(--bg-surface)] text-[var(--text-primary)] hover:border-[var(--subject-edge)] shadow-[0_3px_0_0_var(--edge-neutral)] animate-pulse';
+      return 'border border-[var(--border)] bg-[var(--bg-surface)] text-[var(--text-primary)] hover:border-[var(--subject-edge)] shadow-[0_3px_0_0_var(--edge-neutral)] ';
     return 'border border-[var(--border)] bg-[var(--bg-canvas)] text-[var(--text-tertiary)]';
   };
 
@@ -101,7 +101,7 @@ export const MatchGrid: React.FC<MatchGridProps> = ({
     <div className="grid grid-cols-2 gap-3">
       {/* Left column */}
       <div className="space-y-2">
-        <div className="text-[10px] font-bold text-[var(--text-tertiary)] uppercase tracking-wider mb-1 px-1">
+        <div className="text-[11px] font-bold text-[var(--text-tertiary)] mb-1 px-1">
           Cột A
         </div>
         {leftItems.map((left) => (
@@ -126,7 +126,7 @@ export const MatchGrid: React.FC<MatchGridProps> = ({
 
       {/* Right column */}
       <div className="space-y-2">
-        <div className="text-[10px] font-bold text-[var(--text-tertiary)] uppercase tracking-wider mb-1 px-1">
+        <div className="text-[11px] font-bold text-[var(--text-tertiary)] mb-1 px-1">
           Cột B
         </div>
         {rightItems.map((right) => (

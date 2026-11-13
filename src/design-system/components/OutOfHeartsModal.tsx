@@ -44,7 +44,7 @@ export const OutOfHeartsModal: React.FC<OutOfHeartsModalProps> = ({
           className="relative w-full max-w-sm rounded-3xl bg-[var(--bg-surface)] border border-[var(--border)] p-6 shadow-[var(--shadow-modal)] text-center space-y-4 z-10"
         >
           {/* Failure Alert Badge */}
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[var(--err-tint)] border border-[var(--err-edge)] text-[11px] font-black uppercase tracking-wider text-[var(--err-fg)]">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[var(--err-tint)] border border-[var(--err-edge)] text-xs font-black text-[var(--err-fg)]">
             <AlertTriangle className="w-3.5 h-3.5 text-[var(--err-fg)]" />
             <span>Thất bại chặng này</span>
           </div>
@@ -85,7 +85,7 @@ export const OutOfHeartsModal: React.FC<OutOfHeartsModalProps> = ({
               >
                 <img src={assetUrl('/assets/icons/gem-crystal.png')} alt="Gem" className="w-4 h-4 object-contain" />
                 <span>
-                  {canAfford ? 'ĐỔI 1 TIM (150 ĐÁ QUÝ)' : `ĐỔI 1 TIM (CÓ ${gems}/150 ĐÁ QUÝ)`}
+                  {canAfford ? 'Đổi 1 tim (150 đá quý)' : `ĐỔI 1 TIM (CÓ ${gems}/150 ĐÁ QUÝ)`}
                 </span>
               </Button>
             )}
@@ -101,8 +101,8 @@ export const OutOfHeartsModal: React.FC<OutOfHeartsModalProps> = ({
                 onGoToPractice();
               }}
             >
-              <Heart className="w-5 h-5 fill-white text-white" />
-              <span>LUYỆN TẬP ĐỂ HỒI TIM (+1 TIM)</span>
+              <Heart className="w-5 h-5 fill-white text-[var(--text-primary)]" />
+              <span>Luyện tập để hồi tim (+1 tim)</span>
             </Button>
 
             <Button
@@ -115,7 +115,7 @@ export const OutOfHeartsModal: React.FC<OutOfHeartsModalProps> = ({
                 onQuit();
               }}
             >
-              VỀ BẢN ĐỒ HỌC
+              Về bản đồ học
             </Button>
           </div>
         </motion.div>

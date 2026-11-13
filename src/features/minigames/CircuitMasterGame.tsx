@@ -90,10 +90,10 @@ export const CircuitMasterGame: React.FC<{ onExit: () => void }> = ({ onExit }) 
       lampStatus = 'Đèn sáng rất mờ (dòng điện quá nhỏ)';
     } else if (current >= mission.targetCurrentMin && current <= mission.targetCurrentMax) {
       brightness = 0.85;
-      lampStatus = '✨ Đèn sáng chuẩn định mức!';
+      lampStatus = 'Đèn sáng chuẩn định mức!';
     } else if (current > 0.7) {
       brightness = 1.0;
-      lampStatus = '⚠️ Đèn quá sáng, nguy cơ đứt dây tóc!';
+      lampStatus = 'Đèn quá sáng, nguy cơ đứt dây tóc!';
     } else {
       brightness = 0.5;
       lampStatus = 'Đèn sáng vừa';
@@ -176,7 +176,7 @@ export const CircuitMasterGame: React.FC<{ onExit: () => void }> = ({ onExit }) 
 
   return (
     <MinigameShell
-      title="Thợ Nối Mạch Điện Thực Hành"
+      title="Thợ nối mạch điện thực hành"
       description="Thao tác đóng khóa K, chỉnh biến trở & đo dòng điện Ohm!"
       icon={<Zap className="w-5 h-5 text-[var(--phy-fg)]" />}
       timeLeft={timeLeft}
@@ -192,7 +192,7 @@ export const CircuitMasterGame: React.FC<{ onExit: () => void }> = ({ onExit }) 
         {/* Mission Card */}
         <div className="p-3.5 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] space-y-1">
           <div className="flex items-center justify-between">
-            <span className="text-[10px] font-black uppercase tracking-wider text-[var(--phy-fg)]">
+            <span className="text-[11px] font-black text-[var(--phy-fg)]">
               Nhiệm vụ {missionIndex + 1}
             </span>
             <span className="text-xs font-bold text-[var(--text-tertiary)]">
@@ -212,7 +212,7 @@ export const CircuitMasterGame: React.FC<{ onExit: () => void }> = ({ onExit }) 
               <div className="px-2.5 py-1 rounded-lg bg-[var(--bg-surface)] border border-[var(--border)] text-xs font-black text-[var(--text-primary)]">
                 [+ ||| -] {mission.voltage}V
               </div>
-              <span className="text-[10px] font-bold text-[var(--text-tertiary)] mt-0.5">Nguồn Pin</span>
+              <span className="text-[11px] font-bold text-[var(--text-tertiary)] mt-0.5">Nguồn Pin</span>
             </div>
 
             {/* Wire segment with electron animation */}
@@ -235,7 +235,7 @@ export const CircuitMasterGame: React.FC<{ onExit: () => void }> = ({ onExit }) 
                   : 'bg-[var(--err-tint)] border-[var(--err-fill)] text-[var(--err-fg)]'
               }`}
             >
-              <span>{switchClosed ? 'Khóa K: ĐÓNG' : 'Khóa K: MỞ'}</span>
+              <span>{switchClosed ? 'Khóa K: đóng' : 'Khóa K: MỞ'}</span>
             </button>
           </div>
 
@@ -257,7 +257,7 @@ export const CircuitMasterGame: React.FC<{ onExit: () => void }> = ({ onExit }) 
               >
                 <Lightbulb className="w-7 h-7 stroke-[2.5]" />
               </motion.div>
-              <span className="text-[10px] font-bold text-[var(--text-primary)] mt-1">Đèn ({mission.lampRatedVoltage}V)</span>
+              <span className="text-[11px] font-bold text-[var(--text-primary)] mt-1">Đèn ({mission.lampRatedVoltage}V)</span>
             </div>
 
             {/* Rheostat */}
@@ -266,24 +266,24 @@ export const CircuitMasterGame: React.FC<{ onExit: () => void }> = ({ onExit }) 
                 <Sliders className="w-4 h-4 mx-auto text-[var(--phy-fg)] mb-1" />
                 <span className="text-xs font-black text-[var(--phy-fg)] font-mono">{rheostatVal} Ω</span>
               </div>
-              <span className="text-[10px] font-bold text-[var(--text-tertiary)] mt-1">Biến trở $R_b$</span>
+              <span className="text-[11px] font-bold text-[var(--text-tertiary)] mt-1">Biến trở R<sub>b</sub></span>
             </div>
           </div>
 
           {/* Bottom Meters: Ammeter & Voltmeter */}
           <div className="w-full grid grid-cols-2 gap-2 pt-2 border-t border-[var(--border)]">
             <div className="p-2 rounded-xl bg-[var(--bg-surface)] border border-[var(--border)] flex items-center gap-2">
-              <Gauge className="w-4 h-4 text-cyan-400 shrink-0" />
+              <Gauge className="w-4 h-4 text-[var(--chem-fg)] shrink-0" />
               <div>
-                <span className="text-[10px] text-[var(--text-tertiary)] block font-bold">Ampe kế ($A$)</span>
+                <span className="text-[11px] text-[var(--text-tertiary)] block font-bold">Ampe kế (A)</span>
                 <span className="text-sm font-black font-mono text-[var(--text-primary)]">{current.toFixed(2)} A</span>
               </div>
             </div>
 
             <div className="p-2 rounded-xl bg-[var(--bg-surface)] border border-[var(--border)] flex items-center gap-2">
-              <Gauge className="w-4 h-4 text-amber-400 shrink-0" />
+              <Gauge className="w-4 h-4 text-[var(--gold-fg)] shrink-0" />
               <div>
-                <span className="text-[10px] text-[var(--text-tertiary)] block font-bold">Vôn kế ($V$)</span>
+                <span className="text-[11px] text-[var(--text-tertiary)] block font-bold">Vôn kế (V)</span>
                 <span className="text-sm font-black font-mono text-[var(--text-primary)]">{lampVoltage.toFixed(1)} V</span>
               </div>
             </div>
@@ -310,7 +310,7 @@ export const CircuitMasterGame: React.FC<{ onExit: () => void }> = ({ onExit }) 
             onChange={handleRheostatChange}
             className="w-full accent-[var(--phy-fill)] cursor-pointer h-2 bg-[var(--bg-surface-2)] rounded-lg"
           />
-          <div className="flex justify-between text-[10px] font-bold text-[var(--text-tertiary)]">
+          <div className="flex justify-between text-[11px] font-bold text-[var(--text-tertiary)]">
             <span>0 Ω (Điện trở nhỏ nhất)</span>
             <span>30 Ω (Điện trở lớn nhất)</span>
           </div>
@@ -325,7 +325,7 @@ export const CircuitMasterGame: React.FC<{ onExit: () => void }> = ({ onExit }) 
             onClick={handleCheckMission}
             className="font-black bg-[var(--phy-fill)] text-white shadow-md flex items-center justify-center gap-2"
           >
-            <span>KIỂM TRA DÒNG ĐIỆN & CHỐT ĐIỂM</span>
+            <span>Kiểm tra dòng điện & chốt điểm</span>
           </Button>
         ) : (
           <motion.div
@@ -346,7 +346,7 @@ export const CircuitMasterGame: React.FC<{ onExit: () => void }> = ({ onExit }) 
               onClick={handleNextMission}
               className="font-black bg-[var(--phy-fill)] text-white shadow-md flex items-center justify-center gap-2"
             >
-              <span>NHIỆM VỤ TIẾP THEO</span>
+              <span>Nhiệm vụ tiếp theo</span>
               <Sparkles className="w-4 h-4" />
             </Button>
           </motion.div>

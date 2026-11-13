@@ -38,13 +38,12 @@
       "badge": "Kỹ năng thực hành",
       "badgeColor": "emerald",
       "title": "3. Các bước đo nhiệt độ cơ thể bằng nhiệt kế thủy ngân",
-      "content": "Quy trình đo nhiệt độ cơ thể bằng nhiệt kế y tế thủy ngân gồm 5 bước:",
+      "content": "Quy trình đo nhiệt độ cơ thể bằng nhiệt kế y tế thủy ngân gồm 4 bước:",
       "bulletPoints": [
-        "Bước 1: Ước lượng nhiệt độ cần đo để chọn nhiệt kế phù hợp.",
-        "Bước 2: Cầm chắc đầu nhiệt kế, vẩy mạnh cho cột thủy ngân tụt xuống dưới mức 35 °C.",
-        "Bước 3: Dùng bông tẩm cồn y tế sát trùng sạch bầu nhiệt kế.",
-        "Bước 4: Đặt bầu nhiệt kế vào nách và kẹp chặt tay trong khoảng 3 đến 5 phút.",
-        "Bước 5: Lấy nhiệt kế ra, giữ ngang tầm mắt, đọc và ghi kết quả theo mức thủy ngân dâng lên."
+        "Bước 1: Dùng bông y tế lau sạch thân và bầu nhiệt kế.",
+        "Bước 2: Cầm chắc đầu nhiệt kế, vẩy mạnh cho thủy ngân bên trong nhiệt kế tụt xuống (dưới mức 35 °C).",
+        "Bước 3: Dùng tay phải cầm thân nhiệt kế đặt bầu nhiệt kế vào nách trái, kẹp cánh tay lại để giữ nhiệt kế.",
+        "Bước 4: Chờ khoảng 2 – 3 phút, lấy nhiệt kế ra giữ ngang tầm mắt và đọc nhiệt độ."
       ],
       "callout": "Lỗi thường gặp: Quên vẩy nhiệt kế trước khi đo làm kết quả đo bị cao hơn nhiệt độ thực tế của cơ thể."
     }

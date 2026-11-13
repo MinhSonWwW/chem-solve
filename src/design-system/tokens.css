@@ -1,36 +1,36 @@
 /* ==========================================================================
-   STEM-Solve Design Tokens v2 (stem-solve-colors-v2.md)
-   Single source of truth for color semantics and tactile game feel.
-   Contrast ratios strictly calculated via WCAG 2.x standards.
+   Sci-Solve design tokens v4
+   Warm paper/graphite neutrals, one hue per subject, flat colour (no gradients/glow).
+   Text on *-fill buttons is white; on --phy/--gold/--warn keep weight >= 700.
    ========================================================================== */
 
 :root,
 :root[data-theme="light"],
 html.light {
-  /* Neutrals - Light Mode */
-  --bg-canvas: #EEF2F7;
-  --bg-surface: #FAFBFD;
-  --bg-surface-2: #E6ECF3;
-  --border: #D3DBE5;
-  --border-strong: #B9C5D3;
-  --edge-neutral: #C2CCD9;
-  --text-primary: #0F1B2D;
-  --text-secondary: #44546A;
-  --text-tertiary: #5F6E84;
-  --on-ink: #1A1205;
+  /* Neutrals - warm "exercise book" paper */
+  --bg-canvas: #F6F4EF;
+  --bg-surface: #FFFFFF;
+  --bg-surface-2: #EFECE5;
+  --border: #E2DED4;
+  --border-strong: #CAC4B6;
+  --edge-neutral: #D4CEC0;
+  --text-primary: #1C1B18;
+  --text-secondary: #46433C;
+  --text-tertiary: #6D695F;
+  --on-ink: #1C1B18;
 
-  /* Accents - 6 variants per role */
-  --chem-fill: #2A6FDB;  --chem-edge: #1D55AD;  --chem-fg: #1F5BBF;  --chem-tint: rgb(42 111 219 / 0.12);
-  --phy-fill:  #6B4DE0;  --phy-edge:  #5139B4;  --phy-fg:  #5538C4;  --phy-tint:  rgb(107 77 224 / 0.12);
-  --bio-fill:  #0A8272;  --bio-edge:  #075F54;  --bio-fg:  #0A6F62;  --bio-tint:  rgb(10 130 114 / 0.12);
-  --ok-fill:   #258540;  --ok-edge:   #1B6B30;  --ok-fg:   #1B6B30;  --ok-tint:   rgb(37 133 64 / 0.12);
-  --err-fill:  #D23636;  --err-edge:  #A82A2A;  --err-fg:  #B52E2E;  --err-tint:  rgb(210 54 54 / 0.12);
-  --warn-fill: #E8710A;  --warn-edge: #B35500;  --warn-fg: #A64D00;  --warn-tint: rgb(232 113 10 / 0.12);
-  --gold-fill: #F2B705;  --gold-edge: #B88A00;  --gold-fg: #8A6100;  --gold-tint: rgb(242 183 5 / 0.14);
-  --gem-fill:  #CC3A78;  --gem-edge:  #9E2C5B;  --gem-fg:  #B02E66;  --gem-tint:  rgb(204 58 120 / 0.12);
-  --slate-fill:#5B6B82;  --slate-edge:#3F4D61;  --slate-fg:#44546A;  --slate-tint:rgb(91 107 130 / 0.12);
+  /* Accents - one hue per subject (Hóa: lam, Lý: hổ phách, Sinh: lục) + feedback states */
+  --chem-fill: #0B72B5;  --chem-edge: #075688;  --chem-fg: #075688;  --chem-tint: rgb(11 114 181 / 0.09);
+  --phy-fill:  #B86E00;  --phy-edge:  #875000;  --phy-fg:  #7A4800;  --phy-tint:  rgb(184 110 0 / 0.10);
+  --bio-fill:  #16875A;  --bio-edge:  #0F6443;  --bio-fg:  #0F6443;  --bio-tint:  rgb(22 135 90 / 0.09);
+  --ok-fill:   #2E9B47;  --ok-edge:   #227535;  --ok-fg:   #1E6B30;  --ok-tint:   rgb(46 155 71 / 0.10);
+  --err-fill:  #D23C3C;  --err-edge:  #A42B2B;  --err-fg:  #A42B2B;  --err-tint:  rgb(210 60 60 / 0.09);
+  --warn-fill: #E07012;  --warn-edge: #AD540A;  --warn-fg: #9A4A08;  --warn-tint: rgb(224 112 18 / 0.10);
+  --gold-fill: #E9A010;  --gold-edge: #B97C06;  --gold-fg: #845700;  --gold-tint: rgb(233 160 16 / 0.12);
+  --gem-fill:  #B1367A;  --gem-edge:  #85275B;  --gem-fg:  #85275B;  --gem-tint:  rgb(177 54 122 / 0.09);
+  --slate-fill:#5E6470;  --slate-edge:#454A54;  --slate-fg:#454A54;  --slate-tint:rgb(94 100 112 / 0.09);
 
-  --shadow-modal: 0 8px 24px rgb(15 27 45 / 0.10);
+  --shadow-modal: 0 8px 24px rgb(28 27 24 / 0.10);
 
   /* Lab Namespace (Phòng thí nghiệm ảo - mô phỏng hiện tượng, không dùng cho UI) */
   --lab-acid-red: #EF4444;
@@ -133,98 +133,57 @@ html.light {
   --text-muted: var(--text-tertiary);
 
   /* Shadows for Modal & Sub-elements */
-  --sub-shadow: 0 8px 24px rgb(15 27 45 / 0.12);
-  --sub-icon-shadow: 0 2px 8px rgb(15 27 45 / 0.10);
+  --sub-shadow: 0 6px 20px rgb(28 27 24 / 0.08);
+  --sub-icon-shadow: 0 1px 4px rgb(28 27 24 / 0.08);
 
   /* Ink for hand-drawn art, outlines & icons */
-  --ink: #101A1F;
-  --ink-muted: #4A5B68;
-  --ink-secondary: #2C3E4C;
+  --ink: #1C1B18;
+  --ink-muted: #6D695F;
+  --ink-secondary: #46433C;
 }
 
 :root[data-theme="dark"],
+:root:not([data-theme="light"]):not(.light),
 html.dark,
 body.dark {
-  /* Neutrals - Dark Mode */
-  --bg-canvas: #131F24;
-  --bg-surface: #18272F;
-  --bg-surface-2: #20333D;
-  --border: #2E4756;
-  --border-strong: #3D5A6C;
-  --edge-neutral: #131F24;
-  --text-primary: #F5F8FA;
-  --text-secondary: #C2CEDA;
-  --text-tertiary: #8FA1B3;
-  --on-ink: #1A1205;
+  color-scheme: dark;
+  /* Neutrals - warm graphite (ink on slate board), not blue-black "space" */
+  --bg-canvas: #151513;
+  --bg-surface: #1D1D1A;
+  --bg-surface-2: #262622;
+  --border: #34332E;
+  --border-strong: #46453E;
+  --edge-neutral: #0D0D0B;
+  --text-primary: #F3F2EC;
+  --text-secondary: #CDCAC0;
+  --text-tertiary: #9B978B;
+  --on-ink: #1C1B18;
 
-  /* Explicit Accents for Dark Mode */
-  --chem-fill: #2A6FDB;  --chem-edge: #1D55AD;  --chem-fg: #6AA3FF;  --chem-tint: rgb(42 111 219 / 0.18);
-  --phy-fill:  #6B4DE0;  --phy-edge:  #5139B4;  --phy-fg:  #A593FF;  --phy-tint:  rgb(107 77 224 / 0.18);
-  --bio-fill:  #0A8272;  --bio-edge:  #075F54;  --bio-fg:  #3CCFB9;  --bio-tint:  rgb(10 130 114 / 0.18);
-  --ok-fill:   #258540;  --ok-edge:   #1B6B30;  --ok-fg:   #5CD07A;  --ok-tint:   rgb(37 133 64 / 0.18);
-  --err-fill:  #D23636;  --err-edge:  #A82A2A;  --err-fg:  #FF7B7B;  --err-tint:  rgb(210 54 54 / 0.18);
-  --warn-fill: #E8710A;  --warn-edge: #B35500;  --warn-fg: #FFA24D;  --warn-tint: rgb(232 113 10 / 0.18);
-  --gold-fill: #F2B705;  --gold-edge: #B88A00;  --gold-fg: #FFD34D;  --gold-tint: rgb(242 183 5 / 0.18);
-  --gem-fill:  #CC3A78;  --gem-edge:  #9E2C5B;  --gem-fg:  #FF7FB1;  --gem-tint:  rgb(204 58 120 / 0.18);
-  --slate-fill:#5B6B82;  --slate-edge:#3F4D61;  --slate-fg:#A9B7C8;  --slate-tint:rgb(91 107 130 / 0.22);
+  /* Accents for dark mode - same hues, lifted for contrast, low-alpha tints (no glow) */
+  --chem-fill: #1680C7;  --chem-edge: #0E5E95;  --chem-fg: #6CC0F2;  --chem-tint: rgb(22 128 199 / 0.14);
+  --phy-fill:  #C98100;  --phy-edge:  #8F5C00;  --phy-fg:  #F2C25C;  --phy-tint:  rgb(201 129 0 / 0.15);
+  --bio-fill:  #1C9965;  --bio-edge:  #13704A;  --bio-fg:  #6DD3A6;  --bio-tint:  rgb(28 153 101 / 0.14);
+  --ok-fill:   #34A852;  --ok-edge:   #26803D;  --ok-fg:   #79D38F;  --ok-tint:   rgb(52 168 82 / 0.14);
+  --err-fill:  #D94545;  --err-edge:  #A83232;  --err-fg:  #F08A8A;  --err-tint:  rgb(217 69 69 / 0.14);
+  --warn-fill: #E07A1F;  --warn-edge: #A95A12;  --warn-fg: #F3A866;  --warn-tint: rgb(224 122 31 / 0.15);
+  --gold-fill: #E9A619;  --gold-edge: #B17B0A;  --gold-fg: #F5CD6B;  --gold-tint: rgb(233 166 25 / 0.15);
+  --gem-fill:  #BE4486;  --gem-edge:  #8E3163;  --gem-fg:  #EFA2CB;  --gem-tint:  rgb(190 68 134 / 0.14);
+  --slate-fill:#6B7079;  --slate-edge:#4D525A;  --slate-fg:#B4B8BF;  --slate-tint:rgb(107 112 121 / 0.16);
 
-  --shadow-modal: 0 8px 24px rgb(0 0 0 / 0.40);
-  --sub-shadow: 0 8px 24px rgb(0 0 0 / 0.40);
-  --sub-icon-shadow: 0 2px 8px rgb(0 0 0 / 0.30);
+  --shadow-modal: 0 12px 36px rgb(0 0 0 / 0.55);
+  --sub-shadow: 0 8px 24px rgb(0 0 0 / 0.45);
+  --sub-icon-shadow: 0 2px 8px rgb(0 0 0 / 0.35);
 
   /* Ink for hand-drawn art, outlines & icons in dark mode */
-  --ink: #0C151A;
-  --ink-muted: #64748B;
-  --ink-secondary: #334155;
+  --ink: #0B0B0A;
+  --ink-muted: #6D695F;
+  --ink-secondary: #3A3832;
 
   /* Backward Compatibility Aliases for Legacy CSS */
   --color-background: var(--bg-canvas);
   --color-surface: var(--bg-surface);
   --color-surface-card: var(--bg-surface-2);
   --color-border: var(--border);
-}
-
-/* Default Fallback (Default to Dark Mode if no data-theme explicitly set) */
-:root:not([data-theme="light"]):not([data-theme="dark"]) {
-  --bg-canvas: #131F24;
-  --bg-surface: #18272F;
-  --bg-surface-2: #20333D;
-  --border: #2E4756;
-  --border-strong: #3D5A6C;
-  --edge-neutral: #131F24;
-  --text-primary: #F5F8FA;
-  --text-secondary: #C2CEDA;
-  --text-tertiary: #8FA1B3;
-  --on-ink: #1A1205;
-
-  --chem-fill: #2A6FDB;  --chem-edge: #1D55AD;  --chem-fg: #6AA3FF;  --chem-tint: rgb(42 111 219 / 0.18);
-  --phy-fill:  #6B4DE0;  --phy-edge:  #5139B4;  --phy-fg:  #A593FF;  --phy-tint:  rgb(107 77 224 / 0.18);
-  --bio-fill:  #0A8272;  --bio-edge:  #075F54;  --bio-fg:  #3CCFB9;  --bio-tint:  rgb(10 130 114 / 0.18);
-  --ok-fill:   #258540;  --ok-edge:   #1B6B30;  --ok-fg:   #5CD07A;  --ok-tint:   rgb(37 133 64 / 0.18);
-  --err-fill:  #D23636;  --err-edge:  #A82A2A;  --err-fg:  #FF7B7B;  --err-tint:  rgb(210 54 54 / 0.18);
-  --warn-fill: #E8710A;  --warn-edge: #B35500;  --warn-fg: #FFA24D;  --warn-tint: rgb(232 113 10 / 0.18);
-  --gold-fill: #F2B705;  --gold-edge: #B88A00;  --gold-fg: #FFD34D;  --gold-tint: rgb(242 183 5 / 0.18);
-  --gem-fill:  #CC3A78;  --gem-edge:  #9E2C5B;  --gem-fg:  #FF7FB1;  --gem-tint:  rgb(204 58 120 / 0.18);
-  --slate-fill:#5B6B82;  --slate-edge:#3F4D61;  --slate-fg:#A9B7C8;  --slate-tint:rgb(91 107 130 / 0.22);
-
-  --shadow-modal: 0 8px 24px rgb(0 0 0 / 0.40);
-  --sub-shadow: 0 8px 24px rgb(0 0 0 / 0.40);
-  --sub-icon-shadow: 0 2px 8px rgb(0 0 0 / 0.30);
-
-  /* Ink for hand-drawn art, outlines & icons in dark mode */
-  --ink: #0C151A;
-  --ink-muted: #64748B;
-  --ink-secondary: #334155;
-
-  --lab-acid-red: #EF4444;
-  --lab-base-blue: #2563EB;
-  --lab-cuso4: #0284C7;
-  --lab-gas: rgb(203 213 225 / 0.70);
-  --lab-precipitate: #F8FAFC;
-  --lab-wire: #F59E0B;
-  --lab-bulb: #FEF08A;
-  --lab-chloroplast: #10B981;
-  --lab-nucleus-stain: #6366F1;
 }
 
 /* ─── Subject Active Scoping ─── */

@@ -154,7 +154,7 @@ export const OpticsBenchGame: React.FC<{ onExit: () => void }> = ({ onExit }) =>
 
   return (
     <MinigameShell
-      title="Bàn Quang Học Thấu Kính Hội Tụ"
+      title="Bàn quang học thấu kính hội tụ"
       description="Kéo màn hứng ảnh lấy nét & giải mã tính chất thấu kính!"
       icon={<Eye className="w-5 h-5 text-[var(--phy-fg)]" />}
       timeLeft={timeLeft}
@@ -170,7 +170,7 @@ export const OpticsBenchGame: React.FC<{ onExit: () => void }> = ({ onExit }) =>
         {/* Scenario Card */}
         <div className="p-3.5 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] flex items-center justify-between">
           <div className="space-y-0.5">
-            <span className="text-[10px] font-black uppercase tracking-wider text-[var(--phy-fg)]">
+            <span className="text-[11px] font-black text-[var(--phy-fg)]">
               Thử thách {scenarioIndex + 1}
             </span>
             <h2 className="text-sm font-black text-[var(--text-primary)]">{scenario.title}</h2>
@@ -179,7 +179,7 @@ export const OpticsBenchGame: React.FC<{ onExit: () => void }> = ({ onExit }) =>
             </p>
           </div>
           <div className="text-right">
-            <span className="text-[10px] font-bold text-[var(--text-tertiary)] block">Vị trí vật d</span>
+            <span className="text-[11px] font-bold text-[var(--text-tertiary)] block">Vị trí vật d</span>
             <span className="text-base font-black font-mono text-[var(--phy-fg)]">
               {scenario.candleDistance} cm
             </span>
@@ -188,8 +188,8 @@ export const OpticsBenchGame: React.FC<{ onExit: () => void }> = ({ onExit }) =>
 
         {/* Optical Bench Graphic Viewport */}
         <div className="relative p-4 rounded-3xl bg-[var(--bg-surface-2)] border border-[var(--border)] min-h-[200px] flex flex-col justify-between overflow-hidden">
-          <div className="text-[10px] font-bold text-[var(--text-tertiary)] text-center">
-            TRỤC CHÍNH QUANG HỌC & TIA SÁNG ĐẶC BIỆT
+          <div className="text-[11px] font-bold text-[var(--text-tertiary)] text-center">
+            Trục chính quang học & tia sáng đặc biệt
           </div>
 
           {/* Interactive Bench Visualizer */}
@@ -199,25 +199,25 @@ export const OpticsBenchGame: React.FC<{ onExit: () => void }> = ({ onExit }) =>
 
             {/* Candle Object (Left) */}
             <div className="absolute left-6 flex flex-col items-center z-10">
-              <Flame className="w-5 h-5 text-amber-400 animate-pulse fill-amber-400" />
+              <Flame className="w-5 h-5 text-[var(--gold-fg)] fill-amber-400" />
               <div className="w-2.5 h-10 bg-amber-200 border border-amber-500 rounded-sm" />
-              <span className="text-[9px] font-black text-[var(--text-secondary)] mt-1">
+              <span className="text-[11px] font-black text-[var(--text-secondary)] mt-1">
                 Vật (d={scenario.candleDistance})
               </span>
             </div>
 
             {/* Convex Lens (Center) */}
             <div className="relative flex flex-col items-center z-10">
-              <div className="w-3.5 h-24 rounded-full border-2 border-cyan-400 bg-cyan-400/20 shadow-[0_0_10px_rgba(34,211,238,0.4)] flex items-center justify-center">
-                <span className="text-[8px] font-mono text-cyan-200 font-bold">O</span>
+              <div className="w-3.5 h-24 rounded-full border-2 border-cyan-400 bg-cyan-400/20 flex items-center justify-center">
+                <span className="text-[11px] font-mono text-[var(--chem-fg)] font-bold">O</span>
               </div>
-              <span className="text-[9px] font-black text-cyan-400 mt-1">TK Hội tụ</span>
+              <span className="text-[11px] font-black text-[var(--chem-fg)] mt-1">TK Hội tụ</span>
             </div>
 
             {/* Focal point F' on right */}
             <div className="absolute left-[62%] flex flex-col items-center pointer-events-none">
               <div className="w-1.5 h-1.5 rounded-full bg-cyan-300" />
-              <span className="text-[8px] font-mono text-cyan-300 font-bold">F'</span>
+              <span className="text-[11px] font-mono text-[var(--chem-fg)] font-bold">F'</span>
             </div>
 
             {/* Screen (Màn Chắn Hứng Ảnh - Right) */}
@@ -240,7 +240,7 @@ export const OpticsBenchGame: React.FC<{ onExit: () => void }> = ({ onExit }) =>
                   <div className="w-2 h-7 bg-amber-300 border border-amber-600 rounded-sm" />
                 </motion.div>
               </div>
-              <span className="text-[9px] font-black text-[var(--text-primary)] mt-1">
+              <span className="text-[11px] font-black text-[var(--text-primary)] mt-1">
                 Màn (d'={screenDistance})
               </span>
             </div>
@@ -255,7 +255,7 @@ export const OpticsBenchGame: React.FC<{ onExit: () => void }> = ({ onExit }) =>
                   : 'bg-[var(--warn-tint)] border-[var(--warn-edge)] text-[var(--warn-fg)]'
               }`}
             >
-              {isScreenInFocus ? '✨ Ảnh sắc nét (Đúng vị trí ảnh thật!)' : `Độ mờ: ${blurPx.toFixed(1)}px (Chưa lấy nét)`}
+              {isScreenInFocus ? 'Ảnh sắc nét (Đúng vị trí ảnh thật!)' : `Độ mờ: ${blurPx.toFixed(1)}px (Chưa lấy nét)`}
             </span>
           </div>
         </div>
@@ -275,7 +275,7 @@ export const OpticsBenchGame: React.FC<{ onExit: () => void }> = ({ onExit }) =>
             onChange={(e) => setScreenDistance(Number(e.target.value))}
             className="w-full accent-[var(--phy-fill)] cursor-pointer h-2 bg-[var(--bg-surface-2)] rounded-lg"
           />
-          <div className="flex justify-between text-[10px] font-bold text-[var(--text-tertiary)]">
+          <div className="flex justify-between text-[11px] font-bold text-[var(--text-tertiary)]">
             <span>10 cm (Gần thấu kính)</span>
             <span>40 cm (Xa thấu kính)</span>
           </div>
@@ -318,7 +318,7 @@ export const OpticsBenchGame: React.FC<{ onExit: () => void }> = ({ onExit }) =>
             onClick={handleCheck}
             className="font-black bg-[var(--phy-fill)] text-white shadow-md flex items-center justify-center gap-2"
           >
-            <span>KHÓA NÉT ẢNH & KIỂM TRA</span>
+            <span>Khóa nét ảnh & kiểm tra</span>
           </Button>
         ) : (
           <motion.div
@@ -339,7 +339,7 @@ export const OpticsBenchGame: React.FC<{ onExit: () => void }> = ({ onExit }) =>
               onClick={handleNextScenario}
               className="font-black bg-[var(--phy-fill)] text-white shadow-md flex items-center justify-center gap-2"
             >
-              <span>THỬ THÁCH TIẾP THEO</span>
+              <span>Thử thách tiếp theo</span>
               <Sparkles className="w-4 h-4" />
             </Button>
           </motion.div>

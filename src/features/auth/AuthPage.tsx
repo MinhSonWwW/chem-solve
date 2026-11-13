@@ -186,7 +186,7 @@ const PasswordStrengthBar: React.FC<{ password: string }> = ({ password }) => {
           />
         ))}
       </div>
-      <p className="text-[11px] font-semibold" style={{ color: strength.color }}>
+      <p className="text-xs font-semibold" style={{ color: strength.color }}>
         {strength.label}
       </p>
     </motion.div>
@@ -268,7 +268,7 @@ const AuthInput: React.FC<AuthInputProps> = ({
             initial={{ opacity: 0, y: -4 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -4 }}
-            className="text-[11px] text-[var(--err-fg)] mt-1.5 pl-1 flex items-center gap-1 font-semibold"
+            className="text-xs text-[var(--err-fg)] mt-1.5 pl-1 flex items-center gap-1 font-semibold"
           >
             <AlertCircle size={12} /> {error}
           </motion.p>
@@ -306,7 +306,7 @@ const SocialButton: React.FC<SocialButtonProps> = ({ icon, label, onClick, disab
 const AuthDivider: React.FC = () => (
   <div className="flex items-center gap-3 my-3 sm:my-4">
     <div className="flex-1 h-px bg-[var(--border)]" />
-    <span className="text-[10px] sm:text-xs font-bold text-[var(--text-tertiary)] uppercase tracking-wider">hoặc</span>
+    <span className="text-[11px] sm:text-xs font-bold text-[var(--text-tertiary)]  ">hoặc</span>
     <div className="flex-1 h-px bg-[var(--border)]" />
   </div>
 );
@@ -327,7 +327,7 @@ const AuthLogo: React.FC = () => (
       transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
     >
       <div className="w-14 h-14 sm:w-18 sm:h-18 rounded-2xl sm:rounded-3xl bg-[var(--chem-fill)] flex items-center justify-center shadow-lg shadow-[var(--chem-tint)]">
-        <FlaskConical className="w-7 h-7 sm:w-9 sm:h-9 text-white" strokeWidth={2.5} />
+        <FlaskConical className="w-7 h-7 sm:w-9 sm:h-9 text-[var(--text-primary)]" strokeWidth={2.5} />
       </div>
       {/* Sparkle decorations */}
       <motion.div
@@ -342,15 +342,15 @@ const AuthLogo: React.FC = () => (
         animate={{ scale: [1, 0.7, 1], opacity: [0.7, 0.3, 0.7] }}
         transition={{ duration: 2.5, repeat: Infinity, delay: 0.5 }}
       >
-        <Atom size={12} className="text-white" />
+        <Atom size={12} className="text-[var(--text-primary)]" />
       </motion.div>
     </motion.div>
 
     <h1 className="text-xl sm:text-2xl font-black tracking-tight text-[var(--text-primary)]">
-      STEM-SOLVE
+      SCI-SOLVE
     </h1>
-    <p className="text-[11px] sm:text-xs text-[var(--text-secondary)] font-semibold mt-0.5 tracking-wide">
-      Đấu Trường Khoa Học THCS
+    <p className="text-xs sm:text-xs text-[var(--text-secondary)] font-semibold mt-0.5 tracking-wide">
+      Đấu trường khoa học THCS
     </p>
   </motion.div>
 );
@@ -482,20 +482,20 @@ export const AuthPage: React.FC = () => {
             animate={{ scale: [1, 1.08, 1] }}
             transition={{ duration: 1.5, repeat: Infinity }}
           >
-            <Check size={40} className="text-white" strokeWidth={3} />
+            <Check size={40} className="text-[var(--text-primary)]" strokeWidth={3} />
           </motion.div>
           <h2 className="text-xl sm:text-2xl font-black text-[var(--text-primary)] mb-2">
             {mode === 'register' ? 'Chào mừng nhà khoa học mới!' : 'Chào mừng trở lại!'}
           </h2>
           <p className="text-xs sm:text-sm text-[var(--text-secondary)] font-semibold mb-6">
-            Phòng lab đã sẵn sàng, bắt đầu khám phá thôi! 🧪
+            Phòng lab đã sẵn sàng, bắt đầu khám phá thôi!
           </p>
           <motion.div
             className="w-7 h-7 border-2 border-[var(--subject-fill)] border-t-transparent rounded-full"
             animate={{ rotate: 360 }}
             transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
           />
-          <p className="text-[11px] text-[var(--text-tertiary)] mt-3 font-semibold">Đang chuyển hướng...</p>
+          <p className="text-xs text-[var(--text-tertiary)] mt-3 font-semibold">Đang chuyển hướng...</p>
         </motion.div>
       </div>
     );
@@ -519,7 +519,7 @@ export const AuthPage: React.FC = () => {
           <span>Về trang chủ</span>
         </button>
 
-        <span className="text-[10px] sm:text-xs font-extrabold text-[var(--text-tertiary)] uppercase tracking-wider bg-[var(--bg-surface)] px-2.5 py-1 rounded-lg border border-[var(--border)]">
+        <span className="text-[11px] sm:text-xs font-extrabold text-[var(--text-tertiary)] bg-[var(--bg-surface)] px-2.5 py-1 rounded-lg border border-[var(--border)]">
           {mode === 'login' ? 'Đăng nhập' : 'Tạo tài khoản'}
         </span>
       </header>
@@ -583,7 +583,7 @@ export const AuthPage: React.FC = () => {
                     <AuthInput
                       icon={User}
                       type="text"
-                      placeholder="Tên hiển thị (vd: Nhà Hóa Học Nhí)"
+                      placeholder="Tên hiển thị (vd: Nhà hóa học nhí)"
                       value={name}
                       onChange={(v) => {
                         setName(v);
@@ -719,7 +719,7 @@ export const AuthPage: React.FC = () => {
           </div>
 
           {/* Footer Terms */}
-          <p className="text-center text-[10px] sm:text-[11px] text-[var(--text-tertiary)] mt-4 sm:mt-5 leading-relaxed font-medium">
+          <p className="text-center text-[11px] sm:text-xs text-[var(--text-tertiary)] mt-4 sm:mt-5 leading-relaxed font-medium">
             Khi tiếp tục, bạn đồng ý với{' '}
             <button type="button" className="text-[var(--subject-fg)] hover:underline font-bold cursor-pointer">
               Điều khoản
@@ -728,7 +728,7 @@ export const AuthPage: React.FC = () => {
             <button type="button" className="text-[var(--subject-fg)] hover:underline font-bold cursor-pointer">
               Bảo mật
             </button>{' '}
-            của STEM-Solve.
+            của Sci-Solve.
           </p>
         </div>
       </main>

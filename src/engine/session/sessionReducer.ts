@@ -1,9 +1,10 @@
 import type { Exercise } from '../../content/schema/exercise';
 import type { SessionState, SessionAction, QuestionState } from './types';
+import { GAMIFICATION } from '../../config/gamification';
 
 export function createInitialSession(
   exercises: Exercise[],
-  initialHearts: number = 5,
+  initialHearts: number = GAMIFICATION.hearts.max,
   isPractice: boolean = false
 ): SessionState {
   return {
@@ -262,7 +263,7 @@ export function sessionReducer(state: SessionState, action: SessionAction): Sess
     case 'REFILL_HEARTS': {
       return {
         ...state,
-        hearts: 5
+        hearts: GAMIFICATION.hearts.max
       };
     }
 

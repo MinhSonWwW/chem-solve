@@ -1,7 +1,7 @@
 /**
- * Bộ ngôn ngữ tiếng Việt (Human Copy) cho Chem-Solve.
- * Phong cách: Ấm áp, vui tươi, giàu năng lượng, gần gũi với lứa tuổi THCS (Lớp 6 - 9).
- * Không dùng văn phong dịch máy, khích lệ người học tự tin khám phá khoa học.
+ * Bộ ngôn ngữ tiếng Việt (Human Copy) cho Sci-Solve.
+ * Giọng: như một thầy/cô gần gũi — ngắn, cụ thể, khích lệ, không phóng đại.
+ * Tránh: cường điệu ("đỉnh nóc", "huyền thoại"), emoji, hứa hẹn XP không đúng thực tế.
  */
 
 import {
@@ -15,23 +15,23 @@ export * from './voiceScripts';
 
 export const copyVi = {
   app: {
-    title: 'CHEM-SOLVE',
-    subtitle: 'Đấu Trường Khoa Học THCS — Học Tương Tác & Luyện Tập',
-    welcome: 'Chào mừng bạn đến với Chem-Solve! Sẵn sàng thám hiểm thế giới khoa học kỳ thú chưa?',
+    title: 'Sci-Solve',
+    subtitle: 'Luyện Khoa học tự nhiên lớp 6–9',
+    welcome: 'Chào bạn! Hôm nay mình học bài nào?',
     startLesson: 'Bắt đầu bài học',
-    continue: 'Tiếp tục hành trình',
+    continue: 'Học tiếp',
     checkAnswer: 'Kiểm tra câu trả lời',
     nextStep: 'Bước tiếp theo',
-    tryAgain: 'Thử lại ngay',
-    understood: 'Đã hiểu rõ',
+    tryAgain: 'Thử lại',
+    understood: 'Đã hiểu',
   },
 
   auth: {
     login: 'Đăng nhập',
     register: 'Đăng ký',
     loginTitle: 'Chào mừng trở lại!',
-    registerTitle: 'Chào mừng nhà khoa học mới!',
-    namePlaceholder: 'Tên hiển thị (vd: Nhà Hóa Học Nhí)',
+    registerTitle: 'Tạo tài khoản',
+    namePlaceholder: 'Tên hiển thị',
     emailPlaceholder: 'Email của bạn',
     passwordPlaceholder: 'Mật khẩu',
     createPasswordPlaceholder: 'Tạo mật khẩu (≥ 6 ký tự)',
@@ -49,7 +49,7 @@ export const copyVi = {
     termsNote: 'Khi tiếp tục, bạn đồng ý với',
     and: 'và',
     ofUs: 'của chúng mình.',
-    successWelcome: 'Phòng lab đã sẵn sàng, bắt đầu khám phá thôi! 🧪',
+    successWelcome: 'Xong rồi, mình bắt đầu học nhé.',
     redirecting: 'Đang chuyển hướng...',
     logout: 'Đăng xuất',
     passwordStrength: {
@@ -74,107 +74,96 @@ export const copyVi = {
 
   exercise: {
     correctHeadings: [
-      'CHÍNH XÁC TUYỆT ĐỐI!',
-      'CHUẨN KHÔNG CẦN CHỈNH!',
-      'QUÁ XUẤT SẮC LUÔN!',
-      'ĐỈNH NÓC KỊCH TRẦN!',
-      'TUYỆT VỜI ÔNG MẶT TRỜI!',
-      'BẮT TRÚNG BẢN CHẤT RỒI!',
+      'Đúng rồi!',
+      'Chính xác!',
+      'Làm tốt lắm!',
+      'Chuẩn!',
     ],
     correctSubtitles: [
-      'Bạn đã làm chủ dạng bài này một cách xuất sắc! (+10 XP)',
-      'Tư duy cực kỳ sắc bén, bỏ túi thêm kiến thức xịn sò! (+10 XP)',
-      'Phản xạ tuyệt đỉnh! Cứ phong độ này thì thủ khoa trong tầm tay! (+10 XP)',
-      'Bài toán khó cũng không làm khó được bạn! Nhận ngay +10 XP!',
-      'Chính xác! Bạn đang tiến bộ rõ rệt từng ngày đấy! (+10 XP)',
+      'Bạn nắm được dạng bài này rồi.',
+      'Lập luận rất gọn.',
+      'Giữ nhịp này nhé.',
+      'Bài này khó mà bạn vẫn làm đúng.',
     ],
     wrongHeadings: [
-      'CHƯA CHÍNH XÁC RỒI!',
-      'SUÝT NỮA LÀ ĐÚNG!',
-      'CỐ LÊN NÀO!',
-      'ĐỪNG NẢN LÒNG NHÉ!',
-      'VẤP MỘT CHÚT THÔI!',
+      'Chưa đúng',
+      'Gần được rồi',
+      'Thử lại nhé',
     ],
     wrongSubtitles: [
-      'Không sao cả! Các nhà khoa học vĩ đại cũng phải thử nhiều lần mới thành công.',
-      'Bình tĩnh nhé! Đọc kỹ gợi ý từng bước bên dưới là bạn sẽ ngộ ra ngay thôi.',
-      'Sai sót là mẹ thành công! Xem lại bản chất phản ứng rồi chuẩn bị phục thù nhé.',
-      'Chỉ nhầm lẫn một chi tiết nhỏ thôi, đọc giải thích là nhớ mãi không quên!',
+      'Đọc gợi ý bên dưới rồi làm lại.',
+      'Xem lại từng bước, chỗ sai thường nằm ở một chi tiết nhỏ.',
+      'Sai một lần giúp nhớ lâu hơn. Xem lời giải nhé.',
     ],
     partialHeadings: [
-      'GẦN ĐÚNG RỒI!',
-      'ĐƯỢC MỘT NỬA RỒI ĐẤY!',
-      'THIẾU CHÚT XÍU NỮA!',
+      'Gần đúng rồi!',
+      'Được một nửa rồi',
     ],
     partialSubtitles: [
-      'Bạn đã đi đúng hướng, chỉ cần để ý thêm điều kiện hoặc đơn vị một chút nữa thôi!',
-      'Rất đáng khen! Hoàn thiện nốt phần còn lại là ghi trọn điểm số!',
+      'Hướng đi đúng, kiểm tra lại điều kiện hoặc đơn vị.',
+      'Còn một phần nữa thôi.',
     ],
-    hint: 'Gợi ý giải bài',
-    explanation: 'Giải thích bản chất',
-    solution: 'Đáp án chuẩn',
-    attemptsLeft: (count: number) => `Còn lại ${count} lượt thử sức!`,
+    hint: 'Gợi ý',
+    explanation: 'Giải thích',
+    solution: 'Đáp án',
+    attemptsLeft: (count: number) => `Còn ${count} lượt thử`,
   },
-
   streak: {
-    title: 'Chuỗi Ngày Học Tập',
-    keepFireAlive: 'Giữ ngọn lửa chăm chỉ bùng cháy mỗi ngày!',
+    title: 'Chuỗi ngày học',
+    keepFireAlive: 'Mỗi ngày làm ít nhất 1 bài để giữ chuỗi.',
     levels: {
-      starter: 'Khởi đầu tuyệt vời! Ngọn lửa học tập đã chính thức bốc cháy!',
-      building: (days: number) => `Chuỗi ${days} ngày kiên trì! Bạn đang xây thói quen của một học sinh xuất sắc!`,
-      master: (days: number) => `Chuỗi ${days} ngày bất bại! Đỉnh cao của sự bền bỉ, cực kỳ đáng nể phục!`,
-      legend: (days: number) => `Huyền thoại ${days} ngày! Bạn chính là nguồn cảm hứng sáng chói cho phòng lab!`,
+      starter: 'Khởi đầu tốt. Mai quay lại nhé.',
+      building: (days: number) => `${days} ngày liên tiếp. Thói quen đang hình thành.`,
+      master: (days: number) => `${days} ngày liên tiếp, rất đều đặn.`,
+      legend: (days: number) => `${days} ngày liên tiếp. Ít ai giữ được lâu như vậy.`,
     },
   },
-
   shop: {
     hero: {
-      badge: 'Cửa Hàng Tiếp Tế Phòng Lab',
-      title: 'Kho Trang Bị & Tiếp Sức',
-      desc: 'Dùng Đá quý thu thập từ các bài tập để nạp đầy bình Tim, trang bị khiên băng bảo vệ và bứt tốc kinh nghiệm!',
+      badge: 'Cửa hàng',
+      title: 'Đổi đá quý',
+      desc: 'Dùng đá quý kiếm được khi học để mua tim, khiên giữ chuỗi hoặc nhân đôi XP.',
     },
     items: {
       heartSingle: {
-        title: 'Hồi 1 Bình Tim',
-        desc: 'Tiếp sức ngay 1 tim năng lượng để bạn thoải mái giải tiếp các bài tập đang dang dở.',
+        title: '1 tim',
+        desc: 'Thêm 1 tim để làm tiếp bài đang dở.',
       },
       heartFull: {
-        title: 'Bơm Trọn Vẹn 5/5 Tim',
-        desc: 'Nạp đầy 5 bình năng lượng tức thì, cày cuốc thâu đêm không lo gián đoạn!',
-        badge: 'Gói Siêu Tiết Kiệm',
+        title: 'Đầy 10 tim',
+        desc: 'Nạp đầy tim một lần.',
+        badge: 'Tiết kiệm hơn',
       },
       streakFreeze: {
-        title: 'Khiên Băng Chuỗi Ngày',
-        desc: 'Đóng băng ngọn lửa Streak an toàn khi bạn bận rộn không thể vào học suốt 1 ngày.',
+        title: 'Khiên giữ chuỗi',
+        desc: 'Giữ chuỗi ngày học nếu bạn nghỉ 1 ngày.',
       },
       xpBoost: {
-        title: 'Bình Nhân Đôi XP (2X)',
-        desc: 'Nhân đôi toàn bộ điểm kinh nghiệm nhận được trong tất cả bài tập suốt 15 phút rực lửa!',
+        title: 'Nhân đôi XP',
+        desc: 'Mọi bài làm trong 15 phút được gấp đôi XP.',
       },
       chest: {
-        title: 'Rương Kho Báu Bí Mật Phòng Lab',
-        desc: 'Mở nắp kho báu vàng óng với cơ hội nhận tới +300 Đá quý, bình Tim đầy hoặc kho XP khổng lồ!',
+        title: 'Rương ngẫu nhiên',
+        desc: 'Có thể ra đá quý (tối đa 300), đầy tim hoặc XP.',
       },
     },
     status: {
-      fullHearts: 'ĐÃ ĐẦY TIM (5/5)',
-      maxShield: 'ĐÃ TRANG BỊ TỐI ĐA (2/2)',
-      activeBoost: (timeStr: string) => `Đang kích hoạt: ${timeStr}`,
-      needMoreGems: (amount: number) => `Cần thêm ${amount} Đá quý`,
+      fullHearts: 'Đã đầy tim (10/10)',
+      maxShield: 'Đã có tối đa (2/2)',
+      activeBoost: (timeStr: string) => `Đang bật: còn ${timeStr}`,
+      needMoreGems: (amount: number) => `Cần thêm ${amount} đá quý`,
     },
   },
-
   sessionComplete: {
-    practiceTitle: 'Hoàn Thành Thao Trường Luyện Tập!',
-    learnTitle: 'Xuất Sắc Vượt Qua Chặng Học!',
-    practiceBadge: 'Luyện tập xuất sắc',
-    learnBadge: 'Chinh phục chặng thành công',
-    perfectSub: 'Đỉnh cao phong độ! Bạn không phạm một lỗi sai nào trong suốt cả bài học!',
+    practiceTitle: 'Xong buổi luyện tập',
+    learnTitle: 'Xong bài học',
+    practiceBadge: 'Luyện tập',
+    learnBadge: 'Hoàn thành',
+    perfectSub: 'Không sai câu nào.',
     goodSub: (correct: number, total: number) =>
-      `Bạn đã xuất sắc trả lời đúng ${correct}/${total} câu hỏi, tiếp tục giữ vững đà tiến lên nhé!`,
-    continueButton: 'TIẾP TỤC BÀI HỌC',
+      `Bạn làm đúng ${correct}/${total} câu.`,
+    continueButton: 'Học tiếp',
   },
-
   voice: {
     chem: CHEM_CORRECT_PRAISE_LINES,
     bio: BIO_CORRECT_PRAISE_LINES,

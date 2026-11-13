@@ -34,7 +34,7 @@ describe('SnakePath Component (M3)', () => {
 
   it('renders start badge for active node', () => {
     render(<SnakePath nodes={mockNodes} onNodeClick={vi.fn()} subject="chem" />);
-    expect(screen.getByText('BẮT ĐẦU')).toBeInTheDocument();
+    expect(screen.getByText('Bắt đầu')).toBeInTheDocument();
   });
 
   it('triggers onNodeClick callback when clicking a node', () => {

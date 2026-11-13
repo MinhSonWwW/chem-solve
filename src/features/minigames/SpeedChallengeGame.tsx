@@ -19,7 +19,7 @@ interface SpeedQuestion {
 const SPEED_QUESTIONS_POOL: SpeedQuestion[] = [
   {
     id: 'sq-1',
-    prompt: 'Khối lượng mol của khí Oxi (O2) là:',
+    prompt: 'Khối lượng mol của khí oxygen (O2) là:',
     formula: 'O2',
     options: ['16 g/mol', '32 g/mol', '24 g/mol', '48 g/mol'],
     correctAnswer: '32 g/mol',
@@ -33,7 +33,7 @@ const SPEED_QUESTIONS_POOL: SpeedQuestion[] = [
   },
   {
     id: 'sq-3',
-    prompt: 'Khối lượng mol của khí Cacbonic (CO2) là:',
+    prompt: 'Khối lượng mol của khí carbon dioxide (CO2) là:',
     formula: 'CO2',
     options: ['28 g/mol', '44 g/mol', '32 g/mol', '40 g/mol'],
     correctAnswer: '44 g/mol',
@@ -77,14 +77,14 @@ const SPEED_QUESTIONS_POOL: SpeedQuestion[] = [
   },
   {
     id: 'sq-10',
-    prompt: 'Khối lượng mol của Canxi cacbonat (CaCO3) là:',
+    prompt: 'Khối lượng mol của calcium carbonate (CaCO3) là:',
     formula: 'CaCO3',
     options: ['100 g/mol', '96 g/mol', '106 g/mol', '84 g/mol'],
     correctAnswer: '100 g/mol',
   },
   {
     id: 'sq-11',
-    prompt: 'Khối lượng mol của Natri hiđroxit (NaOH) là:',
+    prompt: 'Khối lượng mol của sodium hydroxide (NaOH) là:',
     formula: 'NaOH',
     options: ['39 g/mol', '40 g/mol', '56 g/mol', '41 g/mol'],
     correctAnswer: '40 g/mol',
@@ -97,7 +97,7 @@ const SPEED_QUESTIONS_POOL: SpeedQuestion[] = [
   },
   {
     id: 'sq-13',
-    prompt: 'Axit sunfuric có công thức hóa học là:',
+    prompt: 'Sulfuric acid có công thức hóa học là:',
     options: ['HCl', 'HNO3', 'H2SO4', 'H2SO3'],
     correctAnswer: 'H2SO4',
   },
@@ -132,14 +132,19 @@ export const SpeedChallengeGame: React.FC<{ onExit: () => void }> = ({ onExit })
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
 
-  // Shuffle questions according to active subject
+  // Shuffle questions according to active subject and randomize options order
   const shuffledQuestions = useMemo(() => {
     const pool = isBio
       ? (biologySpeedQuestions as SpeedQuestion[])
       : isPhysics
       ? (physicsSpeedQuestions as SpeedQuestion[])
       : SPEED_QUESTIONS_POOL;
-    return [...pool].sort(() => 0.5 - Math.random());
+    return [...pool]
+      .sort(() => 0.5 - Math.random())
+      .map((q) => ({
+        ...q,
+        options: [...q.options].sort(() => 0.5 - Math.random()),
+      }));
   }, [isPhysics, isBio]);
 
   const currentQ = shuffledQuestions[currentIndex % shuffledQuestions.length];
@@ -220,7 +225,7 @@ export const SpeedChallengeGame: React.FC<{ onExit: () => void }> = ({ onExit })
         {/* Rapid Question Counter */}
         <div className="flex items-center justify-between text-xs px-1">
           <span className="text-slate-400">Câu số: {currentIndex + 1}</span>
-          <span className="flex items-center gap-1 text-amber-400 font-bold">
+          <span className="flex items-center gap-1 text-[var(--gold-fg)] font-bold">
             <Zap className="w-3.5 h-3.5" /> Phản xạ nhanh
           </span>
         </div>

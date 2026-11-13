@@ -142,7 +142,7 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
         className="space-y-1.5 relative z-10"
       >
         <div
-          className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full border text-[11px] font-black tracking-wider uppercase mb-1 bg-[var(--subject-tint)] border-[var(--subject-edge)] text-[var(--subject-fg)]"
+          className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full border text-xs font-black mb-1 bg-[var(--subject-tint)] border-[var(--subject-edge)] text-[var(--subject-fg)]"
         >
           <Award className="w-3.5 h-3.5" />
           <span>{isPractice ? 'Luyện tập xuất sắc' : cfg.badgeText}</span>
@@ -237,9 +237,9 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
             sound.playClick();
             onContinue();
           }}
-          className="transition-all font-black text-base tracking-wider"
+          className="transition-all font-black text-base "
         >
-          TIẾP TỤC BÀI HỌC
+          Tiếp tục bài học
           <ArrowRight className="w-5 h-5 ml-1" />
         </Button>
       </motion.div>

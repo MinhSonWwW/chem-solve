@@ -9,9 +9,14 @@ import substancesData from '@/content/kb/substances.json';
 import physicsSortItems from '@/content/kb/physics/sort-items.json';
 import biologySortItems from '@/content/kb/biology/sort-items.json';
 
+/** Prefer the SGK Kết nối tri thức (IUPAC) name when the KB provides one. */
+const displayName = (s: { nameVi: string; nameSgk?: string }) => s.nameSgk ?? s.nameVi;
+
 interface Substance {
   formula: string;
   nameVi: string;
+  /** SGK Kết nối tri thức (IUPAC) name — preferred for display. */
+  nameSgk?: string;
   type: string;
 }
 
@@ -50,13 +55,13 @@ const CATEGORIES: CategoryConfig[] = [
   {
     key: 'acid',
     label: 'Acid',
-    subtitle: 'Axit',
+    subtitle: 'Acid',
     desc: 'Bắt đầu bằng H...',
     theme: {
       text: 'text-[var(--err-fg)]',
       border: 'border-[var(--err)]/40 hover:border-[var(--err)]',
       borderActive: 'border-[var(--err)] ring-4 ring-[var(--err)]/30',
-      bg: 'from-[var(--err-subtle)] to-[var(--bg-surface)]',
+      bg: 'bg-[var(--err-subtle)]',
       glow: 'var(--err)',
       liquid: 'var(--err)',
       accent: 'var(--err-hover)',
@@ -66,13 +71,13 @@ const CATEGORIES: CategoryConfig[] = [
   {
     key: 'base',
     label: 'Base',
-    subtitle: 'Bazơ',
+    subtitle: 'Base',
     desc: 'Kim loại + nhóm -OH',
     theme: {
       text: 'text-[var(--chem-fg)]',
       border: 'border-[var(--chem)]/40 hover:border-[var(--chem)]',
       borderActive: 'border-[var(--chem)] ring-4 ring-[var(--chem)]/30',
-      bg: 'from-[var(--chem-subtle)] to-[var(--bg-surface)]',
+      bg: 'bg-[var(--chem-subtle)]',
       glow: 'var(--chem)',
       liquid: 'var(--chem)',
       accent: 'var(--chem-hover)',
@@ -83,12 +88,12 @@ const CATEGORIES: CategoryConfig[] = [
     key: 'oxide',
     label: 'Oxide',
     subtitle: 'Oxide kim/phi kim',
-    desc: 'Nguyên tố + Oxi',
+    desc: 'Nguyên tố + Oxygen',
     theme: {
       text: 'text-[var(--warn-fg)]',
       border: 'border-[var(--warn)]/40 hover:border-[var(--warn)]',
       borderActive: 'border-[var(--warn)] ring-4 ring-[var(--warn)]/30',
-      bg: 'from-[var(--warn-subtle)] to-[var(--bg-surface)]',
+      bg: 'bg-[var(--warn-subtle)]',
       glow: 'var(--warn)',
       liquid: 'var(--warn)',
       accent: 'var(--warn-hover)',
@@ -104,7 +109,7 @@ const CATEGORIES: CategoryConfig[] = [
       text: 'text-[var(--bio-fg)]',
       border: 'border-[var(--bio)]/40 hover:border-[var(--bio)]',
       borderActive: 'border-[var(--bio)] ring-4 ring-[var(--bio)]/30',
-      bg: 'from-[var(--bio-subtle)] to-[var(--bg-surface)]',
+      bg: 'bg-[var(--bio-subtle)]',
       glow: 'var(--bio)',
       liquid: 'var(--bio)',
       accent: 'var(--bio-hover)',
@@ -123,7 +128,7 @@ const PHYSICS_CATEGORIES: CategoryConfig[] = [
       text: 'text-[var(--warn-fg)]',
       border: 'border-[var(--warn)]/40 hover:border-[var(--warn)]',
       borderActive: 'border-[var(--warn)] ring-4 ring-[var(--warn)]/30',
-      bg: 'from-[var(--warn-subtle)] to-[var(--bg-surface)]',
+      bg: 'bg-[var(--warn-subtle)]',
       glow: 'var(--warn)',
       liquid: 'var(--warn)',
       accent: 'var(--warn-hover)',
@@ -139,7 +144,7 @@ const PHYSICS_CATEGORIES: CategoryConfig[] = [
       text: 'text-[var(--err-fg)]',
       border: 'border-[var(--err)]/40 hover:border-[var(--err)]',
       borderActive: 'border-[var(--err)] ring-4 ring-[var(--err)]/30',
-      bg: 'from-[var(--err-subtle)] to-[var(--bg-surface)]',
+      bg: 'bg-[var(--err-subtle)]',
       glow: 'var(--err)',
       liquid: 'var(--err)',
       accent: 'var(--err-hover)',
@@ -155,7 +160,7 @@ const PHYSICS_CATEGORIES: CategoryConfig[] = [
       text: 'text-[var(--chem-fg)]',
       border: 'border-[var(--chem)]/40 hover:border-[var(--chem)]',
       borderActive: 'border-[var(--chem)] ring-4 ring-[var(--chem)]/30',
-      bg: 'from-[var(--chem-subtle)] to-[var(--bg-surface)]',
+      bg: 'bg-[var(--chem-subtle)]',
       glow: 'var(--chem)',
       liquid: 'var(--chem)',
       accent: 'var(--chem-hover)',
@@ -171,7 +176,7 @@ const PHYSICS_CATEGORIES: CategoryConfig[] = [
       text: 'text-[var(--bio-fg)]',
       border: 'border-[var(--bio)]/40 hover:border-[var(--bio)]',
       borderActive: 'border-[var(--bio)] ring-4 ring-[var(--bio)]/30',
-      bg: 'from-[var(--bio-subtle)] to-[var(--bg-surface)]',
+      bg: 'bg-[var(--bio-subtle)]',
       glow: 'var(--bio)',
       liquid: 'var(--bio)',
       accent: 'var(--bio-hover)',
@@ -190,7 +195,7 @@ const BIOLOGY_CATEGORIES: CategoryConfig[] = [
       text: 'text-[var(--bio-fg)]',
       border: 'border-[var(--bio)]/40 hover:border-[var(--bio)]',
       borderActive: 'border-[var(--bio)] ring-4 ring-[var(--bio)]/30',
-      bg: 'from-[var(--bio-subtle)] to-[var(--bg-surface)]',
+      bg: 'bg-[var(--bio-subtle)]',
       glow: 'var(--bio)',
       liquid: 'var(--bio)',
       accent: 'var(--bio-hover)',
@@ -206,7 +211,7 @@ const BIOLOGY_CATEGORIES: CategoryConfig[] = [
       text: 'text-[var(--err-fg)]',
       border: 'border-[var(--err)]/40 hover:border-[var(--err)]',
       borderActive: 'border-[var(--err)] ring-4 ring-[var(--err)]/30',
-      bg: 'from-[var(--err-subtle)] to-[var(--bg-surface)]',
+      bg: 'bg-[var(--err-subtle)]',
       glow: 'var(--err)',
       liquid: 'var(--err)',
       accent: 'var(--err-hover)',
@@ -222,7 +227,7 @@ const BIOLOGY_CATEGORIES: CategoryConfig[] = [
       text: 'text-[var(--chem-fg)]',
       border: 'border-[var(--chem)]/40 hover:border-[var(--chem)]',
       borderActive: 'border-[var(--chem)] ring-4 ring-[var(--chem)]/30',
-      bg: 'from-[var(--chem-subtle)] to-[var(--bg-surface)]',
+      bg: 'bg-[var(--chem-subtle)]',
       glow: 'var(--chem)',
       liquid: 'var(--chem)',
       accent: 'var(--chem-hover)',
@@ -238,7 +243,7 @@ const BIOLOGY_CATEGORIES: CategoryConfig[] = [
       text: 'text-[var(--warn-fg)]',
       border: 'border-[var(--warn)]/40 hover:border-[var(--warn)]',
       borderActive: 'border-[var(--warn)] ring-4 ring-[var(--warn)]/30',
-      bg: 'from-[var(--warn-subtle)] to-[var(--bg-surface)]',
+      bg: 'bg-[var(--warn-subtle)]',
       glow: 'var(--warn)',
       liquid: 'var(--warn)',
       accent: 'var(--warn-hover)',
@@ -499,8 +504,8 @@ export const SortGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
             {isPhysics ? 'Khái niệm' : 'Chất'}{' '}
             <span className="text-[var(--chem-fg)] font-black">{currentIndex + 1}</span> / {roundSubstances.length}
           </span>
-          <span className="text-[11px] font-black uppercase tracking-wider text-slate-400 flex items-center gap-1">
-            <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+          <span className="text-xs font-black text-slate-400 flex items-center gap-1">
+            <Sparkles className="w-3.5 h-3.5 text-[var(--gold-fg)]" />
             Nhấn chọn bình tương ứng
           </span>
         </div>
@@ -522,15 +527,15 @@ export const SortGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                   : 'bg-[var(--bg-surface)] border-[var(--border)] shadow-[0_4px_0_0_var(--border-strong)]'
               }`}
             >
-              <div className="text-[10px] font-black uppercase tracking-widest text-[var(--chem-fg)] mb-1">
-                {isPhysics ? 'KHÁI NIỆM / CÔNG THỨC' : 'MẪU THỬ HÓA CHẤT'}
+              <div className="text-[11px] font-black text-[var(--chem-fg)] mb-1">
+                {isPhysics ? 'Khái niệm / công thức' : 'Mẫu thử hóa chất'}
               </div>
 
-              <div className="text-2xl sm:text-3xl font-black text-[var(--fg-default)] mb-1 tracking-wider font-mono">
+              <div className="text-2xl sm:text-3xl font-black text-[var(--fg-default)] mb-1 font-mono">
                 {isPhysics ? currentItem?.formula : <Formula formula={currentItem?.formula || ''} />}
               </div>
 
-              <p className="text-sm text-[var(--fg-muted)] font-semibold">{currentItem?.nameVi}</p>
+              <p className="text-sm text-[var(--fg-muted)] font-semibold">{currentItem ? displayName(currentItem) : null}</p>
 
               {/* Instant feedback explanation if wrong */}
               {lastFeedback && !lastFeedback.correct && (
@@ -572,11 +577,11 @@ export const SortGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                 whileHover={{ y: -2 }}
                 disabled={!!lastFeedback}
                 onClick={() => handleSelectCategory(cat.key)}
-                className={`p-3.5 sm:p-4 rounded-3xl border-2 bg-gradient-to-b ${cat.theme.bg} ${
+                className={`p-3.5 sm:p-4 rounded-3xl border-2 ${cat.theme.bg} ${
                   isChosenCorrect
                     ? 'border-[var(--ok)] ring-4 ring-[var(--ok)]/40 shadow-[0_4px_0_0_var(--ok-shade)]'
                     : isTargetOfWrong
-                    ? 'border-[var(--ok)] ring-2 ring-[var(--ok)] animate-pulse'
+                    ? 'border-[var(--ok)] ring-2 ring-[var(--ok)] '
                     : isChosenWrong
                     ? 'border-[var(--err)] opacity-50'
                     : cat.theme.border
@@ -600,11 +605,11 @@ export const SortGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
                     <span className={`text-base sm:text-lg font-black tracking-wide ${cat.theme.text}`}>
                       {cat.label}
                     </span>
-                    <span className="text-[10px] text-slate-500 font-bold truncate">
+                    <span className="text-[11px] text-slate-500 font-bold truncate">
                       ({cat.subtitle})
                     </span>
                   </div>
-                  <span className="text-[11px] text-slate-400 font-medium block mt-0.5 leading-snug line-clamp-1">
+                  <span className="text-xs text-slate-400 font-medium block mt-0.5 leading-snug line-clamp-1">
                     {cat.desc}
                   </span>
                 </div>

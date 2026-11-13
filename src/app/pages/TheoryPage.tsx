@@ -78,7 +78,7 @@ export const TheoryPage: React.FC = () => {
   if (loading) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[80dvh] px-4 select-none" data-subject={subject}>
-        <div className="w-16 h-16 rounded-3xl bg-[var(--bg-surface)] border border-[var(--border)] flex items-center justify-center animate-pulse">
+        <div className="w-16 h-16 rounded-3xl bg-[var(--bg-surface)] border border-[var(--border)] flex items-center justify-center ">
           <BookOpen className="w-8 h-8 text-[var(--subject-fg)]" />
         </div>
         <p className="mt-4 text-sm font-bold text-[var(--text-secondary)]">Đang chuẩn bị kiến thức trọng tâm…</p>
@@ -91,7 +91,7 @@ export const TheoryPage: React.FC = () => {
       <div className="flex flex-col items-center justify-center min-h-[70dvh] px-4 text-center" data-subject={subject}>
         <p className="text-sm text-[var(--err-fg)] font-bold mb-4">{error ?? 'Lỗi không xác định'}</p>
         <Button variant="primary" onClick={() => navigate(-1)}>
-          QUAY LẠI
+          Quay lại
         </Button>
       </div>
     );
@@ -183,7 +183,7 @@ export const TheoryPage: React.FC = () => {
             })}
           </div>
 
-          <div className="flex items-center gap-1 px-2.5 py-1 rounded-xl text-[11px] font-black border border-[var(--gold-edge)]/30 bg-[var(--gold-tint)] text-[var(--gold-fg)]">
+          <div className="flex items-center gap-1 px-2.5 py-1 rounded-xl text-xs font-black border border-[var(--gold-edge)]/30 bg-[var(--gold-tint)] text-[var(--gold-fg)]">
             <Sparkles className="w-3.5 h-3.5 text-[var(--gold-fg)]" />
             <span>+10 XP</span>
           </div>
@@ -207,7 +207,7 @@ export const TheoryPage: React.FC = () => {
               </div>
 
               <div className="space-y-2">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wide border border-[var(--subject-edge)]/40 bg-[var(--subject-tint)] text-[var(--subject-fg)]">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide border border-[var(--subject-edge)]/40 bg-[var(--subject-tint)] text-[var(--subject-fg)]">
                   <Award className="w-4 h-4" /> Hoàn thành bài học
                 </span>
                 <h1 className="text-2xl font-black text-[var(--text-primary)]">Xuất sắc!</h1>
@@ -235,7 +235,7 @@ export const TheoryPage: React.FC = () => {
                   fullWidth
                   onClick={handleExitOrFinish}
                 >
-                  TIẾP TỤC HÀNH TRÌNH
+                  Tiếp tục hành trình
                 </Button>
               </div>
             </motion.div>
@@ -309,7 +309,7 @@ export const TheoryPage: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     className="p-3.5 rounded-2xl border border-[var(--border)] bg-[var(--bg-surface-2)] text-xs leading-relaxed text-[var(--text-secondary)]"
                   >
-                    💡 {renderFormulaText(theory.quickCheck.explanation)}
+                    {renderFormulaText(theory.quickCheck.explanation)}
                   </motion.div>
                 )}
               </div>
@@ -416,7 +416,7 @@ export const TheoryPage: React.FC = () => {
                 disabled={!selectedOption}
                 onClick={handleCheckAnswer}
               >
-                KIỂM TRA
+                Kiểm tra
               </Button>
             ) : (
               <Button
@@ -425,7 +425,7 @@ export const TheoryPage: React.FC = () => {
                 fullWidth
                 onClick={handleFinish}
               >
-                HOÀN THÀNH
+                Hoàn thành
               </Button>
             )
           ) : (
@@ -436,7 +436,7 @@ export const TheoryPage: React.FC = () => {
               onClick={handleNext}
               className="font-black flex items-center justify-center gap-2"
             >
-              <span>{currentSlide === totalSlides - 1 ? 'HOÀN THÀNH' : 'TIẾP THEO'}</span>
+              <span>{currentSlide === totalSlides - 1 ? 'Hoàn thành' : 'Tiếp theo'}</span>
               <ArrowRight className="w-4 h-4 stroke-[3]" />
             </Button>
           )}

@@ -1,4 +1,5 @@
 import React, { Suspense, useEffect } from 'react';
+import { Loader2 } from 'lucide-react';
 import { Outlet, useLocation } from 'react-router-dom';
 import { TopHeader } from './TopHeader';
 import { BottomNav } from './BottomNav';
@@ -7,12 +8,11 @@ import { DesktopRightSidebar } from './DesktopRightSidebar';
 import { useActiveSubject } from '@/content/subjects';
 
 export const PageLoadingFallback: React.FC = () => (
-  <div className="flex flex-col items-center justify-center min-h-[50vh] py-16 text-center select-none animate-pulse">
-    <div className="w-16 h-16 rounded-2xl bg-[var(--bg-surface-2)] border border-[var(--border)] flex items-center justify-center text-3xl mb-3 shadow-[var(--shadow-modal)] animate-bounce">
-      🧪
+  <div className="flex flex-col items-center justify-center min-h-[50vh] py-16 text-center select-none ">
+    <div className="w-16 h-16 rounded-2xl bg-[var(--bg-surface-2)] border border-[var(--border)] flex items-center justify-center mb-3">
+      <Loader2 className="w-7 h-7 text-[var(--subject-fg)] animate-spin motion-reduce:animate-none" />
     </div>
-    <div className="text-sm font-black text-[var(--text-primary)]">Đang chuẩn bị nội dung...</div>
-    <div className="text-xs text-[var(--text-tertiary)] mt-1">Hệ thống đang tải tài nguyên bài học</div>
+    <div className="text-sm font-black text-[var(--text-primary)]">Đang tải bài học…</div>
   </div>
 );
 

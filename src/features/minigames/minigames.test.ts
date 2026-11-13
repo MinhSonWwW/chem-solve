@@ -221,6 +221,8 @@ describe('Minigames Engine Tests', () => {
       expect(minigames.EquationBalanceGame).toBeDefined();
       expect(minigames.FormulaBuilderGame).toBeDefined();
       expect(minigames.ReactionBuilderGame).toBeDefined();
+      expect(minigames.FormulaMeteorDefenseGame).toBeDefined();
+      expect(minigames.EcoRescueLabGame).toBeDefined();
     });
   });
 });

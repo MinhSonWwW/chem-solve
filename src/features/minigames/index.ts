@@ -11,6 +11,8 @@ export * from './TitrationLabGame';
 export * from './CircuitMasterGame';
 export * from './OpticsBenchGame';
 export * from './MicroscopeFocusGame';
+export * from './FormulaMeteorDefenseGame';
+export * from './EcoRescueLabGame';
 export * from './ScientificMinigameRunner';
 export * from './CatalogMinigames';
 export * from './minigameCatalog';

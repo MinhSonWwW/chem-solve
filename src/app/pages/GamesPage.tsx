@@ -14,6 +14,8 @@ import {
   CircuitMasterGame,
   OpticsBenchGame,
   MicroscopeFocusGame,
+  FormulaMeteorDefenseGame,
+  EcoRescueLabGame,
   ScientificMinigameRunner,
   MINIGAME_CATALOG,
 } from '@/features/minigames';
@@ -32,6 +34,12 @@ export const GamesPage: React.FC = () => {
   }
 
   // 1. Check specialized minigame components
+  if (gameId === 'formula-meteor' || gameId === 'meteor-defense') {
+    return <FormulaMeteorDefenseGame onExit={handleExitGame} />;
+  }
+  if (gameId === 'eco-rescue' || gameId === 'eco-lab') {
+    return <EcoRescueLabGame onExit={handleExitGame} />;
+  }
   if (gameId === 'blood-transfusion') {
     return <BloodTransfusionGame onExit={handleExitGame} />;
   }

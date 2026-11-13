@@ -63,7 +63,7 @@ export const PhysicsVisualizer: React.FC<PhysicsVisualizerProps> = ({
       {/* Clean container frame */}
       
 
-      {mode === 'spring-scale' && <SpringScaleWidget initialMass={params?.mass ?? initialValue ?? 100} />}
+      {mode === 'spring-scale' && <SpringScaleWidget initialMass={springInitialGrams(params?.mass, initialValue)} />}
       {mode === 'moon-phases' && <MoonPhasesWidget />}
       {mode === 'ruler-measurement' && <RulerMeasurementWidget initialLength={initialValue ?? 6.8} />}
       {mode === 'thermometer' && <ThermometerWidget initialTemp={initialValue ?? 37} />}
@@ -92,6 +92,16 @@ export const PhysicsVisualizer: React.FC<PhysicsVisualizerProps> = ({
     </div>
   );
 };
+
+/**
+ * The spring widget works in grams with a 0–3 N gauge, but `params.mass` is in kg
+ * (see ExercisePage physicsParams). Convert, and fall back to 100 g when the value
+ * is missing or outside what the illustrative gauge can show.
+ */
+function springInitialGrams(massKg: number | undefined, initialValue: number | undefined): number {
+  const grams = massKg != null ? Math.round(massKg * 1000) : initialValue;
+  return grams != null && grams >= 10 && grams <= 300 ? grams : 100;
+}
 
 // ── 1. Spring Scale Widget (Lò xo & Lực kế) ──
 const SpringScaleWidget: React.FC<{ initialMass: number }> = ({ initialMass }) => {
@@ -146,7 +156,7 @@ const SpringScaleWidget: React.FC<{ initialMass: number }> = ({ initialMass }) =
             className="flex flex-col items-center -mt-1"
           >
             <div className="w-2.5 h-3 border-2 border-slate-400 rounded-b-full border-t-0" />
-            <div className="px-2.5 py-1 rounded-lg bg-gradient-to-b from-amber-600 to-amber-700 border border-amber-400 text-[11px] font-black text-white shadow-md flex items-center gap-1">
+            <div className="px-2.5 py-1 rounded-lg border border-amber-400 text-xs font-black text-white shadow-md flex items-center gap-1 bg-amber-600">
               <Weight className="w-3 h-3" />
               <span>{mass} g</span>
             </div>
@@ -154,15 +164,15 @@ const SpringScaleWidget: React.FC<{ initialMass: number }> = ({ initialMass }) =
         </div>
 
         {/* Newton Gauge Ruler */}
-        <div className="h-32 w-16 bg-[var(--bg-canvas)] border border-slate-700/80 rounded-xl p-1.5 flex flex-col justify-between text-[10px] font-bold text-slate-400 relative">
-          <div className="text-[9px] text-center font-black text-amber-400 uppercase tracking-wider border-b border-slate-700 pb-0.5">
+        <div className="h-32 w-16 bg-[var(--bg-canvas)] border border-slate-700/80 rounded-xl p-1.5 flex flex-col justify-between text-[11px] font-bold text-slate-400 relative">
+          <div className="text-[11px] text-center font-black text-[var(--gold-fg)] border-b border-slate-700 pb-0.5">
             Lực kế (N)
           </div>
           <div className="flex-1 relative my-1">
             {[0, 1, 2, 3].map((val) => (
               <div
                 key={val}
-                className="absolute inset-x-0 flex items-center justify-between text-[9px]"
+                className="absolute inset-x-0 flex items-center justify-between text-[11px]"
                 style={{ top: `${val * 30}%` }}
               >
                 <div className="w-2 h-0.5 bg-slate-500" />
@@ -178,7 +188,7 @@ const SpringScaleWidget: React.FC<{ initialMass: number }> = ({ initialMass }) =
               <div className="w-2 h-2 rounded-full bg-rose-500 -ml-1 shadow-sm" />
             </motion.div>
           </div>
-          <div className="text-center font-black text-rose-400 text-xs">
+          <div className="text-center font-black text-[var(--err-fg)] text-xs">
             {forceN} N
           </div>
         </div>
@@ -187,12 +197,12 @@ const SpringScaleWidget: React.FC<{ initialMass: number }> = ({ initialMass }) =
       {/* Interactive Controls & Note */}
       <div className="flex-1 flex flex-col items-center sm:items-end gap-2 text-center sm:text-right">
         <div className="text-xs text-slate-300">
-          <span className="font-bold text-amber-300">💡 Mô phỏng biến dạng lò xo:</span>
+          <span className="font-bold text-[var(--gold-fg)]">Mô phỏng biến dạng lò xo:</span>
           <br />
           Độ dãn tỉ lệ thuận với khối lượng quả nặng.
         </div>
         <div className="flex items-center gap-1.5 flex-wrap justify-center sm:justify-end">
-          <span className="text-[11px] text-slate-400 mr-1">Thử móc:</span>
+          <span className="text-xs text-slate-400 mr-1">Thử móc:</span>
           {[50, 100, 150, 200].map((m) => (
             <button
               key={m}
@@ -208,7 +218,7 @@ const SpringScaleWidget: React.FC<{ initialMass: number }> = ({ initialMass }) =
             </button>
           ))}
         </div>
-        <div className="text-[10px] text-slate-400 italic">
+        <div className="text-[11px] text-slate-400 italic">
           Khối lượng m = {mass} g → Trọng lượng P = 10 × m ≈ {forceN} N.
         </div>
       </div>
@@ -233,11 +243,11 @@ const MoonPhasesWidget: React.FC = () => {
   return (
     <div className="flex flex-col gap-2.5">
       <div className="flex items-center justify-between text-xs border-b border-slate-800 pb-1.5">
-        <div className="flex items-center gap-1.5 font-bold text-amber-300">
+        <div className="flex items-center gap-1.5 font-bold text-[var(--gold-fg)]">
           <Moon className="w-3.5 h-3.5" />
-          <span>Mô phỏng Pha Mặt Trăng theo chu kỳ Tuần trăng</span>
+          <span>Mô phỏng pha Mặt Trăng theo chu kỳ Tuần trăng</span>
         </div>
-        <span className="text-[11px] text-slate-400">
+        <span className="text-xs text-slate-400">
           Ngày {current.day} Âm lịch
         </span>
       </div>
@@ -257,7 +267,7 @@ const MoonPhasesWidget: React.FC = () => {
                 key={phaseIndex}
                 initial={{ opacity: 0.5, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                className="absolute inset-0 rounded-full bg-gradient-to-r from-amber-200 via-amber-100 to-yellow-200 shadow-sm"
+                className="absolute inset-0 rounded-full shadow-sm bg-amber-200"
                 style={{
                   clipPath:
                     current.lightPct === 0
@@ -275,40 +285,37 @@ const MoonPhasesWidget: React.FC = () => {
           </div>
 
           <div className="flex flex-col">
-            <div className="text-[10px] text-[var(--phy-fg)] font-bold uppercase tracking-wider flex items-center gap-1">
+            <div className="text-[11px] text-[var(--phy-fg)] font-bold flex items-center gap-1">
               <Eye className="w-3 h-3" />
               <span>Góc nhìn từ Trái Đất:</span>
             </div>
             <div className="text-sm font-black text-slate-100">
               {current.name}
             </div>
-            <div className="text-[11px] text-slate-400 max-w-[220px]">
+            <div className="text-xs text-slate-400 max-w-[220px]">
               {current.desc}
             </div>
           </div>
         </div>
 
         {/* Orbit Model diagram */}
-        <div className="flex items-center gap-2 text-[10px] text-slate-400 bg-slate-900/60 border border-slate-800 px-3 py-1.5 rounded-xl">
+        <div className="flex items-center gap-2 text-[11px] text-slate-400 bg-slate-900/60 border border-slate-800 px-3 py-1.5 rounded-xl">
           <div className="flex flex-col items-center">
-            <div className="w-5 h-5 rounded-full bg-[var(--phy-fill)] shadow-sm flex items-center justify-center text-[8px] font-black text-slate-950">
-              🌍
+            <div className="w-5 h-5 rounded-full bg-[var(--phy-fill)] shadow-sm flex items-center justify-center text-[11px] font-black text-slate-950">
             </div>
-            <span className="text-[9px]">Trái Đất</span>
+            <span className="text-[11px]">Trái Đất</span>
           </div>
           <ArrowRight className="w-3.5 h-3.5 text-slate-600" />
           <div className="flex flex-col items-center">
             <div className="w-4 h-4 rounded-full bg-amber-300 shadow-sm flex items-center justify-center text-[7px] font-black text-slate-950">
-              🌕
             </div>
-            <span className="text-[9px]">Mặt Trăng</span>
+            <span className="text-[11px]">Mặt Trăng</span>
           </div>
           <ArrowRight className="w-3.5 h-3.5 text-slate-600" />
           <div className="flex flex-col items-center">
-            <div className="w-6 h-6 rounded-full bg-amber-500 shadow-sm flex items-center justify-center text-[9px]">
-              ☀️
+            <div className="w-6 h-6 rounded-full bg-amber-500 shadow-sm flex items-center justify-center text-[11px]">
             </div>
-            <span className="text-[9px] text-amber-300">Tia nắng</span>
+            <span className="text-[11px] text-[var(--gold-fg)]">Tia nắng</span>
           </div>
         </div>
       </div>
@@ -323,7 +330,7 @@ const MoonPhasesWidget: React.FC = () => {
               setPhaseIndex(idx);
             }}
             className={cn(
-              'px-2 py-1 rounded-lg text-[10px] font-bold whitespace-nowrap transition-all cursor-pointer border',
+              'px-2 py-1 rounded-lg text-[11px] font-bold whitespace-nowrap transition-all cursor-pointer border',
               phaseIndex === idx
                 ? 'bg-amber-500 text-slate-950 border-amber-400 shadow-sm font-black'
                 : 'bg-slate-800/60 text-slate-300 border-slate-700 hover:border-amber-400/50'
@@ -344,12 +351,12 @@ const RulerMeasurementWidget: React.FC<{ initialLength: number }> = ({ initialLe
   return (
     <div className="flex flex-col gap-2">
       <div className="flex items-center justify-between text-xs border-b border-slate-800 pb-1">
-        <span className="font-bold text-amber-300 flex items-center gap-1.5">
+        <span className="font-bold text-[var(--gold-fg)] flex items-center gap-1.5">
           <ZoomIn className="w-3.5 h-3.5" />
           <span>Thước đo chiều dài (ĐCNN = 1 mm, GHĐ = 15 cm)</span>
         </span>
-        <span className="text-[11px] text-slate-400 font-mono">
-          Số đo: <strong className="text-amber-300 text-xs">{lengthCm} cm</strong>
+        <span className="text-xs text-slate-400 font-mono">
+          Số đo: <strong className="text-[var(--gold-fg)] text-xs">{lengthCm} cm</strong>
         </span>
       </div>
 
@@ -359,7 +366,7 @@ const RulerMeasurementWidget: React.FC<{ initialLength: number }> = ({ initialLe
         <motion.div
           animate={{ width: `${(lengthCm / 15) * 100}%` }}
           transition={{ type: 'spring', stiffness: 150, damping: 12 }}
-          className="absolute top-2 left-3 h-5 bg-gradient-to-r from-amber-500 via-orange-400 to-amber-600 rounded-l-md rounded-r-sm shadow-md border-y border-amber-300 flex items-center justify-end pr-1 z-10"
+          className="absolute top-2 left-3 h-5 rounded-l-md rounded-r-sm shadow-md border-y border-amber-300 flex items-center justify-end pr-1 z-10 bg-amber-500"
         >
           {/* Pencil lead tip */}
           <div className="w-0 h-0 border-y-4 border-y-transparent border-l-[7px] border-l-slate-900 -mr-2.5" />
@@ -370,14 +377,14 @@ const RulerMeasurementWidget: React.FC<{ initialLength: number }> = ({ initialLe
           {Array.from({ length: 16 }).map((_, cm) => (
             <div key={cm} className="flex flex-col items-center h-full">
               <div className="w-0.5 h-3.5 bg-slate-900" />
-              <span className="text-[8px] font-black leading-tight mt-0.5">{cm}</span>
+              <span className="text-[11px] font-black leading-tight mt-0.5">{cm}</span>
             </div>
           ))}
         </div>
       </div>
 
       {/* Interactive preset test lengths */}
-      <div className="flex items-center justify-between text-[11px] text-slate-400 pt-0.5">
+      <div className="flex items-center justify-between text-xs text-slate-400 pt-0.5">
         <span>Đổi độ dài vật:</span>
         <div className="flex items-center gap-1.5">
           {[4.5, 6.8, 10.2, 12.5].map((len) => (
@@ -388,7 +395,7 @@ const RulerMeasurementWidget: React.FC<{ initialLength: number }> = ({ initialLe
                 setLengthCm(len);
               }}
               className={cn(
-                'px-2 py-0.5 rounded text-[10px] font-bold border transition-colors cursor-pointer',
+                'px-2 py-0.5 rounded text-[11px] font-bold border transition-colors cursor-pointer',
                 lengthCm === len
                   ? 'bg-amber-500 text-slate-950 border-amber-400 font-black'
                   : 'bg-slate-800 text-slate-300 border-slate-700 hover:border-amber-400/50'
@@ -423,14 +430,14 @@ const ThermometerWidget: React.FC<{ initialTemp: number }> = ({ initialTemp }) =
         </div>
 
         <div className="flex flex-col">
-          <div className="text-[10px] text-amber-400 font-bold uppercase tracking-wider flex items-center gap-1">
+          <div className="text-[11px] text-[var(--gold-fg)] font-bold flex items-center gap-1">
             <Thermometer className="w-3 h-3" />
             <span>Nhiệt độ hiện tại:</span>
           </div>
-          <div className="text-2xl font-black text-rose-400 font-mono">
+          <div className="text-2xl font-black text-[var(--err-fg)] font-mono">
             {temp} °C
           </div>
-          <div className="text-[11px] text-slate-400">
+          <div className="text-xs text-slate-400">
             {temp <= 0 ? 'Nước đóng băng (0 °C)' : temp >= 100 ? 'Nước sôi bốc hơi (100 °C)' : temp === 37 ? 'Thân nhiệt người bình thường' : 'Nhiệt độ phòng mát mẻ'}
           </div>
         </div>
@@ -438,7 +445,7 @@ const ThermometerWidget: React.FC<{ initialTemp: number }> = ({ initialTemp }) =
 
       {/* Preset Temperature Buttons */}
       <div className="flex flex-col gap-1 items-end">
-        <span className="text-[10px] text-slate-400">Các mốc nhiệt độ chuẩn:</span>
+        <span className="text-[11px] text-slate-400">Các mốc nhiệt độ chuẩn:</span>
         <div className="flex flex-wrap gap-1 justify-end max-w-[180px]">
           {[
             { label: '0 °C (Đá tan)', val: 0 },
@@ -453,7 +460,7 @@ const ThermometerWidget: React.FC<{ initialTemp: number }> = ({ initialTemp }) =
                 setTemp(m.val);
               }}
               className={cn(
-                'px-2 py-0.5 rounded text-[10px] font-bold border transition-colors cursor-pointer',
+                'px-2 py-0.5 rounded text-[11px] font-bold border transition-colors cursor-pointer',
                 temp === m.val
                   ? 'bg-rose-500 text-white border-rose-400 font-black shadow-sm'
                   : 'bg-slate-800/80 text-slate-300 border-slate-700 hover:border-rose-400/50'
@@ -471,10 +478,10 @@ const ThermometerWidget: React.FC<{ initialTemp: number }> = ({ initialTemp }) =
 // ── 5. Solar System Mini-Orrery (8 Hành tinh) ──
 const PLANETS = [
   { name: 'Thủy', color: 'var(--ink-muted)', size: 5, note: 'Gần Mặt Trời nhất' },
-  { name: 'Kim', color: 'var(--gold)', size: 7, note: 'Nóng nhất Hệ Mặt Trời' },
+  { name: 'Kim', color: 'var(--gold)', size: 7, note: 'Nóng nhất hệ Mặt Trời' },
   { name: 'Trái Đất', color: 'var(--chem)', size: 8, note: 'Duy nhất có sự sống' },
   { name: 'Hỏa', color: 'var(--err)', size: 6, note: 'Hành tinh Đỏ' },
-  { name: 'Mộc', color: 'var(--warn)', size: 14, note: 'Lớn nhất Hệ Mặt Trời' },
+  { name: 'Mộc', color: 'var(--warn)', size: 14, note: 'Lớn nhất hệ Mặt Trời' },
   { name: 'Thổ', color: 'var(--gold)', size: 12, note: 'Vành đai đẹp nhất' },
   { name: 'Thiên vương', color: 'var(--phy-soft)', size: 9, note: 'Băng khổng lồ' },
   { name: 'Hải vương', color: 'var(--phy)', size: 9, note: 'Xa Mặt Trời nhất' },
@@ -488,11 +495,11 @@ const SolarSystemWidget: React.FC<{ activePlanet?: string }> = ({ activePlanet }
   return (
     <div className="flex flex-col gap-2">
       <div className="flex items-center justify-between text-xs border-b border-slate-800 pb-1">
-        <span className="font-bold text-amber-300 flex items-center gap-1.5">
+        <span className="font-bold text-[var(--gold-fg)] flex items-center gap-1.5">
           <Orbit className="w-3.5 h-3.5" />
           <span>Hệ Mặt Trời — 8 Hành tinh theo thứ tự khoảng cách</span>
         </span>
-        <span className="text-[11px] text-[var(--phy-fg)] font-bold">
+        <span className="text-xs text-[var(--phy-fg)] font-bold">
           Hành tinh #{selectedIdx + 1}: {selected.name} tinh
         </span>
       </div>
@@ -501,10 +508,9 @@ const SolarSystemWidget: React.FC<{ activePlanet?: string }> = ({ activePlanet }
       <div className="flex items-center justify-between gap-1 py-3 px-2 bg-[var(--bg-canvas)] rounded-xl border border-slate-800/80 overflow-x-auto scrollbar-none">
         {/* Sun */}
         <div className="flex flex-col items-center shrink-0">
-          <div className="w-8 h-8 rounded-full bg-gradient-to-r from-amber-400 to-yellow-300 shadow-sm animate-pulse flex items-center justify-center text-xs">
-            ☀️
+          <div className="w-8 h-8 rounded-full shadow-sm flex items-center justify-center text-xs bg-amber-400">
           </div>
-          <span className="text-[8px] text-amber-300 font-black mt-1">Mặt Trời</span>
+          <span className="text-[11px] text-[var(--gold-fg)] font-black mt-1">Mặt Trời</span>
         </div>
 
         {/* 8 Planets */}
@@ -531,8 +537,8 @@ const SolarSystemWidget: React.FC<{ activePlanet?: string }> = ({ activePlanet }
             />
             <span
               className={cn(
-                'text-[8px] mt-1 font-bold whitespace-nowrap',
-                selectedIdx === idx ? 'text-amber-300 font-black' : 'text-slate-400'
+                'text-[11px] mt-1 font-bold whitespace-nowrap',
+                selectedIdx === idx ? 'text-[var(--gold-fg)] font-black' : 'text-slate-400'
               )}
             >
               {p.name}
@@ -541,8 +547,7 @@ const SolarSystemWidget: React.FC<{ activePlanet?: string }> = ({ activePlanet }
         ))}
       </div>
 
-      <div className="text-[11px] text-center text-slate-300 bg-slate-900/60 py-1 rounded-lg border border-slate-800">
-        ⭐ <strong className="text-amber-300">{selected.name} tinh</strong>: {selected.note} (Vị trí thứ {selectedIdx + 1} từ Mặt Trời).
+      <div className="text-xs text-center text-slate-300 bg-slate-900/60 py-1 rounded-lg border border-slate-800"> <strong className="text-[var(--gold-fg)]">{selected.name} tinh</strong>: {selected.note} (Vị trí thứ {selectedIdx + 1} từ Mặt Trời).
       </div>
     </div>
   );
@@ -557,12 +562,12 @@ const VectorForceWidget: React.FC<{ initialForce: number }> = ({ initialForce })
   return (
     <div className="flex flex-col gap-2">
       <div className="flex items-center justify-between text-xs border-b border-slate-800 pb-1">
-        <span className="font-bold text-amber-300 flex items-center gap-1.5">
+        <span className="font-bold text-[var(--gold-fg)] flex items-center gap-1.5">
           <ArrowRight className="w-3.5 h-3.5" />
           <span>Biểu diễn lực kéo: Tỉ xích 1 cm ứng với 10 N</span>
         </span>
-        <span className="text-[11px] font-mono text-[var(--phy-fg)]">
-          Độ lớn: <strong className="text-amber-300">{force} N</strong> ({force / 10} đoạn tỉ xích)
+        <span className="text-xs font-mono text-[var(--phy-fg)]">
+          Độ lớn: <strong className="text-[var(--gold-fg)]">{force} N</strong> ({force / 10} đoạn tỉ xích)
         </span>
       </div>
 
@@ -572,7 +577,7 @@ const VectorForceWidget: React.FC<{ initialForce: number }> = ({ initialForce })
         <div className="absolute bottom-3 inset-x-0 h-0.5 bg-slate-600" />
 
         {/* Block */}
-        <div className="relative w-12 h-10 bg-slate-700 border border-slate-500 rounded flex items-center justify-center text-[10px] font-black text-slate-200 shadow-md ml-6 z-10">
+        <div className="relative w-12 h-10 bg-slate-700 border border-slate-500 rounded flex items-center justify-center text-[11px] font-black text-slate-200 shadow-md ml-6 z-10">
           Vật
           {/* Point of application (Gốc) */}
           <div className="absolute right-0 top-1/2 -translate-y-1/2 w-2.5 h-2.5 rounded-full bg-rose-500 shadow-sm border border-white" />
@@ -604,7 +609,7 @@ const VectorForceWidget: React.FC<{ initialForce: number }> = ({ initialForce })
         </div>
       </div>
 
-      <div className="flex items-center justify-between text-[11px] text-slate-400">
+      <div className="flex items-center justify-between text-xs text-slate-400">
         <span>Chọn độ lớn lực:</span>
         <div className="flex items-center gap-1.5">
           {[10, 20, 30, 40].map((f) => (
@@ -615,7 +620,7 @@ const VectorForceWidget: React.FC<{ initialForce: number }> = ({ initialForce })
                 setForce(f);
               }}
               className={cn(
-                'px-2 py-0.5 rounded text-[10px] font-bold border transition-colors cursor-pointer',
+                'px-2 py-0.5 rounded text-[11px] font-bold border transition-colors cursor-pointer',
                 force === f
                   ? 'bg-amber-500 text-slate-950 border-amber-400 font-black'
                   : 'bg-slate-800 text-slate-300 border-slate-700 hover:border-amber-400/50'
@@ -660,19 +665,19 @@ const LeverBalanceWidget: React.FC = () => {
   return (
     <div className="flex flex-col gap-2.5">
       <div className="flex items-center justify-between text-xs border-b border-slate-800 pb-1">
-        <span className="font-bold text-amber-300 flex items-center gap-1.5">
+        <span className="font-bold text-[var(--gold-fg)] flex items-center gap-1.5">
           <Weight className="w-3.5 h-3.5 text-[var(--phy-fg)]" />
           <span>Mô hình đòn bẩy: Điểm tựa O & Quy tắc Momen lực</span>
         </span>
         <span
           className={cn(
-            'text-[10px] font-black px-2 py-0.5 rounded-full font-mono border',
+            'text-[11px] font-black px-2 py-0.5 rounded-full font-mono border',
             isBalanced
-              ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40'
-              : 'bg-amber-500/20 text-amber-300 border-amber-500/40'
+              ? 'bg-emerald-500/20 text-[var(--ok-fg)] border-emerald-500/40'
+              : 'bg-amber-500/20 text-[var(--gold-fg)] border-amber-500/40'
           )}
         >
-          {isBalanced ? '⚖️ THĂNG BẰNG' : '⚠️ KHÔNG CÂN BẰNG'}
+          {isBalanced ? 'Thăng bằng' : 'Không cân bằng'}
         </span>
       </div>
 
@@ -742,18 +747,18 @@ const LeverBalanceWidget: React.FC = () => {
       </div>
 
       {/* Numerical Moment comparison */}
-      <div className="flex items-center justify-between text-[11px] bg-slate-900/70 py-1.5 px-3 rounded-lg border border-slate-800 font-mono">
-        <span className="text-rose-300">
+      <div className="flex items-center justify-between text-xs bg-slate-900/70 py-1.5 px-3 rounded-lg border border-slate-800 font-mono">
+        <span className="text-[var(--err-fg)]">
           M₁ = F₁ × d₁ = <strong>{m1} N·cm</strong>
         </span>
-        <span className="text-slate-400 font-sans text-[10px]">{p.label}</span>
+        <span className="text-slate-400 font-sans text-[11px]">{p.label}</span>
         <span className="text-[var(--phy-fg)]">
           M₂ = F₂ × d₂ = <strong>{m2} N·cm</strong>
         </span>
       </div>
 
       {/* Preset selector */}
-      <div className="flex items-center justify-between text-[11px] text-slate-400 pt-0.5">
+      <div className="flex items-center justify-between text-xs text-slate-400 pt-0.5">
         <span>Chọn trường hợp:</span>
         <div className="flex items-center gap-1.5">
           {LEVER_PRESETS.map((item, idx) => (
@@ -764,7 +769,7 @@ const LeverBalanceWidget: React.FC = () => {
                 setPresetIdx(idx);
               }}
               className={cn(
-                'px-2 py-0.5 rounded text-[10px] font-bold border transition-colors cursor-pointer',
+                'px-2 py-0.5 rounded text-[11px] font-bold border transition-colors cursor-pointer',
                 presetIdx === idx
                   ? 'bg-[var(--phy-fill)] text-white border-[var(--phy-edge)] font-black'
                   : 'bg-slate-800 text-slate-300 border-slate-700 hover:border-[var(--phy-edge)]/50'
@@ -794,20 +799,20 @@ const CircuitDiagramWidget: React.FC = () => {
   return (
     <div className="flex flex-col gap-2.5">
       <div className="flex items-center justify-between text-xs border-b border-slate-800 pb-1">
-        <span className="font-bold text-amber-300 flex items-center gap-1.5">
-          <Zap className="w-3.5 h-3.5 text-yellow-400" />
+        <span className="font-bold text-[var(--gold-fg)] flex items-center gap-1.5">
+          <Zap className="w-3.5 h-3.5 text-[var(--gold-fg)]" />
           <span>Sơ đồ mạch điện: Nguồn pin, Khóa K, Đèn, Ampe kế (A) & Vôn kế (V)</span>
         </span>
         <button
           onClick={toggleSwitch}
           className={cn(
-            'text-[10px] font-black px-2.5 py-0.5 rounded-full border cursor-pointer transition-all',
+            'text-[11px] font-black px-2.5 py-0.5 rounded-full border cursor-pointer transition-all',
             isClosed
-              ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40 shadow-sm'
-              : 'bg-rose-500/20 text-rose-300 border-rose-500/40'
+              ? 'bg-emerald-500/20 text-[var(--ok-fg)] border-emerald-500/40 shadow-sm'
+              : 'bg-rose-500/20 text-[var(--err-fg)] border-rose-500/40'
           )}
         >
-          {isClosed ? '⚡ KHÓA K ĐÓNG (MẠCH KÍN)' : '⭕ KHÓA K MỞ (MẠCH HỞ)'}
+          {isClosed ? 'Khóa K đóng (mạch kín)' : 'Khóa K mở (mạch hở)'}
         </button>
       </div>
 
@@ -926,8 +931,8 @@ const CircuitDiagramWidget: React.FC = () => {
       </div>
 
       {/* Numerical Meter Readout */}
-      <div className="flex items-center justify-between text-[11px] bg-slate-900/70 py-1.5 px-3 rounded-lg border border-slate-800 font-mono">
-        <span className="text-amber-300">
+      <div className="flex items-center justify-between text-xs bg-slate-900/70 py-1.5 px-3 rounded-lg border border-slate-800 font-mono">
+        <span className="text-[var(--gold-fg)]">
           Ampe kế: I = <strong>{currentI.toFixed(1)} A</strong> (Mắc nối tiếp)
         </span>
         <span className="text-[var(--phy-fg)]">
@@ -1004,12 +1009,12 @@ const PotentialHeightWidget: React.FC<{ initialMass: number; initialHeight: numb
     <div className="space-y-3">
       {/* Header Info Banner */}
       <div className="flex items-center justify-between border-b border-amber-500/20 pb-2">
-        <div className="flex items-center gap-1.5 text-xs font-black text-amber-400 uppercase tracking-wider">
-          <Zap className="w-3.5 h-3.5 text-amber-400" />
+        <div className="flex items-center gap-1.5 text-xs font-black text-[var(--gold-fg)]  ">
+          <Zap className="w-3.5 h-3.5 text-[var(--gold-fg)]" />
           <span>Thí nghiệm: Thế năng trọng trường</span>
         </div>
-        <div className="flex items-center gap-2 text-[11px] font-mono">
-          <span className="px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/30 text-amber-300">
+        <div className="flex items-center gap-2 text-xs font-mono">
+          <span className="px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/30 text-[var(--gold-fg)]">
             m = <strong>{mass} kg</strong> (P = {weightP} N)
           </span>
           <span className="px-2 py-0.5 rounded bg-[var(--phy-tint)] border border-[var(--phy-edge)]/40 text-[var(--phy-fg)]">
@@ -1026,19 +1031,19 @@ const PotentialHeightWidget: React.FC<{ initialMass: number; initialHeight: numb
           <div className="absolute inset-0 bg-[linear-gradient(to_bottom,var(--border)_1px,transparent_1px)] bg-[size:100%_20px] opacity-20 pointer-events-none" />
 
           {/* Left Height Ruler */}
-          <div className="absolute left-2 top-3 bottom-8 flex flex-col justify-between text-[9px] font-mono text-slate-500 select-none border-r border-slate-700/60 pr-1.5 z-10">
+          <div className="absolute left-2 top-3 bottom-8 flex flex-col justify-between text-[11px] font-mono text-slate-500 select-none border-r border-slate-700/60 pr-1.5 z-10">
             <span>{height}m</span>
             <span>{(height * 0.75).toFixed(1)}m</span>
             <span>{(height * 0.5).toFixed(1)}m</span>
             <span>{(height * 0.25).toFixed(1)}m</span>
-            <span className="text-emerald-400 font-bold">0m</span>
+            <span className="text-[var(--ok-fg)] font-bold">0m</span>
           </div>
 
           {/* Dropping Track Area */}
           <div className="relative ml-10 mr-2 flex-1 flex flex-col justify-between">
             {/* Top Balcony/Platform */}
             <div className="relative z-0 pt-1">
-              <div className="w-20 h-2 bg-gradient-to-r from-amber-600 to-amber-700 rounded-sm shadow-sm border border-amber-500/40" />
+              <div className="w-20 h-2 rounded-sm shadow-sm border border-amber-500/40 bg-amber-600" />
               <div className="w-1.5 h-6 bg-slate-700 ml-1" />
             </div>
 
@@ -1055,16 +1060,16 @@ const PotentialHeightWidget: React.FC<{ initialMass: number; initialHeight: numb
                 className="relative group"
               >
                 {/* Object Body (Flower pot / heavy weight) */}
-                <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 border-2 border-amber-300 shadow-sm border-b-2 border-amber-600 flex items-center justify-center text-slate-950 font-black text-[10px]">
+                <div className="w-9 h-9 rounded-xl border-2 border-amber-300 shadow-sm border-b-2 border-amber-600 flex items-center justify-center text-slate-950 font-black text-[11px] bg-amber-400">
                   {mass}kg
                 </div>
 
                 {/* Motion streak lines when falling */}
                 {isFalling && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 flex gap-1 pointer-events-none opacity-80">
-                    <span className="w-0.5 h-3 bg-amber-400/80 rounded animate-pulse" />
+                    <span className="w-0.5 h-3 bg-amber-400/80 rounded " />
                     <span className="w-0.5 h-4 bg-[var(--phy-fg)] rounded" />
-                    <span className="w-0.5 h-3 bg-amber-400/80 rounded animate-pulse" />
+                    <span className="w-0.5 h-3 bg-amber-400/80 rounded " />
                   </div>
                 )}
               </motion.div>
@@ -1081,12 +1086,12 @@ const PotentialHeightWidget: React.FC<{ initialMass: number; initialHeight: numb
             )}
 
             {/* Ground Platform (Reference plane h = 0) */}
-            <div className="relative z-10 border-t-2 border-emerald-500/60 bg-emerald-950/40 py-1 px-2 rounded-b flex items-center justify-between text-[10px] text-emerald-400 font-semibold">
+            <div className="relative z-10 border-t-2 border-emerald-500/60 bg-emerald-950/40 py-1 px-2 rounded-b flex items-center justify-between text-[11px] text-[var(--ok-fg)] font-semibold">
               <span className="flex items-center gap-1">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 " />
                 Mốc thế năng (Mặt đất h = 0)
               </span>
-              <span className="font-mono text-[9px] text-slate-400">h = {currentH}m</span>
+              <span className="font-mono text-[11px] text-slate-400">h = {currentH}m</span>
             </div>
           </div>
         </div>
@@ -1095,44 +1100,44 @@ const PotentialHeightWidget: React.FC<{ initialMass: number; initialHeight: numb
         <div className="sm:col-span-5 flex flex-col justify-between gap-2 bg-slate-900/60 rounded-xl p-3 border border-slate-800 text-xs">
           {/* Potential Energy Bar */}
           <div className="space-y-1">
-            <div className="flex justify-between items-center text-[11px]">
-              <span className="font-bold text-amber-300">Thế năng W_t:</span>
-              <span className="font-mono font-black text-amber-400">{currentWt} J</span>
+            <div className="flex justify-between items-center text-xs">
+              <span className="font-bold text-[var(--gold-fg)]">Thế năng W_t:</span>
+              <span className="font-mono font-black text-[var(--gold-fg)]">{currentWt} J</span>
             </div>
             <div className="w-full h-2.5 bg-slate-800 rounded-full overflow-hidden p-0.5">
               <div
-                className="h-full bg-gradient-to-r from-amber-500 to-amber-400 rounded-full transition-all duration-75"
+                className="h-full rounded-full transition-all duration-75 bg-amber-500"
                 style={{ width: `${Math.max(0, Math.min(100, (currentWt / (maxEnergy || 1)) * 100))}%` }}
               />
             </div>
-            <div className="text-[9px] text-slate-400 font-mono">W_t = P · h = {weightP} × {currentH}</div>
+            <div className="text-[11px] text-slate-400 font-mono">W_t = P · h = {weightP} × {currentH}</div>
           </div>
 
           {/* Kinetic Energy Bar */}
           <div className="space-y-1">
-            <div className="flex justify-between items-center text-[11px]">
+            <div className="flex justify-between items-center text-xs">
               <span className="font-bold text-[var(--phy-fg)]">Động năng W_đ:</span>
               <span className="font-mono font-black text-[var(--phy-fg)]">{currentWd} J</span>
             </div>
             <div className="w-full h-2.5 bg-slate-800 rounded-full overflow-hidden p-0.5">
               <div
-                className="h-full bg-gradient-to-r from-[var(--phy-fill)] to-[var(--phy-edge)] rounded-full transition-all duration-75"
+                className="h-full rounded-full transition-all duration-75 bg-[var(--phy-fill)]"
                 style={{ width: `${Math.max(0, Math.min(100, (currentWd / (maxEnergy || 1)) * 100))}%` }}
               />
             </div>
-            <div className="flex justify-between text-[9px] text-slate-400 font-mono">
+            <div className="flex justify-between text-[11px] text-slate-400 font-mono">
               <span>W_đ = ½ · m · v²</span>
               <span className="text-[var(--phy-fg)] font-bold">v = {currentV} m/s</span>
             </div>
           </div>
 
           {/* Total Mechanical Energy Conservation */}
-          <div className="pt-2 border-t border-slate-800 flex items-center justify-between text-[11px] font-bold">
+          <div className="pt-2 border-t border-slate-800 flex items-center justify-between text-xs font-bold">
             <span className="text-slate-300 flex items-center gap-1">
-              <Sparkles className="w-3 h-3 text-emerald-400" />
+              <Sparkles className="w-3 h-3 text-[var(--ok-fg)]" />
               Cơ năng W =
             </span>
-            <span className="text-emerald-400 font-mono font-black text-sm">
+            <span className="text-[var(--ok-fg)] font-mono font-black text-sm">
               {maxEnergy} J
             </span>
           </div>
@@ -1142,8 +1147,8 @@ const PotentialHeightWidget: React.FC<{ initialMass: number; initialHeight: numb
       {/* Control Buttons & Param Presets */}
       <div className="flex flex-wrap items-center justify-between gap-2 pt-1 border-t border-slate-800/80">
         {/* Preset Heights */}
-        <div className="flex items-center gap-1.5 text-[11px]">
-          <span className="text-slate-400 text-[10px] uppercase font-bold">Độ cao:</span>
+        <div className="flex items-center gap-1.5 text-xs">
+          <span className="text-slate-400 text-[11px] font-bold">Độ cao:</span>
           {[3.6, 6, 10].map((h) => (
             <button
               key={h}
@@ -1154,9 +1159,9 @@ const PotentialHeightWidget: React.FC<{ initialMass: number; initialHeight: numb
                 setIsFalling(false);
               }}
               className={cn(
-                'px-2 py-1 rounded-md text-[10px] font-bold transition-all border cursor-pointer',
+                'px-2 py-1 rounded-md text-[11px] font-bold transition-all border cursor-pointer',
                 height === h
-                  ? 'bg-amber-500/25 border-amber-400 text-amber-300 shadow-sm'
+                  ? 'bg-amber-500/25 border-amber-400 text-[var(--gold-fg)] shadow-sm'
                   : 'bg-slate-800/60 border-slate-700 text-slate-400 hover:text-slate-200'
               )}
             >
@@ -1164,7 +1169,7 @@ const PotentialHeightWidget: React.FC<{ initialMass: number; initialHeight: numb
             </button>
           ))}
           <span className="text-slate-500 mx-1">|</span>
-          <span className="text-slate-400 text-[10px] uppercase font-bold">Vật m:</span>
+          <span className="text-slate-400 text-[11px] font-bold">Vật m:</span>
           {[1, 2.5, 5].map((mVal) => (
             <button
               key={mVal}
@@ -1175,7 +1180,7 @@ const PotentialHeightWidget: React.FC<{ initialMass: number; initialHeight: numb
                 setIsFalling(false);
               }}
               className={cn(
-                'px-2 py-1 rounded-md text-[10px] font-bold transition-all border cursor-pointer',
+                'px-2 py-1 rounded-md text-[11px] font-bold transition-all border cursor-pointer',
                 mass === mVal
                   ? 'bg-[var(--phy-tint)] border-[var(--phy-edge)] text-[var(--phy-fg)] shadow-sm'
                   : 'bg-slate-800/60 border-slate-700 text-slate-400 hover:text-slate-200'
@@ -1199,7 +1204,7 @@ const PotentialHeightWidget: React.FC<{ initialMass: number; initialHeight: numb
           <button
             onClick={handleDrop}
             disabled={isFalling || progress === 1}
-            className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 text-xs font-black uppercase tracking-wider transition-all shadow-md active:translate-y-0.5 disabled:opacity-50 cursor-pointer"
+            className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-slate-950 text-xs font-black transition-all shadow-md active:translate-y-0.5 disabled:opacity-50 cursor-pointer bg-amber-500"
           >
             <Play className="w-3.5 h-3.5 fill-current" />
             <span>{isFalling ? 'Đang rơi...' : '▶ Thả rơi mô phỏng'}</span>
@@ -1265,12 +1270,12 @@ const KineticSpeedWidget: React.FC<{ initialMass: number; initialSpeed: number }
     <div className="space-y-3">
       {/* Header Info */}
       <div className="flex items-center justify-between border-b border-amber-500/20 pb-2">
-        <div className="flex items-center gap-1.5 text-xs font-black text-amber-400 uppercase tracking-wider">
-          <Zap className="w-3.5 h-3.5 text-amber-400" />
+        <div className="flex items-center gap-1.5 text-xs font-black text-[var(--gold-fg)]  ">
+          <Zap className="w-3.5 h-3.5 text-[var(--gold-fg)]" />
           <span>Thí nghiệm: Động năng chuyển động</span>
         </div>
-        <div className="flex items-center gap-2 text-[11px] font-mono">
-          <span className="px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/30 text-amber-300">
+        <div className="flex items-center gap-2 text-xs font-mono">
+          <span className="px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/30 text-[var(--gold-fg)]">
             m = <strong>{mass} kg</strong>
           </span>
           <span className="px-2 py-0.5 rounded bg-[var(--phy-tint)] border border-[var(--phy-edge)]/40 text-[var(--phy-fg)]">
@@ -1282,12 +1287,12 @@ const KineticSpeedWidget: React.FC<{ initialMass: number; initialSpeed: number }
       {/* Experimental Track */}
       <div className="relative h-28 bg-[var(--bg-canvas)] rounded-xl border border-slate-800 p-2 overflow-hidden flex flex-col justify-end">
         {/* Distance Grid & Marks */}
-        <div className="absolute top-2 inset-x-4 flex justify-between text-[9px] font-mono text-slate-500 select-none border-b border-slate-800 pb-1">
+        <div className="absolute top-2 inset-x-4 flex justify-between text-[11px] font-mono text-slate-500 select-none border-b border-slate-800 pb-1">
           <span>0m (Khởi hành)</span>
           <span>5m</span>
           <span>10m</span>
           <span>15m</span>
-          <span className="text-amber-400 font-bold">20m (Cản)</span>
+          <span className="text-[var(--gold-fg)] font-bold">20m (Cản)</span>
         </div>
 
         {/* Track Line */}
@@ -1306,7 +1311,7 @@ const KineticSpeedWidget: React.FC<{ initialMass: number; initialSpeed: number }
               className="relative"
             >
               {/* Sleek Aerodynamic Cart Body */}
-              <div className="w-14 h-6 rounded-lg bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 border border-amber-300 shadow-sm border-b-2 border-amber-600 flex items-center justify-center text-slate-950 font-black text-[9px]">
+              <div className="w-14 h-6 rounded-lg border border-amber-300 shadow-sm border-b-2 border-amber-600 flex items-center justify-center text-slate-950 font-black text-[11px] bg-amber-400">
                 {speed}m/s
               </div>
               {/* Wheels */}
@@ -1338,7 +1343,7 @@ const KineticSpeedWidget: React.FC<{ initialMass: number; initialSpeed: number }
               />
             </svg>
             {/* Rigid Stop Block */}
-            <div className="w-3.5 h-8 bg-gradient-to-b from-slate-600 to-slate-800 rounded border border-slate-500 shadow-sm" />
+            <div className="w-3.5 h-8 rounded border border-slate-500 shadow-sm bg-slate-600" />
           </div>
 
           {/* Impact Spark */}
@@ -1356,31 +1361,31 @@ const KineticSpeedWidget: React.FC<{ initialMass: number; initialSpeed: number }
       {/* Dynamic Kinetic Energy Readout HUD */}
       <div className="bg-slate-900/60 rounded-xl p-3 border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
         <div className="flex-1 w-full space-y-1">
-          <div className="flex justify-between items-center text-[11px]">
-            <span className="font-bold text-amber-300">Động năng W_đ:</span>
-            <span className="font-mono font-black text-amber-400 text-sm">{kineticEnergy} J</span>
+          <div className="flex justify-between items-center text-xs">
+            <span className="font-bold text-[var(--gold-fg)]">Động năng W_đ:</span>
+            <span className="font-mono font-black text-[var(--gold-fg)] text-sm">{kineticEnergy} J</span>
           </div>
           <div className="w-full h-2.5 bg-slate-800 rounded-full overflow-hidden p-0.5">
             <div
-              className="h-full bg-gradient-to-r from-amber-500 to-indigo-500 rounded-full transition-all duration-150"
+              className="h-full rounded-full transition-all duration-150 bg-amber-500"
               style={{ width: `${Math.max(5, Math.min(100, (kineticEnergy / (maxRefEnergy || 1)) * 100))}%` }}
             />
           </div>
-          <div className="text-[10px] text-slate-400 font-mono">
+          <div className="text-[11px] text-slate-400 font-mono">
             W_đ = ½ · m · v² = ½ × {mass} × {speed}² = <strong>{kineticEnergy} J</strong>
           </div>
         </div>
 
-        <div className="sm:border-l sm:border-slate-800 sm:pl-3 text-[11px] text-slate-300 font-medium">
-          <span className="text-amber-400 font-bold block mb-0.5">💡 Quy luật bậc 2:</span>
+        <div className="sm:border-l sm:border-slate-800 sm:pl-3 text-xs text-slate-300 font-medium">
+          <span className="text-[var(--gold-fg)] font-bold block mb-0.5">Quy luật bậc 2:</span>
           Tốc độ tăng gấp 2 thì Động năng tăng gấp <strong>4 lần</strong> ({speed} m/s → {kineticEnergy} J).
         </div>
       </div>
 
       {/* Control Row */}
       <div className="flex flex-wrap items-center justify-between gap-2 pt-1 border-t border-slate-800/80">
-        <div className="flex items-center gap-1.5 text-[11px]">
-          <span className="text-slate-400 text-[10px] uppercase font-bold">Tốc độ v:</span>
+        <div className="flex items-center gap-1.5 text-xs">
+          <span className="text-slate-400 text-[11px] font-bold">Tốc độ v:</span>
           {[5, 10, 15, 20].map((v) => (
             <button
               key={v}
@@ -1391,9 +1396,9 @@ const KineticSpeedWidget: React.FC<{ initialMass: number; initialSpeed: number }
                 setIsRunning(false);
               }}
               className={cn(
-                'px-2 py-1 rounded-md text-[10px] font-bold transition-all border cursor-pointer',
+                'px-2 py-1 rounded-md text-[11px] font-bold transition-all border cursor-pointer',
                 speed === v
-                  ? 'bg-amber-500/25 border-amber-400 text-amber-300 shadow-sm'
+                  ? 'bg-amber-500/25 border-amber-400 text-[var(--gold-fg)] shadow-sm'
                   : 'bg-slate-800/60 border-slate-700 text-slate-400 hover:text-slate-200'
               )}
             >
@@ -1401,7 +1406,7 @@ const KineticSpeedWidget: React.FC<{ initialMass: number; initialSpeed: number }
             </button>
           ))}
           <span className="text-slate-500 mx-1">|</span>
-          <span className="text-slate-400 text-[10px] uppercase font-bold">Vật m:</span>
+          <span className="text-slate-400 text-[11px] font-bold">Vật m:</span>
           {[0.4, 1.0, 2.0].map((mVal) => (
             <button
               key={mVal}
@@ -1412,7 +1417,7 @@ const KineticSpeedWidget: React.FC<{ initialMass: number; initialSpeed: number }
                 setIsRunning(false);
               }}
               className={cn(
-                'px-2 py-1 rounded-md text-[10px] font-bold transition-all border cursor-pointer',
+                'px-2 py-1 rounded-md text-[11px] font-bold transition-all border cursor-pointer',
                 mass === mVal
                   ? 'bg-[var(--phy-tint)] border-[var(--phy-edge)] text-[var(--phy-fg)] shadow-sm'
                   : 'bg-slate-800/60 border-slate-700 text-slate-400 hover:text-slate-200'
@@ -1435,7 +1440,7 @@ const KineticSpeedWidget: React.FC<{ initialMass: number; initialSpeed: number }
           <button
             onClick={handleRun}
             disabled={isRunning}
-            className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 text-xs font-black uppercase tracking-wider transition-all shadow-md active:translate-y-0.5 disabled:opacity-50 cursor-pointer"
+            className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-slate-950 text-xs font-black transition-all shadow-md active:translate-y-0.5 disabled:opacity-50 cursor-pointer bg-amber-500"
           >
             <Play className="w-3.5 h-3.5 fill-current" />
             <span>{isRunning ? 'Đang chạy...' : '▶ Khởi động chuyển động'}</span>
@@ -1482,15 +1487,15 @@ const OpticsLensWidget: React.FC<{ focalLength: number; initialDistance: number 
     <div className="space-y-3">
       {/* Header Info */}
       <div className="flex items-center justify-between border-b border-amber-500/20 pb-2">
-        <div className="flex items-center gap-1.5 text-xs font-black text-amber-400 uppercase tracking-wider">
-          <Eye className="w-3.5 h-3.5 text-amber-400" />
+        <div className="flex items-center gap-1.5 text-xs font-black text-[var(--gold-fg)]  ">
+          <Eye className="w-3.5 h-3.5 text-[var(--gold-fg)]" />
           <span>Thí nghiệm: Thấu kính hội tụ</span>
         </div>
-        <div className="flex items-center gap-2 text-[11px] font-mono">
+        <div className="flex items-center gap-2 text-xs font-mono">
           <span className="px-2 py-0.5 rounded bg-[var(--phy-tint)] border border-[var(--phy-edge)]/40 text-[var(--phy-fg)]">
             f = <strong>{f} cm</strong>
           </span>
-          <span className="px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/30 text-amber-300">
+          <span className="px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/30 text-[var(--gold-fg)]">
             d = <strong>{d} cm</strong>
           </span>
         </div>
@@ -1602,20 +1607,20 @@ const OpticsLensWidget: React.FC<{ focalLength: number; initialDistance: number 
       {/* Optical Characteristics Card */}
       <div className="bg-slate-900/60 rounded-xl p-2.5 border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs">
         <div className="flex items-center gap-2">
-          <span className="text-slate-400 font-mono text-[11px]">Vị trí ảnh d&apos;:</span>
+          <span className="text-slate-400 font-mono text-xs">Vị trí ảnh d&apos;:</span>
           <span className="font-mono font-bold text-[var(--phy-fg)]">
             {isInfinity ? 'Ở vô cực (∞)' : `${Math.abs(dPrime).toFixed(1)} cm`}
           </span>
         </div>
 
-        <div className="flex items-center gap-2 text-[11px]">
+        <div className="flex items-center gap-2 text-xs">
           <span className="text-slate-400">Tính chất:</span>
           <span
             className={cn(
               'px-2 py-0.5 rounded font-black',
               isVirtual
-                ? 'bg-pink-500/20 text-pink-300 border border-pink-500/40'
-                : 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'
+                ? 'bg-pink-500/20 text-[var(--err-fg)] border border-pink-500/40'
+                : 'bg-emerald-500/20 text-[var(--ok-fg)] border border-emerald-500/40'
             )}
           >
             {isVirtual
@@ -1631,8 +1636,8 @@ const OpticsLensWidget: React.FC<{ focalLength: number; initialDistance: number 
 
       {/* Controls */}
       <div className="flex flex-wrap items-center justify-between gap-2 pt-1 border-t border-slate-800/80">
-        <div className="flex items-center gap-1.5 text-[11px]">
-          <span className="text-slate-400 text-[10px] uppercase font-bold">Vị trí d:</span>
+        <div className="flex items-center gap-1.5 text-xs">
+          <span className="text-slate-400 text-[11px] font-bold">Vị trí d:</span>
           {[
             { label: 'd > 2f', val: 32 },
             { label: 'd = 2f', val: 24 },
@@ -1646,9 +1651,9 @@ const OpticsLensWidget: React.FC<{ focalLength: number; initialDistance: number 
                 setD(preset.val);
               }}
               className={cn(
-                'px-2 py-1 rounded-md text-[10px] font-bold transition-all border cursor-pointer',
+                'px-2 py-1 rounded-md text-[11px] font-bold transition-all border cursor-pointer',
                 d === preset.val
-                  ? 'bg-amber-500/25 border-amber-400 text-amber-300 shadow-sm'
+                  ? 'bg-amber-500/25 border-amber-400 text-[var(--gold-fg)] shadow-sm'
                   : 'bg-slate-800/60 border-slate-700 text-slate-400 hover:text-slate-200'
               )}
             >

@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { Mascot } from '@/design-system/components/Mascot';
 import { Button } from '@/design-system/components/Button';
+import { SubjectIcon } from '@/design-system/components/SubjectIcon';
 import { sound } from '@/lib/audio';
 import { haptic } from '@/lib/haptic';
 import { useUserStore } from '@/features/gamification/useUserStore';
@@ -144,23 +145,23 @@ export const WelcomeOnboardingTour: React.FC<WelcomeOnboardingTourProps> = ({
                 <div className="flex items-center gap-3.5">
                   <Mascot state="celebrating" size="md" subject={selectedSubject} />
                   <div>
-                    <span className="text-[11px] font-black uppercase tracking-wider text-[var(--subject-fg)]">
-                      Chào mừng bạn gia nhập!
+                    <span className="text-xs font-black text-[var(--subject-fg)]">
+                      Chào bạn
                     </span>
                     <h3 className="text-lg sm:text-xl font-black text-[var(--text-primary)] leading-tight">
-                      Khám phá Khoa Học Tự Nhiên THCS 🚀
+                      Bạn học môn nào, lớp mấy?
                     </h3>
                   </div>
                 </div>
 
                 <p className="text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed">
-                  STEM-Solve là nền tảng luyện tập KHTN theo tinh thần Duolingo: giải từng bước, có gợi ý thông minh, thí nghiệm ảo và cúp vàng vinh danh!
+                  Chọn môn và lớp để Sci-Solve xếp bài đúng theo SGK Kết nối tri thức. Bạn đổi lại được bất cứ lúc nào.
                 </p>
 
                 {/* Subject Selector Quick Picker */}
                 <div className="space-y-2 pt-1">
-                  <div className="text-[11px] font-black uppercase tracking-wider text-[var(--text-tertiary)]">
-                    1. Chọn môn học bạn muốn khám phá:
+                  <div className="text-xs font-black text-[var(--text-tertiary)]">
+                    Môn học
                   </div>
                   <div className="grid grid-cols-3 gap-2">
                     {SUBJECTS.map((s) => {
@@ -179,11 +180,10 @@ export const WelcomeOnboardingTour: React.FC<WelcomeOnboardingTourProps> = ({
                               : 'bg-[var(--bg-surface-2)] border-[var(--border)] hover:border-[var(--border-strong)]'
                           }`}
                         >
-                          <span className="text-xl">{s.icon}</span>
+                          <SubjectIcon subject={s.id} className="w-5 h-5 text-[var(--subject-fg)]" />
                           <span className={`text-xs font-black ${isSelected ? 'text-[var(--subject-fg)]' : 'text-[var(--text-primary)]'}`}>
                             {s.name}
                           </span>
-                          <span className="text-[10px] text-[var(--text-tertiary)]">Linh vật {s.mascotName}</span>
                         </button>
                       );
                     })}
@@ -192,8 +192,8 @@ export const WelcomeOnboardingTour: React.FC<WelcomeOnboardingTourProps> = ({
 
                 {/* Grade Selector Quick Picker */}
                 <div className="space-y-2 pt-1">
-                  <div className="text-[11px] font-black uppercase tracking-wider text-[var(--text-tertiary)]">
-                    2. Chọn khối lớp của bạn:
+                  <div className="text-xs font-black text-[var(--text-tertiary)]">
+                    Lớp
                   </div>
                   <div className="grid grid-cols-4 gap-2">
                     {([6, 7, 8, 9] as Grade[]).map((g) => {
@@ -231,11 +231,11 @@ export const WelcomeOnboardingTour: React.FC<WelcomeOnboardingTourProps> = ({
                 <div className="flex items-center gap-3.5">
                   <Mascot state="thinking" size="md" subject={selectedSubject} />
                   <div>
-                    <span className="text-[11px] font-black uppercase tracking-wider text-[var(--warn-fg)]">
-                      Bản đồ học tập ziczac
+                    <span className="text-xs font-black text-[var(--warn-fg)]">
+                      Lộ trình
                     </span>
                     <h3 className="text-lg sm:text-xl font-black text-[var(--text-primary)] leading-tight">
-                      Chinh phục từng nốt bài học 🗺️
+                      Học lần lượt từng bài
                     </h3>
                   </div>
                 </div>
@@ -246,9 +246,9 @@ export const WelcomeOnboardingTour: React.FC<WelcomeOnboardingTourProps> = ({
                       <Sparkles className="w-4 h-4 text-[var(--warn-fg)]" />
                     </div>
                     <div>
-                      <div className="text-xs font-black text-[var(--warn-fg)]">Nốt sáng nhấp nháy</div>
-                      <div className="text-[11px] text-[var(--text-secondary)]">
-                        Bài học hiện tại của bạn. Hoàn thành bài này sẽ mở khóa nốt tiếp theo trên đường ziczac!
+                      <div className="text-xs font-black text-[var(--warn-fg)]">Bài đang học</div>
+                      <div className="text-xs text-[var(--text-secondary)]">
+                        Làm xong bài này thì bài kế tiếp sẽ mở.
                       </div>
                     </div>
                   </div>
@@ -258,9 +258,9 @@ export const WelcomeOnboardingTour: React.FC<WelcomeOnboardingTourProps> = ({
                       <BookOpen className="w-4 h-4 text-[var(--subject-fg)]" />
                     </div>
                     <div>
-                      <div className="text-xs font-black text-[var(--subject-fg)]">Nốt Sổ tay Lý thuyết</div>
-                      <div className="text-[11px] text-[var(--text-secondary)]">
-                        Đọc nhanh lý thuyết tóm tắt 2 phút dạng flashcard trước khi vào làm bài tập.
+                      <div className="text-xs font-black text-[var(--subject-fg)]">Lý thuyết</div>
+                      <div className="text-xs text-[var(--text-secondary)]">
+                        Tóm tắt ngắn, đọc khoảng 2 phút trước khi làm bài.
                       </div>
                     </div>
                   </div>
@@ -270,9 +270,9 @@ export const WelcomeOnboardingTour: React.FC<WelcomeOnboardingTourProps> = ({
                       <Award className="w-4 h-4 text-[var(--gold-fg)]" />
                     </div>
                     <div>
-                      <div className="text-xs font-black text-[var(--gold-fg)]">Rương kho báu & Cúp vàng 3D</div>
-                      <div className="text-[11px] text-[var(--text-secondary)]">
-                        Mở rương nhận 50–100 Đá quý. Kết thúc mỗi chương sẽ nhận được Cúp vinh danh 3D độc quyền!
+                      <div className="text-xs font-black text-[var(--gold-fg)]">Rương và cúp</div>
+                      <div className="text-xs text-[var(--text-secondary)]">
+                        Rương cho 50–100 đá quý. Học xong một chương thì bạn nhận một chiếc cúp.
                       </div>
                     </div>
                   </div>
@@ -290,34 +290,32 @@ export const WelcomeOnboardingTour: React.FC<WelcomeOnboardingTourProps> = ({
                 <div className="flex items-center gap-3.5">
                   <Mascot state="cheering" size="md" subject={selectedSubject} />
                   <div>
-                    <span className="text-[11px] font-black uppercase tracking-wider text-[var(--err-fg)]">
-                      Cơ chế Trái Tim ❤️
+                    <span className="text-xs font-black text-[var(--err-fg)]">
+                      Tim
                     </span>
                     <h3 className="text-lg sm:text-xl font-black text-[var(--text-primary)] leading-tight">
-                      Hết tim thì hồi phục thế nào?
+                      Hết tim thì làm sao?
                     </h3>
                   </div>
                 </div>
 
                 <div className="p-3.5 rounded-2xl bg-[var(--err-tint)] border border-[var(--err-edge)] text-xs text-[var(--err-fg)] leading-relaxed">
-                  ❤️ Bạn bắt đầu với <strong>5 Trái Tim</strong>. Mỗi lần trả lời chưa đúng sẽ bị trừ 1 tim.
+                  Bạn có <strong>5 tim</strong>. Mỗi câu trả lời sai mất 1 tim.
                 </div>
 
                 <div className="space-y-2 bg-[var(--bg-surface-2)] p-3.5 rounded-2xl border border-[var(--border)]">
-                  <div className="text-xs font-black text-[var(--text-primary)] uppercase tracking-wider flex items-center gap-1.5">
+                  <div className="text-xs font-black text-[var(--text-primary)] flex items-center gap-1.5">
                     <CheckCircle2 className="w-4 h-4 text-[var(--ok-fg)]" />
-                    3 cách hồi tim siêu tốc cho bạn:
+                    Có 3 cách lấy lại tim:
                   </div>
 
                   <div className="text-xs text-[var(--text-secondary)] space-y-1.5 pl-5 pt-1">
-                    <p>
-                      🌿 <strong>Cách 1 (Tuyệt nhất):</strong> Vào tab <strong>Luyện tập</strong> (menu dưới đáy). Tại đây bài tập mở tự do, <strong>không bao giờ trừ tim</strong>, cứ làm đúng 1 bài là được <strong>+1 Tim hồi phục miễn phí!</strong>
+                    <p><strong>Luyện tập:</strong> làm đúng 1 bài trong tab Luyện tập được +1 tim. Ở đó làm sai không bị trừ tim.
+                    </p>
+                    <p><strong>Cửa hàng:</strong> đổi đá quý lấy tim.
                     </p>
                     <p>
-                      🛒 <strong>Cách 2:</strong> Vào <strong>Cửa hàng</strong> dùng Đá quý để mua đầy bình 5 Tim.
-                    </p>
-                    <p>
-                      ⏳ <strong>Cách 3:</strong> Nghỉ ngơi thư giãn — hệ thống tự hồi 1 tim mỗi 20 phút.
+                      <strong>Chờ:</strong> cứ 20 phút tim tự hồi 1.
                     </p>
                   </div>
                 </div>
@@ -334,11 +332,11 @@ export const WelcomeOnboardingTour: React.FC<WelcomeOnboardingTourProps> = ({
                 <div className="flex items-center gap-3.5">
                   <Mascot state="happy" size="md" subject={selectedSubject} />
                   <div>
-                    <span className="text-[11px] font-black uppercase tracking-wider text-[var(--ok-fg)]">
-                      Kinh tế trò chơi
+                    <span className="text-xs font-black text-[var(--ok-fg)]">
+                      Đá quý và chuỗi ngày
                     </span>
                     <h3 className="text-lg sm:text-xl font-black text-[var(--text-primary)] leading-tight">
-                      Đá quý 💎 & Chuỗi ngày 🔥
+                      Học đều mỗi ngày
                     </h3>
                   </div>
                 </div>
@@ -347,20 +345,20 @@ export const WelcomeOnboardingTour: React.FC<WelcomeOnboardingTourProps> = ({
                   <div className="p-3 rounded-2xl bg-[var(--bg-surface-2)] border border-[var(--border)] space-y-1">
                     <div className="flex items-center gap-1.5 text-xs font-black text-[var(--warn-fg)]">
                       <Flame className="w-4 h-4 text-[var(--warn-fg)] fill-[var(--warn-fill)]" />
-                      Chuỗi ngày Streak
+                      Chuỗi ngày
                     </div>
-                    <p className="text-[11px] text-[var(--text-secondary)] leading-snug">
-                      Hoàn thành ít nhất 1 bài mỗi ngày để giữ ngọn lửa đèn cồn rực cháy!
+                    <p className="text-xs text-[var(--text-secondary)] leading-snug">
+                      Mỗi ngày làm ít nhất 1 bài để giữ chuỗi.
                     </p>
                   </div>
 
                   <div className="p-3 rounded-2xl bg-[var(--bg-surface-2)] border border-[var(--border)] space-y-1">
                     <div className="flex items-center gap-1.5 text-xs font-black text-[var(--gem-fg)]">
                       <Gem className="w-4 h-4 text-[var(--gem-fg)] fill-[var(--gem-tint)]" />
-                      Đá quý (Gems)
+                      Đá quý
                     </div>
-                    <p className="text-[11px] text-[var(--text-secondary)] leading-snug">
-                      Tích lũy khi hoàn thành bài học, chuỗi combo và mở rương kho báu.
+                    <p className="text-xs text-[var(--text-secondary)] leading-snug">
+                      Nhận khi xong bài, đạt combo hoặc mở rương.
                     </p>
                   </div>
                 </div>
@@ -368,10 +366,10 @@ export const WelcomeOnboardingTour: React.FC<WelcomeOnboardingTourProps> = ({
                 <div className="p-3.5 rounded-2xl bg-[var(--bg-surface-2)] border border-[var(--border)] space-y-1">
                   <div className="text-xs font-black text-[var(--subject-fg)] flex items-center gap-1.5">
                     <ShieldCheck className="w-4 h-4 text-[var(--subject-fg)]" />
-                    Cửa hàng vật phẩm (`/shop`):
+                    Cửa hàng
                   </div>
                   <p className="text-xs text-[var(--text-secondary)] leading-relaxed">
-                    Dùng Đá quý để mua <strong>Khiên bảo vệ Streak</strong> (tránh đứt chuỗi khi bận thi cử), mua Tim hồi phục và các bình thuốc tăng tốc độ học tập!
+                    Dùng đá quý mua tim, hoặc mua khiên giữ chuỗi cho những ngày bận ôn thi.
                   </p>
                 </div>
               </motion.div>
@@ -389,30 +387,30 @@ export const WelcomeOnboardingTour: React.FC<WelcomeOnboardingTourProps> = ({
                 </div>
 
                 <div className="space-y-1">
-                  <span className="text-xs font-black uppercase tracking-wider text-[var(--gold-fg)]">
-                    Phần thưởng tân thủ
+                  <span className="text-xs font-black text-[var(--gold-fg)]">
+                    Xong rồi
                   </span>
                   <h3 className="text-xl sm:text-2xl font-black text-[var(--text-primary)]">
-                    Bạn đã sẵn sàng chinh phục! 🎉
+                    Bắt đầu thôi
                   </h3>
                 </div>
 
                 <p className="text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed max-w-sm mx-auto">
-                  Đừng quên ghé thăm <strong>Phòng Lab Ảo</strong> (`/lab`) để tự tay nhỏ giọt hóa chất, soi kính hiển vi và lắp ráp mạch điện sáng đèn nhé!
+                  Lúc rảnh, thử vào <strong>Phòng thí nghiệm ảo</strong> trong tab Luyện tập: nhỏ hóa chất, soi kính hiển vi, lắp mạch điện.
                 </p>
 
                 {/* Welcome Bonus Box */}
                 <div className="p-4 rounded-2xl bg-[var(--gold-tint)] border border-[var(--gold-edge)] space-y-1.5">
-                  <div className="text-[11px] font-black text-[var(--gold-fg)] uppercase tracking-wider flex items-center justify-center gap-1.5">
+                  <div className="text-xs font-black text-[var(--gold-fg)] flex items-center justify-center gap-1.5">
                     <Sparkles className="w-4 h-4 text-[var(--gold-fg)] fill-[var(--gold-fill)]" />
-                    QUÀ TẶNG KHỞI NGHIỆP DÀNH CHO BẠN
+                    Quà mở đầu
                   </div>
                   <div className="text-2xl font-black text-[var(--gold-fg)] flex items-center justify-center gap-2">
                     <Gem className="w-6 h-6 fill-[var(--gold-fill)] text-[var(--gold-fg)]" />
-                    <span>+50 ĐÁ QUÝ (GEMS)</span>
+                    <span>+50 đá quý</span>
                   </div>
                   <div className="text-xs text-[var(--gold-fg)] font-medium">
-                    Đã tự động cộng vào tài khoản để bạn tự tin xuất phát!
+                    Được cộng khi bạn bấm Bắt đầu học.
                   </div>
                 </div>
               </motion.div>
@@ -440,7 +438,7 @@ export const WelcomeOnboardingTour: React.FC<WelcomeOnboardingTourProps> = ({
               size="md"
               onClick={handleNext}
             >
-              <span>{step === totalSteps - 1 ? 'BẮT ĐẦU CHINH PHỤC NGAY!' : 'TIẾP TỤC'}</span>
+              <span>{step === totalSteps - 1 ? 'Bắt đầu học' : 'Tiếp tục'}</span>
               <ChevronRight className="w-4 h-4 ml-1" />
             </Button>
           </div>

@@ -170,7 +170,7 @@ export const FormulaBuilderGame: React.FC<{ onExit: () => void }> = ({ onExit })
             <span className="text-slate-400">Nhiệm vụ {pairIndex + 1}/{ionPairs.length}:</span>
             <p className="font-bold text-slate-200 mt-0.5">
               Cân bằng điện tích giữa <span className="text-[var(--chem-fg)]">{currentPair.cation.nameVi}</span> và{' '}
-              <span className="text-pink-400">{currentPair.anion.nameVi}</span>
+              <span className="text-[var(--err-fg)]">{currentPair.anion.nameVi}</span>
             </p>
           </div>
           <div className="px-2.5 py-1 rounded-xl bg-violet-950/60 border border-violet-700/50 text-violet-300 font-black text-xs">
@@ -183,13 +183,13 @@ export const FormulaBuilderGame: React.FC<{ onExit: () => void }> = ({ onExit })
           {/* Cation Tray */}
           <div className="bg-slate-900 border-2 border-[var(--chem-edge)]/40 rounded-2xl p-3.5 flex flex-col items-center justify-between shadow-lg">
             <div className="text-center space-y-1">
-              <span className="text-[10px] font-black uppercase tracking-wider text-[var(--chem-fg)]">
+              <span className="text-[11px] font-black text-[var(--chem-fg)]">
                 Ion Dương (Cation)
               </span>
-              <div className="py-2 text-2xl font-black text-cyan-200">
+              <div className="py-2 text-2xl font-black text-[var(--chem-fg)]">
                 <Formula formula={currentPair.cation.symbol} />
               </div>
-              <p className="text-[11px] text-slate-400 font-medium">
+              <p className="text-xs text-slate-400 font-medium">
                 Điện tích: <span className="text-[var(--chem-fg)] font-bold">+{currentPair.cation.charge}</span>
               </p>
             </div>
@@ -215,7 +215,7 @@ export const FormulaBuilderGame: React.FC<{ onExit: () => void }> = ({ onExit })
               </button>
             </div>
 
-            <div className="text-[10px] font-bold text-[var(--chem-fg)] mt-2">
+            <div className="text-[11px] font-bold text-[var(--chem-fg)] mt-2">
               Tổng điện tích: +{totalPositive}
             </div>
           </div>
@@ -223,14 +223,14 @@ export const FormulaBuilderGame: React.FC<{ onExit: () => void }> = ({ onExit })
           {/* Anion Tray */}
           <div className="bg-slate-900 border-2 border-pink-500/30 rounded-2xl p-3.5 flex flex-col items-center justify-between shadow-lg">
             <div className="text-center space-y-1">
-              <span className="text-[10px] font-black uppercase tracking-wider text-pink-400">
+              <span className="text-[11px] font-black text-[var(--err-fg)]">
                 Ion Âm (Anion)
               </span>
-              <div className="py-2 text-2xl font-black text-pink-200">
+              <div className="py-2 text-2xl font-black text-[var(--err-fg)]">
                 <Formula formula={currentPair.anion.symbol} />
               </div>
-              <p className="text-[11px] text-slate-400 font-medium">
-                Điện tích: <span className="text-pink-300 font-bold">{currentPair.anion.charge}</span>
+              <p className="text-xs text-slate-400 font-medium">
+                Điện tích: <span className="text-[var(--err-fg)] font-bold">{currentPair.anion.charge}</span>
               </p>
             </div>
 
@@ -255,7 +255,7 @@ export const FormulaBuilderGame: React.FC<{ onExit: () => void }> = ({ onExit })
               </button>
             </div>
 
-            <div className="text-[10px] font-bold text-pink-400 mt-2">
+            <div className="text-[11px] font-bold text-[var(--err-fg)] mt-2">
               Tổng điện tích: -{totalNegative}
             </div>
           </div>
@@ -265,7 +265,7 @@ export const FormulaBuilderGame: React.FC<{ onExit: () => void }> = ({ onExit })
         <div className="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 space-y-2">
           <div className="flex items-center justify-between text-xs">
             <span className="font-bold text-slate-300 flex items-center gap-1.5">
-              <Zap className="w-3.5 h-3.5 text-amber-400" />
+              <Zap className="w-3.5 h-3.5 text-[var(--gold-fg)]" />
               Cân bằng điện tích:
             </span>
             <span
@@ -304,11 +304,11 @@ export const FormulaBuilderGame: React.FC<{ onExit: () => void }> = ({ onExit })
               exit={{ scale: 0.8, opacity: 0 }}
               className="p-4 rounded-2xl bg-emerald-950/60 border border-emerald-500/50 flex flex-col items-center justify-center text-center space-y-1"
             >
-              <div className="flex items-center gap-2 text-emerald-400 font-black text-sm">
-                <Sparkles className="w-4 h-4 text-emerald-300 animate-spin" />
+              <div className="flex items-center gap-2 text-[var(--ok-fg)] font-black text-sm">
+                <Sparkles className="w-4 h-4 text-[var(--ok-fg)] animate-spin" />
                 Ghép thành công!
               </div>
-              <div className="text-2xl font-black text-white">
+              <div className="text-2xl font-black text-[var(--text-primary)]">
                 <Formula formula={successFormula} />
               </div>
             </motion.div>

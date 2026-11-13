@@ -148,8 +148,8 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
           <span className="font-bold text-slate-400">
             Câu <span className="text-[var(--chem-fg)] font-black">{currentIndex + 1}</span> / {roundStatements.length}
           </span>
-          <span className="px-2.5 py-0.5 rounded-full bg-violet-950/80 border border-violet-700/60 text-violet-300 font-black text-[11px] flex items-center gap-1">
-            <Sparkles className="w-3 h-3 text-violet-400" />
+          <span className="px-2.5 py-0.5 rounded-full bg-violet-950/80 border border-violet-700/60 text-violet-300 font-black text-xs flex items-center gap-1">
+            <Sparkles className="w-3 h-3 text-[var(--gem-fg)]" />
             {currentItem?.topic}
           </span>
         </div>
@@ -174,8 +174,8 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
               <div>
                 <div className="flex items-center gap-2 mb-2 text-[var(--chem-fg)]">
                   <HelpCircle className="w-4 h-4 shrink-0" />
-                  <span className="text-[10px] font-black uppercase tracking-widest">
-                    NHẬN ĐỊNH THÍ NGHIỆM
+                  <span className="text-[11px] font-black  ">
+                    Nhận định thí nghiệm
                   </span>
                 </div>
                 <p className="text-base sm:text-lg font-bold text-[var(--fg-default)] leading-snug">
@@ -217,9 +217,9 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
             className="py-4 px-4 rounded-3xl border-2 border-[var(--ok)] bg-[var(--ok)] text-[var(--on-ok)] flex flex-col items-center justify-center gap-2 shadow-[0_5px_0_0_var(--ok-shade)] active:translate-y-1 active:shadow-none hover:bg-[var(--ok-hover)] transition-all font-black text-lg disabled:opacity-40 cursor-pointer group"
           >
             <div className="w-10 h-10 rounded-full bg-white/20 border border-white/40 flex items-center justify-center group-hover:scale-110 transition-transform">
-              <Check className="w-6 h-6 text-white stroke-[3.5]" />
+              <Check className="w-6 h-6 text-[var(--text-primary)] stroke-[3.5]" />
             </div>
-            <span className="tracking-wide">ĐÚNG</span>
+            <span className="tracking-wide">Đúng</span>
           </motion.button>
 
           {/* Button SAI - Chunky 3D Ruby Arcade Button */}
@@ -230,7 +230,7 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
             className="py-4 px-4 rounded-3xl border-2 border-[var(--err)] bg-[var(--err)] text-[var(--on-err)] flex flex-col items-center justify-center gap-2 shadow-[0_5px_0_0_var(--err-shade)] active:translate-y-1 active:shadow-none hover:bg-[var(--err-hover)] transition-all font-black text-lg disabled:opacity-40 cursor-pointer group"
           >
             <div className="w-10 h-10 rounded-full bg-white/20 border border-white/40 flex items-center justify-center group-hover:scale-110 transition-transform">
-              <X className="w-6 h-6 text-white stroke-[3.5]" />
+              <X className="w-6 h-6 text-[var(--text-primary)] stroke-[3.5]" />
             </div>
             <span className="tracking-wide">SAI</span>
           </motion.button>

@@ -23,16 +23,15 @@ export const RouteErrorBoundary: React.FC = () => {
           <Mascot state="wrong" size="xl" />
         </div>
 
-        <h1 className="text-xl md:text-2xl font-black text-white mb-2">
-          Phản ứng không mong muốn! 🧪💥
-        </h1>
+        <h1 className="text-xl md:text-2xl font-black text-[var(--text-primary)] mb-2">
+          Đã có lỗi xảy ra</h1>
 
         <p className="text-sm text-slate-300 mb-6 leading-relaxed">
           Phòng thí nghiệm vừa gặp sự cố nhỏ. Đừng lo, dữ liệu tiến độ của bạn vẫn an toàn!
         </p>
 
         {errorMessage && (
-          <div className="w-full mb-6 p-3 rounded-xl bg-rose-950/40 border border-rose-800/50 text-xs font-mono text-rose-300 text-left overflow-x-auto max-h-32">
+          <div className="w-full mb-6 p-3 rounded-xl bg-rose-950/40 border border-rose-800/50 text-xs font-mono text-[var(--err-fg)] text-left overflow-x-auto max-h-32">
             {errorMessage}
           </div>
         )}
@@ -43,7 +42,7 @@ export const RouteErrorBoundary: React.FC = () => {
             fullWidth
             onClick={() => window.location.reload()}
           >
-            🔄 Thử tải lại trang
+            Thử tải lại trang
           </Button>
 
           <Button
@@ -51,7 +50,7 @@ export const RouteErrorBoundary: React.FC = () => {
             fullWidth
             onClick={() => navigate('/learn')}
           >
-            🗺️ Về lộ trình học tập
+            Về lộ trình học tập
           </Button>
         </div>
       </div>

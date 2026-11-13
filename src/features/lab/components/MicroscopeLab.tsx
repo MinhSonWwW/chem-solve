@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import {
   RotateCcw,
@@ -8,12 +8,18 @@ import {
   Info,
   CheckCircle2,
   ZoomIn,
+  Microscope,
 } from 'lucide-react';
 import { SPECIMENS, calculateFocusClarity } from '../microscopeEngine';
 import type { SpecimenId, ObjectiveLens } from '../types';
 import { sound } from '@/lib/audio';
 
-export const MicroscopeLab: React.FC = () => {
+export interface MicroscopeLabProps {
+  /** Fired once the onion epidermis specimen has been brought into sharp focus. */
+  onAchieve?: () => void;
+}
+
+export const MicroscopeLab: React.FC<MicroscopeLabProps> = ({ onAchieve }) => {
   const [selectedSpecimenId, setSelectedSpecimenId] = useState<SpecimenId>('onion-cell');
   const [lens, setLens] = useState<ObjectiveLens>('40x');
   const [fineFocus, setFineFocus] = useState<number>(30); // Start slightly out of focus
@@ -26,6 +32,11 @@ export const MicroscopeLab: React.FC = () => {
   const clarity = useMemo(() => {
     return calculateFocusClarity(fineFocus, specimen.optimalFocus);
   }, [fineFocus, specimen.optimalFocus]);
+
+  const missionDone = selectedSpecimenId === 'onion-cell' && clarity.isSharp;
+  useEffect(() => {
+    if (missionDone) onAchieve?.();
+  }, [missionDone, onAchieve]);
 
   // Handle changing specimen
   const handleSelectSpecimen = useCallback((id: SpecimenId) => {
@@ -56,21 +67,21 @@ export const MicroscopeLab: React.FC = () => {
   return (
     <div className="space-y-4">
       {/* Top Banner */}
-      <div className="p-3.5 rounded-2xl bg-[#18272f] border-2 border-[#2e4756] flex items-center justify-between gap-3 shadow-[0_3px_0_0_#101a1f]">
+      <div className="p-3.5 rounded-2xl bg-[var(--bg-surface)] border-2 border-[var(--border)] flex items-center justify-between gap-3 shadow-[0_3px_0_0_var(--edge-neutral)]">
         <div className="flex items-center gap-2.5 min-w-0">
-          <div className="w-9 h-9 rounded-xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 flex items-center justify-center shrink-0">
-            <span className="text-lg">🔬</span>
+          <div className="w-9 h-9 rounded-xl bg-emerald-500/20 text-[var(--ok-fg)] border border-emerald-500/40 flex items-center justify-center shrink-0">
+            <Microscope className="w-5 h-5" />
           </div>
           <div>
-            <h3 className="text-xs sm:text-sm font-black text-white">Kính Hiển Vi Quang Học Sinh Học</h3>
-            <p className="text-[11px] text-slate-400 font-medium">
+            <h3 className="text-xs sm:text-sm font-black text-[var(--text-primary)]">Kính hiển vi quang học sinh học</h3>
+            <p className="text-xs text-slate-400 font-medium">
               Soi tiêu bản tế bào. Xoay ốc vi cấp điều chỉnh độ nét, đổi vật kính và khám phá bào quan.
             </p>
           </div>
         </div>
         <button
           onClick={handleReset}
-          className="px-3 py-1.5 rounded-xl bg-[#20333d] hover:bg-[#ff4b4b]/20 hover:border-[#ff4b4b]/50 border-2 border-[#2e4756] text-slate-300 hover:text-[#ff4b4b] text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer shrink-0 shadow-[0_2px_0_0_#131f24] active:translate-y-[2px] active:shadow-none"
+          className="px-3 py-1.5 rounded-xl bg-[var(--bg-surface-2)] hover:bg-[var(--err-fill)]/20 hover:border-[var(--err-fill)]/50 border-2 border-[var(--border)] text-slate-300 hover:text-[var(--err-fill)] text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer shrink-0 shadow-[0_2px_0_0_var(--edge-neutral)] active:translate-y-[2px] active:shadow-none"
         >
           <RotateCcw className="w-3.5 h-3.5" />
           <span>Đặt lại</span>
@@ -81,28 +92,30 @@ export const MicroscopeLab: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
         {/* Left Column: Microscope Eyepiece Viewport (7 cols) */}
         <div className="lg:col-span-7 space-y-4">
-          <div className="p-4 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#101a1f] space-y-3">
+          <div className="p-4 rounded-3xl bg-[var(--bg-surface)] border-2 border-[var(--border)] shadow-[0_4px_0_0_var(--edge-neutral)] space-y-3">
             {/* Viewport Header */}
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-black text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
-                <Eye className="w-4 h-4" />
-                Thị Kính Quang Học (Độ phóng đại {lens})
+            <div className="flex items-center justify-between gap-2">
+              <span className="min-w-0 text-xs font-black text-[var(--ok-fg)] flex items-center gap-1.5">
+                <Eye className="w-4 h-4 shrink-0" />
+                Thị kính · {lens}
               </span>
               <span
-                className={`text-[10px] font-black px-2.5 py-0.5 rounded-full border ${
+                className={`shrink-0 whitespace-nowrap text-[11px] font-black px-2.5 py-0.5 rounded-full border ${
                   clarity.isSharp
-                    ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/40'
-                    : 'bg-amber-500/20 text-amber-400 border-amber-500/40'
+                    ? 'bg-emerald-500/20 text-[var(--ok-fg)] border-emerald-500/40'
+                    : 'bg-amber-500/20 text-[var(--gold-fg)] border-amber-500/40'
                 }`}
               >
-                {clarity.isSharp ? '✨ RÕ NÉT 100%' : `MỜ (${clarity.clarityPercent}%)`}
+                {clarity.isSharp
+                  ? `RÕ NÉT (${clarity.clarityPercent}%)`
+                  : `MỜ (${clarity.clarityPercent}%)`}
               </span>
             </div>
 
             {/* Circular Eyepiece Container */}
-            <div className="relative w-full aspect-square max-w-[340px] sm:max-w-[380px] mx-auto rounded-full border-4 border-[#20333d] bg-[#080d10] overflow-hidden shadow-[0_0_25px_rgba(0,0,0,0.8)_inset,0_4px_12px_rgba(0,0,0,0.5)]">
+            <div className="relative w-full aspect-square max-w-[340px] sm:max-w-[380px] mx-auto rounded-full border-4 border-[var(--border)] bg-[var(--bg-canvas)] overflow-hidden ">
               {/* Microscope Glass Reflection vignette */}
-              <div className="absolute inset-0 rounded-full pointer-events-none z-20 shadow-[0_0_40px_rgba(0,0,0,0.9)_inset]" />
+              <div className="absolute inset-0 rounded-full pointer-events-none z-20 " />
               <div className="absolute inset-0 rounded-full border border-sky-400/10 pointer-events-none z-20" />
 
               {/* Specimen Slide SVG Visualizer */}
@@ -310,22 +323,22 @@ export const MicroscopeLab: React.FC = () => {
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="p-3.5 rounded-2xl bg-[#20333d] border-2 border-emerald-500/50 space-y-1 shadow-lg"
+                className="p-3.5 rounded-2xl bg-[var(--bg-surface-2)] border-2 border-emerald-500/50 space-y-1 shadow-lg"
               >
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-black text-emerald-400 flex items-center gap-1.5">
+                  <span className="text-xs font-black text-[var(--ok-fg)] flex items-center gap-1.5">
                     <CheckCircle2 className="w-4 h-4" />
                     Bào quan #{activeOrganelleIndex + 1}:{' '}
                     {specimen.organelles[activeOrganelleIndex].name}
                   </span>
                   <button
                     onClick={() => setActiveOrganelleIndex(null)}
-                    className="text-slate-400 hover:text-white text-xs font-bold px-1"
+                    className="text-slate-400 hover:text-[var(--text-primary)] text-xs font-bold px-1"
                   >
                     Đóng
                   </button>
                 </div>
-                <p className="text-[11px] text-slate-200 leading-relaxed font-medium">
+                <p className="text-xs text-slate-200 leading-relaxed font-medium">
                   {specimen.organelles[activeOrganelleIndex].description}
                 </p>
               </motion.div>
@@ -333,11 +346,11 @@ export const MicroscopeLab: React.FC = () => {
 
             {/* Hint message if not sharp */}
             {!clarity.isSharp && (
-              <div className="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-medium flex items-center gap-2">
+              <div className="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/30 text-[var(--gold-fg)] text-xs font-medium flex items-center gap-2">
                 <Sliders className="w-4 h-4 shrink-0" />
                 <span>
-                  Tiêu bản đang bị mờ! Kéo thanh **Ốc Vi Cấp** bên phải sang trái/phải để tìm điểm
-                  nét hoàn hảo (~{specimen.optimalFocus}%).
+                  Tiêu bản đang bị mờ! Kéo thanh <strong className="font-black">Ốc vi cấp</strong> trong
+                  bảng điều khiển qua lại từ từ cho đến khi ảnh rõ nét nhé.
                 </span>
               </div>
             )}
@@ -347,9 +360,9 @@ export const MicroscopeLab: React.FC = () => {
         {/* Right Column: Microscope Controls & Specimen Tray (5 cols) */}
         <div className="lg:col-span-5 space-y-4">
           {/* Specimen Slide Tray (Khay Tiêu Bản) */}
-          <div className="p-4 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#101a1f] space-y-3">
-            <span className="text-xs font-black text-white uppercase tracking-wider block">
-              Khay Tiêu Bản Sinh Học
+          <div className="p-4 rounded-3xl bg-[var(--bg-surface)] border-2 border-[var(--border)] shadow-[0_4px_0_0_var(--edge-neutral)] space-y-3">
+            <span className="text-xs font-black text-[var(--text-primary)] block">
+              Khay tiêu bản sinh học
             </span>
 
             <div className="grid grid-cols-2 gap-2">
@@ -360,16 +373,16 @@ export const MicroscopeLab: React.FC = () => {
                   <button
                     key={id}
                     onClick={() => handleSelectSpecimen(id)}
-                    className={`p-2.5 rounded-2xl border-2 text-left transition-all cursor-pointer shadow-[0_2px_0_0_#131f24] active:translate-y-[2px] active:shadow-none ${
+                    className={`p-2.5 rounded-2xl border-2 text-left transition-all cursor-pointer shadow-[0_2px_0_0_var(--edge-neutral)] active:translate-y-[2px] active:shadow-none ${
                       isSelected
                         ? 'bg-emerald-500/15 border-emerald-600 shadow-sm'
-                        : 'bg-[#20333d] hover:bg-[#28404e] border-[#2e4756]'
+                        : 'bg-[var(--bg-surface-2)] hover:bg-[var(--border)] border-[var(--border)]'
                     }`}
                   >
-                    <div className="text-xs font-black text-white line-clamp-1">{sp.name}</div>
-                    <div className="text-[10px] text-slate-400 mt-0.5 line-clamp-1">{sp.source}</div>
+                    <div className="text-xs font-black text-[var(--text-primary)] line-clamp-1">{sp.name}</div>
+                    <div className="text-[11px] text-slate-400 mt-0.5 line-clamp-1">{sp.source}</div>
                     <div className="mt-1">
-                      <span className="text-[9px] font-bold text-emerald-400 bg-emerald-400/10 px-1.5 py-0.5 rounded">
+                      <span className="text-[11px] font-bold text-[var(--ok-fg)] bg-emerald-400/10 px-1.5 py-0.5 rounded">
                         {sp.stain}
                       </span>
                     </div>
@@ -380,13 +393,13 @@ export const MicroscopeLab: React.FC = () => {
           </div>
 
           {/* Objective Lens Revolver (Mâm Xoay Vật Kính) */}
-          <div className="p-4 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#101a1f] space-y-3">
+          <div className="p-4 rounded-3xl bg-[var(--bg-surface)] border-2 border-[var(--border)] shadow-[0_4px_0_0_var(--edge-neutral)] space-y-3">
             <div className="flex items-center justify-between">
-              <span className="text-xs font-black text-white uppercase tracking-wider flex items-center gap-1.5">
-                <ZoomIn className="w-4 h-4 text-sky-400" />
+              <span className="text-xs font-black text-[var(--text-primary)] flex items-center gap-1.5">
+                <ZoomIn className="w-4 h-4 text-[var(--chem-fg)]" />
                 Vật Kính (Độ phóng đại)
               </span>
-              <span className="text-[10px] font-bold text-slate-400">Chọn ống kính</span>
+              <span className="text-[11px] font-bold text-slate-400">Chọn ống kính</span>
             </div>
 
             <div className="grid grid-cols-3 gap-2">
@@ -397,7 +410,7 @@ export const MicroscopeLab: React.FC = () => {
                   className={`py-2 rounded-xl font-black text-xs border-2 transition-all cursor-pointer ${
                     lens === l
                       ? 'bg-sky-500 text-white border-sky-300 shadow-[0_3px_0_0_#0284c7]'
-                      : 'bg-[#20333d] hover:bg-[#28404e] text-slate-300 border-[#2e4756]'
+                      : 'bg-[var(--bg-surface-2)] hover:bg-[var(--border)] text-slate-300 border-[var(--border)]'
                   }`}
                 >
                   {l}
@@ -407,19 +420,19 @@ export const MicroscopeLab: React.FC = () => {
           </div>
 
           {/* Microscope Optical Adjustment Knobs (Ốc Vi Cấp & Đèn Chiếu) */}
-          <div className="p-4 rounded-3xl bg-[#18272f] border-2 border-[#2e4756] shadow-[0_4px_0_0_#101a1f] space-y-4">
-            <span className="text-xs font-black text-white uppercase tracking-wider block">
-              Điều Chỉnh Quang Học
+          <div className="p-4 rounded-3xl bg-[var(--bg-surface)] border-2 border-[var(--border)] shadow-[0_4px_0_0_var(--edge-neutral)] space-y-4">
+            <span className="text-xs font-black text-[var(--text-primary)] block">
+              Điều chỉnh quang học
             </span>
 
             {/* Fine Focus Knob Slider */}
             <div className="space-y-1.5">
               <div className="flex justify-between items-center text-xs">
                 <span className="font-bold text-slate-300 flex items-center gap-1.5">
-                  <Sliders className="w-3.5 h-3.5 text-emerald-400" />
-                  Ốc Vi Cấp (Độ nét tiêu cự)
+                  <Sliders className="w-3.5 h-3.5 text-[var(--ok-fg)]" />
+                  Ốc vi cấp (Độ nét tiêu cự)
                 </span>
-                <span className="font-mono font-black text-emerald-400">{fineFocus}%</span>
+                <span className="font-mono font-black text-[var(--ok-fg)]">{fineFocus}%</span>
               </div>
               <input
                 type="range"
@@ -427,9 +440,9 @@ export const MicroscopeLab: React.FC = () => {
                 max="100"
                 value={fineFocus}
                 onChange={(e) => setFineFocus(Number(e.target.value))}
-                className="w-full accent-emerald-500 cursor-pointer h-2 bg-[#20333d] rounded-lg"
+                className="w-full accent-emerald-500 cursor-pointer h-2 bg-[var(--bg-surface-2)] rounded-lg"
               />
-              <div className="flex justify-between text-[10px] text-slate-400 font-semibold">
+              <div className="flex justify-between text-[11px] text-slate-400 font-semibold">
                 <span>0% (Hạ bàn soi)</span>
                 <span>50% (Trung tâm)</span>
                 <span>100% (Nâng bàn soi)</span>
@@ -437,13 +450,13 @@ export const MicroscopeLab: React.FC = () => {
             </div>
 
             {/* Light Intensity Slider */}
-            <div className="space-y-1.5 pt-2 border-t border-[#2e4756]">
+            <div className="space-y-1.5 pt-2 border-t border-[var(--border)]">
               <div className="flex justify-between items-center text-xs">
                 <span className="font-bold text-slate-300 flex items-center gap-1.5">
-                  <Sun className="w-3.5 h-3.5 text-amber-400" />
-                  Gương/Đèn Chiếu Sáng
+                  <Sun className="w-3.5 h-3.5 text-[var(--gold-fg)]" />
+                  Gương/đèn chiếu sáng
                 </span>
-                <span className="font-mono font-black text-amber-400">{lightIntensity}%</span>
+                <span className="font-mono font-black text-[var(--gold-fg)]">{lightIntensity}%</span>
               </div>
               <input
                 type="range"
@@ -451,18 +464,18 @@ export const MicroscopeLab: React.FC = () => {
                 max="100"
                 value={lightIntensity}
                 onChange={(e) => setLightIntensity(Number(e.target.value))}
-                className="w-full accent-amber-500 cursor-pointer h-2 bg-[#20333d] rounded-lg"
+                className="w-full accent-amber-500 cursor-pointer h-2 bg-[var(--bg-surface-2)] rounded-lg"
               />
             </div>
           </div>
 
           {/* Educational Note */}
-          <div className="p-3.5 rounded-2xl bg-[#18272f] border-2 border-[#2e4756] text-xs space-y-1">
-            <div className="font-black text-white flex items-center gap-1.5">
-              <Info className="w-3.5 h-3.5 text-sky-400" />
+          <div className="p-3.5 rounded-2xl bg-[var(--bg-surface)] border-2 border-[var(--border)] text-xs space-y-1">
+            <div className="font-black text-[var(--text-primary)] flex items-center gap-1.5">
+              <Info className="w-3.5 h-3.5 text-[var(--chem-fg)]" />
               Đặc điểm tiêu bản hiện tại:
             </div>
-            <p className="text-slate-300 text-[11px] font-medium leading-relaxed">
+            <p className="text-slate-300 text-xs font-medium leading-relaxed">
               {specimen.description}
             </p>
           </div>

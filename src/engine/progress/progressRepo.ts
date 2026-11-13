@@ -135,7 +135,7 @@ function getActiveUserId(): string | null {
 const DEFAULT_PROGRESS: UserProgress = {
   xp: 0,
   gems: 0,
-  hearts: 99,
+  hearts: GAMIFICATION.hearts.max,
   heartsLastDecAt: 0,
   lastHeartResetDate: new Date().toISOString().slice(0, 10),
   streak: 0,
@@ -265,9 +265,14 @@ export async function loadUserProgress(): Promise<UserProgress> {
     }
   }
 
-  raw.hearts = 99; // Testing mode: unlimited hearts
+  // Clamp stored hearts into normal boundary [0, GAMIFICATION.hearts.max]
+  if (raw.hearts === undefined || raw.hearts >= 99) {
+    raw.hearts = GAMIFICATION.hearts.max;
+  } else {
+    raw.hearts = Math.max(0, Math.min(GAMIFICATION.hearts.max, raw.hearts));
+  }
 
-  // Daily Full Heart Refill: automatically recovers full 5 hearts upon new calendar day
+  // Daily Full Heart Refill: automatically recovers full hearts upon new calendar day
   const today = new Date().toISOString().slice(0, 10);
   if (raw.lastHeartResetDate !== today) {
     raw.hearts = GAMIFICATION.hearts.max;

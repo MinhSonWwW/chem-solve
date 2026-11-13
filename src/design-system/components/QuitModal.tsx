@@ -62,19 +62,19 @@ export const QuitModal: React.FC<QuitModalProps> = ({
                 onKeepLearning();
               }}
             >
-              HỌC TIẾP
+              Học tiếp
             </Button>
             <Button
               variant="ghost"
               size="md"
               fullWidth
-              className="text-[var(--err-fg)] hover:text-[var(--err-fg)] hover:bg-[var(--err-tint)] font-black tracking-wider"
+              className="text-[var(--err-fg)] hover:text-[var(--err-fg)] hover:bg-[var(--err-tint)] font-black "
               onClick={() => {
                 sound.playClick();
                 onQuit();
               }}
             >
-              RỜI BÀI HỌC
+              Rời bài học
             </Button>
           </div>
         </motion.div>

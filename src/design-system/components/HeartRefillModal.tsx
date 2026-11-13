@@ -5,6 +5,7 @@ import { Button } from './Button';
 import { Mascot } from './Mascot';
 import { assetUrl, cn } from '@/lib/utils';
 import { sound } from '@/lib/audio';
+import { GAMIFICATION } from '@/config/gamification';
 
 export interface HeartRefillModalProps {
   isOpen: boolean;
@@ -21,9 +22,9 @@ export interface HeartRefillModalProps {
 export const HeartRefillModal: React.FC<HeartRefillModalProps> = ({
   isOpen,
   hearts,
-  maxHearts = 5,
+  maxHearts = GAMIFICATION.hearts.max,
   gems,
-  costPerHeart = 150,
+  costPerHeart = GAMIFICATION.gems.costPerHeart,
   onBuyWithGems,
   onGoToPractice,
   onGoToShop,
@@ -83,13 +84,13 @@ export const HeartRefillModal: React.FC<HeartRefillModalProps> = ({
             </h2>
             <p className="text-xs text-[var(--text-secondary)] leading-relaxed font-medium">
               {isFull
-                ? 'Bạn đang có đủ 5 tim để sẵn sàng chinh phục mọi bài học.'
+                ? `Bạn đang có đủ ${maxHearts} tim để sẵn sàng chinh phục mọi bài học.`
                 : 'Mỗi câu làm sai trong phần học sẽ tiêu hao 1 tim. Bạn có thể đổi đá quý hoặc luyện tập để hồi phục!'}
             </p>
           </div>
 
           {/* Heart Status Bar */}
-          <div className="flex justify-center items-center gap-2 py-1.5 bg-[var(--bg-canvas)] border border-[var(--border)] rounded-2xl p-2">
+          <div className="grid grid-cols-5 gap-2 max-w-[240px] mx-auto py-2 bg-[var(--bg-canvas)] border border-[var(--border)] rounded-2xl p-2.5 justify-items-center">
             {Array.from({ length: maxHearts }).map((_, i) => (
               <div
                 key={i}
@@ -149,8 +150,8 @@ export const HeartRefillModal: React.FC<HeartRefillModalProps> = ({
                   onGoToPractice();
                 }}
               >
-                <Heart className="w-4 h-4 fill-white text-white" />
-                <span>LUYỆN TẬP ĐỂ HỒI TIM (+1 TIM)</span>
+                <Heart className="w-4 h-4 fill-white text-[var(--text-primary)]" />
+                <span>Luyện tập để hồi tim (+1 tim)</span>
               </Button>
             </div>
           )}
@@ -165,12 +166,12 @@ export const HeartRefillModal: React.FC<HeartRefillModalProps> = ({
               className="w-full flex items-center justify-center gap-1.5 py-2 px-3 rounded-2xl text-xs font-black text-[var(--gem-fg)] hover:underline transition-colors cursor-pointer"
             >
               <ShoppingBag className="w-3.5 h-3.5" />
-              <span>Ghé Cửa Hàng (Bơm đầy 5 tim, khiên bảo vệ) ➔</span>
+              <span>Ghé cửa hàng (Bơm đầy 5 tim, khiên bảo vệ) →</span>
             </button>
           )}
 
           {/* Daily Reset Note */}
-          <p className="text-[11px] text-[var(--text-tertiary)] italic pt-1">
+          <p className="text-xs text-[var(--text-tertiary)] italic pt-1">
             Toàn bộ 5 tim sẽ tự động hồi đầy mỗi khi chuyển sang ngày mới!
           </p>
         </motion.div>
