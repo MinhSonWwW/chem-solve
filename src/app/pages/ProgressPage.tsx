@@ -447,7 +447,7 @@ export const ProgressPage: React.FC = () => {
         {completedGradeCount === 0 && (
           <div className="p-4 rounded-2xl bg-[var(--bg-canvas)] border border-[var(--border)] flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left relative z-10">
             <img
-              src={assetUrl('/assets/ui/empty-no-progress.png')}
+              src={assetUrl('/assets/ui/empty-no-progress.webp')}
               alt="Chưa có tiến độ"
               className="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-md shrink-0 select-none pointer-events-none"
             />

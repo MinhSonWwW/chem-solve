@@ -68,7 +68,7 @@ export const HeartRefillModal: React.FC<HeartRefillModalProps> = ({
             <Mascot state={isFull ? 'happy' : hearts <= 1 ? 'out_of_hearts' : 'thinking'} size="lg" />
             <div className="w-14 h-14 rounded-2xl bg-[var(--err-tint)] border border-[var(--err-edge)] flex flex-col items-center justify-center text-[var(--err-fg)]">
               <img
-                src={assetUrl('/assets/icons/heart-flask.png')}
+                src={assetUrl('/assets/icons/heart-flask.webp')}
                 alt="Heart"
                 className="w-7 h-7 object-contain animate-pulse"
               />
@@ -110,7 +110,7 @@ export const HeartRefillModal: React.FC<HeartRefillModalProps> = ({
           <div className="flex items-center justify-between px-3.5 py-2 rounded-2xl bg-[var(--bg-canvas)] border border-[var(--border)] text-xs">
             <span className="text-[var(--text-secondary)] font-bold">Số Đá quý của bạn:</span>
             <div className="flex items-center gap-1.5 font-black text-[var(--gem-fg)]">
-              <img src={assetUrl('/assets/icons/gem-crystal.png')} alt="Gem" className="w-4 h-4 object-contain" />
+              <img src={assetUrl('/assets/icons/gem-crystal.webp')} alt="Gem" className="w-4 h-4 object-contain" />
               <span>{gems} Đá quý</span>
             </div>
           </div>
@@ -131,7 +131,7 @@ export const HeartRefillModal: React.FC<HeartRefillModalProps> = ({
                   }
                 }}
               >
-                <img src={assetUrl('/assets/icons/gem-crystal.png')} alt="Gem" className="w-4 h-4 object-contain" />
+                <img src={assetUrl('/assets/icons/gem-crystal.webp')} alt="Gem" className="w-4 h-4 object-contain" />
                 <span>
                   {canAfford
                     ? `ĐỔI 1 TIM (${costPerHeart} ĐÁ QUÝ)`

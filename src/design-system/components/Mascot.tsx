@@ -131,49 +131,49 @@ export const Mascot: React.FC<MascotProps> = ({
     if (prefix === 'atom') {
       switch (state) {
         case 'thinking':
-          return '/assets/mascot/atom-thinking.png';
+          return '/assets/mascot/atom-thinking.webp';
         case 'celebrating':
-          return '/assets/mascot/atom-celebrating.png';
+          return '/assets/mascot/atom-celebrating.webp';
         case 'cheering':
-          return '/assets/mascot/atom-cheering.png';
+          return '/assets/mascot/atom-cheering.webp';
         case 'surprised':
-          return '/assets/mascot/atom-surprised.png';
+          return '/assets/mascot/atom-surprised.webp';
         case 'sleeping':
         case 'out_of_hearts':
-          return '/assets/mascot/atom-out-of-hearts.png';
+          return '/assets/mascot/atom-out-of-hearts.webp';
         case 'correct':
-          return '/assets/mascot/atom-correct.png';
+          return '/assets/mascot/atom-correct.webp';
         case 'wrong':
-          return '/assets/mascot/atom-wrong.png';
+          return '/assets/mascot/atom-wrong.webp';
         case 'idle':
         case 'happy':
         default:
-          return '/assets/mascot/atom-idle.png';
+          return '/assets/mascot/atom-idle.webp';
       }
     }
 
     // Bio (Leafy) & Physics (Sparky) have complete dedicated sets
     switch (state) {
       case 'happy':
-        return `/assets/mascot/${prefix}-happy.png`;
+        return `/assets/mascot/${prefix}-happy.webp`;
       case 'thinking':
-        return `/assets/mascot/${prefix}-thinking.png`;
+        return `/assets/mascot/${prefix}-thinking.webp`;
       case 'celebrating':
-        return `/assets/mascot/${prefix}-celebrating.png`;
+        return `/assets/mascot/${prefix}-celebrating.webp`;
       case 'cheering':
-        return `/assets/mascot/${prefix}-cheering.png`;
+        return `/assets/mascot/${prefix}-cheering.webp`;
       case 'surprised':
-        return `/assets/mascot/${prefix}-surprised.png`;
+        return `/assets/mascot/${prefix}-surprised.webp`;
       case 'sleeping':
       case 'out_of_hearts':
-        return `/assets/mascot/${prefix}-out-of-hearts.png`;
+        return `/assets/mascot/${prefix}-out-of-hearts.webp`;
       case 'correct':
-        return `/assets/mascot/${prefix}-correct.png`;
+        return `/assets/mascot/${prefix}-correct.webp`;
       case 'wrong':
-        return `/assets/mascot/${prefix}-wrong.png`;
+        return `/assets/mascot/${prefix}-wrong.webp`;
       case 'idle':
       default:
-        return `/assets/mascot/${prefix}-idle.png`;
+        return `/assets/mascot/${prefix}-idle.webp`;
     }
   })();
   const mascotSrc = assetUrl(rawSrc);

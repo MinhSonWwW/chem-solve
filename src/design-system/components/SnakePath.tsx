@@ -369,7 +369,7 @@ export const SnakePath: React.FC<SnakePathProps> = ({
                   {isChest ? (
                     isCompleted ? (
                       <img
-                        src={assetUrl('/assets/roadmap/node-chest-completed.png')}
+                        src={assetUrl('/assets/roadmap/node-chest-completed.webp')}
                         alt="Rương đã mở"
                         className="w-12 h-12 object-contain drop-shadow-md select-none pointer-events-none"
                       />

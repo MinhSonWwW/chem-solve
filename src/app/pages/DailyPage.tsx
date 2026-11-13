@@ -141,7 +141,7 @@ export const DailyPage: React.FC = () => {
 
           <div className="flex items-center gap-4">
             <img
-              src={assetUrl('/assets/roadmap/node-daily.png')}
+              src={assetUrl('/assets/roadmap/node-daily.webp')}
               alt="Thử thách ngày"
               className="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-lg shrink-0 select-none pointer-events-none"
             />

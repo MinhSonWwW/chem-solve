@@ -377,7 +377,7 @@ export const SubjectTrophy: React.FC<SubjectTrophyProps> = ({
       title="Cúp Hóa học: Bình chưng cất hoàng kim"
     >
       <img
-        src={assetUrl('/assets/roadmap/trophy-gold.png')}
+        src={assetUrl('/assets/roadmap/trophy-gold.webp')}
         alt="Cúp Hóa học Vàng"
         className="w-full h-full object-contain"
       />

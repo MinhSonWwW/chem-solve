@@ -17,7 +17,7 @@ export const GemBadge: React.FC<GemBadgeProps> = ({ amount, className, ...props 
       {...props}
     >
       <img
-        src={assetUrl('/assets/icons/gem-crystal.png')}
+        src={assetUrl('/assets/icons/gem-crystal.webp')}
         alt="Gem"
         className="w-4 h-4 object-contain shrink-0 drop-shadow-sm"
         onError={(e) => {

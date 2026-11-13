@@ -16,7 +16,7 @@ export const Streak: React.FC<StreakProps> = ({ days, className, ...props }) => 
       {...props}
     >
       <img
-        src={assetUrl('/assets/icons/streak-flame.png')}
+        src={assetUrl('/assets/icons/streak-flame.webp')}
         alt="Streak"
         className="w-4 h-4 object-contain shrink-0"
         onError={(e) => {

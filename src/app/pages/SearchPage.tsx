@@ -83,7 +83,7 @@ export const SearchPage: React.FC = () => {
           {totalResults === 0 && (
             <div className="py-8 px-4 text-center space-y-3 bg-[var(--bg-surface)] border border-[var(--border)] rounded-3xl">
               <img
-                src={assetUrl('/assets/ui/empty-search.png')}
+                src={assetUrl('/assets/ui/empty-search.webp')}
                 alt="Không tìm thấy kết quả"
                 className="w-28 h-28 object-contain mx-auto drop-shadow-md select-none pointer-events-none"
               />

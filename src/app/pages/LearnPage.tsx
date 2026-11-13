@@ -447,7 +447,7 @@ export const LearnPage: React.FC = () => {
           {chaptersWithNodes.length === 0 && (
             <div className="py-12 px-4 text-center space-y-3 bg-[var(--bg-surface)] border border-[var(--border)] rounded-3xl">
               <img
-                src={assetUrl('/assets/ui/empty-no-lessons.png')}
+                src={assetUrl('/assets/ui/empty-no-lessons.webp')}
                 alt="Chưa có bài học"
                 className="w-32 h-32 object-contain mx-auto drop-shadow-md select-none pointer-events-none"
               />

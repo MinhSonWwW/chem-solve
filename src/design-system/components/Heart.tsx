@@ -25,7 +25,7 @@ export const Heart: React.FC<HeartProps> = ({
       {...props}
     >
       <img
-        src={assetUrl('/assets/icons/heart-flask.png')}
+        src={assetUrl('/assets/icons/heart-flask.webp')}
         alt="Tim"
         className="w-4 h-4 object-contain animate-pulse shrink-0"
         onError={(e) => {

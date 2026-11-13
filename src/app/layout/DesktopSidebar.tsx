@@ -67,7 +67,7 @@ export const DesktopSidebar: React.FC = () => {
               <Leaf className="w-5 h-5" />
             ) : (
               <img
-                src={assetUrl('/assets/mascot/atom-idle.png')}
+                src={assetUrl('/assets/mascot/atom-idle.webp')}
                 alt="Atom"
                 className="w-8 h-8 object-contain"
                 onError={(e) => {

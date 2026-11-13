@@ -21,18 +21,17 @@ export default defineConfig(() => {
           // App shell + all lesson chunks (default) + the 7 tiny reward videos (~340 KB).
           // Videos are precached because they are fetched with Range requests (206),
           // which runtime caching cannot store.
-          // Plus the six small currency/HUD icons shown on almost every screen (~480 KB),
-          // so the header never shows broken images offline even if they were never seen online.
+          // Plus every image the UI uses: they were converted to resized WebP (~1.3 MB total,
+          // down from ~33 MB PNG), so mascots/icons/roadmap art all work offline from first install.
           globPatterns: [
             '**/*.{js,wasm,css,html}',
             'assets/animations/*.mp4',
-            'assets/icons/{chem-coin,gem-crystal,heart-flask,streak-flame,xp-potion}.png',
-            'assets/roadmap/trophy-gold.png',
+            'assets/{mascot,icons,roadmap,ui,vfx}/*.webp',
           ],
           runtimeCaching: [
             {
-              // Mascots, icons, roadmap art (~45 MB total): cache each image the first
-              // time it is shown, so it keeps working offline without a huge first download.
+              // Safety net for any other same-origin image (e.g. art added later and not yet
+              // in globPatterns): cache it the first time it is shown so it works offline.
               urlPattern: ({ request, sameOrigin }) => sameOrigin && request.destination === 'image',
               handler: 'CacheFirst',
               options: {

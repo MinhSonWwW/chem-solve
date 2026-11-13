@@ -40,7 +40,7 @@ export const TopHeader: React.FC = () => {
                   <Leaf className="w-4 h-4" />
                 ) : (
                   <img
-                    src={assetUrl('/assets/mascot/atom-idle.png')}
+                    src={assetUrl('/assets/mascot/atom-idle.webp')}
                     alt="Atom"
                     className="w-7 h-7 object-contain"
                     onError={(e) => {

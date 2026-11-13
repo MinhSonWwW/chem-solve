@@ -41,7 +41,7 @@ export const CurrencyIcon: React.FC<CurrencyIconProps> = ({
     case 'gem':
       return (
         <img
-          src={assetUrl('/assets/icons/gem-crystal.png')}
+          src={assetUrl('/assets/icons/gem-crystal.webp')}
           alt="Đá quý"
           className={cn(
             s.box,
@@ -56,7 +56,7 @@ export const CurrencyIcon: React.FC<CurrencyIconProps> = ({
     case 'heart':
       return (
         <img
-          src={assetUrl('/assets/icons/heart-flask.png')}
+          src={assetUrl('/assets/icons/heart-flask.webp')}
           alt="Bình tim"
           className={cn(
             s.box,
@@ -71,7 +71,7 @@ export const CurrencyIcon: React.FC<CurrencyIconProps> = ({
     case 'streak':
       return (
         <img
-          src={assetUrl('/assets/icons/streak-flame.png')}
+          src={assetUrl('/assets/icons/streak-flame.webp')}
           alt="Lửa chuỗi"
           className={cn(
             s.box,
@@ -85,7 +85,7 @@ export const CurrencyIcon: React.FC<CurrencyIconProps> = ({
     case 'xp':
       return (
         <img
-          src={assetUrl('/assets/icons/xp-potion.png')}
+          src={assetUrl('/assets/icons/xp-potion.webp')}
           alt="Kinh nghiệm"
           className={cn(
             s.box,
@@ -99,7 +99,7 @@ export const CurrencyIcon: React.FC<CurrencyIconProps> = ({
     case 'coin':
       return (
         <img
-          src={assetUrl('/assets/icons/chem-coin.png')}
+          src={assetUrl('/assets/icons/chem-coin.webp')}
           alt="Xu Hóa học"
           className={cn(
             s.box,
@@ -113,7 +113,7 @@ export const CurrencyIcon: React.FC<CurrencyIconProps> = ({
     case 'trophy':
       return (
         <img
-          src={assetUrl('/assets/roadmap/trophy-gold.png')}
+          src={assetUrl('/assets/roadmap/trophy-gold.webp')}
           alt="Cúp vàng"
           className={cn(
             s.box,

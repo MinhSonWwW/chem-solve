@@ -52,7 +52,7 @@ export const OutOfHeartsModal: React.FC<OutOfHeartsModalProps> = ({
           {/* Header Illustration */}
           <div className="flex justify-center items-center pt-1">
             <img
-              src={assetUrl('/assets/ui/empty-no-hearts.png')}
+              src={assetUrl('/assets/ui/empty-no-hearts.webp')}
               alt="Hết tim"
               className="w-28 h-28 object-contain drop-shadow-lg select-none pointer-events-none"
             />
@@ -83,7 +83,7 @@ export const OutOfHeartsModal: React.FC<OutOfHeartsModalProps> = ({
                   }
                 }}
               >
-                <img src={assetUrl('/assets/icons/gem-crystal.png')} alt="Gem" className="w-4 h-4 object-contain" />
+                <img src={assetUrl('/assets/icons/gem-crystal.webp')} alt="Gem" className="w-4 h-4 object-contain" />
                 <span>
                   {canAfford ? 'Đổi 1 tim (150 đá quý)' : `ĐỔI 1 TIM (CÓ ${gems}/150 ĐÁ QUÝ)`}
                 </span>

@@ -16,7 +16,7 @@ export const XPBadge: React.FC<XPBadgeProps> = ({ amount, className, ...props })
       {...props}
     >
       <img
-        src={assetUrl('/assets/icons/xp-potion.png')}
+        src={assetUrl('/assets/icons/xp-potion.webp')}
         alt="XP"
         className="w-4 h-4 object-contain shrink-0"
         onError={(e) => {

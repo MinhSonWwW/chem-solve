@@ -233,21 +233,21 @@ export const ReactionVisualizer: React.FC<ReactionVisualizerProps> = ({
 
   const vfxSticker =
     type === 'gas'
-      ? assetUrl('/assets/vfx/vfx-gas.png')
+      ? assetUrl('/assets/vfx/vfx-gas.webp')
       : type === 'precipitate'
-      ? assetUrl('/assets/vfx/vfx-precipitate.png')
+      ? assetUrl('/assets/vfx/vfx-precipitate.webp')
       : type === 'fire'
-      ? assetUrl('/assets/vfx/reaction-fire.png')
+      ? assetUrl('/assets/vfx/reaction-fire.webp')
       : type === 'color-change'
       ? isRed
-        ? assetUrl('/assets/vfx/reaction-color-change-red.png')
-        : assetUrl('/assets/vfx/reaction-color-change-blue.png')
+        ? assetUrl('/assets/vfx/reaction-color-change-red.webp')
+        : assetUrl('/assets/vfx/reaction-color-change-blue.webp')
       : type === 'indicator'
       ? isPurple
-        ? assetUrl('/assets/vfx/reaction-litmus-purple.png')
+        ? assetUrl('/assets/vfx/reaction-litmus-purple.webp')
         : isRed
-        ? assetUrl('/assets/vfx/litmus-red.png')
-        : assetUrl('/assets/vfx/litmus-blue.png')
+        ? assetUrl('/assets/vfx/litmus-red.webp')
+        : assetUrl('/assets/vfx/litmus-blue.webp')
       : null;
 
   return (
