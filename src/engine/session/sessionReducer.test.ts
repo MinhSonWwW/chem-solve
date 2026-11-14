@@ -100,6 +100,20 @@ describe('engine/sessionReducer', () => {
     expect(state.questions[0].status).toBe('answering');
   });
 
+  it('never deducts hearts in teacher-assigned work (noHeartLoss) but still counts the attempt', () => {
+    let state = createInitialSession(SAMPLE_EXERCISES, 2, false, true);
+    for (let i = 0; i < 3; i++) {
+      state = sessionReducer(state, { type: 'SET_INPUT', payload: '1.0 L' });
+      state = sessionReducer(state, { type: 'START_CHECK' });
+      state = sessionReducer(state, { type: 'EVALUATE_RESULT', payload: { status: 'incorrect', reason: 'Sai' } });
+      if (i < 2) state = sessionReducer(state, { type: 'DISMISS_FEEDBACK' });
+    }
+    expect(state.hearts).toBe(2);
+    expect(state.isPractice).toBe(false);
+    expect(state.questions[0].attemptsCount).toBe(3);
+    expect(state.questions[0].status).toBe('revealed');
+  });
+
   it('deducts hearts on incorrect answer and marks revealed after 3 attempts', () => {
     let state = createInitialSession(SAMPLE_EXERCISES);
 

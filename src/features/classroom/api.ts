@@ -2,9 +2,12 @@
  * Client for the classroom API (server/classroom.ts, served at /api on the same origin).
  * Tokens live in localStorage; every read/write is wrapped so private mode never crashes the app.
  */
+import type { ExerciseSet, ExerciseSetInput, TeacherQuestion } from '@/content/schema/teacherSet';
 
 export const TEACHER_TOKEN_KEY = 'sci_teacher_session';
 export const STUDENT_KEY = 'sci_classroom_student';
+export const ASSIGNMENTS_CACHE_KEY = 'sci_classroom_assignments';
+const SET_CACHE_PREFIX = 'sci_classroom_set_';
 
 export interface ClassSummary {
   id: string;
@@ -19,6 +22,16 @@ export interface Assignment {
   lessonId: string;
   dueAt: number | null;
   createdAt: number;
+  /** Title of a teacher question set (null for curriculum lessons). */
+  title?: string | null;
+}
+export interface SetSummary {
+  id: string;
+  title: string;
+  subject: ExerciseSet['subject'];
+  grade: number;
+  questionCount: number;
+  updatedAt: number;
 }
 export interface ClassDetail {
   class: Omit<ClassSummary, 'studentCount'>;
@@ -26,6 +39,7 @@ export interface ClassDetail {
   completions: { studentId: string; lessonId: string; nodeId: string; bestAccuracy: number; xp: number; completedAt: number; times: number }[];
   practice: { studentId: string; lessonId: string; sessions: number; avgAccuracy: number; completedAt: number }[];
   assignments: Assignment[];
+  sets: { id: string; title: string; questions: TeacherQuestion[] }[];
   questionStats: { exerciseId: string; lessonId: string; attempts: number; wrong: number; students: number }[];
   skillStats: { skillId: string; attempts: number; wrong: number }[];
 }
@@ -88,6 +102,7 @@ export async function teacherLogin(accessToken: string) {
     body: JSON.stringify({ accessToken }),
   });
   write(TEACHER_TOKEN_KEY, r.sessionToken);
+  window.dispatchEvent(new Event('classroom-changed'));
   return r.teacher;
 }
 export async function teacherLogout() {
@@ -95,6 +110,7 @@ export async function teacherLogout() {
     await call('teacher/logout', { method: 'POST', auth: 'teacher' });
   } finally {
     write(TEACHER_TOKEN_KEY, null);
+    window.dispatchEvent(new Event('classroom-changed'));
   }
 }
 export const getTeacherMe = () => call<{ teacher: { name: string; email: string } }>('teacher/me', { auth: 'teacher' });
@@ -113,7 +129,19 @@ export const deleteAssignment = (classId: string, id: string) =>
   call(`teacher/classes/${classId}/assignments/${id}`, { method: 'DELETE', auth: 'teacher' });
 export const removeStudent = (classId: string, studentId: string) =>
   call(`teacher/classes/${classId}/students/${studentId}`, { method: 'DELETE', auth: 'teacher' });
-export const clearTeacherSession = () => write(TEACHER_TOKEN_KEY, null);
+export const clearTeacherSession = () => {
+  write(TEACHER_TOKEN_KEY, null);
+  window.dispatchEvent(new Event('classroom-changed'));
+};
+
+// Question sets
+export const listSets = () => call<{ sets: SetSummary[] }>('teacher/sets', { auth: 'teacher' });
+export const getTeacherSet = (id: string) => call<{ set: ExerciseSet }>(`teacher/sets/${id}`, { auth: 'teacher' });
+export const createSet = (input: ExerciseSetInput) =>
+  call<{ set: ExerciseSet }>('teacher/sets', { method: 'POST', auth: 'teacher', body: JSON.stringify(input) });
+export const updateSet = (id: string, input: ExerciseSetInput) =>
+  call<{ set: ExerciseSet }>(`teacher/sets/${id}`, { method: 'PUT', auth: 'teacher', body: JSON.stringify(input) });
+export const deleteSet = (id: string) => call(`teacher/sets/${id}`, { method: 'DELETE', auth: 'teacher' });
 
 // ───────── Student ─────────
 export function getStudentMembership(): StudentMembership | null {
@@ -141,10 +169,52 @@ export async function joinClass(code: string, displayName: string): Promise<Stud
 }
 
 export async function getStudentMe() {
-  return call<{ student: StudentMembership['student']; class: StudentMembership['class']; assignments: Assignment[] }>(
+  const r = await call<{ student: StudentMembership['student']; class: StudentMembership['class']; assignments: Assignment[] }>(
     'student/me',
     { auth: 'student' }
   );
+  write(ASSIGNMENTS_CACHE_KEY, JSON.stringify(r.assignments));
+  return r;
+}
+
+/** Last assignment list seen (works offline). */
+export function getCachedAssignments(): Assignment[] {
+  if (!getStudentMembership()) return [];
+  try {
+    return JSON.parse(read(ASSIGNMENTS_CACHE_KEY) || '[]') as Assignment[];
+  } catch {
+    return [];
+  }
+}
+
+/** Assigned work never costs hearts. */
+export const isAssignedLesson = (lessonId: string) => getCachedAssignments().some((a) => a.lessonId === lessonId);
+
+export function getCachedSet(id: string): ExerciseSet | null {
+  try {
+    const raw = read(SET_CACHE_PREFIX + id);
+    return raw ? (JSON.parse(raw) as ExerciseSet) : null;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * A question set to play: assigned to the student's class, or the teacher's own set (to try it out).
+ * Falls back to the copy saved on the device when offline.
+ */
+export async function loadPlayableSet(id: string): Promise<ExerciseSet> {
+  try {
+    const r = getStudentMembership()
+      ? await call<{ set: ExerciseSet }>(`student/sets/${id}`, { auth: 'student' })
+      : await getTeacherSet(id);
+    write(SET_CACHE_PREFIX + id, JSON.stringify(r.set));
+    return r.set;
+  } catch (e) {
+    const cached = getCachedSet(id);
+    if (cached && e instanceof ApiError && e.status === 0) return cached;
+    throw e;
+  }
 }
 
 export async function leaveClass() {
@@ -152,6 +222,7 @@ export async function leaveClass() {
     await call('student/leave', { method: 'POST', auth: 'student' });
   } finally {
     clearStudentMembership();
+    write(ASSIGNMENTS_CACHE_KEY, null);
     window.dispatchEvent(new Event('classroom-changed'));
   }
 }

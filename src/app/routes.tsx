@@ -19,6 +19,8 @@ const GamesPage = lazy(() => import('./pages/GamesPage').then(m => ({ default: m
 const LabPage = lazy(() => import('@/features/lab/LabPage').then(m => ({ default: m.LabPage })));
 const TeacherPage = lazy(() => import('@/features/classroom/TeacherPage').then(m => ({ default: m.TeacherPage })));
 const TeacherClassPage = lazy(() => import('@/features/classroom/TeacherClassPage').then(m => ({ default: m.TeacherClassPage })));
+const TeacherSetsPage = lazy(() => import('@/features/classroom/TeacherSetsPage').then(m => ({ default: m.TeacherSetsPage })));
+const SetEditorPage = lazy(() => import('@/features/classroom/SetEditorPage').then(m => ({ default: m.SetEditorPage })));
 const JoinClassPage = lazy(() => import('@/features/classroom/JoinClassPage').then(m => ({ default: m.JoinClassPage })));
 const DesignSystemPage = lazy(() => import('./pages/DesignSystemPage').then(m => ({ default: m.DesignSystemPage })));
 
@@ -109,6 +111,14 @@ export const router = createHashRouter([
       {
         path: 'teacher',
         element: <TeacherPage />
+      },
+      {
+        path: 'teacher/sets',
+        element: <TeacherSetsPage />
+      },
+      {
+        path: 'teacher/sets/:setId',
+        element: <SetEditorPage />
       },
       {
         path: 'teacher/:classId',

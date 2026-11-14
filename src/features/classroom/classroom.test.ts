@@ -27,6 +27,7 @@ const detail: ClassDetail = {
   ],
   practice: [],
   assignments: [{ id: 'a1', lessonId: 'g7-b06', dueAt: null, createdAt: 0 }],
+  sets: [],
   questionStats: [],
   skillStats: [],
 };
@@ -122,5 +123,23 @@ describe('outbox flushing', () => {
       vi.unstubAllGlobals();
       localStorage.clear();
     }
+  });
+});
+
+describe('teacher question sets in assignments', () => {
+  it('treats a set as one node and links straight to it', async () => {
+    const { assignmentPlayPath, assignmentTitle } = await import('./analytics');
+    expect(requiredNodeIds('set-abcde12345')).toEqual(['set']);
+    expect(lessonState('set-abcde12345', new Set(['set']))).toBe('done');
+    expect(assignmentPlayPath('set-abcde12345', () => false)).toBe('/play/set-abcde12345/set');
+    expect(assignmentPlayPath('g7-b06', (k) => k === 'g7-b06:g7-b06-n01')).toBe('/play/g7-b06/g7-b06-n02');
+    expect(assignmentTitle({ lessonId: 'set-abcde12345', title: 'Ôn tập mol' })).toBe('Ôn tập mol');
+    expect(assignmentTitle({ lessonId: 'set-abcde12345', title: null })).toBe('Bộ câu hỏi đã bị xóa');
+  });
+
+  it('reports set sessions to the class', () => {
+    expect(buildReport({ lessonId: 'set-abcde12345', nodeId: 'set', isPractice: false, accuracy: 1, xp: 10, questions: [] })?.lessonId).toBe(
+      'set-abcde12345'
+    );
   });
 });

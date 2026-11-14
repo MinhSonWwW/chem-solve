@@ -39,7 +39,7 @@ import { sound } from '@/lib/audio';
 import { haptic } from '@/lib/haptic';
 import { WelcomeOnboardingTour } from '@/features/onboarding';
 import { assetUrl } from '@/lib/utils';
-import { StudentClassCard } from '@/features/classroom/StudentClassCard';
+import { StudentClassCard, useTeacherSignedIn } from '@/features/classroom/StudentClassCard';
 
 interface AchievementMeta {
   tier: 'bronze' | 'silver' | 'gold' | 'diamond' | 'emerald' | 'ruby' | 'amethyst' | 'mythic';
@@ -143,6 +143,7 @@ export const ProfilePage: React.FC = () => {
   } = useUserStore();
 
   const navigate = useNavigate();
+  const isTeacher = useTeacherSignedIn();
   const { user, isAuthenticated, logout } = useAuthStore();
 
   const [reducedMotion, setReducedMotion] = useState(false);
@@ -399,12 +400,15 @@ export const ProfilePage: React.FC = () => {
 
       {/* Class (teacher mode) */}
       <StudentClassCard />
-      <button
-        onClick={() => navigate('/teacher')}
-        className="w-full text-left text-xs font-bold text-[var(--text-secondary)] underline px-1 cursor-pointer"
-      >
-        Thầy cô giáo? Vào trang quản lý lớp
-      </button>
+      {/* Only teachers who signed in as teacher see class management */}
+      {isTeacher && (
+        <button
+          onClick={() => navigate('/teacher')}
+          className="w-full text-left text-xs font-bold text-[var(--text-secondary)] underline px-1 cursor-pointer"
+        >
+          Vào trang quản lý lớp (giáo viên)
+        </button>
+      )}
 
       {/* 3. Daily Goal Setting */}
       <div className="p-4 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border)] space-y-3">

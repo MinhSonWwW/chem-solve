@@ -1,9 +1,11 @@
 /** Pure helpers for the teacher dashboard and the student's assigned-work card. */
 import { findLesson } from '@/content/curriculum';
+import { SET_NODE_ID, isSetLessonId } from '@/content/schema/teacherSet';
 import type { Assignment, ClassDetail } from './api';
 
 /** Exercise nodes a student must finish for a lesson to count as done (theory & chests excluded). */
 export function requiredNodeIds(lessonId: string): string[] {
+  if (isSetLessonId(lessonId)) return [SET_NODE_ID];
   const lesson = findLesson(lessonId);
   if (!lesson) return [];
   return lesson.nodes.filter((n) => n.type === 'lesson' || n.type === 'checkpoint').map((n) => n.id);
@@ -119,4 +121,18 @@ export function formatRelative(ts: number, now = Date.now()): string {
   if (h < 24) return `${h} giờ trước`;
   const d = Math.round(h / 24);
   return `${d} ngày trước`;
+}
+
+/** Title shown for an assignment: the set title, or the curriculum lesson title. */
+export function assignmentTitle(a: { lessonId: string; title?: string | null }): string {
+  if (a.title) return a.title;
+  if (isSetLessonId(a.lessonId)) return 'Bộ câu hỏi đã bị xóa';
+  return findLesson(a.lessonId)?.title ?? a.lessonId;
+}
+
+/** Where a student continues an assignment. */
+export function assignmentPlayPath(lessonId: string, completed: (key: string) => boolean): string | null {
+  if (isSetLessonId(lessonId)) return `/play/${lessonId}/${SET_NODE_ID}`;
+  const next = requiredNodeIds(lessonId).find((id) => !completed(`${lessonId}:${id}`)) ?? findLesson(lessonId)?.nodes[0]?.id;
+  return next ? `/play/${lessonId}/${next}` : null;
 }

@@ -958,7 +958,11 @@ Mặt trên sáng màu rõ nét · Đáy dày 3D (solid shadow $4\text{px} - 6\t
 - [x] Bảng tiến độ: số chặng đã xong, tỉ lệ đúng trung bình, số bài giao đã xong, lần hoạt động gần nhất.
 - [x] Giao bài có hạn nộp; học sinh thấy thẻ "Bài được giao" ở trang chủ, tô màu khi sắp hết hạn/quá hạn.
 - [x] Phân tích câu sai: bài cần ôn lại, các câu cả lớp hay sai lần đầu (kèm đề), kỹ năng cần ôn (khi có tên kỹ năng).
-- [ ] Chạy migration D1 trên Cloudflare và deploy; thêm 2 tên miền vào Authorized JavaScript origins của Google OAuth client.
+- [x] Chạy migration D1 trên Cloudflare và deploy (0001).
+- [x] Bài được giao **không bị trừ tim** (cả bài trong SGK lẫn bộ câu hỏi tự soạn); "làm hoàn hảo" tính theo đúng ngay lần đầu.
+- [x] **Bộ câu hỏi tự soạn**: thầy cô viết đề + đáp án ở cả 11 dạng bài web đang hỗ trợ (trắc nghiệm 1/nhiều đáp án, Đúng/Sai, điền số có đơn vị và sai số, điền từ, điền công thức, phương trình, ghép đôi, phân loại, sắp xếp, ghép thẻ công thức), kèm gợi ý/lời giải; có "Làm thử"; giao cho lớp như một bài học; câu sai hiện trong phân tích.
+- [x] Trang đăng nhập có nút **Đăng nhập giáo viên**; học sinh không thấy lối vào trang quản lý lớp.
+- [ ] Chạy migration 0002 (bảng `exercise_sets`) trên D1 thật trước khi deploy bản có bộ câu hỏi.
 * **Kỹ thuật:** Cloudflare Pages Functions (`functions/api/[[path]].ts` → `server/classroom.ts`) + D1 (`migrations/0001_classroom.sql`). Xem ADR 005.
 * **Nghiệm thu:** Unit test server (xác thực token Google, mã lớp, schema báo cáo) + client (tiến độ, hạn nộp, outbox); thử end-to-end bằng `wrangler pages dev` ở 360×640 / 390×844.
 

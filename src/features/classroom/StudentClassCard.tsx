@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { School, LogOut, Loader2 } from 'lucide-react';
-import { getStudentMembership, joinClass, leaveClass, type StudentMembership } from './api';
+import { getStudentMembership, hasTeacherSession, joinClass, leaveClass, type StudentMembership } from './api';
 import { pendingReportCount } from './outbox';
 import { sound } from '@/lib/audio';
 
@@ -16,6 +16,21 @@ export function useStudentMembership(): StudentMembership | null {
     };
   }, []);
   return m;
+}
+
+/** True while a teacher session is stored on this device (updates on sign-in/out). */
+export function useTeacherSignedIn(): boolean {
+  const [t, setT] = useState(hasTeacherSession);
+  useEffect(() => {
+    const on = () => setT(hasTeacherSession());
+    window.addEventListener('classroom-changed', on);
+    window.addEventListener('storage', on);
+    return () => {
+      window.removeEventListener('classroom-changed', on);
+      window.removeEventListener('storage', on);
+    };
+  }, []);
+  return t;
 }
 
 /** Join a class with the teacher's code, or show the current class with a leave button. */

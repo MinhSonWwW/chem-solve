@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { GraduationCap, Plus, Users, ChevronRight, LogOut, Loader2 } from 'lucide-react';
+import { GraduationCap, Plus, Users, ChevronRight, LogOut, Loader2, FileQuestion } from 'lucide-react';
 import { requestGoogleAccessToken } from '@/lib/googleAuth';
 import {
   ApiError,
@@ -124,6 +124,18 @@ export const TeacherPage: React.FC = () => {
       </div>
 
       {error && <p className="text-xs font-bold text-[var(--err-fg)]">{error}</p>}
+
+      <button
+        onClick={() => navigate('/teacher/sets')}
+        className="w-full text-left p-4 rounded-3xl bg-[var(--bg-surface)] border border-[var(--border)] flex items-center gap-3 cursor-pointer"
+      >
+        <FileQuestion className="w-5 h-5 shrink-0 text-[var(--subject-fg)]" />
+        <span className="min-w-0 flex-1">
+          <span className="block text-sm font-black text-[var(--text-primary)]">Bộ câu hỏi của tôi</span>
+          <span className="block text-xs text-[var(--text-tertiary)]">Tự soạn câu hỏi đủ mọi dạng bài, rồi giao cho lớp.</span>
+        </span>
+        <ChevronRight className="w-4 h-4 text-[var(--text-tertiary)] shrink-0" />
+      </button>
 
       <form onSubmit={create} className="p-4 rounded-3xl bg-[var(--bg-surface)] border border-[var(--border)] space-y-2.5">
         <h2 className="text-sm font-black text-[var(--text-primary)]">Tạo lớp mới</h2>

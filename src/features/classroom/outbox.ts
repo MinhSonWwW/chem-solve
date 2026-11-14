@@ -4,6 +4,7 @@
  * still reach the teacher. Each report has a unique id, which makes server-side retries idempotent.
  */
 import { ApiError, clearStudentMembership, getStudentMembership, sendReports, type SessionReport } from './api';
+import { isSetLessonId } from '@/content/schema/teacherSet';
 
 const OUTBOX_KEY = 'sci_classroom_outbox';
 const LESSON_RE = /^(phy-|bio-)?g[6-9]-b\d{2}$/;
@@ -48,7 +49,8 @@ export function buildReport(input: {
   id?: string;
 }): SessionReport | null {
   const lessonId = input.lessonId.replace(/:practice$/, '');
-  if (!LESSON_RE.test(lessonId)) return null; // generated drills etc. are not curriculum lessons
+  // Generated drills etc. are neither curriculum lessons nor teacher question sets.
+  if (!LESSON_RE.test(lessonId) && !isSetLessonId(lessonId)) return null;
   const byId = new Map<string, { skillIds: string[]; correctFirstTry: boolean; attempts: number }>();
   for (const q of input.questions) {
     const prev = byId.get(q.exercise.id);

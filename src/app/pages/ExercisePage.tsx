@@ -43,6 +43,8 @@ import { assetUrl } from '@/lib/utils';
 import { GAMIFICATION } from '@/config/gamification';
 import { setActiveSubject, setActiveGrade, parseLessonSubjectAndGrade } from '@/content/subjects';
 import type { Exercise } from '@/content/schema/exercise';
+import { questionToExercise, setIdFromLessonId } from '@/content/schema/teacherSet';
+import { getCachedSet, isAssignedLesson, loadPlayableSet } from '@/features/classroom/api';
 import type { Verdict } from '@/engine/checkers/types';
 
 type LoadingState = 'loading' | 'ready' | 'error';
@@ -173,7 +175,17 @@ export const ExercisePage: React.FC = () => {
   const { lessonId = 'g8-b03', nodeId = 'n01' } = useParams();
   const [searchParams] = useSearchParams();
   const isPracticeMode = searchParams.get('mode') === 'practice';
-  const { subject, grade } = parseLessonSubjectAndGrade(lessonId);
+  // Teacher question set ("set-<id>") or a lesson assigned to the student's class.
+  const setId = setIdFromLessonId(lessonId);
+  const [setMeta, setSetMeta] = useState(() => {
+    const cached = setId ? getCachedSet(setId) : null;
+    return cached ? { title: cached.title, subject: cached.subject, grade: cached.grade } : null;
+  });
+  const noHeartLoss = !isPracticeMode && (!!setId || isAssignedLesson(lessonId));
+  const { subject, grade } = setMeta
+    ? { subject: setMeta.subject, grade: setMeta.grade as ReturnType<typeof parseLessonSubjectAndGrade>['grade'] }
+    : parseLessonSubjectAndGrade(lessonId);
+  const exitPath = setId ? '/home' : isPracticeMode ? '/practice' : `/learn/${grade}`;
   const isPhysics = subject === 'physics';
   const isBio = subject === 'bio';
   const gradeNumber = String(grade);
@@ -208,6 +220,8 @@ export const ExercisePage: React.FC = () => {
     accuracy: number;
     perfectRun: boolean;
     earnedGems?: number;
+    totalQuestions: number;
+    correctCount: number;
   } | null>(null);
 
   // ── Load exercises & resume ──
@@ -222,7 +236,7 @@ export const ExercisePage: React.FC = () => {
 
         // If user has 0 hearts and is not in practice mode, they cannot start a lesson
         const currentHearts = useUserStore.getState().hearts;
-        if (!isPracticeMode && currentHearts <= 0) {
+        if (!isPracticeMode && !noHeartLoss && currentHearts <= 0) {
           setShowOutOfHeartsModal(true);
           setLoadingState('ready');
           return;
@@ -238,7 +252,27 @@ export const ExercisePage: React.FC = () => {
           Boolean(saved.sessionState.isPractice) === isPracticeMode
         ) {
           saved.sessionState.isPractice = isPracticeMode;
+          saved.sessionState.noHeartLoss = noHeartLoss;
           resumeSession(sessionKey, nodeId, saved.sessionState);
+          if (!cancelled) setLoadingState('ready');
+          return;
+        }
+
+        // Teacher question set: keep the teacher's order, only shuffle MCQ options.
+        if (setId) {
+          const set = await loadPlayableSet(setId);
+          if (cancelled) return;
+          setSetMeta({ title: set.title, subject: set.subject, grade: set.grade });
+          setActiveSubject(set.subject);
+          setActiveGrade(set.grade as ReturnType<typeof parseLessonSubjectAndGrade>['grade']);
+          const shuffle = <T,>(arr: T[]): T[] => [...arr].sort(() => Math.random() - 0.5);
+          const setExercises = set.questions.map((q) => {
+            const ex = questionToExercise(setId, q);
+            return ex.answer.kind === 'mcq-single' || ex.answer.kind === 'mcq-multi'
+              ? { ...ex, answer: { ...ex.answer, options: shuffle(ex.answer.options) } }
+              : ex;
+          });
+          startSession(sessionKey, nodeId, setExercises, undefined, false, true);
           if (!cancelled) setLoadingState('ready');
           return;
         }
@@ -293,7 +327,7 @@ export const ExercisePage: React.FC = () => {
           ...shuffleArray(diff3),
         ].map(shuffleExerciseOptions);
 
-        startSession(sessionKey, nodeId, sortedExercises, undefined, isPracticeMode);
+        startSession(sessionKey, nodeId, sortedExercises, undefined, isPracticeMode, noHeartLoss);
         if (!cancelled) setLoadingState('ready');
       } catch (err) {
         if (!cancelled) {
@@ -334,7 +368,7 @@ export const ExercisePage: React.FC = () => {
 
   // ── Physics Interactive Sandbox / Mini-game Mode ──
   const physicsVisualMode = useMemo<PhysicsVisualizerMode | null>(() => {
-    if (!isPhysics || !exercise) return null;
+    if (!isPhysics || !exercise || setId) return null;
     if (exercise.visual?.mode) {
       return exercise.visual.mode as PhysicsVisualizerMode;
     }
@@ -564,7 +598,7 @@ export const ExercisePage: React.FC = () => {
 
   // ── Biology Interactive Visualizer Mode ──
   const biologyVisualMode = useMemo<BiologyVisualizerMode | null>(() => {
-    if (!isBio || !exercise) return null;
+    if (!isBio || !exercise || setId) return null;
     if (exercise.visual?.mode) {
       return exercise.visual.mode as BiologyVisualizerMode;
     }
@@ -713,7 +747,7 @@ export const ExercisePage: React.FC = () => {
       } else if (q?.status === 'wrong') {
         haptic.wrong();
 
-        if (!isPracticeMode && updated.hearts <= 0) {
+        if (!isPracticeMode && !noHeartLoss && updated.hearts <= 0) {
           // Failed session! Clear in-progress session so it doesn't linger
           clearSession(sessionKey, nodeId).catch(console.error);
           sound.playWrong();
@@ -721,7 +755,7 @@ export const ExercisePage: React.FC = () => {
         }
       }
     }
-  }, [currentQ, submitAnswer, isPracticeMode, lessonId, nodeId, isBio, isPhysics]);
+  }, [currentQ, submitAnswer, isPracticeMode, noHeartLoss, lessonId, nodeId, isBio, isPhysics]);
 
   const handleNext = useCallback(async () => {
     sound.playClick();
@@ -736,6 +770,9 @@ export const ExercisePage: React.FC = () => {
     dispatch({ type: 'NEXT_QUESTION' });
 
     if (isLast) {
+      // Count before endSession(), which clears the session state.
+      const totalQuestions = sessionState.questions.length;
+      const correctCount = sessionState.questions.filter((q) => q.status === 'correct').length;
       const result = await endSession();
       if (result) {
         haptic.completion();
@@ -746,7 +783,7 @@ export const ExercisePage: React.FC = () => {
           setRecoveredHeartsCount(1);
           setTimeout(() => setShowHeartFly(false), 2400);
         }
-        setSessionResult(result);
+        setSessionResult({ ...result, totalQuestions, correctCount });
       }
     }
   }, [sessionState, dispatch, endSession, isPracticeMode]);
@@ -842,10 +879,8 @@ export const ExercisePage: React.FC = () => {
         accuracy={sessionResult.accuracy}
         perfectRun={sessionResult.perfectRun}
         earnedGems={sessionResult.earnedGems}
-        totalQuestions={sessionState?.questions.length ?? 0}
-        correctCount={
-          sessionState?.questions.filter((q) => q.status === 'correct').length ?? 0
-        }
+        totalQuestions={sessionResult.totalQuestions}
+        correctCount={sessionResult.correctCount}
         streak={streak}
         isPractice={isPracticeMode}
         recoveredHearts={recoveredHeartsCount}
@@ -853,11 +888,7 @@ export const ExercisePage: React.FC = () => {
         onContinue={() => {
           setActiveSubject(subject);
           setActiveGrade(grade);
-          if (isPracticeMode) {
-            navigate('/practice');
-          } else {
-            navigate(`/learn/${gradeNumber}`);
-          }
+          navigate(exitPath);
         }}
       />
     );
@@ -1026,10 +1057,15 @@ export const ExercisePage: React.FC = () => {
             className="min-w-0 truncate text-xs font-bold text-[var(--text-secondary)] flex items-center gap-1"
           >
                         <span>
-              {findLesson(lessonId)?.title ?? 'Bài tập'} · Câu {sessionState.currentIndex + 1}/{sessionState.questions.length}
+              {setMeta?.title ?? findLesson(lessonId)?.title ?? 'Bài tập'} · Câu {sessionState.currentIndex + 1}/{sessionState.questions.length}
             </span>
           </div>
           <div className="flex items-center gap-2 shrink-0">
+            {noHeartLoss && (
+              <span className="text-xs font-bold text-[var(--text-secondary)] border border-[var(--border)] px-2 py-0.5 rounded-xl">
+                Bài giao · không trừ tim
+              </span>
+            )}
             <PhetLessonSims lessonId={lessonId} variant="button" />
             {currentQ.isReview && (
               <span className="text-xs font-bold bg-amber-500/20 text-[var(--gold-fg)] border border-amber-500/40 px-2.5 py-0.5 rounded-xl flex items-center gap-1">
@@ -1305,7 +1341,7 @@ export const ExercisePage: React.FC = () => {
         onQuit={() => {
           setActiveSubject(subject);
           setActiveGrade(grade);
-          navigate(isPracticeMode ? '/practice' : `/learn/${gradeNumber}`);
+          navigate(exitPath);
         }}
       />
 

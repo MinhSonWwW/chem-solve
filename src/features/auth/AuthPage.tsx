@@ -18,6 +18,7 @@ import {
 import { useAuthStore } from '@/features/auth/useAuthStore';
 import { useReducedMotion } from '@/design-system';
 import { GoogleClientIdModal } from './GoogleClientIdModal';
+import { TeacherLoginButton } from '@/features/classroom/TeacherLoginButton';
 
 // ── Types ──────────────────────────────────────────────────────────────
 
@@ -717,6 +718,9 @@ export const AuthPage: React.FC = () => {
               disabled={isLoading}
             />
           </div>
+
+          {/* Teachers sign in separately (class management) */}
+          <TeacherLoginButton />
 
           {/* Footer Terms */}
           <p className="text-center text-[11px] sm:text-xs text-[var(--text-tertiary)] mt-4 sm:mt-5 leading-relaxed font-medium">

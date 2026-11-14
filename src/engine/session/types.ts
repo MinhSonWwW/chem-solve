@@ -32,6 +32,8 @@ export interface SessionState {
   totalXpEarned: number;
   isSessionComplete: boolean;
   isPractice?: boolean;
+  /** Teacher-assigned work: wrong answers never cost a heart (but still count as practice: false). */
+  noHeartLoss?: boolean;
 }
 
 export type SessionAction =

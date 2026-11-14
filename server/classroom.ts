@@ -8,6 +8,13 @@
  *  Only SHA-256 hashes of tokens are stored. No student email / account data is collected.
  */
 import { z } from 'zod';
+import {
+  ExerciseSetInputSchema,
+  SET_LESSON_RE,
+  isSetLessonId,
+  setIdFromLessonId,
+  setLessonId,
+} from '../src/content/schema/teacherSet';
 
 // ───────────── Minimal D1 typings (avoids pulling @cloudflare/workers-types) ─────────────
 export interface D1Result<T = Record<string, unknown>> {
@@ -66,6 +73,11 @@ export function generateClassCode(random: (n: number) => Uint8Array = (n) => cry
 }
 
 /** Normalise what a student types: upper-case, drop spaces and dashes ("abc 23x" -> "ABC23X"). */
+const SET_ID_ALPHABET = 'abcdefghijkmnpqrstuvwxyz23456789';
+export function generateSetId(random: (n: number) => Uint8Array = (n) => crypto.getRandomValues(new Uint8Array(n))): string {
+  return Array.from(random(10), (b) => SET_ID_ALPHABET[b % SET_ID_ALPHABET.length]).join('');
+}
+
 export function normalizeClassCode(raw: string): string {
   return raw.toUpperCase().replace(/[\s-]/g, '');
 }
@@ -100,8 +112,10 @@ export const CreateClassSchema = z.object({
   name: z.string().trim().min(1, 'Hãy đặt tên lớp.').max(60),
   grade: z.number({ invalid_type_error: 'Lớp phải là số.' }).int().min(6, 'Chỉ hỗ trợ lớp 6 đến 9.').max(9, 'Chỉ hỗ trợ lớp 6 đến 9.'),
 });
+/** A curriculum lesson, or a teacher question set ('set-' + id). */
+const assignableId = z.string().refine((id) => LESSON_ID_RE.test(id) || SET_LESSON_RE.test(id), 'Mã bài học không hợp lệ.');
 export const CreateAssignmentSchema = z.object({
-  lessonId: z.string().regex(LESSON_ID_RE, 'Mã bài học không hợp lệ.'),
+  lessonId: assignableId,
   dueAt: z.number().int().positive().nullable().optional(),
 });
 export const JoinSchema = z.object({ code: z.string().min(4).max(12), displayName });
@@ -110,7 +124,7 @@ export const ReportSchema = z.object({
     .array(
       z.object({
         reportId: z.string().min(8).max(64),
-        lessonId: z.string().regex(LESSON_ID_RE),
+        lessonId: assignableId,
         nodeId: z.string().min(1).max(80),
         isPractice: z.boolean(),
         accuracy: z.number().min(0).max(1),
@@ -207,6 +221,23 @@ async function requireOwnClass(env: Env, teacherId: string, classId: string) {
   return c;
 }
 
+interface SetRow {
+  id: string;
+  title: string;
+  subject: string;
+  grade: number;
+  questions: string;
+  updated_at: number;
+}
+const setFromRow = (r: SetRow) => ({
+  id: r.id,
+  title: r.title,
+  subject: r.subject,
+  grade: r.grade,
+  questions: JSON.parse(r.questions),
+  updatedAt: r.updated_at,
+});
+
 // ───────────── Router ─────────────
 export async function handleApi(req: Request, env: Env, fetchImpl: typeof fetch = fetch): Promise<Response> {
   try {
@@ -274,13 +305,65 @@ export async function handleApi(req: Request, env: Env, fetchImpl: typeof fetch 
         throw new HttpError(500, 'Không tạo được mã lớp, hãy thử lại.');
       }
 
+      // ── Question sets ──
+      if (route === 'GET /teacher/sets') {
+        const { results } = await env.DB.prepare(
+          `SELECT id, title, subject, grade, json_array_length(questions) AS questionCount, updated_at AS updatedAt
+           FROM exercise_sets WHERE teacher_id = ? ORDER BY updated_at DESC`
+        )
+          .bind(teacher.id)
+          .all();
+        return json({ sets: results });
+      }
+
+      if (route === 'POST /teacher/sets') {
+        const input = await body(req, ExerciseSetInputSchema);
+        const id = generateSetId();
+        await env.DB.prepare(
+          `INSERT INTO exercise_sets (id, teacher_id, title, subject, grade, questions, created_at, updated_at)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
+        )
+          .bind(id, teacher.id, input.title, input.subject, input.grade, JSON.stringify(input.questions), now, now)
+          .run();
+        return json({ set: { id, ...input, updatedAt: now } }, 201);
+      }
+
+      if (parts[1] === 'sets' && parts[2] && parts.length === 3) {
+        const setId = parts[2];
+        const row = await env.DB.prepare(
+          'SELECT id, title, subject, grade, questions, updated_at FROM exercise_sets WHERE id = ? AND teacher_id = ?'
+        )
+          .bind(setId, teacher.id)
+          .first<SetRow>();
+        if (!row) throw new HttpError(404, 'Không tìm thấy bộ câu hỏi.');
+
+        if (req.method === 'GET') return json({ set: setFromRow(row) });
+        if (req.method === 'PUT') {
+          const input = await body(req, ExerciseSetInputSchema);
+          await env.DB.prepare('UPDATE exercise_sets SET title = ?, subject = ?, grade = ?, questions = ?, updated_at = ? WHERE id = ?')
+            .bind(input.title, input.subject, input.grade, JSON.stringify(input.questions), now, setId)
+            .run();
+          return json({ set: { id: setId, ...input, updatedAt: now } });
+        }
+        if (req.method === 'DELETE') {
+          // Assignments of a deleted set disappear; results already recorded stay in the classes.
+          await env.DB.batch([
+            env.DB.prepare(
+              `DELETE FROM assignments WHERE lesson_id = ? AND class_id IN (SELECT id FROM classes WHERE teacher_id = ?)`
+            ).bind(setLessonId(setId), teacher.id),
+            env.DB.prepare('DELETE FROM exercise_sets WHERE id = ?').bind(setId),
+          ]);
+          return json({ ok: true });
+        }
+      }
+
       const classId = parts[2];
       if (parts[1] === 'classes' && classId) {
         const cls = await requireOwnClass(env, teacher.id, classId);
 
         if (route === 'GET /teacher/classes/:id') {
           const q = (sql: string) => env.DB.prepare(sql).bind(classId);
-          const [students, completions, practice, assignments, questionStats, skillStats] = await env.DB.batch([
+          const [students, completions, practice, assignments, sets, questionStats, skillStats] = await env.DB.batch([
             q(`SELECT id, display_name AS displayName, created_at AS joinedAt, last_seen_at AS lastSeenAt
                FROM students WHERE class_id = ? ORDER BY display_name COLLATE NOCASE`),
             q(`SELECT student_id AS studentId, lesson_id AS lessonId, node_id AS nodeId,
@@ -290,8 +373,11 @@ export async function handleApi(req: Request, env: Env, fetchImpl: typeof fetch 
             q(`SELECT student_id AS studentId, lesson_id AS lessonId, COUNT(*) AS sessions,
                       AVG(accuracy) AS avgAccuracy, MAX(completed_at) AS completedAt
                FROM node_results WHERE class_id = ? AND is_practice = 1 GROUP BY student_id, lesson_id`),
-            q(`SELECT id, lesson_id AS lessonId, due_at AS dueAt, created_at AS createdAt
-               FROM assignments WHERE class_id = ? ORDER BY COALESCE(due_at, created_at) ASC`),
+            q(`SELECT a.id, a.lesson_id AS lessonId, a.due_at AS dueAt, a.created_at AS createdAt, es.title AS title
+               FROM assignments a LEFT JOIN exercise_sets es ON a.lesson_id = 'set-' || es.id
+               WHERE a.class_id = ? ORDER BY COALESCE(a.due_at, a.created_at) ASC`),
+            q(`SELECT es.id, es.title, es.questions FROM exercise_sets es
+               WHERE 'set-' || es.id IN (SELECT lesson_id FROM assignments WHERE class_id = ?)`),
             q(`SELECT exercise_id AS exerciseId, lesson_id AS lessonId, COUNT(*) AS attempts,
                       SUM(CASE WHEN correct_first_try = 0 THEN 1 ELSE 0 END) AS wrong,
                       COUNT(DISTINCT student_id) AS students
@@ -312,6 +398,11 @@ export async function handleApi(req: Request, env: Env, fetchImpl: typeof fetch 
             completions: completions.results,
             practice: practice.results,
             assignments: assignments.results,
+            sets: (sets.results as Array<{ id: string; title: string; questions: string }>).map((r) => ({
+              id: r.id,
+              title: r.title,
+              questions: JSON.parse(r.questions),
+            })),
             questionStats: questionStats.results,
             skillStats: skillStats.results,
           });
@@ -328,11 +419,19 @@ export async function handleApi(req: Request, env: Env, fetchImpl: typeof fetch 
 
         if (route === 'POST /teacher/classes/:id/assignments') {
           const { lessonId, dueAt } = await body(req, CreateAssignmentSchema);
+          let title: string | null = null;
+          if (isSetLessonId(lessonId)) {
+            const set = await env.DB.prepare('SELECT title FROM exercise_sets WHERE id = ? AND teacher_id = ?')
+              .bind(setIdFromLessonId(lessonId), teacher.id)
+              .first<{ title: string }>();
+            if (!set) throw new HttpError(404, 'Không tìm thấy bộ câu hỏi.');
+            title = set.title;
+          }
           const id = crypto.randomUUID();
           await env.DB.prepare('INSERT INTO assignments (id, class_id, lesson_id, due_at, created_at) VALUES (?, ?, ?, ?, ?)')
             .bind(id, classId, lessonId, dueAt ?? null, now)
             .run();
-          return json({ assignment: { id, lessonId, dueAt: dueAt ?? null, createdAt: now } }, 201);
+          return json({ assignment: { id, lessonId, dueAt: dueAt ?? null, createdAt: now, title } }, 201);
         }
 
         if (route === 'DELETE /teacher/classes/:id/assignments/:id') {
@@ -377,8 +476,9 @@ export async function handleApi(req: Request, env: Env, fetchImpl: typeof fetch 
         const [, assignments] = await env.DB.batch([
           env.DB.prepare('UPDATE students SET last_seen_at = ? WHERE id = ?').bind(now, st.id),
           env.DB.prepare(
-            `SELECT id, lesson_id AS lessonId, due_at AS dueAt, created_at AS createdAt
-             FROM assignments WHERE class_id = ? ORDER BY COALESCE(due_at, created_at) ASC`
+            `SELECT a.id, a.lesson_id AS lessonId, a.due_at AS dueAt, a.created_at AS createdAt, es.title AS title
+             FROM assignments a LEFT JOIN exercise_sets es ON a.lesson_id = 'set-' || es.id
+             WHERE a.class_id = ? ORDER BY COALESCE(a.due_at, a.created_at) ASC`
           ).bind(st.class_id),
         ]);
         return json({
@@ -386,6 +486,18 @@ export async function handleApi(req: Request, env: Env, fetchImpl: typeof fetch 
           class: { id: st.class_id, name: st.class_name, grade: st.grade },
           assignments: assignments.results,
         });
+      }
+
+      if (route === 'GET /student/sets/:id') {
+        // Students can only open a set that is assigned to their class.
+        const row = await env.DB.prepare(
+          `SELECT es.id, es.title, es.subject, es.grade, es.questions, es.updated_at FROM exercise_sets es
+           WHERE es.id = ? AND EXISTS (SELECT 1 FROM assignments a WHERE a.class_id = ? AND a.lesson_id = 'set-' || es.id)`
+        )
+          .bind(parts[2], st.class_id)
+          .first<SetRow>();
+        if (!row) throw new HttpError(404, 'Bài này không còn được giao cho lớp em.');
+        return json({ set: setFromRow(row) });
       }
 
       if (route === 'POST /student/report') {

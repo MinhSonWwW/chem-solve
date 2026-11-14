@@ -30,3 +30,10 @@ File này ghi lại các quyết định kỹ thuật quan trọng của CHEM-SO
 - **Quyền riêng tư**: Học sinh không cần email hay tài khoản, chỉ nhập mã lớp + tên hiển thị; server chỉ lưu SHA-256 của token. Giáo viên xác thực bằng access token Google (kiểm tra `aud` khớp client id trong `GOOGLE_CLIENT_IDS`, email đã xác minh). Rời lớp/xóa học sinh/xóa lớp sẽ xóa luôn kết quả liên quan.
 - **Offline**: Kết quả được xếp hàng trong `localStorage` và gửi lại khi có mạng; `report_id` duy nhất giúp gửi lặp không bị đếm trùng.
 - **Ngày**: 2026-11-14.
+
+## ADR 006: Bộ câu hỏi giáo viên tự soạn dùng chung cấu trúc bài tập của web
+- **Quyết định**: Câu hỏi của thầy cô lưu dạng `{ đề, đáp án (AnswerSchema có sẵn), gợi ý, lời giải }` trong bảng D1 `exercise_sets`; khi học sinh làm, `questionToExercise` (src/content/schema/teacherSet.ts) đổi sang `Exercise` để dùng lại màn làm bài, bộ chấm điểm và gợi ý hiện có. Bài giao trỏ tới bộ câu hỏi bằng mã giả `set-<id>`.
+- **Lý do**: Hỗ trợ đủ 11 dạng bài mà không viết thêm bộ chấm/giao diện làm bài; một schema zod dùng chung cho web và API (kiểm tra ngữ nghĩa bằng tiếng Việt: chưa chọn đáp án đúng, phương án trùng, thẻ không ghép được công thức…).
+- **Tim**: Bài được giao không trừ tim (`noHeartLoss` trong phiên), nhưng vẫn ghi nhận số lần thử để giáo viên phân tích câu sai.
+- **Ngày**: 2026-11-14.
+

@@ -10,6 +10,6 @@
     "composite": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.server.tsbuildinfo"
   },
-  "include": ["server", "functions"],
+  "include": ["server", "functions", "src/content/schema/exercise.ts", "src/content/schema/teacherSet.ts"],
   "exclude": ["server/**/*.test.ts"]
 }

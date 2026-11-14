@@ -48,7 +48,8 @@ interface UserState {
     nodeId: string,
     exercises: Exercise[],
     initialHearts?: number,
-    isPractice?: boolean
+    isPractice?: boolean,
+    noHeartLoss?: boolean
   ) => void;
   resumeSession: (lessonId: string, nodeId: string, state: SessionState) => void;
   dispatch: (action: SessionAction) => void;
@@ -96,9 +97,9 @@ export const useUserStore = create<UserState>((set, get) => ({
   lastVerdict: null,
   consecutiveCorrect: 0,
 
-  startSession: (lessonId, nodeId, exercises, initialHearts, isPractice = false) => {
+  startSession: (lessonId, nodeId, exercises, initialHearts, isPractice = false, noHeartLoss = false) => {
     const hearts = initialHearts ?? get().hearts;
-    const session = createInitialSession(exercises, hearts, isPractice);
+    const session = createInitialSession(exercises, hearts, isPractice, noHeartLoss);
     set({
       sessionState: session,
       sessionInfo: { lessonId, nodeId },
@@ -438,7 +439,10 @@ export const useUserStore = create<UserState>((set, get) => ({
     ).length;
     const accuracy = totalQuestions > 0 ? correctCount / totalQuestions : 0;
     const heartsLost = GAMIFICATION.hearts.max - sessionState.hearts;
-    const perfectRun = heartsLost === 0;
+    // Assigned work never costs hearts, so "perfect" means every answer right on the first try.
+    const perfectRun = sessionState.noHeartLoss
+      ? sessionState.questions.every((q) => q.status === 'correct' && q.attemptsCount <= 1 && !q.isReview)
+      : heartsLost === 0;
 
     // Session completion bonus
     let sessionBonus = GAMIFICATION.session.completeBonus;

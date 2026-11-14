@@ -86,3 +86,15 @@ describe('sha256Hex', () => {
     expect(await sha256Hex('abc')).toBe('ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad');
   });
 });
+
+describe('question set ids', () => {
+  it('are 10 lowercase chars that form a valid set lesson id', async () => {
+    const { generateSetId } = await import('./classroom');
+    const { isSetLessonId, setLessonId, SET_ID_RE } = await import('../src/content/schema/teacherSet');
+    for (let i = 0; i < 50; i++) {
+      const id = generateSetId();
+      expect(id).toMatch(SET_ID_RE);
+      expect(isSetLessonId(setLessonId(id))).toBe(true);
+    }
+  });
+});
