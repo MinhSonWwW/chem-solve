@@ -4,6 +4,7 @@ import { ExerciseSchema, type Answer } from './exercise';
 import {
   ANSWER_KINDS,
   ExerciseSetInputSchema,
+  SUBJECT_ANSWER_KINDS,
   answerProblem,
   formatAnswer,
   isSetLessonId,
@@ -116,6 +117,21 @@ describe('teacher question sets', () => {
     expect(ex.hints[1].text).toBe('Kim loại màu đỏ');
     expect(ex.steps[1].body).toBe('Đồng có màu đỏ.');
     expect(ex.finalSolution).toBe('Cu. Đồng có màu đỏ.');
+  });
+
+  it('offers chemistry-only kinds (formula, equation, formula tiles) only in chemistry', () => {
+    expect(SUBJECT_ANSWER_KINDS.chem).toHaveLength(11);
+    for (const subject of ['physics', 'bio'] as const) {
+      expect(SUBJECT_ANSWER_KINDS[subject]).not.toContain('formula');
+      expect(SUBJECT_ANSWER_KINDS[subject]).not.toContain('equation');
+      expect(SUBJECT_ANSWER_KINDS[subject]).not.toContain('formula-builder');
+      expect(SUBJECT_ANSWER_KINDS[subject]).toContain('number');
+    }
+    const formulaQ = question({ kind: 'formula', accepted: ['H2O'] });
+    expect(ExerciseSetInputSchema.safeParse({ title: 'Lý', subject: 'physics', grade: 9, questions: [formulaQ] }).error?.issues[0].message).toBe(
+      'Dạng "Điền công thức hóa học" chỉ dùng cho môn Hóa học.'
+    );
+    expect(ExerciseSetInputSchema.safeParse({ title: 'Hóa', subject: 'chem', grade: 9, questions: [formulaQ] }).success).toBe(true);
   });
 
   it('recognises set pseudo lesson ids', () => {

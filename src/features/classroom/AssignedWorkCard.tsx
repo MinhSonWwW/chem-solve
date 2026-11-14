@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ClipboardList, ChevronRight } from 'lucide-react';
 import { useUserStore } from '@/features/gamification/useUserStore';
-import { getCachedAssignments, getStudentMe, type Assignment } from './api';
-import { assignmentPlayPath, assignmentTitle, dueState, formatDue, pendingAssignments } from './analytics';
+import { getCachedAssignments, getClassDone, getStudentMe, type Assignment } from './api';
+import { assignmentPlayPath, assignmentTitle, countsFor, dueState, formatDue, pendingAssignments, requiredNodeIds } from './analytics';
 import { useStudentMembership } from './StudentClassCard';
 import { sound } from '@/lib/audio';
 
@@ -24,10 +24,8 @@ export const AssignedWorkCard: React.FC = () => {
   }, [membership]);
 
   if (!membership) return null;
-  const pending = pendingAssignments(
-    assignments,
-    Object.keys(completedNodes).filter((k) => completedNodes[k])
-  );
+  const classDone = getClassDone();
+  const pending = pendingAssignments(assignments, classDone);
 
   return (
     <section className="p-4 rounded-3xl bg-[var(--bg-surface)] border border-[var(--border)] space-y-2.5">
@@ -47,7 +45,12 @@ export const AssignedWorkCard: React.FC = () => {
           <ul className="space-y-2">
             {pending.map(({ assignment: a, state }) => {
               const due = dueState(a.dueAt);
-              const path = assignmentPlayPath(a.lessonId, (key) => !!completedNodes[key]);
+              const path = assignmentPlayPath(a.lessonId, (key) => countsFor(a, classDone[key] ?? 0));
+              // Learned on this device before it was assigned: needs one more go so the teacher gets the result.
+              const learnedBefore =
+                state === 'not-started' &&
+                requiredNodeIds(a.lessonId).length > 0 &&
+                requiredNodeIds(a.lessonId).every((id) => !!completedNodes[`${a.lessonId}:${id}`]);
               return (
                 <li key={a.id}>
                   <button
@@ -71,6 +74,7 @@ export const AssignedWorkCard: React.FC = () => {
                         {due === 'overdue' ? 'Đã quá hạn · ' : ''}
                         {formatDue(a.dueAt)}
                         {state === 'in-progress' ? ' · Đang làm dở' : ''}
+                        {learnedBefore ? ' · Em đã học bài này, làm lại để nộp cho thầy/cô' : ''}
                       </span>
                     </span>
                     <ChevronRight className="w-4 h-4 text-[var(--text-tertiary)] shrink-0" />

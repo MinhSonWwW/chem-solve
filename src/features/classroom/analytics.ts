@@ -22,10 +22,16 @@ export function lessonState(lessonId: string, completedNodeIds: Set<string>): As
   return done > 0 || completedNodeIds.size > 0 ? 'in-progress' : 'not-started';
 }
 
-/** Completed node ids per student per lesson, from the teacher's class detail. */
-export function completionIndex(completions: ClassDetail['completions']): Map<string, Map<string, Set<string>>> {
+/** Device clocks drift; work finished up to this long before the assignment still counts. */
+export const ASSIGN_CLOCK_SLACK_MS = 10 * 60 * 1000;
+/** An assignment is done only with work finished after it was assigned (same rule for teacher and student). */
+export const countsFor = (a: { createdAt: number }, completedAt: number) => completedAt >= a.createdAt - ASSIGN_CLOCK_SLACK_MS;
+
+/** Completed node ids per student per lesson, from the teacher's class detail (optionally only since `since`). */
+export function completionIndex(completions: ClassDetail['completions'], since = 0): Map<string, Map<string, Set<string>>> {
   const idx = new Map<string, Map<string, Set<string>>>();
   for (const c of completions) {
+    if (c.completedAt < since) continue;
     const byLesson = idx.get(c.studentId) ?? new Map<string, Set<string>>();
     const set = byLesson.get(c.lessonId) ?? new Set<string>();
     set.add(c.nodeId);
@@ -46,16 +52,15 @@ export interface StudentRow {
 }
 
 export function studentRows(detail: ClassDetail): StudentRow[] {
-  const idx = completionIndex(detail.completions);
   return detail.students.map((s) => {
     const mine = detail.completions.filter((c) => c.studentId === s.id);
     const exerciseNodes = mine.filter((c) => !c.nodeId.endsWith('-theory'));
     const avg = exerciseNodes.length ? exerciseNodes.reduce((a, c) => a + c.bestAccuracy, 0) / exerciseNodes.length : null;
     const lastActive = Math.max(s.lastSeenAt, ...mine.map((c) => c.completedAt), 0);
-    const byLesson = idx.get(s.id) ?? new Map<string, Set<string>>();
-    const assignmentsDone = detail.assignments.filter(
-      (a) => lessonState(a.lessonId, byLesson.get(a.lessonId) ?? new Set()) === 'done'
-    ).length;
+    const assignmentsDone = detail.assignments.filter((a) => {
+      const since = completionIndex(mine, a.createdAt - ASSIGN_CLOCK_SLACK_MS);
+      return lessonState(a.lessonId, since.get(s.id)?.get(a.lessonId) ?? new Set()) === 'done';
+    }).length;
     return {
       id: s.id,
       displayName: s.displayName,
@@ -69,7 +74,7 @@ export function studentRows(detail: ClassDetail): StudentRow[] {
 }
 
 export function assignmentProgress(detail: ClassDetail, a: Assignment) {
-  const idx = completionIndex(detail.completions);
+  const idx = completionIndex(detail.completions, a.createdAt - ASSIGN_CLOCK_SLACK_MS);
   const states = detail.students.map((s) => ({
     student: s,
     state: lessonState(a.lessonId, idx.get(s.id)?.get(a.lessonId) ?? new Set()),
@@ -91,12 +96,17 @@ export function dueState(dueAt: number | null, now = Date.now()): DueState {
   return 'ok';
 }
 
-/** For the student: which assignments are still to do, using the local progress keys `${lessonId}:${nodeId}`. */
-export function pendingAssignments(assignments: Assignment[], completedNodeKeys: string[]) {
+/**
+ * For the student: which assignments are still to do. `classDone` maps `${lessonId}:${nodeId}` to when the
+ * student last finished it while in the class; only work after the assignment was given counts.
+ */
+export function pendingAssignments(assignments: Assignment[], classDone: Record<string, number>) {
   return assignments
     .map((a) => {
       const done = new Set(
-        completedNodeKeys.filter((k) => k.startsWith(`${a.lessonId}:`)).map((k) => k.slice(a.lessonId.length + 1))
+        Object.entries(classDone)
+          .filter(([k, at]) => k.startsWith(`${a.lessonId}:`) && countsFor(a, at))
+          .map(([k]) => k.slice(a.lessonId.length + 1))
       );
       return { assignment: a, state: lessonState(a.lessonId, done) };
     })

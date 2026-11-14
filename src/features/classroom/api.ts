@@ -8,6 +8,21 @@ export const TEACHER_TOKEN_KEY = 'sci_teacher_session';
 export const STUDENT_KEY = 'sci_classroom_student';
 export const ASSIGNMENTS_CACHE_KEY = 'sci_classroom_assignments';
 const SET_CACHE_PREFIX = 'sci_classroom_set_';
+/** `${lessonId}:${nodeId}` → when this student last finished it while in the class (what the teacher sees). */
+const CLASS_DONE_KEY = 'sci_classroom_done';
+
+export function getClassDone(): Record<string, number> {
+  try {
+    return JSON.parse(read(CLASS_DONE_KEY) || '{}') as Record<string, number>;
+  } catch {
+    return {};
+  }
+}
+export function markClassDone(key: string, at: number) {
+  const done = getClassDone();
+  done[key] = Math.max(done[key] ?? 0, at);
+  write(CLASS_DONE_KEY, JSON.stringify(done));
+}
 
 export interface ClassSummary {
   id: string;
@@ -155,6 +170,7 @@ export function getStudentMembership(): StudentMembership | null {
 }
 export function clearStudentMembership() {
   write(STUDENT_KEY, null);
+  write(CLASS_DONE_KEY, null);
 }
 
 export async function joinClass(code: string, displayName: string): Promise<StudentMembership> {

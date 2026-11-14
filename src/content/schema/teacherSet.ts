@@ -32,6 +32,14 @@ export const ANSWER_KINDS = [
   'formula-builder',
 ] as const satisfies readonly Answer['kind'][];
 
+/** Formula, equation and formula-tile questions only make sense in chemistry. */
+const CHEM_ONLY_KINDS: readonly Answer['kind'][] = ['formula', 'equation', 'formula-builder'];
+export const SUBJECT_ANSWER_KINDS: Record<'chem' | 'physics' | 'bio', readonly Answer['kind'][]> = {
+  chem: ANSWER_KINDS,
+  physics: ANSWER_KINDS.filter((k) => !CHEM_ONLY_KINDS.includes(k)),
+  bio: ANSWER_KINDS.filter((k) => !CHEM_ONLY_KINDS.includes(k)),
+};
+
 export const ANSWER_KIND_LABELS: Record<Answer['kind'], string> = {
   'mcq-single': 'Trắc nghiệm 1 đáp án',
   'mcq-multi': 'Trắc nghiệm nhiều đáp án',
@@ -164,6 +172,15 @@ export const ExerciseSetInputSchema = z
     if (new Set(s.questions.map((q) => q.id)).size !== s.questions.length) {
       ctx.addIssue({ code: z.ZodIssueCode.custom, message: 'Mã câu hỏi bị trùng.', path: ['questions'] });
     }
+    s.questions.forEach((q, i) => {
+      if (!SUBJECT_ANSWER_KINDS[s.subject].includes(q.answer.kind)) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          message: `Dạng "${ANSWER_KIND_LABELS[q.answer.kind]}" chỉ dùng cho môn Hóa học.`,
+          path: ['questions', i, 'answer'],
+        });
+      }
+    });
   });
 
 export type TeacherQuestion = z.output<typeof TeacherQuestionSchema>;

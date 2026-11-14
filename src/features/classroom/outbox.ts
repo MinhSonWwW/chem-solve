@@ -5,6 +5,7 @@
  */
 import { ApiError, clearStudentMembership, getStudentMembership, sendReports, type SessionReport } from './api';
 import { isSetLessonId } from '@/content/schema/teacherSet';
+import { markClassDone } from './api';
 
 const OUTBOX_KEY = 'sci_classroom_outbox';
 const LESSON_RE = /^(phy-|bio-)?g[6-9]-b\d{2}$/;
@@ -118,6 +119,8 @@ export function flushOutbox(): Promise<void> {
 /** Queue a report for the student's class (ignored when the student hasn't joined a class). */
 export function queueReport(report: SessionReport | null) {
   if (!report || !getStudentMembership()) return;
+  // Learn-mode completions are what count for assignments on the teacher's side.
+  if (!report.isPractice) markClassDone(`${report.lessonId}:${report.nodeId}`, report.completedAt);
   save([...load(), report]);
   void flushOutbox();
 }

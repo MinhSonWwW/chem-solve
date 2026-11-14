@@ -43,6 +43,13 @@ describe('teacher dashboard', () => {
     expect(assignmentProgress(detail, detail.assignments[0])).toEqual({ done: 1, inProgress: 1, total: 2, notDone: ['Bình'] });
   });
 
+  it('does not count lessons finished before they were assigned', () => {
+    const later = { ...detail.assignments[0], createdAt: 250 + 10 * 60 * 1000 };
+    // An finished n01 at 200, before the assignment (minus slack = 250): only n02 counts, so not done.
+    expect(assignmentProgress(detail, later).done).toBe(0);
+    expect(studentRows({ ...detail, assignments: [later] })[0].assignmentsDone).toBe(0);
+  });
+
   it('flags deadlines', () => {
     const now = 1_000_000_000;
     expect(dueState(null, now)).toBe('none');
@@ -53,13 +60,23 @@ describe('teacher dashboard', () => {
 });
 
 describe('student side', () => {
-  it('lists assignments that are not finished yet from local progress keys', () => {
+  it('lists assignments that are not finished yet from what was done in the class', () => {
     const a = [
       { id: 'a1', lessonId: 'g7-b06', dueAt: null, createdAt: 0 },
       { id: 'a2', lessonId: 'g7-b05', dueAt: null, createdAt: 0 },
     ];
-    const pending = pendingAssignments(a, ['g7-b06:g7-b06-n01', 'g7-b06:g7-b06-n02', 'g7-b05:g7-b05-n01']);
+    const pending = pendingAssignments(a, { 'g7-b06:g7-b06-n01': 5, 'g7-b06:g7-b06-n02': 5, 'g7-b05:g7-b05-n01': 5 });
     expect(pending.map((p) => [p.assignment.id, p.state])).toEqual([['a2', 'in-progress']]);
+  });
+
+  it('only counts work finished after the lesson was assigned (allowing a little clock drift)', () => {
+    const day = 86_400_000;
+    const a = [{ id: 'a1', lessonId: 'g9-b18', dueAt: null, createdAt: 10 * day }];
+    // Learned the lesson a day before the teacher assigned it: still to do.
+    expect(pendingAssignments(a, { 'g9-b18:g9-b18-n01': 9 * day }).map((p) => p.state)).toEqual(['not-started']);
+    // Device clock a few minutes behind the server: counts.
+    expect(pendingAssignments(a, { 'g9-b18:g9-b18-n01': 10 * day - 5 * 60_000 })).toEqual([]);
+    expect(pendingAssignments(a, { 'g9-b18:g9-b18-n01': 10 * day + 1 })).toEqual([]);
   });
 });
 

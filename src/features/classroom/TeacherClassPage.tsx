@@ -263,7 +263,33 @@ const AssignmentsTab: React.FC<{ detail: ClassDetail; onChanged: () => void }> =
     <div className="space-y-3">
       <form onSubmit={add} className="p-4 rounded-3xl bg-[var(--bg-surface)] border border-[var(--border)] space-y-2.5">
         <h2 className="text-sm font-black text-[var(--text-primary)]">Giao bài mới</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-2">
+        {/* Source: curriculum lesson or the teacher's own question set */}
+        <div className="grid grid-cols-2 gap-1.5 p-1 rounded-2xl bg-[var(--bg-surface-2)] border border-[var(--border)]" role="tablist">
+          {(
+            [
+              [false, 'Bài trong SGK'],
+              [true, 'Câu hỏi tự soạn'],
+            ] as const
+          ).map(([mine, label]) => (
+            <button
+              key={label}
+              type="button"
+              role="tab"
+              aria-selected={(subject === 'mine') === mine}
+              onClick={() => {
+                setSubject(mine ? 'mine' : 'chem');
+                setLessonId('');
+              }}
+              className={`h-10 rounded-xl text-xs sm:text-sm font-black cursor-pointer ${
+                (subject === 'mine') === mine ? 'bg-[var(--subject-fill)] text-white' : 'text-[var(--text-secondary)]'
+              }`}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+        <div className={`grid grid-cols-1 gap-2 ${subject === 'mine' ? '' : 'sm:grid-cols-[auto_1fr]'}`}>
+          {subject !== 'mine' && (
           <select
             value={subject}
             onChange={(e) => {
@@ -278,8 +304,8 @@ const AssignmentsTab: React.FC<{ detail: ClassDetail; onChanged: () => void }> =
                 {s.label} {detail.class.grade}
               </option>
             ))}
-            <option value="mine">Bộ câu hỏi của tôi</option>
           </select>
+          )}
           <select
             value={lessonId}
             onChange={(e) => setLessonId(e.target.value)}
@@ -308,9 +334,23 @@ const AssignmentsTab: React.FC<{ detail: ClassDetail; onChanged: () => void }> =
           </select>
         </div>
         {subject === 'mine' && (
-          <button type="button" onClick={() => navigate('/teacher/sets/new')} className="text-xs font-bold text-[var(--subject-fg)] cursor-pointer">
-            + Soạn bộ câu hỏi mới
-          </button>
+          <div className="flex flex-wrap items-center gap-2">
+            <button
+              type="button"
+              onClick={() => navigate('/teacher/sets/new')}
+              className="h-10 px-3 rounded-xl border border-dashed border-[var(--border-strong)] text-xs font-black text-[var(--text-primary)] inline-flex items-center gap-1.5 cursor-pointer"
+            >
+              <Plus className="w-4 h-4" /> Soạn bộ câu hỏi mới
+            </button>
+            <button
+              type="button"
+              onClick={() => navigate('/teacher/sets')}
+              className="h-10 px-3 rounded-xl text-xs font-bold text-[var(--text-secondary)] underline cursor-pointer"
+            >
+              Sửa các bộ đã soạn
+            </button>
+            <span className="text-xs text-[var(--text-tertiary)]">Soạn được 11 dạng bài: trắc nghiệm, đúng/sai, điền số, ghép đôi, phân loại…</span>
+          </div>
         )}
         <div className="flex flex-col sm:flex-row gap-2 sm:items-center">
           <label className="text-xs text-[var(--text-secondary)] flex items-center gap-2">

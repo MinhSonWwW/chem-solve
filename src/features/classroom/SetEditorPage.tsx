@@ -2,7 +2,15 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { ChevronLeft, Loader2, Plus, Trash2, ArrowUp, ArrowDown, Copy, Play } from 'lucide-react';
 import { MathText } from '@/design-system/components/MathText';
-import { ANSWER_KINDS, ANSWER_KIND_LABELS, ExerciseSetInputSchema, answerProblem, setLessonId, SET_NODE_ID, type TeacherQuestion } from '@/content/schema/teacherSet';
+import {
+  ANSWER_KIND_LABELS,
+  ExerciseSetInputSchema,
+  SUBJECT_ANSWER_KINDS,
+  answerProblem,
+  setLessonId,
+  SET_NODE_ID,
+  type TeacherQuestion,
+} from '@/content/schema/teacherSet';
 import { ApiError, createSet, deleteSet, getTeacherSet, updateSet } from './api';
 import { AnswerEditor, inputCls } from './AnswerEditor';
 import { cleanAnswer, cleanQuestion, newAnswer, newQuestion } from './setDraft';
@@ -89,7 +97,7 @@ export const SetEditorPage: React.FC = () => {
   }
 
   return (
-    <div className="max-w-3xl mx-auto space-y-4 py-2 pb-28">
+    <div className="max-w-3xl mx-auto space-y-4 py-2">
       <div className="flex items-center gap-2">
         <button
           onClick={() => navigate('/teacher/sets')}
@@ -148,6 +156,7 @@ export const SetEditorPage: React.FC = () => {
           key={q.id}
           index={i}
           total={questions.length}
+          subject={subject}
           question={q}
           onChange={(nq) => update(i, nq)}
           onMove={(d) => move(i, d)}
@@ -164,7 +173,12 @@ export const SetEditorPage: React.FC = () => {
       {questions.length < 40 && (
         <button
           type="button"
-          onClick={() => setQuestions((qs) => [...qs, newQuestion(qs, qs[qs.length - 1]?.answer.kind)])}
+          onClick={() =>
+            setQuestions((qs) => {
+              const last = qs[qs.length - 1]?.answer.kind;
+              return [...qs, newQuestion(qs, last && SUBJECT_ANSWER_KINDS[subject].includes(last) ? last : 'mcq-single')];
+            })
+          }
           className="w-full h-12 rounded-2xl border-2 border-dashed border-[var(--border-strong)] text-sm font-black text-[var(--text-secondary)] inline-flex items-center justify-center gap-2 cursor-pointer"
         >
           <Plus className="w-4 h-4" /> Thêm câu hỏi
@@ -197,9 +211,9 @@ export const SetEditorPage: React.FC = () => {
         </div>
       )}
 
-      {/* Save bar, above the mobile bottom navigation */}
-      <div className="fixed left-0 right-0 bottom-[calc(4.5rem+env(safe-area-inset-bottom))] lg:bottom-4 z-20 px-4 pointer-events-none">
-        <div className="max-w-3xl mx-auto p-3 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border-strong)] shadow-lg flex items-center gap-3 pointer-events-auto">
+      {/* Save bar: sticks to the bottom of the content column, above the mobile bottom navigation */}
+      <div className="sticky bottom-[calc(5rem+env(safe-area-inset-bottom))] lg:bottom-4 z-20">
+        <div className="p-3 rounded-2xl bg-[var(--bg-surface)] border border-[var(--border-strong)] shadow-lg flex items-center gap-3">
           <p className={`min-w-0 flex-1 text-xs font-bold ${error ? 'text-[var(--err-fg)]' : 'text-[var(--text-secondary)]'}`}>
             {error ?? (saved ? 'Đã lưu.' : `${questions.length} câu hỏi`)}
           </p>
@@ -220,14 +234,21 @@ export const SetEditorPage: React.FC = () => {
 const QuestionCard: React.FC<{
   index: number;
   total: number;
+  subject: Subject;
   question: TeacherQuestion;
   onChange: (q: TeacherQuestion) => void;
   onMove: (d: -1 | 1) => void;
   onDuplicate: () => void;
   onDelete: () => void;
-}> = ({ index, total, question: q, onChange, onMove, onDuplicate, onDelete }) => {
+}> = ({ index, total, subject, question: q, onChange, onMove, onDuplicate, onDelete }) => {
   const [showExtra, setShowExtra] = useState(!!(q.hint || q.explanation));
-  const problem = q.prompt.trim() ? answerProblem(cleanAnswer(q.answer)) : null;
+  const kinds = SUBJECT_ANSWER_KINDS[subject];
+  const kindAllowed = kinds.includes(q.answer.kind);
+  const problem = !kindAllowed
+    ? `Dạng "${ANSWER_KIND_LABELS[q.answer.kind]}" chỉ dùng cho môn Hóa học. Hãy chọn dạng khác.`
+    : q.prompt.trim()
+      ? answerProblem(cleanAnswer(q.answer))
+      : null;
   const iconBtn =
     'w-9 h-9 rounded-xl border border-[var(--border)] text-[var(--text-tertiary)] inline-flex items-center justify-center cursor-pointer disabled:opacity-40';
   return (
@@ -257,7 +278,8 @@ const QuestionCard: React.FC<{
           aria-label="Dạng bài"
           onChange={(e) => onChange({ ...q, answer: newAnswer(e.target.value as TeacherQuestion['answer']['kind']) })}
         >
-          {ANSWER_KINDS.map((k) => (
+          {!kindAllowed && <option value={q.answer.kind}>{ANSWER_KIND_LABELS[q.answer.kind]} (không dùng cho môn này)</option>}
+          {kinds.map((k) => (
             <option key={k} value={k}>
               {ANSWER_KIND_LABELS[k]}
             </option>
