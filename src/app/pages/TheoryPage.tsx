@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { PhetLessonSims } from '@/features/lab/components/PhetLessonSims';
 import { useNavigate, useParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import {
@@ -392,6 +393,9 @@ export const TheoryPage: React.FC = () => {
           ) : null}
         </AnimatePresence>
       </div>
+
+      {/* PhET simulations linked to this lesson (opens on top, keeps the slide position) */}
+      <PhetLessonSims lessonId={lessonId} variant="card" className="mb-3" />
 
       {/* 3. Bottom Sticky Action Navigation */}
       {!isCompleted && (

@@ -11,7 +11,7 @@ import {
 import { useActiveGrade } from '@/content/subjects';
 import { sound } from '@/lib/audio';
 
-const ATTRIBUTION = 'Mô phỏng PhET · Đại học Colorado Boulder · giấy phép CC BY 4.0';
+export const PHET_ATTRIBUTION = 'Mô phỏng PhET · Đại học Colorado Boulder · giấy phép CC BY 4.0';
 
 function useOnline() {
   const [online, setOnline] = useState(() => (typeof navigator === 'undefined' ? true : navigator.onLine));
@@ -116,19 +116,30 @@ export const PhetSimLibrary: React.FC<{ subject: PhetSim['subject'] }> = ({ subj
       </ul>
 
       <p className="text-[11px] text-[var(--text-tertiary)]">
-        {ATTRIBUTION} ·{' '}
+        {PHET_ATTRIBUTION} ·{' '}
         <a href="https://phet.colorado.edu" target="_blank" rel="noopener noreferrer" className="underline">
           phet.colorado.edu
         </a>
       </p>
 
-      {openSim && <PhetPlayer sim={openSim} />}
+      {openSim && (
+        <PhetPlayer
+          sim={openSim}
+          siblings={openSim.lessonIds[0] ? sims.filter((s) => s.lessonIds.includes(openSim.lessonIds[0])) : []}
+        />
+      )}
     </section>
   );
 };
 
 /** Full-screen player. Closing goes back in history so the phone's back button behaves the same. */
-const PhetPlayer: React.FC<{ sim: PhetSim }> = ({ sim }) => {
+export const PhetPlayer: React.FC<{
+  sim: PhetSim;
+  /** Other sims of the same lesson, shown as quick-switch chips. */
+  siblings?: PhetSim[];
+  /** Subtitle override, e.g. the lesson the student opened it from. */
+  contextLabel?: string;
+}> = ({ sim, siblings = [], contextLabel }) => {
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const online = useOnline();
@@ -177,7 +188,7 @@ const PhetPlayer: React.FC<{ sim: PhetSim }> = ({ sim }) => {
         <div className="min-w-0 flex-1">
           <h2 className="text-sm font-black text-[var(--text-primary)] truncate">{sim.titleVi}</h2>
           <p className="text-xs text-[var(--text-tertiary)] truncate">
-            Lớp {sim.grade} · {sim.lessonLabel}
+            {contextLabel ?? `Lớp ${sim.grade} · ${sim.lessonLabel}`}
           </p>
         </div>
         <button
@@ -202,6 +213,35 @@ const PhetPlayer: React.FC<{ sim: PhetSim }> = ({ sim }) => {
           <ExternalLink className="w-4 h-4" />
         </a>
       </header>
+
+      {siblings.length > 1 && (
+        <div className="flex gap-1.5 overflow-x-auto px-3 py-2 border-b border-[var(--border)] bg-[var(--bg-surface)]">
+          {siblings.map((s) => {
+            const active = s.id === sim.id;
+            return (
+              <button
+                key={s.id}
+                onClick={() => {
+                  if (active) return;
+                  sound.playClick();
+                  const next = new URLSearchParams(searchParams);
+                  next.set('sim', s.id);
+                  setSearchParams(next, { replace: true });
+                  setLoaded(false);
+                }}
+                aria-pressed={active}
+                className={`shrink-0 px-3 py-1.5 rounded-xl text-xs font-black border cursor-pointer ${
+                  active
+                    ? 'bg-[var(--subject-fill)] border-[var(--subject-edge)] text-white'
+                    : 'bg-[var(--bg-surface-2)] border-[var(--border)] text-[var(--text-secondary)]'
+                }`}
+              >
+                {s.titleVi}
+              </button>
+            );
+          })}
+        </div>
+      )}
 
       {showGuide && (
         <div className="relative px-4 py-3 border-b border-[var(--border)] bg-[var(--bg-surface)] max-h-[38dvh] overflow-y-auto">
@@ -253,7 +293,7 @@ const PhetPlayer: React.FC<{ sim: PhetSim }> = ({ sim }) => {
       </div>
 
       <p className="safe-pb px-3 pt-1.5 text-[11px] text-center text-[var(--text-tertiary)] bg-[var(--bg-surface)] border-t border-[var(--border)]">
-        {ATTRIBUTION}
+        {PHET_ATTRIBUTION}
       </p>
     </div>
   );

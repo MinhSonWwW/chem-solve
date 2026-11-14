@@ -37,6 +37,7 @@ import { sound } from '@/lib/audio';
 import { haptic } from '@/lib/haptic';
 import { loadExercisesForNode } from '@/content/contentLoader';
 import { findLesson } from '@/content/curriculum';
+import { PhetLessonSims } from '@/features/lab/components/PhetLessonSims';
 import { loadSession, clearSession } from '@/engine/progress';
 import { assetUrl } from '@/lib/utils';
 import { GAMIFICATION } from '@/config/gamification';
@@ -781,6 +782,8 @@ export const ExercisePage: React.FC = () => {
   // ── Keyboard shortcuts ──
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
+      // A modal (e.g. the PhET simulation player) is on top: don't answer the question underneath.
+      if (document.querySelector('[role="dialog"][aria-modal="true"]')) return;
       const target = e.target as HTMLElement | null;
       const isInput = target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA');
 
@@ -1026,11 +1029,14 @@ export const ExercisePage: React.FC = () => {
               {findLesson(lessonId)?.title ?? 'Bài tập'} · Câu {sessionState.currentIndex + 1}/{sessionState.questions.length}
             </span>
           </div>
-          {currentQ.isReview && (
-            <span className="text-xs font-bold bg-amber-500/20 text-[var(--gold-fg)] border border-amber-500/40 px-2.5 py-0.5 rounded-xl flex items-center gap-1">
-              Cùng làm lại câu chưa đúng nhé!
-            </span>
-          )}
+          <div className="flex items-center gap-2 shrink-0">
+            <PhetLessonSims lessonId={lessonId} variant="button" />
+            {currentQ.isReview && (
+              <span className="text-xs font-bold bg-amber-500/20 text-[var(--gold-fg)] border border-amber-500/40 px-2.5 py-0.5 rounded-xl flex items-center gap-1">
+                Cùng làm lại câu chưa đúng nhé!
+              </span>
+            )}
+          </div>
         </div>
 
         {/* Prompt Card */}
