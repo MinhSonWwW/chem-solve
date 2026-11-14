@@ -12,7 +12,7 @@ export const JoinClassPage: React.FC = () => {
       <StudentClassCard initialCode={(params.get('code') || '').toUpperCase()} />
       {membership && (
         <button
-          onClick={() => navigate('/home')}
+          onClick={() => navigate('/learn')}
           className="w-full h-12 rounded-2xl bg-[var(--subject-fill)] text-white font-black shadow-[0_4px_0_0_var(--subject-edge)] cursor-pointer"
         >
           Xem bài được giao

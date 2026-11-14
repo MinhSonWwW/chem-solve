@@ -185,7 +185,7 @@ export const ExercisePage: React.FC = () => {
   const { subject, grade } = setMeta
     ? { subject: setMeta.subject, grade: setMeta.grade as ReturnType<typeof parseLessonSubjectAndGrade>['grade'] }
     : parseLessonSubjectAndGrade(lessonId);
-  const exitPath = setId ? '/home' : isPracticeMode ? '/practice' : `/learn/${grade}`;
+  const exitPath = isPracticeMode && !setId ? '/practice' : `/learn/${grade}`;
   const isPhysics = subject === 'physics';
   const isBio = subject === 'bio';
   const gradeNumber = String(grade);

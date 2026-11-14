@@ -9,6 +9,7 @@ import { useUserStore } from '@/features/gamification/useUserStore';
 import { loadUserProgress, saveUserProgress } from '@/engine/progress';
 import { useActiveSubject, useActiveGrade, setActiveGrade, SUBJECTS } from '@/content/subjects';
 import { useOnboarding, WelcomeOnboardingTour } from '@/features/onboarding';
+import { AssignedWorkCard } from '@/features/classroom/AssignedWorkCard';
 
 export const LearnPage: React.FC = () => {
   const { grade } = useParams<{ grade: string }>();
@@ -283,6 +284,9 @@ export const LearnPage: React.FC = () => {
           <ChevronRight className="w-3.5 h-3.5 text-[var(--text-tertiary)]" />
         </button>
       </div>
+
+      {/* Work assigned by the teacher (only when the student joined a class) */}
+      <AssignedWorkCard />
 
       {/* Physics Placeholder for grades without ready lessons yet (7, 8, 9) */}
       {activeSubject === 'physics' && chaptersWithNodes.every((c) => c.pathNodes.length === 0) && (
