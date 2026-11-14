@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { BookOpen, FlaskConical, ShoppingBag, BarChart3, User, Zap, Dna } from 'lucide-react';
+import { BookOpen, FlaskConical, ShoppingBag, BarChart3, User, Zap, Dna, TestTubes } from 'lucide-react';
 import { sound } from '@/lib/audio';
 import { useActiveSubject, useActiveGrade } from '@/content/subjects';
 
@@ -12,6 +12,7 @@ export const BottomNav: React.FC = () => {
   const navItems = [
     { to: `/learn/${activeGrade}`, label: 'Học', icon: BookOpen, isLearn: true },
     { to: '/practice', label: 'Luyện tập', icon: activeSubject === 'physics' ? Zap : activeSubject === 'bio' ? Dna : FlaskConical },
+    { to: '/lab', label: 'Lab', icon: TestTubes },
     { to: '/shop', label: 'Shop', icon: ShoppingBag },
     { to: '/progress', label: 'Tiến độ', icon: BarChart3 },
     { to: '/profile', label: 'Hồ sơ', icon: User },
@@ -31,7 +32,7 @@ export const BottomNav: React.FC = () => {
               key={item.to}
               to={item.to}
               onClick={() => sound.playClick()}
-              className={`flex flex-col items-center gap-1 py-1 px-1.5 rounded-xl transition-all duration-200 cursor-pointer ${
+              className={`flex flex-col items-center gap-1 py-1 px-1 min-w-0 rounded-xl transition-all duration-200 cursor-pointer ${
                 isItemActive
                   ? 'text-[var(--subject-fg)] font-black scale-105'
                   : 'text-[var(--text-tertiary)] hover:text-[var(--text-primary)] font-bold'
