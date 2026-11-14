@@ -30,9 +30,9 @@
         "2. Tác dụng với kim loại trước H: [[2CH3COOH + Zn -> (CH3COO)2Zn + H2]].",
         "3. Tác dụng với base: [[CH3COOH + NaOH -> CH3COONa + H2O]].",
         "4. Tác dụng với oxide base: [[2CH3COOH + CaO -> (CH3COO)2Ca + H2O]].",
-        "5. Tác dụng với muối carbonate: Giải phóng sủi bọt khí [[CO2]] (dùng giấm ăn để tẩy cặn ấm đun nước do cặn đá vôi CaCO3)."
+        "5. Tác dụng với muối carbonate: Giải phóng sủi bọt khí [[CO2]] (dùng giấm ăn để tẩy cặn ấm đun nước do cặn đá vôi [[CaCO3]])."
       ],
-      "callout": "📌 Đời sống: Đổ giấm ăn vào vỏ trứng hoặc cặn vôi (CaCO3) thấy sủi bọt khí CO2 ngay lập tức!"
+      "callout": "📌 Đời sống: Đổ giấm ăn vào vỏ trứng hoặc cặn vôi ([[CaCO3]]) thấy sủi bọt khí [[CO2]] ngay lập tức!"
     },
     {
       "id": "c3",
@@ -45,11 +45,11 @@
         "Dùng muối carbonate ([[Na2CO3]] hoặc đá vôi): Acetic acid sủi bọt khí [[CO2]]; Ethylic alcohol không phản ứng.",
         "Tác dụng với kim loại Na: CẢ HAI CHẤT đều sủi bọt khí [[H2]] (vì cùng chứa nguyên tử H linh động) -> Không dùng Na để phân biệt!"
       ],
-      "callout": "⚠️ Cạm bẫy thi: Đừng chọn kim loại Na để phân biệt C2H5OH và CH3COOH vì cả hai đều phản ứng sinh khí H2!"
+      "callout": "⚠️ Cạm bẫy thi: Đừng chọn kim loại Na để phân biệt [[C2H5OH]] và [[CH3COOH]] vì cả hai đều phản ứng sinh khí [[H2]]!"
     }
   ],
   "quickCheck": {
-    "prompt": "Thuốc thử đơn giản nhất dùng để PHÂN BIỆT Ethylic alcohol (C2H5OH) và Acetic acid (CH3COOH) là gì?",
+    "prompt": "Thuốc thử đơn giản nhất dùng để PHÂN BIỆT Ethylic alcohol ([[C2H5OH]]) và Acetic acid ([[CH3COOH]]) là gì?",
     "options": [
       { "id": "opt-1", "text": "Kim loại Sodium (Na)", "correct": false },
       { "id": "opt-2", "text": "Quỳ tím", "correct": true },

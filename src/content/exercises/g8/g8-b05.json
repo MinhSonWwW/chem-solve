@@ -63,7 +63,7 @@
     "commonMistakes": [
       {
         "id": "thought-molecules-conserved",
-        "message": "Số phân tử có thể thay đổi (ví dụ: 2H2 + O2 -> 2H2O, từ 3 phân tử thành 2 phân tử)."
+        "message": "Số phân tử có thể thay đổi (ví dụ: 2[[H2]] + [[O2]] -> 2[[H2O]], từ 3 phân tử thành 2 phân tử)."
       }
     ]
   },
@@ -106,11 +106,11 @@
     "hints": [
       {
         "level": 1,
-        "text": "Khi nung đá vôi trong cốc mở, có khí CO2 thoát ra ngoài không khí nên chất rắn còn lại nhẹ hơn."
+        "text": "Khi nung đá vôi trong cốc mở, có khí [[CO2]] thoát ra ngoài không khí nên chất rắn còn lại nhẹ hơn."
       },
       {
         "level": 2,
-        "text": "Nếu tính cả khối lượng khí CO2 bay đi thì định luật bảo toàn khối lượng luôn luôn đúng."
+        "text": "Nếu tính cả khối lượng khí [[CO2]] bay đi thì định luật bảo toàn khối lượng luôn luôn đúng."
       }
     ],
     "steps": [
@@ -122,7 +122,7 @@
       {
         "kind": "knowledge",
         "title": "Giải thích hiện tượng cốc mở",
-        "body": "Khối lượng chất rắn giảm vì khí CO2 bay vào khí quyển. Nếu đậy kín bình thì khối lượng không đổi (s3 sai)."
+        "body": "Khối lượng chất rắn giảm vì khí [[CO2]] bay vào khí quyển. Nếu đậy kín bình thì khối lượng không đổi (s3 sai)."
       },
       {
         "kind": "answer",
@@ -130,7 +130,7 @@
         "body": "s1: Đúng, s2: Đúng, s3: Sai, s4: Đúng."
       }
     ],
-    "finalSolution": "s1: Đúng, s2: Đúng, s3: Sai (do khí CO2 bay đi), s4: Đúng.",
+    "finalSolution": "s1: Đúng, s2: Đúng, s3: Sai (do khí [[CO2]] bay đi), s4: Đúng.",
     "commonMistakes": [
       {
         "id": "forgot-gas-escaped",
@@ -188,7 +188,7 @@
       {
         "kind": "identify",
         "title": "Phân tích phản ứng",
-        "body": "Chất tham gia: Mg và O2. Sản phẩm: MgO."
+        "body": "Chất tham gia: Mg và [[O2]]. Sản phẩm: MgO."
       },
       {
         "kind": "knowledge",
@@ -235,7 +235,7 @@
       }
     ],
     "find": {
-      "label": "Khối lượng khí CO2",
+      "label": "Khối lượng khí [[CO2]]",
       "unit": "g"
     },
     "knowledge": [
@@ -265,7 +265,7 @@
       {
         "kind": "identify",
         "title": "Sơ đồ phản ứng",
-        "body": "CaCO3 -> CaO + CO2."
+        "body": "[[CaCO3]] -> CaO + [[CO2]]."
       },
       {
         "kind": "knowledge",
@@ -280,7 +280,7 @@
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Khối lượng khí CO2 thu được là **44 g**."
+        "body": "Khối lượng khí [[CO2]] thu được là **44 g**."
       }
     ],
     "finalSolution": "m_CO2 = 100 - 56 = **44 g**.",
@@ -317,7 +317,7 @@
       }
     ],
     "find": {
-      "label": "Khối lượng khí H2 (m_H2)",
+      "label": "Khối lượng khí [[H2]] (m_H2)",
       "unit": "g"
     },
     "knowledge": [
@@ -453,7 +453,7 @@
       },
       {
         "level": 2,
-        "text": "Hệ số của O2 là 10 / 2 = 5, hệ số của P2O5 là 10 / 5 = 2. Khi đó có 4 nguyên tử P => hệ số của P là 4."
+        "text": "Hệ số của [[O2]] là 10 / 2 = 5, hệ số của [[P2O5]] là 10 / 5 = 2. Khi đó có 4 nguyên tử P => hệ số của P là 4."
       }
     ],
     "steps": [
@@ -465,7 +465,7 @@
       {
         "kind": "compute",
         "title": "Cân bằng nguyên tố O",
-        "body": "BCNN(2, 5) = 10. Đặt hệ số 5 trước O2 và 2 trước P2O5."
+        "body": "BCNN(2, 5) = 10. Đặt hệ số 5 trước [[O2]] và 2 trước [[P2O5]]."
       },
       {
         "kind": "compute",
@@ -475,10 +475,10 @@
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Phương trình cân bằng: **4P + 5O2 -> 2P2O5**."
+        "body": "Phương trình cân bằng: **4P + 5[[O2]] -> 2[[P2O5]]**."
       }
     ],
-    "finalSolution": "**4P + 5O2 -> 2P2O5**",
+    "finalSolution": "**4P + 5[[O2]] -> 2[[P2O5]]**",
     "commonMistakes": [
       {
         "id": "unbalanced-p",
@@ -514,7 +514,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Vế phải có 4 nguyên tử O, vế trái có 2 nguyên tử O trong O2 => đặt hệ số 2 trước O2."
+        "text": "Vế phải có 4 nguyên tử O, vế trái có 2 nguyên tử O trong [[O2]] => đặt hệ số 2 trước [[O2]]."
       },
       {
         "level": 2,
@@ -530,7 +530,7 @@
       {
         "kind": "compute",
         "title": "Cân bằng O",
-        "body": "4 / 2 = 2 => Đặt hệ số 2 trước O2."
+        "body": "4 / 2 = 2 => Đặt hệ số 2 trước [[O2]]."
       },
       {
         "kind": "compute",
@@ -540,10 +540,10 @@
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Phương trình hoàn thành: **3Fe + 2O2 -> Fe3O4**."
+        "body": "Phương trình hoàn thành: **3Fe + 2[[O2]] -> [[Fe3O4]]**."
       }
     ],
-    "finalSolution": "**3Fe + 2O2 -> Fe3O4**",
+    "finalSolution": "**3Fe + 2[[O2]] -> [[Fe3O4]]**",
     "commonMistakes": []
   },
   {
@@ -576,23 +576,23 @@
     "hints": [
       {
         "level": 1,
-        "text": "Cân bằng nhóm (SO4) trước: vế phải có 3 nhóm (SO4) nên cần 3 phân tử H2SO4 ở vế trái."
+        "text": "Cân bằng nhóm ([[SO4]]) trước: vế phải có 3 nhóm ([[SO4]]) nên cần 3 phân tử [[H2SO4]] ở vế trái."
       },
       {
         "level": 2,
-        "text": "3 H2SO4 sinh ra 3 H2. Vế phải có 2 Al nên vế trái cần 2 Al. Tỉ lệ: 2, 3, 1, 3."
+        "text": "3 [[H2SO4]] sinh ra 3 [[H2]]. Vế phải có 2 Al nên vế trái cần 2 Al. Tỉ lệ: 2, 3, 1, 3."
       }
     ],
     "steps": [
       {
         "kind": "identify",
         "title": "Cân bằng theo nhóm nguyên tử",
-        "body": "Xem nhóm (SO4) như một đơn vị thống nhất."
+        "body": "Xem nhóm ([[SO4]]) như một đơn vị thống nhất."
       },
       {
         "kind": "compute",
         "title": "Cân bằng nhóm (SO4) và H",
-        "body": "Vế phải có 3 nhóm (SO4) => đặt hệ số 3 trước H2SO4. Có 3 × 2 = 6 nguyên tử H => đặt hệ số 3 trước H2."
+        "body": "Vế phải có 3 nhóm ([[SO4]]) => đặt hệ số 3 trước [[H2SO4]]. Có 3 × 2 = 6 nguyên tử H => đặt hệ số 3 trước [[H2]]."
       },
       {
         "kind": "compute",
@@ -602,14 +602,14 @@
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Phương trình hoàn chỉnh: **2Al + 3H2SO4 -> Al2(SO4)3 + 3H2**."
+        "body": "Phương trình hoàn chỉnh: **2Al + 3[[H2SO4]] -> [[Al2(SO4)3]] + 3[[H2]]**."
       }
     ],
-    "finalSolution": "**2Al + 3H2SO4 -> Al2(SO4)3 + 3H2**",
+    "finalSolution": "**2Al + 3[[H2SO4]] -> [[Al2(SO4)3]] + 3[[H2]]**",
     "commonMistakes": [
       {
         "id": "missed-h2-coefficient",
-        "message": "Quên đặt hệ số 3 cho khí H2 ở vế phải."
+        "message": "Quên đặt hệ số 3 cho khí [[H2]] ở vế phải."
       }
     ]
   },
@@ -626,19 +626,19 @@
       "kind": "match",
       "pairs": [
         {
-          "left": "Fe + O2 -> Fe3O4",
+          "left": "Fe + [[O2]] -> [[Fe3O4]]",
           "right": "3 : 2 : 1"
         },
         {
-          "left": "Na + H2O -> NaOH + H2",
+          "left": "Na + [[H2O]] -> NaOH + [[H2]]",
           "right": "2 : 2 : 2 : 1"
         },
         {
-          "left": "Al + HCl -> AlCl3 + H2",
+          "left": "Al + HCl -> [[AlCl3]] + [[H2]]",
           "right": "2 : 6 : 2 : 3"
         },
         {
-          "left": "H2 + O2 -> H2O",
+          "left": "[[H2]] + [[O2]] -> [[H2O]]",
           "right": "2 : 1 : 2"
         }
       ]
@@ -650,7 +650,7 @@
       },
       {
         "level": 2,
-        "text": "3Fe + 2O2 -> Fe3O4 (3:2:1), 2Na + 2H2O -> 2NaOH + H2 (2:2:2:1)."
+        "text": "3Fe + 2[[O2]] -> [[Fe3O4]] (3:2:1), 2Na + 2[[H2O]] -> 2NaOH + [[H2]] (2:2:2:1)."
       }
     ],
     "steps": [
@@ -662,7 +662,7 @@
       {
         "kind": "compute",
         "title": "Hệ số tương ứng",
-        "body": "1. 3Fe + 2O2 -> Fe3O4 (3:2:1). 2. 2Na + 2H2O -> 2NaOH + H2 (2:2:2:1). 3. 2Al + 6HCl -> 2AlCl3 + 3H2 (2:6:2:3). 4. 2H2 + O2 -> 2H2O (2:1:2)."
+        "body": "1. 3Fe + 2[[O2]] -> [[Fe3O4]] (3:2:1). 2. 2Na + 2[[H2O]] -> 2NaOH + [[H2]] (2:2:2:1). 3. 2Al + 6HCl -> 2[[AlCl3]] + 3[[H2]] (2:6:2:3). 4. 2[[H2]] + [[O2]] -> 2[[H2O]] (2:1:2)."
       },
       {
         "kind": "answer",
@@ -670,7 +670,7 @@
         "body": "Ghép đúng từng phản ứng với bộ hệ số."
       }
     ],
-    "finalSolution": "Fe + O2 -> Fe3O4 (3:2:1) · Na + H2O -> NaOH + H2 (2:2:2:1) · Al + HCl -> AlCl3 + H2 (2:6:2:3) · H2 + O2 -> H2O (2:1:2).",
+    "finalSolution": "Fe + [[O2]] -> [[Fe3O4]] (3:2:1) · Na + [[H2O]] -> NaOH + [[H2]] (2:2:2:1) · Al + HCl -> [[AlCl3]] + [[H2]] (2:6:2:3) · [[H2]] + [[O2]] -> [[H2O]] (2:1:2).",
     "commonMistakes": []
   }
 ]

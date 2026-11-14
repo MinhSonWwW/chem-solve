@@ -46,13 +46,13 @@
     }
   ],
   "quickCheck": {
-    "prompt": "Dựa vào dãy hoạt động hóa học, kim loại nào sau đây ĐẨY ĐƯỢC đồng (Cu) ra khỏi dung dịch CuSO4?",
+    "prompt": "Dựa vào dãy hoạt động hóa học, kim loại nào sau đây ĐẨY ĐƯỢC đồng (Cu) ra khỏi dung dịch [[CuSO4]]?",
     "options": [
       { "id": "opt-1", "text": "Chỉ có bạc (Ag)", "correct": false },
       { "id": "opt-2", "text": "Cả kẽm (Zn) và sắt (Fe)", "correct": true },
       { "id": "opt-3", "text": "Chỉ có đồng (Cu)", "correct": false },
       { "id": "opt-4", "text": "Không có kim loại nào", "correct": false }
     ],
-    "explanation": "Chính xác! Thứ tự trong dãy: Zn > Fe > (H) > Cu > Ag. Do Zn và Fe đứng trước Cu nên cả hai đều đẩy được Cu ra khỏi dung dịch muối CuSO4!"
+    "explanation": "Chính xác! Thứ tự trong dãy: Zn > Fe > (H) > Cu > Ag. Do Zn và Fe đứng trước Cu nên cả hai đều đẩy được Cu ra khỏi dung dịch muối [[CuSO4]]!"
   }
 }

@@ -89,15 +89,15 @@
         },
         {
           "id": "opt-b",
-          "label": "Chỉ duy nhất có khí oxygen (O2) nguyên chất"
+          "label": "Chỉ duy nhất có khí oxygen ([[O2]]) nguyên chất"
         },
         {
           "id": "opt-c",
-          "label": "CH4 (methane), NH3 (ammonia), H2O (hơi nước), H2 (hydrogen) và hoàn toàn không có khí O2 tự do"
+          "label": "[[CH4]] (methane), [[NH3]] (ammonia), [[H2O]] (hơi nước), [[H2]] (hydrogen) và hoàn toàn không có khí [[O2]] tự do"
         },
         {
           "id": "opt-d",
-          "label": "N2 (nitrogen), O2 (oxygen), CO2 (carbon dioxide) và tầng ozone đậm đặc"
+          "label": "[[N2]] (nitrogen), [[O2]] (oxygen), [[CO2]] (carbon dioxide) và tầng ozone đậm đặc"
         }
       ],
       "correctId": "opt-c"
@@ -109,7 +109,7 @@
       },
       {
         "level": 2,
-        "text": "Đặc điểm cốt lõi là hoàn toàn không có khí oxygen tự do (O2)."
+        "text": "Đặc điểm cốt lõi là hoàn toàn không có khí oxygen tự do ([[O2]])."
       }
     ],
     "steps": [
@@ -121,15 +121,15 @@
       {
         "kind": "knowledge",
         "title": "Các khí đặc trưng",
-        "body": "Khí quyển nguyên thủy chứa: CH4, NH3, hơi nước, H2, CO... Tính chất mang tính khử và hoàn toàn vắng bóng khí oxygen tự do (O2) cũng như tầng ozone (O3)."
+        "body": "Khí quyển nguyên thủy chứa: [[CH4]], [[NH3]], hơi nước, [[H2]], CO... Tính chất mang tính khử và hoàn toàn vắng bóng khí oxygen tự do ([[O2]]) cũng như tầng ozone ([[O3]])."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Gồm CH4, NH3, hơi nước, H2 và không có O2 tự do."
+        "body": "Gồm [[CH4]], [[NH3]], hơi nước, [[H2]] và không có [[O2]] tự do."
       }
     ],
-    "finalSolution": "Khí quyển Trái Đất nguyên thủy gồm CH4, NH3, H2O, H2 mang tính khử và hoàn toàn không có khí oxygen tự do (O2).",
+    "finalSolution": "Khí quyển Trái Đất nguyên thủy gồm [[CH4]], [[NH3]], [[H2O]], [[H2]] mang tính khử và hoàn toàn không có khí oxygen tự do ([[O2]]).",
     "commonMistakes": [
       {
         "id": "cm-01",
@@ -174,7 +174,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Miller và Urey đưa hỗn hợp khí CH4, NH3, H2, hơi nước vào bình kín và phóng tia lửa điện mô phỏng sấm sét."
+        "text": "Miller và Urey đưa hỗn hợp khí [[CH4]], [[NH3]], [[H2]], hơi nước vào bình kín và phóng tia lửa điện mô phỏng sấm sét."
       },
       {
         "level": 2,
@@ -190,7 +190,7 @@
       {
         "kind": "knowledge",
         "title": "Kết quả thực nghiệm",
-        "body": "Dưới tác động của tia lửa điện phóng liên tục qua hỗn hợp khí khử (CH4, NH3, H2, hơi nước), các phản ứng hóa học tự phát đã tạo ra nhiều hợp chất hữu cơ quan trọng, trong đó có các amino acid (glycine, alanine...). Thí nghiệm chứng minh sự sống có thể bắt đầu từ chất vô cơ."
+        "body": "Dưới tác động của tia lửa điện phóng liên tục qua hỗn hợp khí khử ([[CH4]], [[NH3]], [[H2]], hơi nước), các phản ứng hóa học tự phát đã tạo ra nhiều hợp chất hữu cơ quan trọng, trong đó có các amino acid (glycine, alanine...). Thí nghiệm chứng minh sự sống có thể bắt đầu từ chất vô cơ."
       },
       {
         "kind": "answer",
@@ -283,7 +283,7 @@
       "bio9-nguon-goc-su-song"
     ],
     "difficulty": 2,
-    "prompt": "Nguồn gốc của lượng khí oxygen (O2) dồi dào trong bầu khí quyển Trái Đất ngày nay bắt nguồn từ sự kiện sinh học nào trong lịch sử?",
+    "prompt": "Nguồn gốc của lượng khí oxygen ([[O2]]) dồi dào trong bầu khí quyển Trái Đất ngày nay bắt nguồn từ sự kiện sinh học nào trong lịch sử?",
     "knowledge": [
       "kb-bio-g9-khi-quyen-nguyen-thuy",
       "kb-bio-g9-lich-su-nam-dai-dia-chat"
@@ -305,7 +305,7 @@
         },
         {
           "id": "opt-d",
-          "label": "Do hoạt động quang hợp giải phóng khí O2 của các loài vi khuẩn lam cổ đại xuất hiện ở Đại Thái cổ"
+          "label": "Do hoạt động quang hợp giải phóng khí [[O2]] của các loài vi khuẩn lam cổ đại xuất hiện ở Đại Thái cổ"
         }
       ],
       "correctId": "opt-d"
@@ -313,7 +313,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Khí quyển nguyên thủy không có khí O2; chỉ có sinh vật quang hợp mới sinh ra O2."
+        "text": "Khí quyển nguyên thủy không có khí [[O2]]; chỉ có sinh vật quang hợp mới sinh ra [[O2]]."
       },
       {
         "level": 2,
@@ -324,12 +324,12 @@
       {
         "kind": "identify",
         "title": "Nguồn gốc của O2 khí quyển",
-        "body": "Khí O2 tự do trên Trái Đất là sản phẩm của hoạt động trao đổi chất của sinh vật."
+        "body": "Khí [[O2]] tự do trên Trái Đất là sản phẩm của hoạt động trao đổi chất của sinh vật."
       },
       {
         "kind": "knowledge",
         "title": "Vai trò của vi khuẩn lam",
-        "body": "Ở Đại Thái cổ, vi khuẩn lam cổ đại xuất hiện mang sắc tố quang hợp hấp thụ ánh sáng mặt trời, sử dụng nước và giải phóng khí O2. Qua hàng trăm triệu năm, khí O2 tích tụ dần tạo nên bầu khí quyển hiếu khí và hình thành tầng ozone bảo vệ sinh vật lên cạn."
+        "body": "Ở Đại Thái cổ, vi khuẩn lam cổ đại xuất hiện mang sắc tố quang hợp hấp thụ ánh sáng mặt trời, sử dụng nước và giải phóng khí [[O2]]. Qua hàng trăm triệu năm, khí [[O2]] tích tụ dần tạo nên bầu khí quyển hiếu khí và hình thành tầng ozone bảo vệ sinh vật lên cạn."
       },
       {
         "kind": "answer",
@@ -341,7 +341,7 @@
     "commonMistakes": [
       {
         "id": "cm-01",
-        "message": "Nghĩ rằng khí O2 do núi lửa phun ra (núi lửa phun ra khí SO2, CO2, tro bụi chứ không có O2 tự do)."
+        "message": "Nghĩ rằng khí [[O2]] do núi lửa phun ra (núi lửa phun ra khí [[SO2]], [[CO2]], tro bụi chứ không có [[O2]] tự do)."
       }
     ]
   },

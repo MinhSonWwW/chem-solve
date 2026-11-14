@@ -431,7 +431,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Tạo điều kiện cho khí khổng mở để khí CO2 khuếch tán vào cung cấp cho quang hợp"
+          "label": "Tạo điều kiện cho khí khổng mở để khí [[CO2]] khuếch tán vào cung cấp cho quang hợp"
         },
         {
           "id": "opt-b",
@@ -455,7 +455,7 @@
       },
       {
         "level": 2,
-        "text": "Thoát hơi nước tạo lực kéo nước, làm mát lá và giúp khí khổng mở thu nhận khí CO2."
+        "text": "Thoát hơi nước tạo lực kéo nước, làm mát lá và giúp khí khổng mở thu nhận khí [[CO2]]."
       }
     ],
     "steps": [
@@ -467,7 +467,7 @@
       {
         "kind": "knowledge",
         "title": "Các vai trò của thoát hơi nước",
-        "body": "Thoát hơi nước là động lực kéo, làm mát lá và mở đường cho CO2 vào lá quang hợp."
+        "body": "Thoát hơi nước là động lực kéo, làm mát lá và mở đường cho [[CO2]] vào lá quang hợp."
       },
       {
         "kind": "answer",

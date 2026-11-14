@@ -28,7 +28,7 @@
       "bulletPoints": [
         "Hệ tiêu hóa: Biến đổi thức ăn thành chất dinh dưỡng hòa tan và hấp thụ vào máu.",
         "Hệ hô hấp: Lấy khí oxygen từ không khí vào máu và thải khí carbon dioxide từ máu ra môi trường.",
-        "Hệ tuần hoàn: Là trung tâm kết nối, tim co bóp đẩy máu mang O2 và dưỡng chất đến từng tế bào; đồng thời nhận chất thải đưa đến thận và phổi.",
+        "Hệ tuần hoàn: Là trung tâm kết nối, tim co bóp đẩy máu mang [[O2]] và dưỡng chất đến từng tế bào; đồng thời nhận chất thải đưa đến thận và phổi.",
         "Hệ bài tiết: Thận lọc máu loại bỏ chất cặn bã độc hại duy trì cân bằng nội môi ổn định.",
         "Ví dụ khi vận động chạy nhanh: Cơ bắp cần nhiều năng lượng → Tim đập nhanh hơn, mạch giãn ra (tuần hoàn), phổi thở nhanh và sâu hơn (hô hấp), mồ hôi toát nhiều (bài tiết làm mát)."
       ]
@@ -70,6 +70,6 @@
         "correct": false
       }
     ],
-    "explanation": "Khi cơ bắp vận động mạnh, các tế bào cơ cần nhiều năng lượng ATP từ hô hấp tế bào. Hệ thần kinh lập tức điều hòa phối hợp: tim đập nhanh (tăng tuần hoàn) và phổi thở gấp (tăng trao đổi khí) để đáp ứng đủ O2 và dinh dưỡng cho cơ bắp."
+    "explanation": "Khi cơ bắp vận động mạnh, các tế bào cơ cần nhiều năng lượng ATP từ hô hấp tế bào. Hệ thần kinh lập tức điều hòa phối hợp: tim đập nhanh (tăng tuần hoàn) và phổi thở gấp (tăng trao đổi khí) để đáp ứng đủ [[O2]] và dinh dưỡng cho cơ bắp."
   }
 }

@@ -1093,6 +1093,62 @@ export const SKILLS: Skill[] = [
     category: 'ly-thuyet',
     description: '3 giai đoạn tiến hóa (hóa học, tiền sinh học, sinh học) và các sinh vật đại diện từ Đại Thái cổ đến Tân sinh.',
   },
+  // ── Kỹ năng bổ sung (đặt tên cho các mã kỹ năng bài tập đã dùng) ──
+  // Hóa 7
+  { id: 'element-symbols', name: 'Kí hiệu nguyên tố hóa học', grade: 7, lessonId: 'g7-b03', category: 'nhan-biet', description: 'Viết và nhận biết đúng kí hiệu hóa học của các nguyên tố thường gặp (sodium, potassium, calcium, iron, copper…).' },
+  { id: 'atomic-mass-calc', name: 'Tính khối lượng phân tử', grade: 7, lessonId: 'g7-b03', category: 'tinh-toan', description: 'Tính khối lượng phân tử (amu) bằng tổng khối lượng các nguyên tử trong phân tử.' },
+  { id: 'element-classification', name: 'Phân loại kim loại, phi kim, khí hiếm', grade: 7, lessonId: 'g7-b03', category: 'nhan-biet', description: 'Phân loại nguyên tố thành kim loại, phi kim, khí hiếm dựa vào tính chất và vị trí trong bảng tuần hoàn.' },
+  // Hóa 8 – Mol và tỉ khối chất khí
+  { id: 'mol-concept', name: 'Khái niệm mol', grade: 8, lessonId: 'g8-b03', category: 'ly-thuyet', description: 'Một mol chất chứa 6,022 × 10^23 hạt (nguyên tử hoặc phân tử) của chất đó.' },
+  { id: 'mol-properties', name: 'Tính chất của mol và khối lượng mol', grade: 8, lessonId: 'g8-b03', category: 'ly-thuyet', description: 'Phân biệt mol, khối lượng mol và khối lượng chất; nhận định đúng sai về mol.' },
+  { id: 'mol-from-mass', name: 'Tính số mol từ khối lượng', grade: 8, lessonId: 'g8-b03', category: 'tinh-toan', description: 'Vận dụng n = m : M để tính số mol từ khối lượng chất.' },
+  { id: 'mass-from-mol', name: 'Tính khối lượng từ số mol', grade: 8, lessonId: 'g8-b03', category: 'tinh-toan', description: 'Vận dụng m = n × M để tính khối lượng chất từ số mol.' },
+  { id: 'mol-conversions', name: 'Chuyển đổi số mol, khối lượng, thể tích', grade: 8, lessonId: 'g8-b03', category: 'tinh-toan', description: 'Chọn đúng công thức chuyển đổi giữa số mol, khối lượng và thể tích khí.' },
+  { id: 'gas-volume-concept', name: 'Thể tích mol của chất khí', grade: 8, lessonId: 'g8-b03', category: 'ly-thuyet', description: 'Ở điều kiện chuẩn (25 °C, 1 bar), 1 mol khí bất kỳ chiếm thể tích 24,79 L.' },
+  { id: 'gas-volume-from-mol', name: 'Tính thể tích khí ở điều kiện chuẩn', grade: 8, lessonId: 'g8-b03', category: 'tinh-toan', description: 'Vận dụng V = n × 24,79 để tính thể tích khí ở điều kiện chuẩn.' },
+  { id: 'gas-formula', name: 'Công thức các chất khí thường gặp', grade: 8, lessonId: 'g8-b03', category: 'nhan-biet', description: 'Viết đúng công thức hóa học của các khí thường gặp (oxygen, hydrogen, carbon dioxide, sulfur dioxide, nitrogen…).' },
+  { id: 'gas-density-concept', name: 'Khái niệm tỉ khối chất khí', grade: 8, lessonId: 'g8-b03', category: 'ly-thuyet', description: 'Tỉ khối cho biết khí này nặng hay nhẹ hơn khí kia bao nhiêu lần.' },
+  { id: 'gas-density', name: 'Tính tỉ khối của khí A so với khí B', grade: 8, lessonId: 'g8-b03', category: 'tinh-toan', description: 'Vận dụng d(A/B) = M(A) : M(B).' },
+  { id: 'gas-density-air', name: 'Tính tỉ khối so với không khí', grade: 8, lessonId: 'g8-b03', category: 'tinh-toan', description: 'Vận dụng d(A/kk) = M(A) : 29.' },
+  { id: 'gas-density-compare', name: 'So sánh khí nặng hay nhẹ hơn không khí', grade: 8, lessonId: 'g8-b03', category: 'nhan-biet', description: 'Dựa vào khối lượng mol để biết khí nặng hay nhẹ hơn không khí (M = 29 g/mol).' },
+  { id: 'solve-steps', name: 'Các bước giải bài toán về mol', grade: 8, lessonId: 'g8-b03', category: 'tinh-toan', description: 'Sắp xếp đúng trình tự giải bài toán chuyển đổi khối lượng – số mol – thể tích khí.' },
+  // Hóa 8 – các bài khác
+  { id: 'stoichiometry-steps', name: 'Các bước tính theo phương trình hóa học', grade: 8, lessonId: 'g8-b06', category: 'tinh-toan', description: 'Viết PTHH, đổi ra số mol, dựa vào tỉ lệ hệ số để tính lượng chất cần tìm.' },
+  { id: 'oxide-reactions', name: 'Tính chất hóa học của oxide', grade: 8, lessonId: 'g8-b10', category: 'phuong-trinh', description: 'Phản ứng của oxide base, oxide acid với nước, acid, base.' },
+  { id: 'salt-naming', name: 'Gọi tên và viết công thức muối', grade: 8, lessonId: 'g8-b11', category: 'nhan-biet', description: 'Viết công thức và gọi tên muối theo danh pháp IUPAC (calcium carbonate, copper(II) sulfate…).' },
+  { id: 'salt-solubility', name: 'Tính tan của muối', grade: 8, lessonId: 'g8-b11', category: 'nhan-biet', description: 'Nhận biết muối tan, muối không tan dựa vào bảng tính tan.' },
+  // Hóa 9
+  { id: 'metal-activity-series', name: 'Dãy hoạt động hóa học của kim loại', grade: 9, lessonId: 'g9-b19', category: 'ly-thuyet', description: 'Sắp xếp kim loại theo mức độ hoạt động hóa học giảm dần.' },
+  { id: 'metal-displacement', name: 'Kim loại đẩy kim loại khỏi muối', grade: 9, lessonId: 'g9-b19', category: 'phuong-trinh', description: 'Kim loại mạnh hơn (trừ K, Na, Ca…) đẩy kim loại yếu hơn ra khỏi dung dịch muối.' },
+  { id: 'hydrocarbon-alkane', name: 'Alkane và phản ứng thế', grade: 9, lessonId: 'g9-b23', category: 'thi-nghiem', description: 'Cấu tạo, tính chất của alkane; phản ứng thế của methane với chlorine.' },
+  { id: 'hydrocarbon-alkene', name: 'Alkene và phản ứng cộng', grade: 9, lessonId: 'g9-b24', category: 'ly-thuyet', description: 'Liên kết đôi trong phân tử ethylene; phản ứng cộng, phản ứng trùng hợp.' },
+  { id: 'organic-formulas', name: 'Công thức hợp chất hữu cơ', grade: 9, lessonId: 'g9-b26', category: 'nhan-biet', description: 'Viết công thức phân tử, công thức cấu tạo của ethylic alcohol, acetic acid.' },
+  { id: 'ethylic-alcohol', name: 'Ethylic alcohol', grade: 9, lessonId: 'g9-b26', category: 'thi-nghiem', description: 'Tính chất vật lí, độ cồn và thí nghiệm với ethylic alcohol.' },
+  { id: 'alcohol-reactions', name: 'Tính chất hóa học của ethylic alcohol', grade: 9, lessonId: 'g9-b26', category: 'phuong-trinh', description: 'Phản ứng cháy và phản ứng với sodium của ethylic alcohol.' },
+  { id: 'acetic-acid', name: 'Acetic acid', grade: 9, lessonId: 'g9-b27', category: 'thi-nghiem', description: 'Tính chất và thí nghiệm điều chế ethyl acetate từ acetic acid.' },
+  { id: 'acid-reactions', name: 'Tính chất hóa học của acetic acid', grade: 9, lessonId: 'g9-b27', category: 'phuong-trinh', description: 'Acetic acid tác dụng với kim loại, base, oxide base, muối carbonate.' },
+  { id: 'esterification', name: 'Phản ứng ester hóa', grade: 9, lessonId: 'g9-b27', category: 'phuong-trinh', description: 'Acetic acid tác dụng với ethylic alcohol (xúc tác sulfuric acid đặc, đun nóng) tạo ethyl acetate.' },
+  { id: 'lipids-fats', name: 'Chất béo (lipid)', grade: 9, lessonId: 'g9-b28', category: 'ly-thuyet', description: 'Thành phần, tính chất và phản ứng thủy phân của chất béo.' },
+  { id: 'carbohydrates', name: 'Glucose, saccharose, tinh bột, cellulose', grade: 9, lessonId: 'g9-b30', category: 'nhan-biet', description: 'Nhận biết carbohydrate bằng thuốc thử và hiện tượng phản ứng đặc trưng.' },
+  { id: 'protein-properties', name: 'Tính chất của protein', grade: 9, lessonId: 'g9-b31', category: 'ly-thuyet', description: 'Sự đông tụ, phản ứng thủy phân và phản ứng màu của protein.' },
+  // Sinh 6
+  { id: 'bio-dong-vat-khong-xuong-song', name: 'Động vật không xương sống', grade: 6, lessonId: 'bio-g6-b21', category: 'nhan-biet', description: 'Nhận biết các ngành động vật không xương sống và đại diện của chúng.' },
+  { id: 'bio-dong-vat-co-xuong-song', name: 'Động vật có xương sống', grade: 6, lessonId: 'bio-g6-b21', category: 'nhan-biet', description: 'Đặc điểm nhận biết các lớp cá, lưỡng cư, bò sát, chim, thú.' },
+  // Sinh 8
+  { id: 'bio-dieu-hoa-moi-truong-trong', name: 'Môi trường trong và cân bằng nội môi', grade: 8, lessonId: 'bio-g8-b07', category: 'ly-thuyet', description: 'Thành phần môi trường trong của cơ thể và cơ chế duy trì cân bằng.' },
+  { id: 'bio-he-than-kinh-giac-quan', name: 'Hệ thần kinh và các giác quan', grade: 8, lessonId: 'bio-g8-b08', category: 'ly-thuyet', description: 'Cung phản xạ, cấu tạo và chức năng của hệ thần kinh và các cơ quan cảm giác.' },
+  // Sinh 9
+  { id: 'mendel-genetics', name: 'Phép lai của Mendel', grade: 9, lessonId: 'bio-g9-b01', category: 'ly-thuyet', description: 'Tỉ lệ phân li kiểu hình trong các phép lai một cặp và hai cặp tính trạng.' },
+  { id: 'chromosome-structure', name: 'Cấu trúc nhiễm sắc thể', grade: 9, lessonId: 'bio-g9-b03', category: 'ly-thuyet', description: 'Các mức cuộn xoắn của nhiễm sắc thể từ DNA đến chromatid.' },
+  { id: 'dna-complementary-rule', name: 'Nguyên tắc bổ sung trong DNA', grade: 9, lessonId: 'bio-g9-b03', category: 'ly-thuyet', description: 'A liên kết với T, G liên kết với C giữa hai mạch của phân tử DNA.' },
+  { id: 'dna-replication', name: 'Tái bản DNA', grade: 9, lessonId: 'bio-g9-b04', category: 'ly-thuyet', description: 'Trình tự các sự kiện trong quá trình tái bản (nhân đôi) DNA.' },
+  { id: 'rna-transcription-translation', name: 'Phiên mã và dịch mã', grade: 9, lessonId: 'bio-g9-b05', category: 'ly-thuyet', description: 'Vai trò của mRNA, tRNA, rRNA trong quá trình tổng hợp protein.' },
+  { id: 'mitosis-stages', name: 'Các kì của nguyên phân', grade: 9, lessonId: 'bio-g9-b07', category: 'ly-thuyet', description: 'Diễn biến của nhiễm sắc thể qua kì đầu, kì giữa, kì sau, kì cuối.' },
+  { id: 'mitosis-vs-meiosis', name: 'So sánh nguyên phân và giảm phân', grade: 9, lessonId: 'bio-g9-b08', category: 'nhan-biet', description: 'Phân biệt nguyên phân và giảm phân về số lần phân chia, số tế bào con, bộ NST.' },
+  { id: 'human-genetics-disorders', name: 'Bệnh và tật di truyền ở người', grade: 9, lessonId: 'bio-g9-b10', category: 'nhan-biet', description: 'Liên hệ các hội chứng di truyền với dạng đột biến gây ra chúng.' },
+  { id: 'chromosome-mutations', name: 'Đột biến nhiễm sắc thể', grade: 9, lessonId: 'bio-g9-b11', category: 'nhan-biet', description: 'Phân biệt đột biến cấu trúc và đột biến số lượng nhiễm sắc thể.' },
+  { id: 'human-genetics-methods', name: 'Phương pháp nghiên cứu di truyền người', grade: 9, lessonId: 'bio-g9-b12', category: 'ly-thuyet', description: 'Mục đích và cách làm của phương pháp phả hệ, nghiên cứu trẻ đồng sinh…' },
+  { id: 'genetic-engineering', name: 'Kĩ thuật chuyển gene', grade: 9, lessonId: 'bio-g9-b13', category: 'thi-nghiem', description: 'Các bước cơ bản của kĩ thuật chuyển gene và ứng dụng.' },
 ];
 
 export function getSkillsByGrade(grade: 6 | 7 | 8 | 9, subject?: 'chem' | 'physics' | 'bio'): Skill[] {

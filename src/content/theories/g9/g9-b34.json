@@ -16,7 +16,7 @@
         "2. Tôi vôi: Cho vôi sống tác dụng với nước: [[CaO]] + [[H2O]] -> [[Ca(OH)2]] (vôi tôi / nước vôi trong), phản ứng tỏa nhiệt rất mạnh.",
         "Ứng dụng: [[CaO]] và [[Ca(OH)2]] dùng trong xây dựng, khử chua đất nông nghiệp phèn chua, xử lý nước thải công nghiệp."
       ],
-      "callout": "💡 Nhớ chuỗi: Đá vôi (CaCO3) --nung--> Vôi sống (CaO) --tác dụng nước--> Vôi tôi Ca(OH)2!"
+      "callout": "💡 Nhớ chuỗi: Đá vôi ([[CaCO3]]) --nung--> Vôi sống (CaO) --tác dụng nước--> Vôi tôi [[Ca(OH)2]]!"
     },
     {
       "id": "c2",
@@ -29,7 +29,7 @@
         "Công nghiệp Thủy tinh: Nung chảy hỗn hợp cát trắng ([[SiO2]]), đá vôi ([[CaCO3]]) và soda ([[Na2CO3]]) ở ~1400°C, thổi hoặc ép tạo hình chai lọ, kính xây dựng.",
         "Thành phần chính thủy tinh thường: hỗn hợp sodium silicate và calcium silicate ([[Na2SiO3]], [[CaSiO3]], [[SiO2]])."
       ],
-      "callout": "📌 Xi măng cần: Đá vôi + Đất sét + Thạch cao. Thủy tinh cần: Cát trắng + Đá vôi + Soda (Na2CO3)!"
+      "callout": "📌 Xi măng cần: Đá vôi + Đất sét + Thạch cao. Thủy tinh cần: Cát trắng + Đá vôi + Soda ([[Na2CO3]])!"
     },
     {
       "id": "c3",
@@ -46,13 +46,13 @@
     }
   ],
   "quickCheck": {
-    "prompt": "Khi nung đá vôi (CaCO3) ở nhiệt độ 900 - 1000°C trong lò nung, sản phẩm chất rắn thu được là gì?",
+    "prompt": "Khi nung đá vôi ([[CaCO3]]) ở nhiệt độ 900 - 1000°C trong lò nung, sản phẩm chất rắn thu được là gì?",
     "options": [
       { "id": "opt-1", "text": "CaO (Vôi sống)", "correct": true },
-      { "id": "opt-2", "text": "Ca(OH)2 (Vôi tôi)", "correct": false },
-      { "id": "opt-3", "text": "CaSO4 (Thạch cao)", "correct": false },
+      { "id": "opt-2", "text": "[[Ca(OH)2]] (Vôi tôi)", "correct": false },
+      { "id": "opt-3", "text": "[[CaSO4]] (Thạch cao)", "correct": false },
       { "id": "opt-4", "text": "Ca (Kim loại calcium)", "correct": false }
     ],
-    "explanation": "Chính xác! Nung đá vôi: CaCO3 -(900-1000°C)-> CaO + CO2↑. Chất rắn thu được là vôi sống (CaO)."
+    "explanation": "Chính xác! Nung đá vôi: [[CaCO3]] -(900-1000°C)-> CaO + [[CO2]]↑. Chất rắn thu được là vôi sống (CaO)."
   }
 }

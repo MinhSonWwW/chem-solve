@@ -12,19 +12,19 @@
       "options": [
         {
           "id": "a",
-          "label": "C12H22O11 (Glucose) và C6H12O6 (Saccharose)"
+          "label": "[[C12H22O11]] (Glucose) và [[C6H12O6]] (Saccharose)"
         },
         {
           "id": "b",
-          "label": "C6H12O6 (Glucose) và C12H22O11 (Saccharose)"
+          "label": "[[C6H12O6]] (Glucose) và [[C12H22O11]] (Saccharose)"
         },
         {
           "id": "c",
-          "label": "(C6H10O5)n và C6H12O6"
+          "label": "([[C6H10O5]])n và [[C6H12O6]]"
         },
         {
           "id": "d",
-          "label": "CH3COOH và C2H5OH"
+          "label": "[[CH3COOH]] và [[C2H5OH]]"
         }
       ],
       "correctId": "b"
@@ -48,15 +48,15 @@
       {
         "kind": "knowledge",
         "title": "Kiến thức",
-        "body": "Glucose: C6H12O6. Saccharose: C12H22O11."
+        "body": "Glucose: [[C6H12O6]]. Saccharose: [[C12H22O11]]."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "C6H12O6 và C12H22O11."
+        "body": "[[C6H12O6]] và [[C12H22O11]]."
       }
     ],
-    "finalSolution": "Glucose: C6H12O6. Saccharose: C12H22O11.",
+    "finalSolution": "Glucose: [[C6H12O6]]. Saccharose: [[C12H22O11]].",
     "commonMistakes": []
   },
   {
@@ -72,7 +72,7 @@
       "options": [
         {
           "id": "a",
-          "label": "Phản ứng tráng bạc với dung dịch AgNO3 trong NH3 đun nóng (chỉ Glucose có kết tủa bạc sáng bóng bám thành ống)"
+          "label": "Phản ứng tráng bạc với dung dịch [[AgNO3]] trong [[NH3]] đun nóng (chỉ Glucose có kết tủa bạc sáng bóng bám thành ống)"
         },
         {
           "id": "b",
@@ -108,15 +108,15 @@
       {
         "kind": "knowledge",
         "title": "Thuốc thử",
-        "body": "Thuốc thử: dung dịch AgNO3 trong NH3. Glucose cho lớp bạc kim loại sáng bóng bám vào thành ống nghiệm (phản ứng tráng gương). Saccharose không có."
+        "body": "Thuốc thử: dung dịch [[AgNO3]] trong [[NH3]]. Glucose cho lớp bạc kim loại sáng bóng bám vào thành ống nghiệm (phản ứng tráng gương). Saccharose không có."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Phản ứng tráng bạc (AgNO3/NH3)."
+        "body": "Phản ứng tráng bạc ([[AgNO3]]/[[NH3]])."
       }
     ],
-    "finalSolution": "Dùng AgNO3 trong NH3 đun nóng. Glucose tạo kết tủa bạc sáng bóng (tráng gương), Saccharose không phản ứng.",
+    "finalSolution": "Dùng [[AgNO3]] trong [[NH3]] đun nóng. Glucose tạo kết tủa bạc sáng bóng (tráng gương), Saccharose không phản ứng.",
     "commonMistakes": [
       {
         "id": "quỳ tím",
@@ -247,7 +247,7 @@
       },
       {
         "level": 2,
-        "text": "C12H22O11 + H2O --acid, to--> C6H12O6 (glucose) + C6H12O6 (fructose)."
+        "text": "[[C12H22O11]] + [[H2O]] --acid, to--> [[C6H12O6]] (glucose) + [[C6H12O6]] (fructose)."
       }
     ],
     "steps": [

@@ -126,7 +126,7 @@
       {
         "kind": "knowledge",
         "title": "Bản chất tác động",
-        "body": "Đập nhỏ than (tăng diện tích bề mặt) & quạt gió (tăng nồng độ O2): Tăng tốc độ cháy. Tủ lạnh (hạ nhiệt độ) & hút chân không (giảm nồng độ O2): Giảm tốc độ phản ứng ôi thiu."
+        "body": "Đập nhỏ than (tăng diện tích bề mặt) & quạt gió (tăng nồng độ [[O2]]): Tăng tốc độ cháy. Tủ lạnh (hạ nhiệt độ) & hút chân không (giảm nồng độ [[O2]]): Giảm tốc độ phản ứng ôi thiu."
       },
       {
         "kind": "answer",
@@ -359,7 +359,7 @@
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Nồng độ H2O2 giảm 0,8 mol/L sau 40 giây có mặt chất xúc tác MnO2."
+        "body": "Nồng độ [[H2O2]] giảm 0,8 mol/L sau 40 giây có mặt chất xúc tác [[MnO2]]."
       }
     ],
     "finalSolution": "0.8"

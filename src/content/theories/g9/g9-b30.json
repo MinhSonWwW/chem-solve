@@ -25,11 +25,11 @@
       "title": "Phản ứng màu đặc trưng giữa Tinh bột và Iodine (I2)",
       "content": "Đây là phản ứng nhận biết cực kỳ nhạy và đẹp mắt:",
       "bulletPoints": [
-        "Hiện tượng: Khi nhỏ một giọt dung dịch Iodine (I2 - cồn thuốc đỏ) vào hồ tinh bột (hoặc lát cắt củ khoai tây, mẩu bánh mì), lập tức xuất hiện MÀU XANH TÍM ĐẶC TRƯNG.",
+        "Hiện tượng: Khi nhỏ một giọt dung dịch Iodine ([[I2]] - cồn thuốc đỏ) vào hồ tinh bột (hoặc lát cắt củ khoai tây, mẩu bánh mì), lập tức xuất hiện MÀU XANH TÍM ĐẶC TRƯNG.",
         "Khi đun nóng: Màu xanh tím biến mất. Khi để nguội: Màu xanh tím lại xuất hiện trở lại.",
         "Cellulose KHÔNG có phản ứng màu này với Iodine."
       ],
-      "callout": "📌 Mẹo nhớ: Cứ thấy Tinh bột gặp Iodine (I2) là ra MÀU XANH TÍM!"
+      "callout": "📌 Mẹo nhớ: Cứ thấy Tinh bột gặp Iodine ([[I2]]) là ra MÀU XANH TÍM!"
     },
     {
       "id": "c3",
@@ -46,7 +46,7 @@
     }
   ],
   "quickCheck": {
-    "prompt": "Khi nhỏ dung dịch Iodine (I2) vào một mẩu khoai tây tươi, hiện tượng quan sát được là gì?",
+    "prompt": "Khi nhỏ dung dịch Iodine ([[I2]]) vào một mẩu khoai tây tươi, hiện tượng quan sát được là gì?",
     "options": [
       { "id": "opt-1", "text": "Xuất hiện kết tủa trắng", "correct": false },
       { "id": "opt-2", "text": "Xuất hiện màu xanh tím đặc trưng", "correct": true },

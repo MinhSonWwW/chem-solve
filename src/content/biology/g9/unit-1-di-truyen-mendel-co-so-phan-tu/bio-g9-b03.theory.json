@@ -13,7 +13,7 @@
       "title": "Cấu trúc hóa học & Mô hình xoắn kép của DNA",
       "content": "DNA (Deoxyribonucleic acid) là đại phân tử hữu cơ cấu tạo theo nguyên tắc đa phân từ 4 loại đơn phân nucleotide: A (Adenine), T (Thymine), G (Guanine), C (Cytosine).",
       "bulletPoints": [
-        "Mỗi nucleotide gồm 3 phần: Đường Deoxyribose (C5H10O4), Gốc phosphate (H3PO4) và một Bazo nito (A, T, G hoặc C).",
+        "Mỗi nucleotide gồm 3 phần: Đường Deoxyribose ([[C5H10O4]]), Gốc phosphate ([[H3PO4]]) và một Bazo nito (A, T, G hoặc C).",
         "Mô hình Watson - Crick (1953): DNA gồm 2 chuỗi polynucleotide xoắn kép đều quanh một trục tưởng tượng theo chiều từ trái sang phải.",
         "Thông số kích thước chuẩn: Đường kính vòng xoắn là 20 Å (2 nm); Chiều cao 1 chu kì xoắn là 34 Å (3,4 nm) gồm 10 cặp nucleotide; Khoảng cách giữa 2 cặp nucleotide liền kề là 3,4 Å (0,34 nm).",
         "Tính đa dạng và đặc thù: DNA của các loài khác biệt nhau bởi số lượng, thành phần và trật tự sắp xếp các nucleotide dọc theo chiều dài phân tử."
@@ -38,7 +38,7 @@
       "badge": "RNA & Khái niệm Gene",
       "badgeColor": "cyan",
       "title": "Các loại RNA & Khái niệm Gene",
-      "content": "RNA (Ribonucleic acid) có cấu trúc mạch đơn, phân tử đường là ribose (C5H10O5), chứa nucleotide Uracil (U) thay cho Thymine (T).",
+      "content": "RNA (Ribonucleic acid) có cấu trúc mạch đơn, phân tử đường là ribose ([[C5H10O5]]), chứa nucleotide Uracil (U) thay cho Thymine (T).",
       "bulletPoints": [
         "1. mRNA (RNA thông tin): Mạch đơn thẳng, sao chép thông tin di truyền từ gene trong nhân ra bào quan ribosome để làm khuôn tổng hợp protein.",
         "2. tRNA (RNA vận chuyển): Có cấu trúc cuộn gập tạo các thùy tròn; một đầu gắn amino acid đặc hiệu, đầu kia mang bộ ba đối mã (anticodon) khớp với codon trên mRNA tại ribosome.",

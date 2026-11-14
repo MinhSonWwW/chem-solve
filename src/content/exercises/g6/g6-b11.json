@@ -48,7 +48,7 @@
       {
         "kind": "knowledge",
         "title": "Tỉ lệ thể tích",
-        "body": "Thành phần không khí: ~78% Nitrogen, ~21% Oxygen, ~1% các khí khác (CO2, hơi nước, khí hiếm)."
+        "body": "Thành phần không khí: ~78% Nitrogen, ~21% Oxygen, ~1% các khí khác ([[CO2]], hơi nước, khí hiếm)."
       },
       {
         "kind": "answer",
@@ -164,7 +164,7 @@
       },
       {
         "level": 2,
-        "text": "Khối lượng mol của O2 là 32 g/mol, nặng hơn không khí (~29 g/mol) một chút."
+        "text": "Khối lượng mol của [[O2]] là 32 g/mol, nặng hơn không khí (~29 g/mol) một chút."
       }
     ],
     "steps": [
@@ -453,7 +453,7 @@
       "options": [
         {
           "id": "a",
-          "label": "Cây xanh quang hợp hấp thụ khí CO2, cản bụi và giải phóng khí Oxygen sạch"
+          "label": "Cây xanh quang hợp hấp thụ khí [[CO2]], cản bụi và giải phóng khí Oxygen sạch"
         },
         {
           "id": "b",
@@ -477,7 +477,7 @@
       },
       {
         "level": 2,
-        "text": "Quang hợp hấp thụ CO2 và nhả ra Oxygen, đồng thời bề mặt tán lá giữ lại các hạt bụi mịn."
+        "text": "Quang hợp hấp thụ [[CO2]] và nhả ra Oxygen, đồng thời bề mặt tán lá giữ lại các hạt bụi mịn."
       }
     ],
     "steps": [
@@ -489,15 +489,15 @@
       {
         "kind": "knowledge",
         "title": "Sinh học & Hóa học",
-        "body": "Cây xanh quang hợp lấy CO2 và tạo ra O2, tán lá giúp giữ bụi và điều hòa độ ẩm, nhiệt độ."
+        "body": "Cây xanh quang hợp lấy [[CO2]] và tạo ra [[O2]], tán lá giúp giữ bụi và điều hòa độ ẩm, nhiệt độ."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Hấp thụ CO2, cản bụi và giải phóng Oxygen sạch."
+        "body": "Hấp thụ [[CO2]], cản bụi và giải phóng Oxygen sạch."
       }
     ],
-    "finalSolution": "Cây xanh quang hợp hấp thụ khí CO2, cản bụi và thải ra khí Oxygen giúp không khí trong lành.",
+    "finalSolution": "Cây xanh quang hợp hấp thụ khí [[CO2]], cản bụi và thải ra khí Oxygen giúp không khí trong lành.",
     "commonMistakes": []
   }
 ]

@@ -428,7 +428,7 @@
       },
       {
         "level": 2,
-        "text": "Zn + 2HCl → ZnCl2 + H2↑. Có chất mới → hiện tượng hóa học."
+        "text": "Zn + 2HCl → [[ZnCl2]] + [[H2]]↑. Có chất mới → hiện tượng hóa học."
       }
     ],
     "steps": [
@@ -440,7 +440,7 @@
       {
         "kind": "knowledge",
         "title": "Phân biệt",
-        "body": "Có chất mới sinh ra (khí H2, ZnCl2) → Biến đổi hóa học, khác biến đổi vật lý (chỉ thay đổi hình dạng, trạng thái)."
+        "body": "Có chất mới sinh ra (khí [[H2]], [[ZnCl2]]) → Biến đổi hóa học, khác biến đổi vật lý (chỉ thay đổi hình dạng, trạng thái)."
       },
       {
         "kind": "answer",
@@ -448,7 +448,7 @@
         "body": "Đây là hiện tượng hóa học vì có chất mới sinh ra."
       }
     ],
-    "finalSolution": "Hiện tượng hóa học vì có phản ứng tạo ra chất mới (khí H2 và muối ZnCl2).",
+    "finalSolution": "Hiện tượng hóa học vì có phản ứng tạo ra chất mới (khí [[H2]] và muối [[ZnCl2]]).",
     "commonMistakes": [
       {
         "id": "physical-change",

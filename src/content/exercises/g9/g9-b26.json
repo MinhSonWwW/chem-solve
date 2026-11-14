@@ -43,10 +43,10 @@
       {
         "kind": "answer",
         "title": "Công thức biểu diễn",
-        "body": "Công thức là C2H5OH hoặc C2H6O."
+        "body": "Công thức là [[C2H5OH]] hoặc [[C2H6O]]."
       }
     ],
-    "finalSolution": "C2H5OH"
+    "finalSolution": "[[C2H5OH]]"
   },
   {
     "id": "g9-b26-tf-001",
@@ -79,7 +79,7 @@
         },
         {
           "id": "s4",
-          "text": "Khi đốt cháy hoàn toàn ethylic alcohol thu được khí CO2 và hơi nước.",
+          "text": "Khi đốt cháy hoàn toàn ethylic alcohol thu được khí [[CO2]] và hơi nước.",
           "correct": true
         }
       ]
@@ -91,24 +91,24 @@
       },
       {
         "level": 2,
-        "text": "Đốt cháy hợp chất hữu cơ CxHyOz luôn tạo CO2 và H2O."
+        "text": "Đốt cháy hợp chất hữu cơ CxHyOz luôn tạo [[CO2]] và [[H2O]]."
       }
     ],
     "steps": [
       {
         "kind": "knowledge",
         "title": "Tính chất vật lý",
-        "body": "C2H5OH là chất lỏng không màu, tan vô hạn trong nước (s1, s2 đúng)."
+        "body": "[[C2H5OH]] là chất lỏng không màu, tan vô hạn trong nước (s1, s2 đúng)."
       },
       {
         "kind": "identify",
         "title": "Tính chất chỉ thị",
-        "body": "C2H5OH là chất trung tính, không làm đổi màu quỳ tím (s3 sai)."
+        "body": "[[C2H5OH]] là chất trung tính, không làm đổi màu quỳ tím (s3 sai)."
       },
       {
         "kind": "equation",
         "title": "Phản ứng cháy",
-        "body": "C2H5OH + 3O2 -> 2CO2 + 3H2O (s4 đúng)."
+        "body": "[[C2H5OH]] + 3[[O2]] -> 2[[CO2]] + 3[[H2O]] (s4 đúng)."
       }
     ],
     "finalSolution": "s1: Đúng, s2: Đúng, s3: Sai, s4: Đúng"
@@ -138,7 +138,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Nhóm methyl (-CH3)"
+          "label": "Nhóm methyl (-[[CH3]])"
         },
         {
           "id": "opt-b",
@@ -146,7 +146,7 @@
         },
         {
           "id": "opt-c",
-          "label": "Nhóm ethyl (-C2H5)"
+          "label": "Nhóm ethyl (-[[C2H5]])"
         },
         {
           "id": "opt-d",
@@ -169,7 +169,7 @@
       {
         "kind": "identify",
         "title": "Phân tích cấu tạo C2H5OH",
-        "body": "Phân tử C2H5OH có 1 nguyên tử H liên kết trực tiếp với nguyên tử O."
+        "body": "Phân tử [[C2H5OH]] có 1 nguyên tử H liên kết trực tiếp với nguyên tử O."
       },
       {
         "kind": "knowledge",
@@ -294,35 +294,35 @@
     "hints": [
       {
         "level": 1,
-        "text": "Cân bằng Carbon trước (2 CO2), rồi cân bằng Hydrogen (6 H -> 3 H2O)."
+        "text": "Cân bằng Carbon trước (2 [[CO2]]), rồi cân bằng Hydrogen (6 H -> 3 [[H2O]])."
       },
       {
         "level": 2,
-        "text": "Vế phải có 2 × 2 + 3 = 7 nguyên tử O. Vế trái có 1 O trong C2H5OH nên cần 6 O từ O2 (tức 3 O2). Tỉ lệ: 1, 3, 2, 3."
+        "text": "Vế phải có 2 × 2 + 3 = 7 nguyên tử O. Vế trái có 1 O trong [[C2H5OH]] nên cần 6 O từ [[O2]] (tức 3 [[O2]]). Tỉ lệ: 1, 3, 2, 3."
       }
     ],
     "steps": [
       {
         "kind": "identify",
         "title": "Cân bằng C và H",
-        "body": "2 C ở vế trái => đặt 2 trước CO2. 5 + 1 = 6 H ở vế trái => đặt 3 trước H2O."
+        "body": "2 C ở vế trái => đặt 2 trước [[CO2]]. 5 + 1 = 6 H ở vế trái => đặt 3 trước [[H2O]]."
       },
       {
         "kind": "compute",
         "title": "Cân bằng nguyên tố O",
-        "body": "Tổng số nguyên tử O vế phải: 2 × 2 + 3 × 1 = 7. Trừ đi 1 O có sẵn trong C2H5OH còn 6 O => đặt hệ số 3 trước O2."
+        "body": "Tổng số nguyên tử O vế phải: 2 × 2 + 3 × 1 = 7. Trừ đi 1 O có sẵn trong [[C2H5OH]] còn 6 O => đặt hệ số 3 trước [[O2]]."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Phương trình cân bằng: **C2H5OH + 3O2 -> 2CO2 + 3H2O**."
+        "body": "Phương trình cân bằng: **[[C2H5OH]] + 3[[O2]] -> 2[[CO2]] + 3[[H2O]]**."
       }
     ],
-    "finalSolution": "**C2H5OH + 3O2 -> 2CO2 + 3H2O**",
+    "finalSolution": "**[[C2H5OH]] + 3[[O2]] -> 2[[CO2]] + 3[[H2O]]**",
     "commonMistakes": [
       {
         "id": "forgot-oxygen-in-alcohol",
-        "message": "Quên mất 1 nguyên tử O nằm sẵn trong phân tử rượu C2H5OH dẫn đến cân bằng sai hệ số của O2."
+        "message": "Quên mất 1 nguyên tử O nằm sẵn trong phân tử rượu [[C2H5OH]] dẫn đến cân bằng sai hệ số của [[O2]]."
       }
     ]
   },
@@ -347,23 +347,23 @@
     "hints": [
       {
         "level": 1,
-        "text": "Nhóm -OH trong rượu ethylic làm cho nguyên tử hydrogen linh động có thể bị kim loại kiềm như Na thay thế giải phóng H2."
+        "text": "Nhóm -OH trong rượu ethylic làm cho nguyên tử hydrogen linh động có thể bị kim loại kiềm như Na thay thế giải phóng [[H2]]."
       },
       {
         "level": 2,
-        "text": "Sodium chìm trong rượu (vì khối lượng riêng của rượu bé hơn Na) và sủi bọt khí H2."
+        "text": "Sodium chìm trong rượu (vì khối lượng riêng của rượu bé hơn Na) và sủi bọt khí [[H2]]."
       }
     ],
     "steps": [
       {
         "kind": "identify",
         "title": "Thí nghiệm rượu tác dụng với Na",
-        "body": "2C2H5OH + 2Na → 2C2H5ONa + H2↑."
+        "body": "2[[C2H5OH]] + 2Na → 2[[C2H5ONa]] + [[H2]]↑."
       },
       {
         "kind": "knowledge",
         "title": "Trình tự thao tác",
-        "body": "Rót rượu → Cắt và thấm khô Na → Thả mẩu Na → Quan sát sủi bọt khí → Thử khí H2 bằng que đóm."
+        "body": "Rót rượu → Cắt và thấm khô Na → Thả mẩu Na → Quan sát sủi bọt khí → Thử khí [[H2]] bằng que đóm."
       },
       {
         "kind": "answer",
@@ -371,6 +371,6 @@
         "body": "Sắp xếp đúng 5 bước thực nghiệm an toàn."
       }
     ],
-    "finalSolution": "Quy trình: **Rót rượu → Cắt & thấm khô mẩu Na → Thả Na vào ống nghiệm → Quan sát sủi bọt khí → Đốt thử khí H2 bằng que đóm**."
+    "finalSolution": "Quy trình: **Rót rượu → Cắt & thấm khô mẩu Na → Thả Na vào ống nghiệm → Quan sát sủi bọt khí → Đốt thử khí [[H2]] bằng que đóm**."
   }
 ]

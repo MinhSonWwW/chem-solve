@@ -28,8 +28,8 @@
       "bulletPoints": [
         "Hít vào (chủ động): Cơ liên sườn ngoài co nâng xương sườn + cơ hoành co hạ xuống → Thể tích lồng ngực tăng → Áp suất khoang ngực giảm nhỏ hơn áp suất khí quyển → Không khí ùa vào phổi.",
         "Thở ra (thụ động): Các cơ hô hấp dãn → Thể tích lồng ngực giảm → Áp suất khoang ngực tăng ép không khí từ phổi ra ngoài.",
-        "Trao đổi khí ở phổi: O2 khuếch tán từ phế nang vào máu mao mạch; CO2 từ máu khuếch tán ra lòng phế nang.",
-        "Trao đổi khí ở tế bào: O2 khuếch tán từ máu vào tế bào để oxy hóa tạo ATP; CO2 từ tế bào khuếch tán vào máu trở về tim."
+        "Trao đổi khí ở phổi: [[O2]] khuếch tán từ phế nang vào máu mao mạch; [[CO2]] từ máu khuếch tán ra lòng phế nang.",
+        "Trao đổi khí ở tế bào: [[O2]] khuếch tán từ máu vào tế bào để oxy hóa tạo ATP; [[CO2]] từ tế bào khuếch tán vào máu trở về tim."
       ]
     },
     {
@@ -39,7 +39,7 @@
       "title": "Tác hại khói thuốc lá & Kĩ năng sơ cứu hô hấp",
       "content": "Bảo vệ đường hô hấp và xử lí tình huống ngạt thở khẩn cấp:",
       "bulletPoints": [
-        "Khói thuốc lá: Chứa Nicotine gây nghiện và co thắt mạch máu, khí CO chiếm chỗ của O2 gắn với hồng cầu, hắc ín (tar) làm tê liệt lông rung khí quản và gây ung thư phổi.",
+        "Khói thuốc lá: Chứa Nicotine gây nghiện và co thắt mạch máu, khí CO chiếm chỗ của [[O2]] gắn với hồng cầu, hắc ín (tar) làm tê liệt lông rung khí quản và gây ung thư phổi.",
         "Bảo vệ lá phổi: Đeo khẩu trang chống bụi mịn PM2.5, trồng nhiều cây xanh, không hút thuốc lá chủ động và thụ động.",
         "Sơ cứu ngạt thở / đuối nước: Làm thông thoáng đường thở, đặt nạn nhân nằm ngửa, thực hiện ép tim ngoài lồng ngực kết hợp hà hơi thổi ngạt với tỉ lệ chuẩn 30 lần ép tim : 2 lần thổi ngạt."
       ]

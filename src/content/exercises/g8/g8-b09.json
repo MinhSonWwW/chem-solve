@@ -12,15 +12,15 @@
       "options": [
         {
           "id": "a",
-          "label": "Aluminium hydroxide (Al(OH)3)"
+          "label": "Aluminium hydroxide ([[Al(OH)3]])"
         },
         {
           "id": "b",
-          "label": "Copper(II) hydroxide (Cu(OH)2)"
+          "label": "Copper(II) hydroxide ([[Cu(OH)2]])"
         },
         {
           "id": "c",
-          "label": "Iron(III) hydroxide (Fe(OH)3)"
+          "label": "Iron(III) hydroxide ([[Fe(OH)3]])"
         },
         {
           "id": "d",
@@ -36,7 +36,7 @@
       },
       {
         "level": 2,
-        "text": "NaOH, KOH, Ba(OH)2, Ca(OH)2 tan trong nước; các base còn lại như Cu(OH)2, Fe(OH)3 là chất kết tủa không tan."
+        "text": "NaOH, KOH, [[Ba(OH)2]], [[Ca(OH)2]] tan trong nước; các base còn lại như [[Cu(OH)2]], [[Fe(OH)3]] là chất kết tủa không tan."
       }
     ],
     "steps": [
@@ -48,7 +48,7 @@
       {
         "kind": "knowledge",
         "title": "Tính tan của base",
-        "body": "Chỉ có NaOH, KOH, Ba(OH)2 và Ca(OH)2 là tan tốt trong nước tạo dung dịch kiềm."
+        "body": "Chỉ có NaOH, KOH, [[Ba(OH)2]] và [[Ca(OH)2]] là tan tốt trong nước tạo dung dịch kiềm."
       },
       {
         "kind": "answer",
@@ -60,7 +60,7 @@
     "commonMistakes": [
       {
         "id": "picked-insoluble",
-        "message": "Cu(OH)2 là chất kết tủa màu xanh lam không tan trong nước."
+        "message": "[[Cu(OH)2]] là chất kết tủa màu xanh lam không tan trong nước."
       }
     ]
   },
@@ -286,22 +286,22 @@
         },
         {
           "id": "baoh2",
-          "label": "Ba(OH)2 (Barium hydroxide)",
+          "label": "[[Ba(OH)2]] (Barium hydroxide)",
           "bucketId": "alkali"
         },
         {
           "id": "cuoh2",
-          "label": "Cu(OH)2 (Copper(II) hydroxide)",
+          "label": "[[Cu(OH)2]] (Copper(II) hydroxide)",
           "bucketId": "insoluble"
         },
         {
           "id": "feoh3",
-          "label": "Fe(OH)3 (Iron(III) hydroxide)",
+          "label": "[[Fe(OH)3]] (Iron(III) hydroxide)",
           "bucketId": "insoluble"
         },
         {
           "id": "aloh3",
-          "label": "Al(OH)3 (Aluminium hydroxide)",
+          "label": "[[Al(OH)3]] (Aluminium hydroxide)",
           "bucketId": "insoluble"
         }
       ]
@@ -313,7 +313,7 @@
       },
       {
         "level": 2,
-        "text": "NaOH, KOH, Ba(OH)2 tan trong nước; Cu(OH)2, Fe(OH)3, Al(OH)3 là chất kết tủa."
+        "text": "NaOH, KOH, [[Ba(OH)2]] tan trong nước; [[Cu(OH)2]], [[Fe(OH)3]], [[Al(OH)3]] là chất kết tủa."
       }
     ],
     "steps": [
@@ -330,10 +330,10 @@
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Base tan: NaOH, KOH, Ba(OH)2. Base không tan: Cu(OH)2, Fe(OH)3, Al(OH)3."
+        "body": "Base tan: NaOH, KOH, [[Ba(OH)2]]. Base không tan: [[Cu(OH)2]], [[Fe(OH)3]], [[Al(OH)3]]."
       }
     ],
-    "finalSolution": "Base tan: **NaOH, KOH, Ba(OH)2** · Base không tan: **Cu(OH)2, Fe(OH)3, Al(OH)3**.",
+    "finalSolution": "Base tan: **NaOH, KOH, [[Ba(OH)2]]** · Base không tan: **[[Cu(OH)2]], [[Fe(OH)3]], [[Al(OH)3]]**.",
     "commonMistakes": []
   },
   {

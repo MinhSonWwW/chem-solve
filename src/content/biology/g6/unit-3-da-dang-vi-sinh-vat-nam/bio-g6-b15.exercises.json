@@ -122,7 +122,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Làm thức ăn cho thủy sản và cung cấp O2 là các vai trò có ích."
+        "text": "Làm thức ăn cho thủy sản và cung cấp [[O2]] là các vai trò có ích."
       },
       {
         "level": 2,
@@ -138,7 +138,7 @@
       {
         "kind": "knowledge",
         "title": "Phân loại theo SGK",
-        "body": "Thức ăn thủy sinh, tạo O2 quang hợp, làm thạch agar là có ích. Bệnh sốt rét và kiết lị là tác hại."
+        "body": "Thức ăn thủy sinh, tạo [[O2]] quang hợp, làm thạch agar là có ích. Bệnh sốt rét và kiết lị là tác hại."
       },
       {
         "kind": "answer",
@@ -352,7 +352,7 @@
       {
         "kind": "knowledge",
         "title": "Kiểm tra chi tiết",
-        "body": "1. Nhân thực, đa số đơn bào: Đúng. 2. Trùng roi không quang hợp: Sai (có hạt diệp lục quang hợp). 3. Trùng sốt rét phá hồng cầu: Đúng. 4. Tảo quang hợp tạo O2: Đúng."
+        "body": "1. Nhân thực, đa số đơn bào: Đúng. 2. Trùng roi không quang hợp: Sai (có hạt diệp lục quang hợp). 3. Trùng sốt rét phá hồng cầu: Đúng. 4. Tảo quang hợp tạo [[O2]]: Đúng."
       },
       {
         "kind": "answer",

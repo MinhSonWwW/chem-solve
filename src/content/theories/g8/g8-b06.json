@@ -49,13 +49,13 @@
     }
   ],
   "quickCheck": {
-    "prompt": "Cho phương trình: Zn + 2HCl -> ZnCl2 + H2. Khi cho 0,2 mol Zn phản ứng hoàn toàn với dung dịch HCl, số mol khí H2 thu được là bao nhiêu?",
+    "prompt": "Cho phương trình: Zn + 2HCl -> [[ZnCl2]] + [[H2]]. Khi cho 0,2 mol Zn phản ứng hoàn toàn với dung dịch HCl, số mol khí [[H2]] thu được là bao nhiêu?",
     "options": [
       { "id": "opt-1", "text": "0,4 mol", "correct": false },
       { "id": "opt-2", "text": "0,2 mol", "correct": true },
       { "id": "opt-3", "text": "0,1 mol", "correct": false },
       { "id": "opt-4", "text": "0,05 mol", "correct": false }
     ],
-    "explanation": "Chính xác! Theo tỉ lệ phương trình: n(H2) = n(Zn) = 0,2 mol (tỉ lệ 1 : 1)."
+    "explanation": "Chính xác! Theo tỉ lệ phương trình: n([[H2]]) = n(Zn) = 0,2 mol (tỉ lệ 1 : 1)."
   }
 }

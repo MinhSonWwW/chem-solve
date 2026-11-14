@@ -190,7 +190,7 @@
       {
         "kind": "knowledge",
         "title": "Cấu trúc vi thể của phế nang",
-        "body": "Khoảng 700 - 800 triệu phế nang trải rộng diện tích tới 70 - 100 m². Mỗi phế nang chỉ có một lớp tế bào biểu mô mỏng tiếp xúc trực tiếp với mao mạch máu giúp O2 và CO2 khuếch tán gần như tức thì."
+        "body": "Khoảng 700 - 800 triệu phế nang trải rộng diện tích tới 70 - 100 m². Mỗi phế nang chỉ có một lớp tế bào biểu mô mỏng tiếp xúc trực tiếp với mao mạch máu giúp [[O2]] và [[CO2]] khuếch tán gần như tức thì."
       },
       {
         "kind": "answer",
@@ -283,7 +283,7 @@
       "bio-he-ho-hap"
     ],
     "difficulty": 2,
-    "prompt": "Sự trao đổi khí O2 và CO2 giữa phế nang với máu mao mạch phổi diễn ra theo cơ chế vật lí nào?",
+    "prompt": "Sự trao đổi khí [[O2]] và [[CO2]] giữa phế nang với máu mao mạch phổi diễn ra theo cơ chế vật lí nào?",
     "knowledge": [
       "kb-bio-g8-trao-doi-khi-khuech-tan"
     ],
@@ -328,7 +328,7 @@
       {
         "kind": "knowledge",
         "title": "Định luật khuếch tán khí",
-        "body": "O2 có phân áp trong phế nang cao hơn trong máu mao mạch nên tự khuếch tán vào máu; ngược lại CO2 có phân áp trong máu cao hơn trong phế nang nên khuếch tán vào lòng phế nang mà không tốn năng lượng."
+        "body": "[[O2]] có phân áp trong phế nang cao hơn trong máu mao mạch nên tự khuếch tán vào máu; ngược lại [[CO2]] có phân áp trong máu cao hơn trong phế nang nên khuếch tán vào lòng phế nang mà không tốn năng lượng."
       },
       {
         "kind": "answer",
@@ -361,19 +361,19 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "O2 khuếch tán từ tế bào vào máu mao mạch; CO2 khuếch tán từ máu vào tế bào"
+          "label": "[[O2]] khuếch tán từ tế bào vào máu mao mạch; [[CO2]] khuếch tán từ máu vào tế bào"
         },
         {
           "id": "opt-b",
-          "label": "O2 khuếch tán từ máu mao mạch vào tế bào; CO2 khuếch tán từ tế bào vào máu mao mạch"
+          "label": "[[O2]] khuếch tán từ máu mao mạch vào tế bào; [[CO2]] khuếch tán từ tế bào vào máu mao mạch"
         },
         {
           "id": "opt-c",
-          "label": "Cả O2 và CO2 đều cùng khuếch tán từ tế bào ra dòng máu mao mạch"
+          "label": "Cả [[O2]] và [[CO2]] đều cùng khuếch tán từ tế bào ra dòng máu mao mạch"
         },
         {
           "id": "opt-d",
-          "label": "Cả O2 và CO2 đều cùng khuếch tán từ máu mao mạch vào trong tế bào"
+          "label": "Cả [[O2]] và [[CO2]] đều cùng khuếch tán từ máu mao mạch vào trong tế bào"
         }
       ],
       "correctId": "opt-b"
@@ -385,27 +385,27 @@
       },
       {
         "level": 2,
-        "text": "Máu động mạch đỏ tươi đem O2 cấp cho tế bào và thu nhận CO2 biến thành máu đỏ thẫm."
+        "text": "Máu động mạch đỏ tươi đem [[O2]] cấp cho tế bào và thu nhận [[CO2]] biến thành máu đỏ thẫm."
       }
     ],
     "steps": [
       {
         "kind": "identify",
         "title": "Chuyển hóa tại tế bào",
-        "body": "Tế bào hô hấp tiêu thụ O2 liên tục nên nồng độ O2 trong tế bào luôn thấp; đồng thời sinh nhiều CO2 nên nồng độ CO2 trong tế bào luôn cao."
+        "body": "Tế bào hô hấp tiêu thụ [[O2]] liên tục nên nồng độ [[O2]] trong tế bào luôn thấp; đồng thời sinh nhiều [[CO2]] nên nồng độ [[CO2]] trong tế bào luôn cao."
       },
       {
         "kind": "knowledge",
         "title": "Chiều khuếch tán khí ở mô",
-        "body": "Phân áp O2 trong máu mao mạch cao hơn tế bào nên O2 khuếch tán vào tế bào; phân áp CO2 trong tế bào cao hơn máu mao mạch nên CO2 khuếch tán vào máu để đưa về phổi bài tiết."
+        "body": "Phân áp [[O2]] trong máu mao mạch cao hơn tế bào nên [[O2]] khuếch tán vào tế bào; phân áp [[CO2]] trong tế bào cao hơn máu mao mạch nên [[CO2]] khuếch tán vào máu để đưa về phổi bài tiết."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "O2 khuếch tán từ máu vào tế bào; CO2 khuếch tán từ tế bào vào máu."
+        "body": "[[O2]] khuếch tán từ máu vào tế bào; [[CO2]] khuếch tán từ tế bào vào máu."
       }
     ],
-    "finalSolution": "Trao đổi khí ở mô cấp dưỡng khí O2 cho ty thể tạo ATP và thu dọn khí thải CO2 đưa ra ngoài cơ thể.",
+    "finalSolution": "Trao đổi khí ở mô cấp dưỡng khí [[O2]] cho ty thể tạo ATP và thu dọn khí thải [[CO2]] đưa ra ngoài cơ thể.",
     "commonMistakes": [
       {
         "id": "cm-01",
@@ -438,7 +438,7 @@
         },
         {
           "id": "opt-c",
-          "label": "Khí CO liên kết rất chặt chẽ và bền vững với hemoglobin, chiếm chỗ của O2 làm hồng cầu mất khả năng vận chuyển oxygen"
+          "label": "Khí CO liên kết rất chặt chẽ và bền vững với hemoglobin, chiếm chỗ của [[O2]] làm hồng cầu mất khả năng vận chuyển oxygen"
         },
         {
           "id": "opt-d",
@@ -450,11 +450,11 @@
     "hints": [
       {
         "level": 1,
-        "text": "Khí CO cạnh tranh trực tiếp vị trí gắn kết với O2 trên phân tử sắc tố hồng cầu."
+        "text": "Khí CO cạnh tranh trực tiếp vị trí gắn kết với [[O2]] trên phân tử sắc tố hồng cầu."
       },
       {
         "level": 2,
-        "text": "Lực liên kết giữa CO với hemoglobin mạnh gấp hơn 200 lần so với O2, biến hồng cầu thành vô dụng."
+        "text": "Lực liên kết giữa CO với hemoglobin mạnh gấp hơn 200 lần so với [[O2]], biến hồng cầu thành vô dụng."
       }
     ],
     "steps": [
@@ -466,19 +466,19 @@
       {
         "kind": "knowledge",
         "title": "Cơ chế gây ngạt của CO",
-        "body": "CO có ái lực với hemoglobin (Hb) cao gấp hơn 200 lần so với O2, tạo hợp chất rất bền vững cacboxyhemoglobin (HbCO). Điều này làm tê liệt khả năng gắn và vận chuyển O2 của hồng cầu, khiến tế bào não chết ngạt vì thiếu oxygen."
+        "body": "CO có ái lực với hemoglobin (Hb) cao gấp hơn 200 lần so với [[O2]], tạo hợp chất rất bền vững cacboxyhemoglobin (HbCO). Điều này làm tê liệt khả năng gắn và vận chuyển [[O2]] của hồng cầu, khiến tế bào não chết ngạt vì thiếu oxygen."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "CO liên kết rất chặt chẽ với hemoglobin, chiếm chỗ của O2 làm hồng cầu mất khả năng vận chuyển oxygen."
+        "body": "CO liên kết rất chặt chẽ với hemoglobin, chiếm chỗ của [[O2]] làm hồng cầu mất khả năng vận chuyển oxygen."
       }
     ],
     "finalSolution": "Khí CO trong khói than và khói thuốc là chất gây ngạt tế bào cực kì nguy hiểm vì nó trực tiếp vô hiệu hóa huyết sắc tố hồng cầu.",
     "commonMistakes": [
       {
         "id": "cm-01",
-        "message": "Nhầm khí độc CO (carbon monoxide) với khí CO2 (carbon dioxide - sản phẩm thải hô hấp thông thường)."
+        "message": "Nhầm khí độc CO (carbon monoxide) với khí [[CO2]] (carbon dioxide - sản phẩm thải hô hấp thông thường)."
       }
     ]
   },

@@ -13,7 +13,7 @@
       "title": "Các dạng ô nhiễm môi trường phổ biến",
       "content": "Ô nhiễm môi trường xảy ra khi thành phần môi trường bị biến đổi vượt tiêu chuẩn an toàn:",
       "bulletPoints": [
-        "1. Ô nhiễm không khí: Do khí thải công nghiệp, phương tiện giao thông (CO2, SO2, NOx, CO) và bụi mịn (PM2.5), gây mưa acid, phá hủy tầng ozon và các bệnh hô hấp nghiêm trọng.",
+        "1. Ô nhiễm không khí: Do khí thải công nghiệp, phương tiện giao thông ([[CO2]], [[SO2]], NOx, CO) và bụi mịn (PM2.5), gây mưa acid, phá hủy tầng ozon và các bệnh hô hấp nghiêm trọng.",
         "2. Ô nhiễm nước: Do nước thải sinh hoạt, công nghiệp và dư lượng hóa chất nông nghiệp xả thẳng ra nguồn nước; gây hiện tượng phú dưỡng (tảo nở hoa hút cạn oxygen) làm chết hàng loạt thủy hải sản.",
         "3. Ô nhiễm đất: Do lạm dụng thuốc bảo vệ thực vật, phân bón hóa học và rác thải độc hại (pin cũ chứa kim loại nặng chì, thủy ngân) ngấm vào đất và chuỗi thức ăn.",
         "4. Ô nhiễm rác thải nhựa: Nhựa mất hàng trăm năm mới phân hủy, vỡ thành các hạt vi nhựa (microplastics) gây độc cho sinh vật biển và con người qua đường tiêu hóa."
@@ -27,7 +27,7 @@
       "title": "Biến đổi khí hậu & Hiệu ứng nhà kính",
       "content": "Sự gia tăng khí nhà kính đe dọa sinh quyển toàn cầu:",
       "bulletPoints": [
-        "Hiệu ứng nhà kính: Các khí nhà kính (chủ yếu là CO2 và CH4) tạo thành lớp màng giữ nhiệt bức xạ hồng ngoại của Trái Đất không thể thoát ra ngoài vũ trụ, làm nhiệt độ bề mặt Trái Đất tăng lên.",
+        "Hiệu ứng nhà kính: Các khí nhà kính (chủ yếu là [[CO2]] và [[CH4]]) tạo thành lớp màng giữ nhiệt bức xạ hồng ngoại của Trái Đất không thể thoát ra ngoài vũ trụ, làm nhiệt độ bề mặt Trái Đất tăng lên.",
         "Hậu quả toàn cầu: Trái Đất nóng lên làm băng ở hai cực và các rặng núi cao tan nhanh, mực nước biển dâng cao đe dọa ngập lụt các vùng đồng bằng trũng thấp ven biển; gia tăng các hiện tượng thời tiết cực đoan (siêu bão, lũ lụt, hạn hán khốc liệt)."
       ]
     },
@@ -49,17 +49,17 @@
     "options": [
       {
         "id": "opt-1",
-        "text": "Khí carbon dioxide (CO2)",
+        "text": "Khí carbon dioxide ([[CO2]])",
         "correct": true
       },
       {
         "id": "opt-2",
-        "text": "Khí oxygen (O2)",
+        "text": "Khí oxygen ([[O2]])",
         "correct": false
       },
       {
         "id": "opt-3",
-        "text": "Khí nitrogen (N2)",
+        "text": "Khí nitrogen ([[N2]])",
         "correct": false
       },
       {
@@ -68,6 +68,6 @@
         "correct": false
       }
     ],
-    "explanation": "Đốt cháy nhiên liệu hóa thạch trong các nhà máy nhiệt điện, động cơ xe cộ xả thải khối lượng khổng lồ khí CO2 vào khí quyển, làm dày thêm lớp khí giữ nhiệt và gây ra hiện tượng hiệu ứng nhà kính, làm Trái Đất nóng lên toàn cầu."
+    "explanation": "Đốt cháy nhiên liệu hóa thạch trong các nhà máy nhiệt điện, động cơ xe cộ xả thải khối lượng khổng lồ khí [[CO2]] vào khí quyển, làm dày thêm lớp khí giữ nhiệt và gây ra hiện tượng hiệu ứng nhà kính, làm Trái Đất nóng lên toàn cầu."
   }
 }

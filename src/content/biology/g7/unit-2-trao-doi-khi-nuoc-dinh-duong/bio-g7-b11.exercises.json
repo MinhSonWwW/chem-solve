@@ -162,7 +162,7 @@
         },
         {
           "id": "opt-c",
-          "label": "Vận chuyển khí O2 và chất dinh dưỡng đến từng tế bào, đồng thời thu nhận CO2 và chất thải đến cơ quan bài tiết"
+          "label": "Vận chuyển khí [[O2]] và chất dinh dưỡng đến từng tế bào, đồng thời thu nhận [[CO2]] và chất thải đến cơ quan bài tiết"
         },
         {
           "id": "opt-d",
@@ -190,15 +190,15 @@
       {
         "kind": "knowledge",
         "title": "Chức năng vận chuyển của máu",
-        "body": "Máu mang O2 và dưỡng chất đến mô tế bào; đưa CO2 và sản phẩm chuyển hóa đến cơ quan thải (phổi, thận, da)."
+        "body": "Máu mang [[O2]] và dưỡng chất đến mô tế bào; đưa [[CO2]] và sản phẩm chuyển hóa đến cơ quan thải (phổi, thận, da)."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Vận chuyển khí O2 và chất dinh dưỡng đến từng tế bào, đồng thời thu nhận CO2 và chất thải đến cơ quan bài tiết."
+        "body": "Vận chuyển khí [[O2]] và chất dinh dưỡng đến từng tế bào, đồng thời thu nhận [[CO2]] và chất thải đến cơ quan bài tiết."
       }
     ],
-    "finalSolution": "Hệ tuần hoàn thực hiện vận chuyển khí O2, chất dinh dưỡng đến tế bào và thu nhận chất thải chuyển đến cơ quan bài tiết.",
+    "finalSolution": "Hệ tuần hoàn thực hiện vận chuyển khí [[O2]], chất dinh dưỡng đến tế bào và thu nhận chất thải chuyển đến cơ quan bài tiết.",
     "commonMistakes": [
       {
         "id": "cm-01",

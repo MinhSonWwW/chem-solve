@@ -12,7 +12,7 @@
       "options": [
         {
           "id": "a",
-          "label": "Carbon dioxide (CO2) và Methane (CH4)"
+          "label": "Carbon dioxide ([[CO2]]) và Methane ([[CH4]])"
         },
         {
           "id": "b",
@@ -20,11 +20,11 @@
         },
         {
           "id": "c",
-          "label": "Oxygen (O2)"
+          "label": "Oxygen ([[O2]])"
         },
         {
           "id": "d",
-          "label": "Nitrogen (N2)"
+          "label": "Nitrogen ([[N2]])"
         }
       ],
       "correctId": "a"
@@ -36,7 +36,7 @@
       },
       {
         "level": 2,
-        "text": "CO2 và CH4 có khả năng giữ lại bức xạ nhiệt của Mặt Trời không cho thoát ra ngoài không gian."
+        "text": "[[CO2]] và [[CH4]] có khả năng giữ lại bức xạ nhiệt của Mặt Trời không cho thoát ra ngoài không gian."
       }
     ],
     "steps": [
@@ -48,19 +48,19 @@
       {
         "kind": "knowledge",
         "title": "Cơ chế",
-        "body": "CO2 là khí nhà kính phổ biến nhất do con người thải ra. CH4 (methane) cũng có khả năng giữ nhiệt rất mạnh."
+        "body": "[[CO2]] là khí nhà kính phổ biến nhất do con người thải ra. [[CH4]] (methane) cũng có khả năng giữ nhiệt rất mạnh."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Carbon dioxide (CO2) và Methane (CH4)."
+        "body": "Carbon dioxide ([[CO2]]) và Methane ([[CH4]])."
       }
     ],
-    "finalSolution": "Khí CO2 và CH4 là thủ phạm hàng đầu gây hiệu ứng nhà kính và biến đổi khí hậu toàn cầu.",
+    "finalSolution": "Khí [[CO2]] và [[CH4]] là thủ phạm hàng đầu gây hiệu ứng nhà kính và biến đổi khí hậu toàn cầu.",
     "commonMistakes": [
       {
         "id": "confuse-ozone",
-        "message": "O3 bảo vệ tầng đối lưu khỏi tia cực tím; CO2 và CH4 mới là khí nhà kính chính gây nóng lên toàn cầu."
+        "message": "[[O3]] bảo vệ tầng đối lưu khỏi tia cực tím; [[CO2]] và [[CH4]] mới là khí nhà kính chính gây nóng lên toàn cầu."
       }
     ]
   },
@@ -71,17 +71,17 @@
       "carbon-cycle-environment"
     ],
     "difficulty": 1,
-    "prompt": "Phân loại các quá trình sau trong chu trình Carbon vào nhóm \"Làm tăng khí CO2\" hoặc \"Làm giảm khí CO2 trong khí quyển\".",
+    "prompt": "Phân loại các quá trình sau trong chu trình Carbon vào nhóm \"Làm tăng khí [[CO2]]\" hoặc \"Làm giảm khí [[CO2]] trong khí quyển\".",
     "answer": {
       "kind": "sort",
       "buckets": [
         {
           "id": "increase",
-          "label": "Quá trình làm tăng CO2"
+          "label": "Quá trình làm tăng [[CO2]]"
         },
         {
           "id": "decrease",
-          "label": "Quá trình làm giảm CO2"
+          "label": "Quá trình làm giảm [[CO2]]"
         }
       ],
       "items": [
@@ -102,7 +102,7 @@
         },
         {
           "id": "c4",
-          "label": "Hòa tan CO2 vào nước biển tạo muối carbonate",
+          "label": "Hòa tan [[CO2]] vào nước biển tạo muối carbonate",
           "bucketId": "decrease"
         },
         {
@@ -120,23 +120,23 @@
     "hints": [
       {
         "level": 1,
-        "text": "Đốt cháy, hô hấp, cháy rừng thải ra CO2 -> Làm tăng."
+        "text": "Đốt cháy, hô hấp, cháy rừng thải ra [[CO2]] -> Làm tăng."
       },
       {
         "level": 2,
-        "text": "Quang hợp cây xanh, hòa tan biển, trồng rừng hấp thụ CO2 -> Làm giảm."
+        "text": "Quang hợp cây xanh, hòa tan biển, trồng rừng hấp thụ [[CO2]] -> Làm giảm."
       }
     ],
     "steps": [
       {
         "kind": "identify",
         "title": "Phân loại",
-        "body": "Tách 6 quá trình theo chiều hướng tác động nồng độ CO2."
+        "body": "Tách 6 quá trình theo chiều hướng tác động nồng độ [[CO2]]."
       },
       {
         "kind": "knowledge",
         "title": "Chu trình carbon",
-        "body": "Tăng CO2: đốt nhiên liệu, hô hấp, cháy rừng. Giảm CO2: quang hợp, hòa tan vào đại dương, trồng rừng."
+        "body": "Tăng [[CO2]]: đốt nhiên liệu, hô hấp, cháy rừng. Giảm [[CO2]]: quang hợp, hòa tan vào đại dương, trồng rừng."
       },
       {
         "kind": "answer",
@@ -144,7 +144,7 @@
         "body": "Tăng: c1, c3, c5. Giảm: c2, c4, c6."
       }
     ],
-    "finalSolution": "Tăng CO2: đốt nhiên liệu, hô hấp, cháy rừng. Giảm CO2: quang hợp, hòa tan biển, trồng rừng.",
+    "finalSolution": "Tăng [[CO2]]: đốt nhiên liệu, hô hấp, cháy rừng. Giảm [[CO2]]: quang hợp, hòa tan biển, trồng rừng.",
     "commonMistakes": []
   },
   {
@@ -184,7 +184,7 @@
       },
       {
         "level": 2,
-        "text": "Trồng cây xanh giúp hấp thụ bớt khí CO2 qua quá trình quang hợp."
+        "text": "Trồng cây xanh giúp hấp thụ bớt khí [[CO2]] qua quá trình quang hợp."
       }
     ],
     "steps": [
@@ -235,7 +235,7 @@
         },
         {
           "id": "s4",
-          "text": "Acid hóa đại dương do nồng độ CO2 hòa tan tăng cao đe dọa trực tiếp các rạn san hô và sinh vật biển.",
+          "text": "Acid hóa đại dương do nồng độ [[CO2]] hòa tan tăng cao đe dọa trực tiếp các rạn san hô và sinh vật biển.",
           "correct": true
         }
       ]

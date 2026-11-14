@@ -121,7 +121,7 @@
       {
         "kind": "knowledge",
         "title": "Kiến thức SGK",
-        "body": "Khí khổng ở lớp biểu bì lá thực hiện điều tiết khí CO2, O2 và hơi nước."
+        "body": "Khí khổng ở lớp biểu bì lá thực hiện điều tiết khí [[CO2]], [[O2]] và hơi nước."
       },
       {
         "kind": "answer",
@@ -254,7 +254,7 @@
       {
         "kind": "knowledge",
         "title": "Đặc điểm của giun đất",
-        "body": "Giun đất không có phổi hay mang, khí O2 và CO2 khuếch tán trực tiếp qua lớp da mỏng ẩm ướt có nhiều mao mạch."
+        "body": "Giun đất không có phổi hay mang, khí [[O2]] và [[CO2]] khuếch tán trực tiếp qua lớp da mỏng ẩm ướt có nhiều mao mạch."
       },
       {
         "kind": "answer",
@@ -302,7 +302,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Lá mang của cá hấp thụ khí O2 hòa tan trong nước. Bể nhỏ ít trao đổi với không khí dễ thiếu O2."
+        "text": "Lá mang của cá hấp thụ khí [[O2]] hòa tan trong nước. Bể nhỏ ít trao đổi với không khí dễ thiếu [[O2]]."
       },
       {
         "level": 2,
@@ -313,17 +313,17 @@
       {
         "kind": "identify",
         "title": "Mục đích sục khí cho cá",
-        "body": "Cá hô hấp bằng mang lấy O2 hòa tan."
+        "body": "Cá hô hấp bằng mang lấy [[O2]] hòa tan."
       },
       {
         "kind": "knowledge",
         "title": "Hô hấp qua mang",
-        "body": "Máy sục bọt khí làm tăng diện tích tiếp xúc giữa nước và không khí, hòa tan nhiều O2 vào nước cho mang cá hấp thụ."
+        "body": "Máy sục bọt khí làm tăng diện tích tiếp xúc giữa nước và không khí, hòa tan nhiều [[O2]] vào nước cho mang cá hấp thụ."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Tăng lượng khí O2 hòa tan trong nước."
+        "body": "Tăng lượng khí [[O2]] hòa tan trong nước."
       }
     ],
     "finalSolution": "Máy sục khí bổ sung lượng Oxygen hòa tan giúp cá không bị ngạt khí trong bể kín.",
@@ -429,7 +429,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Giun đất hô hấp lấy O2 từ các khe đất xốp. Khi đất ngập nước thì không còn O2 trong khe đất."
+        "text": "Giun đất hô hấp lấy [[O2]] từ các khe đất xốp. Khi đất ngập nước thì không còn [[O2]] trong khe đất."
       },
       {
         "level": 2,
@@ -445,7 +445,7 @@
       {
         "kind": "knowledge",
         "title": "Hô hấp qua da của giun đất",
-        "body": "Giun đất cần O2 trong không khí khuếch tán qua da ẩm. Khi đất ngập úng, lượng O2 hòa tan cạn kiệt, giun phải chui lên mặt đất thoáng để hô hấp."
+        "body": "Giun đất cần [[O2]] trong không khí khuếch tán qua da ẩm. Khi đất ngập úng, lượng [[O2]] hòa tan cạn kiệt, giun phải chui lên mặt đất thoáng để hô hấp."
       },
       {
         "kind": "answer",
@@ -473,7 +473,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Ban đêm cây không quang hợp mà chỉ hô hấp, hút khí O2 và thải nhiều khí CO2 làm không khí phòng ngủ bị thiếu dưỡng khí gây ngạt thở"
+          "label": "Ban đêm cây không quang hợp mà chỉ hô hấp, hút khí [[O2]] và thải nhiều khí [[CO2]] làm không khí phòng ngủ bị thiếu dưỡng khí gây ngạt thở"
         },
         {
           "id": "opt-b",
@@ -493,11 +493,11 @@
     "hints": [
       {
         "level": 1,
-        "text": "Trong bóng tối, cây xanh chỉ hô hấp (tiêu thụ O2 và sinh ra CO2) như động vật."
+        "text": "Trong bóng tối, cây xanh chỉ hô hấp (tiêu thụ [[O2]] và sinh ra [[CO2]]) như động vật."
       },
       {
         "level": 2,
-        "text": "Phòng kín nhiều cây xanh sẽ thiếu O2 và thừa CO2 gây nguy hiểm cho giấc ngủ."
+        "text": "Phòng kín nhiều cây xanh sẽ thiếu [[O2]] và thừa [[CO2]] gây nguy hiểm cho giấc ngủ."
       }
     ],
     "steps": [
@@ -509,15 +509,15 @@
       {
         "kind": "knowledge",
         "title": "Hô hấp của thực vật ban đêm",
-        "body": "Cây xanh hô hấp hút khí O2 và thải ra CO2. Trong phòng ngủ kín, nồng độ O2 giảm mạnh và CO2 tăng cao khiến người ngủ bị ngạt, mệt mỏi, thậm chí nguy hiểm tính mạng."
+        "body": "Cây xanh hô hấp hút khí [[O2]] và thải ra [[CO2]]. Trong phòng ngủ kín, nồng độ [[O2]] giảm mạnh và [[CO2]] tăng cao khiến người ngủ bị ngạt, mệt mỏi, thậm chí nguy hiểm tính mạng."
       },
       {
         "kind": "answer",
         "title": "Chọn phương án",
-        "body": "Đáp án chính xác giải thích chuẩn xác nguy cơ thiếu khí O2."
+        "body": "Đáp án chính xác giải thích chuẩn xác nguy cơ thiếu khí [[O2]]."
       }
     ],
-    "finalSolution": "Ban đêm cây xanh hút O2 và thải CO2, do đó không để nhiều cây trong phòng ngủ kín cửa.",
+    "finalSolution": "Ban đêm cây xanh hút [[O2]] và thải [[CO2]], do đó không để nhiều cây trong phòng ngủ kín cửa.",
     "commonMistakes": []
   }
 ]

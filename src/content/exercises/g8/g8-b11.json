@@ -44,11 +44,11 @@
     "hints": [
       {
         "level": 1,
-        "text": "Phản ứng trao đổi tạo ra muối Barium sulfate (BaSO4)."
+        "text": "Phản ứng trao đổi tạo ra muối Barium sulfate ([[BaSO4]])."
       },
       {
         "level": 2,
-        "text": "BaSO4 là chất kết tủa màu trắng đặc trưng, không tan trong nước và acid."
+        "text": "[[BaSO4]] là chất kết tủa màu trắng đặc trưng, không tan trong nước và acid."
       }
     ],
     "steps": [
@@ -60,18 +60,18 @@
       {
         "kind": "equation",
         "title": "Viết phương trình hóa học",
-        "body": "BaCl2 + Na2SO4 -> BaSO4 (kết tủa trắng) + 2NaCl."
+        "body": "[[BaCl2]] + [[Na2SO4]] -> [[BaSO4]] (kết tủa trắng) + 2NaCl."
       },
       {
         "kind": "answer",
         "title": "Kết luận hiện tượng",
-        "body": "Xuất hiện kết tủa trắng của BaSO4."
+        "body": "Xuất hiện kết tủa trắng của [[BaSO4]]."
       }
     ],
     "commonMistakes": [
       {
         "id": "cm-nacl-precipitate",
-        "message": "Nghĩ NaCl kết tủa. Muối ăn NaCl tan rất tốt trong nước, kết tủa trắng là BaSO4."
+        "message": "Nghĩ NaCl kết tủa. Muối ăn NaCl tan rất tốt trong nước, kết tủa trắng là [[BaSO4]]."
       }
     ],
     "finalSolution": "Xuất hiện kết tủa trắng không tan trong acid"
@@ -97,18 +97,18 @@
     "hints": [
       {
         "level": 1,
-        "text": "Gồm cation Ca (hóa trị II) và gốc anion CO3 (hóa trị II)."
+        "text": "Gồm cation Ca (hóa trị II) và gốc anion [[CO3]] (hóa trị II)."
       },
       {
         "level": 2,
-        "text": "Vì cùng hóa trị II nên tỉ lệ là 1:1 => CaCO3."
+        "text": "Vì cùng hóa trị II nên tỉ lệ là 1:1 => [[CaCO3]]."
       }
     ],
     "steps": [
       {
         "kind": "identify",
         "title": "Xác định hóa trị",
-        "body": "Calcium có hóa trị II, gốc carbonate (CO3) có hóa trị II."
+        "body": "Calcium có hóa trị II, gốc carbonate ([[CO3]]) có hóa trị II."
       },
       {
         "kind": "knowledge",
@@ -118,10 +118,10 @@
       {
         "kind": "answer",
         "title": "Lập công thức",
-        "body": "Công thức là CaCO3."
+        "body": "Công thức là [[CaCO3]]."
       }
     ],
-    "finalSolution": "CaCO3"
+    "finalSolution": "[[CaCO3]]"
   },
   {
     "id": "g8-b11-tf-001",
@@ -144,7 +144,7 @@
         },
         {
           "id": "s2",
-          "text": "Tất cả các muối nitrate (gốc -NO3) đều tan trong nước.",
+          "text": "Tất cả các muối nitrate (gốc -[[NO3]]) đều tan trong nước.",
           "correct": true
         },
         {
@@ -162,7 +162,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Nhớ quy tắc vàng: muối Na, K và gốc NO3 luôn tan."
+        "text": "Nhớ quy tắc vàng: muối Na, K và gốc [[NO3]] luôn tan."
       },
       {
         "level": 2,
@@ -173,7 +173,7 @@
       {
         "kind": "knowledge",
         "title": "Quy tắc tính tan",
-        "body": "Muối gốc Na, K và NO3 luôn tan tốt trong nước (s1, s2 đúng)."
+        "body": "Muối gốc Na, K và [[NO3]] luôn tan tốt trong nước (s1, s2 đúng)."
       },
       {
         "kind": "identify",
@@ -216,17 +216,17 @@
         },
         {
           "id": "kno3",
-          "label": "KNO3 (Potassium nitrate)",
+          "label": "[[KNO3]] (Potassium nitrate)",
           "bucketId": "soluble"
         },
         {
           "id": "cacl2",
-          "label": "CaCl2 (Calcium chloride)",
+          "label": "[[CaCl2]] (Calcium chloride)",
           "bucketId": "soluble"
         },
         {
           "id": "baso4",
-          "label": "BaSO4 (Barium sulfate)",
+          "label": "[[BaSO4]] (Barium sulfate)",
           "bucketId": "insoluble"
         },
         {
@@ -236,7 +236,7 @@
         },
         {
           "id": "caco3",
-          "label": "CaCO3 (Calcium carbonate)",
+          "label": "[[CaCO3]] (Calcium carbonate)",
           "bucketId": "insoluble"
         }
       ]
@@ -244,11 +244,11 @@
     "hints": [
       {
         "level": 1,
-        "text": "Hầu hết muối Na, K và gốc nitrate NO3 đều tan tốt."
+        "text": "Hầu hết muối Na, K và gốc nitrate [[NO3]] đều tan tốt."
       },
       {
         "level": 2,
-        "text": "BaSO4, AgCl, CaCO3 là những chất kết tủa không tan trong nước."
+        "text": "[[BaSO4]], AgCl, [[CaCO3]] là những chất kết tủa không tan trong nước."
       }
     ],
     "steps": [
@@ -260,7 +260,7 @@
       {
         "kind": "knowledge",
         "title": "Phân loại",
-        "body": "Muối tan: NaCl, KNO3, CaCl2. Muối không tan: BaSO4, AgCl, CaCO3."
+        "body": "Muối tan: NaCl, [[KNO3]], [[CaCl2]]. Muối không tan: [[BaSO4]], AgCl, [[CaCO3]]."
       },
       {
         "kind": "answer",
@@ -268,7 +268,7 @@
         "body": "Đã phân loại đúng 6 muối vào 2 nhóm."
       }
     ],
-    "finalSolution": "Muối tan: **NaCl, KNO3, CaCl2** · Muối kết tủa: **BaSO4, AgCl, CaCO3**.",
+    "finalSolution": "Muối tan: **NaCl, [[KNO3]], [[CaCl2]]** · Muối kết tủa: **[[BaSO4]], AgCl, [[CaCO3]]**.",
     "commonMistakes": []
   },
   {
@@ -283,7 +283,7 @@
       "kind": "match",
       "pairs": [
         {
-          "left": "BaSO4 (Barium sulfate)",
+          "left": "[[BaSO4]] (Barium sulfate)",
           "right": "Kết tủa trắng (không tan trong acid mạnh)"
         },
         {
@@ -291,11 +291,11 @@
           "right": "Kết tủa trắng (hóa đen ngoài ánh sáng)"
         },
         {
-          "left": "Cu(OH)2 (Copper(II) hydroxide)",
+          "left": "[[Cu(OH)2]] (Copper(II) hydroxide)",
           "right": "Kết tủa màu xanh lam"
         },
         {
-          "left": "Fe(OH)3 (Iron(III) hydroxide)",
+          "left": "[[Fe(OH)3]] (Iron(III) hydroxide)",
           "right": "Kết tủa màu nâu đỏ"
         }
       ]
@@ -307,7 +307,7 @@
       },
       {
         "level": 2,
-        "text": "BaSO4 và AgCl đều là kết tủa trắng, nhưng AgCl nhạy cảm ánh sáng bị sẫm màu."
+        "text": "[[BaSO4]] và AgCl đều là kết tủa trắng, nhưng AgCl nhạy cảm ánh sáng bị sẫm màu."
       }
     ],
     "steps": [
@@ -319,7 +319,7 @@
       {
         "kind": "knowledge",
         "title": "Đặc điểm màu",
-        "body": "BaSO4: trắng · AgCl: trắng hóa đen ngoài ánh sáng · Cu(OH)2: xanh lam · Fe(OH)3: nâu đỏ."
+        "body": "[[BaSO4]]: trắng · AgCl: trắng hóa đen ngoài ánh sáng · [[Cu(OH)2]]: xanh lam · [[Fe(OH)3]]: nâu đỏ."
       },
       {
         "kind": "answer",
@@ -327,7 +327,7 @@
         "body": "Ghép đúng từng kết tủa với màu sắc."
       }
     ],
-    "finalSolution": "BaSO4 ↔ Trắng · AgCl ↔ Trắng hóa đen · Cu(OH)2 ↔ Xanh lam · Fe(OH)3 ↔ Nâu đỏ.",
+    "finalSolution": "[[BaSO4]] ↔ Trắng · AgCl ↔ Trắng hóa đen · [[Cu(OH)2]] ↔ Xanh lam · [[Fe(OH)3]] ↔ Nâu đỏ.",
     "commonMistakes": []
   }
 ]

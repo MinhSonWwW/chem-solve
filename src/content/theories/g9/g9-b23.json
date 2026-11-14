@@ -46,7 +46,7 @@
     }
   ],
   "quickCheck": {
-    "prompt": "Phản ứng hóa học ĐẶC TRƯNG của Methane (CH4) và các hydrocarbon no (alkane) là gì?",
+    "prompt": "Phản ứng hóa học ĐẶC TRƯNG của Methane ([[CH4]]) và các hydrocarbon no (alkane) là gì?",
     "options": [
       { "id": "opt-1", "text": "Phản ứng cộng", "correct": false },
       { "id": "opt-2", "text": "Phản ứng thế", "correct": true },

@@ -89,7 +89,7 @@
         },
         {
           "id": "opt-b",
-          "label": "Nước và khí Carbon dioxide (CO2)"
+          "label": "Nước và khí Carbon dioxide ([[CO2]])"
         },
         {
           "id": "opt-c",
@@ -97,7 +97,7 @@
         },
         {
           "id": "opt-d",
-          "label": "Glucose và khí Oxygen (O2)"
+          "label": "Glucose và khí Oxygen ([[O2]])"
         }
       ],
       "correctId": "opt-d"
@@ -169,7 +169,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Quá trình này oxy hóa phân giải glucose giải phóng CO2, nước và năng lượng."
+        "text": "Quá trình này oxy hóa phân giải glucose giải phóng [[CO2]], nước và năng lượng."
       },
       {
         "level": 2,
@@ -372,7 +372,7 @@
       {
         "kind": "identify",
         "title": "Tìm nhận định sai",
-        "body": "Khẳng định 'cây chỉ hô hấp ban đêm' là sai lầm phổ biến. Ban ngày cây vẫn hô hấp liên tục, nhưng cường độ quang hợp mạnh hơn nên lượng O2 thải ra lấn át lượng O2 hấp thụ."
+        "body": "Khẳng định 'cây chỉ hô hấp ban đêm' là sai lầm phổ biến. Ban ngày cây vẫn hô hấp liên tục, nhưng cường độ quang hợp mạnh hơn nên lượng [[O2]] thải ra lấn át lượng [[O2]] hấp thụ."
       },
       {
         "kind": "knowledge",
@@ -418,18 +418,18 @@
         },
         {
           "left": "Khí thải ra trong quang hợp",
-          "right": "Khí Oxygen (O2)"
+          "right": "Khí Oxygen ([[O2]])"
         },
         {
           "left": "Khí thải ra trong hô hấp",
-          "right": "Khí Carbon dioxide (CO2)"
+          "right": "Khí Carbon dioxide ([[CO2]])"
         }
       ]
     },
     "hints": [
       {
         "level": 1,
-        "text": "Lục lạp gắn liền với O2; Ty thể gắn liền với CO2."
+        "text": "Lục lạp gắn liền với [[O2]]; Ty thể gắn liền với [[CO2]]."
       },
       {
         "level": 2,
@@ -440,7 +440,7 @@
       {
         "kind": "identify",
         "title": "Đối chiếu 4 cặp tiêu chí",
-        "body": "Quang hợp: diễn ra ở lục lạp, nhả O2. Hô hấp: diễn ra ở ty thể, nhả CO2."
+        "body": "Quang hợp: diễn ra ở lục lạp, nhả [[O2]]. Hô hấp: diễn ra ở ty thể, nhả [[CO2]]."
       },
       {
         "kind": "knowledge",
@@ -473,7 +473,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Vì thiếu O2 làm tế bào não chuyển sang tự quang hợp phá hủy tế bào"
+          "label": "Vì thiếu [[O2]] làm tế bào não chuyển sang tự quang hợp phá hủy tế bào"
         },
         {
           "id": "opt-b",
@@ -481,11 +481,11 @@
         },
         {
           "id": "opt-c",
-          "label": "Vì tế bào não tiêu thụ rất nhiều năng lượng; thiếu O2 làm hô hấp tế bào ngừng trệ, thiếu hụt ATP khiến tế bào não chết dần"
+          "label": "Vì tế bào não tiêu thụ rất nhiều năng lượng; thiếu [[O2]] làm hô hấp tế bào ngừng trệ, thiếu hụt ATP khiến tế bào não chết dần"
         },
         {
           "id": "opt-d",
-          "label": "Vì thiếu O2 làm máu trong não chuyển sang thể rắn làm tắc nghẽn hoàn toàn"
+          "label": "Vì thiếu [[O2]] làm máu trong não chuyển sang thể rắn làm tắc nghẽn hoàn toàn"
         }
       ],
       "correctId": "opt-c"
@@ -504,12 +504,12 @@
       {
         "kind": "identify",
         "title": "Vai trò của O2 đối với tế bào não",
-        "body": "Não bộ tiêu tốn ~20% lượng O2 toàn cơ thể. Không có O2, hô hấp tế bào không tạo đủ ATP, màng tế bào mất kiểm soát và tế bào não hoại tử nhanh chóng."
+        "body": "Não bộ tiêu tốn ~20% lượng [[O2]] toàn cơ thể. Không có [[O2]], hô hấp tế bào không tạo đủ ATP, màng tế bào mất kiểm soát và tế bào não hoại tử nhanh chóng."
       },
       {
         "kind": "knowledge",
         "title": "Kiến thức cốt lõi SGK KHTN 7",
-        "body": "Thiếu O2 làm tê liệt quá trình hô hấp tế bào tạo ATP, dẫn tới hoại tử tế bào thần kinh não."
+        "body": "Thiếu [[O2]] làm tê liệt quá trình hô hấp tế bào tạo ATP, dẫn tới hoại tử tế bào thần kinh não."
       },
       {
         "kind": "answer",
@@ -517,7 +517,7 @@
         "body": "Đáp án chính xác giải thích chuẩn xác bản chất sinh lí học."
       }
     ],
-    "finalSolution": "Thiếu O2 làm tê liệt quá trình hô hấp tế bào tạo ATP, dẫn tới hoại tử tế bào thần kinh não.",
+    "finalSolution": "Thiếu [[O2]] làm tê liệt quá trình hô hấp tế bào tạo ATP, dẫn tới hoại tử tế bào thần kinh não.",
     "commonMistakes": []
   }
 ]

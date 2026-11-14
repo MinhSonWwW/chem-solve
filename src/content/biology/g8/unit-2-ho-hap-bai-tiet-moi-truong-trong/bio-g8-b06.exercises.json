@@ -36,7 +36,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Phổi bài tiết CO2, da tiết mồ hôi, còn các chất thải nitrogen (ure, acid uric) được lọc qua nước tiểu."
+        "text": "Phổi bài tiết [[CO2]], da tiết mồ hôi, còn các chất thải nitrogen (ure, acid uric) được lọc qua nước tiểu."
       },
       {
         "level": 2,
@@ -47,7 +47,7 @@
       {
         "kind": "identify",
         "title": "Các cơ quan bài tiết",
-        "body": "Cơ thể có các cơ quan bài tiết: phổi (khí CO2), da (mồ hôi) và thận (nước tiểu)."
+        "body": "Cơ thể có các cơ quan bài tiết: phổi (khí [[CO2]]), da (mồ hôi) và thận (nước tiểu)."
       },
       {
         "kind": "knowledge",

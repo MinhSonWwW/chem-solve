@@ -12,7 +12,7 @@
       "options": [
         {
           "id": "a",
-          "label": "Dung dịch Bromine (Br2)"
+          "label": "Dung dịch Bromine ([[Br2]])"
         },
         {
           "id": "b",
@@ -20,11 +20,11 @@
         },
         {
           "id": "c",
-          "label": "Dung dịch Iodine (I2) – cho màu xanh tím đặc trưng"
+          "label": "Dung dịch Iodine ([[I2]]) – cho màu xanh tím đặc trưng"
         },
         {
           "id": "d",
-          "label": "Dung dịch AgNO3 trong NH3"
+          "label": "Dung dịch [[AgNO3]] trong [[NH3]]"
         }
       ],
       "correctId": "c"
@@ -53,10 +53,10 @@
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Dung dịch Iodine (I2)."
+        "body": "Dung dịch Iodine ([[I2]])."
       }
     ],
-    "finalSolution": "Dung dịch Iodine (I2) tác dụng với tinh bột tạo màu xanh tím đặc trưng.",
+    "finalSolution": "Dung dịch Iodine ([[I2]]) tác dụng với tinh bột tạo màu xanh tím đặc trưng.",
     "commonMistakes": []
   },
   {
@@ -72,19 +72,19 @@
       "options": [
         {
           "id": "a",
-          "label": "Glucose (C6H12O6)"
+          "label": "Glucose ([[C6H12O6]])"
         },
         {
           "id": "b",
-          "label": "Acetic acid (CH3COOH)"
+          "label": "Acetic acid ([[CH3COOH]])"
         },
         {
           "id": "c",
-          "label": "Saccharose (C12H22O11)"
+          "label": "Saccharose ([[C12H22O11]])"
         },
         {
           "id": "d",
-          "label": "Ethylic alcohol (C2H5OH)"
+          "label": "Ethylic alcohol ([[C2H5OH]])"
         }
       ],
       "correctId": "a"
@@ -96,7 +96,7 @@
       },
       {
         "level": 2,
-        "text": "PTHH: (C6H10O5)n + n H2O --acid, to--> n C6H12O6."
+        "text": "PTHH: ([[C6H10O5]])n + n [[H2O]] --acid, to--> n [[C6H12O6]]."
       }
     ],
     "steps": [
@@ -108,15 +108,15 @@
       {
         "kind": "knowledge",
         "title": "Phương trình",
-        "body": "(C6H10O5)n + nH2O -> nC6H12O6 (glucose)."
+        "body": "([[C6H10O5]])n + nH2O -> nC6H12O6 (glucose)."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Glucose (C6H12O6)."
+        "body": "Glucose ([[C6H12O6]])."
       }
     ],
-    "finalSolution": "Thủy phân hoàn toàn tinh bột hay cellulose đều thu được Glucose (C6H12O6).",
+    "finalSolution": "Thủy phân hoàn toàn tinh bột hay cellulose đều thu được Glucose ([[C6H12O6]]).",
     "commonMistakes": []
   },
   {
@@ -210,7 +210,7 @@
       "statements": [
         {
           "id": "s1",
-          "text": "Tinh bột và cellulose đều có công thức chung (C6H10O5)n nhưng không phải là đồng phân của nhau vì giá trị n rất khác nhau.",
+          "text": "Tinh bột và cellulose đều có công thức chung ([[C6H10O5]])n nhưng không phải là đồng phân của nhau vì giá trị n rất khác nhau.",
           "correct": true
         },
         {
@@ -237,7 +237,7 @@
       },
       {
         "level": 2,
-        "text": "6n CO2 + 5n H2O --quang hợp--> (C6H10O5)n + 6n O2."
+        "text": "6n [[CO2]] + 5n [[H2O]] --quang hợp--> ([[C6H10O5]])n + 6n [[O2]]."
       }
     ],
     "steps": [
@@ -249,7 +249,7 @@
       {
         "kind": "knowledge",
         "title": "Kiến thức",
-        "body": "S1: Đúng (n khác nhau). S2: Đúng (quang hợp). S3: Sai (chỉ tinh bột có màu xanh với I2). S4: Đúng (làm giấy)."
+        "body": "S1: Đúng (n khác nhau). S2: Đúng (quang hợp). S3: Sai (chỉ tinh bột có màu xanh với [[I2]]). S4: Đúng (làm giấy)."
       },
       {
         "kind": "answer",
@@ -273,11 +273,11 @@
       "pairs": [
         {
           "left": "Hồ tinh bột",
-          "right": "Tác dụng với dung dịch Iodine (I2) cho hợp chất màu xanh tím đặc trưng"
+          "right": "Tác dụng với dung dịch Iodine ([[I2]]) cho hợp chất màu xanh tím đặc trưng"
         },
         {
           "left": "Glucose",
-          "right": "Tác dụng với dung dịch AgNO3 trong NH3 đun nóng tạo lớp bạc sáng bóng (tráng gương)"
+          "right": "Tác dụng với dung dịch [[AgNO3]] trong [[NH3]] đun nóng tạo lớp bạc sáng bóng (tráng gương)"
         },
         {
           "left": "Cellulose",
@@ -308,7 +308,7 @@
       {
         "kind": "knowledge",
         "title": "Hiện tượng",
-        "body": "Tinh bột + I2 → xanh tím; Glucose + AgNO3/NH3 → tráng bạc; Cellulose tan trong dd Schweizer; Saccharose thủy phân."
+        "body": "Tinh bột + [[I2]] → xanh tím; Glucose + [[AgNO3]]/[[NH3]] → tráng bạc; Cellulose tan trong dd Schweizer; Saccharose thủy phân."
       },
       {
         "kind": "answer",
@@ -316,6 +316,6 @@
         "body": "Nối đúng 4 chất với hiện tượng."
       }
     ],
-    "finalSolution": "**Tinh bột:** xanh tím với I2; **Glucose:** phản ứng tráng bạc; **Cellulose:** tan trong nước Schweizer; **Saccharose:** thủy phân thành glucose + fructose."
+    "finalSolution": "**Tinh bột:** xanh tím với [[I2]]; **Glucose:** phản ứng tráng bạc; **Cellulose:** tan trong nước Schweizer; **Saccharose:** thủy phân thành glucose + fructose."
   }
 ]

@@ -42,7 +42,7 @@
         "Phiến lá dạng bản dẹt, rộng: Tăng diện tích tiếp xúc để hấp thụ được tối đa ánh sáng mặt trời.",
         "Lớp thịt lá: Chứa nhiều tế bào có vô số hạt lục lạp (đặc biệt lớp tế bào mô giậu xếp sát mặt trên).",
         "Gân lá: Chứa bó mạch dẫn gồm mạch gỗ (đưa nước và muối khoáng từ rễ lên) và mạch rây (chuyển chất hữu cơ đi nuôi cây).",
-        "Khí khổng: Nằm nhiều ở lớp biểu bì dưới của lá, đóng mở nhịp nhàng giúp khí CO2 khuếch tán vào lá và giải phóng O2 ra ngoài."
+        "Khí khổng: Nằm nhiều ở lớp biểu bì dưới của lá, đóng mở nhịp nhàng giúp khí [[CO2]] khuếch tán vào lá và giải phóng [[O2]] ra ngoài."
       ]
     }
   ],
@@ -70,6 +70,6 @@
         "correct": false
       }
     ],
-    "explanation": "Trong quang hợp, từ nguyên liệu là nước và CO2, cây xanh sử dụng ánh sáng và diệp lục để tổng hợp nên chất hữu cơ (glucose) và giải phóng khí oxygen."
+    "explanation": "Trong quang hợp, từ nguyên liệu là nước và [[CO2]], cây xanh sử dụng ánh sáng và diệp lục để tổng hợp nên chất hữu cơ (glucose) và giải phóng khí oxygen."
   }
 }

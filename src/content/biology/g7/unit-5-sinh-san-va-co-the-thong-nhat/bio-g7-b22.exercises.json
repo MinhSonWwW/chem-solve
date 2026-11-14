@@ -194,7 +194,7 @@
       {
         "kind": "knowledge",
         "title": "Vai trò hệ tuần hoàn",
-        "body": "Hệ tuần hoàn vận chuyển O2, CO2, dinh dưỡng, hormone và chất thải, kết nối tất cả các cơ quan và tế bào thành một thể thống nhất."
+        "body": "Hệ tuần hoàn vận chuyển [[O2]], [[CO2]], dinh dưỡng, hormone và chất thải, kết nối tất cả các cơ quan và tế bào thành một thể thống nhất."
       },
       {
         "kind": "answer",
@@ -240,7 +240,7 @@
         },
         {
           "id": "opt-d",
-          "label": "Hệ cơ vận động co duỗi mạnh → Hệ hô hấp thở nhanh sâu lấy O2 → Hệ tuần hoàn đập nhanh bơm máu → Da bài tiết mồ hôi làm mát"
+          "label": "Hệ cơ vận động co duỗi mạnh → Hệ hô hấp thở nhanh sâu lấy [[O2]] → Hệ tuần hoàn đập nhanh bơm máu → Da bài tiết mồ hôi làm mát"
         }
       ],
       "correctId": "opt-d"
@@ -264,12 +264,12 @@
       {
         "kind": "knowledge",
         "title": "Sự thống nhất hoạt động sống",
-        "body": "Cơ bắp vận động cần nhiều ATP → hô hấp và tuần hoàn tăng tốc cung cấp O2 và chuyển hóa → bài tiết toát mồ hôi để tỏa nhiệt điều hòa thân nhiệt."
+        "body": "Cơ bắp vận động cần nhiều ATP → hô hấp và tuần hoàn tăng tốc cung cấp [[O2]] và chuyển hóa → bài tiết toát mồ hôi để tỏa nhiệt điều hòa thân nhiệt."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Hệ cơ vận động co duỗi mạnh → Hệ hô hấp thở nhanh sâu lấy O2 → Hệ tuần hoàn đập nhanh bơm máu → Da bài tiết mồ hôi làm mát."
+        "body": "Hệ cơ vận động co duỗi mạnh → Hệ hô hấp thở nhanh sâu lấy [[O2]] → Hệ tuần hoàn đập nhanh bơm máu → Da bài tiết mồ hôi làm mát."
       }
     ],
     "finalSolution": "Khi chạy bền, hệ cơ, hô hấp, tuần hoàn và bài tiết phối hợp đồng bộ để đáp ứng nhu cầu năng lượng và điều hòa thân nhiệt.",

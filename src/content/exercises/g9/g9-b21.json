@@ -102,7 +102,7 @@
         },
         {
           "id": "p4",
-          "label": "Tác dụng với dung dịch acid HCl giải phóng khí H2",
+          "label": "Tác dụng với dung dịch acid HCl giải phóng khí [[H2]]",
           "bucketId": "metal"
         },
         {
@@ -120,7 +120,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Dẻo, ánh kim, tác dụng acid tạo H2 -> Kim loại."
+        "text": "Dẻo, ánh kim, tác dụng acid tạo [[H2]] -> Kim loại."
       },
       {
         "level": 2,
@@ -141,10 +141,10 @@
       {
         "kind": "answer",
         "title": "Kết quả",
-        "body": "Kim loại: dẻo, ánh kim, sinh H2. Phi kim: oxide acid, giòn/khí, hút e."
+        "body": "Kim loại: dẻo, ánh kim, sinh [[H2]]. Phi kim: oxide acid, giòn/khí, hút e."
       }
     ],
-    "finalSolution": "Kim loại: tính dẻo, ánh kim, tạo H2 với acid. Phi kim: oxide acid, thể khí/giòn, nhận e.",
+    "finalSolution": "Kim loại: tính dẻo, ánh kim, tạo [[H2]] với acid. Phi kim: oxide acid, thể khí/giòn, nhận e.",
     "commonMistakes": []
   },
   {
@@ -235,7 +235,7 @@
           "right": "Lõi dây dẫn điện gia dụng"
         },
         {
-          "left": "Chlorine (Cl2)",
+          "left": "Chlorine ([[Cl2]])",
           "right": "Khử trùng nước sinh hoạt, tẩy trắng"
         },
         {
@@ -251,7 +251,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Al nhẹ làm máy bay; Cu dẫn điện tốt làm dây điện; Cl2 khử trùng; C lọc nước."
+        "text": "Al nhẹ làm máy bay; Cu dẫn điện tốt làm dây điện; [[Cl2]] khử trùng; C lọc nước."
       },
       {
         "level": 2,
@@ -267,7 +267,7 @@
       {
         "kind": "knowledge",
         "title": "Ứng dụng",
-        "body": "Al: vỏ máy bay; Cu: lõi dây điện; Cl2: khử trùng; Than hoạt tính: lọc nước; Fe: kết cấu xây dựng."
+        "body": "Al: vỏ máy bay; Cu: lõi dây điện; [[Cl2]]: khử trùng; Than hoạt tính: lọc nước; Fe: kết cấu xây dựng."
       },
       {
         "kind": "answer",
@@ -275,7 +275,7 @@
         "body": "Ghép đúng 5 cặp nguyên tố - ứng dụng."
       }
     ],
-    "finalSolution": "Al ↔ Vỏ máy bay. Cu ↔ Lõi dây điện. Cl2 ↔ Khử trùng nước. Carbon ↔ Hấp phụ lọc nước. Fe ↔ Xây dựng.",
+    "finalSolution": "Al ↔ Vỏ máy bay. Cu ↔ Lõi dây điện. [[Cl2]] ↔ Khử trùng nước. Carbon ↔ Hấp phụ lọc nước. Fe ↔ Xây dựng.",
     "commonMistakes": []
   }
 ]

@@ -12,7 +12,7 @@
       "options": [
         {
           "id": "a",
-          "label": "Chỉ duy nhất chất methane (CH4)"
+          "label": "Chỉ duy nhất chất methane ([[CH4]])"
         },
         {
           "id": "b",
@@ -155,19 +155,19 @@
       "options": [
         {
           "id": "a",
-          "label": "Oxygen (O2)"
+          "label": "Oxygen ([[O2]])"
         },
         {
           "id": "b",
-          "label": "Carbon dioxide (CO2)"
+          "label": "Carbon dioxide ([[CO2]])"
         },
         {
           "id": "c",
-          "label": "Hydrogen (H2)"
+          "label": "Hydrogen ([[H2]])"
         },
         {
           "id": "d",
-          "label": "Methane (CH4, chiếm tới 75 - 95%)"
+          "label": "Methane ([[CH4]], chiếm tới 75 - 95%)"
         }
       ],
       "correctId": "d"
@@ -175,7 +175,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Đây là hydrocarbon đơn giản nhất có công thức phân tử CH4."
+        "text": "Đây là hydrocarbon đơn giản nhất có công thức phân tử [[CH4]]."
       },
       {
         "level": 2,
@@ -191,15 +191,15 @@
       {
         "kind": "knowledge",
         "title": "Kiến thức",
-        "body": "Methane (CH4) chiếm từ 75% đến 95% thể tích khí thiên nhiên."
+        "body": "Methane ([[CH4]]) chiếm từ 75% đến 95% thể tích khí thiên nhiên."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Methane (CH4)."
+        "body": "Methane ([[CH4]])."
       }
     ],
-    "finalSolution": "Thành phần chính của khí thiên nhiên là Methane (CH4, khoảng 75 - 95%).",
+    "finalSolution": "Thành phần chính của khí thiên nhiên là Methane ([[CH4]], khoảng 75 - 95%).",
     "commonMistakes": []
   },
   {
@@ -254,7 +254,7 @@
       {
         "kind": "knowledge",
         "title": "Quy tắc",
-        "body": "S1: Đúng (đủ O2). S2: Đúng (thiếu O2 sinh CO). S3: Sai (hóa thạch hữu hạn). S4: Đúng (tăng tiếp xúc)."
+        "body": "S1: Đúng (đủ [[O2]]). S2: Đúng (thiếu [[O2]] sinh CO). S3: Sai (hóa thạch hữu hạn). S4: Đúng (tăng tiếp xúc)."
       },
       {
         "kind": "answer",

@@ -54,7 +54,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Phân đạm cung cấp N (chứa gốc amoni hoặc nhóm NH2); phân lân cung cấp P (chứa gốc phosphate); phân kali cung cấp K."
+        "text": "Phân đạm cung cấp N (chứa gốc amoni hoặc nhóm [[NH2]]); phân lân cung cấp P (chứa gốc phosphate); phân kali cung cấp K."
       },
       {
         "level": 2,
@@ -70,7 +70,7 @@
       {
         "kind": "knowledge",
         "title": "Quy tắc phân loại",
-        "body": "1. Urê (NH2)2CO & NH4NO3 chứa N -> Phân đạm. 2. Ca(H2PO4)2 chứa P -> Phân lân. 3. KCl & K2SO4 chứa K -> Phân kali."
+        "body": "1. Urê [[(NH2)2CO]] & [[NH4NO3]] chứa N -> Phân đạm. 2. [[Ca(H2PO4)2]] chứa P -> Phân lân. 3. KCl & [[K2SO4]] chứa K -> Phân kali."
       },
       {
         "kind": "answer",
@@ -78,7 +78,7 @@
         "body": "Phân loại chính xác các loại phân theo nguyên tố dinh dưỡng thiết yếu."
       }
     ],
-    "finalSolution": "Phân đạm: **Urê, NH4NO3** · Phân lân: **Ca(H2PO4)2** · Phân kali: **KCl, K2SO4**."
+    "finalSolution": "Phân đạm: **Urê, [[NH4NO3]]** · Phân lân: **[[Ca(H2PO4)2]]** · Phân kali: **KCl, [[K2SO4]]**."
   },
   {
     "id": "g8-b12-mcq-001",
@@ -206,7 +206,7 @@
       {
         "kind": "compute",
         "title": "Tính khối lượng mol",
-        "body": "M((NH2)2CO) = (14 + 2) × 2 + 12 + 16 = 60 g/mol."
+        "body": "M([[(NH2)2CO]]) = (14 + 2) × 2 + 12 + 16 = 60 g/mol."
       },
       {
         "kind": "compute",

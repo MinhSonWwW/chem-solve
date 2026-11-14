@@ -415,7 +415,7 @@
       }
     ],
     "find": {
-      "label": "Khối lượng phân tử H2O",
+      "label": "Khối lượng phân tử [[H2O]]",
       "unit": "amu"
     },
     "answer": {
@@ -485,7 +485,7 @@
       }
     ],
     "find": {
-      "label": "Khối lượng phân tử CO2",
+      "label": "Khối lượng phân tử [[CO2]]",
       "unit": "amu"
     },
     "answer": {
@@ -626,7 +626,7 @@
       }
     ],
     "find": {
-      "label": "Khối lượng phân tử CaCO3",
+      "label": "Khối lượng phân tử [[CaCO3]]",
       "unit": "amu"
     },
     "answer": {

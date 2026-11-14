@@ -16,7 +16,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Khí oxygen (O2)"
+          "label": "Khí oxygen ([[O2]])"
         },
         {
           "id": "opt-b",
@@ -24,11 +24,11 @@
         },
         {
           "id": "opt-c",
-          "label": "Khí carbon dioxide (CO2)"
+          "label": "Khí carbon dioxide ([[CO2]])"
         },
         {
           "id": "opt-d",
-          "label": "Khí nitrogen phân tử (N2)"
+          "label": "Khí nitrogen phân tử ([[N2]])"
         }
       ],
       "correctId": "opt-c"
@@ -40,27 +40,27 @@
       },
       {
         "level": 2,
-        "text": "Khí carbon dioxide (CO2) hấp thụ bức xạ hồng ngoại từ mặt đất phát ra, giữ nhiệt lại trong tầng đối lưu."
+        "text": "Khí carbon dioxide ([[CO2]]) hấp thụ bức xạ hồng ngoại từ mặt đất phát ra, giữ nhiệt lại trong tầng đối lưu."
       }
     ],
     "steps": [
       {
         "kind": "identify",
         "title": "Nguồn gốc khí nhà kính chính",
-        "body": "Hoạt động công nghiệp, giao thông vận tải và nhiệt điện tiêu thụ than, dầu, khí đốt giải phóng hàng tỉ tấn CO2 mỗi năm."
+        "body": "Hoạt động công nghiệp, giao thông vận tải và nhiệt điện tiêu thụ than, dầu, khí đốt giải phóng hàng tỉ tấn [[CO2]] mỗi năm."
       },
       {
         "kind": "knowledge",
         "title": "Cơ chế hiệu ứng nhà kính",
-        "body": "CO2 cùng với khí methane (CH4) là các khí nhà kính chính giữ lại năng lượng nhiệt bức xạ từ mặt đất, làm tăng nhiệt độ trung bình của khí quyển Trái Đất."
+        "body": "[[CO2]] cùng với khí methane ([[CH4]]) là các khí nhà kính chính giữ lại năng lượng nhiệt bức xạ từ mặt đất, làm tăng nhiệt độ trung bình của khí quyển Trái Đất."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Khí CO2 là nguyên nhân chủ yếu gây hiệu ứng nhà kính làm Trái Đất nóng lên."
+        "body": "Khí [[CO2]] là nguyên nhân chủ yếu gây hiệu ứng nhà kính làm Trái Đất nóng lên."
       }
     ],
-    "finalSolution": "Khí carbon dioxide (CO2) thải ra từ đốt nhiên liệu hóa thạch là khí nhà kính chính gây nóng lên toàn cầu.",
+    "finalSolution": "Khí carbon dioxide ([[CO2]]) thải ra từ đốt nhiên liệu hóa thạch là khí nhà kính chính gây nóng lên toàn cầu.",
     "commonMistakes": [
       {
         "id": "cm-01",
@@ -312,7 +312,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Nhiên liệu hóa thạch là nguồn phát thải CO2 lớn nhất. Cần thay thế bằng các nguồn năng lượng sạch không phát thải."
+        "text": "Nhiên liệu hóa thạch là nguồn phát thải [[CO2]] lớn nhất. Cần thay thế bằng các nguồn năng lượng sạch không phát thải."
       },
       {
         "level": 2,

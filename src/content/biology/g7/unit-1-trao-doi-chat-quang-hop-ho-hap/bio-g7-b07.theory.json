@@ -24,11 +24,11 @@
       "badge": "Thí nghiệm 2",
       "badgeColor": "cyan",
       "title": "Chứng minh hô hấp sinh ra khí Carbon dioxide (CO2)",
-      "content": "Sử dụng dung dịch nước vôi trong Ca(OH)2 để nhận biết khí CO2 sinh ra từ bình hạt nảy mầm:",
+      "content": "Sử dụng dung dịch nước vôi trong [[Ca(OH)2]] để nhận biết khí [[CO2]] sinh ra từ bình hạt nảy mầm:",
       "bulletPoints": [
         "Bố trí: Nối ống dẫn khí từ bình kín chứa hạt nảy mầm (đã đậy kín 2 - 4 giờ) sục vào ống nghiệm chứa nước vôi trong.",
         "Hiện tượng: Nước vôi trong nhanh chóng bị vẩn đục màu trắng sữa.",
-        "Giải thích: Hô hấp tế bào thải ra khí CO2; khí CO2 phản ứng với Ca(OH)2 tạo thành kết tủa trắng calcium carbonate (CaCO3)."
+        "Giải thích: Hô hấp tế bào thải ra khí [[CO2]]; khí [[CO2]] phản ứng với [[Ca(OH)2]] tạo thành kết tủa trắng calcium carbonate ([[CaCO3]])."
       ]
     },
     {
@@ -36,11 +36,11 @@
       "badge": "Thí nghiệm 3",
       "badgeColor": "emerald",
       "title": "Chứng minh hô hấp tiêu thụ khí Oxygen (O2)",
-      "content": "Sử dụng ngọn lửa que diêm / que đóm đang cháy để kiểm tra lượng khí O2 trong bình hạt:",
+      "content": "Sử dụng ngọn lửa que diêm / que đóm đang cháy để kiểm tra lượng khí [[O2]] trong bình hạt:",
       "bulletPoints": [
         "Bố trí: Mở nút bình kín chứa hạt đậu nảy mầm sau vài giờ ủ kín, lập tức đưa que diêm đang cháy vào miệng bình.",
         "Hiện tượng: Ngọn lửa que diêm bị dập tắt ngay lập tức.",
-        "Giải thích: Tế bào hạt nảy mầm đã tiêu thụ hết toàn bộ khí Oxygen trong bình kín cho quá trình hô hấp hiếu khí, môi trường cạn O2 không còn duy trì sự cháy."
+        "Giải thích: Tế bào hạt nảy mầm đã tiêu thụ hết toàn bộ khí Oxygen trong bình kín cho quá trình hô hấp hiếu khí, môi trường cạn [[O2]] không còn duy trì sự cháy."
       ]
     }
   ],
@@ -68,6 +68,6 @@
         "correct": false
       }
     ],
-    "explanation": "Trong bình kín, hạt nảy mầm hô hấp mạnh đã hút hết khí O2 và thải ra nhiều khí CO2. Do thiếu O2 duy trì sự cháy, ngọn lửa que diêm bị dập tắt ngay lập tức."
+    "explanation": "Trong bình kín, hạt nảy mầm hô hấp mạnh đã hút hết khí [[O2]] và thải ra nhiều khí [[CO2]]. Do thiếu [[O2]] duy trì sự cháy, ngọn lửa que diêm bị dập tắt ngay lập tức."
   }
 }

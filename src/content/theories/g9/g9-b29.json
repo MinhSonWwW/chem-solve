@@ -50,10 +50,10 @@
     "prompt": "Thuốc thử nào sau đây dùng để nhận biết Glucose bằng hiện tượng tạo lớp bạc sáng bóng (phản ứng tráng gương)?",
     "options": [
       { "id": "opt-1", "text": "Dung dịch Acid HCl loãng", "correct": false },
-      { "id": "opt-2", "text": "Dung dịch AgNO3 trong NH3 đun nóng", "correct": true },
+      { "id": "opt-2", "text": "Dung dịch [[AgNO3]] trong [[NH3]] đun nóng", "correct": true },
       { "id": "opt-3", "text": "Dung dịch nước Bromine", "correct": false },
       { "id": "opt-4", "text": "Dung dịch muối ăn NaCl", "correct": false }
     ],
-    "explanation": "Chính xác! Glucose có phản ứng tráng bạc đặc trưng với dung dịch AgNO3 trong NH3 khi đun nóng, sinh ra kim loại Bạc (Ag) bám sáng bóng vào thành ống nghiệm."
+    "explanation": "Chính xác! Glucose có phản ứng tráng bạc đặc trưng với dung dịch [[AgNO3]] trong [[NH3]] khi đun nóng, sinh ra kim loại Bạc (Ag) bám sáng bóng vào thành ống nghiệm."
   }
 }

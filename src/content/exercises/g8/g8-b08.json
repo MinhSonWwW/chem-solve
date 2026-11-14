@@ -97,7 +97,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Chỉ những kim loại đứng trước hydrogen (H) trong dãy hoạt động hóa học mới tác dụng với HCl/H2SO4 loãng."
+        "text": "Chỉ những kim loại đứng trước hydrogen (H) trong dãy hoạt động hóa học mới tác dụng với HCl/[[H2SO4]] loãng."
       },
       {
         "level": 2,
@@ -113,7 +113,7 @@
       {
         "kind": "knowledge",
         "title": "Dãy hoạt động hóa học",
-        "body": "Kim loại đứng sau H (Cu, Ag, Au) không tác dụng với dung dịch HCl/H2SO4 loãng."
+        "body": "Kim loại đứng sau H (Cu, Ag, Au) không tác dụng với dung dịch HCl/[[H2SO4]] loãng."
       },
       {
         "kind": "answer",
@@ -125,7 +125,7 @@
     "commonMistakes": [
       {
         "id": "picked-fe",
-        "message": "Sắt (Fe) đứng trước H nên phản ứng bình thường: Fe + 2HCl -> FeCl2 + H2."
+        "message": "Sắt (Fe) đứng trước H nên phản ứng bình thường: Fe + 2HCl -> [[FeCl2]] + [[H2]]."
       }
     ]
   },
@@ -158,11 +158,11 @@
     "hints": [
       {
         "level": 1,
-        "text": "Vế phải có muối Na2SO4 gồm 2 nguyên tử Na, do đó vế trái cần 2 phân tử NaOH."
+        "text": "Vế phải có muối [[Na2SO4]] gồm 2 nguyên tử Na, do đó vế trái cần 2 phân tử NaOH."
       },
       {
         "level": 2,
-        "text": "H2SO4 + 2NaOH -> Na2SO4 + 2H2O. Tỉ lệ hệ số: 1, 2, 1, 2."
+        "text": "[[H2SO4]] + 2NaOH -> [[Na2SO4]] + 2[[H2O]]. Tỉ lệ hệ số: 1, 2, 1, 2."
       }
     ],
     "steps": [
@@ -174,7 +174,7 @@
       {
         "kind": "compute",
         "title": "Cân bằng Na và H",
-        "body": "Vế phải có 2 Na => đặt hệ số 2 trước NaOH. Tổng số H vế trái: 2 (trong H2SO4) + 2 (trong 2NaOH) = 4 => đặt hệ số 2 trước H2O."
+        "body": "Vế phải có 2 Na => đặt hệ số 2 trước NaOH. Tổng số H vế trái: 2 (trong [[H2SO4]]) + 2 (trong 2NaOH) = 4 => đặt hệ số 2 trước [[H2O]]."
       },
       {
         "kind": "compute",
@@ -184,14 +184,14 @@
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Phương trình hoàn chỉnh: **H2SO4 + 2NaOH -> Na2SO4 + 2H2O**."
+        "body": "Phương trình hoàn chỉnh: **[[H2SO4]] + 2NaOH -> [[Na2SO4]] + 2[[H2O]]**."
       }
     ],
-    "finalSolution": "**H2SO4 + 2NaOH -> Na2SO4 + 2H2O**",
+    "finalSolution": "**[[H2SO4]] + 2NaOH -> [[Na2SO4]] + 2[[H2O]]**",
     "commonMistakes": [
       {
         "id": "forgot-water-coefficient",
-        "message": "Quên đặt hệ số 2 cho nước (H2O)."
+        "message": "Quên đặt hệ số 2 cho nước ([[H2O]])."
       }
     ]
   },
@@ -208,7 +208,7 @@
       "statements": [
         {
           "id": "s1",
-          "text": "Khi pha loãng H2SO4 đặc, tuyệt đối không được đổ nước vào acid.",
+          "text": "Khi pha loãng [[H2SO4]] đặc, tuyệt đối không được đổ nước vào acid.",
           "correct": true
         },
         {
@@ -226,7 +226,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Acid trong giấm ăn là acetic acid (CH3COOH), còn HCl là acid vô cơ mạnh."
+        "text": "Acid trong giấm ăn là acetic acid ([[CH3COOH]]), còn HCl là acid vô cơ mạnh."
       },
       {
         "level": 2,
@@ -242,7 +242,7 @@
       {
         "kind": "knowledge",
         "title": "Kiến thức an toàn",
-        "body": "s1: Đúng (nước vào acid gây sôi cục bộ bắn acid). s2: Đúng (sơ cứu rửa trôi acid dưới vòi nước). s3: Sai (giấm ăn là CH3COOH, HCl là hydrochloric acid trong dịch vị dạ dày)."
+        "body": "s1: Đúng (nước vào acid gây sôi cục bộ bắn acid). s2: Đúng (sơ cứu rửa trôi acid dưới vòi nước). s3: Sai (giấm ăn là [[CH3COOH]], HCl là hydrochloric acid trong dịch vị dạ dày)."
       },
       {
         "kind": "answer",
@@ -250,11 +250,11 @@
         "body": "s1: Đúng, s2: Đúng, s3: Sai."
       }
     ],
-    "finalSolution": "s1: Đúng, s2: Đúng, s3: Sai (giấm ăn chứa CH3COOH).",
+    "finalSolution": "s1: Đúng, s2: Đúng, s3: Sai (giấm ăn chứa [[CH3COOH]]).",
     "commonMistakes": [
       {
         "id": "confused-acids",
-        "message": "Nhầm HCl là acid trong giấm ăn (giấm ăn là acetic acid CH3COOH)."
+        "message": "Nhầm HCl là acid trong giấm ăn (giấm ăn là acetic acid [[CH3COOH]])."
       }
     ]
   },
@@ -286,12 +286,12 @@
         },
         {
           "id": "h2so4",
-          "label": "Sulfuric acid (H2SO4)",
+          "label": "Sulfuric acid ([[H2SO4]])",
           "bucketId": "acid"
         },
         {
           "id": "hno3",
-          "label": "Nitric acid (HNO3)",
+          "label": "Nitric acid ([[HNO3]])",
           "bucketId": "acid"
         },
         {
@@ -318,7 +318,7 @@
       },
       {
         "level": 2,
-        "text": "HCl, H2SO4, HNO3 là các acid; NaOH là base, CaO là oxide, NaCl là muối."
+        "text": "HCl, [[H2SO4]], [[HNO3]] là các acid; NaOH là base, CaO là oxide, NaCl là muối."
       }
     ],
     "steps": [
@@ -330,7 +330,7 @@
       {
         "kind": "knowledge",
         "title": "Phân loại",
-        "body": "Acid: HCl, H2SO4, HNO3. Hợp chất khác: NaOH (base), CaO (oxide), NaCl (muối)."
+        "body": "Acid: HCl, [[H2SO4]], [[HNO3]]. Hợp chất khác: NaOH (base), CaO (oxide), NaCl (muối)."
       },
       {
         "kind": "answer",
@@ -338,7 +338,7 @@
         "body": "Đã phân loại đúng 6 chất vào 2 nhóm."
       }
     ],
-    "finalSolution": "Acid: **HCl, H2SO4, HNO3** · Hợp chất khác: **NaOH, CaO, NaCl**.",
+    "finalSolution": "Acid: **HCl, [[H2SO4]], [[HNO3]]** · Hợp chất khác: **NaOH, CaO, NaCl**.",
     "commonMistakes": []
   },
   {
@@ -357,16 +357,16 @@
           "right": "Gốc -Cl (chloride, hóa trị I)"
         },
         {
-          "left": "H2SO4 (Sulfuric acid)",
-          "right": "Gốc =SO4 (sulfate, hóa trị II)"
+          "left": "[[H2SO4]] (Sulfuric acid)",
+          "right": "Gốc =[[SO4]] (sulfate, hóa trị II)"
         },
         {
-          "left": "HNO3 (Nitric acid)",
-          "right": "Gốc -NO3 (nitrate, hóa trị I)"
+          "left": "[[HNO3]] (Nitric acid)",
+          "right": "Gốc -[[NO3]] (nitrate, hóa trị I)"
         },
         {
-          "left": "H3PO4 (Phosphoric acid)",
-          "right": "Gốc ≡PO4 (phosphate, hóa trị III)"
+          "left": "[[H3PO4]] (Phosphoric acid)",
+          "right": "Gốc ≡[[PO4]] (phosphate, hóa trị III)"
         }
       ]
     },
@@ -377,7 +377,7 @@
       },
       {
         "level": 2,
-        "text": "HCl có 1 H => hóa trị I. H2SO4 có 2 H => hóa trị II. H3PO4 có 3 H => hóa trị III."
+        "text": "HCl có 1 H => hóa trị I. [[H2SO4]] có 2 H => hóa trị II. [[H3PO4]] có 3 H => hóa trị III."
       }
     ],
     "steps": [
@@ -389,7 +389,7 @@
       {
         "kind": "knowledge",
         "title": "Gốc acid",
-        "body": "Cl (I), SO4 (II), NO3 (I), PO4 (III)."
+        "body": "Cl (I), [[SO4]] (II), [[NO3]] (I), [[PO4]] (III)."
       },
       {
         "kind": "answer",
@@ -397,7 +397,7 @@
         "body": "Ghép đúng từng acid với gốc acid và hóa trị."
       }
     ],
-    "finalSolution": "HCl ↔ Gốc -Cl (I) · H2SO4 ↔ Gốc =SO4 (II) · HNO3 ↔ Gốc -NO3 (I) · H3PO4 ↔ Gốc ≡PO4 (III).",
+    "finalSolution": "HCl ↔ Gốc -Cl (I) · [[H2SO4]] ↔ Gốc =[[SO4]] (II) · [[HNO3]] ↔ Gốc -[[NO3]] (I) · [[H3PO4]] ↔ Gốc ≡[[PO4]] (III).",
     "commonMistakes": []
   }
 ]

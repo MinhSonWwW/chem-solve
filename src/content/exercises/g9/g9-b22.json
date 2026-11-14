@@ -12,7 +12,7 @@
       "options": [
         {
           "id": "a",
-          "label": "Carbon (trừ CO, CO2, H2CO3, muối carbonate kim loại...)"
+          "label": "Carbon (trừ CO, [[CO2]], [[H2CO3]], muối carbonate kim loại...)"
         },
         {
           "id": "b",
@@ -36,7 +36,7 @@
       },
       {
         "level": 2,
-        "text": "Một số oxide của carbon (CO, CO2) và muối carbonate (CaCO3, Na2CO3) là hợp chất vô cơ."
+        "text": "Một số oxide của carbon (CO, [[CO2]]) và muối carbonate ([[CaCO3]], [[Na2CO3]]) là hợp chất vô cơ."
       }
     ],
     "steps": [
@@ -48,7 +48,7 @@
       {
         "kind": "knowledge",
         "title": "Kiến thức",
-        "body": "Hợp chất hữu cơ là hợp chất của carbon (trừ CO, CO2, H2CO3, các muối carbonate, xianua, cacbua...)."
+        "body": "Hợp chất hữu cơ là hợp chất của carbon (trừ CO, [[CO2]], [[H2CO3]], các muối carbonate, xianua, cacbua...)."
       },
       {
         "kind": "answer",
@@ -56,11 +56,11 @@
         "body": "Hợp chất của carbon trừ một số chất vô cơ đơn giản."
       }
     ],
-    "finalSolution": "Hợp chất hữu cơ là hợp chất của carbon (trừ CO, CO2, carbonic acid và các muối carbonate...).",
+    "finalSolution": "Hợp chất hữu cơ là hợp chất của carbon (trừ CO, [[CO2]], carbonic acid và các muối carbonate...).",
     "commonMistakes": [
       {
         "id": "picked-co2",
-        "message": "CO2, CaCO3 chứa C nhưng là hợp chất vô cơ."
+        "message": "[[CO2]], [[CaCO3]] chứa C nhưng là hợp chất vô cơ."
       }
     ]
   },
@@ -87,27 +87,27 @@
       "items": [
         {
           "id": "c1",
-          "label": "CH4 (Methane)",
+          "label": "[[CH4]] (Methane)",
           "bucketId": "organic"
         },
         {
           "id": "c2",
-          "label": "CaCO3 (Đá vôi)",
+          "label": "[[CaCO3]] (Đá vôi)",
           "bucketId": "inorganic"
         },
         {
           "id": "c3",
-          "label": "C2H5OH (Ethylic alcohol)",
+          "label": "[[C2H5OH]] (Ethylic alcohol)",
           "bucketId": "organic"
         },
         {
           "id": "c4",
-          "label": "CO2 (Khí carbon dioxide)",
+          "label": "[[CO2]] (Khí carbon dioxide)",
           "bucketId": "inorganic"
         },
         {
           "id": "c5",
-          "label": "CH3COOH (Acetic acid)",
+          "label": "[[CH3COOH]] (Acetic acid)",
           "bucketId": "organic"
         },
         {
@@ -120,11 +120,11 @@
     "hints": [
       {
         "level": 1,
-        "text": "CH4, C2H5OH, CH3COOH chứa C liên kết H/O -> Hợp chất hữu cơ."
+        "text": "[[CH4]], [[C2H5OH]], [[CH3COOH]] chứa C liên kết H/O -> Hợp chất hữu cơ."
       },
       {
         "level": 2,
-        "text": "CaCO3, CO2, NaCl là hợp chất vô cơ."
+        "text": "[[CaCO3]], [[CO2]], NaCl là hợp chất vô cơ."
       }
     ],
     "steps": [
@@ -136,15 +136,15 @@
       {
         "kind": "knowledge",
         "title": "Phân loại",
-        "body": "Hữu cơ: CH4, C2H5OH, CH3COOH. Vô cơ: CaCO3, CO2, NaCl."
+        "body": "Hữu cơ: [[CH4]], [[C2H5OH]], [[CH3COOH]]. Vô cơ: [[CaCO3]], [[CO2]], NaCl."
       },
       {
         "kind": "answer",
         "title": "Kết quả",
-        "body": "Hữu cơ: CH4, C2H5OH, CH3COOH. Vô cơ: CaCO3, CO2, NaCl."
+        "body": "Hữu cơ: [[CH4]], [[C2H5OH]], [[CH3COOH]]. Vô cơ: [[CaCO3]], [[CO2]], NaCl."
       }
     ],
-    "finalSolution": "Hữu cơ: CH4, C2H5OH, CH3COOH. Vô cơ: CaCO3, CO2, NaCl.",
+    "finalSolution": "Hữu cơ: [[CH4]], [[C2H5OH]], [[CH3COOH]]. Vô cơ: [[CaCO3]], [[CO2]], NaCl.",
     "commonMistakes": []
   },
   {

@@ -54,6 +54,6 @@
       { "id": "opt-3", "text": "Khoảng 50% (một nửa thể tích)", "correct": false },
       { "id": "opt-4", "text": "Khoảng 1% thể tích", "correct": false }
     ],
-    "explanation": "Chính xác! Trong không khí, khí Oxygen chiếm khoảng 21% thể tích (gần 1/5), trong khi khí Nitrogen chiếm nhiều nhất với khoảng 78% (gần 4/5), còn lại 1% là hơi nước, CO2 và các khí khác."
+    "explanation": "Chính xác! Trong không khí, khí Oxygen chiếm khoảng 21% thể tích (gần 1/5), trong khi khí Nitrogen chiếm nhiều nhất với khoảng 78% (gần 4/5), còn lại 1% là hơi nước, [[CO2]] và các khí khác."
   }
 }

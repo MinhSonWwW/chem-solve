@@ -14,7 +14,7 @@
       "content": "Máu gồm Huyết tương (chiếm ~55% thể tích) và Các tế bào máu (chiếm ~45% thể tích):",
       "bulletPoints": [
         "Huyết tương: Chứa 90% nước, hòa tan chất dinh dưỡng, hormone, chất khoáng, kháng thể và chất thải; duy trì máu ở thể lỏng và vận chuyển vật chất.",
-        "Hồng cầu: Hình đĩa lõm 2 mặt, không nhân, chứa sắc tố hemoglobin (Hb) có khả năng kết hợp lỏng lẻo với O2 và CO2 để vận chuyển khí.",
+        "Hồng cầu: Hình đĩa lõm 2 mặt, không nhân, chứa sắc tố hemoglobin (Hb) có khả năng kết hợp lỏng lẻo với [[O2]] và [[CO2]] để vận chuyển khí.",
         "Bạch cầu: Có nhân, tham gia vào 3 hàng rào miễn dịch bảo vệ cơ thể (thực bào, tiết kháng thể và phá hủy tế bào nhiễm bệnh).",
         "Tiểu cầu: Mảnh tế bào chất không nhân, giải phóng enzym xúc tác quá trình đông máu bịt kín vết thương hở."
       ],
@@ -41,14 +41,14 @@
       "title": "Hệ mạch & 2 vòng tuần hoàn máu",
       "content": "Tim 4 ngăn hoạt động như một máy bơm đẩy máu lưu thông khép kín theo 2 vòng:",
       "bulletPoints": [
-        "Vòng tuần hoàn lớn (nuôi cơ thể): Tâm thất trái (máu đỏ tươi) → Động mạch chủ → Mao mạch cơ quan (trao đổi O2/CO2 thành máu đỏ thẫm) → Tĩnh mạch chủ → Tâm nhĩ phải.",
-        "Vòng tuần hoàn nhỏ (trao đổi khí ở phổi): Tâm thất phải (máu đỏ thẫm) → Động mạch phổi → Mao mạch phổi (thải CO2, nhận O2 thành máu đỏ tươi) → Tĩnh mạch phổi → Tâm nhĩ trái.",
+        "Vòng tuần hoàn lớn (nuôi cơ thể): Tâm thất trái (máu đỏ tươi) → Động mạch chủ → Mao mạch cơ quan (trao đổi [[O2]]/[[CO2]] thành máu đỏ thẫm) → Tĩnh mạch chủ → Tâm nhĩ phải.",
+        "Vòng tuần hoàn nhỏ (trao đổi khí ở phổi): Tâm thất phải (máu đỏ thẫm) → Động mạch phổi → Mao mạch phổi (thải [[CO2]], nhận [[O2]] thành máu đỏ tươi) → Tĩnh mạch phổi → Tâm nhĩ trái.",
         "Sơ cứu cầm máu động mạch: Máu phun thành tia đỏ tươi; cần buộc garô ở vị trí phía trên vết thương (hướng về phía tim) và nới lỏng mỗi 15 phút."
       ]
     }
   ],
   "quickCheck": {
-    "prompt": "Trong vòng tuần hoàn nhỏ (vòng phổi), máu đỏ tươi giàu O2 từ phổi chảy về ngăn tim nào?",
+    "prompt": "Trong vòng tuần hoàn nhỏ (vòng phổi), máu đỏ tươi giàu [[O2]] từ phổi chảy về ngăn tim nào?",
     "options": [
       {
         "id": "opt-1",

@@ -52,7 +52,7 @@
     "options": [
       { "id": "opt-1", "text": "Ethylic alcohol và acetic acid", "correct": false },
       { "id": "opt-2", "text": "Glycerol và muối của các acid béo (xà phòng)", "correct": true },
-      { "id": "opt-3", "text": "Khí CO2 và nước", "correct": false },
+      { "id": "opt-3", "text": "Khí [[CO2]] và nước", "correct": false },
       { "id": "opt-4", "text": "Polyethylene và xà phòng", "correct": false }
     ],
     "explanation": "Chính xác! Thủy phân chất béo trong dung dịch kiềm (NaOH) luôn thu được Glycerol và muối sodium của acid béo (thành phần chính của xà phòng)."

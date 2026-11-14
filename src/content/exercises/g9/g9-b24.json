@@ -6,7 +6,7 @@
       "alkene-ethylene"
     ],
     "difficulty": 1,
-    "prompt": "Đặc điểm cấu tạo phân tử nổi bật của Ethylene (C2H4) khác với Methane (CH4) là gì?",
+    "prompt": "Đặc điểm cấu tạo phân tử nổi bật của Ethylene ([[C2H4]]) khác với Methane ([[CH4]]) là gì?",
     "answer": {
       "kind": "mcq-single",
       "options": [
@@ -32,7 +32,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Công thức cấu tạo của ethylene là CH2=CH2."
+        "text": "Công thức cấu tạo của ethylene là [[CH2]]=[[CH2]]."
       },
       {
         "level": 2,
@@ -48,7 +48,7 @@
       {
         "kind": "knowledge",
         "title": "Cấu trúc",
-        "body": "C2H4: CH2=CH2. Trong liên kết đôi có một liên kết kém bền, dễ đứt ra trong phản ứng hóa học."
+        "body": "[[C2H4]]: [[CH2]]=[[CH2]]. Trong liên kết đôi có một liên kết kém bền, dễ đứt ra trong phản ứng hóa học."
       },
       {
         "kind": "answer",
@@ -56,11 +56,11 @@
         "body": "Chứa một liên kết đôi C=C gồm 1 liên kết bền và 1 liên kết kém bền."
       }
     ],
-    "finalSolution": "Phân tử ethylene có chứa một liên kết đôi C=C (CH2=CH2).",
+    "finalSolution": "Phân tử ethylene có chứa một liên kết đôi C=C ([[CH2]]=[[CH2]]).",
     "commonMistakes": [
       {
         "id": "confuse-triple-bond",
-        "message": "Liên kết ba C≡C là của acetylene (C2H2), không phải ethylene."
+        "message": "Liên kết ba C≡C là của acetylene ([[C2H2]]), không phải ethylene."
       }
     ]
   },
@@ -97,23 +97,23 @@
     "hints": [
       {
         "level": 1,
-        "text": "Ethylene tham gia phản ứng cộng làm đứt liên kết đôi với phân tử Br2."
+        "text": "Ethylene tham gia phản ứng cộng làm đứt liên kết đôi với phân tử [[Br2]]."
       },
       {
         "level": 2,
-        "text": "CH2=CH2 + Br2 -> CH2Br-CH2Br (chất lỏng không màu). Dung dịch bromine bị mất màu."
+        "text": "[[CH2]]=[[CH2]] + [[Br2]] -> CH2Br-[[CH2Br]] (chất lỏng không màu). Dung dịch bromine bị mất màu."
       }
     ],
     "steps": [
       {
         "kind": "identify",
         "title": "Hiện tượng",
-        "body": "Khí C2H4 tác dụng với dung dịch Br2."
+        "body": "Khí [[C2H4]] tác dụng với dung dịch [[Br2]]."
       },
       {
         "kind": "knowledge",
         "title": "PTHH",
-        "body": "CH2=CH2 + Br2 -> Br-CH2-CH2-Br (1,2-đibrometan không màu)."
+        "body": "[[CH2]]=[[CH2]] + [[Br2]] -> Br-CH2-CH2-Br (1,2-đibrometan không màu)."
       },
       {
         "kind": "answer",
@@ -121,11 +121,11 @@
         "body": "Dung dịch bromine bị mất màu. Đây là phản ứng đặc trưng dùng để nhận biết alkene."
       }
     ],
-    "finalSolution": "Dung dịch Bromine bị mất màu do phản ứng cộng: C2H4 + Br2 -> C2H4Br2.",
+    "finalSolution": "Dung dịch Bromine bị mất màu do phản ứng cộng: [[C2H4]] + [[Br2]] -> [[C2H4Br2]].",
     "commonMistakes": [
       {
         "id": "no-reaction-like-ch4",
-        "message": "Khác với methane (CH4) không làm mất màu Br2, ethylene có liên kết đôi nên phản ứng ngay ở điều kiện thường."
+        "message": "Khác với methane ([[CH4]]) không làm mất màu [[Br2]], ethylene có liên kết đôi nên phản ứng ngay ở điều kiện thường."
       }
     ],
     "visual": {
@@ -169,11 +169,11 @@
     "hints": [
       {
         "level": 1,
-        "text": "Methane (CH4) chỉ có liên kết đơn nên KHÔNG phản ứng với dung dịch bromine."
+        "text": "Methane ([[CH4]]) chỉ có liên kết đơn nên KHÔNG phản ứng với dung dịch bromine."
       },
       {
         "level": 2,
-        "text": "n CH2=CH2 --to, p, xt--> (-CH2-CH2-)n (nhựa PE)."
+        "text": "n [[CH2]]=[[CH2]] --to, p, xt--> (-CH2-CH2-)n (nhựa PE)."
       }
     ],
     "steps": [
@@ -185,7 +185,7 @@
       {
         "kind": "knowledge",
         "title": "Kiến thức",
-        "body": "S1: Đúng (phản ứng cộng). S2: Đúng (giúp trái cây chín). S3: Sai (CH4 không làm mất màu Br2). S4: Đúng (trùng hợp tạo PE)."
+        "body": "S1: Đúng (phản ứng cộng). S2: Đúng (giúp trái cây chín). S3: Sai ([[CH4]] không làm mất màu [[Br2]]). S4: Đúng (trùng hợp tạo PE)."
       },
       {
         "kind": "answer",
@@ -193,7 +193,7 @@
         "body": "S1: Đúng, S2: Đúng, S3: Sai, S4: Đúng."
       }
     ],
-    "finalSolution": "CH4 không làm mất màu nước Br2 (S3 Sai). S1, S2, S4 đều đúng.",
+    "finalSolution": "[[CH4]] không làm mất màu nước [[Br2]] (S3 Sai). S1, S2, S4 đều đúng.",
     "commonMistakes": []
   },
   {
@@ -203,17 +203,17 @@
       "alkene-ethylene"
     ],
     "difficulty": 2,
-    "prompt": "Phân loại các phản ứng hóa học sau vào nhóm \"Methane (CH4)\" hoặc \"Ethylene (C2H4)\".",
+    "prompt": "Phân loại các phản ứng hóa học sau vào nhóm \"Methane ([[CH4]])\" hoặc \"Ethylene ([[C2H4]])\".",
     "answer": {
       "kind": "sort",
       "buckets": [
         {
           "id": "ch4",
-          "label": "Đặc trưng của Methane (CH4)"
+          "label": "Đặc trưng của Methane ([[CH4]])"
         },
         {
           "id": "c2h4",
-          "label": "Đặc trưng của Ethylene (C2H4)"
+          "label": "Đặc trưng của Ethylene ([[C2H4]])"
         }
       ],
       "items": [
@@ -234,7 +234,7 @@
         },
         {
           "id": "r4",
-          "label": "Phản ứng cộng khí Hydrogen (H2) có xúc tác Ni nung nóng",
+          "label": "Phản ứng cộng khí Hydrogen ([[H2]]) có xúc tác Ni nung nóng",
           "bucketId": "c2h4"
         }
       ]
@@ -242,11 +242,11 @@
     "hints": [
       {
         "level": 1,
-        "text": "Liên kết đơn -> phản ứng thế (CH4). Liên kết đôi -> phản ứng cộng và trùng hợp (C2H4)."
+        "text": "Liên kết đơn -> phản ứng thế ([[CH4]]). Liên kết đôi -> phản ứng cộng và trùng hợp ([[C2H4]])."
       },
       {
         "level": 2,
-        "text": "Cộng Br2, cộng H2, trùng hợp PE đều là của C2H4."
+        "text": "Cộng [[Br2]], cộng [[H2]], trùng hợp PE đều là của [[C2H4]]."
       }
     ],
     "steps": [
@@ -258,15 +258,15 @@
       {
         "kind": "knowledge",
         "title": "Tính chất",
-        "body": "CH4: thế halogen. C2H4: cộng Br2, cộng H2, trùng hợp."
+        "body": "[[CH4]]: thế halogen. [[C2H4]]: cộng [[Br2]], cộng [[H2]], trùng hợp."
       },
       {
         "kind": "answer",
         "title": "Kết quả",
-        "body": "CH4: r1. C2H4: r2, r3, r4."
+        "body": "[[CH4]]: r1. [[C2H4]]: r2, r3, r4."
       }
     ],
-    "finalSolution": "Methane: phản ứng thế với Cl2. Ethylene: cộng Br2, cộng H2, trùng hợp PE.",
+    "finalSolution": "Methane: phản ứng thế với [[Cl2]]. Ethylene: cộng [[Br2]], cộng [[H2]], trùng hợp PE.",
     "commonMistakes": []
   },
   {
@@ -294,7 +294,7 @@
         },
         {
           "left": "Phản ứng đốt cháy",
-          "right": "Tác dụng với oxygen tạo ra khí CO2 và hơi nước, tỏa nhiều nhiệt"
+          "right": "Tác dụng với oxygen tạo ra khí [[CO2]] và hơi nước, tỏa nhiều nhiệt"
         }
       ]
     },
@@ -317,7 +317,7 @@
       {
         "kind": "knowledge",
         "title": "Liên kết đôi",
-        "body": "C=C có 1 liên kết kém bền → phản ứng cộng dung dịch Br2, phản ứng trùng hợp PE, phản ứng cháy."
+        "body": "C=C có 1 liên kết kém bền → phản ứng cộng dung dịch [[Br2]], phản ứng trùng hợp PE, phản ứng cháy."
       },
       {
         "kind": "answer",
@@ -325,6 +325,6 @@
         "body": "Ghép chính xác 4 cặp khái niệm."
       }
     ],
-    "finalSolution": "**Liên kết C=C:** 1 bền, 1 kém bền; **Tác dụng Br2:** mất màu da cam (phản ứng cộng); **Trùng hợp:** tạo nhựa PE; **Đốt cháy:** tạo CO2 và H2O."
+    "finalSolution": "**Liên kết C=C:** 1 bền, 1 kém bền; **Tác dụng [[Br2]]:** mất màu da cam (phản ứng cộng); **Trùng hợp:** tạo nhựa PE; **Đốt cháy:** tạo [[CO2]] và [[H2O]]."
   }
 ]

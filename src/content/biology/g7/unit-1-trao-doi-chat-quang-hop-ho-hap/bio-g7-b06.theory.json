@@ -15,8 +15,8 @@
       "bulletPoints": [
         "Nhiệt độ: Nhiệt độ tối ưu thường từ 30°C đến 35°C. Nhiệt độ thấp kìm hãm hoạt tính enzym hô hấp; nhiệt độ quá cao (trên 40°C - 45°C) làm enzym bị biến tính, hô hấp tế bào bị phá hủy.",
         "Hàm lượng nước: Nước là dung môi và môi trường diễn ra các phản ứng phân giải. Nước càng nhiều thì hô hấp càng mạnh; hạt khô hô hấp yếu, hạt nảy mầm hô hấp rất mạnh.",
-        "Nồng độ Oxygen (O2): O2 là nguyên liệu tham gia trực tiếp. Nồng độ O2 giảm dưới 5% làm hô hấp hiếu khí suy giảm mạnh, tế bào chuyển sang lên men gây tích tụ chất độc.",
-        "Nồng độ Carbon dioxide (CO2): CO2 là sản phẩm của hô hấp. Nồng độ CO2 trong không khí tăng cao (trên 3% - 5%) sẽ gây ức chế hô hấp tế bào."
+        "Nồng độ Oxygen ([[O2]]): [[O2]] là nguyên liệu tham gia trực tiếp. Nồng độ [[O2]] giảm dưới 5% làm hô hấp hiếu khí suy giảm mạnh, tế bào chuyển sang lên men gây tích tụ chất độc.",
+        "Nồng độ Carbon dioxide ([[CO2]]): [[CO2]] là sản phẩm của hô hấp. Nồng độ [[CO2]] trong không khí tăng cao (trên 3% - 5%) sẽ gây ức chế hô hấp tế bào."
       ]
     },
     {
@@ -41,8 +41,8 @@
       "bulletPoints": [
         "Bảo quản khô: Phơi nắng hoặc sấy khô lúa, ngô, đỗ (giảm hàm lượng nước về dưới 13%) giúp hạt bảo quản được nhiều năm.",
         "Bảo quản lạnh: Bảo quản rau, củ, quả tươi trong kho mát hoặc ngăn mát tủ lạnh (1°C - 5°C) để hạ thấp hoạt tính enzym hô hấp.",
-        "Bảo quản trong điều kiện nồng độ CO2 cao: Bơm khí CO2 vào kho kín hoặc phòng chứa để ức chế quá trình hô hấp của trái cây xuất khẩu.",
-        "Bảo quản hút chân không: Rút hết không khí trong bao bì chứa thực phẩm, làm giảm nồng độ O2 ngăn chặn hô hấp và vi sinh vật gây hại."
+        "Bảo quản trong điều kiện nồng độ [[CO2]] cao: Bơm khí [[CO2]] vào kho kín hoặc phòng chứa để ức chế quá trình hô hấp của trái cây xuất khẩu.",
+        "Bảo quản hút chân không: Rút hết không khí trong bao bì chứa thực phẩm, làm giảm nồng độ [[O2]] ngăn chặn hô hấp và vi sinh vật gây hại."
       ]
     }
   ],

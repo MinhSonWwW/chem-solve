@@ -76,7 +76,7 @@
       "bio-mau-tuan-hoan"
     ],
     "difficulty": 1,
-    "prompt": "Đặc điểm hình thái và cấu tạo nào của tế bào hồng cầu người giúp tối ưu hóa chức năng vận chuyển khí O2 và CO2?",
+    "prompt": "Đặc điểm hình thái và cấu tạo nào của tế bào hồng cầu người giúp tối ưu hóa chức năng vận chuyển khí [[O2]] và [[CO2]]?",
     "knowledge": [
       "kb-bio-g8-hong-cau"
     ],
@@ -116,12 +116,12 @@
       {
         "kind": "identify",
         "title": "Nhiệm vụ của hồng cầu",
-        "body": "Hồng cầu là tế bào vận chuyển khí O2 từ phổi đến tế bào và CO2 từ tế bào về phổi."
+        "body": "Hồng cầu là tế bào vận chuyển khí [[O2]] từ phổi đến tế bào và [[CO2]] từ tế bào về phổi."
       },
       {
         "kind": "knowledge",
         "title": "Cấu trúc vi thể thích nghi",
-        "body": "Hồng cầu hình đĩa lõm 2 mặt tăng diện tích khuếch tán khí O2/CO2; hồng cầu trưởng thành không có nhân giúp chứa tối đa hemoglobin (Hb) và dễ dàng biến dạng khi di chuyển trong mao mạch nhỏ."
+        "body": "Hồng cầu hình đĩa lõm 2 mặt tăng diện tích khuếch tán khí [[O2]]/[[CO2]]; hồng cầu trưởng thành không có nhân giúp chứa tối đa hemoglobin (Hb) và dễ dàng biến dạng khi di chuyển trong mao mạch nhỏ."
       },
       {
         "kind": "answer",
@@ -129,7 +129,7 @@
         "body": "Hồng cầu có hình đĩa lõm 2 mặt, không nhân và chứa hemoglobin."
       }
     ],
-    "finalSolution": "Hemoglobin trong hồng cầu kết hợp lỏng lẻo với O2 tại phổi (máu đỏ tươi) và phân li nhả O2 tại các mô (máu đỏ thẫm).",
+    "finalSolution": "Hemoglobin trong hồng cầu kết hợp lỏng lẻo với [[O2]] tại phổi (máu đỏ tươi) và phân li nhả [[O2]] tại các mô (máu đỏ thẫm).",
     "commonMistakes": [
       {
         "id": "cm-01",
@@ -434,15 +434,15 @@
         },
         {
           "id": "opt-b",
-          "label": "Cả hai mạch đều chỉ dẫn máu đỏ thẫm nghèo O2"
+          "label": "Cả hai mạch đều chỉ dẫn máu đỏ thẫm nghèo [[O2]]"
         },
         {
           "id": "opt-c",
-          "label": "Động mạch phổi dẫn máu đỏ thẫm (nghèo O2); Tĩnh mạch phổi dẫn máu đỏ tươi (giàu O2)"
+          "label": "Động mạch phổi dẫn máu đỏ thẫm (nghèo [[O2]]); Tĩnh mạch phổi dẫn máu đỏ tươi (giàu [[O2]])"
         },
         {
           "id": "opt-d",
-          "label": "Cả hai mạch đều chỉ dẫn máu đỏ tươi giàu O2"
+          "label": "Cả hai mạch đều chỉ dẫn máu đỏ tươi giàu [[O2]]"
         }
       ],
       "correctId": "opt-c"
@@ -454,7 +454,7 @@
       },
       {
         "level": 2,
-        "text": "Máu từ tâm thất phải bơm lên phổi để lấy O2 là máu nghèo O2 (đỏ thẫm); sau khi nạp O2 ở phổi về tâm nhĩ trái là máu đỏ tươi."
+        "text": "Máu từ tâm thất phải bơm lên phổi để lấy [[O2]] là máu nghèo [[O2]] (đỏ thẫm); sau khi nạp [[O2]] ở phổi về tâm nhĩ trái là máu đỏ tươi."
       }
     ],
     "steps": [
@@ -466,7 +466,7 @@
       {
         "kind": "knowledge",
         "title": "Biến đổi màu máu tại phổi",
-        "body": "Động mạch phổi dẫn máu nghèo O2 từ tâm thất phải lên phổi để trao đổi khí (máu đỏ thẫm). Tĩnh mạch phổi thu nhận máu đã nhận đầy O2 từ phế nang về tâm nhĩ trái (máu đỏ tươi)."
+        "body": "Động mạch phổi dẫn máu nghèo [[O2]] từ tâm thất phải lên phổi để trao đổi khí (máu đỏ thẫm). Tĩnh mạch phổi thu nhận máu đã nhận đầy [[O2]] từ phế nang về tâm nhĩ trái (máu đỏ tươi)."
       },
       {
         "kind": "answer",
@@ -474,7 +474,7 @@
         "body": "Động mạch phổi dẫn máu đỏ thẫm; tĩnh mạch phổi dẫn máu đỏ tươi."
       }
     ],
-    "finalSolution": "Đây là ngoại lệ quan trọng: Động mạch phổi là động mạch duy nhất dẫn máu nghèo O2, và tĩnh mạch phổi là tĩnh mạch duy nhất dẫn máu giàu O2.",
+    "finalSolution": "Đây là ngoại lệ quan trọng: Động mạch phổi là động mạch duy nhất dẫn máu nghèo [[O2]], và tĩnh mạch phổi là tĩnh mạch duy nhất dẫn máu giàu [[O2]].",
     "commonMistakes": [
       {
         "id": "cm-01",

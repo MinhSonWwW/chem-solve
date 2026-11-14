@@ -48,11 +48,11 @@
   "quickCheck": {
     "prompt": "Khí Carbon monoxide (CO) ở nhiệt độ cao khử được oxide nào sau đây thành kim loại?",
     "options": [
-      { "id": "opt-1", "text": "Al2O3 (Aluminium oxide)", "correct": false },
+      { "id": "opt-1", "text": "[[Al2O3]] (Aluminium oxide)", "correct": false },
       { "id": "opt-2", "text": "MgO (Magnesium oxide)", "correct": false },
       { "id": "opt-3", "text": "CuO (Copper(II) oxide)", "correct": true },
-      { "id": "opt-4", "text": "Na2O (Sodium oxide)", "correct": false }
+      { "id": "opt-4", "text": "[[Na2O]] (Sodium oxide)", "correct": false }
     ],
-    "explanation": "Chính xác! CO và H2 chỉ khử được các oxide kim loại đứng sau Al trong dãy hoạt động (như CuO, Fe2O3, PbO). CuO + CO -(t°)-> Cu + CO2."
+    "explanation": "Chính xác! CO và [[H2]] chỉ khử được các oxide kim loại đứng sau Al trong dãy hoạt động (như CuO, [[Fe2O3]], PbO). CuO + CO -(t°)-> Cu + [[CO2]]."
   }
 }

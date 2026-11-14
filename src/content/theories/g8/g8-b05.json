@@ -30,7 +30,7 @@
         "Bước 2: Cân bằng số nguyên tử của mỗi nguyên tố ở hai vế bằng cách thêm HỆ SỐ thích hợp đặt trước CTHH.",
         "Bước 3: Viết phương trình hóa học hoàn chỉnh (hệ số tối giản)."
       ],
-      "callout": "📌 Tuyệt đối KHÔNG thay đổi chỉ số chân trong CTHH (ví dụ viết 2H2O, không được sửa thành H2O2)!"
+      "callout": "📌 Tuyệt đối KHÔNG thay đổi chỉ số chân trong CTHH (ví dụ viết 2[[H2O]], không được sửa thành [[H2O2]])!"
     },
     {
       "id": "c3",
@@ -41,19 +41,19 @@
       "bulletPoints": [
         "Mẹo 1: Cân bằng kim loại trước -> phi kim -> hydrogen (H) -> oxygen (O) cuối cùng.",
         "Mẹo 2: Nếu có nhóm nguyên tử (như [[SO4]], [[OH]], [[NO3]]) không bị phá vỡ sau phản ứng, hãy coi cả nhóm như 1 đơn vị để cân bằng.",
-        "Mẹo 3: Với chất có số lẻ/chẵn (như O2 và Fe2O3), hãy nhân chẵn bên lẻ lên trước."
+        "Mẹo 3: Với chất có số lẻ/chẵn (như [[O2]] và [[Fe2O3]]), hãy nhân chẵn bên lẻ lên trước."
       ],
       "callout": "⚠️ Kiểm tra lại: Đếm lại nguyên tử O ở hai vế sau cùng, nếu bằng nhau là bạn đã cân bằng đúng!"
     }
   ],
   "quickCheck": {
-    "prompt": "Đốt cháy hoàn toàn 12 g Carbon (C) trong khí Oxygen thu được 44 g khí CO2. Khối lượng khí Oxygen (O2) đã tham gia phản ứng là?",
+    "prompt": "Đốt cháy hoàn toàn 12 g Carbon (C) trong khí Oxygen thu được 44 g khí [[CO2]]. Khối lượng khí Oxygen ([[O2]]) đã tham gia phản ứng là?",
     "options": [
       { "id": "opt-1", "text": "56 g", "correct": false },
       { "id": "opt-2", "text": "32 g", "correct": true },
       { "id": "opt-3", "text": "24 g", "correct": false },
       { "id": "opt-4", "text": "16 g", "correct": false }
     ],
-    "explanation": "Chính xác! Theo định luật bảo toàn khối lượng: m(C) + m(O2) = m(CO2) => 12 + m(O2) = 44 => m(O2) = 44 - 12 = 32 g."
+    "explanation": "Chính xác! Theo định luật bảo toàn khối lượng: m(C) + m([[O2]]) = m([[CO2]]) => 12 + m([[O2]]) = 44 => m([[O2]]) = 44 - 12 = 32 g."
   }
 }

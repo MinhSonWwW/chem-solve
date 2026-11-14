@@ -10,12 +10,12 @@
       "badge": "Khái niệm Muối",
       "badgeColor": "purple",
       "title": "Muối là gì?",
-      "content": "Muối là hợp chất được tạo bởi nguyên tử kim loại (hoặc nhóm amoni NH4) liên kết với gốc acid.",
+      "content": "Muối là hợp chất được tạo bởi nguyên tử kim loại (hoặc nhóm amoni [[NH4]]) liên kết với gốc acid.",
       "bulletPoints": [
         "Muối tan: Hầu hết muối chứa gốc nitrate ([[-NO3]]), sodium ([[Na+]]), potassium ([[K+]]) đều tan tốt trong nước.",
         "Muối không tan (kết tủa quen thuộc): [[BaSO4]] (kết tủa trắng), [[AgCl]] (kết tủa trắng), [[CaCO3]] (đá vôi trắng), [[CuS]] (kết tủa đen)."
       ],
-      "callout": "💡 Tên muối = Tên kim loại (kèm hóa trị nếu có nhiều hóa trị) + Tên gốc acid (ví dụ: Iron(III) chloride FeCl3)."
+      "callout": "💡 Tên muối = Tên kim loại (kèm hóa trị nếu có nhiều hóa trị) + Tên gốc acid (ví dụ: Iron(III) chloride [[FeCl3]])."
     },
     {
       "id": "c2",
@@ -47,13 +47,13 @@
     }
   ],
   "quickCheck": {
-    "prompt": "Khi trộn dung dịch Barium chloride (BaCl2) với dung dịch Sodium sulfate (Na2SO4), hiện tượng quan sát được là gì?",
+    "prompt": "Khi trộn dung dịch Barium chloride ([[BaCl2]]) với dung dịch Sodium sulfate ([[Na2SO4]]), hiện tượng quan sát được là gì?",
     "options": [
       { "id": "opt-1", "text": "Không có hiện tượng gì xảy ra", "correct": false },
       { "id": "opt-2", "text": "Xuất hiện chất kết tủa màu trắng lắng xuống", "correct": true },
       { "id": "opt-3", "text": "Có chất khí sủi bọt thoát ra mãnh liệt", "correct": false },
       { "id": "opt-4", "text": "Dung dịch chuyển sang màu đỏ tím", "correct": false }
     ],
-    "explanation": "Chính xác! Phản ứng tạo thành Barium sulfate (BaSO4) là chất kết tủa màu trắng: BaCl2 + Na2SO4 -> BaSO4(kết tủa trắng) + 2NaCl."
+    "explanation": "Chính xác! Phản ứng tạo thành Barium sulfate ([[BaSO4]]) là chất kết tủa màu trắng: [[BaCl2]] + [[Na2SO4]] -> BaSO4(kết tủa trắng) + 2NaCl."
   }
 }

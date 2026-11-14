@@ -476,7 +476,7 @@
     "commonMistakes": [
       {
         "id": "no-brackets",
-        "message": "Viết CaOH2 là sai: chỉ số 2 phải áp dụng cho cả nhóm [[OH]], nên cần dấu ngoặc.",
+        "message": "Viết [[CaOH2]] là sai: chỉ số 2 phải áp dụng cho cả nhóm [[OH]], nên cần dấu ngoặc.",
         "trapAnswers": [
           "CaOH2"
         ]
@@ -620,7 +620,7 @@
       }
     ],
     "find": {
-      "label": "%Fe trong Fe2O3",
+      "label": "%Fe trong [[Fe2O3]]",
       "unit": "%"
     },
     "answer": {
@@ -690,7 +690,7 @@
       }
     ],
     "find": {
-      "label": "%C trong CO2",
+      "label": "%C trong [[CO2]]",
       "unit": "%"
     },
     "answer": {

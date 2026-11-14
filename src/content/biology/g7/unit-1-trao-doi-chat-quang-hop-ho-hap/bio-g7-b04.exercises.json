@@ -28,7 +28,7 @@
         },
         {
           "id": "opt-d",
-          "label": "Nước vôi trong Ca(OH)2"
+          "label": "Nước vôi trong [[Ca(OH)2]]"
         }
       ],
       "correctId": "opt-b"
@@ -64,7 +64,7 @@
     "commonMistakes": [
       {
         "id": "cm-01",
-        "message": "Nhầm với nước vôi trong (thuốc thử nhận biết khí CO2)."
+        "message": "Nhầm với nước vôi trong (thuốc thử nhận biết khí [[CO2]])."
       }
     ]
   },
@@ -116,12 +116,12 @@
       {
         "kind": "identify",
         "title": "Hiện tượng que đóm gặp khí O2",
-        "body": "Khí O2 duy trì sự cháy nên làm que đóm tàn đỏ bùng cháy thành ngọn lửa."
+        "body": "Khí [[O2]] duy trì sự cháy nên làm que đóm tàn đỏ bùng cháy thành ngọn lửa."
       },
       {
         "kind": "knowledge",
         "title": "Kiến thức cốt lõi SGK KHTN 7",
-        "body": "Khí O2 sinh ra từ quang hợp làm que đóm còn tàn đỏ bùng cháy sáng."
+        "body": "Khí [[O2]] sinh ra từ quang hợp làm que đóm còn tàn đỏ bùng cháy sáng."
       },
       {
         "kind": "answer",
@@ -129,7 +129,7 @@
         "body": "Que đóm bùng cháy sáng."
       }
     ],
-    "finalSolution": "Khí O2 sinh ra từ quang hợp làm que đóm còn tàn đỏ bùng cháy sáng.",
+    "finalSolution": "Khí [[O2]] sinh ra từ quang hợp làm que đóm còn tàn đỏ bùng cháy sáng.",
     "commonMistakes": []
   },
   {
@@ -413,7 +413,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Không có ánh sáng thì quá trình quang hợp không thể diễn ra để giải phóng khí O2."
+        "text": "Không có ánh sáng thì quá trình quang hợp không thể diễn ra để giải phóng khí [[O2]]."
       },
       {
         "level": 2,
@@ -429,7 +429,7 @@
       {
         "kind": "knowledge",
         "title": "Điều kiện ánh sáng trong quang hợp",
-        "body": "Trong bóng tối, cây không nhận được năng lượng quang năng nên không xảy ra quang phân li nước và quang hợp, không tạo ra bọt khí O2."
+        "body": "Trong bóng tối, cây không nhận được năng lượng quang năng nên không xảy ra quang phân li nước và quang hợp, không tạo ra bọt khí [[O2]]."
       },
       {
         "kind": "answer",

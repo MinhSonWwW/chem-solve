@@ -791,7 +791,7 @@
       },
       {
         "level": 2,
-        "text": "Ca có hóa trị II, nhóm OH có hóa trị I → cần 2 nhóm OH. Dùng ngoặc tròn: Ca(OH)2."
+        "text": "Ca có hóa trị II, nhóm OH có hóa trị I → cần 2 nhóm OH. Dùng ngoặc tròn: [[Ca(OH)2]]."
       }
     ],
     "steps": [
@@ -815,7 +815,7 @@
     "commonMistakes": [
       {
         "id": "no-parens",
-        "message": "Cần dùng ngoặc tròn cho nhóm OH khi có chỉ số: Ca(OH)2, không phải CaOH2.",
+        "message": "Cần dùng ngoặc tròn cho nhóm OH khi có chỉ số: [[Ca(OH)2]], không phải [[CaOH2]].",
         "trapAnswers": [
           "CaOH2",
           "CaO2H2"

@@ -11,11 +11,11 @@
       "badge": "Cơ chế",
       "badgeColor": "emerald",
       "title": "Bản chất của quá trình trao đổi khí",
-      "content": "Trao đổi khí là quá trình sinh vật lấy khí O2 hoặc CO2 từ môi trường vào cơ thể và thải khí CO2 hoặc O2 từ cơ thể ra môi trường.",
+      "content": "Trao đổi khí là quá trình sinh vật lấy khí [[O2]] hoặc [[CO2]] từ môi trường vào cơ thể và thải khí [[CO2]] hoặc [[O2]] từ cơ thể ra môi trường.",
       "bulletPoints": [
         "Cơ chế khuếch tán: Các phân tử chất khí luôn tự động khuếch tán từ nơi có nồng độ cao (phân áp cao) đến nơi có nồng độ thấp (phân áp thấp).",
-        "Trong quang hợp: CO2 từ không khí khuếch tán vào lá, O2 từ lá khuếch tán ra ngoài.",
-        "Trong hô hấp: O2 từ môi trường khuếch tán vào tế bào, CO2 từ tế bào khuếch tán ra ngoài."
+        "Trong quang hợp: [[CO2]] từ không khí khuếch tán vào lá, [[O2]] từ lá khuếch tán ra ngoài.",
+        "Trong hô hấp: [[O2]] từ môi trường khuếch tán vào tế bào, [[CO2]] từ tế bào khuếch tán ra ngoài."
       ],
       "callout": "Sự khuếch tán diễn ra tự nhiên theo độ chênh lệch nồng độ chất khí!"
     },
@@ -27,7 +27,7 @@
       "content": "Ở thực vật, trao đổi khí với môi trường diễn ra chủ yếu qua các khí khổng ở lớp biểu bì của lá:",
       "bulletPoints": [
         "Cấu tạo: Mỗi khí khổng gồm 2 tế bào hình hạt đậu áp sát nhau, có thành trong dày sát khe khí và thành ngoài mỏng co giãn tốt.",
-        "Khi tế bào hạt đậu no nước: Thành ngoài mỏng căng phồng kéo theo thành trong uốn cong → Khe khí khổng mở rộng → Hơi nước thoát ra, CO2 khuếch tán vào.",
+        "Khi tế bào hạt đậu no nước: Thành ngoài mỏng căng phồng kéo theo thành trong uốn cong → Khe khí khổng mở rộng → Hơi nước thoát ra, [[CO2]] khuếch tán vào.",
         "Khi tế bào hạt đậu mất nước: Thành ngoài xẹp lại, thành trong duỗi thẳng → Khe khí khổng khép nhỏ lại (không đóng kín hoàn toàn) để hạn chế mất nước."
       ]
     },
@@ -40,7 +40,7 @@
       "bulletPoints": [
         "Qua bề mặt cơ thể (qua da): Giun đất, đỉa, ếch nhái (khi ở dưới nước). Da luôn ẩm ướt và có mạng lưới mao mạch dày đặc dưới da.",
         "Qua hệ thống ống khí: Côn trùng (châu chấu, ong, bướm). Không khí đi qua các lỗ thở ở thành bụng vào mạng lưới ống khí phân nhánh tiếp xúc trực tiếp từng tế bào.",
-        "Qua mang: Cá, tôm, cua, trai sông. Các lá mang mỏng giàu mao mạch hấp thụ O2 hòa tan trong dòng nước chảy liên tục qua mang.",
+        "Qua mang: Cá, tôm, cua, trai sông. Các lá mang mỏng giàu mao mạch hấp thụ [[O2]] hòa tan trong dòng nước chảy liên tục qua mang.",
         "Qua phổi: Bò sát, Chim, Thú và Con người. Bề mặt phế nang của phổi cực kì rộng lớn, thông khí nhờ cử động hô hấp co dãn lồng ngực."
       ]
     }

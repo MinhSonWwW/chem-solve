@@ -101,19 +101,19 @@
       },
       {
         "level": 2,
-        "text": "PTHH: Fe + CuSO4 -> FeSO4 + Cu. Kim loại đồng sinh ra có màu đỏ gạch bám ngoài đinh sắt, ion Cu2+ màu xanh giảm dần."
+        "text": "PTHH: Fe + [[CuSO4]] -> [[FeSO4]] + Cu. Kim loại đồng sinh ra có màu đỏ gạch bám ngoài đinh sắt, ion Cu2+ màu xanh giảm dần."
       }
     ],
     "steps": [
       {
         "kind": "identify",
         "title": "Phản ứng kim loại tác dụng với muối",
-        "body": "Fe tác dụng với dung dịch CuSO4."
+        "body": "Fe tác dụng với dung dịch [[CuSO4]]."
       },
       {
         "kind": "knowledge",
         "title": "PTHH và hiện tượng",
-        "body": "Fe + CuSO4 -> FeSO4 + Cu\nKim loại Cu sinh ra có màu đỏ bám ngoài đinh sắt. Dung dịch CuSO4 màu xanh lam chuyển dần sang màu xanh lục nhạt của FeSO4."
+        "body": "Fe + [[CuSO4]] -> [[FeSO4]] + Cu\nKim loại Cu sinh ra có màu đỏ bám ngoài đinh sắt. Dung dịch [[CuSO4]] màu xanh lam chuyển dần sang màu xanh lục nhạt của [[FeSO4]]."
       },
       {
         "kind": "answer",
@@ -121,7 +121,7 @@
         "body": "Lớp kim loại màu đỏ bám ngoài đinh sắt và màu xanh dung dịch nhạt dần."
       }
     ],
-    "finalSolution": "PTHH: Fe + CuSO4 -> FeSO4 + Cu. Hiện tượng: có lớp **đồng màu đỏ** bám ngoài đinh sắt, màu xanh dung dịch nhạt dần.",
+    "finalSolution": "PTHH: Fe + [[CuSO4]] -> [[FeSO4]] + Cu. Hiện tượng: có lớp **đồng màu đỏ** bám ngoài đinh sắt, màu xanh dung dịch nhạt dần.",
     "commonMistakes": [
       {
         "id": "thought-gas-produced",
@@ -158,18 +158,18 @@
     "hints": [
       {
         "level": 1,
-        "text": "Trong muối Cu(NO3)2 có 2 nhóm (NO3), do đó vế trái cần 2 phân tử AgNO3."
+        "text": "Trong muối [[Cu(NO3)2]] có 2 nhóm ([[NO3]]), do đó vế trái cần 2 phân tử [[AgNO3]]."
       },
       {
         "level": 2,
-        "text": "2 AgNO3 tạo ra 2 Ag ở vế phải. Tỉ lệ: 1, 2, 1, 2."
+        "text": "2 [[AgNO3]] tạo ra 2 Ag ở vế phải. Tỉ lệ: 1, 2, 1, 2."
       }
     ],
     "steps": [
       {
         "kind": "identify",
         "title": "Cân bằng nhóm (NO3)",
-        "body": "Vế phải có 2 nhóm (NO3) => đặt hệ số 2 trước AgNO3."
+        "body": "Vế phải có 2 nhóm ([[NO3]]) => đặt hệ số 2 trước [[AgNO3]]."
       },
       {
         "kind": "compute",
@@ -184,10 +184,10 @@
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Phương trình hoàn chỉnh: **Cu + 2AgNO3 -> Cu(NO3)2 + 2Ag**."
+        "body": "Phương trình hoàn chỉnh: **Cu + 2[[AgNO3]] -> [[Cu(NO3)2]] + 2Ag**."
       }
     ],
-    "finalSolution": "**Cu + 2AgNO3 -> Cu(NO3)2 + 2Ag**",
+    "finalSolution": "**Cu + 2[[AgNO3]] -> [[Cu(NO3)2]] + 2Ag**",
     "commonMistakes": [
       {
         "id": "forgot-ag-coefficient",
@@ -208,7 +208,7 @@
       "statements": [
         {
           "id": "s1",
-          "text": "Kim loại đồng (Cu) đẩy được magnesium (Mg) ra khỏi dung dịch MgSO4.",
+          "text": "Kim loại đồng (Cu) đẩy được magnesium (Mg) ra khỏi dung dịch [[MgSO4]].",
           "correct": false
         },
         {
@@ -218,7 +218,7 @@
         },
         {
           "id": "s3",
-          "text": "Kim loại bạc (Ag) và vàng (Au) phản ứng giải phóng khí H2 với dung dịch HCl loãng.",
+          "text": "Kim loại bạc (Ag) và vàng (Au) phản ứng giải phóng khí [[H2]] với dung dịch HCl loãng.",
           "correct": false
         }
       ]
@@ -242,7 +242,7 @@
       {
         "kind": "knowledge",
         "title": "Đối chiếu từng câu",
-        "body": "1. Cu đứng sau Mg nên không đẩy được: SAI. 2. Zn đứng trước Fe nên đẩy được: ĐÚNG. 3. Ag và Au đứng sau H nên không sinh khí H2: SAI."
+        "body": "1. Cu đứng sau Mg nên không đẩy được: SAI. 2. Zn đứng trước Fe nên đẩy được: ĐÚNG. 3. Ag và Au đứng sau H nên không sinh khí [[H2]]: SAI."
       },
       {
         "kind": "answer",

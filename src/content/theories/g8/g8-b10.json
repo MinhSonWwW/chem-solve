@@ -28,9 +28,9 @@
       "formulaExample": "CaO + H2O -> Ca(OH)2",
       "bulletPoints": [
         "Tác dụng với nước: Một số oxide base của kim loại kiềm/kiềm thổ ([[Na2O]], [[K2O]], [[CaO]], [[BaO]]) tác dụng với nước tạo dung dịch kiềm (hiện tượng tôi vôi sống [[CaO]]).",
-        "Tác dụng với acid: Hầu hết oxide base đều tác dụng với dung dịch acid tạo muối và nước (ví dụ: [[CuO + 2HCl -> CuCl2 + H2O]], bột đen CuO tan ra tạo dung dịch CuCl2 màu xanh lam)."
+        "Tác dụng với acid: Hầu hết oxide base đều tác dụng với dung dịch acid tạo muối và nước (ví dụ: [[CuO + 2HCl -> CuCl2 + H2O]], bột đen CuO tan ra tạo dung dịch [[CuCl2]] màu xanh lam)."
       ],
-      "callout": "📌 Chú ý: Các oxide base không tan (như CuO, Fe2O3, MgO) KHÔNG tác dụng với nước ở nhiệt độ thường!"
+      "callout": "📌 Chú ý: Các oxide base không tan (như CuO, [[Fe2O3]], MgO) KHÔNG tác dụng với nước ở nhiệt độ thường!"
     },
     {
       "id": "c3",
@@ -41,19 +41,19 @@
       "formulaExample": "CO2 + Ca(OH)2 -> CaCO3 + H2O",
       "bulletPoints": [
         "Tác dụng với nước: Nhiều oxide acid tác dụng với nước tạo dung dịch acid tương ứng ([[SO3 + H2O -> H2SO4]], [[P2O5 + 3H2O -> 2H3PO4]]).",
-        "Tác dụng với dung dịch base (kiềm): Tạo thành muối và nước. Thí nghiệm nhận biết khí [[CO2]]: Dẫn khí CO2 vào dung dịch nước vôi trong [[Ca(OH)2]], xuất hiện kết tủa trắng [[CaCO3]] làm đục nước vôi."
+        "Tác dụng với dung dịch base (kiềm): Tạo thành muối và nước. Thí nghiệm nhận biết khí [[CO2]]: Dẫn khí [[CO2]] vào dung dịch nước vôi trong [[Ca(OH)2]], xuất hiện kết tủa trắng [[CaCO3]] làm đục nước vôi."
       ],
-      "callout": "⚠️ Nhớ thí nghiệm kinh điển: Sục CO2 hoặc SO2 vào nước vôi trong Ca(OH)2 làm dung dịch bị vẩn đục trắng!"
+      "callout": "⚠️ Nhớ thí nghiệm kinh điển: Sục [[CO2]] hoặc [[SO2]] vào nước vôi trong [[Ca(OH)2]] làm dung dịch bị vẩn đục trắng!"
     }
   ],
   "quickCheck": {
     "prompt": "Chất nào sau đây thuộc loại OXIDE BASE?",
     "options": [
-      { "id": "opt-1", "text": "Khí Carbon dioxide (CO2)", "correct": false },
-      { "id": "opt-2", "text": "Khí Sulfur dioxide (SO2)", "correct": false },
+      { "id": "opt-1", "text": "Khí Carbon dioxide ([[CO2]])", "correct": false },
+      { "id": "opt-2", "text": "Khí Sulfur dioxide ([[SO2]])", "correct": false },
       { "id": "opt-3", "text": "Calcium oxide - Vôi sống (CaO)", "correct": true },
-      { "id": "opt-4", "text": "Diphosphorus pentoxide (P2O5)", "correct": false }
+      { "id": "opt-4", "text": "Diphosphorus pentoxide ([[P2O5]])", "correct": false }
     ],
-    "explanation": "Chính xác! CaO (Calcium oxide) là hợp chất của kim loại Ca với oxygen nên là oxide base. Các chất CO2, SO2, P2O5 là oxide của phi kim nên thuộc loại oxide acid."
+    "explanation": "Chính xác! CaO (Calcium oxide) là hợp chất của kim loại Ca với oxygen nên là oxide base. Các chất [[CO2]], [[SO2]], [[P2O5]] là oxide của phi kim nên thuộc loại oxide acid."
   }
 }

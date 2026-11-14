@@ -522,7 +522,7 @@
       }
     ],
     "find": {
-      "label": "Số mol CuSO4 cần lấy (n)",
+      "label": "Số mol [[CuSO4]] cần lấy (n)",
       "unit": "mol"
     },
     "knowledge": [
@@ -566,7 +566,7 @@
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Cần lấy đúng **0,2 mol** CuSO4."
+        "body": "Cần lấy đúng **0,2 mol** [[CuSO4]]."
       }
     ],
     "finalSolution": "V = 0,5 L => n = 0,4 × 0,5 = **0,2 mol**.",

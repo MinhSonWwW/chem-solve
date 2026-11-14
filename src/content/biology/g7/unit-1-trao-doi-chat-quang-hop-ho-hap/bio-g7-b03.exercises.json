@@ -140,7 +140,7 @@
       "bio-yeu-to-quang-hop"
     ],
     "difficulty": 2,
-    "prompt": "Nồng độ khí Carbon dioxide (CO2) trung bình trong không khí tự nhiên là bao nhiêu?",
+    "prompt": "Nồng độ khí Carbon dioxide ([[CO2]]) trung bình trong không khí tự nhiên là bao nhiêu?",
     "knowledge": [
       "kb-bio-g7-yeu-to-co2"
     ],
@@ -169,7 +169,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "CO2 chỉ chiếm một phần rất nhỏ trong khí quyển (21% là Oxygen, 78% là Nitrogen)."
+        "text": "[[CO2]] chỉ chiếm một phần rất nhỏ trong khí quyển (21% là Oxygen, 78% là Nitrogen)."
       },
       {
         "level": 2,
@@ -180,12 +180,12 @@
       {
         "kind": "identify",
         "title": "Xác định yêu cầu câu hỏi",
-        "body": "Nồng độ khí Carbon dioxide (CO2) trung bình trong không khí tự nhiên là bao nhiêu?"
+        "body": "Nồng độ khí Carbon dioxide ([[CO2]]) trung bình trong không khí tự nhiên là bao nhiêu?"
       },
       {
         "kind": "knowledge",
         "title": "Thành phần không khí",
-        "body": "Nồng độ CO2 tự nhiên khoảng 0,03% (hoặc ~0,04%)."
+        "body": "Nồng độ [[CO2]] tự nhiên khoảng 0,03% (hoặc ~0,04%)."
       },
       {
         "kind": "answer",
@@ -193,11 +193,11 @@
         "body": "Đáp án đúng là 0,03%."
       }
     ],
-    "finalSolution": "Nồng độ khí CO2 tự nhiên trong không khí là khoảng 0,03%.",
+    "finalSolution": "Nồng độ khí [[CO2]] tự nhiên trong không khí là khoảng 0,03%.",
     "commonMistakes": [
       {
         "id": "cm-01",
-        "message": "Nhầm nồng độ CO2 với nồng độ Oxygen (21%) hoặc Nitrogen (78%)."
+        "message": "Nhầm nồng độ [[CO2]] với nồng độ Oxygen (21%) hoặc Nitrogen (78%)."
       }
     ]
   },
@@ -222,7 +222,7 @@
         },
         {
           "id": "opt-b",
-          "label": "Vì thiếu nước làm tế bào khí khổng mất sức trương và đóng lại, khiến CO2 không thể khuếch tán vào lá"
+          "label": "Vì thiếu nước làm tế bào khí khổng mất sức trương và đóng lại, khiến [[CO2]] không thể khuếch tán vào lá"
         },
         {
           "id": "opt-c",
@@ -238,7 +238,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Khí khổng đóng lại để chống mất nước, vô tình chặn luôn nguồn khí CO2 vào lá."
+        "text": "Khí khổng đóng lại để chống mất nước, vô tình chặn luôn nguồn khí [[CO2]] vào lá."
       },
       {
         "level": 2,
@@ -249,12 +249,12 @@
       {
         "kind": "identify",
         "title": "Cơ chế khi thiếu nước",
-        "body": "Khi thiếu nước, tế bào hạt đậu của khí khổng xẹp lại đóng khe khí khổng. Khi đó CO2 không vào được lục lạp, phản ứng quang hợp không đủ nguyên liệu."
+        "body": "Khi thiếu nước, tế bào hạt đậu của khí khổng xẹp lại đóng khe khí khổng. Khi đó [[CO2]] không vào được lục lạp, phản ứng quang hợp không đủ nguyên liệu."
       },
       {
         "kind": "knowledge",
         "title": "Kiến thức cốt lõi SGK KHTN 7",
-        "body": "Thiếu nước làm khí khổng đóng, ngăn cản CO2 khuếch tán vào lá khiến quang hợp giảm mạnh."
+        "body": "Thiếu nước làm khí khổng đóng, ngăn cản [[CO2]] khuếch tán vào lá khiến quang hợp giảm mạnh."
       },
       {
         "kind": "answer",
@@ -262,7 +262,7 @@
         "body": "Đáp án chính xác giải thích chính xác cơ chế sinh lí."
       }
     ],
-    "finalSolution": "Thiếu nước làm khí khổng đóng, ngăn cản CO2 khuếch tán vào lá khiến quang hợp giảm mạnh.",
+    "finalSolution": "Thiếu nước làm khí khổng đóng, ngăn cản [[CO2]] khuếch tán vào lá khiến quang hợp giảm mạnh.",
     "commonMistakes": []
   },
   {
@@ -401,7 +401,7 @@
       "bio-yeu-to-quang-hop"
     ],
     "difficulty": 3,
-    "prompt": "Khi tăng nồng độ khí CO2 trong nhà kính từ 0,03% lên khoảng 0,1% thì cường độ quang hợp của cây xanh thay đổi như thế nào?",
+    "prompt": "Khi tăng nồng độ khí [[CO2]] trong nhà kính từ 0,03% lên khoảng 0,1% thì cường độ quang hợp của cây xanh thay đổi như thế nào?",
     "knowledge": [
       "kb-bio-g7-yeu-to-co2"
     ],
@@ -430,7 +430,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Nồng độ CO2 0,1% vẫn nằm trong ngưỡng thuận lợi (dưới ngưỡng ngộ độc 0,2%)."
+        "text": "Nồng độ [[CO2]] 0,1% vẫn nằm trong ngưỡng thuận lợi (dưới ngưỡng ngộ độc 0,2%)."
       },
       {
         "level": 2,
@@ -441,12 +441,12 @@
       {
         "kind": "identify",
         "title": "Xác định yêu cầu câu hỏi",
-        "body": "Khi tăng nồng độ khí CO2 trong nhà kính từ 0,03% lên khoảng 0,1% thì cường độ quang hợp của cây xanh thay đổi như thế nào?"
+        "body": "Khi tăng nồng độ khí [[CO2]] trong nhà kính từ 0,03% lên khoảng 0,1% thì cường độ quang hợp của cây xanh thay đổi như thế nào?"
       },
       {
         "kind": "knowledge",
         "title": "Quan hệ giữa nồng độ CO2 và quang hợp",
-        "body": "Khi tăng nồng độ CO2 từ mức tự nhiên (0,03%) lên khoảng 0,1% (chưa vượt quá 0,2%), nguyên liệu dồi dào hơn giúp enzym xúc tác nhanh hơn, cường độ quang hợp tăng."
+        "body": "Khi tăng nồng độ [[CO2]] từ mức tự nhiên (0,03%) lên khoảng 0,1% (chưa vượt quá 0,2%), nguyên liệu dồi dào hơn giúp enzym xúc tác nhanh hơn, cường độ quang hợp tăng."
       },
       {
         "kind": "answer",
@@ -454,11 +454,11 @@
         "body": "Cường độ quang hợp tăng lên rõ rệt."
       }
     ],
-    "finalSolution": "Tăng nồng độ CO2 trong giới hạn thích hợp (dưới 0,2%) làm tăng tốc độ quang hợp.",
+    "finalSolution": "Tăng nồng độ [[CO2]] trong giới hạn thích hợp (dưới 0,2%) làm tăng tốc độ quang hợp.",
     "commonMistakes": [
       {
         "id": "cm-01",
-        "message": "Nghĩ rằng tăng CO2 luôn gây hại cho cây trồng."
+        "message": "Nghĩ rằng tăng [[CO2]] luôn gây hại cho cây trồng."
       }
     ]
   },

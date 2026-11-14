@@ -36,7 +36,7 @@
       },
       {
         "level": 2,
-        "text": "Nhiệt luyện dùng chất khử như CO, H2, C để khử oxide kim loại từ Zn trở về sau."
+        "text": "Nhiệt luyện dùng chất khử như CO, [[H2]], C để khử oxide kim loại từ Zn trở về sau."
       }
     ],
     "steps": [
@@ -56,7 +56,7 @@
         "body": "Nhiệt luyện áp dụng cho kim loại trung bình và yếu."
       }
     ],
-    "finalSolution": "Phương pháp nhiệt luyện dùng chất khử (CO, C, H2) khử oxide của kim loại đứng sau Al (Zn, Fe, Cu, Pb...).",
+    "finalSolution": "Phương pháp nhiệt luyện dùng chất khử (CO, C, [[H2]]) khử oxide của kim loại đứng sau Al (Zn, Fe, Cu, Pb...).",
     "commonMistakes": [
       {
         "id": "confuse-al",
@@ -276,7 +276,7 @@
     "commonMistakes": [
       {
         "id": "co-role",
-        "message": "CO lấy oxygen của Fe2O3: Fe2O3 + 3CO -> 2Fe + 3CO2. CO là chất khử."
+        "message": "CO lấy oxygen của [[Fe2O3]]: [[Fe2O3]] + 3CO -> 2Fe + 3[[CO2]]. CO là chất khử."
       }
     ]
   },
@@ -287,25 +287,25 @@
       "metal-extraction"
     ],
     "difficulty": 2,
-    "prompt": "Khí CO khử hoàn toàn sắt(III) oxide (Fe2O3) ở nhiệt độ cao theo phương trình nào sau đây?",
+    "prompt": "Khí CO khử hoàn toàn sắt(III) oxide ([[Fe2O3]]) ở nhiệt độ cao theo phương trình nào sau đây?",
     "answer": {
       "kind": "mcq-single",
       "options": [
         {
           "id": "a",
-          "label": "2Fe2O3 + 3CO -> 4Fe + 3CO2"
+          "label": "2[[Fe2O3]] + 3CO -> 4Fe + 3[[CO2]]"
         },
         {
           "id": "b",
-          "label": "Fe2O3 + CO -> 2FeO + CO2"
+          "label": "[[Fe2O3]] + CO -> 2FeO + [[CO2]]"
         },
         {
           "id": "c",
-          "label": "Fe2O3 + 3C -> 2Fe + 3CO"
+          "label": "[[Fe2O3]] + 3C -> 2Fe + 3CO"
         },
         {
           "id": "d",
-          "label": "Fe2O3 + 3CO -> 2Fe + 3CO2 (to)"
+          "label": "[[Fe2O3]] + 3CO -> 2Fe + 3[[CO2]] (to)"
         }
       ],
       "correctId": "d"
@@ -313,35 +313,35 @@
     "hints": [
       {
         "level": 1,
-        "text": "1 phân tử Fe2O3 chứa 3 nguyên tử O, cần 3 phân tử CO để lấy hết O tạo 3 phân tử CO2."
+        "text": "1 phân tử [[Fe2O3]] chứa 3 nguyên tử O, cần 3 phân tử CO để lấy hết O tạo 3 phân tử [[CO2]]."
       },
       {
         "level": 2,
-        "text": "Phương trình cân bằng: Fe2O3 + 3CO -> 2Fe + 3CO2."
+        "text": "Phương trình cân bằng: [[Fe2O3]] + 3CO -> 2Fe + 3[[CO2]]."
       }
     ],
     "steps": [
       {
         "kind": "identify",
         "title": "Yêu cầu",
-        "body": "Xác định phương trình khử Fe2O3 bằng CO."
+        "body": "Xác định phương trình khử [[Fe2O3]] bằng CO."
       },
       {
         "kind": "knowledge",
         "title": "Phương trình",
-        "body": "Fe2O3 + 3CO --to--> 2Fe + 3CO2."
+        "body": "[[Fe2O3]] + 3CO --to--> 2Fe + 3[[CO2]]."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Đáp án chính xác: Fe2O3 + 3CO -> 2Fe + 3CO2."
+        "body": "Đáp án chính xác: [[Fe2O3]] + 3CO -> 2Fe + 3[[CO2]]."
       }
     ],
-    "finalSolution": "Fe2O3 + 3CO --to--> 2Fe + 3CO2.",
+    "finalSolution": "[[Fe2O3]] + 3CO --to--> 2Fe + 3[[CO2]].",
     "commonMistakes": [
       {
         "id": "unbalanced-equation",
-        "message": "Chú ý hệ số cân bằng tỉ lệ 1 Fe2O3 : 3 CO : 2 Fe : 3 CO2."
+        "message": "Chú ý hệ số cân bằng tỉ lệ 1 [[Fe2O3]] : 3 CO : 2 Fe : 3 [[CO2]]."
       }
     ]
   },
@@ -365,11 +365,11 @@
     "hints": [
       {
         "level": 1,
-        "text": "Đầu tiên than cốc cháy tạo nhiệt và CO2 ở đáy lò."
+        "text": "Đầu tiên than cốc cháy tạo nhiệt và [[CO2]] ở đáy lò."
       },
       {
         "level": 2,
-        "text": "CO2 đi lên gặp than nóng tạo CO khử quặng, xỉ nhẹ nổi lên trên gang lỏng."
+        "text": "[[CO2]] đi lên gặp than nóng tạo CO khử quặng, xỉ nhẹ nổi lên trên gang lỏng."
       }
     ],
     "steps": [
@@ -389,7 +389,7 @@
         "body": "Đốt than -> tạo CO -> khử quặng -> tạo xỉ."
       }
     ],
-    "finalSolution": "C + O2 -> CO2; C + CO2 -> 2CO; CO khử oxide sắt; CaCO3 tạo xỉ.",
+    "finalSolution": "C + [[O2]] -> [[CO2]]; C + [[CO2]] -> 2CO; CO khử oxide sắt; [[CaCO3]] tạo xỉ.",
     "commonMistakes": []
   }
 ]

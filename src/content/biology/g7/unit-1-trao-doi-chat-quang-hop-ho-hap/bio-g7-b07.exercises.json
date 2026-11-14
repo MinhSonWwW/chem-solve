@@ -7,7 +7,7 @@
       "bio-thuc-hanh-ho-hap"
     ],
     "difficulty": 1,
-    "prompt": "Hóa chất nào được dùng để phát hiện khí Carbon dioxide (CO2) thải ra từ bình hạt nảy mầm hô hấp?",
+    "prompt": "Hóa chất nào được dùng để phát hiện khí Carbon dioxide ([[CO2]]) thải ra từ bình hạt nảy mầm hô hấp?",
     "knowledge": [
       "kb-bio-g7-thuc-hanh-co2"
     ],
@@ -20,7 +20,7 @@
         },
         {
           "id": "opt-b",
-          "label": "Dung dịch nước vôi trong Ca(OH)2"
+          "label": "Dung dịch nước vôi trong [[Ca(OH)2]]"
         },
         {
           "id": "opt-c",
@@ -36,7 +36,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Dung dịch trong suốt này khi gặp khí CO2 sẽ phản ứng tạo kết tủa trắng làm dung dịch bị vẩn đục."
+        "text": "Dung dịch trong suốt này khi gặp khí [[CO2]] sẽ phản ứng tạo kết tủa trắng làm dung dịch bị vẩn đục."
       },
       {
         "level": 2,
@@ -47,20 +47,20 @@
       {
         "kind": "identify",
         "title": "Hóa chất nhận biết khí CO2",
-        "body": "Nước vôi trong Ca(OH)2 là thuốc thử đặc trưng để phát hiện khí CO2."
+        "body": "Nước vôi trong [[Ca(OH)2]] là thuốc thử đặc trưng để phát hiện khí [[CO2]]."
       },
       {
         "kind": "knowledge",
         "title": "Kiến thức cốt lõi SGK KHTN 7",
-        "body": "Khí CO2 từ hô hấp làm đục nước vôi trong Ca(OH)2."
+        "body": "Khí [[CO2]] từ hô hấp làm đục nước vôi trong [[Ca(OH)2]]."
       },
       {
         "kind": "answer",
         "title": "Chọn đáp án",
-        "body": "Dung dịch nước vôi trong Ca(OH)2."
+        "body": "Dung dịch nước vôi trong [[Ca(OH)2]]."
       }
     ],
-    "finalSolution": "Khí CO2 từ hô hấp làm đục nước vôi trong Ca(OH)2.",
+    "finalSolution": "Khí [[CO2]] từ hô hấp làm đục nước vôi trong [[Ca(OH)2]].",
     "commonMistakes": [
       {
         "id": "cm-01",
@@ -149,19 +149,19 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "CO2 + Ca(OH)2 → CaCO3↓ (kết tủa trắng) + H2O"
+          "label": "[[CO2]] + [[Ca(OH)2]] → [[CaCO3]]↓ (kết tủa trắng) + [[H2O]]"
         },
         {
           "id": "opt-b",
-          "label": "Glucose + Ca(OH)2 → Ca(OH)2 + C6H12O6"
+          "label": "Glucose + [[Ca(OH)2]] → [[Ca(OH)2]] + [[C6H12O6]]"
         },
         {
           "id": "opt-c",
-          "label": "O2 + Ca(OH)2 → CaO + H2O2"
+          "label": "[[O2]] + [[Ca(OH)2]] → CaO + [[H2O2]]"
         },
         {
           "id": "opt-d",
-          "label": "N2 + Ca(OH)2 → Ca(NO3)2 + H2"
+          "label": "[[N2]] + [[Ca(OH)2]] → [[Ca(NO3)2]] + [[H2]]"
         }
       ],
       "correctId": "opt-a"
@@ -169,7 +169,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Khí CO2 tác dụng với calcium hydroxide tạo kết tủa calcium carbonate màu trắng đục."
+        "text": "Khí [[CO2]] tác dụng với calcium hydroxide tạo kết tủa calcium carbonate màu trắng đục."
       },
       {
         "level": 2,
@@ -185,7 +185,7 @@
       {
         "kind": "equation",
         "title": "Phản ứng hóa học tạo kết tủa",
-        "body": "CO2 + Ca(OH)2 → CaCO3↓ + H2O. CaCO3 là chất không tan làm nước vôi vẩn đục."
+        "body": "[[CO2]] + [[Ca(OH)2]] → [[CaCO3]]↓ + [[H2O]]. [[CaCO3]] là chất không tan làm nước vôi vẩn đục."
       },
       {
         "kind": "answer",
@@ -193,7 +193,7 @@
         "body": "Đáp án chính xác là phương trình hóa học chuẩn."
       }
     ],
-    "finalSolution": "Khí CO2 phản ứng với nước vôi trong tạo kết tủa trắng CaCO3 làm vẩn đục dung dịch.",
+    "finalSolution": "Khí [[CO2]] phản ứng với nước vôi trong tạo kết tủa trắng [[CaCO3]] làm vẩn đục dung dịch.",
     "commonMistakes": []
   },
   {
@@ -221,7 +221,7 @@
         },
         {
           "id": "opt-c",
-          "label": "Hạt đậu nảy mầm đã hô hấp và tiêu thụ hết khí Oxygen (O2) trong bình"
+          "label": "Hạt đậu nảy mầm đã hô hấp và tiêu thụ hết khí Oxygen ([[O2]]) trong bình"
         },
         {
           "id": "opt-d",
@@ -233,7 +233,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Sự cháy cần khí O2. Mất nguồn O2 thì ngọn lửa không thể tiếp tục cháy."
+        "text": "Sự cháy cần khí [[O2]]. Mất nguồn [[O2]] thì ngọn lửa không thể tiếp tục cháy."
       },
       {
         "level": 2,
@@ -244,7 +244,7 @@
       {
         "kind": "identify",
         "title": "Hiện tượng ngọn lửa tắt",
-        "body": "Que diêm tắt vì thiếu khí O2 duy trì sự cháy, chứng tỏ hạt nảy mầm đã hút hết O2 trong bình cho hô hấp."
+        "body": "Que diêm tắt vì thiếu khí [[O2]] duy trì sự cháy, chứng tỏ hạt nảy mầm đã hút hết [[O2]] trong bình cho hô hấp."
       },
       {
         "kind": "knowledge",
@@ -297,7 +297,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Lá cây xanh có thể tiến hành quang hợp nếu có ánh sáng làm sai lệch lượng CO2 và O2."
+        "text": "Lá cây xanh có thể tiến hành quang hợp nếu có ánh sáng làm sai lệch lượng [[CO2]] và [[O2]]."
       },
       {
         "level": 2,
@@ -408,11 +408,11 @@
           "right": "Cột thủy ngân trên nhiệt kế dâng cao"
         },
         {
-          "left": "Thí nghiệm chứng minh hô hấp thải CO2",
+          "left": "Thí nghiệm chứng minh hô hấp thải [[CO2]]",
           "right": "Dung dịch nước vôi trong bị vẩn đục trắng"
         },
         {
-          "left": "Thí nghiệm chứng minh hô hấp hút O2",
+          "left": "Thí nghiệm chứng minh hô hấp hút [[O2]]",
           "right": "Ngọn lửa que diêm bị dập tắt"
         },
         {
@@ -424,7 +424,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Nhiệt kế đo nhiệt độ; Nước vôi trong đo CO2; Que diêm đo O2."
+        "text": "Nhiệt kế đo nhiệt độ; Nước vôi trong đo [[CO2]]; Que diêm đo [[O2]]."
       },
       {
         "level": 2,
@@ -435,12 +435,12 @@
       {
         "kind": "identify",
         "title": "Phân loại hiện tượng",
-        "body": "Nhiệt: nhiệt kế dâng. CO2: nước vôi trong đục. Hút O2: que diêm tắt. Đối chứng: không có biến đổi."
+        "body": "Nhiệt: nhiệt kế dâng. [[CO2]]: nước vôi trong đục. Hút [[O2]]: que diêm tắt. Đối chứng: không có biến đổi."
       },
       {
         "kind": "knowledge",
         "title": "Kiến thức cốt lõi SGK KHTN 7",
-        "body": "Các hiện tượng quan sát được phản ánh đầy đủ đặc điểm của hô hấp tế bào: tỏa nhiệt, thải CO2, tiêu thụ O2."
+        "body": "Các hiện tượng quan sát được phản ánh đầy đủ đặc điểm của hô hấp tế bào: tỏa nhiệt, thải [[CO2]], tiêu thụ [[O2]]."
       },
       {
         "kind": "answer",
@@ -448,7 +448,7 @@
         "body": "Ghép đúng 4 cặp hiện tượng và thí nghiệm."
       }
     ],
-    "finalSolution": "Các hiện tượng quan sát được phản ánh đầy đủ đặc điểm của hô hấp tế bào: tỏa nhiệt, thải CO2, tiêu thụ O2.",
+    "finalSolution": "Các hiện tượng quan sát được phản ánh đầy đủ đặc điểm của hô hấp tế bào: tỏa nhiệt, thải [[CO2]], tiêu thụ [[O2]].",
     "commonMistakes": []
   },
   {
@@ -488,7 +488,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Tổng hợp kết quả: tiêu thụ O2 (que diêm tắt), sinh CO2 (nước vôi đục), sinh nhiệt (nhiệt kế tăng)."
+        "text": "Tổng hợp kết quả: tiêu thụ [[O2]] (que diêm tắt), sinh [[CO2]] (nước vôi đục), sinh nhiệt (nhiệt kế tăng)."
       },
       {
         "level": 2,
@@ -504,7 +504,7 @@
       {
         "kind": "knowledge",
         "title": "Tổng kết quy luật hô hấp tế bào",
-        "body": "Hô hấp tiêu thụ O2, thải CO2 và sinh nhiệt năng. Kết quả thí nghiệm khẳng định định luật chuyển hóa trong sinh học."
+        "body": "Hô hấp tiêu thụ [[O2]], thải [[CO2]] và sinh nhiệt năng. Kết quả thí nghiệm khẳng định định luật chuyển hóa trong sinh học."
       },
       {
         "kind": "answer",
@@ -512,7 +512,7 @@
         "body": "Đáp án chính xác tóm tắt chính xác toàn bộ bản chất khoa học của bài học."
       }
     ],
-    "finalSolution": "Hô hấp tế bào ở thực vật tiêu thụ O2, sinh ra CO2 và giải phóng năng lượng nhiệt.",
+    "finalSolution": "Hô hấp tế bào ở thực vật tiêu thụ [[O2]], sinh ra [[CO2]] và giải phóng năng lượng nhiệt.",
     "commonMistakes": []
   }
 ]

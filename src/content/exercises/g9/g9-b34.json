@@ -6,7 +6,7 @@
       "limestone-silicate"
     ],
     "difficulty": 1,
-    "prompt": "Khi nung đá vôi (CaCO3) ở nhiệt độ khoảng 900 - 1000°C trong lò nung vôi, phản ứng xảy ra tạo thành các sản phẩm nào?",
+    "prompt": "Khi nung đá vôi ([[CaCO3]]) ở nhiệt độ khoảng 900 - 1000°C trong lò nung vôi, phản ứng xảy ra tạo thành các sản phẩm nào?",
     "answer": {
       "kind": "mcq-single",
       "options": [
@@ -16,15 +16,15 @@
         },
         {
           "id": "b",
-          "label": "Vôi sống (CaO) và khí carbon dioxide (CO2)"
+          "label": "Vôi sống (CaO) và khí carbon dioxide ([[CO2]])"
         },
         {
           "id": "c",
-          "label": "Calcium chloride (CaCl2) và nước"
+          "label": "Calcium chloride ([[CaCl2]]) và nước"
         },
         {
           "id": "d",
-          "label": "Vôi tôi Ca(OH)2 và khí oxygen"
+          "label": "Vôi tôi [[Ca(OH)2]] và khí oxygen"
         }
       ],
       "correctId": "b"
@@ -32,7 +32,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Phản ứng nhiệt phân đá vôi: CaCO3 --to--> CaO + CO2."
+        "text": "Phản ứng nhiệt phân đá vôi: [[CaCO3]] --to--> CaO + [[CO2]]."
       },
       {
         "level": 2,
@@ -43,24 +43,24 @@
       {
         "kind": "identify",
         "title": "Nhiệt phân đá vôi",
-        "body": "Xác định sản phẩm nung CaCO3."
+        "body": "Xác định sản phẩm nung [[CaCO3]]."
       },
       {
         "kind": "knowledge",
         "title": "PTHH",
-        "body": "CaCO3 --to (900-1000°C)--> CaO (vôi sống) + CO2↑."
+        "body": "[[CaCO3]] --to (900-1000°C)--> CaO (vôi sống) + [[CO2]]↑."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Vôi sống (CaO) và khí CO2."
+        "body": "Vôi sống (CaO) và khí [[CO2]]."
       }
     ],
-    "finalSolution": "CaCO3 --to--> CaO (vôi sống) + CO2↑.",
+    "finalSolution": "[[CaCO3]] --to--> CaO (vôi sống) + [[CO2]]↑.",
     "commonMistakes": [
       {
         "id": "confuse-slaked-lime",
-        "message": "Ca(OH)2 là vôi tôi (được tạo ra khi cho vôi sống CaO tác dụng với nước: CaO + H2O -> Ca(OH)2)."
+        "message": "[[Ca(OH)2]] là vôi tôi (được tạo ra khi cho vôi sống CaO tác dụng với nước: CaO + [[H2O]] -> [[Ca(OH)2]])."
       }
     ]
   },
@@ -92,7 +92,7 @@
         },
         {
           "id": "i2",
-          "label": "Nung chảy cát trắng (SiO2), đá vôi và soda (Na2CO3)",
+          "label": "Nung chảy cát trắng ([[SiO2]]), đá vôi và soda ([[Na2CO3]])",
           "bucketId": "glass"
         },
         {
@@ -126,7 +126,7 @@
       {
         "kind": "knowledge",
         "title": "Quy trình",
-        "body": "Xi măng: nung đá vôi + đất sét tạo clinker, nghiền với thạch cao. Thủy tinh: nung cát SiO2 + Na2CO3, thổi chai lọ."
+        "body": "Xi măng: nung đá vôi + đất sét tạo clinker, nghiền với thạch cao. Thủy tinh: nung cát [[SiO2]] + [[Na2CO3]], thổi chai lọ."
       },
       {
         "kind": "answer",
@@ -154,7 +154,7 @@
         },
         {
           "id": "b",
-          "label": "Vôi sống nhão ra, phản ứng tỏa rất nhiều nhiệt làm nước sôi sùng sục, tạo thành vôi tôi Ca(OH)2"
+          "label": "Vôi sống nhão ra, phản ứng tỏa rất nhiều nhiệt làm nước sôi sùng sục, tạo thành vôi tôi [[Ca(OH)2]]"
         },
         {
           "id": "c",
@@ -170,7 +170,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "CaO + H2O -> Ca(OH)2. Đây là phản ứng tỏa nhiệt cực kì mạnh."
+        "text": "CaO + [[H2O]] -> [[Ca(OH)2]]. Đây là phản ứng tỏa nhiệt cực kì mạnh."
       },
       {
         "level": 2,
@@ -186,7 +186,7 @@
       {
         "kind": "knowledge",
         "title": "Hiện tượng",
-        "body": "CaO + H2O -> Ca(OH)2 + Q (tỏa nhiều nhiệt). Vôi nở ra, nước sôi, tạo thành vôi tôi."
+        "body": "CaO + [[H2O]] -> [[Ca(OH)2]] + Q (tỏa nhiều nhiệt). Vôi nở ra, nước sôi, tạo thành vôi tôi."
       },
       {
         "kind": "answer",
@@ -194,7 +194,7 @@
         "body": "Nhão ra, tỏa rất nhiều nhiệt làm nước sôi."
       }
     ],
-    "finalSolution": "CaO + H2O -> Ca(OH)2 (phản ứng tỏa nhiều nhiệt làm nước sôi sùng sục).",
+    "finalSolution": "CaO + [[H2O]] -> [[Ca(OH)2]] (phản ứng tỏa nhiều nhiệt làm nước sôi sùng sục).",
     "commonMistakes": []
   },
   {
@@ -225,7 +225,7 @@
         },
         {
           "id": "s4",
-          "text": "Khí CO2 thoát ra từ các lò nung vôi và nhà máy xi măng là một trong những nguyên nhân gây hiệu ứng nhà kính.",
+          "text": "Khí [[CO2]] thoát ra từ các lò nung vôi và nhà máy xi măng là một trong những nguyên nhân gây hiệu ứng nhà kính.",
           "correct": true
         }
       ]
@@ -237,7 +237,7 @@
       },
       {
         "level": 2,
-        "text": "Nung vôi tạo ra lượng lớn khí CO2."
+        "text": "Nung vôi tạo ra lượng lớn khí [[CO2]]."
       }
     ],
     "steps": [
@@ -249,7 +249,7 @@
       {
         "kind": "knowledge",
         "title": "Kiến thức",
-        "body": "S1: Đúng (đá vôi). S2: Đúng (gốm sứ). S3: Sai (thủy tinh rất bền, không tan trong nước/acid thường). S4: Đúng (phát thải CO2)."
+        "body": "S1: Đúng (đá vôi). S2: Đúng (gốm sứ). S3: Sai (thủy tinh rất bền, không tan trong nước/acid thường). S4: Đúng (phát thải [[CO2]])."
       },
       {
         "kind": "answer",

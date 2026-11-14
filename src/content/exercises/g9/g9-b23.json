@@ -16,7 +16,7 @@
         },
         {
           "id": "b",
-          "label": "Khí cười (N2O)"
+          "label": "Khí cười ([[N2O]])"
         },
         {
           "id": "c",
@@ -36,7 +36,7 @@
       },
       {
         "level": 2,
-        "text": "Khí thiên nhiên chứa đến 85% – 95% methane; khí biogas ở hầm ủ chất thải gia súc cũng có thành phần chính là CH4."
+        "text": "Khí thiên nhiên chứa đến 85% – 95% methane; khí biogas ở hầm ủ chất thải gia súc cũng có thành phần chính là [[CH4]]."
       }
     ],
     "steps": [
@@ -48,7 +48,7 @@
       {
         "kind": "knowledge",
         "title": "Khí thiên nhiên & biogas",
-        "body": "Thành phần chủ yếu của khí thiên nhiên, khí mỏ dầu và biogas chính là methane (CH4)."
+        "body": "Thành phần chủ yếu của khí thiên nhiên, khí mỏ dầu và biogas chính là methane ([[CH4]])."
       },
       {
         "kind": "answer",
@@ -93,40 +93,40 @@
     "hints": [
       {
         "level": 1,
-        "text": "Phân tử CH4 có 4 nguyên tử H nên sinh ra 2 phân tử H2O."
+        "text": "Phân tử [[CH4]] có 4 nguyên tử H nên sinh ra 2 phân tử [[H2O]]."
       },
       {
         "level": 2,
-        "text": "Tổng số nguyên tử Oxygen ở vế phải: 2 (trong CO2) + 2 (trong 2H2O) = 4 => cần 2 phân tử O2."
+        "text": "Tổng số nguyên tử Oxygen ở vế phải: 2 (trong [[CO2]]) + 2 (trong 2[[H2O]]) = 4 => cần 2 phân tử [[O2]]."
       }
     ],
     "steps": [
       {
         "kind": "identify",
         "title": "Phản ứng cháy của Hydrocarbon",
-        "body": "CH4 + O2 -> CO2 + H2O."
+        "body": "[[CH4]] + [[O2]] -> [[CO2]] + [[H2O]]."
       },
       {
         "kind": "compute",
         "title": "Cân bằng C và H",
-        "body": "1 C ở CH4 tạo 1 CO2. 4 H ở CH4 tạo 2 H2O."
+        "body": "1 C ở [[CH4]] tạo 1 [[CO2]]. 4 H ở [[CH4]] tạo 2 [[H2O]]."
       },
       {
         "kind": "compute",
         "title": "Cân bằng O",
-        "body": "Vế phải có 2 + 2 = 4 nguyên tử O => đặt hệ số 2 trước O2 ở vế trái."
+        "body": "Vế phải có 2 + 2 = 4 nguyên tử O => đặt hệ số 2 trước [[O2]] ở vế trái."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Phương trình cân bằng: **CH4 + 2O2 -> CO2 + 2H2O**."
+        "body": "Phương trình cân bằng: **[[CH4]] + 2[[O2]] -> [[CO2]] + 2[[H2O]]**."
       }
     ],
-    "finalSolution": "**CH4 + 2O2 -> CO2 + 2H2O**",
+    "finalSolution": "**[[CH4]] + 2[[O2]] -> [[CO2]] + 2[[H2O]]**",
     "commonMistakes": [
       {
         "id": "forgot-oxygen-coefficient",
-        "message": "Quên đặt hệ số 2 cho khí O2 ở vế trái."
+        "message": "Quên đặt hệ số 2 cho khí [[O2]] ở vế trái."
       }
     ]
   },
@@ -167,19 +167,19 @@
       },
       {
         "level": 2,
-        "text": "PTHH: CH4 + Cl2 -(ánh sáng)-> CH3Cl + HCl. Đây là phản ứng thế đặc trưng của liên kết đơn trong alkane."
+        "text": "PTHH: [[CH4]] + [[Cl2]] -(ánh sáng)-> [[CH3Cl]] + HCl. Đây là phản ứng thế đặc trưng của liên kết đơn trong alkane."
       }
     ],
     "steps": [
       {
         "kind": "identify",
         "title": "Xác định bản chất phản ứng",
-        "body": "CH4 + Cl2 -> CH3Cl + HCl."
+        "body": "[[CH4]] + [[Cl2]] -> [[CH3Cl]] + HCl."
       },
       {
         "kind": "knowledge",
         "title": "Định nghĩa phản ứng thế",
-        "body": "Nguyên tử Cl đã thế chỗ của nguyên tử H trong phân tử CH4, sinh ra methyl chloride và hydrogen chloride."
+        "body": "Nguyên tử Cl đã thế chỗ của nguyên tử H trong phân tử [[CH4]], sinh ra methyl chloride và hydrogen chloride."
       },
       {
         "kind": "answer",
@@ -187,11 +187,11 @@
         "body": "Đây là **phản ứng thế**."
       }
     ],
-    "finalSolution": "Phản ứng giữa methane và chlorine là **phản ứng thế** đặc trưng của ankan: CH4 + Cl2 -> CH3Cl + HCl.",
+    "finalSolution": "Phản ứng giữa methane và chlorine là **phản ứng thế** đặc trưng của ankan: [[CH4]] + [[Cl2]] -> [[CH3Cl]] + HCl.",
     "commonMistakes": [
       {
         "id": "confused-with-addition",
-        "message": "Phản ứng cộng là của liên kết đôi/ba (như ethylene C2H4), còn methane chỉ có liên kết đơn nên tham gia phản ứng thế."
+        "message": "Phản ứng cộng là của liên kết đôi/ba (như ethylene [[C2H4]]), còn methane chỉ có liên kết đơn nên tham gia phản ứng thế."
       }
     ]
   },
@@ -218,7 +218,7 @@
         },
         {
           "id": "s3",
-          "text": "Hỗn hợp gồm 1 thể tích CH4 và 2 thể tích O2 là hỗn hợp nổ rất mạnh.",
+          "text": "Hỗn hợp gồm 1 thể tích [[CH4]] và 2 thể tích [[O2]] là hỗn hợp nổ rất mạnh.",
           "correct": true
         }
       ]
@@ -230,19 +230,19 @@
       },
       {
         "level": 2,
-        "text": "Phản ứng CH4 + 2O2 -> CO2 + 2H2O tỏa rất nhiều nhiệt, tỉ lệ 1:2 nổ mạnh nhất."
+        "text": "Phản ứng [[CH4]] + 2[[O2]] -> [[CO2]] + 2[[H2O]] tỏa rất nhiều nhiệt, tỉ lệ 1:2 nổ mạnh nhất."
       }
     ],
     "steps": [
       {
         "kind": "identify",
         "title": "Tính chất vật lý & an toàn của methane",
-        "body": "Kiểm tra màu sắc, tỉ khối và tính cháy nổ của CH4."
+        "body": "Kiểm tra màu sắc, tỉ khối và tính cháy nổ của [[CH4]]."
       },
       {
         "kind": "knowledge",
         "title": "Đối chiếu kiến thức",
-        "body": "1. CH4 không màu, không mùi: câu 1 SAI. 2. M = 16 < 29 (nhẹ hơn không khí) và ít tan: câu 2 SAI. 3. Tỉ lệ nổ 1:2: ĐÚNG."
+        "body": "1. [[CH4]] không màu, không mùi: câu 1 SAI. 2. M = 16 < 29 (nhẹ hơn không khí) và ít tan: câu 2 SAI. 3. Tỉ lệ nổ 1:2: ĐÚNG."
       },
       {
         "kind": "answer",
@@ -279,7 +279,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Phản ứng thế giữa CH4 và Cl2 cần có ánh sáng khuếch tán làm điều kiện xúc tác."
+        "text": "Phản ứng thế giữa [[CH4]] và [[Cl2]] cần có ánh sáng khuếch tán làm điều kiện xúc tác."
       },
       {
         "level": 2,
@@ -290,12 +290,12 @@
       {
         "kind": "identify",
         "title": "Thí nghiệm phản ứng thế",
-        "body": "Quy trình thử phản ứng của CH4 với Cl2 ngoài ánh sáng."
+        "body": "Quy trình thử phản ứng của [[CH4]] với [[Cl2]] ngoài ánh sáng."
       },
       {
         "kind": "knowledge",
         "title": "PTHH",
-        "body": "CH4 + Cl2 --(ánh sáng)--> CH3Cl + HCl. Khí HCl làm ẩm quỳ tím hóa đỏ."
+        "body": "[[CH4]] + [[Cl2]] --(ánh sáng)--> [[CH3Cl]] + HCl. Khí HCl làm ẩm quỳ tím hóa đỏ."
       },
       {
         "kind": "answer",

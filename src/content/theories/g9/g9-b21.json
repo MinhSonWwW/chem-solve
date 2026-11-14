@@ -41,7 +41,7 @@
         "Thử mạch điện: Đèn sáng là kim loại (hoặc than chì), đèn tắt là phi kim khác.",
         "Khí Chlorine [[Cl2]]: Khí màu vàng lục, mùi hắc độc, là phi kim hoạt động rất mạnh, tác dụng với kim loại tạo muối chloride."
       ],
-      "callout": "⚠️ Chú ý: Chlorine (Cl2) có tính tẩy màu khi ở trong nước ẩm (tạo HClO có tính oxi hóa mạnh)!"
+      "callout": "⚠️ Chú ý: Chlorine ([[Cl2]]) có tính tẩy màu khi ở trong nước ẩm (tạo HClO có tính oxi hóa mạnh)!"
     }
   ],
   "quickCheck": {
@@ -50,7 +50,7 @@
       { "id": "opt-1", "text": "Kim cương (Diamond)", "correct": false },
       { "id": "opt-2", "text": "Than chì (Graphite)", "correct": true },
       { "id": "opt-3", "text": "Lưu huỳnh (Sulfur)", "correct": false },
-      { "id": "opt-4", "text": "Khí Oxygen (O2)", "correct": false }
+      { "id": "opt-4", "text": "Khí Oxygen ([[O2]])", "correct": false }
     ],
     "explanation": "Chính xác! Than chì (dạng thù hình của Carbon) là một phi kim đặc biệt có khả năng dẫn điện tốt, thường được ứng dụng làm điện cực pin và ruột bút chì."
   }

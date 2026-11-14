@@ -154,7 +154,7 @@
       }
     ],
     "find": {
-      "label": "Khối lượng phân tử CO2",
+      "label": "Khối lượng phân tử [[CO2]]",
       "unit": "amu"
     },
     "answer": {
@@ -169,18 +169,18 @@
     "hints": [
       {
         "level": 1,
-        "text": "Phân tử CO2 gồm 1 nguyên tử Carbon và 2 nguyên tử Oxygen."
+        "text": "Phân tử [[CO2]] gồm 1 nguyên tử Carbon và 2 nguyên tử Oxygen."
       },
       {
         "level": 2,
-        "text": "Công thức tính: M(CO2) = 1 × M(C) + 2 × M(O) = 12 + 2 × 16."
+        "text": "Công thức tính: M([[CO2]]) = 1 × M(C) + 2 × M(O) = 12 + 2 × 16."
       }
     ],
     "steps": [
       {
         "kind": "identify",
         "title": "Đếm số lượng nguyên tử",
-        "body": "Phân tử CO2 có 1 nguyên tử C và 2 nguyên tử O."
+        "body": "Phân tử [[CO2]] có 1 nguyên tử C và 2 nguyên tử O."
       },
       {
         "kind": "compute",
@@ -190,7 +190,7 @@
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Khối lượng phân tử CO2 là 44 amu."
+        "body": "Khối lượng phân tử [[CO2]] là 44 amu."
       }
     ],
     "commonMistakes": [
@@ -691,7 +691,7 @@
       },
       {
         "level": 2,
-        "text": "Nhấn lần lượt: H → 2 → O để tạo công thức H2O."
+        "text": "Nhấn lần lượt: H → 2 → O để tạo công thức [[H2O]]."
       }
     ],
     "steps": [
@@ -703,15 +703,15 @@
       {
         "kind": "knowledge",
         "title": "Cách viết CTHH",
-        "body": "Chỉ số 2 đặt ngay sau kí hiệu H: H2O."
+        "body": "Chỉ số 2 đặt ngay sau kí hiệu H: [[H2O]]."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Công thức ghép đúng là **H2O**."
+        "body": "Công thức ghép đúng là **[[H2O]]**."
       }
     ],
-    "finalSolution": "Công thức hóa học của nước là **H2O**.",
+    "finalSolution": "Công thức hóa học của nước là **[[H2O]]**.",
     "commonMistakes": []
   },
   {

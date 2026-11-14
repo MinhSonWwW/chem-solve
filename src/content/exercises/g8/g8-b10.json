@@ -28,7 +28,7 @@
         },
         {
           "id": "opt-b",
-          "label": "SO2 (Sulfur dioxide)"
+          "label": "[[SO2]] (Sulfur dioxide)"
         },
         {
           "id": "opt-c",
@@ -36,7 +36,7 @@
         },
         {
           "id": "opt-d",
-          "label": "Na2O (Sodium oxide)"
+          "label": "[[Na2O]] (Sodium oxide)"
         }
       ],
       "correctId": "opt-b"
@@ -48,33 +48,33 @@
       },
       {
         "level": 2,
-        "text": "CaO, Na2O, CuO là oxide của kim loại (oxide base)."
+        "text": "CaO, [[Na2O]], CuO là oxide của kim loại (oxide base)."
       }
     ],
     "steps": [
       {
         "kind": "identify",
         "title": "Xác định nguyên tố",
-        "body": "SO2 gồm phi kim S liên kết với nguyên tố O."
+        "body": "[[SO2]] gồm phi kim S liên kết với nguyên tố O."
       },
       {
         "kind": "knowledge",
         "title": "Tính chất oxide acid",
-        "body": "Oxide phi kim SO2 tác dụng với nước trong khí quyển tạo thành acid H2SO3 gây mưa acid."
+        "body": "Oxide phi kim [[SO2]] tác dụng với nước trong khí quyển tạo thành acid [[H2SO3]] gây mưa acid."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Chất cần tìm là SO2 (opt-1)."
+        "body": "Chất cần tìm là [[SO2]] (opt-1)."
       }
     ],
     "commonMistakes": [
       {
         "id": "cm-base-oxide",
-        "message": "Nhầm oxide base với oxide acid. CaO, Na2O là oxide base của kim loại."
+        "message": "Nhầm oxide base với oxide acid. CaO, [[Na2O]] là oxide base của kim loại."
       }
     ],
-    "finalSolution": "SO2 (Sulfur dioxide)"
+    "finalSolution": "[[SO2]] (Sulfur dioxide)"
   },
   {
     "id": "g8-b10-mcq-002",
@@ -92,19 +92,19 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "CaO + H2O -> Ca(OH)2"
+          "label": "CaO + [[H2O]] -> [[Ca(OH)2]]"
         },
         {
           "id": "opt-b",
-          "label": "CaO + 2H2O -> Ca(OH)2 + H2"
+          "label": "CaO + 2[[H2O]] -> [[Ca(OH)2]] + [[H2]]"
         },
         {
           "id": "opt-c",
-          "label": "CaO + H2O -> CaCO3"
+          "label": "CaO + [[H2O]] -> [[CaCO3]]"
         },
         {
           "id": "opt-d",
-          "label": "2CaO + H2O -> 2CaOH"
+          "label": "2CaO + [[H2O]] -> 2CaOH"
         }
       ],
       "correctId": "opt-a"
@@ -112,7 +112,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Calcium (Ca) có hóa trị II, nhóm hydroxide (OH) có hóa trị I => Ca(OH)2."
+        "text": "Calcium (Ca) có hóa trị II, nhóm hydroxide (OH) có hóa trị I => [[Ca(OH)2]]."
       },
       {
         "level": 2,
@@ -123,12 +123,12 @@
       {
         "kind": "identify",
         "title": "Xác định chất tham gia",
-        "body": "Calcium oxide (CaO) là oxide base, phản ứng với nước H2O."
+        "body": "Calcium oxide (CaO) là oxide base, phản ứng với nước [[H2O]]."
       },
       {
         "kind": "equation",
         "title": "Viết phản ứng",
-        "body": "CaO + H2O -> Ca(OH)2 (Calcium hydroxide / vôi tôi)."
+        "body": "CaO + [[H2O]] -> [[Ca(OH)2]] (Calcium hydroxide / vôi tôi)."
       },
       {
         "kind": "answer",
@@ -136,7 +136,7 @@
         "body": "Phương trình tự cân bằng với tỉ lệ 1:1:1."
       }
     ],
-    "finalSolution": "CaO + H2O -> Ca(OH)2"
+    "finalSolution": "CaO + [[H2O]] -> [[Ca(OH)2]]"
   },
   {
     "id": "g8-b10-tf-001",
@@ -181,7 +181,7 @@
       },
       {
         "level": 2,
-        "text": "Calcium oxide (CaO) tác dụng với nước tạo base Ca(OH)2 làm quỳ tím hóa xanh."
+        "text": "Calcium oxide (CaO) tác dụng với nước tạo base [[Ca(OH)2]] làm quỳ tím hóa xanh."
       }
     ],
     "steps": [
@@ -198,7 +198,7 @@
       {
         "kind": "answer",
         "title": "Tính chất chỉ thị màu",
-        "body": "Vôi tôi Ca(OH)2 có tính base làm quỳ tím hóa xanh, không phải đỏ (s4 sai)."
+        "body": "Vôi tôi [[Ca(OH)2]] có tính base làm quỳ tím hóa xanh, không phải đỏ (s4 sai)."
       }
     ],
     "finalSolution": "s1: Đúng, s2: Sai, s3: Đúng, s4: Sai"
@@ -226,17 +226,17 @@
       "items": [
         {
           "id": "co2",
-          "label": "CO2 (Carbon dioxide)",
+          "label": "[[CO2]] (Carbon dioxide)",
           "bucketId": "acid-oxide"
         },
         {
           "id": "so2",
-          "label": "SO2 (Sulfur dioxide)",
+          "label": "[[SO2]] (Sulfur dioxide)",
           "bucketId": "acid-oxide"
         },
         {
           "id": "p2o5",
-          "label": "P2O5 (Diphosphorus pentoxide)",
+          "label": "[[P2O5]] (Diphosphorus pentoxide)",
           "bucketId": "acid-oxide"
         },
         {
@@ -246,12 +246,12 @@
         },
         {
           "id": "na2o",
-          "label": "Na2O (Sodium oxide)",
+          "label": "[[Na2O]] (Sodium oxide)",
           "bucketId": "base-oxide"
         },
         {
           "id": "fe2o3",
-          "label": "Fe2O3 (Iron(III) oxide)",
+          "label": "[[Fe2O3]] (Iron(III) oxide)",
           "bucketId": "base-oxide"
         }
       ]
@@ -263,7 +263,7 @@
       },
       {
         "level": 2,
-        "text": "CO2, SO2, P2O5 là oxide phi kim (acid); CaO, Na2O, Fe2O3 là oxide kim loại (base)."
+        "text": "[[CO2]], [[SO2]], [[P2O5]] là oxide phi kim (acid); CaO, [[Na2O]], [[Fe2O3]] là oxide kim loại (base)."
       }
     ],
     "steps": [
@@ -275,7 +275,7 @@
       {
         "kind": "knowledge",
         "title": "Đối chiếu chất",
-        "body": "Oxide acid: CO2, SO2, P2O5. Oxide base: CaO, Na2O, Fe2O3."
+        "body": "Oxide acid: [[CO2]], [[SO2]], [[P2O5]]. Oxide base: CaO, [[Na2O]], [[Fe2O3]]."
       },
       {
         "kind": "answer",
@@ -283,7 +283,7 @@
         "body": "Đã phân chia chính xác 6 oxide vào 2 nhóm."
       }
     ],
-    "finalSolution": "Oxide acid: **CO2, SO2, P2O5** · Oxide base: **CaO, Na2O, Fe2O3**.",
+    "finalSolution": "Oxide acid: **[[CO2]], [[SO2]], [[P2O5]]** · Oxide base: **CaO, [[Na2O]], [[Fe2O3]]**.",
     "commonMistakes": []
   },
   {
@@ -315,7 +315,7 @@
       },
       {
         "level": 2,
-        "text": "Nhấn theo thứ tự: Al → 2 → O → 3 để tạo Al2O3."
+        "text": "Nhấn theo thứ tự: Al → 2 → O → 3 để tạo [[Al2O3]]."
       }
     ],
     "steps": [
@@ -327,15 +327,15 @@
       {
         "kind": "compute",
         "title": "Xác định chỉ số",
-        "body": "x = 2, y = 3 => CTHH là Al2O3."
+        "body": "x = 2, y = 3 => CTHH là [[Al2O3]]."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "Công thức đúng là **Al2O3**."
+        "body": "Công thức đúng là **[[Al2O3]]**."
       }
     ],
-    "finalSolution": "Công thức hóa học của nhôm oxide là **Al2O3**.",
+    "finalSolution": "Công thức hóa học của nhôm oxide là **[[Al2O3]]**.",
     "commonMistakes": []
   },
   {
@@ -350,19 +350,19 @@
       "kind": "match",
       "pairs": [
         {
-          "left": "CO2 (Carbon dioxide)",
-          "right": "H2CO3 (Carbonic acid)"
+          "left": "[[CO2]] (Carbon dioxide)",
+          "right": "[[H2CO3]] (Carbonic acid)"
         },
         {
-          "left": "SO3 (Sulfur trioxide)",
-          "right": "H2SO4 (Sulfuric acid)"
+          "left": "[[SO3]] (Sulfur trioxide)",
+          "right": "[[H2SO4]] (Sulfuric acid)"
         },
         {
           "left": "CaO (Calcium oxide)",
-          "right": "Ca(OH)2 (Calcium hydroxide)"
+          "right": "[[Ca(OH)2]] (Calcium hydroxide)"
         },
         {
-          "left": "Na2O (Sodium oxide)",
+          "left": "[[Na2O]] (Sodium oxide)",
           "right": "NaOH (Sodium hydroxide)"
         }
       ]
@@ -374,7 +374,7 @@
       },
       {
         "level": 2,
-        "text": "CO2 tạo H2CO3, SO3 tạo H2SO4, CaO tạo Ca(OH)2, Na2O tạo NaOH."
+        "text": "[[CO2]] tạo [[H2CO3]], [[SO3]] tạo [[H2SO4]], CaO tạo [[Ca(OH)2]], [[Na2O]] tạo NaOH."
       }
     ],
     "steps": [
@@ -386,7 +386,7 @@
       {
         "kind": "knowledge",
         "title": "PTHH",
-        "body": "CO2 + H2O -> H2CO3 · SO3 + H2O -> H2SO4 · CaO + H2O -> Ca(OH)2 · Na2O + H2O -> 2NaOH."
+        "body": "[[CO2]] + [[H2O]] -> [[H2CO3]] · [[SO3]] + [[H2O]] -> [[H2SO4]] · CaO + [[H2O]] -> [[Ca(OH)2]] · [[Na2O]] + [[H2O]] -> 2NaOH."
       },
       {
         "kind": "answer",
@@ -394,7 +394,7 @@
         "body": "Ghép đúng từng cặp oxide và hợp chất tương ứng."
       }
     ],
-    "finalSolution": "CO2 ↔ H2CO3 · SO3 ↔ H2SO4 · CaO ↔ Ca(OH)2 · Na2O ↔ NaOH.",
+    "finalSolution": "[[CO2]] ↔ [[H2CO3]] · [[SO3]] ↔ [[H2SO4]] · CaO ↔ [[Ca(OH)2]] · [[Na2O]] ↔ NaOH.",
     "commonMistakes": []
   }
 ]

@@ -33,7 +33,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Đá và cát trong vỏ Trái Đất chủ yếu cấu tạo từ hợp chất silica (SiO2) và các khoáng vật silicate."
+        "text": "Đá và cát trong vỏ Trái Đất chủ yếu cấu tạo từ hợp chất silica ([[SiO2]]) và các khoáng vật silicate."
       },
       {
         "level": 2,
@@ -172,7 +172,7 @@
       },
       {
         "level": 2,
-        "text": "Al được sản xuất từ quặng bauxite (chứa Al2O3)."
+        "text": "Al được sản xuất từ quặng bauxite (chứa [[Al2O3]])."
       }
     ],
     "steps": [
@@ -269,15 +269,15 @@
       "kind": "match",
       "pairs": [
         {
-          "left": "Quặng bauxite (chứa Al2O3)",
+          "left": "Quặng bauxite (chứa [[Al2O3]])",
           "right": "Nguyên liệu chính luyện nhôm (Al)"
         },
         {
-          "left": "Quặng hematite (chứa Fe2O3)",
+          "left": "Quặng hematite (chứa [[Fe2O3]])",
           "right": "Nguyên liệu luyện gang và thép (Fe)"
         },
         {
-          "left": "Cát thạch anh (chứa SiO2)",
+          "left": "Cát thạch anh (chứa [[SiO2]])",
           "right": "Sản xuất thủy tinh và đồ gốm sứ"
         },
         {
@@ -305,7 +305,7 @@
       {
         "kind": "knowledge",
         "title": "Ứng dụng thực tế",
-        "body": "Bauxite: luyện Al. Hematite: luyện Fe. Cát SiO2: làm thủy tinh. Apatite: làm phân bón."
+        "body": "Bauxite: luyện Al. Hematite: luyện Fe. Cát [[SiO2]]: làm thủy tinh. Apatite: làm phân bón."
       },
       {
         "kind": "answer",

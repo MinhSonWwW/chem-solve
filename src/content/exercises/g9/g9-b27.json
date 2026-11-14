@@ -22,7 +22,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Phân tử gồm gốc methyl (-CH3) liên kết với nhóm chức acid cacboxyl (-COOH)."
+        "text": "Phân tử gồm gốc methyl (-[[CH3]]) liên kết với nhóm chức acid cacboxyl (-COOH)."
       },
       {
         "level": 2,
@@ -43,10 +43,10 @@
       {
         "kind": "answer",
         "title": "Ghép thành công thức",
-        "body": "Acetic acid có công thức cấu tạo thu gọn là CH3COOH."
+        "body": "Acetic acid có công thức cấu tạo thu gọn là [[CH3COOH]]."
       }
     ],
-    "finalSolution": "CH3COOH"
+    "finalSolution": "[[CH3COOH]]"
   },
   {
     "id": "g9-b27-tf-001",
@@ -103,7 +103,7 @@
       {
         "kind": "knowledge",
         "title": "Độ mạnh của acid",
-        "body": "CH3COOH là acid hữu cơ yếu, trong dung dịch chỉ điện li một phần (s4 Sai)."
+        "body": "[[CH3COOH]] là acid hữu cơ yếu, trong dung dịch chỉ điện li một phần (s4 Sai)."
       },
       {
         "kind": "answer",
@@ -111,7 +111,7 @@
         "body": "s1: Đúng, s2: Đúng, s3: Đúng, s4: Sai."
       }
     ],
-    "finalSolution": "s1: Đúng, s2: Đúng, s3: Đúng, s4: Sai (CH3COOH là acid hữu cơ yếu)."
+    "finalSolution": "s1: Đúng, s2: Đúng, s3: Đúng, s4: Sai ([[CH3COOH]] là acid hữu cơ yếu)."
   },
   {
     "id": "g9-b27-mcq-001",
@@ -138,7 +138,7 @@
       "options": [
         {
           "id": "opt-a",
-          "label": "Có mùi hắc của khí sulfur dioxide SO2"
+          "label": "Có mùi hắc của khí sulfur dioxide [[SO2]]"
         },
         {
           "id": "opt-b",
@@ -146,7 +146,7 @@
         },
         {
           "id": "opt-c",
-          "label": "Đá vôi tan dần, sủi bọt khí không màu CO2 bay lên"
+          "label": "Đá vôi tan dần, sủi bọt khí không màu [[CO2]] bay lên"
         },
         {
           "id": "opt-d",
@@ -158,31 +158,31 @@
     "hints": [
       {
         "level": 1,
-        "text": "Acetic acid là một axit hữu cơ, tác dụng được với muối carbonate giải phóng khí CO2."
+        "text": "Acetic acid là một axit hữu cơ, tác dụng được với muối carbonate giải phóng khí [[CO2]]."
       },
       {
         "level": 2,
-        "text": "Phương trình: 2CH3COOH + CaCO3 -> (CH3COO)2Ca + CO2 + H2O."
+        "text": "Phương trình: 2[[CH3COOH]] + [[CaCO3]] -> [[(CH3COO)2Ca]] + [[CO2]] + [[H2O]]."
       }
     ],
     "steps": [
       {
         "kind": "identify",
         "title": "Tính chất của acid",
-        "body": "Acetic acid tuy là axit yếu nhưng mạnh hơn carbonic acid (H2CO3)."
+        "body": "Acetic acid tuy là axit yếu nhưng mạnh hơn carbonic acid ([[H2CO3]])."
       },
       {
         "kind": "equation",
         "title": "Viết PTHH",
-        "body": "2CH3COOH + CaCO3 -> (CH3COO)2Ca + CO2 + H2O."
+        "body": "2[[CH3COOH]] + [[CaCO3]] -> [[(CH3COO)2Ca]] + [[CO2]] + [[H2O]]."
       },
       {
         "kind": "answer",
         "title": "Kết luận hiện tượng",
-        "body": "Đá vôi tan dần và sủi bọt khí CO2 thoát ra."
+        "body": "Đá vôi tan dần và sủi bọt khí [[CO2]] thoát ra."
       }
     ],
-    "finalSolution": "Đá vôi tan dần, sủi bọt khí không màu CO2 bay lên"
+    "finalSolution": "Đá vôi tan dần, sủi bọt khí không màu [[CO2]] bay lên"
   },
   {
     "id": "g9-b27-mcq-002",
@@ -220,7 +220,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "CH3COOH + C2H5OH <-> CH3COOC2H5 + H2O. Chất tạo thành thuộc loại ester."
+        "text": "[[CH3COOH]] + [[C2H5OH]] <-> [[CH3COOC2H5]] + [[H2O]]. Chất tạo thành thuộc loại ester."
       },
       {
         "level": 2,
@@ -231,12 +231,12 @@
       {
         "kind": "identify",
         "title": "Xác định loại chất tham gia",
-        "body": "CH3COOH là acid hữu cơ và C2H5OH là rượu (ancol)."
+        "body": "[[CH3COOH]] là acid hữu cơ và [[C2H5OH]] là rượu (ancol)."
       },
       {
         "kind": "equation",
         "title": "Phương trình phản ứng",
-        "body": "CH3COOH + C2H5OH <=> CH3COOC2H5 (ester) + H2O."
+        "body": "[[CH3COOH]] + [[C2H5OH]] <=> [[CH3COOC2H5]] (ester) + [[H2O]]."
       },
       {
         "kind": "answer",
@@ -269,14 +269,14 @@
         },
         {
           "left": "Kim loại kẽm (Zn)",
-          "right": "Sủi bọt khí H2 không màu"
+          "right": "Sủi bọt khí [[H2]] không màu"
         },
         {
-          "left": "Đá vôi (CaCO3)",
-          "right": "Sủi bọt khí CO2 không màu"
+          "left": "Đá vôi ([[CaCO3]])",
+          "right": "Sủi bọt khí [[CO2]] không màu"
         },
         {
-          "left": "Ethylic alcohol (xúc tác H2SO4 đ)",
+          "left": "Ethylic alcohol (xúc tác [[H2SO4]] đ)",
           "right": "Tạo ester mùi thơm hoa quả chín"
         }
       ]
@@ -284,11 +284,11 @@
     "hints": [
       {
         "level": 1,
-        "text": "CH3COOH tác dụng Zn sinh H2, tác dụng CaCO3 sinh CO2, làm đỏ quỳ tím."
+        "text": "[[CH3COOH]] tác dụng Zn sinh [[H2]], tác dụng [[CaCO3]] sinh [[CO2]], làm đỏ quỳ tím."
       },
       {
         "level": 2,
-        "text": "CH3COOH tác dụng C2H5OH tạo ethyl acetate mùi hoa quả."
+        "text": "[[CH3COOH]] tác dụng [[C2H5OH]] tạo ethyl acetate mùi hoa quả."
       }
     ],
     "steps": [
@@ -300,7 +300,7 @@
       {
         "kind": "knowledge",
         "title": "Hiện tượng tương ứng",
-        "body": "1. Quỳ tím -> Đỏ. 2. Zn -> Khí H2. 3. CaCO3 -> Khí CO2. 4. C2H5OH -> Ester mùi thơm."
+        "body": "1. Quỳ tím -> Đỏ. 2. Zn -> Khí [[H2]]. 3. [[CaCO3]] -> Khí [[CO2]]. 4. [[C2H5OH]] -> Ester mùi thơm."
       },
       {
         "kind": "answer",
@@ -308,7 +308,7 @@
         "body": "Ghép chính xác 4 cặp chất và hiện tượng."
       }
     ],
-    "finalSolution": "Quỳ tím ↔ Đỏ nhạt · Zn ↔ Khí H2 · CaCO3 ↔ Khí CO2 · C2H5OH ↔ Ester mùi thơm.",
+    "finalSolution": "Quỳ tím ↔ Đỏ nhạt · Zn ↔ Khí [[H2]] · [[CaCO3]] ↔ Khí [[CO2]] · [[C2H5OH]] ↔ Ester mùi thơm.",
     "commonMistakes": []
   },
   {
@@ -332,7 +332,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "Phản ứng giữa acetic acid và ethylic alcohol cần H2SO4 đặc làm xúc tác đun nóng: CH3COOH + C2H5OH ⇄ CH3COOC2H5 + H2O."
+        "text": "Phản ứng giữa acetic acid và ethylic alcohol cần [[H2SO4]] đặc làm xúc tác đun nóng: [[CH3COOH]] + [[C2H5OH]] ⇄ [[CH3COOC2H5]] + [[H2O]]."
       },
       {
         "level": 2,
@@ -348,7 +348,7 @@
       {
         "kind": "knowledge",
         "title": "Thao tác chuẩn",
-        "body": "Trộn acid + rượu → Thêm H2SO4 đặc → Lắp ống dẫn sang dd NaCl → Đun nhẹ → Quan sát ester nổi lên."
+        "body": "Trộn acid + rượu → Thêm [[H2SO4]] đặc → Lắp ống dẫn sang dd NaCl → Đun nhẹ → Quan sát ester nổi lên."
       },
       {
         "kind": "answer",
@@ -356,6 +356,6 @@
         "body": "Trình tự chuẩn bị và tiến hành phản ứng ester hóa."
       }
     ],
-    "finalSolution": "Quy trình: **Trộn rượu và acid → Thêm H2SO4 đặc xúc tác → Lắp hệ thống ống dẫn sang dd NaCl → Đun nóng nhẹ → Làm lạnh, quan sát ester nổi lên có mùi thơm**."
+    "finalSolution": "Quy trình: **Trộn rượu và acid → Thêm [[H2SO4]] đặc xúc tác → Lắp hệ thống ống dẫn sang dd NaCl → Đun nóng nhẹ → Làm lạnh, quan sát ester nổi lên có mùi thơm**."
   }
 ]

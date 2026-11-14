@@ -16,11 +16,11 @@
         },
         {
           "id": "b",
-          "label": "Acetic acid (CH3COOH)"
+          "label": "Acetic acid ([[CH3COOH]])"
         },
         {
           "id": "c",
-          "label": "Acid vô cơ như HCl hoặc H2SO4"
+          "label": "Acid vô cơ như HCl hoặc [[H2SO4]]"
         },
         {
           "id": "d",
@@ -80,7 +80,7 @@
         },
         {
           "id": "c",
-          "label": "Khí CO2 và hơi nước"
+          "label": "Khí [[CO2]] và hơi nước"
         },
         {
           "id": "d",
@@ -92,7 +92,7 @@
     "hints": [
       {
         "level": 1,
-        "text": "PTHH: (RCOO)3C3H5 + 3NaOH --to--> C3H5(OH)3 + 3RCOONa."
+        "text": "PTHH: (RCOO)3C3H5 + 3NaOH --to--> [[C3H5(OH)3]] + 3RCOONa."
       },
       {
         "level": 2,
@@ -108,7 +108,7 @@
       {
         "kind": "knowledge",
         "title": "PTHH",
-        "body": "(RCOO)3C3H5 + 3NaOH -> C3H5(OH)3 (glycerol) + 3RCOONa (xà phòng)."
+        "body": "(RCOO)3C3H5 + 3NaOH -> [[C3H5(OH)3]] (glycerol) + 3RCOONa (xà phòng)."
       },
       {
         "kind": "answer",
@@ -116,7 +116,7 @@
         "body": "Thu được glycerol và muối của acid béo (xà phòng)."
       }
     ],
-    "finalSolution": "(RCOO)3C3H5 + 3NaOH --to--> C3H5(OH)3 (glycerol) + 3RCOONa (muối xà phòng).",
+    "finalSolution": "(RCOO)3C3H5 + 3NaOH --to--> [[C3H5(OH)3]] (glycerol) + 3RCOONa (muối xà phòng).",
     "commonMistakes": [
       {
         "id": "thought-acid-formed",

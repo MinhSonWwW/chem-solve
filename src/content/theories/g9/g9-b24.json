@@ -30,7 +30,7 @@
         "Sản phẩm: Dibromoethane ([[C2H4Br2]]) không màu.",
         "Ý nghĩa thực tế: Đây là PHẢN ỨNG DÙNG ĐỂ NHẬN BIẾT Ethylene (và các hydrocarbon không no) với Methane."
       ],
-      "callout": "📌 Mẹo thi nhận biết khí: Dùng dung dịch Bromine -> Mất màu da cam là Ethylene (C2H4), không hiện tượng là Methane (CH4)!"
+      "callout": "📌 Mẹo thi nhận biết khí: Dùng dung dịch Bromine -> Mất màu da cam là Ethylene ([[C2H4]]), không hiện tượng là Methane ([[CH4]])!"
     },
     {
       "id": "c3",
@@ -46,9 +46,9 @@
     }
   ],
   "quickCheck": {
-    "prompt": "Thuốc thử nào sau đây dùng để PHÂN BIỆT khí Methane (CH4) và khí Ethylene (C2H4)?",
+    "prompt": "Thuốc thử nào sau đây dùng để PHÂN BIỆT khí Methane ([[CH4]]) và khí Ethylene ([[C2H4]])?",
     "options": [
-      { "id": "opt-1", "text": "Dung dịch nước vôi trong Ca(OH)2", "correct": false },
+      { "id": "opt-1", "text": "Dung dịch nước vôi trong [[Ca(OH)2]]", "correct": false },
       { "id": "opt-2", "text": "Dung dịch Bromine (nước Brom màu da cam)", "correct": true },
       { "id": "opt-3", "text": "Dung dịch Acid HCl loãng", "correct": false },
       { "id": "opt-4", "text": "Khí Oxygen (đốt cháy)", "correct": false }

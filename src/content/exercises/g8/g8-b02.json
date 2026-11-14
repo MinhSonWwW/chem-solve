@@ -138,7 +138,7 @@
     "commonMistakes": [
       {
         "id": "rust-is-physical",
-        "message": "Gỉ sắt (chứa Fe2O3.nH2O) là chất mới màu nâu đỏ sinh ra do sắt tác dụng với oxygen và hơi nước, đây là biến đổi hóa học."
+        "message": "Gỉ sắt (chứa [[Fe2O3]].nH2O) là chất mới màu nâu đỏ sinh ra do sắt tác dụng với oxygen và hơi nước, đây là biến đổi hóa học."
       }
     ]
   },
@@ -220,7 +220,7 @@
       "pairs": [
         {
           "left": "Cho giấm ăn tác dụng với vỏ trứng",
-          "right": "Sủi bọt khí (sinh khí CO2)"
+          "right": "Sủi bọt khí (sinh khí [[CO2]])"
         },
         {
           "left": "Sục khí carbon dioxide vào nước vôi trong",
@@ -231,7 +231,7 @@
           "right": "Tỏa nhiệt và phát sáng rực rỡ"
         },
         {
-          "left": "Cho đinh sắt vào dung dịch CuSO4",
+          "left": "Cho đinh sắt vào dung dịch [[CuSO4]]",
           "right": "Đổi màu dung dịch và có lớp đồng bám ngoài"
         }
       ]
@@ -239,11 +239,11 @@
     "hints": [
       {
         "level": 1,
-        "text": "Vỏ trứng chứa calcium carbonate (CaCO3), khi gặp acetic acid trong giấm sẽ sủi bọt khí."
+        "text": "Vỏ trứng chứa calcium carbonate ([[CaCO3]]), khi gặp acetic acid trong giấm sẽ sủi bọt khí."
       },
       {
         "level": 2,
-        "text": "Khí CO2 phản ứng với Ca(OH)2 tạo CaCO3 kết tủa trắng làm đục nước vôi."
+        "text": "Khí [[CO2]] phản ứng với [[Ca(OH)2]] tạo [[CaCO3]] kết tủa trắng làm đục nước vôi."
       }
     ],
     "steps": [
@@ -255,7 +255,7 @@
       {
         "kind": "knowledge",
         "title": "Bản chất từng phản ứng",
-        "body": "Vỏ trứng + giấm tạo CO2 bay lên; CO2 + nước vôi trong tạo kết tủa trắng CaCO3; que diêm cháy tỏa nhiệt phát sáng; sắt đẩy đồng tạo Cu bám ngoài và làm nhạt màu dung dịch xanh."
+        "body": "Vỏ trứng + giấm tạo [[CO2]] bay lên; [[CO2]] + nước vôi trong tạo kết tủa trắng [[CaCO3]]; que diêm cháy tỏa nhiệt phát sáng; sắt đẩy đồng tạo Cu bám ngoài và làm nhạt màu dung dịch xanh."
       },
       {
         "kind": "answer",
@@ -412,11 +412,11 @@
       "pairs": [
         {
           "left": "Cho mẩu đá vôi vào dung dịch acid HCl",
-          "right": "Sinh ra bọt khí sủi mạnh (CO2)"
+          "right": "Sinh ra bọt khí sủi mạnh ([[CO2]])"
         },
         {
-          "left": "Nhỏ BaCl2 vào dung dịch Na2SO4",
-          "right": "Xuất hiện chất kết tủa trắng (BaSO4)"
+          "left": "Nhỏ [[BaCl2]] vào dung dịch [[Na2SO4]]",
+          "right": "Xuất hiện chất kết tủa trắng ([[BaSO4]])"
         },
         {
           "left": "Đốt cháy que diêm trong không khí",
@@ -435,7 +435,7 @@
       },
       {
         "level": 2,
-        "text": "Đá vôi gặp acid sinh khí CO2, BaCl2 gặp Na2SO4 tạo kết tủa BaSO4."
+        "text": "Đá vôi gặp acid sinh khí [[CO2]], [[BaCl2]] gặp [[Na2SO4]] tạo kết tủa [[BaSO4]]."
       }
     ],
     "steps": [
@@ -447,7 +447,7 @@
       {
         "kind": "knowledge",
         "title": "Dấu hiệu phản ứng",
-        "body": "1. CaCO3 + HCl -> sủi bọt CO2. 2. BaCl2 + Na2SO4 -> kết tủa BaSO4 trắng. 3. Cháy -> tỏa nhiệt, phát sáng. 4. Acid -> quỳ hóa đỏ."
+        "body": "1. [[CaCO3]] + HCl -> sủi bọt [[CO2]]. 2. [[BaCl2]] + [[Na2SO4]] -> kết tủa [[BaSO4]] trắng. 3. Cháy -> tỏa nhiệt, phát sáng. 4. Acid -> quỳ hóa đỏ."
       },
       {
         "kind": "answer",
@@ -455,7 +455,7 @@
         "body": "Ghép đúng từng cặp phản ứng và dấu hiệu."
       }
     ],
-    "finalSolution": "CaCO3 + HCl: **sủi bọt khí** · BaCl2 + Na2SO4: **kết tủa trắng** · Đốt que diêm: **tỏa nhiệt phát sáng** · Giấm ăn: **quỳ hóa đỏ**.",
+    "finalSolution": "[[CaCO3]] + HCl: **sủi bọt khí** · [[BaCl2]] + [[Na2SO4]]: **kết tủa trắng** · Đốt que diêm: **tỏa nhiệt phát sáng** · Giấm ăn: **quỳ hóa đỏ**.",
     "commonMistakes": []
   }
 ]

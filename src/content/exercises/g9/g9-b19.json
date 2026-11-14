@@ -116,7 +116,7 @@
       },
       {
         "level": 2,
-        "text": "Phương trình: Fe + CuSO4 -> FeSO4 + Cu (kim loại đồng màu đỏ)."
+        "text": "Phương trình: Fe + [[CuSO4]] -> [[FeSO4]] + Cu (kim loại đồng màu đỏ)."
       }
     ],
     "steps": [
@@ -128,12 +128,12 @@
       {
         "kind": "equation",
         "title": "Viết PTHH",
-        "body": "Fe + CuSO4 (xanh lam) -> FeSO4 (dung dịch xanh nhạt) + Cu (đỏ gạch)."
+        "body": "Fe + [[CuSO4]] (xanh lam) -> [[FeSO4]] (dung dịch xanh nhạt) + Cu (đỏ gạch)."
       },
       {
         "kind": "answer",
         "title": "Mô tả hiện tượng",
-        "body": "Lớp đồng đỏ bám ngoài đinh sắt và màu xanh lam của dung dịch CuSO4 nhạt dần."
+        "body": "Lớp đồng đỏ bám ngoài đinh sắt và màu xanh lam của dung dịch [[CuSO4]] nhạt dần."
       }
     ],
     "finalSolution": "Có lớp kim loại màu đỏ bám ngoài đinh sắt, màu xanh lam của dung dịch nhạt dần",
@@ -205,15 +205,15 @@
       "pairs": [
         {
           "left": "Na (Sodium)",
-          "right": "Tác dụng mãnh liệt với nước ở nhiệt độ thường sinh khí H2"
+          "right": "Tác dụng mãnh liệt với nước ở nhiệt độ thường sinh khí [[H2]]"
         },
         {
           "left": "Fe (Iron)",
-          "right": "Tác dụng với acid HCl loãng giải phóng khí H2"
+          "right": "Tác dụng với acid HCl loãng giải phóng khí [[H2]]"
         },
         {
           "left": "Cu (Copper)",
-          "right": "Không tan trong HCl loãng, đẩy được kim loại Ag ra khỏi AgNO3"
+          "right": "Không tan trong HCl loãng, đẩy được kim loại Ag ra khỏi [[AgNO3]]"
         },
         {
           "left": "Au (Gold)",
@@ -240,7 +240,7 @@
       {
         "kind": "knowledge",
         "title": "Tính chất",
-        "body": "Na: tác dụng nước · Fe: tác dụng acid giải phóng H2 · Cu: đứng sau H nhưng trước Ag nên đẩy Ag ra khỏi muối · Au: trơ."
+        "body": "Na: tác dụng nước · Fe: tác dụng acid giải phóng [[H2]] · Cu: đứng sau H nhưng trước Ag nên đẩy Ag ra khỏi muối · Au: trơ."
       },
       {
         "kind": "answer",
@@ -311,7 +311,7 @@
       },
       {
         "level": 2,
-        "text": "Chỉ các kim loại đứng trước H mới đẩy được H2 ra khỏi acid loãng."
+        "text": "Chỉ các kim loại đứng trước H mới đẩy được [[H2]] ra khỏi acid loãng."
       }
     ],
     "steps": [

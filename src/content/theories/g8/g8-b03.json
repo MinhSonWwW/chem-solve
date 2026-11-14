@@ -43,11 +43,11 @@
         "Nếu d > 1: Khí A nặng hơn, chìm xuống dưới (cần thu ngửa bình).",
         "Nếu d < 1: Khí A nhẹ hơn, bay lên trên (cần thu úp bình, ví dụ khí [[H2]] có M = 2 < 29)."
       ],
-      "callout": "⚠️ Nhớ số 29: Không khí gồm 80% N2 (28) và 20% O2 (32), M trung bình = 29 g/mol!"
+      "callout": "⚠️ Nhớ số 29: Không khí gồm 80% [[N2]] (28) và 20% [[O2]] (32), M trung bình = 29 g/mol!"
     }
   ],
   "quickCheck": {
-    "prompt": "Ở điều kiện chuẩn (25°C, 1 bar), thể tích của 0,5 mol khí Oxygen (O2) là bao nhiêu lít?",
+    "prompt": "Ở điều kiện chuẩn (25°C, 1 bar), thể tích của 0,5 mol khí Oxygen ([[O2]]) là bao nhiêu lít?",
     "options": [
       { "id": "opt-1", "text": "11,2 lít", "correct": false },
       { "id": "opt-2", "text": "12,395 lít", "correct": true },

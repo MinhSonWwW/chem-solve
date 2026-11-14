@@ -350,11 +350,11 @@
         },
         {
           "id": "opt-b",
-          "label": "Khí oxygen (O2) và chất béo dự trữ"
+          "label": "Khí oxygen ([[O2]]) và chất béo dự trữ"
         },
         {
           "id": "opt-c",
-          "label": "Khí carbon dioxide (CO2), mồ hôi, nước tiểu"
+          "label": "Khí carbon dioxide ([[CO2]]), mồ hôi, nước tiểu"
         },
         {
           "id": "opt-d",
@@ -377,20 +377,20 @@
       {
         "kind": "identify",
         "title": "Chất đào thải ra môi trường",
-        "body": "Khí CO2 từ hô hấp, nước tiểu và mồ hôi từ bài tiết."
+        "body": "Khí [[CO2]] từ hô hấp, nước tiểu và mồ hôi từ bài tiết."
       },
       {
         "kind": "knowledge",
         "title": "Kiến thức cốt lõi SGK KHTN 7",
-        "body": "Sinh vật lấy dinh dưỡng, O2/CO2 và đào thải các chất cặn bã như CO2, mồ hôi, nước tiểu."
+        "body": "Sinh vật lấy dinh dưỡng, [[O2]]/[[CO2]] và đào thải các chất cặn bã như [[CO2]], mồ hôi, nước tiểu."
       },
       {
         "kind": "answer",
         "title": "Kết luận",
-        "body": "CO2, mồ hôi, nước tiểu là chất thải của quá trình trao đổi chất."
+        "body": "[[CO2]], mồ hôi, nước tiểu là chất thải của quá trình trao đổi chất."
       }
     ],
-    "finalSolution": "Sinh vật lấy dinh dưỡng, O2/CO2 và đào thải các chất cặn bã như CO2, mồ hôi, nước tiểu.",
+    "finalSolution": "Sinh vật lấy dinh dưỡng, [[O2]]/[[CO2]] và đào thải các chất cặn bã như [[CO2]], mồ hôi, nước tiểu.",
     "commonMistakes": []
   },
   {
