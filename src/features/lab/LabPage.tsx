@@ -13,6 +13,7 @@ import {
 import { ChemistryLab } from './components/ChemistryLab';
 import { CircuitLab } from './components/CircuitLab';
 import { MicroscopeLab } from './components/MicroscopeLab';
+import { PhetSimLibrary } from './components/PhetSimLibrary';
 import type { LabSubject } from './types';
 import { sound } from '@/lib/audio';
 import { useUserStore } from '@/features/gamification/useUserStore';
@@ -239,7 +240,10 @@ export const LabPage: React.FC = () => {
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
             >
-              <ChemistryLab onAchieve={onChemAchieve} />
+              <div className="space-y-4">
+                <ChemistryLab onAchieve={onChemAchieve} />
+                <PhetSimLibrary subject="chem" />
+              </div>
             </motion.div>
           )}
 
@@ -251,7 +255,10 @@ export const LabPage: React.FC = () => {
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
             >
-              <CircuitLab onAchieve={onPhysicsAchieve} />
+              <div className="space-y-4">
+                <CircuitLab onAchieve={onPhysicsAchieve} />
+                <PhetSimLibrary subject="physics" />
+              </div>
             </motion.div>
           )}
 
@@ -263,7 +270,10 @@ export const LabPage: React.FC = () => {
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
             >
-              <MicroscopeLab onAchieve={onBioAchieve} />
+              <div className="space-y-4">
+                <MicroscopeLab onAchieve={onBioAchieve} />
+                <PhetSimLibrary subject="bio" />
+              </div>
             </motion.div>
           )}
         </AnimatePresence>
