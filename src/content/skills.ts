@@ -115,6 +115,38 @@ export const SKILLS: Skill[] = [
     category: 'ly-thuyet',
     description: 'Ý nghĩa của ô nguyên tố, chu kì và nhóm (A, B) trong bảng tuần hoàn.',
   },
+  {
+    id: 'molecule-element-compound',
+    name: 'Phân tử, đơn chất, hợp chất',
+    grade: 7,
+    lessonId: 'g7-b05',
+    category: 'ly-thuyet',
+    description: 'Khái niệm phân tử; phân biệt đơn chất kim loại, đơn chất phi kim và hợp chất.',
+  },
+  {
+    id: 'molecular-mass',
+    name: 'Khối lượng phân tử',
+    grade: 7,
+    lessonId: 'g7-b05',
+    category: 'tinh-toan',
+    description: 'Tính khối lượng phân tử (amu) bằng tổng khối lượng các nguyên tử.',
+  },
+  {
+    id: 'valence',
+    name: 'Hóa trị',
+    grade: 7,
+    lessonId: 'g7-b06',
+    category: 'ly-thuyet',
+    description: 'Ý nghĩa công thức hóa học; xác định hóa trị của nguyên tố theo quy tắc hóa trị.',
+  },
+  {
+    id: 'formula-from-valence',
+    name: 'Lập công thức hóa học',
+    grade: 7,
+    lessonId: 'g7-b06',
+    category: 'tinh-toan',
+    description: 'Lập công thức từ hóa trị (kể cả nhóm nguyên tử) và tính phần trăm khối lượng nguyên tố.',
+  },
 
   // LỚP 8
   {

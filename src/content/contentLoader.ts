@@ -181,6 +181,18 @@ export async function loadExercisesForNode(
     if (nodeId.endsWith('n02')) return allExercises.slice(6, 12);
   }
 
+  if (lessonId === 'g7-b05') {
+    // 12 questions: n01 = phân tử, đơn chất, hợp chất; n02 = khối lượng phân tử
+    if (nodeId.endsWith('n01')) return allExercises.slice(0, 6);
+    if (nodeId.endsWith('n02')) return allExercises.slice(6, 12);
+  }
+
+  if (lessonId === 'g7-b06') {
+    // 12 questions: n01 = công thức hóa học & hóa trị; n02 = lập công thức & % khối lượng
+    if (nodeId.endsWith('n01')) return allExercises.slice(0, 6);
+    if (nodeId.endsWith('n02')) return allExercises.slice(6, 12);
+  }
+
   if (lessonId === 'g6-b09') {
     // 12 questions: n01 = objects/matter, n02 = properties, n03 = heating sugar/salt, boss = composite
     if (nodeId.endsWith('n01')) return allExercises.slice(0, 4);

@@ -153,6 +153,39 @@ export const CURRICULUM: Record<Grade, GradeCurriculum> = {
           },
         ],
       },
+      {
+        id: 'g7-c02',
+        chapterNumber: 2,
+        title: 'Phân tử. Đơn chất. Hợp chất',
+        description: 'Phân tử, khối lượng phân tử, hóa trị và cách lập công thức hóa học',
+        lessons: [
+          {
+            id: 'g7-b05',
+            lessonNumber: 5,
+            title: 'Phân tử. Đơn chất. Hợp chất',
+            subtitle: 'Hạt đại diện cho chất và cách phân loại chất',
+            ready: true,
+            nodes: [
+              { id: 'g7-b05-theory', nodeIndex: 1, title: 'Lý thuyết: Phân tử, đơn chất, hợp chất', description: '3 phút ghi nhớ', type: 'theory' },
+              { id: 'g7-b05-n01', nodeIndex: 2, title: 'Đơn chất và hợp chất', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g7-b05-n02', nodeIndex: 3, title: 'Khối lượng phân tử', description: '6 câu hỏi', type: 'lesson' },
+            ],
+          },
+          {
+            id: 'g7-b06',
+            lessonNumber: 6,
+            title: 'Hóa trị và công thức hóa học',
+            subtitle: 'Quy tắc hóa trị, lập công thức và tính phần trăm khối lượng',
+            ready: true,
+            nodes: [
+              { id: 'g7-b06-theory', nodeIndex: 1, title: 'Lý thuyết: Hóa trị và công thức hóa học', description: '3 phút ghi nhớ', type: 'theory' },
+              { id: 'g7-b06-n01', nodeIndex: 2, title: 'Hóa trị', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g7-b06-n02', nodeIndex: 3, title: 'Lập công thức hóa học', description: '6 câu hỏi', type: 'lesson' },
+              { id: 'g7-b06-chest', nodeIndex: 4, title: 'Rương chương 2', description: 'Phần thưởng', type: 'chest' },
+            ],
+          },
+        ],
+      },
     ],
   },
   8: {

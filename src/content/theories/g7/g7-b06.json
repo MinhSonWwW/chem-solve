@@ -1,0 +1,81 @@
+{
+  "lessonId": "g7-b06",
+  "nodeId": "g7-b06-theory",
+  "title": "Hóa trị và công thức hóa học",
+  "subtitle": "Ý nghĩa công thức hóa học, quy tắc hóa trị và cách lập công thức",
+  "sgkBaiSo": 7,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm",
+      "badgeColor": "purple",
+      "title": "Công thức hóa học",
+      "content": "Công thức hóa học dùng kí hiệu nguyên tố và chỉ số để biểu diễn một chất.",
+      "bulletPoints": [
+        "Đơn chất: kim loại viết bằng kí hiệu nguyên tố như [[Cu]], [[Fe]]; nhiều phi kim có phân tử gồm 2 nguyên tử như [[O2]], [[N2]], [[H2]].",
+        "Hợp chất: viết kí hiệu các nguyên tố kèm chỉ số là số nguyên tử, ví dụ [[H2O]], [[NaCl]], [[Al2O3]]. Chỉ số 1 không ghi.",
+        "Từ công thức biết được: chất do những nguyên tố nào tạo nên, số nguyên tử mỗi nguyên tố trong một phân tử và khối lượng phân tử."
+      ]
+    },
+    {
+      "id": "c2",
+      "badge": "Khái niệm",
+      "badgeColor": "cyan",
+      "title": "Hóa trị",
+      "content": "Hóa trị là con số biểu thị khả năng liên kết của nguyên tử nguyên tố này với nguyên tử nguyên tố khác, ghi bằng chữ số La Mã.",
+      "bulletPoints": [
+        "Lấy hóa trị của hydrogen là I và của oxygen là II làm mốc.",
+        "Trong [[HCl]], 1 nguyên tử Cl liên kết với 1 nguyên tử H nên Cl có hóa trị I. Trong [[H2O]], 1 nguyên tử O liên kết với 2 nguyên tử H nên O có hóa trị II.",
+        "Một số nguyên tố có nhiều hóa trị: Fe có hóa trị II hoặc III; S có hóa trị II, IV hoặc VI."
+      ]
+    },
+    {
+      "id": "c3",
+      "badge": "Ghi nhớ",
+      "badgeColor": "emerald",
+      "title": "Hóa trị thường gặp",
+      "content": "Hóa trị của một số nguyên tố và nhóm nguyên tử hay dùng:",
+      "bulletPoints": [
+        "Hóa trị I: H, Na, K, Ag, Cl; nhóm [[OH]], [[NO3]].",
+        "Hóa trị II: O, Mg, Ca, Ba, Zn; Cu (thường gặp); nhóm [[SO4]], [[CO3]].",
+        "Hóa trị III: Al; nhóm [[PO4]]. Fe có hóa trị II hoặc III."
+      ],
+      "callout": "Nhóm nguyên tử như [[OH]], [[SO4]] được xem như một khối, có hóa trị riêng."
+    },
+    {
+      "id": "c4",
+      "badge": "Quy tắc",
+      "badgeColor": "amber",
+      "title": "Quy tắc hóa trị",
+      "content": "Trong hợp chất $A_xB_y$ (A có hóa trị a, B có hóa trị b), tích chỉ số và hóa trị của hai nguyên tố bằng nhau.",
+      "formulaExample": "$x \\cdot a = y \\cdot b$",
+      "bulletPoints": [
+        "Lập công thức: Al (III) và O (II). Ta có x · III = y · II, nên x : y = 2 : 3. Công thức là [[Al2O3]].",
+        "Tính hóa trị: trong [[Fe2O3]], gọi hóa trị của Fe là a. Ta có 2 · a = 3 · II, nên a = III.",
+        "Cách nhanh: lấy hóa trị của nguyên tố này làm chỉ số của nguyên tố kia, rồi rút gọn. Ca (II) và O (II) cho [[Ca2O2]], rút gọn thành [[CaO]]."
+      ]
+    },
+    {
+      "id": "c5",
+      "badge": "Tính toán",
+      "badgeColor": "cyan",
+      "title": "Phần trăm khối lượng nguyên tố",
+      "content": "Phần trăm khối lượng của một nguyên tố trong hợp chất bằng khối lượng của nguyên tố đó trong phân tử chia cho khối lượng phân tử.",
+      "bulletPoints": [
+        "Trong [[Fe2O3]] (Fe = 56, O = 16): khối lượng phân tử = 2 × 56 + 3 × 16 = 160 amu.",
+        "%Fe = 2 × 56 : 160 × 100% = 70%; %O = 100% − 70% = 30%."
+      ]
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Công thức hóa học của hợp chất tạo bởi Al (III) và Cl (I) là:",
+    "options": [
+      { "id": "opt-1", "text": "[[AlCl]]", "correct": false },
+      { "id": "opt-2", "text": "[[AlCl3]]", "correct": true },
+      { "id": "opt-3", "text": "[[Al3Cl]]", "correct": false },
+      { "id": "opt-4", "text": "[[AlCl2]]", "correct": false }
+    ],
+    "explanation": "Theo quy tắc hóa trị: x · III = y · I nên x : y = 1 : 3. Công thức là [[AlCl3]]."
+  }
+}

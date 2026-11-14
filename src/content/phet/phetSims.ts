@@ -74,7 +74,8 @@ const RAW: z.input<typeof PhetSimSchema>[] = [
     id: 'build-a-molecule',
     subject: 'chem',
     grade: 7,
-    lessonLabel: 'Phân tử – đơn chất – hợp chất',
+    lessonIds: ['g7-b05'],
+    lessonLabel: 'Phân tử. Đơn chất. Hợp chất',
     titleVi: 'Tạo dựng phân tử',
     summary: 'Ghép các nguyên tử thành phân tử như H2O, O2, CO2 và đếm số nguyên tử mỗi loại.',
     tryThis: [

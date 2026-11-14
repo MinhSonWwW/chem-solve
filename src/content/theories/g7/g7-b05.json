@@ -1,0 +1,71 @@
+{
+  "lessonId": "g7-b05",
+  "nodeId": "g7-b05-theory",
+  "title": "Phân tử. Đơn chất. Hợp chất",
+  "subtitle": "Hạt đại diện cho chất, khối lượng phân tử và cách phân loại chất",
+  "sgkBaiSo": 5,
+  "estimatedMinutes": 3,
+  "cards": [
+    {
+      "id": "c1",
+      "badge": "Khái niệm",
+      "badgeColor": "purple",
+      "title": "Phân tử",
+      "content": "Phân tử là hạt đại diện cho chất, gồm một số nguyên tử liên kết với nhau và thể hiện đầy đủ tính chất hóa học của chất.",
+      "bulletPoints": [
+        "Phân tử nước gồm 2 nguyên tử hydrogen và 1 nguyên tử oxygen liên kết với nhau: [[H2O]].",
+        "Phân tử khí oxygen gồm 2 nguyên tử oxygen: [[O2]]. Phân tử carbon dioxide gồm 1 nguyên tử carbon và 2 nguyên tử oxygen: [[CO2]].",
+        "Với kim loại như sắt, đồng, các nguyên tử xếp sát nhau thành khối, nên hạt đại diện cho chất là nguyên tử."
+      ],
+      "callout": "Các phân tử của cùng một chất giống nhau về thành phần và cách liên kết."
+    },
+    {
+      "id": "c2",
+      "badge": "Tính toán",
+      "badgeColor": "cyan",
+      "title": "Khối lượng phân tử",
+      "content": "Khối lượng phân tử bằng tổng khối lượng các nguyên tử trong phân tử, tính theo đơn vị amu.",
+      "bulletPoints": [
+        "[[H2O]]: 2 × 1 + 16 = 18 amu.",
+        "[[CO2]]: 12 + 2 × 16 = 44 amu.",
+        "[[O2]]: 2 × 16 = 32 amu."
+      ],
+      "formulaExample": "Khối lượng phân tử = tổng (khối lượng nguyên tử × số nguyên tử của nguyên tố đó)",
+      "callout": "Nhân khối lượng nguyên tử với chỉ số của nguyên tố trước, rồi mới cộng lại."
+    },
+    {
+      "id": "c3",
+      "badge": "Phân loại",
+      "badgeColor": "emerald",
+      "title": "Đơn chất",
+      "content": "Đơn chất là chất được tạo nên từ một nguyên tố hóa học.",
+      "bulletPoints": [
+        "Đơn chất kim loại: sắt [[Fe]], đồng [[Cu]], nhôm [[Al]]. Thường ở thể rắn (trừ thủy ngân [[Hg]] ở thể lỏng), dẫn điện, dẫn nhiệt và có ánh kim.",
+        "Đơn chất phi kim: khí oxygen [[O2]], khí hydrogen [[H2]], khí nitrogen [[N2]]; carbon [[C]] và sulfur [[S]] ở thể rắn.",
+        "Một nguyên tố có thể tạo nên nhiều đơn chất: oxygen tạo nên [[O2]] và ozone [[O3]]; carbon tạo nên than chì và kim cương."
+      ]
+    },
+    {
+      "id": "c4",
+      "badge": "Phân loại",
+      "badgeColor": "amber",
+      "title": "Hợp chất",
+      "content": "Hợp chất là chất được tạo nên từ hai hay nhiều nguyên tố hóa học.",
+      "bulletPoints": [
+        "Nước [[H2O]] tạo nên từ hydrogen và oxygen; muối ăn [[NaCl]] từ sodium và chlorine; đá vôi [[CaCO3]] từ calcium, carbon và oxygen.",
+        "Tính chất của hợp chất khác hẳn các đơn chất tạo nên nó: sodium là kim loại phản ứng mạnh với nước, chlorine là khí độc, còn muối ăn [[NaCl]] thì dùng hằng ngày."
+      ],
+      "callout": "Phân biệt nhanh: đếm số nguyên tố trong công thức. Một nguyên tố là đơn chất, từ hai nguyên tố trở lên là hợp chất."
+    }
+  ],
+  "quickCheck": {
+    "prompt": "Chất nào sau đây là hợp chất?",
+    "options": [
+      { "id": "opt-1", "text": "Khí oxygen [[O2]]", "correct": false },
+      { "id": "opt-2", "text": "Kim loại đồng [[Cu]]", "correct": false },
+      { "id": "opt-3", "text": "Khí carbon dioxide [[CO2]]", "correct": true },
+      { "id": "opt-4", "text": "Khí nitrogen [[N2]]", "correct": false }
+    ],
+    "explanation": "[[CO2]] được tạo nên từ hai nguyên tố là carbon và oxygen nên là hợp chất. [[O2]], [[Cu]] và [[N2]] mỗi chất chỉ có một nguyên tố nên là đơn chất."
+  }
+}

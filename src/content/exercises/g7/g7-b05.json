@@ -1,0 +1,802 @@
+[
+  {
+    "id": "g7-b05-mcq-001",
+    "lessonId": "g7-b05",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "molecule-element-compound"
+    ],
+    "difficulty": 1,
+    "prompt": "Phát biểu nào đúng về phân tử?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Phân tử là hạt nhỏ nhất, không thể chia nhỏ hơn được nữa"
+        },
+        {
+          "id": "opt-b",
+          "label": "Phân tử là hạt đại diện cho chất, gồm một số nguyên tử liên kết với nhau và thể hiện đầy đủ tính chất hóa học của chất"
+        },
+        {
+          "id": "opt-c",
+          "label": "Phân tử chỉ có ở các chất khí"
+        },
+        {
+          "id": "opt-d",
+          "label": "Mọi phân tử đều gồm hai nguyên tử giống nhau"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Phân tử được tạo nên từ những hạt nhỏ hơn nào?"
+      },
+      {
+        "level": 2,
+        "text": "Phân tử gồm các nguyên tử liên kết với nhau và đại diện cho chất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Yêu cầu",
+        "body": "Chọn định nghĩa đúng của phân tử."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiến thức",
+        "body": "Phân tử là hạt đại diện cho chất, gồm một số nguyên tử liên kết với nhau và thể hiện đầy đủ tính chất hóa học của chất."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Phân tử còn chia được thành các nguyên tử, có ở cả chất rắn, lỏng, khí, và có thể gồm các nguyên tử khác nhau như [[H2O]]."
+      }
+    ],
+    "finalSolution": "Phân tử là hạt đại diện cho chất, gồm một số nguyên tử liên kết với nhau.",
+    "commonMistakes": [
+      {
+        "id": "smallest-particle",
+        "message": "Phân tử còn chia được thành các nguyên tử, nên không phải hạt nhỏ nhất."
+      }
+    ]
+  },
+  {
+    "id": "g7-b05-sort-001",
+    "lessonId": "g7-b05",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "molecule-element-compound"
+    ],
+    "difficulty": 1,
+    "prompt": "Phân loại các chất sau thành đơn chất và hợp chất.",
+    "answer": {
+      "kind": "sort",
+      "buckets": [
+        {
+          "id": "simple",
+          "label": "Đơn chất"
+        },
+        {
+          "id": "compound",
+          "label": "Hợp chất"
+        }
+      ],
+      "items": [
+        {
+          "id": "o2",
+          "label": "Khí oxygen [[O2]]",
+          "bucketId": "simple"
+        },
+        {
+          "id": "fe",
+          "label": "Sắt [[Fe]]",
+          "bucketId": "simple"
+        },
+        {
+          "id": "n2",
+          "label": "Khí nitrogen [[N2]]",
+          "bucketId": "simple"
+        },
+        {
+          "id": "h2o",
+          "label": "Nước [[H2O]]",
+          "bucketId": "compound"
+        },
+        {
+          "id": "nacl",
+          "label": "Muối ăn [[NaCl]]",
+          "bucketId": "compound"
+        },
+        {
+          "id": "caco3",
+          "label": "Đá vôi [[CaCO3]]",
+          "bucketId": "compound"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đếm xem mỗi công thức có bao nhiêu loại kí hiệu nguyên tố."
+      },
+      {
+        "level": 2,
+        "text": "Một loại nguyên tố là đơn chất; từ hai loại trở lên là hợp chất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Cách làm",
+        "body": "Đếm số nguyên tố khác nhau trong mỗi công thức."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Quy tắc",
+        "body": "Đơn chất tạo nên từ một nguyên tố; hợp chất tạo nên từ hai hay nhiều nguyên tố."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết quả",
+        "body": "Đơn chất: [[O2]], [[Fe]], [[N2]]. Hợp chất: [[H2O]], [[NaCl]], [[CaCO3]]."
+      }
+    ],
+    "finalSolution": "Đơn chất: [[O2]], [[Fe]], [[N2]]. Hợp chất: [[H2O]], [[NaCl]], [[CaCO3]].",
+    "commonMistakes": [
+      {
+        "id": "count-atoms",
+        "message": "[[O2]] có 2 nguyên tử nhưng chỉ 1 nguyên tố, nên vẫn là đơn chất. Đếm số nguyên tố, không đếm số nguyên tử."
+      }
+    ]
+  },
+  {
+    "id": "g7-b05-mcq-002",
+    "lessonId": "g7-b05",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "molecule-element-compound"
+    ],
+    "difficulty": 1,
+    "prompt": "Dãy chất nào dưới đây gồm toàn đơn chất?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "[[O2]], [[H2O]], [[Cu]]"
+        },
+        {
+          "id": "opt-b",
+          "label": "[[N2]], [[Fe]], [[S]]"
+        },
+        {
+          "id": "opt-c",
+          "label": "[[NaCl]], [[Cl2]], [[Na]]"
+        },
+        {
+          "id": "opt-d",
+          "label": "[[CO2]], [[C]], [[O2]]"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Loại ngay dãy nào có chất chứa hai nguyên tố trở lên."
+      },
+      {
+        "level": 2,
+        "text": "[[H2O]], [[NaCl]], [[CO2]] đều là hợp chất."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Yêu cầu",
+        "body": "Tìm dãy mà chất nào cũng chỉ có một nguyên tố."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Kiểm tra từng dãy",
+        "body": "Dãy 1 có [[H2O]], dãy 3 có [[NaCl]], dãy 4 có [[CO2]] là hợp chất. Dãy 2 gồm [[N2]], [[Fe]], [[S]] đều chỉ có một nguyên tố."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Dãy gồm toàn đơn chất là [[N2]], [[Fe]], [[S]]."
+      }
+    ],
+    "finalSolution": "Dãy [[N2]], [[Fe]], [[S]] gồm toàn đơn chất.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g7-b05-tf-001",
+    "lessonId": "g7-b05",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "molecule-element-compound"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định các phát biểu sau là Đúng hay Sai.",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "s1",
+          "text": "Một nguyên tố hóa học chỉ tạo nên được một đơn chất.",
+          "correct": false
+        },
+        {
+          "id": "s2",
+          "text": "Hợp chất được tạo nên từ ít nhất hai nguyên tố hóa học.",
+          "correct": true
+        },
+        {
+          "id": "s3",
+          "text": "Tính chất của hợp chất giống tính chất của các đơn chất tạo nên nó.",
+          "correct": false
+        },
+        {
+          "id": "s4",
+          "text": "Hạt đại diện cho kim loại đồng là nguyên tử.",
+          "correct": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhớ lại oxygen tạo nên những đơn chất nào."
+      },
+      {
+        "level": 2,
+        "text": "Muối ăn [[NaCl]] có giống kim loại sodium và khí chlorine không?"
+      }
+    ],
+    "steps": [
+      {
+        "kind": "knowledge",
+        "title": "Phát biểu 1",
+        "body": "Sai: oxygen tạo nên cả [[O2]] và ozone [[O3]]."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phát biểu 2 và 3",
+        "body": "Phát biểu 2 đúng theo định nghĩa. Phát biểu 3 sai: [[NaCl]] khác hẳn sodium và chlorine."
+      },
+      {
+        "kind": "answer",
+        "title": "Phát biểu 4",
+        "body": "Đúng: các nguyên tử đồng xếp sát nhau thành khối kim loại."
+      }
+    ],
+    "finalSolution": "Sai – Đúng – Sai – Đúng.",
+    "commonMistakes": [
+      {
+        "id": "one-element-one-simple",
+        "message": "Một nguyên tố có thể tạo nhiều đơn chất, ví dụ [[O2]] và [[O3]]; than chì và kim cương."
+      }
+    ]
+  },
+  {
+    "id": "g7-b05-build-001",
+    "lessonId": "g7-b05",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "molecule-element-compound"
+    ],
+    "difficulty": 1,
+    "prompt": "Ghép công thức của phân tử carbon dioxide, gồm 1 nguyên tử carbon và 2 nguyên tử oxygen.",
+    "answer": {
+      "kind": "formula-builder",
+      "tiles": [
+        "C",
+        "O",
+        "2",
+        "H",
+        "3",
+        "N"
+      ],
+      "accepted": [
+        "CO2"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Viết kí hiệu carbon trước, oxygen sau."
+      },
+      {
+        "level": 2,
+        "text": "Chỉ số 2 đặt ngay sau kí hiệu O."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Thành phần",
+        "body": "1 nguyên tử C và 2 nguyên tử O."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Cách viết",
+        "body": "Chỉ số ghi ngay sau kí hiệu nguyên tố, chỉ số 1 không ghi."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết quả",
+        "body": "Công thức là [[CO2]]."
+      }
+    ],
+    "finalSolution": "Công thức phân tử carbon dioxide là [[CO2]].",
+    "commonMistakes": []
+  },
+  {
+    "id": "g7-b05-match-001",
+    "lessonId": "g7-b05",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "molecule-element-compound"
+    ],
+    "difficulty": 1,
+    "prompt": "Ghép mỗi chất với loại chất tương ứng.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "Sắt [[Fe]]",
+          "right": "Đơn chất kim loại"
+        },
+        {
+          "left": "Khí hydrogen [[H2]]",
+          "right": "Đơn chất phi kim"
+        },
+        {
+          "left": "Muối ăn [[NaCl]]",
+          "right": "Hợp chất"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Kim loại thường dẫn điện và có ánh kim."
+      },
+      {
+        "level": 2,
+        "text": "[[NaCl]] gồm hai nguyên tố sodium và chlorine."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Yêu cầu",
+        "body": "Xác định chất được tạo từ bao nhiêu nguyên tố và nguyên tố đó là kim loại hay phi kim."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phân loại",
+        "body": "[[Fe]] là kim loại; [[H2]] là phi kim, chỉ có một nguyên tố; [[NaCl]] có hai nguyên tố."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết quả",
+        "body": "[[Fe]] – đơn chất kim loại; [[H2]] – đơn chất phi kim; [[NaCl]] – hợp chất."
+      }
+    ],
+    "finalSolution": "[[Fe]]: đơn chất kim loại; [[H2]]: đơn chất phi kim; [[NaCl]]: hợp chất.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g7-b05-num-001",
+    "lessonId": "g7-b05",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "molecular-mass"
+    ],
+    "difficulty": 1,
+    "prompt": "Tính khối lượng phân tử của nước [[H2O]]. Biết khối lượng nguyên tử H = 1 amu, O = 16 amu.",
+    "given": [
+      {
+        "label": "H",
+        "value": "1",
+        "unit": "amu"
+      },
+      {
+        "label": "O",
+        "value": "16",
+        "unit": "amu"
+      }
+    ],
+    "find": {
+      "label": "Khối lượng phân tử H2O",
+      "unit": "amu"
+    },
+    "answer": {
+      "kind": "number",
+      "value": 18,
+      "unit": "amu",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Phân tử [[H2O]] có 2 nguyên tử H và 1 nguyên tử O."
+      },
+      {
+        "level": 2,
+        "text": "2 × 1 + 1 × 16 = ?"
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Dữ kiện",
+        "body": "H = 1 amu, O = 16 amu; phân tử có 2 H và 1 O."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính",
+        "body": "2 × 1 + 16 = 18 amu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khối lượng phân tử nước là 18 amu."
+      }
+    ],
+    "finalSolution": "Khối lượng phân tử [[H2O]] = 2 × 1 + 16 = 18 amu.",
+    "commonMistakes": [
+      {
+        "id": "forgot-index",
+        "message": "Nhớ nhân khối lượng H với chỉ số 2.",
+        "trapAnswers": [
+          "17"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "g7-b05-num-002",
+    "lessonId": "g7-b05",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "molecular-mass"
+    ],
+    "difficulty": 2,
+    "prompt": "Tính khối lượng phân tử của carbon dioxide [[CO2]]. Biết C = 12 amu, O = 16 amu.",
+    "given": [
+      {
+        "label": "C",
+        "value": "12",
+        "unit": "amu"
+      },
+      {
+        "label": "O",
+        "value": "16",
+        "unit": "amu"
+      }
+    ],
+    "find": {
+      "label": "Khối lượng phân tử CO2",
+      "unit": "amu"
+    },
+    "answer": {
+      "kind": "number",
+      "value": 44,
+      "unit": "amu",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Phân tử [[CO2]] có 1 nguyên tử C và 2 nguyên tử O."
+      },
+      {
+        "level": 2,
+        "text": "12 + 2 × 16 = ?"
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Dữ kiện",
+        "body": "C = 12 amu, O = 16 amu; phân tử có 1 C và 2 O."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính",
+        "body": "12 + 2 × 16 = 44 amu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khối lượng phân tử carbon dioxide là 44 amu."
+      }
+    ],
+    "finalSolution": "Khối lượng phân tử [[CO2]] = 12 + 2 × 16 = 44 amu.",
+    "commonMistakes": [
+      {
+        "id": "forgot-index",
+        "message": "Có 2 nguyên tử O, cần nhân 16 với 2.",
+        "trapAnswers": [
+          "28"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "g7-b05-mcq-003",
+    "lessonId": "g7-b05",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "molecular-mass"
+    ],
+    "difficulty": 1,
+    "prompt": "Khối lượng phân tử của khí oxygen [[O2]] là bao nhiêu? (O = 16 amu)",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "16 amu"
+        },
+        {
+          "id": "opt-b",
+          "label": "32 amu"
+        },
+        {
+          "id": "opt-c",
+          "label": "8 amu"
+        },
+        {
+          "id": "opt-d",
+          "label": "48 amu"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Phân tử khí oxygen có mấy nguyên tử O?"
+      },
+      {
+        "level": 2,
+        "text": "2 × 16 = ?"
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Thành phần",
+        "body": "Phân tử [[O2]] gồm 2 nguyên tử oxygen."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính",
+        "body": "2 × 16 = 32 amu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khối lượng phân tử [[O2]] là 32 amu."
+      }
+    ],
+    "finalSolution": "Khối lượng phân tử [[O2]] = 2 × 16 = 32 amu.",
+    "commonMistakes": [
+      {
+        "id": "atom-vs-molecule",
+        "message": "16 amu là khối lượng một nguyên tử O, không phải phân tử [[O2]]."
+      }
+    ]
+  },
+  {
+    "id": "g7-b05-num-003",
+    "lessonId": "g7-b05",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "molecular-mass"
+    ],
+    "difficulty": 2,
+    "prompt": "Tính khối lượng phân tử của calcium carbonate [[CaCO3]] (thành phần chính của đá vôi). Biết Ca = 40 amu, C = 12 amu, O = 16 amu.",
+    "given": [
+      {
+        "label": "Ca",
+        "value": "40",
+        "unit": "amu"
+      },
+      {
+        "label": "C",
+        "value": "12",
+        "unit": "amu"
+      },
+      {
+        "label": "O",
+        "value": "16",
+        "unit": "amu"
+      }
+    ],
+    "find": {
+      "label": "Khối lượng phân tử CaCO3",
+      "unit": "amu"
+    },
+    "answer": {
+      "kind": "number",
+      "value": 100,
+      "unit": "amu",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Phân tử có 1 Ca, 1 C và 3 O."
+      },
+      {
+        "level": 2,
+        "text": "40 + 12 + 3 × 16 = ?"
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Dữ kiện",
+        "body": "Ca = 40, C = 12, O = 16 (amu); phân tử có 1 Ca, 1 C, 3 O."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính",
+        "body": "40 + 12 + 3 × 16 = 100 amu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khối lượng phân tử [[CaCO3]] là 100 amu."
+      }
+    ],
+    "finalSolution": "Khối lượng phân tử [[CaCO3]] = 40 + 12 + 3 × 16 = 100 amu.",
+    "commonMistakes": [
+      {
+        "id": "forgot-index",
+        "message": "Có 3 nguyên tử O, cần nhân 16 với 3.",
+        "trapAnswers": [
+          "68"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "g7-b05-mcq-004",
+    "lessonId": "g7-b05",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "molecular-mass"
+    ],
+    "difficulty": 3,
+    "prompt": "Phân tử X gồm 1 nguyên tử nitrogen và 3 nguyên tử hydrogen. Biết N = 14 amu, H = 1 amu. Khối lượng phân tử của X là:",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "15 amu"
+        },
+        {
+          "id": "opt-b",
+          "label": "17 amu"
+        },
+        {
+          "id": "opt-c",
+          "label": "42 amu"
+        },
+        {
+          "id": "opt-d",
+          "label": "45 amu"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Viết công thức của X trước."
+      },
+      {
+        "level": 2,
+        "text": "X là [[NH3]]: 14 + 3 × 1 = ?"
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Công thức",
+        "body": "X gồm 1 N và 3 H nên công thức là [[NH3]]."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính",
+        "body": "14 + 3 × 1 = 17 amu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Khối lượng phân tử X là 17 amu."
+      }
+    ],
+    "finalSolution": "X là [[NH3]], khối lượng phân tử = 14 + 3 = 17 amu.",
+    "commonMistakes": [
+      {
+        "id": "multiply-wrong",
+        "message": "Chỉ số 3 thuộc về H, không nhân với khối lượng N (3 × 14 = 42 là sai)."
+      }
+    ]
+  },
+  {
+    "id": "g7-b05-tf-002",
+    "lessonId": "g7-b05",
+    "sgkBaiSo": 5,
+    "skillIds": [
+      "molecular-mass"
+    ],
+    "difficulty": 2,
+    "prompt": "Xác định các phát biểu sau là Đúng hay Sai. (O = 16, C = 12, H = 1 amu)",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "s1",
+          "text": "Phân tử ozone [[O3]] nặng hơn phân tử oxygen [[O2]] là 16 amu.",
+          "correct": true
+        },
+        {
+          "id": "s2",
+          "text": "Khối lượng phân tử nước [[H2O]] là 18 amu.",
+          "correct": true
+        },
+        {
+          "id": "s3",
+          "text": "Phân tử [[CO2]] và phân tử [[O2]] có khối lượng bằng nhau.",
+          "correct": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tính khối lượng của từng phân tử rồi so sánh."
+      },
+      {
+        "level": 2,
+        "text": "[[O3]] = 48, [[O2]] = 32, [[CO2]] = 44 amu."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "compute",
+        "title": "Tính",
+        "body": "[[O3]] = 3 × 16 = 48; [[O2]] = 32; [[H2O]] = 18; [[CO2]] = 12 + 32 = 44 (amu)."
+      },
+      {
+        "kind": "knowledge",
+        "title": "So sánh",
+        "body": "48 − 32 = 16 nên phát biểu 1 đúng; [[CO2]] (44) khác [[O2]] (32) nên phát biểu 3 sai."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Đúng – Đúng – Sai."
+      }
+    ],
+    "finalSolution": "Đúng – Đúng – Sai.",
+    "commonMistakes": []
+  }
+]

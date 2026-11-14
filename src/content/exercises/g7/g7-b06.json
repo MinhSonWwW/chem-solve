@@ -1,0 +1,742 @@
+[
+  {
+    "id": "g7-b06-mcq-001",
+    "lessonId": "g7-b06",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "valence"
+    ],
+    "difficulty": 1,
+    "prompt": "Trong hợp chất [[NH3]], nitrogen có hóa trị bao nhiêu? (H có hóa trị I)",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "I"
+        },
+        {
+          "id": "opt-b",
+          "label": "II"
+        },
+        {
+          "id": "opt-c",
+          "label": "III"
+        },
+        {
+          "id": "opt-d",
+          "label": "IV"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Một nguyên tử N liên kết với mấy nguyên tử H?"
+      },
+      {
+        "level": 2,
+        "text": "Mỗi H hóa trị I, N liên kết với 3 nguyên tử H."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Dữ kiện",
+        "body": "Trong [[NH3]], 1 nguyên tử N liên kết với 3 nguyên tử H; H có hóa trị I."
+      },
+      {
+        "kind": "equation",
+        "title": "Quy tắc hóa trị",
+        "body": "1 · a = 3 · I, nên a = III."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Nitrogen có hóa trị III trong [[NH3]]."
+      }
+    ],
+    "finalSolution": "Trong [[NH3]], nitrogen có hóa trị III.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g7-b06-mcq-002",
+    "lessonId": "g7-b06",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "valence"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong hợp chất [[SO2]], sulfur có hóa trị bao nhiêu? (O có hóa trị II)",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "II"
+        },
+        {
+          "id": "opt-b",
+          "label": "IV"
+        },
+        {
+          "id": "opt-c",
+          "label": "VI"
+        },
+        {
+          "id": "opt-d",
+          "label": "I"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp dụng x · a = y · b với x = 1, y = 2."
+      },
+      {
+        "level": 2,
+        "text": "1 · a = 2 · II."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Dữ kiện",
+        "body": "Trong [[SO2]]: 1 nguyên tử S, 2 nguyên tử O; O có hóa trị II."
+      },
+      {
+        "kind": "equation",
+        "title": "Quy tắc hóa trị",
+        "body": "1 · a = 2 · II, nên a = IV."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Sulfur có hóa trị IV trong [[SO2]]."
+      }
+    ],
+    "finalSolution": "1 · a = 2 · II nên S có hóa trị IV.",
+    "commonMistakes": [
+      {
+        "id": "copy-index",
+        "message": "Hóa trị không phải chỉ số. Cần nhân chỉ số với hóa trị của O rồi chia cho chỉ số của S."
+      }
+    ]
+  },
+  {
+    "id": "g7-b06-mcq-003",
+    "lessonId": "g7-b06",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "valence"
+    ],
+    "difficulty": 2,
+    "prompt": "Trong hợp chất [[FeCl3]], iron (Fe) có hóa trị bao nhiêu? (Cl có hóa trị I)",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "I"
+        },
+        {
+          "id": "opt-b",
+          "label": "II"
+        },
+        {
+          "id": "opt-c",
+          "label": "III"
+        },
+        {
+          "id": "opt-d",
+          "label": "IV"
+        }
+      ],
+      "correctId": "opt-c"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Một nguyên tử Fe liên kết với mấy nguyên tử Cl?"
+      },
+      {
+        "level": 2,
+        "text": "1 · a = 3 · I."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Dữ kiện",
+        "body": "Trong [[FeCl3]]: 1 Fe, 3 Cl; Cl có hóa trị I."
+      },
+      {
+        "kind": "equation",
+        "title": "Quy tắc hóa trị",
+        "body": "1 · a = 3 · I, nên a = III."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Fe có hóa trị III trong [[FeCl3]]."
+      }
+    ],
+    "finalSolution": "Fe có hóa trị III trong [[FeCl3]].",
+    "commonMistakes": []
+  },
+  {
+    "id": "g7-b06-tf-001",
+    "lessonId": "g7-b06",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "valence"
+    ],
+    "difficulty": 1,
+    "prompt": "Xác định các phát biểu sau là Đúng hay Sai.",
+    "answer": {
+      "kind": "true-false",
+      "statements": [
+        {
+          "id": "s1",
+          "text": "Hóa trị được ghi bằng chữ số La Mã.",
+          "correct": true
+        },
+        {
+          "id": "s2",
+          "text": "Mỗi nguyên tố chỉ có đúng một hóa trị.",
+          "correct": false
+        },
+        {
+          "id": "s3",
+          "text": "Oxygen thường có hóa trị II.",
+          "correct": true
+        },
+        {
+          "id": "s4",
+          "text": "Trong phân tử [[H2O]], mỗi nguyên tử O chỉ liên kết với 1 nguyên tử H.",
+          "correct": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Nhớ lại Fe có thể có những hóa trị nào."
+      },
+      {
+        "level": 2,
+        "text": "Đếm số nguyên tử H trong [[H2O]]."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "knowledge",
+        "title": "Phát biểu 1 và 3",
+        "body": "Đúng: hóa trị ghi bằng số La Mã; O thường có hóa trị II."
+      },
+      {
+        "kind": "knowledge",
+        "title": "Phát biểu 2",
+        "body": "Sai: Fe có hóa trị II hoặc III, S có hóa trị II, IV hoặc VI."
+      },
+      {
+        "kind": "answer",
+        "title": "Phát biểu 4",
+        "body": "Sai: trong [[H2O]], 1 nguyên tử O liên kết với 2 nguyên tử H."
+      }
+    ],
+    "finalSolution": "Đúng – Sai – Đúng – Sai.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g7-b06-match-001",
+    "lessonId": "g7-b06",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "valence"
+    ],
+    "difficulty": 1,
+    "prompt": "Ghép mỗi nguyên tố với hóa trị của nó trong hợp chất cho sẵn.",
+    "answer": {
+      "kind": "match",
+      "pairs": [
+        {
+          "left": "H trong [[HCl]]",
+          "right": "Hóa trị I"
+        },
+        {
+          "left": "Mg trong [[MgO]]",
+          "right": "Hóa trị II"
+        },
+        {
+          "left": "Al trong [[Al2O3]]",
+          "right": "Hóa trị III"
+        },
+        {
+          "left": "C trong [[CO2]]",
+          "right": "Hóa trị IV"
+        }
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Dùng mốc: H hóa trị I, O hóa trị II."
+      },
+      {
+        "level": 2,
+        "text": "Với [[Al2O3]]: 2 · a = 3 · II; với [[CO2]]: 1 · a = 2 · II."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Mốc",
+        "body": "H có hóa trị I, O có hóa trị II."
+      },
+      {
+        "kind": "compute",
+        "title": "Tính",
+        "body": "[[MgO]]: a = II. [[Al2O3]]: 2a = 6 nên a = III. [[CO2]]: a = 4 nên C hóa trị IV."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết quả",
+        "body": "H – I; Mg – II; Al – III; C – IV."
+      }
+    ],
+    "finalSolution": "H: I; Mg: II; Al: III; C: IV.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g7-b06-mcq-004",
+    "lessonId": "g7-b06",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "valence"
+    ],
+    "difficulty": 2,
+    "prompt": "Từ công thức [[H2SO4]] (H = 1, S = 32, O = 16 amu), ta biết được điều gì?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "Chất do 2 nguyên tố tạo nên"
+        },
+        {
+          "id": "opt-b",
+          "label": "Phân tử gồm 2 nguyên tử H, 1 nguyên tử S, 4 nguyên tử O; khối lượng phân tử là 98 amu"
+        },
+        {
+          "id": "opt-c",
+          "label": "Khối lượng phân tử là 49 amu"
+        },
+        {
+          "id": "opt-d",
+          "label": "Đây là một đơn chất"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Đếm số nguyên tố và số nguyên tử của từng nguyên tố."
+      },
+      {
+        "level": 2,
+        "text": "2 × 1 + 32 + 4 × 16 = ?"
+      }
+    ],
+    "steps": [
+      {
+        "kind": "identify",
+        "title": "Thành phần",
+        "body": "[[H2SO4]] gồm 3 nguyên tố H, S, O nên là hợp chất."
+      },
+      {
+        "kind": "compute",
+        "title": "Khối lượng phân tử",
+        "body": "2 × 1 + 32 + 4 × 16 = 98 amu."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Phân tử gồm 2 H, 1 S, 4 O và nặng 98 amu."
+      }
+    ],
+    "finalSolution": "[[H2SO4]]: 2 H, 1 S, 4 O; khối lượng phân tử 98 amu.",
+    "commonMistakes": []
+  },
+  {
+    "id": "g7-b06-build-001",
+    "lessonId": "g7-b06",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "formula-from-valence"
+    ],
+    "difficulty": 2,
+    "prompt": "Ghép công thức của hợp chất tạo bởi aluminium (Al, hóa trị III) và oxygen (O, hóa trị II).",
+    "answer": {
+      "kind": "formula-builder",
+      "tiles": [
+        "Al",
+        "O",
+        "2",
+        "3",
+        "Cl",
+        "4"
+      ],
+      "accepted": [
+        "Al2O3"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp dụng x · III = y · II."
+      },
+      {
+        "level": 2,
+        "text": "x : y = 2 : 3."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Dữ kiện",
+        "body": "Al hóa trị III, O hóa trị II."
+      },
+      {
+        "kind": "equation",
+        "title": "Quy tắc hóa trị",
+        "body": "x · III = y · II nên x : y = 2 : 3."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết quả",
+        "body": "Công thức là [[Al2O3]]."
+      }
+    ],
+    "finalSolution": "Công thức là [[Al2O3]].",
+    "commonMistakes": [
+      {
+        "id": "no-cross",
+        "message": "[[AlO]] không thỏa quy tắc hóa trị: 1 · III khác 1 · II."
+      }
+    ]
+  },
+  {
+    "id": "g7-b06-formula-001",
+    "lessonId": "g7-b06",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "formula-from-valence"
+    ],
+    "difficulty": 2,
+    "prompt": "Viết công thức hóa học của hợp chất tạo bởi calcium (Ca, hóa trị II) và nhóm [[OH]] (hóa trị I).",
+    "answer": {
+      "kind": "formula",
+      "accepted": [
+        "Ca(OH)2"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp dụng x · II = y · I với nhóm [[OH]] xem như một khối."
+      },
+      {
+        "level": 2,
+        "text": "Cần 2 nhóm [[OH]]; đặt nhóm trong ngoặc trước chỉ số."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Dữ kiện",
+        "body": "Ca hóa trị II, nhóm [[OH]] hóa trị I."
+      },
+      {
+        "kind": "equation",
+        "title": "Quy tắc hóa trị",
+        "body": "x · II = y · I nên x : y = 1 : 2."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết quả",
+        "body": "Công thức là [[Ca(OH)2]]. Nhóm nguyên tử có từ 2 nhóm trở lên phải đặt trong ngoặc."
+      }
+    ],
+    "finalSolution": "Công thức là [[Ca(OH)2]].",
+    "commonMistakes": [
+      {
+        "id": "no-brackets",
+        "message": "Viết CaOH2 là sai: chỉ số 2 phải áp dụng cho cả nhóm [[OH]], nên cần dấu ngoặc.",
+        "trapAnswers": [
+          "CaOH2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "g7-b06-formula-002",
+    "lessonId": "g7-b06",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "formula-from-valence"
+    ],
+    "difficulty": 2,
+    "prompt": "Viết công thức hóa học của hợp chất tạo bởi sodium (Na, hóa trị I) và nhóm [[SO4]] (hóa trị II).",
+    "answer": {
+      "kind": "formula",
+      "accepted": [
+        "Na2SO4"
+      ]
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp dụng x · I = y · II."
+      },
+      {
+        "level": 2,
+        "text": "Cần 2 nguyên tử Na cho 1 nhóm [[SO4]]."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Dữ kiện",
+        "body": "Na hóa trị I, nhóm [[SO4]] hóa trị II."
+      },
+      {
+        "kind": "equation",
+        "title": "Quy tắc hóa trị",
+        "body": "x · I = y · II nên x : y = 2 : 1."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết quả",
+        "body": "Công thức là [[Na2SO4]]. Chỉ có 1 nhóm [[SO4]] nên không cần ngoặc."
+      }
+    ],
+    "finalSolution": "Công thức là [[Na2SO4]].",
+    "commonMistakes": [
+      {
+        "id": "swap",
+        "message": "[[Na(SO4)2]] là đảo ngược tỉ lệ: Na hóa trị I nên cần 2 Na cho 1 nhóm [[SO4]].",
+        "trapAnswers": [
+          "Na(SO4)2",
+          "NaSO4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "g7-b06-mcq-005",
+    "lessonId": "g7-b06",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "formula-from-valence"
+    ],
+    "difficulty": 1,
+    "prompt": "Magnesium (Mg) có hóa trị II, chlorine (Cl) có hóa trị I. Công thức nào viết đúng?",
+    "answer": {
+      "kind": "mcq-single",
+      "options": [
+        {
+          "id": "opt-a",
+          "label": "[[MgCl]]"
+        },
+        {
+          "id": "opt-b",
+          "label": "[[MgCl2]]"
+        },
+        {
+          "id": "opt-c",
+          "label": "[[Mg2Cl]]"
+        },
+        {
+          "id": "opt-d",
+          "label": "[[MgCl3]]"
+        }
+      ],
+      "correctId": "opt-b"
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Áp dụng x · II = y · I."
+      },
+      {
+        "level": 2,
+        "text": "x : y = 1 : 2."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "given",
+        "title": "Dữ kiện",
+        "body": "Mg hóa trị II, Cl hóa trị I."
+      },
+      {
+        "kind": "equation",
+        "title": "Quy tắc hóa trị",
+        "body": "x · II = y · I nên x : y = 1 : 2."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết quả",
+        "body": "Công thức đúng là [[MgCl2]]."
+      }
+    ],
+    "finalSolution": "Công thức đúng là [[MgCl2]].",
+    "commonMistakes": []
+  },
+  {
+    "id": "g7-b06-num-001",
+    "lessonId": "g7-b06",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "formula-from-valence"
+    ],
+    "difficulty": 2,
+    "prompt": "Tính phần trăm khối lượng của iron (Fe) trong [[Fe2O3]]. Biết Fe = 56 amu, O = 16 amu.",
+    "given": [
+      {
+        "label": "Fe",
+        "value": "56",
+        "unit": "amu"
+      },
+      {
+        "label": "O",
+        "value": "16",
+        "unit": "amu"
+      }
+    ],
+    "find": {
+      "label": "%Fe trong Fe2O3",
+      "unit": "%"
+    },
+    "answer": {
+      "kind": "number",
+      "value": 70,
+      "unit": "%",
+      "decimals": 0,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Tính khối lượng phân tử [[Fe2O3]] trước."
+      },
+      {
+        "level": 2,
+        "text": "%Fe = 2 × 56 : 160 × 100%."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "compute",
+        "title": "Khối lượng phân tử",
+        "body": "2 × 56 + 3 × 16 = 160 amu."
+      },
+      {
+        "kind": "compute",
+        "title": "Phần trăm Fe",
+        "body": "%Fe = 112 : 160 × 100% = 70%."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Iron chiếm 70% khối lượng [[Fe2O3]]."
+      }
+    ],
+    "finalSolution": "%Fe = 2 × 56 : 160 × 100% = 70%.",
+    "commonMistakes": [
+      {
+        "id": "forgot-index",
+        "message": "Có 2 nguyên tử Fe nên khối lượng Fe trong phân tử là 2 × 56 = 112.",
+        "trapAnswers": [
+          "35"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "g7-b06-num-002",
+    "lessonId": "g7-b06",
+    "sgkBaiSo": 7,
+    "skillIds": [
+      "formula-from-valence"
+    ],
+    "difficulty": 3,
+    "prompt": "Tính phần trăm khối lượng của carbon trong [[CO2]] (làm tròn đến 1 chữ số thập phân). Biết C = 12 amu, O = 16 amu.",
+    "given": [
+      {
+        "label": "C",
+        "value": "12",
+        "unit": "amu"
+      },
+      {
+        "label": "O",
+        "value": "16",
+        "unit": "amu"
+      }
+    ],
+    "find": {
+      "label": "%C trong CO2",
+      "unit": "%"
+    },
+    "answer": {
+      "kind": "number",
+      "value": 27.3,
+      "unit": "%",
+      "decimals": 1,
+      "strictUnit": false
+    },
+    "hints": [
+      {
+        "level": 1,
+        "text": "Khối lượng phân tử [[CO2]] là bao nhiêu?"
+      },
+      {
+        "level": 2,
+        "text": "%C = 12 : 44 × 100%."
+      }
+    ],
+    "steps": [
+      {
+        "kind": "compute",
+        "title": "Khối lượng phân tử",
+        "body": "12 + 2 × 16 = 44 amu."
+      },
+      {
+        "kind": "compute",
+        "title": "Phần trăm C",
+        "body": "%C = 12 : 44 × 100% ≈ 27,3%."
+      },
+      {
+        "kind": "answer",
+        "title": "Kết luận",
+        "body": "Carbon chiếm khoảng 27,3% khối lượng [[CO2]]."
+      }
+    ],
+    "finalSolution": "%C = 12 : 44 × 100% ≈ 27,3%.",
+    "commonMistakes": [
+      {
+        "id": "wrong-denominator",
+        "message": "Chia cho khối lượng cả phân tử (44), không chia cho khối lượng O (32).",
+        "trapAnswers": [
+          "37.5",
+          "37,5"
+        ]
+      }
+    ]
+  }
+]
