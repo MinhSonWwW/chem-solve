@@ -11,6 +11,14 @@ import {
 import { useActiveGrade } from '@/content/subjects';
 import { sound } from '@/lib/audio';
 
+const ALL_GRADES = [6, 7, 8, 9] as const;
+
+const EMPTY_HINT: Record<PhetSim['subject'], string> = {
+  chem: 'PhET chưa có mô phỏng cho nội dung này (Hóa 9 chủ yếu là hóa hữu cơ). Bạn có thể làm thí nghiệm ở bàn thí nghiệm hóa học ảo phía trên.',
+  physics: 'Bạn có thể thực hành với bàn lắp mạch điện ảo phía trên hoặc chọn lớp khác.',
+  bio: 'PhET chưa có mô phỏng cho Sinh học lớp 6–7 (tế bào, vi sinh vật, thực vật, quang hợp). Bạn có thể quan sát tế bào bằng kính hiển vi ảo phía trên.',
+};
+
 export const PHET_ATTRIBUTION = 'Mô phỏng PhET · Đại học Colorado Boulder · giấy phép CC BY 4.0';
 
 function useOnline() {
@@ -32,9 +40,12 @@ function useOnline() {
 export const PhetSimLibrary: React.FC<{ subject: PhetSim['subject'] }> = ({ subject }) => {
   const sims = useMemo(() => getPhetSims(subject), [subject]);
   const { grade: activeGrade } = useActiveGrade();
-  const grades = useMemo(() => [...new Set(sims.map((s) => s.grade))], [sims]);
+  // Always offer the four THCS grades so every subject tab looks the same;
+  // grades without a suitable PhET sim show an explanation instead of disappearing.
+  const grades = ALL_GRADES;
+  const gradesWithSims = useMemo(() => new Set(sims.map((s) => s.grade)), [sims]);
   const [gradeFilter, setGradeFilter] = useState<number | 'all'>(() =>
-    grades.includes(activeGrade) ? activeGrade : 'all'
+    gradesWithSims.has(activeGrade) ? activeGrade : 'all'
   );
   const [searchParams, setSearchParams] = useSearchParams();
   const openId = searchParams.get('sim');
@@ -59,29 +70,36 @@ export const PhetSimLibrary: React.FC<{ subject: PhetSim['subject'] }> = ({ subj
         </p>
       </div>
 
-      {grades.length > 1 && (
-        <div className="flex gap-1.5 overflow-x-auto pb-0.5" role="tablist" aria-label="Lọc theo lớp">
-          {(['all', ...grades] as const).map((g) => {
-            const active = gradeFilter === g;
-            return (
-              <button
-                key={g}
-                role="tab"
-                aria-selected={active}
-                onClick={() => {
-                  sound.playClick();
-                  setGradeFilter(g);
-                }}
-                className={`shrink-0 px-3 py-1.5 rounded-xl text-xs font-black border transition-colors cursor-pointer ${
-                  active
-                    ? 'bg-[var(--subject-fill)] border-[var(--subject-edge)] text-white'
+      <div className="flex gap-1.5 overflow-x-auto pb-0.5" role="tablist" aria-label="Lọc theo lớp">
+        {(['all', ...grades] as const).map((g) => {
+          const active = gradeFilter === g;
+          return (
+            <button
+              key={g}
+              role="tab"
+              aria-selected={active}
+              onClick={() => {
+                sound.playClick();
+                setGradeFilter(g);
+              }}
+              className={`shrink-0 px-3 py-1.5 rounded-xl text-xs font-black border transition-colors cursor-pointer ${
+                active
+                  ? 'bg-[var(--subject-fill)] border-[var(--subject-edge)] text-white'
+                  : g !== 'all' && !gradesWithSims.has(g)
+                    ? 'bg-transparent border-dashed border-[var(--border)] text-[var(--text-tertiary)]'
                     : 'bg-[var(--bg-surface-2)] border-[var(--border)] text-[var(--text-secondary)]'
-                }`}
-              >
-                {g === 'all' ? 'Tất cả' : `Lớp ${g}`}
-              </button>
-            );
-          })}
+              }`}
+            >
+              {g === 'all' ? 'Tất cả' : `Lớp ${g}`}
+            </button>
+          );
+        })}
+      </div>
+
+      {visible.length === 0 && gradeFilter !== 'all' && (
+        <div className="p-3 rounded-2xl border border-dashed border-[var(--border)] text-xs text-[var(--text-secondary)] leading-relaxed">
+          <p className="font-black text-[var(--text-primary)] mb-0.5">Lớp {gradeFilter} chưa có mô phỏng PhET phù hợp</p>
+          <p>{EMPTY_HINT[subject]}</p>
         </div>
       )}
 

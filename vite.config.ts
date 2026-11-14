@@ -16,8 +16,15 @@ export default defineConfig(() => {
       tailwindcss(),
       VitePWA({
         registerType: 'autoUpdate',
+        // Registered from src/main.tsx via virtual:pwa-register so the page reloads itself
+        // as soon as a new deployment takes over (no more "still seeing the old version").
+        injectRegister: false,
         includeAssets: ['favicon.svg', 'apple-touch-icon.png', 'mask-icon.svg'],
         workbox: {
+          // Activate a new deployment immediately and take over open tabs; the page then
+          // reloads itself (registerSW in src/main.tsx), so nobody is stuck on an old build.
+          skipWaiting: true,
+          clientsClaim: true,
           // App shell + all lesson chunks (default) + the 7 tiny reward videos (~340 KB).
           // Videos are precached because they are fetched with Range requests (206),
           // which runtime caching cannot store.
