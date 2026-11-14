@@ -1,0 +1,291 @@
+{
+  "lessonId": "bio-g6-b08",
+  "units": [
+    {
+      "id": "cap-do",
+      "title": "Các cấp độ tổ chức cơ thể",
+      "fromExercises": [
+        "bio-g6-b08-q01",
+        "bio-g6-b08-q02",
+        "bio-g6-b08-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Cấp độ tổ chức nào lớn nhất trong cơ thể đa bào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tế bào"
+              },
+              {
+                "id": "b",
+                "label": "Mô"
+              },
+              {
+                "id": "c",
+                "label": "Cơ quan"
+              },
+              {
+                "id": "d",
+                "label": "Cơ thể"
+              }
+            ],
+            "correctId": "d"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Tim thuộc cấp độ tổ chức nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tế bào"
+              },
+              {
+                "id": "b",
+                "label": "Mô"
+              },
+              {
+                "id": "c",
+                "label": "Cơ quan"
+              },
+              {
+                "id": "d",
+                "label": "Hệ cơ quan"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Ghép mỗi ví dụ với cấp độ tổ chức tương ứng.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Tế bào cơ",
+                "right": "Tế bào"
+              },
+              {
+                "left": "Mô cơ",
+                "right": "Mô"
+              },
+              {
+                "left": "Dạ dày",
+                "right": "Cơ quan"
+              },
+              {
+                "left": "Hệ tiêu hóa",
+                "right": "Hệ cơ quan"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về các cấp độ tổ chức là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Nhiều mô tạo thành cơ quan.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nhiều cơ quan cùng thực hiện một chức năng tạo thành hệ cơ quan.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Tế bào là cấp độ tổ chức lớn hơn cơ quan.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Hệ tuần hoàn ở người gồm những cơ quan nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Dạ dày và ruột"
+              },
+              {
+                "id": "b",
+                "label": "Tim và hệ mạch máu"
+              },
+              {
+                "id": "c",
+                "label": "Phổi và khí quản"
+              },
+              {
+                "id": "d",
+                "label": "Thận và bàng quang"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "co-quan",
+      "title": "Cơ quan và hệ cơ quan",
+      "fromExercises": [
+        "bio-g6-b08-q03",
+        "bio-g6-b08-q04",
+        "bio-g6-b08-q06"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép hệ cơ quan ở người với chức năng chính.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Hệ hô hấp",
+                "right": "Trao đổi khí với môi trường"
+              },
+              {
+                "left": "Hệ tiêu hóa",
+                "right": "Biến đổi thức ăn, hấp thụ chất dinh dưỡng"
+              },
+              {
+                "left": "Hệ bài tiết",
+                "right": "Lọc máu, thải chất thải"
+              },
+              {
+                "left": "Hệ vận động",
+                "right": "Nâng đỡ và giúp cơ thể di chuyển"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ở thực vật có hoa, hệ chồi gồm những cơ quan nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chỉ có rễ"
+              },
+              {
+                "id": "b",
+                "label": "Thân, lá, hoa, quả, hạt"
+              },
+              {
+                "id": "c",
+                "label": "Chỉ có rễ và thân"
+              },
+              {
+                "id": "d",
+                "label": "Chỉ có lá"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Ở cây xanh, cơ quan nào hút nước và muối khoáng?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Lá"
+              },
+              {
+                "id": "b",
+                "label": "Hoa"
+              },
+              {
+                "id": "c",
+                "label": "Rễ"
+              },
+              {
+                "id": "d",
+                "label": "Quả"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về cơ quan của thực vật là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Hoa, quả, hạt là cơ quan sinh sản.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Rễ, thân, lá là cơ quan sinh dưỡng.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Lá là cơ quan sinh sản của cây.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Phổi thuộc hệ cơ quan nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hệ tiêu hóa"
+              },
+              {
+                "id": "b",
+                "label": "Hệ hô hấp"
+              },
+              {
+                "id": "c",
+                "label": "Hệ tuần hoàn"
+              },
+              {
+                "id": "d",
+                "label": "Hệ thần kinh"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

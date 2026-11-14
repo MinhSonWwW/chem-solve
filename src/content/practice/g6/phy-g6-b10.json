@@ -1,0 +1,320 @@
+{
+  "lessonId": "phy-g6-b10",
+  "units": [
+    {
+      "id": "luc-can",
+      "title": "Lực cản của nước và không khí",
+      "fromExercises": [
+        "phy-g6-b10-mcq-001",
+        "phy-g6-b10-mcq-002",
+        "phy-g6-b10-mcq-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Xác định các nhận định sau về lực cản là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Vật chuyển động trong nước chịu lực cản của nước.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Lực cản của nước luôn cùng chiều chuyển động của vật.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Vật chuyển động trong không khí cũng chịu lực cản của không khí.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Chiếc dù của người nhảy dù có tác dụng gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Làm người rơi nhanh hơn"
+              },
+              {
+                "id": "b",
+                "label": "Tăng lực cản của không khí để người rơi chậm lại"
+              },
+              {
+                "id": "c",
+                "label": "Giảm khối lượng của người"
+              },
+              {
+                "id": "d",
+                "label": "Tạo lực đẩy về phía trước"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Lực cản của nước tác dụng lên vật phụ thuộc vào yếu tố nào sau đây?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Màu sắc của vật"
+              },
+              {
+                "id": "b",
+                "label": "Hình dạng và tốc độ của vật"
+              },
+              {
+                "id": "c",
+                "label": "Tên gọi của vật"
+              },
+              {
+                "id": "d",
+                "label": "Nhiệt độ của người quan sát"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Phân loại các trường hợp sau theo lực cản chủ yếu tác dụng lên vật.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Lực cản của nước"
+              },
+              {
+                "id": "b2",
+                "label": "Lực cản của không khí"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Thuyền đi trên sông",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Người bơi trong hồ",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Cá bơi dưới biển",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Người nhảy dù đang rơi",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Xe đạp chạy ngược gió",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Chiếc lá rơi lả tả",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Vì sao đi xe đạp ngược chiều gió thấy mệt hơn?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì đường xấu hơn"
+              },
+              {
+                "id": "b",
+                "label": "Vì lực cản của không khí lớn hơn"
+              },
+              {
+                "id": "c",
+                "label": "Vì xe nặng hơn"
+              },
+              {
+                "id": "d",
+                "label": "Vì trọng lực tăng"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hinh-dang",
+      "title": "Hình dạng giúp giảm lực cản",
+      "fromExercises": [
+        "phy-g6-b10-mcq-003",
+        "phy-g6-b10-mcq-004",
+        "phy-g6-b10-mcq-005"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Vì sao vận động viên đua xe đạp thường cúi rạp người?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để nhìn đường rõ hơn"
+              },
+              {
+                "id": "b",
+                "label": "Để giảm lực cản của không khí"
+              },
+              {
+                "id": "c",
+                "label": "Để tăng trọng lượng"
+              },
+              {
+                "id": "d",
+                "label": "Để bàn đạp nhẹ hơn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Những thiết kế nào giúp giảm lực cản?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đầu tàu cao tốc thuôn nhọn"
+              },
+              {
+                "id": "b",
+                "label": "Thân thuyền đua dài và hẹp"
+              },
+              {
+                "id": "c",
+                "label": "Tấm ván phẳng chắn ngang phía trước xe"
+              },
+              {
+                "id": "d",
+                "label": "Mũ bảo hiểm xe đạp đua thuôn dài"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về hình dạng và lực cản là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Vật có phần đầu thuôn, nhọn chịu lực cản nhỏ hơn.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Tấm ván phẳng đặt vuông góc với hướng chuyển động chịu lực cản nhỏ nhất.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Thân cá có dạng thoi giúp cá bơi nhanh trong nước.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vận động viên bơi đội mũ bơi và mặc đồ bơi bó sát. Mục đích chính về mặt vật lí là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Giữ ấm cơ thể"
+              },
+              {
+                "id": "b",
+                "label": "Giảm lực cản của nước"
+              },
+              {
+                "id": "c",
+                "label": "Tăng trọng lượng"
+              },
+              {
+                "id": "d",
+                "label": "Để dễ nhận ra nhau"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Chim khi lao xuống bắt mồi thường khép cánh sát thân. Điều này giúp gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tăng lực cản"
+              },
+              {
+                "id": "b",
+                "label": "Giảm lực cản của không khí"
+              },
+              {
+                "id": "c",
+                "label": "Tăng trọng lực"
+              },
+              {
+                "id": "d",
+                "label": "Giữ thăng bằng khi đứng"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

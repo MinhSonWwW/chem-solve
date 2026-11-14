@@ -1,0 +1,323 @@
+{
+  "lessonId": "bio-g6-b14",
+  "units": [
+    {
+      "id": "cau-tao-virus",
+      "title": "Cấu tạo và đặc điểm của virus",
+      "fromExercises": [
+        "bio-g6-b14-q01",
+        "bio-g6-b14-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Virus có cấu tạo tế bào không?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Có, là tế bào nhân sơ"
+              },
+              {
+                "id": "b",
+                "label": "Có, là tế bào nhân thực"
+              },
+              {
+                "id": "c",
+                "label": "Không, virus chưa có cấu tạo tế bào"
+              },
+              {
+                "id": "d",
+                "label": "Có, gồm nhiều tế bào"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Virus sinh sản được ở đâu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Trong nước cất"
+              },
+              {
+                "id": "b",
+                "label": "Trên bề mặt kim loại"
+              },
+              {
+                "id": "c",
+                "label": "Chỉ trong tế bào sống của sinh vật khác"
+              },
+              {
+                "id": "d",
+                "label": "Trong không khí khô"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về virus là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Virus rất nhỏ, chỉ quan sát được bằng kính hiển vi điện tử.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Virus tự sinh sản được khi ở ngoài tế bào.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Virus gồm vỏ protein và lõi là vật chất di truyền.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Virus có những dạng hình dạng nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Dạng xoắn, dạng khối, dạng hỗn hợp"
+              },
+              {
+                "id": "b",
+                "label": "Hình que có roi"
+              },
+              {
+                "id": "c",
+                "label": "Hình sao"
+              },
+              {
+                "id": "d",
+                "label": "Hình lá"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Vì sao virus được xem là dạng sống đặc biệt?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì có rất nhiều tế bào"
+              },
+              {
+                "id": "b",
+                "label": "Vì chưa có cấu tạo tế bào nhưng sinh sản được trong tế bào sống"
+              },
+              {
+                "id": "c",
+                "label": "Vì quang hợp được"
+              },
+              {
+                "id": "d",
+                "label": "Vì lớn hơn vi khuẩn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Dụng cụ nào dùng để quan sát virus?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Kính lúp"
+              },
+              {
+                "id": "b",
+                "label": "Kính hiển vi quang học"
+              },
+              {
+                "id": "c",
+                "label": "Kính hiển vi điện tử"
+              },
+              {
+                "id": "d",
+                "label": "Mắt thường"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    },
+    {
+      "id": "benh-virus",
+      "title": "Bệnh do virus và cách phòng",
+      "fromExercises": [
+        "bio-g6-b14-q02",
+        "bio-g6-b14-q03",
+        "bio-g6-b14-q04"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Bệnh nào sau đây do virus gây ra?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Lao"
+              },
+              {
+                "id": "b",
+                "label": "Tả"
+              },
+              {
+                "id": "c",
+                "label": "Sởi"
+              },
+              {
+                "id": "d",
+                "label": "Thương hàn"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Những biện pháp nào giúp phòng bệnh cúm?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đeo khẩu trang nơi đông người"
+              },
+              {
+                "id": "b",
+                "label": "Rửa tay thường xuyên"
+              },
+              {
+                "id": "c",
+                "label": "Dùng chung khăn mặt"
+              },
+              {
+                "id": "d",
+                "label": "Tiêm vaccine phòng cúm"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về bệnh do virus là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Kháng sinh không có tác dụng diệt virus.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Bệnh sốt xuất huyết lây qua vết đốt của muỗi vằn.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Bệnh cúm chỉ lây qua đường ăn uống.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Bệnh khảm lá ở cây thuốc lá do tác nhân nào gây ra?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vi khuẩn"
+              },
+              {
+                "id": "b",
+                "label": "Virus"
+              },
+              {
+                "id": "c",
+                "label": "Nấm"
+              },
+              {
+                "id": "d",
+                "label": "Giun"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Muỗi vằn truyền bệnh nào do virus gây ra?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sốt rét"
+              },
+              {
+                "id": "b",
+                "label": "Sốt xuất huyết"
+              },
+              {
+                "id": "c",
+                "label": "Lao"
+              },
+              {
+                "id": "d",
+                "label": "Tả"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

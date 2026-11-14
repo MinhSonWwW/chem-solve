@@ -1,0 +1,473 @@
+{
+  "lessonId": "g6-b10",
+  "units": [
+    {
+      "id": "ba-the",
+      "title": "Ba thể của chất",
+      "fromExercises": [
+        "g6-b10-match-001",
+        "g6-b10-mcq-001",
+        "g6-b10-mcq-002"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Chất ở thể nào có hình dạng và thể tích xác định?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Thể rắn"
+              },
+              {
+                "id": "b",
+                "label": "Thể lỏng"
+              },
+              {
+                "id": "c",
+                "label": "Thể khí"
+              },
+              {
+                "id": "d",
+                "label": "Thể lỏng và thể khí"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ở thể khí, các hạt tạo nên chất có đặc điểm gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Xếp khít nhau, chỉ dao động tại chỗ"
+              },
+              {
+                "id": "b",
+                "label": "Ở gần nhau, trượt lên nhau"
+              },
+              {
+                "id": "c",
+                "label": "Ở rất xa nhau, chuyển động tự do về mọi phía"
+              },
+              {
+                "id": "d",
+                "label": "Đứng yên, không chuyển động"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về chất ở thể lỏng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Chất lỏng có hình dạng của phần vật chứa nó.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Chất lỏng có thể tích xác định.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Chất lỏng rất dễ bị nén.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Ở nhiệt độ phòng, các chất sau tồn tại ở thể nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Thể rắn"
+              },
+              {
+                "id": "b2",
+                "label": "Thể lỏng"
+              },
+              {
+                "id": "b3",
+                "label": "Thể khí"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Muối ăn",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Đinh sắt",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Đá vôi",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Nước",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Dầu ăn",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Cồn",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i7",
+                "label": "Khí oxygen",
+                "bucketId": "b3"
+              },
+              {
+                "id": "i8",
+                "label": "Khí carbon dioxide",
+                "bucketId": "b3"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Vì sao có thể bơm thêm rất nhiều khí vào săm xe đạp?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì chất khí dễ bị nén"
+              },
+              {
+                "id": "b",
+                "label": "Vì chất khí có hình dạng xác định"
+              },
+              {
+                "id": "c",
+                "label": "Vì chất khí không có khối lượng"
+              },
+              {
+                "id": "d",
+                "label": "Vì săm xe tự co lại"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chuyen-the",
+      "title": "Sự chuyển thể của chất",
+      "fromExercises": [
+        "g6-b10-match-002",
+        "g6-b10-sort-001",
+        "g6-b10-ordering-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Quá trình chất chuyển từ thể lỏng sang thể rắn gọi là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nóng chảy"
+              },
+              {
+                "id": "b",
+                "label": "Đông đặc"
+              },
+              {
+                "id": "c",
+                "label": "Bay hơi"
+              },
+              {
+                "id": "d",
+                "label": "Ngưng tụ"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Sương đọng trên lá cây vào sáng sớm là kết quả của quá trình nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Bay hơi"
+              },
+              {
+                "id": "b",
+                "label": "Nóng chảy"
+              },
+              {
+                "id": "c",
+                "label": "Ngưng tụ"
+              },
+              {
+                "id": "d",
+                "label": "Đông đặc"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Ghép mỗi hiện tượng với quá trình chuyển thể tương ứng.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Cục nước đá để ngoài trời tan ra",
+                "right": "Nóng chảy"
+              },
+              {
+                "left": "Nước trong khay ở ngăn đá thành đá",
+                "right": "Đông đặc"
+              },
+              {
+                "left": "Nước ao hồ cạn dần vào mùa hè",
+                "right": "Bay hơi"
+              },
+              {
+                "left": "Hơi nước đọng thành giọt dưới nắp nồi",
+                "right": "Ngưng tụ"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về sự nóng chảy và đông đặc của nước là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Nước đá nóng chảy ở 0 °C.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nước đông đặc ở 100 °C.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Trong khi nước đá đang tan, nhiệt độ của nó không thay đổi.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Khi đúc tượng, đồng được nung chảy rồi đổ vào khuôn để nguội. Các quá trình chuyển thể diễn ra lần lượt là gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Bay hơi rồi ngưng tụ"
+              },
+              {
+                "id": "b",
+                "label": "Nóng chảy rồi đông đặc"
+              },
+              {
+                "id": "c",
+                "label": "Đông đặc rồi nóng chảy"
+              },
+              {
+                "id": "d",
+                "label": "Ngưng tụ rồi bay hơi"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "soi-bay-hoi",
+      "title": "Sự sôi và sự bay hơi",
+      "fromExercises": [
+        "g6-b10-mcq-003",
+        "g6-b10-tf-001",
+        "g6-b10-multi-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sự bay hơi xảy ra ở đâu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chỉ ở trong lòng chất lỏng"
+              },
+              {
+                "id": "b",
+                "label": "Ở bề mặt chất lỏng"
+              },
+              {
+                "id": "c",
+                "label": "Chỉ khi chất lỏng sôi"
+              },
+              {
+                "id": "d",
+                "label": "Chỉ ở 100 °C"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "So sánh sự sôi và sự bay hơi: xác định các nhận định sau là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Sự bay hơi xảy ra ở mọi nhiệt độ.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Sự sôi xảy ra ở một nhiệt độ xác định.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Khi nước đang sôi, nhiệt độ của nước tiếp tục tăng mạnh.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Muốn nước trong cốc bay hơi nhanh hơn, nên làm cách nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đậy kín nắp cốc"
+              },
+              {
+                "id": "b",
+                "label": "Đổ nước ra đĩa rộng và để nơi có gió"
+              },
+              {
+                "id": "c",
+                "label": "Cất cốc nước vào tủ lạnh"
+              },
+              {
+                "id": "d",
+                "label": "Rót nước sang cốc hẹp và cao"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Nghề làm muối từ nước biển dựa chủ yếu vào quá trình nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ngưng tụ"
+              },
+              {
+                "id": "b",
+                "label": "Đông đặc"
+              },
+              {
+                "id": "c",
+                "label": "Bay hơi"
+              },
+              {
+                "id": "d",
+                "label": "Nóng chảy"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Ở điều kiện thường, nước đá bắt đầu nóng chảy ở nhiệt độ nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "0 °C"
+              },
+              {
+                "id": "b",
+                "label": "4 °C"
+              },
+              {
+                "id": "c",
+                "label": "37 °C"
+              },
+              {
+                "id": "d",
+                "label": "100 °C"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    }
+  ]
+}

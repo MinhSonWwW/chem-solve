@@ -1,0 +1,228 @@
+{
+  "lessonId": "phy-g6-b01",
+  "units": [
+    {
+      "id": "don-vi-dung-cu",
+      "title": "Đơn vị và dụng cụ đo chiều dài",
+      "fromExercises": [
+        "phy-g6-b01-mcq-001",
+        "phy-g6-b01-mcq-002",
+        "phy-g6-b01-mcq-003",
+        "phy-g6-b01-mcq-006"
+      ],
+      "generator": "length-convert",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Thước dây thường dùng để đo độ dài nào sau đây?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Bề dày cuốn sách"
+              },
+              {
+                "id": "b",
+                "label": "Chiều dài lớp học"
+              },
+              {
+                "id": "c",
+                "label": "Đường kính sợi tóc"
+              },
+              {
+                "id": "d",
+                "label": "Bề dày tờ giấy"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "1 km bằng bao nhiêu mét?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "10 m"
+              },
+              {
+                "id": "b",
+                "label": "100 m"
+              },
+              {
+                "id": "c",
+                "label": "1000 m"
+              },
+              {
+                "id": "d",
+                "label": "10 000 m"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về thước đo là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Giới hạn đo (GHĐ) là độ dài lớn nhất ghi trên thước.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Độ chia nhỏ nhất (ĐCNN) là độ dài giữa hai vạch chia liên tiếp trên thước.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Nên chọn thước có GHĐ nhỏ hơn nhiều so với chiều dài vật để đo một lần.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cach-do",
+      "title": "Cách đo và đọc kết quả",
+      "fromExercises": [
+        "phy-g6-b01-mcq-004",
+        "phy-g6-b01-calc-005"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sắp xếp các bước đo chiều dài một vật bằng thước.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Ước lượng chiều dài vật để chọn thước phù hợp",
+              "Đặt thước dọc theo vật, một đầu vật ngang vạch số 0",
+              "Đặt mắt nhìn vuông góc với cạnh thước ở đầu kia của vật",
+              "Đọc và ghi kết quả theo vạch chia gần nhất"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Khi đọc kết quả đo độ dài, mắt phải đặt như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nhìn xiên từ bên trái"
+              },
+              {
+                "id": "b",
+                "label": "Nhìn xiên từ bên phải"
+              },
+              {
+                "id": "c",
+                "label": "Nhìn vuông góc với cạnh thước tại đầu kia của vật"
+              },
+              {
+                "id": "d",
+                "label": "Nhìn từ thật xa"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Đặt bút chì dọc theo thước có ĐCNN 1 mm, một đầu ngang vạch 0, đầu kia ngang vạch 14,6 cm. Chiều dài bút chì là bao nhiêu cm?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 14.6,
+            "unit": "cm",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Một vật được đặt với một đầu ngang vạch 2 cm và đầu kia ngang vạch 9,5 cm của thước. Chiều dài vật là bao nhiêu cm?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 7.5,
+            "unit": "cm",
+            "tolerance": {
+              "rel": 0.01
+            }
+          },
+          "hint": "Lấy số chỉ ở đầu cuối trừ số chỉ ở đầu đầu."
+        },
+        {
+          "id": "q5",
+          "prompt": "Đo chiều dài bàn học 3 lần được 120,1 cm; 120,3 cm; 120,2 cm. Kết quả nên ghi là bao nhiêu?",
+          "difficulty": 3,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "120,1 cm"
+              },
+              {
+                "id": "b",
+                "label": "120,2 cm"
+              },
+              {
+                "id": "c",
+                "label": "120,3 cm"
+              },
+              {
+                "id": "d",
+                "label": "360,6 cm"
+              }
+            ],
+            "correctId": "b"
+          },
+          "explanation": "Lấy giá trị trung bình: (120,1 + 120,3 + 120,2) : 3 = 120,2 cm."
+        },
+        {
+          "id": "q6",
+          "prompt": "Xác định các nhận định sau về cách đo độ dài là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Cần đặt một đầu vật ngang vạch số 0 của thước.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Có thể đặt thước lệch, không dọc theo vật.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Kết quả được ghi theo vạch chia gần nhất với đầu kia của vật.",
+                "correct": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

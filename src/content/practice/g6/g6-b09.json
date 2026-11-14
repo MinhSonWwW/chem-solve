@@ -1,0 +1,485 @@
+{
+  "lessonId": "g6-b09",
+  "units": [
+    {
+      "id": "vat-the-chat",
+      "title": "Vật thể và chất",
+      "fromExercises": [
+        "g6-b09-mcq-001",
+        "g6-b09-mcq-002",
+        "g6-b09-sort-001",
+        "g6-b09-match-001",
+        "g6-b09-tf-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Vật thể nào sau đây là vật thể tự nhiên?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cái bàn gỗ"
+              },
+              {
+                "id": "b",
+                "label": "Cây mía"
+              },
+              {
+                "id": "c",
+                "label": "Quyển vở"
+              },
+              {
+                "id": "d",
+                "label": "Chiếc xe đạp"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Chất chính tạo nên lõi bút chì là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sắt"
+              },
+              {
+                "id": "b",
+                "label": "Than chì"
+              },
+              {
+                "id": "c",
+                "label": "Nhựa"
+              },
+              {
+                "id": "d",
+                "label": "Thủy tinh"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về chất là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Một vật thể có thể được tạo nên từ nhiều chất khác nhau.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Mỗi chất chỉ tạo nên được một loại vật thể.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Nước có trong cơ thể người, trong cây xanh và trong sông hồ.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Phân loại các vật thể sau vào nhóm vật sống và vật không sống.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Vật sống"
+              },
+              {
+                "id": "b2",
+                "label": "Vật không sống"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Con mèo",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Cây lúa",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Vi khuẩn",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Hòn đá",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Chiếc ấm nhôm",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Ngọn nến",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "tinh-chat",
+      "title": "Tính chất và sự biến đổi của chất",
+      "fromExercises": [
+        "g6-b09-sort-002",
+        "g6-b09-mcq-003",
+        "g6-b09-multi-001",
+        "g6-b09-mcq-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Tính chất nào sau đây là tính chất hóa học của sắt?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Có màu trắng xám"
+              },
+              {
+                "id": "b",
+                "label": "Dẫn điện tốt"
+              },
+              {
+                "id": "c",
+                "label": "Bị gỉ trong không khí ẩm"
+              },
+              {
+                "id": "d",
+                "label": "Bị nam châm hút"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Hiện tượng nào sau đây là biến đổi vật lí?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đốt cháy giấy"
+              },
+              {
+                "id": "b",
+                "label": "Nước đá tan thành nước lỏng"
+              },
+              {
+                "id": "c",
+                "label": "Thức ăn bị ôi thiu"
+              },
+              {
+                "id": "d",
+                "label": "Sắt bị gỉ"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về tính chất của chất là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Màu sắc, mùi, vị và thể là tính chất vật lí.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Khả năng bị cháy là tính chất vật lí.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Nhiệt độ sôi của nước là tính chất vật lí.",
+                "correct": true
+              },
+              {
+                "id": "s4",
+                "text": "Khi xảy ra biến đổi hóa học, có chất mới được tạo thành.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Phân loại các hiện tượng sau vào biến đổi vật lí hoặc biến đổi hóa học.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Biến đổi vật lí"
+              },
+              {
+                "id": "b2",
+                "label": "Biến đổi hóa học"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Cồn để trong lọ hở bay hơi",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Hòa tan muối vào nước",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Cắt giấy thành mảnh nhỏ",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Đốt cháy củi",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Cơm để lâu bị thiu",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Đinh sắt bị gỉ",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Những tính chất nào sau đây là tính chất vật lí của đường ăn?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Có vị ngọt"
+              },
+              {
+                "id": "b",
+                "label": "Tan nhiều trong nước"
+              },
+              {
+                "id": "c",
+                "label": "Bị cháy thành than khi đun quá lửa"
+              },
+              {
+                "id": "d",
+                "label": "Là chất rắn màu trắng"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "thuc-hanh",
+      "title": "Thực hành: đun nóng đường và muối",
+      "fromExercises": [
+        "g6-b09-mcq-004",
+        "g6-b09-ordering-001",
+        "g6-b09-mcq-005"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Đun nóng muối ăn trên ngọn lửa đèn cồn một thời gian ngắn, hiện tượng quan sát được là gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Muối chảy lỏng rồi cháy đen"
+              },
+              {
+                "id": "b",
+                "label": "Muối không bị chảy lỏng và không đổi màu"
+              },
+              {
+                "id": "c",
+                "label": "Muối bốc cháy thành ngọn lửa"
+              },
+              {
+                "id": "d",
+                "label": "Muối chuyển sang màu vàng nâu"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Đường bị đun nóng mạnh biến thành chất màu đen có vị đắng. Chất màu đen đó chủ yếu là gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Muối ăn"
+              },
+              {
+                "id": "b",
+                "label": "Than"
+              },
+              {
+                "id": "c",
+                "label": "Nước"
+              },
+              {
+                "id": "d",
+                "label": "Đường tinh khiết"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về thí nghiệm đun nóng đường và muối là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Đường bị biến đổi thành chất khác khi đun nóng mạnh.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Muối ăn bị biến đổi thành than khi đun trên đèn cồn.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Thí nghiệm cho thấy đường và muối có tính chất khác nhau.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Sắp xếp các bước tiến hành thí nghiệm đun nóng đường.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Lấy một ít đường cho vào thìa kim loại",
+              "Đặt thìa lên ngọn lửa đèn cồn",
+              "Quan sát và ghi lại sự thay đổi",
+              "Đậy nắp để tắt đèn cồn"
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Cách tắt đèn cồn đúng là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Thổi mạnh vào ngọn lửa"
+              },
+              {
+                "id": "b",
+                "label": "Đậy nắp đèn cồn lại"
+              },
+              {
+                "id": "c",
+                "label": "Dội nước lên ngọn lửa"
+              },
+              {
+                "id": "d",
+                "label": "Để đèn cháy đến khi hết cồn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Những việc nào cần làm để an toàn khi đun nóng hóa chất?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Dùng kẹp gỗ hoặc cán cầm khi giữ thìa"
+              },
+              {
+                "id": "b",
+                "label": "Ghé sát mặt để nhìn cho rõ"
+              },
+              {
+                "id": "c",
+                "label": "Buộc gọn tóc, để xa vật dễ cháy"
+              },
+              {
+                "id": "d",
+                "label": "Nếm thử chất sau khi đun"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "c"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

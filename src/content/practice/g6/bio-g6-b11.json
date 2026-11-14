@@ -1,0 +1,301 @@
+{
+  "lessonId": "bio-g6-b11",
+  "units": [
+    {
+      "id": "nguyen-tac",
+      "title": "Nguyên tắc của khóa lưỡng phân",
+      "fromExercises": [
+        "bio-g6-b11-q01",
+        "bio-g6-b11-q02",
+        "bio-g6-b11-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Mỗi bậc của khóa lưỡng phân chia sinh vật thành mấy nhóm?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "1"
+              },
+              {
+                "id": "b",
+                "label": "2"
+              },
+              {
+                "id": "c",
+                "label": "3"
+              },
+              {
+                "id": "d",
+                "label": "4"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về khóa lưỡng phân là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Đặc điểm ở mỗi bậc phải đối lập nhau.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Khóa lưỡng phân chia nhóm thành ba nhánh ở mỗi bước.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Ở cuối mỗi nhánh chỉ còn lại một sinh vật.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Cặp đặc điểm nào sau đây đối lập nhau, dùng được trong khóa lưỡng phân?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Có cánh – Có chân"
+              },
+              {
+                "id": "b",
+                "label": "Có xương sống – Không có xương sống"
+              },
+              {
+                "id": "c",
+                "label": "Màu đỏ – Sống ở nước"
+              },
+              {
+                "id": "d",
+                "label": "Biết bay – Có lông"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Từ \"lưỡng phân\" có nghĩa là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chia ba"
+              },
+              {
+                "id": "b",
+                "label": "Chia đôi"
+              },
+              {
+                "id": "c",
+                "label": "Gộp lại"
+              },
+              {
+                "id": "d",
+                "label": "Đếm số"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Khi xây dựng khóa lưỡng phân, việc đầu tiên cần làm là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Quan sát, xác định đặc điểm của các sinh vật cần phân loại"
+              },
+              {
+                "id": "b",
+                "label": "Đặt tên khoa học"
+              },
+              {
+                "id": "c",
+                "label": "Vẽ ngay sơ đồ"
+              },
+              {
+                "id": "d",
+                "label": "Đếm số lượng sinh vật"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tra-cuu",
+      "title": "Xây dựng và sử dụng khóa lưỡng phân",
+      "fromExercises": [
+        "bio-g6-b11-q03",
+        "bio-g6-b11-q04"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Theo khóa: (1a) Có lông vũ → Chim; (1b) Không có lông vũ → (2). (2a) Có tuyến sữa → Thú; (2b) Không có tuyến sữa → Bò sát. Con thằn lằn thuộc nhóm nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chim"
+              },
+              {
+                "id": "b",
+                "label": "Thú"
+              },
+              {
+                "id": "c",
+                "label": "Bò sát"
+              },
+              {
+                "id": "d",
+                "label": "Cá"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Theo khóa: (1a) Có lông vũ → Chim; (1b) Không có lông vũ → (2). (2a) Có tuyến sữa → Thú; (2b) Không có tuyến sữa → Bò sát. Con mèo thuộc nhóm nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chim"
+              },
+              {
+                "id": "b",
+                "label": "Thú"
+              },
+              {
+                "id": "c",
+                "label": "Bò sát"
+              },
+              {
+                "id": "d",
+                "label": "Lưỡng cư"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Để phân biệt cây rêu và cây thông bằng khóa lưỡng phân, nên dùng cặp đặc điểm nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Có lá – Có thân"
+              },
+              {
+                "id": "b",
+                "label": "Có mạch dẫn và có hạt – Không có mạch dẫn"
+              },
+              {
+                "id": "c",
+                "label": "Màu xanh – Màu nâu"
+              },
+              {
+                "id": "d",
+                "label": "Sống trên cạn – Sống trên đất"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về sử dụng khóa lưỡng phân là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Có thể dùng khóa lưỡng phân để xác định tên một sinh vật chưa biết.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Khóa lưỡng phân chỉ dùng được cho động vật.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Sắp xếp các bước dùng khóa lưỡng phân để xác định một loài.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Quan sát đặc điểm của sinh vật",
+              "Đọc cặp đặc điểm đối lập ở bậc 1 và chọn nhánh phù hợp",
+              "Tiếp tục chọn nhánh ở các bậc tiếp theo",
+              "Đến nhánh cuối, xác định tên sinh vật"
+            ]
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Một sinh vật có các đặc điểm: không có xương sống, có 8 chân, cơ thể chia hai phần. Theo khóa lưỡng phân, đó là con gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Kiến"
+              },
+              {
+                "id": "b",
+                "label": "Nhện"
+              },
+              {
+                "id": "c",
+                "label": "Châu chấu"
+              },
+              {
+                "id": "d",
+                "label": "Bướm"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

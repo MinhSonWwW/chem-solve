@@ -1,0 +1,314 @@
+{
+  "lessonId": "bio-g6-b16",
+  "units": [
+    {
+      "id": "lay-mau",
+      "title": "Lấy mẫu và làm tiêu bản",
+      "fromExercises": [
+        "bio-g6-b16-q01",
+        "bio-g6-b16-q03",
+        "bio-g6-b16-q04"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Nên dùng dụng cụ gì để lấy một giọt nước ao đặt lên lam kính?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Thìa ăn"
+              },
+              {
+                "id": "b",
+                "label": "Ống nhỏ giọt"
+              },
+              {
+                "id": "c",
+                "label": "Cốc thủy tinh"
+              },
+              {
+                "id": "d",
+                "label": "Bút bi"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về làm tiêu bản giọt nước ao là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Cần đậy lá kính lên giọt nước trước khi quan sát.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nên quan sát ngay với vật kính có độ phóng đại lớn nhất.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Sau khi thực hành, cần làm gì với dụng cụ và mẫu vật?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để nguyên trên bàn"
+              },
+              {
+                "id": "b",
+                "label": "Rửa sạch dụng cụ, xử lí mẫu đúng nơi quy định và rửa tay"
+              },
+              {
+                "id": "c",
+                "label": "Đổ mẫu vào bồn rửa mặt"
+              },
+              {
+                "id": "d",
+                "label": "Mang mẫu về nhà"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Sắp xếp các bước quan sát tiêu bản dưới kính hiển vi.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Đặt tiêu bản lên bàn kính",
+              "Quan sát với vật kính 10x",
+              "Điều chỉnh ốc để thấy ảnh rõ nét",
+              "Chuyển sang vật kính 40x để quan sát chi tiết"
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Dụng cụ nào KHÔNG cần trong buổi thực hành quan sát nguyên sinh vật?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Kính hiển vi"
+              },
+              {
+                "id": "b",
+                "label": "Lam kính"
+              },
+              {
+                "id": "c",
+                "label": "Ống nhỏ giọt"
+              },
+              {
+                "id": "d",
+                "label": "Nhiệt kế y tế"
+              }
+            ],
+            "correctId": "d"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nhan-biet-nsv",
+      "title": "Nhận biết nguyên sinh vật dưới kính",
+      "fromExercises": [
+        "bio-g6-b16-q02",
+        "bio-g6-b16-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Dưới kính hiển vi, sinh vật nào có hình dạng giống chiếc đế giày?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Trùng roi"
+              },
+              {
+                "id": "b",
+                "label": "Trùng giày"
+              },
+              {
+                "id": "c",
+                "label": "Trùng biến hình"
+              },
+              {
+                "id": "d",
+                "label": "Tảo silic"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Sinh vật nào luôn thay đổi hình dạng khi di chuyển?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Trùng giày"
+              },
+              {
+                "id": "b",
+                "label": "Trùng roi"
+              },
+              {
+                "id": "c",
+                "label": "Trùng biến hình"
+              },
+              {
+                "id": "d",
+                "label": "Tảo lục"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Sinh vật đơn bào nào có màu xanh lục và một roi dài?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Trùng giày"
+              },
+              {
+                "id": "b",
+                "label": "Trùng roi xanh"
+              },
+              {
+                "id": "c",
+                "label": "Trùng biến hình"
+              },
+              {
+                "id": "d",
+                "label": "Trùng sốt rét"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về hình ảnh quan sát dưới kính là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Trùng giày di chuyển nhanh nhờ lông bơi.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Trùng biến hình có hình dạng cố định.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Có thể thấy nhân của nguyên sinh vật dưới kính hiển vi quang học.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Phân loại các nguyên sinh vật theo khả năng quang hợp.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Có diệp lục, quang hợp được"
+              },
+              {
+                "id": "b2",
+                "label": "Không quang hợp"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Tảo lục",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Trùng roi xanh",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Trùng giày",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Trùng biến hình",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Khi vẽ hình nguyên sinh vật quan sát được, cần ghi chú những gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tên người vẽ"
+              },
+              {
+                "id": "b",
+                "label": "Tên sinh vật, độ phóng đại và các bộ phận quan sát được"
+              },
+              {
+                "id": "c",
+                "label": "Màu bút"
+              },
+              {
+                "id": "d",
+                "label": "Ngày sinh"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

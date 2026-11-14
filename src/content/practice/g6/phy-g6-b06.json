@@ -1,0 +1,209 @@
+{
+  "lessonId": "phy-g6-b06",
+  "units": [
+    {
+      "id": "yeu-to-luc",
+      "title": "Các yếu tố của lực",
+      "fromExercises": [
+        "phy-g6-b06-mcq-001",
+        "phy-g6-b06-mcq-002",
+        "phy-g6-b06-mcq-004"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép yếu tố của mũi tên với yếu tố của lực mà nó biểu diễn.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Gốc mũi tên",
+                "right": "Điểm đặt của lực"
+              },
+              {
+                "left": "Hướng của mũi tên",
+                "right": "Phương và chiều của lực"
+              },
+              {
+                "left": "Độ dài mũi tên",
+                "right": "Độ lớn của lực"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về lực là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Lực có điểm đặt, phương, chiều và độ lớn.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Lực là đại lượng không có hướng.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Độ dài mũi tên tỉ lệ với độ lớn của lực theo tỉ xích đã chọn.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Trọng lực tác dụng lên quả táo có phương và chiều như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Phương nằm ngang, chiều sang phải"
+              },
+              {
+                "id": "b",
+                "label": "Phương thẳng đứng, chiều từ trên xuống dưới"
+              },
+              {
+                "id": "c",
+                "label": "Phương thẳng đứng, chiều từ dưới lên trên"
+              },
+              {
+                "id": "d",
+                "label": "Phương xiên"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Kéo chiếc xe về phía trước bằng sợi dây nằm ngang. Lực kéo có phương và chiều như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Phương nằm ngang, chiều về phía trước"
+              },
+              {
+                "id": "b",
+                "label": "Phương thẳng đứng, chiều từ dưới lên"
+              },
+              {
+                "id": "c",
+                "label": "Phương nằm ngang, chiều về phía sau"
+              },
+              {
+                "id": "d",
+                "label": "Phương thẳng đứng, chiều từ trên xuống"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Hai bạn kéo một hộp đứng yên theo hai chiều ngược nhau trên cùng một phương, mỗi bạn kéo 10 N. Hộp sẽ thế nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chuyển động theo bạn thứ nhất"
+              },
+              {
+                "id": "b",
+                "label": "Vẫn đứng yên"
+              },
+              {
+                "id": "c",
+                "label": "Chuyển động theo bạn thứ hai"
+              },
+              {
+                "id": "d",
+                "label": "Bay lên"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ti-xich",
+      "title": "Tính độ lớn lực theo tỉ xích",
+      "fromExercises": [
+        "phy-g6-b06-calc-003",
+        "phy-g6-b06-calc-005",
+        "phy-g6-b06-mcq-006"
+      ],
+      "generator": "force-scale",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Với tỉ xích 1 cm ứng với 10 N, mũi tên dài 3,5 cm biểu diễn lực có độ lớn bao nhiêu N?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 35,
+            "unit": "N",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Lực 60 N được biểu diễn bằng mũi tên dài 3 cm. Tỉ xích là 1 cm ứng với bao nhiêu N?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 20,
+            "unit": "N",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Lực kéo 30 N được biểu diễn với tỉ xích 1 cm ứng với 10 N. Mũi tên dài bao nhiêu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "1 cm"
+              },
+              {
+                "id": "b",
+                "label": "3 cm"
+              },
+              {
+                "id": "c",
+                "label": "10 cm"
+              },
+              {
+                "id": "d",
+                "label": "30 cm"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "lessonId": "bio-g6-b20",
+  "units": [
+    {
+      "id": "reu-duong-xi",
+      "title": "Nhận biết rêu và dương xỉ",
+      "fromExercises": [
+        "bio-g6-b20-q01",
+        "bio-g6-b20-q04"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Cây rêu thường mọc ở đâu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nơi khô cằn, nắng gắt"
+              },
+              {
+                "id": "b",
+                "label": "Nơi ẩm ướt như chân tường, bờ giếng"
+              },
+              {
+                "id": "c",
+                "label": "Trong nước biển"
+              },
+              {
+                "id": "d",
+                "label": "Trên sa mạc"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Rễ của cây rêu có đặc điểm gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Rễ cọc to khỏe"
+              },
+              {
+                "id": "b",
+                "label": "Rễ giả, chỉ là những sợi nhỏ"
+              },
+              {
+                "id": "c",
+                "label": "Rễ chùm dài"
+              },
+              {
+                "id": "d",
+                "label": "Rễ củ"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về rêu và dương xỉ là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Rêu và dương xỉ đều sinh sản bằng bào tử.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Dương xỉ có mạch dẫn, rêu chưa có mạch dẫn.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Rêu có hoa nhỏ màu trắng.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Túi bào tử của dương xỉ thường nằm ở đâu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ở rễ"
+              },
+              {
+                "id": "b",
+                "label": "Ở mặt dưới của lá già"
+              },
+              {
+                "id": "c",
+                "label": "Ở hoa"
+              },
+              {
+                "id": "d",
+                "label": "Trong quả"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Cần những dụng cụ nào khi thực hành quan sát rêu và dương xỉ?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Kính lúp"
+              },
+              {
+                "id": "b",
+                "label": "Panh (kẹp)"
+              },
+              {
+                "id": "c",
+                "label": "Kính hiển vi"
+              },
+              {
+                "id": "d",
+                "label": "Nhiệt kế"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Vì sao cây rêu thường thấp bé?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì rêu sống ở nơi lạnh"
+              },
+              {
+                "id": "b",
+                "label": "Vì rêu chưa có mạch dẫn và chưa có rễ thật"
+              },
+              {
+                "id": "c",
+                "label": "Vì rêu bị động vật ăn"
+              },
+              {
+                "id": "d",
+                "label": "Vì rêu không có lá"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hat-tran-kin",
+      "title": "Nhận biết cây hạt trần và hạt kín",
+      "fromExercises": [
+        "bio-g6-b20-q02",
+        "bio-g6-b20-q03",
+        "bio-g6-b20-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Đặc điểm nào giúp phân biệt cây hạt kín với cây hạt trần?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Có rễ"
+              },
+              {
+                "id": "b",
+                "label": "Có lá"
+              },
+              {
+                "id": "c",
+                "label": "Có hoa, hạt được bảo vệ trong quả"
+              },
+              {
+                "id": "d",
+                "label": "Có thân"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Cơ quan sinh sản của cây thông là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hoa"
+              },
+              {
+                "id": "b",
+                "label": "Nón"
+              },
+              {
+                "id": "c",
+                "label": "Bào tử"
+              },
+              {
+                "id": "d",
+                "label": "Quả"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về cây hạt trần và hạt kín là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Cây bưởi là cây hạt kín.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Hạt thông nằm lộ trên các vảy của nón.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Cây thông có hoa và quả.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Phân loại các cây sau.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Hạt trần"
+              },
+              {
+                "id": "b2",
+                "label": "Hạt kín"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Thông",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Vạn tuế",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Bưởi",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Lúa",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Hoa hồng",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Mẫu vật nào sau đây thuộc nhóm thực vật có hoa?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cây rêu"
+              },
+              {
+                "id": "b",
+                "label": "Cây dương xỉ"
+              },
+              {
+                "id": "c",
+                "label": "Cây thông"
+              },
+              {
+                "id": "d",
+                "label": "Cây cải"
+              }
+            ],
+            "correctId": "d"
+          }
+        }
+      ]
+    }
+  ]
+}

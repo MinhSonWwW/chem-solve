@@ -1,0 +1,322 @@
+{
+  "lessonId": "bio-g6-b10",
+  "units": [
+    {
+      "id": "bac-phan-loai",
+      "title": "Các bậc phân loại và tên khoa học",
+      "fromExercises": [
+        "bio-g6-b10-q01",
+        "bio-g6-b10-q03",
+        "bio-g6-b10-q04"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Bậc phân loại nhỏ nhất là bậc nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chi"
+              },
+              {
+                "id": "b",
+                "label": "Họ"
+              },
+              {
+                "id": "c",
+                "label": "Loài"
+              },
+              {
+                "id": "d",
+                "label": "Giới"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Trong tên khoa học của sinh vật, phần thứ nhất (viết hoa chữ cái đầu) là tên gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tên loài"
+              },
+              {
+                "id": "b",
+                "label": "Tên chi"
+              },
+              {
+                "id": "c",
+                "label": "Tên họ"
+              },
+              {
+                "id": "d",
+                "label": "Tên giới"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về tên khoa học là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Tên khoa học được viết bằng tiếng Latinh.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Tên khoa học gồm hai phần: tên chi và tên loài.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Tên khoa học của một loài viết khác nhau ở mỗi nước.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vì sao cần phân loại sinh vật?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để sinh vật đẹp hơn"
+              },
+              {
+                "id": "b",
+                "label": "Để dễ nhận biết, gọi tên, nghiên cứu và bảo vệ sinh vật"
+              },
+              {
+                "id": "c",
+                "label": "Để giảm số lượng loài"
+              },
+              {
+                "id": "d",
+                "label": "Để sinh vật lớn nhanh hơn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Các bậc phân loại từ thấp đến cao: Loài, Chi, … Bậc tiếp theo sau Chi là gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Bộ"
+              },
+              {
+                "id": "b",
+                "label": "Họ"
+              },
+              {
+                "id": "c",
+                "label": "Lớp"
+              },
+              {
+                "id": "d",
+                "label": "Ngành"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nam-gioi",
+      "title": "Năm giới sinh vật",
+      "fromExercises": [
+        "bio-g6-b10-q02",
+        "bio-g6-b10-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sinh giới được chia thành mấy giới?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "3"
+              },
+              {
+                "id": "b",
+                "label": "4"
+              },
+              {
+                "id": "c",
+                "label": "5"
+              },
+              {
+                "id": "d",
+                "label": "7"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ghép đại diện với giới sinh vật của nó.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Vi khuẩn E. coli",
+                "right": "Giới Khởi sinh"
+              },
+              {
+                "left": "Trùng roi",
+                "right": "Giới Nguyên sinh"
+              },
+              {
+                "left": "Nấm rơm",
+                "right": "Giới Nấm"
+              },
+              {
+                "left": "Cây lúa",
+                "right": "Giới Thực vật"
+              },
+              {
+                "left": "Con mèo",
+                "right": "Giới Động vật"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Vi khuẩn thuộc giới nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nguyên sinh"
+              },
+              {
+                "id": "b",
+                "label": "Khởi sinh"
+              },
+              {
+                "id": "c",
+                "label": "Nấm"
+              },
+              {
+                "id": "d",
+                "label": "Thực vật"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Nấm men thuộc giới nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Thực vật"
+              },
+              {
+                "id": "b",
+                "label": "Khởi sinh"
+              },
+              {
+                "id": "c",
+                "label": "Nấm"
+              },
+              {
+                "id": "d",
+                "label": "Động vật"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Xác định các nhận định sau về các giới sinh vật là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Giới Thực vật gồm sinh vật đa bào, có khả năng quang hợp.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Động vật tự tổng hợp chất hữu cơ nhờ ánh sáng.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Tảo lục đơn bào thuộc giới Nguyên sinh.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Đặc điểm nào giúp phân biệt giới Thực vật với giới Động vật?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Có tế bào hay không"
+              },
+              {
+                "id": "b",
+                "label": "Thực vật tự tổng hợp chất hữu cơ nhờ quang hợp, động vật thì không"
+              },
+              {
+                "id": "c",
+                "label": "Kích thước cơ thể"
+              },
+              {
+                "id": "d",
+                "label": "Màu sắc cơ thể"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

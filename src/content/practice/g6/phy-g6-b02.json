@@ -1,0 +1,223 @@
+{
+  "lessonId": "phy-g6-b02",
+  "units": [
+    {
+      "id": "don-vi-can",
+      "title": "Đơn vị và các loại cân",
+      "fromExercises": [
+        "phy-g6-b02-mcq-001",
+        "phy-g6-b02-mcq-002",
+        "phy-g6-b02-mcq-003",
+        "phy-g6-b02-mcq-006"
+      ],
+      "generator": "mass-convert",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Khối lượng của một vật cho biết điều gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Độ dài của vật"
+              },
+              {
+                "id": "b",
+                "label": "Lượng chất tạo nên vật"
+              },
+              {
+                "id": "c",
+                "label": "Độ nóng của vật"
+              },
+              {
+                "id": "d",
+                "label": "Tốc độ của vật"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ghép vật cần cân với loại cân phù hợp.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Bao gạo 50 kg",
+                "right": "Cân bàn"
+              },
+              {
+                "left": "Chiếc nhẫn vàng",
+                "right": "Cân tiểu li"
+              },
+              {
+                "left": "Xe tải chở hàng",
+                "right": "Cân ô tô (trạm cân)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "1 tấn bằng bao nhiêu kilôgam?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "10 kg"
+              },
+              {
+                "id": "b",
+                "label": "100 kg"
+              },
+              {
+                "id": "c",
+                "label": "1000 kg"
+              },
+              {
+                "id": "d",
+                "label": "10 000 kg"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cach-can",
+      "title": "Cách cân và đọc kết quả",
+      "fromExercises": [
+        "phy-g6-b02-mcq-004",
+        "phy-g6-b02-calc-005"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sắp xếp các bước cân một vật bằng cân đồng hồ.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Ước lượng khối lượng vật để chọn cân phù hợp",
+              "Điều chỉnh để kim chỉ đúng vạch số 0",
+              "Đặt vật lên đĩa cân",
+              "Nhìn vuông góc với mặt số, đọc và ghi kết quả"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Trước khi cân, kim của cân đồng hồ chỉ vạch 50 g. Nếu không chỉnh lại về 0 thì kết quả đọc được sẽ thế nào?",
+          "difficulty": 3,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đúng bằng khối lượng vật"
+              },
+              {
+                "id": "b",
+                "label": "Lớn hơn khối lượng thật 50 g"
+              },
+              {
+                "id": "c",
+                "label": "Nhỏ hơn khối lượng thật 50 g"
+              },
+              {
+                "id": "d",
+                "label": "Không đọc được"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Cân túi táo được 1,2 kg, cân túi cam được 0,8 kg. Tổng khối lượng hai túi là bao nhiêu kg?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 2,
+            "unit": "kg",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Một bao gạo có khối lượng 25 kg. Bao gạo đó nặng bao nhiêu gam?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 25000,
+            "unit": "g",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Xác định các nhận định sau về cách dùng cân là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Không đặt lên cân vật có khối lượng lớn hơn GHĐ của cân.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nên đặt vật lệch hẳn ra mép đĩa cân cho dễ nhìn.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Đọc kết quả theo vạch chia gần nhất với đầu kim.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Một cân đồng hồ có GHĐ 5 kg. Vật nào KHÔNG nên cân bằng chiếc cân này?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Quả dưa hấu 3 kg"
+              },
+              {
+                "id": "b",
+                "label": "Túi đường 1 kg"
+              },
+              {
+                "id": "c",
+                "label": "Bao xi măng 50 kg"
+              },
+              {
+                "id": "d",
+                "label": "Hộp sữa 900 g"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    }
+  ]
+}

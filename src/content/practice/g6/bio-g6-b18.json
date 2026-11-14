@@ -1,0 +1,309 @@
+{
+  "lessonId": "bio-g6-b18",
+  "units": [
+    {
+      "id": "nam-mu",
+      "title": "Quan sát nấm mũ (nấm rơm)",
+      "fromExercises": [
+        "bio-g6-b18-q01",
+        "bio-g6-b18-q04"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sắp xếp các bộ phận của cây nấm rơm từ dưới lên trên.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Bao gốc",
+              "Cuống nấm",
+              "Mũ nấm"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Bào tử của nấm rơm được tạo ra ở đâu?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ở cuống nấm"
+              },
+              {
+                "id": "b",
+                "label": "Ở các phiến mỏng mặt dưới mũ nấm"
+              },
+              {
+                "id": "c",
+                "label": "Ở bao gốc"
+              },
+              {
+                "id": "d",
+                "label": "Ở rễ"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Dụng cụ nào thích hợp để quan sát các phiến mỏng dưới mũ nấm?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Kính thiên văn"
+              },
+              {
+                "id": "b",
+                "label": "Kính lúp"
+              },
+              {
+                "id": "c",
+                "label": "Nhiệt kế"
+              },
+              {
+                "id": "d",
+                "label": "Thước dây"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về quan sát nấm mũ là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Cây nấm rơm gồm mũ nấm, cuống nấm và bao gốc.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nấm rơm có rễ, thân, lá như cây xanh.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Mặt dưới mũ nấm có nhiều phiến mỏng.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Sau khi quan sát một loại nấm lạ, cần làm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nếm thử"
+              },
+              {
+                "id": "b",
+                "label": "Rửa tay sạch, không ăn thử"
+              },
+              {
+                "id": "c",
+                "label": "Cất vào túi áo"
+              },
+              {
+                "id": "d",
+                "label": "Cho vật nuôi ăn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Những loại nấm nào ăn được?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nấm rơm"
+              },
+              {
+                "id": "b",
+                "label": "Nấm hương"
+              },
+              {
+                "id": "c",
+                "label": "Nấm đỏ có đốm trắng mọc trong rừng"
+              },
+              {
+                "id": "d",
+                "label": "Nấm kim châm"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "nam-moc",
+      "title": "Quan sát nấm mốc",
+      "fromExercises": [
+        "bio-g6-b18-q02",
+        "bio-g6-b18-q03",
+        "bio-g6-b18-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Nấm mốc thường mọc trên vật nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cục sắt khô"
+              },
+              {
+                "id": "b",
+                "label": "Bánh mì, cơm để lâu nơi ẩm"
+              },
+              {
+                "id": "c",
+                "label": "Viên đá"
+              },
+              {
+                "id": "d",
+                "label": "Chai nhựa sạch"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Muốn có mẫu nấm mốc để quan sát, nên để bánh mì ở đâu?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Trong ngăn đá"
+              },
+              {
+                "id": "b",
+                "label": "Nơi ẩm, ấm và có che đậy"
+              },
+              {
+                "id": "c",
+                "label": "Ngoài nắng gắt"
+              },
+              {
+                "id": "d",
+                "label": "Trong lò nướng nóng"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về nấm mốc là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Nấm mốc có cấu tạo dạng sợi.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Các khối bào tử của nấm mốc trông như những chấm nhỏ màu đen hoặc xanh.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Nấm mốc là sinh vật đơn bào.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Khi làm tiêu bản nấm mốc, cần lưu ý gì để an toàn?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hít mạnh để ngửi mùi"
+              },
+              {
+                "id": "b",
+                "label": "Đeo khẩu trang, găng tay, tránh hít phải bào tử"
+              },
+              {
+                "id": "c",
+                "label": "Dùng tay không bóc mốc"
+              },
+              {
+                "id": "d",
+                "label": "Ăn thử bánh bị mốc"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Nấm mốc được cấu tạo chủ yếu từ gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Lá và hoa"
+              },
+              {
+                "id": "b",
+                "label": "Các sợi nấm và bào tử"
+              },
+              {
+                "id": "c",
+                "label": "Rễ và thân"
+              },
+              {
+                "id": "d",
+                "label": "Vảy và vây"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

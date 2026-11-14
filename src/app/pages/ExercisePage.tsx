@@ -35,7 +35,10 @@ import {
 } from '@/design-system';
 import { sound } from '@/lib/audio';
 import { haptic } from '@/lib/haptic';
-import { loadExercisesForNode } from '@/content/contentLoader';
+import { loadExercises, loadExercisesForNode } from '@/content/contentLoader';
+import { unitIdFromNodeId } from '@/content/schema/practice';
+import { loadPracticeBank } from '@/content/practice';
+import { buildPracticeRound, loadRecent, rememberRound } from '@/content/practice/practiceRound';
 import { findLesson } from '@/content/curriculum';
 import { PhetLessonSims } from '@/features/lab/components/PhetLessonSims';
 import { loadSession, clearSession } from '@/engine/progress';
@@ -174,7 +177,10 @@ export const ExercisePage: React.FC = () => {
   const navigate = useNavigate();
   const { lessonId = 'g8-b03', nodeId = 'n01' } = useParams();
   const [searchParams] = useSearchParams();
-  const isPracticeMode = searchParams.get('mode') === 'practice';
+  // Practice unit rounds (/play/:lessonId/practice-<unit>) are always practice.
+  const practiceUnitId = unitIdFromNodeId(nodeId);
+  const isPracticeMode = searchParams.get('mode') === 'practice' || !!practiceUnitId;
+  const [practiceTitle, setPracticeTitle] = useState<string | null>(null);
   // Teacher question set ("set-<id>") or a lesson assigned to the student's class.
   const setId = setIdFromLessonId(lessonId);
   const [setMeta, setSetMeta] = useState(() => {
@@ -274,6 +280,20 @@ export const ExercisePage: React.FC = () => {
           });
           startSession(sessionKey, nodeId, setExercises, undefined, false, true);
           if (!cancelled) setLoadingState('ready');
+          return;
+        }
+
+        // Practice unit: a short round drawn from the unit's question bank (+ generated numbers).
+        if (practiceUnitId) {
+          const bank = await loadPracticeBank(lessonId);
+          const unit = bank?.units.find((u) => u.id === practiceUnitId);
+          if (!bank || !unit) throw new Error('Không tìm thấy mục luyện tập này.');
+          const round = buildPracticeRound(bank, unit, await loadExercises(lessonId), { recent: loadRecent(lessonId, unit.id) });
+          if (cancelled) return;
+          rememberRound(lessonId, unit.id, round.map((e) => e.id));
+          setPracticeTitle(unit.title);
+          startSession(sessionKey, nodeId, round, undefined, true, false);
+          setLoadingState('ready');
           return;
         }
 
@@ -777,11 +797,13 @@ export const ExercisePage: React.FC = () => {
       if (result) {
         haptic.completion();
 
-        if (isPracticeMode) {
+        if (isPracticeMode && result.heartAwarded) {
           sound.playLevelUp();
           setShowHeartFly(true);
           setRecoveredHeartsCount(1);
           setTimeout(() => setShowHeartFly(false), 2400);
+        } else {
+          setRecoveredHeartsCount(0);
         }
         setSessionResult({ ...result, totalQuestions, correctCount });
       }
@@ -1057,7 +1079,7 @@ export const ExercisePage: React.FC = () => {
             className="min-w-0 truncate text-xs font-bold text-[var(--text-secondary)] flex items-center gap-1"
           >
                         <span>
-              {setMeta?.title ?? findLesson(lessonId)?.title ?? 'Bài tập'} · Câu {sessionState.currentIndex + 1}/{sessionState.questions.length}
+              {setMeta?.title ?? practiceTitle ?? findLesson(lessonId)?.title ?? 'Bài tập'} · Câu {sessionState.currentIndex + 1}/{sessionState.questions.length}
             </span>
           </div>
           <div className="flex items-center gap-2 shrink-0">

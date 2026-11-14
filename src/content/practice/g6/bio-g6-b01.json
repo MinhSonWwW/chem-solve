@@ -1,0 +1,346 @@
+{
+  "lessonId": "bio-g6-b01",
+  "units": [
+    {
+      "id": "cau-tao-kinh-lup",
+      "title": "Cấu tạo và công dụng của kính lúp",
+      "fromExercises": [
+        "bio-g6-b01-q01",
+        "bio-g6-b01-q02",
+        "bio-g6-b01-q03"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Bộ phận nào của kính lúp giúp phóng to ảnh của vật?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tay cầm"
+              },
+              {
+                "id": "b",
+                "label": "Khung kính"
+              },
+              {
+                "id": "c",
+                "label": "Mặt kính lồi"
+              },
+              {
+                "id": "d",
+                "label": "Dây đeo"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về kính lúp là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Mặt kính lúp dày ở giữa, mỏng ở rìa.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Kính lúp dùng để quan sát vi khuẩn.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Kính lúp phóng to ảnh của vật khoảng từ 3 đến 20 lần.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Có thể dùng kính lúp để quan sát những vật nào sau đây?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Gân lá cây"
+              },
+              {
+                "id": "b",
+                "label": "Các bộ phận của bông hoa"
+              },
+              {
+                "id": "c",
+                "label": "Vi khuẩn trong sữa chua"
+              },
+              {
+                "id": "d",
+                "label": "Con kiến"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Trên kính lúp có ghi 5x. Con số này cho biết điều gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Kính nặng 5 g"
+              },
+              {
+                "id": "b",
+                "label": "Kính phóng to ảnh của vật lên 5 lần"
+              },
+              {
+                "id": "c",
+                "label": "Kính dùng được 5 năm"
+              },
+              {
+                "id": "d",
+                "label": "Kính có 5 bộ phận"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Người làm nghề nào thường dùng kính lúp trong công việc?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Thợ xây"
+              },
+              {
+                "id": "b",
+                "label": "Thợ sửa đồng hồ"
+              },
+              {
+                "id": "c",
+                "label": "Lái xe"
+              },
+              {
+                "id": "d",
+                "label": "Người bán rau"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "su-dung-kinh-lup",
+      "title": "Cách dùng và bảo quản kính lúp",
+      "fromExercises": [
+        "bio-g6-b01-q04",
+        "bio-g6-b01-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Khi quan sát bằng kính lúp, cần di chuyển kính như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Áp sát kính vào mắt và vật"
+              },
+              {
+                "id": "b",
+                "label": "Từ từ đưa kính lại gần hoặc ra xa vật đến khi thấy ảnh rõ nét"
+              },
+              {
+                "id": "c",
+                "label": "Đặt kính thật xa vật"
+              },
+              {
+                "id": "d",
+                "label": "Lắc kính liên tục"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Nên lau mặt kính lúp bằng gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Giấy nhám"
+              },
+              {
+                "id": "b",
+                "label": "Khăn mềm hoặc giấy lau kính"
+              },
+              {
+                "id": "c",
+                "label": "Bàn chải sắt"
+              },
+              {
+                "id": "d",
+                "label": "Ngón tay"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về sử dụng kính lúp là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Không được dùng kính lúp nhìn trực tiếp vào Mặt Trời.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Có thể dùng mặt kính để gõ vào vật cứng.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Cất kính lúp vào hộp sau khi dùng.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vì sao không được dùng kính lúp để nhìn Mặt Trời?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì sẽ không thấy gì"
+              },
+              {
+                "id": "b",
+                "label": "Vì ánh sáng bị hội tụ có thể làm tổn thương mắt"
+              },
+              {
+                "id": "c",
+                "label": "Vì kính bị mờ"
+              },
+              {
+                "id": "d",
+                "label": "Vì Mặt Trời ở quá xa"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Khi quan sát, nên cầm kính lúp như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cầm vào mặt kính"
+              },
+              {
+                "id": "b",
+                "label": "Cầm vào tay cầm, tránh chạm tay vào mặt kính"
+              },
+              {
+                "id": "c",
+                "label": "Kẹp mặt kính giữa hai ngón tay"
+              },
+              {
+                "id": "d",
+                "label": "Không cần cầm"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Phân loại các việc làm sau khi dùng kính lúp.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Nên làm"
+              },
+              {
+                "id": "b2",
+                "label": "Không nên làm"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Lau kính bằng khăn mềm",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Cầm vào tay cầm",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Cất kính vào hộp sau khi dùng",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Dùng kính nhìn Mặt Trời",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Để kính rơi xuống đất",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Dùng tay chà lên mặt kính",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

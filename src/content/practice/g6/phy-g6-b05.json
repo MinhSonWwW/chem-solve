@@ -1,0 +1,334 @@
+{
+  "lessonId": "phy-g6-b05",
+  "units": [
+    {
+      "id": "tac-dung-luc",
+      "title": "Tác dụng của lực",
+      "fromExercises": [
+        "phy-g6-b05-mcq-003",
+        "phy-g6-b05-mcq-004",
+        "phy-g6-b05-mcq-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Đá vào quả bóng đang đứng yên, quả bóng lăn đi. Lực đã có tác dụng gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chỉ làm quả bóng biến dạng"
+              },
+              {
+                "id": "b",
+                "label": "Làm quả bóng bắt đầu chuyển động"
+              },
+              {
+                "id": "c",
+                "label": "Làm quả bóng dừng lại"
+              },
+              {
+                "id": "d",
+                "label": "Không có tác dụng gì"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Phân loại tác dụng của lực trong các trường hợp sau.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Làm biến đổi chuyển động"
+              },
+              {
+                "id": "b2",
+                "label": "Làm biến dạng vật"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Bóp phanh làm xe đạp chạy chậm lại",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Gió thổi làm thuyền buồm chạy nhanh hơn",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Đẩy chiếc xe đang đứng yên cho xe chạy",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Bóp méo vỏ lon nhôm",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Kéo dãn sợi dây chun",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Nặn đất sét thành hình con vật",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về tác dụng của lực là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Lực có thể làm vật đang đứng yên bắt đầu chuyển động.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Lực có thể làm vật đang chuyển động dừng lại.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Lực chỉ có thể làm vật chuyển động nhanh lên.",
+                "correct": false
+              },
+              {
+                "id": "s4",
+                "text": "Lực có thể đồng thời làm vật biến dạng và biến đổi chuyển động.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Quả bóng tennis đập vào mặt vợt, bị móp và bật ngược lại. Lực của mặt vợt đã gây ra kết quả gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chỉ làm bóng biến dạng"
+              },
+              {
+                "id": "b",
+                "label": "Chỉ làm bóng đổi hướng chuyển động"
+              },
+              {
+                "id": "c",
+                "label": "Vừa làm bóng biến dạng vừa làm bóng đổi hướng chuyển động"
+              },
+              {
+                "id": "d",
+                "label": "Không gây ra kết quả gì"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Hành động nào sau đây là lực kéo?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đẩy cánh cửa"
+              },
+              {
+                "id": "b",
+                "label": "Kéo gàu nước từ giếng lên"
+              },
+              {
+                "id": "c",
+                "label": "Đá quả bóng"
+              },
+              {
+                "id": "d",
+                "label": "Nén lò xo"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "luc-tiep-xuc",
+      "title": "Lực tiếp xúc, lực không tiếp xúc",
+      "fromExercises": [
+        "phy-g6-b05-mcq-001",
+        "phy-g6-b05-mcq-002",
+        "phy-g6-b05-mcq-005"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Lực nào sau đây là lực không tiếp xúc?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Lực tay đẩy xe"
+              },
+              {
+                "id": "b",
+                "label": "Lực chân đá bóng"
+              },
+              {
+                "id": "c",
+                "label": "Lực hút của nam châm lên đinh sắt"
+              },
+              {
+                "id": "d",
+                "label": "Lực kéo của sợi dây"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Phân loại các lực sau.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Lực tiếp xúc"
+              },
+              {
+                "id": "b2",
+                "label": "Lực không tiếp xúc"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Lực tay kéo ngăn kéo",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Lực búa đóng đinh",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Lực gió đẩy cánh buồm",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Lực hút của Trái Đất lên quả táo",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Lực nam châm hút kẹp giấy",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về đo lực là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Đơn vị đo lực là niutơn (N).",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Lực kế lò xo dùng để đo khối lượng.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Khi đo, cần cầm lực kế sao cho lò xo nằm dọc theo phương của lực.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Kí hiệu của đơn vị niutơn là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "N"
+              },
+              {
+                "id": "b",
+                "label": "Nt"
+              },
+              {
+                "id": "c",
+                "label": "kg"
+              },
+              {
+                "id": "d",
+                "label": "J"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Ghép mỗi lực với vật tác dụng lực.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Lực làm quả táo rơi xuống",
+                "right": "Trái Đất"
+              },
+              {
+                "left": "Lực làm chiếc xe đẩy chuyển động",
+                "right": "Tay người đẩy"
+              },
+              {
+                "left": "Lực làm đinh sắt dính vào nam châm",
+                "right": "Nam châm"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

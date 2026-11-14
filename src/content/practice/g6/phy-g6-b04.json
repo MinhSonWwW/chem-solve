@@ -1,0 +1,234 @@
+{
+  "lessonId": "phy-g6-b04",
+  "units": [
+    {
+      "id": "thang-nhiet",
+      "title": "Thang nhiệt độ và nhiệt kế",
+      "fromExercises": [
+        "phy-g6-b04-mcq-001",
+        "phy-g6-b04-mcq-002",
+        "phy-g6-b04-mcq-003",
+        "phy-g6-b04-calc-005"
+      ],
+      "generator": "temperature-convert",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Nhiệt độ bình thường của cơ thể người khoảng bao nhiêu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "25 °C"
+              },
+              {
+                "id": "b",
+                "label": "37 °C"
+              },
+              {
+                "id": "c",
+                "label": "42 °C"
+              },
+              {
+                "id": "d",
+                "label": "100 °C"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Đơn vị đo nhiệt độ trong hệ SI là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Độ C (°C)"
+              },
+              {
+                "id": "b",
+                "label": "Độ F (°F)"
+              },
+              {
+                "id": "c",
+                "label": "Kelvin (K)"
+              },
+              {
+                "id": "d",
+                "label": "Jun (J)"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Ghép loại nhiệt kế với công dụng phù hợp.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Nhiệt kế y tế",
+                "right": "Đo nhiệt độ cơ thể"
+              },
+              {
+                "left": "Nhiệt kế rượu",
+                "right": "Đo nhiệt độ không khí trong phòng"
+              },
+              {
+                "left": "Nhiệt kế phòng thí nghiệm",
+                "right": "Đo nhiệt độ nước khi đun"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cach-do-nhiet",
+      "title": "Cách đo nhiệt độ an toàn",
+      "fromExercises": [
+        "phy-g6-b04-mcq-004",
+        "phy-g6-b04-mcq-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sắp xếp các bước đo nhiệt độ cơ thể bằng nhiệt kế y tế thủy ngân.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Vẩy mạnh cho thủy ngân tụt xuống dưới vạch 35 °C",
+              "Đặt bầu nhiệt kế vào nách và kẹp chặt cánh tay",
+              "Chờ khoảng 2 đến 3 phút",
+              "Lấy nhiệt kế ra và đọc kết quả"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Muốn biết nước đang đun đã sôi chưa, nên dùng nhiệt kế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nhiệt kế y tế"
+              },
+              {
+                "id": "b",
+                "label": "Nhiệt kế có giới hạn đo trên 100 °C"
+              },
+              {
+                "id": "c",
+                "label": "Nhiệt kế đo nhiệt độ phòng (đến 50 °C)"
+              },
+              {
+                "id": "d",
+                "label": "Không cần dùng nhiệt kế"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về cảm giác nóng lạnh và nhiệt kế là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Cảm giác của tay có thể cho kết quả sai về độ nóng lạnh.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Muốn biết chính xác nhiệt độ cần dùng nhiệt kế.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Có thể dùng nhiệt kế y tế để đo nhiệt độ nước sôi.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Khi đo nhiệt độ của nước trong cốc, bầu nhiệt kế phải đặt như thế nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chạm vào đáy cốc"
+              },
+              {
+                "id": "b",
+                "label": "Để phía trên mặt nước"
+              },
+              {
+                "id": "c",
+                "label": "Ngập trong nước, không chạm đáy và thành cốc"
+              },
+              {
+                "id": "d",
+                "label": "Chỉ chạm nhẹ mặt nước"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Nhiệt kế điện tử dùng trong gia đình thường hiển thị nhiệt độ theo đơn vị nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Kelvin"
+              },
+              {
+                "id": "b",
+                "label": "Độ C (°C)"
+              },
+              {
+                "id": "c",
+                "label": "Jun"
+              },
+              {
+                "id": "d",
+                "label": "Niutơn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Buổi sáng nhiệt độ ngoài trời là 24 °C, buổi trưa là 33 °C. Buổi trưa nóng hơn buổi sáng bao nhiêu độ C?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 9,
+            "unit": "°C"
+          }
+        }
+      ]
+    }
+  ]
+}

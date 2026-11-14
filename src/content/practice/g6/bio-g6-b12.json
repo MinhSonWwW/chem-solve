@@ -1,0 +1,322 @@
+{
+  "lessonId": "bio-g6-b12",
+  "units": [
+    {
+      "id": "dac-diem-vk",
+      "title": "Hình dạng và cấu tạo vi khuẩn",
+      "fromExercises": [
+        "bio-g6-b12-q01",
+        "bio-g6-b12-q03"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Vi khuẩn có kích thước như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Lớn như hạt đậu"
+              },
+              {
+                "id": "b",
+                "label": "Rất nhỏ, chỉ quan sát được bằng kính hiển vi"
+              },
+              {
+                "id": "c",
+                "label": "Bằng con kiến"
+              },
+              {
+                "id": "d",
+                "label": "Bằng hạt gạo"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về vi khuẩn là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Vi khuẩn là sinh vật đơn bào.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Vi khuẩn có nhân hoàn chỉnh với màng nhân.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Vi khuẩn sống ở khắp nơi: đất, nước, không khí, cơ thể sinh vật.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Vi khuẩn hình que còn được gọi là gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cầu khuẩn"
+              },
+              {
+                "id": "b",
+                "label": "Trực khuẩn"
+              },
+              {
+                "id": "c",
+                "label": "Xoắn khuẩn"
+              },
+              {
+                "id": "d",
+                "label": "Phẩy khuẩn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vi khuẩn hình cầu được gọi là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cầu khuẩn"
+              },
+              {
+                "id": "b",
+                "label": "Trực khuẩn"
+              },
+              {
+                "id": "c",
+                "label": "Xoắn khuẩn"
+              },
+              {
+                "id": "d",
+                "label": "Phẩy khuẩn"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Vi khuẩn sinh sản chủ yếu bằng cách nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đẻ trứng"
+              },
+              {
+                "id": "b",
+                "label": "Phân đôi tế bào"
+              },
+              {
+                "id": "c",
+                "label": "Bằng hạt"
+              },
+              {
+                "id": "d",
+                "label": "Bằng hoa"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Vi khuẩn có thể sống ở những đâu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Trong đất"
+              },
+              {
+                "id": "b",
+                "label": "Trong ruột người"
+              },
+              {
+                "id": "c",
+                "label": "Trong nước"
+              },
+              {
+                "id": "d",
+                "label": "Không sống được ở đâu cả"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "vai-tro-vk",
+      "title": "Vai trò của vi khuẩn và phòng bệnh",
+      "fromExercises": [
+        "bio-g6-b12-q02",
+        "bio-g6-b12-q04",
+        "bio-g6-b12-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép vi khuẩn với vai trò của nó.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Vi khuẩn lactic",
+                "right": "Làm sữa chua, muối dưa"
+              },
+              {
+                "left": "Vi khuẩn cố định đạm",
+                "right": "Bổ sung đạm cho đất"
+              },
+              {
+                "left": "Vi khuẩn phân hủy",
+                "right": "Phân hủy xác sinh vật"
+              },
+              {
+                "left": "Vi khuẩn lao",
+                "right": "Gây bệnh lao"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Bệnh nào sau đây do vi khuẩn gây ra?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cúm"
+              },
+              {
+                "id": "b",
+                "label": "Sởi"
+              },
+              {
+                "id": "c",
+                "label": "Tả"
+              },
+              {
+                "id": "d",
+                "label": "Thủy đậu"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về phòng bệnh do vi khuẩn là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Ăn chín, uống sôi giúp phòng bệnh đường tiêu hóa.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Kháng sinh chữa được mọi bệnh do virus.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Rửa tay bằng xà phòng giúp giảm lây nhiễm vi khuẩn.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Thức ăn để lâu ngoài không khí bị ôi thiu chủ yếu là do đâu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Do ánh sáng"
+              },
+              {
+                "id": "b",
+                "label": "Do vi khuẩn phát triển và phân hủy thức ăn"
+              },
+              {
+                "id": "c",
+                "label": "Do nhiệt độ thấp"
+              },
+              {
+                "id": "d",
+                "label": "Do không khí sạch"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Cách bảo quản nào hạn chế vi khuẩn làm hỏng thức ăn?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để thức ăn ngoài nắng"
+              },
+              {
+                "id": "b",
+                "label": "Để thức ăn trong tủ lạnh"
+              },
+              {
+                "id": "c",
+                "label": "Để thức ăn ẩm ướt"
+              },
+              {
+                "id": "d",
+                "label": "Không đậy thức ăn"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

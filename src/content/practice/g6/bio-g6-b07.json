@@ -1,0 +1,323 @@
+{
+  "lessonId": "bio-g6-b07",
+  "units": [
+    {
+      "id": "qua-trinh-song",
+      "title": "Các quá trình sống của cơ thể",
+      "fromExercises": [
+        "bio-g6-b07-q01",
+        "bio-g6-b07-q04"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Những quá trình nào là đặc trưng của cơ thể sống?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cảm ứng"
+              },
+              {
+                "id": "b",
+                "label": "Sinh trưởng"
+              },
+              {
+                "id": "c",
+                "label": "Sinh sản"
+              },
+              {
+                "id": "d",
+                "label": "Bị gỉ sét"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Cây xanh hướng về phía có ánh sáng thể hiện quá trình sống nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sinh sản"
+              },
+              {
+                "id": "b",
+                "label": "Cảm ứng và vận động"
+              },
+              {
+                "id": "c",
+                "label": "Bài tiết"
+              },
+              {
+                "id": "d",
+                "label": "Hô hấp"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Quá trình lấy các chất cần thiết từ môi trường và thải chất thải ra ngoài gọi là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sinh sản"
+              },
+              {
+                "id": "b",
+                "label": "Trao đổi chất"
+              },
+              {
+                "id": "c",
+                "label": "Cảm ứng"
+              },
+              {
+                "id": "d",
+                "label": "Vận động"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về cơ thể sống là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Ô tô chạy được nên ô tô là vật sống.",
+                "correct": false
+              },
+              {
+                "id": "s2",
+                "text": "Cây lúa lớn lên và ra hạt nên là vật sống.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Con gà hô hấp, ăn uống và đẻ trứng.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Thải mồ hôi, nước tiểu thuộc quá trình sống nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sinh sản"
+              },
+              {
+                "id": "b",
+                "label": "Bài tiết"
+              },
+              {
+                "id": "c",
+                "label": "Cảm ứng"
+              },
+              {
+                "id": "d",
+                "label": "Sinh trưởng"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Gà mái đẻ trứng thể hiện quá trình sống nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cảm ứng"
+              },
+              {
+                "id": "b",
+                "label": "Bài tiết"
+              },
+              {
+                "id": "c",
+                "label": "Sinh sản"
+              },
+              {
+                "id": "d",
+                "label": "Hô hấp"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    },
+    {
+      "id": "don-da-bao",
+      "title": "Cơ thể đơn bào và đa bào",
+      "fromExercises": [
+        "bio-g6-b07-q02",
+        "bio-g6-b07-q03",
+        "bio-g6-b07-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Cơ thể đơn bào là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cơ thể có nhiều tế bào"
+              },
+              {
+                "id": "b",
+                "label": "Cơ thể chỉ gồm một tế bào"
+              },
+              {
+                "id": "c",
+                "label": "Cơ thể không có tế bào"
+              },
+              {
+                "id": "d",
+                "label": "Cơ thể có hai tế bào"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Sinh vật nào sau đây là sinh vật đa bào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Trùng roi"
+              },
+              {
+                "id": "b",
+                "label": "Vi khuẩn"
+              },
+              {
+                "id": "c",
+                "label": "Trùng giày"
+              },
+              {
+                "id": "d",
+                "label": "Cây hoa hồng"
+              }
+            ],
+            "correctId": "d"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về cơ thể đơn bào và đa bào là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Trùng biến hình là sinh vật đơn bào.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Con ếch là sinh vật đa bào.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Mọi sinh vật đơn bào đều nhìn thấy được bằng mắt thường.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Ở cơ thể đa bào, các tế bào có đặc điểm gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Mọi tế bào giống hệt nhau"
+              },
+              {
+                "id": "b",
+                "label": "Các tế bào phân hóa thành nhiều loại, thực hiện chức năng khác nhau"
+              },
+              {
+                "id": "c",
+                "label": "Mỗi tế bào sống tách rời"
+              },
+              {
+                "id": "d",
+                "label": "Tế bào không có nhân"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Tảo lục đơn bào có thể tự thực hiện những hoạt động nào như một cơ thể hoàn chỉnh?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Không làm được gì"
+              },
+              {
+                "id": "b",
+                "label": "Tự dinh dưỡng, hô hấp và sinh sản"
+              },
+              {
+                "id": "c",
+                "label": "Chỉ di chuyển"
+              },
+              {
+                "id": "d",
+                "label": "Chỉ bài tiết"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

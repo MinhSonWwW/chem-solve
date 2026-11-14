@@ -1,0 +1,263 @@
+{
+  "lessonId": "phy-g6-b11",
+  "units": [
+    {
+      "id": "nang-luong",
+      "title": "Năng lượng và đơn vị năng lượng",
+      "fromExercises": [
+        "phy-g6-b11-mcq-001",
+        "phy-g6-b11-mcq-002",
+        "phy-g6-b11-num-005"
+      ],
+      "generator": "energy-kj",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Năng lượng giúp vật làm được những việc gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chuyển động, nóng lên, phát sáng, phát ra âm thanh…"
+              },
+              {
+                "id": "b",
+                "label": "Chỉ làm vật nóng lên"
+              },
+              {
+                "id": "c",
+                "label": "Chỉ làm vật chuyển động"
+              },
+              {
+                "id": "d",
+                "label": "Không làm được gì"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về năng lượng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Đơn vị đo năng lượng là jun (J).",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "1 kJ = 1000 J.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Vật đứng yên thì chắc chắn không có năng lượng nào.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Năng lượng ghi trên bao bì thực phẩm thường dùng đơn vị nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Niutơn"
+              },
+              {
+                "id": "b",
+                "label": "kJ hoặc kcal"
+              },
+              {
+                "id": "c",
+                "label": "Mét"
+              },
+              {
+                "id": "d",
+                "label": "Kelvin"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "truyen-nang-luong",
+      "title": "Sự truyền năng lượng",
+      "fromExercises": [
+        "phy-g6-b11-mcq-003",
+        "phy-g6-b11-mcq-004",
+        "phy-g6-b11-tf-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Năng lượng được truyền bằng cách nào trong các trường hợp sau?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Truyền bằng tác dụng lực"
+              },
+              {
+                "id": "b2",
+                "label": "Truyền nhiệt"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Cầu thủ đá quả bóng bay đi",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Gió đẩy thuyền buồm",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Nước chảy làm quay bánh xe nước",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Ấm nước được đun trên bếp",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Lò sưởi làm ấm căn phòng",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Chườm túi đá làm mát trán",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Nhiên liệu nào sau đây khi đốt cháy cung cấp năng lượng cho xe máy chạy?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nước"
+              },
+              {
+                "id": "b",
+                "label": "Xăng"
+              },
+              {
+                "id": "c",
+                "label": "Cát"
+              },
+              {
+                "id": "d",
+                "label": "Muối"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về nguồn năng lượng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Mặt Trời là nguồn năng lượng chủ yếu cho sự sống trên Trái Đất.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Gió và dòng nước chảy có năng lượng.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Pin đã hết vẫn cung cấp năng lượng như pin mới.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Bỏ một thìa kim loại vào cốc nước nóng, thìa nóng lên. Năng lượng được truyền như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Từ thìa sang nước"
+              },
+              {
+                "id": "b",
+                "label": "Từ nước nóng sang thìa"
+              },
+              {
+                "id": "c",
+                "label": "Không có sự truyền năng lượng"
+              },
+              {
+                "id": "d",
+                "label": "Từ tay sang nước"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Quả bóng lăn đến làm đổ các con ki. Năng lượng đã được truyền bằng cách nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Truyền nhiệt"
+              },
+              {
+                "id": "b",
+                "label": "Tác dụng lực"
+              },
+              {
+                "id": "c",
+                "label": "Phát sáng"
+              },
+              {
+                "id": "d",
+                "label": "Phát ra âm thanh"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

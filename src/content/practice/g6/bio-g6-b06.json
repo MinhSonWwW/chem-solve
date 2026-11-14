@@ -1,0 +1,336 @@
+{
+  "lessonId": "bio-g6-b06",
+  "units": [
+    {
+      "id": "tieu-ban",
+      "title": "Làm tiêu bản tế bào",
+      "fromExercises": [
+        "bio-g6-b06-q01",
+        "bio-g6-b06-q03",
+        "bio-g6-b06-q04"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Vì sao phải lấy lớp biểu bì vảy hành thật mỏng?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để tiết kiệm hành"
+              },
+              {
+                "id": "b",
+                "label": "Để ánh sáng đi qua, nhìn rõ từng tế bào"
+              },
+              {
+                "id": "c",
+                "label": "Để tế bào to hơn"
+              },
+              {
+                "id": "d",
+                "label": "Để dễ nhuộm màu"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Đậy lá kính lên tiêu bản như thế nào để tránh bọt khí?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Thả rơi lá kính từ trên cao"
+              },
+              {
+                "id": "b",
+                "label": "Đặt nghiêng một cạnh lá kính chạm giọt nước rồi hạ từ từ"
+              },
+              {
+                "id": "c",
+                "label": "Ấn mạnh lá kính xuống"
+              },
+              {
+                "id": "d",
+                "label": "Không cần đậy lá kính"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về làm tiêu bản là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Cần nhỏ một giọt nước lên lam kính trước khi đặt mẫu.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Có thể lấy cả miếng vảy hành dày để quan sát.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Thuốc nhuộm giúp nhìn rõ nhân tế bào hơn.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Ghép dụng cụ với công dụng của nó.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Lam kính",
+                "right": "Đặt mẫu vật"
+              },
+              {
+                "left": "Lá kính",
+                "right": "Đậy lên mẫu vật"
+              },
+              {
+                "left": "Kim mũi mác",
+                "right": "Tách lấy lớp biểu bì mỏng"
+              },
+              {
+                "left": "Ống nhỏ giọt",
+                "right": "Lấy nước hoặc thuốc nhuộm"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Muốn quan sát tế bào thịt quả cà chua, cần làm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cắt một lát dày cả quả"
+              },
+              {
+                "id": "b",
+                "label": "Dùng kim lấy một ít thịt quả, dàn mỏng trên lam kính có giọt nước"
+              },
+              {
+                "id": "c",
+                "label": "Ép cả quả lên lam kính"
+              },
+              {
+                "id": "d",
+                "label": "Luộc chín quả cà chua"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "quan-sat",
+      "title": "Quan sát và phân biệt tế bào",
+      "fromExercises": [
+        "bio-g6-b06-q02",
+        "bio-g6-b06-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Dưới kính hiển vi, tế bào biểu bì vảy hành có hình dạng như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hình sao"
+              },
+              {
+                "id": "b",
+                "label": "Hình đa giác, xếp sát nhau"
+              },
+              {
+                "id": "c",
+                "label": "Hình que tách rời"
+              },
+              {
+                "id": "d",
+                "label": "Hình xoắn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về quan sát tế bào là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Tế bào biểu bì vảy hành có nhân.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Tế bào biểu bì vảy hành có lục lạp màu xanh.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Tế bào trứng ếch có thể nhìn thấy bằng mắt thường.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Phân loại các tế bào sau.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Tế bào thực vật"
+              },
+              {
+                "id": "b2",
+                "label": "Tế bào động vật"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Tế bào biểu bì vảy hành",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Tế bào thịt quả cà chua",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Tế bào lá rong",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Tế bào niêm mạc miệng",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Tế bào trứng ếch",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Khi vẽ tế bào quan sát được, cần làm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vẽ theo trí tưởng tượng"
+              },
+              {
+                "id": "b",
+                "label": "Vẽ đúng hình dạng quan sát được và chú thích các thành phần"
+              },
+              {
+                "id": "c",
+                "label": "Chỉ ghi tên, không vẽ"
+              },
+              {
+                "id": "d",
+                "label": "Chép hình trong sách"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Thành phần nào của tế bào bắt màu thuốc nhuộm đậm nhất, dễ thấy nhất?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Màng tế bào"
+              },
+              {
+                "id": "b",
+                "label": "Nhân tế bào"
+              },
+              {
+                "id": "c",
+                "label": "Thành tế bào"
+              },
+              {
+                "id": "d",
+                "label": "Không bào"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Tế bào thịt quả cà chua chín có đặc điểm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Gần tròn, xếp khá rời nhau"
+              },
+              {
+                "id": "b",
+                "label": "Hình sợi dài"
+              },
+              {
+                "id": "c",
+                "label": "Hình sao"
+              },
+              {
+                "id": "d",
+                "label": "Hình que"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,323 @@
+{
+  "lessonId": "bio-g6-b15",
+  "units": [
+    {
+      "id": "da-dang-nsv",
+      "title": "Đặc điểm và sự đa dạng của nguyên sinh vật",
+      "fromExercises": [
+        "bio-g6-b15-q01",
+        "bio-g6-b15-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phần lớn nguyên sinh vật có cấu tạo như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đơn bào, nhân thực"
+              },
+              {
+                "id": "b",
+                "label": "Đa bào, nhân sơ"
+              },
+              {
+                "id": "c",
+                "label": "Không có tế bào"
+              },
+              {
+                "id": "d",
+                "label": "Đơn bào, nhân sơ"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Những sinh vật nào sau đây là nguyên sinh vật?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Trùng roi"
+              },
+              {
+                "id": "b",
+                "label": "Trùng giày"
+              },
+              {
+                "id": "c",
+                "label": "Tảo lục đơn bào"
+              },
+              {
+                "id": "d",
+                "label": "Vi khuẩn E. coli"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về nguyên sinh vật là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Nguyên sinh vật sống trong nước, trong đất hoặc trong cơ thể sinh vật khác.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Mọi nguyên sinh vật đều quang hợp được.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Trùng roi xanh vừa có thể tự dưỡng vừa có thể dị dưỡng.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Nguyên sinh vật nào có chất diệp lục và quang hợp được?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Trùng giày"
+              },
+              {
+                "id": "b",
+                "label": "Trùng biến hình"
+              },
+              {
+                "id": "c",
+                "label": "Tảo lục"
+              },
+              {
+                "id": "d",
+                "label": "Trùng sốt rét"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Tảo silic, tảo lục đơn bào thuộc nhóm sinh vật nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vi khuẩn"
+              },
+              {
+                "id": "b",
+                "label": "Nguyên sinh vật"
+              },
+              {
+                "id": "c",
+                "label": "Nấm"
+              },
+              {
+                "id": "d",
+                "label": "Động vật"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Để quan sát nguyên sinh vật, cần dùng dụng cụ nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Mắt thường"
+              },
+              {
+                "id": "b",
+                "label": "Kính hiển vi"
+              },
+              {
+                "id": "c",
+                "label": "Ống nhòm"
+              },
+              {
+                "id": "d",
+                "label": "Thước đo"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vai-tro-nsv",
+      "title": "Vai trò và bệnh do nguyên sinh vật",
+      "fromExercises": [
+        "bio-g6-b15-q02",
+        "bio-g6-b15-q03",
+        "bio-g6-b15-q04"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Bệnh sốt rét do tác nhân nào gây ra?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Virus"
+              },
+              {
+                "id": "b",
+                "label": "Vi khuẩn"
+              },
+              {
+                "id": "c",
+                "label": "Trùng sốt rét"
+              },
+              {
+                "id": "d",
+                "label": "Nấm"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Bệnh kiết lị do nguyên sinh vật nào gây ra?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Trùng giày"
+              },
+              {
+                "id": "b",
+                "label": "Trùng kiết lị"
+              },
+              {
+                "id": "c",
+                "label": "Trùng roi xanh"
+              },
+              {
+                "id": "d",
+                "label": "Tảo lục"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về vai trò của nguyên sinh vật là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Tảo là thức ăn của nhiều động vật dưới nước.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Tảo quang hợp tạo ra oxygen.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Mọi nguyên sinh vật đều gây bệnh.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Tảo phát triển quá mức làm nước ao hồ đổi màu (hiện tượng tảo nở hoa) gây hại gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Làm nước thiếu oxygen khiến cá chết"
+              },
+              {
+                "id": "b",
+                "label": "Làm nước sạch hơn"
+              },
+              {
+                "id": "c",
+                "label": "Làm nước bốc hơi nhanh"
+              },
+              {
+                "id": "d",
+                "label": "Không gây hại gì"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Biện pháp nào giúp phòng bệnh kiết lị?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ngủ màn"
+              },
+              {
+                "id": "b",
+                "label": "Ăn chín uống sôi, rửa tay trước khi ăn"
+              },
+              {
+                "id": "c",
+                "label": "Phát quang bụi rậm"
+              },
+              {
+                "id": "d",
+                "label": "Tiêm vaccine phòng cúm"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

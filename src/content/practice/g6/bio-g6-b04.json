@@ -1,0 +1,292 @@
+{
+  "lessonId": "bio-g6-b04",
+  "units": [
+    {
+      "id": "thanh-phan",
+      "title": "Các thành phần chính của tế bào",
+      "fromExercises": [
+        "bio-g6-b04-q01",
+        "bio-g6-b04-q05",
+        "bio-g6-b04-q06"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Thành phần nào điều khiển mọi hoạt động sống của tế bào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Màng tế bào"
+              },
+              {
+                "id": "b",
+                "label": "Tế bào chất"
+              },
+              {
+                "id": "c",
+                "label": "Nhân tế bào"
+              },
+              {
+                "id": "d",
+                "label": "Thành tế bào"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Thành phần nào bao bọc tế bào và kiểm soát các chất đi vào, đi ra?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Màng tế bào"
+              },
+              {
+                "id": "b",
+                "label": "Nhân tế bào"
+              },
+              {
+                "id": "c",
+                "label": "Lục lạp"
+              },
+              {
+                "id": "d",
+                "label": "Không bào"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Tế bào chất là nơi diễn ra hoạt động nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Phần lớn các hoạt động sống của tế bào"
+              },
+              {
+                "id": "b",
+                "label": "Chỉ chứa nước"
+              },
+              {
+                "id": "c",
+                "label": "Điều khiển tế bào"
+              },
+              {
+                "id": "d",
+                "label": "Bảo vệ tế bào"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Sắp xếp các thành phần của tế bào động vật từ ngoài vào trong.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Màng tế bào",
+              "Tế bào chất",
+              "Nhân tế bào"
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Xác định các nhận định sau về lục lạp là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Lục lạp có ở tế bào lá cây.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Lục lạp chứa chất diệp lục.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Tế bào cơ thể người có lục lạp.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "nhan-so-thuc",
+      "title": "Tế bào nhân sơ và nhân thực, thực vật và động vật",
+      "fromExercises": [
+        "bio-g6-b04-q02",
+        "bio-g6-b04-q03",
+        "bio-g6-b04-q04"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sinh vật nào sau đây có tế bào nhân sơ?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cây ngô"
+              },
+              {
+                "id": "b",
+                "label": "Con người"
+              },
+              {
+                "id": "c",
+                "label": "Vi khuẩn E. coli"
+              },
+              {
+                "id": "d",
+                "label": "Nấm men"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Phân loại các đặc điểm sau.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Tế bào nhân sơ"
+              },
+              {
+                "id": "b2",
+                "label": "Tế bào nhân thực"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Kích thước rất nhỏ",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Vật chất di truyền chưa có màng bao bọc",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Có nhân hoàn chỉnh",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Có nhiều bào quan có màng",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về tế bào thực vật và động vật là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Tế bào thực vật có thành tế bào.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Tế bào động vật có lục lạp.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Cả hai loại tế bào đều có màng tế bào, tế bào chất và nhân.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Thành phần nào giúp tế bào thực vật có hình dạng ổn định, cứng chắc?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Màng tế bào"
+              },
+              {
+                "id": "b",
+                "label": "Thành tế bào"
+              },
+              {
+                "id": "c",
+                "label": "Nhân tế bào"
+              },
+              {
+                "id": "d",
+                "label": "Tế bào chất"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Tế bào nào sau đây là tế bào nhân thực?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vi khuẩn lactic"
+              },
+              {
+                "id": "b",
+                "label": "Tế bào biểu bì vảy hành"
+              },
+              {
+                "id": "c",
+                "label": "Vi khuẩn lam"
+              },
+              {
+                "id": "d",
+                "label": "Vi khuẩn E. coli"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

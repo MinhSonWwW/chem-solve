@@ -37,3 +37,9 @@ File này ghi lại các quyết định kỹ thuật quan trọng của CHEM-SO
 - **Tim**: Bài được giao không trừ tim (`noHeartLoss` trong phiên), nhưng vẫn ghi nhận số lần thử để giáo viên phân tích câu sai.
 - **Ngày**: 2026-11-14.
 
+## ADR 007: Ngân hàng luyện tập theo mục (practice banks)
+- **Quyết định**: Mỗi bài có file `src/content/practice/gN/<lessonId>.json` (Zod: `PracticeBankSchema`) chia bài thành các mục luyện; mỗi mục gồm id câu cũ của bài + câu luyện tập dạng gọn (cùng cấu trúc câu hỏi tự soạn của giáo viên, chuyển thành `Exercise` bằng `buildExerciseFromQuestion`) + bộ sinh số liệu tuỳ chọn. Lượt luyện: `/play/<lessonId>/practice-<mục>?mode=practice`.
+- **Lý do**: Luyện lại y nguyên 4–6 câu của một chặng gây chán; mục ngắn một nội dung giúp học sinh biết mình yếu chỗ nào. Không đổi danh sách chương/bài (PLAN mục 2); id câu luyện tập nằm trong bài nên báo cáo giáo viên, sổ tay câu sai vẫn hoạt động.
+- **Hồi tim**: chỉ khi đúng ≥ 75 % và mỗi mục một lần/ngày, chống "cày" một lượt dễ.
+- **Ngày**: 2026-11-14.
+

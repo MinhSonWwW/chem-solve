@@ -1,0 +1,342 @@
+{
+  "lessonId": "phy-g6-b09",
+  "units": [
+    {
+      "id": "loai-ma-sat",
+      "title": "Lực ma sát trượt và ma sát nghỉ",
+      "fromExercises": [
+        "phy-g6-b09-mcq-001",
+        "phy-g6-b09-mcq-002",
+        "phy-g6-b09-mcq-003"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các trường hợp có lực ma sát sau.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Ma sát trượt"
+              },
+              {
+                "id": "b2",
+                "label": "Ma sát nghỉ"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Má phanh cọ vào vành bánh xe đạp",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Đẩy thùng gỗ trượt trên sàn",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Dùng tẩy cọ lên giấy",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Quyển sách nằm yên trên mặt bàn nghiêng",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Chiếc xe đứng yên trên dốc nhờ phanh",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về lực ma sát là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Lực ma sát trượt xuất hiện khi vật trượt trên bề mặt vật khác.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Lực ma sát nghỉ giữ cho vật không bị trượt khi có lực tác dụng.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Lực ma sát trượt luôn cùng chiều chuyển động của vật.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Lực ma sát trượt có chiều như thế nào so với chiều chuyển động của vật?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cùng chiều"
+              },
+              {
+                "id": "b",
+                "label": "Ngược chiều"
+              },
+              {
+                "id": "c",
+                "label": "Vuông góc"
+              },
+              {
+                "id": "d",
+                "label": "Không xác định"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vì sao đi trên sàn nhà vừa lau ướt dễ bị trượt ngã?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì ma sát giữa chân và sàn giảm"
+              },
+              {
+                "id": "b",
+                "label": "Vì ma sát giữa chân và sàn tăng"
+              },
+              {
+                "id": "c",
+                "label": "Vì trọng lực giảm"
+              },
+              {
+                "id": "d",
+                "label": "Vì sàn nóng lên"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Quyển sách đặt trên mặt bàn nằm ngang, không có lực nào đẩy hay kéo nó theo phương ngang. Có lực ma sát nghỉ tác dụng lên sách không?",
+          "difficulty": 3,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Không, vì không có lực nào làm sách có xu hướng trượt"
+              },
+              {
+                "id": "b",
+                "label": "Có, luôn luôn có"
+              },
+              {
+                "id": "c",
+                "label": "Có, hướng xuống dưới"
+              },
+              {
+                "id": "d",
+                "label": "Có, hướng lên trên"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    },
+    {
+      "id": "loi-hai",
+      "title": "Lợi ích và tác hại của ma sát",
+      "fromExercises": [
+        "phy-g6-b09-mcq-004",
+        "phy-g6-b09-mcq-005",
+        "phy-g6-b09-mcq-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại vai trò của ma sát trong các trường hợp sau.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Ma sát có ích"
+              },
+              {
+                "id": "b2",
+                "label": "Ma sát có hại"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Giúp người đi lại không bị trượt",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Giúp viết được phấn lên bảng",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Giúp phanh làm xe dừng lại",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Làm mòn đế giày, lốp xe",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Làm nóng và mòn ổ trục máy",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Cản trở khi đẩy thùng hàng trên sàn",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Những cách nào làm GIẢM ma sát?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tra dầu mỡ vào ổ trục"
+              },
+              {
+                "id": "b",
+                "label": "Lắp ổ bi cho bánh xe"
+              },
+              {
+                "id": "c",
+                "label": "Rắc cát lên đường trơn"
+              },
+              {
+                "id": "d",
+                "label": "Làm nhẵn bề mặt tiếp xúc"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Những cách nào làm TĂNG ma sát?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Rắc cát lên đường đóng băng"
+              },
+              {
+                "id": "b",
+                "label": "Làm rãnh gai trên đế giày"
+              },
+              {
+                "id": "c",
+                "label": "Bôi dầu lên mặt sàn"
+              },
+              {
+                "id": "d",
+                "label": "Đi giày đế cao su khi leo núi"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về ma sát trong đời sống là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Nếu không có ma sát, ta không cầm nắm được đồ vật.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Ma sát lúc nào cũng có hại.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Bôi trơn giúp máy móc ít bị mòn hơn.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Vì sao người ta rải cát hoặc đá dăm ở chỗ đường dốc trơn trượt?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để làm giảm ma sát"
+              },
+              {
+                "id": "b",
+                "label": "Để làm tăng ma sát, xe không bị trượt"
+              },
+              {
+                "id": "c",
+                "label": "Để đường sạch hơn"
+              },
+              {
+                "id": "d",
+                "label": "Để xe chạy nhanh hơn"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

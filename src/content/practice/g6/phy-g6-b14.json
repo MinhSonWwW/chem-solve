@@ -1,0 +1,240 @@
+{
+  "lessonId": "phy-g6-b14",
+  "units": [
+    {
+      "id": "co-ich-hao-phi",
+      "title": "Năng lượng có ích và hao phí",
+      "fromExercises": [
+        "phy-g6-b14-mcq-001",
+        "phy-g6-b14-mcq-002",
+        "phy-g6-b14-sort-005"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Khi xem ti vi, phân loại các dạng năng lượng sau.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Năng lượng có ích"
+              },
+              {
+                "id": "b2",
+                "label": "Năng lượng hao phí"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Năng lượng ánh sáng của màn hình",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Năng lượng âm thanh của loa",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Nhiệt làm nóng vỏ ti vi",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về năng lượng hao phí là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Mọi thiết bị khi hoạt động đều có năng lượng hao phí.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Năng lượng hao phí thường ở dạng nhiệt.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Năng lượng có ích luôn lớn hơn năng lượng cung cấp cho thiết bị.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Khi dùng quạt điện, dạng năng lượng nào là có ích?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nhiệt làm nóng động cơ"
+              },
+              {
+                "id": "b",
+                "label": "Tiếng ồn của quạt"
+              },
+              {
+                "id": "c",
+                "label": "Động năng của cánh quạt tạo ra gió"
+              },
+              {
+                "id": "d",
+                "label": "Rung động của thân quạt"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Cục sạc điện thoại ấm lên khi đang sạc cho thấy điều gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Một phần điện năng đã chuyển thành nhiệt hao phí"
+              },
+              {
+                "id": "b",
+                "label": "Điện năng bị mất đi hoàn toàn"
+              },
+              {
+                "id": "c",
+                "label": "Cục sạc tạo ra năng lượng mới"
+              },
+              {
+                "id": "d",
+                "label": "Pin điện thoại đã đầy"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Khi ô tô chạy, năng lượng có ích là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nhiệt làm nóng động cơ"
+              },
+              {
+                "id": "b",
+                "label": "Tiếng ồn của động cơ"
+              },
+              {
+                "id": "c",
+                "label": "Động năng của xe"
+              },
+              {
+                "id": "d",
+                "label": "Khói thải"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    },
+    {
+      "id": "giam-hao-phi",
+      "title": "Tính và giảm năng lượng hao phí",
+      "fromExercises": [
+        "phy-g6-b14-mcq-003",
+        "phy-g6-b14-mcq-004",
+        "phy-g6-b14-num-006"
+      ],
+      "generator": "energy-wasted",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Một bóng đèn nhận 60 J điện năng và phát ra 6 J năng lượng ánh sáng. Năng lượng hao phí là bao nhiêu J?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 54,
+            "unit": "J",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Những cách nào giúp giảm năng lượng hao phí?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Thay đèn sợi đốt bằng đèn LED"
+              },
+              {
+                "id": "b",
+                "label": "Bôi trơn các bộ phận chuyển động của máy"
+              },
+              {
+                "id": "c",
+                "label": "Để máy chạy cả khi không dùng"
+              },
+              {
+                "id": "d",
+                "label": "Bảo dưỡng máy móc định kì"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Hai bóng đèn sáng như nhau, bóng A nóng hơn bóng B. Bóng nào tiết kiệm điện hơn?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Bóng A"
+              },
+              {
+                "id": "b",
+                "label": "Bóng B"
+              },
+              {
+                "id": "c",
+                "label": "Như nhau"
+              },
+              {
+                "id": "d",
+                "label": "Không xác định được"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

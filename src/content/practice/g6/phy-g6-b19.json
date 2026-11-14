@@ -1,0 +1,303 @@
+{
+  "lessonId": "phy-g6-b19",
+  "units": [
+    {
+      "id": "hanh-tinh",
+      "title": "Các hành tinh trong Hệ Mặt Trời",
+      "fromExercises": [
+        "phy-g6-b19-mcq-001",
+        "phy-g6-b19-order-002",
+        "phy-g6-b19-mcq-003"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Hệ Mặt Trời có bao nhiêu hành tinh?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "7"
+              },
+              {
+                "id": "b",
+                "label": "8"
+              },
+              {
+                "id": "c",
+                "label": "9"
+              },
+              {
+                "id": "d",
+                "label": "10"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Hành tinh nào ở gần Mặt Trời nhất?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sao Kim"
+              },
+              {
+                "id": "b",
+                "label": "Sao Thủy"
+              },
+              {
+                "id": "c",
+                "label": "Trái Đất"
+              },
+              {
+                "id": "d",
+                "label": "Sao Hỏa"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Hành tinh nào ở xa Mặt Trời nhất?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sao Thiên Vương"
+              },
+              {
+                "id": "b",
+                "label": "Sao Hải Vương"
+              },
+              {
+                "id": "c",
+                "label": "Sao Thổ"
+              },
+              {
+                "id": "d",
+                "label": "Sao Mộc"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Thiên thể ở trung tâm Hệ Mặt Trời là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Trái Đất"
+              },
+              {
+                "id": "b",
+                "label": "Mặt Trời"
+              },
+              {
+                "id": "c",
+                "label": "Mặt Trăng"
+              },
+              {
+                "id": "d",
+                "label": "Sao Mộc"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Xác định các nhận định sau về Hệ Mặt Trời là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Các hành tinh chuyển động quanh Mặt Trời.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Trái Đất là hành tinh lớn nhất trong Hệ Mặt Trời.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Hệ Mặt Trời nằm trong Ngân Hà.",
+                "correct": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dac-diem",
+      "title": "Đặc điểm các hành tinh",
+      "fromExercises": [
+        "phy-g6-b19-sort-004",
+        "phy-g6-b19-match-005",
+        "phy-g6-b19-tf-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Hành tinh nào lớn nhất Hệ Mặt Trời?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sao Thổ"
+              },
+              {
+                "id": "b",
+                "label": "Sao Mộc"
+              },
+              {
+                "id": "c",
+                "label": "Trái Đất"
+              },
+              {
+                "id": "d",
+                "label": "Sao Hải Vương"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Hành tinh nào có hệ vành đai dễ thấy nhất?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sao Hỏa"
+              },
+              {
+                "id": "b",
+                "label": "Sao Thổ"
+              },
+              {
+                "id": "c",
+                "label": "Sao Thủy"
+              },
+              {
+                "id": "d",
+                "label": "Sao Kim"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Hành tinh nào được gọi là \"hành tinh đỏ\"?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sao Kim"
+              },
+              {
+                "id": "b",
+                "label": "Sao Hỏa"
+              },
+              {
+                "id": "c",
+                "label": "Sao Mộc"
+              },
+              {
+                "id": "d",
+                "label": "Sao Thủy"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Hành tinh duy nhất đã biết có sự sống là hành tinh nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sao Hỏa"
+              },
+              {
+                "id": "b",
+                "label": "Sao Kim"
+              },
+              {
+                "id": "c",
+                "label": "Trái Đất"
+              },
+              {
+                "id": "d",
+                "label": "Sao Mộc"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Những hành tinh nào là hành tinh đất đá ở vòng trong?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sao Thủy"
+              },
+              {
+                "id": "b",
+                "label": "Sao Kim"
+              },
+              {
+                "id": "c",
+                "label": "Sao Mộc"
+              },
+              {
+                "id": "d",
+                "label": "Sao Hỏa"
+              },
+              {
+                "id": "e",
+                "label": "Sao Thổ"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

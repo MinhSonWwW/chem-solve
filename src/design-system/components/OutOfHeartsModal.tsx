@@ -63,7 +63,7 @@ export const OutOfHeartsModal: React.FC<OutOfHeartsModalProps> = ({
               Bạn đã hết tim rồi!
             </h2>
             <p className="text-xs text-[var(--text-secondary)] leading-relaxed font-medium">
-              Bạn có thể <span className="text-[var(--gem-fg)] font-bold">đổi 150 đá quý</span> để hồi 1 tim tiếp tục học ngay, hoặc sang mục <span className="text-[var(--subject-fg)] font-bold">Luyện tập</span> để làm bài (+1 tim/bài).
+              Bạn có thể <span className="text-[var(--gem-fg)] font-bold">đổi 150 đá quý</span> để hồi 1 tim tiếp tục học ngay, hoặc sang mục <span className="text-[var(--subject-fg)] font-bold">Luyện tập</span> làm các mục luyện ngắn: đúng từ 3/4 câu được +1 tim (mỗi mục 1 lần/ngày).
             </p>
           </div>
 
@@ -102,7 +102,7 @@ export const OutOfHeartsModal: React.FC<OutOfHeartsModalProps> = ({
               }}
             >
               <Heart className="w-5 h-5 fill-white text-[var(--text-primary)]" />
-              <span>Luyện tập để hồi tim (+1 tim)</span>
+              <span>Luyện tập để hồi tim</span>
             </Button>
 
             <Button

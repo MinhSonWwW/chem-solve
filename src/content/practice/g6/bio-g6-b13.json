@@ -1,0 +1,323 @@
+{
+  "lessonId": "bio-g6-b13",
+  "units": [
+    {
+      "id": "lam-sua-chua",
+      "title": "Các bước làm sữa chua",
+      "fromExercises": [
+        "bio-g6-b13-q01",
+        "bio-g6-b13-q03",
+        "bio-g6-b13-q04"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Vì sao phải pha sữa bằng nước ấm (khoảng 40 °C) khi làm sữa chua?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để sữa ngọt hơn"
+              },
+              {
+                "id": "b",
+                "label": "Để vi khuẩn lactic hoạt động tốt, không bị chết"
+              },
+              {
+                "id": "c",
+                "label": "Để sữa đông nhanh vì lạnh"
+              },
+              {
+                "id": "d",
+                "label": "Để diệt vi khuẩn lactic"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Sữa chua cái được thêm vào hỗn hợp để làm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tạo màu"
+              },
+              {
+                "id": "b",
+                "label": "Cung cấp vi khuẩn lactic (men giống)"
+              },
+              {
+                "id": "c",
+                "label": "Làm sữa loãng ra"
+              },
+              {
+                "id": "d",
+                "label": "Tăng nhiệt độ"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về làm sữa chua là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Dụng cụ cần được rửa sạch và tráng nước sôi.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Ủ sữa trong ngăn đá tủ lạnh giúp sữa chua nhanh đông.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Sau khi ủ xong nên cất sữa chua vào ngăn mát tủ lạnh.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Thời gian ủ sữa chua thường khoảng bao lâu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "5 phút"
+              },
+              {
+                "id": "b",
+                "label": "6 đến 8 giờ"
+              },
+              {
+                "id": "c",
+                "label": "1 tuần"
+              },
+              {
+                "id": "d",
+                "label": "1 tháng"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Nếu ủ sữa ở nhiệt độ quá thấp thì kết quả thường thế nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sữa chua đông rất nhanh"
+              },
+              {
+                "id": "b",
+                "label": "Sữa lâu đông hoặc không đông"
+              },
+              {
+                "id": "c",
+                "label": "Sữa chuyển màu xanh"
+              },
+              {
+                "id": "d",
+                "label": "Sữa bốc cháy"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vi-khuan-lactic",
+      "title": "Vi khuẩn lactic và sự lên men",
+      "fromExercises": [
+        "bio-g6-b13-q02",
+        "bio-g6-b13-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Vi khuẩn lactic biến đổi đường trong sữa thành chất gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Rượu"
+              },
+              {
+                "id": "b",
+                "label": "Lactic acid"
+              },
+              {
+                "id": "c",
+                "label": "Muối ăn"
+              },
+              {
+                "id": "d",
+                "label": "Tinh bột"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về vi khuẩn lactic là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Vi khuẩn lactic có lợi cho tiêu hóa.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Vi khuẩn lactic là vi khuẩn gây bệnh nguy hiểm.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Vi khuẩn lactic có trong sữa chua và dưa muối.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Thực phẩm nào được làm nhờ vi khuẩn lactic?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sữa chua"
+              },
+              {
+                "id": "b",
+                "label": "Dưa cải muối"
+              },
+              {
+                "id": "c",
+                "label": "Bánh mì"
+              },
+              {
+                "id": "d",
+                "label": "Cà muối"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Quá trình vi khuẩn biến đổi đường thành lactic acid gọi là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Quang hợp"
+              },
+              {
+                "id": "b",
+                "label": "Lên men"
+              },
+              {
+                "id": "c",
+                "label": "Bay hơi"
+              },
+              {
+                "id": "d",
+                "label": "Đông đặc"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Ăn sữa chua có lợi gì cho cơ thể?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Bổ sung lợi khuẩn, hỗ trợ tiêu hóa"
+              },
+              {
+                "id": "b",
+                "label": "Gây đau bụng"
+              },
+              {
+                "id": "c",
+                "label": "Thay thế thuốc kháng sinh"
+              },
+              {
+                "id": "d",
+                "label": "Không có lợi ích gì"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Vì sao sữa chua ít bị hỏng hơn sữa tươi khi để trong cùng điều kiện?",
+          "difficulty": 3,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì môi trường chua ức chế nhiều vi khuẩn gây hỏng"
+              },
+              {
+                "id": "b",
+                "label": "Vì sữa chua không có vi khuẩn"
+              },
+              {
+                "id": "c",
+                "label": "Vì sữa chua lạnh hơn"
+              },
+              {
+                "id": "d",
+                "label": "Vì sữa chua có nhiều đường"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -226,12 +226,21 @@ export function formatAnswer(a: Answer): string {
 
 /** Turn a teacher question into a regular Exercise for the exercise screen. */
 export function questionToExercise(setId: string, q: TeacherQuestion): Exercise {
+  return buildExerciseFromQuestion(`set-${setId}-${q.id}`, setLessonId(setId), ['teacher-question'], q);
+}
+
+/**
+ * Expand a compact question (prompt + answer + optional hint/explanation) into a full Exercise:
+ * hints, solution steps and final solution are derived so every screen of the exercise works.
+ * Used by teacher sets and by the practice banks (src/content/practice).
+ */
+export function buildExerciseFromQuestion(id: string, lessonId: string, skillIds: string[], q: TeacherQuestion): Exercise {
   const answerText = formatAnswer(q.answer);
   const guide = q.explanation || q.hint || 'Vận dụng kiến thức đã học trong bài để trả lời.';
   return {
-    id: `set-${setId}-${q.id}`,
-    lessonId: setLessonId(setId),
-    skillIds: ['teacher-question'],
+    id,
+    lessonId,
+    skillIds,
     difficulty: q.difficulty ?? 1,
     prompt: q.prompt,
     knowledge: [],

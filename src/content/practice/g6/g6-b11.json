@@ -1,0 +1,466 @@
+{
+  "lessonId": "g6-b11",
+  "units": [
+    {
+      "id": "oxygen",
+      "title": "Tính chất và vai trò của oxygen",
+      "fromExercises": [
+        "g6-b11-tf-001",
+        "g6-b11-match-001",
+        "g6-b11-mcq-003"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ở điều kiện thường, oxygen tồn tại ở thể nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Rắn"
+              },
+              {
+                "id": "b",
+                "label": "Lỏng"
+              },
+              {
+                "id": "c",
+                "label": "Khí"
+              },
+              {
+                "id": "d",
+                "label": "Cả ba thể"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Đặc điểm nào sau đây là tính chất của khí oxygen?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Có màu xanh, mùi hắc"
+              },
+              {
+                "id": "b",
+                "label": "Không màu, không mùi, ít tan trong nước"
+              },
+              {
+                "id": "c",
+                "label": "Tan rất nhiều trong nước"
+              },
+              {
+                "id": "d",
+                "label": "Nặng hơn nước"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về vai trò của oxygen là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Oxygen cần cho sự hô hấp của người và động vật.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Oxygen duy trì sự cháy.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Oxygen tự bốc cháy trong không khí.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Những trường hợp nào cần dùng bình oxygen?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Thợ lặn làm việc lâu dưới nước"
+              },
+              {
+                "id": "b",
+                "label": "Bệnh nhân khó thở trong bệnh viện"
+              },
+              {
+                "id": "c",
+                "label": "Người leo lên đỉnh núi rất cao"
+              },
+              {
+                "id": "d",
+                "label": "Người đi dạo trong công viên"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Khi quạt mạnh vào bếp than, than cháy to hơn. Vì sao?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì gió làm nguội than"
+              },
+              {
+                "id": "b",
+                "label": "Vì cung cấp thêm oxygen cho sự cháy"
+              },
+              {
+                "id": "c",
+                "label": "Vì gió mang thêm nhiên liệu"
+              },
+              {
+                "id": "d",
+                "label": "Vì gió làm than nhẹ đi"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "khong-khi",
+      "title": "Thành phần của không khí",
+      "fromExercises": [
+        "g6-b11-mcq-001",
+        "g6-b11-mcq-002",
+        "g6-b11-ordering-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Khí nitrogen chiếm khoảng bao nhiêu phần trăm thể tích không khí?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "21%"
+              },
+              {
+                "id": "b",
+                "label": "78%"
+              },
+              {
+                "id": "c",
+                "label": "1%"
+              },
+              {
+                "id": "d",
+                "label": "50%"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ghép thành phần của không khí với tỉ lệ thể tích gần đúng.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Nitrogen",
+                "right": "Khoảng 78%"
+              },
+              {
+                "left": "Oxygen",
+                "right": "Khoảng 21%"
+              },
+              {
+                "left": "Carbon dioxide, hơi nước và các khí khác",
+                "right": "Khoảng 1%"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về không khí là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Không khí là hỗn hợp của nhiều chất khí.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Trong không khí có hơi nước.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Không khí chỉ gồm khí oxygen.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Hiện tượng nào chứng tỏ trong không khí có hơi nước?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nến cháy được trong không khí"
+              },
+              {
+                "id": "b",
+                "label": "Mặt ngoài cốc nước đá có giọt nước đọng lại"
+              },
+              {
+                "id": "c",
+                "label": "Lá cây xanh tốt"
+              },
+              {
+                "id": "d",
+                "label": "Có gió thổi"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Khí nào trong không khí cần cho cây xanh quang hợp?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nitrogen"
+              },
+              {
+                "id": "b",
+                "label": "Carbon dioxide"
+              },
+              {
+                "id": "c",
+                "label": "Khí hiếm"
+              },
+              {
+                "id": "d",
+                "label": "Hơi nước"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "o-nhiem",
+      "title": "Ô nhiễm không khí",
+      "fromExercises": [
+        "g6-b11-sort-001",
+        "g6-b11-mcq-004"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Nguồn nào sau đây gây ô nhiễm không khí?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cây xanh trong công viên"
+              },
+              {
+                "id": "b",
+                "label": "Khí thải từ xe máy, ô tô"
+              },
+              {
+                "id": "c",
+                "label": "Hồ nước sạch"
+              },
+              {
+                "id": "d",
+                "label": "Gió biển"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ô nhiễm không khí gây ra những hậu quả nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Gây bệnh về đường hô hấp"
+              },
+              {
+                "id": "b",
+                "label": "Gây mưa acid"
+              },
+              {
+                "id": "c",
+                "label": "Làm Trái Đất nóng lên"
+              },
+              {
+                "id": "d",
+                "label": "Làm không khí trong lành hơn"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về bảo vệ không khí là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Trồng cây xanh giúp điều hòa không khí.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Đốt rác sinh hoạt ngoài trời là cách xử lí rác tốt.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Đi xe đạp thay cho xe máy giúp giảm khí thải.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Dấu hiệu nào cho thấy không khí bị ô nhiễm?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Không khí có mùi khó chịu, bầu trời mờ khói bụi"
+              },
+              {
+                "id": "b",
+                "label": "Bầu trời trong xanh"
+              },
+              {
+                "id": "c",
+                "label": "Có nhiều cây xanh"
+              },
+              {
+                "id": "d",
+                "label": "Có gió mát"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Việc làm nào góp phần giảm ô nhiễm không khí trong gia đình?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đun bếp than trong phòng kín"
+              },
+              {
+                "id": "b",
+                "label": "Dùng bếp không khói và tắt thiết bị điện khi không dùng"
+              },
+              {
+                "id": "c",
+                "label": "Đốt vàng mã thường xuyên"
+              },
+              {
+                "id": "d",
+                "label": "Đổ rác ra đường"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Khí nào sinh ra khi đốt nhiên liệu là nguyên nhân chính làm Trái Đất nóng lên?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Oxygen"
+              },
+              {
+                "id": "b",
+                "label": "Carbon dioxide"
+              },
+              {
+                "id": "c",
+                "label": "Nitrogen"
+              },
+              {
+                "id": "d",
+                "label": "Khí hiếm"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

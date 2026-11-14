@@ -1,0 +1,323 @@
+{
+  "lessonId": "bio-g6-b23",
+  "units": [
+    {
+      "id": "vai-tro-dd",
+      "title": "Đa dạng sinh học và vai trò",
+      "fromExercises": [
+        "bio-g6-b23-q03",
+        "bio-g6-b23-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Đa dạng sinh học thể hiện ở điều gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chỉ ở số lượng cá thể"
+              },
+              {
+                "id": "b",
+                "label": "Sự phong phú về số loài và môi trường sống"
+              },
+              {
+                "id": "c",
+                "label": "Chỉ ở màu sắc sinh vật"
+              },
+              {
+                "id": "d",
+                "label": "Chỉ ở kích thước sinh vật"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Môi trường nào có đa dạng sinh học cao nhất?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sa mạc"
+              },
+              {
+                "id": "b",
+                "label": "Vùng cực"
+              },
+              {
+                "id": "c",
+                "label": "Rừng mưa nhiệt đới"
+              },
+              {
+                "id": "d",
+                "label": "Bãi cát ven biển"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về vai trò của đa dạng sinh học là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Đa dạng sinh học cung cấp lương thực, thuốc chữa bệnh cho con người.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Đa dạng sinh học giúp giữ cân bằng tự nhiên.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Mất đi một loài không ảnh hưởng gì đến các loài khác.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Đa dạng sinh học có vai trò gì đối với con người?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cung cấp thực phẩm"
+              },
+              {
+                "id": "b",
+                "label": "Cung cấp dược liệu"
+              },
+              {
+                "id": "c",
+                "label": "Phát triển du lịch sinh thái"
+              },
+              {
+                "id": "d",
+                "label": "Làm tăng thiên tai"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Vì sao sa mạc có đa dạng sinh học thấp?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì khí hậu khắc nghiệt, khô hạn, ít loài thích nghi được"
+              },
+              {
+                "id": "b",
+                "label": "Vì có quá nhiều nước"
+              },
+              {
+                "id": "c",
+                "label": "Vì có quá nhiều cây"
+              },
+              {
+                "id": "d",
+                "label": "Vì không có ánh sáng"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Việt Nam có đa dạng sinh học như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Rất thấp"
+              },
+              {
+                "id": "b",
+                "label": "Cao, có nhiều loài đặc hữu"
+              },
+              {
+                "id": "c",
+                "label": "Không có loài đặc hữu"
+              },
+              {
+                "id": "d",
+                "label": "Chỉ có ở biển"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bao-ve",
+      "title": "Nguyên nhân suy giảm và bảo vệ đa dạng sinh học",
+      "fromExercises": [
+        "bio-g6-b23-q01",
+        "bio-g6-b23-q02",
+        "bio-g6-b23-q04"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Hành động nào giúp bảo vệ đa dạng sinh học?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Săn bắt động vật hoang dã"
+              },
+              {
+                "id": "b",
+                "label": "Trồng cây gây rừng, bảo vệ rừng"
+              },
+              {
+                "id": "c",
+                "label": "Đốt rừng làm nương rẫy"
+              },
+              {
+                "id": "d",
+                "label": "Dùng thuốc trừ sâu bừa bãi"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về bảo vệ đa dạng sinh học là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Xây dựng vườn quốc gia, khu bảo tồn giúp bảo vệ các loài.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Mua bán sản phẩm làm từ ngà voi, sừng tê giác là hợp pháp.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Hạn chế dùng túi nilon góp phần bảo vệ sinh vật.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Vườn quốc gia Cúc Phương có vai trò gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Khu vui chơi giải trí"
+              },
+              {
+                "id": "b",
+                "label": "Bảo tồn các loài sinh vật và hệ sinh thái rừng"
+              },
+              {
+                "id": "c",
+                "label": "Khai thác gỗ"
+              },
+              {
+                "id": "d",
+                "label": "Xây dựng nhà máy"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Học sinh có thể làm gì để bảo vệ đa dạng sinh học?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Không bắt chim, không phá tổ, tuyên truyền bảo vệ động vật"
+              },
+              {
+                "id": "b",
+                "label": "Bẻ cành cây ở công viên"
+              },
+              {
+                "id": "c",
+                "label": "Mua chim hoang dã về nuôi"
+              },
+              {
+                "id": "d",
+                "label": "Xả rác xuống sông"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Loài đặc hữu là loài như thế nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Loài sống ở khắp thế giới"
+              },
+              {
+                "id": "b",
+                "label": "Loài chỉ có ở một vùng địa lí nhất định"
+              },
+              {
+                "id": "c",
+                "label": "Loài đã tuyệt chủng"
+              },
+              {
+                "id": "d",
+                "label": "Loài được nuôi trong nhà"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "lessonId": "phy-g6-b12",
+  "units": [
+    {
+      "id": "dong-the-nang",
+      "title": "Động năng và thế năng",
+      "fromExercises": [
+        "phy-g6-b12-mcq-001",
+        "phy-g6-b12-mcq-002",
+        "phy-g6-b12-mcq-004",
+        "phy-g6-b12-multi-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Xác định các nhận định sau về động năng và thế năng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Vật đang chuyển động có động năng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Vật ở trên cao so với mặt đất có thế năng hấp dẫn.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Lò xo bị nén có thế năng đàn hồi.",
+                "correct": true
+              },
+              {
+                "id": "s4",
+                "text": "Quả bóng nằm yên trên sàn nhà có động năng.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Vật nào sau đây có thế năng đàn hồi?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Quả táo trên cành cây"
+              },
+              {
+                "id": "b",
+                "label": "Dây cao su của súng cao su đang bị kéo căng"
+              },
+              {
+                "id": "c",
+                "label": "Chiếc xe đang chạy trên đường bằng"
+              },
+              {
+                "id": "d",
+                "label": "Bóng đèn đang sáng"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Hai xe giống hệt nhau chạy trên đường. Xe nào có động năng lớn hơn?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Xe chạy chậm hơn"
+              },
+              {
+                "id": "b",
+                "label": "Xe chạy nhanh hơn"
+              },
+              {
+                "id": "c",
+                "label": "Hai xe như nhau"
+              },
+              {
+                "id": "d",
+                "label": "Xe đứng yên"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Phân loại các vật sau.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Có động năng (chuyển động trên mặt đất)"
+              },
+              {
+                "id": "b2",
+                "label": "Có thế năng hấp dẫn (đứng yên trên cao)"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Ô tô đang chạy trên đường",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Quả bóng lăn trên sân",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Quả dừa nằm yên trên ngọn cây",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Chậu hoa đặt trên ban công",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dang-khac",
+      "title": "Các dạng năng lượng khác",
+      "fromExercises": [
+        "phy-g6-b12-mcq-003",
+        "phy-g6-b12-match-005"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép thiết bị với dạng năng lượng có ích mà nó chủ yếu tạo ra.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Bóng đèn",
+                "right": "Năng lượng ánh sáng"
+              },
+              {
+                "left": "Loa",
+                "right": "Năng lượng âm thanh"
+              },
+              {
+                "left": "Bàn là",
+                "right": "Năng lượng nhiệt"
+              },
+              {
+                "left": "Quạt điện",
+                "right": "Động năng của cánh quạt"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Dạng năng lượng nào giúp cây xanh quang hợp?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Năng lượng âm thanh"
+              },
+              {
+                "id": "b",
+                "label": "Năng lượng ánh sáng"
+              },
+              {
+                "id": "c",
+                "label": "Thế năng đàn hồi"
+              },
+              {
+                "id": "d",
+                "label": "Động năng"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Những vật nào có năng lượng hóa học?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Than đá"
+              },
+              {
+                "id": "b",
+                "label": "Bánh mì"
+              },
+              {
+                "id": "c",
+                "label": "Pin"
+              },
+              {
+                "id": "d",
+                "label": "Viên đá nằm yên trên mặt đất"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về các dạng năng lượng là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Điện năng làm quạt quay, đèn sáng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Âm thanh cũng là một dạng năng lượng.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Năng lượng nhiệt chỉ có ở vật rất nóng.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Bếp điện chuyển điện năng chủ yếu thành dạng năng lượng nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Năng lượng âm thanh"
+              },
+              {
+                "id": "b",
+                "label": "Năng lượng nhiệt"
+              },
+              {
+                "id": "c",
+                "label": "Năng lượng ánh sáng"
+              },
+              {
+                "id": "d",
+                "label": "Thế năng"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Tia chớp trong cơn giông phát ra những dạng năng lượng nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chỉ năng lượng ánh sáng"
+              },
+              {
+                "id": "b",
+                "label": "Ánh sáng, âm thanh (tiếng sấm) và nhiệt"
+              },
+              {
+                "id": "c",
+                "label": "Chỉ năng lượng âm thanh"
+              },
+              {
+                "id": "d",
+                "label": "Chỉ thế năng"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "lessonId": "bio-g6-b05",
+  "units": [
+    {
+      "id": "phan-chia",
+      "title": "Tính số tế bào sau khi phân chia",
+      "fromExercises": [
+        "bio-g6-b05-q02",
+        "bio-g6-b05-q03"
+      ],
+      "generator": "cell-division",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Từ 1 tế bào, sau 4 lần phân chia liên tiếp tạo ra bao nhiêu tế bào con?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 16,
+            "unit": "tế bào"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Có 2 tế bào, mỗi tế bào phân chia 2 lần liên tiếp. Tổng số tế bào con tạo ra là bao nhiêu?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 8,
+            "unit": "tế bào"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Một tế bào phân chia một lần tạo ra mấy tế bào con?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "1"
+              },
+              {
+                "id": "b",
+                "label": "2"
+              },
+              {
+                "id": "c",
+                "label": "3"
+              },
+              {
+                "id": "d",
+                "label": "4"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lon-len",
+      "title": "Sự lớn lên và phân chia của tế bào",
+      "fromExercises": [
+        "bio-g6-b05-q01",
+        "bio-g6-b05-q04",
+        "bio-g6-b05-q05",
+        "bio-g6-b05-q06"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sự lớn lên và phân chia của tế bào có ý nghĩa gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Giúp cơ thể lớn lên và thay thế các tế bào già, bị tổn thương"
+              },
+              {
+                "id": "b",
+                "label": "Làm cơ thể nhỏ lại"
+              },
+              {
+                "id": "c",
+                "label": "Không có ý nghĩa gì"
+              },
+              {
+                "id": "d",
+                "label": "Chỉ làm cơ thể đổi màu"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về sự lớn lên của tế bào là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Tế bào lớn lên đến một kích thước nhất định thì có thể phân chia.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Tế bào có thể lớn lên mãi không giới hạn.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Vết thương ngoài da lành lại được nhờ tế bào phân chia.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Khi tế bào phân chia, thành phần nào phân chia trước?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Màng tế bào"
+              },
+              {
+                "id": "b",
+                "label": "Nhân tế bào"
+              },
+              {
+                "id": "c",
+                "label": "Tế bào chất"
+              },
+              {
+                "id": "d",
+                "label": "Thành tế bào"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vì sao cây non lớn lên được?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì cây hút nhiều nước"
+              },
+              {
+                "id": "b",
+                "label": "Vì các tế bào lớn lên và phân chia"
+              },
+              {
+                "id": "c",
+                "label": "Vì lá cây to ra"
+              },
+              {
+                "id": "d",
+                "label": "Vì cây có màu xanh"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

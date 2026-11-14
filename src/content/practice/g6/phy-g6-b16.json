@@ -1,0 +1,283 @@
+{
+  "lessonId": "phy-g6-b16",
+  "units": [
+    {
+      "id": "hanh-dong",
+      "title": "Hành động tiết kiệm năng lượng",
+      "fromExercises": [
+        "phy-g6-b16-mcq-001",
+        "phy-g6-b16-mcq-002",
+        "phy-g6-b16-multi-004"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các hành động sau.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Tiết kiệm năng lượng"
+              },
+              {
+                "id": "b2",
+                "label": "Lãng phí năng lượng"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Tắt đèn khi ra khỏi phòng",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Tận dụng ánh sáng tự nhiên",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Đi xe đạp đến trường",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Mở cửa tủ lạnh quá lâu",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Bật ti vi khi không ai xem",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Để máy tính chạy suốt đêm",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Vì sao không nên đặt tủ lạnh sát tường hoặc gần bếp?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì tủ lạnh sẽ đẹp hơn"
+              },
+              {
+                "id": "b",
+                "label": "Vì tủ khó tỏa nhiệt nên tốn nhiều điện hơn"
+              },
+              {
+                "id": "c",
+                "label": "Vì tủ lạnh sẽ lạnh hơn"
+              },
+              {
+                "id": "d",
+                "label": "Vì để tiết kiệm diện tích"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về tiết kiệm điện là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Rút phích cắm thiết bị khi không dùng giúp tiết kiệm điện.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Đóng kín cửa khi bật điều hòa giúp tiết kiệm điện.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Bật đèn sáng suốt cả ngày giúp đèn bền hơn.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Cách đun nước nào tiết kiệm năng lượng nhất?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đun nhiều nước hơn mức cần dùng"
+              },
+              {
+                "id": "b",
+                "label": "Đun vừa đủ lượng nước cần dùng và đậy nắp"
+              },
+              {
+                "id": "c",
+                "label": "Mở nắp khi đun"
+              },
+              {
+                "id": "d",
+                "label": "Đun nhỏ lửa thật lâu"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Đi quãng đường ngắn, cách nào tiết kiệm năng lượng và bảo vệ môi trường nhất?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đi ô tô riêng"
+              },
+              {
+                "id": "b",
+                "label": "Đi xe máy"
+              },
+              {
+                "id": "c",
+                "label": "Đi xe đạp hoặc đi bộ"
+              },
+              {
+                "id": "d",
+                "label": "Đi taxi"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nhan-tinh",
+      "title": "Nhãn năng lượng và lượng điện tiết kiệm",
+      "fromExercises": [
+        "phy-g6-b16-mcq-003",
+        "phy-g6-b16-tf-005",
+        "phy-g6-b16-num-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "So với tủ lạnh cùng loại có nhãn năng lượng 2 sao, tủ lạnh có nhãn 5 sao thì sao?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tốn điện hơn"
+              },
+              {
+                "id": "b",
+                "label": "Tiết kiệm điện hơn"
+              },
+              {
+                "id": "c",
+                "label": "Tốn điện như nhau"
+              },
+              {
+                "id": "d",
+                "label": "Không so sánh được"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Bóng đèn sợi đốt có công suất 60 W, bóng LED cùng độ sáng chỉ có công suất 8 W. Thay 1 bóng sợi đốt bằng 1 bóng LED thì công suất giảm được bao nhiêu W?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 52,
+            "unit": "W",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Một gia đình thay 4 bóng đèn 60 W bằng 4 bóng LED 10 W. Tổng công suất chiếu sáng giảm bao nhiêu W?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 200,
+            "unit": "W",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về nhãn năng lượng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Nhãn năng lượng giúp người mua chọn thiết bị tiết kiệm điện.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Số sao trên nhãn càng nhiều thì thiết bị càng tốn điện.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Khi mua máy điều hòa, nên chọn loại nào để tiết kiệm điện?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Loại rẻ nhất, không có nhãn năng lượng"
+              },
+              {
+                "id": "b",
+                "label": "Loại có nhãn năng lượng nhiều sao, công suất phù hợp với phòng"
+              },
+              {
+                "id": "c",
+                "label": "Loại có công suất lớn nhất"
+              },
+              {
+                "id": "d",
+                "label": "Loại có màu đẹp nhất"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

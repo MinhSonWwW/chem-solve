@@ -1,0 +1,296 @@
+{
+  "lessonId": "phy-g6-b15",
+  "units": [
+    {
+      "id": "tai-tao",
+      "title": "Năng lượng tái tạo và không tái tạo",
+      "fromExercises": [
+        "phy-g6-b15-mcq-001",
+        "phy-g6-b15-mcq-002",
+        "phy-g6-b15-sort-004"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Than đá, dầu mỏ, khí tự nhiên được gọi chung là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Năng lượng tái tạo"
+              },
+              {
+                "id": "b",
+                "label": "Nhiên liệu hóa thạch"
+              },
+              {
+                "id": "c",
+                "label": "Năng lượng gió"
+              },
+              {
+                "id": "d",
+                "label": "Năng lượng sinh khối"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Vì sao năng lượng mặt trời được gọi là năng lượng tái tạo?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì giá rất đắt"
+              },
+              {
+                "id": "b",
+                "label": "Vì được cung cấp liên tục, gần như không cạn kiệt"
+              },
+              {
+                "id": "c",
+                "label": "Vì chỉ có vào ban đêm"
+              },
+              {
+                "id": "d",
+                "label": "Vì gây ô nhiễm"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về các nguồn năng lượng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Năng lượng gió là năng lượng tái tạo.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Dầu mỏ sẽ cạn kiệt nếu khai thác mãi.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Khí tự nhiên là năng lượng tái tạo.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Ghép nhà máy điện với nguồn năng lượng nó sử dụng.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Nhà máy thủy điện",
+                "right": "Năng lượng của dòng nước"
+              },
+              {
+                "left": "Nhà máy nhiệt điện than",
+                "right": "Than đá"
+              },
+              {
+                "left": "Trang trại điện gió",
+                "right": "Năng lượng gió"
+              },
+              {
+                "left": "Cánh đồng pin mặt trời",
+                "right": "Năng lượng ánh sáng Mặt Trời"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Củi, rơm rạ, phân chuồng dùng làm chất đốt hoặc tạo khí biogas thuộc nguồn năng lượng nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Năng lượng hóa thạch"
+              },
+              {
+                "id": "b",
+                "label": "Năng lượng sinh khối"
+              },
+              {
+                "id": "c",
+                "label": "Năng lượng hạt nhân"
+              },
+              {
+                "id": "d",
+                "label": "Năng lượng gió"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "uu-diem",
+      "title": "Ưu điểm và sử dụng năng lượng tái tạo",
+      "fromExercises": [
+        "phy-g6-b15-mcq-003",
+        "phy-g6-b15-multi-005",
+        "phy-g6-b15-tf-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ưu điểm của năng lượng tái tạo là gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ít gây ô nhiễm môi trường"
+              },
+              {
+                "id": "b",
+                "label": "Nguồn cung cấp gần như vô tận"
+              },
+              {
+                "id": "c",
+                "label": "Hoạt động ổn định trong mọi thời tiết"
+              },
+              {
+                "id": "d",
+                "label": "Giảm phụ thuộc vào nhiên liệu hóa thạch"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Hạn chế của điện mặt trời là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Gây ô nhiễm không khí khi hoạt động"
+              },
+              {
+                "id": "b",
+                "label": "Phụ thuộc vào thời tiết và ánh sáng ban ngày"
+              },
+              {
+                "id": "c",
+                "label": "Làm cạn kiệt tài nguyên"
+              },
+              {
+                "id": "d",
+                "label": "Thải khí carbon dioxide khi hoạt động"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Vùng nào ở Việt Nam thích hợp xây nhiều trạm điện gió?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Trong hang động"
+              },
+              {
+                "id": "b",
+                "label": "Vùng ven biển có gió mạnh và đều"
+              },
+              {
+                "id": "c",
+                "label": "Giữa thành phố đông dân"
+              },
+              {
+                "id": "d",
+                "label": "Thung lũng kín gió"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về sử dụng năng lượng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Bình nước nóng năng lượng mặt trời giúp tiết kiệm điện.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Đốt nhiên liệu hóa thạch thải ra khí carbon dioxide.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Năng lượng tái tạo hoàn toàn không có hạn chế nào.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Hầm biogas ở nông thôn biến chất thải chăn nuôi thành gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Than đá"
+              },
+              {
+                "id": "b",
+                "label": "Khí đốt dùng để đun nấu"
+              },
+              {
+                "id": "c",
+                "label": "Xăng"
+              },
+              {
+                "id": "d",
+                "label": "Điện gió"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

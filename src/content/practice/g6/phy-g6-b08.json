@@ -1,0 +1,214 @@
+{
+  "lessonId": "phy-g6-b08",
+  "units": [
+    {
+      "id": "trong-luc",
+      "title": "Trọng lực và lực hấp dẫn",
+      "fromExercises": [
+        "phy-g6-b08-mcq-001",
+        "phy-g6-b08-mcq-002",
+        "phy-g6-b08-mcq-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Lực hấp dẫn là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Lực đẩy giữa hai vật"
+              },
+              {
+                "id": "b",
+                "label": "Lực hút giữa các vật có khối lượng"
+              },
+              {
+                "id": "c",
+                "label": "Lực chỉ có giữa nam châm và sắt"
+              },
+              {
+                "id": "d",
+                "label": "Lực của gió"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về trọng lực là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Trọng lực là lực hút của Trái Đất tác dụng lên vật.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Độ lớn của trọng lực gọi là trọng lượng.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Khối lượng và trọng lượng có cùng đơn vị đo.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Thả viên phấn, viên phấn rơi xuống đất. Nguyên nhân là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Do không khí đẩy xuống"
+              },
+              {
+                "id": "b",
+                "label": "Do lực hút của Trái Đất"
+              },
+              {
+                "id": "c",
+                "label": "Do viên phấn quá nhẹ"
+              },
+              {
+                "id": "d",
+                "label": "Do tay ném xuống"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Thợ xây dùng dây dọi (quả nặng treo vào sợi dây) để làm gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đo khối lượng gạch"
+              },
+              {
+                "id": "b",
+                "label": "Xác định phương thẳng đứng"
+              },
+              {
+                "id": "c",
+                "label": "Đo chiều dài tường"
+              },
+              {
+                "id": "d",
+                "label": "Đo nhiệt độ"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Đơn vị đo trọng lượng là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "kg"
+              },
+              {
+                "id": "b",
+                "label": "g"
+              },
+              {
+                "id": "c",
+                "label": "N"
+              },
+              {
+                "id": "d",
+                "label": "m"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trong-luong",
+      "title": "Tính trọng lượng P = 10m",
+      "fromExercises": [
+        "phy-g6-b08-calc-003",
+        "phy-g6-b08-calc-004",
+        "phy-g6-b08-calc-005"
+      ],
+      "generator": "weight",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Một học sinh có khối lượng 40 kg. Trọng lượng của học sinh đó là bao nhiêu N?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 400,
+            "unit": "N",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Một quả cân có trọng lượng 2 N. Khối lượng của quả cân là bao nhiêu gam?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 200,
+            "unit": "g",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Vật nào sau đây có trọng lượng lớn nhất?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Quả cân 500 g"
+              },
+              {
+                "id": "b",
+                "label": "Túi đường 1 kg"
+              },
+              {
+                "id": "c",
+                "label": "Bao gạo 5 kg"
+              },
+              {
+                "id": "d",
+                "label": "Hộp bút 200 g"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    }
+  ]
+}

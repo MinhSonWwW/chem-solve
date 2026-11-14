@@ -1,0 +1,346 @@
+{
+  "lessonId": "bio-g6-b03",
+  "units": [
+    {
+      "id": "te-bao",
+      "title": "Tế bào là đơn vị của sự sống",
+      "fromExercises": [
+        "bio-g6-b03-q01",
+        "bio-g6-b03-q04",
+        "bio-g6-b03-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Vì sao nói tế bào là đơn vị cơ bản của sự sống?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì tế bào rất nhỏ"
+              },
+              {
+                "id": "b",
+                "label": "Vì tế bào là đơn vị cấu trúc và thực hiện các chức năng sống của cơ thể"
+              },
+              {
+                "id": "c",
+                "label": "Vì tế bào có màu xanh"
+              },
+              {
+                "id": "d",
+                "label": "Vì tế bào không thay đổi"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về tế bào là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Cơ thể người được cấu tạo từ rất nhiều tế bào.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Hòn đá được cấu tạo từ tế bào.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Tế bào có thể lớn lên và sinh sản.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Những hoạt động sống nào diễn ra ở tế bào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Trao đổi chất"
+              },
+              {
+                "id": "b",
+                "label": "Lớn lên"
+              },
+              {
+                "id": "c",
+                "label": "Sinh sản"
+              },
+              {
+                "id": "d",
+                "label": "Biến thành đá"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Sinh vật nào sau đây chỉ gồm một tế bào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Con mèo"
+              },
+              {
+                "id": "b",
+                "label": "Cây lúa"
+              },
+              {
+                "id": "c",
+                "label": "Vi khuẩn"
+              },
+              {
+                "id": "d",
+                "label": "Nấm rơm"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Kích thước tế bào thường được đo bằng đơn vị nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Mét"
+              },
+              {
+                "id": "b",
+                "label": "Kilômét"
+              },
+              {
+                "id": "c",
+                "label": "Micromet (µm)"
+              },
+              {
+                "id": "d",
+                "label": "Đềximét"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hinh-dang-kich-thuoc",
+      "title": "Hình dạng và kích thước tế bào",
+      "fromExercises": [
+        "bio-g6-b03-q02",
+        "bio-g6-b03-q03"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các tế bào sau theo cách quan sát.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Nhìn được bằng mắt thường"
+              },
+              {
+                "id": "b2",
+                "label": "Phải dùng kính hiển vi"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Tế bào trứng cá",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Tế bào tép bưởi",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Tế bào trứng gà",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Tế bào vi khuẩn",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Tế bào hồng cầu",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Tế bào biểu bì vảy hành",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Tế bào thần kinh có hình dạng như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hình đĩa"
+              },
+              {
+                "id": "b",
+                "label": "Hình cầu"
+              },
+              {
+                "id": "c",
+                "label": "Hình sao, có nhiều nhánh dài"
+              },
+              {
+                "id": "d",
+                "label": "Hình chữ nhật"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Tế bào hồng cầu ở người có hình dạng gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hình sợi"
+              },
+              {
+                "id": "b",
+                "label": "Hình đĩa lõm hai mặt"
+              },
+              {
+                "id": "c",
+                "label": "Hình sao"
+              },
+              {
+                "id": "d",
+                "label": "Hình que"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về hình dạng tế bào là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Các loại tế bào có hình dạng khác nhau.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Hình dạng của tế bào phù hợp với chức năng của nó.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Mọi tế bào đều có hình cầu.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Tế bào nào sau đây có thể dài nhất trong cơ thể người?",
+          "difficulty": 3,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tế bào hồng cầu"
+              },
+              {
+                "id": "b",
+                "label": "Tế bào thần kinh"
+              },
+              {
+                "id": "c",
+                "label": "Tế bào da"
+              },
+              {
+                "id": "d",
+                "label": "Tế bào trứng"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Tế bào cơ có hình dạng nào phù hợp với chức năng co, duỗi?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hình cầu"
+              },
+              {
+                "id": "b",
+                "label": "Hình sợi dài"
+              },
+              {
+                "id": "c",
+                "label": "Hình đĩa"
+              },
+              {
+                "id": "d",
+                "label": "Hình sao"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

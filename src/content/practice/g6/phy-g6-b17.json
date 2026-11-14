@@ -1,0 +1,300 @@
+{
+  "lessonId": "phy-g6-b17",
+  "units": [
+    {
+      "id": "ngay-dem",
+      "title": "Chuyển động nhìn thấy của Mặt Trời",
+      "fromExercises": [
+        "phy-g6-b17-mcq-001",
+        "phy-g6-b17-tf-002",
+        "phy-g6-b17-num-004",
+        "phy-g6-b17-multi-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Hằng ngày ta thấy Mặt Trời mọc ở hướng nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hướng Tây"
+              },
+              {
+                "id": "b",
+                "label": "Hướng Đông"
+              },
+              {
+                "id": "c",
+                "label": "Hướng Nam"
+              },
+              {
+                "id": "d",
+                "label": "Hướng Bắc"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Vì sao có hiện tượng ngày và đêm?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì Mặt Trời quay quanh Trái Đất"
+              },
+              {
+                "id": "b",
+                "label": "Vì Trái Đất tự quay quanh trục nên nửa được chiếu sáng là ngày, nửa kia là đêm"
+              },
+              {
+                "id": "c",
+                "label": "Vì Mặt Trăng che Mặt Trời"
+              },
+              {
+                "id": "d",
+                "label": "Vì Mặt Trời tắt vào ban đêm"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Chuyển động mọc và lặn của Mặt Trời mà ta nhìn thấy thực chất là do đâu?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Mặt Trời quay quanh Trái Đất"
+              },
+              {
+                "id": "b",
+                "label": "Trái Đất tự quay quanh trục từ Tây sang Đông"
+              },
+              {
+                "id": "c",
+                "label": "Mặt Trời tự quay quanh trục"
+              },
+              {
+                "id": "d",
+                "label": "Mặt Trăng quay quanh Trái Đất"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Sắp xếp vị trí của Mặt Trời trên bầu trời trong một ngày.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Mọc ở phía Đông",
+              "Lên cao dần",
+              "Lên cao nhất vào buổi trưa",
+              "Lặn ở phía Tây"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "thien-the",
+      "title": "Thiên thể",
+      "fromExercises": [
+        "phy-g6-b17-mcq-003",
+        "phy-g6-b17-match-005"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Thiên thể nào là vệ tinh tự nhiên của Trái Đất?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Mặt Trời"
+              },
+              {
+                "id": "b",
+                "label": "Mặt Trăng"
+              },
+              {
+                "id": "c",
+                "label": "Sao Hỏa"
+              },
+              {
+                "id": "d",
+                "label": "Sao chổi"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Phân loại các thiên thể sau.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Tự phát ra ánh sáng"
+              },
+              {
+                "id": "b2",
+                "label": "Không tự phát sáng"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Mặt Trời",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Sao Bắc Cực",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Mặt Trăng",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Sao Kim",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Trái Đất",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về thiên thể là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Mặt Trời là một ngôi sao.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Sao Kim (sao Mai, sao Hôm) là một ngôi sao tự phát sáng.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Trái Đất là một hành tinh.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Hành tinh là thiên thể như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tự phát sáng và rất nóng"
+              },
+              {
+                "id": "b",
+                "label": "Chuyển động quanh một ngôi sao, không tự phát sáng"
+              },
+              {
+                "id": "c",
+                "label": "Chuyển động quanh một hành tinh khác"
+              },
+              {
+                "id": "d",
+                "label": "Có đuôi dài sáng rực"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Thiên thể nào khi đến gần Mặt Trời có đuôi sáng dài?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hành tinh"
+              },
+              {
+                "id": "b",
+                "label": "Vệ tinh"
+              },
+              {
+                "id": "c",
+                "label": "Sao chổi"
+              },
+              {
+                "id": "d",
+                "label": "Ngôi sao"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Thiên thể nào ở gần Trái Đất nhất?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Mặt Trời"
+              },
+              {
+                "id": "b",
+                "label": "Mặt Trăng"
+              },
+              {
+                "id": "c",
+                "label": "Sao Kim"
+              },
+              {
+                "id": "d",
+                "label": "Sao Hỏa"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

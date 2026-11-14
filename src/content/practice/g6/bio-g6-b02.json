@@ -1,0 +1,224 @@
+{
+  "lessonId": "bio-g6-b02",
+  "units": [
+    {
+      "id": "cau-tao-khv",
+      "title": "Cấu tạo và độ phóng đại kính hiển vi",
+      "fromExercises": [
+        "bio-g6-b02-q01",
+        "bio-g6-b02-q02",
+        "bio-g6-b02-q03"
+      ],
+      "generator": "microscope-magnification",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Mắt người quan sát nhìn vào bộ phận nào của kính hiển vi?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vật kính"
+              },
+              {
+                "id": "b",
+                "label": "Thị kính"
+              },
+              {
+                "id": "c",
+                "label": "Bàn kính"
+              },
+              {
+                "id": "d",
+                "label": "Chân kính"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ghép bộ phận của kính hiển vi với chức năng của nó.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Thị kính",
+                "right": "Nơi mắt nhìn vào"
+              },
+              {
+                "left": "Vật kính",
+                "right": "Ở gần mẫu vật, phóng to ảnh"
+              },
+              {
+                "left": "Ốc to và ốc nhỏ",
+                "right": "Điều chỉnh để thấy ảnh rõ nét"
+              },
+              {
+                "left": "Bàn kính",
+                "right": "Nơi đặt tiêu bản"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Kính hiển vi có thị kính 10x và vật kính 40x. Độ phóng đại của kính là bao nhiêu lần?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 400,
+            "unit": "lần"
+          }
+        }
+      ]
+    },
+    {
+      "id": "su-dung-khv",
+      "title": "Cách sử dụng kính hiển vi",
+      "fromExercises": [
+        "bio-g6-b02-q04",
+        "bio-g6-b02-q05",
+        "bio-g6-b02-q06"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Khi bắt đầu quan sát, nên dùng vật kính có độ phóng đại như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nhỏ nhất"
+              },
+              {
+                "id": "b",
+                "label": "Lớn nhất"
+              },
+              {
+                "id": "c",
+                "label": "Bất kì"
+              },
+              {
+                "id": "d",
+                "label": "Không dùng vật kính"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ốc nhỏ (ốc vi cấp) của kính hiển vi dùng để làm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Di chuyển kính"
+              },
+              {
+                "id": "b",
+                "label": "Điều chỉnh để ảnh rõ nét hơn"
+              },
+              {
+                "id": "c",
+                "label": "Bật đèn"
+              },
+              {
+                "id": "d",
+                "label": "Thay thị kính"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về sử dụng kính hiển vi là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Khi di chuyển kính, một tay cầm thân kính, một tay đỡ chân kính.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Có thể dùng tay để lau vật kính.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Tiêu bản đặt trên bàn kính, mẫu vật nằm ở giữa lỗ bàn kính.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Kính hiển vi quang học có thể phóng to ảnh của vật khoảng bao nhiêu lần?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "2 đến 5 lần"
+              },
+              {
+                "id": "b",
+                "label": "40 đến 3000 lần"
+              },
+              {
+                "id": "c",
+                "label": "Hàng triệu lần"
+              },
+              {
+                "id": "d",
+                "label": "Không phóng to được"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Muốn quan sát tế bào biểu bì vảy hành, nên dùng dụng cụ nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Kính lúp"
+              },
+              {
+                "id": "b",
+                "label": "Kính hiển vi quang học"
+              },
+              {
+                "id": "c",
+                "label": "Mắt thường"
+              },
+              {
+                "id": "d",
+                "label": "Ống nhòm"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

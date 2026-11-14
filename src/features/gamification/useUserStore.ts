@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { buildReport, queueReport } from '@/features/classroom/outbox';
+import { decidePracticeHeart, loadPracticeHeartLog, savePracticeHeartLog } from '@/engine/progress/practiceHearts';
 import { sound } from '@/lib/audio';
 import { GAMIFICATION } from '@/config/gamification';
 import { sessionReducer, createInitialSession } from '@/engine/session/sessionReducer';
@@ -76,6 +77,8 @@ interface UserState {
     accuracy: number;
     perfectRun: boolean;
     earnedGems: number;
+    /** Practice only: whether this round earned a heart (≥ 75 % correct, once per unit per day). */
+    heartAwarded: boolean;
   } | null>;
 }
 
@@ -451,6 +454,7 @@ export const useUserStore = create<UserState>((set, get) => ({
     }
 
     const totalXp = sessionState.totalXpEarned + sessionBonus;
+    let heartAwarded = false;
 
     // Gem reward: 10 to 60 gems depending on accuracy
     const earnedGems = GAMIFICATION.gems.calcReward(accuracy);
@@ -477,11 +481,22 @@ export const useUserStore = create<UserState>((set, get) => ({
       progress.xp = get().xp;
       progress.gems = nextGems;
 
-      // When finishing a full practice session, award +1 heart and track practice completion isolated from curriculum
+      // Practice round: +1 heart if done well, once per unit per day; track practice completion apart from the curriculum
       if (sessionState.isPractice) {
-        const nextHearts = Math.min(GAMIFICATION.hearts.max, get().hearts + 1);
-        set({ hearts: nextHearts });
-        progress.hearts = nextHearts;
+        const decision = decidePracticeHeart({
+          unitKey: `${sessionInfo.lessonId.replace(':practice', '')}:${sessionInfo.nodeId}`,
+          accuracy,
+          hearts: get().hearts,
+          maxHearts: GAMIFICATION.hearts.max,
+          log: loadPracticeHeartLog(),
+          now: Date.now(),
+        });
+        if (decision.award) {
+          heartAwarded = true;
+          savePracticeHeartLog(decision.log);
+          set({ hearts: get().hearts + 1 });
+        }
+        progress.hearts = get().hearts;
 
         const cleanLessonId = sessionInfo.lessonId.replace(':practice', '');
         progress.practiceCompletedLessons = progress.practiceCompletedLessons ?? {};
@@ -555,6 +570,6 @@ export const useUserStore = create<UserState>((set, get) => ({
     // Clear session from store
     set({ sessionState: null, sessionInfo: null, lastVerdict: null });
 
-    return { totalXp, accuracy, perfectRun, earnedGems };
+    return { totalXp, accuracy, perfectRun, earnedGems, heartAwarded };
   },
 }));

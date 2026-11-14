@@ -1,0 +1,373 @@
+{
+  "lessonId": "bio-g6-b21",
+  "units": [
+    {
+      "id": "khong-xuong-song",
+      "title": "Động vật không xương sống",
+      "fromExercises": [
+        "bio-g6-b21-q01",
+        "bio-g6-b21-q03"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Con vật nào sau đây là động vật không xương sống?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cá chép"
+              },
+              {
+                "id": "b",
+                "label": "Ếch"
+              },
+              {
+                "id": "c",
+                "label": "Giun đất"
+              },
+              {
+                "id": "d",
+                "label": "Chim sẻ"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ghép đại diện với ngành động vật của nó.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Sứa",
+                "right": "Ruột khoang"
+              },
+              {
+                "left": "Giun đất",
+                "right": "Giun"
+              },
+              {
+                "left": "Ốc sên",
+                "right": "Thân mềm"
+              },
+              {
+                "left": "Châu chấu",
+                "right": "Chân khớp"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về động vật không xương sống là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Mực và ốc thuộc ngành Thân mềm.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Tôm, cua, nhện thuộc ngành Chân khớp.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Giun đất có xương sống.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Sứa và san hô thuộc ngành nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Giun"
+              },
+              {
+                "id": "b",
+                "label": "Ruột khoang"
+              },
+              {
+                "id": "c",
+                "label": "Thân mềm"
+              },
+              {
+                "id": "d",
+                "label": "Chân khớp"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Động vật nào có vỏ cứng bằng đá vôi bảo vệ cơ thể?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Giun đất"
+              },
+              {
+                "id": "b",
+                "label": "Sứa"
+              },
+              {
+                "id": "c",
+                "label": "Ốc sên"
+              },
+              {
+                "id": "d",
+                "label": "Châu chấu"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Giun đũa kí sinh ở đâu trong cơ thể người?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Phổi"
+              },
+              {
+                "id": "b",
+                "label": "Ruột non"
+              },
+              {
+                "id": "c",
+                "label": "Tim"
+              },
+              {
+                "id": "d",
+                "label": "Da"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "co-xuong-song",
+      "title": "Động vật có xương sống",
+      "fromExercises": [
+        "bio-g6-b21-q02",
+        "bio-g6-b21-q04",
+        "bio-g6-b21-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Động vật có xương sống có đặc điểm chung nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Không có xương"
+              },
+              {
+                "id": "b",
+                "label": "Có bộ xương trong với cột sống"
+              },
+              {
+                "id": "c",
+                "label": "Có vỏ cứng bên ngoài"
+              },
+              {
+                "id": "d",
+                "label": "Có nhiều chân khớp"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Phân loại các con vật sau vào lớp động vật có xương sống.",
+          "difficulty": 3,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Cá"
+              },
+              {
+                "id": "b2",
+                "label": "Lưỡng cư"
+              },
+              {
+                "id": "b3",
+                "label": "Bò sát"
+              },
+              {
+                "id": "b4",
+                "label": "Chim"
+              },
+              {
+                "id": "b5",
+                "label": "Thú"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Cá chép",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Cá mập",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Ếch",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Cóc",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Thằn lằn",
+                "bucketId": "b3"
+              },
+              {
+                "id": "i6",
+                "label": "Rắn",
+                "bucketId": "b3"
+              },
+              {
+                "id": "i7",
+                "label": "Chim sẻ",
+                "bucketId": "b4"
+              },
+              {
+                "id": "i8",
+                "label": "Gà",
+                "bucketId": "b4"
+              },
+              {
+                "id": "i9",
+                "label": "Mèo",
+                "bucketId": "b5"
+              },
+              {
+                "id": "i10",
+                "label": "Cá voi",
+                "bucketId": "b5"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về các lớp động vật có xương sống là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Cá voi thuộc lớp Thú.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Ếch là động vật lưỡng cư.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Dơi thuộc lớp Chim vì biết bay.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Lớp động vật nào nuôi con bằng sữa mẹ?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chim"
+              },
+              {
+                "id": "b",
+                "label": "Bò sát"
+              },
+              {
+                "id": "c",
+                "label": "Thú"
+              },
+              {
+                "id": "d",
+                "label": "Lưỡng cư"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Loài nào sau đây thuộc lớp Bò sát?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ếch"
+              },
+              {
+                "id": "b",
+                "label": "Cá sấu"
+              },
+              {
+                "id": "c",
+                "label": "Chim cánh cụt"
+              },
+              {
+                "id": "d",
+                "label": "Cá heo"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

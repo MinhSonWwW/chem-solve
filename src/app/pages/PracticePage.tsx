@@ -1,5 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { PracticeUnitChips } from '@/features/practice/PracticeUnitChips';
+import { hasPracticeBank } from '@/content/practice';
 import { motion, AnimatePresence } from 'motion/react';
 import {
   Play,
@@ -1260,6 +1262,8 @@ export const PracticePage: React.FC = () => {
                 }`}
                 onClick={() => {
                   if (isAvailable) {
+                    // Lessons with a practice bank are practised by topic (chips below); others keep the old one-click round.
+                    if (hasPracticeBank(lesson.id)) return;
                     const exerciseNode =
                       lesson.nodes.find((n) => n.type === 'lesson') ?? lesson.nodes[0];
                     if (exerciseNode) {
@@ -1322,6 +1326,7 @@ export const PracticePage: React.FC = () => {
                     <p className="text-xs text-[var(--text-secondary)] leading-relaxed font-medium">
                       <MathText text={lesson.subtitle} />
                     </p>
+                    {isAvailable && hasPracticeBank(lesson.id) && <PracticeUnitChips lessonId={lesson.id} />}
 
                     {!isAvailable && lesson.ready && status.requiredLessonTitle && (
                       <div className="flex items-center gap-1.5 text-[11px] font-bold text-[var(--warn-fg)] pt-0.5">
@@ -1335,7 +1340,7 @@ export const PracticePage: React.FC = () => {
                   </div>
 
                   {/* Right Action Icon */}
-                  {isAvailable ? (
+                  {isAvailable && hasPracticeBank(lesson.id) ? null : isAvailable ? (
                     <div className="w-9 h-9 rounded-2xl bg-[var(--subject-fill)] text-white shadow-[0_2px_0_0_var(--subject-edge)] flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
                       <Play className="w-4 h-4 fill-white text-[var(--text-primary)]" />
                     </div>

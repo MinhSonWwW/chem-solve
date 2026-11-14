@@ -1,0 +1,335 @@
+{
+  "lessonId": "bio-g6-b17",
+  "units": [
+    {
+      "id": "dac-diem-nam",
+      "title": "Đặc điểm và sự đa dạng của nấm",
+      "fromExercises": [
+        "bio-g6-b17-q01",
+        "bio-g6-b17-q03",
+        "bio-g6-b17-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Nấm sinh sản chủ yếu bằng gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hạt"
+              },
+              {
+                "id": "b",
+                "label": "Bào tử"
+              },
+              {
+                "id": "c",
+                "label": "Trứng"
+              },
+              {
+                "id": "d",
+                "label": "Hoa"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Nấm có tự tổng hợp chất hữu cơ nhờ quang hợp được không?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Có, vì nấm có diệp lục"
+              },
+              {
+                "id": "b",
+                "label": "Không, nấm sống dị dưỡng"
+              },
+              {
+                "id": "c",
+                "label": "Có, vào ban đêm"
+              },
+              {
+                "id": "d",
+                "label": "Chỉ nấm men quang hợp được"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Phân loại các loại nấm sau.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Nấm đơn bào"
+              },
+              {
+                "id": "b2",
+                "label": "Nấm đa bào"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Nấm men",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Nấm rơm",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i3",
+                "label": "Nấm hương",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Nấm mốc",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về nấm là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Nấm thuộc giới Nấm, không thuộc giới Thực vật.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nấm rơm là nấm đa bào.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Nấm có lục lạp như cây xanh.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Nấm thường mọc ở nơi có điều kiện như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Khô hạn, nắng gắt"
+              },
+              {
+                "id": "b",
+                "label": "Ẩm ướt, có nhiều chất hữu cơ"
+              },
+              {
+                "id": "c",
+                "label": "Trong nước biển mặn"
+              },
+              {
+                "id": "d",
+                "label": "Trên băng tuyết"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vai-tro-nam",
+      "title": "Vai trò và tác hại của nấm",
+      "fromExercises": [
+        "bio-g6-b17-q02",
+        "bio-g6-b17-q04"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép loại nấm với ứng dụng của nó.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Nấm men",
+                "right": "Làm bánh mì, lên men rượu"
+              },
+              {
+                "left": "Nấm rơm, nấm hương",
+                "right": "Làm thực phẩm"
+              },
+              {
+                "left": "Nấm linh chi",
+                "right": "Làm dược liệu"
+              },
+              {
+                "left": "Nấm Penicillium",
+                "right": "Sản xuất thuốc kháng sinh penicillin"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Nấm có thể gây ra những tác hại nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Gây bệnh nấm da, hắc lào ở người"
+              },
+              {
+                "id": "b",
+                "label": "Làm mốc, hỏng thực phẩm"
+              },
+              {
+                "id": "c",
+                "label": "Gây ngộ độc khi ăn phải nấm độc"
+              },
+              {
+                "id": "d",
+                "label": "Làm bánh mì nở xốp"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về sử dụng nấm là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Không được ăn nấm lạ mọc hoang khi chưa rõ nguồn gốc.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Bánh mì bị mốc chỉ cần bỏ phần mốc là ăn được an toàn.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Nấm men được dùng để làm bánh mì.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Để phòng bệnh nấm da, cần làm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Mặc quần áo ẩm"
+              },
+              {
+                "id": "b",
+                "label": "Giữ cơ thể khô ráo, vệ sinh sạch sẽ"
+              },
+              {
+                "id": "c",
+                "label": "Dùng chung khăn tắm"
+              },
+              {
+                "id": "d",
+                "label": "Hạn chế tắm"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Trong tự nhiên, nhiều loại nấm có vai trò gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Phân hủy xác sinh vật, làm sạch môi trường"
+              },
+              {
+                "id": "b",
+                "label": "Quang hợp tạo oxygen"
+              },
+              {
+                "id": "c",
+                "label": "Thụ phấn cho hoa"
+              },
+              {
+                "id": "d",
+                "label": "Cố định đạm cho đất"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Thực phẩm bị mốc có những đốm xanh, đen là do loại sinh vật nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vi khuẩn lactic"
+              },
+              {
+                "id": "b",
+                "label": "Nấm mốc"
+              },
+              {
+                "id": "c",
+                "label": "Tảo"
+              },
+              {
+                "id": "d",
+                "label": "Virus"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

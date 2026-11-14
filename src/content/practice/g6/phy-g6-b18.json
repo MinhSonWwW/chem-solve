@@ -1,0 +1,316 @@
+{
+  "lessonId": "phy-g6-b18",
+  "units": [
+    {
+      "id": "mat-trang",
+      "title": "Mặt Trăng và ánh sáng của Mặt Trăng",
+      "fromExercises": [
+        "phy-g6-b18-mcq-001",
+        "phy-g6-b18-tf-004",
+        "phy-g6-b18-multi-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Mặt Trăng chuyển động quanh thiên thể nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sao Hỏa"
+              },
+              {
+                "id": "b",
+                "label": "Trái Đất"
+              },
+              {
+                "id": "c",
+                "label": "Sao Kim"
+              },
+              {
+                "id": "d",
+                "label": "Sao Mộc"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về Mặt Trăng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Mặt Trăng là vệ tinh tự nhiên của Trái Đất.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Mặt Trăng tự phát ra ánh sáng như Mặt Trời.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Ánh sáng Mặt Trăng là ánh sáng Mặt Trời bị Mặt Trăng hắt lại.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Ban ngày đôi khi vẫn thấy Mặt Trăng trên bầu trời. Điều này cho thấy gì?",
+          "difficulty": 3,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Mặt Trăng tự phát sáng"
+              },
+              {
+                "id": "b",
+                "label": "Mặt Trăng được Mặt Trời chiếu sáng và đang ở phía ta nhìn thấy được"
+              },
+              {
+                "id": "c",
+                "label": "Mặt Trăng ở rất gần Mặt Trời"
+              },
+              {
+                "id": "d",
+                "label": "Mặt Trăng chỉ xuất hiện ban ngày"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vì sao hình dạng Mặt Trăng ta nhìn thấy thay đổi trong tháng?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì Mặt Trăng bị co lại"
+              },
+              {
+                "id": "b",
+                "label": "Vì phần được chiếu sáng mà ta nhìn thấy thay đổi khi Mặt Trăng chuyển động quanh Trái Đất"
+              },
+              {
+                "id": "c",
+                "label": "Vì mây che"
+              },
+              {
+                "id": "d",
+                "label": "Vì Mặt Trăng tắt sáng dần"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Mặt Trăng chuyển động một vòng quanh Trái Đất mất khoảng bao lâu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "1 ngày"
+              },
+              {
+                "id": "b",
+                "label": "1 tuần"
+              },
+              {
+                "id": "c",
+                "label": "Khoảng 1 tháng"
+              },
+              {
+                "id": "d",
+                "label": "1 năm"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tuan-trang",
+      "title": "Các hình dạng nhìn thấy của Mặt Trăng",
+      "fromExercises": [
+        "phy-g6-b18-mcq-002",
+        "phy-g6-b18-order-003",
+        "phy-g6-b18-match-005"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Trăng tròn thường xuất hiện vào ngày nào âm lịch?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Mùng 1"
+              },
+              {
+                "id": "b",
+                "label": "Mùng 7"
+              },
+              {
+                "id": "c",
+                "label": "Ngày 15"
+              },
+              {
+                "id": "d",
+                "label": "Ngày 23"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Sau ngày trăng tròn, phần Mặt Trăng được chiếu sáng mà ta nhìn thấy thay đổi thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Lớn dần"
+              },
+              {
+                "id": "b",
+                "label": "Nhỏ dần"
+              },
+              {
+                "id": "c",
+                "label": "Không đổi"
+              },
+              {
+                "id": "d",
+                "label": "Biến mất ngay"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về tuần trăng là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Một tuần trăng kéo dài khoảng 29,5 ngày.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Trăng bán nguyệt đầu tháng xuất hiện vào khoảng ngày 7, 8 âm lịch.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Đêm rằm ta không nhìn thấy Mặt Trăng.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Đêm Tết Trung thu (rằm tháng Tám âm lịch), Mặt Trăng thường có hình dạng nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Trăng khuyết"
+              },
+              {
+                "id": "b",
+                "label": "Trăng non"
+              },
+              {
+                "id": "c",
+                "label": "Trăng tròn"
+              },
+              {
+                "id": "d",
+                "label": "Không có trăng"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Phân loại các ngày âm lịch theo hình dạng Mặt Trăng.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Phần sáng lớn dần (đầu tháng)"
+              },
+              {
+                "id": "b2",
+                "label": "Phần sáng nhỏ dần (cuối tháng)"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Mùng 3",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Mùng 8",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Ngày 12",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Ngày 18",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Ngày 23",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Ngày 27",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

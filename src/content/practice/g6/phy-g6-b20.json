@@ -1,0 +1,284 @@
+{
+  "lessonId": "phy-g6-b20",
+  "units": [
+    {
+      "id": "ngan-ha",
+      "title": "Ngân Hà và các thiên hà",
+      "fromExercises": [
+        "phy-g6-b20-mcq-001",
+        "phy-g6-b20-mcq-002",
+        "phy-g6-b20-tf-004"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ngân Hà gồm những gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chỉ có Mặt Trời và 8 hành tinh"
+              },
+              {
+                "id": "b",
+                "label": "Hàng trăm tỉ ngôi sao cùng bụi và khí"
+              },
+              {
+                "id": "c",
+                "label": "Chỉ có các hành tinh"
+              },
+              {
+                "id": "d",
+                "label": "Chỉ có Mặt Trăng"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Vào đêm trời quang, ở nơi ít ánh đèn, ta thấy Ngân Hà như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Một ngôi sao rất sáng"
+              },
+              {
+                "id": "b",
+                "label": "Một dải sáng mờ vắt ngang bầu trời"
+              },
+              {
+                "id": "c",
+                "label": "Một hình tròn màu đỏ"
+              },
+              {
+                "id": "d",
+                "label": "Không thể nhìn thấy bằng mắt thường"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về thiên hà là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Thiên hà là tập hợp rất nhiều ngôi sao, bụi và khí.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Ngân Hà là thiên hà duy nhất trong vũ trụ.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Ngân Hà có dạng xoắn ốc.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vì sao từ Trái Đất ta thấy Ngân Hà là một dải sáng?",
+          "difficulty": 3,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì Ngân Hà rất nhỏ"
+              },
+              {
+                "id": "b",
+                "label": "Vì ta ở bên trong và nhìn dọc theo mặt phẳng đĩa của Ngân Hà"
+              },
+              {
+                "id": "c",
+                "label": "Vì Ngân Hà là một đám mây"
+              },
+              {
+                "id": "d",
+                "label": "Vì Mặt Trời chiếu vào Ngân Hà"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Thiên hà lớn nào ở gần Ngân Hà?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Thiên hà Tiên Nữ (Andromeda)"
+              },
+              {
+                "id": "b",
+                "label": "Sao Bắc Cực"
+              },
+              {
+                "id": "c",
+                "label": "Mặt Trăng"
+              },
+              {
+                "id": "d",
+                "label": "Sao Mộc"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vi-tri",
+      "title": "Vị trí của Hệ Mặt Trời, năm ánh sáng",
+      "fromExercises": [
+        "phy-g6-b20-mcq-003",
+        "phy-g6-b20-match-005",
+        "phy-g6-b20-multi-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Hệ Mặt Trời nằm ở đâu trong Ngân Hà?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ở chính giữa tâm"
+              },
+              {
+                "id": "b",
+                "label": "Ở một nhánh xoắn, cách xa tâm"
+              },
+              {
+                "id": "c",
+                "label": "Ở ngoài Ngân Hà"
+              },
+              {
+                "id": "d",
+                "label": "Không xác định được"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về năm ánh sáng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Năm ánh sáng là quãng đường ánh sáng đi được trong một năm.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Năm ánh sáng là đơn vị đo thời gian.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Năm ánh sáng dùng để đo khoảng cách giữa các ngôi sao.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Sắp xếp các hệ thiên thể sau theo kích thước từ nhỏ đến lớn.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Trái Đất",
+              "Hệ Mặt Trời",
+              "Ngân Hà",
+              "Vũ trụ"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Ánh sáng từ Mặt Trời đến Trái Đất mất khoảng bao lâu?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "1 giây"
+              },
+              {
+                "id": "b",
+                "label": "Khoảng 8 phút"
+              },
+              {
+                "id": "c",
+                "label": "1 năm"
+              },
+              {
+                "id": "d",
+                "label": "1 ngày"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Những nhận định nào sau đây đúng?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Trái Đất là một hành tinh trong Hệ Mặt Trời"
+              },
+              {
+                "id": "b",
+                "label": "Hệ Mặt Trời là một phần nhỏ của Ngân Hà"
+              },
+              {
+                "id": "c",
+                "label": "Ngân Hà nằm trong Hệ Mặt Trời"
+              },
+              {
+                "id": "d",
+                "label": "Ngân Hà là một trong rất nhiều thiên hà"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

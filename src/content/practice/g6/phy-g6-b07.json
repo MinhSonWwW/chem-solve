@@ -1,0 +1,237 @@
+{
+  "lessonId": "phy-g6-b07",
+  "units": [
+    {
+      "id": "bien-dang",
+      "title": "Biến dạng của lò xo",
+      "fromExercises": [
+        "phy-g6-b07-mcq-001",
+        "phy-g6-b07-mcq-002",
+        "phy-g6-b07-mcq-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Xác định các nhận định sau về lò xo là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Lò xo bị kéo dãn vừa phải rồi thả ra sẽ trở lại hình dạng ban đầu.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Treo vật càng nặng thì lò xo dãn càng ít.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Lò xo là vật có tính đàn hồi.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Phân loại các vật bị biến dạng sau.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Trở lại hình dạng ban đầu (biến dạng đàn hồi)"
+              },
+              {
+                "id": "b2",
+                "label": "Không trở lại hình dạng ban đầu"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Sợi dây chun bị kéo nhẹ",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Lò xo trong bút bi bị nén",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Quả bóng cao su bị bóp nhẹ",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Cục đất nặn bị bóp méo",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Lon nhôm bị dẫm bẹp",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Thanh sắt bị bẻ cong mạnh",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Dụng cụ nào sau đây hoạt động dựa vào sự biến dạng của lò xo?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Thước thẳng"
+              },
+              {
+                "id": "b",
+                "label": "Lực kế lò xo"
+              },
+              {
+                "id": "c",
+                "label": "Nhiệt kế"
+              },
+              {
+                "id": "d",
+                "label": "Đồng hồ cát"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Độ dãn của lò xo được tính bằng gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chiều dài tự nhiên của lò xo"
+              },
+              {
+                "id": "b",
+                "label": "Hiệu giữa chiều dài khi bị dãn và chiều dài tự nhiên"
+              },
+              {
+                "id": "c",
+                "label": "Tổng chiều dài trước và sau"
+              },
+              {
+                "id": "d",
+                "label": "Khối lượng vật treo"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Nếu treo vật quá nặng làm lò xo bị kéo dãn quá mức thì điều gì có thể xảy ra?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Lò xo dãn ít hơn"
+              },
+              {
+                "id": "b",
+                "label": "Lò xo không trở lại hình dạng ban đầu"
+              },
+              {
+                "id": "c",
+                "label": "Lò xo co ngắn lại"
+              },
+              {
+                "id": "d",
+                "label": "Lò xo nặng hơn"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "do-dan",
+      "title": "Tính độ dãn của lò xo",
+      "fromExercises": [
+        "phy-g6-b07-calc-003",
+        "phy-g6-b07-calc-004",
+        "phy-g6-b07-calc-005"
+      ],
+      "generator": "spring-extension",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Treo vật 200 g thì lò xo dãn 2 cm. Treo vật 300 g thì lò xo dãn bao nhiêu cm (lò xo vẫn đàn hồi)?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 3,
+            "unit": "cm",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Một lò xo dài tự nhiên 18 cm, khi treo vật thì dãn thêm 2,5 cm. Chiều dài lò xo lúc đó là bao nhiêu cm?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 20.5,
+            "unit": "cm",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Treo lần lượt 50 g, 100 g, 150 g vào lò xo thì lò xo dãn 1 cm, 2 cm, 3 cm. Treo 250 g thì lò xo dãn bao nhiêu?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "4 cm"
+              },
+              {
+                "id": "b",
+                "label": "5 cm"
+              },
+              {
+                "id": "c",
+                "label": "6 cm"
+              },
+              {
+                "id": "d",
+                "label": "2,5 cm"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

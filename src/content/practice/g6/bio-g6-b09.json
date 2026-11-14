@@ -1,0 +1,341 @@
+{
+  "lessonId": "bio-g6-b09",
+  "units": [
+    {
+      "id": "don-bao",
+      "title": "Quan sát cơ thể đơn bào",
+      "fromExercises": [
+        "bio-g6-b09-q01",
+        "bio-g6-b09-q02",
+        "bio-g6-b09-q03"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Trùng giày di chuyển nhờ bộ phận nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Roi"
+              },
+              {
+                "id": "b",
+                "label": "Chân giả"
+              },
+              {
+                "id": "c",
+                "label": "Lông bơi"
+              },
+              {
+                "id": "d",
+                "label": "Vây"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Trùng biến hình di chuyển nhờ gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Lông bơi"
+              },
+              {
+                "id": "b",
+                "label": "Roi"
+              },
+              {
+                "id": "c",
+                "label": "Chân giả"
+              },
+              {
+                "id": "d",
+                "label": "Cánh"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Trùng roi xanh di chuyển nhờ bộ phận nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Lông bơi"
+              },
+              {
+                "id": "b",
+                "label": "Roi"
+              },
+              {
+                "id": "c",
+                "label": "Chân giả"
+              },
+              {
+                "id": "d",
+                "label": "Chân"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về sinh vật đơn bào là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Trùng giày là sinh vật đơn bào.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Có thể nhìn rõ từng bộ phận của trùng giày bằng mắt thường.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Trùng roi xanh có chất diệp lục.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Môi trường nào thuận lợi để nuôi trùng giày cho buổi quan sát?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nước cất"
+              },
+              {
+                "id": "b",
+                "label": "Nước ngâm rơm, cỏ khô vài ngày"
+              },
+              {
+                "id": "c",
+                "label": "Nước muối"
+              },
+              {
+                "id": "d",
+                "label": "Nước sôi"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da-bao",
+      "title": "Quan sát cơ thể đa bào",
+      "fromExercises": [
+        "bio-g6-b09-q04",
+        "bio-g6-b09-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Cây đậu là cơ thể đơn bào hay đa bào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đơn bào"
+              },
+              {
+                "id": "b",
+                "label": "Đa bào"
+              },
+              {
+                "id": "c",
+                "label": "Không có tế bào"
+              },
+              {
+                "id": "d",
+                "label": "Vừa đơn bào vừa đa bào"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ghép cơ quan ở người với hệ cơ quan chứa nó.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Phổi",
+                "right": "Hệ hô hấp"
+              },
+              {
+                "left": "Dạ dày",
+                "right": "Hệ tiêu hóa"
+              },
+              {
+                "left": "Tim",
+                "right": "Hệ tuần hoàn"
+              },
+              {
+                "left": "Thận",
+                "right": "Hệ bài tiết"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Cơ hoành ngăn cách hai khoang nào của cơ thể người?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Khoang đầu và khoang ngực"
+              },
+              {
+                "id": "b",
+                "label": "Khoang ngực và khoang bụng"
+              },
+              {
+                "id": "c",
+                "label": "Khoang bụng và chân"
+              },
+              {
+                "id": "d",
+                "label": "Không ngăn cách khoang nào"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về quan sát cơ thể đa bào là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Cây xanh có cơ quan sinh dưỡng và cơ quan sinh sản.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Tim và phổi nằm trong khoang bụng.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Dạ dày, gan, ruột nằm trong khoang bụng.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Phân loại các cơ quan của cây đậu.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Cơ quan sinh dưỡng"
+              },
+              {
+                "id": "b2",
+                "label": "Cơ quan sinh sản"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Rễ",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Thân",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Lá",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Hoa",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Quả",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Hạt",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Dụng cụ nào thích hợp để quan sát hình dạng bên ngoài của một cây cỏ?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Kính hiển vi"
+              },
+              {
+                "id": "b",
+                "label": "Mắt thường hoặc kính lúp"
+              },
+              {
+                "id": "c",
+                "label": "Ống nhòm"
+              },
+              {
+                "id": "d",
+                "label": "Kính thiên văn"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

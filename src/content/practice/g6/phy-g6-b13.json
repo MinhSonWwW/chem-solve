@@ -1,0 +1,200 @@
+{
+  "lessonId": "phy-g6-b13",
+  "units": [
+    {
+      "id": "chuyen-hoa",
+      "title": "Sự chuyển hóa năng lượng",
+      "fromExercises": [
+        "phy-g6-b13-mcq-001",
+        "phy-g6-b13-mcq-002",
+        "phy-g6-b13-mcq-004",
+        "phy-g6-b13-order-005"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép thiết bị với sự chuyển hóa năng lượng chính của nó.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Nồi cơm điện",
+                "right": "Điện năng thành năng lượng nhiệt"
+              },
+              {
+                "left": "Pin mặt trời",
+                "right": "Năng lượng ánh sáng thành điện năng"
+              },
+              {
+                "left": "Tuabin gió",
+                "right": "Động năng của gió thành điện năng"
+              },
+              {
+                "left": "Đèn LED",
+                "right": "Điện năng thành năng lượng ánh sáng"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Khi đốt củi, năng lượng hóa học chuyển hóa chủ yếu thành gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Điện năng"
+              },
+              {
+                "id": "b",
+                "label": "Năng lượng nhiệt và năng lượng ánh sáng"
+              },
+              {
+                "id": "c",
+                "label": "Thế năng đàn hồi"
+              },
+              {
+                "id": "d",
+                "label": "Năng lượng âm thanh"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Sắp xếp chuỗi chuyển hóa năng lượng ở nhà máy thủy điện.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Thế năng của nước trên hồ cao",
+              "Động năng của dòng nước chảy xuống",
+              "Động năng của tuabin quay",
+              "Điện năng"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Quả bóng rơi từ trên cao xuống. Thế năng hấp dẫn chuyển hóa dần thành dạng nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Năng lượng hóa học"
+              },
+              {
+                "id": "b",
+                "label": "Động năng"
+              },
+              {
+                "id": "c",
+                "label": "Điện năng"
+              },
+              {
+                "id": "d",
+                "label": "Năng lượng ánh sáng"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bao-toan",
+      "title": "Định luật bảo toàn năng lượng",
+      "fromExercises": [
+        "phy-g6-b13-mcq-003",
+        "phy-g6-b13-num-006"
+      ],
+      "generator": "energy-wasted",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Xác định các nhận định sau về định luật bảo toàn năng lượng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Năng lượng không tự sinh ra và không tự mất đi.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Năng lượng chuyển từ dạng này sang dạng khác hoặc truyền từ vật này sang vật khác.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Có thể chế tạo máy chạy mãi mà không cần cung cấp năng lượng.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Một quạt điện nhận 200 J điện năng, trong đó 150 J chuyển thành động năng của cánh quạt, phần còn lại thành nhiệt và âm thanh. Phần chuyển thành nhiệt và âm thanh là bao nhiêu J?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 50,
+            "unit": "J",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Một ấm điện nhận 1000 J điện năng, có 800 J làm nóng nước. Năng lượng hao phí là bao nhiêu J?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 200,
+            "unit": "J",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Quả bóng thả rơi rồi nảy lên không cao bằng vị trí ban đầu. Vì sao?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì năng lượng bị mất đi hoàn toàn"
+              },
+              {
+                "id": "b",
+                "label": "Vì một phần năng lượng đã chuyển thành nhiệt và âm thanh"
+              },
+              {
+                "id": "c",
+                "label": "Vì trọng lực tăng lên"
+              },
+              {
+                "id": "d",
+                "label": "Vì bóng nhẹ đi"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

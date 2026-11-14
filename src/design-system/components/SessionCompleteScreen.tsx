@@ -187,6 +187,11 @@ export const SessionCompleteScreen: React.FC<SessionCompleteScreenProps> = ({
             <span>+{recoveredHearts} Tim hồi sinh</span>
           </div>
         )}
+        {isPractice && !(recoveredHearts ?? 0) && (
+          <p className="w-full text-center text-xs text-[var(--text-secondary)]">
+            Đúng từ 3/4 câu để hồi 1 tim. Mỗi mục luyện hồi tim 1 lần mỗi ngày, em thử mục khác nhé!
+          </p>
+        )}
 
         {perfectRun && !isPractice && (
           <div className="px-3.5 py-1.5 rounded-2xl bg-[var(--gold-tint)] border border-[var(--gold-edge)] text-[var(--gold-fg)] text-xs font-black flex items-center gap-1.5">

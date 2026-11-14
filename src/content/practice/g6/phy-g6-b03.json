@@ -1,0 +1,200 @@
+{
+  "lessonId": "phy-g6-b03",
+  "units": [
+    {
+      "id": "don-vi-dong-ho",
+      "title": "Đơn vị và dụng cụ đo thời gian",
+      "fromExercises": [
+        "phy-g6-b03-mcq-001",
+        "phy-g6-b03-mcq-002",
+        "phy-g6-b03-calc-004",
+        "phy-g6-b03-calc-005"
+      ],
+      "generator": "time-convert",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "1 giờ bằng bao nhiêu giây?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "60 s"
+              },
+              {
+                "id": "b",
+                "label": "600 s"
+              },
+              {
+                "id": "c",
+                "label": "3600 s"
+              },
+              {
+                "id": "d",
+                "label": "6000 s"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ghép việc cần đo với dụng cụ đo thời gian phù hợp.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Thời gian chạy 100 m",
+                "right": "Đồng hồ bấm giây"
+              },
+              {
+                "left": "Giờ vào lớp hằng ngày",
+                "right": "Đồng hồ treo tường"
+              },
+              {
+                "left": "Số ngày còn lại đến Tết",
+                "right": "Tờ lịch"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Trong phòng thí nghiệm, muốn đo thời gian chính xác đến phần trăm giây nên dùng dụng cụ nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đồng hồ cát"
+              },
+              {
+                "id": "b",
+                "label": "Đồng hồ treo tường"
+              },
+              {
+                "id": "c",
+                "label": "Đồng hồ bấm giây điện tử"
+              },
+              {
+                "id": "d",
+                "label": "Tờ lịch"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    },
+    {
+      "id": "do-khoang",
+      "title": "Đo khoảng thời gian",
+      "fromExercises": [
+        "phy-g6-b03-mcq-003",
+        "phy-g6-b03-mcq-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Bạn Hà bắt đầu làm bài lúc 7 giờ 15 phút và làm xong lúc 7 giờ 50 phút. Bạn làm bài trong bao nhiêu phút?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 35,
+            "unit": "phút"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xe buýt khởi hành lúc 6 giờ 40 phút và đến nơi lúc 8 giờ 10 phút. Xe đi hết bao nhiêu phút?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 90,
+            "unit": "phút"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Sắp xếp các bước đo thời gian bằng đồng hồ bấm giây.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Ước lượng thời gian cần đo để chọn đồng hồ phù hợp",
+              "Nhấn nút đặt lại để đồng hồ chỉ số 0",
+              "Nhấn nút bắt đầu khi sự kiện bắt đầu",
+              "Nhấn nút dừng khi sự kiện kết thúc rồi đọc kết quả"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về đo thời gian là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Đơn vị đo thời gian trong hệ SI là giây (s).",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Đồng hồ treo tường đo được thời gian chạy 60 m chính xác đến 0,01 s.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Trước khi đo bằng đồng hồ bấm giây cần đưa đồng hồ về số 0.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Một tiết học bắt đầu lúc 9 giờ 30 phút và kéo dài 45 phút. Tiết học kết thúc lúc mấy giờ?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "10 giờ 05 phút"
+              },
+              {
+                "id": "b",
+                "label": "10 giờ 15 phút"
+              },
+              {
+                "id": "c",
+                "label": "10 giờ 30 phút"
+              },
+              {
+                "id": "d",
+                "label": "9 giờ 75 phút"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Đồng hồ bấm giây chỉ 1 min 25 s. Thời gian đó bằng bao nhiêu giây?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 85,
+            "unit": "s"
+          }
+        }
+      ]
+    }
+  ]
+}

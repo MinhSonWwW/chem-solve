@@ -1,0 +1,345 @@
+{
+  "lessonId": "bio-g6-b22",
+  "units": [
+    {
+      "id": "quan-sat-dv",
+      "title": "Quan sát động vật ngoài thiên nhiên",
+      "fromExercises": [
+        "bio-g6-b22-q01",
+        "bio-g6-b22-q03"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Dụng cụ nào giúp quan sát chim trên cành cao mà không làm chim sợ?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Kính hiển vi"
+              },
+              {
+                "id": "b",
+                "label": "Ống nhòm"
+              },
+              {
+                "id": "c",
+                "label": "Nhiệt kế"
+              },
+              {
+                "id": "d",
+                "label": "Lam kính"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Nên quan sát động vật ngoài thiên nhiên như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Bắt về nhà để quan sát"
+              },
+              {
+                "id": "b",
+                "label": "Quan sát nhẹ nhàng, giữ khoảng cách, không làm hại động vật"
+              },
+              {
+                "id": "c",
+                "label": "Ném đá cho động vật chạy ra"
+              },
+              {
+                "id": "d",
+                "label": "Phá tổ để xem bên trong"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Ốc sên di chuyển nhờ bộ phận nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cánh"
+              },
+              {
+                "id": "b",
+                "label": "Vây"
+              },
+              {
+                "id": "c",
+                "label": "Chân (cơ chân dưới bụng)"
+              },
+              {
+                "id": "d",
+                "label": "Lông bơi"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về quan sát động vật là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Có thể dựa vào dấu vết như tổ, dấu chân để nhận biết động vật.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nên chọc phá tổ ong để quan sát.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Chụp ảnh giúp ghi lại hình ảnh động vật mà không làm hại chúng.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Ghép con vật với nơi sống thường gặp.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Giun đất",
+                "right": "Trong đất ẩm"
+              },
+              {
+                "left": "Cá rô",
+                "right": "Dưới nước ao hồ"
+              },
+              {
+                "left": "Chim sẻ",
+                "right": "Trên cây, mái nhà"
+              },
+              {
+                "left": "Ếch",
+                "right": "Bờ ao, nơi ẩm ướt"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Bướm di chuyển chủ yếu nhờ bộ phận nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vây"
+              },
+              {
+                "id": "b",
+                "label": "Cánh"
+              },
+              {
+                "id": "c",
+                "label": "Chân giả"
+              },
+              {
+                "id": "d",
+                "label": "Lông bơi"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ghi-chep",
+      "title": "Ghi chép, phân loại và an toàn",
+      "fromExercises": [
+        "bio-g6-b22-q02",
+        "bio-g6-b22-q04",
+        "bio-g6-b22-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Thông tin nào cần ghi trong nhật kí quan sát động vật?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tên con vật, nơi sống, thời gian và đặc điểm quan sát được"
+              },
+              {
+                "id": "b",
+                "label": "Chỉ ghi tên người quan sát"
+              },
+              {
+                "id": "c",
+                "label": "Giá bán của con vật"
+              },
+              {
+                "id": "d",
+                "label": "Màu bút dùng để ghi"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Cần trang bị những gì khi đi quan sát ngoài thiên nhiên?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sổ ghi chép và bút"
+              },
+              {
+                "id": "b",
+                "label": "Mũ, giày, quần áo dài"
+              },
+              {
+                "id": "c",
+                "label": "Kính lúp hoặc ống nhòm"
+              },
+              {
+                "id": "d",
+                "label": "Bật lửa để đốt tổ côn trùng"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về an toàn khi đi thực địa là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Không tự ý đi tách khỏi nhóm.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Có thể chạm tay vào sâu róm để quan sát cho kĩ.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Rửa tay sạch sau khi quan sát.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vì sao không nên bắt động vật hoang dã về nuôi?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì chúng rất đắt"
+              },
+              {
+                "id": "b",
+                "label": "Vì làm suy giảm đa dạng sinh học và có thể gây nguy hiểm"
+              },
+              {
+                "id": "c",
+                "label": "Vì chúng không ăn gì"
+              },
+              {
+                "id": "d",
+                "label": "Vì nuôi chúng rất dễ"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Phân loại các động vật quan sát được theo môi trường sống chính.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Sống trên cạn"
+              },
+              {
+                "id": "b2",
+                "label": "Sống dưới nước"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Chim chích",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Thằn lằn",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Châu chấu",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Cá rô",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Tôm",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Nòng nọc",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
