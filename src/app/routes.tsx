@@ -17,6 +17,9 @@ const SearchPage = lazy(() => import('./pages/SearchPage').then(m => ({ default:
 const ShopPage = lazy(() => import('./pages/ShopPage').then(m => ({ default: m.ShopPage })));
 const GamesPage = lazy(() => import('./pages/GamesPage').then(m => ({ default: m.GamesPage })));
 const LabPage = lazy(() => import('@/features/lab/LabPage').then(m => ({ default: m.LabPage })));
+const TeacherPage = lazy(() => import('@/features/classroom/TeacherPage').then(m => ({ default: m.TeacherPage })));
+const TeacherClassPage = lazy(() => import('@/features/classroom/TeacherClassPage').then(m => ({ default: m.TeacherClassPage })));
+const JoinClassPage = lazy(() => import('@/features/classroom/JoinClassPage').then(m => ({ default: m.JoinClassPage })));
 const DesignSystemPage = lazy(() => import('./pages/DesignSystemPage').then(m => ({ default: m.DesignSystemPage })));
 
 const LearnRedirect: React.FC = () => {
@@ -102,6 +105,18 @@ export const router = createHashRouter([
       {
         path: 'lab',
         element: <LabPage />
+      },
+      {
+        path: 'teacher',
+        element: <TeacherPage />
+      },
+      {
+        path: 'teacher/:classId',
+        element: <TeacherClassPage />
+      },
+      {
+        path: 'join',
+        element: <JoinClassPage />
       },
       {
         path: 'dev/design-system',

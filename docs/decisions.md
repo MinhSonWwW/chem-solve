@@ -23,3 +23,10 @@ File này ghi lại các quyết định kỹ thuật quan trọng của CHEM-SO
 - **Quyết định**: Cài đặt thư viện `katex` để render chính xác tất cả các ký hiệu, biểu thức toán học và vật lý định lượng ($W_đ = \frac{1}{2}mv^2$, định luật Ohm, máy biến thế, số mũ, phân số, chỉ số dưới).
 - **Lý do**: Khắc phục triệt để lỗi hiển thị raw LaTeX dạng `$W_đ$`, `$\frac{1}{2}$`, đem lại giao diện công thức chuẩn sách giáo khoa, tải siêu nhanh và nhẹ hơn MathJax.
 - **Ngày**: 2026-11-01.
+
+## ADR 005: Backend cho Chế độ Giáo viên — Cloudflare Pages Functions + D1
+- **Quyết định**: API lớp học chạy trên Cloudflare Pages Functions cùng project Pages, dữ liệu lưu ở Cloudflare D1 (SQLite). Không thêm dependency phía client (chỉ dùng `fetch`); phía server dùng lại `zod` có sẵn.
+- **Lý do**: Web đã host trên Cloudflare Pages nên không cần server riêng; D1 có gói miễn phí đủ cho quy mô trường học; dữ liệu chỉ cần quan hệ đơn giản (lớp – học sinh – bài giao – kết quả).
+- **Quyền riêng tư**: Học sinh không cần email hay tài khoản, chỉ nhập mã lớp + tên hiển thị; server chỉ lưu SHA-256 của token. Giáo viên xác thực bằng access token Google (kiểm tra `aud` khớp client id trong `GOOGLE_CLIENT_IDS`, email đã xác minh). Rời lớp/xóa học sinh/xóa lớp sẽ xóa luôn kết quả liên quan.
+- **Offline**: Kết quả được xếp hàng trong `localStorage` và gửi lại khi có mạng; `report_id` duy nhất giúp gửi lặp không bị đếm trùng.
+- **Ngày**: 2026-11-14.

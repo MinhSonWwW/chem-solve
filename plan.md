@@ -941,7 +941,7 @@ Mặt trên sáng màu rõ nét · Đáy dày 3D (solid shadow $4\text{px} - 6\t
 * **Nghiệm thu:** Kết nối phòng chơi ổn định; độ trễ mạng thấp; xếp hạng Elo công bằng.
 
 #### M13 — Ứng dụng Di động PWA & Offline Store *(SHOULD)*
-- [ ] Cấu hình Service Worker cache đệm toàn bộ bài học để học sinh vùng xa học không cần internet.
+- [x] Cấu hình Service Worker cache đệm toàn bộ bài học để học sinh vùng xa học không cần internet (precache JS/CSS/ảnh WebP/video; tự cập nhật khi có bản mới).
 - [ ] Đóng gói Capacitor xuất bản lên Google Play Store và Apple App Store.
 * **Nghiệm thu:** Ứng dụng cài đặt được lên màn hình chính điện thoại; mở học bài bình thường khi ngắt mạng.
 
@@ -950,6 +950,17 @@ Mặt trên sáng màu rõ nét · Đáy dày 3D (solid shadow $4\text{px} - 6\t
 - [x] Hệ thống rung phản hồi xúc giác Haptic Vibration đa tầng trên mobile/PWA: click nhẹ (12ms), trả lời đúng (2 nhịp nảy), trả lời sai (2 nhịp cảnh báo), hoàn thành bài (chuỗi nhịp fanfare).
 - [x] Tích hợp bộ điều khiển bật/tắt và nghe thử giọng cả 3 linh vật trong trang Cá nhân (`ProfilePage`).
 * **Nghiệm thu:** Giọng nói trong trẻo, tự nhiên, tùy biến theo từng môn học; tăng cường tactile game feel sống động; unit test bao phủ toàn bộ cơ chế.
+
+#### M15 — Chế độ Giáo viên (Lớp học, Giao bài, Phân tích câu sai) *(ĐANG LÀM)*
+- [x] Giáo viên đăng nhập Google, tạo lớp theo khối 6–9; mỗi lớp có mã 6 kí tự + link vào lớp gửi qua Zalo.
+- [x] Học sinh vào lớp chỉ bằng **mã lớp + tên hiển thị** (không email, không tài khoản); rời lớp sẽ xóa kết quả trong lớp.
+- [x] Kết quả mỗi chặng học tự gửi về lớp; mất mạng thì xếp hàng trong máy và gửi lại khi có mạng (gửi lặp không bị đếm trùng).
+- [x] Bảng tiến độ: số chặng đã xong, tỉ lệ đúng trung bình, số bài giao đã xong, lần hoạt động gần nhất.
+- [x] Giao bài có hạn nộp; học sinh thấy thẻ "Bài được giao" ở trang chủ, tô màu khi sắp hết hạn/quá hạn.
+- [x] Phân tích câu sai: bài cần ôn lại, các câu cả lớp hay sai lần đầu (kèm đề), kỹ năng cần ôn (khi có tên kỹ năng).
+- [ ] Chạy migration D1 trên Cloudflare và deploy; thêm 2 tên miền vào Authorized JavaScript origins của Google OAuth client.
+* **Kỹ thuật:** Cloudflare Pages Functions (`functions/api/[[path]].ts` → `server/classroom.ts`) + D1 (`migrations/0001_classroom.sql`). Xem ADR 005.
+* **Nghiệm thu:** Unit test server (xác thực token Google, mã lớp, schema báo cáo) + client (tiến độ, hạn nộp, outbox); thử end-to-end bằng `wrangler pages dev` ở 360×640 / 390×844.
 
 ---
 

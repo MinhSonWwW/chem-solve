@@ -84,6 +84,10 @@ export default defineConfig(() => {
         }
       })
     ],
+    // Classroom API (Cloudflare Pages Functions + D1) runs under `wrangler pages dev` on 8788.
+    server: {
+      proxy: { '/api': 'http://127.0.0.1:8788' },
+    },
     build: {
       chunkSizeWarningLimit: 600,
       rollupOptions: {

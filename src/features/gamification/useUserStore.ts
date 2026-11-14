@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import { buildReport, queueReport } from '@/features/classroom/outbox';
 import { sound } from '@/lib/audio';
 import { GAMIFICATION } from '@/config/gamification';
 import { sessionReducer, createInitialSession } from '@/engine/session/sessionReducer';
@@ -408,6 +409,9 @@ export const useUserStore = create<UserState>((set, get) => ({
       },
     }));
 
+    // Report to the student's class (no-op if not in a class; queued while offline).
+    queueReport(buildReport({ lessonId, nodeId, isPractice: false, accuracy: 1, xp: earnedXp, questions: [] }));
+
     try {
       const progress = await loadUserProgress();
       progress.xp = get().xp;
@@ -450,6 +454,18 @@ export const useUserStore = create<UserState>((set, get) => ({
 
     // Update user XP & Gems
     set((s) => ({ xp: s.xp + sessionBonus, gems: nextGems }));
+
+    // Report to the student's class (no-op if not in a class; queued while offline).
+    queueReport(
+      buildReport({
+        lessonId: sessionInfo.lessonId,
+        nodeId: sessionInfo.nodeId,
+        isPractice: !!sessionState.isPractice,
+        accuracy,
+        xp: totalXp,
+        questions: sessionState.questions,
+      })
+    );
 
     // Save user progress
     try {

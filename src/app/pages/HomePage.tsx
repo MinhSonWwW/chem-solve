@@ -7,6 +7,7 @@ import { Button, Card, Progress, Mascot, CurrencyIcon } from '@/design-system';
 import { sound } from '@/lib/audio';
 import { getCurriculum, type Grade } from '@/content/curriculum';
 import { useActiveSubject } from '@/content/subjects';
+import { AssignedWorkCard } from '@/features/classroom/AssignedWorkCard';
 
 export const HomePage: React.FC = () => {
   const navigate = useNavigate();
@@ -141,6 +142,8 @@ export const HomePage: React.FC = () => {
           </div>
         </div>
       </motion.div>
+
+      <AssignedWorkCard />
 
       {/* Daily Goal Progress Card */}
       <Card className="space-y-3.5 py-4 border border-[var(--border)] bg-[var(--bg-surface)] rounded-3xl">

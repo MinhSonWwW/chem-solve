@@ -38,3 +38,6 @@ playwright-report/
 *.tsbuildinfo
 *.docx
 *.xlsx
+
+# Cloudflare local state (wrangler dev / local D1)
+.wrangler/

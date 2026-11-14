@@ -1,0 +1,16 @@
+# Cloudflare Pages config (used by `wrangler pages deploy` / `wrangler pages dev`).
+# The same build + Functions are deployed to both Pages projects (sci-solve, stem-solve),
+# which therefore share one classroom database.
+name = "sci-solve"
+pages_build_output_dir = "dist"
+compatibility_date = "2025-09-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "sci-solve-classroom"
+database_id = "5dbcd38b-e6c7-400f-a9c5-604b21a96b7d"
+migrations_dir = "migrations"
+
+[vars]
+# Google OAuth client IDs whose access tokens are accepted for teacher sign-in (comma separated).
+GOOGLE_CLIENT_IDS = "21560242226-l5m16g2kegnfpj6ba6opjg07lkl22f4g.apps.googleusercontent.com"

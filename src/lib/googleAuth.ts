@@ -77,6 +77,31 @@ export interface GoogleUserInfo {
 }
 
 /**
+ * Open the Google account chooser and return an OAuth access token (scopes: openid email profile).
+ * Used by teacher sign-in: the token is verified server-side with Google, never trusted as-is.
+ */
+export async function requestGoogleAccessToken(customClientId?: string): Promise<string> {
+  await loadGoogleGsiScript();
+  const clientId = customClientId || getGoogleClientId();
+  const google = window.google;
+  if (!google?.accounts?.oauth2) {
+    throw new Error('Không tải được đăng nhập Google. Hãy kiểm tra kết nối mạng.');
+  }
+  return new Promise((resolve, reject) => {
+    const client = google.accounts.oauth2.initTokenClient({
+      client_id: clientId,
+      scope: 'openid email profile',
+      prompt: 'select_account',
+      callback: (res) => {
+        if (res.error || !res.access_token) reject(new Error(res.error || 'Đăng nhập Google bị hủy.'));
+        else resolve(res.access_token);
+      },
+    });
+    client.requestAccessToken();
+  });
+}
+
+/**
  * Prompt real Google Sign-In popup and fetch user profile info
  */
 export async function signInWithGoogleReal(customClientId?: string): Promise<UserProfile> {
