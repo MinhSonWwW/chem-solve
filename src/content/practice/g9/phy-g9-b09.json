@@ -1,0 +1,152 @@
+{
+  "lessonId": "phy-g9-b09",
+  "units": [
+    {
+      "id": "kinh-lup",
+      "title": "Kính lúp và ảnh qua kính lúp",
+      "fromExercises": [
+        "phy-g9-b09-mcq-001",
+        "phy-g9-b09-mcq-002",
+        "phy-g9-b09-mcq-006",
+        "phy-g9-b09-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Kính lúp là thấu kính loại nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Thấu kính hội tụ có tiêu cự ngắn"
+              },
+              {
+                "id": "b",
+                "label": "Thấu kính phân kì"
+              },
+              {
+                "id": "c",
+                "label": "Gương cầu lồi"
+              },
+              {
+                "id": "d",
+                "label": "Lăng kính"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về kính lúp và ảnh qua kính lúp là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Muốn quan sát qua kính lúp, vật phải đặt trong khoảng tiêu cự.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Ảnh qua kính lúp là ảnh ảo, lớn hơn vật.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Kính lúp có số bội giác càng nhỏ thì phóng to càng nhiều.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Kính lúp thường được dùng để làm gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đọc chữ nhỏ"
+              },
+              {
+                "id": "b",
+                "label": "Quan sát côn trùng, gân lá"
+              },
+              {
+                "id": "c",
+                "label": "Sửa đồng hồ, linh kiện nhỏ"
+              },
+              {
+                "id": "d",
+                "label": "Quan sát các vì sao"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Kính lúp có số bội giác 5X so với 2X thì sao?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Phóng to ít hơn"
+              },
+              {
+                "id": "b",
+                "label": "Phóng to nhiều hơn"
+              },
+              {
+                "id": "c",
+                "label": "Như nhau"
+              },
+              {
+                "id": "d",
+                "label": "Không phóng to"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "boi-giac",
+      "title": "Số bội giác của kính lúp",
+      "fromExercises": [
+        "phy-g9-b09-mcq-003",
+        "phy-g9-b09-num-004",
+        "phy-g9-b09-num-005",
+        "phy-g9-b09-num-007"
+      ],
+      "generator": "magnifier",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Kính lúp có tiêu cự 10 cm. Số bội giác là bao nhiêu?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 2.5,
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

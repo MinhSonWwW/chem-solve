@@ -1,0 +1,183 @@
+{
+  "lessonId": "g9-b32",
+  "units": [
+    {
+      "id": "polymer",
+      "title": "Polymer",
+      "fromExercises": [
+        "g9-b32-mcq-001",
+        "g9-b32-sort-001",
+        "g9-b32-match-001",
+        "g9-b32-tf-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Polymer là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Phân tử rất nhỏ"
+              },
+              {
+                "id": "b",
+                "label": "Phân tử rất lớn do nhiều mắt xích liên kết với nhau"
+              },
+              {
+                "id": "c",
+                "label": "Một nguyên tố"
+              },
+              {
+                "id": "d",
+                "label": "Một loại muối"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Phân loại vật liệu polymer.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Chất dẻo"
+              },
+              {
+                "id": "b2",
+                "label": "Tơ"
+              },
+              {
+                "id": "b3",
+                "label": "Cao su"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Nhựa PE làm túi",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Nhựa PVC làm ống nước",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Tơ tằm",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Tơ nylon",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Cao su thiên nhiên",
+                "bucketId": "b3"
+              },
+              {
+                "id": "i6",
+                "label": "Lốp xe",
+                "bucketId": "b3"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Những cách nào giúp giảm rác thải nhựa?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Dùng túi vải thay túi nilon"
+              },
+              {
+                "id": "b",
+                "label": "Tái sử dụng chai lọ"
+              },
+              {
+                "id": "c",
+                "label": "Phân loại rác để tái chế"
+              },
+              {
+                "id": "d",
+                "label": "Đốt nhựa ngoài trời"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Polymer nào là polymer thiên nhiên?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "PE"
+              },
+              {
+                "id": "b",
+                "label": "PVC"
+              },
+              {
+                "id": "c",
+                "label": "Tinh bột"
+              },
+              {
+                "id": "d",
+                "label": "Nylon"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Vì sao túi nilon gây hại cho môi trường?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì khó phân hủy, tồn tại hàng trăm năm"
+              },
+              {
+                "id": "b",
+                "label": "Vì quá nặng"
+              },
+              {
+                "id": "c",
+                "label": "Vì tan trong nước"
+              },
+              {
+                "id": "d",
+                "label": "Vì phân hủy rất nhanh"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    }
+  ]
+}

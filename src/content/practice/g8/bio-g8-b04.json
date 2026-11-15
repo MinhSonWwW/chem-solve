@@ -1,0 +1,230 @@
+{
+  "lessonId": "bio-g8-b04",
+  "units": [
+    {
+      "id": "mau-nhom-mau",
+      "title": "Máu và nhóm máu",
+      "fromExercises": [
+        "bio-g8-b04-q01",
+        "bio-g8-b04-q02",
+        "bio-g8-b04-q03",
+        "bio-g8-b04-q04",
+        "bio-g8-b04-q05"
+      ],
+      "generator": "blood-transfusion",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép thành phần của máu với chức năng.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Hồng cầu",
+                "right": "Vận chuyển oxygen và carbon dioxide"
+              },
+              {
+                "left": "Bạch cầu",
+                "right": "Bảo vệ cơ thể, chống vi khuẩn"
+              },
+              {
+                "left": "Tiểu cầu",
+                "right": "Tham gia đông máu"
+              },
+              {
+                "left": "Huyết tương",
+                "right": "Vận chuyển chất dinh dưỡng, chất thải"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về máu và nhóm máu là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Người có nhóm máu O có thể truyền cho các nhóm máu khác (truyền ít, chậm).",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Người nhóm máu AB có thể nhận máu từ các nhóm khác.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Truyền máu không cần xét nghiệm nhóm máu.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "tuan-hoan",
+      "title": "Tim và hệ mạch",
+      "fromExercises": [
+        "bio-g8-b04-q06",
+        "bio-g8-b04-q07",
+        "bio-g8-b04-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Tim người có mấy ngăn?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "2"
+              },
+              {
+                "id": "b",
+                "label": "3"
+              },
+              {
+                "id": "c",
+                "label": "4"
+              },
+              {
+                "id": "d",
+                "label": "5"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Phân loại mạch máu theo chức năng.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Động mạch"
+              },
+              {
+                "id": "b2",
+                "label": "Tĩnh mạch"
+              },
+              {
+                "id": "b3",
+                "label": "Mao mạch"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Dẫn máu từ tim đi đến các cơ quan",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Dẫn máu từ các cơ quan về tim",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i3",
+                "label": "Nơi trao đổi chất giữa máu và tế bào",
+                "bucketId": "b3"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về tim và hệ mạch là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Vòng tuần hoàn nhỏ đưa máu qua phổi để trao đổi khí.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Tâm thất trái bơm máu vào vòng tuần hoàn lớn.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Tĩnh mạch dẫn máu từ tim đến các cơ quan.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Những thói quen nào bảo vệ hệ tim mạch?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tập thể dục vừa sức"
+              },
+              {
+                "id": "b",
+                "label": "Hạn chế ăn mặn và đồ nhiều mỡ"
+              },
+              {
+                "id": "c",
+                "label": "Hút thuốc lá"
+              },
+              {
+                "id": "d",
+                "label": "Ngủ đủ giấc"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Máu chảy thành tia, màu đỏ tươi khi bị thương là chảy máu ở loại mạch nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Mao mạch"
+              },
+              {
+                "id": "b",
+                "label": "Tĩnh mạch"
+              },
+              {
+                "id": "c",
+                "label": "Động mạch"
+              },
+              {
+                "id": "d",
+                "label": "Không phải mạch máu"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    }
+  ]
+}

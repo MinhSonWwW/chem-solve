@@ -1,0 +1,268 @@
+{
+  "lessonId": "phy-g8-b16",
+  "units": [
+    {
+      "id": "dan-nhiet-doi-luu",
+      "title": "Dẫn nhiệt và đối lưu",
+      "fromExercises": [
+        "phy-g8-b16-mcq-001",
+        "phy-g8-b16-mcq-002",
+        "phy-g8-b16-mcq-004",
+        "phy-g8-b16-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại hình thức truyền nhiệt chủ yếu.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Dẫn nhiệt"
+              },
+              {
+                "id": "b2",
+                "label": "Đối lưu"
+              },
+              {
+                "id": "b3",
+                "label": "Bức xạ nhiệt"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Cán thìa kim loại nóng lên khi khuấy canh nóng",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Đáy nồi nóng lên khi đặt trên bếp",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Nước trong nồi nóng lên đều khi đun",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Không khí nóng bốc lên trên",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Mặt Trời sưởi ấm Trái Đất",
+                "bucketId": "b3"
+              },
+              {
+                "id": "i6",
+                "label": "Hơ tay gần bếp lửa",
+                "bucketId": "b3"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Chất nào dẫn nhiệt tốt nhất?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Gỗ"
+              },
+              {
+                "id": "b",
+                "label": "Nhựa"
+              },
+              {
+                "id": "c",
+                "label": "Đồng"
+              },
+              {
+                "id": "d",
+                "label": "Không khí"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về dẫn nhiệt và đối lưu là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Đối lưu xảy ra chủ yếu trong chất lỏng và chất khí.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Chất rắn truyền nhiệt chủ yếu bằng đối lưu.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Không khí dẫn nhiệt kém.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vì sao điều hòa nhiệt độ thường lắp ở trên cao?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để tránh trẻ em"
+              },
+              {
+                "id": "b",
+                "label": "Vì không khí lạnh nặng hơn sẽ đi xuống, tạo dòng đối lưu làm mát cả phòng"
+              },
+              {
+                "id": "c",
+                "label": "Để tiết kiệm dây"
+              },
+              {
+                "id": "d",
+                "label": "Vì đẹp hơn"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "buc-xa",
+      "title": "Bức xạ nhiệt và cách nhiệt",
+      "fromExercises": [
+        "phy-g8-b16-mcq-003",
+        "phy-g8-b16-mcq-005",
+        "phy-g8-b16-mcq-006",
+        "phy-g8-b16-mcq-007"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Hình thức truyền nhiệt nào truyền được trong chân không?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Dẫn nhiệt"
+              },
+              {
+                "id": "b",
+                "label": "Đối lưu"
+              },
+              {
+                "id": "c",
+                "label": "Bức xạ nhiệt"
+              },
+              {
+                "id": "d",
+                "label": "Cả ba"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Vào mùa hè, mặc áo màu nào thấy mát hơn?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Màu đen"
+              },
+              {
+                "id": "b",
+                "label": "Màu sáng (trắng)"
+              },
+              {
+                "id": "c",
+                "label": "Màu đỏ đậm"
+              },
+              {
+                "id": "d",
+                "label": "Màu tím"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về cách nhiệt là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Vật màu sẫm hấp thụ bức xạ nhiệt tốt hơn vật màu sáng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Lớp chân không trong phích nước ngăn dẫn nhiệt và đối lưu.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Áo bông giữ ấm vì bông dẫn nhiệt rất tốt.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vì sao nhà ở vùng nóng thường sơn tường màu sáng?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để phản xạ bớt bức xạ nhiệt từ Mặt Trời"
+              },
+              {
+                "id": "b",
+                "label": "Để hút nhiều nhiệt"
+              },
+              {
+                "id": "c",
+                "label": "Để tường cứng hơn"
+              },
+              {
+                "id": "d",
+                "label": "Để tiết kiệm sơn"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    }
+  ]
+}

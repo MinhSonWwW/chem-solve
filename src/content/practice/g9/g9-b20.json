@@ -1,0 +1,104 @@
+{
+  "lessonId": "g9-b20",
+  "units": [
+    {
+      "id": "tach-kim-loai",
+      "title": "Tách kim loại và hợp kim",
+      "fromExercises": [
+        "g9-b20-mcq-001",
+        "g9-b20-mcq-002",
+        "g9-b20-sort-001",
+        "g9-b20-tf-001",
+        "g9-b20-mcq-003",
+        "g9-b20-ordering-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Hợp kim là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Một kim loại nguyên chất"
+              },
+              {
+                "id": "b",
+                "label": "Vật liệu kim loại có chứa thêm một số nguyên tố khác"
+              },
+              {
+                "id": "c",
+                "label": "Một hợp chất của oxygen"
+              },
+              {
+                "id": "d",
+                "label": "Một phi kim"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Những vật liệu nào là hợp kim?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Gang"
+              },
+              {
+                "id": "b",
+                "label": "Thép"
+              },
+              {
+                "id": "c",
+                "label": "Đồng thau"
+              },
+              {
+                "id": "d",
+                "label": "Nhôm nguyên chất"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Phương pháp điện phân nóng chảy thường dùng để điều chế kim loại nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đồng"
+              },
+              {
+                "id": "b",
+                "label": "Sắt"
+              },
+              {
+                "id": "c",
+                "label": "Nhôm"
+              },
+              {
+                "id": "d",
+                "label": "Bạc"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    }
+  ]
+}

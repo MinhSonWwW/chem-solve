@@ -1,0 +1,124 @@
+{
+  "lessonId": "g9-b28",
+  "units": [
+    {
+      "id": "lipid",
+      "title": "Lipid (chất béo)",
+      "fromExercises": [
+        "g9-b28-mcq-001",
+        "g9-b28-mcq-002",
+        "g9-b28-sort-001",
+        "g9-b28-tf-001",
+        "g9-b28-match-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Chất béo có tan trong nước không?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tan tốt"
+              },
+              {
+                "id": "b",
+                "label": "Không tan, nhẹ hơn nước"
+              },
+              {
+                "id": "c",
+                "label": "Tan và nặng hơn nước"
+              },
+              {
+                "id": "d",
+                "label": "Chỉ tan khi đun nóng"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xà phòng được sản xuất từ chất béo bằng phản ứng nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Phản ứng cháy"
+              },
+              {
+                "id": "b",
+                "label": "Thủy phân chất béo trong môi trường kiềm"
+              },
+              {
+                "id": "c",
+                "label": "Trùng hợp"
+              },
+              {
+                "id": "d",
+                "label": "Lên men"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về lipid (chất béo) là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Dầu thực vật thường ở thể lỏng ở nhiệt độ thường.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Chất béo là nguồn cung cấp năng lượng cho cơ thể.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Ăn càng nhiều chất béo càng tốt cho sức khỏe.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vết dầu mỡ trên quần áo nên giặt bằng gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nước lạnh"
+              },
+              {
+                "id": "b",
+                "label": "Xà phòng hoặc nước giặt"
+              },
+              {
+                "id": "c",
+                "label": "Giấm"
+              },
+              {
+                "id": "d",
+                "label": "Nước muối"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

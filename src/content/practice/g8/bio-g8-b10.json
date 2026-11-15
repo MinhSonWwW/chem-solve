@@ -1,0 +1,240 @@
+{
+  "lessonId": "bio-g8-b10",
+  "units": [
+    {
+      "id": "cau-tao-da",
+      "title": "Cấu tạo và chức năng của da",
+      "fromExercises": [
+        "bio-g8-b10-q01",
+        "bio-g8-b10-q02",
+        "bio-g8-b10-q03",
+        "bio-g8-b10-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sắp xếp các lớp của da từ ngoài vào trong.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Lớp biểu bì",
+              "Lớp bì",
+              "Lớp mỡ dưới da"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ghép bộ phận của da với chức năng.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Tuyến mồ hôi",
+                "right": "Tiết mồ hôi, góp phần điều hòa thân nhiệt"
+              },
+              {
+                "left": "Thụ quan",
+                "right": "Tiếp nhận kích thích nóng, lạnh, đau"
+              },
+              {
+                "left": "Lớp mỡ dưới da",
+                "right": "Cách nhiệt, dự trữ năng lượng"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về cấu tạo và chức năng của da là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Da bảo vệ cơ thể khỏi vi khuẩn và tác động cơ học.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Tắm nắng sớm giúp cơ thể tổng hợp vitamin D.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Nặn mụn bằng tay bẩn là cách chăm sóc da tốt.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Khi bị bỏng nhẹ do nước sôi, nên làm gì trước tiên?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Bôi kem đánh răng"
+              },
+              {
+                "id": "b",
+                "label": "Ngâm hoặc xả vùng bỏng dưới nước mát sạch"
+              },
+              {
+                "id": "c",
+                "label": "Chọc vỡ bọng nước"
+              },
+              {
+                "id": "d",
+                "label": "Bôi nước mắm"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "than-nhiet",
+      "title": "Điều hòa thân nhiệt",
+      "fromExercises": [
+        "bio-g8-b10-q04",
+        "bio-g8-b10-q05",
+        "bio-g8-b10-q06",
+        "bio-g8-b10-q07"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại phản ứng của cơ thể.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Khi trời nóng"
+              },
+              {
+                "id": "b2",
+                "label": "Khi trời lạnh"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Tiết nhiều mồ hôi",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Mạch máu dưới da dãn ra",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Run cơ",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Mạch máu dưới da co lại",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Nổi da gà",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về điều hòa thân nhiệt là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Thân nhiệt bình thường của người khoảng 37 °C.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Trung khu điều hòa thân nhiệt nằm ở não.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Khi trời rét nên mặc ít quần áo để cơ thể quen lạnh.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Khi bị say nắng, cần làm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tiếp tục làm việc ngoài nắng"
+              },
+              {
+                "id": "b",
+                "label": "Đưa người bệnh vào chỗ mát, nới lỏng quần áo, chườm mát"
+              },
+              {
+                "id": "c",
+                "label": "Cho uống rượu"
+              },
+              {
+                "id": "d",
+                "label": "Đắp chăn dày"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Mồ hôi bay hơi giúp gì cho cơ thể?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Làm cơ thể nóng hơn"
+              },
+              {
+                "id": "b",
+                "label": "Lấy bớt nhiệt, làm mát cơ thể"
+              },
+              {
+                "id": "c",
+                "label": "Làm da khô nứt"
+              },
+              {
+                "id": "d",
+                "label": "Không có tác dụng"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

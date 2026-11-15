@@ -1,0 +1,228 @@
+{
+  "lessonId": "phy-g7-b12",
+  "units": [
+    {
+      "id": "tu-pho",
+      "title": "Từ trường, từ phổ và đường sức từ",
+      "fromExercises": [
+        "phy-g7-b12-mcq-001",
+        "phy-g7-b12-mcq-002",
+        "phy-g7-b12-mcq-003",
+        "phy-g7-b12-mcq-004"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Từ trường tồn tại ở đâu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chỉ bên trong nam châm"
+              },
+              {
+                "id": "b",
+                "label": "Xung quanh nam châm"
+              },
+              {
+                "id": "c",
+                "label": "Chỉ ở cực Bắc"
+              },
+              {
+                "id": "d",
+                "label": "Không tồn tại"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về đường sức từ là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Bên ngoài nam châm, đường sức từ đi ra ở cực Bắc, đi vào ở cực Nam.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Ở chỗ từ trường mạnh, đường sức từ dày hơn.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Các đường sức từ cắt nhau tại hai cực.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Để tạo ra từ phổ của thanh nam châm, người ta dùng gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Bột phấn"
+              },
+              {
+                "id": "b",
+                "label": "Mạt sắt rắc trên tấm nhựa đặt trên nam châm"
+              },
+              {
+                "id": "c",
+                "label": "Nước"
+              },
+              {
+                "id": "d",
+                "label": "Cát"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vật nào dùng để phát hiện từ trường?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nhiệt kế"
+              },
+              {
+                "id": "b",
+                "label": "Kim nam châm (la bàn)"
+              },
+              {
+                "id": "c",
+                "label": "Thước đo"
+              },
+              {
+                "id": "d",
+                "label": "Đồng hồ"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "la-ban",
+      "title": "La bàn và từ trường Trái Đất",
+      "fromExercises": [
+        "phy-g7-b12-mcq-005",
+        "phy-g7-b12-mcq-006",
+        "phy-g7-b12-tf-007",
+        "phy-g7-b12-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Kim la bàn để tự do chỉ theo hướng nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đông – Tây"
+              },
+              {
+                "id": "b",
+                "label": "Bắc – Nam"
+              },
+              {
+                "id": "c",
+                "label": "Chỉ lung tung"
+              },
+              {
+                "id": "d",
+                "label": "Luôn chỉ lên trời"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Vì sao kim la bàn chỉ hướng Bắc – Nam?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì gió thổi"
+              },
+              {
+                "id": "b",
+                "label": "Vì Trái Đất có từ trường"
+              },
+              {
+                "id": "c",
+                "label": "Vì ánh sáng Mặt Trời"
+              },
+              {
+                "id": "d",
+                "label": "Vì trọng lực"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về la bàn là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "La bàn giúp xác định phương hướng khi đi biển, đi rừng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Để la bàn gần nam châm hoặc vật bằng sắt có thể làm kim chỉ sai.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Kim la bàn là một kim nhôm.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Sắp xếp các bước dùng la bàn để tìm hướng.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Đặt la bàn nằm ngang, tránh xa vật bằng sắt",
+              "Chờ kim la bàn đứng yên",
+              "Xoay vỏ la bàn cho vạch N trùng với đầu Bắc của kim",
+              "Đọc các hướng cần tìm trên mặt la bàn"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

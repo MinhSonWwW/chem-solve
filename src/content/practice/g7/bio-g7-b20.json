@@ -1,0 +1,245 @@
+{
+  "lessonId": "bio-g7-b20",
+  "units": [
+    {
+      "id": "thuc-vat-ht",
+      "title": "Sinh sản hữu tính ở thực vật",
+      "fromExercises": [
+        "bio-g7-b20-q01",
+        "bio-g7-b20-q02",
+        "bio-g7-b20-q03",
+        "bio-g7-b20-q04",
+        "bio-g7-b20-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép bộ phận của hoa với vai trò.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Nhị",
+                "right": "Chứa hạt phấn (giao tử đực)"
+              },
+              {
+                "left": "Nhụy",
+                "right": "Chứa noãn (giao tử cái)"
+              },
+              {
+                "left": "Bầu nhụy",
+                "right": "Phát triển thành quả"
+              },
+              {
+                "left": "Noãn đã thụ tinh",
+                "right": "Phát triển thành hạt"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Sắp xếp quá trình sinh sản hữu tính ở cây có hoa.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Thụ phấn",
+              "Thụ tinh",
+              "Hình thành hạt và quả",
+              "Hạt nảy mầm thành cây mới"
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Thụ phấn là hạt phấn tiếp xúc với đầu nhụy.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Ong, bướm giúp hoa thụ phấn.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Quả do nhị hoa phát triển thành.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dong-vat-ht",
+      "title": "Sinh sản hữu tính ở động vật",
+      "fromExercises": [
+        "bio-g7-b20-q05",
+        "bio-g7-b20-q06",
+        "bio-g7-b20-q07"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại hình thức thụ tinh.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Thụ tinh ngoài"
+              },
+              {
+                "id": "b2",
+                "label": "Thụ tinh trong"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Cá chép",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Ếch",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Gà",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Mèo",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Rắn",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về sinh sản hữu tính ở động vật là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Giao tử đực kết hợp với giao tử cái tạo thành hợp tử.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Thụ tinh trong giúp tỉ lệ trứng được thụ tinh cao hơn.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Mọi động vật đều thụ tinh ngoài.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Hợp tử phát triển thành gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Giao tử"
+              },
+              {
+                "id": "b",
+                "label": "Phôi rồi thành cơ thể mới"
+              },
+              {
+                "id": "c",
+                "label": "Hạt phấn"
+              },
+              {
+                "id": "d",
+                "label": "Noãn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Ưu điểm của sinh sản hữu tính là gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tạo con giống hệt mẹ"
+              },
+              {
+                "id": "b",
+                "label": "Tạo con cái đa dạng, dễ thích nghi với môi trường thay đổi"
+              },
+              {
+                "id": "c",
+                "label": "Không cần giao tử"
+              },
+              {
+                "id": "d",
+                "label": "Diễn ra nhanh nhất"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Gà mái đẻ trứng có phôi là kết quả của hình thức nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Thụ tinh ngoài"
+              },
+              {
+                "id": "b",
+                "label": "Thụ tinh trong"
+              },
+              {
+                "id": "c",
+                "label": "Sinh sản vô tính"
+              },
+              {
+                "id": "d",
+                "label": "Nảy chồi"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

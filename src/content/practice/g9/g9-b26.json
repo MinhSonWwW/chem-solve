@@ -1,0 +1,74 @@
+{
+  "lessonId": "g9-b26",
+  "units": [
+    {
+      "id": "ethylic-alcohol",
+      "title": "Ethylic alcohol",
+      "fromExercises": [
+        "g9-b26-formula-001",
+        "g9-b26-tf-001",
+        "g9-b26-mcq-001",
+        "g9-b26-calc-001",
+        "g9-b26-eq-001",
+        "g9-b26-ord-001"
+      ],
+      "generator": "alcohol-degree",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ethylic alcohol tan trong nước như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Không tan"
+              },
+              {
+                "id": "b",
+                "label": "Tan vô hạn trong nước"
+              },
+              {
+                "id": "c",
+                "label": "Tan rất ít"
+              },
+              {
+                "id": "d",
+                "label": "Chỉ tan trong dầu"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Độ rượu 40° có ý nghĩa gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "40 g rượu trong 100 g nước"
+              },
+              {
+                "id": "b",
+                "label": "Trong 100 mL rượu có 40 mL ethylic alcohol nguyên chất"
+              },
+              {
+                "id": "c",
+                "label": "40 mL nước trong 100 mL rượu"
+              },
+              {
+                "id": "d",
+                "label": "Rượu sôi ở 40 °C"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

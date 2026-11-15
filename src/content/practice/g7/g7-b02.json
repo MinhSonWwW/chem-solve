@@ -1,0 +1,167 @@
+{
+  "lessonId": "g7-b02",
+  "units": [
+    {
+      "id": "cau-tao",
+      "title": "Cấu tạo nguyên tử",
+      "fromExercises": [
+        "g7-b02-mcq-001",
+        "g7-b02-mcq-002",
+        "g7-b02-calc-003",
+        "g7-b02-tf-005",
+        "g7-b02-match-006",
+        "g7-b02-sort-001",
+        "g7-b02-ordering-001",
+        "g7-b02-match-001",
+        "g7-b02-sort-002"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Hạt nào trong nguyên tử mang điện tích âm?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Proton"
+              },
+              {
+                "id": "b",
+                "label": "Neutron"
+              },
+              {
+                "id": "c",
+                "label": "Electron"
+              },
+              {
+                "id": "d",
+                "label": "Hạt nhân"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Vì sao nguyên tử trung hòa về điện?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì không có hạt mang điện"
+              },
+              {
+                "id": "b",
+                "label": "Vì số proton bằng số electron"
+              },
+              {
+                "id": "c",
+                "label": "Vì số neutron bằng số proton"
+              },
+              {
+                "id": "d",
+                "label": "Vì electron không mang điện"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "khoi-luong",
+      "title": "Khối lượng nguyên tử",
+      "fromExercises": [
+        "g7-b02-calc-004",
+        "g7-b02-num-001",
+        "g7-b02-tf-001"
+      ],
+      "generator": "atom-particles",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Đơn vị đo khối lượng nguyên tử là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "gam (g)"
+              },
+              {
+                "id": "b",
+                "label": "kilôgam (kg)"
+              },
+              {
+                "id": "c",
+                "label": "amu"
+              },
+              {
+                "id": "d",
+                "label": "mililít (mL)"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Khối lượng của nguyên tử tập trung chủ yếu ở đâu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ở hạt nhân"
+              },
+              {
+                "id": "b",
+                "label": "Ở lớp vỏ electron"
+              },
+              {
+                "id": "c",
+                "label": "Phân bố đều khắp nguyên tử"
+              },
+              {
+                "id": "d",
+                "label": "Ở electron lớp ngoài cùng"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về khối lượng các hạt là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Khối lượng proton xấp xỉ bằng khối lượng neutron.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Electron có khối lượng rất nhỏ so với proton.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Khối lượng nguyên tử bằng số electron.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

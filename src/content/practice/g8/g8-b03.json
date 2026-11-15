@@ -1,0 +1,91 @@
+{
+  "lessonId": "g8-b03",
+  "units": [
+    {
+      "id": "mol",
+      "title": "Mol và khối lượng mol",
+      "fromExercises": [
+        "g8-b03-mcq-001",
+        "g8-b03-tf-001",
+        "g8-b03-calc-002",
+        "g8-b03-calc-005",
+        "g8-b03-match-001",
+        "g8-b03-order-001"
+      ],
+      "generator": "mol-mass",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Khối lượng mol của một chất có đơn vị là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "amu"
+              },
+              {
+                "id": "b",
+                "label": "g/mol"
+              },
+              {
+                "id": "c",
+                "label": "mol/L"
+              },
+              {
+                "id": "d",
+                "label": "L/mol"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-tich-ti-khoi",
+      "title": "Thể tích mol và tỉ khối chất khí",
+      "fromExercises": [
+        "g8-b03-mcq-002",
+        "g8-b03-mcq-003",
+        "g8-b03-tf-002",
+        "g8-b03-calc-001",
+        "g8-b03-calc-003",
+        "g8-b03-calc-004",
+        "g8-b03-formula-001",
+        "g8-b03-formula-002"
+      ],
+      "generator": "gas-volume",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Khí nào sau đây nhẹ hơn không khí?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "[[CO2]]"
+              },
+              {
+                "id": "b",
+                "label": "[[SO2]]"
+              },
+              {
+                "id": "c",
+                "label": "[[H2]]"
+              },
+              {
+                "id": "d",
+                "label": "[[O2]]"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    }
+  ]
+}

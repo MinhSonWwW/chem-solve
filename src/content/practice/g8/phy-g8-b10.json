@@ -1,0 +1,227 @@
+{
+  "lessonId": "phy-g8-b10",
+  "units": [
+    {
+      "id": "ki-hieu",
+      "title": "Kí hiệu và sơ đồ mạch điện",
+      "fromExercises": [
+        "phy-g8-b10-mcq-001",
+        "phy-g8-b10-mcq-002",
+        "phy-g8-b10-mcq-005",
+        "phy-g8-b10-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép bộ phận với chức năng trong mạch điện.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Nguồn điện",
+                "right": "Cung cấp dòng điện"
+              },
+              {
+                "left": "Công tắc (khóa K)",
+                "right": "Đóng, ngắt mạch điện"
+              },
+              {
+                "left": "Bóng đèn",
+                "right": "Thiết bị tiêu thụ điện"
+              },
+              {
+                "left": "Dây dẫn",
+                "right": "Nối các bộ phận thành mạch"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Mạch điện kín là mạch như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Mạch có chỗ hở"
+              },
+              {
+                "id": "b",
+                "label": "Mạch nối liền từ cực dương qua các thiết bị về cực âm của nguồn"
+              },
+              {
+                "id": "c",
+                "label": "Mạch không có nguồn"
+              },
+              {
+                "id": "d",
+                "label": "Mạch chỉ có dây dẫn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về kí hiệu và sơ đồ mạch điện là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Khi khóa K mở, đèn không sáng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Mắc nối tiếp nhiều pin cho hiệu điện thế lớn hơn.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Sơ đồ mạch điện vẽ bằng hình ảnh thật của thiết bị.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vì sao phải dùng sơ đồ mạch điện?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cho đẹp"
+              },
+              {
+                "id": "b",
+                "label": "Để biểu diễn mạch điện đơn giản, dễ hiểu và dễ lắp"
+              },
+              {
+                "id": "c",
+                "label": "Để tăng dòng điện"
+              },
+              {
+                "id": "d",
+                "label": "Không cần thiết"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chieu-dong-dien",
+      "title": "Chiều dòng điện",
+      "fromExercises": [
+        "phy-g8-b10-mcq-003",
+        "phy-g8-b10-mcq-004",
+        "phy-g8-b10-mcq-006",
+        "phy-g8-b10-mcq-007"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Chiều quy ước của dòng điện là chiều nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Từ cực dương qua dây dẫn và thiết bị tới cực âm của nguồn"
+              },
+              {
+                "id": "b",
+                "label": "Từ cực âm tới cực dương"
+              },
+              {
+                "id": "c",
+                "label": "Không xác định"
+              },
+              {
+                "id": "d",
+                "label": "Thay đổi liên tục"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Electron tự do trong dây kim loại dịch chuyển theo chiều nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cùng chiều quy ước"
+              },
+              {
+                "id": "b",
+                "label": "Ngược chiều quy ước của dòng điện"
+              },
+              {
+                "id": "c",
+                "label": "Đứng yên"
+              },
+              {
+                "id": "d",
+                "label": "Vuông góc với dây"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về chiều dòng điện là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Bên ngoài nguồn, dòng điện đi từ cực dương sang cực âm.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Chiều dòng điện quy ước ngược chiều dịch chuyển của electron.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Dòng điện đi từ cực âm sang cực dương ở mạch ngoài.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Sắp xếp các bước lắp một mạch điện đơn giản.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Chuẩn bị pin, khóa K, bóng đèn và dây nối",
+              "Vẽ sơ đồ mạch điện",
+              "Nối các bộ phận theo sơ đồ khi khóa K mở",
+              "Đóng khóa K và quan sát đèn"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

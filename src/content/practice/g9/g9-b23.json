@@ -1,0 +1,124 @@
+{
+  "lessonId": "g9-b23",
+  "units": [
+    {
+      "id": "methane",
+      "title": "Alkane và methane",
+      "fromExercises": [
+        "g9-b23-mcq-001",
+        "g9-b23-eq-002",
+        "g9-b23-mcq-003",
+        "g9-b23-tf-004",
+        "g9-b23-ord-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân tử methane có công thức nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "[[C2H4]]"
+              },
+              {
+                "id": "b",
+                "label": "[[CH4]]"
+              },
+              {
+                "id": "c",
+                "label": "[[C2H6]]"
+              },
+              {
+                "id": "d",
+                "label": "[[C2H5OH]]"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về alkane và methane là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Methane là chất khí không màu, không mùi, nhẹ hơn không khí.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Phản ứng đặc trưng của methane là phản ứng thế với chlorine khi có ánh sáng.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Methane làm mất màu dung dịch bromine.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Vì sao hầm biogas tạo ra khí dùng để đun nấu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì tạo ra oxygen"
+              },
+              {
+                "id": "b",
+                "label": "Vì phân hủy chất thải tạo ra khí methane cháy được"
+              },
+              {
+                "id": "c",
+                "label": "Vì tạo ra nitrogen"
+              },
+              {
+                "id": "d",
+                "label": "Vì tạo ra hơi nước"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Khi đốt cháy hoàn toàn methane, sản phẩm là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Carbon và hydrogen"
+              },
+              {
+                "id": "b",
+                "label": "Carbon dioxide và nước"
+              },
+              {
+                "id": "c",
+                "label": "Carbon monoxide"
+              },
+              {
+                "id": "d",
+                "label": "Chỉ có nước"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

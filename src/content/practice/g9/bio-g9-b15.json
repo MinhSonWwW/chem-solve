@@ -1,0 +1,223 @@
+{
+  "lessonId": "bio-g9-b15",
+  "units": [
+    {
+      "id": "nhan-to",
+      "title": "Các nhân tố tiến hóa",
+      "fromExercises": [
+        "bio-g9-b15-q01",
+        "bio-g9-b15-q02",
+        "bio-g9-b15-q03",
+        "bio-g9-b15-q04"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép nhân tố tiến hóa với vai trò.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Đột biến",
+                "right": "Tạo nguồn nguyên liệu sơ cấp"
+              },
+              {
+                "left": "Giao phối",
+                "right": "Tạo biến dị tổ hợp"
+              },
+              {
+                "left": "Chọn lọc tự nhiên",
+                "right": "Định hướng quá trình tiến hóa"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về các nhân tố tiến hóa là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Đơn vị tiến hóa cơ sở là quần thể.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Đột biến là nguồn nguyên liệu sơ cấp của tiến hóa.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Cá thể là đơn vị tiến hóa cơ sở.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Nhân tố nào định hướng quá trình tiến hóa?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đột biến"
+              },
+              {
+                "id": "b",
+                "label": "Giao phối ngẫu nhiên"
+              },
+              {
+                "id": "c",
+                "label": "Chọn lọc tự nhiên"
+              },
+              {
+                "id": "d",
+                "label": "Di nhập gene"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Quá trình làm biến đổi tần số allele và thành phần kiểu gene của quần thể gọi là gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tiến hóa nhỏ"
+              },
+              {
+                "id": "b",
+                "label": "Tiến hóa lớn"
+              },
+              {
+                "id": "c",
+                "label": "Sinh sản"
+              },
+              {
+                "id": "d",
+                "label": "Phát triển cá thể"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    },
+    {
+      "id": "loai-moi",
+      "title": "Hình thành đặc điểm thích nghi và loài mới",
+      "fromExercises": [
+        "bio-g9-b15-q05",
+        "bio-g9-b15-q06",
+        "bio-g9-b15-q07",
+        "bio-g9-b15-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Xác định các nhận định sau về hình thành đặc điểm thích nghi và loài mới là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Đặc điểm thích nghi chỉ hợp lí trong một môi trường nhất định.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Cách li sinh sản là dấu hiệu quan trọng để xác định loài mới.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Đặc điểm thích nghi đúng trong mọi môi trường.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Màu sắc ngụy trang của sâu ăn lá giống màu lá cây là ví dụ về gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đặc điểm thích nghi"
+              },
+              {
+                "id": "b",
+                "label": "Đột biến có hại"
+              },
+              {
+                "id": "c",
+                "label": "Chọn lọc nhân tạo"
+              },
+              {
+                "id": "d",
+                "label": "Tập tính học được"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Sắp xếp quá trình hình thành đặc điểm thích nghi.",
+          "difficulty": 3,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Phát sinh đột biến và biến dị tổ hợp",
+              "Chọn lọc tự nhiên giữ lại cá thể thích nghi",
+              "Cá thể thích nghi sinh sản nhiều hơn",
+              "Đặc điểm thích nghi phổ biến trong quần thể"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Loài mới được hình thành khi nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Khi có một cá thể mới"
+              },
+              {
+                "id": "b",
+                "label": "Khi xuất hiện cách li sinh sản với loài gốc"
+              },
+              {
+                "id": "c",
+                "label": "Khi màu sắc thay đổi"
+              },
+              {
+                "id": "d",
+                "label": "Khi thay đổi thức ăn"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

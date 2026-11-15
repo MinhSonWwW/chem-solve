@@ -1,0 +1,258 @@
+{
+  "lessonId": "bio-g7-b13",
+  "units": [
+    {
+      "id": "cam-ung-tv",
+      "title": "Cảm ứng ở thực vật",
+      "fromExercises": [
+        "bio-g7-b13-q01",
+        "bio-g7-b13-q02",
+        "bio-g7-b13-q03",
+        "bio-g7-b13-q04",
+        "bio-g7-b13-q05",
+        "bio-g7-b13-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép hiện tượng với kiểu cảm ứng ở thực vật.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Ngọn cây vươn về phía có ánh sáng",
+                "right": "Hướng sáng"
+              },
+              {
+                "left": "Rễ cây đâm sâu xuống đất",
+                "right": "Hướng trọng lực"
+              },
+              {
+                "left": "Rễ cây mọc về phía có nước",
+                "right": "Hướng nước"
+              },
+              {
+                "left": "Tua cuốn quấn quanh cọc",
+                "right": "Hướng tiếp xúc"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về cảm ứng ở thực vật là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Cây trinh nữ cụp lá khi bị chạm vào.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Thực vật hoàn toàn không phản ứng với môi trường.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "tap-tinh",
+      "title": "Tập tính ở động vật",
+      "fromExercises": [
+        "bio-g7-b13-q06",
+        "bio-g7-b13-q07"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các tập tính sau.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Tập tính bẩm sinh"
+              },
+              {
+                "id": "b2",
+                "label": "Tập tính học được"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Nhện chăng tơ",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Chim xây tổ",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Mèo con bú mẹ",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Chó ngồi khi nghe lệnh",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Học sinh dừng xe khi đèn đỏ",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Khỉ làm xiếc",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về tập tính là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Tập tính bẩm sinh sinh ra đã có, không cần học.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Tập tính học được hình thành trong quá trình sống.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Tập tính học được truyền thẳng từ bố mẹ sang con qua di truyền.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Cảm ứng ở sinh vật là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Khả năng lớn lên"
+              },
+              {
+                "id": "b",
+                "label": "Khả năng tiếp nhận và phản ứng với kích thích từ môi trường"
+              },
+              {
+                "id": "c",
+                "label": "Khả năng sinh sản"
+              },
+              {
+                "id": "d",
+                "label": "Khả năng tiêu hóa"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Ve sầu kêu vào mùa hè để làm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để báo trời mưa"
+              },
+              {
+                "id": "b",
+                "label": "Để gọi bạn tình (tập tính sinh sản)"
+              },
+              {
+                "id": "c",
+                "label": "Để đuổi chim"
+              },
+              {
+                "id": "d",
+                "label": "Để hút nhựa cây"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Vì sao gà con khi nở đã biết mổ thóc?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Do được dạy"
+              },
+              {
+                "id": "b",
+                "label": "Do tập tính bẩm sinh"
+              },
+              {
+                "id": "c",
+                "label": "Do bắt chước người"
+              },
+              {
+                "id": "d",
+                "label": "Do tình cờ"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Hiện tượng chim di cư về phương Nam tránh rét thuộc loại nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tập tính học được"
+              },
+              {
+                "id": "b",
+                "label": "Tập tính bẩm sinh"
+              },
+              {
+                "id": "c",
+                "label": "Hướng sáng"
+              },
+              {
+                "id": "d",
+                "label": "Hướng nước"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

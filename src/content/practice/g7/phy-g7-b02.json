@@ -1,0 +1,135 @@
+{
+  "lessonId": "phy-g7-b02",
+  "units": [
+    {
+      "id": "phuong-phap-do",
+      "title": "Phương pháp đo tốc độ",
+      "fromExercises": [
+        "phy-g7-b02-mcq-001",
+        "phy-g7-b02-mcq-002",
+        "phy-g7-b02-ord-003",
+        "phy-g7-b02-mcq-004",
+        "phy-g7-b02-tf-007",
+        "phy-g7-b02-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Đồng hồ đo thời gian hiện số dùng cổng quang điện có ưu điểm gì so với bấm đồng hồ bằng tay?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Rẻ hơn"
+              },
+              {
+                "id": "b",
+                "label": "Đo thời gian chính xác hơn, không phụ thuộc phản xạ của người bấm"
+              },
+              {
+                "id": "c",
+                "label": "Đo được quãng đường"
+              },
+              {
+                "id": "d",
+                "label": "Không cần điện"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Thiết bị nào thường gắn trên xe máy để hiển thị tốc độ?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nhiệt kế"
+              },
+              {
+                "id": "b",
+                "label": "Tốc kế"
+              },
+              {
+                "id": "c",
+                "label": "Ampe kế"
+              },
+              {
+                "id": "d",
+                "label": "Lực kế"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tinh-tu-so-lieu",
+      "title": "Tính tốc độ từ số liệu đo",
+      "fromExercises": [
+        "phy-g7-b02-num-005",
+        "phy-g7-b02-num-006"
+      ],
+      "generator": "speed-convert",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Đo được một bạn chạy 60 m hết 12 s. Tốc độ chạy của bạn đó là bao nhiêu m/s?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 5,
+            "unit": "m/s",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xe đồ chơi đi qua hai cổng quang điện cách nhau 0,5 m trong 0,25 s. Tốc độ của xe là bao nhiêu m/s?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 2,
+            "unit": "m/s",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về đo tốc độ là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Muốn đo tốc độ cần đo quãng đường và thời gian đi hết quãng đường đó.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Đo quãng đường bằng thước, đo thời gian bằng đồng hồ.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Chỉ cần đo thời gian là biết tốc độ.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

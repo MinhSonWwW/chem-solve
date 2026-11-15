@@ -1,0 +1,263 @@
+{
+  "lessonId": "bio-g7-b21",
+  "units": [
+    {
+      "id": "yeu-to-ss",
+      "title": "Các yếu tố ảnh hưởng đến sinh sản",
+      "fromExercises": [
+        "bio-g7-b21-q01",
+        "bio-g7-b21-q03",
+        "bio-g7-b21-q07"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các yếu tố ảnh hưởng đến sinh sản.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Yếu tố bên trong"
+              },
+              {
+                "id": "b2",
+                "label": "Yếu tố bên ngoài"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Đặc điểm của loài",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Hormone sinh sản",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Nhiệt độ",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Ánh sáng",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Thức ăn",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về các yếu tố ảnh hưởng đến sinh sản là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Thiếu thức ăn làm giảm khả năng sinh sản của vật nuôi.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nhiệt độ có thể ảnh hưởng đến giới tính của con non ở một số loài bò sát.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Ánh sáng không ảnh hưởng đến sự ra hoa của cây.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Thụ phấn bổ sung cho cây ngô nhằm mục đích gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Làm cây cao hơn"
+              },
+              {
+                "id": "b",
+                "label": "Tăng tỉ lệ thụ phấn, bắp có nhiều hạt hơn"
+              },
+              {
+                "id": "c",
+                "label": "Làm lá to hơn"
+              },
+              {
+                "id": "d",
+                "label": "Diệt sâu"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Thời tiết mưa nhiều khi cây ra hoa có thể làm gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tăng tỉ lệ đậu quả"
+              },
+              {
+                "id": "b",
+                "label": "Làm giảm thụ phấn, giảm tỉ lệ đậu quả"
+              },
+              {
+                "id": "c",
+                "label": "Không ảnh hưởng"
+              },
+              {
+                "id": "d",
+                "label": "Làm quả to hơn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Chiếu sáng thêm cho gà đẻ nhằm mục đích gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để gà ngủ nhiều hơn"
+              },
+              {
+                "id": "b",
+                "label": "Kích thích gà đẻ nhiều trứng hơn"
+              },
+              {
+                "id": "c",
+                "label": "Để gà lớn chậm"
+              },
+              {
+                "id": "d",
+                "label": "Để diệt vi khuẩn"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ung-dung-ss",
+      "title": "Điều khiển sinh sản và sức khỏe sinh sản",
+      "fromExercises": [
+        "bio-g7-b21-q02",
+        "bio-g7-b21-q04",
+        "bio-g7-b21-q05",
+        "bio-g7-b21-q06",
+        "bio-g7-b21-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Xác định các nhận định sau về điều khiển sinh sản là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Thụ tinh nhân tạo giúp nhân nhanh giống vật nuôi tốt.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Sinh đẻ có kế hoạch giúp nâng cao chất lượng cuộc sống.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Kĩ thuật nuôi cấy mô là hình thức sinh sản hữu tính.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Những biện pháp nào giúp tăng hiệu quả sinh sản của vật nuôi?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chọn giống tốt"
+              },
+              {
+                "id": "b",
+                "label": "Chăm sóc, cho ăn đủ chất"
+              },
+              {
+                "id": "c",
+                "label": "Phòng bệnh cho vật nuôi"
+              },
+              {
+                "id": "d",
+                "label": "Nhốt vật nuôi trong chuồng tối, bẩn"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Tiêm hormone cho cá bố mẹ trong nuôi cá nhằm mục đích gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Làm cá lớn nhanh"
+              },
+              {
+                "id": "b",
+                "label": "Kích thích cá đẻ trứng đồng loạt"
+              },
+              {
+                "id": "c",
+                "label": "Chữa bệnh cho cá"
+              },
+              {
+                "id": "d",
+                "label": "Đổi màu cá"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

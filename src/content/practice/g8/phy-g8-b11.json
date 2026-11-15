@@ -1,0 +1,263 @@
+{
+  "lessonId": "phy-g8-b11",
+  "units": [
+    {
+      "id": "nhiet-sang-sinh-li",
+      "title": "Tác dụng nhiệt, phát sáng, sinh lí",
+      "fromExercises": [
+        "phy-g8-b11-mcq-001",
+        "phy-g8-b11-mcq-002",
+        "phy-g8-b11-mcq-006",
+        "phy-g8-b11-mcq-007"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép thiết bị với tác dụng chính của dòng điện.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Bàn là điện",
+                "right": "Tác dụng nhiệt"
+              },
+              {
+                "left": "Đèn LED",
+                "right": "Tác dụng phát sáng"
+              },
+              {
+                "left": "Chuông điện",
+                "right": "Tác dụng từ"
+              },
+              {
+                "left": "Máy mạ đồng",
+                "right": "Tác dụng hóa học"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về tác dụng nhiệt, phát sáng, sinh lí là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Dòng điện đi qua cơ thể người có thể gây nguy hiểm.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Sửa điện cần ngắt cầu dao trước.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Dòng điện qua dây dẫn không làm dây nóng lên.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Ấm điện đun sôi nước nhờ tác dụng nào của dòng điện?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Từ"
+              },
+              {
+                "id": "b",
+                "label": "Nhiệt"
+              },
+              {
+                "id": "c",
+                "label": "Hóa học"
+              },
+              {
+                "id": "d",
+                "label": "Phát sáng"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Để an toàn điện, không nên làm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ngắt điện trước khi sửa"
+              },
+              {
+                "id": "b",
+                "label": "Dùng tay ướt cắm phích điện"
+              },
+              {
+                "id": "c",
+                "label": "Dùng dụng cụ có cán cách điện"
+              },
+              {
+                "id": "d",
+                "label": "Lắp cầu chì, aptomat"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tu-hoa-hoc",
+      "title": "Tác dụng từ và tác dụng hóa học",
+      "fromExercises": [
+        "phy-g8-b11-mcq-003",
+        "phy-g8-b11-mcq-004",
+        "phy-g8-b11-mcq-005",
+        "phy-g8-b11-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Cuộn dây có dòng điện chạy qua hút được đinh sắt. Đây là tác dụng gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nhiệt"
+              },
+              {
+                "id": "b",
+                "label": "Từ"
+              },
+              {
+                "id": "c",
+                "label": "Phát sáng"
+              },
+              {
+                "id": "d",
+                "label": "Sinh lí"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Mạ bạc cho đồ trang sức là ứng dụng tác dụng nào của dòng điện?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nhiệt"
+              },
+              {
+                "id": "b",
+                "label": "Từ"
+              },
+              {
+                "id": "c",
+                "label": "Hóa học"
+              },
+              {
+                "id": "d",
+                "label": "Phát sáng"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về tác dụng từ và tác dụng hóa học là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Dòng điện qua dung dịch muối đồng làm đồng bám vào cực âm.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nam châm điện hoạt động nhờ tác dụng từ của dòng điện.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Quạt điện quay chủ yếu nhờ tác dụng phát sáng của dòng điện.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Phân loại thiết bị theo tác dụng chính.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Tác dụng từ"
+              },
+              {
+                "id": "b2",
+                "label": "Tác dụng nhiệt"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Quạt điện",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Cần cẩu điện",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Loa điện",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Nồi cơm điện",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Máy sấy tóc (phần sợi đốt)",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Bếp điện",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

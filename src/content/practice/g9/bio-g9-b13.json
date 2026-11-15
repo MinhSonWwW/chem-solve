@@ -1,0 +1,202 @@
+{
+  "lessonId": "bio-g9-b13",
+  "units": [
+    {
+      "id": "cong-nghe-te-bao",
+      "title": "Công nghệ tế bào",
+      "fromExercises": [
+        "bio-g9-b13-q01",
+        "bio-g9-b13-q02",
+        "bio-g9-b13-q03"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Nuôi cấy mô tế bào thực vật có ưu điểm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tạo nhiều cây giống đồng đều, sạch bệnh trong thời gian ngắn"
+              },
+              {
+                "id": "b",
+                "label": "Tạo cây khác hoàn toàn cây mẹ"
+              },
+              {
+                "id": "c",
+                "label": "Rất chậm"
+              },
+              {
+                "id": "d",
+                "label": "Không dùng được"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về công nghệ tế bào là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Cừu Dolly được tạo ra bằng kĩ thuật nhân bản vô tính.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Cấy truyền phôi giúp nhân nhanh giống vật nuôi quý.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Nuôi cấy mô tạo ra cây con khác cây mẹ về kiểu gene.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Sắp xếp các bước nuôi cấy mô tế bào thực vật.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Lấy mẫu mô từ cây mẹ",
+              "Nuôi cấy trong môi trường dinh dưỡng vô trùng",
+              "Tạo chồi và rễ",
+              "Đưa cây con ra trồng ngoài đất"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Công nghệ tế bào được ứng dụng để làm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nhân nhanh giống cây trồng, bảo tồn giống quý"
+              },
+              {
+                "id": "b",
+                "label": "Phá hủy giống"
+              },
+              {
+                "id": "c",
+                "label": "Làm cây chết"
+              },
+              {
+                "id": "d",
+                "label": "Tạo ra nhiên liệu"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Kĩ thuật nhân giống nào dùng mô nhỏ của cây trong ống nghiệm?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Giâm cành"
+              },
+              {
+                "id": "b",
+                "label": "Chiết cành"
+              },
+              {
+                "id": "c",
+                "label": "Nuôi cấy mô"
+              },
+              {
+                "id": "d",
+                "label": "Gieo hạt"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cong-nghe-gen",
+      "title": "Công nghệ gene",
+      "fromExercises": [
+        "bio-g9-b13-q04",
+        "bio-g9-b13-q05",
+        "bio-g9-b13-q06",
+        "bio-g9-b13-q07",
+        "bio-g9-b13-q08",
+        "bio-g9-b13-ord-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Xác định các nhận định sau về công nghệ gene là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Công nghệ gene giúp sản xuất insulin chữa bệnh tiểu đường.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Cây trồng biến đổi gene cần được đánh giá an toàn trước khi sử dụng.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Công nghệ gene không có ứng dụng trong y học.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Gạo vàng (Golden Rice) được chuyển gene nhằm bổ sung chất gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Protein"
+              },
+              {
+                "id": "b",
+                "label": "Tiền chất vitamin A (beta-carotene)"
+              },
+              {
+                "id": "c",
+                "label": "Sắt"
+              },
+              {
+                "id": "d",
+                "label": "Chất béo"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

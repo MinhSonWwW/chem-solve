@@ -1,0 +1,163 @@
+{
+  "lessonId": "g9-b22",
+  "units": [
+    {
+      "id": "huu-co",
+      "title": "Hợp chất hữu cơ",
+      "fromExercises": [
+        "g9-b22-mcq-001",
+        "g9-b22-sort-001",
+        "g9-b22-mcq-002",
+        "g9-b22-tf-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Chất nào sau đây là hợp chất hữu cơ?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "[[CO2]]"
+              },
+              {
+                "id": "b",
+                "label": "[[CaCO3]]"
+              },
+              {
+                "id": "c",
+                "label": "[[CH4]]"
+              },
+              {
+                "id": "d",
+                "label": "[[NaCl]]"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Hydrocarbon là hợp chất chỉ gồm những nguyên tố nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "C và O"
+              },
+              {
+                "id": "b",
+                "label": "C và H"
+              },
+              {
+                "id": "c",
+                "label": "C, H và O"
+              },
+              {
+                "id": "d",
+                "label": "C và N"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về hợp chất hữu cơ là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Hợp chất hữu cơ có ở hầu hết các loại thực phẩm.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Khi đốt cháy, nhiều hợp chất hữu cơ tạo ra carbon dioxide.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Mọi hợp chất chứa carbon đều là hợp chất hữu cơ.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Phân loại các hợp chất hữu cơ.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Hydrocarbon"
+              },
+              {
+                "id": "b2",
+                "label": "Dẫn xuất của hydrocarbon"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "[[CH4]]",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "[[C2H4]]",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "[[C2H5OH]]",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "[[CH3COOH]]",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Hóa học hữu cơ là ngành nghiên cứu về gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Các hợp chất hữu cơ"
+              },
+              {
+                "id": "b",
+                "label": "Kim loại"
+              },
+              {
+                "id": "c",
+                "label": "Muối vô cơ"
+              },
+              {
+                "id": "d",
+                "label": "Khí hiếm"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    }
+  ]
+}

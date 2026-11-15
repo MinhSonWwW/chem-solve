@@ -1,0 +1,193 @@
+{
+  "lessonId": "g7-b01",
+  "units": [
+    {
+      "id": "phuong-phap",
+      "title": "Phương pháp tìm hiểu tự nhiên",
+      "fromExercises": [
+        "g7-b01-mcq-001",
+        "g7-b01-tf-001",
+        "g7-b01-ordering-001",
+        "g7-b01-mcq-005",
+        "g7-b01-sort-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sau khi đưa ra dự đoán (giả thuyết), bước tiếp theo của phương pháp tìm hiểu tự nhiên là gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Viết báo cáo ngay"
+              },
+              {
+                "id": "b",
+                "label": "Lập kế hoạch kiểm tra dự đoán"
+              },
+              {
+                "id": "c",
+                "label": "Kết luận dự đoán là đúng"
+              },
+              {
+                "id": "d",
+                "label": "Đặt lại câu hỏi"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ghép mỗi kĩ năng học tập môn KHTN với ví dụ phù hợp.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Quan sát",
+                "right": "Nhìn màu sắc của lá cây"
+              },
+              {
+                "left": "Phân loại",
+                "right": "Xếp các vật thành nhóm kim loại và phi kim"
+              },
+              {
+                "left": "Đo",
+                "right": "Dùng thước xác định chiều dài chiếc bàn"
+              },
+              {
+                "left": "Dự báo",
+                "right": "Đoán trước trời sắp mưa khi thấy mây đen"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về kĩ năng học tập môn KHTN là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Kết quả thí nghiệm cần được ghi chép trung thực.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nếu kết quả khác dự đoán thì nên sửa số liệu cho khớp.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Báo cáo cần nêu được kết luận rút ra từ kết quả.",
+                "correct": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dung-cu-an-toan",
+      "title": "Dụng cụ và an toàn thí nghiệm",
+      "fromExercises": [
+        "g7-b01-mcq-002",
+        "g7-b01-match-001",
+        "g7-b01-mcq-003",
+        "g7-b01-mcq-004",
+        "g7-b01-sort-002"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Khi đun nóng chất lỏng trong ống nghiệm, cần hướng miệng ống nghiệm như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Về phía mình"
+              },
+              {
+                "id": "b",
+                "label": "Về phía bạn bên cạnh"
+              },
+              {
+                "id": "c",
+                "label": "Về phía không có người"
+              },
+              {
+                "id": "d",
+                "label": "Thẳng lên trần nhà, sát mặt"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Những việc nào cần làm khi lỡ làm đổ hóa chất ra bàn?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Báo ngay cho thầy cô"
+              },
+              {
+                "id": "b",
+                "label": "Không dùng tay không để lau"
+              },
+              {
+                "id": "c",
+                "label": "Dùng lưỡi nếm thử xem là chất gì"
+              },
+              {
+                "id": "d",
+                "label": "Lờ đi và làm tiếp"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b"
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Dụng cụ nào dùng để lấy một lượng nhỏ hóa chất lỏng?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Kẹp gỗ"
+              },
+              {
+                "id": "b",
+                "label": "Ống hút nhỏ giọt"
+              },
+              {
+                "id": "c",
+                "label": "Giá thí nghiệm"
+              },
+              {
+                "id": "d",
+                "label": "Đèn cồn"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

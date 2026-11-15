@@ -1,0 +1,168 @@
+{
+  "lessonId": "phy-g8-b07",
+  "units": [
+    {
+      "id": "don-bay",
+      "title": "Đòn bẩy và các loại đòn bẩy",
+      "fromExercises": [
+        "phy-g8-b07-mcq-001",
+        "phy-g8-b07-mcq-002",
+        "phy-g8-b07-mcq-003",
+        "phy-g8-b07-mcq-006",
+        "phy-g8-b07-tf-007"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại dụng cụ theo vị trí điểm tựa.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Điểm tựa ở giữa"
+              },
+              {
+                "id": "b2",
+                "label": "Điểm tựa ở một đầu"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Cái kéo",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Bập bênh",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Xe cút kít",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Cái kẹp gắp đá",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Muốn dùng đòn bẩy được lợi về lực, cần làm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Khoảng cách từ điểm tựa đến lực tác dụng ngắn hơn đến vật"
+              },
+              {
+                "id": "b",
+                "label": "Khoảng cách từ điểm tựa đến lực tác dụng dài hơn đến vật"
+              },
+              {
+                "id": "c",
+                "label": "Điểm tựa ở sát lực tác dụng"
+              },
+              {
+                "id": "d",
+                "label": "Không thể lợi về lực"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Những dụng cụ nào hoạt động như đòn bẩy?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Xà beng"
+              },
+              {
+                "id": "b",
+                "label": "Cái kéo"
+              },
+              {
+                "id": "c",
+                "label": "Bập bênh"
+              },
+              {
+                "id": "d",
+                "label": "Cái bút bi"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "can-bang-don-bay",
+      "title": "Điều kiện cân bằng của đòn bẩy",
+      "fromExercises": [
+        "phy-g8-b07-num-004",
+        "phy-g8-b07-num-005",
+        "phy-g8-b07-mcq-008"
+      ],
+      "generator": "lever",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Hai bạn ngồi bập bênh cân bằng. Bạn A nặng 400 N ngồi cách điểm tựa 1,5 m, bạn B nặng 500 N. Bạn B ngồi cách điểm tựa bao nhiêu mét?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 1.2,
+            "unit": "m",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Đòn bẩy cân bằng khi nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "F₁ + d₁ = F₂ + d₂"
+              },
+              {
+                "id": "b",
+                "label": "F₁ × d₁ = F₂ × d₂"
+              },
+              {
+                "id": "c",
+                "label": "F₁ = F₂"
+              },
+              {
+                "id": "d",
+                "label": "d₁ = d₂"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

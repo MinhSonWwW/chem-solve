@@ -1,0 +1,111 @@
+{
+  "lessonId": "bio-g9-b03",
+  "units": [
+    {
+      "id": "dna",
+      "title": "Cấu trúc DNA và RNA",
+      "fromExercises": [
+        "bio-g9-b03-q01",
+        "bio-g9-b03-q02",
+        "bio-g9-b03-q06",
+        "bio-g9-b03-q07",
+        "bio-g9-b03-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép nucleotide với nucleotide bổ sung trong DNA.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "A",
+                "right": "T"
+              },
+              {
+                "left": "G",
+                "right": "C"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về cấu trúc DNA và RNA là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "DNA có cấu trúc xoắn kép gồm hai mạch.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "RNA có uracil (U) thay cho thymine (T).",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Trong DNA, A liên kết với G.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Gene là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Một loại protein"
+              },
+              {
+                "id": "b",
+                "label": "Một đoạn DNA mang thông tin quy định một sản phẩm nhất định"
+              },
+              {
+                "id": "c",
+                "label": "Một nhiễm sắc thể"
+              },
+              {
+                "id": "d",
+                "label": "Một tế bào"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tinh-dna",
+      "title": "Tính toán về DNA",
+      "fromExercises": [
+        "bio-g9-b03-q03",
+        "bio-g9-b03-q04",
+        "bio-g9-b03-q05",
+        "bio-g9-b03-ord-001",
+        "bio-g9-b03-match-002"
+      ],
+      "generator": "dna",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Một đoạn DNA có 600 nucleotide loại A. Số nucleotide loại T là bao nhiêu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 600
+          }
+        }
+      ]
+    }
+  ]
+}

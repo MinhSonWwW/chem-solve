@@ -1,0 +1,154 @@
+{
+  "lessonId": "g7-b03",
+  "units": [
+    {
+      "id": "ki-hieu",
+      "title": "Kí hiệu và tên nguyên tố",
+      "fromExercises": [
+        "g7-b03-mcq-001",
+        "g7-b03-match-001",
+        "g7-b03-tf-002",
+        "g7-b03-match-002",
+        "g7-b03-build-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Kí hiệu hóa học của nguyên tố iron (sắt) là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "I"
+              },
+              {
+                "id": "b",
+                "label": "Ir"
+              },
+              {
+                "id": "c",
+                "label": "Fe"
+              },
+              {
+                "id": "d",
+                "label": "S"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Nguyên tố có kí hiệu [[K]] là nguyên tố nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Calcium"
+              },
+              {
+                "id": "b",
+                "label": "Potassium"
+              },
+              {
+                "id": "c",
+                "label": "Carbon"
+              },
+              {
+                "id": "d",
+                "label": "Krypton"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Viết kí hiệu hóa học của nguyên tố calcium.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "text",
+            "accepted": [
+              "Ca"
+            ],
+            "lenientDiacritics": true
+          },
+          "hint": "Kí hiệu gồm chữ cái đầu viết hoa và một chữ cái thường."
+        }
+      ]
+    },
+    {
+      "id": "kim-loai-phi-kim",
+      "title": "Kim loại, phi kim và khí hiếm",
+      "fromExercises": [
+        "g7-b03-mcq-002",
+        "g7-b03-num-001",
+        "g7-b03-tf-001",
+        "g7-b03-sort-001",
+        "g7-b03-mcq-006",
+        "g7-b03-ordering-001",
+        "g7-b03-sort-002"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Nguyên tố nào sau đây là khí hiếm?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Oxygen"
+              },
+              {
+                "id": "b",
+                "label": "Nitrogen"
+              },
+              {
+                "id": "c",
+                "label": "Neon"
+              },
+              {
+                "id": "d",
+                "label": "Chlorine"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ở điều kiện thường, nguyên tố kim loại nào ở thể lỏng?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sắt"
+              },
+              {
+                "id": "b",
+                "label": "Thủy ngân"
+              },
+              {
+                "id": "c",
+                "label": "Nhôm"
+              },
+              {
+                "id": "d",
+                "label": "Đồng"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

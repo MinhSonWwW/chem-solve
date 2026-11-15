@@ -1,0 +1,135 @@
+{
+  "lessonId": "phy-g8-b06",
+  "units": [
+    {
+      "id": "moment",
+      "title": "Tác dụng làm quay và moment lực",
+      "fromExercises": [
+        "phy-g8-b06-mcq-001",
+        "phy-g8-b06-mcq-002",
+        "phy-g8-b06-mcq-003",
+        "phy-g8-b06-mcq-006",
+        "phy-g8-b06-tf-007"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Lực có tác dụng làm quay vật khi nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Khi giá của lực đi qua trục quay"
+              },
+              {
+                "id": "b",
+                "label": "Khi giá của lực không đi qua trục quay và không song song với trục"
+              },
+              {
+                "id": "c",
+                "label": "Khi lực rất nhỏ"
+              },
+              {
+                "id": "d",
+                "label": "Không bao giờ"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Muốn mở cửa dễ dàng nhất, nên đẩy ở vị trí nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Gần bản lề"
+              },
+              {
+                "id": "b",
+                "label": "Xa bản lề nhất"
+              },
+              {
+                "id": "c",
+                "label": "Ở giữa cánh cửa"
+              },
+              {
+                "id": "d",
+                "label": "Ngay tại bản lề"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về moment lực là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Cánh tay đòn càng dài, moment lực càng lớn.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Đơn vị của moment lực là N·m.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Lực có giá đi qua trục quay làm vật quay mạnh nhất.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "tinh-moment",
+      "title": "Tính moment lực",
+      "fromExercises": [
+        "phy-g8-b06-num-004",
+        "phy-g8-b06-num-005",
+        "phy-g8-b06-mcq-008"
+      ],
+      "generator": "moment",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Lực 20 N tác dụng vuông góc vào cánh cửa, cách bản lề 0,8 m. Moment lực là bao nhiêu N·m?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 16,
+            "unit": "N·m",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Moment lực là 12 N·m, cánh tay đòn 0,3 m. Lực tác dụng là bao nhiêu N?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 40,
+            "unit": "N",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

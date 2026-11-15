@@ -1,0 +1,258 @@
+{
+  "lessonId": "bio-g8-b14",
+  "units": [
+    {
+      "id": "quan-xa",
+      "title": "Quần xã và các đặc trưng",
+      "fromExercises": [
+        "bio-g8-b14-q01",
+        "bio-g8-b14-q02",
+        "bio-g8-b14-q03",
+        "bio-g8-b14-q07",
+        "bio-g8-b14-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Quần xã sinh vật khác quần thể ở điểm nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Quần xã gồm nhiều quần thể thuộc các loài khác nhau"
+              },
+              {
+                "id": "b",
+                "label": "Quần xã chỉ có một loài"
+              },
+              {
+                "id": "c",
+                "label": "Quần xã không có thực vật"
+              },
+              {
+                "id": "d",
+                "label": "Không khác nhau"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về quần xã và các đặc trưng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Độ đa dạng loài là một đặc trưng của quần xã.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Loài ưu thế có số lượng lớn, ảnh hưởng mạnh đến quần xã.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Một quần xã chỉ gồm sinh vật cùng loài.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Nuôi mèo để bắt chuột là ứng dụng của hiện tượng gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cộng sinh"
+              },
+              {
+                "id": "b",
+                "label": "Khống chế sinh học"
+              },
+              {
+                "id": "c",
+                "label": "Kí sinh"
+              },
+              {
+                "id": "d",
+                "label": "Hội sinh"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "quan-he",
+      "title": "Quan hệ giữa các loài",
+      "fromExercises": [
+        "bio-g8-b14-q04",
+        "bio-g8-b14-q05",
+        "bio-g8-b14-q06"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép ví dụ với mối quan hệ.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Vi khuẩn cố định đạm trong nốt sần rễ cây họ đậu",
+                "right": "Cộng sinh"
+              },
+              {
+                "left": "Phong lan bám trên thân cây gỗ",
+                "right": "Hội sinh"
+              },
+              {
+                "left": "Cây tơ hồng sống trên cây khác",
+                "right": "Kí sinh"
+              },
+              {
+                "left": "Mèo bắt chuột",
+                "right": "Sinh vật ăn sinh vật khác"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Phân loại các mối quan hệ.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Hỗ trợ (không bên nào bị hại)"
+              },
+              {
+                "id": "b2",
+                "label": "Đối địch (có bên bị hại)"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Cộng sinh",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Hội sinh",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Kí sinh",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Cạnh tranh",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Sinh vật ăn sinh vật khác",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về quan hệ giữa các loài là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Trong quan hệ cộng sinh, cả hai loài đều có lợi.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Giun đũa sống trong ruột người là quan hệ kí sinh.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Cạnh tranh giữa các loài làm cả hai đều có lợi.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Lúa và cỏ dại trên cùng một ruộng có quan hệ gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cộng sinh"
+              },
+              {
+                "id": "b",
+                "label": "Cạnh tranh"
+              },
+              {
+                "id": "c",
+                "label": "Hội sinh"
+              },
+              {
+                "id": "d",
+                "label": "Kí sinh"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Chim sáo đậu trên lưng trâu bắt rận là ví dụ của quan hệ gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hợp tác (hai bên cùng có lợi)"
+              },
+              {
+                "id": "b",
+                "label": "Kí sinh"
+              },
+              {
+                "id": "c",
+                "label": "Cạnh tranh"
+              },
+              {
+                "id": "d",
+                "label": "Ăn thịt"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    }
+  ]
+}

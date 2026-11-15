@@ -1,0 +1,199 @@
+{
+  "lessonId": "bio-g7-b18",
+  "units": [
+    {
+      "id": "do-ve",
+      "title": "Đo và vẽ đồ thị sinh trưởng",
+      "fromExercises": [
+        "bio-g7-b18-q01",
+        "bio-g7-b18-q02",
+        "bio-g7-b18-q07"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sắp xếp các bước theo dõi sinh trưởng của cây đậu.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Gieo hạt đậu vào chậu",
+              "Đo chiều cao cây vào cùng giờ mỗi ngày",
+              "Ghi số liệu vào bảng",
+              "Vẽ đồ thị chiều cao theo thời gian"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Đo chiều cao cây từ mặt đất đến đỉnh ngọn.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Trên đồ thị, trục ngang biểu diễn thời gian.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Chỉ cần đo một lần là biết cây sinh trưởng thế nào.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Cây đậu cao 4 cm vào ngày thứ 3 và 10 cm vào ngày thứ 6. Cây cao thêm bao nhiêu cm trong khoảng đó?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 6,
+            "unit": "cm"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Dụng cụ nào dùng để đo chiều cao cây non?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nhiệt kế"
+              },
+              {
+                "id": "b",
+                "label": "Thước kẻ có chia vạch"
+              },
+              {
+                "id": "c",
+                "label": "Cân"
+              },
+              {
+                "id": "d",
+                "label": "Đồng hồ"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Đường đồ thị đi lên dần theo thời gian cho biết điều gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cây ngừng lớn"
+              },
+              {
+                "id": "b",
+                "label": "Cây đang sinh trưởng, chiều cao tăng dần"
+              },
+              {
+                "id": "c",
+                "label": "Cây chết"
+              },
+              {
+                "id": "d",
+                "label": "Cây thấp đi"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vong-doi",
+      "title": "Quan sát vòng đời",
+      "fromExercises": [
+        "bio-g7-b18-q03",
+        "bio-g7-b18-q04",
+        "bio-g7-b18-q05",
+        "bio-g7-b18-q06",
+        "bio-g7-b18-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sắp xếp các giai đoạn phát triển của ếch.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Trứng",
+              "Nòng nọc",
+              "Nòng nọc mọc chân",
+              "Ếch con",
+              "Ếch trưởng thành"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về vòng đời của ếch là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Nòng nọc sống dưới nước, thở bằng mang.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Ếch trưởng thành thở bằng phổi và da.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Nòng nọc có bốn chân ngay khi nở.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Ở giai đoạn nhộng, con vật có đặc điểm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ăn rất nhiều"
+              },
+              {
+                "id": "b",
+                "label": "Ít hoặc không di chuyển, không ăn"
+              },
+              {
+                "id": "c",
+                "label": "Bay đi xa"
+              },
+              {
+                "id": "d",
+                "label": "Đẻ trứng"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

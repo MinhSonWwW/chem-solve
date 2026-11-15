@@ -1,0 +1,267 @@
+{
+  "lessonId": "bio-g9-b14",
+  "units": [
+    {
+      "id": "bang-chung",
+      "title": "Tiến hóa và bằng chứng tiến hóa",
+      "fromExercises": [
+        "bio-g9-b14-q01",
+        "bio-g9-b14-q02",
+        "bio-g9-b14-q03",
+        "bio-g9-b14-q04",
+        "bio-g9-b14-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại cặp cơ quan.",
+          "difficulty": 3,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Cơ quan tương đồng"
+              },
+              {
+                "id": "b2",
+                "label": "Cơ quan tương tự"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Tay người và cánh dơi",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Chi trước của mèo và vây cá voi",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Cánh chim và cánh bướm",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Mang cá và mang tôm",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về tiến hóa và bằng chứng tiến hóa là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Hóa thạch là bằng chứng trực tiếp về lịch sử sự sống.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Ruột thừa ở người là cơ quan thoái hóa.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Cánh chim và cánh bướm là cơ quan tương đồng.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Tiến hóa sinh học là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sự biến đổi các đặc điểm di truyền của quần thể sinh vật qua các thế hệ"
+              },
+              {
+                "id": "b",
+                "label": "Sự lớn lên của một cơ thể"
+              },
+              {
+                "id": "c",
+                "label": "Sự sinh sản"
+              },
+              {
+                "id": "d",
+                "label": "Sự trao đổi chất"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chon-loc",
+      "title": "Chọn lọc nhân tạo và chọn lọc tự nhiên",
+      "fromExercises": [
+        "bio-g9-b14-q06",
+        "bio-g9-b14-q07",
+        "bio-g9-b14-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các đặc điểm.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Chọn lọc nhân tạo"
+              },
+              {
+                "id": "b2",
+                "label": "Chọn lọc tự nhiên"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Do con người tiến hành",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Tạo ra giống vật nuôi, cây trồng",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Do điều kiện môi trường tác động",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Hình thành đặc điểm thích nghi của sinh vật",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về chọn lọc nhân tạo và chọn lọc tự nhiên là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Các giống chó khác nhau là kết quả của chọn lọc nhân tạo.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Chọn lọc tự nhiên giữ lại những cá thể thích nghi tốt.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Chọn lọc nhân tạo xảy ra khi không có con người.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Ai là người đề xuất học thuyết chọn lọc tự nhiên?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Mendel"
+              },
+              {
+                "id": "b",
+                "label": "Darwin"
+              },
+              {
+                "id": "c",
+                "label": "Morgan"
+              },
+              {
+                "id": "d",
+                "label": "Newton"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Bướm có màu sẫm sống sót nhiều hơn ở vùng cây bị ám khói đen là ví dụ về gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chọn lọc nhân tạo"
+              },
+              {
+                "id": "b",
+                "label": "Chọn lọc tự nhiên"
+              },
+              {
+                "id": "c",
+                "label": "Đột biến"
+              },
+              {
+                "id": "d",
+                "label": "Nhân bản"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Kết quả của chọn lọc nhân tạo là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tạo ra giống vật nuôi, cây trồng phù hợp nhu cầu con người"
+              },
+              {
+                "id": "b",
+                "label": "Hình thành loài hoang dã mới"
+              },
+              {
+                "id": "c",
+                "label": "Làm sinh vật chết"
+              },
+              {
+                "id": "d",
+                "label": "Không có kết quả"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    }
+  ]
+}

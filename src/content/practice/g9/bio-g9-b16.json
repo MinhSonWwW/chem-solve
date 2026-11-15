@@ -1,0 +1,210 @@
+{
+  "lessonId": "bio-g9-b16",
+  "units": [
+    {
+      "id": "phat-sinh",
+      "title": "Sự phát sinh sự sống",
+      "fromExercises": [
+        "bio-g9-b16-q01",
+        "bio-g9-b16-q02",
+        "bio-g9-b16-q03",
+        "bio-g9-b16-q04",
+        "bio-g9-b16-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sắp xếp các giai đoạn phát sinh sự sống.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Tiến hóa hóa học",
+              "Tiến hóa tiền sinh học",
+              "Tiến hóa sinh học"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về sự phát sinh sự sống là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Khí quyển nguyên thủy hầu như chưa có oxygen.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Oxygen trong khí quyển hiện nay chủ yếu do sinh vật quang hợp tạo ra.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Sự sống xuất hiện ngay khi Trái Đất mới hình thành.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Thí nghiệm của Miller và Urey chứng minh điều gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chất hữu cơ đơn giản có thể hình thành từ chất vô cơ trong điều kiện Trái Đất nguyên thủy"
+              },
+              {
+                "id": "b",
+                "label": "Sự sống từ ngoài vũ trụ"
+              },
+              {
+                "id": "c",
+                "label": "DNA tự tái bản"
+              },
+              {
+                "id": "d",
+                "label": "Quang hợp"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lich-su",
+      "title": "Lịch sử phát triển sinh giới",
+      "fromExercises": [
+        "bio-g9-b16-q06",
+        "bio-g9-b16-q07",
+        "bio-g9-b16-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sắp xếp các đại địa chất theo thứ tự thời gian.",
+          "difficulty": 3,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Đại Thái cổ",
+              "Đại Nguyên sinh",
+              "Đại Cổ sinh",
+              "Đại Trung sinh",
+              "Đại Tân sinh"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ghép đại địa chất với sự kiện nổi bật.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Đại Trung sinh",
+                "right": "Bò sát (khủng long) phát triển mạnh"
+              },
+              {
+                "left": "Đại Tân sinh",
+                "right": "Thú và chim phát triển, xuất hiện loài người"
+              },
+              {
+                "left": "Đại Cổ sinh",
+                "right": "Sinh vật chuyển lên sống trên cạn"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về lịch sử phát triển sinh giới là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Khủng long phát triển mạnh ở đại Trung sinh.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Loài người xuất hiện ở đại Tân sinh.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Loài người xuất hiện cùng thời với khủng long.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Bằng chứng nào giúp xác định tuổi và lịch sử của sinh vật cổ?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hóa thạch"
+              },
+              {
+                "id": "b",
+                "label": "Màu đất"
+              },
+              {
+                "id": "c",
+                "label": "Thời tiết"
+              },
+              {
+                "id": "d",
+                "label": "Ánh sáng"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Đại địa chất nào được gọi là \"thời đại của bò sát\"?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đại Cổ sinh"
+              },
+              {
+                "id": "b",
+                "label": "Đại Trung sinh"
+              },
+              {
+                "id": "c",
+                "label": "Đại Tân sinh"
+              },
+              {
+                "id": "d",
+                "label": "Đại Thái cổ"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

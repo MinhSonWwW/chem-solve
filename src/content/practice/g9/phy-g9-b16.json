@@ -1,0 +1,257 @@
+{
+  "lessonId": "phy-g9-b16",
+  "units": [
+    {
+      "id": "tai-tao",
+      "title": "Các dạng năng lượng tái tạo",
+      "fromExercises": [
+        "phy-g9-b16-mcq-001",
+        "phy-g9-b16-mcq-002",
+        "phy-g9-b16-mcq-003",
+        "phy-g9-b16-mcq-004",
+        "phy-g9-b16-mcq-005"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép nguồn năng lượng với thiết bị khai thác.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Năng lượng Mặt Trời",
+                "right": "Tấm pin quang điện"
+              },
+              {
+                "left": "Năng lượng gió",
+                "right": "Tua-bin gió"
+              },
+              {
+                "left": "Năng lượng của dòng nước",
+                "right": "Nhà máy thủy điện"
+              },
+              {
+                "left": "Năng lượng sinh khối",
+                "right": "Hầm biogas"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về các dạng năng lượng tái tạo là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Năng lượng tái tạo gần như không cạn kiệt.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Năng lượng địa nhiệt khai thác nhiệt từ lòng đất.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Than đá là năng lượng tái tạo.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Việt Nam có tiềm năng lớn về loại năng lượng tái tạo nào ở các tỉnh Nam Trung Bộ?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Năng lượng địa nhiệt"
+              },
+              {
+                "id": "b",
+                "label": "Năng lượng Mặt Trời và gió"
+              },
+              {
+                "id": "c",
+                "label": "Năng lượng hạt nhân"
+              },
+              {
+                "id": "d",
+                "label": "Than đá"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phat-trien",
+      "title": "Ưu, nhược điểm và phát triển năng lượng tái tạo",
+      "fromExercises": [
+        "phy-g9-b16-mcq-006",
+        "phy-g9-b16-mcq-007",
+        "phy-g9-b16-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các đặc điểm của điện mặt trời.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Ưu điểm"
+              },
+              {
+                "id": "b2",
+                "label": "Nhược điểm"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Không phát thải khí nhà kính khi hoạt động",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Nguồn năng lượng dồi dào",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Phụ thuộc thời tiết, ban đêm không phát điện",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Cần diện tích lắp đặt lớn",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Để điện mặt trời cung cấp điện cả ban đêm, cần thêm thiết bị gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Quạt gió"
+              },
+              {
+                "id": "b",
+                "label": "Hệ thống lưu trữ điện (pin, ắc quy)"
+              },
+              {
+                "id": "c",
+                "label": "Máy biến thế"
+              },
+              {
+                "id": "d",
+                "label": "Bóng đèn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về ưu, nhược điểm và phát triển năng lượng tái tạo là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Phát triển năng lượng tái tạo giúp giảm phát thải khí nhà kính.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Năng lượng tái tạo hoàn toàn không có nhược điểm.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Lắp pin mặt trời trên mái nhà giúp tiết kiệm tiền điện.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Mục tiêu \"Net Zero\" có nghĩa là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Lượng phát thải khí nhà kính ròng bằng 0"
+              },
+              {
+                "id": "b",
+                "label": "Không dùng điện"
+              },
+              {
+                "id": "c",
+                "label": "Không có ô tô"
+              },
+              {
+                "id": "d",
+                "label": "Không trồng cây"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Học sinh có thể góp phần sử dụng năng lượng bền vững bằng cách nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tắt điện khi ra khỏi phòng"
+              },
+              {
+                "id": "b",
+                "label": "Đi xe đạp hoặc phương tiện công cộng"
+              },
+              {
+                "id": "c",
+                "label": "Tuyên truyền tiết kiệm năng lượng"
+              },
+              {
+                "id": "d",
+                "label": "Bật điều hòa ở nhiệt độ rất thấp"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

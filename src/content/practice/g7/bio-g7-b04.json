@@ -1,0 +1,228 @@
+{
+  "lessonId": "bio-g7-b04",
+  "units": [
+    {
+      "id": "tinh-bot",
+      "title": "Thí nghiệm chứng minh quang hợp tạo tinh bột",
+      "fromExercises": [
+        "bio-g7-b04-q01",
+        "bio-g7-b04-q03",
+        "bio-g7-b04-q04",
+        "bio-g7-b04-q05",
+        "bio-g7-b04-q06"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phần lá bị bịt kín bằng băng giấy đen khi thử bằng dung dịch iodine có màu gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Xanh tím"
+              },
+              {
+                "id": "b",
+                "label": "Không có màu xanh tím (vì không có tinh bột)"
+              },
+              {
+                "id": "c",
+                "label": "Đỏ"
+              },
+              {
+                "id": "d",
+                "label": "Đen"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về thí nghiệm là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Tinh bột gặp iodine chuyển sang màu xanh tím.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Phần lá được chiếu sáng tạo ra tinh bột.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Cồn được dùng để làm lá xanh đậm hơn.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Vì sao phải dùng băng giấy đen bịt một phần lá?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để lá đẹp hơn"
+              },
+              {
+                "id": "b",
+                "label": "Để phần lá đó không nhận được ánh sáng, làm đối chứng"
+              },
+              {
+                "id": "c",
+                "label": "Để giữ ẩm cho lá"
+              },
+              {
+                "id": "d",
+                "label": "Để lá không rụng"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "khi-oxygen",
+      "title": "Thí nghiệm chứng minh quang hợp thải oxygen",
+      "fromExercises": [
+        "bio-g7-b04-q02",
+        "bio-g7-b04-q07",
+        "bio-g7-b04-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Trong thí nghiệm với cành rong đuôi chó, khí nào thu được trong ống nghiệm?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Carbon dioxide"
+              },
+              {
+                "id": "b",
+                "label": "Oxygen"
+              },
+              {
+                "id": "c",
+                "label": "Nitrogen"
+              },
+              {
+                "id": "d",
+                "label": "Hydrogen"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Để cốc rong ngoài sáng, ta thấy hiện tượng gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Không có hiện tượng gì"
+              },
+              {
+                "id": "b",
+                "label": "Có bọt khí nổi lên từ cành rong"
+              },
+              {
+                "id": "c",
+                "label": "Nước chuyển màu đỏ"
+              },
+              {
+                "id": "d",
+                "label": "Cành rong héo ngay"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Que đóm còn tàn đỏ bùng cháy chứng tỏ có khí oxygen.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Cốc rong đặt trong tối cũng có nhiều bọt khí như ngoài sáng.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Thí nghiệm chứng minh ánh sáng cần cho quang hợp.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Sắp xếp các bước thí nghiệm chứng minh quang hợp thải oxygen.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Đặt cành rong vào cốc nước, úp phễu và ống nghiệm đầy nước lên",
+              "Để cốc ra chỗ có ánh sáng mặt trời",
+              "Quan sát khí tích tụ trong ống nghiệm",
+              "Đưa que đóm còn tàn đỏ vào miệng ống nghiệm"
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Vì sao dùng cây rong đuôi chó (cây sống dưới nước) cho thí nghiệm này?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì rong không cần ánh sáng"
+              },
+              {
+                "id": "b",
+                "label": "Vì khí oxygen thải ra tạo bọt dễ quan sát và thu được"
+              },
+              {
+                "id": "c",
+                "label": "Vì rong không quang hợp"
+              },
+              {
+                "id": "d",
+                "label": "Vì rong có hoa"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

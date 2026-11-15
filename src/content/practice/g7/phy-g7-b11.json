@@ -1,0 +1,261 @@
+{
+  "lessonId": "phy-g7-b11",
+  "units": [
+    {
+      "id": "cuc-tu",
+      "title": "Cực từ và tương tác giữa các nam châm",
+      "fromExercises": [
+        "phy-g7-b11-mcq-001",
+        "phy-g7-b11-mcq-002",
+        "phy-g7-b11-mcq-005",
+        "phy-g7-b11-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Đưa cực Nam của nam châm này lại gần cực Nam của nam châm khác thì chúng thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hút nhau"
+              },
+              {
+                "id": "b",
+                "label": "Đẩy nhau"
+              },
+              {
+                "id": "c",
+                "label": "Không tương tác"
+              },
+              {
+                "id": "d",
+                "label": "Dính chặt vào nhau"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về nam châm là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Mỗi nam châm luôn có hai cực Bắc và Nam.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Hai cực khác tên thì hút nhau.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Có thể tách riêng một cực Bắc ra khỏi nam châm.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Cực Bắc của nam châm thường được kí hiệu bằng chữ gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "S"
+              },
+              {
+                "id": "b",
+                "label": "N"
+              },
+              {
+                "id": "c",
+                "label": "B"
+              },
+              {
+                "id": "d",
+                "label": "D"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Ghép cặp cực đặt gần nhau với kết quả tương tác.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Bắc – Bắc",
+                "right": "Đẩy nhau"
+              },
+              {
+                "left": "Bắc – Nam",
+                "right": "Hút nhau"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "vat-lieu-tu",
+      "title": "Vật liệu có từ tính",
+      "fromExercises": [
+        "phy-g7-b11-mcq-003",
+        "phy-g7-b11-mcq-004",
+        "phy-g7-b11-mcq-006",
+        "phy-g7-b11-tf-007"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các vật sau.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Bị nam châm hút"
+              },
+              {
+                "id": "b2",
+                "label": "Không bị nam châm hút"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Đinh sắt",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Kẹp giấy bằng thép",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Đồng xu niken",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Thìa nhôm",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Thước nhựa",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Đồng xu bằng đồng",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Lực hút của nam châm mạnh nhất ở đâu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ở giữa thanh nam châm"
+              },
+              {
+                "id": "b",
+                "label": "Ở hai đầu (hai cực) của nam châm"
+              },
+              {
+                "id": "c",
+                "label": "Đều nhau ở mọi chỗ"
+              },
+              {
+                "id": "d",
+                "label": "Ở mặt bên"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Nam châm được dùng trong những vật nào sau đây?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "La bàn"
+              },
+              {
+                "id": "b",
+                "label": "Loa điện"
+              },
+              {
+                "id": "c",
+                "label": "Cửa tủ lạnh"
+              },
+              {
+                "id": "d",
+                "label": "Thước kẻ nhựa"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Muốn tách đinh sắt lẫn trong cát, cách nào đơn giản nhất?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đổ nước vào"
+              },
+              {
+                "id": "b",
+                "label": "Dùng nam châm hút đinh sắt"
+              },
+              {
+                "id": "c",
+                "label": "Dùng sàng lọc"
+              },
+              {
+                "id": "d",
+                "label": "Đốt nóng"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

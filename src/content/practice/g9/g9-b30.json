@@ -1,0 +1,124 @@
+{
+  "lessonId": "g9-b30",
+  "units": [
+    {
+      "id": "tinh-bot-cellulose",
+      "title": "Tinh bột và cellulose",
+      "fromExercises": [
+        "g9-b30-mcq-001",
+        "g9-b30-mcq-002",
+        "g9-b30-sort-001",
+        "g9-b30-tf-001",
+        "g9-b30-match-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Tinh bột gặp dung dịch iodine có màu gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đỏ"
+              },
+              {
+                "id": "b",
+                "label": "Xanh tím"
+              },
+              {
+                "id": "c",
+                "label": "Vàng"
+              },
+              {
+                "id": "d",
+                "label": "Không màu"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Cellulose là thành phần chính của vật nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hạt gạo"
+              },
+              {
+                "id": "b",
+                "label": "Sợi bông, gỗ"
+              },
+              {
+                "id": "c",
+                "label": "Củ khoai"
+              },
+              {
+                "id": "d",
+                "label": "Đường mía"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về tinh bột và cellulose là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Tinh bột được tạo thành trong cây xanh nhờ quang hợp.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Cơ thể người tiêu hóa được tinh bột.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Cellulose tan tốt trong nước.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Giấy viết được sản xuất chủ yếu từ chất nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tinh bột"
+              },
+              {
+                "id": "b",
+                "label": "Cellulose"
+              },
+              {
+                "id": "c",
+                "label": "Protein"
+              },
+              {
+                "id": "d",
+                "label": "Chất béo"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

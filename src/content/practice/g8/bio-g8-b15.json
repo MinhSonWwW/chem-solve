@@ -1,0 +1,273 @@
+{
+  "lessonId": "bio-g8-b15",
+  "units": [
+    {
+      "id": "thanh-phan",
+      "title": "Thành phần của hệ sinh thái",
+      "fromExercises": [
+        "bio-g8-b15-q01",
+        "bio-g8-b15-q02",
+        "bio-g8-b15-q03",
+        "bio-g8-b15-q06"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các thành phần của hệ sinh thái ao.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Thành phần vô sinh"
+              },
+              {
+                "id": "b2",
+                "label": "Sinh vật sản xuất"
+              },
+              {
+                "id": "b3",
+                "label": "Sinh vật tiêu thụ"
+              },
+              {
+                "id": "b4",
+                "label": "Sinh vật phân giải"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Nước",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Ánh sáng",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Bùn đáy ao",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Tảo",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Rong",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Cá",
+                "bucketId": "b3"
+              },
+              {
+                "id": "i7",
+                "label": "Tôm",
+                "bucketId": "b3"
+              },
+              {
+                "id": "i8",
+                "label": "Vi khuẩn",
+                "bucketId": "b4"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về thành phần của hệ sinh thái là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Sinh vật sản xuất có khả năng quang hợp.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Sinh vật phân giải biến xác sinh vật thành chất vô cơ.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Hệ sinh thái chỉ gồm các sinh vật, không có môi trường.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Những ví dụ nào là hệ sinh thái?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Một khu rừng nhiệt đới"
+              },
+              {
+                "id": "b",
+                "label": "Một cái ao"
+              },
+              {
+                "id": "c",
+                "label": "Một rạn san hô"
+              },
+              {
+                "id": "d",
+                "label": "Một con cá"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Nhóm sinh vật nào đóng vai trò sinh vật sản xuất?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Động vật ăn cỏ"
+              },
+              {
+                "id": "b",
+                "label": "Cây xanh"
+              },
+              {
+                "id": "c",
+                "label": "Nấm"
+              },
+              {
+                "id": "d",
+                "label": "Động vật ăn thịt"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chuoi-luoi",
+      "title": "Chuỗi và lưới thức ăn",
+      "fromExercises": [
+        "bio-g8-b15-q04",
+        "bio-g8-b15-q05",
+        "bio-g8-b15-q07",
+        "bio-g8-b15-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sắp xếp chuỗi thức ăn sau theo đúng thứ tự.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Cỏ",
+              "Sâu",
+              "Chim sâu",
+              "Rắn"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về chuỗi và lưới thức ăn là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Trong chuỗi thức ăn, mỗi loài là một mắt xích.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Năng lượng giảm dần qua các bậc dinh dưỡng.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Mở đầu chuỗi thức ăn luôn là động vật ăn thịt.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Trong chuỗi: Cỏ → Châu chấu → Ếch → Rắn, sinh vật tiêu thụ bậc 2 là gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Châu chấu"
+              },
+              {
+                "id": "b",
+                "label": "Ếch"
+              },
+              {
+                "id": "c",
+                "label": "Rắn"
+              },
+              {
+                "id": "d",
+                "label": "Cỏ"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Lưới thức ăn được tạo thành từ đâu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Một chuỗi thức ăn"
+              },
+              {
+                "id": "b",
+                "label": "Nhiều chuỗi thức ăn có chung mắt xích"
+              },
+              {
+                "id": "c",
+                "label": "Chỉ sinh vật sản xuất"
+              },
+              {
+                "id": "d",
+                "label": "Chỉ sinh vật phân giải"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

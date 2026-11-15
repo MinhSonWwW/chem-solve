@@ -1,0 +1,189 @@
+{
+  "lessonId": "bio-g8-b03",
+  "units": [
+    {
+      "id": "dinh-duong",
+      "title": "Dinh dưỡng hợp lí",
+      "fromExercises": [
+        "bio-g8-b03-q01",
+        "bio-g8-b03-q08"
+      ],
+      "generator": "dietary-calories",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại thực phẩm theo nhóm chất chính.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Giàu chất bột đường"
+              },
+              {
+                "id": "b2",
+                "label": "Giàu chất đạm"
+              },
+              {
+                "id": "b3",
+                "label": "Giàu vitamin và chất khoáng"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Gạo",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Bánh mì",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Trứng",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Cá",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Rau cải",
+                "bucketId": "b3"
+              },
+              {
+                "id": "i6",
+                "label": "Cam",
+                "bucketId": "b3"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về dinh dưỡng hợp lí là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Ăn uống đủ chất và cân đối giúp cơ thể khỏe mạnh.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Ăn quá nhiều đồ chiên rán có thể gây béo phì.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Bỏ bữa sáng thường xuyên tốt cho hệ tiêu hóa.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Vì sao cần ăn nhiều loại thức ăn khác nhau?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cho ngon miệng"
+              },
+              {
+                "id": "b",
+                "label": "Vì mỗi loại cung cấp chất dinh dưỡng khác nhau"
+              },
+              {
+                "id": "c",
+                "label": "Vì một loại không đủ no"
+              },
+              {
+                "id": "d",
+                "label": "Không cần thiết"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tieu-hoa",
+      "title": "Quá trình tiêu hóa",
+      "fromExercises": [
+        "bio-g8-b03-q02",
+        "bio-g8-b03-q03",
+        "bio-g8-b03-q04",
+        "bio-g8-b03-q05",
+        "bio-g8-b03-q06",
+        "bio-g8-b03-q07"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép cơ quan với hoạt động tiêu hóa chính.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Khoang miệng",
+                "right": "Nhai, đảo trộn, enzyme biến đổi một phần tinh bột"
+              },
+              {
+                "left": "Dạ dày",
+                "right": "Co bóp, biến đổi một phần protein"
+              },
+              {
+                "left": "Ruột non",
+                "right": "Biến đổi hóa học triệt để và hấp thụ chất dinh dưỡng"
+              },
+              {
+                "left": "Ruột già",
+                "right": "Hấp thụ lại nước, tạo phân"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Gan tiết ra dịch gì giúp tiêu hóa lipid?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Dịch vị"
+              },
+              {
+                "id": "b",
+                "label": "Dịch mật"
+              },
+              {
+                "id": "c",
+                "label": "Nước bọt"
+              },
+              {
+                "id": "d",
+                "label": "Dịch ruột"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

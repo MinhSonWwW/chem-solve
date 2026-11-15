@@ -1,0 +1,252 @@
+{
+  "lessonId": "bio-g7-b19",
+  "units": [
+    {
+      "id": "sinh-duong",
+      "title": "Sinh sản sinh dưỡng ở thực vật",
+      "fromExercises": [
+        "bio-g7-b19-q01",
+        "bio-g7-b19-q02",
+        "bio-g7-b19-q03",
+        "bio-g7-b19-q04",
+        "bio-g7-b19-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép cây với cơ quan sinh sản sinh dưỡng.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Khoai lang",
+                "right": "Rễ củ"
+              },
+              {
+                "left": "Khoai tây",
+                "right": "Thân củ"
+              },
+              {
+                "left": "Cây thuốc bỏng",
+                "right": "Lá"
+              },
+              {
+                "left": "Cây rau má",
+                "right": "Thân bò"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Phân loại các phương pháp nhân giống.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Giâm cành"
+              },
+              {
+                "id": "b2",
+                "label": "Chiết cành"
+              },
+              {
+                "id": "b3",
+                "label": "Ghép cành"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Trồng hom sắn",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Cắm cành rau muống",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Bóc vỏ, bó đất cho cành cam ra rễ",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Gắn mắt ghép bưởi lên gốc bưởi khác",
+                "bucketId": "b3"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về sinh sản vô tính ở thực vật là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Cây con tạo ra giống hệt cây mẹ.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nuôi cấy mô tạo được nhiều cây giống trong thời gian ngắn.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Sinh sản vô tính cần có sự thụ tinh.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dong-vat-vt",
+      "title": "Sinh sản vô tính ở động vật",
+      "fromExercises": [
+        "bio-g7-b19-q06",
+        "bio-g7-b19-q07",
+        "bio-g7-b19-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép sinh vật với hình thức sinh sản vô tính.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Trùng biến hình",
+                "right": "Phân đôi"
+              },
+              {
+                "left": "Thủy tức",
+                "right": "Nảy chồi"
+              },
+              {
+                "left": "Sao biển",
+                "right": "Phân mảnh (tái sinh từ mảnh cơ thể)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Sinh sản vô tính là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hình thức sinh sản không có sự kết hợp giữa giao tử đực và giao tử cái"
+              },
+              {
+                "id": "b",
+                "label": "Sinh sản có hoa"
+              },
+              {
+                "id": "c",
+                "label": "Sinh sản bằng trứng đã thụ tinh"
+              },
+              {
+                "id": "d",
+                "label": "Sinh sản cần hai cá thể"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Con sinh ra bằng sinh sản vô tính giống hệt cơ thể mẹ.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Sinh sản vô tính tạo ra nhiều cá thể nhanh chóng.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Sinh sản vô tính tạo ra con cái rất đa dạng.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Một hạn chế của sinh sản vô tính là gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tạo ít cá thể"
+              },
+              {
+                "id": "b",
+                "label": "Các cá thể giống nhau nên khó thích nghi khi môi trường thay đổi"
+              },
+              {
+                "id": "c",
+                "label": "Cần hai bố mẹ"
+              },
+              {
+                "id": "d",
+                "label": "Rất chậm"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Hình thức sinh sản nào ở thủy tức tạo cơ thể con mọc ra từ cơ thể mẹ?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Phân đôi"
+              },
+              {
+                "id": "b",
+                "label": "Nảy chồi"
+              },
+              {
+                "id": "c",
+                "label": "Đẻ trứng"
+              },
+              {
+                "id": "d",
+                "label": "Phân mảnh"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

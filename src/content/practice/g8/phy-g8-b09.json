@@ -1,0 +1,268 @@
+{
+  "lessonId": "phy-g8-b09",
+  "units": [
+    {
+      "id": "dong-dien",
+      "title": "Dòng điện",
+      "fromExercises": [
+        "phy-g8-b09-mcq-001",
+        "phy-g8-b09-mcq-002",
+        "phy-g8-b09-mcq-004",
+        "phy-g8-b09-tf-007"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Dòng điện trong kim loại là dòng chuyển dời có hướng của hạt nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Proton"
+              },
+              {
+                "id": "b",
+                "label": "Electron tự do"
+              },
+              {
+                "id": "c",
+                "label": "Neutron"
+              },
+              {
+                "id": "d",
+                "label": "Ion dương"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Phân loại các vật liệu sau.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Vật dẫn điện"
+              },
+              {
+                "id": "b2",
+                "label": "Vật cách điện"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Đồng",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Nhôm",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Ruột bút chì (than chì)",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Nhựa",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Cao su",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Sứ",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về dòng điện là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Kim loại dẫn điện tốt vì có nhiều electron tự do.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Vỏ dây điện làm bằng nhựa để cách điện.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Nước nguyên chất dẫn điện rất tốt.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vì sao dây dẫn điện thường làm bằng đồng?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì đồng rẻ nhất"
+              },
+              {
+                "id": "b",
+                "label": "Vì đồng dẫn điện tốt"
+              },
+              {
+                "id": "c",
+                "label": "Vì đồng cách điện"
+              },
+              {
+                "id": "d",
+                "label": "Vì đồng nhẹ nhất"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nguon-dien",
+      "title": "Nguồn điện",
+      "fromExercises": [
+        "phy-g8-b09-mcq-003",
+        "phy-g8-b09-mcq-005",
+        "phy-g8-b09-mcq-006",
+        "phy-g8-b09-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Những thiết bị nào là nguồn điện?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Pin"
+              },
+              {
+                "id": "b",
+                "label": "Ắc quy"
+              },
+              {
+                "id": "c",
+                "label": "Pin mặt trời"
+              },
+              {
+                "id": "d",
+                "label": "Bóng đèn"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Mỗi nguồn điện có mấy cực?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "1"
+              },
+              {
+                "id": "b",
+                "label": "2"
+              },
+              {
+                "id": "c",
+                "label": "3"
+              },
+              {
+                "id": "d",
+                "label": "4"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Cực dương của pin thường được kí hiệu thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Dấu (−)"
+              },
+              {
+                "id": "b",
+                "label": "Dấu (+)"
+              },
+              {
+                "id": "c",
+                "label": "Chữ N"
+              },
+              {
+                "id": "d",
+                "label": "Chữ S"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về nguồn điện là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Nguồn điện cung cấp dòng điện cho các thiết bị hoạt động.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Pin đã dùng hết nên vứt vào thùng rác thường.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Máy phát điện là một nguồn điện.",
+                "correct": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

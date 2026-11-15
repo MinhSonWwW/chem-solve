@@ -1,0 +1,232 @@
+{
+  "lessonId": "bio-g7-b12",
+  "units": [
+    {
+      "id": "than",
+      "title": "Thân vận chuyển nước",
+      "fromExercises": [
+        "bio-g7-b12-q01",
+        "bio-g7-b12-q02",
+        "bio-g7-b12-q03",
+        "bio-g7-b12-q07"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sắp xếp các bước thí nghiệm chứng minh thân vận chuyển nước.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Pha mực đỏ vào cốc nước",
+              "Cắm cành hoa trắng vào cốc nước màu",
+              "Để vài giờ ở nơi thoáng",
+              "Quan sát cánh hoa và cắt ngang thân để xem phần bị nhuộm màu"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về thí nghiệm cắm hoa vào nước màu là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Cánh hoa trắng dần chuyển sang màu của nước.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Phần bị nhuộm màu trong thân là mạch gỗ.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Nước màu đi lên nhờ mạch rây.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Thí nghiệm cắm hoa vào nước màu chứng minh điều gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Lá thoát hơi nước"
+              },
+              {
+                "id": "b",
+                "label": "Nước được vận chuyển từ thân lên hoa, lá"
+              },
+              {
+                "id": "c",
+                "label": "Rễ hút oxygen"
+              },
+              {
+                "id": "d",
+                "label": "Cây quang hợp"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vì sao nên cắt vát cuống hoa ở trong nước?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để hoa đẹp hơn"
+              },
+              {
+                "id": "b",
+                "label": "Để tăng diện tích hút nước và tránh bọt khí làm tắc mạch"
+              },
+              {
+                "id": "c",
+                "label": "Để hoa nhanh héo"
+              },
+              {
+                "id": "d",
+                "label": "Để mực không lên"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "la",
+      "title": "Lá thoát hơi nước",
+      "fromExercises": [
+        "bio-g7-b12-q04",
+        "bio-g7-b12-q05",
+        "bio-g7-b12-q06",
+        "bio-g7-b12-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Trong thí nghiệm, túi nilon trùm cành có lá xuất hiện gì sau một thời gian?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Không có gì"
+              },
+              {
+                "id": "b",
+                "label": "Các giọt nước li ti đọng ở mặt trong túi"
+              },
+              {
+                "id": "c",
+                "label": "Bụi bẩn"
+              },
+              {
+                "id": "d",
+                "label": "Khói trắng"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về thí nghiệm thoát hơi nước là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Cành không có lá dùng để đối chứng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Lá thoát hơi nước nhiều hơn khi trời nắng, có gió.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Túi trùm cành không có lá đọng nhiều nước hơn.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Những điều kiện nào làm lá thoát hơi nước mạnh hơn?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Trời nắng nóng"
+              },
+              {
+                "id": "b",
+                "label": "Có gió nhẹ"
+              },
+              {
+                "id": "c",
+                "label": "Trời ẩm ướt, không có gió"
+              },
+              {
+                "id": "d",
+                "label": "Không khí khô"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Hơi nước thoát ra từ lá đọng thành giọt trong túi là do quá trình nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Bay hơi"
+              },
+              {
+                "id": "b",
+                "label": "Ngưng tụ"
+              },
+              {
+                "id": "c",
+                "label": "Nóng chảy"
+              },
+              {
+                "id": "d",
+                "label": "Đông đặc"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

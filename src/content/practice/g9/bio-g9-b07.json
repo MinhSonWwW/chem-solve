@@ -1,0 +1,144 @@
+{
+  "lessonId": "bio-g9-b07",
+  "units": [
+    {
+      "id": "cau-truc-nst",
+      "title": "Cấu trúc nhiễm sắc thể",
+      "fromExercises": [
+        "bio-g9-b07-q01",
+        "bio-g9-b07-q02",
+        "bio-g9-b07-q03",
+        "bio-g9-b07-q04",
+        "bio-g9-b07-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Xác định các nhận định sau về cấu trúc nhiễm sắc thể là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Nhiễm sắc thể được cấu tạo từ DNA và protein histone.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Ở kì giữa, nhiễm sắc thể co xoắn cực đại, dễ quan sát nhất.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Nhiễm sắc thể chỉ có ở vi khuẩn.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Nhiễm sắc thể kép gồm mấy chromatid?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "1"
+              },
+              {
+                "id": "b",
+                "label": "2"
+              },
+              {
+                "id": "c",
+                "label": "3"
+              },
+              {
+                "id": "d",
+                "label": "4"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Tâm động có vai trò gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Là nơi đính vào thoi phân bào, giúp nhiễm sắc thể di chuyển"
+              },
+              {
+                "id": "b",
+                "label": "Tổng hợp protein"
+              },
+              {
+                "id": "c",
+                "label": "Tạo năng lượng"
+              },
+              {
+                "id": "d",
+                "label": "Bảo vệ nhân"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bo-nst",
+      "title": "Bộ nhiễm sắc thể",
+      "fromExercises": [
+        "bio-g9-b07-q05",
+        "bio-g9-b07-q06",
+        "bio-g9-b07-q07",
+        "bio-g9-b07-ord-001"
+      ],
+      "generator": "chromosomes",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Người có bộ nhiễm sắc thể 2n = 46. Giao tử bình thường có bao nhiêu nhiễm sắc thể?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 23
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về bộ nhiễm sắc thể là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Bộ nhiễm sắc thể lưỡng bội có các nhiễm sắc thể tồn tại thành từng cặp tương đồng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Giao tử mang bộ nhiễm sắc thể đơn bội (n).",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Số lượng nhiễm sắc thể càng nhiều thì loài càng tiến hóa.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

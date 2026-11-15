@@ -1,0 +1,137 @@
+{
+  "lessonId": "phy-g8-b12",
+  "units": [
+    {
+      "id": "cuong-do",
+      "title": "Cường độ dòng điện",
+      "fromExercises": [
+        "phy-g8-b12-num-001",
+        "phy-g8-b12-num-003",
+        "phy-g8-b12-mcq-004",
+        "phy-g8-b12-num-006"
+      ],
+      "generator": "electric-units",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Dụng cụ đo cường độ dòng điện là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vôn kế"
+              },
+              {
+                "id": "b",
+                "label": "Ampe kế"
+              },
+              {
+                "id": "c",
+                "label": "Lực kế"
+              },
+              {
+                "id": "d",
+                "label": "Nhiệt kế"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ampe kế được mắc như thế nào với đèn cần đo?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nối tiếp"
+              },
+              {
+                "id": "b",
+                "label": "Song song"
+              },
+              {
+                "id": "c",
+                "label": "Mắc chéo"
+              },
+              {
+                "id": "d",
+                "label": "Không cần mắc"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hieu-dien-the",
+      "title": "Hiệu điện thế",
+      "fromExercises": [
+        "phy-g8-b12-num-002",
+        "phy-g8-b12-mcq-005",
+        "phy-g8-b12-mcq-007",
+        "phy-g8-b12-num-008"
+      ],
+      "generator": "electric-units",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Đơn vị của hiệu điện thế là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ampe (A)"
+              },
+              {
+                "id": "b",
+                "label": "Vôn (V)"
+              },
+              {
+                "id": "c",
+                "label": "Niutơn (N)"
+              },
+              {
+                "id": "d",
+                "label": "Jun (J)"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về hiệu điện thế là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Vôn kế mắc song song với dụng cụ cần đo hiệu điện thế.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Hiệu điện thế giữa hai cực của pin tiểu khoảng 1,5 V.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Ampe kế dùng để đo hiệu điện thế.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

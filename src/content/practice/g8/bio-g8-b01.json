@@ -1,0 +1,260 @@
+{
+  "lessonId": "bio-g8-b01",
+  "units": [
+    {
+      "id": "cap-do-co-quan",
+      "title": "Các cấp độ tổ chức và hệ cơ quan",
+      "fromExercises": [
+        "bio-g8-b01-q01",
+        "bio-g8-b01-q02",
+        "bio-g8-b01-q07",
+        "bio-g8-b01-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép hệ cơ quan với chức năng chính.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Hệ vận động",
+                "right": "Nâng đỡ, vận động cơ thể"
+              },
+              {
+                "left": "Hệ tuần hoàn",
+                "right": "Vận chuyển các chất trong cơ thể"
+              },
+              {
+                "left": "Hệ hô hấp",
+                "right": "Trao đổi khí"
+              },
+              {
+                "left": "Hệ bài tiết",
+                "right": "Lọc và thải chất thải"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Sắp xếp các cấp độ tổ chức cơ thể người từ nhỏ đến lớn.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Tế bào",
+              "Mô",
+              "Cơ quan",
+              "Hệ cơ quan",
+              "Cơ thể"
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về các cấp độ tổ chức và hệ cơ quan là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Cơ thể người được chia thành ba phần: đầu, thân và tay chân.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Khoang ngực chứa tim và phổi.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Dạ dày nằm trong khoang ngực.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Hệ cơ quan nào điều khiển hoạt động của các hệ cơ quan khác?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hệ tiêu hóa"
+              },
+              {
+                "id": "b",
+                "label": "Hệ thần kinh và hệ nội tiết"
+              },
+              {
+                "id": "c",
+                "label": "Hệ vận động"
+              },
+              {
+                "id": "d",
+                "label": "Hệ bài tiết"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mo",
+      "title": "Các loại mô",
+      "fromExercises": [
+        "bio-g8-b01-q03",
+        "bio-g8-b01-q04",
+        "bio-g8-b01-q05",
+        "bio-g8-b01-q06"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các cấu trúc sau theo loại mô.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Mô biểu bì"
+              },
+              {
+                "id": "b2",
+                "label": "Mô liên kết"
+              },
+              {
+                "id": "b3",
+                "label": "Mô cơ"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Lớp ngoài cùng của da",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Lớp lót trong ruột",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Máu",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Xương",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Mô mỡ",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Cơ tim",
+                "bucketId": "b3"
+              },
+              {
+                "id": "i7",
+                "label": "Cơ bắp tay",
+                "bucketId": "b3"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Cơ thể người có mấy loại mô chính?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "2"
+              },
+              {
+                "id": "b",
+                "label": "3"
+              },
+              {
+                "id": "c",
+                "label": "4"
+              },
+              {
+                "id": "d",
+                "label": "5"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về các loại mô là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Mô thần kinh có chức năng tiếp nhận kích thích và dẫn truyền xung thần kinh.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Máu là một loại mô liên kết.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Cơ tim co dãn theo ý muốn của con người.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Mô là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Một tế bào lớn"
+              },
+              {
+                "id": "b",
+                "label": "Tập hợp các tế bào có cấu trúc giống nhau, cùng thực hiện một chức năng"
+              },
+              {
+                "id": "c",
+                "label": "Một cơ quan"
+              },
+              {
+                "id": "d",
+                "label": "Một hệ cơ quan"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

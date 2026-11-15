@@ -1,0 +1,227 @@
+{
+  "lessonId": "bio-g8-b06",
+  "units": [
+    {
+      "id": "cau-tao",
+      "title": "Cấu tạo hệ bài tiết nước tiểu",
+      "fromExercises": [
+        "bio-g8-b06-q01",
+        "bio-g8-b06-q02",
+        "bio-g8-b06-q03",
+        "bio-g8-b06-q04"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sắp xếp đường đi của nước tiểu.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Thận",
+              "Ống dẫn nước tiểu",
+              "Bóng đái",
+              "Ống đái"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ghép cơ quan bài tiết với sản phẩm bài tiết.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Thận",
+                "right": "Nước tiểu"
+              },
+              {
+                "left": "Da",
+                "right": "Mồ hôi"
+              },
+              {
+                "left": "Phổi",
+                "right": "Khí carbon dioxide"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về cấu tạo hệ bài tiết nước tiểu là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Mỗi quả thận có khoảng một triệu đơn vị chức năng (nephron).",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Thận lọc máu để tạo thành nước tiểu.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Bóng đái là nơi lọc máu.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Cơ thể người có mấy quả thận?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "1"
+              },
+              {
+                "id": "b",
+                "label": "2"
+              },
+              {
+                "id": "c",
+                "label": "3"
+              },
+              {
+                "id": "d",
+                "label": "4"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nuoc-tieu",
+      "title": "Tạo nước tiểu và bảo vệ thận",
+      "fromExercises": [
+        "bio-g8-b06-q05",
+        "bio-g8-b06-q06",
+        "bio-g8-b06-q07",
+        "bio-g8-b06-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Những thói quen nào giúp bảo vệ thận?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Uống đủ nước mỗi ngày"
+              },
+              {
+                "id": "b",
+                "label": "Không nhịn tiểu lâu"
+              },
+              {
+                "id": "c",
+                "label": "Ăn quá mặn thường xuyên"
+              },
+              {
+                "id": "d",
+                "label": "Hạn chế đồ uống có nhiều đường"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Khi uống ít nước và trời nóng, lượng nước tiểu thay đổi thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tăng"
+              },
+              {
+                "id": "b",
+                "label": "Giảm, nước tiểu đậm màu hơn"
+              },
+              {
+                "id": "c",
+                "label": "Không đổi"
+              },
+              {
+                "id": "d",
+                "label": "Trong hơn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về tạo nước tiểu và bảo vệ thận là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Ăn quá mặn kéo dài có thể gây hại cho thận.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nước tiểu người khỏe mạnh thường chứa nhiều glucose.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Người suy thận nặng có thể phải chạy thận nhân tạo.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Nhịn tiểu lâu có thể gây hại gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tốt cho thận"
+              },
+              {
+                "id": "b",
+                "label": "Dễ gây sỏi thận và viêm đường tiết niệu"
+              },
+              {
+                "id": "c",
+                "label": "Làm thận lớn hơn"
+              },
+              {
+                "id": "d",
+                "label": "Không ảnh hưởng"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

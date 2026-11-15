@@ -1,0 +1,231 @@
+{
+  "lessonId": "phy-g8-b17",
+  "units": [
+    {
+      "id": "no-vi-nhiet",
+      "title": "Sự nở vì nhiệt của các chất",
+      "fromExercises": [
+        "phy-g8-b17-mcq-001",
+        "phy-g8-b17-mcq-002",
+        "phy-g8-b17-mcq-007",
+        "phy-g8-b17-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Khi nóng lên, phần lớn các chất thay đổi thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Co lại"
+              },
+              {
+                "id": "b",
+                "label": "Nở ra"
+              },
+              {
+                "id": "c",
+                "label": "Không đổi"
+              },
+              {
+                "id": "d",
+                "label": "Biến mất"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Sắp xếp các chất theo mức độ nở vì nhiệt từ ít đến nhiều.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Chất rắn",
+              "Chất lỏng",
+              "Chất khí"
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về sự nở vì nhiệt của các chất là đúng hay sai.",
+          "difficulty": 3,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Chất khí nở vì nhiệt nhiều hơn chất lỏng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Các chất rắn khác nhau nở vì nhiệt khác nhau.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Nước luôn nở ra khi nhiệt độ tăng từ 0 °C đến 4 °C.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vì sao không nên đổ nước thật đầy ấm khi đun?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì nước nặng"
+              },
+              {
+                "id": "b",
+                "label": "Vì nước nở ra khi nóng có thể tràn ra ngoài"
+              },
+              {
+                "id": "c",
+                "label": "Vì ấm sẽ nhẹ"
+              },
+              {
+                "id": "d",
+                "label": "Vì nước không sôi được"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ung-dung-no",
+      "title": "Ứng dụng sự nở vì nhiệt",
+      "fromExercises": [
+        "phy-g8-b17-mcq-003",
+        "phy-g8-b17-mcq-004",
+        "phy-g8-b17-mcq-005",
+        "phy-g8-b17-mcq-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Những trường hợp nào phải tính đến sự nở vì nhiệt?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để khe hở giữa các thanh ray"
+              },
+              {
+                "id": "b",
+                "label": "Một đầu cầu thép đặt trên con lăn"
+              },
+              {
+                "id": "c",
+                "label": "Dây điện để hơi chùng vào mùa hè"
+              },
+              {
+                "id": "d",
+                "label": "Sơn màu cho cửa"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Băng kép bị cong khi nóng lên vì sao?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì băng kép bị chảy"
+              },
+              {
+                "id": "b",
+                "label": "Vì hai kim loại nở vì nhiệt khác nhau"
+              },
+              {
+                "id": "c",
+                "label": "Vì băng kép co lại đều"
+              },
+              {
+                "id": "d",
+                "label": "Vì có lực kéo"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Nhiệt kế chất lỏng hoạt động dựa trên hiện tượng nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Phản xạ ánh sáng"
+              },
+              {
+                "id": "b",
+                "label": "Sự nở vì nhiệt của chất lỏng"
+              },
+              {
+                "id": "c",
+                "label": "Bay hơi"
+              },
+              {
+                "id": "d",
+                "label": "Nhiễm điện"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về ứng dụng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Băng kép được dùng để tự động đóng ngắt mạch trong bàn là.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Quả bóng bàn bị móp có thể phồng lại khi nhúng vào nước nóng.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Đổ nước nóng vào cốc thủy tinh dày luôn an toàn tuyệt đối.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

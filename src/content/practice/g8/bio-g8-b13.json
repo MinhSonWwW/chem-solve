@@ -1,0 +1,176 @@
+{
+  "lessonId": "bio-g8-b13",
+  "units": [
+    {
+      "id": "dac-trung",
+      "title": "Quần thể và các đặc trưng",
+      "fromExercises": [
+        "bio-g8-b13-q01",
+        "bio-g8-b13-q02",
+        "bio-g8-b13-q03",
+        "bio-g8-b13-q04",
+        "bio-g8-b13-q06"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Những ví dụ nào là quần thể sinh vật?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Các cây thông trong một rừng thông"
+              },
+              {
+                "id": "b",
+                "label": "Đàn voi trong vườn quốc gia"
+              },
+              {
+                "id": "c",
+                "label": "Các con cá khác loài trong ao"
+              },
+              {
+                "id": "d",
+                "label": "Cây cỏ và con bò trên đồng"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Phân loại các nhóm tuổi trong quần thể.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Nhóm tuổi trước sinh sản"
+              },
+              {
+                "id": "b2",
+                "label": "Nhóm tuổi sinh sản"
+              },
+              {
+                "id": "b3",
+                "label": "Nhóm tuổi sau sinh sản"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Cá thể non",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Cá thể trưởng thành đang sinh sản",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i3",
+                "label": "Cá thể già không còn sinh sản",
+                "bucketId": "b3"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về quần thể và các đặc trưng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Quần thể gồm các cá thể cùng loài, cùng sống trong một khu vực.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Mật độ là đặc trưng quan trọng của quần thể.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Một quần thể có thể gồm nhiều loài khác nhau.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "mat-do",
+      "title": "Mật độ và biến động số lượng",
+      "fromExercises": [
+        "bio-g8-b13-q05",
+        "bio-g8-b13-q07",
+        "bio-g8-b13-q08"
+      ],
+      "generator": "population-density",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Mật độ quần thể được tính như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Số cá thể trên một đơn vị diện tích hoặc thể tích"
+              },
+              {
+                "id": "b",
+                "label": "Tổng khối lượng quần thể"
+              },
+              {
+                "id": "c",
+                "label": "Số loài trong khu vực"
+              },
+              {
+                "id": "d",
+                "label": "Tuổi trung bình"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về mật độ và biến động số lượng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Mật độ quần thể có thể thay đổi theo mùa.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Khi thức ăn khan hiếm, số cá thể có thể giảm.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Mật độ quần thể không bao giờ thay đổi.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

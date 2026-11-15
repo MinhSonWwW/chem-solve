@@ -1,0 +1,198 @@
+{
+  "lessonId": "bio-g9-b10",
+  "units": [
+    {
+      "id": "lien-ket",
+      "title": "Di truyền liên kết",
+      "fromExercises": [
+        "bio-g9-b10-q01",
+        "bio-g9-b10-q02",
+        "bio-g9-b10-q03",
+        "bio-g9-b10-q04"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Đối tượng nghiên cứu của Morgan là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đậu Hà Lan"
+              },
+              {
+                "id": "b",
+                "label": "Ruồi giấm"
+              },
+              {
+                "id": "c",
+                "label": "Chuột"
+              },
+              {
+                "id": "d",
+                "label": "Ngô"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về di truyền liên kết là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Các gene nằm trên cùng một nhiễm sắc thể thường di truyền cùng nhau.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Số nhóm gene liên kết bằng số nhiễm sắc thể trong bộ đơn bội.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Di truyền liên kết làm tăng biến dị tổ hợp.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Ruồi giấm có 2n = 8. Số nhóm gene liên kết là bao nhiêu?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 4,
+            "unit": "nhóm"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vì sao ruồi giấm thuận lợi cho nghiên cứu di truyền?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Dễ nuôi, đẻ nhiều, vòng đời ngắn, có nhiều biến dị dễ quan sát"
+              },
+              {
+                "id": "b",
+                "label": "Vì sống rất lâu"
+              },
+              {
+                "id": "c",
+                "label": "Vì rất lớn"
+              },
+              {
+                "id": "d",
+                "label": "Vì không sinh sản"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ung-dung-lk",
+      "title": "Ý nghĩa và ứng dụng di truyền liên kết",
+      "fromExercises": [
+        "bio-g9-b10-q05",
+        "bio-g9-b10-q06",
+        "bio-g9-b10-q07",
+        "bio-g9-b10-q08",
+        "bio-g9-b10-match-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Xác định các nhận định sau về ý nghĩa và ứng dụng di truyền liên kết là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Di truyền liên kết giúp duy trì sự ổn định của nhóm tính trạng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Trong chọn giống, có thể chọn được nhóm tính trạng tốt đi kèm nhau.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Liên kết gene chỉ có ở thực vật.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "So với phân li độc lập, di truyền liên kết hoàn toàn có đặc điểm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hạn chế xuất hiện biến dị tổ hợp"
+              },
+              {
+                "id": "b",
+                "label": "Tạo nhiều biến dị tổ hợp hơn"
+              },
+              {
+                "id": "c",
+                "label": "Không có kiểu hình"
+              },
+              {
+                "id": "d",
+                "label": "Luôn cho tỉ lệ 9 : 3 : 3 : 1"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Morgan đã phát hiện ra hiện tượng gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Phân li độc lập"
+              },
+              {
+                "id": "b",
+                "label": "Di truyền liên kết"
+              },
+              {
+                "id": "c",
+                "label": "Đột biến số lượng"
+              },
+              {
+                "id": "d",
+                "label": "Quang hợp"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

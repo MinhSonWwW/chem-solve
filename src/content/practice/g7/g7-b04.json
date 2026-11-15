@@ -1,0 +1,165 @@
+{
+  "lessonId": "g7-b04",
+  "units": [
+    {
+      "id": "cau-tao-bth",
+      "title": "Ô nguyên tố, chu kì, nhóm",
+      "fromExercises": [
+        "g7-b04-mcq-001",
+        "g7-b04-mcq-002",
+        "g7-b04-mcq-003",
+        "g7-b04-match-001",
+        "g7-b04-tf-001",
+        "g7-b04-mcq-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Bảng tuần hoàn hiện nay có bao nhiêu chu kì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "5"
+              },
+              {
+                "id": "b",
+                "label": "6"
+              },
+              {
+                "id": "c",
+                "label": "7"
+              },
+              {
+                "id": "d",
+                "label": "8"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về bảng tuần hoàn là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Các nguyên tố trong cùng một nhóm có tính chất hóa học tương tự nhau.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Số hiệu nguyên tử bằng số proton trong hạt nhân.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Mỗi ô nguyên tố chỉ cho biết tên nguyên tố.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "vi-tri",
+      "title": "Vị trí và loại nguyên tố",
+      "fromExercises": [
+        "g7-b04-sort-001",
+        "g7-b04-mcq-004",
+        "g7-b04-ordering-001",
+        "g7-b04-mcq-005",
+        "g7-b04-sort-002"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Các nguyên tố khí hiếm nằm ở nhóm nào của bảng tuần hoàn?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nhóm IA"
+              },
+              {
+                "id": "b",
+                "label": "Nhóm IIA"
+              },
+              {
+                "id": "c",
+                "label": "Nhóm VIIA"
+              },
+              {
+                "id": "d",
+                "label": "Nhóm VIIIA"
+              }
+            ],
+            "correctId": "d"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Phần lớn các nguyên tố kim loại nằm ở khu vực nào của bảng tuần hoàn?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Bên trái và ở giữa"
+              },
+              {
+                "id": "b",
+                "label": "Góc trên bên phải"
+              },
+              {
+                "id": "c",
+                "label": "Cột cuối cùng"
+              },
+              {
+                "id": "d",
+                "label": "Chỉ ở chu kì 1"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Nguyên tố có số hiệu nguyên tử Z = 8 là nguyên tố nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Carbon"
+              },
+              {
+                "id": "b",
+                "label": "Nitrogen"
+              },
+              {
+                "id": "c",
+                "label": "Oxygen"
+              },
+              {
+                "id": "d",
+                "label": "Fluorine"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    }
+  ]
+}

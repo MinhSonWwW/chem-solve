@@ -1,0 +1,227 @@
+{
+  "lessonId": "bio-g8-b11",
+  "units": [
+    {
+      "id": "co-quan-ss",
+      "title": "Cơ quan sinh sản và thụ tinh",
+      "fromExercises": [
+        "bio-g8-b11-q01",
+        "bio-g8-b11-q02",
+        "bio-g8-b11-q03",
+        "bio-g8-b11-q04",
+        "bio-g8-b11-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép cơ quan với chức năng.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Tinh hoàn",
+                "right": "Sản xuất tinh trùng"
+              },
+              {
+                "left": "Buồng trứng",
+                "right": "Sản sinh trứng"
+              },
+              {
+                "left": "Tử cung",
+                "right": "Nơi phôi làm tổ và phát triển"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về cơ quan sinh sản và thụ tinh là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Thụ tinh là sự kết hợp giữa tinh trùng và trứng tạo thành hợp tử.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Kinh nguyệt là hiện tượng bình thường ở nữ tuổi dậy thì.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Thụ thai xảy ra trước khi thụ tinh.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Sắp xếp các giai đoạn từ thụ tinh đến khi thai phát triển.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Thụ tinh tạo hợp tử",
+              "Hợp tử phân chia thành phôi",
+              "Phôi làm tổ ở tử cung (thụ thai)",
+              "Thai phát triển trong tử cung"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "suc-khoe-ss",
+      "title": "Bảo vệ sức khỏe sinh sản",
+      "fromExercises": [
+        "bio-g8-b11-q06",
+        "bio-g8-b11-q07",
+        "bio-g8-b11-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Những bệnh nào lây truyền qua đường tình dục?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "HIV/AIDS"
+              },
+              {
+                "id": "b",
+                "label": "Lậu"
+              },
+              {
+                "id": "c",
+                "label": "Giang mai"
+              },
+              {
+                "id": "d",
+                "label": "Cảm cúm"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về bảo vệ sức khỏe sinh sản là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Tuổi vị thành niên cần được trang bị kiến thức về sức khỏe sinh sản.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "HIV có thể lây qua dùng chung bơm kim tiêm.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Bắt tay người nhiễm HIV có thể lây bệnh.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Vì sao cần giữ vệ sinh cơ quan sinh dục hằng ngày?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Không cần thiết"
+              },
+              {
+                "id": "b",
+                "label": "Để phòng tránh viêm nhiễm"
+              },
+              {
+                "id": "c",
+                "label": "Để tăng chiều cao"
+              },
+              {
+                "id": "d",
+                "label": "Để tiêu hóa tốt"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Ở tuổi dậy thì, học sinh nên làm gì khi có thắc mắc về sức khỏe sinh sản?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Giấu kín, không hỏi ai"
+              },
+              {
+                "id": "b",
+                "label": "Hỏi cha mẹ, thầy cô hoặc nhân viên y tế"
+              },
+              {
+                "id": "c",
+                "label": "Tìm thông tin không rõ nguồn"
+              },
+              {
+                "id": "d",
+                "label": "Tự mua thuốc uống"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Biện pháp nào vừa tránh thai vừa phòng bệnh lây qua đường tình dục?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Thuốc tránh thai hằng ngày"
+              },
+              {
+                "id": "b",
+                "label": "Dùng bao cao su"
+              },
+              {
+                "id": "c",
+                "label": "Tính ngày kinh nguyệt"
+              },
+              {
+                "id": "d",
+                "label": "Không có biện pháp nào"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

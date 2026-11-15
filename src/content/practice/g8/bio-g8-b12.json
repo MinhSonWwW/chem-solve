@@ -1,0 +1,246 @@
+{
+  "lessonId": "bio-g8-b12",
+  "units": [
+    {
+      "id": "nhan-to",
+      "title": "Môi trường và các nhân tố sinh thái",
+      "fromExercises": [
+        "bio-g8-b12-q01",
+        "bio-g8-b12-q02",
+        "bio-g8-b12-q03",
+        "bio-g8-b12-q07"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các nhân tố sinh thái.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Nhân tố vô sinh"
+              },
+              {
+                "id": "b2",
+                "label": "Nhân tố hữu sinh"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Ánh sáng",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Nhiệt độ",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Độ ẩm",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Con mồi",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Vật kí sinh",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Con người",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ghép sinh vật với môi trường sống.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Cá chép",
+                "right": "Môi trường nước"
+              },
+              {
+                "left": "Giun đất",
+                "right": "Môi trường trong đất"
+              },
+              {
+                "left": "Chim sẻ",
+                "right": "Môi trường trên cạn"
+              },
+              {
+                "left": "Giun đũa",
+                "right": "Môi trường sinh vật"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về môi trường và các nhân tố sinh thái là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Con người là nhân tố sinh thái có ảnh hưởng lớn tới tự nhiên.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Ánh sáng là nhân tố hữu sinh.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Cây ưa sáng thường có lá nhỏ, dày, màu nhạt.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Môi trường sống của sinh vật là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nơi sinh sống, gồm các nhân tố bao quanh sinh vật"
+              },
+              {
+                "id": "b",
+                "label": "Chỉ là nơi ăn uống"
+              },
+              {
+                "id": "c",
+                "label": "Chỉ là nhiệt độ"
+              },
+              {
+                "id": "d",
+                "label": "Chỉ là nước"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gioi-han",
+      "title": "Giới hạn sinh thái",
+      "fromExercises": [
+        "bio-g8-b12-q04",
+        "bio-g8-b12-q05",
+        "bio-g8-b12-q06",
+        "bio-g8-b12-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Loài nào có khả năng phân bố rộng hơn?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Loài có giới hạn sinh thái rộng"
+              },
+              {
+                "id": "b",
+                "label": "Loài có giới hạn sinh thái hẹp"
+              },
+              {
+                "id": "c",
+                "label": "Như nhau"
+              },
+              {
+                "id": "d",
+                "label": "Không xác định"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về giới hạn sinh thái là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Ngoài giới hạn sinh thái, sinh vật không tồn tại được.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Trong khoảng thuận lợi, sinh vật sinh trưởng tốt nhất.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Mọi loài đều chịu được mọi nhiệt độ.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Một loài cá sống được từ 5 °C đến 40 °C. Khoảng chịu nhiệt (biên độ) của loài là bao nhiêu độ C?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 35,
+            "unit": "°C"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Hiểu giới hạn sinh thái của cây trồng giúp người nông dân làm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chọn thời vụ và vùng trồng phù hợp"
+              },
+              {
+                "id": "b",
+                "label": "Bón phân nhiều hơn"
+              },
+              {
+                "id": "c",
+                "label": "Tưới nước liên tục"
+              },
+              {
+                "id": "d",
+                "label": "Không giúp gì"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "lessonId": "phy-g9-b01",
+  "units": [
+    {
+      "id": "dong-the-nang",
+      "title": "Động năng và thế năng",
+      "fromExercises": [
+        "phy-g9-b01-mcq-001",
+        "phy-g9-b01-mcq-002",
+        "phy-g9-b01-mcq-003",
+        "phy-g9-b01-mcq-007",
+        "phy-g9-b01-sort-001",
+        "phy-g9-b01-match-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Xác định các nhận định sau về động năng và thế năng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Vật có khối lượng càng lớn, chuyển động càng nhanh thì động năng càng lớn.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Vật ở càng cao thì thế năng trọng trường càng lớn.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Vật đứng yên trên mặt đất có động năng lớn nhất.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Khi tốc độ của vật tăng gấp đôi (khối lượng không đổi), động năng thay đổi thế nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tăng gấp đôi"
+              },
+              {
+                "id": "b",
+                "label": "Tăng gấp bốn"
+              },
+              {
+                "id": "c",
+                "label": "Giảm một nửa"
+              },
+              {
+                "id": "d",
+                "label": "Không đổi"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tinh-nang-luong",
+      "title": "Tính động năng và thế năng",
+      "fromExercises": [
+        "phy-g9-b01-num-004",
+        "phy-g9-b01-num-005",
+        "phy-g9-b01-num-006",
+        "phy-g9-b01-num-008"
+      ],
+      "generator": "kinetic-potential",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Một quả bóng 0,5 kg bay với tốc độ 6 m/s. Động năng của quả bóng là bao nhiêu J?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 9,
+            "unit": "J",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Một người nặng 50 kg đứng trên sân thượng cao 12 m. Thế năng trọng trường của người đó là bao nhiêu J (P = 10m)?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 6000,
+            "unit": "J",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

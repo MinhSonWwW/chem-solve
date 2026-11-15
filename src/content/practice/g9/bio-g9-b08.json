@@ -1,0 +1,185 @@
+{
+  "lessonId": "bio-g9-b08",
+  "units": [
+    {
+      "id": "nguyen-phan",
+      "title": "Nguyên phân",
+      "fromExercises": [
+        "bio-g9-b08-q01",
+        "bio-g9-b08-q02",
+        "bio-g9-b08-q03",
+        "bio-g9-b08-sort-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sắp xếp các kì của nguyên phân.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Kì đầu",
+              "Kì giữa",
+              "Kì sau",
+              "Kì cuối"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về nguyên phân là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Nguyên phân tạo ra hai tế bào con có bộ nhiễm sắc thể giống tế bào mẹ.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nguyên phân giúp cơ thể lớn lên và thay thế tế bào già.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Nguyên phân tạo ra giao tử.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Một tế bào nguyên phân liên tiếp 4 lần tạo ra bao nhiêu tế bào con?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 16,
+            "unit": "tế bào"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Ở kì giữa nguyên phân, các nhiễm sắc thể kép sắp xếp như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Thành hai hàng"
+              },
+              {
+                "id": "b",
+                "label": "Thành một hàng trên mặt phẳng xích đạo"
+              },
+              {
+                "id": "c",
+                "label": "Ngẫu nhiên"
+              },
+              {
+                "id": "d",
+                "label": "Ở hai cực tế bào"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "giam-phan",
+      "title": "Giảm phân",
+      "fromExercises": [
+        "bio-g9-b08-q04",
+        "bio-g9-b08-q05",
+        "bio-g9-b08-q06",
+        "bio-g9-b08-q07",
+        "bio-g9-b08-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Giảm phân xảy ra ở loại tế bào nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tế bào sinh dưỡng"
+              },
+              {
+                "id": "b",
+                "label": "Tế bào sinh dục chín"
+              },
+              {
+                "id": "c",
+                "label": "Tế bào da"
+              },
+              {
+                "id": "d",
+                "label": "Tế bào thần kinh"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về giảm phân là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Giảm phân gồm hai lần phân bào liên tiếp.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Kết quả giảm phân tạo ra tế bào con có bộ nhiễm sắc thể giảm một nửa.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Giảm phân chỉ có một lần phân bào.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Từ một tế bào sinh tinh, giảm phân tạo ra bao nhiêu tinh trùng?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "1"
+              },
+              {
+                "id": "b",
+                "label": "2"
+              },
+              {
+                "id": "c",
+                "label": "4"
+              },
+              {
+                "id": "d",
+                "label": "8"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    }
+  ]
+}

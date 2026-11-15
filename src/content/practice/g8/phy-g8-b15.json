@@ -1,0 +1,177 @@
+{
+  "lessonId": "phy-g8-b15",
+  "units": [
+    {
+      "id": "quy-trinh",
+      "title": "Quy trình đo năng lượng nhiệt",
+      "fromExercises": [
+        "phy-g8-b15-ord-001",
+        "phy-g8-b15-mcq-002",
+        "phy-g8-b15-mcq-003",
+        "phy-g8-b15-mcq-004"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Joulemeter dùng để đo đại lượng nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nhiệt độ"
+              },
+              {
+                "id": "b",
+                "label": "Năng lượng điện cung cấp (J)"
+              },
+              {
+                "id": "c",
+                "label": "Khối lượng"
+              },
+              {
+                "id": "d",
+                "label": "Thời gian"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về thí nghiệm là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Cần ghi nhiệt độ nước trước và sau khi đun.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Cần khuấy nhẹ để nhiệt độ nước đều.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Nhiệt kế nên chạm vào dây đốt để đo chính xác.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Những dụng cụ cần trong thí nghiệm đo năng lượng nhiệt bằng joulemeter?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Joulemeter"
+              },
+              {
+                "id": "b",
+                "label": "Nhiệt kế"
+              },
+              {
+                "id": "c",
+                "label": "Bình nhiệt lượng kế có dây đốt"
+              },
+              {
+                "id": "d",
+                "label": "Kính hiển vi"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vì sao bình nhiệt lượng kế có lớp vỏ cách nhiệt?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để đẹp hơn"
+              },
+              {
+                "id": "b",
+                "label": "Để hạn chế nhiệt thất thoát ra môi trường"
+              },
+              {
+                "id": "c",
+                "label": "Để nước nóng nhanh hơn do hút nhiệt"
+              },
+              {
+                "id": "d",
+                "label": "Để nhẹ hơn"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ket-qua",
+      "title": "Xử lí kết quả đo",
+      "fromExercises": [
+        "phy-g8-b15-num-005",
+        "phy-g8-b15-num-006",
+        "phy-g8-b15-mcq-007",
+        "phy-g8-b15-mcq-008"
+      ],
+      "generator": "heat-water",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Nhiệt độ nước ban đầu 25 °C, sau khi đun là 40 °C. Độ tăng nhiệt độ là bao nhiêu °C?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 15,
+            "unit": "°C"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Năng lượng đo trên joulemeter thường lớn hơn nhiệt lượng nước thu vào vì sao?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì joulemeter sai"
+              },
+              {
+                "id": "b",
+                "label": "Vì một phần năng lượng hao phí ra bình chứa và môi trường"
+              },
+              {
+                "id": "c",
+                "label": "Vì nước tạo ra năng lượng"
+              },
+              {
+                "id": "d",
+                "label": "Vì nhiệt kế sai"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

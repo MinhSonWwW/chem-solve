@@ -1,0 +1,135 @@
+{
+  "lessonId": "g9-b29",
+  "units": [
+    {
+      "id": "glucose-saccharose",
+      "title": "Glucose và saccharose",
+      "fromExercises": [
+        "g9-b29-mcq-001",
+        "g9-b29-mcq-002",
+        "g9-b29-sort-001",
+        "g9-b29-tf-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Glucose có nhiều trong loại quả nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Quả nho chín"
+              },
+              {
+                "id": "b",
+                "label": "Củ khoai tây"
+              },
+              {
+                "id": "c",
+                "label": "Hạt gạo"
+              },
+              {
+                "id": "d",
+                "label": "Thân mía"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Saccharose có nhiều trong thực vật nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nho"
+              },
+              {
+                "id": "b",
+                "label": "Mía và củ cải đường"
+              },
+              {
+                "id": "c",
+                "label": "Khoai lang"
+              },
+              {
+                "id": "d",
+                "label": "Lúa"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về glucose và saccharose là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Glucose là nguồn năng lượng quan trọng cho cơ thể.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Thủy phân saccharose tạo ra glucose và fructose.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Saccharose có phản ứng tráng bạc.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Viết công thức phân tử của glucose.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "text",
+            "accepted": [
+              "C6H12O6"
+            ],
+            "lenientDiacritics": true
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Lên men glucose (có men rượu) tạo ra những chất nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Acetic acid và nước"
+              },
+              {
+                "id": "b",
+                "label": "Ethylic alcohol và carbon dioxide"
+              },
+              {
+                "id": "c",
+                "label": "Methane và oxygen"
+              },
+              {
+                "id": "d",
+                "label": "Tinh bột"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

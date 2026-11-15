@@ -1,0 +1,180 @@
+{
+  "lessonId": "phy-g7-b04",
+  "units": [
+    {
+      "id": "bien-bao",
+      "title": "Biển báo và quy định tốc độ",
+      "fromExercises": [
+        "phy-g7-b04-mcq-001",
+        "phy-g7-b04-mcq-002",
+        "phy-g7-b04-mcq-003",
+        "phy-g7-b04-mcq-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Biển báo hình tròn, viền đỏ, có số 40 ở giữa cho biết điều gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tốc độ tối thiểu 40 km/h"
+              },
+              {
+                "id": "b",
+                "label": "Tốc độ tối đa cho phép là 40 km/h"
+              },
+              {
+                "id": "c",
+                "label": "Còn 40 km đến đích"
+              },
+              {
+                "id": "d",
+                "label": "Đường dài 40 m"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về an toàn giao thông là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Tốc độ càng cao thì quãng đường dừng xe càng dài.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Khi trời mưa, đường trơn, nên tăng khoảng cách với xe phía trước.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Đi đúng tốc độ cho phép thì không cần giữ khoảng cách.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Những hành vi nào gây mất an toàn giao thông?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chạy quá tốc độ cho phép"
+              },
+              {
+                "id": "b",
+                "label": "Bám sát đuôi xe phía trước"
+              },
+              {
+                "id": "c",
+                "label": "Đội mũ bảo hiểm"
+              },
+              {
+                "id": "d",
+                "label": "Vừa lái xe vừa dùng điện thoại"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Khi đi qua khu vực trường học, người lái xe nên làm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tăng tốc để đi qua nhanh"
+              },
+              {
+                "id": "b",
+                "label": "Giảm tốc độ và chú ý quan sát"
+              },
+              {
+                "id": "c",
+                "label": "Bấm còi liên tục"
+              },
+              {
+                "id": "d",
+                "label": "Vượt các xe khác"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "khoang-cach",
+      "title": "Khoảng cách an toàn",
+      "fromExercises": [
+        "phy-g7-b04-num-004",
+        "phy-g7-b04-num-005",
+        "phy-g7-b04-tf-007",
+        "phy-g7-b04-mcq-008"
+      ],
+      "generator": "safe-distance",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Vì sao khi tốc độ tăng thì cần khoảng cách an toàn lớn hơn?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì xe nặng hơn"
+              },
+              {
+                "id": "b",
+                "label": "Vì trong thời gian phản xạ và phanh, xe đi được quãng đường dài hơn"
+              },
+              {
+                "id": "c",
+                "label": "Vì đường hẹp hơn"
+              },
+              {
+                "id": "d",
+                "label": "Vì phanh tốt hơn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Thời gian phản xạ của tài xế là 1 s, xe chạy 20 m/s. Trong thời gian phản xạ, xe đi được bao nhiêu mét?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 20,
+            "unit": "m",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

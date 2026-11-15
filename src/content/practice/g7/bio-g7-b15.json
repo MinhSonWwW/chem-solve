@@ -1,0 +1,232 @@
+{
+  "lessonId": "bio-g7-b15",
+  "units": [
+    {
+      "id": "huong-dong",
+      "title": "Thí nghiệm về hướng sáng và hướng trọng lực",
+      "fromExercises": [
+        "bio-g7-b15-q01",
+        "bio-g7-b15-q02",
+        "bio-g7-b15-q03",
+        "bio-g7-b15-q04",
+        "bio-g7-b15-q07"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sắp xếp các bước thí nghiệm chứng minh tính hướng sáng.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Gieo hạt đậu vào chậu và chờ mọc mầm",
+              "Đặt chậu vào hộp kín chỉ khoét một lỗ ở bên",
+              "Tưới nước và để vài ngày",
+              "Mở hộp quan sát hướng mọc của ngọn cây"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về kết quả thí nghiệm là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Ngọn cây uốn cong về phía lỗ có ánh sáng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Đặt chậu nằm ngang, rễ cây uốn cong xuống dưới.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Đặt chậu nằm ngang, ngọn cây uốn cong xuống đất.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Thí nghiệm đặt chậu cây nằm ngang chứng minh điều gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hướng sáng"
+              },
+              {
+                "id": "b",
+                "label": "Hướng trọng lực của rễ và thân"
+              },
+              {
+                "id": "c",
+                "label": "Hướng nước"
+              },
+              {
+                "id": "d",
+                "label": "Hướng tiếp xúc"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ung-dong",
+      "title": "Quan sát cảm ứng ở cây trinh nữ",
+      "fromExercises": [
+        "bio-g7-b15-q05",
+        "bio-g7-b15-q06",
+        "bio-g7-b15-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Khi chạm vào lá cây trinh nữ, hiện tượng nào xảy ra?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Lá to ra"
+              },
+              {
+                "id": "b",
+                "label": "Lá chét khép lại, cuống lá cụp xuống"
+              },
+              {
+                "id": "c",
+                "label": "Lá đổi màu đỏ"
+              },
+              {
+                "id": "d",
+                "label": "Không có hiện tượng gì"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về cây trinh nữ là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Sau một thời gian yên tĩnh, lá trinh nữ lại xòe ra.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Chạm mạnh làm nhiều lá cụp xuống hơn chạm nhẹ.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Lá cây trinh nữ cụp xuống vĩnh viễn sau khi bị chạm.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Phản ứng cụp lá của cây trinh nữ có đặc điểm gì so với hướng sáng của ngọn cây?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chậm hơn nhiều"
+              },
+              {
+                "id": "b",
+                "label": "Diễn ra nhanh hơn"
+              },
+              {
+                "id": "c",
+                "label": "Giống hệt"
+              },
+              {
+                "id": "d",
+                "label": "Không phải cảm ứng"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Hiện tượng nào sau đây là cảm ứng ở thực vật?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hoa mười giờ nở vào buổi sáng"
+              },
+              {
+                "id": "b",
+                "label": "Lá trinh nữ cụp khi chạm vào"
+              },
+              {
+                "id": "c",
+                "label": "Cây hướng về phía ánh sáng"
+              },
+              {
+                "id": "d",
+                "label": "Đá bị nứt khi nắng nóng"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Khi làm thí nghiệm với cây trinh nữ, cần lưu ý gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chạm liên tục thật mạnh"
+              },
+              {
+                "id": "b",
+                "label": "Chạm nhẹ, quan sát và ghi thời gian lá cụp và xòe lại"
+              },
+              {
+                "id": "c",
+                "label": "Bẻ lá để quan sát"
+              },
+              {
+                "id": "d",
+                "label": "Tưới nước nóng lên cây"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

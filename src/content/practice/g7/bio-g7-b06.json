@@ -1,0 +1,263 @@
+{
+  "lessonId": "bio-g7-b06",
+  "units": [
+    {
+      "id": "yeu-to",
+      "title": "Các yếu tố ảnh hưởng đến hô hấp",
+      "fromExercises": [
+        "bio-g7-b06-q01",
+        "bio-g7-b06-q03",
+        "bio-g7-b06-q06",
+        "bio-g7-b06-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép yếu tố với ảnh hưởng đến hô hấp tế bào.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Nhiệt độ thấp",
+                "right": "Hô hấp chậm lại"
+              },
+              {
+                "left": "Hàm lượng nước trong hạt tăng",
+                "right": "Hô hấp mạnh lên"
+              },
+              {
+                "left": "Nồng độ carbon dioxide quá cao",
+                "right": "Hô hấp bị ức chế"
+              },
+              {
+                "left": "Thiếu oxygen",
+                "right": "Hô hấp hiếu khí giảm"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Hạt khô hô hấp yếu hơn hạt ẩm.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nhiệt độ càng cao thì hô hấp càng mạnh mãi không giới hạn.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Oxygen cần cho hô hấp hiếu khí.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Hạt đang nảy mầm có cường độ hô hấp như thế nào so với hạt khô?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Yếu hơn"
+              },
+              {
+                "id": "b",
+                "label": "Mạnh hơn"
+              },
+              {
+                "id": "c",
+                "label": "Như nhau"
+              },
+              {
+                "id": "d",
+                "label": "Không hô hấp"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vì sao đống thóc ẩm để lâu lại nóng lên?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì trời nắng"
+              },
+              {
+                "id": "b",
+                "label": "Vì thóc ẩm hô hấp mạnh, tỏa nhiệt"
+              },
+              {
+                "id": "c",
+                "label": "Vì có lửa"
+              },
+              {
+                "id": "d",
+                "label": "Vì thóc khô"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bao-quan",
+      "title": "Bảo quản nông sản",
+      "fromExercises": [
+        "bio-g7-b06-q02",
+        "bio-g7-b06-q04",
+        "bio-g7-b06-q05",
+        "bio-g7-b06-q07"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại cách bảo quản phù hợp.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Bảo quản khô"
+              },
+              {
+                "id": "b2",
+                "label": "Bảo quản lạnh"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Thóc",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Ngô hạt",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Đỗ hạt",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Rau xanh",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Thịt cá tươi",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Hoa quả chín",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Vì sao phơi khô thóc trước khi cất vào kho?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để thóc nặng hơn"
+              },
+              {
+                "id": "b",
+                "label": "Để giảm lượng nước, làm hô hấp yếu đi, thóc lâu hỏng"
+              },
+              {
+                "id": "c",
+                "label": "Để thóc nảy mầm"
+              },
+              {
+                "id": "d",
+                "label": "Để thóc thơm hơn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về bảo quản là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Mục đích bảo quản là giảm hô hấp, hạn chế tiêu hao chất hữu cơ.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Rau quả tươi nên bảo quản ở ngăn đá thật lạnh.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Hút chân không giúp hạn chế oxygen nên thực phẩm lâu hỏng.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Cách nào giúp hạt giống giữ được khả năng nảy mầm lâu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ngâm hạt trong nước"
+              },
+              {
+                "id": "b",
+                "label": "Phơi khô, cất nơi khô ráo, thoáng mát"
+              },
+              {
+                "id": "c",
+                "label": "Để hạt ngoài mưa"
+              },
+              {
+                "id": "d",
+                "label": "Ủ hạt nơi ẩm ấm"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

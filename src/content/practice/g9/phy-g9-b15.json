@@ -1,0 +1,232 @@
+{
+  "lessonId": "phy-g9-b15",
+  "units": [
+    {
+      "id": "vong-nang-luong",
+      "title": "Vòng năng lượng trên Trái Đất",
+      "fromExercises": [
+        "phy-g9-b15-mcq-001",
+        "phy-g9-b15-mcq-005",
+        "phy-g9-b15-mcq-007"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Nguồn năng lượng chủ yếu của Trái Đất đến từ đâu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Mặt Trời"
+              },
+              {
+                "id": "b",
+                "label": "Mặt Trăng"
+              },
+              {
+                "id": "c",
+                "label": "Lõi Trái Đất"
+              },
+              {
+                "id": "d",
+                "label": "Gió"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về vòng năng lượng trên Trái Đất là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Năng lượng gió có nguồn gốc từ năng lượng Mặt Trời.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Cây xanh chuyển năng lượng ánh sáng thành năng lượng hóa học.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Than đá có nguồn gốc không liên quan đến sinh vật.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Sắp xếp quá trình hình thành than đá.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Thực vật hấp thụ năng lượng Mặt Trời",
+              "Thực vật chết bị vùi lấp",
+              "Bị nén ép lâu dài dưới đất",
+              "Biến đổi thành than đá"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vòng tuần hoàn nước trên Trái Đất được thúc đẩy chủ yếu bởi năng lượng nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Năng lượng gió"
+              },
+              {
+                "id": "b",
+                "label": "Năng lượng Mặt Trời"
+              },
+              {
+                "id": "c",
+                "label": "Năng lượng hạt nhân"
+              },
+              {
+                "id": "d",
+                "label": "Năng lượng điện"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Năng lượng thủy điện có nguồn gốc sâu xa từ đâu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Mặt Trời làm nước bốc hơi rồi mưa xuống tạo dòng chảy"
+              },
+              {
+                "id": "b",
+                "label": "Từ lõi Trái Đất"
+              },
+              {
+                "id": "c",
+                "label": "Từ than đá"
+              },
+              {
+                "id": "d",
+                "label": "Từ dầu mỏ"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hoa-thach",
+      "title": "Năng lượng hóa thạch",
+      "fromExercises": [
+        "phy-g9-b15-mcq-002",
+        "phy-g9-b15-mcq-003",
+        "phy-g9-b15-mcq-004",
+        "phy-g9-b15-mcq-006",
+        "phy-g9-b15-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Những tác hại của việc sử dụng nhiều nhiên liệu hóa thạch?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ô nhiễm không khí"
+              },
+              {
+                "id": "b",
+                "label": "Gây hiệu ứng nhà kính"
+              },
+              {
+                "id": "c",
+                "label": "Mưa acid"
+              },
+              {
+                "id": "d",
+                "label": "Làm không khí sạch hơn"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về năng lượng hóa thạch là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Nhiên liệu hóa thạch hình thành qua hàng triệu năm.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nhiên liệu hóa thạch là nguồn năng lượng không tái tạo.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Khí thiên nhiên là nguồn năng lượng tái tạo.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Vì sao cần tiết kiệm nhiên liệu hóa thạch?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì chúng không cháy được"
+              },
+              {
+                "id": "b",
+                "label": "Vì có hạn và gây ô nhiễm môi trường"
+              },
+              {
+                "id": "c",
+                "label": "Vì quá nhiều"
+              },
+              {
+                "id": "d",
+                "label": "Vì không tạo năng lượng"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

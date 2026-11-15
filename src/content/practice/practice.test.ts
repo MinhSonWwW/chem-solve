@@ -10,13 +10,14 @@ import { loadExercises } from '@/content/contentLoader';
 import { checkAnswer } from '@/engine/checkers';
 import { PRACTICE_GENERATORS } from '@/content/generators/practiceGenerators';
 import { buildPracticeRound, unitPool } from './practiceRound';
+import { molecularMass } from '@/content/generators/practiceGeneratorsG7';
 import { correctInputFor } from './correctInput';
 
 const DIR = 'src/content/practice';
 const MIN_POOL = 8;
 const MIN_POOL_WITH_GENERATOR = 5;
 /** Grades whose every ready lesson must have a practice bank. */
-const COVERED_GRADES: Grade[] = [6];
+const COVERED_GRADES: Grade[] = [6, 7, 8, 9];
 
 const banks: Array<{ file: string; bank: PracticeBank }> = fs
   .readdirSync(DIR)
@@ -118,5 +119,19 @@ describe('practice generators', () => {
       expect(parsed.success, `${name}: ${parsed.error?.issues[0]?.path} ${parsed.error?.issues[0]?.message}`).toBe(true);
       expect(checkAnswer(ex.answer, correctInputFor(ex.answer)).status, `${name}: ${ex.prompt}`).toBe('correct');
     }
+  });
+});
+
+describe('molecular mass helper', () => {
+  it.each([
+    ['H2O', 18],
+    ['CO2', 44],
+    ['Ca(OH)2', 74],
+    ['Al2O3', 102],
+    ['H2SO4', 98],
+    ['NaCl', 58.5],
+    ['CuSO4', 160],
+  ])('%s = %d amu', (f, m) => {
+    expect(molecularMass(f)).toBe(m);
   });
 });

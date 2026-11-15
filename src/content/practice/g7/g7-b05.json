@@ -1,0 +1,113 @@
+{
+  "lessonId": "g7-b05",
+  "units": [
+    {
+      "id": "don-hop-chat",
+      "title": "Đơn chất và hợp chất",
+      "fromExercises": [
+        "g7-b05-mcq-001",
+        "g7-b05-sort-001",
+        "g7-b05-mcq-002",
+        "g7-b05-tf-001",
+        "g7-b05-build-001",
+        "g7-b05-match-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Chất nào sau đây là hợp chất?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "[[O2]]"
+              },
+              {
+                "id": "b",
+                "label": "[[N2]]"
+              },
+              {
+                "id": "c",
+                "label": "[[H2O]]"
+              },
+              {
+                "id": "d",
+                "label": "[[Fe]]"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Đơn chất được tạo nên từ một nguyên tố hóa học.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Hợp chất được tạo nên từ hai hay nhiều nguyên tố hóa học.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Khí carbon dioxide là đơn chất.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "khoi-luong-phan-tu",
+      "title": "Khối lượng phân tử",
+      "fromExercises": [
+        "g7-b05-num-001",
+        "g7-b05-num-002",
+        "g7-b05-mcq-003",
+        "g7-b05-num-003",
+        "g7-b05-mcq-004",
+        "g7-b05-tf-002"
+      ],
+      "generator": "molecular-mass",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Khối lượng phân tử được tính như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Bằng khối lượng nguyên tử nặng nhất"
+              },
+              {
+                "id": "b",
+                "label": "Bằng tổng khối lượng các nguyên tử trong phân tử"
+              },
+              {
+                "id": "c",
+                "label": "Bằng số nguyên tử trong phân tử"
+              },
+              {
+                "id": "d",
+                "label": "Bằng khối lượng nguyên tử nhẹ nhất"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

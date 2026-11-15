@@ -1,0 +1,176 @@
+{
+  "lessonId": "phy-g7-b06",
+  "units": [
+    {
+      "id": "do-cao-do-to",
+      "title": "Độ cao và độ to của âm",
+      "fromExercises": [
+        "phy-g7-b06-mcq-001",
+        "phy-g7-b06-mcq-002",
+        "phy-g7-b06-mcq-003",
+        "phy-g7-b06-mcq-006",
+        "phy-g7-b06-tf-007",
+        "phy-g7-b06-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các âm sau.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Âm cao (bổng)"
+              },
+              {
+                "id": "b2",
+                "label": "Âm thấp (trầm)"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Tiếng còi xe đạp",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Tiếng chim hót líu lo",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Tiếng trống cái",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Tiếng sấm rền",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Biên độ dao động của nguồn âm càng lớn thì âm phát ra như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Càng cao"
+              },
+              {
+                "id": "b",
+                "label": "Càng thấp"
+              },
+              {
+                "id": "c",
+                "label": "Càng to"
+              },
+              {
+                "id": "d",
+                "label": "Càng nhỏ"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tan-so",
+      "title": "Tần số dao động",
+      "fromExercises": [
+        "phy-g7-b06-num-004",
+        "phy-g7-b06-num-005"
+      ],
+      "generator": "frequency",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Tần số dao động càng lớn thì âm phát ra như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Càng cao (bổng)"
+              },
+              {
+                "id": "b",
+                "label": "Càng thấp (trầm)"
+              },
+              {
+                "id": "c",
+                "label": "Càng to"
+              },
+              {
+                "id": "d",
+                "label": "Càng nhỏ"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Âm có tần số trên 20 000 Hz gọi là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hạ âm"
+              },
+              {
+                "id": "b",
+                "label": "Siêu âm"
+              },
+              {
+                "id": "c",
+                "label": "Âm thanh nghe được"
+              },
+              {
+                "id": "d",
+                "label": "Tiếng vang"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về tần số là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Đơn vị của tần số là héc (Hz).",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Tai người nghe được âm có tần số từ khoảng 20 Hz đến 20 000 Hz.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Âm có tần số 10 Hz là siêu âm.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "lessonId": "phy-g8-b14",
+  "units": [
+    {
+      "id": "noi-nang",
+      "title": "Năng lượng nhiệt và nội năng",
+      "fromExercises": [
+        "phy-g8-b14-mcq-001",
+        "phy-g8-b14-mcq-002",
+        "phy-g8-b14-mcq-003",
+        "phy-g8-b14-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Nhiệt độ của vật càng cao thì các phân tử chuyển động như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Càng chậm"
+              },
+              {
+                "id": "b",
+                "label": "Càng nhanh"
+              },
+              {
+                "id": "c",
+                "label": "Đứng yên"
+              },
+              {
+                "id": "d",
+                "label": "Không đổi"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về nội năng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Mọi vật đều có nội năng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nhiệt độ vật tăng thì nội năng tăng.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Vật ở 0 °C không có nội năng.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Đơn vị của năng lượng nhiệt là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Niutơn"
+              },
+              {
+                "id": "b",
+                "label": "Jun (J)"
+              },
+              {
+                "id": "c",
+                "label": "Oát"
+              },
+              {
+                "id": "d",
+                "label": "Kelvin"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Giọt mực nhỏ vào cốc nước nóng lan nhanh hơn trong nước lạnh vì sao?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì nước nóng nặng hơn"
+              },
+              {
+                "id": "b",
+                "label": "Vì phân tử chuyển động nhanh hơn ở nhiệt độ cao"
+              },
+              {
+                "id": "c",
+                "label": "Vì mực nóng lên"
+              },
+              {
+                "id": "d",
+                "label": "Vì cốc to hơn"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "thay-doi-noi-nang",
+      "title": "Cách làm thay đổi nội năng",
+      "fromExercises": [
+        "phy-g8-b14-mcq-004",
+        "phy-g8-b14-mcq-005",
+        "phy-g8-b14-num-006",
+        "phy-g8-b14-num-007"
+      ],
+      "generator": "heat-water",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại cách làm thay đổi nội năng.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Thực hiện công"
+              },
+              {
+                "id": "b2",
+                "label": "Truyền nhiệt"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Cọ xát hai bàn tay",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Bơm xe, thân bơm nóng lên",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Dùng búa đập miếng kim loại",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Thả thìa vào cốc nước nóng",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Đun nước trên bếp",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Phơi áo ngoài nắng",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xoa hai bàn tay vào nhau thấy tay nóng lên. Nội năng tăng bằng cách nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Truyền nhiệt"
+              },
+              {
+                "id": "b",
+                "label": "Thực hiện công"
+              },
+              {
+                "id": "c",
+                "label": "Bức xạ"
+              },
+              {
+                "id": "d",
+                "label": "Đối lưu"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

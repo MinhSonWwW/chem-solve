@@ -1,0 +1,215 @@
+{
+  "lessonId": "phy-g9-b13",
+  "units": [
+    {
+      "id": "cam-ung",
+      "title": "Hiện tượng cảm ứng điện từ",
+      "fromExercises": [
+        "phy-g9-b13-mcq-001",
+        "phy-g9-b13-mcq-004",
+        "phy-g9-b13-mcq-005",
+        "phy-g9-b13-mcq-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Xác định các nhận định sau về hiện tượng cảm ứng điện từ là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Dòng điện cảm ứng xuất hiện khi số đường sức từ qua cuộn dây kín biến thiên.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Đưa nam châm lại gần hoặc ra xa cuộn dây kín có thể tạo dòng điện cảm ứng.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Nam châm đứng yên trong cuộn dây vẫn tạo ra dòng điện cảm ứng liên tục.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Đinamô xe đạp tạo ra dòng điện nhờ hiện tượng gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nhiễm điện"
+              },
+              {
+                "id": "b",
+                "label": "Cảm ứng điện từ"
+              },
+              {
+                "id": "c",
+                "label": "Phản xạ ánh sáng"
+              },
+              {
+                "id": "d",
+                "label": "Nở vì nhiệt"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Muốn tạo dòng điện cảm ứng mạnh hơn, có thể làm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để nam châm đứng yên"
+              },
+              {
+                "id": "b",
+                "label": "Di chuyển nam châm nhanh hơn hoặc dùng nam châm mạnh hơn"
+              },
+              {
+                "id": "c",
+                "label": "Dùng cuộn dây hở"
+              },
+              {
+                "id": "d",
+                "label": "Bỏ nam châm ra xa"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Dụng cụ nào dùng để phát hiện dòng điện cảm ứng nhỏ?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nhiệt kế"
+              },
+              {
+                "id": "b",
+                "label": "Điện kế (galvanometer) nhạy"
+              },
+              {
+                "id": "c",
+                "label": "Lực kế"
+              },
+              {
+                "id": "d",
+                "label": "Đồng hồ bấm giây"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "xoay-chieu",
+      "title": "Dòng điện xoay chiều và máy phát điện",
+      "fromExercises": [
+        "phy-g9-b13-mcq-002",
+        "phy-g9-b13-mcq-003",
+        "phy-g9-b13-mcq-007",
+        "phy-g9-b13-mcq-008",
+        "phy-g9-b13-ord-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Dòng điện xoay chiều có đặc điểm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chiều không đổi"
+              },
+              {
+                "id": "b",
+                "label": "Chiều thay đổi luân phiên theo thời gian"
+              },
+              {
+                "id": "c",
+                "label": "Không có chiều"
+              },
+              {
+                "id": "d",
+                "label": "Chỉ chạy trong pin"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về dòng điện xoay chiều và máy phát điện là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Lưới điện sinh hoạt ở Việt Nam có tần số 50 Hz.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Máy phát điện xoay chiều có hai bộ phận chính là nam châm và cuộn dây.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Pin tạo ra dòng điện xoay chiều.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Trong máy phát điện xoay chiều, năng lượng nào chuyển thành điện năng?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Quang năng"
+              },
+              {
+                "id": "b",
+                "label": "Cơ năng (động năng của rôto quay)"
+              },
+              {
+                "id": "c",
+                "label": "Hóa năng"
+              },
+              {
+                "id": "d",
+                "label": "Nhiệt năng"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

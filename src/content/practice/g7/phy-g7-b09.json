@@ -1,0 +1,170 @@
+{
+  "lessonId": "phy-g7-b09",
+  "units": [
+    {
+      "id": "dinh-luat",
+      "title": "Định luật phản xạ ánh sáng",
+      "fromExercises": [
+        "phy-g7-b09-mcq-001",
+        "phy-g7-b09-mcq-002",
+        "phy-g7-b09-tf-007",
+        "phy-g7-b09-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Pháp tuyến tại điểm tới là đường như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Song song với mặt gương"
+              },
+              {
+                "id": "b",
+                "label": "Vuông góc với mặt gương tại điểm tới"
+              },
+              {
+                "id": "c",
+                "label": "Trùng với tia tới"
+              },
+              {
+                "id": "d",
+                "label": "Trùng với tia phản xạ"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Theo định luật phản xạ ánh sáng, tia phản xạ nằm ở đâu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Trong mặt phẳng chứa tia tới và pháp tuyến tại điểm tới"
+              },
+              {
+                "id": "b",
+                "label": "Trên mặt gương"
+              },
+              {
+                "id": "c",
+                "label": "Vuông góc với tia tới"
+              },
+              {
+                "id": "d",
+                "label": "Ở phía sau gương"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Phân loại hiện tượng phản xạ.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Phản xạ gương (bề mặt nhẵn)"
+              },
+              {
+                "id": "b2",
+                "label": "Phản xạ khuếch tán (bề mặt gồ ghề)"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Ánh sáng chiếu vào gương soi",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Ánh sáng chiếu vào mặt nước phẳng lặng",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Ánh sáng chiếu vào tờ giấy",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Ánh sáng chiếu vào bức tường vôi",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Góc phản xạ luôn bằng góc tới.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Góc tới là góc giữa tia tới và mặt gương.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "tinh-goc",
+      "title": "Tính góc tới và góc phản xạ",
+      "fromExercises": [
+        "phy-g7-b09-num-003",
+        "phy-g7-b09-num-004",
+        "phy-g7-b09-num-005",
+        "phy-g7-b09-num-006"
+      ],
+      "generator": "reflection-angle",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Tia phản xạ hợp với pháp tuyến một góc 25°. Góc tới bằng bao nhiêu độ?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 25,
+            "unit": "°",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Góc tới là 35°. Góc hợp bởi tia tới và tia phản xạ là bao nhiêu độ?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 70,
+            "unit": "°",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

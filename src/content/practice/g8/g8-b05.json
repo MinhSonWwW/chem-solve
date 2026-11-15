@@ -1,0 +1,124 @@
+{
+  "lessonId": "g8-b05",
+  "units": [
+    {
+      "id": "bao-toan",
+      "title": "Định luật bảo toàn khối lượng",
+      "fromExercises": [
+        "g8-b05-mcq-001",
+        "g8-b05-tf-001",
+        "g8-b05-calc-001",
+        "g8-b05-calc-002",
+        "g8-b05-calc-003"
+      ],
+      "generator": "mass-conservation",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Vì sao trong phản ứng hóa học tổng khối lượng được bảo toàn?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì chất không thay đổi"
+              },
+              {
+                "id": "b",
+                "label": "Vì số nguyên tử mỗi nguyên tố không đổi, chỉ thay đổi liên kết"
+              },
+              {
+                "id": "c",
+                "label": "Vì nguyên tử tự sinh ra"
+              },
+              {
+                "id": "d",
+                "label": "Vì có chất xúc tác"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lap-pthh",
+      "title": "Lập phương trình hóa học",
+      "fromExercises": [
+        "g8-b05-ordering-001",
+        "g8-b05-eq-001",
+        "g8-b05-eq-002",
+        "g8-b05-eq-003",
+        "g8-b05-match-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Cân bằng phương trình: [[H2]] + [[O2]] -> [[H2O]]",
+          "difficulty": 1,
+          "answer": {
+            "kind": "equation",
+            "mode": "fill-coefficients",
+            "reactants": [
+              "H2",
+              "O2"
+            ],
+            "products": [
+              "H2O"
+            ],
+            "coefficients": [
+              2,
+              1,
+              2
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Cân bằng phương trình: [[Mg]] + [[HCl]] -> [[MgCl2]] + [[H2]]",
+          "difficulty": 1,
+          "answer": {
+            "kind": "equation",
+            "mode": "fill-coefficients",
+            "reactants": [
+              "Mg",
+              "HCl"
+            ],
+            "products": [
+              "MgCl2",
+              "H2"
+            ],
+            "coefficients": [
+              1,
+              2,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Cân bằng phương trình: [[Al]] + [[O2]] -> [[Al2O3]]",
+          "difficulty": 2,
+          "answer": {
+            "kind": "equation",
+            "mode": "fill-coefficients",
+            "reactants": [
+              "Al",
+              "O2"
+            ],
+            "products": [
+              "Al2O3"
+            ],
+            "coefficients": [
+              4,
+              3,
+              2
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

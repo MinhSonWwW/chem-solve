@@ -1,0 +1,210 @@
+{
+  "lessonId": "bio-g9-b01",
+  "units": [
+    {
+      "id": "khai-niem",
+      "title": "Các khái niệm di truyền học",
+      "fromExercises": [
+        "bio-g9-b01-q01",
+        "bio-g9-b01-q02",
+        "bio-g9-b01-q03",
+        "bio-g9-b01-q06",
+        "bio-g9-b01-q07"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép thuật ngữ với nghĩa.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Di truyền",
+                "right": "Hiện tượng truyền đạt tính trạng của bố mẹ cho con cháu"
+              },
+              {
+                "left": "Biến dị",
+                "right": "Hiện tượng con sinh ra khác bố mẹ và khác nhau"
+              },
+              {
+                "left": "Kiểu gene",
+                "right": "Tổ hợp các gene của cơ thể"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Kiểu hình là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tổ hợp các tính trạng của cơ thể"
+              },
+              {
+                "id": "b",
+                "label": "Tổ hợp các gene"
+              },
+              {
+                "id": "c",
+                "label": "Một nhiễm sắc thể"
+              },
+              {
+                "id": "d",
+                "label": "Một tế bào"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về các khái niệm di truyền học là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Gene trội được kí hiệu bằng chữ in hoa.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Thể đồng hợp có hai allele giống nhau.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Thể dị hợp có hai allele giống hệt nhau.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "mendel-pp",
+      "title": "Mendel và phương pháp nghiên cứu",
+      "fromExercises": [
+        "bio-g9-b01-q04",
+        "bio-g9-b01-q05",
+        "bio-g9-b01-q08",
+        "bio-g9-b01-match-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Đối tượng nghiên cứu chính trong các thí nghiệm của Mendel là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ruồi giấm"
+              },
+              {
+                "id": "b",
+                "label": "Đậu Hà Lan"
+              },
+              {
+                "id": "c",
+                "label": "Chuột"
+              },
+              {
+                "id": "d",
+                "label": "Lúa"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về mendel và phương pháp nghiên cứu là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Mendel dùng phương pháp phân tích các thế hệ lai.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Mendel theo dõi từng cặp tính trạng qua nhiều thế hệ.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Mendel nghiên cứu trên người.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Dòng thuần chủng là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Dòng có đặc tính di truyền đồng nhất, đời sau giống đời trước"
+              },
+              {
+                "id": "b",
+                "label": "Dòng luôn phân li"
+              },
+              {
+                "id": "c",
+                "label": "Dòng có nhiều kiểu hình"
+              },
+              {
+                "id": "d",
+                "label": "Dòng lai"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vì sao đậu Hà Lan thuận lợi cho nghiên cứu di truyền?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tự thụ phấn nghiêm ngặt, có nhiều cặp tính trạng tương phản dễ quan sát"
+              },
+              {
+                "id": "b",
+                "label": "Vì sống lâu năm"
+              },
+              {
+                "id": "c",
+                "label": "Vì cây rất to"
+              },
+              {
+                "id": "d",
+                "label": "Vì không ra hoa"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    }
+  ]
+}

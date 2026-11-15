@@ -1,0 +1,175 @@
+{
+  "lessonId": "phy-g9-b02",
+  "units": [
+    {
+      "id": "co-nang",
+      "title": "Cơ năng và sự chuyển hóa",
+      "fromExercises": [
+        "phy-g9-b02-mcq-001",
+        "phy-g9-b02-mcq-002",
+        "phy-g9-b02-mcq-003",
+        "phy-g9-b02-mcq-004"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Xác định các nhận định sau về cơ năng và sự chuyển hóa là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Cơ năng bằng tổng động năng và thế năng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Khi vật rơi tự do, thế năng giảm, động năng tăng.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Khi ném vật lên cao, động năng tăng dần.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Quả bóng ném lên cao, tại điểm cao nhất vật có đặc điểm gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Động năng lớn nhất"
+              },
+              {
+                "id": "b",
+                "label": "Động năng nhỏ nhất, thế năng lớn nhất"
+              },
+              {
+                "id": "c",
+                "label": "Thế năng bằng 0"
+              },
+              {
+                "id": "d",
+                "label": "Cơ năng bằng 0"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Phân loại sự chuyển hóa năng lượng.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Thế năng chuyển thành động năng"
+              },
+              {
+                "id": "b2",
+                "label": "Động năng chuyển thành thế năng"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Quả dừa rơi từ trên cây",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Nước chảy từ đập xuống",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Quả bóng ném lên cao",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Xe đạp lên dốc không đạp",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Bỏ qua ma sát, cơ năng của con lắc khi dao động như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tăng dần"
+              },
+              {
+                "id": "b",
+                "label": "Giảm dần"
+              },
+              {
+                "id": "c",
+                "label": "Được bảo toàn"
+              },
+              {
+                "id": "d",
+                "label": "Bằng 0"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tinh-co-nang",
+      "title": "Tính cơ năng",
+      "fromExercises": [
+        "phy-g9-b02-num-005",
+        "phy-g9-b02-num-006",
+        "phy-g9-b02-num-007",
+        "phy-g9-b02-num-008"
+      ],
+      "generator": "mechanical",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Một vật có động năng 30 J và thế năng 70 J. Cơ năng của vật là bao nhiêu J?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 100,
+            "unit": "J",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Một vật có cơ năng 120 J, đang có thế năng 45 J. Động năng của vật là bao nhiêu J?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 75,
+            "unit": "J",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

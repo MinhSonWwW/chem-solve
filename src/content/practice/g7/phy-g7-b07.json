@@ -1,0 +1,207 @@
+{
+  "lessonId": "phy-g7-b07",
+  "units": [
+    {
+      "id": "phan-xa",
+      "title": "Phản xạ âm và tiếng vang",
+      "fromExercises": [
+        "phy-g7-b07-mcq-001",
+        "phy-g7-b07-mcq-002",
+        "phy-g7-b07-num-004",
+        "phy-g7-b07-num-005"
+      ],
+      "generator": "echo",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Vật nào phản xạ âm tốt?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Miếng xốp"
+              },
+              {
+                "id": "b",
+                "label": "Rèm vải dày"
+              },
+              {
+                "id": "c",
+                "label": "Tấm kim loại phẳng nhẵn"
+              },
+              {
+                "id": "d",
+                "label": "Tấm thảm len"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về phản xạ âm là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Vật cứng, bề mặt nhẵn phản xạ âm tốt.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Vật mềm, xốp, bề mặt gồ ghề hấp thụ âm tốt.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Tiếng vang là âm truyền thẳng đến tai không qua phản xạ.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "chong-on",
+      "title": "Chống ô nhiễm tiếng ồn",
+      "fromExercises": [
+        "phy-g7-b07-mcq-003",
+        "phy-g7-b07-mcq-006",
+        "phy-g7-b07-tf-007",
+        "phy-g7-b07-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Những biện pháp nào giúp giảm tiếng ồn từ đường phố vào lớp học?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Trồng cây xanh quanh trường"
+              },
+              {
+                "id": "b",
+                "label": "Đóng cửa kính và dùng rèm dày"
+              },
+              {
+                "id": "c",
+                "label": "Mở to loa trong lớp"
+              },
+              {
+                "id": "d",
+                "label": "Treo biển hạn chế bấm còi gần trường"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Tiếng ồn bị coi là ô nhiễm khi nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Khi âm rất nhỏ"
+              },
+              {
+                "id": "b",
+                "label": "Khi âm to, kéo dài, ảnh hưởng đến sức khỏe và sinh hoạt"
+              },
+              {
+                "id": "c",
+                "label": "Khi âm có tần số cao"
+              },
+              {
+                "id": "d",
+                "label": "Khi là tiếng nhạc"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Phân loại các biện pháp chống ô nhiễm tiếng ồn.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Giảm độ to của nguồn âm"
+              },
+              {
+                "id": "b2",
+                "label": "Ngăn chặn đường truyền âm"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Lắp ống giảm thanh cho xe máy",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Hạn chế bấm còi",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Xây tường cách âm",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Trồng hàng cây xanh",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Công nhân làm việc gần máy móc rất ồn nên dùng vật dụng gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Kính râm"
+              },
+              {
+                "id": "b",
+                "label": "Nút bịt tai chống ồn"
+              },
+              {
+                "id": "c",
+                "label": "Găng tay"
+              },
+              {
+                "id": "d",
+                "label": "Mũ lưỡi trai"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

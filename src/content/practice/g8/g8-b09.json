@@ -1,0 +1,300 @@
+{
+  "lessonId": "g8-b09",
+  "units": [
+    {
+      "id": "base",
+      "title": "Base và tính chất",
+      "fromExercises": [
+        "g8-b09-mcq-001",
+        "g8-b09-match-003",
+        "g8-b09-sort-005"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Dung dịch base làm quỳ tím chuyển sang màu gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đỏ"
+              },
+              {
+                "id": "b",
+                "label": "Xanh"
+              },
+              {
+                "id": "c",
+                "label": "Vàng"
+              },
+              {
+                "id": "d",
+                "label": "Không đổi"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Dung dịch phenolphthalein không màu khi gặp dung dịch base chuyển sang màu gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Xanh"
+              },
+              {
+                "id": "b",
+                "label": "Hồng"
+              },
+              {
+                "id": "c",
+                "label": "Vàng"
+              },
+              {
+                "id": "d",
+                "label": "Không màu"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về base là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Base tác dụng với acid tạo thành muối và nước.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "[[NaOH]] là base tan trong nước (kiềm).",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "[[Cu(OH)2]] tan tốt trong nước.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Viết công thức hóa học của sodium hydroxide.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "text",
+            "accepted": [
+              "NaOH"
+            ],
+            "lenientDiacritics": true
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Vôi tôi dùng trong xây dựng có thành phần chính là base nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "[[NaOH]]"
+              },
+              {
+                "id": "b",
+                "label": "[[KOH]]"
+              },
+              {
+                "id": "c",
+                "label": "[[Ca(OH)2]]"
+              },
+              {
+                "id": "d",
+                "label": "[[Cu(OH)2]]"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    },
+    {
+      "id": "thang-ph",
+      "title": "Thang pH",
+      "fromExercises": [
+        "g8-b09-mcq-002",
+        "g8-b09-tf-004",
+        "g8-b09-ordering-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các dung dịch theo giá trị pH.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Môi trường acid (pH < 7)"
+              },
+              {
+                "id": "b2",
+                "label": "Môi trường trung tính (pH = 7)"
+              },
+              {
+                "id": "b3",
+                "label": "Môi trường base (pH > 7)"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Nước chanh",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Giấm ăn",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Nước cất",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Nước xà phòng",
+                "bucketId": "b3"
+              },
+              {
+                "id": "i5",
+                "label": "Dung dịch NaOH",
+                "bucketId": "b3"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Dung dịch có pH = 7 là môi trường gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Acid"
+              },
+              {
+                "id": "b",
+                "label": "Trung tính"
+              },
+              {
+                "id": "c",
+                "label": "Base"
+              },
+              {
+                "id": "d",
+                "label": "Không xác định"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Dung dịch nào có tính acid mạnh nhất?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "pH = 6"
+              },
+              {
+                "id": "b",
+                "label": "pH = 5"
+              },
+              {
+                "id": "c",
+                "label": "pH = 2"
+              },
+              {
+                "id": "d",
+                "label": "pH = 9"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về thang pH là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "pH càng nhỏ hơn 7 thì tính acid càng mạnh.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "pH càng lớn hơn 7 thì tính base càng mạnh.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Nước mưa bình thường có pH bằng 12.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Đất chua (pH thấp) thường được cải tạo bằng cách nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Bón thêm acid"
+              },
+              {
+                "id": "b",
+                "label": "Bón vôi"
+              },
+              {
+                "id": "c",
+                "label": "Tưới giấm"
+              },
+              {
+                "id": "d",
+                "label": "Không cần cải tạo"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

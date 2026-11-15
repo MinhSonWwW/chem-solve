@@ -1,0 +1,180 @@
+{
+  "lessonId": "phy-g9-b03",
+  "units": [
+    {
+      "id": "cong-cong-suat",
+      "title": "Công và công suất",
+      "fromExercises": [
+        "phy-g9-b03-mcq-001",
+        "phy-g9-b03-mcq-002",
+        "phy-g9-b03-mcq-003"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Đơn vị của công cơ học là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Oát (W)"
+              },
+              {
+                "id": "b",
+                "label": "Jun (J)"
+              },
+              {
+                "id": "c",
+                "label": "Niutơn (N)"
+              },
+              {
+                "id": "d",
+                "label": "Pascal (Pa)"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Công suất cho biết điều gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Lực tác dụng lớn hay nhỏ"
+              },
+              {
+                "id": "b",
+                "label": "Công thực hiện được trong một đơn vị thời gian"
+              },
+              {
+                "id": "c",
+                "label": "Quãng đường dịch chuyển"
+              },
+              {
+                "id": "d",
+                "label": "Khối lượng vật"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về công và công suất là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Có công cơ học khi có lực tác dụng và vật dịch chuyển theo phương của lực.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Người đứng yên giữ quả tạ trên vai thực hiện công cơ học.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "1 kW = 1000 W.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Trường hợp nào có công cơ học?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đẩy xe chuyển động"
+              },
+              {
+                "id": "b",
+                "label": "Cần cẩu nâng hàng lên cao"
+              },
+              {
+                "id": "c",
+                "label": "Ngồi đọc sách"
+              },
+              {
+                "id": "d",
+                "label": "Kéo gàu nước từ giếng lên"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Hai máy làm cùng một công, máy A mất 10 s, máy B mất 20 s. Máy nào có công suất lớn hơn?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Máy A"
+              },
+              {
+                "id": "b",
+                "label": "Máy B"
+              },
+              {
+                "id": "c",
+                "label": "Như nhau"
+              },
+              {
+                "id": "d",
+                "label": "Không so sánh được"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tinh-cong",
+      "title": "Tính công và công suất",
+      "fromExercises": [
+        "phy-g9-b03-num-004",
+        "phy-g9-b03-num-005",
+        "phy-g9-b03-num-006",
+        "phy-g9-b03-num-007",
+        "phy-g9-b03-num-008"
+      ],
+      "generator": "work-power",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Một người kéo vật với lực 200 N đi được 15 m theo phương của lực. Công của lực kéo là bao nhiêu J?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 3000,
+            "unit": "J",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "lessonId": "phy-g8-b03",
+  "units": [
+    {
+      "id": "ap-luc",
+      "title": "Áp lực và áp suất",
+      "fromExercises": [
+        "phy-g8-b03-mcq-001",
+        "phy-g8-b03-mcq-002",
+        "phy-g8-b03-mcq-003",
+        "phy-g8-b03-tf-007",
+        "phy-g8-b03-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Vì sao lưỡi dao được mài sắc thì dễ cắt hơn?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì tăng áp lực"
+              },
+              {
+                "id": "b",
+                "label": "Vì giảm diện tích bị ép nên tăng áp suất"
+              },
+              {
+                "id": "c",
+                "label": "Vì dao nhẹ hơn"
+              },
+              {
+                "id": "d",
+                "label": "Vì giảm áp suất"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Vì sao xe tăng, máy cày có bánh xích bản rộng?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để chạy nhanh hơn"
+              },
+              {
+                "id": "b",
+                "label": "Để tăng diện tích bị ép, giảm áp suất lên mặt đất"
+              },
+              {
+                "id": "c",
+                "label": "Để tăng áp suất"
+              },
+              {
+                "id": "d",
+                "label": "Để đẹp hơn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Những cách nào làm GIẢM áp suất?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tăng diện tích bị ép"
+              },
+              {
+                "id": "b",
+                "label": "Giảm áp lực"
+              },
+              {
+                "id": "c",
+                "label": "Mài nhọn mũi đinh"
+              },
+              {
+                "id": "d",
+                "label": "Giảm diện tích bị ép"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "tinh-ap-suat",
+      "title": "Tính áp suất",
+      "fromExercises": [
+        "phy-g8-b03-num-004",
+        "phy-g8-b03-num-005",
+        "phy-g8-b03-num-006"
+      ],
+      "generator": "pressure",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Áp lực 300 N tác dụng lên diện tích 0,015 m². Áp suất là bao nhiêu Pa?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 20000,
+            "unit": "Pa",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "1 kPa bằng bao nhiêu Pa?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 1000,
+            "unit": "Pa",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

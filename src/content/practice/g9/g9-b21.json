@@ -1,0 +1,145 @@
+{
+  "lessonId": "g9-b21",
+  "units": [
+    {
+      "id": "kim-loai-phi-kim",
+      "title": "Khác nhau giữa phi kim và kim loại",
+      "fromExercises": [
+        "g9-b21-mcq-001",
+        "g9-b21-sort-001",
+        "g9-b21-tf-001",
+        "g9-b21-match-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Nguyên tố nào sau đây là phi kim?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sắt"
+              },
+              {
+                "id": "b",
+                "label": "Đồng"
+              },
+              {
+                "id": "c",
+                "label": "Sulfur"
+              },
+              {
+                "id": "d",
+                "label": "Nhôm"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Phi kim tác dụng với oxygen thường tạo thành loại oxide nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Oxide base"
+              },
+              {
+                "id": "b",
+                "label": "Oxide acid"
+              },
+              {
+                "id": "c",
+                "label": "Muối"
+              },
+              {
+                "id": "d",
+                "label": "Base"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về khác nhau giữa phi kim và kim loại là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Đa số phi kim dẫn điện, dẫn nhiệt kém.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Than chì là phi kim nhưng dẫn điện được.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Mọi phi kim đều ở thể khí.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Ghép nguyên tố với trạng thái ở điều kiện thường.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Oxygen",
+                "right": "Thể khí"
+              },
+              {
+                "left": "Bromine",
+                "right": "Thể lỏng"
+              },
+              {
+                "left": "Sulfur",
+                "right": "Thể rắn"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Kim loại khi phản ứng thường có xu hướng gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nhường electron"
+              },
+              {
+                "id": "b",
+                "label": "Nhận electron"
+              },
+              {
+                "id": "c",
+                "label": "Không thay đổi"
+              },
+              {
+                "id": "d",
+                "label": "Tạo oxide acid"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    }
+  ]
+}

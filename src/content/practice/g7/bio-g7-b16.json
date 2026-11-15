@@ -1,0 +1,274 @@
+{
+  "lessonId": "bio-g7-b16",
+  "units": [
+    {
+      "id": "khai-niem-st",
+      "title": "Sinh trưởng và phát triển",
+      "fromExercises": [
+        "bio-g7-b16-q01",
+        "bio-g7-b16-q02",
+        "bio-g7-b16-q03",
+        "bio-g7-b16-q04"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các hiện tượng sau.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Sinh trưởng"
+              },
+              {
+                "id": "b2",
+                "label": "Phát triển"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Cây cao thêm 5 cm",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Em bé tăng cân",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Thân cây to ra",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Cây ra hoa",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Nòng nọc thành ếch",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Hạt nảy mầm thành cây con",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về sinh trưởng và phát triển là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Sinh trưởng là sự tăng về kích thước và khối lượng của cơ thể.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Phát triển gồm sinh trưởng, phân hóa tế bào và phát sinh hình thái.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Sinh trưởng và phát triển không liên quan đến nhau.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Ghép mô phân sinh với vai trò.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Mô phân sinh đỉnh",
+                "right": "Làm thân và rễ dài ra"
+              },
+              {
+                "left": "Mô phân sinh bên",
+                "right": "Làm thân to ra"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Cây tre, cây lúa không có mô phân sinh bên nên thân như thế nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "To ra hằng năm"
+              },
+              {
+                "id": "b",
+                "label": "Ít to ra về bề ngang"
+              },
+              {
+                "id": "c",
+                "label": "Không dài ra"
+              },
+              {
+                "id": "d",
+                "label": "Không có lá"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bien-thai",
+      "title": "Các kiểu phát triển ở động vật",
+      "fromExercises": [
+        "bio-g7-b16-q05",
+        "bio-g7-b16-q06",
+        "bio-g7-b16-q07",
+        "bio-g7-b16-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sắp xếp các giai đoạn trong vòng đời của bướm.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Trứng",
+              "Sâu (ấu trùng)",
+              "Nhộng",
+              "Bướm trưởng thành"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Phân loại động vật theo kiểu phát triển.",
+          "difficulty": 3,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Biến thái hoàn toàn"
+              },
+              {
+                "id": "b2",
+                "label": "Biến thái không hoàn toàn"
+              },
+              {
+                "id": "b3",
+                "label": "Không qua biến thái"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Bướm",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Ếch",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Ruồi",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Châu chấu",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Gián",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Mèo",
+                "bucketId": "b3"
+              },
+              {
+                "id": "i7",
+                "label": "Người",
+                "bucketId": "b3"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về các kiểu phát triển là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Ở phát triển qua biến thái hoàn toàn, con non rất khác con trưởng thành.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Châu chấu có giai đoạn nhộng.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Con non của mèo có hình dạng gần giống mèo trưởng thành.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Muỗi phát triển qua kiểu nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Không qua biến thái"
+              },
+              {
+                "id": "b",
+                "label": "Biến thái không hoàn toàn"
+              },
+              {
+                "id": "c",
+                "label": "Biến thái hoàn toàn"
+              },
+              {
+                "id": "d",
+                "label": "Không phát triển"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    }
+  ]
+}

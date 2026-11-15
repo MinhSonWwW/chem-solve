@@ -1,0 +1,219 @@
+{
+  "lessonId": "bio-g7-b09",
+  "units": [
+    {
+      "id": "nuoc",
+      "title": "Vai trò của nước",
+      "fromExercises": [
+        "bio-g7-b09-q01",
+        "bio-g7-b09-q03",
+        "bio-g7-b09-q04",
+        "bio-g7-b09-q07"
+      ],
+      "generator": "water-need",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Nước có những vai trò nào đối với sinh vật?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Là thành phần chủ yếu của tế bào"
+              },
+              {
+                "id": "b",
+                "label": "Là dung môi hòa tan nhiều chất"
+              },
+              {
+                "id": "c",
+                "label": "Tham gia điều hòa thân nhiệt"
+              },
+              {
+                "id": "d",
+                "label": "Cung cấp năng lượng chủ yếu cho cơ thể"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Mất nước nhiều có thể gây nguy hiểm đến tính mạng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nước tham gia vận chuyển các chất trong cơ thể.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Chỉ cần uống nước khi thấy rất khát.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dinh-duong",
+      "title": "Các chất dinh dưỡng",
+      "fromExercises": [
+        "bio-g7-b09-q02",
+        "bio-g7-b09-q05",
+        "bio-g7-b09-q06",
+        "bio-g7-b09-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại thực phẩm theo nhóm chất chủ yếu.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Giàu tinh bột (carbohydrate)"
+              },
+              {
+                "id": "b2",
+                "label": "Giàu protein"
+              },
+              {
+                "id": "b3",
+                "label": "Giàu lipid"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Cơm",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Khoai lang",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Thịt",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Đậu phụ",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Dầu ăn",
+                "bucketId": "b3"
+              },
+              {
+                "id": "i6",
+                "label": "Mỡ",
+                "bucketId": "b3"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Nhóm chất nào là thành phần cấu tạo chính của tế bào, giúp cơ thể lớn lên?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Lipid"
+              },
+              {
+                "id": "b",
+                "label": "Protein"
+              },
+              {
+                "id": "c",
+                "label": "Nước"
+              },
+              {
+                "id": "d",
+                "label": "Chất xơ"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về dinh dưỡng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Vitamin và chất khoáng cần với lượng nhỏ nhưng rất quan trọng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Thiếu calcium có thể làm xương yếu.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Chỉ cần ăn một loại thức ăn là đủ chất.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Thực vật lấy chất khoáng (như nitrogen, phosphorus, potassium) từ đâu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Từ đất qua rễ"
+              },
+              {
+                "id": "b",
+                "label": "Từ không khí qua lá"
+              },
+              {
+                "id": "c",
+                "label": "Từ ánh sáng"
+              },
+              {
+                "id": "d",
+                "label": "Từ động vật"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    }
+  ]
+}

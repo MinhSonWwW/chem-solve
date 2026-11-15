@@ -1,0 +1,228 @@
+{
+  "lessonId": "bio-g7-b07",
+  "units": [
+    {
+      "id": "thi-nghiem",
+      "title": "Các thí nghiệm về hô hấp ở thực vật",
+      "fromExercises": [
+        "bio-g7-b07-q01",
+        "bio-g7-b07-q03",
+        "bio-g7-b07-q04",
+        "bio-g7-b07-q07"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sắp xếp các bước thí nghiệm chứng minh hô hấp thải khí carbon dioxide.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Cho hạt đậu nảy mầm vào bình và đậy kín vài giờ",
+              "Dẫn khí trong bình qua cốc nước vôi trong",
+              "Quan sát nước vôi trong",
+              "Rút ra kết luận"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về kết quả thí nghiệm là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Nước vôi trong bị vẩn đục chứng tỏ có khí carbon dioxide.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Bình hạt nảy mầm có nhiệt độ cao hơn bình hạt luộc chín.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Que diêm cháy sáng hơn trong bình hạt nảy mầm đậy kín.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Hạt đậu nảy mầm trong bình kín hô hấp làm thay đổi gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tăng lượng oxygen"
+              },
+              {
+                "id": "b",
+                "label": "Giảm oxygen, tăng carbon dioxide và tỏa nhiệt"
+              },
+              {
+                "id": "c",
+                "label": "Không thay đổi gì"
+              },
+              {
+                "id": "d",
+                "label": "Tạo ra tinh bột"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Thí nghiệm dùng nhiệt kế chứng minh điều gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hô hấp hấp thụ nhiệt"
+              },
+              {
+                "id": "b",
+                "label": "Hô hấp tỏa nhiệt"
+              },
+              {
+                "id": "c",
+                "label": "Hạt không hô hấp"
+              },
+              {
+                "id": "d",
+                "label": "Nhiệt độ không đổi"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "giai-thich",
+      "title": "Giải thích hiện tượng",
+      "fromExercises": [
+        "bio-g7-b07-q02",
+        "bio-g7-b07-q05",
+        "bio-g7-b07-q06",
+        "bio-g7-b07-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Vì sao que diêm đang cháy bị tắt khi đưa vào bình hạt nảy mầm đậy kín lâu?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì bình quá nóng"
+              },
+              {
+                "id": "b",
+                "label": "Vì hạt hô hấp đã dùng hết oxygen trong bình"
+              },
+              {
+                "id": "c",
+                "label": "Vì có nhiều oxygen"
+              },
+              {
+                "id": "d",
+                "label": "Vì bình ẩm"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Hạt luộc chín không còn hô hấp.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Bình hạt luộc chín dùng để đối chứng.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Hạt khô hô hấp mạnh hơn hạt nảy mầm.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Vì sao chọn hạt đang nảy mầm làm thí nghiệm?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì hạt nảy mầm không hô hấp"
+              },
+              {
+                "id": "b",
+                "label": "Vì hạt nảy mầm hô hấp mạnh, kết quả rõ ràng"
+              },
+              {
+                "id": "c",
+                "label": "Vì hạt nảy mầm quang hợp"
+              },
+              {
+                "id": "d",
+                "label": "Vì dễ mua"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Chất nào làm nước vôi trong bị vẩn đục?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Oxygen"
+              },
+              {
+                "id": "b",
+                "label": "Carbon dioxide"
+              },
+              {
+                "id": "c",
+                "label": "Nitrogen"
+              },
+              {
+                "id": "d",
+                "label": "Hơi nước"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

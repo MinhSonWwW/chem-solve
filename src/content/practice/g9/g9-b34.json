@@ -1,0 +1,150 @@
+{
+  "lessonId": "g9-b34",
+  "units": [
+    {
+      "id": "da-voi-silicate",
+      "title": "Đá vôi và công nghiệp silicate",
+      "fromExercises": [
+        "g9-b34-mcq-001",
+        "g9-b34-sort-001",
+        "g9-b34-mcq-002",
+        "g9-b34-tf-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Cân bằng phương trình nhiệt phân đá vôi: [[CaCO3]] -> [[CaO]] + [[CO2]]",
+          "difficulty": 1,
+          "answer": {
+            "kind": "equation",
+            "mode": "fill-coefficients",
+            "reactants": [
+              "CaCO3"
+            ],
+            "products": [
+              "CaO",
+              "CO2"
+            ],
+            "coefficients": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Nguyên liệu chính để sản xuất thủy tinh là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đất sét và nước"
+              },
+              {
+                "id": "b",
+                "label": "Cát thạch anh, đá vôi và soda"
+              },
+              {
+                "id": "c",
+                "label": "Than đá"
+              },
+              {
+                "id": "d",
+                "label": "Quặng sắt"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Những sản phẩm nào thuộc công nghiệp silicate?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Xi măng"
+              },
+              {
+                "id": "b",
+                "label": "Thủy tinh"
+              },
+              {
+                "id": "c",
+                "label": "Đồ gốm"
+              },
+              {
+                "id": "d",
+                "label": "Nhựa PE"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vôi sống có công thức hóa học là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "[[CaCO3]]"
+              },
+              {
+                "id": "b",
+                "label": "[[CaO]]"
+              },
+              {
+                "id": "c",
+                "label": "[[Ca(OH)2]]"
+              },
+              {
+                "id": "d",
+                "label": "[[CaCl2]]"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Khi tôi vôi, quá trình này tỏa hay thu nhiệt?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Thu nhiều nhiệt"
+              },
+              {
+                "id": "b",
+                "label": "Tỏa nhiều nhiệt"
+              },
+              {
+                "id": "c",
+                "label": "Không đổi nhiệt"
+              },
+              {
+                "id": "d",
+                "label": "Làm lạnh nước"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

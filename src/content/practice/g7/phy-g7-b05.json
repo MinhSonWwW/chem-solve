@@ -1,0 +1,153 @@
+{
+  "lessonId": "phy-g7-b05",
+  "units": [
+    {
+      "id": "nguon-moi-truong",
+      "title": "Nguồn âm và môi trường truyền âm",
+      "fromExercises": [
+        "phy-g7-b05-mcq-001",
+        "phy-g7-b05-mcq-002",
+        "phy-g7-b05-mcq-003",
+        "phy-g7-b05-mcq-004",
+        "phy-g7-b05-tf-007",
+        "phy-g7-b05-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Những vật nào sau đây là nguồn âm khi đang phát ra âm?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Dây đàn đang rung"
+              },
+              {
+                "id": "b",
+                "label": "Mặt trống đang rung"
+              },
+              {
+                "id": "c",
+                "label": "Màng loa đang rung"
+              },
+              {
+                "id": "d",
+                "label": "Quyển sách nằm yên trên bàn"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Sóng âm truyền được trong môi trường nào sau đây?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chỉ trong chất khí"
+              },
+              {
+                "id": "b",
+                "label": "Trong chất rắn, chất lỏng và chất khí"
+              },
+              {
+                "id": "c",
+                "label": "Trong chân không"
+              },
+              {
+                "id": "d",
+                "label": "Chỉ trong chất lỏng"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "truyen-am",
+      "title": "Tốc độ truyền âm",
+      "fromExercises": [
+        "phy-g7-b05-num-005",
+        "phy-g7-b05-num-006"
+      ],
+      "generator": "sound-distance",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Âm truyền nhanh nhất trong môi trường nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Không khí"
+              },
+              {
+                "id": "b",
+                "label": "Nước"
+              },
+              {
+                "id": "c",
+                "label": "Thép"
+              },
+              {
+                "id": "d",
+                "label": "Chân không"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Âm truyền trong nước với tốc độ 1500 m/s. Sau 2 s âm đi được bao nhiêu mét?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 3000,
+            "unit": "m",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về truyền âm là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Áp tai xuống đường ray có thể nghe tiếng tàu sớm hơn nghe trong không khí.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Âm không truyền được trong chân không.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Âm truyền trong không khí nhanh hơn trong thép.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

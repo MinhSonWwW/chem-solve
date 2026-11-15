@@ -1,0 +1,266 @@
+{
+  "lessonId": "bio-g8-b18",
+  "units": [
+    {
+      "id": "o-nhiem",
+      "title": "Ô nhiễm môi trường",
+      "fromExercises": [
+        "bio-g8-b18-q01",
+        "bio-g8-b18-q02",
+        "bio-g8-b18-q03",
+        "bio-g8-b18-q07"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép tác nhân với dạng ô nhiễm.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Khói thải từ nhà máy",
+                "right": "Ô nhiễm không khí"
+              },
+              {
+                "left": "Nước thải chưa xử lí",
+                "right": "Ô nhiễm nước"
+              },
+              {
+                "left": "Lạm dụng thuốc bảo vệ thực vật",
+                "right": "Ô nhiễm đất"
+              },
+              {
+                "left": "Tiếng còi xe liên tục",
+                "right": "Ô nhiễm tiếng ồn"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về ô nhiễm môi trường là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Rác thải nhựa phân hủy rất chậm.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Pin cũ chứa kim loại nặng có thể gây ô nhiễm đất và nước.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Đốt rác nhựa ngoài trời không gây ô nhiễm.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Những tác hại nào do ô nhiễm không khí gây ra?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Bệnh về đường hô hấp"
+              },
+              {
+                "id": "b",
+                "label": "Mưa acid"
+              },
+              {
+                "id": "c",
+                "label": "Biến đổi khí hậu"
+              },
+              {
+                "id": "d",
+                "label": "Làm cây xanh tốt hơn"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Khí nào chủ yếu gây hiệu ứng nhà kính?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Oxygen"
+              },
+              {
+                "id": "b",
+                "label": "Nitrogen"
+              },
+              {
+                "id": "c",
+                "label": "Carbon dioxide"
+              },
+              {
+                "id": "d",
+                "label": "Hydrogen"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bao-ve",
+      "title": "Bảo vệ môi trường và phát triển bền vững",
+      "fromExercises": [
+        "bio-g8-b18-q04",
+        "bio-g8-b18-q05",
+        "bio-g8-b18-q06",
+        "bio-g8-b18-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép chữ R trong mô hình 3R với hành động.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Reduce (Giảm thiểu)",
+                "right": "Mang túi vải khi đi chợ thay túi nilon"
+              },
+              {
+                "left": "Reuse (Tái sử dụng)",
+                "right": "Dùng chai nhựa cũ làm chậu trồng cây"
+              },
+              {
+                "left": "Recycle (Tái chế)",
+                "right": "Thu gom giấy vụn để sản xuất giấy mới"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về bảo vệ môi trường và phát triển bền vững là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Phân loại rác tại nguồn giúp tái chế hiệu quả hơn.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Sử dụng năng lượng tái tạo góp phần bảo vệ môi trường.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Phát triển bền vững là khai thác hết tài nguyên càng nhanh càng tốt.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Phân loại rác thải sinh hoạt.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Rác hữu cơ"
+              },
+              {
+                "id": "b2",
+                "label": "Rác tái chế"
+              },
+              {
+                "id": "b3",
+                "label": "Rác thải khác"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Vỏ trái cây",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Rau thừa",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Giấy báo cũ",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Lon nhôm",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Túi nilon bẩn",
+                "bucketId": "b3"
+              },
+              {
+                "id": "i6",
+                "label": "Pin cũ (cần thu gom riêng)",
+                "bucketId": "b3"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Phát triển bền vững là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Phát triển đáp ứng nhu cầu hiện tại mà không làm hại khả năng đáp ứng nhu cầu của thế hệ sau"
+              },
+              {
+                "id": "b",
+                "label": "Phát triển kinh tế bằng mọi giá"
+              },
+              {
+                "id": "c",
+                "label": "Ngừng mọi hoạt động sản xuất"
+              },
+              {
+                "id": "d",
+                "label": "Chỉ bảo vệ động vật"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    }
+  ]
+}

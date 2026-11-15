@@ -1,0 +1,270 @@
+{
+  "lessonId": "g8-b02",
+  "units": [
+    {
+      "id": "dau-hieu",
+      "title": "Dấu hiệu nhận biết phản ứng hóa học",
+      "fromExercises": [
+        "g8-b02-mcq-001",
+        "g8-b02-sort-002",
+        "g8-b02-mcq-003",
+        "g8-b02-match-004",
+        "g8-b02-match-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Những dấu hiệu nào cho biết có phản ứng hóa học xảy ra?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Có chất khí thoát ra"
+              },
+              {
+                "id": "b",
+                "label": "Có kết tủa xuất hiện"
+              },
+              {
+                "id": "c",
+                "label": "Có sự thay đổi màu sắc"
+              },
+              {
+                "id": "d",
+                "label": "Chất bị cắt nhỏ"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Thả viên vitamin C sủi vào nước thấy sủi bọt khí. Đây là dấu hiệu của hiện tượng gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Biến đổi vật lí"
+              },
+              {
+                "id": "b",
+                "label": "Phản ứng hóa học"
+              },
+              {
+                "id": "c",
+                "label": "Sự bay hơi"
+              },
+              {
+                "id": "d",
+                "label": "Sự nóng chảy"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về dấu hiệu phản ứng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Sự tỏa nhiệt, phát sáng có thể là dấu hiệu của phản ứng hóa học.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nước đá tan thành nước là phản ứng hóa học.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Đinh sắt bị gỉ là phản ứng hóa học.",
+                "correct": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dien-bien",
+      "title": "Diễn biến của phản ứng hóa học",
+      "fromExercises": [
+        "g8-b02-tf-005",
+        "g8-b02-mcq-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Trong phản ứng hóa học, chất ban đầu bị biến đổi được gọi là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sản phẩm"
+              },
+              {
+                "id": "b",
+                "label": "Chất tham gia (chất phản ứng)"
+              },
+              {
+                "id": "c",
+                "label": "Chất xúc tác"
+              },
+              {
+                "id": "d",
+                "label": "Dung môi"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Bản chất của phản ứng hóa học là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nguyên tử bị phá hủy"
+              },
+              {
+                "id": "b",
+                "label": "Liên kết giữa các nguyên tử thay đổi, tạo thành phân tử mới"
+              },
+              {
+                "id": "c",
+                "label": "Số nguyên tử tăng lên"
+              },
+              {
+                "id": "d",
+                "label": "Chất chuyển thể"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về diễn biến phản ứng là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Trong phản ứng, số nguyên tử của mỗi nguyên tố được giữ nguyên.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Trong phản ứng, nguyên tử của nguyên tố này biến thành nguyên tố khác.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Lượng chất tham gia giảm dần, lượng sản phẩm tăng dần.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Trong phản ứng: Than (carbon) + Oxygen → Carbon dioxide, hãy phân loại các chất.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Chất tham gia"
+              },
+              {
+                "id": "b2",
+                "label": "Sản phẩm"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Carbon",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Oxygen",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Carbon dioxide",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Ghép phương trình chữ với tên gọi các chất.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Sắt + Lưu huỳnh → Iron(II) sulfide",
+                "right": "Phản ứng hóa hợp tạo một sản phẩm"
+              },
+              {
+                "left": "Đá vôi → Vôi sống + Carbon dioxide",
+                "right": "Phản ứng phân hủy (nhiệt phân)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Đốt nến, chất tham gia phản ứng cháy là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Bấc nến và nước"
+              },
+              {
+                "id": "b",
+                "label": "Parafin (sáp nến) và oxygen"
+              },
+              {
+                "id": "c",
+                "label": "Carbon dioxide"
+              },
+              {
+                "id": "d",
+                "label": "Hơi nước"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

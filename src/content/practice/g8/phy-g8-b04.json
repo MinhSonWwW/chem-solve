@@ -1,0 +1,210 @@
+{
+  "lessonId": "phy-g8-b04",
+  "units": [
+    {
+      "id": "chat-long",
+      "title": "Áp suất chất lỏng",
+      "fromExercises": [
+        "phy-g8-b04-mcq-001",
+        "phy-g8-b04-mcq-002",
+        "phy-g8-b04-mcq-003",
+        "phy-g8-b04-num-004",
+        "phy-g8-b04-num-005"
+      ],
+      "generator": "liquid-pressure",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Càng xuống sâu trong nước, áp suất chất lỏng thay đổi thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Giảm"
+              },
+              {
+                "id": "b",
+                "label": "Tăng"
+              },
+              {
+                "id": "c",
+                "label": "Không đổi"
+              },
+              {
+                "id": "d",
+                "label": "Bằng 0"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về áp suất chất lỏng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Chất lỏng gây áp suất theo mọi phương.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Ở cùng một độ sâu, áp suất chất lỏng như nhau.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Áp suất chất lỏng không phụ thuộc vào độ sâu.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "khi-quyen",
+      "title": "Áp suất khí quyển",
+      "fromExercises": [
+        "phy-g8-b04-mcq-006",
+        "phy-g8-b04-tf-007",
+        "phy-g8-b04-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Áp suất khí quyển là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Áp suất do nước gây ra"
+              },
+              {
+                "id": "b",
+                "label": "Áp suất do lớp không khí bao quanh Trái Đất gây ra"
+              },
+              {
+                "id": "c",
+                "label": "Áp suất do vật rắn gây ra"
+              },
+              {
+                "id": "d",
+                "label": "Áp suất trong lốp xe"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Hút bớt không khí trong hộp sữa giấy, hộp bị bẹp vào. Nguyên nhân là gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Do hộp yếu"
+              },
+              {
+                "id": "b",
+                "label": "Do áp suất khí quyển bên ngoài lớn hơn áp suất bên trong hộp"
+              },
+              {
+                "id": "c",
+                "label": "Do sữa nặng"
+              },
+              {
+                "id": "d",
+                "label": "Do nhiệt độ"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về áp suất khí quyển là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Càng lên cao, áp suất khí quyển càng giảm.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Ống hút uống nước hoạt động nhờ áp suất khí quyển.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Trên đỉnh núi cao áp suất khí quyển lớn hơn ở chân núi.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vì sao trên nắp ấm pha trà thường có một lỗ nhỏ?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để trang trí"
+              },
+              {
+                "id": "b",
+                "label": "Để không khí vào, áp suất trong ấm bằng bên ngoài nên rót nước dễ"
+              },
+              {
+                "id": "c",
+                "label": "Để nước bay hơi"
+              },
+              {
+                "id": "d",
+                "label": "Để ấm nhẹ hơn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Ghép dụng cụ với nguyên lí hoạt động.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Giác mút dính tường",
+                "right": "Áp suất khí quyển"
+              },
+              {
+                "left": "Bình thông nhau",
+                "right": "Mặt thoáng chất lỏng cùng độ cao"
+              },
+              {
+                "left": "Máy nén thủy lực",
+                "right": "Chất lỏng truyền áp suất"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

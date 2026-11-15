@@ -1,0 +1,275 @@
+{
+  "lessonId": "g8-b08",
+  "units": [
+    {
+      "id": "tinh-chat-acid",
+      "title": "Tính chất hóa học của acid",
+      "fromExercises": [
+        "g8-b08-mcq-001",
+        "g8-b08-mcq-002",
+        "g8-b08-eq-003",
+        "g8-b08-tf-004"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Dung dịch [[HCl]] loãng tác dụng được với những chất nào sau đây?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "[[Zn]]"
+              },
+              {
+                "id": "b",
+                "label": "[[Fe]]"
+              },
+              {
+                "id": "c",
+                "label": "[[Cu]]"
+              },
+              {
+                "id": "d",
+                "label": "[[NaOH]]"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Khi cho kẽm vào dung dịch [[HCl]], khí nào thoát ra?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Oxygen"
+              },
+              {
+                "id": "b",
+                "label": "Hydrogen"
+              },
+              {
+                "id": "c",
+                "label": "Chlorine"
+              },
+              {
+                "id": "d",
+                "label": "Carbon dioxide"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Cân bằng phương trình: [[Fe]] + [[HCl]] -> [[FeCl2]] + [[H2]]",
+          "difficulty": 1,
+          "answer": {
+            "kind": "equation",
+            "mode": "fill-coefficients",
+            "reactants": [
+              "Fe",
+              "HCl"
+            ],
+            "products": [
+              "FeCl2",
+              "H2"
+            ],
+            "coefficients": [
+              1,
+              2,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Phản ứng giữa acid và base tạo ra muối và nước gọi là phản ứng gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Phân hủy"
+              },
+              {
+                "id": "b",
+                "label": "Trung hòa"
+              },
+              {
+                "id": "c",
+                "label": "Cháy"
+              },
+              {
+                "id": "d",
+                "label": "Hóa hợp"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nhan-biet-acid",
+      "title": "Acid trong đời sống và an toàn",
+      "fromExercises": [
+        "g8-b08-sort-005",
+        "g8-b08-match-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Acid nào có trong dạ dày người, giúp tiêu hóa thức ăn?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sulfuric acid"
+              },
+              {
+                "id": "b",
+                "label": "Hydrochloric acid"
+              },
+              {
+                "id": "c",
+                "label": "Acetic acid"
+              },
+              {
+                "id": "d",
+                "label": "Nitric acid"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Acid có trong giấm ăn là acid nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hydrochloric acid"
+              },
+              {
+                "id": "b",
+                "label": "Acetic acid"
+              },
+              {
+                "id": "c",
+                "label": "Sulfuric acid"
+              },
+              {
+                "id": "d",
+                "label": "Citric acid"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về an toàn khi dùng acid là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Khi pha loãng sulfuric acid đặc, phải rót từ từ acid vào nước.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Có thể ngửi trực tiếp miệng lọ acid đặc để nhận biết.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Nếu acid dính vào da cần rửa ngay bằng nhiều nước.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Ghép acid với nơi thường gặp.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Citric acid",
+                "right": "Quả chanh"
+              },
+              {
+                "left": "Acetic acid",
+                "right": "Giấm ăn"
+              },
+              {
+                "left": "Sulfuric acid",
+                "right": "Bình ắc quy"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Dung dịch acid làm đổi màu quỳ tím thành màu gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Xanh"
+              },
+              {
+                "id": "b",
+                "label": "Đỏ"
+              },
+              {
+                "id": "c",
+                "label": "Vàng"
+              },
+              {
+                "id": "d",
+                "label": "Không đổi màu"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Viết công thức hóa học của sulfuric acid.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "text",
+            "accepted": [
+              "H2SO4"
+            ],
+            "lenientDiacritics": true
+          }
+        }
+      ]
+    }
+  ]
+}

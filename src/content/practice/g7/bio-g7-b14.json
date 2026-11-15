@@ -1,0 +1,258 @@
+{
+  "lessonId": "bio-g7-b14",
+  "units": [
+    {
+      "id": "trong-trot",
+      "title": "Vận dụng cảm ứng trong trồng trọt",
+      "fromExercises": [
+        "bio-g7-b14-q01",
+        "bio-g7-b14-q02",
+        "bio-g7-b14-q03",
+        "bio-g7-b14-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép biện pháp với hiện tượng cảm ứng được vận dụng.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Làm giàn cho cây mướp leo",
+                "right": "Hướng tiếp xúc"
+              },
+              {
+                "left": "Bón phân theo rãnh quanh tán cây",
+                "right": "Hướng hóa của rễ"
+              },
+              {
+                "left": "Thắp đèn ban đêm cho cây thanh long",
+                "right": "Ảnh hưởng của ánh sáng"
+              },
+              {
+                "left": "Tưới nước quanh gốc để rễ phát triển",
+                "right": "Hướng nước"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Bẫy đèn bắt côn trùng dựa vào tập tính bị thu hút bởi ánh sáng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Trồng cây ưa sáng dưới bóng râm giúp cây tốt hơn.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Vì sao trồng cây cảnh trong nhà nên xoay chậu định kì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để chậu sạch"
+              },
+              {
+                "id": "b",
+                "label": "Để cây không bị nghiêng về một phía do hướng sáng"
+              },
+              {
+                "id": "c",
+                "label": "Để cây ra hoa"
+              },
+              {
+                "id": "d",
+                "label": "Để tưới nước dễ"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Trồng rau trong nhà lưới có tác dụng gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hạn chế sâu bọ và điều chỉnh ánh sáng, nhiệt độ"
+              },
+              {
+                "id": "b",
+                "label": "Làm rau chậm lớn"
+              },
+              {
+                "id": "c",
+                "label": "Không có tác dụng"
+              },
+              {
+                "id": "d",
+                "label": "Làm rau đắng"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chan-nuoi",
+      "title": "Vận dụng tập tính trong chăn nuôi và học tập",
+      "fromExercises": [
+        "bio-g7-b14-q04",
+        "bio-g7-b14-q06",
+        "bio-g7-b14-q07",
+        "bio-g7-b14-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các thói quen của học sinh.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Thói quen tốt nên duy trì"
+              },
+              {
+                "id": "b2",
+                "label": "Thói quen cần bỏ"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Đi ngủ đúng giờ",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Đánh răng sau khi ăn",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Ôn bài mỗi ngày",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Thức khuya chơi điện thoại",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Cắn móng tay",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Trì hoãn làm bài tập",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Huấn luyện chó nghiệp vụ dựa vào loại tập tính nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tập tính bẩm sinh"
+              },
+              {
+                "id": "b",
+                "label": "Tập tính học được"
+              },
+              {
+                "id": "c",
+                "label": "Hướng sáng"
+              },
+              {
+                "id": "d",
+                "label": "Hướng nước"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về hình thành thói quen là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Lặp lại một hành động nhiều lần giúp hình thành thói quen.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Khen thưởng kịp thời giúp vật nuôi học nhanh hơn.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Thói quen xấu không thể thay đổi được.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Cho gà ăn kèm tiếng gõ kẻng nhiều lần, sau đó chỉ cần gõ kẻng gà đã chạy về. Đây là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tập tính bẩm sinh"
+              },
+              {
+                "id": "b",
+                "label": "Tập tính học được (phản xạ có điều kiện)"
+              },
+              {
+                "id": "c",
+                "label": "Cảm ứng hướng sáng"
+              },
+              {
+                "id": "d",
+                "label": "Sinh sản"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "lessonId": "phy-g8-b08",
+  "units": [
+    {
+      "id": "nhiem-dien",
+      "title": "Nhiễm điện do cọ xát",
+      "fromExercises": [
+        "phy-g8-b08-mcq-001",
+        "phy-g8-b08-mcq-004",
+        "phy-g8-b08-mcq-005",
+        "phy-g8-b08-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Chải tóc khô bằng lược nhựa, tóc bị lược hút. Hiện tượng này là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nhiễm từ"
+              },
+              {
+                "id": "b",
+                "label": "Nhiễm điện do cọ xát"
+              },
+              {
+                "id": "c",
+                "label": "Phản xạ"
+              },
+              {
+                "id": "d",
+                "label": "Dẫn nhiệt"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về sự nhiễm điện là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Vật nhiễm điện có thể hút các vật nhỏ, nhẹ.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Cọ xát làm electron dịch chuyển từ vật này sang vật khác.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Vật nhiễm điện tự tạo ra điện tích mới.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Vì sao màn hình ti vi, cánh quạt thường bám nhiều bụi?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì bụi thích bám vào"
+              },
+              {
+                "id": "b",
+                "label": "Vì chúng bị nhiễm điện do cọ xát với không khí nên hút bụi"
+              },
+              {
+                "id": "c",
+                "label": "Vì có keo dính"
+              },
+              {
+                "id": "d",
+                "label": "Vì nóng"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Một vật trung hòa về điện khi nhận thêm electron sẽ nhiễm điện gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Dương"
+              },
+              {
+                "id": "b",
+                "label": "Âm"
+              },
+              {
+                "id": "c",
+                "label": "Không nhiễm điện"
+              },
+              {
+                "id": "d",
+                "label": "Vừa âm vừa dương"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dien-tich",
+      "title": "Hai loại điện tích",
+      "fromExercises": [
+        "phy-g8-b08-mcq-002",
+        "phy-g8-b08-mcq-003",
+        "phy-g8-b08-mcq-006",
+        "phy-g8-b08-tf-007"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các cặp điện tích theo cách chúng tương tác.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Đẩy nhau"
+              },
+              {
+                "id": "b2",
+                "label": "Hút nhau"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Dương – Dương",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Âm – Âm",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Dương – Âm",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Electron mang điện tích gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Dương"
+              },
+              {
+                "id": "b",
+                "label": "Âm"
+              },
+              {
+                "id": "c",
+                "label": "Không mang điện"
+              },
+              {
+                "id": "d",
+                "label": "Lúc dương lúc âm"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Thanh A hút thanh B, thanh B đẩy thanh C mang điện dương. Thanh A mang điện gì?",
+          "difficulty": 3,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Dương"
+              },
+              {
+                "id": "b",
+                "label": "Âm"
+              },
+              {
+                "id": "c",
+                "label": "Không xác định"
+              },
+              {
+                "id": "d",
+                "label": "Không nhiễm điện"
+              }
+            ],
+            "correctId": "b"
+          },
+          "explanation": "B đẩy C (dương) nên B dương; A hút B nên A âm."
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về hai loại điện tích là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Có hai loại điện tích: dương và âm.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Vật mất bớt electron sẽ nhiễm điện dương.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Hai vật nhiễm điện cùng loại thì hút nhau.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

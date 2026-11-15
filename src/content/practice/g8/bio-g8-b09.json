@@ -1,0 +1,235 @@
+{
+  "lessonId": "bio-g8-b09",
+  "units": [
+    {
+      "id": "tuyen-noi-tiet",
+      "title": "Các tuyến nội tiết",
+      "fromExercises": [
+        "bio-g8-b09-q01",
+        "bio-g8-b09-q02",
+        "bio-g8-b09-q06",
+        "bio-g8-b09-q07"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép tuyến nội tiết với hormone tiết ra.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Tuyến giáp",
+                "right": "Thyroxine"
+              },
+              {
+                "left": "Tuyến tụy",
+                "right": "Insulin và glucagon"
+              },
+              {
+                "left": "Tuyến trên thận",
+                "right": "Adrenaline"
+              },
+              {
+                "left": "Tuyến yên",
+                "right": "Hormone tăng trưởng (GH)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về các tuyến nội tiết là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Tuyến nội tiết tiết hormone trực tiếp vào máu.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Hormone chỉ cần lượng nhỏ nhưng có tác dụng mạnh.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Tuyến nước bọt là tuyến nội tiết.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Tuyến nào được xem là tuyến quan trọng nhất, điều khiển hoạt động của nhiều tuyến nội tiết khác?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tuyến giáp"
+              },
+              {
+                "id": "b",
+                "label": "Tuyến yên"
+              },
+              {
+                "id": "c",
+                "label": "Tuyến tụy"
+              },
+              {
+                "id": "d",
+                "label": "Tuyến sinh dục"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Khi gặp nguy hiểm, tim đập nhanh, cơ thể sẵn sàng phản ứng nhờ hormone nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Insulin"
+              },
+              {
+                "id": "b",
+                "label": "Adrenaline"
+              },
+              {
+                "id": "c",
+                "label": "Thyroxine"
+              },
+              {
+                "id": "d",
+                "label": "Estrogen"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hormone-benh",
+      "title": "Hormone và các bệnh nội tiết",
+      "fromExercises": [
+        "bio-g8-b09-q03",
+        "bio-g8-b09-q04",
+        "bio-g8-b09-q05",
+        "bio-g8-b09-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép bệnh với nguyên nhân.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Bướu cổ đơn thuần",
+                "right": "Thiếu iodine trong khẩu phần ăn"
+              },
+              {
+                "left": "Tiểu đường",
+                "right": "Rối loạn tiết insulin"
+              },
+              {
+                "left": "Người khổng lồ",
+                "right": "Thừa hormone tăng trưởng khi còn nhỏ"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Để phòng bệnh bướu cổ do thiếu iodine, nên làm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ăn nhiều đường"
+              },
+              {
+                "id": "b",
+                "label": "Dùng muối iodine trong bữa ăn"
+              },
+              {
+                "id": "c",
+                "label": "Uống nhiều nước ngọt"
+              },
+              {
+                "id": "d",
+                "label": "Ăn ít rau"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về hormone và các bệnh nội tiết là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Hormone sinh dục gây ra những biến đổi ở tuổi dậy thì.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Tiểu đường có liên quan đến hormone insulin.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Hormone được tiết vào ống dẫn ra ngoài cơ thể.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Ở tuổi dậy thì, giọng nói của nam trầm hơn chủ yếu do hormone nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Insulin"
+              },
+              {
+                "id": "b",
+                "label": "Testosterone"
+              },
+              {
+                "id": "c",
+                "label": "Adrenaline"
+              },
+              {
+                "id": "d",
+                "label": "Thyroxine"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

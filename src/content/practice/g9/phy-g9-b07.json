@@ -1,0 +1,189 @@
+{
+  "lessonId": "phy-g9-b07",
+  "units": [
+    {
+      "id": "thau-kinh",
+      "title": "Thấu kính hội tụ và phân kì",
+      "fromExercises": [
+        "phy-g9-b07-mcq-001",
+        "phy-g9-b07-mcq-002",
+        "phy-g9-b07-mcq-003",
+        "phy-g9-b07-mcq-005"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại đặc điểm của thấu kính.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Thấu kính hội tụ"
+              },
+              {
+                "id": "b2",
+                "label": "Thấu kính phân kì"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Phần rìa mỏng hơn phần giữa",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Chùm tia song song hội tụ tại tiêu điểm",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Phần rìa dày hơn phần giữa",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Chùm tia song song loe rộng ra",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về thấu kính hội tụ và phân kì là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Tia sáng qua quang tâm truyền thẳng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Tia tới song song trục chính của thấu kính hội tụ cho tia ló qua tiêu điểm.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Thấu kính phân kì luôn cho ảnh thật.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Kính cận là loại thấu kính nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Thấu kính hội tụ"
+              },
+              {
+                "id": "b",
+                "label": "Thấu kính phân kì"
+              },
+              {
+                "id": "c",
+                "label": "Lăng kính"
+              },
+              {
+                "id": "d",
+                "label": "Gương phẳng"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Ảnh tạo bởi thấu kính phân kì luôn có tính chất gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ảnh ảo, cùng chiều, nhỏ hơn vật"
+              },
+              {
+                "id": "b",
+                "label": "Ảnh thật, ngược chiều"
+              },
+              {
+                "id": "c",
+                "label": "Ảnh ảo, lớn hơn vật"
+              },
+              {
+                "id": "d",
+                "label": "Ảnh thật, lớn hơn vật"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    },
+    {
+      "id": "anh-thau-kinh",
+      "title": "Ảnh qua thấu kính hội tụ",
+      "fromExercises": [
+        "phy-g9-b07-mcq-004",
+        "phy-g9-b07-num-006",
+        "phy-g9-b07-num-007",
+        "phy-g9-b07-mcq-008"
+      ],
+      "generator": "lens",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Vật đặt trong khoảng tiêu cự của thấu kính hội tụ cho ảnh gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ảnh thật, ngược chiều"
+              },
+              {
+                "id": "b",
+                "label": "Ảnh ảo, cùng chiều, lớn hơn vật"
+              },
+              {
+                "id": "c",
+                "label": "Ảnh ảo, nhỏ hơn vật"
+              },
+              {
+                "id": "d",
+                "label": "Không có ảnh"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Vật đặt cách thấu kính hội tụ 2f, ảnh thật cách thấu kính bao nhiêu cm nếu f = 15 cm?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 30,
+            "unit": "cm",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

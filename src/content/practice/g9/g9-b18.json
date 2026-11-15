@@ -1,0 +1,98 @@
+{
+  "lessonId": "g9-b18",
+  "units": [
+    {
+      "id": "kim-loai",
+      "title": "Tính chất của kim loại",
+      "fromExercises": [
+        "g9-b18-mcq-001",
+        "g9-b18-mcq-002",
+        "g9-b18-eq-003",
+        "g9-b18-tf-004",
+        "g9-b18-sort-001",
+        "g9-b18-match-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Kim loại có những tính chất vật lí chung nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Dẫn điện"
+              },
+              {
+                "id": "b",
+                "label": "Dẫn nhiệt"
+              },
+              {
+                "id": "c",
+                "label": "Có ánh kim"
+              },
+              {
+                "id": "d",
+                "label": "Dễ vỡ vụn khi đập"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Kim loại tác dụng với oxygen tạo thành gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Acid"
+              },
+              {
+                "id": "b",
+                "label": "Oxide"
+              },
+              {
+                "id": "c",
+                "label": "Muối"
+              },
+              {
+                "id": "d",
+                "label": "Base"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Cân bằng phương trình: [[Fe]] + [[Cl2]] -> [[FeCl3]]",
+          "difficulty": 2,
+          "answer": {
+            "kind": "equation",
+            "mode": "fill-coefficients",
+            "reactants": [
+              "Fe",
+              "Cl2"
+            ],
+            "products": [
+              "FeCl3"
+            ],
+            "coefficients": [
+              2,
+              3,
+              2
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

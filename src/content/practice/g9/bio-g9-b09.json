@@ -1,0 +1,227 @@
+{
+  "lessonId": "bio-g9-b09",
+  "units": [
+    {
+      "id": "nst-gioi-tinh",
+      "title": "Nhiễm sắc thể giới tính",
+      "fromExercises": [
+        "bio-g9-b09-q01",
+        "bio-g9-b09-q02",
+        "bio-g9-b09-q03",
+        "bio-g9-b09-q04"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại bộ nhiễm sắc thể giới tính ở người.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Nam"
+              },
+              {
+                "id": "b2",
+                "label": "Nữ"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "XY",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "XX",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về nhiễm sắc thể giới tính là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Ở người, giới tính được xác định bởi cặp nhiễm sắc thể giới tính.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Người mẹ chỉ tạo một loại trứng mang X.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Việc sinh con trai hay con gái do người mẹ quyết định.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Tế bào sinh dưỡng của người có bao nhiêu cặp nhiễm sắc thể thường?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 22,
+            "unit": "cặp"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Tỉ lệ con trai : con gái trong quần thể người xấp xỉ là bao nhiêu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "3 : 1"
+              },
+              {
+                "id": "b",
+                "label": "1 : 1"
+              },
+              {
+                "id": "c",
+                "label": "2 : 1"
+              },
+              {
+                "id": "d",
+                "label": "1 : 3"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "xac-dinh-gioi-tinh",
+      "title": "Cơ chế xác định và điều khiển giới tính",
+      "fromExercises": [
+        "bio-g9-b09-q05",
+        "bio-g9-b09-q06",
+        "bio-g9-b09-q07",
+        "bio-g9-b09-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Tinh trùng mang nhiễm sắc thể nào kết hợp với trứng sẽ tạo thành con trai?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "X"
+              },
+              {
+                "id": "b",
+                "label": "Y"
+              },
+              {
+                "id": "c",
+                "label": "Cả X và Y"
+              },
+              {
+                "id": "d",
+                "label": "Không mang"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về cơ chế xác định và điều khiển giới tính là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Ở chim, con cái có cặp nhiễm sắc thể giới tính khác nhau.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Môi trường có thể ảnh hưởng đến giới tính ở một số loài.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Giới tính ở mọi loài đều do nhiễm sắc thể Y quyết định.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Điều khiển tỉ lệ đực, cái trong chăn nuôi có ý nghĩa gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Phù hợp mục đích sản xuất, tăng hiệu quả kinh tế"
+              },
+              {
+                "id": "b",
+                "label": "Làm giảm năng suất"
+              },
+              {
+                "id": "c",
+                "label": "Không có ý nghĩa"
+              },
+              {
+                "id": "d",
+                "label": "Chỉ để làm cảnh"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Hành vi lựa chọn giới tính thai nhi ở người là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Được khuyến khích"
+              },
+              {
+                "id": "b",
+                "label": "Bị pháp luật nghiêm cấm"
+              },
+              {
+                "id": "c",
+                "label": "Không ảnh hưởng gì"
+              },
+              {
+                "id": "d",
+                "label": "Bắt buộc"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

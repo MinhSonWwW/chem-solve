@@ -1,0 +1,171 @@
+{
+  "lessonId": "g8-b06",
+  "units": [
+    {
+      "id": "ti-le-mol",
+      "title": "Tỉ lệ số mol theo phương trình",
+      "fromExercises": [
+        "g8-b06-ordering-001",
+        "g8-b06-mcq-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phương trình: 2[[H2]] + [[O2]] → 2[[H2O]]. Tỉ lệ số mol H2 : O2 : H2O là bao nhiêu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "1 : 1 : 1"
+              },
+              {
+                "id": "b",
+                "label": "2 : 1 : 2"
+              },
+              {
+                "id": "c",
+                "label": "2 : 2 : 1"
+              },
+              {
+                "id": "d",
+                "label": "1 : 2 : 1"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Theo phương trình [[CaCO3]] → [[CaO]] + [[CO2]], 1 mol CaCO3 phân hủy tạo ra bao nhiêu mol CO2?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "0,5 mol"
+              },
+              {
+                "id": "b",
+                "label": "1 mol"
+              },
+              {
+                "id": "c",
+                "label": "2 mol"
+              },
+              {
+                "id": "d",
+                "label": "3 mol"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Theo phương trình 2[[Mg]] + [[O2]] → 2[[MgO]], cần bao nhiêu mol O2 để đốt cháy hết 0,4 mol Mg?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 0.2,
+            "unit": "mol",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Theo phương trình [[Zn]] + 2[[HCl]] → [[ZnCl2]] + [[H2]], 0,3 mol Zn tạo ra bao nhiêu mol H2?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 0.3,
+            "unit": "mol",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Xác định các nhận định sau về tính theo phương trình là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Hệ số trong phương trình cho biết tỉ lệ số mol giữa các chất.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Có thể dùng trực tiếp khối lượng để so sánh theo hệ số phương trình.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Cần đổi khối lượng hoặc thể tích ra số mol trước khi tính.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Theo phương trình [[N2]] + 3[[H2]] → 2[[NH3]], 0,6 mol H2 phản ứng hết tạo ra bao nhiêu mol NH3?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 0.4,
+            "unit": "mol",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tinh-khoi-luong",
+      "title": "Tính khối lượng, thể tích theo phương trình",
+      "fromExercises": [
+        "g8-b06-num-001",
+        "g8-b06-num-002",
+        "g8-b06-calc-001"
+      ],
+      "generator": "stoich",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Nhiệt phân 10 g [[CaCO3]] (M = 100 g/mol): [[CaCO3]] → [[CaO]] + [[CO2]]. Tính khối lượng CaO thu được (M = 56 g/mol).",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 5.6,
+            "unit": "g",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Đốt cháy hoàn toàn 0,1 mol [[CH4]]: [[CH4]] + 2[[O2]] → [[CO2]] + 2[[H2O]]. Tính số mol O2 cần dùng.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 0.2,
+            "unit": "mol",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "lessonId": "g9-b33",
+  "units": [
+    {
+      "id": "vo-trai-dat",
+      "title": "Hóa học vỏ Trái Đất",
+      "fromExercises": [
+        "g9-b33-mcq-001",
+        "g9-b33-mcq-002",
+        "g9-b33-tf-001",
+        "g9-b33-mcq-003",
+        "g9-b33-match-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Quặng hematite là nguyên liệu để sản xuất kim loại nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nhôm"
+              },
+              {
+                "id": "b",
+                "label": "Sắt"
+              },
+              {
+                "id": "c",
+                "label": "Đồng"
+              },
+              {
+                "id": "d",
+                "label": "Kẽm"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về hóa học vỏ Trái Đất là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Khoáng sản là tài nguyên không tái tạo.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Cần khai thác khoáng sản hợp lí và tiết kiệm.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Vỏ Trái Đất chỉ chứa kim loại.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Quặng bauxite dùng để sản xuất kim loại nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sắt"
+              },
+              {
+                "id": "b",
+                "label": "Nhôm"
+              },
+              {
+                "id": "c",
+                "label": "Vàng"
+              },
+              {
+                "id": "d",
+                "label": "Chì"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Nguyên tố nào chiếm tỉ lệ khối lượng lớn nhất trong vỏ Trái Đất?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Silicon"
+              },
+              {
+                "id": "b",
+                "label": "Oxygen"
+              },
+              {
+                "id": "c",
+                "label": "Nhôm"
+              },
+              {
+                "id": "d",
+                "label": "Sắt"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

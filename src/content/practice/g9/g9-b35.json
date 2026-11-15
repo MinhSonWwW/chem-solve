@@ -1,0 +1,141 @@
+{
+  "lessonId": "g9-b35",
+  "units": [
+    {
+      "id": "chu-trinh-carbon",
+      "title": "Chu trình carbon và môi trường",
+      "fromExercises": [
+        "g9-b35-mcq-001",
+        "g9-b35-sort-001",
+        "g9-b35-mcq-002",
+        "g9-b35-tf-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sắp xếp một vòng của chu trình carbon.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Carbon dioxide trong không khí",
+              "Cây xanh quang hợp tạo chất hữu cơ",
+              "Động vật ăn thực vật",
+              "Hô hấp và phân hủy trả lại carbon dioxide"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Những hoạt động nào làm tăng khí carbon dioxide trong khí quyển?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đốt nhiên liệu hóa thạch"
+              },
+              {
+                "id": "b",
+                "label": "Phá rừng"
+              },
+              {
+                "id": "c",
+                "label": "Trồng cây gây rừng"
+              },
+              {
+                "id": "d",
+                "label": "Đốt rác thải"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về chu trình carbon và môi trường là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Quang hợp lấy carbon dioxide từ khí quyển.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Hiệu ứng nhà kính tăng làm Trái Đất nóng lên.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Biến đổi khí hậu không ảnh hưởng đến đời sống con người.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Biện pháp nào góp phần giảm phát thải khí nhà kính?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đốt rơm rạ ngoài đồng"
+              },
+              {
+                "id": "b",
+                "label": "Sử dụng năng lượng tái tạo, trồng nhiều cây xanh"
+              },
+              {
+                "id": "c",
+                "label": "Dùng xe cá nhân nhiều hơn"
+              },
+              {
+                "id": "d",
+                "label": "Phá rừng làm nương"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Mực nước biển dâng là hậu quả của hiện tượng nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Biến đổi khí hậu làm băng tan"
+              },
+              {
+                "id": "b",
+                "label": "Động đất"
+              },
+              {
+                "id": "c",
+                "label": "Mưa acid"
+              },
+              {
+                "id": "d",
+                "label": "Ô nhiễm tiếng ồn"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    }
+  ]
+}

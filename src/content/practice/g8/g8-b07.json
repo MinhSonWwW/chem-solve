@@ -1,0 +1,299 @@
+{
+  "lessonId": "g8-b07",
+  "units": [
+    {
+      "id": "yeu-to",
+      "title": "Các yếu tố ảnh hưởng đến tốc độ phản ứng",
+      "fromExercises": [
+        "g8-b07-mcq-001",
+        "g8-b07-sort-001",
+        "g8-b07-match-001",
+        "g8-b07-ordering-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Vì sao than đập nhỏ cháy nhanh hơn than cục?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì than nhỏ nặng hơn"
+              },
+              {
+                "id": "b",
+                "label": "Vì diện tích tiếp xúc với oxygen lớn hơn"
+              },
+              {
+                "id": "c",
+                "label": "Vì than nhỏ ít carbon hơn"
+              },
+              {
+                "id": "d",
+                "label": "Vì nhiệt độ thấp hơn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Bảo quản thực phẩm trong tủ lạnh làm chậm sự hư hỏng chủ yếu nhờ yếu tố nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tăng diện tích tiếp xúc"
+              },
+              {
+                "id": "b",
+                "label": "Giảm nhiệt độ"
+              },
+              {
+                "id": "c",
+                "label": "Tăng nồng độ"
+              },
+              {
+                "id": "d",
+                "label": "Thêm chất xúc tác"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về tốc độ phản ứng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Tăng nhiệt độ thường làm tăng tốc độ phản ứng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Tăng nồng độ chất phản ứng thường làm tăng tốc độ phản ứng.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Đậy kín thức ăn làm phản ứng ôi thiu nhanh hơn.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Thổi không khí vào lò than làm lửa cháy to hơn là do yếu tố nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Giảm nhiệt độ"
+              },
+              {
+                "id": "b",
+                "label": "Tăng nồng độ oxygen"
+              },
+              {
+                "id": "c",
+                "label": "Giảm diện tích tiếp xúc"
+              },
+              {
+                "id": "d",
+                "label": "Thêm nước"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "xuc-tac",
+      "title": "Chất xúc tác",
+      "fromExercises": [
+        "g8-b07-tf-001",
+        "g8-b07-num-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Chất xúc tác là chất như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Bị mất đi sau phản ứng"
+              },
+              {
+                "id": "b",
+                "label": "Làm tăng tốc độ phản ứng nhưng không bị biến đổi sau phản ứng"
+              },
+              {
+                "id": "c",
+                "label": "Làm chậm mọi phản ứng"
+              },
+              {
+                "id": "d",
+                "label": "Là sản phẩm của phản ứng"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Enzyme trong nước bọt giúp tiêu hóa tinh bột là ví dụ về gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chất ức chế"
+              },
+              {
+                "id": "b",
+                "label": "Chất xúc tác sinh học"
+              },
+              {
+                "id": "c",
+                "label": "Chất tham gia"
+              },
+              {
+                "id": "d",
+                "label": "Sản phẩm"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về chất xúc tác là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Khối lượng chất xúc tác không đổi sau phản ứng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Manganese dioxide làm tăng tốc độ phân hủy hydrogen peroxide.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Chất xúc tác bị tiêu hao hết sau phản ứng.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Phân loại các biện pháp sau.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Làm tăng tốc độ phản ứng"
+              },
+              {
+                "id": "b2",
+                "label": "Làm giảm tốc độ phản ứng"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Đun nóng khi pha trà",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Nghiền nhỏ chất rắn",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Dùng men khi ủ rượu",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Cất thực phẩm vào tủ lạnh",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Sơn phủ lên đồ sắt",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Hút chân không túi thực phẩm",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Trong công nghiệp, người ta dùng chất xúc tác chủ yếu để làm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tăng tốc độ phản ứng, tiết kiệm thời gian và năng lượng"
+              },
+              {
+                "id": "b",
+                "label": "Làm sản phẩm độc hơn"
+              },
+              {
+                "id": "c",
+                "label": "Giảm lượng sản phẩm"
+              },
+              {
+                "id": "d",
+                "label": "Làm phản ứng dừng lại"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Một phản ứng không xúc tác mất 40 phút, có xúc tác chỉ mất 8 phút. Phản ứng có xúc tác nhanh hơn bao nhiêu lần?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 5,
+            "unit": "lần"
+          }
+        }
+      ]
+    }
+  ]
+}

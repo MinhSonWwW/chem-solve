@@ -1,0 +1,203 @@
+{
+  "lessonId": "phy-g8-b13",
+  "units": [
+    {
+      "id": "do-i",
+      "title": "Đo cường độ dòng điện",
+      "fromExercises": [
+        "phy-g8-b13-ord-001",
+        "phy-g8-b13-mcq-003",
+        "phy-g8-b13-mcq-005",
+        "phy-g8-b13-mcq-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Chốt dương (+) của ampe kế phải nối với đâu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cực âm của nguồn"
+              },
+              {
+                "id": "b",
+                "label": "Phía cực dương của nguồn"
+              },
+              {
+                "id": "c",
+                "label": "Bất kì"
+              },
+              {
+                "id": "d",
+                "label": "Không cần nối"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Trước khi đo, cần chọn ampe kế như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "GHĐ nhỏ hơn giá trị cần đo"
+              },
+              {
+                "id": "b",
+                "label": "GHĐ lớn hơn giá trị cần đo và ĐCNN phù hợp"
+              },
+              {
+                "id": "c",
+                "label": "Loại đẹp nhất"
+              },
+              {
+                "id": "d",
+                "label": "Không cần chọn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về đo cường độ dòng điện là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Đọc số chỉ khi kim đứng yên, mắt nhìn vuông góc với mặt số.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Có thể mắc trực tiếp ampe kế vào hai cực nguồn điện.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Ampe kế có GHĐ 1 A, mặt chia 50 khoảng. Độ chia nhỏ nhất là bao nhiêu A?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 0.02,
+            "unit": "A",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "do-u",
+      "title": "Đo hiệu điện thế",
+      "fromExercises": [
+        "phy-g8-b13-ord-002",
+        "phy-g8-b13-mcq-004",
+        "phy-g8-b13-num-007",
+        "phy-g8-b13-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Kim vôn kế lệch ngược khi vừa đóng mạch là do nguyên nhân nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hết pin"
+              },
+              {
+                "id": "b",
+                "label": "Mắc ngược chốt dương và chốt âm"
+              },
+              {
+                "id": "c",
+                "label": "Đèn hỏng"
+              },
+              {
+                "id": "d",
+                "label": "Dây quá dài"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Vôn kế mắc như thế nào với bóng đèn cần đo hiệu điện thế?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nối tiếp"
+              },
+              {
+                "id": "b",
+                "label": "Song song"
+              },
+              {
+                "id": "c",
+                "label": "Không cần mắc"
+              },
+              {
+                "id": "d",
+                "label": "Mắc vào dây nối khác"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Đo hiệu điện thế 3 lần được 2,9 V; 3,0 V; 3,1 V. Giá trị trung bình là bao nhiêu V?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 3,
+            "unit": "V",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về đo hiệu điện thế là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Hiệu điện thế giữa hai đầu đèn càng lớn thì đèn sáng càng mạnh (trong giới hạn cho phép).",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Vôn kế có thể dùng để đo cường độ dòng điện.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

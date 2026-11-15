@@ -1,0 +1,124 @@
+{
+  "lessonId": "phy-g9-b10",
+  "units": [
+    {
+      "id": "dien-tro",
+      "title": "Điện trở và các yếu tố ảnh hưởng",
+      "fromExercises": [
+        "phy-g9-b10-mcq-001",
+        "phy-g9-b10-mcq-002",
+        "phy-g9-b10-mcq-003",
+        "phy-g9-b10-mcq-007",
+        "phy-g9-b10-match-001",
+        "phy-g9-b10-match-002"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Xác định các nhận định sau về điện trở và các yếu tố ảnh hưởng là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Dây dẫn càng dài thì điện trở càng lớn.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Dây dẫn có tiết diện càng lớn thì điện trở càng nhỏ.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Điện trở không phụ thuộc vào vật liệu làm dây.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Kí hiệu đơn vị điện trở là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "V"
+              },
+              {
+                "id": "b",
+                "label": "A"
+              },
+              {
+                "id": "c",
+                "label": "Ω"
+              },
+              {
+                "id": "d",
+                "label": "W"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dinh-luat-ohm",
+      "title": "Định luật Ohm",
+      "fromExercises": [
+        "phy-g9-b10-num-004",
+        "phy-g9-b10-num-005",
+        "phy-g9-b10-num-006",
+        "phy-g9-b10-num-008"
+      ],
+      "generator": "ohm",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Đặt hiệu điện thế 9 V vào hai đầu điện trở 18 Ω. Cường độ dòng điện là bao nhiêu A?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 0.5,
+            "unit": "A",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Giữ nguyên điện trở, tăng hiệu điện thế lên gấp đôi thì cường độ dòng điện thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Giảm một nửa"
+              },
+              {
+                "id": "b",
+                "label": "Tăng gấp đôi"
+              },
+              {
+                "id": "c",
+                "label": "Không đổi"
+              },
+              {
+                "id": "d",
+                "label": "Tăng gấp bốn"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "lessonId": "g8-b04",
+  "units": [
+    {
+      "id": "nong-do-phan-tram",
+      "title": "Nồng độ phần trăm",
+      "fromExercises": [
+        "g8-b04-tf-001",
+        "g8-b04-mcq-001",
+        "g8-b04-calc-001",
+        "g8-b04-calc-002"
+      ],
+      "generator": "c-percent",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Dung dịch là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hỗn hợp đồng nhất của dung môi và chất tan"
+              },
+              {
+                "id": "b",
+                "label": "Chất nguyên chất"
+              },
+              {
+                "id": "c",
+                "label": "Hỗn hợp không đồng nhất"
+              },
+              {
+                "id": "d",
+                "label": "Chất rắn không tan"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Trong dung dịch nước muối, chất tan là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nước"
+              },
+              {
+                "id": "b",
+                "label": "Muối ăn"
+              },
+              {
+                "id": "c",
+                "label": "Không khí"
+              },
+              {
+                "id": "d",
+                "label": "Cốc thủy tinh"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nong-do-mol",
+      "title": "Nồng độ mol",
+      "fromExercises": [
+        "g8-b04-match-001",
+        "g8-b04-mcq-002",
+        "g8-b04-calc-003",
+        "g8-b04-calc-004"
+      ],
+      "generator": "c-molar",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Dung dịch [[NaOH]] 1 M có ý nghĩa gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "1 g NaOH trong 1 L dung dịch"
+              },
+              {
+                "id": "b",
+                "label": "1 mol NaOH trong 1 L dung dịch"
+              },
+              {
+                "id": "c",
+                "label": "1 mol NaOH trong 1 L nước"
+              },
+              {
+                "id": "d",
+                "label": "1 g NaOH trong 100 g dung dịch"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về nồng độ mol là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Khi tính CM, thể tích dung dịch phải đổi sang lít.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Đơn vị của nồng độ mol là mol/L hay M.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Pha thêm nước vào dung dịch thì nồng độ mol tăng.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

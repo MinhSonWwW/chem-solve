@@ -1,0 +1,220 @@
+{
+  "lessonId": "bio-g7-b10",
+  "units": [
+    {
+      "id": "hap-thu",
+      "title": "Rễ hấp thụ nước và muối khoáng",
+      "fromExercises": [
+        "bio-g7-b10-q01",
+        "bio-g7-b10-q02",
+        "bio-g7-b10-q03",
+        "bio-g7-b10-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Xác định các nhận định sau là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Lông hút giúp tăng diện tích tiếp xúc của rễ với đất.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Rễ cây hấp thụ nước và muối khoáng hòa tan.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Cây hấp thụ nước chủ yếu qua hoa.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Vì sao trước khi trồng cây cần làm đất tơi xốp?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để đất nặng hơn"
+              },
+              {
+                "id": "b",
+                "label": "Để rễ dễ phát triển, hút nước và khoáng tốt hơn"
+              },
+              {
+                "id": "c",
+                "label": "Để đất khô hơn"
+              },
+              {
+                "id": "d",
+                "label": "Để diệt rễ"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Bón quá nhiều phân đạm sát gốc có thể làm cây héo vì sao?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì cây thừa nước"
+              },
+              {
+                "id": "b",
+                "label": "Vì nồng độ chất tan trong đất quá cao, rễ khó hút nước"
+              },
+              {
+                "id": "c",
+                "label": "Vì phân đạm làm lá rụng"
+              },
+              {
+                "id": "d",
+                "label": "Vì cây không cần đạm"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Sau khi tưới nước, nước đi vào cây qua bộ phận nào đầu tiên?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Lá"
+              },
+              {
+                "id": "b",
+                "label": "Thân"
+              },
+              {
+                "id": "c",
+                "label": "Lông hút của rễ"
+              },
+              {
+                "id": "d",
+                "label": "Hoa"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    },
+    {
+      "id": "van-chuyen",
+      "title": "Vận chuyển các chất và thoát hơi nước",
+      "fromExercises": [
+        "bio-g7-b10-q04",
+        "bio-g7-b10-q05",
+        "bio-g7-b10-q06",
+        "bio-g7-b10-q07"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép mạch dẫn với chức năng.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Mạch gỗ",
+                "right": "Vận chuyển nước và muối khoáng từ rễ lên"
+              },
+              {
+                "left": "Mạch rây",
+                "right": "Vận chuyển chất hữu cơ từ lá đến các bộ phận"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về thoát hơi nước là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Thoát hơi nước tạo lực kéo nước từ rễ lên lá.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Thoát hơi nước giúp làm mát lá vào ngày nắng.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Thoát hơi nước diễn ra chủ yếu ở rễ.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Sắp xếp đường đi của nước trong cây.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Đất",
+              "Lông hút của rễ",
+              "Mạch gỗ ở thân",
+              "Lá",
+              "Hơi nước ra ngoài qua khí khổng"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Khi trồng cây con, người ta tỉa bớt lá để làm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để cây đẹp hơn"
+              },
+              {
+                "id": "b",
+                "label": "Để giảm thoát hơi nước, cây không bị héo"
+              },
+              {
+                "id": "c",
+                "label": "Để cây quang hợp mạnh hơn"
+              },
+              {
+                "id": "d",
+                "label": "Để rễ phát triển chậm"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

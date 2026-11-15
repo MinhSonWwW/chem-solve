@@ -1,0 +1,240 @@
+{
+  "lessonId": "bio-g7-b11",
+  "units": [
+    {
+      "id": "tieu-hoa",
+      "title": "Tiêu hóa và hấp thụ chất dinh dưỡng",
+      "fromExercises": [
+        "bio-g7-b11-q01",
+        "bio-g7-b11-q02",
+        "bio-g7-b11-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sắp xếp đường đi của thức ăn trong ống tiêu hóa người.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Miệng",
+              "Thực quản",
+              "Dạ dày",
+              "Ruột non",
+              "Ruột già"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ghép cơ quan tiêu hóa với chức năng chính.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Miệng",
+                "right": "Nghiền nhỏ thức ăn, trộn với nước bọt"
+              },
+              {
+                "left": "Dạ dày",
+                "right": "Co bóp, nghiền và tiêu hóa một phần thức ăn"
+              },
+              {
+                "left": "Ruột non",
+                "right": "Tiêu hóa và hấp thụ phần lớn chất dinh dưỡng"
+              },
+              {
+                "left": "Ruột già",
+                "right": "Hấp thụ lại nước, tạo phân"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Ruột non là nơi hấp thụ chất dinh dưỡng chủ yếu.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nhai kĩ giúp tiêu hóa thức ăn tốt hơn.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Dạ dày là nơi hấp thụ phần lớn chất dinh dưỡng.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Chất dinh dưỡng sau khi được hấp thụ ở ruột non đi vào đâu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ra ngoài theo phân"
+              },
+              {
+                "id": "b",
+                "label": "Vào máu để vận chuyển đến các tế bào"
+              },
+              {
+                "id": "c",
+                "label": "Vào phổi"
+              },
+              {
+                "id": "d",
+                "label": "Vào da"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Những thói quen nào tốt cho hệ tiêu hóa?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ăn chín, uống sôi"
+              },
+              {
+                "id": "b",
+                "label": "Ăn đúng bữa, nhai kĩ"
+              },
+              {
+                "id": "c",
+                "label": "Vừa ăn vừa chạy nhảy"
+              },
+              {
+                "id": "d",
+                "label": "Ăn nhiều rau xanh"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "tuan-hoan-bai-tiet",
+      "title": "Vận chuyển các chất và bài tiết",
+      "fromExercises": [
+        "bio-g7-b11-q03",
+        "bio-g7-b11-q04",
+        "bio-g7-b11-q05",
+        "bio-g7-b11-q06",
+        "bio-g7-b11-q07"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Cơ quan nào bơm máu đi khắp cơ thể?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Phổi"
+              },
+              {
+                "id": "b",
+                "label": "Tim"
+              },
+              {
+                "id": "c",
+                "label": "Thận"
+              },
+              {
+                "id": "d",
+                "label": "Gan"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về tuần hoàn và bài tiết là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Máu vận chuyển chất dinh dưỡng và oxygen đến tế bào.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Thận lọc máu và tạo thành nước tiểu.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Mồ hôi không phải là con đường thải nước của cơ thể.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Phân loại các con đường cơ thể mất nước.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Mất nước qua bài tiết"
+              },
+              {
+                "id": "b2",
+                "label": "Mất nước qua hô hấp"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Nước tiểu",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Mồ hôi",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Hơi nước trong hơi thở ra",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

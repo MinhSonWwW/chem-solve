@@ -1,0 +1,237 @@
+{
+  "lessonId": "bio-g8-b08",
+  "units": [
+    {
+      "id": "than-kinh",
+      "title": "Hệ thần kinh",
+      "fromExercises": [
+        "bio-g8-b08-q01",
+        "bio-g8-b08-q02",
+        "bio-g8-b08-q03",
+        "bio-g8-b08-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sắp xếp các thành phần của cung phản xạ.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Cơ quan thụ cảm",
+              "Nơron hướng tâm",
+              "Trung ương thần kinh",
+              "Nơron li tâm",
+              "Cơ quan phản ứng"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Phân loại các bộ phận của hệ thần kinh.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Thần kinh trung ương"
+              },
+              {
+                "id": "b2",
+                "label": "Thần kinh ngoại biên"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Não",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Tủy sống",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Dây thần kinh",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Hạch thần kinh",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về hệ thần kinh là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Phản xạ là phản ứng của cơ thể trả lời kích thích, có sự điều khiển của hệ thần kinh.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Ngủ đủ giấc giúp hệ thần kinh được nghỉ ngơi, phục hồi.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Dùng chất kích thích có lợi cho hệ thần kinh.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Chạm tay vào vật nóng, tay rụt lại ngay. Đây là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tập tính học được"
+              },
+              {
+                "id": "b",
+                "label": "Phản xạ"
+              },
+              {
+                "id": "c",
+                "label": "Cảm ứng ở thực vật"
+              },
+              {
+                "id": "d",
+                "label": "Bài tiết"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "giac-quan",
+      "title": "Các giác quan: mắt và tai",
+      "fromExercises": [
+        "bio-g8-b08-q04",
+        "bio-g8-b08-q05",
+        "bio-g8-b08-q06",
+        "bio-g8-b08-q07"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép tật của mắt với cách khắc phục.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Cận thị",
+                "right": "Đeo kính phân kì (kính cận)"
+              },
+              {
+                "left": "Viễn thị",
+                "right": "Đeo kính hội tụ"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Những thói quen nào giúp bảo vệ mắt?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đọc sách ở nơi đủ ánh sáng"
+              },
+              {
+                "id": "b",
+                "label": "Giữ khoảng cách hợp lí khi đọc sách"
+              },
+              {
+                "id": "c",
+                "label": "Dùng điện thoại liên tục trong bóng tối"
+              },
+              {
+                "id": "d",
+                "label": "Cho mắt nghỉ ngơi sau khi học lâu"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về các giác quan: mắt và tai là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Người cận thị nhìn rõ vật ở gần, khó nhìn vật ở xa.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nghe nhạc quá to qua tai nghe trong thời gian dài có hại cho tai.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Dùng vật nhọn ngoáy tai là cách vệ sinh tai an toàn.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Bộ phận nào của tai giúp giữ thăng bằng cơ thể?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vành tai"
+              },
+              {
+                "id": "b",
+                "label": "Màng nhĩ"
+              },
+              {
+                "id": "c",
+                "label": "Bộ phận tiền đình và ống bán khuyên ở tai trong"
+              },
+              {
+                "id": "d",
+                "label": "Ống tai ngoài"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    }
+  ]
+}

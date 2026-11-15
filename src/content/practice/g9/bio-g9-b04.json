@@ -1,0 +1,183 @@
+{
+  "lessonId": "bio-g9-b04",
+  "units": [
+    {
+      "id": "tai-ban",
+      "title": "Tái bản DNA",
+      "fromExercises": [
+        "bio-g9-b04-q01",
+        "bio-g9-b04-q02",
+        "bio-g9-b04-q03",
+        "bio-g9-b04-q04",
+        "bio-g9-b04-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Xác định các nhận định sau về tái bản DNA là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Tái bản DNA diễn ra theo nguyên tắc bổ sung và bán bảo toàn.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Mỗi phân tử DNA con có một mạch cũ và một mạch mới.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Tái bản tạo ra hai phân tử DNA khác hẳn phân tử mẹ.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Một phân tử DNA tái bản liên tiếp 3 lần tạo ra bao nhiêu phân tử DNA con?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 8,
+            "unit": "phân tử"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Ý nghĩa của tái bản DNA là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đảm bảo thông tin di truyền được truyền đạt chính xác qua các thế hệ tế bào"
+              },
+              {
+                "id": "b",
+                "label": "Tạo ra protein"
+              },
+              {
+                "id": "c",
+                "label": "Tạo ra năng lượng"
+              },
+              {
+                "id": "d",
+                "label": "Phân hủy DNA"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phien-ma",
+      "title": "Phiên mã tạo RNA",
+      "fromExercises": [
+        "bio-g9-b04-q06",
+        "bio-g9-b04-q07",
+        "bio-g9-b04-q08",
+        "bio-g9-b04-ord-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép nucleotide trên mạch khuôn DNA với ribonucleotide trên RNA.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "A",
+                "right": "U"
+              },
+              {
+                "left": "T",
+                "right": "A"
+              },
+              {
+                "left": "G",
+                "right": "C"
+              },
+              {
+                "left": "C",
+                "right": "G"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về phiên mã tạo RNA là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Phiên mã là quá trình tổng hợp RNA từ mạch khuôn của gene.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Phân tử mRNA mang thông tin để tổng hợp protein.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Phiên mã dùng cả hai mạch của gene làm khuôn.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Mạch khuôn DNA có đoạn A-T-G. Đoạn tương ứng trên mRNA là gì? (viết liền, ví dụ: UAC)",
+          "difficulty": 2,
+          "answer": {
+            "kind": "text",
+            "accepted": [
+              "UAC",
+              "U-A-C"
+            ],
+            "lenientDiacritics": true
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Loại RNA nào vận chuyển amino acid đến ribosome?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "mRNA"
+              },
+              {
+                "id": "b",
+                "label": "tRNA"
+              },
+              {
+                "id": "c",
+                "label": "rRNA"
+              },
+              {
+                "id": "d",
+                "label": "DNA"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

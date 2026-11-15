@@ -1,0 +1,183 @@
+{
+  "lessonId": "bio-g9-b11",
+  "units": [
+    {
+      "id": "cau-truc",
+      "title": "Đột biến cấu trúc nhiễm sắc thể",
+      "fromExercises": [
+        "bio-g9-b11-q01",
+        "bio-g9-b11-q02",
+        "bio-g9-b11-q03",
+        "bio-g9-b11-q04",
+        "bio-g9-b11-sort-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép dạng đột biến cấu trúc với mô tả.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Mất đoạn",
+                "right": "Nhiễm sắc thể bị mất một đoạn"
+              },
+              {
+                "left": "Lặp đoạn",
+                "right": "Một đoạn được lặp lại"
+              },
+              {
+                "left": "Đảo đoạn",
+                "right": "Một đoạn bị đảo ngược 180°"
+              },
+              {
+                "left": "Chuyển đoạn",
+                "right": "Một đoạn chuyển sang vị trí khác"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về đột biến cấu trúc nhiễm sắc thể là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Đột biến cấu trúc làm thay đổi cấu trúc nhiễm sắc thể.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Mất đoạn thường gây hại cho sinh vật.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Đột biến cấu trúc không ảnh hưởng đến gene.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Hội chứng tiếng mèo kêu ở người do dạng đột biến nào gây ra?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Lặp đoạn"
+              },
+              {
+                "id": "b",
+                "label": "Mất đoạn"
+              },
+              {
+                "id": "c",
+                "label": "Đảo đoạn"
+              },
+              {
+                "id": "d",
+                "label": "Đa bội"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "so-luong",
+      "title": "Đột biến số lượng nhiễm sắc thể",
+      "fromExercises": [
+        "bio-g9-b11-q05",
+        "bio-g9-b11-q06",
+        "bio-g9-b11-q07",
+        "bio-g9-b11-q08",
+        "bio-g9-b11-match-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại đột biến số lượng.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Lệch bội"
+              },
+              {
+                "id": "b2",
+                "label": "Đa bội"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Hội chứng Down (3 NST số 21)",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Hội chứng Turner (chỉ một NST X)",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Dưa hấu tam bội không hạt",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Dâu tằm tam bội",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về đột biến số lượng nhiễm sắc thể là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Cây đa bội thường có cơ quan sinh dưỡng to, năng suất cao.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Hội chứng Down liên quan đến nhiễm sắc thể số 21.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Thể đa bội luôn có hại cho cây trồng.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Một loài có 2n = 14. Thể tam bội (3n) có bao nhiêu nhiễm sắc thể?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 21
+          }
+        }
+      ]
+    }
+  ]
+}

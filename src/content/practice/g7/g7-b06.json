@@ -1,0 +1,127 @@
+{
+  "lessonId": "g7-b06",
+  "units": [
+    {
+      "id": "hoa-tri",
+      "title": "Hóa trị",
+      "fromExercises": [
+        "g7-b06-mcq-001",
+        "g7-b06-mcq-002",
+        "g7-b06-mcq-003",
+        "g7-b06-tf-001",
+        "g7-b06-match-001",
+        "g7-b06-mcq-004"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Trong hợp chất [[CH4]], carbon có hóa trị bao nhiêu? (H có hóa trị I)",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "II"
+              },
+              {
+                "id": "b",
+                "label": "III"
+              },
+              {
+                "id": "c",
+                "label": "IV"
+              },
+              {
+                "id": "d",
+                "label": "I"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Trong hợp chất [[Na2O]], sodium có hóa trị bao nhiêu? (O có hóa trị II)",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "I"
+              },
+              {
+                "id": "b",
+                "label": "II"
+              },
+              {
+                "id": "c",
+                "label": "III"
+              },
+              {
+                "id": "d",
+                "label": "IV"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lap-cthh",
+      "title": "Lập công thức hóa học",
+      "fromExercises": [
+        "g7-b06-build-001",
+        "g7-b06-formula-001",
+        "g7-b06-formula-002",
+        "g7-b06-mcq-005",
+        "g7-b06-num-001",
+        "g7-b06-num-002"
+      ],
+      "generator": "mass-percent",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Viết công thức hóa học của hợp chất tạo bởi magnesium (Mg, hóa trị II) và oxygen (O, hóa trị II).",
+          "difficulty": 1,
+          "answer": {
+            "kind": "text",
+            "accepted": [
+              "MgO"
+            ],
+            "lenientDiacritics": true
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Hợp chất tạo bởi iron (Fe, hóa trị III) và chlorine (Cl, hóa trị I) có công thức nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "[[FeCl]]"
+              },
+              {
+                "id": "b",
+                "label": "[[FeCl2]]"
+              },
+              {
+                "id": "c",
+                "label": "[[FeCl3]]"
+              },
+              {
+                "id": "d",
+                "label": "[[Fe3Cl]]"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    }
+  ]
+}

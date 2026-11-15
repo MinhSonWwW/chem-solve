@@ -967,11 +967,13 @@ Mặt trên sáng màu rõ nét · Đáy dày 3D (solid shadow $4\text{px} - 6\t
 * **Nghiệm thu:** Unit test server (xác thực token Google, mã lớp, schema báo cáo) + client (tiến độ, hạn nộp, outbox); thử end-to-end bằng `wrangler pages dev` ở 360×640 / 390×844.
 
 
-#### M16 — Luyện tập ngắn theo nội dung & hồi tim hợp lí *(ĐANG LÀM — xong lớp 6)*
+#### M16 — Luyện tập ngắn theo nội dung & hồi tim hợp lí *(HOÀN THÀNH — lớp 6–9)*
 - [x] Mỗi bài chia thành các **mục luyện** (một nội dung/mục), mỗi lượt 4 câu rút ngẫu nhiên, ưu tiên câu chưa làm gần đây; bài tính toán có câu tự sinh số liệu.
 - [x] Hồi tim khi luyện tập: đúng ≥ 3/4 câu được +1 tim, mỗi mục 1 lần/ngày (`src/engine/progress/practiceHearts.ts`).
 - [x] Lớp 6 (Hóa, Lý, Sinh – 47 bài, 97 mục luyện): thêm 485 câu luyện tập mới, mỗi mục ≥ 8 câu (hoặc ≥ 5 câu + bộ sinh số liệu).
-- [ ] Lớp 7, 8, 9.
+- [x] Lớp 7 (41 bài, 82 mục luyện): thêm 286 câu mới; bộ sinh số liệu mới cho tốc độ, khoảng cách an toàn, âm, tiếng vang, tần số, góc phản xạ, gương phẳng, nguyên tử, khối lượng phân tử, phần trăm khối lượng, nhu cầu nước.
+- [x] Lớp 8 (46 bài, 92 mục luyện): thêm 335 câu mới; bộ sinh số liệu cho mol, thể tích khí, tỉ khối, C%, CM, bảo toàn khối lượng, tính theo PTHH, khối lượng riêng, áp suất, áp suất chất lỏng, lực đẩy Archimedes, moment, đòn bẩy, đơn vị điện, nhiệt lượng.
+- [x] Lớp 9 (50 bài, 82 mục luyện): thêm 278 câu mới; bộ sinh số liệu cho động năng, thế năng, cơ năng, công và công suất, thấu kính, kính lúp, định luật Ohm, đoạn mạch nối tiếp/song song, điện năng và tiền điện, máy biến thế, độ rượu; Sinh 9 dùng bộ sinh câu DNA, Mendel, nhiễm sắc thể.
 * **Nghiệm thu:** test nội dung (`src/content/practice/practice.test.ts`): mọi câu cũ thuộc đúng 1 mục, đủ số câu, dạng bài hợp môn, đáp án được bộ chấm thật chấm đúng, không trùng đề; bộ sinh số liệu chạy thử 40 lần/loại.
 ---
 

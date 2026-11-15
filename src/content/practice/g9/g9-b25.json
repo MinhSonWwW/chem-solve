@@ -1,0 +1,154 @@
+{
+  "lessonId": "g9-b25",
+  "units": [
+    {
+      "id": "nhien-lieu",
+      "title": "Nhiên liệu và sử dụng hiệu quả",
+      "fromExercises": [
+        "g9-b25-mcq-001",
+        "g9-b25-sort-001",
+        "g9-b25-mcq-002",
+        "g9-b25-tf-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Thành phần chính của khí thiên nhiên là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ethylene"
+              },
+              {
+                "id": "b",
+                "label": "Methane"
+              },
+              {
+                "id": "c",
+                "label": "Hydrogen"
+              },
+              {
+                "id": "d",
+                "label": "Carbon dioxide"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Những cách nào giúp đốt cháy nhiên liệu hiệu quả?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cung cấp đủ oxygen (không khí)"
+              },
+              {
+                "id": "b",
+                "label": "Tăng diện tích tiếp xúc của nhiên liệu với không khí"
+              },
+              {
+                "id": "c",
+                "label": "Đốt trong phòng kín"
+              },
+              {
+                "id": "d",
+                "label": "Điều chỉnh lượng nhiên liệu phù hợp"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về nhiên liệu và sử dụng hiệu quả là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Đốt cháy không hoàn toàn có thể tạo ra khí CO độc.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Than tổ ong có nhiều lỗ để tăng diện tích tiếp xúc với không khí.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Nhiên liệu hóa thạch là nguồn năng lượng vô tận.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xăng, dầu diesel được sản xuất chủ yếu từ nguồn nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Than đá"
+              },
+              {
+                "id": "b",
+                "label": "Dầu mỏ"
+              },
+              {
+                "id": "c",
+                "label": "Gỗ"
+              },
+              {
+                "id": "d",
+                "label": "Nước biển"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Vì sao cần hạn chế sử dụng nhiên liệu hóa thạch?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì gây ô nhiễm và dần cạn kiệt"
+              },
+              {
+                "id": "b",
+                "label": "Vì quá rẻ"
+              },
+              {
+                "id": "c",
+                "label": "Vì không cháy được"
+              },
+              {
+                "id": "d",
+                "label": "Vì không tạo năng lượng"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    }
+  ]
+}

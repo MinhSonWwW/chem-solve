@@ -1,0 +1,235 @@
+{
+  "lessonId": "bio-g7-b22",
+  "units": [
+    {
+      "id": "thuc-vat-tn",
+      "title": "Sự thống nhất trong cơ thể thực vật",
+      "fromExercises": [
+        "bio-g7-b22-q01",
+        "bio-g7-b22-q02",
+        "bio-g7-b22-q06"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép cơ quan của cây với vai trò trong cơ thể thống nhất.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Rễ",
+                "right": "Hút nước và muối khoáng cho cây"
+              },
+              {
+                "left": "Thân",
+                "right": "Vận chuyển các chất giữa rễ và lá"
+              },
+              {
+                "left": "Lá",
+                "right": "Quang hợp tạo chất hữu cơ"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về cây là một thể thống nhất là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Rễ bị thối thì lá cây cũng héo vàng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Lá quang hợp tạo chất hữu cơ nuôi cả rễ.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Mỗi cơ quan của cây hoạt động hoàn toàn riêng rẽ.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Nếu ngắt hết lá của cây, điều gì sẽ xảy ra lâu dài?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cây lớn nhanh hơn"
+              },
+              {
+                "id": "b",
+                "label": "Cây thiếu chất hữu cơ do không quang hợp được và yếu dần"
+              },
+              {
+                "id": "c",
+                "label": "Rễ hút nước mạnh hơn"
+              },
+              {
+                "id": "d",
+                "label": "Không ảnh hưởng gì"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Cơ thể sinh vật là \"hệ thống mở\" vì sao?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì cơ thể không có da"
+              },
+              {
+                "id": "b",
+                "label": "Vì luôn trao đổi chất và năng lượng với môi trường"
+              },
+              {
+                "id": "c",
+                "label": "Vì cơ thể không thay đổi"
+              },
+              {
+                "id": "d",
+                "label": "Vì không cần thức ăn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Đơn vị cấu trúc và chức năng cơ bản của cơ thể sinh vật là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cơ quan"
+              },
+              {
+                "id": "b",
+                "label": "Hệ cơ quan"
+              },
+              {
+                "id": "c",
+                "label": "Tế bào"
+              },
+              {
+                "id": "d",
+                "label": "Mô"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dong-vat-tn",
+      "title": "Sự phối hợp các hệ cơ quan ở người",
+      "fromExercises": [
+        "bio-g7-b22-q03",
+        "bio-g7-b22-q04",
+        "bio-g7-b22-q05",
+        "bio-g7-b22-q07",
+        "bio-g7-b22-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép hệ cơ quan với vai trò khi chạy bộ.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Hệ hô hấp",
+                "right": "Lấy oxygen, thải carbon dioxide nhiều hơn"
+              },
+              {
+                "left": "Hệ tuần hoàn",
+                "right": "Tim đập nhanh, vận chuyển máu nhiều hơn"
+              },
+              {
+                "left": "Hệ vận động",
+                "right": "Cơ và xương giúp cơ thể di chuyển"
+              },
+              {
+                "left": "Hệ thần kinh",
+                "right": "Điều khiển, phối hợp hoạt động các hệ"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Các hệ cơ quan phối hợp nhịp nhàng với nhau.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Khi trời nóng, cơ thể tăng tiết mồ hôi để hạ nhiệt.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Hệ tiêu hóa hoạt động không cần máu.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Hệ cơ quan nào vận chuyển chất dinh dưỡng từ hệ tiêu hóa đến các tế bào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hệ hô hấp"
+              },
+              {
+                "id": "b",
+                "label": "Hệ tuần hoàn"
+              },
+              {
+                "id": "c",
+                "label": "Hệ bài tiết"
+              },
+              {
+                "id": "d",
+                "label": "Hệ vận động"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

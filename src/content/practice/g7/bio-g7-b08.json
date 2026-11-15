@@ -1,0 +1,236 @@
+{
+  "lessonId": "bio-g7-b08",
+  "units": [
+    {
+      "id": "khi-khong",
+      "title": "Trao đổi khí ở thực vật",
+      "fromExercises": [
+        "bio-g7-b08-q01",
+        "bio-g7-b08-q02",
+        "bio-g7-b08-q03",
+        "bio-g7-b08-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Xác định các nhận định sau về khí khổng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Khí khổng gồm hai tế bào hình hạt đậu.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Khí khổng là nơi khí carbon dioxide, oxygen và hơi nước đi vào, đi ra.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Khí khổng chỉ có ở rễ cây.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ban ngày, khi quang hợp mạnh, lá cây chủ yếu lấy vào khí nào qua khí khổng?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Oxygen"
+              },
+              {
+                "id": "b",
+                "label": "Carbon dioxide"
+              },
+              {
+                "id": "c",
+                "label": "Nitrogen"
+              },
+              {
+                "id": "d",
+                "label": "Hydrogen"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Phân loại sự trao đổi khí của cây vào ban ngày.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Khí đi vào lá nhiều hơn"
+              },
+              {
+                "id": "b2",
+                "label": "Khí đi ra khỏi lá nhiều hơn"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Carbon dioxide",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Oxygen",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i3",
+                "label": "Hơi nước",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Các khí trao đổi qua khí khổng theo cơ chế nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Được bơm bằng năng lượng"
+              },
+              {
+                "id": "b",
+                "label": "Khuếch tán từ nơi có nồng độ cao đến nơi có nồng độ thấp"
+              },
+              {
+                "id": "c",
+                "label": "Theo trọng lực"
+              },
+              {
+                "id": "d",
+                "label": "Ngẫu nhiên không quy luật"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dong-vat",
+      "title": "Trao đổi khí ở động vật",
+      "fromExercises": [
+        "bio-g7-b08-q04",
+        "bio-g7-b08-q05",
+        "bio-g7-b08-q06",
+        "bio-g7-b08-q07"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép động vật với cơ quan trao đổi khí.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Cá chép",
+                "right": "Mang"
+              },
+              {
+                "left": "Châu chấu",
+                "right": "Hệ thống ống khí"
+              },
+              {
+                "left": "Chim bồ câu",
+                "right": "Phổi"
+              },
+              {
+                "left": "Giun đất",
+                "right": "Bề mặt da"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Ở người, trao đổi khí diễn ra ở phế nang của phổi.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Máu nhận oxygen ở phổi và thải carbon dioxide ra ngoài.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Cá trao đổi khí bằng phổi khi ở dưới nước.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Sắp xếp đường đi của không khí khi hít vào ở người.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Mũi",
+              "Họng",
+              "Khí quản",
+              "Phế quản",
+              "Phổi"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vì sao khi tập thể dục ta thở nhanh và sâu hơn?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì không khí loãng"
+              },
+              {
+                "id": "b",
+                "label": "Vì cơ thể cần nhiều oxygen và thải nhiều carbon dioxide hơn"
+              },
+              {
+                "id": "c",
+                "label": "Vì phổi bị nhỏ lại"
+              },
+              {
+                "id": "d",
+                "label": "Vì tim ngừng đập"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

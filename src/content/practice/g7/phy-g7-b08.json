@@ -1,0 +1,236 @@
+{
+  "lessonId": "phy-g7-b08",
+  "units": [
+    {
+      "id": "nguon-sang-tia",
+      "title": "Ánh sáng, tia sáng và chùm sáng",
+      "fromExercises": [
+        "phy-g7-b08-mcq-001",
+        "phy-g7-b08-mcq-002",
+        "phy-g7-b08-mcq-003",
+        "phy-g7-b08-mcq-004"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Vật nào sau đây KHÔNG phải là nguồn sáng?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Mặt Trời"
+              },
+              {
+                "id": "b",
+                "label": "Ngọn nến đang cháy"
+              },
+              {
+                "id": "c",
+                "label": "Bóng đèn đang sáng"
+              },
+              {
+                "id": "d",
+                "label": "Mặt Trăng"
+              }
+            ],
+            "correctId": "d"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ghép loại chùm sáng với đặc điểm.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Chùm sáng song song",
+                "right": "Các tia sáng không giao nhau"
+              },
+              {
+                "left": "Chùm sáng hội tụ",
+                "right": "Các tia sáng gặp nhau tại một điểm"
+              },
+              {
+                "left": "Chùm sáng phân kì",
+                "right": "Các tia sáng loe rộng ra"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về năng lượng ánh sáng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Ánh sáng mang năng lượng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Pin mặt trời chuyển năng lượng ánh sáng thành điện năng.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Ánh sáng truyền theo đường cong trong không khí đồng tính.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Ta nhìn thấy một vật khi nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Khi mắt phát ra ánh sáng chiếu vào vật"
+              },
+              {
+                "id": "b",
+                "label": "Khi có ánh sáng từ vật truyền vào mắt"
+              },
+              {
+                "id": "c",
+                "label": "Khi vật ở trong bóng tối"
+              },
+              {
+                "id": "d",
+                "label": "Khi nhắm mắt lại"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vung-toi",
+      "title": "Vùng tối và vùng nửa tối",
+      "fromExercises": [
+        "phy-g7-b08-mcq-005",
+        "phy-g7-b08-mcq-006",
+        "phy-g7-b08-tf-007",
+        "phy-g7-b08-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Vùng tối ở sau vật cản là vùng như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Không nhận được ánh sáng từ nguồn sáng"
+              },
+              {
+                "id": "b",
+                "label": "Nhận được toàn bộ ánh sáng"
+              },
+              {
+                "id": "c",
+                "label": "Nhận được một phần ánh sáng"
+              },
+              {
+                "id": "d",
+                "label": "Sáng hơn xung quanh"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Vùng nửa tối là vùng như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Không nhận được ánh sáng"
+              },
+              {
+                "id": "b",
+                "label": "Chỉ nhận được một phần ánh sáng từ nguồn sáng rộng"
+              },
+              {
+                "id": "c",
+                "label": "Nhận toàn bộ ánh sáng"
+              },
+              {
+                "id": "d",
+                "label": "Ở trước nguồn sáng"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Nguyệt thực xảy ra khi nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Mặt Trăng nằm giữa Mặt Trời và Trái Đất"
+              },
+              {
+                "id": "b",
+                "label": "Trái Đất nằm giữa Mặt Trời và Mặt Trăng"
+              },
+              {
+                "id": "c",
+                "label": "Mặt Trời nằm giữa Trái Đất và Mặt Trăng"
+              },
+              {
+                "id": "d",
+                "label": "Trời nhiều mây"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về bóng tối là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Bóng tối được tạo ra vì ánh sáng truyền thẳng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nguồn sáng nhỏ (gần như một điểm) chỉ tạo ra vùng tối rõ nét.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Vật cản trong suốt tạo ra vùng tối đậm.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

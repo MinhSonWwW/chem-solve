@@ -1,0 +1,160 @@
+{
+  "lessonId": "phy-g8-b01",
+  "units": [
+    {
+      "id": "khai-niem-klr",
+      "title": "Khối lượng riêng là gì",
+      "fromExercises": [
+        "phy-g8-b01-mcq-001",
+        "phy-g8-b01-mcq-002",
+        "phy-g8-b01-mcq-003",
+        "phy-g8-b01-tf-007",
+        "phy-g8-b01-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Khối lượng riêng của nước khoảng bao nhiêu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "100 kg/m³"
+              },
+              {
+                "id": "b",
+                "label": "1000 kg/m³"
+              },
+              {
+                "id": "c",
+                "label": "7800 kg/m³"
+              },
+              {
+                "id": "d",
+                "label": "10 kg/m³"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Hai vật cùng thể tích, vật nào có khối lượng lớn hơn?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vật có khối lượng riêng lớn hơn"
+              },
+              {
+                "id": "b",
+                "label": "Vật có khối lượng riêng nhỏ hơn"
+              },
+              {
+                "id": "c",
+                "label": "Hai vật bằng nhau"
+              },
+              {
+                "id": "d",
+                "label": "Không xác định được"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Phân loại các chất theo khối lượng riêng so với nước.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Lớn hơn nước"
+              },
+              {
+                "id": "b2",
+                "label": "Nhỏ hơn nước"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Sắt",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Đồng",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Nhôm",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Dầu ăn",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Gỗ khô",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Xốp",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "tinh-klr",
+      "title": "Tính khối lượng riêng, khối lượng, thể tích",
+      "fromExercises": [
+        "phy-g8-b01-num-004",
+        "phy-g8-b01-num-005",
+        "phy-g8-b01-num-006"
+      ],
+      "generator": "density",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Một vật có khối lượng 270 g, thể tích 100 cm³. Khối lượng riêng của vật là bao nhiêu g/cm³?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 2.7,
+            "unit": "g/cm³",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Đổi 2,7 g/cm³ sang đơn vị kg/m³.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 2700,
+            "unit": "kg/m³",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

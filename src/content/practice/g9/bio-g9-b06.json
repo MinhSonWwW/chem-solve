@@ -1,0 +1,270 @@
+{
+  "lessonId": "bio-g9-b06",
+  "units": [
+    {
+      "id": "dot-bien-gen",
+      "title": "Đột biến gene",
+      "fromExercises": [
+        "bio-g9-b06-q01",
+        "bio-g9-b06-q02",
+        "bio-g9-b06-q03",
+        "bio-g9-b06-q04",
+        "bio-g9-b06-q05"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các dạng đột biến điểm.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Mất một cặp nucleotide"
+              },
+              {
+                "id": "b2",
+                "label": "Thêm một cặp nucleotide"
+              },
+              {
+                "id": "b3",
+                "label": "Thay thế một cặp nucleotide"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Gene mất đi một cặp A – T",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Gene có thêm một cặp G – C",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i3",
+                "label": "Cặp A – T được thay bằng cặp G – C",
+                "bucketId": "b3"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về đột biến gene là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Đột biến gene là biến đổi trong cấu trúc của gene.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Đột biến gene có thể có hại, có lợi hoặc trung tính.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Đột biến gene luôn có lợi cho sinh vật.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Đột biến gene có thể di truyền cho đời sau khi xảy ra ở loại tế bào nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tế bào da"
+              },
+              {
+                "id": "b",
+                "label": "Tế bào sinh dục (giao tử)"
+              },
+              {
+                "id": "c",
+                "label": "Tế bào cơ"
+              },
+              {
+                "id": "d",
+                "label": "Tế bào máu"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tac-nhan",
+      "title": "Tác nhân và vai trò của đột biến",
+      "fromExercises": [
+        "bio-g9-b06-q06",
+        "bio-g9-b06-q07",
+        "bio-g9-b06-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các tác nhân gây đột biến.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Tác nhân vật lí"
+              },
+              {
+                "id": "b2",
+                "label": "Tác nhân hóa học"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Tia X",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Tia tử ngoại",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Một số thuốc trừ sâu",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Chất độc dioxin",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về tác nhân và vai trò của đột biến là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Đột biến cung cấp nguyên liệu cho chọn giống và tiến hóa.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Bệnh hồng cầu hình liềm do đột biến gene gây ra.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Mọi đột biến đều nhìn thấy được bằng mắt thường.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Những biện pháp nào giúp hạn chế tác nhân gây đột biến có hại?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hạn chế tiếp xúc với hóa chất độc hại"
+              },
+              {
+                "id": "b",
+                "label": "Sử dụng thuốc bảo vệ thực vật đúng hướng dẫn"
+              },
+              {
+                "id": "c",
+                "label": "Tắm nắng gắt nhiều giờ"
+              },
+              {
+                "id": "d",
+                "label": "Bảo vệ môi trường sống"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Trong chọn giống, người ta có thể gây đột biến nhằm mục đích gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tạo nguồn biến dị để chọn ra giống tốt"
+              },
+              {
+                "id": "b",
+                "label": "Làm giống xấu đi"
+              },
+              {
+                "id": "c",
+                "label": "Tiêu diệt cây trồng"
+              },
+              {
+                "id": "d",
+                "label": "Không có mục đích"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Đột biến gene là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Những biến đổi trong cấu trúc của gene"
+              },
+              {
+                "id": "b",
+                "label": "Sự thay đổi kiểu hình do môi trường"
+              },
+              {
+                "id": "c",
+                "label": "Sự tăng số lượng nhiễm sắc thể"
+              },
+              {
+                "id": "d",
+                "label": "Sự phân chia tế bào"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    }
+  ]
+}

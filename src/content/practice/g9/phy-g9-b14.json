@@ -1,0 +1,171 @@
+{
+  "lessonId": "phy-g9-b14",
+  "units": [
+    {
+      "id": "tac-dung-xc",
+      "title": "Tác dụng của dòng điện xoay chiều",
+      "fromExercises": [
+        "phy-g9-b14-mcq-001",
+        "phy-g9-b14-mcq-002",
+        "phy-g9-b14-mcq-003"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép thiết bị với tác dụng của dòng điện xoay chiều.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Bàn là, nồi cơm điện",
+                "right": "Tác dụng nhiệt"
+              },
+              {
+                "left": "Bóng đèn",
+                "right": "Tác dụng phát sáng"
+              },
+              {
+                "left": "Quạt điện, máy bơm",
+                "right": "Tác dụng từ"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về tác dụng của dòng điện xoay chiều là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Máy biến thế chỉ hoạt động với dòng điện xoay chiều.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Truyền tải điện đi xa cần tăng hiệu điện thế để giảm hao phí.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Máy biến thế làm thay đổi được hiệu điện thế của pin.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Vì sao truyền tải điện năng đi xa cần dùng hiệu điện thế cao?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để điện đi nhanh hơn"
+              },
+              {
+                "id": "b",
+                "label": "Để giảm hao phí điện năng trên đường dây"
+              },
+              {
+                "id": "c",
+                "label": "Để tăng cường độ dòng điện"
+              },
+              {
+                "id": "d",
+                "label": "Để dây dẫn mát hơn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Máy hạ thế có số vòng cuộn thứ cấp thế nào so với cuộn sơ cấp?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nhiều hơn"
+              },
+              {
+                "id": "b",
+                "label": "Ít hơn"
+              },
+              {
+                "id": "c",
+                "label": "Bằng nhau"
+              },
+              {
+                "id": "d",
+                "label": "Không có cuộn thứ cấp"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Củ sạc điện thoại có chức năng chính nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tăng hiệu điện thế"
+              },
+              {
+                "id": "b",
+                "label": "Hạ hiệu điện thế và chuyển thành dòng điện phù hợp cho pin"
+              },
+              {
+                "id": "c",
+                "label": "Tạo ra dòng điện mới"
+              },
+              {
+                "id": "d",
+                "label": "Đo dòng điện"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "may-bien-the",
+      "title": "Tính toán máy biến thế",
+      "fromExercises": [
+        "phy-g9-b14-num-004",
+        "phy-g9-b14-num-005",
+        "phy-g9-b14-num-006",
+        "phy-g9-b14-num-007",
+        "phy-g9-b14-num-008"
+      ],
+      "generator": "transformer",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Máy biến thế có N₁ = 1000 vòng, N₂ = 50 vòng, U₁ = 220 V. Tính U₂ (V).",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 11,
+            "unit": "V",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

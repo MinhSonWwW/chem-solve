@@ -1,0 +1,227 @@
+{
+  "lessonId": "bio-g8-b02",
+  "units": [
+    {
+      "id": "xuong-khop",
+      "title": "Bộ xương và khớp xương",
+      "fromExercises": [
+        "bio-g8-b02-q01",
+        "bio-g8-b02-q02",
+        "bio-g8-b02-q03",
+        "bio-g8-b02-q04"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép loại khớp với ví dụ.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Khớp động",
+                "right": "Khớp đầu gối"
+              },
+              {
+                "left": "Khớp bán động",
+                "right": "Khớp giữa các đốt sống"
+              },
+              {
+                "left": "Khớp bất động",
+                "right": "Khớp giữa các xương hộp sọ"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Bộ xương người có vai trò gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nâng đỡ, bảo vệ cơ quan và là chỗ bám cho cơ"
+              },
+              {
+                "id": "b",
+                "label": "Tiêu hóa thức ăn"
+              },
+              {
+                "id": "c",
+                "label": "Lọc máu"
+              },
+              {
+                "id": "d",
+                "label": "Trao đổi khí"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về bộ xương và khớp xương là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Xương dài ra nhờ sụn tăng trưởng ở hai đầu xương.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Xương của người già giòn, dễ gãy hơn của trẻ em.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Xương không chứa chất khoáng.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Chất khoáng nào làm xương cứng chắc?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sắt"
+              },
+              {
+                "id": "b",
+                "label": "Calcium"
+              },
+              {
+                "id": "c",
+                "label": "Iodine"
+              },
+              {
+                "id": "d",
+                "label": "Kẽm"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "co-ve-sinh",
+      "title": "Hệ cơ và bảo vệ hệ vận động",
+      "fromExercises": [
+        "bio-g8-b02-q05",
+        "bio-g8-b02-q06",
+        "bio-g8-b02-q07",
+        "bio-g8-b02-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Những thói quen nào giúp hệ vận động khỏe mạnh?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ngồi học đúng tư thế"
+              },
+              {
+                "id": "b",
+                "label": "Tập thể dục đều đặn"
+              },
+              {
+                "id": "c",
+                "label": "Ăn đủ chất, nhất là calcium"
+              },
+              {
+                "id": "d",
+                "label": "Mang cặp quá nặng lệch một bên"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Vì sao cơ bị mỏi khi làm việc quá sức?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì cơ được nghỉ ngơi"
+              },
+              {
+                "id": "b",
+                "label": "Vì cơ thiếu oxygen, tích tụ lactic acid"
+              },
+              {
+                "id": "c",
+                "label": "Vì cơ quá khỏe"
+              },
+              {
+                "id": "d",
+                "label": "Vì xương bị gãy"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về hệ cơ và bảo vệ hệ vận động là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Cơ co làm xương cử động.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Khi bị gãy xương, cần cố định chỗ gãy bằng nẹp trước khi đưa đi viện.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Nên nắn lại xương gãy ngay tại chỗ cho thẳng.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Sắp xếp các bước sơ cứu khi bị gãy xương cẳng tay.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Đặt nạn nhân nằm yên, không di chuyển chỗ gãy",
+              "Đặt nẹp đỡ hai bên chỗ xương gãy",
+              "Buộc cố định nẹp bằng băng",
+              "Đưa nạn nhân đến cơ sở y tế"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "lessonId": "g9-b27",
+  "units": [
+    {
+      "id": "acetic-acid",
+      "title": "Acetic acid",
+      "fromExercises": [
+        "g9-b27-formula-001",
+        "g9-b27-tf-001",
+        "g9-b27-mcq-001",
+        "g9-b27-mcq-002",
+        "g9-b27-match-001",
+        "g9-b27-ord-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Giấm ăn là dung dịch acetic acid có nồng độ khoảng bao nhiêu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "50% – 60%"
+              },
+              {
+                "id": "b",
+                "label": "2% – 5%"
+              },
+              {
+                "id": "c",
+                "label": "90% – 100%"
+              },
+              {
+                "id": "d",
+                "label": "20% – 30%"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Acetic acid tác dụng được với những chất nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Kim loại magnesium"
+              },
+              {
+                "id": "b",
+                "label": "Dung dịch sodium hydroxide"
+              },
+              {
+                "id": "c",
+                "label": "Đá vôi (CaCO3)"
+              },
+              {
+                "id": "d",
+                "label": "Kim loại đồng"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Sản phẩm của phản ứng giữa acetic acid và ethylic alcohol (có H2SO4 đặc, đun nóng) là gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Methane"
+              },
+              {
+                "id": "b",
+                "label": "Ethyl acetate và nước"
+              },
+              {
+                "id": "c",
+                "label": "Ethylene"
+              },
+              {
+                "id": "d",
+                "label": "Glucose"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

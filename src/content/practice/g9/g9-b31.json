@@ -1,0 +1,124 @@
+{
+  "lessonId": "g9-b31",
+  "units": [
+    {
+      "id": "protein",
+      "title": "Protein",
+      "fromExercises": [
+        "g9-b31-mcq-001",
+        "g9-b31-mcq-002",
+        "g9-b31-mcq-003",
+        "g9-b31-tf-001",
+        "g9-b31-match-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Protein có nhiều trong nhóm thực phẩm nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Rau xanh"
+              },
+              {
+                "id": "b",
+                "label": "Thịt, cá, trứng, đậu"
+              },
+              {
+                "id": "c",
+                "label": "Đường, mật ong"
+              },
+              {
+                "id": "d",
+                "label": "Dầu ăn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Đốt tóc, lông gà có mùi khét đặc trưng chứng tỏ chúng chứa chất nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tinh bột"
+              },
+              {
+                "id": "b",
+                "label": "Protein"
+              },
+              {
+                "id": "c",
+                "label": "Chất béo"
+              },
+              {
+                "id": "d",
+                "label": "Glucose"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về protein là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Protein bị đông tụ khi đun nóng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Thủy phân protein tạo ra các amino acid.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Protein chỉ gồm hai nguyên tố C và H.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Khi nấu canh cua, có hiện tượng riêu cua nổi lên vì sao?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì cua nhẹ"
+              },
+              {
+                "id": "b",
+                "label": "Vì protein bị đông tụ khi đun nóng"
+              },
+              {
+                "id": "c",
+                "label": "Vì nước bay hơi"
+              },
+              {
+                "id": "d",
+                "label": "Vì có dầu mỡ"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

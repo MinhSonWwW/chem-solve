@@ -1,0 +1,240 @@
+{
+  "lessonId": "bio-g7-b17",
+  "units": [
+    {
+      "id": "thuc-vat",
+      "title": "Ứng dụng trong trồng trọt",
+      "fromExercises": [
+        "bio-g7-b17-q01",
+        "bio-g7-b17-q02",
+        "bio-g7-b17-q07",
+        "bio-g7-b17-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép biện pháp với mục đích.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Bấm ngọn cây rau, cây ăn quả",
+                "right": "Cây ra nhiều nhánh, nhiều quả"
+              },
+              {
+                "left": "Tỉa cành cây lấy gỗ",
+                "right": "Thân cao, thẳng, ít mấu"
+              },
+              {
+                "left": "Che phủ ni lông cho mạ khi rét",
+                "right": "Giữ ấm, giúp mạ sinh trưởng"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về chăm sóc cây trồng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Gieo trồng đúng thời vụ giúp cây sinh trưởng tốt.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Bón phân càng nhiều thì cây càng tốt, không giới hạn.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Tưới nước hợp lí giúp cây sinh trưởng, phát triển.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Vì sao cần bón phân và tưới nước đúng lúc cho cây?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để cây chậm lớn"
+              },
+              {
+                "id": "b",
+                "label": "Để cung cấp đủ chất dinh dưỡng và nước cho cây sinh trưởng"
+              },
+              {
+                "id": "c",
+                "label": "Để đất cứng hơn"
+              },
+              {
+                "id": "d",
+                "label": "Để diệt cỏ"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Nhiệt độ quá thấp ảnh hưởng thế nào đến cây non?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cây lớn nhanh hơn"
+              },
+              {
+                "id": "b",
+                "label": "Cây sinh trưởng chậm, có thể chết rét"
+              },
+              {
+                "id": "c",
+                "label": "Cây ra hoa sớm"
+              },
+              {
+                "id": "d",
+                "label": "Không ảnh hưởng"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dong-vat-sau-hai",
+      "title": "Ứng dụng trong chăn nuôi và phòng trừ sâu hại",
+      "fromExercises": [
+        "bio-g7-b17-q03",
+        "bio-g7-b17-q04",
+        "bio-g7-b17-q05",
+        "bio-g7-b17-q06"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Những biện pháp nào phòng chống muỗi truyền bệnh hiệu quả?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đậy kín các dụng cụ chứa nước"
+              },
+              {
+                "id": "b",
+                "label": "Diệt bọ gậy (ấu trùng muỗi)"
+              },
+              {
+                "id": "c",
+                "label": "Ngủ màn"
+              },
+              {
+                "id": "d",
+                "label": "Để nước đọng trong lốp xe cũ"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về chăn nuôi và phòng trừ sâu hại là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Diệt sâu hại ở giai đoạn sâu non giúp giảm thiệt hại cho cây trồng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Vật nuôi cần chế độ ăn phù hợp với từng giai đoạn phát triển.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Chuồng nuôi không cần thoáng mát, sạch sẽ.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Giai đoạn nào trong vòng đời của bướm gây hại nhiều nhất cho cây trồng?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Trứng"
+              },
+              {
+                "id": "b",
+                "label": "Sâu"
+              },
+              {
+                "id": "c",
+                "label": "Nhộng"
+              },
+              {
+                "id": "d",
+                "label": "Bướm"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vì sao chuồng nuôi gà cần đủ ấm cho gà con?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để gà con béo"
+              },
+              {
+                "id": "b",
+                "label": "Vì gà con chịu lạnh kém, cần nhiệt độ thích hợp để sinh trưởng"
+              },
+              {
+                "id": "c",
+                "label": "Để gà đẻ trứng"
+              },
+              {
+                "id": "d",
+                "label": "Không cần thiết"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

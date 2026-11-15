@@ -1,0 +1,198 @@
+{
+  "lessonId": "bio-g9-b02",
+  "units": [
+    {
+      "id": "phan-li",
+      "title": "Lai một cặp tính trạng",
+      "fromExercises": [
+        "bio-g9-b02-q01",
+        "bio-g9-b02-q02",
+        "bio-g9-b02-q05",
+        "bio-g9-b02-q07"
+      ],
+      "generator": "mendel",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Lai hai bố mẹ thuần chủng khác nhau một cặp tính trạng, F1 có đặc điểm gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Phân li 3 : 1"
+              },
+              {
+                "id": "b",
+                "label": "Đồng tính, mang tính trạng trội"
+              },
+              {
+                "id": "c",
+                "label": "Phân li 1 : 1"
+              },
+              {
+                "id": "d",
+                "label": "Mang tính trạng lặn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "F2 trong thí nghiệm lai một cặp tính trạng của Mendel có tỉ lệ kiểu hình nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "1 : 1"
+              },
+              {
+                "id": "b",
+                "label": "3 trội : 1 lặn"
+              },
+              {
+                "id": "c",
+                "label": "1 : 2 : 1"
+              },
+              {
+                "id": "d",
+                "label": "9 : 3 : 3 : 1"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về lai một cặp tính trạng là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Phép lai phân tích là lai cá thể mang tính trạng trội với cá thể mang tính trạng lặn.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Aa × aa cho tỉ lệ kiểu hình 1 : 1.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "AA × aa cho F1 phân li 3 : 1.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "doc-lap",
+      "title": "Lai hai cặp tính trạng",
+      "fromExercises": [
+        "bio-g9-b02-q03",
+        "bio-g9-b02-q04",
+        "bio-g9-b02-q06",
+        "bio-g9-b02-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Tỉ lệ kiểu hình ở F2 khi lai hai cặp tính trạng (phân li độc lập) là bao nhiêu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "3 : 1"
+              },
+              {
+                "id": "b",
+                "label": "1 : 1"
+              },
+              {
+                "id": "c",
+                "label": "9 : 3 : 3 : 1"
+              },
+              {
+                "id": "d",
+                "label": "1 : 2 : 1"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Cơ thể AaBb (các gene phân li độc lập) tạo ra bao nhiêu loại giao tử?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 4,
+            "unit": "loại"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về lai hai cặp tính trạng là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Phân li độc lập tạo ra nhiều biến dị tổ hợp.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Cơ thể AABB chỉ tạo một loại giao tử AB.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Cơ thể AaBb tạo ra 2 loại giao tử.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Biến dị tổ hợp có ý nghĩa gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Là nguồn nguyên liệu cho chọn giống và tiến hóa"
+              },
+              {
+                "id": "b",
+                "label": "Không có ý nghĩa"
+              },
+              {
+                "id": "c",
+                "label": "Làm sinh vật kém thích nghi"
+              },
+              {
+                "id": "d",
+                "label": "Chỉ có ở vi khuẩn"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    }
+  ]
+}

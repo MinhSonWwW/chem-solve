@@ -1,0 +1,259 @@
+{
+  "lessonId": "bio-g8-b16",
+  "units": [
+    {
+      "id": "khu-tren-can",
+      "title": "Sinh quyển và các khu sinh học trên cạn",
+      "fromExercises": [
+        "bio-g8-b16-q01",
+        "bio-g8-b16-q02",
+        "bio-g8-b16-q03",
+        "bio-g8-b16-q04",
+        "bio-g8-b16-q05",
+        "bio-g8-b16-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép khu sinh học với đặc điểm.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Rừng mưa nhiệt đới",
+                "right": "Nóng ẩm quanh năm, đa dạng loài cao nhất"
+              },
+              {
+                "left": "Hoang mạc",
+                "right": "Khô hạn, thực vật có lá biến thành gai"
+              },
+              {
+                "left": "Đồng rêu đới lạnh",
+                "right": "Lạnh giá, cây thấp như rêu, địa y"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về sinh quyển và các khu sinh học trên cạn là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Sinh quyển gồm toàn bộ sinh vật và môi trường sống của chúng trên Trái Đất.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Cây xương rồng có lá biến thành gai giúp giảm thoát hơi nước.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Sinh quyển chỉ gồm các sinh vật trên cạn.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "duoi-nuoc",
+      "title": "Các khu sinh học dưới nước",
+      "fromExercises": [
+        "bio-g8-b16-q06",
+        "bio-g8-b16-q07"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các khu sinh học dưới nước.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Nước ngọt"
+              },
+              {
+                "id": "b2",
+                "label": "Nước mặn"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Sông",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Hồ",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Ao",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Biển ven bờ",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Rạn san hô",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Biển khơi",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Rạn san hô quan trọng vì sao?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì ít sinh vật sống"
+              },
+              {
+                "id": "b",
+                "label": "Vì là nơi sống của rất nhiều loài sinh vật biển"
+              },
+              {
+                "id": "c",
+                "label": "Vì nước rất lạnh"
+              },
+              {
+                "id": "d",
+                "label": "Vì không có ánh sáng"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về các khu sinh học dưới nước là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Nước thải chưa xử lí có thể làm ô nhiễm sông, hồ.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Biển là khu sinh học có diện tích lớn nhất Trái Đất.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Rạn san hô chỉ có ở vùng nước ngọt.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Rừng ngập mặn ven biển có vai trò gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chắn sóng, bảo vệ bờ biển và là nơi sống của nhiều loài"
+              },
+              {
+                "id": "b",
+                "label": "Làm nước biển ngọt hơn"
+              },
+              {
+                "id": "c",
+                "label": "Không có vai trò"
+              },
+              {
+                "id": "d",
+                "label": "Gây ô nhiễm"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Hồ thuộc khu sinh học nước ngọt nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nước chảy"
+              },
+              {
+                "id": "b",
+                "label": "Nước đứng"
+              },
+              {
+                "id": "c",
+                "label": "Nước mặn"
+              },
+              {
+                "id": "d",
+                "label": "Nước lợ"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Hành động nào giúp bảo vệ các khu sinh học dưới nước?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Xả rác xuống sông"
+              },
+              {
+                "id": "b",
+                "label": "Không đánh bắt cá bằng chất nổ, xung điện"
+              },
+              {
+                "id": "c",
+                "label": "Khai thác san hô làm cảnh"
+              },
+              {
+                "id": "d",
+                "label": "Đổ dầu thải ra biển"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

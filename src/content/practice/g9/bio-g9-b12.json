@@ -1,0 +1,210 @@
+{
+  "lessonId": "bio-g9-b12",
+  "units": [
+    {
+      "id": "phuong-phap",
+      "title": "Phương pháp nghiên cứu di truyền người",
+      "fromExercises": [
+        "bio-g9-b12-q01",
+        "bio-g9-b12-q02",
+        "bio-g9-b12-q03",
+        "bio-g9-b12-match-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép phương pháp với mục đích.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Nghiên cứu phả hệ",
+                "right": "Theo dõi sự di truyền một tính trạng qua nhiều thế hệ trong một dòng họ"
+              },
+              {
+                "left": "Nghiên cứu trẻ đồng sinh",
+                "right": "Xác định vai trò của kiểu gene và môi trường"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về phương pháp nghiên cứu di truyền người là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Trẻ đồng sinh cùng trứng có cùng kiểu gene.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Trẻ đồng sinh khác trứng có thể khác giới tính.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Có thể làm thí nghiệm lai trên người như trên đậu Hà Lan.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Vì sao không thể áp dụng phương pháp lai để nghiên cứu di truyền người?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì lí do đạo đức và xã hội, người sinh sản chậm, ít con"
+              },
+              {
+                "id": "b",
+                "label": "Vì người không có gene"
+              },
+              {
+                "id": "c",
+                "label": "Vì người không sinh sản"
+              },
+              {
+                "id": "d",
+                "label": "Vì quá dễ"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Tính trạng nào chủ yếu do kiểu gene quyết định, ít chịu ảnh hưởng của môi trường?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cân nặng"
+              },
+              {
+                "id": "b",
+                "label": "Nhóm máu"
+              },
+              {
+                "id": "c",
+                "label": "Chiều cao"
+              },
+              {
+                "id": "d",
+                "label": "Màu da khi phơi nắng"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "benh-di-truyen",
+      "title": "Bệnh di truyền và phòng ngừa",
+      "fromExercises": [
+        "bio-g9-b12-q04",
+        "bio-g9-b12-q05",
+        "bio-g9-b12-q06",
+        "bio-g9-b12-q07",
+        "bio-g9-b12-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Những biện pháp nào góp phần hạn chế bệnh, tật di truyền?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Không kết hôn gần huyết thống"
+              },
+              {
+                "id": "b",
+                "label": "Tư vấn di truyền trước khi sinh con"
+              },
+              {
+                "id": "c",
+                "label": "Bảo vệ môi trường, hạn chế chất độc hại"
+              },
+              {
+                "id": "d",
+                "label": "Sinh con khi tuổi đã quá cao"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về bệnh di truyền và phòng ngừa là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Kết hôn gần huyết thống làm tăng nguy cơ con mắc bệnh di truyền.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Bệnh mù màu ở người liên quan đến nhiễm sắc thể giới tính X.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Bệnh di truyền có thể lây qua tiếp xúc thông thường.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Tư vấn di truyền có vai trò gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Giúp dự đoán khả năng con mắc bệnh di truyền và đưa ra lời khuyên"
+              },
+              {
+                "id": "b",
+                "label": "Chữa khỏi mọi bệnh"
+              },
+              {
+                "id": "c",
+                "label": "Thay đổi gene"
+              },
+              {
+                "id": "d",
+                "label": "Xác định giới tính thai nhi"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    }
+  ]
+}

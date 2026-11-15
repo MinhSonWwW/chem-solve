@@ -1,0 +1,154 @@
+{
+  "lessonId": "phy-g9-b12",
+  "units": [
+    {
+      "id": "cong-suat-dien",
+      "title": "Công suất điện và số chỉ công tơ",
+      "fromExercises": [
+        "phy-g9-b12-mcq-001",
+        "phy-g9-b12-mcq-002",
+        "phy-g9-b12-mcq-003",
+        "phy-g9-b12-match-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Trên bóng đèn ghi 220 V – 60 W. Con số 60 W cho biết điều gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hiệu điện thế định mức"
+              },
+              {
+                "id": "b",
+                "label": "Công suất định mức khi đèn hoạt động bình thường"
+              },
+              {
+                "id": "c",
+                "label": "Cường độ dòng điện"
+              },
+              {
+                "id": "d",
+                "label": "Điện trở của đèn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về công suất điện và số chỉ công tơ là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Một số điện (1 kW·h) bằng 3 600 000 J.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Công tơ điện đo điện năng tiêu thụ.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Thiết bị có công suất càng lớn thì càng tiết kiệm điện.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Những cách nào giúp tiết kiệm điện năng?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tắt thiết bị khi không dùng"
+              },
+              {
+                "id": "b",
+                "label": "Dùng thiết bị có nhãn năng lượng nhiều sao"
+              },
+              {
+                "id": "c",
+                "label": "Để tủ lạnh mở cửa lâu"
+              },
+              {
+                "id": "d",
+                "label": "Dùng đèn LED thay đèn sợi đốt"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "d"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Công thức tính điện năng tiêu thụ là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "A = U : I"
+              },
+              {
+                "id": "b",
+                "label": "A = P × t"
+              },
+              {
+                "id": "c",
+                "label": "A = P : t"
+              },
+              {
+                "id": "d",
+                "label": "A = U × R"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tinh-dien-nang",
+      "title": "Tính công suất và điện năng",
+      "fromExercises": [
+        "phy-g9-b12-num-004",
+        "phy-g9-b12-num-005",
+        "phy-g9-b12-num-006",
+        "phy-g9-b12-num-007",
+        "phy-g9-b12-num-008"
+      ],
+      "generator": "electric-power",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Một bóng đèn 40 W bật 5 giờ. Điện năng tiêu thụ là bao nhiêu kW·h?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 0.2,
+            "unit": "kWh",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

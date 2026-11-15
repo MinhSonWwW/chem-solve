@@ -1,0 +1,181 @@
+{
+  "lessonId": "phy-g9-b06",
+  "units": [
+    {
+      "id": "lang-kinh",
+      "title": "Đường truyền ánh sáng qua lăng kính",
+      "fromExercises": [
+        "phy-g9-b06-mcq-001",
+        "phy-g9-b06-mcq-002",
+        "phy-g9-b06-mcq-005",
+        "phy-g9-b06-mcq-008",
+        "phy-g9-b06-sort-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Tia sáng đơn sắc qua lăng kính bị lệch về phía nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Về phía đỉnh lăng kính"
+              },
+              {
+                "id": "b",
+                "label": "Về phía đáy lăng kính"
+              },
+              {
+                "id": "c",
+                "label": "Không lệch"
+              },
+              {
+                "id": "d",
+                "label": "Ngược lại hướng tới"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về đường truyền ánh sáng qua lăng kính là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Lăng kính là khối chất trong suốt có hai mặt phẳng không song song.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Ánh sáng đơn sắc qua lăng kính không bị tán sắc.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Tia sáng qua lăng kính luôn đi thẳng.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Lăng kính thường làm bằng chất liệu gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Gỗ"
+              },
+              {
+                "id": "b",
+                "label": "Thủy tinh hoặc nhựa trong suốt"
+              },
+              {
+                "id": "c",
+                "label": "Kim loại"
+              },
+              {
+                "id": "d",
+                "label": "Đất sét"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tan-sac",
+      "title": "Tán sắc ánh sáng và màu sắc",
+      "fromExercises": [
+        "phy-g9-b06-mcq-003",
+        "phy-g9-b06-mcq-004",
+        "phy-g9-b06-mcq-006",
+        "phy-g9-b06-mcq-007",
+        "phy-g9-b06-match-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sắp xếp các màu trong dải tán sắc ánh sáng trắng theo thứ tự từ đỏ.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Đỏ",
+              "Cam",
+              "Vàng",
+              "Lục",
+              "Lam",
+              "Chàm",
+              "Tím"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ánh sáng trắng là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ánh sáng chỉ có một màu"
+              },
+              {
+                "id": "b",
+                "label": "Hỗn hợp của nhiều ánh sáng màu"
+              },
+              {
+                "id": "c",
+                "label": "Ánh sáng không màu"
+              },
+              {
+                "id": "d",
+                "label": "Ánh sáng đỏ"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Vì sao lá cây có màu xanh lục?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì lá phát ra ánh sáng xanh"
+              },
+              {
+                "id": "b",
+                "label": "Vì lá phản xạ mạnh ánh sáng xanh lục"
+              },
+              {
+                "id": "c",
+                "label": "Vì lá hấp thụ ánh sáng xanh"
+              },
+              {
+                "id": "d",
+                "label": "Vì lá không có màu"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

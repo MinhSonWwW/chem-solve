@@ -1,0 +1,167 @@
+{
+  "lessonId": "bio-g9-b05",
+  "units": [
+    {
+      "id": "ma-di-truyen",
+      "title": "Mã di truyền",
+      "fromExercises": [
+        "bio-g9-b05-q01",
+        "bio-g9-b05-q02",
+        "bio-g9-b05-q03",
+        "bio-g9-b05-q05",
+        "bio-g9-b05-q06"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Mỗi codon gồm bao nhiêu nucleotide?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 3
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về mã di truyền là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Mã di truyền là mã bộ ba.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Có 64 codon khác nhau.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Mỗi amino acid chỉ được mã hóa bởi một codon duy nhất.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Một mRNA có vùng mã hóa 300 nucleotide (kể cả codon kết thúc). Có bao nhiêu codon?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 100,
+            "unit": "codon"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dich-ma",
+      "title": "Dịch mã và mối quan hệ gene – tính trạng",
+      "fromExercises": [
+        "bio-g9-b05-q04",
+        "bio-g9-b05-q07",
+        "bio-g9-b05-q08",
+        "bio-g9-b05-match-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sắp xếp mối quan hệ từ gene đến tính trạng.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Gene (DNA)",
+              "mRNA",
+              "Protein",
+              "Tính trạng"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về dịch mã và mối quan hệ gene – tính trạng là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Dịch mã diễn ra ở ribosome.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Protein quy định tính trạng của cơ thể.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Dịch mã tạo ra phân tử DNA.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Sản phẩm của quá trình dịch mã là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "DNA"
+              },
+              {
+                "id": "b",
+                "label": "mRNA"
+              },
+              {
+                "id": "c",
+                "label": "Chuỗi polypeptide (protein)"
+              },
+              {
+                "id": "d",
+                "label": "Glucose"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Thứ tự amino acid trong protein được quy định bởi gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Thứ tự các codon trên mRNA"
+              },
+              {
+                "id": "b",
+                "label": "Số lượng tRNA"
+              },
+              {
+                "id": "c",
+                "label": "Kích thước ribosome"
+              },
+              {
+                "id": "d",
+                "label": "Nhiệt độ"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "lessonId": "phy-g8-b02",
+  "units": [
+    {
+      "id": "cach-do",
+      "title": "Cách đo khối lượng riêng",
+      "fromExercises": [
+        "phy-g8-b02-mcq-001",
+        "phy-g8-b02-ord-002",
+        "phy-g8-b02-mcq-006",
+        "phy-g8-b02-tf-007",
+        "phy-g8-b02-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Dụng cụ nào dùng để đo thể tích hòn sỏi?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cân"
+              },
+              {
+                "id": "b",
+                "label": "Bình chia độ"
+              },
+              {
+                "id": "c",
+                "label": "Lực kế"
+              },
+              {
+                "id": "d",
+                "label": "Nhiệt kế"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Muốn đo khối lượng riêng của một vật, cần đo những đại lượng nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chiều dài và thời gian"
+              },
+              {
+                "id": "b",
+                "label": "Khối lượng và thể tích"
+              },
+              {
+                "id": "c",
+                "label": "Nhiệt độ và khối lượng"
+              },
+              {
+                "id": "d",
+                "label": "Lực và diện tích"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về thao tác đo là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Đọc thể tích ở bình chia độ theo mặt thoáng chất lỏng, mắt nhìn ngang.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nên đo nhiều lần và lấy giá trị trung bình.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Thể tích vật bằng mực nước ban đầu trong bình.",
+                "correct": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "xu-ly-so-lieu",
+      "title": "Xử lí số liệu thực hành",
+      "fromExercises": [
+        "phy-g8-b02-num-003",
+        "phy-g8-b02-num-004",
+        "phy-g8-b02-num-005"
+      ],
+      "generator": "density",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Bình chia độ chứa 50 cm³ nước. Thả hòn đá vào, mực nước dâng lên 70 cm³. Thể tích hòn đá là bao nhiêu cm³?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 20,
+            "unit": "cm³",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Hòn đá có khối lượng 52 g, thể tích 20 cm³. Khối lượng riêng của hòn đá là bao nhiêu g/cm³?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 2.6,
+            "unit": "g/cm³",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

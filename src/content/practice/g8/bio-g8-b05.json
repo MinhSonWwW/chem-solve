@@ -1,0 +1,253 @@
+{
+  "lessonId": "bio-g8-b05",
+  "units": [
+    {
+      "id": "duong-dan-khi",
+      "title": "Các cơ quan hô hấp",
+      "fromExercises": [
+        "bio-g8-b05-q01",
+        "bio-g8-b05-q02",
+        "bio-g8-b05-q03",
+        "bio-g8-b05-q04"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Sắp xếp đường đi của không khí khi hít vào.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Mũi",
+              "Họng",
+              "Thanh quản",
+              "Khí quản",
+              "Phế quản",
+              "Phổi"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về các cơ quan hô hấp là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Lông mũi giữ lại bụi trong không khí.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Phổi có rất nhiều phế nang giúp tăng diện tích trao đổi khí.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Thở bằng miệng tốt hơn thở bằng mũi.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Bộ phận nào đậy kín đường hô hấp khi ta nuốt thức ăn?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Khí quản"
+              },
+              {
+                "id": "b",
+                "label": "Nắp thanh quản"
+              },
+              {
+                "id": "c",
+                "label": "Phế quản"
+              },
+              {
+                "id": "d",
+                "label": "Lưỡi"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Khi hít vào, cơ hoành như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Dãn và nâng lên"
+              },
+              {
+                "id": "b",
+                "label": "Co và hạ xuống, làm thể tích lồng ngực tăng"
+              },
+              {
+                "id": "c",
+                "label": "Không hoạt động"
+              },
+              {
+                "id": "d",
+                "label": "Co và nâng lên"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trao-doi-khi",
+      "title": "Trao đổi khí và bảo vệ hệ hô hấp",
+      "fromExercises": [
+        "bio-g8-b05-q05",
+        "bio-g8-b05-q06",
+        "bio-g8-b05-q07",
+        "bio-g8-b05-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các tác nhân theo tác hại với hệ hô hấp.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Gây hại cho hệ hô hấp"
+              },
+              {
+                "id": "b2",
+                "label": "Có lợi cho hệ hô hấp"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Khói thuốc lá",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Bụi mịn",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Khí carbon monoxide",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Trồng nhiều cây xanh",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Tập thở sâu",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Đeo khẩu trang khi trời bụi",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ở phế nang, khí nào khuếch tán từ phế nang vào máu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Oxygen"
+              },
+              {
+                "id": "b",
+                "label": "Carbon dioxide"
+              },
+              {
+                "id": "c",
+                "label": "Nitrogen"
+              },
+              {
+                "id": "d",
+                "label": "Hơi nước"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về trao đổi khí và bảo vệ hệ hô hấp là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Trao đổi khí ở phổi và ở tế bào diễn ra theo cơ chế khuếch tán.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Hút thuốc lá có thể gây ung thư phổi.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Ngồi trong phòng kín có bếp than đang cháy là an toàn.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vì sao không nên đốt than sưởi trong phòng kín?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì than đắt"
+              },
+              {
+                "id": "b",
+                "label": "Vì sinh ra khí CO độc gây ngạt, có thể tử vong"
+              },
+              {
+                "id": "c",
+                "label": "Vì phòng quá sáng"
+              },
+              {
+                "id": "d",
+                "label": "Vì than tắt nhanh"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

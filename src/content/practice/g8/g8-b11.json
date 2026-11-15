@@ -1,0 +1,327 @@
+{
+  "lessonId": "g8-b11",
+  "units": [
+    {
+      "id": "tinh-tan",
+      "title": "Muối và tính tan",
+      "fromExercises": [
+        "g8-b11-tf-001",
+        "g8-b11-sort-004"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Muối được tạo thành khi nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Khi kim loại thay thế hydrogen trong acid hoặc acid tác dụng với base"
+              },
+              {
+                "id": "b",
+                "label": "Khi oxygen kết hợp kim loại"
+              },
+              {
+                "id": "c",
+                "label": "Khi nước bay hơi"
+              },
+              {
+                "id": "d",
+                "label": "Khi đốt nhiên liệu"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Muối ăn có công thức hóa học là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "[[KCl]]"
+              },
+              {
+                "id": "b",
+                "label": "[[NaCl]]"
+              },
+              {
+                "id": "c",
+                "label": "[[CaCO3]]"
+              },
+              {
+                "id": "d",
+                "label": "[[Na2SO4]]"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Phân loại các muối sau theo tính tan trong nước.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Muối tan"
+              },
+              {
+                "id": "b2",
+                "label": "Muối không tan"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "[[NaCl]]",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "[[KNO3]]",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "[[CuSO4]]",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "[[CaCO3]]",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "[[BaSO4]]",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "[[AgCl]]",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Xác định các nhận định sau về muối là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Mọi muối nitrate đều tan trong nước.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Đá vôi là muối tan tốt trong nước.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Muối được gọi tên gồm tên kim loại và tên gốc acid.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Viết công thức hóa học của muối potassium chloride.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "text",
+            "accepted": [
+              "KCl"
+            ],
+            "lenientDiacritics": true
+          }
+        },
+        {
+          "id": "q6",
+          "prompt": "Muối [[CuSO4]] có tên gọi là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Copper chloride"
+              },
+              {
+                "id": "b",
+                "label": "Copper(II) sulfate"
+              },
+              {
+                "id": "c",
+                "label": "Copper nitrate"
+              },
+              {
+                "id": "d",
+                "label": "Copper oxide"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phan-ung-muoi",
+      "title": "Phản ứng của muối",
+      "fromExercises": [
+        "g8-b11-mcq-001",
+        "g8-b11-formula-001",
+        "g8-b11-match-005"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Nhỏ dung dịch [[AgNO3]] vào dung dịch [[NaCl]] thấy có hiện tượng gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Có khí thoát ra"
+              },
+              {
+                "id": "b",
+                "label": "Có kết tủa trắng"
+              },
+              {
+                "id": "c",
+                "label": "Dung dịch chuyển xanh"
+              },
+              {
+                "id": "d",
+                "label": "Không hiện tượng"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Cho đinh sắt vào dung dịch [[CuSO4]], hiện tượng quan sát được là gì?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Không có hiện tượng"
+              },
+              {
+                "id": "b",
+                "label": "Có lớp đồng màu đỏ bám trên đinh sắt, dung dịch nhạt màu xanh"
+              },
+              {
+                "id": "c",
+                "label": "Có khí bay ra"
+              },
+              {
+                "id": "d",
+                "label": "Đinh sắt tan hết ngay"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về phản ứng của muối là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Muối tác dụng với acid có thể tạo muối mới và acid mới.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "[[CaCO3]] tác dụng với [[HCl]] giải phóng khí carbon dioxide.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Muối không bao giờ tác dụng với kim loại.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Phản ứng giữa hai dung dịch muối xảy ra khi nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Luôn luôn xảy ra"
+              },
+              {
+                "id": "b",
+                "label": "Khi tạo ra chất kết tủa"
+              },
+              {
+                "id": "c",
+                "label": "Khi không có chất mới"
+              },
+              {
+                "id": "d",
+                "label": "Khi đun nóng mạnh"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Khí sinh ra khi nhỏ giấm lên đá vôi là khí gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Oxygen"
+              },
+              {
+                "id": "b",
+                "label": "Hydrogen"
+              },
+              {
+                "id": "c",
+                "label": "Carbon dioxide"
+              },
+              {
+                "id": "d",
+                "label": "Nitrogen"
+              }
+            ],
+            "correctId": "c"
+          }
+        }
+      ]
+    }
+  ]
+}

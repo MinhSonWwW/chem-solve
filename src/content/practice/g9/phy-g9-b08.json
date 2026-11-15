@@ -1,0 +1,127 @@
+{
+  "lessonId": "phy-g9-b08",
+  "units": [
+    {
+      "id": "quy-trinh-do",
+      "title": "Quy trình đo tiêu cự",
+      "fromExercises": [
+        "phy-g9-b08-mcq-001",
+        "phy-g9-b08-ord-002",
+        "phy-g9-b08-mcq-003",
+        "phy-g9-b08-mcq-006",
+        "phy-g9-b08-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Xác định các nhận định sau về quy trình đo tiêu cự là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Cần điều chỉnh để thu được ảnh rõ nét trên màn.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Vật, thấu kính và màn cần đặt trên cùng một trục.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Không cần đo khoảng cách từ vật đến thấu kính.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Dụng cụ cần cho bài thực hành đo tiêu cự?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Thấu kính hội tụ"
+              },
+              {
+                "id": "b",
+                "label": "Vật sáng"
+              },
+              {
+                "id": "c",
+                "label": "Màn chắn"
+              },
+              {
+                "id": "d",
+                "label": "Ampe kế"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Nên lặp lại phép đo nhiều lần để làm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để mất thời gian"
+              },
+              {
+                "id": "b",
+                "label": "Để lấy giá trị trung bình, giảm sai số"
+              },
+              {
+                "id": "c",
+                "label": "Để ảnh mờ hơn"
+              },
+              {
+                "id": "d",
+                "label": "Không cần thiết"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "so-lieu",
+      "title": "Tính tiêu cự từ số liệu",
+      "fromExercises": [
+        "phy-g9-b08-num-004",
+        "phy-g9-b08-num-005",
+        "phy-g9-b08-num-007",
+        "phy-g9-b08-match-001"
+      ],
+      "generator": "lens",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Đo được d = 30 cm, d' = 15 cm khi thu được ảnh rõ nét. Tiêu cự của thấu kính là bao nhiêu cm?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 10,
+            "unit": "cm",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

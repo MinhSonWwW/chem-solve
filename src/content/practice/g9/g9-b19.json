@@ -1,0 +1,98 @@
+{
+  "lessonId": "g9-b19",
+  "units": [
+    {
+      "id": "day-hoat-dong",
+      "title": "Dãy hoạt động hóa học",
+      "fromExercises": [
+        "g9-b19-mcq-001",
+        "g9-b19-mcq-002",
+        "g9-b19-ordering-001",
+        "g9-b19-match-002",
+        "g9-b19-sort-003",
+        "g9-b19-ord-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Xác định các nhận định sau về dãy hoạt động hóa học là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Kim loại đứng trước H tác dụng được với dung dịch HCl loãng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Kim loại đứng trước đẩy được kim loại đứng sau ra khỏi dung dịch muối (trừ K, Na, Ca…).",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Cu tác dụng được với dung dịch HCl loãng giải phóng H2.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Kim loại nào hoạt động hóa học mạnh nhất trong các kim loại sau?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Fe"
+              },
+              {
+                "id": "b",
+                "label": "Cu"
+              },
+              {
+                "id": "c",
+                "label": "K"
+              },
+              {
+                "id": "d",
+                "label": "Ag"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Nhúng lá kẽm vào dung dịch [[CuSO4]], hiện tượng nào xảy ra?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Không có hiện tượng"
+              },
+              {
+                "id": "b",
+                "label": "Có kim loại màu đỏ bám vào lá kẽm"
+              },
+              {
+                "id": "c",
+                "label": "Có khí thoát ra"
+              },
+              {
+                "id": "d",
+                "label": "Dung dịch chuyển màu xanh đậm hơn"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

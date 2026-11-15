@@ -1,0 +1,135 @@
+{
+  "lessonId": "phy-g7-b10",
+  "units": [
+    {
+      "id": "tinh-chat-anh",
+      "title": "Tính chất ảnh qua gương phẳng",
+      "fromExercises": [
+        "phy-g7-b10-mcq-001",
+        "phy-g7-b10-mcq-002",
+        "phy-g7-b10-mcq-006",
+        "phy-g7-b10-tf-007",
+        "phy-g7-b10-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ảnh của vật qua gương phẳng là ảnh gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ảnh thật, hứng được trên màn"
+              },
+              {
+                "id": "b",
+                "label": "Ảnh ảo, không hứng được trên màn"
+              },
+              {
+                "id": "c",
+                "label": "Ảnh thật, lớn hơn vật"
+              },
+              {
+                "id": "d",
+                "label": "Ảnh ảo, nhỏ hơn vật"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về ảnh qua gương phẳng là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Ảnh lớn bằng vật.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Ảnh và vật đối xứng nhau qua mặt gương.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Khi vật lùi xa gương, ảnh nhỏ đi.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Đứng trước gương, giơ tay phải lên thì ảnh trong gương giơ tay nào?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tay phải"
+              },
+              {
+                "id": "b",
+                "label": "Tay trái (ảnh ngược chiều trái phải)"
+              },
+              {
+                "id": "c",
+                "label": "Cả hai tay"
+              },
+              {
+                "id": "d",
+                "label": "Không giơ tay"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "khoang-cach-anh",
+      "title": "Khoảng cách và kích thước ảnh",
+      "fromExercises": [
+        "phy-g7-b10-num-003",
+        "phy-g7-b10-num-004",
+        "phy-g7-b10-num-005"
+      ],
+      "generator": "mirror-image",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Một điểm sáng S cách gương phẳng 30 cm. Ảnh của S cách S bao nhiêu cm?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 60,
+            "unit": "cm",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ảnh của một cái cây qua mặt hồ phẳng lặng cao 5 m. Cái cây cao bao nhiêu mét?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 5,
+            "unit": "m",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

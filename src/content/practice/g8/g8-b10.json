@@ -1,0 +1,303 @@
+{
+  "lessonId": "g8-b10",
+  "units": [
+    {
+      "id": "phan-loai-oxide",
+      "title": "Oxide và phân loại oxide",
+      "fromExercises": [
+        "g8-b10-mcq-001",
+        "g8-b10-sort-004",
+        "g8-b10-build-005"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Oxide là hợp chất gồm mấy nguyên tố, trong đó có nguyên tố nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hai nguyên tố, một nguyên tố là oxygen"
+              },
+              {
+                "id": "b",
+                "label": "Ba nguyên tố, có hydrogen"
+              },
+              {
+                "id": "c",
+                "label": "Một nguyên tố oxygen"
+              },
+              {
+                "id": "d",
+                "label": "Hai nguyên tố, có hydrogen"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Phân loại các oxide sau.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Oxide base"
+              },
+              {
+                "id": "b2",
+                "label": "Oxide acid"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "[[CaO]]",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "[[Na2O]]",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "[[CuO]]",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "[[CO2]]",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "[[SO2]]",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "[[P2O5]]",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Chất nào sau đây là oxide?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "[[NaOH]]"
+              },
+              {
+                "id": "b",
+                "label": "[[HCl]]"
+              },
+              {
+                "id": "c",
+                "label": "[[MgO]]"
+              },
+              {
+                "id": "d",
+                "label": "[[NaCl]]"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Viết công thức hóa học của oxide tạo bởi sulfur (hóa trị IV) và oxygen.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "text",
+            "accepted": [
+              "SO2"
+            ],
+            "lenientDiacritics": true
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Oxide của kim loại thường là loại oxide nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Oxide acid"
+              },
+              {
+                "id": "b",
+                "label": "Oxide base"
+              },
+              {
+                "id": "c",
+                "label": "Oxide trung tính"
+              },
+              {
+                "id": "d",
+                "label": "Không phải oxide"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tinh-chat-oxide",
+      "title": "Tính chất hóa học của oxide",
+      "fromExercises": [
+        "g8-b10-mcq-002",
+        "g8-b10-tf-001",
+        "g8-b10-match-006"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Oxide base tác dụng với dung dịch acid tạo thành gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Base và nước"
+              },
+              {
+                "id": "b",
+                "label": "Muối và nước"
+              },
+              {
+                "id": "c",
+                "label": "Acid và nước"
+              },
+              {
+                "id": "d",
+                "label": "Oxide mới"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Oxide acid tác dụng với dung dịch base tạo thành gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Muối và nước"
+              },
+              {
+                "id": "b",
+                "label": "Acid"
+              },
+              {
+                "id": "c",
+                "label": "Base mới"
+              },
+              {
+                "id": "d",
+                "label": "Khí oxygen"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về oxide là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "[[CO2]] làm vẩn đục nước vôi trong.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "[[CaO]] tác dụng với nước tạo thành [[Ca(OH)2]].",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "[[SO2]] là oxide base.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Khí nào thải ra từ đốt than đá là nguyên nhân gây mưa acid?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Oxygen"
+              },
+              {
+                "id": "b",
+                "label": "Nitrogen"
+              },
+              {
+                "id": "c",
+                "label": "Sulfur dioxide"
+              },
+              {
+                "id": "d",
+                "label": "Hydrogen"
+              }
+            ],
+            "correctId": "c"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Vì sao vôi sống phải bảo quản trong bao kín?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì vôi sống dễ cháy"
+              },
+              {
+                "id": "b",
+                "label": "Vì vôi sống hút ẩm và tác dụng với carbon dioxide trong không khí"
+              },
+              {
+                "id": "c",
+                "label": "Vì vôi sống bay hơi"
+              },
+              {
+                "id": "d",
+                "label": "Vì vôi sống độc"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

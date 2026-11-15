@@ -1,0 +1,185 @@
+{
+  "lessonId": "phy-g7-b03",
+  "units": [
+    {
+      "id": "doc-do-thi",
+      "title": "Đọc đồ thị quãng đường – thời gian",
+      "fromExercises": [
+        "phy-g7-b03-mcq-001",
+        "phy-g7-b03-mcq-002",
+        "phy-g7-b03-mcq-003",
+        "phy-g7-b03-tf-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Trên đồ thị s – t, đường thẳng càng dốc thì tốc độ của vật như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Càng nhỏ"
+              },
+              {
+                "id": "b",
+                "label": "Càng lớn"
+              },
+              {
+                "id": "c",
+                "label": "Không đổi"
+              },
+              {
+                "id": "d",
+                "label": "Bằng 0"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Đồ thị s – t của vật chuyển động với tốc độ không đổi có dạng gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đường cong"
+              },
+              {
+                "id": "b",
+                "label": "Đường thẳng"
+              },
+              {
+                "id": "c",
+                "label": "Đường tròn"
+              },
+              {
+                "id": "d",
+                "label": "Đường gấp khúc lên xuống"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về đồ thị s – t là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Đoạn đồ thị nằm ngang cho biết vật đang đứng yên.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Từ đồ thị s – t có thể đọc được quãng đường vật đi trong một khoảng thời gian.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Trục tung của đồ thị s – t biểu diễn thời gian.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Sắp xếp các bước vẽ đồ thị quãng đường – thời gian.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Lập bảng số liệu quãng đường theo thời gian",
+              "Vẽ hai trục: trục ngang là thời gian, trục đứng là quãng đường",
+              "Xác định các điểm ứng với từng cặp số liệu",
+              "Nối các điểm để được đồ thị"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "tinh-tu-do-thi",
+      "title": "Tính toán từ đồ thị",
+      "fromExercises": [
+        "phy-g7-b03-num-004",
+        "phy-g7-b03-num-005",
+        "phy-g7-b03-num-006",
+        "phy-g7-b03-mcq-007"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Đồ thị s – t của một người đi xe đạp là đường thẳng qua gốc tọa độ và điểm (2 h; 24 km). Tốc độ của người đó là bao nhiêu km/h?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 12,
+            "unit": "km/h",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Trên đồ thị s – t, từ t = 1 h đến t = 1,5 h quãng đường không đổi ở 40 km. Vật đứng yên trong bao nhiêu phút?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 30,
+            "unit": "phút"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Đồ thị cho thấy một xe đi 90 km trong 1,5 h đầu với tốc độ không đổi. Tốc độ của xe là bao nhiêu km/h?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "number",
+            "value": 60,
+            "unit": "km/h",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Hai đường s – t của xe A và xe B đều là đường thẳng qua gốc tọa độ, đường của xe A dốc hơn. Kết luận nào đúng?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Xe B nhanh hơn"
+              },
+              {
+                "id": "b",
+                "label": "Xe A nhanh hơn"
+              },
+              {
+                "id": "c",
+                "label": "Hai xe nhanh như nhau"
+              },
+              {
+                "id": "d",
+                "label": "Xe A đứng yên"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

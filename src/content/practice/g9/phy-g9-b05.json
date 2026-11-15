@@ -1,0 +1,218 @@
+{
+  "lessonId": "phy-g9-b05",
+  "units": [
+    {
+      "id": "dieu-kien",
+      "title": "Điều kiện phản xạ toàn phần",
+      "fromExercises": [
+        "phy-g9-b05-mcq-001",
+        "phy-g9-b05-mcq-002",
+        "phy-g9-b05-mcq-003",
+        "phy-g9-b05-mcq-004",
+        "phy-g9-b05-mcq-006",
+        "phy-g9-b05-mcq-007"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Xác định các nhận định sau về điều kiện phản xạ toàn phần là đúng hay sai.",
+          "difficulty": 3,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Phản xạ toàn phần xảy ra khi ánh sáng đi từ môi trường chiết quang hơn sang môi trường chiết quang kém hơn.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Góc tới phải lớn hơn hoặc bằng góc giới hạn.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Ánh sáng đi từ không khí vào nước có thể xảy ra phản xạ toàn phần.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Khi xảy ra phản xạ toàn phần, tia khúc xạ thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Rất sáng"
+              },
+              {
+                "id": "b",
+                "label": "Không còn tia khúc xạ, toàn bộ ánh sáng bị phản xạ"
+              },
+              {
+                "id": "c",
+                "label": "Vuông góc mặt phân cách"
+              },
+              {
+                "id": "d",
+                "label": "Song song tia tới"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ung-dung",
+      "title": "Ứng dụng phản xạ toàn phần",
+      "fromExercises": [
+        "phy-g9-b05-mcq-005",
+        "phy-g9-b05-mcq-008",
+        "phy-g9-b05-match-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Cáp quang truyền tín hiệu dựa trên hiện tượng nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Khúc xạ ánh sáng"
+              },
+              {
+                "id": "b",
+                "label": "Phản xạ toàn phần"
+              },
+              {
+                "id": "c",
+                "label": "Tán sắc ánh sáng"
+              },
+              {
+                "id": "d",
+                "label": "Nhiễm điện"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Ứng dụng nào sử dụng phản xạ toàn phần?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Cáp quang Internet"
+              },
+              {
+                "id": "b",
+                "label": "Ống nội soi trong y học"
+              },
+              {
+                "id": "c",
+                "label": "Gương soi phẳng"
+              },
+              {
+                "id": "d",
+                "label": "Kính lúp"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b"
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về ứng dụng phản xạ toàn phần là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Cáp quang truyền tín hiệu nhanh và ít suy hao.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Lõi sợi quang có chiết suất lớn hơn lớp vỏ.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Cáp quang truyền tín hiệu bằng dòng điện.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Ưu điểm của cáp quang so với cáp đồng là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nặng hơn"
+              },
+              {
+                "id": "b",
+                "label": "Truyền được nhiều thông tin, ít bị nhiễu"
+              },
+              {
+                "id": "c",
+                "label": "Dẫn điện tốt hơn"
+              },
+              {
+                "id": "d",
+                "label": "Rẻ hơn mọi trường hợp"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q5",
+          "prompt": "Ống nội soi giúp bác sĩ làm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Đo nhiệt độ"
+              },
+              {
+                "id": "b",
+                "label": "Quan sát bên trong cơ thể mà không cần mổ lớn"
+              },
+              {
+                "id": "c",
+                "label": "Đo huyết áp"
+              },
+              {
+                "id": "d",
+                "label": "Nghe tim"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

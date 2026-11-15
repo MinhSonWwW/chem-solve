@@ -1,0 +1,251 @@
+{
+  "lessonId": "bio-g8-b17",
+  "units": [
+    {
+      "id": "can-bang",
+      "title": "Cân bằng tự nhiên",
+      "fromExercises": [
+        "bio-g8-b17-q01",
+        "bio-g8-b17-q02",
+        "bio-g8-b17-q03",
+        "bio-g8-b17-q04"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Cân bằng tự nhiên là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Trạng thái ổn định của tự nhiên, số lượng các loài dao động quanh mức cân bằng"
+              },
+              {
+                "id": "b",
+                "label": "Số lượng các loài luôn tăng"
+              },
+              {
+                "id": "c",
+                "label": "Không có loài nào chết"
+              },
+              {
+                "id": "d",
+                "label": "Chỉ có một loài"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về cân bằng tự nhiên là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Khi chim sâu nhiều, số lượng sâu giảm.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Khống chế sinh học giúp duy trì cân bằng tự nhiên.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Trong tự nhiên, số lượng mỗi loài luôn cố định, không thay đổi.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Sắp xếp diễn biến khi số lượng sâu tăng mạnh trên đồng lúa.",
+          "difficulty": 3,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Sâu tăng mạnh",
+              "Chim ăn sâu có nhiều thức ăn nên tăng số lượng",
+              "Sâu bị ăn nhiều nên giảm",
+              "Chim thiếu thức ăn nên giảm, quần xã trở lại cân bằng"
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Dùng ong mắt đỏ diệt sâu hại là biện pháp gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hóa học"
+              },
+              {
+                "id": "b",
+                "label": "Sinh học"
+              },
+              {
+                "id": "c",
+                "label": "Cơ học"
+              },
+              {
+                "id": "d",
+                "label": "Vật lí"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "con-nguoi",
+      "title": "Con người và cân bằng tự nhiên",
+      "fromExercises": [
+        "bio-g8-b17-q05",
+        "bio-g8-b17-q06",
+        "bio-g8-b17-q07",
+        "bio-g8-b17-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các hoạt động của con người.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Gây mất cân bằng tự nhiên"
+              },
+              {
+                "id": "b2",
+                "label": "Bảo vệ cân bằng tự nhiên"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Chặt phá rừng",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Săn bắt động vật hoang dã",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Dùng thuốc trừ sâu bừa bãi",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Trồng rừng",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Xây dựng khu bảo tồn",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i6",
+                "label": "Dùng thiên địch diệt sâu",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về con người và cân bằng tự nhiên là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Phá rừng có thể gây lũ lụt, xói mòn đất.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Đưa loài lạ vào môi trường mới có thể gây hại cho loài bản địa.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Săn bắt động vật quý hiếm giúp tăng đa dạng sinh học.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Vì sao không nên dùng xung điện để đánh bắt cá?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì tốn điện"
+              },
+              {
+                "id": "b",
+                "label": "Vì giết chết cả cá con và nhiều sinh vật khác, làm mất cân bằng"
+              },
+              {
+                "id": "c",
+                "label": "Vì cá to quá"
+              },
+              {
+                "id": "d",
+                "label": "Vì không bắt được cá"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Học sinh có thể làm gì để bảo vệ cân bằng tự nhiên?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Không săn bắt chim, trồng và chăm sóc cây xanh"
+              },
+              {
+                "id": "b",
+                "label": "Bẻ cành cây"
+              },
+              {
+                "id": "c",
+                "label": "Thả rác xuống ao"
+              },
+              {
+                "id": "d",
+                "label": "Mua bán động vật hoang dã"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    }
+  ]
+}

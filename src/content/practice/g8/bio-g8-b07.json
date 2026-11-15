@@ -1,0 +1,254 @@
+{
+  "lessonId": "bio-g8-b07",
+  "units": [
+    {
+      "id": "moi-truong-trong",
+      "title": "Môi trường trong cơ thể",
+      "fromExercises": [
+        "bio-g8-b07-q01",
+        "bio-g8-b07-q02",
+        "bio-g8-b07-q03",
+        "bio-g8-b07-q04"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các thành phần.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Thuộc môi trường trong"
+              },
+              {
+                "id": "b2",
+                "label": "Không thuộc môi trường trong"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Máu",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Nước mô",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Bạch huyết",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i4",
+                "label": "Nước uống trong cốc",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i5",
+                "label": "Không khí trong phòng",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về môi trường trong cơ thể là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Môi trường trong giúp tế bào trao đổi chất với môi trường ngoài.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Nước mô bao quanh các tế bào.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Môi trường trong luôn thay đổi thất thường, không cần ổn định.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Cân bằng môi trường trong (cân bằng nội môi) là gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sự duy trì ổn định các điều kiện lí hóa của môi trường trong"
+              },
+              {
+                "id": "b",
+                "label": "Sự thay đổi liên tục của cơ thể"
+              },
+              {
+                "id": "c",
+                "label": "Sự cân bằng cân nặng"
+              },
+              {
+                "id": "d",
+                "label": "Sự cân bằng thức ăn"
+              }
+            ],
+            "correctId": "a"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Chỉ số nào sau đây phản ánh cân bằng môi trường trong?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chiều cao"
+              },
+              {
+                "id": "b",
+                "label": "Nồng độ glucose trong máu"
+              },
+              {
+                "id": "c",
+                "label": "Màu tóc"
+              },
+              {
+                "id": "d",
+                "label": "Cỡ giày"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dieu-hoa",
+      "title": "Điều hòa cân bằng môi trường trong",
+      "fromExercises": [
+        "bio-g8-b07-q05",
+        "bio-g8-b07-q06",
+        "bio-g8-b07-q07",
+        "bio-g8-b07-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép tình huống với phản ứng của cơ thể.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Sau bữa ăn nhiều tinh bột",
+                "right": "Insulin làm giảm đường huyết"
+              },
+              {
+                "left": "Khi đói lâu",
+                "right": "Glucagon làm tăng đường huyết"
+              },
+              {
+                "left": "Ra nhiều mồ hôi",
+                "right": "Cảm giác khát, cần uống nước"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về điều hòa cân bằng môi trường trong là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Gan tham gia điều hòa nồng độ glucose trong máu.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Mất cân bằng môi trường trong có thể gây bệnh.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Uống thật nhiều nước ngọt giúp cân bằng đường huyết.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Khi mất nhiều nước do tiêu chảy, cần làm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nhịn uống"
+              },
+              {
+                "id": "b",
+                "label": "Bù nước và điện giải (như oresol)"
+              },
+              {
+                "id": "c",
+                "label": "Ăn mặn hơn"
+              },
+              {
+                "id": "d",
+                "label": "Uống nước có ga"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Bệnh tiểu đường liên quan đến mất cân bằng chỉ số nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nồng độ glucose trong máu"
+              },
+              {
+                "id": "b",
+                "label": "Nhiệt độ cơ thể"
+              },
+              {
+                "id": "c",
+                "label": "Chiều cao"
+              },
+              {
+                "id": "d",
+                "label": "Thị lực"
+              }
+            ],
+            "correctId": "a"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "lessonId": "phy-g9-b04",
+  "units": [
+    {
+      "id": "khuc-xa",
+      "title": "Hiện tượng khúc xạ ánh sáng",
+      "fromExercises": [
+        "phy-g9-b04-mcq-001",
+        "phy-g9-b04-mcq-002",
+        "phy-g9-b04-mcq-003",
+        "phy-g9-b04-mcq-005",
+        "phy-g9-b04-ord-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Xác định các nhận định sau về hiện tượng khúc xạ ánh sáng là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Khúc xạ ánh sáng xảy ra khi ánh sáng truyền xiên qua mặt phân cách hai môi trường.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Tia sáng chiếu vuông góc với mặt phân cách thì truyền thẳng.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Khi đi từ không khí vào nước, góc khúc xạ lớn hơn góc tới.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Pháp tuyến tại điểm tới là đường như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Song song mặt phân cách"
+              },
+              {
+                "id": "b",
+                "label": "Vuông góc với mặt phân cách tại điểm tới"
+              },
+              {
+                "id": "c",
+                "label": "Trùng với tia tới"
+              },
+              {
+                "id": "d",
+                "label": "Trùng với tia khúc xạ"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Khi ánh sáng đi từ không khí vào thủy tinh, tia khúc xạ lệch như thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Ra xa pháp tuyến"
+              },
+              {
+                "id": "b",
+                "label": "Lại gần pháp tuyến"
+              },
+              {
+                "id": "c",
+                "label": "Không lệch"
+              },
+              {
+                "id": "d",
+                "label": "Bị phản xạ hết"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "giai-thich",
+      "title": "Giải thích hiện tượng thực tế",
+      "fromExercises": [
+        "phy-g9-b04-mcq-004",
+        "phy-g9-b04-mcq-006",
+        "phy-g9-b04-mcq-007",
+        "phy-g9-b04-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Nhìn chiếc đũa cắm nghiêng trong cốc nước thấy đũa như bị gãy. Vì sao?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Vì đũa bị cong"
+              },
+              {
+                "id": "b",
+                "label": "Vì ánh sáng bị khúc xạ khi từ nước ra không khí"
+              },
+              {
+                "id": "c",
+                "label": "Vì phản xạ ánh sáng"
+              },
+              {
+                "id": "d",
+                "label": "Vì nước làm đũa mềm"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Nhìn từ trên bờ, đáy hồ nước trong có vẻ như thế nào so với thực tế?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sâu hơn"
+              },
+              {
+                "id": "b",
+                "label": "Nông hơn"
+              },
+              {
+                "id": "c",
+                "label": "Như thực tế"
+              },
+              {
+                "id": "d",
+                "label": "Không nhìn thấy"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về giải thích hiện tượng thực tế là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Đáy bể bơi nhìn từ trên bờ có vẻ nông hơn thực tế.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Hiện tượng khúc xạ không xảy ra trong đời sống hằng ngày.",
+                "correct": false
+              },
+              {
+                "id": "s3",
+                "text": "Muốn đâm trúng cá, cần nhắm thấp hơn vị trí nhìn thấy.",
+                "correct": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Hiện tượng nào sau đây liên quan đến khúc xạ ánh sáng?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Bóng của cây"
+              },
+              {
+                "id": "b",
+                "label": "Chiếc thìa trong cốc nước trông như bị gãy"
+              },
+              {
+                "id": "c",
+                "label": "Ảnh trong gương phẳng"
+              },
+              {
+                "id": "d",
+                "label": "Tiếng vang"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

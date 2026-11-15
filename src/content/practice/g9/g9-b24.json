@@ -1,0 +1,111 @@
+{
+  "lessonId": "g9-b24",
+  "units": [
+    {
+      "id": "ethylene",
+      "title": "Alkene và ethylene",
+      "fromExercises": [
+        "g9-b24-mcq-001",
+        "g9-b24-mcq-002",
+        "g9-b24-tf-001",
+        "g9-b24-sort-001",
+        "g9-b24-match-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân tử ethylene có loại liên kết đặc biệt nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Chỉ liên kết đơn"
+              },
+              {
+                "id": "b",
+                "label": "Một liên kết đôi giữa hai nguyên tử carbon"
+              },
+              {
+                "id": "c",
+                "label": "Liên kết ba"
+              },
+              {
+                "id": "d",
+                "label": "Vòng sáu cạnh"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Polyethylene (PE) được điều chế từ ethylene bằng phản ứng gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Phản ứng thế"
+              },
+              {
+                "id": "b",
+                "label": "Phản ứng trùng hợp"
+              },
+              {
+                "id": "c",
+                "label": "Phản ứng phân hủy"
+              },
+              {
+                "id": "d",
+                "label": "Phản ứng trung hòa"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Khí ethylene được dùng trong nông nghiệp để làm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Diệt sâu"
+              },
+              {
+                "id": "b",
+                "label": "Kích thích quả chín nhanh"
+              },
+              {
+                "id": "c",
+                "label": "Bón đất"
+              },
+              {
+                "id": "d",
+                "label": "Làm lạnh"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Viết công thức phân tử của ethylene.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "text",
+            "accepted": [
+              "C2H4"
+            ],
+            "lenientDiacritics": true
+          }
+        }
+      ]
+    }
+  ]
+}

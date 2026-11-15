@@ -1,0 +1,150 @@
+{
+  "lessonId": "phy-g9-b11",
+  "units": [
+    {
+      "id": "quy-luat",
+      "title": "Quy luật đoạn mạch nối tiếp và song song",
+      "fromExercises": [
+        "phy-g9-b11-mcq-001",
+        "phy-g9-b11-mcq-002",
+        "phy-g9-b11-mcq-003",
+        "phy-g9-b11-sort-001"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Xác định các nhận định sau về quy luật đoạn mạch nối tiếp và song song là đúng hay sai.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Trong đoạn mạch nối tiếp, cường độ dòng điện như nhau tại mọi điểm.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Trong đoạn mạch song song, hiệu điện thế hai đầu các nhánh bằng nhau.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Mắc song song thì điện trở tương đương lớn hơn từng điện trở thành phần.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Đèn trong gia đình được mắc như thế nào để hoạt động độc lập?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Nối tiếp"
+              },
+              {
+                "id": "b",
+                "label": "Song song"
+              },
+              {
+                "id": "c",
+                "label": "Không mắc vào điện"
+              },
+              {
+                "id": "d",
+                "label": "Mắc chung một công tắc nối tiếp"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Trong đoạn mạch nối tiếp, nếu một đèn bị đứt dây tóc thì các đèn khác thế nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Sáng hơn"
+              },
+              {
+                "id": "b",
+                "label": "Tắt hết"
+              },
+              {
+                "id": "c",
+                "label": "Không ảnh hưởng"
+              },
+              {
+                "id": "d",
+                "label": "Sáng yếu hơn"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Hai điện trở giống nhau R mắc song song, điện trở tương đương bằng bao nhiêu?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "2R"
+              },
+              {
+                "id": "b",
+                "label": "R/2"
+              },
+              {
+                "id": "c",
+                "label": "R"
+              },
+              {
+                "id": "d",
+                "label": "R²"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tinh-mach",
+      "title": "Tính toán đoạn mạch",
+      "fromExercises": [
+        "phy-g9-b11-num-004",
+        "phy-g9-b11-num-005",
+        "phy-g9-b11-num-006",
+        "phy-g9-b11-num-007",
+        "phy-g9-b11-num-008"
+      ],
+      "generator": "resistors",
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "R₁ = 10 Ω và R₂ = 20 Ω mắc nối tiếp vào hiệu điện thế 6 V. Cường độ dòng điện trong mạch là bao nhiêu A?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "number",
+            "value": 0.2,
+            "unit": "A",
+            "tolerance": {
+              "rel": 0.01
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

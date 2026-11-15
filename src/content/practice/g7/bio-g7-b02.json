@@ -1,0 +1,239 @@
+{
+  "lessonId": "bio-g7-b02",
+  "units": [
+    {
+      "id": "nguyen-lieu-san-pham",
+      "title": "Nguyên liệu và sản phẩm của quang hợp",
+      "fromExercises": [
+        "bio-g7-b02-q02",
+        "bio-g7-b02-q03",
+        "bio-g7-b02-q06",
+        "bio-g7-b02-q08"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Phân loại các chất trong quang hợp.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Nguyên liệu"
+              },
+              {
+                "id": "b2",
+                "label": "Sản phẩm"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Nước",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Carbon dioxide",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Glucose (chất hữu cơ)",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Oxygen",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Sắp xếp phương trình chữ của quang hợp theo đúng thứ tự.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "ordering",
+            "correctOrder": [
+              "Nước + Carbon dioxide",
+              "Ánh sáng, diệp lục",
+              "Glucose + Oxygen"
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về quang hợp là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Quang hợp cần ánh sáng.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Quang hợp thải ra khí oxygen.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Quang hợp diễn ra mạnh nhất vào ban đêm.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Khí nào được cây xanh thải ra trong quá trình quang hợp?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Carbon dioxide"
+              },
+              {
+                "id": "b",
+                "label": "Oxygen"
+              },
+              {
+                "id": "c",
+                "label": "Nitrogen"
+              },
+              {
+                "id": "d",
+                "label": "Hơi nước"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "la-cay",
+      "title": "Lá cây và quang hợp",
+      "fromExercises": [
+        "bio-g7-b02-q01",
+        "bio-g7-b02-q04",
+        "bio-g7-b02-q05",
+        "bio-g7-b02-q07"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Ghép bộ phận của lá với chức năng.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Lục lạp chứa diệp lục",
+                "right": "Hấp thụ năng lượng ánh sáng"
+              },
+              {
+                "left": "Khí khổng",
+                "right": "Trao đổi khí và thoát hơi nước"
+              },
+              {
+                "left": "Gân lá",
+                "right": "Vận chuyển nước và chất hữu cơ"
+              },
+              {
+                "left": "Phiến lá rộng, dẹt",
+                "right": "Thu nhận nhiều ánh sáng"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Quang hợp diễn ra chủ yếu ở bộ phận nào của cây?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Rễ"
+              },
+              {
+                "id": "b",
+                "label": "Lá"
+              },
+              {
+                "id": "c",
+                "label": "Hoa"
+              },
+              {
+                "id": "d",
+                "label": "Quả"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Xác định các nhận định sau về lá cây là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Khí khổng thường tập trung nhiều ở mặt dưới lá.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Diệp lục làm lá có màu xanh.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Lá cây không có lục lạp.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Vì sao lá cây thường xếp so le, không che khuất nhau?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Để lá rụng nhanh"
+              },
+              {
+                "id": "b",
+                "label": "Để các lá đều nhận được ánh sáng"
+              },
+              {
+                "id": "c",
+                "label": "Để cây thấp hơn"
+              },
+              {
+                "id": "d",
+                "label": "Để giảm quang hợp"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    }
+  ]
+}

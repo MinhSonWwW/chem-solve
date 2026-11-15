@@ -1,0 +1,254 @@
+{
+  "lessonId": "phy-g7-b13",
+  "units": [
+    {
+      "id": "che-tao",
+      "title": "Chế tạo nam châm điện",
+      "fromExercises": [
+        "phy-g7-b13-mcq-001",
+        "phy-g7-b13-mcq-002",
+        "phy-g7-b13-ord-003",
+        "phy-g7-b13-mcq-005"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Nam châm điện có từ tính khi nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Luôn luôn có"
+              },
+              {
+                "id": "b",
+                "label": "Khi có dòng điện chạy qua cuộn dây"
+              },
+              {
+                "id": "c",
+                "label": "Khi ngắt điện"
+              },
+              {
+                "id": "d",
+                "label": "Khi để gần nam châm vĩnh cửu"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Xác định các nhận định sau về nam châm điện là đúng hay sai.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "true-false",
+            "statements": [
+              {
+                "id": "s1",
+                "text": "Nam châm điện gồm ống dây có dòng điện chạy qua và lõi sắt non.",
+                "correct": true
+              },
+              {
+                "id": "s2",
+                "text": "Ngắt dòng điện thì nam châm điện mất từ tính.",
+                "correct": true
+              },
+              {
+                "id": "s3",
+                "text": "Lõi của nam châm điện nên làm bằng nhựa.",
+                "correct": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Ghép bộ phận của nam châm điện với vai trò.",
+          "difficulty": 2,
+          "answer": {
+            "kind": "match",
+            "pairs": [
+              {
+                "left": "Cuộn dây dẫn",
+                "right": "Có dòng điện chạy qua tạo ra từ trường"
+              },
+              {
+                "left": "Lõi sắt non",
+                "right": "Làm từ trường mạnh lên"
+              },
+              {
+                "left": "Pin (nguồn điện)",
+                "right": "Cung cấp dòng điện"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Dây quấn nam châm điện thường là loại dây nào?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Dây sắt trần"
+              },
+              {
+                "id": "b",
+                "label": "Dây đồng có vỏ cách điện"
+              },
+              {
+                "id": "c",
+                "label": "Dây nhựa"
+              },
+              {
+                "id": "d",
+                "label": "Dây cao su"
+              }
+            ],
+            "correctId": "b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ung-dung",
+      "title": "Tăng lực từ và ứng dụng",
+      "fromExercises": [
+        "phy-g7-b13-mcq-004",
+        "phy-g7-b13-mcq-006",
+        "phy-g7-b13-tf-007",
+        "phy-g7-b13-mcq-008"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "prompt": "Những cách nào làm nam châm điện mạnh hơn?",
+          "difficulty": 2,
+          "answer": {
+            "kind": "mcq-multi",
+            "options": [
+              {
+                "id": "a",
+                "label": "Tăng số vòng dây quấn"
+              },
+              {
+                "id": "b",
+                "label": "Tăng dòng điện chạy qua cuộn dây (dùng thêm pin)"
+              },
+              {
+                "id": "c",
+                "label": "Thay lõi sắt bằng lõi gỗ"
+              },
+              {
+                "id": "d",
+                "label": "Giảm số vòng dây"
+              }
+            ],
+            "correctIds": [
+              "a",
+              "b"
+            ]
+          }
+        },
+        {
+          "id": "q2",
+          "prompt": "Thiết bị nào sau đây có dùng nam châm điện?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Bóng đèn sợi đốt"
+              },
+              {
+                "id": "b",
+                "label": "Chuông điện"
+              },
+              {
+                "id": "c",
+                "label": "Bàn là"
+              },
+              {
+                "id": "d",
+                "label": "Ấm siêu tốc"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q3",
+          "prompt": "Cần cẩu điện ở bãi phế liệu dùng nam châm điện để làm gì?",
+          "difficulty": 1,
+          "answer": {
+            "kind": "mcq-single",
+            "options": [
+              {
+                "id": "a",
+                "label": "Hút nhôm và nhựa"
+              },
+              {
+                "id": "b",
+                "label": "Hút và nhả các vật bằng sắt thép khi bật, tắt điện"
+              },
+              {
+                "id": "c",
+                "label": "Phát điện"
+              },
+              {
+                "id": "d",
+                "label": "Đo khối lượng"
+              }
+            ],
+            "correctId": "b"
+          }
+        },
+        {
+          "id": "q4",
+          "prompt": "Phân loại các nam châm sau.",
+          "difficulty": 1,
+          "answer": {
+            "kind": "sort",
+            "buckets": [
+              {
+                "id": "b1",
+                "label": "Nam châm vĩnh cửu"
+              },
+              {
+                "id": "b2",
+                "label": "Nam châm điện"
+              }
+            ],
+            "items": [
+              {
+                "id": "i1",
+                "label": "Nam châm dính tủ lạnh",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i2",
+                "label": "Kim la bàn",
+                "bucketId": "b1"
+              },
+              {
+                "id": "i3",
+                "label": "Nam châm trong chuông điện",
+                "bucketId": "b2"
+              },
+              {
+                "id": "i4",
+                "label": "Nam châm của cần cẩu phế liệu",
+                "bucketId": "b2"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
